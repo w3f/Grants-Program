@@ -1,18 +1,18 @@
 # Web3 Foundation Small Grants Program
 
-<img src="./img/web3 foundation grants_black.jpg" width="240">
-
-> **Important:** The Web3 Foundation Small Grants Program focuses on grants up to $30k, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
+**:loudspeaker: Important:** The Web3 Foundation Small Grants Program focuses on grants up to $30k, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
 
 ---
 
-- [About](#about)
-- [Areas of interest](#areas-of-interest)
-- [Process](#-process)
-- [:information_source: Help](#information_source-help)
-- [License](#license)
+- [:clipboard: About](#clipboard-about)
+- [:dart: Areas of interest](#dart-areas-of-interest)
+- [:pencil: Process](#pencil-process)
+- [:bulb: Help](#bulb-help)
+  - [Additional information](#additional-information)
+  - [Real-time conversation](#real-time-conversation)
+- [:information_source: License](#information_source-license)
 
-## About 
+## :clipboard: About 
 
 The Small Grants Program  aims to be:
 - Fully transparent
@@ -21,13 +21,13 @@ The Small Grants Program  aims to be:
 
 The Web3 Foundation Small Grants Program focuses on grants up to $30k, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
 
-## Areas of interest
+## :dart: Areas of interest
 
-## Process
+## :pencil: Process
 
 Grant application can be amended at any time, leading to a need for reevaluation by the Committee.
 
-## :information_source: Help
+## :bulb: Help
 
 ### Additional information
 
@@ -43,4 +43,5 @@ We have Riot channels for real-time discussions on Web3 and Polkadot. Join the c
 * [Web3 Foundation](https://riot.im/app/#/room/#web3foundation:matrix.org)
 * [Polkadot Watercooler](https://riot.im/app/#/room/#polkadot-watercooler:matrix.org)
 
-## License
+## :information_source: License
+[Apache License 2.0](https://github.com/Noc2/Small-Grants-Program/blob/master/LICENSE) © Web3 Foundation 
