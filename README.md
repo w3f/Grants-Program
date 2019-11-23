@@ -9,7 +9,7 @@
 - [About](#about)
 - [Areas of interest](#areas-of-interest)
 - [Process](#-process)
-- [Help](#help)
+- [:information_source: Help](#information_source-help)
 - [License](#license)
 
 ## About 
@@ -27,7 +27,7 @@ The Web3 Foundation Small Grants Program focuses on grants up to $30k, which are
 
 Grant application can be amended at any time, leading to a need for reevaluation by the Committee.
 
-## Help
+## :information_source: Help
 
 ### Additional information
 
