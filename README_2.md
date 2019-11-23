@@ -1,11 +1,12 @@
 # Web3 Foundation Small Grants Program
 
-**:loudspeaker: Important:** The Web3 Foundation Small Grants Program focuses on grants up to $30k, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
+**:loudspeaker: Important:** The Web3 Foundation Small Grants Program focuses on technology grants up to $30k, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
 
 ---
 
 - [:clipboard: About](#clipboard-about)
-- [:dart: Areas of interest](#dart-areas-of-interest)
+    - [Introduction](#introduction)
+    - [Team](#team) 
 - [:pencil: Process](#pencil-process)
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
@@ -14,20 +15,41 @@
 
 ## :clipboard: About 
 
+### Introduction
+
 The Small Grants Program  aims to be:
 - Fully transparent
 - Simple
 - Effective at allocating resources across projects which in view of the Grants Committee are beneficial to advancement of the Polkadot Ecosystem
 
-The Web3 Foundation Small Grants Program focuses on grants up to $30k, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
+The Web3 Foundation Small Grants Program focuses on technology grants up to $30k, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
 
-## :dart: Areas of interest
+You can find our areas of interest [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md#areas-of-interest-for-technical-grants), as well as a list of previously accepted projects [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/accepted_grant_applications.md). 
+
+### Team
+
+**W3F Grants Committee**
+
+The Committee consist of individuals who know the funding priorities of the Polkadot ecosystem. The Committee evaluates grant applications and provides feedback on these applications. 
+
+**W3F Grants Evaluators**
+
+Evaluators are individuals able to evaluate the technology delivered through the grants programme.
+
+**W3F Operations Team**
+
+Operations Team takes care of the legal setup, invoices and process payments. 
 
 ## :pencil: Process
 
-1. Grant application as PR to the `applications` folder.
+1. **Grant application:**
+    1. Fork this repository
+    2. In the newly created fork, create a new folder with name of your project under [applications](./applications)
+    3. Inside this new folder create a copy of the [application.md](./applications/application.md)
+    4. Fill out the template with the details of your project.
+    5. Once you have completed the application, click on "create new pull request".
 2. Sign off T&Cs via CLA-bot.
-3. Committee can issue commments and approve or reject the PR.
+3. Committee can issue comments and approve or reject the PR.
 4. When 1/3 of the Committee approves then the application is accepted.
 5. Approved grantee (same Github account as applicant) can submit a PR to the relevant folder in the `applications` folder delivering a milestone.
 6. After delivery PR is submitted then grantee needs to fill out the invoice form (follow [invoice guidelines](https://drive.google.com/file/d/14fMb04NvkkI3EJddyNOb0UC6TPtsYcCc/view?ts=5dd29a1f), allow for attachment, verify GH account).
