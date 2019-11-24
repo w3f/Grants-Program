@@ -48,19 +48,21 @@ Operations Team takes care of the legal setup, invoices and process payments.
     3. Label the file as "project_name.md".
     4. Fill out the template with the details of your project.
     5. Once you have completed the application, click on "create new pull request".
-2. Sign off T&Cs via CLA-bot.
-3. Committee can issue comments and approve or reject the PR.
-4. When 1/3 of the Committee approves then the application is accepted.
-5. **Milestone delivery:**
+    6. Sign off terms and conditions via CLA-bot.
+2. **Review:**
+    1. Committee can issue comments and request changes on the PR.
+    2. When 1/3 of the committee approves a pull request then the application is accepted.
+3. **Milestone delivery:**
     1. Fork the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery) repo with the **same Github account, which you used to submit the application!**
     2. In the newly created fork, create a **copy** of the [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md)
     3. Label the file as "project_name_milestone_number.md".
     4. Fill out the template with the details of your project.
     5. Once you have completed the application, click on "create new pull request".
-6. After delivery PR is submitted then grantee needs to fill out the invoice form (follow [invoice guidelines](https://drive.google.com/file/d/14fMb04NvkkI3EJddyNOb0UC6TPtsYcCc/view?ts=5dd29a1f), allow for attachment, verify GH account).
-7. Grants Evaluators can accept the PR to accept the deliverable.
-8. Notification is issued to the Operations Team once delivery was accepted or after 2 weeks from submission.
-9. Operations Team makes the payment they recieve the notification with the details from the invoice form.
+    6. Grants Evaluators can accept the PR to accept the deliverable.
+4. **Payment:**
+    1. After delivery PR is submitted then grantee needs to fill out the invoice form (follow [invoice guidelines]      (https://drive.google.com/file/d/14fMb04NvkkI3EJddyNOb0UC6TPtsYcCc/view?ts=5dd29a1f), allow for attachment, verify GH account).
+    2. Notification is issued to the Operations Team once delivery was accepted or after 2 weeks from submission.
+    3. Operations Team makes the payment they recieve the notification with the details from the invoice form.
 
 *Grant application can be amended at any time, leading to a need for reevaluation by the Committee.*
 
