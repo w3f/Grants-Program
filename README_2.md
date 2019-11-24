@@ -52,7 +52,7 @@ Operations Team takes care of the legal setup, invoices and process payments.
 3. Committee can issue comments and approve or reject the PR.
 4. When 1/3 of the Committee approves then the application is accepted.
 5. **Milestone delivery:**
-    1. Fork the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery) repo with the **same Github account as applicant!**
+    1. Fork the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery) repo with the **same Github account, which you used to submit the application!**
     2. In the newly created fork, create a **copy** of the [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md)
     3. Label the file as "project_name_milestone_number.md".
     4. Fill out the template with the details of your project.
