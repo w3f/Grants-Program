@@ -44,14 +44,19 @@ Operations Team takes care of the legal setup, invoices and process payments.
 
 1. **Grant application:**
     1. Fork this repository
-    2. In the newly created fork, create a new folder with name of your project under [applications](./applications)
-    3. Inside this new folder create a copy of the [application.md](./applications/application.md)
+    2. In the newly created fork, create a **copy** of the [application-template.md](./applications/application-template.md)
+    3. Label the file as "project_name.md".
     4. Fill out the template with the details of your project.
     5. Once you have completed the application, click on "create new pull request".
 2. Sign off T&Cs via CLA-bot.
 3. Committee can issue comments and approve or reject the PR.
 4. When 1/3 of the Committee approves then the application is accepted.
-5. Approved grantee (same Github account as applicant) can submit a PR to the relevant folder in the `applications` folder delivering a milestone.
+5. **Milestone delivery:**
+    1. Fork the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery) repo with the **same Github account as applicant!**
+    2. In the newly created fork, create a **copy** of the [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md)
+    3. Label the file as "project_name_milestone_number.md".
+    4. Fill out the template with the details of your project.
+    5. Once you have completed the application, click on "create new pull request".
 6. After delivery PR is submitted then grantee needs to fill out the invoice form (follow [invoice guidelines](https://drive.google.com/file/d/14fMb04NvkkI3EJddyNOb0UC6TPtsYcCc/view?ts=5dd29a1f), allow for attachment, verify GH account).
 7. Grants Evaluators can accept the PR to accept the deliverable.
 8. Notification is issued to the Operations Team once delivery was accepted or after 2 weeks from submission.
