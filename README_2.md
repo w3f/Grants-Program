@@ -58,11 +58,11 @@ Operations Team takes care of the legal setup, invoices and process payments.
     3. Label the file as "project_name_milestone_number.md".
     4. Fill out the template with the details of your project.
     5. Once you have completed the application, click on "create new pull request".
-    6. Grants Evaluators can accept the PR to accept the deliverable.
+    6. The pull request template asks you to also submitt an invoice (follow [invoice guidelines]      (https://drive.google.com/file/d/14fMb04NvkkI3EJddyNOb0UC6TPtsYcCc/view?ts=5dd29a1f), allow for attachment, verify GH account).
+    7. Grants Evaluators can accept the PR to accept the deliverable.
 4. **Payment:**
-    1. After delivery PR is submitted then grantee needs to fill out the invoice form (follow [invoice guidelines]      (https://drive.google.com/file/d/14fMb04NvkkI3EJddyNOb0UC6TPtsYcCc/view?ts=5dd29a1f), allow for attachment, verify GH account).
-    2. Notification is issued to the Operations Team once delivery was accepted or after 2 weeks from submission.
-    3. Operations Team makes the payment they recieve the notification with the details from the invoice form.
+    1. Notification is issued to the Operations Team once delivery was accepted or after 2 weeks without any feedback to improve the delivery.
+    2. Operations Team makes the payment they recieve the notification with the details from the invoice form.
 
 *Grant application can be amended at any time, leading to a need for reevaluation by the Committee.*
 
