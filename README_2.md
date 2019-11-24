@@ -62,7 +62,7 @@ Operations Team takes care of the legal setup, invoices and process payments.
 8. Notification is issued to the Operations Team once delivery was accepted or after 2 weeks from submission.
 9. Operations Team makes the payment they recieve the notification with the details from the invoice form.
 
-Grant application can be amended at any time, leading to a need for reevaluation by the Committee.
+*Grant application can be amended at any time, leading to a need for reevaluation by the Committee.*
 
 ## :bulb: Help
 
