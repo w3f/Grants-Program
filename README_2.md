@@ -83,4 +83,4 @@ We have Riot channels for real-time discussions on Web3 and Polkadot. Join the c
 * [Polkadot Watercooler](https://riot.im/app/#/room/#polkadot-watercooler:matrix.org)
 
 ## :information_source: License
-[Apache License 2.0](https://github.com/Noc2/Small-Grants-Program/blob/master/LICENSE) © Web3 Foundation 
+[Apache License 2.0](https://github.com/w3f/Open-Grants-Program/blob/master/LICENSE) © Web3 Foundation 
