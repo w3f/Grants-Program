@@ -1,6 +1,6 @@
 # Web3 Foundation Open Grants Program
 
-**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
+**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tracked completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
 
 ---
 
