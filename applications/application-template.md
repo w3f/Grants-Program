@@ -16,7 +16,7 @@ Please provide the following:
 * https://...
 
 ## Legal Structure 
-Please provide the name and registered address of the legal entity executing the project. These details can also be shared privately via the Google Form used for your application.
+Please provide the name and registered address of the legal entity executing the project. 
 
 ## Team's experience
 Please describe the team's relevant experience.
@@ -36,7 +36,7 @@ Please provide the following:
   * For each milestone:
     * The specification of the software achieved after completion of each milestone. The level of detail must be high enough so that we are able to test that the software meets the specification.
     * If possible, include a tutorial and a docker image to make it easier for us to evaluate your software. 
-    * For applications with public financial information, please include total amount of funding requested per milestone. Funding can be in fiat (CHF, EUR or USD) or in DOTs. It can also be in a combination of fiat and DOTs. Please reach out to grants@web3.foundation to discuss what amount in fiat and DOTs would be appropriate for your project.
+    * Please include the total amount of funding requested per milestone. Funding can be in fiat (CHF, EUR or USD) or in DOTs. It can also be in a combination of fiat and DOTs. 
   * A schedule indicating when each milestone will be achieved.
   * The team's long-term plans and intentions 
 
