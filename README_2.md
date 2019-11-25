@@ -20,9 +20,9 @@
 The Small Grants Program  aims to be:
 - Fully transparent
 - Simple
-- Effective at allocating resources across projects which in view of the Grants Committee are beneficial to advancement of the Polkadot Ecosystem
+- Effective at allocating resources across projects which are beneficial to advancement of the Polkadot Ecosystem
 
-The Web3 Foundation Small Grants Program focuses on technology grants up to $30k, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
+The Web3 Foundation Small Grants Program focuses on technology grants up to $30k, which are tracked transparently on GitHub. Have a look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
 
 You can find our areas of interest [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md#areas-of-interest-for-technical-grants), as well as a list of previously accepted projects [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/accepted_grant_applications.md). 
 
@@ -38,7 +38,7 @@ Evaluators are individuals able to evaluate the technology delivered through the
 
 **W3F Operations Team**
 
-Operations Team takes care of the legal setup, invoices and process payments. 
+Operations Team takes care of the legal setup, invoices and processing of payments. 
 
 ## :pencil: Process
 
