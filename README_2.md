@@ -1,6 +1,6 @@
 # Web3 Foundation Small Grants Program
 
-**:loudspeaker: Important:** The Web3 Foundation Small Grants Program focuses on technology grants up to $30k, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
+**:loudspeaker: Important:** The Web3 Foundation Small Grants Program focuses on technology grants up to **$30k**, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
 
 ---
 
@@ -48,7 +48,7 @@ Operations Team takes care of the legal setup, invoices and process payments.
     3. Label the file as "project_name.md".
     4. Fill out the template with the details of your project.
     5. Once you have completed the application, click on "create new pull request".
-    6. Sign off [terms and conditions](https://gist.github.com/Noc2/75bc58e8ce9b5d419ff883b0cf2b8c19) via the CLA assistant.
+    6. Sign off the [terms and conditions](https://gist.github.com/Noc2/75bc58e8ce9b5d419ff883b0cf2b8c19) via the CLA assistant.
 2. **Review:**
     1. Committee can issue comments and request changes on the PR.
     2. When 1/3 of the committee approves a pull request then the application is accepted.
