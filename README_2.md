@@ -57,7 +57,7 @@ Operations Team takes care of the legal setup, invoices and process payments.
     2. In the newly created fork, create a **copy** of the [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md)
     3. Label the file as "project_name_milestone_number.md".
     4. Fill out the invoice survey.
-    5. Fill out the template with the details of your project including the survey id and a link to the intial PR.
+    5. Fill out the template with the details of your project including the **survey id** and a **link to the intial PR**.
     6. Once you have completed the application, click on "create new pull request".
     7. Grants Evaluators can accept the PR to accept the deliverable.
 4. **Payment:**
