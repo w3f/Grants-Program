@@ -1,6 +1,6 @@
-# Web3 Foundation Small Grants Program
+# Web3 Foundation Open Grants Program
 
-**:loudspeaker: Important:** The Web3 Foundation Small Grants Program focuses on technology grants up to **$30k**, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
+**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tract completely transparent on GitHub. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
 
 ---
 
@@ -17,12 +17,12 @@
 
 ### Introduction
 
-The Small Grants Program  aims to be:
+The Open Grants Program  aims to be:
 - Fully transparent
 - Simple
 - Effective at allocating resources across projects which are beneficial to advancement of the Polkadot Ecosystem
 
-The Web3 Foundation Small Grants Program focuses on technology grants up to $30k, which are tracked transparently on GitHub. Have a look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
+The Web3 Foundation Open Grants Program focuses on technology grants up to $30k, which are tracked transparently on GitHub. Have a look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants and partly private submissions. 
 
 You can find our areas of interest [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md#areas-of-interest-for-technical-grants), as well as a list of previously accepted projects [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/accepted_grant_applications.md). 
 
@@ -57,7 +57,7 @@ Operations Team takes care of the legal setup, invoices and processing of paymen
     2. In the newly created fork, create a **copy** of the [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md)
     3. Label the file as "project_name_milestone_number.md".
     4. Fill out the invoice form.
-    5. Fill out the template with the details of your project including the **invoice form id** and a **link to the intial PR**.
+    5. Fill out the template with the details of your milestone including the **invoice form id** and a **link to the intial PR**.
     6. Once you have completed the application, click on "create new pull request".
     7. Grants Evaluators can accept the PR to accept the deliverable.
 4. **Payment:**
