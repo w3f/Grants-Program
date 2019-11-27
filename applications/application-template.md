@@ -8,7 +8,7 @@
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Description
+## :page_facing_up: Project Description
 
 Please provide the following:
   * A brief description of the project.
@@ -16,7 +16,7 @@ Please provide the following:
   * An indication of how you will integrate this project into Substrate / Polkadot.
   * An indication of why your team is interested in creating this project.
 
-## Team 
+## :busts_in_silhouette: Team 
 
 ### Members
 * Name of team member	1
@@ -42,7 +42,7 @@ Please provide the name and registered address of the legal entity executing the
 ### Team's Experience
 Please describe the team's relevant experience.
 
-## Development Roadmap
+## :nut_and_bolt: Development Roadmap
 
 ### Milestone 1
 
@@ -57,7 +57,7 @@ Please add additional milestones in the same way. If possible, include a tutoria
 | 2.  | ... |...|  
 
 
-## Additional Information
+## :pencil2: Additional Information
 Any additional information that you think is relevant to this application that hasn't already been included.
 
 Possible additional information to include:
