@@ -57,7 +57,7 @@ Please add additional milestones in the same way. If possible, include a tutoria
 | 2.  | ... |...|  
 
 
-## :pencil2: Additional Information
+## :heavy_plus_sign: Additional Information
 Any additional information that you think is relevant to this application that hasn't already been included.
 
 Possible additional information to include:
