@@ -19,8 +19,13 @@ Please provide the following:
 ## Team 
 
 ### Members
-* Name of team member	
-* Name of team member	
+* Name of team member	1
+* Name of team member	2
+* ...
+
+### Team LinkedIn Profiles
+* https://www.linkedin.com/<person_1>
+* https://www.linkedin.com/<person_2>
 * ...
 
 ### Website	
@@ -31,20 +36,13 @@ Please provide the following:
 * https://github.com/<your_repo_2>
 * ...
 
-### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
-* ...
-
 ### Legal Structure 
 Please provide the name and registered address of the legal entity executing the project. 
 
-### Team's experience
+### Team's Experience
 Please describe the team's relevant experience.
 
 ## Development Roadmap
-
-**I agree that the delivery will be published under the [Apache License 2.0](https://github.com/w3f/Open-Grants-Program/blob/master/LICENSE)**
 
 ### Milestone 1
 
