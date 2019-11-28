@@ -18,29 +18,12 @@ Please provide the following:
 
 ## :busts_in_silhouette: Team 
 
-### Members
-* Name of team member	1
-* Name of team member	2
-* ...
-
-### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
-* ...
-
-### Website	
-* https://...
-
-### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
-* ...
-
-### Legal Structure 
-Please provide the name and registered address of the legal entity executing the project. 
-
-### Team's Experience
-Please describe the team's relevant experience.
+* **Members:** Name of team member	1, name of team member	2, ..
+* **LinkedIn Profiles:** https://www.linkedin.com/<person_1>, https://www.linkedin.com/<person_2>, ...
+* **Code Repos:** https://github.com/<repo_1>, https://github.com/<repo_2>, ...
+* **Website:**	https://...
+* **Legal Structure:** Please provide the name and registered address of the legal entity executing the project. 
+* **Team's Experience:** Please describe the team's relevant experience.
 
 ## :nut_and_bolt: Development Roadmap
 
