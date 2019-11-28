@@ -43,25 +43,27 @@ Operations Team takes care of the legal setup, invoices and processing of paymen
 
 ## :pencil: Process
 
-1. **Grant application:**
+1. **Grant Application:**
     1. Fork this repository
     2. In the newly created fork, create a **copy** of the [application-template.md](./applications/application-template.md)
     3. Label the file as "project_name.md".
     4. Fill out the template with the details of your project.
     5. Once you have completed the application, click on "create new pull request".
     6. Sign off the [terms and conditions](https://gist.github.com/Noc2/75bc58e8ce9b5d419ff883b0cf2b8c19) via the CLA assistant.
-2. **Review:**
+2. **Application Review:**
     1. Committee can issue comments and request changes on the PR.
     2. When 1/3 of the committee approves a pull request then the application is accepted.
-3. **Milestone delivery:**
+3. **Milestone Delivery:**
     1. Fork the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery) repo with the **same Github account, which you used to submit the application!**
     2. In the newly created fork, create a **copy** of the [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md)
     3. Label the file as "project_name_milestone_number.md".
     4. Fill out the invoice form.
     5. Fill out the template with the details of your milestone including a **link to the intial PR**.
     6. Once you have completed the application, click on "create new pull request".
-    7. Grants Evaluators can accept the PR to accept the deliverable.
-4. **Payment:**
+4. **Milestone Review:**
+    1. Evaluators can issue comments and request changes on the PR.
+    2. Grants Evaluators can approve a pull request to accept the deliverable. 
+5. **Milestone Payment:**
     1. Notification is issued to the Operations Team once delivery was accepted or after 2 weeks without any feedback to improve the delivery.
     2. Operations Team makes the payment based on the details from the invoice form.
 
