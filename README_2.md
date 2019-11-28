@@ -64,8 +64,8 @@ Operations Team takes care of the legal setup, invoices and processing of paymen
     1. Evaluators can issue comments and request changes on the PR.
     2. Grants Evaluators can approve a pull request to accept the deliverable. 
 5. **Milestone Payment:**
-    1. Notification is issued to the Operations Team once delivery was accepted or after 2 weeks without any feedback to improve the delivery.
-    2. Operations Team makes the payment based on the details from the invoice form.
+    1. Notification is issued to the Operations Team once the delivery was accepted or after 2 weeks without any feedback after the initial delivery. As soon as feedback is provided by the evaluators, this feedback first needs to be resolved.  
+    2. Operations Team makes the payment to the BTC or DOT address specified in the initial application.
 
 *Grant application can be amended at any time, leading to a need for reevaluation by the Committee.*
 
