@@ -22,7 +22,8 @@ The Open Grants Program  aims to be:
 - Simple
 - Effective at allocating resources across projects which are beneficial to advancement of the Polkadot Ecosystem
 
-The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tracked completely **transparent** on GitHub and paid in **BTC or DOT**. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants, payments in other currencies and partly private submissions. 
+The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tracked completely **transparent** on GitHub and paid in **BTC or DOT**. Additionally, the software of the project needs to be released under the Apache license version 2.0. 
+Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants, payments in other currencies and partly private submissions. 
 
 You can find our areas of interest [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md#areas-of-interest-for-technical-grants), as well as a list of previously accepted projects [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/accepted_grant_applications.md). 
 
