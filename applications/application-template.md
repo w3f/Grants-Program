@@ -4,7 +4,7 @@
 
 * **Project:** The name of the project
 * **Proposer:** GitHub username
-* **Payment Address:** BTC or DOT payment address. Until the Polkadot network launche, the DOT payment address needs to be an Ethereum address.We don't accept payments for the program in other currencies at this stage. 
+* **Payment Address:** BTC or DOT payment address. Until the Polkadot network launche, the DOT payment address needs to be an Ethereum address. We don't accept payments for the program in other currencies at this stage. 
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
