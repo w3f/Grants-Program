@@ -33,13 +33,26 @@ You can find our areas of interest [here](https://github.com/w3f/Web3-collaborat
 
 The Committee consist of individuals who know the funding priorities of the Polkadot ecosystem. The Committee evaluates grant applications and provides feedback on these applications. 
 
+* [Aeron Buchanan](https://github.com/aeronbuchanan)
+* [Peter Czaban](https://github.com/keorn)
+* [Fredrik Harrysson](https://github.com/folsen)
+* [David Hawig](https://github.com/Noc2)
+* [Kasper Mai Jørgensen]()
+* [Reto Trinkler](https://github.com/retotrinkler)
+* [Gavin Wood](https://github.com/gavofyork)
+
 **W3F Grants Evaluators**
 
 Evaluators are individuals able to evaluate the technology delivered through the grants programme.
 
+* [Peter Czaban](https://github.com/keorn)
+* [David Hawig](https://github.com/Noc2)
+
 **W3F Operations Team**
 
 Operations Team takes care of the legal setup, invoices and processing of payments. 
+
+* [Kasper Mai Jørgensen]()
 
 ## :pencil: Process
 
