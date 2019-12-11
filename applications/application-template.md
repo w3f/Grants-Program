@@ -4,7 +4,7 @@
 
 * **Project:** The name of the project
 * **Proposer:** GitHub username
-* **Payment Address:** BTC or DOT payment address. Until the Polkadot network launche, the DOT payment address needs to be an Ethereum address. We don't accept payments for the program in other currencies at this stage. 
+* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
@@ -28,13 +28,13 @@ Please provide the following:
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** Duration of the whole project
-* **Total Costs:** Amount of Payment in DOT or BTC for the whole project
+* **Total Costs:** Amount of Payment in BTC for the whole project
 
 ### Milestone 1
 
 Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software. 
 * **Estimated Duration:** Duration of milestone 1 
-* **Costs:** Amount of Payment in DOT or BTC for milestone 1
+* **Costs:** Amount of Payment in BTC for milestone 1
 
 
 | Number | Deliverable | Specification | 
