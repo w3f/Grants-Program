@@ -57,7 +57,7 @@ Operations Team takes care of the legal setup, invoices and processing of paymen
 ## :pencil: Process
 
 1. **Grant Application:**
-    1. Fork this repository
+    1. [Fork](https://github.com/w3f/Open-Grants-Program/fork) this repository
     2. In the newly created fork, create a **copy** of the [application-template.md](./applications/application-template.md)
     3. Label the file as "project_name.md".
     4. Fill out the template with the details of your project.
