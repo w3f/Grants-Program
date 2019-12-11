@@ -1,6 +1,6 @@
 # Web3 Foundation Open Grants Program
 
-**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tracked completely **transparent** on GitHub and paid in **BTC or DOT**. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants, payments in other currencies and partly private submissions. 
+**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tracked completely **transparent** on GitHub and paid in **BTC**. Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants, payments in other currencies and partly private submissions. 
 
 ---
 
@@ -22,7 +22,7 @@ The Open Grants Program  aims to be:
 - Simple
 - Effective at allocating resources across projects which are beneficial to advancement of the Polkadot Ecosystem
 
-The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tracked completely **transparent** on GitHub and paid in **BTC or DOT**. Additionally, the software of the project needs to be released under the Apache license version 2.0. 
+The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tracked completely **transparent** on GitHub and paid in **BTC**. Additionally, the software of the project needs to be released under the Apache license version 2.0. 
 Look at [Web3 Foundation Grants](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) for larger grants, payments in other currencies and partly private submissions. 
 
 You can find our areas of interest [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md#areas-of-interest-for-technical-grants), as well as a list of previously accepted projects [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/accepted_grant_applications.md). 
@@ -78,7 +78,7 @@ Operations Team takes care of the legal setup, invoices and processing of paymen
     2. Grants Evaluators can approve a pull request to accept the deliverable. 
 5. **Milestone Payment:**
     1. Notification is issued to the Operations Team once the delivery was accepted or after 2 weeks without any feedback after the initial delivery. As soon as feedback is provided by the evaluators, this feedback first needs to be resolved.  
-    2. Operations Team makes the payment to the BTC or DOT address specified in the initial application.
+    2. Operations Team makes the payment to the BTC address specified in the initial application.
 
 *Grant application can be amended at any time, leading to a need for reevaluation by the Committee.*
 
