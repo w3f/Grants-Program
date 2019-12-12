@@ -62,7 +62,7 @@ Operations Team takes care of the legal setup, invoices and processing of paymen
     3. Label the file as "project_name.md".
     4. Fill out the template with the details of your project.
     5. Once you have completed the application, click on "create new pull request".
-    6. Sign off the [terms and conditions](https://gist.github.com/Noc2/75bc58e8ce9b5d419ff883b0cf2b8c19) via the CLA assistant.
+    6. Sign off the [terms and conditions](https://gist.github.com/Noc2/75bc58e8ce9b5d419ff883b0cf2b8c19) presented by [claassistantio](https://github.com/claassistantio) as  Contributor License Agreement (CLA). You might need to reload the pull request to see the comment by [claassistantio](https://github.com/claassistantio).
 2. **Application Review:**
     1. Committee can issue comments and request changes on the PR.
     2. When 1/3 of the committee approves a pull request then the application is accepted.
