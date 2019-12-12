@@ -58,7 +58,7 @@ Operations Team takes care of the legal setup, invoices and processing of paymen
 
 1. **Grant Application:**
     1. [Fork](https://github.com/w3f/Open-Grants-Program/fork) this repository
-    2. In the newly created fork, create a **copy** of the [application-template.md](./applications/application-template.md)
+    2. In the newly created fork, create a **copy** of the [application-template.md](./applications/application-template.md). In the GitHub web interface, you, therefore, need to create a new file and copy the content of the [application-template.md](./applications/application-template.md) inside the new file. Don't change the template file directly!
     3. Label the file as "project_name.md".
     4. Fill out the template with the details of your project.
     5. Once you have completed the application, click on "create new pull request".
