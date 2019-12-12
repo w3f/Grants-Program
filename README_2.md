@@ -37,7 +37,7 @@ The Committee consist of individuals who know the funding priorities of the Polk
 * [Peter Czaban](https://github.com/keorn)
 * [Fredrik Harrysson](https://github.com/folsen)
 * [David Hawig](https://github.com/Noc2)
-* [Kasper Mai Jørgensen]()
+* [Kasper Mai Jørgensen](https://github.com/KasperJor)
 * [Reto Trinkler](https://github.com/retotrinkler)
 * [Gavin Wood](https://github.com/gavofyork)
 
@@ -52,7 +52,7 @@ Evaluators are individuals able to evaluate the technology delivered through the
 
 Operations Team takes care of the legal setup, invoices and processing of payments. 
 
-* [Kasper Mai Jørgensen]()
+* [Kasper Mai Jørgensen](https://github.com/KasperJor)
 
 ## :pencil: Process
 
