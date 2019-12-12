@@ -67,7 +67,7 @@ Operations Team takes care of the legal setup, invoices and processing of paymen
     1. Committee can issue comments and request changes on the PR.
     2. When 1/3 of the committee approves a pull request then the application is accepted.
 3. **Milestone Delivery:**
-    1. [Fork](https://github.com/w3f/Grant-Milestone-Delivery/fork) the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery) repo with the **same Github account, which you used to submit the application!**
+    1. [Fork](https://github.com/w3f/Grant-Milestone-Delivery/fork) the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery) repo with the **same GitHub account, which you used to submit the application!**
     2. In the newly created fork, create a **copy** of the [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md)
     3. Label the file as "project_name_milestone_number.md".
     4. Fill out the [invoice form](https://forms.gle/QvsbeSA3ziuC9k9b9).
