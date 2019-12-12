@@ -31,7 +31,7 @@ You can find our areas of interest [here](https://github.com/w3f/Web3-collaborat
 
 **W3F Grants Committee**
 
-The Committee consist of individuals who know the funding priorities of the Polkadot ecosystem. The Committee evaluates grant applications and provides feedback on these applications. 
+The Committee consist of individuals who know the funding priorities of the Polkadot ecosystem. The committee evaluates grant applications and provides feedback on these applications. 
 
 * [Aeron Buchanan](https://github.com/aeronbuchanan)
 * [Peter Czaban](https://github.com/keorn)
@@ -43,7 +43,7 @@ The Committee consist of individuals who know the funding priorities of the Polk
 
 **W3F Grants Evaluators**
 
-Evaluators are individuals able to evaluate the technology delivered through the grants programme.
+Evaluators are individuals able to evaluate the technology delivered through the Open Grants Program.
 
 * [Peter Czaban](https://github.com/keorn)
 * [David Hawig](https://github.com/Noc2)
