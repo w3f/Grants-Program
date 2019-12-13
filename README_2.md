@@ -65,7 +65,7 @@ Operations Team takes care of the legal setup, invoices and processing of paymen
     6. Sign off the [terms and conditions](https://gist.github.com/Noc2/75bc58e8ce9b5d419ff883b0cf2b8c19) presented by [claassistantio](https://github.com/claassistantio) as  Contributor License Agreement (CLA). You might need to reload the pull request to see the comment by [claassistantio](https://github.com/claassistantio).
 2. **Application Review:**
     1. Committee can issue comments and request changes on the PR.
-    2. When 1/3 of the committee approves a pull request then the application is accepted.
+    2. When 1/3 of the committee approves a pull request, the terms and conditions are signed off and all requested changes are addressed the application is accepted.
 3. **Milestone Delivery:**
     1. [Fork](https://github.com/w3f/Grant-Milestone-Delivery/fork) the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery) repo with the **same GitHub account, which you used to submit the application!**
     2. In the newly created fork, create a **copy** of the [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md)
