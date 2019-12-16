@@ -28,7 +28,7 @@ Please provide the following:
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** Duration of the whole project
-* **Total Costs:** Amount of Payment in BTC for the whole project
+* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
 
 ### Milestone 1
 
