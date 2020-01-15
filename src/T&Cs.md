@@ -124,7 +124,7 @@ In the event of default, Web 3.0 may either, at its discretion:
 
 As soon as one evaluator approves the pull request, the delivery is officially accepted. The delivery is now a part of the [Grant Milestone Delivery GitHub repository](https://github.com/w3f/Grant-Milestone-Delivery). The time point of the acceptance by the evaluator is hereby stored on GitHub. The original submission is stored with a unique commit hash (identifier) and can not be altered by any party.
 
-**(v)  Payment process:
+**(v)  Payment process:**
 
 The Operations Team specified in the [Open-Grants-Program GitHub repository](https://github.com/w3f/Open-Grants-Program), gets notified once the above-specified delivery was accepted or after 2 weeks without any feedback after the initial delivery. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the BTCs or DOT address specified in the initial application.
 
