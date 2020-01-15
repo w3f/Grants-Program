@@ -29,7 +29,7 @@ The terms defined in this section whenever used in these Terms and Conditions sh
 
 "Development Work"  means any and all development activities related to the Software and undertaken by You. For the avoidance of doubt, any development activities undertaken before the Effective Date in relation to the Software are deemed to constitute Development Work and to form part of the deliverables to be provided by You and be subject to the terms of these Terms and Conditions;
 
-"Effective Date"  means the date on which the application is accepted by the Grants Committee via the application review process defined below (the date of the merged commit of the application, which can be found under <https://github.com/w3f/Open-Grants-Program/pulls>. . ;
+"Effective Date"  means the date on which the application is accepted by the Grants Committee via the application review process defined below (the date of the merged commit of the application, which can be found under <https://github.com/w3f/Open-Grants-Program/pulls>);
 
 "Grant" means the financial support granted by Web 3.0. to You (i) for the development of the Software in accordance with the Specifications; and (ii) the grant of license rights on the Intellectual Property Rights, according to the terms of these Terms and Conditions. The Parties agree that Grants are unrelated to the actual development costs and the commercial value of the Software;
 
@@ -76,7 +76,7 @@ To apply for the Web 3.0 Foundation Open Grants Program, your application shall 
 -  It shall be a software-based project, which contributes to the advancement of the Polkadot ecosystem;
 -  the total amount of funding requested for the project shall be below CHF  30,000 at the time of submission;
 -  the Software shall be released under the Apache license version 2.0.;
--  You must accept payment in the blockchain tokens native to the Bitcoin Network ("BTCs") and/or the blockchain tokens native to Polkadot ("DOTs"). 
+-  You must accept payment in the blockchain tokens native to the Bitcoin Network ("BTCs"). 
 -  You will need to submit the application and deliver the milestones according to the process specified below.
 
 The open grants process consists of five parts, each of them described in more detail below:
@@ -126,7 +126,7 @@ As soon as one evaluator approves the pull request, the delivery is officially a
 
 **(v)  Payment process:**
 
-The Operations Team specified in the [Open-Grants-Program GitHub repository](https://github.com/w3f/Open-Grants-Program), gets notified once the above-specified delivery was accepted or after 2 weeks without any feedback after the initial delivery. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the BTCs or DOT address specified in the initial application.
+The Operations Team specified in the [Open-Grants-Program GitHub repository](https://github.com/w3f/Open-Grants-Program), gets notified once the above-specified delivery was accepted or after 2 weeks without any feedback after the initial delivery. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the BTCs specified in the initial application.
 
 ## 5.  Scope of these Terms and Conditions
 
