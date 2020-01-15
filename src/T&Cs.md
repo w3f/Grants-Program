@@ -73,33 +73,29 @@ You shall indemnify and hold harmless Web 3.0 from any third party claims (inclu
 
 To apply for the Web 3.0 Foundation Open Grants Program, your application shall fulfill the following criteria:
 
-(a)  It shall be a software-based project, which contributes to the advancement of the Polkadot ecosystem;
-
-(b)  the total amount of funding requested for the project shall be below CHF  30,000 at the time of submission;
-
-(c)  the Software shall be released under the Apache license version 2.0.;
-
-(d)  You must accept payment in the blockchain tokens native to the Bitcoin Network ("BTCs") and/or the blockchain tokens native to Polkadot ("DOTs"). 
-
-(e)  You will need to submit the application and deliver the milestones according to the process specified below.
+-  It shall be a software-based project, which contributes to the advancement of the Polkadot ecosystem;
+-  the total amount of funding requested for the project shall be below CHF  30,000 at the time of submission;
+-  the Software shall be released under the Apache license version 2.0.;
+-  You must accept payment in the blockchain tokens native to the Bitcoin Network ("BTCs") and/or the blockchain tokens native to Polkadot ("DOTs"). 
+-  You will need to submit the application and deliver the milestones according to the process specified below.
 
 The open grants process consists of five parts, each of them described in more detail below:
 
-(i)  Grant application process:
+**(i)  Grant application process:**
 
 To apply for a grant of the Web 3.0  Foundation Open Grants Program, You shall comply with the procedures established in the README.md file under <https://github.com/w3f/Open-Grants-Program> as well as the process defined inside this document.
 
 To apply for a grant of the Web3 Foundation Open Grants Program, the grantee needs to fork (= create a copy on GitHub of) the Open-Grants-Program GitHub repository. In the newly created fork (=copy on GitHub), the grantee has to create a copy of the application-template.md. The copied application-template.md needs to be renamed as "project_name.md". "Project_name" needs to be replaced with the name of the project application. Additionally, the grantee has to fill out all mandatory parts of the application-template.md presented in bold letters. Once the grantees have completed the application, they need to create a new pull request (= in this case, a mechanism to submit the changes of the fork to the original Open-Grants-Program GitHub repository) by clicking on the "create new pull request" button shown inside the fork of the W3F Open-Grants-Program GitHub repository. After this, the grantee needs to sign off the terms and conditions presented via the CLA assistant.
 
-(ii)  Application review process:
+**(ii)  Application review process:**
 
 The Web 3.0 grants committee, which is specified on the [Open-Grants-Program GitHub repository ](https://github.com/w3f/Open-Grants-Program)(the "Grants Committee"), can issue comments and request changes on the grant application pull request (the submission of the grant application on GitHub).  As soon as 1/3 of the Grants Committee approves the pull request, the terms and conditions are signed off and all requested changes are addressed, the application is officially accepted. The application is now a part of the [W3F Open-Grants-Program GitHub repository](https://github.com/w3f/Open-Grants-Program). The time point of the acceptance by the Grants Committee is hereby stored on GitHub and counts as the official beginning of the grant. The original submission is stored with a unique commit hash (identifier) and can not be altered by any party. The final version approved by the Grants Committee of the Specifications, the Time Schedule and Milestones will be placed  in the applications folder of the W3F Open Grants Program Repository at <https://github.com/w3f/Open-Grants-Program/tree/master/applications> via the merge function of GitHub.
 
-(iii)  Milestone delivery process:
+**(iii)  Milestone delivery process:**
 
 To submit one of the possible multiple milestones specified in the application, You shall fork the [Grant Milestone Delivery GitHub repository](https://github.com/w3f/Grant-Milestone-Delivery) with the same Github account, used to submit the initial application. In the newly created fork, You shall create a copy of the [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md). Such [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md) needs to be renamed as "project_name_milestone_number.md". "Project_name" needs to be replaced with the name of the project application and milestone number with the number of the delivered milestone. Additionally, You shall fill out all mandatory parts of the [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md) as well as the invoice form linked inside the [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md). Once You have completed the milestone delivery document, You shall create a new pull request by clicking on the "create new pull request" button shown inside their fork of the [Grant Milestone Delivery GitHub repository](https://github.com/w3f/Grant-Milestone-Delivery).
 
-(iv)  Milestone review process:
+**(iv)  Milestone review process:**
 
 The Grants Evaluators, who are specified on the [Open-Grants-Program GitHub repository](https://github.com/w3f/Open-Grants-Program), can issue comments and request changes on the milestone delivery pull request. 
 
@@ -121,17 +117,14 @@ If You are unable to remedy the defects within this additional period, You shall
 
 In the event of default, Web 3.0 may either, at its discretion:
 
-(i)  insist on the rectification of the milestones and/or the Software;
-
-(ii)  delegate the completion of the Software to a third party at your expenses;
-
-(iii)  reduce payment of the Grant because of the reduced value of the Software; or
-
-(iv)  refuse payment of the Grant in full (for the avoidance of doubt, this may require You to refund all milestone and advance payments made under these Terms and Conditions).
+- insist on the rectification of the milestones and/or the Software;
+- delegate the completion of the Software to a third party at your expenses;
+- reduce payment of the Grant because of the reduced value of the Software; or
+- refuse payment of the Grant in full (for the avoidance of doubt, this may require You to refund all milestone and advance payments made under these Terms and Conditions).
 
 As soon as one evaluator approves the pull request, the delivery is officially accepted. The delivery is now a part of the [Grant Milestone Delivery GitHub repository](https://github.com/w3f/Grant-Milestone-Delivery). The time point of the acceptance by the evaluator is hereby stored on GitHub. The original submission is stored with a unique commit hash (identifier) and can not be altered by any party.
 
-(v)  Payment process:
+**(v)  Payment process:
 
 The Operations Team specified in the [Open-Grants-Program GitHub repository](https://github.com/w3f/Open-Grants-Program), gets notified once the above-specified delivery was accepted or after 2 weeks without any feedback after the initial delivery. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the BTCs or DOT address specified in the initial application.
 
@@ -142,15 +135,10 @@ The subject matter of these Terms and Conditions is (i) the development of the S
 In performing your obligations under these Terms and Conditions, You shall: 
 
 1.  use reasonable skill and care; 
-
 2.  comply with any date or time specified according to the Time Schedule;
-
 3.  perform your obligations in accordance with good industry practice, being practices in relation to the development of software and related deliverables the same as or similar to the Software that are usually followed by other suppliers in the same industry, including adherence to industry codes of practice and industry standards in relation to such products and services; 
-
 4.  perform your obligations in accordance with all laws and codes of conducts applicable;
-
 5.  ensure that your development team consists of a sufficient number of appropriately skilled and experienced individuals
-
 6.  develop the Software as an open source software under the Apache license version 2.0.
 
 The Parties acknowledge and agree that the requirements set out in the Milestones may only be varied or amended by submitting another pull request and the following reevaluation by the committee under the same conditions as the initial application review process specified above.
@@ -216,11 +204,8 @@ Termination with immediate effect will occur if the terms of the Terms and Condi
 (a)  if a deadline according to the Time Schedule is not met;
 
 1.  if it results from Your behavior that such a deadline will not be met; 
-
 2.  if You become bankrupt, insolvent, wound-up or dissolved or otherwise loses its legal personality as a validly standing entity; 
-
 3.  if there is a Change in Control and Web 3.0. has not given his prior written consent to such Change in control; and/or
-
 4.  is the event You do not comply with Section 6 (d), (e) and (f) and/or causes, in any way and at Web 3.0.'s discretion, any damage to Web 3.0. or Polkadot's image or reputation.
 
 Furthermore, termination can happen for any reason at the discretion of the Web 3.0 Technologies Foundation.
