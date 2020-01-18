@@ -8,12 +8,6 @@
 
 ## Project Description :page_facing_up: 
 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of why this project is good for the ecosystem.
-  * An indication of how you will integrate this project into Substrate / Polkadot.
-  * An indication of why your team is interested in creating this project.
-
 Polkastats project is a WebApp that displays interesting and diverse information of live Substrate based blockchains. It consumes the data from its own database, what makes it fast and responsive. At the same time, the Polkastats backend feeds the database with the different blockchain events.
 
 Polkastats project serves very useful information for validators and delegators alike. In most of cases, information shown by Polkastats is not available in any other place, whereas sometimes the information, if repeated, is presented in a more usable manner.
@@ -47,8 +41,8 @@ Our latest contribution as well as the reason of this application is our new bel
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** Duration of the whole project
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
+* **Total Estimated Duration:** 3 months
+* **Total Costs:** 3.3 BTC
 
 ### Milestone 1
 
@@ -61,8 +55,6 @@ Please add additional milestones in the same way. If possible, include a tutoria
 | ------------- | ------------- | ------------- |
 | 1. | Title of the deliverable | Please describe the deliverable here as detailed as possible |  
 | 2.  | ... |...|  
-
-
 
 
 1. Milestone: New backend v3
