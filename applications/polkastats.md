@@ -1,7 +1,5 @@
 # Open Grant Proposal
 
-> This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
-
 * **Project:** [Polkastats](https://polkastats.io)
 * **Proposer:** Colm3na
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
@@ -24,7 +22,7 @@ We have translated into Spanish the Polkadot web, the wiki and a bunch of educat
 
 ## Team :busts_in_silhouette:
 
-* **Members:** Mario Pino, Ana, Wimel, Fredy
+* **Members:** Mario, Ana, Wimel, Fredy
 * **LinkedIn Profiles:** [Mario](https://www.linkedin.com/in/mariopinouceda/), [Ana](https://www.linkedin.com/in/anagutjor/), [Wimel](https://www.linkedin.com/in/angelsvq/), [Fredy](https://www.linkedin.com/in/alfredoluque/)
 
 * **Code Repos:** [polkastats-v2](https://github.com/polkastats-v2), [polkastats-backend-v2](https://github.com/Colm3na/polkastats-backend-v2), [polkastats-v1](https://github.com/Colm3na/polkastats), [polkastats-backend-v1](https://github.com/Colm3na/polkastats-backend)
