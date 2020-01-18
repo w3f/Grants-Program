@@ -42,38 +42,25 @@ Our latest contribution as well as the reason of this application is our new bel
 * **Total Estimated Duration:** 3 months
 * **Total Costs:** 3.3 BTC
 
-### Milestone 1
+### Milestone 1: New backend v3
 
-Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software. 
-* **Estimated Duration:** Duration of milestone 1 
-* **Costs:** Amount of Payment in BTC for milestone 1
+In this milestone we want to refactor our backend to be more resilient, scalable and efficient.
+
+The use of PosgresSQL will help us to have a little bit faster and reliable backend and to implement Hasura.
+
+We'll build new crawlers that work in subscription mode and let us work more like a full block explorer.
+
+Implementing Hasura will bring us table subscriptions and the power of GraphQL to query the contents of the new backend database.
+
+* **Estimated Duration:** 1 month
+* **Costs:** 1.1 BTC
 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Title of the deliverable | Please describe the deliverable here as detailed as possible |  
-| 2.  | ... |...|  
-
-
-1. Milestone: New backend v3
-    1. MySQL -> PosgresSQL
-    2. Crawlers
-    3. Hasura API
-
-2. Milestone: Frontend v3
-    1. New graphs
-    2. Polkadot browser extension
-    3. Ledger
-
-3. Milestone: Internationalization i18n
-
-4. Milestone: Identity & Improvements of UX designs
-    1. Identity
-    2. UX 
-
-5. Milestone: Monitorization for validators
-
-### 1 New backend v3
+| 1. | MySQL -> PosgresSQL | Refactor database schema and migrate to PosgresSQL |  
+| 2. | Crawlers | Refactor/develop crawlers to fill the new schema |  
+| 3. | Hasura backend | Implement the new Hasura backend |
 
 #### 1.1 MySQL -> PosgresSQL
 
@@ -129,9 +116,41 @@ Hasura already comes with Postgres integrated, and this is the DB will be using 
  
 The new API will allow us to expose a very interesting building block for new Polkadot dapp builders and validators. The API will be open and free for those who want to use our curated data and build their own sites and apps. For that purpose it will include a reasonable documentation.
 
-### 2 Frontend
 
-#### 2.1 New graphs
+### Milestone 2: new frontend v3
+
+In this milestone we will focus on migrate the frontend to use GraphQL queries to our new Hasura backend server, implement internacionalization and develop new frontend features.
+
+* **Estimated Duration:** 1 month
+* **Costs:** 1.1 BTC
+
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1. | Migrate frontend | Migrate current frontend to use new backend features |  
+| 2. | Internationalization i18n | Translate PolkaStats Platform to all possible languages |  
+| 3. | New UI features | Implement new features using the new poweful backend | 
+
+
+#### 2.1 Migrate frontend
+
+We need to migrate the frontend to use GraphQL queries to our new Hasura backend server.
+
+#### 2.2 Internacionalization (i18n)
+
+To reach a broader public we will include an internacionalization module to Polkastats. The module will facilitate other languages to be included. Once the module gets ready we will incentivate those translations funding them with gitcoin.
+
+#### 2.3 New UI features
+
+##### 2.3.1 Phragmen algorithm
+
+Our plan is to focus on the possibilities of the phragmen algorithm:
+
+* Explain it better to users
+* Implement phragmen results for intentions
+* Implement phragmen results for nominators
+
+##### 2.3.2 New graphs
 
 Our plan is to implement new validator graphs:
 
@@ -140,38 +159,27 @@ Our plan is to implement new validator graphs:
 * Produced blocks
 * Status (active or not)
 
-#### 2.2 Polkadot browser extension
+### Milestone 3: Polkadot browser extension and Ledger integration
 
-We will leverage the [Polkadot browser extension](https://github.com/polkadot-js/extension). The inclusion of this extension will facilitate the "per user" customization goal of milestone 4. It will also allow any other interaction with the blockchain from within polkastats platform.
+In this milestone we'll implement key components to allow our users to interact with Kusama and Polkadot blockchains using PolkaStats platform.
 
-#### 2.3 Ledger
+* **Estimated Duration:** 1 month
+* **Costs:** 1.1 BTC
 
-Zondax has already develop the [Ledger Kusma app](https://github.com/Zondax/ledger-polkadot) and we do not hesitate that Juan Leni will make it work in Polkadot very soon. This component will add a valuable overall security improvement to the polkastats web app. 
 
-### 3 Internacionalization (i18n)
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1. | Polkadot browser extension | Allow nominators to stake using PolkaStats and Polkadot browser extension |  
+| 2. | Ledger | Allow nominators to stake using PolkaStats and Ledger |
 
-To reach a broader public we will include an internacionalization module to Polkastats. The module will facilitate other languages to be included. Once the module gets ready we will incentivate those translations funding them with gitcoin.
 
-### 4 Identity & Improvements of UX designs
+#### 3.1 Polkadot browser extension
 
-#### 4.1 Identity
- 
-Polkastats needs to integrate identity module information for all accounts. The customization possiblilities of "per user" information is a very interesting feature. We will leverage the already implemented identity substrate module. This feature will permit the storage on the local DB of a small and responsive amount of data. At the same time, we would like to encourage this way the enrollment of validators and delegators in polkastats platform and the usage of identity module.
+We will leverage the [Polkadot browser extension](https://github.com/polkadot-js/extension). The goal is to allow nominators to operate using PolkaStats platform and Polkadot browser extension.
 
-The UX in general needs to be improved. We have focused mainly on its functionality until now, leaving the usage easinness and the stetics aspects for later. This milestone will be outsourced for better results. 
+#### 3.2 Ledger
 
-### 5 Monitorization for validators
-
-Our objective is to offer a free monitorizacion service for validators, so you can get alerts by email and/or telegram about your validator.
-
-* Validator status change: (validating/intention/down)
-* New nomination
-* Removed nomination
-* Nomination change
-* Slash events
-* Reward events
-
-We are discussing about this feature, but maybe include a Telegram bot to susbcribe to the alerts.
+Zondax has already develop the [Ledger Kusma app](https://github.com/Zondax/ledger-polkadot) and we do not hesitate that Juan Leni will make it work in Polkadot very soon. The goal is to allow nominators to operate using PolkaStats platform and Ledger hardware wallet.
 
 
 ##  License
