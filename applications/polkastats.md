@@ -11,11 +11,9 @@ Polkastats project is a WebApp that displays interesting and diverse information
 Polkastats project serves very useful information for validators and delegators alike. In most of cases, information shown by Polkastats is not available in any other place, whereas sometimes the information, if repeated, is presented in a more usable manner.
 
 Polkastats is natively integrated into Substrate / Polkadot networks. We run several full nodes to keep the service online.
-
 Furthermore, it is safe to state that this project has already found a place at the community's heart. The number of visitors has been constantly increasing since Polkastats launch back in august and it is talked about in the different communication channels. Also, Polkadot has been at the center for Polkastats since its conception, so there is no doubt left about their intertwinement.
 
 ColmenaLabs team has always been looking for the best way to contribute to blockchain projects we consider the most interesting.
-
 Thus, we already boast of a long history of collaborations with Polkadot. 
 
 We have translated into Spanish the Polkadot web, the wiki and a bunch of education materials. We have conducted many meetups and workshops "spreading the word" about Polkadot all over our country. We are active in PolkaDAO and have Polkadot ambassadors in our team.
@@ -34,27 +32,22 @@ We have translated into Spanish the Polkadot web, the wiki and a bunch of educat
 * **Team's Experience:** 
 
 Team ColmenaLabs has a vast expertise in blockchain technologies, conducting Ethereum meetups since earlier 2016. ColmenaLabs is also one of the most active blockchain communities of the whole Iberian Peninsula (Spain + Portugal). Our previous blockchain experience has facilitated our landing in the Proof of Stake era, where we are participating so far with great success and good reputation on many projects. We have 2 winners of the Game of Stake Hackathon, we are validating on Kusama testnet and we support Polkadot testnets since PoC-1. 
-
 Our latest contribution as well as the reason of this application is our new beloved child, [polkastats.io](https://polkastats.io)
 
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 3 months
-* **Total Costs:** 3.3 BTC
+* **Total Costs:** 3.35 BTC
 
 ### Milestone 1: New backend v3
 
 In this milestone we want to refactor our backend to be more resilient, scalable and efficient.
-
 The use of PosgresSQL will help us to have a little bit faster and reliable backend and to implement Hasura.
-
 We'll build new crawlers that work in subscription mode and let us work more like a full block explorer.
-
 Implementing Hasura will bring us table subscriptions and the power of GraphQL to query the contents of the new backend database.
 
-* **Estimated Duration:** 1 month
-* **Costs:** 1.1 BTC
-
+* **Estimated Duration:** 6 weeks
+* **Costs:** 1.35 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -116,21 +109,18 @@ Hasura already comes with Postgres integrated, and this is the DB will be using 
  
 The new API will allow us to expose a very interesting building block for new Polkadot dapp builders and validators. The API will be open and free for those who want to use our curated data and build their own sites and apps. For that purpose it will include a reasonable documentation.
 
-
 ### Milestone 2: new frontend v3
 
 In this milestone we will focus on migrate the frontend to use GraphQL queries to our new Hasura backend server, implement internacionalization and develop new frontend features.
 
-* **Estimated Duration:** 1 month
-* **Costs:** 1.1 BTC
-
+* **Estimated Duration:** 4 weeks
+* **Costs:** 1 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 1. | Migrate frontend | Migrate current frontend to use new backend features |  
-| 2. | Internationalization i18n | Translate PolkaStats Platform to all possible languages |  
+| 2. | Internationalization i18n | Translate PolkaStats Platform to at Spanish language |  
 | 3. | New UI features | Implement new features using the new poweful backend | 
-
 
 #### 2.1 Migrate frontend
 
@@ -163,9 +153,8 @@ Our plan is to implement new validator graphs:
 
 In this milestone we'll implement key components to allow our users to interact with Kusama and Polkadot blockchains using PolkaStats platform.
 
-* **Estimated Duration:** 1 month
-* **Costs:** 1.1 BTC
-
+* **Estimated Duration:** 4 weeks
+* **Costs:** 1 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -203,8 +192,6 @@ So far what we have built (mainly just Mario, Polkastats true father) is the blo
 * Similar projects and differences:
  
 Remarkably, the other (and earlier only) Polkadot block explorer out there is Polkascan, by which Polkastats has been undoubtedly heavily inspired.
- 
 Still, Polkastats brings in some nice specs that make it unique and, we also believe, better for certain kinds of use.
- 
 First of all, we find the interface to be much more user friendly.
  
