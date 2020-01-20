@@ -23,7 +23,7 @@ We have translated into Spanish the Polkadot web, the wiki and a bunch of educat
 * **Members:** Mario, Ana, Wimel, Fredy
 * **LinkedIn Profiles:** [Mario](https://www.linkedin.com/in/mariopinouceda/), [Ana](https://www.linkedin.com/in/anagutjor/), [Wimel](https://www.linkedin.com/in/angelsvq/), [Fredy](https://www.linkedin.com/in/alfredoluque/)
 
-* **Code Repos:** This Grant repos [polkastats-v3](https://github.com/polkastats-v3), [polkastats-backend-v3](https://github.com/Colm3na/polkastats-backend-v3), Former repos: [polkastats-v2](https://github.com/polkastats-v2), [polkastats-backend-v2](https://github.com/Colm3na/polkastats-backend-v2), [polkastats-v1](https://github.com/Colm3na/polkastats), [polkastats-backend-v1](https://github.com/Colm3na/polkastats-backend)
+* **Code Repos:** This Grant repos [polkastats-v3](https://github.com/Colm3na/polkastats-v3), [polkastats-backend-v3](https://github.com/Colm3na/polkastats-backend-v3), Former repos: [polkastats-v2](https://github.com/Colm3na/polkastats-v2), [polkastats-backend-v2](https://github.com/Colm3na/polkastats-backend-v2), [polkastats-v1](https://github.com/Colm3na/polkastats), [polkastats-backend-v1](https://github.com/Colm3na/polkastats-backend)
 
 * **Website:** https://colmenalabs.org
 
