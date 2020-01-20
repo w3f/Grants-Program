@@ -23,11 +23,11 @@ We have translated into Spanish the Polkadot web, the wiki and a bunch of educat
 * **Members:** Mario, Ana, Wimel, Fredy
 * **LinkedIn Profiles:** [Mario](https://www.linkedin.com/in/mariopinouceda/), [Ana](https://www.linkedin.com/in/anagutjor/), [Wimel](https://www.linkedin.com/in/angelsvq/), [Fredy](https://www.linkedin.com/in/alfredoluque/)
 
-* **Code Repos:** [polkastats-v2](https://github.com/polkastats-v2), [polkastats-backend-v2](https://github.com/Colm3na/polkastats-backend-v2), [polkastats-v1](https://github.com/Colm3na/polkastats), [polkastats-backend-v1](https://github.com/Colm3na/polkastats-backend)
+* **Code Repos:** This Grant repos [polkastats-v3](https://github.com/polkastats-v3), [polkastats-backend-v3](https://github.com/Colm3na/polkastats-backend-v3), Former repos: [polkastats-v2](https://github.com/polkastats-v2), [polkastats-backend-v2](https://github.com/Colm3na/polkastats-backend-v2), [polkastats-v1](https://github.com/Colm3na/polkastats), [polkastats-backend-v1](https://github.com/Colm3na/polkastats-backend)
 
 * **Website:** https://colmenalabs.org
 
-* **Legal Structure:** Please provide the name and registered address of the legal entity executing the project. 
+* **Legal Structure:** Colmena Labs, Calle el Aceitunillo, 9, Local, 6B, 41930 Bormujos, Sevilla. 
 
 * **Team's Experience:** 
 
@@ -177,18 +177,23 @@ Polkastats license is GNU General Public License v3.0
 
 ## Additional Information
 
-Any additional information that you think is relevant to this application that hasn't already been included.
-
-Possible additional information to include:
-* What work has been done so far?
-* Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far?
-* Are there any other projects similar to yours? If so, how is your project different?
-
 * What work has been done so far?
 
 So far what we have built (mainly just Mario, Polkastats true father) is the block explorer itself with all the main features both for regular users and also validators, like visualization of each validator's node state, transactions, individual stakes, etc.
- 
+
+* Are there are any teams who have already contributed (financially) to the project?
+
+ColmenaLabs has been sponsoring and covering all expenses related to the project from the begining.
+
+* Have you applied for other grants so far?
+
+No.
+
+* Are there any other projects similar to yours? If so, how is your project different?
+
+Some features of polkastats could be found on other projects such us polkascan and the wonderfull polkadot.js.org/apps
+That being said, we consider that polkastats has its own public and space in Polkadot ecosystem.
+
 * Similar projects and differences:
  
 Remarkably, the other (and earlier only) Polkadot block explorer out there is Polkascan, by which Polkastats has been undoubtedly heavily inspired.
