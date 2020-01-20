@@ -17,7 +17,7 @@
 
 ### Introduction
 
-The Open Grants Program seeks to allocate resources to projects that are beneficial to the advancement of the Polkadot ecosystem. It tries to archive this in the following way:
+The Open Grants Program seeks to allocate resources to projects that are beneficial to the advancement of the Polkadot ecosystem. It tries to achieve this in the following way:
 - Fully transparent
 - Simple
 - Effective  
