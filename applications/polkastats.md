@@ -173,7 +173,7 @@ Zondax has already develop the [Ledger Kusma app](https://github.com/Zondax/ledg
 
 ##  License
  
-Polkastats license is GNU General Public License v3.0
+Polkastats V3 license is Apache license version 2.0
 
 ## Additional Information
 
