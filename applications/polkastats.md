@@ -2,7 +2,7 @@
 
 * **Project:** [Polkastats](https://polkastats.io)
 * **Proposer:** Colm3na
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
+* **Payment Address:** BTC : 3982fvdPfs1hHUF7BYc2GbaU3LdfN4Ruzg
 
 ## Project Description :page_facing_up: 
 
@@ -54,6 +54,8 @@ Implementing Hasura will bring us table subscriptions and the power of GraphQL t
 | 1. | MySQL -> PosgresSQL | Refactor database schema and migrate to PosgresSQL |  
 | 2. | Crawlers | Refactor/develop crawlers to fill the new schema |  
 | 3. | Hasura backend | Implement the new Hasura backend |
+
+Deliverables in this milestone will be dockerized. We will also include a README to run the development container. The container will include the PosgresSQL, the Crawlers and Hasura.
 
 #### 1.1 MySQL -> PosgresSQL
 
@@ -122,6 +124,8 @@ In this milestone we will focus on migrate the frontend to use GraphQL queries t
 | 2. | Internationalization i18n | Translate PolkaStats Platform to at Spanish language |  
 | 3. | New UI features | Implement new features using the new poweful backend | 
 
+Deliverables in this milestone will be dockerized. We will also include a README to run the development container. The container will include the new frontend. New frontend will be feeded by the backend develped in milestone 1 and will include the new UI features of mileston 2.
+
 #### 2.1 Migrate frontend
 
 We need to migrate the frontend to use GraphQL queries to our new Hasura backend server.
@@ -161,6 +165,7 @@ In this milestone we'll implement key components to allow our users to interact 
 | 1. | Polkadot browser extension | Allow nominators to stake using PolkaStats and Polkadot browser extension |  
 | 2. | Ledger | Allow nominators to stake using PolkaStats and Ledger |
 
+Deliverables in this milestone will be dockerized. We will also include a README to run the development container. The container will serve a frontend ready to be connected to Polkadot browser extension and if the Ledger kusama app.
 
 #### 3.1 Polkadot browser extension
 
