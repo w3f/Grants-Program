@@ -13,7 +13,7 @@ SensioNetwork's applications(dApps) ([Sensio Photo](https://www.sensio.group/sen
 
 SensioNetwork will be implemented as a parachain with its own token (THT) using Substrate. We will run several full nodes to help the Kusama/Polkadot networks as well enough collator nodes to secure the SensioNetwork parachain. For the copyright/ownership transfers we will be using smart contracts and which can be extended to use any crypto/fiat currency.
 
-SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork with Substrate and Polkadot ecosystem, matches with the our principles and views on interoperability and interconnectivity. One of the Sensio's goal is to establish fair and trustworthy multimedia market, primarily for photography and video, and we can do that only with flexible blockchain solution.
+SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork with Substrate and Polkadot ecosystem, matches with the our principles and views on interoperability and interconnectivity. One of the Sensio's goal is to establish fair and trustworthy multimedia market, primarily for photography, and we can do that only with flexible blockchain solution.
 
 ## Team :busts_in_silhouette:
 
@@ -31,57 +31,58 @@ SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork 
 
 ### Milestone 1
 
-In this milestone we want to build working parachain and implement two runtime modules. Building the modules follows least-dependency approach.
+In this milestone we want to build working parachain and implement one and half runtime modules. Building the modules follows least-dependency approach.
 
 - **Estimated Duration:** 4 weeks
 - **Costs:** 1 BTC
 
-| Number | Deliverable                                          | Specification                                                                                                                                                               |
-| ------ | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.     | Parachain                                            | Building the parachain                                                                                                                                                      |
-| 2.     | Proof-Of-Existence runtime module                    | We want to be able to create record of any photo, video prior starting any kind of validation process                                                                       |
-| 3.     | Proof-Of-Camera-Lens-Ownership runtime module part 1 | We have developed this algorithm in a different language and for different architecture. This part will be dedicated to creating basic structure and defining the API. This |
-| 4.     | Docker image                                         | Create docker image with PoC api for testing purposes.                                                                                                                      |
-| 5.     | Tutorial && docs                                     | Finalise the docs and write a tutorial on how to use the implemented features.                                                                                              |
+| Number | Deliverable                                              | Specification                                                                  |
+| ------ | -------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| 1.     | Parachain                                                | Building the parachain                                                         |
+| 2.     | Proof-Of-Existence runtime module                        | We want to be able to create record of any digital asset                       |
+| 3.     | Proof-Of-Camera-Lens-Ownership runtime module **part 1** | This part will be dedicated to creating basic structure and defining the API   |
+| 4.     | Docker image                                             | Create docker image with PoC api for testing purposes.                         |
+| 5.     | Tutorial && docs                                         | Finalise the docs and write a tutorial on how to use the implemented features. |
 
 1. Parachain implementation
 2. First runtime module will be Proof-Of-Existence where the system must record when the specific item was seen for the first time regardless of the copyright or ownership statement. This module is ran for every new unique item that appears.
-3. Second runtime module will be Proof-Of-Camera-Lens-Ownership. This module will be in charge of creating records for provable camera/lens ownership statements.
+3. Second runtime module will be Proof-Of-Camera-Lens-Ownership. We have developed this algorithm in a nodejs and workflow is built with different architecture in mind. We must change it to fits the current solution. This module will be in charge of creating records for provable camera/lens ownership statements.
 4. Self-explanatory
 5. Self-explanatory
 
 ### Milestone 2
 
-Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software.
-
 - **Estimated Duration:** 4 weeks
 - **Costs:** 1 BTC
 
-| Number | Deliverable                                          | Specification                                                                                                                   |
-| ------ | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| 1.     | Proof-Of-Camera-Lens-Ownership runtime module part 2 | Continuation from the previous milestone. Implementation of the rest of the functionality and the QRcode encoding and decoding. |
-| 2.     | Copyright statements runtime module                  |                                                                                                                                 |
-| 3.     | Docker image                                         | Update docker image                                                                                                             |
-| 4.     | Tutorial && docs                                     | Update the docs and tutorial on how to use the implemented features.                                                            |
+| Number | Deliverable                                              | Specification                                                                   |
+| ------ | -------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| 1.     | Proof-Of-Camera-Lens-Ownership runtime module **part 2** | Continuation from the previous milestone.                                       |
+| 2.     | Copyright statements runtime module **part 1**           | Create verifiable copyright statements based on ownership statement information |
+| 3.     | Docker image                                             | Update docker image                                                             |
+| 4.     | Tutorial && docs                                         | Update the docs and tutorial on how to use the implemented features.            |
+
+1. Implementation of the rest of the functionality and the QRcode encoding and decoding.
+2. Rewrite the previous implementation in nodejs and make changes to work without users PGP keys.
+3. Self-explanatory
+4. Self-explanatory
 
 ### Milestone 3
 
-Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software.
-
 - **Estimated Duration:** 4 weeks
 - **Costs:** 1 BTC
 
-| Number | Deliverable                         | Specification                                                        |
-| ------ | ----------------------------------- | -------------------------------------------------------------------- |
-| 1.     | Ownership statements runtime module |                                                                      |
-| 2.     | Docker image                        | Update docker image                                                  |
-| 3.     | Tutorial && docs                    | Update the docs and tutorial on how to use the implemented features. |
+| Number | Deliverable                                    | Specification                                                        |
+| ------ | ---------------------------------------------- | -------------------------------------------------------------------- |
+| 1.     | Copyright statements runtime module **part 2** | Continuation from the previous milestone.                            |
+| 2.     | Docker image                                   | Update docker image                                                  |
+| 3.     | Tutorial && docs                               | Update the docs and tutorial on how to use the implemented features. |
+
+1. Implement the verifications and connections to newly built ownership flow.
+2. Self-explanatory
+3. Self-explanatory
 
 ## Additional Information :heavy_plus_sign:
-
-Any additional information that you think is relevant to this application that hasn't already been included.
-
-Possible additional information to include:
 
 - What work has been done so far?
 
@@ -96,3 +97,9 @@ Only the founders, [Daniel Maricic](https://www.linkedin.com/in/danielmaricic/) 
 There are project that share similar approache, like majority of PoE/TimeStamping, but none that does what we are trying to do. Sensio, at the moment, is the only project out there that provides verifiable ownership and copyright claims based on real workflows, not `first came -> first hashed it -> owned it`.
 
 - The team's long-term plans and intentions with this project.
+
+We are creating the business with Sensio project where SensioNetwork would play a major role in positioning itself as a place for verifiable claims with the real workflows.
+
+Example:
+
+nothing stops us (from SensioNetwork side) to partner with the SoundCloud or Spotify to provide them with provable copyrights/ownerships which they can use to sell the licenses.
