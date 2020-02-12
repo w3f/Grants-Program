@@ -44,7 +44,7 @@ In this milestone we want to build a working parachain and implement one and a h
 | 4.     | Docker image                                             | Create docker image with PoC api for testing purposes.                         |
 | 5.     | Tutorial && docs                                         | Finalise the docs and write a tutorial on how to use the implemented features. |
 
-1. Parachain implementation
+1. Substrate Parachain implementation
 2. First runtime module will be Proof-Of-Existence where the system must record when the specific item was seen for the first time regardless of the copyright or ownership statement. This module is ran for every new unique item that appears.
 3. Second runtime module will be Proof-Of-Camera-Lens-Ownership. We have developed this algorithm in nodejs and the workflow is built with different architecture in mind. We must change it to fit the current solution. This module will be in charge of creating records for provable camera/lens ownership statements.
 4. Self-explanatory
@@ -75,8 +75,10 @@ In this milestone we want to build a working parachain and implement one and a h
 | Number | Deliverable                                    | Specification                                                        |
 | ------ | ---------------------------------------------- | -------------------------------------------------------------------- |
 | 1.     | Copyright statements runtime module **part 2** | Continuation from the previous milestone.                            |
-| 2.     | Docker image                                   | Update docker image                                                  |
-| 3.     | Tutorial && docs                               | Update the docs and tutorial on how to use the implemented features. |
+| 2.     | Full-nodes for the Polkadot                    | Set up several full nodes for Polkadot network.                      |
+| 3.     | Collator nodes for the SensioNetwork           | Set up several full nodes for SensioNetwork.                         |
+| 4.     | Docker image                                   | Update docker image                                                  |
+| 5.     | Tutorial && docs                               | Update the docs and tutorial on how to use the implemented features. |
 
 1. Implement the verifications and connections to newly built ownership flow.
 2. Self-explanatory
@@ -99,4 +101,3 @@ There are projects that share a similar approache, like majority of PoE/TimeStam
 - The team's long-term plans and intentions with this project.
 
 SensioNetwork is the core part for Sensio and its applications which development is underway. First, the Digital Asset Management software for professional photographers will be launched, and later, with this community acting as ambassadors, we can expand to the mass market of smartphone holders. Well-established user-base and strong USP (connectivity, optimal protection of online IPR) will in its turn put Sensio in a position to disrupt the market of stock photography and video. Once launched, [People-2-People marketplace](https://www.sensio.group/#people-to-people-marketplace) will allow publishers, marketers and other creatives to acquire quality content directly from its author. Thus, a fairer and more efficient market for all the actors.
- 
