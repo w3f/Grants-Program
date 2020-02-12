@@ -16,7 +16,7 @@ Building the OAX chain on Substrate gives us the Polkadot benefits of performanc
 ## Team :busts_in_silhouette:
 
 * **Members:** Wayland Chan, Akshay Ramasubramanian
-* **LinkedIn Profiles:** https://www.linkedin.com/in/wayland-chan-9071899/, https://www.linkedin.com/in/akshay-ramasubramanian-943b8a93/
+* **LinkedIn Profiles:** [Wayland](https://www.linkedin.com/in/wayland-chan-9071899/), [Akshay](https://www.linkedin.com/in/akshay-ramasubramanian-943b8a93/)
 * **Code Repos:** https://github.com/OAXFoundation/parrot, https://github.com/waylandc, https://github.com/araa47
 * **Website:**	https://www.oax.org
 * **Legal Structure:** SWIM Limited, a limited company incorporated in Hong Kong
@@ -64,7 +64,7 @@ This feature eases adoption for DApps because users do not need to have the nati
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1.  | Custom Runtime Module|  |  
+| 1.  | Custom Runtime Module| Extend the existing Substrate fees pallet to support delegation |  
 
 
 ## License
