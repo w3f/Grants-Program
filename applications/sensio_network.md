@@ -7,7 +7,7 @@
 
 ## Project Description :page_facing_up:
 
-SensioNetwork is a decentralized protocol that empowers content creators to sign, permanently record, and claim statements about their ownerships and copyrights, giving them opportunity to license their work and get [paid](https://www.sensio.group/#people-to-people-marketplace). SensioNetwork is an integral part of much larger project called [Sensio](https://sensio.group) which consist of two more sub-projects.
+SensioNetwork is a decentralized protocol that empowers content creators to sign, permanently record, and claim statements about their ownerships and copyrights, giving them the opportunity to license their work and get [paid](https://www.sensio.group/#people-to-people-marketplace). SensioNetwork is an integral part of a much larger project called [Sensio](https://sensio.group) which consist of two more sub-projects.
 
 SensioNetwork's applications(dApps) ([Sensio Photo](https://www.sensio.group/sensio-photo) and [People-2-People marketplace](https://www.sensio.group/#people-to-people-marketplace)) have a potential of reaching millions of people and boosting the ecosystem's reputation and adoption.
 
@@ -94,7 +94,7 @@ Only the founders, [Daniel Maricic](https://www.linkedin.com/in/danielmaricic/) 
 
 - Are there any other projects similar to yours? If so, how is your project different?
 
-There are project that share similar approache, like majority of PoE/TimeStamping, but none of them does what we are trying to accomplish. Sensio, at the moment, is the only project out there that provides verifiable ownership and copyright claims based on real workflows, not `first came -> first hashed it -> owned it`.
+There are projects that share a similar approache, like majority of PoE/TimeStamping, but none of them does what we are trying to accomplish. Sensio, at the moment, is the only project out there that provides verifiable ownership and copyright claims based on real workflows, not `first came -> first hashed it -> owned it`.
 
 - The team's long-term plans and intentions with this project.
 
