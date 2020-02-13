@@ -1,6 +1,6 @@
 # Open Grant Proposal
 
-* **Project:** OAX - making DeFi easy with substrate
+* **Project:** OAX - making DeFi easy with Substrate
 * **Proposer:** [OAX Foundation](https://github.com/oaxfoundation)
 * **Payment Address:** 37phLsj2Bj5tRTEnXw758ZD9v3SRr2i7Np 
 
@@ -12,6 +12,7 @@ Once the OAX Chain goes live, the Foundation will support the migration of our E
 
 Building the OAX chain on Substrate gives us the Polkadot benefits of performance, scalability and cross chain operability which are all crucial for the creation of DeFi products.
 
+DApps experienced an explosive growth in 2019, with DeFi being a key segment of that Dapp growth with USD3.65bn total volume. DeFi excluding exchanges had the most impressive growth in 2019, with a 610% increase in number of DApp users and a 250% increase in transaction volume. We believe this growth will continue and the specific needs of DeFi will be addressed through the OAX chain.
 
 ## Team :busts_in_silhouette:
 
@@ -19,7 +20,7 @@ Building the OAX chain on Substrate gives us the Polkadot benefits of performanc
 * **LinkedIn Profiles:** [Wayland](https://www.linkedin.com/in/wayland-chan-9071899/), [Akshay](https://www.linkedin.com/in/akshay-ramasubramanian-943b8a93/)
 * **Code Repos:** https://github.com/OAXFoundation/parrot, https://github.com/waylandc, https://github.com/araa47
 * **Website:**	https://www.oax.org
-* **Legal Structure:** SWIM Limited, a limited company incorporated in Hong Kong
+* **Legal Structure:** SWIM Limited, a company limited by share capital and incorporated in Hong Kong is the a wholly owned subsidiary of the OAX Foundation Limited, a company limited by guarantee and incorporated in Hong Kong. The registered address for both companies is Room F, 19/F CNT Tower, 338 Hennessy Road, Wan Chai, Hong Kong.
 * **Team's Experience:** 
 
 The OAX Foundation has been developing blockchain solutions for 2 years. Our previous projects centred around decentralized exchanges, initially developing a 0x based DEX prototype before focusing on developing and releasing our [Layer 2 Exchange Protocol (L2X)](https://github.com/OAXFoundation/l2x-trustless-exchange) on Ethereum in 2019.
@@ -68,7 +69,7 @@ This feature eases adoption for DApps because users do not need to have the nati
 
 
 ## License
-[TODO Paul]
+The OAX Foundation intends on licensing all work on an open source basis under Apache 2.0. Should it not be possible to license using Apache 2.0 because of any licensing restrictions, the OAX Foundation will still license all work on an open source basis under the GNU GPL v3.0 license (as provided for under the Web3 General Grants Program guideline).
 
 ## Additional Information :heavy_plus_sign: 
 
