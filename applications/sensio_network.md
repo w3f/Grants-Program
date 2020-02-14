@@ -9,9 +9,9 @@
 
 SensioNetwork is a decentralized protocol that empowers content creators to sign, permanently record, and claim statements about their ownerships and copyrights, giving them the opportunity to license their work and get [paid](https://www.sensio.group/#people-to-people-marketplace). SensioNetwork is an integral part of a much larger project called [Sensio](https://sensio.group) which consist of two more sub-projects.
 
-SensioNetwork's applications(dApps) ([Sensio Photo](https://www.sensio.group/sensio-photo) and [People-2-People marketplace](https://www.sensio.group/#people-to-people-marketplace)) have a potential of reaching millions of people and boosting the ecosystem's reputation and adoption.
+SensioNetwork's applications(dApps), [Sensio Photo](https://www.sensio.group/sensio-photo) and [People-2-People marketplace](https://www.sensio.group/#people-to-people-marketplace), have a potential of reaching millions of people and boosting the ecosystem's reputation and adoption.
 
-SensioNetwork will be implemented as a parachain with its own token (THT) using Substrate. We will run several full nodes to help the Kusama/Polkadot networks as well as enough collator nodes to secure the SensioNetwork parachain. For the copyright/ownership transfers we will be using smart contracts which can be extended to use any crypto/fiat currency.
+SensioNetwork will be implemented as a parachain with its own token (THT) using Substrate. We will run several full nodes to help the Kusama/Polkadot networks as well as enough collator nodes to secure the SensioNetwork parachain.
 
 SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork with Substrate and Polkadot ecosystem, matches our principles and views on interoperability and interconnectivity. One of the Sensio's goal is to establish fair and trustworthy multimedia market, primarily for photography, and we can do that only with a flexible blockchain solution.
 
@@ -41,7 +41,7 @@ In this milestone we want to build a working parachain and implement one and a h
 | 1.     | Parachain                                                | Building the parachain                                                         |
 | 2.     | Proof-Of-Existence runtime module                        | We want to be able to create record of any digital asset                       |
 | 3.     | Proof-Of-Camera-Lens-Ownership runtime module **part 1** | This part will be dedicated to creating basic structure and defining the API   |
-| 4.     | Docker image                                             | Create docker image with PoC api for testing purposes.                         |
+| 4.     | Docker image                                             | Create docker image with PoC api for testing.                                  |
 | 5.     | Tutorial && docs                                         | Finalise the docs and write a tutorial on how to use the implemented features. |
 
 1. Substrate Parachain implementation
@@ -88,7 +88,7 @@ In this milestone we want to build a working parachain and implement one and a h
 
 - What work has been done so far?
 
-At the moment we have PoC web app + Graphql API + naive DAG that we built as a showcase. We have the core functionality of all three sub-projects (very basic so far), photo upload and editing, claiming ownership and copyrights, selling ( for free, as it's a PoC ) and copyright request with approve and decline outcomes. We truly believe that (D)PKI or its variants is the future, that's why all users are given `ed25519` asymmetric keys and passphrase emailed. That key is used for signing and verification.
+At the moment we have PoC, web app + Graphql API + naive DAG, that we built as a showcase. We have the core functionality of all three sub-projects (very basic so far), photo upload and editing, claiming ownership and copyrights, selling ( for free, as it's a PoC ) and copyright request with approve and decline outcomes. We truly believe that (D)PKI or its variants are the future, that's why all users are given `ed25519` asymmetric keys and passphrase emailed. That key is used for signing and verification.
 
 - Are there are any teams who have already contributed (financially) to the project?
 
@@ -96,7 +96,7 @@ Only the founders, [Daniel Maricic](https://www.linkedin.com/in/danielmaricic/) 
 
 - Are there any other projects similar to yours? If so, how is your project different?
 
-There are projects that share a similar approache, like majority of PoE/TimeStamping, but none of them does what we are trying to accomplish. Sensio, at the moment, is the only project out there that provides verifiable ownership and copyright claims based on real workflows, not `first came -> first hashed it -> owned it`.
+There are projects that share a similar approache, like majority of PoE/TimeStamping, but none of them does what we are trying to accomplish. Sensio, at the moment, is the only project out there that provides verifiable ownership and copyright claims based on real workflows, not `first came -> first hashed it -> owns it`.
 
 - The team's long-term plans and intentions with this project.
 
