@@ -28,7 +28,7 @@ The OAX Foundation has been developing blockchain solutions for 2 years. Our pre
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 9 weeks
-* **Total Costs:** 3 BTC
+* **Total Costs:** 2.93 BTC
 
 ### Milestone 1: Atomic Swap
 
@@ -44,7 +44,7 @@ For this milestone we already have a functionining token standard equivalent to 
 ### Milestone 2: Multi-Transfer
 
 * **Estimated Duration:** 3 weeks 
-* **Costs:** 1 BTC
+* **Costs:** 0.93 BTC
 
 Multi-transfer function which allows a user to send funds to multiple addresses in one function call to save gas costs.
 
