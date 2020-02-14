@@ -18,7 +18,7 @@ DApps experienced an explosive growth in 2019, with DeFi being a key segment of 
 
 * **Members:** Wayland Chan, Akshay Ramasubramanian
 * **LinkedIn Profiles:** [Wayland](https://www.linkedin.com/in/wayland-chan-9071899/), [Akshay](https://www.linkedin.com/in/akshay-ramasubramanian-943b8a93/)
-* **Code Repos:** https://github.com/OAXFoundation/parrot, https://github.com/waylandc, https://github.com/araa47
+* **Code Repos:** https://github.com/OAXFoundation, https://github.com/waylandc, https://github.com/araa47
 * **Website:**	https://www.oax.org
 * **Legal Structure:** SWIM Limited, a company limited by share capital and incorporated in Hong Kong is the a wholly owned subsidiary of the OAX Foundation Limited, a company limited by guarantee and incorporated in Hong Kong. The registered address for both companies is Room F, 19/F CNT Tower, 338 Hennessy Road, Wan Chai, Hong Kong.
 * **Team's Experience:** 
