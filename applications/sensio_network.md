@@ -38,13 +38,13 @@ In this milestone we want to build a working parachain and implement one and a h
 
 | Number | Deliverable                                              | Specification                                                                  |
 | ------ | -------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| 1.     | Parachain                                                | Building the parachain                                                         |
+| 1.     | Substrate based chain                                    | Building the substrate based chain                                             |
 | 2.     | Proof-Of-Existence runtime module                        | We want to be able to create record of any digital asset                       |
 | 3.     | Proof-Of-Camera-Lens-Ownership runtime module **part 1** | This part will be dedicated to creating basic structure and defining the API   |
 | 4.     | Docker image                                             | Create docker image with PoC api for testing.                                  |
 | 5.     | Tutorial && docs                                         | Finalise the docs and write a tutorial on how to use the implemented features. |
 
-1. Substrate Parachain implementation
+1. Substrate based chain implementation
 2. First runtime module will be Proof-Of-Existence where the system must record when the specific item was seen for the first time regardless of the copyright or ownership statement. This module is ran for every new unique item that appears.
 3. Second runtime module will be Proof-Of-Camera-Lens-Ownership. We have developed this algorithm in nodejs and the workflow is built with different architecture in mind. We must change it to fit the current solution. This module will be in charge of creating records for provable camera/lens ownership statements.
 4. Self-explanatory
@@ -55,32 +55,28 @@ In this milestone we want to build a working parachain and implement one and a h
 - **Estimated Duration:** 4 weeks
 - **Costs:** 1 BTC
 
-| Number | Deliverable                                              | Specification                                                                   |
-| ------ | -------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| 1.     | Proof-Of-Camera-Lens-Ownership runtime module **part 2** | Continuation from the previous milestone.                                       |
-| 2.     | Copyright statements runtime module **part 1**           | Create verifiable copyright statements based on ownership statement information |
-| 3.     | Docker image                                             | Update docker image                                                             |
-| 4.     | Tutorial && docs                                         | Update the docs and tutorial on how to use the implemented features.            |
+| Number | Deliverable                                              | Specification                                                        |
+| ------ | -------------------------------------------------------- | -------------------------------------------------------------------- |
+| 1.     | Proof-Of-Camera-Lens-Ownership runtime module **part 2** | Continuation from the previous milestone.                            |
+| 2.     | Docker image                                             | Update docker image                                                  |
+| 3.     | Tutorial && docs                                         | Update the docs and tutorial on how to use the implemented features. |
 
 1. Implementation of the rest of the functionality and the QRcode encoding and decoding.
-2. Rewrite the previous implementation in nodejs and make changes to work without users PGP keys.
+2. Self-explanatory
 3. Self-explanatory
-4. Self-explanatory
 
 ### Milestone 3
 
 - **Estimated Duration:** 4 weeks
 - **Costs:** 1 BTC
 
-| Number | Deliverable                                    | Specification                                                        |
-| ------ | ---------------------------------------------- | -------------------------------------------------------------------- |
-| 1.     | Copyright statements runtime module **part 2** | Continuation from the previous milestone.                            |
-| 2.     | Full-nodes for the Polkadot                    | Set up several full nodes for Polkadot network.                      |
-| 3.     | Collator nodes for the SensioNetwork           | Set up several full nodes for SensioNetwork.                         |
-| 4.     | Docker image                                   | Update docker image                                                  |
-| 5.     | Tutorial && docs                               | Update the docs and tutorial on how to use the implemented features. |
+| Number | Deliverable                         | Specification                                                        |
+| ------ | ----------------------------------- | -------------------------------------------------------------------- |
+| 1.     | Copyright statements runtime module | Continuation from the previous milestone.                            |
+| 2.     | Docker image                        | Update docker image                                                  |
+| 3.     | Tutorial && docs                    | Update the docs and tutorial on how to use the implemented features. |
 
-1. Implement the verifications and connections to newly built ownership flow.
+1. Rewrite the previous implementation in nodejs and make changes to work without users PGP keys but leave the space for upgrade.
 2. Self-explanatory
 3. Self-explanatory
 
