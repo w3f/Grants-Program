@@ -12,6 +12,8 @@
 | PoE     | Proof-Of-Existence             |
 | PoCLO   | Proof-Of-Camera-Lens-Ownership |
 | PoC     | Proof-of-Copyright             |
+| SSI     | Self Sovereign Identities      |
+| DID     | Distributed Identifier         |
 
 ## Project Description :page_facing_up:
 
@@ -40,22 +42,23 @@ SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork 
 ### Milestone 1
 
 In this milestone, we want to build a working substrate-based chain with proof of existence and start working on PoCLO runtime.
-POE is an essential first step towards generating the statements. When a user uploads the photo through a DApp (currently sensio.photo) the API system is communicating with the SensioNetwork's POE runtime to check does the uploaded photo exists or not. If it exists and creation time is earlier than it's recorded in the SensioNetwork, POE must create a new statement with current data and revoke the previous one, if it doesn't exist POE will create the statement signed by the system and reference to the account that uploaded the photo. Even this simple process poses quite a complex problem. What happens if the photo has a copyright statement claimed and it's discovered now with the original creation time earlier than recorded POE statement? This will be iterated upon in the future but for now, we are preparing the ground by using technologies like CID, PGP and IPFS.
-We have developed the algorithm for PoCLO in nodejs and the workflow is built with different architecture in mind. We must change it to fit the current solution. This module will be in charge of creating records for provable camera/lens ownership statements. [Current implementation](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/client/src/views/Device/Verification.js) is built with React in our PoC app. PoCLO is a process that is very similar to what is used in image forensics. It is our first step to registering a provable ownership statement. Our current solution uses PKI and CID, which we will keep in the future together with the Self Sovereign Identities(SSI) and Distributed Identifiers(DID).
 
-Building the modules follows a least-dependency approach which means that we will build the modules that are most dependent on.
+PoE is an essential first step towards generating the statements. When a user uploads the photo through a DApp (currently sensio.photo) the API system is communicating with the SensioNetwork's PoE runtime to check does the uploaded photo exists or not. If it exists and creation time is earlier than it's recorded in the SensioNetwork, PoE must create a new statement with current data and revoke the previous one, if it doesn't exist PoE will create the statement signed by the system and reference to the account that uploaded the photo. Even this simple process poses quite a complex problem. What happens if the photo has a copyright statement claimed and it's discovered now with the original creation time earlier than recorded PoE statement? This will be iterated upon in the future but for now, we are preparing the ground by using technologies like CID, PGP and IPFS.
+We have developed the algorithm for PoCLO in nodejs and the workflow is built with different architecture in mind. We must change it to fit the current solution. This module will be in charge of creating records for provable camera/lens ownership statements. The [current implementation](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/client/src/views/Device/Verification.js) is built with React in our PoC app. PoCLO is a process that is very similar to what is used in image forensics. It's our first step to registering provable ownership statements. Our current solution uses PKI and CID, which we will keep in the future together with the SSI and DID.
+
+Building the modules follows a least-dependency approach, which means that we will build the modules that are most dependent on first.
 
 - **Estimated Duration:** 4 weeks
 - **Costs:** 1 BTC
 
-| Number | Deliverable                     | Specification                                                                  |
-| ------ | ------------------------------- | ------------------------------------------------------------------------------ |
-| 1.     | Substrate based chain           | Building the substrate based chain                                             |
-| 2.     | PoE runtime module              | POE is an essential first step towards generating the statements.              |
-| 3.     | PoCLO runtime module **part 1** | This part will be dedicated to creating basic structure and defining the API   |
-| 4.     | Unit tests                      | Rudamentary tests for both runtimes                                            |
-| 5.     | Docker image                    | Create docker image                                                            |
-| 6.     | Tutorial && docs                | Finalise the docs and write a tutorial on how to use the implemented features. |
+| Number | Deliverable                     | Specification                                                                 |
+| ------ | ------------------------------- | ----------------------------------------------------------------------------- |
+| 1.     | Substrate based chain           | Building the substrate based chain                                            |
+| 2.     | PoE runtime module              | PoE is an essential first step towards generating the statements              |
+| 3.     | PoCLO runtime module **part 1** | This part will be dedicated to creating basic structure and defining the API  |
+| 4.     | Unit tests                      | Rudamentary tests for both runtimes                                           |
+| 5.     | Docker image                    | Create docker image                                                           |
+| 6.     | Tutorial && docs                | Finalise the docs and write a tutorial on how to use the implemented features |
 
 1. Substrate based chain implementation
 2. The PoE runtime must record when the specific item was seen for the first time regardless of the copyright and ownership.
@@ -66,33 +69,35 @@ Building the modules follows a least-dependency approach which means that we wil
 
 ### Milestone 2
 
+In this milestone we will continue working on PoCLO, implementing the connection to PoE and working on the implementation of the rules and data validations. By the end of this milestone, we will have the working runtime that validates that equipment information already exists in PoE and has never been claimed and can create the ownership statement for a given input.
+
 - **Estimated Duration:** 4 weeks
 - **Costs:** 1 BTC
 
-| Number | Deliverable                     | Specification                                                        |
-| ------ | ------------------------------- | -------------------------------------------------------------------- |
-| 1.     | PoCLO runtime module **part 2** | Continuation from the previous milestone.                            |
-| 2.     | Unit tests                      | Rudamentary tests for both runtimes                                  |
-| 3.     | Docker image                    | Update docker image                                                  |
-| 4.     | Tutorial && docs                | Update the docs and tutorial on how to use the implemented features. |
+| Number | Deliverable                     | Specification                                                       |
+| ------ | ------------------------------- | ------------------------------------------------------------------- |
+| 1.     | PoCLO runtime module **part 2** | Continuation from the previous milestone                            |
+| 2.     | Unit tests                      | Rudamentary tests for both runtimes                                 |
+| 3.     | Docker image                    | Update docker image                                                 |
+| 4.     | Tutorial && docs                | Update the docs and tutorial on how to use the implemented features |
 
-1. Connecting POE runtime for the existence check and finalising the validation and the rules.
+1. Connecting PoE runtime for the existence check and finalising the validation and the rules.
 2. Self-explanatory
 3. Self-explanatory
 4. Self-explanatory
 
 ### Milestone 3
 
-This milestone is mostly about the creation of the provable copyright statements or claims based on PoCLO and PoE. At the moment we have a very simple copyright statement structure which is ok for now. [Here](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/sp-api/src/plugins/photos/index.ts#L295) you can see the code that collects the needed data and invokes the [function that generates](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/sp-api/src/plugins/copyright/helpers.ts#L28) the copyright statement for a given photo. Naive DAG is implemented with the generation of [genesis copyright](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/sp-api/src/plugins/copyright/helpers.ts#L28) which is revoked by every single initial copyright of the photo. Each photo that claims the copyright creates its own branch starting from the genesis statement. This is similar to what DAG-based blockchains do. A single item, like video or photo, can have multiple copyright holders in a total of 100%, which means that copyrights can have proportions different for each of the users, that increases the complexity of licensing implementation and usage but more on that some other time. [Here](https://gitlab.com/sensio_group/sensio-faas/-/tree/master/sp-api/src/plugins) is a directory that contains all the source code for copyright statement generation and signing together with photo data collecting.
+This milestone is mostly about the creation of the provable copyright statements or claims based on PoCLO and PoE. At the moment we have a very simple copyright statement structure which is ok for now. [Here](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/sp-api/src/plugins/photos/index.ts#L295) you can see the code that collects the needed data and invokes the [function that generates](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/sp-api/src/plugins/copyright/helpers.ts#L28) the copyright statement for a given photo. Basic DAG is implemented with the generation of [genesis copyright](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/sp-api/src/plugins/copyright/helpers.ts#L28) which is revoked by every single initial copyright of the photo. Each photo that claims the copyright creates its own branch starting from the genesis statement. This is similar to what DAG-based blockchains do. A single item, like video or photo, can have multiple copyright holders in a total of 100%, which means that copyrights can have proportions different for each of the users, that increases the complexity of licensing implementation and usage but more on that some other time. [Here](https://gitlab.com/sensio_group/sensio-faas/-/tree/master/sp-api/src/plugins) is a directory that contains all the source code for copyright statement generation and signing together with photo data collecting.
 
 - **Estimated Duration:** 4 weeks
 - **Costs:** 1 BTC
 
-| Number | Deliverable        | Specification                                                        |
-| ------ | ------------------ | -------------------------------------------------------------------- |
-| 1.     | PoC runtime module | Create working copyright statement runtime with signing              |
-| 2.     | Docker image       | Update docker image                                                  |
-| 3.     | Tutorial && docs   | Update the docs and tutorial on how to use the implemented features. |
+| Number | Deliverable        | Specification                                                       |
+| ------ | ------------------ | ------------------------------------------------------------------- |
+| 1.     | PoC runtime module | Create working copyright statement runtime with signing             |
+| 2.     | Docker image       | Update docker image                                                 |
+| 3.     | Tutorial && docs   | Update the docs and tutorial on how to use the implemented features |
 
 1. Rewrite the previous implementation in nodejs and make changes to work without users PGP keys but leave the space for an upgrade
 2. Self-explanatory
