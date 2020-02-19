@@ -96,12 +96,16 @@ This milestone is mostly about the creation of the provable copyright statements
 | Number | Deliverable        | Specification                                                       |
 | ------ | ------------------ | ------------------------------------------------------------------- |
 | 1.     | PoC runtime module | Create working copyright statement runtime with signing             |
-| 2.     | Docker image       | Update docker image                                                 |
-| 3.     | Tutorial && docs   | Update the docs and tutorial on how to use the implemented features |
+| 2.     | Unit tests         | Rudamentary tests PoC runtime                                       |
+| 3.     | UI for showcase    | Create working simple UI which can demo the whole workflow          |
+| 4.     | Docker image       | Update docker image                                                 |
+| 5.     | Tutorial && docs   | Update the docs and tutorial on how to use the implemented features |
 
 1. Rewrite the previous implementation in nodejs and make changes to work without users PGP keys but leave the space for an upgrade
 2. Self-explanatory
-3. Self-explanatory
+3. Self-explanatory, disclaimer, UI will NOT have any tests, since it's a one-time use app
+4. Self-explanatory
+5. Self-explanatory
 
 ## Additional Information :heavy_plus_sign:
 
