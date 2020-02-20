@@ -89,7 +89,7 @@ Operations Team takes care of legal documents, invoicing and remittances.
 * [W3F Forum](https://forum.web3.foundation)
 * [W3F Twitter](https://twitter.com/web3foundation)
 * [W3F Medium](https://medium.com/web3foundation)
-* [Web 3.0 Wiki](https://github.com/w3f/Web3-wiki/wiki)
+* [Polkadot Wiki](https://wiki.polkadot.network/en/)
 * [Web 3.0 Reddit](https://www.reddit.com/r/web3)
 
 ### Real-time conversation
