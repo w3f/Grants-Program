@@ -20,9 +20,9 @@ SensioNetwork is a decentralized protocol that empowers content creators to sign
 
 SensioNetwork's applications(dApps), [Sensio Photo](https://www.sensio.group/sensio-photo) and [People-2-People marketplace](https://www.sensio.group/#people-to-people-marketplace), have a potential of reaching millions of people and boosting the ecosystem's reputation and adoption.
 
-SensioNetwork will be implemented as a Substrate based chain with its token currently named THT.
+SensioNetwork will be implemented as a Substrate-based chain with its token, currently named THT.
 
-SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork with Substrate and Polkadot ecosystem matches our principles and views on interoperability and interconnectivity. One of the Sensio's goal is to establish a fair and trustworthy multimedia market, primarily for photography, and we can do that only with a flexible blockchain solution.
+SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork with Substrate and in the Polkadot, ecosystem matches our principles and views on interoperability and interconnectivity. One of the Sensio's goal is to establish a fair and trustworthy multimedia market, primarily for photography, and we can do that only with a flexible blockchain solution.
 
 ## Team :busts_in_silhouette:
 
@@ -31,7 +31,7 @@ SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork 
 - **Code Repos:** [https://gitlab.com/sensio_group](https://gitlab.com/sensio_group)
 - **Website:** [https://sensio.group/sensio-network](https://sensio.group/sensio-network)
 - **Legal Structure:** 7signals Ltd, Sepapaja tn 6, 15551, Tallinn, Estonia
-- **Team's Experience:** Daniel has over 12 years of developing experience, mostly in backend development. He has been working in various IT sectors. He has started being involved in blockchain space little over a year ago when he started researching on a blockchain solution for the Sensio project. He is very quick with acquiring new knowledge and very enthusiastic about Polkadot in general. That is why he applied for the Ambassador program.😎
+- **Team's Experience:** Daniel has over 12 years of developing experience, mostly in backend development. He has been working in various IT sectors. He has started being involved in blockchain space a little over a year ago when he started researching on a blockchain solution for the Sensio project. He is very quick with acquiring new knowledge and very enthusiastic about Polkadot in general. That is why he applied for the Ambassador program.😎
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -40,7 +40,9 @@ SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork 
 
 ### Milestone 1
 
-In this milestone, we want to build a working substrate-based chain and two runtime modules.
+In this milestone, we want to build a working Substrate-based chain and two runtime modules.
+
+Statement runtime is a generic module for producing self-sufficient structured statements. This module must require a minimal amount of fields to be included, in order to produce the entry.
 
 PoE is an essential step towards generating the statements.
 
@@ -63,10 +65,10 @@ Building the modules follows a least-dependency approach, which means that we wi
 
 1. Substrate based chain implementation
 2. The PoE runtime must record when the specific item was seen for the first time regardless of the copyright and ownership.
-3. The PoCLO must provide the validation rules, validate them and create or revoke the statements. In this milestone, we will focus on creating the basic validation rules, storage and API methods.
-4. Rudimentary tests for both runtime modules
+
+3. Rudimentary tests for both runtime modules
+4. Self-explanatory
 5. Self-explanatory
-6. Self-explanatory
 
 ### Milestone 2
 
@@ -87,12 +89,16 @@ We have developed the algorithm for PoCLO in nodejs and the workflow is built wi
 | 6.     | Tutorial && docs     | Update the docs and tutorial on how to use the implemented features          |
 
 1. Connecting PoE runtime for the existence check and finalising the validation and the rules.
-2. UI
+2. The PoCLO must provide the validation rules, validate them and create or revoke the statements. In this milestone, we will focus on creating the basic validation rules, storage and API methods.
 3. Self-explanatory
 4. Self-explanatory
 5. Self-explanatory
 
 ## Additional Information :heavy_plus_sign:
+
+Gentle overview on the process:
+
+![Ownership and copyright process][statements-claims]
 
 - What work has been done so far?
 
@@ -109,3 +115,9 @@ Some projects share a similar approach, like the majority of PoE/TimeStamping, b
 - The team's long-term plans and intentions with this project.
 
 SensioNetwork is the core part of Sensio and its applications which development is underway. First, the Digital Asset Management software for professional photographers will be launched, and later, with this community acting as ambassadors, we can expand to the mass market of smartphone holders. Well-established user-base and strong USP (connectivity, optimal protection of online IPR) will in its turn put Sensio in a position to disrupt the market of stock photography and video. Once launched, [People-2-People marketplace](https://www.sensio.group/#people-to-people-marketplace) will allow publishers, marketers and other creatives to acquire quality content directly from its author. Thus, a fairer and more efficient market for all the actors.
+
+## Signatures
+
+All the assets have been signed with https://keybase.io/woss and standard GPG tools. For GPG, append `.sig` and for keybase `.signed.saltpack` to the end of any image URL within this document.
+
+[statements-claims]: https://sensio-assets.s3-eu-west-1.amazonaws.com/diagrams/Sensio-Network-Statements+%26+Claims.svg
