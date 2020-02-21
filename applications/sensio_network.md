@@ -42,9 +42,10 @@ SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork 
 
 In this milestone, we want to build a working substrate-based chain and two runtime modules.
 
-Process explanation:
+PoE is an essential step towards generating the statements.
 
-PoE is an essential step towards generating the statements. When a user uploads the photo through a DApp (currently sensio.photo) the API system is communicating with the SensioNetwork's PoE runtime to check does the uploaded photo exists or not. If it exists and creation time is earlier than it's recorded in the SensioNetwork, PoE must create a new statement with current data and revoke the previous one, if it doesn't exist PoE will create the statement signed by the system and reference to the account that uploaded the photo. Even this simple process poses quite a complex problem. What happens if the photo has a copyright statement claimed and it's discovered now with the original creation time earlier than recorded PoE statement? This will be iterated upon in the future but for now, we are preparing the ground by using technologies like CID, PGP and IPFS.
+Process explanation:
+When a user uploads the photo through a DApp (currently sensio.photo) the API system is communicating with the SensioNetwork's PoE runtime to check does the uploaded photo exists or not. If it exists and creation time is earlier than it's recorded in the SensioNetwork, PoE must create a new statement with current data and revoke the previous one, if it doesn't exist PoE will create the statement signed by the system and reference to the account that uploaded the photo. Even this simple process poses quite a complex problem. What happens if the photo has a copyright statement claimed and it's discovered now with the original creation time earlier than recorded PoE statement? This will be iterated upon in the future but for now, we are preparing the ground by using technologies like CID, PGP and IPFS.
 
 Building the modules follows a least-dependency approach, which means that we will build the modules that are most dependent on first.
 
