@@ -38,7 +38,7 @@ SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork 
 
 ## Development Roadmap :nut_and_bolt:
 
-- **Total Estimated Duration:** 7 weeks
+- **Total Estimated Duration:** 6 weeks
 - **Total Costs:** 1.5 BTC
 
 Building the modules follows a least-dependency approach, which means that we will build the modules that are most dependent on first.
@@ -49,8 +49,8 @@ In this milestone, we want to build a working Substrate-based chain and PoE runt
 
 PoE is an essential step towards generating any kind of statement. The ruleset in SensioNetwork is based on the flexible implementation of PoE. Each of the `Proof-of-*` modules depend on the information to exist before it can be verified. The structure is slightly different for each of the input types. In the case of the photo, there is more than one identifier since each photo can contain the metadata. Our tasks in this milestone are to define the generic structure and rule-set as well as the rules specific for the `photo` type. The rules should be much interoperable as they can. One potential solution to this is utilising the CID and multihash library.
 
-- **Estimated Duration:** 4 weeks
-- **Costs:** 1 BTC
+- **Estimated Duration:** 2 weeks
+- **Costs:** 0.5 BTC
 
 | Number | Deliverable           | Specification                                                                 |
 | ------ | --------------------- | ----------------------------------------------------------------------------- |
@@ -72,7 +72,7 @@ In this milestone we will start working on PoCLO, implementing the connection to
 
 We have developed the algorithm for PoCLO in nodejs and the workflow is built with different architecture in mind. We must change it to fit the current solution. This module will be in charge of creating records for provable camera/lens ownership statements. The [current implementation](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/client/src/views/Device/Verification.js) is built with React in our Proof-of-Concept webapp. PoCLO is a process that is very similar to what is used in image forensics. It's our first step to registering provable ownership statements. Our current solution uses PKI and CID, which we will keep in the future together with the SSI and DID.
 
-- **Estimated Duration:** 3 weeks
+- **Estimated Duration:** 4 weeks
 - **Costs:** 1 BTC
 
 | Number | Deliverable          | Specification                                                                  |
