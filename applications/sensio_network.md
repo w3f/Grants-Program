@@ -13,6 +13,9 @@
 | PoCLO   | Proof-Of-Camera-Lens-Ownership |
 | SSI     | Self Sovereign Identities      |
 | DID     | Distributed Identifier         |
+| IPFS    | Interplanetary file system     |
+| PGP     | Pretty Good Privacy            |
+| PKI     | Public key infrastructure      |
 
 ## Project Description :page_facing_up:
 
@@ -38,34 +41,27 @@ SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork 
 - **Total Estimated Duration:** 7 weeks
 - **Total Costs:** 1.5 BTC
 
+Building the modules follows a least-dependency approach, which means that we will build the modules that are most dependent on first.
+
 ### Milestone 1
 
-In this milestone, we want to build a working Substrate-based chain and two runtime modules.
+In this milestone, we want to build a working Substrate-based chain and PoE runtime module.
 
-Statement runtime is a generic module for producing self-sufficient structured statements. This module must require a minimal amount of fields to be included, in order to produce the entry.
-
-PoE is an essential step towards generating the statements.
-
-Process explanation:
-When a user uploads the photo through a DApp (currently sensio.photo) the API system is communicating with the SensioNetwork's PoE runtime to check does the uploaded photo exists or not. If it exists and creation time is earlier than it's recorded in the SensioNetwork, PoE must create a new statement with current data and revoke the previous one, if it doesn't exist PoE will create the statement signed by the system and reference to the account that uploaded the photo. Even this simple process poses quite a complex problem. What happens if the photo has a copyright statement claimed and it's discovered now with the original creation time earlier than recorded PoE statement? This will be iterated upon in the future but for now, we are preparing the ground by using technologies like CID, PGP and IPFS.
-
-Building the modules follows a least-dependency approach, which means that we will build the modules that are most dependent on first.
+PoE is an essential step towards generating any kind of statement. The ruleset in SensioNetwork is based on the flexible implementation of PoE. Each of the `Proof-of-*` modules depend on the information to exist before it can be verified. The structure is slightly different for each of the input types. In the case of the photo, there is more than one identifier since each photo can contain the metadata. Our tasks in this milestone are to define the generic structure and rule-set as well as the rules specific for the `photo` type. The rules should be much interoperable as they can. One potential solution to this is utilising the CID and multihash library.
 
 - **Estimated Duration:** 4 weeks
 - **Costs:** 1 BTC
 
-| Number | Deliverable           | Specification                                                                                       |
-| ------ | --------------------- | --------------------------------------------------------------------------------------------------- |
-| 1.     | Substrate based chain | Building the substrate based chain                                                                  |
-| 2.     | Statements runtime    | Generic statements that are used by any module Define the minimal viable structure and implement it |
-| 3.     | PoE runtime           | Generic PoE for any kind of data which is using the statement module                                |
-| 4.     | Unit tests            | Rudimentary tests for both runtime                                                                  |
-| 5.     | Docker image          | Create docker image                                                                                 |
-| 6.     | Tutorial && docs      | Finalise the docs and write a tutorial on how to use the implemented features                       |
+| Number | Deliverable           | Specification                                                                 |
+| ------ | --------------------- | ----------------------------------------------------------------------------- |
+| 1.     | Substrate based chain | Building the substrate based chain                                            |
+| 2.     | PoE runtime           | Generic PoE for any kind of data which is using the statement module          |
+| 3.     | Unit tests            | Rudimentary tests for both runtime                                            |
+| 4.     | Docker image          | Create docker image                                                           |
+| 5.     | Tutorial && docs      | Finalise the docs and write a tutorial on how to use the implemented features |
 
 1. Substrate based chain implementation
 2. The PoE runtime must record when the specific item was seen for the first time regardless of the copyright and ownership.
-
 3. Rudimentary tests for both runtime modules
 4. Self-explanatory
 5. Self-explanatory
@@ -74,22 +70,21 @@ Building the modules follows a least-dependency approach, which means that we wi
 
 In this milestone we will start working on PoCLO, implementing the connection to PoE and working on the implementation of the rules and data validations. By the end of this milestone, we will have the working runtime that validates that equipment information already exists in PoE and has never been claimed and can create the ownership statement for a given input.
 
-We have developed the algorithm for PoCLO in nodejs and the workflow is built with different architecture in mind. We must change it to fit the current solution. This module will be in charge of creating records for provable camera/lens ownership statements. The [current implementation](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/client/src/views/Device/Verification.js) is built with React in our Proof-of-Concept app. PoCLO is a process that is very similar to what is used in image forensics. It's our first step to registering provable ownership statements. Our current solution uses PKI and CID, which we will keep in the future together with the SSI and DID.
+We have developed the algorithm for PoCLO in nodejs and the workflow is built with different architecture in mind. We must change it to fit the current solution. This module will be in charge of creating records for provable camera/lens ownership statements. The [current implementation](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/client/src/views/Device/Verification.js) is built with React in our Proof-of-Concept webapp. PoCLO is a process that is very similar to what is used in image forensics. It's our first step to registering provable ownership statements. Our current solution uses PKI and CID, which we will keep in the future together with the SSI and DID.
 
 - **Estimated Duration:** 3 weeks
 - **Costs:** 1 BTC
 
-| Number | Deliverable          | Specification                                                                |
-| ------ | -------------------- | ---------------------------------------------------------------------------- |
-| 1.     | Claim runtime        | Define the structure of the most basic provable statement                    |
-| 2.     | PoCLO runtime module | This part will be dedicated to creating basic structure and defining the API |
-| 3.     | UI for showcase      | Create working simple UI which can demo the whole workflow                   |
-| 4.     | Unit tests           | Rudimentary tests for both runtime                                           |
-| 5.     | Docker image         | Update docker image                                                          |
-| 6.     | Tutorial && docs     | Update the docs and tutorial on how to use the implemented features          |
+| Number | Deliverable          | Specification                                                                  |
+| ------ | -------------------- | ------------------------------------------------------------------------------ |
+| 1.     | PoCLO runtime module | This part will be dedicated to creating generic structure and defining the API |
+| 2.     | UI for showcase      | Create working simple UI which can demo the whole workflow                     |
+| 3.     | Unit tests           | Rudimentary tests for both runtime                                             |
+| 4.     | Docker image         | Update docker image                                                            |
+| 5.     | Tutorial && docs     | Update the docs and tutorial on how to use the implemented features            |
 
-1. Connecting PoE runtime for the existence check and finalising the validation and the rules.
-2. The PoCLO must provide the validation rules, validate them and create or revoke the statements. In this milestone, we will focus on creating the basic validation rules, storage and API methods.
+1. The PoCLO must provide the validation rules, validate them and create or revoke the statements. In this milestone, we will focus on creating the working validation rules, storage and API methods.
+2. Simple UI to verify the equipment based on the uploaded photo
 3. Self-explanatory
 4. Self-explanatory
 5. Self-explanatory
