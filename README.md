@@ -37,6 +37,7 @@ The Committee consists of individuals who know the funding priorities of the Pol
 * [Fredrik Harrysson](https://github.com/folsen)
 * [David Hawig](https://github.com/Noc2)
 * [Kasper Mai Jørgensen](https://github.com/KasperJor)
+* [Rouven Pérez](https://github.com/RouvenP)
 * [Reto Trinkler](https://github.com/retotrinkler)
 * [Gavin Wood](https://github.com/gavofyork)
 
@@ -52,6 +53,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 Operations Team takes care of legal documents, invoicing and remittances. 
 
 * [Kasper Mai Jørgensen](https://github.com/KasperJor)
+* [Rouven Pérez](https://github.com/RouvenP)
 
 ## :pencil: Process
 
