@@ -29,6 +29,6 @@ jobs:
             a badge for grant-winning teams. Here is a link to the 
             [download and guidelines](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md). <br/><br/> 
             If you are interested in making an announcement about your grant and you would like us to broadcast it on our 
-            media channels then please get in touch with us at grant_communications@web3.foundation prior to making the 
+            media channels then please get in touch with us at grants@web3.foundation prior to making the 
             announcement (at least two weeks notice is preferred) so that we can coordinate on timing and content.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
