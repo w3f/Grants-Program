@@ -1,0 +1,34 @@
+# This is a basic workflow to help you get started with Actions
+
+name: welcome
+
+# Controls when the action will run. Triggers the workflow on push or pull request 
+# events but only for the master branch
+on:
+  pull_request:
+    types: [closed]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@master
+        with:
+          message: > 
+            As part of the Open Grants Program, we want to help winning teams acknowledge their 
+            grants publicly while observing the foundation’s guidelines. To that end, we’ve created 
+            a badge for grant-winning teams. Here is a link to the 
+            [download and guidelines](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md). <br/><br/> 
+            If you are interested in making an announcement about your grant and you would like us to broadcast it on our 
+            media channels then please get in touch with us at grant_communications@web3.foundation prior to making the 
+            announcement (at least two weeks notice is preferred) so that we can coordinate on timing and content.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
