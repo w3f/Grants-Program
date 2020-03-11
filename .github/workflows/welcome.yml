@@ -18,9 +18,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout
+        if: github.event.pull_request.merged == true
         uses: actions/checkout@v1
 
       - name: Comment PR
+        if: github.event.pull_request.merged == true
         uses: thollander/actions-comment-pull-request@master
         with:
           message: > 
