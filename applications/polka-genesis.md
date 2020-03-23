@@ -21,13 +21,13 @@ Whiteblock has been a leader in the testing of distributed systems since 2018, e
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 2 months
-* **Total Costs:** 5.40 BTC
+* **Total Costs:** 4.70 BTC
 
 ### Discovery
 We will draft a plan of the tests that would provide the most value for the Polkadot development community.
 
 * **Estimated Duration:** 2 weeks
-* **Costs:** \~1.40 BTC
+* **Costs:** \~1.00 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -39,7 +39,7 @@ We will draft a plan of the tests that would provide the most value for the Polk
 Here we will integrate Polkadot into the Whiteblock Genesis platform. This will allow for Polkadot developers to be able to determine the impact of their changes on the client. Some examples of tests include simple consensus tests, partition tolerance testing, load testing under non-idealistic conditions (i.e., network impairments between the nodes), and blockchain interoperability tests. 
 
 * **Estimated Duration:** 6 weeks
-* **Costs:** \~3.00 BTC
+* **Costs:** \~2.70 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
