@@ -16,7 +16,7 @@ PolkaKey can generate a Polkadot address without internet connection. In fact, w
 
 PolkaKey will bringing smooth UX to Polkadot, it is simple than subkey.
 
-PolkaKey is Open source for full transparency, the code is published under the MIT license so anybody can audit.
+PolkaKey is Open source for full transparency, so anybody can audit.
 
 PolkaKey will never save any wallet info locally, the private key is self-owned.
 
