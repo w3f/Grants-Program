@@ -43,7 +43,8 @@ Here we will integrate Polkadot into the Whiteblock Genesis platform. This will 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Test Definition File(s) | A test definition which is runnable on the Whiteblock Platform |
+| 1. | Test Definition File 1 | A test definition for a load test, which is runnable on the Whiteblock Platform |
+| 1. | Test Definition File 2 | A test definition for a partition tolerance test, which is runnable on the Whiteblock Platform |
 | 2. | Supporting Helpers | Any helpers which are needed to facilitate the proper execution of tests |
 | 3. | Tutorial Video | A video giving a brief introduction on how to test Polkadot on the platform |
 | 4. | Testing Tutorial | A simple tutorial to help interested parties to test Polkadot on the Whiteblock platform |
