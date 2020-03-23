@@ -23,10 +23,10 @@ PolkaKey will never save any info locally, the private key is self-owned.
 ## Team :busts_in_silhouette:
 
 * **Members:** Xianyun Zhao
-- **LinkedIn Profiles:** Sorry, we really rarely use LinkedIn in China.
+* **LinkedIn Profiles:** Sorry, we really rarely use LinkedIn in China.
 * **Code Repos:** https://github.com/w3finance/PolkaKey
-- **Website:** coming soon
-* **Legal Structure:** BoBao Technologies Inc.
+* **Website:** coming soon
+* **Legal Structure:** BoBao Technologies co. LTD
 * **Team's Experience:** Xianyun has 5 years of developing experience and similar with cross-platform apps development, currently i am working on a [wallet](https://github.com/dotpaytech/sakura) project that designed for Polkadot ecosystem.
 
 ## Development Roadmap :nut_and_bolt:
