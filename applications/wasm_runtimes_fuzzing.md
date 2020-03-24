@@ -5,7 +5,6 @@
 * **Project:** WebAssembly Runtimes Fuzzing (WARF)
 * **Proposer:** pventuzelo
 * **Payment Address:** 3An3qG2j5RJA3inJMVSzZ8uLp1T55JuL1M
-3An3qG2j5RJA3inJMVSzZ8uLp1T55JuL1M
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
@@ -20,7 +19,8 @@ This project aim to improve security and resilience of WebAssembly runtimes and 
 * **Code Repos:** https://github.com/pventuzelo/wasm_runtimes_fuzzing
 * **Website:**	https://webassembly-security.com/
 * **Legal Structure:** Patrick Ventuzelo, 113 grande rue, 91290 Arpajon, FRANCE
-* **Team's Experience:** 
+* **Team's Experience:**
+
 Patrick is an Independent Security Researcher specialized in vulnerability research, fuzzing, reverse engineering and program analysis. He is teacher of two training respectively about “WebAssembly Security” and “Rust Security“.
 
 Patrick found hundred of bugs in opensource projects mainly inside WebAssembly VMs and parsers. He is the author of [Octopus](https://github.com/pventuzelo/octopus), one of the first open-source security analysis tool supporting WebAssembly and multiple Blockchain smart contracts bytecode to help researchers perform closed-source analysis.
@@ -82,11 +82,9 @@ Patrick found hundred of bugs in opensource projects mainly inside WebAssembly V
 
 
 ## Additional Information :heavy_plus_sign: 
-Any additional information that you think is relevant to this application that hasn't already been included.
 
-Possible additional information to include:
+Some additional information :
 * I'm planning to support a maximum of wasm runtimes and parsers
 * The project will interact with runtimes implemented in different languages but mainly Rust, C, C++ and Go (potentially Python and JS)
 * Huge part of the project will be focused on improving fuzzing performance and create a friendly way to integrate new wasm runtime with the project.
 * Based on actual Polkadot hosts (Substrate, Kagome, Gossamer), I will start integrating parity-wasm, wasmi, wasmtime, wasmer and binaryen.
- 
