@@ -21,7 +21,7 @@ This project aim to improve security and resilience of WebAssembly runtimes and 
 * **Legal Structure:** Patrick Ventuzelo, 113 grande rue, 91290 Arpajon, FRANCE
 * **Team's Experience:**
 
-Patrick is an Independent Security Researcher specialized in vulnerability research, fuzzing, reverse engineering and program analysis. He is teacher of two training respectively about “WebAssembly Security” and “Rust Security“.
+Patrick is an Independent Security Researcher specialized in vulnerability research, fuzzing, reverse engineering and program analysis. He is teacher of two training respectively about [WebAssembly Security](https://webassembly-security.com/wasm-security-training/) and [Rust Security](https://webassembly-security.com/rust-security-training/).
 
 Patrick found hundred of bugs in opensource projects mainly inside WebAssembly VMs and parsers. He is the author of [Octopus](https://github.com/pventuzelo/octopus), one of the first open-source security analysis tool supporting WebAssembly and multiple Blockchain smart contracts bytecode to help researchers perform closed-source analysis.
 
