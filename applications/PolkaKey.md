@@ -31,8 +31,8 @@ PolkaKey will never save any info locally, the private key is self-owned.
 
 ## Development Roadmap :nut_and_bolt:
 
-* **Total Estimated Duration:** 3 weeks
-* **Total Costs:** 0.5 BTC
+* **Total Estimated Duration:** 3 weeks + 2weeks
+* **Total Costs:** 0.5 BTC + 0.1 BTC
 
 ### Milestone 1
 
@@ -52,3 +52,12 @@ PolkaKey will never save any info locally, the private key is self-owned.
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | Prepare for release | Test and fix issue |
+
+### Milestone 3
+
+* **Estimated Duration:** 2 weeks
+* **Costs:** 0.1 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Add a Chinese + English tutorial | Add a Chinese + English tutorial |
