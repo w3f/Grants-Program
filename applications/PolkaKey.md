@@ -42,7 +42,7 @@ PolkaKey will never save any info locally, the private key is self-owned.
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | UI for showcase | Create working prototype which can demo the whole workflow |
-| 2. | Function implementation | Function implementation |
+| 2. | Function implementation | Generate a Polkadot/Kusama address via PolkaKey. Setting functions, include:Language(Chinese + English). Online/Offline Event Detection |
 
 ### Milestone 2
 
@@ -51,7 +51,7 @@ PolkaKey will never save any info locally, the private key is self-owned.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Prepare for release | Test and fix issue |
+| 1. | Prepare for release | Add unit test, we use [jest](https://jestjs.io/en/) as our test runner. Fix issue on github, release the MVP version |
 
 ### Milestone 3
 
@@ -60,4 +60,4 @@ PolkaKey will never save any info locally, the private key is self-owned.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Add a Chinese + English tutorial | Add a Chinese + English tutorial |
+| 1. | Add a Chinese + English tutorial | This tutorial is mainly about how to build an Electron app with Polkadot.js API. The tutorial will first be available on the github [Wiki](https://github.com/w3finance/PolkaKey/wiki). If possible, i hope to publish this tutorial on [Polkaworld](https://www.polkaworld.org/) and [Substrate Dev Hub](https://substrate.dev/en/tutorials) |
