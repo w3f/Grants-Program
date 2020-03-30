@@ -41,6 +41,7 @@ Patrick found hundred of bugs in opensource projects mainly inside WebAssembly V
 | 1. | Integration Plan | List of major WebAssembly runtimes used in Polkadot ecosystem and APIs to interact with them. |  
 | 2.  | Project development | Development of the project base (architecture and interface) |  
 | 3.  | APIs | Creation of integration APIs + documentation |
+| 4.  | Delivery report | Tutorial for project installation and testings |
 
 ### Milestone 2 - WebAssembly VM/parsers integration
 
@@ -54,6 +55,9 @@ Patrick found hundred of bugs in opensource projects mainly inside WebAssembly V
 | 2.  | CLI tool | Command line tool allowing execution of wasm modules through all runtimes. |  
 | 3.  | Project development | Improvement of the project (threading, runtimes perf monitoring) |  
 | 4.  | Project development | Development of fuzzing harness per runtimes. |
+| 5.  | Runtimes dockers | Dockers to install runtimes engines easily |
+| 6.  | Delivery reports | Tutorial for runtimes installation, compilation, how to run tools and unittests |
+| 7.  | Unittest | unit test to verify all runtimes engines work as expected |  
 
 ### Milestone 3 - Fuzzing & improvement
 
@@ -66,6 +70,8 @@ Patrick found hundred of bugs in opensource projects mainly inside WebAssembly V
 | 2.  | Fuzzing Implementation | Differential fuzzing implementation for wasm runtimes and parsers. |
 | 3.  | Fuzzing Implementation | Grammar fuzzing implementation specific to WebAssembly module |
 | 4.  | Project development | Improvement of the fuzzing (input file sharing, mutation algorithm, speed). |
+| 5.  | Delivery reports | Tutorial for running fuzzers and use advanced CLI options |
+| 6.  | Unittest | unit test to verify fuzzing is deterministic and reproductible |  
 
 ### Milestone 4 - Performance & Documentation
 
@@ -79,7 +85,6 @@ Patrick found hundred of bugs in opensource projects mainly inside WebAssembly V
 | 3.  | Documentation | Internal architecture |
 | 4.  | Documentation | Details fuzzing engines & techniques |
 | 5.  | Performance testing | Improve fuzzing performances and benchmarks |
-
 
 ## Additional Information :heavy_plus_sign: 
 
