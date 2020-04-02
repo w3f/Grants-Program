@@ -21,19 +21,19 @@ Currently, there are fewer Polkadot applications on the native mobile terminal. 
 
 Tomka, YeLin have 6 years of mobile app (Android, iOS) development experience in java,kotlin,swift . The main areas of development are bastion machines and e-commerce apps.
 
-WoeOm approximately has 3 years of javascript and 3 years of blockchain development experience, the main fields are Ethereum wallet, solidity contract and substrate .
+[WoeOm](https://github.com/WoeOm) approximately has 3 years of javascript and 3 years of blockchain development experience, the main fields are Ethereum wallet, solidity contract and substrate .
 
-Myoursky has 7 years Front-end development experience in finance and oa management;
+[Myoursky](https://github.com/Myoursky) has 7 years Front-end development experience in finance and oa management;
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 9 weeks
-* **Total Costs:** 1.3 BTC
+* **Total Estimated Duration:** 11 weeks
+* **Total Costs:** 0.9 BTC
 
 ### Milestone 1
 
 * **Estimated Duration:** 3 weeks 
-* **Costs:** 0.4 BTC
+* **Costs:** 0.3 BTC
 
 
 | Number | Deliverable | Specification | 
@@ -43,11 +43,11 @@ Myoursky has 7 years Front-end development experience in finance and oa manageme
 
 ### Milestone 2
 
-* **Estimated Duration:** 4 weeks 
-* **Costs:** 0.7 BTC
+* **Estimated Duration:** 6 weeks 
+* **Costs:** 0.5 BTC
 
 
-| Number | Deliverable | Specification | 
+| Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1.  | Primitive types| This deliverable includes the following types of polkadot-js/api/types integrated into Kotlin including unit tests: AccountId, AccountIndex, AccountInfo, Address, Bool, Bytes, ... |  
 | 2.  | Metadata | This deliverable includes the following types of polkadot-js/metadata integrated into Kotlin including unit tests: MetadataV0 - MetadataV11  |  
@@ -56,7 +56,7 @@ Myoursky has 7 years Front-end development experience in finance and oa manageme
 ### Milestone 3
 
 * **Estimated Duration:** 2 weeks 
-* **Costs:** 0.2 BTC
+* **Costs:** 0.1 BTC
 
 
 | Number | Deliverable | Specification | 
