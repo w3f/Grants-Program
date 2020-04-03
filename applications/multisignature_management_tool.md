@@ -15,9 +15,11 @@ As a user and developer for the substrate runtime module, we find following issu
 - The lack of detailed and complete documentation and user tutorials
 
 
-We will provide the following details to enhance the user experience and saving development time for the people working with this runtime module.
+In order to make the above more perfect, we are programming a Web Multisignature Management Tool for Multi-chain.  This is a one-stop tool that integrates multi-signature wallet generation, management, query, and more developer functions. It will pay more attention to user experience, provide detailed user tutorials so that users can better use the multi-signature function.
 
-### Objectives
+What needs to be distinguished is that the multisignature was at the level of the runtime module before, and we are making a tool application based on this runtime module.
+
+## Objectives
 - Review the runtime modules and fix issues 
 - Web plugin integrated with wallet
 - Advanced features for developers
@@ -37,9 +39,6 @@ Our team works in Shanghai and is very interested in substrate, and has done a l
 
 ## Team Code Repos  
 We are not opensource currently.
-
-## Team LinkedIn Profiles
-
 
 ## Development Roadmap  
 
