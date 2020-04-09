@@ -1,90 +1,104 @@
-# Multisignature Management Tool 
-A web tool helps users manage their multi-signature for multi-chain
+## Open Grant Proposal
 
-## Project Description  
-The multisignature feature is implemented in Wave 5 as an substrate runtime module. This is a great project!  
-We used the multisignature feature and found that this part of the exploration is currently mainly dedicated to the realization of the function, which is still lacking in usability, user experience, management functions, browser support, etc.  
+- **Project:** Multi-signature_Management_Tool
+- **Proposer:** [Hong Tao](https://github.com/carlhong)
+- **Payment Address:** 3P1DGw78xgkQ2pTPT1hcwmzozY1T93gmTB
 
-As a user and developer for the substrate runtime module, we find following issues that we can enhance.  
-- There is no method to generate `call_hash: [u8; 32]`, issue 5499
-- The tx deails of call is not stored, such that other approver can not review the detail of Call Content
-- There is specific order for signators, but lack of tools
-- Absence of interface to query `multi_account_id ` by signators and threshold
-- Absence of good interactive interface on Web
-- Some operation is manually, such as `as_multi_sig`
-- The lack of detailed and complete documentation and user tutorials
+## Project Description
 
-In order to make the above more perfect, we are programming a Web Multisignature Management Tool for Multi-chain.  This is a one-stop tool that integrates multi-signature wallet generation, management, query, and more developer functions. It will pay more attention to user experience, provide detailed user tutorials so that users can better use the multi-signature function.
+When we developed and used the multi-signature feature, we found that there is no multisignature wallet tool that can be used conveniently. The current wallet project is mainly designed for different usage environments, such as mobile wallet app, web wallet, chrome extension, etc. The development of these wallets (except the polkadot.js app) is at an early stage, and lack of multi-signature module . Polkadot.js apps is a very powerful tool. The dappforce version provided a web UI about multi-signature, but it was based on Substrate 1.0, and it was not upgraded and maintained in time, and users have difficulties in using it.
 
-What needs to be distinguished is that the multisignature was at the level of the runtime module before, and we are making a tool application based on this runtime module.
+Therefore, we want to develop a Web Multisignature Management Tool (like [gnosis](https://wallet.gnosis.pm/#/wallets) based on Ethereum), implement a Substrate multisignature Portal and Web Tool integration, and bring users a better experience when using subscan. At current stage, our goal is offering users have a convenient multisignature tool and helping  developers reduce the development cost of similar functions.
+
+- Network scalability
+
+All chains built  on substrate [`as_multi`](https://github.com/paritytech/substrate/blob/v2.0.0-alpha.4/frame/utility/src/lib.rs#L321>)  module can use our tools to complete related operations directly. The chain that changes the [`as_multi`](https://github.com/paritytech/substrate/blob/v2.0.0-alpha.4/frame/utility/src/lib.rs#L321>)  module can use our UX design partly or completely according to their needs to reduce the development cost.
+
+- Platform scalability
+
+The web Multi-signature Management Tool can not only run on PC and use it with extension programs, but also serves as a dapp, using it with the mobile wallet app. Developers of mobile wallets can use this tool as a multi-signature solution as needed.
+
+- Future
+
+Regarding multi-signature module versions, we are currently based on dappforce versions, and will follow a wider range of community standards in the future, such as [w3f/PSPs#7](https://github.com/w3f/PSPs/pull/7) .
 
 ## Objectives
-- Review the runtime modules and fix issues 
-- Web plugin integrated with wallet
-- Advanced features for developers
-- Deploy tools
+
+- Create multi-signature account and send extrinsic
+- Manage multi-signature wallets and extrinsic progress
+- `as_multi` Module subscan browser adaptation
+- Support multiple networks that are based on Substrate development
+- UX optimization across terminals
 
 ## Team members
-[Wan Bei](https://github.com/woeom), 
-[Hong Tao](https://github.com/carlhong),
-[Yakio](https://github.com/yakio),
+
+[Wan Bei](https://github.com/woeom), [Hong Tao](https://github.com/carlhong), [Yakio](https://github.com/yakio),
 
 ## Legal Structure
+
 Shanghai Yitaiyuan Tech
 
-## Team Website  
-https://www.subscan.io/
+## Team Website
+
+<https://www.subscan.io/>
 
 ## Team's experience
-Our team works in Shanghai and is very interested in substrate, and has done a lot of related development work, such as help Darwinia building web wallet. But our focus has always been on the subscan blockchain explorer, which keeps it updated quickly.
 
-## Team Code Repos  
-https://github.com/itering/subscan
+Our team is based in Shanghai. We are very interested in substrate and we have done a lot of related development work, such as helping Darwinia build web wallet. 
 
-https://github.com/itering/subscan_ui
+But our focus has always been Subscan blockchain explorer, which keeps it updated quickly.
 
-## Development Roadmap  
+## Team Code Repos
 
-### Web Plugin Integrated with Wallet
+<https://github.com/itering/subscan>
 
-- Review the runtime modules and fix issues (40h)
-- Web page design (32h)
-- Base on Signers to generate Multisig address (32h)
-- According the `Call` of Extrinsic to generate the Call Hash (32h)
-- Providing `as_multi` function (16h)
-- Providing `approve` function (16h)
-- Providing `cancel` function (16h)
-- Providing Signers sorting feature (8h)
-- integrate with wallet plugin (32h)
-- Design and Handle the misuse case (32h)
-- Example for the plugin integrate with backend service (24h)
+<https://github.com/itering/subscan_ui>
 
-Total for worker implementation: 280 hours
-Budget: 15,000 USD
+## Development Roadmap
 
-### Advanced features for developers
+### Basic function: generate Multisig account and send Extrinsic
 
-- Feature on switching nodes (24h)
-- Feature on reviewing the transaction details (32h)
-- Feature on query and review other signers status and the overall status (32h)
-- Feature on checking the Compatiblity and the adaptability from the source code of the target network (32h)
-- Feature on integration with subscan (24h)
-- Frontend testing case (24h)
-- Example for the plugin integrate with backend service (24h)
+- Web page design
+- Generate Multisig address
+- Generate the `Call` Hash according to the Call of Extrinsic
+- Provide `as_multi` function 
+- Provide `approve` function 
+- Provide `cancel` function 
+- Provide Signers sorting feature 
+- Integrate with wallet plugin
+- Design and Handle the misuse case 
+- Example of integrating the plugin with backend service 
 
-Total for worker implementation: 192 hours
-Budget: 12,000 USD
+Total for worker implementation: 18 days
 
-### Deploy Tools
+Budget: 1.3 BTC
 
-- Feature on import/export from multisignature wallets (16h)
-- Docker Files and Images (8h)
-- tutorials (4h)
+### Advanced function: manage Multi-sig account and Extrinsic progress
 
-Total for worker implementation: 28 hours
-Budget: 3,000 USD
+- Feature on import/export from multisignature wallets 
+- Feature on reviewing the transaction details
+- Feature on query and review other signers status and the overall status
+- Feature on checking the Compatiblity and the adaptability from the source code of the target network 
+- Frontend testing case 
+- Example for the plugin integrate with backend service
 
-#### Total Budget: 30,000 USD
+Total for worker implementation: 16 days
 
-## Future Plans  
-Subscan is providing a better web experience for users and developers in the Substrate ecosystem.
+Budget: 1.2 BTC
+
+### Custom function：Network and terminal adaptation
+
+- Feature on switching node
+- Feature on integration with subscan
+- Mobile terminal ux adaptation
+- API for calling mobile terminal signature
+- Docker Files and Images
+- tutorials
+
+Total for worker implementation: 14 days
+
+Budget: 1 BTC
+
+ 
+
+**Total Budget: 3.5 BTC**
