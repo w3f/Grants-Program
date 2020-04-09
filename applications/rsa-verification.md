@@ -1,8 +1,8 @@
 # Open Grant Proposal
 
 * **Project:** RSA Signature Verification on Substrate
-* **Proposer:** @yuki-js
-* **Payment Address:** TBD
+* **Proposer:** [@yuki-js](https://github.com/yuki-js)
+* **Payment Address:** 12whryLeVFj6ieL6x1jZzC7fFhPfSzfKMh
 
 
 ## Project Description :page_facing_up: 
@@ -14,35 +14,36 @@ By Implementing this, the mynumber card, Estonian eID card, and other smartcards
 ## Team :busts_in_silhouette:
 
 * **Members:** Yuki Aoki
-* **LinkedIn Profiles:** I don't have LinkedIn account yet.
-* **Code Repos:** TBD
-* **Legal Structure:** Individual
-* **Team's Experience:** Please describe the team's relevant experience.
+* **LinkedIn Profiles:** <https://www.linkedin.com/in/%E5%8B%87%E6%A8%B9-%E9%9D%92%E6%9C%A8-a878541a6/>
+* **Code Repos:** <https://github.com/my-number/substrate>, <https://github.com/my-number/polkadotjs-api>
+* **Legal Structure:** Individual 
+* **Team's Experience:** Developed [Mynachain](https://github.com/my-number/mynachain) and won the grand prize of [Endowed Chair for Blockchain Innovation, the University of Tokyo](https://www.blockchain.t.u-tokyo.ac.jp/)
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 3 weeks
-* **Total Costs:** 0.75 BTC
+* **Total Estimated Duration:** 6 weeks
+* **Total Costs:** 1.2 BTC
 
 ### Milestone 1
 
-* **Estimated Duration:** 2 weeks
-* **Costs:** 0.5 BTC
+* **Estimated Duration:** 3 weeks
+* **Costs:** 0.6 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Modify MultiSignature | Modify Add variant & impls into `sp_runtime::MultiSignature` and make RSA signature verifiable instead of algorithms such as Ed25519. |
-| 2. | Create RSA verification crate(optional) | `rsa` crate seems to be non-stable. So, in some cases, it might be better to develop the crate. |
+| 1. | Add RSA feature | Implement `crypto::Pair` trait & add variant into `sp_runtime::MultiSignature` so that RSA signature can be verifiable instead of algorithms such as Ed25519. |
 
 ### Milestone 2
 
-* **Estimated Duration:** A week
-* **Costs:** 0.25 BTC
+* **Estimated Duration:** 3 week
+* **Costs:** 0.6 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Modify polkadot-js | Add RSA variant to `polkadot-js` |
+| 1. | Example app | Make simple transaction transmitter app |
+| 2. | Tests | Integration test |
+| 3. | Documentation | Specification, How to use, etc. |
 
 ## Additional Information :heavy_plus_sign: 
  
-I've developed "Mynachain" so far. It can verify signature of mynumber card but its code is not sophisticated. This project will make it verify signatures in the manner of substrate.
+I've developed [Mynachain](https://github.com/my-number/mynachain) so far. It can verify signature of mynumber card but its code is not sophisticated. This project will make it verify signatures in the manner of substrate.
