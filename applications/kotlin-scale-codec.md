@@ -27,8 +27,8 @@ Tomka, YeLin have 6 years of mobile app (Android, iOS) development experience in
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 11 weeks
-* **Total Costs:** 0.9 BTC
+* **Total Estimated Duration:** 13 weeks
+* **Total Costs:** 1.3 BTC
 
 ### Milestone 1
 
@@ -53,7 +53,19 @@ Tomka, YeLin have 6 years of mobile app (Android, iOS) development experience in
 | 2.  | Metadata | This deliverable includes the following types of polkadot-js/metadata integrated into Kotlin including unit tests: MetadataV0 - MetadataV11  |  
 | 3.  | Docs | Docs including a README that describes the milestone and explains how to run, test and contribute| 
 
+
 ### Milestone 3
+
+* **Estimated Duration:** 2 weeks 
+* **Costs:** 0.4 BTC
+
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1.  | RPC Method| Wrapper around all JSON-RPC methods exposed by a Polkadot network client |  
+| 2.  | Mocker | A Mocker have some simulated services to provide testing | 
+
+### Milestone 4
 
 * **Estimated Duration:** 2 weeks 
 * **Costs:** 0.1 BTC
