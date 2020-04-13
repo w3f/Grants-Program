@@ -43,7 +43,7 @@ The Committee consists of individuals who know the funding priorities of the Pol
 
 **W3F Grants Evaluators**
 
-Evaluators are individuals able to evaluate the technology delivered as a result of the Open Grants Program.
+Evaluators are individuals able to evaluate the technology delivered as a result of the Open Grants Program. The committee decides about the evaluators and has the right to add or remove evaluators (supermajority needed).
 
 * [Peter Czaban](https://github.com/keorn)
 * [David Hawig](https://github.com/Noc2)
