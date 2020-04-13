@@ -16,8 +16,12 @@ Currently, there are fewer Polkadot applications on the native mobile terminal. 
 * **LinkedIn Profiles:** none
 * **Code Repos:** https://github.com/kotlin-scale-codec/scale-codec
 * **Website:**	after Milestone 1
-* **Legal Structure:** Personal liability
+* **Legal Structure:** Personal liability(Ye Lin | 106-2-11F Ruanjian Ave
+                                                  Yuhuatai Qu, Nanjing Shi, Jiangsu Sheng
+                                                  China
+                                                  210022)
 * **Team's Experience:** 
+
 
 Tomka, YeLin have 6 years of mobile app (Android, iOS) development experience in java,kotlin,swift . The main areas of development are bastion machines and e-commerce apps.
 
