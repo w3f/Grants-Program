@@ -53,7 +53,8 @@ Initial domain specific model, types and encoding.
 | 1. | SS58 encoding | Java class to encode/decode with SS58 |  
 | 2. | SCALE coded | Java class to encode/decode with SCALE |
 | 3. | Base types | Java classes to hold and operate Address, Hash, and DOT |
-| 4. | Documentation | A standalone document, describing usage |  
+| 4. | Unit Tests | Unit tests covering at least 75% of the code |
+| 5. | Documentation | A standalone document, describing usage |  
 
 ### Milestone 2
 
@@ -67,7 +68,8 @@ Client for HTTP JSON RPC.
 | ------------- | ------------- | ------------- |
 | 1. | HTTP Client | A Java wrapper around standard HTTP JSON RPC, to read current state needed by a typical service |
 | 2. | Example App | An example app that accesses a node and prints the current status to the console |
-| 3. | Documentation | A standalone document, describing usage |
+| 3. | Unit Tests | Unit tests covering at least 75% of the code |
+| 4. | Documentation | A standalone document, describing usage |
 
 ### Milestone 3
 
@@ -82,5 +84,6 @@ Modules to read and create extrinsic
 | 1. | schnorrkel/sr25519 module | Wrapper around Rust crypto library |  
 | 2. | Signing and signature validation module | Java classes to sign data or verify an existing signature |
 | 3. | Example App | An example app to create and broadcast an extrinsic |
-| 4. | Documentation | A standalone document, describing usage |   
+| 4. | Unit Tests | Unit tests covering at least 75% of the code |
+| 5. | Documentation | A standalone document, describing usage |   
  
