@@ -30,8 +30,8 @@ Build artifacts are going to be published to a publicly accessible Maven reposit
 * **Members:** Igor Artamonov
 * **LinkedIn Profiles:** https://www.linkedin.com/in/igorartamonov/
 * **Code Repos:** https://github.com/splix, https://github.com/emeraldpay
-* **Website:**	https://emeraldpay.io
-* **Legal Structure:** ETCDEV GmbH, Zug, Switzerland 
+* **Website:** https://emeraldpay.io
+* **Legal Structure:** personal address will be provided via the invoice form 
 * **Team's Experience:** About 20 years of mostly Java experience, 5 years of blockchain experience
 
 ## Development Roadmap :nut_and_bolt: 
@@ -58,7 +58,7 @@ Initial domain specific model, types and encoding.
 
 ### Milestone 2
 
-Client for HTTP JSON RPC.
+Client for HTTP JSON RPC. With the focus on the following APIs: chain, contracts, and state.
 
 * **Estimated Duration:** 1 month 
 * **FTE:** 0.8
@@ -67,13 +67,14 @@ Client for HTTP JSON RPC.
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 1. | HTTP Client | A Java wrapper around standard HTTP JSON RPC, to read current state needed by a typical service |
-| 2. | Example App | An example app that accesses a node and prints the current status to the console |
+| 2. | Example App | An example app that accesses a node and prints the current status of the blockchain to the console |
 | 3. | Unit Tests | Unit tests covering at least 75% of the code |
 | 4. | Documentation | A standalone document, describing usage |
 
 ### Milestone 3
 
-Modules to read and create extrinsic
+Modules to read, create and broadcast extrinsic. 
+Plus the API module which should provide access to the following APIs: account, author, and payment.
 
 * **Estimated Duration:** 1 month 
 * **FTE:** 0.8
