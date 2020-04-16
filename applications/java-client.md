@@ -38,7 +38,7 @@ Build artifacts are going to be published to a publicly accessible Maven reposit
 
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  0.8 
-* **Total Costs:** 4.2 BTC
+* **Total Costs:** 4.5 BTC
 
 ### Milestone 1
 
@@ -46,7 +46,7 @@ Initial domain specific model, types and encoding.
 
 * **Estimated Duration:** 1 month 
 * **FTE:** 0.8
-* **Costs:** 1.4 BTC
+* **Costs:** 1.5 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -62,7 +62,7 @@ Client for HTTP JSON RPC. With the focus on the following APIs: chain, contracts
 
 * **Estimated Duration:** 1 month 
 * **FTE:** 0.8
-* **Costs:** 1.4 BTC
+* **Costs:** 1.5 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -78,7 +78,7 @@ Plus the API module which should provide access to the following APIs: account, 
 
 * **Estimated Duration:** 1 month 
 * **FTE:** 0.8
-* **Costs:** 1.4 BTC
+* **Costs:** 1.5 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
