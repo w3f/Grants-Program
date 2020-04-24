@@ -33,12 +33,12 @@ Since 2017, LimeChain has worked on 50+ blockchain projects, including a strong 
 
 * **Total Estimated Duration:** 17 days
 * **Full-time equivalent (FTE):** 1.5
-* **Total Costs:** 2.046 BTC (calculated at $6500 BTC/USD rate)
+* **Total Costs:** 1.8 BTC
 
 ### Milestone 1
 * **Estimated Duration:** 17 days
 * **FTE:** 1.5
-* **Costs:** 2.046 BTC (calculated at $6500 BTC/USD rate)
+* **Costs:** 1.8 BTC
 
 
 | Number | Deliverable | Specification | 
