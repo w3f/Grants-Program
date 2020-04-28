@@ -95,6 +95,7 @@ Our first comic collected more than 25 000 impressions on Twitter, more than 550
 Twitter Analytics - https://prnt.sc/s7d8i2
 
 According to the latest stats published by the Pew Research Center about social media usage, Facebook (69%) and YouTube (73%) are the most widely used online platforms among U.S. adults. Instagram is used by 37% but has shown the most growth in the last 3 years. Twitter is lagging behind with just 22% and has declined since 2018. Among 18-to-24-year-old Instagram’s popularity has reached 75% and YouTube is leading the way with 90%. Twitter usage among this age group is at 44%.
+
 The audience that is interested in the blockchain on Facebook is less, so we will not get hung up on Facebook
 Social media presence on Twitter, Reddit, Instagram, and most messaging platforms is a must. This Proposal and its derivatives present an opportunity to widen the Polkadot`s reach and show how visual communication can help explain cryptocurrencies, blockchain technology and how decentralized governance works.
 
