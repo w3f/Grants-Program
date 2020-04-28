@@ -31,7 +31,7 @@ We believe in the better Internet. The Internet where we don’t need to worry a
 
 ## Team :busts_in_silhouette:
 
-* **Members:** 1. Dan Opry - Designer & Frontend. 2. Alex Zim - copywriter
+* **Members:** 1. Dan - Designer & Frontend. 2. Alex - copywriter
 * **LinkedIn Profiles:** Sorry, we rarely use LinkedIn
 * **Code Repos:** https://github.com/PolkadotComics 
 * **Website:**	https://polkadotcomics.zyrosite.com/ 
@@ -55,8 +55,8 @@ This proposal is submitted by Dan (@geek_block on Riot and Telegram.) I have ove
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Website for Polkadot Comics and additional content | All comics have a specific format - large pictures with text - we plan to create a website where all users will be able to look at all comics in a big resolution. The web site will be in Polkadot`s style and to keep users on the site longer we will add tutorials and more information about Polkadot blockchain and all information related Web3 Foundation. Design and Frontend: 50 man-hours ($35 per hour); $1750; Hosting: $15 * 12 months = $180 |  
-| 2. | Polkadot Comic #1 - Intro. What is Polkadot? | Each comic involves research, scripting, storyboarding, digital and graphic design, distribution in social media, and promotion. While the workload differs from comic to comic it could be rounded to: Research: 4 man-hours ($25 per hour); $100; Scripting: 3 man-hours ($25 per hour); $75; Storyboarding: 3 man-hours ($25 per hour); $75; Digital and illustration design (+adapting): 18 man-hours ($40 per hour); $720; Additional content for SMM: 3 man-hour ($25 per hour); $75; Time: 31 man-hours; Budget: $1045. We have already developed this comic - https://twitter.com/PolkadotComics/status/1252649506656727040 |  
+| 1. | Website for Polkadot Comics and additional content | All comics have a specific format - large pictures with text - we plan to create a website where all users will be able to look at all comics in a big resolution. The web site will be in Polkadot`s style and to keep users on the site longer we will add tutorials and more information about Polkadot blockchain and all information related Web3 Foundation. Design and Frontend: 50 man-hours ($35 per hour; $1750); Hosting: $15 * 12 months = $180 |  
+| 2. | Polkadot Comic #1 - Intro. What is Polkadot? | Each comic involves research, scripting, storyboarding, digital and graphic design, distribution in social media, and promotion. While the workload differs from comic to comic it could be rounded to: Research: 4 man-hours ($25 per hour; $100); Scripting: 3 man-hours ($25 per hour; $75); Storyboarding: 3 man-hours ($25 per hour; $75); Digital and illustration design (+adapting): 18 man-hours ($40 per hour; $720); Additional content for SMM: 3 man-hour ($25 per hour; $75); Time: 31 man-hours; Budget: $1045. We have already developed this comic - https://twitter.com/PolkadotComics/status/1252649506656727040 |  
 | 3. | Polkadot Comic #2 - Intro 2. What is Kusama? | What Kusama is? Why is it so important? How to work with Kusama? Time: 31 man-hours; Budget: $1045 |  
 | 4. | Social Media Marketing | Posting, discussing, getting feedback on social media. Also we have to create Medium, Instagram, Reddit accounts. SMM management and community support. Time: 40 man-hours |   
 
@@ -99,7 +99,9 @@ The audience that is interested in the blockchain on Facebook is less, so we wil
 Social media presence on Twitter, Reddit, Instagram, and most messaging platforms is a must. This Proposal and its derivatives present an opportunity to widen the Polkadot`s reach and show how visual communication can help explain cryptocurrencies, blockchain technology and how decentralized governance works.
 
 Twitter: the best way to catch new users - run targeted ads, and choose audiences with special keywords. Expect this media posts should include unique media to encourage the community. Video, high-quality illustration, etc.
-Instagram: targeted ads in stories, more fun and more interaction users in such great tools like Instagram stories. High-quality illustration. Connection Oasis brand to such a unique Instagram feature as AR Masks - https://sparkar.facebook.com/ar-studio/ 
+
+Instagram: targeted ads in stories, more fun and more interaction users in such great tools like Instagram stories. High-quality illustration. Connection Polkadot brand to such a unique Instagram feature as AR Masks - https://sparkar.facebook.com/ar-studio/ 
+
 Telegram: The best solution is: long discussions and reposts of important news
 
 The target audience - https://prnt.sc/s7d9qe
