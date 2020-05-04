@@ -16,7 +16,7 @@ By Implementing this, the mynumber card, Estonian eID card, and other smartcards
 * **Members:** Yuki Aoki
 * **LinkedIn Profiles:** <https://www.linkedin.com/in/%E5%8B%87%E6%A8%B9-%E9%9D%92%E6%9C%A8-a878541a6/>
 * **Code Repos:** <https://github.com/my-number/substrate>, <https://github.com/my-number/polkadotjs-api>
-* **Legal Structure:** Individual 
+* **Legal Structure:** Individual (personal address will be provided via the invoice form)
 * **Team's Experience:** Developed [Mynachain](https://github.com/my-number/mynachain) and won the grand prize of [Endowed Chair for Blockchain Innovation, the University of Tokyo](https://www.blockchain.t.u-tokyo.ac.jp/)
 
 ## Development Roadmap :nut_and_bolt: 
@@ -35,7 +35,7 @@ By Implementing this, the mynumber card, Estonian eID card, and other smartcards
 
 ### Milestone 2
 
-* **Estimated Duration:** 3 week
+* **Estimated Duration:** 4 week
 * **Costs:** 0.6 BTC
 
 | Number | Deliverable | Specification | 
