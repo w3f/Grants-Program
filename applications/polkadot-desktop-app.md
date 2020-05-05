@@ -86,7 +86,7 @@ As part of the design we’ll create new visual components (sidebar, buttons, no
 
 Here's how we envision the Accounts list:
 ![Preliminary design - Accounst list](https://i.imgur.com/KhKdMwl.png)
-The following two desings are a result of our re-thinking of the user onboarding process. In this milestone we won't be working on the user onbaording yet. However, we might use parts of the following desings in the account creation modals.
+The following two designs are a result of our re-thinking of the user onboarding process. In this milestone we won't be working on the user onbaording yet. However, we might use parts of the following designs in the account creation modals.
 ![Preliminary design - First account creation](https://i.imgur.com/sO51bph.png)
 ![Preliminary design - Adding a new account](https://i.imgur.com/C9ys8Pn.png)
 
