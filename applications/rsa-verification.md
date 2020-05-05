@@ -46,4 +46,4 @@ By Implementing this, the mynumber card, Estonian eID card, and other smartcards
 
 ## Additional Information :heavy_plus_sign: 
  
-I've developed [Mynachain](https://github.com/my-number/mynachain) so far. It can verify signature of mynumber card but its code is not sophisticated. This project will make it verify signatures in the manner of substrate.
+I've developed [Mynachain](https://github.com/my-number/mynachain) so far, which enables the mynumber card to send the assets. The blockchain can verify signature of mynumber card but its code is not sophisticated. This project will make it verify signatures in the manner of substrate.
