@@ -46,7 +46,7 @@ In a previous [grant from W3F](https://github.com/w3f/General-Grants-Program/blo
 
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 1.25
-* **Total Costs:** Equivalent of $30000
+* **Total Costs:** 3,37 BTC
 
 ### Milestone 1
 
@@ -54,7 +54,7 @@ In a previous [grant from W3F](https://github.com/w3f/General-Grants-Program/blo
 
 * **Estimated Duration:** 1 month
 * **FTE:** 1.25
-* **Costs:** Equivalent of $10000
+* **Costs:** 1,12 BTC
 
 First step will be to convert the [Polkadot.{js} web application](https://polkadot.js.org/apps/) into a desktop application. We’ll use [Electron](https://www.electronjs.org/) for that.
 
@@ -76,7 +76,7 @@ Part of the work will be the setup of CI/CD pipeline, including application sign
 
 * **Estimated Duration:** 1 month
 * **FTE:** 1.25
-* **Costs:** Equivalent of $10000
+* **Costs:** 1,12 BTC
 
 We’d like to improve [Accounts](https://polkadot.js.org/apps/#/accounts), the part of the application new users will mostly interact with. Thus we want to start with a redesign of this section in Milestone 2.
 
@@ -106,7 +106,7 @@ The following two designs are a result of our re-thinking of the user onboarding
 
 * **Estimated Duration:** 1 month
 * **FTE:** 1.25
-* **Costs:** Equivalent of $10000
+* **Costs:** 1,13 BTC
 
 The goal of this milestone is to provide a consistent look and feel across the whole application. With Milestone 2 finished, only Accounts have the new UI. To give users a feeling of working with one, consistent product, we need to update the visual style for other parts of the application.
 
