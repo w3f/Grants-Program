@@ -126,8 +126,6 @@ To achieve this goal, we'll create a Style Guide, which will include all the wid
 ### Have you applied for other grants so far?
 We have successfuly applied for a grant on [Polkadot.{js} Extension](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/polkadot_js_chrome_extension.md). We are now awaiting acceptance of the last milestone of this grant.
 
-Any additional information that you think is relevant to this application that hasn't already been included.
-
 ### Similar projects
 
 We're aware of the [SubstrateIDE](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/SubstrateIDE.md) project, which also uses [Electron](https://www.electronjs.org/) to package the [Polkadot.{js}](https://polkadot.js.org/apps/) app. However, in case of this project the focus is on providing a developer environment, of which the Polkadot Apps is just a part. In our grant application we focus more on providing an end-user solution.
