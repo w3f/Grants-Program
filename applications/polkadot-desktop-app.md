@@ -1,0 +1,133 @@
+# Open Grant Proposal
+
+> This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
+
+* **Project:** Polkadot.{js} Desktop Application
+* **Proposer:** [EthWorks](https://github.com/EthWorks/)
+* **Payment Address:** 37hdwwNqXHMrni1WGHruwWVzUy5kmsEfJs
+
+## Project Description :page_facing_up:
+
+[Polkadot.{js}](https://polkadot.js.org/apps/) web application is now widely used to interact with Polkadot-based networks (Kusama, Alexander etc.). Soon it will also be a go-to app for the Polkadot Mainnet.
+
+There are two problems which we’d like to address with this development effort:
+1. So far, this application is feature-rich, but hard to use, especially for beginners.
+2. The default way of holding the account secrets is browser’s local storage. It’s not a safe way to hold user’s private keys
+
+We’d like to package the app as a desktop application. This implies a change to the way accounts information is stored. Instead of browser’s local storage we’d use the filesystem for that, which is a much safer option.
+To make it easier to use the application, especially for new users, we will work on improving the look and feel and UX experience, starting with the [Accounts](https://polkadot.js.org/apps/#/accounts) section.
+
+Our team worked previously on Polkadot.{js} Browser Extension. We already have a decent understanding of the Polkadot frontends and theirs UX shortcomings.
+
+## Team :busts_in_silhouette:
+
+* **Members:** Krzysztof, Natalia, Bartek, Ivan, optionally other developers at Ethworks
+* **LinkedIn Profiles:** [Krzysztof](https://www.linkedin.com/in/krzysztofjelski/), [Natalia](https://www.linkedin.com/in/nkirejczyk/), [Bartek](https://www.linkedin.com/in/bart%C5%82omiej-rutkowski-958751118/), [Ivan](https://www.linkedin.com/in/ivan-rukhavets-904ba7146/)
+* **Code Repos:** https://github.com/polkadot-js/apps (the repo we want to contribute to)
+* **Website:**	https://ethworks.io
+* **Legal Structure:**<br/>
+    Ethworks sp z o.o.<br/>
+    VAT ID: PL7010771665.<br/>
+    Ignacego Krasickiego 35<br/>
+    02-611 Warsaw, Poland<br/>
+    Office:<br/>
+    Czeczota 29<br/>
+    02-606 Warsaw, Poland
+* **Team's Experience:**
+
+We have been actively involved in the Ethereum ecosystem for many years, many of us even before Ethworks was founded. During this time we had the opportunity to build many widely used tools such as Ethereum.rb (the ethereum library for the Ruby language) or Waffle (a library for writing and testing smart contracts).
+
+For our clients we have developed numerous customer-facing dApps. We not only know how to create robust and reliable software, but also clean, modern and user-friendly UI. Our design team had pleasure to work with such great brands as Ethereum Foundation, Bitcoin or IOTA.
+
+Additionally members of Ethworks are building Universal Login, a tool for storing funds and connecting to Ethereum applications, aiming to simplify on-boarding of new users.
+
+In a previous [grant from W3F](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/polkadot_js_chrome_extension.md), we did an UX-overhaul of Polkadot.{js} extension and extended it with useful features.
+## Development Roadmap :nut_and_bolt:
+
+* **Total Estimated Duration:** 3 months
+* **Full-time equivalent (FTE):** 1.25
+* **Total Costs:** Equivalent of $30000
+
+### Milestone 1
+
+#### Package as Electron App
+
+* **Estimated Duration:** 1 month
+* **FTE:** 1.25
+* **Costs:** Equivalent of $10000
+
+First step will be to convert the [Polkadot.{js} web application](https://polkadot.js.org/apps/) into a desktop application. We’ll use [Electron](https://www.electronjs.org/) for that.
+
+To make the application functional, we need to change the storage of accounts. So, instead of using browser’s local storage, we’ll store the accounts encrypted on the filesystem.
+
+Part of the work will be the setup of CI/CD pipeline, including application signing and preparing packages for multiple platforms.
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | [Polkadot.{js} web application](https://polkadot.js.org/apps/) as an Electron app | Functionality of the current web app delivered as a desktop app |
+| 2. | Redesigned account storage | Feature of using the filesystem to store encrypted accounts |
+| 3. | Continuous Integration environment | Pipeline that build the desktop applications and runs automated tests on it |
+| 4. | Continuous Delivery to automate packaging for Mac, Windows and Linux | Pipeline that creates release packages of the application for 3 operating system) |
+| 5. | Documentation | Updates to the relevant documentation where needed |
+
+### Milestone 2
+
+#### Account management redesign
+
+* **Estimated Duration:** 1 month
+* **FTE:** 1.25
+* **Costs:** Equivalent of $10000
+
+We’d like to improve [Accounts](https://polkadot.js.org/apps/#/accounts), the part of the application new users will mostly interact with. Thus we want to start with a redesign of this section in Milestone 2.
+
+New designs will be more inviting to the users. We'll improve usability of account creation features by redesigning the flows and interactions.
+
+As part of the design we’ll create new visual components (sidebar, buttons, notifications, etc.).
+
+Here's how we envision the Accounts list:
+![Preliminary design - Accounst list](https://i.imgur.com/KhKdMwl.png)
+The following two desings are a result of our re-thinking of the user onboarding process. In this milestone we won't be working on the user onbaording yet. However, we might use parts of the following desings in the account creation modals.
+![Preliminary design - First account creation](https://i.imgur.com/sO51bph.png)
+![Preliminary design - Adding a new account](https://i.imgur.com/C9ys8Pn.png)
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Accounts design | Design of [Accounts](https://polkadot.js.org/apps/#/accounts) application, including sidebar and visual components (in Figma) |
+| 2. | Account list | Implementation of the new accounts list design |
+| 3. | Updated UX flows for Account creation actions | All the following actions/features will be updated in terms of design and usability:<ol><li>Generation of new account</li><li>Generation of account from saved seed</li><li>Importing external account from Parity Signer</li><li>Restoring from JSON backup</li><li>Creation of Multisig account</li> |
+| 4. | Update transfers | Update UX flow for token Transfer + Sign Transaction |
+| 5. | Documentation | Updates to relevant documentation where needed |
+
+
+
+### Milestone 3
+
+#### Update visual style across all applications
+
+* **Estimated Duration:** 1 month
+* **FTE:** 1.25
+* **Costs:** Equivalent of $10000
+
+The goal of this milestone is to provide a consistent look and feel across the whole application. With Milestone 2 finished, only Accounts have the new UI. To give users a feeling of working with one, consistent product, we need to update the visual style for other parts of the application.
+
+To achieve this goal, we'll create a Style Guide, which will include all the widely-used basic components: Buttons, Tables, Modals, Inputs, etc. Then we'll apply those designs to the application.
+
+| Number | Deliverable | Specification |
+| -------| ----------- | ------------- |
+| 1.     | Style Guide | Document containing color palette, typography and all UI components for the application |
+| 2.     | Implement new style | Achieving consistent look and feel across the whole application |
+| 3.     | Documentaion updates | We'll add or update the relevant documentation where needed |
+
+## Additional Information :heavy_plus_sign:
+
+### Work done so far
+* [Preliminary designs](https://www.figma.com/proto/5NAICV06SHNbbIoYhrUS3u/PolkaDot?node-id=763%3A81&viewport=-213%2C-44%2C0.2232329249382019&scaling=min-zoom)
+
+### Have you applied for other grants so far?
+We have successfuly applied for a grant on [Polkadot.{js} Extension](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/polkadot_js_chrome_extension.md). We are now awaiting acceptance of the last milestone of this grant.
+
+Any additional information that you think is relevant to this application that hasn't already been included.
+
+### Similar projects
+
+We're aware of the [SubstrateIDE](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/SubstrateIDE.md) project, which also uses [Electron](https://www.electronjs.org/) to package the [Polkadot.{js}](https://polkadot.js.org/apps/) app. However, in case of this project the focus is on providing a developer environment, of which the Polkadot Apps is just a part. In our grant application we focus more on providing an end-user solution.
