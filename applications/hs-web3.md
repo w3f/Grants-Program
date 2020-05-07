@@ -24,13 +24,13 @@ It's my personal project. It was started as Ethereum client library but recently
 
 * **Total Estimated Duration:** 16 weeks
 * **Full-time equivalent (FTE):** 0.4
-* **Total Costs:** 2.5 BTC 
+* **Total Costs:** 2 BTC
 
 ### Milestone 1
 
 * **Estimated Duration:** 3 weeks 
 * **FTE:** 0.4 
-* **Costs:** 0.5 BTC 
+* **Costs:** 0.4 BTC
 
 
 | Number | Deliverable | Specification | 
@@ -44,7 +44,7 @@ It's my personal project. It was started as Ethereum client library but recently
 
 * **Estimated Duration:** 6 weeks 
 * **FTE:** 0.4 
-* **Costs:** 1 BTC 
+* **Costs:** 0.8 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -57,7 +57,7 @@ It's my personal project. It was started as Ethereum client library but recently
 
 * **Estimated Duration:** 3 weeks 
 * **FTE:** 0.4
-* **Costs:** 0.5 BTC 
+* **Costs:** 0.4 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -71,7 +71,7 @@ It's my personal project. It was started as Ethereum client library but recently
 
 * **Estimated Duration:** 3 weeks 
 * **FTE:** 0.4
-* **Costs:** 0.5 BTC 
+* **Costs:** 0.4 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
