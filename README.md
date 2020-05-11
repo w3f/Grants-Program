@@ -1,4 +1,4 @@
-# Web3 Foundation Open Grants Program
+# Open Grants Program
 
 <p align="center">
   <img src="./src/Open_Grants_Program.png" style="width:1300px";>
