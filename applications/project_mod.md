@@ -11,7 +11,7 @@ CLI Tools: create-extrinsic(.js), sign-transaction-extrinsic(.js), mod
 
 Mod is a tool for developing applications that utilize substrate. Existing tools target browser and RPC environments whereas Mod is to accompany the development of native user-facing applications. Mod includes a command-line interface, documentation and an example application. The example application is a substrate module that enable software communities to suggest and vote for software features to be included in any project.
 
-Whereas we feel that the Feedback module and CLI tool provided by this project will be very useful, the principle objective of this project is educational. By supplying code in both JS and Rust, as well as JS with rust bindings, developers exploring the code and tutorial will have ample examples for developing their own tools.
+Whereas we feel that the Feedback module and CLI tool provided by this project will be very useful, the principle objective of this project is educational. By supplying code in both JS and Rust, as well as JS with rust bindings, developers exploring the code and tutorial will have many examples for developing their own tools.
 
 At the conclusion of this project a developer will be able to compile and use the mod CLI, build their own feedback node, and use the CLI to create, sign and submit transactions.
 
@@ -43,13 +43,14 @@ Note: Previous code can be found [here] and [here].
 | 0. | feedback module | tutorial: how to interact with node via CLI |
 | 0. | feedback module | tutorial: how to interact with node via polkadot.js |
 | 0. | feedback module | pallet creation and rustdocs |
-| 0. | create-extrinsic.js | update to use Rust bindings |
 | 0. | create-signed-transaction.js | update to use Rust bindings |
 | 0. | create-qr.js | generate QR code and hex from CLI for extrinsic |
 | 0. | JS CLI tool | update docs for CLI tool |
 | 0. | docker | Docker image |
 
-In this milestone we will update JS CLI tools to use native rust code via bindings while continuing to use polkadot.js for RPC. The tool can be used for generating and signing extrinsics and submitting transactions. We also provide a tutorial that covers interacting with the Feedback substrate module via the CLI tools, or, polkadot.js. A new CLI tool is introduced which generates a QR code and hex for the extrinsic.
+The CLI tools can be used for generating and signing extrinsics and submitting transactions. In this milestone we will update create-signed-transaction.js tool to use native rust code via bindings; this begins the transition of the tools to rust. A new CLI tool is introduced which generates a QR code and hex for the extrinsic.
+
+We also provide a tutorial that covers interacting with the Feedback substrate module via the CLI tools and via polkadot.js.
 
 ### Milestone 2
 
@@ -66,9 +67,7 @@ In this milestone we will update JS CLI tools to use native rust code via bindin
 | 0. | feedback module | update tutorial and docs |
 | 0. | docker | Docker image |
 
-In this milestone we will transition the CLI tools to be based on rust (no JS). The mod tool will be created with the functionality of the other two tools.
-
-Additionally, the mod tool will allow developers to download or read module metadata.
+In this milestone we will transition the CLI tools to be based on rust (no JS). The mod tool will be created with the functionality of the other two tools. Additionally, the mod tool will allow developers to download or read module metadata.
 
 
 ```
