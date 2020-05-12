@@ -50,9 +50,9 @@ Note: Previous code can be found [here] and [here].
 | 8. | docs | update documentation |
 | 9. | docker | Docker image |
 
-The CLI tools can be used for generating and signing extrinsics and submitting transactions. In this milestone we update sign-transaction-extrinsic.js tool to use native rust code via bindings, implement the create-extrinsic tool in rust, and introduce a new CLI tool which generates a QR code and hex for the extrinsic.
+The CLI tools can be used for generating and signing extrinsics and submitting transactions – this is done by reading extrinsic data from a json file. In this milestone we update sign-transaction-extrinsic.js tool to use native rust code via bindings, implement the create-extrinsic tool in rust, and introduce a new CLI tool which generates a QR code and hex for the extrinsic.
 
-Note: The rust native bindings in this milestone are important because projects may have prior code in javascript. Such projets will be able to keep using their javascript code, while making use of rust for operations like signing, or perhaps later, direct execution of their runtime.
+The rust native bindings in this milestone are intended for projects that have prior code in javascript. Such projets will be able to keep using their javascript code, while making use of rust for operations like signing, or perhaps later, direct execution of a runtime.
 
 A tutorial is provided that covers interacting with the Feedback substrate module via the CLI tools and via polkadot.js.
 
@@ -73,7 +73,9 @@ The developer will be able create/sign/submit a transaction from command line, w
 | 5. | feedback module | update tutorial and docs |
 | 6. | docker | Docker image |
 
-In this milestone we will transition the CLI tools to be based on rust (no JS). The mod tool will be created with the functionality of the other two tools. However, instead of reading extrinsic extras from an input file, the mod tool will connect to the node to check the call against the latest node metadata. The tool will also be able to fetch or load metadata and list details about modules and methods.
+The mod tool will be implemented, in rust, with the functionality of the other two tools. However, rather than reading extrinsic data from a file,  the mod tool will allow developers to connect to the node to check the call against the latest node metadata. The tool will also be able to fetch (rpc) or load (file) metadata and list details of modules and methods.
+
+In this milestone we will transition the CLI tools to be based on rust.
 
 ```
 # draft; command line examples
