@@ -73,15 +73,16 @@ The developer will be able create/sign/submit a transaction from command line, w
 | 5. | feedback module | update tutorial and docs |
 | 6. | docker | Docker image |
 
-In this milestone we will transition the CLI tools to be based on rust (no JS). The mod tool will be created with the functionality of the other two tools. However, instead of read extrinsic extras from an input file, the mod tool will connect to the node to check the module and method against the latest node metadata.
+In this milestone we will transition the CLI tools to be based on rust (no JS). The mod tool will be created with the functionality of the other two tools. However, instead of reading extrinsic extras from an input file, the mod tool will connect to the node to check the call against the latest node metadata. The tool will also be able to fetch or load metadata and list details about modules and methods.
 
 ```
 # draft; command line examples
 mod extrinsic create poll ... > ./extrinsic
 mod extrinsic sign ./key ./extrinsic
 mod extrinsic create poll ... | mod extrinsic sign ./key
+mod metadata list ./metadata
 ```
  
 ## Additional Information :heavy_plus_sign: 
 
-The initial version of this project is a substrate module and CLI tool. The CLI tool is JS-based and used for creating and signing extrinsics.
+The initial version of this project is a substrate module and CLI tool.
