@@ -47,7 +47,8 @@ Please provide the following:
 
 ### Milestone 1
 
-Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software. 
+## Research and content creation
+
 * **Estimated Duration:** 1 week 
 * **FTE:**  1.25
 * **Costs:** $3,250
@@ -58,7 +59,8 @@ Please add additional milestones in the same way. If possible, include a tutoria
 
 ### Milestone 2
 
-Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software. 
+## Design and user testing
+
 * **Estimated Duration:** 2 weeks
 * **FTE:**  2
 * **Costs:** $10,400
@@ -69,11 +71,12 @@ Please add additional milestones in the same way. If possible, include a tutoria
 
 ### Milestone 3
 
+## Development and implementation
+
 Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software. 
 * **Estimated Duration:** 3 weeks
 * **FTE:**  2.25
 * **Costs:** $15,600
-
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
