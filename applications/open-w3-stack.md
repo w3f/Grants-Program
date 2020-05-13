@@ -15,7 +15,7 @@ When we are building [Laminar](https://github.com/laminar-protocol) - synthetic 
 - compatible and reusable multi-currency support
 - oracle infrastructure to provide quality of service e.g. prioritized transaction process and favorable transaction costs, and generic interface for data collection and aggregation
 - generic and extensible auction module
-- more sophisticated on-chain proposal/motion execution strategies of scheduled update and gradual adjust numeric values e.g. instead of change interest rate from 20% to 5% instantly, do it gradually over a period of time
+- more sophisticated on-chain proposal/motion execution strategies - scheduled update and gradual adjust numeric values e.g. instead of change interest rate from 20% to 5% instantly, do it gradually over a period of time
 - misc utilities like FixedU128 and linked item
 - a generic monitoring framework for alerts, bots, automations for any Substrate chains
   - network operators can use it to monitor tps, volume, ensure data consistency
@@ -30,6 +30,8 @@ So we did the work to abstract and generalize all these common goodies, and we'v
 - **Open Runtime Module Library (ORML)**
 - **Guardian** generic monitoring framework
 - **Indexer** javascript library
+
+We really hope to make it an open application stack that would accelerate the development and growth of the Substrate and Polkadot community. 
 
 ## Team :busts_in_silhouette:
 
@@ -149,5 +151,5 @@ Possible additional information to include:
 * Currently it's all coming out of Laminar's own development cost
 * Laminar has received a grant for its synthetic asset and margin trading chain
 * Not that we know of at this level of development and abstraction for general purposes
-* This project was born out of genuine needs from developing sophisticated specialist Substrate chains like Acala and Laminar. Our intention is to keep this as generic as possible, and make it an open application suite that accelerates the growth of Substrate and Polkadot community. 
+* This project was born out of genuine needs from developing sophisticated specialist Substrate chains like Acala and Laminar. Our intention is to keep this as generic as possible, and make it an open application stack that accelerates the growth of Substrate and Polkadot community. 
  
