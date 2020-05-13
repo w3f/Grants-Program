@@ -147,7 +147,7 @@ See the intended outcome of Guardian [here](https://github.com/open-web3-stack/g
 Any additional information that you think is relevant to this application that hasn't already been included.
 
 Possible additional information to include:
-* We have implemented most features in ORML, currently 37 stars, 12 forks, one team we know of using it is DataHigher
+* We have implemented most features in ORML, currently 37 stars, 12 forks, one team we know of using it is DataHighway
 * Currently it's all coming out of Laminar's own development cost
 * Laminar has received a grant for its synthetic asset and margin trading chain
 * Not that we know of at this level of development and abstraction for general purposes
