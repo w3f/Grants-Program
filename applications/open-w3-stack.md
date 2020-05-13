@@ -4,19 +4,12 @@
 
 * **Project:** Open Web3 Stack
 * **Proposer:** bette7
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
+* **Payment Address:** 18DTku3jdkBECh7BJixmX7K7REbiU4Xq8c 
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Description :page_facing_up: 
-
-Please provide the following:
-  * A brief description of the project.
-  * An indication of why this project is good for the ecosystem.
-  * An indication of how you will integrate this project into Substrate / Polkadot.
-  * An indication of why your team is interested in creating this project.
-
-Open Web3 Stack is a common-good library to accelerate application development on Substrate. While Substrate provides customizable technical infrastructure for building a blockchain, Open Web3 Stack aims to provide application building blocks that are common for specialist chains. 
+Open Web3 Stack is a common-good library to accelerate application development on Substrate. Open Web3 Stack aims to provide application building blocks that are common for specialist chains. 
 
 When we are building [Laminar](https://github.com/laminar-protocol) - synthetic asset & margin trading chain, and [Acala](https://github.com/AcalaNetwork) - stablecoin & staking derivative chain, we realized they share some common requirements
 - compatible and reusable multi-currency support
@@ -45,6 +38,7 @@ So we did the work to abstract and generalize all these common goodies, and we'v
   *  Jingbo Zhang (Dev)
   *  Ermal Kaleci (Dev)
   *  Tian Nan (Dev)
+  *  Jianjiang Wang (Dev)
   *  Bryan Chen (Architect)
   *  Bette Chen (Product Manager)
 * **LinkedIn Profiles:** 
@@ -57,6 +51,7 @@ So we did the work to abstract and generalize all these common goodies, and we'v
   * https://github.com/orgs/laminar-protocol/people/zjb0807
   * https://github.com/orgs/laminar-protocol/people/ermalkaleci
   * https://github.com/orgs/laminar-protocol/people/aniiantt
+  * https://github.com/orgs/AcalaNetwork/people/wangjj9219
   * https://github.com/orgs/laminar-protocol/people/xlc
   * https://github.com/orgs/laminar-protocol/people/bette7
 * **Code Repos:** 
@@ -75,7 +70,6 @@ So we did the work to abstract and generalize all these common goodies, and we'v
 
 ### Milestone 1
 
-Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software. 
 * **Estimated Duration:** 5 weeks 
 * **FTE:**  2
 * **Costs:** 1.11
