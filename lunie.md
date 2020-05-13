@@ -37,7 +37,7 @@ Please provide the following:
 * **Code Repos:** https://github.com/luniehq
 * **Website:**	https://lunie.io
 * **Legal Structure:** Lunie International Software Systems Inc., 60 Atlantic Avenue, Suite 200, Toronto, Ontario, Canada M6K 1X9
-* **Team's Experience:** Jordan and Fabian helped launch the Cosmos Network as employees of Tendermint Inc. They have spent the last two and a half years building, researching, and designing proof of stake experiences together.
+* **Team's Experience:** Jordan and Fabian helped launch the Cosmos Network as employees of Tendermint Inc. They have spent the last two and a half years building, researching, and designing proof of stake experiences together. The Lunie team has also recently completed staking integrations for Kusama.
 
 ## Development Roadmap :nut_and_bolt: 
 
@@ -52,12 +52,20 @@ Please add additional milestones in the same way. If possible, include a tutoria
 * **FTE:**  1.25
 * **Costs:** $3,250
 
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1. | 2 guides | * in depth research of governance system * explore existing UIs, write and edit our guides for Kusama and Polkadot * prepare design specifications for designer * establish technical plan based on existing API endpoints and data availability. 
+
 ### Milestone 2
 
 Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software. 
 * **Estimated Duration:** 2 weeks
 * **FTE:**  2
 * **Costs:** $10,400
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 2. | Public UX, UI artifacts |  * design iterations (specifications, UX, UI) * user testing and feedback to iterate through our initial designs.
 
 ### Milestone 3
 
@@ -69,8 +77,6 @@ Please add additional milestones in the same way. If possible, include a tutoria
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | 2 guides | * in depth research of governance system * explore existing UIs, write and edit our guides for Kusama and Polkadot * prepare design specifications for designer * establish technical plan based on existing API endpoints and data availability. 
-| 2. | Public UX, UI artifacts |  * design iterations (specifications, UX, UI) * user testing and feedback to iterate through our initial designs.
 | 3. | Working governance system in Lunie (web, iOS, Android, extension) |  * ability to recieve notifications for many on-chain governance topics * see list of active proposals * see when proposals are active and for how long * see how the proposals are performing in terms of votes * see potential proposals (in the queue) * provide ability to vote on those proposals to increase their weight and how close they are to being tabled * vote “yes” or “no” on given proposals * select how many DOTs a user wants to vote with * provide ability to time-lock your DOTs to increase the weight of your vote * vote for Council members * see active council members
 
 
