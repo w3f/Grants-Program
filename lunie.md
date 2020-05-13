@@ -32,7 +32,7 @@ Please provide the following:
 
 ## Team :busts_in_silhouette:
 
-* **Members:** Jordan Bibla, Fabian Weber
+* **Members:** Jordan Bibla, Fabian Weber, + 3 engineers, 1 ecosystem developer, 1 designer
 * **LinkedIn Profiles:** https://www.linkedin.com/in/jbibla, https://www.linkedin.com/in/fabian-weber-04100a37
 * **Code Repos:** https://github.com/luniehq
 * **Website:**	https://lunie.io
