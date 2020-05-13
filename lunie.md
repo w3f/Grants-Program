@@ -33,7 +33,7 @@ Please provide the following:
 ## Team :busts_in_silhouette:
 
 * **Members:** Jordan Bibla, Fabian Weber
-* **LinkedIn Profiles:** * https://www.linkedin.com/in/jbibla, https://www.linkedin.com/in/fabian-weber-04100a37
+* **LinkedIn Profiles:** https://www.linkedin.com/in/jbibla, https://www.linkedin.com/in/fabian-weber-04100a37
 * **Code Repos:** https://github.com/luniehq
 * **Website:**	https://lunie.io
 * **Legal Structure:** Lunie International Software Systems Inc., 60 Atlantic Avenue, Suite 200, Toronto, Ontario, Canada M6K 1X9
