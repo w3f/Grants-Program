@@ -1,22 +1,25 @@
 # Open Grant Proposal
 
-* **Project:** Example Project
-* **Proposer:** [Grant-Tester](https://github.com/Grant-Tester)
-* **Payment Address:** 3Q5qD4JDJEHjVT74PLWsASxhba9xwjgX9d 
+* **Project:** Media Box
+* **Proposer:** [cat4fire](https://github.com/cat4fire)
+* **Payment Address:** 17PDx56MLASnEAVbHoQDsS5x3ysG5Mc1fX 
 
 ## Project Description :page_facing_up: 
 
-We are building a Substrate RPC client in the programming language XYZ. The client will be modeled after polkadot-js/api. We want to lower the friction of using XYZ with Substrate and believe this will benefit the whole ecosystem. An XYZ client will help us with our own parachain project. 
+Media Box is a marketplace and music player on your mobile phone. It protects the right of the music to be avoid downloading and sharing for free. 
+In Media Box, every music is copyright protected by UDAP’s Proxy Re-Encryption(PRE) modules. PRE schemes are cryptosystems which allow third parties to alter a cipher content which has been encrypted for one party, so that it may be decrypted by another. PRE ensures that nobody can download a music for free, and the shared music can’t be shared to any other parties. You can also share the bought music to your friend but you can’t listen the music during that time.
+Media Box allows musicians sell their own limited-edition music in the marketplace, users can buy and resell the music to other users too, allows the music to be priced right with the marketed value. Musician can enjoy the 20% of the resell price automatically. 
+Media Box starts from music first, and it can spread to other media types, like pictures, movies, and online novels, etc.
 
 ## Team :busts_in_silhouette:
 
-* **Members:** Jane Doe, Joe Bloggs
-* **LinkedIn Profiles:** https://www.linkedin.com/Jane, https://www.linkedin.com/Joe
-* **Code Repos:** https://github.com/_jane, https://github.com/_joe
-* **Website:**	http://example.com/
-* **Legal Structure:** Example GmbH
+* **Members:** Frank Ying, Bing Ran, Li Zhang, Murry Diao, Lycrus Tang, Lu Chen
+* **LinkedIn Profiles:** https://www.linkedin.com/in/frank-ying-431a8/, https://www.linkedin.com/in/bing-ran-%E5%86%89%E5%85%B5-6651001/, https://www.linkedin.com/in/li-zhangc, https://www.linkedin.com/in/lu-chen-616750166
+* **Code Repos:** https://github.com/cat4fire, https://github.com/udap
+* **Website:**	http://udap.io
+* **Legal Structure:** Shanghai Qianman Tech Co., Ltd.
 * **Team's Experience:** 
-
+Our team founders 
 The example team has 15 years of experience building applications in XYZ. We also already finished all the https://substrate.dev/ tutorials. 
 
 ## Development Roadmap :nut_and_bolt: 
