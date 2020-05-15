@@ -6,16 +6,9 @@
 
 ## Project Description :page_facing_up: 
 
-Substrate Module: Feedback  
-Rust and JS CLI Tools: create-extrinsic(.js), sign-transaction-extrinsic(.js), mod
+Mod is a command line interface (CLI) tool that can be used for creating and signing extrinsics. CLI tools are useful for non-graphical use-cases such as network operations, continuous integration and automation. Mod is implemented in the Rust programming language.
 
-Mod is a rust tool for developing applications that utilize substrate. Existing tools target browser and RPC environments whereas Mod is to accompany the development of native applications and automation. Mod includes a command-line interface, documentation and an example application. The example application is a substrate module for software communities to suggest and vote for software features to be included in any project.
-
-The Feedback module and CLI tool provided by this project will be useful for developers and network operators. At the conclusion of this project a developer will be able to compile and use the mod CLI, build their own feedback node, and use the CLI to create, sign and submit transactions.
-
- By supplying code in both JS and Rust, as well as JS with rust bindings, developers exploring the code and tutorial will have many examples for developing their own tools.
-
-Note: Previous code https://github.com/entropycode/w3f-m1-cli, https://github.com/entropycode/w3f-m1-runtime.
+Note: This project begins with an extrinsic creation and a signing tool that is already implemented in JavaScript.
 
 ## Team :busts_in_silhouette:
 
@@ -24,7 +17,7 @@ Note: Previous code https://github.com/entropycode/w3f-m1-cli, https://github.co
 * **Code Repos:** https://github.com/entropycode
 * **Website:**	https://entropylabs.com.hk
 * **Legal Structure:** Entropy Labs Limited (HK)
-* **Team's Experience:** Team has previously developed software and tools for Substrate and Ethereum.
+* **Team's Experience:** Team has previously developed applications and tools for Substrate and Ethereum.
 
 ## Development Roadmap :nut_and_bolt: 
 
@@ -34,56 +27,50 @@ Note: Previous code https://github.com/entropycode/w3f-m1-cli, https://github.co
 
 ### Milestone 1
 
-* **Estimated Duration:** 3 weeks
+* **Estimated Duration:** 3-6 weeks
 * **FTE:**  2
 * **Costs:** 1.75 BTC (15000 US)
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | sign-transaction-extrinsic.js | update to use Rust bindings |
-| 2. | create-extrinsic.js | bug fixes and updates |
-| 3. | create-extrinsic | Rust version of create-extrinsic.js |
-| 4. | create-qr.js | generate QR code and hex from CLI for extrinsic |
-| 5. | feedback module | rustdocs, make available as pallet |
-| 6. | feedback module | brief tutorial: how to interact with node via CLI |
-| 7. | feedback module | brief tutorial: how to interact with node via polkadot.js |
-| 8. | docker | Docker image |
+| 1. | create-extrinsic | rust implementation of create-extrinsic.js |
+| 2. | mod | list: output list of modules/methods |
+| 3. | tutorial | interacting with substrate |
+| 4. | docker | Docker image |
 
-The CLI tools can be used for generating and signing extrinsics and submitting transactions – this is done by reading extrinsic data from a json file.
+In this milestone we implement the create-extrinsic tool in rust. The create-extrinsic tool can be used together with a compatible signing tool in order to create a signed transaction extrinsic. The mod CLI is initially implemented to be able to connect to a node and list its modules and methods. A tutorial is provided that covers interacting with an example substrate module via the CLI tools.
 
-In this milestone we update sign-transaction-extrinsic.js tool to use native rust code via bindings, implement the create-extrinsic tool in rust, and introduce a new CLI tool which generates a QR code and hex for the extrinsic.
-
-The rust native bindings in this milestone are intended for projects that have prior code in javascript. Such projets will be able to keep using their javascript code, while making use of rust for operations like signing, or perhaps later, direct execution of a runtime.
-
-The developer will be able create/sign/submit a transaction from command line, while watching the status of the chain from polkadot.js. A tutorial is provided that covers interacting with the Feedback substrate module via the CLI tools and via polkadot.js.
+```
+# example commands
+mod list # Connect to node via RPC and list supported modules/methods
+create-extrinsic ./ext.json | ./some-signing-tool 0x...
+```
 
 ### Milestone 2
 
-* **Estimated Duration:** 3 weeks
+* **Estimated Duration:** 3-6 weeks
 * **FTE:**  2
 * **Costs:** 1.75 BTC (15000 US)
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | sign-transaction-extrinsic | Rust version of create-signed-transaction.js |
-| 2. | mod | combined functionality of other tools |
-| 3. | mod | metadata functionality |
-| 4. | mod | crate and rustdocs |
-| 5. | feedback module | update tutorial and docs |
-| 6. | docker | Docker image |
+| 1. | sign-transaction-extrinsic | rust impl of create-signed-transaction.js |
+| 2. | mod | extrinsic create |
+| 3. | mod | extrinsic sign |
+| 4. | mod | update rustdocs, create and tutorial |
+| 5. | docker | Docker image |
 
-The mod tool will be implemented, in rust, with the functionality of the other two tools. However, rather than reading extrinsic data from a file, the mod tool will allow developers to connect to the node to check the call against the latest node metadata. The tool will also be able to fetch (rpc) or load (file) metadata and list details of modules and methods.
+In this milestone the create-signed-transaction.js tool will be implemented in rust. Following this, the mod tool will be updated to include the functionality of the other two tools.
 
-In this milestone we will transition the CLI tools to be based on rust.
+Notably, create-extrinsic and create-signed are implemented separately, as we presume that not all extrinsics require a signature. If appropriate, the functionality of these two tools can therefore be implemented in their own crates. This way the mod tool can then implemented with the two crates as a base.
 
 ```
 # draft; example command line interface
 mod extrinsic create poll ... > ./extrinsic
 mod extrinsic sign ./key ./extrinsic
-mod extrinsic create poll ... | mod extrinsic sign ./key
-mod metadata list ./metadata
+mod list
 ```
  
 ## Additional Information :heavy_plus_sign: 
 
-The initial version of this project is a substrate module and CLI tool.
+Previous code https://github.com/entropycode/w3f-m1-cli, https://github.com/entropycode/w3f-m1-runtime.
