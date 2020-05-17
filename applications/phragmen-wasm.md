@@ -37,12 +37,12 @@ Team ColmenaLabs has a vast expertise in blockchain technologies, conducting Eth
 ## Development Roadmap :nut_and_bolt:
 
 - **Total Estimated Duration:** 12 weeks
-- **Total Costs:** 3.2 BTC
+- **Total Costs:** 3.15 BTC
 
 ### Milestone 1
 
 - **Estimated Duration:** 4 weeks
-- **Costs:** 1.28 BTC
+- **Costs:** 1.25 BTC
 
 | Number | Deliverable | Specification                                             |
 | ------ | ----------- | --------------------------------------------------------- |
@@ -73,7 +73,7 @@ Team ColmenaLabs has a vast expertise in blockchain technologies, conducting Eth
 ### Milestone 4
 
 - **Estimated Duration:** 2 weeks
-- **Costs:** 0.64 BTC
+- **Costs:** 0.62 BTC
 
 | Number | Deliverable | Specification                                                                                       |
 | ------ | ----------- | --------------------------------------------------------------------------------------------------- |
