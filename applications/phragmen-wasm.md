@@ -22,11 +22,10 @@ data.
 
 ## Team :busts_in_silhouette:
 
-- **Members:** Mario, Fredy, Javi, Diego
+- **Members:** Mario, Fredy, Diego
 - **LinkedIn Profiles:**
   - [Mario](https://www.linkedin.com/in/mariopinouceda/)
   - [Fredy](https://www.linkedin.com/in/alfredoluque/)
-  - [Javi](https://www.linkedin.com/in/javihg)
   - [Diego](https://www.linkedin.com/in/dieferbar)
 - **Code Repos:** TBD
 - **Website:** https://colmenalabs.org
@@ -37,13 +36,13 @@ Team ColmenaLabs has a vast expertise in blockchain technologies, conducting Eth
 
 ## Development Roadmap :nut_and_bolt:
 
-- **Total Estimated Duration:** 8 weeks
-- **Total Costs:** ? BTC
+- **Total Estimated Duration:** 12 weeks
+- **Total Costs:** 3.2 BTC
 
 ### Milestone 1
 
 - **Estimated Duration:** 4 weeks
-- **Costs:** ? BTC
+- **Costs:** 0.8 BTC
 
 | Number | Deliverable | Specification                                             |
 | ------ | ----------- | --------------------------------------------------------- |
@@ -52,8 +51,8 @@ Team ColmenaLabs has a vast expertise in blockchain technologies, conducting Eth
 
 ### Milestone 2
 
-- **Estimated Duration:** 2 weeks
-- **Costs:** ? BTC
+- **Estimated Duration:** 3 weeks
+- **Costs:** 0.8 BTC
 
 | Number | Deliverable | Specification                                                                                       |
 | ------ | ----------- | --------------------------------------------------------------------------------------------------- |
@@ -63,13 +62,22 @@ Team ColmenaLabs has a vast expertise in blockchain technologies, conducting Eth
 
 ### Milestone 3
 
-- **Estimated Duration:** 2 weeks
-- **Costs:** ? BTC
+- **Estimated Duration:** 3 weeks
+- **Costs:** 0.8 BTC
 
 | Number | Deliverable   | Specification                                                                                 |
 | ------ | ------------- | --------------------------------------------------------------------------------------------- |
 | 1.     | PoC library   | TypeScript wrapper library around the WASM library intended to run in the browser and Node.js |
 | 2.     | Documentation | Library API documentation                                                                     |
+
+### Milestone 4
+
+- **Estimated Duration:** 2 weeks
+- **Costs:** 0.8 BTC
+
+| Number | Deliverable | Specification                                                                                       |
+| ------ | ----------- | --------------------------------------------------------------------------------------------------- |
+| 1.     | Polkastats implementation | Release backend version able to leaverage phragmen-wasm output                        |
 
 ## Additional Information :heavy_plus_sign:
 
