@@ -27,7 +27,7 @@ data.
   - [Mario](https://www.linkedin.com/in/mariopinouceda/)
   - [Fredy](https://www.linkedin.com/in/alfredoluque/)
   - [Diego](https://www.linkedin.com/in/dieferbar)
-- **Code Repos:** [phragme-wasm](https://github.com/orgs/Colm3na/teams/phragmen/repositories)
+- **Code Repos:** [phragmen-wasm](https://github.com/orgs/Colm3na/teams/phragmen/repositories)
 - **Website:** https://colmenalabs.org
 - **Legal Structure:** Colmena Labs, Calle el Aceitunillo, 9, Local, 6B, 41930 Bormujos, Sevilla.
 - **Team's Experience:**
