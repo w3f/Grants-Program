@@ -42,7 +42,7 @@ Team ColmenaLabs has a vast expertise in blockchain technologies, conducting Eth
 ### Milestone 1
 
 - **Estimated Duration:** 4 weeks
-- **Costs:** 0.8 BTC
+- **Costs:** 1.28 BTC
 
 | Number | Deliverable | Specification                                             |
 | ------ | ----------- | --------------------------------------------------------- |
@@ -52,7 +52,7 @@ Team ColmenaLabs has a vast expertise in blockchain technologies, conducting Eth
 ### Milestone 2
 
 - **Estimated Duration:** 3 weeks
-- **Costs:** 0.8 BTC
+- **Costs:** 0.64 BTC
 
 | Number | Deliverable | Specification                                                                                       |
 | ------ | ----------- | --------------------------------------------------------------------------------------------------- |
@@ -63,7 +63,7 @@ Team ColmenaLabs has a vast expertise in blockchain technologies, conducting Eth
 ### Milestone 3
 
 - **Estimated Duration:** 3 weeks
-- **Costs:** 0.8 BTC
+- **Costs:** 0.64 BTC
 
 | Number | Deliverable   | Specification                                                                                 |
 | ------ | ------------- | --------------------------------------------------------------------------------------------- |
@@ -73,7 +73,7 @@ Team ColmenaLabs has a vast expertise in blockchain technologies, conducting Eth
 ### Milestone 4
 
 - **Estimated Duration:** 2 weeks
-- **Costs:** 0.8 BTC
+- **Costs:** 0.64 BTC
 
 | Number | Deliverable | Specification                                                                                       |
 | ------ | ----------- | --------------------------------------------------------------------------------------------------- |
