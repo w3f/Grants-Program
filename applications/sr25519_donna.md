@@ -30,13 +30,13 @@ Please provide the following:
 
 ## Development Roadmap :nut_and_bolt:
 
-* **Total Estimated Duration:** 5 weeks
-* **Total Costs:** 1.2 BTC
+* **Total Estimated Duration:** 4 weeks
+* **Total Costs:** 0.6 BTC
 
 ### Milestone 1
 
 * **Estimated Duration:** 2 weeks
-* **Costs:** 0.4 BTC
+* **Costs:** 0.3 BTC
 
 
 | Number | Deliverable | Specification |
@@ -50,7 +50,7 @@ Please provide the following:
 ### Milestone 2
 
 * **Estimated Duration:** 2 weeks
-* **Costs:** 0.4 BTC
+* **Costs:** 0.3 BTC
 
 
 | Number | Deliverable | Specification |
@@ -58,17 +58,6 @@ Please provide the following:
 | 1. | vrf sign if less | support verifiable random function signing operation |
 | 2. | vrf verify | support verifiable random function verifing operation |
 | 3. | unit test | provide unit test for vrf siging and verifing |
-
-### Milestone 2
-
-* **Estimated Duration:** 1 weeks
-* **Costs:** 0.4 BTC
-
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | multi-signature | support the three-round MuSig for Schnorr multi-signatures |
-| 3. | unit test | provide unit test for multi-signature |
 
 ## Additional Information :heavy_plus_sign:
 Any additional information that you think is relevant to this application that hasn't already been included.
