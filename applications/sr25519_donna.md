@@ -46,6 +46,7 @@ Please provide the following:
 | 3. | sign/verify message | support signing/verifing messages |
 | 4. | random number generator | provide default random number generator and allow users to use their custom version |
 | 5. | curve operation | take advantage of ed25519-donna's curve operations, support both 32bit and 64bit operations |
+| 6. | add documentation | add documentation of installing or integrating these features |
 
 ### Milestone 2
 
@@ -58,6 +59,7 @@ Please provide the following:
 | 1. | vrf sign if less | support verifiable random function signing operation |
 | 2. | vrf verify | support verifiable random function verifing operation |
 | 3. | unit test | provide unit test for vrf siging and verifing |
+| 4. | add documentation | add documentation of installing or integrating vrf features |
 
 ## Additional Information :heavy_plus_sign:
 Any additional information that you think is relevant to this application that hasn't already been included.
