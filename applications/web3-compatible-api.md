@@ -29,7 +29,7 @@ Derek co-founded Fuze in 2006 and as CTO was responsible for engineering, techni
 
 * **Total Estimated Duration:** 6 weeks
 * **Full-time equivalent (FTE):**  2 FTE 
-* **Total Costs:** 3 BTC
+* **Total Costs:** 2.5 BTC
 
 
 | Number | Deliverable | Specification | 
