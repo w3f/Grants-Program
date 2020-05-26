@@ -43,44 +43,43 @@ Please provide the following:
 
 * **Total Estimated Duration:** 5 weeks
 * **Full-time equivalent (FTE):**  5.5
-* **Total Costs:** $29,250
+* **Total Costs:** 3.3 BTC
 
 ### Milestone 1
 
-## Research and content creation
+## Proposals in Lunie
 
 * **Estimated Duration:** 1 week 
 * **FTE:**  1.25
-* **Costs:** $3,250
+* **Costs:** 0.37 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | 2 guides | * in depth research of governance system * explore existing UIs, write and edit our guides for Kusama and Polkadot * prepare design specifications for designer * establish technical plan based on existing API endpoints and data availability. 
+| 1. | Proposals are readable in Lunie | * see list of active proposals * see when proposals are active and for how long * see how the proposals are performing in terms of votes * see potential proposals (in the queue
 
 ### Milestone 2
 
-## Design and user testing
+## Governance Transactions
 
 * **Estimated Duration:** 2 weeks
 * **FTE:**  2
-* **Costs:** $10,400
+* **Costs:** 1.17 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 2. | Public UX, UI artifacts |  * design iterations (specifications, UX, UI) * user testing and feedback to iterate through our initial designs.
+| 2. | Voting, Deposits, Time Locking |  * provide ability to vote and deposit on proposals * vote “yes” or “no” on given proposals * select how many DOTs a user wants to vote with * provide ability to time-lock DOTs to increase the weight of the vote *
 
 ### Milestone 3
 
-## Development and implementation
+## Notifications, Council, Treasury
 
-Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software. 
 * **Estimated Duration:** 3 weeks
 * **FTE:**  2.25
-* **Costs:** $15,600
+* **Costs:** 1.76 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 3. | Working governance system in Lunie (web, iOS, Android, extension) |  * ability to recieve notifications for many on-chain governance topics * see list of active proposals * see when proposals are active and for how long * see how the proposals are performing in terms of votes * see potential proposals (in the queue) * provide ability to vote on those proposals to increase their weight and how close they are to being tabled * vote “yes” or “no” on given proposals * select how many DOTs a user wants to vote with * provide ability to time-lock your DOTs to increase the weight of your vote * vote for Council members * see active council members
+| 3. | Notifications, Council, Treasury |  * ability to recieve notifications for on-chain governance topics * see active council members * see treasury proposals * 
 
 
 ## Additional Information :heavy_plus_sign: 
