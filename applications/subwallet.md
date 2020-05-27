@@ -25,12 +25,12 @@ Faber is a backend developer with 10+ years of strong experience. Learned and re
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 8 weeks
-* **Total Costs:** 1.2 BTC
+* **Total Costs:** 0.8 BTC
 
 ### Milestone 1
 
 * **Estimated Duration:** 4 weeks 
-* **Costs:** 0.5 BTC
+* **Costs:** 0.3 BTC
 
 
 | Number | Deliverable | Specification | 
@@ -44,7 +44,7 @@ Faber is a backend developer with 10+ years of strong experience. Learned and re
 ### Milestone 2
 
 * **Estimated Duration:** 4 weeks 
-* **Costs:** 0.7 BTC
+* **Costs:** 0.5 BTC
 
 
 | Number | Deliverable | Specification | 
