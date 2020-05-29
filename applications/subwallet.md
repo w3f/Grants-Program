@@ -38,10 +38,10 @@ Faber is a backend developer with 10+ years of strong experience. Learned and re
 | 1. | Command help | `subwallet --help` prints help information |
 | 2. | Address generation | `subwallet getnewaddress [label]` will generate a random address and save to local file. |  
 | 3. | Address list | `subwallet listaddresses` will list all generated addresses | 
-| 4. | Backup | `subwallet backup [address|label]` will backup address as json that compatible with `https://polkadot.js.org/apps`| 
+| 4. | Backup | `subwallet backup [address_or_label]` will backup address as json that compatible with `https://polkadot.js.org/apps`| 
 | 5. | Restore | `subwallet restore [file]` will restore address from the file that compatible with `https://polkadot.js.org/apps` |
 | 6. | Unit Tests | Write unit tests for commands: `getnewaddress`, `listaddresses`, `backup` and `restore`. |
-| 7. | Documentation | Usages and demos of every command |
+| 7. | Documentation | Usages and demos of every command. |
 
 ### Milestone 2
 
