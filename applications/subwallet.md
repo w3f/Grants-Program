@@ -40,6 +40,8 @@ Faber is a backend developer with 10+ years of strong experience. Learned and re
 | 3. | Address list | `subwallet listaddresses` will list all generated addresses | 
 | 4. | Backup | `subwallet backup [address|label]` will backup address as json that compatible with `https://polkadot.js.org/apps`| 
 | 5. | Restore | `subwallet restore [file]` will restore address from the file that compatible with `https://polkadot.js.org/apps` |
+| 6. | Unit Tests | Write unit tests for commands: `getnewaddress`, `listaddresses`, `backup` and `restore`. |
+| 7. | Documentation | Usages and demos of every command |
 
 ### Milestone 2
 
@@ -54,6 +56,8 @@ Faber is a backend developer with 10+ years of strong experience. Learned and re
 | 3.  | Balance transfer | `subwallet transfer [from address|label] [to address/label] [amount]` transfer [amount] balances from `from` address to `to` address | 
 | 4.  | Sync extrinsics | `subwallet syncextrinsics [address|label]` Download and save address related extrinsics from remote node to local file through RPC. |  
 | 5.  | Extrinsic list | `subwallet listextrinsics [address|label]` lists all downloaded extrinsics of address |
+| 6.  | Unit Tests  | Write unit tests for every command. |
+| 7.  | Documentation | Usages and demos of every command. |
 
 ## Additional Information :heavy_plus_sign: 
 * This will be version 0.1. In the future, more RPC methods will be implemented and will support other Substrate-based chains.
