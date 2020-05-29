@@ -43,7 +43,7 @@ Please provide the following:
 
 * **Total Estimated Duration:** 5 weeks
 * **Full-time equivalent (FTE):**  5.5
-* **Total Costs:** 3.3 BTC
+* **Total Costs:** 3.13 BTC
 
 ### Milestone 1
 
@@ -51,7 +51,7 @@ Please provide the following:
 
 * **Estimated Duration:** 1 week 
 * **FTE:**  1.25
-* **Costs:** 0.37 BTC
+* **Costs:** 0.35 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -63,7 +63,7 @@ Please provide the following:
 
 * **Estimated Duration:** 2 weeks
 * **FTE:**  2
-* **Costs:** 1.17 BTC
+* **Costs:** 1.11 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -75,7 +75,7 @@ Please provide the following:
 
 * **Estimated Duration:** 3 weeks
 * **FTE:**  2.25
-* **Costs:** 1.76 BTC
+* **Costs:** 1.67 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
