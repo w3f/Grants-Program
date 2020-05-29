@@ -53,9 +53,9 @@ Faber is a backend developer with 10+ years of strong experience. Learned and re
 | ------------- | ------------- | ------------- |
 | 1.  | Set RPC url | `subwallet setrpcurl [url]` save the RPC url to local file for other commands(transfer/syncextrinsics)|
 | 2.  | Display balances | `subwallet getbalances` will also show balances of addresses | 
-| 3.  | Balance transfer | `subwallet transfer [from address|label] [to address/label] [amount]` transfer [amount] balances from `from` address to `to` address | 
-| 4.  | Sync extrinsics | `subwallet syncextrinsics [address|label]` Download and save address related extrinsics from remote node to local file through RPC. |  
-| 5.  | Extrinsic list | `subwallet listextrinsics [address|label]` lists all downloaded extrinsics of address |
+| 3.  | Balance transfer | `subwallet transfer [from] [to] [amount]` transfer `amount` balances from `from` address to `to` address | 
+| 4.  | Sync extrinsics | `subwallet syncextrinsics [address_or_label]` download and save address related extrinsics from remote node to local file through RPC. |  
+| 5.  | Extrinsic list | `subwallet listextrinsics [address_or_label]` lists all downloaded extrinsics of address |
 | 6.  | Unit Tests  | Write unit tests for every command. |
 | 7.  | Documentation | Usages and demos of every command. |
 
