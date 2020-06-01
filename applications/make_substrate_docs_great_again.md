@@ -21,7 +21,7 @@ Below a part of report from the scanner of not working links:
 ## Team :busts_in_silhouette:
 
 * **Members:** Tomasz Waszczyk
-* **LinkedIn Profiles:** https://www.linkedin.com/in/tomasz_waszczyk
+* **LinkedIn Profiles:** [Tomasz Waszczyk](https://www.linkedin.com/in/tomaszwaszczyk)
 * **Code Repos:** https://github.com/substrate-developer-hub/knowledgebase/pull/78
 * **Legal Structure:** personal address will be provided via the invoice form
 * **Team's Experience:** I am a software enginner since around 10 years, I was working in hedge fund where I was invloved in optimizing algorithms (JVM stack), currently I work for IoT company where we look for optimising supply chain tracing in many manufacturies.
