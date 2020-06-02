@@ -34,7 +34,7 @@ Below a part of report from the scanner of not working links:
 
 ### Milestone 1
 
-The output of the grant will be many PRs to Substrate's official documentation like that that one https://github.com/substrate-developer-hub/knowledgebase/pull/78 to clean and improve links and details.
+The output of the grant will be many PRs to Substrate's official documentation like that that one https://github.com/substrate-developer-hub/knowledgebase/pull/78 to clean and improve links and details. Here is an example of dead links: https://github.com/TomaszWaszczyk/silesia-blockchain-meetup/blob/master/_PLANNED/PolkaDot/404s.png and output of the grant will be fully updated documentation, not just a part. Currently there is many dead links eg. to Rust palettes and is hard to read for new programmers comming to the Community. I know that there is no specific milestones, but as I said - fully update dead links, not some of them, not two of them but all of them. 
 
 ## Additional Information :heavy_plus_sign:
 
