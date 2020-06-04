@@ -6,15 +6,13 @@
 
 ## Project Description :page_facing_up: 
 
-**CRYPTOINDUS** is a marketplace to collect and trade unique, single-edition digital artworks.
+**CRYPYOINDUS** is a marketplace to collect and trade unique, single-edition digital artworks.
 
-NTF is a differentiated digital asset based on blockchain. NTF-compatible blockchain is like a database that can record any commodity. NFT can theoretically anchor all the non-homogeneous features in reality, realize the generalization of the real world, and form a digital asset world with interconnected value and information.
+Digital art has proven to be very suitable for irreplaceable currencies. The core element that makes a piece of art valuable is the ability to reliably prove its ownership and the ability to display it somewhere, which is unprecedented in the digital world.CryptoArt-NFT can theoretically anchor all the non-homogeneous features in reality, realize the generalization of the real world, and form a digital asset world with interconnected value and information.
 
-Digital art has proven to be very suitable for irreplaceable currencies. The core element that makes a piece of art valuable is the ability to reliably prove its ownership and the ability to display it somewhere, which is unprecedented in the digital world.
+CRYPYOINDUS will circulate and circulate NFT in the Polkadot ecosystem. CRYPTOINDUS has a strong group of artists that can introduce a new encrypted art trading and circulation ecology for Polkadot.
 
-**CRYPTOINDUS** will circulate and circulate NFT in the Polkadot ecosystem. CRYPTOINDUS has a strong group of artists that can introduce a new encrypted art trading and circulation ecology for Polkadot.
-
-Use Substrate to build NFT in Substrate Runtime, which is used to mark the scarce NFT, and NFT can conduct transactions and auctions on the chain. In the future, after Substrate and IPFS are connected, the artworks will be stored in the IPFS network, and NFT will be circulated in the Polkadot ecosystem.
+Use Substrate to build cryptoArt-NFT in Substrate Runtime, which is used to mark the scarce cryptoArt-NFT, and cryptoArt-NFT can conduct transactions and auctions on the chain. In the future, after Substrate and IPFS are connected, the artworks will be stored in the IPFS network, and cryptoArt-NFT will be circulated in the Polkadot ecosystem.
 
 The next wave of Internet business models will come from the crypto world. The creator can bypass the gatekeeper through the token model and let the fans directly benefit, instead of attracting the audience through a centralized gatekeeper who collects high rents and sets self-service rules. Each new business model helps to provide creators with a new set of digital services and new sources of income. The encryption token model is applied to CRYPTOINDUS art trading activities, and encryption technology should benefit more people.
 
