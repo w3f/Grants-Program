@@ -21,8 +21,8 @@ The next wave of Internet business models will come from the crypto world. The c
 * **Members:** Che , Jin , Yang , Caos
 * **Code Repos:** https://github.com/orgs/CRYPTOINDUS/people/KhepriJin, https://github.com/orgs/CRYPTOINDUS/people/my9527, https://github.com/orgs/CRYPTOINDUS/people/caosbad,https://github.com/ganok321
 * **Website:**	https://cryptoindus.xyz
-* **Legal Structure:** CheJiaTong， 
-DianWa Science& Technology Co Ltd 
+* **Legal Structure:** CheJiaTong，  
+DianWa Science& Technology Co Ltd， 
 J, building 2, No. 4268, Zhennan Road, Jiading District, Shanghai
 
 * **Team's Experience:** 
