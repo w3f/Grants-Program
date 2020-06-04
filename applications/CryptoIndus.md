@@ -1,6 +1,6 @@
 # Open Grant Proposal
 
-* **Project:** CryptoIndus
+* **Project:** CRYPTOINDUS
 * **Proposer:** @ganok321
 * **Payment Address:** 15hPQv8K96NvhPaKUD4DQ73rBDhk1sUAKB
 
