@@ -1,20 +1,22 @@
 # Open Grant Proposal
 
-> This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
-
-* **Project:** The name of the project
-* **Proposer:** GitHub username
+* **Project:** CryptoIndus
+* **Proposer:** @ganok321
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
-
-*The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Description :page_facing_up: 
 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of why this project is good for the ecosystem.
-  * An indication of how you will integrate this project into Substrate / Polkadot.
-  * An indication of why your team is interested in creating this project.
+**CryptoIndus** is a marketplace to collect and trade unique, single-edition digital artworks.
+
+NTF is a differentiated digital asset based on blockchain. NTF-compatible blockchain is like a database that can record any commodity. NFT can theoretically anchor all the non-homogeneous features in reality, realize the generalization of the real world, and form a digital asset world with interconnected value and information.
+
+Digital art has proven to be very suitable for irreplaceable currencies. The core element that makes a piece of art valuable is the ability to reliably prove its ownership and the ability to display it somewhere, which is unprecedented in the digital world.
+
+**CRYPYOINDUS** will circulate and circulate NFT in the Polkadot ecosystem. CRYPTOINDUS has a strong group of artists that can introduce a new encrypted art trading and circulation ecology for Polkadot.
+
+Use Substrate to build NFT in Substrate Runtime, which is used to mark the scarce NFT, and NFT can conduct transactions and auctions on the chain. In the future, after Substrate and IPFS are connected, the artworks will be stored in the IPFS network, and NFT will be circulated in the Polkadot ecosystem.
+
+The next wave of Internet business models will come from the crypto world. The creator can bypass the gatekeeper through the token model and let the fans directly benefit, instead of attracting the audience through a centralized gatekeeper who collects high rents and sets self-service rules. Each new business model helps to provide creators with a new set of digital services and new sources of income. The encryption token model is applied to CRYPTOINDUS art trading activities, and encryption technology should benefit more people.
 
 ## Team :busts_in_silhouette:
 
