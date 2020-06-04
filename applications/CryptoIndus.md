@@ -18,12 +18,18 @@ The next wave of Internet business models will come from the crypto world. The c
 
 ## Team :busts_in_silhouette:
 
-* **Members:** Name of team member	1, name of team member	2, ..
-* **LinkedIn Profiles:** https://www.linkedin.com/<person_1>, https://www.linkedin.com/<person_2>, ...
-* **Code Repos:** https://github.com/<repo_1>, https://github.com/<repo_2>, ...
-* **Website:**	https://...
-* **Legal Structure:** Please provide the name and registered address of the legal entity executing the project. 
-* **Team's Experience:** Please describe the team's relevant experience.
+* **Members:** Che,Jin,Yang,Caos
+* **Code Repos:** https://github.com/orgs/CRYPTOINDUS/people/KhepriJin, https://github.com/orgs/CRYPTOINDUS/people/my9527, https://github.com/orgs/CRYPTOINDUS/people/caosbad,https://github.com/ganok321
+* **Website:**	https://cryptoindus.xyz
+* **Legal Structure:** CheJiaTong
+DianWa Science& Technology Co Ltd 
+J, building 2, No. 4268, Zhennan Road, Jiading District, Shanghai
+* **Team's Experience:** 
+Che, four years of experience in the blockchain industry, has rich experience in product design in the blockchain industry. Former Design Director of ChainNews ,  also designed Polkadot's relay service project and the mining machine service of the mining pools.
+
+Caos, Full Stack Developer， four years of experience in the blockchain industry, Dapp development public chain related tool library R&D experience, worked as ASCH chain application engineer.Teaching assistant of the second phase of substrate course, and member of the hackathon Winning team.
+
+yang, Front-End Web Developer，five years of experience in the blockchain industry， and now engaged in front-end development of block chain Exchange.
 
 ## Development Roadmap :nut_and_bolt: 
 
