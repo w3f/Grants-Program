@@ -26,11 +26,11 @@ DianWa Science& Technology Co Ltd
 J, building 2, No. 4268, Zhennan Road, Jiading District, Shanghai
 * **Team's Experience:** 
 
-Che, four years of experience in the blockchain industry, has rich experience in product design in the blockchain industry. Former Design Director of ChainNews ,  also designed Polkadot's relay service project and the mining machine service of the mining pools.
+Che, has rich experience in product design in the blockchain industry. Former Design Director of ChainNews ,  also designed Polkadot's relay service project and the mining machine service of the mining pools.
 
-Caos, Full Stack Developer， four years of experience in the blockchain industry, Dapp development public chain related tool library R&D experience, worked as ASCH chain application engineer.Teaching assistant of the second phase of substrate course, and member of the hackathon Winning team.
+Caos, Full Stack Developer，Dapp development public chain related tool library R&D experience, worked as ASCH chain application engineer.Teaching assistant of the second phase of substrate course, and member of the hackathon Winning team.
 
-yang, Front-End Web Developer，five years of experience in the blockchain industry， and now engaged in front-end development of block chain Exchange.
+yang, Front-End Web Developer，and now engaged in front-end development of block chain Exchange.
 
 ## Development Roadmap :nut_and_bolt: 
 
