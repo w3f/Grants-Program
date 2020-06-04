@@ -61,4 +61,4 @@ Possible additional information to include:
 We have started front-end, back-end, user interface design, and some work on the Polkadot since May 15.
 * Are there any other projects similar to yours? If so, how is your project different?
 
-We do not see an cryptoart trading platform that uses Substrate technology to operate in the polkadot. Our advantage is that compared to SuperRare KnownOrign above Ethereum, we will not have a bad user experience of congestion.
+We do not see an cryptoart trading platform that uses Substrate technology to operate in the polkadot. Our advantage is that compared to SuperRare，KnownOrign above Ethereum, we will not have a bad user experience of congestion.
