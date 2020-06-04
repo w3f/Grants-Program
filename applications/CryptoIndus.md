@@ -34,9 +34,8 @@ yang, Front-End Web Developer，five years of experience in the blockchain indus
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** Duration of the whole project
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
+* **Total Estimated Duration:** 2 month
+* **Total Costs:** 2.1BTC
 
 ### Milestone 1
 
