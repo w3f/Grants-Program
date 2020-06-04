@@ -31,7 +31,7 @@ Che, has rich experience in product design in the blockchain industry. Former De
 
 Caos, Full Stack Developer，Dapp development public chain related tool library R&D experience, worked as ASCH chain application engineer.Teaching assistant of the second phase of substrate course, and member of the hackathon Winning team.
 
-yang, Front-End Web Developer，and now engaged in front-end development of block chain Exchange.
+yang, Front-End Web Developer，and now engaged in front-end development of Top blockchain Exchange.
 
 ## Development Roadmap :nut_and_bolt: 
 
