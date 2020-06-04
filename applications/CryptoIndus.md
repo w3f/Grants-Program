@@ -36,7 +36,7 @@ yang, Front-End Web Developer，and now engaged in front-end development of Top 
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 2 month
-* **Total Costs:** 2.1BTC
+* **Total Costs:** 2.4BTC
 
 ### Milestone 1
 
