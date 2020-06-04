@@ -6,13 +6,13 @@
 
 ## Project Description :page_facing_up: 
 
-**CryptoIndus** is a marketplace to collect and trade unique, single-edition digital artworks.
+**CRYPTOINDUS** is a marketplace to collect and trade unique, single-edition digital artworks.
 
 NTF is a differentiated digital asset based on blockchain. NTF-compatible blockchain is like a database that can record any commodity. NFT can theoretically anchor all the non-homogeneous features in reality, realize the generalization of the real world, and form a digital asset world with interconnected value and information.
 
 Digital art has proven to be very suitable for irreplaceable currencies. The core element that makes a piece of art valuable is the ability to reliably prove its ownership and the ability to display it somewhere, which is unprecedented in the digital world.
 
-**CRYPYOINDUS** will circulate and circulate NFT in the Polkadot ecosystem. CRYPTOINDUS has a strong group of artists that can introduce a new encrypted art trading and circulation ecology for Polkadot.
+**CRYPTOINDUS** will circulate and circulate NFT in the Polkadot ecosystem. CRYPTOINDUS has a strong group of artists that can introduce a new encrypted art trading and circulation ecology for Polkadot.
 
 Use Substrate to build NFT in Substrate Runtime, which is used to mark the scarce NFT, and NFT can conduct transactions and auctions on the chain. In the future, after Substrate and IPFS are connected, the artworks will be stored in the IPFS network, and NFT will be circulated in the Polkadot ecosystem.
 
