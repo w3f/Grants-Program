@@ -44,7 +44,7 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 
 ### Milestone 1
 
-* **Estimated Duration:** 3 weeks 
+* **Estimated Duration:** 4 weeks 
 * **Costs:** 0.8 BTC
 
 
