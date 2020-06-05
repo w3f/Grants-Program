@@ -61,7 +61,7 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Title of the deliverable | Please describe the deliverable here as detailed as possible |  
+| 1. | Polkadot.js chrome extention intergrate artvenus display | Please describe the deliverable here as detailed as possible |  
 | 2.  | ... |...|  
 
 ### Milestone 3
