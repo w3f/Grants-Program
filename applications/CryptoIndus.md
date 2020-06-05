@@ -50,8 +50,8 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Title of the deliverable | Please describe the deliverable here as detailed as possible |  
-| 2.  | ... |...|  
+| 1. | Basic functional website  |  Show artvenus list and connect with polkadot.js extention  |  
+| 2. | Substrate node with basic functional chain | Artvenus issue and trade runtime code |  
 
 ### Milestone 2
 
@@ -61,10 +61,10 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Polkadot.js chrome extention intergrate artvenus display | Please describe the deliverable here as detailed as possible |  
-| 2.  | Mobile wallet app with artvenus display |...|  
-| 3.  | Mobile wallet app with artvenus management and trade |...|  
-| 4.  | ipfs data integration | we complete the basic prototype, it could now connect to ipfs |  
+| 1. | Polkadot.js chrome extention intergration | Intergrate artvenus display in wallet |  
+| 2.  | Mobile wallet app with artvenus display | Artvenus list in mobile app that user can see it |  
+| 3.  | Mobile wallet app with artvenus management and trade | Trade and Transfer artvenus with mobile wallet |  
+
 
 ### Milestone 3
 
@@ -74,8 +74,8 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Multiple node for cryptoindus | Please describe the deliverable here as detailed as possible |  
-| 2. | ipfs data integration | we could list the item from ipfs network |  
+| 1. | Multiple nodes for cryptoindus | Use multiple nodes to increase the cryptoindus decentralization |  
+| 2. | Ipfs data integration | Artvenus image and other files managed by IPFS network |  
 
 
 ## Additional Information :heavy_plus_sign: 
