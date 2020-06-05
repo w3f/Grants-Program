@@ -39,7 +39,7 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 9 weeks
+* **Total Estimated Duration:** 14 weeks
 * **Total Costs:** 2.4 BTC
 
 ### Milestone 1
@@ -55,7 +55,7 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 
 ### Milestone 2
 
-* **Estimated Duration:** 3 weeks 
+* **Estimated Duration:** 5 weeks 
 * **Costs:** 0.8 BTC
 
 
@@ -67,7 +67,7 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 
 ### Milestone 3
 
-* **Estimated Duration:** 3 weeks 
+* **Estimated Duration:** 6 weeks 
 * **Costs:** 0.8 BTC
 
 
