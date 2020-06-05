@@ -64,17 +64,18 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 | 1. | Polkadot.js chrome extention intergrate artvenus display | Please describe the deliverable here as detailed as possible |  
 | 2.  | Mobile wallet app with artvenus display |...|  
 | 3.  | Mobile wallet app with artvenus management and trade |...|  
+| 4.  | ipfs data integration | we complete the basic prototype, it could now connect to ipfs |  
 
 ### Milestone 3
 
-* **Estimated Duration:** 6 weeks 
+* **Estimated Duration:** 5 weeks 
 * **Costs:** 0.8 BTC
 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 1. | Multiple node for cryptoindus | Please describe the deliverable here as detailed as possible |  
-| 2. | IPFS intergation | Please describe the deliverable here as detailed as possible |  
+| 2. | ipfs data integration | we could list the item from ipfs network |  
 
 
 ## Additional Information :heavy_plus_sign: 
