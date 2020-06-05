@@ -53,6 +53,28 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 | 1. | Title of the deliverable | Please describe the deliverable here as detailed as possible |  
 | 2.  | ... |...|  
 
+### Milestone 2
+
+* **Estimated Duration:** 3 weeks 
+* **Costs:** 0.8 BTC
+
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1. | Title of the deliverable | Please describe the deliverable here as detailed as possible |  
+| 2.  | ... |...|  
+
+### Milestone 3
+
+* **Estimated Duration:** 3 weeks 
+* **Costs:** 0.8 BTC
+
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1. | Multiple node for cryptoindus | Please describe the deliverable here as detailed as possible |  
+| 2. | IPFS intergation | Please describe the deliverable here as detailed as possible |  
+
 
 ## Additional Information :heavy_plus_sign: 
 Any additional information that you think is relevant to this application that hasn't already been included.
