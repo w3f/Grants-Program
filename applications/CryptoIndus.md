@@ -39,15 +39,13 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 2 month
-* **Total Costs:** 2.4BTC
+* **Total Estimated Duration:** 9 weeks
+* **Total Costs:** 2.4 BTC
 
 ### Milestone 1
 
-Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software. 
-* **Estimated Duration:** Duration of milestone 1 
-* **FTE:**  Workload of an employed person for milestone 1
-* **Costs:** Amount of Payment in BTC for milestone 1
+* **Estimated Duration:** 3 weeks 
+* **Costs:** 0.8 BTC
 
 
 | Number | Deliverable | Specification | 
