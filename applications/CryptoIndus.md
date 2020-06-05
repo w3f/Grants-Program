@@ -63,8 +63,7 @@ Jin, Blockchain Developer, which have focused on blockchain developing more then
 | ------------- | ------------- | ------------- |
 | 1. | Polkadot.js chrome extention intergrate artvenus display | Please describe the deliverable here as detailed as possible |  
 | 2.  | Mobile wallet app with artvenus display |...|  
-2.  | Mobile wallet app with artvenus
-management and trade |...|  
+| 3.  | Mobile wallet app with artvenus management and trade |...|  
 
 ### Milestone 3
 
