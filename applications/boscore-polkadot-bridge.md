@@ -57,8 +57,8 @@ Singapore 048619
 | 1. | Reseach Feasibility and Technical Design | Research and exstablish feasibility of the project and create new version 2 of principle and design document that includes specifics relative to BOSCore Polkadot Bridge Project. |  
 | 2. | Project Research | Research Polkadot project through reading the various papers and documents. |  
 | 3. | Feasibility and Review | Team review of the feasibility after researching core tech stack|  
-| 4. | Update Documentation | Draft new version of the principle and design document. [IBC Pinciple and Design v2](https://docs.google.com/document/d/16fhTOZ9EA7L7A0cIuz1XnSGAM0HyppdjlweDebsoif4/edit?usp=sharing) outline project plan and initial document[BOSCore Polkadot Bridge Project](https://docs.google.com/document/d/1p3E7lXA7qKX5AHIGej4P7EW5jfVRd32y-QfRwvc-k_Q/edit?usp=sharing) |  
-| 5. | Web 3 Foundation Grant Application |Decide on grant path (standard or open) and make relivant application, along with article describing the project and application |  
+| 4. | Update Documentation | Draft new version of the principle and design document. [IBC Pinciple and Design v2](https://docs.google.com/document/d/16fhTOZ9EA7L7A0cIuz1XnSGAM0HyppdjlweDebsoif4/edit?usp=sharing) outline project plan and initial document [BOSCore Polkadot Bridge Project](https://docs.google.com/document/d/1p3E7lXA7qKX5AHIGej4P7EW5jfVRd32y-QfRwvc-k_Q/edit?usp=sharing) |  
+| 5. | Web 3 Foundation Grant Application |Decide on grant path (standard or open) and make relivant application, along with article describing the project and application. |  
 
 ### Milestone 2
 
@@ -68,8 +68,8 @@ Singapore 048619
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Coding Smart Contracts and relays | Write and port smart contracts |  
-| 2.  | Documentation | Document the open source code with detailed github readme files for smart contract and relay deployment | 
+| 1. | Coding Smart Contracts and relays | Write and port smart contracts. |  
+| 2.  | Documentation | Document the open source code with detailed github readme files for smart contract and relay deployment. | 
 
 ### Milestone 3
 
@@ -80,7 +80,7 @@ Singapore 048619
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 1. | Testing and deployment | Involve community in testing phase and schedule live deployment.|  
-| 2.  | Documentation | Document testing phase and live deployment in relevant channels | 
+| 2.  | Documentation | Document testing phase and live deployment in relevant channels. | 
 
 ## Additional Information :heavy_plus_sign: 
 
