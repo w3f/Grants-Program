@@ -9,7 +9,7 @@
 
 ## Project Description :page_facing_up: 
 
-BOSCore is broadening the scope of the project through an adaptive IBC design and principle, BOSCore can build bridge chains to other networks and to progress this BOSCore is exploring an open grant from the Web 3 Foundation to bridge the IBC EOSIO network with the Polkadot network. The aim is to build a Parachain Bridge. The Bridge will provide a relay between the Polkadot Network and the EOSIO Network. 
+BOSCore is broadening the scope of the project through an adaptive IBC design and principle, BOSCore can build bridge chains to other networks and to progress this BOSCore is exploring an open grant from the Web 3 Foundation to bridge the IBC EOSIO network with the Polkadot network. The aim is to build a Parachain Bridge. The Bridge will provide a relay between Polkadot and EOSIO Networks. 
 
 The proposed Bridge Chain would enable bidirectional messaging via a hosted Parachain on the Polkadot network. There are several benefits to the approach, extending integration, to form more interoperability and standards of operation for the blockchain industry as a whole, we feel this would bring features and functionality that would be beneficial to our respective communities and ecosystem.
 
