@@ -42,14 +42,14 @@ Singapore 048619
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 90 Days
-* **Full-time equivalent (FTE):**  3 FTE 
+* **Full-time equivalent (FTE):**  3.5 FTE 
 * **Total Costs:** 3 BTC.
 
 ### Milestone 1
 
 * **Estimated Duration:** 26 Days 
 * **FTE:**  0.5
-* **Costs:** 0.5 BTC
+* **Costs:** 0 BTC
 
 
 | Number | Deliverable | Specification | 
@@ -57,19 +57,19 @@ Singapore 048619
 | 1. | Reseach Feasibility and Technical Design | Research and exstablish feasibility of the project and create new version 2 of principle and design document that includes specifics relative to BOSCore Polkadot Bridge Project. |  
 | 2. | Project Research | Research Polkadot project through reading the various papers and documents. |  
 | 3. | Feasibility and Review | Team review of the feasibility after researching core tech stack|  
-| 4. | Update Documentation | Draft new version of the principle and design document. [Google doc: IBC Pinciple and Design v2](https://docs.google.com/document/d/16fhTOZ9EA7L7A0cIuz1XnSGAM0HyppdjlweDebsoif4/edit?usp=sharing) outline project plan and initial document [Google doc: BOSCore Polkadot Bridge Project](https://docs.google.com/document/d/1p3E7lXA7qKX5AHIGej4P7EW5jfVRd32y-QfRwvc-k_Q/edit?usp=sharing) |  
+| 4. | Update Documentation |  Outline project plan and initial document [Google doc: BOSCore Polkadot Bridge Project](https://docs.google.com/document/d/1p3E7lXA7qKX5AHIGej4P7EW5jfVRd32y-QfRwvc-k_Q/edit?usp=sharing) |  
 | 5. | Web 3 Foundation Grant Application |Decide on grant path (standard or open) and make relivant application, along with medium article describing the project and application. [Medium: BOSCore Polkadot Bridge Project](https://medium.com/boscore/boscore-polkadot-bridge-project-7fc77b48ab76)|  
 
 ### Milestone 2
 
 * **Estimated Duration:** 46 Days 
-* **FTE:**  1.5
-* **Costs:** 1.5 BTC
+* **FTE:**  2
+* **Costs:** 2 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Coding Smart Contracts and relays | Write and port smart contracts. |  
-| 2.  | Documentation | Document the open source code with detailed github readme files for smart contract and relay deployment. | 
+| 1. | Coding Smart Contracts and relays | Write and port WASM smart contracts and C++/Rust relays  |  
+| 2.  | Documentation | Finalize new version of the principle and design document and open-source to including applicable differences in transaction data, signature addressing, block structures. [Google doc: IBC Pinciple and Design v2](https://docs.google.com/document/d/16fhTOZ9EA7L7A0cIuz1XnSGAM0HyppdjlweDebsoif4/edit?usp=sharing) Document the open source code with detailed github readme files for smart contract and relay deployment. | 
 
 ### Milestone 3
 
