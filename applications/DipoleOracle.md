@@ -8,7 +8,6 @@
 
   ​	BTC: 12q2NigsthG7YdxUBRbAaZPTHYj1xuEjCx
 
-  ​	DAI:  0xe3DB3c0E48Cc1Ce62c15ab50499de16f6AF3E39B 
 
 ## Project Description :page_facing_up:
 
@@ -26,17 +25,35 @@ DipoleOracle connects Dipole chain and offline electrical hardware, ensure the s
 
 DipoleOracle  includes four key components: Operator, GoodsOracle, PayOracle and Collector. The whole system provides the feeding and collecting of energy generation/consumption and transaction data.
 
+![](https://github.com/DipoleTech/dipole-oracle/blob/master/img/dipoleoracle.png)
+
+
+- Operator
+
+In the energy industry, electrical hardwares are extremely miscellaneous. The Operator module defines several common used electrical hardwares like electricity meter and charging point. The Operator module allows each registered electrical hardware to upload data online.
+
 - GoodsOracle
+
 
 In the energy industry, collecting real-time data from hardware such as electricity meter and charging piles has always been a technical challenge. DipoleGoodsOracle can be applicable to various electricity meters and protocols, which achieve a solid progress in this area.
 
 - PayOracle
 
+
 In the energy industry, periodical power transaction cause high needs of splitting bills for participants, third-party payments or stablecoins. PayOracle is able to complete all steps automatically. In area which don't have completed payment system like South Asia and Africa, PayOracle can enormously reduce the cost of payment. 
 
+- Collector
+
+In the energy industry, collecting energy generation/consumption and transaction data costs a lot of manpower and material resources. With the Collector module, users can easily get data they really need, which can help them customize their business scenarios.
 
 
+**Advantage**
 
+* a  customized oracle module can be applied to different kinds of variables data procession, such as electricity meter and charging point. 
+
+* with the Operator module, any registered IoT device can easily upload data. Users can customized their set up like authorized uploading devices, filter malicious ones, and even build a scoring system.
+
+* with the Collector module, users can customize advanced calculating model such as dynamic data processing, incremental and filter statistics.
 
 
 ## Team :busts_in_silhouette:
@@ -51,22 +68,26 @@ In the energy industry, periodical power transaction cause high needs of splitti
 
 ## Development Roadmap :nut_and_bolt:
 
-* **Total Estimated Duration:** 8 weeks
-* **Total Costs:** 3.5 BTC or 30,000 DAI
+* **Total Estimated Duration:** 4 weeks
+* **Full-time equivalent (FTE):** 1.25
+* **Total Costs:** 2.5 BTC 
 
-### Milestone 1
+### Milestone 
 
 * **Estimated Duration:** 4 weeks
-* **Costs:** 2 BTC or 20,000 DAI
+* **FTE:** 1.25
+* **Costs:** 2.5 BTC 
 
 
-| Number | Deliverable    | Specification                                                |
-| ------ | -------------- | ------------------------------------------------------------ |
-| 1.     | DipoleOracle   | Including GoodsOracle and PayOracle processing; Feature complete for traits, pallets and utilities;complete benchmarking, weight annotation, test coverage and code linting<br /> |
-| 2.     | Backend Client | Backend client  example in the programming language nodejs, which shows how to use DipoleOracle |
-| 3.     | Documentation  | Documentation, examples and tutorials will be provided for using DipoleOracle |
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | DipoleOracle | Including GoodsOracle and PayOracle processing; Feature complete for traits, pallets and utilities;complete benchmarking, weight annotation, test coverage and code linting<br /> |
+| 2.  | Backend Client | Backend client  example in the programming language nodejs, which shows how to use DipoleOracle |
+| 3.  | Documentation | Documentation, examples and tutorials will be provided for using DipoleOracle |
 
 **DipoleOracle Features**
+
+
 
 - traits
   - OperatorManager
@@ -80,18 +101,6 @@ In the energy industry, periodical power transaction cause high needs of splitti
   - pay-oracle
   - support
 
-### Milestone 2
-
-* **Estimated Duration:** 4 weeks
-* **Costs:** 1.5 BTC or 15,000 DAI
-
-
-| Number | Deliverable                          | Specification                                                |
-| ------ | ------------------------------------ | ------------------------------------------------------------ |
-| 1.     | Implementation for Acala & ChainLink | Implement Acala stablecoin tasks with Dipole Pay Oracle. implement trusted oracle processing with ChainLink, etc. |
-| 2.     | Production ready                     | Integrate all products into one and try it out in real life, make easy deployment support with Docker |
-| 3.     | Documentation                        | Documentation, examples and tutorials will be provided for using DipoleOracle |
-
 
 ## Additional Information :heavy_plus_sign:
 
@@ -101,6 +110,5 @@ In the energy industry, periodical power transaction cause high needs of splitti
 * We were rewarded 2020 Asia Pacific Low Carbon Lifestyle Challenge Prize issued by the United Nations Environment Programme (UNEP)
 
 ## About Dipole
-
 Dipole Tech is a Distributed Energy Resource aggregator, providing services for the massive amount of distributed energy assets that will emerge in the future and facilitating the decarbonization of the energy system. Dipole Tech develops an independent Substrate-based blockchain which records all stages within the industry and enables interoperability from DER assets. Learn more by visiting the Dipole Tech website  or following them on Twitter.
 
