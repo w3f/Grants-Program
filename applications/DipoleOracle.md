@@ -70,13 +70,13 @@ In the energy industry, collecting energy generation/consumption and transaction
 
 * **Total Estimated Duration:** 4 weeks
 * **Full-time equivalent (FTE):** 1.25
-* **Total Costs:** 2.5 BTC 
+* **Total Costs:** 1.1 BTC 
 
 ### Milestone 
 
 * **Estimated Duration:** 4 weeks
 * **FTE:** 1.25
-* **Costs:** 2.5 BTC 
+* **Costs:** 1.1 BTC 
 
 
 | Number | Deliverable | Specification |
