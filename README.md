@@ -85,7 +85,7 @@ Operations Team takes care of legal documents, invoicing and remittances.
     1. The Operations Team receives a notification once the delivery was accepted or after two weeks without any feedback after the initial delivery. As soon as feedback is provided by the evaluators, this feedback first needs to be resolved.  
     2. Operations Team makes the payment to the Bitcoin address specified in the initial application.
 
-*Grant application can be amended at any time, necessitating a reevaluation by the Committee.*
+*Grant application can be amended at any time, necessitating a reevaluation by the Committee. Off topic discussions on the PRs will be deleted, to keep the discussion focused on the grant application.*
 
 ## :bulb: Help
 
