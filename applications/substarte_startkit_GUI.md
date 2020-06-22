@@ -12,6 +12,7 @@ Please provide the following:
   The idea is to create a GUI where users can quickly select the runtime pallets, enter their genesis configurations, and satisfy their dependencies without forking the template repository and writing any RUST code. The application would add/remove the necessary files and set configurations and dependencies in the codebase behind the scene. In the end, the user will generate a code base with all the components.
 
   The GUI should have the following features:
+  
     * Select (drag&drop) pallets
     * Add/Remove pallets from codebase
     * Generate good-enough default configs or enter custom configuration
