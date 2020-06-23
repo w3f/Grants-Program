@@ -47,6 +47,7 @@ For our clients, we built a vast number of different Dapps and blockchain:
   Also, organized internal Substrate learning sessions were we modified the democracy runtime pallet to support quadratic voting mechanism - https://github.com/MVPWorkshop/substrate-quadratic-democracy
   We are also members of the Ethereum Enterprise Alliance and the Stellar Development Foundation.
 
+The UX/UI of the app will be an essential part. So let me share with you some of our previous work on dribbble -https://dribbble.com/mvpworkshop.
 
 ## Development Roadmap :nut_and_bolt: 
 
@@ -84,8 +85,17 @@ For our clients, we built a vast number of different Dapps and blockchain:
 | 2. | Github Integration | Integrate Github library so the user could generate a initial commit with the code base on his account |  
 | 3. | Backend | API’s for handling the code base structure and setting configuration and dependencies |  
 | 4. | Demo video | Video showcasing how to use the app |  
-| 5. | Documentation | Describe functionalities and instructions on compiling and running the plugin, including a Docker container with all dependencies. |  
+| 5. | Documentation | Describe functionalities and instructions on compiling and running the app, including a feature list and written tutorial. |  
 
 Deliverables will be dockerized.
 
- 
+### Long term plans and the target users of such an application
+
+The target users would definitely be beginners and even people that wanna play a bit and not really start a production-ready blockchain. Experienced blockchain devs beginning to build a project with Substrate are probably familiar with how to start, and whoever has to deep dive into the code so they are not the ones that will benefit the most. We didn't consider the possibility of online chain running in this phase of the project, but it could be an option for some future version.
+Looking long term, this GUI would be the place for everyone to quickly get informed on runtime pallets so it should be periodically updated with new information.
+So the primary purpose is educational but also promotional. We added in the deliverables features focused on education such as:
+
+ * Tooltips/popups with an explanation of every pallet
+ * Links to the substrate docs
+ * Video tutorial on how to use the app
+ * Documentation with a feature list and written tutorial
