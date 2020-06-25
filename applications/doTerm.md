@@ -30,13 +30,13 @@
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 8 weeks
-* **Full-time equivalent (FTE):**  0.75
+* **Full-time equivalent (FTE):**  1
 * **Total Costs:** 1 BTC
 
 ### Milestone 1
 
 * **Estimated Duration:** 4 weeks
-* **FTE:**  0.75
+* **FTE:**  1
 * **Costs:** 0.5
 
 | Number | Deliverable         | Specification | 
@@ -52,7 +52,7 @@
 ### Milestone 2
 
 * **Estimated Duration:** 4 weeks
-* **FTE:**  0.75
+* **FTE:**  1
 * **Costs:** 0.5
 
 
