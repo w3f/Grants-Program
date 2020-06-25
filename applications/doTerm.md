@@ -42,10 +42,10 @@
 | Number | Deliverable         | Specification | 
 | ------ | ------------------- | ----------- |
 | 1. | Display network stats | Provide dynamic network stats display in the terminal, use lib such as [tui.rs](https://docs.rs/tui/0.8.0/tui/) to display network stats such as block height, era, session |
-| 2. | Implement `stakers` flag / subcommand | to show exposures; work with [api-client](https://github.com/scs/substrate-api-client) to support get_keys for double map through PRs |  
-| 3. | Use maintained RPC client | update dependency to [api-client](https://github.com/scs/substrate-api-client) from a forked repo; work with [api-client](https://github.com/scs/substrate-api-client) through PRs
-| 4.| Implement `consts` subcommand | query metadata constants, which may be used to give information such as sessions to next era etc; work with [api-client](https://github.com/scs/substrate-api-client) through PRs
-| 5. | Documentation and tutorial | rust-doc and tutorial to setup and use a local node with `doTerm` |  
+| 2. | Implement `stakers` flag / subcommand | Display exposures; work with [api-client](https://github.com/scs/substrate-api-client) to support get_keys for double map through PRs |  
+| 3. | Use maintained RPC client | Update dependency to [api-client](https://github.com/scs/substrate-api-client) from a forked repo; work with [api-client](https://github.com/scs/substrate-api-client) through PRs
+| 4.| Implement `consts` subcommand | Query metadata constants, which may be used to give information such as sessions to next era etc; work with [api-client](https://github.com/scs/substrate-api-client) through PRs
+| 5. | Documentation and tutorial | Rust-doc and tutorial to setup and use a local node with `doTerm` |  
 
 ***Milestone will be delivered with the option for building in docker***
 
@@ -59,9 +59,9 @@
 | Number | Deliverable         | Specification | 
 | ------ | ------------------- | ----------- |
 | 1. | Display validator stats | Similar to network states, this will display validators, nominators, rewards stats |
-| 2. | Update `validators -q` | with relevant info like score / ledger when available |  
-| 3. | Implement `slash` flag / subcommand | allow for querying slashes in eras for both nominators / validators |
-| 4. | Documentation and tutorial | rust-doc and tutorial to setup and use a local node with `doTerm` |  
+| 2. | Update `validators -q` | Display relevant info like score / ledger when available |  
+| 3. | Implement `slash` flag / subcommand | Provide subcommand to query slashes in eras for both nominators / validators |
+| 4. | Documentation and tutorial | Rust-doc and tutorial to setup and use a local node with `doTerm` |  
 | 5. | Dependency updates | Ensure this tool is updated to use the latest substrate/polkadot lib |
 
 ***Milestone will be delivered with the option for building in docker***
