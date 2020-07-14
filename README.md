@@ -50,8 +50,8 @@ The Committee consists of individuals who know the funding priorities of the Pol
 Evaluators are individuals able to evaluate the technology delivered as a result of the Open Grants Program. The committee decides about the evaluators and has the right to add or remove evaluators (supermajority needed).
 
 * [Peter Czaban](https://github.com/keorn)
-* [David Hawig](https://github.com/Noc2)
 * [Marcin Górny](https://github.com/mmagician)
+* [David Hawig](https://github.com/Noc2)
 
 **W3F Operations Team**
 
