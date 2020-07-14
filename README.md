@@ -51,6 +51,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 
 * [Peter Czaban](https://github.com/keorn)
 * [David Hawig](https://github.com/Noc2)
+* [Marcin Górny](https://github.com/mmagician)
 
 **W3F Operations Team**
 
