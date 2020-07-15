@@ -33,7 +33,13 @@ Our team develops software about 10+ years and decentralized applications since 
 
 ### Milestone 1
 
-Core functional for automated testing with Mocha and Chai.
+Core functional for automated testing with Mocha and Chai. This stage involves the creation of basic functionality for running tests. It will include the TestRunner package, and assertions to simplify checking external calls.
+
+Assertions:
+- **.passes** Asserts that the passed async extrinsic does not fail.
+- **.eventEmitted** The eventEmitted assertion checks that an event has been emitted by the transaction with result
+- **.eventNotEmitted** The eventNotEmitted assertion checks that an event has not been emitted by the transaction with result
+- **.reverts** Asserts that the passed async extrinsic fails with a certain reason.
 
 * **Estimated Duration:** 5 weeks
 * **FTE:** 1.5
@@ -42,7 +48,7 @@ Core functional for automated testing with Mocha and Chai.
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | Configuration | Network config for interacting with many public & private networks, keyring config for initializing test accounts and chain spec parser |
-| 2. | Core | Implement primitives, helpers for tests, a high-order function for a test-cases |
+| 2. | Core | Implement primitives, assertions, a high-order function for a test-cases |
 | 3. | Testing | Implement scripts for command `halva test`. It run JavaScript tests with pre-initialized accounts. |
 | 4. | Documentations | Write documentations |
 
