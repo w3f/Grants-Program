@@ -9,6 +9,7 @@
   ​	BTC: 12q2NigsthG7YdxUBRbAaZPTHYj1xuEjCx
 
 
+
 ## Project Description :page_facing_up:
 
 Dipole is an award-winning clean-tech company that brings blockchain technology into distributed energy resource management. Our aim is to provide service for the massive and fragmented distributed energy assets that will emerge in the near future, as well as facilitate the decarbonization of the energy system. 
