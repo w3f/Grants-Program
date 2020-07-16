@@ -27,9 +27,9 @@ Our team develops software about 10+ years and decentralized applications since 
 
 ## Development Roadmap :nut_and_bolt:
 
-* **Total Estimated Duration:** 9 weeks
+* **Total Estimated Duration:** 5 weeks
 * **Full-time equivalent (FTE):** 1.5
-* **Total Costs:** 3.28 BTC
+* **Total Costs:** 1.82 BTC
 
 ### Milestone 1
 
