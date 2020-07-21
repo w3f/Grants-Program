@@ -29,15 +29,15 @@ Please provide the following:
 * **Members:** [BoBin](https://github.com/freehere107), [yanganto](https://github.com/yanganto)
 * **LinkedIn Profiles:**  [BoBin](https://www.linkedin.com/in/sunbobin/), [yanganto](https://www.linkedin.com/in/yanganto/)
 * **Code Repos:** https://github.com/yanganto/ssi (Currently under studing and implement in proof of concept level)
-* **Website**: https://www.itering.io/
+* **Website:** https://www.itering.io/
 * **Legal Structure:** Itering Tech Pte. Ltd.
 * **Team's Experience:** Darwinia network developer, Subscan backend developer
 
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 1 month
-* **Full-time equivalent (FTE):** 1
-* **Total Costs:** 2.2 BTC
+* **Full-time equivalent (FTE):** 1.2
+* **Total Costs:** 1.7 BTC
 
 ### Milestone 
 * A tool for developer to diff the data and directly query the DB storage in substrate based blockchain
@@ -52,8 +52,8 @@ Please provide the following:
   * Providing docke file and docker image 
 
 * **Estimated Duration:** 
-* **FTE:** 1
-* **Costs:** 2.2 BTC
+* **FTE:** 1.2
+* **Costs:** 1.7 BTC
 
 | Item | Deliverable                      | Specification                                          |
 |------|----------------------------------|--------------------------------------------------------|
