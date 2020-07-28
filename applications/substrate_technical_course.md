@@ -39,4 +39,4 @@ The output of the grant will be around 45 minutes time window (in the form of vi
 
 ## Additional Information :heavy_plus_sign:
 
-I have written an article regarding Substrate: https://waszczyk.com/introduction-to-polkadot's-ecosystem-and-hackusama and I just think that Substrate is a good candidate for explaining the blockchain technology for developers and I am involved in ambassador program.
+I have written an article regarding Substrate: https://waszczyk.com/introduction-to-polkadot's-ecosystem-and-hackusama and I just think that Substrate is a good candidate for explaining the blockchain technology for developers and I am involved in ambassador program. After finishing the course I can also make workshops and engage more developers via my meetup: https://www.meetup.com/Silesia-Blockchain-Meetup/
