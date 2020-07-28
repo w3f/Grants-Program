@@ -8,7 +8,7 @@
 
 ## Project Description :page_facing_up:
 
-I am a software enginner which within company where I look for business outcomes which potentially can Substrate delivers. I know that the best way to learn is to build and after listining to presentation given by Tomasz Drwięga (Core Dev in Polkadot) in Warsow and then some talk with Him I decided to dive deeper into Substrate. I have already signed an agreement to deliver a VOD course regarding "blockchain technology" for one of the biggest publishing house in Poland, the publisher is focused on programming and generally IT market.
+I am a software enginner which within company where I look for business outcomes which potentially can Substrate delivers. I know that the best way to learn is to build and after listining to presentation given by Tomasz Drwięga (Core Dev in Polkadot) in Warsow and then some talk with Him I decided to dive deeper into Substrate. I have already signed an agreement to deliver a VOD course regarding "blockchain technology" for one of the biggest publishing house in Poland, the publisher is focused on programming and generally IT market. The audience of the course is around 80000 developers in first months after publishing.
 
 After diving into Substrate (and currently Hackusama) I concluded that I want to show in my course more deeply Substrate architecture and Kusama network.
 
