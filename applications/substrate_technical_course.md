@@ -27,7 +27,7 @@ After diving into Substrate (and currently Hackusama) I concluded that I want to
 
 ### Milestone
 
-The output of the grant will be around 45 minutes (in the form of video) in the course regarding blockchain technology on one of the biggest VOD platform for developers in Poland. The scope of the course is up to me, for sure I want to show:
+The output of the grant will be around 45 minutes time window (in the form of video) in the course regarding blockchain technology on one of the biggest VOD platform for developers in Poland. The scope of the course is up to me, for sure I want to show:
 
 1. architecture of Substrate
 
