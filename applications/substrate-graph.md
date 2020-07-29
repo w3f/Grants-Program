@@ -20,6 +20,8 @@
 
 ## Development Roadmap :nut_and_bolt: 
 
+![Schema](https://github.com/playzero/substrate-graph/blob/master/doc/stack-basic.png)
+
 * **Total Estimated Duration:** 6 weeks
 * **Full-time equivalent (FTE):** 0.6 ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
 * **Total Costs:** 1.5 BTC
@@ -58,7 +60,8 @@ Create Helm Charts to deploy to K8s.
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 5.  | Helm Charts | Create Helm Charts to deploy the stack to K8s  |
+| 5.  | Helm Charts | Create Helm Charts to deploy the stack to K8s |
+| 6.  | Dashboard | Monitoring Dashboard |
 
 ## Additional Information :heavy_plus_sign: 
 The stack relies heavily on substrate-archiver, a parity project providing index data to a postgres db and on Hasura GraphQL, which provides schema generation and a user interface.
