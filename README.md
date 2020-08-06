@@ -4,7 +4,7 @@
   <img src="./src/Open_Grants_Program.png" style="width:1300px";>
 </p>
 
-**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tracked **transparently** on GitHub and disbursed in **bitcoin**. For larger grants, payments in other currencies and partly private submissions, please visit our [Web3 Foundation Grants page](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) on GitHub. 
+**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tracked **transparently** on GitHub and disbursed in **bitcoin**. 
 
 ---
 
@@ -15,6 +15,9 @@
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
+- [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
+  - [Treasury](#treasury)
+  - [General Grants Program](#general-grants-program)
 - [:information_source: License](#information_source-license)
 
 ## :clipboard: About 
@@ -89,6 +92,19 @@ Operations Team takes care of legal documents, invoicing and remittances.
 *Grant application can be amended at any time, necessitating a reevaluation by the Committee.* 
 
 Additionally, we try to enforce the [code of conduct](https://github.com/w3f/Open-Grants-Program/blob/master/CODE_OF_CONDUCT.md) and based on this potentially [block users](https://github.blog/2016-04-04-organizations-can-now-block-abusive-users/).
+
+## :rocket: Alternative Funding Sources
+
+### Treasury
+
+The treasury is a pot of on-chain funds collected through transaction fees, slashing, staking inefficiencies, etc. The funds held in the treasury can be spent by making a spending proposal. [Polkadot](https://polkadot.network/) as well as [Kusama](https://kusama.network/) offer everyone the opportunity to apply for funding via the treasury. See:
+
+- [Kusama Treasury Guide](https://docs.google.com/document/d/1p3UQUjph5t8TVaWnTkfrI5mE-BABnM9Xvtuhdlhl6JE/edit)
+- [Treasury Wiki](https://wiki.polkadot.network/docs/en/learn-treasury#docsNav)
+
+### General Grants Program
+
+For larger grants, payments in fiat and partly private submissions, please visit our [Web3 Foundation Grants page](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) on GitHub. 
 
 ## :bulb: Help
 
