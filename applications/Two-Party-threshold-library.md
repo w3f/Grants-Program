@@ -111,6 +111,13 @@ Our team have developed a keyless wallet, the wallet currently support 2P-ecdsa.
 | 3.  | demo | Provides an example to help users use the program |  
 
 
+### Additional Information
+
+Our algorithm reference the following paper:
+
+- [Y. Lindell. Fast Secure Two-Party ECDSA Signing. In CRYPTO 2017, Springer (LNCS 10402), pages 613-644, 2017](https://eprint.iacr.org/2017/552.pdf)
+- [Adaptively Secure Feldman VSS and Applications to Universally-Composable Threshold Cryptography](https://eprint.iacr.org/2004/119.pdf)
+
 
 
 
