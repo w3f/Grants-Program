@@ -82,7 +82,8 @@ Our team have developed a keyless wallet, the wallet currently support 2P-ecdsa.
 | ------------- | ------------- | ------------- |
 | 1. | 2P-Ecdsa(secp256k1) client| implement lindell_2017 protocol client side|  
 | 2.  | 2P-Ecdsa(secp256k1) server |implement lindell_2017 protocol server side|  
-| 3.  | demo | Provides an example to help users use the program |  
+| 3.  | unit test | implement two test cases : DKG ,threshold_sign|  
+| 4.  | document | the document is mainly about how to  integrate 2p-ecdsa into developer's application |  
 
 ### Milestone 2
 
@@ -95,7 +96,8 @@ Our team have developed a keyless wallet, the wallet currently support 2P-ecdsa.
 | ------------- | ------------- | ------------- |
 | 1. | 2P-Eddsa(ed25519) client|  implement feldman'vss protocol  client side|  
 | 2.  | 2P-Eddsa(ed25519) server |implement feldman'vss protocol  server side|  
-| 3.  | demo | Provides an example to help users use the program |  
+| 3.  | unit test | implement two test cases : DKG ,threshold_sign|  
+| 4.  | document | the document is mainly about how to  integrate 2p-eddsa into developer's application |  
 
 ### Milestone 3
 
@@ -107,8 +109,9 @@ Our team have developed a keyless wallet, the wallet currently support 2P-ecdsa.
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 1. | 2P-Schnorr(ristretto255) client | implement feldman'vss protocol client side| 
-| 2.  | 2P-Eddsa(ed25519) server |implement feldman'vss protocol  server side|   
-| 3.  | demo | Provides an example to help users use the program |  
+| 2.  | 2P-Schnorr(ristretto255) server |implement feldman'vss protocol  server side|   
+| 3.  | unit test | implement two test cases : DKG ,threshold_sign |  
+| 4.  | document | the document is mainly about how to  integrate 2p-schnorr into developer's application |     
 
 
 ### Additional Information
