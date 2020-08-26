@@ -2,7 +2,7 @@
 
 * **Project:** Substrate startkit GUI
 * **Proposer:** MVP Workshop - https://github.com/MVPWorkshop
-* **Payment Address:** 34YFRc4qm4d4C3CH2b9C2ZUbJSpPz9JN6s 
+* **Payment Address:** bc1qltgppjfmvh7yldel9afntnmp358xxnqtxgw7rd 
 
 ## Project Description :page_facing_up: 
 
@@ -59,7 +59,7 @@ The UX/UI of the app will be an essential part. So let me share with you some of
 
 * **Estimated Duration:** 1 month
 * **FTE:**  3
-* **Costs:** 1.8 BTC
+* **Costs:** 1.5 BTC
 
 
 | Number | Deliverable | Specification | 
@@ -67,26 +67,27 @@ The UX/UI of the app will be an essential part. So let me share with you some of
 | 1. | Design components for GUI | Visual design of application components (in invision) |  
 | 2. | Design UX flows | Create a UX that is pleasant to work with |  
 | 3. | Backend | postgresSQL database, node.js project setup |  
-| 4. | GUI web application | Set React app project structure & start working on UI components |  
-| 5. | Continuous Integration environment | Pipeline that build the web applications |  
-| 6. |  Automated tests | for the code in this milestone |  
-| 7. | Documentation & specification | Explore all the runtime pallets intentions and define their relations in the project documantation |  
+| 4. | GUI web application | Set React app project structure |  
+| 5. | Documentation & specification | Explore all the runtime pallets intentions and define their relations in the project documantation |  
+| 6. | Github OAUTH2 Integration | Integrate Github OAUTH so users can login and later deploy codebase on their account |
 
 
 ### Milestone 2
 
 * **Estimated Duration:** 1 month
 * **FTE:**  2
-* **Costs:** 1.2 BTC
+* **Costs:** 1.5 BTC
 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 1. | GUI web application | React app components |  
 | 2. | Github Integration | Integrate Github library so the user could generate a initial commit with the code base on his account |  
-| 3. | Backend | API’s for handling the code base structure and setting configuration and dependencies with and corresponding tests |  
+| 3. | Backend | API's for handling the code base structure and setting configuration and dependencies with and corresponding tests |  
 | 4. | Demo video | Video showcasing how to use the app |  
-| 5. | Documentation | Describe functionalities and instructions on compiling and running the app, including a feature list and written tutorial. |  
+| 5. | Documentation | Describe functionalities and instructions on compiling and running the app, including a feature list and written tutorial. | 
+| 6. | Continuous Integration environment | Pipeline that build the web applications |  
+| 7. | Automated tests | for the whole app |
 
 Deliverables will be dockerized.
 
