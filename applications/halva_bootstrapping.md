@@ -35,4 +35,7 @@ We want to automate the process of bootstrapping a new project using the Halva f
 | ------------- | ------------- | ------------- |
 | 1. | Command `init` | Create a new Halva project within the existing substrate project directory or creating new substrate project with initialed halva within |
 | 2. | Command `create` | Helper to create new test-cases |
-| 3. | Documentations | Write documentations for both commands |
+| 3. | Testing | Write unit-tests for implemented functions |
+| 4. | Examples | Update [halva-test-example](https://github.com/halva-suite/halva-test-example) |
+| 5. | Tutorial | Write step by step tutorial and publish it |
+| 6. | Documentations | Write documentations for both commands |
