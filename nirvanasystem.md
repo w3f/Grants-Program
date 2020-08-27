@@ -46,15 +46,15 @@ Please provide the following:
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 10 month
+* **Total Estimated Duration:** 10 months
 * **Full-time equivalent (FTE):**  1
-* **Total Costs:** $25k
+* **Total Costs:** 2 BTC
 
 ### Milestone 1
 
 * **Estimated Duration:** 1 month
 * **FTE:**  0.1
-* **Costs:** $2.5K
+* **Costs:** 0.2 BTC
 
 
 | Number | Deliverable | Specification | 
@@ -67,9 +67,9 @@ Please provide the following:
 
 ### Milestone 2
 
-* **Estimated Duration:** 3 month
+* **Estimated Duration:** 3 months
 * **FTE:**  0.3
-* **Costs:** $7.5K
+* **Costs:** 0.6 BTC
 
 
 | Number | Deliverable | Specification | 
@@ -80,9 +80,9 @@ Please provide the following:
 
 ### Milestone 3
 
-* **Estimated Duration:** 3 month
+* **Estimated Duration:** 3 months
 * **FTE:**  0.3
-* **Costs:** $7.5K
+* **Costs:** 0.6 BTC
 
 
 | Number | Deliverable | Specification | 
@@ -94,7 +94,7 @@ Please provide the following:
 
 * **Estimated Duration:** 3 month
 * **FTE:**  0.3
-* **Costs:** $7.5K
+* **Costs:** 0.6 BTC
 
 
 | Number | Deliverable | Specification | 
@@ -107,12 +107,15 @@ Any additional information that you think is relevant to this application that h
 
 Possible additional information to include:
 * What work has been done so far?
+
 We have completed milestone 1 and are in progress on milestone 2.
 
 * Are there are any teams who have already contributed (financially) to the project?
+
 Yes, the funds for completing Milestone 1 and Starting Milestone 2 are paid by volunteers themselves.
 
 * Have you applied for other grants so far?
+
 No.
 
 * Are there any other projects similar to yours? If so, how is your project different?
