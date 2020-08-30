@@ -1,18 +1,18 @@
 # Open Grant Proposal
 
-* **Project:** Subdex
+* **Project:** SubDEX
 * **Proposer:** subdarkdex
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
 
 ## Project Description :page_facing_up: 
 
-SubDex is the decentralized cross-chain exchange based on automated liquidity protocol. This project was initially submitted to [Hackusama](https://devpost.com/software/dark-dex). The Subdex team's goal goes beyond what was produced in the hackathon, we aim to continue to build Subdex in order to have the Subdex parachain connect to the main polkadot network and provide external tools to support other parachains access Subdex's full functionality. 
+SubDEX is the decentralized cross-chain exchange based on automated liquidity protocol. This project was initially submitted to [Hackusama](https://devpost.com/software/dark-dex). The SubDEX team's goal goes beyond what was produced in the hackathon, we aim to continue to build Subdex in order to have the Subdex parachain connect to the main polkadot network and provide external tools to support other parachains access Subdex's full functionality. 
 
-We believe Subdex is good for the Substrate / Polkadot Ecosystem because it addresses the following problems when user wants to exchange asset on any blockchains that are or will be connected to the Polkadot system, either through being a parachain / bridges: 
+We believe SubDEX is good for the Substrate / Polkadot Ecosystem because it addresses the following problems when user wants to exchange asset on any blockchains that are or will be connected to the Polkadot system, either through being a parachain / bridges: 
 
-- Third Party Risks through CEX is avoided as Subdex is decentralised and runs on a parachain with Polkadot's shared securty
+- Third Party Risks through CEX is avoided as SubDEX is decentralised and runs on a parachain with Polkadot's shared securty
 - Low liquidity issues (high buy/sell spread) is replaced with AMM (Automatic Market Maker - inspired by Uniswap), which has proven to attract liquidity providers
-- Only  pseudo-anonymity is provided by current DEX, it is the medium term goal for Subdex to provide DarkDex features for true privacy
+- Only  pseudo-anonymity is provided by current DEX, it is the medium term goal for SubDEX to provide DarkDex features for true privacy
 
 Our team met during the hackthon and have established strong inter-team relationships through a common goal - _to provide a DEX that is build by, used by and maintained by the community_.
 
@@ -42,7 +42,7 @@ Our team met during the hackthon and have established strong inter-team relation
 | 4. | UI Infrastrcture | HTTPS to the Subdex frontend, encrypted wss to the node |
 | 5. | Dex Pallet | Implement Uniswap V2 AMM protocol with full test coverage and eliminate overflow/underflow risks in calculation in the chain |  
 | 6. | Collator Incentive | Include node runner incentive for the parachain (as a community build project, we see it fitting that it will be ran by the community) |
-| 7. | Parachain Infrastructure | Deploy to secured and high reliability server as the initial collator for the Subdex Parachain. |
+| 7. | Parachain Infrastructure | Deploy to secured and high reliability server as the initial collator for the SubDEX Parachain. |
 
 At the end of milestone 1, we want to be fully ready to connect with the Parachain Roccoco testnet
 
