@@ -12,9 +12,9 @@ We believe SubDEX is good for the Substrate / Polkadot Ecosystem because it addr
 
 - Third Party Risks through CEX is avoided as SubDEX is decentralised and runs on a parachain with Polkadot's shared securty
 - Low liquidity issues (high buy/sell spread) is replaced with AMM (Automatic Market Maker - inspired by Uniswap), which has proven to attract liquidity providers
-- Only  pseudo-anonymity is provided by current DEX, it is the medium term goal for SubDEX to provide DarkDex features for true privacy
+- Only pseudo-anonymity is provided by current DEX, it is the medium term goal for SubDEX to provide true privacy
 
-Our team met during the hackthon and have established strong inter-team relationships through a common goal - _to provide a DEX that is build by, used by and maintained by the community_.
+Our team met during the hackthon and have established strong inter-team relationships through a common goal - _to provide a DEX that is built by, used by and maintained by the community.
 
 
 ## Team :busts_in_silhouette:
