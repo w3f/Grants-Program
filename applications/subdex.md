@@ -6,7 +6,7 @@
 
 ## Project Description :page_facing_up: 
 
-SubDEX is the decentralized cross-chain exchange based on automated liquidity protocol. This project was initially submitted to [Hackusama](https://devpost.com/software/dark-dex). The SubDEX team's goal goes beyond what was produced in the hackathon, we aim to continue to build Subdex in order to have the Subdex parachain connect to the main polkadot network and provide external tools to support other parachains access Subdex's full functionality. 
+SubDEX is the decentralized cross-chain exchange based on automated liquidity protocol. This project was initially submitted to [Hackusama](https://devpost.com/software/dark-dex). The SubDEX team's goal goes beyond what was produced in the hackathon, we aim to continue to build Subdex in order to have the Subdex parachain connect to the main polkadot network and provide external tools to support other parachains access SubDEX's full functionality. 
 
 We believe SubDEX is good for the Substrate / Polkadot Ecosystem because it addresses the following problems when user wants to exchange asset on any blockchains that are or will be connected to the Polkadot system, either through being a parachain / bridges: 
 
@@ -39,7 +39,7 @@ Our team met during the hackthon and have established strong inter-team relation
 | 1. | UI connection | Update UI to support Parachain (currently connected to a substrate standalone chain) and connection to browser wallet |
 | 2. | UI feature | Allow user to set allowed slippage |
 | 3. | UI Theme | Provide 2 themes for UI -- light and dark and allow user to choose which one
-| 4. | UI Infrastrcture | HTTPS to the Subdex frontend, encrypted wss to the node |
+| 4. | UI Infrastrcture | HTTPS to the SubDEX frontend, encrypted wss to the node |
 | 5. | Dex Pallet | Implement Uniswap V2 AMM protocol with full test coverage and eliminate overflow/underflow risks in calculation in the chain |  
 | 6. | Collator Incentive | Include node runner incentive for the parachain (as a community build project, we see it fitting that it will be ran by the community) |
 | 7. | Parachain Infrastructure | Deploy to secured and high reliability server as the initial collator for the SubDEX Parachain. |
@@ -53,7 +53,7 @@ Our initial focus will be development, but we will setup medium and twitter acco
 
 ## Additional Information :heavy_plus_sign: 
 
-We have broken down the Subdex product roadmap into small managable steps and would like to get feedback from the community and the foundation every step of the way, we intend to apply for other grants after this milestone. The overview of the features Subdex intend to have are the follow:-
+We have broken down the SubDEX product roadmap into small manageable steps and would like to get feedback from the community and the foundation every step of the way, and we intend to apply for other grants after this milestone. The overview of the features SubDEX intend to have are the follow:-
 
 - AMM protocol (we have implemented Uniswap V1 protocol with some short-cuts in the hackathon, we will implement Uniswap V2) 
 - Liquidity provider fee will be set to 0.3% initially but will be set by the Liquidity providers and traders through the democracy module when the network has enough users.
