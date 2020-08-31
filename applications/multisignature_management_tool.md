@@ -79,4 +79,4 @@ Budget: 10,000 USD
 
  
 
-**Total Budget: 20,000 USD in total, we are willing to accept up to 50% of payment in vested DOTs and 50% in BTC.**
+**Total Budget: 20,000 USD in total, we are willing to accept 100% in BTC.**
