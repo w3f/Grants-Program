@@ -59,8 +59,8 @@ But our focus has always been Subscan blockchain explorer, which keeps it update
 - Multisig wallet creation and management 
 - Basic Multisig Extrinsic(transfer) create and process in Multisig wallet
 - Multisig wallet support polkadot mainnet
-- build user-friendly UI to list decoded call data with its hash for users who participated in the multi-signatures, data will be verified by hash on frontend
-- use database or other backend service to store the index data.
+- Build user-friendly UI to list decoded call data with its hash for users who participated in the multi-signatures, data will be verified by hash on frontend
+- Use database or other backend service to store the index data.
 - Docker Files and Images
 - Tutorials
 
