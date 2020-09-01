@@ -59,12 +59,14 @@ But our focus has always been Subscan blockchain explorer, which keeps it update
 - Multisig wallet creation and management 
 - Basic Multisig Extrinsic(transfer) create and process in Multisig wallet
 - Multisig wallet support polkadot mainnet
+- build user-friendly UI to list decoded call data with its hash for users who participated in the multi-signatures, data will be verified by hash on frontend
+- use database or other backend service to store the index data.
 - Docker Files and Images
 - Tutorials
 
 Total for worker implementation: 25 days
 
-Budget: 10,000 USD
+Budget: 1 BTC
 
 ### Advanced function: more features for multisig wallet and support more network
 
@@ -75,8 +77,8 @@ Budget: 10,000 USD
 
 Total for worker implementation: 30 days
 
-Budget: 10,000 USD
+Budget: 1 BTC
 
  
 
-**Total Budget: 20,000 USD in total, we are willing to accept 100% in BTC.**
+**Total Budget: 2 BTC.**
