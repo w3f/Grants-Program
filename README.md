@@ -40,7 +40,7 @@ You can find a list of areas in the Web 3.0 Technology Stack that demand particu
 The Committee consists of individuals who know the funding priorities of the Polkadot ecosystem. The committee evaluates grant applications and provides feedback on these applications.
 
 * [Aeron Buchanan](https://github.com/aeronbuchanan)
-* [Peter Czaban](https://github.com/keorn)
+* [Marcin Górny](https://github.com/mmagician)
 * [Fredrik Harrysson](https://github.com/folsen)
 * [David Hawig](https://github.com/Noc2)
 * [Kasper Mai Jørgensen](https://github.com/KasperJor)
