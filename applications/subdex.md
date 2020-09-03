@@ -26,12 +26,17 @@ The team met during the hackthon and have established strong inter-team relation
 
 ## Team :busts_in_silhouette:
 
-* **Members:** Name of team member	1, name of team member	2, ..
-* **LinkedIn Profiles:** https://www.linkedin.com/<person_1>, https://www.linkedin.com/<person_2>, ...
-* **Code Repos:** https://github.com/<repo_1>, https://github.com/<repo_2>, ...
+* **Members:** Arsen Kondratiev, Belsy Yuen, Fei Yang, Herry He, Stasi Kondaurova
+* **LinkedIn Profiles:** https://www.linkedin.com/in/arsen-kondratiev-031801172/, https://www.linkedin.com/in/belsy/, https://www.linkedin.com/in/fyang1024/,,https://www.linkedin.com/in/kstasi/
+* **Code Repos:** https://github.com/subdardex
 * **Website:**	http://subdex.io.s3.eu-west-2.amazonaws.com/index.html
 * **Legal Structure:** Please provide the name and registered address of the legal entity executing the project. 
-* **Team's Experience:** Please describe the team's relevant experience.
+* **Team's Experience:** 
+  - Arsen is a software engineer, particularly interested in the blockchain domain. During the last year was mostly focused on substrate runtime development at [Joystream](https://github.com/Joystream/joystream/tree/content_directory_second_try) and Liqum projects. Earlier, worked on infrastructure backends for DAPPs, based on TRON and EOS blockchain platforms.
+  - Belsy is a software engineer who focused on working with the substrate framework in the last year. Prior to that, she has worked as a full stack engineer for other blockchain projects on Ethereum, Hyperledger Burrow / Fabric.
+  - Fei has been a full stack software engineer for over 10 years and he got involved in blockchain development in May 2017. He worked in centralised exchanges such as [Bitfinex](https://www.bitfinex.com/) and [SDCE](https://sdce.com.au) and believes DEX is the future.
+  - Herry is a 6-year e-commerce entrepreneurial veteran as well as an enthusiast of blockchain. After a lecture by Brian from Acala in 2019, where she was shocked by Substrate technology, she decided to devote herself into the tide of Polkadot.
+  - Stasi is is a software engineer, technology-agnostic who prefers working on DApps for developing Blockchains like Tezos or TON. But also has expertise with more sustainable blockchains: Ethereum, Stellar, EOS, UTXO-based blockchains, currently works on [Quipuswap](https://medium.com/madfish-solutions/how-to-use-quipuswap-on-carthagenet-44c7ebfb97b) (DEX on Tezos), has a hobby to draw [mock-ups](https://www.figma.com/proto/bdS7KgUPIoUtWybrYewVHD/Cepheus?node-id=45%3A0&scaling=min-zoom) and write [articles](https://medium.com/madfish-solutions/sol2ligo-in-action-migrating-solidity-smart-contract-to-ligo-sol2ligo-update-3-961ddbd9715c)
 
 ## Development Roadmap :nut_and_bolt: 
 
