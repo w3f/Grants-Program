@@ -6,15 +6,22 @@
 
 ## Project Description :page_facing_up: 
 
-SubDEX is the decentralized cross-chain exchange based on automated liquidity protocol. This project was initially submitted to [Hackusama](https://devpost.com/software/dark-dex). The SubDEX team's goal goes beyond what was produced in the hackathon, we aim to continue to build Subdex in order to have the Subdex parachain connect to the main polkadot network and provide external tools to support other parachains access SubDEX's full functionality. 
+SubDEX is a decentralized cross-chain exchange based on AMM (automated market maker) protocol. This project was initially submitted to [Hackusama](https://devpost.com/software/dark-dex). The SubDEX team's goal goes beyond what was produced in the hackathon. We aim to continue to build SubDEX and hope it becomes a parachain that connects to Kusama and Polkadot networks, so that other parachain assets can be exchanged on it with privacy in a decentralised way. 
 
-We believe SubDEX is good for the Substrate / Polkadot Ecosystem because it addresses the following problems when user wants to exchange asset on any blockchains that are or will be connected to the Polkadot system, either through being a parachain / bridges: 
+Centralised Exchanges (CEXs) have grown exponentially in last decade, because
+1. People have demand to exchange different blockchain assets
+2. Different blockchains are isolated from each other like islands in oceans
+People have to rely on a middle man (CEX) to exchange different blockchain assets.
 
-- Third Party Risks through CEX is avoided as SubDEX is decentralised and runs on a parachain with Polkadot's shared securty
-- Low liquidity issues (high buy/sell spread) is replaced with AMM (Automatic Market Maker - inspired by Uniswap), which has proven to attract liquidity providers
-- Only pseudo-anonymity is provided by current DEX, it is the medium term goal for SubDEX to provide true privacy
+CEX is not web 3.0. It is centralised and it is Web 2.0 or 2.5 at best. Web 3.0 should be more decentralised. We believe DEX is an esstential part of web 3.0. 
 
-Our team met during the hackthon and have established strong inter-team relationships through a common goal - _to provide a DEX that is built by, used by and maintained by the community.
+DEXs have existed on Ethereum blockchain a few years, but they usually have low liquidity and bad user experience. [Vitalik's research](https://ethresear.ch/t/improving-front-running-resistance-of-x-y-k-market-makers/1281) inspired Uniswap team and [Uniswap's success](https://cointelegraph.com/news/defi-explosion-uniswap-surpasses-coinbase-pro-in-daily-volume#:~:text=Uniswap%2C%20the%20most%20widely%2Dused,daily%20volume%20on%20Aug%2030.&text=According%20to%20the%20data%20from,volume%2C%20according%20to%20CoinMarketCap%20data.) inspired us. We think it is time for DEXs to disrupt CEXs 
+
+Uniswap's success is exciting, but it still has its limit. It's mainly used to exchange Ethereum assets (ETH and ERC20 tokens). Some solutions such as REN exists for user to exchange BTC with Ethereum assets, but most of other blockchain assets cannot be traded on DEXs on Ethereum. AMM protocol is evolving. We have seen that Uniswap V1 evolved to Uniswap V2 and Bancor evolved to Bancor V2, but the old version and new version have to co-exist because the old version cannot be seemlessly upgraded to new version on Ethereum.
+
+Kusama / Polkadot's cross-chain protocol and on-chain upgrade make them the perfect blockchain to build a DEX. We are aware there are other DEXs such as Polkaswap and Acala being built now, but we don't think 2 are enough and SubDEX will be different (in terms of features and user experience) from them.
+
+The team met during the hackthon and have established strong inter-team relationships through a common goal - _to provide a DEX that is built by, used by and maintained by the community.
 
 
 ## Team :busts_in_silhouette:
