@@ -41,7 +41,7 @@ Are there any other projects similar to yours? If so, how is your project differ
 * https://<your_domain>
 
 ### Legal Structure 
-Please provide the name and registered address of the legal entity executing the project. When applying via the General Grants program, these details can also be shared privately via the Google Form used for your application.
+Please provide the name and registered address of the legal entity executing the project.
 
 ### Team's experience
 Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
