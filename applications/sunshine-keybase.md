@@ -36,10 +36,10 @@ Social media accounts are linked to a chain account, by submitting a proof in th
 
 #### Flutter Android UI
 
-The Flutter UI allows Android users to initialize a local keystore and device identity using the `sunshine-identity` pallet. It allows the user to initialize the keystore, set a passphrase, and change the passphrase.
+The Flutter UI allows Android users to initialize a local keystore and device identity using the `sunshine-identity` pallet. It allows the user to initialize the keystore, set a passphrase, and change the passphrase. The UI also allows the user to paste links to github gists to prove ownership of github accounts.
 
 ### Ecosystem Fit 
-There are other approaches to creating an identity graph, but we have yet to find another substrate project that implements device-oriented key revocability. The native keystore leverages [`ipfs-embed`](https://github.com/ipfs-rust/ipfs-embed) to store sensitive data in an encrypted form on the local hardware. Over time, we expect [`ipfs-embed`](https://github.com/ipfs-rust/ipfs-embed) to evolve with the needs and requirements of users. The current design intends to incentivize and enforce the storage of private offchain data on permissioned client networks.
+There are other approaches to creating an identity graph, but we have yet to find another substrate project that implements device-oriented key revocability. The native keystore leverages [`ipfs-embed`](https://github.com/ipfs-rust/ipfs-embed) to store sensitive data in an encrypted form on the local hardware. Over time, we expect [`ipfs-embed`](https://github.com/ipfs-rust/ipfs-embed) to evolve with the needs and requirements of users. The current design coordinates the storage of private offchain data on permissioned client networks.
 
 ## Team :busts_in_silhouette:
 
