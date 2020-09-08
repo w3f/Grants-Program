@@ -66,6 +66,8 @@ Please describe the team's relevant experience.  If the project involves develop
 * https://github.com/decent-bet/solido-provider-connex
 * https://github.com/decent-bet/solido-cli
 * https://github.com/decent-bet/solido-block-date-converter
+* https://github.com/xdvplatform/odenplan-wallet
+* https://github.com/xdvplatform/xdvplatform-wallet
 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/rogelio-morrell-575aa51/
