@@ -39,7 +39,9 @@ Social media accounts are linked to a chain account, by submitting a proof in th
 The Flutter UI allows Android users to initialize a local keystore and device identity using the `sunshine-identity` pallet. It allows the user to initialize the keystore, set a passphrase, and change the passphrase. The UI also allows the user to paste links to github gists to prove ownership of github accounts.
 
 ### Ecosystem Fit 
-There are other approaches to creating an identity graph, but we have yet to find another substrate project that implements device-oriented key revocability. The native keystore leverages [`ipfs-embed`](https://github.com/ipfs-rust/ipfs-embed) to store sensitive data in an encrypted form on the local hardware. Over time, we expect [`ipfs-embed`](https://github.com/ipfs-rust/ipfs-embed) to evolve with the needs and requirements of users. The current design coordinates the storage of private offchain data on permissioned client networks.
+There are other approaches to creating an identity graph, but we have yet to find another substrate project that implements device-oriented key revocability. The native keystore leverages [`ipfs-embed`](https://github.com/ipfs-rust/ipfs-embed) to store sensitive data in an encrypted form on the local hardware. Over time, we expect [`ipfs-embed`](https://github.com/ipfs-rust/ipfs-embed) to evolve with the needs and requirements of users. 
+
+The current design coordinates the storage of private offchain data on permissioned client networks. Our project will use this identity infrastructure for sharing encrypted messages and backing up encrypted files, privately and within teams with membership tracked transparently on-chain.
 
 ## Team :busts_in_silhouette:
 
@@ -82,7 +84,7 @@ There is only one milestone.
 | ------------- | ------------- | ------------- |
 | 0a. | License | Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that shows how to run the local dev node alongside the Flutter UI to register and manage a sunshine-identity on a local network. |
-| 0c. | Testing Guide | The client will have substrate-subxt integration tests (80% coverage) that verify behavior at the network level to ensure functionality and robustness. In the guide we will describe how to run these tests. | 
+| 0c. | Testing Guide | The client will have substrate-subxt integration tests that verify behavior at the network level to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 1. | Substrate module: Chain | We will create a pallet that allows a closed set of signers to build private proof of authority chains using ipfs and substrate. These chains consists of private data shared among the closed set. |  
 | 2. | Substrate module: Identity | We will create a pallet that uses the Chain module to manage data relevant to the registered identity. This module adds more granular management when storing the user key, device keys, password and social media accounts. |  
 | 3. | Flutter UI | We will write a Flutter UI that communicates directly between our Rust substrate-subxt client and our Flutter interface to express the user identity configuration interface. |  
