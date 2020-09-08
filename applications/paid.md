@@ -27,7 +27,7 @@ Please provide the following:
 
 ### Project Details 
 
-![PAID Protocol](/images/paid_protcol.png)
+![PAID Protocol](./paid_protocol.png)
 
 We expect the teams to already have a solid idea about the project's expected final state.
 
