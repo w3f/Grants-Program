@@ -2,8 +2,8 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project:** The name of the project
-* **Proposer:** GitHub username
+* **Project:** PAID
+* **Proposer:** [Master Ventures](https://github.com/MasterVentures)
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
@@ -38,7 +38,7 @@ Are there any other projects similar to yours? If so, how is your project differ
 * Names of team members	
 
 ### Team Website	
-* https://<your_domain>
+* https://www.master.ventures
 
 ### Legal Structure 
 Please provide the name and registered address of the legal entity executing the project.
@@ -47,12 +47,19 @@ Please provide the name and registered address of the legal entity executing the
 Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+* https://github.com/decent-bet/solido
+* https://github.com/decent-bet/vuex-solido
+* https://github.com/decent-bet/solido-repl
+* https://github.com/decent-bet/solido-web-console
+* https://github.com/decent-bet/solido-provider-web3
+* https://github.com/decent-bet/solido-provider-thorify
+* https://github.com/decent-bet/solido-provider-connex
+* https://github.com/decent-bet/solido-cli
+* https://github.com/decent-bet/solido-block-date-converter
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* https://www.linkedin.com/in/rogelio-morrell-575aa51/
+* https://www.linkedin.com/in/bradleysuira/
 
 ## Development Roadmap :nut_and_bolt: 
 
