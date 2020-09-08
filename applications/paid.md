@@ -26,6 +26,9 @@ Please provide the following:
   * An indication of why your team is interested in creating this project.
 
 ### Project Details 
+
+![PAID Protocol](/images/paid_protcol.png)
+
 We expect the teams to already have a solid idea about the project's expected final state.
 
 Therefore, we ask the teams to submit (where relevant):
