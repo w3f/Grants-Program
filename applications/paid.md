@@ -20,26 +20,48 @@ PAID protocol is based off ideas from MDV â€œMensajeria Documentos Verificablesâ
 * MDV
 * XDV
 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+#### Integration with Substrate
+
+Our development pipeline consits of standard EVM compatible tooling with the exception of compilation, which is done by the solang compiler, which allows us to deploy contracts compiled to Edgware as WASM contracts compatible with Substrate / Polkadot.
+
+
 
 ### Project Details 
 
 ![PAID Protocol](./paid_protocol.png)
 
-We expect the teams to already have a solid idea about the project's expected final state.
+This image explains the process of a workflow registration that can be used with PAID protocol.
 
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
+A PAID workflow looks like:
+
+* User creates an agreement or downloads a pre existing template
+
+* Alice sends signed agreement to Bob, which then executes the agreement request party signatures.
+
+* Signed agreement is stored on chain and off chain and PAID worflow is created, compiled and registered.
+
+* On Contract execution, workflow is executed by a workflow gateway, which whitelist allowed users.  
+
+* Contracts calls that are integrated with oracles are called and allows:
+ * Applies agreement terms (terms must be classify to numeric, similar to ML Classification)
+ * Verify agreement terms subjects (Only supports token price subject in first release)
+
+
+### Previous Work
+
+- **XDV Technology**: Contains components to create digital signatures for documents using HD Wallet technology and integrates with Swarm (ethereum) and compatible with hardware modules that support PKCS#11 and PKCS#12. Links: https://app.xdv.digital/about/#/ (Spanish), https://app.xdv.digital/
+- **MDV**: A Solidity state  machine and workflow engine, using optimized code with RLP encoding. Links: https://gist.github.com/molekilla/b85f1c9de63be3afacbfeca703bb3fe4 (Spanish)
+
 
 ### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
+
+- **OpenLaw**: Smart contract based legal agreements. Links: https://www.openlaw.io/
+
+Our project is different in that our team has had more than a year of experience with making wallets for blockchain dapps and then half a year with deep experience in DID, Swarm, IPFS and document signing, which are the bulk of tech experience as defined in OpenLaw. But our protocol takes it a bit further and uses oracles and ML to make it more automated and allows for hybrid scenarios, where a ML business logic can rank or tag a dispute and then it can be further review by an incentivized human arbitror, allowing for consensus of a dispute. Compared to OpenLaw, which is OpenCourt API is strictly human based, our protocol excels not only in the dispute/arbitrage, but also at transcribing using NLP instead of a Markup Language.
+
+Further along, by adding the latest in identity technology, allows us to delegate authority to smart contracts using the DID decentralized identity of the individual or smart contract.
+
+We think this project, while developed in EVM, will allow for better and transparent DeFi projects to be used in the Polkadot ecosystem.
 
 ## Team :busts_in_silhouette:
 
