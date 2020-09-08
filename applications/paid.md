@@ -13,6 +13,13 @@ If this application in response to an RFP then please indicate this on the first
 
 ### Overview
 
+PAID protocol is based off ideas from MDV “Mensajeria Documentos Verificables” and OpenLaw and consists of part protocol onchain and a off chain protocol using content networks like IPFS/Swarm and using DID/VC standards as identity and verification mechanism.
+
+#### Technologies
+* OpenLaw
+* MDV
+* XDV
+
 Please provide the following:
   * A brief description of the project.
   * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
@@ -34,8 +41,8 @@ Are there any other projects similar to yours? If so, how is your project differ
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
-* Names of team members	
+* Rogelio Morrel
+* Bradley Suira	
 
 ### Team Website	
 * https://www.master.ventures
