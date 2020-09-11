@@ -54,14 +54,16 @@ But our focus has always been Subscan blockchain explorer, which keeps it update
 
 ### Basic function: generate Multisig account and send Extrinsic
 
-- General design
-- Integrate with polkadot js extension
+- General UI design (in [Figma](https://www.figma.com/proto/WaysNQWlEB4wWK0a4mzYJQ/Multisig?scaling=min-zoom&node-id=0%3A2))
+- backend design doc(in [Notion](https://www.notion.so/backend-doc-e7b4f79ede7b4d9cb39a52769c2aab2d), in [Google Docs](https://docs.google.com/document/d/18OgQ2Oh1oR9LIiZ9Uct35zHQ25f7gN1C-ngiqyrMfxU/edit?usp=sharing))
+- Integrate with polkadot js extension 
 - Multisig wallet creation and management 
 - Basic Multisig Extrinsic(transfer) create and process in Multisig wallet
 - Multisig wallet support polkadot mainnet
 - Build user-friendly UI to list decoded call data with its hash for users who participated in the multi-signatures, data will be verified by hash on frontend
 - Use database or other backend service to store the index data.
 - Docker Files and Images
+- Unit tests and integration test
 - Tutorials
 
 Total for worker implementation: 25 days
@@ -73,6 +75,7 @@ Budget: 1 BTC
 - Multisig wallet support more kinds of Extrinsic such as staking, Democracy
 - Support kusama ,Darwinia and other network which base on Substrate 2.0 
 - Docker Files and Images
+- Unit tests and integration test
 - Tutorials
 
 Total for worker implementation: 30 days
