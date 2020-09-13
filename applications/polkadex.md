@@ -115,13 +115,13 @@ Individual
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Refactor Trading Engine in DEX pallet | Refactoring the limit and market order algorithms for efficiency and high-speed trading |
+| 1. | Refactor Trading Engine in DEX pallet | Refactoring the limit and market order algorithms for efficiency and high-speed trading. |
 | 2. | Optimize Storage access | Optimize the storage and efficiency of reads and writes to substrate storage. |
 | 3. | Check for Data errors | Checking the security for buffer overflows or any other type of data errors that may affect exchange transactions. | 
-| 4. | Market Data API | Save closing_bid, closing_ask, and volume for each trading pair at each block on the chain |  
-| 5. | Enable Market Data RPC | Implement RPC for retrieving Market data from full nodes for technical analysis |  
-| 6. | Unit tests for Limit, Market Orders, and Market Data API | Integration of Unit tests for Limit, Market Orders & Market Data API|  
-| 7. | Documentation | Proper documentation to submit Limit, Market orders or retrieve Market Data using Polkadotjs API |  
+| 4. | Market Data API | Save closing_bid, closing_ask, and volume for each trading pair at each block on the chain. |  
+| 5. | Enable Market Data RPC | Implement RPC for retrieving Market data from full nodes for technical analysis. |  
+| 6. | Unit tests  | Integration of Unit tests for Limit, Market Orders & Market Data API.|  
+| 7. | Documentation | Proper documentation to submit Limit, Market orders or retrieve Market Data using Polkadotjs API. |  
 | 8. | Docker Container | Provide a docker container |
 
 ### Milestone 2: Install ChainBridge Pallet, Governance of Relayers and Staking.
@@ -131,12 +131,12 @@ Individual
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | ChainBridge Pallet Installation | Configure the Substrate Chain Runtime to install ChainBridge pallet |  
+| 1. | ChainBridge Pallet Installation | Configure the Substrate Chain Runtime to install ChainBridge pallet. |  
 | 2. | Decentralized Staked relayer set | Extending the ChainBridge pallet to have a decentralized relayer set. The smart contracts and pallet provided by ChainBridge will not have administrative role but instead administrative actions such as updating relayer set will happen using staking. | 
-| 3. | Generic Assets pallet Integration | Connecting ChainBridge pallet to generic asset pallet to Mint and Burn tokens from Substrate side during deposit and withdrawal from and to Ethereum mainnet | 
-| 4. | Security Audit | Audit the implemented system for faults in configuration | 
+| 3. | Generic Assets pallet Integration | Connecting ChainBridge pallet to generic asset pallet to Mint and Burn tokens from Substrate side during deposit and withdrawal from and to Ethereum mainnet. | 
+| 4. | Security Audit | Audit the implemented system for faults in configuration. | 
 | 5. | Unit test | Add test cases for withdrawals and deposits. | 
-| 6. | Documentation | Proper documentation for Depositing and Withdrawing from a local Ethereum node. | 
+| 6. | Documentation | Proper documentation for Deposit and Withdrawal from a local Ethereum node. | 
 
 ### Milestone 3: Web UI, Documentation & Tutorials
 * **Estimated Duration:** 2 weeks
@@ -145,9 +145,9 @@ Individual
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Provide our Web UI | Convert mockups into working websites and connect them to full nodes using polkdotjs API. (Includes Dashboard, Login using Polkadot browser extension) |  
-| 2. | Custom Trading Bot Tutorial | A simple implementation trading bot based on moving average enabled using market data from full nodes | 
-| 3. | API Documentation | Documentation of APIs provided by a full node for developing custom UI/UX | 
+| 1. | Provide our Web UI | Convert mockups into working websites and connect them to full nodes using polkdotjs API. (Includes Dashboard, Login using Polkadot browser extension). |  
+| 2. | Custom Trading Bot Tutorial | A simple implementation trading bot based on moving average enabled using market data from full nodes. | 
+| 3. | API Documentation | Documentation of APIs provided by a full node for developing custom UI/UX. | 
 | 4. | Basic Trading Tutorial | Basic trading tutorial for submitting limit & market orders based on our UI design. | 
 
 
@@ -156,6 +156,6 @@ Individual
 The tutorials and Documentation that we provide will be published as articles in Medium and other social media platforms with due mention about Web3 grant.
 We also intend to engage community by providing grants in our tokens to add more support and improve our codebase.
 ## Future Plans
-We will be registering a LLC for taking this project ahead.
+We will be registering an LLC for taking this project ahead.
 We intend to host a the Web UI provided here. We will also be developing a cloud service to analyse and aggregate the market data to provide a wide range of technical indicators like Bollinger bands, RSI etc.
 We want to provide traders the maximum possible user experience compared to a centralized exchange.
