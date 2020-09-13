@@ -78,13 +78,13 @@ We have provided a comparison chart against two famous DEXs
 
 ### Team members
 
-* Vivek Prasannan (Btech Computer Engineering) is passionate about Decentralized computing and has been actively following the crypto/blockchain community since 2013. He has researched and worked on a new [BSIP Link](https://github.com/bitshares/bsips/pull/119)  for Bitshares that will enable off-chain activities that can be settled transparently on the blockchain, and implicitly enables the creation of savings accounts for the users that are locked a certain time period to enhance fund security. He has successfully exited two startups in cloud computing, infrastructure support, and fintech space.
+* Vivek Prasannan (Btech Computer Engineering) is passionate about Decentralized computing and has been actively following the crypto/blockchain community since 2013. He has researched and worked on a new [BSIP](https://github.com/bitshares/bsips/pull/119)  for Bitshares that will enable off-chain activities that can be settled transparently on the blockchain, and implicitly enables the creation of savings accounts for the users that are locked a certain time period to enhance fund security. He has successfully exited two startups in cloud computing, infrastructure support, and fintech space.
     - Experience: C++, RUST & Substrate Framework
 
 * Gautham J, a 3rd-year B.Tech undergrad student at National Institute of Technology, Calicut, India. He has been at the forefront of distributed ledger technology by launching his own version of a consensus algorithm known as Pebble using Lamport’s vector clocks which is still in progress. The team received a blockchain innovation award from the BFSI sector by Banking Frontier. He has also co-authored an academic paper for Supply Chain management and predictions using machine learning models and ethereum network which is currently being peer-reviewed.
     - Experienced in GoLang, RUST, Python, C++, and Substrate Framework.
 
-* Deepansh, a 4th-year  B.Tech undergrad student worked with multiple early-stage startups for developing business strategies and exited after making those startups a success. One of the startups that he worked got the Best Startup award in the National Institute of Technology Startup Conclave. He is also part of the Innovation Council for universities in Kerala under the Government of India. He along with Gautham received an award for their innovative consensus algorithm that enables high throughput transactions in permissionless networks.
+* Deepansh Singh, a 4th-year  B.Tech undergrad student at National Institute of Technology, Calicut, India. worked with multiple early-stage startups for developing business strategies and exited after making those startups a success. One of the startups that he worked got the Best Startup award in the National Institute of Technology Startup Conclave. He is also part of the Innovation Council for universities in Kerala under the Government of India. He along with Gautham received an award for their innovative consensus algorithm that enables high throughput transactions in permissionless networks.
 
 ### Team Website	
 * https://github.com/Polkadex-Substrate
@@ -106,7 +106,7 @@ Individual
 ### Overview
 * **Total Estimated Duration:** 12 weeks
 * **Full-time equivalent (FTE):**  5.5 FTE
-* **Total Costs:** 2.9 BTC 
+* **Total Costs:** 3 BTC 
 
 ### Milestone 1 -  Optimize Trading algorithm & Check for data errors
 * **Estimated Duration:** 5 weeks
