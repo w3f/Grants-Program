@@ -1,7 +1,5 @@
 # Open Grant Proposal
 
-> This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
-
 * **Project:** Polkadex: Decentralized Exchange with centralized exchange user experience
 * **Proposer:** [Gauthamastro](https://github.com/Gauthamastro)
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
