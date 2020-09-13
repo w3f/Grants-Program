@@ -4,8 +4,6 @@
 * **Proposer:** [Gauthamastro](https://github.com/Gauthamastro)
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
 
-*The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up: 
 ### Overview
 There are many decentralized exchanges/protocols available in the market for traders but they still prefer to use centralized solutions for their convenience and ease of use knowing very well that their funds are at risk. This is because decentralized solutions are still not user friendly to an average trader. Some of them also have no proper decentralization and also got hacked in the process. We cannot call an exchange decentralized if it can lose or freeze customer funds.
