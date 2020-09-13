@@ -47,10 +47,10 @@ We are amused by the plethora of centralized institutions cropping up around the
 ### Project Details 
 
 * Mockups of exchange UI Components
-* Login In Page
-* ![Login Mockup](https://github.com/Polkadex-Substrate/Documentation/blob/master/images/Login_mockup.png)
-* Dashboard
-* ![DashBoard Mockup](https://github.com/Polkadex-Substrate/Documentation/blob/master/images/Dashboard_mockup.png)
+    * Login In Page
+ ![Login Mockup](https://github.com/Polkadex-Substrate/Documentation/blob/master/images/Login_mockup.png)
+    * Dashboard
+ ![DashBoard Mockup](https://github.com/Polkadex-Substrate/Documentation/blob/master/images/Dashboard_mockup.png)
 
 * We have created a proof of concept of the idea. [check here](https://github.com/Polkadex-Substrate/Polkadex.git)
 
