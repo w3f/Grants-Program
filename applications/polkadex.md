@@ -2,109 +2,162 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project:** The name of the project
-* **Proposer:** GitHub username
+* **Project:** Polkadex: Decentralized Exchange with centralized exchange user experience
+* **Proposer:** [Gauthamastro](https://github.com/Gauthamastro)
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
-
 ### Overview
+There are many decentralized exchanges/protocols available in the market for traders but they still prefer to use centralized solutions for their convenience and ease of use knowing very well that their funds are at risk. This is because decentralized solutions are still not user friendly to an average trader. Some of them also have no proper decentralization and also got hacked in the process. We cannot call an exchange decentralized if it can lose or freeze customer funds.
 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+The problems faced by decentralized exchanges are:
+
+* Inadequate UI/UX experience.
+* Low liquidity
+* Lack of advanced trading features, high-frequency trading, and bots.
+* Lack of proper decentralization and interoperability.
+
+In order to address the first problem, we needed to enable features that attract users into the exchange which includes a fast, responsive UI and trading features. It is mainly to attract day traders and retail investors who prefer centralized exchanges due to convenience and speed of execution. The block time of 3s given by the Babe/Grandpa consensus algorithm allows transaction speeds of up to 400/s under test conditions which is more than sufficient to compete with any centralized solutions in the market today. Please check our analysis [here](https://github.com/Gauthamastro/Exchange_Analytics.git).  Since Substrate allows the modular implementation of the consensus algorithm, we think a platform like a Substrate will support the future growth of the exchange by changing consensus to accommodate more transactions per second as better ones emerge.
+
+Secondly, the lack of liquidity is addressed by enabling,
+
+1. High-frequency trading using feeless transactions. 
+2. APIs that enable trading/AMM bots to observe market changes and submit trades.
+3. Advanced trading features like stop limit, market limit, Stop loss, Fill/Kill, Post only, TWAP, etc.
+
+Thirdly, proper decentralization and Interoperability are achieved by having a parachain in Polkadot that brings in liquidity from other blockchains and also using ChainBridge protocol that connects directly to the Ethereum network. Hence, traders have two different mechanisms to bring in liquidity.
+
+To solve the above problems, our goal is to build a fully decentralized, peer-peer, cryptocurrency exchange for the Defi ecosystem in Substrate. The project envisages the creation of a fully decentralized platform for exchanging tokens in a peer-peer, trustless environment, that enables high-frequency trading, high-liquidity, and lightning-fast transaction speed for supporting Defi applications.
+
+The value we provide to the Substrate community is,
+
+1. They can build custom UI/UX to connect to our network and create their own custom exchange experience.
+2. Traders can contribute their own custom trading algorithms by making use of market data provided by our full nodes.
+3. They get a decentralized trading platform to trade Polkadot & Ethereum tokens.
+4. This will be one of the first Decentralized exchanges to have High-Frequency Trading bot support using APIs directly from full nodes.
+
+### An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
+Polkadex is a decentralized exchange platform. It will have three high-level components. 
+* An independent substrate chain for high-speed consensus secured and governed by network participants. 
+* A Parachain on Polkadot for bringing liquidity from Polkadot’s interoperability community.
+* A set of decentralized relayer set that use Substrate's ChainBridge pallet to allow interoperability with Ethereum. 
+
+### An indication of why your team is interested in creating this project.
+We are amused by the plethora of centralized institutions cropping up around the decentralized idea of open, peer to peer, programmable internet of value. Decentralized Exchanges are built on the idea of non-custodial interoperability. Polkadot and Substrate are the most promising blockchain interoperability platforms. We want to provide our users with maximum liquidity, security, and world-class user experience. Hence, we are excited and confident that building a DEX on Substrate, supported by Polkadot’s interoperability, will increase user engagement and overall trading experience when combined with our trading expertise over the years.
+
 
 ### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
 
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
+* Mockups of exchange UI Components
+    * ![DashBoard Mockup](https://github.com/Polkadex-Substrate/Documentation/blob/master/images/Dashboard_mockup.png)
+    * ![Login Mockup](https://github.com/Polkadex-Substrate/Documentation/blob/master/images/Login_mockup.png)
+    * ![Sign Up](https://github.com/Polkadex-Substrate/Documentation/blob/master/images/Sign_Up_mockup.png)
+
+* We have created a proof of concept of the idea. [check here](https://github.com/Polkadex-Substrate/Polkadex.git)
 
 ### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
+
+We have provided a comparison chart against two famous DEXs
+
+| Features | Polkadex | BinanceDex | BitsharesDex |
+| ------------- | ------------- | ------------- | ------------- |
+| Decentralized Orderbook | Yes | Yes | Yes |
+| Block time | 3 sec | 2 sec | 3 sec |
+| Custom Trading bot | Yes | No | No |
+| Network Size | Dynamic | 100 | Dynamic |
+| Responsive UI | Yes | Yes | No |
+| Upgradable State Transition Function | Yes | No | No |
+| Automated Market Making Support | Yes | No | No |
+| Custom UI/UX Support | Yes | No | Yes |
+| Peer-Peer Blockchain Interoperability | Yes | No | No |
+| Advanced Order types (Stop limit, Stop loss, etc) | Yes | No | No |
+| High Frequency Trading Support | Yes | No | No |
+| Margin Trading | Yes | No | No |
+ 
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
-* Names of team members	
+
+* Vivek Prasannan is passionate about Decentralized computing and has been actively following the crypto/blockchain community since 2013. He has researched and worked on a new BSIP for Bitshares that will enable off-chain activities that can be settled transparently on the blockchain, and implicitly enables the creation of savings accounts for the users that are locked a certain time period to enhance fund security. Reference: [BSIP Link](https://github.com/bitshares/bsips/pull/119) He has successfully exited two startups in cloud computing, infrastructure support, and fintech space.
+    - Experience: C++, RUST & Substrate Framework
+
+* Gautham J, a 3rd-year B.Tech undergrad student at National Institute of Technology, Calicut, India. He has been at the forefront of distributed ledger technology by launching his own version of a consensus algorithm known as Pebble using Lamport’s vector clocks which is still in progress. The team received a blockchain innovation award from the BFSI sector by Banking Frontier. He has also co-authored an academic paper for Supply Chain management and predictions using machine learning models and ethereum network which is currently being peer-reviewed.
+    - Experienced in GoLang, RUST, Python, C++, and Substrate Framework.
+
+* Deepansh, a 4th-year  B.Tech undergrad student worked with multiple early-stage startups for developing business strategies and exited after making those startups a success. One of the startups that he worked got the Best Startup award in the National Institute of Technology Startup Conclave. He is also part of the Innovation Council for universities in Kerala under the Government of India. He along with Gautham received an award for their innovative consensus algorithm that enables high throughput transactions in permissionless networks.
 
 ### Team Website	
-* https://<your_domain>
+* https://github.com/Polkadex-Substrate
 
 ### Legal Structure 
-Please provide the name and registered address of the legal entity executing the project.
-
-### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+Individual
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+* https://github.com/Polkadex-Substrate/Polkadex
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* https://www.linkedin.com/in/vivek-prasannan-4050489/
+* https://www.linkedin.com/in/gautham-j-a4a559133/
+* https://www.linkedin.com/in/deepanshconnect/
+
 
 ## Development Roadmap :nut_and_bolt: 
 
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
-
-For each milestone:
-* Please be sure to include a specification of the software. The level of detail must be enough so that we are able to verify that the software meets the specification.
-* Please include total amount of funding requested per milestone.
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-* Please commit to providing a dockerfiles for the delivery of your project. 
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
-
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
+* **Total Estimated Duration:** 12 weeks
+* **Full-time equivalent (FTE):**  5.5 FTE
+* **Total Costs:** 2.9 BTC 
 
-### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 0.75 BTC
+### Milestone 1 -  Optimize Trading algorithm & Check for data errors
+* **Estimated Duration:** 5 weeks
+* **FTE:**  2
+* **Costs:** 1.2 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Optimize Trading algorithm in DEX pallet | Optimize the limit and market order algorithms are efficient for high-speed trading |
+| 2. | Optimize Storage access | Optimize the storage and efficiency of reads and writes to substrate storage. |
+| 3. | Check for data errors | Checking the security for buffer overflows or any other type of data errors that may affect exchange transactions. | 
+| 4. | Save Market data of trading pairs | Save closing_bid, closing_ask, and volume for each trading pair at each block on the chain |  
+| 5. | Enable RPC | Implement RPC for retrieving Market data from full nodes |  
+| 6. | Unit tests for Limit & Market Orders | Integration of Unit tests for Limit & Market Orders |  
+| 7. | Documentation | Proper documentation of existing codebase |  
 
-### Milestone 2 Example — Additional features
-...
+### Milestone 2: Install ChainBridge Pallet, Governance of Relayers and Staking.
+* **Estimated Duration:** 5 weeks
+* **FTE:**  2
+* **Costs:** 1.5 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | ChainBridge Installation | Configure the Runtime to install ChainBridge pallet |  
+| 2. | Decentralized Staked relayer set | Extending the ChainBridge module to have a decentralized relayer set. (Modifying ChainBridge Pallet logic and solidity smart contract) | 
+| 3. | Generic Assets pallet Integration | Connecting ChainBridge pallet to generic asset pallet to Mint and Burn tokens during deposit and withdrawal. | 
+| 4. | Security Audit | Audit the implemented system for faults in configuration | 
+| 5. | Unit test | Add test cases for withdrawals and deposits. | 
+| 6. | Documentation | Proper documentation of existing codebase | 
+
+### Milestone 3: Web UI, Documentation & Tutorials
+* **Estimated Duration:** 2 weeks
+* **FTE:**  1.5
+* **Costs:** 0.3 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Provide our Web UI | Convert mockups into working websites and connect them to full nodes using polkdotjs API. (Includes Dashboard, Signup, Login using Polkadot browser extension) |  
+| 2. | Custom Trading Bot Tutorial | A simple implementation trading bot based on moving average enabled using market data from full nodes | 
+| 3. | API Documentation | Documentation of APIs provided by a full node for developing custom UI/UX | 
+| 4. | Basic Trading Tutorial | Basic trading tutorial for submitting limit & market orders based on our UI design. | 
+
 
 ### Community engagement
 
-As part of the Program, we require that you produce an article/tutorial and publish it (for example on [Medium](https://medium.com/)). It should explain your work done as part of the grant. 
-
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
-
+The tutorials and Documentation that we provide will be published as articles in Medium and other social media platforms with due mention about Web3 grant.
+We also intend to engage community by providing grants in our tokens to add more support and improve our codebase.
 ## Future Plans
-Please include the team's long-term plans and intentions.
-
-## Additional Information :heavy_plus_sign: 
-Any additional information that you think is relevant to this application that hasn't already been included.
-
-Possible additional information to include:
-* What work has been done so far?
-* Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far?
+We will be registering a LLC for taking this project ahead.
+We intend to host a the Web UI provided here. We will also be developing a cloud service to analyse and aggregate the market data to provide a wide range of technical indicators like Bollinger bands, RSI etc.
+We want to provide traders the maximum possible user experience compared to a centralized exchange.
