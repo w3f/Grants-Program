@@ -104,9 +104,9 @@ Individual
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 12 weeks
-* **Full-time equivalent (FTE):**  5.5 FTE
-* **Total Costs:** 3 BTC 
+* **Total Estimated Duration:** 7 weeks
+* **Full-time equivalent (FTE):**  3.5 FTE
+* **Total Costs:** 1.5 BTC 
 
 ### Milestone 1 -  Optimize Trading algorithm & Check for data errors
 * **Estimated Duration:** 5 weeks
@@ -124,21 +124,7 @@ Individual
 | 7. | Documentation | Proper documentation to submit Limit, Market orders or retrieve Market Data using Polkadotjs API. |  
 | 8. | Docker Container | Provide a docker container |
 
-### Milestone 2: Install ChainBridge Pallet, Governance of Relayers and Staking.
-* **Estimated Duration:** 5 weeks
-* **FTE:**  2
-* **Costs:** 1.5 BTC
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | ChainBridge Pallet Installation | Configure the Substrate Chain Runtime to install ChainBridge pallet. |  
-| 2. | Decentralized Staked relayer set | Extending the ChainBridge pallet to have a decentralized relayer set. The smart contracts and pallet provided by ChainBridge will not have administrative role but instead administrative actions such as updating relayer set will happen using staking. | 
-| 3. | Generic Assets pallet Integration | Connecting ChainBridge pallet to generic asset pallet to Mint and Burn tokens from Substrate side during deposit and withdrawal from and to Ethereum mainnet. | 
-| 4. | Security Audit | Audit the implemented system for faults in configuration. | 
-| 5. | Unit test | Add test cases for withdrawals and deposits. | 
-| 6. | Documentation | Proper documentation for Deposit and Withdrawal from a local Ethereum node. | 
-
-### Milestone 3: Web UI, Documentation & Tutorials
+### Milestone 2: Web UI, Documentation & Tutorials
 * **Estimated Duration:** 2 weeks
 * **FTE:**  1.5
 * **Costs:** 0.3 BTC
