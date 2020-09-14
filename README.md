@@ -44,7 +44,9 @@ The Committee consists of individuals who know the funding priorities of the Pol
 * [Fredrik Harrysson](https://github.com/folsen)
 * [David Hawig](https://github.com/Noc2)
 * [Kasper Mai Jørgensen](https://github.com/KasperJor)
+* [Bill Laboon](https://github.com/laboon)
 * [Rouven Pérez](https://github.com/RouvenP)
+* [Fatemeh Shirazi](https://github.com/FatemeShirazi) 
 * [Reto Trinkler](https://github.com/retotrinkler)
 * [Gavin Wood](https://github.com/gavofyork)
 
