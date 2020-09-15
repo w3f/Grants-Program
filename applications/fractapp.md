@@ -33,6 +33,7 @@ And we have old [DEMO](https://www.youtube.com/watch?v=cG5PAIVoqh0) for the hack
   * Profile service is a service that stores not public information about the user (Nickname, Twitter, Email, Phone Number).
 
 * CBI (Chat-Bot interface):
+
 CBI is the interface between Fractapp and your chat-bots. It can be summarized in the following algorithm:
 1. To call the bot, the user must send a request to start. 
 2. Bot service must return the user interface (button name, image, and trigger name)
