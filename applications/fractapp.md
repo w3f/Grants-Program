@@ -122,6 +122,7 @@ Anastasiya Strashnikova:
 | 3. | Wallet details | User can see balance, transactions, transaction info   | 
 | 4. | Documentation | A standalone document, describing usage |
 | 5. | Unit-testing | Unit tests covering at least 75% of the code | 
+| 6. | Distributing | We will provide .apk files for Android | 
 
 ### Milestone 2 — Profile
 * **Estimated Duration:** 1 month
@@ -137,6 +138,7 @@ Anastasiya Strashnikova:
 | 5. | Docker | Docker image for backend and push-notification service |
 | 6. | Documentation | A standalone document, describing usage |
 | 7. | Unit-testing | Unit tests covering at least 75% of the code | 
+| 8. | Distributing | We will provide .apk files for Android |
 
 ### Milestone 3 — Chat
 * **Estimated Duration:** 1 month
@@ -149,7 +151,7 @@ Anastasiya Strashnikova:
 | 2. | Staking bot | First built in a chat-bot for staking. |  
 | 3. | Documentation | A standalone document, describing usage |
 | 4. | Unit-testing | Unit tests covering at least 75% of the code | 
-
+| 5. | Distributing | We will publish on Google Play and F-Droid  |
 
 ## Future Plans
 * Apply to App Store
