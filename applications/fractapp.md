@@ -22,7 +22,32 @@ And we have old [DEMO](https://www.youtube.com/watch?v=cG5PAIVoqh0) for the hack
 
 * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
 
- The integration will involve creating a mobile app and a couple of backend services.
+ The integration will involve creating a mobile app on Expo (React Native) and backend services.
+* Mobile App:
+  * Non custodial wallet for Polkadot and Kusama (creating, backup, wallet details, transaction info)
+  * Payment chat is a chat for only send cryptocurrency. These milestones haven't support messages in chats. But we will add messages later.
+  * Chat-bots for DApp
+
+* Backend services:
+  * Push-Notification service is a service which will notify a user about received transactions 
+  * Profile service is a service that stores not public information about the user (Nickname, Twitter, Email, Phone Number).
+
+* CBI (Chat-Bot interface):
+CBI is the interface between Fractapp and your chat-bots. It can be summarized in the following algorithm:
+1. To call the bot, the user must send a request to start. 
+2. Bot service must return the user interface (button name, image, and trigger name)
+3. The user clicks a button and sends the request with the trigger name to the chat-bot service.
+4. Chat-bot processes the user's request by the trigger name.. If the user doesn't need to make a choice then the service returns the transaction which the user will sign. 
+5. User signs or cancels transactions.
+
+Example, Decentralized Exchange Bot (exchange DOT <-> KSM):
+1. User sends a request to start.
+2. Chat-Bot returns response with 2 buttons: DOT, KSM
+3. User chooses DOT
+4. Chat-Bot returns the text-editor element to the user
+5. User sends a request with text (amount)
+6. Chat-Bot returns transaction (transaction calling Exchange DApp)
+7. User signs and sends transaction 
 
 * An indication of why your team is interested in creating this project.
 
@@ -34,11 +59,11 @@ We expect the teams to already have a solid idea about the project's expected fi
 Therefore, we ask the teams to submit (where relevant):
 * Mockups/designs of any UI components
 
-We will provide om request (InVision/Figma). Design made by 40%.
+https://elshandzhafarov326555.invisionapp.com/overview/Fractapp---cryptocurrency-wallet-with-messenger-ckeyvvuh70t3j01bx5mg6e7b0
 
 * An overview of the technology stack to be used
 
-Golang, React Native
+Golang, React Native, Polkadot, Kusama
 
 
 ### Ecosystem Fit 
@@ -129,7 +154,6 @@ Anastasiya Strashnikova:
 * Apply to App Store
 * Integration Bitcoin and Ethereum
 * Messaging protocol on a substrate
-* Api for creating DApp chat-bots  (User will be able to create own chat-bots)
 * Creating popular DApp in chat-bots
 * Group chats for DAO (If user have token then he can join the group)
 * Decentralized voting in a groups
