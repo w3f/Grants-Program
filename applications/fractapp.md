@@ -16,7 +16,7 @@ Please provide the following:
 * A brief description of the project.
 
 Fractapp is a messenger with a cryptocurrency wallet. Cryptocurrency address is hard to remember so users have a problem send cryptocurrency to another user. 
-Fractapp creating a simple ecosystem for users. Users can send crypto in chats and use DApp chat-bots. Fractapp will be available on Android and IOS.
+Fractapp creating a simple ecosystem for users. Users can send crypto in chats and use DApp chat-bots. Fractapp will be available on Android and later IOS.
 
 And we have old [DEMO](https://www.youtube.com/watch?v=cG5PAIVoqh0) for the hackathon.
 
@@ -126,6 +126,7 @@ Anastasiya Strashnikova:
 
 
 ## Future Plans
+* Apply to App Store
 * Integration Bitcoin and Ethereum
 * Messaging protocol on a substrate
 * Api for creating DApp chat-bots  (User will be able to create own chat-bots)
