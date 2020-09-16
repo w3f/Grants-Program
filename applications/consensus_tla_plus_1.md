@@ -1,4 +1,8 @@
-# Polkadot Finality in TLA+
+# Polkadot Consensus in TLA+
+
+* **Project:** Polkadot Consensus in TLA+
+* **Proposer:** ebuchman
+* **Payment Address:** bc1qxgt224sy8xddpgmchcamq4u96a34708twvxu8t96n68942w7ehtqcl344j
 
 ## Project Description
 
@@ -153,15 +157,16 @@ For examples of our specification work, see:
 
 We expect the project to span six weeks total. As the milestones contain meetings for discussions with the Web3 team, the project's time frame is subject to the availability of involved persons at Web3.
 
-The total cost of this project is 28,800 CHF. As described below, the current milestones are estimated to take Josef and Igor 5-7 working days together (10-14 person-days total) plus 0.5 person-days each from Ethan Buchman and Zarko Milosevic for internal review and feedback. 
+The total cost of this project is 28,800 CHF (2.9091 BTC). As described below, the current milestones are estimated to take Josef and Igor 5-7 working days together (10-14 person-days total) plus 0.5 person-days each from Ethan Buchman and Zarko Milosevic for internal review and feedback. 
 
 * Total person working days = 11-15 days
 * Total project time = 6 weeks
-* Total cost = 28,800 CHF
+* Total cost = 28,800 CHF (2.9091 BTC)
 
 BTC Address: bc1qxgt224sy8xddpgmchcamq4u96a34708twvxu8t96n68942w7ehtqcl344j
 
-### Milestone 1 - Formalization of Shared Data and Modules - CHF 8,800
+### Milestone 1 - Formalization of Shared Data and Modules - CHF 8,800 (0.88889
+BTC)
 
 - 2 hour meeting: In the preparation of this proposal we have
   collected several questions that we need to clarify regarding the
@@ -175,7 +180,7 @@ BTC Address: bc1qxgt224sy8xddpgmchcamq4u96a34708twvxu8t96n68942w7ehtqcl344j
 
 - Internal review with Ethan and Zarko
 
-### Milestone 2 - Grandpa's temporal properties - CHF 15,200
+### Milestone 2 - Grandpa's temporal properties - CHF 15,200 (1.53536 BTC)
 
 - 2 hour meeting: Once we have established a model of the modules, we
   can use the introduced terms to discuss in detail the expected
@@ -191,7 +196,7 @@ BTC Address: bc1qxgt224sy8xddpgmchcamq4u96a34708twvxu8t96n68942w7ehtqcl344j
 - Internal review with Ethan and Zarko
 
 
-### Milestone 3 - Final Specification - CHF 4,800
+### Milestone 3 - Final Specification - CHF 4,800 (0.48485 BTC)
 
 - 1 hour meeting: we do a preliminary presentation of the TLA+
  specification,
