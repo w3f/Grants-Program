@@ -130,12 +130,12 @@ Glacier Blockchain Technology is a company registered in Yantai, Shandong, P. R.
 ### Overview
 * **Total Estimated Duration:** 1 month
 * **Full-time equivalent (FTE):**  3 
-* **Total Costs:** 2 BTC
+* **Total Costs:** 1.83 BTC
 
 ### Milestone 1 — Integration of the Distaff VM as a Substrate Native Runtime Module 
 * **Estimated Duration:** 1 month
 * **FTE:**  3
-* **Costs:** 2 BTC
+* **Costs:** 1.83 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
