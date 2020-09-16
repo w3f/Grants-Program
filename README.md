@@ -4,7 +4,7 @@
   <img src="./src/Open_Grants_Program.png" style="width:1300px";>
 </p>
 
-**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tracked **transparently** on GitHub and disbursed in **bitcoin**. 
+**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **CHF 30k**, which are tracked **transparently** on GitHub and disbursed in **bitcoin**. 
 
 ---
 
@@ -29,7 +29,7 @@ The Open Grants Program seeks to allocate resources to projects that are benefic
 - Simple
 - Effective  
 
-The Web3 Foundation Open Grants Program focuses on technology grants up to **$30k**, which are tracked **transparently** on GitHub and disbursed in **bitcoin**. For larger grants, payments in other currencies and partly private submissions, please visit our [Web3 Foundation Grants page](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) on GitHub. 
+The Web3 Foundation Open Grants Program focuses on technology grants up to **CHF 30k**, which are tracked **transparently** on GitHub and disbursed in **bitcoin**. For larger grants, payments in other currencies and partly private submissions, please visit our [Web3 Foundation Grants page](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) on GitHub. 
 
 You can find a list of areas in the Web 3.0 Technology Stack that demand particular development [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md#areas-of-interest-for-technical-grants), as well as a list of previously accepted projects [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/accepted_grant_applications.md). 
 
