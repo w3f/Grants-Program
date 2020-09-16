@@ -31,7 +31,7 @@ Polkadot/Kusama is one of the most popular blockchain platforms, Our team is ver
 
 * **Total Estimated Duration:** 6 weeks
 * **Full-time equivalent (FTE):**  3
-* **Total Costs:** 3 BTC
+* **Total Costs:** 2.5 BTC
 
 
 ### Milestone 1
@@ -83,7 +83,7 @@ Polkadot/Kusama is one of the most popular blockchain platforms, Our team is ver
 
 * **Estimated Duration:** 1 weeks 
 * **FTE:**  1
-* **Costs:** 0.5 BTC
+* **Costs:** 0.25 BTC
 
 
 | Number | Deliverable | Specification | 
@@ -95,7 +95,7 @@ Polkadot/Kusama is one of the most popular blockchain platforms, Our team is ver
 
 * **Estimated Duration:** 3 weeks 
 * **FTE:**  1
-* **Costs:** 0.5 BTC
+* **Costs:** 0.25 BTC
 
 
 | Number | Deliverable | Specification | 
