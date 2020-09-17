@@ -48,15 +48,15 @@ The team met during the hackthon and have established strong inter-team relation
 
 In this grant application we aim to provide as many features that can be packaged into reusable componentsas possible, the aim is so that when the development of parachains are more mature, the community or the subdex team will be able to use such components to realise the goal of a DEX parachain.
 
-| Number | Deliverable            | Specification                                                                                                                            |
-| ------ | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.     | UI connection          | Update UI to support user specified connections to Subdex parachain nodes and connection to browser wallet                               |
-| 2.     | UI feature             | Allow user to set allowed slippage                                                                                                       |
-| 3.     | UI Theme               | Provide 2 themes for UI -- light and dark and allow user to choose which one                                                             |
-| 4.     | UI Infrastrcture       | HTTPS to the SubDEX frontend, encrypted wss to the node                                                                                  |
-| 5.     | Dex Pallet             | Implement Uniswap V2 AMM protocol with full test coverage and eliminate overflow/underflow risks in calculation in the chain             |
-| 6.     | Dex XCMP Pallet        | Handle relay chain asset creation and test this placeholder XCMP pallet that will be used to create demo for testnets for this milestone |
-| 7.     | Network Infrastructure | Deploy to secured and high reliability server(s) to host a demo relay chain and parachains testnets.                                     |
+| Number | Deliverable            | Specification                                                                                                                                                |
+| ------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1.     | UI connection          | Update UI to support user specified connections to Subdex parachain nodes and connection to browser wallet                                                   |
+| 2.     | UI feature             | Allow user to set allowed slippage                                                                                                                           |
+| 3.     | UI Theme               | Provide 2 themes for UI -- light and dark and allow user to choose which one                                                                                 |
+| 4.     | UI Infrastrcture       | HTTPS to the SubDEX frontend, encrypted wss to the node                                                                                                      |
+| 5.     | Dex Pallet             | Implement Uniswap V2 AMM protocol with full test coverage and eliminate overflow/underflow risks in calculation in the chain, publish as a standalone pallet |
+| 6.     | Dex XCMP Pallet        | Handle relay chain asset creation and test this placeholder XCMP pallet that will be used to create demo for testnets for this milestone                     |
+| 7.     | Network Infrastructure | Deploy to secured and high reliability server(s) to host a demo relay chain and parachains testnets.                                                         |
 
 #### Community and Documentation
 
