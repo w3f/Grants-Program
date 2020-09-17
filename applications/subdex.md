@@ -20,7 +20,7 @@ DEXs have existed on Ethereum blockchain a few years, but they usually have low 
 
 Uniswap's success is exciting, but it is mainly used to only exchange Ethereum assets (ETH and ERC20 tokens). Some solutions such as REN exists for user to exchange BTC with Ethereum assets, but most of other blockchain assets cannot be traded on Ethereum DEXs. Furthermore, as AMM protocol evolves, we have seen that Uniswap V1 evolved to Uniswap V2 and Bancor evolved to Bancor V2, both old and new versions have to co-exist because the old version cannot be seemlessly upgraded to new version on Ethereum.
 
-Kusama / Polkadot's cross-chain protocol and on-chain upgrade make them the perfect blockchain to build a DEX. We are aware there are other DEXs such as Polkaswap and Acala being built now, however, SubDEX adds to the ecosystem with a simply flexible solution, nice user interface and unique features.
+Kusama / Polkadot's cross-chain protocol and on-chain upgrade make them the perfect blockchain to build a DEX. We are aware there are other DEXs such as Polkaswap and Acala being built now, however, SubDEX is designed to align with the substrate FRAME framwork and adds to the ecosystem with a set of pallets that are reusable and a interface for good user experience.
 
 The team met during the hackthon and have established strong inter-team relationships through a common goal - _to provide a DEX that is built by, used by and maintained by the community._
 
@@ -40,27 +40,28 @@ The team met during the hackthon and have established strong inter-team relation
 
 ## Development Roadmap :nut_and_bolt:
 
-- **Total Estimated Duration:** 7 weeks
+- **Total Estimated Duration:** 8 weeks
 - **Full-time equivalent (FTE):** 2 FTE
-- **Total Costs:** 2
+- **Total Costs:** 2.2
 
 ### Milestone 1
 
 In this grant application we aim to provide as many features that can be packaged into reusable componentsas possible, the aim is so that when the development of parachains are more mature, the community or the subdex team will be able to use such components to realise the goal of a DEX parachain.
 
-| Number | Deliverable            | Specification                                                                                                                                                |
-| ------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1.     | UI connection          | Update UI to support user specified connections to Subdex parachain nodes and connection to browser wallet                                                   |
-| 2.     | UI feature             | Allow user to set allowed slippage                                                                                                                           |
-| 3.     | UI Theme               | Provide 2 themes for UI -- light and dark and allow user to choose which one                                                                                 |
-| 4.     | UI Infrastrcture       | HTTPS to the SubDEX frontend, encrypted wss to the node                                                                                                      |
-| 5.     | Dex Pallet             | Implement Uniswap V2 AMM protocol with full test coverage and eliminate overflow/underflow risks in calculation in the chain, publish as a standalone pallet |
-| 6.     | Dex XCMP Pallet        | Handle relay chain asset creation and test this placeholder XCMP pallet that will be used to create demo for testnets for this milestone                     |
-| 7.     | Network Infrastructure | Deploy to secured and high reliability server(s) to host a demo relay chain and parachains testnets.                                                         |
+| Number | Deliverable                 | Specification                                                                                                                                                                                                                                                                 |
+| ------ | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.     | UI connection               | Update UI to support user specified connections to Subdex parachain nodes and connection to browser wallet                                                                                                                                                                    |
+| 2.     | UI feature                  | Allow user to set allowed slippage                                                                                                                                                                                                                                            |
+| 3.     | UI Theme                    | Provide 2 themes for UI -- light and dark and allow user to choose which one                                                                                                                                                                                                  |
+| 4.     | Dex Pallet                  | Implement Uniswap V2 AMM protocol with full test coverage and eliminate overflow/underflow risks in calculation in the chain, publish as a standalone pallet                                                                                                                  |
+| 5.     | Dex XCMP Pallet             | Handle relay chain asset creation and test this placeholder XCMP pallet that will be used to create demo for testnets for this milestone                                                                                                                                      |
+| 6.     | Generic Token Dealer Pallet | Create a generic token dealer pallet that can handle generic assets and/or native parachain currency, based on the [token dealer](https://github.com/paritytech/cumulus/tree/master/rococo-parachains/pallets/token-dealer) pallet example and publish as a standalone pallet |
+| 7.     | UI Infrastrcture            | Deploy frontend to secured and reliable server, HTTPS to the SubDEX frontend, encrypted WSS to the node                                                                                                                                                                       |
+| 8.     | Network Infrastructure      | Deploy to secured and high reliability server(s) to host a demo relay chain and parachains testnets.                                                                                                                                                                          |
 
 #### Community and Documentation
 
-Our initial focus will be development, but we will setup medium and twitter account to start building community as well. We will provide a tutorial on how to use the Dex Pallet and the DEX XCMP pallet with the token dealer example pallet
+Our initial focus will be development, but we will setup medium and twitter account to start building community as well. We will provide a tutorial on how to use the Pallets created to connect a DEX parachain to a generic parachain with the Generic Token Dealer pallet.
 
 ## Additional Information :heavy_plus_sign:
 
