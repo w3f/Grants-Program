@@ -46,7 +46,7 @@ The team met during the hackthon and have established strong inter-team relation
 
 ### Milestone 1
 
-In this grant application we aim to provide as many features that can be packaged into reusable componentsas possible, the aim is so that when the development of parachains are more mature, the community or the subdex team will be able to use such components to realise the goal of a DEX parachain.
+In this grant application we aim to provide as many features that can be packaged into reusable components as possible, the aim is so that when the development of parachains and XCMP are more mature, the community or the subdex team will be able to use / build on such components to realise the goal of a DEX parachain.
 
 | Number | Deliverable                 | Specification                                                                                                                                                                                                                                                                 |
 | ------ | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
