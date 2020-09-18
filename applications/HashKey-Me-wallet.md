@@ -109,7 +109,9 @@ HashKey Me wallet would like to support for Kusama and Polkadot to IOS and Andro
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | deposit/transfer coins| support DOT/KSM deposit and transfer |  
-| 2. | stake/nominate | provide ability for validator to stake and nominator to nominate validator|   
-| 3. |goverance	| provide ability to vote and deposit on proposals  |  
+| 1. | deposit/transfer coins| client  implements construct tx,sign tx,send tx. server implements trace tx status ,notify client if deposit tx is confirmed|  
+| 2. | stake/nominate | provide ability for validators to stake and nominators to nominate validator|   
+| 3. |goverance	| provide ability to vote  on proposals  |  
+|4. | Unit tests | Integration of Unit tests for construct tx,sign tx,send tx  |
+|4. | Documentation| provide detailed  UML diagrams of deposit/transfer ,stake/nominate and goverance  |
 
