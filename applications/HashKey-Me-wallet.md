@@ -6,16 +6,49 @@
 
 ## Project Description 
 
+### Overview
+#### A brief description of the project.
+
 HashKey Me wallet is a smart wallet for Polkadot ecology and HashKey Me wallet is a keyless wallet based on TSS (Threshold Signature Scheme), it is designed around ease-of-use and security. 
 - ease-of-use : Participating in blockchain governance such as voting and staking just need on click the button ,HashKey Me wallet do the complex  operations for users . HashKey Me wallet also integrate many Dapps.
 - security : HashKey Me wallet implement TSS ,it provide enhanced security by distributed key generation and distributed signing. HashKey Me wallet free user from saving private key.
 
+#### An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
+
 HashKey Me wallet would like to support for Kusama and Polkadot to IOS and Android. HashKey Me wallet has many registered users, it can help more users to get in touch with Polkadot/Kusama. With HashKey Me wallet, more users can  participate in Polkadot/Kusama ecology.
+
+#### An indication of why your team is interested in creating this project.
 
 Our team will design UI for Polkadot/Kusama governance, staking and coin transfer. At same time, we will implement distributed key generation and distributed signing for Polkadot/Kusama, then we will integrate Polkadot/Kusama API into our application.
 
+### Project Details
+![](https://i.loli.net/2020/09/18/Y3e5tFJ6lZdCbgo.jpg)
 
+- Database layer: synchronize blockchain data to elastic search ,provide api for upper layer to search.
+- Component layer: monitor blockchain event, trace tx status,  retrieve outer market data, threshold signature schemes(2p,schnorr ,2p-eddsa),[#42 PR](https://github.com/w3f/Open-Grants-Program/pull/42)  has detailed information on tss.
+- Business layer:  the specific business related on polkadot 
+- Message & RRC layer: provide api for frontend application, push latest event from blockchain  to frontend.
+- FrontEnd layer: IOS and Android application
+
+![](https://i.loli.net/2020/09/18/lqSjPKIinJ9QLwb.jpg)
+- Client：
+  1. Generate shared private key
+  2. construct tx,sign tx,send tx
+  3. query balance,query tx record
+  4. stake,nominate
+- Blockchain Node
+  1. Query：Balance,Account nonce、Block Height,Block number,Transaction,Genesis Hash
+  2. Broadcast transaction
+- Server
+  1. Generate shared private key
+  2. push notification service
+  3. Monitor blockchain ledger,Parse blockchain ledger
+  4. Provide GRPC API 
+
+
+### Ecosystem Fit
 Polkadot/Kusama is one of the most popular blockchain platforms, Our team is very enthusiastic about supporting such a world-class project. 
+
 
 
 ## Team 
