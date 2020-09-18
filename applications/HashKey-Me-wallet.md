@@ -63,79 +63,53 @@ HashKey Me wallet would like to support for Kusama and Polkadot to IOS and Andro
 
 ## Development Roadmap 
 
-* **Total Estimated Duration:** 6 weeks
+* **Total Estimated Duration:** 11 weeks
 * **Full-time equivalent (FTE):**  3
 * **Total Costs:** 2.5 BTC
 
 
-### Milestone 1
+### Milestone 1 
 
-* **Estimated Duration:** 1 weeks 
+* **Estimated Duration:** 3 weeks 
 * **FTE:**  1
 * **Costs:** 0.5 BTC
 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | UI|UI for Polkadot/Kusama governance and coin transfer |  
+| 1. | UI Desigin |UI Desgin for Polkadot/Kusama governance and coin transfer |  
+| 2. | Design UX flows| Create a UX that is pleasant to work with|  
+| 3. | integrated UI to application(IOS,Android)| set IOS/Android project structure|  
+| 4. | Documentation| a basic tutorial that explians how a user can compile and run Andriod/IOS application|  
 
-### Milestone 2
 
-* **Estimated Duration:** 1 weeks 
+### Milestone 2 
+
+* **Estimated Duration:** 4 weeks 
 * **FTE:**  1
-* **Costs:** 0.5 BTC
+* **Costs:** 1 BTC
 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | DOT/KSM DKG| support DOT/KSM distribute key generation |  
+| 1. | implement 2p-eddsa | complicate 2p-eddsa for server and client to generate eddsa private key | 
+| 2. | implement 2p-schnorr| complicate 2p-schnorr for server and client to generate schnorr private key|  
+| 3. | integrated 2p-eddsa to IOS/Android| integrate 2p-eddsa to cient|  
+| 4. | integrated 2p-schnorr to IOS/Android |integrate 2p-schnorr to cient |  
+| 5. | Unit tests| Integration of Unit tests for 2p-eddsa/2p-schnorr generate private key and sign tx |  
+| 6. | Documentation| show user how to integrate 2p-eddsa/2p-schnorr to application, Provide detailed UML diagrams of 2p-eddsa/2p-schnorr |  
+
 
 ### Milestone 3
 
-* **Estimated Duration:** 1 weeks 
+* **Estimated Duration:** 4 weeks 
 * **FTE:**  1
-* **Costs:** 0.5 BTC
-
-
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
-| 1. | DOT/KSM distribute signing| support DOT/KSM tx distribute signing |  
-
-### Milestone 4
-
-* **Estimated Duration:** 1 weeks 
-* **FTE:**  1
-* **Costs:** 0.5 BTC
+* **Costs:** 1 BTC
 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 1. | deposit/transfer coins| support DOT/KSM deposit and transfer |  
-
-
-### Milestone 5
-
-* **Estimated Duration:** 1 weeks 
-* **FTE:**  1
-* **Costs:** 0.25 BTC
-
-
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
-| 1. | stake/nominate | provide ability for validator to stake and nominator to nominate validator|   
-
-
-### Milestone 6
-
-* **Estimated Duration:** 3 weeks 
-* **FTE:**  1
-* **Costs:** 0.25 BTC
-
-
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
-| 1. |goverance	| provide ability to vote and deposit on proposals  |  
-  
-
-
+| 2. | stake/nominate | provide ability for validator to stake and nominator to nominate validator|   
+| 3. |goverance	| provide ability to vote and deposit on proposals  |  
 
