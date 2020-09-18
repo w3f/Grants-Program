@@ -15,11 +15,12 @@ HashKey Me wallet is a smart wallet for Polkadot ecology and HashKey Me wallet i
 
 #### An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
 
-HashKey Me wallet would like to support for Kusama and Polkadot to IOS and Android. HashKey Me wallet has many registered users, it can help more users to get in touch with Polkadot/Kusama. With HashKey Me wallet, more users can  participate in Polkadot/Kusama ecology.
+Our team will design UI for Polkadot/Kusama governance, staking and coin transfer. At same time, we will implement distributed key generation and distributed signing for Polkadot/Kusama, then we will integrate Polkadot/Kusama API into our application.
 
 #### An indication of why your team is interested in creating this project.
 
-Our team will design UI for Polkadot/Kusama governance, staking and coin transfer. At same time, we will implement distributed key generation and distributed signing for Polkadot/Kusama, then we will integrate Polkadot/Kusama API into our application.
+Polkadot/Kusama is one of the most popular blockchain platforms, Our team is very enthusiastic about supporting such a world-class project. 
+
 
 ### Project Details
 ![](https://i.loli.net/2020/09/18/Y3e5tFJ6lZdCbgo.jpg)
@@ -47,8 +48,8 @@ Our team will design UI for Polkadot/Kusama governance, staking and coin transfe
 
 
 ### Ecosystem Fit
-Polkadot/Kusama is one of the most popular blockchain platforms, Our team is very enthusiastic about supporting such a world-class project. 
 
+HashKey Me wallet would like to support for Kusama and Polkadot to IOS and Android. HashKey Me wallet has many registered users, it can help more users to get in touch with Polkadot/Kusama. With HashKey Me wallet, more users can  participate in Polkadot/Kusama ecology.
 
 
 ## Team 
