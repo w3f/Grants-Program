@@ -95,13 +95,11 @@ no
 * **Costs:** 0.76 btc
 
 Generally, we would like to verify the product prototype in a specific environment.
-* Technical specifications and Zenlink DEX Module design.
-* We will deliver Zenlink DEX Module on a substrate blockchain.
-* It will has Automate Market Maker(AMM) function.
 
 | Deliverable  | Specification  | 
 |--------------|---------------|
-| Zenlink DEX Module Repository | A git repository containing the dex module source code and a README that describes the work done during this milestone and how to use set up and run at the current stage |
+| Technical specifications and Zenlink DEX Module design |  These spec should be included in the  [whitepaper](https://github.com/zenlinkpro/whitepaper/blob/master/en/zenlink_whitepaper_en.pdf). For details, please see the section 'Zenlink DEX Protocol' and 'Zenlink DEX Module'|
+| Zenlink DEX Module Repository | A git repository containing the dex module source code and a README that describes the work done during this milestone and how to use set up and run at the current stage. The module will has Automate Market Maker(AMM) function and be integrated with a substrate chain |
 | Tests        | The code will have proper unit-test coverage to ensure functionality and robustness                                                                    | 
 | Docker       | Docker image with a Substrate chain using our module, demonstrating its functionality                                                                  | 
 
