@@ -30,7 +30,7 @@ The team met during the hackthon and have established strong inter-team relation
 - **LinkedIn Profiles:** https://www.linkedin.com/in/arsen-kondratiev-031801172/, https://www.linkedin.com/in/belsy/, https://www.linkedin.com/in/fyang1024/,,https://www.linkedin.com/in/kstasi/
 - **Code Repos:** https://github.com/subdardex
 - **Website:** http://subdex.io.s3.eu-west-2.amazonaws.com/index.html
-- **Legal Structure:** Please provide the name and registered address of the legal entity executing the project.
+- **Legal Structure:** Individuals
 - **Team's Experience:**
   - Arsen is a software engineer, particularly interested in the blockchain domain. During the last year was mostly focused on substrate runtime development at [Joystream](https://github.com/Joystream/joystream/tree/content_directory_second_try) and Liqum projects. Earlier, worked on infrastructure backends for DAPPs, based on TRON and EOS blockchain platforms.
   - Belsy is a software engineer who focused on working with the substrate framework in the last year. Prior to that, she has worked as a full stack engineer for other blockchain projects on Ethereum, Hyperledger Burrow / Fabric.
