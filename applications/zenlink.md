@@ -46,13 +46,11 @@ In this grant, the functional prototypes, Zenlink DEX Module and Protocol, will 
 
 For the tech architecture details, please see [whitepaper/Zenlink DEX Protocol](https://github.com/zenlinkpro/whitepaper/blob/master/en/zenlink_whitepaper_en.pdf)
 
-Besides, we will build a user interface website, Zenlink DEX Dapp, which would connect to the substrate chain and allow testers to try the basic function, such as creating trading pair, displaying price and swapping token etc.
+For the AMM initial design, please see [whitepaper/Trading Paradigms - CFMM](https://github.com/zenlinkpro/whitepaper/blob/master/en/zenlink_whitepaper_en.pdf)
 
-By the way, Zenlink DEX Dapp has no aggregation functionality in the grant. However, Zenlink DEX Aggregator will be introduced in the future.
+In a word, The Zenlink DEX Module will be integrated with a substrate blockchain. And all the components will be packed into a docker image. Once testers run the docker image, the substrate blockchain will be running. At the same time, the dex functionality will be active. So that testers can not only call the functions via RPC request, but also some script in terminal.
 
-In a word, The Zenlink DEX Module will be integrated with a substrate blockchain. And all the components will be packed into a docker image. Once testers run the docker image, the substrate blockchain will be running. At the same time, the dex functionality will be active. So that testers can not only visit the dapp website page to try the functionality, but also call the functions we build for the Zenlink Module via RPC request or some script in terminal.
-
-The purpose of this grant is that verification function prototype and test user interface in lean way.
+The purpose of this grant is that verification function prototype in lean way.
 
 ### Ecosystem Fit 
 no
@@ -87,14 +85,14 @@ no
 ## Development Roadmap
 
 ### Overview
-* **Total Estimated Duration:** 8 weeks
-* **Full-time equivalent (FTE):**  4 FTE
-* **Total Costs:** 1.8
+* **Total Estimated Duration:** 4 weeks
+* **Full-time equivalent (FTE):**  2 FTE
+* **Total Costs:** 0.76 btc
 
 ### Milestone 1 — Implementing Zenlink DEX Module
 * **Estimated Duration:** 4 weeks
 * **FTE:**  2
-* **Costs:** 0.9 BTC
+* **Costs:** 0.76 btc
 
 Generally, we would like to verify the product prototype in a specific environment.
 * Technical specifications and Zenlink DEX Module design.
@@ -106,25 +104,6 @@ Generally, we would like to verify the product prototype in a specific environme
 | Zenlink DEX Module Repository | A git repository containing the dex module source code and a README that describes the work done during this milestone and how to use set up and run at the current stage |
 | Tests        | The code will have proper unit-test coverage to ensure functionality and robustness                                                                    | 
 | Docker       | Docker image with a Substrate chain using our module, demonstrating its functionality                                                                  | 
-
-### Milestone 2 — Implementing Zenlink DEX Dapp
-* **Estimated Duration:** 4 weeks
-* **FTE:**  2
-* **Costs:** 0.9 BTC
-
-
-Generally, we would like to build an user interface to test and verify the user experience and dex functionality in a specific environment.
-* We will implement Zenlink DEX DApp production prototype and ui design.
-* We will deliver a DEX Dapp, Zenlink DEX Dapp.
-* It will be connect with the above substrate blockchain.
-* Testers will be able to try the basic function, such as creating trading pair, displaying price and swapping token etc.
-
-| Deliverable  | Specification | 
-|--------------|---------------|
-| Zenlink DEX Module Repository | A git repository containing **the dex module** source code and a README that describes the work done during this milestone and how to use set up and run at the current stage |
-| Zenlink DEX Dapp Repository | A git repository containing **the dex dapp** source code and a README that describes the work done during this milestone and how to use set up and run at the current stage |
-| Tests        | The code will have proper unit-test coverage to ensure functionality of the trading business and robustness                                             | 
-| Docker       | Docker image with a Substrate chain using our module and dapp which can demonstrate functionality via web browser at a local machine              | 
 
 ### Community engagement
 
