@@ -42,7 +42,7 @@ The team met during the hackthon and have established strong inter-team relation
 
 - **Total Estimated Duration:** 8 weeks
 - **Full-time equivalent (FTE):** 2 FTE
-- **Total Costs:** 2.2
+- **Total Costs:** 2.5
 
 ### Milestone 1
 
@@ -56,7 +56,7 @@ In this grant application we aim to provide as many features that can be package
 | 4.     | Dex Pallet                  | Implement Uniswap V2 AMM protocol with full test coverage and eliminate overflow/underflow risks in calculation in the chain, publish as a standalone pallet                                                                                                                  |
 | 5.     | Dex XCMP Pallet             | Handle relay chain asset creation and test this placeholder XCMP pallet that will be used to create demo for testnets for this milestone                                                                                                                                      |
 | 6.     | Generic Token Dealer Pallet | Create a generic token dealer pallet that can handle generic assets and/or native parachain currency, based on the [token dealer](https://github.com/paritytech/cumulus/tree/master/rococo-parachains/pallets/token-dealer) pallet example and publish as a standalone pallet |
-| 7.     | UI Infrastrcture            | Deploy frontend to secured and reliable server, HTTPS to the SubDEX frontend, encrypted WSS to the node                                                                                                                                                                       |
+| 7.     | UI Infrastrcture            | Deploy frontend to IPFS network, have valid domain name for HTTPS to the SubDEX frontend, encrypted WSS to the testnet node                                                                                                                                                   |
 | 8.     | Network Infrastructure      | Deploy to secured and high reliability server(s) to host a demo relay chain and parachains testnets.                                                                                                                                                                          |
 
 #### Community and Documentation
