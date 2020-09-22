@@ -2,7 +2,7 @@
 
 - **Project:** SubDEX
 - **Proposer:** subdarkdex
-- **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage.
+- **Payment Address:** 36RukKN8Qa1QTjsQqCfZ5CzrvAKVg2vro8
 
 ## Project Description :page_facing_up:
 
