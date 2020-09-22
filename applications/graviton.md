@@ -18,7 +18,7 @@ Graviton gives financial incentivization and governance framework for cross-chai
   
   * An indication of how we will integrate this project into Substrate / Polkadot / Kusama:
 
-We gonna build a new gravity-parachain, based on parity substrate with pBFT consensus managed by set of [gravity network validators (consuls)] (https://arxiv.org/pdf/2007.00966.pdf) and integrate this parachain into the gravity oracles/providers network with an implementation of crosschain-transfer gateway ([susy protocol](https://arxiv.org/pdf/2008.13515.pdf)).
+We gonna build a new gravity-parachain, based on parity substrate with pBFT consensus managed by set of [gravity network validators (consuls)](https://arxiv.org/pdf/2007.00966.pdf) and integrate this parachain into the gravity oracles/providers network with an implementation of crosschain-transfer gateway ([susy protocol](https://arxiv.org/pdf/2008.13515.pdf)).
 
   * An indication of why my team is interested in creating this project:
   
