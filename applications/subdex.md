@@ -30,7 +30,7 @@ The team met during the hackthon and have established strong inter-team relation
 - **LinkedIn Profiles:** https://www.linkedin.com/in/arsen-kondratiev-031801172/, https://www.linkedin.com/in/belsy/, https://www.linkedin.com/in/fyang1024/,,https://www.linkedin.com/in/kstasi/
 - **Code Repos:** https://github.com/subdardex
 - **Website:** http://subdex.io.s3.eu-west-2.amazonaws.com/index.html
-- **Legal Structure:** Please provide the name and registered address of the legal entity executing the project.
+- **Legal Structure:** Individuals
 - **Team's Experience:**
   - Arsen is a software engineer, particularly interested in the blockchain domain. During the last year was mostly focused on substrate runtime development at [Joystream](https://github.com/Joystream/joystream/tree/content_directory_second_try) and Liqum projects. Earlier, worked on infrastructure backends for DAPPs, based on TRON and EOS blockchain platforms.
   - Belsy is a software engineer who focused on working with the substrate framework in the last year. Prior to that, she has worked as a full stack engineer for other blockchain projects on Ethereum, Hyperledger Burrow / Fabric.
@@ -56,7 +56,7 @@ In this grant application we aim to provide as many features that can be package
 | 4.     | Dex Pallet                  | Implement Uniswap V2 AMM protocol with full test coverage and eliminate overflow/underflow risks in calculation in the chain, publish as a standalone pallet                                                                                                                  |
 | 5.     | Dex XCMP Pallet             | Handle relay chain asset creation and test this placeholder XCMP pallet that will be used to create demo for testnets for this milestone                                                                                                                                      |
 | 6.     | Generic Token Dealer Pallet | Create a generic token dealer pallet that can handle generic assets and/or native parachain currency, based on the [token dealer](https://github.com/paritytech/cumulus/tree/master/rococo-parachains/pallets/token-dealer) pallet example and publish as a standalone pallet |
-| 7.     | UI Infrastrcture            | Deploy frontend to IPFS network, have valid domain name for HTTPS to the SubDEX frontend, encrypted WSS to the testnet node                                                                                                                                                   |
+| 7.     | UI Infrastrcture            | Deploy frontend to IPFS                                                                                                                                                                                                                                                       |
 | 8.     | Network Infrastructure      | Deploy to secured and high reliability server(s) to host a demo relay chain and parachains testnets.                                                                                                                                                                          |
 
 #### Community and Documentation
@@ -69,7 +69,7 @@ We have broken down the SubDEX product roadmap into small manageable steps and w
 
 The overview of the features SubDEX intend to have are the follow:-
 
-- Implements a AMM protocol
+- Implements an AMM protocol
 - Liquidity provider fee - which will be set to 0.3% initially but will be set by the Liquidity providers and traders through the democracy module when the network has enough users.
 - Node runner fee - will be set to 0.1% initially but will be set by the node runners through the democracy module when the network has enough community nodes
 - Support exchange of KSM & DOT and other parachain assets
