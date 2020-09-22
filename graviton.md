@@ -12,24 +12,24 @@
 
   * A brief description of the project:
   
-[Graviton](https://graviton.one/) - a decentralised liquidity network for interchain digital assets.
+[Graviton](https://graviton.one/) is a decentralised liquidity network for interchain digital assets.
 
-Graviton gives financial incentivization and governance framework for cross-chain transfers providers and AMM liquidity providers of wrapped tokens.
+Graviton, a logical progression of the [Gravity protovol](https://gravity.tech) provides financial incentives and a governance framework for providers of cross-chain transfers and AMM liquidity for wrapped tokens. 
   
   * An indication of how we will integrate this project into Substrate / Polkadot / Kusama:
 
-We gonna build a new gravity-parachain, based on parity substrate with pBFT consensus managed by set of [gravity network validators (consuls)] (https://arxiv.org/pdf/2007.00966.pdf) and integrate this parachain into the gravity oracles/providers network with an implementation of crosschain-transfer gateway ([susy protocol](https://arxiv.org/pdf/2008.13515.pdf)).
+To extend the Graviton liquidity network onto the Polkadot ecosystem, we are planning to build a new parachain that connects Polkadot and other parachains with Gravity and its integrated target-chains, based on Parity Substrate with pBFT consensus managed by a set of [Gravity network validators (consuls)] (https://arxiv.org/pdf/2007.00966.pdf). This parachain will be integrated into the Gravity oracles/providers network to support a crosschain token transfer gateway (based on [SuSy protocol specification](https://arxiv.org/pdf/2008.13515.pdf)), which would allow for seamless cross-chain swaps via a separate user interface.  
 
   * An indication of why my team is interested in creating this project:
   
-  We're working on [gravity](https://gravity.tech/) and [graviton](https://graviton.one/) projects now. According to [our research article](https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4), there is still huge and unresolved potential of Parity/Polkadot tech to be practically implemented in DeFi products.
+ We are currently working on [Gravity](https://gravity.tech/) and [Graviton](https://graviton.one/). According to [our research article](https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4), there is still a huge untapped potential for Parity/Polkadot tech to be applied to DeFi products.
   
 
 ### Project Details 
 
 * Mockups/designs of any UI components:
 
-Drafted UI mockups for crosshcain swaps service - [SuSy gateway UI](https://www.figma.com/file/y67ljpuoDzt2Zv6NJRTeTm/Rabbit_Ex_figma?node-id=0%3A1)
+UI mockups for the crosschain swap service: [SuSy gateway UI](https://www.figma.com/file/y67ljpuoDzt2Zv6NJRTeTm/Rabbit_Ex_figma?node-id=0%3A1)
 
 * API specifications of the core functionality
 
@@ -37,40 +37,35 @@ Drafted UI mockups for crosshcain swaps service - [SuSy gateway UI](https://www.
 
 * An overview of the technology stack to be used
 
-Go, Solidity, Parity Substrate, Type Script, Vue.js, Parity Signer, Docker
+Go, Solidity, Parity Substrate, TypeScript, Vue.js, Parity Signer, Docker
 
 * Documentation of core components, protocols, architecture etc. to be deployed
 
-1 - Gravity parachain based on Parity Substrate will become a target chain of [gravity network](https://arxiv.org/pdf/2007.00966.pdf). Consuls (dynamic set of pBFT-validators) will also be pBFT validators for gravity-parachain:
+1. Gravity parachain based on Parity Substrate will become a target chain of [Gravity network](https://arxiv.org/pdf/2007.00966.pdf). Consuls (a dynamic set of pBFT-validators) will be pBFT validators for the Gravity parachain:
 
 ![targetchains and smart contracts](https://raw.githubusercontent.com/ventuary-lab/susy-ui/master/Screenshot%202020-09-22%20at%2005.27.47.png)
 
-2 - Crosschain gateways between gravity-parachain and integrated networks (eth, tron, bsc, waves and etc) ([susy protocol](https://arxiv.org/pdf/2008.13515.pdf))
+2. Crosschain gateways between the Gravity parachain and integrated networks (eth, tron, bsc, waves and etc) ([SuSy protocol](https://arxiv.org/pdf/2008.13515.pdf))
 
-3 - Gateway transfer fees and incentivisation model - [graviton](https://arxiv.org/pdf/2009.05540.pdf)
+3. Gateway transfer fees and incentivisation model - [Graviton](https://arxiv.org/pdf/2009.05540.pdf)
 
 ![scheme of incentivisation of the Graviton protocol](https://raw.githubusercontent.com/ventuary-lab/susy-ui/master/Screenshot%202020-09-22%20at%2005.27.47.png)
 
-4 - On-chain smart contract mechanics:
+4. On-chain smart contract mechanics:
 
 [pulse consensus](https://raw.githubusercontent.com/ventuary-lab/susy-ui/master/Screenshot%202020-09-22%20at%2005.49.56.png)
 
 
 * PoC/MVP or other relevant prior work or research on the topic:
 
-https://explorer.gravityhub.org/nebulae
+Demo network PoC for Gravity: https://explorer.gravityhub.org/nebulae
 
 
 ### Ecosystem Fit 
 Are there any other projects similar to yours? If so, how is your project different?
 
-1. Bifrost  (Wave 5) 
- 
- - website doesn’t work/github closed
-
-2. Substrate/Ethereum Bridge - ChainSafe and Centrifuge were awarded a grant in W3F Grants
-
- - graviton isn't just yet another eth-polka bridge. Instead of building on multipurpose chain-to-chain bridges we're focusing on network infrastructure, mostly around assets and liquidity of wrapped tokens. SuSy protocol is very simple, and it can be implemented on-chain in almost any chain (with smart contracts support). Also we can use any existing (or planned) AMM LPs for its insentivisation mechanisms in all integrated chains, including gravity-parachain.
+* Substrate/Ethereum Bridge - ChainSafe and Centrifuge were awarded a grant in W3F Grants
+ - Graviton isn't just yet another eth-polkadot bridge. Instead of building on multipurpose chain-to-chain bridges, we are focusing on network infrastructure, mostly around assets and liquidity of wrapped tokens. SuSy protocol is simple and it can be implemented on-chain with almost any chain that supports smart contracts. In addition, we can use any existing (or planned) AMM LPs for its incentivisation mechanisms in all integrated chains, including Gravity parachain.
 
 
 ## Team :busts_in_silhouette:
@@ -78,7 +73,7 @@ Are there any other projects similar to yours? If so, how is your project differ
 ### Team members
 * Team Leader / Tech Lead:
 
-Aleksei Pupyshev - [twitter](https://twitter.com/AlekseiPupyshev), [linkedin](https://www.linkedin.com/in/aleksei-pupyshev-23a70954/)
+Aleksei Pupyshev: [twitter](https://twitter.com/AlekseiPupyshev), [linkedin](https://www.linkedin.com/in/aleksei-pupyshev-23a70954/)
 
 * Names of team members:
 
@@ -142,7 +137,7 @@ The Graviton project is being built by VenLab blockchain research & development 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Parity Substrat | Parity Substrate with dynamic set of validators from consuls (top-k most reputapable nodes) of gravity network |  
+| 1. | Parity Substrate | Parity Substrate with dynamic set of validators from consuls (top-k most reputapable nodes) of gravity network |  
 | 2. | Parachain Integration | Connection of chain based on substrate to polkadot/kusama network |  
 | 3. | SuSy Gateway Integration Tests |  Crosschain gateway functionality within integration tests based on separate independent docker containers |
 
