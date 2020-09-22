@@ -6,15 +6,13 @@
 * **Proposer:** DeFi-Evangelist
 * **Payment Address:** 1BeRKVozn3X7wiByvYBryPWugFvvrp61ug
 
-*The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up: 
 
 ### Overview
 
   * A brief description of the project:
   
-Graviton - a decentralised liquidity network for interchain digital assets
+[Graviton](https://graviton.one/) - a decentralised liquidity network for interchain digital assets
 Graviton gives financial incentivization and governance framework for cross-chain transfers providers and AMM liquidity providers of wrapped tokens.
   
   * An indication of how we will integrate this project into Substrate / Polkadot / Kusama:
@@ -38,11 +36,11 @@ Drafted UI mockups for crosshcain swaps service - [SuSy gateway UI](https://www.
 
 * An overview of the technology stack to be used
 
-Go, Solidity, Parity Substrate, Type Script, Vue.js, Parity Signer
+Go, Solidity, Parity Substrate, Type Script, Vue.js, Parity Signer, Docker
 
 * Documentation of core components, protocols, architecture etc. to be deployed
 
-1 - Gravity parachain based on Parity Substrate will become a target chain of [gravity network] (https://arxiv.org/pdf/2007.00966.pdf). Consuls (dynamic set of pBFT-validators) will also be pBFT validators for gravity-parachain:
+1 - Gravity parachain based on Parity Substrate will become a target chain of [gravity network](https://arxiv.org/pdf/2007.00966.pdf). Consuls (dynamic set of pBFT-validators) will also be pBFT validators for gravity-parachain:
 
 ![targetchains and smart contracts](https://raw.githubusercontent.com/ventuary-lab/susy-ui/master/Screenshot%202020-09-22%20at%2005.27.47.png)
 
@@ -92,28 +90,33 @@ Team:
 
 Tech/Dev:
 * https://gravity.tech/
+
 * https://graviton.one/
 
 ### Legal Structure 
 Aleksei Pupyshev - individual entrepreneur license (Russia)
 
 ### Team's experience
-The Graviton project is being built by VenLab blockchain research & development
-team, founded by Aleksei Pupyshev in 2018. VenLab’s track record:
+The Graviton project is being built by VenLab blockchain research & development team, founded by Aleksei Pupyshev in 2018. VenLab’s track record:
 
-“Mastering Web 3.0” online course for developers on [Stepik](https://stepik.org/course/54415/promo) and [Coursera](https://www.coursera.org/learn/mastering-web3-waves?#instructors)
+* “Mastering Web 3.0” online course for developers on [Stepik](https://stepik.org/course/54415/promo) and [Coursera](https://www.coursera.org/learn/mastering-web3-waves?#instructors)
+
 ~3k learners
+
 ~1k developers in [dev chat](https://t.me/waves_ride_dapps_dev)
 
-[Neutrino](https://neutrino.at/) [($USDN)](https://coinmarketcap.com/currencies/neutrino-usd/) - An algorithmic crypto-collateralized stablecoin (acquired by [WX](https://waves.exchange/))
+* [Neutrino](https://neutrino.at/) [($USDN)](https://coinmarketcap.com/currencies/neutrino-usd/) - An algorithmic crypto-collateralized stablecoin (acquired by [WX](https://waves.exchange/))
 
 ~50mln$ Total Value Locked (TVL)
+
 ~7k dApp users
+
 ~30mln$ market cap & ~3mln$ volume
 
-[Gravity Protocol](https://medium.com/gravity-protocol) - A blockchain-agnostic oracles and cross-chain communication network
+* [Gravity Protocol](https://medium.com/gravity-protocol) - A blockchain-agnostic oracles and cross-chain communication network
 
 5 integrated chains so far
+
 21+ reputable node operators 
 
 
@@ -126,55 +129,46 @@ team, founded by Aleksei Pupyshev in 2018. VenLab’s track record:
 
 ## Development Roadmap :nut_and_bolt: 
 
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
-
-For each milestone:
-* Please be sure to include a specification of the software. The level of detail must be enough so that we are able to verify that the software meets the specification.
-* Please include total amount of funding requested per milestone.
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-* Please commit to providing a dockerfiles for the delivery of your project. 
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
-
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
+* **Total Estimated Duration:** 3 months
+* **Full-time equivalent (FTE):** 3.5
+* **Total Costs:** 1.8 BTC
 
-### Milestone 1 Example — Implement Substrate Modules 
+### Milestone 1 — Gravity-Parachain
 * **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 0.75 BTC
+* **FTE:**  1.2
+* **Costs:** 0.6 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Parity Substrat | Parity Substrate with dynamic set of validators from consuls (top-k most reputapable nodes) of gravity network |  
+| 2. | Parachain Integration | Connection of chain based on substrate to polkadot/kusama network |  
+| 3. | SuSy Gateway Integration Tests |  Crosschain gateway functionality within integration tests based on separate independent docker containers |
 
-### Milestone 2 Example — Additional features
-...
 
-### Community engagement
+### Milestone 2 — Crosschain Swap Demo
+* **Estimated Duration:** 1 month
+* **FTE:**  1.1
+* **Costs:** 0.6 BTC
 
-As part of the Program, we require that you produce an article/tutorial and publish it (for example on [Medium](https://medium.com/)). It should explain your work done as part of the grant. 
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Parity Signer | Integration with Parity Signer |  
+| 2. | Deployment into testnets | Transition of the gateway functionality from integration tests into the stable network |  
+| 3. | Demo UI | Basic UI for manual testings of crosschain swaps |  
 
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
+
+### Milestone 3 — Full-Functioning Crosschain Swaps & Single Sided AMM Liquidity Pool for wrapped tokens
+* **Estimated Duration:** 1 month
+* **FTE:**  1.2
+* **Costs:** 0.6 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Full-Functioning Crosschain Swaps UI/UX | Production ready functionality of crosschain transfers between parahcain and gravity chains (eth, bsc, tron, waves)|  
+| 2. | Single Sided AMM Liquidity Pool | Uniswap-Like pools without slippage with price based on data feed from oracles |  
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
+A) multichain network of liquidity for wrapped tokens
+B) interchain governance system for graviton network
 
-## Additional Information :heavy_plus_sign: 
-Any additional information that you think is relevant to this application that hasn't already been included.
-
-Possible additional information to include:
-* What work has been done so far?
-* Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far?
