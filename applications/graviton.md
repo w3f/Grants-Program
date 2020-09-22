@@ -12,16 +12,17 @@
 
   * A brief description of the project:
   
-[Graviton](https://graviton.one/) - a decentralised liquidity network for interchain digital assets
+[Graviton](https://graviton.one/) - a decentralised liquidity network for interchain digital assets.
+
 Graviton gives financial incentivization and governance framework for cross-chain transfers providers and AMM liquidity providers of wrapped tokens.
   
   * An indication of how we will integrate this project into Substrate / Polkadot / Kusama:
 
-We gonna build a new gravity-parachain based on parity substrate with pBFT consensus managed by same set of [gravity network validators] (https://arxiv.org/pdf/2007.00966.pdf) and integrate this parachain into the gravity oracles/providers network with an implementation of crosschain-transfer gateway ([susy protocol](https://arxiv.org/pdf/2008.13515.pdf)).
+We gonna build a new gravity-parachain, based on parity substrate with pBFT consensus managed by set of [gravity network validators (consuls)] (https://arxiv.org/pdf/2007.00966.pdf) and integrate this parachain into the gravity oracles/providers network with an implementation of crosschain-transfer gateway ([susy protocol](https://arxiv.org/pdf/2008.13515.pdf)).
 
   * An indication of why my team is interested in creating this project:
   
-  We're working on [gravity](https://gravity.tech/) and [graviton](https://graviton.one/) crosschain DeFi projects now. According to [our research article](https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4) there is still huge unresolved potential of Parity/Polkadot tech to be practically implemented in DeFi products.
+  We're working on [gravity](https://gravity.tech/) and [graviton](https://graviton.one/) projects now. According to [our research article](https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4), there is still huge and unresolved potential of Parity/Polkadot tech to be practically implemented in DeFi products.
   
 
 ### Project Details 
@@ -69,7 +70,7 @@ Are there any other projects similar to yours? If so, how is your project differ
 
 2. Substrate/Ethereum Bridge - ChainSafe and Centrifuge were awarded a grant in W3F Grants
 
- - graviton isn't just yet another eth-polka bridge. Instead of focusing on multipurpose chain-to-chain bridges we're focusing on network infrastructure, mostly around assets and liquidity of wrapped tokens. SuSy protocol is very simple, and it can be implemented on-chain in almost every chain (with smart contracts support). Also we can use any existing (or planned) AMM LPs for its insentivisation mechanisms in all integrated chains (including gravity-parachain).
+ - graviton isn't just yet another eth-polka bridge. Instead of building on multipurpose chain-to-chain bridges we're focusing on network infrastructure, mostly around assets and liquidity of wrapped tokens. SuSy protocol is very simple, and it can be implemented on-chain in almost any chain (with smart contracts support). Also we can use any existing (or planned) AMM LPs for its insentivisation mechanisms in all integrated chains, including gravity-parachain.
 
 
 ## Team :busts_in_silhouette:
@@ -77,7 +78,7 @@ Are there any other projects similar to yours? If so, how is your project differ
 ### Team members
 * Team Leader / Tech Lead:
 
-Aleksei Pupyshev - [tw](https://twitter.com/AlekseiPupyshev), [li](https://www.linkedin.com/in/aleksei-pupyshev-23a70954/)
+Aleksei Pupyshev - [twitter](https://twitter.com/AlekseiPupyshev), [linkedin](https://www.linkedin.com/in/aleksei-pupyshev-23a70954/)
 
 * Names of team members:
 
@@ -166,9 +167,12 @@ The Graviton project is being built by VenLab blockchain research & development 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | Full-Functioning Crosschain Swaps UI/UX | Production ready functionality of crosschain transfers between parahcain and gravity chains (eth, bsc, tron, waves)|  
-| 2. | Single Sided AMM Liquidity Pool | Uniswap-Like pools without slippage with price based on data feed from oracles |  
+| 2. | Single Sided AMM Liquidity Pool | Uniswap-Like pools without slippage with price based on data feed from oracles |
+| 3. | Liquidity Mining | Liquidity Mining functionality for liquidity and transfer providers (gateway oracles) |
 
 ## Future Plans
+
 A) multichain network of liquidity for wrapped tokens
+
 B) interchain governance system for graviton network
 
