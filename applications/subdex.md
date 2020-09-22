@@ -69,7 +69,7 @@ We have broken down the SubDEX product roadmap into small manageable steps and w
 
 The overview of the features SubDEX intend to have are the follow:-
 
-- Implements a AMM protocol
+- Implements an AMM protocol
 - Liquidity provider fee - which will be set to 0.3% initially but will be set by the Liquidity providers and traders through the democracy module when the network has enough users.
 - Node runner fee - will be set to 0.1% initially but will be set by the node runners through the democracy module when the network has enough community nodes
 - Support exchange of KSM & DOT and other parachain assets
