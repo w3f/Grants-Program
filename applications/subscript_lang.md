@@ -80,7 +80,7 @@ The AS package will cover the following substrate contract api:
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Testing | This milestone will have unit-test for all the following runtime api impemented. Integration test will be delivered in next milestone. |
+| 0b. | Testing | This milestone will have unit-test for all the following runtime api impemented. We will mock most of the contract runtime api to simulate host functions. Integration test will be delivered in next milestone. |
 | 1. | contract runtime environment | contract builder and execution to initailize the contract code |
 | 2. | core types | add core component: AccountId, Balance, Hash, Block |
 | 2. | storage access | contract low level storage read and write with key |
@@ -89,6 +89,7 @@ The AS package will cover the following substrate contract api:
 | 5. | contract event generation | Generate event from contract call |
 | 6. | contract call method | Method for make contract call. |
 | 7. | hash utility | Make digest of encoded input to generate hash image |
+| 8. | `SCALE` codec | Builtin codec functions to serialize and deserialize input.we may directly use LimeChain `as-scale-codec` implementation. |
 
 
 ## Future Plans
