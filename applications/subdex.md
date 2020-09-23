@@ -42,7 +42,7 @@ The team met during the hackthon and have established strong inter-team relation
 
 - **Total Estimated Duration:** 8 weeks
 - **Full-time equivalent (FTE):** 2 FTE
-- **Total Costs:** 2.5
+- **Total Costs:** 2.5 BTC
 
 ### Milestone 1
 
