@@ -28,7 +28,7 @@ In a frame of this grant application we want to develop two things which are cor
 
 _**- polka/kusama cross-chain transfers gateway infrastructure and service**_
 
-(chains: polka/cusama <-> tron, binance smart chain (bsc), waves)
+(chains: polka/kusama <-> tron, binance smart chain (bsc), waves)
 
 _**- on-chain single sided liquidity service for wrapped tokens**_
 
