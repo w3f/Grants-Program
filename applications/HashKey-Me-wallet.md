@@ -89,10 +89,9 @@ HashKey Me wallet would like to support for Kusama and Polkadot to IOS and Andro
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | UI Desigin |UI Desgin for Polkadot/Kusama governance and coin transfer |  
-| 2. | Design UX flows| Create a UX that is pleasant to work with|  
-| 3. | integrated UI to application(IOS,Android)| set IOS/Android project structure|  
-| 4. | Documentation| a basic tutorial that explians how a user can compile and run Andriod/IOS application|  
+| 1. | UI Desigin |UI Desgin for Polkadot/Kusama staking, governance and coin transfer |  
+| 2. | integrated UI to application(IOS,Android)| set IOS/Android project structure|  
+| 3. | Documentation| a basic tutorial that explians how a user can compile and run Andriod/IOS application|  
 
 
 ### Milestone 2 
