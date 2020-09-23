@@ -101,6 +101,7 @@ Similarities:
 
 Differences:
 - EOS-Polka bridge or ETH-Polka bridges atm. Gravity will bring all integrated chains simultaneously after GSC/GPC implementation.
+(chains: polka/kusama <-> tron, binance smart chain (bsc), waves)
 - No service infrastructure on targetchains (nebula-sc or user-sc lego flexible structure).
 - Gravity validators and signers are managed by p2p reputation scores.
 - Graviton is also single sided AMM service within the targetchain.
