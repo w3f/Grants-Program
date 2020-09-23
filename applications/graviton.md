@@ -9,35 +9,47 @@
 ## Project Overview :page_facing_up: 
 
 ### Overview
-
-  * A brief description of the project:
   
-[Graviton](https://graviton.one/) - a decentralised liquidity network for interchain digital assets.
+[Graviton](https://graviton.one/) - a decentralised liquidity network for interchain digital assets. Graviton gives financial incentivization and governance framework for cross-chain transfers providers and AMM liquidity providers of wrapped tokens.
 
-Graviton gives financial incentivization and governance framework for cross-chain transfers providers and AMM liquidity providers of wrapped tokens.
-  
-  * An indication of how we will integrate this project into Substrate / Polkadot / Kusama:
+Graviton infrastructure is represented by three products:
 
-We gonna build a new gravity-parachain, based on parity substrate with pBFT consensus managed by set of [gravity network validators (consuls)](https://arxiv.org/pdf/2007.00966.pdf) and integrate this parachain into the gravity oracles/providers network with an implementation of crosschain-transfer gateway ([susy protocol](https://arxiv.org/pdf/2008.13515.pdf)).
+- Cross-chain tokens gateway service ([SuSy Gateway](https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4))
+- Single sided liquidity service for wrapped tokens
+- Liquidity incentivisation network & governance portal
 
-  * An indication of why my team is interested in creating this project:
-  
-  We're working on [gravity](https://gravity.tech/) and [graviton](https://graviton.one/) projects now. According to [our research article](https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4), there is still huge and unresolved potential of Parity/Polkadot tech to be practically implemented in DeFi products.
-  
+We're founders and core devs of tokenless oracles protocol - [Gravity](https://arxiv.org/pdf/2007.00966.pdf). The protocol itself is aiming to be a blockchain-agnostic solution. [Graviton](https://graviton.one/) - is an application on top of gravity network designed to increase user experience with wrapped tokens, gateways and bring an incentivisation for gateways oracles and AMM liquidity providers in the target chains.
+
+
+### Reason for an application
+Polka tech (Substrate / Polkadot / Kusama) will be integrated into gravity network as a targetchain (and depositchain). We believe that there will be more DeFi services on Polka/Kusama chains in upcoming months/years and we'd like to start building our own services in them too.
+
+In a frame of this grant application we want to develop two things which are core components for graviton project:
+
+1) polka/kusama cross-chain transfers gateway infrastructure and service
+2) on-chain single sided liquidity service for wrapped tokens
+
+P.S.: We're not experts in Polka tech yet, so we can't propose comprehensive tech explanation of how exactly integration and ssAMM service will look like. Also, there aren't much functionality with parachains working in Polka or Kusama networks at the moment, so we're expecting some dependecies from release dates or tradeofs beftween final proper designed solution and temporary solutions.
+
 
 ### Project Details 
+We're goin to start from creation of Parity Substrate based gravity-substrate-chain with pBFT consensus, with validators represented by gravity consuls ([most reputapable nodes](https://arxiv.org/pdf/2007.00966.pdf)). SYSTEM-SC and NEBULA-SC will be deployed on gravity-substrate-chain. SuSy gateway (via decentralized oracle - gravity) will be deployed too.
 
-* Mockups/designs of any UI components:
+This temporary solution will be an infrastructure for building gateway and single sided liquidity AMM service for wrapped tokens.
+This temporary solution will work untill Kusama/Polka chains will start supporting parachains in mainnets.
 
-Drafted UI mockups for crosshcain swaps service - [SuSy gateway UI](https://www.figma.com/file/y67ljpuoDzt2Zv6NJRTeTm/Rabbit_Ex_figma?node-id=0%3A1)
+When it will become possible we'll make a hardfork of gravity-substrate-chain to change consensus and validators making this chain as a parachain of Kusama/Polka networks ("gravity-substrate-chain -> gravity-parachain" migration).
 
-* API specifications of the core functionality
+Even before mainnet launch we'll make this migration in testnet.
 
-![high level api spec](https://raw.githubusercontent.com/ventuary-lab/susy-ui/master/Screenshot%202020-09-22%20at%2005.17.47.png)
+Mockups:
+Drafted UI mockups for crosshcain swaps service - [SuSy Gateway UI](https://www.figma.com/file/y67ljpuoDzt2Zv6NJRTeTm/Rabbit_Ex_figma?node-id=0%3A1).
 
-* An overview of the technology stack to be used
+Working demo:
+Existing testnet demo for Waves->Ethereum chains - [crosschain swaps demo service](https://susy.gravity.tech/swap)
 
-Go, Solidity, Parity Substrate, Type Script, Vue.js, Parity Signer, Docker
+Tech stack:
+Go, Rust, Solidity, Parity Substrate, Type Script, Vue.js, polkadot{.js}, Docker
 
 * Documentation of core components, protocols, architecture etc. to be deployed
 
