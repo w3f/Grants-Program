@@ -56,7 +56,7 @@ Go, Rust, Solidity, Parity Substrate, Type Script, Vue.js, polkadot{.js}, Docker
 * GSC - gravity-substrate-chain (v0)
 * GPC - gravity-parachain (v1)
 
-- To implement token transfer gateways we'll implement [SuSy]() protocol between GSC/GPC chain and Binance Smart Chain (BSC) (or/and another chain integrated into gravity net: Tron, Ethereum, Waves):
+- To implement token transfer gateways we'll implement [SuSy](https://arxiv.org/abs/2008.13515) protocol between GSC/GPC chain and Binance Smart Chain (BSC) (or/and another chain integrated into gravity net: Tron, Ethereum, Waves):
 
 ![SuSy LU->IB flow](https://raw.githubusercontent.com/ventuary-lab/images/master/graviton/susy-flow.png)
 
@@ -83,29 +83,41 @@ II. (on-chain) Augmented Threshold Signature step:
 ![Graviton Liquidity Mining Flow](https://raw.githubusercontent.com/ventuary-lab/images/master/graviton/graviton-lm.png)
 
 
+Research papers:
+- [Gravity Protocol](https://arxiv.org/abs/2009.05540)
+- [SuSy Protocol](https://arxiv.org/abs/2008.13515)
+- [Graviton Liquidity Network](https://arxiv.org/abs/2007.00966)
+
 ### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
+There are several projects in the Polka ecosystem similar with graviton:
 
-1. Bifrost  (Wave 5) 
+"Bifrost - A parachain designed for staking liquidity (Wave 5)" and "Substrate/Ethereum Bridge - ChainSafe and Centrifuge were awarded a grant in W3F Grants"
  
- - website doesn’t work/github closed
+Similarities:
+- token bridge based on multiple signings
 
-2. Substrate/Ethereum Bridge - ChainSafe and Centrifuge were awarded a grant in W3F Grants
+Differences:
+- EOS-Polka bridge or ETH-Polka bridges atm. Gravity will bring all integrated chains simultaneously after GSC/GPC implementation.
+- No service infrastructure on targetchains (nebula-sc or user-sc lego flexible structure).
+- Gravity validators and signers are managed by p2p reputation scores.
+- Graviton is also single sided AMM service within the targetchain.
 
- - graviton isn't just yet another eth-polka bridge. Instead of building on multipurpose chain-to-chain bridges we're focusing on network infrastructure, mostly around assets and liquidity of wrapped tokens. SuSy protocol is very simple, and it can be implemented on-chain in almost any chain (with smart contracts support). Also we can use any existing (or planned) AMM LPs for its insentivisation mechanisms in all integrated chains, including gravity-parachain.
+Graviton isn't just gateway for polkador/kusama nets. Graviton infrastructure is represented by three products:
+
+- Cross-chain tokens gateway service ([SuSy Gateway](https://medium.com/gravity-protocol/susy-a-blockchain-agnostic-cross-chain-asset-transfer-gateway-protocol-based-on-gravity-9d5b1550e5f4)).
+- Single sided liquidity service for wrapped tokens.
+- Liquidity incentivisation network & governance portal.
 
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Team Leader / Tech Lead:
 
+Team Lead / Tech Lead:
 Aleksei Pupyshev - [twitter](https://twitter.com/AlekseiPupyshev), [linkedin](https://www.linkedin.com/in/aleksei-pupyshev-23a70954/)
 
-* Names of team members:
-
+Team members:
 Ilya Sapranidi (researcher), Shamil Khalilov (front-end), Ilya Teterin (blockchain), Regina Chernyavska (design)
-
 
 ### Team Website	
 Team:
@@ -124,23 +136,15 @@ The Graviton project is being built by VenLab blockchain research & development 
 
 * “Mastering Web 3.0” online course for developers on [Stepik](https://stepik.org/course/54415/promo) and [Coursera](https://www.coursera.org/learn/mastering-web3-waves?#instructors)
 
-~3k learners
-
-~1k developers in [dev chat](https://t.me/waves_ride_dapps_dev)
+~3k learners, ~1k developers in [dev chat](https://t.me/waves_ride_dapps_dev)
 
 * [Neutrino](https://neutrino.at/) [($USDN)](https://coinmarketcap.com/currencies/neutrino-usd/) - An algorithmic crypto-collateralized stablecoin (acquired by [WX](https://waves.exchange/))
 
-~50mln$ Total Value Locked (TVL)
-
-~7k dApp users
-
-~30mln$ market cap & ~3mln$ volume
+~50mln$ Total Value Locked (TVL), ~7k dApp users, ~30mln$ market cap & ~3mln$ volume
 
 * [Gravity Protocol](https://medium.com/gravity-protocol) - A blockchain-agnostic oracles and cross-chain communication network
 
-5 integrated chains so far
-
-21+ reputable node operators 
+5 integrated chains so far, 21+ reputable node operators
 
 
 ### Team Code Repos
@@ -164,7 +168,7 @@ The Graviton project is being built by VenLab blockchain research & development 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Parity Substrat | Parity Substrate with dynamic set of validators from consuls (top-k most reputapable nodes) of gravity network |  
+| 1. | Parity Substrate | Parity Substrate with dynamic set of validators from consuls (top-k most reputapable nodes) of gravity network |  
 | 2. | Parachain Integration | Connection of chain based on substrate to polkadot/kusama network |  
 | 3. | SuSy Gateway Integration Tests |  Crosschain gateway functionality within integration tests based on separate independent docker containers |
 
@@ -176,7 +180,7 @@ The Graviton project is being built by VenLab blockchain research & development 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Parity Signer | Integration with Parity Signer |  
+| 1. | polkadot{.js} | Integration with polkadot{.js} |  
 | 2. | Deployment into testnets | Transition of the gateway functionality from integration tests into the stable network |  
 | 3. | Demo UI | Basic UI for manual testings of crosschain swaps |  
 
