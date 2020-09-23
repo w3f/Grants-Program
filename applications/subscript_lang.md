@@ -73,7 +73,9 @@ We only provide **milestone1**  here for contract runtime api implementation. Fu
 * **FTE:**  2
 * **Costs:** 2.3 btc
 
-In this milestone, all the basic contract runtime compoment will be implemented. This stage will establish a runtime environment for smart contract. We may benefit from the reference implemention of parity Ink and provide similar api.
+In this milestone, all the basic substrate contract runtime api will be implemented in AssemblyScript. This stage will deliver a AssemblyScript package which provide encapsulation of current substrate contract api. With the AS api, contracts can be compiled to wasm and deployed on substrate contract node. We may benefit from the reference implemention of parity Ink and provide similar api.
+
+The AS package will cover the following substrate contract api:
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
