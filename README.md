@@ -37,7 +37,11 @@ You can find a list of areas in the Web 3.0 Technology Stack that demand particu
 
 **W3F Grants Committee**
 
-The Committee consists of individuals who know the funding priorities of the Polkadot ecosystem. The committee evaluates grant applications and provides feedback on these applications.
+The Committee consists of individuals who know the funding priorities of the Polkadot ecosystem. 
+The committee evaluates grant applications and provides feedback on these applications.
+
+In cases where a niche expert opinion is desirable, one of the committee members may 
+request such a review. 
 
 * [Aeron Buchanan](https://github.com/aeronbuchanan)
 * [Marcin Górny](https://github.com/mmagician)
