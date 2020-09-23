@@ -28,6 +28,8 @@ In a frame of this grant application we want to develop two things which are cor
 
 _**- polka/kusama cross-chain transfers gateway infrastructure and service**_
 
+(chains: polka/cusama <-> tron, binance smart chain (bsc), waves)
+
 _**- on-chain single sided liquidity service for wrapped tokens**_
 
 P.S.: We're not experts in Polka tech yet, so we can't propose comprehensive tech explanation of how exactly integration and ssAMM service will look like. Also, there aren't much functionality with parachains working in Polka or Kusama networks at the moment, so we're expecting some dependencies from release dates or trade-offs between final properly designed solution and temporary solutions.
