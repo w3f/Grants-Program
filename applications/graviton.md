@@ -38,7 +38,7 @@ We're goin to start from creation of Parity Substrate based gravity-substrate-ch
 This temporary solution will be an infrastructure for building gateway and single sided liquidity AMM service for wrapped tokens.
 This temporary solution will work untill Kusama/Polka chains will start supporting parachains in mainnets.
 
-When it will become possible we'll make a hardfork of gravity-substrate-chain to change consensus and validators making this chain as a parachain of Kusama/Polka networks ("gravity-substrate-chain -> gravity-parachain" migration).
+When it will become possible we'll make a hardfork of gravity-substrate-chain to change consensus and validators making this chain as a parachain of Kusama/Polka networks ("gravity-substrate-chain -> gravity-parachain" (GSC -> GPC) migration).
 
 Even before mainnet launch we'll make this migration in testnet.
 
@@ -51,26 +51,36 @@ Existing testnet demo for Waves->Ethereum chains - [crosschain swaps demo servic
 Tech stack:
 Go, Rust, Solidity, Parity Substrate, Type Script, Vue.js, polkadot{.js}, Docker
 
-* Documentation of core components, protocols, architecture etc. to be deployed
+### Protocols Details 
 
-1 - Gravity parachain based on Parity Substrate will become a target chain of [gravity network](https://arxiv.org/pdf/2007.00966.pdf). Consuls (dynamic set of pBFT-validators) will also be pBFT validators for gravity-parachain:
+* GSC - gravity-substrate-chain (v0)
+* GPC - gravity-parachain (v1)
 
-![targetchains and smart contracts](https://raw.githubusercontent.com/ventuary-lab/susy-ui/master/Screenshot%202020-09-22%20at%2005.27.47.png)
+- To implement token transfer gateways we'll implement [SuSy]() protocol between GSC/GPC chain and Binance Smart Chain (BSC) (or/and another chain integrated into gravity net: Tron, Ethereum, Waves):
 
-2 - Crosschain gateways between gravity-parachain and integrated networks (eth, tron, bsc, waves and etc) ([susy protocol](https://arxiv.org/pdf/2008.13515.pdf))
+![SuSy LU->IB flow](https://raw.githubusercontent.com/ventuary-lab/images/master/graviton/susy-flow.png)
 
-3 - Gateway transfer fees and incentivisation model - [graviton](https://arxiv.org/pdf/2009.05540.pdf)
+- Core on-chain/off-chain functionality of the gateway will be done via [gravity network protocol](https://arxiv.org/pdf/2007.00966.pdf):
 
-![scheme of incentivisation of the Graviton protocol](https://raw.githubusercontent.com/ventuary-lab/susy-ui/master/Screenshot%202020-09-22%20at%2005.27.47.png)
+![Gravity-Flow](https://raw.githubusercontent.com/ventuary-lab/images/master/graviton/gravity-flow.png)
 
-4 - On-chain smart contract mechanics:
+- Gravity is a decentralized oracle represented by gravity nodes/oracles which are participating into pulse consensus. 
+Pulse consensus hase 2 steps of data verification.
+I. (off-chain) Commit-Reveal step:
 
-[pulse consensus](https://raw.githubusercontent.com/ventuary-lab/susy-ui/master/Screenshot%202020-09-22%20at%2005.49.56.png)
+![Gravity-Pulse CR step](https://raw.githubusercontent.com/ventuary-lab/images/master/graviton/gravity-pulse-cr.png)
+ 
+II. (on-chain) Augmented Threshold Signature step:
 
+![Gravity-Pulse AV step](https://raw.githubusercontent.com/ventuary-lab/images/master/graviton/gravity-pulse-av.png)
 
-* PoC/MVP or other relevant prior work or research on the topic:
+- SuSy crosschain gateway is an implementation of USER-SC contarcts on both chains as LU (lock/unlock) or IB (issue/burn) port application secured by dynamically assembled subset of gravity oracles:
 
-https://explorer.gravityhub.org/nebulae
+![Gravity-SC](https://raw.githubusercontent.com/ventuary-lab/images/master/graviton/gravity-smartcontracts.png)
+
+- To bring liquidity and better UX for users for wrapped tokens on destination chains we have to build/support/incentivise AMM services on destination chains (especially single sided liquidity AMM LPs):
+
+![Graviton Liquidity Mining Flow](https://raw.githubusercontent.com/ventuary-lab/images/master/graviton/graviton-lm.png)
 
 
 ### Ecosystem Fit 
