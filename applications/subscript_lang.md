@@ -90,6 +90,7 @@ The AS package will cover the following substrate contract api:
 | 6. | contract call method | Method for make contract call. |
 | 7. | hash utility | Make digest of encoded input to generate hash image |
 | 8. | `SCALE` codec | Builtin codec functions to serialize and deserialize input.we may directly use LimeChain `as-scale-codec` implementation. |
+| 9. | example for demonstration | Provide  ERC20 contract example to test on substrate node |
 
 
 ## Future Plans
