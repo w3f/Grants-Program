@@ -1,7 +1,7 @@
 # Open Grant Proposal
 
 * **Project:** P!nkForge Network
-* **Proposer:** Manson Lu
+* **Proposer:** Mason Lu
 * **Payment Address:** 3PxaDdEcL5NZqWGusxQtCYJarPyzWbvHz7
 
 ## Project Overview 📄 
