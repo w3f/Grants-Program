@@ -1,4 +1,4 @@
-# General Grant Proposal
+# Open Grant Proposal
 
 * **Project:** P!nkForge Network
 * **Proposer:** Manson Lu
