@@ -69,6 +69,7 @@ Go, Rust, Solidity, Parity Substrate, Type Script, Vue.js, polkadot{.js}, Docker
 
 - Gravity is a decentralized oracle represented by gravity nodes/oracles which are participating into pulse consensus. 
 Pulse consensus hase 2 steps of data verification.
+
 I. (off-chain) Commit-Reveal step:
 
 ![Gravity-Pulse CR step](https://raw.githubusercontent.com/ventuary-lab/images/master/graviton/gravity-pulse-cr.png)
