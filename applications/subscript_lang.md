@@ -3,7 +3,7 @@
 **Subscript:** Substrate smart contact written in `AssemblyScript`
 
 * **Project:** Subscript
-* **Proposer:** synote
+* **Proposer:** [synote](https://github.com/synote)
 * **Payment Address:**  bc1qzv5ljrt0sngjjnn25s4jzsu7qtts5d74cq8tz5
 
 ## Project Overview :page_facing_up:
@@ -58,6 +58,7 @@ We alse engaged in smart contract tools interaged with vyper for contract audit 
 
 ### Team Code Repos
 * https://github.com/slickup/subscript
+* https://github.com/ascontract/subscript
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -66,12 +67,12 @@ We only provide **milestone1**  here for contract runtime api implementation. Fu
 ### Overview
 * **Total Estimated Duration:** 2 month
 * **Full-time equivalent (FTE):**  2
-* **Total Costs:** 2.3 btc
+* **Total Costs:** 2 btc
 
 ### Milestone 1  — Implement smart contract low level api
 * **Estimated Duration:** 2 month
 * **FTE:**  2
-* **Costs:** 2.3 btc
+* **Costs:** 2 btc
 
 In this milestone, all the basic substrate contract runtime api will be implemented in AssemblyScript. This stage will deliver a AssemblyScript package which provide encapsulation of current substrate contract api. With the AS api, contracts can be compiled to wasm and deployed on substrate contract node. We may benefit from the reference implemention of parity Ink and provide similar api.
 
@@ -81,17 +82,17 @@ The AS package will cover the following substrate contract api:
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Testing | This milestone will have unit-test for all the following runtime api impemented. We will mock most of the contract runtime api to simulate host functions. Integration test will be delivered in next milestone. |
+| 0c. | Documentation | We will provide both inline documentation of all the sdk api and  basic code example that show how developers use the api. |
 | 1. | contract runtime environment | contract builder and execution to initailize the contract code |
 | 2. | core types | add core component: AccountId, Balance, Hash, Block |
 | 2. | storage access | contract low level storage read and write with key |
-| 3. | object packing utilty | User data structure packing and unpacking method to storage access. |
-| 4. | memory manipulation | memory make and getter, setter |
+| 3. | object packing utilty | Provide user-defined data structure packing and unpacking method to storage access. |
+| 4. | memory manipulation | Implement memory make and getter, setter |
 | 5. | contract event generation | Generate event from contract call |
-| 6. | contract call method | Method for make contract call. |
+| 6. | contract call method | Provide method for make contract call. |
 | 7. | hash utility | Make digest of encoded input to generate hash image |
-| 8. | `SCALE` codec | Builtin codec functions to serialize and deserialize input.we may directly use LimeChain `as-scale-codec` implementation. |
+| 8. | `SCALE` codec | Builtin codec functions to serialize and deserialize input. We may directly use LimeChain `as-scale-codec` implementation. |
 | 9. | example for demonstration | Provide  ERC20 contract example to test on substrate node |
-
 
 ## Future Plans
 
