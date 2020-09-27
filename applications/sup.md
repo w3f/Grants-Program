@@ -2,7 +2,7 @@
 
 * **Project:** Sup
 * **Proposer:** [clearloop](https://github.com/clearloop)
-* **Payment Address:** Substrate package manager
+* **Payment Address:** 1NKWsqRaWZDNX17cuzfyykcAA317njqzSn
 
 ## Project Overview :page_facing_up: 
 
@@ -23,10 +23,10 @@ Hope this project can help more and more developers to join the ecosystem.
 
 * **Members:** Mercury Fletcher
 * **LinkedIn Profiles:** https://www.linkedin.com/in/mercury-fletcher-2277191a3/
-* **Code Repos:** https://github.com/clearloop
+* **Code Repos:** https://github.com/clearloop/sup
 * **Website:**	https://github.com/clearloop/sup
 * **Legal Structure:** Pensonal
-* **Team's Experience:** Author of [ElvisJS](https://github.com/elvisjs/elvis), [leetcode-cli](https://github.com/clearloop/leetcode-cli), [darwinia/shadow](https://github.com/darwinia-network/shadow) and [cdr.today](https://github.com/CdrToday/ct).
+* **Team's Experience:** Author of [ElvisJS](https://github.com/elvisjs/elvis), [leetcode-cli](https://github.com/clearloop/leetcode-cli)
 
 
 ## Development Roadmap :nut_and_bolt: 
@@ -52,7 +52,7 @@ $ cd <your-awesome-substrate-based-project> && cargo build
 And it will work.
 
 
-### Milestone 2 — Upgrading Substrate Dependencies in one command
+### Milestone 2 — Upgrading Substrate Registry in one command
 
 * **Estimated Duration:** 1 week
 * **FTE:** 0.285
@@ -61,10 +61,11 @@ And it will work.
 Run: 
 
 ```
-$ sup upgrade --tag <substrate-tag>
+$ sup upgrade --tag <substrate-tag> --registry <substrate-based-registry>
 ```
 
-Upgrades the dependencies of substrate by tag for current project.
++ Upgrades the registry of substrate by tag for the current project.
++ Supports manual customize subtrate registry(including substrate based registry)
 
 
 ### Milestone 2 — Documentation
