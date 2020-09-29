@@ -6,16 +6,8 @@
 
 ## Project Overview :page_facing_up: 
 
-The dependencies of substrate are managed `git`, which represents `relative path` instead of
-`http` link in `Cargo.toml`, it's hard to set up a new `node-template`, however, for the projects
-which are based on subtrate, upgrading the versions of the subtrate dependencies is too much
-complex and inefficiently.
-
-We are building a substrate package manager in Rust, which implements:
-
-+ One command generating a substrate node-template
-+ One command upgrading the substrate deps
-+ ...how about wasm runtime? need some advice
+sup is a substrate package manager using git, new node-template and upgrade
+substrate dependencies in one comamnd.
 
 Hope this project can help more and more developers to join the ecosystem.
 
@@ -33,13 +25,13 @@ Hope this project can help more and more developers to join the ecosystem.
 
 * **Total Estimated Duration:** 4 weeks
 * **Full-time equivalent (FTE):**  0.285
-* **Total Costs:** 0.5 BTC
+* **Total Costs:** 0.2 BTC
 
 ### Milestone 1 — Generate Node-Template in one command
 
-* **Estimated Duration:** Already Done
+* **Estimated Duration:** Finished
 * **FTE:** 0.285
-* **Costs:** 0.3 BTC
+* **Costs:** 0.05 BTC
 
 Just run:
 
@@ -56,7 +48,7 @@ And it will work.
 
 * **Estimated Duration:** 1 week
 * **FTE:** 0.285
-* **Costs:** 0.1 BTC
+* **Costs:** 0.05 BTC
 
 Run: 
 
@@ -65,31 +57,28 @@ $ sup upgrade --tag <substrate-tag> --registry <substrate-based-registry>
 ```
 
 + Upgrades the registry of substrate by tag for the current project.
-+ Supports manual customize subtrate registry(including substrate based registry)
++ Supports customize subtrate registry(including substrate-based registry)
 
 
-### Milestone 2 — Documentation
+### Milestone 3 — Documentation
 
-* **Estimated Duration:** 2 week
+* **Estimated Duration:** 1 week
 * **FTE:** 0.285
-* **Costs:** 0.1 BTC
+* **Costs:** 0.05 BTC
 
 More docs about this project, share this project to people who doesn't have experince
 of substrate, upgrading.
 
 
-### Milestone 3 — UnKnown
+### Milestone 4 — Keep Alive
 
-* **Estimated Duration:** ?
+* **Estimated Duration:** 24 week
 * **FTE:** 0.285
-* **Costs:** ? BTC
+* **Costs:** 0.05 BTC
 
-Not sure what could be done together further more, but need to round up.
+Keep sup alive, check and update every week at leat 6 months.
+
 
 ### Community engagement
 
 The tutorials and Documentation that we provide will be published as articles in Medium, [rust.cc](rust.cc) and other social media platforms with due mention about Web3 grant.
-
-## Future Plans
-
-We have a lot of ideas about the ecosystem, currently this project is the first step.
