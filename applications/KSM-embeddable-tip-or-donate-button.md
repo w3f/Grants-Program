@@ -16,11 +16,11 @@ Considering the request for this implementation not slowing down the websites an
 
 Mockups:
 
-![https://ipfs.io/ipfs/QmTgEHfyX7qJBNTvu5QYqeLsSVqPpkKTvY8e3Ea92eWRij?filename=Screenshot%202020-09-24%20at%2019.35.14.png](https://ipfs.io/ipfs/QmTgEHfyX7qJBNTvu5QYqeLsSVqPpkKTvY8e3Ea92eWRij?filename=Screenshot%202020-09-24%20at%2019.35.14.png)
+![Connect to Polkadot](https://i.imgur.com/ige90GF.png)
 
-![https://ipfs.io/ipfs/QmSXkWFnjVHSHDQ4sLdBXV3Q5fpncRCTwP2T97H6roTowq?filename=Screenshot%202020-09-24%20at%2019.36.12.png](https://ipfs.io/ipfs/QmSXkWFnjVHSHDQ4sLdBXV3Q5fpncRCTwP2T97H6roTowq?filename=Screenshot%202020-09-24%20at%2019.36.12.png)
+![Select a wallet](https://i.imgur.com/pQ1yaAE.png)
 
-![https://ipfs.io/ipfs/QmWR6SSer8y4MXDqsxXSkhdg9L6HCh628Kq46FSaQP26E3?filename=Screenshot%202020-09-24%20at%2019.36.24.png](https://ipfs.io/ipfs/QmWR6SSer8y4MXDqsxXSkhdg9L6HCh628Kq46FSaQP26E3?filename=Screenshot%202020-09-24%20at%2019.36.24.png)
+![Propose a tip/Donate](https://i.imgur.com/6TJircc.png)
 
 ## Team
 
