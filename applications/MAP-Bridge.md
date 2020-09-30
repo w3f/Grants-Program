@@ -58,10 +58,11 @@ MAP labs
 
 | Number | Deliverable                          | Specification                                                |
 | ------ | ------------------------------------ | ------------------------------------------------------------ |
-| 1.     | Substrate module: MMR Trie Structure | Implement a Substrate module which implement MMR.            |
-| 2.     | Substrate Block proof algorithm      | The latest block proof algorithm based on difficulty change  |
-| 3.     | Chain header storage                 | Process block header with MMR and deliver fast storage access |
-| 4.     | MMR verification module              | Deliver MMR verification in substrate SRML                   |
+| 0a. | License | Apache 2.0 |
+| 0b. | Testing | This milestone will have unit-test for all runtime api. |
+| 1.     | MMR Trie Structure | Implement core data structure which implement MMR trie. |
+| 2.    | block header storage             | Provide block header processtion with MMR and chain storage access. |
+| 3.    | substrae MMR proof runtime module | Deliver MMR proof verification in substrate SRML runtime     |
 
 ### Milestone 2 Integrate ULVP(ultra-light verification protocol) into substrate
 
@@ -72,6 +73,9 @@ MAP labs
 
 | Number | Deliverable                       | Specification                                                 |
 | ------ | --------------------------------- | ------------------------------------------------------------ |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can import the protocol. |
+| 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 1.     | Construct cross-chain transaction | Construct special transactions for the ULVP cross-chain protocol. |
 | 2.     | Transaction pool                  | Design and implement a cross-chain message management of message caching and ordering |
 | 3.     | Asset module                      | Asset management modules for the pledge, release, and destruction functions of cross-chain assets |
@@ -87,6 +91,9 @@ MAP labs
 
 | Number | Deliverable         | Specification                                         |
 | ------ | ------------------- | ----------------------------------------------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can establish the bridge. |
+| 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 1.     | ULVP runtime module | Implementation of a runtime module for ULVP                 |
 | 2.     | Assert exchange     | Implementation of a runtime module for asset exchange |
 | 3.     | Ultra light client  | Implement ultra light client of parachain chain             |
