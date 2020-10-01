@@ -43,15 +43,15 @@ $ cd <node-template> && cargo build
 
 And it will work.
 
-| Number        | Deliverable               | Specification                                 |
-| ------------- | -------------             | -------------                                 |
-| 0             | `sup new <node-template>` | New node-template in one command              |
-| 1             | `sup update`              | Update sup registry                           |
-| 2             | `sup source`              | List all substrate dependencies with versions |
-| 3             | `sup tag`                 | List all avaiable registry tags               |
+| Number | Deliverable                    | Specification                             |
+|--------|--------------------------------|-------------------------------------------|
+| 0      | `sup new <node-template>`      | New node-template in one command          |
+| 1      | `sup update`                   | Update sup registry                       |
+| 2      | `sup source --query <pattern>` | List substrate dependencies with versions |
+| 3      | `sup tag --limit <n>`          | List avaiable registry tags               |
 
 
-### Milestone 2 — Upgrading Substrate Registry in one command
+### Milestone 2 — Upgrading Substrate depencidencies in one command
 
 * **Estimated Duration:** 1 day
 * **FTE:** 0.285
@@ -66,13 +66,13 @@ $ sup upgrade --tag <substrate-tag> --registry <substrate-based-registry>
 + Upgrades the registry of substrate by tag for the current project.
 + Supports customize subtrate registry(including substrate-based registry)
 
-| Number        | Deliverable                                        | Specification                                                 |
-| ------------- | -------------                                      | -------------                                                 |
-| 0             | `sup new <node-template> --tag <t> --registry <r>` | New node-template with specified tag and registry             |
-| 1             | `sup update --registry <r>`                        | Update specified sup registry                                 |
-| 2             | `sup source --tag <t> --registry <r>`              | List all substrate dependencies with versions                 |
-| 3             | `sup tag --registry <r>`                           | List all avaiable tags of target registry                     |
-| 4             | `sup upgrade --tag <t>`                            | Upgrade current project to the latest tag of current registry |
+| Number | Deliverable                                        | Specification                                                |
+| ------ | -------------------------------------------------- | ------------------------------------------------------------ |
+| 0      | `sup new <node-template> --tag <t> --registry <r>` | New node-template with specified tag and registry            |
+| 1      | `sup update --registry <r>`                        | Update target registry                                       |
+| 2      | `sup source --tag <t> --registry <r>`              | List substrate dependencies with versions                    |
+| 3      | `sup tag --registry <r>`                           | List avaiable tags of target registry                        |
+| 4      | `sup upgrade --tag <t> --registry <r>`             | Upgrade current project to the target or latest tag of the current or target registry |
 
 ### Community engagement
 
