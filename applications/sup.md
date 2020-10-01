@@ -6,8 +6,8 @@
 
 ## Project Overview :page_facing_up: 
 
-sup is a substrate package manager using git, new node-template and upgrade
-substrate dependencies in one comamnd.
+sup is a substrate package manager using git, it allows developer new node-template 
+and upgrade substrate dependencies in one comamnd.
 
 Hope this project can help more and more developers to join the ecosystem.
 
@@ -23,13 +23,13 @@ Hope this project can help more and more developers to join the ecosystem.
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 4 weeks
+* **Total Estimated Duration:** 2 days
 * **Full-time equivalent (FTE):**  0.285
-* **Total Costs:** 0.2 BTC
+* **Total Costs:** 0.1 BTC
 
 ### Milestone 1 — Generate Node-Template in one command
 
-* **Estimated Duration:** Finished
+* **Estimated Duration:** 1 day
 * **FTE:** 0.285
 * **Costs:** 0.05 BTC
 
@@ -37,16 +37,23 @@ Just run:
 
 ```
 $ cargo install sup
-$ sup new <your-awesome-substrate-based-project>
-$ cd <your-awesome-substrate-based-project> && cargo build
+$ sup new <node-template>
+$ cd <node-template> && cargo build
 ```
 
 And it will work.
 
+| Number        | Deliverable               | Specification                                 |
+| ------------- | -------------             | -------------                                 |
+| 0             | `sup new <node-template>` | New node-template in one command              |
+| 1             | `sup update`              | Update sup registry                           |
+| 2             | `sup source`              | List all substrate dependencies with versions |
+| 3             | `sup tag`                 | List all avaiable registry tags               |
+
 
 ### Milestone 2 — Upgrading Substrate Registry in one command
 
-* **Estimated Duration:** 1 week
+* **Estimated Duration:** 1 day
 * **FTE:** 0.285
 * **Costs:** 0.05 BTC
 
@@ -59,25 +66,13 @@ $ sup upgrade --tag <substrate-tag> --registry <substrate-based-registry>
 + Upgrades the registry of substrate by tag for the current project.
 + Supports customize subtrate registry(including substrate-based registry)
 
-
-### Milestone 3 — Documentation
-
-* **Estimated Duration:** 1 week
-* **FTE:** 0.285
-* **Costs:** 0.05 BTC
-
-More docs about this project, share this project to people who doesn't have experince
-of substrate, upgrading.
-
-
-### Milestone 4 — Keep Alive
-
-* **Estimated Duration:** 24 week
-* **FTE:** 0.285
-* **Costs:** 0.05 BTC
-
-Keep sup alive, check and update every week at leat 6 months.
-
+| Number        | Deliverable                                        | Specification                                                 |
+| ------------- | -------------                                      | -------------                                                 |
+| 0             | `sup new <node-template> --tag <t> --registry <r>` | New node-template with specified tag and registry             |
+| 1             | `sup update --registry <r>`                        | Update specified sup registry                                 |
+| 2             | `sup source --tag <t> --registry <r>`              | List all substrate dependencies with versions                 |
+| 3             | `sup tag --registry <r>`                           | List all avaiable tags of target registry                     |
+| 4             | `sup upgrade --tag <t>`                            | Upgrade current project to the latest tag of current registry |
 
 ### Community engagement
 
