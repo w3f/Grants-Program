@@ -10,7 +10,7 @@ This application is in response to following RFP https://github.com/w3f/General-
 
 ### Overview
 
-As proposed in the RFP we will make a standalone embedded "Tip or Donate KSM" button with customizable text by the website owner. The button's embedded code will sanitize the current URL, check if the tip for the same URL already exist and is active. If avaliable and once clicked button will ask for permission to connect to PolkadotJS extension, offer to Propose Tip or Donate directly. If proposing tip, it will inform the user of the funds needed to propose a tip (transaction fee and deposit), check if the user is a Council member and optionally allow him to attach a message. Only Council members are allowed to propose the amount once the tip has been created. Once the tip is proposed the button will be disabled. If donating directly it will ask for an amount and allow visitor to enter a custom note.
+As proposed in the RFP we will make a standalone embedded "Tip or Donate KSM" button with customizable text by the website owner. The button's embedded code will sanitize the current URL, check if the tip for the same URL already exists and is active. If available and once clicked button will ask for permission to connect to PolkadotJS extension, offer to Propose Tip or Donate directly. If proposing a tip, it will inform the user of the funds needed to propose a tip (transaction fee and deposit), check if the user is a Council member and optionally allow him to attach a message. Only Council members are allowed to propose the amount once the tip has been created. Once the tip is proposed the button will be disabled. If donating directly it will ask for an amount and allow visitor to enter a custom note.
 
 Considering the request for this implementation not slowing down the websites and several performance test from different sources exhibiting Svelte as the optimal choice performance-wise we are strongly considering using Svelte as a development framework. Before committing to that decision we will conduct the performance tests ourselves and decide if it is the optimal solution. We will be using polkadot.js API.
 
@@ -64,37 +64,30 @@ We have experience in several private and open source projects. Most notable and
 - **Full-time equivalent (FTE):** 2 weeks
 - **Total Costs:** 1 BTC
 
-### Milestone 1 — Design
+### Milestone 1
 
-- **Estimated Duration:** 1 week
+- **Estimated Duration:** 3 weeks
 - **Costs:** 0.25 BTC
 
-| Number | Deliverable | Specification                                                                                                                                                               |
-| ------ | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.     | Design      | Design for the embedded button and the functionalities; connecting to Polkadot/installing the extension, selecting the wallet, proposing/donating tip, final system remark. |
+| Number | Deliverable                        | Specification                                                                                                                                                                              |
+| ------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|        |
+| 1.     | Embedded code                      | Removing the UTM, hashes, converting URL to bytes, checking if a tip for the same URL already exists and is active, if not the button is available.                                        |
+| 2.     | Connecting to PolkadotJS extension | If none is present, offer to install it. If allowed, a popup asking to select an account. If denied, cancel all. Offer two options: propose tip or donate directly (text is customizable). |
 
-### Milestone 2 — Development
+### Milestone 2
 
-- **Estimated Duration:** 1 month
-- **Costs:** 0.5 BTC
+- **Estimated Duration:** 1 month + 1 week
+- **Costs:** 0.75 BTC
 
-| Number | Deliverable                        | Specification                                                                                                                                                                                                                                                                                                                                                                                 |
-| ------ | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.     | Embedded code                      | Removing the UTM, hashes, converting URL to bytes, checking if a tip for the same URL already exist and is active, if not the button is available.                                                                                                                                                                                                                                            |
-| 2.     | Connecting to PolkadotJS extension | If none is present, offer to install it. If allowed, a popup asking to select an account. If denied cancell all. Offer two options: propose tip or donate directly (text is customizable).                                                                                                                                                                                                    |
-| 3.     | Propose tip                        | Inform user of the funds needed for tip proposal (deposit and transaction fee). If user is a Council member ask for the amount and create a new Tip. If user is not a Council member create a new Tip entry without specifying the amount (only Council members are aloowed to do so). Allow user to attach a message. Disable button and link to tips page in treasury after Tip is created. |
-| 4.     | Donate directly                    | Ask user for amount to donate and allow him to enter a custom note.                                                                                                                                                                                                                                                                                                                           |
-
-### Milestone 3 — User Testing
-
-- **Estimated Duration:** 1 month
-- **Costs:** 0.25 BTC
-
-| Number | Deliverable  | Specification                                                             |
-| ------ | ------------ | ------------------------------------------------------------------------- |
-| 1.     | User testing | We will conduct a thorough user testing of the developed functionalities. |
+| Number | Deliverable     | Specification                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|        |
+| 1.     | Propose tip     | Inform user of the funds needed for tip proposal (deposit and transaction fee). If user is a Council member ask for the amount and create a new Tip. If user is not a Council member create a new Tip entry without specifying the amount (only Council members are allowed to do so). Allow user to attach a message. Disable button and link to tips page in treasury after Tip is created. |
+| 2.     | Donate directly | Ask the user for amount to donate and allow him to enter a custom note.                                                                                                                                                                                                                                                                                                                       |
+| 3.     | Testing         | We will conduct testing of the developed functionalities on Westend testnet.                                                                                                                                                                                                                                                                                                                  |  |
 
 ## Additional Information
 
 - Are there are any teams who have already contributed (financially) to the project? No.
-- Have you applied for other grants so far? We have recieved funding and completed Ink! Remix plugin.
+- Have you applied for other grants so far? We have received funding and completed Ink! Remix plugin.
