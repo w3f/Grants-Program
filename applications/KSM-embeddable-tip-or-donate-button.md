@@ -77,25 +77,16 @@ We have experience in several private and open source projects. Most notable and
 
 ### Milestone 2
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 1 month and 1 week
 - **Costs:** 0.5 BTC
 
-| Number | Deliverable     | Specification                                                                                                                                                                                                                                                                                                                                                                                      |
-| ------ | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                                                                                      |
+| ------ | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |        |
-| 1.     | Propose tip     | Inform user of the funds needed for tip proposal (deposit and transaction fee). If a user is a Council member ask for the amount and create a new Tip. If a user is not a Council member, create a new Tip entry without specifying the amount (only Council members are allowed to do so). Allow user to attach a message. Disable button and link to tips page in treasury after Tip is created. |
-| 2.     | Donate directly | Ask the user for an amount to donate and allow him to enter a custom note.                                                                                                                                                                                                                                                                                                                         |
-
-### Milestone 3
-
-- **Estimated Duration:** 1 week
-- **Costs:** -
-
-| Number | Deliverable       | Specification                                                                                                               |
-| ------ | ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
-|        |
-| 1.     | Testing           | We will conduct testing of the developed functionalities on Westend testnet.                                                |  |
-| 2.     | Article on Medium | After finishing with development and testing we will publish an article on Medium describing our work done for the project. |
+| 1.     | Propose tip       | Inform user of the funds needed for tip proposal (deposit and transaction fee). If a user is a Council member ask for the amount and create a new Tip. If a user is not a Council member, create a new Tip entry without specifying the amount (only Council members are allowed to do so). Allow user to attach a message. Disable button and link to tips page in treasury after Tip is created. |
+| 2.     | Donate directly   | Ask the user for an amount to donate and allow him to enter a custom note.                                                                                                                                                                                                                                                                                                                         |
+| 3.     | Testing           | We will conduct testing of the developed functionalities on Westend testnet.                                                                                                                                                                                                                                                                                                                       |  |
+| 4.     | Article on Medium | After finishing with development and testing we will publish an article on Medium describing our work done for the project, and a tutorial on how to integrate it into existing websites.                                                                                                                                                                                                          |
 
 ## Additional Information
 
