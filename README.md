@@ -33,6 +33,8 @@ The Web3 Foundation Open Grants Program focuses on technology grants up to **CHF
 
 You can find a list of areas in the Web 3.0 Technology Stack that demand particular development [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md#areas-of-interest-for-technical-grants), as well as a list of previously accepted projects [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/accepted_grant_applications.md). 
 
+Additionally the builders program [feedback board](https://feedback.parity.io/) may contain some useful ideas for grant projects.
+
 ### Team
 
 **W3F Grants Committee**
