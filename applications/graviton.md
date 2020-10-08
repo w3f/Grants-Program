@@ -36,7 +36,7 @@ P.S.: We're not experts in Polka tech yet, so we can't propose comprehensive tec
 
 
 ### Project Details 
-We're goin to start from creation of Parity Substrate based gravity-substrate-chain with pBFT consensus, with validators represented by gravity consuls ([most reputapable nodes](https://arxiv.org/pdf/2007.00966.pdf)). SYSTEM-SC and NEBULA-SC will be deployed on gravity-substrate-chain. SuSy gateway (via decentralized oracle - gravity) will be deployed too.
+We're going to start from creation of Parity Substrate based gravity-substrate-chain with pBFT consensus, with validators represented by gravity consuls ([most reputapable nodes](https://arxiv.org/pdf/2007.00966.pdf)). SYSTEM-SC and NEBULA-SC will be deployed on gravity-substrate-chain. SuSy gateway (via decentralized oracle - gravity) will be deployed too.
 
 This temporary solution will be an infrastructure for building gateway and single sided liquidity AMM service for wrapped tokens.
 This temporary solution will work untill Kusama/Polka chains will start supporting parachains in mainnets.
@@ -159,6 +159,9 @@ The Graviton project is being built by VenLab blockchain research & development 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/aleksei-pupyshev-23a70954/
 
+### Team Website
+* https://venlab.dev/
+
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
@@ -166,28 +169,31 @@ The Graviton project is being built by VenLab blockchain research & development 
 * **Full-time equivalent (FTE):** 3.5
 * **Total Costs:** 1.8 BTC
 
-### Milestone 1 — Gravity-Parachain
+### Milestone 1 — Gravity-Substrate-Chain
 * **Estimated Duration:** 1 month
-* **FTE:**  1.2
-* **Costs:** 0.6 BTC
+* **FTE:**  1.0
+* **Costs:** 0.5 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Parity Substrate | Parity Substrate with dynamic set of validators from consuls (top-k most reputapable nodes) of gravity network |  
-| 2. | Parachain Integration | Connection of chain based on substrate to polkadot/kusama network |  
-| 3. | SuSy Gateway Integration Tests |  Crosschain gateway functionality within integration tests based on separate independent docker containers |
-
+| 1. | Parity Substrate (GSC - gravity-substrate-chain) | Parity Substrate with dynamic set of pBFT validators from consuls (top-k most reputapable nodes) of gravity network (aka validators of internal Tendermint ledger) |  
+| 2. | Smart Contracts of Gravity oracles integration into GSC | Integration of NEBULA-SC (threshold signature verification with data feeds) and USER-SC (application) smart contracts and respective API (on Go-lang) implementation for the case of Single Sided AMM based on market prices of wrapped tokens | 
+| 3. | Single Sided Liquidity AMM Test Framework |  Token-A <-> Token-B swap based on price oracles functionality within integration tests based on separate independent docker containers for each test case (Go/Java Script) |
+| 4. | "How to" article describing {1,2,3} | Step-by-step tutorial about how to setup substrate-chain, add functionality and make a auto tests |
+| 5. | Bridge to Relay Chain | Temporary anchoring solution from substrate-chain to relay chain |
 
 ### Milestone 2 — Crosschain Swap Demo
 * **Estimated Duration:** 1 month
-* **FTE:**  1.1
-* **Costs:** 0.6 BTC
+* **FTE:**  1.3
+* **Costs:** 0.7 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | polkadot{.js} | Integration with polkadot{.js} |  
-| 2. | Deployment into testnets | Transition of the gateway functionality from integration tests into the stable network |  
-| 3. | Demo UI | Basic UI for manual testings of crosschain swaps |  
+| 1. | Crosschain Transfers Gateway Integration Tests Framework |  Crosschain gateway functionality within integration tests based on separate independent docker containers for each case on (Go/Java Script) |
+| 2. | polkadot{.js} | Integration with polkadot{.js} |   
+| 3. | Demo UI for Gateway | Basic UI for manual testings of crosschain swaps | 
+| 4. | Demo UI for Single Sided Liquidity Pool | Basic UI for manual testings of Token-A <-> Token-B swaps based on price oracles |
+| 5. | "How to" article describing {1,2,3,4} | Step-by-step tutorial about how to setup a UI/Web3 app working with substrate-chain |
 
 
 ### Milestone 3 — Full-Functioning Crosschain Swaps & Single Sided AMM Liquidity Pool for wrapped tokens
@@ -199,7 +205,7 @@ The Graviton project is being built by VenLab blockchain research & development 
 | ------------- | ------------- | ------------- |
 | 1. | Full-Functioning Crosschain Swaps UI/UX | Production ready functionality of crosschain transfers between parahcain and gravity chains (eth, bsc, tron, waves)|  
 | 2. | Single Sided AMM Liquidity Pool | Uniswap-Like pools without slippage with price based on data feed from oracles |
-| 3. | Liquidity Mining | Liquidity Mining functionality for liquidity and transfer providers (gateway oracles) |
+| 3. | gravity-substrate-chain hardfork to gravity-para-chain | hardfork of gravity-substrate-chain to change consensus and validators making this chain as a parachain of Kusama/Polka networks ("gravity-substrate-chain -> gravity-parachain" (GSC -> GPC) migration) |
 
 ## Future Plans
 
