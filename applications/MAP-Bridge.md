@@ -54,35 +54,42 @@ MAP labs
 * **Estimated Duration:** 1 month
 * **FTE:**  3
 * **Costs:** $10,000
-    ​
+
+In this milestone, we will build Substrate-based MMR for MAP bridge and also provide the MMR proof generating and verifying method in runtime module . This is a preliminary for ULVP module which can verify the validity of tail block of a certain blockchain carry heaviest proof of work.  Furthermore, we will implement  the block header storage functionality. This would make the blockchain  could  manage the MMR（such as writing the MMR root in the new generating block header, retrieving the MMR based on the MMR root  in a certain block header, etc. ）. We will provide proper unit-test for this milestone.
+    
 
 | Number | Deliverable                          | Specification                                                |
 | ------ | ------------------------------------ | ------------------------------------------------------------ |
 | 0a. | License | Apache 2.0 |
-| 0b. | Testing | This milestone will have unit-test for all runtime api. |
+| 0b. | Testing | This milestone will have unit-test for MMR trie, MMR proof runtime api and MMR manager.In the guide we will describe how to run these tests. |
 | 1.     | MMR Trie Structure | Implement core data structure which implement MMR trie. |
-| 2.    | block header storage             | Provide block header processtion with MMR and chain storage access. |
-| 3.    | substrae MMR proof runtime module | Deliver MMR proof verification in substrate SRML runtime     |
+| 2.    |  Substrae MMR proof runtime module           |Deliver MMR proof verification in substrate SRML runtime   |
+| 3.    | Blockchain MMR manager |   Provide blochain the ability to generate and manage MMR. |
 
-### Milestone 2 Integrate ULVP(ultra-light verification protocol) into substrate
+### Milestone 2 Integrate ULVP module into substrate
 
 * **Estimated Duration:** 1 month
 * **FTE:**  3
 * **Costs:** $10,000
-    ​
+
+In this milestone, we will further implement the ULVP module and some add-on module. This would involving generating and verifying succinct proof,  specifying the cross-chain transaction, implementing the cross-chain transaction pool, building P2P network based on libp2p. Once this milestone is accomplished, the whole feature of ULVP module is complete and could be used to verify inner state of certain account or transaction inclusion proof for other blockchain. We will include proper test and documentation for this milestone
+
 
 | Number | Deliverable                       | Specification                                                 |
 | ------ | --------------------------------- | ------------------------------------------------------------ |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can import the protocol. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
-| 1.     | Construct cross-chain transaction | Construct special transactions for the ULVP cross-chain protocol. |
-| 2.     | Transaction pool                  | Design and implement a cross-chain message management of message caching and ordering |
-| 3.     | Asset module                      | Asset management modules for the pledge, release, and destruction functions of cross-chain assets |
-| 4.     | P2P network                       | Design and implement the message transmission process based on libp2p. |
-| 5.     | Succinct proof                    | Implement manage module to construct and verify the succinct proof.                          |
+| 0c. | Testing Guide | This milestone will have unit-test for ULVP module to ensure functionality. In the guide we will describe how to run these tests.|
+| 1.     | Succinct proof                    | Implement manage module to generate and verify the succinct proof.                          |
+| 2.     | Cross-chain transaction specification | Construct special transactions for the ULVP cross-chain protocol. |
+| 3.     | Transaction pool                  | Design and implement a cross-chain message management of message caching and ordering |
+| 4.     | Asset module                      | Asset management modules for the pledge, release, and destruction functions of cross-chain assets |
+| 5.     | P2P network                       | Design and implement the message transmission process based on libp2p. |
+
 
 ### Milestone 3 Implement Map Bridge
+In this milestone,  we will integrate the MAP bridge into runtime module, build a cross-chain asset exchange demo and realize an ultra light client for para-chain based on ULVP. Also we will provide the complete documentation and test for MAP bridge. 
+
 
 * **Estimated Duration:** 1 month
 * **FTE:**  3
@@ -93,9 +100,8 @@ MAP labs
 | ------ | ------------------- | ----------------------------------------------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can establish the bridge. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
-| 1.     | ULVP runtime module | Implementation of a runtime module for ULVP                 |
-| 2.     | Assert exchange     | Implementation of a runtime module for asset exchange |
-| 3.     | Ultra light client  | Implement ultra light client of parachain chain             |
-| 4.     | Documentation       | Make document about the map-bridge                    |
+| 0c. | Testing Guide | This milestone will have integration tests for MAP-bridge to ensure functionality and robustness. In the guide we will describe how to run these tests. |
+| 1.     | MAP-bridge runtime module | Implementation of a runtime module for MAP-bridge                 |
+| 2.     | Asset exchange     | Implementation of a demo for cross-chain asset exchange using MAP-bridge|
+| 3.     | Ultra light client  | Implement ultra light client of para-chain |
 
