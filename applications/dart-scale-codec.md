@@ -58,7 +58,7 @@ Tuolian provides a full range of custody services for well-known companies or or
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | MIT |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | Delivering document in dart supported format, and publish the package to pub.dev |
 | 0c. | Testing Guide | Delivering Unit tests.<br/>Delivering an example of fetching and analyzing binary metadata from chain's runtime.<br/>Delivering an example of sending extrinsics to substrate based chain. |
 | 1. | Implementing the Library | Delivering a library that support converting between object/json/binary of following types: MetadataV11, u8, u16, u32, u64, u256, bool, fixed length array, dynamic length array, bytes, address, String, Compact, Hash256, Balance, Extrinsic, Generalized structure, Generalized Enum |
