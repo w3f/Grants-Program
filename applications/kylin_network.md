@@ -225,11 +225,12 @@ In this milestone, we will verify features with limited users and launch the tes
 | ---------- | ---------------------------------------- | ------------------------------------------------------------ |
 | 0a.        | License                                  | Apache License 2.0                                           |
 | 0b.        | Documentation                            | Documents containing the description of whole architecture design for Kylin Network. |
-| 0c.        | Testing Guide                            | We will provide a full test suite and guide for the POC.     |
-| 1.         | Kylin Network Oracle Node Repo           | Oracle Node built on top of Substrate 2.0, connected to the Polkadot network as a parachain, having the simplest schema of oracle market. |
-| 2.         | Kylin Network Data Feeding/Miner Repo    | Data feeding and request process implemented with Substrate 2.0, integrates off-chain workers. |
-| 3.         | Kylin Network Data Analytics Sample Repo | Sample data sources (e.g. spot and contract data from derivative exchanges) working with off-chain worker, interactive with Kylin Network. |
-| 4.         | Docker Image                             | The Kylin Network docker image contains the POC version which can be running anywhere to verify the idea of Kylin Network. |
+| 0c.        | Testing Guide                            | We will provide a full test suite and guide for the POC. |
+| 1.         | Kylin Network Oracle Node Repo           | Oracle Node built on top of Substrate 2.0 with customized module will store and process the data query request from data consumers, also it will handle the data feeding from miners. The very consensus protocol and the simplest schema of oracle market are implemented inside. |
+| 2.         | Kylin Network Data Feeding/Miner Repo    | It handles the query requests from oracle node, and feeds the data after processed as requested. It will be implemented with Substrate 2.0, and the major data feeding part will be built with off-chain workers. |
+| 3.         | Kylin Network Data Analytics Sample Repo | The sample of how the data will be analysed for data analytics. |
+| 4.         | Kylin Network Sample datasource Repo | The sample datasource provider provides the data (e.g. the data provider fetches the spot and contract data from derivative exchanges) to be used by miner. |
+| 5.         | Docker Image                             | The Kylin Network docker image contains the POC version which can be running anywhere to verify the idea of Kylin Network. |
 
 ### Community Engagement
 
