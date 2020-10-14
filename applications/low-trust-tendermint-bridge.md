@@ -14,6 +14,29 @@ Gravity is using [tendermint](https://tendermint.com/) as a framework for a toke
 
 The team is looking for approaches to add an integration with polkadot/parity tech and expand/develop products within the polkadot ecosystem.
 
+## Proposed Solution
+
+We propose the gateway solution illustrated in Figure (1) below:
+
+![Tendermint <-> Substrate Bridge Schema](https://raw.githubusercontent.com/ventuary-lab/images/master/polkadot/Tendermint-Substrate-Bridge-long.png)
+
+Here we have 2 chains connected via [IBC protocol](https://docs.cosmos.network/v0.40/ibc/overview.html): 1. Custom Tendermint Chain and 2. Sovereign Substrate Chain (parachain slot candidate or parachain potentially). Tendermint chain has pBFT blockchain consensus via it's own validators nodes (V). Substrate Chain has PoA consensus or Polkadot consesus after winning of parachain slot (so we have: validators/collators - VC). Tendermint chain has special a module for Substrate bridge implemented in Go-Lang, while Substrate has two different approaches for bridge support implementation: 1 - [ink! smart contract](https://substrate.dev/docs/en/knowledgebase/smart-contracts/) or 2 - bridge module. We're going to add both implementations (designed for different potential use cases).
+
+## Demo Usecase for the bridge
+
+An implementation of four transactions which are basic components of a crosschain bridge functionality:
+
+I. <b>Tendermint Chain</b> (called by any <b>user</b>): <span style="color:blue"> Deposit-Event-TX: </span> {TOKEN-INFO: "example-token-id", AMOUNT: 100, RECEIVER: "receiver's public address", SENDER: "sender's public adress"}
+
+II. <b>Substrate Chain</b> (called by bridge <b>provider</b>): <span style="color:purple"> Echo-Deposit-Event-TX: </span> {..._same data spec_...}
+
+III. <b>Substrate Chain</b> (called by any <b>user</b>): <span style="color:purple"> Deposit-Event-TX: </span> {..._same data spec_...}
+
+IV. <b>Tendermint Chain</b> (called by bridge <b>provider</b>): <span style="color:blue"> Echo-Deposit-Event-TX: </span> {..._same data spec_...}
+
+
+
+
 ## Reason for an application and an ecosystem fit
 There are many existing tendermint based [chains](https://cosmos.network/ecosystem) are already in production. To scale their potential within the polkadot ecosystem and to bring more integrations and products from already established teams we have to use [Low-Trust Tendermint-Supstrate/Polka Bridges](https://feedback.parity.io/b/substrate-feedback-board/low-trust-tendermint-bridge/).
 
@@ -54,7 +77,7 @@ The VenLab blockchain research & development team, founded by Aleksei Pupyshev i
 
 * [Neutrino](https://neutrino.at/) [($USDN)](https://coinmarketcap.com/currencies/neutrino-usd/) - An algorithmic crypto-collateralized stablecoin (acquired by [WX](https://waves.exchange/))
 
-~50mln$ Total Value Locked (TVL), ~7k dApp users, ~30mln$ market cap & ~3mln$ volume
+~50mln$ Total Value Locked (TVL), ~8k dApp users, ~30mln$ market cap & ~5mln$ volume
 
 * [Gravity Protocol](https://medium.com/gravity-protocol) - A blockchain-agnostic oracles and cross-chain communication network
 
@@ -85,8 +108,10 @@ The VenLab blockchain research & development team, founded by Aleksei Pupyshev i
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1 |  | ------------- |
-
+| 1 |  Integration/Unit DEPOSIT/ECHO transactions test suites | Dockerized Tests for {I, II, III, IV}-txs  for mocked tx data|
+| 2 |  IBC test suites | Dockerized Tests for IBC mocked transactions |
+| 3 |  Bridge Module for Tendermint | Bridge functionality implementation for tendermint chain |
+| 4 |  ink! Bridge Smart Contract for Substrate | Bridge functionality implementation on ink! (substrate chain)|
 
 ### Milestone 2 — Implementation
 * **Estimated Duration:** 3 weeks
@@ -95,7 +120,13 @@ The VenLab blockchain research & development team, founded by Aleksei Pupyshev i
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
+| 1 | Tests of (<b>V</b>) services functionality | Unit Tests for Tendermint Validators actors |
+| 2 | Tests of (<b>VC</b>) services functionality | Unit Tests for Substrate Validators/Collators actors |
+| 3 | Tests of <b>bridge providers</b> services functionality | Unit Tests for Substrate Validators/Collators actors |
+| 4 | Bridge Demo-MVP | Fully functioning assembled bridge service demo (via REST-api) hosted on our servers|
 
 
 ## Future Plans
-Using an implementation of this bridge for token gateways of [graviton](https://graviton.one/) project
+1) Add Substrate Module as a 2nd option for bridge;
+2) Add an integration with EVM-Substrate using solidity
+3) Using an implementation of this bridge for token gateways of [graviton](https://graviton.one/) project;
