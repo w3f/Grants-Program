@@ -2,38 +2,38 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project:** Low-Trust Tendermint Bridge
-* **Proposer:** DeFi-Evangelist
-* **Payment Address:** 1BeRKVozn3X7wiByvYBryPWugFvvrp61ug
+* **Project:** [Low-Trust Tendermint Bridge](https://feedback.parity.io/b/substrate-feedback-board/low-trust-tendermint-bridge/)
+* **Proposer:** [DeFi-Evangelist](https://github.com/DeFi-Evangelist)
+* **BTC Payment Address:** 1BeRKVozn3X7wiByvYBryPWugFvvrp61ug
 
-## Project Overview :page_facing_up: 
-
-### Overview
+## Overview
   
-We're [team](https://venlab.dev/) of founders and core devs of tokenless oracles protocol - [Gravity](https://arxiv.org/pdf/2007.00966.pdf). The protocol itself is aiming to be a blockchain-agnostic solution. [Graviton](https://graviton.one/) - is an application on top of gravity network designed to increase user experience with wrapped tokens, gateways and bring an incentivisation for gateways oracles and AMM liquidity providers in the target chains.
+We're [team](https://venlab.dev/) of founders and core devs of tokenless oracles & gateways protocol - [Gravity](https://gravity.tech/). The protocol itself is aiming to be a blockchain-agnostic solution. [Graviton](https://graviton.one/) - is an application on top of gravity network designed to increase user experience with wrapped tokens, gateways and bring an incentivisation for gateways oracles and AMM liquidity providers within integrated chains.
 
-Gravity is using tendermint as a framework for a tokenless internal ledger designed to be a message bus, events log distributed storage and consensus engine for oracle transactions (commit/reveal/aggregations and reputation changes).
+Gravity is using [tendermint](https://tendermint.com/) as a framework for a tokenless internal ledger designed to be a message bus, events log distributed storage and consensus engine for oracle transactions (commit/reveal/aggregations and reputation changes).
 
 The team is looking for approaches to add an integration with polkadot/parity tech and expand/develop products within the polkadot ecosystem.
 
-### Reason for an application and an ecosystem fit
-There are many existing tendermint based chains are already in production. To scale their potential within the polkadot ecosystem and also to bring more integrations and products from already established teams we have to use Low-Trust Tendermint-Polka Bridges.
+## Reason for an application and an ecosystem fit
+There are many existing tendermint based [chains](https://cosmos.network/ecosystem) are already in production. To scale their potential within the polkadot ecosystem and to bring more integrations and products from already established teams we have to use [Low-Trust Tendermint-Supstrate/Polka Bridges](https://feedback.parity.io/b/substrate-feedback-board/low-trust-tendermint-bridge/).
 
 This is also the most popular issue in [Feedback Parity Portal](https://feedback.parity.io/b/substrate-feedback-board/low-trust-tendermint-bridge/) at the moment.
 
-Our open-sourced implementation of a Tendermint bridge will be used by our [gravity](https://gravity.tech/) team and another [teams](https://cosmos.network/ecosystem) who has an infrastructure on Tendermint and Cosmos-SDK.
+Our open-sourced implementation of a Tendermint bridge will be used by our [gravity](https://gravity.tech/) team and another [teams](https://cosmos.network/ecosystem) teams who has an infrastructure on Tendermint and Cosmos-SDK.
 
 We believe in "cooperation over competition" principle and we're going to make a first move in that direction.
 
-### Team members
+## Team members
 
 Team Lead / Tech Lead:
-Aleksei Pupyshev - [twitter](https://twitter.com/AlekseiPupyshev), [linkedin](https://www.linkedin.com/in/aleksei-pupyshev-23a70954/)
+Aleksei Pupyshev - [twitter](https://twitter.com/AlekseiPupyshev), [linkedin](https://www.linkedin.com/in/aleksei-pupyshev-23a70954/), [coursera](https://www.coursera.org/instructor/fdfe7de8cd69d39234e1b17bb4c76eb8)
+
+Experience: Protocols Architect, Blockchain Engineer, Smart Contract Engineer, Data Scientist, Full-Stack Software Engineer, Quantitative Researcher,Dev Community Director, Dev Rel, AI-Researcher, Research & Development Consultant, Head of Data Science & Data Engineering, Team Lead, Tech Lead.
 
 Team members:
 Ilya Sapranidi (blockchain researcher), Shamil Khalilov (full-stack developer), Ilya Teterin (blockchain developer)
 
-### Team Website	
+## Team Website	
 Team:
 * https://venlab.dev/
 
@@ -42,10 +42,10 @@ Tech/Dev:
 
 * https://graviton.one/
 
-### Legal Structure 
+## Legal Structure 
 Aleksei Pupyshev - Individual Entrepreneur License (Saint Petersburg, Russia)
 
-### Team's experience
+## Team's experience
 The VenLab blockchain research & development team, founded by Aleksei Pupyshev in 2018. VenLab’s track record:
 
 * “Mastering Web 3.0” online course for developers on [Stepik](https://stepik.org/course/54415/promo) and [Coursera](https://www.coursera.org/learn/mastering-web3-waves?#instructors)
@@ -58,43 +58,44 @@ The VenLab blockchain research & development team, founded by Aleksei Pupyshev i
 
 * [Gravity Protocol](https://medium.com/gravity-protocol) - A blockchain-agnostic oracles and cross-chain communication network
 
-5 integrated chains so far, 21+ reputable node operators
+5 integrated chains so far {Ethereum, Cosmos, BSC, Tron, Waves}, 21+ reputable node operators/partnerships
 
 
-### Team Code Repos
+## Team Code Repos
 * https://github.com/ventuary-lab
 * https://github.com/Gravity-Tech
 
-### Team LinkedIn Profiles
+## Team LinkedIn Profiles
 * https://www.linkedin.com/in/aleksei-pupyshev-23a70954/
 
-### Team Website
+## Team Website
 * https://venlab.dev/
 
 ## Development Roadmap :nut_and_bolt: 
 
-### Overview
-* **Total Estimated Duration:** 2 months
-* **Full-time equivalent (FTE):** 3.5
-* **Total Costs:** 1.2 BTC
+## Overview
+* **Total Estimated Duration:** 6 weeks
+* **Full-time equivalent (FTE):** 2.25
+* **Total Costs:** 1 BTC
 
 ### Milestone 1 — Research
-* **Estimated Duration:** 1 month
-* **FTE:**  1.0
+* **Estimated Duration:** 3 weeks
+* **FTE:**  1.125
+* **Costs:** 0.5 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1 |  | ------------- |
+
+
+### Milestone 2 — Implementation
+* **Estimated Duration:** 3 weeks
+* **FTE:**  1.125
 * **Costs:** 0.5 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 
 
-### Milestone 2 — Implementation
-* **Estimated Duration:** 1 month
-* **FTE:**  1.3
-* **Costs:** 0.7 BTC
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-
-
-
 ## Future Plans
+Using an implementation of this bridge for token gateways of [graviton](https://graviton.one/) project
