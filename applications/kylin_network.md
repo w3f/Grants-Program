@@ -137,7 +137,6 @@ There are some existing projects which can support and work with the Kylin Netwo
 * Dylan Dewdney - CEO/Project Leader
 * Beni Issembert - CMO/Head of Advisory Board
 * Kyn Chaturvedi - Strategy Advisor
-* Eric Clark Su - Marketing Advisor
 * Kevin Hsu - Data Scientist
 * Aaron Po - Full-stack Developer
 * Andy Zhuang - System Architect/Substrate Developer
@@ -173,11 +172,6 @@ Digital Asset FOF Ltd. is a company registered in Cayman Islands.
    &emsp;\-   Current CBDO of Tomochain  
    &emsp;\-   Wharton Grad (2011)  
 
-**Eric Clark Su**  
-   &emsp;\-   A prolific supporter of a wide array of crypto projects, more recently, projects like DIA, Tellor and Orion Protocol.  
-   &emsp;\-   Longtime business builder and founder, with an extremely strong core skill set of rapidly building up dev teams from scratch.  
-   &emsp;\-   CEO of exnt.io  
-
 **Kevin Hsu**  
    &emsp;\-   MSc in Computational Statistics and Machine Learning from UCL and supervised by David Silver, the senior engineer of AlphaGO.  
    &emsp;\-   Served as data scientist in Credit Suisse, senior machine learning Engineer in WeCash.  
@@ -202,7 +196,6 @@ Digital Asset FOF Ltd. is a company registered in Cayman Islands.
 * [www.linkedin.com/in/dylan-dewdney](http://www.linkedin.com/in/dylan-dewdney)
 * [www.linkedin.com/in/beniissembert](http://www.linkedin.com/in/beniissembert)
 * [www.linkedin.com/in/kynchaturvedi](http://www.linkedin.com/in/kynchaturvedi)
-* [www.linkedin.com/in/ericsu](https://www.linkedin.com/in/ericsu/)
 * [www.linkedin.com/in/yingkaixu](http://www.linkedin.com/in/yingkaixu)
 
 ## Development Roadmap :nut_and_bolt:
