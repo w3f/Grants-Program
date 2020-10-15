@@ -4,8 +4,6 @@
 * **Proposer:** [jdoshi1](https://github.com/jdoshi1)
 * **Payment Address:** 3K37k6BQ1JwAczAyNzckS4cGRqhpL6UgYJ
 
-*The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up: 
 
 PESA is a decentralized cross-chain mobile money protocol that enables anyone to buy, sell, send, receive, lend, borrow - crypto, and mobile money (i.e. tokenized minutes, data, WiFi) globally using a phone number.
@@ -13,7 +11,7 @@ PESA is a decentralized cross-chain mobile money protocol that enables anyone to
 ### Overview
 
 The goal of this project is to make telecom and financial services open and accessible to all. Anyone with a mobile phone can utilize PESA to:
-  * Access carrier-independent voice, text, data (mobile money) 
+  * Access carrier-independent voice, text, data & WiFi (mobile money) 
   * Send/receive crypto and mobile money to/from any phone number 
   * Buy/sell crypto and mobile money using a phone number
   * Lend, borrow, crypto assets using a phone number
@@ -29,17 +27,17 @@ As a first step, we are proposing creating a pallet to perform Phone Number to A
 
 #### PESA pallet
 
-The goal of PESA pallet is to resolve the phone number to an address and allow the phone number to execute transactions - send, receive. PESA pallet will be extensible to allow more functionality. PESA pallet will be beneficial to Dapps building financial systems (DeFi) including allowing unbanked users to onboard onto the system by just using a phone number.
+The goal of PESA pallet is to resolve the phone number to an address and allow the phone number to execute transactions - send, receive. It will be extensible to allow more functionality like lend & borrow, etc. Furthermore, it will be beneficial to dapps building financial systems (DeFi) including allowing unbanked users to onboard onto the system by just using a phone number.
 
 #### Interface and Design
 
 The PESA pallet will expose the following callable functions:
 
+`set` - allows the user to set a Phone Number to its address
+
 `resolve` - allows any user to resolve a Phone Number to an address
 
 `reverse_look_up` - allows the user to look up Phone Number from an address. Provided the owner of the phone number/address opted to make it public.
-
-`set` - allows the user to set a Phone Number to its address
 
 `transfer` - allows the owner of the Phone Number/address to transfer ownership of the Phone number to another address.
 
@@ -53,7 +51,7 @@ All web and mobile wallets like Airgap and Polkawallet can use PESA pallet to re
 
 ### Team members
 
-* Suruchi Gupta (CEO)
+* Suruchi Gupta (Founder & CEO)
 * Jinesh Doshi (Engineering head)
 * Leo Anbarasan M (Tech Lead/ Lead developer)
 
@@ -72,14 +70,15 @@ In the last year, Wificoin has built a pay-as-you-go, mobile-first carrier (a pr
 
 The team has also integrated with Telecom operators like AT&T, Claro, etc.
 
-Apps in App store & Play store:
-
-Wificoin - [iOS](https://apps.apple.com/us/app/wificoin-gogo-inflight-wifi/id1444024115), [Android](https://play.google.com/store/apps/details?id=co.wificoin.app) 
-
-Hoom - [iOS](https://apps.apple.com/lr/app/hoom-second-line-phone-number/id1508691693), [Android](https://play.google.com/store/apps/details?id=io.hoom.app)
-
 ### Team Code Repos
 * No public repos to share yet.
+
+* Apps in App store & Play store:
+
+  Wificoin - [iOS](https://apps.apple.com/us/app/wificoin-gogo-inflight-wifi/id1444024115), [Android](https://play.google.com/store/apps/details?id=co.wificoin.app)
+  
+  Hoom - [iOS](https://apps.apple.com/lr/app/hoom-second-line-phone-number/id1508691693), [Android](https://play.google.com/store/apps/details?id=io.hoom.app)
+
 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/guptasuruchi/
@@ -95,7 +94,7 @@ Hoom - [iOS](https://apps.apple.com/lr/app/hoom-second-line-phone-number/id15086
 * **Total Costs:** 2 BTC
 
 ### Milestone 1 - Implement Substrate Pallet "PESA"
-* **Estimated Duration:** 1.5 month
+* **Estimated Duration:** 1.5 months
 * **FTE:**  1.5
 * **Costs:** 1 BTC
 
@@ -114,10 +113,10 @@ Hoom - [iOS](https://apps.apple.com/lr/app/hoom-second-line-phone-number/id15086
 
 | Number | Deliverable            | Specification          |
 |--------|------------------------|------------------------|
-| 1.     | PESA pallet - send, receive and reverse lookup functions | 1. Pallet will allow users to send and receive tokens using phone number instead of using complex hash.<br>2. Pallet will allow users to perform reverse resolution address to Phone number if the users opted to allow during set operation.                                                                                                                             |
-| 2.     | Demo of the above functionalities using a web dapp       | demo                                                                        |
-| 3.     | Dockerfile                                               | Provide a docker image with a substrate node using our pallet.              |
-| 4.     | Unit Tests and Documentation                             | Provide documentation and steps to run the substrate node with Pesa pallet and how to use web dapp to interact with it.                                                                                                      |
+| 1.     | PESA pallet - send, receive and reverse lookup functions | 1. Pallet will allow users to send and receive tokens using phone number instead of using complex hash.<br>2. Pallet will allow users to perform reverse resolution address to Phone number if the users opted to allow during set operation.               |
+| 2.     | Demo of the above functionalities using a web dapp       | Dapp showing these features                                                                 |
+| 3.     | Dockerfile                                               | Provide a docker image with a substrate node using our pallet.                              |
+| 4.     | Unit Tests and Documentation                             | Provide documentation and steps to run the substrate node with Pesa pallet and how to use web dapp to interact with it.                                                                                                                                         |
 
 
 ### Community engagement
