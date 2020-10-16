@@ -54,7 +54,7 @@ Tuolian provides a full range of custody services for well-known companies or or
 ### Milestone 1 — Dart Implementation 
 * **Estimated Duration:** 1 month
 * **FTE:**  1.5
-* **Costs:** 1 BTC
+* **Costs:** 0.85 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
