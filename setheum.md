@@ -105,30 +105,31 @@ Team's experience
 
 Number 	Deliverable 	Specification
 
-    0a. 	License 	    Apache 2.0 license
-    0b. 	Documentation 	We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works.
-    0c. 	Testing Guide 	The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests
-    1. 	Substrate module:   STP258   Module                  -   We will Implement The STP258 (Setheum Tokenization Protocol [to-fiat]) Stablecoin Standard Module: 34 fiat currencies that can be spent on SettPay and are also represented in a basket token.
-    2. 	Substrate module:   SERP-TES Module                  -	 We will Implement The SERP (Setheum Elastic Reserve Protocol) Token Elasticity Module: Designed to make cryptocurrencies that are backed by other cryptocurrencies with the PES (Price Elasticity of Supply) algorithm utilized for token elasticity of supply (TES) algorithm.
-    3. 	Substrate Chain :   Neom     Testnet                 -   The above modules and the many other basic modules like Governance, Staking, et al built of our custom chain will interact  on the Neom Testnet to provide our intended functionalities.
-    4.  Substrate Chain :   Vegas    Canary  Network Chain   -   The above modules and the many other basic modules like Governance, Staking, et al built of our custom chain will interact  on the Neom Testnet to provide our intended functionalities.
-    5.  Substrate Chain :   Setheum  Network Relay           -   The above modules and the many other basic modules like Governance, Staking, et al built of our custom chain will interact  on the Neom Testnet to provide our intended functionalities.
-    6.  Chain Wallet UI :	SettPay  Wallet  UI              -   The chain will be able to interact with the wallet and the STP258 Elastic Stablecoins will be able to beissued to the wallet app in the MVP and provide our intended functionalities with an intuitive Easy to Use User Experience / User Interface.
-    7. 	Docker 	            We will  provide a dockerfile to demonstrate the full functionality of our chain.
+   0a. 	License 	    Apache 2.0 license
+   0b. 	Documentation 	We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works.
+   0c. 	Testing Guide 	The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests
+   1. 	Substrate module:   STP258   Module  -  We will Implement The STP258 (Setheum Tokenization Protocol [to-fiat]) Stablecoin Standard Module - 34 fiat currencies that can be spent on SettPay and are also represented in a basket token.
+   2. 	Substrate module: SERP-TES Module   -	 We will Implement The SERP (Setheum Elastic Reserve Protocol) Token Elasticity Module: Designed to make cryptocurrencies that are backed by other cryptocurrencies with the PES (Price Elasticity of Supply) algorithm utilized for token elasticity of supply (TES) algorithm.
+   3. 	Substrate Chain : Neom Testnet  -  The above modules and the many other basic modules like Governance, Staking, et al built of our custom chain will interact on the Neom  Testnet to provide our intended functionalities.
+   4.    Substrate Chain : Vegas Canary  Network Chain   -   The above modules and the many other basic modules like Governance, Staking, et al built of our custom chain will interact  on the Neom Testnet to provide our intended functionalities.
+   5.    Substrate Chain : Setheum  Network Relay   -   The above modules and the many other basic modules like Governance, Staking, et al built of our custom chain will interact  on the Neom Testnet to provide our intended functionalities.
+   6.    Chain Wallet UI :	SettPay  Wallet  UI   -   The chain will be able to interact with the wallet and the STP258 Elastic Stablecoins will be able to beissued to the wallet app in the MVP and provide our intended functionalities with an intuitive Easy to Use User Experience / User Interface.
+   7. 	Docker We will  provide a dockerfile to demonstrate the full functionality of our chain.
 
 ...
 Future Plans
 
-    1. IPO in Kusama and Polkadot
-    2. SettCard (Visa Cryptocurreny Card for distributing SETT rewards, discounts and cashbacks)
-    3. SettPay WordPress Plugin for WordPress e-commerce platforms
-    4. SettPay Gateway API
-    5. Setheum SDKs for Integration and easy development on the Network
-    6. SettInDEX Setheum Built-In Decentralized Exchange with Synthetic Assets, Liquidity Pools, Margin Trading, Dark Pool, Liquidity Staking, jtokens (another token protocol module I designed for Setheum's SettIndex to be launched before mainnet, spec is present in our white papers)
-    7. SettApps Scalable Optimistic Rollup Dapp Chain for ECommerce Apps on Setheum Relay. The Setheum Relay will be tuned specifically for DeFi and DeCo.
-    8. DS3 Foundation to foster the growth of the Setheum, Substrate, Ink! and Polkadot Ecosystem, especially in Nigeria and Saudi Arabia
-    9. SEANET   (Setheum Enterprise Alliance Network)           for Enterprise Alliance to foster adoption amongstEnterprise E-Commerce Platforms (i.e. Macy's, Uber, Walmart, BigCommerce, WordPress, Shopify, Shoprite, Jumia, Fortnite, Slack, Atlassian, Salesforce, McDonalds, KFC, et al.)and invite small businesses and niche stores and even Universities  to build on the Setheum Network and increase the value and adoption of the Entire Polkadot & Substrate Ecosystem as We will promote development with ink! and Substrate and many advanced, niche and beautiful FRAME modules will be built for various use cases, thus propping the adoption of Rust too..
-    10. SAGA     (Setheum Association of Government Alliances)   Just like SEANET but for Public Bodies, NGOs, Universities & Governments starting with Government Departments we already work with and those we worked with in Nigeria, to support them to build on the Setheum Network and increase the value and adoption of the Entire Polkadot & Substrate Ecosystem as We will promote development with ink! and Substrate and many advanced, niche and beautiful FRAME modules will be built for various use cases, thus propping the adoption of Rust too..
+   1. IPO in Kusama and Polkadot
+   2. SettCard (Visa Cryptocurreny Card for distributing SETT rewards, discounts and cashbacks)
+   3. SettPay WordPress Plugin for WordPress e-commerce platforms
+   4. Setheum SDKs
+   5. SettPay Gateway API
+   6. Setheum SDKs for Integration and easy development on the Network
+   7. SettInDEX Setheum Built-In Decentralized Exchange with Synthetic Assets, Liquidity Pools, Margin Trading, Dark Pool, Liquidity Staking, jtokens (another token protocol module I designed for Setheum's SettIndex to be launched before mainnet, spec is present in our white papers)
+   8. SettApps Scalable Optimistic Rollup Dapp Chain for ECommerce Apps on Setheum Relay. The Setheum Relay will be tuned specifically for DeFi and DeCo.
+   9. DS3 Foundation to foster the growth of the Setheum, Substrate, Ink! and Polkadot Ecosystem, especially in Nigeria and Saudi Arabia
+   10. SEANET   (Setheum Enterprise Alliance Network)           for Enterprise Alliance to foster adoption amongstEnterprise E-Commerce Platforms (i.e. Macy's, Uber, Walmart, BigCommerce, WordPress, Shopify, Shoprite, Jumia, Fortnite, Slack, Atlassian, Salesforce, McDonalds, KFC, et al.)and invite small businesses and niche stores and even Universities  to build on the Setheum Network and increase the value and adoption of the Entire Polkadot & Substrate Ecosystem as We will promote development with ink! and Substrate and many advanced, niche and beautiful FRAME modules will be built for various use cases, thus propping the adoption of Rust too..
+   11. SAGA     (Setheum Association of Government Alliances)   Just like SEANET but for Public Bodies, NGOs, Universities & Governments starting with Government Departments we already work with and those we worked with in Nigeria, to support them to build on the Setheum Network and increase the value and adoption of the Entire Polkadot & Substrate Ecosystem as We will promote development with ink! and Substrate and many advanced, niche and beautiful FRAME modules will be built for various use cases, thus propping the adoption of Rust too..
 
 Additional Information ➕
 
