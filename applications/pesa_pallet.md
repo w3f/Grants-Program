@@ -33,7 +33,7 @@ The goal of PESA pallet is to resolve the phone number to an address and allow t
 
 The PESA pallet will expose the following callable functions:
 
-`set` - allows the user to set a Phone Number to its address
+`register` - allows the user to register a Phone Number to its address
 
 `resolve` - allows any user to resolve a Phone Number to an address
 
@@ -42,6 +42,21 @@ The PESA pallet will expose the following callable functions:
 `transfer` - allows the owner of the Phone Number/address to transfer ownership of the Phone number to another address.
 
 `send` - allows the owner to send tokenized mobile money (i.e. mins, data and wifi)  and other tokens built on the parachain(s) using the Phone Number
+
+Mockups of PESA Dapp 
+
+* Register Phone number with wallet address
+  
+  ![Register](https://cdn.discordapp.com/attachments/486098447410266112/766581062062702602/Screen_Shot_2020-10-16_at_1.14.08_AM.png)
+
+* Verify Phone number ownership
+  
+  ![Verify](https://cdn.discordapp.com/attachments/486098447410266112/766581059923738694/Screen_Shot_2020-10-16_at_1.15.35_AM.png)
+
+* Send transaction
+
+  ![Send](https://cdn.discordapp.com/attachments/486098447410266112/766581053937942528/Screen_Shot_2020-10-16_at_1.39.04_AM.png)
+
 
 ### Ecosystem Fit 
 
@@ -100,11 +115,11 @@ The team has also integrated with Telecom operators like AT&T, Claro, etc.
 
 | Number | Deliverable            | Specification          |
 |--------|------------------------|------------------------|
-| 1.     | Substrate pallet: PESA | 1. Pallet is expose a function called set to allow caller to set the phone number to their wallet address<br>2. Pallet will allow users to perform Phone Number to address look up.                                 |
+| 1.     | Substrate pallet: PESA | 1. Pallet is expose a function called register to allow caller to register the phone number to their wallet address<br>2. Pallet will allow users to perform Phone Number to address look up.                                 |
 | 2.     | Create a dapp          | Create a custom chain with the Pesa pallet and a dapp to allow users to enter a phone number and associate that with the owner's wallet address. Users will be able to perform address lookup by providing a phone number.   |
-| 3.     | Unit tests             | The code will have proper unit-test coverage to ensure functionality and robustness. Readme will provide details on how to run the tests.                                                                                  |
-| 4.     | Dockerfile             | Provide a docker image with a substrate node using our pallet.                |
-| 5.     | Documentation          | We will provide both inline documentation of the code and a basic tutorial that explains how a user can interact with the substrate runtime to call the Pesa pallet’s APIs.                                               |
+| 3.     | Unit tests             | The code will have proper unit-test coverage to ensure functionality and robustness. Readme will provide details on how to run the tests.                                                                                          |
+| 4.     | Dockerfile             | Provide a docker image with a substrate node using our pallet.  |
+| 5.     | Documentation          | We will provide both inline documentation of the code and a basic tutorial that explains how a user can interact with the substrate runtime to call the Pesa pallet’s APIs.                                                   |
 
 ### Milestone 2 — PESA pallet send, receive tokens using phone number and reverse lookup
 * **Estimated Duration:** 1 month
