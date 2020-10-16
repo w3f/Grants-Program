@@ -49,7 +49,7 @@ Tuolian provides a full range of custody services for well-known companies or or
 
 * **Total Estimated Duration:** 1 month
 * **Full-time equivalent (FTE):**  1.5
-* **Total Costs:** 1 BTC.
+* **Total Costs:** 0.85 BTC.
 
 ### Milestone 1 — Dart Implementation 
 * **Estimated Duration:** 1 month
