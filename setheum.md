@@ -1,5 +1,5 @@
-#Open Grant Proposal
-##Setheum DeFi & DeCo Network by Setheum Labs
+Open Grant Proposal
+**Setheum DeFi & DeCo Network by Setheum Labs**
 
    Setheum Labs props, supports, nurtures and stewards applications in the fields of Decentralized Finance protocols particularly e-commerce (Decentralized E-Commerce or DeCo) and protocols that can serve as open finance building blocks such as stable currency and synthetic assets. Setheum Network is a focal R&D project initiated the Setheum Labs. Setheum Labs is founded by Muhammad-Jibril B.A. participant of the Polkadot ecosystem. Deco is now like a store where anyone can sell anything, it is basically a financial framework and infrastructure for normal eCommerce platforms/apps to integrate or build their payment gateways on to give free discounts to their users/customers through Setheum's elastic distribution of stablecoins by the SERP-TES.
 
@@ -7,7 +7,7 @@
     Proposer:        JBA-Khalifa
     Payment Address: 1EDXptvCZo1sWpT8BFTvdopZbBShhurkGA
 
-**Project Description*
+**Project Description**
 
    We are building a decentralized, cross-chain, community-owned DeFi (Decentralized Finance)
    and DeCo (Decentralized Commerce) system - the Setheum Network, to enable true economic interoperability, cross-chain liquidity and scalability. Along with the system, we are also building an economic model and governance framework to sustain the development, and continuous participation in the Polkadot ecosystem (e.g. as parachain and will setup a non-profit foundation to foster development on the Polkadot Ecosystem - especially in Nigeria and Saudi Arabia), until ultimately transitioning the network to community ownership. The Setheum Network will serve as a building block for DeCo and DeFi applications such as SettIndex in the Polkadot Ecosystem, and will provide new use cases for quality assets in the Polkadot ecosystem, such as DOT and new upcoming Polkadot projects such as Kylin, ChainLink, Open Ethereum et al..
@@ -24,16 +24,16 @@ The Setheum Network MVP will include the following parts
         Various modules specific to manage Distribution of STP258/SERP-TES Monetary Issuance, Ecommerce payment, et al.
    **SettPay:** The Setheum Wallet for the STP258 Stablecoins, to function like a traditional Bank. Later on to add features to pay on ecommerce platforms with any cryptocurrency through the STP258 protocol, to enable minting of STP258 stablecoins, peer to peer transactions, and later on in the near future we will add Subsocial in the SettPay Dapp as a micro-service just like Alipay chat in AliPay.
 
-###The Setheum Labs Team###
+The Setheum Labs Team
 
    I designd, drafted and published the White Pagers of Setheum and even of the Future Plans we have for Setheum, like Synthetic Assets, margin trading, money market, liquidity staking et al
     https://github.com/Setheum-Labs/Setheum-Labs-White-Papers
 
-**Ecosystem Fit*
+**Ecosystem Fit**
 
    Setheum offers a stablecoin market unlike any orher, unique. Libra offers a basket token pegged to various fiat currencies that can only be spent as a basket token, we offer a basket token of Fully Decentralized Algorithmic Crypto-Collateralized Elastic Stablecoins backed by our governance token. I invented the SERP-TES and the STP258 Protocols. And the STP20 Protocol is coming soon. We designed everything from the ground up to repell any economic catastrophy that Libra can not withstand. We developed a Monetary Policy that even large Banks would love to immitate and we do it under the Apache 2.0 License.
 
-**Team members* 👥
+**Team members** 👥
 
     Muhammad-Jibril Bashir Abba (Founder, CEO,  Full Stack Developer  )
     Valentine Oragbakosi (CTO, Core Rust Developer         | Full-time)
@@ -46,23 +46,23 @@ The Setheum Network MVP will include the following parts
     Full-time Full-stack Developer ------------------------- hiring!
     Full-time Backend Developer    ------------------------- hiring!
 
-**Team Website*
+**Team Website**
 
     https://setheum.xyz
 
-**Legal Structure*
+**Legal Structure**
 
    The legal structure of the Setheum Labs will be set up soon in a Crypto Favourable Legislation. In the meantime, the team is under legal agreement.
 
-**Team's experience*
+**Team's experience**
 
-**Team Code Repos*
+**Team Code Repos**
 
     Setheum Network Substrate Node Implementation: https://github.com/Setheum-Labs/Setheum
     Setheum Whitepapers:                           https://github.com/Setheum-Labs/Setheum-Labs-White-Papers
 
 
-**Team LinkedIn Profiles*
+**Team LinkedIn Profiles**
 
     Muhammad-Jibril:                 https://www.linkedin.com/in/muhammad-jibril/
     Valentine Oragbakosi:            https://www.linkedin.com/in/valentine-oragbakosi-270604120/
@@ -70,16 +70,15 @@ The Setheum Network MVP will include the following parts
     Suleiman Mustapha:               https://www.linkedin.com/in/suleiman98/
     Al-Mustapha Mustapha  Abdullahi: https://www.linkedin.com/in/al-mustapha-mustapha-abdullahi-43a8a81b9/
     The Rest aren't on LinkedIn.
+**Development Roadmap** 🔩
 
-###Development Roadmap### 🔩
-
-**Overview*
+**Overview**
 
     Total Estimated Duration:   12 weeks
     Full-time equivalent (FTE): 1.5
     Total Costs:                2.87 BTC
 
-**Milestone 1 — The MVP*
+**Milestone 1 — The MVP**
 
     Estimated Duration: 12 weeks
     FTE:                1.5
@@ -105,7 +104,7 @@ The Setheum Network MVP will include the following parts
 
 **Number 	Deliverable 	Specification**
 
-   **0a. 	License** -	    Apache 2.0 license
+   **0a. 	License**+ -	    Apache 2.0 license
    **0b. 	Documentation** - We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works.
    **0c. 	Testing Guide** - The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests
    **1. 	Substrate module  STP258   Module**  -  We will Implement The STP258 (Setheum Tokenization Protocol [to-fiat]) Stablecoin Standard Module - 34 fiat currencies that can be spent on SettPay and are also represented in a basket token.
@@ -117,7 +116,7 @@ The Setheum Network MVP will include the following parts
    **7. 	Docker Image** : -  We will  provide a dockerfile to demonstrate the full functionality of our chain.
 
 ...
-###Future Plans
+Future Plans
 
    1. **IPO** in **Kusama** and **Polkadot**
    2. **SettCard** (Visa Cryptocurreny Card for distributing **SETT rewards, discounts and cashbacks**)
@@ -130,7 +129,7 @@ The Setheum Network MVP will include the following parts
    9. **SEANET   (Setheum Enterprise Alliance Network)** for Enterprise Alliance to foster adoption amongstEnterprise E-Commerce Platforms **(i.e. Macy's, Uber, Walmart, BigCommerce, WordPress, Shopify, Shoprite, Jumia, Fortnite, Slack, Atlassian, Salesforce, McDonalds, KFC, et al.)** and invite small businesses and niche stores and even Universities  to build on the Setheum Network and increase the value and adoption of the Entire Polkadot & Substrate Ecosystem as We will promote development with ink! and Substrate and many advanced, niche and beautiful FRAME modules will be built for various use cases, thus propping the adoption of Rust too..
    10. **SAGA     (Setheum Association of Government Alliances)** Just like SEANET but for Public Bodies, NGOs, Universities & Governments starting with Government Departments we already work with and those we worked with in Nigeria, to support them to build on the Setheum Network and increase the value and adoption of the Entire Polkadot & Substrate Ecosystem as We will promote development with ink! and Substrate and many advanced, niche and beautiful **FRAME modules will be built for various use cases, thus propping the adoption of Rust too.**.
 
-###Additional Information ➕
+Additional Information ➕
 
     We have designed, drafted, and published White papers, specs have been drafted.
     So far we are fully Self-funded
@@ -147,4 +146,4 @@ The Setheum Network MVP will include the following parts
 
     We have designed, drafted and published the white papers with technical insight and spec.
     We haven't applied for any other Grants so far, but we applied for the Substrate Builders Program.
- We are providing the Entire Project under the **Apache 2.0 license.
+ We are providing the Entire Project under the **Apache 2.0 license**.
