@@ -58,8 +58,8 @@ The Setheum Labs Team
 
 **Team Code Repos**
 
-    Setheum Network Substrate Node Implementation: https://github.com/Setheum-Labs/Setheum
-    Setheum Whitepapers:                           https://github.com/Setheum-Labs/Setheum-Labs-White-Papers
+    [Setheum Network Substrate Node Implementation](https://github.com/Setheum-Labs/Setheum)
+    [Setheum Whitepapers](https://github.com/Setheum-Labs/Setheum-Labs-White-Papers)
 
 
 **Team LinkedIn Profiles**
@@ -76,13 +76,13 @@ The Setheum Labs Team
 
     Total Estimated Duration:   12 weeks
     Full-time equivalent (FTE): 1.5
-    Total Costs:                2.87 BTC
+    Total Costs:                2.9 BTC
 
 **Milestone 1 — The MVP**
 
     Estimated Duration: 12 weeks
     FTE:                1.5
-    Costs:              2.87 BTC
+    Costs:              2.9 BTC
 
 **Team's experience**
    
