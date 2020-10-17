@@ -1,4 +1,4 @@
-Open Grant Proposal
+Open Grant Proposal 
 **Setheum DeFi & DeCo Network by Setheum Labs**
 
    Setheum Labs props, supports, nurtures and stewards applications in the fields of Decentralized Finance protocols particularly e-commerce (Decentralized E-Commerce or DeCo) and protocols that can serve as open finance building blocks such as stable currency and synthetic assets. Setheum Network is a focal R&D project initiated the Setheum Labs. Setheum Labs is founded by Muhammad-Jibril B.A. participant of the Polkadot ecosystem. Deco is now like a store where anyone can sell anything, it is basically a financial framework and infrastructure for normal eCommerce platforms/apps to integrate or build their payment gateways on to give free discounts to their users/customers through Setheum's elastic distribution of stablecoins by the SERP-TES.
@@ -26,7 +26,7 @@ The Setheum Network MVP will include the following parts
 
 The Setheum Labs Team
 
-   I designd, drafted and published the White Pagers of Setheum and even of the Future Plans we have for Setheum, like Synthetic Assets, margin trading, money market, liquidity staking et al
+   I designd, drafted and published the White Pagers of Setheum and even of the Future Plans we have for Setheum, like Synthetic Assets, margin trading, money market, liquidity staking et al here: 
     https://github.com/Setheum-Labs/Setheum-Labs-White-Papers
 
 **Ecosystem Fit**
@@ -58,8 +58,8 @@ The Setheum Labs Team
 
 **Team Code Repos**
 
-    [Setheum Network Substrate Node Implementation](https://github.com/Setheum-Labs/Setheum)
-    [Setheum Whitepapers](https://github.com/Setheum-Labs/Setheum-Labs-White-Papers)
+    Setheum Network Substrate Node Implementation  https://github.com/Setheum-Labs/Setheum)
+    Setheum Whitepapers                            https://github.com/Setheum-Labs/Setheum-Labs-White-Papers)
 
 
 **Team LinkedIn Profiles**
