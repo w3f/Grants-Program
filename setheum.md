@@ -12,7 +12,7 @@ Open Grant Proposal
    We are building a decentralized, cross-chain, community-owned DeFi (Decentralized Finance)
    and DeCo (Decentralized Commerce) system - the Setheum Network, to enable true economic interoperability, cross-chain liquidity and scalability. Along with the system, we are also building an economic model and governance framework to sustain the development, and continuous participation in the Polkadot ecosystem (e.g. as parachain and will setup a non-profit foundation to foster development on the Polkadot Ecosystem - especially in Nigeria and Saudi Arabia), until ultimately transitioning the network to community ownership. The Setheum Network will serve as a building block for DeCo and DeFi applications such as SettIndex in the Polkadot Ecosystem, and will provide new use cases for quality assets in the Polkadot ecosystem, such as DOT and new upcoming Polkadot projects such as Kylin, ChainLink, Open Ethereum et al..
 
-**Overview*
+**Overview**
 
 The Setheum Network MVP will include the following parts
 
@@ -24,7 +24,7 @@ The Setheum Network MVP will include the following parts
         Various modules specific to manage Distribution of STP258/SERP-TES Monetary Issuance, Ecommerce payment, et al.
    **SettPay:** The Setheum Wallet for the STP258 Stablecoins, to function like a traditional Bank. Later on to add features to pay on ecommerce platforms with any cryptocurrency through the STP258 protocol, to enable minting of STP258 stablecoins, peer to peer transactions, and later on in the near future we will add Subsocial in the SettPay Dapp as a micro-service just like Alipay chat in AliPay.
 
-The Setheum Labs Team
+**The Setheum Labs Team**
 
    I designd, drafted and published the White Pagers of Setheum and even of the Future Plans we have for Setheum, like Synthetic Assets, margin trading, money market, liquidity staking et al here: 
     https://github.com/Setheum-Labs/Setheum-Labs-White-Papers
@@ -116,7 +116,7 @@ The Setheum Labs Team
    **7. 	Docker Image** : -  We will  provide a dockerfile to demonstrate the full functionality of our chain.
 
 ...
-Future Plans
+**Future Plans**
 
    1. **IPO** in **Kusama** and **Polkadot**
    2. **SettCard** (Visa Cryptocurreny Card for distributing **SETT rewards, discounts and cashbacks**)
@@ -129,7 +129,7 @@ Future Plans
    9. **SEANET   (Setheum Enterprise Alliance Network)** for Enterprise Alliance to foster adoption amongstEnterprise E-Commerce Platforms **(i.e. Macy's, Uber, Walmart, BigCommerce, WordPress, Shopify, Shoprite, Jumia, Fortnite, Slack, Atlassian, Salesforce, McDonalds, KFC, et al.)** and invite small businesses and niche stores and even Universities  to build on the Setheum Network and increase the value and adoption of the Entire Polkadot & Substrate Ecosystem as We will promote development with ink! and Substrate and many advanced, niche and beautiful FRAME modules will be built for various use cases, thus propping the adoption of Rust too..
    10. **SAGA     (Setheum Association of Government Alliances)** Just like SEANET but for Public Bodies, NGOs, Universities & Governments starting with Government Departments we already work with and those we worked with in Nigeria, to support them to build on the Setheum Network and increase the value and adoption of the Entire Polkadot & Substrate Ecosystem as We will promote development with ink! and Substrate and many advanced, niche and beautiful **FRAME modules will be built for various use cases, thus propping the adoption of Rust too.**.
 
-Additional Information ➕
+**Additional Information** ➕
 
     We have designed, drafted, and published White papers, specs have been drafted.
     So far we are fully Self-funded
