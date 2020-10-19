@@ -63,7 +63,7 @@ We implemented the POW + DPOS consensus integrated with ethereum, used tendermin
 
 ### Milestone 1  — Implement ares low pallet
 * **Estimated Duration:** 3 weeks
-* **FTE:**  3
+* **FTE:**  2
 * **Costs:** 0.5 btc
 
 In this milestone, We will implement ares oracle proof-of-concept, A oracle pallet for parallel chain calls.
@@ -71,31 +71,45 @@ In this milestone, We will implement ares oracle proof-of-concept, A oracle pall
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | oracle pallet | requested data, generated events, and callbacks to data |
-| 2. | scanner | scanner parachain oracle request via off-chain worker, parse the specific request data |
-| 3. | processor | data warehouse returns the correct request data use off-chain worker | 
+| 2. | scanner | scanner parachain oracle request via block metadata, parse the specific request data |
+| 3. | provider | data warehouse returns the correct request data use http request | 
 | 4. | Testing | This milestone will have unit-test for pallet impemented, simulated all functions. |
 | 5. | example for demonstration | Provide  parachain oracle pallet integrate example|
 | 6. | Documentation | We will provide parachain integrate oracle pallet documentation and  basic code example that show how developers use the pallet  |
 
 ### Milestone 2  — Implement ares chain
-* **Estimated Duration:** 5 weeks
-* **FTE:**  3
-* **Costs:** 2 btc
+* **Estimated Duration:** 4 weeks
+* **FTE:**  2
+* **Costs:** 1 btc
 
-In this milestone, We will use off-chain worker scanner parachain rpc method, obtain external data, three pallets are provided, contain validator, aggregator, council pallet, Implement three pallet in a centralized manner.
+In this milestone, We will use scanner scan parachain block metadata, obtain external data, two pallets are provided, contain validator, aggregator, Implement pallets in a centralized manner.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | Testing | This milestone will have unit-test for all the following pallet impemented. We will mock most of the pallet to simulate host functions. Integration test will be delivered in next milestone. |
-| 2. | Documentation | We will provide parachain integrate oracle pallet documentation and  basic code example that show how developers use the pallet, our chain deploy  |
+| 2. | Documentation | We will provide all module documentation  |
 | 3. | scanner | scanner parachain aggregator extrinsic, record extrinsic and receipt results |
-| 4. | processor | data warehouse returns the correct request data use off-chain worker, will be used by aggregator,council,validator to validate the data | 
-| 5. | aggregator | Commit the data to a parallel chain and put extrinsic receipt results to this chain |
-| 6. | validator | validator aggregator block and submit fraud proof  |
-| 7. | council | judge which has the correct data use libp2p send vote network message |
-| 8. | Proof of fraud | record block extrinsic contrain incorrect oracle data, and give correct data |
-| 9. | example for demonstration | Provide  parachain oracle pallet integrate example and our chain deploy example|
+| 4. | provider | data warehouse returns the mean of multiple time points, contain all the data of the outside world. it will be used by aggregator,council,validator to validate the data | 
+| 5. | aggregator | Commit the data to a parachain and put extrinsic receipt results to this chain |
+| 6. | validator | validator validate aggregator block  |
+| 7. | example for demonstration | Provide ares substrate nodes and golang implementation scanner and provider|
 
+### Milestone 2  — Implement ares slash
+* **Estimated Duration:** 4 weeks
+* **FTE:**  2
+* **Costs:** 1 btc
+
+In this milestone, We will  
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Testing | This milestone will have unit-test for all the following pallet impemented. We will mock most of the pallet to simulate host functions. Integration test will be delivered in next milestone. |
+| 2. | Documentation | We will provide description of fraud documentation and council how to verify |
+| 3. | provider | it will be used by aggregator,council,validator to validate the data | 
+| 4. | validator | validator validate aggregator block and submit fraud proof  |
+| 5. | council | judge which has the correct data use libp2p send vote network message, may use imOnline code|
+| 6. | Proof of fraud | record block extrinsic contrain incorrect oracle data, and give correct data |
+| 7. | example for demonstration | Provide council deal proof of fraud example|
 
 ## Future Plans
 
