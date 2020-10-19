@@ -57,13 +57,13 @@ We implemented the POW + DPOS consensus integrated with ethereum, used tendermin
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-* **Total Estimated Duration:** 8 weeks
+* **Total Estimated Duration:** 11 weeks
 * **Full-time equivalent (FTE):**  3
 * **Total Costs:** 2.5 btc
 
 ### Milestone 1  — Implement ares low pallet
 * **Estimated Duration:** 3 weeks
-* **FTE:**  2
+* **FTE:**  1.5
 * **Costs:** 0.5 btc
 
 In this milestone, We will implement ares oracle proof-of-concept, A oracle pallet for parallel chain calls.
