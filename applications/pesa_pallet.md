@@ -130,9 +130,9 @@ The team has also integrated with Telecom operators like AT&T, Claro, etc.
 |--------|------------------------|------------------------|
 | 1.     | PESA pallet - send, receive and reverse lookup functions | 1. Pallet will allow users to send and receive tokens using phone number instead of using complex hash.<br>2. Pallet will allow users to perform reverse resolution of address to Phone number if the users opted to allow during register operation. |
 | 2.     | Backend setup for Phone number verification              | Backend will be in NodeJs to perform phone number verification/validation using Twilio. |
-| 2.     | Demo of the above functionalities using a web dapp       | Dapp showing these features. |
-| 3.     | Dockerfile(s)                                            | Provide a docker image with substrate node using our pallet. Docker image for backend.  |
-| 4.     | Unit Tests and Documentation                             | Provide documentation for:<br>1. Steps to run the substrate node with PESA pallet.<br>2. Steps to use web dapp to interact with it.<br>3. Steps to run backend locally. |
+| 3.     | Demo of the above functionalities using a web dapp       | Dapp showing these features. |
+| 4.     | Dockerfile(s)                                            | Provide a docker image with substrate node using our pallet. Docker image for backend.  |
+| 5.     | Unit Tests and Documentation                             | Provide documentation for:<br>1. Steps to run the substrate node with PESA pallet.<br>2. Steps to use web dapp to interact with it.<br>3. Steps to run backend locally. |
 
 
 ### Community engagement
