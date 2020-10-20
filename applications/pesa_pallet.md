@@ -104,7 +104,7 @@ The team has also integrated with Telecom operators like AT&T, Claro, etc.
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 2.5 months
+* **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 3
 * **Total Costs:** 2 BTC
 
@@ -115,23 +115,24 @@ The team has also integrated with Telecom operators like AT&T, Claro, etc.
 
 | Number | Deliverable            | Specification          |
 |--------|------------------------|------------------------|
-| 1.     | Substrate pallet: PESA | 1. Pallet is expose a function called register to allow caller to register the phone number to their wallet address<br>2. Pallet will allow users to perform Phone Number to address look up.                                 |
-| 2.     | Create a dapp          | Create a custom chain with the Pesa pallet and a dapp to allow users to enter a phone number and associate that with the owner's wallet address. Users will be able to perform address lookup by providing a phone number.   |
-| 3.     | Unit tests             | The code will have proper unit-test coverage to ensure functionality and robustness. Readme will provide details on how to run the tests.                                                                                          |
-| 4.     | Dockerfile             | Provide a docker image with a substrate node using our pallet.  |
-| 5.     | Documentation          | We will provide both inline documentation of the code and a basic tutorial that explains how a user can interact with the substrate runtime to call the Pesa pallet’s APIs.                                                   |
+| 1.     | Substrate pallet: PESA | 1. Pallet is expose a function called register to allow caller to register the phone number to their wallet address<br>2. Pallet will allow users to perform Phone Number to address look up. |
+| 2.     | Create a dapp          | Create a custom chain with the PESA pallet and a dapp to allow users to enter a phone number and associate that with the owner's wallet address. Users will be able to perform address lookup by providing a phone number. Dapp will be in Angular/Javascript. |
+| 3.     | Unit tests             | The code will have proper unit-test coverage to ensure functionality and robustness. Readme will provide details on how to run the tests. |
+| 4.     | Dockerfile             | Provide a docker image with a substrate node using our pallet. |
+| 5.     | Documentation          | We will provide both inline documentation of the code and a basic tutorial that explains how a user can interact with the substrate runtime to call the PESA pallet’s APIs. |
 
 ### Milestone 2 — PESA pallet send, receive tokens using phone number and reverse lookup
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 1.5 months
 * **FTE:**  1.5
 * **Costs:** 1 BTC
 
 | Number | Deliverable            | Specification          |
 |--------|------------------------|------------------------|
-| 1.     | PESA pallet - send, receive and reverse lookup functions | 1. Pallet will allow users to send and receive tokens using phone number instead of using complex hash.<br>2. Pallet will allow users to perform reverse resolution address to Phone number if the users opted to allow during set operation.               |
-| 2.     | Demo of the above functionalities using a web dapp       | Dapp showing these features                                                                 |
-| 3.     | Dockerfile                                               | Provide a docker image with a substrate node using our pallet.                              |
-| 4.     | Unit Tests and Documentation                             | Provide documentation and steps to run the substrate node with Pesa pallet and how to use web dapp to interact with it.                                                                                                                                         |
+| 1.     | PESA pallet - send, receive and reverse lookup functions | 1. Pallet will allow users to send and receive tokens using phone number instead of using complex hash.<br>2. Pallet will allow users to perform reverse resolution of address to Phone number if the users opted to allow during register operation. |
+| 2.     | Backend setup for Phone number verification              | Backend will be in NodeJs to perform phone number verification/validation using Twilio. |
+| 2.     | Demo of the above functionalities using a web dapp       | Dapp showing these features. |
+| 3.     | Dockerfile(s)                                            | Provide a docker image with substrate node using our pallet. Docker image for backend.  |
+| 4.     | Unit Tests and Documentation                             | Provide documentation for:<br>1. Steps to run the substrate node with PESA pallet.<br>2. Steps to use web dapp to interact with it.<br>3. Steps to run backend locally. |
 
 
 ### Community engagement
