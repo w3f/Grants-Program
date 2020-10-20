@@ -86,7 +86,13 @@ Proclus Technologies Limited.
 Saito's founders have both worked leading development and broader IT teams in China for over 10 years. The team has worked on projects in a variety of fields, and are all early 'cyrpto adopters'.
 
 ### Team Code Repos
+
+#### Saito
 * https://github.com/saito-lite
+
+#### Non-Saito Crypto
+* https://github.com/clayrab/snekCoin
+* https://github.com/trevelyan/lighthouse
 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/david-lancashire/
@@ -98,12 +104,12 @@ Saito's founders have both worked leading development and broader IT teams in Ch
 ### Overview
 * **Total Estimated Duration:** 8 Weeks
 * **Full-time equivalent (FTE):**  1.5 FTE 
-* **Total Costs:** 2.7 BTC
+* **Total Costs:** 2.1 BTC
 
 ### Milestone 1 — Saito Polkadot API Module 
 * **Estimated Duration:** 2 Weeks
 * **FTE:**  1.5
-* **Costs:** 0.6 BTC
+* **Costs:** 0.5 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -127,7 +133,7 @@ Two weeks should be adequate for building and documenting this module, as well a
 ### Milestone 2 — Fleshed out Gaming Protocol
 * **Estimated Duration:** 4 Weeks
 * **FTE:**  1.5
-* **Costs:** 1.2 BTC
+* **Costs:** 0.85 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -162,7 +168,7 @@ The result of this stage will be a defined protocol that specifies a general lan
 ### Milestone 3 — Asset Transfers in Gaming Protocol
 * **Estimated Duration:** 3 Weeks
 * **FTE:**  1.5
-* **Costs:** 0.9 BTC
+* **Costs:** 0.75 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
