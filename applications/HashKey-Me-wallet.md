@@ -23,13 +23,26 @@ Polkadot/Kusama is one of the most popular blockchain platforms, Our team is ver
 
 
 ### Project Details
-![](https://i.loli.net/2020/09/18/Y3e5tFJ6lZdCbgo.jpg)
 
-- Database layer: synchronize blockchain data to elastic search ,provide api for upper layer to search.
-- Component layer: monitor blockchain event, trace tx status,  retrieve outer market data, threshold signature schemes(2p,schnorr ,2p-eddsa),[#42 PR](https://github.com/w3f/Open-Grants-Program/pull/42)  has detailed information on tss.
-- Business layer:  the specific business related on polkadot 
-- Message & RRC layer: provide api for frontend application, push latest event from blockchain  to frontend.
-- FrontEnd layer: IOS and Android application
+![](https://i.loli.net/2020/10/21/D8V4eZPasiuSLnO.jpg)
+
+- Blockchain layer: HashKey Me wallet supported blockchain.
+- Component layer: monitor blockchain event, trace tx status,  retrieve outer market data, threshold signature schemes(k-of-n schnorr ,k-of-n eddsa).
+- FrontEnd layer: The front end supports IOS and Android,FrontEnd implement related business of the polkadot/kusama.
+
+There are two roles in k-of-n threshold:
+- Owner: have ownership of asset in the blockchain
+- Providers: take participate in creating secret shares and signature
+
+Ensure that the Owner keeps control over its assets, we introduce the following two requirements:
+- No transaction can be made without the Owner participation.
+- At any point in time the Owner can recover the full private key.
+
+The provider can be deployed by the owner , or the owner can specify a trusted third-party deployment, HashKey me wallet will deploy a provider for owner.
+
+![](https://i.loli.net/2020/10/21/WVuFQecCHg6zJpI.jpg)
+
+Here is a sequence diagram of the nodes in the wallet
 
 ![](https://i.loli.net/2020/09/18/lqSjPKIinJ9QLwb.jpg)
 - Client：
@@ -75,14 +88,14 @@ HashKey Me wallet would like to support for Kusama and Polkadot to IOS and Andro
 
 ## Development Roadmap 
 
-* **Total Estimated Duration:** 11 weeks
+* **Total Estimated Duration:** 6 weeks
 * **Full-time equivalent (FTE):**  3
-* **Total Costs:** 2.5 BTC
+* **Total Costs:** 1.5 BTC
 
 
 ### Milestone 1 
 
-* **Estimated Duration:** 3 weeks 
+* **Estimated Duration:** 1 weeks 
 * **FTE:**  1
 * **Costs:** 0.5 BTC
 
@@ -96,26 +109,25 @@ HashKey Me wallet would like to support for Kusama and Polkadot to IOS and Andro
 
 ### Milestone 2 
 
-* **Estimated Duration:** 4 weeks 
-* **FTE:**  1
-* **Costs:** 1 BTC
-
+* **Estimated Duration:** 3 weeks 
+* **FTE:**  2
+* **Costs:** 0.5 BTC
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | implement 2p-eddsa | complicate 2p-eddsa for server and client to generate eddsa private key | 
-| 2. | implement 2p-schnorr| complicate 2p-schnorr for server and client to generate schnorr private key|  
-| 3. | integrated 2p-eddsa to IOS/Android| integrate 2p-eddsa to cient|  
-| 4. | integrated 2p-schnorr to IOS/Android |integrate 2p-schnorr to cient |  
-| 5. | Unit tests| Integration of Unit tests for 2p-eddsa/2p-schnorr generate private key and sign tx |  
-| 6. | Documentation| show user how to integrate 2p-eddsa/2p-schnorr to application, Provide detailed UML diagrams of 2p-eddsa/2p-schnorr |  
+| 1. | implement k-of-n eddsa | complicate k-of-n eddsa for server and client to generate eddsa private key | 
+| 2. | implement k-of-n schnorr| complicate k-of-n schnorr for server and client to generate schnorr private key|  
+| 3. | integrated k-of-n eddsa to IOS/Android| integrate k-of-n eddsa to cient|  
+| 4. | integrated k-of-n schnorr to IOS/Android |integrate k-of-n schnorr to cient |  
+| 5. | Unit tests| Integration of Unit tests for k-of-n eddsa/k-of-n schnorr generate private key and sign tx |  
+| 6. | Documentation| show user how to integrate k-of-n eddsa/k-of-n schnorr to application, Provide detailed UML diagrams of k-of-n eddsa/k-of-n schnorr |  
 
 
 ### Milestone 3
 
-* **Estimated Duration:** 4 weeks 
-* **FTE:**  1
-* **Costs:** 1 BTC
+* **Estimated Duration:** 2 weeks 
+* **FTE:**  2
+* **Costs:** 0.5 BTC
 
 
 | Number | Deliverable | Specification | 
