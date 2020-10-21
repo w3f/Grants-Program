@@ -127,8 +127,8 @@ For larger grants, payments in fiat and partly private submissions, please visit
 
 ### Real-time conversation
 We have Riot channels for real-time discussions on Web3 and Polkadot. Join the conversations.
-* [Web3 Foundation](https://riot.im/app/#/room/#web3foundation:matrix.org)
-* [Polkadot Watercooler](https://riot.im/app/#/room/#polkadot-watercooler:matrix.org)
+* [Web3 Foundation](https://matrix.to/#/#web3foundation:matrix.org)
+* [Polkadot Watercooler](https://matrix.to/#/#polkadot-watercooler:matrix.org)
 
 ## :information_source: License
 [Apache License 2.0](https://github.com/w3f/Open-Grants-Program/blob/master/LICENSE) © Web3 Foundation 
