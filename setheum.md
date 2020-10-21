@@ -117,31 +117,28 @@ I do consultancy in blockchain space.
 
 ## Development Roadmap :nut_and_bolt: 
 
-The Setheum Network MVP will be a 12 week project, aims to deliver a running MVP Substrate chain testnet providing algorithmically elastic stablecoins - the STP258 Sett tokens. Upon the testnet launch, we will implement a basic version of its economic model and work towards a Canary Network Launch and an Initial Parachain Offering of the Canary network on Kusama. And then work towards launching the Mainnet with all of the future plans we provided above and move towards an Initial Parachain Offering (IPO) of the Mainnet of Setheum network, participation in the IPO auction will depend upon the readiness of the Polkadot network.
+The Setheum Network MVP will be a 7 week project, aims to deliver a running MVP Substrate chain testnet providing algorithmically elastic stablecoins - the STP258 Sett tokens. Upon the testnet launch, we will implement a basic version of its economic model and work towards a Canary Network Launch and an Initial Parachain Offering of the Canary network on Kusama. And then work towards launching the Mainnet with all of the future plans we provided above and move towards an Initial Parachain Offering (IPO) of the Mainnet of Setheum network, participation in the IPO auction will depend upon the readiness of the Polkadot network.
 
 ### Overview
    
-* **Total Estimated Duration:** 12 Weeks
+* **Total Estimated Duration:** 7 Weeks
 * **Full-time equivalent (FTE):**  1.5 
-* **Total Costs:** 2.75 BTC
+* **Total Costs:** 2.6 BTC
 
 ### Milestone 1 - The MVP
-* **Estimated Duration:** 12 Weeks
+* **Estimated Duration:** 7 Weeks
 * **FTE:**  1.5
-* **Costs:** 2.75 BTC
+* **Costs:** 2.6 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works |
 | 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: STP258 | We will Implement The STP258 (Setheum Tokenization Protocol [to-fiat]) Stablecoin Standard Module - 34 fiat currencies that can be spent on SettPay and are also represented in a basket token |  
-| 2. | Substrate module: SERP-TES | We will Implement The SERP (Setheum Elastic Reserve Protocol) Token Elasticity Module: Designed to make cryptocurrencies that are backed by other cryptocurrencies with the PES (Price Elasticity of Supply) algorithm utilized for token elasticity of supply (TES) algorithm |  
-| 3. | Substrate Chain: Neom Testnet | The above modules and the many other basic modules like Governance, Staking, et al built of our custom chain will interact on the Neom  Testnet to provide our intended functionalities for testing before mainnet |  
-| 4. | Substrate Chain : Vegas Canary Network | The above modules and the many other basic modules like Governance, Staking, et al built of our custom chain will interact  on the Vegas Network to act as the Canary Network to provide the intended functionalities |
-| 5. | Substrate Chain : Setheum  Network Relay | The above modules and the many other basic modules like Governance, Staking, et al built of our custom chain will interact  on the Setheum Network Relay to provide our intended functionalities. But the Mainnet might not be available at this period in time, though we might hopefully launch early if we are convinced with the audit and it is ready and set for the run. |
-| 4. | Chain UI | SettPay  Wallet  UI**   -   The chain will be able to interact with the wallet and the STP258 Elastic Stablecoins will be able to beissued to the wallet app in the MVP and provide our intended functionalities with an intuitive Easy to Use User Experience / User Interface. To be built with ReactJS Framework or Vue.JS, it is not just build with Polkadot.JS only but Polkadot.JS might be involved |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Substrate module: STP258 (0.6 BTC - 2 weeks)| We will Implement The STP258 (Setheum Tokenization Protocol [to-fiat]) Stablecoin Standard Module - 34 fiat currencies that can be spent on SettPay and are also represented in a basket token |  
+| 2. | Substrate module: SERP-TES (1.0 BTC - 2 weeks) | We will Implement The SERP (Setheum Elastic Reserve Protocol) Token Elasticity Module: Designed to make cryptocurrencies that are backed by other cryptocurrencies with the PES (Price Elasticity of Supply) algorithm utilized for token elasticity of supply (TES) algorithm |  
+| 3. | Chain UI (1.0 BTC - 3 weeks)| SettPay Wallet  UI**   -   The chain will be able to interact with the wallet and the STP258 Elastic Stablecoins will be able to be issued to the wallet app in the MVP and provide our intended functionalities with an intuitive Easy to Use User Experience / User Interface. To be built with ReactJS Framework or Vue.JS, it is not just build with Polkadot.JS only but Polkadot.JS might be involved | 
+| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 ### Community engagement
 
