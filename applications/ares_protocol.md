@@ -59,7 +59,7 @@ We implemented the POW + DPOS consensus integrated with ethereum, used tendermin
 ### Overview
 * **Total Estimated Duration:** 11 weeks
 * **Full-time equivalent (FTE):**  3
-* **Total Costs:** 2.5 btc
+* **Total Costs:** 2.2 btc
 
 ### Milestone 1  — Implement ares low pallet
 * **Estimated Duration:** 3 weeks
@@ -74,13 +74,12 @@ In this milestone, We will implement ares oracle proof-of-concept, A oracle pall
 | 2. | scanner | scanner parachain oracle request via block metadata, parse the specific request data |
 | 3. | provider | data warehouse returns the correct request data use http request | 
 | 4. | Testing | This milestone will have unit-test for pallet impemented, simulated all functions. |
-| 5. | example for demonstration | Provide  parachain oracle pallet integrate example|
+| 5. | example for demonstration | Provide  parachain oracle pallet integrate example, It use golang implement scanner and provider, may use go-substrate-api, And aggregator,validator,council implement as substrate pallet, written in Rust as substrate customized module|
 | 6. | Documentation | We will provide parachain integrate oracle pallet documentation and  basic code example that show how developers use the pallet  |
-
 ### Milestone 2  — Implement ares chain
 * **Estimated Duration:** 4 weeks
 * **FTE:**  2
-* **Costs:** 1 btc
+* **Costs:** 0.9 btc
 
 In this milestone, We will use scanner scan parachain block metadata, obtain external data, two pallets are provided, contain validator, aggregator, Implement pallets in a centralized manner.
 
@@ -97,7 +96,7 @@ In this milestone, We will use scanner scan parachain block metadata, obtain ext
 ### Milestone 2  — Implement ares slash
 * **Estimated Duration:** 4 weeks
 * **FTE:**  2
-* **Costs:** 1 btc
+* **Costs:** 0.8 btc
 
 In this milestone, We will  
 
