@@ -104,18 +104,19 @@ Saito's founders have both worked leading development and broader IT teams in Ch
 ### Overview
 * **Total Estimated Duration:** 8 Weeks
 * **Full-time equivalent (FTE):**  1.5 FTE 
-* **Total Costs:** 2.1 BTC
+* **Total Costs:** 2.2 BTC
 
 ### Milestone 1 — Saito Polkadot API Module 
-* **Estimated Duration:** 2 Weeks
+* **Estimated Duration:** 3 Weeks
 * **FTE:**  1.5
-* **Costs:** 0.5 BTC
+* **Costs:** 1.1 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | Saito Module | Polkadot module that allows Saito applications to connect to a Polkadot API access point to send / receive network Polkadot data. This module would be the equivalent of "metamask" application for all of the existing games and applications already running on Saito. It would run fully in-browser. |
-| 2 | Documentation | Inline documentation and published how to guide. |
-| 3 | Tutorial | Developer tutorial showing how Saito applications can integrate with Polkadot module on a base-level (i.e. without the need for use of the gaming API layer), making Polkadot a first-class citizen for all Saito Web3 applications and allowing all of them to send and receive payments in DOT. |
+| 2. | Documentation | Inline documentation and published how to guide. |
+| 3. | Environment Build | Build and test environment containing Polkadot node and Saito Stack. <br />Test interoperability and benchmark performance. <br />Document configuration, deployment and management. |
+| 4 | Tutorial | Developer tutorial showing how applications can integrate with Polkadot module on a base-level (i.e. without the need for use of the gaming API layer), making Polkadot a first-class citizen for all Saito Web3 applications and allowing all of them to send and receive payments in DOT. |
 ||||
 
 **Details:**
@@ -128,47 +129,12 @@ A plug-and-play Saito module will also simplify building UI components and web a
 
 
 **Timeline Notes:**
-Two weeks should be adequate for building and documenting this module, as well as putting together a tutorial demonstrating how independent Web3 modules can make API requests and check account balances, etc.
+Three weeks should be adequate for building and documenting this module, as well as putting together a tutorial demonstrating how independent Web3 modules can make API requests and check account balances, etc.
 
-### Milestone 2 — Fleshed out Gaming Protocol
-* **Estimated Duration:** 4 Weeks
-* **FTE:**  1.5
-* **Costs:** 0.85 BTC
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Protocol Specification | Published Document |
-| 2. | Game Library | Instantiation of the Protocol in Javascript including all the following features: <ul><li>shuffling cards </li><li>dealing cards to players </li> <li>dealing cards to piles </li><li>moving into a player turn </li><li>rolling-dice (secure random number) </li> <li>simultaneous card-selection </li> <li>simultaneous game moves </li></ul>|
-| 3. | Documentation | Inline and published documentation of library and cryptographic techniques employed. |
-| 4. | Licence | GPL3 or similar (on consultation with Polkadot representatives). |
-||||
-
-We would also upgrade the existing game suite in the Saito Arcade to full compliance with the gaming protocol to ensure that all existing community-developed games can serve as living-tutorials for other developers and working advertisements for the power of Web3 gaming.
-
-
-**Details:**
-
-The underlying game engine should include all desired functionality. In cases where the functionality does not yet exist it will need to be coded and tested. Where functionality has been added to individual games by community members it will be back-ported into the core library so that the underlying game engine supports it for all games.
-
-In those cases where developers hardcoded some of the more advanced features (simultaneous card selection, etc.) into their own applications, part of this work should involve going back and porting those games over to the new Web3 standard, so they can serve as living tutorials of how to program those games, as well as places for developers to start.
-
-The point of working on this second stage is to provide a bit of a buffer between the launch of the Polkadot API module and our starting work on adding Polkadot / blockchain asset transfers and queries into the game engine itself. This gives us breathing space and gives time to interact with the community and ensure that the software and games being built are as generally useful as we can make them.
-
-**Timeline Notes:**
-
-We expect it to take a few days to add and test any particular feature, and probably a full week for testing and debugging simultaneous moves. Since around half of this functionality already exists, the work is porting the existing code into a cleaner syntax, documenting it and sharing it for community review and feedback. We prefer to have a full week for this so we can engage with the community and get feedback on proposed syntax before moving to implement new features.
-
-From that point onwards, we are fortunate to have a library of games that can be leveraged to build and test new functionality. Setting up a new game involving a deck of cards and testing features like multiple-card select will be reasonably fast since we can build with existing UI code. Regarding missing protocol functions, we expect the actual coding to take around two weeks. The complicated components here are simultaneous moves (i.e. all players are allowed to take action and may submit their moves in any order, but the game engine does not enforce the order in which this is done) as well as secure random number generation (i.e. requesting dice rolls for particular moves, and then enforcing that this dice roll is used for that particular move (i.e. preventing look-ahead attacks on gameplay).
-
-We allocate a final week to ensuring the documentation is up-to-date so that developers can understand exactly what is happening below the surface, and porting our existing community games over to the new Web 3 standard instead of hardcoded game-specific workarounds. That provides a healthy number of applications that can be used for developer and community experimentation at the next stage - which is integrating Polkadot and asset-transfer functionality.
-
-The result of this stage will be a defined protocol that specifies a general language for defining game moves on a stack, along with a basic game engine that implements it and is capable of running games in the browser. At that point, work can continue on the game engine we provide, or competing implementations can emerge that share the same protocol and build atop it, as similar to the way that HTML developed. Porting games between platforms will be quite simple. \
-
-
-### Milestone 3 — Asset Transfers in Gaming Protocol
+### Milestone 2 — Asset Transfers in Gaming Protocol
 * **Estimated Duration:** 3 Weeks
 * **FTE:**  1.5
-* **Costs:** 0.75 BTC
+* **Costs:** 1.1 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -193,9 +159,13 @@ We expect it to take about three weeks to do this work. A week is probably suffi
 
 The Saito team will publish regular updates on developments and milestone completions. This project represents a great developer outreach opportunity for Saito, and to bring much anticipated features from the Polkadot ecosystem. There will be many opportunities to promote this to our growing community and specifically to developers working on Saito, and those in the Polkadot space.
 
+More importantly Saito will seek out a partner project working on NFTs or other tokens on a parachain to colaborate on building a game in which these tokens are issued as prizes, trophies, in game assets, achievement badges or similar. This would cap off the work done as part of this grant, and set the stage for broader colaboration.
+
 
 ## Future Plans
-Our hope is that this work continues well into the future, and that the Polkadot community embraces not only the sort of open source games that our community is producing, but the more flexible style of application design that comes from i -browser stack-based program execution instead of offloading everything into smart contracts.
+Our hope is that this work continues well into the future, and that the Polkadot community embraces not only the sort of open source games that our community is producing, but the more flexible style of application design that comes from in-browser stack-based program execution instead of offloading everything into smart contracts.
+
+Should it become apparent that a game protocol compliant substrate module could be valuable to Polkadot and the community, we would investigate building such. Either under a separate grant or in colaboration with the Polkadot community.
 
 Our criteria for success is our ability to build community around feature-rich games. Our hope is that integration with Polkadot and other financial parachains brings value to Polkadot users, programmers, and our own gamers. We are happy to work with other chains and communities to bring their valuable features into our gaming environment. The shared goal is an open ecosystem that is more attractive than closed source competitors like Steam and the Apple Store.
 
