@@ -147,30 +147,61 @@ None.
 
 ### Overview
 
-* **Total Estimated Duration:** Duration of the whole project
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
+* **Total Estimated Duration:** 12 weeks
+* **Full-time equivalent (FTE):**  18
+* **Total Costs:** 2.33704864 BTC
 
-### Milestone 1 Example — Implement Substrate Modules 
+### Milestone 1 — Proof of concept #0 (Finished)
 
-* **Estimated Duration:** 8 weeks
+* **Estimated Duration:** 4 weeks
 * **FTE:**  3
-* **Costs:** 0.75 BTC
+* **Costs:** 0.38950811 BTC ≈ $5000
 
-| Number | Deliverable         | Specification                                                |
-| ------ | ------------------- | ------------------------------------------------------------ |
-| 0a.    | License             | Apache 2.0 / MIT / Unlicense                                 |
-| 0b.    | Documentation       | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c.    | Testing Guide       | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
-| 1.     | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |
-| 2.     | Substrate module: Y | We will create a Substrate module that will...               |
-| 3.     | Substrate module: Z | We will create a Substrate module that will...               |
-| 4.     | Substrate chain     | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5.     | Docker              | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| Number | Deliverable             | Specification                                                |
+| ------ | ----------------------- | ------------------------------------------------------------ |
+| 1.     | Serve the bundled       | Serve the bundled JS/HTML/CSS from a local server.           |
+| 2.     | A runnable android app  | A runnable android app that can call and interact with a remote API. |
+| 3.     | A Pocket4D Mini-Program | One-tap to download and run P4D mini apps on the Android host device natively via Flutter. |
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Proof of concept #1
 
-...
+* **Estimated Duration:** 4 weeks
+* **FTE:**  4
+* **Costs:** 0.51934414 BTC ≈ $6667
+
+| Number | Deliverable                        | Specification                                                |
+| ------ | ---------------------------------- | ------------------------------------------------------------ |
+| 1.     | IPFS deployment                    | Deploy the bundled file to decentralized storage, e.g., IPFS. |
+| 2.     | Mini-Program defined `xml` and API | Provides standard Mini-Program defined `xml` and API to JavaScript frontend. |
+| 3.     | Web3 integration                   | Integrate `Web3` and provide to frontend.                    |
+| 4.     | Smart contracts deployment         | Use smart contracts to deploy an Dapp, such as Faucet, and use Mini-Program to interact with it. |
+
+### Milestone 3 — Proof of concept #2
+
+* **Estimated Duration:** 4 weeks
+* **FTE:**  5
+* **Costs:** 0.64918018 BTC ≈ $8333
+
+| Number | Deliverable                    | Specification                                                |
+| ------ | ------------------------------ | ------------------------------------------------------------ |
+| 1.     | Integrate with `WalletConnect` | Integrate with `WalletConnect` and provides to JavaScript.   |
+| 2.     | Application deeplink           | When signing, call `WalletConnect` and use deeplink to jump to the wallet app and finish signing, and then go back to the `mini-app`. |
+| 3.     | `Substrate` integration        | The backend use `Substrate` to host a blockchain with decentralized storage. |
+
+### Milestone 4 — Proof of concept #3
+
+* **Estimated Duration:** 4 weeks
+* **FTE:**  6
+* **Costs:** 0.77901621 BTC ≈ $10000
+
+| Number | Deliverable                   | Specification                                                |
+| ------ | ----------------------------- | ------------------------------------------------------------ |
+| 1.     | Components and APIs           | Complete most of the Mini-Program defined components and APIs. |
+| 2.     | Guidelines of SDK             | A complete guidelines for developers (host) to integrate the SDK. |
+| 3.     | Integration with applications | Small scale integration of Dapps and host apps (eg. wallet or Dex) for testing. |
+| 4.     | Integration with Polkadot     | Integration with Polkadot.                                   |
+
+
 
 ### Community engagement
 
