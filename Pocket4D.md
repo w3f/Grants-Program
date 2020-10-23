@@ -42,15 +42,15 @@ The following information can help you better understand the Pocket4D project.
 
 #### Mockups
 
-<img src="/Users/Ken/Downloads/Pocket4D/钱包（概览card）.jpg" alt="钱包（概览card）" style="zoom:50%;" />
+<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/card.jpg" alt="card" style="zoom:25%;" />
 
-<img src="/Users/Ken/Downloads/Pocket4D/发送crypto.jpg" alt="发送cryptosend_cryptos" style="zoom:50%;" />
+<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/send.jpg" alt="send" style="zoom:25%;" />
 
-<img src="/Users/Ken/Downloads/Pocket4D/小程序列表.jpg" alt="小程序列表" style="zoom:50%;" />
+<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/MP_list.jpg" alt="MP_list" style="zoom:25%;" />
 
-<img src="/Users/Ken/Downloads/Pocket4D/Cryptos行情_小程序.jpg" alt="Cryptos行情_小程序" style="zoom:50%;" />
+<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/CI.jpg" alt="CI" style="zoom:25%;" />
 
-<img src="/Users/Ken/Downloads/Pocket4D/Dot实时数据_小程序.jpg" alt="Dot实时数据_小程序" style="zoom:50%;" />
+<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/Polkascan.jpg" alt="Polkascan" style="zoom:25%;" />
 
 
 
@@ -75,15 +75,15 @@ The following information can help you better understand the Pocket4D project.
 
 Client Side
 
-<img src="/Users/Ken/Desktop/p4d_client_structure.jpg" alt="p4d_client_structure" style="zoom:25%;" />
+<img src="https://github.com/Pocket4D/Pocket4D-Wiki/blob/master/assets/p4d_client_structure.001.jpeg?raw=true" alt="p4d_client_structure" style="zoom:25%;" />
 
 Tooling Side
 
-<img src="/Users/Ken/Desktop/p4d_tooling.jpg" alt="p4d_tooling" style="zoom:25%;" />
+<img src="https://github.com/Pocket4D/Pocket4D-Wiki/blob/master/assets/p4d_tooling.001.jpeg?raw=true" alt="p4d_tooling" style="zoom:25%;" />
 
 Network Side
 
-<img src="/Users/Ken/Desktop/p4d_general_design.jpg" alt="p4d_general_design" style="zoom:25%;" />
+<img src="https://github.com/Pocket4D/Pocket4D-Wiki/blob/master/assets/p4d_general_design.001.jpeg?raw=true" alt="p4d_general_design" style="zoom:25%;" />
 
 #### POC
 
@@ -95,9 +95,9 @@ Please follow the steps below:
 
 Or use your Android cellphone to scan this QR code below:
 
-<img src="/Users/Ken/Library/Application Support/typora-user-images/image-20201023223756176.png" alt="image-20201023223756176" style="zoom:25%;" />
+<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/poc/qrcode.png" alt="qrcode" style="zoom:50%;" />
 
-2. Tap the icon and you should see a screen like this:<img src="/Users/Ken/Library/Application Support/typora-user-images/image-20201023223929017.png" alt="image-20201023223929017" style="zoom:25%;" />
+2. Tap the icon and you should see a screen like this:<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/poc/demo_settings.png" alt="demo_settings" style="zoom:50%;" />
 
 3. Simply tap “Save Endpoint” then tap “To AppList”, 
 
