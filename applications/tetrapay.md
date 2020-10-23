@@ -57,6 +57,7 @@ TetraPay Ltda. (São Paulo – Brazil)
 ***Development Roadmap***
 
 Grant Application of $30,000
+Receiving address: 1H7FpnssaTZ8Gj5LRw5Da7dJr4XCQCv2Rx
 
 ***Stablecoin Algorithm (4 months)***
 
