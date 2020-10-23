@@ -42,17 +42,7 @@ The following information can help you better understand the Pocket4D project.
 
 #### Mockups
 
-<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/card.jpg" alt="card" style="zoom:25%;" />
-
-<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/send.jpg" alt="send" style="zoom:25%;" />
-
-<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/MP_list.jpg" alt="MP_list" style="zoom:25%;" />
-
-<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/CI.jpg" alt="CI" style="zoom:25%;" />
-
-<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/Polkascan.jpg" alt="Polkascan" style="zoom:25%;" />
-
-
+![card](https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/card.jpg)  ![send](https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/send.jpg)![MP_list](https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/MP_list.jpg)  ![CI](https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/CI.jpg)![Polkascan](https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/Mockups/Polkascan.jpg)
 
 #### Technology Stacks
 
@@ -74,16 +64,13 @@ The following information can help you better understand the Pocket4D project.
 #### Architecture
 
 Client Side
-
-<img src="https://github.com/Pocket4D/Pocket4D-Wiki/blob/master/assets/p4d_client_structure.001.jpeg?raw=true" alt="p4d_client_structure" style="zoom:25%;" />
+![p4d_client_structure](https://github.com/Pocket4D/Pocket4D-Wiki/blob/master/assets/p4d_client_structure.001.jpeg?raw=true)
 
 Tooling Side
-
-<img src="https://github.com/Pocket4D/Pocket4D-Wiki/blob/master/assets/p4d_tooling.001.jpeg?raw=true" alt="p4d_tooling" style="zoom:25%;" />
+![p4d_tooling](https://github.com/Pocket4D/Pocket4D-Wiki/blob/master/assets/p4d_tooling.001.jpeg?raw=true)
 
 Network Side
-
-<img src="https://github.com/Pocket4D/Pocket4D-Wiki/blob/master/assets/p4d_general_design.001.jpeg?raw=true" alt="p4d_general_design" style="zoom:25%;" />
+![p4d_general_design](https://github.com/Pocket4D/Pocket4D-Wiki/blob/master/assets/p4d_general_design.001.jpeg?raw=true)
 
 #### POC
 
@@ -95,9 +82,10 @@ Please follow the steps below:
 
 Or use your Android cellphone to scan this QR code below:
 
-<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/poc/qrcode.png" alt="qrcode" style="zoom:50%;" />
+![qrcode](https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/poc/qrcode.png)
 
-2. Tap the icon and you should see a screen like this:<img src="https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/poc/demo_settings.png" alt="demo_settings" style="zoom:50%;" />
+2. Tap the icon and you should see a screen like this:
+![demo_settings](https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/poc/demo_settings.png)
 
 3. Simply tap “Save Endpoint” then tap “To AppList”, 
 
