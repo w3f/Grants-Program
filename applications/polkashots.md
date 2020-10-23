@@ -77,7 +77,7 @@ We are a blockchain SaaS infrastructure company and this project is in line with
 
 Note: the cost will cover the initial development as well as the costs related to hosting the website and snapshots for some time.
 
-### Milestone 1 Example — Implement Substrate Modules 
+### Milestone 1
 * **Estimated Duration:** 1 month
 * **FTE:**  0.5
 * **Costs:** 1 BTC
