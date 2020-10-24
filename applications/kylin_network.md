@@ -76,6 +76,27 @@ The pallets that come with the Substrate 2.0 upgrade can offer Kylin Network the
 
 The Kylin team also will utilize the off-chain workers modular to incentivize users to provide verified out-of-blockchain data to the Kylin Marketplace and Kylin Analytics will provide any party with the tools to make sense of the data uploaded. The marketplace is built for data collection and data exchange. The analyzing toolkit will include raw data collector, data preparation, data editor/coding and quantitative data trend generator, with more future features to be developed.
 
+##### Pallet Design and Implements
+
+The main pallet will allow smart contract request off-chain data by Kylin oracle nodes. There has three main functions.
+
+- 1.requestOffChainDataByHttp
+smart contract request off-chain data by using http protocol, later oracle nodes will send data to kylin chain through OCW.
+params：http url
+return: dataId
+
+- 2.getOffChainData
+smart contract fetch expected data from oracle storage.
+params：dataId
+return：expected data
+
+- 3.getDefaultOffChainData
+smart contract fetch expected data that is loaded by default  from oracle storage, like BTC price.
+params：predefined dataId
+return: expected data
+
+![img](https://lh3.googleusercontent.com/ZnIzGzt2v9GNNkbZ0KTXu8RkBYhXBQvauoAFiPYIweUqZ0hPc9n5ydMVdiglMoSeL9T5AtobC6Sf1Jm9Za7hFJaZj7afpNqS1sJQlTpdmMPhLbCuLiJADdzLbKocR7XKzZAp-N3j_vBtnpdFLzlLx5Sg78EpsLvlhihDQZC932mofo7idyVwzImmeWmsPE_H9CZF4mOCWsW7VANth0kESB7dsxfwOQrCOi9maasMD5PNpkCMz_huhNOxCMeBaZhLhbSdlwJFn-couRFTBJ8ickWBgfuew9Q41PpahdztGW5SNqSu3K92dvGKnV9hLtdROHDkNjkC-8Pcv4JRyGX1zp2GWSuTzPvOu8u9pbxO44DIUqp0CGqGT-RonUn2e8DhfG545x9I-JxxLwd5oqtwHNinq0FKXEWaqJwhXR1HOD4d-YFp4qYXmNiBGZUwlMLLOWaoJm1ieOg59rYODDIYWKzAn418gDO1dQPCqnuJKZj_O9kN4N1V2JDbRdZja5qBn2HEgM8PmGkogx2qm66TIJrcBHv0itEnsNhhRdRXwEYTQ5N4KSs83GPx5t9p6WUEsuaPW-sbMmUC0TXlod6m1iVR2ONrWTuiVzwvOS_sElkzJen0UYFG3CJ8JYlZhfOHpiQl25R3Mgph-HSF-o5pdw27HEhCNjv_OmUnUsm4tvrUo0qD9NV8BRFKTNs=w2618-h1532-no?authuser=0)
+
 #### Data Marketplace
 
 The data marketplace is one of the trillion-dollar businesses around the world. The data marketplace will function as the next logical extension of Kylin Network's ability to warehouse validated real-world data to flow unobstructed with the kind of throughput necessary for comprehensive data feeding solutions. Validated data can be coordinated and managed such that the targeting of premium data feeds becomes possible. Specifications surrounding access to data via data feeders can be set up autonomously by the data provider in addition to cost of access in $KYL. Furthermore, capturing and coordinating all this data allows a one-stop place for DApp developers to inform and ease the process of building. Using the hosted server only as a caching layer, it's ensured that all info is on-chain, and only interacting directly with our parachain and IPFS. 
