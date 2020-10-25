@@ -120,8 +120,6 @@ The benefits of an open API are beyond criticism. We hope to build a framework w
 
 The SDK will be both an extension of the builders' capabilities and an extension of the value proposition of the Polkadot universe as a whole. If successful, this sort of solution brings more reliability and robustness to the entire network, as OCWs will be more than the external reference, they will become the enablers of a validated on-chain repository of trusted information for the entire Polkadot network. 
 
-Kylin Network may also apply Verifiable Random Function (VRF) and Threshold Cryptography to drive the secure, unpredictable and verifiable random group selection. Different oracle requests will be handled by randomly selected worker groups. Threshold cryptography will then be applied in the worker group to collectively generate a proof to demonstrate data integrity. Finally, the proof along with the data will be sent back together to the system contracts within one transaction for on-chain verification.
-
 #### Application Scenarios
 
 The application scenarios include but not limited to:
