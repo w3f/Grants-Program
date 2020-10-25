@@ -43,35 +43,13 @@ Flutter, Golang, JavaScript, Polkadot
 
 #### Architecture
 
-
 ![p4d_general_design](https://github.com/Pocket4D/Pocket4D-Wiki/blob/master/assets/p4d_general_design.001.jpeg?raw=true)
 
-#### POC
-
-This demo will require an Android cell-phone, and connect it to internet.
-
-Please follow the steps below:
-
-1. Click [[Here](https://pocket4d.s3-ap-southeast-1.amazonaws.com/poc0_demo/pocket4d_poc0_demo.apk) ] to download the apk, and install to your android cellphone.
-
-Or use your Android cellphone to scan this QR code below:
-
-![qrcode](https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/poc/qrcode.png)
-
-2. Tap the icon and you should see a screen like this:
-![demo_settings](https://github.com/Pocket4D/Open-Grants-Program/blob/master/src/img/poc/demo_settings.png)
-
-3. Simply tap “Save Endpoint” then tap “To AppList”, 
-
-4. Now you are navigated to another List Page like this:
-
-   See the item display as “python_book”, that’s the `Mini-Program` you are about to see. Tap it!
-
-5. Now after a loading, then you can see the mini-program called “python_book” fetched from server
-
-6. Now tap one of the list item, you can go to detail page of the book. Notice it is not optimized, that it may be laggy for now.
-
-
+#### Features
+1. Users can creating and backup wallet by Mnimonic.
+2. Users can send and receive cryptocurrencies.
+3. Support Polkadot and DOT.
+4. `Mini-Programs` : 'Coins Insider', which allow users to look up prices of cryptocurrencies.
 
 ### Ecosystem Fit 
 
@@ -98,7 +76,7 @@ Personal address will be provided via the invoice form.
 
 ### Team's experience
 
-* Michael So, founder of FireStack, Serial entrepreneur. Proficient in JavaScript, React Native, Flutter and other front-end programming languages. He devoted to blockchain for many years, leading token investment, wallet, blockchain game platform and other projects, and has accumulated rich experience in blockchain theories and practice.
+* Michael So, founder of FireStack, serial entrepreneur. Proficient in JavaScript, React Native, Flutter and other front-end programming languages. He devoted to blockchain for many years, leading token investment, wallet, blockchain game platform and other projects, and has accumulated rich experience in blockchain theories and practice.
 * Dao Zi, front-end architect, proficient in Flutter. As a leading member in Mobike, he led the team to develop the Mobike Applications and makes it easy and fast to add flutter to existing mobile applications.
 
 
