@@ -36,7 +36,7 @@ Besides, defeated by the data streams dilemma, which is the inability to funnel 
 #### Project Architecture
 To solve the above existing problems, we need a state-of-art solution to solve the above problems. The architecture of Kylin Network includes below four major components:
 
-* **Kylin Data Analytics** is a combination of analyzing tools designed for data warehouses. It extracts meaningful data findings, patterns, interpretation, and finally implements low-cost commercialization functionalities for the public. It also provides a query engine and restful API for third-party applications (Dapps, Networks, etc.) or external analytics tools (BI tools, Machine Learning, etc).
+* **Kylin Data Analytics** is a combination of analytic tools designed for data warehouses. It extracts meaningful data findings, patterns, interpretation, and finally implements low-cost commercialization functionalities for the public. It also provides a query engine and restful API for third-party applications (Dapps, Networks, etc.) or external analytics tools (BI tools, Machine Learning, etc).
 * **Kylin Data Oracle** is an advanced decentralized data feeding protocol powered by Polkadot offering multiple, real-time data sources with much lower cost. With complementarity to and synergy with off-chain workers (OCW) as one kind of Oracle Node implementations, it can better guarantee the security and accuracy of external data by verifying the data integrity and the validity that Oracle Node provided.
 * **Kylin Data Marketplace** is an open platform for data exchange and pricing. Dapps built on Polkadot can easily and efficiently collect both off-chain and on-chain data only paying a very competitive fee. Kylin seeks to extend the data provisional resources across all possible data types/sources including but not limited to things like social media posts, flight information, exchange rates, weather reporting, etc.
 * **Kylin Token $KYL** is the native token of Kylin Network which will play the role of governance and other utilities. $KYL is necessary to secure and power the decentralized data network.
@@ -119,8 +119,6 @@ Our ultimate goal is to provide an essential open API and SDK from a high-level 
 The benefits of an open API are beyond criticism. We hope to build a framework whereby a plethora of diverse, validated data can find expression, value, and explosive operationalization in the Polkadot ecosystem. 
 
 The SDK will be both an extension of the builders' capabilities and an extension of the value proposition of the Polkadot universe as a whole. If successful, this sort of solution brings more reliability and robustness to the entire network, as OCWs will be more than the external reference, they will become the enablers of a validated on-chain repository of trusted information for the entire Polkadot network. 
-
-![img](https://lh4.googleusercontent.com/NbBy4NtE9KvZTmBi8AJAhexpu8JG7zfkRo-1sDfyBawSu6PAgF5xCt3oyfRYkLpTmovlPGcjk2-DtcqMnluYmRL5HBYo1UNwQfwS1nAj2FXLDaUxKRoRYyXvtVfUNX4d0BAesSCK)
 
 Kylin Network may also apply Verifiable Random Function (VRF) and Threshold Cryptography to drive the secure, unpredictable and verifiable random group selection. Different oracle requests will be handled by randomly selected worker groups. Threshold cryptography will then be applied in the worker group to collectively generate a proof to demonstrate data integrity. Finally, the proof along with the data will be sent back together to the system contracts within one transaction for on-chain verification.
 
