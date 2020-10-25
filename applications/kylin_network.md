@@ -95,7 +95,7 @@ The main pallet will allow smart contract request off-chain data by Kylin oracle
   - `params:` predefined dataId
   - `return:` expected data
 
-![img](https://lh3.googleusercontent.com/TATXWrksmDrXZR1yqh2qMhj_KIQZqkCZZki5_wISBQkuYNd44UqQ-hPX2aUtxteOVa2kaU3SlNi0zBuret25Bw9u00UOr4bpP3brkQ)
+![img](https://user-images.githubusercontent.com/12880651/97111329-32de9000-1719-11eb-9e62-3a512558ffe4.png)
 
 #### Data Marketplace
 
