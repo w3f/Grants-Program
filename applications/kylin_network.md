@@ -10,7 +10,7 @@
 
 #### Introduction
 
-**Kylin Network aims to Build a Cross-chain Platform Empowering the Data Economy on Polkadot.** It will be the Data Infrastructure for DeFi and Web 3.0 Powered by Polkadot. The Open API and SDK of Kylin Network offers any applications and blockchains (such as parachains and parathreads) instantaneous but transparent, reliable and valid on/off-chain market data and social data sources by leveraging the power of Polkadot/Substrate Framework on open networks. 
+**Kylin Network aims to Build a Cross-chain Platform Powering the Data Economy on Polkadot.** It will be the Data Infrastructure for DeFi and Web 3.0 Powered by Polkadot. The Open API and SDK of Kylin Network offers any applications and blockchains (such as parachains and parathreads) instantaneous but transparent, reliable and valid on/off-chain market data and social data sources by leveraging the power of Polkadot/Substrate Framework on open networks. 
 
 Kylin Network represents extensibility and a synergetic increase to the off-chain workers capability as it will provide not only access, management, insights, coordination to a greater array of data sources, but bolster validity and decentralization of the data sources themselves. We believe that it is only via Polkadot/Substrate Framework that we can ensure a cost effective solution that data consumers and Dapp Builders will actually use over centralized sources. Kylin Network, therefore, hopes to achieve complementarity and synergy with Substrate Framework while providing valid, reliable, secure, cost effective and easily-coordinated data sourcing and data analytics.
 
@@ -29,7 +29,7 @@ Besides, defeated by the data streams dilemma, which is the inability to funnel 
 
 #### Existing Problem and Our Solution
 1. **Accessible data querying and data analytics services are needed:** DeFi is the most successful application in blockchain, but we don’t want this to be the only one because of the lack of valid external data on open networks. In a mature web 3.0 world, the number of data sources will be diverse and many, and will not be limited to price feeds alone Indeed, proper middleware will also have as its focus things such as stock price, twitter feeds, real-time election results. The need for an array of validated data resources has never been higher.
-2. **Traditional oracles incur high costs and difficulties in feeding off-chain data:** Due to the previous lack of [off-chain workers](https://www.parity.io/substrate-2-0-is-here/) (OCW), many off-chain data cannot efficiently get access to the blockchain or the data feeding process is not cost effective via existing oracles. [ Substrate 2.0 framework](https://www.parity.io/substrate/) provides OCWs as a default solution to integrate real-world data safely and securely onto the blockchain without the need to get opt-in by each validator. There is an exigent need to coordinate and validate data sourcing and also make more efficient the process of requesting via OCW functionalities. Our work would extend both.
+2. **Legacy oracles incur high costs and difficulties in feeding off-chain data:** Due to the previous lack of [off-chain workers](https://www.parity.io/substrate-2-0-is-here/) (OCW), many off-chain data cannot efficiently get access to the blockchain or the data feeding process is not cost effective via existing oracles. [ Substrate 2.0 framework](https://www.parity.io/substrate/) provides OCWs as a default solution to integrate real-world data safely and securely onto the blockchain without the need to get opt-in by each validator. There is an exigent need to coordinate and validate data sourcing and also make more efficient the process of requesting via OCW functionalities. Our work would extend both.
 3. **Substrate offers a better framework and developing toolkit:** While OCWs are excellent at performing the basic functions of oracle nodes, etc., they do rely on a manual request (low-level TCP API request not available in WASM). Kylin Network would also provide the means to integrate into OCW functionalities and (Dapp builders’ capabilities) what would be essentially tantamount to a single, easy-to-use request library (no need to make some sort of wrapper in WASM).
 4. **The interoperability and scalability of Polkadot exceeds that of Ethereum:** In terms of our choice of Polkadot, there are many weaknesses of Ethereum, especially high transaction costs, and low scalability. Thus, an implementation based on the Polkadot network and its cross-chain interoperability is a better solution for the blockchain ecosystem.
 
@@ -37,7 +37,7 @@ Besides, defeated by the data streams dilemma, which is the inability to funnel 
 To solve the above existing problems, we need a state-of-art solution to solve the above problems. The architecture of Kylin Network includes below four major components:
 
 * **Kylin Data Analytics** is a combination of analyzing tools designed for data warehouses. It extracts meaningful data findings, patterns, interpretation, and finally implements low-cost commercialization functionalities for the public. It also provides a query engine and restful API for third-party applications (Dapps, Networks, etc.) or external analytics tools (BI tools, Machine Learning, etc).
-* **Kylin Data Oracle** is an advanced decentralized data feeding protocol powered by Polkadot offering multiple, real-time data sources with much lower cost. In addition to the complementarity and synergy to off-chain workers (OCW) as one kind of Oracle Node implementations, it can better guarantee the security and accuracy of external data by verifying the data integrity and the validity that Oracle Node provided.
+* **Kylin Data Oracle** is an advanced decentralized data feeding protocol powered by Polkadot offering multiple, real-time data sources with much lower cost. With complementarity to and synergy with off-chain workers (OCW) as one kind of Oracle Node implementations, it can better guarantee the security and accuracy of external data by verifying the data integrity and the validity that Oracle Node provided.
 * **Kylin Data Marketplace** is an open platform for data exchange and pricing. Dapps built on Polkadot can easily and efficiently collect both off-chain and on-chain data only paying a very competitive fee. Kylin seeks to extend the data provisional resources across all possible data types/sources including but not limited to things like social media posts, flight information, exchange rates, weather reporting, etc.
 * **Kylin Token $KYL** is the native token of Kylin Network which will play the role of governance and other utilities. $KYL is necessary to secure and power the decentralized data network.
   ![img](https://lh3.googleusercontent.com/z_UW4JV9m3F-pjLNpW5FsdicgaIEvJIl9PuJ6QNG9ET9_1LHJI2Lq8Ycr3zzeLrwhrGdtznVQsKlbl8jWFhuZzxG8NL7o1vaUaBl2oRKMRaOItQmYQCndjg_4TQxXYIQburzWdDq)
@@ -99,7 +99,7 @@ The main pallet will allow smart contract request off-chain data by Kylin oracle
 
 #### Data Marketplace
 
-The data marketplace is one of the trillion-dollar businesses around the world. The data marketplace will function as the next logical extension of Kylin Network's ability to warehouse validated real-world data to flow unobstructed with the kind of throughput necessary for comprehensive data feeding solutions. Validated data can be coordinated and managed such that the targeting of premium data feeds becomes possible. Specifications surrounding access to data via data feeders can be set up autonomously by the data provider in addition to cost of access in $KYL. Furthermore, capturing and coordinating all this data allows a one-stop place for DApp developers to inform and ease the process of building. Using the hosted server only as a caching layer, it's ensured that all info is on-chain, and only interacting directly with our parachain and IPFS. 
+The data marketplace is one of the trillion-dollar businesses around the world. The data marketplace will function as the next logical extension of Kylin Network's ability to warehouse validated real-world data to flow unobstructed with the kind of throughput necessary for comprehensive data feeding solutions. Validated data can be coordinated and managed such that the targeting of premium data feeds becomes possible. Specifications surrounding access to data via data feeders can be set up autonomously by the data provider in addition to cost of access in $KYL. Furthermore, capturing and coordinating all this data allows a one-stop shop for any developer to inform and ease the process of building. Using the hosted server only as a caching layer, it's ensured that all info is on-chain, and only interacting directly with our parachain and IPFS. 
 
 The process flow for a data feeder would go as follows: register and connect and then publish specifications and offers for their feed (this will include things like API request 'library', pertinent addresses, reward/payment scheme, like subscription or pay-per-use). To reduce friction further, an SDK will be enabled for premium data feeders. 
 
@@ -114,19 +114,12 @@ Besides, user contracts calling for a specific category of off-chain premium dat
 
 #### Open API and SDK
 
-Our ultimate goal is to provide essential open API and SDK from a high-level perspective with the above tools and fully empower the data economy on Polkadot. The functionality can be utilized via Open API and SDK. This will be released to combine the above components. 
+Our ultimate goal is to provide an essential open API and SDK from a high-level perspective with the above tools, fully powering the data economy on Polkadot. The functionality can be utilized via Open API and SDK. This will be released to combine the above components. 
 
 The benefits of an open API are beyond criticism. We hope to build a framework whereby a plethora of diverse, validated data can find expression, value, and explosive operationalization in the Polkadot ecosystem. 
 
 The SDK will be both an extension of the builders' capabilities and an extension of the value proposition of the Polkadot universe as a whole. If successful, this sort of solution brings more reliability and robustness to the entire network, as OCWs will be more than the external reference, they will become the enablers of a validated on-chain repository of trusted information for the entire Polkadot network. 
 
-#### Privacy and Security
-
-As Kylin Network will provide real-world data to on-chain transactions, security will be placed as a top priority since cyber security issues are quickly becoming a regular occurrence and exposing confidential business information. 
-
-We will employ a novel approach to user identity management in blockchain services. We implement identity-based end-to-end security which extends from the blockchain client to the blockchain fabric. This approach allows for nodes-based network segmentation and traffic separation, which enables multiple entities to securely share the same blockchain infrastructure, reduces the risk of DDoS attacks, and enables automated regulatory compliance audits. The solution is based on Kylin Transport Access Control (KTAC) technologies, implemented using software application library endpoints. This approach can easily be generalized to protect many different types of commercial applications. KTAC features include permission control, confidentiality, un-linkable identity privacy for blockchain participants, a modular and easily auditable consensus protocol, and improved scalability. KTAC extends the blockchain in several important ways.
-
-We will employ the Kylin Real-time Transport Protocol (KRTP), a profile of the Real-time Transport Protocol (RTP), which provides confidentiality, message and data authentication, and replay protection to the RTP traffic and to the control traffic for RTP, the Real-time Transport Control Protocol (RTCP). KRTP provides a framework for encryption and data authentication of RTP and RTCP streams. KRTP defines a set of cryptographic transforms, and it allows new transforms to be introduced in the future. With appropriate key management, KRTP is secure for unicast and multicast RTP applications.
 ![img](https://lh4.googleusercontent.com/NbBy4NtE9KvZTmBi8AJAhexpu8JG7zfkRo-1sDfyBawSu6PAgF5xCt3oyfRYkLpTmovlPGcjk2-DtcqMnluYmRL5HBYo1UNwQfwS1nAj2FXLDaUxKRoRYyXvtVfUNX4d0BAesSCK)
 
 Kylin Network may also apply Verifiable Random Function (VRF) and Threshold Cryptography to drive the secure, unpredictable and verifiable random group selection. Different oracle requests will be handled by randomly selected worker groups. Threshold cryptography will then be applied in the worker group to collectively generate a proof to demonstrate data integrity. Finally, the proof along with the data will be sent back together to the system contracts within one transaction for on-chain verification.
@@ -150,10 +143,8 @@ In terms of the system architecture of Kylin Network, the purpose of this grant 
 
 There are some existing projects which can support and work with the Kylin Network.
 
-* [Ocean Protocol](https://oceanprotocol.com/): Ocean Protocol helps developers build marketplaces and other apps to privately & securely publish, exchange, and consume data. 
 * [Plasm](https://www.plasmnet.io/): Plasm Network is a scaling dApps platform on Substrate.
 * [Moonbeam](https://moonbeam.network/): Moonbeam is a new Polkadot smart contract platform that makes it easy to build natively interoperable blockchain applications.
-* [Thegraph](https://thegraph.com/): Thegraph can help make querying data fast, reliable, and secure.
 
 
 
@@ -276,7 +267,7 @@ Kylin's future community engagement strategies include:
 * In phase 1, our goal is to achieve all the basic functions of current data feeding and verification solutions, in addition we will begin to build our array of non-traditional data sourcing options for dapp builders to utilize and the functionality of a one-stop shop for data sourcing needs without manually calling each http.
 * In phase 2, our goal is a mature data marketplace where Dapp builders and users can easily and effectively coordinate and manage their data needs for a very competitive fee.
 * In phase 3, as the maturity, stability and reach of the data marketplace begins to create opportunities for analytics, we will engineer analytics tools to extract meaningful data findings, patterns, interpretations, while implementing low-cost commercialization functionalities for the public.
-* Finally, our goal is to provide essential open API and SDK from a high-level perspective with the above tools and fully empower the data economy on Polkadot.
+* Finally, our goal is to provide an essential open API and SDK from a high-level perspective with the above tools, fully powering the data economy on Polkadot.
 
 ## Additional Information :heavy_plus_sign:
 
