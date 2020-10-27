@@ -104,12 +104,12 @@ Saito's founders have both worked leading development and broader IT teams in Ch
 ### Overview
 * **Total Estimated Duration:** 8 Weeks
 * **Full-time equivalent (FTE):**  1.5 FTE 
-* **Total Costs:** 2.2 BTC
+* **Total Costs:** 1.8 BTC
 
 ### Milestone 1 — Saito Polkadot API Module 
 * **Estimated Duration:** 3 Weeks
 * **FTE:**  1.5
-* **Costs:** 1.1 BTC
+* **Costs:** 0.9 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -134,7 +134,7 @@ Three weeks should be adequate for building and documenting this module, as well
 ### Milestone 2 — Asset Transfers in Gaming Protocol
 * **Estimated Duration:** 3 Weeks
 * **FTE:**  1.5
-* **Costs:** 1.1 BTC
+* **Costs:** 0.9 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
