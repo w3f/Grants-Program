@@ -32,9 +32,13 @@ There will be 2 kind of generated snapshots: RocksDB and Parity DB, until RocksD
 
 We will also deploy and maintain https://polkashots.io, a website hosted on Cloud Infrastructure which will make snapshots available for free for community members.
 
-The snapshots will be regularly updated (once per day or more).
+The snapshot generation frequency will be configurable. 24 hours frequency seems reasonable. Nodes typically sync very fast from a 24 hour lag.
+
+Snapshots will be stored on a public Google cloud storage bucket. We will be providing Polkadot and Kusama snapshots.
 
 The snapshots will be clearly identified by block height and block hash. Hyperlinks will be provided to the main indexing websites (Polkascan, Polkastats) so the user can verify that the snapshot they are downloading is indeed the legitimate Polkadot chain.
+
+Additionally, the snapshots will be hashed and a signature will be published on the polkashots.io website.
 
 There will be static links (such as https://polkashots.io/dot/rocksdb) that always point to a recent snapshot, which should simplify setup of an automated recovery mechanism.
 
@@ -86,15 +90,58 @@ Note: the cost will cover the initial development as well as the costs related t
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | The code will be easy to deploy, taking only a few utilities and one single command. The entire cycle - from spinup to teardown - will be clearly explained in the README
-| 1. | Terraform | A Terraform manifest to deploy all cloud resources in a simple way |
+| 0c. | Tutorial | We will be posting a follow-up on [our post about deploying a Polkadot validator on Kubernetes](https://medium.com/better-programming/a-polkadot-validator-on-kubernetes-3e694cb43841) to explain how to use snapshots to deploy a validator. |
+| 1. | Terraform | A Terraform manifest to deploy all cloud resources in a simple way.|
 | 2. | Docker | A set of Docker container descriptions (Dockerfiles and scripts) that are used to manage the snapshot website |
 | 3. | Kubernetes | A Kubernetes manifest, built with Kustomize, to deploy the containers and cronjobs for snapshot creation |
 | 4. | Testing | While infrastructure code is not a natural candidate for testing due to its heavy reliance on external components, we will be providing a script to parse terraform, dockerfile and kubernetes codebase and check for consistency |
+| 5. | Live website | Deploy polkashots.io with recently updated snapshots |
 
+The open-source project will have three directories, `terraform`, `k8s` and `docker`. Their contents are described below.
+
+##### Terraform
+
+The terraform module takes parameters such as `chain_name`, `billing_account`... as input, and uses the [Terraform GCP provider](https://www.terraform.io/docs/providers/google/index.html). It creates a Google Cloud Project and a Kubernetes cluster.
+
+Inside the cluster, it deploys a configurable number of Kubernetes namespaces as described below.
+
+It also configures [Google Cloud Build](https://cloud.google.com/cloud-build) to automatically build the containers needed to run the snapshotting jobs, and push them to the cluster.
+
+The entire setup can be destroyed with `terraform destroy`.
+
+##### Kubernetes
+
+A Kubernetes Deployment runs a Polkadot or Kusama node in a Pod with a Persistent Volume for storage.
+
+This node can optionally be brought up from a snapshot itself (in case the snapshot engine itself needs to be recreated).
+
+It is not possible to do `export-chain` on a running node, therefore it is necessary to leverage some cloud filesystem snapshotting capabilities.
+
+A Kubernetes Cron Job triggers a pod with special privileges that in turns triggers the following Kubernetes actions:
+
+* take a [Persistent Volume Snapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) of the Polkadot node storage
+* create a persistent volume from the snapshot
+* triggers a Kubernetes job called "snapshotter" which:
+  * mounts the persistent volume created from snapshot
+  * runs the `export-chain` command against it
+  * compresses, hashes the snapshot, then uploads it to a bucket
+  * builds a Jekyll static website from source and pushes it to Firebase, with relevant metadata of the generated snapshot
+* tears down all objects created above
+
+#### Docker
+
+A series of custom-build containers built for performing the actions described in the previous section, namely:
+
+* snapshot-importer: imports a snapshot when initially kicking off the setup
+* snapshot-engine: the job that sends kubernetes control plane commands to generate a filesystem-level snapshot
+* snapshotter: the job that performs `export-chain` and pushes it to a bucket
+* website-builder: the job that builds the Jekyll static site
+
+The Dockerfiles and associated scripts to build the containers listed above will be shipped as part of the project.
 
 ### Community engagement
 
-We will be announcing the website and the project on Medium. We will be posting a follow-up on [our post about deploying a Polkadot validator on Kubernetes](https://medium.com/better-programming/a-polkadot-validator-on-kubernetes-3e694cb43841) to explain how to use snapshots to deploy a validator.
+We will be announcing the website and the project on Medium.
 
 ## Future Plans
 We may be extending offers to various Substrate chains to have their snapshots hosted on our platform.
