@@ -14,6 +14,8 @@ It is a decentralized oracle network that consists of oracle pallet for parachai
 
 **Ares** consists of parachain plug-in, validator, aggregator, reputation council, proof of fraud. If parachain use our services, it needs to integrate our oracle pallet, The result of the request passed to the caller through a callback. We scan the parachain events caller about the pallet in our chain, use rpc or websocket request via off-chain worker, Aggregators randomly selected through VRF, which aggregates data from multiple sources. and submitted data to the parachain via extrinsic. Aggregators packing parachain extrinsic and receipts  in ares chain via off-chain worker. 
 
+![img](https://img-blog.csdnimg.cn/20201028161921646.jpg)
+
 Aggregator needs to pledge certain assets, Every time the aggregator submits a correct data, its reputation value will grow. The reputation value and pledge will be weighted, from which we choose the members of council. council can only approve and reject proof of fraud submitted by validator. 
 Default is to approve, the council does not need to work on every block, only needs to deal with disputes when validator fraud proof arise. Validator nodes can verify, if validator found the data is incorrect, submit proof of fraud to council. if council check up, ther it will reward validator and slash aggregator, its reputation will be degraded.
 
@@ -54,6 +56,10 @@ We implemented the POW + DPOS consensus integrated with ethereum, used tendermin
 ### Team Code Repos
 * https://github.com/aresprotocols/ares
 
+### Team Website
+
+* https://www.aresprotocol.com/
+
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
@@ -76,6 +82,7 @@ In this milestone, We will implement ares oracle proof-of-concept, A oracle pall
 | 4. | Testing | This milestone will have unit-test for pallet impemented, simulated all functions. |
 | 5. | example for demonstration | Provide  parachain oracle pallet integrate example, It use golang implement scanner and provider, may use go-substrate-api, And aggregator,validator,council implement as substrate pallet, written in Rust as substrate customized module|
 | 6. | Documentation | We will provide parachain integrate oracle pallet documentation and  basic code example that show how developers use the pallet  |
+
 ### Milestone 2  — Implement ares chain
 * **Estimated Duration:** 4 weeks
 * **FTE:**  2
