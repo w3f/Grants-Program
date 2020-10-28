@@ -1,6 +1,8 @@
-# General Grant Proposal
+# Open Grant Proposal
 
 * **Project:** Bit.Country by MVP.STUDIO
+* **Proposer:** https://github.com/bit-country
+* **Payment Address:** 12uaicGQziqP41nmpdWTMkorWijN3eAq8J
 
 ## Project Overview :page_facing_up: 
 
@@ -250,12 +252,13 @@ We plan to build a full-fledged solution that is ready to bring 1400 internal us
 We believe Bit.Country will bring many people to the ecosystem.
 
 ### Overview
-* **Total Estimated Duration:** 3 months
+* **Total Estimated Duration:** 1 month
 * **Full-time equivalent (FTE):**  5 FTE.
 
 ### Milestone 1  — Create Country Fundamentals & Infrastructure to Onboard Classic Internet Users
 * **Estimated Duration:** 4 weeks
 * **FTE:**  5
+* **Costs:**  2 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
