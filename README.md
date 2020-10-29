@@ -47,7 +47,7 @@ request such a review.
 
 * [Aeron Buchanan](https://github.com/aeronbuchanan)
 * [Marcin Górny](https://github.com/mmagician)
-* [Fredrik Harrysson](https://github.com/folsen)
+* [Robert Hambrock](https://github.com/Lederstrumpf)
 * [David Hawig](https://github.com/Noc2)
 * [Kasper Mai Jørgensen](https://github.com/KasperJor)
 * [Bill Laboon](https://github.com/laboon)
