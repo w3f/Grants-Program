@@ -36,6 +36,7 @@ MAP labs
 * **FTE:**  3
 * **Costs:** 1 BTC
 In this milestone, we will build Substrate-based MMR for MAP bridge and also provide the MMR proof generating and verifying method in runtime module . This is a preliminary for ULVP module which can verify the validity of tail block of a certain blockchain carry heaviest proof of work.  Furthermore, we will implement  the block header storage functionality. This would make the blockchain  could  manage the MMR（such as appending new blocks into blockchain and retrieving the MMR based on the MMR root  in a certain block header, etc. ）. We will provide proper unit-test for this milestone.
+
 | Number | Deliverable                          | Specification                                                |
 | ------ | ------------------------------------ | ------------------------------------------------------------ |
 | 0a. | License | Apache 2.0 |
@@ -46,11 +47,13 @@ In this milestone, we will build Substrate-based MMR for MAP bridge and also pro
 | 4.    |   RetrieveMMR | Retrieve the MMR based on the root provide.   Method signature: Public *MMR RetrieveMMR(Hash root)      |
 | 5.    |   GenerateProof  | Generate the merkle branch proof in MMR. Method signature: Public *Proof GenerateProof(*MMR mmr, Leafnode leaf)      |
 | 6.    |   VerifyProofByRoot  |   Verify if the proof is consistent with root. Method signature: Public bool VerifyBlockByRoot(Hash root, *Proof proof)      |
+
 ### Milestone 2 Integrate ULVP module into substrate
 * **Estimated Duration:** 1 month
 * **FTE:**  3
 * **Costs:** $1BTC
 In this milestone, we will further implement the ULVP module and some add-on module. This would involving generating and verifying succinct proof,  specifying the cross-chain transaction, implementing the cross-chain transaction pool, building P2P network based on libp2p. Once this milestone is accomplished, the whole feature of ULVP module is complete and could be used to verify inner state of certain account or transaction inclusion proof for other blockchain. We will include proper test and documentation for this milestone
+
 | Number | Deliverable                       | Specification                                                 |
 | ------ | --------------------------------- | ------------------------------------------------------------ |
 | 0a. | License | Apache 2.0 |
