@@ -14,7 +14,7 @@ It is a decentralized oracle network that consists of oracle pallet for parachai
 
 **Ares** consists of parachain plug-in, validator, aggregator, reputation council, proof of fraud. If parachain use our services, it needs to integrate our oracle pallet, The result of the request passed to the caller through a callback. We scan the parachain events caller about the pallet in our chain, use rpc or websocket request via off-chain worker, Aggregators randomly selected through VRF, which aggregates data from multiple sources. and submitted data to the parachain via extrinsic. Aggregators packing parachain extrinsic and receipts  in ares chain via off-chain worker. 
 
-![img](https://img-blog.csdnimg.cn/20201028161921646.jpg)
+![img](https://img-blog.csdnimg.cn/2020103111230144.jpg)
 
 Aggregator needs to pledge certain assets, Every time the aggregator submits a correct data, its reputation value will grow. The reputation value and pledge will be weighted, from which we choose the members of council. council can only approve and reject proof of fraud submitted by validator. 
 Default is to approve, the council does not need to work on every block, only needs to deal with disputes when validator fraud proof arise. Validator nodes can verify, if validator found the data is incorrect, submit proof of fraud to council. if council check up, ther it will reward validator and slash aggregator, its reputation will be degraded.
@@ -63,9 +63,9 @@ We implemented the POW + DPOS consensus integrated with ethereum, used tendermin
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-* **Total Estimated Duration:** 11 weeks
+* **Total Estimated Duration:** 3 weeks
 * **Full-time equivalent (FTE):**  3
-* **Total Costs:** 2.2 btc
+* **Total Costs:** 0.5 btc
 
 ### Milestone 1  — Implement ares low pallet
 * **Estimated Duration:** 3 weeks
@@ -80,42 +80,9 @@ In this milestone, We will implement ares oracle proof-of-concept, A oracle pall
 | 2. | scanner | scanner parachain oracle request via block metadata, parse the specific request data |
 | 3. | provider | data warehouse returns the correct request data use http request | 
 | 4. | Testing | This milestone will have unit-test for pallet impemented, simulated all functions. |
-| 5. | example for demonstration | Provide  parachain oracle pallet integrate example, It use golang implement scanner and provider, may use go-substrate-api, And aggregator,validator,council implement as substrate pallet, written in Rust as substrate customized module|
+| 5. | example for demonstration | Provide  parachain oracle pallet integrate example, It use golang implement scanner and provider, may use go-substrate-api|
 | 6. | Documentation | We will provide parachain integrate oracle pallet documentation and  basic code example that show how developers use the pallet  |
 
-### Milestone 2  — Implement ares chain
-* **Estimated Duration:** 4 weeks
-* **FTE:**  2
-* **Costs:** 0.9 btc
-
-In this milestone, We will use scanner scan parachain block metadata, obtain external data, two pallets are provided, contain validator, aggregator, Implement pallets in a centralized manner.
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Testing | This milestone will have unit-test for all the following pallet impemented. We will mock most of the pallet to simulate host functions. Integration test will be delivered in next milestone. |
-| 2. | Documentation | We will provide all module documentation  |
-| 3. | scanner | scanner parachain aggregator extrinsic, record extrinsic and receipt results |
-| 4. | provider | data warehouse returns the mean of multiple time points, contain all the data of the outside world. it will be used by aggregator,council,validator to validate the data | 
-| 5. | aggregator | Commit the data to a parachain and put extrinsic receipt results to this chain |
-| 6. | validator | validator validate aggregator block  |
-| 7. | example for demonstration | Provide ares substrate nodes and golang implementation scanner and provider|
-
-### Milestone 2  — Implement ares slash
-* **Estimated Duration:** 4 weeks
-* **FTE:**  2
-* **Costs:** 0.8 btc
-
-In this milestone, We will  
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Testing | This milestone will have unit-test for all the following pallet impemented. We will mock most of the pallet to simulate host functions. Integration test will be delivered in next milestone. |
-| 2. | Documentation | We will provide description of fraud documentation and council how to verify |
-| 3. | provider | it will be used by aggregator,council,validator to validate the data | 
-| 4. | validator | validator validate aggregator block and submit fraud proof  |
-| 5. | council | judge which has the correct data use libp2p send vote network message, may use imOnline code|
-| 6. | Proof of fraud | record block extrinsic contrain incorrect oracle data, and give correct data |
-| 7. | example for demonstration | Provide council deal proof of fraud example|
 
 ## Future Plans
 
