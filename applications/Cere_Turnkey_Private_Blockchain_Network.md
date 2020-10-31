@@ -27,8 +27,8 @@ Below we have the overview of all the key features that Turn-key Private Standal
 │   │    ├──Derivative Assets
 │   └── Off-chain Worker
 ├── Cere Runtime Module
-├── Substrate API Interface
-└── Container Script
+├── Packaging & Deployment Scripts
+└── Tests & Tools
 ```
 
 There will be three primary directories in this repository:   
@@ -55,21 +55,22 @@ TODO
 
 ### Milestone 1
 
-* **Estimated Duration:** 4 weeks 
+* **Estimated Duration:** 5 weeks 
 * **Costs:** 1 BTC
 * **Main Goal:** Basic functionality: Private node, Smart Contract implementation and setup guide.
 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Documentation | We will provide README files inside repositories with instructions of how to build, run and use our services. |  
+| 1. | Documentation and basic tests | We will provide README files inside repositories with instructions of how to build, deploy and test our services. |  
 | 2.  | Smart Contract | This deliverable includes the creation of Smart Contract for Custom Derivative Assets. | 
-| 3.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone. | 
-| 4.  | Testing | Repository including a README that describes the milestone and explains how to run, test and contribute. | 
+| 3.  | Deployment packaging | At minimum the docker container or even the entire scripts that packages the container with the latest code from Substrate will also run on CI to test the deliverables of the milestone. |
+| 4.  | Fee-less Transactions | We will add support for value transfers between app/user accounts without worrying about fees 
+| 5.  | Testing | Repositories including the deployment and test sections for instructions and scripts to help contributors to package, deploy, run, test. | 
 
 ### Milestone 2
 
-* **Estimated Duration:** 4 weeks 
+* **Estimated Duration:** 5 weeks 
 * **Costs:** 1 BTC
 * **Main Goal:** Integration/load testing, and tools support, optional objectives
 
@@ -77,12 +78,11 @@ TODO
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 1.  | Integration support with DDC| We will provide steps and add support for integration with Cere Decentralized Data Cloud (DDC) |  
-| 2.  | Data Transactions | We will add support for custom Data transactions between user accounts. | 
-| 3.  | Feeless | We will begin work on and add support for feeless transactions and performance. | 
-
+| 2.  | Data Transactions | We will add support for data transactions between user and app accounts on chain, which will be feeless and works with DDC. | 
+| 3.  | (optional) x-network transfers | Using Cere or any other L1 Polkadot/Substrate chain to perform x-network asset transfers for any assets to be converted to e.g. an ERC20 (or DOT-equiv) asset. This is highly dependent on another project on Cere Network, thus listed optional for now. |
+| 4.  | (optional) Batch processing | Allowing an app to optimize for creating asset transfers or data events to a batch of users at once, this would be a very nice to have from our practical experience. | 
 
 ## Additional Information :heavy_plus_sign: 
 
-* We're currently implementing a Substrate-based chain with Smart Contract support.
-* We're also working on Cere Decentralized Data Cloud DDC and planning for a seamless integration for the open source community.
+* We're also working on [Cere Decentralized Data Cloud (DDC)](https://github.com/Cerebellum-Network/General-Grants-Program/blob/master/grants/speculative/Cere%20Decentralized%20Data%20Cloud.md) and planning for a seamless integration for the open source community.
  
