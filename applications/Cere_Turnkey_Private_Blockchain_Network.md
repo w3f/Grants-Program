@@ -1,24 +1,23 @@
 # Open Grant Proposal
 
-* **Project:** Turnkey Private Standalone Blockchain Network
+* **Project:** Turn-key Private Standalone Blockchain Network
 * **Proposer:** [Cere-Network](https://github.com/Cerebellum-Network)
-* **Payment Address:** 18YjvEJq7PBvBvSRzxcV8UWAt6eUUx11eT 
+* **Payment Address:** TBD 
 
 ## Project Description :page_facing_up:   
 
-Cere Network is providing a Turnkey Private Standalone Blockchain Network for any enterprise, which can be easily plugged into any Polkadot/Substrate based Layer 1 chain, as a secondary chain. As a Substrate based Private Blockchain, the Turnkey Private Standalone Blockchain Network will ensure a higher level of security, privacy, and performance, allow own set of custom chain specifications that can be tuned based on enterprise needs and with features like fast tuning, pre-configured for feeless transactions, support a set of Smart Contracts which can distribute any derivative asset. The creation of custom derivative assets will automate the transfer to/from user wallets to application wallets by any/app brand, assets can be used as micropayments, loyalty points, discount vouchers, etc.   
+Cere Network is providing a Turn-key Private/Permissioned Standalone Blockchain Network which can  be readily integrated by any enterprise, additionally this network can be easily plugged into any Polkadot/Substrate based Layer 1 network to serve as a secondary chain. As a Substrate based Private Blockchain, this turn-key network intends to abstract the implementation complexity for businesses, as well as proving a ready-made package to  optimize for a higher level of security, privacy, and performance, and to serve as a template or base-implementation of a highly customizable and performant enterprise specific blockchain network.  Furthermore, any network build from or derived from this project will also be able to use derivative assets to represent in-app value transfers on-chain (e.g. micropayments, discount vouchers, loyalty points, etc), as well as being able to seamlessly integrate with Cere Decentralized Data Cloud ([link] another substrate grant project)   
 
-Below we have the overview of all the key features that Turnkey Private Standalone Blockchain Network will support:   
+Below we have the overview of all the key features that Turn-key Private Standalone Blockchain Network will support:   
 
-* Secure Staking / User-onboarding by Application or any Business.
-* Support One or more Derivative assets.
-* A pluggable layer two solution, that can be plugged into any Substrate/Polkadot chain, compatibility with all Substrate/Polkadot networks to rollup assets (as a Layer 2) or facilitate x-network transfers.
+* A set of turn-key substrate based packaging and tools that simplifies the customization, configuration, testing, and deployment of such a blockchain network.
+* Pre-built solutions to create/assign/transfer Derivative assets in business to consumer use cases.
+* A pluggable layer two solution, that can be plugged into any Substrate/Polkadot chain, compatibility with all Substrate/Polkadot networks to rollup assets (as a Layer 2 and optionally( facilitate x-network transfers).
 * Store and exchange custom data with other Private Blockchain Networks.
-* Work in conjunction with Cere Decentralized Data Cloud solution to store, share, analyze and predict.
+* Work in conjunction with Cere Decentralized Data Cloud solution to store, encrypt, and extract tamper-proof data alongside onchain transactions for consumer businesses.
 * Pre-configured and optimized for feeless transactions and performance.
 * Creation of custom derivative assets and automate the transfer to/from user wallets to app wallets by any/app brand:
-* Assets to be used as micropayments, loyalty points, discount vouchers, etc.
-* Optimization of batch user onboarding and transaction processing.
+* Optimization of batch user onboarding and transaction processing for higher throughput situations needed for consumer apps/sites.
 
 ### Repository Hierarchy:
 ```bash
@@ -26,7 +25,6 @@ Below we have the overview of all the key features that Turnkey Private Standalo
 ├── Cere Pallet
 │   │── Smart Contract
 │   │    ├──Derivative Assets
-│   │    ├──Atomic Swap
 │   └── Off-chain Worker
 ├── Cere Runtime Module
 ├── Substrate API Interface
@@ -59,6 +57,7 @@ TODO
 
 * **Estimated Duration:** 4 weeks 
 * **Costs:** 1 BTC
+* **Main Goal:** Basic functionality: Private node, Smart Contract implementation and setup guide.
 
 
 | Number | Deliverable | Specification | 
@@ -72,6 +71,7 @@ TODO
 
 * **Estimated Duration:** 4 weeks 
 * **Costs:** 1 BTC
+* **Main Goal:** Integration/load testing, and tools support, optional objectives
 
 
 | Number | Deliverable | Specification | 
