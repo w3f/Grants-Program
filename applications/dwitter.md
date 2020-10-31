@@ -139,13 +139,13 @@ Below we provide the roadmap of the Dwitter project. The milestones will be exec
 ### Overview
 * **Total Estimated Duration:** 1 year, 5 months 30k PoC, with additional 200k in requested funding for facing the public Internet and creating a startup company
 * **Full-time equivalent (FTE):**  Full time work on the project will be pursued.
-* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is $30k.
+* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is CHF30k.
 
 ### Milestone 1 — Implement a Dapp with IPFS/IPNS Pinning, and Tor hidden service content delivery in a UI client & Implement Substrate Modules, Launch a Polkadot parachain for human readable names, social currency and Direct messages
 
 * **Estimated Duration:** 6 months * 2 (or 1)
 * **FTE:**  1.0 * 2
-* **Costs:** $30,000
+* **Costs:** CHF 30,000
 
 
 | Number | Deliverable | Specification |
