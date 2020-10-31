@@ -64,7 +64,7 @@ We implemented the POW + DPOS consensus integrated with ethereum, used tendermin
 
 ### Overview
 * **Total Estimated Duration:** 3 weeks
-* **Full-time equivalent (FTE):**  3
+* **Full-time equivalent (FTE):**  1.5
 * **Total Costs:** 0.5 btc
 
 ### Milestone 1  — Implement ares low pallet
