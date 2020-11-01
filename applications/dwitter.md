@@ -159,6 +159,9 @@ Below we provide the roadmap of the Dwitter project. The milestones will be exec
 | 4. | Substrate chain | Modules Naming, Payment & Direct Messages of our custom chain will interact on top of the Dwitter client providing additional features as opposed to storing social content directly on the blockchain |  
 | 5. | Tor hidden services | Tor circuits will provide censorship resistant anonymous routing between the IPFS nodes, and the clients |
 | 6. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 7. | Blockchain DNS | Evaluate several namecoins and decentralized DNS solutions such as namebase.io Handshake |
+| 8. | Ethereum | Monitor support for .eth domains with upcoming eth2 mobile friendlyness | 
+
 
 ### Bitcoin address for funding
 
