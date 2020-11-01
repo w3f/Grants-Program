@@ -6,7 +6,7 @@
 
 ## Project Description :page_facing_up:   
 
-Cere Network is providing a Turn-key Private/Permissioned Standalone Blockchain Network which can  be readily integrated by any enterprise, additionally this network can be easily plugged into any Polkadot/Substrate based Layer 1 network to serve as a secondary chain. As a Substrate based Private Blockchain, this turn-key network intends to abstract the implementation complexity for businesses, as well as proving a ready-made package to  optimize for a higher level of security, privacy, and performance, and to serve as a template or base-implementation of a highly customizable and performant enterprise specific blockchain network.  Furthermore, any network build from or derived from this project will also be able to use derivative assets to represent in-app value transfers on-chain (e.g. micropayments, discount vouchers, loyalty points, etc), as well as being able to seamlessly integrate with Cere Decentralized Data Cloud ([link] another substrate grant project)   
+Cere Network is providing a turn-key Private/Permissioned/Standalone blockchain network which can be readily integrated by any enterprise. Since it’s built with Substrate, this network can be plugged seamlessly into any Polkadot/Substrate based Layer 1 network to serve as a secondary chain. As a Substrate based Private Blockchain, This turn-key network intends to abstract the implementation complexity for businesses, as well as providing a ready-made package to optimize for a higher level of security, privacy, and performance, and to serve as a template or base-implementation of a highly customizable and performant enterprise specific blockchain networks.  Furthermore, any network built from or derived from this project will also be able to use derivative assets to represent in-app value transfers on-chain (e.g. micropayments, discount vouchers, loyalty points, etc), as well as being able to seamlessly integrate with Cere Decentralized Data Cloud [another substrate grant project, check it here - Cere Decentralized Data Cloud (DDC)](https://github.com/Cerebellum-Network/General-Grants-Program/blob/master/grants/speculative/Cere%20Decentralized%20Data%20Cloud.md)
 
 Below we have the overview of all the key features that Turn-key Private Standalone Blockchain Network will support:   
 
@@ -21,14 +21,15 @@ Below we have the overview of all the key features that Turn-key Private Standal
 
 ### Repository Hierarchy:
 ```bash
-├── Turnkey Private Standalone Network Node
+├── Turn-key Private Standalone Network Node
 ├── Cere Pallet
 │   │── Smart Contract
 │   │    ├──Derivative Assets
 │   └── Off-chain Worker
 ├── Cere Runtime Module
+├── Substrate API Interface
 ├── Packaging & Deployment Scripts
-└── Tests & Tools
+└── Tests & Tools 
 ```
 
 There will be three primary directories in this repository:   
@@ -50,7 +51,7 @@ TODO
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 8 weeks
+* **Total Estimated Duration:** 10 weeks
 * **Total Costs:** 2 BTC
 
 ### Milestone 1
@@ -65,7 +66,7 @@ TODO
 | 1. | Documentation and basic tests | We will provide README files inside repositories with instructions of how to build, deploy and test our services. |  
 | 2.  | Smart Contract | This deliverable includes the creation of Smart Contract for Custom Derivative Assets. | 
 | 3.  | Deployment packaging | At minimum the docker container or even the entire scripts that packages the container with the latest code from Substrate will also run on CI to test the deliverables of the milestone. |
-| 4.  | Fee-less Transactions | We will add support for value transfers between app/user accounts without worrying about fees 
+| 4.  | Fee-less Transactions | We will add support for value transfers between app/user accounts without worrying about fees. |
 | 5.  | Testing | Repositories including the deployment and test sections for instructions and scripts to help contributors to package, deploy, run, test. | 
 
 ### Milestone 2
@@ -84,5 +85,5 @@ TODO
 
 ## Additional Information :heavy_plus_sign: 
 
-* We're also working on [Cere Decentralized Data Cloud (DDC)](https://github.com/Cerebellum-Network/General-Grants-Program/blob/master/grants/speculative/Cere%20Decentralized%20Data%20Cloud.md) and planning for a seamless integration for the open source community.
+We're also working on [Cere Decentralized Data Cloud (DDC)](https://github.com/Cerebellum-Network/General-Grants-Program/blob/master/grants/speculative/Cere%20Decentralized%20Data%20Cloud.md) and planning for a seamless integration for the open source community.
  
