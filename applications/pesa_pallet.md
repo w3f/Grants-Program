@@ -115,7 +115,7 @@ The team has also integrated with Telecom operators like AT&T, Claro, etc.
 
 | Number | Deliverable            | Specification          |
 |--------|------------------------|------------------------|
-| 1.     | Substrate pallet: PESA | 1. Pallet is expose a function called register to allow caller to register the phone number to their wallet address<br>2. Pallet will allow users to perform Phone Number to address look up. |
+| 1.     | Substrate pallet: PESA | 1. Pallet will expose a function called register to allow caller to register the phone number to their wallet address<br>2. Pallet will allow users to perform Phone Number to address look up. |
 | 2.     | Create a dapp          | Create a custom chain with the PESA pallet and a dapp to allow users to enter a phone number and associate that with the owner's wallet address. Users will be able to perform address lookup by providing a phone number. Dapp will be in Angular/Javascript. |
 | 3.     | Unit tests             | The code will have proper unit-test coverage to ensure functionality and robustness. Readme will provide details on how to run the tests. |
 | 4.     | Dockerfile             | Provide a docker image with a substrate node using our pallet. |
