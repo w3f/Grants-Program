@@ -139,13 +139,13 @@ Below we provide the roadmap of the Dwitter project. The milestones will be exec
 ### Overview
 * **Total Estimated Duration:** 1 year, 5 months 30k PoC, with additional 200k in requested funding for facing the public Internet and creating a startup company
 * **Full-time equivalent (FTE):**  Full time work on the project will be pursued.
-* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is BTC 2,37
+* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is BTC 2.37
 
 ### Milestone 1 — Implement a Dapp with IPFS/IPNS Pinning, and Tor hidden service content delivery in a UI client & Implement Substrate Modules, Launch a Polkadot parachain for human readable names, social currency and Direct messages
 
 * **Estimated Duration:** 6 months * 2 (or 1)
 * **FTE:**  1.0 * 2
-* **Costs:** 2,37 BTC
+* **Costs:** 2.37 BTC
 
 
 | Number | Deliverable | Specification |
@@ -171,6 +171,10 @@ Below we provide the roadmap of the Dwitter project. The milestones will be exec
 ### Community engagement
 
 A thourough [Medium](https://medium.com/)) article will be written and published upon completion of the grant.
+
+### Repositories under consideration
+* https://github.com/NodeFactoryIo/metamask-snap-polkadot
+* https://github.com/paritytech/frontier
 
 ## Future Plans
 The long-term goal of the project is to fullfill the goal of Bluesky to provide a web3 version of Twitter with a focus on performance and censorship resistance, in the format of a publicly used Internet service instead of a Blockchain and Security Community exclusive project.
