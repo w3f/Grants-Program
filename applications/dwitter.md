@@ -139,13 +139,13 @@ Below we provide the roadmap of the Dwitter project. The milestones will be exec
 ### Overview
 * **Total Estimated Duration:** 1 year, 5 months 30k PoC, with additional 200k in requested funding for facing the public Internet and creating a startup company
 * **Full-time equivalent (FTE):**  Full time work on the project will be pursued.
-* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is CHF30k.
+* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is BTC 2,37
 
 ### Milestone 1 — Implement a Dapp with IPFS/IPNS Pinning, and Tor hidden service content delivery in a UI client & Implement Substrate Modules, Launch a Polkadot parachain for human readable names, social currency and Direct messages
 
 * **Estimated Duration:** 6 months * 2 (or 1)
 * **FTE:**  1.0 * 2
-* **Costs:** CHF 30,000
+* **Costs:** 2,37 BTC
 
 
 | Number | Deliverable | Specification |
@@ -156,11 +156,12 @@ Below we provide the roadmap of the Dwitter project. The milestones will be exec
 | 1. | Substrate module: 1 | We will create a Substrate module that will incorporate human readable domain names for the current pinning model) |  
 | 2. | Substrate module: 2 | We will create a Substrate module that will render social payments with its own coin and other cryptocurrencies |  
 | 3. | Substrate module: 3 | We will create a Substrate module that will allow for private message hashsum verification with the network |  
-| 4. | Substrate chain | Modules Naming, Payment & Direct Messages of our custom chain will interact on top of the Dwitter client providing additional features as opposed to storing social content directly on the blockchain |  
+| 4. | Substrate chain | Modules Naming with substrate-names, Payment & Direct Messages of our custom chain will interact on top of the Dwitter client providing additional features as opposed to storing social content directly on the blockchain |  
 | 5. | Tor hidden services | Tor circuits will provide censorship resistant anonymous routing between the IPFS nodes, and the clients |
-| 6. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-| 7. | Blockchain DNS | Review of several decentralized DNS implementations and Namecoins |
-| 8. | Ethereum 2.0 | Review of MetaMask integration and browser support for .eth domains with upcoming eth0 mobile-friendly | 
+| 6. | Unit Tests for the entire platform including benchmarks (of IPFS, for example) |
+| 7. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 8. | Blockchain DNS | Review of several decentralized DNS implementations and Namecoins |
+| 9. | Ethereum 2.0 | Review of MetaMask integration and browser support for .eth domains with upcoming eth0 mobile-friendly | 
 
 
 ### Bitcoin address for funding
