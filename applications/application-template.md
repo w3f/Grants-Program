@@ -61,7 +61,8 @@ This section should break out the development roadmap into a number of milestone
 Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
 
 For each milestone:
-* Please be sure to include a specification of the software. The level of detail must be enough so that we are able to verify that the software meets the specification.
+* Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
+To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
 * Please include total amount of funding requested per milestone.
 * Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
 * Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
