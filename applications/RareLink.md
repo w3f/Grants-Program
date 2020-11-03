@@ -1,6 +1,10 @@
 # Open Grant Proposal
 
 * **Project:** RareLink Protocol
+* **Proposer:** 0x522359
+* **Payment Address:** 3Ah1QWfs9oEPdhRDYkWPSJYf5yKa7NLcSF
+
+* **Project:** RareLink Protocol
 
 ## 1. Project Overview :page_facing_up: 
 
