@@ -1,11 +1,13 @@
 # Dwitter 30k Grant Proposal
 
-* **Project:** Dwitter Censorship resistant Web3 Microblogging and Social Networking service
+* **Project:** Dwitter Censorship-Resistant Web3 Microblogging and Social Networking service
 
 ## Project Overview 
-The projects serves a web3 replacement of Twitter, which has become the Internet standard for 330 million active users engaging in the creation of content as well as social interaction, political and journalistic review, news coverage and diplomatic representation of countries.
+The projects serves a Web3 replacement of Twitter, which has become the Internet standard for 330 million active users engaging in the creation of content as well as social interaction, political and journalistic review, news coverage and diplomatic representation of nation states.
 
-The platform has made it easy to pursue these means of communication using centralized instrastructure and services owned and operated by Twitter Inc. -- Parity's mission of launching the web3 in a decentralized manner aligns with the goal of including a version of the platform that relies on technology such as Polkadot human readable names and IPFS for self-hosted user content, providing uncensorable social content entirely in the users control.
+The platform has made it easy to pursue these means of communication using centralized instrastructure and services owned and operated by Twitter Inc. -- Parity's mission of launching the web3 in a decentralized manner aligns with the goal of including a version of the platform that relies on technology such as Polkadot Blockchain providing Human readable names and IPFS/Filecoin for self-hosted user content, providing uncensorable social content entirely in the users control.
+
+The Tor project, specifically integration of establishing a circuit with the Tor network with ease such as the Tor Browser project  does (https://github.com/TheTorProject/gettorbrowser) shall render the anonymity infrastructure of the project. Ease of use for the public and a gateway for internal name resolution from default desktop and mobile browsers is a goal of the project.  
 
 ### Overview
 
@@ -26,12 +28,11 @@ Previous social networking solutions like Diaspora or Mostadon have either faile
 ![alt text](https://github.com/goldfink/General-Grants-Program/blob/Web3Foundation-patch-1/grants/dwitter_timeline.png?raw=true)
 ![alt text](https://github.com/goldfink/General-Grants-Program/blob/Web3Foundation-patch-1/grants/dwitter_profile.png?raw=true)
 
-
 The UI mimics the Twitter.com user experience with additional features. 
 
 #### Similiar Projects
-* https://app.subsocial.network/ - Polkadot social network, discourages social use
-* https://www.ethtweet.me/ - Requires geth client for use
+* https://app.subsocial.network/ - Polkadot social network, discourages social use currently, mimics Diaspora
+* https://www.ethtweet.me/ - Requires geth client for use, not useable on Mobile
 
 #### Preliminary Architecture and API Outline
 
