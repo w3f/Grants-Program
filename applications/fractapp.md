@@ -4,7 +4,7 @@
 
 * **Project:** Fractapp
 * **Proposer:** CryptoBadBoy
-* **Payment Address:** bc1q5h0fk4ys3crk6xjxhs8wmf0lles03tlzns90w3
+* **Payment Address:** 3HrP78rbmafpfBsU49LCpywYrNcscnKd76
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
