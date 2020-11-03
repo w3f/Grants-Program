@@ -1,15 +1,11 @@
 # Open Grant Proposal
 
-> This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
-
-* **Project:** The name of the project
-* **Proposer:** GitHub username
+* **Project:** ZK Rollups on Polkadot
+* **Proposer:** NoCtrlZ, akru, and SotaWatanabe
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
 
-*The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
+We have been working on off-chain scalability solutions aka layer2 solutions. And after tremendous research, we became to believe that ZK Rollups would be the killer layer2 solution. Currently, rollups is [one of the potentially interesing topics](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md) for Web3 Foundation and Vitalik announced [the rollups centrric Ethreum roadmap last month](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698?fbclid=IwAR1oJyMEwvjFXNy7vCHT19PyXNh27PAHZjvCR4qBRoUB9mKf_nEVOtE4vgk). According to Vitalik, the Ethereum ecosystem is likely to be all-in on rollups (plus some plasma and channels) as a scaling strategy for the near and mid-term future.
 
 ### Overview
 
@@ -34,21 +30,22 @@ Are there any other projects similar to yours? If so, how is your project differ
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
-* Names of team members	
+* Shinsaku Ashizawa
+* Alexsandr Krrupenkin
+* Sota Watanabe	
 
 ### Team Website	
-* https://<your_domain>
+* https://stake.co.jp/en
 
 ### Legal Structure 
-Please provide the name and registered address of the legal entity executing the project.
+* Incorporated in Japan
+* Address: 1-30-3 Minamiaoyama Minato-ku Tokyo Japan
 
 ### Team's experience
 Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+* https://github.com/staketechnologies/Plasm
 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/<person_1>
