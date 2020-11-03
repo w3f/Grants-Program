@@ -137,15 +137,15 @@ The team is experienced in decentralized technology and security community invol
 Below we provide the roadmap of the Dwitter project. The milestones will be executed in parallel and due to research in performance and scalability, censorship resistance and potential improvements and feature merge requests to multiple open source projects involved, as well deciding upon further production features such as prominency social reward, incentivizing the use of the platform.
 
 ### Overview
-* **Total Estimated Duration:** 1 year, 5 months 30k PoC, with additional 200k in requested funding for facing the public Internet and creating a startup company
+* **Total Estimated Duration:** 1 year, 6 months 30k PoC, with additional 200k in requested funding for facing the public Internet and creating a startup company
 * **Full-time equivalent (FTE):**  Full time work on the project will be pursued.
-* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is BTC 2.37
+* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is BTC 2.4 (Unix timestamp 30k CHF to BTC exchange rate 1604426503.916094)
 
 ### Milestone 1 — Implement a Dapp with IPFS/IPNS Pinning, and Tor hidden service content delivery in a UI client & Implement Substrate Modules, Launch a Polkadot parachain for human readable names, social currency and Direct messages
 
 * **Estimated Duration:** 6 months * 2 (or 1)
-* **FTE:**  1.0 * 2
-* **Costs:** 2.37 BTC
+* **FTE:**  1.0
+* **Costs:** 2.4 BTC (Unix timestamp 30k CHF to BTC exchange rate 1604426503.916094)
 
 
 | Number | Deliverable | Specification |
@@ -175,6 +175,10 @@ A thourough [Medium](https://medium.com/)) article will be written and published
 ### Repositories under consideration
 * https://github.com/NodeFactoryIo/metamask-snap-polkadot
 * https://github.com/paritytech/frontier
+* https://github.com/filecoin-project For potential replacement or integration with IPFS
+
+### Further grants under consideration
+*  https://github.com/filecoin-project/devgrants
 
 ## Future Plans
 The long-term goal of the project is to fullfill the goal of Bluesky to provide a web3 version of Twitter with a focus on performance and censorship resistance, in the format of a publicly used Internet service instead of a Blockchain and Security Community exclusive project.
