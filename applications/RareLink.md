@@ -1,8 +1,5 @@
 # Open Grant Proposal
 
-* **Project:** The name of the project
-* **Payment Address:** 
-
 * **Project:** RareLink Protocol
 
 ## 1. Project Overview :page_facing_up: 
