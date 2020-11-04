@@ -2,17 +2,16 @@
 
 * **Project:** ZK Rollups on Polkadot
 * **Proposer:** NoCtrlZ, akru, and SotaWatanabe
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
+* **Payment Address:** 1LYWirHyBbmdCCU2YHg2qxgLAuybUfKEPm 
 
 ## Project Overview :page_facing_up: 
-We have been working on off-chain scalability solutions aka layer2 solutions. And after tremendous research, we became to believe that ZK Rollups would be the killer layer2 solution. Currently, rollups is [one of the potentially interesing topics](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md) for Web3 Foundation and Vitalik announced [the rollups centrric Ethreum roadmap last month](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698?fbclid=IwAR1oJyMEwvjFXNy7vCHT19PyXNh27PAHZjvCR4qBRoUB9mKf_nEVOtE4vgk). According to Vitalik, the Ethereum ecosystem is likely to be all-in on rollups (plus some plasma and channels) as a scaling strategy for the near and mid-term future.
+We have been working on off-chain scalability solutions aka layer2 solutions. And after tremendous research, we became to believe that ZK Rollups would be the killer layer2 solution. Currently, rollups is [one of the potentially interesing topics](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md) for Web3 Foundation and Vitalik announced [the rollups centrric Ethreum roadmap last month](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698?fbclid=IwAR1oJyMEwvjFXNy7vCHT19PyXNh27PAHZjvCR4qBRoUB9mKf_nEVOtE4vgk). According to Vitalik, the Ethereum ecosystem is likely to be all-in on rollups (plus some plasma and channels) as a scaling strategy for the near and mid-term future. We know that Polkdot has  a different technical architecture and tech stack but Rollups is still important because of severtal reasons.
+
+1. Bringing vertical off-chain scalability without sacrificing on-chain data availability (×3-10 scalability).
+1. Handling smart contracts on layer2.
 
 ### Overview
-
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+Throught this grant, we are going to make a ZK Rollups pallet for potential Parachains. Our goal is to make Plasm Network a scalable smart contract platform. And supporting Rollups on the Parachian is important both for us and for the community.
 
 ### Project Details 
 We expect the teams to already have a solid idea about the project's expected final state.
@@ -42,14 +41,22 @@ Are there any other projects similar to yours? If so, how is your project differ
 * Address: 1-30-3 Minamiaoyama Minato-ku Tokyo Japan
 
 ### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+We have been making Plasm Nnetwork, a scalable multi-virtual machines smart contract platform on Polkadot supporting cutting edge layer2 solutions. Curretly, another team at Stake techologies is working on the Optimistic Virtual Machine, an unification for all layer2 solutions and a subset of Optimistic Rollups. We have already delivered 4 milestones out of 6. In addition to that, we have already delivered several grants such as Plasma, ECDSA, and ink! playground.
+
+- [Plasma](https://github.com/stakedtechnologies/Plasm)
+- [ECDSA](https://github.com/polkadot-js/common/tree/master/packages/util-crypto/src/secp256k1)
+- [ink! playground](https://github.com/staketechnologies/ink-playground)
+
+We are also participating in Substrate Builders Program and Substrate Delivery Partners and we have done some PoCs with clients.
+- ["Plasm Network" is Adopted as a Blockchain Platform for Payment System by Satsudra HD and DataGateway](https://stake.co.jp/news/20201020english/)
+- [Bitpoint and Stake Technologies Collaboration Announcement.](https://stake.co.jp/news/bitpoint_en/)
 
 ### Team Code Repos
-* https://github.com/staketechnologies/Plasm
+* https://github.com/staketechnologies
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* https://www.linkedin.com/in/sota-watanabe-b962b3110/
+
 
 ## Development Roadmap :nut_and_bolt: 
 
