@@ -45,9 +45,19 @@ Below you can find the link to our API documentation. Not only we plan to integr
 
 - **An overview of the technology stack to be used**
 
-Nodejs / Vue.JS / PostgreSQL / Flutter (Android and Ios)
+Web:
+- Vue.js
+- Node.js
+- Express
+- PM2
+- Postgres
+- Socket.IO
 
-- **PoC/MVP or other relevant prior work or research on the topic**
+Mobile:
+- Flutter Ios/Android
+- Trustwallet/walletcore
+
+**PoC/MVP or other relevant prior work or research on the topic**
 
 The working product is accessible via the link - [citadel.one](https://citadel.one/)
 
@@ -119,7 +129,7 @@ Our Lead Backend Developer, Pavel, was apt to unload transactions in the shortes
 
 **Team Code Repos**
 
-Accesses will be given to the Polkadot team directly upon request.
+From our side, we are ready to make the part associated specifically with Polkadot fully open-source. Accesses will be given to the Polkadot team directly upon request.
 
 ### **Team LinkedIn/GitHub Profiles**
 
@@ -156,15 +166,15 @@ Accesses will be given to the Polkadot team directly upon request.
 ### **Overview**
 
 - Total Estimated Duration: Duration of the whole project
-- Full-time equivalent (FTE): Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) - 4,3125
+- Full-time equivalent (FTE): Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) - 3,0625
 
-![](https://citadel.one/staticf/table1.png)
+![](https://citadel.one/staticf/table01.png)
 
-![](https://citadel.one/staticf/table2.png)
+![](https://citadel.one/staticf/table02.png)
 
-- Total Costs: Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
+- Total Costs: 1,755 BTC
 
-![](https://citadel.one/staticf/table3.png)
+![](https://citadel.one/staticf/table03.png)
 
 ## **Future Plans**
 
