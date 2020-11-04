@@ -154,7 +154,7 @@ From our side, we are ready to make the part associated specifically with Polkad
 | **Number** | **Step** | **Specification** | **Detailed description** | **Team members involved** |
 | --- | --- | --- | --- | --- |
 | 1 | Node launch (not included in grant amount requirements) | Citadel will join the Polkadot ecosystem as a validator | The Polkadot node will be deployed with the setting of specific glitch recognition notifications (for instance, in case the validator node suspended block production, or server memory faced some issues) via Zabbix and Grafana. As a result of this stage, we expect the node to be up and running with the maintenance system and RPC interface for node access. After the successful node launch, the necessary support and updates will be provided for a longer period. | Nikita (system administrator)120h per year|
-| 2 | Design | Interface preparation, design elements specifications, and tuning | As a result of this stage, the mockups for web and mobile UI will be ready on Figma. | Margarita Omelchenko (Lead Designer)40h |
+| 2 | Design (not included in grant amount requirements) | Interface preparation, design elements specifications, and tuning | As a result of this stage, the mockups for web and mobile UI will be ready on Figma. | Margarita Omelchenko (Lead Designer)40h |
 | 3 | Preparation set 1 | Polkadot blockchain scrutiny, data transfer to PostgreSQL (for data aggregation and statistics building) | This stage mainly involves the examination of Polkadot blockchain, parser building for the data transfers to PostgreSQL database (it will allow us to aggregate data conveniently, receive transactions of a certain type on a specific address, etc.)This step will bring us some vital milestones: our database will contain all the transactions - new ones sourced directly from the blockchain will be also stored in our database that is convenient for the development needs (balance/rewards charts creation, etc.)Also, as a result we will possess the following connector methods: (isSystemAddress, validateAddress, getLastBlock, getNextBlock, getOneBlock, filterOperations, getDelegationBalanceInfo). | Yeskendir (Backend Developer), Pavel (Lead Backend Developer)120h |
 | 4 | Preparation set 2 | Examination of Polkadot transfer methods and staking system | This step entails the connector methods: prepareTransfer, prepareDelegation, sendTransaction). | Yeskendir (Backend Developer), Pavel (Lead Backend Developer)30h |
 | 5 | Transfers integration | Analysis of a network&#39;s transfer transaction; search for necessary libraries or APIs;determination of transaction preparation logic; writing logic; signing; writing the send logic | Upon the successful completion of this step, we will have transactions integrated into web and mobile versions, as well as Backend API methods for the execution of transfers&#39; transactions. | Pavel (Lead Backend Developer), Petr (Lead Frontend Developer), Yeskendir (Backend Developer), Alexander (Frontend Developer), Andrey (Mobile Developer)80 h |
@@ -170,11 +170,11 @@ From our side, we are ready to make the part associated specifically with Polkad
 
 ![](https://citadel.one/staticf/table01.png)
 
-![](https://citadel.one/staticf/table002.png)
+![](https://citadel.one/staticf/еtable2.png)
 
 - Total Costs: 1,665 BTC
 
-![](https://citadel.one/staticf/table03.png)
+![](https://citadel.one/staticf/table003.png)
 
 ## **Future Plans**
 
