@@ -85,7 +85,7 @@ First step will be to implement ZK Rollup contracts with [`Circom`](https://gith
 | 5. | Documentation | Document which describes how to deposit, withdraw and send, be validator |
 
 ### Milestone 2 Example
-#### Additional features
+#### Implement ZK Rollup Pallet To Substrate
 * **Estimated Duration:** 1 month
 * **FTE:**  1
 * **Costs:** 0.69 BTC
@@ -99,16 +99,7 @@ Second step will be to implement sidechain and mainchain contracts to `pallet_ev
 | 3. | Integration Test | Test above modules work together correctly on substrate-based chain |  
 | 4. | Documentation | Document which describes how to deposit, withdraw and send, be validator |
 
-### Community engagement
-
-As part of the Program, we require that you produce an article/tutorial and publish it (for example on [Medium](https://medium.com/)). It should explain your work done as part of the grant. 
-
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
-
-## Future Plans
-Please include the team's long-term plans and intentions.
-
-## Additional Information :heavy_plus_sign: 
+## Additional Information :heavy_plus_sign:
 Any additional information that you think is relevant to this application that hasn't already been included.
 
 Possible additional information to include:
