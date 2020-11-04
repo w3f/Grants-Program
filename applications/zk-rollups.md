@@ -66,26 +66,38 @@ We plan to provide a `ZK Rollup` module that allows Substrate-based blockchain t
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  1 FTE
-* **Total Costs:** 2.09
+* **Total Costs:** 2.07
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 Example
+#### Implement ZK Rollup Contract With Cirom
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 0.75 BTC
+* **Costs:** 0.69 BTC
+
+First step will be to implement ZK Rollup contracts with [`Circom`](https://github.com/iden3/circom). We'll use ropsten network for test environment.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests |  
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Mainchain Contract | Contract which is used by user to deposit Ether or ERC token |  
+| 2. | Sidechain Contract | Contract which receives transaction from transactor |  
+| 3. | Validator API | API which is used by validator to collect transaction and broadcast sidechain block to mainchain contract |  
+| 4. | Integration Test | Test above modules work together correctly on ropsten network |  
+| 5. | Documentation | Document which describes how to deposit, withdraw and send, be validator |
 
-### Milestone 2 Example — Additional features
-...
+### Milestone 2 Example
+#### Additional features
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 0.69 BTC
+
+Second step will be to implement sidechain and mainchain contracts to `pallet_evm`. It's necessary to implement both RPC client to deploy and interact with contract, and `pallet_evm` trait which setup ZK Rollup environment automatically.
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | EVM RPC | RPC client that allows user to deploy and interact with contract |  
+| 2. | Integrate ZK Rollup | Pallet that allows developer to implement ZK Rollup easily |  
+| 3. | Integration Test | Test above modules work together correctly on substrate-based chain |  
+| 4. | Documentation | Document which describes how to deposit, withdraw and send, be validator |
 
 ### Community engagement
 
