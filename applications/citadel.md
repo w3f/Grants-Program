@@ -170,7 +170,7 @@ From our side, we are ready to make the part associated specifically with Polkad
 
 ![](https://citadel.one/staticf/table01.png)
 
-![](https://citadel.one/staticf/еtable2.png)
+![](https://citadel.one/staticf/ttable2.png)
 
 - Total Costs: 1,665 BTC
 
