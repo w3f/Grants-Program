@@ -117,7 +117,7 @@ Saito's founders have both worked leading development and broader IT teams in Ch
 | ------------- | ------------- | ------------- |
 | 1. | Saito Module | Polkadot module that allows Saito applications to connect to a Polkadot API access point to send / receive network Polkadot data. This module would be the equivalent of "metamask" application for all of the existing games and applications already running on Saito. It would run fully in-browser. |
 | 2. | Documentation | Inline documentation and published how to guide. |
-| 3. | Environment Build | Build and test environment containing Polkadot node and Saito Stack. <br />Test interoperability and benchmark performance. <br />Document configuration, deployment and management. |
+| 3. | Environment Build | Build and test environment containing Polkadot node and Saito Stack. <br />Test interoperability and benchmark performance. <br />Document configuration, deployment and management. <br /> Deploy against public test net.|
 | 4 | Tutorial | Developer tutorial showing how applications can integrate with Polkadot module on a base-level (i.e. without the need for use of the gaming API layer), making Polkadot a first-class citizen for all Saito Web3 applications and allowing all of them to send and receive payments in DOT. |
 ||||
 
