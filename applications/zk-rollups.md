@@ -1,17 +1,17 @@
 # Open Grant Proposal
 
-* **Project:** ZK Rollups on Polkadot
+* **Project:** ZK Rollup on Polkadot
 * **Proposer:** NoCtrlZ, akru, and SotaWatanabe
 * **Payment Address:** 1LYWirHyBbmdCCU2YHg2qxgLAuybUfKEPm
 
 ## Project Overview :page_facing_up:
-We have been working on off-chain scalability solutions aka layer2 solutions. And after tremendous research, we became to believe that ZK Rollups would be the killer layer2 solution. Currently, rollups is [one of the potentially interesing topics](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md) for Web3 Foundation and Vitalik announced [the rollups centrric Ethreum roadmap last month](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698?fbclid=IwAR1oJyMEwvjFXNy7vCHT19PyXNh27PAHZjvCR4qBRoUB9mKf_nEVOtE4vgk). According to Vitalik, the Ethereum ecosystem is likely to be all-in on rollups (plus some plasma and channels) as a scaling strategy for the near and mid-term future. We know that Polkdot has  a different technical architecture and tech stack but Rollups is still important because of severtal reasons.
+We have been working on off-chain scalability solutions aka layer2 solutions. And after tremendous research, we became to believe that ZK Rollup would be the killer layer2 solution. Currently, rollup is [one of the potentially interesing topics](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md) for Web3 Foundation and Vitalik announced [the rollup centrric Ethreum roadmap last month](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698?fbclid=IwAR1oJyMEwvjFXNy7vCHT19PyXNh27PAHZjvCR4qBRoUB9mKf_nEVOtE4vgk). According to Vitalik, the Ethereum ecosystem is likely to be all-in on rollup (plus some plasma and channels) as a scaling strategy for the near and mid-term future. We know that Polkdot has  a different technical architecture and tech stack but Rollup is still important because of severtal reasons.
 
 1. Bringing vertical off-chain scalability without sacrificing on-chain data availability (×3-10 scalability).
 1. Handling smart contracts on layer2.
 
 ### Overview
-Throught this grant, we are going to make a ZK Rollups pallet for potential Parachains. Our goal is to make Plasm Network a scalable smart contract platform. And supporting Rollups on the Parachian is important both for us and for the community.
+Throught this grant, we are going to make a ZK Rollup pallet for potential Parachains. Our goal is to make Plasm Network a scalable smart contract platform. And supporting Rollup on the Parachian is important both for us and for the community.
 
 ### Project Details
 We expect the teams to already have a solid idea about the project's expected final state.
@@ -41,7 +41,7 @@ Are there any other projects similar to yours? If so, how is your project differ
 * Address: 1-30-3 Minamiaoyama Minato-ku Tokyo Japan
 
 ### Team's experience
-We have been making Plasm Nnetwork, a scalable multi-virtual machines smart contract platform on Polkadot supporting cutting edge layer2 solutions. Curretly, another team at Stake techologies is working on the Optimistic Virtual Machine, an unification for all layer2 solutions and a subset of Optimistic Rollups. We have already delivered 4 milestones out of 6. In addition to that, we have already delivered several grants such as Plasma, ECDSA, and ink! playground.
+We have been making Plasm Nnetwork, a scalable multi-virtual machines smart contract platform on Polkadot supporting cutting edge layer2 solutions. Curretly, another team at Stake techologies is working on the Optimistic Virtual Machine, an unification for all layer2 solutions and a subset of Optimistic Rollup. We have already delivered 4 milestones out of 6. In addition to that, we have already delivered several grants such as Plasma, ECDSA, and ink! playground.
 
 - [Plasma](https://github.com/stakedtechnologies/Plasm)
 - [ECDSA](https://github.com/polkadot-js/common/tree/master/packages/util-crypto/src/secp256k1)
@@ -68,13 +68,13 @@ We plan to provide a `ZK Rollup` module that allows Substrate-based blockchain t
 * **Full-time equivalent (FTE):**  1 FTE
 * **Total Costs:** 2.07
 
-### Milestone 1 Example
+### Milestone 1
 #### Implement ZK Rollup Contract With Cirom
 * **Estimated Duration:** 1 month
 * **FTE:**  1
 * **Costs:** 0.69 BTC
 
-First step will be to implement ZK Rollup contracts with [`Circom`](https://github.com/iden3/circom). We'll use ropsten network for test environment.
+First step will be to implement ZK Rollup contracts with [`Zinc`](https://github.com/matter-labs/zinc) which enables us to make ZK Rollup smart contracts easily. We'll use ropsten network for test environment.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -84,19 +84,34 @@ First step will be to implement ZK Rollup contracts with [`Circom`](https://gith
 | 4. | Integration Test | Test above modules work together correctly on ropsten network |  
 | 5. | Documentation | Document which describes how to deposit, withdraw and send, be validator |
 
-### Milestone 2 Example
-#### Implement ZK Rollup Pallet To Substrate
+### Milestone 2
+#### Implement `pallet_evm` RPC client And ZK Rollup Network Server
 * **Estimated Duration:** 1 month
 * **FTE:**  1
 * **Costs:** 0.69 BTC
 
-Second step will be to implement sidechain and mainchain contracts to `pallet_evm`. It's necessary to implement both RPC client to deploy and interact with contract, and `pallet_evm` trait which setup ZK Rollup environment automatically.
+Second step will be to implement EVM RPC client and ZK Rollup network node application to `pallet_evm`. RPC client allows us to deploy and interact with contract on `pallet_evm`. In order for service provider to compose ZK Rollup network, we need implement full node client.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | EVM RPC | RPC client that allows user to deploy and interact with contract |  
-| 2. | Integrate ZK Rollup | Pallet that allows developer to implement ZK Rollup easily |  
+| 2. | Implement Node Application | Pallet that allows service provider to compose own ZK Rollup network |  
 | 3. | Integration Test | Test above modules work together correctly on substrate-based chain |  
+| 4. | Documentation | Document which describes how to deploy and interact with contract, and init and participate network on substrate-based chain |
+
+### Milestone 3
+#### Implement ZK Rollup Prover Client And Block Explorer
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 0.69 BTC
+
+Third step will be to implement ZK Rollup prover application and block explore. In order for user to participating ZK Rollup network and create sidechain block validity proof with SNARK, we need implement prover application.
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Implement Prover Application | Pallet that allows user to be prover in ZK Rollup network |  
+| 2. | Implement Block Explorer | UI that allows everyone to check block status |  
+| 3. | Integration Test | Test above modules work together correctly on substrate-based chain and Web UI |  
 | 4. | Documentation | Document which describes how to deposit, withdraw and send, be validator |
 
 ## Additional Information :heavy_plus_sign:
