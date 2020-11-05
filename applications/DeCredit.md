@@ -82,7 +82,6 @@ https://github.com/Credit-chain-org
 
 The tutorial will be published on our Weibo and other social media channels. 
 
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
 
 ## Future Plans
 * Move credit data on-chain. That means we should add storage and privacy modules.
@@ -91,10 +90,13 @@ Normally, we ask you to submit the write-up upon the completion of your grant, a
 ## Additional Information :heavy_plus_sign: 
 
 * What work has been done so far?
+
 The product has been built in Internet for years. Now we want to move it on-chain and in a decentralized manner.
 
 * Are there are any teams who have already contributed (financially) to the project?
+
 No.
 
 * Have you applied for other grants so far?
+
 Not yet.
