@@ -61,7 +61,7 @@ We are also participating in Substrate Builders Program and Substrate Delivery P
 ## Development Roadmap :nut_and_bolt:
 
 ### Summary
-We plan to provide a `ZK Rollup` module that allows Substrate-based blockchain to execute `ZK Rollup` through `pallet_evm`.
+We plan to provide a `ZK Rollup` pallet that allows Substrate-based blockchain to execute `ZK Rollup` on evm environment.
 
 ### Overview
 * **Total Estimated Duration:** 3 months
@@ -74,30 +74,31 @@ We plan to provide a `ZK Rollup` module that allows Substrate-based blockchain t
 * **FTE:**  1
 * **Costs:** 0.69 BTC
 
-First step will be to implement ZK Rollup contracts with [`Zinc`](https://github.com/matter-labs/zinc) which enables us to make ZK Rollup smart contracts easily. We'll use ropsten network for test environment.
+First step will be to implement ZK Rollup contracts with [`Zinc`](https://github.com/matter-labs/zinc) framework enables us to build ZK Rollup smart contracts easily. We'll prepare the mock contracts and operator application on ropsten network as test environment.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Mainchain Contract | Contract which is used by user to deposit Ether or ERC token |  
+| 1. | Mainchain Contract | Contract which is used by user to deposit and withdraw Ether or ERC token |  
 | 2. | Sidechain Contract | Contract which receives transaction from transactor |  
-| 3. | Validator API | API which is used by validator to collect transaction and broadcast sidechain block to mainchain contract |  
-| 4. | Integration Test | Test above modules work together correctly on ropsten network |  
-| 5. | Documentation | Document which describes how to deposit, withdraw and send, be validator |
+| 3. | Prover API | API that allows prover to receive witness from operator and create SNARK proof for sidechain block |  
+| 4. | Operator API | API that allows service provider to compose sidechain network and, broadcast bundle of transactions and SNARK proof for them to mainchain contract |  
+| 5. | Integration Test | Test for above modules to check whether these API work together correctly on ropsten network |  
+| 6. | Documentation | Document which describes how to deposit, withdraw and send Ether, be prover, and to test them |
 
 ### Milestone 2
-#### Implement `pallet_evm` RPC client And ZK Rollup Network Server
+#### Implement ZK Rollup Network Builder Pallet
 * **Estimated Duration:** 1 month
 * **FTE:**  1
 * **Costs:** 0.69 BTC
 
-Second step will be to implement EVM RPC client and ZK Rollup network node application to `pallet_evm`. RPC client allows us to deploy and interact with contract on `pallet_evm`. In order for service provider to compose ZK Rollup network, we need implement full node client.
+Second step will be to implement ZK Rollup builder module as pallet. In order for service provider to setup ZK Rollup sidechain network, we need pallet to be network operator which has function to monitor mainchain contract, commit sidechain block on mainchain and request to create sidechain block proof for prover.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | EVM RPC | RPC client that allows user to deploy and interact with contract |  
-| 2. | Implement Node Application | Pallet that allows service provider to compose own ZK Rollup network |  
-| 3. | Integration Test | Test above modules work together correctly on substrate-based chain |  
-| 4. | Documentation | Document which describes how to deploy and interact with contract, and init and participate network on substrate-based chain |
+| 1. | Implement Sidechain Runtime | Runtime that run the sidechain environment |  
+| 2. | Implement Operator RPC | Pallet that allows service provider to compose own ZK Rollup network and interact with mainchain through RPC |  
+| 3. | Integration Test | Test sidechain and mainchain work together correctly on substrate-based chain |  
+| 4. | Documentation | Document which describes how to deposit, withdraw and send, be validator, and init and participate network on substrate-based chain |
 
 ### Milestone 3
 #### Implement ZK Rollup Prover Client And Block Explorer
@@ -109,9 +110,9 @@ Third step will be to implement ZK Rollup prover application and block explore. 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Implement Prover Application | Pallet that allows user to be prover in ZK Rollup network |  
-| 2. | Implement Block Explorer | UI that allows everyone to check block status |  
-| 3. | Integration Test | Test above modules work together correctly on substrate-based chain and Web UI |  
+| 1. | Implement Prover Application | Pallet that allows user to be prover in ZK Rollup network. This pallet has function to create proof after receiving witness from server |  
+| 2. | Implement Block Explorer | UI that allows everyone to check blocks and transactions status |  
+| 3. | Integration Test | Test explorer works together correctly on Web UI |  
 | 4. | Documentation | Document which describes how to deposit, withdraw and send, be validator |
 
 ## Additional Information :heavy_plus_sign:
