@@ -22,8 +22,8 @@ We have run our credit products in Internet for some years any collects lots of 
 ### Project Details 
 We expect the teams to already have a solid idea about the project's expected final state.
 
-* Credit Scoring design: https://github.com/Credit-chain-org/Design-Docs/tree/main/Credit-Scoring
-* Credit Matching design: https://github.com/Credit-chain-org/Design-Docs/tree/main/Credit-Matching
+* Credit Scoring specification: https://github.com/Credit-chain-org/Design-Docs/blob/main/Credit-Scoring/Credit_Scoring_spec.pdf
+* Credit Matching specification: https://github.com/Credit-chain-org/Design-Docs/blob/main/Credit-Matching/Credit_Matching_spec.pdf
 * Code segment:  https://github.com/Credit-chain-org/algorithm
 
 ### Ecosystem Fit 
