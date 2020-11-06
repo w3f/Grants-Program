@@ -1,15 +1,20 @@
 # Open Grant Proposal
 * **Project:** Map Bridge
 * **Proposer:**  zcheng9
-* **Payment Address:**  1MEu8JrsSMAF7v8vg7bSu1iPsgZKXXW1nA
+* **Payment Address:**  1CFM6QDvxwXEV3dUN9x2ftqq4rwAfkxN9W
 ## Project Overview :page_facing_up:
 ### Overview
-This project deliver a bridge  relay  to connect Polkadot and other PoW chains. The bridge  relay can provide an non-interactive, succinct proof of POW  of a bridged chain based on ULVP(ultra-light verification protocol) .  And based on such proof,  it can further verify  inner state of certain account or transaction inclusion proof.
+This project deliver a bridge  relay  to connect Polkadot and other PoW chains(Ethereum specific in this proposal). The bridge  relay can provide an non-interactive, succinct proof of POW  of a bridged chain based on ULVP (ultra-light verification protocol) .  And based on such proof,  it can further verify  inner state of certain account or transaction inclusion proof.
 ### Project Description
 + MAP-Bridge would implement a new data structure called merkle mountain range(MMR) which contain the information of  all confirmed block headers. And the root of MMR would be include in the header of  new mined block.
-+ Map-Bridge would use ULVP to acquire  non-interactive proof of  POW verification of the bridged chain. ULVP is a flyclient-type verification module to verify the validity of tail block of a certain blockchain carry heaviest proof of work.  The size of proof  grows sub-linearly as the length of the bridged chain.
-+ Once the header of tail block in a certain blockchain can be confirmed, any block header in this blockchain can be determined through the MMR branch proof,  with the fact that the header of tail block contain the root of MMR including all headers.
-+ Furthermore  if any block header can be determined, any transaction or inner state of certain account could be verified through merkle branch proof similar to SPV(simplified payment verification).
++ MAP-Bridge is build on a verification module called Ultra-Light Verification Protocol (ULVP). ULVP origins from the paper ["Flyclient:  Super-Light Clients for Cryptocurrencies"](https://eprint.iacr.org/2019/226.pdf).  Any node could verify the existence of any transaction or the balance of any account with very limited data through ULVP compare to SPV. 
++ The verification mechanism is as following:
++ The verifier connects some randomly selected full node in the destiny chain (at least one of these must be honest) and request them sending their tail blocks and corresponding proofs. Then the verifier validates the proof with the longest tail block. If it is a valid proof, the verifier would select this tail block as his choice and save it for next step. Otherwise he would drop this full node  and check the second-longest tail block. The verifier continues this steps until it finds the tail block with valid proof. Based on our assumption, he connects at least one honest prover. Thus this algorithm would eventually find the honest longest tail block.
++  The verifier connects some other randomly selected full node in the destiny chain and obtains  the block header in specified height and the corresponding MMR branch proof of this header upon to the most recent MMR. The verifier has the root of the most recent MMR which include in the tail block header. He could then validate the MMR branch proof based on it. If he get the valid block header he can save it for next step, otherwise keep doing it for another full node.
++ This step is similar to SPV.  The verifier connects some other randomly selected full node in the destiny chain.  The he could request  them sending the detail of the transaction in specified height with the merkle branch proof up to the transaction root in block header( for state of any account is similar since the state root is stored in the header too). After that he could check the validity of the merkle proof. If the check passed, he could be sure that this transaction is indeed included in the destiny chain. If not, he could try another full node. If none of them could provide valid proof, he would know this transaction is not included in the destiny chain yet. 
++ More details of ULVP could be found [Here](https://medium.com/marcopolo-protocol/marcopolo-protocol-sub-protocol-ultra-light-verification-protocol-ulvp-adc73eccf566).
+
+
 ### Ecosystem Fit
 ## Team :busts_in_silhouette:
 ### Team members
@@ -40,16 +45,15 @@ In this milestone, we will build Substrate-based MMR for MAP bridge and also pro
 | Number | Deliverable                          | Specification                                                |
 | ------ | ------------------------------------ | ------------------------------------------------------------ |
 | 0a. | License | Apache 2.0 |
-| 0b. | Testing | This milestone will have unit-test for MMR trie, MMR proof runtime api and MMR manager.In the guide we will describe how to run these tests. |
-| 1.     | MMR Trie Structure | Implement core data structure which implement MMR trie. |
+| 0b. | Testing | This milestone will have unit-test for MMR trie, MMR proof runtime api and MMR manager. In the guide we will describe how to run these tests. |
+| 1.     | MMR Trie Structure | We will implement this MMR Trie based on the exist Library. We will fork this [Repo](https://github.com/tari-project/tari/tree/development/base_layer/mmr) and realize all the functionality we need based on that. Including customlized field in MMR node, customlized merging method and MMR manager. |
 | 2.    |  Substrae MMR proof runtime module           | Deliver MMR proof verification in substrate SRML runtime and provide the ability to generate and manage MMR. |
 | 3.    |   AppendBlock  | Append the current block as leaf node into MMR. Method signature:  Public bool Appendblock(Header blockheader)     |
 | 4.    |   RetrieveMMR | Retrieve the MMR based on the root provide.   Method signature: Public *MMR RetrieveMMR(Hash root)      |
 | 5.    |   GenerateProof  | Generate the merkle branch proof in MMR. Method signature: Public *Proof GenerateProof(*MMR mmr, Leafnode leaf)      |
 | 6.    |   VerifyProofByRoot  |   Verify if the proof is consistent with root. Method signature: Public bool VerifyBlockByRoot(Hash root, *Proof proof)      |
-
 ### Milestone 2 Integrate ULVP module into substrate
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 2 month
 * **FTE:**  3
 * **Costs:** $1BTC
 In this milestone, we will further implement the ULVP module and some add-on module. This would involving generating and verifying succinct proof,  specifying the cross-chain transaction, implementing the cross-chain transaction pool, building P2P network based on libp2p. Once this milestone is accomplished, the whole feature of ULVP module is complete and could be used to verify inner state of certain account or transaction inclusion proof for other blockchain. We will include proper test and documentation for this milestone
@@ -59,10 +63,8 @@ In this milestone, we will further implement the ULVP module and some add-on mod
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can import the protocol. |
 | 0c. | Testing Guide | This milestone will have unit-test for ULVP module to ensure functionality. In the guide we will describe how to run these tests.|
-| 1.     |  ULVP module  |  Implement ULVP module to retrieve the transaction or state from another blockchain. More details of ULVP could be found  [here](https://medium.com/marcopolo-protocol/marcopolo-protocol-sub-protocol-ultra-light-verification-protocol-ulvp-adc73eccf566)|
-| 2.     | P2P module  | Implement node discovery and stream transport method between two P2P network based on libp2p. |
-| 3.     | Cross-chain asset transafer demo| Realized a demo to enable token transfer between two different blockchain systems.  |
-
-
+| 1.     |  ULVP module  |  Implement ULVP module to retrieve the transaction or state from another blockchain. We will realize all the three verification steps we mention above using the Substrate MMR module we finished in milestone 1.  |
+| 2.     | P2P Relay  | Implement Ethereum p2p network compatible with Libp2p, not use Devp2p. It require both parties maintain a node discovery hash tables. Both sides of the node can freely connect the pair of chain nodes, We will use gossip to broadcast block announcement and transactions, It also contains MMR Proof and Receipt Proof. |
+| 3.     | Cross-chain asset transfer demo | Realized a demo to enable token transfer between Polkadot parachain(MAP bridge) and Ethereum testnet. This need first deployed a contract in Ethereum testnet which maintain the MMR root of Ethereum. Next we need to deployed a mint contract in bridge parachain and a lock contract in Ethereum. If user lock some token in Ethereum to the lock contract, any node in the bridge parachain could verify this lock transaction. And the mint contract would mint the token in parachain if the lock transaction is indeed confirmed in Ethereum testnet. |
 ## Future Plans
-We plan to extend our bridge to most POW and POS type blockchains in the future. Through our bridge we could link more and more other blockchain systems into Polkadot Ecosystem . 
+We plan to extend our bridge to most POW and POS type blockchains in the future. Through our bridge we could link more and more other blockchain systems into Polkadot Ecosystem .
