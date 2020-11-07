@@ -167,7 +167,7 @@ Please describe the team's relevant experience. If the project involves developm
 
 We will be producing a series of articles/tutorials and publish them on Medium and our community channels to highlight each milestone. More on our marketing strategy:
 
-![Marketing Strategy](https://drive.google.com/file/d/1QDFUFUx0A5c9m-Xvd0Ihy3zbufGjRY5r/preview)
+![Marketing Strategy](https://raw.githubusercontent.com/Cerebellum-Network/Cerebellum-Network.github.io/main/Marketing%20Strategy.png)
 
 # Future Plans
 
