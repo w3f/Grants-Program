@@ -56,7 +56,7 @@ TODO
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 10 weeks
+* **Total Estimated Duration:** 7 weeks
 * **Total Costs:** 2 BTC
 
 ### Milestone 1
