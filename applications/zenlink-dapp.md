@@ -44,7 +44,7 @@ In [the last grant](./zenlink.md), Zenlink DEX Module has been delivered within 
 
 We will only build a DEX DApp prototypes in this grant. It will has the basic functionality including swap and user guide.
 
-For the UI/UX details, please see [Zenlink DEX DApp v0.1]()
+For the UI/UX details, please see [Zenlink DEX DApp v0.1](https://www.notion.so/470464a8482045d2aab03adf62a4e0ed?v=14fec7026047407e98a743a385ea9fc8)
 
 In a word, Zenlink DEX DApp will be integrated with Zenlink DEX Protocol on a substrate blockchain. And users are able to visit the dapp and try the functions. 
 
@@ -92,12 +92,12 @@ no
 ## Development Roadmap
 
 ### Overview
-* **Total Estimated Duration:** 4 weeks
-* **Full-time equivalent (FTE):**  4
+* **Total Estimated Duration:** 2 weeks
+* **Full-time equivalent (FTE):** 4
 * **Total Costs:** 1 btc
 
-### Milestone 1 — Implementing Zenlink DEX Module
-* **Estimated Duration:** 4 weeks
+### Milestone 1 — Implementing Zenlink DEX DApp
+* **Estimated Duration:** 2 weeks
 * **FTE:**  4
 * **Costs:** 1 btc
 
@@ -105,9 +105,8 @@ Generally, we would like to verify the product prototype in a specific environme
 
 | Deliverable  | Specification  | 
 |--------------|---------------|
-| Zenlink DEX DApp UI/UX Design |  These design should be included in the [WPS cloud](). The UI design will show the user interface and interaction flow|
-| Zenlink DEX DApp Repository | A git repository containing the dex dapp source code and a README that describes the work done during this milestone and how to use set up and run at the current stage. |
-| Tests        | The code will have proper unit-test coverage to ensure functionality and robustness.                                                                    | 
+| UI/UX Design |  [Zenlink DEX DApp v0.1](https://www.notion.so/470464a8482045d2aab03adf62a4e0ed?v=14fec7026047407e98a743a385ea9fc8) is representing the user interface and interaction flow. |
+| Zenlink DEX DApp | An online website which users can explore basic dex functionality only for test purpose. |
 
 ### Community engagement
 
