@@ -1,17 +1,23 @@
 # Open Grant Proposal
 
-* **Project:** ZK Rollup on Polkadot
+* **Project:** ZK Rollup on Polkadot/Substrate
 * **Proposer:** NoCtrlZ, akru, and SotaWatanabe
 * **Payment Address:** 1LYWirHyBbmdCCU2YHg2qxgLAuybUfKEPm
 
 ## Project Overview :page_facing_up:
-We have been working on off-chain scalability solutions aka layer2 solutions. And after tremendous research, we became to believe that ZK Rollup would be the killer layer2 solution. Currently, rollup is [one of the potentially interesing topics](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md) for Web3 Foundation and Vitalik announced [the rollup centrric Ethreum roadmap last month](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698?fbclid=IwAR1oJyMEwvjFXNy7vCHT19PyXNh27PAHZjvCR4qBRoUB9mKf_nEVOtE4vgk). According to Vitalik, the Ethereum ecosystem is likely to be all-in on rollup (plus some plasma and channels) as a scaling strategy for the near and mid-term future. We know that Polkdot has  a different technical architecture and tech stack but Rollup is still important because of severtal reasons.
+We have been working on off-chain scalability solutions aka layer2 solutions. After tremendous research, we have come to believe that ZK Rollup would be the killer layer2 solution because of its data availability. Currently, rollup is [one of the potentially interesing topics](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md) of Web3 Foundation and Vitalik announced [the rollup centrric Ethreum roadmap last month](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698?fbclid=IwAR1oJyMEwvjFXNy7vCHT19PyXNh27PAHZjvCR4qBRoUB9mKf_nEVOtE4vgk). According to Vitalik, the Ethereum ecosystem is likely to be all-in on rollup (plus some plasma and channels) as a scaling strategy for the near and mid-term future. We know that Polkdot has a different technical architecture and tech stack but Rollup is still important because of severtal reasons.
 
-1. Bringing vertical off-chain scalability without sacrificing on-chain data availability (×3-10 scalability).
+1. Bringing vertical off-chain scalability without sacrificing on-chain data availability, security and privacy (×3-10 scalability).
 1. Handling smart contracts on layer2.
+1. Sharding plus Rollups will be the future. Polkadot has the sharding ish architecture but it doesn't have Rollups yet.
+1. Currenntly, a lot of Ethereum projects are interested in migrating from Ethreum to Polkadot. And some of the great Ethereum projects have already started using Rollups. If we could build Rollups on Substeate/Polkadot, we would help these projects migrate smoothly. 
+
+Through this grant, we will make a ZK Rollup pallet for Parachain builders to get zero-knowledge vertical scaling solution.
 
 ### Overview
-Throught this grant, we are going to make a ZK Rollup pallet for potential Parachains. Our goal is to make Plasm Network a scalable smart contract platform. And supporting Rollup on the Parachian is important both for us and for the community.
+Throught this grant, we are going to make a ZK Rollup pallet for potential Parachains like Plasm. Our initial goal is to implement ZK Rollup on Plasm but we aim to make it public and adoptable for all Substrate based chains. 
+
+More technically, this applicatin consists of 2 different parts. The  first part is to implement the main chain's pallet and the second part is to implement the side chain's  pallet. 
 
 ### Project Details
 We expect the teams to already have a solid idea about the project's expected final state.
@@ -24,7 +30,11 @@ Therefore, we ask the teams to submit (where relevant):
 * PoC/MVP or other relevant prior work or research on the topic
 
 ### Ecosystem Fit
-Are there any other projects similar to yours? If so, how is your project different?
+According to Web3 Foundation, there are at least 2 different teams that work on ZK technologies. 
+- [Zeropool](https://github.com/zeropoolnetwork)
+- [Glacier](https://github.com/gbctech)
+
+In our understanding, Glacier is building a Distaff VM for zk-STARK proof generation and verification that are used to make  private smart contracts and private credential verifications. The difference between us is that we are making a ZK Rollup pallet and they are making a VM which supports STARKs. In terms of Zeropool, we couldn't find their info on Web3 Foundation's github. 
 
 ## Team :busts_in_silhouette:
 
