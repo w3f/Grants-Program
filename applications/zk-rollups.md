@@ -10,12 +10,12 @@ We have been working on off-chain scalability solutions aka layer2 solutions. Af
 1. Bringing vertical off-chain scalability without sacrificing on-chain data availability, security and privacy (×3-10 scalability).
 1. Handling smart contracts on layer2.
 1. Sharding plus Rollups will be the future. Polkadot has the sharding ish architecture but it doesn't have Rollups yet.
-1. Currenntly, a lot of Ethereum projects are interested in migrating from Ethreum to Polkadot. And some of the great Ethereum projects have already started using Rollups. If we could build Rollups on Substeate/Polkadot, we would help these projects migrate smoothly. 
+1. Currenntly, a lot of Ethereum projects are interested in migrating from Ethreum to Polkadot. And some of the great Ethereum projects have already started using Rollups. If we could build Rollups on Substeate/Polkadot, we would help these projects migrate smoothly.
 
 Through this grant, we will make a ZK Rollup pallet for Parachain builders to get zero-knowledge vertical scaling solution.
 
 ### Overview
-Throught this grant, we are going to make a ZK Rollup pallet for potential Parachains like Plasm. Our initial goal is to implement ZK Rollup on Plasm but we aim to make it public and adoptable for all Substrate based chains. 
+Throught this grant, we are going to make a ZK Rollup pallet for potential Parachains like Plasm. Our initial goal is to implement ZK Rollup on Plasm but we aim to make it public and adoptable for all Substrate based chains.
 
 More technically, this applicatin consists of 2 different parts. The  first part is to implement the main chain's pallet and the second part is to implement the side chain's  pallet. 
 
@@ -30,11 +30,11 @@ Therefore, we ask the teams to submit (where relevant):
 * PoC/MVP or other relevant prior work or research on the topic
 
 ### Ecosystem Fit
-According to Web3 Foundation, there are at least 2 different teams that work on ZK technologies. 
+According to Web3 Foundation, there are at least 2 different teams that work on ZK technologies.
 - [Zeropool](https://github.com/zeropoolnetwork)
 - [Glacier](https://github.com/gbctech)
 
-In our understanding, Glacier is building a Distaff VM for zk-STARK proof generation and verification that are used to make  private smart contracts and private credential verifications. The difference between us is that we are making a ZK Rollup pallet and they are making a VM which supports STARKs. In terms of Zeropool, we couldn't find their info on Web3 Foundation's github. 
+In our understanding, Glacier is building a Distaff VM for zk-STARK proof generation and verification that are used to make  private smart contracts and private credential verifications. The difference between us is that we are making a ZK Rollup pallet and they are making a VM which supports STARKs. In terms of Zeropool, we couldn't find their info on Web3 Foundation's github.
 
 ## Team :busts_in_silhouette:
 
@@ -51,7 +51,7 @@ In our understanding, Glacier is building a Distaff VM for zk-STARK proof genera
 * Address: 1-30-3 Minamiaoyama Minato-ku Tokyo Japan
 
 ### Team's experience
-We have been making Plasm Nnetwork, a scalable multi-virtual machines smart contract platform on Polkadot supporting cutting edge layer2 solutions. Curretly, another team at Stake techologies is working on the Optimistic Virtual Machine, an unification for all layer2 solutions and a subset of Optimistic Rollup. We have already delivered 4 milestones out of 6. In addition to that, we have already delivered several grants such as Plasma, ECDSA, and ink! playground.
+We have been making Plasm Network, a scalable multi-virtual machines smart contract platform on Polkadot supporting cutting edge layer2 solutions. Curretly, another team at Stake techologies is working on the Optimistic Virtual Machine, an unification for all layer2 solutions and a subset of Optimistic Rollup. We have already delivered 4 milestones out of 6. In addition to that, we have already delivered several grants such as Plasma, ECDSA, and ink! playground.
 
 - [Plasma](https://github.com/stakedtechnologies/Plasm)
 - [ECDSA](https://github.com/polkadot-js/common/tree/master/packages/util-crypto/src/secp256k1)
@@ -80,9 +80,9 @@ We plan to provide a `ZK Rollup` pallet that allows Substrate-based blockchain t
 
 ### Milestone 1
 #### Implement ZK Rollup Contract With Cirom
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 2.25 months
 * **FTE:**  1
-* **Costs:** 0.69 BTC
+* **Costs:** 0.40 BTC
 
 First step will be to implement ZK Rollup contracts with [`Zinc`](https://github.com/matter-labs/zinc) framework enables us to build ZK Rollup smart contracts easily. We'll prepare the mock contracts and operator application on ropsten network as test environment.
 
@@ -90,40 +90,48 @@ First step will be to implement ZK Rollup contracts with [`Zinc`](https://github
 | ------------- | ------------- | ------------- |
 | 1. | Mainchain Contract | Contract which is used by user to deposit and withdraw Ether or ERC token |  
 | 2. | Sidechain Contract | Contract which receives transaction from transactor |  
-| 3. | Prover API | API that allows prover to receive witness from operator and create SNARK proof for sidechain block |  
-| 4. | Operator API | API that allows service provider to compose sidechain network and, broadcast bundle of transactions and SNARK proof for them to mainchain contract |  
-| 5. | Integration Test | Test for above modules to check whether these API work together correctly on ropsten network |  
-| 6. | Documentation | Document which describes how to deposit, withdraw and send Ether, be prover, and to test them |
+| 3. | User API | API that allows user to sign transaction and deposite mainchain contract |  
+| 4. | Prover API | API that allows prover to receive witness from operator and create SNARK proof for sidechain block |  
+| 5. | Operator API | API that allows service provider to compose sidechain network and, broadcast bundle of transactions and SNARK proof for them to mainchain contract |  
+| 6. | Unit Test | Test for above functions to check whether these work correctly |  
+| 7. | Integration Test | Test for above modules to check whether these API work together correctly on ropsten network |  
+| 8. | Documentation | Document which describes how to deposit, withdraw and send Ether, be prover, and to test them |
 
 ### Milestone 2
-#### Implement ZK Rollup Network Builder Pallet
-* **Estimated Duration:** 1 month
+#### Implement ZK Rollup Network Operator And Prover Pallet
+* **Estimated Duration:** 1.5 months
 * **FTE:**  1
-* **Costs:** 0.69 BTC
+* **Costs:** 1.27 BTC
 
-Second step will be to implement ZK Rollup builder module as pallet. In order for service provider to setup ZK Rollup sidechain network, we need pallet to be network operator which has function to monitor mainchain contract, commit sidechain block on mainchain and request to create sidechain block proof for prover.
+Second step will be to implement ZK Rollup operator and prover pallet. In order for service provider to setup ZK Rollup sidechain network, we need pallet to be network operator which has function to monitor mainchain contract, commit sidechain block on mainchain and request to create sidechain block proof for prover. In order for user to participating ZK Rollup network and create sidechain block validity proof with SNARK, we need implement prover application.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Implement Sidechain Runtime | Runtime that run the sidechain environment |  
-| 2. | Implement Operator RPC | Pallet that allows service provider to compose own ZK Rollup network and interact with mainchain through RPC |  
+| 1. | Implement Operator API Pallet | Runtime that run the sidechain environment |  
+| 2. | Implement Prover API Pallet | Pallet that allows service provider to compose own ZK Rollup network and interact with mainchain through RPC |  
 | 3. | Integration Test | Test sidechain and mainchain work together correctly on substrate-based chain |  
 | 4. | Documentation | Document which describes how to deposit, withdraw and send, be validator, and init and participate network on substrate-based chain |
 
 ### Milestone 3
-#### Implement ZK Rollup Prover Client And Block Explorer
-* **Estimated Duration:** 1 month
+#### Prepare Dockerfile And Tutorial
+* **Estimated Duration:** 0.25 month
 * **FTE:**  1
-* **Costs:** 0.69 BTC
+* **Costs:** 0.40 BTC
 
-Third step will be to implement ZK Rollup prover application and block explore. In order for user to participating ZK Rollup network and create sidechain block validity proof with SNARK, we need implement prover application.
+Third step will be to prepare Dockerfile and tutorial. In order for developer to setup the environment and try to run example commands, we need to prepare Dockerfile and tutorial.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Implement Prover Application | Pallet that allows user to be prover in ZK Rollup network. This pallet has function to create proof after receiving witness from server |  
-| 2. | Implement Block Explorer | UI that allows everyone to check blocks and transactions status |  
+| 1. | Prepare Dockerfile | Dockerfile that allows developer to setup the environment through docker |  
+| 2. | Write Tutorial | ZK Rollup tutorial that allows developer to run example commands |  
 | 3. | Integration Test | Test explorer works together correctly on Web UI |  
 | 4. | Documentation | Document which describes how to deposit, withdraw and send, be validator |
+
+### Gantt Chart
+![gantt_chart](https://drive.google.com/uc?id=1y5wv3iNUcYb_9t-15wu4YroY4GPDTLoT)
+
+### Detail Tasks
+![detail_tasks](https://drive.google.com/uc?id=1WV3h_zvJC3zbCLeUYwhMjb4laGlN_nc6)
 
 ## Additional Information :heavy_plus_sign:
 Any additional information that you think is relevant to this application that hasn't already been included.
