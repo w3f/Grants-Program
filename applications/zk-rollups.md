@@ -17,17 +17,17 @@ Through this grant, we will make a ZK Rollup pallet for Parachain builders to ge
 ### Overview
 Throught this grant, we are going to make a ZK Rollup pallet for potential Parachains like Plasm. Our initial goal is to implement ZK Rollup on Plasm but we aim to make it public and adoptable for all Substrate based chains.
 
-More technically, this applicatin consists of 2 different parts. The  first part is to implement the main chain's pallet and the second part is to implement the side chain's  pallet. 
+More technically, this applicatin consists of 2 different parts. The  first part is to implement the main chain's pallet and the second part is to implement the side chain's  pallet.
 
 ### Project Details
-We expect the teams to already have a solid idea about the project's expected final state.
+The following diagram is the architecture we implement.
+![architecture](https://drive.google.com/uc?id=1hacBr-U4YVp0gH6EddxKgb3Oh17XVYyb)
 
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
+There are four components we implement.
+* Prover: Create proof which verifies the block validity.
+* Operator: Collect transactions, create block and submit block to mainchain contract.
+* User Wallet: Send transaction to operator and deposit Ether/ERC20 token to mainchain contract.
+* Mainchain Contract: Hold user desposit, verify block and update state.
 
 ### Ecosystem Fit
 According to Web3 Foundation, there are at least 2 different teams that work on ZK technologies.
