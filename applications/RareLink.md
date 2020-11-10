@@ -45,7 +45,7 @@ Our team had great development experience in blockchain domain.
 * rarelink-runtime-node: https://github.com/RareLink/rarelink-runtime-node
 * Oracle module: https://github.com/RareLink/tokenbridge
 * evm pallet: https://github.com/RareLink/frontier
-* rarelink-docs: https://github.com/RareLink/rarelink-docs    
+* rarelink-docs: https://github.com/RareLink/rarelink-docs (https://docs.rarelink.network/)   
 
 ### 2.6 Team LinkedIn Profiles
 * provide in private through Google Form.
