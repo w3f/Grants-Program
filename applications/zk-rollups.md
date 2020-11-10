@@ -19,7 +19,8 @@ Throught this grant, we are going to make a ZK Rollup pallet for potential Parac
 
 The following diagram is the architecture we will implement.
 
-![architecture](https://drive.google.com/uc?id=1hacBr-U4YVp0gH6EddxKgb3Oh17XVYyb)
+<img width="988" alt="Screen Shot 2020-11-10 at 23 03 01" src="https://user-images.githubusercontent.com/29359048/98683905-ec3f9580-23a8-11eb-8305-c4c312cdb326.png">
+
 
 There are four components we implement as a substrate pallet and these components allow substrate-based chain to do following things.
 
@@ -129,7 +130,7 @@ Our third step is to prepare Dockerfile and tutorial. In order for developers to
 ### Gantt Chart
 There are three parts in the following `gantt chart` and it describes how long it takes to get things done for each milestone. First of all we implement ZK Rollup contracts and sidechain components on ropsten network to check whether it works correctly. And second, we implement sidechain components pallet that allow us to build ZK Rollup on substrate-based chain. At last, we prepare Dockerfile and tutorial that allow developer to user this pallet and build their own ZK Rollup.
 
-![gantt_chart](https://drive.google.com/uc?id=1I8sKL5ddweQ8dCXBeRTYSFw2Jb8lBVUQ)
+<img width="1037" alt="Screen Shot 2020-11-10 at 23 04 30" src="https://user-images.githubusercontent.com/29359048/98684119-2446d880-23a9-11eb-94a5-49802628e1f4.png">
 
 ### Detail
 The following list describes our detail for each components.
