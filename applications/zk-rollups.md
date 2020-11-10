@@ -135,7 +135,8 @@ There are three parts in the following `gantt chart` and it describes how long i
 ### Detail
 The following list describes our detail for each components.
 
-![detail_tasks](https://drive.google.com/uc?id=1PyaL34rYn9uxZ3vqCAFWQfPmQQMdVzEE)
+
+<img width="661" alt="68747470733a2f2f64726976652e676f6f676c652e636f6d2f75633f69643d315079614c333472596e3975785a337671434146575166506d51514d64567a4545" src="https://user-images.githubusercontent.com/29359048/98684295-55bfa400-23a9-11eb-8c59-a765346bca77.png">
 
 ## Additional Information :heavy_plus_sign:
 - [web site](https://www.plasmnet.io/)
