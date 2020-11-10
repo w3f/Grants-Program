@@ -23,7 +23,7 @@ More technically, this applicatin consists of 2 different parts. The  first part
 The following diagram is the architecture we implement.
 ![architecture](https://drive.google.com/uc?id=1hacBr-U4YVp0gH6EddxKgb3Oh17XVYyb)
 
-There are four components we implement.
+There are four components we implement as substrate pallet and these allow substrate-based chain to do following things.
 * Prover: Create proof which verifies the block validity.
 * Operator: Collect transactions, create block and submit block to mainchain contract.
 * User Wallet: Send transaction to operator and deposit Ether/ERC20 token to mainchain contract.
@@ -74,7 +74,7 @@ We are also participating in Substrate Builders Program and Substrate Delivery P
 We plan to provide a `ZK Rollup` pallet that allows Substrate-based blockchain to execute `ZK Rollup` on evm environment.
 
 ### Overview
-* **Total Estimated Duration:** 3 months
+* **Total Estimated Duration:** 4 months
 * **Full-time equivalent (FTE):**  1 FTE
 * **Total Costs:** 2.07
 
@@ -132,7 +132,7 @@ There are three part in following `gantt chart` and it describes how long it tak
 ![gantt_chart](https://drive.google.com/uc?id=1I8sKL5ddweQ8dCXBeRTYSFw2Jb8lBVUQ)
 
 ### Detail Tasks
-The following graph describes tasks details.
+The following list describes tasks detail for each components.
 ![detail_tasks](https://drive.google.com/uc?id=1PyaL34rYn9uxZ3vqCAFWQfPmQQMdVzEE)
 
 ## Additional Information :heavy_plus_sign:
