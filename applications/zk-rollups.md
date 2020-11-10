@@ -79,12 +79,12 @@ We plan to provide a `ZK Rollup` pallet that allows Substrate-based blockchain t
 * **Total Costs:** 2.07
 
 ### Milestone 1
-#### Implement ZK Rollup Contract With Cirom
+#### Implement ZK Rollup Contracts And Sidechain Application
 * **Estimated Duration:** 2.25 months
 * **FTE:**  1
 * **Costs:** 0.40 BTC
 
-First step will be to implement ZK Rollup contracts with [`Zinc`](https://github.com/matter-labs/zinc) framework enables us to build ZK Rollup smart contracts easily. We'll prepare the mock contracts and operator application on ropsten network as test environment.
+First step will be to implement ZK Rollup contracts with [`Zinc`](https://github.com/matter-labs/zinc) framework enables us to build ZK Rollup smart contracts easily. We'll prepare the mock contracts and operator application on ropsten network as test environment. We'll also implement sidechain application that includes user client, operator and prover api.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -128,10 +128,12 @@ Third step will be to prepare Dockerfile and tutorial. In order for developer to
 | 4. | Documentation | Document which describes how to deposit, withdraw and send, be validator |
 
 ### Gantt Chart
-![gantt_chart](https://drive.google.com/uc?id=1y5wv3iNUcYb_9t-15wu4YroY4GPDTLoT)
+There are three part in following `gantt chart` and it describes how long it takes to get thing done for each milestone. First of all we implement ZK Rollup contracts and sidechain components on ropsten network to check whether it works correctly. And second, we implement sidechain components pallet that allow us to build ZK Rollup on substrate-based chain. At last, we prepare Dockerfile and tutorial that allow developer to user this pallet and build their own ZK Rollup.
+![gantt_chart](https://drive.google.com/uc?id=1I8sKL5ddweQ8dCXBeRTYSFw2Jb8lBVUQ)
 
 ### Detail Tasks
-![detail_tasks](https://drive.google.com/uc?id=1WV3h_zvJC3zbCLeUYwhMjb4laGlN_nc6)
+The following graph describes tasks details.
+![detail_tasks](https://drive.google.com/uc?id=1PyaL34rYn9uxZ3vqCAFWQfPmQQMdVzEE)
 
 ## Additional Information :heavy_plus_sign:
 Any additional information that you think is relevant to this application that hasn't already been included.
