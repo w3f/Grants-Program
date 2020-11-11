@@ -105,14 +105,30 @@ Artem Zaitsev
 * **Full-time equivalent (FTE):**  3 
 * **Total Costs:** 2.1 BTC
 
-MS 1 |               | - - - - - - - - - - - |
-MS 2 | - - - - - - - - - |               | - - - - - - - - - - - - - |
+MS 1 | - - - - - - - |
+MS 2 |       | - - - - - - - - - - - |               
+MS 3 |               | - - - - - - - - - - - - - - - - - - - - - - - |
 Week |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |
 
-### Milestone 1 — Implement Protocol Automated Market Maker
+### Milestone 1 - Implement Multi-Token Chain
+* **Estimated Duration:** 2 Weeks
+* **FTE:** 2
+* **Costs:** 0.4 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a short tutorial that explains how to do basic transactions with multiple currencies |
+| 0c. | Testing Guide | The code will have proper unit-test coverage (90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 1. | Substrate module: orml-tokens | We will use the orml pallet for a multi-token configuration |
+| 2. | Substrate module: aUSD | Implementation of Acala-based aUSD as default treasury asset |
+| 3.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone | 
+| 4.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
+
+### Milestone 2 — Implement Protocol Automated Market Maker
 * **Estimated Duration:** 3 Weeks
 * **FTE:**  2.5
-* **Costs:** 0.5 BTC
+* **Costs:** 0.7 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -125,24 +141,23 @@ Week |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |
 | 3.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone | 
 | 4.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
 
-### Milestone 2 — Implement Token Chain with Supply Manager
+### Milestone 3 — Supply Manager
 * **Estimated Duration:** 6 Weeks
 * **FTE:**  3.5
-* **Costs:** 1.6 BTC
+* **Costs:** 1 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how the supply manager calculates mints and burns, and how intended orders are carried out through the AMM. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage (>90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: orml | We will use the orml pallet for a multi-token configuration (DEN and USD) |
-| 2. | Substrate module: Oracle | We will implement an oracle which pulls market price data for calculations |  
-| 3. | Substrate module: Scanner | We will create a scanner that pulls the current supply of the token |  
-| 4. | Substrate module: Mkt Op Calcs | We will create a Substrate module that calculates the appropriate number of tokens to buy or sell on a given day based on market price and supply |  
-| 5. | Substrate module: Rebalancer | Uses tokens from mint, and funds from treasury, to maintain proper balance of protocol AMM.
-| 6. | Substrate chain | Modules work together to calculate the correct number of tokens to buy or sell in a day, based on market price and on-chain supply data, and fund the protocol AMM so that purchases/sales may occur |  
-| 7.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone | 
-| 8.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
+| 1. | Substrate module: Oracle | We will implement an oracle which pulls market price data for calculations |  
+| 2. | Substrate module: Scanner | We will create a scanner that pulls the current supply of the token |  
+| 3. | Substrate module: Mkt Op Calcs | We will create a Substrate module that calculates the appropriate number of tokens to buy or sell on a given day based on market price and supply |  
+| 4. | Substrate module: Rebalancer | Uses tokens from mint, and funds from treasury, to maintain proper balance of protocol AMM.
+| 5. | Substrate chain | Modules work together to calculate the correct number of tokens to buy or sell in a day, based on market price and on-chain supply data, and fund the protocol AMM so that purchases/sales may occur |  
+| 6.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone | 
+| 7.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
 
 ### Community engagement
 We plan to write several pieces about the protocol. They include, but are not limited to:
