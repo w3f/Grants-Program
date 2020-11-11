@@ -74,34 +74,29 @@ We are also participating in Substrate Builders Program and Substrate Delivery P
 We plan to provide a `ZK Rollup` pallet that allows Substrate-based blockchain to execute `ZK Rollup` on its evm environment.
 
 ### Overview
-* **Total Estimated Duration:** 4 months
+* **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  1 FTE
 * **Total Costs:** 2.1
 
 ### Milestone 1
-#### Implement ZK Rollup Contracts And Sidechain Application
-* **Estimated Duration:** 2.25 months
+#### Prepare ZK Rollup Contracts On Substrate
+* **Estimated Duration:** 0.75 months
 * **FTE:**  1
-* **Costs:** 0.43 BTC
+* **Costs:** 0.20 BTC
 
-Our first step is to implement ZK Rollup contracts with [`Zinc`](https://github.com/matter-labs/zinc) framework which enables us to build ZK Rollup smart contracts easily. We'll prepare the mock contracts and operator application on ropsten network as a test. We'll also implement a sidechain application that includes user client, operator and prover api.
+Our first step is to deploy [matter-labs](https://github.com/matter-labs/zksync) solidity contracts and test overall on substrate-based chain.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Mainchain Contract | Contract which is used by user to deposit and withdraw Ether or ERC token |  
-| 2. | Sidechain Contract | Contract which receives transaction from transactor |  
-| 3. | User API | API that allows user to sign transaction and deposite mainchain contract |  
-| 4. | Prover API | API that allows prover to receive witness from operator and create SNARK proof for sidechain block |  
-| 5. | Operator API | API that allows service provider to compose sidechain network and, broadcast bundle of transactions and SNARK proof for them to mainchain contract |  
-| 6. | Unit Test | Test for above functions to check whether these work correctly |  
-| 7. | Integration Test | Test for above modules to check whether these API work together correctly on ropsten network |  
-| 8. | Documentation | Document which describes how to deposit, withdraw and send Ether, be prover, and to test them |
+| 1. | Deploy ZK Rollup Contract To Substrate | Deploy [matter-labs](https://github.com/matter-labs/zksync) solidity contracts on substrate evm |  
+| 2. | Integration Test On Substrate | Test for all contracts and sidechain network actors |  
+| 3. | Documentation | Document which describes how to test ZK Rollup on substrate |
 
 ### Milestone 2
 #### Implement ZK Rollup Network Operator And Prover Pallet
-* **Estimated Duration:** 1.5 months
+* **Estimated Duration:** 2 months
 * **FTE:**  1
-* **Costs:** 1.27 BTC
+* **Costs:** 1.50 BTC
 
 Our second step is to implement a ZK Rollup operator and a prover pallet. In order for a service provider to setup ZK Rollup sidechain network, we need a pallet to make a network operator which monitors mainchain contracts, to commit the sidechain block to the mainchain and to create a sidechain block proof for a prover. In order for user to participating ZK Rollup network and create sidechain block validity proof with SNARK, we need to implement prover applications.
 
@@ -130,13 +125,10 @@ Our third step is to prepare Dockerfile and tutorial. In order for developers to
 ### Gantt Chart
 There are three parts in the following `gantt chart` and it describes how long it takes to get things done for each milestone. First of all we implement ZK Rollup contracts and sidechain components on ropsten network to check whether it works correctly. And second, we implement sidechain components pallet that allow us to build ZK Rollup on substrate-based chain. At last, we prepare Dockerfile and tutorial that allow developer to user this pallet and build their own ZK Rollup.
 
-<img width="1037" alt="Screen Shot 2020-11-10 at 23 04 30" src="https://user-images.githubusercontent.com/29359048/98684119-2446d880-23a9-11eb-94a5-49802628e1f4.png">
 
 ### Detail
 The following list describes our detail for each components.
 
-
-<img width="661" alt="68747470733a2f2f64726976652e676f6f676c652e636f6d2f75633f69643d315079614c333472596e3975785a337671434146575166506d51514d64567a4545" src="https://user-images.githubusercontent.com/29359048/98684295-55bfa400-23a9-11eb-8c59-a765346bca77.png">
 
 ## Additional Information :heavy_plus_sign:
 - [web site](https://www.plasmnet.io/)
