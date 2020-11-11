@@ -67,7 +67,8 @@ Our team had great development experience in blockchain domain.
    		* utility function: `balanceOf`, `ownerOf`
    		* transfer tokens: `safe_transfer_from`, `transfer_from`, `approve`, `set_approve_for_all`, `get_approved`, and `is_approved_for_all`.
   *  implement internal functions to facilitate NFT operations, which can include but not limited to following: 
-  		* `_mint_token`, `_burn_token`, `_transfer_from`  
+  		* `_mint_token`, `_burn_token`, `_transfer_from` 
+  *  we will potentially reuse and update existing NFT solutions to accelerate our progress.
 * **Test**
    * write unit tests for each function and verify its functionality:
    		* create positive tests for minting, burning and transfer of NFTs. 
@@ -103,7 +104,7 @@ Our team had great development experience in blockchain domain.
 * **Costs:** 0.257 BTC (equivalent to $4000)
 * **Programming Language:** HTML and Javascript
 * **Task**:
-  * Web UI: users should be able to mint, transfer and burn their dynamic NFT through the website on Polkadot;
+  * Web UI: users should be able to mint, transfer and burn their dynamic NFT through the website on Polkadot. We will build our own UI on top of Polkadot.js;
   * SDK: in order to facilitate the third-party integration, a Javascript SDK will be built so developers can easily invoke APIs to mint, transfer and burn dynamic NFTs in their own applications.
 * **Test**:
   * run an end-to-end test on the Web to demonstrate the minting, transfer, updating and burning of dynamic NFTs 
