@@ -3,7 +3,7 @@
 * **Project:** SpiderDAO
 * **Proposer:** [SpiderDAO] (https://github.com/SpiderDAO)
 * **Payment Address:** 3Pxq3ViqRW6b3e7qsX7Mo7gSikHcToa7ig
-* **Document Version:** Version 1.6
+* **Document Version:** Version 1.7
 
 
 ## Project Overview :page_facing_up: 
@@ -123,7 +123,7 @@ The main problem with **Mantra DAO** which is built on **Rio Chain** is the same
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and a full tutorial that explains how to interact and trade with the protocol AMM |
+| 0b. | Documentation | We will provide both inline documentation of the code and a full tutorial that explains how to interact and communicate with the testnet protocol |
 | 0c. | Testing Guide | The code will have proper unit-test coverage (>90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1.  | Testing | We will conduct testing of the developed functionalities on Westend testnet. |
 | 2.  | Substrate chain | We will be choosing from the runtime pallet of substrate to build our parachain including communication to our hardware routers |
