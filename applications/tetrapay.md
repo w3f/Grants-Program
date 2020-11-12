@@ -8,16 +8,16 @@
 
 ### Overview
 
-We want to create a cross currency lossless payment and settlement system. This application is to realize the oracle and algorithm part of stable currency. We plan to build a parallel chain of poca based on substrate to realize this part and the later digital currency settlement, defi and stacking parts. The beginning of the project is due to the extremely unstable local currency in Brazil, difficulty in exchange exchange and high loss, and the local church needs a convenient church collection software. In the end, we want to realize the rapid and lossless payment and exchange of currency.
-
-### Project Details
-
-TetraPay designed Tetra currency to act as an algorithmic stable currency. We retain its highly decentralized characteristics, and we guarantee the Tetra currency has a relatively stable price through algorithms and protocols. We hope TetraPay can become a widely used means of payment. To achieve this goal, a relatively stable value is not enough. The system will also provide a higher incentive ratio for users who save regularly, obtaining a return on investment significantly higher than any commercial bank’s interest rate. We believe that the performance of TetraPay will gradually attract users and expand its scope of use.
+TetraPay is a cross currency lossless payment and settlement system. We hope TetraPay can become a widely used means of payment. To achieve this goal, a relatively stable value is not enough. TetraPay will also provide a higher incentive ratio for users who save regularly, obtaining a return on investment significantly higher than any commercial bank’s interest rate.We believe that the performance of TetraPay will gradually attract users and expand its scope of use.
+This application is to realize the oracle and algorithm part of stable currency Tetra.
 
 <div class="half" style="text-align: center;">
     <img src="https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/homepage.jpg" width="300"/><img src="https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/message.jpg" width="300"/><img src="https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/find.jpg" width="300"/>
 </div>
 
+### Project Details
+
+TetraPay designed Tetra currency to act as an algorithmic stable currency. We retain its highly decentralized characteristics, and we guarantee the Tetra currency has a relatively stable price through algorithms and protocols.
 
 
 
