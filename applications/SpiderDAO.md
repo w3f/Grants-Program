@@ -14,7 +14,7 @@
 
 We intend for SpiderDAO to run on its own Parachain on the Polkadot network. If the bond cannot be funded, the protocol will run on Parathreads or possibly as a series of smart contract on Acala or another Parachain. Our initial testnet and protocol configuration will be built on Kusama and ported onto Polkadot for the mainnet launch.
 
-We believe that in order to fulfil the SpiderDAO’s vision of bringing greater privacy to the end-user, it is vital to establish a robust ecosystem that prioritises users’ interests. To do this, we must first establish a resilient, scalable and community-led governance system that dynamically adapts to the rapidly changing times. We believe that building a decentralised autonomous organisation (or DAO) is the perfect mechanism that will enable us to reach this goal.
+We believe that in order to fulfil the SpiderDAO’s vision of bringing greater privacy to the end-user, it is vital to establish a robust ecosystem that prioritises users’ interests. To do this, we must first establish a resilient, scalable and community-led governance system that dynamically adapts to the rapidly changing times. We believe that building a decentralised autonomous organisation is the perfect mechanism that will enable us to reach this goal.
 
 ### Project Details
 ![](https://i.imgur.com/4y8BwFo.png)
@@ -22,16 +22,12 @@ SpiderDAO’s long term vision is to propose a set of tools bringing privacy and
 
 By deploying a combination of hardware and software tools on top of the Polkadot Governance protocol, SpiderDAO bakes-in an inherently democratic, whale-resistant governance mechanism. This enables the evolution of the network, feature development decisions and the subsequent value creation to be distributed fairly amongst its users instead of being manipulated by a well-resourced, centralised party.
 
-This is achieved through the introduction of a unique governance model with three components - SpiderConnect Hardware Router, the SPDR token and the Spider Virtual Private Network. The SpiderDAO utilises this dual-speed model to shift the voting power away from DAO token holders (as is in traditional DAOs) and towards the hardware owners.
+This is achieved through the introduction of a unique governance model with three components - SpiderConnect Hardware Router, the SPDR token and the Spider Virtual Private Network. The SpiderDAO utilises this dual-speed model to balance the voting power away from DAO token holders (as is in traditional DAOs) and towards the hardware owners.
 The SpiderConnect Hardware Router can be purchased by any community member, once distributed, the owner of the router can then connect it to the Spider Virtual Private Network via the Spider Dashboard.
 
 ![](https://i.imgur.com/XFm46ql.png)
 
-### Ecosystem Fit
 
-We see many projects in the Polkadot ecosystem that are having similar issues when it comes to voting system: MANTRA DAO is one of the examples.
-
-The main problem with **Mantra DAO** which is built on **Rio Chain** is the same problem that many other DAOs faces where each token represent 1 vote in the ecosystem which introduces a major problem with the governing body where whales can take control of the DAO by buying big amounts of tokens making them in a way the deciding vote for any proposals. 
 **SpiderDAO** ecosystem brings together several other components to provide the building blocks for growing and sustaining a dynamic ecosystem. 
 
 ![](https://i.imgur.com/AGJhoA5.png)
@@ -46,16 +42,24 @@ The main problem with **Mantra DAO** which is built on **Rio Chain** is the same
 * **SpiderDashboard** (as seen Below) will provide an end-users access point to the features of the SpiderDAO.
 
  ![](https://i.imgur.com/UuanKdg.png)
+ 
+ 
+### Ecosystem Fit
+
+We see many projects in the Polkadot ecosystem that are having similar issues when it comes to voting system: MANTRA DAO is one of the examples.
+
+The main problem with **Mantra DAO** which is built on **Rio Chain** is the same problem that many other DAOs faces where each token represent 1 vote in the ecosystem which introduces a major problem with the governing body where whales can take control of the DAO by buying big amounts of tokens making them in a way the deciding vote for any proposals. 
+
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 * Nathan Varty (Full-Time, Founder, CEO)
 * Žiga Flis (Full-Time, Founder, Senior blockchain Developer & Analyst)
-* Anas Sayed (Part-Time, Founder, CTO, Development Manager, Architecture, Full Network Stack Implementation)
+* Anas Sayed (Full-Time, Founder, CTO, Development Manager, Architecture, Full Network Stack Implementation)
 * Alexy Petrunin (Full-Time, Senior Backend Developer)
 * Dr. Alfie Zhao (Advisor, Hardware Design)
-* Pierre Laurent (Advisor, Blockchain Guru)
+* Pierre Laurent (Strategic Advisor, Blockchain and crypto Enthusiast)
 
 ### Team Website
 * https://spiderdao.io
@@ -65,10 +69,10 @@ The main problem with **Mantra DAO** which is built on **Rio Chain** is the same
 
 ### Team's experience
 **Nathan Varty**
-* Over 5 years experience investing and trading in digital assets.
 * Experienced entrepreneur specialized in IoT development and operations, Skilled in management of onsite Developers.
-* Successfully overseeing SpiderVPN since 2017.
+* Successfully overseeing SpiderVPN's operations since 2017.
 * Passionate about decentralizing global currency and governance with the vision to implement that in wider fields.
+* Over 5 years experience investing and trading in digital assets.
 
 **Žiga Flis**
 * Worked as a Chief Technology Officer at RiveX, where he contributed to the development of various blockchain technologies.
@@ -86,16 +90,17 @@ The main problem with **Mantra DAO** which is built on **Rio Chain** is the same
 * Developed multiple OpenWRT projects.
 * Extensive knowledge in all Open Systems Interconnection (OSI) model.
 
-**Pierre Laurent**
-* Tech-savvy, startup enthusiast, passionate about blockchain technologies, I'm dynamic and highly motivated.
-* Engineering degree in the fields of Embedded Systems Software Engineering and Engineering Management from ESEO.
-* Co-founder at Atka advisory.
-* Involved in Blockchain and the crypto space since mid-2016, and began trading and investing in different projects since early 2017.
-
 **Dr. Alfie Zhao**
 * Chief Technology Officer, GL Technologies (Hong Kong) Limited.
 * Winner of CES innovation awards in 2019 and 2020.
-* PhD in engineering management compounds has a proven track record in hardware IoT since 2012.
+* PhD in engineering management with proven track record in hardware IoT since 2012.
+
+**Pierre Laurent**
+* Co-founder at Atka advisory.
+* Overseeing the European operation of a cryptocurrency exchange as Blockchain Partnerships Manager in 2018
+* Early adopter of Blockchain and advisor on several projects
+* Trading and investing in different projects since 2016
+* Tech-savvy, startup enthusiast, passionate about blockchain technologies.
 
 ### Team Code Repos
 * https://github.com/spiderdao
@@ -156,7 +161,8 @@ Future Developments will focus on the following:
 Any additional information that you think is relevant to this application that hasn't already been included.
 
 * **What work has been done so far?**
-  White paper and conceptualization are complete, high-level architecture has been designed, and development roadmap has been created. Development is expected to begin very shortly.
+  SpiderVPN has been operating as a company for 3 years, with over 6000 customers and users of the router. A userbase to eventually be leverage for the future of the project.
+  White paper and conceptualization are complete, high-level architecture has been designed, and development roadmap has been created. Actual development has begun.
 * **Are there are any teams who have already contributed (financially) to the project?**
   Our founding team has covered all costs accrued thus far out-of-pocket. We have an investor on the sidelines who will cover any shortfall that may arise between the use of this grant and our next source of funding, whether that be the General Grants program or a VC-led private sale.
 * **Have you applied for other grants so far?**
