@@ -1,111 +1,150 @@
-# Open Grant Proposal
+# SpiderDAO Grant Proposal
 
-> This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
-
-* **Project:** The name of the project
-* **Proposer:** GitHub username
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
-
-*The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
+* **Project:** SpiderDAO
+* **Proposer:** [SpiderDAO] (https://github.com/SpiderDAO)
+* **Payment Address:** 3Pxq3ViqRW6b3e7qsX7Mo7gSikHcToa7ig
 
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
+**SpiderDAO** is a next-generation hardware-based DAO governance model that aims to bring a new standard of fairness to existing DAO frameworks. Traditional DAO models are subject to attack and takeover by plutocracies controlled by wealthy whales. He who controls the votes controls the DAO.
 
 ### Overview
+**SpiderDAO** is a unique governance infrastructure layer for a hardware-enabled DAO and can be applied in a variety of use cases. As the first use case, Spider will leverage its well-established presence in the hardware VPN market together with a partnership with Sentinel, an established dVPN provider and BPSAA Alliance member, to create a fully self-governing decentralized VPN network called SpiderVPN.
 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+We intend for SpiderDAO to run on its own Parachain on the Polkadot network. If the bond cannot be funded, the protocol will run on Parathreads or possibly as a series of smart contract on Acala or another Parachain. Our initial testnet and protocol configuration will be built on Kusama and ported onto Polkadot for the mainnet launch.
 
-### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
+We believe that in order to fulfil the SpiderDAO’s vision of bringing greater privacy to the end-user, it is vital to establish a robust ecosystem that prioritises users’ interests. To do this, we must first establish a resilient, scalable and community-led governance system that dynamically adapts to the rapidly changing times. We believe that building a decentralised autonomous organisation (or DAO) is the perfect mechanism that will enable us to reach this goal.
 
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
+### Project Details
+![](https://i.imgur.com/4y8BwFo.png)
+SpiderDAO’s long term vision is to propose a set of tools bringing privacy and security to today and tomorrow's internet users. To do so in an efficient and sustainable fashion, SpiderDAO’s team imagined and leveraged a robust DAO standard that will withstand the incredible adversity that such a mission implies. A first step is to address the plutocracy governance problem in traditional DAOs by introducing a set of rules that must be abided by to qualify for the right to an on-chain vote via the DAO.
 
-### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
+By deploying a combination of hardware and software tools on top of the Polkadot Governance protocol, SpiderDAO bakes-in an inherently democratic, whale-resistant governance mechanism. This enables the evolution of the network, feature development decisions and the subsequent value creation to be distributed fairly amongst its users instead of being manipulated by a well-resourced, centralised party.
+
+This is achieved through the introduction of a unique governance model with three components - SpiderConnect Hardware Router, the SPDR token and the Spider Virtual Private Network. The SpiderDAO utilises this dual-speed model to shift the voting power away from DAO token holders (as is in traditional DAOs) and towards the hardware owners.
+The SpiderConnect Hardware Router can be purchased by any community member, once distributed, the owner of the router can then connect it to the Spider Virtual Private Network via the Spider Dashboard.
+![]()
+
+### Ecosystem Fit
+We see many projects in the Polkadot ecosystem that are having similar issues when it comes to voting system: MANTRA DAO is one of the examples.
+
+The main problem with **Mantra DAO** which is built on **Rio Chain** is the same problem that many other DAOs faces where each token represent 1 vote in the ecosystem which introduces a major problem with the governing body where whales can take control of the DAO by buying big amounts of tokens making them in a way the deciding vote for any proposals. 
+**SpiderDAO** ecosystem brings together several other components to provide the building blocks for growing and sustaining a dynamic ecosystem. These will include:
+* SpiderDAO is the first hardware-governed DAO with a self-maintaining and self-improving robust Hardware/Software Governance control mechanism.
+* SpiderConnect Routers offer multiple roles as a high-speed VPN tunnel, a DAO voting ticket, and a node in a fully autonomous decentralised VPN.
+* SpiderVPN is a Virtual Private Network interlinking all the elements of the DAO & offering a complimentary dVPN service for qualifying users.
+* SpiderToken (SPDR) - various use cases including; Eligibility for voting rights as a SpiderDAO participant, Liquidity Mining and Liquidity as Utility (LAU) and a substitute payment for SpiderVPN services.
+* SpiderMarket will be an easy way to Sell & buy Bandwidth for SPDR rewards based on the Rules in the Service Level Agreement (SLA).
+* SpiderVault which will be created to accumulate 2% of Crypto proceeds generated by services utilizing the SpiderDAO which can be redistributed for future propositions.
+* SpiderDashboard will provide an end-users access point to the features of the SpiderDAO.
+ ![]()
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
-* Names of team members	
+* Nathan Varty (Full-Time, Founder, CEO)
+* Žiga Flis (Full-Time, Founder, Senior blockchain Developer & Analyst)
+* Anas Sayed (Part-Time, Founder, CTO, Development Manager, Architecture, Full Network Stack Implementation)
+* Alexy Petrunin (Full-Time, Senior Backend Developer)
+* Dr. Alfie Zhao (Advisor, Hardware Design)
+* Pierre Laurent (Advisor, Blockchain Guru)
 
-### Team Website	
-* https://<your_domain>
+### Team Website
+* https://spiderdao.io
 
-### Legal Structure 
-Please provide the name and registered address of the legal entity executing the project.
+### Legal Structure
+**SpiderDAO** is incorporated incorporated in Cayman Island.
 
 ### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+**Nathan Varty**
+* Over 5 years experience investing and trading in digital assets.
+* Experienced entrepreneur specialized in IoT development and operations, Skilled in management of onsite and remote IT Help Desk Administrators and Developers.
+* Successfully overseeing SpiderVPN since 2017.
+* Passionate about decentralizing global currency and governance with the vision to implement that in wider fields.
+
+**Žiga Flis**
+* Worked as a Chief Technology Officer at RiveX, where he contributed to the development of various blockchain technologies.
+* Experienced in on and off-chain tech and has a passion for developing decentralized solutions.
+* Experienced in crypto markets since 2016.
+
+**Anas Sayed**
+* Long standing Project Manager and working with teams of Developers and Administrators.
+* Worked on many projects in Entertainment/Telecommunications field including FuboTV, Pensil Media, SpiderVPN.
+* Currently working on different projects with market leaders in Telecommunications field.
+* Bachelor’s Degree in Computer Science from HICIT in Shorouk Academy, Egypt.
+
+**Alexy Petrunin**
+* Experienced backend developers with full SDLC implementations.
+* Developed multiple OpenWRT projects.
+* Extensive knowledge in all Open Systems Interconnection (OSI) model.
+
+**Pierre Laurent**
+* 
+* 
+
+**Dr. Alfie Zhao**
+*
+*
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+* https://github.com/spiderdao
+* https://github.com/painfull30
+* https://github.com/flisko
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* **Nathan Varty** https://www.linkedin.com/in/nathan-varty-b07235162/
+* **Žiga Flis** https://www.linkedin.com/in/%C5%BEiga-flis-3112896b/
+* **Anas Sayed** https://www.linkedin.com/in/anas-sayed-34a99b73/
+* **Alexy Petrunin** https://www.linkedin.com/in/alexey-petrunin-aa06807a/
+* **Dr. Alfie Zhao** https://www.linkedin.com/in/jianbin-zhao-2b04567/
+* **Pierre Laurent** https://www.linkedin.com/in/pierrelaurent789/
+
 
 ## Development Roadmap :nut_and_bolt: 
 
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
-
-For each milestone:
-* Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* Please include total amount of funding requested per milestone.
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-* Please commit to providing a dockerfiles for the delivery of your project. 
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
-
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
+* **Total Estimated Duration:**  Weeks
+* **Full-time equivalent (FTE):**  
+* **Total Costs:**  BTC
 
-### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 0.75 BTC
+MS 1 | | - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+Week |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |
+
+### Milestone 1 — Summary
+* **Estimated Duration:**  Weeks
+* **FTE:**  
+* **Costs:**  BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-
-### Milestone 2 Example — Additional features
-...
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a full tutorial that explains how to interact and trade with the protocol AMM |
+| 0c. | Testing Guide | The code will have proper unit-test coverage (>90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 1.  | 
+| 2.  | 
+| 3.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone |
+| 4.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
 
 ### Community engagement
-
-As part of the Program, we require that you produce an article/tutorial and publish it (for example on [Medium](https://medium.com/)). It should explain your work done as part of the grant. 
-
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
+We plan to write several pieces about SpiderDAO/SpiderVPN implementation. They include, but are not limited to:
+* 
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
+Future Developments will focus on the following:
+* 
+* 
+
+**Open Source Development Opportunities**
+*
+*
 
 ## Additional Information :heavy_plus_sign: 
 Any additional information that you think is relevant to this application that hasn't already been included.
 
-Possible additional information to include:
 * What work has been done so far?
+  White paper and conceptualization are complete, high-level architecture has been designed, and development roadmap has been created. Development is expected to begin very shortly.
 * Are there are any teams who have already contributed (financially) to the project?
+  Our founding team has covered all costs accrued thus far out-of-pocket. We have an investor on the sidelines who will cover any shortfall that may arise between the use of this grant and our next source of funding, whether that be the General Grants program or a VC-led seed round.
 * Have you applied for other grants so far?
+  No
+* How can I get involved?
+  Anyone looking to get involved is more than welcome to reach out to info@olympusprotocol.org. Telegram groups and community creation/outreach will occur once the testnet is in use and we are preparing to launch.
