@@ -199,12 +199,14 @@ The implementation of off-chain workers of the Substrate Framework will be built
 | 0b.        | Documentation           | Documents containing the description of whole architecture design for SubDAO Network. |
 | 0c.        | Testing Guide           | We will provide a full test suite and guide for the POC.     |
 | 1.         | SubDAO Node Repo        | SubDAO Node is built on top of Substrate 2.0 as a customized module written in Rust will use the very consensus protocol. A new pallet using OCW will be implemented to fetch off-chain data as designed to provide such data for DAOs. |
-| 2a.        | SubDAO Template Library | A set of contracts to maintain SubDAO Templates. All DAOs can be created by using the templates in this library. The default templates will be provided,  and the custom template will be supported in the future version. |
+| 2.         | Ink! Contracts          | Contracts will be developed with ink! |
+| 2a.        | SubDAO Template Library | The SubDAO Template Library contract maintains SubDAO Templates. All DAOs can be created by using the templates in this library. The default templates will be provided,  and the custom template will be supported in the future version. |
 | 2b.        | SubDAO Guard            | Another set of contracts to maintain the SubDAO (the original DAO for the SubDAO Network). Any community member can get involved through SubDAO Guard at any time. |
 | 2c.        | SubDAO Voting Template  | The very basic template supported by the SubDAO network, and it's the first template included by the SubDAO template library. |
 | 2d.        | SubDAO Asset Vault      | It's the contract to provide assets management functionalities for all DAO. It's the initial vault for SubDAO itself. |
-| 3.         | Front End               | The webpage provides all the functionalities for the SubDAO network except the off-chain worker and will be implemented with NodeJS. |
+| 3.         | Front End               | The webpage provides all the functionalities for the SubDAO network except the off-chain worker and will be implemented with polkadot.js in NodeJS. |
 | 4.         | Docker Image            | The SubDAO Network docker image contains the POC version running anywhere to verify the idea of the SubDAO Network. |
+| 5.         | Medium Posts            | Articles will be post on medium to expose this project. |
 
 ### Community Engagement
 
