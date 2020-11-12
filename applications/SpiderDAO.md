@@ -3,7 +3,7 @@
 * **Project:** SpiderDAO
 * **Proposer:** [SpiderDAO] (https://github.com/SpiderDAO)
 * **Payment Address:** 3Pxq3ViqRW6b3e7qsX7Mo7gSikHcToa7ig
-* **Document Version:** Version 1.4
+* **Document Version:** Version 1.5
 
 
 ## Project Overview :page_facing_up: 
@@ -24,6 +24,7 @@ By deploying a combination of hardware and software tools on top of the Polkadot
 
 This is achieved through the introduction of a unique governance model with three components - SpiderConnect Hardware Router, the SPDR token and the Spider Virtual Private Network. The SpiderDAO utilises this dual-speed model to shift the voting power away from DAO token holders (as is in traditional DAOs) and towards the hardware owners.
 The SpiderConnect Hardware Router can be purchased by any community member, once distributed, the owner of the router can then connect it to the Spider Virtual Private Network via the Spider Dashboard.
+
 ![](https://i.imgur.com/XFm46ql.png)
 
 ### Ecosystem Fit
@@ -113,17 +114,11 @@ Spider Ecosystem will include:
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:**  Weeks
-* **Full-time equivalent (FTE):**  
-* **Total Costs:**  BTC
-
-MS 1 | | - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-Week |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |
+* **Total Estimated Duration:**  2 Months/POC
+* **Full-time equivalent (FTE):** 15.57
+* **Total Costs:** 1.85 BTC
 
 ### Milestone 1 — Summary
-* **Estimated Duration:**  Weeks
-* **FTE:**  
-* **Costs:**  BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -137,25 +132,32 @@ Week |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |
 
 ### Community engagement
 We plan to write several pieces about SpiderDAO/SpiderVPN implementation. They include, but are not limited to:
-* 
+* Medium Articles
+* Daily Twitter Threads and Posts
+* We also intend to engage community by running range of incentivised testnets to get more feedback from the existing end-users to improve our product.
+* Educating an Ideal processes of hardware voting policy in a DAO structure
 
 ## Future Plans
 Future Developments will focus on the following:
-* 
-* 
+* Incentive programs for validators
+* Bug bounties
+* Hackathon
+* Grants to develop new products under the SpiderDAO Umbrella
+* Decentralized SpiderChat | SpiderCloud | SpiderMail 
 
 **Open Source Development Opportunities**
-*
-*
+* Hardware DAO Development 
+* Networking Routers
+* Operating Systems
 
 ## Additional Information :heavy_plus_sign: 
 Any additional information that you think is relevant to this application that hasn't already been included.
 
-* What work has been done so far?
+* **What work has been done so far?**
   White paper and conceptualization are complete, high-level architecture has been designed, and development roadmap has been created. Development is expected to begin very shortly.
-* Are there are any teams who have already contributed (financially) to the project?
-  Our founding team has covered all costs accrued thus far out-of-pocket. We have an investor on the sidelines who will cover any shortfall that may arise between the use of this grant and our next source of funding, whether that be the General Grants program or a VC-led seed round.
-* Have you applied for other grants so far?
+* **Are there are any teams who have already contributed (financially) to the project?**
+  Our founding team has covered all costs accrued thus far out-of-pocket. We have an investor on the sidelines who will cover any shortfall that may arise between the use of this grant and our next source of funding, whether that be the General Grants program or a VC-led private sale.
+* **Have you applied for other grants so far?**
   No
-* How can I get involved?
+* **How can I get involved?**
   Anyone looking to get involved is more than welcome to reach out to info@spiderdao.io Telegram groups and community creation/outreach will occur once the testnet is in use and we are preparing to launch.
