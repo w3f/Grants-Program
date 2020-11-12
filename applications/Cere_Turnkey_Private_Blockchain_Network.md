@@ -49,7 +49,7 @@ There will be three primary directories in this repository:
 * **Team Members:** Evgeny Svirsky, Shivam C, Huy Thanh N
 * **Team Website:** https://cerebellum-network.github.io/#/team
 * **Code Repos:** https://github.com/Cerebellum-Network/enterprise-blockchain-solution
-* **Website:**	http://cere.io/
+* **Website:**	http://cere.network/
 * **Legal Structure:** Delaware C Corp
 * **Team's Experience:** 
 
