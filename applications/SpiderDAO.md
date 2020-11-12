@@ -52,12 +52,12 @@ The main problem with **Mantra DAO** which is built on **Rio Chain** is the same
 * https://spiderdao.io
 
 ### Legal Structure
-**SpiderDAO** is incorporated incorporated in Cayman Island.
+**SpiderDAO** is incorporated in Cayman Island.
 
 ### Team's experience
 **Nathan Varty**
 * Over 5 years experience investing and trading in digital assets.
-* Experienced entrepreneur specialized in IoT development and operations, Skilled in management of onsite and remote IT Help Desk Administrators and Developers.
+* Experienced entrepreneur specialized in IoT development and operations, Skilled in management of onsite Developers.
 * Successfully overseeing SpiderVPN since 2017.
 * Passionate about decentralizing global currency and governance with the vision to implement that in wider fields.
 
@@ -78,12 +78,15 @@ The main problem with **Mantra DAO** which is built on **Rio Chain** is the same
 * Extensive knowledge in all Open Systems Interconnection (OSI) model.
 
 **Pierre Laurent**
-* 
-* 
+* Tech-savvy, startup enthusiast, passionate about blockchain technologies, I'm dynamic and highly motivated.
+* Engineering degree in the fields of Embedded Systems Software Engineering and Engineering Management from ESEO.
+* Co-founder at Atka advisory.
+* Involved in Blockchain and the crypto space since mid-2016, and began trading and investing in different projects since early 2017.
 
 **Dr. Alfie Zhao**
-*
-*
+* Chief Technology Officer, GL Technologies (Hong Kong) Limited.
+* Winner of CES innovation awards in 2019 and 2020.
+* PhD in engineering management compounds has a proven track record in hardware IoT since 2012.
 
 ### Team Code Repos
 * https://github.com/spiderdao
@@ -147,4 +150,4 @@ Any additional information that you think is relevant to this application that h
 * Have you applied for other grants so far?
   No
 * How can I get involved?
-  Anyone looking to get involved is more than welcome to reach out to info@olympusprotocol.org. Telegram groups and community creation/outreach will occur once the testnet is in use and we are preparing to launch.
+  Anyone looking to get involved is more than welcome to reach out to info@spiderdao.io Telegram groups and community creation/outreach will occur once the testnet is in use and we are preparing to launch.
