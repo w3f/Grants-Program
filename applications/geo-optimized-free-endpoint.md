@@ -26,13 +26,13 @@ We will compare several cloud providers and establish one or more clusters to se
 
 The new cluster will be a kubernetes cluster same as our other clusters. 
 
-Even though our system is designed to support multi-cluster, there will be some extra work to do to adapt the current service with an extra cluster.
+Even though our system is designed to support multi-clusters, there will be some extra works to do to adapt the current service with an extra cluster.
 
 #### Geo Routed DNS
 We will use a Geo Routed DNS to route end-users requests based on their geo location.
 
 #### UI
-UI will keep same as currently we have at app.onfinality.io. The new cluster is behind dns and transparent to end user.
+UI will keep same as what we currently have at app.onfinality.io. The new cluster is behind dns and transparent to end user.
 
 #### Diagnose Tool
 We will open source a tool. Our user can use it to 
@@ -46,6 +46,7 @@ I'm not aware of similar projects' existence.
 ## Team :busts_in_silhouette:
 
 ### Team members
+* Sam Zhou
 * Ian He
 * James Xu
 
@@ -61,39 +62,28 @@ OnFinality Ltd, New Zealand
 
 ### Team's experience
 We've built onfinality which is a sass platform for blockchain teams and user to launch nodes and get access to endpoint of a lot range of blockchain protocols.
-We have supported a lot of polkadot ecosystem projects including Acala, Darwinia, Plasm, Edgeware.   
+
+Also we have supported a lot of polkadot ecosystem projects including Acala, Darwinia, Plasm, Edgeware.   
 
 ### Team Code Repos
 * https://github.com/onfinality-io
 
 ### Team LinkedIn Profiles
+* https://www.linkedin.com/in/sam-zou-5b8169a/
 * https://www.linkedin.com/in/yin-he-7a266345/
 * https://www.linkedin.com/in/zhexu/
 * https://www.linkedin.com/in/james-bayly/
 
 ## Development Roadmap :nut_and_bolt: 
 
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
-
-For each milestone:
-* Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* Please include total amount of funding requested per milestone.
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-* Please commit to providing a dockerfiles for the delivery of your project. 
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
-
 ### Overview
 * **Total Estimated Duration:** 1.5 month
-* **Full-time equivalent (FTE):**   
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
+* **Full-time equivalent (FTE): 2
+* **Total Costs:** 2
 
-### Milestone 1 New Cluster 
+### Milestone 1 - New Cluster 
 * **Estimated Duration:** 1 month
-* **FTE:**  1.25
+* **FTE:**  2.5
 * **Costs:** 1.5 BTC
 
 | Number | Deliverable | Specification |
@@ -102,11 +92,12 @@ To assist you in defining it, we created a document with examples for some grant
 | 2. | Endpoints | Each region that we provide Polkadot and Kusama endpoints will have their own sub-domain so user can chose specifically which region to use |
 | 3. | Statistics | Usages among all regions will be collected and show in our web console for user to inspect |
 | 4. | Free Tier | We offer a free tier for starters to use our service, usages across all regions will be accumulated together. |
-| 5. | Tutorial | We will publish a tutorial in our knowledge base as well as an announcement via our medium account |
+| 5. | Terraform | Script we used to establish the infrastructure |
+| 6. | Tutorial | We will publish a tutorial in our knowledge base as well as an announcement via our medium account |
 
-### Milestone 2 Geo Optimized DNS and Diagnose Tool
+### Milestone 2 - Geo Optimized DNS and Diagnose Tool
 * **Estimated Duration:** 2 weeks
-* **FTE:**  0.5
+* **FTE:**  1
 * **Costs:** 0.5 BTC
 
 | Number | Deliverable | Specification |
@@ -116,10 +107,10 @@ To assist you in defining it, we created a document with examples for some grant
 
 ### Community engagement
 
-We will post in medium of our achievements.
+We will post in our medium account of our achievements.
 
 ## Future Plans
-* We will create a Service Status Page to expose the availability of our service.
+* We plan to create a Service Status Page to expose the availability of our service.
 * The extra clusters will act as a failover plan when any cluster is out of service.
 
 ## Additional Information :heavy_plus_sign: 
