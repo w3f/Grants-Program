@@ -1,14 +1,27 @@
-***TetraPay***
+# Open Grant Proposal
 
- 
+- **Project:**  TetraPay
+- **Proposer:** wbqlove
+- **Payment Address:** 1H7FpnssaTZ8Gj5LRw5Da7dJr4XCQCv2Rx
 
-***Project Introduction***
+## Project Overview 📄
+
+### Overview
+
+We want to create a cross currency lossless payment and settlement system. This application is to realize the oracle and algorithm part of stable currency. We plan to build a parallel chain of poca based on substrate to realize this part and the later digital currency settlement, defi and stacking parts. The beginning of the project is due to the extremely unstable local currency in Brazil, difficulty in exchange exchange and high loss, and the local church needs a convenient church collection software. In the end, we want to realize the rapid and lossless payment and exchange of currency.
+
+### Project Details
 
 TetraPay designed Tetra currency to act as an algorithmic stable currency. We retain its highly decentralized characteristics, and we guarantee the Tetra currency has a relatively stable price through algorithms and protocols. We hope TetraPay can become a widely used means of payment. To achieve this goal, a relatively stable value is not enough. The system will also provide a higher incentive ratio for users who save regularly, obtaining a return on investment significantly higher than any commercial bank’s interest rate. We believe that the performance of TetraPay will gradually attract users and expand its scope of use.
 
+<div class="half" style="text-align: center;">
+    <img src="https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/homepage.jpg" width="300"/><img src="https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/message.jpg" width="300"/><img src="https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/find.jpg" width="300"/>
+</div>
 
 
-***MORE THAN JUST A WALLET***
+
+
+##### ***MORE THAN JUST A WALLET***
 
 1:1 anchored digital stable currencies issued relying on banks, settlement agencies, and commercial institutions in each country; ensuring value anchoring through strict mathematical models, and relying on financial services such as savings, wealth management, lending, staking and other financial services to ensure user profitability while removing hidden costs in currency circulation. Our goal is to achieve a free flow of various anchored currencies.
 
@@ -22,17 +35,17 @@ Manage, exchange and invest your assets with our multichain portfolio. TetraPay 
 
  
 
-***Development and Services***
+### ***Development and Services***
 
 ![img](https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/drawings1.jpg) 
 
-***VALUE-EXCHANGE RATE ORACLE***
+##### ***VALUE-EXCHANGE RATE ORACLE***
 
 Our core goal is to enable TetraPay currency to maintain its purchasing power, have a long-term stable value, and gradually develop into a medium for large-scale transactions and savings. Therefore, TetraPay currency first needs to have a clear value, and keep its price fluctuating within a narrow range around the value.
 
 First the exchange rate of a legal tender cannot be read directly on the blockchain. Secondly, TetraPay currency has a time-sensitive price in the secondary market and is also exogenous to the blockchain, so the agreement must rely on a decentralized method and technology to estimate the real exchange rate.
 
-***EXCHANGE RATE PREDICTION MACHINE***
+##### ***EXCHANGE RATE PREDICTION MACHINE***
 
 \- Regarding TetraPay currency price, the miners initiate a vote, and the voting content is the exchange rate to a legal tender.
 
@@ -44,11 +57,11 @@ First the exchange rate of a legal tender cannot be read directly on the blockch
 
 This voting mechanism ensures that the exchange rate will remain fluctuating within a narrow range, because those who maintain stability will be rewarded, and those who are dishonest will be punished. But we still need to consider the attacking behavior of the saboteur on the mechanism.
 
-***LONG-TERM STABLE DEVELOPMENT-INCENTIVE MECHANISM***
+##### ***LONG-TERM STABLE DEVELOPMENT-INCENTIVE MECHANISM***
 
 Miners in TetraPay currency Play a vital role in the system. On one hand, the miners participated and maintained the PoS consensus, therefore the TetraPay currency system provides a security guarantee. On the other hand, the miners have absorbed TetraPay currency fluctuations in a short period thereby bearing the cost of shrinking the money supply and realized a stable TetraPay currency System.
 
-***AUXILIARY CURRENCY PAYARA***
+##### ***AUXILIARY CURRENCY PAYARA***
 
 TetraPay currency is a decentralized digital currency, when the system detects any deviation of the exchange rate of the legal tender, it is necessary to put pressure on prices through algorithms and agreements to normalize prices. Like any other market, TetraPay currency has the market following simple rules of supply and demand, shrinking the supply of currency will result in higher relative currency prices. That is, when the exchange rate level is lower than the target level, a sufficient reduction in the money supply will restore the price level to normal.
 
@@ -62,38 +75,48 @@ Specifically, from a long-term perspective, the total amount of payara is unchan
 
 ![img](https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/Drawings2.jpg) 
 
- 
+### Ecosystem Fit
 
-***Team Members***
+​	There is currently no similar project in the market. We want to realize digital currency payment and lossless exchange.	
 
-Renato - Once the Head of Brazil and LATAM of Elex and Chief Representative of Oasis Games, has more than 9 years of overseas game publishing experience. Graduated from Pontifícia Universidade Católica de São Paulo, he’s experienced in development, publishing and market strategy of Digital & Entertainment products and services. Also a researcher and enthusiast of Blockchain Technology, Cryptocurrency and Startups.
+## Team 👥
 
-Vincent: Main developer of the mainchain. Designed quantitative trading platforms for multiple exchanges.
+### Team members
 
-Otto: Software architecture and project manager. He has been engaged in software design and architecture for more than ten years. He has built a social platform with hundreds of millions of users. In 2017, he started to develop the blockchain main network.
+- Renato
 
-Pawn: Core algorithm support, Bachelor of Mathematics and Applied Mathematics from Shandong University, PhD in Cyberspace Security from Institute of Information Engineering, Chinese Academy of Sciences. The research direction is cryptography, blockchain and privacy protection.
+- Otto
 
-***Project Github***
+- Vincent
 
-https://github.com/tetrapay/
+- Pawn
 
-***Project Website***
+### Team Website
 
-https://tetra.cash/
+Github: https://github.com/tetrapay/
 
+Webside: https://tetra.cash/
 
-***Legal Estructure***
+Twitter: https://twitter.com/TetraPay_App
+
+### ***Legal Estructure***
 
 Tetra Pay Ltda. (São Paulo – Brazil)
 
-***Development Roadmap***
+### Team's experience
 
-Grant Application of  1.6 BTC
+- Renato(CEO) - Once the Head of Brazil and LATAM of Elex and Chief Representative of Oasis Games, has more than 9 years of overseas game publishing experience. Graduated from Pontifícia Universidade Católica de São Paulo, he’s experienced in development, publishing and market strategy of Digital & Entertainment products and services. Also a researcher and enthusiast of Blockchain Technology, Cryptocurrency and Startups.
+- Otto(CTO): Software architecture and project manager. He has been engaged in software design and architecture for more than ten years. He has built a social platform with hundreds of millions of users. In 2017, he started to develop the blockchain main network.
+- Vincent: Main developer of the mainchain. Designed quantitative trading platforms for multiple exchanges.
+- Pawn: Core algorithm support, Bachelor of Mathematics and Applied Mathematics from Shandong University, PhD in Cyberspace Security from Institute of Information Engineering, Chinese Academy of Sciences. The research direction is cryptography, blockchain and privacy protection.
 
-Receiving address: 1H7FpnssaTZ8Gj5LRw5Da7dJr4XCQCv2Rx
+## Development Roadmap 🔩
 
-***Stablecoin Algorithm (3 months)***
+### Overview
+
+- **Total Estimated Duration:**  12 Week
+- **Full-time equivalent (FTE):** 3
+- **Total Costs:** 1.6 BTC
 
 **###** **Milestone 1 - Basic modules development**
 
@@ -130,3 +153,20 @@ Receiving address: 1H7FpnssaTZ8Gj5LRw5Da7dJr4XCQCv2Rx
 | 0c.    | Testing Guide | Test Guide This stage will have an overall interface test case and a Docker demo |
 | 1.     | TetraExchange | Realize single stablecoin Payara-TetraX exchange module, multi-currency stablecoin TetraX-TetraY free exchange module. |
 | 2.     | TetraFactory  | Realize the burn and minting of TetraX. When the price of Tetra local currency is higher than the price of legal currency, the module triggers the minting to increase liquidity and stabilize the price. When the price of Tetra local currency is lower than the legal currency, the module triggers the burn to maintain price stability. |
+
+
+
+## ***Future Plans***
+
+1. Our payment App TetraPay will initially be promoted in Brazil and South Korea
+2. We need to build a Polkadot parachain, complete our stablecoin agreement, and implement the exchange between any digital currency and tetra stablecoin through the Polkadot cross-chain protocol.
+3. Through Defi, Staking and other methods, users can deposit coins and earn interest, and borrow money for financial management to improve the retention of assets on the chain.
+4. In the later stage, a private trading market will be created through private computing.
+
+
+
+## Additional Information ➕
+
+1. The first version of our payment app has been developed, and we are discussing promotion with local churches and chambers of commerce in Sao Paulo, Brazil.
+2. We reached a user promotion cooperation with Dukascopy Bank.
+
