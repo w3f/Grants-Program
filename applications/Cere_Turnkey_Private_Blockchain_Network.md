@@ -51,9 +51,10 @@ There will be three primary directories in this repository:
 * **Code Repos:** https://github.com/Cerebellum-Network/enterprise-blockchain-solution
 * **Website:**	http://cere.network/
 * **Legal Structure:** Delaware C Corp
-* **Team's Experience:** 
-
-TODO
+* **Team's Experience:**   
+Evgeny has been one of the core developers on Cere team, where he’s been instrumental in developing our blockchain network, tooling, and integrating with real-world applications.   
+Shivam started programming at the age of 13, with roots in all-round programming. One of the first employees at Asia’s top cryptocurrency exchange, winner of multiple global hackathons and an early Blockchain adopter, believer and developer.   
+Thanh has years of experience working with various blockchain projects ranging from Solidity smart contracts to enterprise integrations with Hyperledger and other networks.   
 
 ## Development Roadmap :nut_and_bolt: 
 
