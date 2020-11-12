@@ -1,9 +1,9 @@
 # SpiderDAO Grant Proposal
-
+![](https://i.imgur.com/8Lqmt64.png)
 * **Project:** SpiderDAO
 * **Proposer:** [SpiderDAO] (https://github.com/SpiderDAO)
 * **Payment Address:** 3Pxq3ViqRW6b3e7qsX7Mo7gSikHcToa7ig
-* **Document Version:** Version 1.7
+* **Document Version:** Version 1.8
 
 
 ## Project Overview :page_facing_up: 
