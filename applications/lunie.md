@@ -21,7 +21,7 @@ Please provide the following:
   Participating in the staking economy can be complex and overwhelming. Governance engagement tends to be lower than the broader community would like. Lunie can help by providing a modern user experience and easy-to-use products that Kusama / Polkadot users will love. 
   Our mobile apps, web wallet, and browser extension make it extremely simple to create and read proposals, deposit on proposals, vote on proposals, and understand the origin of the submissions. Having support for Kusama and Polkadot governance in Lunie will make them more accessible, understandable, and more delightful to engage with. 
   Cosmos token holders and validators love Lunie — and we think Polka-folks will too. 😇
-
+   
   * An indication of how you will integrate this project into Substrate / Polkadot.
   
   Lunie is an extensible staking and governance platform. The integration will involve working with our node partners, writing governance API mappers for the Lunie API, integrating Polkadot in our test suites, and building UI for governance related activities.
