@@ -46,9 +46,6 @@ Idavoll Network has a set of pallets to achive the management of DAOs: orgnaizat
 ### Team Code Repos
 * https://github.com/idavollnetwork
 
-### Team Website
-* https://www.idavoll.network/
-
 
 ## Development Roadmap :nut_and_bolt:
 
