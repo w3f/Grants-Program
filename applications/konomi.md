@@ -46,7 +46,14 @@ KONOMI FOUNDATION LTD.
 
 ### Team's experience
 
-Shengmu has more than 5 years entrepreneur experience in tech startups. Before Konomi Network, he started his career in big data analytics at Shopee, a leading ecommerce platform in SEA. He then moved to a healthcare startup as the lead engineer where he designed software product for million-dollar worth projects. He has deep enthusiasm in machine learning and also a veteran in tech project management. His publication was included in the IEEE https://ieeexplore.ieee.org/document/7476392
+Shengmu has more than 5 years entrepreneur experience in tech startups. Before Konomi Network, he started his career in big data analytics at Shopee, a leading ecommerce platform in SEA. He then moved to a healthcare startup as the lead software engineer where he designed software product for million-dollar worth projects. He has deep enthusiasm in machine learning and also a veteran in tech project management. His publication was included in the IEEE https://ieeexplore.ieee.org/document/7476392
+
+Ariel Ho has 7 years entrepreneur experience in tech startups. Before Konomi Network, she founded High Mall Indoor Navigation, an indoor navigation solution provider based on iBeacon Tech, served for Singapore largest chain supermarket NTUC Fairprice. She was the early investor of crypto since 2017. Her expertise in fundraising, strategy management and leadership is valuable to this project. 
+
+Jayden has 8 years entrepreneur experience in Tech startups. Before Konomi Network, he has founded multiple tech startups including Mileslife Singapore and Wecharge.He was the country manager of OFO Singapore. Led the project from launch phase to mature phase. OFO obtain highest ridership in Singapore under his leadership. He was an early investor of crypto and Bitcoin mining since 2015
+
+Yuqing has more than 7 years experience in social media advertising and community building. Before Konomi Network, she started her career as a commercial broker in physical commodity trading sectors. Besides, she is one of the top chinese KOL in Singapore with over 300K+ organic followers on instagram. As a sole proprietor, built relationship with and represented over 100 corporate partners in their online advertising campaigns, including Huawei, Casio, Shopee, Grab, Lazada, Carlsberg and etc. Her expertise in communication and community building is valuable to this project.
+
 
 John is a Substrate developer, Technical ambassador of Polkadot & Substrate. Before Konomi, he was the CTO of C-dot and blockchain tech lead of ARPA project. 
 
@@ -109,6 +116,5 @@ Konomi aims to bridge the gap between crypto and fiat world by offering an easy 
 
 
 Possible additional information to include:
-* What work has been done so far?
-* Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far?
+https://medium.com/konomi
+
