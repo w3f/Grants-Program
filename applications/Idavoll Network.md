@@ -56,13 +56,13 @@ Idavoll Network has a set of pallets to achive the management of DAOs: orgnaizat
 
 * Total Estimated Duration: 4 weeks
 * Full-time equivalent (FTE):  3
-* Total Costs: 1 btc
+* Total Costs: 0.65 btc
 
 ### Milestone 1
 
 * Estimated Duration: 4 weeks
 * FTE:  3
-* Costs: 1 btc
+* Costs: 0.65 btc
 
 In this milestone, We will implement Idavoll DAO proof-of-concept.
 
