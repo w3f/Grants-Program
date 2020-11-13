@@ -46,7 +46,7 @@ I'm not aware of similar projects' existence.
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Sam Zhou
+* Sam Zou
 * Ian He
 * James Xu
 
