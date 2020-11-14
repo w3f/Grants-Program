@@ -4,7 +4,7 @@
 
 * **Project:** Thunder.Univeristy Education Protocol
 * **Proposer:** https://github.com/kaicodex
-* **Payment Address:** TODO
+* **Payment Address:** 1LBN9Y6BpSBAWLpsV1FVog9DiCxut2gmPA
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
@@ -12,10 +12,22 @@
 
 ### Overview
 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+**Brief description of the project**
+
+Thunder University is an industry-driven education protocol for nurturing talent and startups.
+
+**An indication of how you will integrate this project into Substrate / Polkadot / Kusama.**
+
+* We will use Substrate to create our own chain to develop the pallets specific to our education protocol.
+* We will be interested to launch on Kusama, then conduct IPO to get a slot on Polkadot.
+
+**An indication of why your team is interested in creating this project.**
+
+* Launched the Substrate Runtime Developer Program.  We worked together with Parity Technologies and Acala Network. More http://ic.guru/substrate
+* We are currently using industry-driven & apprentice-master approach at a global tech education called Industry Connect that our group owns.
+* We've also run a successful Saas software  which gives us the rich knowledge in education management.
+* We've piloted this concept with tokenization in a centralized solution, we've received amazing result. More info http://io.ic.guru/
+
 
 ### Project Details 
 We expect the teams to already have a solid idea about the project's expected final state.
@@ -28,30 +40,69 @@ Therefore, we ask the teams to submit (where relevant):
 * PoC/MVP or other relevant prior work or research on the topic
 
 ### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
+As far as I know, our protocol would be the first education protocol in the ecosystem. 
+
+We're confident to roll this out and have its pratical use so that we would bring good communities to the ecosystem.
+
+Notably, 
+* We've been operating a tech education business since 2013.
+* We've been operating a Saas education management software since 2015.
+* We've piloted some of the concept from the protocol since 2017 and received expected results.
+
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
-* Names of team members	
+* Kai Zhang
+* David Kurniawan
+* Allan Liang
+
+Advisor & Supporters
+* Ray Lu
+* Shannon Christie
+* Justin Pham
 
 ### Team Website	
-* https://<your_domain>
+* https://thunder.university
 
 ### Legal Structure 
-Please provide the name and registered address of the legal entity executing the project.
+Industry Connect Ltd. 
+B3, 34 Triton Dr. Rosedale, Auckland, New Zealand.
 
 ### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+
+Kai Zhang
+* CTO at Aimy.io - developed an education Saas software from inception to 100K active users with $US 35M transactions of invoices per year.
+* Holding two degrees ie. economics and software developemt.
+* Worked as tech mentor at Industry Connect.
+
+David Kurniawan
+* Full-stack Software Developer at Aimy.io
+* Postgraduate Dipoma in Computing.
+* Extremely hard worker.
+
+Allan Liang
+* Senior Full-stack Software Developer at Aimy.io
+* Postgraduate Dipoma in Computing.
+* Led the team created a payment product in NZ.
+
+Ray Lu (Group Founder)
+* Focusing Bit.Country development which was approved for the open grant.
+* Has hand-on coding experience over a decade. He wrote the first line of code in Basic when he was 15 on IBM-8086.
+* Founded a Saas Startup from inception to growth. So far it has transacted USD$173,899,846 of bookings and serving 107,800 active users.
+* Founded a Tech Edu Startup from inception to growth that has 300 new enrollments every year with a customer base across 8 countries.
+* Bsc in Computer Science at Univerity of Auckland. (Top 1 in writing compiler subject)
+* Involved in Polkadot Ambassador Programme with one reputable Substrate development team in NZ to run local meetups (Temporarily Paused due to Covid-19)
+
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+* https://github.com/thunder-university
+
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* Kai Zhang - https://www.linkedin.com/in/kai-zhang-02676a77/
+* David Kurniawan -  https://www.linkedin.com/in/david-kur/
+* Allan Liang - https://www.linkedin.com/in/allan-liang-0a8555124/
 
 ## Development Roadmap :nut_and_bolt: 
 
@@ -69,14 +120,14 @@ To assist you in defining it, we created a document with examples for some grant
 * Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
 
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
+* **Total Estimated Duration:** 2 Months
+* **Full-time equivalent (FTE):**  2 FTE
+* **Total Costs:** 1 BTC
 
-### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
-* **FTE:**  1.5
-* **Costs:** 0.5 BTC
+### Implement Substrate Modules 
+* **Estimated Duration:** 2 month
+* **FTE:**  2
+* **Costs:** 1 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -89,22 +140,36 @@ To assist you in defining it, we created a document with examples for some grant
 | 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
-### Milestone 2 Example — Additional features
-...
 
 ### Community engagement
 
-As part of the Program, we require that you produce an article/tutorial and publish it (for example on [Medium](https://medium.com/)). It should explain your work done as part of the grant. 
+**Published Medium Article**
 
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
+[Introducing the Master-Apprentice model for the modern age!](https://thunder-university.medium.com/introducing-the-master-apprentice-model-for-the-modern-age-2aa1006e1e77)). 
+
+**Promo Video**
+[![Watch Video](https://mvp.studio/wp-content/uploads/2020/11/thunder.jpg)](https://vimeo.com/442526152/aaa4ba2c40)
+
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
+After developing the protocol, we will start implementing the dapp. 
+
+We are very interested to integrate with Kusama and Polkadot to share the secuirty.
+
 
 ## Additional Information :heavy_plus_sign: 
-Any additional information that you think is relevant to this application that hasn't already been included.
 
-Possible additional information to include:
-* What work has been done so far?
-* Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far?
+**What work has been done so far?**
+
+* We've proved the model with centralized solution.
+* We've created our branding and website.
+* The white paper had been done and ready to make public.
+
+**Are there are any teams who have already contributed (financially) to the project?**
+
+MVP Studio, our group company, had invested all the resources into this project so far.
+
+**Have you applied for other grants so far**
+The other team (Bit.country) under our group had also applied for the open grant which had been approved.
+Their team will offer us some mentorship along the way. Some of us worked in the same office based in Auckland, New Zealand.
+
