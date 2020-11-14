@@ -84,13 +84,13 @@ Allan Liang
 * Postgraduate Dipoma in Computing.
 * Led the team created a payment product in NZ.
 
-Ray Lu (Group Founder)
-* Focusing Bit.Country development which was approved for the open grant.
+Ray Lu (Group Company Founder)
+* Currently focusing Bit.Country development which was approved for the open grant.
+* A Polkadot Ambassador based in New Zaland.
 * Has hand-on coding experience over a decade. He wrote the first line of code in Basic when he was 15 on IBM-8086.
 * Founded a Saas Startup from inception to growth. So far it has transacted USD$173,899,846 of bookings and serving 107,800 active users.
 * Founded a Tech Edu Startup from inception to growth that has 300 new enrollments every year with a customer base across 8 countries.
 * Bsc in Computer Science at Univerity of Auckland. (Top 1 in writing compiler subject)
-* Involved in Polkadot Ambassador Programme with one reputable Substrate development team in NZ to run local meetups (Temporarily Paused due to Covid-19)
 
 
 ### Team Code Repos
