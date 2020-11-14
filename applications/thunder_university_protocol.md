@@ -1,12 +1,9 @@
 # Open Grant Proposal
 
-> This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
 * **Project:** Thunder.Univeristy Education Protocol
 * **Proposer:** https://github.com/kaicodex
 * **Payment Address:** 1LBN9Y6BpSBAWLpsV1FVog9DiCxut2gmPA
-
-*The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
 
@@ -18,15 +15,16 @@ Thunder University is an industry-driven education protocol for nurturing talent
 
 **An indication of how you will integrate this project into Substrate / Polkadot / Kusama.**
 
-* We will use Substrate to create our own chain to develop the pallets specific to our education protocol.
-* We will be interested to launch on Kusama, then conduct IPO to get a slot on Polkadot.
+* Create our own chain with Substrate technologies.
+* Develop the pallets/runtime modules specific to our education protocol.
+* Interested to launch on Kusama, then conduct IPO to get a slot on Polkadot.
 
 **An indication of why your team is interested in creating this project.**
 
-* Launched the Substrate Runtime Developer Program.  We worked together with Parity Technologies and Acala Network. More http://ic.guru/substrate
-* We are currently using industry-driven & apprentice-master approach at a global tech education called Industry Connect that our group owns.
-* We've also run a successful Saas software  which gives us the rich knowledge in education management.
-* We've piloted this concept with tokenization in a centralized solution, we've received amazing result. More info http://io.ic.guru/
+* Launched the Substrate Runtime Developer Program. We worked together with Parity Technologies and Acala Network. We'd love to use this protocol to run the program one day. More http://ic.guru/substrate
+* We've been using industry-driven & apprentice-master approach at Industry Connect - a global tech education that our group owns.
+* We've also been operating a successful education Saas software which gives us the rich knowledge in education management. More info http://aimy.io
+* We've piloted the concept of the protocol with tokenization in a centralized solution, we've received amazing result. More info http://io.ic.guru/
 
 
 ### Project Details 
@@ -120,13 +118,13 @@ To assist you in defining it, we created a document with examples for some grant
 * Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
 
 ### Overview
-* **Total Estimated Duration:** 2 Months
-* **Full-time equivalent (FTE):**  2 FTE
+* **Total Estimated Duration:** 1 Month
+* **Full-time equivalent (FTE):**  2.5 FTE
 * **Total Costs:** 1 BTC
 
 ### Implement Substrate Modules 
-* **Estimated Duration:** 2 month
-* **FTE:**  2
+* **Estimated Duration:** 1 month
+* **FTE:**  2.5
 * **Costs:** 1 BTC
 
 | Number | Deliverable | Specification |
@@ -145,7 +143,7 @@ To assist you in defining it, we created a document with examples for some grant
 
 **Published Medium Article**
 
-[Introducing the Master-Apprentice model for the modern age!](https://thunder-university.medium.com/introducing-the-master-apprentice-model-for-the-modern-age-2aa1006e1e77)). 
+[Introducing the Master-Apprentice model for the modern age!](https://thunder-university.medium.com/introducing-the-master-apprentice-model-for-the-modern-age-2aa1006e1e77). 
 
 **Promo Video**
 [![Watch Video](https://mvp.studio/wp-content/uploads/2020/11/thunder.jpg)](https://vimeo.com/442526152/aaa4ba2c40)
@@ -170,6 +168,7 @@ We are very interested to integrate with Kusama and Polkadot to share the secuir
 MVP Studio, our group company, had invested all the resources into this project so far.
 
 **Have you applied for other grants so far**
+
 The other team (Bit.country) under our group had also applied for the open grant which had been approved.
 Their team will offer us some mentorship along the way. Some of us worked in the same office based in Auckland, New Zealand.
 
