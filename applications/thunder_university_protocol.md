@@ -18,9 +18,13 @@ Reinvigorate the Master-Apprentice Model. Thunderous Protocol is the blockchain 
 Tokenization with customized blockchain rules will push learning, teaching, mentoring and innovating experience to a new level. 
 
 **Here are some typical use cases**
-* Earn Back Model: A learner pays the full course fee, and will get half of that refunded after meeting certain criteria during the learning journey e.g. attendance is met.
-* Sponsored Model: A learner deposits the full course fee, the employer deposits the full course fee for the learner. When the learner meets certain criteria set by employers, employer's charged, learner's deposit is refunded. Otherwise learner is charged, employer is refunded.
-* Learn to Earn Model: A learner get paid after meeting certain criteria. 
+* Learn & Earn Back Model
+  * A learner pays the full course fee, and will get half of that refunded after meeting certain criteria during the learning journey e.g. attendance is met.
+* Sponsored Learning Mode
+  * A learner deposits the full course fee, the employer deposits the full course fee for the learner. When the learner meets certain criteria set by employers, employer's charged, learner's deposit is refunded. Otherwise learner is charged, employer is refunded.
+* Learn to Earn Model
+  * Variation 1: A learner get paid after meeting certain criteria. No upfront fee is required.
+  * Variation 2: A learner get paid after meeting each KPI of the whole criteria. No upfront fee is required.
 
 
 **An indication of how you will integrate this project into Substrate / Polkadot / Kusama.**
