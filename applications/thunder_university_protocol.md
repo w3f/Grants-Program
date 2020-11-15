@@ -40,15 +40,15 @@ Here are some creatives illustrating how the protocol will work
 
 ![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture6.png)
 
-**Master Projects**
+**Master Led Learning Journey**
 
 ![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture1.jpg)
 
-**Employers Projects**
+**Employer Lead Learning Journey**
 
 ![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture3.jpg)
 
-**How Smart CV Works**
+**How Verified Professional Skills Work**
 
 ![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture4.jpg)
 
