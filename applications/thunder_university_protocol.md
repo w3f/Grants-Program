@@ -3,7 +3,7 @@
 
 * **Project:** Thunderous Network - an Industry-Drive Education Protocol. 
 * **Webiste:** https://thunder.university
-* **Whitepaper:** [Thunderous Whitepaper](http://thunder.university/wp-content/uploads/2020/11/Whitepaper-draft.pdf)
+* **Whitepaper:** [Whitepaper](http://thunder.university/wp-content/uploads/2020/11/Whitepaper-draft.pdf)
 * **Proposer:** https://github.com/kaicodex
 * **Payment Address:** 1LBN9Y6BpSBAWLpsV1FVog9DiCxut2gmPA
 
