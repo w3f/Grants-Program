@@ -42,15 +42,15 @@ Here are some creatives illustrating how the protocol will work
 
 **Master Projects**
 
-![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture1.png)
+![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture1.jpg)
 
 **Employers Projects**
 
-![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture3.png)
+![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture3.jpg)
 
 **How Smart CV Works**
 
-![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture7.png)
+![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture7.jpg)
 
 
 
