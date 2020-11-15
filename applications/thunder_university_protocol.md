@@ -1,7 +1,7 @@
 # Open Grant Proposal
 
 
-* **Project:** Thunder.Univeristy Education Protocol
+* **Project:** Thunderous Network - an Industry-Drive Education Protocol. 
 * **Proposer:** https://github.com/kaicodex
 * **Payment Address:** 1LBN9Y6BpSBAWLpsV1FVog9DiCxut2gmPA
 
@@ -11,12 +11,12 @@
 
 **Brief description of the project**
 
-Thunder University is an industry-driven education protocol for nurturing talent and startups.
+Thunderous Protocol is the blockchain network implementing the industry-driven education protocol. Thunder.University will be the DApp using Thunderous protocol.
 
 **An indication of how you will integrate this project into Substrate / Polkadot / Kusama.**
 
-* Create our own chain with Substrate technologies.
-* Develop the pallets/runtime modules specific to our education protocol.
+* Create our own blockchain network with Substrate technologies.
+* Develop the pallets/runtime modules for the education protocol.
 * Interested to launch on Kusama, then conduct IPO to get a slot on Polkadot.
 
 **An indication of why your team is interested in creating this project.**
@@ -28,17 +28,22 @@ Thunder University is an industry-driven education protocol for nurturing talent
 
 
 ### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
 
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
+The whole project consists of two main components. This application is for the blockchain/protocol part.
+
+* The blockchain and protocol, it is called Thunderous Network.
+* The DApp implementing the protocol, it is called Thunder University.
+
+Here are some creatives illustrating how the protocol will work
+
+**Overview of Use Cases**
+
+![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture6.png)
+
+
 
 ### Ecosystem Fit 
-As far as I know, our protocol would be the first education protocol in the ecosystem. 
+As far as we know, our protocol would be the first education centric  protocol in the ecosystem. 
 
 We're confident to roll this out and have its pratical use so that we would bring good communities to the ecosystem.
 
@@ -56,7 +61,7 @@ Notably,
 * Allan Liang
 
 Advisor & Supporters
-* Ray Lu
+* Ray Lu (Group Founder)
 * Shannon Christie
 * Justin Pham
 
