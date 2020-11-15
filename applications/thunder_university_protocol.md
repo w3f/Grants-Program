@@ -1,7 +1,7 @@
 # Open Grant Proposal
 
 
-* **Project:** Thunderous Network - an Industry-Drive Education Protocol. 
+* **Project:** Thunderous Network - An Industry-Drive Education Protocol. 
 * **Webiste:** https://thunder.university
 * **Whitepaper:** [Whitepaper](http://thunder.university/wp-content/uploads/2020/11/Whitepaper-draft.pdf)
 * **Proposer:** https://github.com/kaicodex
@@ -14,6 +14,14 @@
 **Brief description of the project**
 
 Reinvigorate the Master-Apprentice Model. Thunderous Protocol is the blockchain network implementing the industry-driven education protocol. Thunder.University will be the DApp using Thunderous protocol.
+
+Tokenization with customized blockchain rules will push learning, teaching, mentoring and innovating experience to a new level. 
+
+**Here are some typical use cases**
+* Earn Back Model: A learner pays the full course fee, and will get half of that refunded after meeting certain criteria during the learning journey e.g. attendance is met.
+* Sponsored Model: A learner deposits the full course fee, the employer deposits the full course fee for the learner. When the learner meets certain criteria set by employers, employer's charged, learner's deposit is refunded. Otherwise learner is charged, employer is refunded.
+* Learn to Earn Model: A learner get paid after meeting certain criteria. 
+
 
 **An indication of how you will integrate this project into Substrate / Polkadot / Kusama.**
 
