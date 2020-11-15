@@ -23,10 +23,10 @@ Reinvigorate the Master-Apprentice Model. Thunderous Protocol is the blockchain 
 
 **An indication of why your team is interested in creating this project.**
 
-* Launched the Substrate Runtime Developer Program. We worked together with Parity Technologies and Acala Network. We'd love to use this protocol to run the program one day. More http://ic.guru/substrate
-* We've been using industry-driven & apprentice-master approach at Industry Connect - a global tech education that our group owns.
-* We've also been operating a successful education Saas software which gives us the rich knowledge in education management. More info http://aimy.io
-* We've piloted the concept of the protocol with tokenization in a centralized solution, we've received amazing result. More info http://io.ic.guru/
+* :point_right: Launched the Substrate Runtime Developer Program. We worked together with Parity Technologies and Acala Network. :100:We'd love to use this protocol to run the program one day. More http://ic.guru/substrate
+* :point_right: Using industry-driven & apprentice-master approach at Industry Connect - a global tech education under our group.
+* :point_right: Operating a successful education Saas software which gives us the rich knowledge in education management. More info http://aimy.io
+* :point_right: Piloted the concept of the protocol with tokenization in a centralized solution, we've received amazing result. More info http://io.ic.guru/
 
 
 ### Project Details 
@@ -60,7 +60,7 @@ Here are some creatives illustrating how the protocol will work
 ### Ecosystem Fit 
 As far as we know, our protocol would be the first education centric protocol in the ecosystem. 
 
-We're confident to roll this out and have its pratical use so that we would bring good communities to the ecosystem.
+We're confident to roll this out and have its pratical use so that we would bring good communities to the Polkadot/Substrate ecosystem.
 
 Notably, 
 * We've been operating a tech education business since 2013.
