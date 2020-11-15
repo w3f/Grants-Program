@@ -3,7 +3,7 @@
 
 * **Project:** Thunderous Network - an Industry-Drive Education Protocol. 
 * **Webiste:** https://thunder.university
-* **Whitepaper:** ![Thunderous Whitepaper](http://thunder.university/wp-content/uploads/2020/11/Whitepaper-draft.pdf)
+* **Whitepaper:** [Thunderous Whitepaper](http://thunder.university/wp-content/uploads/2020/11/Whitepaper-draft.pdf)
 * **Proposer:** https://github.com/kaicodex
 * **Payment Address:** 1LBN9Y6BpSBAWLpsV1FVog9DiCxut2gmPA
 
@@ -166,16 +166,22 @@ To assist you in defining it, we created a document with examples for some grant
 
 **Published Medium Article**
 
-[Introducing the Master-Apprentice model for the modern age!](https://thunder-university.medium.com/introducing-the-master-apprentice-model-for-the-modern-age-2aa1006e1e77). 
+* [Introducing the Master-Apprentice model for the modern age!](https://thunder-university.medium.com/introducing-the-master-apprentice-model-for-the-modern-age-2aa1006e1e77). 
+
+**Facebook Campaign**
+
+* Concept Validation
+
+![Thunder University](https://mvp.studio/wp-content/uploads/2020/11/20201115215850.png)
+
 
 **Promo Video**
 [![Watch Video](https://mvp.studio/wp-content/uploads/2020/11/thunder.jpg)](https://vimeo.com/442526152/aaa4ba2c40)
 
 
 ## Future Plans
-After developing the protocol, we will start implementing the dapp. 
 
-We are very interested to integrate with Kusama and Polkadot to share the secuirty.
+After developing the protocol, we will start implementing the dapp. We are very interested to integrate with Kusama and Polkadot to share the secuirty. We will be interested to do crowd funding to connect with Polkadot.
 
 
 ## Additional Information :heavy_plus_sign: 
