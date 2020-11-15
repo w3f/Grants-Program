@@ -50,7 +50,7 @@ Here are some creatives illustrating how the protocol will work
 
 **How Smart CV Works**
 
-![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture7.jpg)
+![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture4.jpg)
 
 
 
