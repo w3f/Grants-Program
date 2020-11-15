@@ -40,6 +40,18 @@ Here are some creatives illustrating how the protocol will work
 
 ![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture6.png)
 
+**Master Projects**
+
+![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture1.png)
+
+**Employers Projects**
+
+![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture3.png)
+
+**How Smart CV Works**
+
+![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture7.png)
+
 
 
 ### Ecosystem Fit 
