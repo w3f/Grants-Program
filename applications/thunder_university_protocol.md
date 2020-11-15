@@ -122,23 +122,12 @@ Ray Lu (Group Company Founder)
 * David Kurniawan -  https://www.linkedin.com/in/david-kur/
 * Allan Liang - https://www.linkedin.com/in/allan-liang-0a8555124/
 
-Advisor
-* Ray Lu - https://www.linkedin.com/in/codemeit
+Advisor & Mentor
+* Ray Lu (Polkadot Ecosystem) - https://www.linkedin.com/in/codemeit
+* Shannon Christie (Substrate) - https://www.linkedin.com/in/shannonchristie/
+* Justin Pham (Substrate) - https://www.linkedin.com/in/justinphamit/
 
 ## Development Roadmap :nut_and_bolt: 
-
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
-
-For each milestone:
-* Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* Please include total amount of funding requested per milestone.
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-* Please commit to providing a dockerfiles for the delivery of your project. 
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
 
 ### Overview
 * **Total Estimated Duration:** 1 Month
@@ -152,14 +141,19 @@ To assist you in defining it, we created a document with examples for some grant
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation |This will be done at code level as well as updated whitepaper.|
+| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. | 
+| 1. | Substrate module: Apprentice | |  
+| 2. | Substrate module: Master | |  
+| 3. | Substrate module: Employer | |  
+| 4. | Substrate module: Angel | |  
+| 5. | Substrate module: Program | |  
+| 6. | Substrate module: Project | |  
+| 7. | Substrate module: Cohort | | 
+| 8. | Substrate module: SmartCV | |
+| 9. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 10. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 
 ### Community engagement
