@@ -2,6 +2,8 @@
 
 
 * **Project:** Thunderous Network - an Industry-Drive Education Protocol. 
+* **Webiste:** https://thunder.university
+* **Whitepaper:** ![Thunderous Whitepaper](http://thunder.university/wp-content/uploads/2020/11/Whitepaper-draft.pdf)
 * **Proposer:** https://github.com/kaicodex
 * **Payment Address:** 1LBN9Y6BpSBAWLpsV1FVog9DiCxut2gmPA
 
@@ -11,7 +13,7 @@
 
 **Brief description of the project**
 
-Thunderous Protocol is the blockchain network implementing the industry-driven education protocol. Thunder.University will be the DApp using Thunderous protocol.
+Reinvigorate the Master-Apprentice Model. Thunderous Protocol is the blockchain network implementing the industry-driven education protocol. Thunder.University will be the DApp using Thunderous protocol.
 
 **An indication of how you will integrate this project into Substrate / Polkadot / Kusama.**
 
@@ -29,7 +31,7 @@ Thunderous Protocol is the blockchain network implementing the industry-driven e
 
 ### Project Details 
 
-The whole project consists of two main components. This application is for the blockchain/protocol part.
+The whole project consists of two main components. This application focuses on the blockchain/protocol part.
 
 * The blockchain and protocol, it is called Thunderous Network.
 * The DApp implementing the protocol, it is called Thunder University.
@@ -38,24 +40,25 @@ Here are some creatives illustrating how the protocol will work
 
 **Overview of Use Cases**
 
+
 ![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture6.png)
 
-**Master Led Learning Journey**
+**Master-Led Learning & Startup Journey**
 
-![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture1.jpg)
+![Master-Led overview](https://mvp.studio/wp-content/uploads/2020/11/Picture1.jpg)
 
-**Employer Lead Learning Journey**
+**Employer-Led Learning Journey & Employment Journey**
 
-![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture3.jpg)
+![Employer-Led overview](https://mvp.studio/wp-content/uploads/2020/11/Picture3.jpg)
 
 **How Verified Professional Skills Work**
 
-![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture4.jpg)
+![Verified Professional Skills](https://mvp.studio/wp-content/uploads/2020/11/Picture4.jpg)
 
 
 
 ### Ecosystem Fit 
-As far as we know, our protocol would be the first education centric  protocol in the ecosystem. 
+As far as we know, our protocol would be the first education centric protocol in the ecosystem. 
 
 We're confident to roll this out and have its pratical use so that we would bring good communities to the ecosystem.
 
@@ -87,17 +90,17 @@ B3, 34 Triton Dr. Rosedale, Auckland, New Zealand.
 ### Team's experience
 
 Kai Zhang
-* CTO at Aimy.io - developed an education Saas software from inception to 100K active users with $US 35M transactions of invoices per year.
+* CTO at Aimy.io (A company under MVP STUDIO Group) - developed an education Saas software from inception to 100K active users with $US 35M transactions of invoices per year.
 * Holding two degrees ie. economics and software developemt.
 * Worked as tech mentor at Industry Connect.
 
 David Kurniawan
-* Full-stack Software Developer at Aimy.io
+* Full-stack Software Developer at Aimy.io (A company under MVP STUDIO Group)
 * Postgraduate Dipoma in Computing.
 * Extremely hard worker.
 
 Allan Liang
-* Senior Full-stack Software Developer at Aimy.io
+* Senior Full-stack Software Developer at Aimy.io (A company under MVP STUDIO Group)
 * Postgraduate Dipoma in Computing.
 * Led the team created a payment product in NZ.
 
@@ -118,6 +121,9 @@ Ray Lu (Group Company Founder)
 * Kai Zhang - https://www.linkedin.com/in/kai-zhang-02676a77/
 * David Kurniawan -  https://www.linkedin.com/in/david-kur/
 * Allan Liang - https://www.linkedin.com/in/allan-liang-0a8555124/
+
+Advisor
+* Ray Lu - https://www.linkedin.com/in/codemeit
 
 ## Development Roadmap :nut_and_bolt: 
 
