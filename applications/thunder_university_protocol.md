@@ -17,15 +17,6 @@ Reinvigorate the Master-Apprentice Model. Thunderous Protocol is the blockchain 
 
 Tokenization with customized blockchain rules will push learning, teaching, mentoring and innovating experience to a new level. 
 
-**Here are some typical use cases**
-* Learn & Earn Back Model
-  * A learner pays the full course fee, and will get half of that refunded after meeting certain criteria during the learning journey e.g. attendance is met.
-* Sponsored Learning Model
-  * A learner deposits the full course fee, the employer also deposits the full course fee for the learner. When the learner meets certain criteria set by employers, employer's charged, learner's deposit is refunded. Otherwise learner is charged, employer is refunded.
-* Learn to Earn Model
-  * Variation 1: A learner gets paid after meeting certain criteria. No upfront fee is required.
-  * Variation 2: A learner gets paid after meeting each KPI of the whole criteria. No upfront fee is required.
-
 
 **An indication of how you will integrate this project into Substrate / Polkadot / Kusama.**
 
@@ -52,6 +43,14 @@ Here are some creatives illustrating how the protocol will work
 
 **Overview of Use Cases**
 
+**Here are some typical use cases**
+* Learn & Earn Back Model
+  * A learner pays the full course fee, and will get half of that refunded after meeting certain criteria during the learning journey e.g. attendance is met.
+* Sponsored Learning Model
+  * A learner deposits the full course fee, the employer also deposits the full course fee for the learner. When the learner meets certain criteria set by employers, employer's charged, learner's deposit is refunded. Otherwise learner is charged, employer is refunded.
+* Learn to Earn Model
+  * Variation 1: A learner gets paid after meeting certain criteria. No upfront fee is required.
+  * Variation 2: A learner gets paid after meeting each KPI of the whole criteria. No upfront fee is required.
 
 ![Transactions overview](https://mvp.studio/wp-content/uploads/2020/11/Picture6.png)
 
@@ -87,17 +86,16 @@ Notably,
 * David Kurniawan
 * Allan Liang
 
-Advisor & Supporters
+Advisors & Supporters
 * Ray Lu (Group Founder)
-* Shannon Christie
 * Justin Pham
+* Shannon Christie
 
 ### Team Website	
 * https://thunder.university
 
 ### Legal Structure 
-Industry Connect Ltd. 
-B3, 34 Triton Dr. Rosedale, Auckland, New Zealand.
+The Thunderous protocol team is based in New Zealand. The Thunder company will be setup in blockchain friendly jurisdiction,e g. Singapore.
 
 ### Team's experience
 
@@ -156,12 +154,13 @@ Advisor & Mentor
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation |This will be done at code level as well as updated whitepaper.|
 | 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. | 
-| 1. | Substrate module: Program |Masters can manage programs in ths pallet. create_program, create_intake for program |  
-| 2. | Substrate module: RuleEngine|Users can create rules, program can link to a rule created to determin the payment, refund and completeion criteria|
-| 3. | Substrate module: Enrolment |Apprentice can enrol_program with fees, cancel_enrolment, master can terminate_enrolment. All the logic is determined by the rule set in the program.|  
-| 4. | Substrate module: KPI |In the rule applied to the program, it requires KPI logs to determine if the criteria in the rule is met for the program. Once all the KPIs are met, the actions within the rule will be executed. Actions could be taking deposit, refund, partial refund, reward, certification etc. Program owners can also apply the rule to the program in this pallet.
-| 5. | Substrate module: Angel | |  
-| 6. | Substrate module: Program | |  
+| 1. | Substrate module: Program |Masters can manage programs in ths pallet. create_program, create_intake for program. A program can be a course or project with trackable KPIs.|  
+| 2. | Substrate module: RuleEngine|Users can create rules, a program can link to a rule to determine the actions to be executed. 
+A rule defines 1) KPIs 2) Actions after KPIs are all logged. An action can be 1) Taking Deposit 2) Refund / Partial Refund 3) Reward 4) Certification 5) ProSet. A ProSet can be 1) Skill 2) Experience.|
+| 3. | Substrate module: Enrolment |Users can enrol_program with fees, cancel_enrolment, master can terminate_enrolment. All the logic herein is determined by the rule set in the program. Actions of the rules are executed automatically.|
+| 4. | Substrate module: KPI |In the rule applied to the program, it requires KPI logs to determine if the criteria in the rule is met for the program. If cerntern / all KPIs are met, the actions within the rule will be executed in the pallet. Actions could be taking deposit, refund, partial refund, reward, certification etc. Program owners can also apply the rule to the program in this pallet.
+| 5. | Substrate module: Sponsorship |Anyone can sponsor_someone to take on a program. e.g. Employer sponsor an apprentice to learn a course. For more, please refer to use case overview: Sponsored Learning Model|  
+| 6. | Substrate module: Attendance|log_attendance is a special KPI of a program. A learner needs to scan the QR code displayed randomly on the course content or UI. The scan will trigger an extrinsic to function to proof the engagement. In the future, we will create an mobile app to scan the QR code and make calls to the node. |  
 | 7. | Substrate module: Project | |  
 | 8. | Substrate module: Cohort | | 
 | 9. | Substrate module: SmartCV | |
