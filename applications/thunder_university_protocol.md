@@ -154,18 +154,15 @@ Advisor & Mentor
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation |This will be done at code level as well as updated whitepaper.|
 | 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. | 
-| 1. | Substrate module: Program |Masters can manage programs in ths pallet. create_program, create_intake for program. A program can be a course or project with trackable KPIs.|  
-| 2. | Substrate module: RuleEngine|Users can create rules, a program can link to a rule to determine the actions to be executed. 
-A rule defines 1) KPIs 2) Actions after KPIs are all logged. An action can be 1) Taking Deposit 2) Refund / Partial Refund 3) Reward 4) Certification 5) ProSet. A ProSet can be 1) Skill 2) Experience.|
-| 3. | Substrate module: Enrolment |Users can enrol_program with fees, cancel_enrolment, master can terminate_enrolment. All the logic herein is determined by the rule set in the program. Actions of the rules are executed automatically.|
-| 4. | Substrate module: KPI |In the rule applied to the program, it requires KPI logs to determine if the criteria in the rule is met for the program. If cerntern / all KPIs are met, the actions within the rule will be executed in the pallet. Actions could be taking deposit, refund, partial refund, reward, certification etc. Program owners can also apply the rule to the program in this pallet.
-| 5. | Substrate module: Sponsorship |Anyone can sponsor_someone to take on a program. e.g. Employer sponsor an apprentice to learn a course. For more, please refer to use case overview: Sponsored Learning Model|  
-| 6. | Substrate module: Attendance|log_attendance is a special KPI of a program. A learner needs to scan the QR code displayed randomly on the course content or UI. The scan will trigger an extrinsic to function to proof the engagement. In the future, we will create an mobile app to scan the QR code and make calls to the node. |  
-| 7. | Substrate module: Project | |  
-| 8. | Substrate module: Cohort | | 
-| 9. | Substrate module: SmartCV | |
-| 10. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 11. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Program Pallet |Masters can manage programs in ths pallet. create_program, create_intake for program. A program can be a course or project with trackable KPIs.|  
+| 2. | RuleEngine Pallet|Users can create rules, a program can link to a rule to determine the actions to be executed. A rule defines 1) KPIs 2) Actions after KPIs are all logged. An action can be 1) Taking Deposit 2) Refund / Partial Refund 3) Reward 4) Certification 5) ProSet. A ProSet can be 1) Skill 2) Experience.|
+| 3. | Enrolment Pallet|Users can enrol_program with fees, cancel_enrolment, master can terminate_enrolment. All the logic herein is determined by the rule set in the program. Actions of the rules are executed automatically.|
+| 4. | KPI Pallet |In the rule applied to the program, it requires KPI logs to determine if the criteria in the rule is met for the program. If cerntern / all KPIs are met, the actions within the rule will be executed in the pallet. Actions could be taking deposit, refund, partial refund, reward, certification etc. Program owners can also apply the rule to the program in this pallet.
+| 5. | Sponsorship Pallet |Anyone can sponsor_someone to take on a program. e.g. Employer sponsor an apprentice to learn a course. For more, please refer to use case overview: Sponsored Learning Model|  
+| 6. | Attendance Pallet|log_attendance is a special KPI of a program. A learner needs to scan the QR code displayed randomly on the course content or UI. The scan will trigger an extrinsic to function to proof the engagement. In the future, we will create an mobile app to scan the QR code and make calls to the node. |  
+| 7. | Endorse Pallet | Users can endorse others with skills and experience. Yes endorsement comes with a cost, it will be more trustworlthy than LinkedIn.|  
+| 8. | Substrate chain | The pallets within this milestone will be hosted by the Thunderous Network, a substrate based blockchain. |  
+| 9. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 
 ### Community engagement
