@@ -149,13 +149,25 @@ Advisor & Mentor
 * **FTE:**  2.5
 * **Costs:** 1 BTC
 
+To understand the pallets specified below, it is helpful to understand the following use cases for program fees
+
+**Here are some typical use cases**
+* Learn & Earn Back Model
+  * A learner pays the full course fee, and will get half of that refunded after meeting certain criteria during the learning journey e.g. attendance is met.
+* Sponsored Learning Model
+  * A learner deposits the full course fee, the employer also deposits the full course fee for the learner. When the learner meets certain criteria set by employers, employer's charged, learner's deposit is refunded. Otherwise learner is charged, employer is refunded.
+* Learn to Earn Model
+  * Variation 1: A learner gets paid after meeting certain criteria. No upfront fee is required.
+  * Variation 2: A learner gets paid after meeting each KPI of the whole criteria. No upfront fee is required.
+  
+
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation |This will be done at code level as well as updated whitepaper.|
 | 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. | 
-| 1. | Program Pallet |Masters can manage programs in ths pallet. create_program, create_intake for program. A program can be a course or project with trackable KPIs.|  
-| 2. | RuleEngine Pallet|Users can create rules, a program can link to a rule to determine the actions to be executed. A rule defines 1) KPIs 2) Actions after KPIs are all logged. An action can be 1) Taking Deposit 2) Refund / Partial Refund 3) Reward 4) Certification 5) ProSet. A ProSet can be 1) Skill 2) Experience.|
+| 1. | Program Pallet |Masters can manage programs in this pallet by using create_program, create_intake for program. A program can be a course or project with trackable KPIs.|  
+| 2. | RuleEngine Pallet|*This is the most complicated pallet within this milestone. Users can create rules, a program can link to a rule to determine the actions to be executed. A rule defines 1) KPIs 2) Actions linked to KPIs. An action can be 1) Taking Deposit 2) Refund / Partial Refund 3) Reward 4) Certification 5) ProSet. A ProSet can be 1) Skill 2) Experience.|
 | 3. | Enrolment Pallet|Users can enrol_program with fees, cancel_enrolment, master can terminate_enrolment. All the logic herein is determined by the rule set in the program. Actions of the rules are executed automatically.|
 | 4. | KPI Pallet |In the rule applied to the program, it requires KPI logs to determine if the criteria in the rule is met for the program. If cerntern / all KPIs are met, the actions within the rule will be executed in the pallet. Actions could be taking deposit, refund, partial refund, reward, certification etc. Program owners can also apply the rule to the program in this pallet.
 | 5. | Sponsorship Pallet |Anyone can sponsor_someone to take on a program. e.g. Employer sponsor an apprentice to learn a course. For more, please refer to use case overview: Sponsored Learning Model|  
