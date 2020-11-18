@@ -14,7 +14,7 @@ The stablecoin created by Coinversation Protocol is decentralized, multi-asset c
 ### Project Details 
 The main functional modules of the entire system include: Polkadot bridge, forging synthetic assets(MintC), DEX, collateral pools, fee pools, oracles, and liquidity mining. 
 
-![img](http://coinversation.cn/static/media/Coinversation.jpg)
+![Coinversation architecture diagram](http://coinversation.cn/static/media/Coinversation.jpg)
 
 #### Polkadot Bridge
 This bridge connect several alliance chains, such as AntChian and HyperChain, into Coinversation Protocol and Polkadot ecosystem. So assets on those chains can be used as collateral to issue stablecoin and synthetic assets. Meanwhile, Coinversation Stablecoin can also provide liquidity for those assets through cUSD lending.
