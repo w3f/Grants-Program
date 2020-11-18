@@ -37,8 +37,9 @@ Are there any other projects similar to yours? If so, how is your project differ
 * Name of team leader
 * Names of team members	
 
-### Team Website	
-* https://<your_domain>
+### Contact	
+* Website
+* Email
 
 ### Legal Structure 
 Please provide the name and registered address of the legal entity executing the project.
