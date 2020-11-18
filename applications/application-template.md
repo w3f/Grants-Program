@@ -90,15 +90,10 @@ To assist you in defining it, we created a document with examples for some grant
 | 3. | Substrate module: Z | We will create a Substrate module that will... |  
 | 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 6. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
 
 ### Milestone 2 Example — Additional features
 ...
-
-### Community engagement
-
-As part of the Program, we require that you produce an article/tutorial and publish it (for example on [Medium](https://medium.com/)). It should explain your work done as part of the grant. 
-
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
 
 ## Future Plans
 Please include the team's long-term plans and intentions.
