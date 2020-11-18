@@ -39,7 +39,7 @@ Are there any other projects similar to yours? If so, how is your project differ
 
 ### Contact	
 * Website
-* Email
+* Email address
 
 ### Legal Structure 
 Please provide the name and registered address of the legal entity executing the project.
