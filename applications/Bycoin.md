@@ -144,9 +144,9 @@ The tutorials and Documentation that we provide will be published as articles in
 
 ## Future Plans
 
-Support DOT in DEX features of  Bycoin: the FlashSwap  ( market maker quotation trading), SuperTx protocol ( Automated market maker (AMM) trading protocol), MagnEx protocol (order book trading protocol)
+* Support DOT in DEX features of  Bycoin: the FlashSwap  ( market maker quotation trading), SuperTx protocol ( Automated market maker (AMM) trading protocol), MagnEx protocol (order book trading protocol)
 
-Create a Parachain to realize the two-way cross-chain of assets on Polkadot and assets on Bytom Chain
+* Create a Parachain to realize the two-way cross-chain of assets on Polkadot and assets on Bytom Chain
 
 
 ## Additional Information ➕
