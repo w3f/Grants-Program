@@ -106,6 +106,7 @@ Bycoin will build and operate Polkadot node, and at the same time encapsulate re
 
 * Estimated Duration:6weeks
 * Costs: 0.3 BTC
+
 |Number|Deliverable|Specification|
 |:----|:----|:----|
 |1|Key Generation|Generate mnemonic words and private keys in the wallet according to relevant cryptographic algorithms while ensuring safe storage|
@@ -124,6 +125,7 @@ Bycoin will build and operate Polkadot node, and at the same time encapsulate re
 
 * Estimated Duration:6weeks
 * Costs: 0.4 BTC
+
 |Number|Deliverable|Specification|
 |:----|:----|:----|
 |1|Cross in|Transfer DOT to Bytom blockchain|
