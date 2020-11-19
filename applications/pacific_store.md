@@ -309,13 +309,13 @@ https://github.com/Jack-Jhon
 
 - **Total Estimated Duration:** 8 weeks
 - **Full-time equivalent (FTE):** 1
-- **Total Costs:** 2 BTC.
+- **Total Costs:** 1.6 BTC.
 
 ### Milestone 1 PacificStore SDK
 
 - **Estimated Duration:** 4 weeks
 - **FTE:** 1
-- **Costs:** 1 BTC
+- **Costs:** 0.8 BTC
 
 | Number | Deliverable     | Specification                                                                      |
 | ------ | --------------- | ---------------------------------------------------------------------------------- |
@@ -329,7 +329,7 @@ https://github.com/Jack-Jhon
 
 - **Estimated Duration:** 4 weeks
 - - **FTE:** 1
-- **Costs:** 1 BTC
+- **Costs:** 0.8 BTC
 
 | Number | Deliverable         | Specification                                                                           |
 | ------ | ------------------- | --------------------------------------------------------------------------------------- |
