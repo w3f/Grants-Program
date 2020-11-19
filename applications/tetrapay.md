@@ -19,7 +19,9 @@ This application is to realize the oracle and algorithm part of stable currency 
 
 TetraPay designed Tetra currency to act as an algorithmic stable currency. We retain its highly decentralized characteristics, and we guarantee the Tetra currency has a relatively stable price through algorithms and protocols.
 
+We need to have an estimate of the market behavior, the calculation will be based on the current currency circulation and exchange rate, to calculate how many currencies need to be bought/sold in order to restore exchange rate stability.(stable volume calculation)
 
+Assuming that TetraX is currently inflation, holders of TetraX want to exchange their currencies for the sake of stability, while continuing to enjoy the benefits of stablecoin system.Our system will calculate and recommend the exchange path of TetraX-payara-TetraY, TetraY maybe deflation. This calculation mainly takes stable volume calculation as the sub-module.In the exchange of this path, the value of the user's assets increases, and it is also beneficial to the exchange rate recovery of TetraX and TetraY.(TetraX-TetraY optimal transaction path and volume price calculation.)
 
 ##### ***MORE THAN JUST A WALLET***
 
