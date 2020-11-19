@@ -25,27 +25,8 @@ jobs:
         uses: mmagician/read-file-action@v0.1.2
         with:
           path: "${{ github.workspace }}/${{ steps.files.outputs.added }}"
+          # local testing only
           # path: 'applications/workflow_testing_12.md'
-
-      # - name: Pull Request URL
-      #   if: github.event.pull_request.merged == true
-      #   id: pr_link_parser
-      #   uses: kceb/pull-request-url-action@v1
-      #   with:
-      #     github-oauth-token: ${{ secrets.GITHUB_TOKEN }}
-
-      # - name: Pull Request URL
-      #   if: github.event.pull_request.merged == true
-      #   id: pr_link_parser
-      #   uses: jwalton/gh-find-current-pr@v1
-      #   with:
-      #     github-token: ${{ secrets.GITHUB_TOKEN }}
-
-      # local testing only
-      # - name: Pull Request URL
-      #   id: pr_link_parser
-      #   run: echo "::set-output name=url::$(date +'%d/%m/%Y')"}
-      
 
       - name: Get current date
         if: github.event.pull_request.merged == true
@@ -57,7 +38,7 @@ jobs:
         id: get_last_row
         uses: mmagician/gsheet.action@v0.1.0
         with:
-          spreadsheetId: 1m0I_spkPkLaI8fXCDGTKC1R_fSCaWK4vcnQQsIvwHDo
+          spreadsheetId: ${{ secrets.SPREADSHEET_ID }}
           startRow: 196
           worksheetTitle: "Legal"
         env:
@@ -69,7 +50,7 @@ jobs:
         id: 'update_worksheet'
         uses: jroehl/gsheet.action@v1.0.0 # you can specify '@release' to always have the latest changes
         with:
-          spreadsheetId: 1m0I_spkPkLaI8fXCDGTKC1R_fSCaWK4vcnQQsIvwHDo
+          spreadsheetId: ${{ secrets.SPREADSHEET_ID }}
           commands: | # list of commands, specified as a valid JSON string
             [
               { 
