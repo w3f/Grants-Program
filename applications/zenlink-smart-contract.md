@@ -76,7 +76,7 @@ Tianling was a former senior expert of Alibaba. After leaving it, he joined a bl
 
 Jianbin Zhao is a senior backend dev with 5 years experience, and he is helping the team build the first DEX web application.
 
-Rui shi is a senior backend dev with 5 years experience. He is not only familar with C++/Rust, but also has good project experience on Subtrate development.
+Rui shi is a senior backend dev with 5 years experience. He is not only familiar with C++/Rust, but also has good project experience on Substrate development.
 
 Hui Yuan has rich experience in product design and management. She has built many nice and user-friendly internet application. 
 
