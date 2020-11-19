@@ -2,6 +2,7 @@ name: Google Sheet Update
 on:
   pull_request_target:
     types: [closed]
+# on: push
 
 jobs:
   fetch:
@@ -24,19 +25,27 @@ jobs:
         uses: mmagician/read-file-action@v0.1.2
         with:
           path: "${{ github.workspace }}/${{ steps.files.outputs.added }}"
-          # path: 'applications/workflow_testing_8.md'
+          # path: 'applications/workflow_testing_12.md'
 
-      - name: Pull Request URL
-        if: github.event.pull_request.merged == true
-        id: pr_link_parser
-        uses: kceb/pull-request-url-action@v1
-        with:
-          github-oauth-token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Pull Request URL
+      #   if: github.event.pull_request.merged == true
+      #   id: pr_link_parser
+      #   uses: kceb/pull-request-url-action@v1
+      #   with:
+      #     github-oauth-token: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Pull Request URL
+      #   if: github.event.pull_request.merged == true
+      #   id: pr_link_parser
+      #   uses: jwalton/gh-find-current-pr@v1
+      #   with:
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
 
       # local testing only
       # - name: Pull Request URL
       #   id: pr_link_parser
-      #   run: echo "::set-output name=date::$(date +'%d/%m/%Y')"}
+      #   run: echo "::set-output name=url::$(date +'%d/%m/%Y')"}
+      
 
       - name: Get current date
         if: github.event.pull_request.merged == true
@@ -79,13 +88,14 @@ jobs:
                     "${{ steps.grant_parser.outputs.contact_email }}", 
                     "${{ steps.grant_parser.outputs.country }}", 
                     "",
-                    "${{ steps.pr_link_parser.outputs.url }}", 
-                    "${{ steps.pr_link_parser.outputs.url }}",
+                    "https://github.com/web3/Open-Grants-Program/pull/${{ github.event.pull_request.number }}", 
+                    "https://github.com/web3/Open-Grants-Program/pull/${{ github.event.pull_request.number }}",
                     "USD", "0", "0", "0",
-                    "${{ steps.pr_link_parser.outputs.total_cost }}",
-                    "", "",
+                    "${{ steps.grant_parser.outputs.total_cost }}",
+                    "",
+                    "",
                     "Executed",
-                    "${{ steps.pr_link_parser.outputs.url }}",
+                    "https://github.com/web3/Open-Grants-Program/pull/${{ github.event.pull_request.number }}",
                     "${{ steps.date.outputs.date }}"
                   ]], 
                   "worksheetTitle": "Legal", 
