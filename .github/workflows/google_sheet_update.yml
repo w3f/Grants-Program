@@ -1,7 +1,7 @@
 name: Google Sheet Update
-on: push
-  # pull_request_target:
-    # types: [closed]
+on:
+  pull_request_target:
+    types: [closed]
 
 jobs:
   fetch:
@@ -15,16 +15,16 @@ jobs:
       - uses: actions/checkout@master
         if: github.event.pull_request.merged == true
         name: Checkout
-        # with:
-          # ref: ${{ github.event.pull_request.head.sha }}
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: 'parse files'
-        # if: github.event.pull_request.merged == true
+        if: github.event.pull_request.merged == true
         id: grant_parser
         uses: mmagician/read-file-action@v0.1.2
         with:
-          # path: "${{ github.workspace }}/${{ steps.files.outputs.added }}"
-          path: 'applications/workflow_testing_8.md'
+          path: "${{ github.workspace }}/${{ steps.files.outputs.added }}"
+          # path: 'applications/workflow_testing_8.md'
 
       - name: Pull Request URL
         if: github.event.pull_request.merged == true
