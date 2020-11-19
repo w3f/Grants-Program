@@ -123,7 +123,7 @@ The Setheum Network Milestone 1 will be a 6 week project, aims to deliver a runn
    
 * **Total Estimated Duration:** 6 Weeks
 * **Full-time equivalent (FTE):**  1.5
-* **Total Costs:** 1.1 BTC
+* **Total Costs:** 0.9 BTC
 
 ### Milestone 1 - The SERP Modules
 * **Estimated Duration:** 6 Weeks
