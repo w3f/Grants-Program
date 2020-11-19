@@ -1,0 +1,91 @@
+name: Google Sheet Update
+on:
+  pull_request_target:
+    types: [closed]
+# on: push
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'get all added files in the PR'
+        if: github.event.pull_request.merged == true
+        id: 'files'
+        uses: mmagician/get-changed-files@v0.0.1
+
+      - uses: actions/checkout@master
+        if: github.event.pull_request.merged == true
+        name: Checkout
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: 'parse files'
+        if: github.event.pull_request.merged == true
+        id: grant_parser
+        uses: mmagician/read-file-action@v0.1.2
+        with:
+          path: "${{ github.workspace }}/${{ steps.files.outputs.added }}"
+          # local testing only
+          # path: 'applications/workflow_testing_12.md'
+
+      - name: Get current date
+        if: github.event.pull_request.merged == true
+        id: date
+        run: echo "::set-output name=date::$(date +'%d/%m/%Y')"
+
+      - name: Get last row
+        if: github.event.pull_request.merged == true
+        id: get_last_row
+        uses: mmagician/gsheet.action@v0.1.0
+        with:
+          spreadsheetId: ${{ secrets.SPREADSHEET_ID }}
+          startRow: 196
+          worksheetTitle: "Legal"
+        env:
+          GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
+          GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
+
+      - name: 'write the data to a gsheet'
+        if: github.event.pull_request.merged == true
+        id: 'update_worksheet'
+        uses: jroehl/gsheet.action@v1.0.0 # you can specify '@release' to always have the latest changes
+        with:
+          spreadsheetId: ${{ secrets.SPREADSHEET_ID }}
+          commands: | # list of commands, specified as a valid JSON string
+            [
+              { 
+                "command": "updateData", 
+                "args": 
+                { 
+                  "data": [[
+                    "${{ steps.grant_parser.outputs.team_name }}", 
+                    "${{ steps.grant_parser.outputs.team_name }}", 
+                    "Open Grants",
+                    "${{ steps.grant_parser.outputs.project_name }}", 
+                    "${{ steps.grant_parser.outputs.address }}", 
+                    "${{ steps.grant_parser.outputs.contact_name }}", 
+                    "${{ steps.grant_parser.outputs.contact_name }}", 
+                    "${{ steps.grant_parser.outputs.contact_title }}", 
+                    "${{ steps.grant_parser.outputs.contact_email }}", 
+                    "${{ steps.grant_parser.outputs.country }}", 
+                    "",
+                    "https://github.com/web3/Open-Grants-Program/pull/${{ github.event.pull_request.number }}", 
+                    "https://github.com/web3/Open-Grants-Program/pull/${{ github.event.pull_request.number }}",
+                    "USD", "0", "0", "0",
+                    "${{ steps.grant_parser.outputs.total_cost }}",
+                    "",
+                    "",
+                    "Executed",
+                    "https://github.com/web3/Open-Grants-Program/pull/${{ github.event.pull_request.number }}",
+                    "${{ steps.date.outputs.date }}"
+                  ]], 
+                  "worksheetTitle": "Legal", 
+                  "minCol": 1,
+                  "minRow": "${{ steps.get_last_row.outputs.lastRow }}",
+                  "valueInputOption": "USER_ENTERED"
+                }
+               }
+            ]
+        env:
+          GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
+          GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
