@@ -10,7 +10,7 @@ jobs:
       - name: 'get all added files in the PR'
         if: github.event.pull_request.merged == true
         id: 'files'
-        uses: jitterbit/get-changed-files@v1
+        uses: mmagician/get-changed-files@v0.0.1
 
       - uses: actions/checkout@master
         if: github.event.pull_request.merged == true
