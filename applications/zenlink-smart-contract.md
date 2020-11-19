@@ -91,19 +91,20 @@ no
 ### Overview
 * **Total Estimated Duration:** 2 weeks
 * **Full-time equivalent (FTE):** 4
-* **Total Costs:** 0.5 btc
+* **Total Costs:** 0.3 btc
 
 ### Milestone 1 — Implementing Zenlink DEX DApp
 * **Estimated Duration:** 2 weeks
 * **FTE:**  4
-* **Costs:** 0.5 btc
+* **Costs:** 0.3 btc
 
 | Deliverable  | Specification  | 
 |--------------|---------------|
 | Technical specifications and Zenlink DEX Module design |  These spec should be included in the  [whitepaper](https://github.com/zenlinkpro/whitepaper/blob/master/en/zenlink_whitepaper_en.pdf). For details, please see the section 'Zenlink DEX Protocol' and 'Zenlink DEX Module'|
-| Zenlink DEX Smart Contract Repository | A git repository containing the dex smart contract source code and a README that describes the work done during this milestone and how to use set up and run at the current stage. The smart contract will has Automate Market Maker(AMM) function and be integrated with a substrate chain. |
+| Zenlink DEX Smart Contract Repository | A git repository containing the dex smart contract source code. The smart contract can be deployed to a substrate chain using ink! which is a smart contract substrate pallet. The smart contract will has Automate Market Maker(AMM) function. |
 | Tests        | The code will have proper unit-test coverage to ensure functionality and robustness                                                                    | 
 | Docker       | Docker image with a Substrate chain using our module, demonstrating its functionality                                                                  | 
+| Tutorial       | The tutorial will not only indicate that how to use set up and deploy it into the ink! module, and also introduce special user cases and potential extensibility. It will be be published on Medium.                                                                   |
 
 ### Community engagement
 
