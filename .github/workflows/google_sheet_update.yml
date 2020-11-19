@@ -21,7 +21,7 @@ jobs:
         id: grant_parser
         uses: mmagician/read-file-action@master
         with:
-          path: "${{ steps.files.outputs.added }}"
+          path: "${{ github.workspace }}/${{ steps.files.outputs.added }}"
           # path: 'applications/sup.md'
 
       - name: Pull Request URL
