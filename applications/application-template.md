@@ -2,11 +2,11 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project:** The name of the project
-* **Proposer:** GitHub username
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
+* **Project Name:** Name of your project (e.g. DuoSwap Module)
+* **Team Name:** Legal name of your team (e.g. Duo)
+* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
 
-*The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
+*The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
 If this application in response to an RFP then please indicate this on the first line of this section.
@@ -37,12 +37,14 @@ Are there any other projects similar to yours? If so, how is your project differ
 * Name of team leader
 * Names of team members	
 
-### Contact	
+### Contact
+* **Contact Name:** Full name of the contact person (e.g. John Brown)
+* **Contact Email:** Contact email (e.g. john@duo.com)
 * Website
-* Email address
 
 ### Legal Structure 
-Please provide the name and registered address of the legal entity executing the project.
+* **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
+* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
 
 ### Team's experience
 Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
@@ -71,9 +73,9 @@ To assist you in defining it, we created a document with examples for some grant
 * Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
 
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
+* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
+* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
+* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission. (e.g. 0.80 BTC)
 
 ### Milestone 1 Example — Implement Substrate Modules 
 * **Estimated Duration:** 1 month
