@@ -1,7 +1,7 @@
 name: Google Sheet Update
 on:
   pull_request_target:
-#     types: [closed]
+    types: [closed]
 # on: push
 
 jobs:
