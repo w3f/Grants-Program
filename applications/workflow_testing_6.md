@@ -1,7 +1,10 @@
 # Open Grant Proposal
 
-* **Project:** Sup
-* **Proposer:** [clearloop](https://github.com/clearloop)
+* **Project Name:** Workflow Testing
+* **Team Name:** Marcinosososos
+* **Contact Name:** Marcin
+* **Contact Email:** marcin@web3.foundation
+* **Registered Address:** Swiss Alps, CH 8123
 * **Payment Address:** 1NKWsqRaWZDNX17cuzfyykcAA317njqzSn
 
 ## Project Overview :page_facing_up: 

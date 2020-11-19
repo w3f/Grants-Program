@@ -15,6 +15,8 @@ jobs:
       - uses: actions/checkout@master
         if: github.event.pull_request.merged == true
         name: Checkout
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: 'parse files'
         if: github.event.pull_request.merged == true
