@@ -1,7 +1,7 @@
 # Open Grant Proposal
 
-* **Project:** Zenlink DEX DApp
-* **Proposer:** [Victory Van](https://github.com/v-van)
+* **Project Name:** Zenlink DEX Smart Contract
+* **Team Name:** Zenlink
 * **Payment Address:** 3FyMZ4Y6wFXkaSzdBPetizppR5bD6BVLUy
 
 ## Project Overview :page_facing_up: 
@@ -59,13 +59,18 @@ no
 * Rui Shi, Senior Backend Engineer
 * Hui Yuan, Senior Product Manager
 
+### Contact
+* **Contact Name:** Victory Van
+* **Contact Email:** vv@zenlink.pro
+
 ### Team Website	
 * https://zenlink.pro/
 
 ### Legal Structure 
-* ZENLINK FOUNDATION LTD. 
-* UEN: 202029221W
-* Address: 3 FRASER STREET #05-25 DUO TOWER SINGAPORE(189352)
+
+* **Registered Address:** Address: 3 FRASER STREET #05-25 DUO TOWER SINGAPORE(189352)
+* **Registered Legal Entity:** ZENLINK FOUNDATION LTD.
+* **UEN:** 202029221W
 
 ### Team's experience
 The team is made up of many experienced professionals in the blockchain industry.
