@@ -3,7 +3,7 @@
 * **Project:** SpiderDAO
 * **Proposer:** [SpiderDAO] (https://github.com/SpiderDAO)
 * **Payment Address:** 3Pxq3ViqRW6b3e7qsX7Mo7gSikHcToa7ig
-* **Document Version:** Version 1.9
+* **Document Version:** Version 2.0
 
 
 ## Project Overview :page_facing_up: 
@@ -49,6 +49,21 @@ The SpiderConnect Hardware Router can be purchased by any community member, once
 We see many projects in the Polkadot ecosystem that are having similar issues when it comes to voting system: MANTRA DAO is one of the examples.
 
 The main problem with **Mantra DAO** which is built on **Rio Chain** is the same problem that many other DAOs faces where each token represent 1 vote in the ecosystem which introduces a major problem with the governing body where whales can take control of the DAO by buying big amounts of tokens making them in a way the deciding vote for any proposals. 
+
+### To solve this we intend to add the following features.
+
+**SpiderConnect Router Security**
+
+Our routers do have a secured ROM which we can control securely for all units and that's where the essential data will be saved. Our unique ID which currently contains the mac address & the router serial number will be combined with the wallet address and encrypted using our algorithm to make sure it would be nearly impossible to be compromised.
+
+**Whale Resistant Voting Model**
+
+Our model shifts voting power away from token holders to hardware owners, where one validated router equals one vote. Additionally, Blockchain-based router tracking ensures that hoarding of devices are instantaneously detected by the network and ‘fake’ routers are locked out of the network. The liquidity incentive mechanism will be available to all users and not just people with routers so the entry barrier is removed in this case. 
+
+**Voting by Direct Democracy**
+
+Our voting mechanism would be classified as a Direct Democracy system. We are going to balance the voting power by only allowing token holders to have one router regardless of how many tokens they hold. We will make sure they got to go through SpiderConnect to gain more routers for their tokens if we agreed to that. Our DPI filters will monitor that keeping their identity anonymous.
+
 
 
 ## Team :busts_in_silhouette:
