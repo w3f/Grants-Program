@@ -81,8 +81,8 @@ Founded by a US PhD team, the core members are from first-tier technology compan
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | oracle pallet | requested data, generated events, and callbacks to data |  
-| 2. | forge pallet | staking DOT and CTO and forging synthetic assets | 
+| 1. | oracle | requested data, generated events, and callbacks to data |  
+| 2. | forging center | staking DOT and CTO and forging synthetic assets | 
 | 3. | Testing | This milestone will have unit-test for pallet impemented, simulated all functions. | 
 
 ### Milestone 2 — a decentralized exchange for trading synthetic assets
