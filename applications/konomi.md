@@ -152,7 +152,6 @@ Jayden has 8 years entrepreneur experience in Tech startups. Before Konomi Netwo
 
 Yuqing has more than 7 years experience in social media advertising and community building. Before Konomi Network, she started her career as a commercial broker in physical commodity trading sectors. Besides, she is one of the top chinese KOL in Singapore with over 300K+ organic followers on instagram. As a sole proprietor, built relationship with and represented over 100 corporate partners in their online advertising campaigns, including Huawei, Casio, Shopee, Grab, Lazada, Carlsberg and etc. Her expertise in communication and community building is valuable to this project.
 
-
 John, tech contributor, is a Substrate developer and technical ambassador of Polkadot. He was the CTO of Cdot and blockchain tech lead of ARPA project. 
 
 We have already built a working preliminary swap module with a multi-asset module as a base layer. It is in our team code repository.
@@ -187,7 +186,7 @@ It is currently a private repo, please contact us for access.
 | ------------- | ------------- | ------------- |
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. There will also be a more detailed design documentation of the module reflects the delivered status |
-| 2 | Substrate Module: Decentralised money market | lending/borrowing pool of multi-assets with user deposit/debut tracking and interest calculation; liquidation functionality with sudo price oracle |
+| 2 | Substrate Module: Pool lending module | lending/borrowing pool of multi-assets with user deposit/debut tracking and interest calculation; liquidation functionality with sudo price oracle |
 | 3 | Front End | A front end UI for users to test the lending module |
 | 4 | Tests | Unit tests and also a public accessible testnet of the PoC |
 | 5 | Docker | A docker image of Substrate node with the lending module for anyone to easily run the node |
@@ -201,7 +200,7 @@ https://konomi-network.medium.com/
 We have been documenting the project progress and also our understanding of the DOT ecosystem in our blog. 
 
 ## Future Plans
-Konomi aims to bridge the gap between crypto and fiat world by offering an easy to use, high performance product for users to trade and manage their crypto assets. In the mid term, we plan to implement cross-chain liquidity aggregation protocols since the current products could not execute trade orders across parachains simultaneously. In the long term, acquiring fiat-based customers and develop efficient cross-chain technology are the two strategic focus. In terms of fiat to crypto gateways, there have been many licensed service providers but it is yet to achieve mainstream adoption. With regulated players eying in this space, there will be more users and more demand for DeFi products. Furthermore, we believe that cross-chain infrastructure is going to be an important building block for crypto industry going forward since current solutions for BTC and other assets supported on Ethereum are either centralised or slow in speed.
+After delivery, we will start to explore cross-chain lending senario and will first try to enable cross-chain asset to be lended and borrowed. Konomi aims to bridge the gap between crypto and fiat world by offering an easy to use, high performance product for users to trade and manage their crypto assets. In the mid term, we plan to implement cross-chain lending aggregation protocols since the current products could not execute orders across parachains simultaneously. We plan to deploy lending modules to partnered parachains in order to support cross-chain lending. In the long term, acquiring fiat-based customers and improve Polkadot cross-chain protocol to more compatible with cross-chain lending are the two strategic focus. In terms of fiat to crypto gateways, there have been many licensed service providers but it is yet to achieve mainstream adoption. With regulated players eying in this space, there will be more users and more demand for DeFi products. Furthermore, we believe that cross-chain infrastructure is going to be an important building block for crypto industry going forward since current solutions for BTC and other assets supported on Ethereum are either centralised or slow in speed.
 
 ## Additional Information :heavy_plus_sign: 
 
