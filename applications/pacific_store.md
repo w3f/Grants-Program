@@ -261,27 +261,66 @@ Customizing the metadata for your smart contract
 }
 ```
 
-### Ecosystem Fit
-Are there any other projects similar to yours? If so, how is your project different?
-To the best of our knowledge, there is no project working on creating collectables NFTs in Polkadot. There are some existing projects that create NFTs in Ethereum ( OpenSea etc.). 
+- An overview of the technology stack to be used
 
-PacificStore will make it to mint and transfer collectables NFTs in Polkadot/Kusama. It aims to close the gap and enable more business use cases for collectables NFTs in Polkadot ecosystems.
+* React Native
+* Node.js
+* Polkadot-js/api
+* substrate-developer-hub/substrate-node-template
+* canvas-ui
+* canvas-node
+* ink
+* paritytech/frontier
+* Polkadot
+* Kusama
+
+### Ecosystem Fit
+
+Are there any other projects similar to yours? If so, how is your project different?
+To the best of our knowledge, there is no project working on creating collectables NFTs in Polkadot. There are some existing projects that create NFTs in Ethereum ( OpenSea etc.).
+
+PacificStore will make it to buy and sell collectables NFTs in Polkadot/Kusama. It aims to close the gap and enable more business use cases for collectables NFTs in Polkadot ecosystems.
 
 PacificStore is deeply committed to web3 and our stack is focussed firmly on helping make it simple for developers to bring truly decentralized applications, online autonomy and new business models to users. Adding the ability to interface with parachains, as a bridge to the Polkadot ecosystem opens up a world of financial and other tools to those developers, and provides developers working in or interested in the Polkadot ecosystem a fast simple way to get started. collectables NFT in Defi is the perfect proving ground for this.
 
-Main diffiences:
-* Support Chinese
-* Base on Polkadot/Kusama
-* Build smartcontract parachain
+Main differences:
+
+- Support Chinese
+- Base on Polkadot/Kusama
+- Build smartcontract parachain
+
+Pacific_store vs Rarelink differences:
+
+| Pacific_store                                                                                                                                                                                                                                                               | Rarelink                                   |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| Cross-chain buying and selling NFT marketplace                                                                                                                                                                                                                              | Cross-chain mint and transfer NFT Protocol |
+| Dapp for instant buying and selling NFT                                                                                                                                                                                                                                     | Infrastructure of creating dynamic NFT     |
+| Build an instant, customizable marketplace for your game items, collectibles, or other ERC721 assets                                                                                                                                                                        |                                            |
+| Deploy an instantly tradeable ERC1155 contract                                                                                                                                                                                                                              |                                            |
+| Build own custom sale contract                                                                                                                                                                                                                                              |                                            |
+| Build the peer-to-peer marketplace for your users to trade your items                                                                                                                                                                                                       |                                            |
+| Issue your initial items to your users                                                                                                                                                                                                                                      |                                            |
+| Sell packs of items to your users                                                                                                                                                                                                                                           |                                            |
+| Airdop items to users as rewards                                                                                                                                                                                                                                            |                                            |
+| Have lootboxes that can be purchased and even traded by users                                                                                                                                                                                                               |                                            |
+| Integrate an existing NFT contract into PacificStore                                                                                                                                                                                                                        |                                            |
+| Build a customizable, marketplace for your NFT                                                                                                                                                                                                                              |                                            |
+| Provides the most powerful way for your users to buy and sell their items—auctioning, bidding, bundling, you name it                                                                                                                                                        |                                            |
+| Provides a set of r smart contracts specifically designed for buying and selling unique digital assets. You won't need to deploy any additional smart contracts (other than your ERC721 or ERC155 contract) in order for your items to be instantly tradeable with the SDK. |                                            |
+| Full customizability,you can tailor own marketplace exactly how you want it.                                                                                                                                                                                                |                                            |
+| Cross-chain via IBC                                                                                                                                                                                                                                                         | Cross-chain via Oracle                     |
+| Cross-chain based on Polkadot,Ethereum,Eos,Bos,Tron                                                                                                                                                                                                                         | Cross-chain based on Polkadot,Ethereum     |
 
 ## Team :busts_in_silhouette:
 
 ### Team members
+
 Sam Lee
 yang zhou  
 Jack
 
 ### Team Website
+
 No.
 
 ### Legal Structure
