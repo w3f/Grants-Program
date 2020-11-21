@@ -3,7 +3,7 @@
 * **Project:** SpiderDAO
 * **Proposer:** [SpiderDAO] (https://github.com/SpiderDAO)
 * **Payment Address:** 3Pxq3ViqRW6b3e7qsX7Mo7gSikHcToa7ig
-* **Document Version:** Version 2.0
+* **Document Version:** Version 2.1
 
 
 ## Project Overview :page_facing_up: 
@@ -12,7 +12,7 @@
 ### Overview
 **SpiderDAO** is a unique governance infrastructure layer for a hardware-enabled DAO and can be applied in a variety of use cases. As the first use case, Spider will leverage its well-established presence in the hardware VPN market together with a partnership with Sentinel, an established dVPN provider and BPSAA Alliance member, to create a fully self-governing decentralized VPN network called SpiderVPN.
 
-We intend for SpiderDAO to run on its own Parachain on the Polkadot network. If the bond cannot be funded, the protocol will run on Parathreads or possibly as a series of smart contract on Acala or another Parachain. Our initial testnet and protocol configuration will be built on Kusama and ported onto Polkadot for the mainnet launch.
+We intend for SpiderDAO to run on its own Parachain on the Polkadot network. If the bond cannot be funded, the protocol will run on Parathreads or possibly as a series of smart contracts. Our initial testnet and protocol configuration will be built on Kusama and ported onto Polkadot for the mainnet launch.
 
 We believe that in order to fulfil the SpiderDAO’s vision of bringing greater privacy to the end-user, it is vital to establish a robust ecosystem that prioritises users’ interests. To do this, we must first establish a resilient, scalable and community-led governance system that dynamically adapts to the rapidly changing times. We believe that building a decentralised autonomous organisation is the perfect mechanism that will enable us to reach this goal.
 
