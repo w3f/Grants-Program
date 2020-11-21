@@ -12,13 +12,17 @@
 
 ### Overview
 
-Konomi is a decentralised liquidity and money market protocol for cross-chain crypto assets. Using Substrate as the development framework, the network aims to provide money markets for assets in the Polkadot ecosystem. Users could manage their crypto holding positions, trade assets and earn interest through the protocol. Konomi also issues its native network token in order to kick start liquidity and decentralised governance. We will first set up a separate testnet for the blockchain, and then participate in Kusama parachain auction and subsequently Polkadot parachain auction. 
+Konomi is a decentralised liquidity and money market protocol for cross-chain crypto assets. Using Substrate as the development framework, the network aims to provide money markets for assets in the Polkadot ecosystem. Users could borrow and lend assets, trade and access liquidity products for DOTs through the protocol. Konomi also issues its native network token in order to kick start liquidity and decentralised governance for its chain. We will first set up a standalone testnet, and then participate in Kusama parachain auction and subsequently Polkadot parachain auction.
 
-We believe that Polkadot will become the default base layer protocol for decentralised applications and crypto assets. Also, due to the design of parachain and parathread auction, 
-there is opportunity to be captured in designing new token economics as compared to the existing products on Ethereum. 
+The motivation behind setting up the project is that there is currently limited live products for the lending infrastructure on Polkadot and that it is an important part for the ecosystem as a whole. Also, we think that the parachain design offered more room and better infrastructure to develop DeFi applications — it is not restricted to accepting ETH as the default currency. 
+
+We believe that Polkadot will become the default base layer protocol for decentralised applications and crypto assets. Also, due to the design of parachain and parathread auction, there is opportunity to be captured in designing new token economics as compared to the existing products on Ethereum.
 
 ### Project Details 
-The project aims to provide the decentralised money market protocol for other assets issued on Polkadot parachains. We first developed the decentralised liquidity pool to support cross-chain asset swaps and later on for LP tokens. We are in the process of building a money market protocol. 
+The project aims to provide the decentralised money market protocol for other assets issued on Polkadot parachains. The protocol is pool-based and it would support assets on parachains when the network is live. Users could deposit asset to the lending pool and earn interest based on the demand side on the platform. Similarly, the protocol also supports over-collateralised debt positions for users that want to borrow assets. Price data will be ultimately acquired through using off-chain workers to ensure that the lending pool is always secure from liquidation risks.
+
+This is the system work-flow diagram. 
+**![](https://lh5.googleusercontent.com/M9QuAjmdo0lBj8Nx2D5BHS_Qtjga_2NCe7V_ERUFTzyesPFixDIVFhhcQpB6FyA2UceKO0yP4pxI4iBC2GGOmHvBezi9J5XcHCLSsySfprLfFutLaVV7C8Ku0NJGzhjfqYfvtB56)**
 
 Technology Stack: 
 Node: Substrate, (Cumulus)
@@ -26,17 +30,111 @@ Chain metric: Prometheus and Grafana
 Frontend: React with Polkadot-js
 CI: Travis
 
-**![](https://lh5.googleusercontent.com/YXzy3KlQOkeNWw7ifXB79ZHCbEvXaDD6RzoZfm2Tf-4DqSfTNzjtmvZMkwmjufmQ9_h3TlJa4AlV1i5MQXSWIgbWhj-8DukbfhJGcl_ZgT_EulnQHBUjVG6xVUBmGESsuSqhFvTN)**
+#### Components
+- Asset Module: Multi-asset to be used in AMM and Lending Module.
+- AMM Module: Uniswap like 50-50 swap pools that user can swap, add liquidity and remove liquidity.
+- Pool Lending Module: This is the key and unique module Konomi is going to build in this grant application. This module enables users to get access to a varieties of supported pools. They may deposit collaterals into these pools and gain lending interest. If they have enough collaterals, they may also borrow  other assets with some interest fees. Price feeds (by off-chain worker) will ensure that the debts are in healthy condition, otherwise a liquidation process is triggered.
+- Governance Module: DAO to change parameters of the above modules.
+- Price Oracle Module: Price feed of the supported assets to keep the system in a healthy status.
+
+#### Details of the lending module
+The lending module has the following public extrinsic api for user
+```rust
+fn supply(origin, asset_id: T::AssetId, amount: T::Balance) -> Result;
+
+// withdraw supplied assets
+fn withdraw(origin, asset_id: T::AssetId, amount: T::Balance) -> Result;
+
+fn borrow(origin, asset_id: T::AssetId, amount: T::Balance) -> Result;
+
+ //repay borrowed assets with interest
+fn repay(origin, asset_id: T::AssetId, amount: T::Balance) -> Result;
+```
+And also another public extrinsic api for arbitrager
+```rust
+// repay for target_user pay_asset_amount of pay_asset_id asset, get get_asset_id asset with bonus.
+fn liquidate(origin, target_user: T::AccountId, pay_asset_id: T::AssetId, get_asset_id: T::AssetId, pay_asset_amount: T::Balance) -> Result;
+```
+The system has the following global parameters
+```
+liquidation_threshold: When the user's effective collateral rate is below this, arbitrager may trigger liquidation process
+
+supply_threshold: When user borrow some asset, he/she need to keep the collateral rate above this. 
+```
+
+The key of the lending module are a set of pools (mapping from asset id). Each pool has the following fields:
+```
+enabled: a boolean to show if this pool (=asset) is supported. This will be later determined by governance.
+
+can_be_collateral: a boolean to show if this asset can be used as collateral.
+
+collateral_factor: when used as collateral, highly volatile asset may be treated less than it's current market value. This is the factor.
+
+asset: asset of the pool
+
+supply: total user supply of the pool (that can be borrowed)
+
+debt: total user debt of the pool (that is borrowed)
+factor
+
+liquidation_bonus: when liquidating this pool, the bonus of arbitrager can earn.
+
+total_supply_index: used to calculate accumulated interest. See below.
+
+total_debt_index: used to calculate accumulated interest. See below.
+
+last_update_time: timestamp of last update to the pool.
+```
+
+Whenever an asset is supplied or borrowed, its supply and debt index will be updated according to the cumulated interest since the last supply or borrow action.
+```
+total_supply_index = total_supply_index * (1+supply_interest_rate) * time_passed;
+total_debt_index = total_debt_index * (1+debt_interest_rate) * time_passed;
+```
+
+To track user's supply and debt considering interest, we use the following fields
+```
+amount: amount of the supply/debt
+
+index: used to calculate user's accumulated interest. See below.
+
+as_collateral: (only for supply) if the user use this asset as collateral
+```
+When user takes an action (supply, borrow, withdraw or repay), first calculate interest:
+```
+amount = amount * total_supply_index (or total_debt_index) / index
+```
+Then its index will be updated to the current total_supply_index or total_debt_index.
+
+To calculate interest, we use a simple linear modal with the following parameters
+```
+borrow_rate_zero, borrow_rate_optimal, borrow_rate_illiquid, utilization_optimal
+```
+Equations:
+```
+utilization_ratio = total_borrow / total_deposit
+borrow_rate_net1 = borrow_rate_optimal - borrow_rate_zero
+borrow_rate_net2 = borrow_rate_illiquid - borrow_rate_optimal
+if utilization_ratio <= utilization_optimal
+    borrowRate = utilization_ratio / utilization_optimal * borrow_rate_net1 + borrow_rate_zero
+else
+    borrowRate = (utilization_ratio - utilization_optimal) / (1 - utilization_optimal) * borrow_rate_net2 + borrow_rate_optimal
+depositRate = borrowRate * utilization_ratio
+
+```
+The system will later introduce more interest modals.
+
+The system also relies on reliable price oracle to keep the collateral in a healthy status. For convenience, we will first use a mock price oracle and make the interface suitable for a more realistic off-chain worker implementation.
 
 ### Ecosystem Fit 
 
-There are several DeFi projects in the ecosystem at the moment but we believe that our value proposition is unique and also complementing the existing products in the market. We are focused on building the decentralised money market, which could be supporting the stablecoin infrastructure that Acala is building and the staking asset liquidity products that Bifrost is building. 
+There are several DeFi projects in the ecosystem at the moment but we believe that our value proposition is unique and also complementing the existing products in the market. We are focused on building the decentralised money market, which could be supporting the stablecoin infrastructure that already exist and the staking asset liquidity products in the ecosystem.  
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 * Name of team leader: Ariel Ho 
-* Names of team members: 	Shengmu Liu, John Wu, Yuqing Zhao 
+* Names of team members: 	Shengmu Liu, John Wu, Yuqing Zhao, Jayden Yee 
 
 ### Team Website	
 * http://konomi.network/
@@ -55,7 +153,9 @@ Jayden has 8 years entrepreneur experience in Tech startups. Before Konomi Netwo
 Yuqing has more than 7 years experience in social media advertising and community building. Before Konomi Network, she started her career as a commercial broker in physical commodity trading sectors. Besides, she is one of the top chinese KOL in Singapore with over 300K+ organic followers on instagram. As a sole proprietor, built relationship with and represented over 100 corporate partners in their online advertising campaigns, including Huawei, Casio, Shopee, Grab, Lazada, Carlsberg and etc. Her expertise in communication and community building is valuable to this project.
 
 
-John is a Substrate developer, Technical ambassador of Polkadot & Substrate. Before Konomi, he was the CTO of C-dot and blockchain tech lead of ARPA project. 
+John, tech contributor, is a Substrate developer and technical ambassador of Polkadot. He was the CTO of Cdot and blockchain tech lead of ARPA project. 
+
+We have already built a working preliminary swap module with a multi-asset module as a base layer. It is in our team code repository.
 
 
 ### Team Code Repos
@@ -65,42 +165,33 @@ It is currently a private repo, please contact us for access.
 ### Team LinkedIn Profiles
 * http://linkedin.com/in/ariel-ho-8b5aa01ba
 * https://www.linkedin.com/in/yuqing-zhao-1201b6120/
-* https://www.linkedin.com/in/john-wu-72960586/
+* http://linkedin.com/in/xingmo-liu-7b0823140
 
 
 ## Development Roadmap :nut_and_bolt: 
 
 
 ### Overview
-* **Total Estimated Duration:** 2 months 
-* **Full-time equivalent (FTE):**  3 
-* **Total Costs:** 2 BTC 
-
-### Milestone 1 — Implement Decentralised Liquidity Protocol on Testnet
-* **Estimated Duration:** 0.5 month
-* **FTE:**  2
-* **Costs:** 0.5 BTC
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: Automated liquidity pool | Created a 50/50 basic pair AMM on Substrate. Core smart contracts: pair pool and pair pool factory. Auxiliary smart contracts to interact with the core: router and helper libraries  |  
-| 2. | Substrate module: Konomi Testnet | We will launch testnet on Substrate and set up nodes to simulate actual network participation |  
+* **Total Estimated Duration:** 1.5 months 
+* **Full-time equivalent (FTE):**  2
+* **Total Costs:** 1 BTC 
+  
 
 
-### Milestone 2 Decentralised Money Market Module 
+### Milestone 1 Pool Lending Module 
 * **Estimated Duration:** 1 month
-* **FTE:**  3
-* **Costs:** 1.5 BTC
+* **FTE:**  2
+* **Costs:** 1 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 1a. | Substrate Module: Decentralised money market | Lending/borrowing pool of 2 assets and user deposit/debut tracking; lending/borrowing pool of multi-assets; liquidation functionality with sudo price oracle |
-| 2a. | Platform token issuance | Implement token incentives for users contributing to the network |
+| 0 | License | Apache 2.0 / MIT / Unlicense |
+| 1 | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. There will also be a more detailed design documentation of the module reflects the delivered status |
+| 2 | Substrate Module: Decentralised money market | lending/borrowing pool of multi-assets with user deposit/debut tracking and interest calculation; liquidation functionality with sudo price oracle |
+| 3 | Front End | A front end UI for users to test the lending module |
+| 4 | Tests | Unit tests and also a public accessible testnet of the PoC |
+| 5 | Docker | A docker image of Substrate node with the lending module for anyone to easily run the node |
+
 
 
 
@@ -110,7 +201,7 @@ https://konomi-network.medium.com/
 We have been documenting the project progress and also our understanding of the DOT ecosystem in our blog. 
 
 ## Future Plans
-Konomi aims to bridge the gap between crypto and fiat world by offering an easy to use, high performance product for users to trade and manage their crypto assets. In the mid term, we plan to implement cross-chain liquidity aggregation protocols since the current products could not execute trade orders across parachains simultaneously. In the long term, acquiring fiat-based customers and develop efficient cross-chain technology are the two strategic focus. In terms of fiat to crypto gateways, there have been many licensed service providers but it is yet to achieve mainstream adoption. With regulated players eying in this space, there will be more users and more demand for DeFi products. Furthermore, we believe that cross-chain infrastructure is going to be an important building block for crypto industry going forward. Current solutions for BTC and other assets to support Ethereum are either centralised or slow in speed.
+Konomi aims to bridge the gap between crypto and fiat world by offering an easy to use, high performance product for users to trade and manage their crypto assets. In the mid term, we plan to implement cross-chain liquidity aggregation protocols since the current products could not execute trade orders across parachains simultaneously. In the long term, acquiring fiat-based customers and develop efficient cross-chain technology are the two strategic focus. In terms of fiat to crypto gateways, there have been many licensed service providers but it is yet to achieve mainstream adoption. With regulated players eying in this space, there will be more users and more demand for DeFi products. Furthermore, we believe that cross-chain infrastructure is going to be an important building block for crypto industry going forward since current solutions for BTC and other assets supported on Ethereum are either centralised or slow in speed.
 
 ## Additional Information :heavy_plus_sign: 
 
