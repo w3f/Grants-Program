@@ -25,10 +25,18 @@ BD Wallet will fully support the construction and development of the Polkadot ec
 
 ### Project Details 
 * Mockups/designs of any UI components
-  * 
-* ](https://github.com/bdwallet)
+
+  cloud wallet
+
+  <img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/cloud-wallet-coins.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/cloud-wallet-traing.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/cloud-wallet-staking.png" width="33%">
+
+
+
+  hierarchical deterministic wallet
+  <img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/hd-wallet-import.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/hd-wallet-coins.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/hd-wallet-user.png" width="33%">
 
 ### Ecosystem Fit 
+
 In the current market, there are products in the same type of BD Wallet, such as imtoken, cobo wallet, math wallet.
 
 BD Wallet has its own unique characteristics.BD Wallet Provides the world's first jury-style rating service. It is the country’s largest rating agency and has the country’s largest rating data. BD Wallet also has a social function, which facilitates information sharing and exchange between users.
@@ -37,10 +45,9 @@ BD Wallet has its own unique characteristics.BD Wallet Provides the world's firs
 
 ### Team members
 * Iori Zuo: Lead the team, responsible for project coordination and strategic planning.
-* Steve Li: The main technical leader.
-* Charlotte Xia: Responsible for business and marketing
-* Jie Li: Senior Software Engineer
-* Robert Li: Senior Software Engineer
+* Steve Li: ui designer.
+* Jie Li: Senior Software Engineer.
+* Robert Li: Senior Software Engineer.
 
 ### Team Website
 
@@ -77,13 +84,13 @@ BD Wallet has its own unique characteristics.BD Wallet Provides the world's firs
 
 ### Overview
 * **Total Estimated Duration:** 3 months
-* **Full-time equivalent (FTE):**  5.5 FTE
-* **Total Costs:** 2 BTC
+* **Full-time equivalent (FTE):**  3.5 FTE
+* **Total Costs:** 1.5 BTC
 
 ### Milestone 1 — Complete fully support of cloud wallet for Polkadot ecology
 * **Estimated Duration:** 1 month
-* **FTE:**  1.5
-* **Costs:** 0.5 BTC
+* **FTE:**  2
+* **Costs:** 0.3 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -93,7 +100,7 @@ BD Wallet has its own unique characteristics.BD Wallet Provides the world's firs
 ### Milestone 2 — Complete bd-wallet-core development
 - **Estimated Duration:** 1 month
 - **FTE:**  2
-- **Costs:** 1 BTC
+- **Costs:** 0.7 BTC
 
 | Number | Deliverable                      | Specification                                                |
 | ------ | -------------------------------- | ------------------------------------------------------------ |
@@ -109,7 +116,7 @@ BD Wallet has its own unique characteristics.BD Wallet Provides the world's firs
 ### Milestone 3 — Complete bd-wallet development
 
 - **Estimated Duration:** 1 month
-- **FTE:**  2
+- **FTE:**  2.5
 - **Costs:** 0.5 BTC
 
 | Number | Deliverable                      | Specification                                                |
