@@ -24,15 +24,12 @@ BD Wallet will fully support the construction and development of the Polkadot ec
 4. Support Polkadot ecosystem DAPP access in the future, making more users to use Polkadot Eco's DAPP easily.
 
 ### Project Details 
-* Mockups/designs of any UI components
-
-  cloud wallet
-
+* cloud wallet
+  
   <img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/cloud-wallet-coins.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/cloud-wallet-traing.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/cloud-wallet-staking.png" width="33%">
 
-
-
-  hierarchical deterministic wallet
+* hierarchical deterministic wallet
+  
   <img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/hd-wallet-import.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/hd-wallet-coins.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/hd-wallet-user.png" width="33%">
 
 ### Ecosystem Fit 
