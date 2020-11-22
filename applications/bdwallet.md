@@ -1,109 +1,131 @@
 # Open Grant Proposal
 
-> This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
-
-* **Project Name:** Name of your project (e.g. DuoSwap Module)
-* **Team Name:** Legal name of your team (e.g. Duo)
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
-
-*The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
+* **Project Name:** BD Wallet
+* **Payment Address:** 3FfrG9FrZXmPikEYJ9FdHPoRZ2nPjMY45W
 
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
+The full name of BD Wallet is `Black Diamond Wallet`, It is a multi coin crypto wallet enables blockchain developers to build their DApps and wallets natively without having to worry about the low-level implementation details. 
+
+Unlike other wallets, we also support centralized wallets which we call `cloud wallets`. Through the cloud wallet, we provide users with functions such as project rating, easy-to-operate staking, and DeFI vaults. Currently, the cloud wallets has served over 70,000 blockchain industry users.
+
+Now, we intend to fully support the Polkadot ecosystem and contribute to the prosperity of the Polkadot ecosystem
 
 ### Overview
 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+BD Wallet which formerly known as Black Diamond Ratings, was created in January 2018, it is the first jury-type blockchain project rating in the world, with more than 500 professional reviewers, all of whom are senior practitioners in the blockchain industry. The rating range includes exchange ratings, cryptocurrency ratings. Currently, it has accumulated 17,000+ ratings, it is the largest cryptocurrency rating agency in China.
+
+On August 15, 2020, the company strategically merged with Bi Da Wallet and officially changed its name to Black Diamond Wallet. Black Diamond Wallet has now developed into a digital open financial one-stop solution platform integrating cryptocurrency storage, financial service, project rating and industry social contact.
+
+BD Wallet will fully support the construction and development of the Polkadot ecosystem:
+
+1. Launch a special version of Polkadot ecosystem project Rating, in order to let more users know about Polkadot and other Polkadot related projects.
+2. Put the service of DOT Staking online to help the construction of Polkadot Node.
+3. Support DOT, KSM and other polkadot ecosystem hot projects token recharge and withdrawal.
+4. Support Polkadot ecosystem DAPP access in the future, making more users to use Polkadot Eco's DAPP easily.
 
 ### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
-
-Therefore, we ask the teams to submit (where relevant):
 * Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
+  * 
+* ](https://github.com/bdwallet)
 
 ### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
+In the current market, there are products in the same type of BD Wallet, such as imtoken, cobo wallet, math wallet.
+
+BD Wallet has its own unique characteristics.BD Wallet Provides the world's first jury-style rating service. It is the country’s largest rating agency and has the country’s largest rating data. BD Wallet also has a social function, which facilitates information sharing and exchange between users.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
-* Names of team members	
+* Iori Zuo: Lead the team, responsible for project coordination and strategic planning.
+* Steve Li: The main technical leader.
+* Charlotte Xia: Responsible for business and marketing
+* Jie Li: Senior Software Engineer
+* Robert Li: Senior Software Engineer
 
-### Contact
-* **Contact Name:** Full name of the contact person (e.g. John Brown)
-* **Contact Email:** Contact email (e.g. john@duo.com)
-* Website
+### Team Website
+
+* https://www.heizuan.com/
 
 ### Legal Structure 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
-
-### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+* Company name: Fuzhou Wakanda Information Technology Co., Ltd.
+* Registered address: Room F-S309-05, 3rd Floor, Annex Building, F Zone, Fuzhou Software Park, No. 89 Software Avenue, Gulou District, Fuzhou City, Fujian Province, China
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+* BD wallet cloud version code base: https://github.com/bdwallet/wallet-app
+* Bd-wallet-core code base: https://github.com/bdwallet/bd-wallet-core
+* A redux framework for TypeScript: <https://github.com/redux-model/redux-model>
 
-### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+### Team experience
+* Our team members are all come from the Internet industry, and have worked for Baidu, Tencent, Bit Age and other first-tier Internet companies and first-tier digital currency exchanges, which have developed hellokimi blockchain game platform and linkbit token airdrop tool, and focused on technology research and development in the field of cryptocurrency wallets in 2018.
 
 ## Development Roadmap :nut_and_bolt: 
 
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
+1. Cloud wallet fully supports the Polkadot ecosystem
 
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
+   * Support deposit and withdrawal of DOT, KSM on `cloud wallets` 
+   * Support the Polkadot ecosystem projects rating
+   * Support DOT Staking service to help users participate in Polkadot verification and nomination more easily
 
-For each milestone:
-* Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* Please include total amount of funding requested per milestone.
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-* Please commit to providing a dockerfiles for the delivery of your project. 
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
+2. Complete the development of `bd-Wallet-core`.
+
+    `bd-wallet-core` is open source library that implements low-level cryptographic wallet functionality for many blockchains. It will fully support the coins of the Polkadot ecosystem, so that to make it easier for developers to enter the Polkadot system.
+
+3. Complete the development of `Hierarchical Deterministic Wallet`, including:
+
+   * Deposit and withdrawal of Polkadot ecosystem coins (including at least DOT, KSM)
+   * Polkadot Dapp Browser
 
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission. (e.g. 0.80 BTC)
+* **Total Estimated Duration:** 3 months
+* **Full-time equivalent (FTE):**  5.5 FTE
+* **Total Costs:** 2 BTC
 
-### Milestone 1 Example — Implement Substrate Modules 
+### Milestone 1 — Complete fully support of cloud wallet for Polkadot ecology
 * **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 0.75 BTC
+* **FTE:**  1.5
+* **Costs:** 0.5 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-| 6. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
+| 0. | Support deposit and withdrawal of DOT and KSM on cloud wallet | We will build DOT and KSM nodes and interface with polkadot-js on the server side to support the deposit and withdrawal of DOT and KSM tokens. At the same time, we will also launch a corresponding deposit and withdrawal portal on the app side. Once users log in the app, they can launch corresponding operations, such as recharging dot and participating in Staking. |
+| 1. | Support Polkadot ecosystem project rating | We will launch the project rating of polkadot ecosystem on the app. After logging in to the app, users will be able to rate the projects which they are focusing on or knowing. After the rating is published, other |
+| 2. | Support dot staking | We will open the dot staking portal on the app side to help users participate in Polkadot verification and nomination, but do not have relevant experience. The staking page will demonstrate the corresponding annualized earnings. |
+### Milestone 2 — Complete bd-wallet-core development
+- **Estimated Duration:** 1 month
+- **FTE:**  2
+- **Costs:** 1 BTC
 
-### Milestone 2 Example — Additional features
-...
+| Number | Deliverable                      | Specification                                                |
+| ------ | -------------------------------- | ------------------------------------------------------------ |
+| 0.     | api design                       | Design the api that will be used by the decentralized wallet, including mnemonics, address generation, derivation, transaction signatures, etc. |
+| 1.     | documentation                    | Instructions and examples for use.                           |
+| 2.     | unit test                        | Write for each unit test.                                    |
+| 3.     | DOT, KSM and other coins support | Interface with mainstream coins that support the polkadot ecology, such as DOT and KSM. |
+| 4.     | BTC, ETH and other coins support | Because BD Wallet users tend to use not only the polkadot Ecology coins, but also use the mainstream coins, such as BTC ETH, we support as well |
+| 5.     | Publish to project library       | Release our origin source library to the NPM central repository for developers to import and use |
+
+### 
+
+### Milestone 3 — Complete bd-wallet development
+
+- **Estimated Duration:** 1 month
+- **FTE:**  2
+- **Costs:** 0.5 BTC
+
+| Number | Deliverable                      | Specification                                                |
+| ------ | -------------------------------- | ------------------------------------------------------------ |
+| 0.     | UI design                        | The UI of the Hierarchical Deterministic Wallet is designed to provide good interaction experience for users |
+| 1.     | Wallet constructure design       | The constructure design of the wallet. The APP contains local storage strategy, broadcast node management, multi-coins management and other services. The server should provide API interface which supporting multiple chains and in charge of obtaining transaction records, transaction status and other information |
+| 2a.    | Transaction function development | The core function of wallet is to develop the coin management and charging related functions of app |
+| 2b.    | DApp browser development         | The development of dapp browser based on polkadot Ecology will serve as the flow entrance of polkadot ecology DAPP. |
+| 3.     | release                          | Project published available for download and use by users    |
+
+### 
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
+1. In the upcoming wallet development program, we will develop the decentralized wallet, and also fully support for polkadot Ecology Dapp access.
+2. We plan to establish polkadot (China) Technology Alliance in China to study and promote the technology and concept of polkadot and appeal more developers to join in the ecological development of polkadot and work together to achieve the vision of web 3.0 as soon as possible. At present, multiple exchanges and media companies such as AEX, BKEX, Safe Custody, and token damo have jointly initiated the establishment of Polkadot (China) Technology Alliance
+3. We have focused on the study of the deployment of asset synthesis protocols on the Polkadot Network, in order to map real-world physical assets onto the blockchain, which we feel is a very large market, and we will invite more developers to participate in this study
 
-## Additional Information :heavy_plus_sign: 
-Any additional information that you think is relevant to this application that hasn't already been included.
-
-Possible additional information to include:
-* What work has been done so far?
-* Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far?
+## Additional Information
+So far, we have completed the development of Black Diamond Wallet cloud wallet, which can provide users with multiple services, such as staking, social networking, rating, defi mining and others. Currently, it has fully supported for polkadot, at the same time we have been preparing for the creation of the polkadot (China) Technology Alliance.
