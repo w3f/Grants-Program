@@ -28,7 +28,7 @@ Within the scope of this grant we will implement a parachain and web-based UI wi
 * Access control (with Proof of Share);
 * Ownership validation tool (a web-based tool used to verify the owner/creator of IP asset and creation timestamp using the provided certification data such as hash of IP asset or certified IP asset file);
 
-<img src="https://user-images.githubusercontent.com/13851716/99986481-47698300-2dc0-11eb-8523-68f03d1a6b2c.png" width="640px"/>
+<img src="https://user-images.githubusercontent.com/13851716/99986481-47698300-2dc0-11eb-8523-68f03d1a6b2c.png" width="480px"/>
 
 ### Ecosystem Fit 
 As far as our team knows there are no other projects working on IP governance, tokenization or exhange solitions within the Polkadot ecosystem.
@@ -51,6 +51,7 @@ As far as our team knows there are no other projects working on IP governance, t
 * **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
 
 ### Team's experience
+*TODO*
 Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
 
 ### Team Code Repos
@@ -66,13 +67,13 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 
 ### Overview
 * **Total Estimated Duration:** 2 months
-* **Full-time equivalent (FTE):**  TODO
-* **Total Costs:** TODO
+* **Full-time equivalent (FTE):**  *TODO*
+* **Total Costs:** *TODO*
 
 ### Milestone 1 Implement IP Management/Governance Module 
 * **Estimated Duration:** 2 month
-* **FTE:**  TODO
-* **Costs:** TODO BTC
+* **FTE:**  *TODO*
+* **Costs:** *TODO* BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -85,12 +86,51 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 | 4. | Access control | Manage access permissions to specific IP asset with unique Proof of Share entries that confirm a specific user was granted access to an asset.  
 | 5. | Docker | Dockerfile to run a chain. 
 
+### Milestone 2 Implement UI 
+* **Estimated Duration:** 1 month
+* **FTE:**  *TODO*
+* **Costs:** *TODO* BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | *TODO* | *TODO* |  
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
+
+We are planning to continuusly evolve the project adding new modules and make a first decentralized exchnage for IP assets. 
+
+#### IP Tokenization (IPT) module ####
+IPT module enables securitization and tokenization of IP assets. It introduces advanced mechanics for the management of IP ownership, such as the distribution of shares of IP, co-ownership, and royalties distribution via smart-contracts.
+
+<img src="https://user-images.githubusercontent.com/13851716/100002424-966de300-2dd5-11eb-9b84-f7b1e0a51b4f.png" width="480px"/>
+
+#### IP Financing (IPF) module ####
+IPF module provides various models of funding and financing for projects that produce IP assets. Funding models include (but not limited to): crowd investing, private investing, grants, open innovation (OI) challenges.
+
+<img src="https://user-images.githubusercontent.com/13851716/100002434-98d03d00-2dd5-11eb-8c1b-33b5403f81c3.png" width="480px"/>
+
+#### IP Licensing (IPL) module ####
+IPL module enables the licensing of IP assets. Allows tracking of all licensing transactions and provides evidence of licensing.
+Various licensing agreements, instant licensing, proof of licensing, licensing transactions overview.
+
+<img src="https://user-images.githubusercontent.com/13851716/100002436-9968d380-2dd5-11eb-8c68-74644984dfef.png" width="480px"/>
+
+#### IP Exchange (IPE) module ####
+IPE module enables the exchange of IP assets. Any IP asset can be exchanged for any other IP asset on the platform, as well as it can be exchanged for various crypto assets (e.g. DOT, ETH, or BTC). 
+
+<img src="https://user-images.githubusercontent.com/13851716/100002431-9837a680-2dd5-11eb-9046-4800f8031f59.png" width="480px"/>
+
 
 ## Additional Information :heavy_plus_sign: 
 
-* What work has been done so far?
-* Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far?
+* **What work has been done so far?**
+
+We already have a working prototype and pilots.
+
+* **Are there are any teams who have already contributed (financially) to the project?**
+
+No
+
+* **Have you applied for other grants so far?**
+
+We have not applied for any other grants with this exact project. But we have applied for multiple grants related to the application of our Decentralized Assessment System (a system we designed for crowdsourcing of domain expertise to assess various IP assets). We are currently implementing pilots as part of Blockchers program, as well as part of EOSC Digital Innovation Hub.
