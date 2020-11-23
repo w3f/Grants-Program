@@ -76,6 +76,7 @@ SRE, aiming to take an extensive stab at blockchains. Prior to that, I was with 
 | 1. | enhance orderbook | We will enhance the orderbook to support partial order fulfillment. |
 | 2. | solve market settlement | Once a market’s underlying event occurs, the outcome will be determined in order for the market to finalize the market settlement. Only amout of authorized accounts is  allowed to report the actual real-world outcome of the event at the stage. |
 | 3. | deliver shares of market participant | We will implement delivery mechanism of outcome tokens purchased on the  protocol. |
+| 4. | tutorial of prediction market contract | We will provide detailed tutorial how to interact with the protocol |
 
 ## Future Plans
 The Forecastee protocol needs a trustless way to report real world event. We need an  profit-motivation incentive mechanism to allow anynone to report event result to the protocol.
