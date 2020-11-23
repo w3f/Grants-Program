@@ -76,7 +76,7 @@ We plan to provide a `ZK Rollup` pallet that allows Substrate-based blockchain t
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  1 FTE
-* **Total Costs:** 2.1
+* **Total Costs:** 1.55
 
 ### Milestone 1
 #### Prepare ZK Rollup Contracts On Substrate
@@ -93,34 +93,21 @@ Our first step is to deploy [matter-labs](https://github.com/matter-labs/zksync)
 | 3. | Documentation | Document which describes how to test ZK Rollup on substrate |
 
 ### Milestone 2
-#### Implement ZK Rollup Network Operator And Prover Pallet
-* **Estimated Duration:** 2 months
+#### Implement ZK Rollup Network And Tutorial
+* **Estimated Duration:** 2.25 months
 * **FTE:**  1
-* **Costs:** 1.50 BTC
+* **Costs:** 1.35 BTC
 
-Our second step is to implement a ZK Rollup operator and a prover pallet. In order for a service provider to setup ZK Rollup sidechain network, we need a pallet to make a network operator which monitors mainchain contracts, to commit the sidechain block to the mainchain and to create a sidechain block proof for a prover. In order for user to participating ZK Rollup network and create sidechain block validity proof with SNARK, we need to implement prover applications.
+Our second step is to implement a ZK Rollup operator and a prover pallet. In order for a service provider to setup ZK Rollup sidechain network, we need a pallet to make a network operator which monitors mainchain contracts, to commit the sidechain block to the mainchain and to create a sidechain block proof for a prover. In order for user to participating ZK Rollup network and create sidechain block validity proof with SNARK, we need to implement prover applications. We'll also prepare Dockerfile and tutorial. In order for developers to setup the environment and try to run example commands, we need to prepare Dockerfile and tutorial.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | Implement Operator API Pallet | Runtime that run the sidechain environment |  
 | 2. | Implement Prover API Pallet | Pallet that allows service provider to compose own ZK Rollup network and interact with mainchain through RPC |  
 | 3. | Integration Test | Test sidechain and mainchain work together correctly on substrate-based chain |  
-| 4. | Documentation | Document which describes how to deposit, withdraw and send, be validator, and init and participate network on substrate-based chain |
-
-### Milestone 3
-#### Prepare Dockerfile And Tutorial
-* **Estimated Duration:** 0.25 month
-* **FTE:**  1
-* **Costs:** 0.40 BTC
-
-Our third step is to prepare Dockerfile and tutorial. In order for developers to setup the environment and try to run example commands, we need to prepare Dockerfile and tutorial.
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Prepare Dockerfile | Dockerfile that allows developer to setup the environment through docker |  
-| 2. | Write Tutorial | ZK Rollup tutorial that allows developer to run example commands |  
-| 3. | Integration Test | Test explorer works together correctly on Web UI |  
-| 4. | Documentation | Document which describes how to deposit, withdraw and send, be validator |
+| 4. | Prepare Dockerfile | Dockerfile that allows developer to setup the environment through docker |  
+| 5. | Write Tutorial | ZK Rollup tutorial that allows developer to run example commands |  
+| 6. | Documentation | Document which describes how to deposit, withdraw and send, be validator, and init and participate network on substrate-based chain |
 
 ### Gantt Chart
 There are three parts in the following `gantt chart` and it describes how long it takes to get things done for each milestone. First of all we implement ZK Rollup contracts and sidechain components on ropsten network to check whether it works correctly. And second, we implement sidechain components pallet that allow us to build ZK Rollup on substrate-based chain. At last, we prepare Dockerfile and tutorial that allow developer to user this pallet and build their own ZK Rollup.
