@@ -76,7 +76,7 @@ We plan to provide a `ZK Rollup` pallet that allows Substrate-based blockchain t
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  1 FTE
-* **Total Costs:** 1.55
+* **Total Costs:** 1.61
 
 ### Milestone 1
 #### Prepare ZK Rollup Contracts On Substrate
@@ -96,7 +96,7 @@ Our first step is to deploy [matter-labs](https://github.com/matter-labs/zksync)
 #### Implement ZK Rollup Network And Tutorial
 * **Estimated Duration:** 2.25 months
 * **FTE:**  1
-* **Costs:** 1.35 BTC
+* **Costs:** 1.41 BTC
 
 Our second step is to implement a ZK Rollup operator and a prover pallet. In order for a service provider to setup ZK Rollup sidechain network, we need a pallet to make a network operator which monitors mainchain contracts, to commit the sidechain block to the mainchain and to create a sidechain block proof for a prover. In order for user to participating ZK Rollup network and create sidechain block validity proof with SNARK, we need to implement prover applications. We'll also prepare Dockerfile and tutorial. In order for developers to setup the environment and try to run example commands, we need to prepare Dockerfile and tutorial.
 
@@ -112,10 +112,12 @@ Our second step is to implement a ZK Rollup operator and a prover pallet. In ord
 ### Gantt Chart
 There are three parts in the following `gantt chart` and it describes how long it takes to get things done for each milestone. First of all we implement ZK Rollup contracts and sidechain components on ropsten network to check whether it works correctly. And second, we implement sidechain components pallet that allow us to build ZK Rollup on substrate-based chain. At last, we prepare Dockerfile and tutorial that allow developer to user this pallet and build their own ZK Rollup.
 
+<img width="661" alt="gantt_chart" src="https://user-images.githubusercontent.com/39494661/99942873-b42a5080-2db3-11eb-87a7-0d1041042297.png">
 
 ### Detail
 The following list describes our detail for each components.
 
+<img width="661" alt="detail_tasks" src="https://user-images.githubusercontent.com/39494661/99942921-c7d5b700-2db3-11eb-946c-32780168e2e4.png">
 
 ## Additional Information :heavy_plus_sign:
 - [web site](https://www.plasmnet.io/)
