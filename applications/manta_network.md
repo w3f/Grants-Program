@@ -39,8 +39,10 @@ The details of Manta DAP and DAX schemes can be found section 3, and section 4 o
 #### Manta DAP
 
 Manta DAP has support two kinds transactions:
-* `tx_mint`: mint private coins from public coins (base coins)
-* `tx_transfer`: transfer private coins to private/public coins
+* `tx_mint`: mint private coins from public coins (base coins).
+* `tx_transfer`: transfer private coins to private/public coins.
+
+(Please see section 3 of [the white paper](https://github.com/Manta-Network/Manta-Whitepaper/blob/main/manta-whitepaper.pdf) for more details.)
 
 ##### Mint private coins from base coins
 
@@ -69,6 +71,8 @@ The new coin will be posted on chain using public key encryption.
 Manta Decentralized Anonymous eXchange scheme is based on zkSNARK and AMM. The overall design intuition is that the ledger maintains `x*y = k` (or using some more sophiscated curve) invariant for an exchange pair. The validation logic requires that trader provide an zero-knowledge proof of the fulfillment of this invariant after trading. Below is a simplified architecture of Manta DAX:
 
 <img src="https://github.com/Manta-Network/Manta-Whitepaper/raw/main/manta-arch.png" width="500">
+
+(Please see section 4 of [the white paper](https://github.com/Manta-Network/Manta-Whitepaper/blob/main/manta-whitepaper.pdf) for more details.)
 
 ### Implementation 
 
