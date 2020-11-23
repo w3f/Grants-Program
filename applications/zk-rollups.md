@@ -96,7 +96,7 @@ Our first step is to deploy [matter-labs](https://github.com/matter-labs/zksync)
 #### Implement ZK Rollup Network And Tutorial
 * **Estimated Duration:** 2.25 months
 * **FTE:**  1
-* **Costs:** 1.41 BTC
+* **Costs:** 1.45 BTC
 
 Our second step is to implement a ZK Rollup operator and a prover pallet. In order for a service provider to setup ZK Rollup sidechain network, we need a pallet to make a network operator which monitors mainchain contracts, to commit the sidechain block to the mainchain and to create a sidechain block proof for a prover. In order for user to participating ZK Rollup network and create sidechain block validity proof with SNARK, we need to implement prover applications. We'll also prepare Dockerfile and tutorial. In order for developers to setup the environment and try to run example commands, we need to prepare Dockerfile and tutorial.
 
