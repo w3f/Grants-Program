@@ -29,9 +29,9 @@ As a first phase we will implement a parachain and web-based UI with basic funct
 * Creation of IP asset(s) within a project;
 * Registration of IP asset(s) ownership on the blockchain with certification (a digital certificate that embeds a signature of IP asset creator, creation timestamp and hash of the certified IP asset);
 * Access control (with Proof of Share);
-* Ownership validation tool (a web-based tool used to verify the owner/creator of IP asset and creation timestamp using the provided certification data such as has hof IP asset or certified IP asset file);
+* Ownership validation tool (a web-based tool used to verify the owner/creator of IP asset and creation timestamp using the provided certification data such as hash of IP asset or certified IP asset file);
 
-
+<img src="https://user-images.githubusercontent.com/13851716/99986481-47698300-2dc0-11eb-8523-68f03d1a6b2c.png" width="640px"/>
 
 
 
