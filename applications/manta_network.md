@@ -213,6 +213,6 @@ Twitter: https://twitter.com/mantanetwork?s=21
 
 Medium: https://medium.com/@mantanetwork
 
-Telegram: https://medium.com/@mantanetwork
+Telegram: https://t.me/mantanetwork
 
 WeChat Public Account: MantaNetwork
