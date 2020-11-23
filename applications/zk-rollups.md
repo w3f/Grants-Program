@@ -76,7 +76,7 @@ We plan to provide a `ZK Rollup` pallet that allows Substrate-based blockchain t
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  1 FTE
-* **Total Costs:** 1.61
+* **Total Costs:** 1.65 (rate: 23 Nov, 10:27am UTC)
 
 ### Milestone 1
 #### Prepare ZK Rollup Contracts On Substrate
@@ -108,6 +108,7 @@ Our second step is to implement a ZK Rollup operator and a prover pallet. In ord
 | 4. | Prepare Dockerfile | Dockerfile that allows developer to setup the environment through docker |  
 | 5. | Write Tutorial | ZK Rollup tutorial that allows developer to run example commands |  
 | 6. | Documentation | Document which describes how to deposit, withdraw and send, be validator, and init and participate network on substrate-based chain |
+| 7. | Publish an article | After the Web3 Foundation's review, we will publish an article which highlights ZK Rollups on Polkadot. Potentially, we will integrate the article to the Polkadot's medium. |
 
 ### Gantt Chart
 There are three parts in the following `gantt chart` and it describes how long it takes to get things done for each milestone. First of all we implement ZK Rollup contracts and sidechain components on ropsten network to check whether it works correctly. And second, we implement sidechain components pallet that allow us to build ZK Rollup on substrate-based chain. At last, we prepare Dockerfile and tutorial that allow developer to user this pallet and build their own ZK Rollup.
