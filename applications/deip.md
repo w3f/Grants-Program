@@ -2,16 +2,16 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project Name:** Name of your project (e.g. DuoSwap Module)
-* **Team Name:** Legal name of your team (e.g. Duo)
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
-
-*The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
+* **Project Name:** DEIP IP Management/Governance Module
+* **Proposer:** [aliakseikulik](https://github.com/aliakseikulik)
+* **Payment Address:** TODO
 
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
 
 ### Overview
+DEIP is a Polkadot Parachain built for IP management, tokenization, and governance.
+
+DEIP builds an IP assets management platform which allows discovering, evaluation, and exchange of IP assets on the blockchain. It can be applied to any type of IP assets. The platform implements registration of IP assets on the blockchain, tokenization of IP assets, and governance of IP assets. With such infrastructure, DEIP becomes a foundation for DeFI and DAO around IP assets. In the future, DEIP will also provide a no-code/low code SDK to build custom Dapps for specific IP assets management cases (patents, art, movies, technologies, etc.).
 
 Please provide the following:
   * A brief description of the project.
@@ -19,6 +19,22 @@ Please provide the following:
   * An indication of why your team is interested in creating this project.
 
 ### Project Details 
+
+#### DEIP IP Management/Governance (IPMG) Module
+IPMG is a core module for managing technology assets, and assessment and evaluation of IP assets. It enables a collaborative approach in the creation and governance of IP assets via working groups as DAOs, advanced access control & sharing capabilities with Proof of Share. Furthermore, the IPMG module enables a collaborative assessment and evaluation of IP assets via a Decentralized Assessment System that allows to crowdsource expertise from the network. Working groups are managed as DAOs via specific smart-contracts that create delayed transactions with multi-sig to be executed.
+
+As a first phase we will implement a parachain and web-based UI with basic functionality for the management of working groups via DAOs, and governance and registration of IP on the blockchain. Core features to be implemented during this phase:
+* Management of working groups (creation, membership management, decision-making mechanisms (voting));
+* Creation of project(s);
+* Creation of IP asset(s) within a project;
+* Registration of IP asset(s) ownership on the blockchain with certification (a digital certificate that embeds a signature of IP asset creator, creation timestamp and hash of the certified IP asset);
+* Access control (with Proof of Share);
+* Ownership validation tool (a web-based tool used to verify the owner/creator of IP asset and creation timestamp using the provided certification data such as has hof IP asset or certified IP asset file);
+
+
+
+
+
 We expect the teams to already have a solid idea about the project's expected final state.
 
 Therefore, we ask the teams to submit (where relevant):
@@ -38,9 +54,9 @@ Are there any other projects similar to yours? If so, how is your project differ
 * Names of team members	
 
 ### Contact
-* **Contact Name:** Full name of the contact person (e.g. John Brown)
-* **Contact Email:** Contact email (e.g. john@duo.com)
-* Website
+* **Contact Name:** Alexey Kulik
+* **Contact Email:** alexey.kulik@deip.world
+* **Website:** [https://deip.world](https://deip.world)
 
 ### Legal Structure 
 * **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
@@ -59,28 +75,15 @@ Please describe the team's relevant experience.  If the project involves develop
 
 ## Development Roadmap :nut_and_bolt: 
 
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
-
-For each milestone:
-* Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* Please include total amount of funding requested per milestone.
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-* Please commit to providing a dockerfiles for the delivery of your project. 
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
-
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission. (e.g. 0.80 BTC)
+* **Total Estimated Duration:** 2 months
+* **Full-time equivalent (FTE):**  TODO
+* **Total Costs:** TODO
 
-### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 0.75 BTC
+### Milestone 1 Implement IP Management/Governance Module 
+* **Estimated Duration:** 2 month
+* **FTE:**  TODO
+* **Costs:** TODO BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -94,8 +97,6 @@ To assist you in defining it, we created a document with examples for some grant
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 | 6. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
 
-### Milestone 2 Example — Additional features
-...
 
 ## Future Plans
 Please include the team's long-term plans and intentions.
