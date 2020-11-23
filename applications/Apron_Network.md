@@ -166,6 +166,7 @@ The following components will be included:
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 | 6. | Tutorial | We will write an tutorial about how to use Apron Network. |
 | 7. | Article | We will write an article published on media channels. |
+| 8. | DAO | A Apron DAO will be created to handle the governance of the Decentralized API Market. |
 
 
 
