@@ -112,12 +112,14 @@ Our second step is to implement a ZK Rollup operator and a prover pallet. In ord
 ### Gantt Chart
 There are three parts in the following `gantt chart` and it describes how long it takes to get things done for each milestone. First of all we implement ZK Rollup contracts and sidechain components on ropsten network to check whether it works correctly. And second, we implement sidechain components pallet that allow us to build ZK Rollup on substrate-based chain. At last, we prepare Dockerfile and tutorial that allow developer to user this pallet and build their own ZK Rollup.
 
-<img width="661" alt="gantt_chart" src="https://user-images.githubusercontent.com/39494661/99942873-b42a5080-2db3-11eb-87a7-0d1041042297.png">
+
+<img width="661" alt="gantt_chart" src="https://user-images.githubusercontent.com/39494661/98802759-194a8180-2457-11eb-9006-33d41bf89d15.png">
 
 ### Detail
 The following list describes our detail for each components.
 
-<img width="661" alt="detail_tasks" src="https://user-images.githubusercontent.com/39494661/99942921-c7d5b700-2db3-11eb-946c-32780168e2e4.png">
+<img width="661" alt="detail_tasks" src="https://user-images.githubusercontent.com/39494661/98802952-6a5a7580-2457-11eb-95f6-25629b43bc56.png">
+
 
 ## Additional Information :heavy_plus_sign:
 - [web site](https://www.plasmnet.io/)
