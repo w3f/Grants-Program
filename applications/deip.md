@@ -13,7 +13,9 @@ DEIP builds an IP assets management platform which allows discovering, evaluatio
 DEIP is a Polkadot Parachain built on Substrate 2.0 Framework and designed specifically for IP governance, tokenization, and exchange. We see integration with Polkadot ecosystem as an important step towards a truly decentralized way to govern and exhange tokenized IP assets.
 
 #### Motivation ####
-*TODO*
+DEIP team has been building a solutions for tokenization and exhange of IP assets since 2017. We have a vision of a more innovative world where individuals and companies are able to push their innovations to market faster and with less expenses.
+
+We see Polkadot as a the best ecosystem for us to join. We believe that our protocol will be useful for other companies in the Polkadot ecosystem and even could drive adoption of both Polkadot and DEIP solutions.
 
 ### Project Details 
 
@@ -47,11 +49,9 @@ As far as our team knows there are no other projects working on IP governance, t
 * **Website:** [https://deip.world](https://deip.world)
 
 ### Legal Structure 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+* **Registered Legal Entity:** DEIPWorld, LLC
 
 ### Team's experience
-*TODO*
 
 **Yahor Tsaryk**
 
