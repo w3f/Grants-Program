@@ -1,4 +1,4 @@
-# Dwitter 30k CHF Grant Proposal
+# Dwitter Censorship Resistant Microblogging 
 
 * **Project:** Dwitter Censorship resistant Web3 Microblogging and Social Networking service
 
@@ -139,38 +139,39 @@ is documented.
 Below we provide the roadmap of the Dwitter project. The milestones will be executed in parallel and due to research in performance and scalability, censorship resistance and potential improvements and feature merge requests to multiple open source projects involved, as well deciding upon further production features such as prominency social reward, incentivizing the use of the platform.
 
 ### Overview
-* **Total Estimated Duration:** 1 year, 6 months 30k PoC, with additional 200k in requested funding for facing the public Internet and creating a startup company
+* **Total Estimated Duration:** 2 months 30k PoC, with additional 200k in requested funding for facing the public Internet and creating a startup company
 * **Full-time equivalent (FTE):**  Full time work on the project will be pursued.
-* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is BTC 2.4 (Unix Timestamp CHF Exchange rate 1604426503.916094)
+* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is BTC 1.7-1.8 (Unix Timestamp CHF Exchange rate 1604426503.916094 30,000 CHF)
 
-### Milestone 1 — Implement a Dapp with IPFS/IPNS Pinning, and Tor hidden service content delivery in a UI client & Implement Substrate Modules, Launch a Polkadot parachain for human readable names, social currency and Direct messages
+### Milestone 1 — Implement a Dapp with IPFS/IPNS Pinning, and Tor hidden service content delivery in the style and ease of Tor browser in a UI client. Do it in Rust.
 
 * **Estimated Duration:** 1 month
 * **FTE:**  1.0
-* **Costs:** 0.89568825 BTC (Unix Timestamp CHF Exchange rate 1606226141.135491 16746,90 CHF)
+* **Costs:** 0.85 (Unix Timestamp CHF Exchange rate 1606238029.414203 15,000 CHF)
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache License 2.0 | License of the project
-| 0c. | Blockchain | We will launch a Polkadot Parachain for Social Payments and Naming |
-| 1. | Substrate module: 2 | We will create a Substrate module that will render social payments with its own coin and other cryptocurrencies |  
-| 2. | Tor hidden services | Tor circuits will provide censorship resistant anonymous routing between the IPFS nodes, and the clients |
-| 3. | Blockchain DNS | Review of several decentralized DNS implementations and Namecoins |
-| 2. | Ethereum 2.0 | Review of MetaMask integration and browser support for .eth domains with upcoming eth0 mobile-friendly | 
+| 0b. | Blockchain | Launch a Polkadot Parachain for Social Payments, Naming and Messaging |
+| 1. | IPFS/IPNS | Performant content delivery and pinning in the style of Twitter followings |
+| 2. | TorBrowser like Client | Establish a Tor circuit with ease like TorBrowser or Pivoxy |
+| 3. | Prepare for Substrate | Polkadot Relay chain integration, We will create a Substrate module that will render social payments and names |
+| 4. | Draft Substrate-Names | Polkadot (Parachain) Human Readable Names |
+| 5. | Draft Substrate-Payments | Polkadot (Parachain) Social Payments |
+| 6. | Draft Substrate-Messaging | Polkadot (Parachain) Direct Messaging |
 
+### Mileston 2 - Launch a Polkadot parachain for human readable names, social currency and Direct messages, Implement substrate modules
 * **Estimated Duration:** 1 month
 * **FTE:**  1.0
-* **Costs:** 0.89568825 BTC (Unix Timestamp CHF Exchange rate 1606226141.135491 16746,90)
+* **Costs:** 0.85 (Unix Timestamp CHF Exchange rate 1606238029.414203 15,000 CHF)
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Substrate module: 1 | We will create a Substrate module that will incorporate human readable domain names for the current pinning model) |
-| 2. | Substrate chain | Modules Naming with substrate-names, Payment & Direct Messages of our custom chain will interact on top of the Dwitter client providing additional features as opposed to storing social content directly on the blockchain |
-| 3. | Unit Tests for the entire platform including benchmarks (of IPFS, for example) |
-| 4. | Documentation & Tests | Finalization of Documentation, Benchmarks and Testing |
-| 5. | Substrate module: 2 | We will create a Substrate module that will allow for private message hashsum verification with the network |
-| 6. | Tests for the entire platform including benchmarks (of IPFS, for example) |
-
+| 1. | Substrate module: Names | Incorporate resolution and registration of human readable domain names on a Polkadot Parachain |
+| 2. | Substrate module: Payments | Incorporate social payments across Parachains through the Polkadot Relay chain |
+| 3. | Substrate module: Messaging | We will create a Substrate module that will allow for private messaging and hashsum verification with the network |
+| 4. | Tests for the entire platform including benchmarks (of IPFS, for example) |
+| 5. | Documentation & Tests | Finalization of Documentation, Benchmarks and Testing |
 
 ### Bitcoin address for funding
 
