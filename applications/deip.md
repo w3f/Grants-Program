@@ -32,6 +32,14 @@ Within the scope of this grant we will implement a parachain and web-based UI wi
 
 <img src="https://user-images.githubusercontent.com/13851716/99986481-47698300-2dc0-11eb-8523-68f03d1a6b2c.png" width="480px"/>
 
+#### Technology stack ####
+* Blockchain: Substrate + C++/Rust
+* Backend: Node.js + MongoDb
+* Frontend: Vue.js
+
+#### PoC/MVP ####
+Live demo of the platform is available at [https://demo.deip.world](https://demo.deip.world)
+
 ### Ecosystem Fit 
 As far as our team knows there are no other projects working on IP governance, tokenization or exhange solitions within the Polkadot ecosystem.
 
@@ -71,7 +79,7 @@ Expert in software architectures and blockchain with 10 years of hands-on experi
 Full-stack developer since 2004.
 
 ### Team Code Repos
-The existing code is not fully open-sourced at the moment. DEIP team is fully commited to open-source the code and protocol in early 2021. We will provide access to repositories upon request from Polkadot team. **All developments within the Polkadot Open Grants Program will be open-sourced from day one**.
+The existing code is not fully open-sourced at the moment. DEIP team is fully commited to open-source the code and protocol in early 2021. We will provide access to our current GitLab repositories upon request from Polkadot team. **All developments within the Polkadot Open Grants Program will be open-sourced from day one on GitHub**.
 
 ### Team LinkedIn Profiles
 * [Yahor Tsaryk](https://www.linkedin.com/in/yahor-tsaryk-92032a68/)
