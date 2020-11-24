@@ -60,7 +60,7 @@ Professional in front-end and backend development, Big Data and distributed syst
 
 **Alex Shkor** 
 
-An expert in blockchain architectures, crypto economies modeling and has more than 10 years of experience in designing distributed systems. He held executive positions in Paralect.com. Alex is thinktank member and expert at Blockchain for Science, and public speaker at various events (presentations in Vienna (Scientific Publishing on the Blockchain), Zurich (CRYPTSCIENCE2018), ETH Zurich). Author of articles about the distributed system, especially CQRS and Event Sourcing. Alex has been advising Bitshares Core team on how to efficiently implement off-chain models for Bitshares protocol.
+An expert in blockchain architectures, crypto economies modeling and has more than 10 years of experience in designing distributed systems. He held executive positions in Paralect.com. Alex is thinktank member and expert at Blockchain for Science, and public speaker at various events (presentations in Vienna (Scientific Publishing on the Blockchain), Zurich (CRYPTSCIENCE2018), ETH Zurich). Author of articles about the distributed system, especially CQRS and Event Sourcing.
 
 **Alexey Kulik**
 
