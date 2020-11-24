@@ -13,7 +13,7 @@ If this application in response to an RFP then please indicate this on the first
 
 ### Overview
 
-PAID Smart Agreement protocol is based off ideas from MDV “Mensajería Documentos Verificables” and OpenLaw and consists of part protocol onchain and a offchain protocol using content networks like IPFS/IPNS/Swarm and using DID-METHOD/VC standards as identity and verification mechanism, based in a our did method development  did:dpki.
+PAID Smart Agreement protocol is based off ideas from MDV “Mensajería Documentos Verificables” and OpenLaw and consists of part protocol onchain and a offchain protocol using content networks like IPFS/IPNS/Swarm and using DID-METHOD/VC standards as identity and verification mechanism, based in a our did method development  DID:DPKI.
 
 #### Technologies
 * OpenLaw
@@ -48,10 +48,10 @@ A PAID workflow looks like:
 * On Contract execution, workflow is executed by a workflow gateway, which whitelist allowed users.  
 
 * Contracts calls that are integrated with oracles are called and allows:
- * Applies agreement terms (terms must be classify to numeric, similar to ML Classification)
- * Verify agreement terms subjects (Only supports token price subject in first release)
+ * Applies agreement terms (terms must be classify to numeric, similar to ML Classification).
+ * Verify agreement terms subjects (Only supports token price subject in first release).
  * Handle reputation of signatures and this information can share with other oracles o partys, above approve of users.
-
+ * Manage with Oracles and Machine Learning the classification of disputes and then through an incentivized human arbitrator, pass it to an analysis by said qualified arbitration and with competencies in the matter of analysis, allowing by consensus the resolution of disputes, all within a decentralized model.
 
 
 ### Previous Work
@@ -66,7 +66,9 @@ A PAID workflow looks like:
 
 Our project is different in that our team has had more than a year of experience with making wallets for blockchain dapps and then half a year with deep experience in DID, Swarm, IPFS and document signing, which are the bulk of tech experience as defined in OpenLaw. But our protocol takes it a bit further and uses oracles and ML to make it more automated and allows for hybrid scenarios, where a ML business logic can rank or tag a dispute and then it can be further review by an incentivized human arbitrator, allowing for consensus of a dispute. Compared to OpenLaw, which is OpenCourt API is strictly human based, our protocol excels not only in the dispute/arbitrage, but also at transcribing using RLP instead of a Markup Language based ion JEXL.
 
-Further along, by adding the latest in identity technology, with a standard of W3C DID METHOD develop for us (did:dpki) allows us to delegate authority to smart contracts using the DID decentralized identity of the individual or smart contract.
+Further along, by adding the latest in identity technology, with a standard of W3C DID METHOD develop for us (DID:DPKI) allows us to delegate authority to smart contracts using the DID decentralized identity of the individual or smart contract.
+
+Additionally, it will allow identity verification through a Certification Authority such as Let's Encrypt, allowing to be part of a `chain of trust`, where each hardware and software component is verifiable through a private key and an X.509 certificate. Ensuring that the protocol can be an integral part of any verifiable end-to-end communication scheme or `chain of trust`.
 
 We think this project, while developed in EVM, will allow for better and transparent DeFi projects to be used in the Polkadot ecosystem.
 
@@ -75,6 +77,8 @@ We think this project, while developed in EVM, will allow for better and transpa
 ### Team members
 * Rogelio Morrel
 * Bradley Suira	
+* Alfredo Lopez
+* Patricia Carrillo
 
 ### Team Website	
 * https://www.master.ventures
@@ -101,6 +105,7 @@ Please describe the team's relevant experience.  If the project involves develop
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/rogelio-morrell-575aa51/
 * https://www.linkedin.com/in/bradleysuira/
+* https://www.linkedin.com/in/alfredolopez80/
 
 ## Development Roadmap :nut_and_bolt: 
 
