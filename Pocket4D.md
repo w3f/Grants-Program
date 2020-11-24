@@ -1,6 +1,6 @@
-# Open Grant Proposal
+Open Grant Proposal of Polkadot-Dart
 
-* **Project:** Pocket4D Wallet
+* **Project:** Polkadot-Dart
 
 * **Proposer:** Michael So
 
@@ -10,52 +10,71 @@
 
 ## Project Overview :page_facing_up: 
 
-
-
 ### Overview
 
-Wallet4D is a multi-cryptocurrency wallet, supporting Polkadot and it's para-chains.
+Dart has advantages in native development. 
 
-1. We use the flutter architecture for development to provide high-quality user experience and product performance.
+Dart is a computer programming language developed by Google, which is used in the development of web, server, mobile apps and the IoT. Dart is an object-oriented, class-defined, single-inheritance language. Dart is a general programming language developed by Google, which was later recognized as a standard by ECMA (ECMA-408). It is used to build web, server, desktop and mobile applications. Its syntax is similar to C language and can be translated into JavaScript, interfaces, mixins, abstract classes, reified generics, optional typing and sound type system .
 
-2. Unlike other Polkadot wallets that use PolkadotJS, the encryption library and tools rely on adopting the Rust version provided by the existing Substrate/Polkadot and get repackaged. And we use FFI (Foreign Function Interface) to provide Dart/Flutter for interoperability. We have applied another Grant, see: [General Grant](https://github.com/w3f/General-Grants-Program/pull/340)
-3. We found that the parachain project has its own needs for customization and expansion and thus wallets applications need to be constantly updated to meet these customized needs. So we adopt Pocket4D (another General Grant project, see: [General Grant]( https://github.com/w3f/General-Grants-Program/pull/340)) to enhance development and user experience, which introduces the `Mini-Programs` concept to expand the applications functional abilities to meet more requirements and import derived DApps. We are devoted to providing a low-cost way to realize its business and enrich the application ecosystem. 
+Dart is very positive for Polkadot. Currently [Polkadot-JS](https://github.com/polkadot-js) (hereinafter referred to as JS API) provides developers with a complete JS API for interacting with the Polkadot. Both Web and App can call JS API. But the problem is that in App development and design, developers must provide a built-in browser interface on the front end, and then use JavaScript to implement JS API calls. The web is embedded in the app, which will cause the front-end page to load slowly, the development framework is not easy to maintain, and the native functions cannot be fully invoked.
 
-Through such a multi-cryptocurrency wallet, we hope to alleviate the cost of interfacing Polkadot with other ecosystems and applications. Also, based on the built-in Pocket4D `Mini-Program` framework, we hope to offer a better choice for external developers to migrate existing apps or develop new ones at a lower cost, so that the Polkadot ecosystem can expand rapidly.
+Flutter and Dart are born for cross-platform applications development. As Dart is using in the development of Flutter, we propose that using Dart language to develop tools for Polkadot/Substrate will be a better solution.
 
+As a new framework, there are not many blockchain SDKs suitable for Flutter. Ethereum provides [web3dart](https://github.com/simolus3/web3dart), which is a relatively complete Dart implementation. It contains important features such as JSON RPC encapsulation, offline signature, ABI encoding and decoding, and its goal is to provide a dart version of web3.js, which can meet the needs of most Flutter applications to connect to the Ethereum blockchain.
+
+Similarly, we also found that there is currently no Polkadot SDK suitable for the development of the Flutter framework, although we have seen that some members of the community use `Flutter/Dart` to implement some wallets or some scattered tools, which is not a complete interactive implementation. For example, encoding and decoding, crypto standards, api design, etc., should all follow the design of Polkadot-JS and be completely migrated to the Dart language.
+
+Similar to [Polkdadot-Java](https://github.com/polkadot-java/api) (Java version), we will develop the Dart version and name it `Polkadot-Dart`.
 
 
 ### Project Details 
+To complete the porting, we follow the project structure of `Polkadot-JS`. 
 
-#### Mockups
+There are some differences between `Dart` and `Javascript`, and the project needs to be compatible. For example, The "wasm" compiled by Rust-lang is used in `Polkadot-JS` . As for dart, we use `dart:ffi` for communication. All Rust-native libraries will be compiled to `.so` for Linux/Android system, `.a` or `.framework` for iOS/MacOS, and `.dll` for Windows.
 
-Please check this prototype below: 
+And for the `extension` packages, we must realize that it is only available for `WebApp` based on JavaScript browsers. As for Dart/Flutter, we have to find another way to interact with `WebApp` and  have other solutions for `JavaScript app/Dapp`, please refer to [Pocket4D WIKI](https://github.com/Pocket4D/Pocket4D-Wiki) .
 
-https://www.figma.com/file/souDNM9HgqXtEOcl9qVjp0/Pocket4D-(G)?node-id=0%3A1
+Therefore, we defined Dart project like `Polkadot-JS` .
 
+| Polkadot-JS                | Polkadot-Dart |
+| -------------------------- | ------------- |
+| **wasm**                   | Rust bindings |
+| `@polkadot/wasm`           | crypto        |
+| **common**                 |               |
+| `@polkadot/utils`          | utils         |
+| `@polkadot/util-crypto`    | util_crypto   |
+| `@polkadot/keyring`        | keyring       |
+| `@polkadot/networks`       | networks      |
+| `@polkadot/x-fetch`        | * not needed  |
+| `@polkadot/x-randomvalues` | * not needed  |
+| `@polkadot/x-textdecoder`  | * not needed  |
+| `@polkadot/x-textencoder`  | * not needed  |
+| **api**                    |               |
+| `@polkadot/api-contract`   | api_contract  |
+| `@polkadot/api-derive`     | api_derive    |
+| `@polkadot/api`            | api           |
+| `@polkadot/metadata`       | metadata      |
+| `@polkadot/rpc-core`       | rpc_core      |
+| `@polkadot/rpc-provider`   | rpc_provider  |
+| `@polkadot/typegen`        | * not needed  |
+| `@polkadot/type-known`     | * not needed  |
+| `@polkadot/types`          | types         |
 
 
 #### Technology Stacks
 
-Flutter, Golang, JavaScript, Polkadot
+Dart/Flutter, Rust
 
-
-
-#### Architecture
-
-![p4d_general_design](https://github.com/Pocket4D/Pocket4D-Wiki/blob/master/assets/p4d_general_design.001.jpeg?raw=true)
-
-#### Features
-1. Users can creating and backup wallet by Mnimonic.
-2. Users can send and receive cryptocurrencies.
-3. Support Polkadot and DOT.
-4. `Mini-Programs` : 'Coins Insider', which allow users to look up prices of cryptocurrencies.
 
 ### Ecosystem Fit 
 
-Similar projects: Polkawallet
+Similar projects: 
+* [Web3dart](https://github.com/simolus3/web3dart)
+* [PolkdadotJ](https://github.com/polkadot-java/api)
+* [Dart-scale-codec](https://github.com/nbltrust/dart-scale-codec)
+* [Substrate-sign-flutter](https://github.com/hanwencheng/substrate_sign_flutter) 
 
-We are creating a multi-cryptocurrency wallet, supporting Polkadot and it's para-chains. On the advatage of Mini-Program, the Pocket4D wallet can mitigates the cost of blockchain interfacing with other ecologies and offer better user experience. 
+We have created `Polkadot-Dart`, which, combined with Flutter framework, can greatly reduce the barrier to participation for cross-platform developers, as well as reduce the complexity of cross-platform application development and maintenance. In addition, the cross-platform experience of Polkadot-Dart's users is also improved.
 
 
 
@@ -64,25 +83,26 @@ We are creating a multi-cryptocurrency wallet, supporting Polkadot and it's para
 ### Team members
 
 * Michael So
-* Dao Zi
+* Zhongdan Wei
 
 ### Team Website	
 
-Under development.
+* https://pocket4d.io (In progress)
+* https://firestack.one
 
 ### Legal Structure 
 
-Personal address will be provided via the invoice form.
+SHANGHAI NIEPAN INFORMATION TECHNOLOGY CO., LTD., a startup company focusing on blockchain development in China.
 
 ### Team's experience
 
-* Michael So, founder of FireStack, serial entrepreneur. Proficient in JavaScript, React Native, Flutter and other front-end programming languages. He devoted to blockchain for many years, leading token investment, wallet, blockchain game platform and other projects, and has accumulated rich experience in blockchain theories and practice.
-* Dao Zi, front-end architect, proficient in Flutter. As a leading member in Mobike, he led the team to develop the Mobike Applications and makes it easy and fast to add flutter to existing mobile applications.
+* Michael So, founder of FireStack, Serial entrepreneur.  He devoted to blockchain for many years, leading token investment, wallet, blockchain game platform and other projects, and has accumulated rich experience in blockchain theories and practice.
+* Zhongdan Wei, front-end architect, proficient in Flutter. As a leading member in Hellobike, he led the team to develop the Mobike Applications and makes it easy and fast to add flutter to existing mobile applications.
 
 
 ### Team Code Repos
 
-* https://github.com/Pocket4D
+* https://github.com/Pocket4D/p4d-rust-binding (Will be renamed after proposal is accepted)
 
 ### Team LinkedIn Profiles
 
@@ -92,56 +112,65 @@ None.
 
 ### Overview
 
-* **Total Estimated Duration:** 3 months
-* **Full-time equivalent (FTE):**  5.5
-* **Total Costs:** 1.86 BTC
+* **Total Estimated Duration:** 2.75 months
+* **Full-time equivalent (FTE):**  5.6
+* **Total Costs:** 2 BTC
 
-### Milestone 1 — Wallet backend
-
-* **Estimated Duration:** 1 month
-* **FTE:**  1.5
-* **Costs:** 0.51 BTC
-
-| Number | Deliverable                          | Specification                                                |
-| ------ | ------------------------------------ | ------------------------------------------------------------ |
-| 1.     | IPFS deployment                      | Deploy the bundled file to decentralized storage, e.g., IPFS. |
-| 2.     | `Mini-Program` defined `xml` and API | Provides standard `Mini-Program` defined `xml` and API to JavaScript frontend. |
-| 3.     | Web3 integration                     | Integrate `Web3` and provide to frontend.                    |
-| 4.     | Smart contracts deployment           | Use smart contracts to deploy an Dapp, such as Faucet, and use Mini-Program to interact with it. |
-
-### Milestone 2 — Wallet Dapp
+### Milestone 1 — Porting `common` and `wasm`
 
 * **Estimated Duration:** 1 month
 * **FTE:**  2
-* **Costs:** 0.68 BTC
+* **Costs:** 0.7 BTC
 
-| Number | Deliverable                    | Specification                                                |
-| ------ | ------------------------------ | ------------------------------------------------------------ |
-| 1.     | Integrate with `WalletConnect` | Integrate with `WalletConnect` and provides to JavaScript.   |
-| 2.     | Application deeplink           | When signing, call `WalletConnect` and use deeplink to jump to the wallet app and finish signing, and then go back to the `Mini-Program`. |
-| 3.     | `Substrate` integration        | The backend use `Substrate` to host a blockchain with decentralized storage. |
+| Number | Deliverable     | Specification                                  |
+| ------ | --------------- | ---------------------------------------------- |
+| 0      | Licence         | MIT                                            |
+| 1      | bindings/crypto | Rust binding and implements `@polkadot/wasm`   |
+| 2      | util_crypto     | Porting and implements `@polkadot/util-crypto` |
+| 3      | utils           | Porting and implements `@polkadot/utils`       |
+| 4      | keyring         | Porting and implements `@polkadot/keyring`     |
+| 5      | network         | Porting and implements `@polkadot/network`     |
+| 6      | tests           | Unit tests for deliverables above              |
 
-### Milestone 3 — Integration with Polkadot
+
+### Milestone 2 — Porting `api`
 
 * **Estimated Duration:** 1 month
-* **FTE:**  2
-* **Costs:** 0.68 BTC
+* **FTE:**  2.2
+* **Costs:** 0.8 BTC
 
-| Number | Deliverable                   | Specification                                                |
-| ------ | ----------------------------- | ------------------------------------------------------------ |
-| 1.     | Components and APIs           | Complete most of the Mini-Program defined components and APIs. |
-| 2.     | Guidelines of SDK             | A complete guidelines for developers(host) to integrate the SDK. |
-| 3.     | Integration with applications | Small scale integration of Dapps and host apps (eg. wallet or Dex) for testing. |
-| 4.     | Integration with Polkadot     | Integration with Polkadot.                                   |
+| Number | Deliverable  | Specification                                   |
+| ------ | ------------ | ----------------------------------------------- |
+| 1      | types        | Porting `@polkadot/types`                       |
+| 2      | rpc_core     | Porting and implements `@polkadot/rpc`          |
+| 3      | rpc_provider | Porting and implements `@polkadot/rpc_provider` |
+| 4      | metadata     | Porting  `@polkadot/metadata`                   |
+| 5      | api_derive   | Porting  `@polkadot/api-derive`                 |
+| 6      | api_contract | Porting  `@polkadot/api-contract`               |
+| 7      | api          | Porting  `@polkadot/api`                        |
+| 8      | tests        | Unit tests for deliverables above               |
+| 9      | pub.dev      | Publish to pub.dev for v1.0.0-dev1              |
+
+### Milestone 3 — Publishing
+
+* **Estimated Duration:** 3 weeks
+* **FTE:**  1.3
+* **Costs:** 0.5 BTC
+
+| Number | Deliverable    | Specification                        |
+| ------ | -------------- | ------------------------------------ |
+| 1      | tests          | Integration tests for all milestones |
+| 2      | documentations | Documentations for all packages      |
+| 3      | pub.dev        | Publish to pub.dev for v1.0.0        |
 
 
 
-### Community engagement
+
+### Community Engagement
 
 We are buiding our community on https://www.yuque.com/?language=en-us and newsletters will be regularly updated soon.
 
 ## Future Plans
-
-In the near future, besides the multi-cryptocurrency wallet, a `Mini-Programs` open platform for the blockchain world shall be constructed and we can realize business by offering excellent service. With this platform, all Dapps could enrich their own ecosystem and enhance their service. 
-
-On the other hand, developers of Mini-Programs could get rid of supervision of centralized system and construct excellent `Mini-Programs` to benefit the shared ecology.
+1. Develop a wallet app, which has been communicated with many parachains, to prepare for linking into parachains and lowering the threshold for users to use Polkadot wallet.
+2. Embed into Pocket4D as one of the core libraries.
+3. Maintain this library continuously, following the upgrade of `Polkadot-JS`.
