@@ -147,7 +147,7 @@ Below we provide the roadmap of the Dwitter project. The milestones will be exec
 
 * **Estimated Duration:** 1 month
 * **FTE:**  1.0
-* **Costs:** 1.0 BTC (Unix Timestamp CHF Exchange rate 1606226141.135491 16746,90 CHF)
+* **Costs:** 0.89568825 BTC (Unix Timestamp CHF Exchange rate 1606226141.135491 16746,90 CHF)
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -160,28 +160,21 @@ Below we provide the roadmap of the Dwitter project. The milestones will be exec
 
 * **Estimated Duration:** 1 month
 * **FTE:**  1.0
-* **Costs:** 1.0 BTC (Unix Timestamp CHF Exchange rate 1606226141.135491 16746,90)
+* **Costs:** 0.89568825 BTC (Unix Timestamp CHF Exchange rate 1606226141.135491 16746,90)
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | Substrate module: 1 | We will create a Substrate module that will incorporate human readable domain names for the current pinning model) |
 | 2. | Substrate chain | Modules Naming with substrate-names, Payment & Direct Messages of our custom chain will interact on top of the Dwitter client providing additional features as opposed to storing social content directly on the blockchain |
 | 3. | Unit Tests for the entire platform including benchmarks (of IPFS, for example) |
-
-* **Estimated Duration:** 0.4 months
-* **FTE:**  1.0
-* **Costs:** 0.4 BTC (Unix Timestamp CHF Exchange rate 1606226141.135491 6698,76 CHF)
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Documentation & Tests | Finalization of Documentation, Benchmarks and Testing |
-| 2. | Substrate module: 2 | We will create a Substrate module that will allow for private message hashsum verification with the network |
-| 3. | Tests for the entire platform including benchmarks (of IPFS, for example) |
+| 4. | Documentation & Tests | Finalization of Documentation, Benchmarks and Testing |
+| 5. | Substrate module: 2 | We will create a Substrate module that will allow for private message hashsum verification with the network |
+| 6. | Tests for the entire platform including benchmarks (of IPFS, for example) |
 
 
 ### Bitcoin address for funding
 
-* 3Q9Lqnq9ebQR8RTT2fnobCdKtFmJ81fR28
+* 33TMcnosTWSorEPfFNTKHfYG86sppzjFyt
 
 ### Projects under consideration
 * Filecoin in IPFS/IPNS replacement or extension https://github.com/filecoin-project
