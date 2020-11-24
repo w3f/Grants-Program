@@ -111,7 +111,7 @@ Please describe the team's relevant experience.  If the project involves develop
 
 Master Ventures, foresees the development of the PAID Smart Agreements Protocol in three clearly defined stages
 
-* **Milestone 1:** Development of a Smart Agreement Template Builder, which converts that contract to the logic of a Smart Contract based on Solidity / Solang, with a set of design patterns that will allow interaction with it in a more dynamic way and malleable. Additionally, a platform to execute actions in that Smart Agreements Template, based on the specific conditions defined by the Smart Agreements signature parties. Along with the Decentralized Identification System (DID based in standard W3C) with a Credential Verification, based on the DID-CORE VC model, and a two-step authentication option based on MTRD / ICAO TRIP.
+* **Milestone 1:** Development of a Smart Agreement Template Builder, which converts that contract to the logic of a Smart Contract based on Solidity / Solang, with a set of design patterns that will allow interaction with it in a more dynamic way and malleable. Additionally, a platform to execute actions in that Smart Agreements Template, based on the conditions defined by the Smart Agreements signature parties. Along with the Decentralized Identification System (DID based in standard W3C) with a Credential Verification, based on the DID-CORE VC model, and a two-step authentication option based on MTRD / ICAO TRIP.
 
 
 ### Overview
