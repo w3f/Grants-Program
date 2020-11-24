@@ -67,13 +67,13 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 
 ### Overview
 * **Total Estimated Duration:** 2 months
-* **Full-time equivalent (FTE):**  *TODO*
-* **Total Costs:** *TODO*
+* **Full-time equivalent (FTE):**  4
+* **Total Costs:** 1.65 BTC (approx. $30,000)
 
 ### Milestone 1 Implement IP Management/Governance Module 
 * **Estimated Duration:** 2 month
-* **FTE:**  *TODO*
-* **Costs:** *TODO* BTC
+* **FTE:**  2.5
+* **Costs:** 1.1 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -88,12 +88,15 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 
 ### Milestone 2 Implement UI 
 * **Estimated Duration:** 1 month
-* **FTE:**  *TODO*
-* **Costs:** *TODO* BTC
+* **FTE:**  1.5
+* **Costs:** 0.55 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | *TODO* | *TODO* |  
+| 0a. | License | Apache 2.0 |
+| 0b. | Testing Guide | Complete test-suite with acceptable unit-test coverage, and instructions how to run these tests. | 
+| 1. | Mockups and wireframes | Mockups and wireframes for web-based UI for IP management/governance module | 
+| 2. | Web-based UI | Create and manage working groups (DAOs), project management, IP asset creation and registration, certificate verification page | 
 
 ## Future Plans
 
