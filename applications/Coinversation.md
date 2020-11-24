@@ -81,9 +81,10 @@ Founded by a US PhD team, the core members are from first-tier technology compan
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | oracle | requested data, generated events, and callbacks to data |  
-| 2. | forging center | staking DOT and CTO and forging synthetic assets | 
-| 3. | Testing | This milestone will have unit-test for pallet impemented, simulated all functions. | 
+| 1. | oracle | Complete the oracle function by an off-chain worker. |  
+| 2. | forging center | Realize the functions of staking DOT and CTO by ink! Smart Contract, forging synthetic assets, including cUSD, cBTC, cETH, cAAPL, cXAU, etc. | 
+| 3. | Testing | The code will have proper unit-test coverage to ensure functionality and robustness. | 
+| 4. | Tutorial | The tutorial will not only indicate that how to use set up and deploy it into the ink! module, and also introduce special user cases and potential extensibility. |
 
 ### Milestone 2 — a decentralized exchange for trading synthetic assets
 * **Estimated Duration:** 3 months
@@ -92,10 +93,11 @@ Founded by a US PhD team, the core members are from first-tier technology compan
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | collateral pool | generates or destroys cUSD, the debt ratio is re-determined, and the user's profit is calculated based on the change in asset prices. |  
-| 2. | fee pool | transaction fees are included in the fee pool to complete the benefit distribution of CTO users. | 
-| 3. | decentralized contract exchange | trading function on the Web end |
-| 3. | Testing | This milestone will have unit-test for pallet impemented, simulated all functions. | 
+| 1. | collateral pool | Realize the collateral pool function by ink! Smart Contract: When a user newly generates or destroys cUSD, the debt ratio is re-determined, and the user's profit is calculated based on the change in asset prices. |  
+| 2. | fee pool | Realize the function of fee pool by ink! Smart Contract: transaction fees are included in the fee pool to complete the benefit distribution of CTO users. Allow users to view the debt ratio, total system debt, balance of personal synthetic assets, rewards income, etc. | 
+| 3. | decentralized contract exchange | Realize the trading function on the Web end, allowing users to freely trade various synthetic assets. It is convenient for users to stake CTO or DOT to mint cUSD and destroy cUSD. |
+| 4. | Testing | The code will have proper unit-test coverage to ensure functionality and robustness. | 
+| 5. | Tutorial | The tutorial will not only indicate that how to use set up and deploy it into the ink! module, and also introduce special user cases and potential extensibility. |
 
 ## Future Plans
 There is still a lot of space for growth in the future, including:
