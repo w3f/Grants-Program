@@ -130,7 +130,7 @@ For each milestone:
 * **FTE:**  1
 * **Costs:** 0.75 BTC
 
-| Number | Deliverable | Specification |
+| Number |   Deliverable   | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
