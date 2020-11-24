@@ -52,7 +52,23 @@ As far as our team knows there are no other projects working on IP governance, t
 
 ### Team's experience
 *TODO*
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+
+**Yahor Tsaryk**
+
+More than 7 years of experience
+Professional in front-end and backend development, Big Data and distributed systems. 
+
+**Alex Shkor** 
+
+An expert in blockchain architectures, crypto economies modeling and has more than 10 years of experience in designing distributed systems. He held executive positions in Paralect.com. Alex is thinktank member and expert at Blockchain for Science, and public speaker at various events (presentations in Vienna (Scientific Publishing on the Blockchain), Zurich (CRYPTSCIENCE2018), ETH Zurich). Author of articles about the distributed system, especially CQRS and Event Sourcing. Alex has been advising Bitshares Core team on how to efficiently implement off-chain models for Bitshares protocol.
+
+**Alexey Kulik**
+
+Expert in software architectures and blockchain with 10 years of hands-on experience. Speaker on blockchain/DLT topics and lecturer at Belarusian National Technical University. 
+
+**Euheny Bondarovich**
+
+Full-stack developer from 2004.
 
 ### Team Code Repos
 The existing code is not fully open-sourced at the moment. DEIP team is fully commited to open-source the code and protocol in early 2021. We will provide access to repositories upon request from Polkadot team. **All developments within the Polkadot Open Grants Program will be open-sourced from day one**.
@@ -67,13 +83,13 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 
 ### Overview
 * **Total Estimated Duration:** 2 months
-* **Full-time equivalent (FTE):**  4
+* **Full-time equivalent (FTE):**  4.5
 * **Total Costs:** 1.65 BTC (approx. $30,000)
 
 ### Milestone 1 Implement IP Management/Governance Module 
 * **Estimated Duration:** 2 month
-* **FTE:**  2.5
-* **Costs:** 1.1 BTC
+* **FTE:**  4.5
+* **Costs:** 1.65 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -83,20 +99,9 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 | 1. | Working group management (DAO) | Create, manage members (invite, exclude), access control, decision-making via group voting. |  
 | 2. | Project and IP management | Create project, edit project, create IP asset within project. |  
 | 3. | IP registration | Register (timestamp) a fact of creation and/or ownership of specific IP asset on the blockchain. |
-| 4. | Access control | Manage access permissions to specific IP asset with unique Proof of Share entries that confirm a specific user was granted access to an asset.  
-| 5. | Docker | Dockerfile to run a chain. 
-
-### Milestone 2 Implement UI 
-* **Estimated Duration:** 1 month
-* **FTE:**  1.5
-* **Costs:** 0.55 BTC
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Testing Guide | Complete test-suite with acceptable unit-test coverage, and instructions how to run these tests. | 
-| 1. | Mockups and wireframes | Mockups and wireframes for web-based UI for IP management/governance module | 
-| 2. | Web-based UI | Create and manage working groups (DAOs), project management, IP asset creation and registration, certificate verification page | 
+| 4. | Access control | Manage access permissions to specific IP asset with unique Proof of Share entries that confirm a specific user was granted access to an asset. |
+| 5. | Web-based UI | Create and manage working groups (DAOs), project management, IP asset creation and registration, certificate verification page. |
+| 6. | Docker | Dockerfile to run a chain. 
 
 ## Future Plans
 
