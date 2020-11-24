@@ -124,7 +124,7 @@ None.
 
 | Number | Deliverable     | Specification                                  |
 | ------ | --------------- | ---------------------------------------------- |
-| 0      | Licence         | MIT                                            |
+| 0      | Licence         | Apache 2.0                                            |
 | 1      | bindings/crypto | Rust binding and implements `@polkadot/wasm`   |
 | 2      | util_crypto     | Porting and implements `@polkadot/util-crypto` |
 | 3      | utils           | Porting and implements `@polkadot/utils`       |
