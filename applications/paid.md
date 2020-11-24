@@ -105,6 +105,7 @@ Please describe the team's relevant experience.  If the project involves develop
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/rogelio-morrell-575aa51/
 * https://www.linkedin.com/in/bradleysuira/
+* 
 
 ## Development Roadmap :nut_and_bolt: 
 
@@ -137,13 +138,13 @@ For each milestone:
 | 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1. | Substrate module: Builder Template of Smart Agreements | We will create a Substrate module that will allow the creation of predesignated templates with the conditions (clauses) and events most common to the type of contract that the template will be oriented, additionally it will handle a categories and subcategories scheme, which will allow the selection of a system of arbitration specialized in the material to be dealt with in the dispute, which will be resolved by consensus, through a system of incentivized human arbitrator |  
 | 2. | Substrate module: Builder Digital Signature in `Chain of Trust` | We will create a Substrate module that will allow the verification by a Certification Authority of the digital signature to be used by Smart Agreements users, allowing PAID Smart Agreements within a `Chain of Trust` scheme, where the entire system, both hardware and software is insured and verified. |  
-| 3. | Substrate module: Builder of Smart Agreements |  |  
-| 4. | Substrate module: Follow-up of Smart Agreements |  |  
-| 5. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 6. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 3. | Substrate module: Builder of Smart Agreements | We will create a Substrate module that will allow the adaptation of the selected template for each type of Smart Agreement, eg NDA, lease, payment guarantee, insurance, etc. And verify the data of the signatures parties and the courts and arbitration options available based on the location of the parties and the category of the selected Template, through the Arbitration Services provided by PAID Smart Agreements. |  
+| 4. | Substrate module: Follow-up of Smart Agreements | We will create a Substrate module that will allow monitoring of the variables events and functions defined in the PAID Smart Agreements, and verify with them and the interactions of the signature parties, the execution of the Smart Agreements, according to the pre-established conditions at the time of creation, keeping in At all times, a monitoring scheme completely auditable by the parties, or any higher instance, be it arbitration and / or court, as defined in the contract when creating it. |  
+| 5. | Substrate chain | The modules Builder Template of Smart Agreements, Builder Digital Signature in Chain of Trust, Builder of Smart Agreements and Follow-up of Smart Agreements, which will be deployed in the Blockchain PolkaDOT, which is done by the solang compiler, which allows us to deploy contracts compiled to Edgeware as WASM contracts compatible with Substrate / PolkaDOT. |  
+| 6. | Docker | We will provide a dockerfile to demonstrate the full functionality of our Protocol |
 
-### Milestone 2 Example — Additional features
-...
+<!-- ### Milestone 2 Example — Additional features
+... -->
 
 ### Community engagement
 
