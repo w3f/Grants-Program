@@ -140,7 +140,7 @@ Shaun Wang has been contributing to several Polkadot ecosystem open source libra
 ### Milestone 1 ERC20 Playground 
 * **Estimated Duration:** 1.5 month
 * **FTE:**  2
-* **Costs:** $10k equivalent
+* **Costs:** $15k equivalent
 
 Goal - Develop a web DApp & necessary components to allow users 
 1. input token name, symbol, supply amount and deploy new ERC20 tokens
@@ -149,7 +149,7 @@ Goal - Develop a web DApp & necessary components to allow users
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use the playground, and deploy their own ERC20 contracts |
 | 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1. | SDK - bodhi.js: integrate | Integrate with one of an existing Ethereum JS library. e.g. ethers |  
@@ -161,7 +161,7 @@ Goal - Develop a web DApp & necessary components to allow users
 ### Milestone 2 Example — Additional features
 * **Estimated Duration:** 1.5 month
 * **FTE:**  2
-* **Costs:** $10k equivalent
+* **Costs:** $15k equivalent
 
 Goal - Integrate with one existing Ethereum project 
 1. Be able to deploy & run e2e tests in Acala EVM
@@ -169,7 +169,7 @@ Goal - Integrate with one existing Ethereum project
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both inline documentation of the code and a tutorial that explains how the existing Ethereum project is deployed and benefits |
 | 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1. | SDK - bodhi.js: deployment tool | Integrate with one of an existing Ethereum deployment and testing tool e.g. Waffle |  
