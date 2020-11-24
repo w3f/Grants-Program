@@ -2,7 +2,7 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project:** PAID
+* **Project:** PAID Smart Agreements
 * **Proposer:** [Master Ventures](https://github.com/MasterVentures)
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
 
@@ -13,17 +13,18 @@ If this application in response to an RFP then please indicate this on the first
 
 ### Overview
 
-PAID protocol is based off ideas from MDV “Mensajeria Documentos Verificables” and OpenLaw and consists of part protocol onchain and a off chain protocol using content networks like IPFS/Swarm and using DID/VC standards as identity and verification mechanism.
+PAID Smart Agreement protocol is based off ideas from MDV “Mensajería Documentos Verificables” and OpenLaw and consists of part protocol onchain and a offchain protocol using content networks like IPFS/IPNS/Swarm and using DID-METHOD/VC standards as identity and verification mechanism, based in a our did method development  did:dpki.
 
 #### Technologies
 * OpenLaw
 * MDV
 * XDV
+* JEXL
+* ICAO TRIP
 
 #### Integration with Substrate
 
-Our development pipeline consits of standard EVM compatible tooling with the exception of compilation, which is done by the solang compiler, which allows us to deploy contracts compiled to Edgware as WASM contracts compatible with Substrate / Polkadot.
-
+Our development pipeline consist of standard EVM compatible tooling with the exception of compilation, which is done by the solang compiler, which allows us to deploy contracts compiled to Edgeware as WASM contracts compatible with Substrate / PolkaDOT.
 
 
 ### Project Details 
@@ -38,13 +39,19 @@ A PAID workflow looks like:
 
 * Alice sends signed agreement to Bob, which then executes the agreement request party signatures.
 
-* Signed agreement is stored on chain and off chain and PAID worflow is created, compiled and registered.
+* Signed agreement is stored on chain and off chain and PAID workflow is created, compiled and registered.
+
+* Attestation and Verifiable Credentials for Signatures.
+
+* Two-Step Verification how Proof of Citizenship.
 
 * On Contract execution, workflow is executed by a workflow gateway, which whitelist allowed users.  
 
 * Contracts calls that are integrated with oracles are called and allows:
  * Applies agreement terms (terms must be classify to numeric, similar to ML Classification)
  * Verify agreement terms subjects (Only supports token price subject in first release)
+ * Handle reputation of signatures and this information can share with other oracles o partys, above approve of users.
+
 
 
 ### Previous Work
@@ -57,9 +64,9 @@ A PAID workflow looks like:
 
 - **OpenLaw**: Smart contract based legal agreements. Links: https://www.openlaw.io/
 
-Our project is different in that our team has had more than a year of experience with making wallets for blockchain dapps and then half a year with deep experience in DID, Swarm, IPFS and document signing, which are the bulk of tech experience as defined in OpenLaw. But our protocol takes it a bit further and uses oracles and ML to make it more automated and allows for hybrid scenarios, where a ML business logic can rank or tag a dispute and then it can be further review by an incentivized human arbitror, allowing for consensus of a dispute. Compared to OpenLaw, which is OpenCourt API is strictly human based, our protocol excels not only in the dispute/arbitrage, but also at transcribing using NLP instead of a Markup Language.
+Our project is different in that our team has had more than a year of experience with making wallets for blockchain dapps and then half a year with deep experience in DID, Swarm, IPFS and document signing, which are the bulk of tech experience as defined in OpenLaw. But our protocol takes it a bit further and uses oracles and ML to make it more automated and allows for hybrid scenarios, where a ML business logic can rank or tag a dispute and then it can be further review by an incentivized human arbitrator, allowing for consensus of a dispute. Compared to OpenLaw, which is OpenCourt API is strictly human based, our protocol excels not only in the dispute/arbitrage, but also at transcribing using RLP instead of a Markup Language based ion JEXL.
 
-Further along, by adding the latest in identity technology, allows us to delegate authority to smart contracts using the DID decentralized identity of the individual or smart contract.
+Further along, by adding the latest in identity technology, with a standard of W3C DID METHOD develop for us (did:dpki) allows us to delegate authority to smart contracts using the DID decentralized identity of the individual or smart contract.
 
 We think this project, while developed in EVM, will allow for better and transparent DeFi projects to be used in the Polkadot ecosystem.
 
