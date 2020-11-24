@@ -113,14 +113,14 @@ None.
 ### Overview
 
 * **Total Estimated Duration:** 2.75 months
-* **Full-time equivalent (FTE):**  5.6
-* **Total Costs:** 2 BTC
+* **Full-time equivalent (FTE):**  4.5
+* **Total Costs:** 1.62 BTC
 
 ### Milestone 1 — Porting `common` and `wasm`
 
 * **Estimated Duration:** 1 month
-* **FTE:**  2
-* **Costs:** 0.7 BTC
+* **FTE:**  1.5
+* **Costs:** 0.54 BTC
 
 | Number | Deliverable     | Specification                                  |
 | ------ | --------------- | ---------------------------------------------- |
@@ -136,8 +136,8 @@ None.
 ### Milestone 2 — Porting `api`
 
 * **Estimated Duration:** 1 month
-* **FTE:**  2.2
-* **Costs:** 0.8 BTC
+* **FTE:**  2
+* **Costs:** 0.72 BTC
 
 | Number | Deliverable  | Specification                                   |
 | ------ | ------------ | ----------------------------------------------- |
@@ -154,8 +154,8 @@ None.
 ### Milestone 3 — Publishing
 
 * **Estimated Duration:** 3 weeks
-* **FTE:**  1.3
-* **Costs:** 0.5 BTC
+* **FTE:**  1
+* **Costs:** 0.36 BTC
 
 | Number | Deliverable    | Specification                        |
 | ------ | -------------- | ------------------------------------ |
