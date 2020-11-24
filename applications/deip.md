@@ -2,7 +2,7 @@
 
 * **Project Name:** DEIP IP Management/Governance Module
 * **Proposer:** [aliakseikulik](https://github.com/aliakseikulik)
-* **Payment Address:** TODO
+* **Payment Address:** bc1q6dnhvxt93rtdalrtgezzwtsn2krglktv68e7nr
 
 ## Project Overview :page_facing_up: 
 
