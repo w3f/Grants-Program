@@ -68,7 +68,7 @@ Expert in software architectures and blockchain with 10 years of hands-on experi
 
 **Euheny Bondarovich**
 
-Full-stack developer from 2004.
+Full-stack developer since 2004.
 
 ### Team Code Repos
 The existing code is not fully open-sourced at the moment. DEIP team is fully commited to open-source the code and protocol in early 2021. We will provide access to repositories upon request from Polkadot team. **All developments within the Polkadot Open Grants Program will be open-sourced from day one**.
