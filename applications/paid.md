@@ -126,7 +126,7 @@ For each milestone:
 * **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
 
 ### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 3 month
 * **FTE:**  1
 * **Costs:** 0.75 BTC
 
