@@ -126,7 +126,7 @@ Master Ventures, foresees the development of the PAID Smart Agreements Protocol 
 
 | Number |   Deliverable   | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0a. | License | Apache 2.0 / MIT / Unlicensed |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1. | Substrate module: Builder Template of Smart Agreements | We will create a Substrate module that will allow the creation of predesignated templates with the conditions (clauses) and events most common to the type of contract that the template will be oriented, additionally it will handle a categories and subcategories scheme, which will allow the selection of a system of arbitration specialized in the material to be dealt with in the dispute, which will be resolved by consensus, through a system of incentivized human arbitrator |  
