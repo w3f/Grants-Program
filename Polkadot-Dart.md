@@ -4,7 +4,7 @@ Open Grant Proposal of Polkadot-Dart
 
 * **Proposer:** Michael So
 
-* **Payment Address:** 
+* **Payment Address:** 3PbhNyWhiSTwb58fc5uYhg2mV2vJ34KwAJ
 
   
 
