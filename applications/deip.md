@@ -49,7 +49,7 @@ As far as our team knows there are no other projects working on IP governance, t
 * **Website:** [https://deip.world](https://deip.world)
 
 ### Legal Structure 
-* **Registered Legal Entity:** DEIPWorld, LLC
+* **Registered Legal Entity:** DEIPWORLD INC.
 
 ### Team's experience
 
