@@ -77,8 +77,7 @@ We think this project, while developed in EVM, will allow for better and transpa
 ### Team members
 * Rogelio Morrel
 * Bradley Suira	
-* Alfredo Lopez
-* Patricia Carrillo
+
 
 ### Team Website	
 * https://www.master.ventures
@@ -105,7 +104,6 @@ Please describe the team's relevant experience.  If the project involves develop
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/rogelio-morrell-575aa51/
 * https://www.linkedin.com/in/bradleysuira/
-* https://www.linkedin.com/in/alfredolopez80/
 
 ## Development Roadmap :nut_and_bolt: 
 
