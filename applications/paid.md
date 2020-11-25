@@ -73,9 +73,9 @@ Our project is different in that our team has had more than a year of experience
 
 Further along, by adding the latest in identity technology, with a standard of W3C DID METHOD develop for us (**DID:PAID¨**) allows us to delegate authority to smart contracts using the DID decentralized identity of the individual or smart contract.
 
-Additionally, in the second stage it will allow identity verification through a Certification Authority such as Let's Encrypt, allowing to be part of a `chain of trust`, where each hardware and software component is verifiable through a private key and an X.509 certificate. Ensuring that the protocol can be an integral part of any verifiable end-to-end communication scheme or `chain of trust`.
+Additionally, in the second stage it will allow identity verification through a Certification Authority such as Let's Encrypt, allowing to be part of a `chain of trust`, where each hardware and software component is verifiable through a private key and an X.509 certificate. Ensuring that the protocol can be an integral part of any verifiable end-to-end communication scheme or like is known `chain of trust`.
 
-We think this project, while developed in EVM, will allow for better and transparent DeFi projects to be used in the Polkadot ecosystem.
+We think this project, while developed in EVM, will allow for better and transparent DeFi projects to be used in the PolkaDOT ecosystem.
 
 ## Team :busts_in_silhouette:
 
