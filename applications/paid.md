@@ -32,7 +32,7 @@ Our development pipeline consists of standard EVM compatible tooling with the ex
 
 ![PAID Protocol](./paid_protocol.png)
 
-This image explains the process of a workflow registration that can be used with **DID:PAID**.
+This image explains the process of build/register and verify **DID:PAID** Identifier, since of PAID Smart Agreements Protocol.
 
 A DID Method / **DID:PAID** workflow looks like:
 
