@@ -174,3 +174,4 @@ We are buiding our community on https://www.yuque.com/?language=en-us and newsle
 1. Develop a wallet app, which has been communicated with many parachains, to prepare for linking into parachains and lowering the threshold for users to use Polkadot wallet.
 2. Embed into Pocket4D as one of the core libraries.
 3. Maintain this library continuously, following the upgrade of `Polkadot-JS`.
+4. Test with Parachain partners.
