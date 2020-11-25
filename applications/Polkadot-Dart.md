@@ -172,6 +172,7 @@ We are buiding our community on https://www.yuque.com/?language=en-us and newsle
 ## What has been done so far?
 
 ### Milestone 1
+
 | Status | Number | Deliverable     | Specification                                  |
 | ------ | ------ | --------------- | ---------------------------------------------- |
 | [x]    | 0      | Licence         | Apache 2.0                                     |
