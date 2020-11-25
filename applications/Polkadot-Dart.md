@@ -24,7 +24,7 @@ As a new framework, there are not many blockchain SDKs suitable for Flutter. Eth
 
 Similarly, we also found that there is currently no Polkadot SDK suitable for the development of the Flutter framework, although we have seen that some members of the community use `Flutter/Dart` to implement some wallets or some scattered tools, which is not a complete interactive implementation. For example, encoding and decoding, crypto standards, api design, etc., should all follow the design of Polkadot-JS and be completely migrated to the Dart language.
 
-Similar to [Polkdadot-Java](https://github.com/polkadot-java/api) (Java version), we will develop the Dart version and name it `Polkadot-Dart`.
+Similar to [polkaj](https://github.com/emeraldpay/polkaj) (Java version), we will develop the Dart version and name it `Polkadot-Dart`.
 
 
 ### Project Details 
@@ -70,12 +70,11 @@ Dart/Flutter, Rust
 
 Similar projects: 
 * [Web3dart](https://github.com/simolus3/web3dart)
-* [PolkdadotJ](https://github.com/polkadot-java/api)
+* [polkaj](https://github.com/emeraldpay/polkaj)
 * [Dart-scale-codec](https://github.com/nbltrust/dart-scale-codec)
 * [Substrate-sign-flutter](https://github.com/hanwencheng/substrate_sign_flutter) 
 
 We have created `Polkadot-Dart`, which, combined with Flutter framework, can greatly reduce the barrier to participation for cross-platform developers, as well as reduce the complexity of cross-platform application development and maintenance. In addition, the cross-platform experience of Polkadot-Dart's users is also improved.
-
 
 
 ## Team :busts_in_silhouette:
@@ -124,7 +123,7 @@ None.
 
 | Number | Deliverable     | Specification                                  |
 | ------ | --------------- | ---------------------------------------------- |
-| 0      | Licence         | Apache 2.0                                            |
+| 0      | Licence         | Apache 2.0                                     |
 | 1      | bindings/crypto | Rust binding and implements `@polkadot/wasm`   |
 | 2      | util_crypto     | Porting and implements `@polkadot/util-crypto` |
 | 3      | utils           | Porting and implements `@polkadot/utils`       |
@@ -170,7 +169,31 @@ None.
 
 We are buiding our community on https://www.yuque.com/?language=en-us and newsletters will be regularly updated soon.
 
+## What has been done so far?
+
+### Milestone 1
+
+| Status | Number | Deliverable     | Specification                                  |
+| ------ | ------ | --------------- | ---------------------------------------------- |
+| [x]    | 0      | Licence         | Apache 2.0                                     |
+| [x]    | 1      | bindings/crypto | Rust binding and implements `@polkadot/wasm`   |
+| [x]    | 2      | util_crypto     | Porting and implements `@polkadot/util-crypto` |
+| [x]    | 3      | utils           | Porting and implements `@polkadot/utils`       |
+| [x]    | 4      | keyring         | Porting and implements `@polkadot/keyring`     |
+| [ ]    | 5      | network         | Porting and implements `@polkadot/network`     |
+| [x]    | 6      | tests           | Unit tests for deliverables above              |
+
+
 ## Future Plans
 1. Develop a wallet app, which has been communicated with many parachains, to prepare for linking into parachains and lowering the threshold for users to use Polkadot wallet.
-2. Embed into Pocket4D as one of the core libraries.
+2. Embbed into [Pocket4D](https://github.com/Pocket4D/) as one of the core libraries.
 3. Maintain this library continuously, following the upgrade of `Polkadot-JS`.
+4. Test with Parachain partners.
+
+
+## Additional Information ➕
+### Are there are any teams who have already contributed (financially) to the project?
+No.
+
+### Have you applied for other grants so far?
+[Pocket4D](https://github.com/w3f/General-Grants-Program/pull/340)
