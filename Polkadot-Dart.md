@@ -24,7 +24,7 @@ As a new framework, there are not many blockchain SDKs suitable for Flutter. Eth
 
 Similarly, we also found that there is currently no Polkadot SDK suitable for the development of the Flutter framework, although we have seen that some members of the community use `Flutter/Dart` to implement some wallets or some scattered tools, which is not a complete interactive implementation. For example, encoding and decoding, crypto standards, api design, etc., should all follow the design of Polkadot-JS and be completely migrated to the Dart language.
 
-Similar to [Polkdadot-Java](https://github.com/polkadot-java/api) (Java version), we will develop the Dart version and name it `Polkadot-Dart`.
+Similar to [polkaj](https://github.com/emeraldpay/polkaj) (Java version), we will develop the Dart version and name it `Polkadot-Dart`.
 
 
 ### Project Details 
@@ -70,7 +70,7 @@ Dart/Flutter, Rust
 
 Similar projects: 
 * [Web3dart](https://github.com/simolus3/web3dart)
-* [PolkdadotJ](https://github.com/polkadot-java/api)
+* [polkaj](https://github.com/emeraldpay/polkaj)
 * [Dart-scale-codec](https://github.com/nbltrust/dart-scale-codec)
 * [Substrate-sign-flutter](https://github.com/hanwencheng/substrate_sign_flutter) 
 
@@ -124,7 +124,7 @@ None.
 
 | Number | Deliverable     | Specification                                  |
 | ------ | --------------- | ---------------------------------------------- |
-| 0      | Licence         | Apache 2.0                                            |
+| 0      | Licence         | Apache 2.0                                     |
 | 1      | bindings/crypto | Rust binding and implements `@polkadot/wasm`   |
 | 2      | util_crypto     | Porting and implements `@polkadot/util-crypto` |
 | 3      | utils           | Porting and implements `@polkadot/utils`       |
