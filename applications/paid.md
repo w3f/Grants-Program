@@ -2,24 +2,23 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project:** PAID Smart Agreements
+* **Project:** PAID Smart Agreements / DID Method based in the Standard W3C DID CORE, for Decentralized Identifiers (DIDS) / named proposal **DID:DPKI**
 * **Proposer:** [Master Ventures](https://github.com/MasterVentures)
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
+This Decentralized identifier is a development of its own for the PAID Network, to handle a standard Decentralized Identifier DID Method, for self-sovereign digital identity, verifiable credential and Proof of Citizenship for users of PAID Smart Agreements Protocol.
 
 ### Overview
 
-PAID Smart Agreement protocol is based off ideas from MDV “Mensajería Documentos Verificables” and OpenLaw and consists of part protocol onchain and a offchain protocol using content networks like IPFS/IPNS/Swarm and using DID-METHOD/VC standards as identity and verification mechanism, based in a our did method development  DID:DPKI.
+This Decentralized identifier is a development of its own for the PAID Network, to handle a standard Decentralized Identifier DID Method, for self-sovereign digital identity, verifiable credential and Proof of Citizenship how two-step verification, within the W3C standard for Decentralized Identifiers, allowing to create a decentralized identifier, transparent and secure method of attestation of user data within a `chain of trust` scheme.
 
 #### Technologies
 * OpenLaw
 * MDV
 * XDV
-* JEXL
 * ICAO TRIP
 
 #### Integration with Substrate
@@ -115,9 +114,9 @@ Master Ventures, foresees the development of the PAID Smart Agreements Protocol 
 
 
 ### Overview
-* **Total Estimated Duration:** 9 month
+* **Total Estimated Duration:** 3 month
 * **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** 30K
+* **Total Costs:** 25K
 
 ### Milestone 1 Example — Implement Substrate Modules 
 * **Estimated Duration:** 3 month
