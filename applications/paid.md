@@ -30,7 +30,7 @@ Our development pipeline consists of standard EVM compatible tooling with the ex
 
 ### Project Details 
 
-![PAID Protocol]()
+![PAID Protocol](./paid_protocol.png)
 
 This image explains the process of a workflow registration that can be used with **DID:PAID**.
 
@@ -54,7 +54,7 @@ A DID Method / **DID:PAID** workflow looks like:
 
 * Signed agreement is stored on chain and off chain and PAID Smart Agreements Protocol workflow is created, compiled and registered.
 
-* On Contract execution, workflow is executed by a workflow gateway, which whitelist allowed users.  
+* On Contract execution, workflow is executed by a follow-up module, which whitelist allowed users.  
 
 * Contracts calls that are integrated with oracles are called and allows:
     * Applies agreement terms (terms must be classify to numeric, similar to ML Classification).
