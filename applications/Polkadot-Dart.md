@@ -188,3 +188,11 @@ We are buiding our community on https://www.yuque.com/?language=en-us and newsle
 2. Embbed into [Pocket4D](https://github.com/Pocket4D/) as one of the core libraries.
 3. Maintain this library continuously, following the upgrade of `Polkadot-JS`.
 4. Test with Parachain partners.
+
+
+## Additional Information ➕
+### Are there are any teams who have already contributed (financially) to the project?
+No.
+
+### Have you applied for other grants so far?
+[Pocket4D](https://github.com/w3f/General-Grants-Program/pull/340)
