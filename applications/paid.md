@@ -17,13 +17,13 @@ This Decentralized identifier is a development of its own for the PAID Network, 
 
 #### Technologies
 * OpenLaw
-* MDV
+* PAID Network
 * XDV
 * JSON SCHEMA
 * JEXL
 * ICAO TRIP
 
-#### Integration with Substrate
+#### Integration with Plasm Network
 
 Our development pipeline consists of standard EVM compatible tooling with the exception of compilation, which is done by the Solang compiler, which allows us to deploy contracts compiled to Plasm Network in Multiple VM, like eg. EVM contracts compatible based on solidity and WebAssembly contracts compatible based on RUST, both support for Substrate.io/PolkaDOT.
 
@@ -39,7 +39,7 @@ A DID Method / **DID:PAID** workflow looks like:
 * User registers in PAID Network, creating his Wallet in Dapp, PAID-Wallet.
 
 * User creates an template agreement or selected a pre existing template.
-
+ 
 * If it is the first time that the user creates a Smart Agreements, a process of verification of credentials and Proof of Citizenship begins, Through the creation of a decentralized identifier **DID:PAID**,  for the attestation of the user's data and their legal residence.
 
 * PAID Smart Agreements, takes the user's data and builds a JSON SCHEMA based on the VC MODEL standard of the W3C DID.
@@ -64,7 +64,7 @@ A DID Method / **DID:PAID** workflow looks like:
 ### Previous Work
 
 - **XDV Technology**: Contains components to create digital signatures for documents using HD Wallet technology and integrates with Swarm (ethereum) and compatible with hardware modules that support PKCS#11 and PKCS#12. Links: https://app.xdv.digital/about/#/ (Spanish), https://app.xdv.digital/
-- **MDV**: A Solidity state  machine and workflow engine, using optimized code with RLP encoding. Links: https://gist.github.com/molekilla/b85f1c9de63be3afacbfeca703bb3fe4 (Spanish)
+- **PAIDNetwork**: A Solidity state  machine and workflow engine, using optimized code with RLP encoding. Links: https://gist.github.com/molekilla/b85f1c9de63be3afacbfeca703bb3fe4 (Spanish)
 
 
 ### Ecosystem Fit 
@@ -81,7 +81,6 @@ We think this project, while developed in EVM, will allow for better and transpa
 
 ### Team members
 * Rogelio Morrel
-* Bradley Suira	
 * Alfredo Lopez
 * Patricia Carrillo
 
@@ -109,7 +108,6 @@ Please describe the team's relevant experience.  If the project involves develop
 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/rogelio-morrell-575aa51/
-* https://www.linkedin.com/in/bradleysuira/
 * https://www.linkedin.com/in/alfredolopez80/
 
 ## Development Roadmap :nut_and_bolt: 
@@ -124,7 +122,7 @@ Master Ventures, foresees the development of the PAID Smart Agreements Protocol 
 * **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
 * **Total Costs:** 25K
 
-### Milestone 1 Example — Implement Substrate Modules 
+### Milestone 1 Example — Implement Plasm Modules 
 * **Estimated Duration:** 3 month
 * **FTE:**  1
 * **Costs:** 2 BTC
@@ -132,13 +130,13 @@ Master Ventures, foresees the development of the PAID Smart Agreements Protocol 
 | Number |   Deliverable   | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicensed |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Plasm VM's. It will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage of 95% to ensure functionality and robustness. In the guide we will describe how to run these tests, And after this a Bounty policy for error detection. | 
-| 1. | Plasm module: Builder Template and Instance of Smart Agreements | We will create a Substrate module that will allow the creation of predesignated templates with the conditions (clauses) and events most common to the type of contract to which the template will be oriented, additionally, an instance of this template will be handled allowing its subsequent execution and follow-up of events in a way decentralized. |  
-| 2. | Plasm module: Builder Digital Signature in `Chain of Trust` | We will create a Substrate module that will allow the verification by a Certification Authority of the digital signature to be used by Smart Agreements users, allowing PAID Smart Agreements within a `Chain of Trust` scheme, where the entire system, both hardware and software is insured and verified. |  
-| 3. | Plasm module: Follow-up of Smart Agreements | We will create a Substrate module that will allow monitoring of the variables events and functions defined in the PAID Smart Agreements, and verify with them and the interactions of the signature parties, the execution of the Smart Agreements, according to the pre-established conditions at the time of creation, keeping in At all times, a monitoring scheme completely auditable by the parties, or any higher instance, be it arbitration and / or court, as defined in the contract when creating it. |  
-| 4. | Substrate chain | The modules Builder Template of Smart Agreements, Builder Digital Signature in Chain of Trust, and Follow-up of Smart Agreements, which will be deployed in the Blockchain PolkaDOT, which is done by the solang compiler, which allows us to deploy contracts compiled in Multiples VM to EVM as WASM contracts over Plasm Network compatible with Substrate / PolkaDOT. |  
-| 5. | External Module of Substrate | External support modules for the verification of credentials, proof of citizenship and utilities and services associated with the **DID:PAID** Method. |
+| 1. | Plasm module: Builder Template and Instance of Smart Agreements | We will create a Plasm module that will allow the creation of predesignated templates with the conditions (clauses) and events most common to the type of contract to which the template will be oriented, additionally, an instance of this template will be handled allowing its subsequent execution and follow-up of events in a way decentralized. |  
+| 2. | Plasm module: Builder Digital Signature in `Chain of Trust` | We will create a Plasm module that will allow the verification by a Certification Authority of the digital signature to be used by Smart Agreements users, allowing PAID Smart Agreements within a `Chain of Trust` scheme, where the entire system, both hardware and software is insured and verified. |  
+| 3. | Plasm module: Follow-up of Smart Agreements | We will create a Plasm module that will allow monitoring of the variables events and functions defined in the PAID Smart Agreements, and verify with them and the interactions of the signature parties, the execution of the Smart Agreements, according to the pre-established conditions at the time of creation, keeping in At all times, a monitoring scheme completely auditable by the parties, or any higher instance, be it arbitration and / or court, as defined in the contract when creating it. |  
+| 4. | Plasm Network | The modules Builder Template of Smart Agreements, Builder Digital Signature in Chain of Trust, and Follow-up of Smart Agreements, which will be deployed in the Blockchain PolkaDOT, which is done by the solang compiler, which allows us to deploy contracts compiled in Multiples VM of Plasm Network to EVM as WASM contracts over Plasm Network compatible with Substrate.io / PolkaDOT. |  
+| 5. | External Module of Plasm | External support modules for the verification of credentials, proof of citizenship and utilities and services associated with the **DID:PAID** Method. |
 | 6. | Docker | We will provide a dockerfile to demonstrate the full functionality of our Protocol |
 
 
