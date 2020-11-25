@@ -2,7 +2,7 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project:** PAID Smart Agreements / DID Method based in the Standard W3C DID CORE, for Decentralized Identifiers (DIDS) / named proposal **DID:DPKI**
+* **Project:** PAID Smart Agreements / DID Method based in the Standard W3C DID CORE, for Decentralized Identifiers (DIDs) / named proposal **DID:PAID**
 * **Proposer:** [Master Ventures](https://github.com/MasterVentures)
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
 
@@ -28,29 +28,35 @@ Our development pipeline consists of standard EVM compatible tooling with the ex
 
 ### Project Details 
 
-![PAID Protocol](./paid_protocol.png)
+![PAID Protocol]()
 
-This image explains the process of a workflow registration that can be used with PAID protocol.
+This image explains the process of a workflow registration that can be used with DID:PAID.
 
-A PAID workflow looks like:
+A DID Method / DID:PAID workflow looks like:
 
-* User creates an agreement or downloads a pre existing template
+* User registers in PAID Network, creating his Wallet in Dapp, PAID-Wallet.
 
-* Alice sends signed agreement to Bob, which then executes the agreement request party signatures.
+* User creates an template agreement or selected a pre existing template.
 
-* Signed agreement is stored on chain and off chain and PAID workflow is created, compiled and registered.
+* If it is the first time that the user creates a Smart Agreements, a process of verification of credentials and Proof of Citizenship begins, Through the creation of a decentralized indicator DID:DPKI,  for the attestation of the user's data and their legal residence.
+
+* PAID Smart Agreements, takes the user's data and builds a JSON SCHEMA based on the VC MODEL standard of the W3C DID.
+
+* 
+
+* User adjusts the parameters and conditions of the selected template agreements, and creates an instance of the Smart Agreements appropriate to your particular requirement.
 
 * Attestation and Verifiable Credentials for Signatures.
 
-* Two-Step Verification how Proof of Citizenship.
+* Alice sends signed agreement to Bob, which then executes the agreement request party signatures.
+
+* Signed agreement is stored on chain and off chain and PAID Smart Agreements Protocol workflow is created, compiled and registered.
 
 * On Contract execution, workflow is executed by a workflow gateway, which whitelist allowed users.  
 
 * Contracts calls that are integrated with oracles are called and allows:
  * Applies agreement terms (terms must be classify to numeric, similar to ML Classification).
  * Verify agreement terms subjects (Only supports token price subject in first release).
- * Handle reputation of signatures and this information can share with other oracles o partys, above approve of users.
- * Manage with Oracles and Machine Learning the classification of disputes and then through an incentivized human arbitrator, pass it to an analysis by said qualified arbitration and with competencies in the matter of analysis, allowing by consensus the resolution of disputes, all within a decentralized model.
 
 
 ### Previous Work
