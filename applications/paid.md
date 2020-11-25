@@ -125,7 +125,7 @@ PAID Network, foresees the development of the PAID Smart Agreements Protocol in 
 ### Milestone 1 Example — Implement Plasm Modules 
 * **Estimated Duration:** 3 month
 * **FTE:**  1
-* **Costs:** 2 BTC
+* **Costs:** 1.75 BTC
 
 | Number |   Deliverable   | Specification |
 | ------------- | ------------- | ------------- |
