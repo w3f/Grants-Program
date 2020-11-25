@@ -3,7 +3,7 @@
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
 * **Project:** PAID Smart Agreements / DID Method based in the Standard W3C DID CORE, for Decentralized Identifiers (DIDs) / named proposal **DID:PAID**
-* **Proposer:** [Master Ventures](https://github.com/MasterVentures)
+* **Proposer:** [PAID Network](https://github.com/PAIDNetwork)
 * **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
@@ -17,7 +17,7 @@ This Decentralized identifier is a development of its own for the PAID Network, 
 
 #### Technologies
 * OpenLaw
-* PAID Network
+* MDV
 * XDV
 * JSON SCHEMA
 * JEXL
@@ -30,7 +30,7 @@ Our development pipeline consists of standard EVM compatible tooling with the ex
 
 ### Project Details 
 
-![PAID Protocol](./paid_protocol.png)
+![DID:PAID Identifier](./paid_protocol.png)
 
 This image explains the process of build/register and verify **DID:PAID** Identifier, since of PAID Smart Agreements Protocol.
 
@@ -64,7 +64,7 @@ A DID Method / **DID:PAID** workflow looks like:
 ### Previous Work
 
 - **XDV Technology**: Contains components to create digital signatures for documents using HD Wallet technology and integrates with Swarm (ethereum) and compatible with hardware modules that support PKCS#11 and PKCS#12. Links: https://app.xdv.digital/about/#/ (Spanish), https://app.xdv.digital/
-- **PAIDNetwork**: A Solidity state  machine and workflow engine, using optimized code with RLP encoding. Links: https://gist.github.com/molekilla/b85f1c9de63be3afacbfeca703bb3fe4 (Spanish)
+- **MDV**: A Solidity state  machine and workflow engine, using optimized code with RLP encoding. Links: https://gist.github.com/molekilla/b85f1c9de63be3afacbfeca703bb3fe4 (Spanish)
 
 
 ### Ecosystem Fit 
@@ -85,7 +85,7 @@ We think this project, while developed in EVM, will allow for better and transpa
 * Patricia Carrillo
 
 ### Team Website	
-* https://www.master.ventures
+* [PAID Network](https://paidnetwork.com/)
 
 ### Legal Structure 
 Please provide the name and registered address of the legal entity executing the project.
@@ -112,7 +112,7 @@ Please describe the team's relevant experience.  If the project involves develop
 
 ## Development Roadmap :nut_and_bolt: 
 
-Master Ventures, foresees the development of the PAID Smart Agreements Protocol in three clearly defined stages
+PAID Network, foresees the development of the PAID Smart Agreements Protocol in three clearly defined stages
 
 * **Milestone 1:** Development of a Smart Agreement Template Builder, which converts that contract to the logic of a Smart Contract based on Solidity / Solang, with a set of design patterns that will allow interaction with it in a more dynamic way and malleable. Additionally, a platform to execute actions in that Smart Agreements Template, based on the conditions defined by the Smart Agreements signature parties. Along with the Decentralized Identification System (DID based in standard W3C) with a Credential Verification, based on the DID-CORE / VC-MODEL, named **DID:PAID**, and a two-step authentication option based on MTRD / ICAO TRIP, all this verifiable through of a Certification Authority that generates a PKCS#12 Certificate, the `chain on trust` for the certification of Smart Agreements.
 
