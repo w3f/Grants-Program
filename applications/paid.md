@@ -57,8 +57,8 @@ A DID Method / **DID:PAID** workflow looks like:
 * On Contract execution, workflow is executed by a workflow gateway, which whitelist allowed users.  
 
 * Contracts calls that are integrated with oracles are called and allows:
- * Applies agreement terms (terms must be classify to numeric, similar to ML Classification).
- * Verify agreement terms subjects (Only supports token price subject in first release).
+    * Applies agreement terms (terms must be classify to numeric, similar to ML Classification).
+    * Verify agreement terms subjects (Only supports token price subject in first release).
 
 
 ### Previous Work
