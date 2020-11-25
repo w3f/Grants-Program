@@ -174,7 +174,7 @@ We are buiding our community on https://www.yuque.com/?language=en-us and newsle
 ### Milestone 1
 | Status | Number | Deliverable     | Specification                                  |
 | ------ | ------ | --------------- | ---------------------------------------------- |
-|        | 0      | Licence         | Apache 2.0                                     |
+| [x]    | 0      | Licence         | Apache 2.0                                     |
 | [x]    | 1      | bindings/crypto | Rust binding and implements `@polkadot/wasm`   |
 | [x]    | 2      | util_crypto     | Porting and implements `@polkadot/util-crypto` |
 | [x]    | 3      | utils           | Porting and implements `@polkadot/utils`       |
