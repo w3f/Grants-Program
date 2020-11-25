@@ -23,7 +23,7 @@ This Decentralized identifier is a development of its own for the PAID Network, 
 
 #### Integration with Substrate
 
-Our development pipeline consist of standard EVM compatible tooling with the exception of compilation, which is done by the solang compiler, which allows us to deploy contracts compiled to Edgeware as WASM contracts compatible with Substrate / PolkaDOT.
+Our development pipeline consists of standard EVM compatible tooling with the exception of compilation, which is done by the Solang compiler, which allows us to deploy contracts compiled to Plasm Network in Multiple VM, like eg. EVM contracts compatible based on solidity and WebAssembly contracts compatible based on RUST, both support for Substrate.io/PolkaDOT.
 
 
 ### Project Details 
