@@ -137,17 +137,23 @@ Manta Network Ltd., a British Virgin Islands corporation
 ### Overview
 * **Total Estimated Duration:** 12 weeks
 * **Full-time equivalent (FTE):**  3
-* **Total Costs:** 1.8 BTC
+* **Total Costs:** 1.5 BTC
 
 ### Milestone 1 — Manta DAP Protocol Prototype
 * **Estimated Duration:** 8 weeks
 * **FTE:**  2
-* **Costs:** 1.2 BTC
+* **Costs:** 1 BTC
+
+The major deliverable of this milestone is Manta substrate pallet that support the basic DAP scheme:
+1. Mint private coin, a user could mint a DOT/KUSAMA coin to a private coin in Manta
+2. Transfer private coin, a Manta user could transfer a private coin to another user Manta user by providing an address and a zero-knowledge proof of the private coin that she owns
+
+The Manta substrate pallets includes the ledger state implementation, the transaction validation logic which involves the validation of zero-knowledge proofs. Note that this milestone will only support converting DOT/KUSAMA to private coins.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 1. | Manta Substrate Node Protoype | An open-sourced Manta DAP propotype substrate pallet. It will contains several pallets, such as zkSNARK verifier runtime, ledger state, and validation logic, etc. Support basic functionalities such as mint private coins, transferring private coins. This first version of Manta DAP will only support DOT/KUSAMA.|
+| 1. | Manta Substrate Pallet Protoype | An open-sourced Manta DAP propotype substrate pallet. It will contains several sub-pallets, such as zkSNARK verifier runtime, ledger state and its validation logic, etc. This prototype supports basic functionalities such as mint private coins, transferring private coins. This first version of Manta DAP will only support DOT/KUSAMA.|
 | 2. | Benchmark | benchmark on Manta DAP transaction latency and throughput. |
 | 3. | Docker | We will provide a dockerfile to demonstrate the end-to-end use case of Manta DAP.  |
 
@@ -156,7 +162,15 @@ Manta Network Ltd., a British Virgin Islands corporation
 
 * **Estimated Duration:** 4 weeks
 * **FTE:**  3
-* **Costs:** 0.6 BTC
+* **Costs:** 0.5 BTC
+
+There are two major new deliverable in Milestone 2:
+1. Extend the Manta pallet to support parachain assets. We are still figuring out what is the best way of supporting that. This essentially requires a cross-chain communication mechanism such as XCM or XCMP (which hasn't been put into Rococo yet). We are also actively talking to Polkadot eco-systems members such as Acala and Equilibrium to discuss what is the best standard interface for mining parachain asset to private coins.
+2. A client prototype, which could:
+   * Sign and initiate Mint transactions
+   * Generate zero-knowldge proofs and send transfer transaction of private coins
+   We plan to benchmark and optimize the efficiency of zero-knowledge proof generation
+
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
