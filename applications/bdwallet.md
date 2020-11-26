@@ -8,6 +8,10 @@ The full name of BD Wallet is `Black Diamond Wallet`, It is a multi coin crypto 
 
 Unlike other wallets, we also support centralized wallets which we call `cloud wallets`. Through the cloud wallet, we provide users with functions such as project rating, easy-to-operate staking, and DeFI vaults. Currently, the cloud wallets has served over 70,000 blockchain industry users.
 
+Cloud wallets can be considered as wallet implementations with partial centralization features, keeping their cryptocurrency for users, similar to "PayPal". Cloud wallets exist to reduce users who have no experience in using cryptocurrency wallets. They don’t need to know any implementation details about the wallet, such as mnemonic words, secret keys, etc., users can directly transfer and receive encrypted currency through the account registered in our cloud wallet (the account may be a mobile phone number or email) And use other services, it is more friendly to novice users. According to our research, many users in China have this requirement. They need a simple and easy-to-use wallet and don't need to record mnemonics and secret keys by themselves.
+
+And we also have HD wallet to choose from to meet the needs of high-end users.
+
 Now, we intend to fully support the Polkadot ecosystem and contribute to the prosperity of the Polkadot ecosystem
 
 ### Overview
@@ -15,6 +19,14 @@ Now, we intend to fully support the Polkadot ecosystem and contribute to the pro
 BD Wallet which formerly known as Black Diamond Ratings, was created in January 2018, it is the first jury-type blockchain project rating in the world, with more than 500 professional reviewers, all of whom are senior practitioners in the blockchain industry. The rating range includes exchange ratings, cryptocurrency ratings. Currently, it has accumulated 17,000+ ratings, it is the largest cryptocurrency rating agency in China.
 
 On August 15, 2020, the company strategically merged with Bi Da Wallet and officially changed its name to Black Diamond Wallet. Black Diamond Wallet has now developed into a digital open financial one-stop solution platform integrating cryptocurrency storage, financial service, project rating and industry social contact.
+
+We have a professional review team to look for high-quality projects on the market and put them on the rating database. Users or project issuers can also submit project information to us, which can be included in the project database after passing the review.
+
+At the same time, we have a team of professional reviewers to score and rate the items in the rating library, as well as to post comments. The reviewer is a professional blockchain practitioner or cryptocurrency investor. It takes 3 years of industry experience and more than 500,000 encrypted assets to be eligible to serve as a reviewer, and provide relevant certificates to the BD team for review. Provide this rigorous screening mechanism to ensure that each reviewer is professional and to ensure fair and impartial scoring and rating of projects. Of course, the reason why reviewers will actively participate in our project review is because we will give a certain amount of HZT token rewards for high-quality reviews.
+
+Combining ratings and wallets is where our BDWallet is innovative. We provide users with professional project ratings. Users can view the project profile, reviewer evaluations, and reviewer ratings of related currencies through our rating library, so as to deepen users’ understanding of the project and avoid users not knowing the project. The situation makes blind investment decisions.
+
+And users can leave a comment under each rating, and other users can also see the message, so that users can increase their stickiness and frequency of use of the wallet. Users not only use the wallet as a tool, but also a channel for obtaining and understanding project information.
 
 BD Wallet will fully support the construction and development of the Polkadot ecosystem:
 
@@ -24,15 +36,12 @@ BD Wallet will fully support the construction and development of the Polkadot ec
 4. Support Polkadot ecosystem DAPP access in the future, making more users to use Polkadot Eco's DAPP easily.
 
 ### Project Details 
-* Mockups/designs of any UI components
-
-  cloud wallet
-
+* cloud wallet
+  
   <img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/cloud-wallet-coins.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/cloud-wallet-traing.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/cloud-wallet-staking.png" width="33%">
 
-
-
-  hierarchical deterministic wallet
+* hierarchical deterministic wallet
+  
   <img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/hd-wallet-import.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/hd-wallet-coins.png" width="33%"><img src="https://raw.githubusercontent.com/bdwallet/documentation/main/images/hd-wallet-user.png" width="33%">
 
 ### Ecosystem Fit 
@@ -40,6 +49,10 @@ BD Wallet will fully support the construction and development of the Polkadot ec
 In the current market, there are products in the same type of BD Wallet, such as imtoken, cobo wallet, math wallet.
 
 BD Wallet has its own unique characteristics.BD Wallet Provides the world's first jury-style rating service. It is the country’s largest rating agency and has the country’s largest rating data. BD Wallet also has a social function, which facilitates information sharing and exchange between users.
+
+Most of the cryptocurrency users in China do not have basic blockchain knowledge, and do not know how to participate in node construction, mortgage, voting, and nomination operations. BDWallet provides lower operating thresholds for users, compared to other Polkadot Wallet, users only need to care about the interest rate that can be obtained when participating in staking in BDWallet. We help users implement investment details.
+
+And BDWallet pioneered the shared staking model. When user A invites user B to participate in DOT staking, user A can obtain corresponding HZT token rewards. HZT token is the governance currency issued by our wallet. Through this incentive model, more users will spontaneously invite DOT holders to participate in DOT Staking, so that more people will participate in the ecological construction of the DOT community.
 
 ## Team :busts_in_silhouette:
 
@@ -85,7 +98,7 @@ BD Wallet has its own unique characteristics.BD Wallet Provides the world's firs
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  3.5 FTE
-* **Total Costs:** 1.5 BTC
+* **Total Costs:** 1.35 BTC
 
 ### Milestone 1 — Complete fully support of cloud wallet for Polkadot ecology
 * **Estimated Duration:** 1 month
@@ -100,7 +113,7 @@ BD Wallet has its own unique characteristics.BD Wallet Provides the world's firs
 ### Milestone 2 — Complete bd-wallet-core development
 - **Estimated Duration:** 1 month
 - **FTE:**  2
-- **Costs:** 0.7 BTC
+- **Costs:** 0.55 BTC
 
 | Number | Deliverable                      | Specification                                                |
 | ------ | -------------------------------- | ------------------------------------------------------------ |
@@ -108,8 +121,7 @@ BD Wallet has its own unique characteristics.BD Wallet Provides the world's firs
 | 1.     | documentation                    | Instructions and examples for use.                           |
 | 2.     | unit test                        | Write for each unit test.                                    |
 | 3.     | DOT, KSM and other coins support | Interface with mainstream coins that support the polkadot ecology, such as DOT and KSM. |
-| 4.     | BTC, ETH and other coins support | Because BD Wallet users tend to use not only the polkadot Ecology coins, but also use the mainstream coins, such as BTC ETH, we support as well |
-| 5.     | Publish to project library       | Release our origin source library to the NPM central repository for developers to import and use |
+| 4.     | Publish to project library       | Release our origin source library to the NPM central repository for developers to import and use |
 
 ### 
 
@@ -133,6 +145,7 @@ BD Wallet has its own unique characteristics.BD Wallet Provides the world's firs
 1. In the upcoming wallet development program, we will develop the decentralized wallet, and also fully support for polkadot Ecology Dapp access.
 2. We plan to establish polkadot (China) Technology Alliance in China to study and promote the technology and concept of polkadot and appeal more developers to join in the ecological development of polkadot and work together to achieve the vision of web 3.0 as soon as possible. At present, multiple exchanges and media companies such as AEX, BKEX, Safe Custody, and token damo have jointly initiated the establishment of Polkadot (China) Technology Alliance
 3. We have focused on the study of the deployment of asset synthesis protocols on the Polkadot Network, in order to map real-world physical assets onto the blockchain, which we feel is a very large market, and we will invite more developers to participate in this study
+4. In future plans, we consider voting on the chain to elect our reviewers. In this way, we believe that our rating mechanism will be more transparent and credible
 
 ## Additional Information
 So far, we have completed the development of Black Diamond Wallet cloud wallet, which can provide users with multiple services, such as staking, social networking, rating, defi mining and others. Currently, it has fully supported for polkadot, at the same time we have been preparing for the creation of the polkadot (China) Technology Alliance.
