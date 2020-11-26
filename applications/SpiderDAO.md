@@ -3,7 +3,7 @@
 * **Project:** SpiderDAO
 * **Proposer:** [SpiderDAO] (https://github.com/SpiderDAO)
 * **Payment Address:** 3Pxq3ViqRW6b3e7qsX7Mo7gSikHcToa7ig
-* **Document Version:** Version 2.1
+* **Document Version:** Version 2.2
 
 
 ## Project Overview :page_facing_up: 
@@ -54,15 +54,53 @@ The main problem with **Mantra DAO** which is built on **Rio Chain** is the same
 
 **SpiderConnect Router Security**
 
-Our routers do have a secured ROM which we can control securely for all units and that's where the essential data will be saved. Our unique ID which currently contains the mac address & the router serial number will be combined with the wallet address and encrypted using our algorithm to make sure it would be nearly impossible to be compromised.
+- Our routers do have a secured ROM which we can control securely for all units and that's where the essential data will be saved. Our unique ID which currently contains the mac address & the router serial number will be combined with the wallet address and encrypted using our algorithm to make sure it would be nearly impossible to be compromised.
 
 **Whale Resistant Voting Model**
 
-Our model shifts voting power away from token holders to hardware owners, where one validated router equals one vote. Additionally, Blockchain-based router tracking ensures that hoarding of devices are instantaneously detected by the network and ‘fake’ routers are locked out of the network. The liquidity incentive mechanism will be available to all users and not just people with routers so the entry barrier is removed in this case. 
+- Our model shifts voting power away from token holders to hardware owners, where one validated router equals one vote. Additionally, Blockchain-based router tracking ensures that hoarding of devices are instantaneously detected by the network and ‘fake’ routers are locked out of the network. The liquidity incentive mechanism will be available to all users and not just people with routers so the entry barrier is removed in this case. 
 
 **Voting by Direct Democracy**
 
-Our voting mechanism would be classified as a Direct Democracy system. We are going to balance the voting power by only allowing token holders to have one router regardless of how many tokens they hold. We will make sure they got to go through SpiderConnect to gain more routers for their tokens if we agreed to that. Our DPI filters will monitor that keeping their identity anonymous.
+- Our voting mechanism would be classified as a Direct Democracy system. We are going to balance the voting power by only allowing token holders to have one router regardless of how many tokens they hold. We will make sure they got to go through SpiderConnect to gain more routers for their tokens if we agreed to that. Our DPI filters will monitor that keeping their identity anonymous.
+
+ **How will spiderDAO try and prevent Whales/Bots from manipulating the Hardware Governnace?** 
+ 
+- We are aware that whales/bots can buy more routers using new wallets to try and affect the governance model, but that will come at a heavy cost for adding more routers and also have to wait for a period of time deemed reasonable to the DAO. Users must have active transactions on the wallet before being able to vote to make sure bots and whales won't get access with ease.
+
+- We will be keeping a log of every MAC Address and serial number for every router we add to our inventory, this we’ll be added to an on-chain ledger or on-chain database. This will help us to identify any clone or anyone trying to spoof/manipulate the hardware.
+We will also be in constant contact with the growing SpiderDAO community and the open-source community for beneficial ideas on how to make the governorate safer and more resilient to whales-resistance.
+
+- If the essential data (explained below) is not matched to the end-user and they try to spoof or manipulate access. There will be 3 warnings followed by a ban from taking a part in our governance model for a limited time(still to be decided). The ban time will be increased systematically based on the number of times this is identified until the customer is banned indefinitely if the infringement persistently continues.
+ 
+**What is the essential data?**
+
+**The essential data is a combination of the following:**
+
+- Encrypted wallet seed using aes-256-cbc encryption standard with an auto-generated passphrase* saved as part of the essential data.
+- Router Mac Address to avoid it being cloned.
+- Router serial number which cannot be cloned as it's a part of the chipset code.
+- SHA-512 checksum for a temp file that is created with all the data above which is updated every time the router is rebooted with the timestamp.
+
+ **PS:** Please note the passphrase would only be local and will be independent to the requests sent by the router for the governorate operations.
+
+ **Is SpiderConnect Hardware Router open-source?**
+ 
+- Yes as we want to be involved much more in the open-source community, We are going to be using the Uboot environment with its open-source code to save the essential data which would be listed in the next question.
+
+- To go into more detail on that point, We will also be giving our community members the option to choose between Open Source wireless drivers and the closed source ones for them to choose so we can make sure we offer an OpenSource friendly solution.
+
+**PS:** No secured or closed source ROM will be needed using this solution
+ 
+ **How we plan to build on Polkadot Ecosystem?**
+ 
+- We are planning to build using smart contracts at the beginning but as we scale up to more transactions, We are most likely to move toward a shared solution so we can cut the costs and take charge of how our blockchain will operate.
+
+**How we plan to achieve on-chain and off-chain communication with SpiderConnect Routers and SpiderDAO governance?**
+
+- We are planning to write a substrate faucet to communicate with our discord server for our customers to send the token needed for the vote, Initiate voting, pass on the vote for the voting process that would be operated through our discord server. 
+- Real votes will be done through our substrate faucet until the final Polkadot/SpiderDAO flavour features are fully-fledged.
+ 
 
 
 
@@ -146,11 +184,12 @@ Our voting mechanism would be classified as a Direct Democracy system. We are go
 | 0b. | Documentation | We will provide both inline documentation of the code and a full tutorial that explains how to interact and communicate with the testnet protocol |
 | 0c. | Testing Guide | The code will have proper unit-test coverage (>90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1.  | Testing | We will conduct testing of the developed functionalities on Westend testnet. |
-| 2.  | Substrate chain | We will be choosing from the runtime pallet of substrate to build our parachain including communication to our hardware routers |
-| 3.  | Prepare for release|After choosing the correct runtime enviroments and polkadot mechanisms we will then release the test version |
-| 4.  | Porting TestNet | The testnet will be based on kusama protcol, then ported to Polkadot |
-| 5.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
-| 6.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone |
+| 2.  | DAO framework | We are going to build our DAO framework using smart contracts on Kusama for this milestone. |
+| 3.  | Discord Communication | Write a substrate faucet to establish communication between SpiderConnect Hardware Router & discord server allowing contribution to SpiderDAO by allowing users to send the token needed for the vote, Initiate voting, pass on the vote for the voting process that would be operated through our discord server.   |
+| 4.  | Build TestNet | The testnet will be based on kusama protcol for this milestone | 
+| 5.  | Test SpiderDAO | Successfully connect DAO entities (individual voters) to Spider routers. This will include one use case to show the connection is established correctly using Discord communications.|
+| 6.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
+| 7.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone |
 
 ### Community engagement
 We plan to write several pieces about SpiderDAO/SpiderVPN implementation. They include, but are not limited to:
