@@ -173,22 +173,27 @@ We are buiding our community on https://www.yuque.com/?language=en-us and newsle
 
 ### Milestone 1
 
-| Status | Number | Deliverable     | Specification                                  |
-| ------ | ------ | --------------- | ---------------------------------------------- |
-| [x]    | 0      | Licence         | Apache 2.0                                     |
-| [x]    | 1      | bindings/crypto | Rust binding and implements `@polkadot/wasm`   |
-| [x]    | 2      | util_crypto     | Porting and implements `@polkadot/util-crypto` |
-| [x]    | 3      | utils           | Porting and implements `@polkadot/utils`       |
-| [x]    | 4      | keyring         | Porting and implements `@polkadot/keyring`     |
-| [ ]    | 5      | network         | Porting and implements `@polkadot/network`     |
-| [x]    | 6      | tests           | Unit tests for deliverables above              |
+| Status  | Number | Deliverable     | Specification                                  |
+| ------- | ------ | --------------- | ---------------------------------------------- |
+| &#9745; | 0      | Licence         | Apache 2.0                                     |
+| &#9745; | 1      | bindings/crypto | Rust binding and implements `@polkadot/wasm`   |
+| &#9745; | 2      | util_crypto     | Porting and implements `@polkadot/util-crypto` |
+| &#9745; | 3      | utils           | Porting and implements `@polkadot/utils`       |
+| &#9745; | 4      | keyring         | Porting and implements `@polkadot/keyring`     |
+| [ ]     | 5      | network         | Porting and implements `@polkadot/network`     |
+| &#9745; | 6      | tests           | Unit tests for deliverables above              |
 
 
 ## Future Plans
-1. Develop a wallet app, which has been communicated with many parachains, to prepare for linking into parachains and lowering the threshold for users to use Polkadot wallet.
-2. Embbed into [Pocket4D](https://github.com/Pocket4D/) as one of the core libraries.
-3. Maintain this library continuously, following the upgrade of `Polkadot-JS`.
-4. Test with Parachain partners.
+
+### Maintainance
+1. Keep following the upgrade of `Polkadot-JS` and `Substrate`, and supporting latest upgrades as soon as possible.
+2. Seperate the rust/dart binding libs and other implementations to serveral packages, the native binding libs should be minimize and stable for long term, just like `@polkadot/wasm` does. And we should be focusing on upgrading the api and data-types encode/decode.
+
+### Products and ecosystems
+1. We have a plan of making a wallet app, using `Polkadot-Dart` as its main dependency, which has been communicated with many parachains, to prepare for linking into `Parachains` and lowering the threshold for users to use. 
+2. We also have another substrate-based project called [Pocket4D](https://github.com/Pocket4D/), combining `Polkadot-Dart` and other components, we plan to build a new decentralized network. And `Polkadot-Dart` will be one of our client side core dependency.
+3. The main purpose of this lib is to co-operate with ecosystem partners, especially `Parachains`, we need to build and test with them and fit their needs.
 
 
 ## Additional Information ➕
