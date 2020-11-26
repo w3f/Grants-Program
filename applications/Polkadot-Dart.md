@@ -163,8 +163,6 @@ None.
 | 3      | pub.dev        | Publish to pub.dev for v1.0.0        |
 
 
-
-
 ### Community Engagement
 
 We are buiding our community on https://www.yuque.com/?language=en-us and newsletters will be regularly updated soon.
@@ -188,7 +186,7 @@ We are buiding our community on https://www.yuque.com/?language=en-us and newsle
 
 ### Maintainance
 1. Keep following the upgrade of `Polkadot-JS` and `Substrate`, and supporting latest upgrades as soon as possible.
-2. Seperate the rust/dart binding libs and other implementations to serveral packages, the native binding libs should be minimize and stable for long term, just like `@polkadot/wasm` does. And we should be focusing on upgrading the api and data-types encode/decode.
+2. Seperate the rust/dart binding libs and other implementations to serveral packages, the native binding libs should be minimize and stable for long term, just like `@polkadot/wasm` does. And we should be focusing on upgrading the features.
 
 ### Products and ecosystems
 1. We have a plan of making a wallet app, using `Polkadot-Dart` as its main dependency, which has been communicated with many parachains, to prepare for linking into `Parachains` and lowering the threshold for users to use. 
