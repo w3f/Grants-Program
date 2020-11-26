@@ -9,7 +9,7 @@ The platform has made it easy to pursue these means of communication using centr
 
 ### Overview
 
-  * *Substrate / Polkadot / Kusama Integration* Dwitter provides a Polkadot Parachain for human readable names in a decentralized platform, as well as social currency exchange between users.
+  * *Substrate framework modules and Polkadot-Node Interaction Integration* Dwitter provides a Polkadot Parachain/Parathread for human readable names in a decentralized platform, as well as social currency exchange between users.
   * *Team* The team is experienced in cryptographic technology, distributed systems and shares the security community's and Parity's mission on decentralization.
     It serves experience in international entrepreneurship and is engaged in the security community. Open source value for a web3 and a more open and decentralized Internet has been and is being created.
 
@@ -139,38 +139,35 @@ is documented.
 Below we provide the roadmap of the Dwitter project. The milestones will be executed in parallel and due to research in performance and scalability, censorship resistance and potential improvements and feature merge requests to multiple open source projects involved, as well deciding upon further production features such as prominency social reward, incentivizing the use of the platform.
 
 ### Overview
-* **Total Estimated Duration:** 2 months 30k PoC, with additional 200k in requested funding for facing the public Internet and creating a startup company
-* **Full-time equivalent (FTE):**  Full time work on the project will be pursued.
-* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is BTC 1.7-1.8 (Unix Timestamp CHF Exchange rate 1604426503.916094 30,000 CHF)
+* **Total Estimated Duration:** 2-3 months 30k PoC
+* **Full-time equivalent (FTE):**  1.0 Full time work on the project will be pursued.
+* **Total Costs:** The request of this proposal for the creation of a Proof-Of-Concept is BTC 1.71 (Unix Timestamp CHF Exchange rate 1604426503.916094 30,000 CHF)
 
-### Milestone 1 — Implement a Dapp with IPFS/IPNS Pinning, and Tor hidden service content delivery in the style and ease of Tor browser in a UI client. Do it in Rust.
+### Milestone 1 — Implement a Dapp with IPFS/IPNS Pinning, and Tor hidden service content delivery in the style and ease of Tor browser in a UI client. Test Rust Implementation of Clients and Current Full-Code Rewrite, But Focus on NodeJS for this. Most of it has already between written in the Follow repository.
 
 * **Estimated Duration:** 1 month
 * **FTE:**  1.0
-* **Costs:** 0.85 (Unix Timestamp CHF Exchange rate 1606238029.414203 15,000 CHF)
+* **Costs:** 0.855 (Unix Timestamp CHF Exchange rate 1606238029.414203 15,000 CHF)
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache License 2.0 | License of the project
 | 0b. | Blockchain | Launch a Polkadot Parachain for Social Payments, Naming and Messaging |
-| 1. | IPFS/IPNS | Performant content delivery and pinning in the style of Twitter followings |
-| 2. | TorBrowser like Client | Establish a Tor circuit with ease like TorBrowser or Pivoxy |
-| 3. | Prepare for Substrate | Polkadot Relay chain integration, We will create a Substrate module that will render social payments and names |
-| 4. | Draft Substrate-Names | Polkadot (Parachain) Human Readable Names |
-| 5. | Draft Substrate-Payments | Polkadot (Parachain) Social Payments |
-| 6. | Draft Substrate-Messaging | Polkadot (Parachain) Direct Messaging |
+| 1. | IPFS/IPNS | Performant content delivery and pinning in the style of Twitter followings in NodeJS with Benchmarks, Consider and Test Rust interfacing and rewrite contributions |
+| 2. | TorBrowser like Client | Establish a Tor circuit with ease like TorBrowser or Pivoxy in NodeJS, Test and Research Rust |
+| 3. | Substrate | Polkadot Relay chain integration interaction through a Parachain/Parathread from a Substrate Template, Write social payments |
+| 4. | Implement Substrate-Names | Polkadot (Parachain/Parathread) Human Readable Names On-Chain test, Off-chain certainly implemented at this Milestone|
 
 ### Mileston 2 - Launch a Polkadot parachain for human readable names, social currency and Direct messages, Implement substrate modules
 * **Estimated Duration:** 1 month
 * **FTE:**  1.0
-* **Costs:** 0.85 (Unix Timestamp CHF Exchange rate 1606238029.414203 15,000 CHF)
+* **Costs:** 0.855 (Unix Timestamp CHF Exchange rate 1606238029.414203 15,000 CHF)
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Substrate module: Names | Incorporate resolution and registration of human readable domain names on a Polkadot Parachain |
-| 2. | Substrate module: Payments | Incorporate social payments across Parachains through the Polkadot Relay chain |
-| 3. | Substrate module: Messaging | We will create a Substrate module that will allow for private messaging and hashsum verification with the network |
-| 4. | Tests for the entire platform including benchmarks (of IPFS, for example) |
+| 1. | Substrate-Payments | Polkadot (Parachain/Parathread) Social Payments in Multiple Cryptocurrencies in NodeJS |
+| 2. | Substrate-Messaging | Polkadot (Parachain/Parathread) Direct Messaging Off-Chain definitely, On-Chain testing, Rust testing, Implementation is happening in NodeJS |
+| 4. | Tests for the entire platform including benchmarks for IPFS and the overhead/cost for On-Chain storage of small data chunks such as in the Bitcoin comment header |
 | 5. | Documentation & Tests | Finalization of Documentation, Benchmarks and Testing |
 
 ### Bitcoin address for funding
