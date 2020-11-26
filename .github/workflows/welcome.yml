@@ -32,5 +32,6 @@ jobs:
             [download and guidelines](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md). <br/><br/> 
             Once you complete your first grant milestone, would you be interested in collaborating on an announcement about the work you’re doing? 
             If so, then please get in touch with us at grantspr@web3.foundation prior to making the announcement (at least two weeks notice is preferred) 
-            so that we can coordinate on timing and content.
+            so that we can coordinate on timing and content.<br/><br/> 
+            Please don’t announce the grant publicly before you finished at least the first milestone of the project. 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

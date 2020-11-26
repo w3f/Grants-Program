@@ -2,11 +2,11 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project:** The name of the project
-* **Proposer:** GitHub username
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
+* **Project Name:** Name of your project (e.g. DuoSwap Module)
+* **Team Name:** Legal name of your team (e.g. Duo)
+* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
 
-*The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
+*The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
 If this application in response to an RFP then please indicate this on the first line of this section.
@@ -37,11 +37,14 @@ Are there any other projects similar to yours? If so, how is your project differ
 * Name of team leader
 * Names of team members	
 
-### Team Website	
-* https://<your_domain>
+### Contact
+* **Contact Name:** Full name of the contact person (e.g. John Brown)
+* **Contact Email:** Contact email (e.g. john@duo.com)
+* Website
 
 ### Legal Structure 
-Please provide the name and registered address of the legal entity executing the project.
+* **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
+* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
 
 ### Team's experience
 Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
@@ -61,7 +64,8 @@ This section should break out the development roadmap into a number of milestone
 Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
 
 For each milestone:
-* Please be sure to include a specification of the software. The level of detail must be enough so that we are able to verify that the software meets the specification.
+* Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
+To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
 * Please include total amount of funding requested per milestone.
 * Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
 * Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
@@ -69,9 +73,9 @@ For each milestone:
 * Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
 
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
+* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
+* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
+* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission. (e.g. 0.80 BTC)
 
 ### Milestone 1 Example — Implement Substrate Modules 
 * **Estimated Duration:** 1 month
@@ -88,15 +92,10 @@ For each milestone:
 | 3. | Substrate module: Z | We will create a Substrate module that will... |  
 | 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 6. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
 
 ### Milestone 2 Example — Additional features
 ...
-
-### Community engagement
-
-As part of the Program, we require that you produce an article/tutorial and publish it (for example on [Medium](https://medium.com/)). It should explain your work done as part of the grant. 
-
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
 
 ## Future Plans
 Please include the team's long-term plans and intentions.
