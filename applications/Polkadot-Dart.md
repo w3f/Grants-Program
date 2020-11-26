@@ -113,17 +113,17 @@ None.
 
 * **Total Estimated Duration:** 2.75 months
 * **Full-time equivalent (FTE):**  5.3
-* **Total Costs:** 1.69 BTC
+* **Total Costs:** 1.48 BTC
 
 ### Milestone 1 — Porting `common` and `wasm`
 
 * **Estimated Duration:** 1 month
 * **FTE:**  2
-* **Costs:** 0.64 BTC
+* **Costs:** 0.56 BTC
 
 | Number | Deliverable     | Specification                                  |
 | ------ | --------------- | ---------------------------------------------- |
-| 0      | Licence         | Apache 2.0                                     |
+| 0      | Licence         | MIT                                            |
 | 1      | bindings/crypto | Rust binding and implements `@polkadot/wasm`   |
 | 2      | util_crypto     | Porting and implements `@polkadot/util-crypto` |
 | 3      | utils           | Porting and implements `@polkadot/utils`       |
@@ -136,7 +136,7 @@ None.
 
 * **Estimated Duration:** 1 month
 * **FTE:**  2
-* **Costs:** 0.64 BTC
+* **Costs:** 0.56 BTC
 
 | Number | Deliverable  | Specification                                   |
 | ------ | ------------ | ----------------------------------------------- |
@@ -154,7 +154,7 @@ None.
 
 * **Estimated Duration:** 3 weeks
 * **FTE:**  1.3
-* **Costs:** 0.41 BTC
+* **Costs:** 0.36 BTC
 
 | Number | Deliverable    | Specification                        |
 | ------ | -------------- | ------------------------------------ |
