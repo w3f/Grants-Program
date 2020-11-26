@@ -11,10 +11,9 @@
 ## Project Overview :page_facing_up: 
 
 ### Overview
-Almost every substrate projects have the need of data processing and querying data. 
-SubQuery is to fill the blank of this area as a one shop solution and a core infrastructure for the polkadot ecosystem.
-We expect it to cover how to Extract, Transform, Persist, and Query data in the beginning.
-And how to Connect and Present data in the future.
+Almost every substrate project has a need to process and query data. 
+SubQuery is to fill the blank of this area as a complete solution and should be core infrastructure for the Polkadot ecosystem.
+We expect it to cover how to Extract, Transform, Persist, and Query data in the beginning and how to Connect and Present data in the future.
 
 ### Project Details 
 In this proposal, we provide a complete workflow to create a live data query system. 
@@ -22,7 +21,7 @@ In this proposal, we provide a complete workflow to create a live data query sys
 #### Step #1: Create a subquery project
 1. use `@subql/cli` tool we provide to create a subquery project
     * it is written in typescript
-    * user need to config the project, define a schema and implement mapping functions
+    * user needs to config the project, define a schema and implement mapping functions
 2. use `@subql/cli` to generate types from the given schema
 3. use `@subql/cli` to compile and pack the subquery project
 
@@ -34,7 +33,7 @@ Prerequisites
 Then start our `@subql/node` with the path of local subquery project as arguments, `@subql/node` will handle the rest.
 
 #### Step #3: Run a Query Service
-We do have plan for a custom build graphql query service `@subql/query`, but in this stage we will use [Harura](https://hasura.io) to do the job.
+We do have plan for a custom built graphql query service `@subql/query`, but in this stage we will use [Harura](https://hasura.io) to do the job.
 
 #### Components
 Npmjs Packages to published:
@@ -44,14 +43,14 @@ Npmjs Packages to published:
 ### Ecosystem Fit 
 * [Hydra](https://github.com/Joystream/hydra)
 * [substrate-graph](https://github.com/playzero/substrate-graph)
-The original intentions are different and that lead to different technical decisions.
-* These two projects are both created by a substrate-based blockchain team in order to fulfill the query need of their own chains in the beginning and then they incubated it into a standalone project.
-* The motivation of us is to make a tool that solves query demands of all substrate blockchains. And then provide a hosted solution to lower the barriers further.  
+The original intentions are different and that leads to different technical decisions.
+* These two projects are both created by a substrate-based blockchain team in order to fulfill the needs of their own chains in the beginning and then they adapted them into standalone projects.
+* The motivation of us is to make a tool that solves query demands of all substrate blockchains right from the beginning. We also plan to then provide a hosted solution to lower the barriers of entry further. 
 
 The differences:
-1. Secure execution of mapping functions are not top concerns of them, but is a hard requirements for us and will be supported in the proposal.
+1. Secure execution of mapping functions are not top concerns for them, but is a hard requirement for us and will be supported in the proposal.
 2. We don't want to depend on 3rd party libs in the core code of the project, libs such as warthog used by Hydra.
-3. Api access within the mapping functions will be supported and we
+3. Api access within the mapping functions will be supported
 
 ## Team :busts_in_silhouette:
 
@@ -67,12 +66,12 @@ The differences:
 * https://onfinality.io
 
 ### Legal Structure 
-OnFinality Ltd, New Zealand
+OnFinality Limited, New Zealand
 
 ### Team's experience
-We are people behind onfinality which is a sass platform for blockchain teams and user to launch nodes and get access to endpoint of a lot range of blockchain protocols.
+We are people behind OnFinality which is an infrastructure saas platform for blockchain teams and user to launch nodes and get access to endpoint of a large range of blockchain protocols.
 
-We have supported a lot of polkadot ecosystem projects including Acala, Darwinia, Plasm, Edgeware.
+We have supported many Polkadot ecosystem projects already including Acala, Darwinia, Plasm, Edgeware.
 
 Ian led a team and won 2nd price in the substrate hackathone in Hangzhou 2019.    
 
@@ -122,11 +121,10 @@ Ian led a team and won 2nd price in the substrate hackathone in Hangzhou 2019.
 
 ### Community engagement
 
-We will publish a serial articles in medium and a video demonstrating the usage of this tool too.
+We will publish a series of articles on Medium and videos demonstrating the usage of this tool too. We will engage with users in our community on Telegram.
 
 ## Future Plans
-* With the help of this tool, anyone can create and run queries easily. But there're still a gap if user want to serve the query service in production, 
-and that's our intention to close the gap by providing a hosted service. 
+* With the help of this tool, anyone can create and run queries easily. But there're still issues for when a user wants to consume the query service in production, our intention to close this gap by providing a hosted service. 
 * In regard to functionality, we also plan to support subquery composition and data subscription for users that use our hosted service.
 * Smart contracts including solidity and ink! support are in our future roadmap.
 * We are willing to reach all the chain explorer teams and see how our service can benefit them.
