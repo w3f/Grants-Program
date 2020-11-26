@@ -178,7 +178,7 @@ We are buiding our community on https://www.yuque.com/?language=en-us and newsle
 | &#9745; | 2      | util_crypto     | Porting and implements `@polkadot/util-crypto` |
 | &#9745; | 3      | utils           | Porting and implements `@polkadot/utils`       |
 | &#9745; | 4      | keyring         | Porting and implements `@polkadot/keyring`     |
-| [ ]     | 5      | network         | Porting and implements `@polkadot/network`     |
+| &#9744; | 5      | network         | Porting and implements `@polkadot/network`     |
 | &#9745; | 6      | tests           | Unit tests for deliverables above              |
 
 
