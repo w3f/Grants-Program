@@ -136,8 +136,9 @@ And BDWallet pioneered the shared staking model. When user A invites user B to p
 | 0.     | UI design                        | The UI of the Hierarchical Deterministic Wallet is designed to provide good interaction experience for users |
 | 1.     | Wallet constructure design       | The constructure design of the wallet. The APP contains local storage strategy, broadcast node management, multi-coins management and other services. The server should provide API interface which supporting multiple chains and in charge of obtaining transaction records, transaction status and other information |
 | 2a.    | Transaction function development | The core function of wallet is to develop the coin management and charging related functions of app |
-| 2b.    | DApp browser development         | The development of dapp browser based on polkadot Ecology will serve as the flow entrance of polkadot ecology DAPP. |
-| 3.     | release                          | Project published available for download and use by users    |
+| 2b.    | DApp browser development         | The development of dapp browser based on polkadot Ecology will serve as the flow entrance of polkadot ecology DAPP |
+| 3.     | share staking                    | To complete the development of shared staking, users can invite friends to participate in Polkadot staking through WeChat sharing, and get hzt rewards |
+| 4.     | release                          | Project published available for download and use by users    |
 
 ### 
 
