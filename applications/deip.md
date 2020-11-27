@@ -92,12 +92,12 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 ### Overview
 * **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):**  4.5
-* **Total Costs:** 1.65 BTC (approx. $30,000)
+* **Total Costs:** 1.95 BTC (approx. $32,700)
 
 ### Milestone 1 Implement IP Management/Governance Module 
 * **Estimated Duration:** 2 month
 * **FTE:**  4.5
-* **Costs:** 1.65 BTC
+* **Costs:** 1.95 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
