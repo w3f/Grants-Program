@@ -187,7 +187,7 @@ It is currently a private repo, please contact us for access.
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. There will also be a more detailed design documentation of the module reflects the delivered status |
 | 2 | Substrate Module: Pool lending module | lending/borrowing pool of multi-assets with user deposit/debut tracking and interest calculation; liquidation functionality with sudo price oracle |
-| 3 | Front End | Complete our own web page and provide front end UI for users to test the lending module |
+| 3 | Front End | Complete our own web page and provide front end UI for users to test the lending module. Using React and Javascript.|
 | 4 | Tests | Unit tests and also a public accessible testnet of the PoC |
 | 5 | Docker | A docker image of Substrate node with the lending module for anyone to easily run the node |
 
