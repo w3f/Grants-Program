@@ -121,11 +121,12 @@ PAID Network, foresees the development of the PAID Smart Agreements Protocol in 
 * **Total Estimated Duration:** 3 month
 * **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
 * **Total Costs:** 25K
+* **BTC Address:** 3QcdnKnCAGnHRJJPQuBMmvQmJZY6GoT78C
 
 ### Milestone 1 Example — Implement Plasm Modules 
 * **Estimated Duration:** 3 month
 * **FTE:**  1
-* **Costs:** 1.75 BTC
+* **Costs:** 1.5 BTC
 
 | Number |   Deliverable   | Specification |
 | ------------- | ------------- | ------------- |
