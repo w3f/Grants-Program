@@ -12,7 +12,7 @@
 
 ### Overview
 Almost every substrate project has a need to process and query data. 
-SubQuery is to fill the blank of this area as a complete solution and should be core infrastructure for the Polkadot ecosystem.
+SubQuery is a open-sourced tool to fill the blank of this area as a complete solution and should be core infrastructure for the Polkadot ecosystem.
 We expect it to cover how to Extract, Transform, Persist, and Query data in the beginning and how to Connect and Present data in the future.
 
 ### Project Details 
