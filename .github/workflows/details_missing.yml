@@ -1,0 +1,36 @@
+# This is a basic workflow to help you get started with Actions
+
+name: welcome
+
+# Controls when the action will run. Triggers the workflow on push or pull request 
+# events but only for the master branch
+on:
+  pull_request_target:
+    types: [labeled]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  request_details:
+    if: github.event.label.name == 'details missing'
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Checkout
+        if: github.event.pull_request.merged == true
+        uses: actions/checkout@v1
+
+      - name: Comment PR
+        if: github.event.pull_request.merged == true
+        uses: thollander/actions-comment-pull-request@master
+        with:
+          message: > 
+            Thank you for submitting a grant application.
+            We checked your submission and found that it contains insufficient details in order to be considered for review.
+            We encourage you to improve your application by including as much technical specifications as you can.
+            You will find general guidelines on what we expect from teams [here](https://github.com/w3f/Open-Grants-Program/blob/master/applications/application-template.md#project-details).
+            Depending on what type of software you're building, you may also find [these category specific requirements](https://github.com/w3f/Open-Grants-Program/blob/master/src/grant_guidelines_per_category.md) useful.
+            We hope to see an update from you soon!
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
