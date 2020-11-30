@@ -89,7 +89,6 @@ Contributions to other projects (Libra & Cosmos SDK):
 * https://www.linkedin.com/in/ogaidukov/
 * https://www.linkedin.com/in/boris-povod-361a1b79/
 * https://www.linkedin.com/in/a-koz/
-* https://github.com/RIg410
 
 ## Development Roadmap :nut_and_bolt: 
 
