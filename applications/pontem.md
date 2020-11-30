@@ -32,7 +32,7 @@ In the case of Polkadot WASM Runtime we can't repeat the same approach with GRPC
 
 We already have rich experience in these topics because of our current Dfinance project, so far we developed:
 
-- Cosmos SDK [Move VM](https://github.com/dfinance/dnode/tree/master/x/vm) module, brings Move VM to Cosmos SDK.
+- [Cosmos SDK Move VM](https://github.com/dfinance/dnode/tree/master/x/vm) module, brings Move VM to Cosmos SDK.
 - [Documentation](https://docs.dfinance.co/move_vm) of how to write your own Move modules and scripts on Dfinance network.
 - [VSCode plugin](https://marketplace.visualstudio.com/items?itemName=damirka.move-ide) to write modules and scripts for both Libra and Dfinance network.
 - [IntelliJ plugin](https://github.com/dfinance/intellij-move) for Move language.
