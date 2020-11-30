@@ -4,8 +4,6 @@
 * **Team Name:** Dfinance.
 * **Payment Address:** 32AAAxmKJ9XxCsGSwt11oAuovCUHbgsgfY.
 
-*The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up: 
 
 ### Overview
