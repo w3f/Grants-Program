@@ -25,10 +25,10 @@ jobs:
         uses: thollander/actions-comment-pull-request@master
         with:
           message: > 
-            Thank you for submitting a grant application.
+            Thank you for submitting a grant application.<br/><br/>
             We checked your submission and found that it contains insufficient details in order to be considered for review.
-            We encourage you to improve your application by including as much technical specifications as you can.
+            We encourage you to improve your application by including as much technical specifications as possible.
             You will find general guidelines on what we expect from teams [here](https://github.com/w3f/Open-Grants-Program/blob/master/applications/application-template.md#project-details).
-            Depending on what type of software you're building, you may also find [these category specific requirements](https://github.com/w3f/Open-Grants-Program/blob/master/src/grant_guidelines_per_category.md) useful.
+            Depending on what type of software you're building, you may also find [these category specific requirements](https://github.com/w3f/Open-Grants-Program/blob/master/src/grant_guidelines_per_category.md) useful.<br/><br/>
             We hope to see an update from you soon!
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
