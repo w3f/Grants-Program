@@ -28,6 +28,7 @@ The SubGame project contains SubName Node, Game Template Library, Gamee Chips, G
 At present, there is no real decentralized game platform, but more decentralized games. Unlike the past, this time we are going to build a truly decentralized game ecological platform.
 
 ## Team :busts_in_silhouette:
+
 ### Team members
 * Shanfeng xie - Project Lead/Management & Research
 * QiangKai - Full-stack Developer
