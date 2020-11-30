@@ -69,10 +69,10 @@ We already have rich experience in these topics because of our current Dfinance 
 
 ### Team's experience
 
-We are experienced team, our current project is [Dfinance](https://dfinance.co), in past we launched [Wings](https://wings.ai) platform, also we developed [Crypti](https://github.com/borispovod/crypti-sources)(becomed Lisk).
+We are an experienced team, our current project is [Dfinance](https://dfinance.co), in past we launched [Wings](https://wings.ai) platform, also we developed [Crypti](https://github.com/borispovod/crypti-sources)(becomed Lisk).
 
 ### Team Code Repos
-* Cosmos SDK [Move VM](https://github.com/dfinance/dnode/tree/master/x/vm) module, brings Move VM to Cosmos SDK.
+* [Cosmos SDK Move VM](https://github.com/dfinance/dnode/tree/master/x/vm) module, brings Move VM to Cosmos SDK.
 * [VSCode plugin](https://github.com/dfinance/vscode-move-ide) repository.
 * [IntelliJ plugin](https://github.com/dfinance/intellij-move) for Move language.
 * [Move VM](https://github.com/dfinance/dvm) as a server.
