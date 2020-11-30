@@ -135,12 +135,12 @@ Shaun Wang has been contributing to several Polkadot ecosystem open source libra
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  2FTE, the listed members would contribute to different deliverables based on their skill-set.
-* **Total Costs:** $30k equivalent
+* **Total Costs:** 1.79 BTC
 
 ### Milestone 1 ERC20 Playground 
 * **Estimated Duration:** 1.5 month
 * **FTE:**  2
-* **Costs:** 1 BTC
+* **Costs:** 0.79 BTC
 
 Goal - Develop a web DApp & necessary components to allow users 
 1. input token name, symbol, supply amount and deploy new ERC20 tokens
@@ -160,7 +160,7 @@ Goal - Develop a web DApp & necessary components to allow users
 
 ### Milestone 2 Example — Additional features
 * **Estimated Duration:** 1.5 month
-* **FTE:**  2
+* **FTE:**  2.5
 * **Costs:** 1 BTC 
 
 Goal - Integrate with one existing Ethereum project 
