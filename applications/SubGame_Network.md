@@ -17,7 +17,7 @@ All members of the team are convinced that blockchain will change the world, and
 #### Architecture
 The SubGame project contains SubName Node, Game Template Library, Gamee Chips, Game Center and Front End.
 ![modules](https://raw.githubusercontent.com/SubGame-Network/graphics/main/subgame-core-modules.png)
-* **SubGame Node:** is the customized chain node for SubGame network build by Substrate 2.0 ,it contains the basic functionalities as a normal chain node but also provides the ability to fetch external data needed for games with the OCW (Off-chain Worker) from Substrate 2.0 Framework.
+* **SubGame Node** is the customized chain node for SubGame network build by Substrate 2.0 ,it contains the basic functionalities as a normal chain node but also provides the ability to fetch external data needed for games with the OCW (Off-chain Worker) from Substrate 2.0 Framework.
 * **SubGame Token $SGT** is the native token of the SubGame Network, and it will play the role of governance and other utilities. **$SGT** like **$DOT**
 * **Game Chips:** is one of the core modules of SubGame, mainly including chip purchase, redemption and income distribution.
 * **Game Template Library** is an ever-increasing library of game templates, and new game additions continue to increase through public chain upgrades.
