@@ -4,7 +4,7 @@
 
 * **Project Name:** BLDG App
 * **Team Name:** BLDG BLOX INC
-* **Payment Address:** TODO
+* **Payment Address:** 3BR66M3qUbYKnUaP7ZF3G6cuyCcEF6nbgf
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
