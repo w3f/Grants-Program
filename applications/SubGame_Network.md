@@ -1,7 +1,7 @@
 # Open Grant Proposal
 
 * **Project Name:** SubGame Network
-* **Team Name:** SubGame
+* **Team Name:** [SubGame-Network](https://github.com/SubGame-Network)
 * **Payment Address:** 14eKFGCjESvx63jouJXrpWQRoMw9kGacMN
 
 ## Project Overview :page_facing_up: 
@@ -14,15 +14,25 @@ SubGame is based on the Substrate 2.0 Framework. Substrate's powerful non-fork u
 #### Team Interest
 All members of the team are convinced that blockchain will change the world, and have been working hard to create more transparent rules of the game. We have been observing and learning Substrate technology for more than a year. From the current point of view, substrate is our best choice.
 ### Project Details 
-#### Architecture
+#### Components
 The SubGame project contains SubName Node, Game Template Library, Gamee Chips, Game Center and Front End.
 ![modules](https://raw.githubusercontent.com/SubGame-Network/graphics/main/subgame-core-modules.png)
 * **SubGame Node** is the customized chain node for SubGame network build by Substrate 2.0 ,it contains the basic functionalities as a normal chain node but also provides the ability to fetch external data needed for games with the OCW (Off-chain Worker) from Substrate 2.0 Framework.
 * **SubGame Token $SGT** is the native token of the SubGame Network, and it will play the role of governance and other utilities. **$SGT** like **$DOT**
-* **Game Chips:** is one of the core modules of SubGame, mainly including chip purchase, redemption and income distribution.
+* **Game Chips:** is one of the core modules of SubGame, mainly including chips purchase, redemption and income distribution.
 * **Game Template Library** is an ever-increasing library of game templates, and new game additions continue to increase through public chain upgrades.
 * **Game Center** stores all game instances and player data. It is the data center of the entire platform
 * **Front End** will adapt to the basic game front end to ensure a friendly user experience
+
+#### Scenarios
+* **Scenario to buy clips and transfer**
+![transfer](https://raw.githubusercontent.com/SubGame-Network/graphics/main/clips-transfer-%26-buy.png)
+
+As shown above, we will realize the clip exchange of $SGT in the first stage, and the ETH exchange in the later stage, and the clips of each address can also be freely transferred
+* **Scenario to create new game and play games**
+![playgames](https://raw.githubusercontent.com/SubGame-Network/graphics/main/create-%26-play-games.png)
+
+Players can build their own games or participate in other people’s games. Each game has a gameplay designed in the `pallet-gametemplates`. The first `pallet-gametemplates` will be continuously designed and adjusted during the first development stage.
 
 ### Ecosystem Fit 
 At present, there is no real decentralized game platform, but more decentralized games. Unlike the past, this time we are going to build a truly decentralized game ecological platform.
@@ -67,12 +77,12 @@ No Legal Entity
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 13 weeks
+* **Total Estimated Duration:** 12 weeks
 * **Full-time equivalent (FTE):**  3 FTE 
 * **Total Costs:** 0.75 BTC 
 
 ### Milestone 1 :  The testnet is completed and the first playable game template is built
-* **Total Estimated Duration:** 13 weeks
+* **Total Estimated Duration:** 12 weeks
 * **Full-time equivalent (FTE):**  3 FTE 
 * **Total Costs:** 0.75 BTC 
 
@@ -82,12 +92,17 @@ No Legal Entity
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | Documents containing the description of whole architecture design for SubGame Network. |
 | 0c. | Testing Guide | We will provide a full test suite and guide for SubGame node manage and game template library api. | 
-| 1a. | SubGame Node | Provide node compilation and installation instructions, start the test network|
+| 1a. | SubGame Node |  Provide node compilation and installation instructions, start the test network|
 | 1b. | SubGame Token | $SGT Completed NPOS test of testnet |  
-| 2a. | Game Chips | The Chips module has been developed and you can use Chips to participate in the game |
-| 2b. | Game Template Library | Complete the basic module design and development of the template library, and complete the first game template|
-| 2c. | OCW| Exchange Eth for chips |
-| 3a. | Game Center | Management of Game Template instances|
+| 2a. | pallet-chips | The Chips module has been developed and you can use Chips to participate in the game |
+| |Storage:|`Chips get(fn get_chips): map hasher(blake2_128_concat) T::AccountId => u32;`|
+| |Function:|1)`pub fn transfer_chips(origin,chips:u32)->dispatch::DispatchResult` <br><br> 2)`pub fn sgt_to_chips(origin,pay:T::Balance)->dispatch::DispatchResult`|
+| 2b. | pallet-gametemplates | Complete the basic module design and development of the template library, and complete the first game template|
+| | Storage:| `Templates get(fn get_templates): Vec<Template>;` <br><br> `TemplateMap get(fn get_templatemap):map hasher(blake2_128_concat) u32 => Template;` |
+| | Functions:| No public function|
+| 3a. | pallet-gamecenter | Management of Game Template instances|
+| | Storage:| `CurrentGameinstances get(fn get_gameinstances): map hasher(blake2_128_concat) u32=> Vec<GameInstance> ;` <br><br> `HistoryGameinstances get(fn get_gameinstances): map hasher(blake2_128_concat) u32=> Vec<GameInstance> ;`<br><br> `PlayMap get(fn get_playmap): map hasher(blake2_128_concat) AccountId=> u32 ;` |
+| | Functions:|1)`pub fn play_game(origin, instance_id:u32, clip:u32)->dispatch::DispatchResult `<br><br>2)`pub fn create_game(origin, template_id:u32)->dispatch::DispatchResult` |
 | 3b. | Front End | In the first stage, the basic development of the game center will be completed, and the first core game interaction process will be completed |
 | 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain  and front end |
 | 5. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.| 
