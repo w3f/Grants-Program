@@ -3,7 +3,7 @@
 * **Project:** SpiderDAO
 * **Proposer:** [SpiderDAO] (https://github.com/SpiderDAO)
 * **Payment Address:** 3Pxq3ViqRW6b3e7qsX7Mo7gSikHcToa7ig
-* **Document Version:** Version 2.3
+* **Document Version:** Version 2.4
 
 
 ## Project Overview :page_facing_up: 
@@ -184,10 +184,10 @@ We will also be in constant contact with the growing SpiderDAO community and the
 | 0b. | Documentation | We will provide both inline documentation of the code and a full tutorial that explains how to interact and communicate with the testnet protocol |
 | 0c. | Testing Guide | The code will have proper unit-test coverage (>90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1.  | Testing | We will conduct testing of the developed functionalities on Westend testnet. |
-| 2.  | DAO framework | We are going to build our DAO framework using smart contracts on Kusama for this milestone. |
+| 2.  | DAO framework | We are going to build our DAO framework using Ink! Smart Contracts for this milestone. |
 | 3.  | Discord Communication | Write a substrate faucet to establish communication between SpiderConnect Hardware Router & discord server allowing contribution to SpiderDAO by allowing users to send the token needed for the vote, Initiate voting, pass on the vote for the voting process that would be operated through our discord server.   |
-| 4.  | Build TestNet | The testnet will be based on kusama protcol for this milestone | 
-| 5.  | Test SpiderDAO | Successfully connect DAO entities (individual voters) to Spider routers. This will include one use case to show the connection is established correctly using Discord communications. |
+| 4.  | Build TestNet | The testnet will be based on Substrate framework for this milestone. | 
+| 5.  | Test SpiderDAO | Successfully connect DAO entities (individual voters) to Spider routers. This will include one use case to show the connection is established correctly using Discord communications. We will be using Python with the help of https://github.com/polkascan/py-substrate-interface library. |
 | 6. | Medium Article | Create a medium article to announce all deliveries to the community once passed evaluation. |
 | 7.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
 | 8.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone |
