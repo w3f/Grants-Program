@@ -26,10 +26,12 @@ The SubGame project contains SubName Node, Game Template Library, Gamee Chips, G
 
 #### Scenarios
 * **Scenario to buy clips and transfer**
+
 ![transfer](https://raw.githubusercontent.com/SubGame-Network/graphics/main/clips-transfer-%26-buy.png)
 
 As shown above, we will realize the clip exchange of $SGT in the first stage, and the ETH exchange in the later stage, and the clips of each address can also be freely transferred
 * **Scenario to create new game and play games**
+
 ![playgames](https://raw.githubusercontent.com/SubGame-Network/graphics/main/create-%26-play-games.png)
 
 Players can build their own games or participate in other people’s games. Each game has a gameplay designed in the `pallet-gametemplates`. The first `pallet-gametemplates` will be continuously designed and adjusted during the first development stage.
