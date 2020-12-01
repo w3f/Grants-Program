@@ -108,9 +108,9 @@ Sam Billingham:  [https://www.linkedin.com/in/sambillingham/](https://www.linked
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide inline documentation where helpful. External documentation for making use of example code and replicating any data/interactions. |
 | 1. | Interface Designs | Wireframes and designs provided in Adobe XD to showcase dashboard | 
-| 2. | Smart contract | Parachain based smart contracts for submitting ESG values to be stored and accessed. |  
-| 3. | Automate ESG Ratings |  Scheduled serverless functions for calculating and submitting ESG values to smart contract  |  
-| 4a. | Dashboard | Showcase a project’s current and historical ESG ratings |  
+| 2. | Smart contract | We will create a smart contract for submitting ESG (Environmental, Social, and Corporate Governance) rating values for individual projects/organisations. Written in Ink to be deployed on a polkadot parachain. Contract functionality to support read/write storage access of rating value (rating, issuing/signing authority & timestamp)  |  
+| 3. | Automate ESG Ratings | Node.js scheduled serverless functions for calculating and submitting ESG values to smart contract. Will calculate ESG (TBD) using data provided by clientside app input and/or cloud database (Firebase) and broadcast function calls to substrate chain using JS polkadot/api. Ratings to run periodically (daily/weekly) and on demand. |  
+| 4a. | Dashboard | Vue.js powered SPA dashboard interface – showcase a project’s current and historical ESG ratings.  |  
 | 4b. | Dashboard | View and verify issuing authority. Show the percentage of onchain/offchain data used in the calculations. Where possible provide access to raw data |  
 | 4c. | Dashboard | Searching, sorting & filtering UI   |  
 | 4d. | Dashboard | Shareable individual card/view per Project |  
