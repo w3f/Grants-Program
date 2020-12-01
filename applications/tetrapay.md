@@ -120,7 +120,7 @@ Tetra Pay Ltda. (São Paulo – Brazil)
 - **Full-time equivalent (FTE):** 3
 - **Total Costs:** 1.6 BTC
 
-**###** **Milestone 1 - Basic modules development**
+### **Milestone 1 - Basic modules development**
 
 * **Estimated Duration:** 6 Week
 
@@ -135,14 +135,12 @@ Tetra Pay Ltda. (São Paulo – Brazil)
 | 0a.    | License         | Apache 2.0                                                   |
 | 0b.    | Documentation   | We will provide code documentation to explain how users can start chain nodes and how to use off-chain workers as miners to enter Oracle prices and calculate reasonable prices. Record the deviation value for miners based on price. (Punishment is not in this module) |
 | 0c.    | Testing Guide   | This unit will cover multi-currency price import test, value test, and miner working status test |
-| 1.     | Price Interface | Develop a price acquisition protocol, implement Payara price setting interface (miners set Payara prices), TetraX price setting interface (miners set Tetra stablecoin prices), price calculation module: time-weighted prices from all miners, the price is time-effective and calculated with the miner’s score. Miner scoring module: After comparing the miner’s input price with the final price, scoring and grading: low score miners (below 60) will be eliminated directly, intermediate miners (60-80) will not be settled, high score miners(more than 80) do settlement. |
-| 2.     | Tetra Protocol  | Implement the multi-currency stablecoin algorithm. Price calculation module: Realize Payara-TetraX price calculation, market deviation rate calculation, stable volume calculation (the optimal maximum volume to smooth the price difference), TetraX-TetraY optimal transaction path and volume price  calculation. |
-
- 
+| 1.     | Price Interface | Develop a price acquisition protocol, implement Payara price setting interface (miners set Payara prices), TetraX price setting interface (miners set Tetra stablecoin prices), price calculation module: time-weighted prices from all miners, the price is time-effective and calculated with the miner’s score. Miner scoring module: After comparing the miner’s input price with the final price, scoring and grading: low score miners (below 60) will be eliminated directly, intermediate miners (60-80) will not be settled, high score miners(more than 80) do settlement.<br/>The external interfaces implemented in this stage are as follows:<br/>setPrice: it is used for miners to enter the price, and the return value is the miner's status and score |
+| 2.     | Tetra Protocol  | Implement the multi-currency stablecoin algorithm. Price calculation module: Realize Payara-TetraX price calculation, market deviation rate calculation, stable volume calculation (the optimal maximum volume to smooth the price difference), TetraX-TetraY optimal transaction path and volume price  calculation.<br/>The external interfaces implemented in this stage are as follows:<br/>stabilizePrices: used to obtain the quantity required to stabilize the price of a single currency<br/>stabilizePath: calculate the user's assets and list the optimal transaction path |
 
 
 
-**###** **Milestone 2 - Stalecoin MVP realization**
+### **Milestone 2 - Stalecoin MVP realization**
 
 * **Estimated Duration:** 6 Week
 * **FTE:**  3
@@ -153,10 +151,12 @@ Tetra Pay Ltda. (São Paulo – Brazil)
 | 0a.    | License       | Apache 2.0                                                   |
 | 0b.    | Documentation | At this stage, we have to complete all the functions, including the exchange of Payara-TetraX and TetraX-TetraY and the detailed exchange rate output when the price fluctuates. And realize the casting and destruction of TetraX. |
 | 0c.    | Testing Guide | Test Guide This stage will have an overall interface test case and a Docker demo |
-| 1.     | TetraExchange | Realize single stablecoin Payara-TetraX exchange module, multi-currency stablecoin TetraX-TetraY free exchange module. |
-| 2.     | TetraFactory  | Realize the burn and minting of TetraX. When the price of Tetra local currency is higher than the price of legal currency, the module triggers the minting to increase liquidity and stabilize the price. When the price of Tetra local currency is lower than the legal currency, the module triggers the burn to maintain price stability. |
+| 1.     | TetraExchange | Realize single stablecoin Payara-TetraX exchange module, multi-currency stablecoin TetraX-TetraY free exchange module.<br/>The external interfaces implemented in this stage are as follows:<br/>exchange: for Tetra to payara ,Tetrax to tetray interchange |
+| 2.     | TetraFactory  | Realize the burn and minting of TetraX. When the price of Tetra local currency is higher than the price of legal currency, the module triggers the minting to increase liquidity and stabilize the price. When the price of Tetra local currency is lower than the legal currency, the module triggers the burn to maintain price stability.<br/>The external interfaces implemented in this stage are as follows:<br/>mintCoin: Use payara to cast tetra (used by Exchange module)<br/>brunCoin: Burn tetra to get payara (used by Exchange module) |
 
 
+## ***Interactive diagram***
+![img](https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/flowChart.png) 
 
 ## ***Future Plans***
 
