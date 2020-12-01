@@ -1,7 +1,7 @@
 # Open Grant Proposal
 
 - **Project Name:** Pontem Network (VM).
-- **Team Name:** Dfinance (Wings Stiftung)
+- **Team Name:** Dfinance (Wings Stiftung).
 - **Payment Address:** 32AAAxmKJ9XxCsGSwt11oAuovCUHbgsgfY.
 
 ## Project Overview
@@ -18,7 +18,7 @@ This is where our team has a unique experience, due to over 2 years spent workin
 
 ### Project Details
 
-Implementation of Move VM pallet isn’t going to be obvious task, even we already have experience by connecting Move VM with Cosmos SDK, but it’s done by bringing Move VM as GRPC service.
+Implementation of Move VM pallet won't be an easy task, even taking into account our experience connecting Move VM with Cosmos SDK, achieved via integrating Move VM as GRPC service.
 
 In the case of Polkadot WASM Runtime we can’t repeat the same approach with GRPC due to limitations of Runtime, but we can do a more elegant solution by utilizing Move VM inside Runtime. To be clear let’s see our plan step by step.
 
