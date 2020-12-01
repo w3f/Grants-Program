@@ -27,7 +27,7 @@ In this proposal, we provide a complete workflow to create a live data query sys
 
 #### Step #2: Run an indexer
 Prerequisites
-* Indexer requires an archive node to extract chain data from
+* An archive node to extract chain data from
 * A postgres database
 
 Then start our `@subql/node` with the path of local subquery project as arguments, `@subql/node` will handle the rest.
@@ -101,7 +101,7 @@ Ian led a team and won 2nd price in the substrate hackathone in Hangzhou 2019.
 | 1. | @subql/cli | We will create a npm package that can generate types, build and pack the subquery project. |
 | 2. | @subql/node | We will create a npm package that can load a subquery project and index the specified blockchain. |
 | 2.1 | @subql/node | will support block handler, call handler and event handler |
-| 2.2 | @subql/node | will execute mapping functions in a sandbox executor one way or another. |  
+| 2.2 | @subql/node | will use vm2 to create an isolated scope to execute mapping functions. And we will provide additional NetworkPolicy configs to strengthen the security further when run it in k8s.|  
 | 3. | Deploy | will provide a dockercompose file and kubernetes deploy yamls |
 | 4. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can create, run and serve their subquery project. |
 
@@ -112,8 +112,8 @@ Ian led a team and won 2nd price in the substrate hackathone in Hangzhou 2019.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | @subql/cli | We will create a npm package that can create scalffold of a subquery project. |
-| 2. | @subql/node | `@polkadot/api` will be accessible within the mapping functions and in the meantime we will make our best effort to keep the indexing result deterministic. |
+| 1. | @subql/cli | We will create a npm package that can create scaffold of a subquery project. |
+| 2. | @subql/node | `@polkadot/api` will be accessible within the mapping functions and we will patch the api instance that be injected in the scope to lock storage queries to current processing block so that the indexing result will be deterministic. |
 | 3. | Deploy | will provide a dockercompose file and kubernetes deploy yamls |
 | 4. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can create, run and serve their subquery project. |
 | 5. | Examples | Example subquery projects |
