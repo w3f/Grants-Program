@@ -1,10 +1,10 @@
 # Open Grant Proposal
 
-* **Project Name:** Pontem Network (VM).
-* **Team Name:** Dfinance.
-* **Payment Address:** 32AAAxmKJ9XxCsGSwt11oAuovCUHbgsgfY.
+- **Project Name:** Pontem Network (VM).
+- **Team Name:** Dfinance (Wings Stiftung)
+- **Payment Address:** 32AAAxmKJ9XxCsGSwt11oAuovCUHbgsgfY.
 
-## Project Overview :page_facing_up: 
+## Project Overview
 
 ### Overview
 
@@ -12,23 +12,20 @@ Pontem Network aims to bring the Move VM and Move language, and ecosystem around
 
 The Move language and the Move Virtual Machine, both developed by Facebook Libra, are among the safest technologies out there that enable the creation of smart contracts. While having built-in security by design such as resource-oriented architecture and formal verification, Move VM still severely lacks toolsets and documentation.
 
-We are going to create the Move pallet to make it possible for developers to publish their Move VM modules and execute scripts, also, we already built rich toolset and documentation for Move language, so we will need only adopt it for Polkadot. 
+We are going to create the Move pallet to make it possible for developers to publish their Move VM modules and execute scripts, also, we already built a rich toolset and documentation for Move language, so we will need only adopt it for Polkadot.
 
 This is where our team has a unique experience, due to over 2 years spent working with Move and building tools around it. We have been working closely with Libra (as recognized technical adopters) as part of the Dfinance project which is utilizing the Move language and Move VM in order to run safe and usable smart contracts.
 
-### Project Details 
+### Project Details
 
-Implementation of Move VM pallet isn't going to be obvious task, even we already have experience by connecting Move VM with Cosmos SDK, but it's done by bringing Move VM as GRPC service. 
+Implementation of Move VM pallet isn’t going to be obvious task, even we already have experience by connecting Move VM with Cosmos SDK, but it’s done by bringing Move VM as GRPC service.
 
-In the case of Polkadot WASM Runtime we can't repeat the same approach with GRPC due to limitations of Runtime, but we can implement a more elegant solution by utilizing Move VM inside Runtime. To be clear let's see our plan step by step.
+In the case of Polkadot WASM Runtime we can’t repeat the same approach with GRPC due to limitations of Runtime, but we can do a more elegant solution by utilizing Move VM inside Runtime. To be clear let’s see our plan step by step.
 
-1. Move VM and language written in Rust language and can be compiled to WASM, unfortunately we can't use crates that depend on runtime. We will create a stable working pallet by forking of Move VM/language and replace creates with ones we can use.
-
-2. We will make Move VM outputs (writesets) compatible with Polkadot key-value storage, as during our latest research we discovered it's not going to work "out of the box" and will require some time to build a solution. 
-
+1. Move VM and language written in Rust language and can be compiled to WASM, unfortunately we can’t use crates that depend on runtime. We will create a stable working pallet by forking of Move VM/language and replace creates with ones we can use.
+2. We will make Move VM outputs (writesets) compatible with Polkadot key-value storage, as during our latest research we discovered it’s not going to work “out of the box” and will require some time to build a solution. Same with address format SS58, and non VM balances.
 3. We need to make gas usage of Move VM compatible with Polkadot standards. At least by using the same units like other VMs/pallets using.
-
-4. Build a documentation around the Move pallet, adopt existing tools and docs about VM and language. 
+4. Build a documentation around the Move pallet, adopt existing tools and docs about VM and language.
 
 We already have rich experience in these topics because of our current Dfinance project, so far we developed:
 
@@ -41,89 +38,127 @@ We already have rich experience in these topics because of our current Dfinance 
 - [Move Book](https://github.com/dfinance/move-book) - the first book about Move.
 - [DeFi contracts](https://github.com/dfinance/contracts) framework on Move language.
 
-### Ecosystem Fit 
+### Ecosystem Fit
 
-* Developers will be interested to build their DApps on Polkadot using Move technology stack, as it's a safe and useful language which is getting more and more adoption.
-   
-* Libra is developing and using Move, so Polkadot will have at least initial compatibility with Libra at least by allowing using the same modules in both networks.
+- Developers can be interested to build their DApps on Polkadot using Move technology stack, as it’s a safe and useful language which is getting more and more adoption.
+- Libra is developing and using Move, so Polkadot will have at least initial compatibility with Libra at least by allowing using the same modules in both networks.
+- Flow - Crypto Kitties creators blockchain also going to utilize Move VM and language, also by creating new language on top of it - Cadence, which can be adopted to Polkadot later.
 
-* Flow - Crypto Kitties creators blockchain also going to utilize Move VM and language, also by creating new language on top of it - Cadence, which can be adopted to Polkadot later. 
-
-## Team :busts_in_silhouette:
+## Team
 
 ### Team members
 
-* Oleg Gaidukov - CTO.
-* Boris Povod - R&D Lead and Blockchain developer.
-* Alexander Kozlovsky - Rust developer and Rust community enthusiast.
-* Dmitry Yakushev - Rust developer.
+- Oleg Gaidukov - CTO.
+- Boris Povod - R&D Lead and Blockchain developer.
+- Alexander Kozlovsky - Rust developer and Rust community enthusiast.
+- Dmitry Yakushev - Rust developer.
+- Vitaly Rudko - Dev Ops.
 
 ### Contact
-* **Contact Name:** Boris Povod
-* **Contact Email:** boris@dfinance.co
-* https://dfinance.co
 
-### Legal Structure 
-* **Registered Address:** Gubbelstasse 11, 6300 Zug, Switzerland.
-* **Registered Legal Entity:** Wings Stiftung.
+- **Contact Name:** Boris Povod
+- **Contact Email:** boris@dfinance.co
+- https://dfinance.co
 
-### Team's experience
+### Legal Structure
 
-We are an experienced team, our current project is [Dfinance](https://dfinance.co), in past we launched [Wings](https://wings.ai) platform, also we developed [Crypti](https://github.com/borispovod/crypti-sources)(becomed Lisk).
+- **Registered Address:** Gubbelstasse 11, 6300 Zug, Switzerland
+- **Registered Legal Entity:** Wings Stiftung
+
+### Team’s experience
+
+We are an experienced team, our current project is [Dfinance](https://dfinance.co/), in the past we've launched [Wings](https://wings.ai/) platform, and before that we've developed [Crypti](https://github.com/borispovod/crypti-sources) (which became Lisk).
 
 ### Team Code Repos
-* [Cosmos SDK Move VM](https://github.com/dfinance/dnode/tree/master/x/vm) module, brings Move VM to Cosmos SDK.
-* [VSCode plugin](https://github.com/dfinance/vscode-move-ide) repository.
-* [IntelliJ plugin](https://github.com/dfinance/intellij-move) for Move language.
-* [Move VM](https://github.com/dfinance/dvm) as a server.
-* [Toolset](https://github.com/dfinance/move-tools) for Move language: dissembler, resources viewer, language server, executor.
-  
-Contributions to other projects (Libra & Cosmos SDK):
-* https://github.com/libra/libra/pull/4058
-* https://github.com/libra/libra/pull/4053
-* https://github.com/libra/libra/pull/3472
-* https://github.com/libra/libra/pull/6116
-* https://github.com/cosmos/cosmos-sdk/pull/6053
+
+- [Cosmos SDK Move VM](https://github.com/dfinance/dnode/tree/master/x/vm) module, brings Move VM to Cosmos SDK.
+- [VSCode plugin](https://github.com/dfinance/vscode-move-ide) repository.
+- [IntelliJ plugin](https://github.com/dfinance/intellij-move) for Move language.
+- [Move VM](https://github.com/dfinance/dvm) as a server.
+- [Toolset](https://github.com/dfinance/move-tools) for Move language: dissembler, resources viewer, language server, executor.
+
+Contributions to other projects (Libra & Cosmos SDK): 
+
+- https://github.com/libra/libra/pull/4058
+- https://github.com/libra/libra/pull/4053
+- https://github.com/libra/libra/pull/3472
+- https://github.com/libra/libra/pull/6116
+- https://github.com/cosmos/cosmos-sdk/pull/6053
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/in/ogaidukov/
-* https://www.linkedin.com/in/boris-povod-361a1b79/
-* https://www.linkedin.com/in/a-koz/
 
-## Development Roadmap :nut_and_bolt: 
+- https://www.linkedin.com/in/ogaidukov/
+- https://www.linkedin.com/in/boris-povod-361a1b79/
+- https://www.linkedin.com/in/a-koz/
+
+## Development Roadmap
 
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission. (e.g. 0.80 BTC)
 
-### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 0.75 BTC
+- **Total Estimated Duration:** 4 months.
+- **Total Effort:** 357 days.
+- **Total Costs:** 1.576 (30000$ equivalent).
+
+### Milestone 1 - Pre-Alpha version of Move pallet
+
+- **Estimated Duration:** 1.5 month
+- Working days **x** ppl. **:** 28 **x** 4
+- Effort: 112 days
+- **Costs:** 0.419 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-| 6. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
+| 0. | Crates list       | Building a list of crates we have to replace with analogues could work in runtime or make our own versions which can work in runtime also. |
+| 1. | Crates developing | During our research we can use sp-std for part of cases, but unfortunately we will have to fork it and add additional functional or create our analogue crates contains missed functional. |
+| 2. | Crates replace    | Adopt Move VM for runtime using developed crates. | 
+| 3. | Move Pallet       | Create a Polkadot pallet with Move VM inside. Alpha version, without processing of WriteSets. |
+| 4. | Addresses support | Add support of SS58 addresses to Move VM. |
+| 5. | Compiler          | Adopt compiler to compile modules/scripts for Move VM inside pallet. |
+| 6. | Unit-tests        | Basic unit-tests coverage, at least 30%. |
+| 7. | Docker            | Docker-compose to quickly launch standalone version of Move VM. | 
+| 8. | Documentation     | Initial documentation how to run Move VM inside Pallet/standalone, execute scripts and publish modules. |
 
-### Milestone 2 Example — Additional features
-...
+
+### Milestone 2 — Alpha version of Move pallet
+
+- **Estimated Duration:** 1.5 month
+- Working days **x** ppl. **:** 28 **x** 5
+- Effort: 140 days
+- **Costs:** 0.661 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0. | Adopt storage             | Library that converts Move WriteSet in compatible format for Polkadot storage (LCS → Polkadot codec). |
+| 1. | WriteSets processing      | Process WriteSets from MoveVM to Polka storage. Read/Write operations, Del operations. |
+| 2. | Events processing         | Process Move events format to Polkadot one and publish them to block. | 
+| 3. | Publish Transaction       | Create a transaction type to support Move module publishing. |
+| 4. | Execute Arguments Parsing | To enable execute script transactions support we need to parse script arguments. |
+| 5. | Standard Library          | Move Standard Library Module adoption for Polkadot. |
+| 6. | Execute Transaction       | Create a transaction type to execute Move scripts. |
+| 7. | Unit-tests                | Cover 60% of the pallet functional with unit tests. | 
+
+### Milestone 3 — Beta version & Ecosystem
+
+- **Estimated Duration:** 1 month
+- Working days **x** ppl. **:** 21 **x** 5
+- Effort: 105 days
+- **Costs:** 0.496 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0. | Gas compatibility             | Change VM gas usage units and math to make it compatible with Polkadot. |
+| 1. | Non-VM balances compatibility | VM supports native coins inside smart contracts, example: DOT. |
+| 2. | REST API                      | REST API to compile, publish/execute modules and scripts. | 
+| 3. | RPC                           | RPC to publish/execute modules and scripts. |
+| 4. | Documentation                 | Supplement documentation with all features we provided: txs, compilers, smart contracts examples.   |
+| 5. | Deployment of prod env        | Spin up instances on the top of DigitalOcean/Kubernetes cluster, set an auto deploy etc. |
+| 6. | Toolset adoption              | Adopt current disassembler, resource viewer for pallet. |
+| 7. | Unit-tests                    | Cover 85% of pallet functional with unit tests. | 
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
 
-## Additional Information :heavy_plus_sign: 
-Any additional information that you think is relevant to this application that hasn't already been included.
+Wings Stiftung plans to continue supporting Move ecosystem. We want to build a bridge between Polkadot and Libra as Parachain, and launch our Parachain with Move VM pallet inside. Also, we going to proceed with further development of toolset (Move debugger, unit-testing framework, etc.) and extend our Wallet with Polkadot-specific features.
 
-Possible additional information to include:
-* What work has been done so far?
-* Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far?
+## Additional Information
+
+Wings Stiftung will be as well supporting financially this project. We are going to apply to another Grant for the implementation of the [Pontem network](https://pontem.network).
