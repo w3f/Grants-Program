@@ -142,7 +142,7 @@ Glacier Blockchain Technology is a company registered in Yantai, Shandong, P. R.
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run our Substrate node. Once the node is up, it will be possible to interact with the Distaff VM module via API calls to perform e.g. zk-STARK proof verification. |
 | 0c. | Testing Guide | We will provide a full test suite (mock and test files) for the VM module describing how the module can be tested. We will also provide a guide on how to perform the tests. |
-| 1. | Substrate module: Distaff VM | We will reorganize the Distaff VM project, split its functions into sub-modules and create frame pallet(s) following the conventions of the Substrate framework. We will perform configuration/optimization work to make the VM module easier to use for typical use cases of the Starks Network. |
+| 1. | Substrate module: Distaff VM | We will reorganize the Distaff VM project, split its functions into a primitive module and a frame pallet following the conventions of the Substrate framework. In the primitive module, we will separate the proof generation and proof verification function and keep only the proof verifier on chain. |
 | 2. | Substrate chain              | The Distaff VM will be embedded as a native runtime module in the Substrate node. It can serve the off-chain worker, which will be a Wasm runtime module, via the `runtime_interface` feature of the Substrate framework. |
 | 3. | Docker                       | We will provide a dockerfile to demonstrate the full functionality of our chain. |
 
