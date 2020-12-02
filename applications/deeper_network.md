@@ -1,0 +1,104 @@
+# Deeper Network
+
+## Project Description
+
+Deeper's vision is to combine network security, network sharing, and blockchain technology to create a safer, freer, and faster decentralized network. Our flagship product is called Deeper Connect. Its security protection, privacy protection, and network acceleration functions can significantly improve users’ Internet access experience. Deeper Network, a decentralized p2p network, is composed of thousands to millions of Deeper Connect devices. We are developing the following decentralized network services on Deeper Network:
+
+1. DPN (Decentralized Private Network)
+   DPN is a decentralized P2P bandwidth sharing private network. By leveraging the power of interconnected user devices, each user can access the Internet privately and safely. There is no need to worry about being eavesdropped and censored by the ISP.
+
+2. Decentralized DNS
+   DNS is the infrastructure for resolving IP addresses and querying the Internet. The centralized DNS layout makes the Internet extremely fragile, and site IPs may be blocked by centralized organizations at any time. Decentralized DNS services make the Internet more democratic and cannot be monopolized by institutions.
+
+3. Decentralized web
+   Anyone can build their own website and register it in the Deeper Network. In Deeper Network, the IP address of the web server is hidden, which comes with the benefit of anti-censorship and anti-DDoS attacks.
+
+4. Decentralized gateway
+   Deeper Connect is a decentralized gateway to web3.0. True decentralization means that no single organization can dominate over the entire network. It also means that a single point of failure will affect the functioning of the entire network. Decentralized gateways, decentralized public chains, and decentralized applications. For example, Ethereum Network remains centralized at the gateway level and is overly dependent on the API interface services provided by Infura for major dApps. Infura itself relies on AWS cloud services provided by Amazon. This means that the Ethereum ecosystem cannot be uncoupled from centralized network structures and is not truly decentralized. This naturally lends itself to the pitfalls of centralized network structures. This is evident as the recent Infura downtime has led to the paralysis of most Ethereum dApps. Deeper, on the other hand, has achieved true decentralization on all levels: decentralized gateways, decentralized public chains, and decentralized applications.
+
+## Team members
+
+-   Hui Liu
+-   Chao Ma
+-   Zhuang Jin
+-   Yi Cui
+-   Yang Liu
+
+## Team Website
+
+[https://deepernetwork.io/](https://deepernetwork.io/)
+[https://deeper.network/](https://deeper.network/)
+
+## Team Code Repos
+
+[deeper-chain](https://github.com/e2chain-dev/deeper-chain)
+
+## Legal Structure
+
+Deeper Network Inc in CA, USA
+
+## Team's Experience
+
+**Hui Liu**  
+Hui worked at Intel, Fortinet, and Palo Alto Networks, where he held positions such as R&D Manager and Chief Engineer. He brings more than ten years of experience in network security and operating system development. He spearheaded the development of the cloud firewall engine which still brings billions of dollars in annual revenue for the company.
+
+**Chao Ma**  
+Chao has a Ph.D in mathematics and focuses on researching blockchain, cryptography, and zero knowledge proof. He was a protocol architect and core developer at Harmony, a public blockchain startup, where he led efforts into various components of the core protocol.
+
+**Zhuang Jin**
+Zhuang has a master’s degree in Electrical Engineering. He has working experience in network security, distributed system, and embedded system development.
+
+**Yi Cui**  
+Yi earned his PhD degree in Computer Science. He worked on Network Infrastructure at Google, where he focused on data center congestion control, network measurement, and traffic engineering.
+
+**Yang Liu**
+Yang worked at Bytedance, Alibaba, Windriver, and has working experience in cloud infrastructure, operating system and embedded system.
+
+## Development Roadmap
+
+### M1: Micropayments – 4 weeks
+
+| Number | Deliverable          | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ------ | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License              | GPLv3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| 0b.    | Description          | For our testnet, we use one-way micropayment protocol. There are 2 parties: Sender and Receiver. There are 3 steps: Sender open a channel; sender sends accumulated micropayments to receiver; Receiver closes a channel or the channel closed after expiration. When sending the accumulated micropayments, the sender will sign the following data: (receiver, address, nonce, sessionId, accumulateAmount). Each time a new (sender, receiver) channel is opened, nonce is increased by 1 to avoid replay attack. sessionId represents one unique session inside one channel. When a channel is open/active, it can contains multiple sessions. The receiver can only claim once for each unique (nonce,sessionId) pair. |
+| 0c.    | Testing Guide        | The tests will verify the basic functionalities like opening channels, sending micropayments, claiming payments, and closing channels. 1. Opening channels: verify that sender has enough balance to reserve and the channels are unique; 2. Sending micropayments: verify that receiver info and payment amount is correct, the payment is indeed signed by sender, and sender has enough reserved balance. Verify that micropayments are received in each service period; 3. Claiming payments: Verify that balance transfer is submitted on chain; 4. Closing channels: only receiver can close the channel. Clear any outstanding micropayment balances and free reserved balance of sender.                            |
+| 0d.    | Language/Framework   | Rust/Substrate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| 0e.    | Tutorial             | Add tutorial documentation including blockchain setup, client setup. Add code examples to demonstrate the interaction between clients to blockchain, as well as clients to clients.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| 1.     | Channel open         | sender who opens the channel should reserve enough funds for accumulated micropayments. Channel data structure contains sender, receiver, nonce (to avoid replay attack), expiration time.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 2.     | Channel close        | channel will be closed after expiration time passed. Only the receiver can close the channel before the expiration time. The remaining amount which is not claimed by the receiver will be refunded to sender during close.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| 3.     | Claim payments       | During the lifetime of the channel, the receiver can claim accumulated micropayments. The sessionId becomes invalid after claim, and the sender should start using a different sessionId for a different micropayment session.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| 4.     | Client to Blockchain | The client inside a deeper device (light node) can automatically interact with blockchain: open channel, close channel, claim payment                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| 5.     | Client to Client     | The client inside a deeper device (light node) can automatically interact with each other: start services, sending micropayments, stop services.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+### Future Work
+
+1. Light node discovery. Each deeper device is acting as a light node in deeper layer. There are potential millions of light nodes in p2p network. We need pairing light nodes with unbiased randomness and design discovery mechanism in a decentralized way.
+2. Proof of Credit is a core component in deeper network. We already have built MVP functions for PoC. But there are more works to be done.
+3. Build an end to end blockchain ecosystem.
+
+## Additional Information
+
+### What work has been done so far?
+
+1. Code is open source at https://github.com/e2chain-dev/deeper-chain
+2. MVP is developed for core features: micropayments(master branch), light node(master branch), proof of credit(poc branch).
+
+### Have you applied for other grants so far?
+
+We have applied for Substrate Builder's program and got accepted.
+
+### How is your project different?
+
+1. **From products to blockchain ecosystem**
+   The biggest problem with Web3.0 is not technological innovation from 0 to 1, but rather market adoption from 1 to n. Namely, how to expand awareness and transition users from web 2.0 applications to web3.0 applications. <br/>
+   Deeper's goal is to provide a product similar to the iPhone, starting with users’ real needs, focusing user experience, and improving the user's Internet access experience and gradually attracting them to the web3.0 ecosystem. A standout feature of our product is its intuitive plug and play usability. Users do not need any technical knowledge and blockchain background. A user only needs to plug the device between the modem and the router, and gain benefit from the network security and privacy protection that our product provides, as well as network acceleration and fair mining. The user experience of our products is top notch. We did a product pre-sale on Indiegogo this year. In two months, we achieved 650,000 U.S. dollars in sales, surpassing 99.9% of Indiegogo projects. <br/>
+   The smartphone is a user's portal to the mobile Internet. It enabled an influx of massive user base into the mobile era of web2.0. Similarly, Deeper Connect is a home gateway product. Everyone in the house and all devices need to go online through this device. It can be regarded as a web3.0 portal. Deeper Connect can attract a large number of web2.0 users, and then let them seamlessly join the web3.0 revolution. The audience of most blockchain projects is limited to the blockchain community that accounts for an insignificant percentage of the total number of Internet users; the target audience of Deeper is all Internet users. <br/>
+   From a technical perspective, our Deeper Chain is implemented using Substrate. Deeper Connect can not only connect to the Deeper Chain, but also connect to any other public chain in the Polkadot ecosystem. Through a simple development process, a user interface for other public chain dApps can be provided. Deeper Connect is also a dApp Store. In the future, we will also support the plug-in mode and provide third-party developers with plug-in development APIs. Third-party developers can developed and distribute dApps in the dApp Store. The developers of these application-type public chains have since eliminated the work of acquiring users from scratch and developing a public chain client from scratch. In addition, the management background of our device integrates the function of a hardware wallet. Users can directly use the DPR token or other tokens in their wallets in these third-party dApps. Deeper Connect also has the security function of an enterprise-level firewall, which also provides a strong security guarantee for users' digital assets in the process of storage and use. <br/>
+   We are developing a hardware product with a cost of only US\$5, and we are confident that this product can bring millions of users to Polkadot.
+
+1. **Proof of Credit**
+   Proof of Credit (PoC) is a unique consensus mechanism introduced by Deeper Network. When users share their bandwidth, in addition to earning micropayments, users will also earn credits akin to the credit system in the real world. The design of PoC ensures the credit score update is secure against Sibil attack. An account can delegate its credit store to validator similar to PoS staking mechanism, and the account will be rewarded proportional to its credit score weight.
+
+1. **Decentralized credit system**
+   With the introduction of decentralized credit system, deeper network is essentially a financial system. The credit scores play several major roles: it secures the network through PoC consensus; it incentivizes users to contribute more to the p2p Deeper layer; it is used to govern the protocol; it can be used to develop a lot of applications pertaining to users’ credit scores similar to our real-world credit system.
