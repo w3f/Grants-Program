@@ -128,7 +128,7 @@ PAID Network, foresees the development of the PAID Smart Agreements Protocol in 
 ### Milestone 1 Example — Implement Plasm Modules 
 * **Estimated Duration:** 3 month
 * **FTE:**  1
-* **Costs:** 1.5 BTC
+* **Costs:** 1.3 BTC
 
 | Number |   Deliverable   | Specification |
 | ------------- | ------------- | ------------- |
@@ -136,10 +136,9 @@ PAID Network, foresees the development of the PAID Smart Agreements Protocol in 
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate Runtime Module and Plasm VM's. It will be possible to send and call test transactions and meta transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage of 95% to ensure functionality and robustness. In the guide we will describe how to run these tests, And after this a Bounty policy for error detection. | 
 | 1. | Substrate module: Builder Template and Instance of Smart Agreements | We will create a runtime module in substrate.io / PolkaDOT that will allow the creation of predesignated templates with the conditions (clauses) and events most common to the type of contract to which the template will be oriented, additionally, an instance of this template will be handled allowing its subsequent execution and follow-up of events in a way decentralized.  |  
-| 2. | Substrate module: Builder Digital Signature in `Chain of Trust` | We will create a runtime module in substrate.io that will allow the verification by a Certification Authority of the digital signature based in standard PKCS 12 to be used by Smart Agreements users, allowing PAID Smart Agreements within a `Chain of Trust` scheme, where the entire system, both hardware and software is insured and verified. Which will integrate in the future Zero Knowledge verification schemes.|  
-| 3. | Plasm module: Follow-up of Smart Agreements | We will create over Plasm network, Smart Contract like helpers that will allow monitoring of the variables events and functions defined in the PAID Smart Agreements, and verify with them and the interactions of the signature parties, the execution of the Smart Agreements, according to the pre-established conditions at the time of creation, keeping in At all times, a monitoring scheme completely auditable by the parties, or any higher instance, be it arbitration and / or court, as defined in the contract when creating it, which will be deployed in the Blockchain PolkaDOT, which is done by the solang compiler, which allows us to deploy contracts compiled in Multiples VM of Plasm Network to EVM as WASM contracts over Plasm Network compatible with Substrate.io / PolkaDOT. |  
-| 4. | External Module of Substrate | External support modules for the verification of credentials, proof of citizenship and utilities and services associated with the attestation of credentials in to **DID:PAID** Method. |
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our Protocol |
+| 2. | Substrate module (Privacy Layer): Builder Digital Signature in `Chain of Trust` | We will create a runtime module in substrate.io that will allow the verification by a Certification Authority of the digital signature based in standard PKCS 12 to be used by Smart Agreements users, allowing PAID Smart Agreements within a `Chain of Trust` scheme, where the entire system, both hardware and software is insured and verified. Which will integrate in the future Zero Knowledge verification schemes.|  
+| 3. | External Module of Substrate | External support modules for the verification of credentials, proof of citizenship and utilities and services associated with the attestation of credentials in to **DID:PAID** Method. |
+| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our Protocol |
 
 
 ## Future Plans
