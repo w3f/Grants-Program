@@ -12,8 +12,12 @@
 
 ### Overview
 Almost every substrate project has a need to process and query data. 
-SubQuery is a open-sourced tool to fill the blank of this area as a complete solution and should be core infrastructure for the Polkadot ecosystem.
+SubQuery is a open-sourced tool to fill the blank of this area as a complete solution and will become core infrastructure for the Polkadot ecosystem.
 We expect it to cover how to Extract, Transform, Persist, and Query data in the beginning and how to Connect and Present data in the future.
+
+Subquery is NOT an ETL tool, the persisted data is minimized and shaped from the perspective of how it will be used.
+
+Subquery aims to support all substrate-compatible networks.  
 
 ### Project Details 
 In this proposal, we provide a complete workflow to create a live data query system. 
@@ -27,8 +31,9 @@ In this proposal, we provide a complete workflow to create a live data query sys
 
 #### Step #2: Run an indexer
 Prerequisites
-* An archive node to extract chain data from
 * A postgres database
+* If storage query is used, then an archive node is required to extract chain data from, otherwise a non-archive full node can do. For archive node's endpoint people can use onfinality, free tier should be able to cover most of cases. 
+* A moderate computer to run indexer in the background
 
 Then start our `@subql/node` with the path of local subquery project as arguments, `@subql/node` will handle the rest.
 
@@ -43,14 +48,17 @@ Npmjs Packages to published:
 ### Ecosystem Fit 
 * [Hydra](https://github.com/Joystream/hydra)
 * [substrate-graph](https://github.com/playzero/substrate-graph)
+* other etl projects
+
 The original intentions are different and that leads to different technical decisions.
 * These two projects are both created by a substrate-based blockchain team in order to fulfill the needs of their own chains in the beginning and then they adapted them into standalone projects.
-* The motivation of us is to make a tool that solves query demands of all substrate blockchains right from the beginning. We also plan to then provide a hosted solution to lower the barriers of entry further. 
+* The motivation of us is to make a tool that solves query demands of all substrate blockchains right from the beginning. We also plan to then provide a hosted solution to lower the barriers of entry further.
 
 The differences:
 1. Secure execution of mapping functions are not top concerns for them, but is a hard requirement for us and will be supported in the proposal.
 2. We don't want to depend on 3rd party libs in the core code of the project, libs such as warthog used by Hydra.
 3. Api access within the mapping functions will be supported
+4. Our proposal aims for OLTP, and allowing customisation of indexing process which are different from etl like projects. The outcome of indexed data is shaped for the need of its specific user scenario and be consumed by browser and mobile apps. 
 
 ## Team :busts_in_silhouette:
 
@@ -98,12 +106,14 @@ Ian led a team and won 2nd price in the substrate hackathone in Hangzhou 2019.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | @subql/cli | We will create a npm package that can generate types, build and pack the subquery project. |
-| 2. | @subql/node | We will create a npm package that can load a subquery project and index the specified blockchain. |
-| 2.1 | @subql/node | will support block handler, call handler and event handler |
-| 2.2 | @subql/node | will use vm2 to create an isolated scope to execute mapping functions. And we will provide additional NetworkPolicy configs to strengthen the security further when run it in k8s.|  
+| 1. | @subql/cli | We will create @subql/cli that helps to generate types, build and pack the subquery project. To be specific, mapping functions will be compiled from .ts to .js and be packed into a single tarball file together with project manifest and graphql schema |
+| 2. | @subql/node | We will create @subql/node that can load a subquery project and index the specified blockchain. |
+| 2.1 | @subql/node | will support block handler `async function handlerFn(block: SignedBlock): Promise<void>`, call handler `async function handlerFn(extrinsic: Extrinsic): Promise<void>` and event handler `async function handlerFn(event: EventData): Promise<void>` |
+| 2.2 | @subql/node | call handler will support module and call_name filter, event handler will support event_name filter |
+| 2.3 | @subql/node | will use vm2 to create an isolated scope to execute mapping functions. And we will provide additional NetworkPolicy configs to strengthen the security further when run it in k8s.|  
 | 3. | Deploy | will provide a dockercompose file and kubernetes deploy yamls |
 | 4. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can create, run and serve their subquery project. |
+| 5. | Testing | Unit tests and integration tests for @subql/cli and @subql/node |
 
 ### Milestone 2
 * **Estimated Duration:** 2 weeks
@@ -112,7 +122,7 @@ Ian led a team and won 2nd price in the substrate hackathone in Hangzhou 2019.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | @subql/cli | We will create a npm package that can create scaffold of a subquery project. |
+| 1. | @subql/cli | A subcommand will be added to @subql/cli that can create scaffold of a subquery project, including a series of interactions that guide user step by step to complete customisation of project.yaml and create handlers of selected type. |
 | 2. | @subql/node | `@polkadot/api` will be accessible within the mapping functions and we will patch the api instance that be injected in the scope to lock storage queries to current processing block so that the indexing result will be deterministic. |
 | 3. | Deploy | will provide a dockercompose file and kubernetes deploy yamls |
 | 4. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can create, run and serve their subquery project. |
