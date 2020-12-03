@@ -8,7 +8,7 @@ PolkaOracle is to build a decentralized Oracle system with advanced technologies
 
 ## Project Details
 
-### the technology stack
+### The Technology Stack
 
 Request: Data requester, enabling the calls of PolkaOracle sequences in any way
 
@@ -20,7 +20,7 @@ Arbitrator: Verify data integrity and timeliness provided by oracle Node
 
 Validator: Built on the network established by Substrate, allows oracle node to broadcast proofs, supports the validity of Arbitrator mining values
 
-### protocols, architecture
+### Technology Architecture
 
 PolkaOracle is aiming to build a flexible, self-evolving oracle network based on Polkadot, providing applications or smart contracts with customized real-time on-chain data feeding services. PolkaOracle will adopt the Off-chain Workers architecture of the Substrate 2.0 to build an on-chain oracle system and is designed to be the parachain/parathread connecting to the Polkadot universe.
 
