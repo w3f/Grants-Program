@@ -2,7 +2,7 @@
 
 -   **Project:** Deeper Chain
 -   **Proposer:** [deeper.network](https://deeper.network)
--   **Payment Address:**
+-   **Payment Address:** 1ZgK8ic8gmVSS3jJUwLJiWHaK5rhZVppF
 
 ## Project Overview :page_facing_up:
 
