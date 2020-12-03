@@ -1,6 +1,12 @@
-# Deeper Network
+# Open Grant Proposal
 
-## Project Description
+-   **Project:** Deeper Network
+-   **Proposer:** [deeper-chain](https://github.com/e2chain-dev/deeper-chain)
+-   **Payment Address:**
+
+## Project Overview :page_facing_up:
+
+### Overview
 
 Deeper's vision is to combine network security, network sharing, and blockchain technology to create a safer, freer, and faster decentralized network. Our flagship product is called Deeper Connect. Its security protection, privacy protection, and network acceleration functions can significantly improve users’ Internet access experience. Deeper Network, a decentralized p2p network, is composed of thousands to millions of Deeper Connect devices. We are developing the following decentralized network services on Deeper Network:
 
@@ -16,7 +22,15 @@ Deeper's vision is to combine network security, network sharing, and blockchain 
 4. Decentralized gateway<br>
    Deeper Connect is a decentralized gateway to web3.0. True decentralization means that no single organization can dominate over the entire network. It also means that a single point of failure will affect the functioning of the entire network. Decentralized gateways, decentralized public chains, and decentralized applications. For example, Ethereum Network remains centralized at the gateway level and is overly dependent on the API interface services provided by Infura for major dApps. Infura itself relies on AWS cloud services provided by Amazon. This means that the Ethereum ecosystem cannot be uncoupled from centralized network structures and is not truly decentralized. This naturally lends itself to the pitfalls of centralized network structures. This is evident as the recent Infura downtime has led to the paralysis of most Ethereum dApps. Deeper, on the other hand, has achieved true decentralization on all levels: decentralized gateways, decentralized public chains, and decentralized applications.
 
-## Team members
+### Project Details
+
+### Ecosystem Fit
+
+Are there any other projects similar to yours? If so, how is your project different?
+
+## Team :busts_in_silhouette:
+
+### Team members
 
 -   Hui Liu
 -   Chao Ma
@@ -24,20 +38,21 @@ Deeper's vision is to combine network security, network sharing, and blockchain 
 -   Yi Cui
 -   Yang Liu
 
-## Team Website
+### Contact
+
+-   **Contact Name:** Chao Ma
+-   **Contact Email:** mc@deeper.network
+
+### Team Website
 
 [https://deepernetwork.io/](https://deepernetwork.io/)
 [https://deeper.network/](https://deeper.network/)
 
-## Team Code Repos
+### Legal Structure
 
-[deeper-chain](https://github.com/e2chain-dev/deeper-chain)
+-   **Registered Legal Entity:** Deeper Network Inc in CA, USA
 
-## Legal Structure
-
-Deeper Network Inc in CA, USA
-
-## Team's Experience
+### Team's Experience
 
 **Hui Liu**  
 Hui worked at Intel, Fortinet, and Palo Alto Networks, where he held positions such as R&D Manager and Chief Engineer. He brings more than ten years of experience in network security and operating system development. He spearheaded the development of the cloud firewall engine which still brings billions of dollars in annual revenue for the company.
@@ -54,13 +69,17 @@ Yi earned his PhD degree in Computer Science. He worked on Network Infrastructur
 **Yang Liu**
 Yang worked at Bytedance, Alibaba, Windriver, and has working experience in cloud infrastructure, operating system and embedded system.
 
-## Development Roadmap
+### Team Code Repos
+
+[deeper-chain](https://github.com/e2chain-dev/deeper-chain)
+
+## Development Roadmap :nut_and_bolt:
 
 ### M1: Micropayments – 4 weeks
 
 | Number | Deliverable          | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ------ | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0a.    | License              | GPLv3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| 0a.    | License              | Apache 2.0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | 0b.    | Description          | For our testnet, we use one-way micropayment protocol. There are 2 parties: Sender and Receiver. There are 3 steps: Sender open a channel; sender sends accumulated micropayments to receiver; Receiver closes a channel or the channel closed after expiration. When sending the accumulated micropayments, the sender will sign the following data: (receiver, address, nonce, sessionId, accumulateAmount). Each time a new (sender, receiver) channel is opened, nonce is increased by 1 to avoid replay attack. sessionId represents one unique session inside one channel. When a channel is open/active, it can contains multiple sessions. The receiver can only claim once for each unique (nonce,sessionId) pair. |
 | 0c.    | Testing Guide        | The tests will verify the basic functionalities like opening channels, sending micropayments, claiming payments, and closing channels. 1. Opening channels: verify that sender has enough balance to reserve and the channels are unique; 2. Sending micropayments: verify that receiver info and payment amount is correct, the payment is indeed signed by sender, and sender has enough reserved balance. Verify that micropayments are received in each service period; 3. Claiming payments: Verify that balance transfer is submitted on chain; 4. Closing channels: only receiver can close the channel. Clear any outstanding micropayment balances and free reserved balance of sender.                            |
 | 0d.    | Language/Framework   | Rust/Substrate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
