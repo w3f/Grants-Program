@@ -63,6 +63,59 @@ A concise demonstration of PolkaOracle's workflow is as follows：
 
 4\) For application users, they can simplify the data feeding process and increase the data transmission speed by deploying sub-contracts and being added to the list of Sub-contract by the community through voting.
 
+## Runtime Modules/Chains
+
+### Applies to
+
+- Building/extending a Substrate pallet
+    
+    - parity-scale-codec
+    - parking_lot
+    - alt_serde
+    - serde_json
+    - frame-support
+    - frame-system
+    - sp-core
+    - sp-io
+    - sp-runtime
+    - sp-std
+
+### Requirements
+
+- List the publicly exposed methods
+
+    - `pub fn submit_number_signed(origin, number: u64) -> DispatchResult;`
+
+    - `pub fn submit_number_unsigned(origin, number: u64) -> DispatchResult;`
+
+    - `pub fn submit_number_unsigned_with_signed_payload(origin, payload: Payload<T::Public>,_signature: T::Signature) -> DispatchResult;`
+
+    - `fn offchain_worker(block_number: T::BlockNumber);`
+
+- Runtime Storage
+
+    ```rust
+    decl_storage! {
+        trait Store for Module<T: Trait> as Example {
+            Numbers get(fn numbers): VecDeque<u64>;
+        }
+    }
+    ```
+
+### Development Tools
+
+- Applies to
+
+    - IDE / IDE plugin
+
+        VS code
+
+- Requirements
+
+    - programming language
+
+        Rust
+
 ## Use Cases of PolkaOracle Data Infrastructure
 
 Through the PolkaOracle to obtain timely and reliable events outside the insured chain, blockchain-based decentralized insurance can realize automatic payment of insurance such as flight delay insurance.
