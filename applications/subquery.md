@@ -122,7 +122,7 @@ Ian led a team and won 2nd price in the substrate hackathone in Hangzhou 2019.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | @subql/cli | A subcommand will be added to @subql/cli that can create scaffold of a subquery project, including a series of interactions that guide user step by step to complete customisation of project.yaml and create handlers of selected type. |
+| 1. | @subql/cli | A subcommand will be added to @subql/cli that can create scaffold of a subquery project, including a series of interactions that guide user step by step to complete customisation of project.yaml and create handlers of selected type. The generated subquery project will have sufficient code comments and instructions in README.md so people can easily start work on. |
 | 2. | @subql/node | `@polkadot/api` will be accessible within the mapping functions and we will patch the api instance that be injected in the scope to lock storage queries to current processing block so that the indexing result will be deterministic. |
 | 3. | Deploy | will provide a dockercompose file and kubernetes deploy yamls |
 | 4. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can create, run and serve their subquery project. |
