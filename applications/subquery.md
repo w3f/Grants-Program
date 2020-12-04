@@ -98,7 +98,7 @@ Ian He led a team and won 2nd price in the substrate hackathon in Hangzhou 2019.
 ### Overview
 * **Total Estimated Duration:** 1.5 month
 * **Full-time equivalent (FTE):**  2
-* **Total Costs:** 1.8
+* **Total Costs:** 1.75
 
 ### Milestone 1
 * **Estimated Duration:** 1 month
@@ -109,7 +109,7 @@ Ian He led a team and won 2nd price in the substrate hackathon in Hangzhou 2019.
 | ------------- | ------------- | ------------- |
 | 1. | `@subql/cli` | We will create `@subql/cli` that helps to generate types, builds, and packs the SubQuery project. To be specific, mapping functions will be compiled from .ts to .js and will be packed into a single tarball file together with project manifest and GraphQL schema |
 | 2. | `@subql/node` | We will create `@subql/node` that can load a SubQuery project and index the specified blockchain. |
-| 2.1 | `@subql/node` | will support block handler `async function handlerFn(block: SignedBlock): Promise<void>`, call handler `async function handlerFn(extrinsic: Extrinsic): Promise<void>` and event handler `async function handlerFn(event: EventData): Promise<void>` |
+| 2.1 | `@subql/node` | will support block handler `async function handlerFn(block: SignedBlock): Promise<void>`, call handler `async function handlerFn(extrinsic: Extrinsic): Promise<void>` and event handler `async function handlerFn(event: EventData): Promise<void>` from the SubQuery project that user provided.|
 | 2.2 | `@subql/node` | The call handler will support `module` and `call_name` filter. The event handler will support `event_name` filter |
 | 2.3 | `@subql/node` | We will use vm2 to create an isolated scope to execute mapping functions, and we will provide additional NetworkPolicy configs to strengthen the security further when run it in K8s.|  
 | 3. | Deploy | We will generate a dockercompose file and Kubernetes deploy YAMLs |
@@ -119,7 +119,7 @@ Ian He led a team and won 2nd price in the substrate hackathon in Hangzhou 2019.
 ### Milestone 2
 * **Estimated Duration:** 2 weeks
 * **FTE:**  2
-* **Costs:** 0.6 BTC
+* **Costs:** 0.55 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -128,6 +128,7 @@ Ian He led a team and won 2nd price in the substrate hackathon in Hangzhou 2019.
 | 3. | Deploy | We will provide a dockercompose file and Kubernetes deploy YAML |
 | 4. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can create, run and serve their SubQuery project. |
 | 5. | Examples | We will list and provide new users access to example SubQuery projects |
+| 6. | Testing | Unit tests and integration tests for @subql/cli and @subql/node |
 
 
 ### Community engagement
