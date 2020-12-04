@@ -94,7 +94,7 @@ smart contracts and Toshify is another DEFI platform that is currently working o
 
 | No. | Deliverable               | Specification |
 | ----|-------------------------- | ------------- |
-| 0a. | License                   | MIT |
+| 0a. | License                   | Apache/MIT |
 | 0b. | Documentation             | Develop Github wiki providing detailed tutorial that explain how user can use Wrapp3d LTC bridge alongwith Architecture for creating this module. |  
 | 1a. | Infrastructure Development|  |
 | 1b. | Wrapp3d LTC Smart Contract| Code and deploy Wrapp3d Litecoin Smartcontract on ERC20 Standard including mint, burn, transfer, permissionless function.   |
