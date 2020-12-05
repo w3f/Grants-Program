@@ -15,7 +15,7 @@ Shadows network will strive to become one of the Polkadot parachains by particip
 Most of our team members come from first-line Internet companies, cryptocurrency wallet companies and cryptocurrency exchanges. They have participated in the development of multiple blockchain projects and have in-depth research and accumulation of blockchain technology. We have developed many dapps based on Ethereum. Due to the limitations of Ethereum itself, many of our ideas cannot be implemented and realized on Ethereum. We have done in-depth research on Polkadot and Substrate technology, Polkadot's cross-chain technology, parachain slot, governance model, etc. We believe that Polkadot is one of the most advanced technologies and concepts at present. What Shadows Network wants to do is to synthesize assets into the blockchain, so that everyone can truly control their assets and realize asset security and asset transaction security.
 
 ### Project Details 
-![](/Users/linmingchang/shadows.network/shadowsExchange.png)
+![](https://raw.githubusercontent.com/ShadowsNetwork/document/main/images/shadowsExchange.png)
 
 The Shadows Network architecture design includes: DOS、MintX、Exchanges、Fee Pool、Debt Pool、Liquidation and Off-chain Workers.
 
