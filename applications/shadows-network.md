@@ -115,7 +115,7 @@ We expect that the entire project will be split into two grants. The first grant
 
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  5
-* **Total Costs:** 1.8 BTC
+* **Total Costs:** 1.35 BTC
 
 ### Milestone 1 — Implement Substrate MintX&Ingester Module
 
@@ -123,7 +123,7 @@ In this milestone, we developed the MintX module and the Ingester module. MintX 
 
 * **Estimated Duration:** 1.6 month
 * **FTE:**  3
-* **Costs:** 1 BTC
+* **Costs:** 0.7 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -141,7 +141,7 @@ At this milestone, we developed the exchange module. The first milestone has bee
 
 - **Estimated Duration:** 1.4 month
 - **FTE:**  3
-- **Costs:** 0.8 BTC
+- **Costs:** 0.65 BTC
 
 | Number | Deliverable                | Specification                                                |
 | ------ | -------------------------- | ------------------------------------------------------------ |
