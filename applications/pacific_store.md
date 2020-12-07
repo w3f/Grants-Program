@@ -1,6 +1,6 @@
 # Open Grant Proposal
 
-- **Project:** OpenSea
+- **Project:** OpenSea.js on polkadot
 - **Proposer:** vlbos
 - **Payment Address:** 1NpKNwNSAdoVgwD4XXwe8caLheZRVrFVBL
 
@@ -70,14 +70,9 @@ The simplest way to leverage OpenSea is through the OpenSea frontend portal crea
 
 - An overview of the technology stack to be used
 
-* React Native
 * Node.js
 * Polkadot-js/api
 * substrate-developer-hub/substrate-node-template
-* canvas-ui
-* canvas-node
-* ink
-* paritytech/frontier
 * Polkadot
 * Kusama
 
