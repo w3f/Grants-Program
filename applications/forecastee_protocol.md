@@ -1,8 +1,8 @@
 # Forecastee Protocol
 
 * **Project:** Forecastee Protocol
-* **Proposer:** GitHub ranneen
-* **Payment Address:** 13HWsydyoPDuqS32xkmn3cb58VLz7Db6kf
+* **Proposer:** GitHub [ranneen](https://github.com/ranneen)
+* **Payment Address:** bc1q6529rpexu36y37fhr2g2usmzak0x07x7d554et
 
 ## Project Overview :page_facing_up: 
 Forecastee Protocol is a decentralized oracle for prediction markets via betting.
@@ -76,11 +76,11 @@ SRE, aiming to take an extensive stab at blockchains. Prior to that, I was with 
 | 1. | enhance orderbook | We will enhance the orderbook to support partial order fulfillment. |
 | 2. | solve market settlement | Once a market’s underlying event occurs, the outcome will be determined in order for the market to finalize the market settlement. Only amout of authorized accounts is  allowed to report the actual real-world outcome of the event at the stage. |
 | 3. | deliver shares of market participant | We will implement delivery mechanism of outcome tokens purchased on the  protocol. |
-| 4. | tutorial of prediction market contract | We will provide detailed tutorial how to interact with the protocol |
+| 4. | tutorial of prediction market contract | We will provide detailed tutorial how to interact with the protocol. In this milestone the user can use [polkajs](https://polkadot.js.org/apps/) developer tab to sign transaction and query state from the deployed contract. |
 
 ## Future Plans
 The Forecastee protocol needs a trustless way to report real world event. We need an  profit-motivation incentive mechanism to allow anynone to report event result to the protocol.
 
 As Forecastee is a general protocol to create all kinds of market. We plan to provide other market types except for the Y/N option.
 
-The Forecastee also need a dapp client to interact with protocol smart contract via user wallet.
+The Forecastee also need a dapp client to interact with protocol smart contract via user wallet. We may develop a web application from polkajs library to interact with deployed contract.
