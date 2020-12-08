@@ -132,7 +132,9 @@ In this milestone, we developed the MintX module and the Ingester module. MintX 
 | 2. | Testing Guide | provide test suite (mock and test files) for the MintX and Ingester describing how the module can be tested. |
 | 3. | Substrate module: MintX | We will create a Substrate module MintX. DOS holders can mint xUSD by stake DOS. And Debt Pool is also implemented in the MintX module. |
 | 4. | Substrate module: Ingester | We will create a Ingester module that is a off-chain worker used to query and/or process off-chain data. |
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain with MintX  and Ingester moudle. |
+| 5. | Tutorial | We will write an tutorial about how to use MintX & Ingester. |
+| 6. | Testing | The code will have proper unit-test coverage to ensure functionality and robustness. |
+| 7. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain with MintX  and Ingester moudle. |
 
 
 ### Milestone 2 — Implement Substrate Exchange Module
@@ -148,7 +150,9 @@ At this milestone, we developed the exchange module. The first milestone has bee
 | 0.     | License                    | Apache 2.0                                                   |
 | 1.     | Documentation              | Instructions and examples for use Exchange.                  |
 | 2.     | Testing Guide              | provide test suite (mock and test files) for the exchange describing how the module can be tested. |
-| 4.     | Substrate module: Exchange | We will create a exchange module that will be used to trade synthetic assets. And Fee Pool is also implemented in the Exchange module. |
+| 4.     | Substrate module: Exchange | We will create a exchange module that will be used to trade synthetic assets. And Fee Pool is also implemented in the Exchange module.5. |
+| 5.     | Tutorial                   | We will write an tutorial about how to use MintX & Ingester. |
+| 6.     | Testing                    | The code will have proper unit-test coverage to ensure functionality and robustness. |
 | 7.     | Docker                     | We will provide a dockerfile to demonstrate the full functionality of our chain with Exchange module |
 
 ## Future Plans
