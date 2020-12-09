@@ -52,8 +52,8 @@ request such a review.
 * [Kasper Mai Jørgensen](https://github.com/KasperJor)
 * [Bill Laboon](https://github.com/laboon)
 * [Rouven Pérez](https://github.com/RouvenP)
-* [Fatemeh Shirazi](https://github.com/FatemeShirazi) 
 * [Reto Trinkler](https://github.com/retotrinkler)
+* [Benjamin Weiß](https://github.com/BenWhiteJam)
 * [Gavin Wood](https://github.com/gavofyork)
 
 **W3F Grants Evaluators**
