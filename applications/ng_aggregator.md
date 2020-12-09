@@ -33,35 +33,35 @@ Therefore, we ask the teams to submit (where relevant):
 ![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/portfolio.jpeg?raw=true)
 
 * API specifications of the core functionality
+  * Account Management**
+  * Wallet Management
+    * MetaMask
+    * WalletConnect
+  * Market Data Display
+    * Wallet Token
+    * Defi Staking Info
+    * Reward Info
+  * Defi Management 
+    * Lend / Borrow / Trade/ Stake
 
-** Account Management
-** Wallet Management
-*** MetaMask
-*** WalletConnect
-** Market Data Display
-*** Wallet Token
-*** Defi Staking Info
-*** Reward Info
-** Defi Management 
-*** Lend / Borrow / Trade/ Stake
 (More Details in core protocols section)
 
 * An overview of the technology stack to be used
 
-** NicksPallet
-** FRAME pallets Interaction
-** RPC Servers Configuration
-** Runtime Rust Code
-** Gafana/Prometheus Visualization
+  * NicksPallet
+  * FRAME pallets Interaction
+  * RPC Servers Configuration
+  * Runtime Rust Code
+  * Gafana/Prometheus Visualization
 
 * Documentation of core components, protocols, architecture etc. to be deployed
 ![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/layers.png?raw=true)
 
-** Portfolio Dashboard of Asset Management
-** Security Wallet Access
-** Market Integration (Coingecko, Dune Analytics)
-** Swap Integration (Uniswap, Curv)
-** Defi Integration (AAVE, Compound, Maker, Synthetix,)
+  * Portfolio Dashboard of Asset Management
+  * Security Wallet Access
+  * Market Integration (Coingecko, Dune Analytics)
+  * Swap Integration (Uniswap, Curv)
+  * Defi Integration (AAVE, Compound, Maker, Synthetix,)
 
 
 ### Ecosystem Fit 
