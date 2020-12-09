@@ -100,15 +100,15 @@ There will be 3 milestones with each milestone lasting for one month. The InPolk
 
 * **M2: We will apply and develop particular implementations;**
 
-1. ORACLE: OCW building price repository
+- ORACLE: OCW building price repository
 
-2. iUSD: stable currency assets
+- iUSD: stable currency assets
 
-3. Collateral pool, CDP: acceptance of assets (BTC, ETH, dot)
+- Collateral pool, CDP: acceptance of assets (BTC, ETH, dot)
 
-4. Cost and risk model: regulating iusd price, etc
+- Cost and risk model: regulating iusd price, etc
 
-5. test and tutorial
+- test and tutorial
 
 - We will implement runtime modules to support the main functionalities
 
