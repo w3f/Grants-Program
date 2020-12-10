@@ -8,7 +8,9 @@
 ### Overview
 #### Introduction
 SubGame is a decentralized game platform. There are a large number of game templates running on the platform, so that participants can quickly start the game. The NPOS consensus mechanism is adopted to ensure the fairness of the entire platform. After the mainnet is launched, community autonomy allows the entire ecosystem Cycle forward.
-SubGame will also provide a friendly game front end, allowing players to enjoy the joy of the game.The early stage will be based on quiz and probability game templates. For example, you can choose a random factor to create a guessing game and play with your friends. You can also play World Cup quiz with your own friends, and of course you can also buy lottery tickets on it. The above games all exist as templates, you can start the game or participate in other people’s games
+SubGame will also provide a friendly game front end, allowing players to enjoy the joy of the game.
+
+The early stage will be based on quiz and probability game templates. For example, you can choose a random factor to create a guessing game and play with your friends. You can also play World Cup quiz with your own friends, and of course you can also buy lottery tickets on it. The above games all exist as templates, you can start the game or participate in other people’s games
 #### Integration
 SubGame is based on the Substrate 2.0 Framework. Substrate's powerful non-fork upgrade solution will provide more help to the changing game platform. We will also use OCW to introduce more game random factors. SubGame will serve as a parachain , To provide more possibilities for the entire Polkadot ecology
 #### Team Interest
