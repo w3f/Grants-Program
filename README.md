@@ -49,10 +49,10 @@ request such a review.
 * [Marcin Górny](https://github.com/mmagician)
 * [Robert Hambrock](https://github.com/Lederstrumpf)
 * [David Hawig](https://github.com/Noc2)
-* [Kasper Mai Jørgensen](https://github.com/KasperJor)
 * [Bill Laboon](https://github.com/laboon)
 * [Rouven Pérez](https://github.com/RouvenP)
 * [Reto Trinkler](https://github.com/retotrinkler)
+* [Björn Wagner](https://github.com/bjornwgnr)
 * [Benjamin Weiß](https://github.com/BenWhiteJam)
 * [Gavin Wood](https://github.com/gavofyork)
 
