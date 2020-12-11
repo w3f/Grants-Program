@@ -16,7 +16,7 @@ Completion dates subject to change to account for grant start date.
 API documentation is available under https://app.blockdaemon.com/docs and the REST API specification is at https://ubiquity.docs.blockdaemon.com.
 
 ### Ecosystem Fit 
-Projects providing similar features are Trust Wallet blockatlas (https://github.com/trustwallet/blockatlas) and Coinbase Rosetta (https://github.com/coinbase/rosetta-specifications).
+Projects providing similar features are Trust Wallet's blockatlas (https://github.com/trustwallet/blockatlas) and Coinbase's Rosetta (https://github.com/coinbase/rosetta-specifications).
 
 ## Team :busts_in_silhouette:
 
@@ -34,7 +34,7 @@ Projects providing similar features are Trust Wallet blockatlas (https://github.
 * **Registered Legal Entity:** 1 Grants Row, Dublin 2, D02 HX96, Ireland
 
 ### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+Our Founder and CEO, Konstantin Richter, started Blockdaemon with a small team of engineers in late 2017.  Since then, we’ve grown to about 30 people and expanded across 6 countries.  We’re about 80% of our team are engineers and have been working together for almost 3 years.  We’re constantly looking for new opportunities to grow and expand existing relationships with protocols we currently support.
 
 ### Team Code Repos
 * https://github.com/terorie
