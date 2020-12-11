@@ -48,11 +48,30 @@ Therefore, we ask the teams to submit (where relevant):
 
 * An overview of the technology stack to be used
 
-  * NicksPallet
-  * FRAME pallets Interaction
-  * RPC Servers Configuration
-  * Runtime Rust Code
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/substrade.jpeg?raw=true)
+
+  * Base
+    * Implementation of node in Rust based on the Substrate framework
+    * Implementation of the Parity Substrate for runtime environment
+
+  * Contracts
+    * Implementation of Contracts pallet for the runtime to deploy and execute WebAssembly smart-contracts.
+    * Implementation of FRAME EVM pallet to allow unmodified EVM code to be executed in a Substrate-based blockchain.
+    * Use ink! for writing Wasm smart contracts
+
+  * User-Interfacing Application  
+    * Implementation of canvas-ui for allowing access to all features available on Substrate chains basing on 
+    * Apply follow FRAME to develop Substrate pallets:
+      * Use Assets pallet to deal with fungible assets
+      * Use Authorship pallet tracks the block and recent uncles
+      * USe Balances pallet for handling accounts and balances.
+      * Use NicksPallet for keeping track of account names on-chain
+
   * Gafana/Prometheus Visualization
+    * Use Prometheus for recording numeric time series of highly dynamic service-oriented architectures for crypto market data, since its support for multi-dimensional data collection and querying is a particular strength.
+    * Prometheus stores all scraped samples locally and runs rules over this data to either aggregate and record new time series from existing data or generate alerts. Grafana will used to visualize the collected data in Wallet Portfolio Page.
+
+  ![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/prometheus_architecture.png?raw=true)
 
 * Documentation of core components, protocols, architecture etc. to be deployed
 ![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/layers.png?raw=true)
@@ -71,7 +90,7 @@ YFI & YFII
 
 ### Team members
 * Name of team leader: Nick Qi
-* Names of team members: William B. , UXMC
+* Names of team members: William B.
 
 ### Contact
 * **Contact Name:** Nick Qi
@@ -91,8 +110,8 @@ YFI & YFII
   * Founder of NextGenius Community, with more than 80 Meetups held in Sydney, Australia since 2013, covering topics from Web 2.0, Digital Transformation, Artificial Intelligence, Machine Learning, to nowadays FinTech & Blockchain.
  
  
-* William B. (UXMC Certified) specialises in the DeFi industry with a background in the Wealth and Global banking industries.
-
+* William B. (UXMC Certified) 
+  * specialises in the DeFi industry with a background in the Wealth and Global banking industries.
   * Ex-Senior Product Designer at the World’s Leading Crypto Exchange (2019-2020). Working on Mobile app redesign, Trade & Finance team mentor and New User Onboarding/Education journeys for mass adoption of millions of users trading over 9 Billion USD daily volume. Previous Design Lead for Electra Protocol (2018) and Rapids Network (2019). 
   * Ex-Senior Manager, Strategic Design for Standard Chartered Bank, AME Region (2017-2019). 
   * Ex-Senior Consultant in Deloitte (2014-2016) within large agile cross-functioning teams across complex strategic design programs led with a Lean start up and Human-Centred Design approach to digital transformation for AMP financial services company. 
@@ -134,8 +153,10 @@ To assist you in defining it, we created a document with examples for some grant
 | 0b. | Mobile App | We will provide GitHub code, Apple Testflight Invitation and a basic tutorial that explains how a user can interact the defi aggregator application.  |
 | 0c. | Testing Guide | The code will have unit-test coverage (70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | User Profile | We will create a Substrate module that to create, modify and delete user account. |  
-| 2. | Defi Gateway | We will create a Substrate module that will access Defi Protocols |  
-| 3. | Token Swap | We will create a Substrate module that will execute token swap |  
-| 4. | Substrate chain | Above Modules of our custom chain will interact in substrate chain through front end pallets to frame pallets, RPC, Runtime and Gafana Visualization |  
-| 5. | Docker & AWS | We will provide a dockerfile and cloud service end points to demonstrate the full functionality of our application |
+| 1. | UI design                        | The UI of the Aggregator Wallet is designed to provide good user experience |
+| 2. | Wallet constructure design       | The constructure design of the wallet. The APP contains local storage strategy, broadcast node management, multi-coins management and defi services integration. The server will provide API interface in charge of obtaining market data, integration interface data, transaction records, transaction status and other information |
+| 3. | User Profile | We will create a Substrate module that to create, modify and delete user account. |  
+| 4. | Defi Gateway | We will create a Substrate module that will access Defi Protocols |  
+| 5. | Token Swap | We will create a Substrate module that will execute token swap |  
+| 6. | Substrate chain | Above Modules of our custom chain will interact in substrate chain through front end pallets to frame pallets, RPC, Runtime and Gafana Visualization |  
+| 7. | Docker & AWS | We will provide a dockerfile and cloud service end points to demonstrate the full functionality of our application |
