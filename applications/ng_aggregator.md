@@ -85,16 +85,18 @@ YFI & YFII
 ### Team's experience
 
 * Nick Qi
-Experienced tech lead with a demonstrated working experience in Education(UNSW, Western Sydney Uni, Sydney Uni), Health Care(PoW Hospital), Finance(Deloitte), and Public Sectors(Transport NSW, Defence), have extensive experience in establishing technology-based companies become successful enterprises.
-Skilled in Solution Design and Application Architecture with Python, React, Node, Tensorflow, Spark, Salesforce, ServiceNow, IBM Watson and AWS Stack.
-Strong Engineering and R&D background with a IT Master from UNSW, and current eLearning Platform Researcher in UTS.
-Founder of NextGenius Community, with more than 80 Meetups held in Sydney, Australia since 2013, covering topics from Web 2.0, Digital Transformation, Artificial Intelligence, Machine Learning, to nowadays FinTech & Blockchain.
+  * Experienced tech lead with a demonstrated working experience in Education(UNSW, Western Sydney Uni, Sydney Uni), Health Care(PoW Hospital), Finance(Deloitte), and Public Sectors(Transport NSW, Defence), has extensive experience in establishing technology-based companies become successful enterprises.
+  * Skilled in Solution Design and Application Architecture with Python, React, Node, Tensorflow, Spark, Salesforce, ServiceNow, IBM Watson and AWS Stack.
+  * Strong Engineering and R&D background with a IT Master from UNSW, and current eLearning Platform Researcher in UTS.
+  * Founder of NextGenius Community, with more than 80 Meetups held in Sydney, Australia since 2013, covering topics from Web 2.0, Digital Transformation, Artificial Intelligence, Machine Learning, to nowadays FinTech & Blockchain.
  
  
-* William B. , UXMC
-Ex Senior Product Designer at the World’s Leading Crypto Exchange Binance. Working on Mobile app redesign, Trade & Finance team mentor and New User Onboarding/Education journeys for mass adoption of millions of users trading over 9 Billion USD daily volume.
-Ex Senior Consultant in Deloitte within large agile cross-functioning teams across complex strategic design programs led with a Lean start up and Human-Centred Design approach to digital transformation for AMP financial services company.
-Ex Lead Mobile UX/UI Designer of Yahoo US Team
+* William B. (UXMC Certified) specialises in the DeFi industry with a background in the Wealth and Global banking industries.
+
+  * Ex-Senior Product Designer at the World’s Leading Crypto Exchange (2019-2020). Working on Mobile app redesign, Trade & Finance team mentor and New User Onboarding/Education journeys for mass adoption of millions of users trading over 9 Billion USD daily volume. Previous Design Lead for Electra Protocol (2018) and Rapids Network (2019). 
+  * Ex-Senior Manager, Strategic Design for Standard Chartered Bank, AME Region (2017-2019). 
+  * Ex-Senior Consultant in Deloitte (2014-2016) within large agile cross-functioning teams across complex strategic design programs led with a Lean start up and Human-Centred Design approach to digital transformation for AMP financial services company. 
+  * Ex-Lead Mobile UX/UI Designer of Yahoo US Team.
 
 
 ### Team Code Repos
