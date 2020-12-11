@@ -27,9 +27,9 @@ Lloyd Protocol contain those module.
 
 * risk assess module
   * policy-holder project register.
-    * a one-week survey
     * project name, project description protect assets trigger payment
   * risk assessor submit project audit results
+    * a one-week survey
   * risk assessor  generate a market and pledge tokens.
 * risk assessor manager.
   * risk assessor register
@@ -74,20 +74,21 @@ Lloyd Protocol will provide the security guarantee for the forthcoming slot auct
 ### Milestone 1 — Implement risk assess module
 * **Estimated Duration:** 3 weeks
 * **FTE:**  1.5
-* **Costs:** 0.5 BTC
+* **Costs:** 0.6 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 license |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how  policy-holder register and risk assessor inspect project and pledge tokens which generate a market, all holders of token can participate market. |
 | 0c. | Testing Guide | The code will have proper unit-test to ensure functionality and robustness. we will describe how to run these tests |
-| 1. | implement basic risk assess pallet | We will implement a general module in pallet, it contain policy-holder project register, risk assessor may need to listen for registration events, then risk assessor submit project audit result, risk assessor generate a market and pledge the corresponding token according to the audit result. |
+| 1. | implement basic risk assess pallet | We will implement a general module in pallet, it contain policy-holder project submit, risk assessor may need to listen for submiting events, then risk assessor submit project audit result and generate a market and pledge the corresponding token according to the audit result. |
+| 2. | example for demonstration | Provide a example using substrate-front-end-template interaction with substrate chain |
 
 ### Milestone 2 — Insurance market and claims proposal
 
 * **Estimated Duration:** 8 weeks
 * **FTE:**  1.5
-* **Costs:** 0.9 BTC
+* **Costs:** 0.8 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
