@@ -98,15 +98,18 @@ Yang worked at Bytedance, Alibaba, Windriver, and has working experience in clou
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-* **Total Estimated Duration:** 1 month
-* **Full-time equivalent (FTE):**  5 FTE.
-* **Total Costs:** 1.65 BTC
+
+-   **Total Estimated Duration:** 1 month
+-   **Full-time equivalent (FTE):** 5 FTE.
+-   **Total Costs:** 1.65 BTC
+
+In this application, the deliverable is the micropayment pallet, the client codes and tutorial documents. A user can use the code base included in the deliverable together with our software (atomos) or hardware (deeper connect). In the next phases/applications, we will add Proof of Credit and light node discovery pallets as well as their corresponding client codes.
 
 ### M1: Micropayments – 4 weeks
 
-* **Estimated Duration:** 4 weeks
-* **FTE:**  5
-* **Costs:**  1.65 BTC
+-   **Estimated Duration:** 4 weeks
+-   **FTE:** 5
+-   **Costs:** 1.65 BTC
 
 | Number | Deliverable          | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ------ | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
