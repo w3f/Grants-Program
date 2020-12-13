@@ -103,7 +103,7 @@ Yang worked at Bytedance, Alibaba, Windriver, and has working experience in clou
 -   **Full-time equivalent (FTE):** 5 FTE.
 -   **Total Costs:** 1.65 BTC
 
-In this application, the deliverable is the micropayment pallet, the client codes and tutorial documents. A user can use the code base included in the deliverable together with our software (atomos) or hardware (deeper connect). In the next phases/applications, we will add Proof of Credit and light node discovery pallets as well as their corresponding client codes.
+In this application, the deliverables are the micropayment pallet, the client codes and tutorial document. The micropayment pallet contains all the necessary functions for a user to interact with the blockchain including open channel, close channel, claim micropayments etc. The client codes contains two parts: one is for a user to interact with blockchain, the other is for a user to interact with another user. The micropayment design, use cases as well as detailed examples will be given in the totorial document. In the next phases/applications, we will add Proof of Credit and light node discovery pallets as well as their corresponding client codes.
 
 ### M1: Micropayments – 4 weeks
 
