@@ -1,86 +1,90 @@
 # Open Grant Proposal
 
-> This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
-
-* **Project Name:** Name of your project (e.g. DuoSwap Module)
-* **Team Name:** Legal name of your team (e.g. Duo)
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
-
-*The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
+* **Project Name:** bitCheck Protocol
+* **Team Name:** Shareblock
+* **Payment Address:** 3PCvRgrCEADki6zqG4XMJrLkSu6L2PSbsT
 
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
 
 ### Overview
 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+BitCheck is a decentralized finance (DeFi) protocol based on blockchain. Through bitCheck protocol, both sides of transaction can conveniently make decentralized guaranteed payment and solve the problem of mutual distrust between buyers and sellers while they do online transactions. Anybody can use this protocol to build a decentralized e-commerce and e-payment scenario, like OTC crypto-marketplace, Freelance marketplace, etc.
+
+Now, bitCheck has been deployed on Ethereum/Tron and supports USDT/DAI/ETH/WBTC etc. 
+
+Check the contract repo for Ethereum: https://github.com/bitcheck/contracts_ethereum
+
+and contract repo for Tron: https://github.com/bitcheck/contracts_tron
+
+**Reasons why we are interested in creating this project on Polkadot:**
+
+BitCheck protocol has been developed for 5 months on Ethereum, we have met the following dificulties:
+
+* High gas stop a lot of user to make payment on Ethereum.
+
+* We have succeed to use zero-knowledge to protect private information while making payment, such as sender, recipient and amount. But heavy data storage in Merkle-tree on-chain and Verifier smart contract increases the Gas fee even higher than 1M. We have tried some new algorithm but can not satisfy the users. Then we have to migrate to TRON for the moment and canceled privacy protection based on zk.
+Anyhow, we still keep the zero-knowledge version and have opend contract and cient-size source code. (Smart contract of zk version: https://github.com/bitcheck/contracts_zk_eth, source code of client-side: https://github.com/bitcheck/client-zk-eth)
+
+* Our application is a decentralized payment tools, it must support almost all cryptocurrencies on different chains. Cross-chain is the most important tech for this project.
+
+* In order to solving the difficulties above mentioned, we started to study other public chains except Ethereum, such as oasis, NEAR, Cosmos and Polkadot. Finally we found only Polkadot + Substrate can solved all the problems.
 
 ### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
 
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
+As this protocol has been deployed on Ethereum, please check the DAPP url as following:
+* Rinkeby on Ethereum: https://rinkeby.bitcheck.app
+* Mainnet on Ethereum: https://eth.bitcheck.app
+* Zero-knowledge mixer on Ethereum: https://zk.bitcheck.app
+
+We will keep the similar UI and functions as Ethereum, but will re-build this project on Polkadot by substrate.
 
 ### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
+We have not found similar projects in Polkadot ecosystem. Also there is no payment system like bitCheck in Ethereum ecosystem. 
+
+The most similar project in Ethereum is Sablier, but Sablier don't support privacy protection and complicated arbitration of dispute between parties. 
+
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
-* Names of team members	
+* Name of team leader: Jacky Gu
+* Names of team members: LiXin, Luo Chuan, Guodong Ren
 
 ### Contact
-* **Contact Name:** Full name of the contact person (e.g. John Brown)
-* **Contact Email:** Contact email (e.g. john@duo.com)
-* Website
+* **Contact Name:** Jacky Gu
+* **Contact Email:** guqianfeng@gmail.com
+* Website: https://bitcheck.net
 
 ### Legal Structure 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+* **Registered Address:** Fl.8 Donghai Plaza, Shanghai, China
+* **Registered Legal Entity:** Shareblock Tech Co.,Ltd.
 
 ### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+
+The core developers of the team have more than 3 years of blockchain and DAPP application development experience. Some members have worked in financial institutions such as Alipay and banks. 
+
+We have provided zero-knowledge technical services for some financial projects. We also contribute zk technology solution for some leading Filecoin miner and zkRollup technology solution for a well-known Layer2 DEX.
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
-
-### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* https://github.com/bitcheck
 
 ## Development Roadmap :nut_and_bolt: 
 
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
-
-For each milestone:
-* Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* Please include total amount of funding requested per milestone.
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-* Please commit to providing a dockerfiles for the delivery of your project. 
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
-* Deliverables 0a-0d are mandatory and should not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research oriented and as such there is no code to test)
-
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission. (e.g. 0.80 BTC)
+* **Total Estimated Duration:** 2.5 months
+* **Full-time equivalent (FTE):**  3 FTE
+* **Total Costs:** 1.5 BTC
 
-### Milestone 1 Example — Implement Substrate Modules 
+All Substrate modules figure:
+![](https://tva1.sinaimg.cn/large/0081Kckwgy1gllzhod6ibj32010u045b.jpg)
+
+We will finish all the modules and client-side app in 2.5 months.
+
+The plan is: 
+
+### Milestone 1 — Protocol Modules I
 * **Estimated Duration:** 1 month
-* **FTE:**  1
+* **FTE:**  2 FTE
 * **Costs:** 0.75 BTC
 
 | Number | Deliverable | Specification |
@@ -89,22 +93,54 @@ To assist you in defining it, we created a document with examples for some grant
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Substrate module: Core module & Vault| Core Substrate modules, main functions: Deposit/withdraw/endorsement/Vault and interfaces  |  
+| 2. | Substrate module: Economic modules | Substrate modules for economic model, main functions: token create and burn rules. Submodules: TokenManager, DividendPool, TimeLocker etc. |  
+| 3. | Substrate chain | All the aboved modules will be built on the substrate chain |  
 
-### Milestone 2 Example — Additional features
-...
+### Milestone 2 — Protocol Modules II
+* **Estimated Duration:** 1 month
+* **FTE:**  3 FTE
+* **Costs:** 0.5 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
+| 1. | zk-knowledge | Substrate ZK modules to support privacy protection. Submodules: Verifier/ProofGenerator etc. |  
+| 2. | Dispute & arbitration | The off-chain arbitration system has been built up, this substrate module will connect this system to solve the dispute between parties |  
+| 3. | Substrate module: DAO | As we are using Gnosis-safe on Ethereum bitCheck, We will build a DAO module similarly to support DAO. |  
+| 4. | Substrate chain | All the aboved modules will be built on the substrate chain |  
+
+### Milestone 3 — Client-side DAPP
+* **Estimated Duration:** 0.5 month
+* **FTE:**  2 FTE
+* **Costs:** 0.25 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
+| 1. | Mobile | Client side DAPP on mobile. React + Html5 |  
+| 2. | Web DAPP | Client side DAPP on mobile. React + Html5 |  
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
+Payment is a basic application of blockchain, bitCheck protocol is the infrastructure of payment. We will build a huge payment ecosystem based on this protocol.
+
+Here is the future plans:
+
+* More cryptocurrencies supported, will be done in 2Q 2021.
+* Cross-chain, will be done in 3Q 2021.
+* More scenario, e-commerce marketplace, OTC crypto market, Freelancer market, etc. Will do two scenarios at least before 4Q 2021.
+* A Stand-alone wallet, will be done in 4Q 2021.
 
 ## Additional Information :heavy_plus_sign: 
-Any additional information that you think is relevant to this application that hasn't already been included.
 
-Possible additional information to include:
-* What work has been done so far?
 * Are there are any teams who have already contributed (financially) to the project?
+  There is no other teams have contributed to this project yes.
+
 * Have you applied for other grants so far?
+  NO.
