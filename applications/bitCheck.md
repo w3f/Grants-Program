@@ -22,10 +22,11 @@ BitCheck protocol has been developed for 5 months on Ethereum, we have met the f
 
 * High gas stop a lot of user to make payment on Ethereum.
 
-* We have succeed to use zero-knowledge to protect private information while making payment, such as sender, recipient and amount. But heavy data storage in Merkle-tree on-chain and Verifier smart contract increases the Gas fee even higher than 1M. We have tried some new algorithm but can not satisfy the users. Then we have to migrate to TRON for the moment and canceled privacy protection based on zk.
-Anyhow, we still keep the zero-knowledge version and have opend contract and cient-size source code. (Smart contract of zk version: https://github.com/bitcheck/contracts_zk_eth, source code of client-side: https://github.com/bitcheck/client-zk-eth)
+* We have succeeded in using zero-knowledge to protect private information while making payment, such as sender, recipient and amount. But heavy data storage in Merkle-tree on-chain and Verifier smart contract increases the Gas fee even higher than 1M. We have tried some new algorithm but can not satisfy the users. Then we have to migrate to TRON for the moment and canceled privacy protection based on zk. 
+  
+  Anyhow, we still keep the zero-knowledge version and have opend contract and cient-size source code.  (Smart contract of zk version: https://github.com/bitcheck/contracts_zk_eth, source code of client-side: https://github.com/bitcheck/client-zk-eth)
 
-* Our application is a decentralized payment tools, it must support almost all cryptocurrencies on different chains. Cross-chain is the most important tech for this project.
+* Our application is a decentralized payment tools, it can support almost all cryptocurrencies on different chains. Cross-chain is the most important tech for this project.
 
 * In order to solving the difficulties above mentioned, we started to study other public chains except Ethereum, such as oasis, NEAR, Cosmos and Polkadot. Finally we found only Polkadot + Substrate can solved all the problems.
 
@@ -61,9 +62,9 @@ The most similar project in Ethereum is Sablier, but Sablier don't support priva
 
 ### Team's experience
 
-The core developers of the team have more than 3 years of blockchain and DAPP application development experience. Some members have worked in financial institutions such as Alipay and banks. 
+We have succeeded in using zero-knowledge to protect private information while making payment, such as sender, recipient and amount. But heavy data storage in Merkle-tree on-chain and Verifier smart contract increases the Gas fee even higher than 1M. 
 
-We have provided zero-knowledge technical services for some financial projects. We also contribute zk technology solution for some leading Filecoin miner and zkRollup technology solution for a well-known Layer2 DEX.
+We have tried some new algorithm but can not satisfy the users. Then we have to migrate to TRON for the moment and canceled privacy protection based on zk. Anyhow, we still keep the zero-knowledge version and have opend contract and cient-size source code. 
 
 ### Team Code Repos
 * https://github.com/bitcheck
