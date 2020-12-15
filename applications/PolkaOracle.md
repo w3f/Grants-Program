@@ -1,5 +1,9 @@
 # PolkaOracle Data Infrastructure
 
+* **Project Name:** PolkaOracle Data Infrastructure
+* **Team Name:** Interstellar
+* **Payment Address:** 1G5G6p7CTnCy8x2DVoyDnhPs9AbuUDF7y5
+
 ## Project Description
 
 PolkaOracle is set to build a data infrastructure by applying Off-chain Worker under Polkadot/Substrate Framework. The mission of PolkaOracle is to provide real-time, transparent, reliable and efficient on-chain/off-chain market statistics and social data sources. PolkaOracle will be an important building block in the whole Substrate ecology. PolkaOracle is aiming to build a flexible, self-evolving oracle network based on Polkadot, providing applications or smart contracts with customized real-time on-chain data feeding services. PolkaOracle will adopt the Off-chain Workers architecture of the Substrate 2.0 to build an on-chain Oracle system and is designed to be the parachain/parathread connecting to the Polkadot universe.
@@ -166,42 +170,58 @@ The legal structure of the PolkaOracle Foundation is set up and incorporated in 
 
 ## Development Roadmap
 
+### Overview
+* **Total Estimated Duration:** 3 months
+* **Full-time equivalent (FTE):**  3 FTE
+* **Total Costs:** 1.5 BTC
+
 There will be 3 milestones with each milestone lasting for one month. PolkaOracle Data Infrastructure will be a 3-month project: 
 
-* **M1: Descriptions of the whole system structure and design;**
+### M1: Descriptions of the whole system structure and design
 
-    Complete the development of data source layer, off-chain workers and on-chain infrastructure.
+* **Estimated Duration:** 1 month
+* **FTE:**  2 FTE
+* **Costs:** 0.5 BTC
 
-    Data source layer: The Data Source Layer is the bottom layer of the entire oracle system.
+Complete the development of data source layer, off-chain workers and on-chain infrastructure
 
-    Off-chain: Off-chain Workers is a new feature in Substrate 2.0, allowing developers to integrate data safely and securely onto the blockchain applications.
+|Number|Deliverable|Specification|
+|:-:|:-:|:-:|
+|0a.|License|Apache License 2.0|
+|0b.|Documentation|Description document of architecture and design|
+|0c.|Testing Guide|We will provide complete test suite and operation guide|
+|1|Data source layer|The Data Source Layer is the bottom layer of the entire oracle system|
+|2|OCW|Off-chain Workers is a new feature in Substrate 2.0, allowing developers to integrate data safely and securely onto the blockchain applications|
+|3|On-chain Infrastructure|The On-chain Infrastructure is responsible for the fully-deterministic and transparent on-chain logic which is processed by the entire network with a slower speed|
 
-    On-chain Infrastructure: The On-chain Infrastructure is responsible for the fully-deterministic and transparent on-chain logic which is processed by the entire network with a slower speed.  
+### M2: Database, feeding modules, data analysis samples
 
-* **M2: Database, feeding modules, data analysis samples;**
+* **Estimated Duration:** 1 month
+* **FTE:**  3 FTE
+* **Costs:** 0.5 BTC
 
-    data analytics: data discovery, analysis, and analysis tools designed for DW, and can also provide queries or APIs for Dapps or external tools
+supported and implemented by Polkadot, provides multiple data sources with high timeliness and works with off-chain workers and verifies the integrity and validity of the data provided by the oracle node
 
-    Oracle Node, supported and implemented by Polkadot, provides multiple data sources with high timeliness and works with off-chain workers and verifies the integrity and validity of the data provided by the oracle node. 
+|Number|Deliverable|Specification|
+|:-:|:-:|:-:|
+|1|data analytics|data discovery, analysis, and analysis tools designed for DW, and can also provide queries or APIs for Dapps or external tools|
+|2|Oracle Node|Better ensure the security and accuracy of external data on-chain|
+|3|data Marketplace|data market, open platform. Dapps on polkadot can easily obtain off-chain data|
+|4|token POT|network token|
 
-    Better ensure the security and accuracy of external data on-chain.
+### M3: Publishing of whole Test set and developer guide
 
-    data Marketplace: data market, open platform. Dapps on polkadot can easily obtain off-chain data
+* **Estimated Duration:** 1 month
+* **FTE:**  2 FTE
+* **Costs:** 0.5 BTC
 
-    token POT: network token
-
-
-* **M3: Publishing of whole Test set and developer guide.**
-
-    Request: Data requester, call PolkaOracle in any way
-
-    DW: Data warehouse, distributed data repository, stores historical queries, verifications, etc., which can be read by any data requester
-
-    Miner: oracle Node processing requests from off-chain data sources
-
-    Arbitrator: Verify data integrity and timeliness provided by oracle Node
-
-    Validator: Built on the network established by Substrate, allows oracle node to broadcast proofs, supports the validity of Arbitrator mining values
+|Number|Deliverable|Specification|
+|:-:|:-:|:-:|
+|1|Request|Data requester, call PolkaOracle in any way|
+|2|Data warehouse|distributed data repository, stores historical queries, verifications, etc., which can be read by any data requester|
+|3|Miner|oracle Node processing requests from off-chain data sources|
+|4|Arbitrator|Verify data integrity and timeliness provided by oracle Node|
+|5|Validator|Built on the network established by Substrate, allows oracle node to broadcast proofs, supports the validity of Arbitrator mining values|
 
 ## Future Development Plans
 
