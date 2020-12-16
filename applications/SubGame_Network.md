@@ -28,6 +28,7 @@ The SubGame project contains SubName Node, Game Template Library, Gamee Chips, G
 
 #### Scenarios
 * **Scenario to buy chips and transfer**
+
 ![transfer](https://raw.githubusercontent.com/SubGame-Network/graphics/main/chips-transfer-%26-buy.png)
 
 As shown above, we will realize the chip exchange of $SGT in the first stage, and the ETH exchange in the later stage, and the chips of each address can also be freely transferred
@@ -45,14 +46,16 @@ Players can build their own games or participate in other people’s games. Each
         1. Players create a new game instance and set parameters
             1. Block number used for guessing
             2. The smallest and largest bet amount
-            3. Game fee ratio (ex: 0.1%)
+            3. Game odds
+            4. Chips amount 
         2. All players can participate in the game and bet before the guessed block appears
         3. When the target block is generated, the game chips are settled according to the game rules on the chain (this logic can be written in decl_module -> on_finalize)
 * **UI mock-ups**
+
+    [https://www.figma.com/file/8bSq6NEYOKfbcdFXLtsmFR/SubGame](https://www.figma.com/file/8bSq6NEYOKfbcdFXLtsmFR/SubGame)
     
     ![mock-ups](https://raw.githubusercontent.com/SubGame-Network/graphics/main/ui-mockups.png)
-    
-     [https://www.figma.com/file/8bSq6NEYOKfbcdFXLtsmFR/SubGame](https://www.figma.com/file/8bSq6NEYOKfbcdFXLtsmFR/SubGame)  
+       
 * **The hash string of the future block:** This random factor can actually be modified a lot to make more interesting games, such as lottery games.
 * In addition to the above-mentioned future block hash as a random factor, we can still introduce off-chain data through OCW from the game design, for example, we want to guess the World Cup or NBA
   The imagination of the game is endless, but the core of our first phase is to create a fair and reasonable distribution of benefits, and we will continue to increase game templates. 
