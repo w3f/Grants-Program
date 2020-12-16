@@ -37,6 +37,26 @@ As shown above, we will realize the chip exchange of $SGT in the first stage, an
 
 Players can build their own games or participate in other people’s games. Each game has a gameplay designed in the `pallet-gametemplates`. The first `pallet-gametemplates` will be continuously designed and adjusted during the first development stage.
 
+### First Game Template
+* **Template Name:** Guess
+* **Design**
+    - **Random factor:** the hash string of the future block
+    - **Gameplay:**
+        1. Players create a new game instance and set parameters
+            1. Block number used for guessing
+            2. The smallest and largest bet amount
+            3. Game fee ratio (ex: 0.1%)
+        2. All players can participate in the game and bet before the guessed block appears
+        3. When the target block is generated, the game chips are settled according to the game rules on the chain (this logic can be written in decl_module -> on_finalize)
+* **UI mock-ups**
+    
+    ![mock-ups](https://raw.githubusercontent.com/SubGame-Network/graphics/main/ui-mockups.png)
+    
+     [https://www.figma.com/file/8bSq6NEYOKfbcdFXLtsmFR/SubGame](https://www.figma.com/file/8bSq6NEYOKfbcdFXLtsmFR/SubGame)  
+* **The hash string of the future block:** This random factor can actually be modified a lot to make more interesting games, such as lottery games.
+* In addition to the above-mentioned future block hash as a random factor, we can still introduce off-chain data through OCW from the game design, for example, we want to guess the World Cup or NBA
+  The imagination of the game is endless, but the core of our first phase is to create a fair and reasonable distribution of benefits, and we will continue to increase game templates. 
+
 ### Ecosystem Fit 
 At present, there is no real decentralized game platform, but more decentralized games. Unlike the past, this time we are going to build a truly decentralized game ecological platform.
 
@@ -82,12 +102,12 @@ No Legal Entity
 ### Overview
 * **Total Estimated Duration:** 12 weeks
 * **Full-time equivalent (FTE):**  3 FTE 
-* **Total Costs:** 0.75 BTC 
+* **Total Costs:** 0.95 BTC 
 
 ### Milestone 1 :  The testnet is completed and the first playable game template is built
 * **Total Estimated Duration:** 12 weeks
 * **Full-time equivalent (FTE):**  3 FTE 
-* **Total Costs:** 0.75 BTC 
+* **Total Costs:** 0.95 BTC 
 
 
 | Number | Deliverable | Specification |
@@ -107,6 +127,7 @@ No Legal Entity
 | | Storage:| `CurrentGameinstances get(fn get_gameinstances): map hasher(blake2_128_concat) u32=> Vec<GameInstance> ;` <br><br> `HistoryGameinstances get(fn get_gameinstances): map hasher(blake2_128_concat) u32=> Vec<GameInstance> ;`<br><br> `PlayMap get(fn get_playmap): map hasher(blake2_128_concat) AccountId=> u32 ;` |
 | | Functions:|1)`pub fn play_game(origin, instance_id:u32, chip:u32,data:u32)->dispatch::DispatchResult `<br><br>2)`pub fn create_game(origin, template_id:u32)->dispatch::DispatchResult` |
 | 3b. | Front End | In the first stage, the basic development of the game center will be completed, and the first core game interaction process will be completed |
+| | UI mock-ups |[https://www.figma.com/file/8bSq6NEYOKfbcdFXLtsmFR/SubGame](https://www.figma.com/file/8bSq6NEYOKfbcdFXLtsmFR/SubGame) |
 | 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain  and front end |
 | 5. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.| 
 
