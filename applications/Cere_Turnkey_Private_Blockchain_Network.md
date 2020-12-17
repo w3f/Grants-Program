@@ -2,7 +2,7 @@
 
 * **Project:** Turn-key Private Standalone Blockchain Network
 * **Proposer:** [Cere-Network](https://github.com/Cerebellum-Network)
-* **Payment Address:** 1BbyAGddobdPgNo9c63xsRnwK5hen8pV7F 
+* **Payment Address:** 3A79EuVJQzZPZSYZ4LDMCxqNUy95xJtFng
 
 ## Project Description :page_facing_up:   
 
@@ -58,7 +58,7 @@ Evgeny has been one of the core developers on Cere team, where he’s been instr
 Shivam started programming at the age of 13, with roots in all-round programming. One of the first employees at Asia’s top cryptocurrency exchange, winner of multiple global hackathons and an early Blockchain adopter, believer and developer.   
 Thanh has years of experience working with various blockchain projects ranging from Solidity smart contracts to enterprise integrations with Hyperledger and other networks.   
 
-## Development Roadmap :nut_and_bolt: 
+## Development Roadmap :nut_and_bolt:
 
 * **Total Estimated Duration:** 9 weeks
 * **Total Costs:** 1.8 BTC
@@ -81,20 +81,20 @@ Thanh has years of experience working with various blockchain projects ranging f
 
 | Number | Deliverable | Specification | Status |
 | ------------- | ------------- | ------------- | ------- |
-| 1.  | Supporting Fee Abastraction | This is an important feature to allow enterprises to conduct value transfers between app/user accounts without worrying about fees. | In Progress |  
+| 1.  | Supporting Fee Abastraction | This is an important feature to allow enterprises to conduct value transfers between app/user accounts without worrying about fees. This was moved from milestone 1 to milestone 2 to allow more testing with a couple of different approaches. | In Progress |  
 | 2.  | Deployment packaging | At minimum the docker container or even the entire script that packages the container with the latest code from Substrate will also run on CI to test the deliverables of the milestone. |  Pending |
 | 3.  | Testing | Repositories including the  deployment and test sections for instructions and scripts to help contributors thatto package, deploy, run, test. | Pending |
 | 4.  | (optional) Batch processing | Allowing an app to optimize for creating asset transfers or data events to a batch of users at once, this would be a very nice to have from our practical experience. | Pending |
 | 5.  | Tutorial | Cere will provide written documentation as well as a video tutorial on how to integrate and use Cere’s turnkey private blockchain networks for applications to showcase the ease of use. | Pending |
 | 6.  | Article | The main topic/theme: “...Cere Network is providing a turn-key permissioned standalone blockchain network which can be readily integrated by any enterprise. Since it’s built with Substrate, this network can be potentially integrated into any Polkadot/Substrate based Layer 1 network to serve as a secondary chain. Furthermore, any network built from or derived from this project will also be able to use derivative assets to represent real-world value transfers on-chain (e.g. micropayments, discount vouchers, loyalty points, etc), as well as being able to programatically issue these assets between user and application wallets... |   Pending |
 
-## Community engagement 
+## Community engagement
 
 We will be producing a series of articles/tutorials and publish them on Medium and our community channels to highlight each milestone. More on our marketing strategy:
 
 ![Marketing strategy](https://raw.githubusercontent.com/Cerebellum-Network/Cerebellum-Network.github.io/main/925BA0E5-46D0-479D-850D-7AC7647EDCCF.jpeg)
 
-## Additional Information :heavy_plus_sign: 
+## Additional Information :heavy_plus_sign:
 
 Any additional information that you think is relevant to this application that hasn't already been included.   
 
