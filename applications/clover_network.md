@@ -125,15 +125,8 @@ We all come from different and unique walks of life, backgrounds, and experience
 * [https://docs.google.com/spreadsheets/d/1J4xhVIP8o0jZ_4vH2OaD2fA89K05HlO2PuYR178fb1A/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1J4xhVIP8o0jZ_4vH2OaD2fA89K05HlO2PuYR178fb1A/edit?usp=sharing)
 * **Estimated Duration:** 3 month
 * **FTE:**  10 FTE
-* **Costs:** 0.85
+* **Costs:** 0.85 BTC
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
-
-## Additional Information :heavy_plus_sign: 
-Any additional information that you think is relevant to this application that hasn't already been included.
-
-Possible additional information to include:
-* What work has been done so far?
-* Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far?
+We will start to build the developer community when TestNet is ready and SDKs are available in Q1 and Q2 2021. Detailed documentations will be provided and more contents about developing applications on Clover will be released by then. We will work with some existing developer community to hold events, as well as holding/supporting hackathons to acquire more developers once developer kits are ready in Q2/Q3 2021. Bug bounty programs will be held when Mainnet is launched. 
+For the user community, we plan to work with some industry media to release publications. Clover maintains its social media including Twitter, Youtube, Medium, and more to provide self-generated content, and covert followers and users to our Telegram, Discord, and Kakao groups. Marketing campaigns will be held to keep user activeness while Clover will focus on incentivizing users to participate in liquidity mining and governance activities. Key metrics of campaigns include the number of new user growth, the number of token holders, the number of members in the developer and the overall community, social media followers, total value locked (on liquidity mining applications), and number of votes.
