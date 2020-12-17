@@ -58,17 +58,19 @@ With the rapid development of DeFi, the demand for insurance protocols is also i
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
-* Names of team members	
+
+* Burak Keceli - Project Lead  
+* Chris Li - Strategy Lead
+* Norelle Ng - Operations
+* Barek Sekandari - Merketing Lead
+* Marina Danylyuk - Chief Legal Advisor
 
 ### Contact
-* **Contact Name:** Full name of the contact person (e.g. John Brown)
-* **Contact Email:** Contact email (e.g. john@duo.com)
-* Website
+- burak@buraks.blog
 
 ### Legal Structure 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+Clover, Inc. (Registration Number: 2045136)
+Unit 8, 3/F, Qwomar Trading Complex, Blackburne Road, Port Purcell, Road Town, Tortola, British Virgin Islands, VG1110
 
 ### Team's experience
 Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
