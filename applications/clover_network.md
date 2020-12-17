@@ -73,11 +73,32 @@ Clover, Inc. (Registration Number: 2045136)
 Unit 8, 3/F, Qwomar Trading Complex, Blackburne Road, Port Purcell, Road Town, Tortola, British Virgin Islands, VG1110
 
 ### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+As a collective, the founding team has been working together for 8 months that has been in the industry for over 2 years, of which have crossed paths multiple times in different industry conferences. Within the team Burak is mainly based in the Bay Area, Chris in Hong Kong, Norelle in Canada, and Barek is based in the UK. 
+
+We all come from different and unique walks of life, backgrounds, and experiences which really makes us a dynamic and strong team complementing one another's skill sets. It is neat operating as a team across the globe because we can tap into different markets and bring different things to the table. Our team has been formed to optimize and complement one another’s skill sets; from DLT engineering to economics, to operational, and marketing expertise. We have a team capable of building, executing, and scaling Clover to its fullest potential. 
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+[https://github.com/clover-network/clover](https://github.com/clover-network/clover)
+
+[https://github.com/clover-network/clover-web3-wallet](https://github.com/clover-network/clover-web3-wallet)
+
+[https://github.com/clover-network/website](https://github.com/clover-network/website)
+
+[https://github.com/clover-network/clover-defi-wallet](https://github.com/clover-network/clover-defi-wallet)
+
+[https://github.com/clover-network/clover-sdk](https://github.com/clover-network/clover-sdk)
+
+[https://github.com/clover-network/clover-wallet](https://github.com/clover-network/clover-wallet)
+
+[https://github.com/clover-network/clover-mobile-wallet](https://github.com/clover-network/clover-mobile-wallet)
+
+[https://github.com/clover-network/clover-dapp-uniswap](https://github.com/clover-network/clover-dapp-uniswap)
+
+[https://github.com/clover-network/clover-store-core](https://github.com/clover-network/clover-store-core)
+
+[https://github.com/clover-network/clover-store-sdk](https://github.com/clover-network/clover-store-sdk)
+
+[ttps://github.com/clover-network/clover-store-upload](https://github.com/clover-network/clover-store-upload)
 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/<person_1>
