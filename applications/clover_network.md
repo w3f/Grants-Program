@@ -80,29 +80,38 @@ We all come from different and unique walks of life, backgrounds, and experience
 ### Team Code Repos
 * [https://github.com/clover-network/clover](https://github.com/clover-network/clover)
 
-*[https://github.com/clover-network/clover-web3-wallet](https://github.com/clover-network/clover-web3-wallet)
+* [https://github.com/clover-network/clover-web3-wallet](https://github.com/clover-network/clover-web3-wallet)
 
-*[https://github.com/clover-network/website](https://github.com/clover-network/website)
+* [https://github.com/clover-network/website](https://github.com/clover-network/website)
 
-*[https://github.com/clover-network/clover-defi-wallet](https://github.com/clover-network/clover-defi-wallet)
+* [https://github.com/clover-network/clover-defi-wallet](https://github.com/clover-network/clover-defi-wallet)
 
-*[https://github.com/clover-network/clover-sdk](https://github.com/clover-network/clover-sdk)
+* [https://github.com/clover-network/clover-sdk](https://github.com/clover-network/clover-sdk)
 
-*[https://github.com/clover-network/clover-wallet](https://github.com/clover-network/clover-wallet)
+* [https://github.com/clover-network/clover-wallet](https://github.com/clover-network/clover-wallet)
 
-*[https://github.com/clover-network/clover-mobile-wallet](https://github.com/clover-network/clover-mobile-wallet)
+* [https://github.com/clover-network/clover-mobile-wallet](https://github.com/clover-network/clover-mobile-wallet)
 
-*[https://github.com/clover-network/clover-dapp-uniswap](https://github.com/clover-network/clover-dapp-uniswap)
+* [https://github.com/clover-network/clover-dapp-uniswap](https://github.com/clover-network/clover-dapp-uniswap)
 
-*[https://github.com/clover-network/clover-store-core](https://github.com/clover-network/clover-store-core)
+* [https://github.com/clover-network/clover-store-core](https://github.com/clover-network/clover-store-core)
 
-*[https://github.com/clover-network/clover-store-sdk](https://github.com/clover-network/clover-store-sdk)
+* [https://github.com/clover-network/clover-store-sdk](https://github.com/clover-network/clover-store-sdk)
 
-*[ttps://github.com/clover-network/clover-store-upload](https://github.com/clover-network/clover-store-upload)
+* [ttps://github.com/clover-network/clover-store-upload](https://github.com/clover-network/clover-store-upload)
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* [Burak Keceli](https://www.linkedin.com/in/burak-ke%C3%A7eli/)
+
+* [Chris Li](https://www.linkedin.com/in/chrislky/)
+
+* [https://github.com/clover-network/website](https://www.linkedin.com/in/norelleng/)
+
+* [https://github.com/clover-network/clover-defi-wallet](https://www.linkedin.com/in/chris-williamson-aa90b290/)
+
+* [https://github.com/clover-network/clover-sdk](https://www.linkedin.com/in/barek-sekandari-597752153/)
+
+* [https://github.com/clover-network/clover-wallet](https://www.linkedin.com/in/marinadanylyuk/)
 
 ## Development Roadmap :nut_and_bolt: 
 
