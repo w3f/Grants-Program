@@ -2,7 +2,7 @@
 
 * **Project Name:** PolkaOracle Data Infrastructure
 * **Team Name:** Interstellar
-* **Payment Address:** 1G5G6p7CTnCy8x2DVoyDnhPs9AbuUDF7y5
+* **Payment Address:** 14xrpzaZDWqL7v3nifFKPaaufLVVuAbvKs
 
 ## Project Description
 
