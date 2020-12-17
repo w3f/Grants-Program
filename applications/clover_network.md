@@ -2,9 +2,9 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project Name:** Name of your project (e.g. DuoSwap Module)
-* **Team Name:** Legal name of your team (e.g. Duo)
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
+* **Project Name:** Clover
+* **Team Name:** Clover Team
+* **Payment Address:** 1HsVhJeeFx5AGGBRQzrvEqGC8FM8YfW6b6
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
@@ -15,8 +15,15 @@ If this application in response to an RFP then please indicate this on the first
 
 Please provide the following:
   * A brief description of the project.
+  Clover is a Substrate-based Polkadot parachain which is committed to providing easy-to-use blockchain infrastructure by creating a one-stop comprehensive infrastructure that ultimately reduces the threshold and cost for the DeFi community.
+
+Clover provides a perfect gateway to DeFi for everyone including those who are completely new to DeFi. We bridge the gap between the crowd and the DeFi world via a user-friendly front end portal with an easy-to-navigate multi-chain wallet, block explorer/DeFi application market for regular users and a user-friendly built-in protocol library that allows developers to easily deploy their own applications. Without the need of managing multiple assets in different accounts, Clover enables users to keep track of what’s happening real-time in one place. 
   * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
+  We decided to develop on Polkadot mainly because of its enhanced scalability and low-in-cost among other smart contract platforms in the space. As a sharded multichain network, Polkadot allows the processing of many transactions on different chains in parallel that most legacy networks do not. While providing scaling solutions through parachains, Polkadot development is steadily advanced, has gathered a large number of developers from the community, and numerous projects are emerging endlessly in the ecosystem. On the other hand, Polkadot’s Substrate technology provides a relatively easy-to-use and highly customizable framework that allows us to build our platform to communicate with other ledgers, which in a sense will likely attract more users to onboard in the future. 
+
+Clover will compete to join as parachain for Polkadot and is committed to becoming a digital finance portal and DeFi service provider on Polkadot. Focusing on both to-C and to-B users, Clover will provide a series of DeFi related products and services to meet the diverse needs of different users. At the same time, developing and providing a modular DeFi protocol, which greatly reduces the technology development threshold for upper-layer applications. Clover will put together a large user base and different projects into a one-stop open and integrated financial service platform on Polkadot, using Substrate framework, to communicate with other existing parachains such as Bitcoin and Ethereum parachains. Namely, Clover will be another parachain on Polkadot. Once the parachain gets the slot to join the Polkadot relay chain, they can communicate with each other through Cross-chain Message Passing (XCMP) protocol. That means Clover can build its DeFi with the other parachain assets, like the DeFi protocols on Ethereum.
   * An indication of why your team is interested in creating this project.
+  We are a team of like-minded people who have a dream of building a groundbreaking technology towards censorship resistance on utilizing newest additions to DLT technologies. Apart from incentivizing our core team with a structured/periodic compensation plan throughout the next 5 years with cliffs imposed in between, we give ourselves a high degree of autonomy and lots of space for creativity overall.
 
 ### Project Details 
 We expect the teams to already have a solid idea about the project's expected final state.
