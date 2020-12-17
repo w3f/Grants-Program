@@ -78,7 +78,7 @@ As a collective, the founding team has been working together for 8 months that h
 We all come from different and unique walks of life, backgrounds, and experiences which really makes us a dynamic and strong team complementing one another's skill sets. It is neat operating as a team across the globe because we can tap into different markets and bring different things to the table. Our team has been formed to optimize and complement one another’s skill sets; from DLT engineering to economics, to operational, and marketing expertise. We have a team capable of building, executing, and scaling Clover to its fullest potential. 
 
 ### Team Code Repos
-*[https://github.com/clover-network/clover](https://github.com/clover-network/clover)
+* [https://github.com/clover-network/clover](https://github.com/clover-network/clover)
 
 *[https://github.com/clover-network/clover-web3-wallet](https://github.com/clover-network/clover-web3-wallet)
 
