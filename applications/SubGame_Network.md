@@ -105,12 +105,12 @@ No Legal Entity
 ### Overview
 * **Total Estimated Duration:** 12 weeks
 * **Full-time equivalent (FTE):**  3 FTE 
-* **Total Costs:** 0.95 BTC 
+* **Total Costs:** 0.75 BTC 
 
 ### Milestone 1 :  The testnet is completed and the first playable game template is built
 * **Total Estimated Duration:** 12 weeks
 * **Full-time equivalent (FTE):**  3 FTE 
-* **Total Costs:** 0.95 BTC 
+* **Total Costs:** 0.75 BTC 
 
 
 | Number | Deliverable | Specification |
