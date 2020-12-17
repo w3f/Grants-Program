@@ -154,7 +154,7 @@ Tetra Pay Ltda. (São Paulo – Brazil)
 | 0d.    | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
 | 1.     | TetraExchange | We will create a Substrate module that will realize single stablecoin Payara-TetraX exchange module, multi-currency stablecoin TetraX-TetraY free exchange module.<br/>The external interfaces implemented in this stage are as follows:<br/>exchange: for Tetra to payara ,Tetrax to tetray interchange |
 | 2.     | TetraFactory  | We will create a Substrate module that will realize the burn and minting of TetraX. When the price of Tetra local currency is higher than the price of legal currency, the module triggers the minting to increase liquidity and stabilize the price. When the price of Tetra local currency is lower than the legal currency, the module triggers the burn to maintain price stability.<br/>The external interfaces implemented in this stage are as follows:<br/>mintCoin: Use payara to cast tetra (used by Exchange module)<br/>brunCoin: Burn tetra to get payara (used by Exchange module) |
-| 3.     | Front End      | This webpage provides all the functions and faucet of the TetraPay to facilitate testing |
+| 3.     | Front End      | This webpage provides all the functions and faucet of the TetraPay to facilitate testing,and use Node.js/Vue to develop. |
 | 4.     | Docker       | We will provide a dockerfile to demonstrate the full functionality of our chain |
 ## ***Interactive diagram***
 ![img](https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/flowChart.png) 
