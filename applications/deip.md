@@ -92,23 +92,23 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 ### Overview
 * **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):**  4.5
-* **Total Costs:** 1.6 BTC
+* **Total Costs:** 1.21 BTC
 
 ### Milestone 1 Implement IP Management/Governance Module 
 * **Estimated Duration:** 2 month
 * **FTE:**  4.5
-* **Costs:** 1.6 BTC
+* **Costs:** 1.21 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | Documentation describing the DEIP protocol and basic workflows implemented in the IPMG module. |
 | 0c. | Testing Guide | Complete test-suite with acceptable unit-test coverage, and instructions how to run these tests. | 
-| 1. | Working group management (DAO) | Create, manage members (invite, exclude), access control, decision-making via group voting. С++/Rust|  
+| 1. | Basic working group management (DAO) | We need some way to minimally manage organizations because assets are owned by organization initially. We will implement a minimal needed governance operations for IP assets, but will also implement an adapter which will allow to connect DAO pallets in the future. С++/Rust| 
 | 2. | Project and IP management | Create project, edit project, create IP asset within project. C++/Rust|  
 | 3. | IP registration | Register (timestamp) a fact of creation and/or ownership of specific IP asset on the blockchain. C++/Rust|
 | 4. | Access control | Manage access permissions to specific IP asset with unique Proof of Share entries that confirm a specific user was granted access to an asset. C++/Rust|
-| 5. | Web-based UI | Create and manage working groups (DAOs), project management, IP asset creation and registration, certificate verification page. Vue.js & Node.js + MongoDb for web-based app backend|
+| 5. | Web-based UI | Manage working groups (DAOs), project management, IP asset creation and registration, certificate verification page. Vue.js & Node.js + MongoDb for web-based app backend|
 | 6. | Docker | Dockerfile to run a chain. 
 
 ## Future Plans
