@@ -59,9 +59,10 @@ With the rapid development of DeFi, the demand for insurance protocols is also i
 
 ### Team members
 
-* Burak Keceli - Project Lead  
+* Burak Keceli - Tecnical Lead  
 * Chris Li - Strategy Lead
 * Norelle Ng - Operations
+* Chris Williamson - Co-strategy Lead
 * Barek Sekandari - Merketing Lead
 * Marina Danylyuk - Chief Legal Advisor
 
