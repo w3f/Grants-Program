@@ -105,13 +105,13 @@ We all come from different and unique walks of life, backgrounds, and experience
 
 * [Chris Li](https://www.linkedin.com/in/chrislky/)
 
-* [https://github.com/clover-network/website](https://www.linkedin.com/in/norelleng/)
+* [Norelle Ng](https://www.linkedin.com/in/norelleng/)
 
-* [https://github.com/clover-network/clover-defi-wallet](https://www.linkedin.com/in/chris-williamson-aa90b290/)
+* [Chris Williamson](https://www.linkedin.com/in/chris-williamson-aa90b290/)
 
-* [https://github.com/clover-network/clover-sdk](https://www.linkedin.com/in/barek-sekandari-597752153/)
+* [Barek Sekandari](https://www.linkedin.com/in/barek-sekandari-597752153/)
 
-* [https://github.com/clover-network/clover-wallet](https://www.linkedin.com/in/marinadanylyuk/)
+* [Marina Danylyuk](https://www.linkedin.com/in/marinadanylyuk/)
 
 ## Development Roadmap :nut_and_bolt: 
 
