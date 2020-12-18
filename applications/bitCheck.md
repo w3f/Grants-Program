@@ -74,7 +74,7 @@ We have tried some new algorithm but can not satisfy the users. Then we have to 
 ### Overview
 * **Total Estimated Duration:** 2.5 months
 * **Full-time equivalent (FTE):**  3 FTE
-* **Total Costs:** 1.5 BTC
+* **Total Costs:** 1.3 BTC
 
 All Substrate modules figure:
 ![](https://tva1.sinaimg.cn/large/0081Kckwgy1gllzhod6ibj32010u045b.jpg)
@@ -86,7 +86,7 @@ The plan is:
 ### Milestone 1 — Protocol Modules I
 * **Estimated Duration:** 1 month
 * **FTE:**  2 FTE
-* **Costs:** 0.75 BTC
+* **Costs:** 0.35 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -101,7 +101,7 @@ The plan is:
 ### Milestone 2 — Protocol Modules II
 * **Estimated Duration:** 1 month
 * **FTE:**  3 FTE
-* **Costs:** 0.5 BTC
+* **Costs:** 0.75 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -117,7 +117,7 @@ The plan is:
 ### Milestone 3 — Client-side DAPP
 * **Estimated Duration:** 0.5 month
 * **FTE:**  2 FTE
-* **Costs:** 0.25 BTC
+* **Costs:** 0.2 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
