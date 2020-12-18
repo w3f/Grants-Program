@@ -26,11 +26,35 @@ We expect the teams to already have a solid idea about the project's expected fi
 Therefore, we ask the teams to submit (where relevant):
 * Mockups/designs of UI components
 ![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/overview.jpeg?raw=true)
-![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/loading.jpeg?raw=true)
-![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/passcode.jpeg?raw=true)
-![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/login.jpeg?raw=true)
-![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/id.jpeg?raw=true)
-![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/portfolio.jpeg?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Loading.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Onboard.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/New_wallet.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Mnemonic_code.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Touch_ID.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Dashboard.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Dashboard-1.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Dashboard-2.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Dashboard-3.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Dashboard-4.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Defi_Dashboard.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Wallet.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/BTC_Wallet.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/BTC_Transaction.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Swaps.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Swaps_Connect.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Wallet_Connect.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Swaps_Select.png?raw=true)
+![alt text](https://github.com/fintie/Open-Grants-Program/blob/master/img/Swaps_Ready.png?raw=true)
+
+
+
+
+
+
+
+
+
+New_wallet
 
 * API specifications of the core functionality
   * Account Management**
