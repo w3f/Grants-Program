@@ -2,7 +2,7 @@
 
 * **Project Name:** The Parami Protocol
 * **Team Name:** The Parami Team
-* **Payment Address:** TODO
+* **Payment Address:** 1ET2d5D2aDebVdrV21d6h9w2kuYV4fthv
 
 ## Project Overview :page_facing_up:
 
