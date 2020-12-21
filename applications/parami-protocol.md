@@ -99,6 +99,7 @@ Yanping YANG
 * https://github.com/parami-protocol/apps - The web
 
 ### Team LinkedIn Profiles
+* [Lucas Wu](https://www.linkedin.com/in/lucas-wu-05714b202/)
 * [Alex](https://www.linkedin.com/in/%E7%85%9C%E5%B0%A7-%E6%9D%A8-59b75691/)
 * [Dorian](https://www.linkedin.com/in/dorian-wu-90942a202/)
 
