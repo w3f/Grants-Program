@@ -44,6 +44,28 @@ Lloyd Protocol contain those module.
   * proposal  governance.
   * fraudulently voted slash
 
+#### Module Method Signature
+  * risk assess pallet
+       *   project_register(project name, description, assets trigger payment).
+       *   assessor_start_deal()
+       *   assessor_ submit_audit()
+       *   assessor_generate_market()    
+           * `storage` project map, assessor map, audit map, market map, mortgage pool map
+  * assessor manager pallet.
+      *  assessor_register()
+      *  assessor_unregister()    
+           * `storage`  assessor map
+  * insurance market pallet
+      * policy-holder_ buy_market()
+      * user_pledge_promising_project().
+      * finilize_rewards().
+           * `storage`   user_pledge map, user reward map, policy-holder fee map,  policy-holder coverage map.
+  * claims assess proposals pallet
+       * proposal_claims().
+       * proposal_governance().
+       * fraudulently_slash().
+           * `storage` proposal map, governance result map, slash map.
+
 ### Ecosystem Fit 
 Lloyd Protocol will provide the security guarantee for the forthcoming slot auction, the maximum protection of parachain losses.
 
@@ -69,12 +91,12 @@ Lloyd Protocol will provide the security guarantee for the forthcoming slot auct
 
 * **Total Estimated Duration:** 1 month
 * **Full-time equivalent (FTE):**  1.5
-* **Total Costs:** 1.4 BTC
+* **Total Costs:** 1.2 BTC
 
 ### Milestone 1 — Implement risk assess module
 * **Estimated Duration:** 3 weeks
 * **FTE:**  1.5
-* **Costs:** 0.6 BTC
+* **Costs:** 0.5 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -88,7 +110,7 @@ Lloyd Protocol will provide the security guarantee for the forthcoming slot auct
 
 * **Estimated Duration:** 8 weeks
 * **FTE:**  1.5
-* **Costs:** 0.8 BTC
+* **Costs:** 0.7 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
