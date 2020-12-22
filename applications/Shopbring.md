@@ -283,7 +283,7 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 | 6. | Substrate module: Invoice | We will create a Substrate module that will manage and verify invoice. | 
 | 7. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
-### Milestone 3 Parachain Testnet Debugging
+### Milestone 3 Parachain Local Testing
 
 * **Estimated Duration:** 1 month
 * **FTE:**  2
