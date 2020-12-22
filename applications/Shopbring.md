@@ -240,9 +240,9 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 
 ### Overview
 
-* **Total Estimated Duration:** 2 months.
+* **Total Estimated Duration:** 3 months.
 * **Full-time equivalent (FTE):** 5 FTE.
-* **Total Costs:** 1.05 BTC (CHF 20k equivalent).
+* **Total Costs:** 1.55 BTC (CHF 30k equivalent).
 
 ### Milestone 1 UI design and System module definition
 
@@ -282,6 +282,22 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 | 5. | Substrate module: Native Token | We will create a Substrate module that will manage native token inflation. | 
 | 6. | Substrate module: Invoice | We will create a Substrate module that will manage and verify invoice. | 
 | 7. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+
+### Milestone 3 Parachain Testnet Debugging
+
+* **Estimated Duration:** 1 month
+* **FTE:**  2
+* **Costs:** 0.52 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will write how Shopbring interacts with other parachains.|
+| 0c. | Testing Guide | The code will have 90% unit-test coverage to ensure functionality |
+| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
+| 1. | Implement off-chain worker | We will implement off-chain worker that can tracking oracle cryptocurrency prices, and request tax agency services to verify the validity of the invoice.  |
+| 2. | Parachain Local Testing | We will refer to Cumulus Workshop for the parachain interoperability test in the local environment. |
+| 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 ## Future Plans
 
