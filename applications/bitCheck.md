@@ -39,10 +39,26 @@ As this protocol has been deployed on Ethereum, please check the DAPP url as fol
 
 We will keep the similar UI and functions as Ethereum, but will re-build this project on Polkadot by substrate.
 
-### Ecosystem Fit 
-We have not found similar projects in Polkadot ecosystem. Also there is no payment system like bitCheck in Ethereum ecosystem. 
+### Tech details
 
-The most similar project in Ethereum is Sablier, but Sablier don't support privacy protection and complicated arbitration of dispute between parties. 
+First, thanks tornado.cash, they have made a wonderful mixer on Ethereum with zero-knowledge to protect privacy. But the performance is still low.
+
+We will use the following tech to improve the performance.
+
+a- Using PLONK instead of GROTH16 to avoid trusted setup while updating circuits. This will improve the expansibility of DAPP.
+
+b- The calculation of generation proof of tornado.cash's front-side is too heavy to run on web browsers or mobile wallets smoothly. This will be improved also.
+
+Some functions above is realized on bitCheck Ethereum version, but we are sure it will have much better performace on parachain.
+
+### Ecosystem Fit 
+Bitcheck is a protocol, including core functions and components: depositing, withdrawal, claim, dispute settlement and DAO.
+
+Any developers can call this protocol to build up various dApps with different economics model.
+
+We have built dApp based on this protocol on Ethereum/Tron, using economics models(such as yield farming, etc.) to attract users.
+
+We have not found similar projects in Polkadot ecosystem. The most similar project in Ethereum is Sablier, but Sablier is a installment tools, don't support privacy protection and complicated arbitration of dispute between parties. 
 
 
 ## Team :busts_in_silhouette:
