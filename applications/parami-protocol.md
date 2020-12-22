@@ -106,98 +106,38 @@ Yanping YANG
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-* **Total Estimated duration:** 6 months
+* **Total Estimated duration:** 4 months
 * **Full-time equivalent (FTE):** 3 FTE
 * **Total Costs:** 2 BTC
 
-### Milestone 1 — Testnet: Dāna
-* **Estimated duration:** 1 month
-* **FTE:**  3
-* **Costs:** 0.2 BTC
-
-This milestone’s main task is to perform proof of concept and security validation based on Substrate tokenized advertising parallel chains.
-
-Also, the Parami protocol will open the test process of on-chain DID (Decentralized Identifier) generation, bridging the social identities and asset identities of users.
-
+### Milestone 1 — The Parami Protocol
+* **Estimated duration:** 4 month
+* **FTE:** 3
+* **Costs:** 2 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | POC | Proof of Concept, implement DID generation on the chain |
-| 2. | Testnet | Setup and run a testnet |
-| 3. | DID Generating | Generate on-chain DID, invite test users |
-
-### Milestone 2 - Mainnet V1: Śīla
-* **Estimated duration:** 2 month
-* **FTE:**  3
-* **Costs:** 0.5 BTC
-
-The main task of this milestone is setting up Parami nodes and implementing core logic.
-
-The NPoS-based BABE/GRANDPA hybrid consensus algorithm will help the Parami main network to balance efficiency and decentralization, preventing the centralized evil tendencies similar the DPoS. Initially, Parami will set up some nodes for the testnet.
-
-Ad 3.0 runtime core logic will be deployed at this milestone, which will support advertisers to build a contract-regulated process of ad setup, more transparent price bidding, more accurate cost metering, and more intelligent placement. The goal is to ensure advertisers and users are honest and trustworthy in ad consumption and avoid evil.
-
-Off-chain Worker-based decentralized advertising oracle machine will be deployed, and Parami nodes will have the ability to verify ads off-chain and get profit through real advertising verification behavior.
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Node Setup | Set up and run a few decentralized nodes |
-| 2. | Ad Runtime | The core component of Parami, empowering digital ad with blockchain |
-| 3. | Offchain Worker | The Ad Oracle, which will verify ads off-chain |
-| 4. | Ad API | Provide feature-rich API for advertisers, including Runtime API and Off-chain Worker API |
-| 5. | API Documentation | The documentation will provide details of Runtime API and Off-chain Worker API |
-
-### Milestone 3 - Mainnet V2: Vīrya
-* **Estimated duration:** 1.5 month
-* **FTE:**  1
-* **Costs:** 0.2 BTC
-
-This milestone will kick off the on-chain governance process for the Parami community, and the community will make appropriate mainnet adjustments based on former running of the chain.
-
-Parami will simultaneously support Offchain Worker 2.0, providing a more powerful decentralized advertising oracle machine for seamless access to social identity platforms like Twitter, Facebook, Wechat.
-
-Parami mainnet will also initiate support for NFTs(non-fungible tokens) such as ERC721, thus enabling advertisers to offer more incentive tools, like coupons, vouchers, tickets, medals, and so on.
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Governance | Implement chain governance logic |
-| 2. | Off-chain Worker Update | Update to Off-chain Worker 2.0, a more powerful oracle implementation. Introduce social platforms to oracle |
-| 3. | NFT Support | Add NFT support to runtime and off-chain worker, and advertisers can issue their NFTs |
-
-### Milestone 4 - Mainnet V3: Dhyāna
-* **Estimated duration:** 1 month
-* **FTE:**  1
-* **Costs:** 0.3 BTC
-
-This milestone will focus on the privacy protection and realization of users' advertising data.
-
-In this milestone, Parami will, on the one hand, provide better privacy protection tools, so that users can truly control their own privacy data sovereignty. On the other hand, it will use an improved zero-knowledge-based, non-interactive version to allow users to prove themselves as potential target users for advertisers without revealing their personal private data, to gain additional profit.
-
-Besides, Parami will also provide on-chain data analysis tools to provide a basis for advertisers to track and analyze their ads. It will also establish an industry blocklist solution to jointly defend against potential malicious acts like witch attacks.
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Zk-based Data Model | Implement privacy by using a zero-knowledge-based data model |
-| 2. | Profit Model | Implement a profit model upon zk-based data model |
-| 3. | Analysis Tool | Provide a data visualization analysis tool for advertisers |
-| 4. | Blocklist | Implement an on-chain blocklist |
-
-### Milestone 5 - Mainnet V4: Prajñā
-* **Estimated duration:** 1 month
-* **FTE:**  1
-* **Costs:** 0.2 BTC
-
-This milestone of Parami will be connected to the Polkadot leading network and rely on Polkadot's parachain capabilities to provide tokenized advertising services to other parallel chains. The Ink-based smart contract infrastructure will provide Parami with the ability to generate shadow assets. With Polkadot's shared security and its own data completeness, Parami will serve as the DID infrastructure to other parallel chains,
-further enriching users' DID data assets.
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Para-chain | Connect Parami to Polkadot leading network via parachain mechanism |
-| 2. | Ink! Support | Introduce ink! module to runtime, allowing generate shadow assets |
+| 0a. | License | Apache 2.0 |
+| 0b. | API Documentation | We will provide inline documentation of the code and API documentation to help developers to integrate Parami DID into their project |
+| 0c. | Tutorial | We will provide a standalone tutorial for endusers and developers. This will be a step-by-step guide. |
+| 0d. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 0b. | Testnet | Setup and run a testnet |
+| 1. | Substrate module: did | We will create a Substrate module that will generate and manage on-chain DID with detailed preference profile |
+| 2. | Substrate module: ads | We will create a Substrate module that will manage ads metadata, including traditional ads metadata and rewarding settings |
+| 3. | Substrate module: prices | We will create a Substrate module that will act as the price oracle to provide real-world prices of different kinds of assets |
+| 4. | Substrate chain | All above modules of our custom chain will interact to provide a useable Ad platform. There will be APIs to setup DIDs and ads and APIs that allow transfer assets via DID |
+| 5. | Web UI: Advertiser App | We will create a web-ui for advertisers, hiding the raw APIs from advertisers, providing an easy access to the ad management system |
+| 6. | Wallet App | We will create a web-based wellet that is embedded to WeChat MiniProgram |
+| 7. | Social Integration | We will integrate ads to some social platforms like WeChat, allowing ad viewers to be verified as DID owners and gain rewards |
 
 ## Future Plans
 
 We will continue to build a more decentralized Ad platform for the Polkadot ecosystem.
+
+- Introduce offchain-worker to verify ads and rewards
+- Introduce chain governance logic to setup a more decentralized platform
+- Introduce NFT support for advertisers, allowing issuing coupons, vouchers, tickets, etc
+- Introduce a Zero Knowledge Proof based data module, enhancing data privacy
 
 ## Additional Information :heavy_plus_sign:
 
