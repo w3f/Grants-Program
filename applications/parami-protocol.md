@@ -127,7 +127,7 @@ Yanping YANG
 | 3. | Substrate module: prices | We will create a Substrate module that will act as the price oracle to provide real-world prices of different kinds of assets |
 | 4. | Substrate chain | All above modules of our custom chain will interact to provide a useable Ad platform. There will be APIs to setup DIDs and ads and APIs that allow transfer assets via DID |
 | 5. | Web UI: Advertiser App | We will create a web-ui for advertisers, hiding the raw APIs from advertisers, providing an easy access to the ad management system |
-| 6. | Wallet App | We will create a web-based wllet that is embedded to WeChat MiniProgram |
+| 6. | Wallet App | We will create a web-based wallet that is embedded to WeChat MiniProgram |
 | 7. | Social Integration | We will integrate ads to some social platforms like WeChat, allowing ad viewers to be verified as DID owners and gain rewards |
 
 ## Future Plans
