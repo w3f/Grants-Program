@@ -106,7 +106,16 @@ There are several stages in the commissioned shopping process:
 6. After the commissioned shopping process is completed, the consumer or the shopping agent submits the invoice information. Submit parameters: invoice code, invoice number, invoice date, invoice amount, and 6-digit verification code after the invoice.
 7. The off-chain worker of the system will verify the invoice. The credit value of both parties will be increased only after the invoice information in the completed commissioned shopping order is valid.
 
-> Note: The Consumer and shopping agent will complete password negotiation in steps 1->2, and private information will be encrypted in the next steps.
+> **How to encrypt the privacy data of both parties in the commissioned shopping order?**
+>
+> We will use [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman) to establish a shared secret for both parties in steps 1->2. We will use [SM2(GM/T 0003-2012)](https://zh.wikipedia.org/wiki/SM2) for the program implementation. The privacy data of the order will be stored on chain.
+>
+> The key agreement process is:
+>
+> 1. The consumer uses his private key and the current nonce to derive a 256-bit secret key and its SM2-publicKey, and record SM2-publicKey on the commissioned shopping order(on chain).
+> 1. The shopping agent also uses his private key and the current nonce to derive a 256-bit secret key and its SM2-publicKey when accepting the commissioned shopping order, and record SM2-publicKey on this order(on chain).
+> 1. In this way, both parties have exchanged the SM2-publickey on chain, and the SM2-privatekey is stored on the offline client. The offline clients of both parties use the SM2 key agreement algorithm to produce a shared key that is used for data encryption.
+> 1. In the next steps, both parties use this shared secret to encrypt the privacy data in the commissioned shopping order.
 
 Each stage has an operation time limit. If the time-out occurs, there are the following processing conditions:
 
@@ -231,9 +240,9 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 
 ### Overview
 
-* **Total Estimated Duration:** 3 months.
+* **Total Estimated Duration:** 2 months.
 * **Full-time equivalent (FTE):** 5 FTE.
-* **Total Costs:** 1.55 BTC (CHF 30k equivalent).
+* **Total Costs:** 1.05 BTC (CHF 20k equivalent).
 
 ### Milestone 1 UI design and System module definition
 
@@ -273,22 +282,6 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 | 5. | Substrate module: Native Token | We will create a Substrate module that will manage native token inflation. | 
 | 6. | Substrate module: Invoice | We will create a Substrate module that will manage and verify invoice. | 
 | 7. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-
-### Milestone 3 Parachain Testnet Debugging
-
-* **Estimated Duration:** 1 month
-* **FTE:**  2
-* **Costs:** 0.52 BTC
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will write how Shopbring interacts with other parachains. |
-| 0c. | Testing Guide | The code will have 90% unit-test coverage to ensure functionality |
-| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Implement off-chain worker | We will implement off-chain worker that can tracking oracle cryptocurrency prices, and request tax agency services to verify the validity of the invoice.  |
-| 2. | Parachain Testnet Debugging | We will build our own parachain testnet to debug XCMP. | 
-| 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 ## Future Plans
 
