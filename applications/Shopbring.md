@@ -310,6 +310,7 @@ We will seek Polkadot volunteers to assist in the code audit.
 **What work has been done so far?**
 
 So far we have completed the project possibility verification evaluation.
+UI mock-ups/designs is not yet available. Our project's UI design is still in draft.
 
 **Are there are any teams who have already contributed (financially) to the project?**
 
