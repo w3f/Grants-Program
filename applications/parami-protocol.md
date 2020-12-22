@@ -108,12 +108,12 @@ Yanping YANG
 ### Overview
 * **Total Estimated duration:** 4 months
 * **Full-time equivalent (FTE):** 3 FTE
-* **Total Costs:** 2 BTC
+* **Total Costs:** 1 BTC
 
 ### Milestone 1 — The Parami Protocol
 * **Estimated duration:** 4 month
 * **FTE:** 3
-* **Costs:** 2 BTC
+* **Costs:** 1 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
