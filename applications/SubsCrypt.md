@@ -17,7 +17,8 @@ We have been developing on different web3 technologies but none of them could sa
 In our country, we have a lot of restrictions and censorship. We are suffering from Iran's government's Strict policies and getting banned from universal communities and worldwide payment (e.g., PayPal and visa card) all because we are Iranian.
 Two months ago, our team started this idea to resolve these limits and connect our people to the world. and now, we are going to announce our project as a service on blockchain to spread this type of freedom to the world.
 besides of this, we have developed these type of apps and we think this project can enhance UX for sites with payment and subscription plans(user side). and facilitates developing(developer side).
-
+ 
+ 
 Please provide the following:
   * A brief description of the project.
   * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
