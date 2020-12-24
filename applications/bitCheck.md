@@ -69,7 +69,7 @@ We have not found similar projects in Polkadot ecosystem. The most similar proje
 
 ### Background:
 * Jacky Gu - cn full name: Gu Qianfeng, had written code for Ripple, been CTO of BTC Media(Asia). Co-founder of ForcePool(f02438) in top 10 filecoin miners.
-* LiXing - en name: Star Li, professional in zero-knowledge, 70% articles related zero-knowledge tech in Chinese is from him. https://www.chainnews.com/u/923057071849.htm
+* LiXing - en name: Star Li, professional in zero-knowledge, 70% articles related zero-knowledge tech in Chinese is from him. blog: https://www.chainnews.com/u/923057071849.htm
 * Luo Chuan - senior programmer in Alibaba Group and worked for Alipay
 * Guodong Ren - senior production manager
 
