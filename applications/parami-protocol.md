@@ -51,6 +51,8 @@ Advertisers are always very concerned about the effectiveness of advertising. Fo
 
 ### Ecosystem Fit
 
+The Polkadot community alreay has a few standard DID solutions. The Parami DID will be a production-ready and domain-specific DID solution. We will add a referral system and use DID attributes as users' ad preference data.
+
 Projects like XCHNG, MAD Network, ADEX and Parpuys, use smart contracts to build infrastructure, which is expensive for normal users yet not appealing.
 
 Other projects, like Rebelai, adChain, are using blockchain to solve the problem of deception in traditional advertising, which neglects the value of user data and privacy.
@@ -122,18 +124,19 @@ Yanping YANG
 | 0c. | Tutorial | We will provide a standalone tutorial for endusers and developers. This will be a step-by-step guide. |
 | 0d. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 | 0b. | Testnet | Setup and run a testnet |
-| 1. | Substrate module: did | We will create a Substrate module that will generate and manage on-chain DID with detailed preference profile |
+| 1. | Substrate module: did | We will create a Substrate module that will generate and manage on-chain DID with detailed preference profile. A referral system will be integrated with DID |
 | 2. | Substrate module: ads | We will create a Substrate module that will manage ads metadata, including traditional ads metadata and rewarding settings |
 | 3. | Substrate module: prices | We will create a Substrate module that will act as the price oracle to provide real-world prices of different kinds of assets |
 | 4. | Substrate chain | All above modules of our custom chain will interact to provide a useable Ad platform. There will be APIs to setup DIDs and ads and APIs that allow transfer assets via DID |
 | 5. | Web UI: Advertiser App | We will create a web-ui for advertisers, hiding the raw APIs from advertisers, providing an easy access to the ad management system |
-| 6. | Wallet App | We will create a web-based wallet that is embedded to WeChat MiniProgram |
-| 7. | Social Integration | We will integrate ads to some social platforms like WeChat, allowing ad viewers to be verified as DID owners and gain rewards |
+| 6. | Wallet App | We will create a web-based wallet that is embedded to WeChat MiniProgram, the tech stack will be vue.js |
+| 7. | Social Integration | We will integrate ads to some social platforms like WeChat, allowing ad viewers to be verified as DID owners and gain rewards. To enable the combination of Wallet App and social platforms, we will rely on the open platform functionality provided by social platforms, such as [WeChat MiniProgram](https://mp.weixin.qq.com/cgi-bin/wx), Facebook APIs, and Telegram Bots. |
 
 ## Future Plans
 
 We will continue to build a more decentralized Ad platform for the Polkadot ecosystem.
 
+- Refine oracle implementation. Engage ad-specific validation into it, like an anti-spam check, visibility validation, and so on.
 - Introduce offchain-worker to verify ads and rewards
 - Introduce chain governance logic to setup a more decentralized platform
 - Introduce NFT support for advertisers, allowing issuing coupons, vouchers, tickets, etc
