@@ -9,13 +9,13 @@
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
-Develop a Client RPC An unified client RPC using GraphQL connectors to Rosetta APIs for Substrate and bridges for each specific substrate parachain, define a template mapping.
+Development a unified client RPC using GraphQL connectors to Rosetta APIs for Substrate and bridges for each specific substrate parachains or bridge, defining a template to mapping for each one.
 
 ### Overview
 
-----
 
-This would dramatically speed up the implementation of !Ink as the language for smart contract development on substrato.io, thus allowing early adoption of these platforms in the smart contract production environment  , almost totally dominated by solidity at the moment. Mainly due to the fact that there are very few quick and easy tools to implement for Dapp developers on the substrate.io/polkaDOT platform.
+
+This would dramatically speed up the implementation of !Ink as the language for smart contract development on substrato.io, thus allowing early adoption of these platforms in the smart contract production environment  , almost totally dominated by solidity at the moment. Mainly due to the fact that there are very few quick and easy tools to implement for Dapp developers on the PolkaDOT/Substrate.io platform.
 
 #### Technologies
 * XDV
@@ -26,14 +26,14 @@ This would dramatically speed up the implementation of !Ink as the language for 
 
 #### An unified client RPC using GraphQL connectors to Rosetta APIs for Substrate and bridges
 
-The possibility of developing an RPC client using GraphQL connectors based on Rosseta API's specifications such that it allows the use of defined and standard connectors for the different substrate parachain or blockchain bridge, for any dapp in an elegant, standard and predefined way regardless of the parachains or bridge to connect within the substrate, accelerating its adoption at the developer level in the blockchain ecosystem, in addition to connectors and middleware in the business world that could also take advantage of said connectors and interact with multiple blockchains through a simple, standard and elegant interface.
+The possibility of developing an RPC client using GraphQL connectors based on Rosseta API's specifications such that it allows the use of defined and standard connectors for the different PolkaDOT/Substrate parachain or blockchain bridge, for any dapp in an elegant, standard and predefined way regardless of the parachains or bridge to connect within the Substrate, accelerating its adoption at the developer level in the blockchain ecosystem, in addition to connectors and middleware in the business world that could also take advantage of said connectors and interact with multiple blockchains through a simple, standard and elegant interface.
 
 
 ### Project Details 
 
 ![Client RPC using GraphQL connectors](./paid_protocol.png)
 
-This image explains how Client RPC using GraphQL, completely abstracts the interaction layer of the dapp with substrate plataform and the different parachains (or blockchain bridges) with the defined connector.
+This image explains how Client RPC using GraphQL connectors, completely abstracts the interaction layer of the dapp with PolkaDOT/Substrate platform and the different parachains (or blockchain bridges) with the defined connector.
 
 
 * Build out a rosetta api for each specific substrate chain (eg Plasm) using a fork  from https://github.com/coinbase/rosetta-specifications
@@ -53,6 +53,12 @@ This image explains how Client RPC using GraphQL, completely abstracts the inter
 
 
 ### Ecosystem Fit 
+
+Our project is different in that our team has had more than a year of experience with making wallets for blockchain dapps and then half a year with deep experience in DID, Swarm, IPFS and document signing, and libp2p form messaging, which are the bulk of tech experience as defined a new protocols for handle docuements, in a system legal and para legal in one parachains (like moonbeam or plasm) of polkaDOT, and after in native pallet of PolkaDOT/Substrate.io.
+
+This has allowed us to identify the drawbacks and obstacles in the development of dapp on the PolkaDOT/Substrate platform, mainly in the interaction with the basic functions of the pallet and / or parachains, through a unified interface that facilitates its implementation within a dapp, abstracting all the RPC logic of each parachains for the developer, simplifying and accelerating the adoption curve, through an RPC client, based on the specifications of [rosseta-api] (https://github.com/coinbase/rosetta- specifications), but using GrahpQL and Typewritten Connectors, which allow to build queries from the frontend and send mutations in a standard and elegant way.
+
+Additionally, with the integration of these connectors with other tools of our previous developments, the client would have the possibility of managing the cryptographic keys used, employing the secure storage of the built-in wallet to sign the mutations sent from the GraphQL queries. significantly raising the security levels of dapp deployments all within the polkaDOT / Substrate.io ecosystem.
 
 
 ## Team :busts_in_silhouette:
@@ -89,9 +95,9 @@ Please describe the team's relevant experience.  If the project involves develop
 
 ## Development Roadmap :nut_and_bolt: 
 
-PAID Network, foresees the development of the evolution of Solido Form, as a tool that facilitates the development of Dapp, connected to Smart Contract of the! Ink / Substrate platform, additionally being able to integrate smart contract of other platforms such as Ethereum, VeChain and Tron by mention a few.
+PAID Network, foresees the development of Client RPC using GraphQL connectors, completely abstracts the interaction layer of the dapp with PolkaDOT/Substrate platform and the different parachains (or blockchain bridges) with the defined connector.
 
-* **Milestone 1:** Development of 
+* **Milestone 1:** Development of  Client RPC using GraphQL connectors, completely abstracts the interaction layer of the dapp with PolkaDOT/Substrate platform.
 
 ### Overview
 * **Total Estimated Duration:** 3 month
