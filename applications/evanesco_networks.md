@@ -118,6 +118,8 @@ A complete decentralized financial network must has a privacy layer. Users are c
 | ------ | -------------------- | ------------------------------------------------------------ |
 | 0a.    | License              | Apache 2.0                                                   |
 | 0b.    | Documentation        | We will provide both inline documentation of the code and a basic tutorial that explains how a user can running substrate to support private netowork service |
+| 0c.	   | Testing Guide	       | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 0d.	   | Article/Tutorial	    | We will write an article or tutorial that explains the work done as part of the grant. |
 | 1.     | P2Private-rust Repo  | We will create a new lib named P2Private written  in rust which can implement the private protocol |
 | 2.     | private service node | the substrate node integrate with P2Private-rust module and perform as a Tor-like network |
 | 3.     | Test-Net             | A Test-net could be tested by limited users would deployed.  |
@@ -131,7 +133,9 @@ A complete decentralized financial network must has a privacy layer. Users are c
 | Number | Deliverable    | Specification                                                |
 | ------ | -------------- | ------------------------------------------------------------ |
 | 0a.    | License        | Unlicense                                                    |
-| 0b.    | Testing Guiden | The documentation will be provided to show the how to use the client |
+| 0b.    | Documentation  | The documentation will be provided to show how to integrate the P2Private function in client|
+| 0c.	   | Testing Guide	 | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 0d.	   | Article/Tutorial	    | We will write an article or tutorial that explains the work done as part of the grant. |
 | 1.     | P2Private-cli  | It would implemented in  rust. We will create a client to communicate with each other based on the private substrate network |
 
 ## Future Plans
