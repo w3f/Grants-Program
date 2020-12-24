@@ -45,11 +45,15 @@ We will make the protocol has **cross-chain dex** functionalities in this grant.
 
 In the past grants([Zenlink DEX Pallet](./zenlink.md) and [Zenlink DEX Smart Contract](./zenlink-smart-contract.md)), We have implemented Zenlink DEX Protocol in two ways and verified its basic dex functionalities, such as token issue, trading, deposit funds, etc. However, the tests are all based on a single Substrate chain. So that, we would like to move further to make cross-chain value liquidity be possible on Zenlink DEX Network. For now, the best testnet should be Rococo which supports parachains and be free. There are still lots of things to do. 
 
-Firstly, we will spike Unified Asset ID which is used for identifying different assets in Zenlink DEX Network.
-Secondly, we will spike HRMP and XCMP, then apply them to Zenlink DEX Protocol.
-Finally, we will deploy the new Zenlink DEX Protocol to multiple Substrate chains based on the latest Rococo source code.
+Firstly, we will spike some asset modules, for example [orml-xtoken](https://github.com/open-web3-stack/open-runtime-module-library/pull/332/files#diff-9413d5e6d4c0aee4abccc79435f7885925fd1e4d26f8cfa1c5a7a5f377557215) which is used for identifying assets in different parachains. Then, we will adapt Zenlink DEX Module to the asset module.
 
-In generally, the purpose of this grant is to deploy Zenlink Protocol to the latest Rococo testnet, then verify the cross-chain dex functionalities.
+Secondly, using the asset module and Zenlink DEX Module, we will implement an one-click cross-chain assets swap. The result is that user can send a swap transaction in Parachain200 which targe to the dex in Parachain300, then user will get another token in Parachain300.
+
+![Cross-chain Assets Swap](https://uploader.shimo.im/f/Th3S540GGIys8j0O.png!thumbnail)
+
+Finally, we will deploy the whole system to Rococo v1 to open test for everyone.
+
+In generally, the purpose of this grant is to deploy Zenlink Protocol to Rococo V1, then verify the cross-chain dex functionalities.
 
 ### Ecosystem Fit 
 no
@@ -110,7 +114,7 @@ no
 | Deliverable  | Specification  | 
 |--------------|---------------|
 | Technical specifications and Zenlink DEX Module design |  These spec should be included in the  [whitepaper](https://github.com/zenlinkpro/whitepaper/blob/master/en/zenlink_whitepaper_en.pdf). |
-| Zenlink DEX Pallet Repository | A git repository containing the dex smart contract source code. The pallet will has cross-chain dex functionalities. |
+| Zenlink DEX Pallet Repository | A git repository containing the dex source code. The pallet will be adapted to a general asset module and achieve the cross-chain dex functionalities. |
 | Tests        | The code will have proper unit-test coverage to ensure functionality and robustness                                                                    | 
 | Tutorial       | The tutorial will not only indicate that how to use set up and deploy it into Rococo testnet, and also introduce special user cases and potential extensibility. It will be be published on Medium.                                                                   |
 
