@@ -6,111 +6,154 @@
 
 
 ## Project Overview :page_facing_up: 
-**SubsCrypt** is a BaaS(BlockChain as a service) for developers to facilitate integration of their subscription methods on the PolkaDot blockchain using a smart contract and a dashboard panel for admins to gather useful business data of their subscribed users(by perserving the privacy of users) and also a dashboard panel for users to manage all their subscriptions in one place.
+**SubsCrypt** is a BaaS(Blockchain as a service) for developers to facilitate the integration of their subscription methods on the PolkaDot blockchain using a smart contract. A dashboard panel for admins to gather useful business data of their subscribed users(by protecting users' privacy) and a dashboard panel for users to manage all their subscriptions in one place.
 
 ### Overview
-**SubsCrypt** focuses on sovling a traditional problem in both user and devloper side. Developers will no more be worried about privacy of and maintaing the customers database and payment mechanism, by using **SubsCrypt**, they can integrate Web3 in their service to benefit from blockchain in a developer freindly way(minimum time and expertise resource). Users will also enjoy the privacy that they can preserve and the all-in-one platform that they can manage their subscriptions in diffrent services. By making all these precedure easy, we can help small online businessed to enjoy the benefits of **Web3** and to only focus on their service which will hopefully leads to mass-adoption of **Web3**
+**SubsCrypt** focuses on solving a traditional problem on both the user and the developer side. Developers will no more be worried about the privacy of and maintaining the customers' database and payment mechanism. Using **SubsCrypt**, they can integrate Web3 in their service to benefit from blockchain in a developer-friendly way(minimum time and expertise resource). Users will also enjoy the privacy that they can preserve and the all-in-one platform to manage their subscriptions in different services. By making all these procedures easy, we can help small online businesses to enjoy the benefits of **Web3** and to only focus on their service, which will hopefully lead to mass-adoption of **Web3**
 
-We have been developing on different web3 technologies but none of them could satisfy our requirments for customisability, by using Substrate we can customise our parachain so it can fit our needs(we are also willing to connect to be a PolkaDot parachain)
+We have been developing on different web3 technologies, but none could satisfy our customizability requirements. By using Substrate, we can customize our parachain so it can fit our needs(we are also willing to continue our project to be a PolkaDot parachain)
 
 
 In our country, we have a lot of restrictions and censorship. We are suffering from Iran's government's Strict policies and getting banned from universal communities and worldwide payment (e.g., PayPal and visa card) all because we are Iranian.
-Two months ago, our team started this idea to resolve these limits and connect our people to the world. and now, we are going to announce our project as a service on blockchain to spread this type of freedom to the world.
-besides of this, we have developed these type of apps and we think this project can enhance UX for sites with payment and subscription plans(user side). and facilitates developing(developer side).
- 
- 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+Two months ago, our team started this idea to resolve these limits and connect our people worldwide. We will now announce our project as a service on blockchain to spread this type of freedom to the world.
+Besides this, we have experience in developing different backend services and Dapps, and we came to the conclusion that our platform can help developers to migrate from web2 to web3 and also help users by enhancing their user experience to use web3 websites(they only need to use a wallet for registration, and our login procedure can be handled without wallet)
+
+<!-- pros:
+1. Blockchain benefits
+2. All-in-one soloution to manage subscription mechanism in services that help users to manage their ser
+vices in on platform without privacy problems(User dashboard for users to check their status)
+3. minimmizing development effort for developers to integrate subscription and payment into their service(providing a RestAPI for developers to easily interact with blockchain)
+4. minimizing the fees -->
 
 ### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
-
-Therefore, we ask the teams to submit (where relevant):
 * Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
+One of the most important aspects of our service is UI/UX, and we are all aware of the difficulties of web3 usage for the majority of people, so we will provide a UI component that can be integrated into the websites and also a webpage that has an invoice to pay( developers can choose whichever method that suits them better). We are also planning to design a user/developer dashboard that will retrieve necessary data from the blockchain
+
+* An overview of the technology stack to be used  
+As we explained, we want to provide a service that will fit into different stacks with minimum effort so that we will implement our side of this service with the following stack:
+- User/developer Dashboard (Front) => Vue.js and RPC API to contract
+- Smart Contract => Rust and Ink on edgeware
+- UI integration components => ES6 and purejs library
+- Backend high-level API to connect to smart contract => Django, node.js for this milestone
 
 ### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
+As we have been searching for similar ideas in the blockchain ecosystem, we found EIP1337 that has a similar idea, but the implementation is low level, and it does not help either developers or users have a smooth subscription platform.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 * Name of team leader
+    Saber Zafarpoor (Product manager & Blockchain Designer)
+    Hadi Esna (CTO & Blockchain Designer)
 * Names of team members	
+    Ahmad Salimi(Software Eningeer)
+    Alireza Ilami(Data Analyst)
+    Sepehr Kianian(Front-End devloper & Blockchain developer)
+    Amir Sadra Abdolahi(Front-End devloper & Blockchain developer)
+    Yasaman Shad(Graphic Designer & UX)
+    ...(we will hire blockchain researchers)
+
 
 ### Contact
-* **Contact Name:** Full name of the contact person (e.g. John Brown)
-* **Contact Email:** Contact email (e.g. john@duo.com)
-* Website
+* **Contact Name:** Saber Zafarpoor
+* **Contact Email:** szafarpoor@ce.sharif.edu
+* https://oxydev.ir
 
-### Legal Structure 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
 
 ### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+**OxyDev** consists of young enthusiast students/developers who graduated or undergraduates at #1 university of Iran (Sharif University of Technology) trying to make web3 easier to use and integrate into real-world services. We have developed several Defi projects in Tron and Ethereum Ecosystem and expanded our team to make venturous leaps to play our roles in making a more user-friendly world in the next generation of Web(Web3). We have done several projects of web2 that make our team aware of the pros and cons of web2. 
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+* https://github.com/oxydev
+* Our previous projects can not be publicly announced(NDA)
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* https://www.linkedin.com/in/szafarpoor/
+* https://www.linkedin.com/in/ahmadsalimi/
+* https://www.linkedin.com/in/hadiesnaashari/
+* https://www.linkedin.com/in/alirezailami/
 
 ## Development Roadmap :nut_and_bolt: 
+We will divide our project into four milestones. For the first milestone, we will implement our smart contract can be deployed to a substrate chain using ink! Which is a smart contract substrate pallet. The second and third milestones will be implemented in parallel. The last milestone will be connecting the components to work seamlessly together.
+**There will be three ways to connect to our smart contract:**
+1. Using a Polkadot{.js} wallet to interact with the contract(state of the contract can be modified in this scenario)
+2. Using our RestAPI backend or third party library to retrieve data from the contract (state of the contract can not be modified in this scenario)
+3. Using any customized client to interact with the contract
 
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
+**First milestone**: we will design(it is almost done right now) and implement our smart contract, and we will also design XD files of UI, and we will write our white-paper in this milestone(including the test unit).
 
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
+**Second milestone**: we will implement the UI Dashboard(Vue.js) and UI modules(ES6 and pure js) regarding our XD design in the previous milestone.
 
-For each milestone:
-* Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* Please include total amount of funding requested per milestone.
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-* Please commit to providing a dockerfiles for the delivery of your project. 
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
-* Deliverables 0a-0d are mandatory and should not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research oriented and as such there is no code to test)
+**Third milestone**: Implementing our RestAPI backend in Node.js to provide an API layer to interact with our contract(it is optional to use this API), we will also implement our third-party libraries for Django and node.js to interact with our backend and implement the required functionality to make the integration for developers easier(including test unit).
+
+
 
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission. (e.g. 0.80 BTC)
+* **Total Estimated Duration:** 9 weeks
+* **Full-time equivalent (FTE):** 5
+* **Total Costs:** 1.1 BTC
 
-### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 0.75 BTC
+### Milestone 1 — Smart Contract and whitepaper
+* **Estimated Duration:** 3 weeks
+* **FTE:**  3
+* **Costs:** 0.3 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Contract Implementation | we will implement the contract and deploy it to a test net.
+| 1.1 | Contract code | implementation of contract |
+| 1.2 | High-level API | we will provide an API of contract |
+| 1.3 |  Documentation | full documentation of API that explains how to connect to and use it.
+| 1.4 | Testing Guide | The code will have unit-test coverage (100%) to ensure functionality and robustness. In the guide, we will describe how to run these tests | 
+| 2. | Article | We will write an article or tutorial that explains the work done in this milestone as part of the grant.
+| 3. | Design Front-End component | design UI and UX of front-end component with adobe xd.
+| 4. | white-paper | full description of roadmap and technical specification of this project |  
 
-### Milestone 2 Example — Additional features
-...
+### Milestone 2 — UI
+* **Estimated Duration:** 5 weeks
+* **FTE:**  2
+* **Costs:** 0.3 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | UI Dashboard | A dashboard to manage user's subscriptions and also refund them|  
+| 1.1 | UI Dashboard for users | A dashboard to manage user's subscriptions and also refund them|  
+| 1.2 | UI Dashboard for admins | A dashboard to manage user's customers and create a coupon or see related charts, etc. |  
+| 3. | ES6 Module for developers | Developers can use this module to integrate our service into their websites| 
+| 3.1 | Implementation of ES6 Module for developers | we will write an ES6 Standard module| 
+| 3.2 | Documentation of ES6 Module | We will provide both inline documentation of the code and a basic tutorial that explains how a developer can integrate our module into their projects| 
+| 4. | Unit Test | We will provide unit tests to cover our ES6 Module|
+
+
+### Milestone 3 — Back-end libraries
+* **Estimated Duration:** 6 weeks(parallel with milestone 2)
+* **FTE:**  3
+* **Costs:** 0.5 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Backend RestAPI | we will provide a RestAPI to facilitate the connection to blockchain. it will be used to check the subscription or retrieve any data from the contract. |
+| 1.1 | Backend RestAPI Implementation | we will provide a RestAPI to facilitate the connection to blockchain. it will be used to check the subscription or retrieve any data from the contract. |
+| 1.2 | Backend RestAPI Documntaion | A fully comprehensive documentation to use our RestAPI |
+| 1.3 | Backend RestAPI Unit test | The code will have unit-test coverage (100%) to ensure functionality and robustness.|
+| 2. | Third Party libraries | We will provide some library to make integration of our service easier in different backend stacks by connecting to our Backend RestAPI|  
+| 2.1 | Django Library | A high-level library to use our service in Django| 
+| 2.2 | Django Library documentation | A fully comprehensive documentation to use our library| 
+| 2.3 | Django Library Unit test | The code will have unit-test coverage (100%) to ensure functionality and robustness| 
+| 2.4 | Node.js Library | A high-level library to use our service in Node.js| 
+| 2.5 | Node.js Library documentation | A fully comprehensive documentation to use our library| 
+| 2.6 | Node.js Library Unit test | The code will have unit-test coverage (100%) to ensure functionality and robustness| 
+
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
+when we finish this project successfully, then we will try to make our substrate pallet to become a standalone blockchain, and if everything goes well, we will try to be a PolkaDot parachain.
 
-## Additional Information :heavy_plus_sign: 
-Any additional information that you think is relevant to this application that hasn't already been included.
+<!-- ## Additional Information :heavy_plus_sign:  -->
+
+<!-- Any additional information that you think is relevant to this application that hasn't already been included.
 
 Possible additional information to include:
 * What work has been done so far?
 * Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far?
+* Have you applied for other grants so far? -->
