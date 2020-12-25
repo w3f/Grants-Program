@@ -3,23 +3,23 @@
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
 * **Project:** ADOR
-* **Proposer:** lover33
-* **Payment Address:** 14vAW6McTR2U8zm4VcSW2v8WkUAyPAUZ2Q
+* **Proposer:** bitsavage0202
+* **Payment Address:** 0x4906E4f95ad546cE865916F65C825e00630bFfa8
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Description :page_facing_up: 
 
 Please provide the following:
-  * We are building an agnostic hub for education, identity & virtual items.
-  * Currently, lack of financial education plagues all societies, we champion virtual ownership and global awareness. Solving this will allow individual to own and monetize with ease.
-  * We take a unique approach where we aim to connect the best tech (like polkadot) and present it to thousands of crypto experts & newbies alike.
-  * Mass adoption & financial equality is the mission. We are partnering with Colleges, galleries and institutions currently. As we build our MvP we will be able to fully show our vision.
+  * We are building an agnostic hub for Defi & NFT creation. 
+  * Currently, most top NFT platforms suck the creativity and value from an artist, we aim to empower the creators, collectors & community!
+  * We take a unique approach where we will cater to traditional creatives and give them the spotlight they deserve to succeed.
+  * Mass adoption & financial equality is the mission. We want to see creatives earn a living and the respective community benefit from their success.
 
 ## Team :busts_in_silhouette:
 
-* **Members:** Mark Savage, Wisdom Abioye
-* **LinkedIn Profiles:** https://www.linkedin.com/in/mark33/, https://www.linkedin.com/in/wisdomabioye/
+* **Members:** Mark Savage, Wisdom Abioye, Scott Holiday, Sunday, Yolotron, Morgan Steckler
+* **LinkedIn Profiles:** https://www.linkedin.com/in/mark33/, https://www.linkedin.com/in/wisdomabioye/, https://www.linkedin.com/in/mrmorgo/
 * **Code Repos:** https://github.com/ADORORG/ador-site
 * **Website:**	https://www.adors.org
 * **Legal Structure:** ADOR PCDC LLC
@@ -27,35 +27,71 @@ Please provide the following:
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 2 years
-* **Total Costs:** Cost of project: 5btc, Funds needed to start: $28k
+* **Total Estimated Duration:** 1year
+* **Total Costs:** Cost of project: 1.25BTC, Funds needed to finish: $30k
 
-### Milestone 1
+### Milestone 1 - completed
 
 Please add additional milestones in the same way. If possible, include a tutorial and a docker image for each milestone to make it easier for us to evaluate your software. 
-* **Estimated Duration:** M1: 3 months
-* **Costs:** 1.5BTC
+* **Estimated Duration:** M1: DONE
+* **Costs:**
 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 1. | Profile layout | Identity Control  |  
-| 2.  | Smart Contract | Platform mechanics |  
+| 1. | Defi | farming  |  
+
+
+### Milestone 2
+
+* **Estimated Duration:** M1: 1 months
+* **Costs:** 0.42BTC : $12K
+
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1. | Minting | Alpha Creators  | 
+| 2.  | Auctions | Alpha Creators |
+
+
+### Milestone 3
+
+* **Estimated Duration:** M1: 2 months
+* **Costs:** 0.42BTC : $12K
+
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1.  | Staking | NFT Farming |  
+| 2.  | Marketplace | Community usage | 
+
+
+### Milestone 4
+
+* **Estimated Duration:** M1: 2 months
+* **Costs:** 0.42BTC : $12K
+
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1.  | Gigs | Alpha Creators |
+| 2.  | ADORLAND | Community Usage |  
 
 
 ## Additional Information :heavy_plus_sign: 
 Any additional information that you think is relevant to this application that hasn't already been included.
 
 Additional information:
-* Website Client beginning structure
+* Adors.org Defi is live and functional
 * Current funds from hacakthon winnings: Casper Labs
-* We do not have any other grants completed yet.
+* We do not have any other grants.
 * Competitors are Opensea, Wax, Enjin, Opskins and NFT Kred. Since we take an educational, agnostic approach our user base will encompass a larger pool.
-* RoadMap: Q1-2020 MvP ALPHA phase
-Q2-2020: Confirm funding, Build out Wireframe and app design
-Q3-2020: Launch ALPHA phase, onboard users to test profile verification & system mechanics
-Q4-2020: Ramp up to 5,000 beta tester, Mint virtual items, verification and creation
-Q1-2021: Attend Conferences and festivals for art & blockchain education
-Q3-2021: Private round of traditional funding for $1.5MM to scale
-Q4-2021: PR release, major platform to disrupt social media & virtual ticketing model.
+* RoadMap: Q1-2021 MvP ALPHA phase
+Q1-2021: Confirm funding, Finish website
+Q1-2021: Launch ALPHA phase, onboard users to mint
+Q1-2021: PR release
+Q2-2021: Ramp up to 1,000 beta tester, Mint virtual items & launch campaigns
+Q3-2021: Host Conferences and campaigns as well as blockchain education
+Q4-2021: Scaling solutions
+
  
