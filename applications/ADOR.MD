@@ -4,7 +4,7 @@
 
 * **Project:** ADOR
 * **Proposer:** bitsavage0202
-* **Payment Address:** 0x4906E4f95ad546cE865916F65C825e00630bFfa8
+* **Payment Address:** bc1q3mws8lc42azwnlrszse7vz6zrw2p9dyyeyyu4z
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
