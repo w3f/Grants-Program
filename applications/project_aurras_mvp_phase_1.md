@@ -48,7 +48,7 @@ Workflow composer consists of an async Rust library to compose multiple triggers
 This is the end user facing component to utilize the workflow. This component comprises of a backend application which is responsible for user registration, selecting the workflow, managing / creating workflow using friendly APIs, providing input parameters. API gateway / Machine gateway where the external world can connect to the Aurras system.  
 
 ### Ecosystem Fit
-We have identified many great teams had to build their own implementation of event listeners/monitoring tools. We intend to make this aspect easier for the community to avoid most of the boilerplate so that it can just focus on workflow actions/task which is related to their project.
+We have identified many great teams had to build their own implementation of event listeners/monitoring tools. We intend to make this aspect easier for the community to avoid most of the boilerplate so that they can just focus on workflow actions/tasks which are related to their project.
 
 * https://github.com/playproject-io/datdot-service
 * https://github.com/open-web3-stack/guardian
@@ -156,7 +156,7 @@ Repos for further reference
 | 3d. | Event Manager: Intermediate Container | Dockerfile for Containerization, Container with wsk cli and wskdeploy util, Script to add Openwhisk auth key, Deploy Openwhisk Actions and Create Triggers and Rules |
 | 3e. | Event Manager: Docker Compose Configuration | Docker Compose Configuration |
 
-### Milestone 3 — Event Manager - Parts 2
+### Milestone 3 — Event Manager - Part 2
 * **Estimated Duration:** 20 Days
 * **FTE:** 3
 * **Costs:** 0.33 BTC
