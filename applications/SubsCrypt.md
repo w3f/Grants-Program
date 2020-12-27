@@ -102,7 +102,7 @@ We will divide our project into four milestones. For the first milestone, we wil
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0a. | License | Unlicense |
 | 1. | Contract Implementation | we will implement the contract and deploy it to a test net.
 | 1.1 | Contract code | implementation of contract |
 | 1.2 | High-level API | we will provide an API of contract |
