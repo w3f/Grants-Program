@@ -40,17 +40,17 @@ As shown above,  NFT design adopts ERC721 protocol。
 
 | API-ID | **Pallet Name** | **Storage** | **Public Method** |
 | ------ | --------------- | ----------- | ----------------- |
-|1| <span id="nft" >pallet_nft </span>  | NFTMap get(fn get_nfts ): map hasher(blake2_128_concat) T::AcountId => NFT;  |pub fn create_nft(name:Vec<u8>,description:Vec<u8>, imageUrl:Vec<u8>, type:u8, amount:u256  )             |
-| |  pallet_nft  | ERC721: | - safeTransferFrom(from:AccountId,to:AccountID,tokenId:u256,data:Vec<u8>) |
-| | | | - safeTransferFrom(from:AccountId,to:AccountID,tokenId:u256) |
-| | | | - transferFrom(from:AccountId,to:AccountID,tokenId:u256) |
-| | | | - approve(approved: AccountId, tokenId:u256) |
-| | | | - setapproveForAll(approved: AccountId,  approved:bool)|
-| | | | - getApprove( tokenId:u256) |
-| | | | - isApproveForAll(owner: AccountId, operator:AccountId) |
-| | | | - burn(from: AccountId, tokenId:u256) |
-|2| <span id="store"> pallet_store</span> |  StoreMap get(fn get_onsale):map hasher(blake2_128_concat)  u8 =>Vec<NFT>;  | pub fn sell_setting(contractAddress:Vec<u8>, tokenId:u256,  price:u256 )|
-| | | | pub fn buy(contractAddress:vec<u8>, tokenId:u256)|
+|1| <span id="nft" >pallet_nft </span>  | NFTMap get(fn get_nfts ): map hasher(blake2_128_concat) T::AcountId => NFT;  |`pub fn create_nft(name:Vec<u8>,description:Vec<u8>, imageUrl:Vec<u8>, type:u8, amount:u256 ` )             |
+| |  pallet_nft  | ERC721: |   `- safeTransferFrom(from:AccountId,to:AccountID,tokenId:u256,data:Vec<u8>)` |
+| | | | `- safeTransferFrom(from:AccountId,to:AccountID,tokenId:u256) `|
+| | | |` - transferFrom(from:AccountId,to:AccountID,tokenId:u256) `|
+| | | | `- approve(approved: AccountId, tokenId:u256) `|
+| | | |` - setapproveForAll(approved: AccountId,  approved:bool)`|
+| | | | `- getApprove( tokenId:u256) `|
+| | | | `- isApproveForAll(owner: AccountId, operator:AccountId) `|
+| | | |` - burn(from: AccountId, tokenId:u256)` |
+|2| <span id="store"> pallet_store</span> | ` StoreMap get(fn get_onsale):map hasher(blake2_128_concat)  u8 =>Vec<NFT>;`  | `pub fn sell_setting(contractAddress:Vec<u8>, tokenId:u256,  price:u256 )`|
+| | | |` pub fn buy(contractAddress:vec<u8>, tokenId:u256)`|
 
 #### UI 
 
