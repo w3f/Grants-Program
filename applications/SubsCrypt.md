@@ -11,18 +11,20 @@
 ### Overview
 **SubsCrypt** focuses on solving a traditional problem on both the user and the developer side. Developers will no more be worried about the privacy of and maintaining the customers' database and payment mechanism. Using **SubsCrypt**, they can integrate Web3 in their service to benefit from blockchain in a developer-friendly way(minimum time and expertise resource). Users will also enjoy the privacy that they can preserve and the all-in-one platform to manage their subscriptions in different services. By making all these procedures easy, we can help small online businesses to enjoy the benefits of **Web3** and to only focus on their service, which will hopefully lead to mass-adoption of **Web3**
 
-We have been developing on different web3 technologies, but none could satisfy our customizability requirements. By using Substrate, we can customize our parachain so it can fit our needs(we are also willing to continue our project to be a PolkaDot parachain)
+We have been developing on different web3 technologies, but none could satisfy our customization requirements. By using Substrate, we can customize our parachain so it can fit our needs(we are also willing to continue our project to be a PolkaDot parachain)
+
+Assume a scenario that Alice is a user of a service that provides monthly subscription for milk delivery(called Milkryption). Milkryption has a monthly and yearly subscryption method and they use **SubsCrypt** on their website (first they submit their method on our contract in our website, then they can use our API), so if Alice ever has used our service so far, she will only need to connect his wallet and subscript to the Milkryption using a trigger contract method(she will send some encrypted data that is encrypted with her key and also service provider key and then she will share that key with the service provider to have access to her data in the contract) but if that's her first time to ever use **SubsCrypt**, she has to also sign-up in the contract. Alice now can anytime request for a refund of remaining days of her service directly from the contract. Alice will hopefully use our service in several websites and now she can go to our website and manage his subscriptions(refunding or renewing) in one place. 
 
 
 In our country, we have a lot of restrictions and censorship. We are suffering from Iran's government's Strict policies and getting banned from universal communities and worldwide payment (e.g., PayPal and visa card) all because we are Iranian.
 Two months ago, our team started this idea to resolve these limits and connect our people worldwide. We will now announce our project as a service on blockchain to spread this type of freedom to the world.
-Besides this, we have experience in developing different backend services and Dapps, and we came to the conclusion that our platform can help developers to migrate from web2 to web3 and also help users by enhancing their user experience to use web3 websites(they only need to use a wallet for registration, and our login procedure can be handled without wallet)
+Besides, this, we have experience in developing different backend services and Dapps, and we came to the conclusion that our platform can help developers to migrate from web2 to web3 and also help users by enhancing their user experience to use web3 websites(they only need to use a wallet for registration, and our login procedure can be handled without wallet)
 
 <!-- pros:
 1. Blockchain benefits
-2. All-in-one soloution to manage subscription mechanism in services that help users to manage their ser
+2. All-in-one solution to manage subscription mechanism in services that help users to manage their ser
 vices in on platform without privacy problems(User dashboard for users to check their status)
-3. minimmizing development effort for developers to integrate subscription and payment into their service(providing a RestAPI for developers to easily interact with blockchain)
+3. minimizing development effort for developers to integrate subscription and payment into their service(providing a RestAPI for developers to easily interact with blockchain)
 4. minimizing the fees -->
 
 ### Project Details 
@@ -46,12 +48,12 @@ As we have been searching for similar ideas in the blockchain ecosystem, we foun
     Saber Zafarpoor (Product manager & Blockchain Designer)
     Hadi Esna (CTO & Blockchain Designer)
 * Names of team members	
-    Ahmad Salimi(Software Eningeer)
+    Ahmad Salimi(Software Engineer)
     Alireza Ilami(Data Analyst)
-    Sepehr Kianian(Front-End devloper & Blockchain developer)
-    Amir Sadra Abdolahi(Front-End devloper & Blockchain developer)
+    Sepehr Kianian(Front-End developer & Blockchain developer)
+    Amir Sadra Abdolahi(Front-End developer & Blockchain developer)
     Yasaman Shad(Graphic Designer & UX)
-    ...(we will hire blockchain researchers)
+    ...(we will hire blockchain researchers and UI developers to enhance the quality)
 
 
 ### Contact
