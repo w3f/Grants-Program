@@ -123,14 +123,15 @@ We all come from different and unique walks of life, backgrounds, and experience
 
 ### January 2021 Milestones
 * **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 0.75 BTC
+* **FTE:**  11.5
+* **Costs:** 0.35 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Documentation | Specification |
-| 2. | Stress Test | 1 Documentation We will start writing documentations on the various aspect of the clover product matrix. |
-| 3. | Unit Test | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 1. | Documentation | Start ddocumenting on the various aspect of the Clover product matrix. |
+| 2. | Stress Test | Start stress tests of clover nodes to ensure the robustness especially on different
+geolocation and large latency. |
+| 3. | Unit Test | The chain specific unit tests will cover 50% at the end of Jan. | 
 | 4. | License | MIT license |
 | 5. | Article/Tutorials | Writing varios tutorials to demonstrate how to setup clover nodes |  
 | 6. | Clover Rosetta Services | Integrating Coinbase Rosetta services to ensure the cross-chain compatibility |  
@@ -141,6 +142,24 @@ We all come from different and unique walks of life, backgrounds, and experience
 | 11. | Clover Wallet App | Delivering initial build of Clover official wallet on both android/iOS |
 | 12. | Clover Wallet Chrome Extension| Delivering initial build of Chrome Extension of Clover web3 wallet |
 | 13. | Substrate module: Frontier-EVM pallet| Fitting minor EVM adjustments to Clover chain |
+
+### February 2021 Milestones
+* **Estimated Duration:** 1 month
+* **FTE:**  11.5
+* **Costs:** 0.35 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Documentation | Covering 50% of the overall features on Clover Network |
+| 2. | Stress Test | Finalizing stress test with 100 nodes with 1k transactions/second for 7*24 |
+| 3. | Unit Test | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 4. | Clover Chain | MIT license |
+| 5. | Clover Explorer | Writing varios tutorials to demonstrate how to setup clover nodes |  
+| 6. | Clover OS SDK | Integrating Coinbase Rosetta services to ensure the cross-chain compatibility |  
+| 7. | Clover Wallet Chrome Extension | Fully implementing distributing gas fee functionality for EVM contract deployers |  
+| 8. | Tulip Editor We will | Creating first alpha build for Clover cross-chain block explorer based on Rosetta protocol |  
+| 9. | Clover Developer Portal | Delivering initial build of clover store app to be able download/execute eAPPs |
+| 10. | IPFS Integration | We will finalize the Clover testnet and the faucet to receive test tokens |
 
 
 ### Roadmap Link
