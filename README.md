@@ -94,7 +94,7 @@ Operations Team takes care of legal documents, invoicing and remittances.
     2. Grants Evaluators can approve a pull request to accept the deliverable.
 5. **Milestone Payment:**
     1. The Operations Team receives a notification once the delivery was accepted or after two weeks without any feedback after the initial delivery. As soon as feedback is provided by the evaluators, this feedback first needs to be resolved.  
-    2. Operations Team makes the payment to the Bitcoin address specified in the initial application.
+    2. Operations Team makes the payment to the Bitcoin or Ethereum address specified in the initial application.
 
 *Grant application can be amended at any time, necessitating a reevaluation by the Committee.* 
 
