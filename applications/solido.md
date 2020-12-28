@@ -13,7 +13,7 @@ Development a unified client RPC using GraphQL connectors to Rosetta APIs for Su
 
 ### Overview
 
-
+The project contemplates the development of an open source platform focused on existing tools but implemented within the PolkaDOT / Substrate.io ecosystem such that it allows a rapid adoption of said ecosystem as a single point of interaction between different blockchains both at the information and the level of digital assets, and with the overcommimng of open finance such as Defi and its associated oracles. This seeks to have a standard interface for dapp's developers, on Polkadot / Substrate, regardless of the parachain or blockchain with which it is going to interact, all based on open standards and widely used in the industry
 
 This would dramatically speed up the implementation of !Ink as the language for smart contract development on substrato.io, thus allowing early adoption of these platforms in the smart contract production environment  , almost totally dominated by solidity at the moment. Mainly due to the fact that there are very few quick and easy tools to implement for Dapp developers on the PolkaDOT/Substrate.io platform.
 
@@ -34,7 +34,6 @@ The possibility of developing an RPC client using GraphQL connectors based on Ro
 ![Client RPC using GraphQL connectors](./paid_protocol.png)
 
 This image explains how Client RPC using GraphQL connectors, completely abstracts the interaction layer of the dapp with PolkaDOT/Substrate platform and the different parachains (or blockchain bridges) with the defined connector.
-
 
 * Build out a rosetta api for each specific substrate chain (eg Plasm) using a fork  from https://github.com/coinbase/rosetta-specifications
 * Use from NPM, IBM package Open API to GraphQL
@@ -115,10 +114,9 @@ PAID Network, foresees the development of Client RPC using GraphQL connectors, c
 | 0a. | License | Apache 2.0 / MIT / Unlicensed |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate Runtime Module and Plasm VM's. It will be possible to send and call test transactions and meta transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage of 95% to ensure functionality and robustness. In the guide we will describe how to run these tests, And after this a Bounty policy for error detection. | 
-| 1. | Substrate module: Builder Template and Instance of Smart Agreements | We will create a runtime module in substrate.io / PolkaDOT that will allow the creation of predesignated templates with the conditions (clauses) and events most common to the type of contract to which the template will be oriented, additionally, an instance of this template will be handled allowing its subsequent execution and follow-up of events in a way decentralized.  |  
-| 2. | Substrate module (Privacy Layer): Builder Digital Signature in `Chain of Trust` | We will create a runtime module in substrate.io that will allow the verification by a Certification Authority of the digital signature based in standard PKCS 12 to be used by Smart Agreements users, allowing PAID Smart Agreements within a `Chain of Trust` scheme, where the entire system, both hardware and software is insured and verified. Which will integrate in the future Zero Knowledge verification schemes.|  
-| 3. | External Module of Substrate | External support modules for the verification of credentials, proof of citizenship and utilities and services associated with the attestation of credentials in to **DID:PAID** Method. |
-| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our Protocol |
+| 1. | TypeScript module: | Development of templates for using graphQL as a tool to interact through these tools with each of the RPC interfaces of the different parachains that make life in polkaDOT, which in a first phase will allow the management of schema and mutations, using a single client to multiple GraphQL API's. |
+| 2. | TypeScript module: | Development of templates to use GraphQL as a tool to interact through these tools with each of the RPC interfaces of the different parachutes, but integrated into a wallet with capacity for multiple types of signatures, such that the client uses said built-in storage wallet safe to manage cryptographic keys used to sign mutations have greater security in the interaction between the client and GraphQL APIs. |
+| 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of our Protocol |
 
 
 ## Future Plans
