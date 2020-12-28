@@ -131,17 +131,17 @@ We all come from different and unique walks of life, backgrounds, and experience
 | 1. | Documentation | Specification |
 | 2. | Stress Test | 1 Documentation We will start writing documentations on the various aspect of the clover product matrix. |
 | 3. | Unit Test | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 4. | License | MIT |
-| 5. | Article/Tutorials | We will write a tutorial that explains how to setup clover node |  
-| 6. | Clover Rosetta Services | We will integrate Coinbase Rosetta services to ensure the cross-chain compatibility |  
-| 7. | Clover Chain | We will fully implement the distributing gas fee to EVM contract deployers |  
-| 8. | Clover Explorer | We will create a first alpha build of Clover cross-chain block explorer based on Rosetta protocol |  
-| 9. | Clover Store | We will deliver first build of clover store app to be able download/execute eAPPs |
+| 4. | License | MIT license |
+| 5. | Article/Tutorials | Writing varios tutorials to demonstrate how to setup clover nodes |  
+| 6. | Clover Rosetta Services | Integrating Coinbase Rosetta services to ensure the cross-chain compatibility |  
+| 7. | Clover Chain | Fully implementing distributing gas fee functionality for EVM contract deployers |  
+| 8. | Clover Explorer | Creating first alpha build for Clover cross-chain block explorer based on Rosetta protocol |  
+| 9. | Clover Store | Delivering initial build of clover store app to be able download/execute eAPPs |
 | 10. | Clover Testnet | We will finalize the Clover testnet and the faucet to receive test tokens |
 | 11. | Clover Wallet App | Delivering initial build of Clover official wallet on both android/iOS |
 | 12. | Clover Wallet Chrome Extension| Delivering initial build of Chrome Extension of Clover web3 wallet |
-| 13. | Substrate module: Frontier-EVM pallet | Frontier-EVM
-pallet | Fitting minor EVM adjustments to Clover chain |
+| 13. | Substrate module: Frontier-EVM pallet| Fitting minor EVM adjustments to Clover chain |
+
 
 ### Roadmap Link
 * [https://docs.google.com/spreadsheets/d/1J4xhVIP8o0jZ_4vH2OaD2fA89K05HlO2PuYR178fb1A/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1J4xhVIP8o0jZ_4vH2OaD2fA89K05HlO2PuYR178fb1A/edit?usp=sharing)
