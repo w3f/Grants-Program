@@ -150,15 +150,17 @@ We all come from different and unique walks of life, backgrounds, and experience
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | Documentation | Covering 50% of the overall features on Clover Network |
-| 2. | Stress Test | Finalizing stress test with 100 nodes with 1k transactions/second for 7*24 |
-| 3. | Unit Test | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 4. | Clover Chain | MIT license |
-| 5. | Clover Explorer | Writing varios tutorials to demonstrate how to setup clover nodes |  
-| 6. | Clover OS SDK | Integrating Coinbase Rosetta services to ensure the cross-chain compatibility |  
-| 7. | Clover Wallet Chrome Extension | Fully implementing distributing gas fee functionality for EVM contract deployers |  
-| 8. | Tulip Editor We will | Creating first alpha build for Clover cross-chain block explorer based on Rosetta protocol |  
-| 9. | Clover Developer Portal | Delivering initial build of clover store app to be able download/execute eAPPs |
-| 10. | IPFS Integration | We will finalize the Clover testnet and the faucet to receive test tokens |
+| 2. | Stress Test | Finishing stress tests with 100 nodes with 1k transactions/second for 7*24 |
+| 3. | Unit Test | The chain specific unit tests will cover 90% by the end of Feb. | 
+| 4. | Clover Chain | Implementing enterprise developers' achitecture with in the low level logic |
+| 5. | Clover Explorer | Delivering the beta build of Clover cross chain explorer with support of BTC/ETH/DOT/CLV |  
+| 6. | Clover OS SDK | The first version of Clover OS SDK with Android/iOS version will be released by the end of Feb. |  
+| 6. | Clover Wallet App | Integrating Clover OS on Clover Wallet App |  
+| 7. | Clover Wallet Chrome Extension | Finalizing Clover chrome extension and distribute it on google store |  
+| 8. | Tulip Editor | Deliverig first POC version of Tulip editor |  
+| 9. | Clover Developer Portal | Delivering basic functionalities of developer portal with account creation/upload/upgrade
+eAPP |
+| 10. | IPFS Integration | Integrating IPFS node along with Clover node into single Docker file for distribution |
 
 
 ### Roadmap Link
