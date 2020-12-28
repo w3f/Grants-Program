@@ -24,6 +24,15 @@ Bounce provides a competitive environment, for a limited supply of tokens or oth
 
 We will run Bounce chain as standalone chain first, then join in Kusama/Polkadot network when parachain mechanism is ready.
 
+### Ethereum contracts vs Substrate modules
+| Number | Ethereum contracts | Substrate modules |
+| ------------- | ------------- | ------------- |
+| 1.  | high gas fee | low tx fee |
+| 2.  | hard to upgrade | easy and seamless module upgrade |
+| 3.  | poor governance | strong governance |
+| 4.  | payout manually by user | payout automatically by call on_finalize() or offchain_worker() |
+| 5.  | hard to prevent scam auction pools | introduce social module to prevent scam auction pools |
+
 ### Project Details 
 * An overview of the technology stack to be used
   * **Blockchain**: Rust/Substrate/Cumulus/Docker
