@@ -72,14 +72,14 @@ Bounce is currently only viable decentralized auction protocol that is live on E
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 3 months
+* **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):**  2 FTE
-* **Total Costs:** 1.3 BTC
+* **Total Costs:** 0.9 BTC
 
 ### Milestone 1 — Implement Substrate Modules and Bounce Chain
 * **Estimated Duration:** 2 month
 * **FTE:**  2
-* **Costs:** 1 BTC
+* **Costs:** 0.9 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -94,20 +94,6 @@ Bounce is currently only viable decentralized auction protocol that is live on E
 | 5. | Substrate module: nft | Implement an ERC721 & ERC1155-like asset module |
 | 6. | Bounce chain | Implement a blockchain based on Substrate and include ERC20 & NFT asset and auctions modules |  
 | 7. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-
-### Milestone 2 — Implement Bounce dApp based on Bounce Chain
-* **Estimated Duration:** 1 month
-* **FTE:**  2
-* **Costs:** 0.3 BTC
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
-| 1. | bounce.js | Implement a SDK based on polkadot.js that will provide all types and functions on Bounce modules |  
-| 2. | dApp | Implement dApp include fixed swap auction, sealed bid auction, dutch auction and english auction |
 
 ## Future Plans
 * We will integrate EVM module into Bounce Chain to support Ethereum ERC20 tokens.
