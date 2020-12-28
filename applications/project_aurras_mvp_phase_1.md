@@ -170,6 +170,7 @@ Repos for further reference
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Readme file |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 0d. | Article | We will write a Medium article that explains the work done as part of the grant. |
 | 1a. | Event Manager: Kafka Produce Action | Validate for parameters, Connect to provided brokers, Produce data to provided topic, Add deployment config to wskdeploy config |
 | 1b. | Event Manager: Kafka provider feed action | Integrate with DB service - CouchDB, Delete trigger from DB on DELETE lifecycle, Read trigger from DB on READ lifecycle, Update trigger from DB on UPDATE lifecycle |
 | 2a. | Substrate Event Feed: Configuration | CouchDB Config, Available Sections and Methods of the chain to create unique topics |
