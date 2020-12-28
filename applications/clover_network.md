@@ -168,12 +168,12 @@ We all come from different and unique walks of life, backgrounds, and experience
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Documentation | Documentation will be ready at 1.0 version to cover 100% of the current features. |
+| 1. | Documentation | Documentation will be ready at 1.0 version to cover 100% of the current features |
 | 2. | Roadmap | Releasing detailed roadmap for Clover development for Q2 |
 | 3. | Developer Incentive Program | Launching the Clover developer incentive program by the end of Mar | 
 | 4. | Tulip Editor | Delivering alpha build for Tulip Editor with EVM support |
 | 5. | Clover Wallet App | Delivering the beta build of Clover cross chain explorer with support of BTC/ETH/DOT/CLV |  
-| 6. | Clover OS | Having Clover OS supporting the iOS/Android/Embedded by the end of Mar |  
+| 6. | Clover OS | Having Clover OS support for iOS/Android/Embedded by the end of Mar. |  
 | 7. | Clover Store | Delivering the official release of Clover Store. |  
 | 8. | Clover Developer Portal | Rolling out Clover developer portal for the public with incentivize program |  
 | 9. | Clover Wallet Firefox/Safari Extension | Delivering Clover Firefox/Safari extension |  
