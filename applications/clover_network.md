@@ -121,11 +121,34 @@ We all come from different and unique walks of life, backgrounds, and experience
 * **Full-time equivalent (FTE):**  10 FTE
 * **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission. (e.g. 0.80 BTC)
 
+### January 2021 Milestones
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 0.75 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Documentation | Specification |
+| 2. | Stress Test | 1 Documentation We will start writing documentations on the various aspect of the clover product matrix. |
+| 3. | Unit Test | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 4. | License | We will write an article or tutorial that explains the work done as part of the grant. 
+| 5. | Article/Tutorial | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
+| 6. | Clover Rosetta Services | We will create a Substrate module that will... |  
+| 7. | Clover Chain | We will create a Substrate module that will... |  
+| 8. | Clover Explorer | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 9. | Clover Store | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 10. | Clover Testnet | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 11. | Clover Wallet App | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 12. | Clover Wallet Chrome Extension| We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 13. | Substrate module: Frontier-EVM
+pallet | We will provide a dockerfile to demonstrate the full functionality of our chain |
+
 ### Roadmap Link
 * [https://docs.google.com/spreadsheets/d/1J4xhVIP8o0jZ_4vH2OaD2fA89K05HlO2PuYR178fb1A/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1J4xhVIP8o0jZ_4vH2OaD2fA89K05HlO2PuYR178fb1A/edit?usp=sharing)
 * **Estimated Duration:** 3 month
 * **FTE:**  10 FTE
 * **Costs:** 0.85 BTC
+
 
 ## Future Plans
 We will start to build the developer community when TestNet is ready and SDKs are available in Q1 and Q2 2021. Detailed documentations will be provided and more contents about developing applications on Clover will be released by then. We will work with some existing developer community to hold events, as well as holding/supporting hackathons to acquire more developers once developer kits are ready in Q2/Q3 2021. Bug bounty programs will be held when Mainnet is launched. 
