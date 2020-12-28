@@ -128,9 +128,8 @@ We all come from different and unique walks of life, backgrounds, and experience
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Documentation | Start ddocumenting on the various aspect of the Clover product matrix. |
-| 2. | Stress Test | Start stress tests of clover nodes to ensure the robustness especially on different
-geolocation and large latency. |
+| 1. | Documentation | Start documenting on the various aspect of the Clover product matrix. |
+| 2. | Stress Test | Starting stress tests of clover nodes to ensure the robustness especially on different geolocations on high latency. |
 | 3. | Unit Test | The chain specific unit tests will cover 50% at the end of Jan. | 
 | 4. | License | MIT license |
 | 5. | Article/Tutorials | Writing varios tutorials to demonstrate how to setup clover nodes |  
