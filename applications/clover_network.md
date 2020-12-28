@@ -140,7 +140,7 @@ We all come from different and unique walks of life, backgrounds, and experience
 | 10. | Clover Testnet | We will finalize the Clover testnet and the faucet to receive test tokens |
 | 11. | Clover Wallet App | Delivering initial build of Clover official wallet on both android/iOS |
 | 12. | Clover Wallet Chrome Extension| Delivering initial build of Chrome Extension of Clover web3 wallet |
-| 13. | Substrate module: Frontier-EVM pallet| Fitting minor EVM adjustments to Clover chain |
+| 13. | Substrate module: Frontier-EVM pallet| Rolling out minor EVM adjustments with Clover chain |
 
 ### February 2021 Milestones
 * **Estimated Duration:** 1 month
