@@ -47,7 +47,15 @@ Game center is the core part of the platform. The different kinds of games are s
 
 The way how the update, removal and adding new games work is detailed in the *Govern* section. 
 
-#### Profit Poll and Distribution
+One game we tentatively intend to supply is *One Die Three Times*, and details are described as follows.
+
+Every time the player need to roll an ordinary standard die three times. Each time the die gives a number in the range from 1 to 6. Denote the result as the sum of three numbers yielded each time rolling the die. If the result is in the range from 4 to 10 (4 and 10 are included), the result is called small; whereas, if the result is in the range from 11 to 17 (11 and 17 are included), the result is called big. 3 and 18 are excluded from the category of small and big to make sure that the reward provider doesn't lose money in a long run. The players bet some amount of Cas and guess the result is big or small before rolling the dice. If the prediction is correct, the player could claim Cas of twice the amount they bet. If the prediction is incorrect, the players lose the money they bet.
+
+In this game, a reward pool is needed to pay the players if they win. Any user is encouraged to provide fund to the pool. The design of the game makes the pool growing bigger and bigger in a long run. Therefore, the investor of the reward pool can share the profits collected in this game.  
+
+Note: An ordinary standard die is a regular cube with its six sides numbered with dots from 1 to 6 with all opposing sides adding up to 7. Each number has the same probability to show up when rolling a die.
+
+#### Profit Pool and Distribution
 
 During the play of the games, a fee is collected from the players, and then goes into the profit pool. The profit pool represents the revenue of the platform, and its distribution should make the platform work in a self-sustainable way.
 
@@ -102,48 +110,64 @@ Guoliang Zhou with a master degree in computer science has three-year working ex
 
 ### Team LinkedIn Profiles
 
-* https://www.linkedin.com/fuming-chang
 
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 4 months
+
+* **Total Estimated Duration:** 3 months
 * **FTE:**  4
 * **Total Costs:** 1.1 BTC
 
-### Mildestone 1: Single Game Development, White Paper, and Website.
+The entire roadmap is divided into three steps. The First step is to set up our official website and to develop a substrate module for the *One Die Three Roll* game. The second step is to finish developing the entire game module including adding, updating and removing games. The UI along with the front-end associate with the Casino and the exact game will also be finished in the second step. During the third step, the team will using substrate framework to develop swap module, staking-mining module, and profit pool module. The relevant front-end work will also be finished in that step. In each step, documentations, tutorials, along with a docker file will be available. 
+
+The primary back-end development will be implemented in rust programming language using substrate framework.
+
+### Mildestone 1: Single Game Development, and Website.
+* **Estimated Duration:** 1 month
+* **FTE:**  3
+* **Costs:** 0.35 BTC
+
+| Number | Deliverable            | Specification                                                |
+| ------ | ---------------------- | ------------------------------------------------------------ |
+| 0.     | License                | Apache 2.0                                                   |
+| 1.     | Website                | A website will be available. On the website, users could see our project information, road map, the develop team, and related information. |
+| 2.     | Documentation          | A documentation will be available on the website to provide the general structure of the project. |
+| 3.     | Tutorial               | We will provide a tutorial specifying how to interact with Dice game demo. |
+| 4.     | Substrate Game Module: Dice | Using rust programming language along with the substrate framework, the game module with a focus on realizing the logic of *One Die Three Roll* will be completed. |
+| 5.     | Testing Guide          | Test suite (mock and test files) for the Dice demo will be provided describing how the module can be tested. |
+| 6.     | Testing                | The code will have proper unit-test coverage to ensure functionality and robustness. |
+| 7.     | Docker                 | We will provide a docker file to demonstrate the demo functionality of our chain with Dice module. |
+
+### Mildestone 2: Game module Development, Game Front-End.
 * **Estimated Duration:** 1 month
 * **FTE:**  3
 * **Costs:** 0.35 BTC
 
 | Number | Deliverable                   | Specification                                                |
-| ------ | ----------------------------- | ------------------------------------------------------------ |
-| 1      | Website                       | A website will be available. On the website, users could see our project white paper, project overview, the develop team, and related information. A substrate-front-ends will also be available online for users to interact with our game demo. |
-| 2      | White Paper                   | A white paper will be crafted containing all the details of the project. This white paper will be on our website. |
-| 3      | Single Game Tracked on Github | The development of one single game in the substrate chain will be completed. This game will be accessible online through our website, and a substrate-front-ends would be provided for use. |
+| ------ | ------------------------------ | ------------------------------------------------------------ |
+| 0.     | License                | Apache 2.0                                                   |
+| 1.      | Front-End: Game Center                     | On the website, the game will have a nice user interface providing a nice playing experience. The corresponding operation like adding a game, updating a game will be available. |
+| 2.    | Tutorial: Game Center | A document/video will be available on the website specifying the rule of a specific game and how the adding game, removing game operation works.|
+| 3.      | Substrate Module: Game Center | The entire substrate game module will be completed, including more operations like update a game, remove a game and add a new game. All the progress is tracked on Github, and the primary programming language is rust. |
+| 4.     | Testing                | The code will have proper unit-test coverage to ensure functionality and robustness. |
+| 5.     | Docker                 | We will provide a docker file to demonstrate the functionality of our chain with the corresponding module. |
 
-### Mildestone 2: Game module Development, Game UI.
-* **Estimated Duration:** 1 month
-* **FTE:**  3
-* **Costs:** 0.35 BTC
-
-| Number | Deliverable                   | Specification                                                |
-| ------ | ----------------------------- | ------------------------------------------------------------ |
-| 1      | Game Module Tracked on Github | The entire substrate game module will be completed, including more operations like update a game, remove a game and add a new game. All the progress is tracked on Github |
-| 2      | Game UI                       | Game UI will be finished and presented on our website        |
-
-### Mildestone 3: Swap Module, Staking-Mining module, Profit Pool Module, and their UI
+### Mildestone 3: Swap Module, Staking-Mining module, Profit Pool Module, and their Front-End
 * **Estimated Duration:** 1 months
 * **FTE:**  4
 * **Costs:** 0.4 BTC
 
 | Number | Deliverable           | Specification                                                |
 | ------ | --------------------- | ------------------------------------------------------------ |
-| 1      | Swap Module           | The swap substrate module will be completed, and the progress are tracked on Github |
-| 2      | Staking-Mining module | The staking-mining substrate module will be completed, and the progress are tracked on Github |
-| 3      | Profit Pool Module    | The profit pool substrate module will be completed, and the progress are tracked on Github |
-| 4      | UI                    | The corespondent UI will be finished and presented in our website. |
-
+| 0.     | License                | Apache 2.0                                                   |
+| 1.     | Front-End                | The website should include all the functionality supported by our chain, such as playing a game, swapping Cas, staking dot and mining Cas, claiming profit, and govern the platform. |
+| 2.     | Tutorial               | A document/video will be available on the website introducing how the swap part and governing part work. |
+| 3.      | Substrate Module: Swap  | The swap substrate module will be completed using rust programming language, and the progress are tracked on Github. |
+| 4.      | Substrate Module: Staking-Mining  | The staking-mining substrate module will be completed using rust programming language, and the progress are tracked on Github. |
+| 5.      | Substrate Module:  Profit Pool  | The profit pool substrate module will be completed, and the progress are tracked on Github. |
+| 6.     | Testing                | The code will have proper unit-test coverage to ensure functionality and robustness. |
+| 7.     | Docker                 | We will provide a docker file to demonstrate the full functionality of our substrate chain. |
 ## Future Plans
 
 The vision of this project is to decentralize the traditional Casino. Everyone could be the owner of the Casino and share one part of the profit. 
