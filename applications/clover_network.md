@@ -131,7 +131,7 @@ We all come from different and unique walks of life, backgrounds, and experience
 | 1. | Documentation | Specification |
 | 2. | Stress Test | 1 Documentation We will start writing documentations on the various aspect of the clover product matrix. |
 | 3. | Unit Test | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 4. | License | We will write an article or tutorial that explains the work done as part of the grant. 
+| 4. | License | MIT |
 | 5. | Article/Tutorial | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
 | 6. | Clover Rosetta Services | We will create a Substrate module that will... |  
 | 7. | Clover Chain | We will create a Substrate module that will... |  
@@ -140,8 +140,7 @@ We all come from different and unique walks of life, backgrounds, and experience
 | 10. | Clover Testnet | We will provide a dockerfile to demonstrate the full functionality of our chain |
 | 11. | Clover Wallet App | We will provide a dockerfile to demonstrate the full functionality of our chain |
 | 12. | Clover Wallet Chrome Extension| We will provide a dockerfile to demonstrate the full functionality of our chain |
-| 13. | Substrate module: Frontier-EVM
-pallet | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 13. | Substrate module: Frontier-EVM pallet | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 ### Roadmap Link
 * [https://docs.google.com/spreadsheets/d/1J4xhVIP8o0jZ_4vH2OaD2fA89K05HlO2PuYR178fb1A/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1J4xhVIP8o0jZ_4vH2OaD2fA89K05HlO2PuYR178fb1A/edit?usp=sharing)
