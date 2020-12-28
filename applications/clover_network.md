@@ -155,12 +155,32 @@ We all come from different and unique walks of life, backgrounds, and experience
 | 4. | Clover Chain | Implementing enterprise developers' achitecture with in the low level logic |
 | 5. | Clover Explorer | Delivering the beta build of Clover cross chain explorer with support of BTC/ETH/DOT/CLV |  
 | 6. | Clover OS SDK | The first version of Clover OS SDK with Android/iOS version will be released by the end of Feb. |  
-| 6. | Clover Wallet App | Integrating Clover OS on Clover Wallet App |  
-| 7. | Clover Wallet Chrome Extension | Finalizing Clover chrome extension and distribute it on google store |  
-| 8. | Tulip Editor | Deliverig first POC version of Tulip editor |  
-| 9. | Clover Developer Portal | Delivering basic functionalities of developer portal with account creation/upload/upgrade
-eAPP |
-| 10. | IPFS Integration | Integrating IPFS node along with Clover node into single Docker file for distribution |
+| 7. | Clover Wallet App | Integrating Clover OS on Clover Wallet App |  
+| 8. | Clover Wallet Chrome Extension | Finalizing Clover chrome extension and distribute it on google store |  
+| 9. | Tulip Editor | Deliverig first POC version of Tulip editor |  
+| 10. | Clover Developer Portal | Delivering basic functionalities of developer portal with account creation/upload/upgrade eAPP |
+| 11. | IPFS Integration | Integrating IPFS node along with Clover node into single Docker file for distribution |
+
+### March 2021 Milestones
+* **Estimated Duration:** 1 month
+* **FTE:**  11.5
+* **Costs:** 0.35 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Documentation | Documentation will be ready at 1.0 version to cover 100% of the current implemented
+features. |
+| 2. | Roadmap | Releasing detailed roadmap for Clover development for Q2 |
+| 3. | Developer Incentive Program | Launching the Clover developer incentive program by the end of Mar | 
+| 4. | Tulip Editor | Delivering alpha build for Tulip Editor with EVM support |
+| 5. | Clover Wallet App | Delivering the beta build of Clover cross chain explorer with support of BTC/ETH/DOT/CLV |  
+| 6. | Clover OS | Having Clover OS supporting the iOS/Android/Embedded by the end of Mar |  
+| 7. | Clover Store | Delivering the official release of Clover Store. |  
+| 8. | Clover Developer Portal | Rolling out Clover developer portal for the public with incentivize program |  
+| 9. | Clover Wallet Firefox/Safari Extension | Delivering Clover Firefox/Safari extension |  
+| 10. | Clover Governance | Releasing first build of Clover governance system |
+| 11. | Clover Mainnet | Final launch preparations for Clover Mainnet with respective to Polkadot parachain schedule |
+| 12. | Storage | Adding IPFS/AR/CRUST support as the Storage service |
 
 
 ### Roadmap Link
