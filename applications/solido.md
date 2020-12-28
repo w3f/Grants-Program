@@ -31,7 +31,7 @@ The possibility of developing an RPC client using GraphQL connectors based on Ro
 
 ### Project Details 
 
-![Client RPC using GraphQL connectors](./paid_protocol.png)
+<!-- ![Client RPC using GraphQL connectors](./paid_protocol.png) -->
 
 This image explains how Client RPC using GraphQL connectors, completely abstracts the interaction layer of the dapp with PolkaDOT/Substrate platform and the different parachains (or blockchain bridges) with the defined connector.
 
