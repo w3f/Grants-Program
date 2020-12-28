@@ -91,7 +91,7 @@ Bounce is currently only viable decentralized auction protocol that is live on E
 | 2. | Substrate module: sealed-bid-auction | Implement the core function of sealed bid auction |
 | 3. | Substrate module: dutch-auction | Implement the core function of dutch auction |
 | 4. | Substrate module: english-auction | Implement the core function of english auction |
-| 5. | Substrate module: nft | Implement an ERC721 & ERC1155-like asset module |
+| 5. | Substrate module: nft | Implement an ERC1155-like asset module |
 | 6. | Bounce chain | Implement a blockchain based on Substrate and include ERC20 & NFT asset and auctions modules |  
 | 7. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
