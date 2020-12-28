@@ -168,8 +168,7 @@ We all come from different and unique walks of life, backgrounds, and experience
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Documentation | Documentation will be ready at 1.0 version to cover 100% of the current implemented
-features. |
+| 1. | Documentation | Documentation will be ready at 1.0 version to cover 100% of the current features. |
 | 2. | Roadmap | Releasing detailed roadmap for Clover development for Q2 |
 | 3. | Developer Incentive Program | Launching the Clover developer incentive program by the end of Mar | 
 | 4. | Tulip Editor | Delivering alpha build for Tulip Editor with EVM support |
