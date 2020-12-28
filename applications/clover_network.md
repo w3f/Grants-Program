@@ -141,7 +141,7 @@ We all come from different and unique walks of life, backgrounds, and experience
 | 11. | Clover Wallet App | Delivering initial build of Clover official wallet on both android/iOS |
 | 12. | Clover Wallet Chrome Extension| Delivering initial build of Chrome Extension of Clover web3 wallet |
 | 13. | Substrate module: Frontier-EVM pallet | Frontier-EVM
-pallet Fitting minor EVM adjustments to Clover chain |
+pallet | Fitting minor EVM adjustments to Clover chain |
 
 ### Roadmap Link
 * [https://docs.google.com/spreadsheets/d/1J4xhVIP8o0jZ_4vH2OaD2fA89K05HlO2PuYR178fb1A/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1J4xhVIP8o0jZ_4vH2OaD2fA89K05HlO2PuYR178fb1A/edit?usp=sharing)
