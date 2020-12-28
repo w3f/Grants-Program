@@ -74,7 +74,7 @@ Bounce is currently only viable decentralized auction protocol that is live on E
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  2 FTE
-* **Total Costs:** 1.5 BTC
+* **Total Costs:** 1.3 BTC
 
 ### Milestone 1 — Implement Substrate Modules and Bounce Chain
 * **Estimated Duration:** 2 month
@@ -98,7 +98,7 @@ Bounce is currently only viable decentralized auction protocol that is live on E
 ### Milestone 2 — Implement Bounce dApp based on Bounce Chain
 * **Estimated Duration:** 1 month
 * **FTE:**  2
-* **Costs:** 0.5 BTC
+* **Costs:** 0.3 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
