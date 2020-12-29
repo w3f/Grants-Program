@@ -92,6 +92,7 @@ Please describe the team's relevant experience.  If the project involves develop
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/rogelio-morrell-575aa51/
 * https://www.linkedin.com/in/alfredolopez80/
+* http://linkedin.com/in/patricia-carrillo-891597172
 
 ## Development Roadmap :nut_and_bolt: 
 
