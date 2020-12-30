@@ -4,7 +4,7 @@
 
 * **Project Name:** Name of your project (e.g. DuoSwap Module)
 * **Team Name:** Legal name of your team (e.g. Duo)
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
+* **Payment Address:** BTC or Ethereum (DAI) payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
@@ -76,7 +76,7 @@ To assist you in defining it, we created a document with examples for some grant
 ### Overview
 * **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
 * **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission. (e.g. 0.80 BTC)
+* **Total Costs:** Amount of Payment in BTC or DAI for the whole project. The total amount of funding needs to be below $30k for initial grants and $100k for follow-up grants at the time of submission. (e.g. 0.80 BTC)
 
 ### Milestone 1 Example — Implement Substrate Modules 
 * **Estimated Duration:** 1 month
