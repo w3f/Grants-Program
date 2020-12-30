@@ -33,14 +33,7 @@ T-rust is built on Substrate. Gluon is dApp on top of T-rust. Polkadot ecosystem
 
 ### Project Details 
 
-By default, Gluon gneerates 2/3 MultiSig address for users. The three private keys are called P1, P2 and P3. P1 is stored in user's mobile phone while P2 and P3 are controlled by Gluon consensus. Gluon is unique that clients do not take responsibility to backup mnemonic phrases even for the one stored on user's phone. For Instead, the private key (secret) is generated and split using Shamir Secure Sharing Schema. The split pieces are distributed stored in replicas of many TEA Nodes. TEA nodes are HSM (Hardware Secure Module). You can consider common used hardware wallets are special purpose HSM but TEA nodes are general purpose that can do much more. The secret will never expose outside of hardware protected TEA node's RAM, nor saved to any kind of storage media persistently. When the secret is used to sign a transaction from an authorized user, it will be rebuilt and sign inside a VRF selected TEA node under both hardware protection and remote attestations from a consensus called Proof of Trust (PoT). Due to the randomness, no one knows which TEA node stored which Shamir pieces of which secret. No one can protect which TEA node will be selected or is working on generating or rebuilding secret. The randomness can be verified by other TEA nodes or substrate-runtime logic at both runtime and later audit. 
-
-T-rust is a layer2 trusted computing solution on top of a Substrate-based blockchain. Unlike most blockchain which root of trust comes from cryptograph and consensus, T-rust introduced hardware root-of-trust as the 3rd dimension. Unlike most other blockchains that make consensus on the result, T-rust makes consensus on the proof of trust comes from hardware TPM chips. This makes the consensus much efficient than many blockchains. T-rust can run complex or privacy-sensitive computation which not likely possible in other blockchain. Distributed storage of private key need both privacy and complex computing. So Gluon is an ideal dApp running on top of T-rust. Both Gluon and T-rust are two TEA Projects.
-Because user doesn't have a copy of private key, Gluon allow user to transfer authentication factor and recovery method in case of lost. Technically user cannot leak or lost the secret. Gluon is a TEA application running on top of T-rust framework. 
-
-Since T-rust as a framework takes care of trusted and environment, Gluon as an application focus mostly on business workflows and user experiences. 
-By default, Gluon generate 2/3 MultiSig address for users. We call them P1 P2 and P3. 
-We expect the teams to already have a solid idea about the project's expected final state.
+#### Unique features of Gluon
 
 From user's point of view, Gluon works as if it is a hardware wallet with a few differences:
 - Traditional hardware wallet is just one single hardware secure module (HSM) but Gluon is a group of thousands of hardware secure modules running consensus together to protect clients' assets. (Every TEA Mining Node is an HSM, which can be considered a hardware wallet)
@@ -50,17 +43,58 @@ From user's point of view, Gluon works as if it is a hardware wallet with a few 
 - If user lost both computer (web auth) and phone (mobile phone), social recovery can still protect user's crypto assets and recover all of assets to user's new account.
 - User only need to submit transaction and Gluon will submit signature to other blockchain directly. User doesn't need to manually submit signed transaction to blockchain. 
 
+#### How private keys are protected by Gluon
 
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-![keys and replica](https://miro.medium.com/max/770/1*ZiybeIlsdZsmZV6z0x1SAQ.png)
+By default, Gluon gneerates 2/3 MultiSig address for users. The three private keys are called P1, P2 and P3. P1 is stored in user's mobile phone while P2 and P3 are controlled by Gluon consensus. For Gluon controlled P2 and P3, after Gluon generated the private keys (secret) then immediately split them using Shamir Secure Sharing Schema. The split pieces are distributed to replicas of many TEA Nodes. TEA nodes are HSM (Hardware Secure Module). You can consider common used hardware wallets are special purpose HSM but TEA nodes are general purpose that can do much more. The secret will never expose outside of hardware protected TEA node's RAM, nor saved to any kind of storage media persistently. When the secret is used to sign a transaction from an authorized user, it will be rebuilt and sign inside a VRF selected TEA node under both hardware protection and remote attestations from a consensus called Proof of Trust (PoT). Due to the randomness, no one knows which TEA node stored which Shamir pieces of which secret. No one can protect which TEA node will be selected or is working on generating or rebuilding secret. The randomness can be verified by other TEA nodes or substrate-runtime logic at both runtime and later audit. 
 
-* Documentation of core components, protocols, architecture etc. to be deployed
+P2 and P3 are all controlled by Layer1 (a Substrate blockchain) runtime logic. P2 is associate with user's 2FA. We use Polkadot web extension for now. P3 is associate with user's social recovery accounts. P3 is only used to recover user assets when user lost P1. That means user can assign some friends as "social recovery accounts". If K of N accounts sign the "recovery transaction", P3 will be used along with P2 to transfer user's assets to new account.
+
+P1 is stored in user's Gluon mobile app. P1 will be never exposed to outside user's phone. However, Gluon doesn't require user to take the responsibility to backup mnemonic phrases. In case of upgrading phone, P1 can transfer securely to new phone without expose to network. If user lost the phone, there is no way to restore P1 because there is no backup mnemonic phrases. But user won't lose any assets because use P1 alone cannot move any assets. As mentioned above, by running a social recovery process Gluon can then transfer all assets to new account. 
+
 ![p1 p2 p3](https://miro.medium.com/max/770/1*ZiybeIlsdZsmZV6z0x1SAQ.png)
 
-* PoC/MVP or other relevant prior work or research on the topic
+#### User experiences
+
+From end user's point of view, Gluon is a mobile app and a web extension. The end user need to install Polkadot web extension on his browser to visit any dApp sites to generate transaction to be signed. He also needs to install a Gluon mobile app as decentrazlied 2FA (not the traditional centralized 2FA). 
+
+User can go to Gluonwallet.com website or any other compatible dApp to create a transaction. Web extension will generate a transaction like a QR code on web page. User need to use Gluon mobile app to scan this QR code, verify the transaction details then fingerprint unlock the partial signing on the phone. Now the end user has completed his work. Once the phone send the partial signature to the Gluon network (the blockchain and layer2 network), TEA nodes will rebuild other private key using Shamir algorithm to complete the 2nd partial signature. Once two partial signature are complete, they are committed to target blockchain.
+
+#### Relationship between Gluon and T-rust
+
+From miners' point of view, Gluon is a dApp runs on top of T-rust framework. When compile the source code, a WebAssembly file "gluon.wasm" is generated. This wasm file is loaded to miner's TEA node by adding wasm hash in his TEA node's manifest file. Miners can load this wasm module from IPFS directly without manually compile. Once "gluon.wasm" is loaded into TEA runtime, this TEA because a TEA hardware wallet capability provider. 
+
+Gluon.wasm handles crypto wallet related logic only. All other consensus, security, network, hardware validation happens in T-rust framework.
+
+![relationship tea](https://cdn-images-1.medium.com/max/1120/1*2O7WDwTwH4DlIr4zbOMxng.png)
+
+#### Gluon and T-rust's root of trust and PoT (Proof of Trust) consensus
+T-rust is a layer2 trusted computing solution on top of a Substrate-based blockchain (layer1). Unlike most blockchain which root of trust comes from cryptograph and consensus, T-rust introduced hardware root-of-trust as the 3rd dimension. Unlike most other blockchains that make consensus on the result, T-rust makes consensus on the proof of trust comes from hardware TPM chips. This makes the consensus much efficient than many blockchains. T-rust can run complex or privacy-sensitive computation which not likely possible in other blockchain. Distributed storage of private key need both privacy and complex computing. So Gluon is an ideal dApp running on top of T-rust. Both Gluon and T-rust are two TEA Projects.
+
+![root of trust](https://cdn-images-1.medium.com/max/1120/1*5cLoCE4mLRw7hhDjcuaAxA.png)
+
+#### How other blockchains or dApps integrate with Gluon
+
+For other blockchains, there is nothing need to be done when integrate with Gluon. Gluon is transparent to other client blockchains. Gluon is virtually a client who commit signed transaction and listen to block events. Gluon need to run a few light clients as gateways to those client blockchains. 
+
+#### UI mockups
+
+TBD
+
+#### Technology stack to be used
+
+TBD
+
+#### Prior works and demo
+
+
+
+> Therefore, we ask the teams to submit (where relevant):
+> * Mockups/designs of any UI components
+> * API specifications of the core functionality
+> * An overview of the technology stack to be used
+> * Documentation of core components, protocols, architecture etc. to be deployed
+> * PoC/MVP or other relevant prior work or research on the topic
+
 
 ### Ecosystem Fit 
 Are there any other projects similar to yours? If so, how is your project different?
