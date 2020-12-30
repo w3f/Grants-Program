@@ -2,31 +2,39 @@ name: Google Sheet Update
 on:
   pull_request_target:
     types: [closed]
-# on: push
 
 jobs:
-  fetch:
+  update_sheet:
     runs-on: ubuntu-latest
     steps:
       - name: 'get all added files in the PR'
-        if: github.event.pull_request.merged == true
+        if: ${{ github.event.pull_request.merged == true && !env.ACT }}
         id: 'files'
-        uses: mmagician/get-changed-files@v0.0.1
+        uses: mmagician/get-changed-files@master
 
-      - uses: actions/checkout@master
-        if: github.event.pull_request.merged == true
-        name: Checkout
+      - name: Checkout
+        uses: actions/checkout@master
+        if: ${{ github.event.pull_request.merged == true && !env.ACT }}
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
+      - name: Local Testing Checkout
+        uses: actions/checkout@master
+        if: ${{ env.ACT }}
+
+      # - name: 'local testing parse files'
+      #   if: ${{ env.ACT }}
+      #   id: grant_parser
+      #   uses: mmagician/read-file-action@v1
+      #   with:
+      #     path: 'applications/workflow_testing.md'
+
       - name: 'parse files'
-        if: github.event.pull_request.merged == true
+        if: ${{ github.event.pull_request.merged == true && !env.ACT }}
         id: grant_parser
-        uses: mmagician/read-file-action@v0.1.2
+        uses: mmagician/read-file-action@v1
         with:
           path: "${{ github.workspace }}/${{ steps.files.outputs.added }}"
-          # local testing only
-          # path: 'applications/workflow_testing_12.md'
 
       - name: Get current date
         if: github.event.pull_request.merged == true
@@ -39,7 +47,7 @@ jobs:
         uses: mmagician/gsheet.action@v0.1.0
         with:
           spreadsheetId: ${{ secrets.SPREADSHEET_ID }}
-          startRow: 196
+          startRow: 220
           worksheetTitle: "Legal"
         env:
           GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
@@ -72,7 +80,8 @@ jobs:
                     "https://github.com/w3f/Open-Grants-Program/pull/${{ github.event.pull_request.number }}", 
                     "https://github.com/w3f/Open-Grants-Program/pull/${{ github.event.pull_request.number }}",
                     "USD", "0", "0", "0",
-                    "${{ steps.grant_parser.outputs.total_cost }}",
+                    "${{ steps.grant_parser.outputs.total_cost_btc }}",
+                    "${{ steps.grant_parser.outputs.total_cost_dai }}",
                     "",
                     "",
                     "Executed",
