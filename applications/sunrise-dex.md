@@ -176,11 +176,16 @@ In this phase we plan to develop the initial decentralized exchange pallet for t
 
 This application is specific to the DEX Pallet and lays the foundation for the larger vision which can be seen in our [draft white paper](https://whitepaper.sunriseprotocol.com).
 
+### Overview
+* **Total Estimated Duration:** 3 Months
+* **Full-time equivalent (FTE):**  2 FTE
+* **Total Costs:** 1.1 BTC
+
 ### Milestone 1: Framework design and minimal DEX Pallets
 
 * Estimated Duration: 1 month
-* FTE: 1.5
-* Costs: 0.5 BTC
+* FTE: 2
+* Costs: 0.4 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -196,8 +201,8 @@ This application is specific to the DEX Pallet and lays the foundation for the l
 ### Milestone 2: Full version of SRS model
 
 * Estimated Duration: 1 month
-* FTE: 1.5
-* Costs: 0.5 BTC
+* FTE: 2
+* Costs: 0.4 BTC
 
 
 | Number | Deliverable | Specification |
@@ -214,8 +219,8 @@ This application is specific to the DEX Pallet and lays the foundation for the l
 ### Milestone 3: Sunrise DApp on Test Network
 
 * Estimated Duration: 1 month
-* FTE: 1.5
-* Costs: 0.5 BTC
+* FTE: 2
+* Costs: 0.3 BTC
 
 
 | Number | Deliverable | Specification |
