@@ -78,15 +78,40 @@ For other blockchains, there is nothing need to be done when integrate with Gluo
 
 #### UI mockups
 
-TBD
+
+
 
 #### Technology stack to be used
 
-TBD
+Gluon wasm module is pretty straightforward. It is written in RUST, build into WebAssembly wasm module. 
+On the other hand, T-rust is pretty complex.
+
+##### TEA's four pillars
+
+![four pillars](https://github.com/tearust/tea-docs/raw/main/res/s8.jpg)
+In general, TEA is based on four technologies: 
+- Substrate: This is the layer 1 of T-rust. It runs PoT consensus and the immutable storage of hashes from hardware chips. This is where the software root of trust comes from.
+- IPFS: This is the file system and network layer of T-rust. All public code and data stored in IPFS, but all secret store insie TEA modules (the HSM).
+- Trusted Computing: This is where the hardware root of trust comes from. We used the TPM chips inside the TEA module (HSM) as evidence of PoT.
+- WebAssembly: All running executable code are in wasm format. We do not allow any code running outside of secure wasm runtime except to our OS, runtime, and system providers. 
+
+90% of the source code is written in Rust. 6% in JS, 4% in Golang. 
+
+For more detail on TEA project and T-rust framework, please go to teaproject.org
 
 #### Prior works and demo
 
+Gluon is a dApp and a wasm module running on top of T-rust. We currently do not have Gluon demo running (but will be soon). We do have another demo app showing the capability of T-rust framework.
+This demo is a Tensorflow image recognization running on Substrate blockchain. 
+Here is the video link
 
+> Click to play the demo video
+[![](https://github.com/tearust/tea-docs/raw/main/res/start-demo-video.jpg)](https://youtu.be/6GYwrITSfJo "")
+
+There is another video introduction to TEA project.
+
+> Click to play the introduction video
+[![](https://github.com/tearust/tea-docs/raw/main/res/blog/WX20201215-115720@2x.png)](http://www.youtube.com/watch?v=-NgR3ySWwXg "")
 
 > Therefore, we ask the teams to submit (where relevant):
 > * Mockups/designs of any UI components
