@@ -1,0 +1,128 @@
+# Open Grant Proposal
+
+* **Project Name:** Standard for Reading Information About a Migrated NFT
+* **Team Name:** Perpetual Altruism 
+* **Payment Address:** 1B6AHziiBvE28Lg74n23V3dYXbxcVLGKYi
+
+## Project Overview :page_facing_up: 
+
+This proposal is in response to Polkadot Bridge RFP.
+### Overview
+In this proposal, we use the following terms and definitions:   
+   
+* *NFT:* Intangible asset that is compatible with the ERC-721 standard (i.e. the unique intangible asset is abstracted from the concept of token, which is how the asset is represented on a blockchain). An NFT always exists in a world, which is itself in a universe.   
+   
+* *Universe* e.g. a blockchain, the Web2.0 internet, a private company’s database…   
+   
+* *World (within a universe)* e.g. a smart contract or smart contract ecosystem, a website, a private company project…   
+   
+* *Migration:* The movement of an NFT from an origin universe to a destination universe.   
+    
+* *IOU migration:* An NFT migration where the original token is put in escrow in the origin universe bridge, and a deed that allows the bearer to redeem that original token in the origin universe is created in the destination universe.   
+     
+* *Full migration:* An NFT migration which is handled by the publisher of the NFT, who controls the destination world, and thus can allow the NFT’s features and intellectual property rights to be transferred to the new token in the destination universe.   
+     
+* *Digital Rights Management:* The systematic approach to prevent unauthorized redistribution of digital rights and intellectual property rights infringement during a full NFT migration.   
+
+
+Establish a standardized way to read information of a token in escrow to get the migration data of the migrated NFT it represents. This will allow marketplaces to read information about NFTs across bridged universes e.g. Opensea could read and display information about NFTs across many chains saying which chains an NFT is on, who the current owner is etc.
+
+This is for direct use on the moonbeam parachain, and more generally any parachain wishing to migrate NFTs.
+
+Our team is building NFT.com, a marketplace for the world’s tokenized assets and we need this infrastructure for our marketplace to work effectively on the Polkadot Network. Previous to this we also developed [Cryptograph](https://cryptograph.co), an NFT publisher and marketplace on Ethereum.
+
+### Project Details 
+The deliverable of this proposal is a working interface to read NFT migration data and track them across chains, as well as an example implementation for web applications.
+### Ecosystem Fit 
+Wrapped coins already exist, but they do not have the specific ownership tracking needed for NFTs which is why we are going to build this standard, which to our knowledge does not yet exist. 
+## Team :busts_in_silhouette:
+### Team members
+* Guillaume Gonnaud
+* Edouard Bessire
+
+### Contact
+* Guillaume Gonnaud
+* g.gonnaud@perpetual-altruism.org
+* [NFT.com](http://NFT.com)
+
+### Legal Structure 
+* Perpetual Altruism Ltd
+* 2 Ordnance Mews, London NW86PF, United Kingdom
+
+### Team's experience
+**[Guillaume Gonnaud](https://github.com/Nokhal):** Co-Founder and CTO of Perpetual Altruism Ltd, the developer of NFT publisher and marketplace Cryptograph. Previously co-founded two other companies as CTO, and worked as a researcher and developer for Japan’s National Institute of Informatics in Tokyo. He holds a MSc Computer Science from France’s National Polytechnic Institute and a MSc Research in Artificial Intelligence from Paul Sabatier University. He is the main author of the [GBM auction mechanism](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5) as well as of the ERC-2665 standard.
+
+**[Edouard Bessire](https://github.com/edouardru):** Co-Founder of Perpetual Altruism Ltd, the developer of NFT publisher and marketplace Cryptograph. Computer science Engineer with extensive product development and project management experience. Edouard holds an MSc in Applied Mathematics from France’s National Polytechnic Institute, and an MSc in Innovation, Entrepreneurship and Management from the Imperial College Business School. He is also a co-author of the [GBM auction mechanism](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5).
+
+### Team Code Repos
+[https://github.com/Nokhal/Cryptograph_Project](https://github.com/Nokhal/Cryptograph_Project)   
+[https://github.com/ethereum/EIPs/issues/2665](https://github.com/ethereum/EIPs/issues/2665)   
+
+### Team LinkedIn Profiles
+[https://www.linkedin.com/in/guillaume-gonnaud/](https://www.linkedin.com/in/guillaume-gonnaud/)   
+[https://www.linkedin.com/in/edouardbessire/](https://www.linkedin.com/in/edouardbessire/)   
+
+
+## Development Roadmap :nut_and_bolt: 
+### Overview
+* **Total Estimated Duration:** Less than 2 weeks
+* **Full-time equivalent (FTE):**  2 FTE
+* **Total Work Days:** 15 days
+* **Cost per work day:** £300
+* **Total Costs:** £4,500
+
+### Milestone 1 — Migration Data Interface 
+* **Estimated Duration:** Less than a week
+* **FTE:**  2 FTE
+* **Work Days:** 5 days
+* **Cost per work day:** £300
+* **Costs:** £1,500
+
+We will establish a standardized set of functions for a third party (eg : marketplace) to interpret the migration datas and find the correct owner and other relevant token data in the migration destination, based upon the NFT migration protocol defined in our [Open Grant Proposal #1](./NFT_Bridge_Protocol_for_NFT_Migration_and_Data_Exchange.md).
+* Write a Predicate & Postulate for each function
+* Provide an EVM compatible (Solidity) interface, which must allow for IOU migration as well as both checked and unchecked migration.
+* Provide documentation
+
+### Milestone 2 — Solidity Implementation
+* **Estimated Duration:** Less than a week
+* **FTE:**  2 FTE
+* **Work Days:** 5 days
+* **Cost per work day:** £300
+* **Costs:** £1,500
+
+We will code a barebone Solidity implementation of the previously defined interface(s).
+* The code will have complete unit-test coverage to ensure functionality and robustness. A testing guide will describe how to run these tests   
+* We will provide a dockerfile to demonstrate the full functionality of the code.   
+* We will provide documentation   
+
+### Milestone 3 — Vanilla web3 front-end and NodeJS backend example implementation
+* **Estimated Duration:** Less than a week
+* **FTE:**  2 FTE
+* **Work Days:** 5 days
+* **Cost per work day:** £300
+* **Costs:** £1,500
+
+We will code a vanilla JS web3 frontend example of following a token across different chains : frontend.
+We will code a NodeJS web3 example of following a token across different chains : backend.
+* The code will have complete unit-test coverage to ensure functionality and robustness. A testing guide will describe how to run these tests   
+* We will provide a dockerfile to demonstrate the full functionality of the code.   
+* We will provide documentation   
+
+## Future Plans
+Creating a marketplace (NFT.com) where any NFT from any chain can be traded. 
+## Additional Information :heavy_plus_sign: 
+This proposal is a part of the wider NFT.com venture.
+
+This proposal is part of a series of grant proposals that we have submitted:   
+|  #  | Grant Title   | Link  |
+| :---: | :------------- | :-----: |
+| 1      | Protocol for NFT Migration and Data Exchange |  [link](./NFT_Bridge_Protocol_for_NFT_Migration_and_Data_Exchange.md) |
+| 2 | Standardized Interface and Implementation of IOU NFT Migration |  [link](./NFT_Bridge_Standardized_Interface_and_Implementation_of_IOU_NFT_Migration.md) |
+| 3 | Standard for Reading Information About a Migrated NFT   |   [link](./NFT_Bridge_Standard_for_Reading_Information_About_a_Migrated_NFT.md) |
+| 4 | Standardized Interface and Implementation of IOU NFT Redemption |   [link](./NFT_Bridge_Standardized_Interface_and_Implementation_of_IOU_NFT_Redemption.md) |
+| 5 | Standard for Decentralised, Trustless Cross-chain Verification of Ownership |   [link](./NFT_Bridge_Standard_for_Decentralised_Trustless_Cross-chain_Verification_of_Ownership.md) |
+| 6 |  Protocol and Implementation of a Singular, Decentralized, Trustless NFT Bridge with Digital Rights Management |   [link](./NFT_Bridge_Protocol_and_Implementation_of_a_Singular_Decentralized_Trustless_NFT_Bridge_with_Digital_Rights_Management.md) |
+| 7 | Protocol, Interface and Implementation of a Cross-chain Ownership and Digital Rights Management Authority | [link](./NFT_Bridge_Protocol_Interface_and_Implementation_of_a_Cross-chain_Ownership_and_Digital_Rights_Management_Authority.md) |
+| 8 | Governance System for Bridge Upgradability   |   [link](./NFT_Bridge_Governance_System_for_Bridge_Upgradability.md) |
+| 9 | EIP and Implementation of All Previous Grant Proposals   |   [link](./NFT_Bridge_EIP_and_Implementation_of_All_Previous_Grant_Proposals.md) |
+| 10 | Deployment and Operation of EVM NFT Bridges   |   [link](./NFT_Bridge_Deployment_and_Operation_of_EVM_NFT_Bridges.md) |
