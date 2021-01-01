@@ -77,10 +77,10 @@ In this milestone, We will implement ares oracle proof-of-concept, A oracle pall
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | oracle pallet | requested data, generated events, and callbacks to data |
-| 2. | scanner | scanner parachain oracle request via block metadata, parse the specific request data |
+| 2. | scanner | scanner parachain oracle request via block event, parse the specific request data |
 | 3. | provider | data warehouse returns the correct request data use http request | 
 | 4. | Testing | This milestone will have unit-test for pallet impemented, simulated all functions. |
-| 5. | example for demonstration | Provide  parachain oracle pallet integrate example, It use golang implement scanner and provider, may use go-substrate-api|
+| 5. | example for demonstration | Provide  parachain oracle pallet integrate example, It replace golang with js, integrate videos and the front-end into the deliveries|
 | 6. | Documentation | We will provide parachain integrate oracle pallet documentation and  basic code example that show how developers use the pallet  |
 
 
