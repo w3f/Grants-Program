@@ -139,7 +139,7 @@ Are there any other projects similar to yours? If so, how is your project differ
 ### Contact
 * **Contact Name:** Kevin G. Zhang  
 * **Contact Email:** kevin.zhang.canada@gmail.com
-teaproject.org  gluonwallet.com
+* **Web site:** teaproject.org  gluonwallet.com
 
 ### Legal Structure 
 * **Registered Address:** 4006 Hastings Park Ct, San Jose, CA 95136 U.S.A.
@@ -147,6 +147,8 @@ teaproject.org  gluonwallet.com
 
 ### Team's experience
 Please describe the team's relevant experience.  If the project involves development work, we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+
+TEA Project starts in the year 2019. Most of the team members were ex-developers for Elastos blockchain. The idea originally came to the team leader Kevin Zhang 7 years ago when he was working as the CTO of iHealthLabs. Utilize patients' health data for scientific research yet prevent health data breach is always a big problem. He tried to solve this problem using blockchain but realized the existing blockchain technologies are far too slow to practical. Finally he decide to solve this problem by adding an additional root of trust beside existing blockchain cryptography + consensus. That is the hardware root of trust. TEA uses existing mature Trusted Computing technologies to turn commonly used computer into special mining machine to provide trusted computing service to client blockchains. Besides the existing Tensorflow demo app on TEA, making a practical crypto wallet can demonstrate how TEA can do better. So we start the Gluon Wallet. The longer version of the full story can be found on team leader Kevin Z's [Sweeping Monk Medium Blog] (https://pushbar.medium.com/0-of-n-cover-letter-of-the-trusted-webassembly-runtime-on-ipfs-12a4fd8c4338)
 
 ### Team Code Repos
 * https://github.com/tearust
@@ -185,11 +187,17 @@ To assist you in defining it, we created a document with examples for some grant
 ### Milestone 1 Example — Web app and mobile app pairing
 * **Estimated Duration:** 4 Weeks
 * **FTE:**  2.5 FTE
-* **Costs:** 0.75 BTC
+* **Costs:** 0.25 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0.0 | Gluon Website and Web Portal Framework | The gluonwallet.com website. Homepage, documents, webapp menu structure |
+| 0 | Gluon Website and Web Portal Framework | The gluonwallet.com website. Homepage, documents, webapp menu structure |
+| 1 | Milestone1 feature list and test instruction | features: User can create Gluon account, pair Gluon mobile App to web portal. |
+| 2 | Test docker-compose | Tester can run TEA simulator to run locally to test completed features |
+| 3 | Source code on github | Anyone can download, build and run local testing environment |
+
+| Task ID | Module name | Description |
+| ------ | ----------- | ---- |
 | 0.1 | Add faucet page | user can add free test token to account to start testing |
 | 1.1 | User portal web page | Search user public profile by user polkadot address. All information are open public from blockchain. user can see pairing mobile app id. This is the feature in milestone 1 |
 | 1.2 | Pairing web UI | This is the web UI to start user mobile app pairing |
@@ -198,3 +206,73 @@ To assist you in defining it, we created a document with examples for some grant
 | 2.2 | Mobile user profile page | After pairing, showing user profile. The same as WebUI user profile content |
 | 3.0 | Gluon substrate pellet: Pairing/Unpairing API | Add mobile app pub id to existing Gluon account. Pair the mobile to this user |
 | 3.1 | Gluon substrate pellet: Search API | Search user public information |
+
+### Milestone 2 - Generate BTC asset
+* **Estimated Duration:** 4 Weeks
+* **FTE:**  2.5 FTE
+* **Costs:** 0.25 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0 | Testable features | User can generate BTC address |
+| 1 | Update test instruction | update with new features |
+| 2 | Source code | |
+
+| Task ID | Module name | Description |
+| ------ | ----------- | ---- |
+| 1.0 | Add generate BTC asset page on web ui| User can trigger create new BTC address. Input k,n and other parameters |
+| 1.1 | List user assets on web ui | When successful generated BTC address, it will show on web ui |
+| 2.0 | Add generate BTC asset page on mobile app | User scan the QR code on web ui. Review all tx parameters. Fingerprint unlock to commit tx to layer 1 blockchain |
+| 2.1 | List user assets on mobile app | When successful generated BTC address, it will show mobile app |
+| 2.2 | Mobile app | Generate P1 |
+| 3.0 | Substrate pellet: Create generate BTC asset task | Layer 1 verify user auth, create a task in the blockchain so that layer 2 can handle |
+| 4.0 | Gluon wasm module (TeaLeaf) | Select delegator and executor |
+| 4.1 | Gluon TeaLeaf | Executor generate BTC address with 2/3 MultiSig. P2 and P3|
+| 4.2 | Gluon TeaLeaf | Split and distribute P2 and P3 to replica (pinners) |
+| 4.3 | Gluon TeaLeaf | Response to Layer 1 |
+| 4.4 | Layer1 | Update user assets |
+
+### Milestone 3 - Sign BTC transaction
+* **Estimated Duration:** 4 Weeks
+* **FTE** 2.5 FTE
+* **Cost:** 0.25 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0 | Testable features | User can generate BTC address |
+| 1 | Update test instruction | update with new features |
+| 2 | Source code | |
+
+| Task ID | Module name | Description |
+| ------ | ----------- | ---- |
+| 1.0 | Gluon TeaLeaf | BTC SPV light node in layer2 to communicate with BTC chain |
+| 2.0 | Web Portal | Create BTC transaction page |
+| 3.0 | Mobile app | Scan, verify BTC transaction and send to layer 1 |
+| 3.1 | Mobile app | Partial sign tx |
+| 4.0 | Gluon TeaLeaf | Executor find pinners then reconstruct P2 |
+| 4.1 | Gluon TeaLeaf | Sign tx using P2. Send two signatures to SPV light node |
+| 5.0 | Layer 1 | Settle payment distribution |
+ 
+### Milestone 4 - Phone upgrading and social recovery
+* **Estimated Duration:** 4 Weeks
+* **FTE** 2.5 FTE
+* **Cost:** 0.25 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0 | Testable features | User can generate BTC address |
+| 1 | Update test instruction | update with new features |
+| 2 | Source code | |
+| 3 | Video tutorial | Full user's manual |
+
+| Task ID | Module name | Description |
+| ------ | ----------- | ---- |
+| 1.0 | layer1 | Add social recovery API |
+| 2.0 | Web Portal | Create social recovery page |
+| 3.0 | Mobile app | Social recovery if initiated from phone |
+| 3.1 | Mobile app | Scan QR code to confirm friends recovery request |
+| 4.0 | Gluon TeaLeaf | Suspend old P2 P3 |
+| 4.1 | Layer1 | Suspend old account activity during recovering process |
+| 4.2 | Gluon TeaLeaf | Generate new account to accept assets |
+| 5.0 | Layer1 | Verify all social recovery confirmation, transfer assets to new account |
+ 
