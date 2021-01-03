@@ -5,6 +5,7 @@
 * **Payment Address:** 1NwMufvcL6aB6HbbKfQvEA9a2qriGN64xQ
 
 
+
 ## Project Overview :page_facing_up: 
 **SubsCrypt** is a BaaS(Blockchain as a service) for developers to facilitate the integration of their subscription methods on the PolkaDot blockchain using a smart contract. A dashboard panel for admins to gather useful business data of their subscribed users(by protecting users' privacy) and a dashboard panel for users to manage all their subscriptions in one place.
 
@@ -20,12 +21,6 @@ In our country, we have a lot of restrictions and censorship. We are suffering f
 Two months ago, our team started this idea to resolve these limits and connect our people worldwide. We will now announce our project as a service on blockchain to spread this type of freedom to the world.
 Besides, this, we have experience in developing different backend services and Dapps, and we came to the conclusion that our platform can help developers to migrate from web2 to web3 and also help users by enhancing their user experience to use web3 websites(they only need to use a wallet for registration, and our login procedure can be handled without wallet)
 
-<!-- pros:
-1. Blockchain benefits
-2. All-in-one solution to manage subscription mechanism in services that help users to manage their ser
-vices in on platform without privacy problems(User dashboard for users to check their status)
-3. minimizing development effort for developers to integrate subscription and payment into their service(providing a RestAPI for developers to easily interact with blockchain)
-4. minimizing the fees -->
 
 ### Project Details 
 * Mockups/designs of any UI components
@@ -95,7 +90,7 @@ We will divide our project into four milestones. For the first milestone, we wil
 * **Full-time equivalent (FTE):** 5
 * **Total Costs:** 1.1 BTC
 
-### Milestone 1 — Smart Contract and whitepaper
+### Milestone 1 — Smart Contract
 * **Estimated Duration:** 3 weeks
 * **FTE:**  3
 * **Costs:** 0.3 BTC
@@ -152,11 +147,10 @@ We will divide our project into four milestones. For the first milestone, we wil
 ## Future Plans
 when we finish this project successfully, then we will try to make our substrate pallet to become a standalone blockchain, and if everything goes well, we will try to be a PolkaDot parachain.
 
-<!-- ## Additional Information :heavy_plus_sign:  -->
+## Works currently Done
+* Design and implementation of smart contract in solidity([Repo Link](https://github.com/oxydev/SubsCrypt-solidity))
+* Mockup design of our Website DashBoard and Pop-Up Component
 
-<!-- Any additional information that you think is relevant to this application that hasn't already been included.
 
-Possible additional information to include:
-* What work has been done so far?
-* Are there are any teams who have already contributed (financially) to the project?
-* Have you applied for other grants so far? -->
+
+<img src="https://raw.githubusercontent.com/oxydev/oxydev.ir/master/img/modal.png" width="35%" alt="Modal Component"></img> <img src="https://raw.githubusercontent.com/oxydev/oxydev.ir/master/img/Dashboard.png" width="45%" alt="UI dashboard"></img>
