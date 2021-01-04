@@ -191,16 +191,16 @@ To assist you in defining it, we created a document with examples for some grant
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0 | Gluon Website and Web Portal Framework | The gluonwallet.com website. Homepage, documents, webapp menu structure |
-| 1 | Milestone1 feature list and test instruction | features: User can create Gluon account, pair Gluon mobile App to web portal. |
+| 0 | Gluon Website and Web Portal Framework | The gluonwallet.com website. Homepage, documents, web app menu structure |
+| 1 | Milestone1 feature list and test instruction | features: User can create Gluon account, pair Gluon mobile App to the web portal. |
 | 2 | Test docker-compose | Tester can run TEA simulator to run locally to test completed features |
-| 3 | Source code on github | Anyone can download, build and run local testing environment |
+| 3 | Source code on GitHub | Anyone can download, build and run local testing environment |
 
 | Task ID | Module name | Description |
 | ------ | ----------- | ---- |
 | 0.1 | Add faucet page | user can add free test token to account to start testing |
-| 1.1 | User portal web page | Search user public profile by user polkadot address. All information are open public from blockchain. user can see pairing mobile app id. This is the feature in milestone 1 |
-| 1.2 | Pairing web UI | This is the web UI to start user mobile app pairing |
+| 1.1 | User portal web page | Search user public profile by user Polkadot address. All information is open public from the blockchain. Users can see pairing mobile app id. This is the feature in milestone 1 |
+| 1.2 | Pairing web UI | This is the web UI to start mobile app pairing |
 | 2.0 | Mobile app framework | Gluon mobile app framework. We will add features one by one |
 | 2.1 | Pairing mobile UI, scan QR code to start | After mobile app installed, Scan web pairing page to start pairing |
 | 2.2 | Mobile user profile page | After pairing, showing user profile. The same as WebUI user profile content |
@@ -220,12 +220,12 @@ To assist you in defining it, we created a document with examples for some grant
 
 | Task ID | Module name | Description |
 | ------ | ----------- | ---- |
-| 1.0 | Add generate BTC asset page on web ui| User can trigger create new BTC address. Input k,n and other parameters |
-| 1.1 | List user assets on web ui | When successful generated BTC address, it will show on web ui |
-| 2.0 | Add generate BTC asset page on mobile app | User scan the QR code on web ui. Review all tx parameters. Fingerprint unlock to commit tx to layer 1 blockchain |
+| 1.0 | Add a "generate BTC asset" page on web UI | user can trigger create new BTC address. Input (k,n) and other parameters |
+| 1.1 | List user assets on web UI | When successful generated BTC address, it will show on web UI |
+| 2.0 | Add a "generate BTC asset" page on mobile app | users scan the QR code on web UI. Review all tx parameters. Fingerprint unlock to commit tx to layer-1 blockchain |
 | 2.1 | List user assets on mobile app | When successful generated BTC address, it will show mobile app |
 | 2.2 | Mobile app | Generate P1 |
-| 3.0 | Substrate pellet: Create generate BTC asset task | Layer 1 verify user auth, create a task in the blockchain so that layer 2 can handle |
+| 3.0 | Substrate pellet: Create "generate BTC asset" task | Layer 1 verify user auth, create a task in the blockchain so that layer-2 can handle |
 | 4.0 | Gluon wasm module (TeaLeaf) | Select delegator and executor |
 | 4.1 | Gluon TeaLeaf | Executor generate BTC address with 2/3 MultiSig. P2 and P3|
 | 4.2 | Gluon TeaLeaf | Split and distribute P2 and P3 to replica (pinners) |
@@ -239,7 +239,7 @@ To assist you in defining it, we created a document with examples for some grant
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0 | Testable features | User send BTC transfer transaction. Gluon sign the transaction and send to BTC |
+| 0 | Testable features | user send BTC transfer transaction. Gluon sign the transaction and send to BTC |
 | 1 | Update test instruction | update with new features |
 | 2 | Source code | |
 
@@ -250,7 +250,7 @@ To assist you in defining it, we created a document with examples for some grant
 | 3.0 | Mobile app | Scan, verify BTC transaction and send to layer 1 |
 | 3.1 | Mobile app | Partial sign tx |
 | 4.0 | Gluon TeaLeaf | Executor find pinners then reconstruct P2 |
-| 4.1 | Gluon TeaLeaf | Sign tx using P2. Send two signatures to SPV light node |
+| 4.1 | Gluon TeaLeaf | sign tx using P2. Send two signatures to SPV light node |
 | 5.0 | Layer 1 | Settle payment distribution |
  
 ### Milestone 4 - Phone upgrading and social recovery
@@ -260,7 +260,7 @@ To assist you in defining it, we created a document with examples for some grant
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0 | Testable features | User upgrade new phone and transfer P1 from old phone to new phone. Use social recovery to keep assets and transfer to new account in case of lost web and mobile app |
+| 0 | Testable features | User upgrade new phone and transfer P1 from old phone to new phone. Use social recovery to keep assets and transfer to a new account in case of lost web and mobile app |
 | 1 | Update test instruction | update with new features |
 | 2 | Source code | |
 | 3 | Video tutorial | Full user's manual |
@@ -272,7 +272,22 @@ To assist you in defining it, we created a document with examples for some grant
 | 3.0 | Mobile app | Social recovery if initiated from phone |
 | 3.1 | Mobile app | Scan QR code to confirm friends recovery request |
 | 4.0 | Gluon TeaLeaf | Suspend old P2 P3 |
-| 4.1 | Layer1 | Suspend old account activity during recovering process |
-| 4.2 | Gluon TeaLeaf | Generate new account to accept assets |
+| 4.1 | Layer1 | Suspend old account activity during the recovering process |
+| 4.2 | Gluon TeaLeaf | Generate a new account to accept assets |
 | 5.0 | Layer1 | Verify all social recovery confirmation, transfer assets to new account |
  
+## Future Plans
+
+ Gluon is a full-featured demo application for the TEA project once the TEA project is ready. So far, there are a few limitations that we are working on.
+
+ - TEA modules are running on a software simulator at this moment. In the final product, it only runs on HSM so that it can be protected by hardware. The simulators are only allowed running in the test chain, not in the production chain.
+ - Besides BTC, we will support ETH and all Polkadot ecosystem chains
+ - Gluon layer1 is now sharing the T-rust main chain. We will move Gluon's blockchain to a sidechain run parallel with T-rust's chain. T-rust chain runs parallel with Polkadot main chain. 
+ - When XCMP is ready, we will use XCMP instead of our current WebSocket API.
+ - Retire our facade interface service. Use off-chain workers instead.
+
+Most items in this to-do list are part of the TEA Project plan. When TEA is ready, most of the features are completed too.
+
+## Additional Information :heavy_plus_sign:
+
+We started the TEA project in 2019 under the radar until recently released to the public. We believe the TEA project could be a large project and the backend services platform for a new type of dApps. These dApps can beyond the limit of traditional blockchain technologies. Gluon is just one demo app to test the water. Once we honor gets granted, we will start looking for investors and hire a CEO and more developers to join us. We hope to maintain a long term and close relationship with the Polkadot community. 
