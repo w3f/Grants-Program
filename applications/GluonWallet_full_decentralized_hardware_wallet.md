@@ -2,6 +2,12 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
+* **Project Name:** Gluon Wallet 
+* **Team Name:** TEA Project
+* **Payment Address:** bc1qztagzeez5ke6s2z6tkac0smuv2fu74wz2ptc5f
+
+> *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
+
 ## Project Overview :page_facing_up: 
 > If this application is in response to an RFP, please indicate this on the first line of this section.
 
