@@ -58,7 +58,7 @@ By default, Gluon generates 2/3 MultiSig addresses for users. The three private 
 
 P2 and P3 are all controlled by Layer1 (a Substrate blockchain) runtime logic. Among them, P2 is associate with the users' 2FA. We are using the Polkadot web extension at the moment. P3 is associated with a users' social recovery accounts. P3 is only used to recover user assets when users lose P1. (Users can only store P1 on their phones, so P1 is the only key that could be lost). This means users can assign friends as "social recovery accounts." If K of N accounts sign the "recovery transaction," P3 will be used along with P2 to transfer user assets to their new account.
 
-P1 is stored in the users' Gluon mobile app. P1 will never be exposed beyond the phone even when upgrading devices. However, Gluon doesn't require users to take responsibility to backup mnemonic phrases. When upgrading to a new phone, the Gluon app can transfer P1 securely to the new device without exposing it to the network. If users lose their phones, there is no way to restore P1 because there are no backup mnemonic phrases. There is also no way for ones' assests to be lost, as one will need two keys to access assets. As mentioned above, Gluon can transfer all assets to ones' new account by running a social recovery process. 
+P1 is stored in the users' Gluon mobile app. P1 will never be exposed beyond the phone even when upgrading devices. However, Gluon doesn't require users to take responsibility to backup mnemonic phrases. When upgrading to a new phone, the Gluon app can transfer P1 securely to the new device without exposing it to the network. If users lose their phones, there is no way to restore P1 because there are no backup mnemonic phrases. Losing or the leak of P1 does not lead to the loss of assets, as one can use P2+P3 for recovery and bad actors would need two keys to access assets in the case of a leak. As mentioned above, Gluon can transfer all assets to ones' new account by running a social recovery process. 
 
 ![p1 p2 p3](https://miro.medium.com/max/770/1*ZiybeIlsdZsmZV6z0x1SAQ.png)
 
@@ -127,7 +127,7 @@ For more detail on the TEA project and T-rust framework, please go to teaproject
 
 #### Prior works and demo
 
-Gluon is a dApp and a wasm module running on top of T-rust. We currently do not have the Gluon demo running (but it will be available room). We do have another demo app showing the capability of the T-rust framework.
+Gluon is a dApp and a wasm module running on top of T-rust. We currently do not have the Gluon demo running (but it will be available soon). We do have another demo app showing the capability of the T-rust framework.
 This demo is a Tensorflow image recognization running on Substrate blockchain. 
 Here is the video link:
 
@@ -152,7 +152,7 @@ Are there any other projects similar to yours? If so, how is your project differ
 
 There are many existing crypto wallets in the market. They either store the private keys on client devices (phone, hardware wallet) or centralized servers. There are quite a few wallets in Web3 applications. For example: [bdwallet](https://github.com/tearust/Open-Grants-Program/blob/master/applications/bdwallet.md), or [subwallet](https://github.com/tearust/Open-Grants-Program/blob/master/applications/subwallet.md)
 
-Gluon goes a very decentralized approach. We do not store the original keys anywhere. Instead, we use the TEA project's decentralized trusted computing infrastructure to scramble, store, reconstruct private keys. This approach prevents users from losing or leak their keys. 
+Gluon has a very decentralized approach. We do not store the original keys anywhere. Instead, we use the TEA project's decentralized trusted computing infrastructure to scramble, store, reconstruct private keys. This approach prevents users from losing or leaking their keys. 
 
 A few crypto wallets outside of the Polkadot ecosystem are a little bit similar to ours.
 
@@ -160,7 +160,7 @@ A few crypto wallets outside of the Polkadot ecosystem are a little bit similar 
 
 [Recovery pellets](https://github.com/paritytech/substrate/tree/master/frame/recovery) is not a wallet but a Substrate pellet with the social recovery idea. We did not know it until we search for a similar project just now. 
 
-[Ledger](https://www.ledger.com/) or [Trezor](https://trezor.io/) are hardware wallets. We do not sell hardware wallet units to end-users. We provide trust-as-a-services instead.
+[Ledger](https://www.ledger.com/) or [Trezor](https://trezor.io/) are hardware wallets. We do not sell hardware wallet units to end-users. We provide trust-as-a-service instead.
 
 ## Team :busts_in_silhouette:
 
@@ -185,7 +185,7 @@ A few crypto wallets outside of the Polkadot ecosystem are a little bit similar 
 ### Team's experience
 Please describe the team's relevant experience.  If the project involves development work, we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
 
-The TEA-Project started in the year 2019. The idea originally came to the team leader, Kevin Zhang, seven years ago when he was working as the CTO of iHealthLabs. Utilizing patients' health data for scientific research while preventing health data breaches has always been a prominent problem. He initially tried to solve the dilemma using blockchain, but realized that the existing blockchain technologies were far too slow to be practical. He then decided add an additional root of trust alongside existing blockchain cryptography + consensus. This is the hardware root of trust. TEA uses existing mature Trusted Computing technologies to turn commonly used computers into special mining machines to provide trusted computing services to client blockchains. Besides the existing Tensorflow demo app on TEA, making a practical crypto wallet can demonstrate how TEA can do better. So they started the Gluon. The full story of the project can be found here: [Sweeping Monk Medium Blog] (https://pushbar.medium.com/0-of-n-cover-letter-of-the-trusted-webassembly-runtime-on-ipfs-12a4fd8c4338)
+The TEA-Project started in the year 2019. The idea originally came to the team leader, Kevin Zhang, seven years ago when he was working as the CTO of iHealthLabs. Utilizing patients' health data for scientific research while preventing health data breaches has always been a prominent problem. He initially tried to solve the dilemma using blockchain, but realized that the existing blockchain technologies were far too slow to be practical. He then decided add an additional root of trust alongside existing blockchain cryptography + consensus. This is the hardware root of trust. TEA uses existing mature Trusted Computing technologies to provide secure computing services to client blockchains, without requiring specialised CPU features such as Phala's (TEE) Intel SGX CPU or Bitcoin's ASIC CPU. Besides the existing Tensorflow demo app on TEA, making a practical crypto wallet can demonstrate how TEA can do better. So they started the Gluon. The full story of the project can be found here: [Sweeping Monk Medium Blog] (https://pushbar.medium.com/0-of-n-cover-letter-of-the-trusted-webassembly-runtime-on-ipfs-12a4fd8c4338)
 
 ### Team Code Repos
 * https://github.com/tearust/Gluon_Actor
