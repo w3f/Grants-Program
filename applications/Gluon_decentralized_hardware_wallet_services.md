@@ -190,6 +190,7 @@ The TEA-Project started in the year 2019. The idea originally came to the team l
 ### Team Code Repos
 * https://github.com/tearust/Gluon_Actor
 * https://github.com/tearust/Gluon_Pellet
+* https://github.com/tearust/gluon-docs
 * https://github.com/tearust/tea-docs
 
 ### Team LinkedIn Profiles
