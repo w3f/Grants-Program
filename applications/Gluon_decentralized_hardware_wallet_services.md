@@ -54,7 +54,7 @@ Regardless of if it is BTC, ETH, or DOT, users will not get the private key or m
 
 #### How private keys are protected by Gluon
 
-By default, Gluon generates 2/3 MultiSig addresses for users. The three private keys (secret) are called P1, P2, and P3. P1 is stored in the users' mobile phone, while P2 and P3 are controlled by Gluon consensuses. They are immediately split into pieces using Shamir Secure Sharing Schema right after generation. The split pieces are distributed to replicas of many TEA Nodes. TEA nodes are HSM (Hardware Secure Module). One can consider commonly used hardware wallets as special-purpose HSM, but TEA nodes are a general-purpose HSM that can do much more. The secret will never be exposed outside of hardware-protected TEA node's RAM, nor saved to any storage medias persistently. When the secret is used to sign a transaction from authorized users, it will be reconstructed and signs transactions inside a VRF selected TEA node under both hardware protection and remote attestations from a consensus called Proof of Trust (PoT). Due to the randomness, no one knows which TEA node stores which Shamir pieces of which secret. No one can predict which TEA node will be selected or is working on generating or rebuilding the secret. The randomness can be verified by other TEA nodes or substrate-runtime logic at both runtime and future audits. 
+By default, Gluon generates 2/3 MultiSig addresses for users. The three private keys (secret) are called P1, P2, and P3. P1 is stored in the users' mobile phone, while P2 and P3 are controlled by Gluon consensuses. They are immediately split into pieces using [Shamir Secure Sharing Schema](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing) right after generation. The split pieces are distributed to replicas of many TEA Nodes. TEA nodes are HSM (Hardware Secure Module). One can consider commonly used hardware wallets as special-purpose HSM, but TEA nodes are a general-purpose HSM that can do much more. The secret will never be exposed outside of hardware-protected TEA node's RAM, nor saved to any storage medias persistently. When the secret is used to sign a transaction from authorized users, it will be reconstructed and signs transactions inside a VRF selected TEA node under both hardware protection and remote attestations from a consensus called Proof of Trust (PoT). Due to the randomness, no one knows which TEA node stores which Shamir pieces of which secret. No one can predict which TEA node will be selected or is working on generating or rebuilding the secret. The randomness can be verified by other TEA nodes or substrate-runtime logic at both runtime and future audits. 
 
 P2 and P3 are all controlled by Layer1 (a Substrate blockchain) runtime logic. Among them, P2 is associate with the users' 2FA. We are using the Polkadot web extension at the moment. P3 is associated with a users' social recovery accounts. P3 is only used to recover user assets when users lose P1. (Users can only store P1 on their phones, so P1 is the only key that could be lost). This means users can assign friends as "social recovery accounts." If K of N accounts sign the "recovery transaction," P3 will be used along with P2 to transfer user assets to their new account.
 
@@ -149,6 +149,18 @@ There is another video introduction to the TEA project:
 
 ### Ecosystem Fit 
 Are there any other projects similar to yours? If so, how is your project different?
+
+There are many existing crypto wallets in the market. They either store the private keys on client devices (phone, hardware wallet) or centralized servers. There are quite a few wallets in Web3 applications. For example: [bdwallet](https://github.com/tearust/Open-Grants-Program/blob/master/applications/bdwallet.md), or [subwallet](https://github.com/tearust/Open-Grants-Program/blob/master/applications/subwallet.md)
+
+Gluon goes a very decentralized approach. We do not store the original keys anywhere. Instead, we use the TEA project's decentralized trusted computing infrastructure to scramble, store, reconstruct private keys. This approach prevents users from losing or leak their keys. 
+
+A few crypto wallets outside of the Polkadot ecosystem are a little bit similar to ours.
+
+[ZenGo](https://zengo.com/security/) provides "passwordless" but still require centralized servers to store encrypted secrets. We do everything decentralized.
+
+[Recovery pellets](https://github.com/paritytech/substrate/tree/master/frame/recovery) is not a wallet but a Substrate pellet with the social recovery idea. We did not know it until we search for a similar project just now. 
+
+[Ledger](https://www.ledger.com/) or [Trezor](https://trezor.io/) are hardware wallets. We do not sell hardware wallet units to end-users. We provide trust-as-a-services instead.
 
 ## Team :busts_in_silhouette:
 
@@ -309,6 +321,7 @@ To assist you in defining it, we created a document with examples for some grant
  - Besides BTC, we will support ETH and all Polkadot ecosystem chains.
  - Gluon layer1 is now sharing the T-rust main chain. We will move Gluon's pallet to a sidechain run parallel to T-rust's chain. T-rust's chain runs parallel with Polkadot's main chain. 
  - Retire our facade interface service. Use off-chain workers instead.
+ - Shamir Secret Sharing Schema has [Shortcomings](https://blog.keys.casa/shamirs-secret-sharing-security-shortcomings/). We have used randomness and hardware protection to minimized the impact. However we never stop exploration. We have done some research on existing SMPC and FHE algorithms such as BLS Signature Schema. But none of them are practical at the moment. We are looking forward to new higher performance algorithms to fundamentally remove the needs to reconstruct secret for signing.
 
 Most items in this to-do list are part of the TEA Project plan. When TEA is ready, most of the features are completed too.
 
