@@ -2,7 +2,7 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project Name:** Gluon Wallet 
+* **Project Name:** Gluon - Decentralized Hardware Crypto Wallet Services
 * **Team Name:** TEA Project
 * **Payment Address:** bc1qztagzeez5ke6s2z6tkac0smuv2fu74wz2ptc5f
 
@@ -13,12 +13,15 @@
 
 ### Overview
 
-Gluon Wallet is a Taas (Trust-as-a-Service) application that provides hardware crypto wallet services to crypto users. Our design goal is to create an all-in-one private key manager for MultiSig-enabled blockchains. 
+Leaking or losing private keys are the primary concern for most blockchain users. Gluon uses a new approach to prevent such a disaster. 
+
+Gluon is a Taas (Trust-as-a-Service) application that provides hardware crypto wallet services to crypto users. Our design goal is to create an all-in-one private key manager for MultiSig-enabled blockchains. 
+
 Features:
 - Passwordless to users. Users won't take responsibility for backup mnemonic phrases.
 - Social disaster recovery when users lose all authentication devices.
-- Private keys managed by Gluon over TEA network are randomly distributed and encrypted by hardware protected modules. No single point of failure.
-- Tolerance of up to 1/3 compromised nodes.
+- Private keys managed by Gluon over TEA network are randomly distributed and encrypted by TEA Nodes, which are are hardware secure modules(HSM). No single point of failure.
+- Tolerance of up to 1/3 compromised or failure nodes.
 - Users only need to submit a transaction to Gluon. Gluon takes over the rest to sign and commit blockchain.
 - Leverages popular biometric technologies in mobile devices to get better user experiences without compromising security.
 
@@ -80,12 +83,30 @@ T-rust is a layer2 trusted computing solution on top of a Substrate-based blockc
 
 #### How other blockchains or dApps integrate with Gluon
 
-For other blockchains, there is nothing that needs to be done when integrating with Gluon; Gluon is transparent to other client blockchains. Gluon is virtually a client who commits the signed transaction and listens to block events. Gluon needs to run a few light clients as gateways to these client blockchains. 
+For other blockchains, there is nothing that needs to be done when integrating with Gluon; Gluon is transparent to other client blockchains. Gluon is virtually a client who commits the signed transaction and listens to block events. Gluon needs to run a few light clients as gateways to these client blockchains.
+
+For other dApps, integrating with Gluon is as sample as adding one js API. This js API does three things:
+- Gathering input transaction details and show in a QR code.
+- Sending the hash of transaction and client_id in a TEA transaction to the TEA blockchain. 
+- Listen to the events from the TEA blockchain. 
 
 #### UI mockups
 
+![typical workflow](https://github.com/tearust/gluon-docs/blob/master/res/typical-workflow.png?raw=true)
 
+The diagram above shows a typical UI workflow, which is signing a BTC transaction. 
 
+Users start a task from the web browser. It could be the Gluon web portal or any dApps' website embedded with our js API. A hash of the transaction detail is sent to Gluon TeaLeaf. A QR code is shown on the web page for the paired Gluon mobile app to scan. 
+
+After scanning the QR code, the Gluon mobile app shows the transaction's detail for users to confirm visually. Users approve this transaction by fingerprinting. If there is an additional 2FA (MFA) applied, enter the passcode now. 
+
+Gluon mobile app partially signs the transaction using P1. Both signature and transaction details are sent to Gluon TeaLeaf to continue.
+
+Gluon TeaLeaf takes over the rest of the task by reconstructing P2 and sign. Finally, Gluon TeaLeaf sends the signature by P1 and P2 to Bitcoin light node to complete the transaction. 
+
+Both web UI and mobile app received the event of a completed task.
+
+All other tasks are pretty much the same workflow.
 
 #### Technology stack to be used
 
@@ -152,11 +173,11 @@ Are there any other projects similar to yours? If so, how is your project differ
 ### Team's experience
 Please describe the team's relevant experience.  If the project involves development work, we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
 
-The TEA-Project started in the year 2019. The idea originally came to the team leader, Kevin Zhang, seven years ago when he was working as the CTO of iHealthLabs. Utilizing patients' health data for scientific research while preventing health data breaches has always been a prominent problem. He initially tried to solve the dilemma using blockchain, but realized that the existing blockchain technologies were far too slow to be practical. He then decided add an additional root of trust alongside existing blockchain cryptography + consensus. This is the hardware root of trust. TEA uses existing mature Trusted Computing technologies to turn commonly used computers into special mining machines to provide trusted computing services to client blockchains. Besides the existing Tensorflow demo app on TEA, making a practical crypto wallet can demonstrate how TEA can do better. So they started the Gluon Wallet. The full story of the project can be found here: [Sweeping Monk Medium Blog] (https://pushbar.medium.com/0-of-n-cover-letter-of-the-trusted-webassembly-runtime-on-ipfs-12a4fd8c4338)
+The TEA-Project started in the year 2019. The idea originally came to the team leader, Kevin Zhang, seven years ago when he was working as the CTO of iHealthLabs. Utilizing patients' health data for scientific research while preventing health data breaches has always been a prominent problem. He initially tried to solve the dilemma using blockchain, but realized that the existing blockchain technologies were far too slow to be practical. He then decided add an additional root of trust alongside existing blockchain cryptography + consensus. This is the hardware root of trust. TEA uses existing mature Trusted Computing technologies to turn commonly used computers into special mining machines to provide trusted computing services to client blockchains. Besides the existing Tensorflow demo app on TEA, making a practical crypto wallet can demonstrate how TEA can do better. So they started the Gluon. The full story of the project can be found here: [Sweeping Monk Medium Blog] (https://pushbar.medium.com/0-of-n-cover-letter-of-the-trusted-webassembly-runtime-on-ipfs-12a4fd8c4338)
 
 ### Team Code Repos
-* https://github.com/tearust
-* https://github.com/tearust/gluon
+* https://github.com/tearust/Gluon_Actor
+* https://github.com/tearust/Gluon_Pellet
 * https://github.com/tearust/tea-docs
 
 ### Team LinkedIn Profiles
