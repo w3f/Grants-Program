@@ -23,7 +23,6 @@ Features:
 - Leverages popular biometric technologies in mobile devices to get better user experiences without compromising security.
 
 Gluon itself is built into a WebAssembly module that is loaded and runs inside the T-rust framework. They are both TEA projects. Gluon is an application (We call TeaLeaf); T-rust is a framework (We call TeaTree). T-rust contains layer1 and layer2; Layer1 is a blockchain that is powered by Substrate while Layer2 is a particularly designed mini OS along with many WebAssembly modules that run on wasm runtime powered by [WaSCC](wascc.dev). 
-![relationship tea](https://cdn-images-1.medium.com/max/1120/1*2O7WDwTwH4DlIr4zbOMxng.png)
 
 
 Gluon serves all Polkadot ecosystem dApps and other blockchains as an entry point (portal). Gluon is transparent to other client chains so there is no integration needed. 
