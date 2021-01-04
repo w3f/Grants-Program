@@ -185,7 +185,7 @@ To assist you in defining it, we created a document with examples for some grant
 * Deliverables 0a-0d are mandatory and should not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research-oriented and as such there is no code to test)
 
 ### Overview
-* **Total Estimated Duration:** 3.5 months
+* **Total Estimated Duration:** 4 months
 * **Full-time equivalent (FTE):**  2.5 FTE
 * **Total Costs:** 0.5 BTC
 
@@ -287,8 +287,7 @@ To assist you in defining it, we created a document with examples for some grant
 
  - TEA modules are running on a software simulator at the moment. In the final product, it will only run on HSM so that it can be protected by hardware. The simulators are only allowed to be running in the test chain, not in the production chain.
  - Besides BTC, we will support ETH and all Polkadot ecosystem chains.
- - Gluon layer1 is now sharing the T-rust main chain. We will move Gluon's blockchain to a sidechain run parallel to T-rust's chain. T-rust's chain runs parallel with Polkadot's main chain. 
- - When XCMP is ready, we will use XCMP instead of our current WebSocket API.
+ - Gluon layer1 is now sharing the T-rust main chain. We will move Gluon's pallet to a sidechain run parallel to T-rust's chain. T-rust's chain runs parallel with Polkadot's main chain. 
  - Retire our facade interface service. Use off-chain workers instead.
 
 Most items in this to-do list are part of the TEA Project plan. When TEA is ready, most of the features are completed too.
