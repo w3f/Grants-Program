@@ -239,7 +239,7 @@ To assist you in defining it, we created a document with examples for some grant
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0 | Testable features | User can generate BTC address |
+| 0 | Testable features | User send BTC transfer transaction. Gluon sign the transaction and send to BTC |
 | 1 | Update test instruction | update with new features |
 | 2 | Source code | |
 
@@ -260,7 +260,7 @@ To assist you in defining it, we created a document with examples for some grant
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0 | Testable features | User can generate BTC address |
+| 0 | Testable features | User upgrade new phone and transfer P1 from old phone to new phone. Use social recovery to keep assets and transfer to new account in case of lost web and mobile app |
 | 1 | Update test instruction | update with new features |
 | 2 | Source code | |
 | 3 | Video tutorial | Full user's manual |
