@@ -225,7 +225,7 @@ To assist you in defining it, we created a document with examples for some grant
 ### Milestone 1 Example — Web app and mobile app pairing
 * **Estimated Duration:** 4 Weeks
 * **FTE:**  2.5 FTE
-* **Costs:** 0.25 BTC
+* **Costs:** 0.125 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -248,7 +248,7 @@ To assist you in defining it, we created a document with examples for some grant
 ### Milestone 2 - Generate BTC asset
 * **Estimated Duration:** 4 Weeks
 * **FTE:**  2.5 FTE
-* **Costs:** 0.25 BTC
+* **Costs:** 0.125 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -273,7 +273,7 @@ To assist you in defining it, we created a document with examples for some grant
 ### Milestone 3 - Sign BTC transaction
 * **Estimated Duration:** 4 Weeks
 * **FTE** 2.5 FTE
-* **Cost:** 0.25 BTC
+* **Cost:** 0.125 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -294,7 +294,7 @@ To assist you in defining it, we created a document with examples for some grant
 ### Milestone 4 - Phone upgrading and social recovery
 * **Estimated Duration:** 4 Weeks
 * **FTE** 2.5 FTE
-* **Cost:** 0.25 BTC
+* **Cost:** 0.125 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
