@@ -13,22 +13,22 @@
 
 ### Overview
 
-Leaking or losing private keys are the primary concern for most blockchain users. Gluon uses a new approach to prevent such a disaster. 
+Leaking or losing private keys are the primary concerns of most blockchain users. Gluon uses a new approach to prevent such issues. 
 
-Gluon is a Taas (Trust-as-a-Service) application that provides hardware crypto wallet services to crypto users. Our design goal is to create an all-in-one private key manager for MultiSig-enabled blockchains. 
+Gluon is a TaaS (Trust-as-a-Service) application that provides hardware crypto wallet services to crypto users. Our main goal is to create an all-in-one private key manager for MultiSig-enabled blockchains. 
 
 Features:
-- Passwordless to users. Users won't take responsibility for backup mnemonic phrases.
-- Social disaster recovery when users lose all authentication devices.
-- Private keys managed by Gluon over TEA network are randomly distributed and encrypted by TEA Nodes, which are are hardware secure modules(HSM). No single point of failure.
+- Passwordless; users won't have to take responsibility for backup mnemonic phrases.
+- Social disaster recovery is available for users who have lost all their authentication devices.
+- Private keys managed by Gluon over the TEA network are randomly distributed and encrypted by TEA Nodes, which are hardware secure modules (HSM); it is a no-fail process.
 - Tolerance of up to 1/3 compromised or failure nodes.
-- Users only need to submit a transaction to Gluon. Gluon takes over the rest to sign and commit blockchain.
-- Leverages popular biometric technologies in mobile devices to get better user experiences without compromising security.
+- Users only need to submit a transaction to Gluon and it will take over signing and committing blockchain.
+- Leverages popular biometric technologies in mobile devices to attain better user experiences without compromising security.
 
-Gluon itself is built into a WebAssembly module that is loaded and runs inside the T-rust framework. They are both TEA projects. Gluon is an application (We call TeaLeaf); T-rust is a framework (We call TeaTree). T-rust contains layer1 and layer2; Layer1 is a blockchain that is powered by Substrate while Layer2 is a particularly designed mini OS along with many WebAssembly modules that run on wasm runtime powered by [WaSCC](wascc.dev). 
+Gluon itself is built into a WebAssembly module that is loaded and ran inside the T-rust framework (they are both TEA projects). Gluon is an application (we call TeaLeaf); T-rust is a framework (we call TeaTree). T-rust contains layer1 and layer2; Layer1 is a blockchain that is powered by Substrate while Layer2 is a particularly designed mini OS along with many WebAssembly modules that run on wasm runtime powered by [WaSCC](wascc.dev). 
 
 
-Gluon serves all Polkadot ecosystem dApps and other blockchains as an entry point (portal). Gluon is transparent to other client chains so there is no integration needed. 
+Gluon serves all Polkadot ecosystem dApps and other blockchains as an entry point (portal); it is transparent to other client chains so there is no integration needed. 
 
 We designed and developed Gluon in order to:
 - Lower the barrier to dApps' end users; improve user experiences.
@@ -45,20 +45,20 @@ We designed and developed Gluon in order to:
 #### Unique features of Gluon
 
 From a users point of view, Gluon works just like a hardware wallet, but with a few differences:
-- Traditional hardware wallet is just one single hardware secure module (HSM), but Gluon is a group of thousands of HSM running consensus together to protect clients' assets. (Every TEA Mining Node is an HSM which can be considered as a hardware wallet)
-Regardless of if it is BTC, ETH, or DOT, users will not get the private key or mnemonic phrases until after the address is created. 
+- A traditional hardware wallet is just one single hardware secure module (HSM), but Gluon is a group of thousands of HSM running consensus together to protect clients' assets. (Every TEA Mining Node is an HSM which can be considered as a hardware wallet)
+Regardless of if it is BTC, ETH, or DOT, users will not be able to get the private key or mnemonic phrases until after the address is created. 
 - Users need both a Polkadot extension and a Gluon mobile app to access their Gluon account.
-- Users can transfer authentication factors (such as a mobile phone upgrade)
+- Users have the ability to transfer authentication factors from one device to another.
 - If users lose both their computer (web auth) and phone, social recovery can still protect and recover their crypto assets to their new accounts. 
-- Users only need to submit a transaction; Gluon will submit the signature to the client blockchain directly. Users don't need to submit the signed transaction to the blockchain manually. 
+- Users only need to submit a transaction; Gluon will submit the signature to the client blockchain directly so that manual work is not needed.
 
 #### How private keys are protected by Gluon
 
-By default, Gluon generates 2/3 MultiSig addresses for users. The three private keys (secret) are called P1, P2, and P3. P1 is stored in the users' mobile phone, while P2 and P3 are controlled by Gluon consensuses. They are immediately split into pieces using [Shamir Secure Sharing Schema](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing) right after generation. The split pieces are distributed to replicas of many TEA Nodes. TEA nodes are HSM (Hardware Secure Module). One can consider commonly used hardware wallets as special-purpose HSM, but TEA nodes are a general-purpose HSM that can do much more. The secret will never be exposed outside of hardware-protected TEA node's RAM, nor saved to any storage medias persistently. When the secret is used to sign a transaction from authorized users, it will be reconstructed and signs transactions inside a VRF selected TEA node under both hardware protection and remote attestations from a consensus called Proof of Trust (PoT). Due to the randomness, no one knows which TEA node stores which Shamir pieces of which secret. No one can predict which TEA node will be selected or is working on generating or rebuilding the secret. The randomness can be verified by other TEA nodes or substrate-runtime logic at both runtime and future audits. 
+By default, Gluon generates 2/3 MultiSig addresses for users. The three private keys (secret) are called P1, P2, and P3. P1 is stored in the users' mobile phone, while P2 and P3 are controlled by Gluon consensuses. They are immediately split into pieces using [Shamir Secure Sharing Schema](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing) right after generation. The split pieces are distributed to replicas of many TEA Nodes. TEA nodes are HSM (Hardware Secure Module). One can consider commonly used hardware wallets as special-purpose HSM, but TEA nodes are a general-purpose HSM that can do much more. The secret will never be exposed outside of hardware-protected TEA node's RAM, nor saved to any storage medias persistently. When the secret is used to sign a transaction from authorized users, it will be reconstructed and signs transactions inside a VRF selected TEA node under both hardware protection and remote attestations from a consensus called Proof of Trust (PoT). Due to the randomness, no one will ever know which TEA node stores which Shamir pieces of which secret. No one can predict which TEA node will be selected or is working on generating or rebuilding the secret. The randomness can be verified by other TEA nodes or substrate-runtime logic at both runtime and future audits. 
 
-P2 and P3 are all controlled by Layer1 (a Substrate blockchain) runtime logic. Among them, P2 is associate with the users' 2FA. We are using the Polkadot web extension at the moment. P3 is associated with a users' social recovery accounts. P3 is only used to recover user assets when users lose P1. (Users can only store P1 on their phones, so P1 is the only key that could be lost). This means users can assign friends as "social recovery accounts." If K of N accounts sign the "recovery transaction," P3 will be used along with P2 to transfer user assets to their new account.
+P2 and P3 are all controlled by Layer1 (a Substrate blockchain) runtime logic. Among them, P2 is associated with the users' 2FA. We are using the Polkadot web extension at the moment. P3 is associated with a users' social recovery account but is only used to recover assets when users lose P1. (Users can only store P1 on their phones, so P1 is the only key that could be lost). This means users can assign friends as "social recovery accounts." If K of N accounts sign the "recovery transaction," P3 will be used along with P2 to transfer user assets to their new account.
 
-P1 is stored in the users' Gluon mobile app. P1 will never be exposed beyond the phone even when upgrading devices. However, Gluon doesn't require users to take responsibility to backup mnemonic phrases. When upgrading to a new phone, the Gluon app can transfer P1 securely to the new device without exposing it to the network. If users lose their phones, there is no way to restore P1 because there are no backup mnemonic phrases. Losing or the leak of P1 does not lead to the loss of assets, as one can use P2+P3 for recovery and bad actors would need two keys to access assets in the case of a leak. As mentioned above, Gluon can transfer all assets to ones' new account by running a social recovery process. 
+P1 is stored in the users' Gluon mobile app. P1 will never be exposed beyond the phone even when upgrading devices. However, Gluon doesn't require users to take responsibility to backup mnemonic phrases. When upgrading to a new phone, the Gluon app can transfer P1 securely to the new device without exposing it to the network. If users lose their phones, there is no way to restore P1 because there are no backup mnemonic phrases. Losing or the leak of P1 does not lead to a loss of assets, as one can use P2+P3 for recovery and bad actors would need two keys to access assets in the case of a leak. As mentioned above, Gluon can transfer all assets to one's new account by running a social recovery process. 
 
 ![p1 p2 p3](https://miro.medium.com/max/770/1*ZiybeIlsdZsmZV6z0x1SAQ.png)
 
@@ -77,7 +77,7 @@ Gluon.wasm only handles crypto wallet related logic. All other consensuses, secu
 ![relationship tea](https://cdn-images-1.medium.com/max/1120/1*2O7WDwTwH4DlIr4zbOMxng.png)
 
 #### Gluon and T-rust's root of trust and PoT (Proof of Trust) consensus
-T-rust is a layer2 trusted computing solution on top of a Substrate-based blockchain (layer1). Unlike most blockchain, whose root-of-trust comes from cryptography and consensus, T-rust introduces hardware root-of-trust as the third dimension. Unlike most other blockchains that make consensus on the result, T-rust makes consensus on the proof of trust that comes from hardware TPM chips. Using hardware RoT makes the consensus much efficient than many blockchains. T-rust can run complex or privacy-sensitive computations, which are not likely possible in other blockchains. Distributed storage of private keys needs both privacy and complex computing, so Gluon is an ideal dApp running on top of T-rust. Gluon and T-rust are two TEA Projects.
+T-rust is a layer2 trusted computing solution on top of a Substrate-based blockchain (layer1). Unlike most blockchain, whose root-of-trust comes from cryptography and consensus, T-rust introduces hardware root-of-trust as the third dimension. Unlike most other blockchains that make consensus on the result, T-rust makes consensus on the proof of trust that comes from hardware TPM chips. Using hardware RoT makes the consensus much more efficient than many blockchains. T-rust can run complex or privacy-sensitive computations, which are not likely possible in other blockchains. Distributed storage of private keys needs both privacy and complex computing, so Gluon is an ideal dApp running on top of T-rust. Gluon and T-rust are two TEA Projects.
 
 ![root of trust](https://cdn-images-1.medium.com/max/1120/1*5cLoCE4mLRw7hhDjcuaAxA.png)
 
@@ -98,13 +98,13 @@ The diagram above shows a typical UI workflow, which is signing a BTC transactio
 
 Users start a task from the web browser. It could be the Gluon web portal or any dApps' website embedded with our js API. A hash of the transaction detail is sent to Gluon TeaLeaf. A QR code is shown on the web page for the paired Gluon mobile app to scan. 
 
-After scanning the QR code, the Gluon mobile app shows the transaction's detail for users to confirm visually. Users approve this transaction by fingerprinting. If there is an additional 2FA (MFA) applied, enter the passcode now. 
+After scanning the QR code, the Gluon mobile app shows the transaction's detail for users to confirm visually. Users approve this transaction by fingerprinting. If there is an additional 2FA (MFA) applied, the passcode should then be entered. 
 
-Gluon mobile app partially signs the transaction using P1. Both signature and transaction details are sent to Gluon TeaLeaf to continue.
+Gluon mobile app partially signs the transaction using P1. Both the signature and transaction details are sent to Gluon TeaLeaf to continue.
 
-Gluon TeaLeaf takes over the rest of the task by reconstructing P2 and sign. Finally, Gluon TeaLeaf sends the signature by P1 and P2 to Bitcoin light node to complete the transaction. 
+Gluon TeaLeaf takes over the rest of the task by reconstructing P2 and signing. Finally, Gluon TeaLeaf sends the signature by P1 and P2 to Bitcoin light node to complete the transaction. 
 
-Both web UI and mobile app received the event of a completed task.
+Both the web UI and the mobile app will receive the event of a completed task.
 
 All other tasks are pretty much the same workflow.
 
@@ -115,7 +115,6 @@ T-rust is a bit more complicated.
 ##### TEA's four pillars
 
 ![four pillars](https://github.com/tearust/tea-docs/raw/main/res/s8.jpg)
-
 In general, TEA is based off of four technologies: 
 - Substrate: This is layer 1 of T-rust. The blockchain runs consensus on Proof-of-Trust, and immutably stores, processes, and verifies PoT (the hashes from the hardware chips).
 - IPFS: This is the file system and network layer of T-rust. All public code and data are stored in IPFS but all secrets are kept inside TEA modules (the HSM).
@@ -124,7 +123,7 @@ In general, TEA is based off of four technologies:
 
 90% of the source code is written in Rust. The other 6% is written in JS, and the remaining 4% in Golang. 
 
-For more detail on the TEA project and T-rust framework, please go to teaproject.org.
+For more detail on the TEA project and T-rust framework, you may visit teaproject.org.
 
 #### Prior works and demo
 
@@ -135,7 +134,7 @@ Here is the video link:
 > Click to play the demo video
 [![](https://github.com/tearust/tea-docs/raw/main/res/start-demo-video.jpg)](https://youtu.be/6GYwrITSfJo "")
 
-There is another video introduction to the TEA project:
+Here's another video introduction to the TEA project:
 
 > Click to play the introduction video
 [![](https://github.com/tearust/tea-docs/raw/main/res/blog/WX20201215-115720@2x.png)](http://www.youtube.com/watch?v=-NgR3ySWwXg "")
@@ -161,7 +160,7 @@ A few crypto wallets outside of the Polkadot ecosystem are a little bit similar 
 
 [Recovery pellets](https://github.com/paritytech/substrate/tree/master/frame/recovery) is not a wallet but a Substrate pellet with the social recovery idea. We did not know it until we search for a similar project just now. 
 
-[Ledger](https://www.ledger.com/) or [Trezor](https://trezor.io/) are hardware wallets. We do not sell hardware wallet units to end-users. We provide trust-as-a-service instead.
+[Ledger](https://www.ledger.com/) or [Trezor](https://trezor.io/) are hardware wallets. We do not sell hardware wallet units to end-users. We provide Trust-as-a-Service instead.
 
 ## Team :busts_in_silhouette:
 
@@ -186,13 +185,12 @@ A few crypto wallets outside of the Polkadot ecosystem are a little bit similar 
 ### Team's experience
 Please describe the team's relevant experience.  If the project involves development work, we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
 
-The TEA-Project started in the year 2019. The idea originally came to the team leader, Kevin Zhang, seven years ago when he was working as the CTO of iHealthLabs. Utilizing patients' health data for scientific research while preventing health data breaches has always been a prominent problem. He initially tried to solve the dilemma using blockchain, but realized that the existing blockchain technologies were far too slow to be practical. He then decided add an additional root of trust alongside existing blockchain cryptography + consensus. This is the hardware root of trust. TEA uses existing mature Trusted Computing technologies to provide secure computing services to client blockchains, without requiring specialised CPU features such as Phala's (TEE) Intel SGX CPU or Bitcoin's ASIC CPU. Besides the existing Tensorflow demo app on TEA, making a practical crypto wallet can demonstrate how TEA can do better. So they started the Gluon. The full story of the project can be found here: [Sweeping Monk Medium Blog] (https://pushbar.medium.com/0-of-n-cover-letter-of-the-trusted-webassembly-runtime-on-ipfs-12a4fd8c4338)
+The TEA-Project started in the year 2019. The idea originally came to the team leader, Kevin Zhang, seven years ago when he was working as the CTO of iHealthLabs. Utilizing patients' health data for scientific research while preventing health data breaches has always been a prominent problem. He initially tried to solve the dilemma using blockchain, but realized that the existing blockchain technologies were far too slow to be practical. He then decided to add an additional root of trust alongside existing blockchain cryptography + consensus. This is the hardware root of trust. TEA uses existing mature Trusted Computing technologies to provide secure computing services to client blockchains, without requiring specialised CPU features such as Phala's (TEE) Intel SGX CPU or Bitcoin's ASIC CPU. Besides the existing Tensorflow demo app on TEA, making a practical crypto wallet can demonstrate how TEA can do better, so they started the Gluon. The full story of the project can be found here: [Sweeping Monk Medium Blog] (https://pushbar.medium.com/0-of-n-cover-letter-of-the-trusted-webassembly-runtime-on-ipfs-12a4fd8c4338)
 
 ### Team Code Repos
-* https://github.com/tearust/gluon-actor
-* https://github.com/tearust/gluon-pellet
+* https://github.com/tearust/Gluon_Actor
+* https://github.com/tearust/Gluon_Pellet
 * https://github.com/tearust/gluon-docs
-* https://github.com/tearust/gluon-website
 * https://github.com/tearust/tea-docs
 
 ### Team LinkedIn Profiles
@@ -207,7 +205,7 @@ The TEA-Project started in the year 2019. The idea originally came to the team l
 
 This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
 
-Below we provide an **example roadmap**. In the descriptions, it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
+Below, we provided an **example roadmap**. In the descriptions, it should be clear how the project is related to Substrate and/or Polkadot. We recommend to fit the scope of the work within a 3 month period and for teams to structure their roadmap as 1 month = 1 milestone. 
 
 For each milestone:
 * Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
@@ -318,14 +316,15 @@ To assist you in defining it, we created a document with examples for some grant
  
 ## Future Plans
 
- Gluon is a full-featured demo application for the TEA project once it is ready. So far, there are a few limitations that we are working on.
+ Gluon will be a full-featured demo application for the TEA project once it is ready. So far, there are a few limitations that we are working on.
 
  - TEA modules are running on a software simulator at the moment. In the final product, it will only run on HSM so that it can be protected by hardware. The simulators are only allowed to be running in the test chain, not in the production chain.
  - Besides BTC, we will support ETH and all Polkadot ecosystem chains.
- - Gluon layer1 is now sharing the T-rust main chain. We will move Gluon's pallet to a sidechain run parallel to T-rust's chain. T-rust's chain runs parallel with Polkadot's main chain. 
- - Shamir Secret Sharing Schema has [Shortcomings](https://blog.keys.casa/shamirs-secret-sharing-security-shortcomings/). We have used randomness and hardware protection to minimized the impact. However we never stop exploration. We have done some research on existing SMPC and FHE algorithms such as BLS Signature Schema. But none of them are practical at the moment. We are looking forward to new higher performance algorithms to fundamentally remove the needs to reconstruct secret for signing.
+ - Gluon layer1 is currently sharing the T-rust main chain. We will move Gluon's pallet to a sidechain run parallel to T-rust's chain. T-rust's chain runs parallel to Polkadot's main chain. 
+ - We wll retire our facade interface service and use off-chain workers instead.
+ - Shamir Secret Sharing Schema has [Shortcomings](https://blog.keys.casa/shamirs-secret-sharing-security-shortcomings/). We have used randomness and hardware protection to minimized the impact. However, we never stop exploring the possibilities; we've done some research on existing SMPC and FHE algorithms such as BLS Signature Schema, but none of them are practical at the moment. We are looking forward to new higher performance algorithms to remove the need to reconstruct the secret for signing.
 
-Most items in this to-do list are part of the TEA Project plan. When TEA is ready, most of the features are completed too.
+Most items in this to-do list are part of the TEA Project plan. When TEA is ready, most of the features will be available too.
 
 ## Additional Information :heavy_plus_sign:
 
