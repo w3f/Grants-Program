@@ -65,7 +65,7 @@ https://github.com/Credit-chain-org
 ### Milestone 1
 * **Estimated Duration:** 6 weeks
 * **FTE:**  3
-* **Costs:** 0.5 BTC
+* **Costs:** 0.3 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
