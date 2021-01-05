@@ -20,11 +20,9 @@ There are two key algorithms in our project, 'Credit Scoring' and 'Credit Matchi
 We have run our credit products in Internet for some years any collects lots of data off chain. Now we want to create Decredit to move our solution on chain because we value the credit data from our users and think the data should be private, trackable and immutable. Moreover, we guess scnarios on the blockchain like DeFi could provide more adoption to credit data.
 
 ### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
-
+* DeCredit privacy-preserving Decentralized Storage sheme: https://github.com/Credit-chain-org/Design-Docs/blob/main/DeCredit_storage_PDP.pdf
 * Credit Scoring specification: https://github.com/Credit-chain-org/Design-Docs/blob/main/Credit-Scoring/Credit_Scoring_spec.pdf
 * Credit Matching specification: https://github.com/Credit-chain-org/Design-Docs/blob/main/Credit-Matching/Credit_Matching_spec.pdf
-* Code segment:  https://github.com/Credit-chain-org/algorithm
 
 ### Ecosystem Fit 
 N/A
@@ -60,9 +58,9 @@ https://github.com/Credit-chain-org
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 6 weeks
+* **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  3 
-* **Total Costs:** 0.5 BTC
+* **Total Costs:** 1 BTC
 
 ### Milestone 1
 * **Estimated Duration:** 6 weeks
@@ -71,12 +69,8 @@ https://github.com/Credit-chain-org
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Decredit Wallet | A wallet to send/recrive Decredit token, upload the credit report and show Apps. |
-| 2. | Credit Lending App | User can send a request in this App. His credit will be scored and matched to a financial product.|
-| 3. | Credit Scoring Module | The algorithm will give the credit a score and will be built as a module. | 
-| 4. | Credit Matching Moule | The algorittm will match the credit data to a certain product which could offer best service to the user.|  
-| 5. | Documentation | Credit Scoring design doc |  
-| 6. | Documentation | Credit Matching design doc |  
+| 1. | Decredit DAPP | For users to upload their files to Decredit network. |
+| 2. | Decentralized Storage Network | Implementation of DeCredit privacy-preserving decentralized storage sheme |  
   
 ### Community engagement
 
@@ -84,14 +78,16 @@ The tutorial will be published on our Weibo and other social media channels.
 
 
 ## Future Plans
-* Move credit data on-chain. That means we should add storage and privacy modules.
-* Make credit scoring and credit matching customized so that the demand and the supply could reach each other in fully decentrlized mode. Thus, to build a credit lending Defi protocl. 
+* Zero-Knowledge proof for public auditing.
+* Support for data dynamics
+* Deterministic Deletion of data
+* Import Smart Contact so that users and storage nodes can reach agreements for each other. And in credit lending scenario, the demand and supply can reach each other through a customized contract.  
 
 ## Additional Information :heavy_plus_sign: 
 
 * What work has been done so far?
 
-The product has been built in Internet for years. Now we want to move it on-chain and in a decentralized manner.
+The product has been built in Internet for years (files stored in cloud server). Now we want to move it on-chain and in a decentralized manner.
 
 * Are there are any teams who have already contributed (financially) to the project?
 
