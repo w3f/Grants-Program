@@ -117,9 +117,9 @@ T-rust is a bit more complicated.
 ![four pillars](https://github.com/tearust/tea-docs/raw/main/res/s8.jpg)
 
 In general, TEA is based off of four technologies: 
-- Substrate: This is layer 1 of T-rust. It runs PoT consensus and the immutable storage of hashes from hardware chips. Blockchain is the source that the software root of trust comes from.
+- Substrate: This is layer 1 of T-rust. The blockchain runs consensus on Proof-of-Trust, and immutably stores, processes, and verifies PoT (the hashes from the hardware chips).
 - IPFS: This is the file system and network layer of T-rust. All public code and data are stored in IPFS but all secrets are kept inside TEA modules (the HSM).
-- Trusted Computing: This is where the hardware root of trust comes from. We use the TPM chips inside the TEA module (HSM) as evidence of PoT.
+- Trusted Computing: This is where the hardware root of trust comes from. We use the TPM chips inside the TEA module (HSM) to generate Proof of Trust.
 - WebAssembly: All running executable code is in wasm format and runs inside of secure wasm runtime except for our OS, runtime, and system providers. 
 
 90% of the source code is written in Rust. The other 6% is written in JS, and the remaining 4% in Golang. 
