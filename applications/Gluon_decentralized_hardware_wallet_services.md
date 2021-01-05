@@ -115,6 +115,7 @@ T-rust is a bit more complicated.
 ##### TEA's four pillars
 
 ![four pillars](https://github.com/tearust/tea-docs/raw/main/res/s8.jpg)
+
 In general, TEA is based off of four technologies: 
 - Substrate: This is layer 1 of T-rust. It runs PoT consensus and the immutable storage of hashes from hardware chips. Blockchain is the source that the software root of trust comes from.
 - IPFS: This is the file system and network layer of T-rust. All public code and data are stored in IPFS but all secrets are kept inside TEA modules (the HSM).
@@ -188,9 +189,10 @@ Please describe the team's relevant experience.  If the project involves develop
 The TEA-Project started in the year 2019. The idea originally came to the team leader, Kevin Zhang, seven years ago when he was working as the CTO of iHealthLabs. Utilizing patients' health data for scientific research while preventing health data breaches has always been a prominent problem. He initially tried to solve the dilemma using blockchain, but realized that the existing blockchain technologies were far too slow to be practical. He then decided add an additional root of trust alongside existing blockchain cryptography + consensus. This is the hardware root of trust. TEA uses existing mature Trusted Computing technologies to provide secure computing services to client blockchains, without requiring specialised CPU features such as Phala's (TEE) Intel SGX CPU or Bitcoin's ASIC CPU. Besides the existing Tensorflow demo app on TEA, making a practical crypto wallet can demonstrate how TEA can do better. So they started the Gluon. The full story of the project can be found here: [Sweeping Monk Medium Blog] (https://pushbar.medium.com/0-of-n-cover-letter-of-the-trusted-webassembly-runtime-on-ipfs-12a4fd8c4338)
 
 ### Team Code Repos
-* https://github.com/tearust/Gluon_Actor
-* https://github.com/tearust/Gluon_Pellet
+* https://github.com/tearust/gluon-actor
+* https://github.com/tearust/gluon-pellet
 * https://github.com/tearust/gluon-docs
+* https://github.com/tearust/gluon-website
 * https://github.com/tearust/tea-docs
 
 ### Team LinkedIn Profiles
