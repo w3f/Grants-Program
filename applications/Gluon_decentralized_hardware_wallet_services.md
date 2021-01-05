@@ -323,7 +323,6 @@ To assist you in defining it, we created a document with examples for some grant
  - TEA modules are running on a software simulator at the moment. In the final product, it will only run on HSM so that it can be protected by hardware. The simulators are only allowed to be running in the test chain, not in the production chain.
  - Besides BTC, we will support ETH and all Polkadot ecosystem chains.
  - Gluon layer1 is now sharing the T-rust main chain. We will move Gluon's pallet to a sidechain run parallel to T-rust's chain. T-rust's chain runs parallel with Polkadot's main chain. 
- - Retire our facade interface service. Use off-chain workers instead.
  - Shamir Secret Sharing Schema has [Shortcomings](https://blog.keys.casa/shamirs-secret-sharing-security-shortcomings/). We have used randomness and hardware protection to minimized the impact. However we never stop exploration. We have done some research on existing SMPC and FHE algorithms such as BLS Signature Schema. But none of them are practical at the moment. We are looking forward to new higher performance algorithms to fundamentally remove the needs to reconstruct secret for signing.
 
 Most items in this to-do list are part of the TEA Project plan. When TEA is ready, most of the features are completed too.
