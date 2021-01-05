@@ -109,7 +109,7 @@ PAID Network, foresees the development of Client RPC using GraphQL connectors, c
 ### Milestone 1 Example — Implement Plasm Modules 
 * **Estimated Duration:** 3 month
 * **FTE:**  1
-* **Costs:** 1.3 BTC
+* **Costs:** 0.8 BTC
 
 | Number |   Deliverable   | Specification |
 | ------------- | ------------- | ------------- |
