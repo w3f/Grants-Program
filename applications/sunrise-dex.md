@@ -8,17 +8,18 @@
 
 ### Overview
 
-Sunrise Protocol is building a decentralized protocol on a dedicated Polkadot parachain. It will enable deep liquidity starting with support for the exchange of tokens on Sunrise Chain, Ethereum, and all parachains. Sunrise will support additional blockchains in the future. 
+Sunrise is building a decentralized protocol on a dedicated Polkadot parachain. We will enable deep liquidity starting with support for tokens on Sunrise Chain, Ethereum, and all parachains. Sunrise will support additional blockchains in the future. 
 
-Our Decentralized EXchange (DEX) uses a bonding curve factory which supports liquidity pools for unpegged tokens such as ETH,DOT, LINK, ACA etc. Sunrise will also support stable coin pools offering low slippage (e.g. DAI,USDT) and moving forward stable coins with different pegs (e.g. srsUSD, srsCNY).
+Our Decentralized EXchange (DEX) uses a bonding curve factory which supports liquidity pools for unpegged tokens such as ETH,DOT, LINK, ACA etc. Sunrise will support stable coin pools offering very low slippage and fees (e.g. DAI-USDT) and in the future stable coins that have different pegs (e.g. srsUSD-srsCNY).
 
+![Sunrise Chain Vision](https://raw.githubusercontent.com/sunriseprotocol/wiki/main/assets/Sunrise%20Chain.png "Sunrise Chain")
 **Deployment**
 
-This phase of the project will be built and deployed on a parachain on Rococo. Our standalone parachain [Sunrise Protocol Daybreak](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fdaybreak.sunriseprotocol.com%3A443#/explorer) is the precursor to this. We are also evaluating the ability to deploy an Intrachain DEX (running on our partners) parachain, this will be done either publishing a DEX crate or directly contributing to partners codebase via a fork of their repository.
+The first phase of the project will be built and deployed on a parachain via Rococo. Our standalone parachain [Sunrise Protocol Daybreak](https://daybreakexplorer.sunriseprotocol.com/) will be the precursor. Sunrise is also evaluating the ability to deploy an Intrachain DEX (running on our partners) parachain, this will be done either publishing a DEX crate, updating [ORML libraries](https://github.com/open-web3-stack/open-runtime-module-library/tree/master), or directly contributing to partners codebase with a pull request to their repository.
 
 **Polkadot Ecosystem Benefits**
 
-This protocol lays the foundation for asset exchange, stable coins and advanced aggregation. This will attract the decentralized finance community, provide more liquidity and drive adoption for Polkadot. The DEX is multi-platform and bridges across parachains and as such can benefit the whole Polkadot community providing liquidity across multiple DeFi initiatives. Finally, we see there are gaps in the current DEX Approaches, this includes stable coin support, limit order functionality and compliance functionality.
+Sunrise protocol lays the foundation for the seamless exchange of assets, efficiency of stable coin transactions and advanced aggregation. Our product will attract the decentralized finance (DeFi) community and provide more liquidity that helps drive increased adoption for the Polkadot Network. The DEX is multi-platform and bridges across parachains allowing the community to access the latest protocols and initiatives. Sunrise has identified numerous gaps to capitalize on, in relation to the infrastructure of the most popular decentralized exchanges, which includes liquidity pool customization, limit order functionality and compliance functionality.
 
 **Why are we creating this project**
 
@@ -37,7 +38,7 @@ The Sunrise Decentralized Exchange (DEX) combines the use of multiple bonding cu
 
 The Sunrise DEX Factory will support the creation of Liquidity Pool Contracts.  The bonding curves for these liquidity pools, will be slightly different depending on the use case. Each exchange contract can be configured to the specific needs of the liquidity pool.
 
-##### 3.1 Sunrise Factory/Registry Contract
+#### 3.1 Sunrise Factory/Registry Contract
 
 All contracts will have a uniform interface for liquidity management and swap management. Thus abstracting away the underlying complexity from liquidity providers and traders, giving them a uniform mechanism to interact with all Sunrise liquidity pools.
 
@@ -56,6 +57,7 @@ Below is a list of the configuration parameters input into the factory contract 
 6. **lambda** Dynamic fees : Unbalancing Penalty Fees
 7. **k**  Market Price Alignment: Alignment of the Bonding Curve with Price Oracle 
 
+![Sunrise Bonding Curves](https://raw.githubusercontent.com/sunriseprotocol/wiki/main/assets/Sunrise%20Bonding%20Curves.png "Sunrise Bonding Curves")
 **The three types of bonding curves use the following variables**
 
 3.1 MultiToken Bonding Curve (1,2)
@@ -66,7 +68,7 @@ Below is a list of the configuration parameters input into the factory contract 
 
 **There will be default values for each of these parameters based on the Bonding Curve Type.**
 
-When not utilized the variable is set to a default value, usually zero.
+When not utilized the variable will be set to a default value having a nonconsequential effect.
 
 #### Sunrise Protocol Overview
 
@@ -77,20 +79,13 @@ Sunrise Protocol is creating an open decentralized financial framework. Sunrise 
 
 Sunrise Bridge is used to create a multi-platform, multi-asset protocol using cryptocurrencies (tokens) as building blocks. We will start with Polkadot parachains, ERC-20 tokens and then other blockchains.
 
-Sunrise Chain will be implemented using a decentralized protocol on a dedicated parachain built on polkadot. 
-
 Once the primitives of a multi-platform, multi-asset DEX have been realized, decentralized financial protocols can leverage this for their liquidity needs. 
 
 Sunrise Protocol will then add limit orders, a compliance framework and smart wallet functionality to give cost effective alternatives to Centralized Exchanges and International remittances.
 
-Below are the high level github repositories for the Sunrise Protocol.
+Below are the high level modules that can be integrated into the Sunrise Ecosystem. A number of these will be implemented by our partners and the community, some of which may be subsidized by Sunrise Protocol grants.
 
-- [Sunrise Chain](https://github.com/sunriseprotocol/sunrise): Based of substrate cumulus template))
-- Sunrise DApp  react based frontend
-- [Sunrise Explorer](https://github.com/sunriseprotocol/apps): forked from polkadot-js/apps
-- Sunrise js: fork of polkadot.js
-- [Sunrise faucet-bot](https://github.com/sunriseprotocol/faucet-bot): faucet functionality
-- Sunrise Wallet : Mobile Wallet
+![Sunrise Ecosystem](https://raw.githubusercontent.com/sunriseprotocol/wiki/main/assets/Sunrise%20Ecosystem.png "Sunrise Ecosystem")
 
 ### Ecosystem Fit 
 Sunrise Protocol is building an open decentralized framework. This grant application is for the Sunrise DEX, a sub-component of the larger Sunrise Protocol. 
@@ -103,15 +98,7 @@ This application is specific to the DEX Pallet and lays the foundation for the l
 
 ### DEX Evolution
 
-| Protocol | DEX | Reward Token | Multi Asset Pools | Optimized StableCoin Support | Price Oracles | Multiple Bonding Curves | Limit Orders | Multiple Platform Support | Dedicated Trading Chain | Compliance Framework | Smart Wallet |
-| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Sunrise Protocol | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES | YES |
-| Uniswap | YES | YES | NO | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| Balancer | YES | YES | YES | NO | NO | NO | NO | NO | NO | NO | NO | NO |
-| Curve | YES | YES | YES | YES | NO | NO | NO | NO | NO | NO | NO | NO |
-| DodoEX | YES | YES | NO | NO | YES | NO | NO | NO | NO | NO | NO | NO |
-| PolkaDex | YES | YES | NO | NO | NO | NO | YES | YES | YES | NO | NO |
-| Reef | YES | YES | NO | NO | NO | NO | NO | YES | YES | NO | NO |
+![Sunrise Reference Protocols](https://raw.githubusercontent.com/sunriseprotocol/wiki/main/assets/Sunrise%20Reference%20Protocols.png "Sunrise Reference Protocols")
 
 The following protocols offer specific functionality and are often leaders in their respective areas.  The points below walk through a chronological evolution of DEX and cross-chain capabilities.
 
@@ -179,7 +166,7 @@ This application is specific to the DEX Pallet and lays the foundation for the l
 ### Overview
 * **Total Estimated Duration:** 3 Months
 * **Full-time equivalent (FTE):**  2 FTE
-* **Total Costs:** 1.1 BTC
+* **Total Costs:** 0.9 BTC
 
 ### Milestone 1: Framework design and minimal DEX Pallets
 
@@ -189,11 +176,14 @@ This application is specific to the DEX Pallet and lays the foundation for the l
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a.   | License       | GNU GPL v3 |
+| 0a.   | License       | Apache 2.0 |
 | 0b.   | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how to create a liquidity pool and provision funds to it. |
-| 0c.   | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests. |
-| 1. | Pallet: MultiToken Bonding Curve | We will create a Pallet that will implement a simplified multi-token bonding curve. |
-| 2. | Pallet: Liquidity Provisioning   | We will create a Pallet that will implement Liquidity Pool Provisioning. |
+| 0c.   | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests.<br />The tests will cover basic functionlity like<br />i. Creating a Liquidity Pool<br />ii. Adding and removing liquidity<br />iii. Swapping based on exact amount in and exact amount out |
+| 1. | Multi-currency Baseline | Support Multiple Currencies being traded this will leverage and expand upon the following from [FRAME](https://substrate.dev/docs/en/knowledgebase/runtime/frame) and [ORML](https://github.com/open-web3-stack/open-runtime-module-library)<br />[FRAME:support:currency trait](https://github.com/paritytech/substrate/blob/master/frame/support/src/traits.rs#L858)<br />[FRAME:pallet-balances](https://crates.io/crates/pallet-balances)<br />[orml-tokens](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/tokens/src/lib.rs)<br />[orml-currencies](https://github.com/open-web3-stack/open-runtime-module-library/blob/master/currencies/src/lib.rs) |
+| 2. | Pallet: sunrise-dex | We will create a Pallet that will implement a simplified multi-token bonding curve.<br />We will begin prototyping with a two token pool similar to [uniswapV2Pair](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2Pair.sol)<br />Then enhance to a multi-token-pool see [balancer as a reference implementation](https://github.com/balancer-labs/balancer-core/blob/master/contracts/BMath.sol) |
+| 2a. | Liquidity Pool Management | We will create functions that will implement liquidity management samples included below<br />Pool Creation<br />Add liquidity<br /> Remove Liquidity <br />Pool creation will be configurable based on the seven parameters mentioned above|
+| 2b. | Swap Functionality | We will create functions that will implement swap functionality including samples included below<br /> calcSpotPrice<br />calcOutGivenIn<br />calcInGivenOut<br />calcPoolOutGivenSingleIn<br />calcSingleInGivenPoolOut<br />calcSingleOutGivenPoolIn <br />calcPoolInGivenSingleOut<br />[Reference Implementation from Balancer](https://github.com/balancer-labs/balancer-core/blob/master/contracts/BMath.sol)|
+| 2c. | Sunrise Router | We will create functions that will implement routing capabilities samples included below<br /> processPaths <br /> processEpsOfInterestMultiHop<br /> getPricesOfInterest<br />calculateBestPathIdsForPricesOfInterest<br />getSwapAmountsForPriceOfInterest<br />getExactSwapAmounts <br />[Reference Implementation from Balancer](https://github.com/balancer-labs/balancer-sor/blob/master/src/sor.ts)|
 | 3. | Substrate chain  | We will Host this on our Dawn Parachain on Rococco or our  [Daybreak Standalone Chain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fdaybreak.sunriseprotocol.com%3A443#/explorer) |
 | 4. | Docker   | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
@@ -202,53 +192,57 @@ This application is specific to the DEX Pallet and lays the foundation for the l
 
 * Estimated Duration: 1 month
 * FTE: 2
-* Costs: 0.4 BTC
-
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a.   | License       | GNU GPL v3 |
-| 0b.   | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how to create a liquidity pool and provision funds to it. |
-| 0c.   | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests. |
-| 1. | Pallet: Stable Coin  Bonding Curve | We will enhance the sunrise factory to support a stable coin bonding curve. |
-| 2. | Pallet: SWAP Functionality | We will create a Pallet that will implement SWAP functionality. |
-| 3. | Pallet: Basic Reward Functionality | We will create a Pallet that will implementBasic Reward Functionality. |
-| 4. | Substrate chain  | We will Host this on our Dawn Parachain on Rococco or our  [Daybreak Standalone Chain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fdaybreak.sunriseprotocol.com%3A443#/explorer) |
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-
-### Milestone 3: Sunrise DApp on Test Network
-
-* Estimated Duration: 1 month
-* FTE: 2
 * Costs: 0.3 BTC
 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a.   | License       | GNU GPL v3 |
-| 0b.   | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can deploy the Sunrise Protocol DApp and the polakdot-js app forked by Sunrise Protocol with DEX Capabilities. |
-| 0c.   | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests. |
-| 1. | Polkadot-js app DEX Capabilities | We will fork polkadot-js app and provide dex functionality |
-| 2. | Sunrise Protocol DApp | We will build Sunrise Protocol DApp with DEX Functionality |
-| 3. | Applications Deployed and Hosted on Dawn | We will create a Pallet that will implementBasic Reward Functionality. |
+| 0a.   | License       | Apache 2.0 |
+| 0b.   | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how to create a liquidity pool and provision funds to it. |
+| 0c.   | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests.<br />Tests will include<br />i. Creating a stable coin pool<br />ii. Adding and removing liquidity <br /> iii. Swaps <br />iv.Rewards staking and earning <br />v. Testing functionalitly using explorer Extrinsics|
+| 1. | Pallet: sunrise-dex | We will enhance the sunrise factory to support a stable coin bonding curve. <br />Reference implementations include [curve](https://github.com/curvefi/curve-contract/blob/master/contracts/pools/usdt/StableSwapUSDT.vy#L74) and [shellprotocol](https://github.com/cowri/shell-solidity-v1/blob/wbtc-renbtc-sbtc-10/22/2020/src/Shells.sol) |
+| 2. | Pallet: sunrise-rewards | We will create a Pallet that will implement basic reward functionality.<br /> Reference implementations include [uniswap](https://github.com/Uniswap/liquidity-staker), [balancer](https://github.com/balancer-labs/bal-mining-scripts) and [sushiswap](https://github.com/sushiswap/sushiswap/blob/master/contracts/SushiMaker.sol)|
 | 4. | Substrate chain  | We will Host this on our Dawn Parachain on Rococco or our  [Daybreak Standalone Chain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fdaybreak.sunriseprotocol.com%3A443#/explorer) |
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-| 6. | Community Education | We will publish Medium Articles in English and Chinese and also posts on twitter. Explaining the DEX Functionality. |
+
+**Here is an overview of the Sunrise Reward design**
+
+![Sunrise Rewards Design](https://raw.githubusercontent.com/sunriseprotocol/wiki/main/assets/Sunrise%20Rewards.png "Sunrise Rewards Design")
+
+### Milestone 3: Sunrise DApp on Test Network
+
+* Estimated Duration: 1 month
+* FTE: 2
+* Costs: 0.2 BTC
+
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a.   | License       | Apache 2.0 |
+| 0b.   | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can deploy the Sunrise Protocol DApp and the polakdot-js app forked by Sunrise Protocol with DEX Capabilities. |
+| 0c.   | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests.<br /> Tests will include <br />i. Testing all functions via explorer using extrinsics <br />ii. Testing functionality via the DApp|
+| 1. | Polkadot-js app DEX Capabilities | We will fork polkadot-js app and provide dex functionality |
+| 2. | Sunrise Protocol DApp | We will build Sunrise Protocol DApp with DEX Functionality |
+| 3. | Applications Deployed and Hosted on Dawn | We will deploy a hosted application that connects to Dawn. |
+| 4. | Substrate chain  | We will Host this on our Dawn Parachain on Rococco or our  [Daybreak Standalone Chain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fdaybreak.sunriseprotocol.com%3A443#/explorer) |
+| 5. | Community Education | We will publish Medium Articles in English and Chinese and also posts on twitter. Explaining the DEX Functionality. |
 
 ## Future plans
 
 We plan to make our chain one of the leading parachains in the polkadot ecosystem. Thus, there is still a lot of work to be done. Here are a few of them:
 
-1. Implement SRS Incentivization Functionality
-2. Bridging Functionality (XCMP Parachain Integration and Ethereum snowfork like integration)
-3. Sunrise Order Book and Limit Order Functionality
-4. Application Functionality (Sunrise Dapp, polkadot-js apps, wallet)
+1. Support for Multi-Currencies  via INK or EVM conforming to [psp-3](https://github.com/w3f/PSPs/blob/master/PSPs/drafts/psp-3.md)
+2. Enhance Deployment capabilities of the Sunrise DEX for other chains (either as an ORML module or as an INK Contract)
+3. Implement SRS Incentivization Functionality
+4. Bridging Functionality (XCMP Parachain Integration and Ethereum snowfork like integration)
+5. Sunrise Order Book and Limit Order Functionality
+6. Application Functionality (Sunrise Dapp, polkadot-js apps, wallet)
 7. Governance model using SRS
-5. Parachain Functionality (Launching on Rococco initially)
-6. Proactive Bonding curve integrated with price oracles
-7. Compliance Framework
-8. Smart Wallet Functionality
-7. Governance model using SRS
+8. Parachain Functionality (Launching on Rococco initially)
+9. Proactive Bonding curve integrated with price oracles
+10. Compliance Framework
+11. Smart Wallet Functionality
+12. Governance model using SRS
 
 ## Additional Information
 
@@ -258,4 +252,12 @@ No other teams have contributed to the project.
 
 This is Sunrise Protocol's first grant application. However John wrote a previous application for a [DEX Pallet](https://github.com/w3f/General-Grants-Program/pull/351). The original application has been archived and the vision has been refined based on feedback from David Hawig and knowledge gained working on substrate over the past months by the Sunrise Protocol team.
 
+For a more comprehensive Sunrise Protocol Vision please read the following
 
+* [Sunrise Protocol Product Overview](https://about.sunriseprotocol.com)
+* [Sunrise Protocol Light Paper](https://lightpaper.sunriseprotocol.com)
+* [Sunrise Protocol White Paper](https://whitepaper.sunriseprotocol.com)
+
+**Here is an overview of the Sunrise Order Book design**
+
+![Sunrise Reference Protocols](https://raw.githubusercontent.com/sunriseprotocol/wiki/main/assets/Sunrise%20Limit%20Orders%20Detailed.png "Sunrise Order Book Design")
