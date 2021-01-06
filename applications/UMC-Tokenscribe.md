@@ -146,6 +146,7 @@ The draft specification and a demo will be provided.
 | 1a. | Demo code repo | The demo code with Ink!. |
 | 1b. | Tutorial | The tutorial of how to use. |
 | 2. | Article | An article on media channels. |
+| 3. | PSP | Submit a Polkadot Standards Proposal. |
 
 ## Future Plans
 
