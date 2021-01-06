@@ -2,7 +2,7 @@
 
 * **Project Name:** Platdot
 * **Proposer:** [chainnet](https://chainnet.tech)
-* **Payment Address:** 0xd75A7F29D1b6C6a8B286a256B999B97b9a9CAED6 
+* **Payment Address:** 3JP2Uf4HNqKfAfGQWSabohdTq6VQfa6bkL 
 
 ## Project Overview :page_facing_up: 
 
@@ -58,7 +58,7 @@ https://github.com/platdot
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  5
-* **Total Costs:** 50000 DAI 
+* **Total Costs:** 1.425 BTC 
 
 ### Milestone 1 - Multi-signature cross-chain
 | Number | Deliverable | Specification |
