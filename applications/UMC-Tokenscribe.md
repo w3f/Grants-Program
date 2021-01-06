@@ -130,12 +130,12 @@ Davies
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 2
-* **Total Costs:** 0.6 BTC
+* **Total Costs:** 0.3 BTC
 
 ### Milestone 1 — Implement Draft Specification 
 * **Estimated Duration:** 3 months
 * **Full-time Equivalent (FTE):** 2
-* **Costs:** 0.6 BTC 
+* **Costs:** 0.3 BTC 
 
 The draft specification and a demo will be provided.
 
