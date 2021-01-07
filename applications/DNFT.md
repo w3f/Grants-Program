@@ -56,7 +56,8 @@ Through the data ETL and data label annotations, we're creating a data framework
 ### **Contact**
 
  **Contact Name:** Haiping
-        **Contact Email:** lin_haiping@foxmail.com
+ 
+ **Contact Email:** lin_haiping@foxmail.com
 
 ### Legal Structure
 
@@ -112,7 +113,7 @@ No Legal Entity
 | 4.         | Docker Image    | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 ## Future Plans
-
+* We will improve storage mechanism. 
 * We will integrate Cross-chain mechanism, we're ready to become a parachain of Polkadot. 
 * We will integrate EVM module into DNFT Chain to support Ethereum System.
 * We will implement more type of auctions like lottery auction, social verified auction, etc.
