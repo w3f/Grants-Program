@@ -77,7 +77,8 @@ No Legal Entity
 **ZhiXiao**
 
 - Full-stack Developer
-- Over 5 years of experiences in PHP,Golang, Vue, JS Former Full-stack Developer in Meituan
+- Over 5 years of experiences in PHP,Golang, Vue, JS
+- Former Full-stack Developer in Meituan
 - Former Full-stack Developer in Alibaba
 
 ### Team Code Repos
