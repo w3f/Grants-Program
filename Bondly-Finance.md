@@ -100,33 +100,90 @@ Below we provide an **example roadmap**. In the descriptions it should be clear 
 For each milestone:
 ### Overview
 Total Estimated Duration:** June 2021
-Full-time equivalent (FTE):**  5 
-Total Costs:** $90k
+Full-time equivalent (FTE):**  7
+Total Costs:** $30k
+
+
 
 ### Milestone 1 - Finalize Figma Prototype
+
 Estimated Duration:** 1 month
 FTE:**  1
 Costs:** $5,000
 
+As a result we are going to produce high fidelity prototypes suitable for development of the user interface of the marketplace.
+
+Sprint 1: design basic seller experience
+Sprint 2: design basic buyer experience
+Sprint 3: design advanced settings for seller
+Sprint 4: design custom storefronts configurations
+
+
 ### Milestone 2 - Develop the UI part for the MVP
+
 Estimated Duration:** 1 month
 FTE:**  2
-Costs:** $40,000
+Costs:** $5,000
 
-### Milestone 3 - Port smart contract layer on Substrate EVM Pallet
+We will create a single-page responsive web application using Angular to reflect basic Buyer and Seller user stories.
+
+Sprint 1: develop UI: General elements, pages and layouts of the marketplace (Angular)
+Sprint 2: develop UI for Buyer basic experience (Angular)
+Sprint 3: develop UI for Seller basic experience (Angular)
+Sprint 4: stabilize the UI (Angular)
+
+
+### Milestone 3 - Develop Smart Contracts and Backend Layer v.1
 Estimated Duration:** 1 month
 FTE:**  1
-Costs:** $15,000
+Costs:** $5,000
 
-### Milestone 4 - Integrate and debug the browser wallet, contribute to the open source related to NFT component of the wallet
+Smart contracts layer will be developed for all the critical business logic.
+We will use Solidity v.0.7 for development and Truffle framework for testing.
+
+Back end layer will be created for storing non-critical data and settings, as well as for caching purposes.
+We will use NodeJS and MongoDB on the backend, deploying the solution on AWS infrastructure.
+
+Sprint 1: develop smart contracts; develop MongoDB data schema
+Sprint 2: develop smart contracts; develop restful API layer
+Sprint 3: cover smart contracts with tests; develop restful API layer
+Sprint 3: cover smart contracts with tests; solidify restful API layer
+
+
+### Milestone 4 - Port smart contract layer on Substrate EVM Pallet
 Estimated Duration:** 1 month
 FTE:**  1
-Costs:** $15,000
+Costs:** $5,000
 
-### Milestone 5 - Build and ship the v.2.1 features
+We will research and select a proper solution for EVM on Substrate, and port our solution on it.
+
+Sprint 1: research of the available solutions: Moonbeam, EdgeWare
+Sprint 2: proof of concept, full port
+Sprint 3: full port; troubleshooting
+Sprint 4: full port; troubleshooting
+
+
+### Milestone 5 - Integrate and debug the browser wallet, contribute to the open 
+source related to NFT component of the wallet
+Estimated Duration:** 1 month
+FTE:**  1
+Costs:** $5,000
+
+We will discuss the most important community improvement requests with the Substrate solution of our choice, and will contribute to the open source of the wallet in the realm of NFT interaction.
+
+
+### Milestone 6- Develop advanced publisher verification component
 Estimated Duration:** 1 month
 FTE:**  1* 
-Costs:** $15,000
+Costs:** $5,000
+
+Big brands need extra protection and a verified status for counterfeit protection. We will develop the module for advanced verification of publishers through the registry of verified publishers managed through the voted multi signature approval.
+
+Sprint 1: design voting UI
+Sprint 2: develop registry and voting on smart contracts
+Sprint 2: develop voting UI
+Sprint 3: cover with tests
+
 
 ### Community engagement
 
@@ -152,3 +209,4 @@ Possible additional information to include:
 Token raise.
 * Have you applied for other grants so far?
 No.
+
