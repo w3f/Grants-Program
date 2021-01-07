@@ -116,12 +116,12 @@ The main functions that will be deployed on the chain in this milestone are as f
 ### Overview
 * **Total Estimated Duration:** 9 weeks
 * **Full-time equivalent (FTE):** 5
-* **Total Costs:** 1 BTC
+* **Total Costs:** 0.85 BTC
 
 ### Milestone 1 — Smart Contract
 * **Estimated Duration:** 3 weeks
 * **FTE:**  3
-* **Costs:** 0.3 BTC
+* **Costs:** 0.25 BTC
 
 
 | Number | Deliverable | Specification |
@@ -140,7 +140,7 @@ The main functions that will be deployed on the chain in this milestone are as f
 ### Milestone 2 — UI
 * **Estimated Duration:** 5 weeks
 * **FTE:**  2
-* **Costs:** 0.3 BTC
+* **Costs:** 0.25 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -156,7 +156,7 @@ The main functions that will be deployed on the chain in this milestone are as f
 ### Milestone 3 — Back-end libraries
 * **Estimated Duration:** 6 weeks(parallel with milestone 2)
 * **FTE:**  3
-* **Costs:** 0.4 BTC
+* **Costs:** 0.35 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
