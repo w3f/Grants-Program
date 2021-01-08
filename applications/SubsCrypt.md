@@ -2,7 +2,7 @@
 
 * **Project Name:** SubsCrypt
 * **Team Name:** OxyDev
-* **Payment Address:** 1NwMufvcL6aB6HbbKfQvEA9a2qriGN64xQ
+* **Payment Address:** 0x7a72002A872010924a4093D24712B49E5B89452c
 
 
 
@@ -116,12 +116,12 @@ The main functions that will be deployed on the chain in this milestone are as f
 ### Overview
 * **Total Estimated Duration:** 9 weeks
 * **Full-time equivalent (FTE):** 5
-* **Total Costs:** 0.85 BTC
+* **Total Costs:** 30K Dai
 
 ### Milestone 1 — Smart Contract
 * **Estimated Duration:** 3 weeks
 * **FTE:**  3
-* **Costs:** 0.25 BTC
+* **Costs:** 8K Dai
 
 
 | Number | Deliverable | Specification |
@@ -140,7 +140,7 @@ The main functions that will be deployed on the chain in this milestone are as f
 ### Milestone 2 — UI
 * **Estimated Duration:** 5 weeks
 * **FTE:**  2
-* **Costs:** 0.25 BTC
+* **Costs:** 10K Dai
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -156,7 +156,7 @@ The main functions that will be deployed on the chain in this milestone are as f
 ### Milestone 3 — Back-end libraries
 * **Estimated Duration:** 6 weeks(parallel with milestone 2)
 * **FTE:**  3
-* **Costs:** 0.35 BTC
+* **Costs:** 12K Dai
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
