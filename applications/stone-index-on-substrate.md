@@ -2,7 +2,7 @@
 
 * **Project Name:** Stone Index on Substrate
 * **Team Name:** stonedefi
-* **Payment Address:** 0x7d1c8AA977696fD938CA2EaBE8D9be7358694486
+* **Payment Address:** bc1qwyq4h8q07vjm9gm9mxjk5gew5hr06lk9ca5t0t
 
 ## Project Overview :page_facing_up: 
 
