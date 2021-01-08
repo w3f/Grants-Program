@@ -104,9 +104,9 @@ No Legal Entity
 | ---------- | --------------- | ------------------------------------------------------------ |
 | 0a.        | License         | Apache License 2.0                                           |
 | 0b.        | Documentation   | Documents containing the description of whole architecture design for DNFT |
-| 0c.        | Testing Guide   | We will provide a full test suite and guide for DNFT         |
+| 0c.        | Testing Guide   | We will provide a full test suite and guide for DNFT.And the code will have unit-test coverage (min. 70%) to ensure functionality and robustness.  |
 | 1a.        | Node Repo       | Complete the deployment of the basic public chain            |
-| 2a.        | Pallet_nft      | Complete the development of pallet_nft and realize the ERC721& ERC1155 standard |
+| 2a.        | Pallet_nft      | Complete the development of pallet_nft, realize the ERC1155 standard and integrate existing ERC721 standard(eg. https://github.com/danforbes/pallet-nft)|
 | 2b.        | Pallet_tax      | Complete the development of pallet_tax and realize the storage tax and collection mechanism |
 | 2c.        | Pallet_swap     | Complete the development of pallet_swap and realize the NFT swap mechanism |
 | 2d.        | Pallet_dao      | Complete the development of pallet_dao and realize the governance mechanism |
