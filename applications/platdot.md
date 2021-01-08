@@ -3,17 +3,17 @@
 * **Project Name:** Platdot
 * **Proposer:** [chainnet](https://chainnet.tech)
 * **Payment Address:** 3JP2Uf4HNqKfAfGQWSabohdTq6VQfa6bkL 
-
 ## Project Overview :page_facing_up: 
 
 ### Overview
 
-PlatON is a blockchain network focused on privacy computing. The founder is Xiao Feng of Wanxiang Blockchain Labs. Similar to Polkadot, PlatON also has an experimental network named alaya.Currently, Platon only has alaya meta network.Currently, PlatON only has alaya network, so we will give priority to the connection between alaya and kusama.When PlatON is online, we will connect PlatON and Polkadot.
- 
+PlatON is a blockchain network focused on privacy computing. The founder is [Feng Xiao](https://platon.network/en/team)of [Wanxiang Blockchain Labs](https://www.blockchainlabs.org/). Similar to Polkadot, PlatON also has an experimental network named alaya.Currently, Platon only has alaya meta network.Currently, PlatON only has alaya network, so we will give priority to the connection between alaya and kusama.When PlatON is online, we will connect PlatON and Polkadot. 
+Platon is not based on substrate.platon was not developed by our team,platdot just wants to bridge platon and polkadot in the best way.The use of multi-signature is only our first step, it is only a transitional stage.What we really want to do is a decentralized cross-chain through spv client  without anyone participating.
+
 The purpose of Platdot is to realize the cross-chain of PlatON and Platdot.We use iterative development. Initially, we will implement a simple multi-signature version to support the exchange of assets between platon and polkadot.Then we will implement polkadot and platon decentralized cross-chain by implementing polkadot spv client and platon spv client.
 
 ### Project Details 
-platdot will unite the important partners of Polkadot and platon ecology to form an asset cross-chain alliance, and complete the cross-chain asset mapping through 2/3 multi-signature, which constitutes the issuance and exchange of cross-chain assets.
+Platdot will unite the important partners of Polkadot and platon ecology to form an asset cross-chain alliance, and complete the cross-chain asset mapping through 2/3 multi-signature, which constitutes the issuance and exchange of cross-chain assets.
 
 Take polkadot's dot cross to platon as an example. The user initiates a request to cross the dot to the wallet address specified by platon. After the alliance automatically listens to the minting request, it will issue 1:1 anchor dot on platon through multi-signature. pdot, the issued pdot is transferred to the platon address of the user.
 
@@ -32,20 +32,20 @@ Exchange process:
 ![Exchange process](https://miro.medium.com/max/1050/1*SojsfHsFRejISRfgd0jDog.jpeg)
 
 ### Ecosystem Fits
-* [PlatON](https://platon.network): An infrastructure for Privacy-Preserving Computation and Distributed Economies
+* [PlatON](https://platon.network/en): An infrastructure for Privacy-Preserving Computation and Distributed Economies
 
-* [alaya](https://www.alaya.network): Alaya is a business sandbox and testing field for the next-generation of financial infrastructure of PlatON, a global data asset computing infrastructure with cutting-edge privacy-preserving architecture. While Alaya and PlatON share the almost identical underlying technology, they maintain their respective degrees of openness and independent activities. Despite sharing the same vision and ideas, their evolution paths and specializations differ.
+* [alaya](https://www.alaya.network/en): Alaya is a business sandbox and testing field for the next-generation of financial infrastructure of PlatON, a global data asset computing infrastructure with cutting-edge privacy-preserving architecture. While Alaya and PlatON share the almost identical underlying technology, they maintain their respective degrees of openness and independent activities. Despite sharing the same vision and ideas, their evolution paths and specializations differ.
 
 
 
 ## Team :busts_in_silhouette:
 ### Team members
-* Guo Hongjie
-* Li Ming
-* Du Yunhui
+* Hongjie Guo
+* Ming Li
+* Yunhui Du
 
 ### Contact
-* **Contact Name:** Guo Hongjie
+* **Contact Name:** Hongjie Guo
 * **Contact Email:** platdotnetwork@gmail.com
 
 ### Team Website 
@@ -58,7 +58,7 @@ https://github.com/platdot
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  5
-* **Total Costs:** 1.425 BTC 
+* **Total Costs:** 0.75 BTC 
 
 ### Milestone 1 - Multi-signature cross-chain
 | Number | Deliverable | Specification |
@@ -71,7 +71,8 @@ https://github.com/platdot
 
 
 ## Additional Information :heavy_plus_sign: 
-* PlatON official website: https://www.platon.network
-* Alaya official website: https://www.alaya.network
+* PlatON official website: https://www.platon.network/en
+* Alaya official website: https://www.alaya.network/en
 * Chainnet official website: https://chainnet.tech
+* PlatON White Paper: https://platon.network/pdf/en/PlatON_A_High-Efficiency_Trustless_Computing_Network_Whitepaper_EN.pdf?v0.6.6
 
