@@ -9,7 +9,7 @@
 
 PlatON is a blockchain network focused on privacy computing. The founder is [Feng Xiao](https://platon.network/en/team)of [Wanxiang Blockchain Labs](https://www.blockchainlabs.org/). Similar to Polkadot, PlatON also has an experimental network named alaya.Currently, Platon only has alaya meta network.Currently, PlatON only has alaya network, so we will give priority to the connection between alaya and kusama.When PlatON is online, we will connect PlatON and Polkadot. 
 
-Platon is not based on substrate.platon was not developed by our team,platdot just wants to bridge platon and polkadot in the best way.The use of multi-signature is only our first step, it is only a transitional stage.What we really want to do is a decentralized cross-chain through spv client  without anyone participating.
+PlatON is not based on substrate.PlatON was not developed by our team,Platdot just wants to bridge PlatON and Polkadot in the best way.The use of multi-signature is only our first step, it is only a transitional stage.What we really want to do is a decentralized cross-chain through spv client  without anyone participating.
 
 The purpose of Platdot is to realize the cross-chain of PlatON and Platdot.We use iterative development. Initially, we will implement a simple multi-signature version to support the exchange of assets between platon and polkadot.Then we will implement polkadot and platon decentralized cross-chain by implementing polkadot spv client and platon spv client.
 
