@@ -20,7 +20,7 @@ At the end of 2017, an application based on ERC721, called CryptoKitties, took p
 
 Based on our study and experience in NFT, on top of ERC721 protocol of Ethereum, we are making use of the Polkadot network and forming a new NFT protocol, addressing all the issues that are mentioned above, making the NFT protocols enabled by Polkadot wider, adding up to the variety of the on-chain NFT assets.
 
-We would like to make NFT908 Protocol substrate  for the Polkadot ecosystem and  going to be an ink! smart contract, making NFT908 an infrastructure for Polkadot, and bringing prosperity for the Polkadot ecosystem.
+We would like to make NFT908 Protocol substrate  for the Polkadot ecosystem and  going to be an substrate module, making NFT908 an infrastructure for Polkadot, and bringing prosperity for the Polkadot ecosystem.
 
 
 ## Team :busts_in_silhouette:
