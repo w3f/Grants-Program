@@ -1,0 +1,14 @@
+{
+  "pull_request": {
+    "head": {
+      "ref": "10e629ef2f090f55a52b693961de8f5e1206d900"
+    },
+    "base": {
+      "ref": "10e629ef2f090f55a52b693961de8f5e1206d900"
+    },
+    "state": "closed",
+    "merged": true,
+    "number": 12,
+    "body": "# Grant Application Checklist\n- [X] The [application-template.md](https://github.com/w3f/Open-Grants-Program/blob/master/applications/application-template.md) has been copied, renamed ( \"project_name.md\") and updated."
+  }
+}
