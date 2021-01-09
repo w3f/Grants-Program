@@ -18,6 +18,7 @@
 - [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
   - [Treasury](#treasury)
   - [General Grants Program](#general-grants-program)
+  - [Other Grant Programs](#other-grant-program)
 - [:information_source: License](#information_source-license)
 
 ## :clipboard: About 
@@ -113,6 +114,14 @@ The treasury is a pot of on-chain funds collected through transaction fees, slas
 ### General Grants Program
 
 For larger grants, payments in fiat and partly private submissions, please visit our [Web3 Foundation Grants page](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md) on GitHub. 
+
+### Other Grant Programs 
+
+Below is list of other grant programs in the polkadot/substrate ecosystem: 
+
+- [Darwinia Grants Program](https://docs.darwinia.network/docs/en/dev-bounty#grant-program) 
+- [Moonbeam Grants Program](https://moonbeam.network/community/grants/)
+
 
 ## :bulb: Help
 
