@@ -18,7 +18,7 @@
 - [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
   - [Treasury](#treasury)
   - [General Grants Program](#general-grants-program)
-  - [Other Grant Programs](#other-grant-program)
+  - [Other Grant Programs](#other-grant-programs)
 - [:information_source: License](#information_source-license)
 
 ## :clipboard: About 
