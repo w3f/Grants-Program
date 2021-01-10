@@ -31,17 +31,55 @@ From the perspective of the advertising industry, the blockchain technology can 
 
 The main participants of the Parami protocol are advertisers and users. The full set of services is achieved through the cooperation of multiple components.
 
-![Project Details](https://user-images.githubusercontent.com/72891/102059406-dac82e00-3e2b-11eb-8ccb-f701786be6d1.png)
+![Project Details](https://user-images.githubusercontent.com/72891/104114587-1aa60680-5341-11eb-9584-79ab45d8b932.png)
 
-Parami components include Runtime, Off-chain worker, Access Services, Advertiser Portal, and Background Services.
-Runtime and Off-chain workers work together to implement the factor core of Parami.
+Parami components include Runtime, Off-chain worker, RPC Services. Runtime and Off-chain workers work together to implement the core of Parami. The core node code and is maintained by Parami, the nodes will be maintained by the community.
 
-Advertisers can create ad requests by accessing the Access Services through the Advertiser Portal.
+Advertisers can create ad requests by accessing the Advertiser Portal, which interacts with RPC services.
 
-Users access various types of ads through different ad media. Parami uses CDN and API Gateway to speed up user access.
-It also provides full Firewall and Auth support to enhance the security of the whole access system.
+Users access various types of ads through different ad media. The social integration SDK will fetch and display Ad in IM explorer, then track and upload user interaction data to Ad server.
 
-To support the full core service, we use IPFS and RDS as the storage layer, and use Message Queue to improve the message processing performance.
+Ad metadata is divided into two categories, the on-chain part and off-chain part(IPFS part).
+
+On-chain ad metadata contains ad parimary key and reward info:
+
+* **issuerdid**: issuer did of the ad
+* **adid**: ID of the ad
+* **totalfund**: all the fund has been deposited
+* **remainfund**: the maining fund has been deposited.
+* **base**: the basic reward for a single ad interaction.
+* **bonus**: the highest stardard of the bonus reward.
+
+Off-chain ad metadata will be stored on IPFS, including all other basic ad metadata:
+
+* **id**: ID of the ad
+* **adomain**: ad domain name
+* **bundle**: unique ID of app where ad is shown
+* **url**: ad jump url
+* **tags**: string array of ad topic
+* **lang**: language code of the ad using ISO-639-1
+* **init**: timestamp of the original instantiation of this ad
+* **lastmod**: timestamp of most recent modification to this ad
+* **display**: ad display data, including static picture url, or video links
+* **ext**: Optional vendor-specific extensions.
+
+#### Business Logic
+
+All ads are pre-registered by advertisers via RPC service. So the advertisers know the ad's id, and set up the display of ad in its social platform or mobile apps.
+
+![Life Cycle](https://user-images.githubusercontent.com/72891/104114632-88eac900-5341-11eb-9c78-248dbe60b07c.png)
+
+* When a user is to be shown an ad, the underlying RPC API SDK will be responsible for converting the ad id into ipfs metadata information to enable the display of the ad.
+* The SDK will then be responsible for passing the tracking data to the advertiser's server, which will be responsible for confirming the click and passing the confirmation information to the Parami's RPC service.
+* The off-chain worker is responsible for initiating reward transactions and updating the user's profile.
+
+The SDK will be a javascript library for advertisers to complete ad placements, with core functionality including：
+
+* DID registry: register/initialize new DID and profile for new user and bind the corresponding social platform ID.
+* DID read: get the DID according to the platform id.
+* Ad display: convert ad id to IPFS resources(metadata in JSON format)
+* Ad track: convert user interaction to track info.
+* Ad data upload: upload user ad data to advertiser server.
 
 #### Data Analysis Platform
 
