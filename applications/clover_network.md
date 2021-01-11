@@ -164,17 +164,17 @@ We all come from different and unique walks of life, backgrounds, and experience
 * **FTE:**  11.5
 * **Costs:** 0.22 BTC
 
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Documentation | Documentation will be ready at 1.0 version to cover 100% of the current features |
-| 2. | Tulip Editor | Delivering alpha build for Tulip Editor with EVM support |
-| 3. | Clover Wallet App | Releasing Clover wallet app on Google Play and Apple Store |  
-| 4. | Clover OS | Having Clover OS support for iOS/Android/Embedded by the end of Mar. |  
-| 5. | Clover Store | Delivering the official release of Clover Store. |  
-| 6. | Clover Developer Portal | Rolling out Clover developer portal for the public with incentivize program |  
-| 7. | Clover Wallet Firefox/Safari Extension | Delivering Clover Firefox/Safari extension |  
-| 8. | Clover Governance | Releasing first build of Clover governance system |
-| 9. | Storage | Adding IPFS/AR/CRUST support as the Storage service |
+| Number | Deliverable | Language/Framework | Specification |
+| ------------- | ------------- | ------------- | ------------- |
+| 1. | Documentation | Text | Documentation will be ready at 1.0 version to cover 100% of the current features |
+| 2. | Tulip Editor | Vue/NodeJS/Solidity | Delivering alpha build for Tulip Editor with EVM support |
+| 3. | Clover Wallet App | Android/iOS Native | Releasing Clover wallet app on Google Play and Apple Store |  
+| 4. | Clover OS | Native/JS | Having Clover OS support for iOS/Android/Embedded by the end of Mar. |  
+| 5. | Clover Store | Vue/IPFS/Solidity/NodeJS | Delivering the official release of Clover Store. |  
+| 6. | Clover Developer Portal | Vue/Java/NodeJS/PostgreSQL | Rolling out Clover developer portal for the public with incentivize program |  
+| 7. | Clover Wallet Firefox/Safari Extension | Javascript/Vue | Delivering Clover Firefox/Safari extension |  
+| 8. | Clover Governance | Solidity/Rust | Releasing first build of Clover governance system |
+| 9. | Storage | NodeJS | Adding IPFS/AR/CRUST support as the Storage service |
 
 
 ## Future Plans
