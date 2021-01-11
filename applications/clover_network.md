@@ -124,28 +124,27 @@ We all come from different and unique walks of life, backgrounds, and experience
 ### January 2021 Milestones
 * **Estimated Duration:** 1 month
 * **FTE:**  11.5
-* **Costs:** 0.35 BTC
+* **Costs:** 0.22 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | Documentation | Start documenting on the various aspect of the Clover product matrix. |
-| 2. | Stress Test | Starting stress tests of clover nodes to ensure the robustness especially on different geolocations on high latency. |
-| 3. | Unit Test | The chain specific unit tests will cover 50% at the end of Jan. | 
-| 4. | License | MIT license |
-| 5. | Article/Tutorials | Writing varios tutorials to demonstrate how to setup clover nodes |  
-| 6. | Clover Rosetta Services | Integrating Coinbase Rosetta services to ensure the cross-chain compatibility |  
-| 7. | Clover Chain | Fully implementing distributing gas fee functionality for EVM contract deployers |  
-| 8. | Clover Explorer | Creating first alpha build for Clover cross-chain block explorer based on Rosetta protocol |  
-| 9. | Clover Store | Delivering initial build of clover store app to be able download/execute eAPPs |
-| 10. | Clover Testnet | We will finalize the Clover testnet and the faucet to receive test tokens |
-| 11. | Clover Wallet App | Delivering initial build of Clover official wallet on both android/iOS |
-| 12. | Clover Wallet Chrome Extension| Delivering initial build of Chrome Extension of Clover web3 wallet |
-| 13. | Substrate module: Frontier-EVM pallet| Rolling out minor EVM adjustments with Clover chain |
+| 2. | Unit Test | The chain specific unit tests will cover 50% at the end of Jan. | 
+| 3. | License | MIT license |
+| 4. | Article/Tutorials | Writing varios tutorials to demonstrate how to setup clover nodes |  
+| 5. | Clover Rosetta Services | Integrating Coinbase Rosetta services to ensure the cross-chain compatibility |  
+| 6. | Clover Chain | Fully implementing distributing gas fee functionality for EVM contract deployers |  
+| 7. | Clover Explorer | Creating first alpha build for Clover cross-chain block explorer based on Rosetta protocol |  
+| 8. | Clover Store | Delivering initial build of clover store app to be able download/execute eAPPs |
+| 9. | Clover Testnet | We will finalize the Clover testnet and the faucet to receive test tokens |
+| 10. | Clover Wallet App | Delivering initial build of Clover official wallet on both android/iOS |
+| 11. | Clover Wallet Chrome Extension| Delivering initial build of Chrome Extension of Clover web3 wallet |
+| 12. | Substrate module: Frontier-EVM pallet| Rolling out minor EVM adjustments with Clover chain |
 
 ### February 2021 Milestones
 * **Estimated Duration:** 1 month
 * **FTE:**  11.5
-* **Costs:** 0.35 BTC
+* **Costs:** 0.22 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -164,22 +163,19 @@ We all come from different and unique walks of life, backgrounds, and experience
 ### March 2021 Milestones
 * **Estimated Duration:** 1 month
 * **FTE:**  11.5
-* **Costs:** 0.35 BTC
+* **Costs:** 0.22 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | Documentation | Documentation will be ready at 1.0 version to cover 100% of the current features |
-| 2. | Roadmap | Releasing detailed roadmap for Clover development for Q2 |
-| 3. | Developer Incentive Program | Launching the Clover developer incentive program by the end of Mar | 
-| 4. | Tulip Editor | Delivering alpha build for Tulip Editor with EVM support |
-| 5. | Clover Wallet App | Releasing Clover wallet app on Google Play and Apple Store |  
-| 6. | Clover OS | Having Clover OS support for iOS/Android/Embedded by the end of Mar. |  
-| 7. | Clover Store | Delivering the official release of Clover Store. |  
-| 8. | Clover Developer Portal | Rolling out Clover developer portal for the public with incentivize program |  
-| 9. | Clover Wallet Firefox/Safari Extension | Delivering Clover Firefox/Safari extension |  
-| 10. | Clover Governance | Releasing first build of Clover governance system |
-| 11. | Clover Mainnet | Final launch preparations for Clover Mainnet with respective to Polkadot parachain schedule |
-| 12. | Storage | Adding IPFS/AR/CRUST support as the Storage service |
+| 2. | Tulip Editor | Delivering alpha build for Tulip Editor with EVM support |
+| 3. | Clover Wallet App | Releasing Clover wallet app on Google Play and Apple Store |  
+| 4. | Clover OS | Having Clover OS support for iOS/Android/Embedded by the end of Mar. |  
+| 5. | Clover Store | Delivering the official release of Clover Store. |  
+| 6. | Clover Developer Portal | Rolling out Clover developer portal for the public with incentivize program |  
+| 7. | Clover Wallet Firefox/Safari Extension | Delivering Clover Firefox/Safari extension |  
+| 8. | Clover Governance | Releasing first build of Clover governance system |
+| 9. | Storage | Adding IPFS/AR/CRUST support as the Storage service |
 
 
 ## Future Plans
