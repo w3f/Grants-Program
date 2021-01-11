@@ -146,19 +146,18 @@ We all come from different and unique walks of life, backgrounds, and experience
 * **FTE:**  11.5
 * **Costs:** 0.22 BTC
 
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Documentation | Covering 50% of the overall features on Clover Network |
-| 2. | Stress Test | Finishing stress tests with 100 nodes with 1k transactions/second for 7*24 |
-| 3. | Unit Test | The chain specific unit tests will cover 90% by the end of Feb. | 
-| 4. | Clover Chain | Implementing enterprise developers' achitecture with in the low level logic |
-| 5. | Clover Explorer | Delivering the beta build of Clover cross chain explorer with support of BTC/ETH/DOT/CLV |  
-| 6. | Clover OS SDK | The first version of Clover OS SDK with Android/iOS version will be released by the end of Feb. |  
-| 7. | Clover Wallet App | Integrating Clover OS on Clover Wallet App |  
-| 8. | Clover Wallet Chrome Extension | Finalizing Clover chrome extension and distribute it on google store |  
-| 9. | Tulip Editor | Deliverig first POC version of Tulip editor |  
-| 10. | Clover Developer Portal | Delivering basic functionalities of developer portal with account creation/upload/upgrade eAPP |
-| 11. | IPFS Integration | Integrating IPFS node along with Clover node into single Docker file for distribution |
+| Number | Deliverable | Language/Framework | Specification |
+| ------------- | ------------- | ------------- | ------------- |
+| 1. | Documentation | Text | Covering 50% of the overall features on Clover Network |
+| 2. | Unit Test | TypeScript | The chain specific unit tests will cover 90% by the end of Feb. | 
+| 3. | Clover Chain | Rust | Implementing enterprise developers' achitecture with in the low level logic |
+| 4. | Clover Explorer | Vue/NodeJS/SpringCloud | Delivering the beta build of Clover cross chain explorer with support of BTC/ETH/DOT/CLV |  
+| 5. | Clover OS SDK | Native/JS | The first version of Clover OS SDK with Android/iOS version will be released by the end of Feb. |  
+| 6. | Clover Wallet App | Android/iOS Native | Integrating Clover OS on Clover Wallet App |  
+| 7. | Clover Wallet Chrome Extension | JavaScript/Vue | Finalizing Clover chrome extension and distribute it on google store |  
+| 8. | Tulip Editor | Vue/NodeJS/Solidity | Deliverig first POC version of Tulip editor |  
+| 9. | Clover Developer Portal | Vue/Java/NodeJS/PostgreSQL | Delivering basic functionalities of developer portal with account creation/upload/upgrade eAPP |
+| 10. | IPFS Integration | NodeJS/Go | Integrating IPFS node along with Clover node into single Docker file for distribution |
 
 ### March 2021 Milestones
 * **Estimated Duration:** 1 month
