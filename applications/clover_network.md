@@ -126,20 +126,20 @@ We all come from different and unique walks of life, backgrounds, and experience
 * **FTE:**  11.5
 * **Costs:** 0.22 BTC
 
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Documentation | Start documenting on the various aspect of the Clover product matrix. |
-| 2. | Unit Test | The chain specific unit tests will cover 50% at the end of Jan. | 
-| 3. | License | MIT license |
-| 4. | Article/Tutorials | Writing varios tutorials to demonstrate how to setup clover nodes |  
-| 5. | Clover Rosetta Services | Integrating Coinbase Rosetta services to ensure the cross-chain compatibility |  
-| 6. | Clover Chain | Fully implementing distributing gas fee functionality for EVM contract deployers |  
-| 7. | Clover Explorer | Creating first alpha build for Clover cross-chain block explorer based on Rosetta protocol |  
-| 8. | Clover Store | Delivering initial build of clover store app to be able download/execute eAPPs |
-| 9. | Clover Testnet | We will finalize the Clover testnet and the faucet to receive test tokens |
-| 10. | Clover Wallet App | Delivering initial build of Clover official wallet on both android/iOS |
-| 11. | Clover Wallet Chrome Extension| Delivering initial build of Chrome Extension of Clover web3 wallet |
-| 12. | Substrate module: Frontier-EVM pallet| Rolling out minor EVM adjustments with Clover chain |
+| Number | Deliverable | Language/Framework | Specification |
+| ------------- | ------------- | ------------- | ------------- |
+| 1. | Documentation | Text | Start documenting on the various aspect of the Clover product matrix. |
+| 2. | Unit Test | Text | The chain specific unit tests will cover 50% at the end of Jan. | 
+| 3. | License | Text | MIT license |
+| 4. | Article/Tutorials | Text | Writing varios tutorials to demonstrate how to setup clover nodes |  
+| 5. | Clover Rosetta Services | Text | Integrating Coinbase Rosetta services to ensure the cross-chain compatibility |  
+| 6. | Clover Chain | Text | Fully implementing distributing gas fee functionality for EVM contract deployers |  
+| 7. | Clover Explorer | Text | Creating first alpha build for Clover cross-chain block explorer based on Rosetta protocol |  
+| 8. | Clover Store | Text | Delivering initial build of clover store app to be able download/execute eAPPs |
+| 9. | Clover Testnet | Text | We will finalize the Clover testnet and the faucet to receive test tokens |
+| 10. | Clover Wallet App | Text | Delivering initial build of Clover official wallet on both android/iOS |
+| 11. | Clover Wallet Chrome Extension| Text | Delivering initial build of Chrome Extension of Clover web3 wallet |
+| 12. | Substrate module: Frontier-EVM pallet| Text | Rolling out minor EVM adjustments with Clover chain |
 
 ### February 2021 Milestones
 * **Estimated Duration:** 1 month
