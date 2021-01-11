@@ -94,7 +94,7 @@ For other dApps, integrating with Gluon is as sample as adding one js API. This 
 
 ![typical workflow](https://github.com/tearust/gluon-docs/blob/master/res/typical-workflow.png?raw=true)
 
-The diagram above shows a typical UI workflow, which is signing a BTC transaction. 
+The diagram above shows a typical UI workflow, which is signing a DOT transaction. 
 
 Users start a task from the web browser. It could be the Gluon web portal or any dApps' website embedded with our js API. A hash of the transaction detail is sent to Gluon TeaLeaf. A QR code is shown on the web page for the paired Gluon mobile app to scan. 
 
@@ -245,50 +245,50 @@ To assist you in defining it, we created a document with examples for some grant
 | 3.0 | Gluon substrate pellet: Pairing/Unpairing API | Add mobile app pub id to existing Gluon account. Pair the mobile to this user |
 | 3.1 | Gluon substrate pellet: Search API | Search user public information |
 
-### Milestone 2 - Generate BTC asset
+### Milestone 2 - Generate DOT asset
 * **Estimated Duration:** 4 Weeks
 * **FTE:**  2.5 FTE
 * **Costs:** 0.125 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0 | Testable features | User can generate BTC addresses |
+| 0 | Testable features | User can generate DOT addresses |
 | 1 | Update test instruction | update with new features |
 | 2 | Source code | |
 
 | Task ID | Module name | Description |
 | ------ | ----------- | ---- |
-| 1.0 | Add a "generate BTC asset" page on web UI | user can trigger create new BTC address. Input (k,n) and other parameters |
-| 1.1 | List user assets on web UI | When successful generated BTC address, it will show on web UI |
-| 2.0 | Add a "generate BTC asset" page on mobile app | users scan the QR code on web UI. Review all tx parameters. Fingerprint unlock to commit tx to layer-1 blockchain |
-| 2.1 | List user assets on mobile app | When successful generated BTC address, it will show mobile app |
+| 1.0 | Add a "generate DOT asset" page on web UI | user can trigger create new DOT address. Input (k,n) and other parameters |
+| 1.1 | List user assets on web UI | When successful generated DOT address, it will show on web UI |
+| 2.0 | Add a "generate DOT asset" page on mobile app | users scan the QR code on web UI. Review all tx parameters. Fingerprint unlock to commit tx to layer-1 blockchain |
+| 2.1 | List user assets on mobile app | When successful generated DOT address, it will show mobile app |
 | 2.2 | Mobile app | Generate P1 |
-| 3.0 | Substrate pellet: Create "generate BTC asset" task | Layer 1 verify user auth, create a task in the blockchain so that layer-2 can handle |
+| 3.0 | Substrate pellet: Create "generate DOT asset" task | Layer 1 verify user auth, create a task in the blockchain so that layer-2 can handle |
 | 4.0 | Gluon wasm module (TeaLeaf) | Select delegator and executor |
-| 4.1 | Gluon TeaLeaf | Executor generate BTC address with 2/3 MultiSig. P2 and P3|
+| 4.1 | Gluon TeaLeaf | Executor generate DOT address with 2/3 MultiSig. P2 and P3|
 | 4.2 | Gluon TeaLeaf | Split and distribute P2 and P3 to replica (pinners) |
 | 4.3 | Gluon TeaLeaf | Response to Layer 1 |
 | 4.4 | Layer1 | Update user assets |
 
-### Milestone 3 - Sign BTC transaction
+### Milestone 3 - Sign DOT transaction
 * **Estimated Duration:** 4 Weeks
 * **FTE** 2.5 FTE
 * **Cost:** 0.125 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0 | Testable features | user send BTC transfer transaction. Gluon sign the transaction and send to BTC |
+| 0 | Testable features | user send DOT transfer transaction. Gluon sign the transaction and send to DOT |
 | 1 | Update test instruction | update with new features |
 | 2 | Source code | |
 
 | Task ID | Module name | Description |
 | ------ | ----------- | ---- |
-| 1.0 | Gluon TeaLeaf | BTC SPV light node in layer2 to communicate with BTC chain |
-| 2.0 | Web Portal | Create BTC transaction page |
-| 3.0 | Mobile app | Scan, verify BTC transaction and send to layer 1 |
-| 3.1 | Mobile app | Partial sign tx |
+| 1.0 | Gluon TeaLeaf | DOT SPV light node in layer2 to communicate with DOT chain |
+| 2.0 | Web Portal | Create DOT transaction page |
+| 3.0 | Mobile app | Scan, verify DOT transaction and send to layer 1 |
+| 3.1 | Mobile app | Partial sign tx using P1. Send the P1 signature to DOT light node|
 | 4.0 | Gluon TeaLeaf | Executor find pinners then reconstruct P2 |
-| 4.1 | Gluon TeaLeaf | sign tx using P2. Send two signatures to SPV light node |
+| 4.1 | Gluon TeaLeaf | sign tx using P2. Send the P2 signatures to SPV light node |
 | 5.0 | Layer 1 | Settle payment distribution |
  
 ### Milestone 4 - Phone upgrading and social recovery
@@ -319,7 +319,7 @@ To assist you in defining it, we created a document with examples for some grant
  Gluon will be a full-featured demo application for the TEA project once it is ready. So far, there are a few limitations that we are working on.
 
  - TEA modules are running on a software simulator at the moment. In the final product, it will only run on HSM so that it can be protected by hardware. The simulators are only allowed to be running in the test chain, not in the production chain.
- - Besides BTC, we will support ETH and all Polkadot ecosystem chains.
+ - Besides DOT, we will all Polkadot ecosystem chains.
  - Gluon layer1 is currently sharing the T-rust main chain. We will move Gluon's pallet to a sidechain run parallel to T-rust's chain. T-rust's chain runs parallel to Polkadot's main chain. 
  - We wll retire our facade interface service and use off-chain workers instead.
  - Shamir Secret Sharing Schema has [Shortcomings](https://blog.keys.casa/shamirs-secret-sharing-security-shortcomings/). We have used randomness and hardware protection to minimized the impact. However, we never stop exploring the possibilities; we've done some research on existing SMPC and FHE algorithms such as BLS Signature Schema, but none of them are practical at the moment. We are looking forward to new higher performance algorithms to remove the need to reconstruct the secret for signing.
