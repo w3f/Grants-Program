@@ -220,7 +220,7 @@ To assist you in defining it, we created a document with examples for some grant
 ### Overview
 * **Total Estimated Duration:** 4 months
 * **Full-time equivalent (FTE):**  2.5 FTE
-* **Total Costs:** 0.5 BTC
+* **Total Costs:** 0.7 BTC
 
 ### Milestone 1 Example — Web app and mobile app pairing
 * **Estimated Duration:** 4 Weeks
@@ -273,7 +273,7 @@ To assist you in defining it, we created a document with examples for some grant
 ### Milestone 3 - Sign DOT transaction
 * **Estimated Duration:** 4 Weeks
 * **FTE** 2.5 FTE
-* **Cost:** 0.125 BTC
+* **Cost:** 0.225 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -288,13 +288,14 @@ To assist you in defining it, we created a document with examples for some grant
 | 3.0 | Mobile app | Scan, verify DOT transaction and send to layer 1 |
 | 3.1 | Mobile app | Partial sign tx using P1. Send the P1 signature to DOT light node|
 | 4.0 | Gluon TeaLeaf | Executor find pinners then reconstruct P2 |
-| 4.1 | Gluon TeaLeaf | sign tx using P2. Send the P2 signatures to SPV light node |
+| 4.1 | Gluon TeaLeaf | Sign tx using P2. Send the P2 signatures to DOT light node |
+| 4.2 | Gluon TeaLeaf | DOT light node send signature and transaction to DOT main chain |
 | 5.0 | Layer 1 | Settle payment distribution |
  
 ### Milestone 4 - Phone upgrading and social recovery
 * **Estimated Duration:** 4 Weeks
 * **FTE** 2.5 FTE
-* **Cost:** 0.125 BTC
+* **Cost:** 0.225 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
