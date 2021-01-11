@@ -118,13 +118,13 @@ We all come from different and unique walks of life, backgrounds, and experience
 
 ### Overview
 * **Total Estimated Duration:** 3 months
-* **Full-time equivalent (FTE):**  10 FTE
-* **Total Costs:** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission. (e.g. 0.80 BTC)
+* **Full-time equivalent (FTE):**  11.5
+* **Total Costs:** 0.78 BTC
 
 ### January 2021 Milestones
 * **Estimated Duration:** 1 month
 * **FTE:**  11.5
-* **Costs:** 0.22 BTC
+* **Costs:** 0.26 BTC
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
@@ -144,7 +144,7 @@ We all come from different and unique walks of life, backgrounds, and experience
 ### February 2021 Milestones
 * **Estimated Duration:** 1 month
 * **FTE:**  11.5
-* **Costs:** 0.22 BTC
+* **Costs:** 0.26 BTC
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
@@ -162,7 +162,7 @@ We all come from different and unique walks of life, backgrounds, and experience
 ### March 2021 Milestones
 * **Estimated Duration:** 1 month
 * **FTE:**  11.5
-* **Costs:** 0.22 BTC
+* **Costs:** 0.26 BTC
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
