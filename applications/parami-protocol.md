@@ -33,11 +33,11 @@ The main participants of the Parami protocol are advertisers and users. The full
 
 ![Project Details](https://user-images.githubusercontent.com/72891/104114587-1aa60680-5341-11eb-9584-79ab45d8b932.png)
 
-Parami components include Runtime, Off-chain worker, RPC Services. Runtime and Off-chain workers work together to implement the core of Parami. The core node code and is maintained by Parami, the nodes will be maintained by the community.
+Parami components include Runtime, Off-chain worker, RPC Interface. Runtime and Off-chain workers work together to implement the core of Parami. The core node code and is maintained by Parami, the nodes will be maintained by the community.
 
-Advertisers can create ad requests by accessing the Advertiser Portal, which interacts with RPC services.
+Advertisers can create ad requests by accessing the Advertiser Portal, which interacts with RPC Interface.
 
-Users access various types of ads through different ad media. The social integration SDK will fetch and display Ad in IM explorer, then track and upload user interaction data to Ad server.
+Users access various types of ads through different ad media. The social integration SDK will fetch and display Ad in IM explorer, then track and upload user interaction data to Advister server.
 
 Ad metadata is divided into two categories, the on-chain part and off-chain part(IPFS part).
 
@@ -65,12 +65,12 @@ Off-chain ad metadata will be stored on IPFS, including all other basic ad metad
 
 #### Business Logic
 
-All ads are pre-registered by advertisers via RPC service. So the advertisers know the ad's id, and set up the display of ad in its social platform or mobile apps.
+All ads are pre-registered by advertisers via RPC Interface. So the advertisers know the ad's id, and set up the display of ad in its social platform or mobile apps.
 
 ![Life Cycle](https://user-images.githubusercontent.com/72891/104114632-88eac900-5341-11eb-9c78-248dbe60b07c.png)
 
 * When a user is to be shown an ad, the underlying RPC API SDK will be responsible for converting the ad id into ipfs metadata information to enable the display of the ad.
-* The SDK will then be responsible for passing the tracking data to the advertiser's server, which will be responsible for confirming the click and passing the confirmation information to the Parami's RPC service.
+* The SDK will then be responsible for passing the tracking data to the advertiser's server, which will be responsible for confirming the click and passing the confirmation information to the Parami's RPC Interface.
 * The off-chain worker is responsible for initiating reward transactions and updating the user's profile.
 
 The SDK will be a javascript library for advertisers to complete ad placements, with core functionality including：
