@@ -119,12 +119,12 @@ We all come from different and unique walks of life, backgrounds, and experience
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  11.5
-* **Total Costs:** 0.78 BTC
+* **Total Costs:** 0.87 BTC
 
 ### January 2021 Milestones
 * **Estimated Duration:** 1 month
 * **FTE:**  11.5
-* **Costs:** 0.26 BTC
+* **Costs:** 0.29 BTC
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
@@ -144,7 +144,7 @@ We all come from different and unique walks of life, backgrounds, and experience
 ### February 2021 Milestones
 * **Estimated Duration:** 1 month
 * **FTE:**  11.5
-* **Costs:** 0.26 BTC
+* **Costs:** 0.29 BTC
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
@@ -162,7 +162,7 @@ We all come from different and unique walks of life, backgrounds, and experience
 ### March 2021 Milestones
 * **Estimated Duration:** 1 month
 * **FTE:**  11.5
-* **Costs:** 0.26 BTC
+* **Costs:** 0.29 BTC
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
