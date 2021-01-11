@@ -168,7 +168,7 @@ Yanping YANG
 | 4. | Substrate chain | All above modules of our custom chain will interact to provide a useable Ad platform. There will be APIs to setup DIDs and ads and APIs that allow transfer assets via DID |
 | 5. | Web UI: Advertiser App | We will create a web-ui for advertisers, hiding the raw APIs from advertisers, providing an easy access to the ad management system |
 | 6. | Wallet App | We will create a web-based wallet that is embedded to WeChat MiniProgram, the tech stack will be vue.js |
-| 7. | Social Integration SDk | We will integrate ads to some social platforms like WeChat, allowing ad viewers to be verified as DID owners and gain rewards. To enable the combination of Wallet App and social platforms, we will rely on the open platform functionality provided by social platforms. The functionality will include DID registry, DID read, Ad display, Ad track and Ad data upload. |
+| 7. | Social Integration SDK | We will integrate ads to some social platforms like WeChat, allowing ad viewers to be verified as DID owners and gain rewards. To enable the combination of Wallet App and social platforms, we will rely on the open platform functionality provided by social platforms. The functionality will include DID registry, DID read, Ad display, Ad track and Ad data upload. |
 
 ## Future Plans
 
