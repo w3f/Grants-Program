@@ -12,6 +12,11 @@ jobs:
         id: 'files'
         uses: mmagician/get-changed-files@master
 
+      # - name: 'local test: get all added files in the PR'
+      #   if: ${{ env.ACT }}
+      #   id: 'files'
+      #   run: echo "::set-output name=added::$(echo applications/workflow_testing1.md5 applications/workflow_testing.md)"
+
       - name: Checkout
         uses: actions/checkout@master
         if: ${{ github.event.pull_request.merged == true && !env.ACT }}
@@ -22,19 +27,32 @@ jobs:
         uses: actions/checkout@master
         if: ${{ env.ACT }}
 
-      # - name: 'local testing parse files'
-      #   if: ${{ env.ACT }}
-      #   id: grant_parser
-      #   uses: mmagician/read-file-action@v1
-      #   with:
-      #     path: 'applications/workflow_testing.md'
+      - name: 'filter only .md added files'
+        if: github.event.pull_request.merged == true
+        id: 'filter'
+        run: |
+          for filename in ${{ steps.files.outputs.added }}
+          do
+            if [[ $filename =~ \.md$ ]]
+            then
+              echo "::set-output name=added::$filename"
+              break
+            fi
+          done
+
+      - name: 'local testing parse files'
+        if: ${{ env.ACT }}
+        id: grant_parser
+        uses: mmagician/read-file-action@v1
+        with:
+          path: "${{ steps.filter.outputs.added }}"
 
       - name: 'parse files'
         if: ${{ github.event.pull_request.merged == true && !env.ACT }}
         id: grant_parser
         uses: mmagician/read-file-action@v1
         with:
-          path: "${{ github.workspace }}/${{ steps.files.outputs.added }}"
+          path: "${{ github.workspace }}/${{ steps.filter.outputs.added }}"
 
       - name: Get current date
         if: github.event.pull_request.merged == true
