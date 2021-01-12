@@ -69,14 +69,14 @@ RAI Finance is led by a group of experts in cryptocurrency, trading and de-centr
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-* **Total Estimated Duration:** 2 month
-* **Full-time equivalent (FTE):** 3 FTE
-* **Total Costs:** 0.8 BTC
+* **Total Estimated Duration:** 1.7 month
+* **Full-time equivalent (FTE):** 2.5 FTE
+* **Total Costs:** 0.7 BTC
 
 ### Milestone 1 — Implement RAI protocol - Part I
-* **Estimated Duration:** 1 month
-* **FTE:** 3 FTE
-* **Costs:** 0.4 BTC
+* **Estimated Duration:** 0.7 month
+* **FTE:** 2 FTE
+* **Costs:** 0.3 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -84,9 +84,8 @@ RAI Finance is led by a group of experts in cryptocurrency, trading and de-centr
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
-| 1. | EVM module | Integrate with ethereum and evm runtime module |  
-| 2. | Secure Off-chain Transactions module | Improves the scalability of automated market making and yield strategies through secure off-chain transactions. |  
-| 3. | Cross-chain Asset module | Interoperability differentiates RAI Finance from many other popular liquidity protocols running on Ethereum and limited only to ERC20 tokens. |  
+| 1. | Secure Off-chain Transactions module | Improves the scalability of automated market making and yield strategies through secure off-chain transactions. |  
+| 2. | Cross-chain Asset module | Interoperability differentiates RAI Finance from many other popular liquidity protocols running on Ethereum and limited only to ERC20 tokens. |  
 
 ### Milestone 2 — Implement RAI protocol - Part II
 * **Estimated Duration:** 1 month
