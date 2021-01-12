@@ -71,12 +71,12 @@ RAI Finance is led by a group of experts in cryptocurrency, trading and de-centr
 ### Overview
 * **Total Estimated Duration:** 1.7 month
 * **Full-time equivalent (FTE):** 2.5 FTE
-* **Total Costs:** 0.7 BTC
+* **Total Costs:** 0.65 BTC
 
 ### Milestone 1 — Implement RAI protocol - Part I
 * **Estimated Duration:** 0.7 month
 * **FTE:** 2 FTE
-* **Costs:** 0.3 BTC
+* **Costs:** 0.25 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -85,7 +85,7 @@ RAI Finance is led by a group of experts in cryptocurrency, trading and de-centr
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
 | 1. | Secure Off-chain Transactions module | Improves the scalability of automated market making and yield strategies through secure off-chain transactions. |  
-| 2. | Cross-chain Asset module | Interoperability differentiates RAI Finance from many other popular liquidity protocols running on Ethereum and limited only to ERC20 tokens. |  
+| 2. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 ### Milestone 2 — Implement RAI protocol - Part II
 * **Estimated Duration:** 1 month
