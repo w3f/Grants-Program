@@ -1,10 +1,10 @@
 # Open Grant Proposal
 
-> 本条款和条件中引用了本文档，因此需要包含所有必需的信息。不要删除任何以粗体字母或标题形式出现的必填部分! 有关如何提交提案的资料，请前往[Open Grants Program 流程]（https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md）。
+> 本条款和条件中引用了本文档，因此需要包含所有必需的信息。不要删除任何以粗体字母或标题形式出现的必填部分! 有关如何提交提案的资料，请前往[Open Grants Program 流程](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md)。
 
 * **项目名称:** 项目的名称 (例如 DuoSwap 模块)
-* **团队名称** 团队的法定名称 (例如 Duo)
-* **收款地址** 比特币 或 以太坊(DAI) 的收款地址。我们暂时不会接收其它币种。(例如 123mp123...)
+* **团队名称:** 团队的法定名称 (例如 Duo)
+* **收款地址:** 比特币 或 以太坊(DAI) 的收款地址。我们暂时不会接收其它币种。(例如 123mp123...)
 
 *您的申请将会有一个结合以上您提供的 GitHub 帐户和付款地址作为唯一识别码。请好好保存。*
 
