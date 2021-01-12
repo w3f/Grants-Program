@@ -47,6 +47,34 @@ Users can select to purchase from the indexed basket. They can purchase with aDO
 * Redeem an index
 Alternatively if user wants to redeem the underlying index, they can choose to deposit the index token back into the Stone Platform. Subsequently the underlying tokens would be sent back to the user’s wallet.
 
+#### Use case diagram
+
+![Stone index use case flow](https://github.com/RockX-SG/stone-index/blob/master/images/stone-index-use-case.png)
+
+There are 2 types of actors in Stone Index: 
+* Admin: The user to manage indexed baskets 
+* User: Any user who holds the desired tokens 
+
+### Runtime module/chain - Indexed basket management pallet
+#### Public exposed methods
+
+* create_index(origin, 
+To create an index with 2 tokens and weight per token
+* update_index
+To update the weight ratio of an existing index
+* purchase_index
+To purchase an index with desired token, and mint an index token(The token will be sent to the user address)
+* redeem_index
+To redeem token with index token, it will burn the index token and transfer the underlying token back to user address
+
+#### Runtime storage 
+
+```
+  trait Store for Module<T: Trait> as Indexer {
+      Value: map str => u8;
+  }
+```
+
 #### MockUI
 
 ![Stone Index for DOT](https://github.com/RockX-SG/stone-index/blob/master/images/stone-index-ui.jpg)
