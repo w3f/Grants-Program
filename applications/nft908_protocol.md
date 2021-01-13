@@ -69,6 +69,7 @@ Many of our teammates come from gaming industries  with more than 10 years of ex
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
+| 0. | License | Apache2.0 |
 | 1. | Unit Test | Test examples and unit test |  
 | 2. | App Demo | A simple web showcasing the major traits of NFT908 Protocol |  
 | 3. | Documentation | The detail of protocol |  
