@@ -1,254 +1,250 @@
-# Open Grant Proposal
-
-> This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
-
-***Project:** The name of the project  : Labs Group
-
-***Proposer:** GitHub username :  LabsOfficial
-
-***Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. （pat会提供给我们，需要在群里找Pat要）
-
-3PKGh3uvqotEceEXTHb79bseCjEpSSLqdD
-
-*The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
-
-## Project Overview :page_facing_up:
+# LABS Group Grant Proposal
+* **Project:** LABS Group
+* **Proposer:** [LabsOfficial] (https://github.com/labsofficial)
+* **Payment Address:** 3M51Q6tjAHun6sxqKpTygY5ao4p7hKF2cF
 
 
-If this application in response to an RFP then please indicate this on the first line of this section.
-
-
+## Project Overview :page_facing_up: 
+LABS Group is an end to end real estate digitisation ecosystem on blockchain which consists of advisory, issuance and crowdfunding platforms, as well as a licensed digital security exchange. Its vision is to disrupt the largest asset class investment by solving the illiquidity and high costs of investment issues. This will be mainly done by fractionalisation by digitisation in security tokens and the offering of digital trading through both DeFi and CeFi solutions.
 
 ### Overview
-Please provide the following:
-  * A brief description of the project. 
+LABS Group wants to bring the worlds first end to end real estate digitisation investment ecosystem mainstream. We will offer users a new way to invest and exit real estate investments all within our ecosystem. We will be the first to offer a full real estate securities exchange and crowdfunding ecosystem powered by the LABS token which powers our DeFi GAINS model which stands for Governance, Access, Incentives, Nomination, Staking. All of this stands to benefit the LABS Group ecosystem userbase. 
 
-Labs Group is a real estate digitalisation ecosystem on blockchain which consists of advisory, issuance and crowdfunding platforms, as well as a digital security exchange license. Its vision is to disrupt the largest asset class investment by solving the illiquidity and high costs of investment issues. This will be mainly done by fractionalisation by digitisation and the offering of digital trading through both Defi and CeFi solutions.
-  
-* An indication of how you will integrate this project into Substrate / Polkadot / Kusama. 
+LABS is going to build a parachain for its token issuance platform, Securities Exchange and DEFI application in the real estate industry. LABS is going to incorporate Polkadot chain for fractionalizing real estate assets and building smart contracts and deal flows based on polkadot’s infrastructure. LABS will take advantage of Polkadot's cross chain technology to bring in existing projects built on other chains into our real estate ecosystem. Lastly our governance protocol will be built on Polkadot to power our GAINS Model within our ecosystem of a crowdfunding platform and our securities exchange.
 
-Labs is going to integrate Polkadot by substrate for its token issuance platform and DEFI application in the real estate industry. Labs is going to incorporate Polkadot chain for fractionalizing real estate assets and building smart contracts and deal flows based on polkadot’s infrastructure, Polkadot will have Labs to handle tokenization of real estate assets and being an example of how real estate assets are tokenized and provide liquidity in the ecosystem. Labs will bring its community to polkadot. While polkadot community will get to know how tokenization of real estate works through Labs applications. 
-
-
-  * An indication of why your team is interested in creating this project.
-
-Labs thinks real estate, being the largest single asset class, should be made accessible to all people and not just to a selective few who are privileged. This will in turn encourage financial inclusion which most governments encourage.  By building this ecosystem and thereby disrupting the real estate investment world, this allows everyone with a chance to get involved in sharing the fruits of economic growth, locally or globally. 
+LABS believes real estate, being the largest single asset class, should be made accessible to all people and not just to a selective few who are privileged. This will in turn encourage financial inclusion which most governments encourage.  By building this ecosystem and thereby disrupting the real estate investment world through fractionalization, this allows everyone with a chance to get involved in sharing the fruits of economic growth, locally or globally. We want to offer investments that are faster and more efficient then the traditional real investment market therefore cutting out middle men and having an automated system handle all real estate transactions on chain
 
 LABS team's vision is to help to build a fairer and more equal world.
 
-### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
+### Project Details
+LABS Group intends to disrupt the traditional real estate investment world by fractionalizing real estate to allow everyone access to investment. 
 
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-https://drive.google.com/drive/folders/1DXfHWEb9Z9L6lO_ZMQLnQI2bhKcVmIU9?usp=sharing
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
+LABS Group Ecosystem
+* Advisory and Consultancy
+* Crowdfunding platform for raising money for real estate developments and unit sales
+* Primary security token issuance platform
+* Licensed Real Estate focused Security Exchange
+* Governance and Staking with LABS Token 
 
+** Crowdfunding Platform (Built)
 
-### Ecosystem Fit 
-Are there any other projects similar to yours?  If so, how is your project different?
+* Design the crowdfunding platform based on blockchain tech with polkadot parachain 
+* Design the project smart contract to be project based tokens
+* Display the project information to be known by potential investors
+* Design the token standards and specifications for security asset tokens
 
-There are some real estate tokenization projects, but none of those doing an ecosystem like labs, Labs is able to build an ecosystem engaging DEFI and CEFI to tokenize real estate assets, and more importantly, labs owns a Security Exchange license in Malaysia to build a STO real estate business including issuing platform, security exchange, defi application to provide liquidity to real estate market. 
+** Primary Security Token Issuance Platform (Built)
+
+* Display the means and methods to comply with security laws
+* Design the token standards and specifications for security asset tokens
+* Define the investors qualifications based on the jurisdictions
+* Issue the security tokens for each project
+* Define the security token sell or trading restrictions based on jurisdictions
+* Smart contracts are built and defined by KYC and AML which is controlled by the LABS platform
+* Whitelist 3rd party exchanges to all security tokens to move in and out of wallets while controlling KYC and AML
+
+** Real Estate Securities Exchange (LABS Exchange)
+
+* Connect the KYC with the security token issuance platform to verify the security aspects of tokens
+* Provide liquidity of security tokens
+* verify the kyc and restrictions on security token trading based on the jurisdictions
+* Determine the asset price on the exchange based on the liquidity of asset 
+
+** LABS Utility Token for Governance and Staking
+
+* Setup the functions on LABS platform that support the utility functions of the LABS tokens
+* Design the rule of labs token for governing on the community operations (refer to GAINS model above)
+* Setup staking mechanism for LABS rewards with LABS tokens in the ecosystem
+
+** Implementation 
+
+LABS real estate investment DAPP will be a substrate module application, We will combine the smart contracts of properties on labs platform with blockchain infarstructions (DEFI applications) to provide the liquify of assets and it will be a in pair token with cross chain functions on polkchain. There is going to be an interface to be built between those asset tokens and Defi tokens based on those assets.
+
+We will implement the LABS protocol as two parts:
+* A substrate node that implements Labs DAPP protocol.
+* A project that can initiate a smart contract and it will connect to the “mirroring interface” in order to get the cross chain token within the polk ecosystem. 
+
+We will only build DAPP in this grant since the whole project is too large to be implemented in only one grant. 
+ 
+### Ecosystem Fit
+
+There are some real estate tokenization projects which pertain to primary issuance only, but none of those are a full ecosystem like LABS Group, LABS Group is able to build an ecosystem engaging DEFI and CEFI to tokenize real estate assets, and more importantly, LABS owns a Security Exchange license which enables our investors to invest within the LABS Ecosystem. to build a STO real estate business including issuing platform, security exchange, DeFi application to provide liquidity to real estate market. 
+
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
+* Mahesh Harilela (Chairman)
+* Yuen Wong (CEO)
+* Patrick Tang (Managing Partner)
+* Calvin Ng (President)
+* Leonidha Zhezha (CTO)
+* Daniel Billig (Chief Property Officer)
+* Boris Chan (CSO)
+* Eileen Xie (Head of China)
+* Francis Berwa (Head of America)
+* Joshua Peng (Chief Blockchain Architect)
+* Jeff Reed (Head of Capital Markets)
 
-Mahesh Harilela,
-Yuen Wong, Patrick Tang
 
-* Names of team members	
+### Team Website
+* https://labsgroup.io
+* https://github.com/labsofficial/LABS_Whitepaper/blob/main/LABS_Whitepaper_eng.pdf
+* https://github.com/labsofficial/development_requirements/blob/main/LABS_ST_Platform_Software_RequirmentsV2.pdf
 
-Calvin Ng,
-Boris Chan,
-Leonidha Zhezha,
-Francis Berwa,
-Joshua Peng,
-Jeff Reed
+### Legal Structure
 
-### Team Website	
-* https://labsgroup.io/
-
-### Legal Structure 
-Please provide the name and registered address of the legal entity executing the project.
-
-Labs Holdings Limited 
-
-Unit 4, 4/F., Bonham Commercial Centre, 42A-46 Bonham Strand West, Sheung Wan, Hong Kong.
-
+*Labs Group Limited (Seychelles Company)
+*Office No. 22, Alpha Centre, Providence, Mahe, Seychelles
 
 ### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+
+* Mahesh Harilela (Chairman) - Mahesh is from the Harilela family which is one of the most prominent families in Hong Kong. His family owns 19 hotels properties around the world including a few in Hong Kong though the Harilela Group. Mahesh has an entrepreneurial spirit. He has been involved in creating developing companies in Trading, BrandDevelopment, Renewable Energy Infrastructure, Agriculture, and Education.
+
+* Yuen Wong (CEO) - Ran a large e-commerce business that did tens of millions in revenue per year. Yuen is both a managing partner in Bitmart.com (Digital Asset Trading Platform) as well as Ayana Properties (Dubai and London property group). This unique combination makes him a perfect candidate to lead this Property + Blockchain project. He is widely connected in both blockchain and property networks.
+
+* Patrick Tang (Managing Partner) - Has over 20 years of experience in technology, venture building and Hong Kong family office investments into technology companies globally. He started working with blockchain technology in 2016 and has built a  wide network of diverse resources and worked on and built his own blockchain projects. He is currently involved as a founder of both a Real Estate investment platform as well as a blockchain gaming platform. Patrick is also advising several blockchain projects. Patrick is also a partner at Ayana Properties of Dubai as the China/Hong Kong extension.
+
+* Calvin Ng (President) - Calvin is involved in several real estate developments in South East Asia and brings a huge network of resources in the real estate development arena. In addition to his involvement in Rio, Calvin is also managing Director at PlutusVC , a $200 Million fund focused on interet companies and blockchain projects investing in some of the largest token projects in the past few years.
+
+* Leonidha Zhezha (CTO) - Leo has 7+ years of experience in Technical Manager. He has managed multiple development projects with multiple corporate divisions. His technical excellence across all software disciplines, including: Iterative Process Planning, Project Organization and Responsibilities, Software Engineering Process Authority, Project Organizations, Software Management Team, Software Architecture Team and Software Development Team. He has built and retained high-performance teams developing, and motivating over 50 skilled professionals. 
+
+* Daniel Billig (Chief Property Officer) - Daniel is a seasoned real estate veteran working with JLL (Jones Lang LaSalle) on various projects as senior management. His current role and past experiences in real estate add great value to LABS. Daniel has built relationships during his time at JLL bringing in large deal in real estate developments as well as real estate management contracts.
+
+* Boris Chan (CSO) - Boris has 9 yrs as Chief Wealth Management Advisor in the Financial Services industry in Hong Kong; Award recipients of SCMP/IFPHK Financial Planner Awards 2013 and 8th HKIB Outstanding Financial Management Planner Awards. 10+ years of experience consulting businesses and entrepreneurs internationally on business planning and fundraising, as well as experience in financing large scale development projects including real estate and public-private partnerships. 
+
+* Eileen Xie (Head of China) - Graduated from Shanghai International Studies University and Cheung Kong Graduate School of Business EMBA，holder of a first-level Japanese translation certificate. Eileen has 10 years of marketing experience having leading positions in the East China region, including head of Apple's independent subsidiary FileMaker, head of a crypto exchange in Hong Kong, InterValue CMO for Asia and other project consultants. BitMart VP, Hashplus Co-Founder
+
+* Francis Berwa (Head of USA) - Francis has a decade of experience managing startups and medium size companies; He has advised, and scaled companies in the Biotech and Vice sectors by helping them build management solutions. Prior to LABS he was the COO of Blockchain at Chainhaus, a development and advisory company that specializes in blockchain and AI in NYC. He is currently Head of America of LABS and Partner at an early stage VC in NYC, that Invests in A.I and Blockchain startups.
+
+* Joshua Peng (Chief Blockchain Architect) - Graduated from the University of Missouri with a PhD in structural engineering. He is a veteran researcher of crypto currencies. Worked as a senior engineer at Gilsanz Murray Steficek. Since then, Joshua has participated in the design of several blockchain projects and is well-versed in the industry. In 2016, he began working on a project to address financial, efficiency, and trust in the housing industry.
+
+* Jeff Reed (Head of Capital Markets) - Capital markets expert with experience in trading, digital currency, security token offerings, operations, origination, and blockchain technology. Deep knowledge of market structure, lending, settlement, and business development.
+Established strong relationships with broker dealers, crypto focused hedge funds, investment managers, digital asset exchanges, and venture capital. Passionate about digital currency and development of blockchain infrastructure to increase adoption.
 
 
 ### Team Code Repos
-
-* https://github.com/labsofficial 
-
-* https://github.com/Puttycat
+* https://github.com/labsofficial
 
 ### Team LinkedIn Profiles
-
-* https://www.linkedin.com/in/leesengliang/
-
-* https://www.linkedin.com/in/leonidha-zhezha/
-
-## Development Roadmap : nut_and_bolt: 
-
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone. 
-
-For each milestone:
-* Please be sure to include a specification of the software. The level of detail must be enough so that we are able to verify that the software meets the specification.
+* **Mahesh Harilela** https://www.linkedin.com/in/maheshharilela/
+* **Yuen Wong** https://www.linkedin.com/in/yuen-wong-a0843317b/
+* **Patrick Tang** https://www.linkedin.com/in/patricktang987/
+* **Calvin Ng** https://www.linkedin.com/in/dragoncalvin/
+* **Leonidha Zhezha** https://www.linkedin.com/in/leonidha-zhezha/
+* **Daniel Billig** https://www.linkedin.com/in/danbillig/
+* **Boris Chan** https://www.linkedin.com/in/borischanyw/
+* **Eileen Xie** https://www.linkedin.com/in/eileen-xie-74aaa49b/
+* **Francis Berwa** https://www.linkedin.com/in/francis-berwa/
+* **Joshua Peng** https://www.linkedin.com/in/joshua-peng-a255a556/
+* **Jeff Reed** https://www.linkedin.com/in/jeffrey-reed-56433210/
 
 
-* Please include total amount of funding requested per milestone.
-
-* Please note that we require documentation (e.g. tutorials, API specifications, architecture `details) in each milestone. This ensures that the code can be widely used by the community.
-
-https://docs.google.com/document/d/1X18Mys_WyRWAxy9Ma81uWe2r1ZVgo1qt1f3QhH2PRuU/edit
-
-* Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-
-* Please commit to providing a dockerfiles for the delivery of your project. 
-
-We will provide the dockerfiles
-
-* Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
-
-
-
-2020
-
-# Technology Team - 
-
-Leo Zhezha - CTO full time
-
-Sylvester Lee - Head of blockchain, full time
-
-Derek - Junior developer full tim
-
-# Milestones
-
-LABS Platform Alpha - launched February 2020
-
-LABS Platform Public Beta - Released Q2 of 2020
-
-LABS Platform v 2.0 - Released Q4 2020
-
-# Management Team
-
-Yuen Wong -  CEO Full time
-
-Pattrick Tang - Managing partner Full time
-
-Francis Berwa - Head of U.S Full time
-
-Joshua Peng - Head of China Full time
-
-# Milestones 2020
-
-Acquired Securities Exchange License partnership
-
-Established tZero partnership
-
-Established Archax partnership  
-
-Established partnership with RioDefi 
-
-Signed MOU with Ayana properties, KC securities and many other deal flow clients
-
-2021
-
-RioChain Integration
-
-Stake Rewards
-
-Security Token Exchange
-
-USA Platform launch
-
-Cross Chain Integration
-
-Labs Stable Token (LUSD)
-
-Brokerage Partners?Collateralized Lending Product
-
-2022
-
-US Prime Brokerage
-
-Property Swap Marketplace
-
+## Development Roadmap :nut_and_bolt: 
 
 ### Overview
+* **Total Estimated Duration:**  3.5 Months
+* **Full-time equivalent (FTE):** 4
+* **Total Costs:** 1.5 BTC
 
-*** Total Estimated Duration:
-
-3- 4 months
-
-** Duration of the whole project
-
-*** Full-time equivalent (FTE):
-
-Launched Q4 2020 full scale marketing starting Q1 of 2021
-
-**  Workload of an employed person ([see] (https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-
-*** Total Costs:
-** Amount of Payment in BTC for the whole project. The total amount of funding needs to be below $30k at the time of submission.
-
-30, 000
-
-### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
-* **FTE:**  1
+### Milestone 1 Implement Polkadot substrate into LABS Group Crowdfunding platform
+* **Estimated Duration:** 2 month
+* **FTE:**  2
 * **Costs:** 0.75 BTC
+
+The major deliverable of this milestone is the substrate pallet that supports the basic moonbeam for real estate tokens on the LABS Group crowdfunding platform:
+
+1: Implement polkadot substrate into LABS Group crowdfunding in which a real estate security token can be created, transferred and transaction can be checked on Polkadot's public blockchain.
+
+2: Create RPC-Ethereum module as a compatibility layer for Ethereum’s Web3 RPC API methods based on Moonbeam.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 0a. | License | Apache 2.0 / MIT / Unlicensed |
+| 1. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 2. | Testing Guide | The code will have proper unit-test coverage (e.g. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 3. | Substrate module: X |  Substrate module: EVM | We will create EVM module which is fully Rust-based EVM implementation based on SputnikVM with all gas related stuff stripped off for the special purpose of consortium chain. It provides the state transition logic for LABS-based smart contracts. 
+| 4. | Substrate module : Y | We will create RPC-Ethereum module as a compatibility layer for Ethereum’s Web3 RPC API methods based on Moonbeam. 
 
-### Milestone 2 Example — Additional features
-...
+### Milestone 2 Governance and Staking and Utility Token
+* **Estimated Duration:** 1.5 months
+* **FTE:**  2
+* **Costs:** 0.75 BTC
+
+The major deliverable of this milestone is the smart contract for governance and staking with the LABS token. LABS will set up the nodes for LABS interacting with Substrate tools:
+
+1: Create Substrate-based LABS chain that is fully compatible with Ethereum's Web3 API and EVM, 
+
+2: Using Substrate tools and designing Substrate runtime functions for LABS nodes to interact with polkadot chain. The Substrate runtime checks signatures and handles any extrinsic. Smart contract calls are ultimately passed to the EVM to execute the state transitions.
+
+3. Setup governance and staking smart contracts on Polkadot's public blockchain for the operation, it includes the staking function for governance structures. This is meant to be built on a decentralized platform, everyone can vote with their LABS token for their part. 
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a.| License | Apache 2.0 / MIT / Unlicensed |
+| 1. |Substrate module: Raft | We will create Raft module as an implementation of a Raft-based consensus mechanism (using TiKV’s Raft implementation) as an alternative to Ethereum’s default proof-of-work. This is useful for closed-membership/consortium settings where byzantine fault tolerance is not a requirement, and there is a desire for faster block times (on the order of milliseconds instead of seconds) and transaction finality (the absence of forking). |
+| 2. |Substrate module: Permissioning| We will create Permissioning module as part of network permissioning model which controls which nodes can connect to a given node and also to which nodes the given node can dial out to.|
+| 3. |LABS chain | We will create Substrate-based LABS chain that is fully compatible with Ethereum's Web3 API and EVM, but with all gas related stuff stripped off for the special purpose of consortium chain. In order to better cater for diverse enterprise-level needs, our LABS chain is designed to support multiple consensus mechanisms such as PoA, Ripple, Tendermint and so on other than Raft, and advanced features like enhanced network permissioning as well as private transactions will be added. In addition, both on-chain governance mechanics and cross-chain integration are in our plans based on Substrate and Polkadot technique stacks.
+| 4. |Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+
 
 ### Community engagement
-
-As part of the Program, we require that you produce an article/tutorial and publish it (for example on [Medium](https://medium.com/)). It should explain your work done as part of the grant. 
-
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
+LABS will be updating all social profiles on a weekly basis this includes but not limited to Twitter, Facebook, Medium, Telegram, etc.
+Paid PR will also be released according to news about partnerships that we already have engaged in for the past two years.
+* Weekly Medium Articles
+* Daily Twitter Threads and Posts
+* We have a full marketing team engaging in Telegram and Twitter
+* Educating non blockchain investors on how to invest in fractionalised real estate on our platform and also educating blockchain investors on why its important to hedge and hold less risky assets to protect your investments.
+* LABS Group does several AMA per week currently educating people on how real estate interacts with blockchain through fractionalization
+* Community engages with our platform as well through investing, staking and voting through CeFi and DeFi
 
 ## Future Plans
-Please include the team's long-term plans and intentions.
+Developments for LABS over the next few years
+* Automated Trust and Custodian to hold assets in LABS
+* Adding more real estate developers on the LABS investment ecosystem
+* Marketing online and offline to new users and investors of real estate
+* Grow network of DeFi governance and stake for rewards
+* Polkadot ecosystem partner that allows for automated DeFi collateralised lending with staking of security tokens
+* Build out cross chain structure to allow LABS Exchange to trade assets not built on Polkadot
+* Prime Brokerage in the United States
+* Automate investments fully through smart contract. Total hands off
+* Polkadot based stable token integrations
 
-The team is currently integrating with escrow and custody service providers. We plan to continue speaking with a global network of service providers including more secondary market exchanges for additional liquidity. The company aims to provide access and liquidity to the global real estate market. The team is also forming partnerships with regulated broker dealer firms to complaint issue securities in different jurisdictions. The goal of forming or acquiring a prime brokerage allows us to create an ecosystem beneficial to consumers. 
+**Open Source Development Opportunities**
+* Currently we do not allow ope source opportunities as of yet as we are working with securities. 
 
 ## Additional Information :heavy_plus_sign: 
-Any additional information that you think is relevant to this application that hasn't already been included.
 
-Possible additional information to include:
+We have been doing a lot of work these past two years as we built a business first and now platforms running around our revenue generating business. Our roadmap for the next two years is on our website as well as our whitepaper below. This whitepaper will give you a lot of insight as to what we are hoping to accomplish in the next few years to disrupt the property investment market. 
+Whitepaper https://github.com/labsofficial/LABS_Whitepaper/blob/main/LABS_Whitepaper_eng.pdf
 
-* What work has been done so far?
 
-The issuance platform was completed and is live. 
+* We have completed the LABS Crowdfunding Platform V1 and are about to release V2.
+* Our company has been running as a revenue generating business for two years now and has been funded by our founders
+* Our Security Exchange and will be launched in Q1 of 2021* 
+* Polkadot open grant is the 1st grant we have applied for as we are building our infrastructure in the Polkadot ecosystem
+* We have signed strategic partnerships with traditional real estate developers and Funds
+* Our first official IPO (Initial Property Offering) will happen in early Q2 2021 with our partners luxury resort villa on the island of Phuket
+* In process on doing partnerships with several Polkadot ecosystem projects
+* We are working with a big partner we will announce soon that will build the NFT tech to represent our real estate assets
 
-* Are there any teams who have already contributed (financially) to the project?
 
-Yes
+* Email: contact@labsgeroup.io
 
-* Have you applied for other grants so far?
+* Website: https://labsgroup.io
 
-No, this is the first grant we ever applied
+* Whitepaper https://github.com/labsofficial/LABS_Whitepaper/blob/main/LABS_Whitepaper_eng.pdf
 
+* Software Spec Sheet https://github.com/labsofficial/development_requirements/blob/main/LABS_ST_Platform_Software_RequirmentsV2.pdf
+
+* UIUX File https://github.com/labsofficial/uiux/blob/main/UIUX_LABS.zip
+
+* Telegram: https://t.me/labsgroupio
+
+* Github: https://github.com/labsofficial
+
+* Twitter: https://twitter.com/labsgroupio
+
+* Medium: https://labsgroupio.medium.com/
+
+* Issuance Platform: https://labs.st
