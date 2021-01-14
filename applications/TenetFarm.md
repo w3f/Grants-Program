@@ -129,22 +129,7 @@ Steve Thung, the CTO of Tenet. His charge is to develop smart contracts, design 
 | 1. | Chain Adapter | Has already adapted Polkadot, ETH and BSC|  
 | 2. | Create Liquidity Tap | Has supported creating Liquidity Tap for AMM platform on Polkadot |  
 | 3. | Trading Aggregator | Has aggregated the AMM platforms on Polkadot and completed the development of trading aggregator |  
-| 4. | Slot Function | Has completed functionality design of slot auction for Liquidity Tap |
 
-### Milestone 2 Improve Users’ benefits
-* **Estimated Duration:** 2 month
-* **FTE:**  3
-* **Costs:** 1.5 BTC
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | MIT |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use our functions |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |  
-| 1. | External Lending | Use the project’s sunk funds and lending functions on other platforms to increase the utilization rate of funds and increase return for user and project parties|  
-| 2. | Internal Lending | Dock and independently R&D the deposit and lending function of altcoins regarding the long-tail market |  
-| 3. | Financial Management | Adding current financing functionality for user funds including unclaimed mining yields and adding staking to decrease the inflation of token |  
 
 
 ## Future Plans
