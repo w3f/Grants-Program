@@ -4,7 +4,7 @@
 
 * **Project Name:** An unified client RPC using GraphQL connectors to Rosetta APIs for Substrate and bridges
 * **Team Name:** [PAID Network](https://github.com/PAIDNetwork)
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
+* **Payment Address:** BTC payment address (3QcdnKnCAGnHRJJPQuBMmvQmJZY6GoT78C). We don't accept payments for the program in other currencies at this stage. 
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
@@ -103,13 +103,13 @@ PAID Network, foresees the development of Client RPC using GraphQL connectors, c
 ### Overview
 * **Total Estimated Duration:** 3 month
 * **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) 
-* **Total Costs:** 25K
+* **Total Costs:** 25K / 0.7 BTC
 * **BTC Address:** 3QcdnKnCAGnHRJJPQuBMmvQmJZY6GoT78C
 
 ### Milestone 1 Example — Implement Plasm Modules 
 * **Estimated Duration:** 3 month
 * **FTE:**  1
-* **Costs:** 0.8 BTC
+* **Costs:** 0.7 BTC
 
 | Number |   Deliverable   | Specification |
 | ------------- | ------------- | ------------- |
