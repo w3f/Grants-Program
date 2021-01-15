@@ -69,7 +69,7 @@ https://github.com/platdot
 | 0a. | License | Apache 2.0 |
 |  1. | Consortium  node client | Listen events on the platon and polkadot chains, verify the authenticity of the event, broadcast the signature, and verify that the address is correct.|
 |  2. | Smart contract | We will provide wasm contract and compatible with solidty contract，Provide multi-signature, token minting and destruction, and Verifier incentive function |
-|  3. | Front End | we will provide a user friendly interface | 
+|  3. | Front End | we will provide a user friendly interface,Provides functions to connect platon and polkadot plug-in wallets, transfer money, track cross-chain progress, provide cross-chain minting and destruction, and display account information. | 
 
 
 
