@@ -122,8 +122,40 @@ PAID Network, foresees the development of Client RPC using GraphQL connectors, c
 | 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of our Protocol |
 
 
-## Future Plans
-Integrate with [Solido](https://github.com/decent-bet/solido/) Form,  so that together they can develop an interconnection scheme with multiple providers in the industry such as web3.js, ethers.js, metamask, connex, in addition to allowing developers to integrate signing and encryption options that they would not natively handle within their wallet or dapp, through xdv platform.
+
+## Solido Substrate Grant - Planned Milestones and Schedule
+
+#### DevOps and Initial API - Milestone 1 - 3 weeks
+
+### API
+- Web3 abstraction with  GraphQL layered (same work as done here https://github.com/decent-bet/thor-connexql) (eg solido-provider-plasm-graphql, solido-provider-moonbeam-graphql, others)
+
+### DevOps
+- Containers
+- Rosetta Ethereum Node
+
+#### Solido Substrate Implementation - Milestone 2 - 3 weeks
+
+##### solido-substrate must haves
+
+- Translate OpenAPI to GraphQL
+- Query more than one GraphQL endpoints (Eg As a dapp  I need to query EVM and Substrate in a single batched query)
+- Document in gitbook
+
+##### solido-substrate nice to haves
+
+- Create docker images for graphql nodes
+- Create Typescript API and Rust API
+
+#### Solido Substrate Unit Tests / QA - Milestone 1 - 3 weeks
+
+- Server backend API  unit tests
+- Client side SDK unit tests
+- Update gitbook
+- Sample code in git and website, with XDV wallet integration, custom signer, etc.
+
+
+
 
 ## Additional Information :heavy_plus_sign: 
 
