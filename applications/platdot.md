@@ -37,15 +37,17 @@ Exchange process:
 
 ### Ecosystem Fits
 * [PlatON](https://platon.network/en): An infrastructure for Privacy-Preserving Computation and Distributed Economies
-
+* [Polkadot](https://polkadot.network/)
 * [alaya](https://www.alaya.network/en): Alaya is a business sandbox and testing field for the next-generation of financial infrastructure of PlatON, a global data asset computing infrastructure with cutting-edge privacy-preserving architecture. While Alaya and PlatON share the almost identical underlying technology, they maintain their respective degrees of openness and independent activities. Despite sharing the same vision and ideas, their evolution paths and specializations differ.
-
+* [kusama](https://kusama.network/)
 
 ## Team :busts_in_silhouette:
 ### Team members
 * Hongjie Guo
 * Ming Li
 * Yunhui Du
+* Xiao Fu
+* Tong Jiu 
 
 ### Contact
 * **Contact Name:** Hongjie Guo
