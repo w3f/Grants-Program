@@ -27,6 +27,13 @@ The development of Tenet V1 has been completed, along with the auditing process 
 - Tenet V1 (BSC version): https://bsc.tenet.farm
 - Tenet V1 Product Paper: [TENET White Paper](https://tenet-resource.s3-ap-northeast-1.amazonaws.com/Tenet-WhitePaper-EN-V3.pdf)
 
+Tenet project is mainly composed of three parts,
+1. Smart contract - Solidity
+2. Front-end - ReactJS
+3. Back-end - C++
+
+As a decentralized product, Tenet's main logic is implemented by smart contracts. The front-end and back-end only display and interact with data, and do not involve data modification. Therefore, all tenet functions can be directly called via smart contracts. And now tenet's smart contracts have been open sourced, and the front-end and back-end codes are not yet. We will decide whether to open source the front-end and back-end codes based on the development situation.
+
 ##### The Core Features of Tenet V1
 Tenet aims to build a cross-chain and cross-platform toolkit protocol that serves as a relatively easy entrance for all DeFi participants. Tenet allows the demand side to customize all parameters of the liquidity tap, and help them reach out to more liquidity participants effectively. For token holders, Tenet provides a smarter and more convenient solution, and ensures fair allocation of mining rewards through the optimization of the algorithms of initial mining incentives and LP token pools. Based on the idle funds and unallocated rewards, Tenet also has huge potential to explore the long-tail asset lending market.
 1. Liquidity Tap
@@ -111,9 +118,9 @@ Steve Thung, the CTO of Tenet. His charge is to develop smart contracts, design 
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-* **Total Costs:** Amount of Payment in BTC or DAI for the whole project. The total amount of funding needs to be below $30k for initial grants and $100k for follow-up grants at the time of submission. (e.g. 0.80 BTC)
+* **Total Estimated Duration:** 1.5 Month
+* **Full-time equivalent (FTE):**  2 FTE
+* **Total Costs:** 0.8 BTC
 
 ### Milestone 1 Polkadot Adaption Development
 * **Estimated Duration:** 1.5 month
