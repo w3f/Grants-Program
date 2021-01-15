@@ -16,9 +16,8 @@ Core functions are as follows:
 
 * Trading market
 * Auction
-* Blind box
 * Multiple protocols integration
-* SDK and API
+* API
 
 ### Project Details
 
@@ -80,21 +79,25 @@ Manyofourteammatescome from gaming industries with more than 10 years of experie
 * **Full-time equivalent (FTE):** 4
 * **Total Costs:** 24K DAI
 
-### Milestone 1  — NFT trading, auctioning and minting
+### Milestone 1  — NFT  protocol, trading, auctioning,minting
 
-* **Estimated Duration:** 6 weeks
+* **Estimated Duration:** 12 weeks
 * **FTE:** 4
-* **Costs:** 12K DAI
+* **Costs:** 18K DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Substrate building | Building up the substrate environment,   supporting EVM virtual machine, testing solidity contract |
-| 2. | NFT trading | Realizing multi coins trading of   NFT721/NFT1155 |
-| 3. | NFT Auction | The development and deployment of auction   contracts |
-| 4. | NFT minting | The development and deployment of mint   contract. |
-| 5. | Blind box function | NFT blind box realization. |
-| 6. | Front end design and realization.|Optimizing the presentation of the front   end, and realizing new interacting logic based on Polka. |
-
+| 0a. | License | Apache License 2.0 | 
+| 0b. | Documentation | Documents containing the description of whole architecture design for NFTStore. |
+| 0c. | Testing Guide | We will provide a full test suite and guide for project |
+| 1a. | Pallet_nft_721 | Complete the development of pallet_nft_721 and realize the ERC721 standard. |
+| 1b. | Pallet_nft_1155 | Complete the development of pallet_nft_1155 and realize the ERC1155 standard. |
+| 2a. | pallet_treasureland_trade | trade  |
+| 2b. | pallet_treasureland_auction | auction |
+| 2c. | pallet_treasureland_minting | minting |
+| 3. | front end | Implement front-end functions as designed |
+| 4. | Unit Tests | The code will have full unit-test coverage to ensure functionality |
+| 5. | Docker file | Docker image with a Substrate chain using the sdk, demonstrating its functionality |
 
 
 ### Milestone 2  —  API function
@@ -105,32 +108,18 @@ Manyofourteammatescome from gaming industries with more than 10 years of experie
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
+| 0a. | License | Apache License 2.0 | 
+| 0b. | Documentation | Documents containing the description of API. |
 | 1. | NFT information browsing and enquiry | NFT information browsing, categorical   enquiry of an individual project, NFT info enquiry of a user, detailed info   on a single NFT |
-| 2. | NFT trading information | NFT transaction information and order   information |
-| 3. | API service arrangement | Arranging API service, providing external   services |
+| 2. | NFT trading information | NFT transaction information and order information |
+| 3. | API service arrangement | Arranging API service, providing external services |
 
-
-
-### 
-
-### Milestone 3  — Document & Test
-
-* **Estimated Duration:** 3 weeks
-* **FTE:** 3
-* **Costs:** 6K DAI
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Testing NFT contract | Testing the functions of all contracts |
-| 2. | Testing front end functions | Testing front-end user functions |
-| 3. | API testing | Testing the efficiency and correspondence   of API |
-| 4. | Documents exportation | Output user manual and developer manual |
 
 
 
 ## Future Plans
 
-Following are the realization of NFT fragments trading, Dao governance, NFT cross-chain bridges, etc.
+Following are the realization of NFT fragments trading, Blind box, Dao governance, NFT cross-chain bridges, etc.
 
 ## Additional Information :heavy_plus_sign:
 
