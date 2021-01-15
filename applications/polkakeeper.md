@@ -16,7 +16,7 @@ Polkakeeper is a decentralized value assurance underwriter that empowers communi
 
 Keepers are automated on-chain value assurance strategies that increase overall DeFi market efficiencies, such as liquidating undercollateralized positions in lending / margin trading protocols, or smoothing asset prices through arbitrage strategies across exchanges. Uniquely, Keepers may deploy assets across chains, which give strategies new dimensions in identifying profit opportunities. A simple example of a Keeper strategy can be for Finders to monitor asset prices across multiple DeFi protocols such as Acala, Polkadex etc, and deploying assets from Vaults to close off pricing differences with no risks to the principal.
 
-Upon successful Keeper execution, the protocol takes 3.5% of the profits, and the remaining is distributed among the Strategist, Finder and Vaults. Where funds or assets in Vaults are not utilized, they are deployed to lending protocols and optimized for the best yields across chains.
+Upon successful Keeper execution, the protocol takes a small fee of the profits for maintenance and upgrading of the substrate components, and the remaining is distributed among the Strategist, Finder and Vaults. Where funds or assets in Vaults are not utilized, they are deployed to lending protocols and optimized for the best yields across chains.
 
 The vision for Polkakeeper is to become the leading value assurance protocol and through DAO governance, organizes the Polkadot developer and user communities towards optimizing and maintaining high level of market efficiencies for Polkadot DeFi protocols. Polkakeeper is designed to empower community collaboration for Strategists, Finders and users to act collectively, rather than individually.
 
@@ -197,8 +197,9 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 * Website: https://polkakeeper.com
 
 # Legal Structure
-* Registered Address: 14 ROBINSON ROAD #08-01A FAR EAST FINANCE BUILDING S(048545)
+* Registered Address: 14 ROBINSON ROAD #08-01A FAR EAST FINANCE BUILDING S(048545), SINGAPORE
 * Registered Legal Entity: Ramp Protocol Pte Ltd
+* Country of registration: Singapore
 
 # Ecosystem Fit
 **Comparable projects**
