@@ -92,9 +92,9 @@ Manyofourteammatescome from gaming industries with more than 10 years of experie
 | 0c. | Testing Guide | We will provide a full test suite and guide for project |
 | 1a. | Pallet_nft_721 | Complete the development of pallet_nft_721 and realize the ERC721 standard. |
 | 1b. | Pallet_nft_1155 | Complete the development of pallet_nft_1155 and realize the ERC1155 standard. |
-| 2a. | Pallet_treasureland_trade | trade include ```createOrder, cancelOrder, buy```  |
-| 2b. | Pallet_treasureland_auction | auction |
-| 2c. | Pallet_treasureland_minting | minting |
+| 2a. | Pallet_treasureland_trade | trade module include: ```createOrder```, ```cancelOrder```, ```buy```  |
+| 2b. | Pallet_treasureland_auction | auction module include: ```startAuction```, ```bid```,```addVerifyAuctioneer``` |
+| 2c. | Pallet_treasureland_minting | minting module include: ```mint``` |
 | 3. | Front end | Implement front-end functions as designed |
 | 4. | Test | Functional test and bug fix |
 
