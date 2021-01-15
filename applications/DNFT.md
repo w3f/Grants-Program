@@ -126,3 +126,11 @@ No Legal Entity
 
 Our project, [the MVP demo](https://hackerlink.io/buidl/53) has won the Second Prize in [Substrate hackathon](https://twitter.com/DoraHacks/status/1339926282797105152) hosted by [DoraHacks](https://twitter.com/DoraHacks) in Hangzhou,China on December 20, 2020, which attracted a lot of [media attention](https://www.8btc.com/article/6578701) in China.
 
+In the [current implementation](https://github.com/DNFT-Team/dnft-substrate-node/tree/master/pallets/nft), we did a Simple implementation, including NFT generation, NFT trade, NFT owner tax & collection in a fixed blocknumber. Most of them were just a fast & simple implementation for the  [Substrate hackathon](https://twitter.com/DoraHacks/status/1339926282797105152).
+
+As methioned in Milestone 1, we will complete and expand the original intention,
+1.pallet_nft, we will realize the ERC1155 standard and integrate existing ERC721 standard, rather than a simple generation.
+2.Pallet_tax, we will set a customized tax-set stanard towards different NFT colletcions, rather than a simple All-The-Same solution.
+3.Pallet_swap, we will add auction, dex, rather than a simple transfer.
+4.Pallet_dao, we will add a governance mechanism to lanch proposals.
+
