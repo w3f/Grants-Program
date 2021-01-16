@@ -134,42 +134,32 @@ no
 
 * **Total Estimated Duration:** 3 months
 * **FTE:**  3
-* **Total Costs:** 0.6 BTC
+* **Total Costs:** 0.5 BTC
 
 The entire roadmap is divided into three steps. The First step is to set up our official website and to provide the documentation for the *CryptoZoo* game. The second step is to finish developing the entire game module including adding, updating and removing games. The UI along with the front-end associate with the game center and the exact game will also be finished in the second step. During the third step, the team will using substrate framework to develop swap module, staking-mining module, and profit pool module. The relevant front-end work will also be finished in that step. In each step, documentations, tutorials, along with a docker file will be available. 
 
 The primary back-end development will be implemented in rust programming language using substrate framework.
 
 
-### Mildestone 1:  Website, CryptoZoo Development, Game module Development, Game Front-End. 
-* **Estimated Duration:** 2 month
+### Mildestone 1:  Website, CryptoZoo Development, Game module,  Staking-Mining module, Game Front-End. 
+* **Estimated Duration:** 3 month
 * **FTE:**  4
-* **Costs:** 0.3 BTC
+* **Costs:** 0.5 BTC
 
 | Number | Deliverable                   | Specification                                                |
-| ------ | ------------------------------ | ------------------------------------------------------------ |
-| 0.     | License                | Apache 2.0                                                   |
-| 1.     | Website                | A website will be available. On the website, users could see our project information, road map, the develop team, and related information. |
-| 2.      | Front-End: Game Center                     | On the website, the game will have a nice user interface providing a nice playing experience. The corresponding operation like adding a game, updating a game will be available. |
-| 3.    | Tutorial: Game Center | A document/video will be available on the website specifying the rule of a specific game and how the adding game, removing game operation works.|
-| 4.    | CryptoZoo Demo | Using rust programming language along with the substrate framework, the single game GryptoZoowill be completed as the run time logic. A demo will be availabe on our website.|
-| 5.      | Substrate Module: Game Center | The entire substrate game module will be completed, including more operations like update a game, remove a game and add a new game. All the progress is tracked on Github, and the primary programming language is rust. |
-| 6.     | Testing                | The code will have proper unit-test coverage to ensure functionality and robustness. |
-| 7.     | Docker                 | We will provide a docker file to demonstrate the functionality of our chain with the corresponding module. |
+| ------ | ----------------------------- | ------------------------------------------------------------ |
+| 0.     | License                       | Apache 2.0                                                   |
+| 1.     | Website                       | A website will be available. On the website, users could see our project information, road map, the develop team, and related information. |
+| 2.     | Front-End: GameCenter      | On the website, the game will have a nice user interface providing a nice playing experience. The corresponding operation like adding a game, updating a game will be available. |
+| 3.     | Front-End:  HexPlay                     | The website should include all the functionality supported by our chain, such as playing a game, swapping HPT, staking dot and mining HPT, claiming profit, and govern the platform. |
+| 4.     | Tutorial: Game Center         | A document/video will be available on the website specifying the rule of a specific game and how the adding game, removing game operation works. |
+| 5.     | CryptoZoo Demo                | Using rust programming language along with the substrate framework, the single game GryptoZoowill be completed as the run time logic. A demo will be availabe on our website. |
+| 6.     | Substrate Module: Game Center | The entire substrate game module will be completed, including more operations like update a game, remove a game and add a new game. All the progress is tracked on Github, and the primary programming language is rust. |
+| 7.     | Substrate Module:  Mining Profit | HPT holder locks HPT, and the liquidity provider locks LP token to mine the 70% of the profit pool. The substrate module will consist of (1) lockHPT function: user locks HPT to mine the profit, (2) lockLPToken function: user locks LP Token for mining, (3) redeemHPT function: redeem the HPT locked, (4) redeemLPToken function: redeem the LP Token locked, (5)sendReward functions: modulde distributes the ptofits from the profit pool to all the accounts participating the mining, (6) getReward function: claim the reward generated by mining. Those functions are the basic functions we aim to realize, and we may add other functions for convience. |
+| 8.     | Testing                       | The code will have proper unit-test coverage to ensure functionality and robustness. |
+| 9.     | Docker                        | We will provide a docker file to demonstrate the functionality of our chain with the corresponding module. |
 
-### Mildestone 2: Staking-Mining module, and their Front-End
-* **Estimated Duration:** 1 months
-* **FTE:**  4
-* **Costs:** 0.3 BTC
 
-| Number | Deliverable           | Specification                                                |
-| ------ | --------------------- | ------------------------------------------------------------ |
-| 0.     | License                | Apache 2.0                                                   |
-| 1.     | Front-End                | The website should include all the functionality supported by our chain, such as playing a game, swapping HPT, staking dot and mining HPT, claiming profit, and govern the platform. |
-| 2.     | Tutorial               | A document/video will be available on the website introducing how the swap part and governing part work. |
-| 3.     | Substrate Module:  Mining Profit| HPT holder locks HPT, and the liquidity provider locks LP token to mine the 70% of the profit pool. The substrate module will consist of (1) lockHPT function: user locks HPT to mine the profit, (2) lockLPToken function: user locks LP Token for mining, (3) redeemHPT function: redeem the HPT locked, (4) redeemLPToken function: redeem the LP Token locked, (5)sendReward functions: modulde distributes the ptofits from the profit pool to all the accounts participating the mining, (6) getReward function: claim the reward generated by mining. Those functions are the basic functions we aim to realize, and we may add other functions for convience. |
-| 4.    | Testing                | The code will have proper unit-test coverage to ensure functionality and robustness. |
-| 5.   | Docker                 | We will provide a docker file to demonstrate the full functionality of our substrate chain. |
 ## Future Plans
 
 The vision of this project is to decentralize the privated owned traditional game center. Everyone could be the owner of the game center. 
