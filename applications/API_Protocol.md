@@ -15,6 +15,8 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
  The API Protocol platform brings together a number of core technology innovations that will enable developers to build truly decentralized blockchain applications and digital products in the fastest way possible, without compromising on scalability, performance, security, resiliency and decentralization.
    
  API Protocol will build a cross-chain decentralized API service management platform on Polkdot based on the Substrate framework to provide decentralized API infrastructure for blockchain developers and improve the efficiency of developers building Dapp.
+ 
+ 
    ![img](https://raw.githubusercontent.com/APIProtocol/research/main/API%20Protocol.png)
    
 ## Team Interest
