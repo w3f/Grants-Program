@@ -55,9 +55,10 @@ There are 2 types of actors in Stone Index:
 * Admin: The user to manage indexed baskets 
 * User: Any user who holds the desired tokens 
 
-### Runtime module/chain - Indexed basket management pallet
+### Runtime module/chain - Indexed basket management module
 #### Public exposed methods
 
+```
 * create_index(origin, name Vec<u32>, address1 Address, weight1 u8, address2, weight2 u8) -> Result<i64, Error>
 To create an index with 2 tokens and weight per token with an unique name, and return with the newly created index ID
 * update_index(origin, index_id u32, name Vec<u32>, address1 Address, weight1 u8, address2, weight2 u8)
@@ -66,6 +67,7 @@ To update the details of an existing index
 To purchase an index with desired token(deduct tokens from user), and mint an index token(The token will be sent to the user address)
 * redeem_index(origin, index_id, amount u32)
 To redeem token with index token, it will burn the index token and transfer the underlying token back to user address
+```
 
 #### Runtime storage 
 
@@ -111,7 +113,7 @@ Individual
 ### Overview
 * **Total Estimated Duration:** 6 weeks
 * **Full-time equivalent (FTE):**  3 FTE
-* **Total Costs:** 30,000 USD
+* **Total Costs:** 0.8 BTC
 
 ### Milestone 1 -  Liquid staked DOT token
 
@@ -120,11 +122,14 @@ We'll also provide an easy-to-use web based UI that connects to the chrome based
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0. | License | Apache 2.0 / MIT / Unlicense |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0d. | Article/Tutorial | Publish tutorials and documentation in different channels, e.g. Stone Medium and other social media platforms 
 | 1. | DEX integration | Create a Substrate pallet to trade on DEX based on Polkadot  |  
 | 2. | UI/UX for Stone Platform | Update and add a new UI component that allow user to buy/sell stone index using different crypto assets, DOT for milestone 1 |  
-| 3. | Indexed basket management | An indexed basket management module is a set of Substrate pallet which allows creation and update the indexed basket via configuration, e.g. weight per asset of the index | 
-| 4. | Documentation | Publish tutorials and documentation in different channels, e.g. Stone Medium and other social media platforms | 
+| 3. | Token module | To manage the index token minting and burning |
+| 4. | Indexed basket management | An indexed basket management module is a set of Substrate pallet which allows creation and update the indexed basket via configuration, e.g. weight per asset of the index | 
 
 ## Future Plans
 Upon the completion of Milestone 1, the team will potentially add more functions like:
