@@ -8,18 +8,18 @@
 
 ---
 
-- [:clipboard: 关于](#clipboard-about)
-    - [简介](#introduction)
-    - [团队](#team)
-- [:pencil: 流程](#pencil-process)
-- [:bulb: 帮助](#bulb-help)
-  - [额外资料](#additional-information)
-  - [即时联络](#real-time-conversation)
-- [:rocket: 其它拨款途径](#rocket-alternative-funding-sources)
+- [:clipboard: 关于](#clipboard-关于)
+    - [简介](#简介)
+    - [团队](#团队)
+- [:pencil: 流程](#pencil-流程)
+- [:bulb: 帮助](#bulb-帮助)
+  - [额外资料](#额外资料)
+  - [即时联络](#即时联络)
+- [:rocket: 其它拨款途径](#rocket-其它拨款途径)
   - [国库](#国库)
-  - [一般 Grants 计划](#general-grants-program)
-  - [其他 Grants 计划](#other-grant-programs)
-- [:information_source: 开源许可证](#information_source-license)
+  - [一般 Grants 计划](#一般-Grants-计划)
+  - [其他 Grants 计划](#其他-Grants-计划)
+- [:information_source: 开源许可证](#开源许可证)
 
 ## :clipboard: 关于
 
