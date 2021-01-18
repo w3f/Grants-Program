@@ -88,6 +88,25 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
   
   ## Ecosystem Fit 
   API Protocol is the Web 3.0 API economic infrastructure, dedicated to making Web 3.0 APIs easier to find, access and use, to develop Web 3.0 applications more simple and efficient, thus promoting the development of Web 3.0.
+  
+  
+ ## Team members
+
+* haijun - CTO/Project Lead  
+* Alex - Developer  
+
+## Contact
+
+[API Protocol](https://apiprotocol.link/#/)
+
+<market@apiprotocol.link>
+
+
+
+## Legal Structure 
+No Legal Entity
+   
+   
    
    
   
