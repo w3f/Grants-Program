@@ -59,14 +59,18 @@ There are 2 types of actors in Stone Index:
 #### Public exposed methods
 
 ```
-* create_index(origin, name Vec<u32>, address1 Address, weight1 u8, address2, weight2 u8) -> Result<i64, Error>
-To create an index with 2 tokens and weight per token with an unique name, and return with the newly created index ID
-* update_index(origin, index_id u32, name Vec<u32>, address1 Address, weight1 u8, address2, weight2 u8)
-To update the details of an existing index
+// To create an index with 2 tokens and weight per token with an unique name, and return with the newly created index ID
+create_index(origin, name Vec<u32>, address1 Address, weight1 u8, address2, weight2 u8) -> Result<i64, Error>
+
+// To update the details of an existing index
+update_index(origin, index_id u32, name Vec<u32>, address1 Address, weight1 u8, address2, weight2 u8)
+
+// To purchase an index with desired token(deduct tokens from user), and mint an index token(The token will be sent to the user address)
 * purchase_index(origin, index_id i64, amount u32) -> Result(Error)
-To purchase an index with desired token(deduct tokens from user), and mint an index token(The token will be sent to the user address)
+
+// To redeem token with index token, it will burn the index token and transfer the underlying token back to user address
 * redeem_index(origin, index_id, amount u32)
-To redeem token with index token, it will burn the index token and transfer the underlying token back to user address
+
 ```
 
 #### Runtime storage 
