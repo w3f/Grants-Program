@@ -6,6 +6,8 @@
 
 **:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **USD 30k for initial grants** and **USD 100k for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **bitcoin or DAI**. 
 
+> This page is also available in [Chinese (中文)](./README_CN.md).
+
 ---
 
 - [:clipboard: About](#clipboard-about)
