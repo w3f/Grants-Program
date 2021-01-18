@@ -85,6 +85,9 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
   ## Substrate / Polkadot Integration:
   
   The API Protocol will be developed and designed based on the Substate 2.0 underlying engine, leveraging the Substate 2.0 off-chain module to provide API services for Web 3.0 developers.
+  
+  ## Ecosystem Fit 
+  API Protocol is the Web 3.0 API economic infrastructure, dedicated to making Web 3.0 APIs easier to find, access and use, to develop Web 3.0 applications more simple and efficient, thus promoting the development of Web 3.0.
    
    
   
