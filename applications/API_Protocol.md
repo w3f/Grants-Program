@@ -25,7 +25,7 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
  
  
 ### Architecture 
- ![img](https://raw.githubusercontent.com/APIProtocol/research/main/API%20Protocol%20arc.png)
+ ![img](https://raw.githubusercontent.com/APIProtocol/research/main/API%20Protocol%20Architecture.png)
  
 #### Technical components:
   ##### 1 Consensus Layer 
@@ -55,6 +55,47 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
  ##### 7 API MarketPlace
   
    Economic mechanism to provide suitable API services to openers
+   
+## Project usage scenarios:
+
+  ##### Blockchain as a service 
+  
+  ![img](https://raw.githubusercontent.com/APIProtocol/research/main/block%20chain%20%20as%20a%20service.png)
+  
+  BlockChain as a service makes it easy for developers to complete instant access to Ethereum, Filecoin/IPFS, Polkadot, Nucypher, Uniswap and other on-chain and off-chain protocols.
+  
+  ##### API as a service
+  
+  ![img](https://raw.githubusercontent.com/APIProtocol/research/main/api%20as%20a%20service.png)
+  
+  API as a service, allowing developers to easily switch and access between various underlying protocols.
+  
+  ##### Decentralized API Market
+  
+  ![img](https://raw.githubusercontent.com/APIProtocol/research/main/marketplace.png)
+  
+  A decentralized API marketplace based on Substrate blockchain technology, giving developers more and more reliable service options.
+  
+  ##### SDK as a service
+  
+  ![img](https://raw.githubusercontent.com/APIProtocol/research/main/sdk%20as%20a%20service.png)
+  
+   The decentralized SDK developed by the API Protocol team allows developers to quickly build their own applications
+   
+  ## Substrate / Polkadot Integration:
+  
+  The API Protocol will be developed and designed based on the Substate 2.0 underlying engine, leveraging the Substate 2.0 off-chain module to provide API services for Web 3.0 developers.
+   
+   
+  
+  
+  
+  
+  
+  
+  
+    
+   
 
   
   
