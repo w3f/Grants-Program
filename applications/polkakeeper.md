@@ -47,16 +47,16 @@ A description of how Polkakeeper Liquidator Module works, by walking through a t
 # Glossary
 
 * Finder
-  * A user who finds opportunities to execute the Keeper strategy against. The finding is done off-chain due to the required computing/network resources needed. The outcome is a transaction that invokes the extrinsic Strategy with specific Parameters, for example a liquidation.
+  * A user who identifies opportunities to execute the Keeper strategy against. The finding is done off-chain due to the required computing/network resources needed. The outcome is a transaction that invokes the Keeper which has specific parameters embedded, for example a liquidation.
 
 * Backer
-  * A user who provides liquidity to the Vault. In exchange for this, executing Keepers can be done with larger leverage, and depending on the configuration set in the Strategy, profits are shared with the pool.
+  * A user who provides liquidity to the Vaults. By pooling funds, Keepers can execute on liquidation opportunities with leverage. Backers earn from the profits made by the Keeper.
 
 * Vaults
-  * Keepers can utilize a pool of user funds to enter profit opportunities. Profits may be shared with the pool participants.
+  * A pooled user funds module for Backers to add liquidity. Keepers utilize pooled user funds within the Vaults to execute on profit opportunities.
 
 * Strategy: Liquidator.
-  * Code that executes against a specific DeFi platform. For now this is the liquidation extrinsic only. It includes profit-sharing logic that ensures payment of profit back to the Vault.
+  * Code that executes against a specific DeFi platform to capture liquidation opportunities. For now, this is liquidation extrinsic only. Keeper: Liquidator includes conditional profit-only logic that ensures return of principal back to the Vault.
 
 # Runtime Modules
 ## Vault
