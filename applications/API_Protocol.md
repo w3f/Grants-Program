@@ -118,6 +118,60 @@ The project leader, Haijun, is a serial entrepreneur who has experienced the ent
 ## Team LinkedIn Profiles
 * https://www.linkedin.com/in/haijun-zhao-0a76652b/
 
+## Development Roadmap :nut_and_bolt:
+
+### Overview
+
+* **Total Estimated Duration:** 2 months
+* **Full-time equivalent (FTE):** 3
+* **Total Costs:** 1.5 BTC
+
+#### Milestone 1 — Verify Production of Concepts (POC) and Implement Substrate Modules
+
+In this milestone, we will verify features with limited users and launch the testnet for the production of concepts. The implementation of off-chain workers of Substrate Framework will be built and validated.
+
+* **Estimated Duration:** 2 months
+* **Full-time Equivalent (FTE)**: 3
+* **Costs:** 1.5 BTC  
+
+| **Number** | **Deliverable**                          | **Specification**                                            |
+| ---------- | ---------------------------------------- | ------------------------------------------------------------ |
+| 0a.        | License                                  | Apache License 2.0                                           |
+| 0b.        | Documentation                            | Documents containing the description of whole architecture design for API Protocol. |
+| 0c.        | Testing Guide                            | We will provide a full test suite and guide for the POC. |
+| 1.         | API Service Node     | The node provides the function of adapting node APIs such as ETH, Filecoin/IPFS, Chia, and Polkadot. |
+| 2.         | API Hub network | The API hub network is a decentralized network that mainly provides decentralized API service discovery and invocation. |
+| 3.         | API Marketplace | API MarketPlace is an open API service exchange and pricing market. Web 3.0 Dapp can easily obtain the API services you want through API MarketPlace. |
+| 4.         | Docker Image                             | The API Protocol docker image contains the POC version which can be running anywhere to verify the idea of API Protocol. |
+
+### Community Engagement
+
+API Protocol 's current community engagement strategies include:
+
+* **Exposure on Leading Media Channels:** We will continue to publish articles about API Protocol in well-known media such as Golden Finance and Mars Finance.
+* **Ecosystem Development Lead Program:** As the team is still small, we are now recruiting excellent developers through various channels, and later we will also set up a community eco-developer fund to attract more developers to participate in the API Protocol eco-building.
+* **Promotion of Online and Offline Events:** WWe are also actively participating in Polkadot ecological AMA activities, in order to better understand Polkadot, so as to better serve Web 3.0 developers..
+
+API Protocol's future community engagement strategies include:
+
+* **Bounty Program for General Community:** API Protocol is a brand new project, the community is relatively weak, so in the initial stage, we are more to find like-minded community ambassadors to help build the API community. For these community ambassadors, we will also give generous returns。
+
+* **Incentive Program for API Providers:** After the main functions are completed, we will set up an incentive program to encourage more market API  providers for API Protocol。
+
+
+## Future Plans
+
+* Expand the team
+* Expand community influence.
+* Ecological construction.
+
+## Additional Information :heavy_plus_sign:
+
+* Website: https://apiprotocol.link
+* Twitter: https://twitter.com/APIProtocol
+* Medium: https://apiprotocol.medium.com/
+* Github: https://github.com/APIProtocol
+
 
 
    
