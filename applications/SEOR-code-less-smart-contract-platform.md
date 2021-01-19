@@ -119,8 +119,10 @@ https://github.com/SealSC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Contract set Repository | A git repository containing the source code of component contracts such as parameterized ERC20, liquid mining contracts, and supporting contract such as deployers, DEX connectors. These contract sets will be implemented using both solidity and ink! technologies. |
-| 2. | Documentation | Related documents such as interface definitions, usage instructions, deployment tutorials, etc. of the contract set. These documents will be added to the git repository, and a pdf file download link will be provided on the project website. |
+| 1. | License | Apache License 2.0 |
+| 2. | Contract set Repository | A git repository containing the source code of 4 contracts: parameterized ERC20, liquidity mining, contract deployer and Uniswap protocol connector. These smart contracts are all developed to realizes parameterized during deployment, not copy the standard contract such as ERC20 directly. All of contracts will be will be implemented using both solidity and ink! technologies. |
+| 3. | Testing Guide | All contracts will have a proper unit-test coverage (min 80%) to ensure the robustness and safety of the contract. All of the test cases, test codes and test guide will be add to the repository. |
+| 4. | Documentation | Related documents such as interface definitions, usage instructions, deployment tutorials, etc. of the contract set. These documents will be added to the git repository, and a pdf file download link will be provided on the project website. |
 
 ### Milestone 2 - Multi-chain SERO-JS-SDK
 * **Estimated Duration:** 1 month
@@ -129,8 +131,10 @@ https://github.com/SealSC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | SDK code repository | A git repository of SEOR-JS-SDK. The SDK uses a unified interface to support the interaction between front-end DApp and substrate nodes, Ethereum nodes and other blockchain nodes of different architectures, allowing developers to access different chains with minimal changes without modifying the logic.  |
-| 2. | Documentation | The SERO-JS-SDK tutorial and documentation guide users how to quickly get started using it, and provide as detailed use cases as possible. These documents will be added to the git repository, and a pdf file download link will be provided on the project website. |
+| 1. | License | Apache License 2.0 |
+| 2. | SDK code repository | A git repository of SEOR-JS-SDK implemented using TypeScript. The SDK uses a unified interface to support the interaction between front-end DApp and substrate nodes, Ethereum nodes and other blockchain nodes of different architectures, allowing developers to access different chains with minimal changes without modifying the logic.  |
+| 3. | Testing Guide | The SDK with have enough unit-test coverage(min 80%) to ensure  functional integrity and robustness. All of the test cases, test codes and test guides will be added to the repository. |
+| 4. | Documentation | The SERO-JS-SDK tutorial and documentation guide users how to quickly get started using it, and provide as detailed use cases as possible. These documents will be added to the git repository, and a pdf file download link will be provided on the project website. |
 
 
 ### Milestone 3 - Multi-chain codeless smart contract platform
@@ -140,6 +144,12 @@ https://github.com/SealSC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Platform DApp | A code-less smart contract platform DApp will be deployed under a second-level domain name of this project. Through this DApp, users can deploy the contract implemented in Milestone 1 without coding, to the parachains supporting smart contracts or directly to Ethereum, and contract interaction can be carried out in the platform. |
-| 2. | DApp tutorial | Provide a detailed tutorial of DApp so that users can learn about platform functions through this tutorial, and can use the platform for contract deployment and interaction. |
+| 1. | License | Apache License 2.0 |
+| 2. | Code-less smart contractPlatform DApp | A code-less smart contract platform DApp will be deployed under a second-level domain name of this project. The DApp's UI part will be implement by VUE, and it will have a custom designed UI to uniform different chain's interface. The interactive with these chains will be supported by SEOR-JS-SDK. Through this DApp, users can deploy the contract implemented in Milestone 1 without coding to the parachains supporting smart contracts or directly to Ethereum, and contract interaction can be carried out in the platform powered by SEOR-JS-SDK. |
+| 3. | Testing Guide | The DApp with have enough unit-test coverage (min 80%)  to ensure  functional integrity and robustness. All of the test cases, test codes and test guides will be added to the repository. |
+| 4. | DApp tutorial | Provide a detailed tutorial of DApp so that users can learn about platform functions through this tutorial, and can use the platform for contract deployment and interaction. |
 
+## Future Plans
+* Create a free decentralized smart contract market, connecting  developers and the project with development needs.
+* Build an open platform that allows third-party developers to access and build codeless DApps.
+* Implement a complete set of DApp interactive protocols compatible with heterogeneous chains.
