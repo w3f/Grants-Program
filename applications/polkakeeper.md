@@ -26,7 +26,7 @@ Polkakeeper is designed as an independent, composable Substrate component that c
 ## Project Details 
 
 Overview Diagram of how Polkakeeper works
-![](https://rampdefi.com/polkakeeper/digitalassets/technical_diagram.png)
+![](https://rampdefi.com/polkakeeper/digitalassets/technical_diagram_updated.png)
 
 
 # Sample Scenario
