@@ -89,7 +89,7 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
   The API Protocol will be developed and designed based on the Substate 2.0 underlying engine, leveraging the Substate 2.0 off-chain module to provide API services for Web 3.0 developers.
   
   ## Ecosystem Fit 
-  API Protocol is the Web 3.0 API economic infrastructure, dedicated to making Web 3.0 APIs easier to find, access and use, to develop Web 3.0 applications more simple and efficient, thus promoting the development of Web 3.0.
+  API Protocol is the Web 3.0 API Economy infrastructure, dedicated to making Web 3.0 APIs easier to find, access and use, to develop Web 3.0 applications more simple and efficient, thus promoting the development of Web 3.0.
   
   
  ## Team members
@@ -122,7 +122,7 @@ The project leader, Haijun, is a serial entrepreneur who has experienced the ent
 
 ### Overview
 
-* **Total Estimated Duration:** 2 months
+* **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 3
 * **Total Costs:** 1.5 BTC
 
