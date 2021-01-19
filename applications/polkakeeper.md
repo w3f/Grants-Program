@@ -14,9 +14,9 @@
 
 Polkakeeper is a decentralized value assurance underwriter that empowers community creation of keeper strategies on the Polkadot network and bridged chains. On Polkakeeper, Strategists create Keepers (smart contracts), which can be executed by Finders who actively search for keeper execution opportunities. Backers are users who deposit their funds or assets into Vaults to back the deployment of keeper strategies. 
 
-Keepers are automated on-chain value assurance strategies that increase overall DeFi market efficiencies, such as liquidating undercollateralized positions in lending / margin trading protocols, or smoothing asset prices through arbitrage strategies across exchanges. Uniquely, Keepers may deploy assets across chains, which give strategies new dimensions in identifying profit opportunities. A simple example of a Keeper strategy can be for Finders to monitor asset prices across multiple DeFi protocols such as Acala, Polkadex etc, and deploying assets from Vaults to close off pricing differences with no risks to the principal.
+Keepers are automated on-chain value assurance strategies that increase overall DeFi market efficiencies, such as liquidating undercollateralized positions in lending / margin trading protocols, or smoothing asset prices through arbitrage strategies across exchanges. Uniquely, Keepers may deploy assets across chains, which give strategies new dimensions in identifying profit opportunities. A simple example of a liquidator keeper module in action would be a strategy that: (i) Finder discovers liquidation opportunity and calls Keeper function; (ii) Keeper checks profit execution logic for liquidation value less funds deployed > 0; (iii) If profit logic is established, Keeper calls borrow function on Vaults, executes liquidation and return funds to Vaults within one transaction.
 
-Upon successful Keeper execution, the protocol takes a small fee of the profits for maintenance and upgrading of the substrate components, and the remaining is distributed among the Strategist, Finder and Vaults. Where funds or assets in Vaults are not utilized, they are deployed to lending protocols and optimized for the best yields across chains.
+Upon successful Keeper execution, the profits is distributed among the Strategist, Finder and Vaults. Where funds or assets in Vaults are not utilized, they are deployed to lending protocols and optimized for the best yields across chains.
 
 The vision for Polkakeeper is to become the leading value assurance protocol and through DAO governance, organizes the Polkadot developer and user communities towards optimizing and maintaining high level of market efficiencies for Polkadot DeFi protocols. Polkakeeper is designed to empower community collaboration for Strategists, Finders and users to act collectively, rather than individually.
 
@@ -30,89 +30,75 @@ Overview Diagram of how Polkakeeper works
 
 
 # Sample Scenario
-A description of how Polkakeeper works, by walking through a typical scenario:
-* Polkakeeper goes live, and publishes its SmartContract API
-* A user (Strategist) writes a Smart Contract that implements a certain trade or action and deploys/registers it.
-* Another user (Finder) finds a newly registered SmartContract on the Polkakeeper app and makes a NodeJS app that scans the relevant (para) chain for opportunities to apply the Keeper Strategy on.
-* The Finder may choose to fund each execution of the Keeper herself, or leverage with extra funding from the Vault. In this case dividends will be paid on the results of the execution.
-* Meanwhile, yet another user who is not technically savvy but wants to participate, deposits in the Vault as a Backer. This makes him eligible for dividends on results of the Keeper executions if the funds are used.
-* The Finder (or an automated task) calls the PolkaKeeper chain to execute the chosen Keeper with the found parameters
-* After all the actions are completed, results will be paid out to Finder and Backers.
+A description of how Polkakeeper Liquidator Module works, by walking through a typical scenario:
+## 1. Installation
+1. Defi product includes Polkakeeper Pallets into the runtime:
+	- PolkakeeperVault
+	- PolkakeeperLiquidator
+	- PolkakeeperLiquidatorAdapter
+## 2. Adaptation
+1. Developers implement functions in PolkakeeperLiquidatorAdapter to fit the destination platform:
+	- liquidate
+2. Connect the UserInterface to the extrinsic in the Liquidator runtime.
+## 3. Usage
+1. Backers fund the Vault 
+2. Finders execute the Strategy using the extrinsic function or the UI.
 
-# Components
-* Native Token
-  * A native token shall be issued to power the Polkakeeper ecosystem, rewarding developers, users and node operators who contribute to the growth and continued development of Polkakeeper.
-  * Implementation: The built-in Currency trait from FRAME.
-
-* Account
-  * Accounts live on the Polkakeeper network, and identify the user. Depending on the security level needed to be Strategists or Finders, additional verification can be added
-  * Implementation: The built-in account system from FRAME.
-
-* Node
-  * Polkakeeper will run several Collator and Full nodes to ensure functioning and reliability of the network, and to enable the features added by the off chain workers. 
-  * The parachain will be implemented using  Substrate+Cumulus, initially for local development and later on the Rococo testnet. 
-  * The nodes will run the Polkakeeper Runtime, which, among other features, includes the Contracts Pallet, enabling deployment of the KeeperManager and Keeper contracts. 
-  * Eventually, Nodes will be set up in such a way that a direct connection with other Parachains is possible, without going through the Relay Network.
-
-* KeeperManager (Runtime)
-  * Extrinsic that enables viewing/adding/removing/changing/disabling Keepers by accounts in the chain.
-  * Implementation: A Smart Contract that can be transacted with through the UI and programmatically. 
-  * The Polkakeeper Runtime makes available Chain Extensions that allow the smart contracts to utilize relevant parts of the Polkadot ecosystem and connected parachains, bridges and off chain functionality.
-  * Connectivity to other parachains is implemented with XCMP using the Xcm::Transact type (once available)
-
-* Keeper (Smart Contract)
-  * Logic that is designed to be applied on specific targets. For example, a function that executes a specific trade on another parachain such as Acala. The logic is predefined, but the input (the tokens and amounts) are parameterized.
-  * Implemented as Smart Contracts to be deployed to the chain by the users. These still have to be registered in the KeeperManager.
-
-* Strategist
-  * A user who designs new Keepers (strategies), authors, deploys the Smart Contracts and registers these in the KeeperManager.
+# Glossary
 
 * Finder
-  * A user who finds opportunities to execute a Keeper strategy against. The finding is done off-chain due to the required computing/network resources needed. The outcome is a transaction that invokes a Keeper with specific Parameters.
+  * A user who finds opportunities to execute the Keeper strategy against. The finding is done off-chain due to the required computing/network resources needed. The outcome is a transaction that invokes the extrinsic Strategy with specific Parameters, for example a liquidation.
 
 * Backer
-  * A user who provides liquidity to the Vault. In exchange for this, executing Keepers can be done with larger leverage, and depending on the configuration set by the Strategist, profits are shared.
+  * A user who provides liquidity to the Vault. In exchange for this, executing Keepers can be done with larger leverage, and depending on the configuration set in the Strategy, profits are shared with the pool.
 
 * Vaults
-  * (Shared) Keepers can utilize a pool of user funds to enter profit opportunities. Profits may be shared with the pool participants.
-  * The vault is implemented as a Smart Contract or directly in the Runtime, and will be available programmatically or through the User Interface. Functionality includes: deposit, withdrawal.
+  * Keepers can utilize a pool of user funds to enter profit opportunities. Profits may be shared with the pool participants.
+
+* Strategy: Liquidator.
+  * Code that executes against a specific DeFi platform. For now this is the liquidation extrinsic only. It includes profit-sharing logic that ensures payment of profit back to the Vault.
 
 # Runtime Modules
-* KeeperManager (Main runtime)
-  * Events
-    * KeeperDeployed, KeeperRemoved, KeeperRun, KeeperDisabled, KeeperEnabled
-    * VaultDeposit, VaultWithdrawal
-  * Storage
-    * Keepers (StorageDoubleMap)
-      * keeperOwners: (address => “owner” => address)
-      * keeperEnabled: (address => “enabled” => address)
-    * VaultBalances (StorageDoubleMap)
-      * Balance: (address => “tokenID” => number)
-    * Dividends (StorageDoubleMap)
-      * Dividend: (address => “tokenID” => number)
-  * Public Methods
-    * registerKeeper(address)
-    * listKeepers() -> Vec<Keeper>
-    * removeKeeper(keeperAddress)
-    * runKeeper(address) -> CallResult
-    * disableKeeper(address)
-    * enableKeeper(address)
-    * claimDividend()
-    * Custom dispatchable extrinsics (for calling from Chain Extension in Keepers)
-      * Here we would implement predefined cross-parachain XCMP calls, dispatchable from inside the contract. For example executing a specific trade in Acala, for which all tokens and permissions are already in place.
-    * Additionally, methods provided by the Contracts Pallet will be exposed as well. These allow for deployment and instantiation of the SmartContracts.
-* Keeper (SmartContract)
-  * All the usual Ink! Functionality is available.
-  * Documented Chain Extensions from the Runtime
-    * Cross-Parachain functionality
-    * Offchain Worker functionality
+## Vault
+
+### Methods
+```rust
+pub fn borrow(asset_id: T::AssetId, amount: T::Balance) -> Result;
+pub fn deposit(asset_id: T::AssetId, amount: T::Balance) -> Result;
+pub fn withdraw(asset_id: T::AssetId, amount: T::Balance) -> Result;
+```
+## Liquidator
+### Methods
+```rust
+fn liquidate(
+    origin, 
+    target_user: T::AccountId, 
+    pay_asset_id: T::AssetId, 
+    get_asset_id: T::AssetId, 
+    pay_asset_amount: T::Balance,
+    max_liquidatable: T::Balance,
+    borrow_amount: T::Balance
+) -> Result;
+```
+
+## LiquidatorAdapter
+### Methods
+```rust    
+fn liquidate(
+    origin, 
+    target_user: T::AccountId, 
+    pay_asset_id: T::AssetId, 
+    get_asset_id: T::AssetId, 
+    pay_asset_amount: T::Balance,
+) -> Result;
+
+```
 
 # Backend Development
-As of now we don’t expect to do direct backend development. The functionality on the nodes should be sufficient. That said, we may implement example Finder tasks on a NodeJS backend.
-Deployment of the chain during development will use Docker and AWS. We expect to use local deployments and the Rococo Testnet.
+This project has no backend component.
 
 # UI Development
-We will implement the frontend in React + Javascript + Polkadot.js. Since there is no dynamic backend, the hosting of the built webapp will probably be done on S3 + Cloudfront or a comparable configuration.
+We will implement a basic frontend component in React + Javascript + Polkadot.js. This component can be incorporated into the implementing platform's User Interface.
 
 # Team
 ## Team members
@@ -211,7 +197,7 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 ### Overview
 * **Total Estimated Duration:** 3 Months / POC
 * **Full-time equivalent (FTE):**  2.75
-* **Total Costs:** 0.8 BTC
+* **Total Costs:** 0.55 BTC
 
 ### Technical Milestones
 
@@ -221,15 +207,10 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 | 0b. | Documentation | We will provide both inline documentation of the code and a full tutorial that explains how to interact and communicate with the testnet protocol |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Medium Article | We will publish a medium article that announces all deliveries and a step by step tutorial to the community once evaluation is passed
-| 1. | Testing | We will conduct testing of the developed functionalities on Rococo testnet |  
-| 2. | Substrate: NativeCurrency | Polkakeeper native token implementation and tools |  
-| 3. | Substrate: VaultManager | Functionality regarding shared deposits, funds |  
-| 4. | Substrate: Accounts | Account related code  |  
-| 5. | Substrate: PolkadotConnector | Code related to bridging with Polkadot |
-| 6. | Substrate: RpcEndpoints | External endpoints for Finders and other consumers  |
-| 7. | Substrate: Keepers | Basic Keeper logic and custom smart contract base  |
-| 8. | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
-| 9. | Docker | A docker container that will also run on CI to test the deliverables of the milestone |
+| 1. | Testing | We will conduct testing of the developed functionalities on Rococo testnet of 1) vault borrowing and payment 2) liquidation execution on one token pair |
+| 2. | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
+| 3. | Docker | A docker container that will also run on CI to test the deliverables of the milestone |
+| 4. | Integration | Integration in at least one leading Polkadot-based Defi platform |
 
 
 ## Marketing and Community Engagement
