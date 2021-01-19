@@ -150,7 +150,7 @@ API Protocol 's current community engagement strategies include:
 
 * **Exposure on Leading Media Channels:** We will continue to publish articles about API Protocol in well-known media such as Golden Finance and Mars Finance.
 * **Ecosystem Development Lead Program:** As the team is still small, we are now recruiting excellent developers through various channels, and later we will also set up a community eco-developer fund to attract more developers to participate in the API Protocol eco-building.
-* **Promotion of Online and Offline Events:** WWe are also actively participating in Polkadot ecological AMA activities, in order to better understand Polkadot, so as to better serve Web 3.0 developers..
+* **Promotion of Online and Offline Events:** We are also actively participating in Polkadot ecological AMA activities, in order to better understand Polkadot, so as to better serve Web 3.0 developers.
 
 API Protocol's future community engagement strategies include:
 
