@@ -79,6 +79,11 @@ fn liquidate(
     max_liquidatable: T::Balance,
     borrow_amount: T::Balance
 ) -> Result;
+
+// liquidate has internal checks for proper valuation of the asset
+// using the assetPriceAdapter, so it only executes if 
+//     (pay_asset_price * pay_asset_amount) > borrowAmount
+
 ```
 
 ## LiquidatorAdapter
@@ -90,6 +95,11 @@ fn liquidate(
     pay_asset_id: T::AssetId, 
     get_asset_id: T::AssetId, 
     pay_asset_amount: T::Balance,
+) -> Result;
+
+fn assetPriceAdapter(
+    origin,
+    asset_id: T::AssetId
 ) -> Result;
 
 ```
