@@ -132,7 +132,7 @@ In this milestone, we will verify features with limited users and launch the tes
 
 * **Estimated Duration:** 2 months
 * **Full-time Equivalent (FTE)**: 3
-* **Costs:** 1.5 BTC  
+* **Costs:** 0.5 BTC  
 
 | **Number** | **Deliverable**                          | **Specification**                                            |
 | ---------- | ---------------------------------------- | ------------------------------------------------------------ |
