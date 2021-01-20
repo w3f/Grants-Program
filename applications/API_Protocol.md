@@ -124,7 +124,7 @@ The project leader, Haijun, is a serial entrepreneur who has experienced the ent
 
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 3
-* **Total Costs:** 1.5 BTC
+* **Total Costs:** 0.5 BTC
 
 #### Milestone 1 — Verify Production of Concepts (POC) and Implement Substrate Modules
 
