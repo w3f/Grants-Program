@@ -240,6 +240,9 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 - Programming language: Rust
 - Framework: Substrate + FRAME
 - Project template: Substrate Node Template
+- Source control: Github or Gitlab
+- CI/CD: Docker container based, with Runners or Actions
+- Front-end: React + Polkadot.js
 
 
 ## Marketing and Community Engagement
