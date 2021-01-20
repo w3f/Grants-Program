@@ -236,6 +236,11 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 |Integration|Adapter pallet templates and example implementations complete and documented|
 |Community|Launch of Polkakeeper components in Substrate/Polkadot dev community|
 
+### Technical Stack
+- Programming language: Rust
+- Framework: Substrate + FRAME
+- Project template: Substrate Node Template
+
 
 ## Marketing and Community Engagement
 We will write articles and grow marketing awareness around Polkakeeper’s development and implementation on Polkadot. As RAMP is a leading DeFi project, there is a ready community of DeFi users who can consume this content, and a marketing network for content distribution. They include, but are not limited to:
