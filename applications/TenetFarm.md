@@ -133,14 +133,14 @@ Steve Thung, the CTO of Tenet. His charge is to develop smart contracts, design 
 | 0b. | Documentation | Tenet documentation center (Help center) is live, we will provide more inline documentation of the code and a basic tutorial to show how Tenet (Polkadot version) works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |  
-| 1. | Chain Adapter | Has already adapted Polkadot, ETH and BSC|  
-| 2. | Create Liquidity Tap | Has supported creating Liquidity Tap for AMM platform on Polkadot |  
-| 3. | Trading Aggregator | Has aggregated the AMM platforms on Polkadot and completed the development of trading aggregator |  
+| 1. | Chain Adapter | Implement a bridge for TEN token swap among substrate, ETH and BSC. There will be a smart contract for locking tokens on substrate.|  
+| 2. | Create Liquidity Tap | Implement Liquidity Tap function on substrate via smart contract.|  
+| 3. | Trading Aggregator | Implement a trading aggregator which can call the trading interface of other AMM products on substrate. |  
 
 
 
 ## Future Plans
-Tenet aims to build a cross-chain and cross-platform toolkit protocol that serves as a relatively easy entrance for all DeFi participants. Based on the already developed toolkits like Liquidity Tap, DeFi trading aggretator, Tenet will explore more potentials in liquidity accelerators, liquidity operation tools, DeFi trading aggregator, long tail asset lending solutions, etc.
+Tenet aims to build a cross-chain and cross-platform toolkit protocol that serves as a relatively easy entrance for all DeFi participants. Based on the already developed toolkits like Liquidity Tap, DeFi trading aggretator, Tenet will explore more potentials in liquidity accelerators, liquidity operation tools, DeFi trading aggregator, long tail asset lending solutions, etc. We also have a plan to implement our core features in INK!
 
 ## Additional Information :heavy_plus_sign: 
 As the first cross-chain DeFi Layer 2 AMM platform, we had gained much traction in recent weeks and received numerous enquiries from prominent projects interested in partnering and establishing their liquidity taps on Tenet. For instance, the first project on Tenet V1 ETH version is Fountain, a blockchain project backed by China’s top content community Jianshu.com with over 12 million user base.
