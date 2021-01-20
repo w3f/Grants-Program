@@ -35,7 +35,7 @@ Clover will compete to join as parachain for Polkadot and is committed to becomi
 
 
 #### API specs
-[https://docs.google.com/document/d/1UfNWe82X76a1LoKrSwSXCJV9gbcbHT6QLtsU8DIYWzY/edit?usp=sharing](https://docs.google.com/document/d/1UfNWe82X76a1LoKrSwSXCJV9gbcbHT6QLtsU8DIYWzY/edit?usp=sharing)
+[https://docs.google.com/spreadsheets/d/1BccgFYHS8YLEX5H9NpQf4ENE9Qwniq8YNpLEXXSAaRo/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1BccgFYHS8YLEX5H9NpQf4ENE9Qwniq8YNpLEXXSAaRo/edit?usp=sharing)
 
 #### An overview of the technology stack
 The bottom layer of Clover OS is built on blockchain. Application states are built on the Polkadot network, and the storage is built on IPFS. Leveraging on Polkadot’s parachain technology, Clover’s core advantage lies in its control panel. It can easily dock various user actions provided by its backend that has been integrated by a variety of tools including Wallet, Block Explorer, Polkadot-JS, and more. As a result, users can be connected, transact on various chains and integrate their corresponding functions with the support of Clover. Clover will collect incoming data and clean them, with our proprietary database and inhouse algorithm, data will undergo different sets of validation and analysis before they get applied and translated into visualizable data. Building on Substrate, Clover’s application terminal is determined to become the entrance to the global digital finance world with state-of-art simplicities. With accessible tools, better support, and lower cost, we are likely to see more applications to be developed on Polkadot in the future. Clover will foster a diversified and scalable DeFi environment that allows for more possibilities.
