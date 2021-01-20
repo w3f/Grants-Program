@@ -211,16 +211,30 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 
 ### Technical Milestones
 
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | MIT |
-| 0b. | Documentation | We will provide both inline documentation of the code and a full tutorial that explains how to interact and communicate with the testnet protocol |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 0d. | Medium Article | We will publish a medium article that announces all deliveries and a step by step tutorial to the community once evaluation is passed
-| 1. | Testing | We will conduct testing of the developed functionalities on Rococo testnet of 1) vault borrowing and payment 2) liquidation execution on one token pair |
-| 2. | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute |
-| 3. | Docker | A docker container that will also run on CI to test the deliverables of the milestone |
-| 4. | Integration | Integration in at least one leading Polkadot-based Defi platform |
+#### Milestone1: Preparation
+|Deliverable|Description|
+|---|---|
+|License| All code will be open-sourced under the MIT license. We welcome contribution and reuse.|
+|Source Code|Public Source code Repository, based on Substrate Node Template. We will provide both inline documentation of the code and a guide that explains how to integrate the pallets and write the adapters for a target platform|
+|Community|We will publish a Medium Article that announces all deliveries and a step by step tutorial for the developer community once evaluation is passed |
+|Documentation|Initial public outline of the documentation|
+
+#### Milestone 2: Alpha Release
+|Deliverable|Description|
+|---|---|
+|Code| Vault and Liquidator pallets implemented, unit tests basic coverage. Also including a Reference runtime for testing |
+|Demo|Proof-of-Concept implementation with basic UI (Basic HTML+JS or React) publicly available|
+|Tooling|Docker container that allows developers to get started quickly|
+|Community|Opening the codebase and inviting open-source developers to submit PRs.|
+
+#### Milestone 3: Final Release
+|Deliverable|Description|
+|---|---|
+|Code|All Pallets complete with tests|
+|Demo/examples|Reference UI implementation (React) complete.|
+|Documentation|Complete, aimed at developers integrating Polkakeeper|
+|Integration|Adapter pallet templates and example implementations complete and documented|
+|Community|Launch of Polkakeeper components in Substrate/Polkadot dev community|
 
 
 ## Marketing and Community Engagement
