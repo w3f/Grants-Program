@@ -211,11 +211,11 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 
 ### Technical Milestones
 
-#### Milestone1: Preparation
+#### Milestone 1: Preparation
 |Deliverable|Description|
 |---|---|
 |License| All code will be open-sourced under the MIT license. We welcome contribution and reuse.|
-|Source Code|Public Source code Repository, based on Substrate Node Template. We will provide both inline documentation of the code and a guide that explains how to integrate the pallets and write the adapters for a target platform|
+|Source Code|Public Source code Repository, based on Substrate Node Template. Programming language will be Rust, using the Substrate Framework. We will provide both inline documentation of the code and a guide that explains how to integrate the pallets and write the adapters for a target platform|
 |Community|We will publish a Medium Article that announces all deliveries and a step by step tutorial for the developer community once evaluation is passed |
 |Documentation|Initial public outline of the documentation|
 
