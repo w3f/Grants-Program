@@ -240,15 +240,15 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 
 ### Overview
 
-* **Total Estimated Duration:** 2 months.
+* **Total Estimated Duration:** 3 months.
 * **Full-time equivalent (FTE):** 5 FTE.
-* **Total Costs:** 25K DAI.
+* **Total Costs:** 23K DAI.
 
 ### Milestone 1 UI design and System module definition
 
 * **Estimated Duration:** 1.5 month
 * **FTE:**  2
-* **Costs:** 13K DAI
+* **Costs:** 11K DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -256,7 +256,6 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 | 0b. | Documentation | We write complete program flow description and system module interface definition. |
 | 0c. | Testing Guide | We will deploy a POA consensus Shopbring network, which can call system modules through polkadot.js. |
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | UI Design  | We will design the user interface of Shopbring App                                                   |
 | 2. | Substrate module: Generic Asset | Programming language: `Rust`. This module aims to manage multiple cross-chain assets. It has the following functions: `register_generic_assets`, `deregister_generic_assets`, `mint_generic_assets`, `burn_generic_assets`, `transfer_assets`. |
 | 3. | Substrate module: Invitation | Programming language: `Rust`. This module aims to establish the invitation relationship between accounts. It has the following functions: `register_inviter`, `accept_invitation`, `end_invitation_period`. |
 | 4. | Substrate module: Commissioned Shopping | Programming language: `Rust`. This module aims to implement the commissioned shopping process. It has the following functions: `apply_shopping_order`, `accept_shopping_order`, `do_commodity_shipping`, `confirm_commodity_received`, `apply_commodity_return`, `accept_commodity_return`, `do_commodity_returning`, `confirm_commodity_returned`. |
