@@ -256,14 +256,22 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 | 0b. | Documentation | We write complete program flow description and system module interface definition. |
 | 0c. | Testing Guide | We will deploy a POA consensus Shopbring network, which can call system modules through polkadot.js. |
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 2. | Substrate module: Generic Asset | Programming language: `Rust`. This module aims to manage multiple cross-chain assets. It has the following functions: `register_generic_assets`, `deregister_generic_assets`, `mint_generic_assets`, `burn_generic_assets`, `transfer_assets`. |
-| 3. | Substrate module: Invitation | Programming language: `Rust`. This module aims to establish the invitation relationship between accounts. It has the following functions: `register_inviter`, `accept_invitation`, `end_invitation_period`. |
-| 4. | Substrate module: Commissioned Shopping | Programming language: `Rust`. This module aims to implement the commissioned shopping process. It has the following functions: `apply_shopping_order`, `accept_shopping_order`, `do_commodity_shipping`, `confirm_commodity_received`, `apply_commodity_return`, `accept_commodity_return`, `do_commodity_returning`, `confirm_commodity_returned`. |
-| 5. | Substrate module: Transaction Payment | Programming language: `Rust`. This module aims to rewrite the `pallet_transaction_payment` so that it can change the payment `origin` of the transaction fee according to the specific module's functions.|
-| 6. | Off-chain order system: Auth module | Programming language: `Go`. This module aims to handle authorized login in Polkadot wallet. |
-| 7. | Off-chain order system: Order management module | Programming language: `Go`. This module aims to manage the user's shopping order detail data. |
-| 8. | Off-chain order system: RESTful-API module | Programming language: `Go`. This module aims to provide an API for querying order details.|
-| 9. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Substrate module: Generic Asset | Programming language: `Rust`. This module aims to manage multiple cross-chain assets. It has the following functions: `register_generic_assets`, `deregister_generic_assets`, `mint_generic_assets`, `burn_generic_assets`, `transfer_assets`. |
+| 2. | Substrate module: Invitation | Programming language: `Rust`. This module aims to establish the invitation relationship between accounts. It has the following functions: `register_inviter`, `accept_invitation`, `end_invitation_period`. |
+| 3. | Substrate module: Commissioned Shopping | Programming language: `Rust`. This module aims to implement the commissioned shopping process. It has the following functions: `apply_shopping_order`, `accept_shopping_order`, `do_commodity_shipping`, `confirm_commodity_received`, `apply_commodity_return`, `accept_commodity_return`, `do_commodity_returning`, `confirm_commodity_returned`. |
+| 4. | Substrate module: Transaction Payment | Programming language: `Rust`. This module aims to rewrite the `pallet_transaction_payment` so that it can change the payment `origin` of the transaction fee according to the specific module's functions.|
+| 5. | Off-chain order system: Auth module | Programming language: `Go`. This module aims to handle authorized login in Polkadot wallet. |
+| 6. | Off-chain order system: Order management module | Programming language: `Go`. This module aims to manage the user's shopping order detail data. |
+| 7. | Off-chain order system: RESTful-API module | Programming language: `Go`. This module aims to provide an API for querying order details.|
+| 8. | Unit tests: Shopbring node | We will write unit test cases for the completed modules. And make it run successfully. |
+| 9. | Unit tests: Off-chain order system | We will write unit test cases for the completed modules. And make it run successfully. |
+| 10. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+
+> Note: Although Substrate developed the [Generic Asset Module](https://github.com/paritytech/substrate/tree/v2.0.0-rc6/frame/generic-asset), we still need to fork it with some adjustments.
+> Because our multiple assets come from other parachain cross-chain transfers, we need to make the following modifications to the generic asset module:
+>
+> 1. Asset registration shall be called by the proposal of the council.
+> 1. The issuance and redemption of assets must be triggered by cross-chain transfers.
 
 ### Milestone 2 Front-end App and Full Node Development
 
@@ -275,17 +283,20 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will write instructions for installing and using Shopbring App. |
-| 0c. | Testing Guide | The code will have 90% unit-test coverage to ensure functionality |
+| 0c. | Testing Guide | The code will have 100% unit-test coverage to ensure functionality |
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Implement Shopbring App  | We will complete the web front-end App in accordance with UI design.   |
-| 5. | Substrate module: Supervisor | This module aims to manage supervisors registration. It has the following functions: `register_supervisor`, `audit_supervisor`, `complaint_supervisor`, `deregister_supervisor`. |
-| 4. | Substrate module: Credit value | This module aims to control the increase or decrease of credit value. It has the following functions: `increase_credit_value`, `decrease_credit_value`. |
-| 5. | Substrate module: Reward | This module is aims to regularly issue native tokens as a reward based on the credit value of the account, It has the following functions: `airdrop_rewards`. |
-| 6. | Substrate module: Inspector | This module aims to manage inspectors registration. It has the following functions: `register_inspector`, `audit_inspector`, `deregister_inspector`. |
-| 6. | Substrate module: Invoice | This module aims to submit and verify invoice. It has the following functions: `submit_invoice`, `verify_invoice`.|
-| 6. | Off-chain order system: Price tracking module | Programming language: `Go`. This module aims to obtain the cryptocurrency exchange rate of different exchange platforms. |
-| 7. | Off-chain order system: Invoice management module | Programming language: `Go`. This module aims to manage invoice detail data. |
-| 7. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Implement Shopbring App  | Programming language: `TypeScript`. This app has the following modules to be developed: `homepage`, `shopping cart`, `order management`, `payment management`, `my account`, `my wallet`. This is app UI mock-ups([Click](https://modao.cc/app/d7520aeb5b9a99c55e3e49e39e19b5cc736e3d3d?simulator_type=device&sticky)). |
+| 2. | Substrate module: Supervisor | Programming language: `Rust`. This module aims to manage supervisors registration. It has the following functions: `register_supervisor`, `audit_supervisor`, `complaint_supervisor`, `deregister_supervisor`. |
+| 3. | Substrate module: Credit value | Programming language: `Rust`. This module aims to control the increase or decrease of credit value. It has the following functions: `increase_credit_value`, `decrease_credit_value`. |
+| 4. | Substrate module: Reward | Programming language: `Rust`. This module is aims to regularly issue native tokens as a reward based on the credit value of the account, It has the following functions: `airdrop_rewards`. |
+| 5. | Substrate module: Inspector | Programming language: `Rust`. This module aims to manage inspectors registration. It has the following functions: `register_inspector`, `audit_inspector`, `deregister_inspector`. |
+| 6. | Substrate module: Invoice | Programming language: `Rust`. This module aims to submit and verify invoice. It has the following functions: `submit_invoice`, `verify_invoice`.|
+| 7. | Off-chain order system: Price tracking module | Programming language: `Go`. This module aims to obtain the cryptocurrency exchange rate of different exchange platforms. |
+| 8. | Off-chain order system: Invoice management module | Programming language: `Go`. This module aims to manage invoice detail data. |
+| 9. | Unit tests: Shopbring Node | We will write unit test cases for the completed modules. And make it run successfully. |
+| 10. | Unit tests: Off-chain order system | We will write unit test cases for the completed modules. And make it run successfully. |
+| 11. | Unit tests: Shopbring App | We will write unit test cases for the completed modules. And make it run successfully. |
+| 12. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 
 ## Future Plans
