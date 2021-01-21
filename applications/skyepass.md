@@ -71,6 +71,18 @@ Some ideas we have had so far:
 - `SSH Login Tool`: a whole team can share login credential to their server effortlessly. 
 - `Shared Phone Number`: a shared Google account that registered on `Google Voice` can be stored, and the whole family can receive verification code for services. 
 
+
+
+### More Potential For a Password Manager
+
+Based on some thinking of the basis nature of NFTs. We believe that a password manager is an ideal medium to deliver tokenized digital identities. Therefore, we think each username-password-OTP combination as an atomic token, a vault as a collection of these identities, and an `extension` as a service injected with an identity. 
+
+- If we assume all identity tokens have two states: "public identity" or "private identity". A public handle is the public identity of a user. Therefore, we are building a solution to link to one's public off-chain profiles. Also, we can implement a ENS-like or @username style handle system.
+- Therefore, simple sharing behavior (i.e. share my spotify account to my girlfriend) can take two forms: if she has an account with this password manager, simple @her, set some rules for using this password(or not) and press share. If she has not, a one time sharing link will be sent, her browser will generate an ephemeral key pair, and that ephemeral key pair will be used to encrypted the entry and send the encrypted password entry over and make it self-destruct soon.
+- For teams or families, they are using a shared identity. They can link their profiles and get a handle like @team, while the team will use some secret sharing schema for privilege management.
+
+For more on this, please refer to `Future Plan/Integrated Identity Solution` section. 
+
 ### Ecosystem Fit 
 I don't think there are anything like SkyePass so far, both within the Substrate community or all blockchain communities. The reason that Substrate will be an ideal platform for SkyePass is because the flexibility the framework offers. Please refer to the `Future Plan` section to see other things our team plan to do. 
 
@@ -149,18 +161,20 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 | Number | Deliverable                    | Specification                                                |
 | ------ | ------------------------------ | ------------------------------------------------------------ |
 | 0a.    | Documentations/Project Website | A minimalism project homepage with a user manual that documents how to use SkyePass from account creation to manage passwords, and install extensions and browser extensions. <br/>A developer documentation that describes the encryption mechanism in details; Basic API documentation for extension development. |
-| 0b.    | Desktop App/Browser Extension  | **Desktop App**<br/>A React.js + Electron App to start with. The App will implement as close as possible to the graphic design (per 0d). <br/>- Wallet Creation / Backup Phase / Create Master Password<br/>- Wallet Import / Signin<br/>- Autolock after timed inactivity or manually lock the App <br/>- Create/Share/Manage Vaults<br/>- Add/Update/Delete Password Items (with 2FA OTP support)<br/>- Add/Update/Delete Secure Note/Credit Card <br/>- Basic ETH wallet extension<br/>- Basic Polkadot wallet extension <br/>- Application Marketplace<br/><br/>**Browser Extension** <br/>- Communication to Desktop Application<br/>- Auto-fill account/passwords<br/> |
-| 0c.    | Smart Contract                 | Mostly a standard NFT contract with some modification to implement custom access control |
+| 0b.    | Desktop App/Browser Extension  | **Desktop App**<br/>A React.js + Electron App to start with. The App will implement as close as possible to the graphic design (per 0d). <br/>- Wallet Creation / Backup Phase / Create Master Password<br/>- Wallet Import / Signin<br/>- Autolock after timed inactivity or manually lock the App <br/>- Create/Share/Manage Vaults<br/>- Add/Update/Delete Password Items (with 2FA OTP support)<br/>- Add/Update/Delete Secure Note/Credit Card <br/>- Basic ETH wallet extension<br/>- Basic Polkadot wallet extension <br/>- Application Marketplace<br/>- link social media or other identity handle to a public account<br/>- sharing a single password item directly to another user<br/><br/>**Browser Extension** <br/>- Communication to Desktop Application<br/>- Auto-fill account/passwords<br/> |
+| 0c.    | Smart Contract                 | - A NFT contract that issues an NFT token for vault creator, store metadata of the vault and manage permission to update the vault <br/>- A NFT contract that generate an NFT token that represents an atomic digital identity to users<br>- A generalized handle system on a Substrate-based chain. <br/>- An identity control smart contract that verify and store off-chain user handle. |
 | 0d.    | UI/UX Design Standards         | Color Schema, Composition & Balance, Typography, Animation, Navigation, Icon Set, Brand Logo |
 | 0e.    | Basic Marketing Efforts        | Get on product-hunt and send out private alpha invitation    |
-| 0f.    | Testing                        | Well... test code and basic security audit                   |
+| 0f.    | Testing                        | Well... test code and basic internal security audit          |
 ### Milestone 2  — Ready for Beta Release
 
 * **Estimated Duration:** 6 Weeks
 
 * **FTE:**  4
 
-* **Costs:** 35,920 DAI (4 FTE * 35 Hours per week * 6 Weeks * \$38Hourly Wage + A security Auditing \$4,000 ) We will be far less stressed at this phase. It's gonna be more about tweaking here and there and security auditing. 
+* **Costs:** 3,400 DAI is what we are requesting for this phase. We understand that there is a $30,000 limit and we will fill in the funding gap in other ways. 
+
+* **Actually Costs**: 35,920 DAI (4 FTE * 35 Hours per week * 6 Weeks * \$38Hourly Wage + A security Auditing \$4,000 ) We will be far less stressed at this phase. It's gonna be more about tweaking here and there and security auditing. 
 
     
 
@@ -188,7 +202,8 @@ In summary, we are giving the freedom back to our users and let them decide how 
 
 #### Integrated Identity Solution
 
-To make the process of password sharing more intuitive and easy, we plan to roll out a domain service. Some typically used digital identities will be used: emails, phone numbers, twitter handler, Github account, or a `@alex` styled handler. We plan to also deploy an identity management smart contract and maybe sell `@alex` like handler on some fee schema. 
+1. We plan to build an auction market for user handle on a Substrate-based public chain. (refer above in `More Potential For a Password Manager`)
+2. We plan to build a market for trading digital identities.  
 
 #### Hardware Wallet Integration
 
