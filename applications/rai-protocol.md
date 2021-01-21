@@ -28,8 +28,23 @@ In order to reach a wider variety of asset types, Rai Finance will be launched o
 
 ### Ecosystem Fit
 Rai is inspired by Uniswap protocol, the mainly difference is as followings:
-* **Secure Off-chain Transactions**: RAI Finance improves the scalability of automated market making and yield strategies through secure off-chain transactions. By leveraging Zero-knowledge Proofs for trustless computation and cryptographic accumulators for immutable data storage, it is possible to provide a layer 2 solution that supports scalability, transparency, and privacy in transactions.
 * **Cross-chain Asset Capability**: In order to reach a wider variety of asset types, Rai Finance will be launched on a parachain and integrated into the Polkadot ecosystem. This allows the protocol to increase the number of assets supported by utilizing the cross-chain compatibility of the Polkadot relay chain.
+* **Secure Off-chain Transactions**: RAI Finance improves the scalability of automated market making and yield strategies through secure off-chain transactions. By leveraging Zero-knowledge Proofs for trustless computation and cryptographic accumulators for immutable data storage, it is possible to provide a layer 2 solution that supports scalability, transparency, and privacy in transactions.
+
+The Secure Off-chain Transactions structure typically used to make decentralized exchange and social trading platform.
+For example, on DEX, we can handle anonymous token exchange like below.
+  
+![img.png](https://user-images.githubusercontent.com/76861581/103777560-0a093e00-506c-11eb-9c09-5e3d7aec88f9.png)
+
+```
+Note = (address, order info*)
+{order info can include token contract, amount, order type, etc.}
+Hashednote = hash(note)
+Tx = (Tx generator address, Hashednote, Proof*)
+```
+
+To implement it, we are planning to start using Groth16 proving system with rust based bellman library for now. We might modify some codes to make it run on our system.
+The zkps also can be used on social trading feature on Rai Finance to protect strategies of traders(detailed history of transactions) while revealing the overall performance (e.g. profit rate, volatility, etc) of them.
 
 ## Team :busts_in_silhouette:
 
@@ -85,7 +100,8 @@ RAI Finance is led by a group of experts in cryptocurrency, trading and de-centr
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
 | 1. | Secure Off-chain Transactions module | Improves the scalability of automated market making and yield strategies through secure off-chain transactions. |  
-| 2. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 2. | Implement Groth16 proving system | Implement Groth16 with bellman library and integrate it into Substrate system. |  
+| 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 ### Milestone 2 — Implement RAI protocol - Part II
 * **Estimated Duration:** 1 month
