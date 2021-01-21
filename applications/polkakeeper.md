@@ -211,26 +211,26 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 
 ### Technical Milestones
 
-#### Milestone 1: Preparation
+#### Milestone 1: Preparation (0.10 BTC)
 |Deliverable|Description|
 |---|---|
 |License| All code will be open-sourced under the MIT license. We welcome contribution and reuse.|
-|Source Code|Public Source code Repository, based on Substrate Node Template. Programming language will be Rust, using the Substrate Framework. We will provide both inline documentation of the code and a guide that explains how to integrate the pallets and write the adapters for a target platform|
+|Source Code|Public Source code Repository, based on Substrate Node Template. Programming language will be Rust, using the Substrate Framework. We will provide both inline documentation of the code and a guide that explains how to integrate the Vault, Liquidator and LiquidatorAdaptor pallets and write the adapters for a target platform|
 |Community|We will publish a Medium Article that announces all deliveries and a step by step tutorial for the developer community once evaluation is passed |
 |Documentation|Initial public outline of the documentation|
 
-#### Milestone 2: Alpha Release
+#### Milestone 2: Alpha Release (0.25 BTC)
 |Deliverable|Description|
 |---|---|
-|Code| Vault and Liquidator pallets implemented, unit tests basic coverage. Also including a Reference runtime for testing |
+|Code| Vault, Liquidator and LiquidatorAdaptor pallets implemented, unit tests basic coverage. Also including a Reference runtime for testing |
 |Demo|Proof-of-Concept implementation with basic UI (Basic HTML+JS or React) publicly available|
 |Tooling|Docker container that allows developers to get started quickly|
 |Community|Opening the codebase and inviting open-source developers to submit PRs.|
 
-#### Milestone 3: Final Release
+#### Milestone 3: Final Release (0.2 BTC)
 |Deliverable|Description|
 |---|---|
-|Code|All Pallets complete with tests|
+|Code|All Vault, Liquidator and LiquidatorAdaptor Pallets complete with tests|
 |Demo/examples|Reference UI implementation (React) complete.|
 |Documentation|Complete, aimed at developers integrating Polkakeeper|
 |Integration|Adapter pallet templates and example implementations complete and documented|
