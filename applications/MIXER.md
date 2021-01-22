@@ -151,7 +151,7 @@ Definitions: Secret Key(S), Public key(P), Nullifier (N), Leaf(L), Hash function
 - Input serial number
 - Merkle tree root
 
-**Private variables to Spend for each input coin (fixed deposit tree)**
+**Private variables to Spend for each input coin (variable deposit tree)**
 
 - inverse value
 - value
@@ -165,7 +165,7 @@ Definitions: Secret Key(S), Public key(P), Nullifier (N), Leaf(L), Hash function
 
 - Output commitment number
 
-**Private variables to Spend for each output coin (fixed deposit tree)**
+**Private variables to Spend for each output coin (variable deposit tree)**
 
 - inverse value
 - value
