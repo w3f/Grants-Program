@@ -37,7 +37,7 @@ Shopbring meets the needs of two types of people:
 
 Consumers who shop do not directly use cryptocurrency to make payments on the e-commerce platform, but instead issue commissioned shopping orders and lock the payment amount in the system. Other shopping agents can freely accept the order, complete the shopping on the specific e-commerce platform, and then ship it to the consumer's delivery address. After consumers receive the commodity, they confirm the receipt on chain, and finally the system pays the locked amount and tips to the shopping agents.
 
-> In the process of shopping, consumer has not used legal currency, and the payment amount does not need to be hosted by a third party. Shopbring network consensus ensures the security of funds; there is a legal currency transaction between the e-commerce user and the e-commerce platform, and the security of funds is guaranteed by the state's compliant payment companies. Assuming that the e-commerce user did not complete the task, he could not get the amount locked in the chain. Suppose that the buyer completes the task of purchasing on behalf, and the consumer receives the commodity but does not confirm the arrival of the commodity, he cannot recover the unlocking amount. It is difficult to avoid such disputes, so we need to introduce the role of "supervisor" in our system to solve the ownership problem of locked amount through dispute arbitration. In order to make the platform grow healthily, we also need to build a credit incentive mechanism. Good behavior increases credit, bad behavior deducts credit, and airdrops tokens according to the proportion of credit value.
+> In the process of shopping, consumer has not used legal currency, and the payment amount does not need to be hosted by a third party. Shopbring network consensus ensures the security of funds; there is a legal currency transaction between the e-commerce user and the e-commerce platform, and the security of funds is guaranteed by the state's compliant payment companies. Assuming that the e-commerce user did not complete the task, he could not get the amount locked in the chain. Suppose that the buyer completes the task of purchasing on behalf, and the consumer receives the commodity but does not confirm the arrival of the commodity, he cannot recover the unlocking amount. It is difficult to avoid such disputes, so we need to introduce the role of "arbitrator" in our system to solve the ownership problem of locked amount through dispute arbitration. In order to make the platform grow healthily, we also need to build a credit incentive mechanism. Good behavior increases credit, bad behavior deducts credit, and airdrops tokens according to the proportion of credit value.
 
 ### Project Details
 
@@ -46,8 +46,8 @@ Consumers who shop do not directly use cryptocurrency to make payments on the e-
 * **Share consensus security with Polkadot network.** Shopbring is a Polkadot parachain base on Substrate. We don't have to invest long-term maintenance cost for network consensus.
 
 * **No permission is required.** Shopbring does not require KYC(Know Your Customers), anyone who has a Polkadot account can issue commissioned shopping orders or provide shopping services.
-* **Decentralized supervisors.** In order to maintain the healthy development of the platform, we have established a supervisor mechanism. When users have disputes in the commissioned shopping process, any party can report violations, and the system randomly assigns a supervisor to assist in arbitration.
-* **Credit incentive mechanism.** In order to stimulate more users to shop frequently at Shopbring, we have established a credit growth system, and airdrop tokens will be rewarded in proportion to the credit value in each period. Completing the commissioned shopping normally will increase the credit value of both parties. On the contrary, fraud will reduce the credit value, and the supervisor participating in the dispute arbitration will increase the credit value.
+* **Decentralized arbitrators.** In order to maintain the healthy development of the platform, we have established a arbitrator mechanism. When users have disputes in the commissioned shopping process, any party can report violations, and the system randomly assigns a arbitrator to assist in arbitration.
+* **Credit incentive mechanism.** In order to stimulate more users to shop frequently at Shopbring, we have established a credit growth system, and airdrop tokens will be rewarded in proportion to the credit value in each period. Completing the commissioned shopping normally will increase the credit value of both parties. On the contrary, fraud will reduce the credit value, and the arbitrator participating in the dispute arbitration will increase the credit value.
 * **Private information security**. The order details will not be recorded on chain, only the hash of the order data is stored on chain.
 * **Support multi cryptocurrency payment.** Multi cryptocurrency payment is supported in the commissioned shopping, which makes cryptocurrency more widely used.
 
@@ -55,7 +55,7 @@ Consumers who shop do not directly use cryptocurrency to make payments on the e-
 
 * **Consumer.** Issue the commissioned shopping order and use cryptocurrency as the payment method.
 * **Shopping agent.** Accept the commissioned shopping order, complete the actual shopping action on the e-commerce platform, and let the merchants deliver the commodity to the real consumers.
-* **Supervisors.** Users who register as a supervisor need to freeze a certain amount of native tokens. After becoming a supervisor, they are mainly responsible for arbitrating purchase transaction disputes. Part of the fine can be obtained by completing the arbitration.
+* **Arbitrators.** Users who register as a arbitrator need to freeze a certain amount of native tokens. After becoming a arbitrator, they are mainly responsible for arbitrating purchase transaction disputes. Part of the fine can be obtained by completing the arbitration.
 * **Inspector**. To register as an inspector, a majority of the council is required. The inspector needs to run an off-chain service for verifying shopping receipts, such as verifying the authenticity of commodity invoices.
 * **Council.** Election of council members in accordance with Polkadot governance rules.
 * **Technical Committee.** Technical committees are established by the Council in accordance with Polkadot governance rules.
@@ -71,12 +71,11 @@ For the healthy development of Shopbring, we design a credit value growth model 
 
 In order to encourage the Shopbring users to increase the credit value, the system will determine the number of airdrop tokens according to the average credit rating of the overall users in each cycle. The higher the average credit value, the greater the total number of airdrop tokens. The number of airdrop tokens obtained by users = the number of single credit value airdrop tokens * the user credit value.
 
-#### Supervisor
+#### Arbitrator
 
-Shopbring users who register as supervisors need to freeze some native tokens. After becoming a supervisor, please note the following:
+Normal user registration arbitrators need to freeze a certain native token as an application condition. The `council` will review the applicant's information, and more than half of the members will vote to become an arbitrator.
 
-* Assuming N days as a monitoring cycle, supervisors need to sign in every day. If the number of sign in days is more than half, credit appreciation will be obtained; if less than half, credit will be impaired and frozen tokens will be fined and confiscated.
-* Shopbring users who have disputes in the process of the commissioned shopping on their behalf can submit an arbitration request, and the system will randomly assign a supervisor who signs in on the same day to deal with it. After the dispute is settled, the supervisor will get part of the deposit and increase the credit value.
+The arbitrator’s obligation is that when a common user has a dispute during the commissioned shopping, either party will appeal to the system. The arbitrator can choose the case to intervene in the dispute. During the waiting period, up to `M` arbitrators can sign up to participate in the dispute. After the waiting period ends, the system will randomly select `N`($N < M$, and `N` is an odd number) arbitrators to actually participate in the dispute. If there are less than `N` arbitrators actually participating, the `council` will participate in dispute arbitration. After the arbitration is completed, the `treasury` will pay wages to the participating arbitrators.
 
 #### Inspector
 
@@ -129,13 +128,13 @@ Each stage has an operation time limit. If the time-out occurs, there are the fo
 
 #### Complaint of commodity return dispute
 
-It is inevitable that some disputes will arise in the process of commodity return. Both parties of the transaction can submit a complaint and let the supervisor intervene. Supervisors generally determine the arbitration results according to the service terms of the e-commerce platform to which the commodity belong. There are two situations as follows:
+It is inevitable that some disputes will arise in the process of commodity return. Both parties of the transaction can submit a complaint and let the arbitrator intervene. Arbitrators generally determine the arbitration results according to the service terms of the e-commerce platform to which the commodity belong. There are two situations as follows:
 
 * The purchasing behavior of the shopping agent does not conform to the service terms of the e-commerce platform, and the consumer does not receive the expected commodity, which belongs to the responsibility of the shopping agent.
 * The consumer's return behavior complies with the terms of service of the e-commerce platform, but the shopping agent does not provide any help, which is the responsibility of the shopping agent.
 * The return behavior of consumer does not conform to the service terms of e-commerce platform, and the shopping agent has done its duty to provide help, which belongs to the consumer responsibility.
 
-The supervisor completes the arbitration and determines the winner. The winner and the supervisor will receive an increase in credit value and a deposit, and the loser will deduct the credit value.
+The arbitrator completes the arbitration and determines the winner. The winner and the arbitrator will receive an increase in credit value and a deposit, and the loser will deduct the credit value.
 
 #### Revenue and use of Treasury
 
@@ -286,7 +285,7 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 | 0c. | Testing Guide | The code will have 100% unit-test coverage to ensure functionality |
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
 | 1. | Implement Shopbring App  | Programming language: `TypeScript`. This app has the following modules to be developed: `homepage`, `shopping cart`, `order management`, `payment management`, `my account`, `my wallet`. This is app UI mock-ups([Click](https://modao.cc/app/d7520aeb5b9a99c55e3e49e39e19b5cc736e3d3d?simulator_type=device&sticky)). |
-| 2. | Substrate module: Supervisor | Programming language: `Rust`. This module aims to manage supervisors registration. It has the following functions: `register_supervisor`, `audit_supervisor`, `complaint_supervisor`, `deregister_supervisor`. |
+| 2. | Substrate module: Arbitrator | Programming language: `Rust`. This module aims to manage arbitrators registration. It has the following functions: `register_arbitrator`, `audit_arbitrator`, `complaint_arbitrator`, `deregister_arbitrator`. |
 | 3. | Substrate module: Credit value | Programming language: `Rust`. This module aims to control the increase or decrease of credit value. It has the following functions: `increase_credit_value`, `decrease_credit_value`. |
 | 4. | Substrate module: Reward | Programming language: `Rust`. This module is aims to regularly issue native tokens as a reward based on the credit value of the account, It has the following functions: `airdrop_rewards`. |
 | 5. | Substrate module: Inspector | Programming language: `Rust`. This module aims to manage inspectors registration. It has the following functions: `register_inspector`, `audit_inspector`, `deregister_inspector`. |
