@@ -137,7 +137,7 @@
   * We have done for product design and primary development work.
   
 * Are there are any teams who have already contributed (financially) to the project?
-No
+  * No
 
 * Have you applied for other grants so far?
-No
+  * No
