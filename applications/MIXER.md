@@ -69,13 +69,113 @@ Our team has deep experience building on Substrate and growing experience buildi
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 *Additional details about modules*
-1. Build out and standardize a common interface for all zero-knowledge proof circuits we will use to facilitate the mixer.
-    - Merkle tree proof verification circuits.
-    - Support for a variety of commitment types.
-2. Design and develop the pallets necessary for the underlying storage of data and funds in a mixer.
-    - A sparse merkle tree pallet that exposes a common merkle tree interface (insert, verify proof)
-    - A mixer pallet that facilitates the mixer and allows for creating, deleting, as well as other governance functions over mixers.
-    - A standard interface for integrating a new zero-knowledge verifier of a given circuit.
+# Goal
+
+To build a pallet on top of the zero-knowledge merkle membership pallet that supports the following functionality.
+
+- Deposit - a user can deposit **N** tokens into the pallet and create a leaf in a merkle tree.
+- Withdraw - a user can withdraw **N** tokens by providing proof data for a zk-proof.
+- Withdraw_with_reward - a user can withdraw **N** tokens by providing proof data of a deposit **at least T** blocks in the past and receive a token reward (tbd how we create the useless asset)
+
+To build a front-end interface for using this that supports creating and storing the secret data in the browsers local storage.
+
+[https://github.com/kobigurk/wasm_proof](https://github.com/kobigurk/wasm_proof)
+
+- Write WASM bindings to rust functions for creating random points on the scalar field for Curve25519.
+- Develop simple interface (similar to tornado cash)
+- Generate random data for hashing to a leaf and present the user with the byte strings (concatenated) to be saved. Instruct the user that this will not be saved in local storage and losing it will result in losing the ability to withdraw/prove deposits exist.
+
+# Tasks
+
+**Pallet:**
+
+- [ ]  Start new pallet using functions and interfaces defined above @Drew Stone
+    - [ ]  Add events to the pallet for the client @Drew Stone
+    - [ ]  Create new mixer groups by initialisation @Drew Stone
+    - [ ]  Deposit into a mixer group @Drew Stone
+    - [ ]  Withdraw from mixer group @Drew Stone
+    - [ ]  Add permissions so that actions for mixer groups must occur from mixer pallet @Drew Stone
+    - [ ]  Tests
+- [ ]  Create a standard Sparse Merkle tree palet
+    - [ ]  Standard interface that generalises over the hash function being used
+    - [ ]  Standard interface that generalises over the indexing function being used
+    - [ ]  Uses pallet storage as backend if selected by tree creator
+    - [ ]  Should support standard merkle tree operations (insert, get, verify)
+
+**Circuit**
+
+- [ ]  A hash preimage circuit
+- [ ]  A non-zero circuit and bounded number circuit
+- [ ]  A merkle tree proof verification circuit
+- [ ]  All using `curve25519-dalek`
+
+# Zero-knowledge Circuit
+
+### Merkle Tree
+
+Definitions: Secret Key(S), Public key(P), Nullifier (N), Leaf(L), Hash function(H), Secret Key  (SC), Public Key (PC), Merkle Root (R), Merkle Path (MP), Circuit Proof (ZKP)
+
+- Leaf insert: User calculates L = H(S, N), submits L to the tree (add_member func)
+- Proof of creation:
+    - User submits L, SC, N, verifier calculates if H(SC, N) == L
+    - Public: N
+    - Private: S, L (really L gets replaced with path in membership section)
+    - Relation: H(S, N)=L
+- Proof of membership: User submits the path in zero knowledge
+    - Public: R
+    - Private: MP - Vec<(Scalar, u8)>
+    - Relation: compute_root(H(S,N), MP) = R
+- Verify:
+    - User submits N, ZKP
+    - If N exists, return
+    - If N doesn't exist, store it if successful verification
+
+### Commitments (leaves) in merkle trees
+
+**Public variables to Spend (fixed deposit tree)**
+
+- Public nullifier_hash or serial number ***sn***.
+- Merkle tree root
+
+**Private variables to Spend (fixed deposit tree)**
+
+- Randomness
+- Nullifier
+- Leaf
+- Proof path bits
+- Proof path elements
+
+**Public variables to Spend for each input coin (variable deposit tree)**
+
+- Public nullifier_hash or serial number ***sn***.
+- Input serial number
+- Merkle tree root
+
+**Private variables to Spend for each input coin (fixed deposit tree)**
+
+- inverse value
+- value
+- rho
+- randomness
+- nullifier
+- Proof path bits
+- Proof path elements
+
+**Public variables to Spend for each output coin (variable deposit tree)**
+
+- Output commitment number
+
+**Private variables to Spend for each output coin (fixed deposit tree)**
+
+- inverse value
+- value
+- rho
+- randomness
+- nullifier
+
+# Tech Stack
+
+- [bulletproofs](https://github.com/edgeware-builders/bulletproofs)
 
 ## Future Plans
 The team's future plans are to build zero-knowledge products with extensible UIs and composable runtime primitives. We want to explore governance in zero-knowledge and we see mixers as being the core primitives towards this pursuit.
