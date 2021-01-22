@@ -45,7 +45,7 @@
 
 ### Overview
 * **Total Estimated Duration:** 5 months
-* **Full-time equivalent (FTE):**  2.5 FTE
+* **Full-time equivalent (FTE):**  2.8 FTE
 * **Total Costs:** 0.9BTC(equivalent to $28,000)
 
 ### Milestone 1 create Cross-chain NFT-factory (for casting Bonds) in both ecosystems 
