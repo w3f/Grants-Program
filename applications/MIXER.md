@@ -48,7 +48,7 @@ Our team has deep experience building on Substrate and growing experience buildi
 
 ## Development Roadmap :nut_and_bolt: 
 ### Overview
-* **Total Estimated Duration:** 3-4 months
+* **Total Estimated Duration:** 1 months
 * **Full-time equivalent (FTE):**  3-4 FTE
 * **Total Costs:** $30,000 DAI/USDC/ETH/DOTS
 
