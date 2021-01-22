@@ -52,7 +52,7 @@ Our team has deep experience building on Substrate and growing experience buildi
 * **Full-time equivalent (FTE):**  3-4 FTE
 * **Total Costs:** $30,000 DAI/USDC/ETH/DOTS
 
-### Milestone 1 Example — Implement Substrate Modules and circuits
+### Milestone 1 — Implement Substrate Modules and circuits
 * **Estimated Duration:** 1 month
 * **FTE:**  4
 * **Costs:** $30,000
