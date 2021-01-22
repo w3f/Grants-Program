@@ -130,10 +130,9 @@ We'll also provide an easy-to-use web based UI that connects to the chrome based
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | Publish tutorials and documentation in different channels, e.g. Stone Medium and other social media platforms 
-| 1. | DEX integration | Create a Substrate pallet to trade on DEX based on Polkadot  |  
-| 2. | UI/UX for Stone Platform | Update and add a new UI component that allow user to buy/sell stone index using different crypto assets, DOT for milestone 1 |  
-| 3. | Token module | To manage the index token minting and burning |
-| 4. | Indexed basket management | An indexed basket management module is a set of Substrate pallet which allows creation and update the indexed basket via configuration, e.g. weight per asset of the index | 
+| 1. | UI/UX for Stone Platform | Update and add a new UI component that allow user to buy/sell stone index using different crypto assets, DOT for milestone 1 |  
+| 2. | Indexed basket management | An indexed basket management module is a set of Substrate pallet which allows creation and update the indexed basket, as well as mint and burn index token function | 
+| 3. | DEX integration | We will build the DEX trade function on top of another Polkadot Program [PolkaDex](https://github.com/Polkadex-Substrate/Polkadex/tree/master)  |  
 
 ## Future Plans
 Upon the completion of Milestone 1, the team will potentially add more functions like:
