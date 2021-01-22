@@ -126,11 +126,8 @@ We have already deployed the core function to Ethereum and BSC networks, the pro
 
 Up to now, the details of the trading on BSC are as follows:
 
-- NFT transactions: 14,483
-- NFT trading volume: 8440.5 BNB (350K $)
-- Service fee：168.81 BNB (7K $)
+- NFT transactions: 14,706
+- NFT trading volume: 8598.5 BNB (350K $)
+- Service fee：171.97 BNB (7K $)
 
-
-
-We are applying grants for the [NFT908 protocol](https://github.com/w3f/Open-Grants-Program/pull/189).
 
