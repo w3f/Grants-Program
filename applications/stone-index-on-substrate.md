@@ -115,9 +115,9 @@ Individual
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 6 weeks
+* **Total Estimated Duration:** 3 weeks
 * **Full-time equivalent (FTE):**  3 FTE
-* **Total Costs:** 0.8 BTC
+* **Total Costs:** 0.3 BTC
 
 ### Milestone 1 -  Liquid staked DOT token
 
