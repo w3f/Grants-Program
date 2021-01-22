@@ -50,7 +50,7 @@ Our team has deep experience building on Substrate and growing experience buildi
 ### Overview
 * **Total Estimated Duration:** 3-4 months
 * **Full-time equivalent (FTE):**  3-4 FTE
-* **Total Costs:** $100,000 DAI/USDC/ETH/DOTS
+* **Total Costs:** $30,000 DAI/USDC/ETH/DOTS
 
 ### Milestone 1 Example — Implement Substrate Modules and circuits
 * **Estimated Duration:** 1 month
@@ -76,41 +76,6 @@ Our team has deep experience building on Substrate and growing experience buildi
     - A sparse merkle tree pallet that exposes a common merkle tree interface (insert, verify proof)
     - A mixer pallet that facilitates the mixer and allows for creating, deleting, as well as other governance functions over mixers.
     - A standard interface for integrating a new zero-knowledge verifier of a given circuit.
-
-### Milestone 2 Example — Additional features
-* **Estimated Duration:** 1 month
-* **FTE:**  4
-* **Costs:** $30,000
-
-| Number | Deliverable | Specification |
-| ------------- | ------------ | ------------- |
-| 1. | Mixer feature | Add support for multiple token types to allow users to create/use mixers with any token supported by the underlying chain (using an assets pallet) |  
-| 2a. | Module Upgrade: Mixer | Add support for EVM token types using the Frontier EVM system (ERC20 assets) |  
-| 2b. | Substrate module: EVM token contract wrapper pallet | Add support for EVM token types using the Frontier EVM system (ERC20 assets) |  
-| 3. | Mixer feature | Add governance support on top of the mixer starting with admin functions and preceding with decentralising these admin functions. |  
-| 4. | Mixer feature | Add support for time-based rewarding scheme for participation in the mixer. |  
-| 5. | Merkle feature | Make more efficient Sparse Merkle Tree using optimisation techniques, better indexing functions. |  
-
-### Milestone 2 Example — UI integration
-* **Estimated Duration:** 1 month
-* **FTE:**  4
-* **Costs:** $25,000
-
-| Number | Deliverable | Specification |
-| ------------- | ------------ | ------------- |
-| 1. | API creation | Build an API that demonstrates using the mixer in Typescript |  
-| 2. | Dapp creation | Build a dApp using the API to demonstrate how to use the mixer, using PolkadotJS extension. |  
-
-### Milestone 4 - Documentation, Testing/Benchmarking, Security Review
-* **Estimated Duration:** 1 month
-* **FTE:**  4
-* **Costs:** $15,000
-
-| Number | Deliverable | Specification |
-| ------------- | ------------ | ------------- |
-| 1. | API creation | Build an API that demonstrates using the mixer in Typescript |  
-| 2. | Dapp creation | Build a dApp using the API to demonstrate how to use the mixer, using PolkadotJS extension. |  
-
 
 ## Future Plans
 The team's future plans are to build zero-knowledge products with extensible UIs and composable runtime primitives. We want to explore governance in zero-knowledge and we see mixers as being the core primitives towards this pursuit.
