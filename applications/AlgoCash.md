@@ -154,7 +154,8 @@ no
 
 
 ## Future Plans
-we will build a DEX using PMM (Proactive Market Maker) algorithm.
+
+We will build a DEX with PMM (Proactive Market Maker) algorithm.
 
 ## Community Engagement
 We will reach DEX and Lending protocol communities to enlarge Algo Cash adoption. 
