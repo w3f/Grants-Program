@@ -155,6 +155,7 @@ no
 
 ## Future Plans
 Shares token design for governance.
+
 We will build a DEX with PMM (Proactive Market Maker) algorithm.
 
 ## Community Engagement
