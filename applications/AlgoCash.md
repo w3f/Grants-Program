@@ -139,17 +139,18 @@ no
 * **Total Costs:** 5,000 DAI
 
 ### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 6 weeks
-* **FTE:**  1.5
+* **Estimated Duration:** 7 weeks
+* **FTE:**  2
 * **Costs:** 5,000 DAI  
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | Specification of the background, components and working mechanism|
-| 2 | Tests |Unit Test and also we will test it on Canvas| 
-| 3 | Fornt End | Project website to distribute ALC, crowd sale ALS and oprate with DEXs/Bond Exchange/Board Room |
-| 4 | Docker | A docker image with a Substrate chain for PoC|
+| 2 | Smart Contract | AlgoCash smart contract repo. The smart contract can be deployed to any substrate chain with ink! pallet.|
+| 3 | Tests |Unit Test and also we will test it on Canvas| 
+| 4 | Fornt End | Project website to distribute ALC, crowd sale ALS and oprate with DEXs/Bond Exchange/Board Room |
+| 5 | Docker | A docker image with a Substrate chain for PoC|
 
 
 
