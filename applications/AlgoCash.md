@@ -86,7 +86,7 @@ Initial distribution of Algo Cash are done to those that deposit aUSD to the dis
 
 Afterwards, a total of 1,500,000 Algo Shares are on crowd sale and the initial token price would be 40 aUSD. The crowd sale will last for 15 days. Afterwards, ALS will be listed on the DEXs with the same price as in the crowd sale, all funds raised in the crowd sale will be distributed to the DEX as buy orders and all Share tokens left will be distributed as sell orders.
 
-Further distribution of Algo Shares are given to liquidity providers of the ALS-aUSD pair. A total of 500,000 Algo Shares are distributed over a period of 1 year, and an equal amount of tokens are distributed per day.
+Further distribution of Algo Shares are given to liquidity providers (e.g. ALS-DOT pair, ALS-aUSD pair, etc.) or ecosystem contributors. A total of 500,000 Algo Shares are distributed over a period of 1 year, and an equal amount of tokens are distributed per day.
 
 Advantages
 
