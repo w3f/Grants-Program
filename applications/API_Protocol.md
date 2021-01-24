@@ -64,25 +64,68 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
   
   ![img](https://raw.githubusercontent.com/APIProtocol/research/main/block%20chain%20%20as%20a%20service.png)
   
-  BlockChain as a service makes it easy for developers to complete instant access to Ethereum, Filecoin/IPFS, Polkadot, Nucypher, Uniswap and other on-chain and off-chain protocols.
+  When using Blockchain as a service, developers can use the node service provided by the API Protocol ecosystem to achieve timely access to the Ethereum, IPFS network, and Polkadot ecological nodes。
+  
+  At the time of authorization, the user's project ID and private key registered in the API Protocol platform are used to complete security control, and the user's information is managed centrally at the beginning, and the decentralization will be completed at a later stage by using the Poca ecological user information management project.
+  ```python
+  Complete security control using Project ID：
+  
+  curl https://<network name>.apiprotocol.link/naas/PROJECT-ID
+  
+  Use project ID and project key to complete security control:
+  
+  curl --user :PROJECT-SECRET \
+  https://<network name>.apiprotocol.link/naas/PROJECT-ID
+  
+   ```
+   Initially, the supported protocols are HTTPS and WebSocket ：
+   ```
+   :JSON-RPC OVER HTTPS
+   :JOSN-RPC OVER WebSocket
+   ```
+   A request time example:
+   ```
+   $ curl -X POST \
+   -H "Content-Type: application/json" \
+    --data '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}' \
+    "https://polkadot.apiprotocol.link/naas/PROJECT-ID"
+   ```
+   Return result:
+    ```
+    {"jsonrpc": "2.0","result": "0x657abc", "id":1}
+    ```
   
   ##### 2 API as a service
   
   ![img](https://raw.githubusercontent.com/APIProtocol/research/main/api%20as%20a%20service.png)
+   
+  API as a Service allows service providers to monetize their API services, and by providing an API marketplace in the API Protocol ecosystem, API service utilizers can receive revenue and incentives in the form of API Protocol native tokens.
   
-  API as a service, allowing developers to easily switch and access between various underlying protocols.
+  The types of APIs are initially divided into the API Protocol system: data services and event services.
+  
+  ###### Data API Service Access Process.
+  
+  The data API service provider encapsulates its service in the form of microservice, and then registers through API Protocol's decentralized marketplace, and then after the community of API Protoco ecosystem votes to reach a certain number of votes, the API service provider registers a proxy service contract in API Protocol's consensus network. The contract contains a request for data to be processed, and then sends a request event to the API service provider, which receives the request, does the corresponding processing operations, and returns the result to the proxy contract, which sends the data to the service requester.
+  
+  ![img](https://raw.githubusercontent.com/APIProtocol/research/main/data%20API%20service.png)
+
+
+  ###### Event API Service Access Process.
+      
+  ![img](https://raw.githubusercontent.com/APIProtocol/research/main/Event%20API%20Service.png)
+  
   
   ##### 3 Decentralized API Market
   
   ![img](https://raw.githubusercontent.com/APIProtocol/research/main/marketplace.png)
   
-  A decentralized API marketplace based on Substrate blockchain technology, giving developers more and more reliable service options.
+  API Protocol's decentralized marketplace serves as a contract for managing basic API information, including registration and payment of API services, as well as basic information display, and will later support decentralized exchange functions based on API tokens to help API service providers better monetize their APIs.
   
   ##### 4 SDK as a service
   
   ![img](https://raw.githubusercontent.com/APIProtocol/research/main/sdk%20as%20a%20service.png)
   
-   The decentralized SDK developed by the API Protocol team allows developers to quickly build their own applications
+   SDKs play an important role in the software development process as a tool to help developers build applications quickly, but the lack of commercialization of development SDKs has led to a lack of willingness to build SDKs. The rewards will be decided by API Protocol's community vote.
    
   ## Substrate / Polkadot Integration:
   
@@ -172,37 +215,3 @@ API Protocol's future community engagement strategies include:
 * Medium: https://apiprotocol.medium.com/
 * Github: https://github.com/APIProtocol
 
-
-
-
-   
-   
-   
-   
-  
-  
-  
-  
-  
-  
-  
-    
-   
-
-  
-  
-
-
-
-
- 
- 
- 
- 
-
- 
-
-   
-   
-   
-   
