@@ -90,7 +90,7 @@ Nothing that we have aware off.
 ### Milestone 1 - The Born of PolkaDot Brains 
 * **Estimated Duration:** 2 months
 * **FTE:**  4
-* **Costs:** 1 BTC
+* **Costs:** 0.9 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
