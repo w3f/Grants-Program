@@ -44,6 +44,28 @@ The app will educate and provide the latest material to Master PolkaDot’s know
 
 * Much more coming in the future milestones, such as integration to Polkadot and Kusama Networks. Cooperation with parachain owners to make their content wide open to PolkaDot users.
 
+### Technical Summary 
+
+#### Backend Development
+* Database: PostgreSQL
+* Programming Languages C#, Rust
+* Communication Protocol: gRPC
+* Backend service will be used for caching the result and speed productivity of the application. Push 
+* Notifications and update users with relative information. In the next milestone, we provide multilanguage support. 
+* Information processing: Analytics, charts, explorer, etc. 
+* Connection to 3rd party services: Like Twitter, Facebook, google integration.
+
+
+![img](https://tonbrains.com/img/polkadot-brains-backend-architecture.svg)
+
+#### UI Development
+* Mobile UI Development Framework: Flutter (https://www.fluter.dev/)
+* Programming Language (Dart)
+* Flutter provides the best possible framework to develop modern mobile applications. 
+* The App Design will change from time to time based on community feedback
+
+
+<img src="https://tonbrains.com/img/Screenshot_1611594753.png" width="250">
 
 ### Ecosystem Fit 
 Nothing that we have aware off.
