@@ -152,7 +152,7 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
 No Legal Entity
 
 ## Team's experience
-The project leader, Haijun, is a serial entrepreneur who has experienced the entrepreneurial wave of mobile Internet and enterprise-level IT services, and has also participated in the public chain development of blockchain projects. Previously, he developed products based on the Cosmos-SDK ecosystem, but he saw polkadot’s The Web 3.0 ecological vision is more in line with the development trend of the Internet, and I hope to participate in the construction of the Web 3.0 ecology, so the API Protocol project was established.  
+The project leader, Haijun, is a serial entrepreneur who has experienced the entrepreneurial wave of mobile Internet and enterprise-level IT services, and has also participated in the public chain development of blockchain projects. Previously, he developed products based on the Cosmos-SDK ecosystem, but he saw polkadot’s The Web 3.0 ecological vision is more in line with the development trend of the Internet, and We hope to participate in the construction of the Web 3.0 ecology, so the API Protocol project was established.  
 
 ## Team Code Repos
 * https://github.com/AlexDevAPI
