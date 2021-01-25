@@ -145,7 +145,7 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
    DeFi is an on-chain smart contract. Because it needs events and data indicators to drive the program to perform corresponding operations, it needs to interact with external APIs.
    When the DeFi smart contract uses the event and data indicator API provided by the API Protocol, the DeFi contract must first inherit an APIServiceBridge class, the code is as follows:
    
-   ```
+   ```python
    // Contrace inherits the APIServiceBridge to gain the
    // functionality of creating API Protocol data requests.
     contract DeFiContract is APIServiceBridge {
