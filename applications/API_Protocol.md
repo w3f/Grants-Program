@@ -127,7 +127,7 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
   
    SDKs play an important role in the software development process as a tool to help developers build applications quickly, but the lack of commercialization of development SDKs has led to a lack of willingness to build SDKs. The rewards will be decided by API Protocol's community vote.
    
-  ##### API service operator
+  ##### 5 API service operator
   
   
    API service providers will run API Node, which is a blockchain network node based on Substrate 2.0. In addition to participating in network consensus and maintaining network security, it also has an off-chain work function based on Substrate Off-Chain Workers technology.
