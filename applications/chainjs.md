@@ -118,11 +118,7 @@ To assist you in defining it, we created a document with examples for some grant
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how engineers use the ChainJS library. 
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-1. Publish open source Polkadot plugin for ChainJS standard, including the following functions:
-* Create wallet
-* Create multisig wallet
-* Construct transaction
-* Transfer tokens
+| 1. | Polkadot plugin for ChainJS standard | Create wallet, Create multisig wallet, Construct transaction, Transfer tokens |
 
 ## Future Plans
 Once we have ChainJS, ORE ID provides four major benefits to businesses on Polkadot:
