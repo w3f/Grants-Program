@@ -39,7 +39,7 @@ To learn more about AIKON and read our developer docs visit: https://aikon.com
 
 
 ### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
+Although there are javascript tools for Polkadot like https://polkadot.js.org/docs/, this is the first effort to create a ChianJS plugin for Polkadot. The ChainJS standard is particularly suited for helping applications form Ethereum migrate to Polkadot, and we also hope it provides a template for parachains to do the same. ChainJS is also critical for the ORE ID product to support Polkadot, allowing us to help drive business adoption of Polkadot and parachains. 
 
 ## Team :busts_in_silhouette:
 
