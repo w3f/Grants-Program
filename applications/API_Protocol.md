@@ -134,6 +134,14 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
    
    ![img](https://raw.githubusercontent.com/APIProtocol/research/main/API%20Node.png)
    
+   ##### 6 Dapp developer
+   
+   
+   Dapp developers can use the Baas service provided by API Protocol to quickly access the blockchain network and quickly develop and distribute their applications.
+   ![img](https://raw.githubusercontent.com/APIProtocol/research/main/Developer.png)
+   
+
+   
   ## Substrate / Polkadot Integration:
   
   The API Protocol will be developed and designed based on the Substate 2.0 underlying engine, leveraging the Substate 2.0 off-chain module to provide API services for Web 3.0 developers.
