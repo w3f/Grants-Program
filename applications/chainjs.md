@@ -4,7 +4,7 @@
 
 > This page is also available in [Chinese (中文)](./application-template-cn.md).
 
-* **Project Name:** Polkadot & Kusama ChainJS plugins 
+* **Project Name:** Polkadot ChainJS plugins 
 * **Team Name:** API Market, Inc. dba AIKON
 * **Payment Address:** Ethereum Address: 0x7a6fdc8a113966d1236aB0FaB6dC5D3e5c05db88
 
