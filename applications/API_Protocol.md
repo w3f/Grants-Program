@@ -138,6 +138,7 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
    
    
    Dapp developers can use the Baas service provided by API Protocol to quickly access the blockchain network and quickly develop and distribute their applications.
+   
    ![img](https://raw.githubusercontent.com/APIProtocol/research/main/Developer.png)
    
 
