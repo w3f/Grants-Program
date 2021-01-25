@@ -60,7 +60,7 @@ Although there are javascript tools for Polkadot like https://polkadot.js.org/do
 * https://aikon.com
 
 ### Legal Structure 
-* **Registered Address:** 122 Maynard St, San Francisco, CA 94112
+* **Registered Address:** 18 Bartol Street #986, San Francisco, CA 94133
 * **Registered Legal Entity:** API Market, Inc.
 
 ### Team's experience
