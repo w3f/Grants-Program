@@ -10,7 +10,7 @@ jobs:
       - name: 'get all added files in the PR'
         if: ${{ github.event.pull_request.merged == true && !env.ACT }}
         id: 'files'
-        uses: mmagician/get-changed-files@master
+        uses: mmagician/get-changed-files@v2
 
       # - name: 'local test: get all added files in the PR'
       #   if: ${{ env.ACT }}
@@ -40,12 +40,12 @@ jobs:
             fi
           done
 
-      - name: 'local testing parse files'
-        if: ${{ env.ACT }}
-        id: grant_parser
-        uses: mmagician/read-file-action@v1
-        with:
-          path: "${{ steps.filter.outputs.added }}"
+      # - name: 'local testing parse files'
+      #   if: ${{ env.ACT }}
+      #   id: grant_parser
+      #   uses: mmagician/read-file-action@v1
+      #   with:
+      #     path: "${{ steps.filter.outputs.added }}"
 
       - name: 'parse files'
         if: ${{ github.event.pull_request.merged == true && !env.ACT }}
@@ -65,7 +65,7 @@ jobs:
         uses: mmagician/gsheet.action@v0.1.0
         with:
           spreadsheetId: ${{ secrets.SPREADSHEET_ID }}
-          startRow: 220
+          startRow: 235
           worksheetTitle: "Legal"
         env:
           GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
