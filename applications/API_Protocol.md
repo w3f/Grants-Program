@@ -198,7 +198,7 @@ The project leader, Haijun, is a serial entrepreneur who has experienced the ent
 
 ### Overview
 
-* **Total Estimated Duration:** 3 months
+* **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):** 3
 * **Total Costs:** 0.5 BTC
 
