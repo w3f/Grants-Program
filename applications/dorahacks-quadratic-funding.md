@@ -61,24 +61,23 @@ It's also exciting to implement quadratic funding as an on-chain governance modu
 ### Milestone 1 -- Implement Quadratic Funding Pallet
 * **Estimated Duration:** 5 weeks
 * **FTE:**  2
-* **Costs:**  300 DAI
+* **Costs:**  500 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache v2.0 |
-| 1. | Quadratic Funding Substrate Pallet | An open-source prototype of a quadratic funding substrate pallet. The pallet will implement quadratic voting algorithm and the quadratic funding grant process. |
-| 2. | Connecting to PolkadotJS extension | Create a simple page for testing purpose. If not installed, direct users to install. If installed, ask users to select an account. A popup window for users to do  | 
-| 3. | Demo site | We will launch a demo site to interate with quadratic funding functions｜
+| 1. | Quadratic Funding Substrate Pallet | An open-source prototype of a quadratic funding substrate pallet. The pallet will implement quadratic voting algorithm and the quadratic funding process: project registration, direct donation, voting, fund distribution. |
+| 2. | Test | Deploy the runtime module to Substrate testnet and test quadratic funding functions: project registration, direct donation, voting, fund distribution. (No security audit here)｜
 
 ### Milestone 2  -- Frontend Integration
 * **Estimated Duration:** 3 weeks
-* **FTE:**  1.5
-* **Costs:** 200 DAI
+* **FTE:**  3
+* **Costs:** 500 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | HackerLink Integration | Create UI for DOT Quadratic Funding Grant and deploy on HackerLink test line. |
-| 2. | Testing | Test the pallet and the product. (No security audit here) |
+| 1. | Connecting to PolkadotJS extension | If not installed, direct users to install. If installed, ask users to select an account. Popup window for interactions: project registration, voting, donating, fund redemption.  | 
+| 2. | HackerLink Integration | Create UI for a Quadratic Funding Grant and deploy on HackerLink test line. Similar user experience to BSC Grant Round-1. |
+| 3. | Test | Test the frontend product. |
 
 ## Future Plans
 
@@ -86,9 +85,10 @@ After implementation of quadratic funding pallet on Substrate, we will plan a qu
 
 Eventually, we hope to run KSM and DOT quadratic funding grants on a regular basis, and make it a continuous effort to support and incubate developer projects from the community, by the community. Meanwhile, we want to make the pallet availale as a module for every other parachain to run their own quadratic funding grant.
 
+
 ## Additional Information
 DoraHacks' blockchain developer platform HackerLink is currently hosting the Binance Smart Chain Quadratic Funding Grant Round-1. The BSC foundation donated $50,000 to this round to support BSC-based developer projects. This grant can be accessed at https://hackerlink.io/en/grant.
 
 There is a smart contract deployed on the BSC mainnet to process all quadratic voting and funding activities, and the smart contract has been audited by Certik. https://github.com/dorahacksglobal/BSCQuadraticFundingGrant
 
-
+DoraHacks is an active hackathon organizer and developer community in the blockchain space. DoraHacks has been organizing blcokchain hackathons and developer communities in 8 countries and ~20 cities around the world (Boston, SF, San Jose, Beijing, Hangzhou, Bangalore, Berlin, Oxford, Tokyo, Seoul... etc.)
