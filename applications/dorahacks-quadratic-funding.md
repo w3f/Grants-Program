@@ -65,7 +65,7 @@ It's also exciting to implement quadratic funding as an on-chain governance modu
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | GPLv3 |
+| 0a. | License | Apache v2.0 |
 | 1. | Quadratic Funding Substrate Pallet | An open-source prototype of a quadratic funding substrate pallet. The pallet will implement quadratic voting algorithm and the quadratic funding grant process. |
 | 2. | Connecting to PolkadotJS extension | Create a simple page for testing purpose. If not installed, direct users to install. If installed, ask users to select an account. A popup window for users to do  | 
 | 3. | Demo site | We will launch a demo site to interate with quadratic funding functions｜
