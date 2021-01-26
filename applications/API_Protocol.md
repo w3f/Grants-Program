@@ -164,6 +164,64 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
   
   The API Protocol will be developed and designed based on the Substate 2.0 underlying engine, leveraging the Substate 2.0 off-chain module to provide API services for Web 3.0 developers.
   
+  ### Tech Stack
+  
+  #### Rust
+   Rust is a systems programming language with a focus on security, especially concurrency security, and a multi-paradigm language that supports functional and imperative programming paradigms as well as generics.
+   
+   Rust will be the primary development language for API Protocol.
+  
+  #### Substrate
+  
+  Substrate is an open source, modular and scalable blockchain development framework, Substrate provides the core components of blockchain: database layer (RocksDB), network layer (libp2p), transaction queue, pluggable consensus, off-chain working mechanism, FRAME.
+  
+  ![img](https://raw.githubusercontent.com/APIProtocol/research/main/substrate.png)
+  
+  API Protocol is a blockchain project built on top of Substate 2.0. The construction of the underlying ecology of polkadot ecology is crucial to the success of API Protocol, API Protocol network is connected to polkadot ecology as a parachain of polkadot ecology, sharing the security and performance of polkadot ecology. The API Protocol network is connected to Polkadot as a parachain of Polkadot ecosystem, sharing the network security and performance brought by Polkadot's underlying consensus security and Substrate2.0, API Protocol is committed to become the underlying API monetization infrastructure to promote the development of Web 3.0. API Protocol will also join Polkadot's Relay chain at the right time to better serve developers in the Polkadot ecosystem.
+  
+  #### Off-Chain Features
+  
+  As traditional external API services based on the prophecy machine are typically used to listen for blockchain events and trigger tasks based on conditions. When these tasks are executed, the execution results are submitted to the blockchain in the form of transactions. While this approach works, it still has some shortcomings in terms of security, scalability, and basic efficiency. This is why Substrate 2.0 has developed important features: off-chain functionality, including Off-Chain Worker, Off-Chain Storage, and Off-Chain Indexing, which help smart contracts gain access to reference data and event data, and API Protocol will use these features to help smart contracts gain access to external data through the API. 
+  
+  ![img]( https://raw.githubusercontent.com/APIProtocol/research/main/off-chain.png)
+  
+  
+ 
+ #### ink!
+ 
+ ink! is a domain-specific language based on Rust for writing smart contracts using Rust and compiling them into WASM code, designed for correctness, simplicity and efficiency. API Protoco will integrate the ink! function module to provide efficient contract services and enjoy the convenience of ink! development, so we use as the smart contract language
+ 
+ #### Frontier
+ 
+ Frontier is Substrate's Ethernet-compatible layer that allows developers to run unmodified Ethernet DAPPs. the program will allow any Substrate chain to appear as a fully Ethernet chain and host any tool supported by the Ethernet Solidity programming language, including MetaMask, Truffle and any other tool that uses Web3 RPC tools.
+ 
+ Solidity, the EVM-based smart contract language, is currently the most widely used language by blockchain contract developers, so in order to integrate the developer community and lower the developer threshold, API Protocol will also provide support for Solidity language contracts, and for EVM, we will choose Frontier as the compatible layer.
+ 
+ #### Substrate Archive 
+ 
+ Substrate Archive is the blockchain indexing engine that indexes all block data, state data and Extrinsic data into the PostgreSQL database. API Protocol requires Substrate Archive when providing event data API services and data retrieval services.
+ 
+ #### PosgreSQL
+ 
+ PostgreSQL is a very advanced Object-Relational Database Management System (ORDBMS), the most powerful, feature-rich and advanced free software database system available. Some features are not even available in commercial databases. API Protocol will use this database to store blockchain statistics.
+ 
+ #### IPFS
+ 
+ IPFS is a decentralized distributed transport network, and API Protocol will use IPFS as the underlying technical facility for service communication and lookup services.
+
+#### OpenAPI-Specification
+ 
+ OAS defines a standard, language-independent RESTful API interface specification that allows both developers and operating systems to view and understand the functionality of a service without access to source code, documentation, or network traffic inspection (both for human and machine learning and reading). When OAS is properly defined, developers can understand and interact with remote services with minimal implementation logic. API Protocoto will implement API gateway interfaces and management functions in accordance with the OpenAPI Specification. 
+
+#### polkadot/apps
+
+ polkadot/apps is a development framework for developing polkadot browser applications, and API Protocol will develop browser-related views and interaction products based on it.
+
+  
+  
+
+  
+  
   ## Ecosystem Fit 
   API Protocol is the Web 3.0 API Economy infrastructure, dedicated to making Web 3.0 APIs easier to find, access and use, to develop Web 3.0 applications more simple and efficient, thus promoting the development of Web 3.0.
   
