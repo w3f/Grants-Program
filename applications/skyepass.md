@@ -10,7 +10,7 @@
 
 ## Project Overview :page_facing_up: 
 
-SkyePass is a customizable open-source decentralized password manager. 
+SkyePass is a decentralized and customizable identity management software. On the surface, it is a decentralized, open source and modern password manager. 
 
 ### Product Details
 
@@ -73,18 +73,37 @@ Some ideas we have had so far:
 
 
 
-### More Potential For a Password Manager
+### Password Manager & an Identity Management Solution
 
 Based on some thinking of the basis nature of NFTs. We believe that a password manager is an ideal medium to deliver tokenized digital identities. Therefore, we think each username-password-OTP combination as an atomic token, a vault as a collection of these identities, and an `extension` as a service injected with an identity. 
 
-- If we assume all identity tokens have two states: "public identity" or "private identity". A public handle is the public identity of a user. Therefore, we are building a solution to link to one's public off-chain profiles. Also, we can implement a ENS-like or @username style handle system.
-- Therefore, simple sharing behavior (i.e. share my spotify account to my girlfriend) can take two forms: if she has an account with this password manager, simple @her, set some rules for using this password(or not) and press share. If she has not, a one time sharing link will be sent, her browser will generate an ephemeral key pair, and that ephemeral key pair will be used to encrypted the entry and send the encrypted password entry over and make it self-destruct soon.
-- For teams or families, they are using a shared identity. They can link their profiles and get a handle like @team, while the team will use some secret sharing schema for privilege management.
+- If we assume all identity tokens have two states: "public identity" or "private identity". A public handle is the public identity of a user. (i.e. a twitter handler, a Github handle or a Venmo handle etc. ) Therefore, we are building a solution to link to one's public off-chain profiles. Also, we can implement a ENS-like or `@username` style handle system.
+- Therefore, simple sharing behavior (i.e. share my spotify account to my girlfriend) can take two forms: if she has an account with this password manager, simple `@her`, set some rules for using this password(or not) and press share. If she has not, a one time sharing link will be sent, her browser will generate an ephemeral key pair, and that ephemeral key pair will be used to encrypted the entry and send the encrypted password entry over and make it self-destruct soon.
+- For teams or families, they are using a shared identity. They can link their profiles and get a handle like `@team`, while the team will use some secret sharing schema for privilege management.
 
 For more on this, please refer to `Future Plan/Integrated Identity Solution` section. 
 
 ### Ecosystem Fit 
-I don't think there are anything like SkyePass so far, both within the Substrate community or all blockchain communities. The reason that Substrate will be an ideal platform for SkyePass is because the flexibility the framework offers. Please refer to the `Future Plan` section to see other things our team plan to do. 
+I don't think there are anything like SkyePass so far, both within the Substrate community or all blockchain communities. The reason that Substrate will be an ideal platform for SkyePass is because the flexibility the framework offers. We plan to deploy 4 smart contracts:
+
+- Contract 1: A NFT contract that issues an NFT token for vault creator, store metadata of the vault and manage permission to update the vault. (the `vault metadata contract`)
+
+- Contract 2: A NFT contract that generate an NFT token that represents an atomic digital identity to users (the `atomic digital identity contract`)
+
+- Contract 3: A generalized handle system (an ENS-like system) on a Substrate-based chain that issue user handle ownership NFTs (the `substrate identity handle contract`)
+
+- Contract 4: An identity control smart contract that verify and store off-chain user handle(s), in compliment to the `substrate identity handle contract` (the `off-chain identity linkage contract`)
+
+    
+
+From all smart contract platforms, we choose the Substrate stack for development because: 
+
+- When more customizations are needed, we won't be limited by the platform. The option to develop a parachain is still available. 
+- Because these identity management smart contract is designed to be more generalized, we have the option to deploy them on different chain. For instance, we can deploy contract 1 and 2 to a faster/less secure/low tx cost focused parachain. While, contract 3 & 4 to a secure and relatively more decentralized parachain. Most likely we will not mess with Bridging of the Substrate stack but the option is still open for future. 
+
+
+
+For `extensions`: we plan to host a Github public repo as described in `Milestone 2`
 
 ### UI/UX Mockup
 
@@ -149,7 +168,7 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 * **Full-time equivalent (FTE):**  2.5 FTE 
 * **Total Costs:** See Below
 
-### Milestone 1 — Core Encryption/Basic Desktop App/Basic Browser Extension 
+### Milestone 1 — Core Encryption/Identity Management Smart Conctracts/Basic Desktop App/Basic Browser Extension 
 * **Estimated Duration:** 10 Weeks
 
 * **FTE:**  2
@@ -162,7 +181,7 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 | ------ | ------------------------------ | ------------------------------------------------------------ |
 | 0a.    | Documentations/Project Website | A minimalism project homepage with a user manual that documents how to use SkyePass from account creation to manage passwords, and install extensions and browser extensions. <br/>A developer documentation that describes the encryption mechanism in details; Basic API documentation for extension development. |
 | 0b.    | Desktop App/Browser Extension  | **Desktop App**<br/>A React.js + Electron App to start with. The App will implement as close as possible to the graphic design (per 0d). <br/>- Wallet Creation / Backup Phase / Create Master Password<br/>- Wallet Import / Signin<br/>- Autolock after timed inactivity or manually lock the App <br/>- Create/Share/Manage Vaults<br/>- Add/Update/Delete Password Items (with 2FA OTP support)<br/>- Add/Update/Delete Secure Note/Credit Card <br/>- Basic ETH wallet extension<br/>- Basic Polkadot wallet extension <br/>- Application Marketplace<br/>- link social media or other identity handle to a public account<br/>- sharing a single password item directly to another user<br/><br/>**Browser Extension** <br/>- Communication to Desktop Application<br/>- Auto-fill account/passwords<br/> |
-| 0c.    | Smart Contract                 | - A NFT contract that issues an NFT token for vault creator, store metadata of the vault and manage permission to update the vault <br/>- A NFT contract that generate an NFT token that represents an atomic digital identity to users<br>- A generalized handle system on a Substrate-based chain. <br/>- An identity control smart contract that verify and store off-chain user handle. |
+| 0c.    | Smart Contract                 | All 4 smart contracts mentioned in the `Ecosystem Fit` section. For this phase, these contracts are testing contracts. |
 | 0d.    | UI/UX Design Standards         | Color Schema, Composition & Balance, Typography, Animation, Navigation, Icon Set, Brand Logo |
 | 0e.    | Basic Marketing Efforts        | Get on product-hunt and send out private alpha invitation    |
 | 0f.    | Testing                        | Well... test code and basic internal security audit          |
@@ -181,7 +200,8 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 | Number | Deliverable                                    | Specification                                                |
 | ------ | ---------------------------------------------- | ------------------------------------------------------------ |
 | 1a     | Developer Resource/API Documentation/Community | - A comprehensive API spec documentation <br/>- Riot group for support, suggestions and questions<br/> |
-| 1b     | Desktop App/Browser Extension                  | Create an open Github repo for integrations, build a management system for open PR of new integrations. The "marketplace" in the desktop app will pull a list of available integrations from the repo.  <br/>Support at least 2 password importing source<br/>Support unencrypted password exporting<br/>Add in support for browser extension to inject hot wallet like Metamask<br/> |
+| 1b     | Desktop App/Browser Extension                  | Create an open Github repo for `extensions`, build a management system for open PR of new integrations. The "marketplace" in the desktop app will pull a list of available integrations from the repo.  <br/>Support at least 2 password importing source<br/>Support unencrypted password exporting<br/>Add in support for browser extension to inject hot wallet like Metamask<br/> |
+| 1c     | Smart Contracts                                | - Portals to interact with smart contract 3 & 4. Either standalone webpages or built into the desktop apps. <br/>- All contract tested and audited and we will deploy the V1.0 contract to the appropriate parachains. |
 | 1c     | Partnership                                    | Build partnerships for developer/marketing/user support resources |
 | 1d     | Mobile Apps                                    | Draft up UI/UX designs for mobile apps.                      |
 | 1e     | Equity Fundraising Prep                        | Draft up material in preparation of an institutional fundraising |
@@ -204,6 +224,7 @@ In summary, we are giving the freedom back to our users and let them decide how 
 
 1. We plan to build an auction market for user handle on a Substrate-based public chain. (refer above in `More Potential For a Password Manager`)
 2. We plan to build a market for trading digital identities.  
+3. We plan to offer the identity solution in a consulting package for business teams.
 
 #### Hardware Wallet Integration
 
