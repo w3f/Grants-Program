@@ -4,7 +4,7 @@
 * **Team Name:**  Tidot team
 * **Payment Address:**  0x30C75CCa722395FcbAACC48b36a91c8200CBAD30
 
-Project Overview :page_facing_up: 
+## Project Overview :page_facing_up: 
 ### Overview
 In the rococo  network, rococo's validator is Babe + grandpa consensus, which is BFT, but collator has no consensus.The consensus of each parachain/parathread is finally confirmed by Relaychain's BFT.The collator is the validator of the parachain, but the BFT of the collator is confirmed by the relaychain.Therefore, collator can use more efficient and fast consensus to collect transaction information and build blocks.BFT has been guaranteed by relaychain, so collator can use raft consensus to ensure the strong consistency and efficiency of collator packing blocks.
 
