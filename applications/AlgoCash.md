@@ -35,6 +35,7 @@ For trading and liquidity purpose, Algo Cash could be integrated with such proto
 
 Algo Cash tokens are designed to be used as a medium of exchange. The built-in stability mechanism expands and contracts their supply, maintaining their peg to the aUSD token. 
 
+
 #### ALB - Algo Bonds
 
 Algo Bonds are minted and redeemed to incentivize changes in the Algo Cash supply. Bonds are always on sale to Algo Cash holders, although purchases are expected to be made at a price below 1 Algo Cash. At any given time, holders are able to exchange their bonds to Algo Cash tokens in the Algo Cash Treasury. Upon redemption, they are able to convert 1 Algo Bond to 1 Algo Cash, earning them a premium on their previous bond purchases.
@@ -100,6 +101,63 @@ Advantages
 
 5. Compared to auctions: Crowd sale is compatible with auction functions, but it is not just a simple fundraising. After the crowd sale is over, a market with abundant liquidity will be established immediately. Even having not raise enough funds, a market with sufficient selling liquidity can still be established, which AMM cannot do.
 
+### Contract
+
+**cash - Minting and burning of the cash token**
+
+Mints *amount* cash to the *recipient* account. 
+
+Burns *amount* cash from the *account*.
+
+
+**bond - Minting and burning of the bond token**
+
+Mints *amount* bond to the *recipient* account. 
+
+Burns *amount* bond from the *account*.
+
+
+
+**share - Minting and burning of the share token**
+
+Mints *amount* share to the *recipient* account. 
+
+Burns *amount* share from the *account*.
+
+
+**Treasure - Bond purchase and redemptions**
+
+Returns the oracle price of Algo Cash denominated in aUST.
+
+Mints *amount* Algo Bonds, in exchange for same *amount* Algo Cash burnt.
+
+Mints *amount* Algo Cash, in exchange for *amount* Algo Bonds burnt.
+
+If the oracle price of Algo Cash is above (1+ε) aUST, mints *((ALC Oracle Price) - 1) * cashSupply* number of Algo Cash to either the Boardroom contract or the Treasury contract.If the Treasury's balance is below 1,000 ALC, the allocation is given to the Treasury, else give it to the Boardroom.
+
+
+**Boardroom - Handling claims from the share**
+
+Stakes *amount* Algo Shares to Boardroom sends all prior accrued dividends to *account*.
+
+Withdraws *amount* Algo Shares and all accrued dividends to *account*.
+
+Returns the amount of all dividends accrued by *account*.
+
+Claims all accrued dividends to *account*.
+
+When new cash is assigned to the Boardroom contract. Records the current block timestamp, the amount of new cash, and the current amount of total Shares staked.
+
+
+**oracle - Retrieving the exchange rate between Algo Cash and aUST**
+
+If 24 hours has passed since update() was last successfully executed, updates the time-weighted average price of Algo Cash. 
+
+Returns the amount of *output* tokens given in exchange for *input* number of *token* tokens ((Price of *token* token denominated in *output* tokens) * *input*).
+
+
+
+
 
 ### Ecosystem Fit 
 Acala, aUSD is generated in a collateral way.
@@ -149,8 +207,7 @@ no
 | 1 | Documentation | Specification of the background, components and working mechanism|
 | 2 | Smart Contract | AlgoCash smart contract repo. The smart contract can be deployed to any substrate chain with ink! pallet.|
 | 3 | Tests |Unit Test and also we will test it on Canvas| 
-| 4 | Fornt End | Project website to distribute ALC, crowd sale ALS and oprate with DEXs/Bond Exchange/Board Room |
-| 5 | Docker | A docker image with a Substrate chain for PoC|
+| 4 | Docker | A docker image with a Substrate chain for PoC|
 
 
 
