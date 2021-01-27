@@ -258,7 +258,22 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
   
   
   ## Ecosystem Fit 
+  
   API Protocol is the Web 3.0 API Economy infrastructure, dedicated to making Web 3.0 APIs easier to find, access and use, to develop Web 3.0 applications more simple and efficient, thus promoting the development of Web 3.0.
+  
+  At the beginning of the project, we will support the following Web 3.0 Ecology  projects.
+  
+  * Naas Services: Filecoin/IPFS , Ethereum, Polkadot candidate network CC1, Acala，etc。
+  
+  * API Services: Plasm, Moonbeam, etc.
+  
+  * SDK Services : Substrate 2.0,Polkadot etc.
+  
+  As the Web 3.0 ecosystem grows, we will support more Web 3.0 API services.
+  
+  ## The Purpose of this Grant
+  
+  The purpose of this grant is to verify the feasibility of the project. Considering the rapid development of Web 3.0, we hope to verify the feasibility of the    project through this grant, and cooperate with Polkadot eco-partners to explore the infrastructure of Web 3.0 API economy, so as to better empower the Web 3.0 API economy.
   
   
  ## Team members
