@@ -130,7 +130,7 @@ message SignWithAnyRequest {
 * **Total Costs:** 29000 USD
 
 ### Milestone 1 — Implementation Design Documents for the Whole architecture
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 1/2 month
 * **FTE:**  2
 * **Costs:** 6000 USD
 
@@ -152,7 +152,7 @@ message SignWithAnyRequest {
 | 0b. | Code | Providing a remote server that gives both signing services and slashing protection mechanisms |
 
 ### Milestone 3 — Deployment and Test
-* **Estimated Duration:** 1/2 month
+* **Estimated Duration:** 1 month
 * **FTE:**  2
 * **Costs:** 6000 USD
 
