@@ -65,7 +65,7 @@ Slashing cases:
 * Dmitry Savonin (Software Architect)
 * Felipe Faria (Software Developer)
 * Daniel Ichshuk (Software Developer)
-* Khasan Khafizov --- (Software Developer)
+* Khasan Khafizov (Software Developer)
 
 ### Contact
 * **Contact Name:** Stanley Wu
