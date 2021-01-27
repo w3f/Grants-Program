@@ -109,6 +109,19 @@ This project has no backend component.
 
 # UI Development
 We will implement a basic frontend component in React + Javascript + Polkadot.js. This component can be incorporated into the implementing platform's User Interface.
+## UI: User goals
+1. Load the application in the browser
+1. Sign in to a chain with a wallet
+1. Choose Keeper
+1. See Keeper details
+1. Choose Account/Position to act on
+1. See Asset to Pay 
+1. See Asset to Get
+1. See needed Amount to pay
+1. Choose Amount to pay
+1. Choose whether to Borrow from Vault
+1. See available borrowable amount from Vault
+1. Execute transaction
 
 # Team
 ## Team members
@@ -212,29 +225,32 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 ### Technical Milestones
 
 #### Milestone 1: Preparation (0.10 BTC)
-|Deliverable|Description|
-|---|---|
-|License| All code will be open-sourced under the MIT license. We welcome contribution and reuse.|
-|Source Code|Public Source code Repository, based on Substrate Node Template. Programming language will be Rust, using the Substrate Framework. We will provide both inline documentation of the code and a guide that explains how to integrate the Vault, Liquidator and LiquidatorAdaptor pallets and write the adapters for a target platform|
-|Community|We will publish a Medium Article that announces all deliveries and a step by step tutorial for the developer community once evaluation is passed |
-|Documentation|Initial public outline of the documentation|
+| Deliverable   | Description                                                                                |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| License       | All code will be open-sourced under the MIT license and shared in github or gitlab. We welcome contribution and reuse.|
+| Source code   | Public Source code Repository containing a Rust codebase based on the Substrate Node Template. Programming language will be Rust, using the Substrate Framework. We will provide both inline documentation of the code and a guide that explains how to integrate the Vault, Liquidator and LiquidatorAdaptor pallets and write the adapters for a target platform. This release includes Vault and Liquidator pallet outlines, to validate the approach and structure. |
+| UI / Functionality | We deliver Design specs (User stories, mockups) for the user-facing functionality, which in the next phase can be used to build the React UI.|
+| Community     | We will publish a Medium Article that announces all deliveries and a step by step tutorial for the developer community once evaluation is passed |
+| Documentation | Initial public outline of the documentation |
 
 #### Milestone 2: Alpha Release (0.25 BTC)
-|Deliverable|Description|
-|---|---|
-|Code| Vault, Liquidator and LiquidatorAdaptor pallets implemented, unit tests basic coverage. Also including a Reference runtime for testing |
-|Demo|Proof-of-Concept implementation with basic UI (Basic HTML+JS or React) publicly available|
-|Tooling|Docker container that allows developers to get started quickly|
-|Community|Opening the codebase and inviting open-source developers to submit PRs.|
+| Deliverable | Description                                                                                                                            |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| License     | All code will be open-sourced under the MIT license and shared in github or gitlab. We welcome contribution and reuse.                 |
+| Source code| Vault, Liquidator and LiquidatorAdaptor pallets all implemented with basic (<30%) unit test coverage. Also including a Reference runtime for testing. A React project is added for the UI side, with documentation on how to run it locally and contribute |
+| UI / Functionality        | Proof-of-Concept implementation with basic functionality. All functionality is available, but excludes integration with real-world chains (only works with local mock environment).                                                |
+| Tooling     | Docker container that allows developers to get started quickly|
+| Community   | Opening the codebase and inviting open-source developers to submit PRs.|
 
 #### Milestone 3: Final Release (0.2 BTC)
-|Deliverable|Description|
-|---|---|
-|Code|All Vault, Liquidator and LiquidatorAdaptor Pallets complete with tests|
-|Demo/examples|Reference UI implementation (React) complete.|
-|Documentation|Complete, aimed at developers integrating Polkakeeper|
-|Integration|Adapter pallet templates and example implementations complete and documented|
-|Community|Launch of Polkakeeper components in Substrate/Polkadot dev community|
+| Deliverable   | Description                                                                                                            |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| License       | All code will be open-sourced under the MIT license and shared in github or gitlab. We welcome contribution and reuse. |
+| Source code          | All Vault, Liquidator and LiquidatorAdaptor and AssetPriceAdapter components are completed and documented, with unit tests at 85% coverage. Includes reference code for implementation in other projects.                                                |
+| UI / Functionality        | All functionality is available (see User Stories), and now includes a reference integration with a real-world (but testnet most likely) chain. Available as source code, but also deployed to an online location for demo purposes.                                         |
+| Documentation | Complete, aimed at developers integrating Polkakeeper                                                                  |
+| Integration   | Adapter pallet templates and example implementations complete and documented                                           |
+| Community     | Launch of Polkakeeper components in Substrate/Polkadot dev community                                                   |
 
 ### Technical Stack
 - Programming language: Rust
