@@ -12,6 +12,7 @@
 
 
 In this proposal, we aim to design and implement a remote signing process within the substrate client for ECDSA, EdDSA, and BLS signature algorithms for Parachains (including a dedicated key management service to be used with the remote signing module). We also aim to provide a remote service which aims to prevent slashings and protect stakers’ funds.
+
 ### Overview
 
 The validators play a crucial role on PoS networks due to operating stable, reliable, consistent, and secure operations of their nodes. Therefore, providing an ultimate security is of utmost important, otherwise, the whole system would fail. In this respect, they also manage their account and session keys which are used to staking, resource rental, governance, consensus, and security. However, if a validator is compromised then it can lead to a complete loss of funds of this validator. Therefore, a more secure and robust key management architecture (preferably in a distributed fashion) must be designed and implemented for long term purposes.
@@ -61,9 +62,10 @@ Slashing cases:
 ### Team members
 * Stanley Wu (Lead)
 * Dr. Suleyman Kardas (Advisory)
-* Dmitry Savonin (Senior Software Developer)
+* Dmitry Savonin (Software Architect)
 * Felipe Faria (Software Developer)
 * Daniel Ichshuk (Software Developer)
+* Khasan Khafizov --- (Software Developer)
 
 ### Contact
 * **Contact Name:** Stanley Wu
@@ -80,8 +82,7 @@ Slashing cases:
 * **Dmitry Savonin:**  https://www.linkedin.com/in/dmitry123/
 * **Felipe Faria :** https://www.linkedin.com/in/felipe-faria-28371637/
 * **Daniel Ichshuk :**  https://www.linkedin.com/in/danielimkk/
-
-
+* **Khasan Khafizov:**  https://www.linkedin.com/in/khafizov-khasan/
 
 ### Team Code Repos
 * https://github.com/Ankr-network/stkr-polkadot-signer
