@@ -127,7 +127,7 @@ message SignWithAnyRequest {
 ### Overview
 * **Total Estimated Duration:** 2.5 months
 * **Full-time equivalent (FTE):**  10 FTE
-* **Total Costs:** 29000 USD
+* **Total Costs:** 30000 USD
 
 ### Milestone 1 — Implementation Design Documents for the Whole architecture
 * **Estimated Duration:** 1/2 month
