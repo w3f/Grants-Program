@@ -88,13 +88,13 @@ Slashing cases:
 
 ### Overview
 * **Total Estimated Duration:** 2 months
-* **Full-time equivalent (FTE):**  2 FTE
-* **Total Costs:** 0.9 BTC
+* **Full-time equivalent (FTE):**  6 FTE
+* **Total Costs:** 1.0 BTC
 
 ### Milestone 1 — Implementation Design Documents for the Whole architecture
 * **Estimated Duration:** 1 month
-* **FTE:**  2
-* **Costs:** 0.5 BTC
+* **FTE:**  1
+* **Costs:** 0.125 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -105,8 +105,8 @@ Slashing cases:
 
 ### Milestone 2 — Implementation for Remote Signing Services on Parachains (for both internal Testnet and Kusama)
 * **Estimated Duration:** 2 month
-* **FTE:**  2
-* **Costs:** 1 BTC
+* **FTE:**  4
+* **Costs:** 0.75 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -115,8 +115,8 @@ Slashing cases:
 
 ### Milestone 3 — Deployment and Test
 * **Estimated Duration:** 1/2 month
-* **FTE:**  2
-* **Costs:** 0.25 BTC
+* **FTE:**  1
+* **Costs:** 0.125 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
