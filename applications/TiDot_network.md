@@ -4,25 +4,27 @@
 * **Team Name:**  Tidot team
 * **Payment Address:**  0x30C75CCa722395FcbAACC48b36a91c8200CBAD30
 
-
-## Project Overview :page_facing_up: 
+Project Overview :page_facing_up: 
 ### Overview
+In the rococo  network, rococo's validator is Babe + grandpa consensus, which is BFT, but collator has no consensus.The consensus of each parachain/parathread is finally confirmed by Relaychain's BFT.The collator is the validator of the parachain, but the BFT of the collator is confirmed by the relaychain.Therefore, collator can use more efficient and fast consensus to collect transaction information and build blocks.BFT has been guaranteed by relaychain, so collator can use raft consensus to ensure the strong consistency and efficiency of collator packing blocks.
 
-Distributed storage has reached a saturation point among centralized systems, meaning the technology is available and deployable to any centralized organization, which however does not equate with flawless and immaculate operation. There are still many problems. Nowadays a handful of tech giants have tightened their grip on our day-to-day data, monopolizing its usage and dictating its structural and categorical allocation, which unequivocally leads people to question the centralized structure itself. What’s worse, research teams that require huge amount of data cannot properly examine their results due to lack of data access. This is the status quo that we want to break and in return we’ll have our data back. A number of projects have tried in this regard, such as maidsafe, filecoin, and many others which tried to incentivize distributed storage, but even today, filecoin still fails to do so and strides no further than mining games on the fil chain by miners, nowhere near real blockchain storage. There is another project named arwave that blazes a new trail with the chain only performing confirmation and no calculation. With this in mind, it does manage to store data with incentives in place, cracking the hard nut that traditional blockchain fumbled. But there is a major problem. Arwave confirms on-chain transactions via a PoW consensus similar to Monero’s, with its market value determining the security of the chain, thus not secure enough given the market value. Then comes TiDot which is equipped with arwave's "on-chain confirmation and off-chain calculation" principle and polkadot's security consensus, allowing DOT's relay chain to fortify the already strong TiDot network.
+Currently, there is only one collator in the cumulus code, but the real parachain is online, and there should not be only one collator or a group of chaotic collators.At this time, collator is no longer necessary to run BFT, because the blocks packaged by collator are confirmed by relaychain's BFT, then running POA consensus is also feasible, but running raft is currently the most efficient distributed consensus protocol that seems to be the most efficient.
+
+POA is not as efficient as raft.
 
 
 ### Project Details 
 
-TiDot is committed to providing a stable, reliable and available data storage network in the Polkadot ecosystem. TiDot has two roles: Collator and Client. Users can store, and retrieve data after paying fees and claim part of the fees as refund if the data is deleted.
 
-Collator is completely controlled by parachain and communicates with relay chain through the collator protocol. 
-The integration of Collator and raft node requires the following:
+![raft](https://img.imgdb.cn/item/600fe0883ffa7d37b388fbf0.png)
 
-- 1: Collator's economic model and management.
-- 2: Embedding TiKV’s raft node state into Collator.
-- 3: The integration of Polkadot network module and TiKV network module in terms of communication. (Both have all modules designed by themselves, so we add the Bridger module to both for communication purpose.)
+Collator controls the transaction pool, and each parachain has only one collator to interact with the parachain.So we can let the leader in the raft group be responsible for interacting with the verification node that relaychain allocates the parachain。In the raft protocol, there is a leader and many fallow nodes. The collator is responsible for the function of packaging transactions. Currently, there is only one collator in cumulus that will successfully become a collator of the parachain.
 
-## Team :busts_in_silhouette:
+In the raft protocol, each synchronized proposal is a <key, value> structure. In txpool with raft consensus, key represents transaction hash, and value represents transaction data.
+
+The leader has the most comprehensive message in the transaction pool. The collator with the identity of the raft leader takes out the transaction to be sent from the raft group and puts it into the propose factory structure of clumulus to build the block.
+
+![code](https://img.imgdb.cn/item/600fef5e3ffa7d37b390f13f.png)
 
 ### Team members
 Xianzhi  Huang(leader)
@@ -49,7 +51,7 @@ https://github.com/TiDot-netowrk
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 3 month
+* **Total Estimated Duration:** 2 month
 
 * **Full-time equivalent (FTE):**  5
 
@@ -58,11 +60,11 @@ https://github.com/TiDot-netowrk
   
 
 ### Milestone 1 — Implement Substrate Modules 
-* **Estimated Duration:** 3 month
+* **Estimated Duration:** 2 month
 * **FTE:**  5 
 * **Costs:**   29000 DAI
 
-| Number | Deliverable | Specification |
+| Number | Deliverable   | Specification                                                |
 | ------ | ------------- | ------------------------------------------------------------ |
 | 0a.    | License       | GPL-3.0 License                            |
-|  1 |  cumulus | All collators should form a cluster, and the leader is responsible for submitting candidate block information to collators assigned to the parachain by the relay chain. The implementation and integration of collator's raft network https://github.com/tikv/raft-rs into cumulus, and let cumulus choose the raft protocol. |
+|  1 | cumulus | Implement raft protocol for txpool |
