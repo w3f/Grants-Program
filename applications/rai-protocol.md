@@ -12,39 +12,62 @@
 
 ### Overview
 
-RAI Finance is a protocol designed for decentralized cross-chain asset exchange. Decentralized Finance (DeFi) has grown exponentially and transactions, services and usage of DeFi have increased significantly and become more widespread. This can be corroborated by the TVL (Total Value Locked) in DeFi protocols, which went from 1B USD in June to 10B USD in October. 1. While DeFi allows peer-to-peer transactions and the security of non-custodial assets, it does so at the cost of liquidity and a diverse asset selection which is traditionally enjoyed by centralized service providers. RAI Finance introduces this with its layer 2 scalability as a swap protocol, improved automated market making functionality and cross-chain asset support, bringing to DeFi both liquidity and diversity of assets. This will be facilitated via RAI, a native token as the incentive layer for user’s liquidity contribution and governance on protocol architecture iterations.
+RAI Finance is a Defi protocol designed for decentralized cross-chain asset. Decentralized Finance (DeFi) has grown exponentially and transactions, services and usage of DeFi have increased significantly and become more widespread, while DeFi still suffer from poor user experience compared with CEX products.
+RAI Finance introduces a zero knowledge proof layer2 solution to Polkadot ecossystem with the aim to give user a state of the art DeFi experience.
 
-In order to reach a wider variety of asset types, Rai Finance will be launched on a parachain and integrated into the Polkadot ecosystem. This allows the protocol to increase the number of assets supported by utilizing the cross-chain compatibility of the Polkadot relay chain. Interoperability differentiates RAI Finance from many other popular liquidity protocols running on Ethereum and limited only to ERC20 tokens. Furthermore, as RAI Finance evolves, the smart contract capability of the Polkadot ecosystem allows for the integration of unique assets and non-fungible tokens (NFTs).
+Below is the whole RAI technical stack architecture:
 
-### Project Details
-* An overview of the technology stack to be used
-  * **Blockchain**: Rust/Substrate/Cumulus/EVM/Solidity
-  * **Frontend**: TypeScript/React/web3.js/polkadot.js
-* Documentation of core components, protocols, architecture etc. to be deployed
-  * **White Paper**: https://rai.finance/WP.pdf
-* PoC/MVP or other relevant prior work or research on the topic
-  * **RAI swap dApp**: https://swap.rai.finance/#/swap
-  * **RAI testnet**: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftest-node.rai.finance%2Fws#
+    -------------------------------
+    | RAI Defi Apps               |
+    -------------------------------
+    | Substrate Client library    |  <---- This grant
+    -------------------------------
+    | Substrate Core              |
+    -------------------------------
+    | RAI Runtime Modules         |  <---- This grant
+    -------------------------------
+    | LibProof                    |  <---- This grant
+    -------------------------------
+    | BulletProofs                |
+    -------------------------------
 
-### Ecosystem Fit
-Rai is inspired by Uniswap protocol, the mainly difference is as followings:
-* **Cross-chain Asset Capability**: In order to reach a wider variety of asset types, Rai Finance will be launched on a parachain and integrated into the Polkadot ecosystem. This allows the protocol to increase the number of assets supported by utilizing the cross-chain compatibility of the Polkadot relay chain.
-* **Secure Off-chain Transactions**: RAI Finance improves the scalability of automated market making and yield strategies through secure off-chain transactions. By leveraging Zero-knowledge Proofs for trustless computation and cryptographic accumulators for immutable data storage, it is possible to provide a layer 2 solution that supports scalability, transparency, and privacy in transactions.
 
-The Secure Off-chain Transactions structure typically used to make decentralized exchange and social trading platform.
-For example, on DEX, we can handle anonymous token exchange like below.
-  
-![img.png](https://user-images.githubusercontent.com/76861581/103777560-0a093e00-506c-11eb-9c09-5e3d7aec88f9.png)
+The core integration with substrate is through runtime module which leverage our libProof library to generate and verify proof based on BulletProotfs.
+Also there is corresponding substrate client library to interactive with our runtime modules.
 
-```
-Note = (address, order info*)
-{order info can include token contract, amount, order type, etc.}
-Hashednote = hash(note)
-Tx = (Tx generator address, Hashednote, Proof*)
-```
+The main zero-knowledge proof difference between RaiFinance and other projects is we are going to use Bulletproofs instead of zk-SNARKs e.g Groth16 based proving system. Bulletproofs is a proof system that does not require a trusted setup, and
+it is notable for short proofs which are logarithmic in the program size,
+and also for the shortest range. We aim to get much better performance as transactions get larger and larger.
 
-To implement it, we are planning to start using Groth16 proving system with rust based bellman library for now. We might modify some codes to make it run on our system.
+## Project Details
+
+We will implement first phase of RAI as three parts:
+### LibProof
+
+LibProof aim to implemente a general rust based library for bring Bulletproofs
+into substrate runtime. It's like a bridge with wrap function of Bulletproofs.
+
+
+### RAI Runtime Modules
+
+RAI runtime modules will use LibProof to do confidentail transaction and also
+verify the proofs.
+For example, to create a verifiable confidential transaction, we'll implement
+method like  `::create_transaction`, the resulting transaction can be verified
+with `::verify_transaction` method.
+
+### Substrate Client library
+
+polkadot.js based to interactive with ZKP based confidentail transactions
+(and also other RAI runtimes).
+
+## Ecosystem Fit
+
+RAI Finance improves the scalability of DeFi projects through secure off-chain transactions. By leveraging Zero-knowledge Proofs for trustless computation and cryptographic accumulators for immutable data storage, it is possible to provide a layer 2 solution that supports scalability, transparency, and privacy in transactions.
+
 The zkps also can be used on social trading feature on Rai Finance to protect strategies of traders(detailed history of transactions) while revealing the overall performance (e.g. profit rate, volatility, etc) of them.
+
+Though RAI will focus on Bulletproofs based proving system, other ZKP based projects can also reuse our LibProof and substrate client library to provide consistant user experience.
 
 ## Team :busts_in_silhouette:
 
@@ -84,14 +107,14 @@ RAI Finance is led by a group of experts in cryptocurrency, trading and de-centr
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-* **Total Estimated Duration:** 1.7 month
-* **Full-time equivalent (FTE):** 2.5 FTE
+* **Total Estimated Duration:** 3 month
+* **Full-time equivalent (FTE):** 2 FTE
 * **Total Costs:** 0.65 BTC
 
-### Milestone 1 — Implement RAI protocol - Part I
-* **Estimated Duration:** 0.7 month
+### Milestone 1 — Tweak BulletProofs and Implement LibProof  - Part I
+* **Estimated Duration:** 1.5 month
 * **FTE:** 2 FTE
-* **Costs:** 0.25 BTC
+* **Costs:** 0.3 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -99,14 +122,14 @@ RAI Finance is led by a group of experts in cryptocurrency, trading and de-centr
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
-| 1. | Secure Off-chain Transactions module | Improves the scalability of automated market making and yield strategies through secure off-chain transactions. |  
-| 2. | Implement Groth16 proving system | Implement Groth16 with bellman library and integrate it into Substrate system. |  
-| 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Tweak Bulletproofs | Expand current dalek's Bulletproofs implmentation to support  our requirement. |  
+| 2. | Implement LibProof | Implement a LibProof for substrate runtime module to use. |  
 
-### Milestone 2 — Implement RAI protocol - Part II
-* **Estimated Duration:** 1 month
-* **FTE:** 3 FTE
-* **Costs:** 0.4 BTC
+
+### Milestone 2 — Implement RAI confidentail transaction runtime modules - Part II
+* **Estimated Duration:** 1.5 month
+* **FTE:** 2 FTE
+* **Costs:** 0.35 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -114,9 +137,13 @@ RAI Finance is led by a group of experts in cryptocurrency, trading and de-centr
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
-| 1. | Automated Market-Making Variability | RAI Finance liquidity pools can manage a variety of automated market-making (AMM) services to provide liquidity to different digital markets, with the ob- jective being to choose automated market-making algorithms to maximize rev- enue for different asset pairs. |  
-| 2. | User Defined Trading and Yield Strategies module | The transparency in calculation and privacy of implementation provide the foundation for enabling user-defined yield strategies. |  
-| 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | RAI runtime module | Implement substrate module which leverage libProof to do transactions. |
+| 2. | ZKP client library | Implement substrate client library which can interactive with runtime. |
+
+## Future Plans
+
+- Add more DeFi runtime modules to RAI.
+- Make LibProof and ZKP Client more general.
 
 ## Additional Information :heavy_plus_sign:
 
