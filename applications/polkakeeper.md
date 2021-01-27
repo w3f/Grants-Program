@@ -228,11 +228,11 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 | Deliverable   | Description                                                                                |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | License       | All code will be open-sourced under the MIT license and shared in github or gitlab. We welcome contribution and reuse.|
-| Source code   | Public Source code Repository containing a Rust codebase based on the Substrate Node Template would be set up. Programming language will be Rust, using the Substrate Framework.|
-| Source code   | We will provide both inline documentation of the code and a guide that explains how to integrate the Vault, Liquidator and LiquidatorAdaptor pallets. |
-| Source code   | We will write the adapters for a target platform. This release would include Vault and Liquidator pallet outlines, to validate the approach and structure. |
-| UI / Functionality | We deliver design specifications (User stories, mockups) for the user-facing functionality, which would be used in the next phase to build the React UI in Milestone 2.|
-| Community     | We will publish a Medium Article that announces all deliveries and a step by step tutorial for the developer community once evaluation is passed |
+| Source code   | Public source code repository containing a Rust codebase based on the Substrate Node Template would be set up. Programming language will be Rust, using the Substrate Framework.|
+| Source code   | Provide both inline documentation of the code and a guide that explains how to integrate the Vault, Liquidator and LiquidatorAdaptor pallets. |
+| Source code   | Write the adapters for a target platform. This release would include Vault and Liquidator pallet outlines, to validate the approach and structure. |
+| UI / Functionality | Design specifications (Stated in UI Development Segment: User stories, mockups) for the user-facing functionality, which would be used in the next phase to build the React UI in Milestone 2.|
+| Community     | Publish a Medium Article that announces all deliveries and a step by step tutorial for the developer community once evaluation is passed |
 | Documentation | Initial public outline of the documentation |
 
 #### Milestone 2: Alpha Release (0.25 BTC)
