@@ -4,12 +4,11 @@
 
 * **Project Name:** Remote Signing and Slashing Protection
 * **Team Name:** RSSP
-* **Payment Address:** 1cpr
+* **Payment Address:** 0x56B152DeA01025E9F8dF1b41230274424e601c4B USDT
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview:
-
 
 In this proposal, we aim to design and implement a remote signing process within the substrate client for ECDSA, EdDSA, and BLS signature algorithms for Parachains (including a dedicated key management service to be used with the remote signing module). We also aim to provide a remote service which aims to prevent slashings and protect stakers’ funds.
 
@@ -92,12 +91,12 @@ Slashing cases:
 ### Overview
 * **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):**  6 FTE
-* **Total Costs:** 1.0 BTC
+* **Total Costs:** 29000 USDT
 
 ### Milestone 1 — Implementation Design Documents for the Whole architecture
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 0.125 BTC
+* **Costs:** 5000 USDT
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -109,7 +108,7 @@ Slashing cases:
 ### Milestone 2 — Implementation for Remote Signing Services on Parachains (for both internal Testnet and Kusama)
 * **Estimated Duration:** 2 month
 * **FTE:**  4
-* **Costs:** 0.75 BTC
+* **Costs:** 20000USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -119,7 +118,7 @@ Slashing cases:
 ### Milestone 3 — Deployment and Test
 * **Estimated Duration:** 1/2 month
 * **FTE:**  1
-* **Costs:** 0.125 BTC
+* **Costs:** 4000 USDT
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
