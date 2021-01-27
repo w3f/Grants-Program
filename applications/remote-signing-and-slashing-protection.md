@@ -8,7 +8,7 @@
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview:
+## Project Overview :page_facing_up:
 
 In this proposal, we aim to design and implement a remote signing process within the substrate client for ECDSA, EdDSA, and BLS signature algorithms for Parachains (including a dedicated key management service to be used with the remote signing module). We also aim to provide a remote service which aims to prevent slashings and protect stakers’ funds.
 
@@ -35,6 +35,25 @@ First of all, we will define API specifications for remote signing ans slashing 
 
 We plan to implement this proposal similar to Ethereum 2.0 staking service (i.e., Prysm). For each signing algorithm, a protocol buffer contract with methods for listing public keys and signing will be implemented. Still, Polkadot supports three different signature algorithms and we need to repeat these methods for every crypto type, hence we should have at least 6 methods for remote signing.
 
+Following proto methods in RemoteKeystore service would be implemented:
+
+```
+service RemoteKeystore {
+  rpc Sr25519PublicKeys(Sr25519PublicKeysRequest) returns (Sr25519PublicKeysReply);
+  rpc Sr25519GenerateNew(Sr25519GenerateNewRequest) returns (Sr25519GenerateNewReply);
+  rpc Sr25519VrfSign(Sr25519VrfSignRequest) returns (Sr25519VrfSignReply);
+  rpc Ed25519PublicKeys(Ed25519PublicKeysRequest) returns (Ed25519PublicKeysReply);
+  rpc Ed25519GenerateNew(Ed25519GenerateNewRequest) returns (Ed25519GenerateNewReply);
+  rpc EcdsaPublicKeys(EcdsaPublicKeysRequest) returns (EcdsaPublicKeysReply);
+  rpc EcdsaGenerateNew(EcdsaGenerateNewRequest) returns (EcdsaGenerateNewReply);
+
+  /* do we need `insert_unknown`, `supported_keys` and `keys` methods to be implemented? */
+
+  rpc SignWithAny(SignWithAnyRequest) returns (SignWithAnyReply);
+  rpc SignWith(SignWithRequest) returns (SignWithReply);
+  rpc SignWithAll(SignWithAllRequest) returns (SignWithAllReply);
+}
+```
 * **Slashing Protection**
 
 To add slashing prevention we also need to pass payload details into backend. By default, the signing method passes only one message with public key, therefore we need to implement an additional signing method that supports payload and use it for signing. However, it should also be implemented in Polkadot codebase directly (i.e., not in Substrate).
@@ -56,6 +75,23 @@ Slashing cases:
 * **Level 3:** Grandpa signs multiple votes in the same round or on different chains. There is a concurrent equivocation (several validator’s Babe produces multiple blocks for the same slot). As a punishment stake of up to 10% is taken along with removing the validator from the active list in the current era and from all the nominators’ lists of trusted candidates.
 
 * **Level 4:** Misconduct that poses serious security or monetary risk to the system, or mass collusion. Punishment repeats the third level, but with more stake penalized (up to 100%).
+
+Following an example of message buffer would be used for protection:
+
+```
+message RemoteKeystorePayload {
+  /* TODO: "we should also support signing payload" */
+}
+
+message SignWithAnyRequest {
+  string key_type = 1; /* 4 bytes string */
+  string crypto_type = 2; /* might be `sr25519`, `ed25519` or `ecdsa` */
+  repeated bytes public_keys = 3; /* 32-bytes SR/ED/EC public key */
+  bytes message = 4; /* raw message to be signed */
+  RemoteKeystorePayload payload = 5;
+}
+```
+
 ## Team :
 
 ### Team members
@@ -86,7 +122,7 @@ Slashing cases:
 ### Team Code Repos
 * https://github.com/Ankr-network/stkr-polkadot-signer
 
-## Development Roadmap :
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 * **Total Estimated Duration:** 2.5 months
@@ -128,7 +164,7 @@ Slashing cases:
 ## Future Plans
 * We will provide a threshold based signature mechanism for remote signing procedures.
 
-## Additional Information :
+## Additional Information :heavy_plus_sign:
 
 Possible additional information to include:
 * What work has been done so far?
