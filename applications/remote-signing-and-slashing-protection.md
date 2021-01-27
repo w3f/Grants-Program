@@ -78,7 +78,7 @@ Slashing cases:
 * **Stanley Wu:** https://www.linkedin.com/in/stanley-w-5714a4163/
 * **Suleyman KARDAS:** https://www.linkedin.com/in/suleyman-kardas-76a23711/
 * **Dmitry Savonin:**  https://www.linkedin.com/in/dmitry123/
-* **Felipe Faria :** 
+* **Felipe Faria :** https://www.linkedin.com/in/felipe-faria-28371637/
 * **Daniel Ichshuk :**  https://www.linkedin.com/in/danielimkk/
 
 
