@@ -55,8 +55,8 @@ It's also exciting to implement quadratic funding as an on-chain governance modu
 
 ### Overview
 * **Total Estimated Duration:** 2 months
-* **Full-time equivalent (FTE):**  2.5
-* **Total Costs:** 500 DAI
+* **Full-time equivalent (FTE):**  3
+* **Total Costs:** 1000 DAI
 
 ### Milestone 1 -- Implement Quadratic Funding Pallet
 * **Estimated Duration:** 5 weeks
