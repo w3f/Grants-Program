@@ -108,7 +108,7 @@ Slashing cases:
 ### Milestone 2 — Implementation for Remote Signing Services on Parachains (for both internal Testnet and Kusama)
 * **Estimated Duration:** 2 month
 * **FTE:**  4
-* **Costs:** 20000USD
+* **Costs:** 20000 USDT
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
