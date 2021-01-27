@@ -25,7 +25,37 @@ The proposed platform has independently separated the storage and the signing se
   
 ### Ecosystem Fit 
 
-Ankr also aim to provide staking services for Polkadot. Ankr achieves staking services in Eth 2.0 with providing more than 1000 validators. The signing and slashing protection are successfully achieved in Eth 2.0. However, Polkadot aim to support remote signing but did not defined specifications.   In this context, with our proposal, we fill the missing part for remote signing and remote slashing protections.
+Ankr also aim to provide staking services for Polkadot. Ankr achieves staking services in Eth 2.0 with providing more than 1000 validators. The signing and slashing protection are successfully achieved in Eth 2.0. However, by default substrate supports availability to implement remote signing but its not implemented in sources.   In this context, with our proposal, to prevent exposing private keys to Polkadot validators we need to implement remote signing protocol which delegates all signing to remote service.
+
+### Techical Discussions
+
+For the first issue everything is transparent because we just need to create proto contract, implement it in substrate codebase and create MR for Polkadot community.
+
+* **Remote Signing**
+
+We plan to implement this proposal in the same way as prysm implemented it: protocol buffer contract with methods for listing public keys and signing, but we need to repeat these methods for every crypto key type (3 times), so we should have at least 6 methods.
+
+* **Slashing Protection**
+  
+For this issue its a bit more complicated to implement, but we still can do it. To add slashing prevention we need to pass payload details into backend aslo. By defeault sign method passes only message with public key, so we need to implement additional signing method that supports payload and use it for signing, but it should be implement in Polkadot codebase directly (not in substrate).
+
+Polkadot supports next signing payloads:
+
+* **Seconded** (A statement that a validator seconds a candidate) - big structure with a lot of fields contains information about block and other things
+
+* **Valid** (A statement that a validator has deemed a candidate valid) - its just a 256 bit hash
+
+* **Invalid** (A statement that a validator has deemed a candidate invalid) - its also 256 bit hash
+
+Slashing cases:
+
+* **Level 1:** The validator doesn’t pass the health check for the whole epoch (which lasts for  6 hours). As a result, the validator is kicked from the current set of validators and can be punished for up to 0.1% of the stake.
+
+* **Level 2:** Babe produces two or more blocks for the same slot. If a large number of validators go offline along with the culprit. As a result, the validator is marked as inactive for the current era (which lasts for 48 hours) and a penalty of up to 1% of the stake is taken.
+
+* **Level 3:** Grandpa signs multiple votes in the same round or on different chains. There is a concurrent equivocation (Several validator’s Babe produces multiple blocks for the same slot). As a punishment stake of up to 10% is taken along with removing the validator from the active list in the current era and from all the nominators’ lists of trusted candidates.
+
+* **Level 4:** Misconduct that poses serious security or monetary risk to the system, or mass collusion. Punishment repeats the third level, but with more stake penalized (Up to 100%).
 ## Team :
 
 ### Team members
