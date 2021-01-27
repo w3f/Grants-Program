@@ -249,8 +249,11 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 | Deliverable   | Description                                                                                                            |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | License       | All code will be open-sourced under the MIT license and shared in github or gitlab. We welcome contribution and reuse. |
-| Source code          | All Vault, Liquidator and LiquidatorAdaptor and AssetPriceAdapter components are completed and documented, with unit tests at 85% coverage. Includes reference code for implementation in other projects.                                                |
-| UI / Functionality        | All functionality is available (see User Stories), and now includes a reference integration with a real-world (but testnet most likely) chain. Available as source code, but also deployed to an online location for demo purposes.                                         |
+| Source code          | All Vault, Liquidator and LiquidatorAdaptor and AssetPriceAdapter components are completed and documented. |
+| Source code          | Unit tests at 85% coverage. |
+| Source code          | Includes reference code for implementation in other projects. |
+| UI / Functionality        | All functionality is available (see User Stories) including a reference integration with a real-world (but testnet most likely) chain. Available as source code, but also deployed to an online location for demo purposes.                                         |
+| UI / Functionality        | Available as source code and deployed to an online location for demo purposes.           |
 | Documentation | Complete, aimed at developers integrating Polkakeeper                                                                  |
 | Integration   | Adapter pallet templates and example implementations complete and documented                                           |
 | Community     | Launch of Polkakeeper components in Substrate/Polkadot dev community                                                   |
