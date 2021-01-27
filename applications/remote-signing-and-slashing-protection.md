@@ -4,7 +4,7 @@
 
 * **Project Name:** Remote Signing and Slashing Protection
 * **Team Name:** RSSP
-* **Payment Address:** 0x56B152DeA01025E9F8dF1b41230274424e601c4B USDT
+* **Payment Address:** 1E8qYZvEJ1asPdYEGQHwTWxQCGWYbAR79DQxj7iSC9sSKK9 (DOT)
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
@@ -89,14 +89,14 @@ Slashing cases:
 ## Development Roadmap :
 
 ### Overview
-* **Total Estimated Duration:** 2 months
-* **Full-time equivalent (FTE):**  6 FTE
-* **Total Costs:** 29000 USDT
+* **Total Estimated Duration:** 2.5 months
+* **Full-time equivalent (FTE):**  10 FTE
+* **Total Costs:** 29000 USD
 
 ### Milestone 1 — Implementation Design Documents for the Whole architecture
 * **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 5000 USDT
+* **FTE:**  2
+* **Costs:** 6000 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -107,8 +107,8 @@ Slashing cases:
 
 ### Milestone 2 — Implementation for Remote Signing Services on Parachains (for both internal Testnet and Kusama)
 * **Estimated Duration:** 2 month
-* **FTE:**  4
-* **Costs:** 20000 USDT
+* **FTE:**  6
+* **Costs:** 18000 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -117,8 +117,8 @@ Slashing cases:
 
 ### Milestone 3 — Deployment and Test
 * **Estimated Duration:** 1/2 month
-* **FTE:**  1
-* **Costs:** 4000 USDT
+* **FTE:**  2
+* **Costs:** 6000 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
