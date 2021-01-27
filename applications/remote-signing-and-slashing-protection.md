@@ -81,7 +81,6 @@ Slashing cases:
 * **Felipe Faria :** 
 * **Daniel Ichshuk :**  https://www.linkedin.com/in/danielimkk/
 
- 
 
 
 ### Team Code Repos
@@ -113,7 +112,7 @@ Slashing cases:
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | Code | Providing a crypto library that supports ECDSA, EdDSA, and BLS signature algorithms |
+| 0a. | Code | Providing a crypto library that supports ECDSA, Ed25519, and sr25519 signature algorithms |
 | 0b. | Code | Providing a remote server that gives both signing services and slashing protection mechanisms |
 
 ### Milestone 3 — Deployment and Test
