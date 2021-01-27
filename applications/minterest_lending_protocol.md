@@ -64,13 +64,13 @@ UI is based on React. We have a draft application to facilitate testing. Exact U
 
 The Minterest Protocol is designed to future proof itself for what is now a rapidly developing DeFi sector and specifically with its cross-chain functionality has the flexibility to support a wide variety of stable coin financial markets, including soon-to-be launched Polkadot based projects like Acala and Equilibrium. As evidenced by other similar protocols like Compound and Aave, Minterest’s value proposition will fundamentally support the creation of liquidity for such offerings and especially so given gas prices and throughoutput on Ethereum. The protocol also acts as a fungible asset for the Polkadot network given its ability to be utilised by the Polkadot dApp community.
 
-The Protocol stays between two groups of projects and can benefit to both of them. 
+The Protocol stays between two groups of projects and can benefit to both of them.
 
-First, there are applications which provide their own stable coin. [Laminar](https://github.com/laminar-protocol/laminar-chain) and specifically the Flow and the Collateralized Synthetic Asset protocols are designed to turn fiat funds into synthetic tokens - fTokens. [Acala](https://github.com/AcalaNetwork/Acala) mints aUSD in exchange for different types of assets. [Centrifuge](https://github.com/centrifuge/) allows turning real-world assets like mortgages into stable coins. [Stafi](https://docs.stafi.io/) wraps stacked assets into a tradable form (rToken) - enabling both getting interest from the main net and trading at the same time. [Bandot](https://github.com/bandotorg/Bandot) transforms assets to stable coin. The Minterest protocol may enlist these stable coins and support lending and borrowing. Users of the network will have more tools for farm yeilding and accruing interest.
+First, there are applications which provide their own stable coin. [Laminar](https://github.com/laminar-protocol/laminar-chain) and specifically the Flow and the Collateralized Synthetic Asset protocols are designed to turn fiat funds into synthetic tokens - fTokens. [Acala](https://github.com/AcalaNetwork/Acala) mints aUSD in exchange for different types of assets. [Centrifuge](https://github.com/centrifuge/) allows turning real-world assets like mortgages into stable coins. [Stafi](https://docs.stafi.io/) wraps stacked assets into a tradable form (rToken) - enabling both getting interest from the main net and trading at the same time. [Bandot](https://github.com/bandotorg/Bandot) transforms assets to stable coin. The Minterest protocol may enlist these stable coins and support lending and borrowing. Users of the network will have more tools for farm yielding and accruing interest.
 
-The second group of applications are DEXes. [Zenlink Protocol](https://github.com/zenlinkpro/pallet-zenlink), [Polkadex](https://github.com/Polkadex-Substrate/Polkadex/tree/master), [SubDEX](https://github.com/subdarkdex), [HydraDX](https://github.com/galacticcouncil/hack.HydraDX-node) are a decentralized exchanges, which will be utilized by the Protocol in two ways. First of all, the Minterest will monitor several DEXes for price changes, providing security for the protocol and fare rates for users. Second, the Protocol will sell and buy liquidity to balance liquidation logic.
+The second group of applications are DEXes. [Zenlink Protocol](https://github.com/zenlinkpro/pallet-zenlink), [Polkadex](https://github.com/Polkadex-Substrate/Polkadex/tree/master), [SubDEX](https://github.com/subdarkdex), [HydraDX](https://github.com/galacticcouncil/hack.HydraDX-node) are decentralized exchanges, which will be utilized by the Protocol in two ways. First of all, the Minterest will monitor several DEXes for price changes, providing security for the protocol and fare rates for users. Second, the Protocol will sell and buy liquidity to balance liquidation pools.
 
-A bit apart stay infrastructure projects like [OAX Parrot](https://github.com/OAXFoundation/parrot), [Plasm](https://www.plasmnet.io/) and [Moonbeam](https://github.com/PureStake/moonbeam). Our plan is to patner with Plasm, as an example, to have access to Compound-based liquidity. 
+A bit apart stay infrastructure projects like [OAX Parrot](https://github.com/OAXFoundation/parrot), [Plasm](https://www.plasmnet.io/) and [Moonbeam](https://github.com/PureStake/moonbeam). Our plan is to patner with Plasm, as an example, to have access to Compound-based liquidity.
 
 ## Team :busts_in_silhouette:
 
@@ -159,13 +159,13 @@ A pool of highly talented, committed people passionate about our business and th
 
 - **Total Estimated Duration:** 1 year
 - **Full-time equivalent (FTE):** 10 FTE tech team for the busiest periods
-- **Total Costs:** 3 BTC
+- **Total Costs:** 0.97 BTC
 
 ### Milestone 1 — Implement functional economics model on Substrate.
 
-- **Estimated Duration:** 3 months (the milestone is a WIP)
-- **FTE:** 3
-- **Costs:** 0.43 BTC
+- **Estimated Duration:** 3 months (the milestone is a WIP, to be finished in the beginning of February)
+- **FTE:** 4
+- **Costs:** 0.50 BTC
 
 | Number | Deliverable                    | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------ | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -182,11 +182,11 @@ A pool of highly talented, committed people passionate about our business and th
 | 7.     | Substrate chain                | The chain will support calls to do 4 main operations - lend assets, withdraw assets, borrow and payout assets. Each call goes to a Controller, which first validates it and updates all current rates and accrues interest for the signed user. This is done through invoking the Math module for formulas, Pool and User Balance modules for data and support functions. When this is done, the Controller invokes required functions on Pool and User Balance to store incoming changes - adding or removing liquidity from the protocol. The Admin Panel stays a bit aside as it is mostly independent Extrinsics, which allow to store flags and values ruling the economics of a specific pool. |
 | 5.     | Docker                         | We will provide a dockerfile as an alternative to the Make file to make the local deployment easier.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-### Milestone 2 — Oracles and Governance token.
+### Milestone 2 — Automated Liquidation Model and Governance token.
 
-- **Estimated Duration:** 2 months
-- **FTE:** 3
-- **Costs:** 0.4 BTC
+- **Estimated Duration:** 2 months (The timeframe is February-March)
+- **FTE:** 6
+- **Costs:** 0.47 BTC
 
 | Number | Deliverable                  | Specification                                                                                                                                                                                                                                                                                                                                                |
 | ------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -200,87 +200,22 @@ A pool of highly talented, committed people passionate about our business and th
 | 4.     | Substrate chain              | The chain should now do two more things - take aggregated prices from the outer world to be used in calculations and also distribute MINT tokens for between users.                                                                                                                                                                                          |
 | 5.     | Docker                       | We will provide a dockerfile to demonstrate the full functionality of our chain                                                                                                                                                                                                                                                                              |
 
-### Milestone 3 — Automated Liquidation Model, SWAPs.
-
-- **Estimated Duration:** 1 month
-- **FTE:** 10
-- **Costs:**
-
-| Number | Deliverable                   | Specification                                                                                                                                                                                                                                                                                                                                |
-| ------ | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0a.    | License                       | Apache 2.0                                                                                                                                                                                                                                                                                                                                   |
-| 0b.    | Documentation                 | We will update the public Protocol description with related data.                                                                                                                                                                                                                                                                            |
-| 0c.    | Testing Guide                 | The test coverage is around 100% (both unit and integration tests). The Make file has a command to run them. The tests cover SWAPs use cases based on stubbed Oracles data and Liquidation cases, caused by fluctuation of assets (both the collateral and the borrowed part).                                                               |
-| 0d.    | Article/Tutorial              | The team is ready to write an article describing the automated liquidation flows.                                                                                                                                                                                                                                                            |
-| 1.     | Substrate module: SWAPs       | This module will allow users to swap assets inside the Protocol (with no need to get the liquidity out of the system). Currently the team envisions this feature based on a separate pool of liquidity, which supports swaps. The Protocol will require automated ways of keeping the pool stable (which includes communication with DeXes). |
-| 2.     | Substrate module: Liquidation | The Protocol will utilise the Liquidation module to track and liquidate insolvent positions. The liquidity will be bought by the Protocol itself using a designated liquidity pool. DeXes will be utilised again to keep a relevant pool of liquidity stable.                                                                                |
-| 3.     | React-based UI                | The UI should now support SWAPs actions and display relevant info about liquidations.                                                                                                                                                                                                                                                        |
-| 4.     | Substrate chain               | The chain should now track and liquidate relevant positions automatically. SWAPs module should communicate with Oracles and Pools and User Balances to exchange assets.                                                                                                                                                                      |
-| 5.     | Docker                        | We will provide a dockerfile to demonstrate the full functionality of our chain                                                                                                                                                                                                                                                              |
-
-### Milestone 4 — A bridge to Ethereum , Wallets integration.
-
-- **Estimated Duration:** 2 months
-- **FTE:** 10
-- **Costs:** 0.5 BTC
-
-| Number | Deliverable                       | Specification                                                                                                                                                                                                                                                                 |
-| ------ | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0a.    | License                           | Apache 2.0                                                                                                                                                                                                                                                                    |
-| 0b.    | Documentation                     | We will update the public Protocol description with related data.                                                                                                                                                                                                             |
-| 0c.    | Testing Guide                     | The test coverage is around 100% (both unit and integration tests) and covers use cases of Ethereum bridge - transfer liquidity of different types back and forth from the Protocol. Front end tests cover main user flows and integrations of the wallets with stubbed data. |
-| 0d.    | Article/Tutorial                  | The team is ready to write an article describing the bridge solution and wallet integrations.                                                                                                                                                                                 |
-| 1.     | Substrate module: Ethereum Bridge | We are planning to partner with Plasm or Parastate (to be decided yet) to get a reliable, cheap and fast bridge to Ethereum, to enable liquidity transfers.                                                                                                                   |
-| 2.     | React-based UI                    | React applications should have integration of top 10 wallets on the market. The list to be decided.                                                                                                                                                                           |
-| 3.     | Substrate chain                   | The chain should now be connected to a real (test net for a beginning) Compound instance and transfer liquidity from and to it (using a wallet).                                                                                                                              |
-| 4.     | Docker                            | We will provide a dockerfile to demonstrate the full functionality of our chain                                                                                                                                                                                               |
-
-### Milestone 5 — DOT bridge, Bitcoin bridge, more Wallets.
-
-- **Estimated Duration:** 2 months
-- **FTE:** 10
-- **Costs:** 0.5 BTC
-
-| Number | Deliverable                      | Specification                                                                                                                                                                                                                                                    |
-| ------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0a.    | License                          | Apache 2.0                                                                                                                                                                                                                                                       |
-| 0b.    | Documentation                    | We will update the public Protocol description with related data.                                                                                                                                                                                                |
-| 0c.    | Testing Guide                    | The test coverage is around 100% (both unit and integration tests) and covers use cases of Bitcoin and DOT bridges - transfer liquidity of different types back and forth from the Protocol. Front end test coverage is supplemented with cases for new wallets. |
-| 0d.    | Article/Tutorial                 | The team is ready to write an article describing the bridge solution and wallet integrations.                                                                                                                                                                    |
-| 1.     | Substrate module: Bitcoin bridge | We are in search of a bridge provider to enable direct Bitcoin transfers in the Protocol (no need for WBTC).                                                                                                                                                     |
-| 2.     | Substrate module: DOT bridge     | Considering achieving a Polkadot parachain as our main goal, we expect this module to take care of DOT liquidity transfers. We will require it to both enlist DOT as an asset on the market and to actually pay for transactions.                                |
-| 3.     | React-based UI                   | The React application should have integration of more crypto wallets. The list is to be decided.                                                                                                                                                                 |
-| 4.     | Substrate chain                  | The chain should now be connected to Polkadot and Bitcoin testnet with an ability to switch to production networks.                                                                                                                                              |
-| 5.     | Docker                           | We will provide a dockerfile to demonstrate the full functionality of our chain                                                                                                                                                                                  |
-
-### Milestone 6 — Flash Loans Platform, Governance.
-
-- **Estimated Duration:** 2 months
-- **FTE:** 10
-- **Costs:** 0.5 BTC
-
-| Number | Deliverable                           | Specification                                                                                                                                                                                                                                                                                                                                 |
-| ------ | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0a.    | License                               | Apache 2.0                                                                                                                                                                                                                                                                                                                                    |
-| 0b.    | Documentation                         | We will update the public Protocol description with related data.                                                                                                                                                                                                                                                                             |
-| 0c.    | Testing Guide                         | The test coverage is around 100% (both unit and integration tests) and covers use cases of Governance usage. Example - voting or voting supplied with liquidity. Same for the Flash Loans platform - tests should cover triggering of one specific action or a chain of actions.                                                              |
-| 0d.    | Article/Tutorial                      | The team is ready to write an article describing the Flash Loans Platform and our modification of Governance pallet.                                                                                                                                                                                                                          |
-| 1.     | Substrate module: Governance          | This module most probably would be a variation or a modification of one of Substrate governance pallets.                                                                                                                                                                                                                                      |
-| 2.     | Substrate module: Flash Loan Platform | This module will include an incentivized (by a fee from Flash Loans users) pool of liquidity, provided by the Protocol lenders, and a set of predefined actions (like going to a specific DeEx and exchanging a defined amount of one asset to another). Second part is an ability to create custom chains of actions for interested clients. |
-| 3.     | React-based UI                        | The React application should now support Flash Loans Platform tools and Governance flow.                                                                                                                                                                                                                                                      |
-| 4.     | Substrate chain                       | The chain should now be able to process Flash Loans requests and rollback loans, if a request takes too much time. Governance module stays aside from the main Protocol flows, since we are not going to incorporate 'code suggestion', rather do polling and implement the changes with the help of an internal team.                        |
-| 5.     | Docker                                | We will provide a dockerfile to demonstrate the full functionality of our chain                                                                                                                                                                                                                                                               |
-
 ## Future Plans
 
-Our plan is to enlist more popular assets (including those which are not yet public) in the Protocol.
-Minterest should later on become fully decentralized and governed by the community.
+Our plan is to enlist more popular assets (including those which are not yet public) in the Protocol and also provide more tools for trading, like SWAPs and Flash Loans. One of the priorities is to make the Protocol fully independent in the end.
+
+A short roadmap of the Protocol development:
+
+|                   Feature                   | Details                                                                                                                                                                                     |     Timeframe     |
+| :-----------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------: |
+|              Oracles and SWAPs              | Oracles system is designed to monitor DEXes and provide the Protocol correct prices on assets in use. SWAPs is a mechanism which allows on the spot exchange of assets inside the Protocol. |       April       |
+| A bridge to Ethereum , Wallets integration. | We need to bridge to Etherium to get access to different assets inside Compound and other protocols. The plan is to utilise Plasm.                                                          |    May - June     |
+|  DOT bridge, Bitcoin bridge, more Wallets.  | More bridgets to enlist more assets.                                                                                                                                                        |   July - August   |
+|                 Governance                  | The Protocol needs a governance platform for the community and stakeholders.                                                                                                                |     September     |
+|            Flash Loans Platform             | Tools for Flash Loans - a constructor, a list of pre-set actions for traiding within one chain block.                                                                                       | November-December |
 
 ## Additional Information :heavy_plus_sign:
 
 The team has an MVP with basic working token economics. It is not yet deployed, but available for an internal demo.
 
-Our partners:
-
-- Plasm
-- Parastate
+We negotiate with Plasm and Moonbeam as part of our efforts in finding bridges to other networks.
