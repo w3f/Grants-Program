@@ -64,6 +64,14 @@ UI is based on React. We have a draft application to facilitate testing. Exact U
 
 The Minterest Protocol is designed to future proof itself for what is now a rapidly developing DeFi sector and specifically with its cross-chain functionality has the flexibility to support a wide variety of stable coin financial markets, including soon-to-be launched Polkadot based projects like Acala and Equilibrium. As evidenced by other similar protocols like Compound and Aave, Minterest’s value proposition will fundamentally support the creation of liquidity for such offerings and especially so given gas prices and throughoutput on Ethereum. The protocol also acts as a fungible asset for the Polkadot network given its ability to be utilised by the Polkadot dApp community.
 
+The Protocol stays between two groups of projects and can benefit to both of them. 
+
+First, there are applications which provide their own stable coin. [Laminar](https://github.com/laminar-protocol/laminar-chain) and specifically the Flow and the Collateralized Synthetic Asset protocols are designed to turn fiat funds into synthetic tokens - fTokens. [Acala](https://github.com/AcalaNetwork/Acala) mints aUSD in exchange for different types of assets. [Centrifuge](https://github.com/centrifuge/) allows turning real-world assets like mortgages into stable coins. [Stafi](https://docs.stafi.io/) wraps stacked assets into a tradable form (rToken) - enabling both getting interest from the main net and trading at the same time. [Bandot](https://github.com/bandotorg/Bandot) transforms assets to stable coin. The Minterest protocol may enlist these stable coins and support lending and borrowing. Users of the network will have more tools for farm yeilding and accruing interest.
+
+The second group of applications are DEXes. [Zenlink Protocol](https://github.com/zenlinkpro/pallet-zenlink), [Polkadex](https://github.com/Polkadex-Substrate/Polkadex/tree/master), [SubDEX](https://github.com/subdarkdex), [HydraDX](https://github.com/galacticcouncil/hack.HydraDX-node) are a decentralized exchanges, which will be utilized by the Protocol in two ways. First of all, the Minterest will monitor several DEXes for price changes, providing security for the protocol and fare rates for users. Second, the Protocol will sell and buy liquidity to balance liquidation logic.
+
+A bit apart stay infrastructure projects like [OAX Parrot](https://github.com/OAXFoundation/parrot), [Plasm](https://www.plasmnet.io/) and [Moonbeam](https://github.com/PureStake/moonbeam). Our plan is to patner with Plasm, as an example, to have access to Compound-based liquidity. 
+
 ## Team :busts_in_silhouette:
 
 ### Team members
@@ -157,7 +165,7 @@ A pool of highly talented, committed people passionate about our business and th
 
 - **Estimated Duration:** 3 months (the milestone is a WIP)
 - **FTE:** 3
-- **Costs:** 0.5 BTC
+- **Costs:** 0.43 BTC
 
 | Number | Deliverable                    | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------ | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -178,7 +186,7 @@ A pool of highly talented, committed people passionate about our business and th
 
 - **Estimated Duration:** 2 months
 - **FTE:** 3
-- **Costs:** 0.5 BTC
+- **Costs:** 0.4 BTC
 
 | Number | Deliverable                  | Specification                                                                                                                                                                                                                                                                                                                                                |
 | ------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -196,7 +204,7 @@ A pool of highly talented, committed people passionate about our business and th
 
 - **Estimated Duration:** 1 month
 - **FTE:** 10
-- **Costs:** 0.5 BTC
+- **Costs:**
 
 | Number | Deliverable                   | Specification                                                                                                                                                                                                                                                                                                                                |
 | ------ | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
