@@ -76,7 +76,7 @@ Slashing cases:
 
 ### Team LinkedIn Profiles
 * **Stanley Wu:** https://www.linkedin.com/in/stanley-w-5714a4163/
-* **Suleyman KARDAS:** https://www.linkedin.com/in/s%C3%BCleyman-karda%C5%9F-76a23711/
+* **Suleyman KARDAS:** https://www.linkedin.com/in/suleyman-kardas-76a23711/
 * **Dmitry Savonin:**  https://www.linkedin.com/in/dmitry123/
 * **Felipe Faria :** 
 * **Daniel Ichshuk :**  https://www.linkedin.com/in/danielimkk/
