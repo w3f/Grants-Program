@@ -75,7 +75,7 @@ At any point in time, Algo Bonds can be bought from the protocol in exchange for
 
 #### Expansionary Policy
 
-If the price of Algo Cash is observed to be higher than (1+ε) DAI, the system mints totalSupply *(oraclePrice-1) number of new Algo Cash tokens. The issued Algo Cash is either deposited to the Treasury or the Boardroom, depending on the Algo Cash balance of the Treasury.
+If the price of Algo Cash is observed to be higher than (1+ε) aUSDT, the system mints totalSupply *(oraclePrice-1) number of new Algo Cash tokens. The issued Algo Cash is either deposited to the Treasury or the Boardroom, depending on the Algo Cash balance of the Treasury.
 
 If the Treasury has a balance above 1,000 Algo Cash, then it is logical to assume that either all bonds have been already redeemed, or no bond holder is currently willing to perform a redemption.Either way, this signals that the demand for bond redemption do not exist at this time, and thus the freshly minted Algo Cash is given to the Boardroom contract.
 
