@@ -237,8 +237,11 @@ IOST | TOMOCHAIN | SOLANA | ELROND | NULS | MOONSTAKE | INJECTIVE PROTOCOL | CRU
 | Deliverable | Description                                                                                                                            |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | License     | All code will be open-sourced under the MIT license and shared in github or gitlab. We welcome contribution and reuse.                 |
-| Source code| Vault, Liquidator and LiquidatorAdaptor pallets all implemented with basic (<30%) unit test coverage. Also including a Reference runtime for testing. A React project is added for the UI side, with documentation on how to run it locally and contribute |
-| UI / Functionality        | Proof-of-Concept implementation with basic functionality. All functionality is available, but excludes integration with real-world chains (only works with local mock environment).                                                |
+| Source code| Vault, Liquidator and LiquidatorAdaptor pallets all implemented with basic (<30%) unit test coverage.|
+| Source code| Include a Reference runtime for testing. |
+| Source code| React project added for the UI side, with documentation on how to run it locally and contribute |
+| UI / Functionality        | Proof-of-Concept implementation with basic functionality. |
+| UI / Functionality        | All functionality available, excludes integration with real-world chains (only works with local mock environment).       |
 | Tooling     | Docker container that allows developers to get started quickly|
 | Community   | Opening the codebase and inviting open-source developers to submit PRs.|
 
