@@ -74,12 +74,15 @@ Slashing cases:
 * **Registered Address:** 609 Mission St 2nd floor, San Francisco, CA 94105, United States
 * **Registered Legal Entity:** Ankr.com
 
-### Team's experience
-* **Stanley Wu:** Based in San Franc
-* **Suleyman KARDAS:** Based in Turkey. He is working on the security and privacy in Blockchain.  
-* **Dmitry Savonin:** Based in San Franc
-* **Felipe Faria :** Based in San Franc
-* **Daniel Ichshuk :** Based in San Franc
+### Team LinkedIn Profiles
+* **Stanley Wu:** https://www.linkedin.com/in/stanley-w-5714a4163/
+* **Suleyman KARDAS:** https://www.linkedin.com/in/s%C3%BCleyman-karda%C5%9F-76a23711/
+* **Dmitry Savonin:**  https://www.linkedin.com/in/dmitry123/
+* **Felipe Faria :** 
+* **Daniel Ichshuk :**  https://www.linkedin.com/in/danielimkk/
+
+ 
+
 
 ### Team Code Repos
 * https://github.com/Ankr-network/stkr-polkadot-signer
