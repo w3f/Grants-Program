@@ -105,7 +105,7 @@ Estimated to be ~1 month total
 | 1. | Polkadot plugin for ChainJS standard | Create wallet, Create multisig wallet, Construct transaction, Transfer tokens |
 
 ## Future Plans
-Once we have ChainJS, ORE ID provides four major benefits to businesses on Polkadot:
+Once we have ChainJS, our intention is to deploy our flagship ORE ID product to Polkadot. ORE ID is a service that helps enterprises migrate their user base to blockchains at scale. ORE ID provides four major benefits to businesses on Polkadot:
 * Consumer friendly user experience - including social and email login
 * API for mass migration of large existing databases of users
 * API and javascript libraries that make it easy for developers to build on Polkadot
