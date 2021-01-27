@@ -219,6 +219,41 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
 
   
   
+### Interface Specification
+
+#### 1. Fast access to Web 3.0 nodes through the Naas service provided by API Protocol.
+
+```
+- desc： When developers deploy and test their Web3.0 APPs, they need to use third-party services to access the Web3.0 network due to cost issues.
+
+- params： Project ID, accesstoken, specific request
+
+- return：Return the corresponding request result
+
+```
+
+#### 2. Access reference data, such as btc prices, through the Reference Data API interface provided by API Protocol.
+
+```
+- desc： During the operation of smart contracts, sometimes they need off-chain reference data to make corresponding judgments and calculations, so they need to read off-chain data.
+
+- params： APIDataID
+
+- return：Return the corresponding data and data validity time
+
+```
+
+
+#### 3. Access reference data, such as btc prices, through the Reference Data API interface provided by API Protocol.
+
+```
+- desc： Smart contracts themselves are event-driven programs, usually driven by users sending transactions, but sometimes smart contracts need to do certain operations when a certain condition is met, so they need external event APIs..
+
+- params： API EventID，Conditions for event triggering
+
+- return：Event ID
+
+```
 
   
   
