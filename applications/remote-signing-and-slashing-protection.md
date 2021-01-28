@@ -131,8 +131,8 @@ message SignWithAnyRequest {
 
 ### Milestone 1 — Implementation Design Documents for the Whole architecture
 * **Estimated Duration:** 1/2 month
-* **FTE:**  2
-* **Costs:** 6000 USD
+* **FTE:**  1.5
+* **Costs:** 4500 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -153,8 +153,8 @@ message SignWithAnyRequest {
 
 ### Milestone 3 — Deployment and Test
 * **Estimated Duration:** 1 month
-* **FTE:**  2
-* **Costs:** 6000 USD
+* **FTE:**  2.5
+* **Costs:** 7500 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
