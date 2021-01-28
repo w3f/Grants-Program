@@ -66,7 +66,7 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
   
   When using Blockchain as a service, developers can use the node service provided by the API Protocol ecosystem to achieve timely access to the Ethereum, IPFS network, and Polkadot ecological nodes。
   
-  At the time of authorization, the user's project ID and private key registered in the API Protocol platform are used to complete security control, and the user's information is managed centrally at the beginning, and the decentralization will be completed at a later stage by using the Poca ecological user information management project.
+  At the time of authorization, the user's project ID and private key registered in the API Protocol platform are used to complete security control, and the user's information is managed centrally at the beginning, and the decentralization will be completed at a later stage by using the Polkadot ecological user information management project.
   ```python
   Complete security control using Project ID：
   
@@ -83,7 +83,7 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
    :JSON-RPC OVER HTTPS
    :JOSN-RPC OVER WebSocket
    ```
-   A request time example:
+   A request  example:
    ```
    $ curl -X POST \
    -H "Content-Type: application/json" \
@@ -101,11 +101,11 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
    
   API as a Service allows service providers to monetize their API services, and by providing an API marketplace in the API Protocol ecosystem, API service utilizers can receive revenue and incentives in the form of API Protocol native tokens.
   
-  The types of APIs are initially divided into the API Protocol system: data services and event services.
+  The types of APIs are initially divided in the API Protocol system: data services and event services.
   
   ###### Data API Service Access Process.
   
-  The data API service provider encapsulates its service in the form of microservice, and then registers through API Protocol's decentralized marketplace, and then after the community of API Protoco ecosystem votes to reach a certain number of votes, the API service provider registers a proxy service contract in API Protocol's consensus network. The contract contains a request for data to be processed, and then sends a request event to the API service provider, which receives the request, does the corresponding processing operations, and returns the result to the proxy contract, which sends the data to the service requester.
+  The data API service provider encapsulates its service in the form of microservice, and then registers through API Protocol's decentralized marketplace, and then after the community of API Protocol ecosystem votes to reach a certain number of votes, the API service provider registers a proxy service contract in API Protocol's consensus network. The contract contains a request for data to be processed, and then sends a request event to the API service provider, which receives the request, does the corresponding processing operations, and returns the result to the proxy contract, which sends the data to the service requester.
   
   ![img](https://raw.githubusercontent.com/APIProtocol/research/main/data%20API%20service.png)
 
@@ -177,11 +177,11 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
   
   ![img](https://raw.githubusercontent.com/APIProtocol/research/main/substrate.png)
   
-  API Protocol is a blockchain project built on top of Substate 2.0. The construction of the underlying ecology of polkadot ecology is crucial to the success of API Protocol, API Protocol network is connected to polkadot ecology as a parachain of polkadot ecology, sharing the security and performance of polkadot ecology. The API Protocol network is connected to Polkadot as a parachain of Polkadot ecosystem, sharing the network security and performance brought by Polkadot's underlying consensus security and Substrate2.0, API Protocol is committed to become the underlying API monetization infrastructure to promote the development of Web 3.0. API Protocol will also join Polkadot's Relay chain at the right time to better serve developers in the Polkadot ecosystem.
+  API Protocol is a blockchain project built on top of Substate 2.0. The API Protocol network is connected to Polkadot as a parachain of Polkadot ecosystem, sharing the network security and performance brought by Polkadot's underlying consensus security and Substrate2.0, API Protocol is committed to become the underlying API monetization infrastructure to promote the development of Web 3.0. API Protocol will also join Polkadot's Relay chain at the right time to better serve developers in the Polkadot ecosystem.
   
   #### Off-Chain Features
   
-  As traditional external API services based on the prophecy machine are typically used to listen for blockchain events and trigger tasks based on conditions. When these tasks are executed, the execution results are submitted to the blockchain in the form of transactions. While this approach works, it still has some shortcomings in terms of security, scalability, and basic efficiency. This is why Substrate 2.0 has developed important features: off-chain functionality, including Off-Chain Worker, Off-Chain Storage, and Off-Chain Indexing, which help smart contracts gain access to reference data and event data, and API Protocol will use these features to help smart contracts gain access to external data through the API. 
+  As traditional external API services based on the oracle machine are typically used to listen for blockchain events and trigger tasks based on conditions. When these tasks are executed, the execution results are submitted to the blockchain in the form of transactions. While this approach works, it still has some shortcomings in terms of security, scalability, and basic efficiency. This is why Substrate 2.0 has developed important features: off-chain functionality, including Off-Chain Worker, Off-Chain Storage, and Off-Chain Indexing, which help smart contracts gain access to reference data and event data, and API Protocol will use these features to help smart contracts gain access to external data through the API. 
   
   ![img]( https://raw.githubusercontent.com/APIProtocol/research/main/off-chain.png)
   
