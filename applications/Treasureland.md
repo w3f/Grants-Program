@@ -75,28 +75,26 @@ Manyofourteammatescome from gaming industries with more than 10 years of experie
 
 ### Overview
 
-* **Total Estimated Duration:** 15 weeks
+* **Total Estimated Duration:** 12 weeks
 * **Full-time equivalent (FTE):** 4
-* **Total Costs:** 24K DAI
+* **Total Costs:** 18K DAI
 
 ### Milestone 1  — NFT  protocol, trading, auctioning,minting
 
-* **Estimated Duration:** 12 weeks
+* **Estimated Duration:** 9 weeks
 * **FTE:** 4
-* **Costs:** 18K DAI
+* **Costs:** 12K DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache License 2.0 | 
 | 0b. | Documentation | Documents containing the description of whole architecture design for NFTStore. |
 | 0c. | Testing Guide | We will provide a full test suite and guide for project |
-| 1a. | Pallet_nft_721 | Complete the development of pallet_nft_721 and realize the ERC721 standard. |
-| 1b. | Pallet_nft_1155 | Complete the development of pallet_nft_1155 and realize the ERC1155 standard. |
-| 2a. | Pallet_treasureland_trade | trade module include: ```createOrder```, ```cancelOrder```, ```buy```  |
-| 2b. | Pallet_treasureland_auction | auction module include: ```startAuction```, ```bid```,```addVerifyAuctioneer``` |
-| 2c. | Pallet_treasureland_minting | minting module include: ```mint``` |
-| 3. | Front end | Implement front-end functions as designed |
-| 4. | Test | Functional test and bug fix |
+| 1a. | Pallet_treasureland_trade | trade module include: ```createOrder```, ```cancelOrder```, ```buy```  |
+| 1b. | Pallet_treasureland_auction | auction module include: ```startAuction```, ```bid```,```addVerifyAuctioneer``` |
+| 1c. | Pallet_treasureland_minting | minting module include: ```mint``` |
+| 2. | Front end | Implement front-end functions as designed |
+| 3. | Test | Functional test and bug fix |
 
 
 ### Milestone 2  —  API function
