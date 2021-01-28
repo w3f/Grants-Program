@@ -61,7 +61,7 @@ However, please note that the images are only representational. The actual UI wi
 
 #### Our Core Details
 
-Our core functionality will be built into a smart-contract. The functionality our product line will use will be supported by the following objects and functions.
+Our smart contract will be built using WebAssembly (WASM) for use within the FRAME Contracts Pallet. Our product line will be supported by the following objects and methods.
 
 Gridlokr supports 3 types of locking transactions:
 
@@ -131,6 +131,8 @@ Our closest competitor is Trustswap. They have developed token locking capabilit
 * Our products will be compatible with substrate-built parachains
 * The core capabilities we are planning to offer extend far beyond any competitor in the space
 * We are taking a customer-focused approach and will focus on delivering a simple UX/UI that lowers the technical barrier of entry into the crypto space
+
+Vesting Module, built on the Substrate framework, provides a simple means for placing a linear release on an account’s locked balance.  Whilst this offers some of the capabilities that we intend to build for Gridlokr and provides a degree of validation that our end goal is technically achievable, the limitations of the Vesting module do not offer sufficient flexibility for our use case.
 
 ## Team :busts_in_silhouette:
 
