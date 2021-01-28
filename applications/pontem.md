@@ -153,7 +153,7 @@ Contributions to other projects (Libra & Cosmos SDK):
 | 3. | RPC                           | RPC to publish/execute modules and scripts. |
 | 4. | Documentation                 | Supplement documentation with all features we provided: txs, compilers, smart contracts examples.   |
 | 5. | Deployment of prod env        | Spin up instances on the top of DigitalOcean/Kubernetes cluster, set an auto deploy etc. |
-| 6. | Toolset adoption              | Adopt current disassembler, resource viewer for pallet. |
+| 6. | disassembler adoption         | Adopt current disassembler for Substrate node. |
 | 7. | Unit-tests                    | Cover 85% of pallet functional with unit tests. | 
 
 ## Future Plans
