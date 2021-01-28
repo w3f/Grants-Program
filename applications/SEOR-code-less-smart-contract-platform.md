@@ -28,7 +28,7 @@ It is a platform that supports one-click parameterized deployment of standard sm
 
 ### Project Details 
 
-####Architecture
+#### Architecture
 
 The platform includes standard contract sets, on-chain deployers, multi-chain DApp, multi-chain SDK, platform open protocol, etc. The outline of the system architecture is shown below:  
 
@@ -51,7 +51,7 @@ A front-end library that supports the platform's interaction with different publ
 Through standard protocols, other developers are allowed to access the platform, providing more users with multi-chain codeless access capabilities.  
 
 
-####Interaction preliminary design
+#### Interaction preliminary design  
 According to our preliminary assumptions, users can deploy contracts that meet their needs on the designated blockchain system in just two steps.
 * Step1 - Through the smart contract market, choose the smart contract that meets the demand
 ![](https://seor.io/static/arch/market.png)  
@@ -59,7 +59,7 @@ According to our preliminary assumptions, users can deploy contracts that meet t
 * Step2 - Enter the required parameters to deploy
 ![](https://seor.io/static/arch/deploy.png)  
 
-####Advantages 
+#### Advantages 
 
 * Blockchain and smart contract technology can be used without contract coding, which reduces the threshold for using blockchain technology.  
 
@@ -67,7 +67,7 @@ According to our preliminary assumptions, users can deploy contracts that meet t
 
 * Unify the blockchain access interface, smooth out the technical differences of heterogeneous block links, and implement a set of codes to access public chain systems with different technical architectures.  
 
-####Overall plan
+#### Overall plan
 
 We expect to implement a codeless smart contract platform that can support multiple chains through four phases.  
 * Implement some popular standard parameterized multi-chain contracts, such as ERC20, ERC721, etc. At the same time complete the basic contract deployer, multi-chain support SDK and a multi-chain DApp that allows users to operate.  
