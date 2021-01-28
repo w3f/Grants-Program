@@ -51,6 +51,10 @@ this to implement the backend needed for Polkadot/Kusama interaction.
 - Reclaim
   - If the campaign fails, or when the slot lease ends, users can reclaim their DOT/KSM with the
     `crowdloan.withdraw` function.
+- Low Fidelity Mockups
+  - [Crowdloans Index](https://drive.google.com/file/d/1gOy5sT9EMpmBKeJ826qlsQ-fNpdpNCrj/view?usp=sharing)
+  - [Crowdloans Show](https://drive.google.com/file/d/1Fd7xViuwj2mhiCQyeQtOY-RTopBXSYm7/view?usp=sharing)
+  - [Crowdloans Join](https://drive.google.com/file/d/16iW5WV0jFGmeyz7eQc0_SB-uR4o_dNM5/view?usp=sharing)
 
 ### Ecosystem Fit
 
@@ -126,7 +130,7 @@ DOT/KSM in the future without trusting that Polkastarter will exist.
 - **Full-time equivalent (FTE):** 2 FTE
 - **Total Costs:** 15,000 DAI
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 — Implement Substrate Modules
 
 - **Estimated Duration:** 1 month
 - **FTE:** 1
@@ -142,7 +146,7 @@ DOT/KSM in the future without trusting that Polkastarter will exist.
 | 2.     | Wallet Connection | We will be able to connect to the Polkadot JS Extension wallet.                                                                                      |
 | 3.     | UI                | We will have a primitive UI for teams and users to interact with.                                                                                    |
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Additional features
 
 - **Estimated Duration:** 1 month
 - **FTE:** 1
