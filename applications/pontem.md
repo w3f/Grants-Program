@@ -136,6 +136,7 @@ Contributions to other projects (Libra & Cosmos SDK):
 | 5. | Standard Library          | Move Standard Library Module adoption for Polkadot. |
 | 6. | Execute Transaction       | Create a transaction type to execute Move scripts. |
 | 7. | Unit-tests                | Cover 60% of the pallet functional with unit tests. | 
+| 8. | Resource viewer           | Resource viewer to view Move resources from Substrate node storage. |
 
 ### Milestone 3 — Beta version & Ecosystem
 
