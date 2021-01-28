@@ -61,7 +61,7 @@ However, please note that the images are only representational. The actual UI wi
 
 #### Our Core Details
 
-Our smart contract will be built using WebAssembly (WASM) for use within the FRAME Contracts Pallet. Our product line will be supported by the following objects and methods.
+Our smart contract will be built using any language that can compile down to WebAssembly (WASM), with a preference for RUST for use within the FRAME Contracts Pallet. Our product line will be supported by the following objects and methods.
 
 Gridlokr supports 3 types of locking transactions:
 
@@ -140,7 +140,7 @@ Vesting Module, built on the Substrate framework, provides a simple means for pl
 * Imran Ashfaq - CEO / Vision Owner
 * Anis Ahmed Chohan - CTO / Solution Architect
 * Lead Tester to be assigned
-* Mid-Weight Smart contract dev to be assignedwhat
+* Mid-Weight Smart contract dev to be assigned
 * Senior Designer: Maccy Adalid
 
 ### Contact
