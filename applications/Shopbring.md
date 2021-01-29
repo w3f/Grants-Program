@@ -47,7 +47,7 @@ Consumers who shop do not directly use cryptocurrency to make payments on the e-
 
 * **No permission is required.** Shopbring does not require KYC(Know Your Customers), anyone who has a Polkadot account can issue commissioned shopping orders or provide shopping services.
 * **Decentralized arbitrators.** In order to maintain the healthy development of the platform, we have established a arbitrator mechanism. When users have disputes in the commissioned shopping process, any party can report violations, and the system randomly assigns a arbitrator to assist in arbitration.
-* **Credit incentive mechanism.** In order to stimulate more users to shop frequently at Shopbring, we have established a credit growth system, and airdrop tokens will be rewarded in proportion to the credit value in each period. Completing the commissioned shopping normally will increase the credit value of both parties. On the contrary, fraud will reduce the credit value, and the arbitrator participating in the dispute arbitration will increase the credit value.
+* **Credit incentive mechanism.** In order to stimulate more users to shop frequently at Shopbring, we have established a credit incentive mechanism. After the commissioned shopping is completed, the system converts the amount into a credit value and adds it to both parties of the transaction by verifying the receipt. Accounts with credits can receive native tokens as rewards.
 * **Private information security**. The order details will not be recorded on chain, only the hash of the order data is stored on chain.
 * **Support multi cryptocurrency payment.** Multi cryptocurrency payment is supported in the commissioned shopping, which makes cryptocurrency more widely used.
 
@@ -69,13 +69,20 @@ For the healthy development of Shopbring, we design a credit value growth model 
 * Open and transparent credit data can help users choose trading partners.
 * In Polkadot ecosystem, it provides credit data reference for other parachains.
 
-In order to encourage the Shopbring users to increase the credit value, the system will determine the number of airdrop tokens according to the average credit rating of the overall users in each cycle. The higher the average credit value, the greater the total number of airdrop tokens. The number of airdrop tokens obtained by users = the number of single credit value airdrop tokens * the user credit value.
+In order to incentivize platform users to increase their credit value, the system initially sets an equation of credit value and native token value (this equation can be changed through community governance in the future), assuming: 1 credit value = 0.001 native token.
+
+After the user completes the commissioned shopping and the shopping receipt is verified, the credit value of the account can be increased. The program will calculate the number of native tokens obtained by the account based on the new credit value and record it in the reward mapping table. When users receive rewards, a portion of the rewards are donated to the treasury.
 
 #### Arbitrator
 
 Normal user registration arbitrators need to freeze a certain native token as an application condition. The `council` will review the applicant's information, and more than half of the members will vote to become an arbitrator.
 
 The arbitrator’s obligation is that when a common user has a dispute during the commissioned shopping, either party will appeal to the system. The arbitrator can choose the case to intervene in the dispute. During the waiting period, up to `M` arbitrators can sign up to participate in the dispute. After the waiting period ends, the system will randomly select `N`($N < M$, and `N` is an odd number) arbitrators to actually participate in the dispute. If there are less than `N` arbitrators actually participating, the `council` will participate in dispute arbitration. After the arbitration is completed, the `treasury` will pay wages to the participating arbitrators.
+
+> Note:
+> In order to establish a good arbitration mechanism in the early stage of the network, the council will consider people with customer service experience to be arbitrators when reviewing applications. It is also considered that there are not many commissioned shopping disputes in the early stage of the network, so the wages of the arbitrator will be fixed and paid by the treasury. This can reduce the cost of both parties to the transaction and encourage more arbitrators to actively participate in dispute resolution.
+>
+>When the network's credit incentive mechanism is perfected, all accounts with credit value have been rewarded with native tokens. At this time, both parties need to deposit a certain native tokens (also can be deposited by other account) for commissioned shopping. Once a dispute occurs during the process, the party who loses the arbitration will pay the arbitrators.
 
 #### Inspector
 
@@ -84,6 +91,24 @@ Shopbring introduces the role of inspector to verify whether the shopping proces
 * The user submits the application for registering inspector, then waits for the council to review. When more than half of the members of the council vote for, the review is passed.
 * The inspector needs to provide an API service to verify the shopping receipt. Shopbring's off-chain worker will submit the unverified shopping receipt to the inspector's API service, and finally the inspector will submit the verification result to the chain.
 * Shopbring will have several certified inspectors. After more than half of the inspectors verify the authenticity of the shopping receipt, the value of the commodity can be converted into a credit value.
+
+**How do off-chain worker communicate with the inspector's service?**
+
+We define the structure of shopping receipt like this, and is stored in off-chain order system.
+
+| Parameter      | Type     | Description                                                                                   |
+|----------------|----------|-----------------------------------------------------------------------------------------------|
+| area           | u32      | Country or area code.                                                                         |
+| receipt_type   | u8       | Receipt type: 0: e-invoice, 1: physical bill, need to be photographed and uploaded.           |
+| payload        | Vec\<u8> | E-invoice information is saved in json format according to different national standards.      |
+| receipt_attach | Vec\<u8> | The link to the physical bill attachment requires manual verification.                        |
+| receipt_hash   | Vec\<u8> | The receipt's data will be encoded using SCALE-codec and finally be hashed using blake2b-256. |
+| order_hash     | Vec\<u8> | Order hash, used to associate original order detail.                                         |
+
+1. The registered inspector can bind his verification API on-chain.
+2. Because there may be many types of receipt formats, we store the detail of the receipt off-chain, and after encoding the data, submit the `receipt hash` to the chain for storage.
+3. The verification system of the inspector needs to connect to the off-chain order system, and send the `receipt hash` to it to fetch the detail of the receipt. The verification system completes verification of the receipt data and records the result.
+4. The off-chain worker sends the `receipt hash` to the verification API, fetchs the verification result, and submits the transaction signed by the inspector account to the chain.
 
 #### Invitation Reward
 
@@ -118,9 +143,7 @@ There are several stages in the commissioned shopping process:
 
 Each stage has an operation time limit. If the time-out occurs, there are the following processing conditions:
 
-* No shopping agents timed out in response to the commissioned shopping order, the order will be closed automatically, and the locked payment amount and tip will be returned to the consumer.
-* When the consumer exceeds the time limit for submitting the delivery address, the order is automatically closed, and the order tip is paid to the shopping agent.
-* When the shopping agent exceeds the time limit for confirming that the merchant has shipped, the order will be closed automatically, the deposit of the agent will be paid to the consumer, and the locked payment amount and tip will be returned to the consumer.
+* When the shopping agent accepts the commissioned shopping order and exceeds the shopping limit time, the order is automatically closed, the agent's deposit is paid to the consumer, and the locked payment amount and tip are returned to the consumer.
 * When the consumer exceeds the time limit for confirming receipt, the order is completed automatically, and the payment amount and tip are transferred to the shopping agent.
 * When a consumer applies for a return, but the shopping agent exceeds the time limit for submitting the return address, the order is automatically closed, the shopping agent pays the deposit to the consumer, and the locked payment amount and tip are returned to the consumer.
 * When the consumer exceeds the time limit for submitting the return shipping order, the order is completed automatically, and the payment amount and tip are transferred to the shopping agent.
