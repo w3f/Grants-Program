@@ -74,6 +74,8 @@ The second group of applications are DEXes. [Zenlink Protocol](https://github.co
 
 A bit apart are infrastructure projects like [OAX Parrot](https://github.com/OAXFoundation/parrot), [Plasm](https://www.plasmnet.io/) and [Moonbeam](https://github.com/PureStake/moonbeam). Our plan is to partner with Plasm, as an example, to have access to Compound-based liquidity.
 
+Last but not the least, we build the Protocol valuing user experience. Our aim is to make DeFi available for average person with close to none knowledge about crypto assets.
+
 ## Team :busts_in_silhouette:
 
 ### Team members
@@ -159,7 +161,7 @@ A pool of highly talented, committed people passionate about our business and th
 
 ### Overview
 
-- **Total Estimated Duration:** 1 year
+- **Total Estimated Duration:** 5 months
 - **Full-time equivalent (FTE):** 10 FTE tech team for the busiest periods
 - **Total Costs:** 0.97 BTC
 
@@ -208,13 +210,12 @@ Our plan is to enlist more popular assets (including those which are not yet pub
 
 A short roadmap of the Protocol development:
 
-|                   Feature                   | Details                                                                                                                                                                                     |     Timeframe     |
-| :-----------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------: |
-|              Oracles and SWAPs              | Oracles system is designed to monitor DEXes and provide the Protocol correct prices on assets in use. SWAPs is a mechanism which allows on the spot exchange of assets inside the Protocol. |       April       |
-| A bridge to Ethereum , Wallets integration. | We need to bridge to Etherium to get access to different assets inside Compound and other protocols. The plan is to utilise Plasm.                                                          |    May - June     |
-|  DOT bridge, Bitcoin bridge, more Wallets.  | More bridgets to enlist more assets.                                                                                                                                                        |   July - August   |
-|                 Governance                  | The Protocol needs a governance platform for the community and stakeholders.                                                                                                                |     September     |
-|            Flash Loans Platform             | Tools for Flash Loans - a constructor, a list of pre-set actions for traiding within one chain block.                                                                                       | November-December |
+|                                   Feature                                   | Details                                                                                                                                                                                     |     Timeframe     |
+| :-------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------: |
+|                           Oracles and SWAPs logic                           | Oracles system is designed to monitor DEXes and provide the Protocol correct prices on assets in use. SWAPs is a mechanism which allows on the spot exchange of assets inside the Protocol. |       April       |
+| Integrate with third party bridges to Ethereum, Bitcoin, other networks. Support top 15 popular wallets. | We need to bridge to other networks to get access to liquidity. A list of networks and partners still to be defined. Enlisting DOT, Compound-based assets and Bitcoin is the first priority.                                                     |    May - August
+|                                 Governance                                  | The Protocol needs a governance platform for the community and stakeholders.                                                                                                                |     September     |
+|                            Flash Loans Platform                             | Tools for Flash Loans - a constructor, a list of pre-set actions for traiding within one chain block.                                                                                       | November-December |
 
 ## Additional Information :heavy_plus_sign:
 
