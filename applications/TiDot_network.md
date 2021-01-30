@@ -76,7 +76,7 @@ https://github.com/TiDot-netowrk
 
   
 
-### Milestone 1 — Implement  Implement raft protocol for txpool
+### Milestone 1 — Implement raft protocol for txpool
 * **Estimated Duration:** 2 month
 * **FTE:**  5 
 * **Costs:**   29000 DAI
