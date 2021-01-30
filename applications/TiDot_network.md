@@ -15,13 +15,16 @@ POA is not as efficient as raft.
 
 ### Project Details 
 
-current situation：
-  Parachain collator is not managed. When multiple collators run, only one of them will be connected to the corresponding parachain. When the collator fails, no collator will work normally.
+####current situation：
 
-Problem-solving ideas:
- By adding collator managers, raft consensus can efficiently complete this process. The raft consensus consists of multiple followers and a leader, and the leader can register to the corresponding parachain for normal communication. When the collator in the leader state fails, the raft consensus immediately selects a new leader for validator registration, ensuring high-speed packaging and verification of parachain transactions.
+Parachain collator is not managed. When multiple collators run, only one of them will be connected to the corresponding parachain. When the collator fails, no collator will work normally.
+
+####Problem-solving ideas:
+
+By adding collator managers, raft consensus can efficiently complete this process. The raft consensus consists of multiple followers and a leader, and the leader can register to the corresponding parachain for normal communication. When the collator in the leader state fails, the raft consensus immediately selects a new leader for validator registration, ensuring high-speed packaging and verification of parachain transactions.
 	 
-Key part description：
+####Key part description：
+
 ![raft](https://img.imgdb.cn/item/600fe0883ffa7d37b388fbf0.png)
 
 Collator controls the transaction pool, and each parachain has only one collator to interact with the parachain.So we can let the leader in the raft group be responsible for interacting with the verification node that relaychain allocates the parachain。In the raft protocol, there is a leader and many fallow nodes. The collator is responsible for the function of packaging transactions. Currently, there is only one collator in cumulus that will successfully become a collator of the parachain.
@@ -32,7 +35,8 @@ The leader has the most comprehensive message in the transaction pool. The colla
 
 ![code](https://img.imgdb.cn/item/600fef5e3ffa7d37b390f13f.png)
 
-Detailed solution:
+####Detailed solution:
+
 1. Only the collator in the leader state registers the validator of the parachain, and reports to the validator the candidates who have packaged the transaction in real time
 2. A txs message is synchronized between the leader and the follower, and the libp2p network is used for the message service of the remaining tx/block.(txs refers to the transaction queue that the leader is about to pack into blocks)
 3. After the follower receives the txs sent by the leader, the tx that exists in its txpool but is not broadcast to the leader.Broadcast again.
