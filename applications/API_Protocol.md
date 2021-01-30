@@ -278,7 +278,7 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
   
  ## Team members
 
-* haijun - CTO/Project Lead  
+* haijun - CTO  
 * Alex - Developer  
 
 ## Contact
