@@ -16,6 +16,15 @@ Starry is developing a substrate-based NFT ecosystem with support for creating s
 ### Project Details 
 The Starry Protocol contains four parts: Pallet_NFT, Pallet_SubNFT, Pallet_EX, Frontend
 
+### Ecosystem Fit 
+What is the difference between SubNFT and Erc-1155?
+
+erc-1155's multiple NFT is Semi-fungible tokens, these tokens use same token_id.
+
+SubNFT splits single NFT into different NFTs, each SubNFT has its own token_id. As a result, subNFT is even rarer and suitable as a collector's item.
+
+For example, we can use Semi-fungible tokens to create general admission tickets for a concert, and then use SubNFT to create commemorative tickets.
+
 #### Architecture
 
 
