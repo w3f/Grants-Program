@@ -24,7 +24,7 @@ Below is the whole RAI technical stack architecture:
     -------------------------------
     | Substrate Core              |
     -------------------------------
-    | RAI Runtime Modules         |  <---- This grant
+    | RAI Runtime Modules         |  <---- Part of this grant
     -------------------------------
     | LibProof                    |  <---- This grant
     -------------------------------
