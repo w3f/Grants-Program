@@ -15,6 +15,15 @@
 RAI Finance is a Defi protocol designed for decentralized cross-chain asset. Decentralized Finance (DeFi) has grown exponentially and transactions, services and usage of DeFi have increased significantly and become more widespread, while DeFi still suffer from poor user experience compared with CEX products.
 RAI Finance introduces a zero knowledge proof layer2 solution to Polkadot ecossystem with the aim to give user a state of the art DeFi experience.
 
+The core integration with substrate is through runtime module which leverage our libProof library to generate and verify proof based on BulletProotfs.
+Also there is corresponding substrate client library to interactive with our runtime modules.
+
+The main zero-knowledge proof difference between RaiFinance and other projects is we are going to use Bulletproofs instead of zk-SNARKs e.g Groth16 based proving system. Bulletproofs is a proof system that does not require a trusted setup, and
+it is notable for short proofs which are logarithmic in the program size,
+and also for the shortest range. We aim to get much better performance as transactions get larger and larger.
+
+## Project Details
+
 Below is the whole RAI technical stack architecture:
 
     -------------------------------
@@ -31,15 +40,6 @@ Below is the whole RAI technical stack architecture:
     | BulletProofs                |
     -------------------------------
 
-
-The core integration with substrate is through runtime module which leverage our libProof library to generate and verify proof based on BulletProotfs.
-Also there is corresponding substrate client library to interactive with our runtime modules.
-
-The main zero-knowledge proof difference between RaiFinance and other projects is we are going to use Bulletproofs instead of zk-SNARKs e.g Groth16 based proving system. Bulletproofs is a proof system that does not require a trusted setup, and
-it is notable for short proofs which are logarithmic in the program size,
-and also for the shortest range. We aim to get much better performance as transactions get larger and larger.
-
-## Project Details
 
 We will implement first phase of RAI as three parts:
 ### LibProof
