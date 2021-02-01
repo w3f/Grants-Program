@@ -10,7 +10,7 @@
 
 ## Project Overview :page_facing_up:
 
-In this proposal, we aim to design and implement a remote signing process within the substrate client for ECDSA, EdDSA, and BLS signature algorithms for Parachains (including a dedicated key management service to be used with the remote signing module). We also aim to provide a remote service which aims to prevent slashings and protect stakers’ funds.
+In this proposal, we aim to design and implement a remote signing process within the Polkadot codebase client for ECDSA, EdDSA, and BLS signature algorithms for Parachains (including a dedicated key management service to be used with the remote signing module). We also aim to provide a remote service which aims to prevent slashings and protect stakers’ funds.
 
 ### Overview
 
@@ -18,27 +18,92 @@ The validators play a crucial role on PoS networks due to operating stable, reli
 
 The proposed platform has independently separated the storage and the signing services from the validators and has provided a remote signing process through secure gRPC connections. This allows validators to create more robust and flexible operations, while providing additional security measures against possible attacks. Hence, it creates a more resilient solution compared to all other existing solutions, and in case of a compromise or uptime issues of the validator, Stkr can easily migrate to another validator without affecting users’ funds.
 
+The following diagram is used for ETH Staking Service that utilizes remote signing services
 
+![Overall Architecture](https://firebasestorage.googleapis.com/v0/b/test-sensor-veri.appspot.com/o/photo_2021-02-01_20-52-21.jpg?alt=media&token=d9c61b09-a5c2-4b04-8b82-3da2b09fed96)
+
+* **Key Management:** Keys are securely and remotely generated and stored in a distributed manner.
+* **Key Agent:** It securely storer partial keys and partially signs incoming data.
+* **Sidecar:** It is an agent that initiate the node with credentials, url and etc. 
+* **Sidecar Management:** It manages sidecar, their task and keys
+* **Sidecar Gateway:** It routes sidecar in a secure way.
+* **Reward Calculation:** It periodically calculates how much a sidecar earns.
+* **Message Bus:** Event streaming platform for high-performance data pipelines.
+
+
+In this proposal, we will provide similar architecture for remote server that handles signing and protection against slashing.
 ### Project Details
 * An overview of the technology stack to be used
-  * **Blockchain**: Rust/Substrate/Cumulus/Docker
+  * **Blockchain**: Polkadot Codebase
 
 ### Ecosystem Fit
 
-Ankr also aims to provide staking services for Polkadot. Ankr (https://eth2.ankr.com/) achieves staking services in Ethereum 2.0 with providing more than 1000 validators. The underlying signing and slashing protection mechanism have been successfully achieved in Etherum 2.0. However, some interfaces under the substrate modules are available to implement remote signing but the modules are empty and have not been implemented yet. Therefore, it is crucial to implement remote signing protocol which delegates all signing to a remote service. With this proposal, we aim to provide a service to prevent exposing private keys to Polkadot validators while validating remotely.
+Ankr also aims to provide staking services for Polkadot. Ankr (https://eth2.ankr.com/) achieves staking services in Ethereum 2.0 with providing more than 1000 validators. The underlying signing and slashing protection mechanism have been successfully achieved in Etherum 2.0. However, some interfaces under the Polkadot codebase modules are available to implement remote signing but the modules are empty and have not been implemented yet. Therefore, it is crucial to implement remote signing protocol which delegates all signing to a remote service. With this proposal, we aim to provide a service to prevent exposing private keys to Polkadot validators while validating remotely.
 
-### Techical Discussions
+### Open Source/License
 
-First of all, we will define API specifications for remote signing ans slashing protections. Then, for API services, we will create proto contract and implement it in substrate codebase and finally create MR for the Polkadot community.
+This work is licensed under the Apache License 2.0, which means that you are free to get and use it for commercial and non-commercial purposes.
 
-* **Remote Signing**
+### Technical Discussions
+
+First, we will define API specifications for remote signing ans slashing protections. Then, for API services, we will create proto contract and implement it in Polkadot codebase and finally create MR for the Polkadot community.
+
+* **Why we need Payload**
+
+The Polkadot nodes have already provided the local slashing prevention. However, in case of using container such as Kubernetes for making high availability of the nodes, this protection would not be sufficient because during restart of the node, two images of the same node can be available and may sign the same or different data that would cause slashing. Therefore, we propose to use remote signing services where all incoming data are checked against slashing status before being signed. In this respect, we need to provide the payload data that generates the signing data. Namely, for each signing request, the necessary metadata that generates the request should also be given. This data will also be stored in a persistence database for future slashing prevention. Although Polkadot nodes themselves have protection mechanisms against slashing, our proposal brings additional security protection against that kind of issue.
+
+* **Remote Signing Service**
 
 We plan to implement this proposal similar to Ethereum 2.0 staking service (i.e., Prysm). For each signing algorithm, a protocol buffer contract with methods for listing public keys and signing will be implemented. Still, Polkadot supports three different signature algorithms and we need to repeat these methods for every crypto type, hence we should have at least 6 methods for remote signing.
 
 Following proto methods in RemoteKeystore service would be implemented:
 
 ```
+syntax = "proto3";
+package parity.polkadot.signer;
+
+option go_package = ".;proto";
+
+enum RemoteKeystoreError {
+  REMOTE_KEYSTORE_ERROR_UNKNOWN = 0;
+  REMOTE_KEYSTORE_ERROR_KEY_NOT_SUPPORTED = 1;
+  REMOTE_KEYSTORE_ERROR_PAIR_NOT_FOUND = 2;
+  REMOTE_KEYSTORE_ERROR_VALIDATION_ERROR = 3;
+  REMOTE_KEYSTORE_ERROR_UNAVAILABLE = 4;
+  REMOTE_KEYSTORE_ERROR_OTHER = 5;
+}
+
+/**
+ * Possible Key Types:
+ * - /// Key type for Babe module, built-in. Identified as `babe`.
+ * - pub const BABE: KeyTypeId = KeyTypeId(*b"babe");
+ * - /// Key type for Grandpa module, built-in. Identified as `gran`.
+ * - pub const GRANDPA: KeyTypeId = KeyTypeId(*b"gran");
+ * - /// Key type for controlling an account in a Substrate runtime, built-in. Identified as `acco`.
+ * - pub const ACCOUNT: KeyTypeId = KeyTypeId(*b"acco");
+ * - /// Key type for Aura module, built-in. Identified as `aura`.
+ * - pub const AURA: KeyTypeId = KeyTypeId(*b"aura");
+ * - /// Key type for ImOnline module, built-in. Identified as `imon`.
+ * - pub const IM_ONLINE: KeyTypeId = KeyTypeId(*b"imon");
+ * - /// Key type for AuthorityDiscovery module, built-in. Identified as `audi`.
+ * - pub const AUTHORITY_DISCOVERY: KeyTypeId = KeyTypeId(*b"audi");
+ * - /// Key type for staking, built-in. Identified as `stak`.
+ * - pub const STAKING: KeyTypeId = KeyTypeId(*b"stak");
+ * - /// Key type for equivocation reporting, built-in. Identified as `fish`.
+ * - pub const REPORTING: KeyTypeId = KeyTypeId(*b"fish");
+ * - /// A key type ID useful for tests.
+ * - pub const DUMMY: KeyTypeId = KeyTypeId(*b"dumy");
+ */
+
+message RemoteKeystoreSignature {
+  bytes signature = 1;
+  string crypto_type = 2; /* type of crypto, might be `sr25519`, `ed25519` or `ecdsa` */
+  bytes public_key = 3; /* 32-bytes SR/ED/EC public key */
+  RemoteKeystoreError error = 4;
+}
+
 service RemoteKeystore {
+
   rpc Sr25519PublicKeys(Sr25519PublicKeysRequest) returns (Sr25519PublicKeysReply);
   rpc Sr25519GenerateNew(Sr25519GenerateNewRequest) returns (Sr25519GenerateNewReply);
   rpc Sr25519VrfSign(Sr25519VrfSignRequest) returns (Sr25519VrfSignReply);
@@ -53,8 +118,114 @@ service RemoteKeystore {
   rpc SignWith(SignWithRequest) returns (SignWithReply);
   rpc SignWithAll(SignWithAllRequest) returns (SignWithAllReply);
 }
+
+message Sr25519PublicKeysRequest {
+  string key_type = 1; /* 4 bytes string */
+}
+message Sr25519PublicKeysReply {
+  repeated bytes public_keys = 1; /* 32-bytes SR public keys */
+}
+
+message Sr25519GenerateNewRequest {
+  string key_type = 1; /* 4 bytes string */
+  string seed = 2; /* [optional] */
+}
+message Sr25519GenerateNewReply {
+  bytes public_key = 1; /* 32-bytes SR public key */
+  RemoteKeystoreError error = 2;
+}
+
+message Sr25519VrfSignRequest {
+  string key_type = 1; /* 4 bytes string */
+  bytes public_key = 2; /* 32-bytes SR public key */
+  message VrfTranscriptValue {
+    oneof value {
+      bytes bytes_value = 100;
+      uint64 uint64_value = 101;
+    }
+  }
+  message VrfTranscriptData {
+    string label = 1; /* label of data, like `slot number` or `chain randomness` */
+    repeated VrfTranscriptValue values = 2;
+  }
+  VrfTranscriptData transcript_data = 3;
+}
+message Sr25519VrfSignReply {
+  message VrfSignature {
+    bytes output = 1; /* 32-bytes VRF output */
+    bytes challenge = 2; /* 32-bytes challenge */
+    bytes proof = 3; /* 32-bytes Schnorr proof */
+  }
+  VrfSignature signature = 1;
+  RemoteKeystoreError error = 2;
+}
+
+message Ed25519PublicKeysRequest {
+  string key_type = 1; /* 4 bytes string */
+}
+message Ed25519PublicKeysReply {
+  repeated bytes public_keys = 1; /* 32-bytes ED public keys */
+}
+
+message Ed25519GenerateNewRequest {
+  string key_type = 1; /* 4 bytes string */
+  string seed = 2; /* [optional] */
+}
+message Ed25519GenerateNewReply {
+  bytes public_key = 1; /* 32-bytes ED public key */
+  RemoteKeystoreError error = 2;
+}
+
+message EcdsaPublicKeysRequest {
+  string key_type = 1; /* 4 bytes string */
+}
+message EcdsaPublicKeysReply {
+  repeated bytes public_keys = 1; /* 32-bytes EC public keys */
+}
+
+message EcdsaGenerateNewRequest {
+  string key_type = 1; /* 4 bytes string */
+  string seed = 2; /* [optional] */
+}
+message EcdsaGenerateNewReply {
+  bytes public_key = 1; /* 32-bytes EC public key */
+  RemoteKeystoreError error = 2;
+}
+
+message SignWithAnyRequest {
+  string key_type = 1; /* 4 bytes string */
+  string crypto_type = 2; /* might be `sr25519`, `ed25519` or `ecdsa` */
+  repeated bytes public_keys = 3; /* 32-bytes SR/ED/EC public key */
+  bytes message = 4; /* raw message to be signed */
+  RemoteKeystorePayload payload = 5;
+}
+message SignWithAnyReply {
+  RemoteKeystoreSignature signature = 1;
+}
+
+message SignWithRequest {
+  string key_type = 1; /* 4 bytes string */
+  string crypto_type = 2; /* might be `sr25519`, `ed25519` or `ecdsa` */
+  bytes public_key = 3; /* 32-bytes SR/ED/EC public key */
+  bytes message = 4; /* raw message to be signed */
+  RemoteKeystorePayload payload = 5;
+}
+message SignWithReply {
+  RemoteKeystoreSignature signature = 1;
+}
+
+message SignWithAllRequest {
+  string key_type = 1; /* 4 bytes string */
+  string crypto_type = 2; /* might be `sr25519`, `ed25519` or `ecdsa` */
+  repeated bytes public_keys = 3; /* 32-bytes SR/ED/EC public key */
+  bytes message = 4; /* raw message to be signed */
+  RemoteKeystorePayload payload = 5;
+}
+message SignWithAllReply {
+  repeated RemoteKeystoreSignature signatures = 1;
+}
 ```
-* **Slashing Protection**
+* **Slashing Protection Service**
 
 To add slashing prevention we also need to pass payload details into backend. By default, the signing method passes only one message with public key, therefore we need to implement an additional signing method that supports payload and use it for signing. However, it should also be implemented in Polkadot codebase directly (i.e., not in Substrate).
 
@@ -79,17 +250,82 @@ Slashing cases:
 Following an example of message buffer would be used for protection:
 
 ```
+
 message RemoteKeystorePayload {
-  /* TODO: "we should also support signing payload" */
+  /* Babe Messages */
+  message BlockProposal {
+    bytes parent_hash = 1; /* bytes32 */
+    string number = 2; /* uint256 */
+    bytes state_root = 3; /* bytes32 */
+    bytes extrinsics_root = 4; /* bytes32 */
+    bytes digest = 5; /* ? */
+  }
+  /* Grandpa Messages */
+  message GrandpaPreVote {
+    bytes target_hash = 1;
+    bytes target_number = 2;
+  }
+  message GrandpaPreCommit {
+    bytes target_hash = 1;
+    bytes target_number = 2;
+  }
+  message GrandpaPrimaryPropose {
+    bytes target_hash = 1;
+    bytes target_number = 2;
+  }
+  message GrandpaMessage {
+    oneof message {
+        GrandpaPreVote pre_vote = 100;
+        GrandpaPreCommit pre_commit = 101;
+        GrandpaPrimaryPropose primary_propose = 102;
+    }
+    uint64 round_number = 1;
+    uint64 set_id = 2;
+  }
+  /* Validator Messages */
+  message AvailabilityBitfield {
+    bytes bits = 1;
+  }
+  message CommittedCandidateReceipt {
+    message CandidateDescriptor {
+      uint32 para_id = 1;
+      bytes relay_parent = 2;
+      bytes collator = 3;
+      bytes persisted_validation_data_hash = 4;
+      bytes pov_hash = 5;
+      bytes erasure_root = 6;
+      bytes signature = 7;
+      bytes para_head = 8;
+    }
+    CandidateDescriptor descriptor = 1;
+    message CandidateCommitments {
+      repeated bytes upward_messages = 1;
+      message OutboundHrmpMessage {
+        uint32 recipient = 1;
+        bytes data = 2;
+      }
+      repeated OutboundHrmpMessage horizontal_messages = 2;
+      bytes new_validation_code = 3;
+      bytes head_data = 4;
+      uint32 processed_downward_messages = 5;
+      uint32 hrmp_watermark = 6;
+    }
+    CandidateCommitments commitments = 2;
+  }
+  message CandidateHash {
+    bytes hash = 1;
+  }
+  oneof message {
+    AvailabilityBitfield availability_bitfield = 100;
+    CommittedCandidateReceipt seconded = 101;
+    CandidateHash valid = 102;
+    CandidateHash invalid = 103;
+  }
+  uint32 session_index = 1;
+  bytes parent_hash = 2;
+  uint32 validator_index = 3;
 }
 
-message SignWithAnyRequest {
-  string key_type = 1; /* 4 bytes string */
-  string crypto_type = 2; /* might be `sr25519`, `ed25519` or `ecdsa` */
-  repeated bytes public_keys = 3; /* 32-bytes SR/ED/EC public key */
-  bytes message = 4; /* raw message to be signed */
-  RemoteKeystorePayload payload = 5;
-}
 ```
 
 ## Team :
@@ -129,29 +365,19 @@ message SignWithAnyRequest {
 * **Full-time equivalent (FTE):**  10 FTE
 * **Total Costs:** 30000 USDT
 
-### Milestone 1 — Implementation Design Documents for the Whole architecture
-* **Estimated Duration:** 1/2 month
-* **FTE:**  1.5
-* **Costs:** 4500 USDT
+### Milestone 1 — Implementation for Remote Signing Services on Parachains (for both internal Testnet and Kusama)
+* **Estimated Duration:** 2.5 month
+* **FTE:**  7.5
+* **Costs:** 24500 USDT
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | Providing a specification which covers all the technical requirements and its limitations |
-| 0c. | Documentation | Providing an architectural design |
-| 0d. | Documentation | Defining all the required functions for remote signing in gRPC proto |
+| 0a. | Code | Proto files that will be used to in both Polkadot codebase and Remote server.|
+| 0b. | Code | Crypto service that imlements (a) with the use of Polkadot crypto library (ECDSA, EDDSA, sr25519).|
+| 0c. | Code | Providing a remote server that gives both signing services and slashing protection mechanisms. This server will contain several microservices that consume metadata and do their operation. On the top of them, Kafka will be used to handle large number request and pipelining.|
 
-### Milestone 2 — Implementation for Remote Signing Services on Parachains (for both internal Testnet and Kusama)
-* **Estimated Duration:** 2 month
-* **FTE:**  6
-* **Costs:** 18000 USDT
 
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | Code | Providing a crypto library that supports ECDSA, Ed25519, and sr25519 signature algorithms |
-| 0b. | Code | Providing a remote server that gives both signing services and slashing protection mechanisms |
-
-### Milestone 3 — Deployment and Test
+### Milestone 2 — Deployment and Test
 * **Estimated Duration:** 1 month
 * **FTE:**  2.5
 * **Costs:** 7500 USDT
