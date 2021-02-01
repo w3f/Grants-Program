@@ -122,12 +122,14 @@ At present, we are debugging some codes of signal (https://github.com/signalapp)
 ## Team :busts_in_silhouette:
 
 ### Team members
+Sheng Xun(leader,a veteran in the blockchain industry, has participated in the development of bytom, Consortium  chain, and has early experience in developing instant messaging software.)
 
-Sheng Xun(leader)
+Ming Cheng(Product manager, participated in the design of timely communication software in traditional Internet.)
 
-Ming Cheng
+Li Sun(Familiar with user interface development,traditional Internet practitioners)
 
-Li Sun
+There are also several part-time developers. At the same time, we have established a community and have some resources for promotion.
+
 
 ### Contact
 
