@@ -71,29 +71,29 @@ If Alice wants to send a message to Bob, he must first determine the message key
 
 3) Alice starts to use the DH protocol to calculate the negotiation key. The parameters to be introduced include: the private keys of the two key pairs created by herself, and the three public keys of Bob. Then use a similar permutation and combination method to bring your own private key and the other party’s public key into the DH algorithm calculation respectively;
 
-DH1 = DH(IPK-A, SPK-B)
+  DH1 = DH(IPK-A, SPK-B)
 
-DH2 = DH(EPK-A, IPK-B)
+  DH2 = DH(EPK-A, IPK-B)
 
-DH3= DH(EPK-A, SPK-B)
+  DH3= DH(EPK-A, SPK-B)
+  
+  DH4 = DH(IPK-A, OPK-B)
 
-DH4 = DH(IPK-A, OPK-B)
+  as the picture shows:
 
-as the picture shows:
-
-![x3dh](https://img.imgdb.cn/item/60176cfc3ffa7d37b3a23d37.png)
+  ![x3dh](https://img.imgdb.cn/item/60176cfc3ffa7d37b3a23d37.png)
 
 
 
 Then connect the four calculated values before and after to get the initial key, as follows:
 
-DH = DH1 || DH2 || DH3 || DH4
+  DH = DH1 || DH2 || DH3 || DH4
 
-Note: "||" represents the connector, such as 456||123=456123
+  note: "||" represents the connector, such as 456||123=456123
 
 But the DH key is too long to be used as a message key, so a KDF calculation is performed on this initial key (KDF is a kind of key derivation algorithm, which can be regarded as an enhanced hash) to derive a fixed length Message key S
 
-S = KDF（DH1 || DH2 || DH3 || DH4）
+  S = KDF（DH1 || DH2 || DH3 || DH4）
 
 At this step, Alice finally calculated the message key S.
 
