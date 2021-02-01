@@ -18,7 +18,7 @@ The validators play a crucial role on PoS networks due to operating stable, reli
 
 The proposed platform has independently separated the storage and the signing services from the validators and has provided a remote signing process through secure gRPC connections. This allows validators to create more robust and flexible operations, while providing additional security measures against possible attacks. Hence, it creates a more resilient solution compared to all other existing solutions, and in case of a compromise or uptime issues of the validator, Stkr can easily migrate to another validator without affecting users’ funds.
 
-The following diagram is used for ETH Staking Service that utilizes remote signing services
+The following architecture is used in Stkr.io for ETH Staking Service that utilizes remote signing services
 
 ![Overall Architecture](https://firebasestorage.googleapis.com/v0/b/test-sensor-veri.appspot.com/o/photo_2021-02-01_20-52-21.jpg?alt=media&token=d9c61b09-a5c2-4b04-8b82-3da2b09fed96)
 
