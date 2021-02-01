@@ -1,4 +1,9 @@
-# Bifrost PLO Liquidity (Grant Application)
+# Open Grant Proposal
+
+* **Project Name:** Bifrost PLO Liquidity
+* **Team Name:** Bifrost.Finance
+* **Payment Address:** 0x3754Fd5eC997c07Ca528bb0bdCB0b4F5b93605dF
+
 ## Project Description
 Bifrost is a parachain that provides liquidity for staking and collateral assets. It is positioned as the defi protocol in the Polkadot ecology. Based on the development of substrate, the parachain slot will be auctioned. Staking is the first kind of asset for Bifrost to unlock liquidity. Users can enjoy staking rewards and liquidity both through Bifrost protocol by mint vToken in PoS.
 
@@ -80,34 +85,64 @@ It contains the following features:
 ### Security
 Investors use XCMP to transfer DOTs to the Bifrost platform, so the security of user funds is guaranteed by XCMP. Parachain projects that require PLO also use XCMP to deposit rewards asset on the Bifrost platform. For example: Alice transfer her DOT in relay chain to the Bifrost parachain through the XCMP cross-chain function, and then ALice can call the function provided by the Bifrost platform to bind ParachainA. Her rewards will be released linearly in time. The unreleased part is always locked and no one can embezzle it. It is as safe as being locked in the parachain itself. Parachain projects can also choose to deposit rewards gradually on the Bifrost platform in multi-batches.
 
-## Development Roadmap
-##### Milestone 1 - Prepare PLO Development - 1 month
-Implement Prepare PLO module in Substrate Frame. Complete Registration workflow.
+## Development Roadmap :nut_and_bolt: 
 
-- Parachain info structs
-    - Infomation
-    - Arguments
-- Contributor deposit
-    - vsDOT release
-    - vsKSM release
-##### Milestone 2 - Execute PLO Development - 1 month
-Implement Execute PLO module in Substrate Frame. Complete Bounding DOTs or KSMs and Redeeming DOTs or KSMs workflow.
+### Overview
+* **Total Estimated Duration:** 3 months
+* **Full-time equivalent (FTE):** 3
+* **Total Costs:** 1.5 BTC
 
-- Bounding DOTs
-    - Bonding
-- Redeeming DOTs
-    - Redeeming
-- Bounding KSMs
-    - Bonding
-- Redeeming KSMs
-    - Redeeming
-##### Milestone 3 - Asset Development - 1 month
-Implement Asset module in Substrate Frame. Complete DOT-vsDOT or KSM-vsKSM conversion.
+##### Milestone 1 - Prepare PLO Development
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 0.5 BTC
 
-- DOT-vsDOT Conversion
-    - vsDOT Destroy
-- KSM-vsKSM Conversion
-    - vsKSM Destroy
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
+| 1. | Parachain info structs |  |  
+| 2. | Contributor deposit | We will create a Substrate module that will... |  
+| 3. | Substrate module: Z | We will create a Substrate module that will... |  
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+
+##### Milestone 2 - Execute PLO Development
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 0.5 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
+| 1. | Bounding DOTs |  |  
+| 2. | Redeeming DOTs | We will create a Substrate module that will... |  
+| 3. | Bounding KSMs | We will create a Substrate module that will... |  
+| 4. | Redeeming KSMs | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+
+
+##### Milestone 3 - Asset Development
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 0.5 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
+| 1. | DOT-vsDOT Conversion |  |  
+| 2. | KSM-vsKSM Conversion | We will create a Substrate module that will... |  
+| 3. | Bounding KSMs | We will create a Substrate module that will... |  
+| 4. | Redeeming KSMs | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 ## Additional Information
 The code related to the roadmap will be open source in the form of runtime and packaged into docker containers for acceptance. At the same time, this runtime will provide DOT and KSM liquidity for Polkadot and Kusama parachain slot auctions. Bifrost Finance will serve as the first parachain for this feature application. Regarding grant, we are happy to accept DOT.
