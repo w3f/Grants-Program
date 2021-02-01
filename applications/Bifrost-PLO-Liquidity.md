@@ -19,6 +19,7 @@ The trade module has been developed in advance, and vsDOT/vsKSM will be the seco
 - Herry (Developer)
 - Carmen (Developer)
 - Bonnie (Research & Marketing)
+- Tyrone (Product Manager)
 
 ## Team experience
 Through the construction of the Bifrost project, the team has accumulated nearly 14 months of development experience based on Substrate. It is a member of the Substrate Builders Program and Web3 Bootcamp. At the same time, it has obtained the Web3 Foundation Grant through EOS Bridge and has completed the first milestone acceptance. Ready to deliver the second milestone. Have rich practical experience on how to design pledge derivatives and how to provide liquidity for them.
@@ -30,6 +31,7 @@ Through the construction of the Bifrost project, the team has accumulated nearly
 - Herry Ho earned her Master degree from Carngie Mellon University. In Aug 2020, after finishing her course from the one-plus training community, she teamed up with five other developers to take part in the Hackusma event, and won the second prize. Being an enthusiastic of Substrate technology, she is now a member of Polkadot Course Ambassadors and has been helping to popularize Substrate blockchain technology in China. She is now actively translating the Knowledge Base documentation into Chinese in substrate.dev website, as well as writing tutorials on her blogs.
 - Carmen is Front-end software Engineer with 7 years of front-end development experience in Web and Hybrid mobile app development;1 year work experience of hyperledger fabric blockchain project;Rich experience in ES6,TypeScript + React/Next.js development and UI/UX page styling.
 - Bonnie has 3 Years of blockchain operation experience;Good at using innovative operating system to promote project; Served Fidelity, providing fund dealing support for the APAC.
+- Tyrone Bifrost Product Manager, graduated from the University of Glasgow with a master's degree in economics, Dissertation has conducted in-depth research on the new financial model of blockchain, and participated in the public course of blockchain technology and application by Professor Xiao Zhen of Peking University. 
 
 ## Team Website 
 * [https://bifrost.finance](https://bifrost.finance)
