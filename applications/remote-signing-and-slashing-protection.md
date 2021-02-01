@@ -372,9 +372,10 @@ message RemoteKeystorePayload {
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | Code | Proto files that will be used to in both Polkadot codebase and Remote server.|
-| 0b. | Code | Crypto service that imlements (a) with the use of Polkadot crypto library (ECDSA, EDDSA, sr25519).|
-| 0c. | Code | Providing a remote server that gives both signing services and slashing protection mechanisms. This server will contain several microservices that consume metadata and do their operation. On the top of them, Kafka will be used to handle large number request and pipelining.|
+| 0a. |	License| License	Apache 2.0 / MIT / Unlicense|
+| 0b. | Code | Proto files that will be used to in both Polkadot codebase and Remote server.|
+| 0c. | Code | Crypto service that imlements (a) with the use of Polkadot crypto library (ECDSA, EDDSA, sr25519).|
+| 0d. | Code | Providing a remote server that gives both signing services and slashing protection mechanisms. This server will contain several microservices that consume metadata and do their operation. On the top of them, Kafka will be used to handle large number request and pipelining.|
 
 
 ### Milestone 2 — Deployment and Test
@@ -384,7 +385,10 @@ message RemoteKeystorePayload {
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
+
 | 0a. | Code+Documentation | Running a test parachain with multiple validators on the same remote signing server|
+| 0b. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 
 
 ## Future Plans
