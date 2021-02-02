@@ -2,7 +2,7 @@
 
 * **Project:** Raze Network
 * **Proposer:** [Raze Network](https://www.raze.network/)
-* **Payment Address:** 3QozZhdPC4ecxK3y8iGCG6WN4wH6KvhsEy
+* **Payment Address:** 0xcce9D5FfFDf5714D4F5Eb28cF50fa8D12DA3d81D
 
 ## Project Overview :page_facing_up:
 
@@ -126,13 +126,13 @@ Micheal is a full-stack developer with 6 years experience in software developmen
 
 * Total Estimated Duration: 3 months
 * Full-time equivalent (FTE): 3
-* Total Costs: 1.5 BTC
+* Total Costs: 20,000 DAI
 
 #### Milestone 1 — Raze Substrate Modules and cross-chain bridge implementation
 
 * Estimated Duration: 2 month
 * FTE: 2
-* Costs: 1 BTC
+* Costs: 15,000 DAI
 
 The main deliverable of this milestone is Raze substrate pallet that supports: mint, transfer, redeem, lock and unlock functionalities. The substrate modules will support both the mainstream tokens issued in the Polkadot ecosystem such as DOT and KUSAMA and the cross-chain payment of ERC-20 tokens.
 
@@ -148,7 +148,7 @@ The main deliverable of this milestone is Raze substrate pallet that supports: m
 
 * Estimated Duration: 1 month
 * FTE: 1
-* Costs: 0.5 BTC
+* Costs: 5,000 DAI
 
 The main deliverable of this milestone is the client that can generate the transactions that can trigger the aforementioned contracts.
 
