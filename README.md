@@ -108,7 +108,7 @@ Additionally, we try to enforce the [code of conduct](https://github.com/w3f/Ope
 
 ### Additional information
 
-| ![](src/web.png?s=88) | ![](src/map.png?s=88) | ![](src/twitter.png?s=88) | ![](src/medium.png?s=88) | ![](src/like.png?s=88) | ![](src/reddit.png?s=88) | ![](src/youtube-play.png?s=88) |
+| ![](src/web.png?s=50) | ![](src/map.png?s=50) | ![](src/twitter.png?s=50) | ![](src/medium.png?s=50) | ![](src/like.png?s=50) | ![](src/reddit.png?s=50) | ![](src/youtube-play.png?s=50) |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | [W3F Website](https://web3.foundation) | [W3F Forum](https://forum.web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [Web 3.0 Reddit](https://www.reddit.com/r/web3) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
 
