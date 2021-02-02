@@ -47,6 +47,14 @@ Also, we find it interesting to work on the solution (pallet) that will prevent 
 
 There are various problems in any kind of democratic environment, such as bribery, private key selling, physically threatening, and similar. To prevent, or at least make it very hard to do so, the platform will implement a MACI (Minimum Anti-Collusion Infrastructure) solution very similar to the one found on the Ethereum ecosystem. It will be implemented in the form of another pallet which will be plugged into the main quadratic funding pallet.
 
+The MACI pallet, as presented in the roadmap of the application, is the first step in building the Quadratic funding platform. One of the first problems we have to solve, before a trustless, fair and decentralized crowdfunding platform leveraging CLR algorithm are vote bribery and user collusion.
+
+The pallet's main task is tracking the state of user votes in anonymous and secure way while making sure the zk proofs are correct and cannot be compromised by any party.
+
+We are going to need to limit the possibility, effectiveness and reliability of any methods used to "buy" a "vote".  
+To do that, the pallet will have to utilize zero knowledge proofs.  
+Mostly based on the design originating from [this thread](https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413), the pallet will use zk-SNARKs. The most similar contender for you to see what we're going to build would be the Ethereum [implementation](https://github.com/appliedzkp/maci) of the MACI design.
+
 ### Ecosystem fit
 
 - Are there any other projects similar to yours? If so, how is your project different?  
@@ -56,7 +64,7 @@ There is no such pallet that supports Minimal anti collusion infrastructure.
 
 ### Team members
 - Name of team leader: Filip Pajic
-- Names of team members: Vuksan Simeunovic, Filip Pajic, Andrej Rakic.
+- Names of team members: Vuksan Simunovic, Filip Pajic, Andrej Rakic.
 
 ### Contact
 Contact Name: Filip Pajic  
@@ -113,12 +121,12 @@ Substrate related experience:
 ### Overview
 Total Estimated Duration: 4 months  
 Full-time equivalent (FTE): 2.5 FTE  
-Total Costs: 40.000 DAI
+Total Costs: 36.000 DAI
 
 ### Milestone 1 - Collusion resistance
 - Estimated duration: 4 months
 - FTE: 2.5
-- Costs: 40.000 DAI
+- Costs: 36.000 DAI
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -129,6 +137,7 @@ Total Costs: 40.000 DAI
 | 2. | pallet-maci | Pallet written in Rust for Substrate 2.0 based blockchains. The pallet will be the implementation of Minimal Anti-Collusion Infrastructure (MACI) which leverages ZKPs | 
 | 3. | Pallet showcase | Code repo with the node-template which contains the pallet implementation used to showcase the pallet and its usage |  
 | 4. | Blog post | The blog post that explains what and how we built |
+| 5. | Operation tools | Scripts used to perform offchain tasks needed to operate the platform and interface with the pallet |
 
 ### Community engagement
 We will create a blog post as a part of the milestone we submit, explaining what and how we built it.
