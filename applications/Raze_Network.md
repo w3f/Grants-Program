@@ -16,7 +16,7 @@ Since the Zether framework was designed to support the Ethereum account model, t
 
 The objective of Raze Network is to enable cross-chain privacy-preserving payment and DeFi systems, while protecting the transparency of your assets and behaviors from surveillance. Eventually, Raze Network can anonymize all the cryptocurrency across all chains.
 <p align="center">
-  <img src="https://raw.githubusercontent.com/huaihuaisz/General-Grants-Program/master/src/image2.png" alt="" width="70%"/>
+  <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image2.png" alt="" width="70%"/>
 </p>
 
 #### Team Interest
@@ -30,7 +30,7 @@ Substrate is a new and promising platform to implement this privacy protocol and
 
 Raze Network will apply the Zether framework to build the second-layer decentralized anonymous payment module. It will be then imported as substrate-based smart contracts. Similar to the Zether framework, it will have three technical modules: mint, transfer and redeem. The mint module will convert a base token into its anonymized version, while the redeem module will convert the anonymized token back to its native form. The transfer module is the one that enables the anonymous transfer of the anonymized token. This process will conceal the transaction amount and guarantee the anonymity for both the sender and receiver.
 <p align="center">
-  <img src="https://raw.githubusercontent.com/huaihuaisz/General-Grants-Program/master/src/image5.png" alt="" width="70%"/>
+  <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image5.png" alt="" width="70%"/>
 </p>
 
 The mint module will create a Raze account by running a mint contract and deposit the anonymized token to the Raze account. Each Raze account is identified by a public key `pk` and the mint module will generate a ciphertext under the account public key which encrypts the amount of minted token. If the account has already existed before the mint operation, the generated ciphertext will be homomorphically added to the existing ciphertext to increase the encrypted amount.
@@ -45,7 +45,7 @@ To facilitate DeFi functionality, we have two additional modules: lock and unloc
 
 We will also build a cross-chain bridge that can map any ERC-20 token to the Polkadot blockchain and thus enable the cross-chain payment of these tokens.
 <p align="center">
-  <img src="https://raw.githubusercontent.com/huaihuaisz/General-Grants-Program/master/src/image1.png" alt="" width="70%"/>
+  <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image1.png" alt="" width="70%"/>
 </p>
 
 Each raze user can register a raze account any time(s) he wishes. The registration algorithm CreateAddress generates a secret key `sk` and the corresponding public key `pk`. The public key is the identifier of the Raze account.
@@ -54,12 +54,12 @@ To invoke the Mint contract, the client-side runs a CreateMintTx algorithm, whic
 
 To invoke the transfer contract, the client-side runs a CreateTransferTx algorithm, which takes as inputs the raze account secret key `sk`, and the amount of transferred token `amt`, the public keys of sender `pk_s`, receiver `pk_r` and the public keys of the anonymity set `{pk_a}`. The output of the CreateTransferTx algorithm is a zero-knowledge proof that the prover knows one of the secret keys of the aforementioned public key set, the payment consistency proof, and range proof. The statement of this zkp is 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/huaihuaisz/General-Grants-Program/master/src/image3.png" alt="" width="60%"/>
+  <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image3.png" alt="" width="60%"/>
 </p>
 
 The client-side runs a CreateRedeemTx algorithm to invoke the redeem contract. It takes the account secret key `sk`, the withdrawal amount `amt`, and the public key `pk` as input to generate a zero-knowledge proof showing that the user knows the secret key `sk` for the account public key `pk` and the account has enough balance for the redeem operation. The zero-knowledge proof will be used to invoke the redeem contract. The statement of this zkp is
 <p align="center">
-  <img src="https://raw.githubusercontent.com/huaihuaisz/General-Grants-Program/master/src/image4.png" alt="" width="40%"/>
+  <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image4.png" alt="" width="40%"/>
 </p>
  
 The user can invoke the lock module by running a CreateLockTx algorithm on the client-side. The client inputs a secret key `sk` and an Ethereum address `addr` to generate a signature to demonstrate he is indeed the owner of the account and he authorizes to lock the account to the input address `addr`. The signature would be `Sign(x, addr)`. Similarly, the user can invoke the unlock module by running a CreateUnlockTx on the client-side. The input of CreateUnlockTx algorithm is the same as that of the CreateLockTx algorithm. It will generate a similar signature to unlock the account. Note, we will embed a nonce derived from the current epoch number to prevent the replay attack.
