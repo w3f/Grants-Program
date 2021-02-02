@@ -365,29 +365,20 @@ message RemoteKeystorePayload {
 * **Full-time equivalent (FTE):**  10 FTE
 * **Total Costs:** 30000 USDT
 
-### Milestone 1 — Implementation for Remote Signing Services on Parachains (for both internal Testnet and Kusama)
+### Milestone 1 — Implementation for Remote Signing Services and Deployment and Test
 * **Estimated Duration:** 2.5 month
-* **FTE:**  7.5
-* **Costs:** 24500 USDT
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | Code | Proto files that will be used to in both Polkadot codebase and Remote server.|
-| 0b. | Code | Crypto service that imlements (a) with the use of Polkadot crypto library (ECDSA, EDDSA, sr25519).|
-| 0c. | Code | Providing a remote server that gives both signing services and slashing protection mechanisms. This server will contain several microservices that consume metadata and do their operation. On the top of them, Kafka will be used to handle large number request and pipelining.|
-
-
-### Milestone 2 — Deployment and Test
-* **Estimated Duration:** 1 month
-* **FTE:**  2.5
-* **Costs:** 7500 USDT
+* **FTE:**  10
+* **Costs:** 3000 USDT
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. |	License| License	Apache 2.0 / MIT / Unlicense|
 | 0b. | Documentation | Running a test parachain with multiple validators on the same remote signing server|
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
+| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
+| 0e. | Code | Proto files that will be used to in both Polkadot codebase and Remote server.|
+| 0f. | Code | Crypto service that imlements (a) with the use of Polkadot crypto library (ECDSA, EDDSA, sr25519).|
+| 0g. | Code | Providing a remote server that gives both signing services and slashing protection mechanisms. This server will contain several microservices that consume metadata and do their operation. On the top of them, Kafka will be used to handle large number request and pipelining.|
 
 
 ## Future Plans
