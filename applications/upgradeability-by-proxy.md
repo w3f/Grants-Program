@@ -158,7 +158,7 @@ the community, none of whom were aware of similar projects.
 * **Full-time equivalent (FTE):** 0.5
 * **Total Costs:** DAI 19400
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 — Upgradable Ink Smart contract infrastructure
 
 * **Estimated Duration:** 1 month
 * **FTE:**  0.5
