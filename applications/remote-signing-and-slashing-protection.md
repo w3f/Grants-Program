@@ -368,7 +368,7 @@ message RemoteKeystorePayload {
 ### Milestone 1 — Implementation for Remote Signing Services and Deployment and Test
 * **Estimated Duration:** 2.5 month
 * **FTE:**  10
-* **Costs:** 3000 USDT
+* **Costs:** 30000 USDT
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
