@@ -177,3 +177,9 @@ Finally, our goal is to provide a SDK from a high-level perspective with the abo
 
 ## Additional Information :heavy_plus_sign:
 
+* Telegram: https://t.me/Raze_Net
+* Twitter: https://twitter.com/Raze_Net
+* Email: contact@raze.network
+* Medium: https://medium.com/@raze_net
+* Website: https://raze.network
+* Github: https://github.com/Raze-Net
