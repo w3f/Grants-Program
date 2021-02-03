@@ -2,31 +2,23 @@
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project:** The name of the project
-* **Proposer:** GitHub username
-* **Payment Address:** BTC payment address. We don't accept payments for the program in other currencies at this stage. 
+* **Project:** Wordpress payment gateway with KSM/DOT 
+* **Proposer:** comprobot
+* **Payment Address:** 3KTBjd72GFjY8ckVeQjMTEte4NE2mqjTAt
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
 If this application in response to an RFP then please indicate this on the first line of this section.
-
+We would like to build a middleware  with a WordPress plugin connecting Polkadot network with the existing internet application such as e-commerce.  We shall build a payment gateway for digital payment service provided by the third party to the eCommerce services. It authorizes direct payments, e-wallet, or credit/debit cards at online retailers, eCommerce websites or traditional physical stores. It also provides retailers with access to merchant services in order to process payments from major financial institutions. We add payment gateway methods for different infrastructure or web applications build from different open-source software such as php, ruby and java.  Polkadot has high TPS rate which can handle huge amount payments online in currently internet world. Let Polkadot payment become popular.
 ### Overview
 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+WordPress (WP, WordPress.org) is a free and open-source content management system (CMS) written in PHP and usually paired with a MySQL or a MariaDB database as fundamental infrastructure
+WordPress is already using by more than 60 million websites, including 39% of the top 10 million websites as of January 2021. WooCommerce is an open-source e-commerce plugin for WordPress. A study conducted in 2017 by Todd Wilkins, Head of WooCommerce, suggested that WooCommerce stores would collectively account for nearly $10 billion in sales. We would like to add payment gateway for wordpress and woocommerce with Polkadot. It could attract huge amount of people to use Polkadot for crytocurrency payment in daily business. Nevertheless, we will not keep any information regarding merchant’s private keys or money. As such, all payments processed through our Gateway is considered a completely final and fully settled.
+
 
 ### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
 
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
 
 ### Ecosystem Fit 
 Are there any other projects similar to yours? If so, how is your project different?
@@ -38,7 +30,7 @@ Are there any other projects similar to yours? If so, how is your project differ
 * Names of team members	
 
 ### Team Website	
-* https://<your_domain>
+* http://carwaii.io/
 
 ### Legal Structure 
 Please provide the name and registered address of the legal entity executing the project.
