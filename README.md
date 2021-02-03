@@ -65,7 +65,10 @@ In cases where a niche expert opinion is desirable, one of the committee members
 Evaluators are individuals able to evaluate the technology delivered as a result of the Open Grants Program. The committee decides about the evaluators and has the right to add or remove evaluators (supermajority needed).
 
 - [Marcin Górny](https://github.com/mmagician)
+- [Robert Hambrock](https://github.com/Lederstrumpf)
 - [David Hawig](https://github.com/Noc2)
+- [Sebastian Müller](https://github.com/semuelle)
+- [Aleixo Sánchez](https://github.com/alxs)
 
 #### W3F Operations Team
 
