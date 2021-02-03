@@ -91,7 +91,7 @@ Alexandra is responsible for product development and cooperation with other team
 
 ## **Development Roadmap**
 
-* **Total Estimated Duration:** 2 months
+* **Total Estimated Duration:** 4 months
 * **Full-time equivalent (FTE):**  3 FTE
 * **Total Costs:** 70000 DAI
 
