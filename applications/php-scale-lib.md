@@ -2,7 +2,7 @@
 
 * **Project Name:** PHP Scale Codec
 * **Team Name:** [gmajor](https://github.com/gmajor-encrypt) 
-* **Payment Address:** 3JJVnomZWTwUcb6tLAnESyy77NHi4cZ2hz
+* **Payment Address:** 0xC3094f0ddce699a1Ad9Ef2621DF68Cd297a4c44F
 
 
 ## Project Overview :page_facing_up: 
@@ -33,12 +33,12 @@ https://github.com/gmajor-encrypt/php-substrate-api
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 8 weeks
-* **Total Costs:** 0.6 BTC
+* **Total Costs:** 12000 Dai
 
 ### Milestone 1
 
 * **Estimated Duration:** 4 weeks 
-* **Costs:** 0.3 BTC
+* **Costs:** 6000 Dai
 
 
 | Number | Deliverable | Specification | 
@@ -54,7 +54,7 @@ https://github.com/gmajor-encrypt/php-substrate-api
 ### Milestone 2 Example — Additional features
 
 * **Estimated Duration:** 2 weeks 
-* **Costs:** 0.3 BTC
+* **Costs:** 6000 Dai
 
 
 | Number | Deliverable | Specification | 
