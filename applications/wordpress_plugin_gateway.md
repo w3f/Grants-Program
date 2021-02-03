@@ -18,6 +18,7 @@ WordPress is already using by more than 60 million websites, including 39% of th
 
 
 ### Project Details 
+![wordpress plugin](https://raw.githubusercontent.com/comprobot/Open-Grants-Program/master/src/wordpress-plugin-setting.png)
 
 
 ### Ecosystem Fit 
