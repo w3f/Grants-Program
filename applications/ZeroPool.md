@@ -91,9 +91,9 @@ Alexandra is responsible for product development and cooperation with other team
 
 ## **Development Roadmap**
 
-* **Total Estimated Duration:** 6 months
+* **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):**  3 FTE
-* **Total Costs:** 100000 DAI
+* **Total Costs:** 70000 DAI
 
 ### Milestone 2 — Implement zkSNARK circuit and cryptography for private transaction
 
@@ -137,25 +137,6 @@ The resulting software will be available to sign and prove, encrypt and decrypt 
 | 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 The contract will support transfer, deposit, and withdrawal for multiple assets (DOTs, tokens, presented on the parachain). All transfers are private (balances, user accounts, asset types, transaction graph are hidden).
-
-
-### Milestone 4 — Implement wallet app, providing private transactions
-
-* **Estimated Duration:** 2 months
-* **FTE:**  3
-* **Costs:** 30000 DAI
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 and MIT |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can perform private transactions with our application. |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 0d. | Article/Tutorial | We will write an article for Medium, describing to users, how to use our solution as part of the grant. 
-| 1. | Wallet application | We will create a frontend app for private transactions |  
-
-The wallet will support all types of transfers, using the client library. Also, the wallet will support keys and seeds management, browser allocated DB and core libs, compiled into wasm modules.
-
-So, the users could overview the assets they have (public and private in the pool), move the assets into the pool and back, transfer assets privately inside the pool to other users.
 
 
 ## **Future Plans**
