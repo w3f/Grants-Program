@@ -85,7 +85,7 @@ We dont have LinkedIn Profiles
 ### Milestone 2 Document and Tutorial
 * **Estimated Duration:** 5 days
 * **FTE:**  1
-* **Costs:** 0.4 BTC
+* **Costs:** 0.04 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
