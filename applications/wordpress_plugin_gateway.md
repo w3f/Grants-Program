@@ -65,7 +65,7 @@ https://chrome.google.com/webstore/detail/compita-server%2B-sk0-004-e/lohjkffiih
 We dont have LinkedIn Profiles
 
 ###  Mandatory deliverables 
-| 1. | Wordpress and WooCommerce plugin  | php and javascript code included the zip for wordpress user download and install |
+Wordpress and WooCommerce plugin:  php and javascript code included the zip for wordpress user download and install 
 
 
 ### Overview
