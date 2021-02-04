@@ -11,7 +11,6 @@
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
 
 ### Overview
 
@@ -61,7 +60,9 @@ However, please note that the images are only representational. The actual UI wi
 
 #### Our Core Details
 
-Our smart contract will be built using any language that can compile down to WebAssembly (WASM), with a preference for RUST for use within the FRAME Contracts Pallet. Our product line will be supported by the following objects and methods.
+Programming Language of choice: ink!
+
+Our smart contract will make of ink! to develop smart contracts for use within the FRAME Contracts Pallet. Our product line will be supported by the following objects and methods.
 
 Gridlokr supports 3 types of locking transactions:
 
@@ -168,13 +169,13 @@ Our past development work has been subject to NDA and we are unable to share it.
 
 ### Overview
 * **Total Estimated Duration:** 3 months
-* **Full-time equivalent (FTE):**  1.5
-* **Total Costs:** 0.5 BTC
+* **Full-time equivalent (FTE):**  2.5
+* **Total Costs:** 18000 DAI
 
 ### Milestone 1 Document, Build, Test & Deploy
 * **Estimated Duration:** 3 month
-* **FTE:**  1.5
-* **Costs:** 0.5 BTC
+* **FTE:**  2.5
+* **Costs:** 18000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -188,7 +189,8 @@ Our past development work has been subject to NDA and we are unable to share it.
 | 5c. ||GetTokensAndLock(addresses[], currencyToLock, amount)|
 | 5d. ||ReleaseToken(addresses[], currencyToUnlock, amount)|
 | 5e. ||UpdateRecipientAddress(contractAddress, addresses[]) |  
-| 6. | Deploy to a Rococo Parachain | We will deploy to a parachain run on the Rococo testnet. |  
+| 6. | User Interface | We will design, and develop a simple interface that demonstrates smart contract functionality |
+| 7. | PSP | We will write up a proposal for the PSP iniative. |  
 
 ## Future Plans
 Long-term, we have a series of additional products that we aim to deliver in-line with our project road map.  We aim to go to market with each of these products upon completion of testing and eventually make them available to enterprise customers via our APIs.
