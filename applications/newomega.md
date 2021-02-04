@@ -92,10 +92,9 @@ Milestone 1 — Migrate to Ink! and integrate game codebase
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run the contracts which will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
-| 1. | Ink: GameEngine | We will port GameEngine.sol into Ink (see https://github.com/WiktorStarczewski/newomega.trinity/blob/master/hardhat/contracts) |
-| 2. | Ink: GameManager | We will port GameManager.sol into Ink (see https://github.com/WiktorStarczewski/newomega.trinity/blob/master/hardhat/contracts) |
-| 3. | Ink: GameRewarder | We will write GameRewarder contract in Ink, which will generate buyable packages for the users |
-| 4. | GitHub codebase | We will provide the prototype JavaScript game client, functionally as of the moment of application (playnewomega.online) |
+| 1. | Ink: GameEngine | We will port NewOmega.sol into Ink (see https://github.com/WiktorStarczewski/newomega.trinity/blob/master/hardhat/contracts) |
+| 2. | Ink: GameRewarder | We will write GameRewarder contract in Ink, which will generate buyable packages for the users |
+| 3. | GitHub codebase | We will provide the prototype JavaScript game client, functionally as of the moment of application (playnewomega.online) |
 
 
 Milestone 2 — Working prototype with signing transactions
