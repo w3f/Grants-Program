@@ -26,7 +26,15 @@ The trade module has been developed in advance, and vsDOT/vsKSM will be the seco
 - Bonnie (Research & Marketing)
 - Tyrone (Product Manager)
 
-## Team experience
+### Contact
+* **Contact Name:** Ziqi Pan
+* **Contact Email:** TyronePan@bifrost.finance
+
+### Legal Structure 
+* **Registered Address:** Craigmuir Chambers Road Town, Tortola, VG 1110 British Virgin Islands
+* **Registered Legal Entity:** BIFROST GLOBAL LTD.
+
+### Team experience
 Through the construction of the Bifrost project, the team has accumulated nearly 14 months of development experience based on Substrate. It is a member of the Substrate Builders Program and Web3 Bootcamp. At the same time, it has obtained the Web3 Foundation Grant through EOS Bridge and has completed the first milestone acceptance. Ready to deliver the second milestone. Have rich practical experience on how to design pledge derivatives and how to provide liquidity for them.
 
 - Lurpis is also CEO of Liebi technology; 5 Years of blockchain product and development experience; Sina Weibo early full-stack engineer;Leader of blockchain cross-border settlement in Ping++; Good at creating quality experiences product.
@@ -103,11 +111,8 @@ Investors use XCMP to transfer DOTs to the Bifrost platform, so the security of 
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Parachain info structs |  |  
-| 2. | Contributor deposit | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Parachain register | Combined with the XCMP protocol, define the parachain data structure. Projects register crowdload on bifrost for the parachain auction. |  
+| 2. | Contributor deposit | Contributors transfer their assets of the relay chain to bifrost through cross-chain, Bifrost deposits users' assets DOT/KSM into the PLO module account of the selected project party, and PLO issues vsDOT/vsKSM as the deposit voucher for users. |
 
 ##### Milestone 2 - Execute PLO Development
 * **Estimated Duration:** 1 month
@@ -120,12 +125,8 @@ Investors use XCMP to transfer DOTs to the Bifrost platform, so the security of 
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Bounding DOTs |  |  
-| 2. | Redeeming DOTs | We will create a Substrate module that will... |  
-| 3. | Bounding KSMs | We will create a Substrate module that will... |  
-| 4. | Redeeming KSMs | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-
+| 1. | Bounding DOTs | Bifrost initiates a cross-chain contribution through a parachain account, raises funds for the project, and participates in the parachain auction. |
+| 2. | Redeeming DOTs/KSMs | Parachain retires or fails on auction, bifrost redeem assets for users through cross-chain. |
 
 ##### Milestone 3 - Asset Development
 * **Estimated Duration:** 1 month
@@ -138,11 +139,7 @@ Investors use XCMP to transfer DOTs to the Bifrost platform, so the security of 
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | DOT-vsDOT Conversion |  |  
-| 2. | KSM-vsKSM Conversion | We will create a Substrate module that will... |  
-| 3. | Bounding KSMs | We will create a Substrate module that will... |  
-| 4. | Redeeming KSMs | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Token-vsToken asset | We will complete basic functions of token/vsToken asset issuance, destruction, transfer, freezing, etc., and token-vsToken conversion based on real-time exchange rates. |  
 
 ## Additional Information
 The code related to the roadmap will be open source in the form of runtime and packaged into docker containers for acceptance. At the same time, this runtime will provide DOT and KSM liquidity for Polkadot and Kusama parachain slot auctions. Bifrost Finance will serve as the first parachain for this feature application. Regarding grant, we are happy to accept DOT.
