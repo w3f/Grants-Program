@@ -74,27 +74,22 @@ Wordpress and WooCommerce plugin:  php and javascript code included the zip for 
 * **Total Costs:** 0.5 BTC
 
 ### Milestone 1 Development of Website plugin for Wordpress and WooCommerce 
-* **Estimated Duration:** 3 week and 2 days
+* **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 0.46 BTC
+* **Costs:** 0.5 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
+| 0a. | License	Apache 2.0 / MIT / Unlicense  |  |
+| 0b. | Documentation  |We will provide both inline documentation of the code and a basic tutorial that explains how a user can interact with payment gateway|
+| 0c. | Testing Guide  |The code will have unit-test cover to ensure functionality and robustness |
+| 0d. | Wordpress plugin zip file | The zip file include the graphics,  php and javascript code for user to install |
 | 1. | Wordpress plugin  | WooCommerce plugin development |
 | 2. | Connection to extension | Connecting to Polkadot JS extension	If none is present, offer to install it. If allowed, a popup asking to select an account.|  
 | 3. | Connect to payment | Payment with wallet for scaning QR code|  
-| 4. | Testing |  test all functions|
+| 4. | Article on Medium|  After finishing with development and testing we will publish an article on Medium describing our work done for the project, and a tutorial on how to integrate it into wordpress plug website.|
+| 5. | Promote plugin| Upload plugin to different websites|
 
-
-### Milestone 2 Document and Tutorial
-* **Estimated Duration:** 5 days
-* **FTE:**  1
-* **Costs:** 0.04 BTC
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Article on Medium|  After finishing with development and testing we will publish an article on Medium describing our work done for the project, and a tutorial on how to integrate it into wordpress plug website.|
-| 3. | Promote plugin| Upload plugin to different websites|
 
 
 ## Future Plans
