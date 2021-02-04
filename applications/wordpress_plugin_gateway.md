@@ -86,7 +86,7 @@ Wordpress and WooCommerce plugin:  php and javascript code included the zip for 
 | 0d. | Wordpress plugin zip file | The zip file include the graphics,  php and javascript code for user to install |
 | 1. | Wordpress plugin  | WooCommerce plugin development |
 | 2. | Connection to extension | Connecting to Polkadot JS extension	If none is present, offer to install it. If allowed, a popup asking to select an account.|  
-| 3. | Unit tests on different functions, |  Integration test for user have a payment|
+| 3. | Testing | Unit tests on different functions, integration test for user have a payment|
 | 4. | Connect to payment | Payment with wallet for scaning QR code|  
 | 5. | Article on Medium|  After finishing with development and testing we will publish an article on Medium describing our work done for the project, and a tutorial on how to integrate it into wordpress plug website.|
 | 6. | Promote plugin| Upload plugin to different websites|
