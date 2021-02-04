@@ -46,13 +46,13 @@ Through the construction of the Bifrost project, the team has accumulated nearly
 - Bonnie has 3 Years of blockchain operation experience;Good at using innovative operating system to promote project; Served Fidelity, providing fund dealing support for the APAC.
 - Tyrone Bifrost Product Manager, graduated from the University of Glasgow with a master's degree in economics, Dissertation has conducted in-depth research on the new financial model of blockchain, and participated in the public course of blockchain technology and application by Professor Xiao Zhen of Peking University. 
 
-## Team Website 
+### Team Website 
 * [https://bifrost.finance](https://bifrost.finance)
 
-## Team repository
+### Team repository
 * [https://github.com/bifrost-finance](https://github.com/bifrost-finance)
 
-## Team Github Profiles
+### Team Github Profiles
 - [Lurpis](https://github.com/lurpis)
 - [Edwin](https://github.com/ark930)
 - [Buffalo](https://github.com/lvqinghao)
