@@ -97,6 +97,6 @@ We dont have LinkedIn Profiles
 We could like to add more admin functions such as statistics usage of plugin. 
 
 
-* What work has been done so far? I have build multiple wordpress based websites and use lot of plugins for payment. But I cannot find payment gateway for wordpress and woocommerce.
+* What work has been done so far? I have build multiple wordpress based websites and use lot of plugins for payment. But I cannot find payment gateway for DOT/KSM for wordpress and woocommerce.
 * Are there are any teams who have already contributed (financially) to the project? No.
 * Have you applied for other grants so far? No.
