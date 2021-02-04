@@ -111,8 +111,8 @@ Investors use XCMP to transfer DOTs to the Bifrost platform, so the security of 
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Parachain register | Combined with the XCMP protocol, define the parachain data structure. Projects register crowdload on bifrost for the parachain auction. |  
-| 2. | Contributor deposit | Contributors transfer their assets of the relay chain to bifrost through cross-chain, Bifrost deposits users' assets DOT/KSM into the PLO module account of the selected project party, and PLO issues vsDOT/vsKSM as the deposit voucher for users. |
+| 1. | Parachain Register | Combined with the XCMP protocol, define the parachain data structure. Projects register crowdload on bifrost for the parachain auction. |  
+| 2. | Contributor Deposit | Contributors transfer their assets of the relay chain to bifrost through cross-chain, Bifrost deposits users' assets DOT/KSM into the PLO module account of the selected project party, and PLO issues vsDOT/vsKSM as the deposit voucher for users. |
 
 ##### Milestone 2 - Execute PLO Development
 * **Estimated Duration:** 1 month
@@ -139,7 +139,7 @@ Investors use XCMP to transfer DOTs to the Bifrost platform, so the security of 
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Token-vsToken asset | We will complete basic functions of token/vsToken asset issuance, destruction, transfer, freezing, etc., and token-vsToken conversion based on real-time exchange rates. |  
+| 1. | Token-vsToken Asset | We will complete basic functions of token/vsToken asset issuance, destruction, transfer, freezing, etc., and token-vsToken conversion based on real-time exchange rates. |  
 
 ## Additional Information
 The code related to the roadmap will be open source in the form of runtime and packaged into docker containers for acceptance. At the same time, this runtime will provide DOT and KSM liquidity for Polkadot and Kusama parachain slot auctions. Bifrost Finance will serve as the first parachain for this feature application. Regarding grant, we are happy to accept DOT.
