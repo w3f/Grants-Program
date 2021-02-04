@@ -58,12 +58,12 @@ because we want to focus on the upgrade pattern mechanism and leave any ink
 quality-of-life improvements, like directives or syntax sugar, for the second
 milestone.
 
-For milestone 2, we will extract this pattern into an ink directive which will
-automatically generate the proxied methods. This brings us ergonomy of use,
-making upgradeability easy to opt in to.
+Something that we will consider for future work is extracting any patterns into
+ink directives that bring us ergonomy of use. For example, assuming we end up
+deciding on the proxy method, we could automatically generate the proxied
+methods.
 
-Parts of this work may be liftable to the smart contracts pallet. This isn't in
-the scope of this proposal, but may be considered for future work. The
+Parts of this work may be liftable to the smart contracts pallet. The
 advantages of implementing certain features directly in the pallet is that
 they'd be more efficient and we could tweak their incentive structure.
 
@@ -140,8 +140,6 @@ the community, none of whom were aware of similar projects.
 ### Team Code Repos
 
 * https://github.com/trustfractal/ink-upgrade-template
-* https://github.com/trustfractal/ink
-* eventually https://github.com/paritytech/ink, we hope :)
 
 
 ### Team LinkedIn Profiles
@@ -154,9 +152,10 @@ the community, none of whom were aware of similar projects.
 
 ### Overview
 
-* **Total Estimated Duration:** 2~3 months
-* **Full-time equivalent (FTE):** 0.5
-* **Total Costs:** DAI 19400
+* **Estimated Duration:** 1 month
+* **FTE:**  0.5
+* **Costs:** DAI 9700
+
 
 ### Milestone 1 — Upgradable Ink Smart contract infrastructure
 
@@ -173,30 +172,18 @@ the community, none of whom were aware of similar projects.
 | 1. | An Ink! based upgradeable Smart Contract structure | A collection of Ink! smart contracts that be used as a starting point for people that want to have upgradable smart contracts. This collection will contain upgrade logic (including authorization and data migration calls) and some sample methods that users can adapt when developing their own contracts. |
 
 
-### Milestone 2 — Ink directive to abstract proxying
-
-* **Estimated Duration:** 1 month
-* **FTE:**  0.5
-* **Costs:** DAI 9700
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | Inline documentation on how to use the new directive. |
-| 0c. | Testing suite | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. Being part of ink, it should integrate the existing test suite. |
-| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | `ink!` feature | We will build an `ink!` directive that generates the proxied methods. Ideally it would detect which methods need proxying by introspection, but it may require method names to be listed explicitly. |
-
-
 ## Future Plans
 
-After milestone 2 is complete, there's the change that some patterns or
-functionality would be better implemented directly into the smart contracts
-pallet, so that other features, unrelated to upgrades, can take advantage of
-them.
+After milestone 1 is complete, we will analyse the resulting smart contracts
+and see if there is any pattern that would benefit from being extracted onto an
+ink directive. For example, if we end up using the proxy method, we might propose
+an ink! directive that automatically generates the delegation methods.
+
+There's also the chance that some patterns or functionality would be better
+implemented directly into the smart contracts pallet, so that other features,
+unrelated to upgrades, can take advantage of them.
 
 
 ## Additional Information :heavy_plus_sign:
 
-This proposal is slightly research oriented. The second milestone may vary
-depending on the particular way ink! is implemented.
+This proposal is slightly research oriented.
