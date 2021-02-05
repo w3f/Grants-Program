@@ -9,29 +9,26 @@
 
 It is well known that most NFTs are traded either directly or by auction, and the single NFT limit the flexibility of NFTs in some ways.
 
-Splittable NFT will bring liquidity and more possibilities for NFT ecosystem. For example, buying SubNFTs on bonding curve will allow for better pricing of works, while NFTs that are otherwise very expensive can be collected by more people, and will also have applications in rare tickets, rare music works on sale, etc.
+Splittable NFT will bring liquidity, lower barriers to entry and more possibilities to NFT ecosystem. For example, buying SubNFTs on bonding curve will allow for better pricing of works, while NFTs that are otherwise very expensive can be collected by more people, it is also possible to purchase a group of NFT tokens and contribute to the management of this group of NFTs.
 
-Starry is developing an NFT Wrapper and can split an NFT into some sub nft or fungible token or split a set of NFTs into fungible tokens.
+Starry provides some solutions for splittable NFTs, such as: splitting Single NFT into some SubNFTs, splitting Single NFT into some fungible tokens, and splitting a group of NFTs into some fungible tokens and managing them using dao.
 
 ### Project Details 
 The Starry Protocol contains four parts: Pallet_NFT, Pallet_SubNFT, Pallet_EX, Frontend
-
 
 #### Architecture
 
 
 
-![](https://github.com/Starry-Network/frontend_mvp/blob/main/public/images/architecture.png?raw=true)
-
-
-
-**Pallet_NFT**
-
-Creates, destroys, transfers NFT. modifies existing Pallet-NFT so that they can create multiple NFT
+![](https://github.com/Starry-Network/frontend_mvp/raw/main/public/images/architecture.png)
 
 **Pallet_SubNFT**
 
-An NFT Wrapper to split NFTs into SubNFTs or fungible tokens, or a set of NFTs into fungible tokens
+An NFT Wrapper to split NFTs into SubNFTs or fungible tokens, or a set of NFTs into fungible tokens( without DAO)
+
+**Pallet_NFTDAO**
+
+Split a set of NFTs into fungible tokens and manage the NFTs in a DAO way, such as adding more NFTs or selling NFTs
 
 **Pallet_EX**
 
@@ -84,11 +81,12 @@ Interaction with users. Here is a  [demo](https://friendly-mclean-d455eb.netlify
 | 0c. | Testing Guide | Provide a full test suite and guide for NFT. The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. |
 | 0d. | Article/Tutorial | Write an article or tutorial that explains the work done as part of the grant on medium. 
 | 1a. | Node Repo | Complete the deployment of the basic public chain |  
-| 2a. | Pallet_NFT | Complete the development of pallet_nft, realize the single/multiple NFT create, transfer and burn mechanism
-| 2b. | Pallet_SubNFT | Complete the development of pallet_subNFT, relize the split, transfer, burn and recover mechanism|
+| 2a. | Pallet_SubNFT | Complete the development of pallet_subNFT, relize the split, transfer, burn and recover mechanism|
+| 2b. | Pallet_NFTDAO | Complete the development of Pallet_NFTDAO, relize the split NFTs, and dao mechanism|
 | 2c. | Pallet_EX | Complete the development of pallet_ex, relize the bonding curve and one price mechanism|
 | 3. | Front End | Complete the development of the basic interactive page in React, the demo is [demo](https://friendly-mclean-d455eb.netlify.app/)|  
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 6. | PSP | Add a Polkadot Standards Proposal about Splittable NFT |
 
 
 ## Future Plans
@@ -100,6 +98,16 @@ Interaction with users. Here is a  [demo](https://friendly-mclean-d455eb.netlify
 
 ## Additional Information :heavy_plus_sign: 
 
-What is the difference between SubNFT and Erc-721?
+- What is the difference between SubNFT and Erc-1155?
 
-subNFT is also erc-721 token.
+  erc-1155's multiple NFT is Semi-fungible tokens, these tokens use same token_id.
+
+  SubNFT splits single NFT into different NFTs, each SubNFT has its own token_id. As a result, subNFT is even rarer and suitable as a collector's item.
+
+  For example, we can use Semi-fungible tokens to create general admission tickets for a concert, and then use SubNFT to create commemorative tickets.
+
+  
+
+- What is the difference between SubNFT and Erc-721?
+
+  subNFT is also erc-721 token
