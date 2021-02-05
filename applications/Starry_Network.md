@@ -9,7 +9,7 @@
 
 It is well known that most NFTs are traded either directly or by auction, and the single NFT limit the flexibility of NFTs in some ways.
 
-Splittable NFT will bring more possibilities for NFT ecosystem. For example, buying SubNFTs on bonding curve will allow for better pricing of works, while NFTs that are otherwise very expensive can be collected by more people, and will also have applications in rare tickets, rare music works on sale, etc.
+Splittable NFT will bring liquidity and more possibilities for NFT ecosystem. For example, buying SubNFTs on bonding curve will allow for better pricing of works, while NFTs that are otherwise very expensive can be collected by more people, and will also have applications in rare tickets, rare music works on sale, etc.
 
 Starry is developing an NFT Wrapper and can split an NFT into some sub nft or fungible token or split a set of NFTs into fungible tokens.
 
@@ -100,6 +100,6 @@ Interaction with users. Here is a  [demo](https://friendly-mclean-d455eb.netlify
 
 ## Additional Information :heavy_plus_sign: 
 
-- What is the difference between SubNFT and Erc-721?
+What is the difference between SubNFT and Erc-721?
 
 subNFT is also erc-721 token.
