@@ -108,7 +108,7 @@ Milestone 2 — Working prototype with signing transactions
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can participate in the game, interact with their wallets etc. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Integrate game client with polkadot | We will, via polkadot.js, integrate a wallet solution and allow playing the game by interacting with the smart contracts to defend, attack, view leaderboards, and progress in game (basic) via experience points gained through combat. |
+| 1. | Integrate game client with polkadot.js for wallet management and signing txs | We will, via polkadot.js, integrate a wallet solution and allow playing the game by interacting with the smart contracts to defend, attack, view leaderboards, and progress in game (basic) via experience points gained through combat. |
 
 
 
