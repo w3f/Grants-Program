@@ -142,6 +142,7 @@ Below is list of other grant programs in the polkadot/substrate ecosystem:
 
 - [Darwinia Grants Program](https://docs.darwinia.network/docs/en/dev-bounty#grant-program)
 - [Moonbeam Grants Program](https://moonbeam.network/community/grants/)
+- [Edgeware Grants and Bounties](https://github.com/edgeware-builders/construction-projects)
 
 ## :information_source: License <!-- omit in toc -->
 
