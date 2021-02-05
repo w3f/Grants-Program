@@ -16,14 +16,6 @@ Starry is developing an NFT Wrapper and can split an NFT into some sub nft or fu
 ### Project Details 
 The Starry Protocol contains four parts: Pallet_NFT, Pallet_SubNFT, Pallet_EX, Frontend
 
-### Ecosystem Fit 
-What is the difference between SubNFT and Erc-1155?
-
-erc-1155's multiple NFT is Semi-fungible tokens, these tokens use same token_id.
-
-SubNFT splits single NFT into different NFTs, each SubNFT has its own token_id. As a result, subNFT is even rarer and suitable as a collector's item.
-
-For example, we can use Semi-fungible tokens to create general admission tickets for a concert, and then use SubNFT to create commemorative tickets.
 
 #### Architecture
 
@@ -105,3 +97,9 @@ Interaction with users. Here is a  [demo](https://friendly-mclean-d455eb.netlify
 - Simplify the usage process and make NFT more friendly to newcomers.
 - Implementing cross-chain transmission NFT.
 - Lead the community to hold online exhibitions and comment on good NFT works, using tokens to promote these beneficial behaviors.
+
+## Additional Information :heavy_plus_sign: 
+
+- What is the difference between SubNFT and Erc-721?
+
+subNFT is also erc-721 token.
