@@ -39,7 +39,7 @@ Creates, destroys, transfers NFT. modifies existing Pallet-NFT so that they can 
 
 **Pallet_SubNFT**
 
-Splitting single NFT into SubNFTs and recovering SubNFTs into single NFT
+An NFT Wrapper to split NFTs into SubNFTs or fungible tokens, or a set of NFTs into fungible tokens
 
 **Pallet_EX**
 
