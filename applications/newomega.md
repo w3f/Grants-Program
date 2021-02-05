@@ -84,7 +84,7 @@ Code commited reguarly to the GitHub repository.
 Milestone 1 — Migrate to Ink! and integrate game codebase
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 8500 DAI
+* **Costs:** 7500 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -100,7 +100,7 @@ Milestone 1 — Migrate to Ink! and integrate game codebase
 Milestone 2 — Working prototype with signing transactions
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 8500 DAI
+* **Costs:** 7500 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -111,27 +111,11 @@ Milestone 2 — Working prototype with signing transactions
 | 1. | Integrate game client with polkadot | We will, via polkadot.js, integrate a wallet solution and allow playing the game by interacting with the smart contracts to defend, attack, view leaderboards, and progress in game (basic) via experience points gained through combat. |
 
 
-Milestone 3 — Mobile application, improve graphics & gameplay
-* **Estimated Duration:** 1 month
-* **FTE:**  1.5
- Development 4 weeks 8500 DAI
- Graphics/Game Designer 2 weeks 2500 DAI
-* **Costs:** 11000 DAI
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
-| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Mobile application | We will package the game client into native iOS and Android applications. |
-| 2. | Graphics and engine | We will improve the ingame graphics and develop more features into the game engine. |
-
 
 ### Overview
-* **Total Estimated Duration:** 3 months
-* **Full-time equivalent (FTE):** 3.5 FTE
-* **Total Costs:** 28000 DAI
+* **Total Estimated Duration:** 2 months
+* **Full-time equivalent (FTE):** 2 FTE
+* **Total Costs:** 15000 DAI
 
 
 ## Future Plans
