@@ -11,7 +11,7 @@ It is well known that most NFTs are traded either directly or by auction, and th
 
 Splittable NFT will bring more possibilities for NFT ecosystem. For example, buying SubNFTs on bonding curve will allow for better pricing of works, while NFTs that are otherwise very expensive can be collected by more people, and will also have applications in rare tickets, rare music works on sale, etc.
 
-Starry is developing a substrate-based NFT ecosystem with support for creating single/multiple NFT,  splitting NFTs and buying SubNFTs
+Starry is developing an NFT Wrapper and can split an NFT into some sub nft or fungible token or split a set of NFTs into fungible tokens.
 
 ### Project Details 
 The Starry Protocol contains four parts: Pallet_NFT, Pallet_SubNFT, Pallet_EX, Frontend
