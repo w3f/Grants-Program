@@ -292,6 +292,8 @@ To assist you in defining it, we created a document with examples for some grant
 * **Estimated Duration:** 4 Weeks
 * **FTE:**  2.5 FTE
 * **Costs:** 0.14 BTC
+Prerequisites: 
+This milestone require Schnorrkel threshold signature issue https://github.com/w3f/schnorrkel/issues/11 completes. 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -308,9 +310,8 @@ To assist you in defining it, we created a document with examples for some grant
 | 2.2 | Mobile app | Generate P1 |
 | 3.0 | Substrate pellet: Create "generate DOT asset" task | Layer 1 verify user auth, create a task in the blockchain so that layer-2 can handle |
 | 4.0 | Gluon wasm module (TeaLeaf) | Select delegator and executor |
-| 4.1 | Gluon TeaLeaf | Executor mil|
-| 4.2 | Gluon TeaLeaf | Split and distribute P2 and P3 to replica (pinners) |
-| 4.3 | Gluon TeaLeaf | Response to Layer 1 |
+| 4.1 | Gluon TeaLeaf | Executor aggregates public key from initial pinners |
+| 4.2 | Gluon TeaLeaf | Delegator verify and response to Layer 1 |
 | 5.0 | Layer1 | Create Schnorr multisig test chain | 
 | 5.1 | Layer1 | Update user assets |
 
@@ -331,8 +332,8 @@ To assist you in defining it, we created a document with examples for some grant
 | 2.0 | Web Portal | Create DOT transaction page |
 | 3.0 | Mobile app | Scan, verify DOT transaction, and send to layer 1 |
 | 3.1 | Mobile app | Partial Sign tx using P1. Send the P1 signature to DOT light node|
-| 4.0 | Gluon TeaLeaf | Executor find pinners then reconstruct P2 |
-| 4.1 | Gluon TeaLeaf | Sign tx using P2. Send the P2 signatures to test net |
+| 4.0 | Gluon TeaLeaf | Executor find pinners and organize them to multisign tx individually |
+| 4.1 | Gluon TeaLeaf | Executor verify and aggregates signatures. Send the P2 signatures to test net |
 | 5.0 | Layer 1 | Settle payment distribution |
  
 ### Milestone 5 - Migrate and test on Polkadot
