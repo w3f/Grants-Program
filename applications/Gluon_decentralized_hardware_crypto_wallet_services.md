@@ -238,7 +238,7 @@ To assist you in defining it, we created a document with examples for some grant
 * Deliverables 0a-0d are mandatory and should not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research-oriented and as such there is no code to test)
 
 ### Overview
-* **Total Estimated Duration:** 4 months
+* **Total Estimated Duration:** 5 months
 * **Full-time equivalent (FTE):**  2.5 FTE
 * **Total Costs:** 0.7 BTC
 
@@ -308,10 +308,11 @@ To assist you in defining it, we created a document with examples for some grant
 | 2.2 | Mobile app | Generate P1 |
 | 3.0 | Substrate pellet: Create "generate DOT asset" task | Layer 1 verify user auth, create a task in the blockchain so that layer-2 can handle |
 | 4.0 | Gluon wasm module (TeaLeaf) | Select delegator and executor |
-| 4.1 | Gluon TeaLeaf | Executor generates DOT address with 2/3 MultiSig. P2 and P3|
+| 4.1 | Gluon TeaLeaf | Executor mil|
 | 4.2 | Gluon TeaLeaf | Split and distribute P2 and P3 to replica (pinners) |
 | 4.3 | Gluon TeaLeaf | Response to Layer 1 |
-| 4.4 | Layer1 | Update user assets |
+| 5.0 | Layer1 | Create Schnorr multisig test chain | 
+| 5.1 | Layer1 | Update user assets |
 
 ### Milestone 4 - Sign DOT transaction on testnet
 * **Estimated Duration:** 4 Weeks
@@ -320,7 +321,7 @@ To assist you in defining it, we created a document with examples for some grant
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0 | Testable features | User send DOT transfer transaction. Gluon sign the transaction and send it to DOT |
+| 0 | Testable features | User send DOT transfer transaction. Gluon sign the transaction and send it to test chain |
 | 1 | Update test instruction | update with new features |
 | 2 | Source code | |
 
@@ -331,8 +332,7 @@ To assist you in defining it, we created a document with examples for some grant
 | 3.0 | Mobile app | Scan, verify DOT transaction, and send to layer 1 |
 | 3.1 | Mobile app | Partial Sign tx using P1. Send the P1 signature to DOT light node|
 | 4.0 | Gluon TeaLeaf | Executor find pinners then reconstruct P2 |
-| 4.1 | Gluon TeaLeaf | Sign tx using P2. Send the P2 signatures to DOT light node |
-| 4.2 | Gluon TeaLeaf | DOT light node send signature and transaction to DOT main chain |
+| 4.1 | Gluon TeaLeaf | Sign tx using P2. Send the P2 signatures to test net |
 | 5.0 | Layer 1 | Settle payment distribution |
  
 ### Milestone 5 - Migrate and test on Polkadot
