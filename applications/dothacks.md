@@ -111,7 +111,7 @@ In this milestone, we will focus on the first stage. Future stages will be left 
 + Implementation of frontends (DApp UX).
 
 ## Future Plans
-The mission of Dothacks is to build a fair and secure cybersecurity platform, operating on DotHacks's mission is to build a fair and secure cybersecurity coordination platform, operating on a fully decentralized, proprietary protected public blockchain.
+The mission of Dothacks is to build a fair and secure cybersecurity platform, operating on a fully decentralized, proprietary protected public blockchain.
 
 As future plan, we hope to initiate a world-influential community that will attract global whitehats, cybersecurity agencies and vendors to join DotHacks. DotHacks will be fully governed by the community.
 
