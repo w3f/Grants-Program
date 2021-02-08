@@ -12,6 +12,8 @@
 
 In the existing Polkadot implementation, slashing protection has already been  performed locally.  In this proposal, we aim to design and implement a remote signing process within the Polkadot codebase client for ECDSA, EdDSA, and BLS signature algorithms for Parachains (including a dedicated key management service to be used with the remote signing module). This remote service will also include all existing slashings protection scenarios.
 
+We do not aim to provide the remote signer boundary for **VRFs** in Polkadot.
+
 ### Overview
 
 The validators play a crucial role on PoS networks due to operating stable, reliable, consistent, and secure operations of their nodes. Therefore, providing an ultimate security is of utmost important, otherwise, the whole system would fail. In this respect, they also manage their account and session keys which are used to staking, resource rental, governance, consensus, and security. However, if a validator is compromised then it can lead to a complete loss of funds of this validator. Therefore, a more secure and robust key management architecture (preferably in a distributed fashion) must be designed and implemented for long term purposes.
