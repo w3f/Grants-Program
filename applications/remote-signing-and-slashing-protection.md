@@ -42,7 +42,7 @@ Ankr also aims to provide staking services for Polkadot. Ankr (https://eth2.ankr
 
 ### Open Source/License
 
-This work is licensed under the Apache License 2.0, which means that you are free to get and use it for commercial and non-commercial purposes.
+This work is licensed under the Apache License 2.0, which means that all codes produced by this proposal will be open source and is free to use for all commercial and non-commercial purposes.
 
 ### Technical Discussions
 
