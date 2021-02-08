@@ -10,7 +10,7 @@
 
 ## Project Overview :page_facing_up:
 
-In this proposal, we aim to design and implement a remote signing process within the Polkadot codebase client for ECDSA, EdDSA, and BLS signature algorithms for Parachains (including a dedicated key management service to be used with the remote signing module). We also aim to provide a remote service which aims to prevent slashings and protect stakers’ funds. We do not plan to modify slashing protection that has been already in implemented in Polkadot codebase. Instead, we will provide additional remote slashing protection.
+In the existing Polkadot implementation, slashing protection has already been  performed locally.  In this proposal, we aim to design and implement a remote signing process within the Polkadot codebase client for ECDSA, EdDSA, and BLS signature algorithms for Parachains (including a dedicated key management service to be used with the remote signing module). This remote service will also include all existing slashings protection scenarios.
 
 ### Overview
 
