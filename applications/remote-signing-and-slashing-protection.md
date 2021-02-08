@@ -18,23 +18,23 @@ The validators play a crucial role on PoS networks due to operating stable, reli
 
 The proposed platform has independently separated the storage and the signing services from the validators and has provided a remote signing process through secure gRPC connections. This allows validators to create more robust and flexible operations, while providing additional security measures against possible attacks. Hence, it creates a more resilient solution compared to all other existing solutions, and in case of a compromise or uptime issues of the validator, Stkr can easily migrate to another validator without affecting users’ funds.
 
-The following architecture is used in Stkr.io for ETH Staking Service that utilizes remote signing services
+We have planned to implement the following architecture for Stkr's Polkadot staking service that utilizes remote signing services:
 
-![Overall Architecture](https://firebasestorage.googleapis.com/v0/b/test-sensor-veri.appspot.com/o/photo_2021-02-01_20-52-21.jpg?alt=media&token=d9c61b09-a5c2-4b04-8b82-3da2b09fed96)
+![Overall Architecture](https://firebasestorage.googleapis.com/v0/b/test-sensor-veri.appspot.com/o/Polkadot%20Design.png?alt=media&token=5ea6c795-52b1-48fd-aabe-22cda97d383e)
 
 * **Key Management:** Keys are securely and remotely generated and stored in a distributed manner.
 * **Key Agent:** It securely storer partial keys and partially signs incoming data.
-* **Sidecar:** It is an agent that initiate the node with credentials, url and etc. 
+* **Sidecar:** It is an agent that initiate the Polkadot validator node with credentials, url and etc. 
 * **Sidecar Management:** It manages sidecar, their task and keys
 * **Sidecar Gateway:** It routes sidecar in a secure way.
-* **Reward Calculation:** It periodically calculates how much a sidecar earns.
+* **Slashing Prevention Service:** Check for whether the incoming data cause slashing or not. If not update the state of the node.
 * **Message Bus:** Event streaming platform for high-performance data pipelines.
 
 
 In this proposal, we will provide similar architecture for remote server that handles signing and protection against slashing.
 ### Project Details
 * An overview of the technology stack to be used
-  * **Blockchain**: Polkadot Codebase
+  * **Blockchain**: Polkadot Codebase.  
 
 ### Ecosystem Fit
 
@@ -50,7 +50,8 @@ First, we will define API specifications for remote signing ans slashing protect
 
 * **Why we need Payload**
 
-The Polkadot nodes have already provided the local slashing prevention. However, in case of using container such as Kubernetes for making high availability of the nodes, this protection would not be sufficient because during restart of the node, two images of the same node can be available and may sign the same or different data that would cause slashing. Therefore, we propose to use remote signing services where all incoming data are checked against slashing status before being signed. In this respect, we need to provide the payload data that generates the signing data. Namely, for each signing request, the necessary metadata that generates the request should also be given. This data will also be stored in a persistence database for future slashing prevention. Although Polkadot nodes themselves have protection mechanisms against slashing, our proposal brings additional security protection against that kind of issue.
+The Polkadot nodes have already provided the local slashing prevention. However, in case of using container such as Kubernetes for making high availability of the nodes, this protection would not be sufficient because during restart of the node, two images of the same node can be available and may sign the same or different data that would cause slashing. Therefore, we propose to use remote signing services where all incoming data are checked against slashing status before being signed. In this respect, we need to provide the payload data that generates the signing data. Namely, for each signing request, the necessary metadata that generates the request should also be given. This data will also be stored in a persistence database for future slashing prevention.  Before storing the data, a microservice checks that whether signing this data causes slashing or not. For example, (i) the health check for the whole epoch. (ii) Check that producing two or more blocks for the same slot.  (iii) Check that signing multiple votes in the same round or on different chains. Although Polkadot nodes themselves have protection mechanisms against slashing, our proposal brings additional security protection against that kind of issue.
+
 
 * **Remote Signing Service**
 
@@ -227,7 +228,10 @@ message SignWithAllReply {
 ```
 * **Slashing Protection Service**
 
-To add slashing prevention we also need to pass payload details into backend. By default, the signing method passes only one message with public key, therefore we need to implement an additional signing method that supports payload and use it for signing. However, it should also be implemented in Polkadot codebase directly (i.e., not in Substrate).
+To add slashing prevention we also need to pass payload details into backend. By default, the signing method passes only one message with public key, therefore we need to implement an additional signing method that supports payload and use it for signing. However, it should also be implemented in Polkadot codebase directly (i.e., not in Substrate). 
+
+The payloads for signing have been already implemented in Polkadot codease sources and Polkadot does sign_with method calls. We plan to modify substrate by adding additional sign_with_payload method then we will also modify polkadot sources as well.
+
 
 Polkadot supports next signing payloads:
 
@@ -382,7 +386,7 @@ message RemoteKeystorePayload {
 
 
 ## Future Plans
-* We will provide a threshold based signature mechanism for remote signing procedures.
+* We will provide a threshold based signature mechanism for remote signing procedures. Moreover, we may extend keymanager part to use HSMs in order for providing high level of security.
 
 ## Additional Information :heavy_plus_sign:
 
