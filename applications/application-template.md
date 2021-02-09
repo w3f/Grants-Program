@@ -78,12 +78,12 @@ To assist you in defining it, we created a document with examples for some grant
 ### Overview
 * **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
 * **Full-time equivalent (FTE):**  Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-* **Total Costs:** Amount of Payment in BTC or DAI for the whole project. The total amount of funding needs to be below $30k for initial grants and $100k for follow-up grants at the time of submission. (e.g. 0.80 BTC)
+* **Total Costs:** Amount of Payment in USD for the whole project. The total amount of funding needs to be below $30k for initial grants and $100k for follow-up grants at the time of submission. (e.g. 1.000 USD)
 
 ### Milestone 1 Example — Implement Substrate Modules 
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 0.75 BTC
+* **Costs:** 1.000 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
