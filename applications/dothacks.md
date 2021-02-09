@@ -83,10 +83,6 @@ None.
 
 ## Development Roadmap :nut_and_bolt: 
 ### Overview
-* **Estimated Duration:** 6 weeks
-* **FTE:**  12
-* **Costs:** $30,000 DAI
-
 We split our milestones into 4 stages.
 
 1. First we plan to implement a bug bounty platform, without dispute resolvings. That is, we consider all parties honest at this stage.
@@ -96,7 +92,7 @@ We split our milestones into 4 stages.
 
 In this milestone, we will focus on the first stage. Future stages will be left as follow-ups.
 
-### Milestone 1(for stage 1)
+### Milestone 1 (for stage 1)
 * **Estimated Duration:** 6 weeks
 * **FTE:**  12
 * **Costs:** $30,000 DAI
@@ -111,7 +107,7 @@ In this milestone, we will focus on the first stage. Future stages will be left 
 + Implementation of frontends (DApp UX).
 
 ## Future Plans
-The mission of Dothacks is to build a fair and secure cybersecurity platform, operating on a fully decentralized, proprietary protected public blockchain.
+The mission of Dothacks is to build a fair and secure cybersecurity platform, operating on a fully decentralized, privacy-protected public blockchain.
 
 As future plan, we hope to initiate a world-influential community that will attract global whitehats, cybersecurity agencies and vendors to join DotHacks. DotHacks will be fully governed by the community.
 
