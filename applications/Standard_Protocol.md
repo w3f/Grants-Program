@@ -87,13 +87,13 @@ To reward the network participant, Standard protocol proposes new PoS reward sys
 
 * **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):**  1
-* **Total Costs:** 1000USDT
+* **Total Costs:** 1000DAI
 * **Payment Address:** `0x6EaD823cfB6d45996b8E413C7bE43282f042A78e`
 
 ### Milestone 1 - Rebased stablecoin supply vault 
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 500USDT
+* **Costs:** 500DAI
 
 This milestone focuses on building a oracle provider client for getting block rewards from standard protocol. PoA module for testing connection between oracle provider and the protocol is provided. Standard will use laminar's oracle module then rebases its stablecoin supply from vault module. 
 
@@ -176,7 +176,7 @@ then you get a client for submitting price information. For the standard's stabl
 ### Milestone 2 - PoS oracle reward distribution  
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 500USDT
+* **Costs:** 500DAI
 
 This milestone focuses on separating staking and phragmen election from block reward logic then apply it on oracle network participants while sharing era information in existing staking module. oracle account will act as validator in staking module, nominators will nominate oracle accounts. Slashes will be applied in each session(approximately 4 hours) when oracle provider submits outliers or does not register value in each session. Outliers are detected with [IQR method](https://online.stat.psu.edu/stat200/lesson/3/3.2). On each session, points are allocated to the elected oracle providers with constant divided by difference between median and the provider's value. Points will be allocated to elected oracle providers, and they will get block reward at the end of an era proportional to the point they made from sessions. Block rewards will be computed separately by being called from a reward module, managing the ratio of block reward in each era like `plasm_reward` runtime module(Credits to plasm network). 
 
