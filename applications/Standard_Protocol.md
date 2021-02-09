@@ -145,7 +145,7 @@ fn client_walkthrough() {
 
 Now combine this with cronjob like this provided example code from cronjob rust library [here](https://docs.rs/cronjob/0.3.17/cronjob/)
 
-```
+```Rust
 extern crate cronjob;
 use cronjob::CronJob;
 
