@@ -43,7 +43,8 @@ To sum up, Raze uses public-key homomorphic encryption to ensure transaction det
 
 To facilitate DeFi functionality, we have two additional modules: lock and unlock. The lock module allows an account owner to lock the account while the unlock module allows the owner to unlock the account.
 
-We will also build a cross-chain bridge that can map any ERC-20 token to the Polkadot blockchain and thus enable the cross-chain payment of these tokens.
+We will also integrate a cross-chain bridge (such as ChainBridge) that can map any ERC-20 token to the Polkadot blockchain and thus enable the cross-chain payment of these tokens.
+
 <p align="center">
   <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image1.png" alt="" width="70%"/>
 </p>
@@ -61,6 +62,8 @@ The client-side runs a CreateRedeemTx algorithm to invoke the redeem contract. I
 <p align="center">
   <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image4.png" alt="" width="40%"/>
 </p>
+
+The concrete design of the ZKP algorithms is a twist of the schemes proposed in the last two figures of the Zether paper: https://eprint.iacr.org/2019/191.pdf on Page 41 and 42 respectively. The main difference is that the burn-proof on Page 41 only considers the case where the user withdraws all the money in the account while our statement considers the case where the user might withdraw an amount smaller than the balance and the ConfTransfer proof on Page 42 does not consider the one-out-of-many proof part while ours does.
  
 The user can invoke the lock module by running a CreateLockTx algorithm on the client-side. The client inputs a secret key `sk` and an Ethereum address `addr` to generate a signature to demonstrate he is indeed the owner of the account and he authorizes to lock the account to the input address `addr`. The signature would be `Sign(x, addr)`. Similarly, the user can invoke the unlock module by running a CreateUnlockTx on the client-side. The input of CreateUnlockTx algorithm is the same as that of the CreateLockTx algorithm. It will generate a similar signature to unlock the account. Note, we will embed a nonce derived from the current epoch number to prevent the replay attack.
 
@@ -128,37 +131,36 @@ Micheal is a full-stack developer with 6 years experience in software developmen
 * Full-time equivalent (FTE): 3
 * Total Costs: 20,000 DAI
 
-#### Milestone 1 — Raze Substrate Modules and cross-chain bridge implementation
 
-* Estimated Duration: 2 month
-* FTE: 2
-* Costs: 15,000 DAI
+### Milestone 1 — Raze Substrate Modules implementation and cross-chain bridge integration
+* **Estimated Duration:** 2 month
+* **FTE:**  2 
+* **Costs:** 13K DAI
 
-The main deliverable of this milestone is Raze substrate pallet that supports: mint, transfer, redeem, lock and unlock functionalities. The substrate modules will support both the mainstream tokens issued in the Polkadot ecosystem such as DOT and KUSAMA and the cross-chain payment of ERC-20 tokens.
+The main deliverable of this milestone is Raze substrate pallet that supports: mint, transfer, redeem, lock and unlock functionalities. The substrate modules will support both the mainstream tokens issued in the Polkadot ecosystem such as DOT and KUSAMA and the cross-chain payment of ERC-20 tokens.   
 
-| **Number** | **Deliverable**                          | **Specification**                                            |
-| ---------- | ---------------------------------------- | ------------------------------------------------------------ |
-| 0a.        | License                                  | Apache 2.0 / MIT / Unlicense                                 |
-| 1.         | Raze Substrate module for private payment  | We will implement the zero-knowledge proof schemes and create a Substrate module that incorporates the verification logic for the aforementioned modules. It will support the verification of mint, transfer, redeem, lock and unlock. |
-| 2.         | A cross-chain bridge between Ethereum and Polkadot | The bridge will map ERC-20 tokens to the Polkadot ecosystem and facilitate their private payment in the Polkadot ecosystem. |
-| 3.         | Benchmark | Benchmark on the throughput and gas cost of the proposed modules. |
-| 4.         | Docker    | We will provide a dockerfile to demonstrate the usage of our modules. |
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof schemes and create a Substrate module that incorporates the verification logic for the aforementioned modules. The main statements of the zero-knowledge proof schemes will be identical to those described in the CreateTransferTx and CreateRedeemTx algorithms. It will support the verification of mint, transfer, redeem, lock and unlock for mainstream Polkadot tokens such as DOT and KUSAMA and any ERC-20 token. The contracts will be first written in Solidity and then imported to EVM compatible substrate pallets.  
+| 2. | Integration with a cross-chain bridge between Ethereum and Polkadot such as ChainBridge | The bridge will map ERC-20 token to the Polkadot ecosystem and facilitate their private payment in the Polkadot ecosystem.  
+| 3. | Benchmark | Benchmark on the throughput and gas cost of the proposed modules |   
+| 4. | Docker | We will provide a dockerfile to demonstrate the usage of our modules |
 
-#### Milestone 2 — Raze client implementation and integration
+### Milestone 2 — Raze client implementation and integration 
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 7K DAI
 
-* Estimated Duration: 1 month
-* FTE: 1
-* Costs: 5,000 DAI
+The main deliverable of this milestone is the client that can generate the transactions that can trigger the aforementioned contracts. 
 
-The main deliverable of this milestone is the client that can generate the transactions that can trigger the aforementioned contracts.
-
-| **Number** | **Deliverable**                          | **Specification**                                            |
-| ---------- | ---------------------------------------- | ------------------------------------------------------------ |
-| 0a.        | License                                  | Apache 2.0 / MIT / Unlicense                                 |
-| 1.         | Raze client | We will implement the client that supports the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, CreateLockTx, and CreateUnlockTx algorithms. The client will be able to generate the necessary transactions to trigger the corresponding substrate modules. |
-| 2.         | Anonymity mining | Through combining the lock and mint, and unlock and redeem modules, we will implement anonymity mining functionality, which allows the users to mine the private tokens and unlock the private tokens after a certain period of time. |
-| 3.         | Benchmark | Benchmark on the usability and latency of the proposed client functionalities. |
-| 4.         | Docker    | We will deploy the client on Kusama or Rococo and engage our community on the testing of our product. |
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 1. | Raze client module | We will implement the client that supports the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, CreateLockTx, and CreateUnlockTx algorithms. The client will be able to generate the necessary transactions to trigger the corresponding substrate modules. The client will be written in Javascript and we will provide a basic UI to take inputs from the users for the relevant algorithms.       
+| 2. | Anonymity mining | Through combining the lock and mint, and unlock and redeem modules, we will implement anonymity mining functionality, which allows the users to mine the private tokens and unlock the private tokens after a certain period of time.   
+| 3. | Benchmark | Perform unit tests on the individual algorithms to ensure their safety. Benchmark on the latency and usability of the proposed client functionalities |    
+| 4. | Docker | We will deploy the client on Kusama or Rococo and engage our community on the testing of our product. |
 
 ### Community Engagement
 
@@ -167,7 +169,7 @@ The main deliverable of this milestone is the client that can generate the trans
 
 ## Future Plans
 
-In phase 1, our goal is to achieve all the basic functionality of Raze Substrate Modules and cross-chain bridge implementation.
+In phase 1, our goal is to achieve all the basic functionality of Raze Substrate Modules and cross-chain bridge integration.
 
 In phase 2, we will open the source code of the mint module and the redeem module and launch the product based on the source code of mint and redeem module and it can be accessible by metamask or other decentralized walle.
 
