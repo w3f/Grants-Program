@@ -87,15 +87,82 @@ To reward the network participant, Standard protocol proposes new PoS reward sys
 
 * **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):**  1
-* **Total Costs:** 2000USDT
+* **Total Costs:** 1000USDT
 * **Payment Address:** `0x6EaD823cfB6d45996b8E413C7bE43282f042A78e`
 
 ### Milestone 1 - Rebased stablecoin supply vault 
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 1000USDT
+* **Costs:** 500USDT
 
-This milestone focuses on building a oracle provider client for getting block rewards from standard protocol. PoA module for testing connection between oracle provider and the protocol is provided. Standard uses laminar's oracle module then rebases its stablecoin supply from vault module. 
+This milestone focuses on building a oracle provider client for getting block rewards from standard protocol. PoA module for testing connection between oracle provider and the protocol is provided. Standard will use laminar's oracle module then rebases its stablecoin supply from vault module. 
+
+### Oracle provider client 
+
+Oracle provider client is actually a bot that uses [substrate-api-client](https://github.com/scs/substrate-api-client/blob/master/tutorials/api-client-tutorial/src/main.rs) to submit information in oracle module in a certain periods(e.g. 2 hour, 4 hour). For example, to send an oracle xt from an oracle client, 
+
+```rust
+#[derive(Encode, Decode, Debug)]
+struct Report {
+    asset_id: u128,
+    price: u128,
+}
+
+fn client_walkthrough() {
+    let url = "127.0.0.1:9944";
+
+    let signer = AccountKeyring::Alice.pair();
+
+    let api = Api::new(format!("ws://{}", url))
+        .map(|api| api.set_signer(signer.clone()))
+        .unwrap();
+
+    let xt: UncheckedExtrinsicV4<_> =
+        compose_extrinsic!(api, "OracleModule", "report", 1 as u128, 10 as u128);
+
+    println!("[+] Extrinsic: {:?}\n", xt);
+
+    let tx_hash = api
+        .send_extrinsic(xt.hex_encode(), XtStatus::Finalized)
+        .unwrap()
+        .unwrap();
+    println!("[+] Transaction got finalized. Hash: {:?}\n", tx_hash);
+
+    // get the asset info for an asset identifier
+    let res_str = api
+        .get_storage_map("Oracle", "Prices", Some(1u128), None)
+        .unwrap()
+        .unwrap();
+
+    let res_vec = Vec::from_hex(res_str).unwrap();
+
+    // type annotations are needed here to know that to decode into.
+    let report: Report = Decode::decode(&mut res_vec.as_slice()).unwrap();
+    println!("[+] Decoded Asset info: {:?}\n", report);
+}
+
+```
+
+Now combine this with cronjob like this provided example code from cronjob rust library [here](https://docs.rs/cronjob/0.3.17/cronjob/)
+
+```
+extern crate cronjob;
+use cronjob::CronJob;
+
+fn main() {
+    // Create the `CronJob` object.
+    let mut cron = CronJob::new("Test Cron", on_cron);
+    // Start the cronjob.
+    cron.start_job();
+}
+
+// Our cronjob handler.
+fn on_cron(name: &str) {
+    println!("{}: It's time!", name);
+}
+```
+
+then you get a client for submitting price information. For the standard's stablecoin price, the stablecoin is not in the market yet, so a constant will be used for testing. 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -109,7 +176,7 @@ This milestone focuses on building a oracle provider client for getting block re
 ### Milestone 2 - PoS oracle reward distribution  
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 1000USDT
+* **Costs:** 500USDT
 
 This milestone focuses on separating staking and phragmen election from block reward logic then apply it on oracle network participants while sharing era information in existing staking module. oracle account will act as validator in staking module, nominators will nominate oracle accounts. Slashes will be applied in each session(approximately 4 hours) when oracle provider submits outliers or does not register value in each session. Outliers are detected with [IQR method](https://online.stat.psu.edu/stat200/lesson/3/3.2). On each session, points are allocated to the elected oracle providers with constant divided by difference between median and the provider's value. Points will be allocated to elected oracle providers, and they will get block reward at the end of an era proportional to the point they made from sessions. Block rewards will be computed separately by being called from a reward module, managing the ratio of block reward in each era like `plasm_reward` runtime module(Credits to plasm network). 
 
