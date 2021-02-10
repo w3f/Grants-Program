@@ -164,6 +164,35 @@ fn on_cron(name: &str) {
 
 then you get a client for submitting price information. For the standard's stablecoin price, the stablecoin is not in the market yet, so a constant will be used for testing. 
 
+## Unit tests
+
+Standard protocol applies test driven development(TDD) on building runtime modules for the grant. 
+Here are unit tests that will be tested along the development.
+
+## Oracle
+
+oracle in milestone 1 should achieve:
+- checking whether the sender is the oracle provider in an era
+- oracle provider set is changed after an era. In each era, 5 oracle providers will be chosen.
+- oracle value is checked in each session to detect outliers using IQR method
+- outliers are recorded for an era like `ValidatorSlashInEra` in pallet_staking, in this case it just records whether it was slashed. In this case, we call it `ProviderSlashInEra`.
+- oracle providers are rewarded in each era proportional to the points received in each session. 
+- checking whether provider recorded a value in each session
+
+To check this, oracle provider module should have these test functions:
+- `oracle_provider_set_changes_after_an_era`: using a `start_era`, the function should check the provider set storage  
+- `oracle_provider_records
+
+## Vault 
+
+vault in milestone 1 should achieve:
+- In each era, vault module should bring registered stablecoin price from oracle module with its asset id (1) and rebase its total supply to `(circulating supply) / (oracle price)` in order to satisfy the ratio `(circulating supply) : (oracle price) = (total supply) : 1.0(USD)`.
+- Vault module should burn or mint stablecoin's module account's balance according to rebased balance
+- Alert community when total supply cannot be decreased anymore to keep the ratio(in case where decreased total supply exceeds circulating supply) in order to propose emergency shutdown or take further actions(e.g. issuing bonds, using community vault from stability fee to stabilize the ratio) 
+
+To check this, oracle provider module should have these test functions:
+
+
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0|
