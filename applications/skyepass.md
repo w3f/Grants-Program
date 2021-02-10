@@ -179,12 +179,13 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 
 | Number | Deliverable                    | Specification                                                |
 | ------ | ------------------------------ | ------------------------------------------------------------ |
-| 0a.    | Documentations/Project Website | A minimalism project homepage with a user manual that documents how to use SkyePass from account creation to manage passwords, and install extensions and browser extensions. <br/>A developer documentation that describes the encryption mechanism in details; Basic API documentation for extension development. |
-| 0b.    | Desktop App/Browser Extension  | **Desktop App**<br/>A React.js + Electron App to start with. The App will implement as close as possible to the graphic design (per 0d). <br/>- Wallet Creation / Backup Phase / Create Master Password<br/>- Wallet Import / Signin<br/>- Autolock after timed inactivity or manually lock the App <br/>- Create/Share/Manage Vaults<br/>- Add/Update/Delete Password Items (with 2FA OTP support)<br/>- Add/Update/Delete Secure Note/Credit Card <br/>- Basic ETH wallet extension<br/>- Basic Polkadot wallet extension <br/>- Application Marketplace<br/>- link social media or other identity handle to a public account<br/>- sharing a single password item directly to another user<br/><br/>**Browser Extension** <br/>- Communication to Desktop Application<br/>- Auto-fill account/passwords<br/> |
-| 0c.    | Smart Contract                 | All 4 smart contracts mentioned in the `Ecosystem Fit` section. For this phase, these contracts are testing contracts. |
-| 0d.    | UI/UX Design Standards         | Color Schema, Composition & Balance, Typography, Animation, Navigation, Icon Set, Brand Logo |
-| 0e.    | Basic Marketing Efforts        | Get on product-hunt and send out private alpha invitation    |
-| 0f.    | Testing                        | Well... test code and basic internal security audit          |
+| 0a.    | License                        | Apache 2.0                                                   |
+| 0b.    | Documentations/Project Website | A minimalism project homepage with a user manual that documents how to use SkyePass from account creation to manage passwords, and install extensions and browser extensions. <br/>A developer documentation that describes the encryption mechanism in details; Basic API documentation for extension development. |
+| 1.     | Desktop App/Browser Extension  | **Desktop App**<br/>A React.js + Electron App to start with. The App will implement as close as possible to the graphic design (per 0d). <br/>- Wallet Creation / Backup Phase / Create Master Password<br/>- Wallet Import / Signin<br/>- Autolock after timed inactivity or manually lock the App <br/>- Create/Share/Manage Vaults<br/>- Add/Update/Delete Password Items (with 2FA OTP support)<br/>- Add/Update/Delete Secure Note/Credit Card <br/>- Basic ETH wallet extension<br/>- Basic Polkadot wallet extension <br/>- Application Marketplace<br/>- link social media or other identity handle to a public account<br/>- sharing a single password item directly to another user<br/><br/>**Browser Extension** <br/>- Communication to Desktop Application<br/>- Auto-fill account/passwords<br/> <br/>**IPFS Connection**<br/>- upload / update / read from a public IPFS node. |
+| 2.     | Smart Contract                 | All 4 smart contracts mentioned in the `Ecosystem Fit` section. For this phase, these contracts are testing contracts, and they are subject to minor changes as long as they provide the same/very similar functionality. |
+| 3.     | UI/UX Design Standards         | Color Schema, Composition & Balance, Typography, Animation, Navigation, Icon Set, Brand Logo |
+| 4.     | Basic Marketing Efforts        | Get on product-hunt and send out private alpha invitation    |
+| 5.     | Testing                        | Well... test code and basic internal security audit          |
 ### Milestone 2  — Ready for Beta Release
 
 * **Estimated Duration:** 6 Weeks
@@ -199,14 +200,13 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 
 | Number | Deliverable                                    | Specification                                                |
 | ------ | ---------------------------------------------- | ------------------------------------------------------------ |
-| 1a     | Developer Resource/API Documentation/Community | - A comprehensive API spec documentation <br/>- Riot group for support, suggestions and questions<br/> |
-| 1b     | Desktop App/Browser Extension                  | Create an open Github repo for `extensions`, build a management system for open PR of new integrations. The "marketplace" in the desktop app will pull a list of available integrations from the repo.  <br/>Support at least 2 password importing source<br/>Support unencrypted password exporting<br/>Add in support for browser extension to inject hot wallet like Metamask<br/> |
-| 1c     | Smart Contracts                                | - Portals to interact with smart contract 3 & 4. Either standalone webpages or built into the desktop apps. <br/>- All contract tested and audited and we will deploy the V1.0 contract to the appropriate parachains. |
-| 1c     | Partnership                                    | Build partnerships for developer/marketing/user support resources |
-| 1d     | Mobile Apps                                    | Draft up UI/UX designs for mobile apps.                      |
-| 1e     | Equity Fundraising Prep                        | Draft up material in preparation of an institutional fundraising |
-| 1f     | **Security Auditing**                          | Audited by a trusted 3rd party                               |
-
+| 0a.    | Developer Resource/API Documentation/Community | - A comprehensive API spec documentation <br/>- Riot group for support, suggestions and questions<br/> |
+| 0b.     | **Security Auditing**                          | Audited by a trusted 3rd party                               |
+| 1.     | Desktop App/Browser Extension                  | Create an open Github repo for `extensions`, build a management system for open PR of new integrations. The "marketplace" in the desktop app will pull a list of available integrations from the repo.  <br/>Support at least 2 password importing source<br/>Support unencrypted password exporting<br/>Add in support for browser extension to inject hot wallet like Metamask<br/> |
+| 2.     | Smart Contracts                                | - Portals to interact with smart contract 3 & 4. Either standalone webpages or built into the desktop apps. <br/>- All contract tested and audited and we will deploy the V1.0 contract to the appropriate parachains. |
+| 3.     | Partnership                                    | Build partnerships for developer/marketing/user support resources |
+| 4.     | Mobile Apps                                    | Draft up UI/UX designs for mobile apps.                      |
+| 5.     | Equity Fundraising Prep                        | Draft up material in preparation of an institutional fundraising |
 
 
 ## Future Plans
