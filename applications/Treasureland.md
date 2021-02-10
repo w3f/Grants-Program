@@ -75,9 +75,9 @@ Manyofourteammatescome from gaming industries with more than 10 years of experie
 
 ### Overview
 
-* **Total Estimated Duration:** 12 weeks
+* **Total Estimated Duration:** 9 weeks
 * **Full-time equivalent (FTE):** 4
-* **Total Costs:** 18K DAI
+* **Total Costs:** 12K DAI
 
 ### Milestone 1  — NFT  protocol, trading, auctioning,minting
 
@@ -90,28 +90,11 @@ Manyofourteammatescome from gaming industries with more than 10 years of experie
 | 0a. | License | Apache License 2.0 | 
 | 0b. | Documentation | Documents containing the description of whole architecture design for NFTStore. |
 | 0c. | Testing Guide | We will provide a full test suite and guide for project |
-| 1a. | Pallet_treasureland_trade | trade module include: ```createOrder```, ```cancelOrder```, ```buy```  |
-| 1b. | Pallet_treasureland_auction | auction module include: ```startAuction```, ```bid```,```addVerifyAuctioneer``` |
-| 1c. | Pallet_treasureland_minting | minting module include: ```mint``` |
-| 2. | Front end | Implement front-end functions：NFT display, sale, auction, minting and other modules |
+| 1a. | Pallet_treasureland_trade | trade module include: ```createOrder```, ```cancelOrder```, ```buy```  implemented by rust |
+| 1b. | Pallet_treasureland_auction | auction module include: ```startAuction```, ```bid```,```addVerifyAuctioneer``` implemented by rust |
+| 1c. | Pallet_treasureland_minting | minting module include: ```mint```  implemented by rust |
+| 2. | Front end | Implement front-end based on React, functions：NFT display, sale, auction, minting and other modules |
 | 3. | Test | Functional test and bug fix |
-
-
-### Milestone 2  —  API function
-
-* **Estimated Duration:** 3 weeks
-* **FTE:** 3
-* **Costs:** 6K DAI
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache License 2.0 | 
-| 0b. | Documentation | Documents containing the description of API. |
-| 1. | NFT information browsing and enquiry | NFT information browsing, categorical   enquiry of an individual project, NFT info enquiry of a user, detailed info   on a single NFT |
-| 2. | NFT trading information | NFT transaction information and order information |
-| 3. | API service arrangement | Arranging API service, providing external services |
-| 4. | Unit Test | Unittest for API function |
-
 
 
 
