@@ -3,7 +3,7 @@
 
 * **Project Name:** Substrate Identity Directory
 * **Team Name:** https://github.com/Shard-Labs
-* **Payment Address:** bc1q5njhr3r0mgd398yvma75nv48g69c590a0f0zcx
+* **Payment Address:** 0x526F2bC9a5fc0839AD4956b06CB6dFf26F9503be
 
 
 ## Project Overview 
@@ -71,12 +71,12 @@ We have experience in several private and open source projects aswell as project
 ### Overview
 * **Total Estimated Duration:** 9 weeks
 * **Full-time equivalent (FTE):**  3
-* **Total Costs:** $36000
+* **Total Costs:** 36000 DAI
 
 ### Milestone 1 Designing and design implementation for list page / individual identity page. 
 * **Estimated Duration:** 6 weeks
 * **FTE:**  2
-* **Costs:** 26.000 USD
+* **Costs:** 26.000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -92,7 +92,7 @@ We have experience in several private and open source projects aswell as project
 ### Milestone 2 Implementing logic for sending tokens. Support for the offline mode.
 * **Estimated Duration:** 3 weeks
 * **FTE:**  2
-* **Costs:** 10.000 USD
+* **Costs:** 10.000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
