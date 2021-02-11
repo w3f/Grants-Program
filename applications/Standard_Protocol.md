@@ -186,11 +186,13 @@ To check this, oracle provider module should have these test functions:
 ## Vault 
 
 vault in milestone 1 should achieve:
-- In each era, vault module should bring registered stablecoin price from oracle module with its asset id (1) and rebase its total supply to `(circulating supply) / (oracle price)` in order to satisfy the ratio `(circulating supply) : (oracle price) = (total supply) : 1.0(USD)`.
+- In each era, vault module should bring registered stablecoin price from oracle module with its asset id (1) and rebase its total supply to `(circulating supply) / (oracle price)` in order to satisfy the ratio `(circulating supply) : (oracle price) = (total supply) : (1.0(USD) in decimal configured in the substrate chain)`.
 - Vault module should burn or mint stablecoin's module account's balance according to rebased balance
 - Alert community when total supply cannot be decreased anymore to keep the ratio(in case where decreased total supply exceeds circulating supply) in order to propose emergency shutdown or take further actions(e.g. issuing bonds, using community vault from stability fee to stabilize the ratio) 
 
-To check this, oracle provider module should have these test functions:
+To check this, vault module should have these test functions:
+
+- `supply_is_rebased_in_each_era`: Using an oracle module, set a price of an asset to `
 
 
 | Number | Deliverable | Specification |
