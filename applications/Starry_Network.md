@@ -71,7 +71,7 @@ Interaction with users. Here is a  [demo](https://friendly-mclean-d455eb.netlify
 ### Overview
 * **Total Estimated Duration:** 2.5 months
 * **Full-time equivalent (FTE):**  1
-* **Total Costs:** 12000 DAI
+* **Total Costs:** 10000 DAI
 
 ### Milestone 1 Example — Implement Substrate Modules 
 * **Estimated Duration:** 2.5 months
