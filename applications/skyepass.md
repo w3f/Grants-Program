@@ -200,13 +200,13 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 
 | Number | Deliverable                                    | Specification                                                |
 | ------ | ---------------------------------------------- | ------------------------------------------------------------ |
-| 0a.    | Developer Resource/API Documentation/Community | - A comprehensive API spec documentation <br/>- Riot group for support, suggestions and questions<br/> |
-| 0b.     | **Security Auditing**                          | Audited by a trusted 3rd party                               |
+| 0a.    | License                        | Apache 2.0                                                   |
+| 0b.    | Developer Resource/API Documentation/Community | - A comprehensive API spec documentation <br/>- Riot group for support, suggestions and questions<br/> |
+| 0c.     | **Security Auditing**                          | Audited by a trusted 3rd party                               |
 | 1.     | Desktop App/Browser Extension                  | Create an open Github repo for `extensions`, build a management system for open PR of new integrations. The "marketplace" in the desktop app will pull a list of available integrations from the repo.  <br/>Support at least 2 password importing source<br/>Support unencrypted password exporting<br/>Add in support for browser extension to inject hot wallet like Metamask<br/> |
 | 2.     | Smart Contracts                                | - Portals to interact with smart contract 3 & 4. Either standalone webpages or built into the desktop apps. <br/>- All contract tested and audited and we will deploy the V1.0 contract to the appropriate parachains. |
 | 3.     | Partnership                                    | Build partnerships for developer/marketing/user support resources |
 | 4.     | Mobile Apps                                    | Draft up UI/UX designs for mobile apps.                      |
-| 5.     | Equity Fundraising Prep                        | Draft up material in preparation of an institutional fundraising |
 
 
 ## Future Plans
