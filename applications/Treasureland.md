@@ -93,7 +93,7 @@ Manyofourteammatescome from gaming industries with more than 10 years of experie
 | 1a. | Pallet_treasureland_trade | trade module include: ```createOrder```, ```cancelOrder```, ```buy```  implemented by rust |
 | 1b. | Pallet_treasureland_auction | auction module include: ```startAuction```, ```bid```,```addVerifyAuctioneer``` implemented by rust |
 | 1c. | Pallet_treasureland_minting | minting module include: ```mint```  implemented by rust |
-| 2. | Front end | Implement front-end based on React, functions：NFT display, sale, auction, minting and other modules |
+| 2. | Front end | Implement front-end  based on React will support  polkadot-js extension, functions：NFT display, sale, auction, minting and other modules |
 | 3. | Test | Functional test and bug fix |
 
 
