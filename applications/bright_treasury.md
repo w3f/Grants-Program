@@ -2,7 +2,7 @@
 
 * **Project Name:** BrightTreasury
 * **Team Name:** Bright Inventions
-* **Payment Address:** 12TnLKTH7BgzdxV88cMN622UD4mgqwRs3E
+* **Payment Address:** 0xC1bE52Df4d34f86594cFaF69D374e2C48194d1cC
 
 ## Project Overview 
 
@@ -178,17 +178,40 @@ https://github.com/bright/bright-tresury
 - https://www.linkedin.com/in/katarzyna-łukasiewicz-b473901aa/
 
 ## Development Roadmap 
-The development of the specified features will be broken into 3 milestones, each taking 1 month to complete.
+The development of the specified user stories will be broken into 3 milestones, each taking 1 month to complete.
+
+
+Definition of Done for each user story:
+<ul>
+<li>Unit tests passed</li>
+<li>Code has been reviewed by peer</li>
+<li>Acceptance criteria were met</li>
+<li>Internal QA has been performed</li>
+<li>Documentation has been written</li>
+<li>Screens are responsive and prepared both for desktop and PWA (mobile and tablet)</li>
+<li>Browser compatibility</li>
+<ul>
+<li>Chrome from 70 upwards</li>
+  	   <li>Safari from 12 upwards</li>
+       <li>Firefox from 57 upwards</li>
+   	   <li>Edge from 42 upwards</li>
+</ul>
+</ul>
+
+
+At the end of each milestone:
+- The user stories listed for the given milestone have been implemented both on frontend and backed and the DoD criteria were met, allowing the user to perform the defined actions
+- The functionality has been deployed to stage environment, accessible for testing purposes
 
 ### Overview
 - Total Estimated Duration: 3 months
 - Full-time equivalent (FTE): 1
-- Total Costs: 0.7387 Bitcoin 
+- Total Costs: 28 500 DAI 
 
 ### Milestone 1 — Idea creating & Proposal submission & in-app logins
 - Estimated Duration: 1 month
 - FTE: 1.1 FTE
-- Costs: 0.2709 Bitcoin
+- Costs: 10 450 DAI
 
 
 The main goal of this milestone is to implement the core flow of the app, that is the Proposal lifecycle. As a result the user will be able to create an Idea, add all the necessary details, create Milestones for an Idea, make it public and decide to submit the Idea to the blockchain, turning it into a formal Proposal. The status of the Proposal will be then updated based on the data returning from the API. To perform these actions a user will need to be logged in, however browsing through ideas and proposals will be available to everyone. 
@@ -218,7 +241,7 @@ The main goal of this milestone is to implement the core flow of the app, that i
 ### Milestone 2 — discussions panel & treasury overview & multiple networks
 - Estimated Duration: 1 month
 - FTE: 0.9 FTE
-- Costs: 0.2216 Bitcoin
+- Costs: 8 550 DAI
 
 
 The goal of this milestone is to add more features to the ideas and proposals handling. The ideas as well as proposals will have the discussion functionality added and it will be possible to add them to multiple networks as well, as the representation of multiple blockchain networks feature will also be implemented at this stage. What is more, an overview of the treasury statistics will be presented for each network respectively. 
@@ -237,7 +260,7 @@ The goal of this milestone is to add more features to the ideas and proposals ha
 ### Milestone 3 — Bounties & in-app history
 - Estimated Duration: 1 month
 - FTE: 1 FTE
-- Costs: 0.2462 Bitcoin
+- Costs: 9 500 DAI
 
 
 The main goal of this milestone is implementation of the bounties mechanism. Users will be able to add and browse through bounties, votings for their curators and check the current status. The curators will be able to accept (or reject) their nominations and manage the bounty’s status. Additionally, in this milestone we plan to add a basic integration with Polkassembly. It will be possible to see the description of a proposal/bounty published on Polkassembly. We will also include the history feature based on the data from Polkassembly, which would allow users to browse through closed proposals and bounties, in addition to in-app ideas.
