@@ -75,11 +75,14 @@ We have experience in several private and open source projects aswell as project
 
 ### Milestone 1 Designing and design implementation for list page / individual identity page. 
 * **Estimated Duration:** 6 weeks
-* **FTE:**  2
+* **FTE:**  3
 * **Costs:** 26.000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how the user can utilize the basic application. |
+| 0c. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
 | 1. | Design a list page | Create design mockups in Figma. |
 | 2. | Design an individual identity page | Create design mockups in Figma. |
 | 3. | Implement list page | Build UI components in VueJS used in the identity list page. | 
@@ -91,7 +94,7 @@ We have experience in several private and open source projects aswell as project
 
 ### Milestone 2 Implementing logic for sending tokens. Support for the offline mode.
 * **Estimated Duration:** 3 weeks
-* **FTE:**  2
+* **FTE:**  3
 * **Costs:** 10.000 DAI
 
 | Number | Deliverable | Specification |
