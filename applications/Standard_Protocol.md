@@ -167,7 +167,7 @@ then you get a client for submitting price information. For the standard's stabl
 ## Unit tests
 
 Standard protocol applies test driven development(TDD) on building runtime modules for the grant. 
-Here are unit tests that will be tested along the development.
+Here are unit tests that will be done along the development.
 
 ## Oracle
 
@@ -181,7 +181,7 @@ oracle in milestone 1 should achieve:
 
 To check this, oracle provider module should have these test functions:
 - `oracle_provider_set_changes_after_an_era`: using a `start_era`, the function should check the provider set storage  
-- `oracle_provider_records
+- `oracle_provider_records_
 
 ## Vault 
 
@@ -193,6 +193,7 @@ vault in milestone 1 should achieve:
 To check this, vault module should have these test functions:
 
 - `supply_is_rebased_in_each_era`: Using an oracle module, set a price of an asset to `
+
 
 
 | Number | Deliverable | Specification |
@@ -210,6 +211,24 @@ To check this, vault module should have these test functions:
 * **Costs:** 500DAI
 
 This milestone focuses on separating staking and phragmen election from block reward logic then apply it on oracle network participants while sharing era information in existing staking module. oracle account will act as validator in staking module, nominators will nominate oracle accounts. Slashes will be applied in each session(approximately 4 hours) when oracle provider submits outliers or does not register value in each session. Outliers are detected with [IQR method](https://online.stat.psu.edu/stat200/lesson/3/3.2). On each session, points are allocated to the elected oracle providers with constant divided by difference between median and the provider's value. Points will be allocated to elected oracle providers, and they will get block reward at the end of an era proportional to the point they made from sessions. Block rewards will be computed separately by being called from a reward module, managing the ratio of block reward in each era like `plasm_reward` runtime module(Credits to plasm network). 
+
+# Unit test 
+
+Standard protocol applies test driven development(TDD) on building runtime modules for the grant. 
+Here are unit tests that will be done along the development. 
+Milestone 2 is about separating reward managment with an era from `pallet_staking` module.
+Current `pallet_staking` module has four features:
+1. manage inflation in one year and set total rewards
+2. trigger functions regarding election/reward distribution in start and end of an era
+3. record which validator has which nominator and balance
+4. record nominator status
+
+This milestone separates feature 1 and 2 from `pallet_staking` module and embed them to a module like `plasm-rewards`.
+
+Each module has its total reward computing function to 
+
+## 
+
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
