@@ -11,45 +11,35 @@
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
+Research and create flash loan platform using the Polkadot ecosystem. 
 
 ### Overview
-
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+Flash loans will be special uncollateralised loans that allow the borrowing of an asset, as long as the borrowed amount (and any fee) is returned before the end of the transaction. 
 
 ### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
-
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
-
+1. Flash loans will not require any collateral, lowering the barrier to entry and making them extremely useful tool for everyone.
+2. Any borrowed amount and the applicable fee must be returned within ths same transaction
+3. These loans could be used for arbitrage among various DOT assets.
+  
 ### Ecosystem Fit 
 Are there any other projects similar to yours? If so, how is your project different?
+Unless i am missing something, I have not seen anything like this in polkadot ecosystem.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
-* Names of team members	
+Harinder Swaich
 
 ### Contact
-* **Contact Name:** Full name of the contact person (e.g. John Brown)
-* **Contact Email:** Contact email (e.g. john@duo.com)
-* Website
+* **Contact Name: Harinder Swaich
+* **Contact Email: hswaich@gmail.com
 
 ### Legal Structure 
 * **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
 * **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
 
 ### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+I am a full stack developer with 20 years of experience in software development. I have worked with various databases and have lots of experience in .NET stack.
 
 ### Team Code Repos
 * https://github.com/<your_repo_1>
