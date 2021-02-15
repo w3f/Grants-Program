@@ -227,22 +227,34 @@ Current `pallet_staking` module has four features:
 4. record nominator status on each era and payout rewards by executing `payout_stakers` function in a certain era
 5. slash validators with spans except `Invulnerables`
 
-Since staking module actually processes reward by claiming to the module then get payout from the total reward recorded in the each era, the staking module's `inflation.rs` file can be separated to a module which focuses on determining total reward amount and record them for each network participant groups in each `end_era` function execution, and staking module can be used for its existing operation by total amount recorded by the separated module.  
+Since staking module actually processes reward by claiming to the module then get payout from the total reward recorded in the each era, the staking module's `inflation.rs` file can be separated to a module which focuses on determining total reward amount and record them for each network participant groups in each `end_era` function execution, and staking module can be used for its existing operation by total amount recorded by the separated module. 
 
-In Standard protocool `pallet_staking` module is extended to compute reward like [here](https://github.com/PlasmNetwork/Plasm/blob/dusty/frame/plasm-rewards/src/inflation.rs) and given out to other network in `end_era` function executed from `pallet_staking` module like [here](https://github.com/PlasmNetwork/Plasm/blob/c979c22036538bd4bd2afcf8e31fa4e9ffe54255/frame/plasm-staking/src/lib.rs#L2678). 
+`standard-rewards` module will focus on feature 1 and 2, and recording total stake rewards to each network participant modules.
 
-To check this, staking module have these test functions:
+In Standard protocol's `standard-staking` module, `pallet_staking` module removes `end_era` function and let `standard-rewards` module to record the `ErasTotalStakeRewards` storage for an each era. Oracles are also applies the same logic, but `slashing.rs` file is modified not having Slashingspan and slashed 1/3 when outlier is found in each `end_session`.
 
-`test_oracle_rewards_computation`: from the `inflation.rs` file in `pallet_staking` module, reward computing function is checked whether the reward splits the 
+To check this, `standard-rewards` module have these test functions:
+
+`test_oracle_rewards_computation`: from the `inflation.rs` file in `pallet_staking` module, reward computing function is checked whether the reward splits the right amount with the `ValidatorCount` returned from each network participant module. 
+
+`standard-staking` module have these test functions:
+
+`pallet_staking` test functions without regarding `end_era` function
+
+`standard-oracle` module have these test functions:
+
+`pallet_staking` test funcions witthout regarding `end_era` function
 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0c. | Documentation | Documentation will introduce how to nominate  | 
-| 1. | Staking module | Staking module to register oracle address and transaction to report prices will be set |  
-| 2. | Unit test code | Unit test codes in `tests.rs` in each runtime module  |
-| 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of Standard protocol chain |
+| 1. | Rewards module | Rewards module to caculate the total amount of rewards to receive with each network participants will be set | 
+| 2. | Staking module | `pallet_staking` module without the `end_era` logic function using NPoS Curve | 
+| 3. | Oracle module | Modification for phragmen election, slashing on `end_session`, and removing `end_era` function | 
+| 4. | Unit test code | Unit test codes in `tests.rs` in each runtime module  |
+| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of Standard protocol chain |
 
 
 
