@@ -1,6 +1,6 @@
 # Open Grant Proposal
 
-* **Project Name:** Polkadot ChainJS plugin 
+* **Project Name:** Polkadot & Kusama ChainJS plugin 
 * **Team Name:** API Market, Inc. dba AIKON
 * **Payment Address:** Ethereum Address: 0x7a6fdc8a113966d1236aB0FaB6dC5D3e5c05db88
 
@@ -8,21 +8,20 @@
 
 ### Overview
 
-AIKON is dedicated to driving mass-adoption of blockchain. We would like to bring our flagship ORE ID service to Polkadot and to a variety of parachains. However, in order to build our API service on Polkadot, we need an open source library called ChainJS. ChainJS is an abstraction layer that allows web applications to interact directly with Polkadot using javascript. This standard provides a handful of easy methods for common interactions on-chain, like creating wallets, transferring tokens and signing transactions.
+AIKON is dedicated to driving mass-adoption of blockchain. We would like to bring our flagship ORE ID service to Polkadot, Kusama and to a variety of parachains. However, in order to build our API service on Polkadot & Kusama, we need an open source library called ChainJS. ChainJS is an abstraction layer that allows web applications to interact directly with Polkadot using javascript. This standard provides a handful of easy methods for common interactions on-chain, like creating wallets, transferring tokens and signing transactions.
 
 Once we have this ChainJS plugin, we can work with companies to launch tokens or applications on Polkadot with ORE ID. For example, with Republic’s Note token, they use ORE ID to create multi-sig wallets for their investors and the investors use their ORE ID login to sign transactions, but ChainJS actually forms the transactions and sends them to the blockchain. 
 
-Our goal is to establish ChainJS as the de facto standard for javascript developers that want to build on Polkadot. 
-* Open Source standard for Javascript
-* Easy to use abstraction layer for web developers
-* Makes it easy for developers to build on Polkadot and on parachains, that can roll out their own fork of the ChainJS library
-* Allows AIKON to deploy ORE ID for companies on Polkadot
+Our goal is to establish ChainJS as the de facto standard for javascript developers that want to build on Polkadot & Kusama. 
+* Open Source standard for Javascript 
+* Easy to use abstraction layer for web developers - unlike Polkadot.js, ChainJS simplifies the interface layer making it easier for new developers
+* Makes it easy for developers to build on Polkadot, Kusama and on parachains, that can roll out their own fork of the ChainJS library
+* Allows AIKON to deploy ORE ID for companies on Polkadot & Kusama
 
-Once we have ChainJS, ORE ID provides four major benefits to businesses on Polkadot:
+Once we have ChainJS, ORE ID provides four major benefits to businesses:
 * Consumer friendly user experience - including social and email login
 * API for mass migration of large existing databases of users
-* API and javascript libraries that make it easy for developers to build on Polkadot
-* Fiat invoicing for Polkadot transactions
+* Fiat invoicing for Polkadot & Kusama transactions
 
 Our open source ChainJS Repo: https://github.com/TeamAikon/chain-js
 
@@ -71,10 +70,10 @@ The AIKON team has been building blockchain technology since 2017, and the found
 
 ## Development Roadmap :nut_and_bolt: 
 
-ChainJS Polkadot Plugin Devlierables
-ChainJS is a low-level Javascript helper library that helps you write code that can work with multiple blockchains. ChainJs uses a plug-in model and a unified interface to do common blockchain functions like constructing, signing, and sending blockchain transactions.
+ChainJS Polkadot & Kusama Plugin Devlierables
+ChainJS is a low-level Javascript helper library that helps you write code that can work with multiple blockchains. ChainJS uses a plug-in model and a unified interface to do common blockchain functions like constructing, signing, and sending blockchain transactions. Unlike Polkadot.js, ChainJS simplifies the interface layer making it easier for new developers who don't need to understand how Polkadot or Kusama work in order to commit basic actions to chain.
 
-Publish open source Polkadot plugin for ChainJS standard, including the following functions:
+Publish open source Polkadot & Kusama plugins for the ChainJS standard, including the following functions:
 * Create wallet
 * Create multisig wallet
 * Construct transaction
@@ -91,7 +90,7 @@ Estimated to be ~1 month total
 * **Full-time equivalent (FTE):** 2 FTE
 * **Total Costs:** $29,700 in DAI
 
-### Milestone 1 Example — Implement ChainJS Library for Polkadot
+### Milestone 1 Example — Implement ChainJS Library for Polkadot & Kusama
 * **Estimated Duration:** 1 month
 * **FTE:**  2
 * **Costs:** $29,700 in DAI
@@ -105,8 +104,8 @@ Estimated to be ~1 month total
 | 1. | Polkadot plugin for ChainJS standard | Create wallet, Create multisig wallet, Construct transaction, Transfer tokens |
 
 ## Future Plans
-Once we have ChainJS, our intention is to deploy our flagship ORE ID product to Polkadot. ORE ID is a service that helps enterprises migrate their user base to blockchains at scale. ORE ID provides four major benefits to businesses on Polkadot:
+Once we have ChainJS, our intention is to deploy our flagship ORE ID product to Polkadot & Kusama. ORE ID is a service that helps enterprises migrate their user base to blockchains at scale. ORE ID provides four major benefits to businesses on Polkadot:
 * Consumer friendly user experience - including social and email login
 * API for mass migration of large existing databases of users
-* API and javascript libraries that make it easy for developers to build on Polkadot
-* Fiat invoicing for Polkadot transactions
+* API and javascript libraries that make it easy for developers to build on Polkadot & Kusama
+* Fiat invoicing for Polkadot & Kusama transactions
