@@ -132,43 +132,7 @@ Josh Dipen has been working in blockchain space in corporate since ethereum was 
 
 ##  Development Roadmap :nut_and_bolt:
 
-This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
-
-  
-
-Below we provide an **example roadmap**. In the descriptions it should be clear how the project is related to Substrate and/or Polkadot. We recommend that the scope of the work can fit within a 3 month period and that teams structure their roadmap as 1 month = 1 milestone.
-
-  
-
-For each milestone:
-
-*  Please be sure to include a specification of your software. Treat it as a contract - the level of detail must be enough to later verify that the software meets the specification.
-
-To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-
-*  Please include total amount of funding requested per milestone.
-
-*  Please note that we require documentation (e.g. tutorials, API specifications, architecture details) in each milestone. This ensures that the code can be widely used by the community.
-
-*  Please provide a test suite, comprising unit and integration tests, along with a guide on how to run these.
-
-*  Please commit to providing a dockerfiles for the delivery of your project.
-
-*  Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
-
-*  Deliverables 0a-0d are mandatory and should not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research oriented and as such there is no code to test)
-
-  
-
-###  Overview
-
-*  **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-
-*  **Full-time equivalent (FTE):** Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-
-*  **Total Costs:** Amount of Payment in BTC or DAI for the whole project. The total amount of funding needs to be below $30k for initial grants and $100k for follow-up grants at the time of submission. (e.g. 0.80 BTC)
-
-  
+###  Overview  
 
 ###  Milestone 1 — Shopify completion
 
@@ -178,30 +142,16 @@ To assist you in defining it, we created a document with examples for some grant
 
 *  **Costs:** 0.40 BTC
 
-  
-
 | Number | Deliverable | Specification |
-
-| ------------- | ------------- | ------------- |
-
-| 0a. | License | MIT |
-
-| 0b. | Documentation |  On Shopify plugin page, in Readme.md in repositories |
-
-| 0c. | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
-
-| 0d. | Repository |  https://github.com/splytcore/Splyt_Protocol/blob/master/README.md
-
-| 1. |  Soft Launch Mainnet | Launch splyt onto mainnet, with migration-ability, upgradability along with token contract. Total ~15 contracts. |
-
-| 2. | Shopify App | Move from beta shopify plugin to production. Such that the whole shopify ecosystem is able to view, download and start using. |
-
-| 3. | Stylist Checkout Cart | We will create a Substrate module that will... |
-
-| 4. |  Stylist Checkout Cart |  Upgrade shopify plugin to account for splyt related token buy (browser wallet capability) |
-
-| 5. | NFT Inventory System | Launch a node running the Splyt SDK. Connect the Splyt SDK to Splyt protocol contracts through Ethereum blockchain.  |
-
+|-|-|-|
+| 0a | License | MIT |
+| 0b | Documentation | On Shopify plugin page, in Readme.md in repositories |
+| 0c | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
+| 0d | Repository | https://github.com/splytcore/Splyt_Protocol/blob/master/README.md |
+| 1 | Soft Launch Mainnet | Launch splyt onto mainnet, with migration-ability, upgradability along with token contract. Total ~15 contracts |
+| 2 | Shopify App | Move from beta shopify plugin to production. Such that the whole shopify ecosystem is able to view, download and start using |
+| 3 | Stylist Checkout Cart | Upgrade shopify plugin to account for splyt related token buy (browser wallet capability) |
+| 4 | NFT Inventory System | Launch a node running the Splyt SDK. Connect the Splyt SDK to Splyt protocol contracts through Ethereum blockchain |
 1.1 Fix migration contract, test migration and upgradability.
 
 1.2 Launch token contract separate from splyt contracts. Test connectivity and splyt feature upgradability with splyt contracts.
@@ -224,36 +174,23 @@ To assist you in defining it, we created a document with examples for some grant
 
 ###  Milestone 2 — Speed
 
-
 *  **Estimated Duration:** Q2`21 - 3 months
 
 *  **FTE:** 5
 * 
 *  **Costs:** 0.40 BTC
 
-  
-
 | Number | Deliverable | Specification |
-
-| ------------- | ------------- | ------------- |
-
-| 0a. | License | MIT |
-
-| 0b. | Documentation | Will provide an inline document of code and materials explaining how the integration/onboarding below works when we are ready. |
-
-| 0c. | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
-
-| 0d. | Repository |  https://github.com/splytcore/Splyt_Protocol/blob/master/README.md
-
-| 1. | Hard Launch |  Figure out what works, what doesn’t and bug fixes.|
-
-| 2. | Polkadot Bridge | Move from beta shopify plugin to production. Such that the whole shopify ecosystem is able to view, download and start using. |
-
-| 3. | Plasm Integration | We will create a Substrate module that will... |
-
-| 4. |  Uniswap Integration |  Upgrade shopify plugin to account for splyt related token buy (browser wallet capability) |
-
-| 5. |  Maison Du Onboarding | Launch a node running the Splyt SDK. Connect the Splyt SDK to Splyt protocol contracts through Ethereum blockchain.  |
+| - | - | - |
+| 0a | License | MIT |
+| 0b | Documentation | Will provide an inline document of code and materials explaining how the integration/onboarding below works when we are ready |
+| 0c | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
+| 0d | Repository |  https://github.com/splytcore/Splyt_Protocol/blob/master/README.md |
+| 1 | Hard Launch |  Figure out what works, what doesn’t and bug fixes |
+| 2 | Polkadot Bridge | Move from beta shopify plugin to production. Such that the whole shopify ecosystem is able to view, download and start using  |
+| 3 | Plasm Integration | Using plasm to integrate into polkadot. (beta/continuation to next milestone) |
+| 4 | Uniswap Integration | Upgrade shopify plugin to account for splyt related token buy (browser wallet capability) |
+| 5. | Maison Du Onboarding | Launch a node running the Splyt SDK. Connect the Splyt SDK to Splyt protocol contracts through Ethereum blockchain |
 
 1.1 Fix bugs in mainnet change what doesn’t work, NTF tracking on BC etc.
 
@@ -276,40 +213,26 @@ To assist you in defining it, we created a document with examples for some grant
 
 ###  Milestone 3 — Platform Expansion
 
-
 *  **Estimated Duration:** Q3`21 - 3 months
 
 *  **FTE:** 5
 * 
 *  **Costs:** 0.10 BTC
 
-  
-
 | Number | Deliverable | Specification |
-
-| ------------- | ------------- | ------------- |
-
-| 0a. | License | MIT |
-
-| 0b. | Documentation | Will provide an inline document of code and materials explaining how the integration/onboarding below works when we are ready. |
-
-| 0c. | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
-
-| 0d. | Repository |  https://github.com/splytcore/Splyt_Protocol/blob/master/README.md
-
-| 1. |  WooCommerce Integration | The 2nd biggest small business integration website will receive a beta version of splyt plugin.|
-
-| 2. | Inventory Management Portal | Separate management portal on splyt website, for shop owners to manage, modify and see sales data. |
-
-| 3. | NFT Wallets & Marketplace | Secondary marketplace to trade splyt NFTs, collect, resale etc. |
-
-| 4. | DeFi Soft Launch | Integrate with DeFi protocol for easier problem resolution and other services. (Beta) |
-
-| 5. | Polkadot Migration | Complete beta and v1 of plasm polkadot migration. |
+| - | - | - |
+| 0a | License | MIT |
+| 0b | Documentation | Will provide an inline document of code and materials explaining how the integration/onboarding below works when we are ready |
+| 0c | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
+| 0d | Repository |  https://github.com/splytcore/Splyt_Protocol/blob/master/README.md
+| 1 |  WooCommerce Integration | The 2nd biggest small business integration website will receive a beta version of splyt plugin |
+| 2 | Inventory Management Portal | Separate management portal on splyt website, for shop owners to manage, modify and see sales data |
+| 3 | NFT Wallets & Marketplace | Secondary marketplace to trade splyt NFTs, collect, resale etc. |
+| 4 | DeFi Soft Launch | Integrate with DeFi protocol for easier problem resolution and other services. (Beta) |
+| 5 | Polkadot Migration | Complete beta and v1 of plasm polkadot migration |
 
 
 ###  Milestone 4 
-
 
 *  **Estimated Duration:** Q4`21 - 3 months
 
@@ -317,51 +240,21 @@ To assist you in defining it, we created a document with examples for some grant
 * 
 *  **Costs:** self-funded
 
-  
-
 | Number | Deliverable | Specification |
-
-| ------------- | ------------- | ------------- |
-
-| 0a. | License | MIT |
-
-| 0b. | Documentation | Will provide an inline document of code and materials explaining how the integration/onboarding below works when we are ready. |
-
-| 0c. | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
-
-| 0d. | Repository |  https://github.com/splytcore/Splyt_Protocol/blob/master/README.md
-
-| 1. |   
-Inventory SDk
- |  
-Create and launch splyt inventory sdk on npm, later on nuget and java
-|
-
-| 2. |  
-DeFi Marketplace
- |  V1 launch of DeFi to be used on testnet
- |
-
-| 3. | Data & Analytics Portal
- |  
-Performance metrics for shop owners, corporations
-Monitors for splyt performance.
- |
-
-| 4. |  
-Decentralized medatada storage
- | Migrate from backend db servers to IPFS to make splyt data independent
- |
-
-| 5. |  
-Token Wallet Widget
- |  
-Start iPhone wallet app beta version (Android to be next)
-
+| - | - | - |
+| 0a | License | MIT |
+| 0b | Documentation | Will provide an inline document of code and materials explaining how the integration/onboarding below works when we are ready |
+| 0c | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
+| 0d | Repository |  https://github.com/splytcore/Splyt_Protocol/blob/master/README.md
+| 1 | Inventory SDK | Create and launch splyt inventory sdk on npm, later on nuget and java |
+| 2 | DeFi Marketplace | V1 launch of DeFi to be used on testnet |
+| 3 | Data & Analytics Portal | Performance metrics for shop owners, corporations
+Monitors for splyt performance |
+| 4 | Decentralized medatada storage | Migrate from backend db servers to IPFS to make splyt data independent |
+| 5 | Token Wallet Widget | Start iPhone wallet app beta version (Android to be next) |
 
 
 ###  Milestone 5 
-
 
 *  **Estimated Duration:** Q1`22 - 3 months
 
@@ -369,32 +262,19 @@ Start iPhone wallet app beta version (Android to be next)
 * 
 *  **Costs:** self-funded
 
-  
-
 | Number | Deliverable | Specification |
-
-| ------------- | ------------- | ------------- |
-
-| 0a. | License | MIT |
-
-| 0b. | Documentation | Will provide an inline document of code and materials explaining how the integration/onboarding below works when we are ready. |
-
-| 0c. | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
-
-| 0d. | Repository |  https://github.com/splytcore/Splyt_Protocol/blob/master/README.md
-
-| 1. | DeFi Hard Launch | Launch DeFi capabilities on mainnet. |
-| 2. | DeFi Dashboard | Inter-interaction dashboard between other DeFi apps |
-
-| 3. | Checkout Cart Customizations | Being able to customize carts to suit shops |
-
-| 4. | Affiliate Collaboration Platform/App | Collaboration platform for affiliates for social media promotions, product performance monitoring, and affiliate tagging |
-
-| 5. | Maker  Dao Integration | Planning to connect the maker’s metadata containing the makers’ off-chain identifiers into on-chain identifiers to integrate the data into Splyt Network |
-
+| - | - | - |
+| 0a | License | MIT |
+| 0b | Documentation | Will provide an inline document of code and materials explaining how the integration/onboarding below works when we are ready |
+| 0c | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
+| 0d | Repository |  https://github.com/splytcore/Splyt_Protocol/blob/master/README.md
+| 1 | DeFi Hard Launch | Launch DeFi capabilities on mainnet |
+| 2 | DeFi Dashboard | Inter-interaction dashboard between other DeFi apps |
+| 3 | Checkout Cart Customizations | Being able to customize carts to suit shops |
+| 4 | Affiliate Collaboration Platform/App | Collaboration platform for affiliates for social media promotions, product performance monitoring, and affiliate tagging |
+| 5 | Maker  Dao Integration | Planning to connect the maker’s metadata containing the makers’ off-chain identifiers into on-chain identifiers to integrate the data into Splyt Network |
 
 ###  Milestone 6
-
 
 *  **Estimated Duration:** Q2`22 - 3 months
 
@@ -402,27 +282,16 @@ Start iPhone wallet app beta version (Android to be next)
 * 
 *  **Costs:** self-funded
 
-  
-
 | Number | Deliverable | Specification |
-
-| ------------- | ------------- | ------------- |
-
-| 0a. | License | MIT |
-
-| 0b. | Documentation | Will provide an inline document of code and materials explaining how the integration/onboarding below works when we are ready. |
-
-| 0c. | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
-
-| 0d. | Repository | https://github.com/splytcore/Splyt_Protocol/blob/master/README.md |
-
-| 1. | Flash Sales Marketplace | Promotion capabilities based on time/inventory threshold (contract driven) |
-
-| 2. | Magento Integration | 3rd largest e-commerce platform integration (beta) |
-
-| 3. | Decentralized Governance | Introduce open source incentives and generate open source contributions |
-
-| 4. | Platform Messaging via TG & Others (Kakao) | Connect the current message platforms (TG/Kakao/Wechat, etc.) to buyers and sellers in the Splyt Network; easing them to communicate with each other without adding a new app or switching to a new message platform from their pre-existing one. |
+| - | - | - |
+| 0a | License | MIT |
+| 0b | Documentation | Will provide an inline document of code and materials explaining how the integration/onboarding below works when we are ready |
+| 0c | Testing Guide | Each contract to be tested before deploying. Tests available under github.com/splytcore/Splyt_Protocol/test |
+| 0d | Repository | https://github.com/splytcore/Splyt_Protocol/blob/master/README.md |
+| 1 | Flash Sales Marketplace | Promotion capabilities based on time/inventory threshold (contract driven) |
+| 2 | Magento Integration | 3rd largest e-commerce platform integration (beta) |
+| 3 | Decentralized Governance | Introduce open source incentives and generate open source contributions |
+| 4 | Platform Messaging via TG & Others (Kakao) | Connect the current message platforms (TG/Kakao/Wechat, etc.) to buyers and sellers in the Splyt Network; easing them to communicate with each other without adding a new app or switching to a new message platform from their pre-existing one |
 
 
 ##  Future Plans
