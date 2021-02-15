@@ -19,10 +19,10 @@
 * Our team feels that blockchain tehcnology should be brought to currently popular video games instead of making new ones. We want to create a virtual world where players can truly collaborate and build an economy, and we believe this is possible through a sandbox game like Minecraft.
 
 ### Project Details 
-Internal Project Proposal/Preliminary Research - https://docs.google.com/document/d/1Kw-vl5FAJaXPxNCw_bjYAEbIy6pwgKa2JZIX2zYb3Go/edit?usp=sharing
-API specifications - https://docs.google.com/document/d/1GaI8-InNprA3cGOjR9ANthVA6d5XNncIm3s0OgIJyig/edit?usp=sharing
-Documentation - https://github.com/Sperax/Minecraft-NFT-Server/tree/main/docs
-Core Tech stack to be used - https://docs.google.com/document/d/1OpFCPa9jO3oIrVMMP2FHLrkqAKF3yP4RDJExHJg2SvM/edit?usp=sharing
+Internal Project Proposal/Preliminary Research - https://docs.google.com/document/d/1Kw-vl5FAJaXPxNCw_bjYAEbIy6pwgKa2JZIX2zYb3Go/edit?usp=sharing \
+API specifications - https://docs.google.com/document/d/1GaI8-InNprA3cGOjR9ANthVA6d5XNncIm3s0OgIJyig/edit?usp=sharing \
+Documentation - https://github.com/Sperax/Minecraft-NFT-Server/tree/main/docs \
+Core Tech stack to be used - https://docs.google.com/document/d/1OpFCPa9jO3oIrVMMP2FHLrkqAKF3yP4RDJExHJg2SvM/edit?usp=sharing \
 UI Mockup - https://www.figma.com/file/eMVdV9FmhyJx3xiDotbWuu/Minecraft-NFT-Server?node-id=0%3A1
 
 ### Ecosystem Fit 
