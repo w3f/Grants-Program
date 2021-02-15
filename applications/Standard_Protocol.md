@@ -180,8 +180,9 @@ oracle in milestone 1 should achieve:
 - checking whether provider recorded a value in each session
 
 To check this, oracle provider module should have these test functions:
-- `oracle_provider_set_changes_after_an_era`: using a `start_era`, the function should check the provider set storage  
-- `oracle_provider_records_
+- `oracle_provider_set_changes_after_an_era`: using a `start_era`, the function should check the provider set storage whether the account id selected after era progression is different from before.  
+- `oracle_provider_is_slashed`: when outlier is detected, oracle module should register the provider to the `ProviderSlashInEra` storage. 
+- `outlier_is_detected`: when oracle is provided with array of the asset's price, IQR method should find the intended outlier in the test set.
 
 ## Vault 
 
@@ -192,7 +193,8 @@ vault in milestone 1 should achieve:
 
 To check this, vault module should have these test functions:
 
-- `supply_is_rebased_in_each_era`: Using an oracle module, set a price of an asset to `
+- `supply_is_rebased_in_each_era`: Using an oracle module, set an oracle price and start an era so that the vault module can executes rebase mechanism. The total supply of the stablecoin is checked whether it changed to the right amount.
+- `report_emergency`: check whether vault module reports when the rebased next total supply is less than the circulating supply. 
 
 
 
@@ -203,7 +205,8 @@ To check this, vault module should have these test functions:
 | 0c. | Documentation | Documentation will introduce how to install the oracle and participate to get block reward | 
 | 1. | Oracle client | Oracle client to receive information from external sources then submit information regularly to substrate runtime |
 | 2. | Modified Vault module | Vault module to rebase total supply of stablecoin with the ratio between circulating supply and price from oracle module |
-| 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of the oracle provider |
+| 3. | Unit test codes | Unit test codes in `tests.rs` in each runtime module |
+| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of the oracle provider |
 
 ### Milestone 2 - PoS oracle reward distribution  
 * **Estimated Duration:** 1 month
@@ -216,26 +219,30 @@ This milestone focuses on separating staking and phragmen election from block re
 
 Standard protocol applies test driven development(TDD) on building runtime modules for the grant. 
 Here are unit tests that will be done along the development. 
-Milestone 2 is about separating reward managment with an era from `pallet_staking` module.
+Milestone 2 is about adding oracle reward logic in `pallet_staking` module.
 Current `pallet_staking` module has four features:
 1. manage inflation in one year and set total rewards
-2. trigger functions regarding election/reward distribution in start and end of an era
+2. trigger functions regarding election/reward distribution in start and end of an era and record total reward in `end_era` function 
 3. record which validator has which nominator and balance
-4. record nominator status
+4. record nominator status on each era and payout rewards by executing `payout_stakers` function in a certain era
+5. slash validators with spans except `Invulnerables`
 
-This milestone separates feature 1 and 2 from `pallet_staking` module and embed them to a module like `plasm-rewards`.
+Since staking module actually processes reward by claiming to the module then get payout from the total reward recorded in the each era, the staking module's `inflation.rs` file can be separated to a module which focuses on determining total reward amount and record them for each network participant groups in each `end_era` function execution, and staking module can be used for its existing operation by total amount recorded by the separated module.  
 
-Each module has its total reward computing function to 
+In Standard protocool `pallet_staking` module is extended to compute reward like [here](https://github.com/PlasmNetwork/Plasm/blob/dusty/frame/plasm-rewards/src/inflation.rs) and given out to other network in `end_era` function executed from `pallet_staking` module like [here](https://github.com/PlasmNetwork/Plasm/blob/c979c22036538bd4bd2afcf8e31fa4e9ffe54255/frame/plasm-staking/src/lib.rs#L2678). 
 
-## 
+To check this, staking module have these test functions:
+
+`test_oracle_rewards_computation`: from the `inflation.rs` file in `pallet_staking` module, reward computing function is checked whether the reward splits the 
 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0c. | Documentation | Documentation will introduce how to nominate  | 
-| 1. | Oracle module | Oracle module to register oracle address and transaction to report prices will be set |  
-| 2. | Docker | We will provide a dockerfile to demonstrate the full functionality of Standard protocol chain |
+| 1. | Staking module | Staking module to register oracle address and transaction to report prices will be set |  
+| 2. | Unit test code | Unit test codes in `tests.rs` in each runtime module  |
+| 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of Standard protocol chain |
 
 
 
