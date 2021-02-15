@@ -4,9 +4,9 @@
 
 > This page is also available in [Chinese (中文)](./application-template-cn.md).
 
-* **Project Name:** Minecraft NFT Server
+* **Project Name:** Sperax Minecraft NFT Server
 * **Team Name:** Sperax
-* **Payment Address:** Add our company ETH or BTC address
+* **Payment Address:** ETH: 0xc28c6970D8A345988e8335b1C229dEA3c802e0a6
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
@@ -32,27 +32,29 @@ Similar projects include projects such as Decentraland and Enjin. We feel decent
 
 ### Team members
 * Mihir Wadekar
+* Joe Yu
 * Preston Ong
 
 ### Contact
-* **Contact Name:** Mihir Wadekar
-* **Contact Email:** mihir@sperax.io
+* **Contact Name:** Mihir Wadekar, Joe Yu
+* **Contact Email:** mihir@sperax.io, joe@sperax.io
 * https://sperax.io/
 
 ### Legal Structure 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+* **Registered Address:** 2180 Sand Hill Road Suite 170, Menlo Park, CA, USA, 94025
+* **Registered Legal Entity:** Newstyle Entertainment Blockchain Inc.
 
 ### Team's experience
 The team has experience developing solidity smart contracts for the Ethereum ecosystem. We feel they would have a decent idea of how to go about migrating the contracts to Polkadot as they had worked on building the Ethereum smart contracts fo this project.
 
 ### Team Code Repos
-* [Sperax-Minecraft-Server](https://github.com/<your_repo_1>)
+* [Sperax-Minecraft-Server](https://github.com/Sperax/Minecraft-NFT-Server)
 * [Mihir Wadekar](https://github.com/mw2000/)
 * [Preston Ong](https://github.com/preston4896)
 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/mihirwadekar/
+* https://www.linkedin.com/in/zhou-y-400894184/
 * https://www.linkedin.com/in/prestonong/
 
 ## Development Roadmap :nut_and_bolt: 
