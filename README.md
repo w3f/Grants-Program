@@ -4,14 +4,14 @@
   <img src="./src/Open_Grants_Program.png" style="width:1300px";>
 </p>
 
-**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **USD 30k for initial grants** and **USD 100k for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **bitcoin or DAI**.
+**:loudspeaker: Important:** The Web3 Foundation _Open Grants_ Program focuses on technology grants up to **USD 30k for initial grants** and **USD 100k for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **Bitcoin or DAI**.
 
 **_This page is also available in [Chinese (中文)](./README_CN.md)._**
 
 ---
 
-- [:clipboard: About](#clipboard-about)
-  - [Introduction](#introduction)
+- [Introduction](#introduction)
+  - [:clipboard: About](#clipboard-about)
   - [Team](#team)
     - [W3F Grants Committee](#w3f-grants-committee)
     - [W3F Grants Evaluators](#w3f-grants-evaluators)
@@ -25,9 +25,11 @@
   - [General Grants Program](#general-grants-program)
   - [Other Grant Programs](#other-grant-programs)
 
-## :clipboard: About
+## Introduction
 
-### Introduction
+As part of our commitment to promoting the Web3 ecosystem, we offer a comprehensive grants program focused on funding software development and research efforts related to Polkadot, Kusama and Substrate. For more information about the Web3 Foundation please visit the [About page](https://web3.foundation/about/) of our website.
+
+### :clipboard: About
 
 The Open Grants Program focuses on funding software development and research efforts related to **Polkadot, Kusama and Substrate**. It tries to achieve this while being:
 
@@ -37,7 +39,7 @@ The Open Grants Program focuses on funding software development and research eff
 
 The Web3 Foundation Open Grants Program focuses on technology grants up to **USD 30k for initial grants** and **USD 100k for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **bitcoin or DAI**. For larger grants, payments in other currencies and partly private submissions, please visit our [Web3 Foundation General Grants page](https://github.com/w3f/General-Grants-Program) on GitHub.
 
-You can find a list of areas in the Web 3.0 Technology Stack that demand particular development [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/grants.md#areas-of-interest-for-technical-grants), as well as a list of previously accepted projects [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/accepted_grant_applications.md).
+You can find a list of areas in the Web 3.0 Technology Stack that demand particular development [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md), as well as a list of previously accepted projects [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/accepted_grant_applications.md).
 
 Additionally the builders program [feedback board](https://feedback.parity.io/) may contain some useful ideas for grant projects.
 
@@ -79,7 +81,7 @@ Operations Team takes care of legal documents, invoicing and remittances.
 
 ## :pencil: Process
 
-1. **Grant Application:**
+1. **Application:**
    1. [Fork](https://github.com/w3f/Open-Grants-Program/fork) this repository
    2. In the newly created fork, create a **copy** of the [application-template.md](./applications/application-template.md). In other words: In the GitHub web interface, you need to create a new file and copy the content of the [application-template.md](./applications/application-template.md) inside the new file. _Don't change the template file directly!_
    3. Label the file as "project_name.md".
@@ -100,7 +102,7 @@ Operations Team takes care of legal documents, invoicing and remittances.
    1. Evaluators can (and usually do) issue comments and request changes on the pull request.
    2. Grants Evaluators will merge your pull request to accept the deliverable.
 5. **Milestone Payment:**
-   1. The Operations Team receives a notification once the delivery was accepted. As soon as feedback is provided by the evaluators, this feedback first needs to be resolved. 
+   1. The Operations Team receives a notification once the delivery was accepted. As soon as feedback is provided by the evaluators, this feedback first needs to be resolved.
    2. Operations Team makes the payment to the Bitcoin or Ethereum address specified in the initial application. The exchange rate for BTC depends on the time of payment.
 
 _The grant application can be amended at any time. However, this necessitates a reevaluation by the Committee._
