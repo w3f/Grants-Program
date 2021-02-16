@@ -166,7 +166,7 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 ### Overview
 * **Total Estimated Duration:** 16 weeks
 * **Full-time equivalent (FTE):**  2.5 FTE 
-* **Total Costs:** See Below
+* **Total Costs:** $30,000
 
 ### Milestone 1 — Core Encryption/Identity Management Smart Conctracts/Basic Desktop App/Basic Browser Extension 
 * **Estimated Duration:** 10 Weeks
