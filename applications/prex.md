@@ -46,7 +46,7 @@ As an originally non-technical founder, he has picked up blockchain development 
 
 ### Overview
 * **Total Estimated Duration:** Duration of the whole project (e.g. 3 months)
-* **Full-time equivalent (FTE):**  3 FTE
+* **Full-time equivalent (FTE):**  2 FTE
 * **Total Costs:** 0.6 BTC
 
 ### Milestone 1 MVP & refining of mechanics
