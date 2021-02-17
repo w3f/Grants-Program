@@ -82,6 +82,7 @@ As an originally non-technical founder, he has picked up blockchain development 
 | ------------- | ------------- | ------------- |
 | 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain. |
+| 6. | Documentation | We will provide a detailed guide for the platform on gitbook. |
 
 ## Future Plans
 After PREX has succeeded in becoming the market leader in the crypto space with a sizable userbase, we will start incorporating sports and esports next and finally general events like elections etc. With a large and active userbase, PREX would also play an important role in making crypto mainstream and exposing non-crypto users to the benefits and power of blockchain and Polkadot in particular.
