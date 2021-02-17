@@ -71,12 +71,12 @@ We have experience in several private and open source projects aswell as project
 ### Overview
 * **Total Estimated Duration:** 9 weeks
 * **Full-time equivalent (FTE):**  3
-* **Total Costs:** 36000 DAI
+* **Total Costs:** 34500 DAI
 
 ### Milestone 1 Designing and design implementation for list page / individual identity page. 
 * **Estimated Duration:** 6 weeks
 * **FTE:**  3
-* **Costs:** 26.000 DAI
+* **Costs:** 24.500 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
