@@ -21,13 +21,62 @@ Substrate for Mobile is the porting of Substrate Framework on mobiles. The main 
 
 Figure 1 Architecture of Substrate for Mobile
 
-Substrate Framework based project will be built as a library for Android/iOS, the application will load the library and launch the project.
+Substrate Framework based project will be built as a library for Android/iOS, the application will load the library and launch the project. 
+
+The **adapter layer** is the key part of whole project. **Adapter layer** provides interfaces for Substrate Framework to interact with Android OS and Android application/service through JNI (Java Native Interface) by the power of Android NDK.
+
 
 ![](https://raw.githubusercontent.com/ZeroHybrid-Network/materials/main/Flow%20of%20Calls.jpg)
 
 Figure 2 Flow of calls
 
-In this application, Android is the target OS to run Substrate based projects. Later, a bigger project named Zero Hybrid Network will be built on top of this application.
+It will be similar like this, the `Adapter Layer` will provide methods in Rust for caller from Android application/service based on [jni-rs](https://github.com/jni-rs/jni-rs)
+```Rust
+#![cfg(target_os="android")]     
+#![allow(non_snake_case)]
+
+use std::ffi::{CString, CStr};
+use jni::JNIEnv;
+use jni::objects::{JObject, JString};
+use jni::sys::{jstring};
+
+#[no_mangle]
+pub unsafe extern fn Java_com_example_android_MainActivity_hello(env: JNIEnv, _: JObject, j_recipient: JString) -> jstring {
+    let recipient = CString::from(
+        CStr::from_ptr(
+            env.get_string(j_recipient).unwrap().as_ptr()
+        )
+    );
+
+    let output = env.new_string("Hello ".to_owned() + recipient.to_str().unwrap()).unwrap();
+    output.into_inner()
+}
+```
+
+The Android application will call Substrate methods like shown below.
+```Java
+package com.example.android
+
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+import android.util.Log
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        System.loadLibrary("rust")
+        Log.d("rust", hello("World"))
+    }
+
+    external fun hello(to: String): String
+}
+```
+
+
+In the beginning, Android will be the only target OS to run Substrate based projects. Later, more OS will be added and a mobile phone blockchain project named Zero Hybrid Network will be built on top of this application.
 
 ### Ecosystem Fit
 
