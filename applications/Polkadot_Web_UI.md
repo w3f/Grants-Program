@@ -47,7 +47,9 @@ He has done consulting and development for 7 years and is now in blockchain appl
 The oragnization repo is quie new but some worki is ongoing in the background.
 
 ### Team Code Repos
-- [RidOne technologies](https://github.com/RidOne-technologies)
+- [Angular Identicon](https://github.com/RidOne-technologies/polkadot-angular-identicon)
+- [Web Identicon](https://github.com/RidOne-technologies/polkadot-web-identicon)
+
 ### Team LinkedIn Profiles
 - [Mor GUEYE](https://www.linkedin.com/in/mor-gueye-7659241a3/)
 
@@ -55,7 +57,7 @@ The oragnization repo is quie new but some worki is ongoing in the background.
 ### Overview
 * **Total Estimated Duration:** 5 weeks
 * **Full-time equivalent (FTE):** 0.62 FTE  
-* **Total Costs:** 8,000 DAI
+* **Total Costs:** 7,000 DAI
 
 ### Milestone 1: Angular-UI Identicon and Web Identicon for polkadot.js
 * **Estimated Duration:** 4 weeks
