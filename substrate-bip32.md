@@ -87,15 +87,11 @@ To assist you in defining it, we created a document with examples for some grant
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0a. | License | Unlicense |
+| 0b. | Documentation | We will provide full inline documentation of the code. |
+| 0c. | Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. All test vectors from bip32 specification will be implemented. In the guide we will describe how to run these tests. | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 1. | Rust library: bip32 | We will create a Rust library implementing bip32 specification |  
 
 ### Milestone 2 Example — Additional features
 ...
