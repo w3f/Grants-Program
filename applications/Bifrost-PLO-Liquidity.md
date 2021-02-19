@@ -11,7 +11,7 @@ Bifrost plans to provide KSM/DOT liquidity for the Kusama/Polkadot parachain slo
 
 However, currently users can participate in the parachain slot auction through Bifrost by this proposal, and obtain the corresponding vsDOT (Voucher Slot DOT) or vsKSM to unlock liquidity. vsKSM/vsDOT is fungible asset that represents all parachains' contributors KSM/DOT, with winner parachain's crowdloan rewards and the derivative is tradable. When users deposit KSM/DOT for a parachain's crownloan throught Bifrost protocol, they can get vsDOT/vsKSM and a certification that vertify the holder of certification can obtain the parachain's rewards, but vsDOT/vsKSM and certifications are not tradable yet until the parachian project wins the auction. If the project lose, those vsDOT/vsKSM and certifications will be eliminated automatically. When users want to cash out their lock-up KSM/DOT after the parachian wins the action, they can sell vsDOT or vsKSM on market with market price. Or they can hold it until the parachain slot expired, and redeem their original assets by certifications. 
 
-The trade module has been developed in advance, and vsDOT/vsKSM will be the second type of collateral assets' derivative supported by Bifrost Finance.
+The trade modules like Balancer, Uniswap, or Zenlink will be deployed in advance, and vsDOT/vsKSM will be the second type of collateral assets' derivative supported by Bifrost Finance.
 
 ![131611297852_ pic_hd](https://user-images.githubusercontent.com/72777624/105987528-5b3fa700-60d9-11eb-99b0-e46406414389.jpg)
 
@@ -68,6 +68,18 @@ In this solution, Bifrost provides an intermediate abstraction layer between inv
 - Bifrost: Through decentralized provision of vsDOT or vsKSM derivatives, the middle layer protocol that unlocks the liquidity of the parachain slot auction。
 - Polkadot/Kusama: Relay chain that has parachain slots and released for auction winners.
 
+Bifrost team will communicate and cooperate with potential parachain projects. Their Investors will transfer DOT/KSM to the Bifrost parachain and send transactions to call the mint-function integrated in Bifrost-Runtime to generate vsDOT/vsKSM. Bifrost's design goal is to become a parachain of Polkadot and/or Kusama. Bifrost collects investors' DOT/KSM and votes on other parachain candidates on behalf of investors. Bifrost Team does not have the rights and cannot control the DOT/KSM from investor users, and these funds will be automatically/decentralizedly kept and controlled by Bifrost-Parachain's code.
+
+The Bifrost Parachain can be treated as an ordinary investor, just like Alice, Bob, Bonding a part of the funds (DOT/KSM), and voting on Parachain A, Parachain B... From this point of view, Bifrost is only a PLO Contributor for other Parachain projects, but Bifrost's funds are from other investors.
+
+And how we make vsToken fungible under different unbonding periods? During vsToken minting, vsDOT/vsKSM and Expire-Date-For-ParachainXXX-Token (the certification of a parachain's contribution) will be generated at the same time. vsDOT is fungible, and vsKSM is also fungible, but the Expire-Date-For-ParachainXXX-Token and Expire-Date-For-ParachainYYY-Token corresponding to different periods and different parachains are different, and not fungible with each other. When the ParachainA slot expires, the relay chain will return part of the DOT/KSM to Bifrost, and any user holding vsDOT/vsKSM and Expire-Date-For-ParachainA-Token will be able to redeem the corresponding DOT/KSM. If a user only has vsDOT/vsKSM, but does not have Expire-Date-For-ParachainA-Token, he will not be able to perform the redemption operation, but he can choose to sell vsDOT/vsKSM, or buy Expire-Date-For-ParachainA-Token to perform the redemption operation.
+
+Users who hold Expire-Date-For-ParachainA-Token, and when ParachainA runs normally as a parachain, they will receive the reward from ParachainA, which will be handled by ParachainA-Team and ParachainA-Runtime code.
+
+For vToken tradable, the Balancer DEX module and other third-party modules such as Zenlink are integrated in Bifrost Runtime,, and vsToken (vsDOT/vsKSM) will be traded in these DEX. In addition, Bifrost as a DeFi protocol will also integrate other DeFi applications into Bifrost Runtime, Bifrost team is still doing further exploration. vToken, vsToken and Expire-Date-For-ParachainXXX-Token will run in these DeFi applications. For instance, vToken also can be over-collateralized in defi applications like Acala, loan aUSD and buy vToken again, and the user is actually doing leverage for vToken, because each vToken correspond staking reward, so the user can get leverage staking reward.
+
+
+
 ### Runtime modules
 To implement the above mechanism, we will add the following modules to Substrate runtime of Bifrost:
 1. Prepare PLO module
@@ -91,7 +103,7 @@ It contains the following features:
 ![181611737079_ pic_hd](https://user-images.githubusercontent.com/72777624/105987978-ff295280-60d9-11eb-8adc-23058f51b605.jpg)
 
 ### Security
-Investors use XCMP to transfer DOTs to the Bifrost platform, so the security of user funds is guaranteed by XCMP. Parachain projects that require PLO also use XCMP to deposit rewards asset on the Bifrost platform. For example: Alice transfer her DOT in relay chain to the Bifrost parachain through the XCMP cross-chain function, and then ALice can call the function provided by the Bifrost platform to bind ParachainA. Her rewards will be released linearly in time. The unreleased part is always locked and no one can embezzle it. It is as safe as being locked in the parachain itself. Parachain projects can also choose to deposit rewards gradually on the Bifrost platform in multi-batches.
+Investors use XCMP to transfer DOTs to the Bifrost platform, so the security of user funds is guaranteed by XCMP. Parachain projects that require PLO also use XCMP to deposit rewards asset on the Bifrost platform. For example: Alice transfer her DOT in relay chain to the Bifrost parachain through the XCMP cross-chain function, and then ALice can call the function provided by the Bifrost platform to bind ParachainA. Her rewards will be released linearly in time. The unreleased part is always locked and no one can embezzle it. It is as safe as being locked in the parachain itself. Parachain projects can also choose to release deposit rewards (contributor rewards) parachains themselves, it depends on the utility of XCMP at that time.
 
 ## Development Roadmap :nut_and_bolt: 
 
