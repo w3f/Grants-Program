@@ -33,7 +33,6 @@ When the ‘Play’ button is pressed ,the correct number of balls are chosen fr
 
 All previous winning combinations and their draw times will also be stored and made available to users of the app.
 
-
 ### Ecosystem Fit 
 
 ## Team :busts_in_silhouette:
@@ -44,7 +43,7 @@ All previous winning combinations and their draw times will also be stored and m
 ### Contact
 * **Contact Name:** Marvin Jonga
 * **Contact Email:** marvin.jonga@gmail.com
-https://www.luxuryproperty.com/team/marvin_jonga
+ https://www.luxuryproperty.com/team/marvin_jonga
 
 ### Legal Structure 
 * **Registered Address:** 701 Beit Al Khair Building, Al Murraqabat, Dubai, UAE
