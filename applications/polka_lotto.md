@@ -78,8 +78,8 @@ Marvin Jonga who will lead the development of the project, is the Senior Web Dev
 * **FTE:**  1
 * **Costs:** 7K USD
 
-| 1. | Code | Write the code to implement the lottery logic using Rust|  
-| 2. | Unit test| Perform unit test for each module written | 
+| 1. | Code | Write the code to implement the lottery logic using Rust|
+| 2. | Unit test| Perform unit test for each module written |
 
 ### Milestone 3  — Implement Frontend
 * **Estimated Duration:** 2 Weeks
