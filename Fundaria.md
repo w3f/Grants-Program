@@ -81,6 +81,6 @@ We also have current version of smart contract with implemented functions decrib
 Olexiy Ayahov have more then 20 startup ideas and inends to post most of them on Fundaria for further development.
 
 Possible additional information to include:
-* What work has been done so far? 1) Ability to create resentability page for a startup 2) Business development system alpha MVP 3) Startup smart contract template architecture and Solidity beta version
+* What work has been done so far? 1) Ability to create presentability page for a startup 2) Business development system alpha MVP 3) Startup smart contract template architecture and Solidity beta version
 * Are there are any teams who have already contributed (financially) to the project? No.
 * Have you applied for other grants so far? No.
