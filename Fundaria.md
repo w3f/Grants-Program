@@ -70,7 +70,7 @@ We also have current version of smart contract with implemented functions decrib
 | 0a  | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Testing environment | We will provide testing tools (based on current implementation of such tools developed on current version of smart contract written on Solidity) to test all smart contract interaction scenarios and record the video of core testing |
 | 0c. | Document/Tutorial | We will make document describing smart contract architecture and functionality and build in tutorial tips into web interface
-| 1.  | Smart contract code | We will create smart contract code in Java Script based on current implementation on Solidity based on document https://docs.google.com/document/d/1zOKRpq_9PJGUuaD4QoC5LQ2CYZhF6GSZbAk50hDLTVA/edit?usp=sharing  |  
+| 1.  | Smart contract code | We will create smart contract code in !ink based on current implementation on Solidity based on document https://docs.google.com/document/d/1zOKRpq_9PJGUuaD4QoC5LQ2CYZhF6GSZbAk50hDLTVA/edit?usp=sharing  |  
 | 2.  | Web interface | We will develop web interface for users (owner, investors, investment guides, delegated persons) to create their version of template smart contract and interact with it |
 
 
