@@ -53,6 +53,10 @@ A simple flow of the application is shown using below UML sequence diagram. Note
 [User flow diagram on Google Drive](https://drive.google.com/file/d/1kccNx437ZHP2Z1se8oaAWFuxsrwf8y1R/view?usp=sharing)
 
 Diving deep into possible user scenarios, I find they are more complicated than initially thought. For example, we need to code a way to prevent collusion of two projects, one of which could possibly use the matching fund to vote for the other's application in order to get more funds. That said, we will start with the basic logic and address issues occurred on the way.
+
+**Update #1**
+We have completed the initial design of the web app wireframe, so I'm attaching it below. It contains two major pages, the Project Listing page and Project Detail page. The  goals of those pages are to clearly present details of participating projects, as well as the matching amount to individual donation. I personally like the user comments and on-chain transactions elements at the bottom of the second page. Not only does it create a plaza for individual donators to speak out, it also connects the donation activity to those voices, thus creating a strong sense of authenticity. 
+[Web app wireframe on Lucidchart](https://lucid.app/lucidchart/b50c73aa-55ac-4037-a43d-6623fc6bf977/view?page=0_0#)
 ### Ecosystem Fit 
 > Are there any other projects similar to yours? If so, how is your project different?
 
