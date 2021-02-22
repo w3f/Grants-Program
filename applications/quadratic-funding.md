@@ -109,12 +109,12 @@ My strongest programing languages are C++ & C#, and have been ramping up on Rust
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  4 FTE
-* **Total Costs:** 1.5 BTC
+* **Total Costs:** 0.5 BTC
 
 ### Milestone 1 — Implement Substrate Modules 
-* **Estimated Duration:** 2 month
+* **Estimated Duration:** 1.5 month
 * **FTE:**  4
-* **Costs:** 1 BTC
+* **Costs:** 0.35 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -122,14 +122,14 @@ My strongest programing languages are C++ & C#, and have been ramping up on Rust
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains the usage of the API. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Tutorial | We will write tutorials on Medium that explains the work done as part of the grant. 
-| 1. | Substrate module: CLR | We will create a Substrate module that have below functionalities.<br />1. Project: create, cancel, contribute, withdraw<br />2. Proposal: create, vote, cancel, appeal  |  
+| 1. | Substrate module: CLR | We will create a Substrate module that have below functionalities.<br />1. Project: create, cancel, contribute, withdraw<br />2. Proposal: create, vote, cancel, finalize, appeal  |  
 | 2. | Substrate chain | Module CLR of our custom chain will be interacted with above defined functions through API |  
 | 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 ### Milestone 2 — Web Application (Dapp)
 * **Estimated Duration:** 1 month
 * **FTE:**  4
-* **Costs:** 0.5 BTC
+* **Costs:** 0.15 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
