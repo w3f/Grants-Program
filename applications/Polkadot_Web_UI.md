@@ -64,13 +64,20 @@ The oragnization repo is quie new but some worki is ongoing in the background.
 * **FTE:**  0,62
 * **Costs:** 7,000 DAI
 
-In this milestone, We will implement Angular and Web  UI components
+In this milestone, We will implement Angular and Web UI Identicon components
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
+| 0a. | Licence | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use the Web or Angular Identicon for its polkadot.js library based application|
+| 0c. | Testing guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
 | 1. | Angular_Identicon | implementation of the component + Testing |
 | 2. | Web_Identicon | implementation of the web component + Testing |
-| 3. | publishing into NPM registry|
+| 3. | publishing into NPM registry |
 | 4. | Documentation/ Tutorials | Documentation and Tutorials on usage example for both Angular and Web Identicon |
 
 ## Future Plans
-Creating a Flutter Identicon either by using under the hood the `Polkadot UI Web Identicon`  with  webview.
+Once the packages validated and deployed, we will enrich the ecosystem by :
+- creating with the same approach versions for web (framework agnostic ) and Angular  versions of the [react-qr](https://github.com/polkadot-js/ui/tree/master/packages/react-qr) that allows for the transfer of addresses and transaction payloads to and from external readers.
+
+- We also plan to create a Flutter Identicon (as Flutter will be used in our coming products) either by using under the hood the `Polkadot UI Web Identicon`  with  webview or using the polkadot dart library which is in WIP mode for now.
