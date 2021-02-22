@@ -74,6 +74,24 @@ To assist you in defining it, we created a document with examples for some grant
 * Please commit to providing a dockerfiles for the delivery of your project. 
 * Please indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the number of days along with their cost per day.
 * Deliverables 0a-0d are mandatory and should not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research oriented and as such there is no code to test)
+* 
+# Road map of a BIP32 like substrate wallet.
+
+1. Develop a standard BIP32 key generator from scrach.
+   The newly implemented BIP32 library should be written in rust and can compile with no_std library. The reason of doing this is that we would like to compile int into wasm code so that it can also run as a web application. We start the library using secp256k1 so that we can test is using exsiting bip32 test suite.
+
+2. Test it in a web environment.
+   Once wasm-pack was installed via the following,
+   `curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh`
+
+   We should be able to test the code using the following script:
+   `wasm-pack test --chrome`
+
+3. Replace the secp256k1 with sr25519. This requires us to integrate substrate's sr25519 package with this BIP32 style wallet. From this point, this package will no longer generate Bitcoin keys but substrate keys. (This mile-stone has not been achieved yet). After this stage we can deliver the cli command.
+
+4. Providing an web user interface so that any substrate-ui can integrate our wallet in their web interface.
+
+
 
 ### Overview
 * **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
