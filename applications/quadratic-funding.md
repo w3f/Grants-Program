@@ -55,7 +55,9 @@ A simple flow of the application is shown using below UML sequence diagram. Note
 Diving deep into possible user scenarios, I find they are more complicated than initially thought. For example, we need to code a way to prevent collusion of two projects, one of which could possibly use the matching fund to vote for the other's application in order to get more funds. That said, we will start with the basic logic and address issues occurred on the way.
 
 **Update #1**
-We have completed the initial design of the web app wireframe, so I'm attaching it below. It contains two major pages, the Project Listing page and Project Detail page. The  goals of those pages are to clearly present details of participating projects, as well as the matching amount to individual donation. I personally like the user comments and on-chain transactions elements at the bottom of the second page. Not only does it create a plaza for individual donators to speak out, it also connects the donation activity to those voices, thus creating a strong sense of authenticity. 
+
+We have completed the initial design of the web app wireframe, so I'm attaching it below. It contains two major pages, the Project Listing page and Project Detail page. The  goals of those pages are to clearly present details of participating projects, as well as the matching amount to individual donation. I personally like the user comments and on-chain transactions elements at the bottom of the second page. Not only does it create a plaza for individual donators to speak out, it also connects the donation activity to those voices, thus creating a strong sense of authenticity.
+
 [Web app wireframe on Lucidchart](https://lucid.app/lucidchart/b50c73aa-55ac-4037-a43d-6623fc6bf977/view?page=0_0#)
 ### Ecosystem Fit 
 > Are there any other projects similar to yours? If so, how is your project different?
@@ -140,13 +142,18 @@ My strongest programing languages are C++ & C#, and have been ramping up on Rust
 | 1. | UI Design | We will create UI sketches to demonstrate the user flow of the web application, and post here for advice |
 | 2. | Javascript Library | We will add new APIs to Polkadot javascript library, test those and get them ready for any kind of node.js or website javascript program |  
 | 3. | Application Implementation | We will incorporate the javascript library from the previous step and build a web application that interacts with our substrate chain. Note that the web is a separate product from polkadot.js.org/apps/#/rpc and will provide user friendly interface without necessary knowledge of API calls. |  
-| 4. | User Study | We will invite a group of beta users to try out our product and give us authentic feedback |             
-| 5. | Deployment Instructions | We will provide one-line runner for the web application so others could spin up the app easily. |
+| 4. | Deployment Instructions | We will provide one-line runner for the web application so others could spin up the app easily. |
 
 ## Future Plans
 > Please include the team's long-term plans and intentions.
 
 In my opinion there are tons of things we can keep iterating on, but there are four important areas in terms of future development.
+
+1. User Study. We should invite a group of beta users for trial and feedback after launch. According to @semuelle, a few questions should be answered in the study plan. For example,
+    - How do we choose subjects? What is the target size?
+    - What's the questionnaire for the users in the study?
+    - How do we measure and make use of the results?
+
 1. Generalization of incentive protocol. The CLR mechanism, if proven, is one of many ways to conduct crowd-funding for public goods. Just as Substrate provides a framework for any kind of state transition machine, the donation-matching, or even broadly, incentive part should be generalized to easily adapt to other methods. Although new methods need to be coded into the substrate module, but as it evolves, the module will contain most common used methods for the council to choose from.
 
 1. Reputation protocol integration. The incentive protocol layer sits on top of and relies on reputation protocol. Although the CLR can work without knowing the reputation of a wallet, a lot more advanced features will require a reputations system. For example, without reputation, the risk of cheating is minimum. Therefore, the incentive protocol needs a lot of heavy-lifting work, such as keeping tracking of the relationship of every wallet pair to prevent fraud. Ideally, there will be a reputation layer on Polkadot for our incentive protocol to build upon.
@@ -154,6 +161,7 @@ In my opinion there are tons of things we can keep iterating on, but there are f
 1. Fund dispensing. We have this idea to raise money for public goods, however, could we also improve the way we spend the money? With the transparency of blockchain, the delivery of the work is open to public for examination. By connecting the developer to the public directly, the product will dramatically reduce the work required from the traditional middleman and create a fair competition among developers.
 
 1. Social experiment. The project is only valuable when put into real-world scenarios. It, along with Polkadot, are great exciting social experiments. I believe in beta and later production we will encounter challenges on both technical and philosophical sides. It will be an on-going effort to address those issues, and to improve the product as it's constantly put into test.
+
 
 ## Additional Information :heavy_plus_sign: 
 > Possible additional information to include:
