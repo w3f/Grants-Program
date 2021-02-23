@@ -72,7 +72,35 @@ Account id is the address of the cook tokens holder (governance tokens) and u32 
 
   
 #### Tech Stack
-We will develop a custom pallet and a Substrate node that will work as Parathread of Polkadot. Hopefully in the future, we will be able to secure a Parachain Slot. We will use Rust language and the Substrate framework for the node and pallet development. Typescript and ReactJs for the user interface.
+
+We will develop a custom pallet and a Substrate node that will work as Parachain of Polkadot. Hopefully in the future, we will be able to secure a Parachain Slot. We will use Rust language and the Substrate framework for the node and pallet development. Typescript and ReactJs for the user interface.
+
+Pallet 
+The pallet will allow the following functions:
+1) Fund managers will be able to create new investment funds with the following input data:  
+    - Name (<= 32 chars);  
+    - Symbol (3 chars);  
+    - Description  (max 8192 bytes);  
+    - Fee in % (example 3%);  
+    - Accepted Tokens (Array) example BTC,ETH,DOT;  
+    - Liquidity Pool Type (example "Spot Defi");  
+    - Platform Whitelist (Array) example Uniswap, Compound;  
+    - Token Whitelist (Array) example BTC,ETH,DOT,RVN,BTG;  
+    - Allowed Leverage , example 3x. 
+
+2) Investors will be able to deposit their assets in the selected investment funds. The pallet will pass the data of the available investment funds to the front-end UI.
+
+3) Fund managers will be able to allocate available assets in the whitelisted platforms and tokens, the pallet will make the required procedure without giving ownership access to the underlying assets. In other words, fund managers will not be able to withdraw the assets from funds.  
+
+4) Investors will be able to withdraw their investments from their invested funds, the pallet will take care of the related procedures of withdrawal.
+
+5) Fund managers will be able to request the dissolution of funds, the pallet will automatically withdraw underlying assets from the funds, refund them to investors and settle the corresponding management fees accrued by the fund manager.  
+
+6) The fund manager will be able to claims management fees, the pallet will make the calculation of the accrued fees till the current block number and transfer the amount to the fund manager.
+
+7) Investor will be able to see their own investments and their performances, the pallet will fetch the necessary data from the invested funds and use asyncronous off-chain workers to access Oracles, such as Chainlink to get pricing information.
+
+8) The pallet will allow the transfer of funds in ckToken and COOK tokens between users's accounts
 
 
 ### Ecosystem Fit 
@@ -132,7 +160,7 @@ https://github.com/CookFinance/cook-distribution-and-reward
 * **Full-time equivalent (FTE):**  2 FTE
 * **Total Costs:** 14k DAI
 
-### Milestone 1 Initialize Parathread & Frontend Implementation
+### Milestone 1 Initialize Parachain & Frontend Implementation
 * **Estimated Duration:** 2 weeks
 * **FTE:**  2
 * **Costs:** 4k DAI
@@ -144,7 +172,7 @@ https://github.com/CookFinance/cook-distribution-and-reward
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
 | 1. | Frontend | We will implement frontend using React.js so that:  1. Users can connect to the polkadot wallet.  2. The fund manager can initialize a fund, and allocate assets via Centrifuge.  3. The investor can browse the fund list, check the performance details of a fund, and invest in a fund. |  
-| 2. | Substrate | Create a substrate node with custom pallet working as parathread of Polkadot, which frontend can interact with. |    
+| 2. | Substrate | Create a substrate node with custom pallet working as parachain of Polkadot, which frontend can interact with. |    
 | 3. | Docker | We will provide a dockerfile to demonstrate the full functionality |
 
 ### Milestone 2 Fund Investment & Management Implementation
