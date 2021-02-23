@@ -93,13 +93,13 @@ Alexandra is responsible for product development and cooperation with other team
 
 * **Total Estimated Duration:** 4 months
 * **Full-time equivalent (FTE):**  3 FTE
-* **Total Costs:** 70000 DAI
+* **Total Costs:** 63000 DAI
 
 ### Milestone 2 — Implement zkSNARK circuit and cryptography for private transaction
 
 * **Estimated Duration:** 2 months
 * **FTE:**  3
-* **Costs:** 40000 DAI
+* **Costs:** 36000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -124,7 +124,7 @@ The resulting software will be available to sign and prove, encrypt and decrypt 
 
 * **Estimated Duration:** 2 months
 * **FTE:**  3
-* **Costs:** 30000 DAI
+* **Costs:** 27000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
