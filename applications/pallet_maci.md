@@ -55,6 +55,54 @@ We are going to need to limit the possibility, effectiveness and reliability of 
 To do that, the pallet will have to utilize zero knowledge proofs.  
 Mostly based on the design originating from [this thread](https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413), the pallet will use zk-SNARKs. The most similar contender for you to see what we're going to build would be the Ethereum [implementation](https://github.com/appliedzkp/maci) of the MACI design.
 
+**Pallet interface**
+
+Rough glimpse of how the public methods of the pallet will look like. The interactions of all actors and guide to function usage can be seen on [this diagram](https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgcGFsbGV0IG1hY2kKCmFjdG9yIFVzZXIKcGFydGljaXBhbnQAHAhNQUNJAAsNQ29vcmRpbmF0bwAiDk9mZmNoYWluIGNvbXB1dGVyCgpub3RlIGxlZnQgb2YAWwZUaGUgY29udHJpYnV0b3Igd2hpY2ggaXMgCmdvaW5nIHRvIG1ha2UgYSB2b3RlCmVuZCBub3RlAEQHb3ZlcgBzDUVudGl0eQA_B2MAgREIZXMKdm90aW5nIHJvdW5kcyBhbmQgZ2VuZXJhdGVkIHprcHMATwsAgUULLT4AgWoLOiBuZXdWAEMFUm91bmQoKQoKb3B0IElmAGAKb3Igd2FudHMgdG8gY2hhbmdlIHRoZSBwdWJsaWMga2V5AEMbdXBkYXRlAIJDCygpAIFrBW9wdAoKVXNlAH4Qc2lnblVwKCkKCmxvb3AAgysFcwCCIAYAgx8LLS0-VXNlcjogZ2V0AIMeC1AAgQwFS2V5KCkARxR2b3RlKCkAgykGcmlnaACDJgpVc2VyIGNhbgCBVghoaQBuBiBhdCBhbnkgdGltZQphbmQgdGh1cyBjaGVhdACBfQVicmliZXIAgzYKZW5kIGxvb3AAglMcZW5kAIJhDgCDXxUsAIUMDVRoZSAAg2UHaGFzIGVuZGVkAIQtCSAKCgCFBBEtLT4AhTYLOiBwcm9jZXNzVm90ZXMoKQCDchsAg08Fc2hOZXdNZXNzYWdlU3RhAIIsCgCFFQUAhicLLACFfBMAhi4LAG8IZWQgbQBIBgCFHwYAXgdlZCBuZXcgc3RhAIV3DQCBLCF0YWxseQCBIilWb3RlVGFsbHkAgRksVm90ZQBiBgCBIwoAhxwLAIRJFGVyaWYAgQ0JAIVGE3RvdGFsAIJ5CACHXgoAhHIObm93AEMHAIZdBXZhbGlkaXR5IG9mAIglBXMgAIUBBWNoZWNrIG91AIR_Bm51bWJlcgAZCmV2ZXJ5b25lIGdvdACIUQo&s=rose).
+
+*Functions:*  
+Used for creating a new voting round
+`newVotingRound(coordinator): roundId`
+
+Used to end an active voting round
+`endVotingRound(roundId)`
+
+Coordinator address can be updated
+`updateCoordinator(roundId)`
+
+Used to signup users to current round
+`signUp(roundId)`
+
+Used by users to vote
+`vote(roundId, optionId)`
+
+Used by coordinator after generating a zero knowledge proof of
+genuinity of vote state
+`publishNewMessageState(roundId, stateRoot, proof)`
+
+Used by coordinator to prove which party got how many votes
+`publishVoteTally(roundId, proof)`
+
+Used to verify the genuinity of the proof
+`verifyVotes(roundId)`
+
+Used to check the total number of votes of parties
+`totalVotes(roundId)`
+
+Getter functions
+`getCoordinatorPublicKey(roundId)`
+`getTallyHash(roundId)`
+
+*Config:*  
+Origins which will be allowed to interact with certain functions of the pallet. This allows some implementations to levearge another pallet such as collective and have democratic processes of signup, coordination and such.  
+`SignupOrigin`
+`VoteOrigin`
+`CoordinatorOrigin`
+
+*State:*   
+Merkle trees containing data about votes  
+`MessageTree` // This one is updated by the users  
+`StateTree` // This one is updated by the coordinator
+
 ### Ecosystem fit
 
 - Are there any other projects similar to yours? If so, how is your project different?  
@@ -121,12 +169,12 @@ Substrate related experience:
 ### Overview
 Total Estimated Duration: 4 months  
 Full-time equivalent (FTE): 2.5 FTE  
-Total Costs: 36.000 DAI
+Total Costs: 30.000 DAI
 
 ### Milestone 1 - Collusion resistance
 - Estimated duration: 4 months
 - FTE: 2.5
-- Costs: 36.000 DAI
+- Costs: 30.000 DAI
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
