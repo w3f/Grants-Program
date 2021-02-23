@@ -209,13 +209,13 @@ Lastly, the team has a consolidated architectural and devops experience both in 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. |	License	GNU General Public License v3.0 / Apache 2.0 |
-| 0b. |	Documentation	We will provide both inline documentation of the code and a tutorial that explains how a user can use product. |
-| 0c. |	Testing Guide	The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
-| 1a. |	ELC contract extension: Liquidity Mining Pool	ELP reserves a certain percentage of tokens to reward participants generatingELC, which means that part of the tokens will be given to risk asset (rELP) holders. |
-| 1b. |	ELC contract extension:  Risk Reserve Fund	1) A total of 21 million ELPs, of which 1 million ELPs are deposited into the risk reserve fund as the initial risk reserve. 2) In the ELC supply expansion process, 5% of the additional ELC issued through the algorithmic mechanism is converted into ELP and deposited in the risk reserve fund. |
-| 2a. |	ELC Dapp	1) ELC generation function. 2) Redemption of the pledged assets function. 3) ELC price, issuance volumes, risk assets, debt ratios and other query functions. 4) Liquidity mining function. |
-| 2b. |	Mobile integration	Cycan Official Wallet app integrated with DAPP front-end. Via mobile app, various functions of ELC network are available for users. |
+| 0a. |	License | GNU General Public License v3.0 / Apache 2.0 |
+| 0b. |	Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use product. |
+| 0c. |	Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
+| 1a. |	ELC contract extension: Liquidity Mining Pool | ELP reserves a certain percentage of tokens to reward participants generatingELC, which means that part of the tokens will be given to risk asset (rELP) holders. |
+| 1b. |	ELC contract extension:  Risk Reserve Fund | 1) A total of 21 million ELPs, of which 1 million ELPs are deposited into the risk reserve fund as the initial risk reserve. 2) In the ELC supply expansion process, 5% of the additional ELC issued through the algorithmic mechanism is converted into ELP and deposited in the risk reserve fund. |
+| 2a. |	ELC Dapp | 1) ELC generation function. 2) Redemption of the pledged assets function. 3) ELC price, issuance volumes, risk assets, debt ratios and other query functions. 4) Liquidity mining function. |
+| 2b. |	Mobile integration | Cycan Official Wallet app integrated with DAPP front-end. Via mobile app, various functions of ELC network are available for users. |
 
 
 
