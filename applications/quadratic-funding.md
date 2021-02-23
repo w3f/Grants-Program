@@ -78,7 +78,6 @@ Besides open-source program grant, the CLR mechanism can be applied to other cro
 * **Contact Name:** [Chris Li](https://www.linkedin.com/in/chrisli2046/)
 * **Contact Email:** chris@forgelab.io
 * **Website:** https://forgelab.io
-
 ### Legal Structure 
 Individuals
 ### Team's experience
@@ -99,6 +98,14 @@ My strongest programing languages are C++ & C#, and have been ramping up on Rust
 * https://github.com/rsksmart/truffle-integration/tree/staging/docker (RSK node Docker one-line runner)
  * https://github.com/rsksmart/truffle-integration/tree/staging/ganacheand (Ganache for RSK)
  * https://github.com/chrisli30 (Personal repos)
+
+### Update 2: UI Examples
+UI demos of the team's previous work, which includes
+- rWallet iOS app: production screenshots and example sketch source file
+- RSK website: finalized design image and example sketch source file
+- Forge Labs website: production screenshot
+https://drive.google.com/drive/folders/1nZPg4PmWSBxbfHuMyuAlw8UVXSybjTHG?usp=sharing
+
 ### Team LinkedIn Profiles
 * [Chris Li](https://www.linkedin.com/in/chrisli2046/)
 * [Xingyou Chen](https://www.linkedin.com/in/xingyou-chen-283056205/)
@@ -111,12 +118,12 @@ My strongest programing languages are C++ & C#, and have been ramping up on Rust
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  4 FTE
-* **Total Costs:** 0.5 BTC
+* **Total Costs:** 30,000 DAI
 
 ### Milestone 1 — Implement Substrate Modules 
 * **Estimated Duration:** 1.5 month
 * **FTE:**  4
-* **Costs:** 0.35 BTC
+* **Costs:** 20,000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -131,7 +138,7 @@ My strongest programing languages are C++ & C#, and have been ramping up on Rust
 ### Milestone 2 — Web Application (Dapp)
 * **Estimated Duration:** 1 month
 * **FTE:**  4
-* **Costs:** 0.15 BTC
+* **Costs:** 10,000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
