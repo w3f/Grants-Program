@@ -11,14 +11,21 @@
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
-
 ### Overview
 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+We are proud to introduce to you the new decentralized algorithmic protocol, PolkaCash Protocol.
+
+PolkaCash Protocol is a self-regulating permission-less stablecoin, with a USD peg that is algorithmically programmed to maintain stability through community-driven demand and supply mechanisms, by controlling money supply similarly to how central banks of the world guide the value of fiat money through monetary policy. By controlling the quantity of money supply in an economy by buying or selling bonds, a target value can be achieved (In this case 1 USD). Instead of a central bank or a currency board, rules are set and executed programmatically via smart contracts so that behavior of the system can be predictable.
+
+Several different designs of algorithmic stablecoins such as Basis Cash, Mith Cash and Emptyset Dollar have launched with ingenious mechanism designs and amazing communities. Each attempts to bring stablecoin price peg back to neutrality of 1 USD. During expansion this would be a happy problem to solve as an increase in supply provides for all. 
+
+However, much can be said when prices drop below the peg. Current solutions mostly revolve around utilitizing bonds as a means of reducing circulating supply. Technically that’s the right assumption, but practically from observation, there are quite a number of flaws with this approach. Firstly, bonds that were bought has an expiry to it, meaning to say that the risk of purchasing a bond too early would be highly risky without recourse on the stablecoin capital utilized to purchase it. Secondly, burning supply via bond purchases has a loose beta relation to the price of the stablecoin as it does not trade out in the open market (thereby unable to affect prices). 
+
+Therefore, we propose an improvised iteration of a treasury function for purchasing the stablecoin in the open market to re-peg the price of the stablecoin when it goes below 1 USD.
+
+Upon every expansion of stablecoin supply when prices are > 1 USD, up to 10% treasury fee would be taken from the expansion and used to purchase ETH. When prices of the stablecoin drop below <1 USD, as an additional mechanism to the bond purchase function, a purchasing event would be triggered by the Treasury on Uniswap through the open market bringing stablecoin prices back closer to 1 USD.
+
+Currently, PolkaCash is launched on Ethereum, with a Polkadot protocol under development. Users holding POC and POS will receive airdrops during the Polkadot migration to seed the community once the protocol development is completed.
 
 ### Project Details 
 We expect the teams to already have a solid idea about the project's expected final state.
@@ -35,29 +42,15 @@ Are there any other projects similar to yours? If so, how is your project differ
 
 ## Team :busts_in_silhouette:
 
-### Team members
-* Name of team leader
-* Names of team members	
-
-### Contact
-* **Contact Name:** Full name of the contact person (e.g. John Brown)
-* **Contact Email:** Contact email (e.g. john@duo.com)
-* Website
-
-### Legal Structure 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+* **Contact Name:** @lobsteronplatter
+* **Contact Email:** polkacash.finance@gmail.com
+* Website: https://polkacash.finance
 
 ### Team's experience
 Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
-
-### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* https://github.com/polkacash/POLKACASH_MAIN
 
 ## Development Roadmap :nut_and_bolt: 
 
