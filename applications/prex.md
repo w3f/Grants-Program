@@ -39,9 +39,6 @@ As an originally non-technical founder, he has picked up blockchain development 
 ### Team Code Repos
 * https://github.com/prexfinance
 
-### Team LinkedIn Profiles
-* https://www.linkedin.com/in/angkangwei
-
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
