@@ -28,7 +28,7 @@ Substrate is a new and promising platform to implement this privacy protocol and
 ### Project Details
 #### Project Architecture
 
-Raze Network will apply the Zether framework to build the second-layer decentralized anonymous payment module. It will be then imported as substrate-based smart contracts. Similar to the Zether framework, it will have three technical modules: mint, transfer and redeem. The mint module will convert a base token into its anonymized version, while the redeem module will convert the anonymized token back to its native form. The transfer module is the one that enables the anonymous transfer of the anonymized token. This process will conceal the transaction amount and guarantee the anonymity for both the sender and receiver.
+Raze Network will apply the [Zether framework](https://eprint.iacr.org/2019/191) to build the second-layer decentralized anonymous payment module. It will be then imported as substrate-based smart contracts. Similar to the Zether framework, it will have three technical modules: mint, transfer and redeem. The mint module will convert a base token into its anonymized version, while the redeem module will convert the anonymized token back to its native form. The transfer module is the one that enables the anonymous transfer of the anonymized token. This process will conceal the transaction amount and guarantee the anonymity for both the sender and receiver.
 <p align="center">
   <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image5.png" alt="" width="70%"/>
 </p>
@@ -63,7 +63,7 @@ The client-side runs a CreateRedeemTx algorithm to invoke the redeem contract. I
   <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image4.png" alt="" width="40%"/>
 </p>
 
-The concrete design of the ZKP algorithms is a twist of the schemes proposed in the last two figures of the Zether paper: https://eprint.iacr.org/2019/191.pdf on Page 41 and 42 respectively. The main difference is that the burn-proof on Page 41 only considers the case where the user withdraws all the money in the account while our statement considers the case where the user might withdraw an amount smaller than the balance and the ConfTransfer proof on Page 42 does not consider the one-out-of-many proof part while ours does.
+The concrete design of the ZKP algorithms is a twist of the schemes proposed in the last two figures of the Zether paper: https://eprint.iacr.org/2019/191.pdf on Page 41 and 42 respectively. The main difference is that the burn-proof on Page 41 only considers the case where the user withdraws all the money in the account while our statement considers the case where the user might withdraw an amount smaller than the balance and the ConfTransfer proof on Page 42 does not consider the one-out-of-many proof part while ours does. 
  
 The user can invoke the lock module by running a CreateLockTx algorithm on the client-side. The client inputs a secret key `sk` and an Ethereum address `addr` to generate a signature to demonstrate he is indeed the owner of the account and he authorizes to lock the account to the input address `addr`. The signature would be `Sign(x, addr)`. Similarly, the user can invoke the unlock module by running a CreateUnlockTx on the client-side. The input of CreateUnlockTx algorithm is the same as that of the CreateLockTx algorithm. It will generate a similar signature to unlock the account. Note, we will embed a nonce derived from the current epoch number to prevent the replay attack.
 
@@ -137,12 +137,12 @@ Micheal is a full-stack developer with 6 years experience in software developmen
 * **FTE:**  2 
 * **Costs:** 13K DAI
 
-The main deliverable of this milestone is Raze substrate pallet that supports: mint, transfer, redeem, lock and unlock functionalities. The substrate modules will support both the mainstream tokens issued in the Polkadot ecosystem such as DOT and KUSAMA and the cross-chain payment of ERC-20 tokens.   
+The main deliverable of this milestone is Raze substrate pallet that supports: mint, transfer, redeem, lock and unlock functionalities. More specifically, it will support the verification algorithms of zero-knowledge proofs in these modules. The substrate modules will support both the mainstream tokens issued in the Polkadot ecosystem such as DOT and KUSAMA and the cross-chain payment of ERC-20 tokens.   
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof schemes and create a Substrate module that incorporates the verification logic for the aforementioned modules. The main statements of the zero-knowledge proof schemes will be identical to those described in the CreateTransferTx and CreateRedeemTx algorithms. It will support the verification of mint, transfer, redeem, lock and unlock for mainstream Polkadot tokens such as DOT and KUSAMA and any ERC-20 token. The contracts will be first written in Rust and then imported to EVM compatible substrate pallets.  
+| 1. | Raze Substrate module for private payment | We will implement the zero-knoweldge proof schemes presented in the [Zether framework](https://eprint.iacr.org/2019/191) and create a Substrate module that incorporates the verification logic for the aforementioned modules. The main statements of the zero-knowledge proof schemes will be identical to those described in the CreateTransferTx and CreateRedeemTx algorithms. It will support the verification of mint, transfer, redeem, lock and unlock for mainstream Polkadot tokens such as DOT and KUSAMA and any ERC-20 token. The contracts will be imported to substrate pallets.  
 | 2. | Integration with a cross-chain bridge between Ethereum and Polkadot such as ChainBridge | The bridge will map ERC-20 token to the Polkadot ecosystem and facilitate their private payment in the Polkadot ecosystem.  
 | 3. | Benchmark | Perform unit tests on the individual algorithms to ensure their safety. Benchmark on the throughput and gas cost of the proposed modules |   
 | 4. | Docker | We will provide a dockerfile to demonstrate the usage of our modules |
@@ -152,15 +152,15 @@ The main deliverable of this milestone is Raze substrate pallet that supports: m
 * **FTE:**  1
 * **Costs:** 7K DAI
 
-The main deliverable of this milestone is the client that can generate the transactions that can trigger the aforementioned contracts. 
+The main deliverable of this milestone is the client that can generate the transactions that can trigger the aforementioned contracts. More specifically, it will include all the proof generation algorithms for these transactions. We will also provide the necessary UI to enable the users to interact with the proof generation algorithms. 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 1. | Raze client module | We will implement the client that supports the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, CreateLockTx, and CreateUnlockTx algorithms. The client will be able to generate the necessary transactions to trigger the corresponding substrate modules. The client will be written in Javascript and we will provide a basic UI to take inputs from the users for the relevant algorithms.       
+| 1. | Raze client module | We will implement the client that supports the Register, CreateMintTx, CreateTransferTx, CreateRedeemTx, CreateLockTx, and CreateUnlockTx algorithms. The client will be able to generate the necessary transactions to trigger the corresponding substrate modules. The transaction will include all the zero-knowledge proofs generated for these modules. The client will be written in Javascript and we will provide a basic UI to take inputs from the users for the proof generation algorithms.       
 | 2. | Anonymity mining | Through combining the lock and mint, and unlock and redeem modules, we will implement anonymity mining functionality, which allows the users to mine the private tokens and unlock the private tokens after a certain period of time.   
 | 3. | Benchmark | Perform unit tests on the individual algorithms to ensure their safety. Benchmark on the latency and usability of the proposed client functionalities |    
-| 4. | Docker | We will deploy the client on Kusama or Rococo and engage our community on the testing of our product. |
+| 4. | Docker | We will deploy the client and engage our community on the testing of our product. |
 
 ### Community Engagement
 
