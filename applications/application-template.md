@@ -1,10 +1,10 @@
 # W3F Open Grant Proposal
 
+> 🌏 This page is also available in [Chinese (中文)](./application-template-cn.md).
+> 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 > 
 > See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/#pencil-process) on how to submit a proposal.
-
-> 🌏 This page is also available in [Chinese (中文)](./application-template-cn.md).
 
 * **Project Name:** Name of your project (e.g. DuoSwap Module)
 * **Team Name:** Legal name of your team (e.g. Duo)
@@ -14,7 +14,10 @@
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
+
+If this application is in response to an RFP, please indicate this on the first line of this section.
+
+If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
 
 ### Overview
 
