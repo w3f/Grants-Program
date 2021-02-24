@@ -55,10 +55,10 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Marcin Górny](https://github.com/mmagician)
 - [Robert Hambrock](https://github.com/Lederstrumpf)
 - [David Hawig](https://github.com/Noc2)
-- [Bill Laboon](https://github.com/laboon)
+- [Sebastian Müller](https://github.com/semuelle)
 - [Rouven Pérez](https://github.com/RouvenP)
+- [Aleixo Sánchez](https://github.com/alxs)
 - [Reto Trinkler](https://github.com/retotrinkler)
-- [Björn Wagner](https://github.com/bjornwgnr)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
 - [Gavin Wood](https://github.com/gavofyork)
 
