@@ -50,7 +50,7 @@ We expect the teams to already have a solid idea about the project's expected fi
 ### Contact
 * **Contact Name:** Full name of the contact person in your team
 * **Contact Email:** Contact email (e.g. john@duo.com)
-* Website
+* **Website:**
 
 ### Legal Structure 
 * **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
