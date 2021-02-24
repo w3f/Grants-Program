@@ -316,7 +316,7 @@ In this milestone, we will verify features with limited users and launch the tes
 
 * **Estimated Duration:** 2 months
 * **Full-time Equivalent (FTE)**: 3
-* **Costs:** 10000 DAI  
+* **Costs:** 8000 DAI  
 
 | **Number** | **Deliverable**                          | **Specification**                                            |
 | ---------- | ---------------------------------------- | ------------------------------------------------------------ |
