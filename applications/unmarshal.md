@@ -39,6 +39,17 @@ Unmarshal has already built the notification for Binance Smart Chain for followi
     * UnStake
     * Exchange
     
+Tech stack:
+
+* Language: Golang
+* Database: Mysql, Redis
+* Messaging queue: Kafka
+* Infrastructure: AWS
+* Integration: Firebase, webhook, websockets
+
+
+![Architecture](../src/polkadot_smart_notifications.png?raw=true "Title")
+
 Registrations - 
 
 Firebase:
@@ -80,7 +91,15 @@ Notification Payload
 
 
 ### Ecosystem Fit
-We didn't find anyone with Smart Notifications in Polkadot ecosystem. 
+The Unmarshal Notifications will be real time and in detailed format and the Application developers  can customize the notifications and build their own template of notification. 
+The application users will have to submit their needs as to what notifications they would like their customers to see and Unmarshal will be able to provide a custom made Notification solution which the apps will just have to plug into their system. 
+By using unmarshal’s solutions the app developers will be able to save a lot of time and effort and concentrate on other technical aspects of their apps and leave their notification implementation to us. 
+We already have a working prototype for Binance Smart chain which would enable users to experience the notifications right away for the below transactions the users make 
+Send, Receive, Add / Remove Liquidity, Stake / Unstake & Exchange. 
+
+Aurras will be a part of the notification architecture where they will be able to read the events on blockchain and push it to the broker service. There needs to be another layer of work involved before the user will be seeing the notifications. 
+Unmarshal on the other hand will be able to deliver the notifications directly to the mobile phones or apps of the users. 
+ 
 
 ## Team :busts_in_silhouette:
 
@@ -123,7 +142,23 @@ Unmarshal team has 25 years of engineering experience collectively. Some of us h
 * **Full-time equivalent (FTE):**  2 FTE
 * **Total Costs:** $30,000
 
-### Milestone 1 Example — Implement Substrate Modules
+| Priority | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0 | Setup | Initial setup of the codebase and the deployment infrastructure to deploy the developed code on to the user interface.  |
+| 1 | Transaction Listening Module | Work on the part of our application where our code will start listening to the transactions on the chain.  |
+| 2 | Transaction Decoder Module | This work will help our application understand all the chain transactions and convert them into readable data.  |
+| 3 | Firebase Integration for demo app | With Firebase in place users will be able to receive the notifications from Unmarshal Notification Framework. |
+| 4 | Webhook  Integrationfor demo app | When the Web hooks are fully developed users will be able to continuously ping our system and receive any data and not to wait for any periodic updates from Unmarshal |
+| 5 | Dex Integration for new pair | This development helps us to integrate with the Decentralized exchanges to send notifications |
+| 6 | Protocol integrations for liquidity pairs | Integrate with dex to send notification on liquidity |
+| 7 | Subscription Module | Subscription module to subscribe to price trend, protocol volume etc |
+| 8 | Client Integration Handbook | We have developed such awesome tech. But how do we get our partners to use it?This handbook will provide a quick guide to implement the Unmarshal smart notification system onto their Applications. |
+| 9 | Article | We will write an article or tutorial that explains the work done as part of the grant |
+| 10 | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+
+
+
+### Milestone 1 — Notification v1
 * **Estimated Duration:** 1 month
 * **FTE:**  2
 * **Costs:** 15,000 USD
@@ -138,7 +173,7 @@ Unmarshal team has 25 years of engineering experience collectively. Some of us h
 | 5 | Client integration handbook | Documentation for integration with Unmarshal notification |
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Additional features
 * **Estimated Duration:** 1 month
 * **FTE:**  2
 * **Costs:** 15,000 USD
