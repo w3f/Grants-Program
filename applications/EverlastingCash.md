@@ -211,14 +211,14 @@ Everlasting Cash will exist as an independent asset in the Polkadot ecosystem, a
 	2) The DAO self-governance Runtime module and the application for the access to the Rococo test network are in progress.
 	3) The development plan for the ELC contract has been formulated and the development is in progress.
 
-* Are there are any teams who have already contributed (financially) to the project?
-* No
+* Are there are any teams who have already contributed (financially) to the project?<br>
+&nbsp;No
   
-* Have you applied for other grants so far?
-* No
+* Have you applied for other grants so far?<br>
+&nbsp;No
   
-* Are there any other project similar to yours?
-* To the best of our knowledge, there is no project about anti-inflation stablecoin that is similar to our project. Please let us know if there are any.
+* Are there any other project similar to yours?<br>
+&nbsp;To the best of our knowledge, there is no project about anti-inflation stablecoin that is similar to our project. Please let us know if there are any.
   
   
   
