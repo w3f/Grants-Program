@@ -1,6 +1,6 @@
 # W3F Open Grant Proposal
 
-> This document will be referenced in the terms and conditions of a possible contract and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
+> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 > 
 > See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/#pencil-process) on how to submit a proposal.
 
@@ -11,7 +11,7 @@
 * **Payment Address:** BTC or Ethereum (DAI) payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
 
 
-⚠️ *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
+> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
 If this application in response to an RFP then please indicate this on the first line of this section.
@@ -48,7 +48,7 @@ We expect the teams to already have a solid idea about the project's expected fi
 * Names of team members	
 
 ### Contact
-* **Contact Name:** Full name of the contact (corresponding) person
+* **Contact Name:** Full name of the contact person in your team
 * **Contact Email:** Contact email (e.g. john@duo.com)
 * Website
 
@@ -57,7 +57,7 @@ We expect the teams to already have a solid idea about the project's expected fi
 * **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
 
 ### Team's experience
-Please describe the team's relevant experience. If the project involves development work, then we would appreciate if you single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful. 
+Please describe the team's relevant experience. If the project involves development work, we would appreciate it if you singled out a few interesting code commits made by team members in past projects. For research-related grants, references to past publications and projects in a related domain are helpful. 
 
 If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
 
@@ -71,9 +71,9 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 ## Development Status :open_book: 
 
-If you already started implementing your project or the project is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/General-Grants-Program/tree/master/rfp-proposal) (request for proposals),
+- links to improvement proposals or [RFPs](https://github.com/w3f/General-Grants-Program/tree/master/rfp-proposal) (requests for proposal),
 - academic publications relevant to the problem,
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation,
@@ -81,26 +81,26 @@ If you already started implementing your project or the project is part of a lar
 
 ## Development Roadmap :nut_and_bolt: 
 
-This section should break the development roadmap down into milestones and deliverables. Since these will appear in the grant contract, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
+This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
 Below we provide an **example roadmap**. In the descriptions, it should be clear how the project is related to Substrate, Kusama or Polkadot. We _recommend_ that the scope of the work can fit within a three-month period and that teams structure their roadmap as 1 milestone ≈ 1 month. 
 
 For each milestone,
 
-* be sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* include total amount of funding requested per milestone.
+* make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
+To assist you in defining it, we have created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
+* include the amount of funding requested _per milestone_.
 * include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
 * provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-* commit to providing dockerfiles for the delivery of your project. 
-* indicate the milestone duration, as well as number of Full-Time Employees working on each milestone, and include the approximate number of days along with cost per day.
-* _Deliverables 0a-0d are mandatory_ and should not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research oriented and as such there is no code to test)
+* commit to providing Dockerfiles for the delivery of your project. 
+* indicate milestone duration as well as number of full-time employees working on each milestone, and include the approximate number of days along with the cost per day.
+* _Deliverables 0a-0d are mandatory_ and shall not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research oriented and as such there is no code to test).
 
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ and that you **highlight this fact in your milestone documentation** and in the source code if applicable! 
+> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
 
 ### Overview
 * **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-time equivalent (FTE):**  Required workload of a full-time employee for the whole project ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
+* **Full-Time Equivalent (FTE):**  Required workload of a full-time employee for the whole project (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
 * **Total Costs:** Amount of payment in USD for the whole project. The total amount of funding _needs to be below $30k for initial grants_ and $100k for follow-up grants. (e.g. 12,000 USD)
 
 ### Milestone 1 Example — Implement Substrate Modules 
