@@ -2,7 +2,7 @@
 
 * **Project Name:** API Protocol
 * **Proposer:** [API Protocol](https://github.com/APIProtocol)
-* **Payment Address:** 36wHH7KseuqtyTLMCB8dXKWm8VKdPRR8Vs
+* **Payment Address:** 0xe871829Bd2367332316bDef9a315CDad906A3282
 
 ## Project Overview :page_facing_up: 
 
@@ -308,7 +308,7 @@ The project leader, Haijun, is a serial entrepreneur who has experienced the ent
 
 * **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):** 3
-* **Total Costs:** 0.5 BTC
+* **Total Costs:** 8000 DAI
 
 #### Milestone 1 — Verify Production of Concepts (POC) and Implement Substrate Modules
 
