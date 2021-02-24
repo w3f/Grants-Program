@@ -57,12 +57,12 @@ The oragnization repo is quie new but some worki is ongoing in the background.
 ### Overview
 * **Total Estimated Duration:** 5 weeks
 * **Full-time equivalent (FTE):** 0.62 FTE  
-* **Total Costs:** 7,000 DAI
+* **Total Costs:** 4,000 DAI
 
 ### Milestone 1: Angular-UI Identicon and Web Identicon for polkadot.js
 * **Estimated Duration:** 4 weeks
 * **FTE:**  0,62
-* **Costs:** 7,000 DAI
+* **Costs:** 4,000 DAI
 
 In this milestone, We will implement Angular and Web UI Identicon components
 | Number | Deliverable | Specification |
