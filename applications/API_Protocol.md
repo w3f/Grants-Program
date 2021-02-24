@@ -17,7 +17,7 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
  API Protocol will build a cross-chain decentralized API service management platform on Polkdot based on the Substrate framework to provide decentralized API infrastructure for blockchain developers and improve the efficiency of developers building Dapp.
  
  
-   ![img](https://raw.githubusercontent.com/APIProtocol/research/main/API%20Protocol.png)
+   
    
 ## Team Interest
 
@@ -316,7 +316,7 @@ In this milestone, we will verify features with limited users and launch the tes
 
 * **Estimated Duration:** 2 months
 * **Full-time Equivalent (FTE)**: 3
-* **Costs:** 0.5 BTC  
+* **Costs:** 10000 DAI  
 
 | **Number** | **Deliverable**                          | **Specification**                                            |
 | ---------- | ---------------------------------------- | ------------------------------------------------------------ |
