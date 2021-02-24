@@ -101,7 +101,7 @@ Everlasting Cash is the stablecoin for the Cycan Network, which is a larger effo
 
 The ELC protocol is a smart contract protocol based on the Cycan Network/Everlasting Parachain.
 
-The Cycan Network (CYA) is an isomorphic parachain built on the Polkadot network. The Everlasting Parachain (ELP), as Cycan’s canary network, is the isomorphic parachain on Polkadot’s canary network - Kusama network.
+The Cycan Network (CYA) is an parachain built on the Polkadot network. The Everlasting Parachain (ELP), as Cycan’s canary network, is the parachain on Polkadot’s canary network - Kusama network.
 
 ELC has a stable target pricing mechanism, called ELCaim. ELCaim is initially set as 1 USD and the pegged rate of ELCaim will be continuously adjusted and stabilized based on the anti-inflation factor (K), forming the anti-inflation algorithmic stablecoin mechanism. ELC not only uses crypto currencies as systemic reserves to decide the basic value of stablecoins, but also uses algorithms to control the supply of ELC so that the prices are at the same level of ELCaim. Users can use other cryptocurrencies including CYA, ELP, DOT, KSM, BTC, ETH and other digital assets proposed by the Cycan community to generate Everlasting Cash in the ELC protocol.
 
@@ -149,7 +149,6 @@ Lastly, the team has a consolidated architectural and devops experience both in 
 ### Team Code Repos
 * ELP-Runtime-node: https://github.com/CycanTech/ELP-Runtime-node 
 * ELC-contracts: https://github.com/CycanTech/ELC 
-* HD wallet: https://github.com/CycanTech/ALLToken 
 
 ### Team LinkedIn Profiles
 * Provided in private through Google Form.
@@ -158,30 +157,12 @@ Lastly, the team has a consolidated architectural and devops experience both in 
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimate Duration:** 16 weeks
-* **Full-time Equivalent(FTE):** 5.5
-* **Total cost:** 2000 USD  (we accept up to 100% of payment in crypto currencies that are equivalent to $2,000 including DOT,KSM,BTC,ETH,DAI)
-
-### Milestone 1 - create fundamental environment for ELC
-* **Estimated Duration:** 2 weeks
-* **FTE:**  1.5
-* **Costs:** 500 USD
-* **Task:** To create a Substrate-based basic parachain operating environment and Runtime support for ELC.
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | GNU General Public License v3.0 / Apache 2.0 |
-| 0b. |	Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use ELC contract. |
-| 0c. |	Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
-| 1. |	whitepaper | Write Everlasting Cash white paper and technical design documents. |
-| 2a. |	Phoenix test chain | Develop and deploy Cycan Network test chain Phoenix based on Substrate (the test token is PNX). |
-| 2b. |	Module: WASM integration | Phoenix test chain will integrate with the WASM virtual machine, giving priority to support the smart contract developed based on ink! |
-| 2c. |	Module: EVM integration | Phoenix test chain will integrate with EVM virtual machine to achieve high compatibility with the smart contract developed based on Solidity. |
-| 2d. |	Module: DAO implementation | Implement DAO basic functions using Substrate Runtime and provide basic on-chain governance modules for ELC. |
-| 3. |	Frontend support | Provide support on the wallet app (Alltoken), to connect the existing decentralized HD wallet to the Polkadot network and ELP test-net (Phoenix network). |
+* **Total Estimate Duration:** 14 weeks
+* **Full-time Equivalent(FTE):** 4
+* **Total cost:** 1500 USD  (we accept up to 100% of payment in crypto currencies that are equivalent to $2,000 including DOT,KSM,BTC,ETH,DAI)
 
 
-### Milestone 2 – Implement ELC contracts
+### Milestone 1 – Implement ELC contracts
 * **Total Estimate Duration:** 8 weeks
 * **Full-time Equivalent(FTE):** 2
 * **Total cost:** 1000 USD
@@ -193,19 +174,18 @@ Lastly, the team has a consolidated architectural and devops experience both in 
 | 0b.	| Documentation	| We will provide both inline documentation of the code and a tutorial that explains how a user can use ELC contract. |
 | 0c.	| Testing Guide	| The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 1.	| ELC contracts	| Develop ELC contract implement ELC whitepaper |
-| 1a.	| Anti-Inflation Factor K & On-Chain Governance |	As the Polkadot isomorphic chain, Cycan/ELP network generates a block every 6 seconds or so, and the ELCaim increases by K every 10,000 blocks. In the ELC network, K can be adjusted through the on-chain governance mechanism, which can be decided by public voting in the community. |
+| 1a.	| Anti-Inflation Factor K & On-Chain Governance |	As the Polkadot parachain, Cycan/ELP network generates a block every 6 seconds or so, and the ELCaim increases by K every 10,000 blocks. In the ELC network, K can be adjusted through the on-chain governance mechanism, which can be decided by public voting in the community. |
 | 1b.	| Liability Ratio	| To swap digital assets into the ELC contract, in which one can obtain both ELC and the risk assets(rXXX) or only the risk asset(rXXX). The difference will be defined by the Liability Ratio(marked as LR). |
 | 1c.	| ELC Supply Expansion mechanism | When the prices of ELC exceed ELCaim, additional ELC will be issued and automatically allocated to the risk asset holders. |
 | 1d.	| ELC Supply Contraction | When the prices of ELC go lower than 0.98 ELCaim, the circulating ELC will be repurchased by the risk reserve fund, and this part of ELC will be temporarily taken out of circulation; when the prices of ELC start to go over ELCaim, the ELC will be sold with priority by the risk reserve fund to recover the reserve. |
 | 1e.	| Oracle Price acquirement | The oracle price adopts the dual price mechanism of Parachain DEX and Chainlink (or Zenlink). |
-| 2.	| Rococo parachain deploy | Deploy ELC contracts on Rococo parachain, testing and debug. |
 
 
-### Milestone 3 – Extend functions of the ELC contract.
+### Milestone 2 – Extend functions of the ELC contract.
 * **Total Estimate Duration:** 6 weeks
 * **Full-time Equivalent(FTE):** 2
 * **Total cost:** 500 USD
-* **Task:** To deploy the Everlasting Parachain (ELP, the pioneer chain of Cycan Network) in Kusama, and to implement new functions based on Kusama and ELP environment.
+* **Task:** Implement new contract functions based on ink! and develop DAPP front-end.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -214,9 +194,7 @@ Lastly, the team has a consolidated architectural and devops experience both in 
 | 0c. |	Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 1a. |	ELC contract extension: Liquidity Mining Pool | ELP reserves a certain percentage of tokens to reward participants generatingELC, which means that part of the tokens will be given to risk asset (rELP) holders. |
 | 1b. |	ELC contract extension:  Risk Reserve Fund | 1) A total of 21 million ELPs, of which 1 million ELPs are deposited into the risk reserve fund as the initial risk reserve. 2) In the ELC supply expansion process, 5% of the additional ELC issued through the algorithmic mechanism is converted into ELP and deposited in the risk reserve fund. |
-| 2a. |	ELC Dapp | 1) ELC generation function. 2) Redemption of the pledged assets function. 3) ELC price, issuance volumes, risk assets, debt ratios and other query functions. 4) Liquidity mining function. |
-| 2b. |	Mobile integration | Cycan Official Wallet app integrated with DAPP front-end. Via mobile app, various functions of ELC network are available for users. |
-
+| 2a. |	ELC Dapp | 1) ELC generation function. 2) Redemption of the pledged assets function. 3) ELC price, issuance volumes, risk assets, debt ratios and other query functions. 4) Liquidity mining function. And integrate with the wallet. |
 
 
 ## Future Plans
@@ -232,16 +210,15 @@ Everlasting Cash will exist as an independent asset in the Polkadot ecosystem, a
 	1) The development of the initial version of the Substrate-based Pheonix test chain has been completed, supporting the WASM and EVM virtual machines. 
 	2) The DAO self-governance Runtime module and the application for the access to the Rococo test network are in progress.
 	3) The development plan for the ELC contract has been formulated and the development is in progress.
-	4) The integration between the official HD wallet APP and Polkadot has been completed, and the internal testing and interactive optimization are in progress.
 
 * Are there are any teams who have already contributed (financially) to the project?
-  No
+* No
   
 * Have you applied for other grants so far?
-  No
+* No
   
 * Are there any other project similar to yours?
-  To the best of our knowledge, there is no project about anti-inflation stablecoin that is similar to our project. Please let us know if there are any.
+* To the best of our knowledge, there is no project about anti-inflation stablecoin that is similar to our project. Please let us know if there are any.
   
   
   
