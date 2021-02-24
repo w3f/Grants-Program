@@ -77,7 +77,7 @@ As an originally non-technical founder, he has picked up blockchain development 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 4. | Substrate chain | Modules of our custom chain will interact with the network for placing predictions. |  
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain. |
 | 6. | Documentation | We will provide a detailed guide for the platform on gitbook. |
 
