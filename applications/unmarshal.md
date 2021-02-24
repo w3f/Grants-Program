@@ -166,10 +166,10 @@ Unmarshal team has 25 years of engineering experience collectively. Some of us h
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0 | Setup | Setup codebase, deployment infrastructure. 
-| 1 | Transaction listening module | Add module to listen to chain transactions |
-| 2 | Transaction decoder module | Add module to decode the chain transactions |
-| 3 | Firebase integration for demo app | Add framework to integrate with firebase for any client |
-| 4 | Webhook integration for demo app | Add framework to integrate with webhooks for any client |
+| 1 | Transaction listening module | Add module to listen to blockchain transactions via websocket |
+| 2 | Transaction decoder module | Add module to fetch and decode the on-chain transactions like send, receive, approve etc |
+| 3 | Firebase integration for demo app | Add framework to integrate with firebase for clients - with firebase we can directly send notifications to client apps. No work required by clients |
+| 4 | Webhook integration for demo app | Add framework to integrate with webhooks for any client - with this clients need to handle the logic to send notification |
 | 5 | Client integration handbook | Documentation for integration with Unmarshal notification |
 
 
@@ -180,11 +180,13 @@ Unmarshal team has 25 years of engineering experience collectively. Some of us h
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 6 | Dex integration for new pair | Integrate with dex to send notifications on new pairs |
-| 7 | Protocol(polkaswap) integration for new liquidity pairs | Integrate with dex to send notification on liquidity |
-| 8 | subscription module | Subscription module to subscribe to price trend, protocol volume etc |
-| 9 | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
-| 10 | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 6 | API SDK for subscription | Notification subscription API SDK - single subscription, bulk subscription |
+| 7 | Dex integration for new pair | Integrate with dex to send notifications on new pairs |
+| 8 | Protocol(polkaswap) integration | Integrate with dex to send notification on add / remove liquidity |
+| 9 | Protocol(polkaswap) integration - 2 | Integrate with dex to send notification on new liquidity pair |
+| 10 | subscription module | Subscription module to subscribe to price trend, protocol volume etc |
+| 11 | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
+| 12 | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 
 ## Future Plans
 * Add notifications for all para chains
