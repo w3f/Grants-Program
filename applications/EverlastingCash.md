@@ -2,7 +2,7 @@
 
 * **Project Name:** Everlasting Cash
 * **Team Name:** Cycan Technologies
-* **Payment Address:** Polkadot address: 16Q2ci51xkSrL2odPqjjBTArYt98hEPZatA5s4NAKs1BmnAf
+* **Payment Address:** ETH address: 0x722043b40dEb4656a103aF03Fd8E781d0146d3F6
 
 
 ## Project Overview :page_facing_up: 
@@ -159,7 +159,7 @@ Lastly, the team has a consolidated architectural and devops experience both in 
 ### Overview
 * **Total Estimate Duration:** 14 weeks
 * **Full-time Equivalent(FTE):** 4
-* **Total cost:** 1500 USD  (we accept up to 100% of payment in crypto currencies that are equivalent to $2,000 including DOT,KSM,BTC,ETH,DAI)
+* **Total cost:** 1500 USD  (we accept up to 100% of payment in crypto currencies that are equivalent to $1,500 including DAI)
 
 
 ### Milestone 1 – Implement ELC contracts
