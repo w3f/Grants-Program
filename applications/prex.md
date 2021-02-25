@@ -50,7 +50,7 @@ As an originally non-technical founder, he has picked up blockchain development 
 * **Full-time equivalent (FTE):**  2 FTE
 * **Total Costs:** 30,000 DAI
 
-### Milestone 1 MVP & refining of mechanics
+### Milestone 1 MVP, start Substrate development & refining of mechanics
 * **Estimated Duration:** 1.5 months
 * **FTE:**  2
 * **Costs:** 15,000 DAI
