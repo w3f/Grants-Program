@@ -52,11 +52,11 @@ The Committee consists of individuals who know the funding priorities of the Pol
 In cases where a niche expert opinion is desirable, one of the committee members may request such a review.
 
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
+- [Gautam Dhameja](https://github.com/gautamdhameja)
 - [Marcin Górny](https://github.com/mmagician)
 - [Robert Hambrock](https://github.com/Lederstrumpf)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
-- [Rouven Pérez](https://github.com/RouvenP)
 - [Aleixo Sánchez](https://github.com/alxs)
 - [Reto Trinkler](https://github.com/retotrinkler)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
