@@ -79,12 +79,12 @@ As an originally non-technical founder, he has picked up blockchain development 
 
 
 ## Technical Stack
-Programming language: Rust
-Framework: Substrate + FRAME
-Project template: Substrate Node Template
-Source control: Github or Gitlab
-CI/CD: Docker container based, with Runners or Actions
-Front-end: React + Polkadot.js
+* Programming language: Rust
+* Framework: Substrate + FRAME
+* Project template: Substrate Node Template
+* Source control: Github or Gitlab
+* CI/CD: Docker container based, with Runners or Actions
+* Front-end: React + Polkadot.js
 
 ## Future Plans
 After PREX has succeeded in becoming the market leader in the crypto space with a sizable userbase, we will start incorporating sports and esports next and finally general events like elections etc. With a large and active userbase, PREX would also play an important role in making crypto mainstream and exposing non-crypto users to the benefits and power of blockchain and Polkadot in particular.
