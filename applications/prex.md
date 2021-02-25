@@ -14,6 +14,8 @@ PREX stands for PredictionExchange and is a prediction market infrastructure tha
 
 The team has always been interested in prediction markets and have watched the progress of predecessors and are very excited as we might have discovered a recipe to create a product that incorporates the right technology while making use of the force of influencers to drive user adoption, while also mutually benefiting said influencers as there will also be incentives for them building a large userbase on PREX as well.
 
+![prex-architecture](https://user-images.githubusercontent.com/78590360/109122937-3f84fa80-7784-11eb-9458-fb3cd2f253a3.png)
+
 ### Project Details 
 
 PREX aims to build initial POC to focus only on crypto markets but incorporating influencers that are ever so prevalent in the blockchain industry to bring about excitement and userbase. Finally, when we are ready for full deployment on Polkadot, we aim to already be the market leader in terms of the number of users and Sharks (influencers), who are also able to make predictions across chains. 
