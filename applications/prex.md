@@ -61,7 +61,6 @@ As an originally non-technical founder, he has picked up blockchain development 
 | 0b. | Documentation | Documents containing the description of whole architecture design for PREX |
 | 0c. | Testing Guide | Provide a full test suite and guide for PREX mechanics. The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 0e. | Node Repo	 | Complete the deployment of the basic public chain. | 
 | 1. | Substrate module: PREXMarkets | We will create a Substrate module that will automatically creates new markets once a minimum threshold is achieved. |  
 | 2. | Substrate module: PREXPredictions | We will create a Substrate module that will allow users to make predictions that are derived from price oracles. | 
 
