@@ -131,7 +131,7 @@ https://drive.google.com/drive/folders/1nZPg4PmWSBxbfHuMyuAlw8UVXSybjTHG?usp=sha
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains the usage of the API. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Tutorial | We will write tutorials on Medium that explains the work done as part of the grant. 
-| 1. | Substrate module: CLR | We will create a Substrate module that have below functionalities.<br />1. Project: create, cancel, contribute, withdraw<br />2. Proposal: create, vote, cancel, finalize, appeal  |  
+| 1. | Substrate module: CLR | We will create a Substrate module that have below functionalities.<br />1. Project: create, cancel, contribute, withdraw<br />2. Proposal: create, vote, cancel, finalize, appeal<br />3. Functions should be able to interact with Polkadot Identity Module and filter participants based on their identity information.|  
 | 2. | Substrate chain | Module CLR of our custom chain will be interacted with above defined functions through API |  
 | 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
