@@ -71,16 +71,16 @@ Executable model creation process and user actions that consists only of events 
 Software client builds screen forms based on the event model, converting user actions into events, verifies new events by model and adds them to the graph, controls model events execution conditions by the state of the graph, which ensures implementation of the application's business logic.
 EventFlow model code presented on the video:
 
-    1: TextApproval: Model: Model_TextApproval, [#], Actor_Main
-    2: Model_TextApproval: Attribute: text, [status = '' OR status = sendBack]
-    3: text: required: 1 # mandatory text attribute entrance 
-    4: text: cardinality: 1 # only one meaning of text attribute is valid
-    5: text: mutable: 1  # may change the value by adding new
-    6: text: Permission: Author # Author actor holds the attribute entry rights
-    7: Model_TextApproval: Attribute: status, [text <> ''] 
-    8: status: cardinality: 1 
-    9: status: mutable: 1 
-    10: status: Permission: Manager # Manager actor holds the attribute entry rights 
+    1, TextApproval: Model: Model_TextApproval, [#], Actor_Main
+    2, Model_TextApproval: Attribute: text, [status = '' OR status = sendBack]
+    3, text: required: 1 # mandatory text attribute entrance 
+    4, text: cardinality: 1 # only one meaning of text attribute is valid
+    5, text: mutable: 1  # may change the value by adding new
+    6, text: Permission: Author # Author actor holds the attribute entry rights
+    7, Model_TextApproval: Attribute: status, [text <> ''] 
+    8, status: cardinality: 1 
+    9, status: mutable: 1 
+    10, status: Permission: Manager # Manager actor holds the attribute entry rights 
 
 1. Events format: `eid, BasicEvent: ValueType: Value, [condition], Actor`
 2. Special syntax is used, in the graph events are stored in a digit format;
@@ -91,12 +91,12 @@ EventFlow model code presented on the video:
 
 As a result of demo model execution, subject events are written into the graph:
 
-    1. TextApproval: Individ :Text approval example, [#], Actor_Main
-    2. Text approval example: text: Text for approval, [2], Author
-    3. Text approval example: status: SendBack, [3], Manager
-    4. Text approval example: text: Text for approval v2, [3], Author
-    5. Text approval example: text: Text for approval v3, [3] Author
-    6. Text approval example :status :Accept, [5], Manager 
+    1, TextApproval: Individ :Text approval example, [#], Actor_Main
+    2, Text approval example: text: Text for approval, [2], Author
+    3, Text approval example: status: SendBack, [3], Manager
+    4, Text approval example: text: Text for approval v2, [3], Author
+    5, Text approval example: text: Text for approval v3, [3] Author
+    6, Text approval example :status :Accept, [5], Manager 
 
 ### Ecosystem Fit 
 Since the emergence of Etherium, there have been many calls to make smart contracts human-readable and semantically unambiguous (Narasimha Kodihalli. Introducing the Semantic Blockchain in Capital Markets \\ Securities Finance Monitor, October 4, 2018. 
