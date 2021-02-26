@@ -39,6 +39,10 @@ Semantic certainty of events in the graph allows for parallel asynchronous inter
 The event graph is formed by network transactions and includes semantic dictionaries, EventFlow models, and actual events. The network consensus ensures that the graph is synchronized on nodes with validation of transactions  according to the models. Transactions can be processed in parallel during validation in the absence of dependencies between models
 
 The advantages of semantic EventFlow models over standard smart contracts:
+1. The ability to quickly create models by people who do not have programming skills: by simply listing events and setting conditions for their execution.
+2. Simple organization of interaction between models written by independent users, thanks to the use of the same basic dictionaries.
+3. Technical ability to adjust action models after their launch (subject to the rights to make changes).
+4. System security against errors in digital agreements, since incorrect models are not accepted by controllers written by professional programmers, taking into account the verification of all possible ambiguities.
 
 Semantic obviousness and human-readability of the action model text.
 The ability to quickly create models by people who do not have programming skills: model contains a simple listing of events and setting conditions for their execution.
