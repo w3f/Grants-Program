@@ -4,7 +4,7 @@
 
 > This page is also available in [Chinese (中文)](./application-template-cn.md).
 
-* **Project Name:** Semantic Eventflow Contracts
+* **Project Name:** Semantic EventFlow Contracts
 * **Team Name:** TSN (Trusted Semantic Network)
 * **Payment Address:** 36y1czmyN8vpjVvzHkH2jUFv7PAWiqugYT
 
