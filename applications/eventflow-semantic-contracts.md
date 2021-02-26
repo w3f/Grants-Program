@@ -4,19 +4,51 @@
 
 > This page is also available in [Chinese (中文)](./application-template-cn.md).
 
-* **Project Name:** Name of your project (e.g. DuoSwap Module)
-* **Team Name:** Legal name of your team (e.g. Duo)
-* **Payment Address:** BTC or Ethereum (DAI) payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
+* **Project Name:** Semantic Eventflow Contracts
+* **Team Name:** TSN (Trusted Semantic Network)
+* **Payment Address:** 36y1czmyN8vpjVvzHkH2jUFv7PAWiqugYT
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up: 
-If this application in response to an RFP then please indicate this on the first line of this section.
 
 ### Overview
-
-Please provide the following:
   * A brief description of the project.
+  * * Projects’ goal is the infrastructure deployment to create a trusted semantic layer for Event Flow models execution on the Polkadot parachain. 
+
+Event Flow model - is a data structure using event semantics language to describe business logic algorithms or several actors interaction with a fixed number of conditions.  
+
+The Event Flow model performs a function that was originally assigned to smart contracts.
+
+Unlike smart contracts, which, in fact, are controllers written in typical or special programming languages, EventFlow models are composed of unified format records that describe the semantic context and conditional (causal) relationships of activity events.
+
+EventFlow models and the data they generate are organized into a directed acyclic graph, the nodes of which are action event records and the edges are conditional links between them.
+
+The structure of the graph is completely determined by EventFlow models that generate and validate the subject events that record the algorithms of transactions or business process steps.
+
+No event can be attached to a graph outside the model. Unification of semantic vocabularies of basic models provides creation and support of a unified semantic space necessary for data exchange between independent models in the same subject area.
+
+Creating and displaying models, graph navigation, and semantic search are implemented in a special user  client that creates interfaces with screen forms and generates subject events based on models.
+
+The execution of event model algorithms is based on a dynamic dataflow architecture, transformed considering event semantics into EventFlow architecture.
+
+EventFlow models interaction  are implemented on the event-driven principles using a directed acyclic graph as an event queue.
+
+Semantic certainty of events in the graph allows for parallel asynchronous interaction of multiple independent (not conditionally linked) action models. 
+
+The event graph is formed by network transactions and includes semantic dictionaries, EventFlow models, and actual events. The network consensus ensures that the graph is synchronized on nodes with validation of transactions  according to the models. Transactions can be processed in parallel during validation in the absence of dependencies between models
+
+The advantages of semantic EventFlow models over standard smart contracts:
+
+Semantic obviousness and human-readability of the action model text.
+The ability to quickly create models by people who do not have programming skills: model contains a simple listing of events and setting conditions for their execution.
+Simple organization of models interaction, written by independent users, due to the use of the same basic dictionaries. 
+The technical ability to modify action models after their launch (subject to the availability of the rights to make changes).
+The protection of the system against errors in digital agreements, since incorrect models are not accepted by controllers written by professional programmers, taking into account the verification of all possible ambiguities.
+
+
+
+ 
   * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
   * An indication of why your team is interested in creating this project.
 
