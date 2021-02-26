@@ -120,7 +120,7 @@ In our project the contract logic is fully implemented in EventFlow models, with
 
 ### Team members
 * Alexander Boldachev
-* Names of team members	
+* [Frank Horrigan]	(https://github.com/Saurer)
 
 ### Contact
 * **Contact Name:** Alexander Boldachev
