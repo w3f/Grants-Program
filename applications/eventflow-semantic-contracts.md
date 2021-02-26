@@ -82,14 +82,13 @@ EventFlow model code presented on the video:
     9: status: mutable: 1 
     10: status: Permission: Manager # Manager actor holds the attribute entry rights 
 
-Events format:
-
-* eid, BasicEvent: ValueType: Value, [condition], Actor
-* Special syntax is used, in the graph events are stored in a digit format;
-* eid: 1 - in condition link to the previous event;
-* eid: 2 - in condition it is defined that text can only be entered when the status value is undefined or has a value SendBack;
-* eid: 7 - in condition it is determined that the status can only be defined if there is a text;
-* Omitted demo attributes name and comment.
++ Events format:
+    eid, BasicEvent: ValueType: Value, [condition], Actor
++ Special syntax is used, in the graph events are stored in a digit format;
++ eid: 1 - in condition link to the previous event;
++ eid: 2 - in condition it is defined that text can only be entered when the status value is undefined or has a value SendBack;
++ eid: 7 - in condition it is determined that the status can only be defined if there is a text;
++ Omitted demo attributes name and comment.
 
 As a result of demo model execution, subject events are written into the graph:
 
