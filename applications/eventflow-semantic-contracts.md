@@ -125,7 +125,7 @@ In our project the contract logic is fully implemented in EventFlow models, with
 ### Contact
 * **Contact Name:** Alexander Boldachev
 * **Contact Email:** boldachev@gmail.com
-* Website
+* **Website:** (https://trustedsemanticnetwork.com/)
 
 ### Legal Structure 
 * **Registered Address:** none
