@@ -168,9 +168,7 @@ EventFlow controller prototype code (check out https://youtu.be/s2-BqGV_N4Y)
 | 2. | EventFlow User Client | We will create a EventFlow User Client that will query the current state of the model graph, build a screen interface based on a working model, validate data received from screen forms, form transactions in a chain, and supplement  the local version of the graph. |  
 | 3. | Basic event ontology | We will create full-featured basic event ontology for creating models of typical interactions between counterparties and for business logic designing. |  
 | 4. | Substrate chain | EventFlow models Controller and User Clients of our custom chain will interact in such a way: (1) 
-The user creates agents interaction model in the client interface, defining entities, properties, actions and rights based on the genesis part of the graph;
-(2) EventFlow models Controller (pallet) validates the model and saves it in the graph; 
-(3) Users with access rights to the model and its properties can interact with it using their clients to get results (essentially, what is shown in the demo video, but with a fixation of user actions in the parachain). |  
+The user creates agents interaction model in the client interface, defining entities, properties, actions and rights based on the genesis part of the graph; (2) EventFlow models Controller (pallet) validates the model and saves it in the graph; (3) Users with access rights to the model and its properties can interact with it using their clients to get results (essentially, what is shown in the demo video, but with a fixation of user actions in the parachain). |  
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain. |
 
 ### Milestone 2 Example — Additional features
