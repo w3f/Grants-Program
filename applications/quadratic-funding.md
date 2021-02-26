@@ -5,7 +5,7 @@
 > This page is also available in [Chinese (中文)](./application-template-cn.md).
 
 * **Project Name:** Quadratic Funding Module
-* **Payment Address:** BTC, 141Y9sybQKH6rfCj6DhDeRFR9Ja7rAWKjw
+* **Payment Address:** DAI, 0x69ecE265815B1F0357cc08c6b1C47F3785c3CB46
 
 ## Project Overview :page_facing_up: 
 > If this application in response to an RFP then please indicate this on the first line of this section.
@@ -160,6 +160,8 @@ In my opinion there are tons of things we can keep iterating on, but there are f
     - How do we choose subjects? What is the target size?
     - What's the questionnaire for the users in the study?
     - How do we measure and make use of the results?
+
+1. Sybil resistance. As development of this mechanism progresses to production, a number of challenges such as collusion and Sybil attack need to be addressed. Vitalik has proposed a method MACI, or [Minimal anti-collusion infrastructure](https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413) and a project [Governance OS Voting](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/nuclei_governance_os_voting.md) from Polkadot General Grant has been working on a solution. We will try our best to integrate those open source projects in order to fight against collusion.
 
 1. Generalization of incentive protocol. The CLR mechanism, if proven, is one of many ways to conduct crowd-funding for public goods. Just as Substrate provides a framework for any kind of state transition machine, the donation-matching, or even broadly, incentive part should be generalized to easily adapt to other methods. Although new methods need to be coded into the substrate module, but as it evolves, the module will contain most common used methods for the council to choose from.
 
