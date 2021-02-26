@@ -101,33 +101,50 @@ Text approval example: text: Text for approval v3, [3] Author
 Text approval example :status :Accept, [5], Manager 
 
 ### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
+Since the emergence of Etherium, there have been many calls to make smart contracts human-readable and semantically unambiguous (Narasimha Kodihalli. Introducing the Semantic Blockchain in Capital Markets \\ Securities Finance Monitor, October 4, 2018. 
+
+
+There even have been attempts to bring this idea to life (Kirik Semantic Smart Contracts, https://medium.com/miniapps-pro-token). However, the projects aimed to use semantics only at the stage of compiling the logic of the smart contract, followed by interpreting the text in one of the programming languages or compiling it into bytecode. 
+
+Currently there are several projects trying to implement semantic verification of the smart contracts:
+1. Grishchenko, I., Maffei, M., & Schneidewind, C. (2018). A Semantic Framework for the Security Analysis of Ethereum Smart Contracts. In International Conference on Principles of Security and Trust (pp. 243–269). Springer, Cham. doi:10.1007/978-3-319-89722-6
+2. Hildenbrandt, E., Saxena, M., Rodrigues, N., Zhu, X., Daian, P., Guth, D., et al. (2018). KEVM: A complete formal semantics of the ethereum virtual machine. In Proceedings - IEEE Computer Security Foundations Symposium (pp. 204–217). doi:10.1109/CSF.2018.00022
+3. Milorad Tosic, Nenad Petrovic. Semantic Approach to Smart Contract Verification \\ Facta Universitatis Series Automatic Control and Robotics 19(1):21-37. July 2020.
+
+In our project the contract logic is fully implemented in EventFlow models, without going down to the level of Turing full programming languages.
+
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
+* Alexander Boldachev
 * Names of team members	
 
 ### Contact
-* **Contact Name:** Full name of the contact person (e.g. John Brown)
-* **Contact Email:** Contact email (e.g. john@duo.com)
+* **Contact Name:** Alexander Boldachev
+* **Contact Email:** boldachev@gmail.com
 * Website
 
 ### Legal Structure 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+* **Registered Address:** none
+* **Registered Legal Entity:** none
 
 ### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
+Core team consists of developers of the Apla blockchain platform (https://github.com/AplaProject). The Apla project has developed a blockchain network, programming languages for smart contracts and interfaces, a software client with a complete IDE, and sidechains connections architecture. The team has implemented Pilot projects in the:
+1. UAE (supply chain, aviation certificates register, commercial real estate lease platform);
+2. India (land register, vehicle registration platform), 
+3. Luxembourg (shareholder voting system), 
+4. Russia (trading platform for Gazprom Neft), etc.
+  
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+EventFlow controller prototype code (check out https://youtu.be/s2-BqGV_N4Y) 
+
+* https://github.com/Saurer/Aurora
+* https://github.com/Saurer/Parallax
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* https://www.linkedin.com/in/alexander-boldachev-21b65960/
 
 ## Development Roadmap :nut_and_bolt: 
 
