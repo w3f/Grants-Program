@@ -166,26 +166,46 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 ### Overview
 * **Total Estimated Duration:** 16 weeks
 * **Full-time equivalent (FTE):**  2.5 FTE 
-* **Total Costs:** See Below
+* **Total Costs:** $30,000
 
-### Milestone 1 — Core Encryption/Identity Management Smart Conctracts/Basic Desktop App/Basic Browser Extension 
-* **Estimated Duration:** 10 Weeks
+### Milestone 0 — PoC
+* **Estimated Duration:** 3 Weeks
 
 * **FTE:**  2
 
-* **Costs:** 26,600 DAI (2 FTE * 35 Hours per week * 10 Weeks * $38 Hourly Wage. Of course, I'll be surprised if we will actually work less than 50 hours per week.) 
+* **Costs:** 7,980 DAI (2 FTE * 35 Hours per week * 3 Weeks * $38 Hourly Wage. Of course, I'll be surprised if we will actually work less than 50 hours per week.) 
 
     
+
+| Number | Deliverable       | Specification                                                | Status as of this Commit |
+| ------ | ----------------- | ------------------------------------------------------------ | ------------------------ |
+| 0a.    | License           | Apache 2.0                                                   |                          |
+| 0b.    | Documentations    | A guideline of how to run and test all functionalities described below. | 10% Done                 |
+| 1.     | Smart Contract    | The core smart contract that store IPFS hash, generate unique vault ID and implement access management. <br/>We are using ink! and the smart contract development suite maintained and developed by [Patract Labs](https://patract.io/) for developing environment, unit testing and deployment. | Done                     |
+| 2.     | Client Side PoC   | 1. Local data storage schema and adapters with lowDB <br/>2. IPFS (add, cat, pin) on the Infura IPFS nodes; <br/>3. ECIES encryption & decryption with [eccrypto](https://github.com/bitchan/eccrypto) <br/>4. Shamir secret sharing with a simplest 4/2 schema powered by audited lib [Secrets.js](https://github.com/grempe/secrets.js) <br/>5. A full run down of the process (from a user creating a vault, add in some password items, to the encryption, publish to IPFS, interact with a local blockchain, to access management when sharing with two other users)<br/>6. Unit testing for most of these functionalities | 70% Done                 |
+| 3.     | Client Side UI/UX | an simple Electron UI/UX not wired up with logic yet         | Done                     |
+
+
+
+### Milestone 1 — Core Encryption/Identity Management Smart Conctracts/Basic Desktop App 
+
+* **Estimated Duration:** 7 Weeks
+
+* **FTE:**  2
+
+* **Costs:** 18,620 DAI (2 FTE * 35 Hours per week * 7 Weeks * $38 Hourly Wage. Of course, I'll be surprised if we will actually work less than 50 hours per week.) 
+
+
 
 | Number | Deliverable                    | Specification                                                |
 | ------ | ------------------------------ | ------------------------------------------------------------ |
 | 0a.    | License                        | Apache 2.0                                                   |
 | 0b.    | Documentations/Project Website | A minimalism project homepage with a user manual that documents how to use SkyePass from account creation to manage passwords, and install extensions and browser extensions. <br/>A developer documentation that describes the encryption mechanism in details; Basic API documentation for extension development. |
-| 1.     | Desktop App/Browser Extension  | **Desktop App**<br/>A React.js + Electron App to start with. The App will implement as close as possible to the graphic design (per 3). <br/>- Wallet Creation / Backup Phase / Create Master Password<br/>- Wallet Import / Signin<br/>- Autolock after timed inactivity or manually lock the App <br/>- Create/Share/Manage Vaults<br/>- Add/Update/Delete Password Items (with 2FA OTP support)<br/>- Add/Update/Delete Secure Note/Credit Card <br/>- Basic ETH wallet extension<br/>- Basic Polkadot wallet extension <br/>- Application Marketplace<br/>- link social media or other identity handle to a public account<br/>- sharing a single password item directly to another user<br/><br/>**Browser Extension** <br/>- Communication to Desktop Application<br/>- Auto-fill account/passwords<br/> <br/>**IPFS Connection**<br/>- upload / update / read from a public IPFS node. |
-| 2.     | Smart Contract                 | All 4 smart contracts mentioned in the `Ecosystem Fit` section. For this phase, these contracts are testing contracts, and they are subject to minor changes as long as they provide the same/very similar functionality. We will use Rust, ink! for smart contract development, along with tools like Redspot by [Patract Hub](https://patract.io/?lang=en-US) |
+| 1.     | Desktop App/Browser Extension  | **Desktop App**<br/>A React.js + Electron App to start with. The App will implement as close as possible to the graphic design (per 3). <br/>- Wallet Creation / Backup Phase / Create Master Password<br/>- Wallet Import / Signin<br/>- Autolock after timed inactivity or manually lock the App <br/>- Create/Share/Manage Vaults<br/>- Add/Update/Delete Password Items (with 2FA OTP support)<br/>- Add/Update/Delete Secure Note/Credit Card <br/>- Basic ETH wallet extension<br/>- Basic Polkadot wallet extension <br/> - Application Marketplace<br/>- sharing a single password item directly to another user<br/><br/>**Browser Extension** <br/>- Communication to Desktop Application<br/>- Auto-fill account/passwords<br/> <br/>**IPFS Connection**<br/>- upload / update / read from a public IPFS node. |
+| 2.     | Smart Contract                 | Finish all 4 smart contracts mentioned in the `Ecosystem Fit` section. For this phase, these contracts are testing contracts, and they are subject to minor changes as long as they provide the same/very similar functionality. We might use the "identity pallet" instead of deploying smart contract 3 & 4. We will use Rust, ink! for smart contract development, along with tools like Redspot by [Patract Hub](https://patract.io/?lang=en-US) |
 | 3.     | UI/UX Design Standards         | Color Schema, Composition & Balance, Typography, Animation, Navigation, Icon Set, Brand Logo |
-| 4.     | Basic Marketing Efforts        | Get on product-hunt and send out private alpha invitation    |
-| 5.     | Testing                        | Well... test code and basic internal security audit          |
+| 4.     | Basic Marketing Efforts        | send out private alpha invitation                            |
+| 5.     | Testing                        | Unit Testing                                                 |
 ### Milestone 2  — Ready for Beta Release
 
 * **Estimated Duration:** 6 Weeks
@@ -204,7 +224,7 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 | 0b.    | Developer Resource/API Documentation/Community | - A comprehensive API spec documentation <br/>- Riot group for support, suggestions and questions<br/> |
 | 0c.     | **Security Auditing**                          | Audited by a trusted 3rd party                               |
 | 1.     | Desktop App/Browser Extension                  | Create an open Github repo for `extensions`, build a management system for open PR of new integrations. The "marketplace" in the desktop app will pull a list of available integrations from the repo.  <br/>Support at least 2 password importing source<br/>Support unencrypted password exporting<br/>Add in support for browser extension to inject hot wallet like Metamask<br/> |
-| 2.     | Smart Contracts                                | - Portals to interact with smart contract 3 & 4. Either standalone webpages or built into the desktop apps. <br/>- All contract tested and audited and we will deploy the V1.0 contract to the appropriate parachains. |
+| 2.     | Smart Contracts                                | All contract tested and audited and we will deploy the V1.0 contract to the appropriate parachains. |
 | 3.     | Partnership                                    | Build partnerships for developer/marketing/user support resources |
 | 4.     | Mobile Apps                                    | Draft up UI/UX designs for mobile apps.                      |
 
