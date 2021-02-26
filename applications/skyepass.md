@@ -177,13 +177,13 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 
     
 
-| Number | Deliverable       | Specification                                                | Status as of this Commit |
-| ------ | ----------------- | ------------------------------------------------------------ | ------------------------ |
-| 0a.    | License           | Apache 2.0                                                   |                          |
-| 0b.    | Documentations    | A guideline of how to run and test all functionalities described below. | 10% Done                 |
-| 1.     | Smart Contract    | The core smart contract that store IPFS hash, generate unique vault ID and implement access management. <br/>We are using ink! and the smart contract development suite maintained and developed by [Patract Labs](https://patract.io/) for developing environment, unit testing and deployment. | Done                     |
-| 2.     | Client Side PoC   | 1. Local data storage schema and adapters with lowDB <br/>2. IPFS (add, cat, pin) on the Infura IPFS nodes; <br/>3. ECIES encryption & decryption with [eccrypto](https://github.com/bitchan/eccrypto) <br/>4. Shamir secret sharing with a simplest 4/2 schema powered by audited lib [Secrets.js](https://github.com/grempe/secrets.js) <br/>5. A full run down of the process (from a user creating a vault, add in some password items, to the encryption, publish to IPFS, interact with a local blockchain, to access management when sharing with two other users)<br/>6. Unit testing for most of these functionalities | 70% Done                 |
-| 3.     | Client Side UI/UX | an simple Electron UI/UX not wired up with logic yet         | Done                     |
+| Number | Deliverable       | Specification                                                |
+| ------ | ----------------- | ------------------------------------------------------------ |
+| 0a.    | License           | Apache 2.0                                                   |
+| 0b.    | Documentations    | A guideline of how to run and test all functionalities described below. |
+| 1.     | Smart Contract    | The core smart contract that store IPFS hash, generate unique vault ID and implement access management. <br/>We are using ink! and the smart contract development suite maintained and developed by [Patract Labs](https://patract.io/) for developing environment, unit testing and deployment. |
+| 2.     | Client Side PoC   | 1. Local data storage schema and adapters with lowDB <br/>2. IPFS (add, cat, pin) on the Infura IPFS nodes; <br/>3. ECIES encryption & decryption with [eccrypto](https://github.com/bitchan/eccrypto) <br/>4. Shamir secret sharing with a simplest 4/2 schema powered by audited lib [Secrets.js](https://github.com/grempe/secrets.js) <br/>5. A full run down of the process (from a user creating a vault, add in some password items, to the encryption, publish to IPFS, interact with a local blockchain, to access management when sharing with two other users)<br/>6. Unit testing for most of these functionalities |
+| 3.     | Client Side UI/UX | an simple Electron UI/UX not wired up with logic yet         |
 
 
 
