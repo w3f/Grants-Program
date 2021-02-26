@@ -13,8 +13,8 @@
 ## Project Overview :page_facing_up: 
 
 ### Overview
-  * A brief description of the project.
-  * * Projects’ goal is the infrastructure deployment to create a trusted semantic layer for Event Flow models execution on the Polkadot parachain. 
+ 
+#### Projects’ goal is the infrastructure deployment to create a trusted semantic layer for Event Flow models execution on the Polkadot parachain. 
 
 Event Flow model - is a data structure using event semantics language to describe business logic algorithms or several actors interaction with a fixed number of conditions.  
 
@@ -45,22 +45,60 @@ The ability to quickly create models by people who do not have programming skill
 Simple organization of models interaction, written by independent users, due to the use of the same basic dictionaries. 
 The technical ability to modify action models after their launch (subject to the availability of the rights to make changes).
 The protection of the system against errors in digital agreements, since incorrect models are not accepted by controllers written by professional programmers, taking into account the verification of all possible ambiguities.
-
-
-
  
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+#### An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
+Polkadot is seen as the most convenient platform available for implementing a trusted semantic infrastructure based on EventFlow architecture. The parachain Polkadot is seen as a base layer providing consensus synchronization of graphs across nodes. Controllers that validate event transactions and execute EventFlow models are created in the Runtime Module using FRAME (Framework for Runtime Aggregation of Modularized Entities). The event graph is formed by parachain network transactions stored in blocks. The user client contains controllers that provide: (1) events displaying, (2) building screen forms based on action models, and (3) generating events/transactions according to user actions.
+
+#### An indication of why your team is interested in creating this project.
+The need (market demand) for semantic models / contracts to create decentralized applications and digital agreements emerged when designing pilot projects on the Apla blockchain platform (https://github.com/AplaProject) in the UAE, India, Luxembourg, Russia (Gazprom Neft), etc. Event Semantics based business logic constructor was implemented in the project for the Emirate of Ajman. For the past six months, the team has been working on a prototype of the EventFlow engine for the Trusted Semantic Network implementation (https://trustedsemanticnetwork.com/) and a number of corporate projects (IT security). The Semantic EventFlow Contracts project, based on the Polkadot parachain, is seen by the team as an opportunity to provide network users with the ability to create secure semantic models for decentralized applications, as well an opportunity to further develop EventFlow technology. 
 
 ### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
 
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
+The pilot version of the Polkadot parachain with EventFlow models will deliver:
+
+1. Directed acyclic graph’s semantic dictionaries, models and subject events generation by the user client interface;
+2. Consensus validation of transactions by models and recording events in blocks;
+3. Automatic action models execution by the Runtime Module controller upon the contingent events fixation and writing the execution results to the block.
+
+Typical use cases for EventFlow models in the pilot version:
+1. Digital agreements, with events based validity confirmation (signed by several actors) with automatic resulting event generation when the specified conditions are met - the appearance of one or multiple relevant events in the graph;
+2. Business processes creation and execution with roles based access and rights management; 
+3. Messages (events) exchange according to specified algorithms between several actors.
+
+Currently, local (without a network) prototype of the EventFlow engine has been created. Video at https://youtu.be/s2-BqGV_N4Y demonstrates: 
+Executable model creation process and user actions that consists only of events sequence generation and recording it into the graph in a unified format. All necessary semantics is recorded in 32 basic events.
+
+Software client builds screen forms based on the event model, converting user actions into events, verifies new events by model and adds them to the graph, controls model events execution conditions by the state of the graph, which ensures implementation of the application's business logic.
+EventFlow model code presented on the video:
+
+TextApproval: Model: Model_TextApproval, [#], Actor_Main
+Model_TextApproval: Attribute: text, [status = '' OR status = sendBack]
+text: required: 1 # mandatory text attribute entrance 
+text: cardinality: 1 # only one meaning of text attribute is valid
+text: mutable: 1  # may change the value by adding new
+text: Permission: Author # Author actor holds the attribute entry rights
+Model_TextApproval: Attribute: status, [text <> ''] 
+status: cardinality: 1 
+status: mutable: 1 
+status: Permission: Manager # Manager actor holds the attribute entry rights 
+
+Events format:
+
+eid, BasicEvent: ValueType: Value, [condition], Actor
+Special syntax is used, in the graph events are stored in a digit format;
+eid: 1 - in condition link to the previous event;
+eid: 2 - in condition it is defined that text can only be entered when the status value is undefined or has a value SendBack;
+eid: 7 - in condition it is determined that the status can only be defined if there is a text;
+Omitted demo attributes name and comment.
+
+As a result of demo model execution, subject events are written into the graph:
+
+TextApproval: Individ :Text approval example, [#], Actor_Main
+Text approval example: text: Text for approval, [2], Author
+Text approval example: status: SendBack, [3], Manager
+Text approval example: text: Text for approval v2, [3], Author
+Text approval example: text: Text for approval v3, [3] Author
+Text approval example :status :Accept, [5], Manager 
 
 ### Ecosystem Fit 
 Are there any other projects similar to yours? If so, how is your project different?
