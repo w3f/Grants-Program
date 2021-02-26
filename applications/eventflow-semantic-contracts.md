@@ -170,9 +170,6 @@ EventFlow controller prototype code (check out https://youtu.be/s2-BqGV_N4Y)
 | 4. | Substrate chain | EventFlow models Controller and User Clients of our custom chain will interact in such a way: (1) The user creates agents interaction model in the client interface, defining entities, properties, actions and rights based on the genesis part of the graph; (2) EventFlow models Controller (pallet) validates the model and saves it in the graph; (3) Users with access rights to the model and its properties can interact with it using their clients to get results (essentially, what is shown in the demo video, but with a fixation of user actions in the parachain). |  
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain. |
 
-### Milestone 2 Example — Additional features
-...
-
 ## Future Plans
 Team’s plan is to leverage EventFlow models implementation experience on the Polkadot parachain to create Trusted Semantic Network (https://trustedsemanticnetwork.com/) using the essential elements of the Polkadot (Networking components such as Libp2p, consensus engine and Wasm interpreter and virtual machine).
 
