@@ -71,16 +71,16 @@ Executable model creation process and user actions that consists only of events 
 Software client builds screen forms based on the event model, converting user actions into events, verifies new events by model and adds them to the graph, controls model events execution conditions by the state of the graph, which ensures implementation of the application's business logic.
 EventFlow model code presented on the video:
 
-TextApproval: Model: Model_TextApproval, [#], Actor_Main
-Model_TextApproval: Attribute: text, [status = '' OR status = sendBack]
-text: required: 1 # mandatory text attribute entrance 
-text: cardinality: 1 # only one meaning of text attribute is valid
-text: mutable: 1  # may change the value by adding new
-text: Permission: Author # Author actor holds the attribute entry rights
-Model_TextApproval: Attribute: status, [text <> ''] 
-status: cardinality: 1 
-status: mutable: 1 
-status: Permission: Manager # Manager actor holds the attribute entry rights 
+    TextApproval: Model: Model_TextApproval, [#], Actor_Main
+    Model_TextApproval: Attribute: text, [status = '' OR status = sendBack]
+    text: required: 1 # mandatory text attribute entrance 
+    text: cardinality: 1 # only one meaning of text attribute is valid
+    text: mutable: 1  # may change the value by adding new
+    text: Permission: Author # Author actor holds the attribute entry rights
+    Model_TextApproval: Attribute: status, [text <> ''] 
+    status: cardinality: 1 
+    status: mutable: 1 
+    status: Permission: Manager # Manager actor holds the attribute entry rights 
 
 Events format:
 
