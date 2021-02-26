@@ -82,7 +82,7 @@ EventFlow model code presented on the video:
     9: status: mutable: 1 
     10: status: Permission: Manager # Manager actor holds the attribute entry rights 
 
-1. Events format: <eid, BasicEvent: ValueType: Value, [condition], Actor>
+1. Events format: `eid, BasicEvent: ValueType: Value, [condition], Actor`
 2. Special syntax is used, in the graph events are stored in a digit format;
 3. eid: 1 - in condition link to the previous event;
 4. eid: 2 - in condition it is defined that text can only be entered when the status value is undefined or has a value SendBack;
