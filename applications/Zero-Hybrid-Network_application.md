@@ -113,7 +113,7 @@ The team is experienced in developing mobile applications and mobile games. In 2
 
 * **Estimated Duration:** 3 months
 * **FTE:** 2
-* **Costs:** 20000.000 USD
+* **Costs:** 20000 USD
 
 
 |Number|Deliverable|Specification|
