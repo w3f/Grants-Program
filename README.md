@@ -6,12 +6,12 @@
 
 **:loudspeaker: Important:** The Web3 Foundation _Open Grants_ Program focuses on technology grants up to **USD 30k for initial grants** and **USD 100k for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **Bitcoin or DAI**.
 
-**_This page is also available in [Chinese (中文)](./README_CN.md)._**
+:earth_asia: **_This page is also available in [Chinese (中文)](./README_CN.md)._**
 
 ---
 
-- [Introduction](#introduction)
-  - [:clipboard: About](#clipboard-about)
+- [:wave: Introduction](#wave-introduction)
+  - [About](#clipboard-about)
   - [Team](#team)
     - [W3F Grants Committee](#w3f-grants-committee)
     - [W3F Grants Evaluators](#w3f-grants-evaluators)
@@ -25,7 +25,7 @@
   - [General Grants Program](#general-grants-program)
   - [Other Grant Programs](#other-grant-programs)
 
-## Introduction
+## :wave: Introduction
 
 As part of our commitment to promoting the Web3 ecosystem, we offer a comprehensive grants program focused on funding software development and research efforts related to Polkadot, Kusama and Substrate. For more information about the Web3 Foundation please visit the [About page](https://web3.foundation/about/) of our website.
 
