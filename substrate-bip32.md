@@ -15,10 +15,13 @@ If this application in response to an RFP then please indicate this on the first
 
 ### Overview
 
-Please provide the following:
-  * A brief description of the project.
-  * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+The purpose of this project is trying to implement HD Wallet with rust for substrate. The wallet should support multiple secp256k1 based crypto currencies and particularly Ed25519 or SR25519. This wallet will allow anyone to generate Polkadot address in a format official hd wallet path like P//hard//soft (where P is mnemonic)
+
+A standard setup for a wallet user is to provide a single seed(mnemonic) and uses the functions provide by this project to derive a tree of key pairs.
+
+The master private/public pair is derived by gen_master_keys_from_seed and a parent level private_key can be used to derive next level public/private keys while parent public_key can only be used to derive next level public keys.
+
+Wallet users can generate public/private keys by specifying a wallet path like P//hard//soft and each account of the wallet is bind to menemonic P. To ease the integration effort between wallet and other substrate applications, we will implemented it in rust with no-std config so that it can potentially run in a wasm environment (browser for example).
 
 ### Project Details 
 We expect the teams to already have a solid idea about the project's expected final state.
@@ -31,22 +34,21 @@ Therefore, we ask the teams to submit (where relevant):
 * PoC/MVP or other relevant prior work or research on the topic
 
 ### Ecosystem Fit 
-Are there any other projects similar to yours? If so, how is your project different?
+No similar work
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Name of team leader
-* Names of team members	
+* Sen Ni
+* David Ding, Binker Cao, Yan Shen, Arik Zhou, Errance Liu	
 
 ### Contact
-* **Contact Name:** Full name of the contact person (e.g. John Brown)
-* **Contact Email:** Contact email (e.g. john@duo.com)
-* Website
+* **Contact Name:** Sen Ni
+* **Contact Email:** phyrex@riodefi.com
 
 ### Legal Structure 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it on one line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+* **Registered Address:** Unit Level 9F(2), Main Office Tower, Financial Park Labuan, Jalan Merdeka, 87000 Federal Territory of Labuan, Malaysia
+* **Registered Legal Entity:** RIODEFI INC.
 
 ### Team's experience
 Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
@@ -56,8 +58,7 @@ Please describe the team's relevant experience.  If the project involves develop
 * https://github.com/<your_repo_2>
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* https://www.linkedin.com/in/%E6%A3%AE-%E5%80%AA-626b8275/
 
 ## Development Roadmap :nut_and_bolt: 
 
