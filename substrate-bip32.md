@@ -23,16 +23,6 @@ The master private/public pair is derived by gen_master_keys_from_seed and a par
 
 Wallet users can generate public/private keys by specifying a wallet path like P//hard//soft and each account of the wallet is bind to menemonic P. To ease the integration effort between wallet and other substrate applications, we will implemented it in rust with no-std config so that it can potentially run in a wasm environment (browser for example).
 
-### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state.
-
-Therefore, we ask the teams to submit (where relevant):
-* Mockups/designs of any UI components
-* API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
-
 ### Ecosystem Fit 
 No similar project
 
@@ -40,7 +30,7 @@ No similar project
 
 ### Team members
 * Sen Ni
-* David Ding, Binker Cao, Yan Shen, Arik Zhou, Errance Liu	
+* David Ding, Binker Cao, Yan Shen	
 
 ### Contact
 * **Contact Name:** Sen Ni
