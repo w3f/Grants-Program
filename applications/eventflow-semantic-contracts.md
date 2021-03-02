@@ -154,7 +154,7 @@ EventFlow controller prototype code (check out https://youtu.be/s2-BqGV_N4Y)
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  3 FTE
-* **Total Costs:** 0.64 BTC)
+* * **Costs:** 30.000 USD
 
 ### Milestone 1 Example — Implement Substrate Modules 
 * **Estimated Duration:** 3 month
