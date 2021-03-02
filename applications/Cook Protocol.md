@@ -171,12 +171,12 @@ https://github.com/CookFinance/cook-distribution-and-reward
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Frontend | We will implement frontend using React.js so that:  1. Users can connect to the polkadot wallet.  2. The fund manager can initialize a fund, and allocate assets via Centrifuge.  3. The investor can browse the fund list, check the performance details of a fund, and invest in a fund. |  
+| 1. | Frontend | We will implement frontend using React.js so that:  1. Users can connect to the polkadot wallet. |  
 | 2. | Substrate | Create a substrate node with custom pallet working as parachain of Polkadot, which frontend can interact with. |    
 | 3. | Docker | We will provide a dockerfile to demonstrate the full functionality |
 
 ### Milestone 2 Fund Investment & Management Implementation
-* **Estimated Duration:** 3 weeks
+* **Estimated Duration:** 4 weeks
 * **FTE:**  2
 * **Costs:** 6k DAI
 
@@ -186,11 +186,11 @@ https://github.com/CookFinance/cook-distribution-and-reward
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Fund management | We will implement the API for fund managers to create a fund, manage a fund and claim management fees. |  
-| 2. | Fund investment | We will implement the API for investors to invest in a fund to mint ckToken, and burn ckToken to withdraw their investments. |    
+| 1. | Fund management | We will implement the API for fund managers to create a fund, manage a fund and claim management fees. We will also implement the front-end so that the fund manager can initialize a fund, and allocate assets. |  
+| 2. | Fund investment | We will implement the API for investors to invest in a fund to mint ckToken, and burn ckToken to withdraw their investments. We will also implement the front-end so that the investor can browse the fund list, check the performance details of a fund, and invest in a fund.|    
 | 3. | Docker | We will provide a dockerfile to demonstrate the full functionality |
 
-### Milestone 3 Integration with Centrifuge
+### Milestone 3 Testing with Centrifuge
 * **Estimated Duration:** 2 weeks
 * **FTE:**  2
 * **Costs:** 4k DAI
@@ -201,7 +201,7 @@ https://github.com/CookFinance/cook-distribution-and-reward
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Cross-chain asset exchange | We will exchange assets on Centrifuge. This will enable fund managers to allocate assets for the fund. |    
+| 1. | Asset exchange | We will test with Centrifuge code for fund managers to allocate assets for the fund. |    
 | 2. | Docker | We will provide a dockerfile to demonstrate the full functionality |
 
 ## Future Plans
