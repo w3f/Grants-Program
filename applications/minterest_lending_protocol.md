@@ -2,7 +2,7 @@
 
 - **Project Name:** Minterest
 - **Team Name:** Minterest Labs OU
-- **Payment Address:** bc1qf04yy5gfr6v7y0229npmxmtulam4dduxh5qn27
+- **Payment Address:** 0x5E1fe1a5e45489A728a7226eA375C11F3deC14bE
 
 ## Project Overview :page_facing_up:
 
@@ -84,6 +84,7 @@ Last but not the least, we build the Protocol valuing user experience. Our aim i
 - Joeri van Geelen
 - Matthew Niemerg
 - Mark Fitzgibbon
+- Kyn Chaturvedi
 - Mari Haki
 - Margarita Tarraste
 - Denis Romanovsky
@@ -94,11 +95,11 @@ Last but not the least, we build the Protocol valuing user experience. Our aim i
 
 ### Contact
 
-- **Contact Name:** Josh Rogers
-- **Contact Email:** josh@minterest.finance
+**Contact Name:** Josh Rogers
+**Contact Email:** josh@minterest.finance
 
-- **Contact Name:** Denis Romanovsky
-- **Contact Email:** denis@minterest.finance
+**Contact Name:** Denis Romanovsky
+**Contact Email:** denis@minterest.finance
 
 # Website
 
@@ -125,6 +126,8 @@ A pool of highly talented, committed people passionate about our business and th
 
 **Mark Fitzgibbon**, Operations Manager, has 2 decades in operational management, is a Solidity developer and previously worked in a variety of research roles for blockchain investment groups, most recently undertaking research and due diligence of blockchain, utility tokens and cryptocurrency projects for Cluster Capital, one of the world’s largest blockchain VCs.
 
+**Kyn Chaturvedi**, acting as a COO, is an experienced Strategist across multiple verticals in digital technology with a demonstrated history of working in the gaming industry. Skilled in developing and implementing Go-to-Market strategies, Partnership Development, and Product Management.
+
 **Eugeni Peniaz**, Senior Engineer, coding in Rust, with deep experience and understanding of cryptography and blockchain within the FinTech and e-commerce sectors plus Ethereum based blockchain projects.
 
 **Alexandr Liutsko**, Senior Engineer, coding in Rust, Solidity, Python/Django for both apps and dApps plus React and product and intuitive user interface design.
@@ -139,8 +142,8 @@ A pool of highly talented, committed people passionate about our business and th
 
 ### Team Code Repos
 
-- [Node Code](https://github.com/minterest-defi/minterest-chain-node)
-- [Front End Code](https://github.com/minterest-defi/minterest-frontend)
+- [Chain Node Code](https://github.com/minterest-finance/minterest-chain-node)
+- [Front End Code](https://github.com/minterest-finance/minterest-frontend)
 
 ### Team LinkedIn Profiles
 
@@ -148,6 +151,7 @@ A pool of highly talented, committed people passionate about our business and th
 - [Joeri Van Geelen](https://www.linkedin.com/in/joerivangeelen/)
 - [Matthew Niemerg](https://www.linkedin.com/in/matthew-niemerg/)
 - [Mark Fitzgibbon](https://www.linkedin.com/in/mark-f-0b3031164/)
+- [Kyn Chaturvedi](https://www.linkedin.com/in/kynchaturvedi/)
 - [Mari Haki](https://www.linkedin.com/in/mari-haki-686b40b4/)
 - [Margarita Tarraste](https://www.linkedin.com/in/margarita-tarraste-295a92139/)
 - [Denis Romanovsky](https://www.linkedin.com/in/denis-romanovsky-1677a2123/)
@@ -157,19 +161,23 @@ A pool of highly talented, committed people passionate about our business and th
 - [Pavlo Horbonos](https://www.linkedin.com/in/pavelmidvel/)
 - [Margus Poola](https://www.linkedin.com/in/margus-poola-0a7069102/)
 
+## Development Status :open_book:
+
+The Protocol development is in progress - we have an MVP on Rust/Substrate with economy model and prototype of automated liquidation. Next steps are to deploy a working test network and start working on integrations with Oracles and third party bridges to Ethereum, BTC etc. 
+
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
 - **Total Estimated Duration:** 5 months
 - **Full-time equivalent (FTE):** 10 FTE tech team for the busiest periods
-- **Total Costs:** 0.97 BTC
+- **Total Costs:** 30000$
 
 ### Milestone 1 — Implement functional economics model on Substrate.
 
 - **Estimated Duration:** 3 months (the milestone is a WIP, to be finished in the beginning of February)
 - **FTE:** 4
-- **Costs:** 0.50 BTC
+- **Costs:** 15000$
 
 | Number | Deliverable                    | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------ | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -190,7 +198,7 @@ A pool of highly talented, committed people passionate about our business and th
 
 - **Estimated Duration:** 2 months (The timeframe is February-March)
 - **FTE:** 6
-- **Costs:** 0.47 BTC
+- **Costs:** 15000$
 
 | Number | Deliverable                  | Specification                                                                                                                                                                                                                                                                                                                                                |
 | ------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -206,19 +214,19 @@ A pool of highly talented, committed people passionate about our business and th
 
 ## Future Plans
 
-Our plan is to enlist more popular assets (including those which are not yet public) in the Protocol and also provide more tools for trading, like SWAPs and Flash Loans. One of the priorities is to make the Protocol fully independent in the end.
+Current plan is to go Live in July-August 2021 with working integrations to BTC and Ethtereum  and Polkadot networks, complex Oracles system and reasonable set of supported wallets.
+Further work will be aimed at enlisting more popular assets (including those which are not yet public) in the Protocol and also providing more tools for trading, like SWAPs and Flash Loans. 
+One of the priorities is to make the Protocol fully independent in the end.
 
-A short roadmap of the Protocol development:
+A short roadmap of further the Protocol development:
 
-|                                   Feature                                   | Details                                                                                                                                                                                     |     Timeframe     |
-| :-------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------: |
-|                           Oracles and SWAPs logic                           | Oracles system is designed to monitor DEXes and provide the Protocol correct prices on assets in use. SWAPs is a mechanism which allows on the spot exchange of assets inside the Protocol. |       April       |
-| Integrate with third party bridges to Ethereum, Bitcoin, other networks. Support top 15 popular wallets. | We need to bridge to other networks to get access to liquidity. A list of networks and partners still to be defined. Enlisting DOT, Compound-based assets and Bitcoin is the first priority.                                                     |    May - August
-|                                 Governance                                  | The Protocol needs a governance platform for the community and stakeholders.                                                                                                                |     September     |
-|                            Flash Loans Platform                             | Tools for Flash Loans - a constructor, a list of pre-set actions for traiding within one chain block.                                                                                       | November-December |
+|                                                 Feature                                                  | Details                                                                                                                                                                                      |     Timeframe     |
+| :------------------------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------: |
+|                                         Oracles and SWAPs logic                                          | Oracles system is designed to monitor DEXes and provide the Protocol correct prices on assets in use. SWAPs is a mechanism which allows on the spot exchange of assets inside the Protocol.  |       April       |
+| Integrate with third party bridges to Ethereum, Bitcoin, other networks. Support top 15 popular wallets. | We need to bridge to other networks to get access to liquidity. A list of networks and partners still to be defined. Enlisting DOT, Compound-based assets and Bitcoin is the first priority. |   May - August    |
+|                                                Governance                                                | The Protocol needs a governance platform for the community and stakeholders.                                                                                                                 |     September     |
+|                                           Flash Loans Platform                                           | Tools for Flash Loans - a constructor, a list of pre-set actions for traiding within one chain block.                                                                                        | November-December |
 
 ## Additional Information :heavy_plus_sign:
-
-The team has an MVP with basic working token economics. It is not yet deployed, but available for an internal demo.
 
 We negotiate with Plasm and Moonbeam as part of our efforts in finding bridges to other networks.
