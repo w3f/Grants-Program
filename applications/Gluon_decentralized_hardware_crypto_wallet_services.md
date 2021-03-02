@@ -240,12 +240,12 @@ To assist you in defining it, we created a document with examples for some grant
 ### Overview
 * **Total Estimated Duration:** 5 months
 * **Full-time equivalent (FTE):**  2.5 FTE
-* **Total Costs:** 0.7 BTC
+* **Total Costs:** 28k USD
 
 ### Milestone 1 Example — Web app and mobile app pairing
 * **Estimated Duration:** 4 Weeks
 * **FTE:**  2.5 FTE
-* **Costs:** 0.14 BTC
+* **Costs:** 5.6k USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -268,7 +268,7 @@ To assist you in defining it, we created a document with examples for some grant
 ### Milestone 2 - Phone upgrading and social recovery
 * **Estimated Duration:** 4 Weeks
 * **FTE** 2.5 FTE
-* **Cost:** 0.14 BTC
+* **Cost:** 5.6k USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -291,7 +291,7 @@ To assist you in defining it, we created a document with examples for some grant
 ### Milestone 3 - Generate DOT asset on test net
 * **Estimated Duration:** 4 Weeks
 * **FTE:**  2.5 FTE
-* **Costs:** 0.14 BTC
+* **Costs:** 5.6k USD
 Prerequisites: 
 This milestone require Schnorrkel threshold signature issue https://github.com/w3f/schnorrkel/issues/11 completes. 
 
@@ -318,7 +318,7 @@ This milestone require Schnorrkel threshold signature issue https://github.com/w
 ### Milestone 4 - Sign DOT transaction on testnet
 * **Estimated Duration:** 4 Weeks
 * **FTE** 2.5 FTE
-* **Cost:** 0.14 BTC
+* **Cost:** 5.6k USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -339,7 +339,7 @@ This milestone require Schnorrkel threshold signature issue https://github.com/w
 ### Milestone 5 - Migrate and test on Polkadot
 * **Estimated Duration:** 4 Weeks
 * **FTE** 2.5 FTE
-* **Cost:** 0.14 BTC
+* **Cost:** 5.6k USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
