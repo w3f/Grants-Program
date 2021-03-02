@@ -22,24 +22,29 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 ### Overview
 
 Please provide the following:
-  * If the name of the project is not descriptive, a tag line (one sentence summary) of the project.
-  * A brief description of the project.
-  * An indication of how the project relates to / integrates into Substrate / Polkadot / Kusama.
+  * If the name of your project is not descriptive, a tag line (one sentence summary).
+  * A brief description of your project.
+  * An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
   * An indication of why your team is interested in creating this project.
 
 ### Project Details 
-We expect the teams to already have a solid idea about the project's expected final state. Therefore, we ask the teams to submit (where relevant):
+We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
 * Mockups/designs of any UI components
 * Data models / API specifications of the core functionality
 * An overview of the technology stack to be used
 * Documentation of core components, protocols, architecture, etc. to be deployed
 * PoC/MVP or other relevant prior work or research on the topic
+* What your project is _not_ or will _not_ provide or implement
+  * This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
 ### Ecosystem Fit 
 
-* Where and how does the project fit into the ecosystem? 
-* What need(s) does the project meet? 
+Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+
+* Where and how does your project fit into the ecosystem? 
+* Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+* What need(s) does your project meet? 
 * Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem? 
   * If so, how is your project different?
   * If not, are there similar projects in related ecosystems?
@@ -60,7 +65,7 @@ We expect the teams to already have a solid idea about the project's expected fi
 * **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
 
 ### Team's experience
-Please describe the team's relevant experience. If the project involves development work, we would appreciate it if you singled out a few interesting code commits made by team members in past projects. For research-related grants, references to past publications and projects in a related domain are helpful. 
+Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting code commits made by team members in past projects. For research-related grants, references to past publications and projects in a related domain are helpful. 
 
 If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
 
@@ -86,7 +91,7 @@ If you've already started implementing your project or it is part of a larger re
 
 This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
-Below we provide an **example roadmap**. In the descriptions, it should be clear how the project is related to Substrate, Kusama or Polkadot. We _recommend_ that the scope of the work can fit within a three-month period and that teams structure their roadmap as 1 milestone ≈ 1 month. 
+Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that the scope of the work can fit within a three-month period and that teams structure their roadmap as 1 milestone ≈ 1 month. 
 
 For each milestone,
 
@@ -108,15 +113,15 @@ To assist you in defining it, we have created a document with examples for some 
 
 ### Milestone 1 Example — Implement Substrate Modules 
 * **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 1.000 USD
+* **FTE:**  2
+* **Costs:** 8,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
+| 0d. | Article/Tutorial | We will publish an article/tutorial/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
 | 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
 | 2. | Substrate module: Y | We will create a Substrate module that will... |  
 | 3. | Substrate module: Z | We will create a Substrate module that will... |  
@@ -126,6 +131,10 @@ To assist you in defining it, we have created a document with examples for some 
 
 ### Milestone 2 Example — Additional features
 
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 4,000 USD
+
 ...
 
 
@@ -133,8 +142,8 @@ To assist you in defining it, we have created a document with examples for some 
 
 Please include here
 
-- how you intend to use, enhance, promote and support the project in the short term, and
-- the team's long-term plans and intentions in conjunction with the project.
+- how you intend to use, enhance, promote and support your project in the short term, and
+- the team's long-term plans and intentions in relation to it.
 
 
 ## Additional Information :heavy_plus_sign: 
@@ -143,5 +152,5 @@ Any additional information that you think is relevant to this application that h
 
 Possible additional information to include:
 
-* Are there are any teams who have already contributed (financially) to the project?
-* Do you have a community of users or open-source developers who are contributing to the project?
+* Are there are any teams who have already contributed (financially) to your project?
+* Do you have a community of users or open-source developers who are contributing to your project?
