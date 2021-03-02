@@ -16,12 +16,23 @@ Polconeth will introduce [Connext](https://github.com/connext) into substrate an
 
 ### Integration
 
-Polconeth will integrate [Connext](https://github.com/connext) into a substrate pallet. Polconeth pallet together with EVM pallet/Frontier Layer could enable EVM based balance transfer in State Channel (Layer2) on Polkadot. 
+In the 1st milestone, we'd like to package the server-node in the image and integrate APIs into off-chain workers. 
 
+If the delivery of 1st milestone is workable and adoptable, we're going to convert Connext smart contract logic into substrate modules in the 2nd milestone.
 
 ### Project Details 
 
-Import the *ConnextModal* component and configure the props
+On functionality side, Vector of Connect is very similar with cChannel of Celer to fulfill layer-2 channel transfer requirements.
+
+However, Connext is more production ready on cross-chain transfer and micro-payments while Celer is focusing more on gaming. Besides, Connext has more implementations.
+
+Server-node， which uses docker to package up core logic and exposes http and gRPC interfaces.
+
+Browser-node, which is distributed via npm and exposes a typescript/javascript interface.
+
+Routing node, where you forward transfers between different channels. This way, peers can transfer to each other without needing channels directly to one other, but instead by "hopping" value across many different channels through the network. Routing nodes run server-node with an automated module - a router - to forward transfers.
+
+Configuration of *ConnextModal* component 
 
 | Property | Type | Required | Description|
 | ------------- | ------------- | ------------- | ------------- |
@@ -64,27 +75,40 @@ Charlie is a full stack developer. He has development experience in Crypto Excha
 https://github.com/polconeth
 
 
-
-
 ## Development Roadmap 
 ### Overview
-* **Total Estimated Duration:** 8 weeks
-* **Full-time equivalent (FTE):**  1.5
-* **Total Costs:** 10,000 DAI
+* **Total Estimated Duration:** 12 weeks
+* **Full-time equivalent (FTE):**  2
+* **Total Costs:** 12,000 DAI
 
-### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 8 weeks
-* **FTE:**  1.5
-* **Costs:** 10,000
+### Milestone 1 API Integration 
+* **Estimated Duration:** 4 weeks
+* **FTE:**  2
+* **Costs:** 4,000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0. | License | Apache 2.0 / MIT / Unlicense |
-| 1. | Documentation | We will provide a guide about the installation and configuration of Polconeth|
+| 1. | Documentation | We will provide a guide about the depolyment and configuration of Polconeth|
+| 2. | Test Code | Test code to ensure the functionality and robustness| 
+| 3. | APIs | We will integrate Connext API as off-chain workers|  
+| 4. | Substrate chain | A substrate chain integrated with Connext API to demonstrate the functionalities|  
+| 5. | Docker | We will provide a dockerfile in which we will also package a connext server node|
+
+
+### Milestone 2 State Channel module 
+* **Estimated Duration:** 8 weeks
+* **FTE:**  2
+* **Costs:** 8,000
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0. | Documentation | A doc to specify the state channel an how it is integrated with substrate as a module|
 | 2. |  Test Code | Test code to ensure the functionality and robustness| 
-| 3 | Polconeth Pallet | We will create a pallet to enable state channel transfer on Substrate chain|  
-| 4. | Substrate chain | We will create a substarte chain which enables Polneth and EVM pallets|  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our project|
+| 3. | Polconeth Module | We will convert Connext smart contract logic into Substrate module. |  
+| 4. | Substrate chain | A Substarte chain with Polconeth module for demo.|  
+| 5. | Docker | The docker image of the project. |
+
 
 
 
