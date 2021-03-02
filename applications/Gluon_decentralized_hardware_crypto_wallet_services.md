@@ -52,11 +52,11 @@ From a users point of view, Gluon works just like a hardware wallet, but with a 
 
 ![p1 p2 p3](https://raw.githubusercontent.com/tearust/gluon-docs/d5526500c3a27deaa36fc0c0e4a2f2b8e18b1c60/res/Gluonwallet_p123.svg)
 
-By default, Gluon generates 2 out of 3 MultiSig addresses on Polkadot on behalf of users. The three private keys (secret) are P1, P2, and P3. 
+Gluon generates Polkadot accounts for users using the 2-out-of-3 Schnorr Threshold Multsig Algorithm implemented by Schnorrkel. The account public key is aggregated from the 3 key pairs while the private keys are kept by 3 individual parties. They are called P1, P2, and P3.
 
 Among them, P1 is a single sign key stored in the users' mobile phones. Both P2 and P3 are Schnorr multisig keys. Gluon owns P2 for additional security policy control, while Guardians (assigned by the User) owns P3. 
 
-P2 is a Schnorr threshold multisig key, which means instead of a single signer, a group of signers control P2. For example, we call them key-pieces such as P2-1, P2-2, P2-3, and so on. They are separately generated and stored by different TEA nodes. Multiple TEA nodes distribute the private key of each signer as the replica. We do not allow a single TEA node to hold more than one key piece of any P2 to prevent any TEA node has enough key-pieces to reach the multisig threshold. This policy also guarantees better distribution of key-pieces over TEA nodes. 
+P2 is a Schnorr threshold multisig key, which means instead of a single signer, a group of signers control P2. For example, we call them key-pieces such as P2-1, P2-2, P2-3, and so on. They are separately generated and stored by different TEA nodes. Multiple TEA nodes distribute the private key of each signer as the replica. We do not allow a single TEA node to hold more than one key piece of any P2 to prevent any TEA node has enough key-pieces to reach the multisig threshold. This policy also guarantees better distribution of key-pieces over TEA nodes. The signature algorithm is implemented by Schnorrkel too.
 
 P3 is also a Schnorr threshold multisig key but each key-pieces owned by different guardians. Users need to assign their friends or legal entities as guardians. K of n guardians could sign the social recovery transaction to restore a user's account if it lost its P1. This process is called [Social Recovery](https://www.parity.io/social-recovery-on-substrate/). 
 
