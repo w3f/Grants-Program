@@ -50,7 +50,7 @@ In the second milestone, we will create a web application interacting with Polka
 
 A simple flow of the application is shown using below UML sequence diagram. Note that it only demonstrates the ideal case. Interruptions and error cases are omitted in the diagram.
 
-[User flow diagram on Google Drive](https://drive.google.com/file/d/1kccNx437ZHP2Z1se8oaAWFuxsrwf8y1R/view?usp=sharing)
+[User flow diagram on Lucid Chart](https://lucid.app/lucidchart/b9eb3034-1615-443c-9e8c-948cbfcecaf1/view)
 
 Diving deep into possible user scenarios, I find they are more complicated than initially thought. For example, we need to code a way to prevent collusion of two projects, one of which could possibly use the matching fund to vote for the other's application in order to get more funds. That said, we will start with the basic logic and address issues occurred on the way.
 
