@@ -47,7 +47,7 @@ Inner structure of the Protocol includes the following modules and their respons
 - Controller module - calculates interest rates for lending and borrowing. This module uses several tweakable economic models for different assets. Interest rates are calculated based on the utilization rate of the pool and the total available cache. Interest accrual happens only when a user adds or withdraws liquidity from a pool.
 - Automated Liquidation logic - responsible for keeping the pools stable while lending assets to users. The Protocol compensates insolvent positions with liquidity from Liquidation pools, keeping liquidation incentives and fees very small. Liquidation pools are automatically balanced if the value there drops below a certain level.
 - SWAPs module - implemented to support yield farming whilst keeping the assets in the system.
-- Bridges and connection logic is used to actually communicate with off-chain assets providers. We ae in the process of cooperating with Plasm, Parastate and Aleph Zero to work out the best solution.
+- Bridges and connection logic is used to actually communicate with off-chain assets providers. We are in the process of cooperating with Plasm, Parastate and Aleph Zero to work out the best solution.
 - Oracles are utilised to tweak exchange rates inside the Protocol. We utilize several exchange rate providers to get weighted median amounts. This benefits the security of the Protocol.
 - Admin panel - allows tweaking of the Protocol in general and in each of the economic models.
 - Governance platform - built to distribute MNT governance tokens and conduct community-initiated voting on changes in the Protocol.
@@ -80,6 +80,7 @@ Last but not least, we are building the Protocol on the basis of valueing an eas
 - Joeri van Geelen
 - Matthew Niemerg
 - Mark Fitzgibbon
+- Adam Gągol
 - Kyn Chaturvedi
 - Mari Haki
 - Margarita Tarraste
@@ -136,7 +137,7 @@ A pool of highly talented, committed people passionate about our business and th
 
 **Margarita Tarraste**, Admin Manager, an experienced manager and coordinator of app and dApp projects in the iGaming sector, additionally supporting the project with HR capability.
 
-**Adam Gągol**, Technical Advsor, CTO, Co-Founder at Aleph Zero - expert mathematician and distributed computing specialist and designer. Supporting the project in terms of algorithm and mathematical optimisation for protocol architecture.
+**Adam Gągol**, Technical Advsor, CTO and Co-Founder at Aleph Zero - expert mathematician and distributed computing specialist and designer. Supporting the project in terms of algorithm and mathematical optimisation for protocol architecture.
 
 
 ### Team Code Repos
