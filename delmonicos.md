@@ -255,6 +255,7 @@ For each milestone:
 | 2. | Admin Front-End | Implement a basic admin front end that allows the configuration of a charging station, and the deployment of a Tariff scheme as a smart contract  |  
 | 3. | User Front-End | Implement a first simple -Front-End connected to a wallet (mobile or not) in order to authenticate the user and validate the acceptance of the charging session. |
 | 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain with a charging station simulator. |
+| 5. | Demo | We will provide a video demonstrating a demo of the working solution. |
 
 ## Future Plans
 
