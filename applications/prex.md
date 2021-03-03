@@ -6,7 +6,7 @@
 
 * **Project Name:** PREX Technologies
 * **Team Name:** Ang Kang Wei
-* **BTC Payment Address:** DAI: 0x9876abc7fd0e6ae6d36bee8cf04cb648978b16a1
+* **Payment Address:** DAI: 0x9876abc7fd0e6ae6d36bee8cf04cb648978b16a1
 
 ## Project Overview :page_facing_up: 
 
