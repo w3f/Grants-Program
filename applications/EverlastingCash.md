@@ -151,7 +151,10 @@ Lastly, the team has a consolidated architectural and devops experience both in 
 * ELC-contracts: https://github.com/CycanTech/ELC 
 
 ### Team LinkedIn Profiles
-* Provided in private through Google Form.
+* https://www.linkedin.com/in/donald-gao-6bab74206/
+* https://www.linkedin.com/in/vivi-lin-1862276/
+* https://www.linkedin.com/in/mikrub/
+
 
 
 ## Development Roadmap :nut_and_bolt: 
