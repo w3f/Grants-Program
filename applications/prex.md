@@ -61,8 +61,8 @@ As an originally non-technical founder, he has picked up blockchain development 
 | 0b. | Documentation | Documents containing the description of whole architecture design for PREX |
 | 0c. | Testing Guide | Provide a full test suite and guide for PREX mechanics. The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Substrate module: PREXMarkets | We will create a Substrate module that will automatically creates new markets once a minimum threshold is achieved. |  
-| 2. | Substrate module: PREXPredictions | We will create a Substrate module that will allow users to make predictions that are derived from price oracles. | 
+| 1. | Substrate module: PREXMarkets | We will create a Substrate module that will automatically creates new markets once a minimum threshold is achieved. Fetches price from oracle and creates a market where user can choose to predict above or below |  
+| 2. | Substrate module: PREXPredictions | We will create a Substrate module that will allow users to make predictions that are derived from price oracles. Allows user to enter a market with PREX Dollar. If wrong, he loses PREX Dollar. If correct, he wins a portion of the entire above+below pools.| 
 
 ### Milestone 2 Development of Substrate modules and integration on MVP
 * **Estimated Duration:** 1.5 months
@@ -71,12 +71,19 @@ As an originally non-technical founder, he has picked up blockchain development 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 3. | Substrate module: PREXPools | We will create a Substrate module that will allow PREX Sharks (influencers) to create their own pools for users to follow. |
+| 3. | Substrate module: PREXPools | We will create a Substrate module that will allow PREX Sharks (influencers) to create their own pools for users to follow. This is still under discussion but this is tentatively for influencers to create their own pools for users to stake in. If users choose a smart influencer to stake with, they stand to get a portion of profits when the influencers prove to be correct. This is to encourage users to hold PREX Tokens which are required to create pools.|
 | 4. | Substrate chain | Modules of our custom chain will interact with the network for placing predictions. |  
 | 6. | Front End | Complete the development of the basic interactive page in React. |
 | 7. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain. |
 | 8. | Documentation | We will provide a detailed guide for the platform on gitbook. |
 
+We are tentatively planning to use Band for price oracle.
+
+### Madlib-style UI Mock-up
+
+We are doing a madlib kind of style for the UI to make it clear to the user what his predictions are and of course some of the figures are dynamic and taken from the price oracles. Here's a rough mockup:
+
+![prex-ui](https://user-images.githubusercontent.com/78590360/109788608-6cd11d00-7c4a-11eb-93e4-e1c6927e1e9a.png)
 
 ## Technical Stack
 * Programming language: Rust
@@ -85,6 +92,8 @@ As an originally non-technical founder, he has picked up blockchain development 
 * Source control: Github or Gitlab
 * CI/CD: Docker container based, with Runners or Actions
 * Front-end: React + Polkadot.js
+
+We are considering between using smart contracts or pallets but are tending more towards pallets for speed; we plan to make contracts as simple as possible to make it easy on the players and have thus tentatively settled on using pallets. Might change if we decide the added layer of complexity is necessary to require smart contracts instead.
 
 ## Future Plans
 After PREX has succeeded in becoming the market leader in the crypto space with a sizable userbase, we will start incorporating sports and esports next and finally general events like elections etc. With a large and active userbase, PREX would also play an important role in making crypto mainstream and exposing non-crypto users to the benefits and power of blockchain and Polkadot in particular.
