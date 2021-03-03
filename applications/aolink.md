@@ -1,7 +1,7 @@
 # Open Grant Proposal
 
 * **Project Name:** AOLINK Wallet
-* **Payment Address:**13JqtK7RZ9HVGumHduUnFHqBaPhQCLys1UaJth9L5FSRnN2L(Polkadot)
+* **Payment Address:**1PktFEMY7RWVbvt3mupyjZPWPbADWkBbZ1(btc address)
 
 ## Project Overview :page_facing_up: 
 AoLink is an open source, decentralized multi-public chain asset management wallet, mainly serving Polkadot ecological projects. The Aolink wallet currently supports ETH, Polkadot, Kusama, kulupu and a series of excellent parachains based on Polkadot's substrate. 
@@ -102,7 +102,63 @@ Any instances of non-compliance with the consensus algorithms result in punishme
 
 ### Overview
 * **Total Estimated Duration:** 5 months
-* **Total Costs:** 2600 DOT
+* **Total Costs:** 1.25 btc
+
+
+
+### Overview
+* **Total Estimated Duration:** 5 months
+* **Full-time equivalent (FTE):**  3.5 FTE
+* **Total Costs:** 1.35 BTC
+
+### Milestone 1 — Support more popular public chains and lower the threshold for users to use
+* **Estimated Duration:** 2 month
+* **FTE:**  4
+* **Costs:** 0.4 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0. | Purchase Amazon server, build Darwinia, Acala, plasm, Laminar data nodes | For the stability of the service, we need server resources to build the data node service of the public chain. |
+| 1. | Provide friendly substrate-based restful api service (substrate-api) | We will write a set of friendly api services for the app to provide transaction records and other functions |
+| 2. | Open source and promote the substrate-api service | Open source api service, let more developers improve together |
+ 3. | Complete the ios client | We are currently using pure native methods to complete the android client, we need to continue to complete the iosvclient products |
+### Milestone 2 — Support dapp environment
+- **Estimated Duration:** 1.5 month
+- **FTE:**  2
+- **Costs:** 0.3 BTC
+
+| Number | Deliverable                      | Specification                                                |
+| ------ | -------------------------------- | ------------------------------------------------------------ |
+| 0.     | Develop dapp browser                        | Use polkadot js to complete the interaction between native and dapp |
+| 1.     | Develop polkadot, ksm public chain staking dapp                    | At present, Polkadot users complete the staking operation through polkadotjs.org on the PC client. But there is a lack of public kits on the mobile side. We need to improve it and provide a staking dapp for mobile users                         |
+| 2.     | Open source projects and improve documentation                       | Open source dapp browser.                                    |
+
+### 
+
+### Milestone 3 — Open source browser based on substrate (aoscan)
+
+- **Estimated Duration:** 1 month
+- **FTE:**  2
+- **Costs:** 0.3 BTC
+
+| Number | Deliverable                      | Specification                                                |
+| ------ | -------------------------------- | ------------------------------------------------------------ |
+| 0.     | UI design of aoscan v1.1              | 1.0 is rough, we need better design |
+| 1.     | Aoscan supports more polkadot parachains   | Currently we support polkadot, we need to continue to support kusama, Darwinia, Acala, plasm and other public chains |
+| 2.    | Complete the open source of the browser v1.1 version| Write deployment documents, allowing developers to easily deploy their own browsers through simple configuration 
+
+
+
+### Milestone 4 — Develop quiz dapp products on the Polkadot Parachain
+
+- **Estimated Duration:** 1 month
+- **FTE:**  2
+- **Costs:** 0.25 BTC
+
+| Number | Deliverable                      | Specification                                                |
+| ------ | -------------------------------- | ------------------------------------------------------------ |
+| 0.     | Happyhash dapp UI design          | Happyhash is a guessing game that uses a secure random number scheme + blockhash Users can bet on quizzes. |
+| 1.     | Support the realization of dot, ksm front-end engineering | Support dot, ksm token betting
 
 
 ## Future Plans
