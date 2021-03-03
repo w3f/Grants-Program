@@ -5,7 +5,7 @@
 * **DAI Payment Address:** `0x8214864d37944082322745b1639828F680f02124`
 
 ## Project Overview :page_facing_up: 
-This application is an RFP for $30,000 in DAI.
+This application is a grant application for $30,000 in DAI.
 
 
 
