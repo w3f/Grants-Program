@@ -121,7 +121,9 @@ Any instances of non-compliance with the consensus algorithms result in punishme
 | 0. | Purchase Amazon server, build Darwinia, Acala, plasm, Laminar data nodes | For the stability of the service, we need server resources to build the data node service of the public chain. |
 | 1. | Provide friendly substrate-based restful api service (substrate-api) | We will write a set of friendly api services for the app to provide transaction records and other functions |
 | 2. | Open source and promote the substrate-api service | Open source api service, let more developers improve together |
- 3. | Complete the ios client | We are currently using pure native methods to complete the android client, we need to continue to complete the iosvclient products |
+| 3. | Complete the ios client | We are currently using pure native methods to complete the android client, we need to continue to complete the iosvclient products 
+ 
+ 
 ### Milestone 2 — Support dapp environment
 - **Estimated Duration:** 1.5 month
 - **FTE:**  2
