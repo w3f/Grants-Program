@@ -21,9 +21,9 @@ PARSIQ has built similar architecture before. The most relevant example is the P
 
 We will split the Blockchain Integration process into 3 stages:
 
-* **Blockchain Layer expansion**
-* **Core services support**
-* **Portal enhancements**
+* **Blockchain Layer expansion** (**Target for Grant proposal**)
+* **Core services support** (Out-of-scope for Grant proposal)
+* **Portal enhancements** (Out-of-scope for Grant proposal)
 
 #### Blockchain Layer expansion
 We take the most suitable for our stack and infra Blockchain client and patch it to turn it into an Instrumented Node. It allows plugging in this Instrumented Node to the Core services of our Platform to keep the Blockchain Activity based events circulating. Patching the client by forking it on a software level and editing the codebase is not the only way to get started and other approaches exist.
@@ -136,38 +136,30 @@ PARSIQ team members also have wide experience in DevOps implementation: Multi-cl
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-* **Total Estimated Duration:** 2 months
-* **Full-time equivalent (FTE):** 4
-* **Total Costs:** 28 000 USD
+* **Total Estimated Duration:** 1 month
+* **Full-time equivalent (FTE):** 2
+* **Total Costs:** 15 000 USD
 
 ### Milestone 1 - Blockchain Layer expansion
-* **Estimated Duration:** 1 month
-* **FTE:**  2
-* **Costs:** 13 000 USD
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | GNU Lesser General Public License v2.1 |
-| 0b. | Documentation | The open-sourced Platform and Polkadot interconnection service will have a README file with the general description, API, examples and instructions to run it |
-| 0c. | Testing Guide | The description will also have instructions on how to run the tests | 
-| 0d. | Article/Tutorial | On https://blog.parsiq.net/ we will have a general post about Polkadot Integration |
-| 1. | Implement and open-source PARSIQ Platform and Polkadot/Kusama Nodes interconnection service | This service will stand between our Platform and Polkadot/Kusama Nodes and have a separate API to work with |  
-
-### Milestone 2 - Core services support & Portal enhancements
 * **Estimated Duration:** 1 month
 * **FTE:**  2
 * **Costs:** 15 000 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | The mix of <ul><li>Proprietary</li><li>GNU Lesser General Public License v2.1 (for the open-sourced library for traversing API results received from the PARSIQ Platform and Polkadot interconnection service)</li></ul> |
-| 0b. | Documentation | <ul><li>The ParsiQL documentation for the added Streams (i.e. PolkadotTransfers) will be added to the https://docs.parsiq.net/parsiql)</li><li>The library will have the description and examples</li></ul> |
-| 0c. | Testing Guide | The open-sourced library will have tests and guides on how to run them | 
-| 0d. | Article/Tutorial | <ul><li>On https://blog.parsiq.net/ we will have a general post about Polkadot Integration</li><li>https://docs.parsiq.net/parsiql/code-samples will have ParsiQL code samples monitoring DOT Transfers</li></ul> |
-| 1. | Implement and open-source the library to work with Block Data received from the PARSIQ Platform and Polkadot/Kusama interconnection service API ||
-| 2. | Structure the PolkadotTransfers \ KusamaTransfers Stream to be used within ParsiQL | Add a section for Polkadot & Kusama in https://docs.parsiq.net/parsiql/on-chain-streams/native-streams on the structure (type) of the Event from this Stream (+description) |
-| 3. | Upgrade User Data, Communication Channels and Portal UI to support Polkadot & Kusama that from now can be completely used from PARSIQ Portal | This is a huge step, consisting of many deliverables. They are being connected with each other to have a working result. We will provide a Demo where the monitoring for  Polkadot and Kusama is done in real-time |
-
+| 0a. | License | GNU Lesser General Public License v2.1 |
+| 0b. | Documentation | <ul><li>The open-sourced PARSIQ Platform x Polkadot/Kusama interconnection service will have a README file with the general description, API, examples and instructions to run it</li><li>The library will have the description and examples</li> |
+| 0c. | Testing Guide | The description will also have instructions on how to run the tests | 
+| 0d. | Article/Tutorial | On https://blog.parsiq.net/ we will have a general post about Polkadot & Kusama Integration</li> |
+| 1. | Implement and open-source PARSIQ Platform and Polkadot/Kusama Nodes interconnection service | This service will stand between our Platform and Polkadot/Kusama Nodes and have a separate API to work with: <ul><li>/block/:blockHash - return full information about block including: extrinsics and events</li><li>/block/limits/:from/:limit - return from XblockN to XblockN - limit block headers</li></ul> |
+| 2. | PARSIQ Platform x Polkadot/Kusama interconnection service Dockerization | Prepare the Dockerfile for this service |
+| 3. | Implement and open-source the library to work with Block Data received from the PARSIQ Platform and Polkadot/Kusama interconnection service API | An example for Ethereum and Binance Smart Chain can be found here https://github.com/parsiq/block-tracer - we will also introduce a library for processing results from PARSIQ Platform x Polkadot/Kusama interconnection service|
+ 
+This is the Response structure we should receive by calling ``/block/:blockHash`` of the PARSIQ Platform x Polkadot/Kusama interconnection service:
+ 
+ <code>
+ {"result":{"block":{"header":{"version":12,"digest":{"logs":["0x0642414245b501031c0100003278091000000000c4a82108a16c3380dc73cbeeba5a6457559145358d37815563055de4836773634986e9c8cb89646ac43be6bfd5f45ad59073399916e56bad0f6e1f1456410401f1150236883c8d14cfa0a8bf005403dec04537fdfae0b1c30e07fe14a8aa1a07","0x05424142450101fa61883e633b22d402b36fd6d7c59a174dedc5c2939f0c3b2192b6024e222244c2159dc6504f44f11719e0ed0d102b29ca230be367a0b7e929b2625367a4b686"]},"hash":"0x9143b44c264dc8b113dd1995dab5cd1e148aa6f5743e098a39ba4085c5c50b4a","extrinsicsRoot":"0xd0432167e8ccbd46edeaf90ea4442cc0f93d45902ab69c5196b540871d1e08be","number":3954996,"parentHash":"0xf6a79cc52fd36d818b3320447259c26cef1115fbd5fef609eaa6a7900e6a9f21","stateRoot":"0x6456c301369daa62fc5bfd08534e91ce99c49e1ab120055e70527a561aa9728d"},"extrinsics":[{"account_id":"","address_type":"","call_code":"0300","call_module":"Timestamp","call_module_function":"set","era":"","extrinsic_hash":"0x","extrinsic_length":10,"nonce":0,"params":[{"name":"now","type":"Compact\u003cMoment\u003e","value":1614336300,"value_raw":""}],"signature":"","tip":"","version_info":"04","events":[{"event_id":"ExtrinsicSuccess","event_idx":0,"extrinsic_idx":0,"module_id":"System","params":[{"type":"DispatchInfo","value":{"class":"Mandatory","paysFee":"Yes","weight":161397000},"value_raw":""}],"phase":0,"topic":[],"type":"0000"}]},{"account_id":"12xtAYsRUrmbniiWQqJtECiBQrMn8AypQcXhnQAc6RB6XkLW","address_type":"Id","call_code":"0500","call_module":"Balances","call_module_function":"transfer","era":"0503","extrinsic_hash":"0x088ffb2003414c631f5722a45ce1343ea1c7654a7b81d4b80f5a6cb2a7eef879","extrinsic_length":147,"nonce":42185,"params":[{"name":"dest","type":"Address","value":"12duS8heyzdUa3aXpUNA6VkPrZh3eJsjb8M5ucKFcEg1e3LN","value_raw":""},{"name":"value","type":"Compact\u003cBalance\u003e","value":"60800000000","value_raw":""}],"signature":"ce9e736169244258f05e0f3d88ba9e17f73dc52943ae7a94938324d5f9e0af2ff3ed9f29557d08ef53c5bbc524c61af2a4e1d3470167229bda4eb08471bc208e","tip":"0","version_info":"84","events":[{"event_id":"NewAccount","event_idx":1,"extrinsic_idx":1,"module_id":"System","params":[{"type":"AccountId","value":"12duS8heyzdUa3aXpUNA6VkPrZh3eJsjb8M5ucKFcEg1e3LN","value_raw":""}],"phase":0,"topic":[],"type":"0003"},{"event_id":"Endowed","event_idx":2,"extrinsic_idx":1,"module_id":"Balances","params":[{"type":"AccountId","value":"12duS8heyzdUa3aXpUNA6VkPrZh3eJsjb8M5ucKFcEg1e3LN","value_raw":""},{"type":"Balance","value":"60800000000","value_raw":""}],"phase":0,"topic":[],"type":"0500"},{"event_id":"Transfer","event_idx":3,"extrinsic_idx":1,"module_id":"Balances","params":[{"type":"AccountId","value":"12xtAYsRUrmbniiWQqJtECiBQrMn8AypQcXhnQAc6RB6XkLW","value_raw":""},{"type":"AccountId","value":"12duS8heyzdUa3aXpUNA6VkPrZh3eJsjb8M5ucKFcEg1e3LN","value_raw":""},{"type":"Balance","value":"60800000000","value_raw":""}],"phase":0,"topic":[],"type":"0502"},{"event_id":"Deposit","event_idx":4,"extrinsic_idx":1,"module_id":"Balances","params":[{"type":"AccountId","value":"13giQQe5CS4AAjkz1roun8NYUmZAQ2KYp32qTnJHLTcw4VxW","value_raw":""},{"type":"Balance","value":"159000000","value_raw":""}],"phase":0,"topic":[],"type":"0504"},{"event_id":"ExtrinsicSuccess","event_idx":5,"extrinsic_idx":1,"module_id":"System","params":[{"type":"DispatchInfo","value":{"class":"Normal","paysFee":"Yes","weight":218434000},"value_raw":""}],"phase":0,"topic":[],"type":"0000"}]},{"account_id":"13MyBjptxWdUbvW4nnvfNKJcFDF4yg6asHEAL2JTCZHvAo3L","address_type":"Id","call_code":"0500","call_module":"Balances","call_module_function":"transfer","era":"0503","extrinsic_hash":"0x471f3995c6c7e800964db2fdb11cf29d51d98fc8d2e6c215ed4726c42a9779e8","extrinsic_length":144,"nonce":5,"params":[{"name":"dest","type":"Address","value":"1271PHuA8xSLtKNULSJaBufmy8i9Q5ms15r4qpYGcb2qYY1r","value_raw":""},{"name":"value","type":"Compact\u003cBalance\u003e","value":"102000000000","value_raw":""}],"signature":"422e62663cb22fbf5875c66ba3967c59138abc29b05ef4b779d4f2f675e68e482aa1372ef85e43baa56ccc81aaba38e8893721e5adc5c34dcbe7e3bea9059e8b","tip":"0","version_info":"84","events":[{"event_id":"Transfer","event_idx":6,"extrinsic_idx":2,"module_id":"Balances","params":[{"type":"AccountId","value":"13MyBjptxWdUbvW4nnvfNKJcFDF4yg6asHEAL2JTCZHvAo3L","value_raw":""},{"type":"AccountId","value":"1271PHuA8xSLtKNULSJaBufmy8i9Q5ms15r4qpYGcb2qYY1r","value_raw":""},{"type":"Balance","value":"102000000000","value_raw":""}],"phase":0,"topic":[],"type":"0502"},{"event_id":"Deposit","event_idx":7,"extrinsic_idx":2,"module_id":"Balances","params":[{"type":"AccountId","value":"13giQQe5CS4AAjkz1roun8NYUmZAQ2KYp32qTnJHLTcw4VxW","value_raw":""},{"type":"Balance","value":"156000000","value_raw":""}],"phase":0,"topic":[],"type":"0504"},{"event_id":"ExtrinsicSuccess","event_idx":8,"extrinsic_idx":2,"module_id":"System","params":[{"type":"DispatchInfo","value":{"class":"Normal","paysFee":"Yes","weight":218434000},"value_raw":""}],"phase":0,"topic":[],"type":"0000"}]}]},"justification":""},"version":"1.0.0"}
+ </code>
 
 ## Future Plans
 It is important to note that after this integration we will have a strong foundation to keep adding other Polkadot Modules and Events on demand for Monitoring purposes. It will be done the way that Users could have problem-solving Smart-Triggers and Workflow Automations.
