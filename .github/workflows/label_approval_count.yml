@@ -1,36 +1,32 @@
-on: pull_request_review
+on:
+  pull_request_review:
+    types: [submitted]
+
 name: Label pull request approvals
+
 jobs:
   labelWhen1Approved:
-    name: Label when one approved
+    name: Awaiting 2 approvals
     runs-on: ubuntu-latest
     steps:
-    - name: Label when one approved
+    - name: Two remaining
       uses: pullreminders/label-when-approved-action@master
       env:
         APPROVALS: "1"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ADD_LABEL: "Awaiting 2 approvals"
         REMOVE_LABEL: "ready for review"
-  labelWhen2Approved:
-    name: Label when two approved
-    runs-on: ubuntu-latest
-    steps:
-    - name: Label when two approved
+    - name: One remaining
       uses: pullreminders/label-when-approved-action@master
       env:
         APPROVALS: "2"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ADD_LABEL: "Awaiting 1 approval"
-        REMOVE_LABEL: "Awaiting 2 approvals"
-  labelWhen3Approved:
-    name: Label when three approved
-    runs-on: ubuntu-latest
-    steps:
+        REMOVE_LABEL: "ready for review"
     - name: Label when three approved
       uses: pullreminders/label-when-approved-action@master
       env:
         APPROVALS: "3"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         ADD_LABEL: "Approved 🚀"
-        REMOVE_LABEL: "Awaiting 2 approvals"
+        REMOVE_LABEL: "Awaiting 1 approval"
