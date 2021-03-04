@@ -136,24 +136,25 @@ PARSIQ team members also have wide experience in DevOps implementation: Multi-cl
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-* **Total Estimated Duration:** 1 month
+* **Total Estimated Duration:** 1.5 month
 * **Full-time equivalent (FTE):** 2
 * **Total Costs:** 15 000 USD
 
 ### Milestone 1 - Blockchain Layer expansion
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 1.5 month
 * **FTE:**  2
 * **Costs:** 15 000 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | GNU Lesser General Public License v2.1 |
-| 0b. | Documentation | <ul><li>The open-sourced PARSIQ Platform x Polkadot/Kusama interconnection service will have a README file with the general description, API, examples and instructions to run it</li><li>The library will have the description and examples</li> |
+| 0b. | Documentation | <ul><li>The open-sourced PARSIQ Platform x Polkadot/Kusama interconnection service will have a README file with the general description, API, examples and instructions to run it</li><li>The ParsiQL documentation for the added Streams (i.e. PolkadotTransfers) will be added to the https://docs.parsiq.net/parsiql)</li><li>The library will have the description and examples</li> |
 | 0c. | Testing Guide | The description will also have instructions on how to run the tests | 
-| 0d. | Article/Tutorial | On https://blog.parsiq.net/ we will have a general post about Polkadot & Kusama Integration</li> |
-| 1. | Implement and open-source PARSIQ Platform and Polkadot/Kusama Nodes interconnection service | This service will stand between our Platform and Polkadot/Kusama Nodes and have a separate API to work with: <ul><li>/block/:blockHash - return full information about block including: extrinsics and events</li><li>/block/limits/:from/:limit - return from XblockN to XblockN - limit block headers</li></ul> |
+| 0d. | Article/Tutorial | <ul><li> On https://blog.parsiq.net/ we will have a general post about Polkadot & Kusama Integration</li><li>https://docs.parsiq.net/parsiql/code-samples will have ParsiQL code samples monitoring DOT Transfers</li></ul> |
+| 1. | Implement and open-source PARSIQ Platform and Polkadot/Kusama Nodes interconnection service | This service will stand between our Platform and Polkadot/Kusama Nodes and have a separate API to work with: <ul><li>/block/:blockHash - return full information about block including: extrinsics and events</li><li>/block/limits/:from/:limit - return from XblockN to XblockN - limit block headers</li></ul> Currently aiming at moniotring for **Balances** module events |
 | 2. | PARSIQ Platform x Polkadot/Kusama interconnection service Dockerization | Prepare the Dockerfile for this service |
-| 3. | Implement and open-source the library to work with Block Data received from the PARSIQ Platform and Polkadot/Kusama interconnection service API | An example for Ethereum and Binance Smart Chain can be found here https://github.com/parsiq/block-tracer - we will also introduce a library for processing results from PARSIQ Platform x Polkadot/Kusama interconnection service|
+| 3. | Implement and open-source the library to work with Block Data received from the PARSIQ Platform and Polkadot/Kusama interconnection service API | An example for Ethereum and Binance Smart Chain can be found here https://github.com/parsiq/block-tracer - we will also introduce a library for processing results from PARSIQ Platform x Polkadot/Kusama interconnection service |
+| 4. | Add to PARSIQ Portal (https://portal.parsiq.net) | This step will be delivered by PARSIQ and does not add any additional costs to the Grant Proposal (for Blockchain Layer integration) |
  
 This is the Response structure we should receive by calling ``/block/:blockHash`` of the PARSIQ Platform x Polkadot/Kusama interconnection service:
  
