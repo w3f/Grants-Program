@@ -41,11 +41,7 @@ No similar project
 * **Registered Legal Entity:** RIODEFI INC.
 
 ### Team's experience
-Please describe the team's relevant experience.  If the project involves development work, then we'd appreciated if you can single out a few interesting code commits made by team members on their past projects. For research-related grants, references to past publications and projects in a related domain are helpful.  
-
-### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+The team has been deeply involved in the blockchain field for many years and has rich research on Polkadot. The project is led by Phyrex (Sen Ni) and consists of a wallet developer, a blockchain developer and a security engineer.  
 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/%E6%A3%AE-%E5%80%AA-626b8275/
