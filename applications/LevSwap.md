@@ -19,7 +19,8 @@ Users can use bar trading on LevSwap to magnify their asset returns in the form 
     
 ### Project Details
     
-  <img width="1439" alt="LevSwap UI" src="https://user-images.githubusercontent.com/24887514/109506388-88b4b180-7ad8-11eb-845a-2fcd20a92697.png">
+  <img width="1413" alt="LevSwap UI polka" src="https://user-images.githubusercontent.com/78302492/109953531-24cdfb00-7d1b-11eb-923e-820ac39e9438.png">
+
   The structure of LevSwap mainly consists of three parts: Tokens,Pricing,Swap, can be subdivided into five functional modules: token synthesis, token management, subject matter pricing, leverage ratio adjustment and dynamic rates.  
   
   ![Levswap feature](https://user-images.githubusercontent.com/24887514/109508258-a2ef8f00-7ada-11eb-917e-f97b8c3e9dc0.png)
