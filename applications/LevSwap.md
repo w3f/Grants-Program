@@ -1,7 +1,7 @@
 # Open Grant Proposal
 
 * **Project Name:** LevSwap
-* **Team Name:** Up Labs
+* **Team Name:** Up-Protocol Labs
 * **Payment Address:** 0xFB48Fd1F94e54532d9fA1432637324F64Ad1234A
 
 ## Project Overview :page_facing_up:
