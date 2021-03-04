@@ -91,7 +91,7 @@ https://github.com/polconeth
 | 0. | License | Apache 2.0 / MIT / Unlicense |
 | 1. | Documentation | We will provide a guide about the depolyment and configuration of Polconeth|
 | 2. | Test Code | Test code to ensure the functionality and robustness| 
-| 3. | APIs | We will integrate Connext API as off-chain workers|  
+| 3. | Rest API Client | We will implement the [rest-api-client](https://github.com/connext/rest-api-client) into the off-chain worker|  
 | 4. | Substrate chain | A substrate chain integrated with Connext API to demonstrate the functionalities|  
 | 5. | Docker | We will provide a dockerfile in which we will also package a connext server node|
 
