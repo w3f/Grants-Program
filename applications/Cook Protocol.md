@@ -46,6 +46,12 @@ A user’s balance is represented as an amount of fund LP tokens, or ckTokens. A
 | invest_fund(fund_id: `u32`, token: `AccountId`, investment_amount: `Permill`) -> dispatch::DispatchResult  | Investors can invest in the desired fund, and a ownership token ckToken will be minted and sent to user address |
 | withdraw_fund(fund_id: `u32`, withdraw_amount `Permill`) -> dispatch::DispatchResult   | Investors can withdraw , it will burn the ckToken and transfer the underlying token back to user address   |
 
+**Tokens Management**
+| Function API| Description |
+| ----------- | ----------- |
+| transfer_cktokens(destination: `AccountId`, fundid: `u32`,cktokens: `u32`) -> dispatch::DispatchResult  | The holder of ckTokens can transfer them to a different account. This function updates the total amount of cktokens. The cktokens represent shares of a specific fund. |
+| transfer_cooktokens(destination: `AccountId`, cooktokens: `u32`) -> dispatch::DispatchResult  | The holder of COOK Tokens can transfer them to a different account, the balance of the accounts involved is updated accordingly to the transfer. |
+
 #### Storage
 
 We will store the following data sructure in the blockchain:
@@ -68,7 +74,7 @@ ckTokenDeposit get(fn get_fund_cktoken): map hasher(blake2_128_concat) `T::Accou
 Account id is the address of the cktoken holders and u32 is the amount of the total deposit owned.  
 
 cookTokenDeposit get(fn get_fund_cooktoken): map hasher(blake2_128_concat) `T::AccountId` => Option `u32` 
-Account id is the address of the cook tokens holder (governance tokens) and u32 is the amount of the total deposit owned.  
+Account id is the address of the COOK tokens holder and u32 is the amount of the total deposit owned.  
 
   
 #### Tech Stack
@@ -172,7 +178,9 @@ https://github.com/CookFinance/cook-distribution-and-reward
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
 | 1. | Frontend | We will implement frontend using React.js so that:  1. Users can connect to the polkadot wallet. |  
-| 2. | Substrate | Create a substrate node with custom pallet working as parachain of Polkadot, which frontend can interact with. |    
+| 2. | Substrate | Create a substrate node with custom pallet working as parachain of Polkadot, which frontend can interact with. Here the functions that will be included:
+|    |           | transfer_cktokens(destination: `AccountId`, fundid: `u32`,cktokens: `u32`) -> dispatch::DispatchResult  - The holder of ckTokens can transfer them to a different account. This function updates the total amount of cktokens. The cktokens represent shares of a specific fund.  
+|    |           | transfer_cooktokens(destination: `AccountId`, cooktokens: `u32`) -> dispatch::DispatchResult  - The holder of COOK Tokens can transfer them to a different account, the balance of the accounts involved is updated accordingly to the transfer. |
 | 3. | Docker | We will provide a dockerfile to demonstrate the full functionality |
 
 ### Milestone 2 Fund Investment & Management Implementation
@@ -186,8 +194,13 @@ https://github.com/CookFinance/cook-distribution-and-reward
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Fund management | We will implement the API for fund managers to create a fund, manage a fund and claim management fees. We will also implement the front-end so that the fund manager can initialize a fund, and allocate assets. |  
-| 2. | Fund investment | We will implement the API for investors to invest in a fund to mint ckToken, and burn ckToken to withdraw their investments. We will also implement the front-end so that the investor can browse the fund list, check the performance details of a fund, and invest in a fund.|    
+| 1. | Fund management | We will implement the API for fund managers to create a fund, manage a fund and claim management fees. We will also implement the front-end so that the fund manager can initialize a fund, and allocate assets. Here the functions that will be included: 
+|    |           | create_fund(name: `Vec<u8>`, symbol: `Vec<u8>`, description: `Vec<u8>`, fee: `Permill`, accepted_tokens: `Vec<u8>`, fund_type: `Vec<u8>`) -> dispatch::DispatchResult      | Fund managers can create a fund with different parameters, and the function returns with the newly created fund ID       |
+|    |           | transact(fund_id: `u32`, parachain_id: `u32`, type: `u8`, payload: `Vec<u8>`) -> dispatch::DispatchResult     | Fund managers can use the function to allocate funds. fund_id specify the fund to perform transactions, parachain_id specify the target parachain to interact, type specify cross-chain message/instruction type, and payload specify message/instruction parameters.       |
+|    |           | claim_management_fee(fund_id: `u32`) -> dispatch::DispatchResult      | Fund managers can claim already accrued management fees       |
+| 2. | Fund investment | We will implement the API for investors to invest in a fund to mint ckToken, and burn ckToken to withdraw their investments. We will also implement the front-end so that the investor can browse the fund list, check the performance details of a fund, and invest in a fund. Here the functions that will be included:
+|    |           | invest_fund(fund_id: `u32`, token: `AccountId`, investment_amount: `Permill`) -> dispatch::DispatchResult  | Investors can invest in the desired fund, and a ownership token ckToken will be minted and sent to user address |
+|    |           | withdraw_fund(fund_id: `u32`, withdraw_amount `Permill`) -> dispatch::DispatchResult   | Investors can withdraw , it will burn the ckToken and transfer the underlying token back to user address   |
 | 3. | Docker | We will provide a dockerfile to demonstrate the full functionality |
 
 ### Milestone 3 Testing with Centrifuge
