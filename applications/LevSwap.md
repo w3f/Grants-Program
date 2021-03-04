@@ -107,7 +107,7 @@ We expect that the entire project will be split into two grants. The first grant
 
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  5
-* **Total Costs:** 1.35 BTC
+* **Total Costs:** 30000DAI
 
 ### Milestone 1 — Implement Substrate mint&pricing Module
 
