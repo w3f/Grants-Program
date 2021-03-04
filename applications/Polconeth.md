@@ -105,7 +105,7 @@ https://github.com/polconeth
 | ------------- | ------------- | ------------- |
 | 0. | Documentation | A doc to specify the state channel an how it is integrated with substrate as a module|
 | 1. |  Test Code | Test code to ensure the functionality and robustness| 
-| 2. | Polconeth Module | We will convert Connext smart contract logic into Substrate module. |  
+| 2. | Polconeth Module | We will convert [Connext contract](https://github.com/connext/vector/tree/main/modules/contracts/src.sol) logic into Substrate module. |  
 | 3. | Substrate chain | A Substarte chain with Polconeth module for demo.|  
 | 4. | Docker | The docker image of the project. |
 
