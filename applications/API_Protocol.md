@@ -273,7 +273,60 @@ API Protocol is a next-generation decentralized API (dAPI) service aggregator th
   
   ## The Purpose of this Grant
   
-  The purpose of this grant is to verify the feasibility of the project. Considering the rapid development of Web 3.0, we hope to verify the feasibility of the    project through this grant, and cooperate with Polkadot eco-partners to explore the infrastructure of Web 3.0 API economy, so as to better empower the Web 3.0 API economy.
+  API Protocol is a relatively large engineering project, and at the beginning of the project we hope to receive funding mainly to complete the feasibility verification of a decentralised service registration and discovery mechanism based on a p2p network.
+  
+  
+  Under normal circumstances, when we need to access an API service we need to know the service instance and port. If the service instance address and port are fixed, we can directly put its configuration file in a file and use it, but in decentralized API service invocation, the corresponding IP address and port can only be obtained after the API service instance is actually deployed, and the API The service caller obtains the address and port of the API service instance through the decentralized API service discovery mechanism. Decentralised API service discovery is simply the process of finding the address and port of the instance providing the API service through the decentralised API service discovery mechanism.
+  
+  
+  A standard API service discovery architecture has three main components: an API service registry, an API service invoker, and an API service provider, as shown in the diagram.
+  
+  
+   ![img]( https://raw.githubusercontent.com/APIProtocol/research/main/API%20discovery.png)
+   
+   
+   
+ In the API Protocol, the process of using an API service consists of the following steps：
+ 
+ 
+ #### 1 API service registration.
+ 
+ 
+  The API service provider runs the API Protocol Node and the API Service Provider Node, then registers the service via a decentralised marketplace and broadcasts the registration information to a P2P network of API Protocol Node nodes.
+  
+  
+ #### 2 API Service Discovery.
+ 
+  
+  The API service requester subscribes to the API service of the decentralised network and then gets information about the node IP and port associated with the API service to follow.
+  
+ #### 3 API service requests. 
+ 
+ 
+ The API service requester gets the IP and port information related to the service provider through the decentralised API service registration network and then requests the service
+ 
+
+### The software architecture is shown in the diagram：
+
+
+#### API Node：
+
+
+![img](https://raw.githubusercontent.com/APIProtocol/research/main/API%20Protocol%20Node.png)
+
+
+#### API Service registration and call
+
+
+![img](https://raw.githubusercontent.com/APIProtocol/research/main/API%20Service%20registration%20and%20call%20(1).png)
+
+
+
+### Purpose of the grant.
+
+We wanted to first implement a pallet based on Substrate as a registration and discovery mechanism for web services based on P2P networks.
+
+
   
   
  ## Team members
