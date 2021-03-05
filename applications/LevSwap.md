@@ -93,7 +93,7 @@ Leveswap calculates the price of the leveraged token based on the current long/s
 Users can buy long or short leveraged tokens through ETH in Levswap. The process of buying leveraged tokens is equivalent to the protocol using ETH as collateral to issue leveraged token debts. Long and short leveraged tokens correspond to a common ETH collateral pool, when the price of leveraged tokens changes, the two parties holding long and short leveraged tokens will automatically become opponents of the game. While a user sells leveraged tokens, it is equivalent to redeeming ETH at the price of leveraged tokens. Through the above-mentioned buying and selling processes, it can be guaranteed that all leveraged tokens issued by Levswap are supported by ETH’s value.
 <div align=center><img width="415" alt="pic12" src="https://user-images.githubusercontent.com/78302492/110128293-97b1a180-7e01-11eb-81d0-a9cb3fc4ea0b.png"></div>
 
-# Dynamic Fund Fee
+#### Dynamic Fund Fee Design
 In an extreme unilateral market, the long and short power imbalance will cause the leverage ratio to deviate from the theoretical value. Therefore, it is necessary to adopt a dynamic fund fee to allow the strong market side to subsidize the weaker side to create arbitrage opportunities to achieve the return of long and short power in a balanced direction.  
 
 Levswap charges dynamic fund fee by the deflation mechanism. For example, if the bulls in the current market are stronger, then the long-leveraged tokens in the market will be burned linearly according to time, and the burned value will be converted into ETH to subsidize short leveraged token holder.  
