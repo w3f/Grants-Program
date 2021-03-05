@@ -183,15 +183,18 @@ In this milestone, we developed the mint module and the pricing module. we will 
 * **FTE:**  5
 * **Costs:** 18000DAI
 
+
 | Number | Deliverable  | Specification                                                                                                                                                                                                                                                          |
 | ------------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1. | Documentation | Instructions and examples for use mint  and pricing        |
 | 2. | Testing Guide | provide test suite (mock and test files) for the mint and pricing describing how the module can be tested. |
-| 3. | Substrate module: mint | We will create a Substrate module mint. Bull tokens and Bear tokens can be minted. |
-| 4. | Substrate module: pricing | We will create a pricing module that both the target price and the long/short tokens‘ price can be successfully acquired and displayed. |
-| 5. | Tutorial | We will write an tutorial about how to use mint & pricing. |
-| 6. | Testing | The code will have proper unit-test coverage to ensure functionality and robustness. |
-| 7. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain with mint  and pricing moudle. |                                                                                                                                                                                             |
+| 3. | Substrate module: mint | We will create a MINT Substrate module . Bull tokens and Bear tokens can be minted. |
+| 4. | Substrate module: Dynamic Fee Implementation | We will create a Dynamic Fee Substrate module . Fee for counterparties will be calculated based on the market force and a rational fee model. |
+| 5. | Substrate module: pricing | We will create a pricing module that both the target price and the long/short tokens‘ price can be successfully acquired and displayed. |
+| 6. | Tutorial | We will write an tutorial about how to use mint & pricing. |
+| 7. | Testing | The code will have proper unit-test coverage to ensure functionality and robustness. |
+| 8. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain with mint  and pricing moudle. |
+
 
 ### Milestone 2 — Implement Substrate exchange Module
 
@@ -201,15 +204,18 @@ At this milestone, we developed the exchange module. The first milestone has bee
 - **FTE:**  5
 - **Costs:** 12000DAI
 
-| Number | Deliverable                | Specification                                                |
-| ------ | -------------------------- | ------------------------------------------------------------ |
-| 0.     | License                    | Apache 2.0                                                   |
-| 1.     | Documentation              | Instructions and examples for use exchange.                  |
-| 2.     | Testing Guide              | provide test suite (mock and test files) for the exchange describing how the module can be tested. |
-| 4.     | Substrate module: Exchange | We will create a exchange module that will be used to trade synthetic assets. And dynamic fee is also implemented in the exchange module. |
-| 5.     | Tutorial                   | We will write an tutorial about how to use exchange. |
-| 6.     | Testing                    | The code will have proper unit-test coverage to ensure functionality and robustness. |
-| 7.     | Docker                     | We will provide a dockerfile to demonstrate the full functionality of our chain with exchange module |
+| Number | Deliverable                                         | Specification                                                |
+| ------ | --------------------------------------------------- | ------------------------------------------------------------ |
+| 0.     | License                                             | Apache 2.0                                                   |
+| 1.     | Documentation                                       | Instructions and examples for use exchange.                  |
+| 2.     | Testing Guide                                       | provide test suite (mock and test files) for the exchange describing how the module can be tested. |
+| 4.     | Substrate module: Exchange                          | We will create an exchange module that will be used to trade synthetic assets. And dynamic fee is also implemented in the exchange module. |
+| 5.     | Substrate module: DLR (Dynamic Leverage Rate) Model | We will create a DLR (Dynamic Leverage Rate) Specification and implement it. DLR module is designed to balance and adjust the mutual market forces.  In the specification we also will illustrate how DLR along with our fee model can help the leverage rate fitting to the original designed parameter. |
+| 6.     | Substrate module: Collateral Pool Implementation    | We will implement collateral pool for market counterparties, which is a low-level model to support application-level leveraged token pair trading. |
+| 7.     | Tutorial                                            | We will write an tutorial about how to use exchange.         |
+| 8.     | Testing                                             | The code will have proper unit-test coverage to ensure functionality and robustness. |
+| 9.     | Docker                                              | We will provide a dockerfile to demonstrate the full functionality of our chain with exchange module |
+
 
 ## Future Plans
 In the future, we will support more leveraged trading of synthetic assets, such as stocks and gold, and will explore portfolio possibilities with other projects in Boca Ecology. 
