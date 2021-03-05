@@ -47,6 +47,71 @@ The adjustment is dynamic and directly reflects the strength of the current long
 LeveragePair contracts are interfaced with long/short  token contracts (ERC20), such as buying long tokens, which is equivalent to LeveragePair calling LongToken's mint interface to mint tokens. 
 Pair contracts provide a series of query interfaces for display, such as leverage ratio, capital rate, leverage token price, etc.
 
+  #### The Principle of Leveraged Token  
+
+Leveraged token holders get excess returns compared to just holding spot through the increase in leveraged token prices.
+Given that the price of leveraged token is y, the price of spot is x, and the leverage ratio is k, then the relationship between the price of leveraged token and spot should be as follows:
+<div align=center><img width="59" alt="pic1" src="https://user-images.githubusercontent.com/78302492/110127479-aa77a680-7e00-11eb-8b8f-1439441d9765.png"></div>
+
+The theoretical relationship between the price of leveraged token and the spot price can be obtained by solving the above equation:
+ <div align=center><img width="59" alt="pic2" src="https://user-images.githubusercontent.com/78302492/110127718-ead72480-7e00-11eb-8f0a-dcb123f547c1.png"></div>
+
+While the price changes, long leveraged token holders and the short holders are counter-parties to each other in a zero-sum game, that is, in the rising market, all the profits of long come from the loss of short. The zero-sum game between long and short can be expressed by the following formula:
+ <div align=center><img width="415" alt="pic3" src="https://user-images.githubusercontent.com/78302492/110127824-0b06e380-7e01-11eb-860a-714ee25e4a62.png"></div>
+
+Given that the situation of spot, long and short leveraged token in the current market is shown in the table below:
+ <div align=center><img width="415" alt="pic4" src="https://user-images.githubusercontent.com/79917064/110096760-3bd32280-7dd9-11eb-8ca9-84cf4fe5c679.png"></div>
+
+According to the constraints of the leveraged token price and zero-sum game, the following equations can be obtained:
+ <div align=center><img width="207" alt="pic5" src="https://user-images.githubusercontent.com/78302492/110127898-1f4ae080-7e01-11eb-8f12-67b5b899ab4e.png"></div>
+
+By differentiating the formula, we get:
+ <div align=center><img width="184" alt="pic6" src="https://user-images.githubusercontent.com/78302492/110127975-38ec2800-7e01-11eb-8c3f-fa37676589c9.png"></div>
+
+By solving the above equations, we can get the relationship between the leveraged token’s price and the spot price:
+ <div align=center><img width="166" alt="pic7" src="https://user-images.githubusercontent.com/78302492/110128014-486b7100-7e01-11eb-9823-74c50d5dc200.png"></div>
+
+We can get from the results that in order to ensure a zero-sum game between long and short, a dynamic leverage ratio, k1 and k2, is required. The leverage ratio depends on the current market forces (long and short). The current long and short market forces are:
+ <div align=center><img width="138" alt="pic8" src="https://user-images.githubusercontent.com/78302492/110128041-51f4d900-7e01-11eb-9db1-5a39a5671063.png"></div>
+
+If the leverage ratio of the leveraged token is 3X, it means that k1 = k2 = 3 in the long-short equilibrium. When the long and short forces are not equal, the leverage ratio fluctuates around 3. We can take the following values for the dynamic leverage ratio to ensure that the positive leverage ratio fluctuates around 3:
+ <div align=center><img width="194" alt="pic9" src="https://user-images.githubusercontent.com/78302492/110128124-6933c680-7e01-11eb-9fc6-88c475068da9.png"></div>
+
+Through the above theoretical analysis, we have derived the theoretical model of leveraged tokens, and we have designed our leveraged token trading system using the above theoretical model.
+We use the theoretical model to do a retrospective analysis of the price of BTC in 2020. The results are shown in the figure below. Obviously, if you hold BTC3XLONG leveraged coins, you can get several times the income of just holding BTC in 2020 and even in the extreme market on March 12, 2020, there was no forced liquidation.
+ 
+<div align=center><img width="415" alt="pic10" src="https://user-images.githubusercontent.com/79917064/110096841-52797980-7dd9-11eb-9fd3-c1d65bd93aca.png"></div>
+
+#### Leveraged Token Design
+
+Levswap supports the synthesis and trading of leveraged token of any asset. We take BTC as an example to introduce the principle of leveraged token design. BTC 3x long leveraged token is named BTC-3X-LONG, and 3x short leveraged token named BTC-3X-SHORT.
+  
+Leveswap calculates the price of the leveraged token based on the current long/short market forces and the spot price queried from price oracles such as Chainlink, Uniswap, etc. Levswap gets prices from multiple oracle sources and calculates the time-weighted accumulated price as the spot price of the system to prevent price manipulation by whales.
+ <div align=center><img width="415" alt="pic11" src="https://user-images.githubusercontent.com/78302492/110128205-7cdf2d00-7e01-11eb-8991-5d0f0f7e4dc7.png"></div>
+
+Users can buy long or short leveraged tokens through ETH in Levswap. The process of buying leveraged tokens is equivalent to the protocol using ETH as collateral to issue leveraged token debts. Long and short leveraged tokens correspond to a common ETH collateral pool, when the price of leveraged tokens changes, the two parties holding long and short leveraged tokens will automatically become opponents of the game. While a user sells leveraged tokens, it is equivalent to redeeming ETH at the price of leveraged tokens. Through the above-mentioned buying and selling processes, it can be guaranteed that all leveraged tokens issued by Levswap are supported by ETH’s value.
+<div align=center><img width="415" alt="pic12" src="https://user-images.githubusercontent.com/78302492/110128293-97b1a180-7e01-11eb-81d0-a9cb3fc4ea0b.png"></div>
+
+# Dynamic Fund Fee
+In an extreme unilateral market, the long and short power imbalance will cause the leverage ratio to deviate from the theoretical value. Therefore, it is necessary to adopt a dynamic fund fee to allow the strong market side to subsidize the weaker side to create arbitrage opportunities to achieve the return of long and short power in a balanced direction.  
+
+Levswap charges dynamic fund fee by the deflation mechanism. For example, if the bulls in the current market are stronger, then the long-leveraged tokens in the market will be burned linearly according to time, and the burned value will be converted into ETH to subsidize short leveraged token holder.  
+
+The dynamic fund fee is composed of two parts, namely the fixed interest and the long-short imbalance fee. The fixed interest is charged at a fixed rate for holding long or short leveraged tokens, and the long-short imbalance fee is used to balance the long and short power in the market.  
+
+Long and short imbalance rate:
+<div align=center><img width="195" alt="pic13" src="https://user-images.githubusercontent.com/78302492/110128760-232b3280-7e02-11eb-8234-3e4da70cd77d.png"></div>
+
+Dynamic fund rate of long side:
+ <div align=center><img width="217" alt="pic14" src="https://user-images.githubusercontent.com/78302492/110128797-2cb49a80-7e02-11eb-9f2e-2657c3bad8b7.png"></div>
+
+Dynamic fund rate of short side:
+ <div align=center><img width="216" alt="pic15" src="https://user-images.githubusercontent.com/78302492/110128839-376f2f80-7e02-11eb-832c-fc9a6ea8e9ee.png"></div>
+ 
+LevSwap provides an interface to provide a one-click arbitrage interface for market makers. Arbitrageur can hold subsidized leveraged tokens in the protocol, and at the same time hedge unilateral risks in other markets, thereby obtaining a stable arbitrage mechanism to help balance the long and short market power.
+
+
+
 ### Ecosystem Fit
 There are no similar projects in Polka ecology. 
 In the ethereum network ecology, there are Futureswap, Synthetix and etc. 
