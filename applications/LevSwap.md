@@ -10,19 +10,19 @@ Users can use bar trading on LevSwap to magnify their asset returns in the form 
 
 ### Overview
   In the outbreak of DeFi in 2020, the top 10 market capitalization projects include the exchange ,Yield Farming Aggregators (e.g. YFI), lending (e.g. aave), synthetic token (e.g. synthetixs) and etc. It is not difficult to find that improving the utilization rate of funds is the real demand of the market, then one product must be mentioned,--lever trading which is also an indispensable part of traditional financial transactions. This can be proved by the trading volume of leverage and futures products of centralized exchanges.
-  
+
   LevSwap will implement lever trading in a decentralized environment in the form of synthetic assets. 
   Users can use the operation mode of DEX to buy and sell the corresponding synthetic asset tokens to do long and short. LevSwap uses the Swap token model to get rid of the margin model, customers in the extreme market will not burst, And LevSwap can effectively improve the safety of customer funds, and reduce risks. Through the calculation of the long-short force, LevSwap can adjust the leverage ratio in real time, Combining with the transaction rate, LevSwap can balance the long-short force, guide the return of the token price, and improve the effectiveness of the transaction.
 
-    
+
    Our team comes from the top blockchain companies and financial institutions in the industry. Members have participated in the development of allied chain and several Dapp projects, and have a deep understanding and accumulation of blockchain technology and research. After our investigation and discussion, we found that some transaction efficiency problems of the main network (lag and high gas fee), these problems can not be solved on the main network. After studying the technology of polkadot and Substrate, we find that the advanced technology of polka can fit our project very well. at the same time, LevSwap, based on the transaction of synthetic assets can well cater to the cross-chain needs of assets generated for long-short transactions in other networks (such as etherum network). In a sense, it realizes the asset link between polka and other networks.
     
 ### Project Details
-    
+
   <img width="1413" alt="LevSwap UI polka" src="https://user-images.githubusercontent.com/78302492/109953531-24cdfb00-7d1b-11eb-923e-820ac39e9438.png">
 
   The structure of LevSwap mainly consists of three parts: Tokens,Pricing,Swap, can be subdivided into five functional modules: token synthesis, token management, subject matter pricing, leverage ratio adjustment and dynamic rates.  
-  
+
   ![Levswap feature](https://user-images.githubusercontent.com/24887514/109508258-a2ef8f00-7ada-11eb-917e-f97b8c3e9dc0.png)
 
   #### Synthetic tokens
@@ -50,9 +50,9 @@ Pair contracts provide a series of query interfaces for display, such as leverag
 ### Ecosystem Fit
 There are no similar projects in Polka ecology. 
 In the ethereum network ecology, there are Futureswap, Synthetix and etc. 
-  
+
 Difference: 
-  
+
 1. Compared to Futureswap:   
 Futureswap is a perpetual contract trading platform implemented in DEX, while LevSwap is a leveraged trading platform realized through synthetic tokens on DEX. 
 Futureswap directly uses usd to do long and short operations on targets such as eth. 
@@ -121,11 +121,12 @@ In this milestone, we developed the mint module and the pricing module. we will 
 | ------------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1. | Documentation | Instructions and examples for use mint  and pricing        |
 | 2. | Testing Guide | provide test suite (mock and test files) for the mint and pricing describing how the module can be tested. |
-| 3. | Substrate module: mint | We will create a Substrate module mint. Bull tokens and Bear tokens can be minted. |
-| 4. | Substrate module: pricing | We will create a pricing module that both the target price and the long/short tokens‘ price can be successfully acquired and displayed. |
-| 5. | Tutorial | We will write an tutorial about how to use mint & pricing. |
-| 6. | Testing | The code will have proper unit-test coverage to ensure functionality and robustness. |
-| 7. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain with mint  and pricing moudle. |                                                                                                                                                                                             |
+| 3. | Substrate module: mint | We will create a MINT Substrate module . Bull tokens and Bear tokens can be minted. |
+| 4. | Substrate module: Dynamic Fee Implementation | We will create a Dynamic Fee Substrate module . Fee for counterparties will be calculated based on the market force and a rational fee model. |
+| 5. | Substrate module: pricing | We will create a pricing module that both the target price and the long/short tokens‘ price can be successfully acquired and displayed. |
+| 6. | Tutorial | We will write an tutorial about how to use mint & pricing. |
+| 7. | Testing | The code will have proper unit-test coverage to ensure functionality and robustness. |
+| 8. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain with mint  and pricing moudle. |
 
 ### Milestone 2 — Implement Substrate exchange Module
 
@@ -135,15 +136,17 @@ At this milestone, we developed the exchange module. The first milestone has bee
 - **FTE:**  5
 - **Costs:** 12000DAI
 
-| Number | Deliverable                | Specification                                                |
-| ------ | -------------------------- | ------------------------------------------------------------ |
-| 0.     | License                    | Apache 2.0                                                   |
-| 1.     | Documentation              | Instructions and examples for use exchange.                  |
-| 2.     | Testing Guide              | provide test suite (mock and test files) for the exchange describing how the module can be tested. |
-| 4.     | Substrate module: Exchange | We will create a exchange module that will be used to trade synthetic assets. And dynamic fee is also implemented in the exchange module. |
-| 5.     | Tutorial                   | We will write an tutorial about how to use exchange. |
-| 6.     | Testing                    | The code will have proper unit-test coverage to ensure functionality and robustness. |
-| 7.     | Docker                     | We will provide a dockerfile to demonstrate the full functionality of our chain with exchange module |
+| Number | Deliverable                                         | Specification                                                |
+| ------ | --------------------------------------------------- | ------------------------------------------------------------ |
+| 0.     | License                                             | Apache 2.0                                                   |
+| 1.     | Documentation                                       | Instructions and examples for use exchange.                  |
+| 2.     | Testing Guide                                       | provide test suite (mock and test files) for the exchange describing how the module can be tested. |
+| 4.     | Substrate module: Exchange                          | We will create an exchange module that will be used to trade synthetic assets. And dynamic fee is also implemented in the exchange module. |
+| 5.     | Substrate module: DLR (Dynamic Leverage Rate) Model | We will create a DLR (Dynamic Leverage Rate) Specification and implement it. DLR module is designed to balance and adjust the mutual market forces.  In the specification we also will illustrate how DLR along with our fee model can help the leverage rate fitting to the original designed parameter. |
+| 6.     | Substrate module: Collateral Pool Implementation    | We will implement collateral pool for market counterparties, which is a low-level model to support application-level leveraged token pair trading. |
+| 7.     | Tutorial                                            | We will write an tutorial about how to use exchange.         |
+| 8.     | Testing                                             | The code will have proper unit-test coverage to ensure functionality and robustness. |
+| 9.     | Docker                                              | We will provide a dockerfile to demonstrate the full functionality of our chain with exchange module |
 
 ## Future Plans
 In the future, we will support more leveraged trading of synthetic assets, such as stocks and gold, and will explore portfolio possibilities with other projects in Boca Ecology. 
