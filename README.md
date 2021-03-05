@@ -39,9 +39,7 @@ The Open Grants Program focuses on funding software development and research eff
 
 The Web3 Foundation Open Grants Program focuses on technology grants up to **USD 30k for initial grants** and **USD 100k for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **bitcoin or DAI**. For larger grants, payments in other currencies and partly private submissions, please visit our [Web3 Foundation General Grants page](https://github.com/w3f/General-Grants-Program) on GitHub.
 
-You can find a list of areas in the Web 3.0 Technology Stack that demand particular development [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md), as well as a list of previously accepted projects [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/accepted_grant_applications.md).
-
-Additionally the builders program [feedback board](https://feedback.parity.io/) may contain some useful ideas for grant projects.
+You can find a list of areas in the Web 3.0 Technology Stack that demand particular development [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md), as well as a list of previously accepted projects [here](https://github.com/w3f/Web3-collaboration/blob/master/grants/accepted_grant_applications.md). Additionally, the builders program [feedback board](https://feedback.parity.io/) may contain some useful ideas for grant projects.
 
 ### Team
 
