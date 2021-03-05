@@ -48,12 +48,12 @@ As an originally non-technical founder, he has picked up blockchain development 
 ### Overview
 * **Total Estimated Duration:** Duration of the whole project: 3 months
 * **Full-time equivalent (FTE):**  2 FTE
-* **Total Costs:** 30,000 DAI
+* **Total Costs:** 18,000 DAI
 
 ### Milestone 1 MVP, start Substrate development & refining of mechanics
 * **Estimated Duration:** 1.5 months
 * **FTE:**  2
-* **Costs:** 15,000 DAI
+* **Costs:** 8,000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -67,7 +67,7 @@ As an originally non-technical founder, he has picked up blockchain development 
 ### Milestone 2 Development of Substrate modules and integration on MVP
 * **Estimated Duration:** 1.5 months
 * **FTE:**  2
-* **Costs:** 15,000 DAI
+* **Costs:** 1,000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
