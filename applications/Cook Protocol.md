@@ -164,12 +164,12 @@ https://github.com/CookFinance/cook-distribution-and-reward
 ### Overview
 * **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):**  2 FTE
-* **Total Costs:** 14k DAI
+* **Total Costs:** 10k DAI
 
 ### Milestone 1 Initialize Parachain & Frontend Implementation
 * **Estimated Duration:** 2 weeks
 * **FTE:**  2
-* **Costs:** 4k DAI
+* **Costs:** 2.5k DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -186,7 +186,7 @@ https://github.com/CookFinance/cook-distribution-and-reward
 ### Milestone 2 Fund Investment & Management Implementation
 * **Estimated Duration:** 4 weeks
 * **FTE:**  2
-* **Costs:** 6k DAI
+* **Costs:** 5k DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -206,7 +206,7 @@ https://github.com/CookFinance/cook-distribution-and-reward
 ### Milestone 3 Testing with Centrifuge
 * **Estimated Duration:** 2 weeks
 * **FTE:**  2
-* **Costs:** 4k DAI
+* **Costs:** 2.5k DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
