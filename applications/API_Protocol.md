@@ -361,7 +361,7 @@ The project leader, Haijun, is a serial entrepreneur who has experienced the ent
 
 * **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):** 3
-* **Total Costs:** 8000 DAI
+* **Total Costs:** 4000 DAI
 
 #### Milestone 1 — Verify Production of Concepts (POC) and Implement Substrate Modules
 
