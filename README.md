@@ -4,7 +4,7 @@
   <img src="./src/Open_Grants_Program.png" style="width:1300px";>
 </p>
 
-**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **USD 30,000 for initial grants** and **USD 100,000 for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **Bitcoin or DAI**. For larger grants, payments in other currencies and partly private submissions, please see our [General Grants Program](https://github.com/w3f/General-Grants-Program).
+**:loudspeaker: Important:** The Web3 Foundation Open Grants Program focuses on technology grants up to **USD 30,000 for initial grants** and **USD 100,000 for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **Bitcoin or DAI**. For larger grants, payments in other currencies, and partly private submissions, please see our [General Grants Program](https://github.com/w3f/General-Grants-Program).
 
 :earth_asia: **_This page is also available in [Chinese (中文)](./README_CN.md)._**
 
@@ -27,7 +27,7 @@
 
 ## :wave: Introduction
 
-As part of our commitment to promoting the Web3 ecosystem, we offer comprehensive grants programs focused on funding software development and research efforts related to **Polkadot, Kusama and Substrate**. For more information about the Web3 Foundation please visit the [About page](https://web3.foundation/about/) of our website.
+As part of our commitment to promoting the Web3 ecosystem, we offer comprehensive grants programs focused on funding software development and research efforts related to **Polkadot, Kusama, and Substrate**. For more information about the Web3 Foundation please visit the [About page](https://web3.foundation/about/) of our website.
 
 The Open Grants Program tries to achieve the above while being:
 
