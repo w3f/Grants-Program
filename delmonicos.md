@@ -159,7 +159,7 @@ we be successful in the current phase.
 
 ### Team Code Repos
 
-* <https://github.com/lumena-tech/delmonicos>
+* <https://github.com/Delmonicos/charger-node>
 
 ### Team LinkedIn Profiles
 
