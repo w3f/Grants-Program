@@ -11,11 +11,14 @@
 
 Please provide the following:
   * A brief description of the project.
+  
 Vera DeFi is a key component of Vera Protocol, a larger vision to build an open protocol that enables the peer-to-peer lending, borrowing and exchange of physical assets on the blockchain by leveraging hash signatures of object scan,  NFC smart tags and decentralized oracles. As a Substrate-based lending application, Vera DeFi smart contracts will manage unique asset identities, interest, and payment, enabling users to loan assets for token payout.
 
   * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
+  
   Core Smart contract components will be developed in Ink on substrate. We will research integrating oracles like paralink. 
   * An indication of why your team is interested in creating this project.
+  
   Like how Bitcoin and Ethereum have enabled trustless peer-to-peer payments of digital assets between strangers, our vision is to enable the trustless retail or exchange of physical goods and assets between strangers without reliance on a centralized marketplace. In light of recent censorships taken by Big Tech oligopolies, our mission is to be an alternative platform for decentralized, censorship-resistant digital commerce and DeFi applications for real-world assets and physical consumer goods. The Vera team looks forward to working closely with its community to build an ecosystem that empowers and rewards entrepreneurs, inventors, and producers of consumer goods and protect the fundamental human right to buy, sell, or trade property we create and own.
 
 ### Project Details 
@@ -24,17 +27,20 @@ Vera DeFi is a key component of Vera Protocol, a larger vision to build an open 
 https://balsamiq.cloud/sa6mpd1/pvn6rks/r5D27
 
 * An overview of the technology stack to be used
-* ![Vera Tech Stack](http://screenshot.studio/Feb24N2FlYz.png)
-* Documentation of core components, protocols, architecture etc. to be deployed
 
-Asset Manager Ink Smart contract to manage the assets life cycle 
-![Transaction Flow](http://screenshot.studio/Feb24YjM4OT.png)
+ ![Vera Tech Stack](https://on-chain.io/media/defitechstack.png)
+
+* Documentation of core components, protocols, architecture etc. 
+
+Asset Manager Ink Smart contract to manage the assets life cycle, [PoC](https://github.com/veraprotocol/defi) built and documented. 
+
+![Transaction Flow](https://on-chain.io/media/veralendingflowv1.png)
 * PoC/MVP or other relevant prior work or research on the topic
 Built AssetManager Ink contract to manage life cycle of the loan
 https://github.com/veraprotocol/defi 
-Deployed on substrate 
-http://18.219.122.155/?rpc=ws%3A%2F%2F18.219.122.155%3A9944#/explorer 
+* [ working demo  ](http://18.219.122.155/) deployed on substrate
 
+[Video Demo](https://on-chain.io/media/veradefidemo1.mp4)
 
 ### Ecosystem Fit 
 We are not aware of another project doing DeFi in the Polkadot ecosystem that also aims to link to real world assets.
@@ -73,6 +79,8 @@ Completed project
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
+
+Continue the development of the asset manager, build LoanManager, ExchangeManger
 * **Total Estimated Duration:** 8 weeks
 * **Full-time equivalent (FTE):**  1.5 FTE
 * **Total Costs:**  12,000 DAI
@@ -81,16 +89,37 @@ Completed project
 * **FTE:**  1.5
 * **Costs:** 12,000 USD/DAI
 
+#### Non Fungible Token
+
+Continue the development of our NFT,  research and implement attributes and functionalities to link Token to 
+real assets, such as hash or signature of scan of Art, and other proprietary techniques.  
+
+#### Exchange Manager
+
+A Smart Contract to facilate non-custodial buy and sell of assets. 
+
+Exchange manager will also provide list functionality of the assets for sale. 
+
+![Exchange Tx](https://on-chain.io/media/defiselltx.jpg)
+
+
+#### Lending Manager
+
+A Smart contract to manage the life cycle of assets loan. 
+
+![Exchange Tx](https://on-chain.io/media/defilendingtx.jp)
+
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0a. | License | Apache 2.0 / MIT / Unlicensed |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 1. | AssetManager | WContinue the development of our PoC AssetManager contract in Ink to enhance the functionality to fully support the first phase of the user interface. |  
-| 2. | UI/Design | Design UI based on the phase 
-[wireframe](https://balsamiq.cloud/sa6mpd1/pvn6rks/r5D27). |  
-| 3. |User Interface | Build the UI on top of the smart contract functionalities and  based on the design |  
-| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of the application |  
-| 5. | Article | We will write an article or tutorial that explains the work done as part of the grant. |
+| 1. | Non Fungible Token | Continue the development of our NFT.  |
+| 2. | AssetManager | Continue the development of our PoC AssetManager contract in Ink to enhance the functionality to fully support the first phase of the user interface. Described above. |  
+| 3. | ExchangeManager | Build exchange manager to enable non custodial buy/sell of NFT, described above. |  
+| 4. | UI/Design | Design UI based on the phase [wireframe](https://balsamiq.cloud/sa6mpd1/pvn6rks/r5D27). |  
+| 5. |User Interface | Build the UI on top of the smart contract functionalities and  based on the design |  
+| 6. | Docker | We will provide a dockerfile to demonstrate the full functionality of the application |  
+| 7. | Article | We will write an article or tutorial that explains the work done as part of the grant. |
 
 
 
@@ -106,6 +135,7 @@ Possible additional information to include:
 * What work has been done so far?
 AssetManger was built in Ink to manage  ERC721 deposit and ERC20 loans. 
 * Are there are any teams who have already contributed (financially) to the project?
-Yes. Founders already invented in the project. 
+Yes. Founders already invented in the project, founders are committed to keep investing in the project. 
 * Have you applied for other grants so far?
 No.
+
