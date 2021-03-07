@@ -95,7 +95,7 @@ This is an open source project under Apache License 2.0. All the defined milesto
 
 ## Development Status :open_book: 
 
-
+At present, we have developed some prototype systems based on other public chains, and plan to migrate all of them to the substrate-based blockchain.
 
 
 ## Development Roadmap :nut_and_bolt: 
