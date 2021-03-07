@@ -1,3 +1,4 @@
+# Open Grant Proposal
 
 * **Project Name:** DataDEX Network
 * **Team Name:** DataDEX
@@ -52,14 +53,8 @@ Total Costs = Data Token Costs + Computing Costs
 
 ### Ecosystem Fit 
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-* Where and how does your project fit into the ecosystem? 
-* Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-* What need(s) does your project meet? 
-* Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem? 
-  * If so, how is your project different?
-  * If not, are there similar projects in related ecosystems?
+* [Moonbeam](https://moonbeam.network/) is a new Polkadot smart contract platform that makes it easy to build natively interoperable blockchain applications. 
+* [Phala Network](https://phala.network/) is a privacy-preserving cloud computing service, which offers computing power comparable to existing cloud services and protects the privacy of managed programs.
 
 ## Team :busts_in_silhouette:
 
