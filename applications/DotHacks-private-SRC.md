@@ -1,6 +1,6 @@
 # W3F Open Grant Proposal
 
-* **Project Name:** Treasury pallet Bug-bounty
+* **Project Name:** DotHacks private SRC
 * **Team Name:** DotHacks team
 * **Payment Address:** 0xf48cb0f783a79bac37abe8f76edcf80ba78b1f83(DAI)
 
@@ -20,7 +20,7 @@ Moreover, since 1) the market value involved is massive, 2) there is still lacki
 
 However, there is no current Security Response Center (SRC) existing in the Polkadot ecosystem to mitigate the loss caused by blockchain vulnerabilities.
 
-In this RFP, we want to propose a solution for cybersecurity response based on the Substrate Treasury pallet, which has funds controlled by the Council. This idea will be implemented through a new spending Instrument called Bug-bounty, which is independent of the current existing instrument of Proposal, Tipping, and Bounty. After implementation, we will merge the code upstream to the Substrate repo's Treasury pallet. 
+In this RFP, we want to propose a solution for cybersecurity response based on the Substrate Treasury pallet, which has funds controlled by the Council. This idea will be implemented through a new spending instrument called Bug-bounty, which is independent of the current existing instrument of Proposal, Tipping, and Bounty. After implementation, we will merge the code upstream into the Substrate repo's Treasury pallet. 
 
 Since Substrate is becoming more widely recognized and used, by implementing the Bug-bounty Instrument, the Polkadot Council, or any other Substrate blockchain Council, will be able to create a private cybersecurity response center respectively, by publishing bug-bounty programs, receiving vulnerability reports, and issuing bug-bounty reward for its own assets through the Treasury pallet. 
 
@@ -66,7 +66,7 @@ The Bug-bounty Instrument will expose the following dispatchable functions:
 
 Functions of the Council
 
-* configure_program - Initiate/modify/disable/enablethe bug-bounty program for configuration.
+* configure_program - Initiate/modify/disable/enable the bug-bounty program for configuration.
 * add_curator - Add curators to the curator list.
 * delete_curator - Delete curators from the curator list.
 * send_rewards - Send rewards to the curator and the whitehat respectively.
@@ -74,7 +74,7 @@ Functions of the Council
 Functions of the Whitehat
 
 * apply_bug_bounty - Apply for the bug-bounty with a few deposits, meanwhile a curator will be randomly elected and get matched. (The purpose of deposit is to improve quality of vulnerability reports submitted, the required amount can be adjusted by the configuration trait.）
-* submit_report - Encrypt the detailed vulnerability report information with curator's Public Key, then upload them to IPFS (as one of the solution). Then the url will be delivered to the matched curator.
+* submit_report - Encrypt the detailed vulnerability report information with curator's public key, then upload them to IPFS (as one of the solution). Then the url will be delivered to the matched curator.
 
 Functions of the Curator
 
@@ -106,7 +106,8 @@ https://github.com/dothacks/substrate
 None.
 
 ## Development Status :open_book: 
-In the communication with w3f, we agreed to implement private SRC on Polkadot by extending the Treasury pallet. https://github.com/w3f/Open-Grants-Program/pull/249#issuecomment-779251198
+In the last communication, an agreement has been reached that our team give priority to implement private SRC by extending the Treasury pallet. 
+https://github.com/w3f/Open-Grants-Program/pull/249#issuecomment-779251198
 
 ## Development Roadmap :nut_and_bolt: 
 
