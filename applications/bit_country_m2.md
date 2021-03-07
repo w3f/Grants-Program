@@ -153,10 +153,6 @@ Full-timers
 * Daniel Choi (Full-stack developer / test analyst, Rust, Substrate & Game, full-time)
 * Logan Liu (UX developer, full-time)
 
-Part-timers
-* Juanita Strydom (Community Manager)
-* Kai Zhang (Technical Advisory)
-* Alan Liang (Technical Advisory)
 
 ### Team Website	
 * https://bit.country (Project)
@@ -229,9 +225,6 @@ Key Profiles from the tech team
 * Shannon Christie https://www.linkedin.com/in/shannonchristie/
 * Daniel Choi https://www.linkedin.com/in/dotnet-daniel-choi/
 * Logan Liu https://www.linkedin.com/in/logan-liu-5123a0130/
-* Juanita Strydom https://www.linkedin.com/in/juanita-strydom-5b79512b/
-* Kai Zhang https://www.linkedin.com/in/kai-zhang-02676a77/
-* Allan Liang https://www.linkedin.com/in/allan-liang-0a8555124/
 
 
 ## Development Roadmap :nut_and_bolt: 
