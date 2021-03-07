@@ -118,8 +118,6 @@ With the Substrate technology/decentralization, Bit.Country will become a popula
   
   * Some Posters & Screenshots
 
-  ![Bit Country Post](https://miro.medium.com/max/1050/1*I4eowVh9XC9vvBPv9RFuiw.png)  
-
   ![Bit Country Dimensions](https://miro.medium.com/max/1500/1*LXbl0F2JlDC0Q-aPD95xNw.png)  
 
   ![Bit Country Economy](https://miro.medium.com/max/1050/1*xCFqvshujkwEjuoL2RzyoQ.jpeg)  
