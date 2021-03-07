@@ -53,6 +53,8 @@ Total Costs = Data Token Costs + Computing Costs
 
 ### Ecosystem Fit 
 
+We would like to cooperate with the following ecological projects and platforms to enhance the development progress:
+
 * [Moonbeam](https://moonbeam.network/) is a new Polkadot smart contract platform that makes it easy to build natively interoperable blockchain applications. 
 * [Phala Network](https://phala.network/) is a privacy-preserving cloud computing service, which offers computing power comparable to existing cloud services and protects the privacy of managed programs.
 
