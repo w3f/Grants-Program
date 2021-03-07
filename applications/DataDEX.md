@@ -108,8 +108,12 @@ At present, we have developed some prototype systems based on other public chain
 * Full-time equivalent (FTE): 3
 * Total Costs: 25000 USD
 
-|ID|Deliverable|Specification|
+|Number|Deliverable|Specification|
 |:----|:----|:----|
+|0a.|License|Apache 2.0 / MIT / Unlicense|
+|0b.|Documentation|We will provide a basic tutorial that explains how a user can run a Substrate node on Android. Once the node is up, it will be possible to send test transactions that will show how the new functionality works.|
+|0c.|Testing Guide|In the guide we will describe how to run these tests|
+|0d.|Article/Tutorial|We will write an article or tutorial that explains the work done as part of the grant.|
 |1|Graph Schema|Design user graph data schema, including activities and profile.|
 |2|Mobile App|Develop preliminary mobile data owners registering tools and SDK|
 |3|Smart Contract|Data DEX smart contract development|
