@@ -28,13 +28,14 @@ https://balsamiq.cloud/sa6mpd1/pvn6rks/r5D27
 
 * An overview of the technology stack to be used
 
- ![Vera Tech Stack](https://on-chain.io/media/defitechstack.png)
+![Vera Tech Stack](http://screenshot.studio/Mar06ZWQ4Mj.png)
 
 * Documentation of core components, protocols, architecture etc. 
 
 Asset Manager Ink Smart contract to manage the assets life cycle, [PoC](https://github.com/veraprotocol/defi) built and documented. 
 
-![Transaction Flow](https://on-chain.io/media/veralendingflowv1.png)
+![Transaction Flow](http://screenshot.studio/Mar06ZDhmZj.png)
+
 * PoC/MVP or other relevant prior work or research on the topic
 Built AssetManager Ink contract to manage life cycle of the loan
 https://github.com/veraprotocol/defi 
@@ -100,14 +101,14 @@ A Smart Contract to facilate non-custodial buy and sell of assets.
 
 Exchange manager will also provide list functionality of the assets for sale. 
 
-![Exchange Tx](https://on-chain.io/media/defiselltx.jpg)
+![Exchange Transaction](http://screenshot.studio/media/defiselltx.jpg)
 
 
 #### Lending Manager
 
 A Smart contract to manage the life cycle of assets loan. 
 
-![Exchange Tx](https://on-chain.io/media/defilendingtx.jp)
+![Lending Transaction](http://screenshot.studio/media/defilendingtx.jpg)
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
