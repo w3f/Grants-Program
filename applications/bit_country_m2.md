@@ -1,6 +1,6 @@
 # Open Grant Proposal
 
-* **Project:** Bit.Country M2 by MVP.STUDIO
+* **Project:** Bit.Country M2 (Follow up grant after M1 delivered) by MVP.STUDIO
 * **Proposer:** https://github.com/bit-country
 * **Payment Address:** 1NzRAkHyDZByge95nuMJSNB5tBTQo6RLPy
 
@@ -16,11 +16,11 @@ MVP.STUDIO (New Zealand) is a talent & tech startup incubator, it manages a tech
 Bit.Country provides a new way to socialize with a game feel, while also being driven by real economics.
 
 * A decentralized world - putting community first. 
-* An open NFT/game protocol for managing & incentivizing small-medium communities using gamification.
+* An open NFT/game protocol for managing & incentivizing communities.
 
 **Mission Statement**
 
-Bit.country provides a platform that attracts classic internet users to experience the power of the decentralized web in the communities that they have involvement.
+Bit.country brings the community engagement to a new dimention.
 
 **The Goal**
 
@@ -256,23 +256,22 @@ We believe Bit.Country will bring many people to the ecosystem.
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide inline documentation, video, medium articles & start creating the lightpaper of the project. |
+| 0b. | Documentation | We will provide inline documentation, video, medium articles & creating more content in the lightpaper of the project. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage for  pallets and automated testing coverage for the dapp using Cypress.| 
 | 1. |Substrate module: Continuum|This pallet needs to handle Continumm protocols which shape the map of the bit countries. It also needs to manage membership of Continuum spot auction participation, Continuum spot auction, Continuum spot lease and Continuum spot governance. This encourage bit countries gathers in the community they belong to.|
 | 2. |Substrate module: NftPromotion |our network is NFT native chain. This pallet manages NFT campaigns that we will create to incentivze NFT creators, traders and minters.|
 | 3. |Connecting to Rococo| Continue to perform the tasks required for connecting to Rococo, this is done, just in case there will be restart or any changes with Rococo.|
 | 4. |Submit Rococo Parachain Proposal | This is submitted, just in case we need to conduct extra work for any future changes.|   
-|	5. |	Dapp - Dual Login |	Support login using either PolkadotJs and or classical username and password login. We need to do some engineering to make this happens so we can bring more users outside of the ecosystem|
-|	6. |	Dapp - Continnum	|	Continuum is the universal map of bit countries.It looks like Google map, we will be using OpenLayer or similar, we need to develop all the UI features such as auction, showing poplation heatmap and stuff required by Continuum pallet. |
-|	7.	|	Dapp - NFT Minting|	While using ORML trait, we will .|
-|	8.	|	Dapp - Country Block	|	Owners can create blocks and set the topic and description for the block in a country.	Block creation page needs features such as preview 3d world.|
-|	9.	|	Dapp - Country Block Planner	|	Owners can plan the buildable sections of a block.	Utilizing more intuitive UI with 3d preview feature.|
-|	10.	|	Dapp - Country Map	|	Residents can explore blocks like a grid map.	Users can navigate to the neighboring block in 9-grid block navigator.|
-|	11.	|	Dapp - Country Economy	|	Owners can setup off-chain economic rules for incentivizing activities.	Create incentive processor to calculate incentive amount and allocate to users. This incentive data will also be used for the data provider in Substrate Oracle for settling incentives on-chain.|
-|	12.	|	Dapp - Country Ownership	|	List owners of the country ranked by their ownership. Use more intuitive graphics to present the insights. |
-|	13.	|	Dapp - Country Block Post	|	User can create posts onto the timeline for different level of privacy i.e. public, country level, block level and private. Post can be liked and commented. Post can be shared on external social media to onboard more public users.	This will need to work with our caching layer for scalability. Implement infinite scroll.|
-|	14.	|	Dapp - Country Block 3D View	|	Users can enter the 3D view of the block and conduct basic activities such as walk and jump in a customized scene in the browser.|
-| 15. | Docker / UAT | We will demonstrate the full functionality of our chain and our dapp on UAT / a dockerfile.|
+|	5. |	Dapp - Dual Login |	Support login using either PolkadotJs or classical username and password login. We need to do some engineering to make this happens so we can bring more users outside of the ecosystem|
+|	6. |	Dapp - Continnum	|	Continuum is the universal map of bit countries. It looks like Google map with different content, we will be using OpenLayer or similar, we need to develop all the UI features such as auction, showing poplation heatmap and stuff required by Continuum pallet. |
+|	7.	|	Dapp - NFT Minting - Extended|	While using ORML trait, we are also planning to implement co-creator, origin, NFT-Future-Event, Smart Contract Enabled NFT.|
+|	8.	|	Dapp - Local NFT Market	|	Develop the decetralized marketplace for local bit country |
+|	9.	|	Dapp - Local Ownership Board	|	Screen to display the local token owners|
+|	10.	|	Dapp - 2D <-> 3D	|	Implement the composite UI between 3D and 2D. Users in 3D can access 2D timeline without changing the page|
+|	11.	|	Dapp - 3D templates	|	Develop some 3D templates for user to use to bootstrap the world. e.g. Mars, Cyberpunk, Kusama Canary theme|
+|	12.	|	Dapp - Dashboard|	Summary page of current system: blocks, bit countries, recent events, economic overview etc. The webapp landing page.|
+|	13.	|	Dapp - Country Block 3D View	|	Users can enter the 3D view of the block and conduct basic activities such as walk and jump in a customized scene in the browser.|
+| 14. | Docker / UAT | We will demonstrate the full functionality of our chain and our dapp on UAT / a dockerfile.|
 
 
 ### Community engagement
