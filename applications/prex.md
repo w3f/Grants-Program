@@ -67,7 +67,7 @@ As an originally non-technical founder, he has picked up blockchain development 
 ### Milestone 2 Development of Substrate modules and integration on MVP
 * **Estimated Duration:** 1.5 months
 * **FTE:**  2
-* **Costs:** 1,000 DAI
+* **Costs:** 10,000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
