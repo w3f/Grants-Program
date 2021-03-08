@@ -240,7 +240,7 @@ We believe Bit.Country will bring many people to the ecosystem.
 ### Milestone 2  — Continuum Protocol (Universal Map) & NFT Centric Token Economy. Goal: public testnet
 * **Estimated Duration:** 6 weeks
 * **FTE:**  5
-* **Costs:**  0.61 BTC
+* **Costs:**  30,000 USD
 
 *Note: We should submit this application ealier, due to the workload required by Kusam NFT Gallery, we have decided to help the community for the upcoming Chiba Art Gallery.
 
