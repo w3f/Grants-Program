@@ -61,7 +61,7 @@ In addition to the information provided on your application, note that your proj
 
 [Requests for Proposals](https://github.com/w3f/General-Grants-Program/tree/master/rfp-proposal) (RFPs) are currently stored on the General Grants repository and represent ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, out of which one or more strong applications will be selected. So even if another team has already applied to implement a certain RFP, we encourage you to still apply if you are interested.
 
-An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](grants/polkadot_stack.md), as well as a list of previously accepted applications [here](grants/accepted_grant_applications.md). Additionally, the Substrate Builders [feedback board](https://feedback.parity.io/) may contain some useful ideas for grant projects.
+An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md), as well as a list of previously accepted applications [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/accepted_grant_applications.md). Additionally, the Substrate Builders [feedback board](https://feedback.parity.io/) may contain some useful ideas for grant projects.
 
 If you have a **good concept of the technical challenges** that your idea entails and would like feedback before applying, you can send us an [email](mailto:grants@web3.foundation) and tell us about it.
 
