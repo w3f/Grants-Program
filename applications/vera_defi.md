@@ -95,18 +95,92 @@ Continue the development of the asset manager, build LoanManager, ExchangeManger
 Continue the development of our NFT,  research and implement attributes and functionalities to link Token to 
 real assets, such as hash or signature of scan of Art, and other proprietary techniques.  
 
-#### Exchange Manager
 
-A Smart Contract to facilate non-custodial buy and sell of assets. 
+#### NFT Exchange
+NFT decentralized non-custodial marketplace will facilitate P2P trading between sellers and buyers. The process will be controlled by the ExchangeManager contract. It will provide the following functionality: 
 
-Exchange manager will also provide list functionality of the assets for sale. 
+##### _createTrade_
+
+    Input: 
+        NFT address, the tokenID
+        Address in which they want to get paid and the amount 
+        Expiration date . 
+    Output:
+    Tx ID
+
+This function will be used by sellers to list a new trade opportunity. 
+
+When called, the user will be asked to approve the transaction, and the NFTs will be transferred to the smart contract . The function 	will generate a unique trade ID.
+
+##### _Purchase_
+    Inputs:
+        Tx ID
+
+This function will be called by buyers to perform a trade by sending  the trade ID. The function will get the tokens to pay with from them,  they need to approve them first, collect a fee, and send the rest to the seller. At the same time, it will send the NFTs to the buyer. The trade is then marked as completed.
+
+##### _expireTrade_
+	Inputs:
+        Tx ID
+
+This function can be called by a seller to expire a non fulfilled trade to recover their NFT token. 
+
+##### _withdrawFees_
+
+The administrator of the smart contract can call this function to withdraw fees.
+
+##### _ListTrades_
+    Inputs: None
+    Outputs:
+        List of available NFT for sale with details. 
+        
 
 ![Exchange Transaction](http://screenshot.studio/media/defiselltx.jpg)
 
+#### NFT Lending
 
-#### Lending Manager
+##### _listToken_
 
-A Smart contract to manage the life cycle of assets loan. 
+    Input: 
+        NFT address, the tokenID
+        Address in which they want to get paid and the amount 
+        Loan duration
+    Output:
+        Tx ID
+
+This function will be used by borrowers to list a new loan opportunity. 
+
+When called, the user will be asked to approve the transaction, and the NFTs will be transferred to the smart contract as collateral. The function will generate a unique trade ID.
+
+
+##### _lend_
+    Inputs:
+        Tx ID
+
+This function will be called by investors to perform a trade by sending the trade ID. The function will get the tokens to pay with from them.
+
+
+##### _withdraw_
+    Inputs:
+        Tx ID
+
+This function will be called by borrower to pay back their loans with interest and get back the NFT
+
+##### _cancleLoan_
+    Inputs:
+        Tx ID
+
+This function will be called by the investor to get NFT from the smart contract when the borrower fails to pay back on time.
+
+##### _expireLoan_
+	Inputs:
+        Tx ID
+
+This function can be called by a borrower to expire a non fulfilled loan to recover their NFT token. 
+
+##### _listLoans_
+    Inputs: None
+    Outputs:
+        List of available NFT for sale with details. 
 
 ![Lending Transaction](http://screenshot.studio/media/defilendingtx.jpg)
 
