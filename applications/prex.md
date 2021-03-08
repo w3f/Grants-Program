@@ -20,11 +20,9 @@ The team has always been interested in prediction markets and have watched the p
 
 PREX aims to build initial POC to focus only on crypto markets but incorporating influencers that are ever so prevalent in the blockchain industry to bring about excitement and userbase. Finally, when we are ready for full deployment on Polkadot, we aim to already be the market leader in terms of the number of users and Sharks (influencers), who are also able to make predictions across chains. 
 
-
-
 ### Ecosystem Fit 
 
-Existing prediction market projects suffer from lack from activity due to several reasons: ETH projects incur high gas fees. BSC projects do not currently have sufficient users. Projects that focus on crypto only are too boring. Projects that attempt to do it all, incorporating sports, esports etc are too early for their time as supporter base is not yet in existance.
+Existing prediction market projects suffer from lack from activity due to several reasons: ETH projects incur high gas fees. BSC projects do not currently have sufficient users. Projects that focus on crypto only are too boring. Projects that attempt to do it all, incorporating sports, esports etc are too early for their time as supporter base is not yet in existance. PREX aims to make the project more user-friendly with the tech, and to make it more fun by bringing in influencers who will naturally showcase their PREX pools on their social media to show off their predictions.
 
 ## Team :busts_in_silhouette:
 
@@ -34,7 +32,7 @@ Existing prediction market projects suffer from lack from activity due to severa
 * **Contact Email:** https://prex.finance (In progress)
 
 ### Team's experience
-Ang Kang Wei started getting involved in the blockchain space in late 2016. Having witnessed the ICO mania cycle, he has a keen understanding of crypto markets. 
+Ang Kang Wei started getting involved in the blockchain space in late 2016. Having witnessed the ICO mania cycle and crypto winter, he has a keen understanding of crypto markets. 
 
 Apart from being an investor in various stages of various blockchain projects, he was also an ambassador to NULS, a  blockchain infrastructure project and remains a Council Member to this day. 
 
