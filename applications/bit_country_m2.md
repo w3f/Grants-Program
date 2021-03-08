@@ -250,7 +250,7 @@ We believe Bit.Country will bring many people to the ecosystem.
 | 0b. | Documentation | We will provide inline documentation, video, medium articles & creating more content in the lightpaper of the project. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage for  pallets and automated testing coverage for the dapp using Cypress.| 
 | 1. |Substrate module: Continuum|This pallet needs to handle Continumm protocols which shape the map of the bit countries. It also needs to manage membership of Continuum spot auction participation, Continuum spot auction, Continuum spot lease and Continuum spot governance. This encourage bit countries gathers in the community they belong to.|
-| 2. |Substrate module: NftPromotion |our network is NFT native chain. This pallet manages NFT campaigns that we will create to incentivze NFT creators, traders and minters.|
+| 2. |Substrate module: NftPromotion |Our network is NFT native chain. This pallet manages NFT campaigns that we will create to incentivze NFT creators, traders and minters.|
 | 3. |Connecting to Rococo| Continue to perform the tasks required for connecting to Rococo, this is done, just in case there will be restart or any changes with Rococo.|
 | 4. |Submit Rococo Parachain Proposal | This is submitted, just in case we need to conduct extra work for any future changes.|   
 |	5. |	Dapp - Dual Login |	Support login using either PolkadotJs or classical username and password login. We need to do some engineering to make this happens so we can bring more users outside of the ecosystem|
@@ -261,7 +261,7 @@ We believe Bit.Country will bring many people to the ecosystem.
 |	10.	|	Dapp - 2D <-> 3D	|	Implement the composite UI between 3D and 2D. Users in 3D can access 2D timeline without changing the page|
 |	11.	|	Dapp - 3D templates	|	Develop some 3D templates for user to use to bootstrap the world. e.g. Mars, Cyberpunk, Kusama Canary theme|
 |	12.	|	Dapp - Dashboard|	Summary page of current system: blocks, bit countries, recent events, economic overview etc. The webapp landing page.|
-|	13.	|	Dapp - Country Block 3D View	|	Users can enter the 3D view of the block and conduct basic activities such as walk and jump in a customized scene in the browser.|
+|	13.	|	Dapp - Bootstrap	|	Our goal is to launch the testnet after this milestone, we will creating honor-effort-ontestnet campaigns to attract users to engage with us. We will also setup public idea board allowing visitors to create new ideas and vote for existing ideads.|
 | 14. | Docker / UAT | We will demonstrate the full functionality of our chain and our dapp on UAT / a dockerfile.|
 
 
