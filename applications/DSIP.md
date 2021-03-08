@@ -104,7 +104,7 @@ Algorithmic stablecoins need to accumulate value consensus over a long period of
 ### Team members
 - Tallone - Project Lead / Product Director
 - Qiang - CTO
-- Ming - Project Manager/Quality Supervisor
+- Kevin - Project Manager/Quality Supervisor
 
 ### Contact
 * **Contact Name:** Tallone
@@ -139,7 +139,7 @@ No Legal Entity
 ### Team LinkedIn Profiles
 * [Tallone](https://www.linkedin.com/in/tallone-ho-84518a53/)
 * [Qiang](https://www.linkedin.com/in/wang-qiang-aa6a2894/)
-* [Ming](https://www.linkedin.com/in/%E6%98%8E%E6%98%8E-%E9%AB%98-960b75208/)
+* [Kevin](https://www.linkedin.com/in/kevin-gao-960b75208/)
 
 ## Development Roadmap :nut_and_bolt: 
 
