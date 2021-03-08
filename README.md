@@ -59,7 +59,7 @@ In addition to the information provided on your application, note that your proj
 
 ### Project ideas
 
-[Requests for Proposals](https://github.com/w3f/General-Grants-Program/tree/master/rfp-proposal) (RFPs) are currently stored on the General Grants repository and represent ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, out of which one or more strong applications will be selected. So even if another team has already applied to implement a certain RFP, we encourage you to still apply if you are interested.
+[Requests for Proposals](https://github.com/w3f/General-Grants-Program/tree/master/rfps) (RFPs) are currently stored on the General Grants repository and represent ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, out of which one or more strong applications will be selected. So even if another team has already applied to implement a certain RFP, we encourage you to still apply if you are interested.
 
 An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md), as well as a list of previously accepted applications [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/accepted_grant_applications.md). Additionally, the Substrate Builders [feedback board](https://feedback.parity.io/) may contain some useful ideas for grant projects.
 
@@ -109,11 +109,11 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 1. **Application**
    1. [Fork](https://github.com/w3f/Open-Grants-Program/fork) this repository.
-   2. In the newly created fork, create a copy of the application template ([`applications/application-template.md`](applications/application-template.md)). If you're using the GitHub web interface, you will need to create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Open-Grants-Program/applications/application-template.md) of the template inside the new one. Make sure you **do not modify the template file directly**.
+   2. In the newly created fork, create a copy of the application template ([`applications/application-template.md`](applications/application-template.md)). If you're using the GitHub web interface, you will need to create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Open-Grants-Program/master/applications/application-template.md) of the template inside the new one. Make sure you **do not modify the template file directly**.
    3. Name the new file after your project: `project_name.md`.
    4. Fill out the template with the details of your project. The more information you provide, the faster the review.
    5. Once you're done, create a pull request. The pull request should only contain _one new file_—the Markdown file you created from the template.
-   6. Sign off on the [terms and conditions](https://github.com/w3f/Open-Grants-Program/src/T&Cs.md) presented by the [CLA assistant](https://github.com/claassistantio) bot as a Contributor License Agreement. You might need to reload the pull request to see its comment.
+   6. Sign off on the [terms and conditions](src/T&Cs.md) presented by the [CLA assistant](https://github.com/claassistantio) bot as a Contributor License Agreement. You might need to reload the pull request to see its comment.
 2. **Application Review**
    1. The [committee](#w3f-grants-committee) can (and usually does) issue comments and request changes on the pull request.
    2. Clarifications and amendments made in the comments _need to be included in the application_. You may address feedback by modifying your application directly and leaving a comment once you're done.
