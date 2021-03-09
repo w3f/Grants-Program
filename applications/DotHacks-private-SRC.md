@@ -134,7 +134,7 @@ https://github.com/w3f/Open-Grants-Program/pull/249#issuecomment-779251198
 
 1. Continue to update functions and the corresponding code of our private SRC solution based on the Treasury bug-bounty instrument.
 2. Build DotHacks, a public crowdsourced vulnerability platform based on Polkadot substrate. Meanwhile we will formulate Vulnerability Assessment Standards for the blockchain industry, based on CVSS (Common Vulnerability Scoring System) and a large amount of real blockchain vulnerabilities cases collected. 
-3. We will try to build a world-influential cybersecurity community that will attract global whitehats, security agencies and vendors to join Polkadot and DotHacks. We want to make DotHacks the world-leading vulnerability platform in the nearest future.
+3. We will try to build a world-influential cybersecurity community that will attract global whitehats, security agencies and vendors to join Polkadot and DotHacks. We want to make DotHacks the world-leading blockchain-based cybersecurity reponse platform in the nearest future.
 
 
 ## Additional Information :heavy_plus_sign: 
