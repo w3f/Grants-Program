@@ -18,28 +18,28 @@
 
 Despite the rapid growth of DEFI over the last year or so, high-quality assets from traditional financial markets are still not accessible to the DEFI market. There is still a big gap between DEFI and traditional financial markets.
 
-DSIP hopes to build a set of decentralized and open stablecoin issuing platform by referring to the way of soft binding of USD DAI issued by MarkDAO and relying on Substrate, a new generation of blockchain basic tool.Any organization can issue stablecoins with soft binding of traditional financial assets through DSIP.These stablecoins can be tied not only to fiat coins, but also to the value of stocks, futures, precious metals, or even to a combination of assets.
+DSIP hopes to build a set of decentralized and open stablecoin issuing platforms by referring to the way of soft binding of USD DAI issued by MarkerDAO and relying on Substrate, a new generation of blockchain basic tool.Any organization can issue stablecoins with the soft binding of traditional financial assets through DSIP.These stablecoins can be tied not only to fiat coins, but also to the value of stocks, futures, precious metals, or even to a combination of assets.
 
-Through the exchange between the issued stablecoins, a decentralized financial market anchoring the real financial market is established, thus breaking the gap between the decentralized financial market and the traditional financial market.Inject more and richer valuable assets into DEFI.For Poka Ecology in the DEFI field to provide a stronger competitiveness.
+Through the exchange between the issued stablecoins, a decentralized financial market anchoring the real financial market is established, thus breaking the gap between the decentralized financial market and the traditional financial market.Inject more and richer valuable assets into DEFI.For Polkadot Ecology in the DEFI field to provide a stronger competitiveness.
 
 The original members of DSIP-Network have been working in the Internet, blockchain, and financial-related industries for many years.Having studied the Internet, blockchain and DEFI for a long time, we firmly believe that the future of DEFI lies in connecting with the real financial market and providing for the development of the real economy.
 
 #### Integration
 
-DSIP is developed on Substrate 3.0 and will in the future operate as a parallel chain on a Pokard.DSIP obtains off-chain price information through the parallel chain of the prophecy service through the docking of the relay chain, and connects with other parallel chains of DEFI through the relay chain to provide more digital assets for DEFI applications.DSIP will also support the !ink smart contract module, allowing third parties to further extend the system based on Ink.
+DSIP is developed on Substrate 3.0 and will in the future operate as a parachain on a Polkadot.DSIP obtains off-chain price information through the parachain of the prophecy service through the docking of the relay chain, and connects with other parachains of DEFI through the relay chain to provide more digital assets for DEFI applications.DSIP will also support the !ink smart contract module, allowing third parties to further extend the system based on !ink.
 
 ### Project Details 
 The whole DSIP system will be divided into five modules: Orcale, Multi-asset Management, Issue Protocol, Pledge Issue and Auction Clearing:
 
 #### Orcale
 
-DSIP network can know the price of external assets through the orcale, which provides data support for the issuance of stablecoin.In the test phase, the DSIP network will use OCW to realize the orcale.After its formal application, DSIP hopes to connect to the parachain of other orcale of Poka Ecology to obtain data.
+DSIP network can know the price of external assets through the orcale, which provides data support for the issuance of stablecoin.In the test phase, the DSIP network will use OCW to realize the orcale.After its formal application, DSIP hopes to connect to the parachain of other orcale of Polkadot Ecology to obtain data.
 
 #### Multi-asset Management
 
 There will be multiple tokens on DSIP chain, and a multi-asset management module will be used to manage these assets.
 
-There are five types of digital assets on the DSIPL chain:
+There are five types of digital assets on the DSIP chain:
 
 1.  Main chain token (SIP);
 2.  Off-chain assets (such as fiat currency, stocks, futures, etc., which are only used to identify the orcale and cannot be held)；
@@ -53,13 +53,11 @@ The issuing protocol is responsible for the definition and management of the iss
 
 The content that needs to be defined in the stablecoin issuance protocol includes:
 
-1.  The off-chain assets that are bound;
-2.  The assets available for pledge and the pledge allocation include:
-
-1.  Minimum pledge rate: when pledging to lend stablecoin, the pledge rate shall not be less than the minimum pledge rate;
-2.  Liquidation pledge rate: when the pledge rate is less than the liquidation pledge rate, the liquidation is triggered;
-3.  Restriction on the proportion of stablecoins issued: The upper limit on the proportion of stablecoins issued through this asset pledge to the total stablecoin issued;
-
+1. The off-chain assets that are bound;
+2. The assets available for pledge and the pledge allocation details:
+	1. Minimum pledge rate: when pledging to lend stablecoin, the pledge rate shall not be less than the minimum pledge rate;
+	2. Liquidation pledge rate: when the pledge rate is less than the liquidation pledge rate, the liquidation is triggered;
+	3. Restriction on the proportion of stablecoins issued: The upper limit on the proportion of stablecoins issued through this asset pledge to the total stablecoin issued;
 #### Pledge Issue
 
 Under the issue protocol, users can lend stablecoins by pledging specified digital assets, and the assets can be redeemed after the user returns the stablecoin.
