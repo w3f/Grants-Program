@@ -18,7 +18,7 @@
 
 Despite the rapid growth of DEFI over the last year or so, high-quality assets from traditional financial markets are still not accessible to the DEFI market. There is still a big gap between DEFI and traditional financial markets.
 
-DSIP hopes to build a set of decentralized and open stablecoin issuing platforms by referring to the way of soft binding of USD DAI issued by MarkerDAO and relying on Substrate, a new generation of blockchain basic tool.Any organization can issue stablecoins with the soft binding of traditional financial assets through DSIP.These stablecoins can be tied not only to fiat coins, but also to the value of stocks, futures, precious metals, or even to a combination of assets.
+DSIP hopes to build a set of decentralized and open stablecoin issuing platforms by referring to the way of soft binding of USD DAI issued by MakerDAO and relying on Substrate, a new generation of blockchain basic tool.Any organization can issue stablecoins with the soft binding of traditional financial assets through DSIP.These stablecoins can be tied not only to fiat coins, but also to the value of stocks, futures, precious metals, or even to a combination of assets.
 
 Through the exchange between the issued stablecoins, a decentralized financial market anchoring the real financial market is established, thus breaking the gap between the decentralized financial market and the traditional financial market.Inject more and richer valuable assets into DEFI.For Polkadot Ecology in the DEFI field to provide a stronger competitiveness.
 
@@ -85,7 +85,7 @@ The auction process is as follows:
 
 There are many pioneers in stablecoin issuance. There are mainly two categories, one is the over-pledge to issue stablecoin, the other is the algorithmic stablecoin.
 
-The typical representative of the over-pledged stablecoin issue is the aforementioned MakerDao.There are two main differences between DSIP and MakerDao:
+The typical representative of the over-pledged stablecoin issue is the aforementioned MakerDAO.There are two main differences between DSIP and MakerDAO:
 
 1.  DSIP is a platform for issuing stablecoins, which can issue many different stablecoins;
 2.  DSIP is based on independent main chain, which gives high priority to core business requests and can avoid systemic risk when block congestion occurs;
