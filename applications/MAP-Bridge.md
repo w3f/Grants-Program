@@ -1,6 +1,7 @@
 # Open Grant Proposal
 * **Project:** Map Bridge
 * **Proposer:**  zcheng9
+* **Payment Address:** 1CFM6QDvxwXEV3dUN9x2ftqq4rwAfkxN9W
 * **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/89#issuecomment-792968983)
 
 ## Project Overview :page_facing_up:
