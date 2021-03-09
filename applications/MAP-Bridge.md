@@ -1,7 +1,8 @@
 # Open Grant Proposal
 * **Project:** Map Bridge
 * **Proposer:**  zcheng9
-* **Payment Address:**  1CFM6QDvxwXEV3dUN9x2ftqq4rwAfkxN9W
+* **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/89#issuecomment-792968983)
+
 ## Project Overview :page_facing_up:
 ### Overview
 This project deliver a bridge  relay  to connect Polkadot and other PoW chains(Ethereum specific in this proposal). The bridge  relay can provide an non-interactive, succinct proof of POW  of a bridged chain based on ULVP (ultra-light verification protocol) .  And based on such proof,  it can further verify  inner state of certain account or transaction inclusion proof.
@@ -37,6 +38,7 @@ MAP labs
 * **Total Estimated Duration:** 3 month
 * **Full-time equivalent (FTE):** 3
 * **Total Costs:** $ 2 BTC.
+
 ### Milestone 1 Implement Substrate MMR Module
 * **Estimated Duration:**1 month
 * **FTE:**  3
