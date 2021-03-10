@@ -97,6 +97,9 @@ Algorithmic stablecoins need to accumulate value consensus over a long period of
 1.  To absorb high-quality, widely recognized algorithmic stablecoin as a pledge asset;
 2.  Provide an algorithmic stablecoin module that allows users to issue algorithmic stablecoins through DSIP;
 
+#### Differences between DSIP and StateMint
+I just saw a message from StateMint yesterday. I'd like to look at the differences between DSIP and StateMint based on the current public information. Based on our public information, we understand that StateMint offers a low-cost, centralized way to issue digital assets. With the assets issued by StateMint, users need to trust that the issuing institution actually holds the relevant physical assets. DSIP, on the other hand, ensures the security of assets through code by issuing excess pledge. Users do not have to trust any centralized organization or individual. It also avoids the costs and potential legal risks of having to hold a physical asset. Of course, DSIP also hopes to be integrated with StateMint in some way in the future. We'll have to wait for more details from StateMint about how this will be combined.
+
 ## Team :busts_in_silhouette:
 
 ### Team members
