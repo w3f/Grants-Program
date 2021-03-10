@@ -11,6 +11,9 @@
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
+### More detailed Grant Application can be found [here](https://docs.google.com/document/d/1jfyrCB6WanbTqrR2MQfYDBVv9ANRQBSyuFxknsEijVg/edit?usp=sharing) 
+
+
 ## Project Overview :page_facing_up:
 Unmarshal Smart Notications is a complete end to end solutions to send push notification to Mobile applications on various transactions.
 DApps can keep their clients upto date with our notifications
@@ -89,6 +92,29 @@ Notification Payload
 		},
 	}
 
+For Webhook:
+
+      {
+           "id": "0x3f7d49622ac5d5c6c5feb3fe41921aad2b09375ad7b4cc2293a0554da47ca790",
+           "from": "0x9eD416d3Cd2ab36164eFBF857e09A62Da67C3CAb",
+           "to": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+           "fee": "20737885291200000",
+           "date": 1614088825,
+           "status": "completed",
+           "type": "send",
+           "value": "0",
+           "description": "Sent 15000 USDT",
+           "sent": [
+               {
+                   "name": "Tether USD",
+                   "symbol": "USDT",
+                   "token_id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                   "decimals": 6,
+                   "value": "15000000000"
+               }
+           ]
+       }
+
 
 ### Ecosystem Fit
 The Unmarshal Notifications will be real time and in detailed format and the Application developers  can customize the notifications and build their own template of notification. 
@@ -144,18 +170,20 @@ Unmarshal team has 25 years of engineering experience collectively. Some of us h
 
 | Priority | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0 | Setup | Initial setup of the codebase and the deployment infrastructure to deploy the developed code on to the user interface.  |
-| 1 | Transaction Listening Module | Work on the part of our application where our code will start listening to the transactions on the chain.  |
-| 2 | Transaction Decoder Module | This work will help our application understand all the chain transactions and convert them into readable data.  |
-| 3 | Firebase Integration for demo app | With Firebase in place users will be able to receive the notifications from Unmarshal Notification Framework. |
-| 4 | Webhook  Integrationfor demo app | When the Web hooks are fully developed users will be able to continuously ping our system and receive any data and not to wait for any periodic updates from Unmarshal |
-| 5 | Dex Integration for new pair | This development helps us to integrate with the Decentralized exchanges to send notifications |
-| 6 | Protocol integrations for liquidity pairs | Integrate with dex to send notification on liquidity |
-| 7 | Subscription Module | Subscription module to subscribe to price trend, protocol volume etc |
-| 8 | Client Integration Handbook | We have developed such awesome tech. But how do we get our partners to use it?This handbook will provide a quick guide to implement the Unmarshal smart notification system onto their Applications. |
-| 9 | Article | We will write an article or tutorial that explains the work done as part of the grant |
-| 10 | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
-
+| 0 | Setup | Setup codebase, deployment infrastructure. 
+| 1 | Transaction listening  | Listen to blockchain transactions via websocket preferably own node to avoid dependency on the public nodes  |
+| 2 | Kafka integration | Integrate with kafka to avoid the data loss during deployments and orderly processing of the events. This kafka stream can be exposed to client as well as it will be useful for applications such as bridges  |
+| 3 | Transaction decoder | Extract the transaction information such as type(send, receive, approve etc) using the contract ABI decoding, differentiate the sent and received tokens and token transfers from the transaction logs and receipts  |
+| 4 | Firebase integration for demo app | Add framework to integrate with firebase for clients - with firebase we can directly send notifications to client apps. No work required by clients |
+| 5 | Webhook integration for demo app | Add framework to integrate with webhooks for any client - with this clients need to handle the logic to send notification or handle it in their end |
+| 6 | Client integration handbook | Documentation for integration with Unmarshal notification |
+| 7 | subscription API  | Subscription API to subscribe for price trend, protocol volume etc. This will be limited by topics supported in our system |
+| 8 | API SDK for subscription | Notification subscription API SDK - single subscription, bulk subscription, It will be powered by a light weight rest API that takes information such as address to track, specific events and client id to identify the notification avenue |
+| 9 | Dex integration for new pair | Unmarshal's USP is decoding and transformation of data into business context, instead of providing raw transaction, Unmarshal converts transaction into business context and users subscribe to just a specific business context such as new pair  |
+| 10 | Protocol(polkaswap) integration | Integrate with polkaswap to send notification on add / remove liquidity for subscribers |
+| 11 | Protocol(polkaswap) integration - 2 | Integrate with dex to send notification on new liquidity pair for subscribers |
+| 12 | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
+| 13 | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 
 
 ### Milestone 1 — Notification v1
@@ -166,11 +194,12 @@ Unmarshal team has 25 years of engineering experience collectively. Some of us h
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0 | Setup | Setup codebase, deployment infrastructure. 
-| 1 | Transaction listening module | Add module to listen to blockchain transactions via websocket |
-| 2 | Transaction decoder module | Add module to fetch and decode the on-chain transactions like send, receive, approve etc |
-| 3 | Firebase integration for demo app | Add framework to integrate with firebase for clients - with firebase we can directly send notifications to client apps. No work required by clients |
-| 4 | Webhook integration for demo app | Add framework to integrate with webhooks for any client - with this clients need to handle the logic to send notification |
-| 5 | Client integration handbook | Documentation for integration with Unmarshal notification |
+| 1 | Transaction listening  | Listen to blockchain transactions via websocket preferably own node to avoid dependency on the public nodes  |
+| 2 | Kafka integration | Integrate with kafka to avoid the data loss during deployments and orderly processing of the events. This kafka stream can be exposed to client as well as it will be useful for applications such as bridges  |
+| 3 | Transaction decoder | Extract the transaction information such as type(send, receive, approve etc) using the contract ABI decoding, differentiate the sent and received tokens and token transfers from the transaction logs and receipts  |
+| 4 | Firebase integration for demo app | Add framework to integrate with firebase for clients - with firebase we can directly send notifications to client apps. No work required by clients |
+| 5 | Webhook integration for demo app | Add framework to integrate with webhooks for any client - with this clients need to handle the logic to send notification or handle it in their end |
+| 6 | Client integration handbook | Documentation for integration with Unmarshal notification |
 
 
 ### Milestone 2 — Additional features
@@ -180,13 +209,13 @@ Unmarshal team has 25 years of engineering experience collectively. Some of us h
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 6 | API SDK for subscription | Notification subscription API SDK - single subscription, bulk subscription |
-| 7 | Dex integration for new pair | Integrate with dex to send notifications on new pairs |
-| 8 | Protocol(polkaswap) integration | Integrate with dex to send notification on add / remove liquidity |
-| 9 | Protocol(polkaswap) integration - 2 | Integrate with dex to send notification on new liquidity pair |
-| 10 | subscription module | Subscription module to subscribe to price trend, protocol volume etc |
-| 11 | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
-| 12 | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 7 | subscription API  | Subscription API to subscribe for price trend, protocol volume etc. This will be limited by topics supported in our system |
+| 8 | API SDK for subscription | Notification subscription API SDK - single subscription, bulk subscription, It will be powered by a light weight rest API that takes information such as address to track, specific events and client id to identify the notification avenue |
+| 9 | Dex integration for new pair | Unmarshal's USP is decoding and transformation of data into business context, instead of providing raw transaction, Unmarshal converts transaction into business context and users subscribe to just a specific business context such as new pair  |
+| 10 | Protocol(polkaswap) integration | Integrate with polkaswap to send notification on add / remove liquidity for subscribers |
+| 11 | Protocol(polkaswap) integration - 2 | Integrate with dex to send notification on new liquidity pair for subscribers |
+| 12 | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
+| 13 | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 
 ## Future Plans
 * Add notifications for all para chains
@@ -197,3 +226,8 @@ Unmarshal team has 25 years of engineering experience collectively. Some of us h
 
 * Unmarshal smart notifications in already in testing phase for Binance Smart Chain. 
 We will adding support for whole polkadot ecosystem. 
+
+decoder: http://decoder.unmarshal.io/
+Documentation: http://docs.unmarshal.io/
+Notification service: https://docs.google.com/document/d/1jfyrCB6WanbTqrR2MQfYDBVv9ANRQBSyuFxknsEijVg/edit?usp=sharing
+Website: http://unmarshal.io/
