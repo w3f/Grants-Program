@@ -5,6 +5,7 @@
 * **Project Name:** Clover
 * **Team Name:** Clover Team
 * **Payment Address:** 1HsVhJeeFx5AGGBRQzrvEqGC8FM8YfW6b6
+* **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/106#issuecomment-794570629)
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
