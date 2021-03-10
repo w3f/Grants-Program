@@ -33,6 +33,58 @@ Features:
 * Comunication Module to message together between DataDEX and Phala Network, which follows XCMP format.
 * Meta Storage and DID solution
 
+### Main modules design and implementions
+
+#### Data Registeration Entry 
+
+ * RegisterData
+```Java
+    /**
+     * Register the copyright of the data to DataGraph
+     * 
+     * @param userDid       The user ID
+     * @param dataCatalog   The path in data graph catalog
+     * @param dataBody      The jsonized structure of data description
+     */
+    public void registerData(UserDID userDid, DataGraph dataCatalog, String dataBody);
+```
+ * CheckPermissions
+
+```Java
+    /**
+     *  Check accessibility of data with userid
+     * 
+     * @param userDid       The user ID
+     * @param dataCatalog   The path in data graph which will access
+     * @return boolean
+     * 
+     */
+    public boolean registerData(UserDID userDid, DataGraph dataCatalog);
+```
+ * DataGraph ProtoBuf example
+```Java
+    syntax = "proto3";
+    
+    option java_package = "com.datadex.datacatalog";
+    option java_outer_classname = "DataGraph";
+    
+    message UserProfile {
+        String userdid = 1;
+        Mail mail = 2;
+        Notes notes = 3;
+        Notifications notifications = 4;
+        PersonContacts contacts = 5;
+        TasksAndPlans schedule = 6;
+        Messages sms = 7;
+        Applications apps = 8;
+        ...
+    }
+    
+    message Applications{
+        ...
+    }
+    ...
+```
 ### Data Pricing
 
 #### Data Token AMM
@@ -69,7 +121,7 @@ We would like to cooperate with the following ecological projects and platforms 
 
 ### Contact
 * **Contact Name:** Hongyu Luo
-* **Contact Email:** luohongyu@alita.global
+* **Contact Email:** luohongyu@datadex.trade
 * **Website:**  https://datadex.trade
 
 ### Legal Structure 
