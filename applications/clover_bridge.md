@@ -43,14 +43,14 @@ With the rapid development of DeFi, the demand for insurance protocols is also i
 
 ### Team members
 
-* Burak Keceli
-— Email: burak@clover.finance
+#### Burak Keceli
+* Email: burak@clover.finance
 
-— Role: Technical Lead
+* Role: Technical Lead
 
-— LinkedIn: https://www.linkedin.com/in/burak-ke%C3%A7eli/
+* LinkedIn: https://www.linkedin.com/in/burak-ke%C3%A7eli/
 
-— GitHub: https://github.com/brqgoo
+* GitHub: https://github.com/brqgoo
 
 
 * Mehmet Sabir Kiraz
