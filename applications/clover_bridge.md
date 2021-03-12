@@ -143,10 +143,11 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
-| 1. | Documentation | Text/PDF | Start documentation of the various aspect of the Clover Bridge protocol. |
+| 1. | Threshold Logic | Text/PDF | Start documentation of the various aspect of the Clover Bridge protocol. |
 | 2. | Ethereum SPV API | Go | A back-end service for fetching merkle path for transactions from Ethereum | 
 | 3. | Clover SPV API | Go | A back-end service for fetching merkle path for transactions from Frontier-powered parachains. | 
 | 4. | SPV Logic | Text/PDF | Documenting contract-wise logic for SPV verification. |  
+| 5. | Threshold PoC | Go | Delivering an inital version for the threshold logic. |
 
 ### May 15 Due Milestone
 * **Estimated Duration:** 1 month
@@ -155,16 +156,12 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
-| 1. | Documentation | Text | Covering 50% of the overall features on Clover Network |
-| 2. | Unit Test | TypeScript | The chain specific unit tests will cover 90% by the end of Feb. | 
-| 3. | Clover Chain | Rust | Implementing enterprise developers' achitecture with in the low level logic |
-| 4. | Clover Explorer | Vue/NodeJS/SpringCloud | Delivering the beta build of Clover cross chain explorer with support of BTC/ETH/DOT/CLV |  
-| 5. | Clover OS SDK | Native/JS | The first version of Clover OS SDK with Android/iOS version will be released by the end of Feb. |  
-| 6. | Clover Wallet App | Android/iOS Native | Integrating Clover OS on Clover Wallet App |  
-| 7. | Clover Wallet Chrome Extension | JavaScript/Vue | Finalizing Clover chrome extension and distribute it on google store |  
-| 8. | Tulip Editor | Vue/NodeJS/Solidity | Deliverig first POC version of Tulip editor |  
-| 9. | Clover Developer Portal | Vue/Java/NodeJS/PostgreSQL | Delivering basic functionalities of developer portal with account creation/upload/upgrade eAPP |
-| 10. | IPFS Integration | NodeJS/Go | Integrating IPFS node along with Clover node into single Docker file for distribution |
+| 1. | Peg-in contract logic | Text/PDF | Documenting contract-wise logic for peg ins. |
+| 2. | Peg-out contract logic | Text/PDF | Documenting contract-wise logic for peg outs. |
+| 3. | Bridge contract logic | Text/PDF | Documenting contract-wise logic for bridge flow. |
+| 4. | Threshold MVP | Go | Delivering an MVP version of the threshold protocol. |
+| 5. | Contract SPV | Solidity | Contract-wise SPV verification.  |
+| 6. | Contract Threshold  | Solidity | Contract-wise threshold signature verification. |
 
 ### June 15 Due Milestone
 * **Estimated Duration:** 1 month
