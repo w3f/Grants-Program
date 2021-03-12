@@ -21,8 +21,7 @@ The Clover Bridge is a threshold signature based protocol for enabling cross-cha
 Polkadot uses Schnorrkel/Ristretto x25519 ("sr25519") as its key derivation and signing algorithm (https://docs.rs/schnorrkel/0.10.1/schnorrkel/). Schnorrkel implements Schnorr signature on Ristretto [ris] compressed Ed25519 points, as well as related protocols like HDKD, MuSig [MPSW19], and a verifiable random function (VRF). In particular, schnorrkel provides Schnorr signatures, a fast Schnorr DLEQ proof based VRF, hierarchical deterministic key derivation (HDKD), and the safest currently known threeround trip Schnorr multi-signature variant. Ristretto implements roughly section 7 of Mike Hamburg’s Decaf paper [Ham15] to providethe 2-torsion free points of the Ed25519 curve as a prime order group. Avoiding the cofactor like this means Ristretto makes implementing more complex protocols significantly safer. We employ Blake2b for most conventional hashing in Polkadot, where schnorrkel/sr25519 itself uses the merlin limited implementation of Mike Hamberg’s STROBE, which is based on Keccak-f(1600) and provides a hashing interface well suited to signatures and NIZKs.
 
 #### Team Interest
-
-As a collective, the founding team has been working together for a almost about a year. We all come from different and unique walks of life, backgrounds, and experiences which really makes us a dynamic and strong team complementing one another's skill sets. Burak is based in the Bay Area, Mehmet in UK, Suleyman in Turkey, Norelle and Viven are based in Toronto. It is neat operating as a team across the globe because we can tap into different markets and bring different things to the table. Within the team, Burak and Viven have known each other for 4 years and have worked together on a number of projects. Mehmet and Suleyman on the pther hand have known each other for 10 years, and worked together on a number of projects while they were at TUBITAK BILGEM between 2010 and 2015. They have not only done several applied projects together but also published several papers together (see Google Scholar for their common academic papers). Mehmet is expert on cryptographic design, architecture (in particular, blockchain and cryptocurrencies, secure multi-party computation, homomorphic encryption, threshold cryptography, zero knowledge proofs (zkSNARKs and Bulletproofs)) and mathematical structures of cryptography, where Suleyman is experienced on cryptographic analysis as well as implementation aspects of cryptographic algorithms/protocols. Mehmet and Burak have known each other for 3 years, and worked together on a number of projects including a brand-new on-chain scaling approach for zero-confirmation BTC payments. Burak initially came up with the idea of combining zkSNARKs with ePassports after Apple confirmed iOS 13 to include support for NFC passport reading. Mehmet and Burak then started playing around with the idea, before Suleyman joined the team.
+As a collective, the founding team has been working together for a almost about a year. We all come from different and unique walks of life, backgrounds, and experiences which really makes us a dynamic and strong team complementing one another's skill sets. Burak is based in the Bay Area, Mehmet in UK, Suleyman in Turkey, Norelle and Viven are based in Toronto. It is neat operating as a team across the globe because we can tap into different markets and bring different things to the table. 
 
 ### Project Details 
 
@@ -44,42 +43,46 @@ With the rapid development of DeFi, the demand for insurance protocols is also i
 
 ### Team members
 
-* Mehmet Sabir Kiraz
-— Email: mehmet@credentialsapp.org
+* Burak Keceli
+— Email: burak@clover.finance
+
 — Role: Technical Lead
+
+— LinkedIn: https://www.linkedin.com/in/burak-ke%C3%A7eli/
+
+— GitHub: https://github.com/brqgoo
+
+
+* Mehmet Sabir Kiraz
+— Email: mehmet@clover.finance
+
+— Role: Appield Cryptography Lead
+
 — LinkedIn: https://uk.linkedin.com/in/mehmet-sabir-kiraz-38a4963
+
 — Google Scholar: https://scholar.google.com/citations?user=1NzyjZIAAAAJ&hl=en
-— University: Technical University of Eindhoven, Max-Planck Institute for Computer Science, Middle East Technical University
-— Experience: nChain (Senior Researcher), De Montfort University (Senior Lecturer), TUBITAK BILGEM, Istanbul University (Visiting Lecturer), CIMSOLUTIONS, TomTom, Philips, Yapi Kredi Bank and Pamukbank
 
 * Suleyman Kardas
-— Email: suleyman@credentialsapp.org
-— Role: Senior Architect
-— LinkedIn: https://tr.linkedin.com/in/dr-s%C3%BCleyman-karda%C5%9F-76a23711
-— GitHub: https://github.com/skardas
-— Google Scholar: https://scholar.google.com.tr/citations?user=LjqSAX0AAAAJ&hl=en
-— University: Sabanci University, Bilkent University
-— Experience: Batman University (Asst. Prof. Dr.), Istanbul University (Visiting Lecturer), TUBITAK and Cognis
+— Email: suleyman@clover.finance
 
-* Burak Keceli
-— Email: burak@credentialsapp.org
-— Role: Product Designer and Mobile Developer
-— LinkedIn: https://www.linkedin.com/in/burak-ke%C3%A7eli/
-— GitHub: https://github.com/CredentialsApp
-— University: Draper University
-— Experience: GatePay, Ayny and MBO Games
+— Role: Senior Architect
+
+— LinkedIn: https://tr.linkedin.com/in/dr-s%C3%BCleyman-karda%C5%9F-76a23711
+
+— GitHub: https://github.com/skardas
+
+— Google Scholar: https://scholar.google.com.tr/citations?user=LjqSAX0AAAAJ&hl=en
+
 
 ### Contact
-- burak@buraks.blog
+- burak@clover.finance
 
 ### Legal Structure 
 Clover, Inc. (Registration Number: 2045136)
 Unit 8, 3/F, Qwomar Trading Complex, Blackburne Road, Port Purcell, Road Town, Tortola, British Virgin Islands, VG1110
 
 ### Team's experience
-As a collective, the founding team has been working together for 8 months that has been in the industry for over 2 years, of which have crossed paths multiple times in different industry conferences. Within the team Burak is mainly based in the Bay Area, Chris in Hong Kong, Norelle in Canada, and Barek is based in the UK. 
-
-We all come from different and unique walks of life, backgrounds, and experiences which really makes us a dynamic and strong team complementing one another's skill sets. It is neat operating as a team across the globe because we can tap into different markets and bring different things to the table. Our team has been formed to optimize and complement one another’s skill sets; from DLT engineering to economics, to operational, and marketing expertise. We have a team capable of building, executing, and scaling Clover to its fullest potential. 
+Within the team, Burak and Viven have known each other for 4 years and have worked together on a number of projects. Mehmet and Suleyman on the pther hand have known each other for 10 years, and worked together on a number of projects while they were at TUBITAK BILGEM between 2010 and 2015. They have not only done several applied projects together but also published several papers together (see Google Scholar for their common academic papers). Mehmet is expert on cryptographic design, architecture (in particular, blockchain and cryptocurrencies, secure multi-party computation, homomorphic encryption, threshold cryptography, zero knowledge proofs (zkSNARKs and Bulletproofs)) and mathematical structures of cryptography, where Suleyman is experienced on cryptographic analysis as well as implementation aspects of cryptographic algorithms/protocols. Mehmet and Burak have known each other for 3 years, and worked together on a number of projects including a brand-new on-chain scaling approach for zero-confirmation BTC payments. Burak initially came up with the idea of combining zkSNARKs with ePassports after Apple confirmed iOS 13 to include support for NFC passport reading. Mehmet and Burak then started playing around with the idea, before Suleyman joined the team.
 
 ### Team Code Repos
 * [https://github.com/clover-network/clover](https://github.com/clover-network/clover)
