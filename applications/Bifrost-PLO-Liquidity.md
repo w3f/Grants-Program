@@ -119,12 +119,12 @@ Investors use XCMP to transfer DOTs to the Bifrost platform, so the security of 
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 3
-* **Total Costs:** 1.5 BTC
+* **Total Costs:** 45,000.00 DAI
 
 ##### Milestone 1 - Prepare PLO Development
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 0.5 BTC
+* **Costs:** 15,000.00 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -138,7 +138,7 @@ Investors use XCMP to transfer DOTs to the Bifrost platform, so the security of 
 ##### Milestone 2 - Execute PLO Development
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 0.5 BTC
+* **Costs:** 15,000.00 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -152,7 +152,7 @@ Investors use XCMP to transfer DOTs to the Bifrost platform, so the security of 
 ##### Milestone 3 - Asset Development
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 0.5 BTC
+* **Costs:** 15,000.00 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
