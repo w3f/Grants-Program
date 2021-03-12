@@ -53,25 +53,25 @@ With the rapid development of DeFi, the demand for insurance protocols is also i
 * GitHub: https://github.com/brqgoo
 
 
-* Mehmet Sabir Kiraz
-— Email: mehmet@clover.finance
+#### Mehmet Sabir Kiraz
+* Email: mehmet@clover.finance
 
-— Role: Appield Cryptography Lead
+* Role: Appield Cryptography Lead
 
-— LinkedIn: https://uk.linkedin.com/in/mehmet-sabir-kiraz-38a4963
+* LinkedIn: https://uk.linkedin.com/in/mehmet-sabir-kiraz-38a4963
 
-— Google Scholar: https://scholar.google.com/citations?user=1NzyjZIAAAAJ&hl=en
+* Google Scholar: https://scholar.google.com/citations?user=1NzyjZIAAAAJ&hl=en
 
-* Suleyman Kardas
-— Email: suleyman@clover.finance
+#### Suleyman Kardas
+* Email: suleyman@clover.finance
 
-— Role: Senior Architect
+* Role: Senior Architect
 
-— LinkedIn: https://tr.linkedin.com/in/dr-s%C3%BCleyman-karda%C5%9F-76a23711
+* LinkedIn: https://tr.linkedin.com/in/dr-s%C3%BCleyman-karda%C5%9F-76a23711
 
-— GitHub: https://github.com/skardas
+* GitHub: https://github.com/skardas
 
-— Google Scholar: https://scholar.google.com.tr/citations?user=LjqSAX0AAAAJ&hl=en
+* Google Scholar: https://scholar.google.com.tr/citations?user=LjqSAX0AAAAJ&hl=en
 
 
 ### Contact
@@ -85,40 +85,30 @@ Unit 8, 3/F, Qwomar Trading Complex, Blackburne Road, Port Purcell, Road Town, T
 Within the team, Burak and Viven have known each other for 4 years and have worked together on a number of projects. Mehmet and Suleyman on the pther hand have known each other for 10 years, and worked together on a number of projects while they were at TUBITAK BILGEM between 2010 and 2015. They have not only done several applied projects together but also published several papers together (see Google Scholar for their common academic papers). Mehmet is expert on cryptographic design, architecture (in particular, blockchain and cryptocurrencies, secure multi-party computation, homomorphic encryption, threshold cryptography, zero knowledge proofs (zkSNARKs and Bulletproofs)) and mathematical structures of cryptography, where Suleyman is experienced on cryptographic analysis as well as implementation aspects of cryptographic algorithms/protocols. Mehmet and Burak have known each other for 3 years, and worked together on a number of projects including a brand-new on-chain scaling approach for zero-confirmation BTC payments. Burak initially came up with the idea of combining zkSNARKs with ePassports after Apple confirmed iOS 13 to include support for NFC passport reading. Mehmet and Burak then started playing around with the idea, before Suleyman joined the team.
 
 ### Team Code Repos
-* [https://github.com/clover-network/clover](https://github.com/clover-network/clover)
+*	https://github.com/clover-network/clover-bridge-protocol
 
-* [https://github.com/clover-network/clover-web3-wallet](https://github.com/clover-network/clover-web3-wallet)
+This is the main repo for the n of m threshold protocol for notarising Ethereum and Clover block headers.
 
-* [https://github.com/clover-network/website](https://github.com/clover-network/website)
+* https://github.com/clover-network/clover-bridge-contract
 
-* [https://github.com/clover-network/clover-defi-wallet](https://github.com/clover-network/clover-defi-wallet)
+This is the repo for Clover-deployed bridge contract where block header submission, key update, signatory join request, and signatory leave request events take place. Clover Bridge Protocol writes and reads to and from this contract. @bayMaxChallenge will be responsible for this repository.
 
-* [https://github.com/clover-network/clover-sdk](https://github.com/clover-network/clover-sdk)
+* https://github.com/clover-network/ethereum-spv-backend
 
-* [https://github.com/clover-network/clover-wallet](https://github.com/clover-network/clover-wallet)
+* API repo is for fetching merkle path (SPV proof) data from Ethereum. @danielimkk is responsible for this repository.
 
-* [https://github.com/clover-network/clover-mobile-wallet](https://github.com/clover-network/clover-mobile-wallet)
+* https://github.com/clover-network/clover-spv-backend
 
-* [https://github.com/clover-network/clover-dapp-uniswap](https://github.com/clover-network/clover-dapp-uniswap)
+This API repo is for fetching merkle path (SPV proof) data from Clover. @danielimkk is responsible for this repository.
 
-* [https://github.com/clover-network/clover-store-core](https://github.com/clover-network/clover-store-core)
+* https://github.com/clover-network/clover-pegout-contract
 
-* [https://github.com/clover-network/clover-store-sdk](https://github.com/clover-network/clover-store-sdk)
+This is the Clover-deployed peg out contract repo for tokenizing Ether and ERC-20 assets on Clover. This contract accepts SPV proofs from Ethereum (ethereum-spv-backend), along with respective notary proofs from Clover Bridge Contract (clover-bridge-contract). @bayMaxChallenge will be responsible for this repository.
 
-* [ttps://github.com/clover-network/clover-store-upload](https://github.com/clover-network/clover-store-upload)
+* https://github.com/clover-network/ethereum-pegin-contract
 
-### Team LinkedIn Profiles
-* [Burak Keceli](https://www.linkedin.com/in/burak-ke%C3%A7eli/)
+This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-20 assets back on Ethereum. This contract accepts SPV proofs from Clover (clover-spv-backend), along with respective notary proofs from Clover Bridge Contract (clover-bridge-contract). @bayMaxChallenge will be responsible for this repository.
 
-* [Chris Li](https://www.linkedin.com/in/chrislky/)
-
-* [Norelle Ng](https://www.linkedin.com/in/norelleng/)
-
-* [Chris Williamson](https://www.linkedin.com/in/chris-williamson-aa90b290/)
-
-* [Barek Sekandari](https://www.linkedin.com/in/barek-sekandari-597752153/)
-
-* [Marina Danylyuk](https://www.linkedin.com/in/marinadanylyuk/)
 
 ## Development Roadmap :nut_and_bolt: 
 
