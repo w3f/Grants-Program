@@ -136,27 +136,19 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 * **Full-time equivalent (FTE):**  11.5
 * **Total Costs:** 0.51 BTC
 
-### January 2021 Milestones
+### April 15 Due Milestone
 * **Estimated Duration:** 1 month
 * **FTE:**  5.5
 * **Costs:** 0.17 BTC
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
-| 1. | Documentation | Text | Start documenting on the various aspect of the Clover product matrix. |
-| 2. | Unit Test | TypeScript | The chain specific unit tests will cover 50% at the end of Jan. | 
-| 3. | License | Text | MIT license |
-| 4. | Article/Tutorials | Text | Writing varios tutorials to demonstrate how to setup clover nodes |  
-| 5. | Clover Rosetta Services | NodeJS | Integrating Coinbase Rosetta services to ensure the cross-chain compatibility |  
-| 6. | Clover Chain | Rust | Fully implementing distributing gas fee functionality for EVM contract deployers |  
-| 7. | Clover Explorer | Vue/NodeJS/SpringCloud | Creating first alpha build for Clover cross-chain block explorer based on Rosetta protocol |  
-| 8. | Clover Store | Android/iOS Native/IPFS/Solidity | Delivering initial build of clover store app to be able download/execute eAPPs |
-| 9. | Clover Testnet | Rust | We will finalize the Clover testnet and the faucet to receive test tokens |
-| 10. | Clover Wallet App | Android/iOS Native | Delivering initial build of Clover official wallet on both android/iOS |
-| 11. | Clover Wallet Chrome Extension| JavaScript/H5 | Delivering initial build of Chrome Extension of Clover web3 wallet |
-| 12. | Substrate module: Frontier-EVM pallet| Rust | Rolling out minor EVM adjustments with Clover chain |
+| 1. | Documentation | Text/PDF | Start documentation of the various aspect of the Clover Bridge protocol. |
+| 2. | Ethereum SPV API | Go | A back-end service for fetching merkle path for transactions from Ethereum | 
+| 3. | Clover SPV API | Go | A back-end service for fetching merkle path for transactions from Frontier-powered parachains. | 
+| 4. | SPV Logic | Text/PDF | Documenting contract-wise logic for SPV verification. |  
 
-### February 2021 Milestones
+### May 15 Due Milestone
 * **Estimated Duration:** 1 month
 * **FTE:**  5.5
 * **Costs:** 0.17 BTC
@@ -174,7 +166,7 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 | 9. | Clover Developer Portal | Vue/Java/NodeJS/PostgreSQL | Delivering basic functionalities of developer portal with account creation/upload/upgrade eAPP |
 | 10. | IPFS Integration | NodeJS/Go | Integrating IPFS node along with Clover node into single Docker file for distribution |
 
-### March 2021 Milestones
+### June 15 Due Milestone
 * **Estimated Duration:** 1 month
 * **FTE:**  5.5
 * **Costs:** 0.17 BTC
