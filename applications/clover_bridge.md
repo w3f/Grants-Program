@@ -95,7 +95,7 @@ This is the repo for Clover-deployed bridge contract where block header submissi
 
 * https://github.com/clover-network/ethereum-spv-backend
 
-* API repo is for fetching merkle path (SPV proof) data from Ethereum. @danielimkk is responsible for this repository.
+This API repo is for fetching merkle path (SPV proof) data from Ethereum. @danielimkk is responsible for this repository.
 
 * https://github.com/clover-network/clover-spv-backend
 
@@ -103,11 +103,11 @@ This API repo is for fetching merkle path (SPV proof) data from Clover. @danieli
 
 * https://github.com/clover-network/clover-pegout-contract
 
-This is the Clover-deployed peg out contract repo for tokenizing Ether and ERC-20 assets on Clover. This contract accepts SPV proofs from Ethereum (ethereum-spv-backend), along with respective notary proofs from Clover Bridge Contract (clover-bridge-contract). @bayMaxChallenge will be responsible for this repository.
+This is the Clover-deployed peg out contract repo for tokenizing Ether and ERC-20 assets on Clover. This contract accepts SPV proofs from Ethereum (ethereum-spv-backend), along with respective notary proofs from Clover Bridge Contract (clover-bridge-contract).
 
 * https://github.com/clover-network/ethereum-pegin-contract
 
-This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-20 assets back on Ethereum. This contract accepts SPV proofs from Clover (clover-spv-backend), along with respective notary proofs from Clover Bridge Contract (clover-bridge-contract). @bayMaxChallenge will be responsible for this repository.
+This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-20 assets back on Ethereum. This contract accepts SPV proofs from Clover (clover-spv-backend), along with respective notary proofs from Clover Bridge Contract (clover-bridge-contract).
 
 
 ## Development Roadmap :nut_and_bolt: 
