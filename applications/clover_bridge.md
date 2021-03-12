@@ -43,6 +43,15 @@ With the rapid development of DeFi, the demand for insurance protocols is also i
 
 ### Team members
 
+#### Viven Kirby
+* Email: viven@clover.finance
+
+* Role: Project Lead
+
+* LinkedIn: https://www.linkedin.com/in/viven-kirby-1524b7205?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BbDtomY%2BISTuS%2B3rdEUeN5Q%3D%3D
+
+* GitHub: https://github.com/Winless
+
 #### Burak Keceli
 * Email: burak@clover.finance
 
@@ -51,6 +60,15 @@ With the rapid development of DeFi, the demand for insurance protocols is also i
 * LinkedIn: https://www.linkedin.com/in/burak-ke%C3%A7eli/
 
 * GitHub: https://github.com/brqgoo
+
+#### Norelle Ng
+* Email: viven@clover.finance
+
+* Role: Operations Lead
+
+* LinkedIn: https://www.linkedin.com/in/norelleng?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BqXXVrsKURwigFr%2BiVj92tA%3D%3D
+
+* GitHub: https://github.com/Winless
 
 
 #### Mehmet Sabir Kiraz
@@ -95,11 +113,11 @@ This is the repo for Clover-deployed bridge contract where block header submissi
 
 * https://github.com/clover-network/ethereum-spv-backend
 
-This API repo is for fetching merkle path (SPV proof) data from Ethereum. @danielimkk is responsible for this repository.
+This API repo is for fetching merkle path (SPV proof) data from Ethereum.
 
 * https://github.com/clover-network/clover-spv-backend
 
-This API repo is for fetching merkle path (SPV proof) data from Clover. @danielimkk is responsible for this repository.
+This API repo is for fetching merkle path (SPV proof) data from Clover.
 
 * https://github.com/clover-network/clover-pegout-contract
 
