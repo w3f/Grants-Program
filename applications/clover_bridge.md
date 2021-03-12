@@ -163,6 +163,7 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 | 5. | Contract SPV | Solidity | Contract-wise SPV verification.  |
 | 6. | Contract Threshold  | Solidity | Contract-wise threshold signature verification. |
 
+
 ### June 15 Due Milestone
 * **Estimated Duration:** 1 month
 * **FTE:**  5.5
@@ -170,15 +171,11 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
-| 1. | Documentation | Text | Documentation will be ready at 1.0 version to cover 100% of the current features |
-| 2. | Tulip Editor | Vue/NodeJS/Solidity | Delivering alpha build for Tulip Editor with EVM support |
-| 3. | Clover Wallet App | Android/iOS Native | Releasing Clover wallet app on Google Play and Apple Store |  
-| 4. | Clover OS | Native/JS | Having Clover OS support for iOS/Android/Embedded by the end of Mar. |  
-| 5. | Clover Store | Vue/IPFS/Solidity/NodeJS | Delivering the official release of Clover Store. |  
-| 6. | Clover Developer Portal | Vue/Java/NodeJS/PostgreSQL | Rolling out Clover developer portal for the public with incentivize program |  
-| 7. | Clover Wallet Firefox/Safari Extension | Javascript/Vue | Delivering Clover Firefox/Safari extension |  
-| 8. | Clover Governance | Solidity/Rust | Releasing first build of Clover governance system |
-| 9. | Storage | NodeJS | Adding IPFS/AR/CRUST support as the Storage service |
+| 1. | Signatory registery  | Go/Solidity | Contract-wise signatory registery flow. |
+| 2. | Signatory leave  | Go/Solidity | Contract-wise signatory leave flow. |
+| 3. | Key update  | Go/Solidity | Key update ceromony. |
+| 4. | Peg in contract | Solidity | Final delivery of peg in contract. |
+| 5. | Peg out contract | Solidity | Final delivery of peg out contract. |
 
 
 ## Future Plans
