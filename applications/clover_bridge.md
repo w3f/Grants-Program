@@ -46,7 +46,7 @@ Clover Bridge, whose key role is to bridge varios blockchains, aims to become a 
 
 * Role: Project Lead
 
-* LinkedIn: https://www.linkedin.com/in/viven-kirby-1524b7205?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BbDtomY%2BISTuS%2B3rdEUeN5Q%3D%3D
+* LinkedIn: https://www.linkedin.com/in/viven-kirby
 
 * GitHub: https://github.com/Winless
 
@@ -64,7 +64,7 @@ Clover Bridge, whose key role is to bridge varios blockchains, aims to become a 
 
 * Role: Operations Lead
 
-* LinkedIn: https://www.linkedin.com/in/norelleng?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BqXXVrsKURwigFr%2BiVj92tA%3D%3D
+* LinkedIn: https://www.linkedin.com/in/norelleng
 
 * GitHub: https://github.com/Winless
 
@@ -134,12 +134,12 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  11.5
-* **Total Costs:** 0.87 BTC
+* **Total Costs:** 0.51 BTC
 
 ### January 2021 Milestones
 * **Estimated Duration:** 1 month
-* **FTE:**  11.5
-* **Costs:** 0.29 BTC
+* **FTE:**  5.5
+* **Costs:** 0.17 BTC
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
@@ -158,8 +158,8 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 
 ### February 2021 Milestones
 * **Estimated Duration:** 1 month
-* **FTE:**  11.5
-* **Costs:** 0.29 BTC
+* **FTE:**  5.5
+* **Costs:** 0.17 BTC
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
@@ -176,8 +176,8 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 
 ### March 2021 Milestones
 * **Estimated Duration:** 1 month
-* **FTE:**  11.5
-* **Costs:** 0.29 BTC
+* **FTE:**  5.5
+* **Costs:** 0.17 BTC
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
