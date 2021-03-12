@@ -88,12 +88,12 @@ Estimated to be ~1 month total
 ### Overview
 * **Total Estimated Duration:** 1 month
 * **Full-time equivalent (FTE):** 2 FTE
-* **Total Costs:** $29,700 in DAI
+* **Total Costs:** $20,000 in DAI
 
 ### Milestone 1 Example — Implement ChainJS Library for Polkadot & Kusama
 * **Estimated Duration:** 1 month
 * **FTE:**  2
-* **Costs:** $29,700 in DAI
+* **Costs:** $20,000 in DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
