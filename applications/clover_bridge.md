@@ -22,7 +22,7 @@ Polkadot uses Schnorrkel/Ristretto x25519 ("sr25519") as its key derivation and 
 
 #### Team Interest
 
-  We are a team of like-minded people who have a dream of building a groundbreaking technology towards censorship resistance on utilizing newest additions to DLT technologies. Apart from incentivizing our core team with a structured/periodic compensation plan throughout the next 5 years with cliffs imposed in between, we give ourselves a high degree of autonomy and lots of space for creativity overall.
+As a collective, the founding team has been working together for a almost about a year. We all come from different and unique walks of life, backgrounds, and experiences which really makes us a dynamic and strong team complementing one another's skill sets. Burak is based in the Bay Area, Mehmet in UK, Suleyman in Turkey, Norelle and Viven are based in Toronto. It is neat operating as a team across the globe because we can tap into different markets and bring different things to the table. Within the team, Burak and Viven have known each other for 4 years and have worked together on a number of projects. Mehmet and Suleyman on the pther hand have known each other for 10 years, and worked together on a number of projects while they were at TUBITAK BILGEM between 2010 and 2015. They have not only done several applied projects together but also published several papers together (see Google Scholar for their common academic papers). Mehmet is expert on cryptographic design, architecture (in particular, blockchain and cryptocurrencies, secure multi-party computation, homomorphic encryption, threshold cryptography, zero knowledge proofs (zkSNARKs and Bulletproofs)) and mathematical structures of cryptography, where Suleyman is experienced on cryptographic analysis as well as implementation aspects of cryptographic algorithms/protocols. Mehmet and Burak have known each other for 3 years, and worked together on a number of projects including a brand-new on-chain scaling approach for zero-confirmation BTC payments. Burak initially came up with the idea of combining zkSNARKs with ePassports after Apple confirmed iOS 13 to include support for NFC passport reading. Mehmet and Burak then started playing around with the idea, before Suleyman joined the team.
 
 ### Project Details 
 
@@ -44,12 +44,30 @@ With the rapid development of DeFi, the demand for insurance protocols is also i
 
 ### Team members
 
-* Burak Keceli - Tecnical Lead  
-* Chris Li - Strategy Lead
-* Norelle Ng - Operations
-* Chris Williamson - Co-strategy Lead
-* Barek Sekandari - Merketing Lead
-* Marina Danylyuk - Chief Legal Advisor
+* Mehmet Sabir Kiraz
+— Email: mehmet@credentialsapp.org
+— Role: Technical Lead
+— LinkedIn: https://uk.linkedin.com/in/mehmet-sabir-kiraz-38a4963
+— Google Scholar: https://scholar.google.com/citations?user=1NzyjZIAAAAJ&hl=en
+— University: Technical University of Eindhoven, Max-Planck Institute for Computer Science, Middle East Technical University
+— Experience: nChain (Senior Researcher), De Montfort University (Senior Lecturer), TUBITAK BILGEM, Istanbul University (Visiting Lecturer), CIMSOLUTIONS, TomTom, Philips, Yapi Kredi Bank and Pamukbank
+
+* Suleyman Kardas
+— Email: suleyman@credentialsapp.org
+— Role: Senior Architect
+— LinkedIn: https://tr.linkedin.com/in/dr-s%C3%BCleyman-karda%C5%9F-76a23711
+— GitHub: https://github.com/skardas
+— Google Scholar: https://scholar.google.com.tr/citations?user=LjqSAX0AAAAJ&hl=en
+— University: Sabanci University, Bilkent University
+— Experience: Batman University (Asst. Prof. Dr.), Istanbul University (Visiting Lecturer), TUBITAK and Cognis
+
+* Burak Keceli
+— Email: burak@credentialsapp.org
+— Role: Product Designer and Mobile Developer
+— LinkedIn: https://www.linkedin.com/in/burak-ke%C3%A7eli/
+— GitHub: https://github.com/CredentialsApp
+— University: Draper University
+— Experience: GatePay, Ayny and MBO Games
 
 ### Contact
 - burak@buraks.blog
