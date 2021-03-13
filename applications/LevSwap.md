@@ -5,17 +5,18 @@
 * **Payment Address:** 0xFB48Fd1F94e54532d9fA1432637324F64Ad1234A
 
 ## Project Overview :page_facing_up:
-Levswap is a never-ending and easy-to-use trading platform based on synthetic asset leverage tokens. 
-Users can use bar trading on LevSwap to magnify their asset returns in the form of buying and selling tokens.
+Levswap is a general synthetic leveraged token protocol based on an innovative balance-pool model. 
+
+Users can magnify their profits in the form of buying and selling leveraged tokens on LevSwap.
 
 ### Overview
-  In the outbreak of DeFi in 2020, the top 10 market capitalization projects include the exchange ,Yield Farming Aggregators (e.g. YFI), lending (e.g. aave), synthetic token (e.g. synthetixs) and etc. It is not difficult to find that improving the utilization rate of funds is the real demand of the market, then one product must be mentioned,--lever trading which is also an indispensable part of traditional financial transactions. This can be proved by the trading volume of leverage and futures products of centralized exchanges.
+  In the outbreak of DeFi in 2020, the top 10 market capitalization projects include the exchange ,Yield Farming Aggregators (e.g. YFI), lending (e.g. aave), synthetic token (e.g. synthetixs) and etc. It is not difficult to find that improving the utilization rate of funds is the real demand of the market, then one product must be mentioned: leverage trading which is also an indispensable part of traditional financial transactions. This can be proved by the trading volume of leverage and futures products of centralized exchanges.
   
-  LevSwap will implement lever trading in a decentralized environment in the form of synthetic assets. 
-  Users can use the operation mode of DEX to buy and sell the corresponding synthetic asset tokens to do long and short. LevSwap uses the Swap token model to get rid of the margin model, customers in the extreme market will not burst, And LevSwap can effectively improve the safety of customer funds, and reduce risks. Through the calculation of the long-short force, LevSwap can adjust the leverage ratio in real time, Combining with the transaction rate, LevSwap can balance the long-short force, guide the return of the token price, and improve the effectiveness of the transaction.
+  LevSwap is designed for leverege trading in the decentralized ecosystem in the form of synthetic assets, for a quick understanding: LevSwap is a decentralized leveraged token protocol like ones in FTX, implemented with a novel algorithm model and decentrialized way.
+  Users can use the operation mode of DEX to buy and sell the corresponding synthetic asset tokens to do long and short. LevSwap uses the Swap token model to get rid of the margin model, customers in the extreme market will not meet force liquidation, And LevSwap can effectively improve the safety of customer funds, and reduce risks. Through the calculation of the long-short force, LevSwap can adjust the leverage ratio in real time, Combining with the transaction rate, LevSwap can balance the long-short force, guide the return of the token price, and improve the effectiveness of the transaction.
 
     
-   Our team comes from the top blockchain companies and financial institutions in the industry. Members have participated in the development of allied chain and several Dapp projects, and have a deep understanding and accumulation of blockchain technology and research. After our investigation and discussion, we found that some transaction efficiency problems of the main network (lag and high gas fee), these problems can not be solved on the main network. After studying the technology of polkadot and Substrate, we find that the advanced technology of polka can fit our project very well. at the same time, LevSwap, based on the transaction of synthetic assets can well cater to the cross-chain needs of assets generated for long-short transactions in other networks (such as etherum network). In a sense, it realizes the asset link between polka and other networks.
+   Our team comes from the well-known blockchain companies and financial institutions in Asia. Members have experience in development of enterprice blockchain and several Dapp projects, and have a deep understanding and accumulation of blockchain technology and research. After our investigation and discussion, we found that some transaction efficiency problems of ethereum (lag and high gas fee), these problems can not be well solved on exsiting blockchain platforms. After studying the technology of polkadot and Substrate, we thought that the advanced technology of substrate can fit our project well. at the same time, LevSwap, based on the transaction of synthetic assets can well cater to the cross-chain needs of assets generated for long-short transactions in other blockchain. 
     
 ### Project Details
     
@@ -114,7 +115,7 @@ LevSwap provides an interface to provide a one-click arbitrage interface for mar
 
 
 ### Ecosystem Fit
-There are no similar projects in Polka ecology. 
+There are no similar projects in Polkadot ecology. 
 In the ethereum network ecology, there are Futureswap, Synthetix and etc. 
   
 Difference: 
@@ -136,11 +137,11 @@ LevSwap not only keeps the products at the basic level, but also has real applic
 
 ### Team Member
 * **Rudy Tang:** Senior Blockchain Developer, Head of Blockchain Technology Research.3 years Blockchain Research and Design Experience, 6 years architecture and development Experience.
-* **Simon Huang:** Former crypto wallet product director, experienced in asset manage solution and DeFi protocol design.Former PM in top 500 financial institutions.
+* **Simon Huang:** Former crypto wallet product director, experienced in asset manage solution and DeFi protocol design.Former PM in Fortune 500 financial institutions.
 * **Xin Ge:**  Senior Blockchain Development Engineer, years Blockchain Research and Design Experience,Good at mathematics and computer algorithms.
 * **Mike Zhang:** Former Technique Director of blockchain company.3 years Blockchain Research and Design Experience, 13 years architecture and devlopment Experience.
 * **Rhyme Peng:**  Senior front-end development engineer, good at all kinds of front-end technologies, rich experience in platform and activity product development.
-* **Bk Lee:**  Former senior product manager of the world's top 500 financial institutions with rich experience in financial products.
+* **Bk Lee:**  Former senior product manager of Fortune 500 financial institutions with rich experience in financial products.
 
 
 ### Contact
