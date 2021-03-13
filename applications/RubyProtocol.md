@@ -103,16 +103,16 @@ There are several different ways of implementing an MPC protocol: threshold homo
 * Ruby Technology Ltd. is a company registered in the Cayman Islands.
 
 ### Team Experience
-**David Spade**
+**David Spade**  
 David Spade graduated from the University of Nottingham. He is a full-stack developer with 8 years of experience in software development. David also has deep knowledge in zero-knowledge algorithms and he is an expert in data science.
 
-**Kevin Hsu**
+**Kevin Hsu**  
 Kevin Hsu graduated from MSc in Computational Statistics and Machine Learning from UCL and was supervised by David Silver, the senior engineer of AlphaGO. He served as a data scientist in Credit Suisse, senior machine learning Engineer in WeCash. Prescient and consistent track-record in investment and has invested in over 160 blockchain projects around the world.
 
-**Beni Issembert**
+**Beni Issembert**  
 Beni Issembert is a former Beam Privacy CMO, and currently works as Concordium CMO (a Proof-of-stake for businesses backed by IKEA, Volvo,and Geely). He has a Ph.D. in Philosophy of Sciences from John Hopkins and has been working in the digital world as an entrepreneur since 2005. Beni is a published author and respected thought leader in Blockchain, specifically within areas of privacy and identity.
 
-**Dylan Dewdney**
+**Dylan Dewdney**  
 Dylan Dewdney is a longtime crypto enthusiast (2011). In 2017 he co-founded Harbour DAO, which became an open-standard set of tools for building governance structures and voting mechanisms on ERC-20. Later, as Chief Evangelist of Beam and Head of Growth for AdEx, he was a key part of their GTM and general growth strategies. Dylan is a respected peer among many different projects and areas of business.Dylan is also the project lead and CEO of DeData project Kylin Network.
 
 ### Team Code Repos
