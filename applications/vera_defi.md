@@ -12,7 +12,7 @@
 Please provide the following:
   * A brief description of the project.
   
-Vera DeFi is a key component of Vera Protocol, a larger vision to build an open protocol that enables the  lending, borrowing and exchange of both Digital and physical assets on the blockchain by leveraging hash signatures of object scan,  NFC smart tags and decentralized oracles. As a Substrate-based  application, Vera DeFi smart contracts will manage unique asset identities, interest, and payment, enabling users to loan assets for token payout. 
+Vera DeFi is a key component of Vera Protocol, a larger vision to build an open protocol that enables the  lending, borrowing and exchange of NFT assets on the blockchain by leveraging hash signatures of object scan,  NFC smart tags and decentralized oracles. As a Substrate-based  application, Vera DeFi smart contracts will manage unique asset identities, interest, and payment, enabling users to loan assets for token payout. 
 
   * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
   
