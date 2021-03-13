@@ -12,14 +12,14 @@
 Please provide the following:
   * A brief description of the project.
   
-Vera DeFi is a key component of Vera Protocol, a larger vision to build an open protocol that enables the peer-to-peer lending, borrowing and exchange of physical assets on the blockchain by leveraging hash signatures of object scan,  NFC smart tags and decentralized oracles. As a Substrate-based lending application, Vera DeFi smart contracts will manage unique asset identities, interest, and payment, enabling users to loan assets for token payout.
+Vera DeFi is a key component of Vera Protocol, a larger vision to build an open protocol that enables the  lending, borrowing and exchange of both Digital and physical assets on the blockchain by leveraging hash signatures of object scan,  NFC smart tags and decentralized oracles. As a Substrate-based  application, Vera DeFi smart contracts will manage unique asset identities, interest, and payment, enabling users to loan assets for token payout. 
 
   * An indication of how you will integrate this project into Substrate / Polkadot / Kusama.
   
   Core Smart contract components will be developed in Ink on substrate. We will research integrating oracles like paralink. 
   * An indication of why your team is interested in creating this project.
   
-  Like how Bitcoin and Ethereum have enabled trustless peer-to-peer payments of digital assets between strangers, our vision is to enable the trustless retail or exchange of physical goods and assets between strangers without reliance on a centralized marketplace. In light of recent censorships taken by Big Tech oligopolies, our mission is to be an alternative platform for decentralized, censorship-resistant digital commerce and DeFi applications for real-world assets and physical consumer goods. The Vera team looks forward to working closely with its community to build an ecosystem that empowers and rewards entrepreneurs, inventors, and producers of consumer goods and protect the fundamental human right to buy, sell, or trade property we create and own.
+  Like how Bitcoin and Ethereum have enabled trustless decentralized payments of digital assets between strangers, our vision is to enable the trustless retail or exchange of physical goods and assets between strangers without reliance on a centralized marketplace. In light of recent censorships taken by Big Tech oligopolies, our mission is to be an alternative platform for decentralized, censorship-resistant digital commerce and DeFi applications both for digital and real-world assets and physical consumer goods. The Vera team looks forward to working closely with its community to build an ecosystem that empowers and rewards entrepreneurs, inventors, and producers of consumer goods and protect the fundamental human right to buy, sell, or trade property we create and own.
 
 ### Project Details 
 
@@ -61,7 +61,12 @@ We are not aware of another project doing DeFi in the Polkadot ecosystem that al
 Denis Lam: 
 Denis began coding at age 6 and launched his first start up gig at age 14. He holds a B.E. in Engineering from University of California, Berkeley in Biotechnology, speaks 5 languages, and is a serial entrepreneur and full-stack product engineer. He has 10+ years cross-functional experience working with startups, Fortune enterprises, and venture capital funds and is passionate about working with firestarters to democratize access to products and services and disrupting the status quo. In his free time, he enjoys travel, mindfulness, playing piano, and empowering others to unleash their potential for good using technology.
  
-Michael Arbach: Michael is a business-oriented full-stack software architect and engineer with a 17-years track record building high-performance software solutions for Fortune 500 enterprises using emerging technologies such as blockchain technology in the U.S, Japanese and South Pacific markets. Code produced by Michael is currently in production and has processed billions of dollars in transactions and securities exchange volume. Today, some of the largest banks and organizations in the U.S. rely on software built by Michael and his team to power millions of users across various applications.
+Michael Arbach: 
+
+- Built blockchain based security lending solution for one of the largest trillion dollar bank in the U.S.
+- Blockchain code produced by Michael already moved  billions dollar worth of assets.
+- 17 years professional software engineer, 5 years full time focus on blockchain.
+- Code produced by michael is currently in production and serving millions of users.
 
 Completed project 
 
