@@ -12,22 +12,22 @@
 We are creating a XCM Implementation for Fungible Assets - xtoken.
 
 ### Overview
-Polkadot Cross-Consensus Message Format (XCM) is a generic message format that doesn't specify use cases like fungible tokens. Therefore, we need to provide an implementation of required use case e.g. fungible tokens, for parachains to be interoperable with the same context. We have developed an implementation guide, as well as a reference implementation `xtoken` that has been used by Acala, Laminar, Plasm, and HydraDX successfully completing cross-chain fungible token transfers on Rococo parachain testnet. We are supporting many more projects including Moonbeam, Centrifuge, PolkaBTC, Darwinia, Kilt, Crust and Snowfork to implement this and enable our chains to be composable with each other. 
+Polkadot Cross-Consensus Message Format (XCM) is a generic message format that doesn't specify use cases like fungible tokens. Therefore, we need to provide an implementation of required use case e.g. fungible tokens, for parachains to be interoperable with the same context, namely send/receive fungible assets between parachains, and between relay chain and parachains. We have developed an implementation guide, as well as a reference implementation `xtoken` that has been used by Acala, Laminar, Plasm, and HydraDX successfully completing cross-chain fungible token transfers on Rococo parachain testnet. We are supporting many more projects including Moonbeam, Centrifuge, PolkaBTC, Darwinia, Kilt, Crust and Snowfork to implement this and enable our chains to be composable with each other. 
 
 We believe all chains on Polkadot/Kusama shall be composable with each other, from exchanging values to exchanging and altering states. The fungible asset implementation is the first step towards this goal. 
 
 ### Project Details 
-We have already delivered the work we outlined in a PoC state, will continue the development to meet `best practice` outlined in the implementation guide at a production-grade standard, and this grant is applied partially in retrospect.
+We have already delivered the work we outlined in a PoC state, we will continue the development to meet the `best practice` outlined in the implementation guide at a production-grade standard, and this grant is applied partially in retrospect.
 
 Below are deliverables:
-* XCM Fungible Asset Implementation Guide that outlines fungible asset design considerations and discussions. (see [here](https://github.com/open-web3-stack/open-runtime-module-library/discussions/385))
+* XCM Fungible Asset Implementation Guide that outlines fungible asset design considerations and discussions, serving as a draft `best practice`. (see [here](https://github.com/open-web3-stack/open-runtime-module-library/discussions/385))
 * A reference implementation of cross-chain fungible assets - xtoken PoC (see xtoken [here](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/xtokens) and xcm-support [here](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/xcm-support))
 * A detailed documentation for other parachains to use these pallets, configure cross-chain assets, open HRMP channels on Rococo to test the cross-chain transfer etc. (see docs [here](https://wiki.acala.network/build/development-guide/composable-chains))
 * Further develop xtoken to implement parachain and fungible asset identifier to handle asset conversion, assetId conversion, and multi-location conversion etc in a more generic and extensible way as described in the [implementation guide](https://github.com/open-web3-stack/open-runtime-module-library/discussions/385)
 * We will contribute the `xtoken` code to the [orml (open-runtime-module-library)](https://github.com/open-web3-stack/open-runtime-module-library) so anyone can use and further extend it.
 
 ### Ecosystem Fit 
-This is another common-good implementation that would be useful to any parachains who want to send and receive fungible assets from other parachains. We have tackled many XCM and HRMP caveats while implementing `xtoken`, which would save much time for many other projects and accelerate innovations on top of cross-chain value exchange. We also foresee this work will inspire more collaboration and discussion within the parachain ecosystem, and could also inspire similar development for non-fungible assets.
+This is another common-good implementation that would be useful to any parachains who want to send and receive fungible assets from other parachains, as well as send/receive relay chain token between relay chain and parachain. We have tackled many XCM and HRMP caveats while implementing `xtoken`, which would save much time for many other projects and accelerate innovations on top of cross-chain value exchange. We also foresee this work will inspire more collaboration and discussion within the parachain ecosystem, and could also inspire similar development for non-fungible assets.
 
 We are not aware of other implementations at this stage, but hope to inspire more.
 
