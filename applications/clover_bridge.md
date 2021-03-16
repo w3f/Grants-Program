@@ -137,7 +137,7 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 
 ### Overview
 * **Total Estimated Duration:** 3 months
-* **Full-time equivalent (FTE):**  11.5
+* **Full-time equivalent (FTE):**  5.5
 * **Total Costs:** 0.51 BTC
 
 ### April 15 Due Milestone
@@ -183,4 +183,4 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 
 
 ## Future Plans
-Clover’s SPV simulation technology will soon be able to trustlessly peg-in and peg-out Ether and Ethereum based assets with Clover testnet. Supporting Bitcoin however, requires further upgrades to Bitcoin Core. The two upgrades required are splice opcodes and an arbitrary signature verification opcode. Thankfully, BIP-Tapscript proposes to allow future soft forks to introduce new opcode functionalities without breaking backwards compatibility. BIP-Tapscript at the bottom also mentions OP_CHECKSIGFROMSTACK as a candidate for future opcodes which is required for Clover to build Bitcoin-native covenants via transaction introspection. BIP-Schnorr is on the other hand proposing to activate Schnorr signatures, which is also required for Clover to convince the Bitcoin script to validate Clover block headers that are being produced by Schnorr-compatible n of m threshold validators. Clover will roll out Bitcoin two-way peg support when respective upgrades are activated on Bitcoin Core in the next few years.
+Clover’s SPV simulation technology will soon be able to trustlessly peg-in and peg-out Ether and Ethereum based assets with Clover testnet. Supporting Bitcoin however, requires further upgrades to Bitcoin Core. The two upgrades required are splice opcodes and an arbitrary signature verification opcode. Thankfully, BIP-Tapscript proposes to allow future soft forks to introduce new opcode functionalities without breaking backwards compatibility. BIP-Tapscript at the bottom also mentions OP_CHECKSIGFROMSTACK as a candidate for future opcodes which is required for Clover to build Bitcoin-native covenants via transaction introspection. BIP-Schnorr is on the other hand proposing to activate Schnorr signatures, which is also required for Clover to convince the Bitcoin script for validating Clover block headers that are being produced by BIP-Schnorr-compatible n of m threshold validators. Clover will roll out Bitcoin two-way peg support when respective upgrades are activated on Bitcoin Core in the next few years.
