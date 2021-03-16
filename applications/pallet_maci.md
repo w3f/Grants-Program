@@ -144,6 +144,7 @@ Projects:
 
 Technologies:
 - Rust
+- Typescript
 - Substrate
 - Ethereum
 - Solidity
@@ -169,12 +170,13 @@ Substrate related experience:
 ### Overview
 Total Estimated Duration: 4 months  
 Full-time equivalent (FTE): 2.5 FTE  
-Total Costs: 30.000 DAI
+Total Costs: 27.000 DAI
 
-### Milestone 1 - Collusion resistance
-- Estimated duration: 4 months
+### Milestone 1 - Pallet logic
+- Estimated duration: 2 months
 - FTE: 2.5
-- Costs: 30.000 DAI
+- Costs: 12.000 DAI
+- Description: Pallet written in Rust for Substrate 2.0 based blockchains. The pallet will be the implementation of Minimal Anti-Collusion Infrastructure (MACI) which leverages ZKPs
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -182,10 +184,37 @@ Total Costs: 30.000 DAI
 | 0b. | Documentation | Code documentation, API reference |  
 | 0c. | Usage example | Example of how to use the pallet inside code |  
 | 1. | Tests | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide, we will describe how to run these tests |  
-| 2. | pallet-maci | Pallet written in Rust for Substrate 2.0 based blockchains. The pallet will be the implementation of Minimal Anti-Collusion Infrastructure (MACI) which leverages ZKPs | 
-| 3. | Pallet showcase | Code repo with the node-template which contains the pallet implementation used to showcase the pallet and its usage |  
-| 4. | Blog post | The blog post that explains what and how we built |
-| 5. | Operation tools | Scripts used to perform offchain tasks needed to operate the platform and interface with the pallet |
+| 2. | Merkle tree handling | messageTree (submitted by users) and stateTree (mapping keys and votes) maintenance and update |
+| 3. | Cryptographic operations | To sign and encrypt a message: Generate an ECDH shared key, hash and sign EdDSA private key, Signatures validation mechanism |
+| 4. | Voice credit management | Determination of user voice credit amount assignment, weight of credits for vote calculations |
+| 5. | Voting mechanism | Vote publishing, Message processing and publishing (It verifies the proof, updates the processed message counter, and updates the state root in storage with newStateRoot), vote tally verification |
+| 6. | Account management | Participant registration, Coordinator origin update | 
+| 7. | ZeroPool integration | Integrate ZeroPool Substrate pallet for verifying circuits |
+
+### Milestone 2 - ZK Circuits
+- Estimated duration: 1 months
+- FTE: 2.5
+- Costs: 9.000 DAI
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |  
+| 0b. | Documentation | Documentation explaining the circuits and their purpose |  
+| 1. | State tree update | Circuit to prove the correctness of each state root, define public/private inputs, write circuits pseudocode |
+| 2. | Vote tally | Circuit which proves that they have correctly tallied all the votes, define public/private inputs, write circuits pseudocode |
+
+### Milestone 3 - CLI and Promotion
+- Estimated duration: 1 months
+- FTE: 2.5
+- Costs: 6.000 DAI
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |  
+| 0b. | Documentation | Explanation how to use the CLI |  
+| 1. | Operation tools | Scripts written in Typescript used to perform offchain tasks needed to operate the platform and interface with the pallet. (Coordinator: newElection, generateProofs, submitProofs; User: register, vote )  |
+| 2. | Pallet showcase | Code repo with the node-template which contains the pallet implementation used to showcase the pallet and its usage |  
+| 3. | Blog post | The blog post that explains what and how we built |
 
 ### Community engagement
 We will create a blog post as a part of the milestone we submit, explaining what and how we built it.
