@@ -32,7 +32,7 @@ PolkaKey will never save any info locally, the private key is self-owned.
 ## Development Roadmap :nut_and_bolt:
 
 * **Total Estimated Duration:** 3 weeks + 2weeks
-* **Total Costs:** 0.5 BTC + 0.1 BTC
+* **Total Costs:** 0.5 BTC ~+ 0.1 BTC~
 
 ### Milestone 1
 
@@ -53,10 +53,10 @@ PolkaKey will never save any info locally, the private key is self-owned.
 | ------------- | ------------- | ------------- |
 | 1. | Prepare for release | Add unit test, we use [jest](https://jestjs.io/en/) as our test runner. Fix issue on github, release the MVP version |
 
-### Milestone 3
+### ~Milestone 3~
 
-* **Estimated Duration:** 2 weeks
-* **Costs:** 0.1 BTC
+* ~**Estimated Duration:** 2 weeks~
+* ~**Costs:** 0.1 BTC~
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
