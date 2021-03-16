@@ -10,9 +10,9 @@
 
 #### Introduction
 
-Raze Network is a second-layer protocol that will provide cross-chain payment privacy for the entire DeFi stack of the Polkadot ecosystem. The core technical module of the Raze Network is a second-layer anonymous payment for the DeFi ecosystem. This module will be imported as a substrate-based smart contract which will serve as a universal plug-and-play infrastructure for Polkadot which allows the user to hide one's account address and financial information before participating in the DeFi stack.
+Raze Network is a second-layer protocol that will provide cross-chain payment privacy for the entire DeFi stack of the Polkadot ecosystem. The core technical module of the Raze Network is a second-layer anonymous payment for the DeFi ecosystem. This module will be imported as a substrate pallet which will serve as a universal plug-and-play infrastructure for Polkadot which allows the user to hide one's account address and financial information before participating in the DeFi stack.
 
-Since the Zether framework was designed to support the Ethereum account model, the Raze contract will support both tokens issued in the Polkadot ecosystem such as DOT & Kusama as well as ERC-20 cross-chain private payment, and hence significantly increase the liquidity of the Polkadot ecosystem.
+Since the Zether framework was designed to support the Ethereum account model, the Raze pallet will support both tokens issued in the Polkadot ecosystem such as DOT & Kusama as well as ERC-20 cross-chain private payment, and hence significantly increase the liquidity of the Polkadot ecosystem.
 
 The objective of Raze Network is to enable cross-chain privacy-preserving payment and DeFi systems, while protecting the transparency of your assets and behaviors from surveillance. Eventually, Raze Network can anonymize all the cryptocurrency across all chains.
 <p align="center">
@@ -28,12 +28,12 @@ Substrate is a new and promising platform to implement this privacy protocol and
 ### Project Details
 #### Project Architecture
 
-Raze Network will apply the [Zether framework](https://eprint.iacr.org/2019/191) to build the second-layer decentralized anonymous payment module. It will be then imported as substrate-based smart contracts. Similar to the Zether framework, it will have three technical modules: mint, transfer and redeem. The mint module will convert a base token into its anonymized version, while the redeem module will convert the anonymized token back to its native form. The transfer module is the one that enables the anonymous transfer of the anonymized token. This process will conceal the transaction amount and guarantee the anonymity for both the sender and receiver.
+Raze Network will apply the [Zether framework](https://eprint.iacr.org/2019/191) to build the second-layer decentralized anonymous payment module. It will be then imported as substrate-based pallet. Similar to the Zether framework, it will have three technical modules: mint, transfer and redeem. The mint module will convert a base token into its anonymized version, while the redeem module will convert the anonymized token back to its native form. The transfer module is the one that enables the anonymous transfer of the anonymized token. This process will conceal the transaction amount and guarantee the anonymity for both the sender and receiver.
 <p align="center">
   <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image5.png" alt="" width="70%"/>
 </p>
 
-The mint module will create a Raze account by running a mint contract and deposit the anonymized token to the Raze account. Each Raze account is identified by a public key `pk` and the mint module will generate a ciphertext under the account public key which encrypts the amount of minted token. If the account has already existed before the mint operation, the generated ciphertext will be homomorphically added to the existing ciphertext to increase the encrypted amount.
+The mint module will create a Raze account by running a mint module and deposit the anonymized token to the Raze account. Each Raze account is identified by a public key `pk` and the mint module will generate a ciphertext under the account public key which encrypts the amount of minted token. If the account has already existed before the mint operation, the generated ciphertext will be homomorphically added to the existing ciphertext to increase the encrypted amount.
 
 Since the balance and transaction amount of each Raze account is encrypted and therefore hidden, the remaining question for the transfer module is how to hide the identities of the involved parties. Similar to the anonymous transfer module of the Zether scheme, we hide the identities of the involved parties through the "one-out-of-many" proof. The "one-out-of-many" proof is conceptually close to ring signature, which proves that a transaction is launched by one of the many parties in the anonymity set (or the ring) while not revealing exactly whom among them is the sender or receiver of the transaction, and thus hide their identities. The transfer module's zkp will also prove the payment consistency and provide a range proof demonstrating there is no negative amount involved in the transaction, which could potentially allow the adversary to create money out of thin air.
 
@@ -51,14 +51,16 @@ We will also integrate a cross-chain bridge (such as ChainBridge) that can map a
 
 Each raze user can register a raze account any time(s) he wishes. The registration algorithm CreateAddress generates a secret key `sk` and the corresponding public key `pk`. The public key is the identifier of the Raze account.
 
-To invoke the Mint contract, the client-side runs a CreateMintTx algorithm, which takes as input the raze account `pk` and the amount of native token `amt` as inputs. The output of the CreateMintTx algorithm is a ciphertext `cp_1` encrypted under the public key `pk`. If the raze account `pk` is already attached with a ciphertext `cp_0`, the newly created ciphertext will be homomorphically added to the existing ciphertext to increase the encrypted amount. The updated ciphertext will be formed as `cp_1*cp_0`. Otherwise, the new ciphertext will be attached to the raze account. The native token will be stored in the mint contract.
+To invoke the Mint module, the client-side runs a CreateMintTx algorithm, which takes as input the raze account `pk` and the amount of native token `amt` as inputs. The output of the CreateMintTx algorithm is a ciphertext `cp_1` encrypted under the public key `pk`. If the raze account `pk` is already attached with a ciphertext `cp_0`, the newly created ciphertext will be homomorphically added to the existing ciphertext to increase the encrypted amount. The updated ciphertext will be formed as `cp_1*cp_0`. Otherwise, the new ciphertext will be attached to the raze account. The native token will be stored in the mint module.
 
-To invoke the transfer contract, the client-side runs a CreateTransferTx algorithm, which takes as inputs the raze account secret key `sk`, and the amount of transferred token `amt`, the public keys of sender `pk_s`, receiver `pk_r` and the public keys of the anonymity set `{pk_a}`. The output of the CreateTransferTx algorithm is a zero-knowledge proof that the prover knows one of the secret keys of the aforementioned public key set, the payment consistency proof, and range proof. The statement of this zkp is 
+To invoke the transfer module, the client-side runs a CreateTransferTx algorithm, which takes as inputs the raze account secret key `sk`, and the amount of transferred token `amt`, the public keys of sender `pk_s`, receiver `pk_r` and the public keys of the anonymity set `{pk_a}`. The output of the CreateTransferTx algorithm is a zero-knowledge proof that the prover knows one of the secret keys of the aforementioned public key set, the payment consistency proof, and range proof. The statement of this zkp is 
+
 <p align="center">
   <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image3.png" alt="" width="60%"/>
 </p>
 
-The client-side runs a CreateRedeemTx algorithm to invoke the redeem contract. It takes the account secret key `sk`, the withdrawal amount `amt`, and the public key `pk` as input to generate a zero-knowledge proof showing that the user knows the secret key `sk` for the account public key `pk` and the account has enough balance for the redeem operation. The zero-knowledge proof will be used to invoke the redeem contract. The statement of this zkp is
+The client-side runs a CreateRedeemTx algorithm to invoke the redeem module. It takes the account secret key `sk`, the withdrawal amount `amt`, and the public key `pk` as input to generate a zero-knowledge proof showing that the user knows the secret key `sk` for the account public key `pk` and the account has enough balance for the redeem operation. The zero-knowledge proof will be used to invoke the redeem module. The statement of this zkp is
+
 <p align="center">
   <img src="https://github.com/razenetwork/Raze_Network/blob/main/image/image4.png" alt="" width="40%"/>
 </p>
@@ -84,7 +86,7 @@ The  ultimate goal is to provide a SDK from a high-level perspective with the ab
 #### Ecosystem Fits
 
 Decentralized finance (DeFi) in the Polkadot ecosystem is still a newborn. Privacy is essential to the success and prosperity of DeFi. The Raze Network will serve as a vital infrastructure for the future development of privacy-preserving DeFi in the Polkadot ecosystem. The Raze Network will not only preserve the privacy of  the Polkadot DeFi ecosystem, but will also significantly increase the liquidity of the Polkadot ecosystem. The closest product to the Raze Network is the Manta Network, which is a privacy-preserving DEX system. Our proposal differs from theirs in the following ways:
-* The Zether framework is designed for the Ethereum account-based model, and hence it naturally facilitates the cross-chain private payment of ERC-20 tokens in the Polkadot ecosystem. Since all the aforementioned smart contract modules are supposed to be imported as Substrate-based modules, they will also be compatible with the tokens issued in the Polkadot ecosystem, such as DOT or Kusama. Put simply, Raze will improve liquidity of Polkadot due to its cross-chain interoperability with chains such as Ethereum.
+* The Zether framework is designed for the Ethereum account-based model, and hence it naturally facilitates the cross-chain private payment of ERC-20 tokens in the Polkadot ecosystem. Since all the aforementioned modules are supposed to be imported as Substrate palletss, they will also be compatible with the tokens issued in the Polkadot ecosystem, such as DOT or Kusama. Put simply, Raze will improve liquidity of Polkadot due to its cross-chain interoperability with chains such as Ethereum.
 * Our product is much more homogenous in the sense that it supports all DeFi products in the Polkadot system.  In addition Razealso supports anonymity mining, a vital liquidity function of DeFi. In contrast, the Manta Network focuses solely on developing the private DEX system, which limits the scope of its application scenarios severely.
 * From the technical perspective, the underlying zero-knowledge proof scheme for the Manta Network requires trusted setup, which is why they require a trust ceremony. In contrast, the zero-knowledge proof scheme that we adopt does not require any trusted setup. All the public parameters of our system can be randomly sampled from the underlying group in a totally transparent fashion, which is much more in line with both sound network design and decentralization.
 
@@ -152,7 +154,7 @@ The main deliverable of this milestone is Raze substrate pallet that supports: m
 * **FTE:**  1
 * **Costs:** 7K DAI
 
-The main deliverable of this milestone is the client that can generate the transactions that can trigger the aforementioned contracts. More specifically, it will include all the proof generation algorithms for these transactions. We will also provide the necessary UI to enable the users to interact with the proof generation algorithms. 
+The main deliverable of this milestone is the client that can generate the transactions that can trigger the aforementioned modules. More specifically, it will include all the proof generation algorithms for these transactions. We will also provide the necessary UI to enable the users to interact with the proof generation algorithms. 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
