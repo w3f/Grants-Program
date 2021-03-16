@@ -76,12 +76,12 @@ Bette Chen has more than a decade product/program/project management experience 
 ### Overview
 * **Total Estimated Duration:** 2 month
 * **Full-time equivalent (FTE):**  1.5 FTE
-* **Total Costs:** 0.32 BTC (roughly 18k)
+* **Total Costs:** USD 25k (Payable in BTC)
 
 ### Milestone — Implement xtokens PoC
 * **Estimated Duration:** 1 month
 * **FTE:**  1.5
-* **Costs:** 0.3 BTC
+* **Costs:** USD 15k 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -90,12 +90,13 @@ Bette Chen has more than a decade product/program/project management experience 
 | 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1. | Substrate module: `xtokens` | We will create a Substrate module that will handle cross-chain Account and balance transfers: transfer relay chain token e.g. DOT, transfer parachain tokens to parachain etc.|  
 | 2. | Substrate module: `xcm-support` | We will create a Substrate module that will provide support functionalities for XCM e.g. convert relay chain decimals to parachain decimals, supports multi-currency, and converts relay chain currencyId to parachain etc. |  
-| 3. | Article/Tutorial | We will write a tutorial that explains the work done as part of the grant. 
+| 3. | Support parachain installing xtoken | We will support other parachains to install and test cross-chain fungible token transfer using xtoken, by providing necessary documentation, direct technical support, and trouble shooting. |  
+| 4. | Article/Tutorial | We will write a tutorial that explains the work done as part of the grant. | 
 
 ### Milestone — Further Implement `xtokens` according to the XCM Fungible Asset Implementation Guide
 * **Estimated Duration:** 1 month
 * **FTE:**  1.5
-* **Costs:** 0.2 BTC
+* **Costs:** USD 10k 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
