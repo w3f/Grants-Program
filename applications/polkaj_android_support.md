@@ -70,12 +70,12 @@ I have ten years of experience in Android client development in the telecom and 
 ### Overview
 * **Total Estimated Duration:** 3 Months
 * **Full-time equivalent (FTE):**  1
-* **Total Costs:** 30,000 DAI
+* **Total Costs:** 21,000 DAI
 
 ### Milestone 1 Platform Targeting
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 10,000 DAI
+* **Costs:** 7,000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -97,7 +97,7 @@ I have ten years of experience in Android client development in the telecom and 
 ### Milestone 2 OkHttp / Java 8 Compatible
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 10,000 DAI
+* **Costs:** 7,000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -110,7 +110,7 @@ I have ten years of experience in Android client development in the telecom and 
 ### Milestone 3 Android and Kotlin
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 10,000 DAI
+* **Costs:** 7,000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
