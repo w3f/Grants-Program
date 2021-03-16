@@ -108,9 +108,13 @@ Within the team, Burak and Viven have known each other for 4 years and have work
 
 This is the main repo for the n of m threshold protocol for notarising Ethereum and Clover block headers.
 
+*	https://github.com/clover-network/threshold-crypto
+
+This is the R&D repo for threshold signatures.
+
 * https://github.com/clover-network/clover-bridge-contract
 
-This is the repo for Clover-deployed bridge contract where block header submission, key update, signatory join request, and signatory leave request events take place. Clover Bridge Protocol writes and reads to and from this contract. @bayMaxChallenge will be responsible for this repository.
+This is the repo for Clover-deployed bridge contract where block header submission, key update, signatory join request, and signatory leave request events take place. Clover Bridge Protocol writes and reads to and from this contract.
 
 * https://github.com/clover-network/ethereum-spv-backend
 
