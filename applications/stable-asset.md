@@ -97,52 +97,49 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 
 * **Total Estimated Duration:** 1 month
 * **Full-time equivalent (FTE):** 2
-* **Total Costs:** 30,000 DAI
+* **Total Costs:** 20,000 DAI
 
 ### **Milestone 1 — Implement Stable Swap Module**
 
 * **Estimated Duration:** 1.5 week
 * **FTE:** 2
-* **Costs:** 10,000 DAI
+* **Costs:** 7,000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | Provide documentation on components, working algorithms, and deployment processes |
 | 2 | Substrate module: algorithms | This module will contain core stable swap functionalities including:<br>computeD<br>computeDy<br>computeSwapAmount<br>swap |
-| 3 | Smart Contracts | A repository on GitHub contains smart contracts related to stable swap module that can be deployed using Ink! |
-| 4 | Testing | Comprehensive tests that cover smart contracts and substrate modules |  
-| 5 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |   
+| 3 | Testing | Comprehensive tests that cover smart contracts and substrate modules |  
+| 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |   
 
 ### **Milestone 2 — Implement Stable Asset Module**
 
 * **Estimated Duration:** 1.5 week
 * **FTE:** 2
-* **Costs:** 10,000 DAI
+* **Costs:** 7,000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | Provide documentation on components, working algorithms, and deployment processes |
 | 2 | Substrate module: algorithms | This module will contain core functionalities for stable asset including:<br>getMintAmount<br>mint<br>getRedeemProportionAmount<br>redeemProportion<br>getRedeemSingleAmount<br>redeemSingle<br>getRedeemMultiAmount<br>redeemMulti |
-| 3 | Smart Contracts | A repository on GitHub contains smart contracts related to stable asset module that can be deployed using Ink! |
-| 4 | Testing | Comprehensive tests that cover smart contracts and substrate modules |  
-| 5 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |  
+| 3 | Testing | Comprehensive tests that cover smart contracts and substrate modules |  
+| 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |  
 
 ### **Milestone 3 — Implement Stable Saving Module**
 
 * **Estimated Duration:** 1 week
 * **FTE:** 2
-* **Costs:** 10,000 DAI
+* **Costs:** 6,000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | Provide documentation on components, working algorithms, and deployment processes |
 | 2 | Substrate module: algorithms | This module will contain core functionalities on stable saving module including:<br>collect fees in stable asset<br>distribute fees in stable saving. |
-| 3 | Smart Contracts | A repository on GitHub contains smart contracts related to stable saving that can be deployed using Ink!  |
-| 4 | Testing | Comprehensive tests that cover smart contracts and substrate modules |  
-| 5 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |  
+| 3 | Testing | Comprehensive tests that cover smart contracts and substrate modules |  
+| 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |  
 
 
 ## Future Plans
