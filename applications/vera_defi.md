@@ -205,7 +205,7 @@ This function can be called by a borrower to expire a non fulfilled loan to reco
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicensed |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 1. | Non Fungible Token | Continue the development of our NFT.  |
+| 1. | Non Fungible Token | Continue the development of our NFT, as described above |
 | 2. | NFT Lending | Continue the development of our PoC AssetManager contract in Ink to enhance the functionality to fully support the first phase of the user interface. Described above. |  
 | 3. | ExchangeManager | Build exchange manager to enable non custodial buy/sell of NFT, described above. |  
 | 4. | UI/Design | Design UI based on the phase [wireframe](https://balsamiq.cloud/sa6mpd1/pvn6rks/r5D27). |  
