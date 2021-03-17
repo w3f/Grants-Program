@@ -35,6 +35,64 @@ Features:
 
 ### Main modules design and implementions
 
+#### Data Graph
+
+Data Graph is the first data category for personal private data. Currently contains two subcategories User Profile and User Activities.
+DataGraph is designed with multi-properties schema. After register the data, the Data Owner could be verified the ownership from multiple dimensions, not only the userid. If the malicious data owner just modifies a small part, other dimensions will conflict to the real data, the registration cannot be successfully submitted and cannot be successfully verified.
+
+The following example shows that how to prevent from malicious data which is just modified small part with the real data.
+
+```Json
+{
+
+	"register-request": [{
+			"UserProfile": [{
+				"Mail": [{
+					"From": "abc@emm.com"
+				}, {
+					"Title": "Hello dude!"
+				}, {
+					"body-hash": "1f3870be274f6c49b3e31a0c6728957f"   //unique property defined in DataGraph
+				}]
+			}]
+		},
+		{
+			"UserDid": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad" //unique property defined in DataGraph
+		}
+	]
+}
+```
+The malicious owner modified the UserDid to his own id, and repost the request with modified info.
+```Json
+{
+
+	"register-request": [{
+			"UserProfile": [{
+				"Mail": [{
+					"From": "abc@emm.com"
+				}, {
+					"Title": "Hello dude!"
+				}, {
+					"body-hash": "1f3870be274f6c49b3e31a0c6728957f"  //would conflicts with the real data due to the uniqueness
+				}]
+			}]
+		},
+		{
+			"UserDid": "730f75dafd73e047b86acb2dbd74e75dcb93272fa084a9082848f2341aa1abb6"
+		}
+	]
+}
+```
+The register request will be rejected due to the confliction.
+
+#### Data Graph DAO
+
+DataGraphDAO designed to be a on-chain mechanisms that could encourage community members to participate in the design of the Data Catalog and maintain the legality and availibility of data and registration.
+
+We will reward community members who voluntarily find malicious data or errors (we hope that Dataset Maker will play a leading role), based on data characteristics analysis and relevant in data technology. and then owners with data faults should be punished. We have rich experience in anti fake products for e-commerce platforms with this similar technology.
+
+If the data owner could not guarantee the data availability, including the data non-exists or the data unregistered etc. The tasks scheduled by the computing node(Phala, Alita network etc.) to the device of data owner will fail, DataDEX can not check the verification of task, so the DataOwner can not get the rewards.
+
 #### Data Registeration Entry 
 
  * RegisterData
