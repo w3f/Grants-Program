@@ -85,11 +85,11 @@ Completed project
 ## Development Roadmap :nut_and_bolt: 
 
 
-**This grant: ** Phase one Asset Management Contracts and UI                  
+**This grant:** Phase one Asset Management Contracts and UI                  
 
-**Future Grant: **  Oracles, Physical assets Authenticity, Pools          
+**Future Grant:**  Oracles, Physical assets Authenticity, Pools          
 
-**Long Term: **  More Advanced Instruments, Cross-Chain Support         
+**Long Term:**  More Advanced Instruments, Cross-Chain Support         
 
 
 ### Overview
