@@ -109,8 +109,8 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | Provide documentation on components, working algorithms, and deployment processes |
-| 2 | Substrate module: algorithms | This module will contain core stable swap functionalities including:<br>computeD<br>computeDy<br>computeSwapAmount<br>swap |
-| 3 | Testing | Comprehensive tests that cover smart contracts and substrate modules |  
+| 2 | Substrate module: Stable Swap Substrate module | This module will implement [core Stable Swap algorithm](https://docs.acoconut.fi/asset/acbtc/algorithm) to maintain balance of the basket, e.g.<br>computeD<br>computeDy<br>computeSwapAmount<br>swap.<br> Part of the algorithm is implemented in Solidity in acBTC's [ACoconutSwap](https://github.com/nutsfinance/acBTC/blob/master/contracts/acoconut/ACoconutSwap.sol) contract.  |
+| 3 | Testing | Comprehensive tests that cover Stable Swap Substrate module |  
 | 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |   
 
 ### **Milestone 2 — Implement Stable Asset Module**
@@ -123,8 +123,8 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | Provide documentation on components, working algorithms, and deployment processes |
-| 2 | Substrate module: algorithms | This module will contain core functionalities for stable asset including:<br>getMintAmount<br>mint<br>getRedeemProportionAmount<br>redeemProportion<br>getRedeemSingleAmount<br>redeemSingle<br>getRedeemMultiAmount<br>redeemMulti |
-| 3 | Testing | Comprehensive tests that cover smart contracts and substrate modules |  
+| 2 | Substrate module: Stable Asset Substrate module | This module will contain core functionalities for Stable Asset, which includes both how Stable Asset is minted/redeemed, e.g.  <br>getMintAmount<br>mint<br>getRedeemProportionAmount<br>redeemProportion<br>getRedeemSingleAmount<br>redeemSingle<br>getRedeemMultiAmount<br>redeemMulti,<br> and how the basket assets are managed. The first part is partly implemented in Solidity in acBTC's [ACoconutSwap](https://github.com/nutsfinance/acBTC/blob/master/contracts/acoconut/ACoconutSwap.sol) contract. |
+| 3 | Testing | Comprehensive tests that cover the Stable Asset Substrate modules |  
 | 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |  
 
 ### **Milestone 3 — Implement Stable Saving Module**
@@ -137,8 +137,8 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | Provide documentation on components, working algorithms, and deployment processes |
-| 2 | Substrate module: algorithms | This module will contain core functionalities on stable saving module including:<br>collect fees in stable asset<br>distribute fees in stable saving. |
-| 3 | Testing | Comprehensive tests that cover smart contracts and substrate modules |  
+| 2 | Substrate module: Stable Saving Substrate module | This module will contain core functionalities on stable saving module including:<br>collect fees in stable asset,<br>distribute fees in stable saving,<br>generate additional yield with the underlying assets. |
+| 3 | Testing | Comprehensive tests that cover Stable Saving Substrate modules |  
 | 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |  
 
 
