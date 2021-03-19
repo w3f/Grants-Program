@@ -13,48 +13,41 @@
 TetraPay is a new generation of algorithmic stablecoin. We hope that it will be stable enough and become a wide range of payment methods. We keep it relatively stable by setting aside reserve funds, encouraging savings and a market-led algorithm model.
 The application is part of the prediction and algorithm for the realization of a stable currency Tetra.
 
-### Project Details 
-#####  Features
+## Project Details 
 
-***Fast real-time confirmation: ***Using Polkadot's cross-chain protocol, assets can be directly mortgaged or liquidated into local legal tender, which can be liquidated quickly and confirmed within milliseconds.
+### Monetary Policy
 
-***Adjustable prediction: ***Adjust the miner price upload based on the trusted node in real time, and adjust the node trust value according to the upload result.
+#### TetraX
+Stable exchange medium, deflation and inflation will follow market economic behavior. What is to be realized in this application is TetraUSD pegging to USD.
 
-***Institutional payment mechanism: ***Users can mortgage assets to deduct the transferred gasoline fee, and consumers can pay for the transferred gasoline fee by the merchant.
+#### Payara
+Payara token serves as the most immediate defense against TetraX price fluctuations. The system uses Payara to make the price for TetraX by agreeing to anyone looking to swap Trtra and Payara at target exchange rate.
 
-##### Model Principle
+#### Reserve Fund
+Reserve fund, used to guarantee the market arbitrage behavior when TetraUSD is lower than 1USD in a deflationary state. The initial value is 20% of Payara's overall tokens.
 
-Our core goal is to stabilize the value of TetraPay currency and gradually develop it into a medium for large-scale transactions and savings. Therefore, TetraPay currency first needs to have a clear value and keep its price fluctuating within a narrow range around that value.
+### Interface module
 
-###### EXCHANGE RATE PREDICTION MACHINE
+#### Price Interface
+Miner price acquisition module, miners need to put Payara and TetraUSD price through this module.
 
-- Regarding TetraPay currency price, the miners initiate a vote, and the voting content is the exchange rate to a legal tender.
+#### Exchange Factory
+The exchange model, the exchange between TetraUSD and Payara, as well as the inflation and deflation module and external interfaces. Users can make transactions by calling this module.
 
-- After a certain number of blocks, we count votes and take the median as the current exchange rate of the real TetraPay currency.
+### Algorithm Mechanism
 
-- According to the final voting exchange rate, a range of exchange rates centered on the final exchange rate is delineated. A certain amount of incentives will be used to reward miners who vote within this range. Miners who vote outside this range will be punished.
+In order to ensure that 1 TetraUSD is anchored to 1 USD, the Tetra protocol uses the PriceInterface module for price acquistion. The time-weighted average of all miner prices is collected every hour as the USD price. At the same time, the miner’s input data is scored and to update miner's weight. Every time the price is determined, the market will trade TetraUSD-Payara to obtain profit while restoring the anchor price of TetraUSD to USD. These exchanges occur in the following two situations:
 
-- The system adjusts the scope of rewards and punishments every time to ensure that enough miners participate in voting.
+#### Inflation 
+When the value of 1 TetraUSD is higher than 1 USD, the user will exchange 1 USD worth payara for 1 TetraUSD, the exchanged Payara will be deposited into the Reserve fund, and at the same time system mint TetraUSD to the user, so that the number of TetraUSD increases, and the TetraUSD price falls back to the value of 1 USD.
 
-This voting mechanism ensures that the exchange rate will remain fluctuating within a narrow range, because those who maintain stability will be rewarded, and those who are dishonest will be punished. But we still need to consider the attacking behavior of the saboteur on the mechanism.
+#### Deflation
+When the value of 1 TetraUSD is lower than 1 USD, the user can exchange 1 TetraUSD for 1 USD worth Payara, and the system will burn the TetraUSD and withdraw the corresponding Payara from the Reserve fund to the user, so that the number of TetraUSD decreases and the 1 TetraUSD price rises to the value of 1 USD.
 
-###### LONG-TERM STABLE DEVELOPMENT-INCENTIVE MECHANISM
+In the long run, Payara will increase in price with the inflation of TetraUSD's economic scale, forming a virtuous circle. The Reserve Fund guarantees that Tetra can maintain value stability even when the economy scales deflation.
 
-Miners in TetraPay currency Play a vital role in the system. On one hand, the miners participated and maintained the PoS consensus, therefore the TetraPay currency system provides a security guarantee. On the other hand, the miners have absorbed TetraPay currency fluctuations in a short period thereby bearing the cost of shrinking the money supply and realized a stable TetraPay currency System.
 
-###### AUXILIARY CURRENCY PAYARA
-
-TetraPay currency is a decentralized digital currency, when the system detects any deviation of the exchange rate of the legal tender, it is necessary to put pressure on prices through algorithms and agreements to normalize prices. Like any other market, TetraPay currency has the market following simple rules of supply and demand, shrinking the supply of currency will result in higher relative currency prices. That is, when the exchange rate level is lower than the target level, a sufficient reduction in the money supply will restore the price level to normal.
-
-In the same method, expanding the money supply will result in a lower relative currency price. That is, when the exchange rate level is higher than the target level, a sufficient increase in the money supply will restore the price level to normal.
-
-The specific implementation of the above method is through our system protocol, algorithm, and auxiliary currency PAYARA. TetraPay currency Issuance on the POS consensus type blockchain, miners need to mortgage payara in it to proceed TetraPay currency mining. Similar to other POS consensus, the number of payara owned determines the mining rights of miners. In each block cycle, the agreement will select a block producer from the secured miners, who are responsible for summarizing transactions, reaching a consensus among miners, and ensuring that messages are correctly distributed in a short time to produce the next block.
-
-How do we use payara to make the exchange rate of TetraPay currency remains stable, which is  an important part of the agreement? Simply put, to achieve the above requirements, we allow anyone to exchange between payara and TetraPay currencies at the target exchange rate.
-
-Specifically, from a long-term perspective, the total amount of payara is unchanged, it has a stable demand, so although miners have absorbed the contraction cost of TetraPay currency, its  long-term benefits can be guaranteed. Further, the Protocol and algorithm miners will also be incentivized to ensure that miners who maintain the stability of the currency system will be rewarded.
-
-###### Flow chart
+#### Flow chart
 
 ![img](https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/Drawings2.jpg) 
 
@@ -85,7 +78,7 @@ Since the principle of the forward arbitrage model in the market is basically th
 
 ### Team members
 - Renato
-- constance
+- Constance
 - Vincent
 
 ### Team Website	
@@ -99,7 +92,7 @@ Tetra Pay Ltda. (São Paulo – Brazil)
 ### Team's experience
 - Renato(CEO) - Once the Head of Brazil and LATAM of Elex and Chief Representative of Oasis Games, has more than 9 years of overseas game publishing experience. Graduated from Pontifícia Universidade Católica de São Paulo, he’s experienced in development, publishing and market strategy of Digital & Entertainment products and services. Also a researcher and enthusiast of Blockchain Technology, Cryptocurrency and Startups.
 
-- constance: Blockchain technology expert with many years of project management and design experience
+- Constance: Blockchain technology expert with many years of project management and design experience
 
 - Vincent: The main developer of the main chain. He has designed the quantitative trading platform of multiple exchanges and is a full-stack engineer.
 
@@ -122,13 +115,10 @@ Tetra Pay Ltda. (São Paulo – Brazil)
 | 2 |Description| Complete interface document|
 | 3 |Test Guide|This unit will cover multi-currency price import test, value test and miner working status test|
 | 4 |Article/Tutorial|We will write an article or tutorial explaining the work done as part of the grant. |
-| 5 | Tetra pallet |We will create a substrate algorithm stablecoin pallet, which will implement: oracle price acquisition, mint and burn algorithms during Payara-TetarUSD deflation and inflation.|
+| 5 | Tetra pallet |We will create a substrate algorithm stablecoin pallet, which will implement: oracle price acquisition(Price Interface), mint and burn algorithms during Payara-TetarUSD deflation and inflation(Exchange Factory).|
 |6|Front End|This webpage provides all the functions and faucet of the TetraPay to facilitate testing, and use Node.js/Vue to develop.|
 |7| Docker  |We will provide a dockerfile to demonstrate the full functionality of our chain|
 
-## ***Interactive diagram***
-
-![img](https://raw.githubusercontent.com/tetrapay/Documentation/master/picture/flowChart.png) 
 
 ### Community engagement
 
