@@ -45,8 +45,6 @@ For instance, for a simplest sharing schema, when the vault is created to be sha
         }, {
             "cid":       "QmaTX2v2QuwkQvEERw17w2xACcr2WZhy9t3NAEPBjvqPSX",
             "member": "5Ef9ES1SLQZU4KucGsjvs8qexvppQFmDgHiqoqVptJ9nZDeu"
-        }
-    ]
 }
 ```
 
@@ -166,14 +164,14 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 ### Overview
 * **Total Estimated Duration:** 16 weeks
 * **Full-time equivalent (FTE):**  2.5 FTE 
-* **Total Costs:** $30,000
+* **Total Costs:** $28,500
 
 ### Milestone 0 — PoC
 * **Estimated Duration:** 3 Weeks
 
 * **FTE:**  2
 
-* **Costs:** 7,980 DAI (2 FTE * 35 Hours per week * 3 Weeks * $38 Hourly Wage. Of course, I'll be surprised if we will actually work less than 50 hours per week.) 
+* **Costs:** 6480 DAI (2 FTE * 35 Hours per week * 3 Weeks * $38 Hourly Wage. Of course, I'll be surprised if we will actually work less than 50 hours per week.) 
 
     
 
