@@ -1,7 +1,6 @@
 Open Grant Proposal
 This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the Open Grants Program Process on how to submit a proposal.
 
-This page is also available in Chinese (中文).
 
 Project Name: Valois Protocol
 Team Name: Valar
