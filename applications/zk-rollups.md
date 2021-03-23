@@ -2,7 +2,7 @@
 
 * **Project:** ZK Rollup on Polkadot/Substrate
 * **Proposer:** NoCtrlZ, akru, and SotaWatanabe
-* **Payment Address:** 1LYWirHyBbmdCCU2YHg2qxgLAuybUfKEPm
+* **Payment Address:** 1DJTSPajRFCjdfn5UgPXGRo6Di8EE1Dzox
 
 ## Project Overview :page_facing_up:
 We have been working on off-chain scalability solutions aka layer2 solutions. After tremendous research, we have come to believe that ZK Rollup would be the killer layer2 solution because of its data availability. Currently, rollup is [one of the potentially interesing topics](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md) of Web3 Foundation and Vitalik announced [the rollup centric Ethreum roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698?fbclid=IwAR1oJyMEwvjFXNy7vCHT19PyXNh27PAHZjvCR4qBRoUB9mKf_nEVOtE4vgk) last month. According to Vitalik, the Ethereum ecosystem is likely to be all-in on rollup (plus some plasma and channels) as a scaling strategy for the near and mid-term future. We know that Polkdot has a different technical architecture and tech stack but Rollup is still important because of severtal reasons.
