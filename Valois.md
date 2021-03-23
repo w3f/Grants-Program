@@ -5,9 +5,9 @@ This document will be part of the terms and conditions of your agreement and the
 
 See the Open Grants Program Process on how to submit a proposal.
 
-Project Name: Name of your project (e.g. DuoSwap Module)
-Team Name: Legal name of your team (e.g. Duo)
-Payment Address: BTC or Ethereum (DAI) payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
+Project Name: Valois Protocol (e.g. DuoSwap Module)
+Team Name: Valars (e.g. Duo)
+Payment Address: 0x59F90F4d0e75CA14122f18c447a76332CfCcf625 BTC or Ethereum (DAI) payment address. 
 ⚠️ The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.
 
 Project Overview 📄
