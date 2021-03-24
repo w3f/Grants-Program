@@ -3,6 +3,7 @@
 * **Project:** Polkadex: A fully decentralized, peer-peer, cryptocurrency exchange for DeFi ecosystem in Substrate.
 * **Proposer:** [Gauthamastro](https://github.com/Gauthamastro)
 * **Payment Address:** 34agZfxE1SSGxXgTQQvVGv1RcEEFCX9mEy 
+* **Status:** Terminated via email
 
 ## Project Overview :page_facing_up: 
 ### Overview

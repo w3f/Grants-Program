@@ -5,7 +5,7 @@
 * **DAI Payment Address:** `0x8214864d37944082322745b1639828F680f02124`
 
 ## Project Overview :page_facing_up: 
-This application is a grant application for $30,000 in DAI.
+This is a grant application for $30,000 in DAI.
 
 
 
@@ -60,8 +60,8 @@ Compared with [Polka stack](https://github.com/w3f/General-Grants-Program/blob/m
 * **Registered Legal Entity:** CryptoArena
 
 ### Team's experience
-* https://www.linkedin.com/rabm2k7
-* https://www.linkedin.com/irvinex	
+* https://github.com/rabm2k7
+* https://github.com/irvine
 
 ### Team Code Repos
 * https://github.com/CryptoArenaSDEX/Zencode-for-Substrate
