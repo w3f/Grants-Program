@@ -138,12 +138,12 @@ Junjun
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 4
-* **Total Costs:** 0.88 BTC
+* **Total Costs:** 0.73 BTC
 
 ### Milestone 1 Example — Implement Substrate Modules 
 * **Estimated Duration:** 3 months
 * **Full-time Equivalent (FTE):** 4
-* **Costs:** 0.88 BTC 
+* **Costs:** 0.73 BTC 
 
 In the first milestone, the features for the PoC will be implemented and tested by limited users. 
 
