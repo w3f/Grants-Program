@@ -138,12 +138,12 @@ Junjun
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 4
-* **Total Costs:** 0.98 BTC
+* **Total Costs:** 0.73 BTC
 
 ### Milestone 1 Example — Implement Substrate Modules 
 * **Estimated Duration:** 3 months
 * **Full-time Equivalent (FTE):** 4
-* **Costs:** 0.98 BTC 
+* **Costs:** 0.73 BTC 
 
 In the first milestone, the features for the PoC will be implemented and tested by limited users. 
 
@@ -162,11 +162,10 @@ The following components will be included:
 | 1. | Apron Node Repo | We will create a customized chain node with Substrate 2.0 Framework, it will contains the OCW module to report API usage statistics on-chain. |
 | 2. | Apron Market Contracts Repo | The contracts will be implemented with Ink!, and it will handle all the API services related functions such as 1) Staking tokens to register API service for node runner, 2) Register and unregister API service for node runner, 3) Define the price of API service for node runner, 4) Apply API service access key for node runner and DApp developers, 5) Billing System of the API usage for node runner and DApp developers, 6)Interface to integrate with a DAO to solve dispute between node runner and DApp developer|
 | 3. | Decentralized API Market / Front End Repo | It's a webpage working with Arpon Network, it's implemented based on polkadot.js as planned. |
-| 4. | Apron SDK Repo                            | It's a JS lib to interact with Apron Network for DApp developers to dynamic switch API service endpoint. |
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-| 6. | Tutorial | We will write an tutorial about how to use Apron Network. |
-| 7. | Article | We will write an article published on media channels. |
-| 8. | DAO | A Apron DAO will be created to handle the governance of the Decentralized API Market. |
+| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 5. | Tutorial | We will write an tutorial about how to use Apron Network. |
+| 6. | Article | We will write an article published on media channels. |
+| 7. | DAO | A Apron DAO will be created to handle the governance of the Decentralized API Market. |
 
 
 
