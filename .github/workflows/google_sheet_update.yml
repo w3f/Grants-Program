@@ -65,7 +65,7 @@ jobs:
         uses: mmagician/gsheet.action@v0.1.0
         with:
           spreadsheetId: ${{ secrets.SPREADSHEET_ID }}
-          startRow: 235
+          startRow: 260
           worksheetTitle: "Legal"
         env:
           GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
