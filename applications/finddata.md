@@ -18,7 +18,7 @@ Based on the global blockchain node network resources, a highly configurable but
 The robot of finddata node is used to mine the original data. The collected data is purified and uploaded to the cloud, and then the data operation center is triggered by the business server to run. Through statistics, online analysis and processing, information retrieval, machine learning, expert system (relying on the past rules of thumb) and pattern recognition, the mined data is modeled and analyzed, so as to improve the efficiency.Get effective value data and store it in the data server, or the client can download and save it locally as needed.
 
 
-[![6j6eyV.jpg](https://z3.ax1x.com/2021/03/26/6j6eyV.jpg)](https://imgtu.com/i/6j6eyV)
+[![6jRIET.png](https://z3.ax1x.com/2021/03/26/6jRIET.png)](https://imgtu.com/i/6jRIET)
 
 The obtained data can be hashed on the blockchain and traded on the blockchain as an asset. The standard and value setting of data interaction is completed by smart contract. The data trading platform will be built on the substrate of Polkadot.  All participants in data mining, including contribution server, proxy IP, bandwidth, collection rule algorithm and contribution data, can get Token-based rewards, while the demander or user of data needs to pay Token to get the data.
 
