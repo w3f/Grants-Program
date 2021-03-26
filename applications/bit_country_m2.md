@@ -20,6 +20,13 @@ We have been investigating the possibility of using decentralized storage for mo
 
 The team has been reconsidering the block planner for a bit country and its related block theme feature as part of milestone 1. We are now looking at separating the logic to enable a smoother experience between users who wish to use a predesigned template or build from scratch.
 
+### Tech Stack
+Frontend/UI: ReactJs, BabylonJs, HTML, JS, CSS
+API: C#/.NET Core, NodeJs
+Blockchain: Substrate/Rust
+Database: MongoDB
+
+
 ### Overview
 * **Total Estimated Duration:** 1 month
 * **Full-time equivalent (FTE):**  5 FTE.
@@ -40,7 +47,7 @@ The team has been reconsidering the block planner for a bit country and its rela
 | 1a. | Spot Good Neighbor (Auction) Protocol | Controls which users are able to participate in auctions for spots, allows existing neighboring spots to have their say on a potential occupier of the new spot. |
 | 1b. | Spot Leasing Protocol | Allows owners to lease their spot to others. Determines the valid period of leasing a continuum spot, enabling right of renewal for existing lessors. |
 | 1c. | Spot Good Neighbor (Governance) Protocol | Gives neighboring spots the ability to raise disputes with other spots, which can be voted on and actioned. Designed to improve neighborhood quality. |
-| 2. | Substrate module: NftPromotion | Our network is NFT native chain. This pallet manages NFT campaigns that we will create to incentivize NFT creators, traders and minters. (e.g. subsidies on costs or other incentive) |
+| 2. | Substrate module: NftPromotion | Our network is designed to support NFT and its promotion. This pallet manages NFT campaigns that we will create to incentivize NFT creators, traders and minters. (e.g. subsidies on costs or other incentive) |
 |	3.	|	Substrate: NFT Minting - Extended |	While using ORML trait as a base, we will be implementing co-creator, origin details, NFT-Future-Event (e.g. time capsule), Smart Contract Enabled NFT (e.g. give NFTs programmability). |
 | 4. | Connected to Rococo | Become a parachain on Rococo, requires frequent migrations to the newest version of pallets and reapplication for the parachain. Aim to be included as soon as possible. |
 |	5. |	Dapp - Dual Login |	Support login using either PolkadotJs or classical username and password login. We need to do some engineering to make this happens so we can bring more users outside of the ecosystem. |
