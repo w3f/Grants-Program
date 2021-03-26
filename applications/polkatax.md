@@ -1,6 +1,8 @@
 # Open Grant Proposal
 
 - **Project:** Polkatax
+- **Team name:** Polkadotters
+- **Payment address:** 0x05dAF11CEef0592492d3B443e8Cc1A4A4a652d32
 
 ## Project Overview :page_facing_up:
 
