@@ -28,7 +28,7 @@ Database: MongoDB
 
 
 ### Overview
-* **Total Estimated Duration:** 1 month
+* **Total Estimated Duration:** 6 weeks
 * **Full-time equivalent (FTE):**  5 FTE.
 
 ### Milestone 2  — Continuum Protocol (Universal Map) & NFT Centric Token Economy. Goal: public testnet
