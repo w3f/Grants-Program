@@ -11,9 +11,6 @@ Payment Address: DAI Address:
 
 Project Overview
 
-
---------------------
-
 ### 
 
 Overview
@@ -35,9 +32,6 @@ Integration
 FindData is composed of a distributed data acquisition engine and a trading center on the big data chain. The data in the real world are mined and analyzed to form valuable assets, which can be bought and sold freely on the chain. The behaviors and values in the economy are linked by tokens.
 
 Project Details
-
-
--------------------
 
 ### 
 
@@ -89,8 +83,6 @@ In FindData2.0, the scope of data collection will be extended to the entire bloc
 
 Team
 
-
---------
 
 ### 
 
@@ -152,8 +144,6 @@ Team Code Repos
 
 Development Roadmap
 
-
------------------------
 
 ### 
 
@@ -232,9 +222,6 @@ Docker
 We will provide a full functionality of our robot and newwork.
 
 Future Plans
-
-
-----------------
 
 Community Plan
 
