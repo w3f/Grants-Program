@@ -61,5 +61,5 @@ Database: MongoDB
 |	9.	|	Dapp - 2D <-> 3D	|	Implement the composite UI between 3D and 2D. Users in 3D can access 2D timeline without changing the page (leaving the virtual world). |
 |	10.	|	Dapp - 3D templates	|	Develop some 3D templates for users to use to bootstrap their virtual world. (e.g. Mars, Cyberpunk, Kusama Canary theme) |
 |	11.	|	Dapp - Dashboard |	Summary page of current system: blocks, bit countries, recent events, economic overview etc. The webapp landing page. |
-|	12.	|	Dapp - Bootstrap	|	Our goal is to launch the testnet after this milestone, we will be creating honor-effort-on-the-testnet campaigns to attract users to engage with us. We will also setup public idea board allowing visitors to create new ideas and vote for existing ideads. |
+|	12.	|	Dapp - Bootstrap	|	Our goal is to launch the testnet after this milestone, we will be creating honor-effort-on-the-testnet campaigns to attract users to engage with us. We will also setup public idea board allowing visitors to create new ideas and vote for existing ideas. |
 | 13. | Docker / UAT | We will demonstrate the full functionality of our chain and our dapp on UAT / a dockerfile. |
