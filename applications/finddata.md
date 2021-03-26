@@ -167,60 +167,19 @@ Milestone 1 — Implement Substrate Modules
     
 *   Costs:10000 DAI
     
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can build one of our substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 80%) to ensure functionality and robustness. In the guide we will describe how to run these tests. | 
+| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |  
+| 1. | Robot Module | Create a highly configurable but easy to operate data acquisition robot and data asset transaction network. |  
+| 2. | Network module | Developing a cross blockchain data asset trading network, and build a web system platform for user. |  
+| 4. | Substrate chain | Based on substrate,link multi blockchain network, maximize the use of global blockchain node resources. |  
+| 5. | Docker | We will provide a full functionality of our robot and newwork. |
 
-Number
 
-Deliverable
 
-Specification
-
-0a.
-
-License
-
-Apache 2.0 / MIT / Unlicense
-
-0b.
-
-Documentation
-
-We will provide both inline documentation of the code and a basic tutorial that explains how a user can build one of our substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works.
-
-0c.
-
-Testing Guide
-
-The code will have unit-test coverage (min. 80%) to ensure functionality and robustness. In the guide we will describe how to run these tests.
-
-0d.
-
-Article/Tutorial
-
-We will write an article or tutorial that explains the work done as part of the grant.
-
-1.
-
-Robot Module
-
-Create a highly configurable but easy to operate data acquisition robot and data asset transaction network.
-
-2.
-
-Network module
-
-Developing a cross blockchain data asset trading network, and build a web system platform for user.
-
-4.
-
-Substrate Chain
-
-Based on substrate,link multi blockchain network, maximize the use of global blockchain node resources.
-
-5.
-
-Docker
-
-We will provide a full functionality of our robot and newwork.
 
 Future Plans
 
