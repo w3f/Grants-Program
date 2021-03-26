@@ -64,7 +64,7 @@ DataSwap is a distributed big data trading center established on Substrate. The 
 
 ### Ecosystem Fit
 
-In FindData2.0, the scope of data collection will be extended to the entire blockchain, and all the data on the chain will be given higher value.
+In FindData2.0, the scope of data collection will be extended to the entire blockchain, and all the data on the chain will be given higher value. And All the mined data will be stored in decentralised network，such as IPFS，Crust.
 
 ## Team
 
