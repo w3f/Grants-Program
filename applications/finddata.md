@@ -5,8 +5,7 @@
 *   Team Name: Time Labs
     
 
-Payment Address: DAI    
-Address: 0xbf1749b2f7f2a3fd20676710a0195f1f05895ac9
+Payment Address: DAI ,Address: 0xbf1749b2f7f2a3fd20676710a0195f1f05895ac9
 
 ## Project Overview
 
