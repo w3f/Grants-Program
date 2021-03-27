@@ -229,10 +229,11 @@ At present, we have developed some prototype systems based on other public chain
 |0c.|Testing Guide|In the guide we will describe how to run these tests|
 |0d.|Article/Tutorial|We will write an article or tutorial that explains the work done as part of the grant.|
 |1|Graph Schema|Design user graph data schema, including activities and profile. Defined in Proto3, and will store to an object storage like ipfs. In future, there will be a graph engine to analyse the data as iterative computation|
-|2|Mobile App|Develop preliminary mobile data owners registering tools and SDK. Develop in Kotlin, Android and ios version.|
-|3|Smart Contract|Data DEX smart contracts development with ink!|
-|4|Frontend|Data DEX web system development. Vue based H5 pages involved in mobile app.|
-|5|Task Oralce|Oracle development for receiving data computing tasks, adapted to the computing tasks of Phala and Alita Network. Develop in Rust as a runtime pallets.|
+|2|Data Reisteration Entry|Deliver a mobile app by which users could register personal data to data graph. Develop in Kotlin, Android and ios version. And provide rest api devlop in NodeJs.|
+|3|Data Graph DAO|Develop DAO contract in ink! and managenment tools develop in Kotlin, Android and ios version. |
+|4|Smart Contract|Data DEX smart contracts development with ink!|
+|5|Frontend|Data DEX web system development. Vue based H5 pages involved in mobile app.|
+|6|Task Oralce|Oracle development for receiving data computing tasks, adapted to the computing tasks of Phala and Alita Network. Develop in Rust as a runtime pallets.|
 
 
 
