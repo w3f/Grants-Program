@@ -2,7 +2,7 @@
 
 * **Project Name:** DataDEX Network
 * **Team Name:** DataDEX
-* **Payment Address:** BTC 33ZyewA8Y8QAQySyJwH72AKxn9MLxhXVF6
+* **Payment Address:** USDT 0x072fb7066E0ac1CfB71cAE5742Faa8879C83Fcc9
 
 
 
@@ -218,9 +218,11 @@ At present, we have developed some prototype systems based on other public chain
 
 ### Overview
 
-* Total Estimated Duration: 3 months
+### Milestone 1
+
+* Total Estimated Duration: 1.5 months
 * Full-time equivalent (FTE): 3
-* Total Costs: 25000 USD
+* Total Costs: 13000 USD
 
 |Number|Deliverable|Specification|
 |:----|:----|:----|
@@ -230,10 +232,18 @@ At present, we have developed some prototype systems based on other public chain
 |0d.|Article/Tutorial|We will write an article or tutorial that explains the work done as part of the grant.|
 |1|Graph Schema|Design user graph data schema, including activities and profile. Defined in Proto3, and will store to an object storage like ipfs. In future, there will be a graph engine to analyse the data as iterative computation|
 |2|Data Reisteration Entry|Deliver a mobile app by which users could register personal data to data graph. Develop in Kotlin, Android and ios version. And provide rest api devlop in NodeJs.|
-|3|Data Graph DAO|Develop DAO contract in ink! and managenment tools develop in Kotlin, Android and ios version. |
-|4|Smart Contract|Data DEX smart contracts development with ink!|
-|5|Frontend|Data DEX web system development. Vue based H5 pages involved in mobile app.|
-|6|Task Oralce|Oracle development for receiving data computing tasks, adapted to the computing tasks of Phala and Alita Network. Develop in Rust as a runtime pallets.|
+|3|Frontend|Data DEX web system development. Vue based H5 pages involved in mobile app.|
+
+### Milestone 2
+* Total Estimated Duration: 1.5 months
+* Full-time equivalent (FTE): 3
+* Total Costs: 12000 USD
+
+|Number|Deliverable|Specification|
+|:----|:----|:----|
+|1|Data Graph DAO|Develop DAO contract in ink! and managenment tools develop in Kotlin, Android and ios version. |
+|2|Smart Contract|Data DEX smart contracts development with ink!|
+|3|Task Oralce|Oracle development for receiving data computing tasks, adapted to the computing tasks of Phala and Alita Network. Develop in Rust as a runtime pallets.|
 
 
 
