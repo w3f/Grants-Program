@@ -1,6 +1,8 @@
 # General Grant Proposal
 
 - **Project:** Subauction
+- **Team name:** Subauction
+- **BTC address:** 3MXF8e315nbRKzU5ZhxBxNUeew9xDKstTx (BTC)
 
 ## Project Overview :page_facing_up:
 
