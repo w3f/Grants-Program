@@ -1,4 +1,4 @@
-# General Grant Proposal
+# W3F Open Grant Proposal
 
 - **Project:** Subauction
 - **Team name:** Subauction
