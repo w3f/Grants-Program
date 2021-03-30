@@ -61,6 +61,18 @@ We are interested in the following areas but want to leave them for future work:
 2. Extend to a storage indexing tool
 3. Comprehensive UI for the end users
 
+Open Node Framework doesn't aim to build everything from scratch. We prefer to utilize the existing open source tools and potentially contribute to them. The candidates are:
+
+- Deployment
+    - Helm deployment template: [w3f/polkaodt-chars](https://github.com/w3f/polkadot-charts)
+- Monitoring dashboard
+    - [ironoa/polkadot-k8s-monitor](https://github.com/ironoa/polkadot-k8s-monitor)
+    - [SimplyVC/panic_polkadot](https://github.com/SimplyVC/panic_polkadot)
+- API Serving
+    - [Joystream/hydra](https://github.com/Joystream/hydra)
+    - [subquery/subql](https://github.com/subquery/subql)
+    - [insight-w3f/terragrunt-polkadot](https://github.com/insight-w3f/terragrunt-polkadot)
+
 ### Ecosystem Fit 
 
 Open Node Framework provides the infrastructure to deploy any Substrate based blockchain for multiple purposes, including running a bootstrap network, a validator cluster, a full node RPC service network, or a temporary simulation network for experiments, with all the essential infrastructure. It allows other Substrate blockchains to integrate with it easily.
@@ -121,9 +133,9 @@ The first version of Open Node Framework is available on [Github](https://github
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the config files and a basic tutorial that explains how a operator can run a full stack Substrate testnet validator and parachain network. |
+| 0b. | Documentation | Design docs including the architecture of the system and the design choices (including which open source projects to integrate). Inline documentation of the config files. |
 | 0c. | Testing Guide | A guide describing how to run the tests covering the cases in 0b. |
-| 0d. | Article/Tutorial | We will publish an workshop that explains how the project can be used to deploy different types of blockchain network. |
+| 0d. | Article/Tutorial | We will publish a tutorial and an workshop that explains how the project can be used to deploy different types of blockchain network. |
 | 1. | Operating scripts | The scripts to: scale up / down the nodes and get direct access to the nodes |
 | 2. | Authenticated RPC | Add the authentication layer to the node RPC for node ops |
 | 3. | Parachain support | Add parachain config. Allow to put relay chain validators or parachain collators directly behind a firewall for Collator Protocol. |
