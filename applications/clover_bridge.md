@@ -155,7 +155,7 @@ Threshold R&D Repo
 | ------------- | ------------- | ------------- | ------------- |
 | 1. | Threshold Logic | Text/PDF | Start documentation of the various aspect of the Clover Bridge protocol. |
 | 2. | Ethereum SPV API | Go | A back-end service for fetching merkle path for transactions from Ethereum | 
-| 3. | Clover SPV API | Go | A back-end service for fetching merkle path for transactions from Frontier-powered parachains. | 
+| 3. | Clover SPV API | Go | A back-end service for fetching merkle path giveh transaction ID. | 
 | 4. | SPV Logic | Text/PDF | Documenting contract-wise logic for SPV verification. |  
 | 5. | Threshold PoC | Go | Delivering an inital version for the threshold logic. |
 
