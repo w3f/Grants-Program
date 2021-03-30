@@ -66,65 +66,43 @@ Founded by a US PhD team, more than 70% of the team members have a Master degree
 ### Team Code Repos
 * https://github.com/CraftingFinance
 
-## Development Status :open_book: 
-
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/General-Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
-
 ## Development Roadmap :nut_and_bolt: 
 
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that the scope of the work can fit within a three-month period and that teams structure their roadmap as 1 milestone ≈ 1 month. 
-
-For each milestone,
-
-* make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we have created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* include the amount of funding requested _per milestone_.
-* include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-* provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-* commit to providing Dockerfiles for the delivery of your project. 
-* indicate milestone duration as well as number of full-time employees working on each milestone, and include the approximate number of days along with the cost per day.
-* _Deliverables 0a-0d are mandatory_ and shall not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
-* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-Time Equivalent (FTE):**  Required workload of a full-time employee for the whole project (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-* **Total Costs:** Amount of payment in USD for the whole project. The total amount of funding _needs to be below $30k for initial grants_ and $100k for follow-up grants. (e.g. 12,000 USD)
+* **Total Estimated Duration:** 3 months
+* **Full-Time Equivalent (FTE):**  4 FTE
+* **Total Costs:** 0.3 BTC
 
-### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
-* **FTE:**  2
-* **Costs:** 8,000 USD
+### Milestone 1 Example — Forging Synthetic Assets(MintR)
+* **Estimated Duration:** 1.5 month
+* **FTE:**  3 FTE
+* **Costs:** 0.15 BTC
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how forging synthetic assets. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 0d. | Article/Tutorial | We will publish an article/tutorial/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
+| 1. | Substrate pallet: MintR | We will create a Substrate pallet that will realize the functions of staking CRF, DOT, KSM, BTC and ETH, forging synthetic assets, including stablecoins (RaftStable) and custom synthetic assets (UnivRaft). |
+| 2. | Substrate front end | MintR pallet will interact in substrate-front-end-template. |
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 Example — DEX (Kingsman)
 
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 4,000 USD
+* **Estimated Duration:** 2 month
+* **FTE:**  3 FTE
+* **Costs:** 0.15 BTC
 
-...
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how forging synthetic assets. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
+| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
+| 1. | Substrate pallet: Kingsman | We will create a Substrate pallet that will realize the trading function on Substrate front end, allowing users to freely trade various synthetic assets. |
+| 2. | Substrate pallet: Collateral Pool | We will create a Substrate pallet that will realize the collateral pool function. When a user newly generates or destroys rUSD, the debt ratio is re-determined, and the user's profit is calculated based on the change in asset prices. |
+| 3. | Substrate front end | Kingsman pallet will interact in substrate-front-end-template. |
 
 
 ## Future Plans
