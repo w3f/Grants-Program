@@ -34,7 +34,7 @@ Project Details
 
 #### FDN
 
-FindData Network tokenloosely represent the value of theFindDatanetwork.
+FindData Network token loosely represent the value of the FindDatanetwork.
 
 Any FindData economy that participates in data-related activities will receive the token. Contains the following economic behaviors: server contribution, proxy IP, bandwidth, collection rule algorithm, data contribution.
 
@@ -46,7 +46,7 @@ Initial tokens can be obtained by providing liquidity through Trands mining, or 
 
 Smarter
 
-By optimizing acquisition rules algorithm,make the system become more effective and the value of diversity, smarter algorithm, submitted will be graded by the dao commission approved online, after the adoption of the new node algorithm, obtained data mining will get more benefit, smarter reward will be Token by using the algorithm of node to transfer5% of the distribution.
+By optimizing acquisition rules algorithm,make the system become more effective and the value of diversity, smarter algorithm, submitted will be graded by the dao commission approved online, after the adoption of the new node algorithm, obtained data mining will get more benefit, smarter reward will be Token by using the algorithm of node to transfer 5% of the distribution.
 
 ### Pools
 
@@ -60,7 +60,7 @@ DataSwap is a distributed big data trading center established on Substrate. The 
 
 ### Token Distribution
 
-1 billion FDNs will be issued, 100 million forLiquiditymanagement, 220 million for team motivation,180 million for early investors, 350 million for node rewards, and150 millionfor community governance. Theforthyear began to issue8%, thefifithyear to issue7%... Up to the tenth year of3% additional issue, thereafter each year3% additional issue, part of the additional issue as a nodal award issued.
+1 billion FDNs will be issued, 100 million forLiquiditymanagement, 220 million for team motivation,180 million for early investors, 350 million for node rewards, and150 millionfor community governance. Theforthyear began to issue 8%, thefifithyear to issue 7%... Up to the tenth year of3% additional issue, thereafter each year 3% additional issue, part of the additional issue as a nodal award issued.
 
 ### Ecosystem Fit
 
