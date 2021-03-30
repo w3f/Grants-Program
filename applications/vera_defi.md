@@ -70,7 +70,8 @@ Michael Arbach:
 
 Completed project 
 
-* bitrail.io
+* [bitrail.io](https://www.bitrail.io/)
+* [https://gpk.market/market](https://gpk.market/market)
 * http://wego.network
 * KodakCoin
 * Blockchain based IoT POC for Daikin
@@ -103,12 +104,6 @@ Continue the development of the asset manager, build LoanManager, ExchangeManger
 * **FTE:**  1.5
 * **Costs:** 12,000 USD/DAI
 
-#### Non Fungible Token
-
-Continue the development of our NFT,  
-- research and implement attributes and functionalities to link Token to 
-real assets, such as hash or signature of scan of Art, and other proprietary techniques.  
-- Add support for perpetual royalties to original creator
 
 
 #### NFT Exchange
@@ -205,13 +200,12 @@ This function can be called by a borrower to expire a non fulfilled loan to reco
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicensed |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 1. | Non Fungible Token | Continue the development of our NFT, as described above |
-| 2. | NFT Lending | Continue the development of our PoC AssetManager contract in Ink to enhance the functionality to fully support the first phase of the user interface. Described above. |  
-| 3. | ExchangeManager | Build exchange manager to enable non custodial buy/sell of NFT, described above. |  
-| 4. | UI/Design | Design UI based on the phase [wireframe](https://balsamiq.cloud/sa6mpd1/pvn6rks/r5D27). |  
-| 5. |User Interface | Build the UI on top of the smart contract functionalities and  based on the design |  
-| 6. | Docker | We will provide a dockerfile to demonstrate the full functionality of the application |  
-| 7. | Article | We will write an article or tutorial that explains the work done as part of the grant. |
+| 1. | NFT Lending | Continue the development of our PoC AssetManager contract in Ink to enhance the functionality to fully support the first phase of the user interface. Described above. |  
+| 2. | ExchangeManager | Build exchange manager to enable non custodial buy/sell of NFT, described above. |  
+| 3. | UI/Design | Design UI based on the phase [wireframe](https://balsamiq.cloud/sa6mpd1/pvn6rks/r5D27). |  
+| 4. |User Interface | Build the UI on top of the smart contract functionalities and  based on the design |  
+| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of the application |  
+| 6. | Article | We will write an article or tutorial that explains the work done as part of the grant. |
 
 
 
