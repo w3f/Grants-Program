@@ -73,7 +73,7 @@ Founded by a US PhD team, more than 70% of the team members have a Master degree
 * **Full-Time Equivalent (FTE):**  4 FTE
 * **Total Costs:** 0.3 BTC
 
-### Milestone 1 Example — Forging Synthetic Assets(MintR)
+### Milestone 1 — Forging Synthetic Assets(MintR)
 * **Estimated Duration:** 1.5 month
 * **FTE:**  3 FTE
 * **Costs:** 0.15 BTC
@@ -88,7 +88,7 @@ Founded by a US PhD team, more than 70% of the team members have a Master degree
 | 2. | Substrate front end | MintR pallet will interact in substrate-front-end-template. |
 
 
-### Milestone 2 Example — DEX (Kingsman)
+### Milestone 2 — DEX (Kingsman)
 
 * **Estimated Duration:** 2 month
 * **FTE:**  3 FTE
