@@ -4,7 +4,7 @@
 
 * **Project Name:** Clover Bridge
 * **Team Name:** Clover Bridge Team
-* **Payment Address:** bc1q3qtn5nhy2ytv5qs3d2d5uzf0394zag88thfl5m
+* **Payment Address:** 0xCA9373d5B8dA4a31aE186542B75540C18421C49B
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
@@ -132,18 +132,24 @@ This is the Clover-deployed peg out contract repo for tokenizing Ether and ERC-2
 
 This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-20 assets back on Ethereum. This contract accepts SPV proofs from Clover (clover-spv-backend), along with respective notary proofs from Clover Bridge Contract (clover-bridge-contract).
 
+* https://github.com/clover-network/threshold-crypto
+
+Threshold R&D Repo
+
+
+
 
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  5.5
-* **Total Costs:** 0.51 BTC
+* **Total Costs:** 29,500 DAI
 
 ### April 15 Due Milestone
 * **Estimated Duration:** 1 month
 * **FTE:**  5.5
-* **Costs:** 0.17 BTC
+* **Costs:** 8,500 DAI
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
@@ -156,7 +162,7 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 ### May 15 Due Milestone
 * **Estimated Duration:** 1 month
 * **FTE:**  5.5
-* **Costs:** 0.17 BTC
+* **Costs:** 8,500 DAI
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
@@ -171,7 +177,7 @@ This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-2
 ### June 15 Due Milestone
 * **Estimated Duration:** 1 month
 * **FTE:**  5.5
-* **Costs:** 0.17 BTC
+* **Costs:** 12,500 DAI
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
