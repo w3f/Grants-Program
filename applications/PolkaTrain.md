@@ -10,13 +10,19 @@
 
 Polkatrain is a decentralized fund-raising paltform that gives more opportunities to blockchain participates by Polkadot which enable developers to boost projects in Polkadot ecology both in finance and marketing.
 
-Polkatrain will connect with smart contract on Polkadot one day as soon as it is born in blockchain world.
+In the future,Polkatrain will transfer to plasm on Polkadot some day.
 
 The DOT one project raised on Polkatrain could be managed by at least three representers they voted in community to multi- sign the DOT address.Teams monitoring by community with finance needs application every time and then the representers multi-sign and release DOT to them.This is call Entrust Plan to enhance trust to projects from investors in community.
 
 
 Polkatrain connects developers, investors and fans in polkadot community, it helps developers to launch their projects on polkadot easily by raising fund and marketing for projects. Also,Polkatrain will make public relationship with Polkadot ecology tools, communities and medium to help projects on Polkatrain develop better.
 
+The difference between Polkatrain and Polkastarter is as fellowing,
+1.Polkatrain is based on BSC now and it will transfer to plasm on Polkadot one day,while Polkastarter is bases on Ethreum network.
+2.Projects on Polkatrain do IDO by DOT,while Polkastarter uses ETH to do IDO for project.
+3.The gas fee on Polkatrain is much cheaper than Polkastarter.
+4.The net work speed is much faster than Polkastarter since Polkatrain is not base on Ethreum network.
+5.There are entust plan recommended by Polkatrain to  let at least three representers the project voted in community to multi- sign the DOT address,in order to manage the use of the fund raised by DOT more transpanrent and make community members trust the project more.
 
 ### Project Details
 
@@ -63,6 +69,7 @@ DOT/KSM in the future without trusting that Polkastarter will exist.
 - Developer
 - Volunteer
 - Volunteer
+ For some legal problem in special area,the team member would not like to let their personal experience know to public.
 
 ### Contact
 
