@@ -40,9 +40,9 @@ Any FindData economy that participates in data-related activities will receive t
 
 ### Contract
 
-Minner
+Miner
 
-Initial tokens can be obtained by providing liquidity through Trands mining, or tokens can be purchased through transactions. They can be pledged to the FindData network and become operational nodes. The FindData Robot can be deployed in its own network and contribute servers, proxy IP and bandwidth to carry out big data mining so as to obtain effective data and get Token rewards. Minner takes the data and makes it available for his own use, or hashes it up to DataWap and trades it so that more people can download the data.
+Initial tokens can be obtained by providing liquidity through Trands mining, or tokens can be purchased through transactions. They can be pledged to the FindData network and become operational nodes. The FindData Robot can be deployed in its own network and contribute servers, proxy IP and bandwidth to carry out big data mining so as to obtain effective data and get Token rewards. Miner takes the data and makes it available for his own use, or hashes it up to DataWap and trades it so that more people can download the data.
 
 Smarter
 
