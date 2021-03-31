@@ -98,11 +98,11 @@ Completed project
 Continue the development of the asset manager, build LoanManager, ExchangeManger
 * **Total Estimated Duration:** 8 weeks
 * **Full-time equivalent (FTE):**  1.5 FTE
-* **Total Costs:**  12,000 DAI
+* **Total Costs:**  6,000 DAI
 ### Milestone 1 — Build Vera DeFi V1
 * **Estimated Duration:** 8 weeks 
 * **FTE:**  1.5
-* **Costs:** 12,000 USD/DAI
+* **Costs:** 6,000 USD/DAI
 
 
 
