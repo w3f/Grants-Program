@@ -258,3 +258,11 @@ At present, we have developed some prototype systems based on other public chain
 
 ## Additional Information :heavy_plus_sign: 
 
+## References
+
+<div id="refer-anchor-1"></div>
+- [1] [AWS Redshift Spectrum pricing](https://aws.amazon.com/redshift/pricing/#Redshift_Spectrum_pricing)
+<div id="refer-anchor-2"></div>
+- [1] [AWS Data Exchange Subscription](https://aws.amazon.com/data-exchange/faqs/#Subscriber)
+<div id="refer-anchor-3"></div>
+- [1] [Google FL: One High Quanlity Dataset Distributed across millions of Phones](https://ai.googleblog.com/2017/04/federated-learning-collaborative.html)
