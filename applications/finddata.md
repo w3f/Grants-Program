@@ -28,7 +28,7 @@ The obtained data can be hashed on the blockchain and traded on the blockchain a
 
 FindData is composed of a distributed data acquisition engine and a trading center on the big data chain. The data in the real world are mined and analyzed to form valuable assets, which can be bought and sold freely on the chain. The behaviors and values in the economy are linked by tokens.
 
-Project Details
+## Project Details
 
 ### Token
 
