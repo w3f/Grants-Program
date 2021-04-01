@@ -143,6 +143,17 @@ If the data owner could not guarantee the data availability, including the data 
     }
     ...
 ```
+#### Task Oracle
+
+![图片](https://github.com/datadex-trade/Documents/blob/main/taskoracle.png?raw=true)
+
+* **TaskMaster** is the task queue as pallets on chain which could be leveraged for Task scheduling. 
+* **TaskExecutor** is an off-chain node for task execution, which would be deployed through locality within data graph chunk data on each user device.
+* **DataCheckerNode** is a data monitoring node that guarantees permission checking and data availability.
+* **Graph Raw Data** is the chunk data identified by each user, to make user data only could be stored in user edge device.
+
+Based on the architecture, computing tasks could process data on user devices, and Checking Task could also check data graph for legality of registration request.
+
 #### Simple orchestration flow
 
 ![图片](https://github.com/datadex-trade/Documents/blob/main/DataDEXflow.png?raw=true)
