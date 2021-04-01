@@ -105,10 +105,16 @@ After establishing the underlying infrastructure, we hope to serve the Polkadot 
 - Hairu: Senior backend developer with over 10 years experience.
 
 ### Team Code Repos
-https://github.com/Sukhavati-Labs
 
-The above is our github organization account. But due to some restrictions, Sukhavati Network related codes will not be open-sourced until our mining devices start shipping to miners, which is expected in mid-2021. All developments within this proposal will be open-sourced from day one and licensed under the Apache License 2.0.
+https://github.com/Sukhavati-Labs/go-miner
 
+https://github.com/Sukhavati-Labs/go-wallet
+
+https://github.com/Sukhavati-Labs/web-wallet
+
+https://github.com/Sukhavati-Labs/skt-data
+
+https://github.com/Sukhavati-Labs/explorer
 
 ## Development Roadmap :nut_and_bolt: 
 
