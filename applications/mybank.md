@@ -8,8 +8,6 @@
 
 ## Project Overview 
 
-
-
 ### Overview
 
 MyBank is a decentralized financial platform based on Polkadot, aiming to establish a blockchain network that realizes asset appreciation and promotes asset flow. MyBank is divided into three parts: Platform Bank, Social Network Bank and MyDeX.
@@ -21,8 +19,6 @@ MyBank is a decentralized financial platform based on Polkadot, aiming to establ
 
 
 ### Project Details
-
-
 
 #### Platform Bank
 
@@ -40,7 +36,7 @@ In the future, we will expand Platform Bank to support credit loans. We will dev
 
 ![Features split 01](https://tva1.sinaimg.cn/large/008eGmZEgy1gp58tf40msj30nw0i6tam.jpg)
 
-##### 
+
 
 Platform Bank supports multi-currency digital assets as collateral for loans or guarantees. Each type of asset corresponds to different risk parameters according to its risk coefficient. In the future, MB Token holders can vote on the adjustment of the parameters, and the proposal passed by the referendum will be automatically executed by substrate runtime.
 
@@ -145,8 +141,6 @@ At present, there is no similar product to Social Network Bank(SNB) in the marke
 
 ## Team
 
-
-
 ### Team Members
 
 - [Amos](https://github.com/ziwenxie) - Full-stack Developer
@@ -213,7 +207,7 @@ Currently, we have finished the basic lending pallets. Starting from April 4, 20
 
 - **Total Estimated Duration:** 1.5 months
 - **Full-time equivalent (FTE):** 3
-- **Total Costs:** 12000 DAI
+- **Total Costs:** 8000 DAI
 
 
 
@@ -229,11 +223,13 @@ Currently, we have finished the basic lending pallets. Starting from April 4, 20
 | 2.     | Front End Of Platform Bank   | Complete the development of the platform bank interactive page in react.  The interface will be available in Chinese as well as English. |
 | 3.     | Docker Image                 | We will provide a dockerfile to demonstrate the full functionality of our chain. |
 
+
+
 ### Milestone 2 — Implement MyDeX
 
 - **Total Estimated Duration:** 0.5 months
 - **Full-time equivalent (FTE):** 1
-- **Total Costs:** 4000 DAI
+- **Total Costs:** 2000 DAI
 
 
 
