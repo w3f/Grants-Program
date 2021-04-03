@@ -9,7 +9,7 @@
 
   IPS aims to build a public chain with storage capablity. The public chain will be a kind of P2P model with allow people could provide their spare hardware resoure to earn money. Meanwhile customers could get storage with lower cost. 
   
-  IFS is a high-performance public chain built against P2P distributed storage. P2P distributed storage not only provides a safe, reliable, and low-cost storage platform. Anyone can freely use the P2P distributed storage provided by IPS while defining smart contracts. IPS aims to achieve efficient node governance on the chain based on multi-chain and multi-consensus, combined with verifiable storage proof and token economy. The goal of IPS is to build a new type of distributed encrypted storage network, provide users with efficient storage services, and build a functionally-rich distributed application (DApp) on the chain on this basis.
+  IPS is a high-performance public chain built against P2P distributed storage. P2P distributed storage not only provides a safe, reliable, and low-cost storage platform. Anyone can freely use the P2P distributed storage provided by IPS while defining smart contracts. IPS aims to achieve efficient node governance on the chain based on multi-chain and multi-consensus, combined with verifiable storage proof and token economy. The goal of IPS is to build a new type of distributed encrypted storage network, provide users with efficient storage services, and build a functionally-rich distributed application (DApp) on the chain on this basis.
   
   IPS will integrate with Substrate then join the Polkadot as a Parachain.
   
