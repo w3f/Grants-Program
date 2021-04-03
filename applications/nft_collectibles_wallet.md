@@ -7,13 +7,11 @@
 
 ## Project Overview :page_facing_up: 
 
-The `NFT Collectibles Wallet` is a multi-chain non-custodial mobile wallet which will allow users to claim, store and manage an unlimited number of NFTs from any Substrate based blockchain. This project will consist of 3 major parts: the mobile wallet for users, the nft-wallet-pallet for Substrate developers and the javascript sdk for front-end developers to create NFT management UI.
+The `NFT Collectibles Wallet` is a multi-chain non-custodial mobile wallet which will allow users to claim, store and manage an unlimited number of NFTs from any Substrate based blockchain. This project will consist of 2 major parts: the mobile wallet for users and the javascript sdk for front-end developers to create NFT management UI.
 
 <u>**Users:**</u> By scanning QR codes, users will be able to claim NFTs into their wallet. These NFTs can be consumed (burned), listed for sale or sent to others. Users will also have the ability to mint NFTs from within the mobile app. The mobile app will be downloadable from Apple's App Store and Google's Play Store.
 
-<u>**Substrate developers:**</u> By adding the `nft-wallet-pallet` to their substrate runtime, developers will allow the NFT Collectibles Wallet to connect to their blockchain. The pallet will expose an interface for the wallet to manage NFTs.
-
-<u>**Front-end developers:**</u> By using the `nft-wallet-javascript-sdk`, javascript developers can create a UI for creating new NFTs. This javascript sdk will be able to connect to any substrate node using the `nft-wallet-pallet` 
+<u>**Front-end developers:**</u> By using the `nft-wallet-javascript-sdk`, javascript developers can create a UI for creating new NFTs. This javascript sdk will be able to connect to any substrate node via Polkadot.js.
 
 
 ### Overview
@@ -21,9 +19,6 @@ The `NFT Collectibles Wallet` is a multi-chain non-custodial mobile wallet which
 The reason we are creating the NFT Collectibles Wallet is to allow users of GamePower Network (https://www.gamepower.network) to claim NFTs from games published on the platform. We could have made the wallet closed sourced such as other projects (Enjin Wallet), but we decided since we are the new kids on the block, it is better for us to contribute to the Substrate/Polkadot/Kusama community. That is what excites us so much about this project.
 
 Our team is very passionate about gaming and NFTs. We believe the use case for NFTs in gaming is one of the most valuable in crypto right now. The problem we see with NFTs is that explaining NFTs to the general consumer and giving them a streamlined and friendly place to use those NFTs is lacking. We want to solve this with the NFT Collectibles Wallet.
-
-By allowing Substrate developers to integrate our module into their runtime, they can also take advantage of this wallet and offers users of their blockchain the same streamlined experience we will offer users for the GamePower Network.
-  
    
 
 ### Project Details 
@@ -40,45 +35,6 @@ Mobile Stack:
 A mockup of our mobile wallet UI. This mockup outlines the wallet creation, QR scanning and collectibles viewer.
 ![img](https://github.com/GamePowerNetwork/nft-collectibles-wallet/raw/open-grant/images/Mobile_App_Wireframe.png)
 
-- **Substrate Pallet Details:**
-
-The `nft-wallet-pallet` will use ORML (open runtime modules library: https://github.com/open-web3-stack/open-runtime-module-library) which will provide us with some underlying NFT code. The pallet will also talk to the balances pallet to handle any minting and consuming which is needed since each NFT is minted with a type of currency native to the blockchain it is on.
-
-Substrate Stack:
-- Substrate
-- ORML
-
-A diagram showing how different parts of the substrate runtime will work with the `nft-wallet-pallet`
-![img](https://github.com/GamePowerNetwork/nft-collectibles-wallet/raw/open-grant/images/Network_Diagram.png)
-
-```rust
-// mint an NFT Collection
-fn mint_collection(origin, name: Vec<u8>, issuer: AccountId, symbol: Vec<u8>, metadata: Hash, mint_cost: T::Balance) -> Result;
-
-// mint an NFT
-fn mint_nft(origin, collection: Hash, name: Vec<u8>, transferable: bool, metadata: Hash) -> Result;
-
-// send an NFT to a recipient
-fn send(origin, id: Hash, recipient: AccountId) -> Result;
-
-// change the owner of the collection
-fn change_issuer(origin, id: Hash, new_issuer: AccountId) -> Result;
-
-// consume the NFT with a short reason used by dapps
-fn consume(origin, id: Hash, reason: Vec<u8>) -> Result;
-
-// list an NFT for sale
-fn list(origin, id: Hash, price: T::Balance) -> Result;
-
-// buy a listed NFT
-fn buy(origin, id: Hash, list_price: T::Balance) -> Result;
-
-// add an emote to the NFT (for social)
-fn emote(origin, id: Hash, emote: Vec<u8>) -> Result;
-
-// allows a user to claim a minted NFT
-fn claim(origin, id: Hash) -> Result;
-```
 
 - **Javascript SDK Details:**
 
@@ -96,7 +52,7 @@ Mockup of the admin frontend.
 
 The NFT Collectibles Wallet provides the ecosystem with a streamlined and standard way to create, manage and exchange NFTs. By allowing the wallet to connect to any substrate based chain, users can freely move around the ecosystem without downloading multiple wallets for each chain, while still having a wallet that focuses specifically on collectibles.
 
-The NFT Wallet and Pallet uses the RMRK NFT standard (https://rmrk.app/#standards). However the NFT Wallet project can potentially support other standards such as the new Enjin initiative on the Polkadot ecosystem.
+The NFT Wallet uses the RMRK NFT standard (https://rmrk.app/#standards). However the NFT Wallet project can potentially support other standards such as the new Enjin initiative on the Polkadot ecosystem.
 
 Our target audience is 3-fold: The everyday consumer that wants to manage their NFTs, The Substrate blockchain developer that wants to connect to the NFT Collectibles Wallet to offer NFTs on their blockchain and finally Dapp developers who want to offer their users NFTs through QR codes.
 
@@ -141,23 +97,9 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 3 months
+* **Total Estimated Duration:** 2 months
 * **Full-Time Equivalent (FTE):**  2.1 FTE
-* **Total Costs:** 25,000 USD
-
-### Milestone 1 — Implement NFT Wallet Pallet 
-* **Estimated Duration:** 5 weeks
-* **FTE:**  1
-* **Costs:** 10,000 DAI
-
-| Number | Deliverable             | Specification |
-| -----: | ----------------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 0d. | Article/Tutorial | We will publish an article/tutorial that explains how to build and run the substrate based project containing the nft-wallet-pallet.
-| 1. | nft-wallet-pallet | We will create a Substrate module that will allow an NFT to be (minted, consumed, listed, traded, purchased). NFT collections can also be created or ownership exchanged. module methods are listed in the diagram above. |  
-| 2. | Substrate Test Chain | users can interact with the nft-wallet-pallet module through a simple substrate barebones setup.  |  
+* **Total Costs:** 15,000 USD
 
 
 ### Milestone 2 — Build NFT Collectibles Wallet Mobile App
@@ -200,9 +142,9 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 
 ## Future Plans
 
-This NFT Collectibles Wallet will be used as part of the GamePower Network. GamePower will operate on the Polkadot platform and will be the first application of it's kind that delivers decentralized game publishing. GamePower will use the NFT Collectibles Wallet to allow users of GamePower to store NFTs purchased or earned through GamePower either in a game or through the GamePower NFT marketplace.
+This NFT Collectibles Wallet will be used as part of the GamePower Network. GamePower will operate on the Kusama and Polkadot platform and will be the first application of it's kind that delivers decentralized game publishing. GamePower will use the NFT Collectibles Wallet to allow users of GamePower to store NFTs purchased or earned through GamePower either in a game or through the GamePower NFT marketplace.
 
-However, Development of the NFT Collectibles Wallet won't end after all milestones are met. We plan to add features such as Minting NFTs from within the application by users, A way for the app to discover blockchains using the `nft-wallet-pallet` on its own (maybe through ipfs). There are endless possibilities where this wallet can go and we are very excited to get started on it!
+However, Development of the NFT Collectibles Wallet won't end after all milestones are met. We plan to add features such as Minting NFTs from within the application by users, A way for the app to automatically discover blockchains using NFTs on its own (maybe through some type of registry). There are endless possibilities where this wallet can go and we are very excited to get started on it!
 
 
 ## Additional Information :heavy_plus_sign: 
