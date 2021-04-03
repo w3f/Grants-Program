@@ -64,15 +64,16 @@ We have many years of experience in Solidity contract development, familiar with
 * **FTE:**  2 FTE
 * **Costs:** 3,000 USD/DAI
 
-In this milestone, We will implement Internft Network CCP proof-of-concept, a bridge contract and NFT node running CCP.
+In this milestone, We will implement Internft Network CCP proof-of-concept, Including bridge contracts, relayer, NFT node running CCP and the front end for transferring NFT assets across blockchains.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | bridge contract | bridge pallet in Substrate, bridge contract in Ethereum, locks the NFT asset on the chain where the original asset resides and casts the corresponding NFT asset on the other chain|
-| 2. | CCP | Listen for NFT asset transfer events and route to destination chain，CCP is written in golang|
-| 3. | Front end | Complete the development of the basic interactive page for cross-chain NFT migration|
-| 4. | Testing | This milestone will have unit-test for pallet impemented, simulated all functions|
-| 5. | Documentation | We will provide design documents and demo videos|
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | The documentation will be provided to show the whole design documents and demo video|
+| 0c. | Testing Guide | This milestone will have unit-test for pallet impemented, simulated all functions|
+| 1. | Bridge contract | bridge pallet in Substrate, bridge contract in Ethereum, locks the NFT asset on the chain where the original asset resides and casts the corresponding NFT asset on the other chain|
+| 2. | Relayer | Listen for NFT asset transfer events and route to destination chain，relayer is written in golang|
+| 3. | Front end | Complete the development of the basic interactive page for cross-chain NFT migration, the specific page can refer to: [https://www.figma.com/file/Z1Mdrm0p6XXkeV0QXOeiIu/front-end](https://www.figma.com/file/Z1Mdrm0p6XXkeV0QXOeiIu/front-end) |
 
 
 ## Future Plans
