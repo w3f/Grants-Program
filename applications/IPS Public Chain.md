@@ -1,27 +1,12 @@
 # W3F Open Grant Proposal
 
-> 🌏 This page is also available in [Chinese (中文)](./application-template-cn.md).
-> 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
-> 
-> See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/#pencil-process) on how to submit a proposal.
-
 * **Project Name:** IPS Public Chain
-* **Team Name:IPS
-* **Payment Address: BTC:3Au6iWhC3c3DfTT76upm3jGLd6Ra5Gk1CX    DAI:0xFe70C536D0479EF64512221a78F6AF75fE6E428d
+* **Team Name:**　IPS
+* **Payment Address:** BTC:3Au6iWhC3c3DfTT76upm3jGLd6Ra5Gk1CX    DAI:0xFe70C536D0479EF64512221a78F6AF75fE6E428d
 
-
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-
-## Project Overview :page_facing_up: 
-
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
 
 ### Overview
 
-Please provide the following:
   IPS aims to build a public chain with storage capablity. The public chain will be a kind of P2P model with allow people could provide their spare hardware resoure to earn money. Meanwhile customers could get storage with lower cost. 
   
   IFS is a high-performance public chain built against P2P distributed storage. P2P distributed storage not only provides a safe, reliable, and low-cost storage platform. Anyone can freely use the P2P distributed storage provided by IPS while defining smart contracts. IPS aims to achieve efficient node governance on the chain based on multi-chain and multi-consensus, combined with verifiable storage proof and token economy. The goal of IPS is to build a new type of distributed encrypted storage network, provide users with efficient storage services, and build a functionally-rich distributed application (DApp) on the chain on this basis.
@@ -39,7 +24,7 @@ IPS will provide a variety of infrastructures for all participants:
  - Digital currency based on decentralization and interconnection.
 
 The architecture of the IPS is as below
-
+![image](https://user-images.githubusercontent.com/81816454/113471185-a9847400-9495-11eb-8b91-415a656379ec.png)
 
 ### Ecosystem Fit 
 
