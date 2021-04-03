@@ -3,7 +3,7 @@
 * **Project Name:** IPS Public Chain
 * **Team Name:**　IPS
 * **Payment Address:** BTC:3Au6iWhC3c3DfTT76upm3jGLd6Ra5Gk1CX    
-* 　　　　　　　　　　　　DAI:0xFe70C536D0479EF64512221a78F6AF75fE6E428d
+* 　　　　　　　　　　DAI:0xFe70C536D0479EF64512221a78F6AF75fE6E428d
 
 
 ### Overview
