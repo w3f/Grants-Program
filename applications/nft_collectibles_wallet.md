@@ -97,7 +97,7 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 2 months
+* **Total Estimated Duration:** 7 weeks
 * **Full-Time Equivalent (FTE):**  2.1 FTE
 * **Total Costs:** 15,000 USD
 
