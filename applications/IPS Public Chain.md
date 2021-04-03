@@ -42,22 +42,20 @@ In addition, we could extend the Web3 ecosystem in Japan then other countries .
 * Sunny Watanabe - full stack engineer	
 
 ### Contact
-* **Contact Name: **Rie Miyazawa
+* **Contact Name:** Rie Miyazawa
 * **Contact Email:** riemiyazawa@bluecastle.jp
-* **Website:**http://www.bluecastle.jp/
+* **Website:** http://www.bluecastle.jp/
 
 ### Legal Structure 
 * **Registered Address:** ROAD CENTRAL HK
 * **Registered Legal Entity:** Blue Castle Inc.
 
 ### Team's experience
-Edward Nakamoto: More than 15 years of experience in financial system software research and development. Participated in the research and development of several large-scale financial software system architectures and foundations. In 2015, he began to participate in several blockchain POC projects, proficient in alliance chains, private chain design, and smart contract design. Now he focuses on the promotion of blockchain technology, commercial proposals and the implementation of blockchain projects.
-Rie Miyazawa: IT consultant, system architect, proficient in business proposals. Since 2013, it has developed blockchain products and designed ICO issuance. Served as chief researcher and lecturer of enterprise blockchain.
-Tom Sato: Internet full-stack engineer. Good at website development, mobile APP application development. Backend application, server settings.
-Peter Yokoyama: More than 20 years of system software research and development experience, familiar with a variety of open source software technologies. Focus on the development of Internet application systems. We have rich experience in research and development on the front-end, mobile and back-end of WEB.
-Sunny Watanabe：15 years of experience in the design and actual construction of platform architecture for large-scale systems. Obsessed with open source software technology. Served as a technical partner of an electronic music sharing community. Rich practical experience in application development.
-
-### Team Code Repos
+* Edward Nakamoto: More than 15 years of experience in financial system software research and development. Participated in the research and development of several large-scale financial software system architectures and foundations. In 2015, he began to participate in several blockchain POC projects, proficient in alliance chains, private chain design, and smart contract design. Now he focuses on the promotion of blockchain technology, commercial proposals and the implementation of blockchain projects.
+* Rie Miyazawa: IT consultant, system architect, proficient in business proposals. Since 2013, it has developed blockchain products and designed ICO issuance. Served as chief researcher and lecturer of enterprise blockchain.
+* Tom Sato: Internet full-stack engineer. Good at website development, mobile APP application development. Backend application, server settings.
+* Peter Yokoyama: More than 20 years of system software research and development experience, familiar with a variety of open source software technologies. Focus on the development of Internet application systems. We have rich experience in research and development on the front-end, mobile and back-end of WEB.
+* Sunny Watanabe：15 years of experience in the design and actual construction of platform architecture for large-scale systems. Obsessed with open source software technology. Served as a technical partner of an electronic music sharing community. Rich practical experience in application development.
 
 
 ### Team LinkedIn Profiles
@@ -71,8 +69,8 @@ We just finished research and started the first phase of PoC.
 
 
 ### Overview
-* **Total Estimated Duration:** 3 months
-* **Full-Time Equivalent (FTE):**  15 FTE
+* **Total Estimated Duration:** 4 months
+* **Full-Time Equivalent (FTE):**  16.5 FTE
 * **Total Costs:** 100,000 USD
 
 ### Milestone 1  — IPS Mainnet development  
@@ -86,7 +84,7 @@ We just finished research and started the first phase of PoC.
 | 0b. | Documentation | We will provide inline documentation of the code that explains how the mainnet works|
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. | 
 | 0d. | Article/Tutorial | We will publish an article or tutorial that explains what was done/achieved as part of the grant |
-| 1. | IPS mainnet development |
+| 1. | IPS mainnet development | We will finish code of main functions of mainnet |  
 | 2. | Unit Test | We will conduct the unit test  |  
 | 3. | Integration Test | We will conduct integration test |  
 | 4. |  Testnet go live| We will setup IPS testnet for limited user test.  |
