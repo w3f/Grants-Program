@@ -30,11 +30,7 @@ Each user will maintain a social network circle of their own, and the friend rel
 
 
 
-In the future, we will expand Platform Bank to support credit loans. We will develop relevant DID modules and cooperate with offline institutions to authenticate users. Under the premise of satisfying identity authentication and credit score, users can make credit loans without collateral or guarantee. For credit loans, we will set a maximum percentage and use the insurance fund to handle unexpected situations. At the same time, we will also consider cooperating with relevant institutions to purchase relevant CDS(credit default swap) products and establish relevant institutions to sue for breach of contract. We will introduce the credit scoring system in detail below.
-
-
-
-![Features split 01](https://tva1.sinaimg.cn/large/008eGmZEgy1gp58tf40msj30nw0i6tam.jpg)
+![image-20210405120058333](https://tva1.sinaimg.cn/large/008eGmZEgy1gp8qgl27r4j310i0c2wfc.jpg)
 
 
 
@@ -43,6 +39,10 @@ Platform Bank supports multi-currency digital assets as collateral for loans or 
 - **Liquidation Ratio** Each loan that occurs in the PB will correspond to a collateral-to-debit ratio. Each type of asset will have a corresponding liquidation ratio according to its market value and volatility, and the system will monitor the collaterals-to-debit ratio of each loan. Once the collaterals-to-debit ratio is lower than the liquidation ratio, it will trigger liquidation behaviour. Assets with a higher risk coefficient usually correspond to a larger liquidation ratio and vice versa.
 - **Interest Rates** Determine the annualized rate of return of depositors, the borrowing cost of borrowers, and the size of the asset pool, and at the same time affect the risk of the system. The interest rate is determined by supply and demand. When the utilization rate of the asset pool is low, users will be encouraged to borrow through low-interest rates. When the utilization rate of the fund pool is high, the interest rate will increase to encourage users to repay the loan and attract depositors to provide liquidity to the asset pool through higher yields. Each asset pool will set a critical point, and the loan interest rate will increase faster after the utilization rate of the asset pool exceeds the critical point.
 - **Insurance Fund** MyBank has set aside a part of MB Token as insurance funds. When the Black Swan incident causes unexpected situations, MyBank will take part of the assets from the insurance fund to compensate users for losses. MyBank will charge depositors a certain percentage of handling fees and this part of funds will be combined with insurance funds.
+
+
+
+In the future, we will expand Platform Bank to support credit loans. We will develop relevant DID modules and cooperate with offline institutions to authenticate users. Under the premise of satisfying identity authentication and credit score, users can make credit loans without collateral or guarantee. For credit loans, we will set a maximum percentage and use the insurance fund to handle unexpected situations. At the same time, we will also consider cooperating with relevant institutions to purchase relevant CDS(credit default swap) products and establish relevant institutions to sue for breach of contract. We will introduce the credit scoring system in detail below.
 
 
 
@@ -60,7 +60,7 @@ Repayment of a loan will leave a record on the chain. Borrowers will have a grea
 
 
 
-![Features split 02](https://tva1.sinaimg.cn/large/008eGmZEgy1gp58t4efo4j30ng0gnjss.jpg)
+![img](https://tva1.sinaimg.cn/large/008eGmZEgy1gp8qba97zwj315r0u0q82.jpg)
 
 
 
@@ -86,12 +86,12 @@ At the same time, users can pledge the LP Token to become a liquidator in Platfo
 
 
 
+![image-20210405120006959](https://tva1.sinaimg.cn/large/008eGmZEgy1gp8qfozighj311m0tutad.jpg)
+
 MyDeX will integrate with Platform Bank to make it easier to short or long.
 
 - If a user is not optimistic that XToken will continue to rise in the future, he can choose to lend XToken at Platform Bank, then sell XToken in MyDeX to obtain stable coins, and redeem XToken to repay the loan when the price falls.
 - If a user is optimistic that XToken will continue to rise in the future, want to leverage. He can lends stable currency in Platform Bank, and then use the stable currency to obtain XToken in MyDeX, and sell XToken to redeem stable currency to repay the loan when the price rises.
-
-
 
 On the current Ethereum platform, if the above two operations are to be carried out, users need to jump and click multiple times between multiple DeFi products. On the front-end interactive page of MyBank, the above-mentioned operation users only need to click once, and the whole operation will be completed in one block, which is more convenient and has a faster execution speed.
 
@@ -185,11 +185,12 @@ https://github.com/mybank-network/mybank-network
 
 ## Development Status
 
-Currently, we have finished the basic lending pallets. Starting from April 4, 2021, users can test the lending app on our official website.
+Currently, we have finished the basic lending pallets.
 
 - Substrate Code Repo: https://github.com/mybank-network/mybank-network
+- Substrate Websocket Address: wss://app.mybank.network/substrate
 - Officail Website: https://mybank.network
-- Lending APP: https://app.mybank.network (2021-04-04)
+- Lending APP: https://app.mybank.network/mybank
 
 
 
@@ -199,7 +200,7 @@ Currently, we have finished the basic lending pallets. Starting from April 4, 20
 
 - **Total Estimated Duration:** 2 months
 - **Full-time equivalent (FTE):** 4
-- **Total Costs:** 16000 DAI
+- **Total Costs:** 10000 DAI
 
 
 
@@ -259,4 +260,4 @@ Currently, we have finished the basic lending pallets. Starting from April 4, 20
 
 ## Additional Information 
 
-We have just developed the first version of the [MyBank Network](https://github.com/mybank-network/mybank-network) and have not yet accepted external donations and financing.
+We have just developed the first version of the MyBank Network and have not yet accepted external donations and financing.
