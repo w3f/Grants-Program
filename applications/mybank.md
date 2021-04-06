@@ -1,4 +1,4 @@
-Open Grant Proposal
+# Open Grant Proposal
 
 - **Project Name:** MyBank Network
 - **Team Name:** MyBank Labs
