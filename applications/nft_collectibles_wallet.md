@@ -1,7 +1,7 @@
 # W3F Open Grant Proposal
 
 * **Project Name:** NFT Collectibles Wallet
-* **Payment Address:** 0x16D7A415040D52F2427C2b921dfC31829C0d17fc
+* **Payment Address (DAI):** 0x16D7A415040D52F2427C2b921dfC31829C0d17fc
 
 
 
@@ -102,7 +102,7 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 * **Total Costs:** 15,000 USD
 
 
-### Milestone 2 — Build NFT Collectibles Wallet Mobile App
+### Milestone 1 — Build NFT Collectibles Wallet Mobile App
 
 * **Estimated Duration:** 4 weeks
 * **FTE:**  1
@@ -122,7 +122,7 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 | 6. | implement NFT claim screen | After scanning a QR code the user will be taken to a screen to confirm if they want to claim the NFT. From here a transaction is made for the claim. |
 | 7. | write tests | Tests will need to be written for each view. |
 
-### Milestone 3 — Build Javascript SDK and Admin Frontend
+### Milestone 2 — Build Javascript SDK and Admin Frontend
 
 * **Estimated Duration:** 3 weeks
 * **FTE:**  0.5
