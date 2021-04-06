@@ -104,38 +104,22 @@ As a collective, the founding team has been working together for a almost about 
 Within the team, Burak and Viven have known each other for 4 years and have worked together on a number of projects. Mehmet and Suleyman on the pther hand have known each other for 10 years, and worked together on a number of projects while they were at TUBITAK BILGEM between 2010 and 2015. They have not only done several applied projects together but also published several papers together (see Google Scholar for their common academic papers). Mehmet is expert on cryptographic design, architecture (in particular, blockchain and cryptocurrencies, secure multi-party computation, homomorphic encryption, threshold cryptography, zero knowledge proofs (zkSNARKs and Bulletproofs)) and mathematical structures of cryptography, where Suleyman is experienced on cryptographic analysis as well as implementation aspects of cryptographic algorithms/protocols. Mehmet and Burak have known each other for 3 years, and worked together on a number of projects to date.
 
 ### Team Code Repos
+
 *	https://github.com/clover-network/clover-bridge-protocol
 
 This is the main repo for the n of m threshold protocol for notarising Ethereum and Clover block headers.
 
 *	https://github.com/clover-network/threshold-crypto
 
-This is the R&D repo for threshold signatures.
-
-* https://github.com/clover-network/clover-bridge-contract
-
-This is the repo for Clover-deployed bridge contract where block header submission, key update, signatory join request, and signatory leave request events take place. Clover Bridge Protocol writes and reads to and from this contract.
+Research and development repo for threshold signatures
 
 * https://github.com/clover-network/ethereum-spv-backend
 
-This API repo is for fetching merkle path (SPV proof) data from Ethereum.
+An API for fetching merkle path (SPV proof) data from Ethereum.
 
 * https://github.com/clover-network/clover-spv-backend
 
-This API repo is for fetching merkle path (SPV proof) data from Clover.
-
-* https://github.com/clover-network/clover-pegout-contract
-
-This is the Clover-deployed peg out contract repo for tokenizing Ether and ERC-20 assets on Clover. This contract accepts SPV proofs from Ethereum (ethereum-spv-backend), along with respective notary proofs from Clover Bridge Contract (clover-bridge-contract).
-
-* https://github.com/clover-network/ethereum-pegin-contract
-
-This is the Ethereum-deployed peg in contract repo for redeeming Ether and ERC-20 assets back on Ethereum. This contract accepts SPV proofs from Clover (clover-spv-backend), along with respective notary proofs from Clover Bridge Contract (clover-bridge-contract).
-
-* https://github.com/clover-network/threshold-crypto
-
-Threshold R&D Repo
-
+An API for fetching merkle path (SPV proof) data from Clover.
 
 
 
@@ -170,8 +154,6 @@ Threshold R&D Repo
 | 2. | Peg-out contract logic | Text/PDF | Documenting contract-wise logic for peg outs. |
 | 3. | Bridge contract logic | Text/PDF | Documenting contract-wise logic for bridge flow. |
 | 4. | Threshold MVP | Go | Delivering an MVP version of the threshold protocol. |
-| 5. | Contract SPV | Solidity | Contract-wise SPV verification.  |
-| 6. | Contract Threshold  | Solidity | Contract-wise threshold signature verification. |
 
 
 ### June 15 Due Milestone
@@ -181,11 +163,11 @@ Threshold R&D Repo
 
 | Number | Deliverable | Language/Framework | Specification |
 | ------------- | ------------- | ------------- | ------------- |
-| 1. | Signatory registery  | Go/Solidity | Contract-wise signatory registery flow. |
-| 2. | Signatory leave  | Go/Solidity | Contract-wise signatory leave flow. |
-| 3. | Key update  | Go/Solidity | Key update ceromony. |
-| 4. | Peg in contract | Solidity | Final delivery of peg in contract. |
-| 5. | Peg out contract | Solidity | Final delivery of peg out contract. |
+| 1. | Signatory registery  | Go | Contract-wise signatory registery flow. |
+| 2. | Signatory leave  | Go | Contract-wise signatory leave flow. |
+| 3. | Key update  | Go | Key update ceromony. |
+| 4. | Peg in | Go | Final delivery of peg in logic. |
+| 5. | Peg out | Go | Final delivery of peg out logic. |
 
 
 ## Future Plans
