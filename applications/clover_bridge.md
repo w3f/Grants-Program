@@ -31,7 +31,7 @@ We are using eliptic curve notation for the discrete logarithm problem, and a ve
 
 
 #### Architecture 
-[https://www.dropbox.com/s/z3o7l9tnd2fjue8/clover-bridge-threshold-signatures.pdf](https://www.dropbox.com/s/z3o7l9tnd2fjue8/clover-bridge-threshold-signatures.pdf)
+[https://clover.finance/techpaper.pdf](https://clover.finance/techpaper.pdf)
 
 ### Ecosystem Fit 
 Clover Bridge, whose key role is to bridge varios blockchains, aims to become a top-standard protocol that highly incentives users, developers, and upper-layer applications. We will establish a developer-centric community to encourage third party developers to utilize Clover Bridge for their decentralized applications. 
