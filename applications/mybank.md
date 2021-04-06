@@ -1,4 +1,4 @@
-# Open Grant Proposal
+Open Grant Proposal
 
 - **Project Name:** MyBank Network
 - **Team Name:** MyBank Labs
@@ -7,6 +7,8 @@
 
 
 ## Project Overview 
+
+
 
 ### Overview
 
@@ -20,6 +22,8 @@ MyBank is a decentralized financial platform based on Polkadot, aiming to establ
 
 ### Project Details
 
+
+
 #### Platform Bank
 
 Most DeFi lending products are based on the mortgage system. Users lend assets from the asset pool by mortgaging collateral. We try to go further on this pattern. While providing mortgage lending services, we will release the liquidity of the depositor's assets and provide zero mortgage services. Depositors can use their deposit certificates to guarantee loans for friends, and friends can make zero mortgage loans on the platform based on the guarantee certificates. During the guarantee process, the guarantor's deposits will continue to generate income and will not be affected.
@@ -28,9 +32,7 @@ Most DeFi lending products are based on the mortgage system. Users lend assets f
 
 Each user will maintain a social network circle of their own, and the friend relationship needs to be confirmed by both parties. When a user has a loan demand and wants to choose a zero-mortgage loan, he can send the loan event to his friend's inbox, and the friend can choose to respond to the event to guarantee him. After the guarantee is successful, the system will issue a loan to his friend, and the deposit certificate will be locked by the system. Before the borrower repays, unless the guarantor chooses to pay a certain amount of funds to redeem the deposit certificate, his deposit will not be withdrawn.
 
-
-
-![image-20210405120058333](https://tva1.sinaimg.cn/large/008eGmZEgy1gp8qgl27r4j310i0c2wfc.jpg)
+![img](https://tva1.sinaimg.cn/large/008eGmZEgy1gpa7eof5bfj310i0dqjsm.jpg)
 
 
 
@@ -42,7 +44,13 @@ Platform Bank supports multi-currency digital assets as collateral for loans or 
 
 
 
-In the future, we will expand Platform Bank to support credit loans. We will develop relevant DID modules and cooperate with offline institutions to authenticate users. Under the premise of satisfying identity authentication and credit score, users can make credit loans without collateral or guarantee. For credit loans, we will set a maximum percentage and use the insurance fund to handle unexpected situations. At the same time, we will also consider cooperating with relevant institutions to purchase relevant CDS(credit default swap) products and establish relevant institutions to sue for breach of contract. We will introduce the credit scoring system in detail below.
+We will expand Platform Bank to support credit loans. The user's social networks, deposit records, loan records, guarantee records, and transaction records will all be stored on the chain to form an anonymous credit scoring system. The credit data accumulated by users combined with offline governance has brought the possibility of developing credit loan business. Credit loans need a strong governance organization, relying on the relevant identity authentication system and legal system. In the first stage, the credit loan business will be launched through the Private Pool and will only be open to financial institutions and enterprises that have passed the off-chain review.
+
+
+
+Institutions can also pay a certain fee to create an independent Private Pool to develop loan business based on the infrastructure provided by MyBank. For example, the identity on the chain is an anonymous hash address. With the user's permission, the institution can verify the user's identity under the chain, and combine the credit score record to decide whether to issue a credit loan or mortgage loan to the user. The loan contract will be written to MyBank's distributed ledger. Loan records incurred by Private Pool can also be synchronized to the credit scoring system.
+
+![Arch](https://tva1.sinaimg.cn/large/008eGmZEly1gpa7gmhivlj30yu0ta40t.jpg)
 
 
 
@@ -58,9 +66,7 @@ Members can contribute deposits to the bank. The more deposits, the greater the 
 
 Repayment of a loan will leave a record on the chain. Borrowers will have a greater chance to obtain larger loans in the future, indirectly encouraging users to gradually accumulate their credit history. All behaviours will be recorded on the chain. Based on the external constraints of social networks, the default will affect the reputation of individuals in the real life. And borrowers will not be able to obtain loans from the bank in the future or it will become more difficult to borrow. Loans can be based on joint and several liabilities. If a person fails to repay the loan, the credit history of the members who guarantee or vote for it will also be affected. It may be regarded as a default, so the borrower's friends have an additional incentive to help the borrower.
 
-
-
-![img](https://tva1.sinaimg.cn/large/008eGmZEgy1gp8qba97zwj315r0u0q82.jpg)
+![Social Network Bank](https://tva1.sinaimg.cn/large/008eGmZEgy1gpa7i5g8xbj30zk0pkwl2.jpg)
 
 
 
@@ -84,14 +90,16 @@ Any user can inject funds into the asset pool to obtain the transaction fee inco
 
 At the same time, users can pledge the LP Token to become a liquidator in Platform Bank, and can easily capture the income brought by liquidation while obtaining the transaction fee income. When the liquidation is triggered, the borrower needs to pay a certain percentage of the penalty fee, and the liquidator will receive this penalty fee.
 
+![Leveraged Trading](https://tva1.sinaimg.cn/large/008eGmZEgy1gpa7j4u4yrj31260ju0u2.jpg)
 
 
-![image-20210405120006959](https://tva1.sinaimg.cn/large/008eGmZEgy1gp8qfozighj311m0tutad.jpg)
 
 MyDeX will integrate with Platform Bank to make it easier to short or long.
 
 - If a user is not optimistic that XToken will continue to rise in the future, he can choose to lend XToken at Platform Bank, then sell XToken in MyDeX to obtain stable coins, and redeem XToken to repay the loan when the price falls.
 - If a user is optimistic that XToken will continue to rise in the future, want to leverage. He can lends stable currency in Platform Bank, and then use the stable currency to obtain XToken in MyDeX, and sell XToken to redeem stable currency to repay the loan when the price rises.
+
+
 
 On the current Ethereum platform, if the above two operations are to be carried out, users need to jump and click multiple times between multiple DeFi products. On the front-end interactive page of MyBank, the above-mentioned operation users only need to click once, and the whole operation will be completed in one block, which is more convenient and has a faster execution speed.
 
@@ -141,6 +149,8 @@ At present, there is no similar product to Social Network Bank(SNB) in the marke
 
 ## Team
 
+
+
 ### Team Members
 
 - [Amos](https://github.com/ziwenxie) - Full-stack Developer
@@ -185,7 +195,7 @@ https://github.com/mybank-network/mybank-network
 
 ## Development Status
 
-Currently, we have finished the basic lending pallets.
+Currently, we have finished the basic lending pallets and deployed a test network in [polkadot.js](https://polkadot.js.org/apps).
 
 - Substrate Code Repo: https://github.com/mybank-network/mybank-network
 - Substrate Websocket Address: wss://app.mybank.network/substrate
@@ -198,31 +208,31 @@ Currently, we have finished the basic lending pallets.
 
 ### Overview
 
-- **Total Estimated Duration:** 2 months
-- **Full-time equivalent (FTE):** 4
+- **Total Estimated Duration:** 2.5 months
+- **Full-time equivalent (FTE):** 5
 - **Total Costs:** 10000 DAI
 
 
 
 ### Milestone 1 — Implement Platform Bank
 
-- **Total Estimated Duration:** 1.5 months
-- **Full-time equivalent (FTE):** 3
+- **Total Estimated Duration:** 2 months
+- **Full-time equivalent (FTE):** 4
 - **Total Costs:** 8000 DAI
 
 
 
-| Number | Deliverable                  | Specification                                                |
-| ------ | ---------------------------- | ------------------------------------------------------------ |
-| 0a.    | License                      | Apache 2.0                                                   |
-| 0b.    | Documentation                | The documentation will be given to show the whole architecture of the Platform Network. |
-| 0c.    | Testing Guide                | The testing guide will be provided to test pallets and the front-end. |
-| 1.a    | Substrate Module: Asset Pool | Realize the interface of deposit and debit. Support multi-currency lending. Automatically adjusts interest rates based on demand and supply. Support mortgage lending and guraantee lending. |
-| 1.b    | Subsrate Module: Oracle      | Oracle pallet exposes capabilities for authorized operators to feed external off-chain data. |
-| 1.c    | Substrate Module: Monitor    | Manage liquidation process(off-chain worker), risk parameters, auction(By DeX). |
-| 1.d    | Substrate Module: Incentive  | Users can receive MB token rewards for every block.          |
-| 2.     | Front End Of Platform Bank   | Complete the development of the platform bank interactive page in react.  The interface will be available in Chinese as well as English. |
-| 3.     | Docker Image                 | We will provide a dockerfile to demonstrate the full functionality of our chain. |
+| Number | Deliverable                                   | Specification                                                |
+| ------ | --------------------------------------------- | ------------------------------------------------------------ |
+| 0.     | License                                       | Apache 2.0                                                   |
+| 1.a    | Documentation                                 | The documentation will be given to show the whole architecture of the Platform Network. |
+| 1.b    | Testing Guide                                 | The testing guide will be provided to test pallets and the front-end. |
+| 2.a    | Substrate Module: Asset Pool                  | Realize the interface of deposit and debit. Support multi-currency lending. Automatically adjusts interest rates based on demand and supply. Support mortgage lending and guraantee lending. Implement Liqudation Module(off-chain worker). |
+| 2.b    | Substrate Module: User Profile & Credit Score | Generate user profiles based on the user's past deposit records, loan records, transaction records, and social networks. |
+| 2.c    | Substrate Module: Private Pool                | Users can apply to create an private pool and inject liquidity to develop loan business. |
+| 2.d    | Substrate Module: Social Network              | Users can friend someone on PB and send a guarantee request to a friend. |
+| 3.     | Front End Of Platform Bank                    | Complete the development of the platform bank interactive page in react.  The interface will be available in Chinese as well as English. |
+| 4.     | Docker Image                                  | We will provide a dockerfile to demonstrate the full functionality of our chain. |
 
 
 
@@ -234,15 +244,15 @@ Currently, we have finished the basic lending pallets.
 
 
 
-| Number | Deliverable                  | Specification                                                |
-| ------ | ---------------------------- | ------------------------------------------------------------ |
-| 0a.    | License                      | Apache 2.0                                                   |
-| 0b.    | Documentation                | The documentation will be given to show the whole architecture of the MyDeX. |
-| 0c.    | Testing Guide                | The testing guide will be provided to test pallets and the front-end. |
-| 1.a    | Substrate Module: Swap       | A decentralized AMM protocol that is used to swap tokens. Users can set the maximum slippage tolerance. Support users to participate in the liquidation of Platform Bank. |
-| 1.b    | Integrate with Platform Bank | Users can be more convenient to short and carry out margin trading. |
-| 2.     | Front End Of MyDeX           | Complete the development of the dex interactive page in react. The interface will be available in Chinese as well as English. |
-| 3.     | Docker Image                 | We will provide a dockerfile to demonstrate the full functionality of our chain. |
+| Number | Deliverable                         | Specification                                                |
+| ------ | ----------------------------------- | ------------------------------------------------------------ |
+| 0.     | License                             | Apache 2.0                                                   |
+| 1.a    | Documentation                       | The documentation will be given to show the whole architecture of the MyDeX. |
+| 1.b    | Testing Guide                       | The testing guide will be provided to test pallets and the front-end. |
+| 2.a    | Substrate Module: Swap              | A decentralized AMM protocol that is used to swap tokens. Users can set the maximum slippage tolerance. Support users to participate in the liquidation of Platform Bank. |
+| 2.b    | Substrate Module: Leveraged Trading | Integrated with Platform Bank, users can be more convenient to short and carry out margin trading. |
+| 3.     | Front End Of MyDeX                  | Complete the development of the dex interactive page in react. The interface will be available in Chinese as well as English. |
+| 4.     | Docker Image                        | We will provide a dockerfile to demonstrate the full functionality of our chain. |
 
 
 
