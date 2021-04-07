@@ -12,11 +12,12 @@
 
 ### Overview
 
-MyBank is a decentralized financial platform based on Polkadot, aiming to establish a blockchain network that realizes asset appreciation and promotes asset flow. MyBank is divided into three parts: Platform Bank, Social Network Bank and MyDeX.
+MyBank is a decentralized financial platform based on Polkadot, aiming to establish a blockchain network that realizes asset appreciation and promotes asset flow. MyBank is divided into three parts: Platform Bank, Social Network Bank, MyDeX and Credit Scoring System.
 
-- In Platform Bank, users can participate as depositors, borrowers, and guarantors. Depositors can obtain deterministic returns by injecting liquidity into the corresponding asset pool. Borrowers can borrow by mortgaging collateral or invite guarantors to guarantee them to make zero-mortgage loans. After the implementation of the DID module to support identity authentication, credit loans without collateral or guarantee will be supported based on the credit scoring system.
+- In Platform Bank, users can participate as depositors, borrowers, and guarantors. Depositors can obtain deterministic returns by injecting liquidity into the corresponding asset pool. Borrowers can borrow by mortgaging collateral or invite guarantors to guarantee them to make zero-mortgage loans. After the implementation of the credit scoring system, credit loans without collateral or guarantee will be supported based on the user profile.
 - In Social Network Bank, MyBank as an infrastructure platform provides corresponding tools so that any individual and organization can build a collective bank that belongs to all members of a social network.
 - MyDeX aims to provide users with the service of AMM, and support users to participate in the liquidation of Platform Bank.
+- We will develop a credit scoring system based on users' deposit records, loan records, guarantee records, transaction records, social networks and third-party data to generate "user profile".
 
 
 
@@ -32,7 +33,7 @@ Most DeFi lending products are based on the mortgage system. Users lend assets f
 
 Each user will maintain a social network circle of their own, and the friend relationship needs to be confirmed by both parties. When a user has a loan demand and wants to choose a zero-mortgage loan, he can send the loan event to his friend's inbox, and the friend can choose to respond to the event to guarantee him. After the guarantee is successful, the system will issue a loan to his friend, and the deposit certificate will be locked by the system. Before the borrower repays, unless the guarantor chooses to pay a certain amount of funds to redeem the deposit certificate, his deposit will not be withdrawn.
 
-![img](https://tva1.sinaimg.cn/large/008eGmZEgy1gpa7eof5bfj310i0dqjsm.jpg)
+![image-20210407184344086](https://tva1.sinaimg.cn/large/008eGmZEgy1gpbdc9dbzkj310i0dq3zp.jpg)
 
 
 
@@ -44,13 +45,13 @@ Platform Bank supports multi-currency digital assets as collateral for loans or 
 
 
 
-We will expand Platform Bank to support credit loans. The user's social networks, deposit records, loan records, guarantee records, and transaction records will all be stored on the chain to form an anonymous credit scoring system. The credit data accumulated by users combined with offline governance has brought the possibility of developing credit loan business. Credit loans need a strong governance organization, relying on the relevant identity authentication system and legal system. In the first stage, the credit loan business will be launched through the Private Pool and will only be open to financial institutions and enterprises that have passed the off-chain review.
+We will expand Platform Bank to support credit loans. The user's social networks, deposit records, loan records, guarantee records, and transaction records will all be stored on the chain to form an anonymous credit scoring system. The credit data accumulated by users combined with off-ch governance has brought the possibility of developing credit loan business. Credit loans need a strong governance organization, relying on the relevant identity authentication system and legal system. In the first stage, the credit loan business will be launched through the Private Pool and will only be open to financial institutions and enterprises that have passed the off-chain review.
 
 
 
 Institutions can also pay a certain fee to create an independent Private Pool to develop loan business based on the infrastructure provided by MyBank. For example, the identity on the chain is an anonymous hash address. With the user's permission, the institution can verify the user's identity under the chain, and combine the credit score record to decide whether to issue a credit loan or mortgage loan to the user. The loan contract will be written to MyBank's distributed ledger. Loan records incurred by Private Pool can also be synchronized to the credit scoring system.
 
-![Arch](https://tva1.sinaimg.cn/large/008eGmZEly1gpa7gmhivlj30yu0ta40t.jpg)
+![img](https://tva1.sinaimg.cn/large/008eGmZEgy1gpbdbe4lmaj30yu0sqjtq.jpg)
 
 
 
@@ -66,7 +67,9 @@ Members can contribute deposits to the bank. The more deposits, the greater the 
 
 Repayment of a loan will leave a record on the chain. Borrowers will have a greater chance to obtain larger loans in the future, indirectly encouraging users to gradually accumulate their credit history. All behaviours will be recorded on the chain. Based on the external constraints of social networks, the default will affect the reputation of individuals in the real life. And borrowers will not be able to obtain loans from the bank in the future or it will become more difficult to borrow. Loans can be based on joint and several liabilities. If a person fails to repay the loan, the credit history of the members who guarantee or vote for it will also be affected. It may be regarded as a default, so the borrower's friends have an additional incentive to help the borrower.
 
-![Social Network Bank](https://tva1.sinaimg.cn/large/008eGmZEgy1gpa7i5g8xbj30zk0pkwl2.jpg)
+
+
+![img](https://tva1.sinaimg.cn/large/008eGmZEgy1gpbdbfynjwj315r0u0q82.jpg)
 
 
 
@@ -90,7 +93,9 @@ Any user can inject funds into the asset pool to obtain the transaction fee inco
 
 At the same time, users can pledge the LP Token to become a liquidator in Platform Bank, and can easily capture the income brought by liquidation while obtaining the transaction fee income. When the liquidation is triggered, the borrower needs to pay a certain percentage of the penalty fee, and the liquidator will receive this penalty fee.
 
-![Leveraged Trading](https://tva1.sinaimg.cn/large/008eGmZEgy1gpa7j4u4yrj31260ju0u2.jpg)
+
+
+![img](https://tva1.sinaimg.cn/large/008eGmZEgy1gpbdbek1anj31260juwg1.jpg)
 
 
 
@@ -105,13 +110,9 @@ On the current Ethereum platform, if the above two operations are to be carried 
 
 
 
-#### Credit System Explanation
+#### Credit Scoring System Explanation
 
-The structure and location of the human network determine everyone's choices in all aspects of making friends, choosing schools, employment, financial management, raising children, leisure and entertainment, and determine people's social circles and their beliefs,  determine those who are more powerful, easier to succeed.
-
-
-
-We quantify a person's "position" in the social network, and eventually, we can trust each other between two people who do not know each other only based on this "score".
+The structure and location of the human network determine everyone's choices in all aspects of making friends, choosing schools, employment, financial management, raising children, leisure and entertainment, and determine people's social circles and their beliefs,  determine those who are more powerful, easier to succeed. We quantify a person's "position" in the social network, and eventually, we can trust each other between two people who do not know each other only based on this "score".
 
 
 
@@ -125,7 +126,11 @@ The establishment of this score relies on the social network of the real society
 
 
 
-The Credit Score obtained by combining these latitudes has a certain reference value, but it is not enough to allow two individuals who do not know each other in the system to carry out financial activities without risk. Over-collateralization is part of the liquidation logic. Based on this score, the system uses a portion of the reserve to hedge this risk is also one of our core mechanisms.
+To prevent users from using the same high-credit-score account, frequently adding friends with new accounts to increase the credit score of new accounts, causing the same user to control multiple high-credit sub-accounts. When adding friends, we will ask users to mark a correlation to their friends to indicate the correlation between the user and the friend. The higher the correlation of the friend, the more important the user is to this social relationship. 
+
+
+
+A user has up to m friends, and users can update friend correlation at any time, but the sum of the correlation that a user can assign is equal to 1. For example, if a user assigns 0.2 to a friend, the others can only get 0.8 at most. When the social network factor is included in the credit score calculation, the system will only take the user profile of the top n friends (ranked according to the friend correlation), or the weight of the friends ranked behind will be lower. It is not that the more friends a person has, the more friends with high credit scores, the higher his credit score will be.
 
 
 
@@ -195,7 +200,7 @@ https://github.com/mybank-network/mybank-network
 
 ## Development Status
 
-Currently, we have finished the basic lending pallets and deployed a test network in [polkadot.js](https://polkadot.js.org/apps).
+Currently, we have finished the basic lending pallets and deployed a test network in [polkadot.js](https://polkadot.js.org/apps/#/explorer/query).
 
 - Substrate Code Repo: https://github.com/mybank-network/mybank-network
 - Substrate Websocket Address: wss://app.mybank.network/substrate
@@ -208,9 +213,9 @@ Currently, we have finished the basic lending pallets and deployed a test networ
 
 ### Overview
 
-- **Total Estimated Duration:** 2.5 months
-- **Full-time equivalent (FTE):** 5
-- **Total Costs:** 10000 DAI
+- **Total Estimated Duration:** 2 months
+- **Full-time equivalent (FTE):** 4
+- **Total Costs:** 8000 DAI
 
 
 
@@ -227,34 +232,12 @@ Currently, we have finished the basic lending pallets and deployed a test networ
 | 0.     | License                                       | Apache 2.0                                                   |
 | 1.a    | Documentation                                 | The documentation will be given to show the whole architecture of the Platform Network. |
 | 1.b    | Testing Guide                                 | The testing guide will be provided to test pallets and the front-end. |
-| 2.a    | Substrate Module: Asset Pool                  | Realize the interface of deposit and debit. Support multi-currency lending. Automatically adjusts interest rates based on demand and supply. Support mortgage lending and guraantee lending. Implement Liqudation Module(off-chain worker). |
+| 2.a    | Substrate Module: Asset Pool                  | Realize the interface of deposit and debit. Support multi-currency lending. Automatically adjusts interest rates based on demand and supply. Support mortgage lending and guraantee lending. Implement Liqudation Module(off-chain worker) |
 | 2.b    | Substrate Module: User Profile & Credit Score | Generate user profiles based on the user's past deposit records, loan records, transaction records, and social networks. |
 | 2.c    | Substrate Module: Private Pool                | Users can apply to create an private pool and inject liquidity to develop loan business. |
 | 2.d    | Substrate Module: Social Network              | Users can friend someone on PB and send a guarantee request to a friend. |
 | 3.     | Front End Of Platform Bank                    | Complete the development of the platform bank interactive page in react.  The interface will be available in Chinese as well as English. |
 | 4.     | Docker Image                                  | We will provide a dockerfile to demonstrate the full functionality of our chain. |
-
-
-
-### Milestone 2 — Implement MyDeX
-
-- **Total Estimated Duration:** 0.5 months
-- **Full-time equivalent (FTE):** 1
-- **Total Costs:** 2000 DAI
-
-
-
-| Number | Deliverable                         | Specification                                                |
-| ------ | ----------------------------------- | ------------------------------------------------------------ |
-| 0.     | License                             | Apache 2.0                                                   |
-| 1.a    | Documentation                       | The documentation will be given to show the whole architecture of the MyDeX. |
-| 1.b    | Testing Guide                       | The testing guide will be provided to test pallets and the front-end. |
-| 2.a    | Substrate Module: Swap              | A decentralized AMM protocol that is used to swap tokens. Users can set the maximum slippage tolerance. Support users to participate in the liquidation of Platform Bank. |
-| 2.b    | Substrate Module: Leveraged Trading | Integrated with Platform Bank, users can be more convenient to short and carry out margin trading. |
-| 3.     | Front End Of MyDeX                  | Complete the development of the dex interactive page in react. The interface will be available in Chinese as well as English. |
-| 4.     | Docker Image                        | We will provide a dockerfile to demonstrate the full functionality of our chain. |
-
-
 
 ## Future Plans
 
@@ -264,7 +247,8 @@ Currently, we have finished the basic lending pallets and deployed a test networ
 4. Support Kusama Node. The MyBank Network will run as a parachain of the Kusama.
 5. Implement WASM Smart Contract by using !ink.
 6. Develop DID and credit loan module.
-7. Develop Social Network Bank after we implement Platform Bank and MyDeX.
+7. Cooperate with third-party institutions to introduce users' off-chain assets into MyBank.
+8. Develop Social Network Bank after we implement Platform Bank and MyDeX.
 
 
 
