@@ -1,4 +1,4 @@
-# W3F Open Grant Proposal
+# Open Grant Proposal
 
 * **Project Name:** Doter (A browser extension wallet for Polkadot)
 * **Team Name:** ChainBridge network
@@ -96,7 +96,7 @@ Personal Code Repos：https://github.com/dianluyuanli-wp
 * https://github.com/ChainBridgeNetworkTeam/Doter
 
 ### Team LinkedIn Profiles
-Guan Yu：https://www.linkedin.com/in/yu-guan-482624155/
+Guan Yu：https://www.linkedin.com/in/yu-guan-482624155/  
 Gao Jianli：https://www.linkedin.com/in/jianli-gao-6785a1140/
 
 ## Development Roadmap
@@ -115,8 +115,7 @@ Gao Jianli：https://www.linkedin.com/in/jianli-gao-6785a1140/
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | At this milestone, we have achieved the following modules:  Create wallet Import wallet  Transfer and receive
- Wallet settings  Wallet management  Transaction record  Referendum on the chain  Based on these basic modules, users can already easily manage assets and participate in the referendum on proposals |
+| 0b. | Documentation | At this milestone, we have achieved the following modules:  <br />Create wallet <br />Import wallet  <br />Transfer and receive<br />Wallet settings  <br />Wallet management  <br />Transaction record  <br />Referendum on the chain  <br />Based on these basic modules, users can already easily manage assets and participate in the referendum on proposals |
 
 #### M2：Injection and signature
 
@@ -127,7 +126,7 @@ Gao Jianli：https://www.linkedin.com/in/jianli-gao-6785a1140/
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Description | We will implement the account injection function of the extension. When users interact with any Dapp, they can use the account registered in theDoter to perform related operations |
+| 0b. | Description | We will implement the account injection function of the extension. When users interact with any Dapp, they can use the account registered in the Doter to perform related operations |
 | 1.  | Core component | Establish conmmunication mechanism between background.js, content.js and injectScript.js. |
 | 2.  | Implementation | At the right time, We will call up the Auth page and the transaction signature page, and return the result to the Dapp page |
 
