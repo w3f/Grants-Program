@@ -10,7 +10,7 @@
 
 #### Tagline: Proof-of-Capacity Consensus for Substrate
 
-We will eventually be implementing [Subspace](https://subspace.network), a new [Proof-of-Capacity (PoC) consensus blockchain](https://drive.google.com/file/d/1v847u_XeVf0SBz7Y7LEMXi72QfqirstL/view), in Substrate. The key objective of this grant is to design and build a production ready substrate chain which employs _Spartan_, a simpler proof-of-space consensus algorithm. This will provide a secure and extensible foundation on which the full Subspace protocol, as described in our [technical whitepaper](https://drive.google.com/file/d/1v847u_XeVf0SBz7Y7LEMXi72QfqirstL/view), may later be built using a larger follow-up general grant. After careful analysis, we have determined that implementing the full plan for Subspace, goes well-beyond the scope of an open grant. However, as any proof-of-replication is based on a proof-of-space, we can begin with the simpler task of implementing the more abstract notion of proof-of-capacity consensus. Based on our experience working with Substrate so far, implementing a novel consensus mechanism is non-trivial and requires a deep understanding of the internals of FRAME and Substrate. We would therefore like to take the time to do this right.
+The key objective of this grant is to design and build a production ready substrate chain which employs _Spartan_, a simple proof-of-space consensus algorithm. Our long-term goal is to implement [Subspace](https://subspace.network), a new [Proof-of-Capacity (PoC) consensus blockchain](https://drive.google.com/file/d/1v847u_XeVf0SBz7Y7LEMXi72QfqirstL/view), in Substrate through a follow-up general grant. After careful analysis, we have determined that implementing the full plan for Subspace goes well-beyond the scope of an open grant. However, as any proof-of-replication is based on a proof-of-space, we can begin with the simpler task of implementing the more abstract notion of proof-of-capacity consensus. Based on our experience working with Substrate so far, implementing a novel consensus mechanism is non-trivial and requires a deep understanding of the internals of FRAME and Substrate. We would therefore like to take the time to do this right.
 
 #### Relevance to Substrate & Polkadot
 
@@ -46,13 +46,13 @@ The UI will consist of a simple CLI for the farmer and client with relevant exte
 
 ##### `Spartan-Farmer`
 
-This has a deliberately simple CLI with two commands: `plot` and `farm`. `plot` allows the user to specify the plot size (in bytes), an optional storage path, and an optional seed for the private key. Plotting time depends on the hardware used but will take roughly 36 hours for a 1 TB plot using a standard quad-core machine. The plotter displays a progress bar showing percent complete and outputs some plotting statistics on completion. Once a plot has been created, the `farm` command may be used to connect to a client with an optional Web Socket address. The farmer will display relevant log messages during operation. 
+This has a deliberately simple CLI with two commands: `plot` and `farm`.   The `plot` command allows the user to specify the plot size (in bytes), an optional storage path, and an optional seed for the private key. Plotting time depends on the hardware used but will take roughly 36 hours for a 1 TB plot using a standard quad-core machine. The plotter displays a progress bar showing percent complete and outputs some plotting statistics on completion. Once a plot has been created, the `farm` command may be used to connect to a client with an optional Web Socket address. The farmer will display relevant log messages during operation. 
 
 ##### `Spartan-Client`
 
 No new commands will be added to the client CLI, though we will add additional logging messages to reflect interaction with the farmer.
 
-##### Browser
+##### `Spartan-Browser`
 
 No new commands will be added to the browser-based polkadot-js GUI, though we will modify the display of relevant consensus information. 
 
@@ -82,7 +82,7 @@ Subspace has also been specifically designed to maintain the security, decentral
 
 Subspace provides a scalable distributed storage layer for Polkadot, by allowing parachains to have a native, low-cost, and permanent storage option. Within the polkadot ecosystem, we are targeting other parachains and dApp developers on smart contract capable parachains. We are also exploring similar use-cases outside of the Polkadot ecosystem. Subspace can ensure the longevity and availability of data which is too expensive (i.e. by tx costs) to store on the source chain, or would negatively impact the decentralization of the chain (i.e., by increasing blockchain bloat). 
 
-We intend to eventually launch Subspace as a parachain on Polkadot. This will allow any other parachains within the Polkadot network to utilize Subspace for permanent distributed storage. In the extreme form, each parachain block could be backed-up on the Subspace network, allowing for higher levels of decentralization and permanent data availability (even if the parachain later ceases to exist). In the average case, a parachain could employ Subspace to retain data which is too large to store internally, either through the native runtime logic or by individual smart contract. While the same functionality is theoretically possible with networks like Filecoin and Arweave, if Subspace is also a parachain, the cost of cross-chain communication would be much lower.  
+We intend to eventually launch Subspace as a parachain on Polkadot. This will allow any other parachains within the Polkadot network to utilize Subspace for permanent distributed storage. In the extreme form, each parachain block could be backed-up on the Subspace network, allowing for higher levels of decentralization and permanent data availability (even if the parachain later ceases to exist). In the average case, a parachain could employ Subspace to retain data which is too large to store internally, either through the native runtime logic or by individual smart contracts. While the same functionality is theoretically possible with networks like Filecoin and Arweave, if Subspace is also a parachain, the cost of cross-chain communication would be much lower.  
 
 Inside the Polkadot ecosystem, Crust Network is the only existing option for off-chain distributed storage. Crust resembles Filecoin in many ways, except that it uses a Trusted Execution Environment (TEE) in places of proofs-of-replication. This limits the storage capacity of the network to providers who have special purpose hardware, making it far less decentralized and more expensive. In contrast, Subspace allows anyone with free disk space and minimal computation to act as a storage provider, allowing it to scale to many orders of magnitude larger network storage capacity. Crust, like Filecoin, also provides temporary and mutable storage, whereas Subspace provides permanent and immutable storage, which is often more suitable for blockchain-based applications and smart contracts. 
 
@@ -92,7 +92,7 @@ Outside of the Polkadot ecosystem there are several storage-based networks. At a
 
 ### Team members
 * Jeremiah Wagstaff (team leader)
-* Nazar Mokrynskyi
+* Nazar Mokrynskyi (lead engineer)
 
 ### Contact
 * **Contact Name:** Jeremiah Wagstaff
