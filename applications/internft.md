@@ -18,8 +18,9 @@ The transfer of NFT assets between different chains is accomplished through cros
 
 ### Project Details
 
-The Internft Network consists of NFT Node, Fishman, DAO, CCP, NFT Swap, NFT Store and the Internft NFT SDK.
+The Internft Network consists of Domain, NFT Node, Fishman, DAO, CCP, NFT Swap, NFT Store and the Internft NFT SDK.
 
+* The Internft Domain acts as an important gateway within the Internft Network, jointly protecting the inflow and outflow of NFT assets through multiple signatures with the nodes.
 * The NFT Node implements the CCP protocol and is secured by a strict punitive PoS.
 * CCP is a communication protocol for the transfer of NFT assets across chains.
 * Like the Fishman role in the Polkadot Network, Find malicious nodes and get a reward.
@@ -55,7 +56,7 @@ We have many years of experience in Solidity contract development, familiar with
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-* **Total Estimated Duration:** 2 weeks
+* **Total Estimated Duration:** 3 weeks
 * **Full-time equivalent (FTE):** 2 FTE
 * **Total Costs:** 3,000 USD/DAI
 
@@ -71,15 +72,16 @@ In this milestone, We will implement Internft Network CCP proof-of-concept, Incl
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | The documentation will be provided to show the whole design documents and demo video|
 | 0c. | Testing Guide | This milestone will have unit-test for pallet impemented, simulated all functions|
-| 1. | Bridge contract | bridge pallet in Substrate, bridge contract in Ethereum, locks the NFT asset on the chain where the original asset resides and casts the corresponding NFT asset on the other chain|
+| 1. | Pallet_bridge  | Random node using VRF for migration NFT|
 | 2. | Relayer | Listen for NFT asset transfer events and route to destination chain，relayer is written in golang|
 | 3. | Front end | Complete the development of the basic interactive page for cross-chain NFT migration, the specific page can refer to: [https://www.figma.com/file/Z1Mdrm0p6XXkeV0QXOeiIu/front-end](https://www.figma.com/file/Z1Mdrm0p6XXkeV0QXOeiIu/front-end) |
+| 4. | Docker Image | We will provide a dockerfile to demonstrate the full functionality of our chain|
 
 
 ## Future Plans
 
-* punitive PoS
-* Random NFT node using VRF
+* Manage Domain's assets by MultiSig
+* Punitive PoS
 * NFT SDK for DApps, Games, and the NFT Assets
 * NFT Swap & NFT Store
 
