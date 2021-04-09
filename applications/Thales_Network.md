@@ -103,12 +103,12 @@ stable digital currency than this moment, with stability instead of fixed, which
 
 * Decentralized exchanges also need a blockchain-based transaction pricing unit. Thales uses our own design mechanism to build an open and transparent algorithmic central bank based on the blockchain and then issues credit currency ECHO based on the algorithm in the next year.ECHO grows completely with demand.
 
-#####DEFI：
+##### DEFI：
 * This problem also exists in Defi applications. Many defi applications are still denominated in USD. 
 
 * When our team was designing, we imagined the blockchain as a new country based on Internet technology. Then this country needs digital gold and digital currency. In this country, build a real application from the ground up. Currency is used as a medium of exchange and a measure of value. All the processes of such a currency are completely open, transparent, and traceable. Just such a currency is needed in the defi world.
 
-#####Blockchain Business：
+##### Blockchain Business：
 * All businesses have a transaction link, and large-scale transactions need a general equivalent. With the advancement of technology, the volume of business will continue to increase, and if it is priced in Bitcoin, it will lead to deflation for the entire business economy.
 
 * The gold used to be the currency in the physical world corresponds to Bitcoin in the blockchain world.
@@ -137,6 +137,27 @@ stable digital currency than this moment, with stability instead of fixed, which
  * fei（https://fei.money/）（70% similarity）
  *  float（https://floatprotocol.eth.link/）（70% similarity）
  * rai （https://reflexer.finance/）（70% similarity）
+
+####  The difference between us and other non-collateralized stablecoins:
+
+##### The first difference is: our design philosophy:
+We imagine the blockchain world as a new country. This country needs a currency. How should this currency be designed?
+All designs are trying to solve this problem.
+First of all, inflation and deflation itself are not harmful to the economic system, because the essence of commodity pricing is a percentage price, so the problem is the distribution mechanism of the new inflation currency. Part of the additional currency is first obtained at a low cost. At this time, the purchasing power of the currency has not depreciated, so it is an exploitation of latecomers.
+So as long as the distribution mechanism is fair, there is no time delay, and the inflation and deflation of the currency are based on a clear, open and transparent rule, then the blockchain can be used to create a fair non-collateralized stablecoin.
+
+##### The second difference is: the model of inflation and deflation:
+Currency inflation and deflation need to have a parameter indicator, this parameter indicator needs to represent the demand for money and the amount of token economy. The simplest indicator we can think of is trading. Inflation and deflation in the Thales system are based on transactions.
+Unlike ordinary digital currencies, the number of ECHO is adjusted in real-time, and the supply is adjusted according to demand. Followed is our money supply adjustment mechanism, the DMM mechanism: each transaction behavior in the system will automatically trigger currency issuance in the amount of age number* adjustment coefficient.
+For example, Alice transfers 100W to Bob, and Bob provides Alice with an apple worth of 100W，then the system will automatically issue currency in the amount: 100W * 1 = 100W (assuming the adjustment coefficient is 1). 
+
+##### The third difference is: distribution model:
+We have designed a distribution model based on value contribution to simulate the real society, 50% is distributed equally, and 50% is distributed according to the proportion of the collection amount in a period.
+An important concept is the allocation mechanism of new distribution-model called POES, a portion (X%) of newly issued currency is allocated evenly to each period-active-receive account in the system, and the other (Y%) is allocated proportionately according to the period-active-received amount of each account (X%+Y%=100%), which is tentatively defined as X%=Y%=50%.
+To achieve the purpose of the adjustable amount of money, it is necessary not only to have a mechanism for currency issuance but also to have a mechanism for currency destruction. Only in this way can a dynamic balance of currency supply be achieved. Behavior such as transfers and evaluations of transactions will consume a certain amount of ECHO as fuel. The fuel here will be destroyed directly. Of course, the user's transaction is free, and the unallocated currency in the money pool is destroyed. Here, the currency is issued according to MI=transaction amount*adjustment coefficient N. The decrease of currency is mainly to consume a certain proportion of the transfer transaction amount of ECHO as fuel. Fuel=transaction amount* adjustment coefficient M. Net increase of currency= MI-fuel consumption at a certain moment. Here you only need to adjust the coefficients N and M to control the supply of money. 
+
+##### The fourth difference is: the original intention of the system design
+Our original intention was not to create a currency anchored to the US dollar USD. We are designing a new currency for a new country. As a new currency, it can maintain a certain exchange rate with the US dollar USD, but it has its own Inflation deflation and distribution model. We are adapting to the currency needs of this new country and the size of the economy, rather than handing over the leadership to the US dollar.
 
 ## Team 
 
