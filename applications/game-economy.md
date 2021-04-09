@@ -188,7 +188,6 @@ https://github.com/cryptosoulgame/ReAlis-Network
 | 0b. | Documentation | Documents containing the description of whole architecture design for Realis Network. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 1. | ERC20 | We want users to be able to have our tokens in the Etherium network as well.|  
-
 | 2. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
 ### Milestone 3 — Build bridge to ERC721
