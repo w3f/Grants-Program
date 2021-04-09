@@ -42,32 +42,34 @@ As stated in the project overview, we're strong believers in the quality over qu
 We plan to leverage most of the governance features available on Polkadot. The first cornerstone of governance will be the council who will be voted on and will be deciding in referenda on the shape of the application - its modules, features, and functionality. The second cornerstone will be voted content curators who will be delegated from the council to approve or reject public proposals from the community, manage auctions and provide the optimal level of content safety and creativity.
 
 ## Governance
-Introduction of our own token for governance purposes, payment of fees and bidding in the auctions
-Introducing council that will basically “own” the entire project and any member of community who proves himself can become a part of it
-Council will be able to set fees, fund interesting activities from the treasury or create proposals/referendums for the community
-Council can elect curators that will manage platforms content
-It is expected that council will drive the project towards more interesting and experimental use-cases than plain auctions of art - settting up identities, tokenize real world assets etc.
+We will introduce council that will basically “own” the entire project and any member of community who proves himself can become a part of it.
+Council will be able to set fees, fund interesting activities from the treasury or create proposals/referendums for the community.
+Council can elect curators that will manage platforms content.
+It is expected that council will drive the project towards more interesting and experimental use-cases than plain auctions of art - a lot of stuff can be tokenized and may be attractive for the community to be able to sell different item categories.
 
-There are several approaches to governance that we have in mind.
+There are several approaches to implementing the actual governance module.
 
 ### Part of the auction pallet
-This makes the most sense at the first sight because we can then utilize the power of Substrate to implement governance via collectives, democracy and voting pallets. However, our plan is to make the auction pallet really flexible and introducing governance can pollute auctions with unnecessary complexity regarding the governance (and thus make it less re-usable for anybody who would like to implement another system on top of our pallet). 
+This makes the most sense at the first sight because we can utilize the power of Substrate to implement governance via collectives, democracy and voting pallets. However, our plan is to make the auction pallet really flexible and introducing governance can pollute auctions with unnecessary complexity regarding the governance (and thus make it less re-usable for anybody who would like to implement another system on top of our pallet). Also, there are plans for having multiple instances of the auction pallet on chains supporting NFTs so it's also a question how we would keep only single instance of governance in this case. 
 
 ### Separate pallet
 This seems like an ideal solution because it has a benefit of using Substrate but factors out all governance functionality to a separate pallet. Downside would be that each NFT platform where we plan to integrate our auction-pallet would have to integrate two pallets instead of one to their runtime.
 
 ### Smart contract
 Smart contract approach has following advantages
-Factoring our governance while keeping only one pallet at the same time
-Easy integration of our auctions to multiple NFT chains since the only connection to the governance is reference to our smart contract thus we end up with only instance of governance while having multiple auction implementation sitting on different chains
+ - Factoring our governance while keeping only one pallet at the same time
+ - Easy integration of our auctions to multiple NFT chains since the only connection to the governance is reference to our smart contract. Thus we end up with only instance of governance while having multiple auction instances sitting on different chains
+
 However, downside is obviously not exploiting great capabilities that Substrate offers and having to implement a lot of stuff by reinventing the wheel. 
 
 ### Token
 To be honest, we haven’t decided whether this project deserves its own token but we are more inclined to have one. The reason is, if we want to introduce proper governance and have our auctions usable across multiple chains, then there has to be a chain-agnostic way to elect members of council, approve new content, change rules of the auctions, etc. 
 In that case, smart contract keeping the token seems like a best choice since we can have a governance body supported by our tokenomics completely independent of the underlying platform where our auctions run.
 
+We will have to explore how would the token coming from the smart contract interact with the pallet and how can the users import that token to their wallets.
+
 ### Curatorship
-Curatorship is closely tied to the governance since only approved members can have elevated privileges over the system (e.g. vote on removal of inappropriate content). Any user can report offensive content to the curators. Curators then remove the content or reject the report. We will probably run a Discord/Telegram channel to open a discussion about a right way to do the curatorship and what kind of stuff if acceptable for public auctioning and what is not 
+Curatorship is closely tied to the governance since only approved members can have elevated privileges over the system (e.g. vote on removal of inappropriate content). Any user can report offensive content to the curators. Curators then remove the content or reject the report. We will probably run a Discord/Telegram channel to open a discussion about a right way to do the curatorship and what kind of stuff is acceptable for public auctioning and what is not 
 
 ## Content curation
 
