@@ -62,7 +62,7 @@ The farmer will be written in Rust. The CLI will be constructed using `clap`. Co
 
 #### Proof-of-Concept (prior work)
 
-An [initial implementation](https://github.com/subspace/subspace-core-rust) of Subspace was previously written in Rust, from scratch, without forking another chain. While we were able to get a rudimentary transactional blockchain working, which used proof-of-storage consensus, it quickly became clear that going from proof-of-concept to production ready (with all relevant tooling) was far beyond the capabilities of our team. We then learned about Substrate and began exploring the feasibility of porting over our work. This resulted in a [smoke test](https://github.com/subspace/substrate-stencil) of sorts, which showed that we could hack `pallet_babe` into `pallet_spartan`, connect to a `spartan-farmer`, and hook into the block production pipeline. The purpose of this grant is to take the lessons learned from writing our own implementation using this quick and dirty hack of babe, to create a production ready set of pallets which leverage the Rust trait system and the idiomatic FRAME methodology of decoupled crates and pallets, in order to build the foundation for a proof-of-capacity blockchain, which can leverage the full power of Substrate and provide a novel distributed storage solution for the Polkadot ecosystem. 
+An [initial implementation](https://github.com/subspace/subspace-core-rust) of Subspace was previously written in Rust, from scratch, without forking another chain. While we were able to get a rudimentary transactional blockchain working, which used proof-of-storage consensus, it quickly became clear that going from proof-of-concept to production ready (with all relevant tooling) was far beyond the capabilities of our team. We then learned about Substrate and began exploring the feasibility of porting over our work. This resulted in a [smoke test](https://github.com/subspace/substrate-stencil) of sorts, which showed that we could hack `pallet_babe` into `pallet_spartan`, connect to a `spartan-farmer`, and hook into the block production pipeline. The purpose of this grant is to take the lessons learned from writing our own implementation using this quick and dirty hack of babe, to create a production ready set of components which leverage the Rust trait system and the idiomatic FRAME methodology of decoupled crates and pallets, in order to build the foundation for a proof-of-capacity blockchain, which can leverage the full power of Substrate and provide a novel distributed storage solution for the Polkadot ecosystem. 
 
 #### Non-Goals
 
@@ -105,7 +105,7 @@ Outside of the Polkadot ecosystem there are several storage-based networks. At a
 
 ### Team's experience
 
-We each have three years experience designing and building blockchains and decentralized protocols at Subspace Labs. We also each have two years experience working with Rust. We recently completed 18 months of primary research for a National Science Foundation Small Business Innovation Research Grant (NSF-SBIR), which resulted in our technical whitepaper. Nazar is a full-stack engineer with over ten years experience working with PHP and Javascript and has contributed to numerous open-source projects. Jeremiah is an entrepreneur, blockchain researcher, and full-stack developer with over six years experience working in Python and Javascript. 
+We each have three years experience designing and building blockchains and decentralized protocols at Subspace Labs. We also each have 1.5 years experience working with Rust. We recently completed 18 months of primary research for a National Science Foundation Small Business Innovation Research Grant (NSF-SBIR), which resulted in our technical whitepaper. Nazar is a full-stack engineer with over ten years experience working with PHP and Javascript and has contributed to numerous open-source projects. Jeremiah is an entrepreneur, blockchain researcher, and full-stack developer with over six years experience working in Python and Javascript. 
 
 ### Team Code Repos
 * [Nazar](https://github.com/nazar-pc?tab=repositories)
@@ -151,7 +151,7 @@ This milestone will allow for the operation of a local development chain, with a
 | 6. | `pallet_spartan` | Full implementation of Spartan PoS consensus. This shall integrate with `substrate-node-template` and operate as a `spartan-client`| 
 | 7. | `spartan_farmer` | A decoupled farmer implementation which can plot, connect to `spartan-client` via RPC, and farm (solve challenges)|
 | 8. | `spartan_client` | An implementation of `substrate-node-template` which runs under `pallet_spartan` consensus and connects to the `spartan-farmer`. |
-| 9. | Docker | We will provide a dockerfile to demonstrate the full functionality that runs a local development chain with a single farmer. |
+| 9. | Docker | We will provide dockerfiles to demonstrate the full functionality that runs a local development chain with a single farmer. |
 
 ### Milestone 2 — Implement Test Network and Browser Client 
 * **Estimated Duration:** 4 weeks
@@ -170,7 +170,7 @@ This milestone will extend the local development chain into a test network. Full
 | 2. | Light Client Sync | Client commits and an integration test which shows a light client may sync with a full client. |
 | 3. | Browser Client GUI updates | A set of extensions for Polkadot-JS which render relevant consensus & chain information in the browser. |
 | 4. | Dynamic Solution Range | Client commits and an integration test, that demonstrate a dynamic solution range as farmers with different amounts of space join and leave. | 
-| 5. | Docker | We will provide a dockerfile to spin up multiple nodes, create a local test network, and run all integration tests. |
+| 5. | Docker | We will provide a dockerfiles to spin up multiple nodes, create a local test network, and run all integration tests. |
 
 ### Milestone 3 — Implement Secure Testnet 
 * **Estimated Duration:** 4 Weeks
@@ -191,14 +191,14 @@ This milestone will extend naive consensus to be secure against all known attack
 | 4. | Sybil resistance test | Extend and demonstrate that sybil plotting consumes more CPU for no advantage. | 
 | 5. | Compression attack test | Extend and demonstrate that the compression attack requires continuous plotting for a small constant advantage. | 
 | 6. | Simulation attack test | Extend and demonstrate that simulation provides a negligible advantage. | 
-| 7. | Docker | We will provide a dockerfile to run all simulations. |
+| 7. | Docker | We will provide a dockerfiles to run all simulations. |
 
 ## Future Plans
 
 ### Short-term
 
-* Apply to the Substrate Builders Program
-* Work with two Stanford PhD candidates to develop a formal proof-of-security for Subspace (summer internships)
+* Apply to the Substrate Builders Program.
+* Develop a formal proof-of-security for Subspace consensus.
 * Close our seed fundraising round and build our our engineering and product teams.
 * Begin an outreach program for storage farmers (supply-side) within the Polkadot user ecosystem.
 * Begin a customer discovery process for storage use-cases (demand-side) within the Polkadot developer ecosystem.
