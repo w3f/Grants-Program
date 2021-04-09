@@ -36,7 +36,7 @@ In addition, we could extend the Web3 ecosystem in Japan then other countries .
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Edward Nakamoto - team leader & architecture
+* Nelson Sakamoto - team leader & architecture
 * Rie Miyazawa - project manager
 * Tom Sato - full stack engineer
 * Peter Yokoyama - full stack engineer	
@@ -52,8 +52,7 @@ In addition, we could extend the Web3 ecosystem in Japan then other countries .
 * **Registered Legal Entity:** Blue Castle Inc.
 
 ### Team's experience
-* Edward Nakamoto: More than 15 years of experience in financial system software research and development. Participated in the research and development of several large-scale financial software system architectures and foundations. In 2015, he began to participate in several blockchain POC projects, proficient in alliance chains, private chain design, and smart contract design. Now he focuses on the promotion of blockchain technology, commercial proposals and the implementation of blockchain projects.
-* Rie Miyazawa: IT consultant, system architect, proficient in business proposals. Since 2013, it has developed blockchain products and designed ICO issuance. Served as chief researcher and lecturer of enterprise blockchain.
+* Edward Nakamoto: * Nelson Sakamoto: IPS architechture. Rich experience in software development, including 5+ years Blockchian development. Participated in a couple of blockchain related development projects and played as a architecture and developer’s roles. Through the projects, he acquired not only blockchain but also industry expeience. In addition, he has rich experience of enterprise application development.* Rie Miyazawa: IT consultant, system architect, proficient in business proposals. Since 2013, it has developed blockchain products and designed ICO issuance. Served as chief researcher and lecturer of enterprise blockchain.
 * Tom Sato: Internet full-stack engineer. Good at website development, mobile APP application development. Backend application, server settings.
 * Peter Yokoyama: More than 20 years of system software research and development experience, familiar with a variety of open source software technologies. Focus on the development of Internet application systems. We have rich experience in research and development on the front-end, mobile and back-end of WEB.
 * Sunny Watanabe：15 years of experience in the design and actual construction of platform architecture for large-scale systems. Obsessed with open source software technology. Served as a technical partner of an electronic music sharing community. Rich practical experience in application development.
@@ -65,17 +64,20 @@ In addition, we could extend the Web3 ecosystem in Japan then other countries .
 ## Development Status :open_book: 
 
 We just finished research and started the first phase of PoC.
-
+ Project repo:
+   https://github.com/ips-protocol
+   
 ## Development Roadmap :nut_and_bolt: 
-
+ Whitepaper is here:
+   https://github.com/ips-protocol/Documentation
 
 ### Overview
-* **Total Estimated Duration:** 4 months
-* **Full-Time Equivalent (FTE):**  16.5 FTE
-* **Total Costs:** 100,000 USD
+* **Total Estimated Duration:** 1 months
+* **Full-Time Equivalent (FTE):**  5 FTE
+* **Total Costs:** 30,000 USD
 
-### Milestone 1  — IPS Mainnet development  
-* **Estimated Duration:** 1 month
+### Milestone 1  — IPS Mainnet development & Polkadot bridge PoC 
+* **Estimated Duration:** 1.5 month
 * **FTE:**  5
 * **Costs:** 30,000 USD
 
@@ -89,8 +91,12 @@ We just finished research and started the first phase of PoC.
 | 2. | Unit Test | We will conduct the unit test  |  
 | 3. | Integration Test | We will conduct integration test |  
 | 4. |  Testnet go live| We will setup IPS testnet for limited user test.  |
+| 5. |  Polkadot bridge Research and PoC| We will research on how to integrate with polkadot & build a PoC.  |
 
-### Milestone 2  — IPS Mainnet enhancement & Integrate with Substrate
+
+## Future Plans
+
+### Stage 2  — IPS Mainnet enhancement & Integrate with Polkadot
 
 * **Estimated Duration:** 1 month
 * **FTE:**  5
@@ -102,11 +108,11 @@ We just finished research and started the first phase of PoC.
 | 0b. | Documentation | We will provide inline documentation of the code that explains how the mainnet works|
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. | 
 | 0d. | Article/Tutorial | We will publish an article or tutorial that explains what was done/achieved as part of the grant |
-| 1. | IPFS enchancement & Bug fix | We will continue to enhance the mainnet functions and fix bugs   |  
+| 1. | IPS enchancement & Bug fix | We will continue to enhance the mainnet functions and fix bugs   |  
 | 2. | Block Broswer  | We will develpe a broswer   |  
-| 3. | Integration with substrate | We will intergrate with substrate |  
+| 3. | Integration with Polkadot | We will intergrate with polkadot |  
 
-### Milestone 3  — IPS Mainnet go-live & Integrate with Polkadot
+### Stage 3  — IPS Mainnet go-live 
 
 * **Estimated Duration:** 1 month
 * **FTE:**  5
@@ -120,9 +126,9 @@ We just finished research and started the first phase of PoC.
 | 0d. | Article/Tutorial | We will publish an article or tutorial that explains what was done/achieved as part of the grant |
 | 1. | IPS mainnet go-live | Deploy the IPS mainnet code on production env.   |  
 | 2. | Files Browser   | Develop the file broswer   |  
-| 3. | Integration with Polkadot | We will intergrate with polkadot |  
 
-### Milestone 4  — Contents sharing web development & marketing activity
+
+### Stage 4  — Contents sharing web development & marketing activity
 
 * **Estimated Duration:** 1 month
 * **FTE:**  1.5
@@ -136,11 +142,6 @@ We just finished research and started the first phase of PoC.
 | 0d. | Article/Tutorial | We will publish an article or tutorial that explains what was done/achieved as part of the grant |
 | 1. | Contents sharing Website | We will develop a website for users to search & download files easier.   |  
 | 2. | Marketing   | We are going to hold workshop/meetup etc. to promote IPS and Web3 starting from Japan   |  
-
-## Future Plans
-
-- Build IPS ecosystem and incentive program for Dapp development
-- Conduct incentive program to improve storage usage
 
 
 
