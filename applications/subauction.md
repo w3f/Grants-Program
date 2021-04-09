@@ -25,13 +25,11 @@ What we already accomplished:
 - Media integration with upload to IPFS
 - NFT and funds locking on the network, exchange of those funds
 
-#### Candle Auction Type
-
-Candle auction is a variant of the English auction where the last part of the auction is randomized in the sense that it can be concluded anytime. This prevents bidders from leaving their bids to the last few minutes or seconds and it's fairer in the internet environment where bots can bid on behalf of the buyers. The configuration of such an auction will be very similar to the English one.
-
-#### Top-up Auction Type
-
-This is a very popular auction type used by charities. Each participant will pay a "top-up fee" which is based on the bid he made minus the closest lower bid. This effectively means that each participant will pay the top-up fee except the first and the last bidder. The last bidder wins the auction, obtains the item, and only pays the item's price. We believe that bringing this kind of auction type enables entities to raise funds for good causes so that we can connect socially responsible projects with supporters and philanthropists.
+#### English Auction type
+The most common type of auction is where the participants bid against each other and the highest offer wins. Auction will reach its end when one of the criterias are met, there is a countdown and when the auction is concluded, the highest bidder wins.
+An auction can have a time period between the bids. So for example if nobody made a better bid than the last one in 10 minutes, auction is concluded and the last bidder wins.
+An auctioneer can even end the auction in any moment he chooses (usually when he is satisfied with the price).
+There can be also various configurations parameters like auction length, minimum value of the next bid or list of invited participants (so called "permissioned auction").
 
 #### Auction type generalization
 
@@ -41,7 +39,50 @@ As the long-term goal is to support as many different types of auctions as possi
 
 As stated in the project overview, we're strong believers in the quality over quantity approach. We'd also like to re-introduce the concept of scarcity and exclusivity in the NFT space which is slowly fading out in the Ethereum world from our point of view. To make that happen, we'd set up DAO for content curation where we would initially serve as the curators to avoid possible abusive content and eventually allow the community to participate.
 
-We plan to leverage most of the governance features available on Polkadot. The first cornerstone of governance will be the council who will be voted on and will be deciding in referenda on the shape of the application - its modules, features, and functionality. The second cornerstone will be voted content curators who will be delegated from the council to approve or reject public proposals from the community, manage auctions and provide the optimal level of content safety and creativity. 
+We plan to leverage most of the governance features available on Polkadot. The first cornerstone of governance will be the council who will be voted on and will be deciding in referenda on the shape of the application - its modules, features, and functionality. The second cornerstone will be voted content curators who will be delegated from the council to approve or reject public proposals from the community, manage auctions and provide the optimal level of content safety and creativity.
+
+## Governance
+Introduction of our own token for governance purposes, payment of fees and bidding in the auctions
+Introducing council that will basically “own” the entire project and any member of community who proves himself can become a part of it
+Council will be able to set fees, fund interesting activities from the treasury or create proposals/referendums for the community
+Council can elect curators that will manage platforms content
+It is expected that council will drive the project towards more interesting and experimental use-cases than plain auctions of art - settting up identities, tokenize real world assets etc.
+
+There are several approaches to governance that we have in mind.
+
+### Part of the auction pallet
+This makes the most sense at the first sight because we can then utilize the power of Substrate to implement governance via collectives, democracy and voting pallets. However, our plan is to make the auction pallet really flexible and introducing governance can pollute auctions with unnecessary complexity regarding the governance (and thus make it less re-usable for anybody who would like to implement another system on top of our pallet). 
+
+### Separate pallet
+This seems like an ideal solution because it has a benefit of using Substrate but factors out all governance functionality to a separate pallet. Downside would be that each NFT platform where we plan to integrate our auction-pallet would have to integrate two pallets instead of one to their runtime.
+
+### Smart contract
+Smart contract approach has following advantages
+Factoring our governance while keeping only one pallet at the same time
+Easy integration of our auctions to multiple NFT chains since the only connection to the governance is reference to our smart contract thus we end up with only instance of governance while having multiple auction implementation sitting on different chains
+However, downside is obviously not exploiting great capabilities that Substrate offers and having to implement a lot of stuff by reinventing the wheel. 
+
+### Token
+To be honest, we haven’t decided whether this project deserves its own token but we are more inclined to have one. The reason is, if we want to introduce proper governance and have our auctions usable across multiple chains, then there has to be a chain-agnostic way to elect members of council, approve new content, change rules of the auctions, etc. 
+In that case, smart contract keeping the token seems like a best choice since we can have a governance body supported by our tokenomics completely independent of the underlying platform where our auctions run.
+
+### Curatorship
+Curatorship is closely tied to the governance since only approved members can have elevated privileges over the system (e.g. vote on removal of inappropriate content). Any user can report offensive content to the curators. Curators then remove the content or reject the report. We will probably run a Discord/Telegram channel to open a discussion about a right way to do the curatorship and what kind of stuff if acceptable for public auctioning and what is not 
+
+## Content curation
+
+### Positive motivation
+Users will be incentivized to provide a good quality content by either getting tips from the council for a good catch or fullfilling bounties which were announced by other uses. As an example, there can be a user who wants to own a digital art collectible but is not able to or does not have time to search for it. If another user provides such a collectible to the marketplace, they can be rewarded not only by the collectible price but a bounty on top of it.
+
+### Negative motivation
+On the other hand, unsolicited content will be removed and the person who advertises it will be punished depending on the level of severity.
+
+|Offence level|Content property|Example|Punishment|
+|----|---------|----------|--------------------------|
+|1|Inappropriate|Pornography|Slash up to 50% of the reserved funds for a specific purpose (e.g. auction) + up to 10% of total funds|
+|2|Offensive|Explicit brutal content like violence/accidents|Slash up to 100% of the reserved funds for a specific purpose (e.g. auction) + up to 20% of total funds|
+|3|Harmful|Child porn/Women abuse|Slash up to 100% of the total funds|
+
 
 #### Business Model Mechanics
 
@@ -134,6 +175,18 @@ See [Candle Auction Type](#candle-auction-type) and [Top-up Auction Type](#top-u
 - The code will have proper unit-test coverage to ensure functionality and robustness.
 - Provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
 
+#### Candle Auction Type
+
+Candle auction is a variant of the English auction where the last part of the auction is randomized in the sense that it can be concluded anytime. This prevents bidders from leaving their bids to the last few minutes or seconds and it's fairer in the internet environment where bots can bid on behalf of the buyers. The configuration of such an auction will be very similar to the English one.
+
+[Candle Auction Type Diagram](https://github.com/green-jay/Open-Grants-Program/blob/24ed082bf5a6778392d6264ffc81cbbed77acfc2/applications/candle_auction.png?raw=true)
+
+#### Top-up Auction Type
+
+This is a very popular auction type used by charities. Each participant will pay a "top-up fee" which is based on the bid he made minus the closest lower bid. This effectively means that each participant will pay the top-up fee except the first and the last bidder. The last bidder wins the auction, obtains the item, and only pays the item's price. We believe that bringing this kind of auction type enables entities to raise funds for good causes so that we can connect socially responsible projects with supporters and philanthropists.
+
+[Top-up Auction Type Diagram](https://github.com/green-jay/Open-Grants-Program/blob/24ed082bf5a6778392d6264ffc81cbbed77acfc2/applications/topup_auction.png?raw=true)
+
 ### Milestone 2: Governance, Content Curation & Business Model Mechanics
 
 See [Governance and Content Curation](#governance-and-content-curation) and [Business Model Mechanics](#business-model-mechanics) for definitions.
@@ -146,7 +199,8 @@ See [Governance and Content Curation](#governance-and-content-curation) and [Bus
 - Deliver docker-compose file to run node
 - The code will have proper unit-test coverage to ensure functionality and robustness.
 - Provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
-  ...
+- See [Governance and Content curation specification](#governance-and-content-curation)
+
 
 ### Community engagement
 
