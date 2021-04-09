@@ -82,11 +82,11 @@ Doter is maintained by the [ChainBridgeNetworkTeam](https://github.com/ChainBrid
 * WeChat Official Accounts：ChainBridgeNetwork  
 
 ### Team's experience
-* Guan Yu
+* Guan Yu  
 He participated in Polkadot's official crowdfunding campaign in 2017 and has continued to be active in the Polkadot community ever since.
 From July 2018 to the present, he has been serving as a product manager for Pinduoduo Inc.(listed on NASDAQ), responsible for building core business modules such as CPS. He has 3 years of experience in large-scale Internet companies, is familiar with the development and maintenance of large-scale products, and is good at leading the business from 0 to 1 and achieving rapid growth.  
 
-* Gao Jianli
+* Gao Jianli  
 He joined Pinduoduo Inc.（listed on NASDAQ）in 2018 and became a full-time front-end development engineer. Responsible for the maintenance of the website promotion page, maintenance and development of the weChat applet architecture Project deployment and launch, development of productivity tools.
 He has three years of development experience, is familiar with project deployment and front-end technology stack, and is keen on Polkadot ecological technology trends.  
 
