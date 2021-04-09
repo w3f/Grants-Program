@@ -11,6 +11,7 @@ jobs:
     - uses: davideviolante/pr-automerge-action@v1.2.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: 'w3f/Open-Grants-Program'
       with:
         merge-method: 'squash'
         min-approvals: 3
