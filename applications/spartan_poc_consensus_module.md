@@ -128,7 +128,7 @@ We each have three years experience designing and building blockchains and decen
 ### Overview
 * **Total Estimated Duration:** 12 weeks
 * **Full-Time Equivalent (FTE):**  2 FTE
-* **Total Costs:** 30,000 DAI
+* **Total Costs:** 29,999 DAI
 
 ### Milestone 1 — Implement Local Development Chain 
 * **Estimated Duration:** 4 weeks
@@ -139,7 +139,7 @@ This milestone will allow for the operation of a local development chain, with a
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | MIT |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up a Spartan farmer and client to create a local development chain. Once the node is up, it should produce blocks when the farmer presents a valid solution. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the documentation and blog post, we will describe how to run these tests. | 
 | 0d. | Article | We will publish a blog post that explains the architecture of Spartan as it relates to Substrate, how it can be used for any abstract slot-based, proof-of-space consensus protocol, and how to run a local development chain.
@@ -162,7 +162,7 @@ This milestone will extend the local development chain into a test network. Full
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | MIT |
+| 0a. | License |  Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up a Spartan farmer and client, connect to the client via the browser, and create a local test network.|
 | 0c. | Testing Guide | Higher level functionality will be covered by integration tests. In the guide, we will describe how to run these tests. | 
 | 0d. | Article | We will publish a blog post that shows the Spartan testnet is live and how it can be benchmarked via the browser app.
@@ -175,13 +175,13 @@ This milestone will extend the local development chain into a test network. Full
 ### Milestone 3 — Implement Secure Testnet 
 * **Estimated Duration:** 4 Weeks
 * **FTE:**  2
-* **Costs:** 10,000 DAI
+* **Costs:** 9,999 DAI
 
 This milestone will extend naive consensus to be secure against all known attacks, as described in the technical whitepaper. Each attack will be analyzed through a security simulation, which will compare the operation of two nodes with slightly different implementations, or working off different branches of a fork, with different storage capacity. 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | MIT |
+| 0a. | License |  Apache 2.0 |
 | 0b. | Documentation | Each security simulation will include inline documentation describing the attack and how to interpret the results. |
 | 0c. | Testing Guide | A different security simulation will be provided for each attack. In the guide, we will describe how to run these simulations and interpret the results. Note these simulations will not result in an objective test, but will instead show the probability that an attack might succeed or the amount of additional resources required to execute the attack. | 
 | 0d. | Article | We will publish a blog post that the describes the nature of each attack and how Spartan preforms.
