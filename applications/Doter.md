@@ -118,8 +118,8 @@ Gao Jianli：https://www.linkedin.com/in/jianli-gao-6785a1140/
 
 ### Overview
 * Total Estimated Duration: 3 month
-* Full-time equivalent (FTE): 120 
-* Total Costs: $45,000
+* Full-time equivalent (FTE): 60 
+* Total Costs: $22,500
 
 ### Milestone
 #### M1: Wallet basic module
