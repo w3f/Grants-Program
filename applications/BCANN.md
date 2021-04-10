@@ -14,7 +14,7 @@
 ## Project Overview :
 
 ### Overview
-  BCANN wants to be the icann of the blockchain world.
+  BCANN wants to be the ICANN of the blockchain world.
 
   DNS is the infrastructure of the Internet,a efficient resource addressing method.
 
@@ -40,8 +40,125 @@
 
 ### Project Details 
 
-[architecture](https://drive.google.com/file/d/1UOiDbTQKF-MkzXloaOCWcnGUdCgARjaA/view?usp=sharing)
+[architecture](https://drive.google.com/file/d/1fiNZ0lcrGKrpdtkaXBjIILGvdXk-NMdD/view?usp=sharing)
 
+[how to work with DNS](https://drive.google.com/file/d/1KgIVgRHlRoEDsLtY5bhv3_5nPZjpO4-a/view?usp=sharing)
+
+DNS Prodiver: We create a centralized prodiver to managing/modifying domain name through a traditional domain registrar.
+
+There some centralized service need to implement for BCANN work with internet DNS .Decentralized domain name service is the future, but DNS is the infrastructure of the Internet, we need to be compatible with DNS, and give users enough time window to migrate to decentralized domain name service.
+
+**Make the name as an NFT**
+Every name is different, you can  transfer/trade/rental it when make it as an NFT. In the traditional domain name industry, transferability/tradability/leasability is the basic condition for the existence of the domain name trading market.And we have a future plan to develop an NFT name/subname market on chain.
+
+#### Interface Specification
+
+Main interface (Users can implement the Resolver by themselves for extension)
+```
+1. name registry
+    /**
+     * @dev Sets the record for a name.
+     * @param name The name to update.
+     * @param owner The address of the new owner.
+     * @param resolver The address of the resolver.
+     * @param ttl The TTL in seconds.
+     */
+    func setRecord(name, owner,resolver,ttl);
+
+     /**
+     * @dev Sets the record for a subname.
+     * @param name The parent name.
+     * @param label The hash of the label specifying the subname.
+     * @param owner The address of the new owner.
+     * @param resolver The address of the resolver.
+     * @param ttl The TTL in seconds.
+     */    
+    func setSubnameRecord(name, label, owner, resolver, ttl); 
+
+     /**
+     * @dev Returns the resolver for the specified name.
+     * @param name The specified name.
+     * @return address of the resolver.
+     */
+    func resolver(name) return (resolver);
+
+     /**
+     * @dev Returns whether a record has been imported to the registry.
+     * @param name The specified name.
+     * @return Bool if record exists
+     */
+    func exists(name) return (bool) 
+
+2. name resolver
+   DnsResolver
+    /**
+     * Set one or more DNS records.
+     * @param name the name for which to set the records
+     * @param data the DNS wire format records to set
+     */
+   func setDNSRecords(name,data);
+   
+    /**
+     * Obtain a DNS record.
+     * @param name the name for which to fetch the record
+     * @param fullname the fully-qualified name for which to fetch the record
+     * @param resource the ID of the resource as per https://en.wikipedia.org/wiki/List_of_DNS_record_types
+     * @return the DNS record
+     */
+    func dnsRecord(name, fullname, resource) return (data);
+
+   AddrResolver
+    /**
+     * set a addr record.
+     * @param name the name for which to set the records
+     * @param fullname the fully-qualified name for which to fetch the record
+     * @param the address of the coin type
+     * @return the DNS record
+     */
+    func setAddr(name,coinType,addr);
+
+    /**
+     * Obtain a coin address record.
+     * @param name the name for which to set the records
+     * @param fullname the fully-qualified name for which to fetch the record
+     * @return the coin address record
+     */
+    func addr(name,coinType) return (address);
+   NameResolver
+    /**
+     * Sets the name associated with a BCANN name, for reverse records
+     * May only be called by the owner of that name in the BCANN registry.
+     * @param name The name to update.
+     * @param nameVal The name value.
+     */
+    func setName(name,nameVal);
+
+    **
+     * Returns the name associated with a BCANN name, for reverse records.
+     * @param name The BCANN node to query.
+     * @return The associated name.
+     */
+    func name(name) return (nameVal);
+   TextResolver
+    /**
+     * Sets the text data associated with a BCANN name and key.
+     * May only be called by the owner of that name in the BCANN registry.
+     * @param name The name to update.
+     * @param key The key to set.
+     * @param value The text data value to set.
+     */
+    func setText(name, key, value);
+
+    /**
+     * Returns the text data associated with a BCANN name and key.
+     * @param node The BCANN node to query.
+     * @param key The text data key to query.
+     * @return The associated text data.
+     */
+    func text(name, string calldata key) return (text);
+   
+   PublicResolver:DnsResolver,AddrResolver,NameResolver,TextResolver
+```
 ### Ecosystem Fit 
 
 There is a [deeper.network](https://github.com/w3f/Open-Grants-Program/blob/master/applications/deeper_network.md) project which include Decentralized DNS. There are several diferences worth highligting:
@@ -121,6 +238,7 @@ We come from a long-term cooperation team, we have many years blockchain industr
 
 ### Milestone 1: Initial implementation, Name Service Registry and Name Resolver
 * **Estimated Duration:** 4 weeks
+* **Full-time equivalent (FTE):**  2
 * **Costs:** 10,000 DAI
 
 | Number | Deliverable | Specification |
@@ -129,11 +247,19 @@ We come from a long-term cooperation team, we have many years blockchain industr
 | 0b. | Documentation | We will provide inline documentation of the code and basic tutorials, which will explain how to use name services|
 | 0c. | Testing coverage | The code will have unit-test coverage (min. 90%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1. | Module design| The name/sub-name will enable NFT support for names transfer/rental services |  
-| 2. | Customizable Resolver | We will implement methods to set up custom resolver|  
+| 2. | Customizable Resolver | We will implement methods to set up custom resolver|
+
+We will implement the protocol at this milestone. The deliverable part includes:
+a. Official website with project introduction
+b. Source code and documentation of the protocol
+c. Unit testing and test documentation
+d. Test protocol deployed on the chain
+
 
 ### Milestone 2: Phase 1 of name services dapp 
 
 * **Estimated Duration:** 4 weeks
+* **Full-time equivalent (FTE):**  3
 * **Costs:** 10,000 DAI
 
 | Number | Deliverable | Specification |
@@ -143,9 +269,14 @@ We come from a long-term cooperation team, we have many years blockchain industr
 | 0c.   | Testing Guide | We will provide users with a test name services, and users can get a 30-day test period for a  name/subname |
 | 1. | ns dapp| We will implement a dapp to get/manage/transfer your name/subname. 
 
+We will implement a dapp at this milestone. The deliverable part includes:
+a. Dapp for get/manage/transfer your name/subname
+b. Dapp for get/manage/transfer your name/subname for test purpose (free name/subname)
+
 ### Milestone 3: Phase 2 of name services dapp 
 
 * **Estimated Duration:** 4 weeks
+* **Full-time equivalent (FTE):**  3
 * **Costs:** 10,000 DAI
 
 | Number | Deliverable | Specification |
@@ -153,6 +284,12 @@ We come from a long-term cooperation team, we have many years blockchain industr
 | 0a.   | License       | Apache 2.0 |
 | 0b.   | Documentation |Documentation We will provide how to get a name/subname with a real internet domain, how to use your name/subname with internet domain name |
 | 1. | ns dapp| We will implement a dapp to get/manage/transfer your name/subname with a real internet domain name. 
+
+We will improve the dapp at this milestone. The deliverable part includes:
+a. Buy a domain name package(a name on chain with a real internet domain name)
+b. Manage/transfer your name(include name package)
+c. Centralized synchronization service between name on chain and internet domain name
+d. Centralized provider service for internet domain name
 
 ## Future Plans
  1. We will implement a name/subname NFT market which offer trading service & rental service
