@@ -18,7 +18,7 @@ Now, we can already [install Doter](https://chrome.google.com/webstore/detail/do
 ### Project Details 
 
 #### Functional structure
-![img](https://uploader.shimo.im/f/3kOOtlNIt4eMpF5A.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2MTc4NDMwNzMsImciOiJtNGtNTFpweGJuczYxQnFEIiwiaWF0IjoxNjE3ODQxMjczLCJ1Ijo1MjU3NjQ4MX0.-mNzWD92LrbP3ECC42XhCJrIxQqDVhepXo_KK3yXEgQ)  
+![img](https://uploader.shimo.im/f/I3rkNr5ykNaDYeOp.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2MTgwNDY0NDEsImciOiJtNGtNTFpweGJuczYxQnFEIiwiaWF0IjoxNjE4MDQ0NjQxLCJ1Ijo1MjU3NjQ4MX0.o5hhoChtugFWF8bsiXB5ppARhHPtEj36XIzFyJHsBYo)  
 #### Core components
 The Doter consists of several core components：  
 
@@ -54,14 +54,29 @@ A lot of common community public packages are used to ensure the consistency and
 
 ### Ecosystem Fit 
 
+#### Competitive product analysis
 Polkadot's browser extension wallet, the currently known competitor is Enzyme.  
-* From the perspective of feature richness, the functional modules achieved by Doter's first milestone have exceeded Enzyme, and more functional modules that will serve the Polkadot ecology will be implemented in the plan.  
-* From the perspective of UI experience, Doter is a real user-centric wallet. A clear and concise UI experience is more attractive to users, and Doter has achieved Chinese and English language switching, which has a wider potential user group.  
-* From the perspective of github maintenance frequency, Enzyme has not been maintained for more than 1 year. In contrast, Doter has a clear development roadmap and the code base is constantly updated.  
+* From the perspective of feature richness, the functional modules achieved by Doter's first milestone have exceeded Enzyme (Recently, we have completed the first milestone), and more functional modules that will serve the Polkadot ecology will be implemented in the plan.  
+* From the perspective of UI experience, Doter is a real user-centric wallet. A clear and concise UI experience is more attractive to users, and Doter has achieved Chinese and English language switching, which has a wider potential user group.    
+* From the perspective of github maintenance frequency, Enzyme has not been maintained for more than 1 year. In contrast, Doter has a clear development roadmap and the code base is constantly updated.   
 
-Analogous to MetaMask, in the current industry environment, browser extension wallets are more convenient to interact with DApp than mobile wallets. Doter is positioned as a browser extension wallet and has a first-mover advantage in the product direction.  
+#### The difference between Doter and polkadot.js extension
+Polkadot.js extension is an official account management tool, Compared with polkadot.js extension, Doter's positioning is not only an account management tool. 
+Doter will also implements a series of common functions in Polkadot ecology, such as Transfer and receive, query transaction records, wallet management, easy-to-operate on-chain governance modules, staking modules, etc. This means that doter can not only interact well with other dapps, but also independently complete the functions mentioned above, providing users with a one-stop experience, which polkadot.js extension does not have.   
 
-At the same time, most of the current mobile wallets connected to Polkadot are not dedicated to the Polkadot ecosystem, and there is no in-depth development based on Polkadot. Doter focuses on the Polkadot ecosystem and enables more users to participate in the Polkadot ecosystem through customized and truly friendly interactive experience.   
+In addition, Doter will also provide a completely user-centric UI experience to make it easier for users to participate in the Polkadot ecosystem.  
+
+#### Product direction and advantages
+Analogous to MetaMask, in the current industry environment, browser extension wallets are more convenient to interact with DApp than mobile wallets. Doter is positioned as a browser extension wallet and has a first-mover advantage in the product direction.    
+
+At the same time, most of the current mobile wallets connected to Polkadot are not dedicated to the Polkadot ecosystem, and there is no in-depth development based on Polkadot. Doter focuses on the Polkadot ecosystem and enables more users to participate in the Polkadot ecosystem through customized and truly friendly interactive experience.  
+
+#### How to maintain the wallet
+In the near future, Our team will have someone in charge of maintaining the Doter, Update at least once a month to fix bugs or improve the experience，to making Doter as close as possible to mature browser extension in other ecosystems(such as Ethereum)  
+
+Simultaneously, we will build our own community as soon as possible. We believe that a solid community is the foundation for Doter to seize the market, Through word of mouth from seed users, we will accumulate the first batch of users. After completing all the milestones, we will place advertisements in a number of blockchain media, and rapidly expand the number of users through advertising. Secondly, we will embed a frequently used DApp in the wallet and cultivate user habits through this, so that Doter will gradually become the portal of the Polkadot ecosystem.  
+
+In summary, we have appropriate market timing, clear product direction, reliable development progress, friendly UI experience, detailed operation planning, and the most important thing is that we have a reliable team, We have 3 Years of work experience in NASDAQ listed company, we have the ability to make Doter a competitive product.  
 
 ## Team
 
@@ -109,37 +124,45 @@ Gao Jianli：https://www.linkedin.com/in/jianli-gao-6785a1140/
 ### Milestone
 #### M1: Wallet basic module
 * Estimated Duration: 1.5 month
-* FTE: 60
-* Costs: $22,500（2 contributors * 6 weeks * $1,875/week）
+* FTE: 36
+* Costs: $13,500（2 contributors * 18 FTE * $375/FTE）
+
+**In particular, we have completed the first milestone and The extension has been listed on the Google extension market. You can [install Doter](https://chrome.google.com/webstore/detail/doter/abamjefkidngfegdjbmffdmbgjgpaobf) right away and verify the first milestone.**
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | At this milestone, we have achieved the following modules:  <br />Create wallet <br />Import wallet  <br />Transfer and receive<br />Wallet settings  <br />Wallet management  <br />Transaction record  <br />Referendum on the chain  <br />Based on these basic modules, users can already easily manage assets and participate in the referendum on proposals |
+| 0b. | Documentation and Implementation | At this milestone, we have achieved the following modules:  <br />Create wallet <br />Import wallet  <br />Transfer and receive<br />Wallet settings  <br />Wallet management  <br />Transaction record  <br />Referendum on the chain  <br />Based on these basic modules, users can already easily manage assets and participate in the referendum on proposals |
+| 0c. | Delivery time | completed |
+| 0d. | How to verify | You can already [install Doter](https://chrome.google.com/webstore/detail/doter/abamjefkidngfegdjbmffdmbgjgpaobf) in the Google Extended Market and verify the functional modules promised in the first milestone |
 
 #### M2：Injection and signature
 
 * Estimated Duration: 0.5 month
-* FTE: 20
-* Costs: $7,500（2 contributors * 2 weeks * $1,875/week）
+* FTE: 8
+* Costs: $3,000（2 contributors * 4 FTE * $375/FTE）
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Description | We will implement the account injection function of the extension. When users interact with any Dapp, they can use the account registered in the Doter to perform related operations |
+| 0c. | Delivery time | Early May |
+| 0d. | How to verify | It is expected that in early May, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the second milestone |
 | 1.  | Core component | Establish conmmunication mechanism between background.js, content.js and injectScript.js. |
 | 2.  | Implementation | At the right time, We will call up the Auth page and the transaction signature page, and return the result to the Dapp page |
 
 #### Governance and staking
 
 * Estimated Duration: 1 month
-* FTE: 40
-* Costs: $15,000（2 contributors * 4 weeks * $1,875/week）
+* FTE: 16
+* Costs: $6,000（2 contributors * 8 FTE * $375/FTE）
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Description | We will improve the democratic governance function of Doter so that users can easily conduct board elections and support community proposals. At the same time, we will build a more friendly staking module to make it easier for users to participate in staking |
+| 0c. | Delivery time | Early June |
+| 0d. | How to verify | It is expected that in early June, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the third milestone |
 | 1.  | Core component | With the official Polkadot API, we will be able to access the proposal module, council election module, staking module, and provide a good user experience |
 
 ## Community engagement
