@@ -77,7 +77,7 @@ Curatorship is closely tied to the governance since only approved members can ha
 Users will be incentivized to provide a good quality content by either getting tips from the council for a good catch or fullfilling bounties which were announced by other uses. As an example, there can be a user who wants to own a digital art collectible but is not able to or does not have time to search for it. If another user provides such a collectible to the marketplace, they can be rewarded not only by the collectible price but a bounty on top of it.
 
 ### Negative motivation
-On the other hand, unsolicited content will be removed and the person who advertises it will be punished depending on the level of severity.
+On the other hand, we're aware the content needs to be moderated to some extent because of possible unsolicited character. In the first place we aim to combat this by starting with VIP auctions that will be pre-approved by the council before public launch. Eventually we plan to open the auction creation process a bit more and start to allow create auctions without council approvement based on gaining reputation by using our platform without violation of rules. Once our solution starts to offer these kind of public auctions for almost anyone to create, we want to introduce a penalty system to control that unsolicited content will be removed and the person who advertises it will be punished depending on the level of severity. The slash might be taken from a security deposit at the time user creates the auction.
 
 |Offence level|Content property|Example|Punishment|
 |----|---------|----------|--------------------------|
@@ -140,7 +140,7 @@ Besides blockchain development, each member has 5+ years of experience in Comput
 
 - **Total Estimated Duration:** ~2 months
 - **Full-time equivalent (FTE):** 3.5
-- **Total Costs:** ~30,000 USD
+- **Total Costs:** ~28,000 USD
 
 ### Technologies used
 - Built as a standalone auction module using **Rust** and **Substrate**
@@ -168,14 +168,15 @@ See [Auction Type Generalization](#auction-type-generalization) for definitions.
 See [Candle Auction Type](#candle-auction-type) and [Top-up Auction Type](#top-up-auction-type) for definitions.
 
 - **Estimated Duration:** 1-2 weeks
-- **FTE:** 3.5
-- **Costs:** $6,000
+- **FTE:** 2.5
+- **Costs:** $4,000
 - Implement:
   - the [Candle Auction Type](#candle-auction-type), a specific type for NFT auction to prevent snipping (placing bids in the very last second to gamble the system)
   - the [Top-up Auction Type](#top-up-auction-type), a specific type for NFT auction usually used for fundraising or charity auctions
 - Deliver docker-compose file to run node
 - The code will have proper unit-test coverage to ensure functionality and robustness.
 - Provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
+- Record demo walkthrough recording to better illustrate how to set up auctions of different types and describe different mechanics between each of them.
 
 #### Candle Auction Type
 
