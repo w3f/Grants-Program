@@ -18,7 +18,7 @@ The issuance of DataToken is created and operated by DataMaker, and is cross-cha
   
   * Cross-chain between privacy computing parachains based on Polkadot substrate.
   
-  * Preserving privacy data with TEE or Federated Computation without moving the plain-text out of data owner's devices.
+  * Leverage Task Oracle to execute tasks on other computation network, there are Preserving privacy data based on TEE or Federated Computation without moving the raw data out of data owner's devices.
 
 ### Project Details 
 
@@ -158,6 +158,29 @@ Based on the architecture, computing tasks could process data on user devices, a
 
 ![图片](https://github.com/datadex-trade/Documents/blob/main/DataDEXflow.png?raw=true)
 
+#### Scenario example: Data Owners share personal medical data to get benefits
+···
+0. Preparation
+Data Owner download medical record data to local device through [FHIR][FHIR]-based applications on [Android Phone][FHIR_android] , [iPhone][FHIR_ios] or [Windows PC][FHIR_azure].
+
+1. Register Medical Data
+Use the Registration Tool to transform the data into the UserProfile.MedicalRecord format in the DataGraph and submit the request.
+The RegistrationTool submits the request to TaskOracle to trigger the Legality Checking Task, and is dispatched to the Data Owner's device to check with the raw data.
+
+   1.1 malicious checking, if the Data Owner steals other people’s data and only modifies a small part of the submission, the Legality Checking Task will find that it is very similar to the existing data, Checking Fail
+
+   1.2 If the Legality Checking Task passes the check, the registration request and data hash are broadcast, and the DataGraph is updated.
+
+2. Dataset Maker, who are experiences at medical data operations, invite Data Owner to contribute data to the Dataset and get DataToken as rewards.
+
+3. Pharmaceutical R&D companies purchase DataToken to run training tasks, and schedule tasks to user devices through TaskOracle, and access raw data in DataGraph.
+
+   3.1 If the data is not available, the Task should failed to run
+   
+   3.2 If the data is not correct, the hash checking would not be verified. The task should failed.
+
+   3.2 If the data is available, the Task runs successfully, and the DataOwner gets the DataToken incentive
+···
 ### Data Pricing
 
 #### Data Token AMM
@@ -175,6 +198,8 @@ Data Consumer first needs to prepare a certain amount of PHALA/ALITA to pay for 
 Data Token Costs = K * (PHA/ALITA/...)
 
 Total Costs = Data Token Costs + Computing Costs
+
+In addition, cost calculation and data price measurement are already common pricing strategies in cloud computing like AWS [data infrastructure][Spectrum_pricing] and [data exchange service][Exchange_Subscription].
 
 ### Ecosystem Fit 
 
@@ -271,6 +296,10 @@ At present, we have developed some prototype systems based on other public chain
 
 ## References
 
-##### [Spectrum_pricing](https://aws.amazon.com/redshift/pricing/#Redshift_Spectrum_pricing)  AWS Redshift Spectrum pricing
-##### [Exchange_Subscription](https://aws.amazon.com/data-exchange/faqs/#Subscriber)  AWS Data Exchange Subscription
-##### [FL_Dataset](https://ai.googleblog.com/2017/04/federated-learning-collaborative.html) Google FL: One High Quanlity Dataset Distributed across millions of Phones
+[Spectrum_pricing]: https://aws.amazon.com/redshift/pricing/#Redshift_Spectrum_pricing  "AWS Redshift Spectrum pricing"
+[Exchange_Subscription]: https://aws.amazon.com/data-exchange/faqs/#Subscriber "AWS Data Exchange Subscription"
+[FL_Dataset]: https://ai.googleblog.com/2017/04/federated-learning-collaborative.html "Google FL: One High Quanlity Dataset Distributed across millions of Phones"
+[FHIR_android]: https://cloud.google.com/healthcare/docs/concepts/fhir "Goole Cloud API for FHIR"
+[FHIR_ios]: https://www.apple.com/healthcare/health-records/  "Apple Health Built with industry standards FHIR"
+[FHIR_azure]: https://azure.microsoft.com/en-us/services/azure-api-for-fhir/ "Azure API for FHIR"
+[FHIR]: https://en.wikipedia.org/wiki/Fast_Healthcare_Interoperability_Resources "Fast Healthcare Interoperability Resources"
