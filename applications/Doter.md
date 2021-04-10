@@ -151,7 +151,7 @@ Gao Jianli：https://www.linkedin.com/in/jianli-gao-6785a1140/
 | 1.  | Core component | Establish conmmunication mechanism between background.js, content.js and injectScript.js. |
 | 2.  | Implementation | At the right time, We will call up the Auth page and the transaction signature page, and return the result to the Dapp page |
 
-#### Governance and staking
+#### M3 Governance and staking
 
 * Estimated Duration: 1 month
 * FTE: 16
