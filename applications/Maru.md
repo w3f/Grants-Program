@@ -1,3 +1,5 @@
+# Open Grant Proposal
+
 * **Project Name:** Maru
 * **Team Name:** Maru Entertainment
 * **Payment Address:** 0x627babD3C9dec5aaDcDAA3E74a207A99A211d5A7
