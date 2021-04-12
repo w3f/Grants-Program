@@ -2,7 +2,7 @@
 
 * **Project Name:** Bandot Unsecured Lending Protocol
 * **Team Name:** Bandot Foundation
-* **Payment Address:** 3MJbbeThBc7uXVkhJuq8y6jmX5EVrjBXR2
+* **Payment Address:** 0x062c21d82aF13C6e386cCaDe7865E88F6Bde306E
 
 ## Project Overview :page_facing_up: 
 
@@ -57,9 +57,66 @@ The image above shows the process of unsecured lending.
 5. Then Alice will delegate the amount to Bob;
 6. Bob can get his loan from the pool.
 
+#### Pros and Cons
+
+Pros and Cons from users perspective:
+
+**Borrowers**
+
+Input ksm/dot (for over-collateral) Output bUSD
+2 ways to join the party: Credit delegation(mostly for organizations) / KYC application(mostly for individuals) + vote
+Can pay back in portion based on daily-charged interest(higher when it’s pass the due date)
+KYC application -> vetted -> white list(limited amount?) -> higher loan(good record book)
+
+- Risk
+  More fee + lawsuit/liquidation if default
+- Benefit
+  Utilize the provided liquidity with/without collateral
+
+**Lenders**
+
+- Risk
+  Default loans cause money losing
+- Benefit
+  High APR 10%
+
+**Bandot platform**
+
+Reserve pool, Record book
+
+- Risk
+  Bad loans
+- Benefit
+  Platform fee
+
+**Risk Management**
+
+- Openlaw, a blockchain-based protocol for the creation and execution of legal agreements, use smart contracts and laws to ensure that loans will be repaid on time
+- Credit model, KYC,DID,
+- Bandot Council, Insurance + Emergency Shutdown
+
 #### Limitations
 
 At current stage, team only implement the funding pool contract and oracle module for the protocol. After investigating OpenLaw integration, team would integrate OpenLaw into the protocol.
+
+**Initial OpenLaw workflow**
+
+The underlaying workflow v0.1:
+
+Work paths: Openlaw(vault) -> Moonbeam(pallet_evm) -> Bandot ink!(chain_extension)
+
+First of all, we need to know how moonbeam bridge works. The whole bridge is composed of bridge contracts, handler contracts and  relayer on both of the source chain and the target chain. The target contracts from both sides will implement the cross chain message passing.
+
+The process works as follow:
+
+* User A deposits bUSD(Bandot stable coin), and gets the pool tokens in return from the pool to represent the deposited assets. The pool tokens can be traded in the second market for the purpose of providing liquidity. User A can also choose to delegate the right to use part of the tokens to the borrowers.
+* User B would like to borrow the tokens. After selecting the interest rate, repay time and other parameters in the market, he/she choses A as the lender and clicks “Sign”.
+* This “Sign” will activate Openlaw and inform A to sign the contract, which is protected by law.
+* Openlaw will create a contract called valut, which is the intermediary contract between A and B to mark the amount of delegated tokens that can be used with the above operation, Bandot will perform the following steps to use the valut.
+* Take this valut contract as the target contract in the figure above(From Moonbeam), and implement the contract on Ethereum through Moonbeam. So that there are target contracts in both Moonbeam and Ethereum network. The operations on the target (valut) contract on Moonbeam will be synchronized to Ethereum by the bridge.
+* User B calls the borrowing function to borrow the assets. Our bank contract can send cross chain messages to moonbeam through chain extension in Bandot, reducing the amount of available delegated tokens in the valut.
+* Then it will trigger the Borrow function on Bandot (as A) to borrow the tokens. Meanwhile, the pool will generate the debt tokens which represent the mount of tokens got lend and give them to A.
+* User B pays back to the pool, which will reduce A’s debt tokens.
 
 ### Ecosystem Fit 
 
@@ -121,12 +178,12 @@ https://github.com/bandotio/unsecured-lending
 ### Overview
 * **Total Estimated Duration:** 2.5 months
 * **Full-Time Equivalent (FTE):**  4 FTE
-* **Total Costs:** 0.5 BTC
+* **Total Costs:** 29k USD
 
 ### Milestone 1 — Implement Contract 
 * **Estimated Duration:** 1.5 month
 * **FTE:**  4
-* **Costs:** 0.3 BTC
+* **Costs:** 17,400 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -139,7 +196,7 @@ https://github.com/bandotio/unsecured-lending
 
 * **Estimated Duration:** 1 month
 * **FTE:**  4
-* **Costs:** 0.2 BTC
+* **Costs:** 11,600 USD
 
 | Number | Deliverable         | Specification                                                |
 | -----: | ------------------- | ------------------------------------------------------------ |
