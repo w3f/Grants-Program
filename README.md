@@ -142,6 +142,8 @@ We have Element channels for real-time discussions on Web3 and Polkadot. Join th
 
 ## :rocket: Alternative Funding Sources
 
+Some funding sources might be more and some less suitable for your project throughout its various stages. We encourage you to explore alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
+
 ### Treasury
 
 The treasury is a pot of on-chain funds collected through transaction fees, slashing, staking inefficiencies, etc. The funds held in the treasury can be spent on spending proposals. Both [Polkadot](https://polkadot.network/) and [Kusama](https://kusama.network/) offer everyone the opportunity to apply for funding via the treasury. See:
@@ -153,6 +155,13 @@ The treasury is a pot of on-chain funds collected through transaction fees, slas
 ### General Grants Program
 
 For larger grants, payments in fiat or partially private submissions, please see our [General Grants Program](https://github.com/w3f/General-Grants-Program).
+
+### Hackathons
+
+From time to time, Web3 Foundation and/or Parity organise hackathons to promote quick prototyping of your Polkadot related ideas.
+We highly encourage you to participate in these hackathons. Bear in mind, however, that you cannot submit the **same work** for a hackathon and the Grants Program. If you have worked on a project for a hackathon, your grant application should either propose a new set of features or otherwise build on top of your previous work. The same applies in reverse, although that will likely be less common.
+
+The best way to find out about upcoming hackathons is by following Polkadot on the various channels, such as Element or Twitter.
 
 ### Other Grant Programs
 
