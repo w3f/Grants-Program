@@ -3,7 +3,7 @@
 
 * **Project Name:** Quadratic Funding Grant
 * **Team Name:** DoraHacks
-* **Payment Address:** 0x032c451Fe54774E7D1841a5353967bB8Edc30031
+* **Payment Address:** 0xadcba9C5C8c33F7F71600c436F2F2B00bAbc9997
 
 ## Project Overview
 We would like to bring quadratic funding grants to Polkadot and Kusama ecosystem so that there is a way for the community to support early-stage developer projects on Polkadot and Kusama.
