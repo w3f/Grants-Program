@@ -159,12 +159,12 @@ https://github.com/cryptosoulgame/ReAlis-Network
 ### Overview
 * **Total Estimated Duration:** 8 months
 * **Full-Time Equivalent (FTE):**  6 FTE
-* **Total Costs:** 30,000 USD
+* **Total Costs:** 23,000 USD
 
 ### Milestone 1 — REALIS-API
 * **Estimated Duration:** 1 month
 * **FTE:**  3
-* **Costs:** 7,000 USD
+* **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -194,7 +194,7 @@ https://github.com/cryptosoulgame/ReAlis-Network
 
 * **Estimated Duration:** 3 month
 * **FTE:**  6
-* **Costs:** 10,000 USD
+* **Costs:** 9,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -208,7 +208,7 @@ https://github.com/cryptosoulgame/ReAlis-Network
 
 * **Estimated Duration:** 1 month
 * **FTE:**  3
-* **Costs:** 6,000 USD
+* **Costs:** 4,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
