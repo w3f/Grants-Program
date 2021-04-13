@@ -18,7 +18,7 @@ Now, we can already [install Doter](https://chrome.google.com/webstore/detail/do
 ### Project Details 
 
 #### Functional structure
-![img](https://uploader.shimo.im/f/I3rkNr5ykNaDYeOp.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2MTgwNDY0NDEsImciOiJtNGtNTFpweGJuczYxQnFEIiwiaWF0IjoxNjE4MDQ0NjQxLCJ1Ijo1MjU3NjQ4MX0.o5hhoChtugFWF8bsiXB5ppARhHPtEj36XIzFyJHsBYo)  
+![img](https://uploader.shimo.im/f/KXfkCaa3sgSynRcP.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2MTgzMjYxMzcsImciOiJtNGtNTFpweGJuczYxQnFEIiwiaWF0IjoxNjE4MzI0MzM3LCJ1Ijo1MjU3NjQ4MX0.wzzgXC6qbJ-kE_B-NkrI2lgeERoWzVGuba2n3e-e5vk)  
 #### Core components
 The Doter consists of several core components：  
 
@@ -116,54 +116,56 @@ Gao Jianli：https://www.linkedin.com/in/jianli-gao-6785a1140/
 
 ## Development Roadmap
 
+**In particular, we have completed the basic module of the Doter wallet, and the extension program has been put on the Google extension market. You can already [install](https://chrome.google.com/webstore/detail/doter/abamjefkidngfegdjbmffdmbgjgpaobf) and use Doter.**
+
 ### Overview
 * Total Estimated Duration: 3 month
 * Full-time equivalent (FTE): 60 
-* Total Costs: $22,500
+* Total Costs: $28,500
 
 ### Milestone
-#### M1: Wallet basic module
-* Estimated Duration: 1.5 month
-* FTE: 36
-* Costs: $13,500（2 contributors * 18 FTE * $375/FTE）
-
-**In particular, we have completed the first milestone and The extension has been listed on the Google extension market. You can [install Doter](https://chrome.google.com/webstore/detail/doter/abamjefkidngfegdjbmffdmbgjgpaobf) right away and verify the first milestone.**
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation and Implementation | At this milestone, we have achieved the following modules:  <br />Create wallet <br />Import wallet  <br />Transfer and receive<br />Wallet settings  <br />Wallet management  <br />Transaction record  <br />Referendum on the chain  <br />Based on these basic modules, users can already easily manage assets and participate in the referendum on proposals |
-| 0c. | Delivery time | completed |
-| 0d. | How to verify | You can already [install Doter](https://chrome.google.com/webstore/detail/doter/abamjefkidngfegdjbmffdmbgjgpaobf) in the Google Extended Market and verify the functional modules promised in the first milestone |
-
-#### M2：Injection and signature
-
-* Estimated Duration: 0.5 month
-* FTE: 8
-* Costs: $3,000（2 contributors * 4 FTE * $375/FTE）
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Description | We will implement the account injection function of the extension. When users interact with any Dapp, they can use the account registered in the Doter to perform related operations |
-| 0c. | Delivery time | Early May |
-| 0d. | How to verify | It is expected that in early May, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the second milestone |
-| 1.  | Core component | Establish conmmunication mechanism between background.js, content.js and injectScript.js. |
-| 2.  | Implementation | At the right time, We will call up the Auth page and the transaction signature page, and return the result to the Dapp page |
-
-#### M3 Governance and staking
+#### M1：Injection and signature
 
 * Estimated Duration: 1 month
-* FTE: 16
-* Costs: $6,000（2 contributors * 8 FTE * $375/FTE）
+* FTE: 18
+* Costs: $8,550（2 contributors * 9 FTE * $475/FTE）
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Description | We will improve the democratic governance function of Doter so that users can easily conduct board elections and support community proposals. At the same time, we will build a more friendly staking module to make it easier for users to participate in staking |
+| 0b. | Description | We will implement the account injection function of the extension. When users interact with any Dapp, they can use the account registered in theDoter to perform related operations. |
+| 0c. | Delivery time | Early May |
+| 0d. | How to verify | It is expected that in early May, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests. |
+| 1.  | Core component | Establish conmmunication mechanism between background.js, content.js and injectScript.js |
+| 2.  | Implementation | At the right time, We will call up the Auth page and the transaction signature page, and return the result to the Dapp page. |
+
+#### M2 Governance and staking
+
+* Estimated Duration: 1 month
+* FTE: 32
+* Costs: $15,200（2 contributors * 16 FTE * $475/FTE）
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Description | We will improve the democratic governance function of Doter so that users can easily conduct board elections and support community proposals. At the same time, we will build a more friendly staking module to make it easier for users to participate in staking. |
 | 0c. | Delivery time | Early June |
-| 0d. | How to verify | It is expected that in early June, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the third milestone |
-| 1.  | Core component | With the official Polkadot API, we will be able to access the proposal module, council election module, staking module, and provide a good user experience |
+| 0d. | How to verify | It is expected that in early June, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests. |
+| 1.  | Core component | With the official Polkadot API, we will be able to access the proposal module, council election module, staking module, and provide a good user experience. |
+
+#### M3 Support kusama network
+
+* Estimated Duration: 1 month
+* FTE: 10
+* Costs: $4,750（2 contributors * 5 FTE * $475/FTE）
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Description | We will support functions such as creating and importing wallets, transferring and receiving, injecting and signing on the Kusama network. Since it has been implemented in Polkadot, the development speed will be faster. |
+| 0c. | Delivery time | Early July |
+| 0d. | How to verify | It is expected that in early July, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests. |
+| 1.  | Core component | Create and import wallets, transfer and receive , injection and signature. |
 
 ## Community engagement
 This is a tutorial posted on medium：https://chainbridgenetwork.medium.com/polkadots-browser-extension-wallet-doter-ac8cd91a5bf3
