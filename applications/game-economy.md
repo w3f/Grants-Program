@@ -35,7 +35,8 @@ The mobile market is the most popular and promising in terms of adoption and use
 
 ![](https://github.com/Daelon02/realis/blob/main/struct.png)
 * Realis Node is a custom chain node for building a Realis network with Substrate 3.0, it contains basic functionality like a normal chain node, but also provides the ability to fetch external data needed for games.
-
+* Also, we want to develop a pallet for nft staking. It will be possible to steak only nft with certain types (silver, gold, diamond). Each user will be able to have nft data, they can fall out of loot boxes, or they can be bought from another user, exchanged for other nft
+![](https://github.com/Daelon02/realis/blob/main/Screenshot_1.png)
 ### Documentation of core components
 * Realis Token GOLD is the native token of the Realis Network, and it will play the role of governance and other utilities. GOLD like KSM
 
@@ -163,7 +164,7 @@ https://github.com/cryptosoulgame/ReAlis-Network
 ### Milestone 1 — REALIS-API
 * **Estimated Duration:** 1 month
 * **FTE:**  3
-* **Costs:** 5,000 USD
+* **Costs:** 7,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -175,40 +176,25 @@ https://github.com/cryptosoulgame/ReAlis-Network
 | 3. | Realis chain | The pallet-nft and realis-game-api modules in our custom chain will interact with each other |  
 | 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
+### Milestone 2 — NFT-staking
 
-### Milestone 2 — Build bridge to ERC20
-
-* **Estimated Duration:** 1 months
+* **Estimated Duration:** 3 month
 * **FTE:**  2
-* **Costs:** 6,000 USD
+* **Costs:** 7,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | Documents containing the description of whole architecture design for Realis Network. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 1. | ERC20 | We want users to be able to have our tokens in the Etherium network as well.|  
+| 0c. | Testing Guide |  NFT staking, for NFT staking users will receive GOLD | 
+| 1. | staking-nft | It will be possible to stake NFTs, which are of the types Silver, Gold, Diamond, depending on their types, the percentage of staking will be higher |   
 | 2. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
-### Milestone 3 — Build bridge to ERC721
-
-* **Estimated Duration:** 2 month
-* **FTE:**  2
-* **Costs:** 6,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | Documents containing the description of whole architecture design for Realis Network. |
-| 0c. | Testing Guide |  Migrate any ERC-721 token between EVM-compatible chains | 
-| 1. | ERC721 | Migrate an NFT to an arbitrary world (as the owner of an NFT, you should be able to choose where you want the NFT to be migrated to and who will mint it i.e. the protocol is not restricted to a specific project) |   
-| 2. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
-
-### Milestone 4 — Develop Marketplace
+### Milestone 3 — Develop Marketplace
 
 * **Estimated Duration:** 3 month
 * **FTE:**  6
-* **Costs:** 9,000 USD
+* **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -218,11 +204,11 @@ https://github.com/cryptosoulgame/ReAlis-Network
 | 4. | Realis chain | We start test sell, buy, transfer and send NFT to blockchain |  
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
 
-### Milestone 5 — Connect Realis Network with Ring of Legends
+### Milestone 4 — Connect Realis Network with Ring of Legends
 
 * **Estimated Duration:** 1 month
 * **FTE:**  3
-* **Costs:** 4,000 USD
+* **Costs:** 6,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
