@@ -31,7 +31,15 @@ The Internft Network consists of Domain, NFT Node, Fishman, DAO, CCP, NFT Swap, 
 
 ### Ecosystem Fit
 
-To our knowledge, there is currently no low trust cross-chain NFT network.
+Similar projects:
+* [ChainBridge](https://github.com/ChainSafe/ChainBridge)
+* [Snowfork](https://github.com/Snowfork/polkadot-ethereum)
+
+ChainBridge currently relies on trusted relayers to perform these roles, multiple relayers need to initiate proposals for cross-chain transfer of NFT assets, and when the vote reaches a threshold, the cross-chain asset transfer will be triggered. As a result, each transaction requires multiple relayers to modify the on-chain state, it is slow and expensive on the Ethereum mainnet.
+
+Internft is implemented by using the VRF to randomly select a node to attempt to solve the problem of low speed and high Gas for NFT cross-chain transfers, and effectively improve the security of managed assets through Punitive PoS and MultiSig.
+
+Internft are more focused on NFT assets and NFT infrastructure services to allow users to freely transfer NFTs across chains inexpensively，and bring ecosystems closer together.
 
 ## Team :busts_in_silhouette:
 
