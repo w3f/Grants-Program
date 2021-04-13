@@ -267,6 +267,9 @@ It must be noted that the above mentioned file storage mechanisms are based on h
 
 Traditional Performing Rights Organizations: Every country has multiple local performing rights organizations who are running inefficient softwares with very high licensing costs. Such PROs can use a SSP Smart Contract instance to calculate royalties and send payments on the blockchain using currency of their choice. 
 
+* Polkadot Buildathon Participation: 
+PolkaMusic team will be participating in the Polkadot Buildathon event, during which we are implementing an NFT incentivization program where PolkaMusic streamers will receive free NFTs for the duration they listen for. The goals of the buildathon don't overlap with any of the milestones of the open-grant application. We will be transparent regarding the open-grant and the organizers/judges will be notified about this.
+
 * Are there any teams who have already contributed (financially) to your project?
 
 No. This is currently a self-funded project.
