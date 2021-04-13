@@ -26,7 +26,7 @@ All the above problems can be solved using the blockchain technology with no mid
 
 2) Transparency: Every stream is reported to the off-chain worker which calculates payments as per the user-centric model and reports to the SSP Smart Contract for further processing. The royalty payments can be verified by anyone via the block explorer. 
 
-3) Smart Record Contracts: Smart Record Contracts are smart versions of legacy "Record Contracts", which consists of all the meta-data about the music, including ownership splits. Smart Record Contracts live on the blockchain, accessible by anyone, solving the "royalty black box" issue. Anybody having any doubts about who to pay for a particular song can always refer to the public database and even send money to it, which will automatically split such payments to constituent copyright holder's wallets.
+3) Smart Record Contracts: Smart Record Contracts are smart versions of legacy "Record Contracts", which consists of all the meta-data about the music, including ownership splits. Smart Record Contracts live on the blockchain, accessible by anyone, solving the "royalty black box" issue. Anybody having any doubts about who to pay for a particular song can always refer to the public database and even send money to it, which will automatically split such payments to constituent copyright holder's wallets. 
 
 In addition to solving the above mentioned fundamental problems in the music industry, PolkaMusic can also process royalties every 24 hours, which is unheard of in the traditional music world due to inefficiencies in the payment infrastructure. 
 
@@ -140,7 +140,7 @@ There are currently no other projects in the Substrate ecosystem that are solvin
 * Phalgun Shenoy
 * John Fortner
 * Suraj Kumar
-* Thandile Nododile
+* Pranshu Rastogi
 
 ### Contact
 * **Contact Name:** Phalgun Shenoy
@@ -228,10 +228,10 @@ Advanced Mode -> [Link](https://github.com/polkamusic/PolkaMusic/raw/master/RMP%
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | Documents explaining the structure of Royalty Splitter Pallet, the Quorum Pallet and the associated GUI |
+| 0b. | Documentation | Documents explaining the structure of Royalty Splitter Pallet and the streaming platform |
 | 0c. | Testing Guide | We will provide a guide to test by streaming a song on the front end and have the royalty processed through the Royalty Splitter Pallet, and verify the result on the block explorer. | 
 | 1. | Royalty Splitter Pallet | `royaltySplitter(to:src_ipfs,amount:u256,tokenId:u256)` For every request, Royalty Splitter Pallet will retrieve the SRC data, and split the incoming currency to its constituent owners based on the the ownership weights. |  
-| 2. | Front-end | For every stream on the prototype frontend hosted on polkamusic.io, tokens are dispatched from the reward pool (a wallet with $POLM tokens) to the Royalty Splitter, which will pay the artists as per the payment details in the SRC. |    
+| 2. | Front-end | For every stream on the prototype frontend hosted on polkamusic.io, tokens are dispatched from the reward pool (a contract with $POLM tokens) to the Royalty Splitter, which will pay the artists as per the payment details in the SRC. |    
 
 ...
 
@@ -261,7 +261,9 @@ The long term features would include:
 
 ## Additional Information :heavy_plus_sign: 
 
-Storage: When a user creates a Smart Record Contract, she will be asked for the music file as well as the album cover. These files are saved on a centralized storage at the moment as anybody can download the files from ipfs with no benefit to the artist. Artist can individually choose the SSPs she would like to distribute the songs to, or can upload with them directly, and refer to the SRC Address for royalty payment purposes. In the future, we will implement decentralized file storage with NFT based access system using which SSPs can access the files associated with a SRC. 
+Storage: When a user creates a Smart Record Contract, she will be asked for the music file as well as the album cover. These files are saved on a centralized storage at the moment as anybody can download the files from ipfs with no benefit to the artist. Artist can individually choose the SSPs she would like to distribute the songs to, or can upload with them directly, and refer to the SRC Address for royalty payment purposes. In the future, we will implement decentralized file storage through IPFS with Access Control List, a permissioned version of IPFS where access is controlled by programmable smart contracts that contain an Access Control List (ACL). The modified ipfs client will serve files to the requestor only if the permission is approved in the ACL. This offers transparent, public and verifiable access without a central controller. Control is always in the hands of the data owner, the smart contract author. Every SSP will be required to run a ACL-IPFS node of their own.
+
+It must be noted that the above mentioned file storage mechanisms are based on high latency storage solutions and is for data transfer between the artist and the SSPs. The SSPs will have to maintain a local cache in order to serve files to the end user. 
 
 Traditional Performing Rights Organizations: Every country has multiple local performing rights organizations who are running inefficient softwares with very high licensing costs. Such PROs can use a SSP Smart Contract instance to calculate royalties and send payments on the blockchain using currency of their choice. 
 
