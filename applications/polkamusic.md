@@ -173,11 +173,9 @@ There are currently no other projects in the Substrate ecosystem that are solvin
 * Waves Tech Ambassador
 * Specialities: Javascript, Rust, Python & C++
  
-### Thandile Nododile
-* Polkadot Ambassador - South Africa
-* BSc. Mathematics & Statistical Sciences with Computer Sciences 
-* Experimenting with substrate framework through PolkaMusic
-* Rust language enthusiast.
+### Pranshu Rastogi
+* Bachelor of Technology (B.Tech.) Computer Science
+* Blockchain developer - Hyperledger Fabric | Ethereum | Polkadot | SSI
 
 
 ### Team Code Repos
@@ -188,7 +186,7 @@ There are currently no other projects in the Substrate ecosystem that are solvin
 * https://www.linkedin.com/in/shenoyphalgun/
 * https://www.linkedin.com/in/johnfortner/ 
 * https://www.linkedin.com/in/s5k0651/
-* https://github.com/nododile 
+* https://www.linkedin.com/in/rastogipranshu/
 
 ## Development Status :open_book: 
 
@@ -201,12 +199,12 @@ There are currently no other projects in the Substrate ecosystem that are solvin
 ### Overview
 * **Total Estimated Duration:**  8 weeks
 * **Full-Time Equivalent (FTE):**  4 
-* **Total Costs:** 27000 USD
+* **Total Costs:** 12000 USD
 
 ### Milestone 1 Creation of *Rights Management Pallet* and *Rights Management Portal* 
 * **Estimated Duration:** 4 weeks
 * **FTE:**  2
-* **Costs:** 12000 USD
+* **Costs:** 6000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -222,19 +220,18 @@ Simple Mode -> [Link](https://github.com/polkamusic/PolkaMusic/raw/master/RMP%20
 
 Advanced Mode -> [Link](https://github.com/polkamusic/PolkaMusic/raw/master/RMP%20advanced%20mode.pdf)
 
-### Milestone 2 Creation of *Royalty Splitter Pallet* and *Quorum Pallet* 
+### Milestone 2 Creation of *Royalty Splitter Pallet* and *Front-end integration* 
 * **Estimated Duration:** 4 Weeks
 * **FTE:**  2
-* **Costs:** 15000 USD
+* **Costs:** 6000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | Documents explaining the structure of Royalty Splitter Pallet, the Quorum Pallet and the associated GUI |
-| 0c. | Testing Guide | We will provide a guide to test the Quorum Pallet by flagging a content and then send a balance to the Royalty Splitter Pallet, and verify the result on the block explorer. | 
+| 0c. | Testing Guide | We will provide a guide to test by streaming a song on the front end and have the royalty processed through the Royalty Splitter Pallet, and verify the result on the block explorer. | 
 | 1. | Royalty Splitter Pallet | `royaltySplitter(to:src_ipfs,amount:u256,tokenId:u256)` For every request, Royalty Splitter Pallet will retrieve the SRC data, and split the incoming currency to its constituent owners based on the the ownership weights. |  
-| 2. | Quorum Pallet | In order to eliminate bad actors, Quorum pallet will allow users to vote on SRCs with either "Aye" or "Nay" |  
-| 3. | Rights Management Explorer | Users will be able to explore all the SRCs on PolkaMusic and vote on it.  |  
+| 2. | Front-end | For every stream on the prototype frontend hosted on polkamusic.io, tokens are dispatched from the reward pool (a wallet with $POLM tokens) to the Royalty Splitter, which will pay the artists as per the payment details in the SRC. |    
 
 ...
 
