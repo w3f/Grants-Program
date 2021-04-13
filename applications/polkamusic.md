@@ -144,7 +144,7 @@ There are currently no other projects in the Substrate ecosystem that are solvin
 
 ### Contact
 * **Contact Name:** Phalgun Shenoy
-* **Contact Email:** shenoy@bitcoinmusic.org
+* **Contact Email:** shenoy@polkamusic.io
 * **Website:** https://polkamusic.io / https://bitcoinmusic.org 
 * **Telegram:** @polkashenoy
 * **LinkedIn:** https://www.linkedin.com/in/shenoyphalgun/
