@@ -52,7 +52,7 @@ In addition, we could extend the Web3 ecosystem in Japan then other countries .
 * **Registered Legal Entity:** Blue Castle Inc.
 
 ### Team's experience
-* Edward Nakamoto: * Nelson Sakamoto: IPS architechture. Rich experience in software development, including 5+ years Blockchian development. Participated in a couple of blockchain related development projects and played as a architecture and developer’s roles. Through the projects, he acquired not only blockchain but also industry expeience. In addition, he has rich experience of enterprise application development.* Rie Miyazawa: IT consultant, system architect, proficient in business proposals. Since 2013, it has developed blockchain products and designed ICO issuance. Served as chief researcher and lecturer of enterprise blockchain.
+* Nelson Sakamoto: IPS architechture. Rich experience in software development, including 5+ years Blockchian development. Participated in a couple of blockchain related development projects and played as a architecture and developer’s roles. Through the projects, he acquired not only blockchain but also industry expeience. In addition, he has rich experience of enterprise application development.* Rie Miyazawa: IT consultant, system architect, proficient in business proposals. Since 2013, it has developed blockchain products and designed ICO issuance. Served as chief researcher and lecturer of enterprise blockchain.
 * Tom Sato: Internet full-stack engineer. Good at website development, mobile APP application development. Backend application, server settings.
 * Peter Yokoyama: More than 20 years of system software research and development experience, familiar with a variety of open source software technologies. Focus on the development of Internet application systems. We have rich experience in research and development on the front-end, mobile and back-end of WEB.
 * Sunny Watanabe：15 years of experience in the design and actual construction of platform architecture for large-scale systems. Obsessed with open source software technology. Served as a technical partner of an electronic music sharing community. Rich practical experience in application development.
@@ -87,7 +87,7 @@ We just finished research and started the first phase of PoC.
 | 0b. | Documentation | We will provide inline documentation of the code that explains how the mainnet works|
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. | 
 | 0d. | Article/Tutorial | We will publish an article or tutorial that explains what was done/achieved as part of the grant |
-| 1. | IPS mainnet development | We will finish code of main functions of mainnet |  
+| 1. | IPS mainnet development | We will finish code of main functions of mainnet:1. adopt BFT consensus to improve the efficency; 2. Add data starage interaction interface; 3. Add stroage interaction incentive algorithm |  
 | 2. | Unit Test | We will conduct the unit test  |  
 | 3. | Integration Test | We will conduct integration test |  
 | 4. |  Testnet go live| We will setup IPS testnet for limited user test.  |
@@ -109,7 +109,7 @@ We just finished research and started the first phase of PoC.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. | 
 | 0d. | Article/Tutorial | We will publish an article or tutorial that explains what was done/achieved as part of the grant |
 | 1. | IPS enchancement & Bug fix | We will continue to enhance the mainnet functions and fix bugs   |  
-| 2. | Block Broswer  | We will develpe a broswer   |  
+| 2. | Block Broswer  | We will develope a broswer   |  
 | 3. | Integration with Polkadot | We will intergrate with polkadot |  
 
 ### Stage 3  — IPS Mainnet go-live 
