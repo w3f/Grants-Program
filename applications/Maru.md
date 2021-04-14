@@ -27,13 +27,13 @@ Maru also have Green Light project, Provide support to independent game develope
 
 - **Total Estimated Duration:** 12 months
 - **Full-time equivalent (FTE):** 3 FTE
-- **Total Costs:** 63000 DAI
+- **Total Costs:** 60000 DAI
 
 ### Milestone 1 — Implement Development toolkits(include Game Engine)
 
 - **Estimated Duration:** 3 months
 - **FTE:** 2
-- **Costs:** 40000 DAI
+- **Costs:** 20000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -49,7 +49,7 @@ One of our employee is ex-cocos engineer, so our target is based on the realizat
 ### Milestone 2 — Develop a Terraria-like game
 - **Estimated Duration:** 6 months
 - **FTE:** 4
-- **Costs:** 50000 DAI
+- **Costs:** 30000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -65,7 +65,7 @@ The first game of the platform is the most important, and it determines whether 
 ### Milestone 3 — A new NFT protocol and NFT Market
 - **Estimated Duration:** 2 months
 - **FTE:** 4
-- **Costs:** 15000 DAI
+- **Costs:** 10000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
