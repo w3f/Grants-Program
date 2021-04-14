@@ -48,7 +48,7 @@ One of our employee is ex-cocos engineer, so our target is based on the realizat
 
 ### Milestone 2 — Develop a Terraria-like game
 - **Estimated Duration:** 6 months
-- **FTE:** 4
+- **FTE:** 3
 - **Costs:** 30000 DAI
 
 | Number | Deliverable | Specification |
@@ -64,7 +64,7 @@ The first game of the platform is the most important, and it determines whether 
 
 ### Milestone 3 — A new NFT protocol and NFT Market
 - **Estimated Duration:** 2 months
-- **FTE:** 4
+- **FTE:** 2
 - **Costs:** 10000 DAI
 
 | Number | Deliverable | Specification |
