@@ -1,25 +1,16 @@
 # W3F Open Grant Proposal
 
-> 🌏 This page is also available in [Chinese (中文)](./application-template-cn.md).
-> 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
-> 
-> See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/#pencil-process) on how to submit a proposal.
-
-* **Project Name:** Name of your project (e.g. DuoSwap Module)
-* **Team Name:** Legal name of your team (e.g. Duo)
-* **Payment Address:** BTC or Ethereum (DAI) payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
-
-
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+* **Project Name:** Web3Games
+* **Team Name:** Web3Games
+* **Payment Address:** 
 
 ## Project Overview :page_facing_up: 
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
-
 ### Overview
+
+Web3Games is a new generation gaming ecosystem built on Substrate.
+
+By adopting blockchain technology, leveraging virtual gaming and NFT, we offer solutions that build the new ecosystem for blockchain gaming and collectibles - from framework to tools - whereby users as 'developers' can curate their own integrated gaming experience.
 
 Please provide the following:
   * If the name of your project is not descriptive, a tag line (one sentence summary).
@@ -56,13 +47,13 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 * Names of team members	
 
 ### Contact
-* **Contact Name:** Full name of the contact person in your team
-* **Contact Email:** Contact email (e.g. john@duo.com)
-* **Website:**
+* **Contact Name:** KK Chen
+* **Contact Email:** kk@web3games.org
+* **Website:** https://web3games.org
 
 ### Legal Structure 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+* **Registered Address:** 306 Victoria House, Victoria, Mahe, Seychelles
+* **Registered Legal Entity:** Web3Games Limited
 
 ### Team's experience
 Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting code commits made by team members in past projects. For research-related grants, references to past publications and projects in a related domain are helpful. 
@@ -70,12 +61,13 @@ Please describe the team's relevant experience. If your project involves develop
 If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+* https://github.com/web3gamesofficial
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* KK Chen https://www.linkedin.com/in/bichenkk/
+* Henry Liu https://www.linkedin.com/in/henry-liu-80576a187/
+* Xueshan Wang https://www.linkedin.com/in/xueshan-wang-01a406208/
+* Joan Ma https://www.linkedin.com/in/joan-ma-1793b1208/
 
 ## Development Status :open_book: 
 
