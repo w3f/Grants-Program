@@ -125,6 +125,8 @@ We will create a **rule engine** to organize some rules to measure users behavio
 - **Estimated Duration:** 6 months
 - **FTE:** 3
 - **Costs:** 20000 DAI
+
+
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
