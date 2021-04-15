@@ -135,7 +135,7 @@ Dylan Dewdney is a longtime crypto enthusiast (2011). In 2017 he co-founded Harb
 * **Costs:** 10K DAI
 
 The main deliverable of this milestone includes: 
-* A cryptographic library that implements the inner product functional encryption and quadratic polynomial functional encryption. 
+* A cryptographic library written in Rust that implements the inner product functional encryption and quadratic polynomial functional encryption. 
 
 * A substrate pallet that integrates the verification logic of the associated zero-knowledge proof for the legitimacy of the encrypted functional key.
 
@@ -145,7 +145,7 @@ The main deliverable of this milestone includes:
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 0d. | Article/Tutorial | We will publish a medium article that explains the functionality of the proposed cryptographic library and substrate pallet delivered in this milestone. 
-| 1.         | Cryptographic modules  | We will implement the cryptographic modules including inner product functional encryption and quadratic polynomial functional encryption [MSHBM2019] and the associated zero-knowledge proof [ZeroPool]. We will also implement the substrate pallet that integrates the verification logic of the associated zero-knowledge proof for the legitimacy of the encrypted functional key. |
+| 1.         | Cryptographic modules  | We will implement the cryptographic modules including inner product functional encryption and quadratic polynomial functional encryption [MSHBM2019] and the associated zero-knowledge proof [ZeroPool]. The cryptographic modules will be written in Rust. We will also implement the substrate pallet that integrates the verification logic of the associated zero-knowledge proof for the legitimacy of the encrypted functional key. |
 | 2.         | Benchmark | Perform unit tests on the individual algorithms to ensure their safety. Benchmark on the gas cost and throughput of the proposed module. |
 | 3.         | Docker | We will provide a dockerfile to demonstrate the usage of our modules. |
 
