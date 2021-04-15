@@ -85,16 +85,18 @@ We will create a **rule engine** to organize some rules to measure users behavio
 7. Game Play: 
     1. Objective:
         1. Collect objects that can be used as crafting
-        2. Defend yourself against
+        2. Protect yourself from random events
         3. Get health to keep alive
         4. Create an automated production mechanism (pipeline)
-        5. Item creation and sales system
+        5. Item creation and sales
+        6. Repair or decorate your Space cruiser.
     2. Game Logic:
         1. Every item has the number of uses, the number of uses is used up, and the item is hours
         2. Characters cannot pick up anything to big or heavy for them
         3. Can be automated by conveyor belts and sorters
         4. Most of the things that can be picked up need to be processed
         5. Every Block Maps will update some items(if you did picked some items).
+        6. Space cruiser have a repair value, when the value enough, you can just fly away and end the game.
     3. Game Resources (Because a large number of props require design mechanisms, we will only discuss the basic elements first):
         1. Wood, Flammable and can process to wood board. You need it for any building
         2. All kinds of ores, Obtain metals through construction refineries.
@@ -112,7 +114,7 @@ We will create a **rule engine** to organize some rules to measure users behavio
             2. click in different distance can do different things
             3. ESC is pause
             4. right click if target can be edit, it will show a menu.
-8. Game Engine (tentative): GDevelop, it provide good tool for developer and is very friendly for 2D games. We may fork a version then 
+8. Game Engine (tentative): `GDevelop`, it provide good tool for developer and is very friendly for 2D games. We may fork a version then 
 
 ### **Development Roadmap 🔩**
 ### Overview
