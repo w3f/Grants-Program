@@ -74,8 +74,8 @@ Actually that is an anti-cheat validator, we will create serval rules to make su
 We will create a **rule engine** to organize some rules to measure users behavior. If found some problem user, we can detect it and make it right.
 
 #### Game Design Document (GDD)
-1. Game Title: Crypto Art
-2. Game Genre: Action-adventure, ‎sandbox, (Roguelike)
+1. Game Title: CryptoBot
+2. Game Genre: Action-adventure, ‎sandbox, (it might become a Roguelike)
 3. Game Perspective: Third person
 4. Game Mode(s):
     * Single player
