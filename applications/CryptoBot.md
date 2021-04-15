@@ -23,7 +23,7 @@ We have done many attempts to combine blockchain with video game, to make sure w
 ### **Project Details**
 About this game, there will be 4 components: Game Runtime, Users Controller, NFT Market Service, In-Game User action validator(we call it BotShield).
 
-And sure, these 4 components just the game's core, about the game itself -- UI/UX & GamePlay implementation, we will talk about it later.
+And sure, these 4 components just the game's core, the addition part is the game logic itself.
 
 #### Game Runtime
 Our Game Runtime will recalculate some major datas in every block:
@@ -72,6 +72,47 @@ And we will create a JS API library for our game to use. Just like `opensea-js` 
 #### In-Game User action validator
 Actually that is an anti-cheat validator, we will create serval rules to make sure user actually play games without cheating.
 We will create a **rule engine** to organize some rules to measure users behavior. If found some problem user, we can detect it and make it right.
+
+#### Game Design Document (GDD)
+1. Game Title: Crypto Art
+2. Game Genre: Action-adventure, ‎sandbox, (Roguelike)
+3. Game Perspective: Third person
+4. Game Mode(s):
+    * Single player
+    * Multi player (optional)
+5. Core Idea: CryptoBot's background is a Space cruiser pilot because of the failure landed on an unknown planet. Then leave this planet through exploration, building, crafting.
+6. Goal: First phase will be leave this planet.
+7. Game Play: 
+    1. Objective:
+        1. Collect objects that can be used as crafting
+        2. Defend yourself against
+        3. Get health to keep alive
+        4. Create an automated production mechanism (pipeline)
+        5. Item creation and sales system
+    2. Game Logic:
+        1. Every item has the number of uses, the number of uses is used up, and the item is hours
+        2. Characters cannot pick up anything to big or heavy for them
+        3. Can be automated by conveyor belts and sorters
+        4. Most of the things that can be picked up need to be processed
+        5. Every Block Maps will update some items(if you did picked some items).
+    3. Game Resources (Because a large number of props require design mechanisms, we will only discuss the basic elements first):
+        1. Wood, Flammable and can process to wood board. You need it for any building
+        2. All kinds of ores, Obtain metals through construction refineries.
+        3. Oil, Bot need it.
+    4. Economies:
+        1. In-Game Currency
+        2. inventory/items
+    5. Game Play I/O Controls:
+        1. Keyboard
+        2. Mouse
+        3. To move around the environment:
+            1. WASD or Arrow
+        4. Special keys:
+            1. E or click to interaction.
+            2. click in different distance can do different things
+            3. ESC is pause
+            4. right click if target can be edit, it will show a menu.
+8. Game Engine (tentative): GDevelop, it provide good tool for developer and is very friendly for 2D games. We may fork a version then 
 
 ### **Development Roadmap 🔩**
 ### Overview
