@@ -122,7 +122,7 @@ We will create a **rule engine** to organize some rules to measure users behavio
 - **Full-time equivalent (FTE):** 3 FTE
 - **Total Costs:** 20000 DAI
 
-### **Milestone 1 — **
+### Milestone 1 —
 - **Estimated Duration:** 3 months
 - **FTE:** 3
 - **Costs:** 10000 DAI
@@ -132,12 +132,12 @@ We will create a **rule engine** to organize some rules to measure users behavio
 | 0a. | License | Apache 2.0 |
 | 0b. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 | 0c. | Testnet | Setup and run a testnet |
-| 0d. | Game Development Logs | Keep in touch with the community |
 | 1. | Substrate module: UserController | We will create a Substrate module that will generate events and allow user create avatar and trigger events |
 | 2. | Substrate module: Runtime | We will create a Substrate module that will manage game events, update game world's data. |
 | 3. | Substrate module: In-Game User action validator | We will create a Substrate module that will detect wrong data movement.(Maybe this problem will move to web application.) |
+| 4. | Game Art Design | We will hire a designer to design the game content and prepare for the game's development. |
 
-### **Milestone 2 — **
+### Milestone 2 —
 - **Estimated Duration:** 3 months
 - **FTE:** 3
 - **Costs:** 10000 DAI
@@ -145,11 +145,10 @@ We will create a **rule engine** to organize some rules to measure users behavio
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
-| 0c. | Testnet | Setup and run a testnet |
-| 0d. | Game Development Logs | Keep in touch with the community |
+| 0b. | Testing Guide | The code will have unit-test coverage (min. 60%) to ensure functionality and robustness. It about our Web Application and game itself. |
+| 0c. | Game Development Logs | Keep in touch with the community |
 | 1. | Web Application | We will implementation User analysis\User Chat\Daily event operation in this place. |
-| 2. | Web UI: Crypto Bot Game | And the Game's 'Frontend' will be this part, it will be heavy scripting job and pixel art design and game implementation in this part |
+| 2. | Crypto Bot Game | And the Game's 'Frontend' will be this part, it will be heavy scripting job and pixel art design and game implementation in this part |
 | 3. | NFT Integration SDK | Refer to the implementation of opensea js |
 
 ### **Ecosystem Fit**
