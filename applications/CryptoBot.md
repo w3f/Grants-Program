@@ -12,7 +12,7 @@
 CryptoBot uses Substrate as the blockchain development framework, 
 and we will use a Ruby on Rails Web Application to store some other data(like user chat.) From the technical level, if we want gameplay smoothly, it must have some trade off, we will make sure that highly credible data storage and NFT materials/game props are stored on the chain. Other data we will choose to save it on a centralized server.
 
-Apart from the daily play part of the game, we will design a main line containing at least 50,000 words.
+Apart from the daily play part of the game, we will design a story line containing at least 50,000 words.
 
 We have done many attempts to combine blockchain with video game, to make sure we can achieve our goals, we will keep thinking these question: 
 
@@ -121,11 +121,11 @@ We will create a **rule engine** to organize some rules to measure users behavio
 - **Total Estimated Duration:** 6 months
 - **Full-time equivalent (FTE):** 3 FTE
 - **Total Costs:** 20000 DAI
-### **Milestone 1 — **
-- **Estimated Duration:** 6 months
-- **FTE:** 3
-- **Costs:** 20000 DAI
 
+### **Milestone 1 — **
+- **Estimated Duration:** 3 months
+- **FTE:** 3
+- **Costs:** 10000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -136,9 +136,21 @@ We will create a **rule engine** to organize some rules to measure users behavio
 | 1. | Substrate module: UserController | We will create a Substrate module that will generate events and allow user create avatar and trigger events |
 | 2. | Substrate module: Runtime | We will create a Substrate module that will manage game events, update game world's data. |
 | 3. | Substrate module: In-Game User action validator | We will create a Substrate module that will detect wrong data movement.(Maybe this problem will move to web application.) |
-| 4. | Web Application | We will implementation User analysis\User Chat\Daily event operation in this place. |
-| 5. | Web UI: Crypto Bot Game | And the Game's 'Frontend' will be this part, it will be heavy scripting job and pixel art design and game implementation in this part |
-| 6. | NFT Integration SDK | Refer to the implementation of opensea js |
+
+### **Milestone 2 — **
+- **Estimated Duration:** 3 months
+- **FTE:** 3
+- **Costs:** 10000 DAI
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 0c. | Testnet | Setup and run a testnet |
+| 0d. | Game Development Logs | Keep in touch with the community |
+| 1. | Web Application | We will implementation User analysis\User Chat\Daily event operation in this place. |
+| 2. | Web UI: Crypto Bot Game | And the Game's 'Frontend' will be this part, it will be heavy scripting job and pixel art design and game implementation in this part |
+| 3. | NFT Integration SDK | Refer to the implementation of opensea js |
 
 ### **Ecosystem Fit**
 1. My Neighbor Alice: That is a BSC 'star valley'-like game, currently we only can see some video. All we actually know is $ALICE token price.
