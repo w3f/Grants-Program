@@ -120,7 +120,7 @@ Based on the 1M+ MathWallet users, MathChain is focusing on smart wallet, massiv
 * **Full-time Equivalent(FTE):** 2.5
 * **Total cost:** 5000 USD
 
-### Milestone 1 - create fundamental environment for ELC
+### Milestone 1
 * **Estimated Duration:** 1 month
 * **FTE:**  2.5
 * **Costs:** 5000 USD
