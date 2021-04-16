@@ -232,6 +232,7 @@ Advanced Mode -> [Link](https://github.com/polkamusic/PolkaMusic/raw/master/RMP%
 | 0c. | Testing Guide | We will provide a guide to test by streaming a song on the front end and have the royalty processed through the Royalty Splitter Pallet, and verify the result on the block explorer. | 
 | 1. | Royalty Splitter Pallet | `royaltySplitter(to:src_ipfs,amount:u256,tokenId:u256)` For every request, Royalty Splitter Pallet will retrieve the SRC data, and split the incoming currency to its constituent owners based on the the ownership weights. |  
 | 2. | Front-end | For every stream on the prototype frontend hosted on polkamusic.io, tokens are dispatched from the reward pool (a contract with $POLM tokens) to the Royalty Splitter, which will pay the artists as per the payment details in the SRC. |    
+| 3. | Quorum Pallet Specification | A document outlining our mechanism to weed out the bad actors by introducing democratic trust scoring on submitted content |    
 
 ...
 
