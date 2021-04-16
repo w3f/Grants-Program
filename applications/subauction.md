@@ -138,9 +138,9 @@ Besides blockchain development, each member has 5+ years of experience in Comput
 
 ### Overview
 
-- **Total Estimated Duration:** ~2 months
+- **Total Estimated Duration:** ~1.5 months
 - **Full-time equivalent (FTE):** 3.5
-- **Total Costs:** ~28,000 USD
+- **Total Costs:** ~24,000 USD
 
 ### Technologies used
 - Built as a standalone auction module using **Rust** and **Substrate**
@@ -154,7 +154,7 @@ See [Auction Type Generalization](#auction-type-generalization) for definitions.
 
 - **Estimated Duration:** 2-4 weeks
 - **FTE:** 3.5
-- **Costs:** $12,000
+- **Costs:** $6,000
 - Implement Auction Type Generalisation from the currently developed type of English auction
     - redefine traits and add more of them (these are interfaces to handle various types of auctions), current solution has only one
     - add handlers/methods for events that operate auctions
@@ -169,7 +169,7 @@ See [Candle Auction Type](#candle-auction-type) and [Top-up Auction Type](#top-u
 
 - **Estimated Duration:** 1-2 weeks
 - **FTE:** 2.5
-- **Costs:** $4,000
+- **Costs:** $6,000
 - Implement:
   - the [Candle Auction Type](#candle-auction-type), a specific type for NFT auction to prevent snipping (placing bids in the very last second to gamble the system)
   - the [Top-up Auction Type](#top-up-auction-type), a specific type for NFT auction usually used for fundraising or charity auctions
