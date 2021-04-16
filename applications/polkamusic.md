@@ -177,6 +177,15 @@ There are currently no other projects in the Substrate ecosystem that are solvin
 * Bachelor of Technology (B.Tech.) Computer Science
 * Blockchain developer - Hyperledger Fabric | Ethereum | Polkadot | SSI
 
+### David Hidalgo-Gato
+* Research Assistant - Yale/YNHH Center for Outcomes Research and Evaluation (CORE)
+* Student - Yale University
+* Rust Programmer
+
+### Amit Dua
+* Ph.D. Scholar - Computer Science
+* Assistant professor at BITS Pilani, Pilani
+
 
 ### Team Code Repos
 * PolkaMusic -> https://github.com/polkamusic/PolkaMusic
@@ -187,6 +196,8 @@ There are currently no other projects in the Substrate ecosystem that are solvin
 * https://www.linkedin.com/in/johnfortner/ 
 * https://www.linkedin.com/in/s5k0651/
 * https://www.linkedin.com/in/rastogipranshu/
+* https://www.linkedin.com/in/david-hidalgo-gato/
+* https://www.linkedin.com/in/amit-dua-97348415/
 
 ## Development Status :open_book: 
 
