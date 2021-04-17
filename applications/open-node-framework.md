@@ -65,6 +65,8 @@ Open Node Framework doesn't aim to build everything from scratch. We prefer to u
 
 - Deployment
     - Helm deployment template: [w3f/polkaodt-chars](https://github.com/w3f/polkadot-charts)
+- Raft-based validator availablity
+    - Consul validator failover: [protofire/polkadot-failover-mechanism](https://github.com/protofire/polkadot-failover-mechanism)
 - Monitoring dashboard
     - [ironoa/polkadot-k8s-monitor](https://github.com/ironoa/polkadot-k8s-monitor)
     - [SimplyVC/panic_polkadot](https://github.com/SimplyVC/panic_polkadot)
@@ -156,7 +158,7 @@ The first version of Open Node Framework is available on [Github](https://github
 | 0c. | Testing Guide | A guide describing how to run the tests covering the cases in 0b. |
 | 0d. | Article/Tutorial | We will extend the workshop to show how to deploy a hardened node network. |
 | 1. | Backup node and recovery | Add sync node type and database backup & recovery routines. Add scripts to trigger and minotor the process. |
-| 2. | Session key management | Add a database to store the session keys and add routines to migrate keys between validators |
+| 2. | Session key management | Add a database (or mountable drive) to store the session keys and add routines to migrate keys between validators (or mount the keystore db to the assigned validators) |
 | 3. | Validator alerts | Define the validator related warnings and metrics and add them to the alerm manager. |
 
 
