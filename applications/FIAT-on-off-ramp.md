@@ -14,11 +14,11 @@ We want to implement a FIAT on- & off-ramp solution for the Polkadot ecosystem: 
 
 We are interested in that project, because we think the general idea is applicable and valuable to any blockchain-based solution who wants to reach a consumer market. This assumption was validated with the project [crowdlitoken.com](crowdlitoken.com): Users can invest into real estate with Swiss Francs. Once they are transferred their funds, their balance of Crowdlitoken is shown in Swiss Francs, where 1 Franc = 1 Crowdlitoken. Means - exactly what they have invested is shown as token-balance. Crowdlitoken runs on Ethereum - currently the high transaction fees are unbearable - this is another motivation to implement our solution on Polkadot.
 
-The scope for this initial grant is: Implement a parachain with a fully pegged stable-coin, synchronized via an off-chain worker with a fully pegging bank account. Incoming bank transactions (FIAT payments) and burning of stable-coins will trigger a sync, a token transfer does not trigger actions on the bank account. So transferring real funds to the bank account leads 
+The scope for this initial grant is: Implement a substrate based chain with a fully pegged stable-coin, synchronized via an off-chain worker with a fully pegging bank account. Incoming bank transactions (FIAT payments) and burning of stable-coins will trigger a sync, a token transfer does not trigger actions on the bank account. So transferring real funds to the bank account leads 
 to a mint of new stable-coins. A burn triggers a "real" bank transaction from the pegging account to some other bank account. This concept is quite different to existing stable-coins like DAI, TrueUSD or Tether: Everybody with a bank account is able to attach his own bank account to his own para-chain or smart contract, and create his own stable-coin. But our focus is not the stable-coin - it is about providing a technical solution for FIAT on- and off-ramping.
 
 Another, more philosophical angle on the project:
-The banking system can be seen (not technically of course) as a ledger with a blocktime of 1 day (in best case), with a proof of authority and consensus between banks, and the payment network acting as a "relay chain". We want to attach this ledger to the polkadot ecosystem - like it is done with other blockchain/parachain systems already. Value in FIAT should flow in & out of the para chains & relay chain seamlessly. Technically we make banking interfaces (APIs for getting balance & sending FIAT) compatible with Polkadot.
+The banking system can be seen (not technically of course) as a ledger with a blocktime of 1 day (in best case), with a proof of authority and consensus between banks, and the payment network acting as a "relay chain". We want to attach this ledger to the polkadot ecosystem - like it is done with other blockchain systems already. Value in FIAT should flow in & out of the para chains & relay chain seamlessly. Technically we make banking interfaces (APIs for getting balance & sending FIAT) compatible with Polkadot.
 
 ## Project Details
 
@@ -39,19 +39,19 @@ We will implement the system as **API first** - so do not expect to see much UI 
 
 Logically we have three components:
 
-* A) A Substrate FRAME based parachain with a stable-coin. The parachain is able to mint a stable-coin directly to a target address (wallet or contract).
+* A) A Substrate FRAME based chain with a stable-coin. This "Fiat-chain" is able to mint a stable-coin directly to a target address (wallet or contract).
 * B) A pallet (module) with a REST API, which can read daily statements of a bank account and trigger wire-transfers.
-* C) An active component which monitors both the bank account and the parachain (listens to events) and calls the respective functionalities to keep everything in sync.
+* C) An active component which monitors both the bank account and the chain (listens to events) and calls the respective functionalities to keep everything in sync.
 
 See [architecture component diagram](#architecture) for a visual overview.
 
-### A) API specification parachain
+### A) API specification Fiat-chain
 
 In the center of the integration is one bank account with a specific currency like the Dollar or Euro. The balance of the bank account is mirrored by the total supply of a fully pegged stable-coin - 100 Euro will be 100 stable-coins. So if this account receives funds then new coins are minted for a specific target address. To find out the target wallet address (or contract) who actually will get the stable-coins, we will use a default value or a specific code on the bank-transaction (on the payment slip), which can be translated by our system to a blockchain address on Polkadot. So it's possible to wire-transfer to any address in the blockchain ecosystem using a freshly minted stable-coin. The words "freshly minted" point out the main difference to other stable-coins.
 
 Any holder of our stable-coin will be able to burn stable-coins. A burn of a stable-coin will trigger a wire-transfer (bank transfer). But how do we find the correct receiver's bank account? We use either a default or the burner can give a "clue" which can be translated to a real bank account by our system. A clue is flexible - it could be as simple as a username or even an old transaction id. In the later case you can create a burn transaction which is similar to: "Please send 5 Euro to the bank account, which sent me 100 Euro a year ago using the transaction 223445".
 
-We will create a basic token with `init`, `mint`, `burn`, `transfer`, `getBalance` and `getTotalBalance`. `Burn` and `transfer` will emit events and errors. Only the non-obvious functions will be described here. The parachain will be a substrate node - implementation will be based on Substrate FRAME (and creating Pallets for modules) or Substrate Core, if substrate FRAME is too limiting. But we think using FRAME is OK.
+We will create a basic token with `init`, `mint`, `burn`, `transfer`, `getBalance` and `getTotalBalance`. `Burn` and `transfer` will emit events and errors. Only the non-obvious functions will be described here. The Fiat-chain will be a substrate node - implementation will be based on Substrate FRAME (and creating Pallets for modules) or Substrate Core, if substrate FRAME is too limiting. But we think using FRAME is OK.
 
 
 #### Mint: receiving FIAT funds
@@ -60,7 +60,7 @@ We will create a basic token with `init`, `mint`, `burn`, `transfer`, `getBalanc
 mint (amount, targetAddress)
 ```
 
-Our parachain will be initialized with 0 stable-coins, and a pegging bank account with 0 balance. First we need some stable-coins. The only way stable-coins find their way onto our parachain is via a wire-transfer to the pegging bank account. We will provide an API to fake incoming payments, so that you can test the system without real payments.
+Our Fiat-chain will be initialized with 0 stable-coins, and a pegging bank account with 0 balance. First we need some stable-coins. The only way stable-coins find their way onto our Fiat-chain is via a wire-transfer to the pegging bank account. We will provide an API to fake incoming payments, so that you can test the system without real payments.
 
 Please check the [sequence diagram](#mint) for the mint-case.
 
@@ -91,7 +91,7 @@ The burn may also be implemented by sending tokens to a specific address - and t
 transfer (from, to, amount)
 ```
 
-Transfer of stable-coins between accounts in the parachain will work out-of-the box, once a coin is minted in our parachain. Anyone who holds stable-coins in his wallet or contract, may burn the coins and "cash out" FIAT. 
+Transfer of stable-coins between accounts in the Fiat-chain will work out-of-the box, once a coin is minted. Anyone who holds stable-coins in his wallet or contract, may burn the coins and "cash out" FIAT. 
 
 ### B) Bank account REST API 
 There will be an off-chain worker using our pallets to connect to open banking APIs. The specifications for banking APIs are quite complicated - we do not go into details and use pseudo-code. We have already used these APIs in a production environment, so we hope you trust us to implement that for Polkadot as well. Here is a pick of standard documents:
@@ -214,7 +214,7 @@ Contacts Web3 Foundation:
 
 ## Development Roadmap :nut_and_bolt:
 
-For this proposal we focus on building a parachain which runs on a stable-coin  which is pegged and synchronized with a bank account. Dapps can build on that infrastructure, to create FIAT based smart contracts. We use github and Apache 2.0 licences.
+For this proposal we focus on building a simple substrate based chain containing a stable-coin which is pegged and synchronized with a bank account. Dapps can build on that infrastructure, to create FIAT based smart contracts. We use github and Apache 2.0 licences.
 
 ### Project plan, 3 milestones and its deliverables
 
@@ -238,7 +238,7 @@ For this proposal we focus on building a parachain which runs on a stable-coin  
 | 1. | Module: Open Banking Client | We will create a module based on Spring-Boot that will provide `getAccountBalance():Decimal`, `getIncomingOrders():IncomingPayments`,  `createOrder (OutgoingPayment)` and `simulatePayment(Payment)`  as a REST interface as [described](#b-bank-account-rest-api). Aim of the module is to provide a much simpler and Json/REST based runtime to access account information, thus remove necessity to use a [complicated protocol](https://www.ebics.org/en/home) and XML based documents like [Pain-001](https://wiki.xmldation.com/General_Information/ISO_20022/pain.001) files for accessing account information.|  
 | 2. | Docker | We will provide a dockerfile for the Open Banking Client on Docker Hub, where we add documentation on how to link the image with a bank account.  |
 
-### Milestone 2 Implement Parachain with the FIAT-stable-coin
+### Milestone 2 Implement substrate based chain
 
 * **Estimated Duration:** 2 months
 * **FTE:**  2
@@ -272,7 +272,7 @@ For this proposal we focus on building a parachain which runs on a stable-coin  
 
 First step is to prove technical feasibility and also to learn more about the concepts of the Polkadot ecosystem. We already have some ideas in which direction we want to continue, but that is to be validated. In other words - maybe our thoughts will not make sense once we know more :) So far, our next milestones and development goals:
 
-* Integrate with relaychain, so that parachain or tokens of parachains can be used throughout the ecosystem.
+* Integrate with relaychain, so that a node/token can be used throughout the ecosystem.
 * Support additional Bank-APIs
 * Make it easier to configure the pegging bank account.
 * Integrate with an identity system and provide similar functionality as we do now on Ethereum with our contracts. Means: Only whitelisted identities may receive or mint funds.
@@ -315,13 +315,13 @@ Our target architecture - how we connect the banking system with Polkadot.
    |  L  |       +----------------+          |    +----------------+                                 |
    |  E  |                                   | +--------------------------------------------------+  |
    |  D  |                                   | |                                                  |  |
-   |  G  |                                   | |  +----------------+          +----------------+  |  |      +-----------------+
-   |  E  |                                   | |  |                |          |                |  |  |      |                 |
-   |  R  |                                   | |  |                |          | FIAT-bridge    |  |  |      |                 |
-   |     |                                   | |  | Event          +----------+   Para Chain   +------------+ Polkadot        |
-   +-----+                                   | |  | Processing     |          |                |  |  |      | Relay Chain     |
-      |                                      | |  |                |          |                |  |  |      |                 |
-   +-----+       +----------------+          | |  +----------------+          +----------------+  |  |      +-----------------+
+   |  G  |                                   | |  +----------------+          +----------------+  |  |      
+   |  E  |                                   | |  |                |          |                |  |  |      
+   |  R  |                                   | |  |                |          | FIAT-bridge    |  |  |      
+   |     |                                   | |  | Event          +----------+   substr Cain  +------------+ 
+   +-----+                                   | |  | Processing     |          |                |  |  |     
+      |                                      | |  |                |          |                |  |  |     
+   +-----+       +----------------+          | |  +----------------+          +----------------+  |  |      
    |     |       |                |          | |                                                  |  |
    |  S  |       | International  |          | |                                                  |  |
    |  E  |       | Payment        |          | |  Code based on substrate                         |  |
@@ -334,13 +334,12 @@ Our target architecture - how we connect the banking system with Polkadot.
 Generated with  https://textart.io/sequence
 
 ```
-object RelayChain TargetAccount ParaChain EventProcessing OpenBankingClient BankAccount
+object TargetAccount FiatChain EventProcessing OpenBankingClient BankAccount
 RelayChain -> TargetAccount: getBalance = 100
-TargetAccount -> ParaChain: burn 100 recipient abc
-ParaChain -> EventProcessing: transfer 100 € to abc
+TargetAccount -> FiatChain: burn 100 recipient abc
+FiatChain -> EventProcessing: transfer 100 € to abc
 EventProcessing -> EventProcessing: resolve  abc to bank # DE12.45
 EventProcessing -> OpenBankingClient: initiate transfer to DE12.45
-RelayChain -> TargetAccount: getBalance = 0
 OpenBankingClient -> BankAccount : initiate transfer to DE12.45
 ```
 
@@ -351,47 +350,39 @@ which triggers a wire-transfer which finally removes the same amount from the pe
 The call on the balance is just informative. 
 
 ```
-+-------------+           +---------------+                +---------------+               +-------------------+                      +-------------------+                    +-------------+
-| RelayChain  |           | TargetAccount |                |    ParaChain  |               | Event Module      |                      | OpenBankingClient |                    | BankAccount |
-+-------------+           +---------------+                +---------------+               +-------------------+                      +-------------------+                    +-------------+
-       |                          |                                |                                 |                                          |                                     |
-       | getBalance = 100         |                                |                                 |                                          |                                     |
-       |------------------------->|                                |                                 |                                          |                                     |
-       |                          |                                |                                 |                                          |                                     |
-       |                          | burn 100 recipient abc         |                                 |                                          |                                     |
-       |                          |------------------------------->|                                 |                                          |                                     |
-       |                          |                                |                                 |                                          |                                     |
-       |                          |                                | transfer 100 € to abc           |                                          |                                     |
-       |                          |                                |-------------------------------->|                                          |                                     |
-       |                          |                                |                                 |                                          |                                     |
-       |                          |                                |                                 | resolve  abc to bank # DE12.45           |                                     |
-       |                          |                                |                                 |-------------------------------           |                                     |
-       |                          |                                |                                 |                              |           |                                     |
-       |                          |                                |                                 |<------------------------------           |                                     |
-       |                          |                                |                                 |                                          |                                     |
-       |                          |                                |                                 | initiate transfer to DE12.45             |                                     |
-       |                          |                                |                                 |----------------------------------------->|                                     |
-       |                          |                                |                                 |                                          |                                     |
-       | getBalance = 0           |                                |                                 |                                          |                                     |
-       |------------------------->|                                |                                 |                                          |                                     |
-       |                          |                                |                                 |                                          |                                     |
-       |                          |                                |                                 |                                          | initiate transfer to DE12.45        |
-       |                          |                                |                                 |                                          |------------------------------------>|
-       |                          |                                |                                 |                                          |                                     |
++---------------+                +-----------+                 +-----------------+                       +-------------------+                    +-------------+
+| TargetAccount |                | FiatChain |                 | EventProcessing |                       | OpenBankingClient |                    | BankAccount |
++---------------+                +-----------+                 +-----------------+                       +-------------------+                    +-------------+
+        |                              |                                |                                          |                                     |
+        | burn 100 recipient abc       |                                |                                          |                                     |
+        |----------------------------->|                                |                                          |                                     |
+        |                              |                                |                                          |                                     |
+        |                              | transfer 100 € to abc          |                                          |                                     |
+        |                              |------------------------------->|                                          |                                     |
+        |                              |                                |                                          |                                     |
+        |                              |                                | resolve  abc to bank # DE12.45           |                                     |
+        |                              |                                |-------------------------------           |                                     |
+        |                              |                                |                              |           |                                     |
+        |                              |                                |<------------------------------           |                                     |
+        |                              |                                |                                          |                                     |
+        |                              |                                | initiate transfer to DE12.45             |                                     |
+        |                              |                                |----------------------------------------->|                                     |
+        |                              |                                |                                          |                                     |
+        |                              |                                |                                          | initiate transfer to DE12.45        |
+        |                              |                                |                                          |------------------------------------>|
+        |                              |                                |                                          |                                     |
 
 ```
 
 ```
-object BankAccount OpenBankingClient EventProcessing ParaChain TargetAccount RelayChain
-RelayChain -> TargetAccount: getBalance = 0
+object BankAccount OpenBankingClient EventProcessing FiatChain TargetAccount
 EventProcessing -> OpenBankingClient: Check new Transactions
 OpenBankingClient -> BankAccount: daily statement
 EventProcessing -> EventProcessing: found new incoming Payment:+100 €
-EventProcessing -> ParaChain: mint 100 to TargetAddress
-ParaChain -> TargetAccount: assign 100 tokens
-RelayChain -> TargetAccount: getBalance = 100
+EventProcessing -> FiatChain: mint 100 to TargetAddress
+FiatChain -> TargetAccount: assign 100 tokens
 TargetAccount -> RelayChain: do transfers...
-TargetAccount -> ParaChain: do transfers...
+TargetAccount -> FiatChain: do transfers...
 ```
 
 ### Add value - Mint Sequence Diagram <a name="mint"></a>
@@ -404,33 +395,33 @@ that the balance of the bank account and the stable-coins stay the same. A defau
 to wire-transfer funds back to the originator or to mint the stable-coins to a predefined address.   
 
 ```
-+-------------+          +-------------------+              +-------------------+                         +---------------+           +---------------+          +-------------+
-| BankAccount |          | OpenBankingClient |              | EventProcessing   |                         | ParaChain     |           | TargetAccount |          | RelayChain  |
-+-------------+          +-------------------+              +-------------------+                         +---------------+           +---------------+          +-------------+
-       |                           |                                  |                                           |                           |                         |
-       |                           |                                  |                                           |                           |          getBalance = 0 |
-       |                           |                                  |                                           |                           |<------------------------|
-       |                           |                                  |                                           |                           |                         |
-       |                           |           Check new Transactions |                                           |                           |                         |
-       |                           |<---------------------------------|                                           |                           |                         |
-       |                           |                                  |                                           |                           |                         |
-       |           daily statement |                                  |                                           |                           |                         |
-       |<--------------------------|                                  |                                           |                           |                         |
-       |                           |                                  |                                           |                           |                         |
-       |                           |                                  | found new incoming Payment:+100 €         |                           |                         |
-       |                           |                                  |----------------------------------         |                           |                         |
-       |                           |                                  |                                 |         |                           |                         |
-       |                           |                                  |<---------------------------------         |                           |                         |
-       |                           |                                  |                                           |                           |                         |
-       |                           |                                  | mint 100 to TargetAddress                 |                           |                         |
-       |                           |                                  |------------------------------------------>|                           |                         |
-       |                           |                                  |                                           |                           |                         |
-       |                           |                                  |                                           | assign 100 tokens         |                         |
-       |                           |                                  |                                           |-------------------------->|                         |
-       |                           |                                  |                                           |                           |                         |
-       |                           |                                  |                                           |                           |        getBalance = 100 |
-       |                           |                                  |                                           |                           |<------------------------|
-       |                           |                                  |                                           |                           |                         |
++-------------+          +-------------------+              +-------------------+                         +---------------+           +---------------+         
+| BankAccount |          | OpenBankingClient |              | EventProcessing   |                         | FiatChain     |           | TargetAccount |         
++-------------+          +-------------------+              +-------------------+                         +---------------+           +---------------+     
+       |                           |                                  |                                           |                           |                         
+       |                           |                                  |                                           |                           |          
+       |                           |                                  |                                           |                           |
+       |                           |                                  |                                           |                           |                         
+       |                           |           Check new Transactions |                                           |                           |                         
+       |                           |<---------------------------------|                                           |                           |                         
+       |                           |                                  |                                           |                           |                         
+       |           daily statement |                                  |                                           |                           |                        
+       |<--------------------------|                                  |                                           |                           |                         
+       |                           |                                  |                                           |                           |                         
+       |                           |                                  | found new incoming Payment:+100 €         |                           |                         
+       |                           |                                  |----------------------------------         |                           |                        
+       |                           |                                  |                                 |         |                           |                         
+       |                           |                                  |<---------------------------------         |                           |                         
+       |                           |                                  |                                           |                           |                         
+       |                           |                                  | mint 100 to TargetAddress                 |                           |                         
+       |                           |                                  |------------------------------------------>|                           |                         
+       |                           |                                  |                                           |                           |                         
+       |                           |                                  |                                           | assign 100 tokens         |                         
+       |                           |                                  |                                           |-------------------------->|                         
+       |                           |                                  |                                           |                           |                         
+       |                           |                                  |                                           |                           |        
+       |                           |                                  |                                           |                           |
+       |                           |                                  |                                           |                           |                         
 ```
 
 
