@@ -2,7 +2,7 @@
 
 * **Project Name:** ink! Smart Contract Upgradeability
 * **Team Name:** Fractal
-* **Payment Address:** 0xAd0E9D4CF6B8F2E0C12c6620791164681c99A9ca
+* **Payment Address:** 0xB341F86A30390048390d6eF118d0e08bBbb0fDef
 
 ## Project Overview :page_facing_up:
 
