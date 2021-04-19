@@ -5,8 +5,6 @@
 </p>
 
 > **:loudspeaker:** The Web3 Foundation _Open Grants_ Program focuses on technology grants of up to **$30,000 for initial grants** and **$100,000 for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **Bitcoin or DAI**. For larger grants, payments in fiat and private submissions, please see our [_General Grants_ Program](https://github.com/w3f/General-Grants-Program).
->
-> :earth_asia: **_This page is also available in [Chinese (中文)](README_CN.md)._**
 
 ---
 
@@ -64,9 +62,9 @@ Finally, we take licensing and the right of all teams in and outside the ecosyst
 
 ### Project ideas
 
-An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](grants/polkadot_stack.md), as well as a list of previously accepted applications [here](grants/accepted_grant_applications.md). Additionally, the Substrate Builders [feedback board](https://feedback.parity.io/) may contain some useful ideas for grant projects.
+An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md), as well as a list of previously accepted applications [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/accepted_grant_applications.md). Additionally, the Substrate Builders [feedback board](https://feedback.parity.io/) may contain some useful ideas for grant projects.
 
-[Requests For Proposals](rfps) (RFPs) represent concrete ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, so even if another team has already applied to implement a certain RFP, we invite you to do the same if you're interested.
+[Requests For Proposals](https://github.com/w3f/General-Grants-Program/tree/master/rfps) (RFPs) represent concrete ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, so even if another team has already applied to implement a certain RFP, we invite you to do the same if you're interested.
 
 Finally, you don't need to start your own project in order to be elligible for a grant. Instead, some teams choose to port existing work to Substrate, where the pertinent licenses allow, or even to contribute to an existing open-source project. In the latter case, you should check in advance that the maintainers of the project are interested in your contribution, and the acceptance of the milestones will generally be tied to the inclusion of your work in said project.
 
