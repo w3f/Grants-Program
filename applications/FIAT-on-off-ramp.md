@@ -15,10 +15,10 @@ We want to implement a FIAT on- & off-ramp solution for the Polkadot ecosystem: 
 We are interested in that project, because we think the general idea is applicable and valuable to any blockchain-based solution who wants to reach a consumer market. This assumption was validated with the project [crowdlitoken.com](crowdlitoken.com): Users can invest into real estate with Swiss Francs. Once they are transferred their funds, their balance of Crowdlitoken is shown in Swiss Francs, where 1 Franc = 1 Crowdlitoken. Means - exactly what they have invested is shown as token-balance. Crowdlitoken runs on Ethereum - currently the high transaction fees are unbearable - this is another motivation to implement our solution on Polkadot.
 
 The scope for this initial grant is: Implement a parachain with a fully pegged stable-coin, synchronized via an off-chain worker with a fully pegging bank account. Incoming bank transactions (FIAT payments) and burning of stable-coins will trigger a sync, a token transfer does not trigger actions on the bank account. So transferring real funds to the bank account leads 
-to a mint of new stable-coins. A burn triggers a "real" bank transaction from the pegging account to some other bank account. This concept is quite different to existing stable-coins like DAI, TrueUSD or Tether: Everybody with a bank account is able to attach his own bank account to his own para-chain or smart contract, and create his own stable-coin. But our focus is not the stable-coin - it is about a smooth technical solution for FIAT on- and off-ramping. 
+to a mint of new stable-coins. A burn triggers a "real" bank transaction from the pegging account to some other bank account. This concept is quite different to existing stable-coins like DAI, TrueUSD or Tether: Everybody with a bank account is able to attach his own bank account to his own para-chain or smart contract, and create his own stable-coin. But our focus is not the stable-coin - it is about providing a technical solution for FIAT on- and off-ramping.
 
 Another, more philosophical angle on the project:
-The banking system can be seen (not technically of course) as a ledger with a blocktime of 1 day (in best case), with a proof of authority and consensus between banks. We want to attach this ledger to the polkadot ecosystem - like it is done with other blockchain/parachain systems already. Value in FIAT should flow in & out of the para chains & relay chain seamlessly. Technically we make banking interfaces (APIs for getting balance & sending FIAT) compatible with Polkadot.
+The banking system can be seen (not technically of course) as a ledger with a blocktime of 1 day (in best case), with a proof of authority and consensus between banks, and the payment network acting as a "relay chain". We want to attach this ledger to the polkadot ecosystem - like it is done with other blockchain/parachain systems already. Value in FIAT should flow in & out of the para chains & relay chain seamlessly. Technically we make banking interfaces (APIs for getting balance & sending FIAT) compatible with Polkadot.
 
 ## Project Details
 
@@ -31,11 +31,9 @@ Aim is to create a system  which connects any bank account to the Polkadot ecosy
 * **Mint**: Send funds from the banking system to Polkadot which brings new value into the Polkadot system where it floats for whatever reason.
 * **Burn**: Polkadot can send funds to any bank account outside the system, thus taking value out of the Polkadot system.
 
-With our solution anyone can attach his bank account to create own FIAT on- and off- ramp - and his own stable-coin. So who guarantees that the bank-account does not get out of sync with the stable-coin? How do we prevent that somebody issues a stable-coin, but takes all the pegging funds? We can not prevent that, because the banking system does not provide this transparency. We do not intend to fix this issue, because cryptocurrencies already do. Our goal is to find a practical solution for FIAT on- and off-ramping and we do not want to fix the banking system. It will be a matter of trust and transparency of anyone who is using our code. The banking system is not a "zero trust" environment, and we can not change that. We are very aware of legal consequences for anyone who is using our system  - especially who is owning pegging bank accounts (customers, companies, banks etc.) We also exclude that from the scope of our solution, we concentrate on providing a technical implementation as code, not as a platform or an exchange.  
-
 ### Mockups/designs of any UI components
 
-We will implement the system as **API first** - so do not expect to see much UI components.  Anyhow - because a similar concept is already live on Ethereum, we can demo the concept with existing systems with UIs and demo pages, which were created by element36 (this team). Check out our examples based on our Ethereum solution [here](https://github.com/element36-io/cash36-examples). Be aware, just porting the Ethereum based system is NOT what we intend to do on Polkadot - this proposal here is much narrower in scope and thus should be easier to use.
+We will implement the system as **API first** - so do not expect to see much UI components.  Anyhow - because a similar concept is already live on Ethereum, we can demo the concept with existing systems with UIs and demo pages, which were created by element36 (this team). Check out our examples based on our Ethereum solution [here](https://github.com/element36-io/cash36-examples). Be aware, just porting the Ethereum based system is NOT what we intend to do on Polkadot - this proposal here is much narrower in scope and thus should be easier to use in other systems.
 
 ### Architecture Overview
 
@@ -49,12 +47,11 @@ See [architecture component diagram](#architecture) for a visual overview.
 
 ### A) API specification parachain
 
-
 In the center of the integration is one bank account with a specific currency like the Dollar or Euro. The balance of the bank account is mirrored by the total supply of a fully pegged stable-coin - 100 Euro will be 100 stable-coins. So if this account receives funds then new coins are minted for a specific target address. To find out the target wallet address (or contract) who actually will get the stable-coins, we will use a default value or a specific code on the bank-transaction (on the payment slip), which can be translated by our system to a blockchain address on Polkadot. So it's possible to wire-transfer to any address in the blockchain ecosystem using a freshly minted stable-coin. The words "freshly minted" point out the main difference to other stable-coins.
 
-Any holder of our stable-coin will be able to burn stable-coins. A burn of a stable-coin will trigger a wire-transfer (bank transfer). But how do we find the correct receiver's bank account? We use either a default or the burner can give a "clue" which can be translated to a real bank account by our system. A clue is flexible - it could be as simple as a username or even an existing transaction id. In the later case you can create a burn transaction which is similar to: "Please send 5 Euro to the bank account, which sent me 100 Euro a year ago using the transaction 223445".
+Any holder of our stable-coin will be able to burn stable-coins. A burn of a stable-coin will trigger a wire-transfer (bank transfer). But how do we find the correct receiver's bank account? We use either a default or the burner can give a "clue" which can be translated to a real bank account by our system. A clue is flexible - it could be as simple as a username or even an old transaction id. In the later case you can create a burn transaction which is similar to: "Please send 5 Euro to the bank account, which sent me 100 Euro a year ago using the transaction 223445".
 
-The parachain will be a substrate node - implementation will be based on Substrate FRAME (and creating Pallets for modules) or Substrate Core, if substrate FRAME is too limiting. But we think using FRAME is OK. 
+We will create a basic token with `init`, `mint`, `burn`, `transfer`, `getBalance` and `getTotalBalance`. `Burn` and `transfer` will emit events and errors. Only the non-obvious functions will be described here. The parachain will be a substrate node - implementation will be based on Substrate FRAME (and creating Pallets for modules) or Substrate Core, if substrate FRAME is too limiting. But we think using FRAME is OK.
 
 
 #### Mint: receiving FIAT funds
@@ -63,7 +60,7 @@ The parachain will be a substrate node - implementation will be based on Substra
 mint (amount, targetAddress)
 ```
 
-Ideally our parachain will be initialized with 0 stable-coins, and a bank account with 0 balance and arbitrary accounts, which can be smart contracts or wallet addresses. Before something can happen, we actually need some stable-coins. The only way stable-coins find their way onto our parachain is via a wire-transfer to the pegging bank account. We will provide an API to fake incoming payments, so that you can test the system without real payments. 
+Our parachain will be initialized with 0 stable-coins, and a pegging bank account with 0 balance. First we need some stable-coins. The only way stable-coins find their way onto our parachain is via a wire-transfer to the pegging bank account. We will provide an API to fake incoming payments, so that you can test the system without real payments.
 
 Please check the [sequence diagram](#mint) for the mint-case.
 
@@ -96,8 +93,7 @@ transfer (from, to, amount)
 
 Transfer of stable-coins between accounts in the parachain will work out-of-the box, once a coin is minted in our parachain. Anyone who holds stable-coins in his wallet or contract, may burn the coins and "cash out" FIAT. 
 
-### B) Bank account REST API
-
+### B) Bank account REST API 
 There will be an off-chain worker using our pallets to connect to open banking APIs. The specifications for banking APIs are quite complicated - we do not go into details and use pseudo-code. We have already used these APIs in a production environment, so we hope you trust us to implement that for Polkadot as well. Here is a pick of standard documents:
 
 * https://en.wikipedia.org/wiki/Electronic_Banking_Internet_Communication_Standard
@@ -125,11 +121,41 @@ getIncomingOrders():IncomingPayments
 
 #### Trigger outgoing order
 
-If we detect a burn of stable-coins, we use the create order to initiate a wire-transfer on our bank account. If the transaction fails for some reason - e.g. the provided IBAN is not existing - then the pegging balance of the bank account will be higher then the total supply of stable-coins, the problem can and should be resolved outside of the system.
+If we detect a burn of stable-coins, we use the create order to initiate a wire-transfer on our bank account. If the transaction fails for some reason - e.g. the provided IBAN is not existing - then the pegging balance of the bank account will be higher then the total supply of stable-coins, the order reamins open until it can be resolved outside of the system, e.g. manually.
 
 ```
 createOrder (OutgoingPayment)
 ```
+### C) Event Processing (off-chain-worker)
+
+The Event Processing Module is responsible for synchronizing the pegging account with the stable-coins of our chain:
+
+1. Process incoming transactions with `A.getIncomingOrders():IncomingPayments` and initiate `B.mint(amount,targetAddress)`
+2. Listen to blockchain events from module B) and initiate `A.createOrder(OutgoingPayment)`
+3. Check consistency `B.getAccountBalance() = (A.getTotalBalance() + balanceOfoutstandingOrders())`
+4. Generate payment information and store the mapping between bank accounts and blockchain accounts to do step 1. and 2.
+
+
+### Attack vectors
+
+#### Double Spending of the stable-coins and FIAT by the issuer
+
+The owner of the pegging bank account can access his bank account anytime and withdraw funds so that the pegging gets broken, and modify the FIAT-Rest Bank interface to fake account balances and outgoing transactions.  The problem is similar to oracles and the trust which is put on accessing data of external systems. Strategies to mitigate the risk are:
+
+- Proof of Staking: Integrating another "staking contract" which holds cryptocurrencies at stake - e.g. a contract that holds more DAI then the pegging account.
+- Proof of Authority: The bank account may be audited by a central party like a bank or a trusted auditing authority, or run by a bank or financial intermediary (which is the business model element36)
+- Over-the-counter transactions: This case covers many real world use-cases and actually does not need PoS or PoA. E.g. if your smart contract converts the stable-coins into digital shares or assets and the issuing party is also the account beneficiary, then there is no double spending attack. The owner of the pegging account is the recipient of the stable-coin.
+ The duty of blockchain is to do the transparent "bookkeeping" of the transaction and to grant rights according to the smart and legal contracts. This pattern is also used by crowdlitoken.com, and we think this is applicable to many other business cases.
+
+
+#### Cancelling wire transfers?
+
+What if Alice sends Bob our stablecoin via a wire-transfer and after the minting it cancels the wire transfer? Alice would still have the FIAT money, and Bob would have the money in stable-coins. This is only true for transfers based on e.g. Credit Card, Paypal or Stripe.  We use Ebics/ISO20022 and the SEPA network, where a wire transfer has finality, once you see it on the bank statement.
+
+#### Hacking the off-chain worker
+
+If the off-chain worker (including the Open-Banking API) is hacked, then creating, burning and also mapping between bank accounts to chain accounts can be manipulated. To mitigate the risk,  off-chain worker and bank-API should run in a pure "egress-mode", which means that the components do not nead any external open ports in order to operate. Besides that, both ledgers (blockchain and bank) provide a log which can not or hardly be manipulated.
+
 
 ### Ecosystem Fit
 
@@ -137,7 +163,7 @@ The need for the ecosystem to integrate in the legacy financial system is huge, 
 
 We change this two-step process into a seamless, one-stop transaction: We provide a *frictionless* technical solution for on- and off-ramping FIAT. Means, that an end-user should be able to send funds to a wallet or smart contract *directly* via an old-school wire-transfer. And a smart contract should be able to initiate a wire transfer, without asking a user to change e.g. DAIs on an exchange. This makes the user-journey for the end-user much simpler, for any Dapp which wants to work with FIAT currencies.
 
-What do we mean by frictionless? With our on-off-ramp, a user does NOT need to have a wallet in order to invest in a smart contract. And we do not need a "fake" wallet managed by a central entity. How is that possible? An end-user sends 100 USD via wire transfer using our system to a smart contract - you should be informed by now how this technically works. A year later, the smart contract burns 5 USD in favour of the person who did the initial investment of 100 USD. The user receives 5 USD on his bank account. The overall investment process can be done without wallets, and decentrality is not sacrificed. This is a completely new model of using smart contracts and FIAT currencies, and many other projects may benefit from that. 
+What do we mean by frictionless? With our on-off-ramp, a user does NOT need to have a wallet in order to invest in a smart contract. And we do not need a "fake" wallet managed by a central entity. How is that possible? An end-user sends 100 USD via wire transfer using our system to a smart contract - you should be informed by now how this technically works. A year later, the smart contract burns 5 USD in favour of the person who did the initial investment of 100 USD. The user receives 5 USD on his bank account. The overall investment process can be done without wallets, and decentrality is not sacrificed. This is a completely new model of using smart contracts and FIAT currencies, and many other projects may benefit from that.
 
 As an example for a usage scenario , we want to refer again to crowdlitoken.com, a blockchain based real-estate funds (16 mCHF) where we have built the investment platform: An end-user can invest into real estate by sending e.g. 100 CHF to the platform's bank account. After the 100 CHF arrive at the bank account, 100 CHF show up on the platform as "CRTs" (crowdlitokens), where one CRT is one CHF. This is easy to understand for any user. After that, the end-user may assign his account balance (CRT-tokens) to a real estate property (a smart contract) which grants him a certain yield in the shape of CRTs.
 
@@ -161,7 +187,7 @@ The team consists of more members, who we do not see as necessary for implementi
 
 ### Team's experience
 
-Team: We implemented a fully pegged ERC-20 stable-coin (EUR, CHF) and an exchange based on Ethereum, which serves as the blueprint for this proposal. Therefore we covered many technical aspects already - for example interacting with open-banking standards, creating stable-coins, the APIs and an exchange. We might be able to reuse e.g. our Ebics-Code (banking-API) and improve our current API with new implementation on Polkadot. In the Ethereum based project we added a lot of legal code to be compliant for Swiss Law and international Anti-Money Laundering regulations - which we do not see as part of this proposal. We want to focus on a slim, technical solution which can be used by many people, regardless of their jurisdiction. The team also implemented the investment platform crowdlitoken.com, which is our first real-world use case. On the Ethereum side we are currently working on a solution to use ZK-rollups (Zero knowledge proofs) to "expose" our bank-account balance data plus client data accordingly without breaching data-protection.
+Team: We implemented a fully pegged ERC-20 stable-coin (EUR, CHF) and an exchange based on Ethereum, which serves as the blueprint for this proposal. Therefore we covered many technical aspects already - for example interacting with open-banking standards, creating stable-coins, the APIs and an exchange. We might be able to reuse e.g. our Ebics-Code (banking-API) and improve our current API with new implementation on Polkadot. In the Ethereum based project we added a lot of legal code to be compliant for Swiss Law and international Anti-Money Laundering regulations - which we do not see as part of this proposal. We want to focus on a slim, technical solution which can be used by many people, regardless of their jurisdiction. The team also implemented the investment platform crowdlitoken.com, which is our first real-world use case. On the Ethereum side we are currently working on a solution to use ZK-rollups (Zero knowledge proofs) to "expose" the proof our bank-account balance data plus client data accordingly without breaching data-protection.
 
 ### Team Code Repos
 
@@ -202,52 +228,63 @@ For this proposal we focus on building a parachain which runs on a stable-coin  
 * **FTE:**  2
 * **Costs:** 5.000 USD
 
-#### Deliverables
-
-* Github-Repository containing code to access banking accounts using open-banking APIs. Delivered will be a pallet which is later used by the off-chain worker.  
-* Modify and open-source our existing payment microservice of element36 
 * APIs: createOrder(Payment),  getIncomingPayments():Payments, simulatePayment(Payment)
 
-### Milestone 2 Implement Parachain with the FIAT-stable-coin 
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can link the Open Banking Client to an Ebis/ISO20022 compatible bank account. Once the docker instance is up, it will be possible to query balance, to read new transactions and to send test and real transactions that will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 1. | Module: Open Banking Client | We will create a module based on Spring-Boot that will provide `getAccountBalance():Decimal`, `getIncomingOrders():IncomingPayments`,  `createOrder (OutgoingPayment)` and `simulatePayment(Payment)`  as a REST interface as [described](#b-bank-account-rest-api). Aim of the module is to provide a much simpler and Json/REST based runtime to access account information, thus remove necessity to use a [complicated protocol](https://www.ebics.org/en/home) and XML based documents like [Pain-001](https://wiki.xmldation.com/General_Information/ISO_20022/pain.001) files for accessing account information.|  
+| 2. | Docker | We will provide a dockerfile for the Open Banking Client on Docker Hub, where we add documentation on how to link the image with a bank account.  |
 
-* **Estimated Duration:** 2 month
+### Milestone 2 Implement Parachain with the FIAT-stable-coin
+
+* **Estimated Duration:** 2 months
 * **FTE:**  2
 * **Costs:** 20.000 USD
 
-#### Deliverables
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up one of our Substrate nodes and connect it to a real or a test bank account. Once the node is up, it will be possible to trigger mint and burn test transactions that will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions of the basic token and the off chain worker will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 1. | Off chain worker pallet: Event Processing | We will create a Substrate ocw pallet (rust or javascript) that will a) poll the bank account for incoming (new) bank transactions and initiate  `mint` transactions accordingly. b) Listen for burn-events for stablecoins on our substrate chain to initiate outgoing transactions on our bank account. c) Use local storage to map between bank account and wallet or contract address for the mint and burn. |
+| 2. | Pallet: FIAT stable coin | We will create a basic token with init, mint, burn, transfer, getBalance(address) and getTotalBalance. Burn and transfer will emit events and errors. At this point for simplicity, we will not use [Currency](https://substrate.dev/recipes/currency.html) trait.  |
+| 3. | Substrate chain | Use described modules of our custom chain will provide a token, which synchronizes with a fully pegging bank account as described throughout the document.  |
+| 4. | Unit Tests | We will add unit tests to cover mint, burn, transfer, getBalance, getTotalBalance for the basic token. We will add unit tests to the off chain worker to test the local datastore with the map of IBAN to addresses and vice-versa, plus mint and burn.  |
+| 5. | Docker-Compose Substrate node | We will provide a docker-compose file to demonstrate the full functionality of our chain, the ocw, including a stub for the FIAT Rest Interface developed in Milestone 1. |
 
-* Github-Repository containing code for a parachain
-* Github-Repository with code for an off-chain worker which synchronizes banking ledger with stable-coin
-* Stable-coin with a private mint(target,amount),transfer(from,to,amount),burn(clue,amount)
-* Unit tests or sample contract to test on- and off-ramping of FIAT (mint and burn) 
-* Docker image with pre-configured substrate node (testnet) to connect with a pre-configured test bank account
-
-
-### Milestone 3 Documentation & Tests
+### Milestone 3 Documentation & Demo-Dapp
 
 * **Estimated Duration:** 0.5 month
 * **FTE:**  2
 * **Costs:** 5.000 USD
 
-#### Deliverables
-
-* Installation instruction with  "Hello World" example. We want to provide a similar repos like the ones used by our Ethereum solution: https://github.com/element36-io/cash36-ping and a "buy me a coffee" demo app similar to that one here: https://github.com/element36-io/cash36-examples 
-* Documentation on the process of connecting via API with a bank account
-* Deliverables above modified in a way, that a bank-transaction can be simulated & tested
-
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0  |
+| 0b. | Tutorial | Installation instruction with  "Hello World" example. We want to provide a similar repos like the ones used by our Ethereum solution: https://github.com/element36-io/cash36-ping and a "buy me a coffee" demo app similar to that one here: https://github.com/element36-io/cash36-examples |
+| 1. | Coffee Smart Contract | A "buy me a coffee" contract. It will accept a payment and cash out automatically to the benefit of a hardcoded recipient who will be receiving the funds in FIAT. |
+| 2. | Dapp | The Dapp which uses the "by me a coffee" Smart Contract. |
+| 3. | Docker-Compose: node & Dapp | We will add the Dapp to the docker-compose file of Milestone 2 to demonstrate the full functionality of our chain, the ocw, including a proxy for the FIAT Rest Interface developed in Milestone 1 and the "buy me a coffee" Dapp. |
 ## Future Plans
 
 First step is to prove technical feasibility and also to learn more about the concepts of the Polkadot ecosystem. We already have some ideas in which direction we want to continue, but that is to be validated. In other words - maybe our thoughts will not make sense once we know more :) So far, our next milestones and development goals:
 
-* Integrate with relaychain, so that parachain or tokens of parachains can be used throughout the ecosystem. 
+* Integrate with relaychain, so that parachain or tokens of parachains can be used throughout the ecosystem.
 * Support additional Bank-APIs
 * Make it easier to configure the pegging bank account.
 * Integrate with an identity system and provide similar functionality as we do now on Ethereum with our contracts. Means: Only whitelisted identities may receive or mint funds.
 * Create a nice API and project/landing page, integrate with no-code tools like Integromat or Zapier to make our Functionality easy & accessible for developers.
+* Use a staking/pegging contract instead of a pegging bank account, try to combine both to remove the need for a trusted oracle for the pegging account balance.
+* Use Currency trait for the FIAT-stable-coin.
+* Investigate attack-vectors.
+* Investigate implementation which runs without the need of local storage and address - IBAN mapping.
 
 Our vision is to remove the pain point of FIAT onboarding: How can an end user transfer funds to a smart contract? How can a smart contract transfer funds to a user? Our approach is to wrap a bank account with blockchain tech, so that end users can interact with Smart contracts without tokens and wallets, but just using their bank account.  
 
-## Additional Information :heavy_plus_sign: 
+## Additional Information :heavy_plus_sign:
 
 > Any additional information that you think is relevant to this application that hasn't already been included.
 
@@ -281,13 +318,13 @@ Our target architecture - how we connect the banking system with Polkadot.
    |  G  |                                   | |  +----------------+          +----------------+  |  |      +-----------------+
    |  E  |                                   | |  |                |          |                |  |  |      |                 |
    |  R  |                                   | |  |                |          | FIAT-bridge    |  |  |      |                 |
-   |     |                                   | |  | Event & Signal +----------+   Para Chain   +------------+ Polkadot        |
+   |     |                                   | |  | Event          +----------+   Para Chain   +------------+ Polkadot        |
    +-----+                                   | |  | Processing     |          |                |  |  |      | Relay Chain     |
       |                                      | |  |                |          |                |  |  |      |                 |
    +-----+       +----------------+          | |  +----------------+          +----------------+  |  |      +-----------------+
    |     |       |                |          | |                                                  |  |
    |  S  |       | International  |          | |                                                  |  |
-   |  E  |       | Payment        |          | |  Code based on subtrate                          |  |
+   |  E  |       | Payment        |          | |  Code based on substrate                         |  |
    |  P  +-------+ Network        |          | +--------------------------------------------------+  |
    |  A  |       |                |          |                                                       |
    |     |       +----------------+          | Scope of the project                                  |
@@ -297,12 +334,12 @@ Our target architecture - how we connect the banking system with Polkadot.
 Generated with  https://textart.io/sequence
 
 ```
-object RelayChain TargetAccount ParaChain EventSignalModule OpenBankingClient BankAccount
+object RelayChain TargetAccount ParaChain EventProcessing OpenBankingClient BankAccount
 RelayChain -> TargetAccount: getBalance = 100
 TargetAccount -> ParaChain: burn 100 recipient abc
-ParaChain -> EventSignalModule: transfer 100 € to abc
-EventSignalModule -> EventSignalModule: resolve  abc to bank # DE12.45
-EventSignalModule -> OpenBankingClient: initiate transfer to DE12.45
+ParaChain -> EventProcessing: transfer 100 € to abc
+EventProcessing -> EventProcessing: resolve  abc to bank # DE12.45
+EventProcessing -> OpenBankingClient: initiate transfer to DE12.45
 RelayChain -> TargetAccount: getBalance = 0
 OpenBankingClient -> BankAccount : initiate transfer to DE12.45
 ```
@@ -315,7 +352,7 @@ The call on the balance is just informative.
 
 ```
 +-------------+           +---------------+                +---------------+               +-------------------+                      +-------------------+                    +-------------+
-| RelayChain  |           | TargetAccount |                |    ParaChain  |               | EventSignalModule |                      | OpenBankingClient |                    | BankAccount |
+| RelayChain  |           | TargetAccount |                |    ParaChain  |               | Event Module      |                      | OpenBankingClient |                    | BankAccount |
 +-------------+           +---------------+                +---------------+               +-------------------+                      +-------------------+                    +-------------+
        |                          |                                |                                 |                                          |                                     |
        | getBalance = 100         |                                |                                 |                                          |                                     |
@@ -345,12 +382,12 @@ The call on the balance is just informative.
 ```
 
 ```
-object BankAccount OpenBankingClient EventSignalModule ParaChain TargetAccount RelayChain
+object BankAccount OpenBankingClient EventProcessing ParaChain TargetAccount RelayChain
 RelayChain -> TargetAccount: getBalance = 0
-EventSignalModule -> OpenBankingClient: Check new Transactions
+EventProcessing -> OpenBankingClient: Check new Transactions
 OpenBankingClient -> BankAccount: daily statement
-EventSignalModule -> EventSignalModule: found new incoming Payment:+100 €
-EventSignalModule -> ParaChain: mint 100 to TargetAddress
+EventProcessing -> EventProcessing: found new incoming Payment:+100 €
+EventProcessing -> ParaChain: mint 100 to TargetAddress
 ParaChain -> TargetAccount: assign 100 tokens
 RelayChain -> TargetAccount: getBalance = 100
 TargetAccount -> RelayChain: do transfers...
@@ -368,7 +405,7 @@ to wire-transfer funds back to the originator or to mint the stable-coins to a p
 
 ```
 +-------------+          +-------------------+              +-------------------+                         +---------------+           +---------------+          +-------------+
-| BankAccount |          | OpenBankingClient |              | EventSignalModule |                         | ParaChain     |           | TargetAccount |          | RelayChain  |
+| BankAccount |          | OpenBankingClient |              | EventProcessing   |                         | ParaChain     |           | TargetAccount |          | RelayChain  |
 +-------------+          +-------------------+              +-------------------+                         +---------------+           +---------------+          +-------------+
        |                           |                                  |                                           |                           |                         |
        |                           |                                  |                                           |                           |          getBalance = 0 |
@@ -395,3 +432,6 @@ to wire-transfer funds back to the originator or to mint the stable-coins to a p
        |                           |                                  |                                           |                           |<------------------------|
        |                           |                                  |                                           |                           |                         |
 ```
+
+
+
