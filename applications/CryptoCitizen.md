@@ -9,6 +9,8 @@
 ### **Overview**
 **CryptoCitizen** is a 2D sandbox game with gameplay that revolves around exploration, building, crafting and NFT Collecting. Our goal is: Make some real game in blockchain (Highly playable one).
 
+**CryptoCitizen based on Moonbeam.**
+
 CryptoCitizen uses Substrate as the blockchain development framework, 
 and we will use a Ruby on Rails Web Application to store some other data(like user chat.) From the technical level, if we want gameplay smoothly, it must have some trade off, we will make sure that highly credible data storage and NFT materials/game props are stored on the chain. Other data we will choose to save it on a centralized server.
 
@@ -131,11 +133,12 @@ We will create a **rule engine** to organize some rules to measure users behavio
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
-| 0c. | Testnet | Setup and run a testnet |
-| 1. | Substrate module: UserController | We will create a Substrate module that will generate events and allow user create avatar and trigger events |
-| 2. | Substrate module: Runtime | We will create a Substrate module that will manage game events, update game world's data. |
-| 3. | Substrate module: In-Game User action validator | We will create a Substrate module that will detect wrong data movement.(Maybe this problem will move to web application.) |
-| 4. | Game Art Design | We will hire a designer to design the game content and prepare for the game's development. |
+| 1. | UserController | We will create a web backend to store address, user can login by signing data. |
+| 2. | Smart Contract: Runtime | We will create a smart contract that will create items based on conditions in each block. |
+| 3. | Smart Contracts: NFT/ERC20 Token and NFT(erc995 and erc1155) generator | Based on openzeppelin, it will work on few codes, and we decide made NFT generate event happen in server side. |
+| 4. | In-Game User action detector | We will create a watcher in server side, make sure we can find cheaters. |
+| 5. | Game Art Design | We will hire a designer to design the game content and prepare for the game's development. |
+| 6. | Deploy in Moonbase Alpha TestNet | We'll deploy the smart contracts into Moonbase Alpha TestNet |
 
 ### Milestone 2 —
 - **Estimated Duration:** 3 months
@@ -163,6 +166,8 @@ We will create a **rule engine** to organize some rules to measure users behavio
     - Game Designer(3 years)
     - Blockchain Developer(2 years)
     - http://github.com/madao-3
+- Bing
+    - Blockchain Developer (3 years)
 - Pixel Art Artist - Recruiting...
 
 ![](https://avatars.githubusercontent.com/u/1069652?v=4)
