@@ -2,7 +2,7 @@
 
 * **Project Name:** YieldScan 
 * **Team Name:** Find Signal PTE. LTD. 
-* **Payment Address:** `bc1q6wf835ajgj2cr4x6eferqxyapek9an6jrl7vmc`
+* **Payment Address:** `0x8cdf9e28B5C49A80c039d68Fb5807Ed8EdE72E67` or `findsignal.eth`
 
 
 ## Project Overview :page_facing_up:
@@ -157,7 +157,7 @@ We've been building within the Polkadot ecosystem for the past 1 year understand
 
 * **Total Estimated Duration:** 1.5 months 
 * **Full-Time Equivalent (FTE):**  3
-* **Total Costs:** 20,000 USD (payable in BTC)
+* **Total Costs:** 20,000 USD (payable in DAI)
 
 ---
 
@@ -173,7 +173,7 @@ We've been building within the Polkadot ecosystem for the past 1 year understand
 
 * **Estimated Duration:** 1.5 month
 * **FTE:**  3
-* **Costs:** 20,000 USD (payable in BTC)
+* **Costs:** 20,000 USD (payable in DAI)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
