@@ -1,15 +1,15 @@
 # **Open Grant Proposal**
 
-- **Project Name:** CryptoBot
-- **Team Name:** CryptoBot Studio
+- **Project Name:** CryptoCitizen
+- **Team Name:** CryptoCitizen Studio
 - **Payment Address:** Madao.eth
 
 ## **Project Overview 📄**
 
 ### **Overview**
-**CryptoBot** is a 2D sandbox game with gameplay that revolves around exploration, building, crafting and NFT Collecting. Our goal is: Make some real game in blockchain (Highly playable one).
+**CryptoCitizen** is a 2D sandbox game with gameplay that revolves around exploration, building, crafting and NFT Collecting. Our goal is: Make some real game in blockchain (Highly playable one).
 
-CryptoBot uses Substrate as the blockchain development framework, 
+CryptoCitizen uses Substrate as the blockchain development framework, 
 and we will use a Ruby on Rails Web Application to store some other data(like user chat.) From the technical level, if we want gameplay smoothly, it must have some trade off, we will make sure that highly credible data storage and NFT materials/game props are stored on the chain. Other data we will choose to save it on a centralized server.
 
 Apart from the daily play part of the game, we will design a story line containing at least 50,000 words.
@@ -74,13 +74,13 @@ Actually that is an anti-cheat validator, we will create serval rules to make su
 We will create a **rule engine** to organize some rules to measure users behavior. If found some problem user, we can detect it and make it right.
 
 #### Game Design Document (GDD)
-1. Game Title: CryptoBot
+1. Game Title: CryptoCitizen
 2. Game Genre: Action-adventure, ‎sandbox, (it might become a Roguelike)
 3. Game Perspective: Third person
 4. Game Mode(s):
     * Single player
     * Multi player (optional)
-5. Core Idea: CryptoBot's background is a Space cruiser pilot because of the failure landed on an unknown planet. Then leave this planet through exploration, building, crafting.
+5. Core Idea: CryptoCitizen's background is a Space cruiser pilot because of the failure landed on an unknown planet. Then leave this planet through exploration, building, crafting.
 6. Goal: First phase will be leave this planet.
 7. Game Play: 
     1. Objective:
@@ -100,7 +100,7 @@ We will create a **rule engine** to organize some rules to measure users behavio
     3. Game Resources (Because a large number of props require design mechanisms, we will only discuss the basic elements first):
         1. Wood, Flammable and can process to wood board. You need it for any building
         2. All kinds of ores, Obtain metals through construction refineries.
-        3. Oil, Bot need it.
+        3. Foods, Citizen need it.
     4. Economies:
         1. In-Game Currency
         2. inventory/items
@@ -148,7 +148,7 @@ We will create a **rule engine** to organize some rules to measure users behavio
 | 0b. | Testing Guide | The code will have unit-test coverage (min. 60%) to ensure functionality and robustness. It about our Web Application and game itself. |
 | 0c. | Game Development Logs | Keep in touch with the community |
 | 1. | Web Application | We will implementation User analysis\User Chat\Daily event operation in this place. |
-| 2. | Crypto Bot Game | And the Game's 'Frontend' will be this part, it will be heavy scripting job and pixel art design and game implementation in this part |
+| 2. | Crypto Citizen Game | And the Game's 'Frontend' will be this part, it will be heavy scripting job and pixel art design and game implementation in this part |
 | 3. | NFT Integration SDK | Refer to the implementation of opensea js |
 
 ### **Ecosystem Fit**
