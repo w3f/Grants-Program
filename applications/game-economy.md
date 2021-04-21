@@ -42,11 +42,7 @@ The mobile market is the most popular and promising in terms of adoption and use
 
 * REALIS-API: API for linking the game with the blockchain (transfer operations, creating, crafting, transfer of NFT-Token, withdrawal of funds when the user spends)
 
-* NFT-Token: Own, open to other developers, NFT pallet
-
 * NFT-Marketplace: Marketplace embedded in the NFT trading game
-
-* Bridge Substrate to ERC721: Bridge for transfer from blockchain substratum to Etherium contract
 
 ### Relevant prior work
 * In Realis we know what players want and we understand the audience of our product. We understand what attracts them in the games, we have experience in building a working business model and by combining it with Defi and NFT economics we can create a unique and popular product in the market.
