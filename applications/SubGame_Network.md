@@ -128,6 +128,7 @@ No Legal Entity
 | 3a. | Front End | In the first stage, the basic development of the game center will be completed, and the first core game interaction process will be completed |
 | 3b. | UI mock-ups | [https://www.figma.com/file/hbwDsOVkP5tJqCnl7v0Smr/Subgame-center](https://www.figma.com/file/hbwDsOVkP5tJqCnl7v0Smr/Subgame-center) |
 | 3c. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. | 
+| 3d. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain  and front end |
 
 
 ## Future Plans
