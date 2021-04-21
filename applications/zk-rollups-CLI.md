@@ -106,9 +106,9 @@ We plan to provide a CLI to make ZK Rollups solution on Substrate easily.
 #### ZK Rollups CLI
 * **Estimated Duration:** 2 months
 * **FTE:**  1
-* **Costs:** 0.33
+* **Costs:** 0.35
 
-We implement a ZK Rollup CLI. In order to setup ZK Rollup sidechain network, we need to implement commands allows us to deploy contracts, do integration test and, run sidechain and prover. In order to reset ZK Rollup sidechain network, we need to implement commands allows us to restart whole network and change the network config. In order for developers to setup the environment and try to run example commands, we need to prepare Dockerfile and tutorial. This CLI allows us to setup and reset ZK Rollup environment without high technical knowledge.
+We implement a ZK Rollup CLI. In order to setup ZK Rollup sidechain network, we need to implement some commands that allow us to deploy contracts, do integration test and, run sidechain and prover. In order to reset ZK Rollup sidechain network, we need to implement commands that allow us to restart the whole network and change the network config. In order for developers to setup the environment and try to run example commands, we need to prepare Dockerfile and tutorial. This CLI allows us to setup and reset ZK Rollup environment without high technical knowledge.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
