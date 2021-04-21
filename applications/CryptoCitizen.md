@@ -43,8 +43,6 @@ User's CURD will trigger this controller. Once a user did create, we will create
 The chat will be stored separately on a centralized server.
 
 #### NFT Market Service
-We will use Darwinia Network's cross-chain bridge protocol move game's inventory/items to polkadot's network from ethereum.
-
 Inventory/Items's metadata format will be
 
 ```
