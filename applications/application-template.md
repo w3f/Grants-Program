@@ -1,7 +1,5 @@
 # W3F Open Grant Proposal
 
-> 🌏 This page is also available in [Chinese (中文)](./application-template-cn.md).
->
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 >
 > See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/#pencil-process) on how to submit a proposal.
