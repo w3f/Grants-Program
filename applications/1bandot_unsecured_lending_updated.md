@@ -218,5 +218,14 @@ After implemented the unsecured lending contract and the team would
 
 
 ## Additional Information :heavy_plus_sign: 
+* We have created a simple credit delegation loan system by using the a rough KYC verification.
 
-* We're currently implementing a substrate-based chain.
+   Try it from our test network: https://lend.bandot.io/
+
+   * Apply the DOT from the Patract Faucet: https://patrastore.io/jupiter-a1/system/accounts
+   * Click the KYC L1 Verification button on the Lend page at the Borrow section, then put on your email, name.
+   * As a user you can either be a lender to delegate DOT or a borrower to borrow DOT you got delegated from different lenders/delegators
+
+   For more detail, you can access our Github: https://github.com/bandotio/unsecured-lending
+
+* We're currently implementing the lending pool and oracle contract with ink!.
