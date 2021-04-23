@@ -18,7 +18,7 @@ Now, we can already [install Doter](https://chrome.google.com/webstore/detail/do
 ### Project Details 
 
 #### Functional structure
-![img](https://uploader.shimo.im/f/KXfkCaa3sgSynRcP.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2MTgzMjYxMzcsImciOiJtNGtNTFpweGJuczYxQnFEIiwiaWF0IjoxNjE4MzI0MzM3LCJ1Ijo1MjU3NjQ4MX0.wzzgXC6qbJ-kE_B-NkrI2lgeERoWzVGuba2n3e-e5vk)  
+![img](https://uploader.shimo.im/f/4XnoevPmkhO6ZSqT.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE2MTkxMzk5MDEsImciOiJtNGtNTFpweGJuczYxQnFEIiwiaWF0IjoxNjE5MTM4MTAxLCJ1IjowfQ.gkX36NMe-V9je08Ofh2mFgSEzsJ_k-YnHBsaVxo2Lyo)  
 #### Core components
 The Doter consists of several core components：  
 
