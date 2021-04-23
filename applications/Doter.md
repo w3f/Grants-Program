@@ -121,7 +121,7 @@ Gao Jianli：https://www.linkedin.com/in/jianli-gao-6785a1140/
 ### Overview
 * Total Estimated Duration: 2 month
 * Full-time equivalent (FTE): 28 
-* Total Costs: $13,500
+* Total Costs: $13,300
 
 ### Milestone
 #### M1：Injection and signature
