@@ -134,7 +134,7 @@ The following is a list of functions that have been implemented
 * Total Costs: $18,050
 
 ### Milestone
-#### M1：Injection and signature
+#### M1: Injection and signature
 
 * Estimated Duration: 1 month
 * FTE: 18
@@ -149,7 +149,7 @@ The following is a list of functions that have been implemented
 | 1.  | Core component | * Wallet injection on Polkadot</br>* Transaction signature on Polkadot
  |
 
-#### M2 Support kusama network
+#### M2: Support kusama network
 
 * Estimated Duration: 1 month
 * FTE: 20
@@ -159,8 +159,8 @@ The following is a list of functions that have been implemented
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Description | We will support all functional modules that have been implemented on Polkadot. |
-| 0c. | Delivery time | Early June |
-| 0d. | How to verify | It is expected that in early July, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results. |
+| 0c. | Delivery time | Mid June |
+| 0d. | How to verify | It is expected that in mid July, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results. |
 | 1.  | Core component | * Create and import wallets on Kusama</br>* Transfer and receive on Kusama</br>* Backup wallet on Kusama</br>* Query transaction records on Kusama</br>* Referendum on the chain on Kusama</br>* Switch multiple wallets on Kusama</br>* Manage address book on Kusama</br>* Switch language on Kusama</br>* wallet injection and signature on Kusama
  |
 
