@@ -120,11 +120,18 @@ No Legal Entity
 | 0c. | Testing Guide | We will provide a full test suite and guide for SubGame node manage and game template library api. | 
 | 1a. | SubGame Node |  Provide node compilation and installation instructions, start the test network|
 | 2a. | pallet-chips | The Chips module has been developed and you can use Chips to participate in the game |
-| |Storage: | `pub ChipsMap get(fn chips_map): map hasher(blake2_128_concat)  T::AccountId => Option<ChipsDetail<T::ChipBalance, T::ChipBalance>>;`|
-| |Function: | 1)`pub fn buy_chips(origin, amount: T::ChipBalance) -> dispatch::DispatchResult` <br><br> 2)`pub fn redemption(origin, amount: T::ChipBalance) -> dispatch::DispatchResult`|
-| 2b. | pallet-gametemplates-guess-hash | complete the first game guess hash template |
-| | Storage: | `pub GameList get(fn game_list): map hasher(blake2_128_concat)  T::GameIndex => GameInfo<T::AccountId, T::BlockNumber, T::BlockNumber, ChipBalance<T>>;` <br><br> `pub BetList get(fn bet_list): map hasher(blake2_128_concat)  T::GameIndex => Vec<BetInfo<T::AccountId, T::GameIndex, ChipBalance<T>, GameMode>>;` <br><br> `pub GameCount get(fn game_count): T::GameIndex;` <br><br> `pub DrawMap get(fn draw_map): map hasher(blake2_128_concat) T::BlockNumber => Option<T::GameIndex>;` |
-| | Functions: | 1)`pub fn create_game(origin, bet_next_few_block: u32, amount: ChipBalance<T>) -> dispatch::DispatchResult` <br><br> 2)`pub fn bet(origin, game_id: T::GameIndex, value: ChipBalance<T>, game_mode: GameMode) -> dispatch::DispatchResult` |
+| | Storage: | `Chips get(fn get_chips): map hasher(blake2_128_concat) T::AccountId => u32;` |
+| | Function: | 1)`pub fn transfer_chips(origin,chips:u32)->dispatch::DispatchResult` <br><br> 2)`pub fn sgt_to_chips(origin,pay:T::Balance)->dispatch::DispatchResult` |
+| 2b. | pallet-gametemplates | Complete the basic module design and development of the template library, and complete the first game template |
+| | Storage:| `Templates get(fn get_templates): Vec<Template>;` <br><br> `TemplateMap get(fn get_templatemap):map hasher(blake2_128_concat) u32 => Template;` |
+| | Functions:| No public function |
+| 2c. | pallet-gamecenter | Management of Game Template instances |
+| | Storage:| `CurrentGameinstances get(fn get_gameinstances): map hasher(blake2_128_concat) u32=> Vec<GameInstance>;` <br><br> `HistoryGameinstances get(fn get_gameinstances): map hasher(blake2_128_concat) u32=> Vec<GameInstance>;`<br><br> `PlayMap get(fn get_playmap): map hasher(blake2_128_concat) AccountId=> u32;` |
+| | Functions:| 1)`pub fn play_game(origin, instance_id:u32, chip:u32,data:u32)->dispatch::DispatchResult` <br><br> 2)`pub fn create_game(origin, template_id:u32)->dispatch::DispatchResult` |
+| 2d. | pallet-gametemplates-guess-hash | complete the first game guess hash template |
+| | Storage: | `Games get(fn game_list): map hasher(blake2_128_concat) T::GameIndex => <GameInfo>;` <br><br> `BetList get(fn bet_list): map hasher(blake2_128_concat) T::GameIndex => Vec<BetInfo>;` <br><br> `GameCount get(fn game_count): T::GameIndex;` <br><br> `DrawMap get(fn draw_map): map hasher(blake2_128_concat) T::BlockNumber => Option<T::GameIndex>;` |
+| | Struct: | `GameInfo <Owner, BlockNumber, DrawBlockNumber, Amount>` <br><br> `BetInfo <Account, GameIndex, Amount, GameMode>` |
+| | Functions: | No public function |
 | 3a. | Front End | In the first stage, the basic development of the game center will be completed, and the first core game interaction process will be completed |
 | 3b. | UI mock-ups | [https://www.figma.com/file/hbwDsOVkP5tJqCnl7v0Smr/Subgame-center](https://www.figma.com/file/hbwDsOVkP5tJqCnl7v0Smr/Subgame-center) |
 | 3c. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. | 
