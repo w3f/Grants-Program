@@ -4,7 +4,7 @@
 
 * **Project:** Pallet-dPoS for Parachain Staking
 * **Proposer:** [Moonbeam Network](https://github.com/PureStake/moonbeam)
-* **Payment Address:** 1EMk3z9VMmXN6y3qwA37s6Qps4xRKGGE9G
+* **Payment Address:** 0x9a66721302d9f30a9d11cf48a09c7ef1a842b5c8
 
 ## Project Overview :page_facing_up:
 
@@ -41,14 +41,14 @@ Joshy and Amar worked at Parity on the Substrate Recipes.
 
 * **Total Estimated Duration:** 6 weeks
 * **Full-time equivalent (FTE):** 2 FTE
-* **Total Costs:** 0.6 BTC
+* **Total Costs:** 30000 DAI
 
 Both milestones will be worked on in parallel, but UI development will lag changes to the pallet implementation.
 
 ### Milestone 1: Improve Parachain-Staking Pallet
 
 * **Estimated Duration:** 4 weeks 
-* **Costs:** 0.4 BTC
+* **Costs:** 20000 DAI
 
 In addition to updating Rust crate-level docs and [outdated user-level docs](https://meta5.world/stake-docs/) in step (5), we will also pursue the following changes to the current [`parachain-staking`](https://github.com/PureStake/moonbeam/tree/master/pallets/parachain-staking/src) implementation:
 
@@ -71,7 +71,7 @@ In addition to updating Rust crate-level docs and [outdated user-level docs](htt
 ### Milestone 2: Parachain-Staking Polkadot-JS UI
 
 * **Estimated Duration:** 4 weeks 
-* **Costs:** 0.2 BTC
+* **Costs:** 10000 DAI
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
