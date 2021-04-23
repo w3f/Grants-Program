@@ -116,12 +116,22 @@ Gao Jianli：https://www.linkedin.com/in/jianli-gao-6785a1140/
 
 ## Development Roadmap
 
-**In particular, we have completed the basic module of the Doter wallet, and the extension program has been put on the Google extension market. You can already [install](https://chrome.google.com/webstore/detail/doter/abamjefkidngfegdjbmffdmbgjgpaobf) and use Doter.**
+**In particular, we have completed the basic module of the Doter wallet, and the extension program has been put on the Google extension market. You can already [install](https://chrome.google.com/webstore/detail/doter/abamjefkidngfegdjbmffdmbgjgpaobf) and use Doter.**  
+
+The following is a list of functions that have been implemented  
+* Create and import wallets on Polkadot  
+* Transfer and receive on Polkadot  
+* Backup wallet on Polkadot  
+* Query transaction records on Polkadot  
+* Referendum on the chain on Polkadot  
+* Switch multiple wallets on Polkadot  
+* Manage address book on Polkadot  
+* Switch language on Polkadot  
 
 ### Overview
 * Total Estimated Duration: 2 month
-* Full-time equivalent (FTE): 28 
-* Total Costs: $13,300
+* Full-time equivalent (FTE): 38 
+* Total Costs: $18,050
 
 ### Milestone
 #### M1：Injection and signature
@@ -133,25 +143,26 @@ Gao Jianli：https://www.linkedin.com/in/jianli-gao-6785a1140/
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Description | We will implement the account injection function of the extension. When users interact with any Dapp, they can use the account registered in theDoter to perform related operations. |
-| 0c. | Delivery time | Early May |
-| 0d. | How to verify | It is expected that in early May, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the milestone. Create account, transfer, query transfer records, democratic governance, transfer address management, personal preferences and other functions will be delivered. Besides the basic function, you can also verify through integration tests. We will provide yarn commond for anyone who want to run the unit test scripts and check the results. |
-| 1.  | Core component | Establish conmmunication mechanism between background.js, content.js and injectScript.js. It's the key function to inject accounts in Dapps |
-| 2.  | Implementation | At the right time, We will call up the Auth page and the transaction signature page, and return the result to the Dapp page. |
+| 0b. | Description | We will implement wallet injection and transaction signature on Polkadot. |
+| 0c. | Delivery time | Mid May |
+| 0d. | How to verify | It is expected that in Mid May, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results. |
+| 1.  | Core component | * Wallet injection on Polkadot</br>* Transaction signature on Polkadot
+ |
 
 #### M2 Support kusama network
 
 * Estimated Duration: 1 month
-* FTE: 10
-* Costs: $4,750（2 contributors * 5 FTE * $475/FTE）
+* FTE: 20
+* Costs: $95,00（2 contributors * 10 FTE * $475/FTE）
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Description | We will support functions such as creating and importing wallets, transferring and receiving, injecting and signing on the Kusama network. Since it has been implemented in Polkadot, the development speed will be faster. |
+| 0b. | Description | We will support all functional modules that have been implemented on Polkadot. |
 | 0c. | Delivery time | Early June |
-| 0d. | How to verify | It is expected that in early June, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests. |
-| 1.  | Core component | Create and import wallets, transfer and receive, injection and signature in kusama network. In another words, all the functions implemented in the previous mileStone will be migrated to the kusama network. At this phase, we will also add unit test cases for test. |
+| 0d. | How to verify | It is expected that in early July, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results. |
+| 1.  | Core component | * Create and import wallets on Kusama</br>* Transfer and receive on Kusama</br>* Backup wallet on Kusama</br>* Query transaction records on Kusama</br>* Referendum on the chain on Kusama</br>* Switch multiple wallets on Kusama</br>* Manage address book on Kusama</br>* Switch language on Kusama</br>* wallet injection and signature on Kusama
+ |
 
 ## Community engagement
 This is a tutorial posted on medium：https://chainbridgenetwork.medium.com/polkadots-browser-extension-wallet-doter-ac8cd91a5bf3
