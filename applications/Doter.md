@@ -130,15 +130,15 @@ The following is a list of functions that have been implemented
 
 ### Overview
 * Total Estimated Duration: 2 month
-* Full-time equivalent (FTE): 38 
-* Total Costs: $18,050
+* Full-time equivalent (FTE): 34 
+* Total Costs: $16,150
 
 ### Milestone
 #### M1: Injection and signature
 
 * Estimated Duration: 1 month
-* FTE: 18
-* Costs: $8,550（2 contributors * 9 FTE * $475/FTE）
+* FTE: 14
+* Costs: $6,650（2 contributors * 7 FTE * $475/FTE）
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -146,14 +146,14 @@ The following is a list of functions that have been implemented
 | 0b. | Description | We will implement wallet injection and transaction signature on Polkadot. |
 | 0c. | Delivery time | Mid May |
 | 0d. | How to verify | It is expected that in Mid May, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results. |
-| 1.  | Core component | * Wallet injection on Polkadot</br>* Transaction signature on Polkadot
+| 1.  | Core component | * Wallet injection on Polkadot</br>* Transaction signature on Polkadot</br> * Optimize account creation, transfer, account management and other functions to improve user experience
  |
 
 #### M2: Support kusama network
 
 * Estimated Duration: 1 month
 * FTE: 20
-* Costs: $95,00（2 contributors * 10 FTE * $475/FTE）
+* Costs: $9,500（2 contributors * 10 FTE * $475/FTE）
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
