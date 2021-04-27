@@ -13,11 +13,11 @@ Crafting Finance is an open financial platform integrating synthetic asset issua
 The synthetic asset issuance platform created by Crafting Finance is decentralized, multi-asset collateralized and supports cross-chain. The biggest differences between it and existing synthetic asset platforms (e.g. Synthetix on Ethereum) are that it can support multiple assets as collaterals due to the nature of cross chain of Polkadot firstly. Crafting Finance will support the token of the project itself (CRF), Polkadot (DOT), Kusama (KSM), Bitcoin (BTC) and Ethereum (ETH). More importantly, Crafting Finance can issue a variety of synthetic assets which can be fitted into four categories as stablecoins (RaftStable), simple synthetic assets (Raft), custom synthetic assets (UnivRaft), and synthetic bonds (BondRaft). By this way, all the assets of the world can be mapped in this system. In general, the synthetic asset issuance and decentralized exchange in the Crafting Finance constitute a complete Defi system in the Polkadot ecosystem.
 
 ### Project Details 
-The main functional modules of the entire system include: forging synthetic assets(MintR), decentralized contract exchange (Kingsman), collateral pools, fee pools and oracles.
+The main functional modules of the entire system include: forging synthetic assets(Forge), decentralized contract exchange (Kingsman), collateral pools, fee pools and oracles.
 
 ![Crafting Finance Business Flow Chart](https://github.com/CraftingFinance/crafting-official-website/blob/main/images/Structure%20of%20Crafting%20Finance.png)
 
-#### Forging Synthetic Assets(MintR)
+#### Forging Synthetic Assets(Forge)
 The synthetic assets issued by the entire system are all produced by users staking certain collateral. The initial collateral includes CRF, DOT, KSM, BTC and ETH, and the collateralization ratio depends on the variation of the collateral itself. In the future, the collateral and collateralization ratio can be adjusted through community governance. When users stake collaterals and forge synthetic assets, corresponding debts are generated. When the user wants to unlock the collateral, he must repay the debt, that is, destroy the previously generated synthetic assets.
 
 There are mainly four kinds of synthetic assets: stablecoins (RaftStable), simple synthetic assets (Raft), custom synthetic assets (UnivRaft), and synthetic bonds (BondRaft).
@@ -83,13 +83,9 @@ This can be verified on the following website. The previous project name is Craf
 
 https://www.chainnews.com/articles/924390697929.htm
 
-![Crafting Protocol](https://github.com/CraftingFinance/crafting-official-website/blob/main/images/Crafting%20Protocol.png)
-
 Introduction to Substrate Startup Camp:
 
 https://www.chainnews.com/articles/847789328743.htm
-
-![Dr. Gavin Wood](https://github.com/CraftingFinance/crafting-official-website/blob/main/images/Gavin%20Wood.png)
 
 
 ### Team Code Repos
@@ -102,10 +98,10 @@ https://www.chainnews.com/articles/847789328743.htm
 * **Full-Time Equivalent (FTE):**  4 FTE
 * **Total Costs:** 0.3 BTC
 
-### Milestone 1 — Forging Synthetic Assets(MintR)
+### Milestone 1 — Forging Synthetic Assets(Forge)
 * **Estimated Duration:** 1.5 month
 * **FTE:**  3 FTE
-* **Costs:** 0.15 BTC
+* **Costs:** $2000
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -113,15 +109,15 @@ https://www.chainnews.com/articles/847789328743.htm
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how forging synthetic assets. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Substrate pallet: MintR | We will create a Substrate pallet that will realize the functions of staking CRF, DOT, KSM, BTC and ETH, forging synthetic assets, including stablecoins (RaftStable) and custom synthetic assets (UnivRaft). |
-| 2. | Substrate front end | MintR pallet will interact in substrate-front-end-template. |
+| 1. | Substrate pallet: Forge | We will create a Substrate pallet that will realize the functions of staking CRF, DOT, KSM, BTC and ETH, forging synthetic assets, including stablecoins (RaftStable) and custom synthetic assets (UnivRaft). |
+| 2. | Substrate front end | Forge pallet will interact in substrate-front-end-template. |
 
 
 ### Milestone 2 — DEX (Kingsman)
 
 * **Estimated Duration:** 2 month
 * **FTE:**  3 FTE
-* **Costs:** 0.15 BTC
+* **Costs:** $3000
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
