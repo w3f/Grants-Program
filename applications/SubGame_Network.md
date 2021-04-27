@@ -20,7 +20,7 @@ All members of the team are convinced that blockchain will change the world, and
 The SubGame project contains SubName Node, Game Template Library, Gamee Chips, Game Center and Front End.
 ![modules](https://raw.githubusercontent.com/SubGame-Network/graphics/main/subgame-core-modules.png)
 * **SubGame Node** is the customized chain node for SubGame network build by Substrate 2.0 ,it contains the basic functionalities as a normal chain node but also provides the ability to fetch external data needed for games with the OCW (Off-chain Worker) from Substrate 2.0 Framework.
-* **SubGame Token $SGT** is the native token of the SubGame Network, and it will play the role of governance and other utilities. **$SGT** like **$DOT**
+* **SubGame Token $SGB** is the native token of the SubGame Network, and it will play the role of governance and other utilities. **$SGB** like **$DOT**
 * **Game Chips:** is one of the core modules of SubGame, mainly including chips purchase, redemption and income distribution.
 * **Game Template Library** is an ever-increasing library of game templates, and new game additions continue to increase through public chain upgrades. for
 * **Game Center** stores all game instances and player data. It is the data center of the entire platform
@@ -31,7 +31,7 @@ The SubGame project contains SubName Node, Game Template Library, Gamee Chips, G
 
 ![transfer](https://raw.githubusercontent.com/SubGame-Network/graphics/main/chips-transfer-%26-buy.png)
 
-As shown above, we will realize the chip exchange of $SGT in the first stage, and the ETH exchange in the later stage, and the chips of each address can also be freely transferred
+As shown above, we will realize the chip exchange of $SGB in the first stage, and the ETH exchange in the later stage, and the chips of each address can also be freely transferred
 * **Scenario to create new game and play games**
 
 ![playgames](https://raw.githubusercontent.com/SubGame-Network/graphics/main/create-%26-play-games.png)
@@ -119,20 +119,23 @@ No Legal Entity
 | 0b. | Documentation | Documents containing the description of whole architecture design for SubGame Network. |
 | 0c. | Testing Guide | We will provide a full test suite and guide for SubGame node manage and game template library api. | 
 | 1a. | SubGame Node |  Provide node compilation and installation instructions, start the test network|
-| 1b. | SubGame Token | $SGT Completed NPOS test of testnet |  
 | 2a. | pallet-chips | The Chips module has been developed and you can use Chips to participate in the game |
-| |Storage:|`Chips get(fn get_chips): map hasher(blake2_128_concat) T::AccountId => u32;`|
-| |Function:|1)`pub fn transfer_chips(origin,chips:u32)->dispatch::DispatchResult` <br><br> 2)`pub fn sgt_to_chips(origin,pay:T::Balance)->dispatch::DispatchResult`|
-| 2b. | pallet-gametemplates | Complete the basic module design and development of the template library, and complete the first game template|
+| | Storage: | `Chips get(fn get_chips): map hasher(blake2_128_concat) T::AccountId => u32;` |
+| | Function: | 1)`pub fn transfer_chips(origin,chips:u32)->dispatch::DispatchResult` <br><br> 2)`pub fn sgt_to_chips(origin,pay:T::Balance)->dispatch::DispatchResult` |
+| 2b. | pallet-gametemplates | Complete the basic module design and development of the template library, and complete the first game template |
 | | Storage:| `Templates get(fn get_templates): Vec<Template>;` <br><br> `TemplateMap get(fn get_templatemap):map hasher(blake2_128_concat) u32 => Template;` |
-| | Functions:| No public function|gi
-| 3a. | pallet-gamecenter | Management of Game Template instances|
-| | Storage:| `CurrentGameinstances get(fn get_gameinstances): map hasher(blake2_128_concat) u32=> Vec<GameInstance> ;` <br><br> `HistoryGameinstances get(fn get_gameinstances): map hasher(blake2_128_concat) u32=> Vec<GameInstance> ;`<br><br> `PlayMap get(fn get_playmap): map hasher(blake2_128_concat) AccountId=> u32 ;` |
-| | Functions:|1)`pub fn play_game(origin, instance_id:u32, chip:u32,data:u32)->dispatch::DispatchResult `<br><br>2)`pub fn create_game(origin, template_id:u32)->dispatch::DispatchResult` |
-| 3b. | Front End | In the first stage, the basic development of the game center will be completed, and the first core game interaction process will be completed |
-| | UI mock-ups |[https://www.figma.com/file/8bSq6NEYOKfbcdFXLtsmFR/SubGame](https://www.figma.com/file/8bSq6NEYOKfbcdFXLtsmFR/SubGame) |
-| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain  and front end |
-| 5. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.| 
+| | Functions:| No public function |
+| 2c. | pallet-gamecenter | Management of Game Template instances |
+| | Storage:| `CurrentGameinstances get(fn get_gameinstances): map hasher(blake2_128_concat) u32=> Vec<GameInstance>;` <br><br> `HistoryGameinstances get(fn get_gameinstances): map hasher(blake2_128_concat) u32=> Vec<GameInstance>;`<br><br> `PlayMap get(fn get_playmap): map hasher(blake2_128_concat) AccountId=> u32;` |
+| | Functions:| 1)`pub fn play_game(origin, instance_id:u32, chip:u32,data:u32)->dispatch::DispatchResult` <br><br> 2)`pub fn create_game(origin, template_id:u32)->dispatch::DispatchResult` |
+| 2d. | pallet-gametemplates-guess-hash | complete the first game guess hash template |
+| | Storage: | `Games get(fn game_list): map hasher(blake2_128_concat) T::GameIndex => <GameInfo>;` <br><br> `BetList get(fn bet_list): map hasher(blake2_128_concat) T::GameIndex => Vec<BetInfo>;` <br><br> `GameCount get(fn game_count): T::GameIndex;` <br><br> `DrawMap get(fn draw_map): map hasher(blake2_128_concat) T::BlockNumber => Option<T::GameIndex>;` |
+| | Struct: | `GameInfo <Owner, BlockNumber, DrawBlockNumber, Amount>` <br><br> `BetInfo <Account, GameIndex, Amount, GameMode>` |
+| | Functions: | No public function |
+| 3a. | Front End | In the first stage, the basic development of the game center will be completed, and the first core game interaction process will be completed |
+| 3b. | UI mock-ups | [https://www.figma.com/file/hbwDsOVkP5tJqCnl7v0Smr/Subgame-center](https://www.figma.com/file/hbwDsOVkP5tJqCnl7v0Smr/Subgame-center) |
+| 3c. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. | 
+| 3d. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain  and front end |
 
 
 ## Future Plans
