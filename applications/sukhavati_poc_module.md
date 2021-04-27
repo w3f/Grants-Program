@@ -123,10 +123,12 @@ https://github.com/Sukhavati-Labs/explorer
 * **Full-Time Equivalent (FTE):**  1.5
 * **Total Costs:** 4,000 DAI
 
-### Milestone 1 — PoC Plot Algorithm and Capacity File Import 
+### Milestone 1 — Implement PoC Plot Algorithm and Capacity File Import 
 * **Estimated Duration:** 4 weeks
 * **FTE:**  1
 * **Costs:** 1,000 DAI
+
+This milestone will provide a PoC capacity management tool. It allows miners to do the plot operation to generate capacity files and import existing MASS PoC keys & capacity files to reuse them.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -139,23 +141,26 @@ https://github.com/Sukhavati-Labs/explorer
 | 4. | Test | Unit test and test cases. |  
 
 
-### Milestone 2 — PoC Consensus Engine
+### Milestone 2 — Implement PoC Consensus Engine
 
 * **Estimated Duration:** 8 weeks
 * **FTE:**  1.5
 * **Costs:** 3,000 DAI
+
+This milestone will provide a poc consensus pallet and a farmer implementation. Together with the PoC capacity managemnt tool in Milestone 1, developers can easily build their own chain that can reuse the MASS capacity power.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how to use this PoC consensus engine. |
 | 0c. | Testing Guide | A guide describing how to build a PoC blockchain with this module. | 
-| 1. | Mining Process | Scan the capacity files and try to solve the challenge. |  
+| 1. | Farmer Implementation | Scan the capacity files and try to solve the challenge. |  
 | 2. | Block Production | Execute related runtime logic and generate the block. |  
 | 3. | Block Validation | Validate the incoming block and its PoC proof. |  
 | 4. | Difficulty Adjustment | Adjust difficulty to maintain the expired block time. |
 | 5. | Fork Choice | Choose best chain according to the rules. | 
-| 6. | Test | Unit test and test cases. | 
+| 6. | pallet_skt_poc | Full implementation of Sukhavati PoC consensus. | 
+| 7. | Test | Unit test and test cases. | 
 
 
 ## Future Plans
