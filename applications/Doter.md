@@ -143,7 +143,7 @@ The following is a list of functions that have been implemented
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Description | We will implement wallet injection and transaction signature on Polkadot. |
+| 0b. | Description | We will implement wallet injection and transaction signature on Polkadot, and optimize the UI experience of existing funcctions. |
 | 0c. | Delivery time | Mid May |
 | 0d. | How to verify | It is expected that in Mid May, you can install the latest version of Doter in the Google Extended Market and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results. |
 | 1.  | Core component | * Wallet injection on Polkadot</br>* Transaction signature on Polkadot</br> * Optimize account creation, transfer, account management and other functions to improve user experience
@@ -171,9 +171,9 @@ This is a tutorial posted on medium：https://chainbridgenetwork.medium.com/polk
 
 Doter’s development team is ChainBridgeNetworkTeam. As the name suggests, our long-term vision is to be a bridge between different blockchains. We will use trust-free cross-chain asset custody and on-chain mapping to enable digital assets on different chains to be interoperable.  
 
-Doter is our first product. We believe that with the launch of the parachain, Doter will act as an important interaction bridge in the Polkadot ecosystem. After completing the development of 3 milestones, we will design Doter version 2.0. In version 2.0, users can easily manage private digital assets without memorizing mnemonic words. This will be achieved through an innovative technology. We believe in version 2.0 Doter will greatly reduce the threshold for users to use wallets, making Doter a real bridge between Polkadot and ordinary users.  
+Doter is our first product. We believe that with the launch of the parachain, Doter will act as an important interaction bridge in the Polkadot ecosystem. After completing the development of 2 milestones, we will design Doter version 2.0. In version 2.0, users can easily manage private digital assets without memorizing mnemonic words. This will be achieved through an innovative technology. We believe in version 2.0 Doter will greatly reduce the threshold for users to use wallets, making Doter a real bridge between Polkadot and ordinary users.  
 
 ## Additional Information
-ChainBridgeNetworkTeam has just been established for two months, but we have completed the first milestone of Doter, and have designed the second and third milestones. In the next two months, we will deliver all pre-designed functional modules.  
+ChainBridgeNetworkTeam has just been established for two months, but we have completed the basic module of Doter, and have designed the other two milestones. In the next two months, we will deliver all pre-designed functional modules.  
 
 So far, we have developed at our own expense, but in order to have sufficient funds to support the realization of our long-term vision, we will try to obtain the support of investment institutions.
