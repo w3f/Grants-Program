@@ -13,7 +13,6 @@ We designed the substrate pallet to obtain the strength of Machine Learning algo
 We are convinced that blockchain technologies change the world, and have been working hard to create more transparent solutions. We have been observing and learning Substrate technologies and find Polkadot as the best ecosystem for us to join depending on technology and strong market position. We believe that our protocol will be useful for other companies in the Polkadot ecosystem.
 ### Project Details
 
-#### Backend
 Substrate pallet that will provide a configurable machine learning module with allowance to make on-chain predictions based on ML algorithms. Module will be closely integrated with OrbitDb - all dataset will be stored securely in IPFS and users can control access to their predictions results and provided data.
 
 ### Technical stack
@@ -52,7 +51,6 @@ Ci/Cs organized by github actions
 
 ### Frontend
 Simple SPA web application powered by react and polkadot.js. Using for testing purposes.
-
 
 ## Team :busts_in_silhouette:
 
@@ -132,14 +130,30 @@ If you've already started implementing your project or it is part of a larger re
 
 ### Milestone 1 Example — Implement Substrate Modules
 
-* **Total Estimated Duration:** 2 months
-* **Full-Time Equivalent (FTE):** from 2.5
-* **Total Costs:** 28 000$
+* **Total Estimated Duration:** 3 months
+* **Full-Time Equivalent (FTE):** 3
+* **Total Costs:** $28 000
 * **License:** GNU GPL v3
 
+### Milestone 1 - Proof of concept
+* **Estimated Duration:** 1.5 months
+* **FTE:**  3
+* **Costs:** $14 000
 
-1. We will create a Substrate pallet that will provide a configurable machine learning module with allowance to make on-chain predictions based on ML algorithms. Module will be closely integrated with OrbitDb - all dataset will be stored securely in IPFS and users can control access to their predictions results and provided data.
+1. We will create a Substrate pallet that will provide a configurable machine learning module with allowance to make on-chain predictions based on Random Forest ML algorithm. All data will be stored directly on chain.
 2. We will create a web application for testing with new components for interacting with the database.
+3. The code will have proper unit-test coverage to ensure functionality and robustness.
+4. We will provide complex quality Assurance for all platform features.
+5. We will update our Docker image with a new version of testing Substrate chain, demonstrating its functionality.
+6. We will provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
+
+### Milestone 2 - Producaiton ready
+* **Estimated Duration:** 1.5 months
+* **FTE:**  3
+* **Costs:** $14 000
+
+1. We will update Substrate pallet that will provide all ML algorithms from smartcore lib. Module will be closely integrated with OrbitDb - all dataset will be stored securely in IPFS and users can control access to their predictions results and provided data.
+2. We will update web application for testing with new components for interacting with the database.
 3. The code will have proper unit-test coverage to ensure functionality and robustness.
 4. We will provide complex quality Assurance for all platform features.
 5. We will update our Docker image with a new version of testing Substrate chain, demonstrating its functionality.
@@ -147,20 +161,11 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Future Plans
 
-UI/UX optimization
-
-ML model optimization
-
-Mobile application
-
-Integration with project in health care
-
+Integration with big project - Trusted Health Consul
 
 ## Additional Information :heavy_plus_sign:
 
-We hear about the Grants Program via Web3 Foundation Website.
-
-**We have already developed the pre-alfa pallet for the in health care production (Trusted Health Consul).**
+We have already developed the pre-alfa pallet for the in health care production (Trusted Health Consul).
 
 ### Other foundation
 We have tried for General Grant first, and decided to start with Open one after recommendation. Also we have applied for the Substrate Builders Programm and  have proceeded with general interview to iterate around steps going forward. And we are planning to start discussion with Blockchers
