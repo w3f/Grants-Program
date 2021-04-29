@@ -64,6 +64,7 @@ Compared with other lending agreements in the industry, Pawnfi can provide a wid
 
 - Wesley Kayne
 - Guy Ip
+- Dirk Xu
 
 
 ### Contact
@@ -87,6 +88,12 @@ Compared with other lending agreements in the industry, Pawnfi can provide a wid
 Wesley Kayne, core team member of Pawnfi, former senior structured product architect at Singapore DBS, CFA III. Wesley has more than 5-year development experience of derivatives and quantitative products. Wesley was graduated from Taiwan University and Singapore Management University.
 
 Guy Ip, core team member of Pawnfi, former core engineer at Singapore DBS Murex. Guy has more than 7-year development experience of derivatives and quantitative products. Guy was graduated from Washington University in St. Louis and Purdue University
+
+Dirk Xu, CTO of Pawnfi, former tech leader at Yintech
+- https://github.com/dirk-pawnfi
+- Has corporate experience in Fintech softwares development for more than 15 years
+- Knowledgeable in distributed service oriented architecture, big data processing and massive service
+- Proficient in Solidity & Rust & Golang & C++
 
 
 ### Team Code Repos
