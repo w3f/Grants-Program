@@ -103,6 +103,12 @@ DOT/KSM in the future without trusting that Polkastarter will exist.
 - **FTE:** 1
 - **Costs:** 8,000 DAI
 
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 1. | LBP  contract | liquid bootstrap pool smart contract |  
+| 2. | Acution  contract| Dutch auction smart contract |  
+| 3. | mining  contract | Liquidity mining smart contract |
+| 4. | web front | user interface |
 
 ### Milestone 2 — Transfer to Polkadot Chain after the plasm (a smart contract platform on  Polkadot Chain) is launched
 
