@@ -96,7 +96,7 @@ DOT/KSM in the future without trusting that Polkastarter will exist.
 
 - **Total Estimated Duration:** 2 months
 - **Full-time equivalent (FTE):** 2 FTE
-- **Total Costs:** 15,000 DAI
+- **Total Costs:** 16,500 DAI
 
 ### Milestone 1 — Achieve the IDO on  BSC by BSC WDOT
 - **Estimated Duration:** 1 month
