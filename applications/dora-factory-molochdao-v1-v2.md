@@ -11,9 +11,11 @@ MolochDAO is the mostly used venture DAO template so far, hosting major venture 
 
 ### Overview
 
-MolochDAO was conceived after the fail of The DAO -- the first pioneering effort to support Ethereum ecosystem projects. After The DAO failed, MolochDAO revived the idea of The DAO but with simplicity and security. The MolochDAO implemented a concise set of mechanisms including proposal submission, voting, and ragequit. It has been operating safely for some time, and currently hosting more than $6 Million to support Ethereum ecosystem projects with grants. Other efforts, such as The LAO and MetaCartel Ventures, are using MolochDAO as an infrastructure to build DAO venture funds. So far, those efforts are also successful, proving the effectiveness of the MolochDAO mechanisms.
+MolochDAO was conceived after the fail of The DAO -- the first pioneering effort to support Ethereum ecosystem projects. After The DAO failed, MolochDAO revived the idea of The DAO but with simplicity and security. The MolochDAO itself is a minimum viable DAO, which implemented a concise set of mechanisms including proposal submission, voting, and ragequit. It has been operating safely for some time, and currently hosting more than $6 Million to support Ethereum ecosystem projects with grants. 
 
-Currently, there are two versions of MolochDAO that are widely accepted -- the MolochDAO v1 and the MolochDAO v2. MolochV2 has some major features on top of MolochV1, including 1) multiple tokens in guild bank; 2) loot and shares; 3) guildkick.
+The open-source approach of MolochDAO has encouraged many other efforts. For example, The LAO (https://www.thelao.io/) and MetaCartel Ventures are using Moloch as an infrastructure to build DAO venture funds. Together, they are managing more than $50 Million worth of assets at this moment of writing. DAOhaus, on the other hand, creates a platform to create DAOs based on Moloch. It allows different types of organizations to create Moloch-like DAOs on Ethereum to manage its funds. The Open Law team is also developing a MolochV3 codebase (https://github.com/openlawteam/molochv3-contracts), which aims to break Moloch main contract into smaller smart contracts, and bring modularity to Moloch.
+
+Currently, there are two mature versions of MolochDAO that are widely accepted -- the MolochDAO v1 and the MolochDAO v2. MolochV2 has some major features on top of MolochV1, including 1) multiple tokens in guild bank; 2) loot and shares; 3) guildkick.
 
 This project develops a substrate pallet that implmenets MolochDAO v1 and v2, in two separate milestones. The goal of this project is to bring MolochDAO to Substrate and make it available for future DAOs on Polkadot, Kusama, and other parachain ecosystems.
 
@@ -43,6 +45,11 @@ The MolochV2 Substrate pallet will be built on top of MolochV1 and further imple
 - Guild kick
 - Ragekick
 
+In this grant, we will not change the mechanism or logic of the original design of Moloch v1 and v2, because of its simplicity and security. However, we recognize the importance of building Moloch in the Polkadot ecosystem as an incentive mechanism and open source DAO infrastructure that can be used in many use cases.
+
+With an implementation of Moloch v1 and v2 on Substrate, developers from the whole Polkadot ecosystem can build DAOs or other applications based on the code, such as DAO venture funds, parachain grant programs, clubs, project governance bodies, etc.
+
+A Substrate implementation of Moloch can allow us to make Moloch more useful. For example, managing cross-chain assets or adding application-level features can be made easier on a Substrate-based Moloch implementation. Therefore, after completion of this grant, we can start to build a more general DAO infrastructure based on the codebase, which could evolve into an open platform for DAOs, and every blockchain based organization can use it to support on-chain governance and open source ventures. However, it will depend on a successful delivery of the current grant.
 
 ### Ecosystem Fit 
 
