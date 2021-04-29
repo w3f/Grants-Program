@@ -2,7 +2,7 @@
 
 * **Project Name:** ML-as-a-service
 * **Team Name:** Uddug
-* **Payment Address:** BTC or Ethereum (DAI) payment address
+* **Payment Address:** 0xc45eAd98E95D1962133d9c15847e2EA4E16dfD0b
 
 ## Project Overview :page_facing_up:
 ### Overview
@@ -161,7 +161,7 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Future Plans
 
-Integration with big project - Trusted Health Consul
+Integration with big project - [Trusted Health Consul](https://docs.google.com/document/d/1BcmZDwZ0bJpfC78lgPgaQfQKRVvAZvedemAx6EeZzfs/edit?usp=sharing)
 
 ## Additional Information :heavy_plus_sign:
 
