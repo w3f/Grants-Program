@@ -104,7 +104,7 @@ DOT/KSM in the future without trusting that Polkastarter will exist.
 - **Costs:** 8,000 DAI
 
 
-### Milestone 2 — Transfer to Polkadot Chain after the smart contract is launched
+### Milestone 2 — Transfer to Polkadot Chain after the plasm (a smart contract platform on  Polkadot Chain) is launched
 
 - **Estimated Duration:** 1 month
 - **FTE:** 1
