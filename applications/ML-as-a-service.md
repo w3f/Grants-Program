@@ -128,8 +128,6 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Development Roadmap :nut_and_bolt:
 
-### Milestone 1 Example — Implement Substrate Modules
-
 * **Total Estimated Duration:** 3 months
 * **Full-Time Equivalent (FTE):** 3
 * **Total Costs:** $28 000
@@ -161,7 +159,7 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Future Plans
 
-Integration with big project - [Trusted Health Consul](https://docs.google.com/document/d/1BcmZDwZ0bJpfC78lgPgaQfQKRVvAZvedemAx6EeZzfs/edit?usp=sharing)
+Integration with one of our project - [Trusted Health Consul](https://docs.google.com/document/d/1BcmZDwZ0bJpfC78lgPgaQfQKRVvAZvedemAx6EeZzfs/edit?usp=sharing)
 
 ## Additional Information :heavy_plus_sign:
 
