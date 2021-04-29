@@ -1,7 +1,9 @@
 # Open Grant Proposal
 
 - **Project Name:** MyBank Network
+
 - **Team Name:** MyBank Labs
+
 - **Payment Address(DAI):** 0xd2884f29b1aE21Cd88c51068f2C81060B58ddC1e
 
 
@@ -15,9 +17,12 @@
 MyBank is a decentralized financial platform based on Polkadot, aiming to establish a blockchain network that realizes asset appreciation and promotes asset flow. MyBank is divided into three parts: Platform Bank, Social Network Bank, MyDeX and Credit Scoring System.
 
 - In Platform Bank, users can participate as depositors, borrowers, and guarantors. Depositors can obtain deterministic returns by injecting liquidity into the corresponding asset pool. Borrowers can borrow by mortgaging collateral or invite guarantors to guarantee them to make zero-mortgage loans. After the implementation of the credit scoring system, credit loans without collateral or guarantee will be supported based on the user profile.
+
 - In Social Network Bank, MyBank as an infrastructure platform provides corresponding tools so that any individual and organization can build a collective bank that belongs to all members of a social network.
+
 - MyDeX aims to provide users with the service of AMM, and support users to participate in the liquidation of Platform Bank.
-- We will develop a credit scoring system based on users' deposit records, loan records, guarantee records, transaction records, social networks and third-party data to generate "user profile".
+
+- We will develop a credit scoring system based on users' deposit records, loan records, guarantee records, transaction records, social networks and third-party data to generate user profile.
 
 
 
@@ -33,14 +38,12 @@ Most DeFi lending products are based on the mortgage system. Users lend assets f
 
 Each user will maintain a social network circle of their own, and the friend relationship needs to be confirmed by both parties. When a user has a loan demand and wants to choose a zero-mortgage loan, he can send the loan event to his friend's inbox, and the friend can choose to respond to the event to guarantee him. After the guarantee is successful, the system will issue a loan to his friend, and the deposit certificate will be locked by the system. Before the borrower repays, unless the guarantor chooses to pay a certain amount of funds to redeem the deposit certificate, his deposit will not be withdrawn.
 
-![image-20210407184344086](https://tva1.sinaimg.cn/large/008eGmZEgy1gpbdc9dbzkj310i0dq3zp.jpg)
-
-
-
-Platform Bank supports multi-currency digital assets as collateral for loans or guarantees. Each type of asset corresponds to different risk parameters according to its risk coefficient. In the future, MB Token holders can vote on the adjustment of the parameters, and the proposal passed by the referendum will be automatically executed by substrate runtime.
+![image-20210429161048216](https://tva1.sinaimg.cn/large/008i3skNgy1gq0ojxj3a5j30yu0sqjto.jpg)Platform Bank supports multi-currency digital assets as collateral for loans or guarantees. Each type of asset corresponds to different risk parameters according to its risk coefficient. In the future, MB Token holders can vote on the adjustment of the parameters, and the proposal passed by the referendum will be automatically executed by substrate runtime.
 
 - **Liquidation Ratio** Each loan that occurs in the PB will correspond to a collateral-to-debit ratio. Each type of asset will have a corresponding liquidation ratio according to its market value and volatility, and the system will monitor the collaterals-to-debit ratio of each loan. Once the collaterals-to-debit ratio is lower than the liquidation ratio, it will trigger liquidation behaviour. Assets with a higher risk coefficient usually correspond to a larger liquidation ratio and vice versa.
+
 - **Interest Rates** Determine the annualized rate of return of depositors, the borrowing cost of borrowers, and the size of the asset pool, and at the same time affect the risk of the system. The interest rate is determined by supply and demand. When the utilization rate of the asset pool is low, users will be encouraged to borrow through low-interest rates. When the utilization rate of the fund pool is high, the interest rate will increase to encourage users to repay the loan and attract depositors to provide liquidity to the asset pool through higher yields. Each asset pool will set a critical point, and the loan interest rate will increase faster after the utilization rate of the asset pool exceeds the critical point.
+
 - **Insurance Fund** MyBank has set aside a part of MB Token as insurance funds. When the Black Swan incident causes unexpected situations, MyBank will take part of the assets from the insurance fund to compensate users for losses. MyBank will charge depositors a certain percentage of handling fees and this part of funds will be combined with insurance funds.
 
 
@@ -51,7 +54,7 @@ We will expand Platform Bank to support credit loans. The user's social networks
 
 Institutions can also pay a certain fee to create an independent Private Pool to develop loan business based on the infrastructure provided by MyBank. For example, the identity on the chain is an anonymous hash address. With the user's permission, the institution can verify the user's identity under the chain, and combine the credit score record to decide whether to issue a credit loan or mortgage loan to the user. The loan contract will be written to MyBank's distributed ledger. Loan records incurred by Private Pool can also be synchronized to the credit scoring system.
 
-![img](https://tva1.sinaimg.cn/large/008eGmZEgy1gpbdbe4lmaj30yu0sqjtq.jpg)
+![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oijb82zj310i0dqjsm.jpg)
 
 
 
@@ -69,7 +72,7 @@ Repayment of a loan will leave a record on the chain. Borrowers will have a grea
 
 
 
-![img](https://tva1.sinaimg.cn/large/008eGmZEgy1gpbdbfynjwj315r0u0q82.jpg)
+![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oin5b5oj315r0u0q82.jpg)
 
 
 
@@ -95,13 +98,14 @@ At the same time, users can pledge the LP Token to become a liquidator in Platfo
 
 
 
-![img](https://tva1.sinaimg.cn/large/008eGmZEgy1gpbdbek1anj31260juwg1.jpg)
+![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oillf9rj31260juwg1.jpg)
 
 
 
 MyDeX will integrate with Platform Bank to make it easier to short or long.
 
 - If a user is not optimistic that XToken will continue to rise in the future, he can choose to lend XToken at Platform Bank, then sell XToken in MyDeX to obtain stable coins, and redeem XToken to repay the loan when the price falls.
+
 - If a user is optimistic that XToken will continue to rise in the future, want to leverage. He can lends stable currency in Platform Bank, and then use the stable currency to obtain XToken in MyDeX, and sell XToken to redeem stable currency to repay the loan when the price rises.
 
 
@@ -112,25 +116,59 @@ On the current Ethereum platform, if the above two operations are to be carried 
 
 #### Credit Scoring System Explanation
 
-The structure and location of the human network determine everyone's choices in all aspects of making friends, choosing schools, employment, financial management, raising children, leisure and entertainment, and determine people's social circles and their beliefs,  determine those who are more powerful, easier to succeed. We quantify a person's "position" in the social network, and eventually, we can trust each other between two people who do not know each other only based on this "score".
+Human beings are the total of social relations, and we should create a credit score system that does not need a third party or a central institution but is based on individual social relations.
 
 
 
-The establishment of this score relies on the social network of the real society. We use anonymity and other technologies to create an independent, relatively anonymous, and private "public social network" on the chain. The behavior and structural position of the account on the social network is used for quantification to form our "Credit score". It mainly includes five aspects:
-
-1. How many friends of an account with a minimum balance are in the account? Because of the HASH algorithm, you must know the account of a certain friend in reality before you can add it as a friend, and you must obtain the consent of the other party before your friend contact can be established. This mechanism naturally helps us avoid problems like "The network storm". For possible abuse of the network, we refer to social science research such as Dunbar's number. After the number of function calls exceeds a certain threshold, the cost exponentially increases, and correspondingly, the score will also be significantly improved.
-2. How many high "score" friends does the account have. Realistic experience tells us that it is often necessary for a person to have many friends, but although a person does not have many friends, it is often more useful to have some "powerful" friends. We use the term eigenvector centrality to measure this metric.
-3. For a virtual "social credit score" to be effective, it must be associated with activities on the chain. Compared with the traditional central intermediary, supply and demand are matched through the central intermediary, and the central intermediary provides a certain bidding ranking mechanism to obtain benefits from it. This method is necessary to a certain extent. Platform Bank has built-in this mechanism and returns the benefits to all participants on the chain. More importantly, we will use different social networks to allow this supply and demand to be carried out in a way similar to "chain propagation". When an account as the "demand party" puts forward a demand, the nodes in the social network choose whether to forward it (a certain amount of interest can be deducted) and participate as a guarantor. Here we measure the scope of influence of a message broadcast by an account.
-4. Compared with the bridge connecting two pieces of land, we think that there will be one or more "bridge-like" characters in the two social networks. The necessity of the existence of this role is the key point to replace the central network. In other words, its existence can be equivalent to another "intermediary center." When a certain demand can only be propagated and matched through this node, the value of this role to both the supply and demand parties is of great importance. The quantification of this betweenness centrality is part of the core of the network.
-5. It is reasonable to use a kind of 'proof of work' to divide a certain resource. How long an account provides for economic activities on the chain, how many shares of mortgage support, or how many forwarding or matching transactions, whether there is any violation of the network, should be punished for this phenomenon. . . We believe that such a mechanism can be used as one of the latitudes to quantify the importance of the account in the system.
+The structure and location of human networks determine everyone's choices in making friends, choosing schools, employment, financial management, raising children, leisure and entertainment. They also determine people's social circles and beliefs, as well as who is more powerful and influential and more likely to be successful. We quantified a person’s 'position' in social networks, combined with a continuous "Proof Of Vote" to establish a completely digital blockchain credit system.
 
 
 
-To prevent users from using the same high-credit-score account, frequently adding friends with new accounts to increase the credit score of new accounts, causing the same user to control multiple high-credit sub-accounts. When adding friends, we will ask users to mark a correlation to their friends to indicate the correlation between the user and the friend. The higher the correlation of the friend, the more important the user is to this social relationship. 
+Unlike trust models such as EigenTrust, the trust system is based on the fact that we can use homomorphic encryption to achieve anonymous scoring of any individual in social networks; and a person's centrality, eigenvector centrality, propagation centrality, intermediary centrality, etc. are used as weight factors; Burn mechanism of Coindays is used as another set of main credit evaluation factors.
 
 
 
-A user has up to m friends, and users can update friend correlation at any time, but the sum of the correlation that a user can assign is equal to 1. For example, if a user assigns 0.2 to a friend, the others can only get 0.8 at most. When the social network factor is included in the credit score calculation, the system will only take the user profile of the top n friends (ranked according to the friend correlation), or the weight of the friends ranked behind will be lower. It is not that the more friends a person has, the more friends with high credit scores, the higher his credit score will be.
+##### Anonymous Vote
+
+In an interpersonal network, we should directly express our likes and dislikes, and should not be affected by identity, status, skin color, wealth, etc. In addition, we should digitize it and show it to the newly joined individuals in an intuitive way.
+
+
+
+Homomorphic encryption provides the technical foundation. Each vote will consume a certain amount of MB, and the cost of the vote will be directly related to Token, which will affect the opportunity to obtain Token in the future. We use the Burn mechanism of Coindays as a credit evaluation factor. In a vote, the value of destruction is positively related to the weight of the credit evaluation. When two accounts are trying to repeatedly trade to obtain the score of this weight, the first evaluation is valid, and at this time the accumulated Coindays have been destroyed. When the second vote is conducted, the accumulation of Coindays will be very small because it occurs shortly after the first transaction. Correspondingly, the contribution to the credit evaluation is very small, but a certain amount of MB tokens will be consumed as a handling fee. Similarly, when there are possible malicious bad reviews, because the credit evaluation is proportional to the destruction of Coindays, the amount of the transaction is too small, and it can hardly affect the user's credit.
+
+
+
+##### Social Location
+
+[Social networks are different from other networks](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.68.036122). We measure a person's position in society. At present, it mainly includes the following five aspects:
+
+1. The number of friends. We have created a new relationship network on the chain. To establish such a relationship, we need the consent of the other party and pay a certain fee. The existence of a hash algorithm naturally helps us avoid network storms. For possible abuse, we combine social science research similar to "Dunbar number". After the number of friends reaches a certain threshold, the cost will be greatly increased. [Centricity](https://www.bebr.ufl.edu/sites/default/files/Centrality in Social Networks.pdf) is used to measure this indicator.
+2. The number of friends with high scores. Real-life experience tells us that it is necessary for a person to have many friends, and it is more important to have higher-quality friends. Although a person may not have many friends, it is usually more useful to have some "powerful" friends. We use the term eigenvector centrality to measure this indicator.
+3. The trust score on the chain should be closely related to the activities on the chain. As an extension of the AMM function, we hope to spread the demand in social networks, and the spreading individuals can charge a certain handling fee and earn a certain interest rate spread.
+4. There is a cost to forwarding requirements. When there are more friends to forward your requirements to help you achieve your requirements, we believe that your role in your network cannot be ignored. We use the degree of communication centrality to measure this indicator.
+5. The role of mediation cannot be ignored. In fact, with smart contract, combined with the trust subsystem, anyone can act as an intermediary. When a demand can only be propagated and matched through this individual, this role is crucial to both supply and demand.
+
+
+
+##### Directionality Of Transactions
+
+Another use of Coindays is to establish the weight of trust scores assessed by transfers. Usually, we will deal with transactions as equivalent transactions. In a transaction, one party's expenditure is equal to the other party's income. This is no problem in itself, but in the world of digital, it is necessary to convert scalars into vectors. In the process of trading, the system's Coindays are always destroyed, and the original ordinary transaction 
+
+
+
+#### UI
+
+Homepage
+
+![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oio8hk0j31c50p7qa2.jpg)
+
+Social Networks
+
+![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oip0fj7j30s00kz0z3.jpg)
+
+Different colors represent different relationships, Friends or not, vouch or not, one-way vote, obligatory relationships, etc.
+
+![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oiktmb6j30nx0fkjv6.jpg)
 
 
 
@@ -138,16 +176,20 @@ A user has up to m friends, and users can update friend correlation at any time,
 
 Similar lending products on Ethereum include Compound & Aave, and AMM products include Uniswap & Sushiswap.
 
-- In Platform Bank, we will release the liquidity of depositors' assets to maximize their social guarantee value and provide borrowers with zero mortgage loans service. After perfecting the DID module and credit scoring system, we will support users to make credit loans.
+- In Platform Bank, we will release the liquidity of depositors' assets to maximize their social guarantee value and provide borrowers with zero mortgage loans service. After perfecting the credit scoring system, we will support users to make credit loans.
+
 - Platform Bank and MyDex are developed based on Polkadot and Substrate, and users will pay fewer transaction fees and get higher TPS.
+
 - Based on Polkadot's cross-chain bridge, MyBank can provide users with more diversified choices.
+
 - MyBank integrates lending and trading, abstracting it into an interface at the front end. Users can conduct leveraged trading with one click, making it more convenient to long and short without switching between multiple products to obtain lower transaction delay.
 
 
 
 At present, there is no similar product to Social Network Bank(SNB) in the market. SNB is not only aimed at the existing DeFi user group. SNB is an inclusive finance platform, allowing most people, including poor groups, to enjoy the convenience brought by finance and blockchain.
 
-- Most of the existing credit product is based on asset collateral, but many poor people in the world do not have enough assets to mortgage, so they cannot obtain loans from financial institutions. MyBank will provide relevant digital tools based on the blockchain, so that poor groups can help each other and supervise each other based on their social networks.
+- Most of the existing lending product is based on asset collateral, but many poor people in the world do not have enough assets to mortgage, so they cannot obtain loans from financial institutions. MyBank will provide relevant digital tools based on the blockchain, so that poor groups can help each other and supervise each other based on their social networks.
+
 - At the same time, we will cooperate with charities to provide start-up funds for the user's bank. When charities choose to donate to a poor village, after the initial distribution, some funds can be reserved for the user's SNB. Members in the same social network know each other better than third-party financial institutions. SNB can invest this sum of money in the village's most capable people through collective governance. All members share the income as angel investors.
 
 
@@ -159,6 +201,7 @@ At present, there is no similar product to Social Network Bank(SNB) in the marke
 ### Team Members
 
 - [Amos](https://github.com/ziwenxie) - Full-stack Developer
+
 - [Dean](https://github.com/armatrix) - Full-stack Developer
 
 
@@ -174,6 +217,7 @@ Email: official@mybank.network
 Amos
 
 - Machine Learning Engineer(Big Data & Computer Version)
+
 - Rust And Substrate Developer
 
 
@@ -181,6 +225,7 @@ Amos
 Dean
 
 - Distributed Storage Engineer(FileCoin)
+
 - Rust And Substrate Developer
 
 
@@ -203,8 +248,11 @@ https://github.com/mybank-network/mybank-network
 Currently, we have finished the basic lending pallets and deployed a test network in [polkadot.js](https://polkadot.js.org/apps/#/explorer/query).
 
 - Substrate Code Repo: https://github.com/mybank-network/mybank-network
+
 - Substrate Websocket Address: wss://app.mybank.network/substrate
+
 - Officail Website: https://mybank.network
+
 - Lending APP: https://app.mybank.network/mybank
 
 
@@ -214,7 +262,9 @@ Currently, we have finished the basic lending pallets and deployed a test networ
 ### Overview
 
 - **Total Estimated Duration:** 2 months
+
 - **Full-time equivalent (FTE):** 4
+
 - **Total Costs:** 8000 DAI
 
 
@@ -222,7 +272,9 @@ Currently, we have finished the basic lending pallets and deployed a test networ
 ### Milestone 1 — Implement Platform Bank
 
 - **Total Estimated Duration:** 2 months
+
 - **Full-time equivalent (FTE):** 4
+
 - **Total Costs:** 8000 DAI
 
 
@@ -246,7 +298,7 @@ Currently, we have finished the basic lending pallets and deployed a test networ
 3. Cooperate with ETH-bridge and BTC-bridge project.
 4. Support Kusama Node. The MyBank Network will run as a parachain of the Kusama.
 5. Implement WASM Smart Contract by using !ink.
-6. Develop DID and credit loan module.
+6. Develop credit loan module.
 7. Cooperate with third-party institutions to introduce users' off-chain assets into MyBank.
 8. Develop Social Network Bank after we implement Platform Bank and MyDeX.
 
