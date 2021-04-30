@@ -2,7 +2,7 @@
 
 * **Project Name:** SubGame Network
 * **Team Name:** [SubGame-Network](https://github.com/SubGame-Network)
-* **Payment Address:** 14eKFGCjESvx63jouJXrpWQRoMw9kGacMN
+* **Payment Address:** 3CK6HN4y2ZEKX7JMfdegds7B7GrUSmv65c
 
 ## Project Overview :page_facing_up: 
 ### Overview
