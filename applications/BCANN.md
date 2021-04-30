@@ -240,12 +240,12 @@ We come from a long-term cooperation team, we have 5+ years experience in blockc
 ## Development Roadmap 
 ### Overview
 * **Total Estimated Duration:** 12 weeks
-* **Total Costs:** 30,000.00 DAI
+* **Total Costs:** 10,000.00 DAI
 
 ### Milestone 1: Initial implementation, name service registry and name resolver
 * **Estimated Duration:** 4 weeks
 * **Full-time equivalent (FTE):**  2
-* **Costs:** 15,000 DAI
+* **Costs:** 5,000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -265,7 +265,7 @@ c. Unit testing and test documentation
 
 * **Estimated Duration:** 4 weeks
 * **Full-time equivalent (FTE):**  3
-* **Costs:** 15,000 DAI
+* **Costs:** 5,000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
