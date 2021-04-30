@@ -38,7 +38,7 @@ Most DeFi lending products are based on the mortgage system. Users lend assets f
 
 Each user will maintain a social network circle of their own, and the friend relationship needs to be confirmed by both parties. When a user has a loan demand and wants to choose a zero-mortgage loan, he can send the loan event to his friend's inbox, and the friend can choose to respond to the event to guarantee him. After the guarantee is successful, the system will issue a loan to his friend, and the deposit certificate will be locked by the system. Before the borrower repays, unless the guarantor chooses to pay a certain amount of funds to redeem the deposit certificate, his deposit will not be withdrawn.
 
-![image-20210429161048216](https://tva1.sinaimg.cn/large/008i3skNgy1gq0ojxj3a5j30yu0sqjto.jpg)Platform Bank supports multi-currency digital assets as collateral for loans or guarantees. Each type of asset corresponds to different risk parameters according to its risk coefficient. In the future, MB Token holders can vote on the adjustment of the parameters, and the proposal passed by the referendum will be automatically executed by substrate runtime.
+![image-20210429161048216](https://tva1.sinaimg.cn/large/008i3skNgy1gq1r6uwp7oj30yu0sq0v2.jpg)Platform Bank supports multi-currency digital assets as collateral for loans or guarantees. Each type of asset corresponds to different risk parameters according to its risk coefficient. In the future, MB Token holders can vote on the adjustment of the parameters, and the proposal passed by the referendum will be automatically executed by substrate runtime.
 
 - **Liquidation Ratio** Each loan that occurs in the PB will correspond to a collateral-to-debit ratio. Each type of asset will have a corresponding liquidation ratio according to its market value and volatility, and the system will monitor the collaterals-to-debit ratio of each loan. Once the collaterals-to-debit ratio is lower than the liquidation ratio, it will trigger liquidation behaviour. Assets with a higher risk coefficient usually correspond to a larger liquidation ratio and vice versa.
 
@@ -54,7 +54,7 @@ We will expand Platform Bank to support credit loans. The user's social networks
 
 Institutions can also pay a certain fee to create an independent Private Pool to develop loan business based on the infrastructure provided by MyBank. For example, the identity on the chain is an anonymous hash address. With the user's permission, the institution can verify the user's identity under the chain, and combine the credit score record to decide whether to issue a credit loan or mortgage loan to the user. The loan contract will be written to MyBank's distributed ledger. Loan records incurred by Private Pool can also be synchronized to the credit scoring system.
 
-![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oijb82zj310i0dqjsm.jpg)
+![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq1r6sf64qj310i0dqab9.jpg)
 
 
 
@@ -72,7 +72,7 @@ Repayment of a loan will leave a record on the chain. Borrowers will have a grea
 
 
 
-![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oin5b5oj315r0u0q82.jpg)
+![image-20210430143053169](https://tva1.sinaimg.cn/large/008i3skNgy1gq1racw53tj318p0u0qlc.jpg)
 
 
 
@@ -98,7 +98,7 @@ At the same time, users can pledge the LP Token to become a liquidator in Platfo
 
 
 
-![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oillf9rj31260juwg1.jpg)
+![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq1r6s1b63j31260jujss.jpg)
 
 
 
@@ -140,9 +140,9 @@ Homomorphic encryption provides the technical foundation. Each vote will consume
 
 ##### Social Location
 
-[Social networks are different from other networks](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.68.036122). We measure a person's position in society. At present, it mainly includes the following five aspects:
+[Social networks](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.68.036122) are different from other networks. We measure a person's position in society. At present, it mainly includes the following five aspects:
 
-1. The number of friends. We have created a new relationship network on the chain. To establish such a relationship, we need the consent of the other party and pay a certain fee. The existence of a hash algorithm naturally helps us avoid network storms. For possible abuse, we combine social science research similar to "Dunbar number". After the number of friends reaches a certain threshold, the cost will be greatly increased. [Centricity](https://www.bebr.ufl.edu/sites/default/files/Centrality in Social Networks.pdf) is used to measure this indicator.
+1. The number of friends. We have created a new relationship network on the chain. To establish such a relationship, we need the consent of the other party and pay a certain fee. The existence of a hash algorithm naturally helps us avoid network storms. For possible abuse, we combine social science research similar to "Dunbar number". After the number of friends reaches a certain threshold, the cost will be greatly increased. [Centricity](https://www.bebr.ufl.edu/sites/default/files/Centrality%20in%20Social%20Networks.pdf) is used to measure this indicator.
 2. The number of friends with high scores. Real-life experience tells us that it is necessary for a person to have many friends, and it is more important to have higher-quality friends. Although a person may not have many friends, it is usually more useful to have some "powerful" friends. We use the term eigenvector centrality to measure this indicator.
 3. The trust score on the chain should be closely related to the activities on the chain. As an extension of the AMM function, we hope to spread the demand in social networks, and the spreading individuals can charge a certain handling fee and earn a certain interest rate spread.
 4. There is a cost to forwarding requirements. When there are more friends to forward your requirements to help you achieve your requirements, we believe that your role in your network cannot be ignored. We use the degree of communication centrality to measure this indicator.
@@ -152,7 +152,7 @@ Homomorphic encryption provides the technical foundation. Each vote will consume
 
 ##### Directionality Of Transactions
 
-Another use of Coindays is to establish the weight of trust scores assessed by transfers. Usually, we will deal with transactions as equivalent transactions. In a transaction, one party's expenditure is equal to the other party's income. This is no problem in itself, but in the world of digital, it is necessary to convert scalars into vectors. In the process of trading, the system's Coindays are always destroyed, and the original ordinary transaction 
+Another use of Coindays is to establish the weight of trust scores assessed by transfers. Usually, we will deal with transactions as equivalent transactions. In a transaction, one party's expenditure is equal to the other party's income. This is no problem in itself, but in the world of digital, it is necessary to convert scalars into vectors. In the process of trading, the system's Coindays are always destroyed, and the original ordinary transaction.
 
 
 
@@ -160,15 +160,15 @@ Another use of Coindays is to establish the weight of trust scores assessed by t
 
 Homepage
 
-![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oio8hk0j31c50p7qa2.jpg)
+![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq1r6tw1ujj31c50p7425.jpg)
 
 Social Networks
 
-![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oip0fj7j30s00kz0z3.jpg)
+![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq1r6stkgaj310i0dqab9.jpg)
 
-Different colors represent different relationships, Friends or not, vouch or not, one-way vote, obligatory relationships, etc.
+Different colors represent different relationships, friends or not, vouch or not, one-way vote, obligatory relationships, etc.
 
-![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq0oiktmb6j30nx0fkjv6.jpg)
+![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq1r6vnt4fj30nx0fk754.jpg)
 
 
 
