@@ -153,7 +153,7 @@ The Social Network provides the feature to post encrypted messages on Twitter an
 | 0b. | Documentation | We will provide a basic tutorial that explains how a user can install our chrome extension. |
 | 0c. | Testing Guide | We will provide a testing guide on how to use our chrome extension |
 | 0d. | Article | We will publish an article describing our chrome extension and how to use it. |
-| 1. | Source Code | The extension will be implemented in JavaScript. We will provide the source code of this extension which will provide the 1) features for wallet, such as mnemonic management, adding tokens, transfer token, and so on, 2) features to post encrypted messages on social network, 3) features for DAO management, such as listing current DAOs, vote in DAO and so on. |
+| 1. | Source Code | The extension will be implemented in JavaScript. We will provide the source code of this extension which will provide the 1) features for wallet, such as 1.1) mnemonic management, 1.2) adding custom tokens, 1.3) transfer token from one account to another and 1.4) supporting tokens on Polkadot/Kusama, 2) features to 2.1) post encrypted messages on social network such as Facebook and Twitter, 3) features for DAO management, such as 3.1) listing current available DAOs, 3.2) listing my DAOs, 3.3) create vote in my DAOs, 3.4) do voting in my DAOs and 3.5) view vote results in DAOs. |
 | 2. | Build instruction | We will provide a doc about building this chrome extension from source code. |
 
 ## Future Plans
