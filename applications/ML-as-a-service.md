@@ -12,7 +12,7 @@ We designed the substrate pallet to obtain the strength of Machine Learning algo
 #### Motivation
 We are convinced that blockchain technologies change the world, and have been working hard to create more transparent solutions. We have been observing and learning Substrate technologies and find Polkadot as the best ecosystem for us to join depending on technology and strong market position. We believe that our work will be useful for other companies in the Polkadot ecosystem.
 ### Project Details
-Substrate pallet that will provide a configurable machine learning module with allowance to make on-chain predictions based on ML algorithms. Module will be closely integrated with OrbitDb - all dataset will be stored securely in IPFS and users can control access to their predictions results and provided data.
+Substrate pallet provide a configurable machine learning module with allowance to make on-chain predictions based on ML algorithms. Module integrated with OrbitDb - all dataset stored securely in IPFS and users may control access to the provided data.
 
 Target audience - parachains.
 
