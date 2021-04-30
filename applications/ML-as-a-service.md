@@ -163,7 +163,7 @@ Integration with one of our project - [Trusted Health Consul](https://docs.googl
 
 ## Additional Information :heavy_plus_sign:
 
-We have already developed the pre-alfa pallet for the in health care production (Trusted Health Consul).
+We have already developed the pre-alfa pallet for the project in health care production (Trusted Health Consul).
 
 ### Other foundation
-We have tried for General Grant first, and decided to start with Open one after recommendation. Also we have applied for the Substrate Builders Programm and  have proceeded with general interview to iterate around steps going forward. And we are planning to start discussion with Blockchers
+We have tried for General Grant first, and decided to start with Open one after recommendation. Also we have applied for the Substrate Builders Programm and  have proceeded with general interview to iterate around steps going forward. And we are planning to start discussion with Blockchers.
