@@ -6,13 +6,12 @@
 
 ## Project Overview :page_facing_up:
 ### Overview
-Current pallet allows the use of Machine Learning algorithms directly in substrate-based blockchains.
+BlockChain & ML perfectly compliment each other and very much are the two pillars on which the future innovations are to be built. Blockchain developers and ML experts are continuously working to collaborate these futuristic technologies together. The goal of this project is to offer a finished solution for anyone to use of Machine Learning algorithms directly in substrate-based blockchains. 
 #### Integration
 We designed the substrate pallet to obtain the strength of Machine Learning algorithms for all substrate-base blockchains.
 #### Motivation
 We are convinced that blockchain technologies change the world, and have been working hard to create more transparent solutions. We have been observing and learning Substrate technologies and find Polkadot as the best ecosystem for us to join depending on technology and strong market position. We believe that our protocol will be useful for other companies in the Polkadot ecosystem.
 ### Project Details
-
 Substrate pallet that will provide a configurable machine learning module with allowance to make on-chain predictions based on ML algorithms. Module will be closely integrated with OrbitDb - all dataset will be stored securely in IPFS and users can control access to their predictions results and provided data.
 
 ### Technical stack
@@ -148,11 +147,11 @@ https://thc.uddug.com/
 
 ## Future Plans
 
-Integration with one of our project - [Trusted Health Consul](https://docs.google.com/document/d/1BcmZDwZ0bJpfC78lgPgaQfQKRVvAZvedemAx6EeZzfs/edit?usp=sharing)
+Integration with one of our project - [Trusted Health Council](https://docs.google.com/document/d/1BcmZDwZ0bJpfC78lgPgaQfQKRVvAZvedemAx6EeZzfs/edit?usp=sharing)
 
 ## Additional Information :heavy_plus_sign:
 
-We have already developed the pre-alfa pallet for the project in health care production (Trusted Health Consul).
+We have already developed the pre-alfa pallet for the project in health care production (Trusted Health Counsil).
 
 ### Other foundation
 We have tried for General Grant first, and decided to start with Open one after recommendation. Also we have applied for the Substrate Builders Programm and  have proceeded with general interview to iterate around steps going forward. And we are planning to start discussion with Blockchers.
