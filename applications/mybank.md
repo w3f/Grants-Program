@@ -14,7 +14,7 @@
 
 ### Overview
 
-MyBank is a decentralized financial platform based on Polkadot, aiming to establish a blockchain network that realizes asset appreciation and promotes asset flow. MyBank is divided into three parts: Platform Bank, Social Network Bank, MyDeX and Credit Scoring System.
+MyBank is a decentralized financial platform based on Polkadot, aiming to establish a blockchain network that realizes asset appreciation and promotes asset flow. MyBank is divided into four parts: Platform Bank, Social Network Bank, MyDeX and Credit Scoring System.
 
 - In Platform Bank, users can participate as depositors, borrowers, and guarantors. Depositors can obtain deterministic returns by injecting liquidity into the corresponding asset pool. Borrowers can borrow by mortgaging collateral or invite guarantors to guarantee them to make zero-mortgage loans. After the implementation of the credit scoring system, credit loans without collateral or guarantee will be supported based on the user profile.
 
@@ -164,7 +164,7 @@ Homepage
 
 Social Networks
 
-![img](https://tva1.sinaimg.cn/large/008i3skNgy1gq1r6stkgaj310i0dqab9.jpg)
+![image](https://tva1.sinaimg.cn/large/008i3skNgy1gq1tgzmw83j30s00kz0z3.jpg)
 
 Different colors represent different relationships, friends or not, vouch or not, one-way vote, obligatory relationships, etc.
 
@@ -284,7 +284,7 @@ Currently, we have finished the basic lending pallets and deployed a test networ
 | 0.     | License                                       | Apache 2.0                                                   |
 | 1.a    | Documentation                                 | The documentation will be given to show the whole architecture of the Platform Network. |
 | 1.b    | Testing Guide                                 | The testing guide will be provided to test pallets and the front-end. |
-| 2.a    | Substrate Module: Asset Pool                  | Realize the interface of deposit and debit. Support multi-currency lending. Automatically adjusts interest rates based on demand and supply. Support mortgage lending and guraantee lending. Implement Liqudation Module(off-chain worker) |
+| 2.a    | Substrate Module: Asset Pool                  | Realize the interface of deposit and debit. Support multi-currency lending. Automatically adjusts interest rates based on demand and supply. Support mortgage lending and guraantee lending. Implement Liqudation Module(off-chain worker). |
 | 2.b    | Substrate Module: User Profile & Credit Score | Generate user profiles based on the user's past deposit records, loan records, transaction records, and social networks. |
 | 2.c    | Substrate Module: Private Pool                | Users can apply to create an private pool and inject liquidity to develop loan business. |
 | 2.d    | Substrate Module: Social Network              | Users can friend someone on PB and send a guarantee request to a friend. |
