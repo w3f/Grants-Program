@@ -62,11 +62,12 @@ In addition to updating Rust crate-level docs and [outdated user-level docs](htt
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
+| 0a. | License | GPL3 |
+| 0d. | Documentation | Update Rust crate-level docs and [user-level docs](https://meta5.world/stake-docs/) with implementation details. |
 | 1. | Benchmark | benchmark the existing implementation to derive transaction weights and discern optimization opportunities |  
 | 2.  | Refactor to Minimal delegated Proof of Stake | Add constraint of max 1 nomination per `AccountId` and integrate `frame/pallet-proxy` to maintain support for multiple nominations. |
 | 3.  | Configurable Inflation | Replace sudo with governance origin for setting inflation rate. Provide instructions for replacing constant inflation with `pallet-staking`'s reward curve logic. | 
-| 4.  | Implement Slashing | Add equivocation detection to [`frame/aura`](https://github.com/paritytech/substrate/tree/master/frame/aura). Report slashing to `parachain-staking` and enforce prior to reward distribution. | 
-| 5.  | Docs | Update Rust crate-level docs and [user-level docs](https://meta5.world/stake-docs/) with implementation details. | 
+| 4.  | Implement Slashing | Add equivocation detection to [`frame/aura`](https://github.com/paritytech/substrate/tree/master/frame/aura). Report slashing to `parachain-staking` and enforce prior to reward distribution. |
 
 ### Milestone 2: Parachain-Staking Polkadot-JS UI
 
@@ -75,7 +76,9 @@ In addition to updating Rust crate-level docs and [outdated user-level docs](htt
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 |
 | 1. | Custom Polkadot-JS UI | An overlay UI using polkadot-js similar to the `pallet-staking` UI |
+| 2. | PR polkadot-js apps | Make a pull request to polkadot-js apps with output |
 
 ## Additional Information :heavy_plus_sign: 
 
