@@ -262,7 +262,7 @@ c. Unit testing and test documentation
 
 
 ### Milestone 2: Example of name services dapp 
-
+ [mock-ups for milestone 2](https://org.modao.cc/app/4447109c463ec3a36043cb54e1edd7fafcc01c2c?simulator_type=device&sticky)
 * **Estimated Duration:** 4 weeks
 * **Full-time equivalent (FTE):**  3
 * **Costs:** 5,000 DAI
