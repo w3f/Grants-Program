@@ -44,11 +44,15 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 * Name of team leader
-* Names of team members	
+Henry Liu
+* Names of team members
+KK Chen
+Xueshan Wong
+Joan Ma
 
 ### Contact
-* **Contact Name:** KK Chen
-* **Contact Email:** kk@web3games.org
+* **Contact Name:** Xu Peng
+* **Contact Email:** xupeng@web3games.org
 * **Website:** https://web3games.org
 
 ### Legal Structure 
