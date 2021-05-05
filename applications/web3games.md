@@ -8,7 +8,7 @@
 
 ### 1.1 Project Description
 
-**Bridging gaming with NFT and DeFi**
+**🎮 Bridging gaming with NFT and DeFi**
 
 We are building a new generation gaming ecosystem. By adopting blockchain technology, leveraging virtual gaming and NFTs, we offer solutions that build a unique network — from framework to tools — whereby users as ‘developers’ can curate their own integrated gaming experience.
 
@@ -17,9 +17,27 @@ We are building a new generation gaming ecosystem. By adopting blockchain techno
 * Converting of gaming assets into blockchain assets
 * Embedding DeFi elements into a gaming ecosystem
 
+**What We Do**
 
-Website  https://web3games.org/
-Testnet https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsubstrate.org.cn%3A4443#/settings
+🎮 Blockchain Games
+
+Metaverse blockchain games utilising existing NFTs
+
+⛓ Chain Development
+
+Blockchain for gamers and collectors based on Substrate, providing NFT curation ability with cross-chain bridges.
+
+🛠 Toolkit/SDK
+
+Provide SDK & tools for developers, including digital asset standard libraries and different integrations
+
+🏪 Digital Asset Apps
+
+We build platforms to facilitate trading such as NFT AMM, NFT Marketplace, Auction Platform, etc.
+
+> Website  https://web3games.org/
+
+> Testnet https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsubstrate.org.cn%3A4443#/settings
 
 ### 1.2 Project Background
 
@@ -40,17 +58,15 @@ Web3Games includes Web3Games nodes, W3G-Integration Framework，W3G-Game Example
 
 ![](https://gitee.com/Tansh_vip/images/raw/master/3.png)
 
-
-
 - **Web3Game Testnet** Already live on Polkadot.js App. We deployed all our pallet and contracts on it for development and testing purposes.
-- **Pallet Library** 它是Web3Games作为链上Pallet开发的核心集成库，对外暴露高性能接口。
-- **Game Contract Library** 区块链游戏研发必备的智能合约库，标准里有合约模板以及未来标准提案。
-- **Game Product** 通过 W3G-Integration Framework 开发的游戏，Web3Games已经提供了相关的游戏示例。
-- **W3G-Integration Framework** 它完整的包含了区块链游戏开发所需的脚手架，可以从0-1快速开发一个关于区块链游戏产品的项目。
+- **Pallet Library** Provide interfaces to other components.
+- **Game Contract Library** Provide contract template and protocol standard for blockchain gaming.
+- **Game Product** Developed with W3G-Integration Framework. For demo and tutoral purposes.
+- **W3G-Integration Framework** Provide boilerplate for blockchain game developers.
 
 ### Ecosystem Fit 
 
-* 首先Web3Games通过Substrate构建的，作为承载游戏和对应数字资产而设计的下一代区块链，不管是游戏开发者，玩家亦是传统区块链开发者及用户都是整个Web3Games中的一员，通过Web3Games开发的技术工具可极大的降低区块链游戏开发的门槛以及提高玩家的产品体验感受。在所有的区块链生态系统没有完全跟我们一样的项目，不同于其他的生态上的相似项目Web3Games是高强度执行力著称以及研发为导向的基础设施和标准建设项目，Web3Games希望通过完成所有的路线图，去推动下一代数字游戏的发展并迎接Web3的到来。
+* Web3Games is built based on Substrate, aiming to become the collective blockchain for gaming and digital collectibles. For players, we provide more user-friendly blockchain games. For developers, we provide demo games for reference and development toolkit/SDK to lower the entry barrier of creating digital assets and provide blockchain servies. We would like to complete our roadmap and build the gaming ecosystem for the community in Web 3.0.
 
 ## 2-Team :busts_in_silhouette:
 
