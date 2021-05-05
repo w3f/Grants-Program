@@ -42,6 +42,7 @@ We build platforms to facilitate trading such as NFT AMM, NFT Marketplace, Aucti
 ### 1.2 Project Background
 
 ** Started from Polkadot Hackathon
+
 The Web3Games team is formed of blockchain engineers with a mission to build a new game ecosystem on Polkadot. The core team met during a Substrate course co-hosted by Parity and OneBlock+, and competed against 33 other teams at the Polkadot Hackathon Demo Day to receive the Developers’ Choice Award.
 
 ### 1.3 Project Integrated
@@ -211,13 +212,13 @@ After launching our first demo game, there will be game token / NFT airdrops for
 
 **CryptoEmpire**
 
-![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/cryptoempire-logo.png)
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/cryptoempire-logo-web3-grant.png)
 
 Battle your opponents using strategic card combinations to build your crypto empire. With access to multiple gaming worldviews, players can alternate between their assets on different networks without relying on a centralized developer, and take full ownership of all aspects of gameplay. A trading card game uniting NFTs, DeFi, soon to be available on Ethereum, NEAR, BSC, and Solana. The dApp will be released in 2021 Q2 and the game client in 2021 Q3-Q4.
 
 **Constellation**
 
-![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/constellation-logo.png)
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/constellation-logo-web3-grant.png)
 
 Curate your own spacecraft using digital assets, NFTs, and collectibles from your wallet address. A proud owner of CryptoKitties? Invite your pet to join your mission to explore the galaxy! Have a unique OG CryptoPunk? Use your character as your avatar image! Astronauts of Constellation can also explore neighboring stars and visit other spaceships. Inspired by Nintendo's "Animal Crossing".
 
