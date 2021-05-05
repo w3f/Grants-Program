@@ -128,10 +128,10 @@ The work for the Decentralized API platform is currently in progress with its fr
 
 ### Overview
 
-* **Total Estimated Duration:** 5 Months
+* **Total Estimated Duration:** 6 Months
 * **Full-Time Equivalent (FTE):**  Milestone 1 - 1.5 FTE
 Milestone 2 - 2 FTE
-* **Total Costs:** 24,000 USD
+* **Total Costs:** 23,000 USD
 
 ### Milestone 1 - Integrate Polkdot Network into the Decentralized API Platform
 
