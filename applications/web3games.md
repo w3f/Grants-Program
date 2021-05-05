@@ -8,40 +8,41 @@
 
 ### 1.1 Project Description
 
-Web3Games is a new generation gaming ecosystem built on Substrate.
+**Bridging gaming with NFT and DeFi**
 
-By adopting blockchain technology, leveraging virtual gaming and NFT, we offer solutions that build the new ecosystem for blockchain gaming and collectibles - from framework to tools - whereby users as 'developers' can curate their own integrated gaming experience.
+We are building a new generation gaming ecosystem. By adopting blockchain technology, leveraging virtual gaming and NFTs, we offer solutions that build a unique network — from framework to tools — whereby users as ‘developers’ can curate their own integrated gaming experience.
+
+**The potential of NFT＋DeFi＋Gaming**
+* Expanded use of NFT with increased interactive functions
+* Converting of gaming assets into blockchain assets
+* Embedding DeFi elements into a gaming ecosystem
 
 
-
-Project  website  https://web3games.org/
-
-Project Public testnet https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsubstrate.org.cn%3A4443#/settings
-
-
+Website  https://web3games.org/
+Testnet https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsubstrate.org.cn%3A4443#/settings
 
 ### 1.2 Project Background
 
-起源于Polkadot Hackathon的Web3Games
-Web3Games是一个诞生于首届官方 Substrate 开发者  Polkadot 黑客马拉松创业大赛的项目，团队成员结识于 Parity 与 OneBlock+ 社区共同主办的Substrate课程。Web3Games战队是一群来自以太坊、EOS等不同的区块链开发者们组队而成，建构波卡游戏生态的项目，Web3Games在33支队伍中成功晋级决赛DemoDay，并在决赛中获得最受开发者欢迎奖。
+** Started from Polkadot Hackathon
+The Web3Games team is formed of blockchain engineers with a mission to build a new game ecosystem on Polkadot. The core team met during a Substrate course co-hosted by Parity and OneBlock+, and competed against 33 other teams at the Polkadot Hackathon Demo Day to receive the Developers’ Choice Award.
 
 ### 1.3 Project Integrated
 
-SubGame is based on the Substrate 3.0 Framework.我们通过编写大量跟NFT,DEFI相关的pallet集成到我们的Web3Games链上对外暴露功能，并制作相应的前端与模块交互集成降低用户的使用门槛，除此之外我们也开发了专注于游戏的合约标准库作为二层技术栈开放给区块链游戏开发者使用。通过使用官方提供的Front EVM兼容桥，开发者可以同时使用ink,solidiry去编写合约部署到我们的Web3Games网络，并使用3.0带来的链扩展功能调用我们的链上集成功能。
+SubGame is based on the Substrate 3.0 Framework. We built numbers of pallets with NFT and DeFi and deployed on our Web3Games Testnet. Besides the substrate-based network, we also provide frontend and backend game client intergration libraries for players to kickstart the blockchain gaming journey easier. For developers, we open source all our contract libraries. Through the Front EVM bridge, developers can also write contracts with Ink or Solidity and deploy to our network, bringing Web 3.0 cross chain features.
 
 ### 1.4 Project Interest
 
-我们的团队成员大部分均来自于区块链一线开发人员与游戏制作人员，Substrate赋予开发者极高的自由度，我们发现游戏领域特别适合在Substrate上建造。
+Our team is built from experienced blockchain and game developers. With highly tailor made features in Substrate, blockchain gaming can be implemented much easier and provide a better environment for players.
 
 ### 1.5 Project Details 
 
-Web3Games项目包含Web3Games节点，W3G-Integration Framework，W3G-Game Example.
+Web3Games includes Web3Games nodes, W3G-Integration Framework，W3G-Game Example.
 
 ![](https://gitee.com/Tansh_vip/images/raw/master/3.png)
 
 
 
-- **Web3Game Test** 目前已经上线到Polkadot js app,它是一条基础链，在上面搭载了很多的自研Pallet和游戏合约标准库。
+- **Web3Game Testnet** Already live on Polkadot.js App. We deployed all our pallet and contracts on it for development and testing purposes.
 - **Pallet Library** 它是Web3Games作为链上Pallet开发的核心集成库，对外暴露高性能接口。
 - **Game Contract Library** 区块链游戏研发必备的智能合约库，标准里有合约模板以及未来标准提案。
 - **Game Product** 通过 W3G-Integration Framework 开发的游戏，Web3Games已经提供了相关的游戏示例。
@@ -83,7 +84,7 @@ Joan Ma
    -  Full-stack Developer   
    -  ebay Software Engineer before
    -  Has plenty of experience in Software Development and Product Design    
-   -  Currently focused on  Blockchain Development 
+   -  Currently focused on Blockchain Development 
 
 **Xueshan Wong**
 
@@ -174,10 +175,32 @@ Joan Ma
 
 ### Marketing and Community Plans
 
-- 我们希望在未来几个月内陆续完成我们的官方媒体渠道搭建以及社区建设
-- 于此同时开展前期的市场预热去分发我们即将上线的游戏NFT
+Twitter https://twitter.com/web3games
+Latest project developments and news will be available on our Twitter.
 
-### 4.2Development Plans
+Medium https://medium.com/web3games
+In the meantime, we will be sharing our insights on NFTs and blockchain advancements in gaming. We are also writing tutorials that teach users to use our contract libraries and components to create tokens and build games.
+
+WeChat & Telegram
+After launching our first demo game, there will be game token / NFT airdrops for community members in our official WeChat and Telegram groups.
+
+**Future Plans**
+* Incentivize gaming economy growth by giving players permanent asset ownership on blockchain
+* Drive mainstream adoption for GameFi – DeFi elements and utilities for digital gaming assets
+* Develop two demo games, Crypto Empire and Constellation
+* Increase crypto user interest and awareness about our NFTs and projects
+* Provide open-source project source code for everyone to learn and share together
+
+**Demo Games**
+
+**CryptoEmpire**
+Battle your opponents using strategic card combinations to build your crypto empire. With access to multiple gaming worldviews, players can alternate between their assets on different networks without relying on a centralized developer, and take full ownership of all aspects of gameplay. A trading card game uniting NFTs, DeFi, soon to be available on Ethereum, NEAR, BSC, and Solana. The dApp will be released in 2021 Q2 and the game client in 2021 Q3-Q4.
+
+**Constellation**
+Curate your own spacecraft using digital assets, NFTs, and collectibles from your wallet address. A proud owner of CryptoKitties? Invite your pet to join your mission to explore the galaxy! Have a unique OG CryptoPunk? Use your character as your avatar image! Astronauts of Constellation can also explore neighboring stars and visit other spaceships. Inspired by Nintendo's "Animal Crossing".
+
+
+### 4.2 Development Plans
 
 - Stage 1
   - Blockchain Game Launch【The first commercial-grade example game By Web3Games 】
