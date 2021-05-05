@@ -106,7 +106,6 @@ Joan Ma
 * https://github.com/web3gamesofficial
 
 ### Team LinkedIn Profiles
-* KK Chen https://www.linkedin.com/in/bichenkk/
 * Henry Liu https://www.linkedin.com/in/henry-liu-80576a187/
 * Xueshan Wang https://www.linkedin.com/in/xueshan-wang-01a406208/
 * Joan Ma https://www.linkedin.com/in/joan-ma-1793b1208/
