@@ -62,7 +62,7 @@ Polkadot's browser extension wallet, the currently known competitor is Enzyme.
 
 #### The difference between Doter and polkadot.js extension
 Polkadot.js extension is an official account management tool, Compared with polkadot.js extension, Doter's positioning is not only an account management tool. 
-Doter will also implements a series of common functions in Polkadot ecology, such as Transfer and receive, query transaction records, wallet management, easy-to-operate on-chain governance modules, staking modules, etc. This means that doter can not only interact well with other dapps, but also independently complete the functions mentioned above, providing users with a one-stop experience, which polkadot.js extension does not have.   
+Doter will also implements a series of common functions in Polkadot ecology, such as Transfer and receive, query transaction records, wallet management, easy-to-operate on-chain governance modules, etc. This means that doter can not only interact well with other dapps, but also independently complete the functions mentioned above, providing users with a one-stop experience, which polkadot.js extension does not have.   
 
 In addition, Doter will also provide a completely user-centric UI experience to make it easier for users to participate in the Polkadot ecosystem.  
 
@@ -93,7 +93,7 @@ In summary, we have appropriate market timing, clear product direction, reliable
 Doter is maintained by the [ChainBridgeNetworkTeam](https://github.com/ChainBridgeNetworkTeam), and no company entity has been created yet, The following is our communication information.  
 * Mailing address: 504, Building 16, Lane 270, Maotai Road, Changning District, Shanghai, China  
 * E-mail：dianluyuanli@foxmail.com, muskshi@foxmail.com  
-* Twitter：ChainBridgeNetwork  
+* Twitter：ChainBridgeNet1  
 * WeChat Official Accounts：ChainBridgeNetwork  
 
 ### Team's experience
