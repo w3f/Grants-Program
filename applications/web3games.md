@@ -75,7 +75,6 @@ Web3Games includes Web3Games nodes, W3G-Integration Framework，W3G-Game Example
 * Name of team leader
 Henry Liu
 * Names of team members
-KK Chen
 Xueshan Wong
 Joan Ma
 
@@ -95,13 +94,6 @@ Joan Ma
    -  Polkadot Technical Ambassador 
    -  Has plenty of experience in Software Development and Blockchain Development   
    -  Game Developer and Game Producer
-
-**KK Chen**   
-
-   -  Full-stack Developer   
-   -  ebay Software Engineer before
-   -  Has plenty of experience in Software Development and Product Design    
-   -  Currently focused on Blockchain Development 
 
 **Xueshan Wong**
 
