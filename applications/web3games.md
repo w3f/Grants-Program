@@ -56,7 +56,7 @@ Our team is built from experienced blockchain and game developers. With highly t
 
 Web3Games includes Web3Games nodes, W3G-Integration Framework，W3G-Game Example.
 
-![](https://gitee.com/Tansh_vip/images/raw/master/3.png)
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/web3grant-project-structure.png)
 
 - **Web3Game Testnet** Already live on Polkadot.js App. We deployed all our pallet and contracts on it for development and testing purposes.
 - **Pallet Library** Provide interfaces to other components.
@@ -210,9 +210,15 @@ After launching our first demo game, there will be game token / NFT airdrops for
 **Demo Games**
 
 **CryptoEmpire**
+
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/cryptoempire-logo.png)
+
 Battle your opponents using strategic card combinations to build your crypto empire. With access to multiple gaming worldviews, players can alternate between their assets on different networks without relying on a centralized developer, and take full ownership of all aspects of gameplay. A trading card game uniting NFTs, DeFi, soon to be available on Ethereum, NEAR, BSC, and Solana. The dApp will be released in 2021 Q2 and the game client in 2021 Q3-Q4.
 
 **Constellation**
+
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/constellation-logo.png)
+
 Curate your own spacecraft using digital assets, NFTs, and collectibles from your wallet address. A proud owner of CryptoKitties? Invite your pet to join your mission to explore the galaxy! Have a unique OG CryptoPunk? Use your character as your avatar image! Astronauts of Constellation can also explore neighboring stars and visit other spaceships. Inspired by Nintendo's "Animal Crossing".
 
 
