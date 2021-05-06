@@ -114,32 +114,18 @@ Joan Ma
 
 ### 3.1 Overview
 
-- **Total Estimated Duration:** 2 month
+- **Total Estimated Duration:** 1 month
 
 - **Full-time equivalent (FTE):** 4.5
 
-  - **Total Costs:** 0.45067BTC
+  - **Total Costs:** 5000DAI
 
-  ### Milestone 1 — SubGat[W3G-Integration Framework]
+  ### Milestone 1 — Web3Games-Testnet
 
-  - **Estimated Duration:** 2 month
-  - **FTE:** 3
-  - **Costs:** 0.4BTC
+  - **Estimated Duration:** 1 month
+  - **FTE:** 2.5
+  - **Costs:** 2400DAI
 
-  | Number | Deliverable                     | Specification                                                |
-  | ------ | ------------------------------- | ------------------------------------------------------------ |
-  | 0      | Licence                         | GPL3/Apache2                                                 |
-  | 1      | Game-Website-Frontend-Framework | https://github.com/web3gamesofficial/SubGat-Game-Web-Template-Frame |
-  | 2      | Game-Website-Backend-Framework  | https://github.com/web3gamesofficial/SubGat-Game-Web-Back-end-Server-Frame |
-  | 3      | Game-Client-Framework           | https://github.com/web3gamesofficial/SubGat-Game-Client-Template-Frame |
-  | 4      | Game-Backend-System-Framework   | https://github.com/web3gamesofficial/SubGat-Game-Real-Time-Server-Template-Frame |
-  
-  ### Milestone 2 — Web3Games-Testnet
-  
-  - **Estimated Duration:** 1 weeks
-  - **FTE:** 3
-  - **Costs:** 0.05BTC
-  
   | Number | Deliverable         | Specification                                                |
   | ------ | ------------------- | ------------------------------------------------------------ |
   | 0      | License             | GPL3/Apache2                                                 |
@@ -150,28 +136,47 @@ Joan Ma
   | 5      | Frontier            | success add Ethereum-compatible  basic bridge  pallet  on Substarte3.0 node Web3Games Public Testnet |
   | 6      | EVM                 | Modify creation configuration,solidity contract can be use in Web3Games |
   | 7      | metamask            | metamask web pocket and mobile pocket can be use in Web3Games |
-  | 8      | pallet              | add some ORML pallet in Web3Games                            |
+  | 8      | Pallet              | add some ORML pallet in Web3Games                            |
   | 9      | Contract            | add game contract library https://github.com/web3gamesofficial/SubGat-Game-Contract-Library |
-  
+  | 10     | Pallet              | add GameSwap[Dex] https://github.com/web3gamesofficial/web3games-blockchain/tree/main/pallets/dex |
+  | 11     | Pallet              | add currency https://github.com/web3gamesofficial/web3games-blockchain/tree/main/pallets/currency-token |
+  | 12     | Pallet              | add ERC1155 https://github.com/web3gamesofficial/web3games-blockchain/tree/main/pallets/tokens/src |
+  | 13     | Pallet              | add NFT https://github.com/web3gamesofficial/web3games-blockchain/tree/main/pallets/nft |
+
+  ### Milestone 2 — SubGat[W3G-Integration Framework]
+
+  - **Estimated Duration:** 1 month
+  - **FTE:** 2.5
+  - **Costs:** 2000DAI
+
+  | Number | Deliverable                     | Specification                                                |
+  | ------ | ------------------------------- | ------------------------------------------------------------ |
+  | 0      | Licence                         | GPL3/Apache2                                                 |
+  | 1      | Game-Website-Frontend-Framework | https://github.com/web3gamesofficial/SubGat-Game-Web-Template-Frame |
+  | 2      | Game-Website-Backend-Framework  | https://github.com/web3gamesofficial/SubGat-Game-Web-Back-end-Server-Frame |
+  | 3      | Game-Client-Framework           | https://github.com/web3gamesofficial/SubGat-Game-Client-Template-Frame |
+  | 4      | Game-Backend-System-Framework   | https://github.com/web3gamesofficial/SubGat-Game-Real-Time-Server-Template-Frame |
+
   ### Milestone 3 — Substrate Game SDK
-  
-  - **Estimated Duration:** 3 days
+
+  - **Estimated Duration:** 2 days
   - **FTE:** 1
-  - **Costs:** 0.00067BTC
-  
+  - **Costs:** 200DAI
+
   | Number | Deliverable | Specification                                                |
   | ------ | ----------- | ------------------------------------------------------------ |
-  | 1      | Home page   | finish V0.1 http://sdk.substrate.org.cn/                     |
-  | 2      | Faucet      | get public testnet coin by Polkadot  Js  http://sdk.substrate.org.cn/post/Faucet |
+  | 1      | Home page   | finish V0.1 https://github.com/web3gamesofficial/Web3-Games-Faucet-Web |
+  | 2      | Faucet      | get public testnet coin by Polkadot  Js  https://github.com/web3gamesofficial/Web3-Games-Faucet-Web |
   | 3      | Learn       | Learn how to develop blockchain games on Substarte Game Chain! |
   | 4      | Developer   | Quickly access blockchain games through our SDK toolkit.     |
   | 5      | Contact     | Contact us page                                              |
+  | 6      | back-end    | https://github.com/web3gamesofficial/Web3-Games-Faucet-Server |
 
 - ### Milestone 4 —  Game Product [Example]
 
-  - **Estimated Duration:** 18 days
+  - **Estimated Duration:** 4 days
   - **FTE:** 1
-  - **Costs:** 0.01BTC
+  - **Costs:** 400DAI
 
   | Number | Deliverable     | Specification                                                |
   | ------ | --------------- | ------------------------------------------------------------ |
