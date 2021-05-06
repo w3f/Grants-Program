@@ -88,7 +88,7 @@ Web3 基金会 Open Grants Program 专注于技术拨款，**初期拨款为3万
     1. 用您于**提交申请的同一个 GitHub 帐户**来[克隆](https://github.com/w3f/Grant-Milestone-Delivery/fork) [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery) 仓库!
     2. 在新创建的克隆中，创建 [milestone-delivery-template.md](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/milestone-delivery-template.md) **副本**。
     3. 将文件名称改为 "project_name_milestone_number.md"。
-    4. 填写[发票表格](https://forms.gle/QvsbeSA3ziuC9k9b9)。
+    4. 填写[发票表格](https://forms.gle/vgQEZzvvFUjCyBiW6)。
     5. 在模板中填写里程碑的详细资料，包括指向**最初 PR 的链接**。
     6. 所有资料填写好后，点击 "create new pull request"。
 4. **审核里程碑:**
