@@ -1,0 +1,175 @@
+# TrustFi Staking
+
+- **Project Name:** TrustFi Staking
+- **Team Name:** TrustFi Dev Team
+- **Payment Address:** 0xee9c40a7ea9A96778D7c770132aBE78a08d0789C
+
+## Project Overview :page_facing_up:
+This project would like to bring the decentralized staking contract to Polkadot and Kusama ecosystem so that there is a way for the community to support early-stage projects on Polkadot and Kusama, and participate in community governance while gaining staking rewards.
+
+### Overview
+
+The Polkadot blockchain implements nominated proof-of-stake (NPoS), which created two roles, validators and nominators. The nominators will participate in the election campaign of one or more trusted validator candidates to ensure that the network will be decentralized by a small number of validators. Both the validators and the nominators will be rewarded in proportion to their respective benefits. At the same time, the validators could also set the sharing ratio. 
+
+TrustFi Staking uses the economic model of NPoS for reference, but not discuss the consensus protocol and network security, as TrustFi is designed to help early-stage projects build the experimental environment for community governance to stimulate the vitality and unlock the potential of the community.
+
+We use the election elimination system to replace the limited quantity of validators, in order to avoid the negative competition in election. At the same time, NFT Mint Model is brought in, as NFT will be involved of more use cases, such as community benefits, identifications, liquidity mining, and even directly exchange on NFT trading platform. Therefore, TrustFi Staking will provide tools and experimental environment for community governance.
+
+This project will develop a substrate pallet that implements the decentralized staking contract. The pallet will be tested on a local substrate node, and a simple frontend interface will be created based on Substrate Frontend Template.
+
+We are building tools and models on trustfi.org, to enable early-stage projects to raise capital and create staking schemes in a decentralized environment, and will launch the decentralized staking contract and its MVP on BSC, allowing teams to create staking schemes for their native token.
+
+This is the first step we want to take to eventually bring the decentralized staking contract to Polkadot, Kusama, and all parachains that need it.
+
+### Project Details
+
+In this project we will use TFI, the native token of TrustFi, as staking rewards to run MVP of the decentralized staking contract, and encourage projects in the Polkadot and Kusama ecosystem to participate in staking and minting NFT. In the second stage, we will develop BaaS pallet based on substrate, so that project owners could create their own staking scheme by themselves. 
+
+Here is the technical design framework of TrustFi Staking (use KSM as example):
+![1technical design framework.png](https://i.loli.net/2021/05/07/UOcKY5QHxp43JaL.png)
+
+Here is a detailed explanation of TrustFi Staking core functionality and using KSM as an example. NFT minted by stakers will be involved in community benefits, liquidity mining, and exchange on NFT trading platforms. In this process, TrustFi Staking could help KSM manage market liquidity and effectively stimulate the vitality of the community.
+
+#### Core Functionality
+
+- Election for Nodes 
+  - Candidacy 
+  - Registration conditions: the minimum holding token for staking (number to be determined). 
+  - Fill in the additional election information: node name, node bio, the rewards sharing ratio, the number of staked tokens, and other notable sources of information that will help showcase the credibility of the node to the community.
+  - Submit the information and deposit tokens to the staking pool (use KSM as example).
+  - The node candidate will get the same number of sKSM through calling the contract after depositing KSM, automatically become a candidate, and display the candidacy information on the campaign page.
+  - Each node candidate gets an exclusive link and the details page about election information. 
+ - Vote
+   - Users could vote for all node candidates 
+   - Select the node candidate and input the number of votes (use KSM as example).
+   - Submit the votes on chain with KSM.
+   - Get the same number of sKSM after the vote. 
+   - The votes could be withdrew at any time with sKSM. 
+ - Campaign
+   - Project Owner could set the campaign period.
+   - During the campaign, the ranking is based on the number of votes.
+   - Conditional restrictions on node candidates, such as setting the minimum number of voting addresses and votes.
+   - Set the election elimination ratio. For example, 2 / 3 of all ranking nodes could become selected nodes.
+   - All failed node candidates and voting users could withdraw their KSM according to sKSM after the election.
+
+- NFT Mint 
+   - Users could participate in minting NFT by NFT points, which would be generated by mortgaging the sKSM to the NFT mining pool.
+   - NFT is involved in liquidity mining economic model (to be determined).
+   - Project Owners set the NFT mining cycle (days), NFT Points distribution per day and per block, the swap ratio from NFT Points to NFT, the types and total amount of NFT.
+- To calculate the NFT Points production and distribution earned:
+  - Earning=v∗α/β∗γ
+  - Of which v is the NFT Points distribution per block, α is the personal mortgage sKSM, β is the total mortgage sKSM, and γ is the number of mortgage blocks.
+  - NFT Points could be accumulated and will not disappear.
+
+- Staking
+  - After the election, all users who staked KSM could get daily rewards by calling the reward contract. 
+  - Project Owners set the staking economic model, such as staking cycle (days), total staking reward and daily staking reward (use TFI as example). 
+  - At 12 o'clock every day, daily rewards will be equally distributed to all selected nodes, and the voting users get their rewards according to the rewards sharing ratio. 
+- To calculate the daily income earned:
+  - Earning=r∗x∗y/z
+  - Of which r is the daily income of the node, x is the rewards sharing ratio, y is the personal mortgage amount of the node, and z is the total mortgage amount of the node.
+
+- The product framework of TrustFi Staking (use KSM as example):
+![2product framework.jpg](https://i.loli.net/2021/05/07/8NODxdXB4EFmlUA.jpg)
+
+### Ecosystem Fit
+
+Since TrustFi Staking is a community driven staking campaign for early-stage projects in the Polkadot and Kusama ecosystem, TrustFi Staking combines economic model and features of NPoS, and introduces use cases of NFT to help startups build DAO and community governance. Several benefits will be offered to teams and users: 
+
+* With the election competition mechanism, teams could activate their community.
+* Users can participate in NFT mint while getting the benefits of staking, which has strong stickiness with the project and the community. 
+* NFT will be involved in identifications, which could integrate community culture and art, and effectively stimulate community vitality and unlock the potential. 
+* To a certain extent, help project tokens manage market liquidity.
+
+It's also exciting to implement TrustFi Staking as an on-chain governance module and add it to Polkadot governance stack.
+
+## Team :busts_in_silhouette:
+
+### Team members
+
+- TrustFi Dev Team -- a team of developers who has built trustfi.org and designed the TrustFi BaaS Solutions.
+- Simon Lau
+- Joesph Cheung
+- Todor Kolev
+
+### Contact
+
+- **Contact Name:** Simon Lau
+- **Contact Email:** simonlau@trustfi.org
+- **Website:** https://www.trustfi.org/
+
+### Legal Structure 
+
+- **Registered Legal Entity:** TRUSTFI FOUNDATION LTD.
+- **Registered Address:** 5001 BEACH ROAD #07-37 GOLDEN MILE COMPLEX SINGAPORE(199588)
+
+### Team's experience
+
+- **Simon Lau:** Core developer of TrustFi Network, deep understanding of Ethereum smart contract and Dapp development. 5 years of experience in full-stack development and early miner in the space of crypto assets. Worked for MSRA（Microsoft Research Asia）in charge of distributed database.
+
+- **Joesph Cheung:** In charge of the development strategy and product planning, as well as project management. Previously with the blockchain fund as Investment Partner & Researcher. Joesph has been engaged in researches about blockchain protocols and DeFi since 2017.
+
+- **Todor Kolev:** Majored in Software Design. He is full of enthusiasm for blockchain and Decentralized Financial business. Todor is an entrepreneur with extensive experience in Leadership and Business Cooperation. As CEO of Quiet Solutions, he led a team with 20 mates to provide cyber secure and digital solutions for SMEs.
+
+### Team Code Repos
+
+- https://github.com/TrustFiNetwork
+- https://github.com/Sitcum 
+
+### Team LinkedIn Profiles
+
+- https://www.linkedin.com/company/trustfi
+- https://www.linkedin.com/in/m-joesph-cheung-223691103/
+- https://www.linkedin.com/in/todor-kolev/
+## Development Roadmap :nut_and_bolt:
+
+### Overview
+
+- **Total Estimated Duration:** 6 weeks
+- **Full-time equivalent (FTE):**  3
+- **Total Costs:** 800 DAI
+
+### Milestone 1 — Implement Substrate Modules
+
+- **Estimated Duration:** 4 weeks
+- **FTE:**  2
+- **Costs:**  500 DAI
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT |
+| 0b. | Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 1. | TrustFi Staking Pallet | An open-source prototype of a decentralized staking contract substrate pallet. The pallet will implement election for nodes, vote, NFT mint, staking algorithm etc. |
+| 2. | Test | Deploy the runtime module to substrate testnet and test TrustFi Staking functions: candidacy registration, vote, campaign, NFT mint, staking rewards distribution. (No security audit here)|
+
+### Milestone 2 — Frontend Integration
+- **Estimated Duration:** 2 weeks
+- **FTE:**  3
+- **Costs:** 300 DAI
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT |
+| 0b. | Testing Guide | A testing guide to list black box test cases demonstrate the frontend integration functionalities on trustfi.org. | 
+| 1. | Connecting to PolkadotJS extension | If not installed, direct users to install. If installed, ask users to select an account. Popup window for interactions: candidacy registration, vote, campaign, NFT mint.  | 
+| 2. | TrustFi Integration | Deploy a substrate node and connect it to the TrustFi test line. |
+| 3. | Test | We will test the frontend before milestone delivery and complete security audit. |
+
+## Future Plans
+
+- **Security Audit:** We will audit the decentralized staking contract pallet code and the frontend code before launching and using.
+- **BaaS Implementation:** We are already designing the implementation of BaaS. After implementation of TrustFi Staking contract pallet on substrate, we will develop BaaS pallet based on substrate, so that project owners could create their own staking scheme by themselves.
+- **Regular Running:** Eventually, we hope to run TrustFi Staking pallet on a regular basis, which will support and help for projects’ community governance and token liquidity management. we will plan to invite projects in the Polkadot and Kusama ecosystem to use TrustFi Staking as soon as the Kusama Network is available.
+
+Meanwhile, we want to make TrustFi Staking contract pallet available as a module for every other parachain to run their own staking contract.
+
+## Additional Information :heavy_plus_sign:
+
+TrustFi aims to be a decentralized BaaS Pallet that focuses on early crypto assets issuance, liquidity management, community activities and DAO governance to unlock the potential in cross-chain environment. The product which could enable early-stage projects to raise capital in a decentralized environment by auctions, has already been launched on BSC on trustfi.org. In the future, TrutFi will support early-stage projects in the Polkadot and Kusama ecosystem, allowing teams to raise funds at a fixed swap rate for their native token.
+
+Here is the open source link: https://github.com/TrustFiNetwork/trustfi-alpha-ido-protocol
+
+TrustFi has established cooperative relations with blockchain funds and community influencers in 10 countries (Britain, France, Turkey, Bulgaria, Australia, Indonesia, South Korea, Singapore, India, Canada, etc.), and will organize developer communities together, providing support by communities for global Polkadot ecological projects, and promote the development of Web3.0. 
+
+Here is the Twitter link: https://twitter.com/trustfiorg
+
