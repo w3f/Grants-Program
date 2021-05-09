@@ -57,7 +57,7 @@ To facilitate transactions and bolster market integrity, Splyt Core provides a s
 * As Splyt becomes more widely adopted, buyers and sellers alike will develop large eNFT “wallets” that represent their purchase history. These accumulated eNFT’s can be bought, sold, and eventually even traded with a single click. If a user wants to resell an eNFT, they need only to press a button, and it will automatically restock on any market that had previously listed it. The restocked eNFT will carry its purchase history with it.
 
 
-**Listing Deposit:** Upon listing an item for purchase, sellers must deposit SHOPX tokens to be returned after successful purchase. These listing fees increase or decrease based on the seller’s reputation. The following formula will calculate the listing depsoit required: f(x) = ((10,000,000) / (100 * x + 2,000,000))<br>
+**Listing Deposit:** Upon listing an item for purchase, sellers must deposit tokens to be returned after successful purchase. These listing fees increase or decrease based on the seller’s reputation. The following formula will calculate the listing depsoit required: f(x) = ((10,000,000) / (100 * x + 2,000,000))<br>
 <br>
 The listing depsoit is what makes the eNFT unique. It is a collateral based NFT system that will financially incentivize the seller to fulfill the order so that the seller will get their depsoit back. This will make p2p e-commerce a safe place to transact. 
 
@@ -118,7 +118,7 @@ The listing depsoit is what makes the eNFT unique. It is a collateral based NFT 
 
 *  **Contact Name:** [Cyrus Taghehchian](mailto:cyrus@spl.yt)(CEO) or [Leo Jeong](mailto:leo@spl.yt)(Blockchain Lead)
 
--   **Contact Email:** [cyrus@spl.yt](mailto:Cyrus@spl.yt) & [leo@spl.yt](mailto:leoh@spl.yt)
+-   **Contact Email:** [cyrus@spl.yt](mailto:Cyrus@spl.yt) & [leo@spl.yt](mailto:leo@spl.yt)
 
 -   **Website:** https://www.splytcore.org
 
@@ -186,7 +186,7 @@ The summary of the milestones includes:
 | - | - | - |
 | D0-a | License | Apache 2.0 |
 | D0-b | Documentation | Repository with a Readme.md file describing eNFT project |
-| D0-d | Repository | https://github.com/splytcore/Splyt_Polkadot/blob/main/README.md |
+| D0-d | Repository | https://github.com/splytcore/Splyt_Polkadot/blob/master/README.md |
 | D1 | Polkadot NFT Projects Survey | survey of the current NFT projects and comparisons of their system design and architecture |
 | D2 | eNFT Ref Architecture | proposed eNFT reference architecture |
 | D3 | Dev environment | rust dev environment and local rococo testnet for substrate and parachain development |
@@ -204,8 +204,8 @@ The summary of the milestones includes:
 | - | - | - |
 | D0-a | License | Apache 2.0 |
 | D0-b | Documentation | Repository with a Readme.md file describing how to build, run, test and deploy this project |
-| D0-c | Testing Guide | Deliverables will be tested before deployinng. Tests will available under https://github.com/splytcore/Splyt_Polkadot/test |
-| D0-d | Repository | https://github.com/splytcore/Splyt_Polkadot/blob/main/README.md |
+| D0-c | Testing Guide | Deliverables will be tested before deployinng. Tests will available under https://github.com/splytcore/Splyt_Polkadot/tree/master/test |
+| D0-d | Repository | https://github.com/splytcore/Splyt_Polkadot/blob/master/README.md |
 | D4 | eNFT Asset | eNFT Asset types and functionalies including unit tests |
 | D5 | eNFT Asset Manager | eNFT Asset Manager types and functionalities including unit tests |
 | D6 | Script for Testing | Script to run test for eNFT Asset and eNFT Asset Manager on a polkadot testnet |
@@ -224,8 +224,8 @@ The summary of the milestones includes:
 | - | - | - |
 | D0-a | License | Apache 2.0 |
 | D0-b | Documentation | Repository with a Readme.md file describing how to build, run, test and deploy this project |
-| D0-c | Testing Guide | Deliverables will be tested before deployinng. Tests will available under https://github.com/splytcore/Splyt_Polkadot/test |
-| D0-d | Repository | https://github.com/splytcore/Splyt_Polkadot/blob/main/README.md |
+| D0-c | Testing Guide | Deliverables will be tested before deployinng. Tests will available under https://github.com/splytcore/Splyt_Polkadot/tree/master/test |
+| D0-d | Repository | https://github.com/splytcore/Splyt_Polkadot/blob/master/README.md |
 | D8 | eNFT Order | eNFT Order types and functionalies including unit tests |
 | D9 | eNFT Order Manager | eNFT Order Manager types and functionalities including unit tests |
 | D10 | Script for Testing | Script to run test for eNFT Order and eNFT Order Manager on a polkadot testnet |
@@ -244,8 +244,8 @@ The summary of the milestones includes:
 | - | - | - |
 | D0-a | License | Apache 2.0 |
 | D0-b | Documentation | Repository with a Readme.md file describing how to build, run, test and deploy this project |
-| D0-c | Testing Guide | Deliverables will be tested before deployinng. Tests will available under https://github.com/splytcore/Splyt_Polkadot/test |
-| D0-d | Repository | https://github.com/splytcore/Splyt_Polkadot/blob/main/README.md |
+| D0-c | Testing Guide | Deliverables will be tested before deployinng. Tests will available under https://github.com/splytcore/Splyt_Polkadot/tree/master/test |
+| D0-d | Repository | https://github.com/splytcore/Splyt_Polkadot/blob/master/README.md |
 | D11 | eNFT Arbitration | eNFT Order types and functionalies including unit tests |
 | D12 | eNFT Arbitration Manager | eNFT Order Manager types and functionalities including unit tests |
 | D13 | eNFT Reputation | eNFT Order types and functionalies including unit tests |
@@ -267,8 +267,8 @@ The summary of the milestones includes:
 | - | - | - |
 | D0-a | License | Apache 2.0 |
 | D0-b | Documentation | Repository with a Readme.md file describing how to build, run, test and deploy this project |
-| D0-c | Testing Guide | Deliverables will be tested before deployinng. Tests will available under https://github.com/splytcore/Splyt_Polkadot/test |
-| D0-d | Repository | https://github.com/splytcore/Splyt_Polkadot/blob/main/README.md |
+| D0-c | Testing Guide | Deliverables will be tested before deployinng. Tests will available under https://github.com/splytcore/Splyt_Polkadot/tree/master/test |
+| D0-d | Repository | https://github.com/splytcore/Splyt_Polkadot/blob/master/README.md |
 | D16 | Soft Launch Mainnet | Launch splyt onto mainnet along with eNFT pallets. |
 | D17 | Polkadot eNFT - Shopify App Integration | Launch Shopify plugin powered by Polkadot eNFT. Such that the whole shopify ecosystem is able to view, download and start using Polkadot eNFT |
 | D18 | eNFT Inventory System | Launch a Splyt SDK to support eNFT inventory system |
@@ -290,7 +290,7 @@ The summary of the milestones includes:
 | - | - | - |
 | D0-a | License | Apache 2.0 |
 | D0-b | Documentation | Repository with a Readme.md file describing how to build, run, test and deploy this project |
-| D0-c | Testing Guide | Deliverables will be tested before deployinng. Tests will available under https://github.com/splytcore/Splyt_Polkadot/test
+| D0-c | Testing Guide | Deliverables will be tested before deployinng. Tests will available under https://github.com/splytcore/Splyt_Polkadot/tree/master/test
 | D20 | Hard Launch | Figure out what works, what doesn’t and bug fixes |
 | D21 | WooCommerce Integration | The 2nd biggest small business integration website will receive a beta version of splyt plugin |
 | D22 | Maison Du Integration | Polkadot eNFT integration with a Luxury market place and affiliate network |
