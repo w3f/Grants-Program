@@ -259,14 +259,7 @@ The smart contract templates are a temporary solution. Eventually we will add th
 | 0c. | Delivery time |Mid of October |
 | 0d. | Documentation | Documents containing product architecture as well as profound user manuals  |
 | 1. | Integrating with Polkadot | Testing and debugging the XP Network Protocol in live Polkadot environment |
-| 2. | Compliance Validator | Adding automated tests: 1. pallets (Move, Rust, Solidity),
-2. XP.network protocol interactions between pallets: 
-+ Move -> Solidity,
-+ Solidity -> Move, 
-+ Move -> Rust, 
-+ Rust -> Move, 
-+ Solidity-> Rust
-+ Rust -> Solidity |
+| 2. | Compliance Validator | Adding automated tests: 1. pallets (Move, Rust, Solidity), 2. XP.network protocol interactions between pallets: Move -> Solidity, Solidity -> Move, Move -> Rust, Rust -> Move, Solidity-> Rust, Rust -> Solidity |
 | 3. | Documentation | Writing and publishing final documentation with all the amendments 1. XP.Network protocol, 2. XP.network pallets (for Move, Rust & Solidity)|
 | 4. | Tutorials | Preparing and publishing tutorials with examples and exercises 1. How to use XP.network Protocol, 2. How to attach an XP.Network pallet to a parachain | 
 
