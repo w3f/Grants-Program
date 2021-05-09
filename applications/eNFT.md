@@ -158,7 +158,21 @@ Ethereum Repos for Reference Only
 
 ##  Development Roadmap :nut_and_bolt:
 
+The development roadmap of this project covers a survey on existing NFT projects, design of eNFT, implementation of key eNFT pallets, testing and real-world use cases. Each milestone describes estimated duration, FTE, costs and its deliverables. The key types and functionality of eNFT standard and its implementation-specific deliverables (D4, D5, D8, D9, D11, D12, D13 and D14) are described in detail in the Specification Details section. 
+
+The summary of the milestones includes:  
+* Milestone 1 - eNFT Design: survey of the existing NFT projects and eNFT reference architecture proposal
+* Milestone 2 - eNFT Assets: design and implementation of asset-related types and functionalities
+* Milestone 3 - eNFT Order: design and implementation of order-related types and functionalities
+* Milestone 4 - eNFT Arbitration and Reputation: design and implementation of eNFT governance
+* Milestone 5 - Polkadot eNFT: eNFT soft launch with basic use cases
+* Milestone 6 - Polkadot eNFT Expansion: eNFT hard launch with advanced use cases
+
 ###  Overview  
+
+* **Total Estimated Duration:** 12 months
+* **Full-time equivalent (FTE):**  6 FTE
+* **Total Costs:** $3,000 USD
 
 ###  Milestone 1 — eNFT Design 
 
