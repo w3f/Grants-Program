@@ -194,8 +194,8 @@ The smart contract templates are a temporary solution. Eventually we will add th
 | 0a. | License | Apache 2.0 |
 | 0b. | Description | We will support all functional modules that have been implemented on Polkadot. |
 | 0c. | Delivery time | Mid June |
-| 0d. | Documentation | Documents containing product architecture as well as usage manuals  |
-| 1. | Smart Contract templates | Write 20 optcode smart contract templates for known use cases in Move, Solidity, Rust |
+| 0d. | Documentation | Documents containing product architecture as well as basic user manuals  |
+| 1. | Smart Contract templates | Write 20 optcode smart contract templates for known use cases in Move & Solidity |
 | 2. | Assembler parser (for Move) | 20 Move Opcodes are parced and “intentions” are generated for calling templates in Rust or Solidity |
 | 3. | Intentions callers (for Move) | 20 functions to be called with the “intentions” from Move in Solidity | 
 | 4. | Bytecode compiler (for Solidity) | 20 smart contract templates in Solidity opcode are mapped to bytecode | 
@@ -214,7 +214,7 @@ The smart contract templates are a temporary solution. Eventually we will add th
 | 0a. | License | Apache 2.0 |
 | 0b. | Description | We will support all functional modules that have been implemented on Polkadot. |
 | 0c. | Delivery time | Beginning of August |
-| 0d. | Documentation | Documents containing product architecture as well as user manuals  |
+| 0d. | Documentation | Documents containing product architecture as well as basic user manuals  |
 | 1. | Assembler Parser (for Solidity) | 20 smart contracts in Solidity optcode are parced |
 | 2. | Intentions callers (for Move) | 20 Move optcode templates are called with the “intentions” from Solidity optcode | 
 | 3. | Bytecode compiler (for Move) | 20 Move smart contract opcodes are mapped to valid Move bytecode |
@@ -235,14 +235,15 @@ The smart contract templates are a temporary solution. Eventually we will add th
 | 0a. | License | Apache 2.0 |
 | 0b. | Description | We will support all functional modules that have been implemented on Polkadot. |
 | 0c. | Delivery time |Beginning of September |
-| 0d. | Documentation | Documents containing product architecture as well as user manuals  |
-| 1. | Bytecode deserialiser (for Rust) | Rust bytecode deserializer to assembler |
-| 2. | Assembler parser (Rust) | Developing opcode parser for Rust and generating “intentions” |
-| 3. | Intentions callers | 20 opcode templates to be called with the “intentions” Move, Solidity - Rust and vice versa | 
-| 4. | Bytecode compiler (for Rust) | 20 Rust opcode smart contract templates are mapped to Rust bytecode | 
-| 5. | Substrate Pallet (for Rust) | 1 template pallet implementing the XP Relay Chain protocol is developed |
-| 6. | Testing in Polkadot Westnet| Testing and debugging 20 generated smart contracts inside Rust bytecode in Polkadot Westnet | 
-| 7. | Testing in Westend | XP Relay Chain Protocol is tested between tree pallets (Move, Rust & Solidity) messaging protocol | 
+| 0d. | Documentation | Documents containing product architecture as well as basic user manuals  |
+| 1. | Smart Contract templates | Write 20 optcode smart contract templates for known use cases in Rust |
+| 2. | Bytecode deserialiser (for Rust) | Rust bytecode deserializer to assembler |
+| 3. | Assembler parser (Rust) | Developing opcode parser for Rust and generating “intentions” |
+| 4. | Intentions callers | 20 opcode templates to be called with the “intentions” Move, Solidity - Rust and vice versa | 
+| 5. | Bytecode compiler (for Rust) | 20 Rust opcode smart contract templates are mapped to Rust bytecode | 
+| 6. | Substrate Pallet (for Rust) | 1 template pallet implementing the XP Relay Chain protocol is developed |
+| 7. | Testing in Polkadot Westnet| Testing and debugging 20 generated smart contracts inside Rust bytecode in Polkadot Westnet | 
+| 8. | Testing in Westend | XP Relay Chain Protocol is tested between tree pallets (Move, Rust & Solidity) messaging protocol | 
 
 ### Milestone 4 — Smart Contract templates in Move, Solidity, Rust, testing and launch
 
@@ -256,11 +257,18 @@ The smart contract templates are a temporary solution. Eventually we will add th
 | 0a. | License | Apache 2.0 |
 | 0b. | Description | We will support all functional modules that have been implemented on Polkadot. |
 | 0c. | Delivery time |Mid of October |
-| 0d. | Documentation | Documents containing product architecture as well as user manuals  |
-| 1. | Integrating with Polkadot | Testing the XP Network Protocol in live Polkadot environment |
-| 2. | Compliance Validator | Adding automated tests for the above integrated modules |
-| 3. | Documentation | Writing and publishing final documentation with all the amendments |
-| 4. | Tutorials | Preparing and publishing tutorials with examples and exercises | 
+| 0d. | Documentation | Documents containing product architecture as well as profound user manuals  |
+| 1. | Integrating with Polkadot | Testing and debugging the XP Network Protocol in live Polkadot environment |
+| 2. | Compliance Validator | Adding automated tests: 1. pallets (Move, Rust, Solidity),
+2. XP.network protocol interactions between pallets: 
++ Move -> Solidity,
++ Solidity -> Move, 
++ Move -> Rust, 
++ Rust -> Move, 
++ Solidity-> Rust
++ Rust -> Solidity |
+| 3. | Documentation | Writing and publishing final documentation with all the amendments 1. XP.Network protocol, 2. XP.network pallets (for Move, Rust & Solidity)|
+| 4. | Tutorials | Preparing and publishing tutorials with examples and exercises 1. How to use XP.network Protocol, 2. How to attach an XP.Network pallet to a parachain | 
 
 ## Future Plans
 
