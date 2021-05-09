@@ -12,9 +12,9 @@ XP.network is a codeless platform for building blockchain agnostic NFT DApps. XP
 
 In order to synchronize communication between different [parachains](https://research.web3.foundation/en/latest/polkadot/XCMP/index.html) we want to build our own protocol which will be used by a network of XP.network pallets, that can be attached to and be used by any parachain.
 
-Since it is currently hard to trace whether an incoming message is related to any previous transaction or request, we will elaborate a protocol that will enable such tracking by the "TOPIC ID", which is especially useful when multiple transactions are executed between two blockchains. It will be a group of pallets, each acting like a “post office” in a post office network. They will all be using our XP Relay Chain protocol.
+Since it is currently hard to trace whether an incoming message is related to any previous transaction or request, we will elaborate a protocol that will enable such tracking by the "TOPIC ID", which is especially useful when multiple transactions are executed between two blockchains. It will be a group of pallets, each acting like a “post office” in a post office network, all implementing our XP Relay Chain protocol.
 
-Since different blockchains may use different smart contract languages, we are developing an automated toolbox that will communicate via the Polkadot Relay Chain and will generate in the target pallet a valid code in Move, Solidity and Rust (Ink!) which is validated and compiled to byte-code to interact with the target blockchains. After the target blockchain has finished or rejected the transaction, the information about this is packed back into the reply XP Relay Chain protocol message and is sent back to the requesting pallet for passing it to the requesting blockchain.
+Since different blockchains may use different smart contract languages, we are developing an automated toolbox that will communicate via the Polkadot Relay Chain and will generate in the target pallet a valid code in Move, Solidity and Rust (Ink!) which is validated and compiled to byte-code to interact with the target blockchains. After the target blockchain has executed or rejected the transaction, the information about this is packed back into the reply XP Relay Chain protocol message and is sent back to the requesting pallet for passing it to the requesting blockchain.
 
 Because there's no NFT library in Move's standard library we will have to write it as part of this project. This will allow: 
 1. other blockchains to call NFT smart contracts in Move, 
@@ -22,17 +22,17 @@ Because there's no NFT library in Move's standard library we will have to write 
 
 #### Integration
 
-Any parachain can attach our pallet and use its functionality. The pallets (one for each parahcain / parathread) will act as a “post office network” supporting the protocol that enables nodes to keep track of the “Topics”. They will also "translate" the intentions of one parachain, regardless of its smart contract language, to a smart contract in the language of the target parachain / parathread (currently Move, Rust and Solidity).
+Any parachain can attach our pallet and use its functionality. The pallets will act as a “post office network” supporting the protocol that enables nodes to keep track of the “Topics”. They will also "translate" the intentions of one parachain, regardless of its smart contract language, to a smart contract in the language of the target parachain / parathread. We're currently working on pallets for three smart contract languages: Move, Rust and Solidity.
 
 All the NFT based applications built by our codeless platform will be using the XP Relay Chain protocol we're building.
 
 ### Project Details
 
-The project is comprised of 2 interdependant deliverables:
+The project is comprised of 2 large interdependant deliverables:
 
 1. The XP.network Relay Chain Protocol, which will enable parachains to communicate their smart contracts in a language agnostic "intention" format. It is designed to keep track of the "TOPIC" of negotiation.
 
-2. Three Substrate Pallets templates that will communicate with each other implementing the XP.network protocol and will convert their original Move, Solidity & Rust smart contract bytecodes to a language agnostic "intention". This "intention" will be sent as payload in a Relay Chain callback to the target XP.network pallet attached to a designated parachain. There, the "intention" will be converted to a smart contract of the target blockchain. Once the target blockchain responds, the initiating parachain gets notified according to the XP.network protocol.
+2. Three Substrate Pallet templates that will communicate with each other implementing the XP.network protocol and will convert their original Move, Solidity & Rust smart contract bytecodes to a language agnostic "intention". This "intention" will be sent as payload in a Relay Chain callback to the target XP.network pallet attached to a designated parachain. There, the "intention" will be converted to a smart contract of the target blockchain. Once the target blockchain responds, the initiating parachain gets notified according to the XP.network protocol.
 
 
 **XP Relay Chain Protocol** will be supported by a number of pallets, each acting as a “post office” for its parathread. A typical message will include:
@@ -73,22 +73,20 @@ The **XP.network Handshake protocol** will roughly look like this:
 
 Every parachain equipped with our pallet will know how to read such incoming messages. If the message is related to the blockchain this pallet is attached to, it will do the following:
 
-1. Deserialize the incoming message from bytecode to optcode,
-2. Transform the commands and arguments from the optcode to a smart contract in the target language, used by the blockchain it works for.
-3. It will pass the generated bytecode to the blockchain for execution.
-4. Once there is a reply from the blockchain, the reply will be packed into the return message of the present protocol and sent back to the requesting pallet via the Polkadot Relay Chain callbacks with the same id it got the request.
-6. The pallet, which initiated the transaction, will receive the reply and will match the id of the reply with the id of the request.
-7. It will deserialize the bytecode of the reply and will transform it to the bytecode of its smart contract language (should it be different from the counterpart’s).
+1. Transform the commands and arguments from the "intention" to a smart contract in the target language, used by the blockchain it works for.
+2. It will pass the generated bytecode to the blockchain for execution.
+3. Once there is a reply from the blockchain, the reply will be packed into the return message of the present protocol and sent back to the requesting pallet via the Polkadot Relay Chain callbacks with the same id it got the request.
+4. The pallet, which initiated the transaction, will receive the reply and will match the id of the reply with the id of the request.
+5. It will deserialize the bytecode of the reply and will transform it to the bytecode of its smart contract language (should it be different from the counterpart’s).
 
 A pallet implementing this protocol consists of:
 
 1. **Bytecode Deserializer** - it receives a smart contract bytecode as input and returns a human readable opcode. 
 2. **Assembly Code Converter** - it  creates the following key - value pairs:
-   + The chosen smart contract programming language.
-   + Template number.
+   + Target template number.
    + Data to populate the smart contract with.
 3. **Bytecode Compiler** - it takes the key - value pairs generated at the previous stage as an input and generates the chosen smart contract language bytecode as its output.
-4. **Polkadot parathread** - it uses the Relay Chain callback mechanism to communicate with the other parachains and parathreads using XP Network protocol.
+4. **Polkadot pallet** - it uses the Relay Chain callback mechanism to communicate with the other parachains and parathreads using XP Network protocol.
 
 A set of pre-programmed audited code templates are ready to be populated by the arbitrary data. Once a request is received, the templates are populated with the incoming data and are instantly compiled into transaction ready bytecode. Initially there will be a limited set of ready smart contract opcode templates for each platform, currently 20, each representing a different use case. However, new templates will be added on a permanent regular basis. Eventually most possible use cases will be available for each bridged platform.
 
@@ -114,7 +112,10 @@ Since the idea behind the VM Hub is converting one smart contract language bytec
 
 The above process is automated and can be reproduced on any machine.
 
-#### Expected obstacles:
+#### The XP.network Hub is not:
+This hub is by no means a bridge between the blockchains. It completely relies on Polkadot's existing infrastructure to communicate and secure interaction between the parathreads. However, we have plans of building bridges to a number of blockchains in further projects.
+
+#### Expected obstacles
 For efficiency in EVM higher order bits of types narrower than 256 bits, e.g. uint24 may be ignored or cleaned shortly before writing them to memory or before comparisons. This means, before comparison or saving higher order bits must be “manually” cleaned.
 
 In the Move language the code is divided into scripts and Modules. When scripts are compiled to the bytecode they become straightforward opcodes, however, modules can be recursively called from the scripts or from the other modules. Thus, modules deserialisation is much more complex and also requires recursiveness to retrieve the content of all the functions or data stored in different parts of the stack.
