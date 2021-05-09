@@ -22,7 +22,7 @@ Because there's no NFT library in Move's standard library we will have to write 
 
 #### Integration
 
-Any parachain can attach our pallet and use its functionality. The pallets will act as a “post office network” supporting the protocol that enables nodes to keep track of the “Topics”. They will also "translate" the intentions of one parachain, regardless of its smart contract language, to a smart contract in the language of the target parachain / parathread. We're currently working on pallets for three smart contract languages: Move, Rust and Solidity.
+Any parachain, parathread or bridge can attach our pallet and use its functionality. The pallets will act as a “post office network” supporting the protocol that enables nodes to keep track of the “Topics”. They will also "translate" the intentions of one parachain, regardless of its smart contract language, to a smart contract in the language of the target parachain / parathread. We're currently working on pallets for three smart contract languages: Move, Rust and Solidity.
 
 All the NFT based applications built by our codeless platform will be using the XP Relay Chain protocol we're building.
 
