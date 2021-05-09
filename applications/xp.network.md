@@ -46,7 +46,7 @@ Payload:            blob              // A binary representation of the "intenti
 }
 ```
 
-The runtime storage & the message inside the binary payload will be structured as follows:
+The runtime [storage](https://substrate.dev/rustdocs/v3.0.0/frame_support/storage/trait.StorageValue.html#required-methods) & the message inside the binary payload will be structured as follows:
 
 ![img](https://github.com/xp-network/w3f_application/blob/main/XP.network.protocol.png)
 
