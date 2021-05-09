@@ -92,10 +92,10 @@ The listing depsoit is what makes the eNFT unique. It is a collateral based NFT 
     * NodeJS, expressJS, MongoDB, React, PHP (coming in future)
 *  Documentation of core components, protocols, architecture etc. to be deployed
     * Core: [Github: Splyt_Protocol](https://github.com/splytcore/Splyt_Protocol) contracts
-    * Supporting backend services: [Github: Splyt_Core](https://github.com/splytcore/Splyt_Core) backend
-    * Supporting plugins: ‘Splyt’ shopify plugin in beta (link not available due to non-prod/beta)
+    * Supporting backend services: Splyt backend for integration with blockchain and front-end dapp
+    * Supporting plugins: Splyt shopify plugin in beta (link not available due to non-prod/beta)
 *  PoC/MVP or other relevant prior work or research on the topic
-	* Splyt alpha version: [Github: Splyt_alpha](https://github.com/splytcore/Splyt_alpha)
+	* Splyt alpha version: PoC of Splyt alpha with web UI
 
 
 
@@ -145,9 +145,6 @@ Polkadot Repos
 
 Ethereum Repos for Reference Only
 * [Github: Splyt_Protocol](https://github.com/splytcore/Splyt_Protocol)
-* [Github: Splyt_Core](https://github.com/splytcore/Splyt_Core)   
-* [Github: Splyt_Shopify](https://github.com/splytcore/Splyt_Shopify)
-
 
 
 ###  Team LinkedIn Profiles
