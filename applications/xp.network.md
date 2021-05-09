@@ -46,7 +46,7 @@ Payload:            blob              // A binary representation of the "intenti
 }
 ```
 
-The message inside the binary payload will be structured as follows:
+The runtime storage & the message inside the binary payload will be structured as follows:
 
 ![img](https://github.com/xp-network/w3f_application/blob/main/XP.network.protocol.png)
 
