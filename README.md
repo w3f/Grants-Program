@@ -4,7 +4,7 @@
   <img src="src/Open_Grants_Program.png" style="width:1300px";>
 </p>
 
-> **:loudspeaker:** The Web3 Foundation _Open Grants_ Program focuses on technology grants of up to **$30,000 for initial grants** and **$100,000 for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **Bitcoin or DAI**. For larger grants, payments in fiat and private submissions, please see our [_General Grants_ Program](https://github.com/w3f/General-Grants-Program).
+> **:loudspeaker:** The Web3 Foundation _Open Grants_ Program focuses on technology grants of up to **$30,000 for initial grants** and **$100,000 for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **Bitcoin, USDT or DAI**. For larger grants, payments in fiat and private submissions, please see our [_General Grants_ Program](https://github.com/w3f/General-Grants-Program).
 
 ---
 
