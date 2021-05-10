@@ -123,44 +123,36 @@ https://github.com/Sukhavati-Labs/explorer
 * **Full-Time Equivalent (FTE):**  1.5
 * **Total Costs:** 4,000 DAI
 
-### Milestone 1 — Implement PoC Plot Algorithm and Capacity File Import 
+### Milestone 1 — Implement Capacity Management Pallet
 * **Estimated Duration:** 4 weeks
 * **FTE:**  1
 * **Costs:** 1,000 DAI
 
-This milestone will provide a PoC capacity management tool. It allows miners to do the plot operation to generate capacity files and import existing MASS PoC keys & capacity files to reuse them.
+This milestone will provide a PoC capacity management pallet. It allows miners to do the plot operation and import existing MASS PoC keys and capacity files.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how to plot files and how to import existing capacity files with this module. |
 | 0c. | Testing Guide | A guide describing how to run the tests covering the cases in 0b. | 
-| 1. | PoC Key Management | A keystore manager to keep PoC keys and capacity file info securely, including key creation, derivation, validation and keystore import. |  
-| 2. | Plot Algorithm | Implementation of the PoC plot algorithm. |  
-| 3. | Capacity File Import | Import existing capacity file and check its integrity. Match its pubkeys with the devirations of PoC root key. |  
-| 4. | Test | Unit test and test cases. |  
+| 1. | Capacity Management Pallet | This pallet will implement features include: 1) PoC key management, 2) plotting, 3) capacity import. |
+| 2. | Test | Unit test and test cases. |  
 
-
-### Milestone 2 — Implement PoC Consensus Engine
+### Milestone 2 — Implement Sukhavati PoC Consensus Pallet
 
 * **Estimated Duration:** 8 weeks
 * **FTE:**  1.5
 * **Costs:** 3,000 DAI
 
-This milestone will provide a poc consensus pallet and a farmer implementation. Together with the PoC capacity managemnt tool in Milestone 1, developers can easily build their own chain that can reuse the MASS capacity power.
+This milestone will provide a poc consensus pallet. Together with the capacity managemnt pallet in Milestone 1, developers can easily build their own chain that can reuse the MASS capacity power.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how to use this PoC consensus engine. |
 | 0c. | Testing Guide | A guide describing how to build a PoC blockchain with this module. | 
-| 1. | Farmer Implementation | Scan the capacity files and try to solve the challenge. |  
-| 2. | Block Production | Execute related runtime logic and generate the block. |  
-| 3. | Block Validation | Validate the incoming block and its PoC proof. |  
-| 4. | Difficulty Adjustment | Adjust difficulty to maintain the expired block time. |
-| 5. | Fork Choice | Choose best chain according to the rules. | 
-| 6. | pallet_skt_poc | Full implementation of Sukhavati PoC consensus. | 
-| 7. | Test | Unit test and test cases. | 
+| 1. | PoC Consensus Pallet | This pallet will implement the Sukhavati PoC Consensus engine including block production, block validation, difficulty adjustment and fork choice. |
+| 2. | Test | Unit test and test cases. | 
 
 
 ## Future Plans
