@@ -71,6 +71,8 @@ The **XP.network Handshake protocol** will roughly look like this:
 7. Once the above message is received by the initiating pallet it will check its integrity and will pass the result to its blockchain. It will then send the same message back to the counterpart to finish negotiation on the Topic_ID.
 8. IER stands for Initiator pallet error. This flag will be raised if there is a technical issue in the initiating pallet.
 
+![img](https://github.com/xp-network/w3f_application/blob/main/XP.network%20Protocol.png)
+
 Every parachain equipped with our pallet will know how to read such incoming messages. If the message is related to the blockchain this pallet is attached to, it will do the following:
 
 1. Transform the commands and arguments from the "intention" to a smart contract in the target language, used by the blockchain it works for.
