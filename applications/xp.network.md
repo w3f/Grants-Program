@@ -165,17 +165,15 @@ The smart contract templates are a temporary solution. Eventually we will add th
 
 
 ### Team Code Repos (PoC)
-[XP.network repo](https://github.com/xp-network/)
+[PoC Documentation](https://github.com/xp-network/poc-documentation) Method names, parameters with types, return types and description.
 
-[Move Compiler](https://github.com/xp-network/move-compiler)
+[Move Compiler](https://github.com/xp-network/move-compiler) Generates human readable code in Move.
 
-[Solidity Compiler](https://github.com/xp-network/solidity-compiler)
+[Solidity Compiler](https://github.com/xp-network/solidity-compiler) Generates human redable and byte code in Solidity.
 
-[EVM to Assembler](https://github.com/xp-network/evm-asm)
+[EVM to Assembler](https://github.com/xp-network/evm-asm) Converts Solidity bytecode to opcode.
 
-[VM Hub Pallet](https://github.com/xp-network/vm_hub_pallet)
-
-[XP Compiler](https://github.com/xp-network/xp-compiler)
+[XP Compiler](https://github.com/xp-network/xp-compiler) PoC project. Accepts a comand in Move, or JSON and compiles bytecode in Solidity, tests it in the bytecode in Ropsten (Ethereum testnet).
 
 
 ### Team LinkedIn Profiles
