@@ -165,7 +165,7 @@ The smart contract templates are a temporary solution. Eventually we will add th
 
 
 ### Team Code Repos (PoC)
-[PoC Documentation](https://github.com/xp-network/poc-documentation) Method names, parameters with types, return types and description.
+[PoC Documentation](https://xp-network.github.io/poc-documentation/) Method names, parameters with types, return types and description.
 
 [Move Compiler](https://github.com/xp-network/move-compiler) Generates human readable code in Move.
 
