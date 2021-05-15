@@ -1,156 +1,241 @@
 # W3F Open Grant Proposal
 
-> 🌏 This page is also available in [Chinese (中文)](./application-template-cn.md).
-> 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
-> 
-> See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/#pencil-process) on how to submit a proposal.
+* **Project Name:** Web3Games
+* **Team Name:** Web3Games
+* **Payment Address:** 0xEb5931a175b836f87F4DdEea8E9987076d8bf7CC
 
-* **Project Name:** Name of your project (e.g. DuoSwap Module)
-* **Team Name:** Legal name of your team (e.g. Duo)
-* **Payment Address:** BTC or Ethereum (DAI) payment address. We don't accept payments for the program in other currencies at this stage. (e.g. 123mp123...)
+## 1-Project Overview :page_facing_up: 
 
+### 1.1 Project Description
 
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+**🎮 Bridging gaming with NFT and DeFi**
 
-## Project Overview :page_facing_up: 
+We are building a new generation gaming ecosystem. By adopting blockchain technology, leveraging virtual gaming and NFTs, we offer solutions that build a unique network — from framework to tools — whereby users as ‘developers’ can curate their own integrated gaming experience.
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
+**The potential of NFT＋DeFi＋Gaming**
+* Expanded use of NFT with increased interactive functions
+* Converting of gaming assets into blockchain assets
+* Embedding DeFi elements into a gaming ecosystem
 
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+**What We Do**
 
-### Overview
+🎮 Blockchain Games
 
-Please provide the following:
-  * If the name of your project is not descriptive, a tag line (one sentence summary).
-  * A brief description of your project.
-  * An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-  * An indication of why your team is interested in creating this project.
+Metaverse blockchain games utilising existing NFTs
 
-### Project Details 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+⛓ Chain Development
 
-* Mockups/designs of any UI components
-* Data models / API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture, etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
-* What your project is _not_ or will _not_ provide or implement
-  * This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+Blockchain for gamers and collectors based on Substrate, providing NFT curation ability with cross-chain bridges.
+
+🛠 Toolkit/SDK
+
+Provide SDK & tools for developers, including digital asset standard libraries and different integrations
+
+🏪 Digital Asset Apps
+
+We build platforms to facilitate trading such as NFT AMM, NFT Marketplace, Auction Platform, etc.
+
+> Website  https://web3games.org/
+
+> Testnet https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsubstrate.org.cn%3A4443#/settings
+
+### 1.2 Project Background
+
+** Started from Polkadot Hackathon
+
+The Web3Games team is formed of blockchain engineers with a mission to build a new game ecosystem on Polkadot. The core team met during a Substrate course co-hosted by Parity and OneBlock+, and competed against 33 other teams at the Polkadot Hackathon Demo Day to receive the Developers’ Choice Award.
+
+### 1.3 Project Integrated
+
+SubGame is based on the Substrate 3.0 Framework. We built numbers of pallets with NFT and DeFi and deployed on our Web3Games Testnet. Besides the substrate-based network, we also provide frontend and backend game client intergration libraries for players to kickstart the blockchain gaming journey easier. For developers, we open source all our contract libraries. Through the Front EVM bridge, developers can also write contracts with Ink or Solidity and deploy to our network, bringing Web 3.0 cross chain features.
+
+### 1.4 Project Interest
+
+Our team is built from experienced blockchain and game developers. With highly tailor made features in Substrate, blockchain gaming can be implemented much easier and provide a better environment for players.
+
+### 1.5 Project Details 
+
+Web3Games includes Web3Games nodes, W3G-Integration Framework，W3G-Game Example.
+
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/web3grants-structure.png)
+
+- **Web3Game Testnet** Already live on Polkadot.js App. We deployed all our pallet and contracts on it for development and testing purposes.
+- **Pallet Library** Provide interfaces to other components.
+- **Game Contract Library** Provide contract template and protocol standard for blockchain gaming.
+- **Game Product** Developed with W3G-Integration Framework. For demo and tutoral purposes.
+- **W3G-Integration Framework** Provide boilerplate for blockchain game developers.
 
 ### Ecosystem Fit 
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+* Web3Games is built based on Substrate, aiming to become the collective blockchain for gaming and digital collectibles. For players, we provide more user-friendly blockchain games. For developers, we provide demo games for reference and development toolkit/SDK to lower the entry barrier of creating digital assets and provide blockchain servies. We would like to complete our roadmap and build the gaming ecosystem for the community in Web 3.0.
 
-* Where and how does your project fit into the ecosystem? 
-* Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-* What need(s) does your project meet? 
-* Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem? 
-  * If so, how is your project different?
-  * If not, are there similar projects in related ecosystems?
-
-## Team :busts_in_silhouette:
+## 2-Team :busts_in_silhouette:
 
 ### Team members
 * Name of team leader
-* Names of team members	
+Henry Liu
+* Names of team members
+Xueshan Wong
+Joan Ma
 
 ### Contact
-* **Contact Name:** Full name of the contact person in your team
-* **Contact Email:** Contact email (e.g. john@duo.com)
-* **Website:**
+* **Contact Name:** Xu Peng
+* **Contact Email:** xupeng@web3games.org
+* **Website:** https://web3games.org
 
 ### Legal Structure 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+* **Registered Address:** 306 Victoria House, Victoria, Mahe, Seychelles
+* **Registered Legal Entity:** Web3Games Limited
 
 ### Team's experience
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting code commits made by team members in past projects. For research-related grants, references to past publications and projects in a related domain are helpful. 
+**Henry Liu**
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+   -  Full-stack Developer   
+   -  Polkadot Technical Ambassador 
+   -  Has plenty of experience in Software Development and Blockchain Development   
+   -  Game Developer and Game Producer
+
+**Xueshan Wong**
+
+   -  Front-end Developer
+   -  Smart Contract Development Engineer
+   -  Has plenty of experience in Defi 
+   -  Currently focused on  Blockchain Development and Cross-chain Technologies 
 
 ### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+* https://github.com/web3gamesofficial
+* https://github.com/web3gamesofficial/web3games-blockchain
+* https://github.com/web3gamesofficial/SubGat-Game-Contract-Library
+* https://github.com/web3gamesofficial/SubGat-Game-Client-Template-Frame
+* https://github.com/web3gamesofficial/SubGat-Game-Real-Time-Server-Template-Frame
+* https://github.com/web3gamesofficial/SubGat-Game-Web-Template-Frame
+* https://github.com/web3gamesofficial/SubGat-Game-Web-Back-end-Server-Frame
+* https://github.com/web3gamesofficial/Deep-Sea-Hunter-Webgame-example1
+* https://github.com/web3gamesofficial/Web3-Games-Faucet-Web
+* https://github.com/web3gamesofficial/Web3-Games-Faucet-Server
+* https://github.com/web3gamesofficial/SubGat-Game-Web-Template-VUE
+* https://github.com/web3gamesofficial/SubGat-Game-WebServe-Template-Go
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* Henry Liu https://www.linkedin.com/in/henry-liu-80576a187/
+* Xueshan Wang https://www.linkedin.com/in/xueshan-wang-01a406208/
+* Joan Ma https://www.linkedin.com/in/joan-ma-1793b1208/
 
-## Development Status :open_book: 
+## 3 Development Roadmap 🔩
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+### 3.1 Overview
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/General-Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+- **Total Estimated Duration:** 1 month
 
-## Development Roadmap :nut_and_bolt: 
+- **Full-time equivalent (FTE):** 3
 
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
+  - **Total Costs:** 25000DAI
 
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that the scope of the work can fit within a three-month period and that teams structure their roadmap as 1 milestone ≈ 1 month. 
+### Milestone 1 — Web3Games Testnet (Provide foundation modules)
 
-For each milestone,
+  - **Estimated Duration:** 1 month
+  - **FTE:** 1.5
+  - **Costs:** 5000DAI
 
-* make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we have created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* include the amount of funding requested _per milestone_.
-* include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-* provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-* commit to providing Dockerfiles for the delivery of your project. 
-* indicate milestone duration as well as number of full-time employees working on each milestone, and include the approximate number of days along with the cost per day.
-* _Deliverables 0a-0d are mandatory_ and shall not be removed, unless you explicitly specify a reason within the PR's `Additional Notes` section (e.g. Milestone X is research oriented and as such there is no code to test).
+| Number | Deliverable   | Specification                                                |
+| ------ | ------------- | ------------------------------------------------------------ |
+| 0.a    | License       | GPL3/Apache2                                                 |
+| 0.b    | Documentation | Documents containing the description of whole architecture design for Web3Games |
+| 1      | Node          | Build initial node on Substrate 3.0 framework, customize key files and  release testnet |
+| 2      | Token Pallet  | Support single or batch creation, transfer, minting, burning of FT and NFTs. |
+| 3      | Swap Pallet   | Support swapping of multiple currencies into FTs, NFTs into FTs and NFTs into other currencies |
+| 4      | Uint Test     | The live mainnet will cover all complete module function and performance tests |
+| 5      | Front-End     | Build interface for Token and Swap                           |
 
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
+### Milestone 2 — Web3Games  SDK (Middleware for developers and users)
 
-### Overview
-* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-Time Equivalent (FTE):**  Required workload of a full-time employee for the whole project (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent)) (e.g. 2 FTE)
-* **Total Costs:** Amount of payment in USD for the whole project. The total amount of funding _needs to be below $30k for initial grants_ and $100k for follow-up grants. (e.g. 12,000 USD)
+  - **Estimated Duration:** 1 month
+  - **FTE:** 1.5
 
-### Milestone 1 Example — Implement Substrate Modules 
-* **Estimated Duration:** 1 month
-* **FTE:**  2
-* **Costs:** 8,000 USD
+    - **Costs:** 5000DAI
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 0d. | Article/Tutorial | We will publish an article/tutorial/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be coded for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain |
+    | Number | Deliverable   | Language/Framework           | Specification                                                |
+    | ------ | ------------- | ---------------------------- | ------------------------------------------------------------ |
+    | 0.a    | License       | Text                         | MIT license                                                  |
+    | 0.b    | Documentation | Text                         | Web3games SDK overall concept description                    |
+    | 1      | Faucet        | NextJs/TypeScript            | Acquire Web3Games testnet tokens                             |
+    | 4      | GameExample   | Cocos/TypeScript             | Provide basic blockchain game for demo purposes              |
+    | 5      | Library       | NextJs/TypeScript            | Provide information for quick access to Web3Games technical know-how |
+    | 6      | SubGat        | React/Rust/NodeJs/TypeScript | Scaffolding for building blockchain games                    |
+    | 7      | Back-End      | Golang                       | For supporting front-end data interactions and sources       |
+
+  ### Milestone 3 — Web3Games Live Network (Addition of DeFi modules)
+
+  - **Estimated Duration:** 2 month
+
+    - **FTE:** 2.5
+    - **Costs:** 15000DAI
+
+| Number | Deliverable    | Specification                                                |
+| ------ | -------------- | ------------------------------------------------------------ |
+| 1      | Staking Pallet | For FT and NFTs to be used as collateral                     |
+| 2      | Auction Pallet | For open and private auctions                                |
+| 3      | Lend Pallet    | For lending of FT and NFTs                                   |
+| 4      | Node           | Build main network node and launch public network            |
+| 5      | Uint Test      | Test packing and collection function                         |
+| 6      | Front-End      | Realize front-end for Staking, Auction, Lending              |
+| 7      | Docker         | We will provide a dockerfile to demonstrate the full functionality of our chain and front end |
+
+## 4-Future Plans
+
+### Marketing and Community Plans
+
+Twitter https://twitter.com/web3games
+Latest project developments and news will be available on our Twitter.
+
+Medium https://medium.com/web3games
+In the meantime, we will be sharing our insights on NFTs and blockchain advancements in gaming. We are also writing tutorials that teach users to use our contract libraries and components to create tokens and build games.
+
+WeChat & Telegram
+After launching our first demo game, there will be game token / NFT airdrops for community members in our official WeChat and Telegram groups.
+
+**Future Plans**
+* Incentivize gaming economy growth by giving players permanent asset ownership on blockchain
+* Drive mainstream adoption for GameFi – DeFi elements and utilities for digital gaming assets
+* Develop two demo games, Crypto Empire and Constellation
+* Increase crypto user interest and awareness about our NFTs and projects
+* Provide open-source project source code for everyone to learn and share together
+
+**Demo Games**
+
+**CryptoEmpire**
+
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/cryptoempire-logo-web3-grant.png)
+
+Battle your opponents using strategic card combinations to build your crypto empire. With access to multiple gaming worldviews, players can alternate between their assets on different networks without relying on a centralized developer, and take full ownership of all aspects of gameplay. A trading card game uniting NFTs, DeFi, soon to be available on Ethereum, NEAR, BSC, and Solana. The dApp will be released in 2021 Q2 and the game client in 2021 Q3-Q4.
+
+**Constellation**
+
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/constellation-logo-web3-grant.png)
+
+Curate your own spacecraft using digital assets, NFTs, and collectibles from your wallet address. A proud owner of CryptoKitties? Invite your pet to join your mission to explore the galaxy! Have a unique OG CryptoPunk? Use your character as your avatar image! Astronauts of Constellation can also explore neighboring stars and visit other spaceships. Inspired by Nintendo's "Animal Crossing".
 
 
-### Milestone 2 Example — Additional features
+### 4.2 Development Plans
 
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 4,000 USD
-
-...
-
-
-## Future Plans
-
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+- Stage 1
+  - Blockchain Game Launch【The first commercial-grade example game By Web3Games 】
+  - Digital Asset Application Development (AMM, Marketplace, Auction) Launch 【Complete product front-end development】 
+- Stage 2
+  - Blockchain Game SDK 【The necessary middleware for blockchain games】
+- Stage 3
+  - Web3Games Mainnet 【Live network】
+- Stage 4
+  - Cross-chain Integration 【Via a backward compatibility bridge such as Ethereum】
 
 
 ## Additional Information :heavy_plus_sign: 
 
-Any additional information that you think is relevant to this application that hasn't already been included.
+  - **Are there are any teams who have already contributed (financially) to the project?** No
 
-Possible additional information to include:
+  - **Have you applied for other grants so far?** No
 
-* Are there are any teams who have already contributed (financially) to your project?
-* Do you have a community of users or open-source developers who are contributing to your project?
+  - **Unlike SubGame, we provide the necessary framework and tools for developers to curate their own gaming experience with embedded DeFi elements**
+
+    
+
