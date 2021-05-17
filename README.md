@@ -50,7 +50,7 @@ Generally, your project will have better chances to get accepted if:
 
 Additionally, it must fulfill the following requirements:
 
-- All code produced as part of a grant must be **open-sourced**, and it must also not rely on closed-source software for full funcionality. We prefer Apache 2.0, but GPLv3, MIT or Unlicense are also acceptable.
+- All code produced as part of a grant must be **open-sourced**, and it must also not rely on closed-source software for full functionality. We prefer Apache 2.0, but GPLv3, MIT or Unlicense are also acceptable.
 - We do not award grants for projects that have been the object of a successful token sale.
 - Lastly, we do not fund projects that actively encourage gambling, illicit trade, money laundering or criminal activities in general.
 
