@@ -78,7 +78,9 @@ When there is a potential new best chain, the node checks the following rules in
 
 ### Ecosystem Fit 
 
-As far as we know, there are no other teams working on a PoC module for the Substrate framework that is compatible with existing PoC algorithms, nor are we aware of a project that can make use of the idle resources of existing mining devices. We hope that by providing this module, some connection can be established between the substrate ecosystem and the PoC (or PoS, Proof of Space) ecosystem, bringing more options and resources to Web3.0 builders.
+The PoS/PoC consensus mechanism is starting to attract more attention with the rise of Chia. We notice that there are some other teams who are also building PoS/PoC consensus module for substrate, such as Subspace. The main difference between our protocols is that we are not trying to create a new PoC algorithm from scratch. What we want to do is to compatibly reuse the existing PoS/PoC consensus powers to form our own consensus layer and promote our blockchain to these miners, so that we can utilize their idle resources.
+
+In this proposal, we hope to make this capability of reusing PoS/PoC consensus power available as a substrate pallet. We believe some connection can be established between the substrate ecosystem and the PoS/PoC ecosystem, bringing more options and resources to Web3.0 builders.
 
 After establishing the underlying infrastructure, we hope to serve the Polkadot ecosystem as a parachain or parathread and provide a data access gateway for all Web3.0 DApps.
 
