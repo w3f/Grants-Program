@@ -136,7 +136,6 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 0d. | Article/Tutorial | We will publish an article/tutorial that explains how to build and run the substrate based project containing the nft-wallet-pallet.
 | 1. | nft-wallet-pallet | We will create a Substrate module that will allow an NFT to be (consumed, listed on market, traded, purchased on market). pallet methods are listed in the diagram above. |  
 | 2. | Substrate Test Chain | users can interact with the nft-wallet-pallet module through a simple substrate barebones setup.  | 
 
@@ -152,7 +151,6 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 0d. | Article/Tutorial | We will publish an article/tutorial that explains how to build and run the react-native mobile application locally.
 | 1. | build app structure | We will have the core structure of the application in place. |  
 | 2. | implement wallet creation view | This will be the landing screen of the app where users can create or restore their NFT Collectibles Wallet.  | 
 | 3. | implement the collectibles view | This view is where users can see a list of all their collectibles. |
@@ -172,7 +170,7 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 0d. | Article/Tutorial | We will publish an article/tutorial that explains how to build and run the admin frontend, also how to use the SDK.
+| 0d. | Article/Tutorial | We will publish an article/tutorial for non-technical users that explains what the NFT Collectibles wallet is and how to use it.
 | 1. | react frontend | This frontend will provide a UI for all the CRUD methods needed for managing NFTs. Users should be able to mint collections, mint NFTs and change issuers. |  
 | 2. | Connect to IPFS | All metadata entered for minting collections and NFTs should be stored on IPFS.  |  
 | 3. | Connect to substrate with Polkadot.js | Users should easily be able to connect the Admin frontend using polkadot.js.  | 
