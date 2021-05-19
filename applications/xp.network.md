@@ -12,17 +12,25 @@ XP.network is a codeless platform for building blockchain agnostic NFT DApps. XP
 
 In order to synchronize communication between different [parachains](https://research.web3.foundation/en/latest/polkadot/XCMP/index.html) we want to build our own protocol which will be used by a network of XP.network pallets, that can be attached to and be used by any parachain.
 
-Since, using the current XCMP protocol, it is hard to trace whether an incoming message is related to any previous transaction or request, we will elaborate a protocol that will enable such tracking by the "TopicId", which is especially useful when multiple transactions(TXs) are executed between two blockchains (Lx, Ly). Besides, when a message is sent from one parachain to another the initiating parachain is not kept updated about the progress of a transaction, while our protocol will take care of that. The XP.network Relay Chain protocol will be supported by a group of pallets, each acting like a “post office” in a post office network.
+The XP.network protocol allows parachains to communicate in a connectionless but ordered and reliable way. The protocol allows to store the State of a negotiated transaction (TX) and enables the functionality required to inform the User or the original parachain accordingly.
+
+At the moment, XCMP is a work in progress and SPREE only exists in documentation and will only be developed after the parachains become available. With all the advantages of the two above mentioned protocols, neither of them offers the precision XP.network Protocol does.
+
+1. Our protocol allows parachains to mark and store the current state of every transaction in a blob with a unique TopicID. Even though the future implementations of XCMP will allow to create channels between two parachains, TopicIDs will still be useful when multiple transactions are being executed between two parachains simultaneously. Another XCMP feature - ordered delivery - does not provide the same precision as the TopicID does. The TopicID does not rely on the order of messages. It relies on the unique identifier which is the safest pointer. 
+
+2. Once the state of a transaction changes or an error occurs, the requesting parachain gets notified. Some of such messages help keep the end user properly informed about the state of events with his/her transaction, others inform the pallets that the transaction has terminated and the memory must be freed from the blob, which might be expensive to store, especially when it is no longer needed. 
+
+3. Another feature uses the fact that a pallet, implementing our protocol, is a part of its parent parachain. Therefore, it has no additional overhead in tracking whether the transaction succeeded or failed. It listens to events related to the transaction and notifies the requesting parachian of the result and provides the data of the outcome when it becomes available without being additionally requested about this information. 
 
 #### Integration
 
-Any parachain, parathread or bridge can attach our pallet and use its functionality. The pallets will act as a “post office network” supporting the protocol that enables nodes to keep track of the “TopicIds”. Each "TopicId" represents one negotiated transaction (TX) between two parachains (Lx, Ly).
+Any parachain, parathread or bridge can attach our pallet and use its functionality. The pallets will act as a “post office network” supporting the protocol that enables nodes to keep track of the “TopicIDs”. Each "TopicID" represents one negotiated transaction (TX) between two parachains (Lx, Ly).
 
 ### Project Details
 
 The project is comprised of 2 interdependent deliverables:
 
-1. The XP.network Relay Chain Protocol, which will enable parachains to communicate kepping track of the current state of every transaction.
+1. The XP.network Relay Chain Protocol, which will enable parachains to communicate keeping track of the current state of every transaction.
 
 2. A Substrate Pallet implementing the XP.network Relay Chain protocol.
 
@@ -38,7 +46,14 @@ Payload:            blob              // A binary representation of the "intenti
 
 The runtime [storage](https://substrate.dev/rustdocs/v3.0.0/frame_support/storage/trait.StorageValue.html#required-methods) & the message inside the binary payload will be structured as follows:
 
-![img](https://github.com/xp-network/w3f_application/blob/main/xp.network%20blob.png)
+![img](https://github.com/xp-network/w3f_application/blob/main/xp.network_blob.png)
+
+Even the complete message adds only 64 additional bits to the original TX binary code. 16 bits for the TopicID, 16 bits for the flags and 32 bits for the length of the TX binary. In order to reduce the overhead:
+1. When notifying about errors or about submission of the TX bytecode for execution, only the first 32 bits are attached to the message: 16 bits of the TopicID and 16 bits for flags. They will be used to update the blob, where the state of a TX is stored during the number of seconds when a TX is executed in a target parachain. The extrinsics bytecode is not moved when it is not required.
+2. Should, sometime in the future, even such tiny notifications create a noticeable overhead, we will: </br>
+	a. join them into batches to reduce the number of messages  </br>
+	b. remove the AKN notification, which is required till SPREE becomes available to confirm that the message has been received with the same TX bytecode as the sender's.
+
 
 The **XP.network Decision Tree**, regulating the efficiency of the data flow between the two pallets, will roughly look like this:
 
@@ -48,12 +63,12 @@ The above scheme is a work in progress and subject to change.
 
 Apart from standard setup, a pallet implementing XP.network Relay Chain Protocol consists of:
 
-1. **Message Listener** - it listens to the incomming messages and passes them to the Decision Tree.
+1. **Message Listener** - it listens to the incoming messages and passes them to the Decision Tree.
 2. **Message Deserialiser** - it reads the contents of the binary file and populates the fields of the Message struct.
 3. **Message Serialiser** - it packs the values of the Message struct into a binary representation.
 4. **Message Sender** - it uses the Relay Chain callback mechanism to communicate with the other parachains and parathreads using XP Network protocol.
-5. **Runtime Storage** - it stores the binaries with the current state of the corresponding transaction. Each blob can be accessed like so: ```sender[TopicId]```.
-6. **Decsision Tree** - it controlls the eficiency of the data flow between the pallets.
+5. **Runtime Storage** - it stores the binaries with the current state of the corresponding transaction. Each blob can be accessed like so: ```sender[TopicID]```.
+6. **Decision Tree** - it controls the efficiency of the data flow between the pallets.
 
 #### The XP.network Relay Chain protocol is not:
 
@@ -80,13 +95,13 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 
 - **Contact Name:** Dmitry Briukhanov
 
-- **Contact Email:** dima@xp.network.com
+- **Contact Email:** dima@xp.network
 
 - [XP.network website](https://xp.network/)
 
 ### Legal Structure
 
-- **Registered Address:** HaHAgana, 15, Or Yehuda, Israel
+- **Registered Address:** HaHagana, 15, Or Yehuda, Israel
 - **Registered Legal Entity:** XP Network
 
 ### Team Experience
@@ -122,7 +137,7 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 - **Total Effort:** 120 days.
 - **Total Costs:** $ 30,000
 
-### Milestone 1 - VM Hub pallet Move bytecode to Solidity bytecode (pre-MVP)
+### Milestone 1 - Rust Substrate pallet (pre-MVP)
 
 - **Estimated Duration:** 20 working days (1 month)
 - Working days **x** ppl. **:** 20 **x** 2
@@ -134,12 +149,13 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 | 0a. | License | Apache 2.0 |
 | 0b. | Delivery time | Mid June |
 | 0c. | Documentation | Documents containing product architecture as well as basic user manuals  |
+| 0d. | PSP | Drafting, Calling for feedback, Acceptance, Integration  |
 | 1. | XP.network Protocol | XP.network protocol is developed and documented in textual descriptions and UML diagrams |
-| 2. | Message serialiser | The binary Message serialiser is built |
-| 3. | Message deserialiser | The binary Message deserialiser is built |
+| 2. | Message serializer | The binary Message serializer is built |
+| 3. | Message deserializer | The binary Message deserializer is built |
 | 4. | Runtime Storage integration | Implementing the message blob CRUD functionality in the runtime storage |
 
-### Milestone 2 — VM Hub pallet Solidity Code to Move bytecode (MVP)
+### Milestone 2 — Sender, Litenter and the Decision tree (MVP)
 
 - **Estimated Duration:** 20 working days (1 month)
 - Working days **x** ppl. **:** 20 **x** 2
@@ -151,12 +167,13 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 | 0a. | License | Apache 2.0 |
 | 0b. | Delivery time | Mid July |
 | 0c. | Documentation | Documents containing product architecture as well as basic user manuals  |
+| 0d. | PSP | Drafting, Calling for feedback, Acceptance, Integration  |
 | 1. | Message Listener | We will develop a module listening to the messages from the Relay Chain XCMP |
 | 2. | Message Sender | We will develop a module sending the messages via the Relay Chain XCMP |
 | 3. | Decision Tree | We will develop the efficient data flow controllers |
 | 4. | Relay Cain Integration | We will establish communication between two pallets implementing the XP.network Relay Chain protocol via the Westend Relay Chain |
 
-### Milestone 3 — VM Hub pallet Move Code & Solidity bytecode to Rust bytecode
+### Milestone 3 — Documentation & Release
 
 - **Estimated Duration:** 20 working days (1 month)
 - Working days **x** ppl. **:** 20 **x** 2
@@ -168,6 +185,7 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 | 0a. | License | Apache 2.0 |
 | 0b. | Delivery time | Mid August |
 | 0c. | Documentation | Documents containing product architecture as well as basic user manuals  |
+| 0d. | PSP | Drafting, Calling for feedback, Acceptance, Integration  |
 | 1. | Compliance Validator | Developing automated tests for the XP.network protocol interactions between pallets with min 85% code coverage |
 | 2. | Documentation | Writing the final documentation with all the amendments 1. XP.Network protocol, 2. XP.network pallets - textual & UML|
 | 3. | Tutorials | Preparing tutorials with examples 1. How to use XP.network Protocol, 2. How to attach an XP.Network pallet to a parachain | 
@@ -185,8 +203,9 @@ Publishing articles in Telegram, medium.com and other channels
 
 **Development Plan**
 
-The XP.network Relay Chain Protocol is a work in progress. Once version 1.0.0 is implemented, we're planning to keep improving the protocol, eliminating yet undiscovered bugs and adding more functionality and flexibility.
+When the new version of XCMP is developed we will migrate our protocol there. Once SPREE becomes available we will move our protocol there, since it will provide more security in its own storage, that a parachain cannot forge or alter.
 
 ## Additional Information 
 
 [The project repo:](https://github.com/xp-network)
+
