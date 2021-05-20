@@ -109,16 +109,12 @@ We have planned a preliminary wireframe (https://956dkl.axshare.com), let us use
   * Blockchain Developer
   * Backend Developer
   * Database Administrator
-  
-### Team Code Repos
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
 
 ## Development Roadmap :nut_and_bolt: 
 ### Overview
-* **Total Estimated Duration:**  months
-* **Full-Time Equivalent (FTE):** 8
-* **Total Costs:** 
+* **Total Estimated Duration:**  2 months
+* **Full-Time Equivalent (FTE):** 8 FTE
+* **Total Costs:** 25,000 USD
 
 ### Milestone 1  — Implement Substrate Modules & application
 * **Estimated Duration:** 2 months
@@ -128,11 +124,11 @@ We have planned a preliminary wireframe (https://956dkl.axshare.com), let us use
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0.|
-| 0b. | Documentation | The file contains the relevant specifications and design of Maslow Life Network.|
+| 0b. | Documentation | User interface design mockup / User guidelines / Pallet usage guidelines / Software Build guidelines / Test methods guidelines |
 | 1. | Foundation | Fork the substrate framework and analyze how to use it on the Github.|
 | 2. | Para-chain | Build the Maslow Life Network needed for subsequent development based on the substrate framework, Then write instructions and provide them on Github.|
 | 3. | Personal information pallet | Build a Personal information pallet based on the Substrate framework,includes Wallet address/ Last name/ First Name/ Nickname/ Birthday/ Country / Birthplace/ Gender/ Avatar.|
-|  | **function：** |`pub fn sign_up(origin, info: User)->dispatch::DispatchResult`<br><br>`pub fn sign_in(origin)->dispatch::DispatchResult`<br><br>`pub fn update_user(origin, info: User)->dispatch::DispatchResult`|
+|  | **function：** |`pub fn sign_up(origin, info: User)->dispatch::DispatchResult`<br><br>`pub fn update_user(origin, info: User)->dispatch::DispatchResult`|
 |  | **storage：** |`Users get(fn get_use<br>r_info): map hasher(blake2_128_concat) u32=> Vec<User>`|
 | 4. | Friendship pallet | Build a Friend pallet based on the Substrate framework, includes Submit/ Relationship/ Unrelationship/ Agree/ Unagree/ Timestamp/ Limit.|
 |  | **function：** |`pub fn submit_relationship_approve(origin, user_id: u32)->dispatch::DispatchResult`：<br><br>`pub fn relationship_approve_review(origin, relationship_id: u32, approve: u8)->dispatch::DispatchResult`<br><br>`pub fn set_relationship_limit(origin, limit: u32)->dispatch::DispatchResult`|
