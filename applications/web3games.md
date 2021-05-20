@@ -38,16 +38,20 @@ We build platforms to facilitate trading such as NFT AMM, NFT Marketplace, Aucti
 > Website  https://web3games.org/
 
 > Testnet https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fsubstrate.org.cn%3A4443#/settings
+>
+> YOUTUBE https://www.youtube.com/watch?v=3PIXF1Sa5L0 【important !】
+>
+> OR Google drive https://drive.google.com/file/d/167bwKm7SyP95FR5SMhNZGQ-R5Tv39NTZ/view?usp=sharing
 
 ### 1.2 Project Background
 
-** Started from Polkadot Hackathon
+##### Started from Polkadot Hackathon
 
 The Web3Games team is formed of blockchain engineers with a mission to build a new game ecosystem on Polkadot. The core team met during a Substrate course co-hosted by Parity and OneBlock+, and competed against 33 other teams at the Polkadot Hackathon Demo Day to receive the Developers’ Choice Award.
 
 ### 1.3 Project Integrated
 
-SubGame is based on the Substrate 3.0 Framework. We built numbers of pallets with NFT and DeFi and deployed on our Web3Games Testnet. Besides the substrate-based network, we also provide frontend and backend game client intergration libraries for players to kickstart the blockchain gaming journey easier. For developers, we open source all our contract libraries. Through the Front EVM bridge, developers can also write contracts with Ink or Solidity and deploy to our network, bringing Web 3.0 cross chain features.
+Web3Games is based on the Substrate 3.0 Framework. We built numbers of pallets with NFT and DeFi and deployed on our Web3Games Testnet. Besides the substrate-based network, we also provide frontend and backend game client intergration libraries for players to kickstart the blockchain gaming journey easier. For developers, we open source all our contract libraries. Through the Front EVM bridge, developers can also write contracts with Ink or Solidity and deploy to our network, bringing Web 3.0 cross chain features.
 
 ### 1.4 Project Interest
 
@@ -55,23 +59,67 @@ Our team is built from experienced blockchain and game developers. With highly t
 
 ### 1.5 Project Details 
 
-Web3Games includes Web3Games nodes, W3G-Integration Framework，W3G-Game Example.
+Web3Games includes Web3Games Chian,Web3Games SDK.
 
-![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/web3grants-structure.png)
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/project-diagram.png)
 
-- **Web3Game Testnet** Already live on Polkadot.js App. We deployed all our pallet and contracts on it for development and testing purposes.
-- **Pallet Library** Provide interfaces to other components.
-- **Game Contract Library** Provide contract template and protocol standard for blockchain gaming.
-- **Game Product** Developed with W3G-Integration Framework. For demo and tutoral purposes.
-- **W3G-Integration Framework** Provide boilerplate for blockchain game developers.
+- **Web3Game Chain** Already live on Polkadot.js App. We deployed all our pallet and contracts on it for development and testing purposes.
+- **Game Product** Developed with Web3Games SDK. For demo and tutoral purposes.
+- **Web3Game SDK** Help developers quickly develop blockchain games.
 
 ### Ecosystem Fit 
 
 * Web3Games is built based on Substrate, aiming to become the collective blockchain for gaming and digital collectibles. For players, we provide more user-friendly blockchain games. For developers, we provide demo games for reference and development toolkit/SDK to lower the entry barrier of creating digital assets and provide blockchain servies. We would like to complete our roadmap and build the gaming ecosystem for the community in Web 3.0.
 
-## 2-Team :busts_in_silhouette:
+### Content Detail
+
+##### Different from other projects【Pallet】
+
+##### Project Advantages (Already Achieved)
+
+The Web3Games GameSwap is designed precisely for gaming assets, and the Swap function module can be implemented right after unboxing. GamesSwap currently supports FT and NFT exchange, namely in-game content and assets, on-chain FT or NFTs. It can act as a DeFi tool to enable efficient circulation of gaming assets, for instance, by establishing a liquidity pool or liquidity providers for value mapping within the Web3Games ecosystem. By opening up the game economy to GameSwap, players will automatically deposit liquidity into the ecosystem and help maintain its stability. 
+
+1. Safer assets - conventional projects store players’ assets by deploying smart contracts, but once rollback occurs caused by contract problems on Substrate or other chains, such as contract attacks, logic programming issues, insufficient gas, abnormal network connection, Web3Games’ smart contract library and through chain extension lets the contract directly apply on-chain pallets to store assets on the chain. GameSwap is not affected by common contract problems, as it uses players’ assets on the chain for transactions to solve atomic swaps. Web3Games has also developed a mobile liquidity pool for users who need to swap their assets to deposit without incurring contract rollback, thereby ensuring transaction consistency and security. 
+
+   
+
+2. Lower transaction fees (higher performance from faster reading time)As mentioned, Web3Games contracts use on-chain pallets to store assets on the chain itself, so that during I/O contracts do not need to relay information back through the Contract Pallet. Reducing this step improves operational efficiency, and is equivalent to using weight rather than increasing gas. The more complicated the contract and in high frequency trading, the greater the reduced fees. This is a strong advantage of Swap, which enables the exchange economy within Web3Games and is a feature of the ecosystem’s blockchain games. 
+
+   
+
+3. Multicurrency support Inspired by other projects, GameSwap realized a multi-currency exchange function where game devs can establish value mapping between their game token and the Web3Games ecosystem. At the same time, the game token can also be value mapped with other ecosystems like Polkadot, allowing players to easily exchange their assets for other tokens. 
+
+   
+
+4. Cross-Chain GameSwap (To Be Achieved)Web3Games is equipped with a compatible bridge, currently the EVM for contract development, in a way similar to layer 2 networking. In the near future, transfer codes will be solved by using Solidity contracts to manipulate pallets on Substrate. Through Substrate’s intervention on the parachain, the XCMP can be used to complete cross-chain capabilities by developing different compatible transcoding. (Transcoding refers to converting to WASM or IR compiling to WAS M)
+
+   
+
+Token palletDifference from ERC20, 721, 1155, 1808 and other similar protocolsWeb3Games has its own complete token interface to facilitate most protocol implementation requirements without needing to deploy the same contract code on the chain, by adjusting parameters and avoiding misusing storage space on the chain. To meet the need for customization, we have opened up the contract library for niche implementations and experimental projects. The token pallet has already realized most of the interfaces as an open source for developers and users. 
+
+1. Higher performance (initially executed with pallet Wasmtime, now contracts are using wasmi)We developed the layer 2 network through chain expansion and the contract library. The pallets allow contracts to be deployed using expansion codes so that developers do not need to code themselves.
+2. Convenient integrated contractsIn our Token Pallet and Swap there is an instance code, which allows each game to deploy just one token contract to manage all FT and NFTs used in the game. The code is unique and only the person who deployed it can exercise authority. 
+
+
+
+The Web3Games SDK includes all development files, project documents, tools, and libraries. Anything related to development of the ecosystem or the chain including tutorials and faucets can be found there. The core component SubGat, a blockchain game development framework is also within, which helps integrate login systems, registration of wallets, content creation, and backend portal support. It is used for I/O logic, chain link processing, authorization and different game editors to quickly interact with the chain. Configuration paths, layout mode, and other integration details are bundled. There is also a game server template, which specifies the management logic for the backend portal, data calculations, and log records. Finally, the Web3Games contract library and game examples are also part of the SDK. Unlike other similar projects, the Web3Games SDK is meant to be a full kit for building blockchain games. 
+
+
+
+Attach some pictures
+
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/Web3Games-chain.png)
+
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/dex.png)
+
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/Faucet.png)
+
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/demo-game-1.png)
+
+![](https://web3games-public.oss-ap-northeast-1.aliyuncs.com/pallet.png)
 
 ### Team members
+
 * Name of team leader
 Henry Liu
 * Names of team members
@@ -103,18 +151,23 @@ Joan Ma
    -  Currently focused on  Blockchain Development and Cross-chain Technologies 
 
 ### Team Code Repos
-* https://github.com/web3gamesofficial
+
+https://github.com/web3gamesofficial
+
+#### Web3Games Chain
+
 * https://github.com/web3gamesofficial/web3games-blockchain
-* https://github.com/web3gamesofficial/SubGat-Game-Contract-Library
-* https://github.com/web3gamesofficial/SubGat-Game-Client-Template-Frame
-* https://github.com/web3gamesofficial/SubGat-Game-Real-Time-Server-Template-Frame
-* https://github.com/web3gamesofficial/SubGat-Game-Web-Template-Frame
-* https://github.com/web3gamesofficial/SubGat-Game-Web-Back-end-Server-Frame
-* https://github.com/web3gamesofficial/Deep-Sea-Hunter-Webgame-example1
-* https://github.com/web3gamesofficial/Web3-Games-Faucet-Web
-* https://github.com/web3gamesofficial/Web3-Games-Faucet-Server
-* https://github.com/web3gamesofficial/SubGat-Game-Web-Template-VUE
-* https://github.com/web3gamesofficial/SubGat-Game-WebServe-Template-Go
+
+#### Web3Games SDK
+
+* https://github.com/web3gamesofficial/web3games-contract-library
+* https://github.com/web3gamesofficial/web3games-web-template-react
+* https://github.com/web3gamesofficial/web3games-web-server-template-rust
+* https://github.com/web3gamesofficial/web3games-game-client-template
+* https://github.com/web3gamesofficial/web3games-game-sever-template
+* https://github.com/web3gamesofficial/web3games-game-example-1
+* https://github.com/web3gamesofficial/web3games-faucet
+* https://github.com/web3gamesofficial/web3games-faucet-server
 
 ### Team LinkedIn Profiles
 * Henry Liu https://www.linkedin.com/in/henry-liu-80576a187/
@@ -131,7 +184,7 @@ Joan Ma
 
   - **Total Costs:** 25000DAI
 
-### Milestone 1 — Web3Games Testnet (Provide foundation modules)
+### 2021 Q2 Milestone 1 — Web3Games Testnet (Provide foundation modules)
 
   - **Estimated Duration:** 1 month
   - **FTE:** 1.5
@@ -139,46 +192,43 @@ Joan Ma
 
 | Number | Deliverable   | Specification                                                |
 | ------ | ------------- | ------------------------------------------------------------ |
-| 0.a    | License       | GPL3/Apache2                                                 |
-| 0.b    | Documentation | Documents containing the description of whole architecture design for Web3Games |
-| 1      | Node          | Build initial node on Substrate 3.0 framework, customize key files and  release testnet |
-| 2      | Token Pallet  | Support single or batch creation, transfer, minting, burning of FT and NFTs. |
-| 3      | Swap Pallet   | Support swapping of multiple currencies into FTs, NFTs into FTs and NFTs into other currencies |
-| 4      | Uint Test     | The live mainnet will cover all complete module function and performance tests |
-| 5      | Front-End     | Build interface for Token and Swap                           |
+| 0.a    | License       | MIT                                                          |
+| 0.b    | Documentation | Provide documents containing the description of whole architecture design for Web3Games |
+| 2      | Token Pallet  | Provide a token generation module through which developers and users can generate FT or NFTs assets, and whether it is a module or a contract, the asset data under this module can be directly called |
+| 3      | Swap Pallet   | A module that provides token exchange functions. Users or developers can exchange FT-type NFTs-type assets through this module. This module and Token are highly closely related. At the same time, this module supports multi-currency exchange FT, and NFTs also supports FT. Exchange NFTs back to other multi-currency such as DOT, KSM, etc. |
+| 4      | Uint Test     | Provide unit tests for the current development modules, including functional tests, stress performance tests, and issue test results |
+| 5      | Front-End     | Provide front-end product pages corresponding to Token and Swap modules to facilitate developers and users to quickly use these functions |
 
-### Milestone 2 — Web3Games  SDK (Middleware for developers and users)
+### 2021 Q3 Milestone 2 — Web3Games  SDK (Middleware for developers and users)
 
   - **Estimated Duration:** 1 month
   - **FTE:** 1.5
 
     - **Costs:** 5000DAI
 
-    | Number | Deliverable   | Language/Framework           | Specification                                                |
-    | ------ | ------------- | ---------------------------- | ------------------------------------------------------------ |
-    | 0.a    | License       | Text                         | MIT license                                                  |
-    | 0.b    | Documentation | Text                         | Web3games SDK overall concept description                    |
-    | 1      | Faucet        | NextJs/TypeScript            | Acquire Web3Games testnet tokens                             |
-    | 4      | GameExample   | Cocos/TypeScript             | Provide basic blockchain game for demo purposes              |
-    | 5      | Library       | NextJs/TypeScript            | Provide information for quick access to Web3Games technical know-how |
-    | 6      | SubGat        | React/Rust/NodeJs/TypeScript | Scaffolding for building blockchain games                    |
-    | 7      | Back-End      | Golang                       | For supporting front-end data interactions and sources       |
+    | Number | Deliverable        | Language/Framework           | Specification                                                |
+    | ------ | ------------------ | ---------------------------- | ------------------------------------------------------------ |
+    | 0.a    | License            | Text                         | MIT                                                          |
+    | 0.b    | Documentation      | Text                         | Provide Web3Games SDK overall concept description            |
+    | 1      | Faucet             | NextJs/TypeScript            | Provide testnet faucets for developers and users to obtain testnet tokens for development testing and basic transfer functions through the front-end page of the faucet, and develop corresponding back-end service applications to provide basic data support and interfaces |
+    | 4      | GameExample        | Cocos/TypeScript             | Provide complete, simple, easy and quick game cases, and disassemble the game process to write corresponding notes at each step of the operation, for developers to quickly get started and write their own blockchain games |
+    | 5      | Contract Library   | NextJs/TypeScript            | Provides a game contract standard library for developers to customize their own game contracts. The contract library contains different types of contract examples, such as the implementation of simple ECR1155 in Substrate, and Web3Games’s self-developed game contract standards and those that can interact with modules on the chain. Game contract standards. |
+    | 6      | Template framework | React/Rust/NodeJs/TypeScript | Provide a framework for developing blockchain game projects, for games or ordinary developers can use this framework to quickly develop blockchain games in a short period of time, including 1-game website front-end template, 2-game website back-end service support , 3-blockchain game client template, 4-blockchain game real-time server template |
 
-  ### Milestone 3 — Web3Games Live Network (Addition of DeFi modules)
+  ### 2021 Q4 Milestone 3 — Web3Games Live Network (Addition of DeFi modules)
 
   - **Estimated Duration:** 2 month
-
     - **FTE:** 2.5
     - **Costs:** 15000DAI
 
 | Number | Deliverable    | Specification                                                |
 | ------ | -------------- | ------------------------------------------------------------ |
-| 1      | Staking Pallet | For FT and NFTs to be used as collateral                     |
-| 2      | Auction Pallet | For open and private auctions                                |
-| 3      | Lend Pallet    | For lending of FT and NFTs                                   |
-| 4      | Node           | Build main network node and launch public network            |
-| 5      | Uint Test      | Test packing and collection function                         |
-| 6      | Front-End      | Realize front-end for Staking, Auction, Lending              |
+| 1      | Staking Pallet | Provides a pledge function, users and developers can pledge any project through this module to generate tokens through our token module, and lock it to a game project to obtain a certain amount of income or interest |
+| 2      | Auction Pallet | Provide public auction and secret auction functions. Users can choose public bidding and start time including end time. The secret auction will hash the auction price and confirm at the end whether the highest price has been decoded. Each auction will return the previous person’s bid |
+| 3      | Lend Pallet    | Provide a lending module, through which users can lend their NFT assets to the lending pool, other users can pay the lending price, and the lending user must repay the loan within a fixed time after receiving the loaned funds and get the money back Otherwise, the NFT assets will be sent to the user who paid the loan price at the last time of the outstanding payment. |
+| 4      | Node           | Package all completed functional modules and construct main network-level nodes to provide public networks and corresponding main network front-end interfaces |
+| 5      | Uint Test      | Provide complete function test, pressure performance test, and issue test result report |
+| 6      | Front-End      | Provide a visual front end to facilitate users and developers to use the functional modules on the chain of Staking, Auction, and Lending |
 | 7      | Docker         | We will provide a dockerfile to demonstrate the full functionality of our chain and front end |
 
 ## 4-Future Plans
@@ -236,6 +286,3 @@ Curate your own spacecraft using digital assets, NFTs, and collectibles from you
   - **Have you applied for other grants so far?** No
 
   - **Unlike SubGame, we provide the necessary framework and tools for developers to curate their own gaming experience with embedded DeFi elements**
-
-    
-
