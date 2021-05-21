@@ -237,8 +237,10 @@ In this milestone, we will verify features with limited users and launch the tes
 | 1.         | Kylin Network Oracle Node Module Repo    | Oracle Node for data feeding built on top of Substrate 2.0 as a customized module written in Rust will store and process the data query request from data consumers, also it will handle the data feeding from miners. The very consensus protocol and the simplest schema of oracle market are implemented inside. |
 | 2.         | Kylin Network Data Feeding/Miner Repo    | It handles the query requests from oracle nodes, and feeds the data after processing as requested. It will be implemented with Substrate 2.0, and the major data feeding part will be built with off-chain workers. We will perform configuration and optimization work to make this easier for typical use cases of the Kylin Network. |
 | 3.         | Kylin Network Datasource Sample Repo | The sample datasource provider provides the data (e.g. the data provider fetches the spot and contract data from derivative exchanges) to be used by miners. It will contain two parts, the Java data retriever to access APIs from exchanges and the NodeJS datasource to handle data feeding. |
-| 4.         | Kylin Network Data Analytics Sample Repo | The NodeJS sample of how the data will be analysed for data analytics. We will provide an interface of the analysis of market data and blockchain data as POC. |
-| 5.         | Docker Image                             | The Kylin Network docker image contains the POC version which can be running anywhere to verify the idea of Kylin Network. |
+| 4.         | Docker Image                             | The Kylin Network docker image contains the POC version which can be running anywhere to verify the idea of Kylin Network. |
+| 5.         | Kylin Contracts Repo | The smart contracts with Ink! to access oracle data and provide API for external calls. |
+| 6.         | Kylin Market Front-end Repo | The Oracle Data Market front-end based on polkadot js to listing all available Oracle Data Services provided by providers through the Kylin Oracle Market. |
+
 
 ### Community Engagement
 
