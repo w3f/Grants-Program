@@ -1,6 +1,6 @@
 # Open Grant Proposal
 
-- **Project Name:** XP.network Relay Chain Protocol.
+- **Project Name:** XP.network Protocol.
 - **Team Name:** XP.network.
 - **Payment Address:** BTC: bc1qdpx2e6lejre536ph0csskas888ua3pz5p4pkuj.
 
@@ -30,12 +30,12 @@ Any parachain, parathread or bridge can attach our pallet and use its functional
 
 The project is comprised of 2 interdependent deliverables:
 
-1. The XP.network Relay Chain Protocol, which will enable parachains to communicate keeping track of the current state of every transaction.
+1. The XP.network Protocol, which will enable parachains to communicate keeping track of the current state of every transaction.
 
-2. A Substrate Pallet implementing the XP.network Relay Chain protocol.
+2. A Substrate Pallet implementing the XP.network protocol.
 
 
-**XP Relay Chain Protocol** will be supported by a number of pallets, each acting as a “post office” for its parathread. A typical message will include:
+**XP Protocol** will be supported by a number of pallets, each acting as a “post office” for its parathread. A typical message will include:
 ```terminal
 {
 ID:                 id,               //required to identify that the other blockchain’s reply is related to this request,
@@ -57,20 +57,20 @@ Even the complete message adds only 64 additional bits to the original TX binary
 
 The **XP.network Decision Tree**, regulating the efficiency of the data flow between the two pallets, will roughly look like this:
 
-![img](https://github.com/xp-network/w3f_application/blob/main/XP.network%20Protocol-3.png)
+![img](https://github.com/xp-network/w3f_application/blob/main/XP.network%20Protocol-2.png)
 
 The above scheme is a work in progress and subject to change.
 
-Apart from standard setup, a pallet implementing XP.network Relay Chain Protocol consists of:
+Apart from standard setup, a pallet implementing XP.network Protocol consists of:
 
 1. **Message Listener** - it listens to the incoming messages and passes them to the Decision Tree.
 2. **Message Deserialiser** - it reads the contents of the binary file and populates the fields of the Message struct.
 3. **Message Serialiser** - it packs the values of the Message struct into a binary representation.
-4. **Message Sender** - it uses the Relay Chain callback mechanism to communicate with the other parachains and parathreads using XP Network protocol.
+4. **Message Sender** - it uses the XCMP to communicate with the other parachains and parathreads using XP Network protocol.
 5. **Runtime Storage** - it stores the binaries with the current state of the corresponding transaction. Each blob can be accessed like so: ```sender[TopicID]```.
 6. **Decision Tree** - it controls the efficiency of the data flow between the pallets.
 
-#### The XP.network Relay Chain protocol is not:
+#### The XP.network Protocol is not:
 
 This protocol is by no means a bridge between the blockchains. However, we have plans of building bridges to a number of blockchains in further projects.
 
@@ -151,8 +151,8 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 | 0c. | Documentation | Documents containing product architecture as well as basic user manuals  |
 | 0d. | PSP | Drafting, Calling for feedback, Acceptance, Integration  |
 | 1. | XP.network Protocol | XP.network protocol is developed and documented in textual descriptions and UML diagrams |
-| 2. | Message serializer | The binary Message serializer is built |
-| 3. | Message deserializer | The binary Message deserializer is built |
+| 2. | Message serializer | The binary Message serializer is built with SCALE |
+| 3. | Message deserializer | The binary Message deserializer is built with SCALE |
 | 4. | Runtime Storage integration | Implementing the message blob CRUD functionality in the runtime storage |
 
 ### Milestone 2 — Sender, Litenter and the Decision tree (MVP)
@@ -168,10 +168,10 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 | 0b. | Delivery time | Mid July |
 | 0c. | Documentation | Documents containing product architecture as well as basic user manuals  |
 | 0d. | PSP | Drafting, Calling for feedback, Acceptance, Integration  |
-| 1. | Message Listener | We will develop a module listening to the messages from the Relay Chain XCMP |
-| 2. | Message Sender | We will develop a module sending the messages via the Relay Chain XCMP |
+| 1. | Message Listener | We will develop a module listening to the messages from the XCMP |
+| 2. | Message Sender | We will develop a module sending the messages via XCMP |
 | 3. | Decision Tree | We will develop the efficient data flow controllers |
-| 4. | Relay Cain Integration | We will establish communication between two pallets implementing the XP.network Relay Chain protocol via the Westend Relay Chain |
+| 4. | Relay Cain Integration | We will establish communication between two pallets implementing the XP.network Protocol in Kusama |
 
 ### Milestone 3 — Documentation & Release
 
@@ -189,7 +189,7 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 | 1. | Compliance Validator | Developing automated tests for the XP.network protocol interactions between pallets with min 85% code coverage |
 | 2. | Documentation | Writing the final documentation with all the amendments 1. XP.Network protocol, 2. XP.network pallets - textual & UML|
 | 3. | Tutorials | Preparing tutorials with examples 1. How to use XP.network Protocol, 2. How to attach an XP.Network pallet to a parachain | 
-| 4. | Testing in Polkadot Westnet| Testing and debugging Polkadot Westnet till 20 example transactions execute and the results are added to the blockchain | 
+| 4. | Testing in Kusama| Testing and debugging in Kusama till 20 example transactions execute and the results are added to the blockchain | 
 
 ## Future Plans
 
