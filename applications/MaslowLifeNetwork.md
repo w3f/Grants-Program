@@ -125,18 +125,17 @@ We have planned a preliminary wireframe (https://956dkl.axshare.com), let us use
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0.|
 | 0b. | Documentation | User interface design mockup / User guidelines / Pallet usage guidelines / Software Build guidelines / Test methods guidelines |
-| 1. | Foundation | Fork the substrate framework and analyze how to use it on the Github.|
-| 2. | Para-chain | Build the Maslow Life Network needed for subsequent development based on the substrate framework, Then write instructions and provide them on Github.|
-| 3. | Personal information pallet | Build a Personal information pallet based on the Substrate framework,includes Wallet address/ Last name/ First Name/ Nickname/ Birthday/ Country / Birthplace/ Gender/ Avatar.|
+| 1. | Para-chain | Build the Maslow Life Network needed for subsequent development based on the substrate framework, Then write instructions and provide them on Github.|
+| 2. | Personal information pallet | Build a Personal information pallet based on the Substrate framework,includes Wallet address/ Last name/ First Name/ Nickname/ Birthday/ Country / Birthplace/ Gender/ Avatar.|
 |  | **function：** |`pub fn sign_up(origin, info: User)->dispatch::DispatchResult`<br><br>`pub fn update_user(origin, info: User)->dispatch::DispatchResult`|
 |  | **storage：** |`Users get(fn get_use<br>r_info): map hasher(blake2_128_concat) u32=> Vec<User>`|
-| 4. | Friendship pallet | Build a Friend pallet based on the Substrate framework, includes Submit/ Relationship/ Unrelationship/ Agree/ Unagree/ Timestamp/ Limit.|
+| 3. | Friendship pallet | Build a Friend pallet based on the Substrate framework, includes Submit/ Relationship/ Unrelationship/ Agree/ Unagree/ Timestamp/ Limit.|
 |  | **function：** |`pub fn submit_relationship_approve(origin, user_id: u32)->dispatch::DispatchResult`：<br><br>`pub fn relationship_approve_review(origin, relationship_id: u32, approve: u8)->dispatch::DispatchResult`<br><br>`pub fn set_relationship_limit(origin, limit: u32)->dispatch::DispatchResult`|
 |  | **storage：** | `RelationshipMap get(fn get_relationship): map hasher(blake2_128_concat) Account=> Vec<Relationship> ;`<br><br>`RelationshipApprove get(fn get_relationship_approve): map hasher(blake2_128_concat) Account=> Vec<RelationshipApprove> ;`|
-| 5. | Post pallet | Create Post pallet based on Substrate framework, includes Avatar/ Last name/ First Name/ Nickname/ Timestamp/ Content/ Feel/ Others respond feel|
+| 4. | Post pallet | Create Post pallet based on Substrate framework, includes Avatar/ Last name/ First Name/ Nickname/ Timestamp/ Content/ Feel/ Others respond feel|
 |  | **function：** |`pub fn post(origin, post_info: <Post>)`<br><br>`pub fn post_feel(origin, post_id: u32, feel_info: <PostFeel>)`|
 |  | **storage：** |`UserPost get(fn get_post): map hasher(blake2_128_concat) Account=> Vec<PostID> ;`<br><br>`Post get(fn get_post): map hasher(blake2_128_concat) PostID=> Vec<Post> ;`<br><br>`PostFeel get(fn get_post): map hasher(blake2_128_concat) PostID=> Vec<PostFeel> ;`|
-| 6. | Dapp implementation | Integrate the pallet, and use react to develop Dapp on the front end to complete the minimum feasible application.| 
+| 5. | Dapp implementation | Integrate the pallet, and use react to develop Dapp on the front end to complete the minimum feasible application.| 
 
 ## Future Plans
 
