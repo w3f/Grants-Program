@@ -59,7 +59,7 @@ Simple SPA web application powered by react and polkadot.js. Using for testing p
 
 ### On chain worker
 
-![scheme B](https://github.com/MikeMS-sys/Kit/blob/main/Untitled%20Diagram-3-2.png?raw=true) 
+![scheme B](https://i.ibb.co/3rCw09r/scheme-1.png) 
 
 1. Send Tx with new data for ML results (predictions)
 - Tx validation
@@ -72,7 +72,7 @@ Simple SPA web application powered by react and polkadot.js. Using for testing p
 
 ### Off chain worker
 
-![scheme A](https://github.com/MikeMS-sys/Kit/blob/main/ML-Copy%20of%20Page-1-4.png?raw=true) 
+![scheme A](https://i.ibb.co/7JjL1f5/scheme-2.png) 
 
 1. Send Tx with new data for ML results (predictions)
 - Tx validation
