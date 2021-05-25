@@ -179,6 +179,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Moonbeam Grants Program](https://moonbeam.network/community/grants/)
 - [Edgeware Grants and Bounties](https://github.com/edgeware-builders/construction-projects)
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
+- [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal)
 
 ## :information_source: License <!-- omit in toc -->
 
