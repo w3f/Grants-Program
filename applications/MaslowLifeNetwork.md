@@ -135,7 +135,7 @@ We have planned a preliminary wireframe (https://956dkl.axshare.com), let us use
 | 4. | Post pallet | Create Post pallet based on Substrate framework, includes Avatar/ Last name/ First Name/ Nickname/ Timestamp/ Content/ Feel/ Others respond feel|
 |  | **function：** |`pub fn post(origin, post_info: <Post>)`<br><br>`pub fn post_feel(origin, post_id: u32, feel_info: <PostFeel>)`|
 |  | **storage：** |`UserPost get(fn get_post): map hasher(blake2_128_concat) Account=> Vec<PostID> ;`<br><br>`Post get(fn get_post): map hasher(blake2_128_concat) PostID=> Vec<Post> ;`<br><br>`PostFeel get(fn get_post): map hasher(blake2_128_concat) PostID=> Vec<PostFeel> ;`|
-| 5. | Dapp implementation | Integrate the pallet, and use react to develop Dapp on the front end to complete the minimum feasible application.| 
+| 5. | Dapp implementation | Integrate the pallet, and use react to develop [Dapp](https://956dkl.axshare.com/)  on the front end to complete the minimum feasible application:<br>1. Users can create virtual personalities<br>2. Establish friendship<br>3. Post social posts|
 
 ## Future Plans
 
