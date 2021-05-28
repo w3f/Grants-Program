@@ -75,10 +75,16 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 ### Team Code Repos
 
-* https://github.com/<your_repo_1>
-* https://github.com/<your_repo_2>
+* https://github.com/<your_organisation>
+* https://github.com/<your_organisation>/<project_1>
+* https://github.com/<your_organisation>/<project_2>
 
-### Team LinkedIn Profiles
+Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+
+* https://github.com/<team_member_1>
+* https://github.com/<team_member_2>
+
+### Team LinkedIn Profiles (if available)
 
 * https://www.linkedin.com/<person_1>
 * https://www.linkedin.com/<person_2>
