@@ -202,7 +202,8 @@ Link to initial pull request (https://github.com/uddugteam/General-Grants-Progra
 
 ## Future Plans
 
-We want to realise this idea and integrate it as the core part of our project in healthcare sphere.
+Implementing of validation module.
+Also we want to realise this idea and integrate it as the core part of our project in healthcare sphere.
 
 ## Additional Information :heavy_plus_sign:
 
