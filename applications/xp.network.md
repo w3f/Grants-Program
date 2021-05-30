@@ -10,7 +10,7 @@
 
 XP.network is a codeless platform for building blockchain agnostic NFT DApps. XP.network allows non-developers to build their NFT marketplaces, galleries, museums and many more use-cases without coding. We will connect our users's applications to different blockchains via Polkadot.
 
-In order to synchronize communication between different [parachains](https://research.web3.foundation/en/latest/polkadot/XCMP/index.html) we want to build our own protocol which will be used by a network of XP.network pallets, that can be attached to and be used by any parachain.
+In order to synchronize communication between different [parachains](https://research.web3.foundation/en/latest/polkadot/XCMP/index.html) we want to build our own protocol which will be used by an XP.network pallet, that can be attached to and be used by any parachain.
 
 The XP.network protocol allows parachains to communicate in a connectionless but ordered and reliable way. The protocol allows to store the State of a negotiated transaction (TX) and enables the functionality required to inform the User or the original parachain accordingly.
 
@@ -21,6 +21,7 @@ At the moment, XCMP is a work in progress and SPREE only exists in documentation
 2. Once the state of a transaction changes or an error occurs, the requesting parachain gets notified. Some of such messages help keep the end user properly informed about the state of events with his/her transaction, others inform the pallets that the transaction has terminated and the memory must be freed from the blob, which might be expensive to store, especially when it is no longer needed. 
 
 3. Another feature uses the fact that a pallet, implementing our protocol, is a part of its parent parachain. Therefore, it has no additional overhead in tracking whether the transaction succeeded or failed. It listens to events related to the transaction and notifies the requesting parachian of the result and provides the data of the outcome when it becomes available without being additionally requested about this information. 
+
 
 #### Integration
 
@@ -48,12 +49,34 @@ The runtime [storage](https://substrate.dev/rustdocs/v3.0.0/frame_support/storag
 
 ![img](https://github.com/xp-network/w3f_application/blob/main/xp.network_blob.png)
 
-Even the complete message adds only 64 additional bits to the original TX binary code. 16 bits for the TopicID, 16 bits for the flags and 32 bits for the length of the TX binary. In order to reduce the overhead:
+Even the complete message adds only 64 bits to the original TX binary code. 16 bits for the TopicID, 16 bits for the flags and 32 bits for the length of the TX binary. In order to reduce the overhead:
 1. When notifying about errors or about submission of the TX bytecode for execution, only the first 32 bits are attached to the message: 16 bits of the TopicID and 16 bits for flags. They will be used to update the blob, where the state of a TX is stored during the number of seconds when a TX is executed in a target parachain. The extrinsics bytecode is not moved when it is not required.
 2. Should, sometime in the future, even such tiny notifications create a noticeable overhead, we will: </br>
 	a. join them into batches to reduce the number of messages  </br>
 	b. remove the AKN notification, which is required till SPREE becomes available to confirm that the message has been received with the same TX bytecode as the sender's.
 
+Our protocol addresses two of the raised [issues](https://github.com/paritytech/polkadot/issues?q=is%3Aissue+xcm+is%3Aopen)
++ [Adding events for UMP message execution results](https://github.com/paritytech/polkadot/issues/2720)
+Instead of broadcasting events spamming the network, we message only the target pallet. Reducing excessive computation in the blockchain.
+
++ [XCM Retry Queue #2702](https://github.com/paritytech/polkadot/issues/2702) suggests several use-cases, where our protocol can come handy:
+
+1. When a nonsense message or erroneous code is sent, a DER (destination error flag) is raised, and if a parachain produces a more wordy explanation, it would be delivered in the TXData section of the blob. Since such TX should not be retried in the future the END flag will also be raised instructing the sender pallet to remove the transaction state blob from the storage.
+
+2. When an unknown token has been transferred to a parachain and the target parachain failed to process the request, an error flag will be raised. 
+An END flag will not be raised, therefore the state blob will not be removed. This will prevent the assets from being irreversibly lost and will leave the opportunity for the developers to add the token and allow the transaction to be successfully processed at a later time.
+
+3. In case there's not enough gas in the target parachain the process will be the same as above in point 2.
+
+XP.network uses XCM protocol as its transport layer and complies with the XCM protocol's four ['A's](https://github.com/paritytech/xcm-format):
+
+1. <i>Asynchronous</i>: our protocol does not block the sender in any way.
+
+2. <i>Absolute</i>: XP.network protocol informs the sending parachain that the message has been delivered by setting the AKN flag and sending back the message with the same TopicID. The order becomes insignificant, due to the fact, that the TopicID is more precise than the order.
+
+3. <i>Asymmetric</i>: The messages do not have a result. The outcome of the message processing is always delivered in a separate message.
+
+4. <i>Agnostic</i>: XP.network protocol makes no assumptions about the Consensus System of either parachains.
 
 The **XP.network Decision Tree**, regulating the efficiency of the data flow between the two pallets, will roughly look like this:
 
@@ -137,59 +160,51 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 - **Total Effort:** 120 days.
 - **Total Costs:** $ 30,000
 
-### Milestone 1 - Rust Substrate pallet (pre-MVP)
+### Milestone 1 - Alpha version of XP.network Protocol
 
-- **Estimated Duration:** 20 working days (1 month)
-- Working days **x** ppl. **:** 20 **x** 2
-- Effort: 40 days
-- **Costs:** $10,000
+- **Estimated Duration:** 30 working days (1.5 month)
+- Working days **x** ppl. **:** 30 **x** 2
+- Effort: 60 days
+- **Costs:** $15,000
+
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Delivery time | Mid June |
-| 0c. | Documentation | Documents containing product architecture as well as basic user manuals  |
-| 0d. | PSP | Drafting, Calling for feedback, Acceptance, Integration  |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains 1. How to use XP.network Protocol, 2. How to attach an XP.Network pallet to a parachain 
+| 0f. | PSP | Drafting, Calling for feedback, Acceptance, Integration |
 | 1. | XP.network Protocol | XP.network protocol is developed and documented in textual descriptions and UML diagrams |
 | 2. | Message serializer | The binary Message serializer is built with SCALE |
 | 3. | Message deserializer | The binary Message deserializer is built with SCALE |
 | 4. | Runtime Storage integration | Implementing the message blob CRUD functionality in the runtime storage |
+| 5. | Testing & debugging | Developing automated tests for the XP.network protocol interactions between pallets with min 85% code coverage |
+| 6. | Testing in Kusama| Testing and debugging in Kusama till 10 example transactions execute and the results are added to the blockchain | 
 
-### Milestone 2 — Sender, Litenter and the Decision tree (MVP)
+### Milestone 2 — The production version of XP.network Protocol
 
-- **Estimated Duration:** 20 working days (1 month)
-- Working days **x** ppl. **:** 20 **x** 2
-- Effort: 40 days
-- **Costs:** $10,000
+- **Estimated Duration:** 30 working days (1.5 month)
+- Working days **x** ppl. **:** 30 **x** 2
+- Effort: 60 days
+- **Costs:** $15,000
+
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Delivery time | Mid July |
-| 0c. | Documentation | Documents containing product architecture as well as basic user manuals  |
-| 0d. | PSP | Drafting, Calling for feedback, Acceptance, Integration  |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains 1. How to use XP.network Protocol, 2. How to attach an XP.Network pallet to a parachain 
+| 0f. | PSP | Drafting, Calling for feedback, Acceptance, Integration |
 | 1. | Message Listener | We will develop a module listening to the messages from the XCMP |
 | 2. | Message Sender | We will develop a module sending the messages via XCMP |
 | 3. | Decision Tree | We will develop the efficient data flow controllers |
-| 4. | Relay Cain Integration | We will establish communication between two pallets implementing the XP.network Protocol in Kusama |
-
-### Milestone 3 — Documentation & Release
-
-- **Estimated Duration:** 20 working days (1 month)
-- Working days **x** ppl. **:** 20 **x** 2
-- Effort: 40 days
-- **Costs:** $10,000
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Delivery time | Mid August |
-| 0c. | Documentation | Documents containing product architecture as well as basic user manuals  |
-| 0d. | PSP | Drafting, Calling for feedback, Acceptance, Integration  |
-| 1. | Compliance Validator | Developing automated tests for the XP.network protocol interactions between pallets with min 85% code coverage |
-| 2. | Documentation | Writing the final documentation with all the amendments 1. XP.Network protocol, 2. XP.network pallets - textual & UML|
-| 3. | Tutorials | Preparing tutorials with examples 1. How to use XP.network Protocol, 2. How to attach an XP.Network pallet to a parachain | 
-| 4. | Testing in Kusama| Testing and debugging in Kusama till 20 example transactions execute and the results are added to the blockchain | 
+| 4. | XCMP Integration | We will establish communication between two pallets implementing the XP.network Protocol in Kusama |
+| 5. | Testing & debugging | Developing automated tests for the XP.network protocol interactions between pallets with min 85% code coverage |
+| 6. | Testing in Kusama| Testing and debugging in Kusama till 10 example transactions execute and the results are added to the blockchain | 
 
 ## Future Plans
 
@@ -208,4 +223,3 @@ When the new version of XCMP is developed we will migrate our protocol there. On
 ## Additional Information 
 
 [The project repo:](https://github.com/xp-network)
-
