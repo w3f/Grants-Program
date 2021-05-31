@@ -20,8 +20,7 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 ### Overview
 
 #### Liquidity Trilemma
-![solution](https://drive.google.com/file/d/1wlS4UK7_ZQlEgG2xsnj5_On3EjLlks_m/)
-
+![image](https://drive.google.com/uc?export=view&id=<1wlS4UK7_ZQlEgG2xsnj5_On3EjLlks_m>)
 Orderbook based decentralized exchanges (e.g., 0x) suffer from lack of liquidity issues. As a result, automated market makers (e.g., Uniswap) gain popularity recently with constant product pricing function. However, such solutions rely on mechanical and static pricing functions, facing the following three issues:
 
 * **Price Slippage:** The static pricing is not adaptive to market dynamics. This leads to arbitrage opportunities.
