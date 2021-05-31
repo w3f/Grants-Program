@@ -126,15 +126,12 @@ Dirk Xu, CTO of Pawnfi, former tech leader at Yintech
 | 0b. | Documentation | Pawnfi documentation center (Help center) is live, we will provide more inline documentation of the code and a basic tutorial to show how Pawnfi (Polkadot version) works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
-| 1. | Substrate module: crowd lending | Implement the core function of crowd lending |  
-| 2. | Substrate module: NSA(non-standard-asset) | Implement an non-standard-asset module  (support ERC20, ERC721 and ERC1155-like assets) |  
-| 3. | Substrate module: marketplace | Implement the core function of marketplace |  
-| 4. | Substrate module: leasing | Implement the core function of leasing |  
-| 5. | Pawnfi Chain | Implement a blockchain based on Substrate and include ERC20 & NFT asset, and the aforementioned function modules. |
-
+| 1. | Substrate module: crowd lending | Implement the core function of crowd lending. Users place their asset as collateral to participate in diversified loan activity, which is supported by flexible parameter settings and multiple repayment schedules. Parameter Settings(Loan Type, Loan Term, Loan Amount, Loan Interest Rate,Collateral Whitelist). Borrow methods(Subscription, FCFS First Come First Serve). Repayment methods(On the fly, Lump Sum Payment, Equal Total Payment)|
+| 2. | Substrate module: marketplace | Implement the core function of marketplace. Support single item resale, packaged item resale and all kinds of common auctions. Parameter Settings(Single item, Packaged item, Selling amount, Closing date of the tender, Selling Price, Selling whitelist)|  
+| 3. | Substrate module: leasing | Implement the core function of leasing. Support diversified leasing activities with flexible parameters. Parameter Settings (Leasing days, Leasing deposit, Leasing interest rate, Closing date of the tender, Leasing whitelist)| 
 
 ## Future Plans
-
+- Develop Pawnfi chain based on substrate framework to support pawnfi protocols.
 - We will Integrate the EVM module into Pawnfi Chain to support Ethereum ERC20 and NFT tokens, so that the smart contracts developed based on EVM can be freely and seamlessly integrated into our system.
 - Pawnfi Chain will differentiate each identity within the encrypted network in order to improve transaction throughput and speed, and reduce transaction fees.
 - We will provide all non-standard assets and standard assets with a range of services including borrowing, appraisal, selling, leasing, etc., and maximize the efficiency of funds for asset holders and users through the separation of asset ownership, use rights and income rights. In the future, we will provide more flexible combinations and approaches for asset realization.
