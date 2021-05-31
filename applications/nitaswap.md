@@ -4,9 +4,9 @@
 >
 > See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/#pencil-process) on how to submit a proposal.
 
-* **Project Name:** Name of your project (e.g. DuoSwap Module)
-* **Team Name:** Legal name of your team (e.g. Duo)
-* **Payment Address:** BTC or Ethereum (USDT/DAI) payment address. We don't accept payments for the program in other currencies at this stage. If this is an Ethereum address, please specify USDT or DAI. (e.g. 0x8920... (DAI))
+* **Project Name:** NitaSwap
+* **Team Name:** Nita Foundation
+* **Payment Address:** BTC address: TBD
 
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -19,12 +19,16 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-Please provide the following:
+#### Liquidity Trilemma
+![solution](https://drive.google.com/file/d/1wlS4UK7_ZQlEgG2xsnj5_On3EjLlks_m/view?usp=sharing)
 
-* If the name of your project is not descriptive, a tag line (one sentence summary).
-* A brief description of your project.
-* An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-* An indication of why your team is interested in creating this project.
+Orderbook based decentralized exchanges (e.g., 0x) suffer from lack of liquidity issues. As a result, automated market makers (e.g., Uniswap) gain popularity recently with constant product pricing function. However, such solutions rely on mechanical and static pricing functions, facing the following three issues:
+
+* **Price Slippage:** The static pricing is not adaptive to market dynamics. This leads to arbitrage opportunities.
+* **Divergent Loss:** When market price fluctuates, arbitrageurs exploit the pricing inefficiencies with liquidity provider token loss.
+* **Capital Efficiency:** Tokens are deposited to liquidity pool for pricing purposes only. Capital efficiency is low as a result.
+#### ML Enabled Solution
+
 
 ### Project Details
 
