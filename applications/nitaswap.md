@@ -36,26 +36,20 @@ The onchain pricing leverages machine learning and can therefore navigates liqui
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-* Mockups/designs of any UI components
-* Data models / API specifications of the core functionality
-* An overview of the technology stack to be used
-* Documentation of core components, protocols, architecture, etc. to be deployed
-* PoC/MVP or other relevant prior work or research on the topic
-* What your project is _not_ or will _not_ provide or implement
-  * This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+Please refer to the technical whitepaper [TBD] for more design details.
 
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 * Where and how does your project fit into the ecosystem?
+  * Efficient ML based DeFi platform
 * Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+  * Token traders and liquidity providers
 * What need(s) does your project meet?
+  * Optimal trader experience and yield farming rate optimization for liquidity providers
 * Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  * If so, how is your project different?
-  * If not, are there similar projects in related ecosystems?
+  * No
 
 ## Team :busts_in_silhouette:
 
