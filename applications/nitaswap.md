@@ -28,7 +28,7 @@ Orderbook based decentralized exchanges (e.g., 0x) suffer from lack of liquidity
 * **Divergent Loss:** When market price fluctuates, arbitrageurs exploit the pricing inefficiencies with liquidity provider token loss.
 * **Capital Efficiency:** Tokens are deposited to liquidity pool for pricing purposes only. Capital efficiency is low as a result.
 #### ML Enabled Solution
-
+![solution](https://drive.google.com/uc?id=1oRBjxIPVsRX-02i7kg1xMruxRcjAtn8P)
 
 ### Project Details
 
