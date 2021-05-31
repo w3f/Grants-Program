@@ -27,8 +27,12 @@ Orderbook based decentralized exchanges (e.g., 0x) suffer from lack of liquidity
 * **Price Slippage:** The static pricing is not adaptive to market dynamics. This leads to arbitrage opportunities.
 * **Divergent Loss:** When market price fluctuates, arbitrageurs exploit the pricing inefficiencies with liquidity provider token loss.
 * **Capital Efficiency:** Tokens are deposited to liquidity pool for pricing purposes only. Capital efficiency is low as a result.
+
 #### ML Enabled Solution
 ![solution](https://drive.google.com/uc?id=1oRBjxIPVsRX-02i7kg1xMruxRcjAtn8P)
+
+The root cause lies in the mechanical nature of the pricing functions. Therefore, we propose to use machine learning for adpative and dynamic price learning.
+The onchain pricing leverages machine learning and can therefore navigates liquidity trilemma dynamically given different market situations
 
 ### Project Details
 
