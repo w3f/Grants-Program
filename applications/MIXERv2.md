@@ -48,7 +48,7 @@ Our team has deep experience building on Substrate and growing experience buildi
 ### Overview
 * **Total Estimated Duration:** 4 months
 * **Full-time equivalent (FTE):**  5 FTE
-* **Total Costs:** $120,000 DAI
+* **Total Costs:** $100,000 DAI
 
 ### Milestone 1 — Implement multi-currency, multi-backend, multi-hash support in Substrate modules and Arkworks mixer circuits
 * **Estimated Duration:** 2 months
@@ -137,10 +137,10 @@ Definitions: Secret Key(S), Public key(P), Nullifier (N), Leaf(L), Hash function
 
 - [arkworks](arkworks.rs)
 
-### Milestone 2 — Toolchain: implement relayer and WASM bindings for zero-knowledge gadgets
+### Milestone 2 — Toolchain: implement relayer and WASM bindings for zero-knowledge gadgets, types API, dApp integration
 * **Estimated Duration:** 1 months
-* **FTE:** 4
-* **Costs:** $30,000
+* **FTE:** 5
+* **Costs:** $40,000
 
 | Number | Deliverable | Specification |
 | ------------- | ------------ | ------------- |
@@ -152,23 +152,12 @@ Definitions: Secret Key(S), Public key(P), Nullifier (N), Leaf(L), Hash function
 | 2b. | CLI Support: Note spending | Proof generation and transaction submission to relayers or directly to the chain handled by the CLI. |
 | 3. | WASM bindings | We will build out necessary WASM compatible proof generation code to be reused in the browser for dApp support. |
 | 3a. | WASM bindings: Web Worker support | We will build out a pipeline for integrating this logic into web workers. |
+| 4. | UI Support: Multi-Asset support | We will build out multi-asset support in our UI for mixers of arbitrary token types. |
+| 4a. | UI Support: Multi-Asset designs | There will be nicely designed interfaces for utilising multi-asset support. |
+| 5. | UI Support: Proof generation | We will integrate WASM based proof generation bindings for generating zero-knowledge proofs in the browser application handled inside web workers. |
+| 6. | API Support: Types | We will package all new types for supporting these pallest in Substrate chains in a well-documented API |
+| 6a. | API Support: Usage examples | We will include examples for connecting to chains with these pallets / types and provide examples for interacting with them. |
 
-
-### Milestone 3 — Implement types APIs and integrate into a dApp
-* **Estimated Duration:** 1 months
-* **FTE:** 4
-* **Costs:** $30,000
-
-| Number | Deliverable | Specification |
-| ------------- | ------------ | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-| 0c. | Testing Guide | The README will demonstrate how to run the dApp. The types APIs will provide examples for connecting to a chain with these pallets | 
-| 1. | UI Support: Multi-Asset support | We will build out multi-asset support in our UI for mixers of arbitrary token types. |
-| 1a. | UI Support: Multi-Asset designs | There will be nicely designed interfaces for utilising multi-asset support. |
-| 2. | UI Support: Proof generation | We will integrate WASM based proof generation bindings for generating zero-knowledge proofs in the browser application handled inside web workers. |
-| 3. | API Support: Types | We will package all new types for supporting these pallest in Substrate chains in a well-documented API |
-| 3a. | API Support: Usage examples | We will include examples for connecting to chains with these pallets / types and provide examples for interacting with them. |
 
 ## Future Plans
 The team's plans are to keep extending the mixer to support newer backends and a variety of elliptic curves for asset based applications, governance applications, and interoperable applications.
