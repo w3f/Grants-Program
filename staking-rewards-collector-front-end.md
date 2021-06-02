@@ -36,7 +36,7 @@ We expect the teams to already have a solid idea about your project's expected f
 
 * Mockups/designs Adobe Xd
 * Front End: Next.js, Material Design Bootstrap React
-* Back End: Next.js/Vercel/IPFS
+* Back End: N/A (The applicatoin will use a serverless design on Vercel/Fleek)
 
 
 ### Ecosystem Fit
