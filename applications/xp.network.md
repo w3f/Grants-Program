@@ -156,16 +156,16 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months.
-- **Total Effort:** 120 days.
-- **Total Costs:** $ 30,000
+- **Total Estimated Duration:** 1.5 months.
+- **Total Effort:** 36 working days.
+- **Total Costs:** $ 12,000
 
-### Milestone 1 - Alpha version of XP.network Protocol
+### Milestone 1 - PoC of XP.network Protocol
 
-- **Estimated Duration:** 30 working days (1.5 month)
-- Working days **x** ppl. **:** 30 **x** 2
-- Effort: 60 days
-- **Costs:** $15,000
+- **Estimated Duration:** 12 working days (2.5 weeks)
+- Working days **x** ppl. **:** 6 **x** 2
+- Effort: 12 w/days
+- **Costs:** $0,00
 
 
 | Number | Deliverable | Specification |
@@ -174,21 +174,44 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains 1. How to use XP.network Protocol, 2. How to attach an XP.Network pallet to a parachain 
+| 0e. | Article | We will publish an **article**/workshop that explains 1. What is XP.network protocol and 2. how it can be used. |
 | 0f. | PSP | Drafting, Calling for feedback, Acceptance, Integration |
 | 1. | XP.network Protocol | XP.network protocol is developed and documented in textual descriptions and UML diagrams |
 | 2. | Message serializer | The binary Message serializer is built with SCALE |
 | 3. | Message deserializer | The binary Message deserializer is built with SCALE |
 | 4. | Runtime Storage integration | Implementing the message blob CRUD functionality in the runtime storage |
-| 5. | Testing & debugging | Developing automated tests for the XP.network protocol interactions between pallets with min 85% code coverage |
+| 5. | Testing & debugging | Developing automated tests for the XP.network protocol BLOB serialization / Deserialization, storage, updating, deletion with min 85% code coverage |
 | 6. | Testing in Kusama| Testing and debugging in Kusama till 10 example transactions execute and the results are added to the blockchain | 
 
-### Milestone 2 — The production version of XP.network Protocol
+### Milestone 2 — Alpha version of XP.network Protocol
 
-- **Estimated Duration:** 30 working days (1.5 month)
-- Working days **x** ppl. **:** 30 **x** 2
-- Effort: 60 days
-- **Costs:** $15,000
+- **Estimated Duration:** 12 working days (2.5 weeks)
+- Working days **x** ppl. **:** 6 **x** 2
+- Effort: 12 w/days
+- **Costs:** $4,000
+
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains how is XP.network Protocol integrated in Polkadot |
+| 0f. | PSP | Drafting, Calling for feedback, Acceptance, Integration |
+| 1. | Message Listener | We will develop a module listening to the messages from the XCMP |
+| 2. | Message Sender | We will develop a module sending the messages via XCMP |
+| 3. | XCMP Integration | We will establish communication between two pallets implementing the XP.network Protocol in Kusama |
+| 4. | Testing & debugging | Developing automated tests for the XP.network protocol XCMP message processing between two pallets  with min 85% code coverage |
+| 5. | Testing in Kusama| Testing and debugging in Kusama till 10 example transactions execute and the results are added to the blockchain | 
+
+
+### Milestone 3 — Production version of XP.network Protocol
+
+- **Estimated Duration:** 12 working days (2.5 weeks)
+- Working days **x** ppl. **:** 6 **x** 2
+- Effort: 12 w/days
+- **Costs:** $8,000
 
 
 | Number | Deliverable | Specification |
@@ -199,12 +222,10 @@ We may add more flags to reflect more states of the negotiated transaction, for 
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains 1. How to use XP.network Protocol, 2. How to attach an XP.Network pallet to a parachain 
 | 0f. | PSP | Drafting, Calling for feedback, Acceptance, Integration |
-| 1. | Message Listener | We will develop a module listening to the messages from the XCMP |
-| 2. | Message Sender | We will develop a module sending the messages via XCMP |
-| 3. | Decision Tree | We will develop the efficient data flow controllers |
-| 4. | XCMP Integration | We will establish communication between two pallets implementing the XP.network Protocol in Kusama |
-| 5. | Testing & debugging | Developing automated tests for the XP.network protocol interactions between pallets with min 85% code coverage |
-| 6. | Testing in Kusama| Testing and debugging in Kusama till 10 example transactions execute and the results are added to the blockchain | 
+| 1. | Decision Tree | We will develop the efficient data flow controllers and finite state machine logics |
+| 2. | XCMP Integration | We will establish communication between two pallets implementing the XP.network Protocol in Kusama |
+| 3. | Testing & debugging | Developing automated tests for the XP.network protocol interactions between pallets with min 85% code coverage |
+| 4. | Testing in Kusama| Testing and debugging in Kusama till 20 example transactions execute and the results are added to the blockchain | 
 
 ## Future Plans
 
