@@ -88,12 +88,6 @@ If you've already started implementing your project or it is part of a larger re
 * **FTE:**  9
 * **Costs:** 3500 USD
 
-### Milestone 2 (Testing)
-
-* **Estimated Duration:** 3 days
-* **FTE:**  3 days
-* **Costs:** 500 USD
-
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
@@ -106,15 +100,23 @@ If you've already started implementing your project or it is part of a larger re
 | 3. | Form validation | Add form validation to wallet address input while still allowing for multiple addresses to be entered. Validation for fiat amounts that will properly display based on the selected currency. |
 | 4.  | UI for data visualizer  | Develop an environment to display the output (.csv and .json) for the end user in a pleasurable way. |
 | 5. | Tooltips/Helpers | Implement help texts and tooltips to explain the different features and inputs to users. |
-| 6. | Testing | Write tests to confirm the application behaves as expected |
-| 7. | Polishing | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. |
-| 8. | IPFS | Create a version of the application that will work on IPFS|
+typos etc. |
 
+### Milestone 2 (Testing)
+
+* **Estimated Duration:** 3 days
+* **FTE:**  3 days
+* **Costs:** 500 USD
+
+| Number | Deliverable | Specification |
+| 6. | Testing | Write tests to confirm the application behaves as expected |
+| 7. | Polishing | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, 
 
 ## Future Plans
 
 * Collaborate with the original RFP proposer to determine how to best promote the finished application throughout the community.
 * Ask the community for suggestions to improve and add new features as necesary.
+* Refactor and Deploy to IPFS
 
 
 ## Additional Information :heavy_plus_sign:
