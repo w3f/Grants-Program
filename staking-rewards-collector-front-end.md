@@ -18,13 +18,12 @@ This application is in response to [Front-End for Staking Rewards Collector](htt
 
 ### Overview
 
-Please provide the following:
 This is a Staking Rewards Viewer for Polkadot and Kusama allowing users to view their staking rewards and easily download their search results.
 This implementation will take the work started in the [staking-rewards-collector](https://github.com/w3f/staking-rewards-collector) and integrate it with an easy to use modern front end using Next.js and deployed on Vercel with the goal of deploying to IPFS.
 
 I am interested in utilizing my current Software engineering skills to contribute to the Polkadot ecosystem. I have been following the project for a few years and have been looking for a way to participate.
 
-[Propsoal Repo](https://github.com/jackson-harris-iii/staking-rewards-viewer) with a screenshot of mockup created in Adobe Xd. Here is a quick demo video of a work in progress [Video](https://www.loom.com/share/435c92cb3abe4984b18716642d01f631) and a [Deployed](https://staking-rewards-viewer.vercel.app/) copy that is a few commits behind on vercel. (currently, the vercel version is not making requests. Looking at swapping out the curlRequest for fetch API calls.
+[Propsoal Repo](https://github.com/jackson-harris-iii/staking-rewards-viewer) with a screenshot of mockup created in Adobe Xd. Here is a quick demo video of a work in progress [Video](https://www.loom.com/share/435c92cb3abe4984b18716642d01f631) and a [Deployed](https://staking-rewards-viewer.vercel.app/) demo on vercel. (currently, the vercel version is not making requests. Looking at swapping out the curlRequest for fetch API calls.
 
 ### Project Details
 
@@ -80,14 +79,8 @@ If you've already started implementing your project or it is part of a larger re
 * Original [RFP](https://github.com/w3f/General-Grants-Program/blob/master/rfps/staking-rewards-collector-front-end.md) (requests for proposal),
 * Conversation reference to my original [submission](https://github.com/w3f/General-Grants-Program/pull/439) with @axl of w3f
 
-## Development Roadmap :nut_and_bolt:
 
-  1. Complete lookup features deployed to Vercel
-  2. Get download functionality working on Vercel
-  3. Implement form validation
-  4. Implement help/buttons
-  5. Testing
-  6. Modify to deploy to IPFS (tentatively using Fleek)
+## Development Roadmap :nut_and_bolt:
 
 ### Milestone 1 (Implementation)
 
@@ -95,33 +88,30 @@ If you've already started implementing your project or it is part of a larger re
 * **FTE:**  9
 * **Costs:** 3500 USD
 
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | UI for user input | Develop an UI to request necessary data from the users. |
-| 2.  | UI for data visualizer  | Develop an environment to display the output (.csv and .json) for the end user in a pleasurable way. |
-| 3.  | Help pages / comments  | Implement help texts and descriptions for users. |
-| 4.  | Internal testing  | Unit tests covering the functionality and logic |
-
-
 ### Milestone 2 (Testing)
 
 * **Estimated Duration:** 3 days
 * **FTE:**  3 days
 * **Costs:** 500 USD
 
-
 | Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Deployment | Deploy the code on a centralized server and IPFS. |
-| 2. | Test live environment | Test the homepage with various different OS and browsers and provide a report |
-| 3. | Polishing | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | UI for user input | Develop an UI to request necessary data from the users. |
+| 2a. | Address LookUp Functionality | Allow users to enter multiple wallet addresses for either or both the Polkdaot and/or Kusama networks and deploy these features to Vercel. |
+| 2b. | CSV/JSON Download | Enable users to download a copy of their lookup results in either CSV or JSON format. |
+| 3. | Form validation | Add form validation to wallet address input while still allowing for multiple addresses to be entered. Validation for fiat amounts that will properly display based on the selected currency. |
+| 4.  | UI for data visualizer  | Develop an environment to display the output (.csv and .json) for the end user in a pleasurable way. |
+| 5. | Tooltips/Helpers | Implement help texts and tooltips to explain the different features and inputs to users. |
+| 6. | Testing | Write tests to confirm the application behaves as expected |
+| 7. | Polishing | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. |
+| 8. | IPFS | Create a version of the application that will work on IPFS|
 
 
 ## Future Plans
-
-
-Please include here
 
 * Collaborate with the original RFP proposer to determine how to best promote the finished application throughout the community.
 * Ask the community for suggestions to improve and add new features as necesary.
