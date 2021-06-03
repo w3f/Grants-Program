@@ -71,7 +71,7 @@ The overall process for building this solutions are:
 Total Estimated Duration: 4 months
 Full-time equivalent (FTE): 2(1 for substrate, 1 for devops)
 Total Costs: 6000USDT
-Payment Address: 0x6EaD823cfB6d45996b8E413C7bE43282f042A78e
+Payment Address: Ethereum 0xFc95BF412A1F6DCD77a65879bfa83469E92422f3
 Milestone 1 - Bank digital currency 
 Estimated Duration: 3 month
 FTE: 1
