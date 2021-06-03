@@ -39,6 +39,7 @@ To further enhance the function, we plan to auto-fill the *Start Balance* by get
 * Tech Stack
 
 Front End: Vue.js
+
 Back End: Rust, NodeJS
 
 * Architecure
