@@ -34,6 +34,8 @@ The table content would also be re-worked to the Staking Rewards Collector one, 
 ![image](https://user-images.githubusercontent.com/5772463/120591006-fffa3880-c46d-11eb-825c-6095f74b3302.png)
 
 
+One thing needs to discuss is that is the Tax column necessary? As it is not a input variable, users cannot enter their rates in their countries, we intend to remove the column from the webpage if you're ok.
+
 2. Staking Reward Filter
 
 Upon clicking the filter icon, a dialog would appear and provide the following options as requested.
