@@ -1,4 +1,4 @@
-# W3F Open Grant Proposal
+# W3F Open Grant Proposal for *Front-End for Staking Rewards Collector*
 
 * **Project Name:** CryptoLab Staking Reward Collector
 * **Team Name:** CryptoLab
