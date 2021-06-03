@@ -44,6 +44,10 @@ Back End: Rust, NodeJS
 
 * Architecure
 
+![image](https://user-images.githubusercontent.com/5772463/120573135-b0a50f80-c44f-11eb-912a-d625ba4112fd.png)
+ 
+ The modules in white blocks are what we have now. We plan to call Staking Rewards Collector from the *cryptolab-web-backend* and parse the json output to response the query from the website.
+
 ### Ecosystem Fit
 
 The staking-rewards-collector is a tool to gather staking rewards for given addresses and cross-reference those with daily price data. This is a very useful tool for every validator and nominator in the ecosystem. However, since it has currently a CLI and requires some technical knowledge to set up (git, nodejs, yarn). A front-end hosted on a website could help many users getting access to this tool and enjoy the benefits.
