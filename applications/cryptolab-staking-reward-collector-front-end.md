@@ -24,7 +24,7 @@ See the image above, CryptoLab already have a similar page for users to query th
 
 If users choose to use Staking Reward Collector, a filter (see 2.) would be provided and they can export data to either JSON or CSV.
 
-![image](https://user-images.githubusercontent.com/5772463/120571143-1c857900-c44c-11eb-8b26-594d42c34f4e.png)
+![image](https://user-images.githubusercontent.com/5772463/120578682-c4a13f00-c458-11eb-96ab-ff163bb77b01.png)
 
 2. Staking Reward Filter
 
