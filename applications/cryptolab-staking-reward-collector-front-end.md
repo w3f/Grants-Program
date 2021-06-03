@@ -14,7 +14,7 @@ The Staking Rewards Collector requests us to make a front-end UI so that non-tec
 
 ### Project Details
 
-We plan to utilize the current Staking Reward webpage (https://www.cryptolab.network/tools/dotSR) on CryptoLab as the design base. However, we will change the data source from our DB to Staking Rewards Collector, retrieving rewards from the subscan because the subscan has entirely stored all rewards data.
+We plan to utilize the current Staking Reward webpage (https://www.cryptolab.network/tools/dotSR) on CryptoLab as the design base. However, we will change the data source from our DB to Staking Rewards Collector, retrieving rewards from the subscan because the subscan stores all rewards data.
 
 * Mockup UI
 
@@ -48,7 +48,9 @@ Front End: Vue.js
 
 Back End: Rust, NodeJS
 
-* Architetcure
+* Architecture
+
+Currently, CryptoLab is served on a single VPS, thus the Staking Rewards Collector would be an application on it. When a user want to see the rewards, the website would call an API on the *cryptolab-web-backend*, and it then spawns a thread to call the Staking Rewards Collector and parse the responses in files. The image below show the concept of architecture of the service.
 
 ![image](https://user-images.githubusercontent.com/5772463/120573135-b0a50f80-c44f-11eb-912a-d625ba4112fd.png)
  
