@@ -34,7 +34,7 @@ The table content would also be re-worked to the Staking Rewards Collector one, 
 ![image](https://user-images.githubusercontent.com/5772463/120591006-fffa3880-c46d-11eb-825c-6095f74b3302.png)
 
 
-One thing needs to discuss is that is the Tax column necessary? As it is not a input variable, users cannot enter their rates in their countries, we intend to remove the column from the webpage if you're ok.
+One thing needs to discuss is that is the Tax column necessary? As it is not an input variable, users cannot enter their rates in their countries. We intend to remove the column from the webpage if you're ok.
 
 2. Staking Reward Filter
 
@@ -48,23 +48,23 @@ Front End: Vue.js
 
 Back End: Rust, NodeJS
 
-* Architecure
+* Architetcure
 
 ![image](https://user-images.githubusercontent.com/5772463/120573135-b0a50f80-c44f-11eb-912a-d625ba4112fd.png)
  
- The modules in white blocks are what we have now. We plan to call Staking Rewards Collector from the *cryptolab-web-backend* and parse the json output to response the query from the website.
+ The modules in white blocks are what we have now. We plan to call Staking Rewards Collector from the *cryptolab-web-backend* and parse the json output to respond to the query from the website.
 
 ### Ecosystem Fit
 
-The staking-rewards-collector is a tool to gather staking rewards for given addresses and cross-reference those with daily price data. This is a very useful tool for every validator and nominator in the ecosystem. However, since it has currently a CLI and requires some technical knowledge to set up (git, nodejs, yarn). A front-end hosted on a website could help many users getting access to this tool and enjoy the benefits.
+The staking-rewards-collector is a tool for gathering staking rewards for given addresses and cross-referencing those with daily price data. This is a handy tool for every validator and nominator in the ecosystem. However, since it currently has a CLI and requires technical knowledge to set up (git, nodejs, yarn). A front-end hosted on a website could help many users reach this tool and enjoy the benefits.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-* Yu-kai Tseng [GitHub](https://github.com/yktseng) has an master's degree in Computer Science. He also had 9-year working experience on developing Industrial Network Management Softwares/Services, and is now a freelancer. Yu-kai is familiar with backend service developing and had experience on leading large distributed system design and develop.
+* Yu-Kai Tseng [GitHub](https://github.com/yktseng) has a master's degree in Computer Science. He also had 9-year working experience in developing Industrial Network Management Softwares/Services and is now a freelancer. Yu-kai is familiar with backend service development and had experience in leading large distributed system design and development.
 
-* Yao-hsin Chen [GitHub](https://github.com/iisaint) has a PhD in Computer Science with a focus on information security. He is a big believer in blockchain and is a co-founder of a blockchain-based solar technology company in Taiwan. Currently, he is organizing a small start-up to deliver services in the Polkadot ecosystem.
+* Yao-Hsin Chen [GitHub](https://github.com/iisaint) has a Ph.D. in Computer Science focusing on information security. He is a big believer in blockchain and is a co-founder of a blockchain-based solar technology company in Taiwan. Currently, he is organizing a small start-up to deliver services in the Polkadot ecosystem.
 
 ### Contact
 
@@ -79,7 +79,7 @@ The staking-rewards-collector is a tool to gather staking rewards for given addr
 
 ### Team's experience
 
-We have already developed the [Cryptolab.Network](https://www.cryptolab.network) website and telegram bots for both Kusama and Polkadot validators, which were tipped from both chain's council.
+We have already developed the [Cryptolab.Network](https://www.cryptolab.network) website and telegram bots for both Kusama and Polkadot validators, which were tipped from both chain's councils.
 
 ### Team Code Repos
 
@@ -133,7 +133,7 @@ N/A
 
 ## Future Plans
 
-Ask users to enter the *Start Balance* is bothersome. To further enhance the Staking Rewards Collector, it is technically possible to auto fill the *Start Balance* of the start date by recording the block number at 12:00am each day and then getting the balances during the block number from Polkascan. However, it requires certain works and would not be included in the planned 3-week duration. We may do it if feedbacks from users are positive.
+Ask users to enter the *Start Balance* is bothersome. To further enhance the Staking Rewards Collector, it is technically possible to auto fill the *Start Balance* of the start date by recording the block number at 12:00 am each day and then collecting the balances during the block number from Polkascan. However, it requires specific works and would not be included in the planned 3-week duration. We may do it if feedbacks from users are positive.
 
 ![image](https://user-images.githubusercontent.com/5772463/120570179-18f0f280-c44a-11eb-9ec6-3a68e91803b3.png)
 
@@ -141,4 +141,4 @@ Ask users to enter the *Start Balance* is bothersome. To further enhance the Sta
 
 **How did you hear about the Grants Program?**
 
-We see the RFP on the github and think it is very similar to what we have already done. We think we are suitable on working on it because CryptoLab has provided tools for both validators and nominators. Thus current CryptoLab users are able to enjoy the benefit from the Staking Rewards Collector. The CryptoLab can also attract more Staking Rewards Collector users to use the site.
+We see the RFP on the github and think it is very similar to what we have already done. We think we are suitable for working on it because CryptoLab has provided tools for both validators and nominators. Thus current CryptoLab users can enjoy the benefit from the Staking Rewards Collector. The CryptoLab can also attract more Staking Rewards Collector users to use the site.
