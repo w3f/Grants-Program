@@ -58,23 +58,41 @@ In game terms, that means that a player's defence fleet will now have a balance 
 
 ### Ship Modules
 
-Modules are an extension to the game (eventually in the form of NFTs, when a solid platform becomes available on Polkadot ecosystem), which allows equipping ships with additional abilities (effects, think spells, such as snare, root, blind, buffs/debuffs). They are crafted or looted, although loot is limited to only basic models. The crafting requires Gold tokens or components received from dismantling existing modules.
+Modules are an extension to the game (eventually in the form of NFTs, when a solid platform becomes available on Polkadot ecosystem), which allows equipping ships with additional abilities (effects, think spells, such as snare, root, blind, buffs/debuffs). They are crafted or looted, although loot is limited to only basic models. The crafting requires Gold tokens or components received from dismantling existing modules. Each Module has a % chance to trigger an effect for X rounds (all configurable by the Module itself).
 
 Basic modules will drop from fights randomly, providing an influx of potential token-valued items to farm and sell.
 
+* Technical Implementation
+
+Support for Ship Modules will be implemented in the game (fight) engine, because the Modules determine the outcome of the battle. Since in order to use Modules, the Player will need to unlock them, by Crafting or Looting, we will track to which Modules the Player has access to by issuing NFT Tokens at the point of unlock. The Game Engine will then resolve the statistics of the Module and apply them in combat, according to the information stored in the NFT itself.
+
 ### Modules Market
 
-A Market module will be implemented, allowing trading of Modules for Gold Tokens with other players. There will be a commission from every trade for the Game Contract.
+A Market functionality will be implemented, allowing trading of Modules for Gold Tokens with other players. There will be a commission from every trade for the Game Contract.
+
+* Technical Implementation
+
+Implemented with a payable Smart Contract message that transfers the NFT between players.
 
 ### Universe
 
-The Universe will be a new module in which players will fight over territory control in an infinite map. It is divided into Systems, each containing 7 Planets, each able to be fought over and colonised. Each System has 4 other Systems adjacent to it. Initially all Systems are undiscovered, and the players can use Gold Tokens to discover them. Discovered Systems forever display the name of their disoverer. There is no limit to the Systems that can be discovered.
+The Universe will be a new functionality in which players will fight over territory control in an infinite map. It is divided into Systems, each containing 7 Planets, each able to be fought over and colonised. Each System has 4 other Systems adjacent to it. Initially all Systems are undiscovered, and the players can use Gold Tokens to discover them. Discovered Systems forever display the name of their disoverer. There is no limit to the Systems that can be discovered.
 
 Each player starts in a newly generated System. By connecting adjacent Systems together and exerting control over them, a territory control zone is created.
 
 Each Planet generates Silver Tokens over time, allowing controlling players to collect them, by the process of which they become minted. Silver Tokens can be then spent on buying ships to use in the Universe mode. Ships are used to attack and defend (occupy) Planets and can be lost in battle.
 
 The important thing here is to combine the exploration, leaving a mark on the game by discovering new systems, and with the tactical combat and progress to control systems. Ship production that depends on the amount of territory held provides a building component to build strategies upon.
+
+* Technical Implementation
+
+The Universe operates as a Smart Contract, which stores the discovered Systems (position in space, discoverer, planets and their infrastructure levels, etc), tracks player ownership and defence fleets assigned to Planets inside. The Contract will generate new Systems on demand, which is the process of "discovering", by assigning unused coordinates to the new System, therefore creating one infinite space to discover and control.
+
+Each Planet in a System (or, broadly, any object able to generate Silver Tokens), stores the speed of production and last "harvesting" timestamp in the contract, so that when the user requests to "Harvest" (mint the Silver Tokens), the amount can be established by subtracting block numbers and multiplying by production speed.
+
+When attacking Planets, the new Smart Contract will use the fight resolution contract to determine the winner, and change (or not) the ownership of the Planet. Number of ships available to players will be subtracted also, according to the fight losses.
+
+Since players will be able to possess fleets of ships, we will track that in the Smart Contract itself, increasing the ship counts upon production, and decreasing after a fight took place.
 
 ### Usages of Silver Token
     - Buying Ships (Burns Tokens)
@@ -108,7 +126,7 @@ Milestone 3 (1)
 | 2. | Mobile Client | The client will become a hybrid app, in addition to playable on web, it will be packaged and deployed on Google Play Store, and ready to deploy on Apple App Store (NOTE, Apple policies currently prevent submitting blockchain apps, and that is unlikely to change for the duration of this grant). |
 | 3. | Game: Modules | We will implement modules in the game engine, with the ability to fire effects (snare, root, blind, debuffs) at a specific % chance during the fight. |
 | 4. | Game: Targeting | We will implement the ability to change targeting of ships, in the engine and UI. |
-| 5. | Game: Universe | We will implement the Universe mode, with territory exploration as described in Roadmap |
+| 5. | Game: Universe | We will implement the Universe mode, with territory exploration and ship production as described in Roadmap |
 
 Milestone 4 (2)
 * **Estimated Duration:** 1.5 month
@@ -123,9 +141,8 @@ Milestone 4 (2)
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
 | 1. | Game: Crafting | We will implement the ability to own, break down and craft Modules. |
 | 2. | Modules Market | We will implement an in game market where it is possible to trade modules between players
-| 3. | Game: Modules as NFTs | We will migrate Modules to a NFT standard (ERC-1155 or ERC-721) |
+| 3. | Game: Modules as NFTs | We will implement ownership of Modules in a NFT standard (ERC-1155 or ERC-721) |
 | 4. | Visuals: Illustrations | The game will receive a brand new set of illustrations, custom made to compliment the game climate |
-| 5. | Marketing: Socials | We will set up and maintain the social marketing aspect of the game, including Twitter, Telegram, Facebook, etc. |
 
 
 ### Overview
