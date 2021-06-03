@@ -58,7 +58,7 @@ The staking-rewards-collector is a tool to gather staking rewards for given addr
 
 * Yu-kai Tseng [GitHub](https://github.com/yktseng) has an master's degree in Computer Science. He also had 9-year working experience on developing Industrial Network Management Softwares/Services, and is now a freelancer. Yu-kai is familiar with backend service developing and had experience on leading large distributed system design and develop.
 
-* Yao-hsin Chen [GitHub](https://github.com/iisaint) has a PhD in Computer Science. 
+* Yao-hsin Chen [GitHub](https://github.com/iisaint) has a PhD in Computer Science with a focus on information security. He is a big believer in blockchain and is a co-founder of a blockchain-based solar technology company in Taiwan. Currently, he is organizing a small start-up to deliver services in the Polkadot ecosystem.
 
 ### Contact
 
