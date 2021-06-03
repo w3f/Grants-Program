@@ -82,11 +82,11 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Development Roadmap :nut_and_bolt:
 
-### Milestone 1 (Implementation)
+### Milestone 1 (Implementation & Testing)
 
-* **Estimated Duration:** 9 days
-* **FTE:**  9
-* **Costs:** 3500 USD
+* **Estimated Duration:** 12 days
+* **FTE:**  12
+* **Costs:** 4000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -100,17 +100,8 @@ If you've already started implementing your project or it is part of a larger re
 | 3. | Form validation | Add form validation to wallet address input while still allowing for multiple addresses to be entered. Validation for fiat amounts that will properly display based on the selected currency. |
 | 4.  | UI for data visualizer  | Develop an environment to display the output (.csv and .json) for the end user in a pleasurable way. |
 | 5. | Tooltips/Helpers | Implement help texts and tooltips to explain the different features and inputs to users. |
-
-### Milestone 2 (Testing)
-
-* **Estimated Duration:** 3 days
-* **FTE:**  3 days
-* **Costs:** 500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
 | 6. | Testing | Write tests to confirm the application behaves as expected |
-| 7. | Polishing | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. | 
+| 7. | Polishing & Delivery | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. | 
 
 ## Future Plans
 
