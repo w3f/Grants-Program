@@ -48,7 +48,7 @@ Front End: Vue.js
 
 Back End: Rust, NodeJS
 
-* Architetcure
+* Architecture
 
 ![image](https://user-images.githubusercontent.com/5772463/120573135-b0a50f80-c44f-11eb-912a-d625ba4112fd.png)
  
