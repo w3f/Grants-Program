@@ -31,8 +31,7 @@ See the image above, CryptoLab already have a similar page for users to query th
 
 The table content would also be re-worked to the Staking Rewards Collector one, mockup as below.
 
-![image](https://user-images.githubusercontent.com/5772463/120591006-fffa3880-c46d-11eb-825c-6095f74b3302.png)
-
+![image](https://user-images.githubusercontent.com/5772463/120603398-920a3d00-c47e-11eb-9b0e-4541fecc89b5.png)
 
 One thing needs to discuss is that is the Tax column necessary? As it is not an input variable, users cannot enter their rates in their countries. We intend to remove the column from the webpage if you're ok.
 
