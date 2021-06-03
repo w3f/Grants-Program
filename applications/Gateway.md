@@ -1,5 +1,6 @@
-# Gateway
+# W3F Open Grant Proposal
 
+* **Payment Address:** Ethereum 0xFc95BF412A1F6DCD77a65879bfa83469E92422f3
 
 ## Project Overview :page_facing_up:
 
@@ -18,36 +19,34 @@ Bridge module manages inbound/outbound transfers from bank and the blockchain
 
 ORML's `orml-currencies`, `orml-tokens` may be used for compatibility between other parachains to transfer bank digital currencies.
 
-Ecosystem Fit
+### Ecosystem Fit
 Stablecoins are just approaches to the non-volatile asset, and they are usually dependant to the price of money in a nation. Many people sometimes don't understand this. Instead of few stablecoin projects that tries to limit community to only use their stablecoins applying maximalism and zealotry convincing that their asset will be the next money, Digital Native Foundation just tries to accomodate real money by building a bridge to digitize independant variable, money to cryptocurrency ecosystem starting with Standard Protocol. This will ultimately bring freedom to people and form a co-existing check and balance system between crypto and fiat. If nations go wild, and hyperinflation rises, people can rely on stablecoins in crypto. If crypto goes wild and market crashes due to some regulations from a certain powerful government, people can always switch back their asset to fiat currency.
 
 
-Team members:busts_in_silhouette:
+## Team members:busts_in_silhouette:
 
-Team member:
+### Team member:
 Hyungsuk Kang, team leader
 
-Legal Structure
-Fiat Bridge is built by Digital Native Foundation, Key for managing bank digital currency providng liquidity is done by Ginkgo Bank, Aynil inc. is a payment gateway company to provide transfer API for fiat money in South Korea. 
+Member’s experience: As the boundary between crypto and fiat money is becoming more permeable, Hyungsuk and his team maintains Standard protocol to test and deliver the digital asset standard between them. Digital Native Foundation is an open source software working groups to develop new social infrastructure for next generations.
 
-Member’s experience
-As the boundary between crypto and fiat money is becoming more permeable, Hyungsuk and his team maintains Standard protocol to test and deliver the digital asset standard between them. Digital Native Foundation is an open source software working groups to develop new social infrastructure for next generations.
-
-Team Code Repos
-
-Member LinkedIn Profile
+#### Member LinkedIn Profile
 https://www.linkedin.com/in/hyungsukkang
 
-Team member:
+### Team member:
 DoHyung Jeon, Ginkgobankex Leader
 
-Member's experience
-DoHyung is the leader of Ginkgobankex. Ginkgobankex is Korea’s first digital bank that professionally manages blockchain digital assets and legal assets. DoHyung has managed to incorporate virtual assets into the real economy by collaborating with traditional Korean licensed digital banking institutions. Lastly, He has launched reasonable cryptocurrency financial products in the financial ecosystem for investors. 
+Member's experience: DoHyung is the leader of Ginkgobankex. Ginkgobankex is Korea’s first digital bank that professionally manages blockchain digital assets and legal assets. DoHyung has managed to incorporate virtual assets into the real economy by collaborating with traditional Korean licensed digital banking institutions. Lastly, He has launched reasonable cryptocurrency financial products in the financial ecosystem for investors. 
 
 
-Member LinkedIn Profile
+#### Member LinkedIn Profile
 https://www.linkedin.com/in/dohyungjeon
 
+
+### Legal Structure
+Fiat Bridge is built by Digital Native Foundation, Key for managing bank digital currency providng liquidity is done by Ginkgo Bank, Aynil inc. is a payment gateway company to provide transfer API for fiat money in South Korea. 
+
+### Team Code Repos
 
 
 ## Development Roadmap :nut_and_bolt:
@@ -66,16 +65,16 @@ The overall process for building this solutions are:
 
 3. build a smart contract and try with layer 2 solution(submitted in a separate grant)
 
-### Milestone 1 - Bank digital currency module
+* **Total Estimated Duration:** 4 months
+* **Full-Time Equivalent (FTE):**  2(1 for substrate, 1 for devops)
+* **Total Costs:** 6000USDT
 
-Total Estimated Duration: 4 months
-Full-time equivalent (FTE): 2(1 for substrate, 1 for devops)
-Total Costs: 6000USDT
-Payment Address: Ethereum 0xFc95BF412A1F6DCD77a65879bfa83469E92422f3
-Milestone 1 - Bank digital currency 
-Estimated Duration: 3 month
-FTE: 1
-Costs: 3000USDT
+
+### Milestone 1 - Bank digital currency 
+* **Estimated duration:** 3 month
+* **FTE:** 1
+* **Costs:** 3000USDT
+
 This milestone focuses on building a substrate runtime module to manage the bridge transactions and transferring inbound assets 
 
 | Number | Deliverable | Specification |
@@ -86,37 +85,37 @@ This milestone focuses on building a substrate runtime module to manage the brid
 | 3. | Docker | We will provide a dockerfile to demonstrate the full functionality of the oracle provider |
 
 ### Type
-`Role`: `Enum that determines the role of an account (Admin, Provider, Pauser)`
-`Role::Admin`: `An actor which can only allocate a role for an account`
-`Role::Provider`: `An actor that can adjust total supply of the fiat asset to transfer`
-`Role::Pauser`: `An actor that can shutdown the whole process of the bridge in emergent situations`
-`Role::Bridge`: `A bridge client account where it can operate the transfer`
+* `Role`: `Enum that determines the role of an account (Admin, Provider, Pauser)`
+* `Role::Admin`: `An actor which can only allocate a role for an account`
+* `Role::Provider`: `An actor that can adjust total supply of the fiat asset to transfer`
+* `Role::Pauser`: `An actor that can shutdown the whole process of the bridge in emergent situations`
+* `Role::Bridge`: `A bridge client account where it can operate the transfer`
 
 ### Storage
-`InQueue`: `queue of account ids that need to process for inbound tranfer`
-`OutQueue`: `queue of account ids that need to process for outbound transfer`
-`Roles`: `hashmap of account id as key and value as Role enum value`
-`OutstandingOutBound`: `hashmap of account id as key and value as outstanding balance that needs to be processed by the bridge after initiating outbound transfer`
-`OutstandingInBound`: `hashmap of account id as key and value as outstanding balance that needs to be processed by the bridge after initiating inbound transfer`
+* `InQueue`: `queue of account ids that need to process for inbound tranfer`
+* `OutQueue`: `queue of account ids that need to process for outbound transfer`
+* `Roles`: `hashmap of account id as key and value as Role enum value`
+* `OutstandingOutBound`: `hashmap of account id as key and value as outstanding balance that needs to be processed by the bridge after initiating outbound transfer`
+* `OutstandingInBound`: `hashmap of account id as key and value as outstanding balance that needs to be processed by the bridge after initiating inbound transfer`
 
 
 ### Functions
 
 #### Submitted by Bridge
-`process_inbound(account id)`: `a node.js cron client process inbound transfer of an account and remove the acccount id in InQueue. As a result of inbound transfer, the bank digitial currency from module account is moved to the user account`
-`process_outbound(account id)`: `a node.js cron client process outbound transfer of an account and remove the acccount id in InQueue. As a result of outbound transfer, the bank digital currency from user account is moved to module account`
-`inbound_transfer(account id, amount)`: `an express.js server initiates inbound transfer after receiving notificaton from payment gateway server`
+* `process_inbound(account id)`: `a node.js cron client process inbound transfer of an account and remove the acccount id in InQueue. As a result of inbound transfer, the bank digitial currency from module account is moved to the user account`
+* `process_outbound(account id)`: `a node.js cron client process outbound transfer of an account and remove the acccount id in InQueue. As a result of outbound transfer, the bank digital currency from user account is moved to module account`
+* `inbound_transfer(account id, amount)`: `an express.js server initiates inbound transfer after receiving notificaton from payment gateway server`
 
 #### Submitted by User
-`outbound_transfer(amount)`: `initiate outbound transfer from crypto to fiat with the amount of bank digital currency to send`
+* `outbound_transfer(amount)`: `initiate outbound transfer from crypto to fiat with the amount of bank digital currency to send`
 
 ### Events
-`SetTotalSupply(totalsupply)`: `Report total supply change by Provider`
-`ProcessedInboundTransfer(account, amount)`: `Report processed inbound transfer`
-`ProcessedOutBoundTransfer(account, amount)`: `Report processed outbound transfer`
-`InitiatedInBoundTransfer(account, amount)`: `Report initiated inbound transfer`
-`InitiatedOutBoundTransfer(account, amount)`: `Report initiated outbound transfer`
-`ChangedRole`: `Report role change by the admin`
+* `SetTotalSupply(totalsupply)`: `Report total supply change by Provider`
+* `ProcessedInboundTransfer(account, amount)`: `Report processed inbound transfer`
+* `ProcessedOutBoundTransfer(account, amount)`: `Report processed outbound transfer`
+* `InitiatedInBoundTransfer(account, amount)`: `Report initiated inbound transfer`
+* `InitiatedOutBoundTransfer(account, amount)`: `Report initiated outbound transfer`
+* `ChangedRole`: `Report role change by the admin`
 
 ### Milestone 2 - Bridge clients 
 * **Estimated Duration:** 3 month
@@ -141,7 +140,7 @@ The deliverable of this solution will consist of docker-compose file with 3 cont
 | 4. | DockerCompose | We will provide a `docker-compose.yml` file to run the multicontainer clients in one command `docker-compose up`|
 
 
-Future Plans
+## Future Plans
 - Kubernetes settings on bridge clients will be prepared to handle requests from the bank
 - [Bank of Korea is now seeking corporates to deliver their money](https://www.bok.or.kr/portal/bbs/P0000559/view.do?nttId=10064600&menuNo=200690), and we hope this software will help them to solve their problem
 - Full funciton test on PoS testnet, Opportunity
