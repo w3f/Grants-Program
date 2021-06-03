@@ -117,7 +117,6 @@ N/A
 | 2.  | UI for data visualizer  | Develop an environment to display the output (.csv and .json) for the end user in a pleasurable way. |
 | 3.  | Get Start Balance from Polkascan and on-chain | Auto-fill the Start Balance. |
 | 4.  | Help pages / comments  | Implement help texts and descriptions for users. |
-| 5.  | Internal testing  | Unit tests covering the functionality and logic |
 
 
 ### Milestone 2 (Testing)
