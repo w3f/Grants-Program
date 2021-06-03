@@ -52,7 +52,7 @@ The staking-rewards-collector is a tool to gather staking rewards for given addr
 
 ### Team members
 
-* Yu-kai Tseng [GitHub](https://github.com/yktseng) has an master's degree in Computer Science. He also has 9-year working experience on developing Industrial Network Management Softwares/Services, and is now a freelancer.
+* Yu-kai Tseng [GitHub](https://github.com/yktseng) has an master's degree in Computer Science. He also had 9-year working experience on developing Industrial Network Management Softwares/Services, and is now a freelancer. Yu-kai is familiar with backend service developing and had experience on leading large distributed system design and develop.
 
 * Yao-hsin Chen [GitHub](https://github.com/iisaint) has a PhD in Computer Science. 
 
