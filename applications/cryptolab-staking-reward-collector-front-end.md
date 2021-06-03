@@ -14,7 +14,7 @@ The Staking Rewards Collector requests us to make a front-end UI so that non-tec
 
 ### Project Details
 
-We plan to utilize the current Staking Reward webpage (https://www.cryptolab.network/tools/dotSR) on CryptoLab as the base of the design. However, we will change the data source from our DB to Staking Rewards Collector (subscan).
+We plan to utilize the current Staking Reward webpage (https://www.cryptolab.network/tools/dotSR) on CryptoLab as the design base. However, we will change the data source from our DB to Staking Rewards Collector, retrieving rewards from the subscan because the subscan has entirely stored all rewards data.
 
 * Mockup UI
 
@@ -22,7 +22,7 @@ We plan to utilize the current Staking Reward webpage (https://www.cryptolab.net
 
 ![image](https://user-images.githubusercontent.com/5772463/120571225-3fb02880-c44c-11eb-89b3-59328790e19f.png)
 
-See the image above, CryptoLab already have a similar page for users to query their rewards. We enhance the followings
+See the image above, CryptoLab already have a similar page for users to query their rewards. We are going to enhance the followings
 
 * Filter as requested
 * Export to CSV or JSON
@@ -48,7 +48,7 @@ Front End: Vue.js
 
 Back End: Rust, NodeJS
 
-* Architecture
+* Architetcure
 
 ![image](https://user-images.githubusercontent.com/5772463/120573135-b0a50f80-c44f-11eb-912a-d625ba4112fd.png)
  
@@ -56,7 +56,7 @@ Back End: Rust, NodeJS
 
 ### Ecosystem Fit
 
-The staking-rewards-collector is a tool for gathering staking rewards for given addresses and cross-referencing those with daily price data. This is a handy tool for every validator and nominator in the ecosystem. However, since it currently has a CLI and requires technical knowledge to set up (git, nodejs, yarn). A front-end hosted on a website could help many users reach this tool and enjoy the benefits.
+The staking-rewards-collector is a tool for gathering staking rewards for given addresses and cross-referencing those with daily price data. It is a handy tool for every validator and nominator in the ecosystem. However, since it currently has a CLI and requires technical knowledge to set up (git, nodejs, yarn). A front-end hosted on a website could help many users reach this tool and enjoy the benefits.
 
 ## Team :busts_in_silhouette:
 
@@ -113,7 +113,8 @@ N/A
 | ------------- | ------------- | ------------- |
 | 1. | UI for user input | Develop an UI to request necessary data from the users. |
 | 2.  | UI for data visualizer  | Develop an environment to display the output (.csv and .json) for the end user in a pleasurable way. |
-| 3.  | Help pages / comments  | Implement help texts and descriptions for users. |
+| 3.  | Get Start Balance from Polkascan and on-chain | Auto-fill the Start Balance. |
+| 4.  | Help pages / comments  | Implement help texts and descriptions for users. |
 
 
 ### Milestone 2 (Testing)
