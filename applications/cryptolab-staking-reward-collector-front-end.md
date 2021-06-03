@@ -27,7 +27,7 @@ See the image above, CryptoLab already have a similar page for users to query th
 * Filter as requested
 * Export to CSV or JSON
 
-![image](https://user-images.githubusercontent.com/5772463/120590152-a80f0200-c46c-11eb-922f-c45cb20b28c5.png)
+![image](https://user-images.githubusercontent.com/5772463/120603322-7a32b900-c47e-11eb-8987-a75c43776b3f.png)
 
 The table content would also be re-worked to the Staking Rewards Collector one, mockup as below.
 
