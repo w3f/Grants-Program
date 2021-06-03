@@ -40,10 +40,6 @@ Upon clicking the filter icon, a dialog would appear and provide the following o
 
 ![image](https://user-images.githubusercontent.com/5772463/120569762-2ce82480-c449-11eb-84fb-4f6ba38a1960.png)
 
-To further enhance the function, we plan to auto-fill the *Start Balance* by getting the info from Polkascan if possible.
-
-![image](https://user-images.githubusercontent.com/5772463/120570179-18f0f280-c44a-11eb-9ec6-3a68e91803b3.png)
-
 * Tech Stack
 
 Front End: Vue.js
@@ -135,7 +131,9 @@ N/A
 
 ## Future Plans
 
-Not for now.
+Ask users to enter the *Start Balance* is bothersome. To further enhance the Staking Rewards Collector, it is technically possible to auto fill the *Start Balance* of the start date by recording the block number at 12:00am each day and then getting the balances during the block number from Polkascan. However, it requires certain works and would not be included in the planned 3-week duration. We may do it if feedbacks from users are positive.
+
+![image](https://user-images.githubusercontent.com/5772463/120570179-18f0f280-c44a-11eb-9ec6-3a68e91803b3.png)
 
 ## Additional Information :heavy_plus_sign:
 
