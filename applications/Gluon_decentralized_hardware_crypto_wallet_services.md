@@ -283,7 +283,6 @@ To assist you in defining it, we created a document with examples for some grant
 | 2.0 | Web Portal | Create social recovery page |
 | 3.0 | Mobile app | Social recovery if initiated from phone |
 | 3.1 | Mobile app | Scan QR code to confirm friends recovery request |
-| 4.0 | Gluon TeaLeaf | Suspend old P2 P3 |
 | 4.1 | Layer1 | Suspend old account activity during the recovering process |
 | 4.2 | Gluon TeaLeaf | Generate a new account to accept assets |
 | 5.0 | Layer1 | Verify all social recovery confirmation, transfer assets to new account |
@@ -312,6 +311,7 @@ This milestone require Schnorrkel threshold signature issue https://github.com/w
 | 4.0 | Gluon wasm module (TeaLeaf) | Select delegator and executor |
 | 4.1 | Gluon TeaLeaf | Executor aggregates public key from initial pinners |
 | 4.2 | Gluon TeaLeaf | Delegator verify and response to Layer 1 |
+| 4.3 | Gluon TeaLeaf | Suspend old P2 P3 when a social recovery task in progress|
 | 5.0 | Layer1 | Create Schnorr multisig test chain | 
 | 5.1 | Layer1 | Update user assets |
 
@@ -336,7 +336,7 @@ This milestone require Schnorrkel threshold signature issue https://github.com/w
 | 4.1 | Gluon TeaLeaf | Executor verify and aggregates signatures. Send the P2 signatures to test net |
 | 5.0 | Layer 1 | Settle payment distribution |
  
-### Milestone 5 - Migrate and test on Polkadot
+### Milestone 5 - Migrate to real hardware and test on Polkadot
 * **Estimated Duration:** 4 Weeks
 * **FTE** 2.5 FTE
 * **Cost:** 5.6k USD
@@ -349,7 +349,7 @@ This milestone require Schnorrkel threshold signature issue https://github.com/w
 
 | Task ID | Module name | Description |
 | ------ | ----------- | ---- |
-| 1.0 | All modules | Integration test |
+| 1.0 | All modules | Migrate to AWS Nitro enclave and Integration test |
 | 2.0 | Web Portal | User's manual, instruction |
 | 3.0 | Documents | Integration API for 3rd party |
 
@@ -357,7 +357,6 @@ This milestone require Schnorrkel threshold signature issue https://github.com/w
 
  Gluon will be a full-featured demo application for the TEA project once it is ready. So far, there are a few limitations that we are working on.
 
- - TEA modules are running on a software simulator at the moment. In the final product, it will only run on HSM so that it can be protected by hardware. The simulators are only allowed to be running in the test chain, not in the production chain.
 - Integrate with [Parsec](https://github.com/parallaxsecond/parsec). Parsec can be an abstract layer between TeaRuntime and security-related hardware. It makes TEA agnostic to different hardware platforms. It may increase the adaption of TEA. 
  - Besides DOT, we will all Polkadot ecosystem chains and other Schnorr signature compatible chains.
  - We will retire our facade interface service and use off-chain workers instead.
