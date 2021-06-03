@@ -27,11 +27,12 @@ See the image above, CryptoLab already have a similar page for users to query th
 * Filter as requested
 * Export to CSV or JSON
 
-![image](https://user-images.githubusercontent.com/5772463/120603322-7a32b900-c47e-11eb-8987-a75c43776b3f.png)
+![image](https://user-images.githubusercontent.com/5772463/120603398-920a3d00-c47e-11eb-9b0e-4541fecc89b5.png)
 
 The table content would also be re-worked to the Staking Rewards Collector one, mockup as below.
 
-![image](https://user-images.githubusercontent.com/5772463/120603398-920a3d00-c47e-11eb-9b0e-4541fecc89b5.png)
+![image](https://user-images.githubusercontent.com/5772463/120638628-f0e1ad80-c4a2-11eb-8297-911efdb9aa20.png)
+
 
 One thing needs to discuss is that is the Tax column necessary? As it is not an input variable, users cannot enter their rates in their countries. We intend to remove the column from the webpage if you're ok.
 
