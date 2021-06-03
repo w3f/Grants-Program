@@ -14,17 +14,20 @@ The Staking Rewards Collector requests us to make a front-end UI so that non-tec
 
 ### Project Details
 
+We plan to utilize the current Staking Reward webpage (https://www.cryptolab.network/tools/dotSR) on CryptoLab as the base of the design. However, we will change the data source from our DB to Staking Rewards Collector (subscan).
+
 * Mockup UI
 
 1. Staking Reward Dashboard
 
 ![image](https://user-images.githubusercontent.com/5772463/120571225-3fb02880-c44c-11eb-89b3-59328790e19f.png)
 
-See the image above, CryptoLab already have a similar page for users to query their rewards. We plan to enhance the page by adding a toggle for users to choose whether they want to use data from CryptoLab or the Staking Reward Collector.
+See the image above, CryptoLab already have a similar page for users to query their rewards. We enhance the followings
 
-If users choose to use Staking Reward Collector, a filter (see 2.) would be provided and they can export data to either JSON or CSV.
+* Filter as requested
+* Export to CSV or JSON
 
-![image](https://user-images.githubusercontent.com/5772463/120578682-c4a13f00-c458-11eb-96ab-ff163bb77b01.png)
+![image](https://user-images.githubusercontent.com/5772463/120590152-a80f0200-c46c-11eb-922f-c45cb20b28c5.png)
 
 2. Staking Reward Filter
 
@@ -128,10 +131,10 @@ N/A
 
 ## Future Plans
 
-In this stage, two independent versions of staking rewards (CryptoLab and Staking Rewards Collector) would be on the website. In future, we will see which one is used more often and see how we integrate them into one.
+Not for now.
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 
-We see the RFP on the github and think it is very similar to what we have already done. We think we are suitable on working on it because CryptoLab has provided tools for both validators and nominators. 
+We see the RFP on the github and think it is very similar to what we have already done. We think we are suitable on working on it because CryptoLab has provided tools for both validators and nominators. Thus current CryptoLab users are able to enjoy the benefit from the Staking Rewards Collector. The CryptoLab can also attract more Staking Rewards Collector users to use the site.
