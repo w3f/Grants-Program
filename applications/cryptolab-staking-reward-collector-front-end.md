@@ -29,6 +29,11 @@ See the image above, CryptoLab already have a similar page for users to query th
 
 ![image](https://user-images.githubusercontent.com/5772463/120590152-a80f0200-c46c-11eb-922f-c45cb20b28c5.png)
 
+The table content would also be re-worked to the Staking Rewards Collector one, mockup as below.
+
+![image](https://user-images.githubusercontent.com/5772463/120591006-fffa3880-c46d-11eb-825c-6095f74b3302.png)
+
+
 2. Staking Reward Filter
 
 Upon clicking the filter icon, a dialog would appear and provide the following options as requested.
