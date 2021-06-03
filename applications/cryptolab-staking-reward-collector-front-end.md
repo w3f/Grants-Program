@@ -113,8 +113,7 @@ N/A
 | ------------- | ------------- | ------------- |
 | 1. | UI for user input | Develop an UI to request necessary data from the users. |
 | 2.  | UI for data visualizer  | Develop an environment to display the output (.csv and .json) for the end user in a pleasurable way. |
-| 3.  | Get Start Balance from Polkascan and on-chain | Auto-fill the Start Balance. |
-| 4.  | Help pages / comments  | Implement help texts and descriptions for users. |
+| 3.  | Help pages / comments  | Implement help texts and descriptions for users. |
 
 
 ### Milestone 2 (Testing)
