@@ -110,6 +110,10 @@ Since players will be able to possess fleets of ships, we will track that in the
 
 Focused on releasing the game to the public as soon as possible, the deployment to a public (test) network, creation of a mobile client and publishing on App Stores (potentially Play Store at first, due to Apple blockchain apps policy).
 
+### Deliverables
+
+Frontend part of all deliverables to be made in JavaScript (React / Babylon.js / Capacitor.js).
+Backend (smart contract) part in Ink.
 
 Milestone 3 (1)
 * **Estimated Duration:** 1.5 month
@@ -153,4 +157,17 @@ Milestone 4 (2)
 
 ## Future Plans
 
-The goal is to have a deployed, marketable test version on a public network at the end of Milestone 4.
+Articles:
+https://wiktorstarczewski.medium.com/newomega-3504ce08120
+https://wiktorstarczewski.medium.com/newomega-now-and-future-a87589d01722
+
+Homepage:
+https://www.newomega.online/
+
+
+The goal is to have a deployed, playable, and marketable test version on a public network at the end of Milestone 4. The combination of space exploration, leaving a permanent mark on an inifinite universe, combined with a tactical combat element, all delivered in a modern 3d web (hybrid) app, will provide a broader "reason" to enjoy the game, and the ranked combat (leaderboards + staking own ingame money on fights) will provide a competitive element to compliment.
+
+In time (after M4), the Universe will become more diverse; producing different minerals which will be used to craft Modules of certain parameters. The minerals/production system should offer the player an option creation of an "industry" used to produce Modules, and the mineral types should be randomly generated when discovering Systems, making control of some Systems more attractive than others and giving more reason to territory control.
+
+Once released to test users, additional features will be driven by test user feedback, at which stage we will also trigger development on onboarding features (in game tutorials, starting resources, but also gas (weight => transaction cost) sponsoring model to remove the requirement of owning tokens for new players (to pay registration contract's gas fees, for example). And as the DOT ecosystem matures, new opportunities for technical improvements will present themselves.
+
