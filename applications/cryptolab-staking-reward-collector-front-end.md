@@ -38,9 +38,9 @@ One thing needs to discuss is that is the Tax column necessary? As it is not an 
 
 2. Staking Reward Filter
 
-Upon clicking the filter icon, a dialog would appear and provide the following options as requested.
+Upon clicking the filter icon, a dialog would appear and provide the following options as requested. A help button would be in this dialog to give users hints of how to use it.
 
-![image](https://user-images.githubusercontent.com/5772463/120569762-2ce82480-c449-11eb-84fb-4f6ba38a1960.png)
+![image](https://user-images.githubusercontent.com/5772463/120784731-fc92aa00-c55e-11eb-9dee-f71f5b3ba49c.png)
 
 * Tech Stack
 
@@ -114,15 +114,18 @@ N/A
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | GPLv3 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1.  | UI for user input | Develop an UI to request necessary data from the users. |
-| 2.  | UI for data visualizer  | Develop an environment to display the output (.csv and .json) for the end user in a pleasurable way. |
-| 3.  | Help pages / comments  | Implement help texts and descriptions for users. |
-| 4.  | Deployment | Deploy the code on a centralized server. |
-| 5.  | Test live environment | Test the homepage with various different OS and browsers and provide a report |
-| 6.  | Polishing | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. (1 day) |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. (2 days) |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. (3 days)|
+| 1.  | Integrate Staking Rewards Collector to CryptoLab | Develop CryptoLab backend so that it can call the Staking Rewards Collector and parse the output files. (2 days) |
+| 2.  | Integrate Staking Rewards Collector to CryptoLab Website | Add RESTful APIs to allow parameter input and retrieve the output files. (1 day)|
+| 3.  | UI for filter | Develop a dialog to allow user input necessary parameters. (1 day) |
+| 4.  | UI for data visualizer  | Modify the table on our current Staking Reward Viewer to fit the requested one. (1 day) |
+| 5.  | Drop-down List for download report  | Modify the download button to allow users select either CSV or JSON. (0.5 day) |
+| 6.  | Help page  | Implement help texts and descriptions for users. (0.5 day)|
+| 7.  | Deployment | Deploy the code on CryptoLab. (1 day) |
+| 8.  | Test live environment | Test on both Chrome and Firefox and provide a report (1 day) |
+| 9.  | Polishing | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. (TBD days)|
 
 
 ## Future Plans
