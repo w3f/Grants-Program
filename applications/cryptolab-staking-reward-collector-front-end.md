@@ -106,31 +106,23 @@ N/A
 
 ### Milestone 1 (Implementation)
 
-* **Estimated Duration:** 12 days
-* **FTE:**  9
-* **Costs:** 3500 USD
+* **Estimated Duration:** 15 days
+* **FTE:**  1
+* **Costs:** 4000 USD
 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | UI for user input | Develop an UI to request necessary data from the users. |
+| 0a. | License | GPLv3 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1.  | UI for user input | Develop an UI to request necessary data from the users. |
 | 2.  | UI for data visualizer  | Develop an environment to display the output (.csv and .json) for the end user in a pleasurable way. |
-| 3.  | Get Start Balance from Polkascan and on-chain | Auto-fill the Start Balance. |
-| 4.  | Help pages / comments  | Implement help texts and descriptions for users. |
-
-
-### Milestone 2 (Testing)
-
-* **Estimated Duration:** 3 days
-* **FTE:**  3 days
-* **Costs:** 500 USD
-
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | Deployment | Deploy the code on a centralized server. |
-| 2. | Test live environment | Test the homepage with various different OS and browsers and provide a report |
-| 3. | Polishing | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. |
+| 3.  | Help pages / comments  | Implement help texts and descriptions for users. |
+| 4.  | Deployment | Deploy the code on a centralized server. |
+| 5.  | Test live environment | Test the homepage with various different OS and browsers and provide a report |
+| 6.  | Polishing | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. |
 
 
 ## Future Plans
