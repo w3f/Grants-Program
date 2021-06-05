@@ -139,7 +139,7 @@ Further refining components and add supports for new VMs.
 ## Additional Information :heavy_plus_sign: 
 
 * What work has been done so far?<br>
-We have completed the development feasibility verification of the intermodulation between WASM contract and EVM contract.
+We have completed the development feasibility verification of the intermodulation between WASM contract and EVM contract. And start coding.
 
 * Are there are any teams who have already contributed (financially) to the project?<br>
 No
