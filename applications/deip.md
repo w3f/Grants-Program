@@ -96,8 +96,8 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 
 ### Milestone 1 Implement IP Management/Governance Module 
 * **Estimated Duration:** 2 month
-* **FTE:**  4.5
-* **Costs:** 1.21 BTC
+* **FTE:**  3.5
+* **Costs:** 0.94 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -108,8 +108,17 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 | 2. | Project and IP management | Create project, edit project, create IP asset within project. C++/Rust|  
 | 3. | IP registration | Register (timestamp) a fact of creation and/or ownership of specific IP asset on the blockchain. C++/Rust|
 | 4. | Access control | Manage access permissions to specific IP asset with unique Proof of Share entries that confirm a specific user was granted access to an asset. C++/Rust|
-| 5. | Web-based UI | Manage working groups (DAOs), project management, IP asset creation and registration, certificate verification page. Vue.js & Node.js + MongoDb for web-based app backend|
-| 6. | Docker | Dockerfile to run a chain. 
+| 5. | Docker | Dockerfile to run a chain. 
+
+### Milestone 2 Implement Web-base UI 
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 0.27 BTC
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 1. | Web-based UI | Manage working groups (DAOs), project management, IP asset creation and registration, certificate verification page. Vue.js & Node.js + MongoDb for web-based app backend|
 
 ## Future Plans
 
