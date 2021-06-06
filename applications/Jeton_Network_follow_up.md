@@ -21,8 +21,8 @@ We believe that the promising substrate blockchain technology enables us to brin
 
 This is a follow up grant, on https://github.com/w3f/Open-Grants-Program/pull/265, of which all milestone have been submitted.
 * Milestone 1 [LINK](https://github.com/w3f/Grant-Milestone-Delivery/pull/102) - [Evaluation](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/evaluations/dotmog_1_alxs.md)
-* Milestone 2 [LINK](https://github.com/w3f/Grant-Milestone-Delivery/pull/161) feedback in work 
-* Milestone 3 [LINK](...) feedback in work  
+* Milestone 2 [LINK](https://github.com/w3f/Grant-Milestone-Delivery/pull/161) - [Evaluation](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/evaluations/dotmog_2_Noc2.md)
+* Milestone 3 [LINK](https://github.com/w3f/Grant-Milestone-Delivery/pull/162) - [Evaluation](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/evaluations/dotmog_3_Noc2.md)
 
 This followup grant is intended to create real value in the provided API, GameEngine, Service Layer and Unity Asset to help ramping up teams focusing on game develoment with substrate based chains, we are currently in development towards our early game access target in july for the DOTMog Mobile Game, which is our flagship game. The game has been described in our first open-grant application, as it is not part of the grant itself, we have removed the full description of it.
 
@@ -64,6 +64,8 @@ https://github.com/dotmog/SubstrateNetApi
 ![image](https://user-images.githubusercontent.com/17710198/116819173-1d866a80-ab6f-11eb-99e4-0073ea97a516.png)
 
 #### Documentation of core components, protocols, architecture etc. to be deployed
+
+* https://github.com/JetonNetwork All components for the Generic Gaming Blockchain and the UnitySDK will be provided under the organisation Jeton Network.
 
 * https://github.com/dotmog/SubstrateNetApi .NETStandard2.0 (SubstrateNetApi with Wallet functionalities, usable in Unity)
 * https://github.com/dotmog/SubstrateNetCore .NETStandard2.0 (Core GameEngine) will be extracted out of our private DOTMogCore Repository.
@@ -108,10 +110,11 @@ In past projects the team has already worked together on different projects one 
 ### Team Code Repos
 
 * https://github.com/dotmog/SubstrateNetApi
-* https://github.com/dotmog/substrate/tree/dotmog_v3.0.0 (dotmog pallet)
+* https://github.com/dotmog/pallet-dotmog (dotmog pallet)
 * https://github.com/dotmog/DOTMogCore (GameEngine, currently private)
 * https://github.com/dotmog/DOTMogClient (Unity3D Client, currently private)
 * https://github.com/darkfriend77/Unity3DExample
+* https://github.com/dotmog/SubstrateUnityWalletSimple
 
 Other projects lead and maintained by the teammembers
 * https://github.com/HearthSim/SabberStone
@@ -128,6 +131,7 @@ https://github.com/usetech-llc/polkadot_api_dotnet/pull/10
 
 Active organisations of the teammebers
 * https://github.com/dotmog
+* https://github.com/JetonNetwork
 * https://github.com/WorldOfMogwais
 * https://github.com/mogwaicoin
 * https://github.com/HearthSim
@@ -142,11 +146,11 @@ Active organisations of the teammebers
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 1 months
+* **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 1-2 FTE
 * **Total Costs:** 30.000 USD
 
-Optional is the a full game of connect four for additional 10.000 USD, with a timeline to finish end of 2021, the full video serie.
+Optional is the milestone 4 a full tutorial for a game of "connect four" for additional 10.000 USD, with a timeline to finish end of 2021, the tutorial video serie.
 
 ### Milestone 1: SubstrateNetApi — Rework and Documentation of the Substrate .NET API
 * **Estimated Duration:** 1 month
