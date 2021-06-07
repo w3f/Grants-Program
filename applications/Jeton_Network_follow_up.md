@@ -26,11 +26,13 @@ This is a follow up grant, on https://github.com/w3f/Open-Grants-Program/pull/26
 
 This followup grant is intended to create real value in the provided API, GameEngine, Service Layer and Unity Asset to help ramping up teams focusing on game develoment with substrate based chains, we are currently in development towards our early game access target in july for the DOTMog Mobile Game, which is our flagship game. The game has been described in our first open-grant application, as it is not part of the grant itself, we have removed the full description of it.
 
+[DEMO (from May 2021)](https://youtu.be/xPE16aMZZpc)
+
 What matters for the grant are the artifacts that can be reused and extracted out of our game framework. The intention is to build a full featuring SDK for Unity and Substrate, which will be provided as a free Asset in the Unity Asset Store [LINK](https://assetstore.unity.com/) and usable out-of-the box with the node-template pallet.
 
 This is part of the components that **Jeton Network** is providing and maintaining for future blockchain game developers. Jeton Network intends to work towards a second order relay chain for games that like the benefit of using there own blockchain, but can't afford a parachain or parathread slot on Polkadot or Kusama.
 
-[DEMO (from May 2021)](https://youtu.be/xPE16aMZZpc)
+![image](https://user-images.githubusercontent.com/17710198/121006443-33e89d00-c791-11eb-995a-948be52ae070.png)
 
 **Bot based testing with the SubstrateNetApi and GameEngine**
 ![image](https://user-images.githubusercontent.com/17710198/116819828-2167bc00-ab72-11eb-8806-f402fa807054.png)
@@ -150,7 +152,7 @@ Active organisations of the teammebers
 * **Full-time equivalent (FTE):** 1-2 FTE
 * **Total Costs:** 30.000 USD
 
-Optional is the milestone 4 a full tutorial for a game of "connect four" for additional 10.000 USD, with a timeline to finish end of 2021, the tutorial video serie.
+Optional is the milestone 4 a full tutorial for a game of "connect four" for additional 6.000 USD, with a timeline to finish end of 2021, the tutorial video serie.
 
 ### Milestone 1: SubstrateNetApi — Rework and Documentation of the Substrate .NET API
 * **Estimated Duration:** 1 month
@@ -170,11 +172,12 @@ SubstrateNetApi is the base API and it needs a dedicated documentation to allow 
 | 1b. | Enhance API | Implement Extension Custom Pallets |
 | 1c. | Enhance API | Implement Extension Custom Types |
 | 1d. | Enhance API | Generic Approach on Encode & Decode of Types |
-| 2. | Schnorrkel | Reimplement Schnorrkel, into SubstrateNetApi |
-| 2a. | Schnorrkel | Publish Schnorrkel project, with proper licensing |
+| 2. | Schnorrkel | Reintegrate Schnorrkel, into SubstrateNetApi |
+| 2a. | Schnorrkel | Publish Schnorrkel project, with proper licensing as nuget package |
 | 2b. | Schnorrkel | Implement SR25519, similar to ED25519 in SubstrateNetApi |
-| 2c. | Schnorrkel | Tests |
-| 3. | Mnemonic | Add mnemonic seed |
+| 2c. | Schnorrkel | Write Tests in SubstrateNetApi |
+| 3. | Mnemonic | Add mnemonic seed, in SubstrateNetApi |
+| 3a. | SubstrateNetWallet | Add mnemonic seed, recovery on lost password or wallet file |
 | 4. | Types | Wiki documentation on workflow for adding types and maintaining the api |
 | 4a. | Types | Implement Rust special enums, who are used like structs |
 | 5. | Testing  | Rework & Add Unit Test for better coverage of the migrated SubstrateNetApi | 
@@ -184,6 +187,8 @@ SubstrateNetApi is the base API and it needs a dedicated documentation to allow 
 | 6. | Documentation | Documentation referencing prev. milestone 1 https://github.com/w3f/Grant-Milestone-Delivery/pull/102#issuecomment-795929390  |
 | 6a. | Inline Documentation | Add inline documentation to make code more understandable |
 | 6b. | Wiki | Add a structured wiki, include components and workflows, ex. updateing blockchain metadata, implementing custom pallets, implementing custom types .... |
+| 7. | Jeton Network | Internet appearance of the Jeton Network, under www.jeton.network |
+| 7a. | Jeton Network | Article and Blog about this open grant and the deliverables, at least one deep dive post into each milestone subject area, SubstrateNetApi, GameEngine, ServiceLayer & ConnectFour (if accpeted) |
 
 ### Milestone 2: GameEngine — Implement Basic GameEngine Domain Driven Design (DDD) & Implement Basic Bot's for Load and Game Testing
 * **Estimated Duration:** 1 month
@@ -245,7 +250,7 @@ Creating a Free Unity Asset in the Assetstore, will allow access to Substrate fo
 ### (Optional) Milestone 4: Complete Game "Connect four", as Tutorial from scratch on Substrate and Unity playable on Mobile
 * **Estimated Duration:** 1 month
 * **FTE:**  1-2
-* **Costs:** 10.000 USD 
+* **Costs:** 6.000 USD 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
