@@ -4,7 +4,7 @@
 
 * **Project Name:** Gluon - Decentralized Hardware Crypto Wallet Services
 * **Team Name:** TEA Project
-* **Payment Address:** bc1qztagzeez5ke6s2z6tkac0smuv2fu74wz2ptc5f
+* **Payment Address:** BTC:bc1qztagzeez5ke6s2z6tkac0smuv2fu74wz2ptc5f  -or- ERC20:0x0cE6254832D553590349Ef7a427519d1eb8af70F
 
 > *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
