@@ -53,14 +53,13 @@ This is our current Dev GUI, from our running alpha release, we will extract it 
 
 ![image](https://user-images.githubusercontent.com/17710198/116822118-431a7080-ab7d-11eb-92a1-c37263afcd12.png)
 
-
 #### API specifications of the core functionality
 
 https://github.com/dotmog/SubstrateNetApi
 
 #### An overview of the technology stack to be used
 
-![image](https://user-images.githubusercontent.com/17710198/121248383-ab0e5600-c8a3-11eb-8f0d-bdfd6a52d6a0.png)
+![image](https://user-images.githubusercontent.com/17710198/121258352-1578c380-c8af-11eb-8ab1-453e68299743.png)
 
 #### Documentation of core components, protocols, architecture etc. to be deployed
 
