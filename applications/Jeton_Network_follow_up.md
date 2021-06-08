@@ -217,9 +217,11 @@ Game Engine is the logic layer for games and provides the necessary informations
 | 2e. | Service Layer | Unit Tests |
 | 2f. | Service Layer | Documentation |
 | 3. | Rest API | Adding service Layer Rest API |
-| 3. | Documentation | 
-| 3a. | Documentation | Wiki about the service layer and the proper setup |
-| 3b. | Documentation | Wiki about accessing the Rest API |
+| 4. | Basic Bot | Basic Bot Template, Connecting and executing a workflow |
+| 5. | Documentation | 
+| 5a. | Documentation | Wiki about the service layer and the proper setup |
+| 5b. | Documentation | Wiki about accessing the Rest API |
+| 5c. | Documentation | Wiki about creating a bot based multithreaded test environment for a game |
 
 ### Milestone 3: Unity — Substrate SDK for Unity, Documentation, Templates and Tutorial Video
 * **Estimated Duration:** 1 month
