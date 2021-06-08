@@ -148,16 +148,14 @@ Active organisations of the teammebers
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 3 months
+* **Total Estimated Duration:** 4 months
 * **Full-time equivalent (FTE):** 1-2 FTE
 * **Total Costs:** 30.000 USD
-
-Optional is the milestone 4 a full tutorial for a game of "connect four" for additional 6.000 USD, with a timeline to finish end of 2021, the tutorial video serie.
 
 ### Milestone 1: SubstrateNetApi — Rework and Documentation of the Substrate .NET API
 * **Estimated Duration:** 1 month
 * **FTE:**  1-2
-* **Costs:** 10.000 USD 
+* **Costs:** 8.000 USD 
 
 SubstrateNetApi is the base API and it needs a dedicated documentation to allow better adoption and also simplify custom needs, like integration to other blockchain types and more examples and inline documentation.
 
@@ -193,7 +191,7 @@ SubstrateNetApi is the base API and it needs a dedicated documentation to allow 
 ### Milestone 2: GameEngine — Implement Basic GameEngine Domain Driven Design (DDD) & Implement Basic Bot's for Load and Game Testing
 * **Estimated Duration:** 1 month
 * **FTE:**  1-2
-* **Costs:** 10.000 USD 
+* **Costs:** 8.000 USD 
 
 Game Engine is the logic layer for games and provides the necessary informations for the presentation layer that is in unity. To avoid having storage accessed by players all the time, we provide a service layer that keeps global storage changes uptodate an creates event handling which can be subscribed by the representation layer for updates or animations.
 
@@ -226,7 +224,7 @@ Game Engine is the logic layer for games and provides the necessary informations
 ### Milestone 3: Unity — Substrate SDK for Unity, Documentation, Templates and Tutorial Video
 * **Estimated Duration:** 1 month
 * **FTE:**  1-2
-* **Costs:** 10.000 USD 
+* **Costs:** 8.000 USD 
 
 Creating a Free Unity Asset in the Assetstore, will allow access to Substrate for game devs, it will take some iterations to provide an out-of-the-box solution and the fast paced susbtrate develoment might create additional maintanance work during the on going project. The goal is to provide an end to end working Asset that uses the node-template and allows access to alice and bob account and balances in a mobile deployable project on unity.
 
@@ -247,7 +245,7 @@ Creating a Free Unity Asset in the Assetstore, will allow access to Substrate fo
 | 3b. | Asset | Tutorial video on adding a custom pallet and accessing it in unity |
 | 4. | Documentation | Maintaining API, Service Layer and UNity Asset on newest Substrate Vers. |
 
-### (Optional) Milestone 4: Complete Game "Connect four", as Tutorial from scratch on Substrate and Unity playable on Mobile
+### Milestone 4: Complete Game "Connect four", as Tutorial from scratch on Substrate and Unity playable on Mobile (Player vs. Player)
 * **Estimated Duration:** 1 month
 * **FTE:**  1-2
 * **Costs:** 6.000 USD 
@@ -258,11 +256,14 @@ Creating a Free Unity Asset in the Assetstore, will allow access to Substrate fo
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Unity | Pallets, Connect four, Matchmaker, Multiplayer
+| 1. | Unity | Pallets, Connect four, Matchmaker, Multiplayer |
+| 1a. | Substrate | Pallet match maker pallet for enabling multiplayer pairing |
+| 1b. | Substrate | Pallet match maker rank system support, enables to have ranked match ups |
 | 2. | Unity | GameEngine Connect four |
 | 3. | Unity | Service Layer Connect four |
 | 4. | Unity | Unity Project |
-| 5. | Unity | Youtube Videos serie Step-by-Step Connect four on Substrate Mobile |
+| 4a. | Unity | Multiplayer playable "Connect Four" for Mobile (Android) |
+| 6. | Unity | Youtube Videos serie Step-by-Step Connect four on Substrate Mobile |
 
 ## Future Plans
 We are working towards the goal of creating a modular gaming blockchain with reusable components that game devs can use and enhance.
