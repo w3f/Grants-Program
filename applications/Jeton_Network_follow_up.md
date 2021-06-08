@@ -60,18 +60,32 @@ https://github.com/dotmog/SubstrateNetApi
 
 #### An overview of the technology stack to be used
 
-
-![Possible Application Architecture](https://raw.githubusercontent.com/dotmog/SubstrateNetApi/origin/images/advanced_architecture.png)
-
-![image](https://user-images.githubusercontent.com/17710198/116819173-1d866a80-ab6f-11eb-99e4-0073ea97a516.png)
+![image](https://user-images.githubusercontent.com/17710198/121248383-ab0e5600-c8a3-11eb-8f0d-bdfd6a52d6a0.png)
 
 #### Documentation of core components, protocols, architecture etc. to be deployed
 
 * https://github.com/JetonNetwork All components for the Generic Gaming Blockchain and the UnitySDK will be provided under the organisation Jeton Network.
 
-* https://github.com/dotmog/SubstrateNetApi .NETStandard2.0 (SubstrateNetApi with Wallet functionalities, usable in Unity)
-* https://github.com/dotmog/SubstrateNetCore .NETStandard2.0 (Core GameEngine) will be extracted out of our private DOTMogCore Repository.
-* https://github.com/dotmog/SubstrateNetUnityClient .NETStandard2.0 (Asset Unity) will be extracted out of our private DOTMogClient Repository.
+**Generic Game Pallets**<br/>
+Generic Game Pallets, build special features used in games, they are fully supported in the UnitySDk<br/>
+Match Maker Pallet, Game Event Pallet and ConnectFour Pallet using them both. More to come, ...
+
+**UnitySDK for Substrate**
+- Supporting features GameWallet (Wallet Creation, Restore, Mnemonic, Send)<br/>
+People can easily sign in to your game, by creating a wallet. Password encryption to login and a mnemonic to transfer or restore a lost passwort or mobile device.  
+- Supporting features Matchmaker (Queueing, Rankingsystem, Invites)<br/>
+People can join Matches against other players in a ranked or unranked system, they are also able to create a match by invitation. The multiplayer setup enables turn based games with or with out time limitations an easy entry.
+- Supporting features GameEvent (Events that happen on specified blocknumbers, like an egg hatching, turn time passed or auction period finished)<br/>
+Easy access to Game Events for animation or updates that are triggered by storage updates. React on any on-chain events and create an interactive experience on mobiles. 
+- Supporting features Asset (Create, Delete, Transfer, Buy/Sell, Auction)<br/>
+Asset handling allowing to create, delete, transfer and auction them. Having full availability of the pallet asset in the UnitySDK enables devlopers create in game shops and auction houses. 
+- Supporting feature for custom gamelogic<br/>
+Custom logic can be easy implemented or at least it is well documented how the workflow works to get custom pallet functions into the UnitySDK.
+
+The SDK includes a **premade GameEngine**, that supports the above features out of the box, additionaly, instead of connecting straight to the node over the substrateNetApi, it is possible to scale over a deployable ServiceLayer that offers a RestAPI to decouple client storage accesss to full nodes.
+
+**SubstrateNetService**
+The service Layer project can be deployed to a server as DOTNet application offering node storage information as RestAPI to the UnitySDK GameEngine. The Service Layer can add a persistent layer to store node storage, with a Database which is already supported and documented.
 
 #### PoC/MVP or other relevant prior work or research on the topic
 
@@ -82,7 +96,7 @@ The basic part of the open-grant has been developed as framework for our flagshi
 A lot of our previous work on the World of Mogwais is being used as PoC for the current project, the game logic we created [WoMNetCore](https://github.com/WorldOfMogwais/WoMNetCore) is reused where it makes sense or refactored to match better, here an [old PoC](https://github.com/WorldOfMogwais/WoM-Releases/releases). We used the CryptoKitties on Substrate as our first crash course into Rust and luckily it had a theme in common with our vision from 2017 [old whitepaper](https://github.com/mogwaicoin/mogwai-doc/raw/master/doc/Mogwai_Whitepaper.pdf). 
 
 ### Ecosystem Fit 
-I think currently there are no such projects in the substrate ecosystem, at least we don't know of any. The full game logic is written down in our confluence, but for the sake of this file, we don't copy & paste it into here, but we can add it if necessary.
+I think currently there are no such projects in the substrate ecosystem, at least we don't know of any. The setup should enable an easy start in to game development with substrate.
 
 ## Team :busts_in_silhouette:
 
@@ -249,9 +263,10 @@ Creating a Free Unity Asset in the Assetstore, will allow access to Substrate fo
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Pallet & Unity | Pallets, Connect four, Matchmaker, Multiplayer, TimeBased Turns |
-| 2. | Unity | Provide fully functional Multiplayer playable "Connect Four" for Mobile (Android), with bots and real players playing it over substrate |
-| 3. | Unity | Youtube Videos serie Step-by-Step Connect four on Substrate Mobile |
+| 1. | Pallet & Unity | Pallet: Connect four, Matchmaker, Multiplayer, TimeBased Turns |
+| 2. | Unity | Provide fully functional Multiplayer playable "Connect Four" for Mobile (Android), playable with bots and as real player |
+| 3. | UnitySDK | Providing a performance test setup that creates 1000 bots playing the game concurrently |
+| 4. | Unity | Youtube Videos serie Step-by-Step Connect four on Substrate Mobile |
 
 ## Future Plans
 We are working towards the goal of creating a modular gaming blockchain with reusable components that game devs can use and enhance.
