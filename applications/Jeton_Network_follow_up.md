@@ -167,24 +167,20 @@ SubstrateNetApi is the base API and it needs a dedicated documentation to allow 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant.
 | 1. | Enhance API | Generic handling of Types & Metadata, Custom Pallet & Type support |
 | 1a. | Enhance API | Extend Generic Types for Vec & Option |
-| 1b. | Enhance API | Implement Extension Custom Pallets |
-| 1c. | Enhance API | Implement Extension Custom Types |
-| 1d. | Enhance API | Generic Approach on Encode & Decode of Types |
+| 1b. | Enhance API | Implement Extension Custom Pallets & Types for PolkaDot, Kusama, DOTMog & UniqueNetwork |
+| 1c. | Enhance API | Generic Approach on Encode & Decode of Types |
+| 1d. | Enhance API | Implement Rust special enums, who are used like structs |
 | 2. | Schnorrkel | Reintegrate Schnorrkel, into SubstrateNetApi |
 | 2a. | Schnorrkel | Publish Schnorrkel project, with proper licensing as nuget package |
 | 2b. | Schnorrkel | Implement SR25519, similar to ED25519 in SubstrateNetApi |
-| 2c. | Schnorrkel | Write Tests in SubstrateNetApi |
 | 3. | Mnemonic | Add mnemonic seed, in SubstrateNetApi |
-| 3a. | SubstrateNetWallet | Add mnemonic seed, recovery on lost password or wallet file |
-| 4. | Types | Wiki documentation on workflow for adding types and maintaining the api |
-| 4a. | Types | Implement Rust special enums, who are used like structs |
-| 5. | Testing  | Rework & Add Unit Test for better coverage of the migrated SubstrateNetApi | 
-| 5a. | Node | Add live node-template testing, for extrinsic |
-| 5b. | Custom Pallet Test | Add tests for current and future custom pallet testing |
-| 5c. | Custom Type Test | Add tests for current and future custom type testing |
+| 3a. | Mnemonic | Add mnemonic seed, recovery on lost password or wallet file |
 | 6. | Documentation | Documentation referencing prev. milestone 1 https://github.com/w3f/Grant-Milestone-Delivery/pull/102#issuecomment-795929390  |
 | 6a. | Inline Documentation | Add inline documentation to make code more understandable |
 | 6b. | Wiki | Add a structured wiki, include components and workflows, ex. updateing blockchain metadata, implementing custom pallets, implementing custom types .... |
+| 6c. | Types | Wiki documentation on workflow for adding types and maintaining the api |
+| 6d. | Node | Add documentation how to setup live node-template testing, for extrinsic |
+| 6e. | Custom Test | Add documentation for custom pallet and type testing |
 | 7. | Jeton Network | Internet appearance of the Jeton Network, under www.jeton.network |
 | 7a. | Jeton Network | Article and Blog about this open grant and the deliverables, at least one deep dive post into each milestone subject area, SubstrateNetApi, GameEngine, ServiceLayer & ConnectFour (if accpeted) |
 
@@ -201,27 +197,23 @@ Game Engine is the logic layer for games and provides the necessary informations
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Game Engine |
-| 1a. | Game Engine | Concept game engine and architecture (Domain Driven Design) | 
-| 1b. | Game Engine | Refactor DOTMog game engine, reusable parts | 
-| 1c. | Game Engine | Implement DDD game engine | 
-| 1d. | Game Engine | Account, Player, Wallet, Encryption, Mnemonic, Restore, Transfer |
-| 1e. | Game Engine | Event System |
-| 1f. | Game Engine | Unit Tests |
-| 1g. | Game Engine | Documentation |
-| 2. | Service Layer |
-| 2a. | Service Layer | Concept service layer (Domain Driven Design) | 
-| 2b. | Service Layer | Implement service layer global storage access | 
-| 2c. | Service Layer | Add light weight database as extension to in memory | 
-| 2d. | Service Layer | Create event system for storage changes | 
-| 2e. | Service Layer | Unit Tests |
-| 2f. | Service Layer | Documentation |
-| 3. | Rest API | Adding service Layer Rest API |
-| 4. | Basic Bot | Basic Bot Template, Connecting and executing a workflow |
-| 5. | Documentation | 
-| 5a. | Documentation | Wiki about the service layer and the proper setup |
-| 5b. | Documentation | Wiki about accessing the Rest API |
-| 5c. | Documentation | Wiki about creating a bot based multithreaded test environment for a game |
+| 1. | Pallet | GameEventSystem(events on blocknumber based not on extrinsic), Matchmaker(Queue up, Ranked and non ranked, create matches) |
+| 2. | Game Engine |
+| 2a. | Game Engine | Concept game engine and architecture (Domain Driven Design) and Implement basic and generic game Entities | 
+| 2b. | Game Engine | Account, Player, Wallet (Private Key Encryption / Mnemonic Restore |
+| 2c. | Game Engine | Asset Transfer, Buy/Sell, Auction |
+| 2d. | Game Engine | GameEventSystem (events on blocknumber based not on extrinsic), Matchmaker (Queue up, Ranked and non ranked) |
+| 2e. | Game Engine | Event System, for game changes for games in Unity you need trigger points for animations and datachanges, this need to be decoupled, so you have an easy access to them in Unity. |
+| 2f. | Game Engine | Custom Game Logic layer |
+| 3. | Service Layer |
+| 3a. | Service Layer | Concept service layer (Domain Driven Design) | 
+| 3b. | Service Layer | Implement service layer global storage access over SubstrateNetApi | 
+| 3c. | Service Layer | Implement service layer for all mentioned Entities (Account, Player, Wallet, etc.), register changes and creation of entities | 
+| 3c. | Service Layer | Implement service layer extension to use a light weight database as a persistence layer | 
+| 3d. | Service Layer | Create event system for storage changes, this is needed for example to trigger presentation layer updates or animations, like egg hatching animation when gameevent triggers | 
+| 4. | Rest API | Adding service Layer Rest API, accessing Game data |
+| 5. | Basic Bot | Implement Basic Bot, that plays Connect Four with an human like strategic |
+| 6. | Tutorial | Service layer, Docker setup, Rest API & Multithreaded Bot testing of Game and Performance
 
 ### Milestone 3: Unity — Substrate SDK for Unity, Documentation, Templates and Tutorial Video
 * **Estimated Duration:** 1 month
@@ -236,16 +228,15 @@ Creating a Free Unity Asset in the Assetstore, will allow access to Substrate fo
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Unity | Free Substrate SDK for Unity in the Asset store
-| 1a. | Unity | Template using the node-template |
-| 1b. | Unity | Template example for Storage access |
-| 1c. | Unity | Template example for Event handlin, balance changed |
-| 1d. | Unity | Template example for sending extrinsic in Unity |
-| 2. | Unity | Example including connection, wallet decription and balance in Unity |
+| 1. | Unity | Free Substrate SDK for Unity in the Asset store |
+| 1a. | Unity | Template Wallet, integrated over the ServiceLayer and the GameEngine, including functionalities (Creating Wallet (Private Key Ed or Sr), using a Mnemonic seed), Restoring Wallet, Transfering Coins, Balance Update, Error handling) |
+| 1b. | Unity | Template with On chain GameEvent and Pallet Matchmaker, where User can queue up to a match and animations that are executed on on chain game events |
+| 1c. | Unity | Template example for Event handlin, balance changed, sending extrinsic in Unity |
+| 2. | Unity | Tutorial for building and connecting with Unity including connection, wallet decription and balance in Unity |
 | 3. | Asset | Asset Documentation like (https://assetstore.unity.com/packages/tools/utilities/blockchain-sdk-by-enjin-124133) |
 | 3a. | Asset | Tutorial video on implementing a new chain and accessing it with unity |
 | 3b. | Asset | Tutorial video on adding a custom pallet and accessing it in unity |
-| 4. | Documentation | Maintaining API, Service Layer and UNity Asset on newest Substrate Vers. |
+| 3c. | Asset | Integration Guide of adding a new function in a pallet, adding it as custom pallet function to SubstrateNetApi, adding custom storage access to Service Layer, and adding access in game engine to the new function for unity |
 
 ### Milestone 4: Complete Game "Connect four", as Tutorial from scratch on Substrate and Unity playable on Mobile (Player vs. Player)
 * **Estimated Duration:** 1 month
@@ -258,14 +249,9 @@ Creating a Free Unity Asset in the Assetstore, will allow access to Substrate fo
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | Unity | Pallets, Connect four, Matchmaker, Multiplayer |
-| 1a. | Substrate | Pallet match maker pallet for enabling multiplayer pairing |
-| 1b. | Substrate | Pallet match maker rank system support, enables to have ranked match ups |
-| 2. | Unity | GameEngine Connect four |
-| 3. | Unity | Service Layer Connect four |
-| 4. | Unity | Unity Project |
-| 4a. | Unity | Multiplayer playable "Connect Four" for Mobile (Android) |
-| 6. | Unity | Youtube Videos serie Step-by-Step Connect four on Substrate Mobile |
+| 1. | Pallet & Unity | Pallets, Connect four, Matchmaker, Multiplayer, TimeBased Turns |
+| 2. | Unity | Provide fully functional Multiplayer playable "Connect Four" for Mobile (Android), with bots and real players playing it over substrate |
+| 3. | Unity | Youtube Videos serie Step-by-Step Connect four on Substrate Mobile |
 
 ## Future Plans
 We are working towards the goal of creating a modular gaming blockchain with reusable components that game devs can use and enhance.
