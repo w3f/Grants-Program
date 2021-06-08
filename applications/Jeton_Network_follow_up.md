@@ -150,12 +150,12 @@ Active organisations of the teammebers
 ### Overview
 * **Total Estimated Duration:** 4 months
 * **Full-time equivalent (FTE):** 1-2 FTE
-* **Total Costs:** 30.000 USD
+* **Total Costs:** 25.000 USD
 
 ### Milestone 1: SubstrateNetApi — Rework and Documentation of the Substrate .NET API
 * **Estimated Duration:** 1 month
 * **FTE:**  1-2
-* **Costs:** 8.000 USD 
+* **Costs:** 5.000 USD 
 
 SubstrateNetApi is the base API and it needs a dedicated documentation to allow better adoption and also simplify custom needs, like integration to other blockchain types and more examples and inline documentation.
 
@@ -187,7 +187,7 @@ SubstrateNetApi is the base API and it needs a dedicated documentation to allow 
 ### Milestone 2: GameEngine — Implement Basic GameEngine Domain Driven Design (DDD) & Implement Basic Bot's for Load and Game Testing
 * **Estimated Duration:** 1 month
 * **FTE:**  1-2
-* **Costs:** 8.000 USD 
+* **Costs:** 7.500 USD 
 
 Game Engine is the logic layer for games and provides the necessary informations for the presentation layer that is in unity. To avoid having storage accessed by players all the time, we provide a service layer that keeps global storage changes uptodate an creates event handling which can be subscribed by the representation layer for updates or animations.
 
@@ -218,7 +218,7 @@ Game Engine is the logic layer for games and provides the necessary informations
 ### Milestone 3: Unity — Substrate SDK for Unity, Documentation, Templates and Tutorial Video
 * **Estimated Duration:** 1 month
 * **FTE:**  1-2
-* **Costs:** 8.000 USD 
+* **Costs:** 7.500 USD 
 
 Creating a Free Unity Asset in the Assetstore, will allow access to Substrate for game devs, it will take some iterations to provide an out-of-the-box solution and the fast paced susbtrate develoment might create additional maintanance work during the on going project. The goal is to provide an end to end working Asset that uses the node-template and allows access to alice and bob account and balances in a mobile deployable project on unity.
 
@@ -241,7 +241,7 @@ Creating a Free Unity Asset in the Assetstore, will allow access to Substrate fo
 ### Milestone 4: Complete Game "Connect four", as Tutorial from scratch on Substrate and Unity playable on Mobile (Player vs. Player)
 * **Estimated Duration:** 1 month
 * **FTE:**  1-2
-* **Costs:** 6.000 USD 
+* **Costs:** 5.000 USD 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
