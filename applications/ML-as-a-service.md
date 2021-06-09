@@ -196,7 +196,7 @@ Link to initial pull request (https://github.com/uddugteam/General-Grants-Progra
 | 0b. | Documentation | Documentation of the code and a basic tutorial describing how the software can be used and tested. |
 | 0c. | Testing Guide | Complex quality assurance for all platform features. Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an article that explains the functionality of the proposed pallet in this milestone. |
-| 1. | Substrate ML pallet | Implement all ML algorithms from smartcore lib + Integrate OrbitDb and add allowance to store data in IPFS + Data encryption module + Manage access to users predictions results and provided data |  
+| 1. | Substrate ML pallet | Implement all ML algorithms from smartcore lib + Integrate OrbitDb and add allowance to store data in IPFS + Manage access to users predictions results and provided data |  
 | 2. | Web application | Functionality to select current ML algorithm+ Flag to encrypt user data + Access to IPFS data by hash |  
 | 3. | Docker image| We will provide a dockerfile to demonstrate the full functionality of testing Substrate chain with integrated ML pallet. |
 
