@@ -139,7 +139,7 @@ None.
 
 | Number | Deliverable  | Specification                                   |
 | ------ | ------------ | ----------------------------------------------- |
-| 0      | migration    | migrate all existing code to Null Safety        |
+| 0      | migration     | migrate all existing code to Null Safety        |
 | 1      | rpc_core     | Porting and implements `@polkadot/rpc`          |
 | 2      | rpc_provider | Porting and implements `@polkadot/rpc_provider` |
 | 3      | metadata     | Porting  `@polkadot/metadata`                   |
