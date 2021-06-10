@@ -2,6 +2,7 @@
 
 * **Project Name:** BD Wallet
 * **Payment Address:** 3FfrG9FrZXmPikEYJ9FdHPoRZ2nPjMY45W
+* **Status:** [Terminated](https://github.com/w3f/Open-Grants-Program/pull/115#issuecomment-833812681)
 
 ## Project Overview :page_facing_up: 
 The full name of BD Wallet is `Black Diamond Wallet`, It is a multi coin crypto wallet enables blockchain developers to build their DApps and wallets natively without having to worry about the low-level implementation details. 
