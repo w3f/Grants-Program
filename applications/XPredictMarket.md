@@ -72,7 +72,7 @@ Each option will generate a token, of which the market making will be automatica
 
 5. **Result Uploaded On-chain**
 
-    When the result is generated reaching the initially set-up timeline, the prediction result is uploaded automatically by the governance node through the sudo and is totally transparent to all users for judgement during the result announcement period.
+    When the result is generated reaching the initially set-up timeline, the prediction result is uploaded automatically by the governance node through the stake node and is totally transparent to all users for judgement during the result announcement period.
 
 6. **Market Settlement**
 
@@ -220,7 +220,7 @@ https://x-predict.com/X_Predict_market_Whitepaper_en.pdf?v=1.0
 | 0c. | Testing Guide | We will conduct unit test on all modules to ensure they can function properly. In this guide, we will describe how to run these tests. |
 | 1. | Creating proposal module | This module provides a method for creating prediction proposals using specific parameters, such as prediction topics, options, settlement currency, transaction fee ratio, and prediction period. |
 | 2. | Prediction participation module | This module provides the functions of using settlement tokens to participate in predictions, swapping prediction tokens, and providing and removing liquidity. |
-| 3. | Results uploading module | This module provides the function of submitting results through sudo. |
+| 3. | Results uploading module | This module provides the function of submitting results through stake node. |
 | 4. | Market settlement module | After the results are officially announced, users predicted correctly can exchange their prediction tokens with settlement tokens with equivalent value.Users who provide liquidity automatically remove liquidity after the end and share fees. |
 
 ## Future Plans
@@ -229,7 +229,7 @@ https://x-predict.com/X_Predict_market_Whitepaper_en.pdf?v=1.0
 
 1. In the third phase of the product development plan.The platform will open up community autonomous nodes, and reporting and supervision mechanisms. Each user will be able to become a governance node by staking governance tokens. The governance node can upload the results and share the revenue from withdrawal fee. The governance node is authorized to upload results and accept the supervision of the entire network. When the result submitted by the node is different from reality, any user can initiate a report through pledge, the reported person will be punished, and the reporter will be rewarded.
 
-1. In the third phase of the product development plan.Optimize an easier-to-use sudo. In order to encourage more non tech-savvy users to explore the sudo, we will develop a graphical operation interface for the common users to upload results through the sudo.
+1. In the third phase of the product development plan.Optimize an easier-to-use stake node. In order to encourage more non tech-savvy users to explore the stake node, we will develop a graphical operation interface for the common users to upload results after staking tokens, pass the review and become a staking node.
 
 1. In the third phase of the product development plan.Add the governance voting pool of the parameters and development of the platform it self. The range of voting concludes the settings of some parameters of the platform, future revisions, iterative upgrades of the platform, such as adding new features.
 
