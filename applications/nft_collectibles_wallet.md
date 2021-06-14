@@ -35,6 +35,31 @@ Mobile Stack:
 A mockup of our mobile wallet UI. This mockup outlines the wallet creation, QR scanning and collectibles viewer.
 ![img](https://github.com/GamePowerNetwork/nft-collectibles-wallet/raw/open-grant/images/Mobile_App_Wireframe.png)
 
+- **Substrate Pallet Details:**
+
+The `nft-wallet-pallet` will use ORML (open runtime modules library: https://github.com/open-web3-stack/open-runtime-module-library) which will provide us with some underlying NFT code. The pallet will also talk to the balances pallet to handle any minting and consuming which is needed since each NFT is minted with a type of currency native to the blockchain it is on.
+
+Substrate Stack:
+- Substrate
+- ORML
+
+These methods will serve as an interface for the NFT Wallet to communicate with any substrate runtime. `nft-wallet-pallet` expects ORML's nft pallet to be a part of the runtime since it will be used to handle all NFT related functions.
+
+We will expose a SEND and BURN callback so that the runtime can do any domain specific logic when sending or burning an NFT.
+
+```rust
+fn send(origin, asset_id: u64, recipient: AccountId) -> Result;
+// burn the NFT with a short reason used by dapps
+fn burn(origin, asset_id: u64, reason: Vec<u8>) -> Result;
+// list an NFT for sale
+fn list(origin, asset_id: u64, price: T::Balance) -> Result;
+// buy a listed NFT
+fn buy(origin, asset_id: u64, list_price: T::Balance) -> Result;
+// add an emote to the NFT (for social)
+fn emote(origin, asset_id: u64, emote: Vec<u8>) -> Result;
+// allows a user to claim a minted NFT
+fn claim(origin, asset_id: u64) -> Result;
+```
 
 - **Javascript SDK Details:**
 
@@ -101,8 +126,21 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 * **Full-Time Equivalent (FTE):**  2.1 FTE
 * **Total Costs:** 15,000 USD
 
+### Milestone 1 — Implement NFT Wallet Pallet 
+* **Estimated Duration:** 4 weeks
+* **FTE:**  1
+* **Costs:** 0 DAI
 
-### Milestone 1 — Build NFT Collectibles Wallet Mobile App
+| Number | Deliverable             | Specification |
+| -----: | ----------------------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
+| 1. | nft-wallet-pallet | We will create a Substrate module that will allow an NFT to be (consumed, listed on market, traded, purchased on market). pallet methods are listed in the diagram above. |  
+| 2. | Substrate Test Chain | users can interact with the nft-wallet-pallet module through a simple substrate barebones setup.  | 
+
+
+### Milestone 2 — Build NFT Collectibles Wallet Mobile App
 
 * **Estimated Duration:** 4 weeks
 * **FTE:**  1
@@ -113,7 +151,6 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 0d. | Article/Tutorial | We will publish an article/tutorial that explains how to build and run the react-native mobile application locally.
 | 1. | build app structure | We will have the core structure of the application in place. |  
 | 2. | implement wallet creation view | This will be the landing screen of the app where users can create or restore their NFT Collectibles Wallet.  | 
 | 3. | implement the collectibles view | This view is where users can see a list of all their collectibles. |
@@ -122,7 +159,7 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 | 6. | implement NFT claim screen | After scanning a QR code the user will be taken to a screen to confirm if they want to claim the NFT. From here a transaction is made for the claim. |
 | 7. | write tests | Tests will need to be written for each view. |
 
-### Milestone 2 — Build Javascript SDK and Admin Frontend
+### Milestone 3 — Build Javascript SDK and Admin Frontend
 
 * **Estimated Duration:** 3 weeks
 * **FTE:**  0.5
@@ -133,7 +170,7 @@ Currently, work for the NFT Collectibles Wallet has not started, but the team ha
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
-| 0d. | Article/Tutorial | We will publish an article/tutorial that explains how to build and run the admin frontend, also how to use the SDK.
+| 0d. | Article/Tutorial | We will publish an article/tutorial for non-technical users that explains what the NFT Collectibles wallet is and how to use it.
 | 1. | react frontend | This frontend will provide a UI for all the CRUD methods needed for managing NFTs. Users should be able to mint collections, mint NFTs and change issuers. |  
 | 2. | Connect to IPFS | All metadata entered for minting collections and NFTs should be stored on IPFS.  |  
 | 3. | Connect to substrate with Polkadot.js | Users should easily be able to connect the Admin frontend using polkadot.js.  | 
