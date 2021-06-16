@@ -97,10 +97,14 @@ We plan to provide a `plonk` pallet that allows Substrate-based blockchain to ex
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a developer builds a circuit and a user prove their computation through the circuit. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests and audit to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article/Tutorial | We will publish an article/tutorial/workshop that explains
-| 1. | make plonk compatible | The dusk-network plonk is compatible with `no-std` so we are going to modify attributes according to [parity-codec](https://github.com/paritytech/parity-scale-codec) and `Rng` to be compatible with　Substrate environment. |
-| 2. | implement zkSNARK plonk pallet | We will create a set of plonk-based zkSNARK libraries that allow a developer to build their own circuit and a user to prove their computation validity. |  
+| 1. | make plonk compatible | The dusk-network plonk is compatible with `no-std` so we are going to modify attributes according to [parity-codec](https://github.com/paritytech/parity-scale-codec) and `Rng` to be compatible with　Substrate environment. This step allows this pallet to work on resource-constrained execution environments like Substrate runtime, attributes should be modified in accordance with SCALE codec and some versions of Rng can’t be compiled to wasm so we need to research and make it stable as necessary. |
+| 2. | implement zkSNARK plonk pallet | We will create a set of plonk-based zkSNARK libraries that allow a developer to build their own circuit and a user to prove their computation validity. Verifying proofs are done by on-chain. Creating the proofs are done by off-chain. |  
 
 This zkSNARK plonk is based on [dusk-network plonk](https://github.com/dusk-network/plonk) library.
+This zkSNARK plonk pallet provides us following function.
+- Building circuits
+- Creating proofs
+- Verifying proofs
 
 ## Future Plans
 
