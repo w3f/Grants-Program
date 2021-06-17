@@ -15,14 +15,15 @@ Crafting Finance is a synthetic asset issuance protocol and decentralised contra
 ### Project Details 
 The main functional modules of the entire system are Forge and Kingsman. Forge are where all synthetic assets are minted. Kingsman is the decentralized contract exchange using our upgraded sharing debt pool model. Other important modules of the system include collateral pools, fee pool, interest pool, and oracles. We will introduce in detail how Kingsman works in this application. 
 
-#### 1.When all users join SDP
+#### 1. When all users join SDP
 Below is an example to illustrate how we calculate profit or loss using SDP trading mode when all users join SDP. We define “Crafting Loss” in this example.
+
 Example 1: Assuming two users A and B, A generates $100 rBTC, and B generates $100 rUSD, the respective debt ratio is 50%, and the total system debt is $200.  Suppose the price of BTC rises by 50%, so the value of rBTC held by A becomes $150, and the value of rUSD held by B is still $100. At this time, the total system liability becomes $150+$100=$250.  Note that because the debt ratio has not changed, A’s debt is $250*50%=$125, and B’s debt is also $125.  Therefore, it can be calculated that the profit or loss of A is $150-$125=$25, and the profit or loss of B is $100-$125=-$25.  The sum of all users' profit and loss in the entire system is 0, which is similar to a traditional contract trading system.  It should be noted that although B did nothing after generating rUSD, he/she still lost money due to the increase in the price of BTC.  This is because rUSD is generated, which by default is equivalent to becoming a long position in the U.S. dollar (in this case, it is also equivalent to a short position in BTC)! We define this loss as "crafting loss".
 
-##### 2.Optional Joining of SDP
+#### 2. Optional Joining of SDP
 Because of the principle of the sdp trading mode, users who generate any synthetic asset and join the debt pool will automatically become a long holder of the asset. That is, even if the user generates a stable currency, it will automatically become a long position in the stablecoin, causing losses when other assets rise. We call this loss "crafting loss". This is like another form of impermanent loss in liquidity mining. To avoid this loss, we innovatively provide users with the option of whether they want to join the debt pool. So a user can choose not to join the debt pool if he/she does not want to take the risk. In this case, users can essentially use this system as a lending platform, and the system will charge interest on the assets users minted. The interest rate will be determined by community governance later.
 
-##### 3.An upgrade for the SDP model
+#### 3. An upgrade for the SDP model
 Belows are two examples showing how things change when optional joining of SDP is provided. 
 
 Example 2: Suppose there are user A and user B. User A chooses not to join the debt pool when forging synthetic assets, and user B chooses to join the debt pool when forging synthetic assets. Suppose that before A and B forged synthetic assets, there were originally $100 rBTC in the system. Then, A forged $100 of rUSD but did not join the debt pool, and B forged $100 of rBTC and joined the debt pool. Then, the assets and liabilities of the entire system become $200 rBTC in the debt pool, and $100 rUSD outside the debt pool. B accounts for 50% of the system’s liabilities, and A has no debt ratio because he/she has not joined the debt pool.
@@ -47,7 +48,7 @@ Last but not the least, in this project, we use a debt pool model in the DEX, wh
   - Over 10 years of experiences in Software Development
   - Polkadot China 2021 Technology Ambassador
   - A senior Rust technical expert and a blockchain technical expert
-  - The author of "Rust Programming From Beginner to Expert" <China Machine Press>
+  - The author of "Rust Programming From Beginner to Expert" (China Machine Press)
 * Felix
   - Over 10 years of experiences in Software Development   
   - DApp Developer
@@ -83,14 +84,14 @@ https://www.chainnews.com/articles/847789328743.htm
 ## Development Roadmap :nut_and_bolt: 
 
 ### Overview
-* **Total Estimated Duration:** 3 months
-* **Full-Time Equivalent (FTE):**  4 FTE
-* **Total Costs:** 0.3 BTC
+* **Total Estimated Duration:** 2 months
+* **Full-Time Equivalent (FTE):**  3 FTE
+* **Total Costs:** 8000 USDT
 
-### Milestone 1 — Forging Synthetic Assets(Forge)
-* **Estimated Duration:** 1.5 month
+### Milestone 1 — Sharing Debt Pool (SDP)
+* **Estimated Duration:** 1 month
 * **FTE:**  3 FTE
-* **Costs:** $2000
+* **Costs:** 4000 USDT
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -98,15 +99,14 @@ https://www.chainnews.com/articles/847789328743.htm
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how forging synthetic assets. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Substrate pallet: Forge | We will create a Substrate pallet that will realize the functions of staking CRF, DOT, KSM, BTC and ETH, forging synthetic assets, including stablecoins (RaftStable) and custom synthetic assets (UnivRaft). |
-| 2. | Substrate front end | Forge pallet will interact in substrate-front-end-template. |
+| 1. | ink! Smart Contract: SDP | The user will be assigned a fixed debt ratio which is the ratio of the value of the user's synthetic assets to the value of all synthetic assets in the entire system. "Fixed" means this ratio will not change due to changes in asset prices, and will be used to calculate the user's profit and loss. This ratio will only change when a new user mints new assets or an existing user destroys existing assets. |
 
 
-### Milestone 2 — DEX (Kingsman)
+### Milestone 2 — Kingsman DEX
 
-* **Estimated Duration:** 2 month
+* **Estimated Duration:** 1 month
 * **FTE:**  3 FTE
-* **Costs:** $3000
+* **Costs:** 4000 USDT
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -114,17 +114,15 @@ https://www.chainnews.com/articles/847789328743.htm
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how forging synthetic assets. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Substrate pallet: Kingsman | We will create a Substrate pallet that will realize the trading function on Substrate front end, allowing users to freely trade various synthetic assets. |
-| 2. | Substrate pallet: Collateral Pool | We will create a Substrate pallet that will realize the collateral pool function. When a user newly generates or destroys rUSD, the debt ratio is re-determined, and the user's profit is calculated based on the change in asset prices. |
-| 3. | Substrate front end | Kingsman pallet will interact in substrate-front-end-template. |
+| 1. | ink! Smart Contract: Kingsman | Kingsman is an exchange that provides conversion of different synthetic assets and contract trading, using SDP trading mode. Due to the design characteristics of SDP, this DEX does not require a counterparty, and there is no issue of trading depth. |
 
 
 ## Future Plans
 There is still a lot of space for growth in the future, including:
 
-At present, the type of synthetic assets of the project is determined by the project team or community governance. In the future, it is planned to upgrade so that different investors can independently sign any type of contract on this system.
-
-At present, the stablecoin rUSD or other synthetic assets produced by the project are limited to the system. When there are standardized tokens similar to Ethereum ERC-20 on the Polkadot in the future, all synthetic assets of this project can be circulated outside the system in the form of standardized tokens, and even enter other exchanges. Among them, rUSD can become an important stable currency in the Polkadot ecology.
+1. RaftBond will be online for issuance and trading.
+2. UnivRaft will be online for universal synthetic assets, user could use it to issuance smart assets.
+3. Will launch the brand-new oracle system which could feed every asset‘s price over the world.
 
 ## Additional Information :heavy_plus_sign: 
 
