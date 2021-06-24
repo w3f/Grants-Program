@@ -81,14 +81,18 @@ Aynil Inc. is delivering Java, Kotlin, and Javascript api in August to interact 
 
 Here are the brief designs for the inbound/outbound transfer.
 
+Suppose all crypto and fiat account are kyc verified(Users need to go through KYC process to make fiat account in fiat provider anyways).
+
 ### Inbound Transfer (Fiat to Crypto)
 
-Suppose all crypto and fiat account are kyc verified(Users need to go through KYC process to make fiat account in fiat provider anyways).
 
 ![inbound transfer](https://i.imgur.com/CUwYn7k.png)
 
+Diagram above is the process where fiat asset is digitized to crypto. 
 
 ### Outbound Transfer (Crypto to Fiat)
+
+![outbound transfer](https://i.imgur.com/nbdQ5Og.png)
 
 * **Total Estimated Duration:** 4 months
 * **Full-Time Equivalent (FTE):**  2(1 for substrate, 1 for devops)
