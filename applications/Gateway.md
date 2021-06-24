@@ -28,7 +28,7 @@ Stablecoins are just approaches to the non-volatile asset, and they are usually 
 ### Team member:
 Hyungsuk Kang, team leader
 
-Member’s experience: As the boundary between crypto and fiat money is becoming more permeable, Hyungsuk and his team maintains Standard protocol to test and deliver the digital asset standard between them. Digital Native Foundation is an open source software working groups to develop new social infrastructure for next generations.
+Member’s experience: Hyungsuk is Plasm network's developer. He developed Subswap, AMM in substrate, and he wants to extend it to make the next finance in Polkadot ecosytem using XCM module and collateral debt position, which is now Standard Protocol. To build this with other people, he built a blockchain software development firm called Digital Native Foundation to gather around devs who wants to build protocols for other teams and themselves. Nowadays, he wants to build hybrid finance between fiat and crypto, and he came up with a way providing automated way to onboard fiat assets to crypto ecosystem. He wants to build a bridge to digitize his local currency Korean won with local financial organizations. 
 
 #### Member LinkedIn Profile
 https://www.linkedin.com/in/hyungsukkang
@@ -47,7 +47,7 @@ https://www.linkedin.com/in/dohyungjeon
 Fiat Bridge is built by Digital Native Foundation, Key for managing bank digital currency providng liquidity is done by Ginkgo Bank, Aynil inc. is a payment gateway company to provide transfer API for fiat money in South Korea. 
 
 ### Team Code Repos
-
+https://www.github.com/digitalnativeinc
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -65,9 +65,30 @@ The overall process for building this solutions are:
 
 3. build a smart contract and try with layer 2 solution(submitted in a separate grant)
 
+### Comparison to other applications(Element36)
+
+1. We assign total supply to the bank digital currency to prevent bank run where crypto market crash and everyone wants to convert crypto to fiat.
+2. We come up with multi-layered access on operating bank digital currency by separating roles for pauser, minter and admin to assign roles.
+3. We think we are currently working with api which is compatible with KRW only, but we are checking if the api is shared worldwide.
+4. We use queues to detect addresses that needs to be processed with off-chain workers regularly checking status by the bank instead of using off-chain worker in runtime.
+
+## Devleopment Status
+
+The cron clients were tested and can be modified from the oracle client [lumen](https://github.com/digitalnativeinc/lumen). The [core](https://github.com/digitalnativeinc/lumen/tree/main/packages/core) module should include periodic process developed in separate package in the monorepo. [config](https://github.com/digitalnativeinc/lumen/tree/main/packages/config) module can be adjusted to put accounts to interact with mnemonics. Server component might be added in the monorepo to build express.js client as well. 
+
+Aynil Inc. is delivering Java, Kotlin, and Javascript api in August to interact with fiat banks. The api is based on the open api from [openbanking](https://www.openbanking.or.kr/main).
+
+Here are the brief designs for the inbound/outbound transfer.
+
+### Inbound Transfer (Fiat to Crypto)
+
+[]()
+
+### Outbound Transfer (Crypto to Fiat)
+
 * **Total Estimated Duration:** 4 months
 * **Full-Time Equivalent (FTE):**  2(1 for substrate, 1 for devops)
-* **Total Costs:** 6000USDT
+* **Total Costs:** 12000USDT
 
 
 ### Milestone 1 - Bank digital currency 
