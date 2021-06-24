@@ -56,6 +56,7 @@ https://www.github.com/digitalnativeinc
 The overall process for building this solutions are:
 
 1. Build a bank digital currency module in substrate runtime in layer 1
+- This will require kyc Identifier registrator pallet and bridge pallet
 
 
 2. Build a multi-container solution with `docker-compose` where it integrates 
@@ -82,7 +83,10 @@ Here are the brief designs for the inbound/outbound transfer.
 
 ### Inbound Transfer (Fiat to Crypto)
 
-[]()
+Suppose all crypto and fiat account are kyc verified(Users need to go through KYC process to make fiat account in fiat provider anyways).
+
+![inbound transfer](https://i.imgur.com/CUwYn7k.png)
+
 
 ### Outbound Transfer (Crypto to Fiat)
 
