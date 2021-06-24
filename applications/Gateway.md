@@ -94,6 +94,10 @@ Diagram above is the process where fiat asset is digitized to crypto.
 
 ![outbound transfer](https://i.imgur.com/nbdQ5Og.png)
 
+---
+
+## Roadmap
+
 * **Total Estimated Duration:** 4 months
 * **Full-Time Equivalent (FTE):**  2(1 for substrate, 1 for devops)
 * **Total Costs:** 12000USDT
