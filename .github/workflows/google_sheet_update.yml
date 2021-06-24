@@ -62,7 +62,7 @@ jobs:
       - name: Get last row
         if: github.event.pull_request.merged == true
         id: get_last_row
-        uses: mmagician/gsheet.action@v0.1.0
+        uses: w3f/gsheet.action@v1.1.3
         with:
           spreadsheetId: ${{ secrets.SPREADSHEET_ID }}
           startRow: 260
