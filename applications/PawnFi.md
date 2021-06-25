@@ -133,7 +133,7 @@ Dirk Xu, CTO of Pawnfi, former tech leader at Yintech
 ## Future Plans
 - Develop Pawnfi chain based on substrate framework to support pawnfi protocols.
 - We will Integrate the EVM module into Pawnfi Chain to support Ethereum ERC20 and NFT tokens, so that the smart contracts developed based on EVM can be freely and seamlessly integrated into our system.
-- Pawnfi Chain will differentiate each identity within the encrypted network in order to improve transaction throughput and speed, and reduce transaction fees.
+- Achieve functions such as leasing, lending/borrowing, appraisement, repayment and etc. of Non-standard assets on chain. Other projects can easily integrate Pawnfi features into their platform and make these functions natural to their ecosystem.
 - We will provide all non-standard assets and standard assets with a range of services including borrowing, appraisal, selling, leasing, etc., and maximize the efficiency of funds for asset holders and users through the separation of asset ownership, use rights and income rights. In the future, we will provide more flexible combinations and approaches for asset realization.
 
 
