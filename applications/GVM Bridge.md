@@ -128,13 +128,9 @@ Lastly, the team has a consolidated architectural and developmental experience w
 
 ## Future Plans
 Further refining components and add supports for new VMs.
-1. Complete all functions of GVM Bridge Framework.
-2. Complete the design of VM GABI.
-3. Complete all functions of WASM-Proxy pallet and WASM-Proxy pallet.
-4. Complete all functions of Trans4WABI and Trans4EABI; provide sample code.
-5. Tidy up and refactor the code.
-6. Add support for new features of WASM and EVM.
-7. Add support for new VMs.
+1. Tidy up and refactor the code.
+2. Add support for new features of WASM and EVM.
+3. Add support for new VMs.
 
 ## Additional Information :heavy_plus_sign: 
 
