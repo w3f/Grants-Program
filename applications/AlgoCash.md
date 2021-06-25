@@ -169,6 +169,7 @@ Basis Cash (on Ethereum), shares are initialized by 'AMM + 2nd pool' which would
 ### Team members
 * Nick Hsu, Blockchain Expert and Team Leader
 * Gang Chan, Full Stack Developer	
+* Gieno Miao, Crypto Expert and Blockchain Architect
 
 ### Contact
 * **Contact Name:** Nick Hsu
