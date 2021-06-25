@@ -108,7 +108,7 @@ Lastly, the team has a consolidated architectural and developmental experience w
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a.	| License	| GNU General Public License v3.0 |
+| 0a.	| License	| Apache 2.0 |
 | 0b.	| Documentation	| We will provide both inline documentation of the code and a tutorial that explains how a user can use GVM Bridge. |
 | 0c.	| Testing Guide	| The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 1.	| GVM Bridge Framework V0.1 	| Develop GVM Bridge Framework as a minimal system for the GVM Bridge to enable simple interconnection and inter-call. |
@@ -121,7 +121,7 @@ Lastly, the team has a consolidated architectural and developmental experience w
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a.	| License	| GNU General Public License v3.0 |
+| 0a.	| License	| Apache 2.0 |
 | 0b.	| Documentation	| We will provide both inline documentation of the code and a tutorial that explains how a user can use GVM Bridge. |
 | 0c.	| Testing Guide	| The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 1.	| GVM Bridge Framework V0.2	| The Framework V0.2 will contain WASM-Proxy pallet, EVM-Proxy pallet, Trans4WABI and Trans4EABI. |
