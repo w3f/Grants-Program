@@ -36,7 +36,7 @@ Substrate pallet provides a configurable database module with allowance to store
 #### Public Methods
 * **KeyValueInit(name)** - initialise new keyValue database
 * **KeyValueSet(key, value)** - set given value in keyValue database
-* **KeyValueGet(key) - get value for given key
+* **KeyValueGet(key)** - get value for given key
 * **KeyValueDel(key)** - delete value from keyValue database
 * **KeyValueAll()** - fetch all values from keyValue database
 
@@ -55,22 +55,25 @@ Substrate pallet provides a configurable database module with allowance to store
 ![scheme A](https://i.postimg.cc/Hn1nkxGD/pallet.png)
 
 ##### Data uploading
-Rpc/wss request to pallet to insert data
-Validating data based on database schema
-Formatting data
-Encrypted (if needed)
-Store to ipfs via offchain::ipfs
-Retrieving ipfs hash with data
-Store ipfs hash into pallet storage
+
+- Rpc/wss request to pallet to insert data
+- Validating data based on database schema
+- Formatting data
+- Encrypted (if needed)
+- Store to ipfs via offchain::ipfs
+- Retrieving ipfs hash with data
+- Store ipfs hash into pallet storage
 
 ##### Data retrieving
-RPC/wsss request to pallet to fetch get data
-Validating data query
-Get ipfs hash from storage
-Fetch data from ipfs via offchain::ipfs
-Return data object in response
+- RPC/wsss request to pallet to fetch get data
+- Validating data query
+- Get ipfs hash from storage
+- Fetch data from ipfs via offchain::ipfs
+- Return data object in response
+
 #### Scheme 2. Interaction with Substrate
 ![scheme B](https://i.postimg.cc/1zzJvmjQ/scheme.png)
+
 #### Infrastructure
 Testing substrate nodes with offchain::orbitDB pallet orchestrated by kubernetes cluster deployed on GCP.
 #### Ci/Cd
@@ -160,7 +163,7 @@ Link to 2nd pull request
 
 * **Total Estimated Duration:** 3 months
 * **Full-Time Equivalent (FTE):**  2.5 FTE
-* **Total Costs:** 24 000 USD
+* **Total Costs:** 21 000 USD
 
 ### Milestone 1 
 
