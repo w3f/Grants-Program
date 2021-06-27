@@ -32,8 +32,13 @@ Ideally, we want the polk-auction core to use our own nodes (see architecture), 
 
 Disclaimer : I've always prefer paper UI design (mock-up) for a first version of an UI, so here it is:
 
+(Updated with screenshot of the first UI drafts - see github link below)
+
 General dashboard :
-![](https://i.imgur.com/umz5rq2.jpg)
+![](https://i.imgur.com/CHSeJSQ.jpg)
+
+On relay chain changed : 
+![](https://i.imgur.com/8Xeq6rL.jpg)
 
 There is a header with the chains supported. When a chain is selected, colors change to match Chain's colors. 3 inner pages are available, current auction, current crowdloan and parachains.
 
@@ -48,7 +53,7 @@ Current crowdloan page :
 The crowdloan page display the ongoing crowdlending campaigns as a list. The user can click on any displayed parachain to access the parachain details page.
 
 Current parachains page :
-![](https://i.imgur.com/qhrvt7m.jpg)
+![](https://i.imgur.com/0bdQ0xH.jpg)
 
 The parachains page display the running parachains of the selected chain as a list. The user can click on any displayed parachain to access the parachain details page.
 
@@ -163,7 +168,7 @@ Here is an overview of different relevant project I've worked / working on at my
 
 https://github.com/CrommVardek/polk-auction-core
 
-### Polk-auction-ui (not started yet)
+### Polk-auction-ui (started)
 
 https://github.com/CrommVardek/polk-auction-ui
 
@@ -239,6 +244,7 @@ Futur plans are :
 
 * The website, once up and running, will be promoted through some social-media (Reddit, LinkedIn and Facebook)
 * Adapting the polk-auction-core API depending on side-car's changes - as their parachain endpoint is subject to changes, it is most likely the polk-auction-core API will need to be updated a few times in the mid and long-term.
+* Developing a WS client (kotlin) for Polkadot nodes to be used the same way @polkadot/api works. Will probably be part of another project, but it will be used by Polkauction-core in order to remove sidecar from the architecture.
 * Add chains if the developer community find it useful to have Rococo and/or Westend on the website. Add chains when (long-term) nested relay-chain will be fully operational.
 * As I'm very open to ideas, suggestions and advices, it is very likely that the code, the architecture, the UI and the functionalities will evolve with the community feed-backs. 
 
