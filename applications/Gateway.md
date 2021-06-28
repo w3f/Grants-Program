@@ -1,6 +1,6 @@
 # W3F Open Grant Proposal
 
-* **Payment Address:** Ethereum 0xFc95BF412A1F6DCD77a65879bfa83469E92422f3
+* **Payment Address:** Ethereum 0x1FCA82D99C9A010566c7aab36F6eD480F4b26C0C
 
 ## Project Overview :page_facing_up:
 
