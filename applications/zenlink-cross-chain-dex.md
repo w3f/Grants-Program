@@ -3,6 +3,7 @@
 * **Project Name:** Zenlink DEX Smart Contract
 * **Team Name:** Zenlink
 * **Payment Address:** 3FyMZ4Y6wFXkaSzdBPetizppR5bD6BVLUy
+* **Status:** [Terminated](https://github.com/w3f/Open-Grants-Program/pull/151#issuecomment-870569453)
 
 ## Project Overview :page_facing_up: 
 
