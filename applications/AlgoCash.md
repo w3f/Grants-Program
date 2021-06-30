@@ -6,8 +6,7 @@
 
 * **Project Name:** Algo Cash
 * **Team Name:** Reserve Labs
-* **Payment Address:** DAI Address: 0xE9db4E6bB798a8739Ad44af918f30D57eE3b743d
-
+* **Payment Address:** DAI Address: 0x3f91475fbd0c3d9c676d39af071691c1cf635f0b
 ## Project Overview 
 
 ### Overview
