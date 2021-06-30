@@ -112,6 +112,7 @@ Lastly, the team has a consolidated architectural and developmental experience w
 | 0b.	| Documentation	| We will provide both inline documentation of the code and a tutorial that explains how a user can use GVM Bridge. |
 | 0c.	| Testing Guide	| The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 1.	| GVM Bridge Framework V0.1 	| Develop GVM Bridge Framework as a minimal system for the GVM Bridge to enable simple interconnection and inter-call. |
+| 2.  | Exmaple for ERC20 contract calling | An example of calling ERC20 contract from other types of virtual machine. |
 
 ### Milestone 2 – GVM Bridge V0.2
 * **Total Estimate Duration:** 10 weeks
