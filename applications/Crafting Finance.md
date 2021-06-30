@@ -99,8 +99,26 @@ https://www.chainnews.com/articles/847789328743.htm
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how forging synthetic assets. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | ink! Smart Contract: SDP | The user will be assigned a fixed debt ratio which is the ratio of the value of the user's synthetic assets to the value of all synthetic assets in the entire system. "Fixed" means this ratio will not change due to changes in asset prices, and will be used to calculate the user's profit and loss. This ratio will only change when a new user mints new assets or an existing user destroys existing assets. |
+| 1. | ink! Smart Contract: SDP | The user will be assigned a fixed debt ratio which is the ratio of the value of the user's synthetic assets to the value of all synthetic assets in the entire system. "Fixed" means this ratio will not change due to changes in asset prices, and will be used to calculate the user's profit and loss. This ratio will only change when a new user mints new assets or an existing user destroys existing assets.|
 
+We will implement the functions demonstrated by the following script.
+
+Step 1:
+Alice adds 10 rCRFs worth $100 (assuming one rCRF is worth $10) into the debt pool. At this time, the total debt in the debt pool is $100, and Alice's personal debt ratio is 100%.
+
+Step 2:
+Bob adds 100 rUSD of $100 to the debt pool. At this time, the total debt in the debt pool is $200, Alice's personal debt ratio is 50%, and Bob's personal debt ratio is 50%.
+
+Step 3:
+The price of CRF rises to $15. At this time, the total debt of the debt pool is $250 (15 x 10 + 100), Alice's personal debt ratio is 50%, and Bob's personal debt ratio is 50%.
+Alice's personal liabilities are 250 x 50% = 125, and personal assets are 150, so the profit is 150-125 = 25.
+Bob's personal debt is 250 x 50% = 125, and his personal assets are 100, so his profit is 100-125 = -25.
+
+Step 4:
+Dave adds 100 rUSD of $100 to the debt pool. At this time, the total debt in the debt pool is $350.
+Alice's personal debt ratio (250 x 50%) / 350 = 35.71%
+Bob's personal debt ratio (250 x 50%) / 350 = 35.71%
+Dave's personal debt ratio 100/350 = 28.57%
 
 ### Milestone 2 — Kingsman DEX
 
@@ -115,6 +133,61 @@ https://www.chainnews.com/articles/847789328743.htm
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
 | 1. | ink! Smart Contract: Kingsman | Kingsman is an exchange that provides conversion of different synthetic assets and contract trading, using SDP trading mode. Due to the design characteristics of SDP, this DEX does not require a counterparty, and there is no issue of trading depth. |
+
+We will implement the functions demonstrated by the following script.
+
+For the demo, assume current ETH price is $3000, DOT price is $25, CRF price is $5. The collateral ratio of ETH in Crafting platform is 150:100, DOT collateral ratio is 200:100, CRF collateral ratio is 500:100. In addition, Crafting platform supports 1-10 times leverage.
+
+Step 1: Alice stakes 1 ETH (worth $3,000) in Forge and uses 3x leverage to forge 3 rETH (worth $9,000) into the debt pool.
+
+The total debt pool is $9,000 and Alice's personal debt ratio is 100%.
+
+Step 2: Bob stakes 4 DOTs (worth $100) in the Forge and uses 10x leverage to forge 1,000 rUSD (worth $1,000) into the debt pool.
+
+The total debt pool is $10,000, with Alice's personal debt ratio at 90% and Bob's personal debt ratio at 10%.
+
+Step 3: Dave stakes 1,000 CRFs (worth $5,000) in the Forge and borrows 1,000 rUSD (worth $1,000), which is not added to the debt pool.
+
+The total debt pool is $10,000 and Alice and Bob's personal debt ratios remain unchanged.
+
+Step 4: Alice exchanges 1 rETH (worth $3000) in Kingsman for 2000 rUSD (worth $2000) and 40 rDOT (worth $1000).
+
+The total debt pool is $10,000 with 2 rETH (worth $6,000), 3,000 rUSD (worth $3,000), and 40 rDOT (worth $1,000). Alice and Bob's individual debt ratios remain the same.
+
+Alice has 2 rETH (worth $6000), 2000 rUSD (worth $2000), 40 rDOT (worth $1000), and she is in the debt pool.
+Bob has 1000 rUSD (worth $1000), and he is in the debt pool.
+
+Step 5: Dave exchanges 1,000 rUSD (worth $1,000) for 40 rDOT (worth $1,000).
+
+The total debt pool is $10,000, with 2 rETH (worth $6,000), 2,000 rUSD (worth $2,000), and 80 rDOT (worth $2,000). the ratio of Alice and Bob's personal debt remains the same. Note here that since generating 40 rDOT (worth $1000) gives the debt pool a value of -$1000 of rUSD.
+
+Alice has 2 rETH (worth $6000), 2000 rUSD (worth $2000) and 40 rDOT (worth $1000), and she is in the debt pool.
+Bob has 1000 rUSD (worth $1000), and he in the debt pool.
+Dave has 40 rDOT (worth $1,000), and he is not in the debt pool.
+
+Step 6: DOT price goes up to $50.
+
+The total debt pool is $12000, with 2 rETH (worth $6000), 2000 rUSD (worth $2000), and 80 rDOT (worth $4000).
+
+Alice has 2 rETH (worth $6000), 2000 rUSD (worth $2000), 40 rDOT (worth $2000), and she is in the debt pool.
+Bob has 1000 rUSD (worth $1000), and he is in the debt pool.
+Dave has 40 rDOT (worth $2,000), and he is not in the debt pool.
+
+Alice has personal debt of $12,000 x 90% = $10,800 and personal assets of $10,000. Although Alice's personal assets have grown by $1,000 ($10,000 - 9,000), she has actually lost $800 ($10,000 - 10,800).
+Bob has a personal debt of $12,000 x 10% = $1200 and a personal asset of $1000, resulting in a loss of $200 ($1000 - 1200).
+Dave's personal debt is 0 and his personal assets are $2000 ($50 x 40), so he has a profit of $1000 ($2000 - 1000).
+
+Step 7: The DOT price drops to $20.
+
+The total debt pool is $9600, with 2 rETH (worth $6000), 2000 rUSD (worth $2000) and 80 rDOT (worth $1600).
+
+Alice has 2 rETH (worth $6000), 2000 rUSD (worth $2000), 40 rDOT (worth $800), and she is in the debt pool.
+Bob has 1000 rUSD (worth $1000), and he is in the debt pool.
+Dave has 40 rDOT (worth $800), and he is not in the debt pool.
+
+Alice's personal debt 9600 x 90% = $8640 and personal assets $8800. Although Alice's personal assets decreased by $1200 ($8800 - 10000), she actually made a profit of $160 ($8800 - 8640).
+Bob's personal liabilities are 9600x x 10% = $960 and his personal assets are $1000, so he made a profit of $40 ($1000 - 960).
+Dave's personal debt is 0 and his personal assets are $800 ($20 x 40), so he loses $200 ($800 - 1000).
 
 
 ## Future Plans
