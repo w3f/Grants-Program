@@ -25,12 +25,36 @@ Working a lot with blockchain technologies, our team found that it’s data-driv
 We have been observing and learning Substrate technologies and find Polkadot as the best ecosystem for us to join depending on technology and strong market position. We believe that our protocol will be useful for other projects in the Polkadot ecosystem. 
 
 ### Project Details
+Substrate pallet provides a configurable database module allows to store and  manipulate a big amount of data. Pallet works as an offchain worker and connect data between blockchain and ipfs via offchain::worker.
 
-Substrate pallet provides a configurable database module with allowance to store and  manipulate a big amount of data.
+#### Encryption module
+Built-in encryption module allows to create a secure database and encrypt all data before its uploading to the database with user account keys. With enabled encryption only account users have access to the database. Data could be decrypted via Web-application after receiving. Module is based on asymmetrical cryptography and uses an account public key to encrypt data on the blockchain side and a private key to decrypt data on the client side.
+
+![scheme A](https://i.postimg.cc/gJds3kj9/encryption.png)
+
+- receive data by RPC request
+- Encrypt data by account public key
+- Insert encrypted data into ipfs via offfchain::ipfs
+- Insert received ipfs hash into storage
+
+![scheme B](https://i.postimg.cc/Y9h66G7s/decryption.png)
+
+- catch request to get data by RPC request
+- get ipfs hash from storage
+- fetch encrypted data from ipfs via offchain::ipfs
+- receive encrypted data in RPC response 
+- decrypt data using user account private key via app ddecryption module
+
 #### Technical stack
+
 * **Rust** - main language
+
 * **Substrate** - blockchain framework
+
+* **Substrate-front-end-template** - web-app template
+
 * **Offchain::ipfs** - substrate-ipfs bridge
+
 * **IPFS** - data storage
 
 #### Public Methods
@@ -52,7 +76,7 @@ Substrate pallet provides a configurable database module with allowance to store
 * **Key-value** - database meta info
 
 #### Scheme 1. Palett structure
-![scheme A](https://i.postimg.cc/Hn1nkxGD/pallet.png)
+![scheme C](https://i.postimg.cc/Hn1nkxGD/pallet.png)
 
 ##### Data uploading
 
@@ -72,7 +96,7 @@ Substrate pallet provides a configurable database module with allowance to store
 - Return data object in response
 
 #### Scheme 2. Interaction with Substrate
-![scheme B](https://i.postimg.cc/1zzJvmjQ/scheme.png)
+![scheme D](https://i.postimg.cc/1zzJvmjQ/scheme.png)
 
 #### Infrastructure
 Testing substrate nodes with offchain::orbitDB pallet orchestrated by kubernetes cluster deployed on GCP.
@@ -178,7 +202,7 @@ Link to 2nd pull request
 | 0c. | Testing Guide | Complex quality assurance for all platform features. Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an article that explains the functionality of the proposed pallet in this milestone. |
 | 1. | Substrate ML pallet | Basic database layout implementation with key-value data storage |  
-| 2. | Web application | Interacting with blockchain + form with fields to manipulate with data |  
+| 2. | Web application | Interacting with blockchain + form with fields to manipulate with data. Based on the substrate-front-end-template |  
 | 3. | Docker image| We will provide a dockerfile to demonstrate the full functionality of testing Substrate chain with integrated Database pallet. |
 
 
@@ -211,7 +235,7 @@ Link to 2nd pull request
 | 0c. | Testing Guide | Complex quality assurance for all platform features. Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an article that explains the functionality of the proposed pallet in this milestone. |
 | 1. | Substrate pallet | Implement an encryption module to allow encrypt and decrypt needed data out of the box. |  
-| 2. | Web application | Update web application to interact with indexes system. |  
+| 2. | Web application | Update web application to interact with the encryption system. |  
 | 3. | Docker image| We will provide a dockerfile to demonstrate the full functionality of testing Substrate chain with integrated Database pallet. |
 
 ## Future Plans
