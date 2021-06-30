@@ -26,7 +26,7 @@ The two main components under development -and thus in the scope of this project
 
 The polk-auction core API is an aggregator that expose only relevant information about the chain and add information when necessary from off-chain sources (example, a parachain detail would be its website address).
 
-Ideally, we want the polk-auction core to use our own nodes (see architecture), but we will also provide a configuration where it is possible to use public end-points such as Web3Foundation's endpoint (such as wss://kusama-rpc.polkadot.io/) for convenience. 
+Ideally, we want the polk-auction core to use our own nodes (see architecture), but we will also provide a configuration where it is possible to use public end-points such as Web3Foundation's endpoint (wss://kusama-rpc.polkadot.io/) for convenience. 
 
 #### Mock-up of the website (Polk-acution UI)
 
@@ -94,6 +94,10 @@ Field details :
 | -----: | ----------- | ------------- |
 | chain | string | Name of the relay-chain (values supported are [Kusama, Polkadot])  |
 | paraId | integer | Id of the parachain within the {chain}  |
+
+*Other*
+
+While the sidecar API is convenient to use, so information are lacking in order to provide enough information to the UI - for example the duration of a lease period, meta-data about the chain, etc. Usually more detailed or specific information about the state of the chain are lacking in the sidecar-api. That is why it is planned to also communicate directly with a node through a websocket the same way the Polkadot-api would. The existing solution Polkaj has been quickly reviewed, that API could work well. But as we also need a simpler solution and also a bit more easy to use, we will develop our own WS client (in Kotlin) along this project. We will keep things simple and only develop what we do need. It is planned to continue to develop that WS client to provide a complete set of functionalities to access a substrate node. However that last step is not part of this project and will be an independent project later (as well as a new application maybe).
 
 #### Polk-action-core technologies
 
@@ -167,6 +171,7 @@ Here is an overview of different relevant project I've worked / working on at my
 ### Polk-auction-core (started)
 
 https://github.com/CrommVardek/polk-auction-core
+https://github.com/CrommVardek/polkot-api (Polkadot client (WebSocket) in kotlin, to be used in polk-auction-core)
 
 ### Polk-auction-ui (started)
 
@@ -178,15 +183,15 @@ See overview section for the mock-up
 
 ### Overview
 
-* **Total Estimated Duration:** 9(+3) weeks
-* **Full-Time Equivalent (FTE):**  1.5(+0.5)
-* **Total Costs:** 6,000 USD
+* **Total Estimated Duration:** 10(+3) weeks
+* **Full-Time Equivalent (FTE):**  1.7(+0.5)
+* **Total Costs:** 6,800 USD
 
 ### Milestone 1 Implementation of the HTTP API (Polk-auction-core)
 
-* **Estimated duration:** 3 weeks
-* **FTE:**  0.5
-* **Costs:** 2,000 USD
+* **Estimated duration:** 4 weeks
+* **FTE:**  0.7
+* **Costs:** 2,800 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -194,9 +199,9 @@ See overview section for the mock-up
 | 0b. | Documentation | I will provide an API specification of the HTTP end-points. I will also provide a small documentation on how to run the project and how the project structure was done.
 | 0c. | Testing Guide | Integration tests will be made, as the project does not have *business* functions, it is more important to ensure the correct data-flow. A guide on how to run the tests will be made |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1. | Current-Auction end-point | The current auction end-point is an HTTP GET end-point to provide the current auction information of the ongoing auction of the specified chain (e.g. GET /auction/Kusama). Behind the end-point, the service query the correct node (chain) through an instance of side-car and perform needed mapping.  |  
-| 2. | Current-Parachains end-point | The current parachains end-point is an HTTP GET end-point to provide the current auction information of the running parachains (and parathreads) of the specified chain (e.g. GET /parachains/Kusama). Behind the end-point, the service query the correct node (chain) through an instance of side-car and perform needed mapping.  |  
-| 3. | Current-Crowdloan end-point | The current crowdloan end-point is an HTTP GET end-point to provide the current crowdloan information of the ongoing auction of the specified chain (e.g. GET /crowdloan/Kusama). Behind the end-point, the service query the correct node (chain) through an instance of side-car and perform needed mapping.  | 
+| 1. | Current-Auction end-point | The current auction end-point is an HTTP GET end-point to provide the current auction information of the ongoing auction of the specified chain (e.g. GET /auction/Kusama). Behind the end-point, the service query the correct node (chain) through an instance of side-car and complement the missing information with a custom Polkadot Websocket (inspired from both Polkaj and @Polkadot/api) then perform needed mapping.  |  
+| 2. | Current-Parachains end-point | The current parachains end-point is an HTTP GET end-point to provide the current auction information of the running parachains (and parathreads) of the specified chain (e.g. GET /parachains/Kusama). Behind the end-point, the service query the correct node (chain) through an instance of side-car and complement the missing information with a custom Polkadot Websocket (inspired from both Polkaj and @Polkadot/api) then perform needed mapping.  |  
+| 3. | Current-Crowdloan end-point | The current crowdloan end-point is an HTTP GET end-point to provide the current crowdloan information of the ongoing auction of the specified chain (e.g. GET /crowdloan/Kusama). Behind the end-point, the service query the correct node (chain) through an instance of side-car and complement the missing information with a custom Polkadot Websocket (inspired from both Polkaj and @Polkadot/api) then perform needed mapping.  | 
 
 
 ### Milestone 2 Implementation of UI (Polk-auction-ui)
@@ -244,14 +249,15 @@ Futur plans are :
 
 * The website, once up and running, will be promoted through some social-media (Reddit, LinkedIn and Facebook)
 * Adapting the polk-auction-core API depending on side-car's changes - as their parachain endpoint is subject to changes, it is most likely the polk-auction-core API will need to be updated a few times in the mid and long-term.
-* Developing a WS client (kotlin) for Polkadot nodes to be used the same way @polkadot/api works. Will probably be part of another project, but it will be used by Polkauction-core in order to remove sidecar from the architecture.
+* Complete the WS client (kotlin) for Substrate nodes to be used the same way @polkadot/api works. Will probably be part of another project, but it will be used by Polkauction-core in order to remove sidecar from the architecture.
 * Add chains if the developer community find it useful to have Rococo and/or Westend on the website. Add chains when (long-term) nested relay-chain will be fully operational.
+* The suggestion to communicate polkadot.js-extension directly from the UI will be considered to allow users to directly participate in the crowdloans.
 * As I'm very open to ideas, suggestions and advices, it is very likely that the code, the architecture, the UI and the functionalities will evolve with the community feed-backs. 
 
 ## Additional Information :heavy_plus_sign:
 
 **Why do the FTE and duration do not match ?**
-I have a full-time job as a developer, I'll take some days off for this project, however I won't take 9(+3) weeks of days off for the project, so I won't be able to work as 1FTE/month on this project. I'll work on evening and week-end to meet the milestones and deliveries.
+I have a full-time job as a developer, I'll take some days off for this project, however I won't take 10(+3) weeks of days off for the project, so I won't be able to work as 1FTE/month on this project. I'll work on evening and week-end to meet the milestones and deliveries.
 
 **How did you hear about the Grants Program?** Web3 Foundation Website and Reddit (/r/Polkadot, /r/Kusama and /r/dot) mainly.
 
