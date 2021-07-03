@@ -96,7 +96,7 @@ pTokens are issued on the Polkamine chain, and can only be further issued when a
 
 In addition to pTokens, there is another type of asset called Wrapped Output Tokens (wTokens).
 
-wTokens are Tokens issued on the Polkamine chain and anchored to the tokens produced by the Polkamine standard mining pool at a 1:1 ratio. You can consider wTokens as the income certificate in the mining products of the Polkamine standard mining pool. wTokens include wBTCO, wETHO, wLTCO, wFILO, etc. which respectively anchor BTC on the Bitcoin chain, ETH on the Ethereum chain, LTC on the Litcoin chain, and FIL on the Filecoin chain in a 1:1 ratio.
+wTokens are Tokens issued on the Polkamine chain and anchored to the tokens produced by the Polkamine standard mining pool at a 1:1 ratio. You can consider wTokens as the income certificate in the mining products of the Polkamine standard mining pool. wTokens include wBTCO, wETHO, wLTCO, wFILO, etc. which respectively anchor BTC on the Bitcoin chain, ETH on the Ethereum chain, LTC on the Litecoin chain, and FIL on the Filecoin chain in a 1:1 ratio.
 
 Since different mining projects adopt varied chains, only by issuing 1:1 mapping assets wTokens can Polkamine write all mining income of Mini Miners to the chain and achieve automation.
 
@@ -189,7 +189,7 @@ Polkamine Technology Ltd. is a company registered in the BVI.
 Andreas has been involved in several projects since 2016, taking them to another level. He joined Polkamine to make it a success with an international communication mentality. His ingenuity and thirst for knowledge are indomitable, with which he focuses on making the world more decentralized and communicating the value of new technologies like Polkamine through his impressive work ethic.
 
 **Vladan Falcic**  
-Vladan is a Blockchain and crypto enthusiast, he entered the crypto space back in 2014 and was mostly involved in early stage projects. Since 2016 he started working with different projects, improving their marketing and establishing valuable partnerships. Vladan is working with several startup projects, advising them, improving their marketing and building the community. He joined Polkamine as head of marketing and will help to ensure the further growth of the project.
+Vladan is a Blockchain and crypto enthusiast, he entered the crypto space back in 2014 and was mostly involved in early-stage projects. Since 2016 he started working with different projects, advising them, implementing effective marketing, growing strong communities and establishing valuable partnerships. He joined Polkamine as head of marketing and will help to ensure the further growth and success of the project.
 
 **Marcin Dudek**  
 Marcin, 2D/3D graphic designer with 20 years of experience. From 2002 to 2016 he owned a large advertising agency. Since 2016 he has been involved in the cryptocurrency market. He cooperated with many cryptocurrency projects, taking care of full graphic design of the projects. Investor, present on the investment market for 6 years. Economist and computer graphic designer by education.
