@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-### <del>Overview</del>
+### Overview
 
 We propose to port our programming language Glow to the Polkadot platform. This three-month, $30,000 project will benefit Polkadot in the long run by bringing DApp users and developers to it. In the short run, the project will also benefit Polkadot by allowing its users to have a cross-platform language that generates matching smart contract and client/server code for financial interactions. In the long run, formal verification will drastically reduce the risks, and layer2-aware code generation will help safely scale transactions and reduce fees, thus making Polkadot a competitive blockchain for any smart contract-based business. The proposed port would be a proof of concept of the Glow language. Further work would be required to robustly support the entire feature set of Polkadot.
 
@@ -31,8 +31,7 @@ Further work would be required to robustly support the entire feature set of Sub
 
 #### The *Glow* Language: Safer, Cheaper DApps
 
-[*Glow*](https://glow-lang.org) is a domain-specific (programming) language for
-Decentralized Applications (DApps).
+[*Glow*](https://glow-lang.org) is a domain-specific (programming) language for Decentralized Applications (DApps).
 Compared to competing DApp languages, *Glow* provides much higher-level abstractions,
 that make DApp development not only drastically simpler,
 but also portable and amenable to formal verification.
@@ -87,7 +86,7 @@ Our values include open-source technologies, synergies, and interdisciplinary kn
 Our team’s expertise includes game theory, computer science and economics.
 
 
-### *Glow* so far
+#### *Glow* So Far
 
 The first version of *Glow* was released in February 2021, and can work on
 either the Ethereum Virtual Machine (EVM), or Cardano's Plutus ecosystem.
@@ -98,9 +97,10 @@ has been developing *Glow* for a year and a half,
 based on a prototype previously developed by one of its co-founders.
 We are committed to ever growing the language and its ecosystem.
 
-Development for *Glow* is currently funded for the next few months.
-Upcoming features include a user-friendly web-browser UI,
-and several other types of smart contracts.
+Development for *Glow* is currently funded for the next few months. Our current Docker image is based on Nix, and we have a new one in progress based on Guix.
+
+Upcoming features include a user-friendly web-browser [UI](https://www.youtube.com/watch?v=0ltm6RmyDnM), a [MOOC](https://gitlab.com/mukn/glow-mooc)and several new types of smart contracts.
+
 
 
 ### Ecosystem Fit
@@ -120,23 +120,23 @@ Glow is a Domain-Specific Language (DSL) to develop secure Decentralized Applica
 
 ## Team :busts_in_silhouette:
 
-### Team members
+### Team Members
 
 * **François-René Rideau:** Team leader, Co-Founder, Chief Executive Officer
-* **Alexander Smart**: Co-Founder, Chief Operating Officer
-* **Gauthier Lamothe**: Co-Founder, Chief Communications Officer
+* **Alexander Smart:** Co-Founder, Chief Operating Officer
+* **Gauthier Lamothe:** Co-Founder, Chief Communications Officer
 * **Alexander Plotnick:** Developer
-* **Drew Crampsie**: Senior Developer
-* **Alexander Knauth**: Junior developer
-* **Emeka Nwanko**: Developer
+* **Drew Crampsie:** Senior Developer
+* **Alexander Knauth:** Junior developer
+* **Emeka Nwanko:** Developer
 
 
 ### Contact
 
 * **Contact Name:** François-René Rideau
 * **Contact Email:** fare@mukn.io
-* [**Glow Website:**](https://glow-lang.org)
-* [**Mutual Knowledge Systems Website:**](https://mukn.io)
+* [**Glow Website**](https://glow-lang.org)
+* [**Mutual Knowledge Systems Website**](https://mukn.io)
 
 ### Legal Structure
 
@@ -163,16 +163,17 @@ His work in the MuKn ecosystem is to take care of every aspect related to commun
 A Ph.D in computer science from Brandeis University, Alex is an experienced and versatile programmer. He has worked on natural language processing systems, machine learning, embedded systems, and programming language design & implementation.
 His skills include natural language processing, machine learning and neural networks, knowledge representation and automated inference, and many programming languages such as (Rust, JavaScript, Java, Ruby, Python, Tcl, Perl, Prolog, C, Forth, Lisp, Fortran, Assembly)
 
-* **Alexander Knauth:** Junior Developer
-Alex has already co-authored two notable papers and contributed to the Racket ecosystem. His previous work on combining types and macros is directly relevant to building our compiler. 
-
 * **Drew Crampsie:** Developer
 Drew is an independent system developer with over 20 years of experience in designing, implementing and maintaining Internet based applications and servers with a focus on "bleeding edge" Web Apps. Drew is a seasoned user in non-mainstream and mainstream techs and languages (Scheme, Common Lisp, SQL, Javascript, C...).
 
 * **Emeka Nwanko:** Developer
-2005 Alumnus from Nnamdi Azikiwe University. Worked for several companies as a Field Engineer or Operations Manager, such as Schlumberger Nigeria or Northern Oilfield. Also worked for Satajanus Nigeria Limited as a software developer in the field of Blockchain industry, both in C# and F#, but also in Rust and Solidity. Also a teacher.
+2005 Alumnus from Nnamdi Azikiwe University. Worked for several companies as a Field Engineer or Operations Manager, such as Schlumberger Nigeria or Northern Oilfield. Also worked for Satajanus Nigeria Limited as a software developer in the field of Blockchain industry, both in C# and F#, but also in Rust and Solidity. Also a teacher. 
 
-* **Ian Denhart:** Developer
+* **Alexander Knauth:** Junior Developer
+Alex has already co-authored two notable papers and contributed to the Racket ecosystem. His previous work on combining types and macros is directly relevant to building our compiler.
+
+* **Noel Kwan:** Intern Developer
+Sophomore at the National University of Singapore, Noel already holds significant experience in Haskell, Javascript, and Rust. He also has a strong understanding of AWS systems, NixOS and even full-stack web development. He already developed a DSL, a chat-server application, and worked on several projects as a software engineering intern previously.
 
 
 ### Advisors and Partners
@@ -189,6 +190,7 @@ Drew is an independent system developer with over 20 years of experience in desi
 * [Alexander Plotnick](https://github.com/plotnick)
 * [Alexander Knauth](https://github.com/AlexKnauth)
 * [Ian Denhart](https://gitlab.com/users/isd)
+* [Noel Kwan](https://github.com/kwannoel)
 
 
 ### Team LinkedIn Profiles
@@ -196,6 +198,11 @@ Drew is an independent system developer with over 20 years of experience in desi
 * [François-René Rideau](https://www.linkedin.com/in/fahree)
 * [Alexander Smart](https://www.linkedin.com/in/alexandersmart)
 * [Gauthier Lamothe](https://www.linkedin.com/in/gauthier-lamothe/)
+
+## Development Status :open_book:
+
+Development for *Glow* is currently funded for the next few months.
+Upcoming features include a user-friendly web-browser [UI](https://www.youtube.com/watch?v=0ltm6RmyDnM), and several other types of smart contracts.  We are also currently developing a [MOOC](https://gitlab.com/mukn/glow-mooc)
 
 
 ## Development Roadmap :nut_and_bolt:
@@ -209,8 +216,8 @@ Drew is an independent system developer with over 20 years of experience in desi
 
 ### Milestone 1 — Bridge *Glow* and Substrate
 
-* **Estimated Duration:** 1.5 month
-* **FTE:** 1
+* **Estimated Duration:** 1.5 
+* **FTE:** 1.5
 * **Costs:** $15,000
 
 | Number | Deliverable | Estimated Time | Specification |
@@ -234,13 +241,14 @@ Drew is an independent system developer with over 20 years of experience in desi
 | 2c. | Documentation | 1 week | We will update the documentation of *Glow* with explanations on how to deploy our DApps on a relevant test or production Substrate chains. |
 | 2d. | Slack | 1 week | Handle unforeseen difficulties in the above |
 
-### Community engagement
+## Future Plans
+
+### Community Engagement
 
 We will publish progress reports on our Blog on https://mukn.io,
-including a variant of our tutorial especially targeting using PolkaDot test and production networks.
+including a variant of our [tutorial](https://glow-lang.org/docs/Glow_Tutorial.html) especially targeting using Polkadot test and production networks. 
 
-Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
-
+We are also currently developing a [MOOC](https://gitlab.com/mukn/glow-mooc).
 
 
 ## Additional Information :heavy_plus_sign:
@@ -273,9 +281,9 @@ Crowdfunding was an example that made sense only for Cardano, that uses it
 as its basic example for Plutus.
 
 ### Asset Swap
-Glow is a mostly-pure typed functional programming language, extended to express multi-party computations that control digital assets. The syntax of Glow is largely derived from JavaScript, with many elements borrowed from ReasonML. Its semantics is closely related to ML. The only side effects are aborting transactions (primitive require!), communication with the protocol (primitive publish!), and depositing assets into the interaction (primitive deposit!) and withdrawing assets from the interaction (primitive withdraw!). Participants can also define local computations (annotated by @participant), the results of which are not seen by other participants unless and until they use publish! to share the results with these other participants.
+*Glow* is a mostly-pure typed functional programming language, extended to express multi-party computations that control digital assets. The syntax of *Glow* is largely derived from JavaScript, with many elements borrowed from ReasonML. Its semantics is closely related to ML. The only side effects are aborting transactions (primitive require!), communication with the protocol (primitive publish!), and depositing assets into the interaction (primitive deposit!) and withdrawing assets from the interaction (primitive withdraw!). Participants can also define local computations (annotated by @participant), the results of which are not seen by other participants unless and until they use publish! to share the results with these other participants.
 
-Thus, an asset swap in Glow can be defined in eight lines as follows:
+Thus, an asset swap in *Glow* can be defined in eight lines as follows:
 
 @interaction
 let swap = (A: Participant, basket1: Assets,
