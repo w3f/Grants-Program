@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-### <del>Overview</del>
+### Overview
 
 We propose to port our programming language Glow to the Polkadot platform. This three-month, $30,000 project will benefit Polkadot in the long run by bringing DApp users and developers to it. In the short run, the project will also benefit Polkadot by allowing its users to have a cross-platform language that generates matching smart contract and client/server code for financial interactions. In the long run, formal verification will drastically reduce the risks, and layer2-aware code generation will help safely scale transactions and reduce fees, thus making Polkadot a competitive blockchain for any smart contract-based business. The proposed port would be a proof of concept of the Glow language. Further work would be required to robustly support the entire feature set of Polkadot.
 
@@ -135,8 +135,8 @@ Glow is a Domain-Specific Language (DSL) to develop secure Decentralized Applica
 
 * **Contact Name:** François-René Rideau
 * **Contact Email:** fare@mukn.io
-* [**Glow Website:**](https://glow-lang.org)
-* [**Mutual Knowledge Systems Website:**](https://mukn.io)
+* [**Glow Website**](https://glow-lang.org)
+* [**Mutual Knowledge Systems Website**](https://mukn.io)
 
 ### Legal Structure
 
