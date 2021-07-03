@@ -52,7 +52,7 @@ In addition to updating Rust crate-level docs and [outdated user-level docs](htt
 
 1. Benchmark to derive transaction weights. This work has been started in [this PR](https://github.com/PureStake/moonbeam/pull/372).
 
-2. Security Research Labs reported two critical vulnerabilities in `parachain-staking`: (i) total locked balance was not updated in `{collator, nominator}_bond_more` leading to a potential underflow error (which could trigger excessive issuance) (ii) bounded number of nominations per collator allowed any account to fill the slots with the minimum nomination thereby preventing higher nominations. Both vulnerabilities have been patched and integrated into live deployments (Moonriver) via runtime upgrades.
+2. Security Research Labs reported two critical vulnerabilities in `parachain-staking`: (i) total locked balance was not updated in `{collator, nominator}_bond_more` leading to a potential underflow error (which could trigger excessive issuance) (ii) bounded number of nominations per collator allowed any account to fill the slots with the minimum nomination thereby preventing higher nominations.
 
 3. The inflation logic implemented in [`parachain-staking`](https://github.com/PureStake/moonbeam/blob/master/pallets/parachain-staking/src/inflation.rs) is minimal. Instead of integrating `pallet-staking`'s reward curve, the current implementation calculates per-round inflation derived from an annual inflation rate. Although the inflation rate can be updated by governance (sudo as of now), it is constant. Some parachain teams (i.e. Kilt) have requested configurable inflation that uses `pallet-staking`'s reward curve instead because it has been audited and reviewed more closely.
 
