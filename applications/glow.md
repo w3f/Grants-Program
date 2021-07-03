@@ -87,7 +87,7 @@ Our values include open-source technologies, synergies, and interdisciplinary kn
 Our team’s expertise includes game theory, computer science and economics.
 
 
-### *Glow* so far
+### *Glow* So Far
 
 The first version of *Glow* was released in February 2021, and can work on
 either the Ethereum Virtual Machine (EVM), or Cardano's Plutus ecosystem.
@@ -120,15 +120,15 @@ Glow is a Domain-Specific Language (DSL) to develop secure Decentralized Applica
 
 ## Team :busts_in_silhouette:
 
-### Team members
+### Team Members
 
 * **François-René Rideau:** Team leader, Co-Founder, Chief Executive Officer
-* **Alexander Smart**: Co-Founder, Chief Operating Officer
-* **Gauthier Lamothe**: Co-Founder, Chief Communications Officer
+* **Alexander Smart:** Co-Founder, Chief Operating Officer
+* **Gauthier Lamothe:** Co-Founder, Chief Communications Officer
 * **Alexander Plotnick:** Developer
-* **Drew Crampsie**: Senior Developer
-* **Alexander Knauth**: Junior developer
-* **Emeka Nwanko**: Developer
+* **Drew Crampsie:** Senior Developer
+* **Alexander Knauth:** Junior developer
+* **Emeka Nwanko:** Developer
 
 
 ### Contact
