@@ -391,7 +391,6 @@ A more serious malicious activity, namely double signing, or signing alternative
 
 - Dmitry Brook - CTO, Project Lead
 - Rupansh Sekar - Expert in C, Rust, and blockchain development
-- Verbal Kint - Expert in Move, Rust & Co-Founder
 
 ### Contact
 
@@ -425,12 +424,6 @@ A more serious malicious activity, namely double signing, or signing alternative
 - Over 1 year of experiences in Blockchain Development 2 years in Rust, 4 years in C
 
 
-**Verbal Kint**
-
-- Over 5 years of experiences in Blockchain Development 8 years in Rust, 1 year in Move, and 15 years of development experience overall
-
-
-
 ### Team Code Repos
 
 [Team repository](https://github.com/xp-network/)</br>
@@ -442,7 +435,6 @@ A more serious malicious activity, namely double signing, or signing alternative
 
 [Dima Brook](https://github.com/DimaBryuhanov)</br>
 [Rupansh Sekar](https://github.com/rupansh)</br>
-[Verbal Kint](https://github.com/VKint)</br>
 
 
 ### Team LinkedIn Profiles
