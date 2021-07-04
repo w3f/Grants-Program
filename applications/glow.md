@@ -166,13 +166,20 @@ His skills include natural language processing, machine learning and neural netw
 * **Alexander Knauth:** Junior Developer
 Alex has already co-authored two notable papers and contributed to the Racket ecosystem. His previous work on combining types and macros is directly relevant to building our compiler. 
 
+* **Ian Denhart:** Developer
+
+
 * **Drew Crampsie:** Developer
 Drew is an independent system developer with over 20 years of experience in designing, implementing and maintaining Internet based applications and servers with a focus on "bleeding edge" Web Apps. Drew is a seasoned user in non-mainstream and mainstream techs and languages (Scheme, Common Lisp, SQL, Javascript, C...).
 
 * **Emeka Nwanko:** Developer
-2005 Alumnus from Nnamdi Azikiwe University. Worked for several companies as a Field Engineer or Operations Manager, such as Schlumberger Nigeria or Northern Oilfield. Also worked for Satajanus Nigeria Limited as a software developer in the field of Blockchain industry, both in C# and F#, but also in Rust and Solidity. Also a teacher.
+2005 Alumnus from Nnamdi Azikiwe University. Worked for several companies as a Field Engineer or Operations Manager, such as Schlumberger Nigeria or Northern Oilfield. Also worked for Satajanus Nigeria Limited as a software developer in the field of Blockchain industry, both in C# and F#, but also in Rust and Solidity. Also a teacher. 
 
-* **Ian Denhart:** Developer
+* **Alexander Knauth:** Junior Developer
+Alex has already co-authored two notable papers and contributed to the Racket ecosystem. His previous work on combining types and macros is directly relevant to building our compiler.
+
+* **Noel Kwan:** Intern Developer
+Sophomore at the National University of Singapore, Noel already holds significant experience in Haskell, Javascript, and Rust. He also has a strong understanding of AWS systems, NixOS and even full-stack web development. He already developed a DSL, a chat-server application, and worked on several projects as a software engineering intern previously.
 
 
 ### Advisors and Partners
@@ -189,6 +196,7 @@ Drew is an independent system developer with over 20 years of experience in desi
 * [Alexander Plotnick](https://github.com/plotnick)
 * [Alexander Knauth](https://github.com/AlexKnauth)
 * [Ian Denhart](https://gitlab.com/users/isd)
+* [Noel Kwan](https://github.com/kwannoel)
 
 
 ### Team LinkedIn Profiles
@@ -209,8 +217,8 @@ Drew is an independent system developer with over 20 years of experience in desi
 
 ### Milestone 1 — Bridge *Glow* and Substrate
 
-* **Estimated Duration:** 1.5 month
-* **FTE:** 1
+* **Estimated Duration:** 1.5 
+***FTE:** 1.5
 * **Costs:** $15,000
 
 | Number | Deliverable | Estimated Time | Specification |
@@ -234,10 +242,10 @@ Drew is an independent system developer with over 20 years of experience in desi
 | 2c. | Documentation | 1 week | We will update the documentation of *Glow* with explanations on how to deploy our DApps on a relevant test or production Substrate chains. |
 | 2d. | Slack | 1 week | Handle unforeseen difficulties in the above |
 
-### Community engagement
+### Community Engagement
 
 We will publish progress reports on our Blog on https://mukn.io,
-including a variant of our tutorial especially targeting using PolkaDot test and production networks.
+including a variant of our [tutorial](https://glow-lang.org/docs/Glow_Tutorial.html) especially targeting using Polkadot test and production networks. We are also currently developing a [MOOC](https://gitlab.com/mukn/glow-mooc)
 
 Normally, we ask you to submit the write-up upon the completion of your grant, although for larger projects it might make sense to publish multiple articles after the completion of different milestones.
 
@@ -273,9 +281,9 @@ Crowdfunding was an example that made sense only for Cardano, that uses it
 as its basic example for Plutus.
 
 ### Asset Swap
-Glow is a mostly-pure typed functional programming language, extended to express multi-party computations that control digital assets. The syntax of Glow is largely derived from JavaScript, with many elements borrowed from ReasonML. Its semantics is closely related to ML. The only side effects are aborting transactions (primitive require!), communication with the protocol (primitive publish!), and depositing assets into the interaction (primitive deposit!) and withdrawing assets from the interaction (primitive withdraw!). Participants can also define local computations (annotated by @participant), the results of which are not seen by other participants unless and until they use publish! to share the results with these other participants.
+*Glow* is a mostly-pure typed functional programming language, extended to express multi-party computations that control digital assets. The syntax of *Glow* is largely derived from JavaScript, with many elements borrowed from ReasonML. Its semantics is closely related to ML. The only side effects are aborting transactions (primitive require!), communication with the protocol (primitive publish!), and depositing assets into the interaction (primitive deposit!) and withdrawing assets from the interaction (primitive withdraw!). Participants can also define local computations (annotated by @participant), the results of which are not seen by other participants unless and until they use publish! to share the results with these other participants.
 
-Thus, an asset swap in Glow can be defined in eight lines as follows:
+Thus, an asset swap in *Glow* can be defined in eight lines as follows:
 
 @interaction
 let swap = (A: Participant, basket1: Assets,
