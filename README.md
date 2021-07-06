@@ -63,7 +63,7 @@ Finally, we take licensing and the right of all teams in and outside the ecosyst
 
 ### Project ideas
 
-An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md), as well as a list of previously accepted applications [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/accepted_grant_applications.md). Additionally, the Substrate Builders [feedback board](https://feedback.parity.io/) may contain some useful ideas for grant projects.
+An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/polkadot_stack.md), as well as a list of previously accepted applications [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/accepted_grant_applications.md).
 
 [Requests For Proposals](https://github.com/w3f/General-Grants-Program/tree/master/rfps) (RFPs) represent concrete ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, so even if another team has already applied to implement a certain RFP, we invite you to do the same if you're interested.
 
