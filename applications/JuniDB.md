@@ -30,6 +30,8 @@ Substrate pallet provides a configurable database module allows to store and  ma
 #### Encryption module
 Built-in encryption module allows to create a secure database and encrypt all data before its uploading to the database with user account keys. With enabled encryption only account users have access to the database. Data could be decrypted via Web-application after receiving. Module is based on asymmetrical cryptography and uses an account public key to encrypt data on the blockchain side and a private key to decrypt data on the client side.
 
+We plan to make it based on ed25519 crypto scheme and use [ecies-ed2551](https://github.com/phayes/ecies-ed25519) crate to implement encryptions on backend side. 
+
 ![scheme A](https://i.postimg.cc/gJds3kj9/encryption.png)
 
 - receive data by RPC request
@@ -56,6 +58,8 @@ Built-in encryption module allows to create a secure database and encrypt all da
 * **Offchain::ipfs** - substrate-ipfs bridge
 
 * **IPFS** - data storage
+
+* **ecies-ed25519** - encryption crate
 
 #### Public Methods
 * **KeyValueInit(name)** - initialise new keyValue database
