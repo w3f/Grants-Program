@@ -35,13 +35,13 @@ _Web-version mockup_
 
 _Mobile version mockups_
 
-![](https://citadel.one/staticf/mob1.png) ![](https://citadel.one/staticf/mob2.png)
+![](https://citadel.one/statizcf/mob1.png) ![](https://citadel.one/staticf/mob2.png)
 
 - **API specifications of the core functionality**
 
 Below you can find the link to our API documentation. Not only we plan to integrate Polkadot into Citadel, but also upon the integration completion, we will share the open API for the development associated with DOT coins, including transfers, staking, transaction types, etc.
 
-[https://work.paradigmfund.io/api/doc/](https://work.paradigmfund.io/api/doc/)
+[https://work.3ahtim54r.ru/api/doc/](https://work.3ahtim54r.ru/api/doc/)
 
 - **An overview of the technology stack to be used**
 
@@ -155,8 +155,8 @@ From our side, we are ready to make the part associated specifically with Polkad
 | --- | --- | --- | --- | --- |
 | 1 | Node launch (not included in grant amount requirements) | Citadel will join the Polkadot ecosystem as a validator | The Polkadot node will be deployed with the setting of specific glitch recognition notifications (for instance, in case the validator node suspended block production, or server memory faced some issues) via Zabbix and Grafana. As a result of this stage, we expect the node to be up and running with the maintenance system and RPC interface for node access. After the successful node launch, the necessary support and updates will be provided for a longer period. | Nikita (system administrator)120h per year|
 | 2 | Design (not included in grant amount requirements) | Interface preparation, design elements specifications, and tuning | As a result of this stage, the mockups for web and mobile UI will be ready on Figma. | Margarita Omelchenko (Lead Designer)40h |
-| 3 | Preparation set 1 | Polkadot blockchain scrutiny, data transfer to PostgreSQL (for data aggregation and statistics building) | This stage mainly involves the examination of Polkadot blockchain, parser building for the data transfers to PostgreSQL database (it will allow us to aggregate data conveniently, receive transactions of a certain type on a specific address, etc.)This step will bring us some vital milestones: our database will contain all the transactions - new ones sourced directly from the blockchain will be also stored in our database that is convenient for the development needs (balance/rewards charts creation, etc.)Also, as a result we will possess the following connector methods: (isSystemAddress, validateAddress, getLastBlock, getNextBlock, getOneBlock, filterOperations, getDelegationBalanceInfo). | Yeskendir (Backend Developer), Pavel (Lead Backend Developer)120h |
-| 4 | Preparation set 2 | Examination of Polkadot transfer methods and staking system | This step entails the connector methods: prepareTransfer, prepareDelegation, sendTransaction). | Yeskendir (Backend Developer), Pavel (Lead Backend Developer)30h |
+| 3 | Preparation set 1 | Polkadot blockchain scrutiny, data transfer to PostgreSQL (for data aggregation and statistics building) | This stage mainly involves the examination of Polkadot blockchain, parser building for the data transfers to PostgreSQL database (it will allow us to aggregate data conveniently, receive transactions of a certain type on a specific address, etc.)This step will bring us some vital milestones: our database will contain all the transactions - new ones sourced directly from the blockchain will be also stored in our database that is convenient for the development needs (balance/rewards charts creation, etc.)Also, as a result we will possess the following connector methods: (isSystemAddress, validateAddress, getLastBlock, getNextBlock, getOneBlock, filterOperations, getDelegationBalanceInfo). [Link to demo images](https://drive.google.com/drive/folders/1HV1v6XGd_B7d-m4ib-aNBTNpNdnv4C4e)| Yeskendir (Backend Developer), Pavel (Lead Backend Developer)120h |
+| 4 | Preparation set 2 | Examination of Polkadot transfer methods and staking system | This step entails the connector methods: prepareTransfer, prepareDelegation, sendTransaction. [Link to demonstration images](https://drive.google.com/drive/folders/1k6yo7UBZLWWwjX3KjB179cCAEkKHhYCB)| Yeskendir (Backend Developer), Pavel (Lead Backend Developer)30h |
 | 5 | Transfers integration | Analysis of a network&#39;s transfer transaction; search for necessary libraries or APIs;determination of transaction preparation logic; writing logic; signing; writing the send logic | Upon the successful completion of this step, we will have transactions integrated into web and mobile versions, as well as Backend API methods for the execution of transfers&#39; transactions. | Pavel (Lead Backend Developer), Petr (Lead Frontend Developer), Yeskendir (Backend Developer), Alexander (Frontend Developer), Andrey (Mobile Developer)80 h |
 | 6 | Integration of staking | Analysis of network&#39;s staking transaction, search for necessary libraries or APIs;determination of transaction preparation logic; writing logic; signing; writing the send logic. Polkadot validator list parsing. | By the end of this step, we will have staking integrated into web and mobile versions, as well as Backend API methods for the execution of staking transactions via our node. Trezor and Ledger integration for Polkadot. | Pavel (Lead Backend Developer), Petr (Lead Frontend Developer), Yeskendir (Backend Developer), Alexander (Frontend Developer), Andrey (Mobile Developer)80h |
 | 7 | Transaction and price feed metrics adding | Finding a suitable price feed solution. Information collection from node&#39;s RPC via API or source libraries. | At this stage, we are preparing the relevant data for charts and the network&#39;s significant metrics. | Yeskendir (Backend Developer)20h |
@@ -183,6 +183,8 @@ At Citadel, we focus on providing our users with seamless crypto experience. Thu
 ## **Additional Information**➕
 
 _Any additional information that you think is relevant to this application that hasn&#39;t already been included._
+
+You can read additional information about "Polkadot" [here](https://drive.google.com/drive/folders/1osJsgaqbJ2x7wdD8ZnSmF_hJU0ZnEV0D).
 
 - **What work has been done so far?**
 
