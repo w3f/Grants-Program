@@ -86,7 +86,7 @@ Our values include open-source technologies, synergies, and interdisciplinary kn
 Our team’s expertise includes game theory, computer science and economics.
 
 
-### *Glow* So Far
+#### *Glow* So Far
 
 The first version of *Glow* was released in February 2021, and can work on
 either the Ethereum Virtual Machine (EVM), or Cardano's Plutus ecosystem.
