@@ -97,6 +97,11 @@ has been developing *Glow* for a year and a half,
 based on a prototype previously developed by one of its co-founders.
 We are committed to ever growing the language and its ecosystem.
 
+Development for *Glow* is currently funded for the next few months.
+Upcoming features include a user-friendly web-browser [UI](https://www.youtube.com/watch?v=0ltm6RmyDnM)
+and several other types of smart contracts.
+
+
 
 ### Ecosystem Fit
 
@@ -243,6 +248,8 @@ Upcoming features include a user-friendly web-browser [UI](https://www.youtube.c
 
 We will publish progress reports on our Blog on https://mukn.io,
 including a variant of our [tutorial](https://glow-lang.org/docs/Glow_Tutorial.html) especially targeting using Polkadot test and production networks. 
+
+We are also currently developing a [MOOC](https://gitlab.com/mukn/glow-mooc).
 
 
 
