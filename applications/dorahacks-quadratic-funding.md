@@ -73,15 +73,14 @@ It's also exciting to implement quadratic funding as an on-chain governance modu
 ### Milestone 2  -- Frontend Integration
 * **Estimated Duration:** 3 weeks
 * **FTE:**  3
-* **Costs:** 500 DAI
+* **Costs:** 0 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT |
-| 0b. | Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0b. | Testing Guide | A testing guide to list blackbox test cases demonstrate the frontend integration functionalities on HackerLink. | 
 | 1. | Connecting to PolkadotJS extension | If not installed, direct users to install. If installed, ask users to select an account. Popup window for interactions: project registration, voting, donating, fund redemption.  | 
-| 2. | Frontend Integration | Create a minimalistic front end with substrate-front-end-template for a demo Quadratic Funding Grant. Create a list of sample projects and a virtual "matching pool". Users can donate to these projects and vote, and matching pool will be distributed according to quadratic funding rules. |
-| 3. | HackerLink Integration | Deploy a substrate node and connect it to the HackerLink test line. Similar user experience to BSC Grant Round-1. |
+| 2. | HackerLink Integration | Deploy a substrate node and connect it to the HackerLink test line. Similar user experience to BSC Grant Round-1. |
 | 4. | Test | We will test the frontend before milestone delivery. |
 
 ## Future Plans
