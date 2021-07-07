@@ -9,7 +9,7 @@
 
 * **Project Name:** Delmonicos
 * **Team Name:** Lumena
-* **Payment Address:** BTC 1CWbAdyb7keRMxosHs62cz8rG7Np31LPEo
+* **Payment Address:** DAI(ERC20) 0x8cbc9b6191c1bba1652d51ae73f7c15f485a1c72
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique
 identifier during the program. Please keep them safe.*

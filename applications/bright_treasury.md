@@ -228,7 +228,6 @@ The main goal of this milestone is to implement the core flow of the app, that i
 |	5.	|	User story 5	|	As an idea owner, I can add/edit/remove milestones.	|
 |	6.	|	User story 6	|	As an idea owner, I can submit my idea as a proposal (signing and submitting one transaction).	|
 |	7.	|	User story 7	|	As an idea owner, I can turn each milestone separately to a proposal (signing and submitting a separate transaction for each milestone). One milestone at a time.	|
-|	8.	|	User story 8	|	As an idea owner, I can edit my ideas as long as the proposal is not closed (rejected or submitted).	|
 |	9.	|	User story 9	|	As an unlogged user I can view all ideas.	|
 |	10.	|	User story 10	|	As an unlogged user I can view details of an idea.	|
 |	11.	|	User story 11	|	As an unlogged user I can view the details of proposals and their votings. (In this milestone, there will be no in-app history of transactions made outside of the app. Once a proposal is rewarded, it’s voting result will not be visible in the app. This will be available in the milestone 3)	|
@@ -284,6 +283,7 @@ The main goal of this milestone is implementation of the bounties mechanism. Use
 |	15	|	User story 36	|	As a user, I can view the details and voting history of closed bounties and sub-bounties (only for Polkadot and Kusama networks)	|
 |	16	|	User story 37	|	As a user I can see the proposal’s description published on Polkassembly.	|
 |	17	|	User story 38	|	As a user I can see the bounty’s description published on Polkassembly.	|
+|	18	|	User story 39	|	As a user I cannot edit my idea once the associated proposal is closed (rewarded or rejected)	|
 
 ### Community engagement
 It is our priority to make the BrightTreasury app a living part of the community’s life and as such, we plan on several informational activities such as:

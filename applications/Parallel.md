@@ -129,30 +129,30 @@ The lending protocol was inspired by compound protocol and our blockchain soluti
 ### Overview
 * **Total Estimated Duration:** 4 months
 * **Full-time equivalent (FTE):**  4 FTE
-* **Total Costs:** 10k USD
+* **Total Costs:** 9k USD
 
 ### Milestone 1 — Implement Cross-chain support for DOT and KSM
 
 -   **Estimated Duration:** 8 weeks
--   **FTE:** 2
--   **Costs:** 5000 USD
+-   **FTE:** 1.8
+-   **Costs:** 4000 USD
 
 The major deliverable of for this milestone:
 
--   Develop cross-chain capabilities between DOT and KSM tokens
--   Users will be able to deposit DOT tokens as collateral and borrow KSM tokens through our web app
+-   Implement a multi-assets lending protocol.
+-   Support automatic liquidation by using an off-chain worker.
 
 | Number | Deliverable                | Specification                                                                                                                                                                                                                 |
 | -----: | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |      0 | License                    | Apache 2.0                                                                                                                                                                                                                    |
-|    1.a | Substrate module: XCMP     | We will create a Substrate module that will utilize XCMP protocol to enable cross-chain transfer of DOT and KSM through Relay chain                                                                                     |
-|    1.b | Testing and Documentation  | While we develop our module, we will ensure that our code has significant test coverage (>80%) to ensure quality and provide explanations on how the functions work for the community to review, as well as craft test guides |
-|    2.a | Substrate module: Price aggregation oracle   |  We will need to create a on-chain price aggregation pallet for the oracle prices from multiple source that is queried by off-chain workers.                                                                            |
-|    2.b | Testing and Documentation  | While we develop our module, we will ensure that our code has significant test coverage (>80%) to ensure quality and provide explanations on how the functions work for the community to review, as well as craft test guides |
-|    3.a | Integration with front-end | We will integrate our existing front end to the finalized substrate backend                                                                                                                                                   |
-|    3.b | Article/Tutorial           | We will create an article and a video demo that explains how users can start using the platform in lending and borrowing for DOT and KSM                                                                                      |
-|    3.c | Docker                     | We will provide a dockerfile to demonstrate the full cross-chain functionality                                                                                                                                                |
-|     4. | User Testing               | We will conduct user testing to improve our product's UX and UI, to ensure that the borrowing and lending functionalities are intuitive. Initially, we will conduct qualitative user testing by observing 10-15 users use the v1 platform and provide a summary of the findings and improvements made based on insights.                                                                            |
+|    1.a | Substrate module: Loans pallet | Loans pallet will be implemented as a multi-assets lending protocol which offers lending and borrowing by using floating rate model. The full expected functionality is described [here](https://docs.parallel.fi/white-paper#i-lending-protocol) (Ⅲ-1, Ⅲ-2).                                                                                    |
+|    1.b | Substrate module: Liquidation pallet | We will implement a liquidation solution build with Substrate Off-chain Worker, which will calculate the health factor of each borrower's account and send a liquidation transaction automatically. The full expected functionality is described [here](https://docs.parallel.fi/white-paper#4-1-auto-liquidation-algorithm) (Ⅲ-4.1).                                                                                    |
+|    1.c | Substrate module: Price aggregation oracle   |  We will need to create an on-chain price aggregation pallet for the oracle prices from multiple sources that is queried by off-chain workers. The full expected functionality is described [here](https://docs.parallel.fi/white-paper#5-oracle-and-price-feed) (Ⅲ-5).                                                                           |
+|    2.a | Integration with front-end | We will integrate our existing front end to the finalized substrate backend.                                                                                                                                                   |
+|    2.b | Article/Tutorial           | We will create an article and a demo video that will explain how users can start using the platform for lending and borrowing DOT or KSM tokens.                                                                                      |
+|    3. | Docker                     | We will provide a dockerfile to demonstrate the lending functionality.                                                                                                                                                |
+|    4. | Testing and Documentation  | While we develop our module, we will ensure that our code has significant test coverage (>80%) to ensure quality and provide explanations on how the functions work for the community to review, as well as craft test guides. |
+|    5. | User Testing               | We will conduct user testing to improve our product's UI and UX, to ensure that the borrowing and lending functionalities are intuitive. Initially, we will conduct qualitative user testing by observing 10-15 users who will use the v1 platform and provide a summary of the findings and improvements made based on insights.                                                                            |
 
 Other:
 * We will implement more quantitative user testing with A/B tests, web analytics, and heatmap once we have more adoption (>100-200 DAU) in order to get more significant insights (not part of v1 deliverables).           
@@ -160,7 +160,7 @@ Other:
 ### Milestone 2 — Enable Staking for DOT and KSM
 
 -   **Estimated Duration:** 8 weeks
--   **FTE:** 2
+-   **FTE:** 2.2
 -   **Costs:** 5000 USD
 
 The major deliverable of for this milestone:
@@ -175,17 +175,16 @@ The major deliverable of for this milestone:
 | Number | Deliverable                         | Specification                                                                                                                                                                                                                                                                                       |
 | -----: | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |      0 | License                             | Apache 2.0 /                                                                                                                                                                                                                                                                        |
-|    1.a | Substrate module: Staking DOT       | We will need to implement XCMP and potentially utilize SPREE to interact with the relay chain in order to achieve the staking services for DOT and KSM token holder.                                                                                                                        |
-|    1.b | Substrate module: Unstaking DOT     | We will implement a 28 days locking period for the unstaking process of DOT tokens from validators                                                                                                                                                                                                  |
-|    1.c | Substrate module: Exchange Rate     | We will implement a the process for issuing and trading DOT for xDOT with the users based on our exchange rate                                                                                                                                                                                      |
-|    1.d | Substrate module: Slashing Scenario | Staking tokens does have inherent risks of being slashed. We will implement our model that will change the exchange rate in case of slashing scenarios                                                                                                                                              |
-|    1.e | Testing and Documentation           | While we develop our module, we will ensure that our code has significant test coverage (>80%) to ensure quality and provide explanations on how the functions work for the community to review, as well as craft test guides                                                                       |
-|    2.a | Substrate module: KSM               | Since DOT and KSM will have similar code, we will mainly transfer over some of the previous development to allow for KSM staking                                                                                                                                                                    |
-|     2b | Testing and Documentation           | While we develop our module, we will ensure that our code has significant test coverage (>80%) to ensure quality and provide explanations on how the functions work for the community to review, as well as craft test guides                                                                       |
-|    3.a | Integration with front-end          | We will integrate our existing front end to the finalized substrate backend                                                                                                                                                                                                                         |
-|    3.b | Article/Tutorial                    | We will create an article and a video demo that explains how users can start using the platform for staking for DOT and KSM. Additionally, we will also create tutorials to walk show the users how they can earn "double interests" through staking and lending at the same time via xDOT and xKSM |
-|    3.c | Docker                              | We will provide a dockerfile to demonstrate the end-to-end use case of Staking/Unstaking DOT and KSM tokens                                                                                                                                                                                         |
-|     4. | User Testing                        | We will conduct user testing to improve our product's UX and UI, to ensure that the borrowing and lending functionalities are intuitive. Initially, we will conduct qualitative user testing by observing 10-15 users use the v1 platform and provide a summary of the findings and improvements made based on insights                                                                                                                |
+|    1.a | Substrate module: Staking DOT       | We will implement the on-chain staking pool for the staking process from the nominators. The full expected functionality is described [here](https://docs.parallel.fi/white-paper#2-nomination-workflow) (IV-1, IV-3, IV-4).                                                                                                                         |
+|    1.b | Substrate module: Unstaking DOT     | We will implement a 28 days locking period for the unstaking process of DOT tokens from validators. The full expected functionality is described [here](https://docs.parallel.fi/white-paper#4-delegated-staking) IV-1, IV-4).                                                                                                                                                                                                  |
+|    1.c | Substrate module: Exchange Rate     | We will implement the process for issuing and trading DOT for xDOT with the users based on our exchange rate. The full expected functionality is described [here](https://docs.parallel.fi/white-paper#4-delegated-staking) (IV-4).                                                                                                                                                                                      |
+|    1.d | Substrate module: Slashing Scenario | Staking tokens does have inherent risks of being slashed. We will implement our model that will change the exchange rate in case of slashing scenarios. The full expected functionality is described [here](https://docs.parallel.fi/white-paper#6-slash-insurance) (IV-6).                                                                                                                                              |
+|    1.e | Substrate module: KSM | Since DOT and KSM will have similar code, we will mainly transfer over some of the previous development to allow for KSM staking.
+|    2   | Validator evaluation schema         | We will design the validator evaluation schema to select the outstanding validators. The full expected functionality is described [here](https://docs.parallel.fi/white-paper#2-validator-choosing-strategy) (IV-2).                                                                                                                         |
+|    3. | Integration with front-end          | We will integrate our existing front end to the finalized substrate backend.                                                                                                                                                                                                                         |
+|    4. | Article/Tutorial                    | We will create an article and a demo video that will explain how users can start using the platform for staking DOT and KSM. Additionally, we will also create tutorials for users to explain how they can earn "double interests" through staking and lending at the same time via xDOT and xKSM. |
+|    5. | Testing and Documentation           | While we develop our module, we will ensure that our code has significant test coverage (>80%) to ensure quality and provide explanations on how the functions work for the community to review, as well as craft test guides.                                                                       |
+|    6. | User Testing                        | We will conduct user testing to improve our product's UX and UI, to ensure that the borrowing and lending functionalities are intuitive. Initially, we will conduct qualitative user testing by observing 10-15 users use the v1 platform and provide a summary of the findings and improvements made based on insights.                                                                                                                |
 
 Other:
 * We will implement more quantitative user testing with A/B tests, web analytics, and heatmap once we have more adoption (>100-200 DAU) in order to get more significant insights (not part of v1 deliverables).  

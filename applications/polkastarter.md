@@ -3,6 +3,7 @@
 - **Project Name:** Polkastarter
 - **Team Name:** Polkastarter
 - **Payment Address:** 0x69367459A962FDF55a6aF0f9D5aB969548bc2b30
+* **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/124#issuecomment-855203619)
 
 ## Project Overview :page_facing_up:
 
