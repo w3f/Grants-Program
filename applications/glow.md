@@ -160,12 +160,6 @@ His work in the MuKn ecosystem is to take care of every aspect related to commun
 A Ph.D in computer science from Brandeis University, Alex is an experienced and versatile programmer. He has worked on natural language processing systems, machine learning, embedded systems, and programming language design & implementation.
 His skills include natural language processing, machine learning and neural networks, knowledge representation and automated inference, and many programming languages such as (Rust, JavaScript, Java, Ruby, Python, Tcl, Perl, Prolog, C, Forth, Lisp, Fortran, Assembly)
 
-* **Alexander Knauth:** Junior Developer
-Alex has already co-authored two notable papers and contributed to the Racket ecosystem. His previous work on combining types and macros is directly relevant to building our compiler. 
-
-* **Ian Denhart:** Developer
-
-
 * **Drew Crampsie:** Developer
 Drew is an independent system developer with over 20 years of experience in designing, implementing and maintaining Internet based applications and servers with a focus on "bleeding edge" Web Apps. Drew is a seasoned user in non-mainstream and mainstream techs and languages (Scheme, Common Lisp, SQL, Javascript, C...).
 
