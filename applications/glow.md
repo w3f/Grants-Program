@@ -97,8 +97,6 @@ has been developing *Glow* for a year and a half,
 based on a prototype previously developed by one of its co-founders.
 We are committed to ever growing the language and its ecosystem.
 
-Development for *Glow* is currently funded for the next few months.
-Upcoming features include a user-friendly web-browser [UI](https://www.youtube.com/watch?v=0ltm6RmyDnM), and several other types of smart contracts.  We are also currently developing a [MOOC](https://gitlab.com/mukn/glow-mooc)
 
 ### Ecosystem Fit
 
@@ -196,6 +194,11 @@ Sophomore at the National University of Singapore, Noel already holds significan
 * [Alexander Smart](https://www.linkedin.com/in/alexandersmart)
 * [Gauthier Lamothe](https://www.linkedin.com/in/gauthier-lamothe/)
 
+## Development Status :open_book:
+
+Development for *Glow* is currently funded for the next few months.
+Upcoming features include a user-friendly web-browser [UI](https://www.youtube.com/watch?v=0ltm6RmyDnM), and several other types of smart contracts.  We are also currently developing a [MOOC](https://gitlab.com/mukn/glow-mooc)
+
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -209,7 +212,7 @@ Sophomore at the National University of Singapore, Noel already holds significan
 ### Milestone 1 — Bridge *Glow* and Substrate
 
 * **Estimated Duration:** 1.5 
-***FTE:** 1.5
+* **FTE:** 1.5
 * **Costs:** $15,000
 
 | Number | Deliverable | Estimated Time | Specification |
@@ -232,6 +235,9 @@ Sophomore at the National University of Singapore, Noel already holds significan
 | 2b. | Test environment | 1 week | We will provide a deterministic build using Nix or GUIX, from which a docker image can be generated that can reliably run tests for CI/CD in gitlab |
 | 2c. | Documentation | 1 week | We will update the documentation of *Glow* with explanations on how to deploy our DApps on a relevant test or production Substrate chains. |
 | 2d. | Slack | 1 week | Handle unforeseen difficulties in the above |
+
+## Future Plans
+
 
 ### Community Engagement
 
