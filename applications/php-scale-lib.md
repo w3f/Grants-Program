@@ -62,7 +62,7 @@ https://github.com/gmajor-encrypt/php-substrate-api
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | Simple documentation on how to use this library |
 | 1. | Metadata decode | support recent runtime metadata decode |  
-| 2. | Results encode/decode | Results types encode/decode|  
+| 2. | Results encode/decode | Results types encode/decode, https://substrate.dev/docs/en/knowledgebase/advanced/codec#results|  
 | 3. | Event decode | storage EventRecord decode|  
 | 4. | Extrinsic decode | Extrinsic decode  |
 | 5. | Custom Type reg |  Can register a custom type through the file  |
