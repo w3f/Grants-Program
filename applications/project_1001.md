@@ -18,6 +18,8 @@
 Project 1001 is a combination of wordToWorld and Uniwrap, and is also an experiment with NFTs and DeFi. It creates a very interesting game for users to play. It transforms spoken words into dynamic NFT stories in real-time using speech recognition and natural language processing. Users can generate stories with NFT models, the generated story is an NFT / a group of NFTs. A user who has the story could bid to exhibit it on a piece of land to the whole world.
  
 [!["1001"](https://img.youtube.com/vi/IfLEJZKqxoQ/0.jpg)](https://www.youtube.com/watch?v=IfLEJZKqxoQ)
+[![wordToWorld](https://img.youtube.com/vi/yrz_y5HF_0s/0.jpg)](https://www.youtube.com/watch?v=yrz_y5HF_0s)
+
 
 Project 1001 as a part of Substrate / Kusama / Web 3 Ecosystem
 
@@ -58,7 +60,7 @@ According to our research, we are the first project to build an NFT game on Subs
 
 ### Team members
 
-* Xinyue Yang - Team Lead, Project sponsor
+* Xinyue Yang - Team Lead
 * Leo Yang - Team technical Lead
 * Alex - Team fullstack technical engineer
 
@@ -73,7 +75,6 @@ According to our research, we are the first project to build an NFT game on Subs
 
 [Xinyue Yang](http://xinyue.de/), is the lead designer. is the founder of [wordtoworld.io](wordtoworld.io), the project is an extension of her bachelor’s and master’s project at Kunsthochschule Berlin Weissensee, she joined DesignFarm Berlin, a design-in-tech accelerator in Berlin Germany in October 2020. Her Bachelor project “Scribbling Speech” turns real-time speech into animated drawings. It was [featured by Google Experiment](https://experiments.withgoogle.com/scribbling-speech) (AI collection) and was exhibited at Google I/O 2019 video tent.
 She continued this topic and did my Master’s project “Word to World”, which visualizes the spoken words into dynamic 3D animations. It opens up a new interactive experience of story-telling, and she decided to found a startup and develop a speech-interactive product for parents and kids to tell stories.
-[![wordToWorld](https://img.youtube.com/vi/yrz_y5HF_0s/0.jpg)](https://www.youtube.com/watch?v=yrz_y5HF_0s).
 
 Leo Yang, is the lead technical, he is the founder of [UniWrap](https://uniwrap.io/), which enables users to mint a group of token assets into NFTs and jointly participate in DeFi services. He has many years of software development experience and is a decentralized technology believer and a DeFi native. He has developed many successful Defi protocols, and participated or led the development of blockchain projects such as the chains and exchanges. He has rich project development experience in Bitcoin, Ethereum, Substrate, Nervos and other chains.
 
