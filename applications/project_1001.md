@@ -69,7 +69,7 @@ According to our research, we are the first project to build an NFT game on Subs
 ### Contact
 
 * **Contact Name:** Leo Yang
-* **Contact Email:** xueping.yang@gmail.com
+* **Contact Email:** uniwrapxyz@gmail.com
 * **Website:**
 
 ### Team's experience
