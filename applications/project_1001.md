@@ -5,7 +5,7 @@
 > See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/#pencil-process) on how to submit a proposal.
 
 * **Project Name:** Project 1001 - MVP - Phase 1
-* **Team Name:** Uniwrap/1000 group
+* **Team Name:** Uniwrap/1001 Group
 * **Payment Address:** 0x173553c179bbf5af39D8Db41F0B60e4Fc631066a (USDT)
 
 
@@ -16,9 +16,10 @@
 ### Overview
 
 Project 1001 is a combination of wordToWorld and Uniwrap, and is also an experiment with NFTs and DeFi. It creates a very interesting game for users to play. It transforms spoken words into dynamic NFT stories in real-time using speech recognition and natural language processing. Users can generate stories with NFT models, the generated story is an NFT / a group of NFTs. A user who has the story could bid to exhibit it on a piece of land to the whole world.
- 
-[!["1001"](https://img.youtube.com/vi/IfLEJZKqxoQ/0.jpg)](https://www.youtube.com/watch?v=IfLEJZKqxoQ)
-[![wordToWorld](https://img.youtube.com/vi/yrz_y5HF_0s/0.jpg)](https://www.youtube.com/watch?v=yrz_y5HF_0s)
+
+|project 1001|wordtoworld|
+|---|---|
+|[!["1001"](https://img.youtube.com/vi/IfLEJZKqxoQ/0.jpg)](https://www.youtube.com/watch?v=IfLEJZKqxoQ)|[![wordToWorld](https://img.youtube.com/vi/yrz_y5HF_0s/0.jpg)](https://www.youtube.com/watch?v=yrz_y5HF_0s)|
 
 
 Project 1001 as a part of Substrate / Kusama / Web 3 Ecosystem
