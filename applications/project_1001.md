@@ -93,6 +93,10 @@ Alex, is the fullstack technical engineer, he has 7 year of software development
 
 ## Development Roadmap :nut_and_bolt:
 
+* **Estimated duration:** 3 month
+* **FTE:**  3.5 FTE
+* **Costs:** 30,000 USD
+
 #### Roadmap
 We will need to complete the NFT minting and composing logic, the land buying and renting logic in the next 3 months. As the non-crypto part of the game logic is almost completed in wordToWorld, at that time we will be able to have a playable mobile app game. Model Editor and DeFi utility will come in the second phase.
  
