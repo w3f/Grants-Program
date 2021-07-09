@@ -33,7 +33,7 @@ Project 1001 as a part of Substrate / Kusama / Web 3 Ecosystem
  
 |marketplace|story exposure|
 |---|---|
-|![marketplace-creation](https://wordtoworld.s3.eu-central-1.amazonaws.com/marketplace.png)|![story display](https://wordtoworld.s3.eu-central-1.amazonaws.com/land_view.png)|
+|![marketplace-creation](https://wordtoworld.s3.eu-central-1.amazonaws.com/marketplace.png)|![story display](https://wordtoworld.s3.eu-central-1.amazonaws.com/land_view_small.png)|
  
 |land economy|model editor|
 |---|---|
