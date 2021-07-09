@@ -57,6 +57,10 @@ Here is the flow of the token economics with KSM as the system token for example
 
 According to our research, we are the first project to build an NFT game on Substrate, and we hope to create a new era of NFT+DeFi.
 
+#### Contribution to the ecosystem
+The 1001 project could make NFTs more interactive, add exposure, and enable NFT creation just by speaking by non-tech and non-art users, the created NFT could be further used in the internal DeFi scenarios, so it could greatly extend the NFT usability on Polkadot/Kusama.
+
+
 ## Team :busts_in_silhouette:
 
 ### Team members
