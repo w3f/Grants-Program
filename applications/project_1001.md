@@ -1,0 +1,125 @@
+# W3F Open Grant Proposal
+
+> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
+>
+> See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/#pencil-process) on how to submit a proposal.
+
+* **Project Name:** Project 1001 - MVP - Phase 1
+* **Team Name:** Uniwrap/1000 group
+* **Payment Address:** 0x173553c179bbf5af39D8Db41F0B60e4Fc631066a (USDT)
+
+
+> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+
+## Project Overview :page_facing_up:
+
+### Overview
+
+Project 1001 is a combination of wordToWorld and Uniwrap, and is also an experiment with NFTs and DeFi. It creates a very interesting game for users to play. It transforms spoken words into dynamic NFT stories in real-time using speech recognition and natural language processing. Users can generate stories with NFT models, the generated story is an NFT / a group of NFTs. A user who has the story could bid to exhibit it on a piece of land to the whole world.
+ 
+[!["1001"](https://img.youtube.com/vi/IfLEJZKqxoQ/0.jpg)](https://www.youtube.com/watch?v=IfLEJZKqxoQ)
+
+Project 1001 as a part of Substrate / Kusama / Web 3 Ecosystem
+
+### Project Details
+
+#### Features
+* Speech interactive: let a bird fly just by saying "The bird is flying!", 1001 visualize a dynamic world according to users' spoken words.
+* Composable NFT story: NFTs from different networks could be integrated together into one story, the story itself as grouped NFTs could be used in multiple DeFi cases like lending, staking, or as an IDO permission.
+* DIY unique characters: Make your own characters by composing different body parts, see them come to life right away in your story.
+* Rentable land for stories: There are various lands for renting and telling stories. Users can bid for exhibiting their story for the land, and the story will be recorded in "world history".
+ 
+|marketplace|story exposure|
+|---|---|
+|![marketplace-creation](https://wordtoworld.s3.eu-central-1.amazonaws.com/marketplace.png)|![story display](https://wordtoworld.s3.eu-central-1.amazonaws.com/land_view.png)|
+ 
+|land economy|model editor|
+|---|---|
+|![land-renting](https://wordtoworld.s3.eu-central-1.amazonaws.com/marketplace_land_renting.png)|![model editor](https://wordtoworld.s3.eu-central-1.amazonaws.com/model-editor.png)|
+ 
+ 
+#### Token Usages
+In the game, the system token is used in all the cases involved with the economy, specifically:
+* A story could be minted as an NFT on different lands with system token.
+* The story elements like Action, Emoji, Sounds could be exchanged as NFT on the marketplace.
+* A story on different lands outputs different stories, and the land could be bought or rented with system token, so that a story could be displayed on the land.
+* Our model editor enables users to easily create models in 1001 and models could be minted as an NFT with system token as fee.
+ 
+Here is the flow of the token economics with KSM as the system token for example.
+ 
+![token economics](https://wordtoworld.s3.eu-central-1.amazonaws.com/1001flow.png)
+
+
+### Ecosystem Fit
+
+According to our research, we are the first project to build an NFT game on Substrate, and we hope to create a new era of NFT+DeFi.
+
+## Team :busts_in_silhouette:
+
+### Team members
+
+* Xinyue Yang - Team Lead, Project sponsor
+* Leo Yang - Team technical Lead
+* Alex - Team fullstack technical engineer
+
+
+### Contact
+
+* **Contact Name:** Leo Yang
+* **Contact Email:** xueping.yang@gmail.com
+* **Website:**
+
+### Team's experience
+
+[Xinyue Yang](http://xinyue.de/), is the lead designer. is the founder of [wordtoworld.io](wordtoworld.io), the project is an extension of her bachelor’s and master’s project at Kunsthochschule Berlin Weissensee, she joined DesignFarm Berlin, a design-in-tech accelerator in Berlin Germany in October 2020. Her Bachelor project “Scribbling Speech” turns real-time speech into animated drawings. It was [featured by Google Experiment](https://experiments.withgoogle.com/scribbling-speech) (AI collection) and was exhibited at Google I/O 2019 video tent.
+She continued this topic and did my Master’s project “Word to World”, which visualizes the spoken words into dynamic 3D animations. It opens up a new interactive experience of story-telling, and she decided to found a startup and develop a speech-interactive product for parents and kids to tell stories.
+[![wordToWorld](https://img.youtube.com/vi/yrz_y5HF_0s/0.jpg)](https://www.youtube.com/watch?v=yrz_y5HF_0s).
+
+Leo Yang, is the lead technical, he is the founder of [UniWrap](https://uniwrap.io/), which enables users to mint a group of token assets into NFTs and jointly participate in DeFi services. He has many years of software development experience and is a decentralized technology believer and a DeFi native. He has developed many successful Defi protocols, and participated or led the development of blockchain projects such as the chains and exchanges. He has rich project development experience in Bitcoin, Ethereum, Substrate, Nervos and other chains.
+
+Alex, is the fullstack technical engineer, he has 7 year of software development experience. He has  developed many successful  Cross-Chain Dapps such as exchanges and contracts IDE. He has rich project development experience on large Cross-Chain projects.
+
+### Team Code Repos
+
+* https://github.com/uniwrap-protocal
+* https://github.com/softlipaschara
+* https://github.com/buildtrust
+* https://github.com/captainalexyz
+
+## Development Roadmap :nut_and_bolt:
+
+#### Roadmap
+We will need to complete the NFT minting and composing logic, the land buying and renting logic in the next 3 months. As the non-crypto part of the game logic is almost completed in wordToWorld, at that time we will be able to have a playable mobile app game. Model Editor and DeFi utility will come in the second phase.
+ 
+#### Contribution to the ecosystem
+The 1001 project could make NFTs more interactive, add exposure, and enable NFT creation just by speaking by non-tech and non-art users, the created NFT could be further used in the internal DeFi scenarios, so it could greatly extend the NFT usability on Polkadot/Kusama.
+ 
+ 
+### Disclaimer
+The wordToWorld project is funded by the accelerator and venture capitals, we will not use the funds here to support wordToWorld development.
+ 
+### Deliverables
+ 
+| Number | Deliverable | Duration |
+| ------------- | ------------- | ------------- |
+| 0a. | Create the assets pallet for models, story and assets| 1 Week | 
+| 0b. | Complete RMRK2.0 compatible pallet development | 1 Week | 
+| 0c. | Enable model and story transfer, creation, enable compose different models into a story | 1 Week | 
+| 0d. | Connect the wallet creation with the game login process | 1 Week | 
+| 1a. | Bind the in-game story creation with on-chain extrinsics | 1.5 Weeks | 
+| 1b. | Adding land as NFT into protocol, enable story placed into land  | 1.5 Week | 
+| 1c. | Enable land lending and land auction | 1 Week | 
+| 2a. | Create Land lending and auction in game | 1 Week |
+| 2b. | Bind the in-game story creation and land lending with on-chain extrinsics | 1 Week |
+| 2c. | Create tutorial for play in the app, and create stories| 1 Week | 
+| 2d. | deliver a iOS app on TestFlight which could be download and play| 1 Week | 
+ 
+ 
+So the total duration will be 12 weeks, which is approximately 3 months.
+
+
+## Additional Information :heavy_plus_sign:
+
+### Will the code be all open-sourced?
+ 
+The blockchain part built on/with Substrate will all be open-sourced, but the language engine is also used in other projects and implemented before, which is not in the range of this grant, so we would rather keep it in private.
