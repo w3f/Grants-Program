@@ -64,15 +64,15 @@ Currently, we already have a skeleton substrate [canyon](https://github.com/cany
 
 ### Overview
 
-- **Total Estimated Duration:** 2 months
+- **Total Estimated Duration:** 1.5 months
 - **Full-Time Equivalent (FTE):** 1
-- **Total Costs:** 20,000 USD
+- **Total Costs:** 15,000 USD
 
 ### Milestone 1 — Implement the PoA consensus POC
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 1.5 month
 - **FTE:** 1
-- **Costs:** 10,000 USD
+- **Costs:** 15,000 USD
 
 | Number | Deliverable              | Specification                                                                                                                                                                                                                                                               |
 | -----: | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -80,10 +80,10 @@ Currently, we already have a skeleton substrate [canyon](https://github.com/cany
 |    0b. | Documentation            | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                             |
 |    0c. | Testing Guide            | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                           |
 |    0d. | Docker                   | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                               |
-|    0e. | Article                  | We will publish an **article** that explains the implementaion details of PoA consensus.                                                                                                                                                                                    |
+|    0e. | Article                  | We will publish an **article** that explains the implementaion details of PoA consensus. We will update our paper with more SPoRA technical details and analysis.                                                                                                                                                                                    |
 |     1. | Node: `cc-rpc`           | We will create a crate that will provides two RPCs: `permastore_submit` and `permastore_retrieve` for storing the data(<=10MiB) respectively                                                                                                                                |
 |     2. | Node: `cc-database`      | We will create a crate that will provide the feature of persistent transaction data storage on the top of offchain storage.                                                                                                                                                 |
-|     3. | Node: `cc-consensus-poa` | We will create a crate that will implement the core algorithm of PoA illustrated in the white paper. This crate will also implement the function of inherent data provider to inject a `DigestItem::Seal` entry providing the proof of access into the block header.        |
+|     3. | Node: `cc-consensus-poa` | We will create a crate that will implement the core algorithm of PoA illustrated in the white paper. This crate will also implement the function of inherent data provider to inject a `DigestItem::Seal` entry providing the proof of access into the block header. We will verify the `DigesteItem::Seal(PoA)` item in the block header by wrapping a poa import queue component into the current babe block import.        |
 |     4. | Rust CLI: `submit`       | We will extend canyon-cli by adding two new commands: `submit` to store the data from CLI which calls `permastore_submit` internally, `submit-and-store` will firstly call `submit` and send the extrinsic `permastore::store` to actually store the data onto the network. |
 
 `cc-rpc` RPCs:
@@ -97,22 +97,6 @@ Currently, we already have a skeleton substrate [canyon](https://github.com/cany
 
   - `fn retrieve(key: Bytes) -> Result<Option<Bytes>>`
   - user can retrieve the data(<=10MiB) directly using this PRC, the key is the chunk root of the data.
-
-### Milestone 2 — Verify POA on block import and implement SPORA
-
-- **Estimated Duration:** 1 month
-- **FTE:** 1
-- **Costs:** 10,000 USD
-
-| Number | Deliverable                | Specification                                                                                                                                                                                                                   |
-| -----: | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|    0a. | License                    | GPLv3                                                                                                                                                                                                                           |
-|    0b. | Documentation              | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-|    0c. | Testing Guide              | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                               |
-|    0d. | Docker                     | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                   |
-|    0e. | Article                    | We will publish an article that explains the implementation detail of SPORA as well as the PoA verifition on block import.                                                                                                      |
-|     1. | Node: `cc-consensus-poa`   | We will extend `cc-consensus-poa` to verify `DigesteItem::Seal(PoA)` item in the block header by wrapping a PoA import queue component into the current babe import.                                                            |
-|     2. | Node: `cc-consensus-spora` | We will create a crate that is based on `cc-consensus-poa` but is refined to increase the data redundancy. More tech details will be included in step `0e` .                                                                    |
 
 ## Future Plans
 
