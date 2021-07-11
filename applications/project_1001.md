@@ -98,37 +98,31 @@ Alex, is the fullstack technical engineer, he has 7 year of software development
 * **Costs:** 30,000 USD
 
 #### Roadmap
-We will need to complete the NFT minting and composing logic, the land buying and renting logic in the next 3 months. As the non-crypto part of the game logic is almost completed in wordToWorld, at that time we will be able to have a playable mobile app game. Model Editor and DeFi utility will come in the second phase.
- 
+We will need to complete the NFT minting and composing logic, the land buying and renting logic, and the game with Unity in the next 4 months. At that time we will be able to have a playable mobile app game. Model Editor and DeFi utility will come in the second phase.
+
+#### Disclaimer
+The currently 1001 team has no overlap with the wordToWorld team except Xinyue. In 1001 the team will create a new open-source game with an open source language processing engine.
+
 #### Contribution to the ecosystem
 The 1001 project could make NFTs more interactive, add exposure, and enable NFT creation just by speaking by non-tech and non-art users, the created NFT could be further used in the internal DeFi scenarios, so it could greatly extend the NFT usability on Polkadot/Kusama.
- 
- 
-### Disclaimer
-The wordToWorld project is funded by the accelerator and venture capitals, we will not use the funds here to support wordToWorld development.
- 
+
 ### Deliverables
- 
+
 | Number | Deliverable | Duration |
 | ------------- | ------------- | ------------- |
 | 0a. | Create the assets pallet for models, story and assets| 1 Week | 
 | 0b. | Complete RMRK2.0 compatible pallet development | 1 Week | 
 | 0c. | Enable model and story transfer, creation, enable compose different models into a story | 1 Week | 
 | 0d. | Connect the wallet creation with the game login process | 1 Week | 
-| 1a. | Bind the in-game story creation with on-chain extrinsics | 1.5 Weeks | 
+| 0e. | Generate the basic world of the game in Unity | 2 Week | 
+| 1a. | Bind the in-game story creation with on-chain extrinsics | 2.5 Weeks | 
 | 1b. | Adding land as NFT into protocol, enable story placed into land  | 1.5 Week | 
 | 1c. | Enable land lending and land auction | 1 Week | 
-| 2a. | Create Land lending and auction in game | 1 Week |
-| 2b. | Bind the in-game story creation and land lending with on-chain extrinsics | 1 Week |
+| 1d. | Integrate the story creation and  | 2 Week | 
+| 2b. | Bind the in-game story creation and land lending with on-chain extrinsics | 2 Week |
 | 2c. | Create tutorial for play in the app, and create stories| 1 Week | 
 | 2d. | deliver a iOS app on TestFlight which could be download and play| 1 Week | 
- 
- 
+
 So the total duration will be 12 weeks, which is approximately 3 months.
 
-
 ## Additional Information :heavy_plus_sign:
-
-### Will the code be all open-sourced?
- 
-The blockchain part built on/with Substrate will all be open-sourced, but the language engine is also used in other projects and implemented before, which is not in the range of this grant, so we would rather keep it in private.
