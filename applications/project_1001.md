@@ -108,20 +108,25 @@ The 1001 project could make NFTs more interactive, add exposure, and enable NFT 
 
 ### Deliverables
 
-| Number | Deliverable | Duration |
-| ------------- | ------------- | ------------- |
-| 0a. | Create the assets pallet for models, story and assets| 1 Week | 
-| 0b. | Complete RMRK2.0 compatible pallet development | 1 Week | 
-| 0c. | Enable model and story transfer, creation, enable compose different models into a story | 1 Week | 
-| 0d. | Connect the wallet creation with the game login process | 1 Week | 
-| 0e. | Generate the basic world of the game in Unity | 2 Week | 
-| 1a. | Bind the in-game story creation with on-chain extrinsics | 2.5 Weeks | 
-| 1b. | Adding land as NFT into protocol, enable story placed into land  | 1.5 Week | 
-| 1c. | Enable land lending and land auction | 1 Week | 
-| 1d. | Integrate the story creation and  | 2 Week | 
-| 2b. | Bind the in-game story creation and land lending with on-chain extrinsics | 2 Week |
-| 2c. | Create tutorial for play in the app, and create stories| 1 Week | 
-| 2d. | deliver a iOS app on TestFlight which could be download and play| 1 Week | 
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basictutorial that explains how mint/buy/lend project 1001 NFT with story and models. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article that explains  the work done as part of the grant. |
+| 1a. | Pallet module: 1 | Create the assets pallet for models, story and assets. 1 Week |
+| 1b. | Pallet module: 2 | Complete RMRK2.0 compatible pallet development. 1 Week |
+| 1c. | Pallet module: 3 | Enable model and story transfer, creation, enable compose different models into a story. 1 Week | 
+| 1d. | Wallet module | Connect the wallet creation with the game login process. 1 Week | 
+| 1e. | Frontend module: 1 | Generate the basic world of the game in Unity. 2 Weeks | 
+| 1f. | Frontend module: 1 | Bind the in-game story creation with on-chain extrinsics. 2.5 Weeks |
+| 2a. | Land module: 1 | Adding land as NFT into protocol, enable story placed into land.  1.5 Weeks | 
+| 2b. | Land module: 2 | Enable land lending and land auction. 1 Week |
+| 2c. | Land module: 3 | Integrate the story creation. 2 Weeks |  
+| 3a. | Integrate phase: 1 | Bind the in-game story creation and land lending with on-chain extrinsics. 2 Weeks |
+| 3b. | Integrate phase: 2 | Create tutorial for play in the app, and create stories. 1 Week |
+| 3c. | Integrate phase: 3 | Deliver a iOS app on TestFlight which could be download and play. 1 Week |
 
 So the total duration will be 12 weeks, which is approximately 3 months.
 
