@@ -11,7 +11,8 @@
 
 <details>
   <summary><b>How much can I ask for?</b></summary>
-  The [Open Grants](https://github.com/w3f/Open-Grants-Program) program is capped at US $30k for initial grants. If the first grant is successfully completed, you can apply for a follow-up grant, which are capped at $100k. The [General Grants](https://github.com/w3f/General-Grants-Program/) program, on the other hand, is capped at $100k for all applications, although higher grants are possible in exceptional cases. However, we only accept applications for the General Grants program if you have a reason for the project to remain private or you can only take fiat payments, or in exceptional cases if you can put together a strong case against applying for an initial $30k grant.
+
+  The [Open Grants](../README.md) program is capped at US $30k for initial grants. If the first grant is successfully completed, you can apply for a follow-up grant, which is capped at $100k. The [General Grants](./General-Grants-Program.md) program, on the other hand, is capped at $100k for all applications, although higher grants are possible in exceptional cases. However, we only accept applications for the General Grants program if you have a reason for the project to remain private or you can only take fiat payments, or in exceptional cases if you can put together a strong case against applying for an initial $30k grant.
 </details>
 
 <details>
