@@ -19,7 +19,7 @@ As part of our commitment to promoting the Web3 ecosystem, we offer comprehensiv
 
 **Only apply via the General Grants Program if:**
 
-- you seek funding of $30,000+ and your work cannot be split into smaller milestones,
+- you seek funding of $100,000+ and your work cannot be split into smaller milestones,
 - you want your team/project information to remain private, or
 - you can only accept fiat payments.
 
