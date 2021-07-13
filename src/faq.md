@@ -125,7 +125,7 @@
 <details>
   <summary><b>How do I submit a milestone?</b></summary>
 
-  For details, please refer to the milestone delivery guidelines for the respective grants program. Generally speaking, the most important part of a delivery is a list of **the same deliverables listed in the application** with links to their implementation/realisation (ideally pointing to a specific commit or tag, so you can continue working on your repository without messing up your delivery and complicating our evaluation) and any additional notes you might have. The list of deliverables for each of your milestones should be defined in your grant agreement.
+  For details, please refer to the [milestone delivery guidelines](./milestone-deliverables-guidelines.md) for the respective grants program. Generally speaking, the most important part of a delivery is a list of **the same deliverables listed in the application** with links to their implementation/realisation (ideally pointing to a specific commit or tag, so you can continue working on your repository without messing up your delivery and complicating our evaluation) and any additional notes you might have. The list of deliverables for each of your milestones should be defined in your grant agreement.
 </details>
 
 <details>
