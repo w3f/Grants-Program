@@ -33,7 +33,7 @@ Teams can apply for grants more than once, but they need to successfully complet
 
 1. **Application**
 
-    We strongly recommend working off of the [grant application template](../applications/application_template.md), which gives an indication of what a good roadmap should look like and outlines the criteria and information we look for in an application.
+    We strongly recommend working off of the [grant application template](../applications/application-template.md), which gives an indication of what a good roadmap should look like and outlines the criteria and information we look for in an application.
 
     Partially public applications that limit financial information (i.e. the requested funding amount) to the application form in step `ii.` are preferred. However, teams are free to make fully public applications as well as fully private applications.
 
@@ -51,4 +51,3 @@ Teams can apply for grants more than once, but they need to successfully complet
 4. **Follow-up**
    - Once work on the project has started, the Web3 Foundation will want to have follow-up conversations to see how the project is progressing.
    - To help speed up the milestone evaluation process, take a look at the [Guidelines for Milestone Deliverables](milestone-deliverables-guidelines.md). Milestones will be evaluated based on this document and the details provided in your application.
-
