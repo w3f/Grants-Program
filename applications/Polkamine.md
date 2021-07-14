@@ -178,7 +178,7 @@ In addition to OCW, MINE Network will also integrate Substrate’s Off-chain Sto
 * Farrukh Shaikh - Advisor  
 
 ### Team Website
-* https://polkamine.com/
+* https://mine.network/
 
 ### Legal Structure
 Polkamine Technology Ltd. is a company registered in the BVI.
