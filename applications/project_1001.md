@@ -128,6 +128,6 @@ The 1001 project could make NFTs more interactive, add exposure, and enable NFT 
 | 3b. | Integrate phase: 2 | Create tutorial for play in the app, and create stories. 1 Week |
 | 3c. | Integrate phase: 3 | Deliver a iOS app on TestFlight which could be download and play. 1 Week |
 
-So the total duration will be 12 weeks, which is approximately 3 months.
+So the total duration will be 12 weeks, which is approximately 3 months. We will use Rust for pallets code, Ink! for smart contracts and Unity/Typescript for frontend UI.
 
 ## Additional Information :heavy_plus_sign:
