@@ -1,4 +1,4 @@
-# Open Grants Program <!-- omit in toc -->
+# W3F Grants Program <!-- omit in toc -->
 
 <p align="center">
   <img src="src/Open_Grants_Program.png" style="width:1300px";>
