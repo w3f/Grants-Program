@@ -213,7 +213,7 @@ Pramod aims to build Web3 economy for unique and scarce digital assets supported
 Farrukh is a seasoned investment and financial professional who previously worked for both KPMG and Grant & Thornton. During his corporate career Farrukh was involved with audit and advisory for the middle eastern region’s largest players. He later left his corporate career to join the evolving world of cryptocurrency. He is a derivatives trader and an active investor in the crypto space.
 
 ### Team Code Repos
-* https://github.com/Polkamine-Network
+* https://github.com/Mine-Blockchain
 
 ### Team Linkedin Profiles
 * https://www.linkedin.com/in/andreas-a-62964a207/  
