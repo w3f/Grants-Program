@@ -4,8 +4,6 @@
   <img src="src/Open_Grants_Program.png" style="width:1300px";>
 </p>
 
-> **:loudspeaker:** The Web3 Foundation _Open Grants_ Program focuses on technology grants of up to **$30,000 for initial grants** and **$100,000 for follow-up grants**, which are tracked **transparently** on GitHub and disbursed in **Bitcoin, USDT or DAI**. For larger grants, payments in fiat and private submissions, please see our [_General Grants_ Program](./src/General-Grants-Program.md).
-
 ---
 
 - [:wave: Introduction](#wave-introduction)
@@ -13,9 +11,6 @@
   - [Project ideas](#project-ideas)
   - [Support](#support)
   - [Team](#team)
-    - [W3F Grants Committee](#w3f-grants-committee)
-    - [W3F Grants Evaluators](#w3f-grants-evaluators)
-    - [W3F Operations Team](#w3f-operations-team)
 - [:pencil: Process](#pencil-process)
 - [:mailbox_with_mail: Request for Proposals (RFP) Suggestions](#mailbox_with_mail-request-for-proposals-rfp-suggestions)
 - [:bulb: Help](#bulb-help)
@@ -23,7 +18,6 @@
   - [Real-time conversation](#real-time-conversation)
 - [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
   - [Treasury](#treasury)
-  - [General Grants Program](#general-grants-program)
   - [Hackathons](#hackathons)
   - [Other Grant Programs](#other-grant-programs)
 
@@ -31,15 +25,9 @@
 
 As part of our commitment to promoting the Web3 ecosystem, we offer comprehensive grants programs focused on funding software development and research efforts related to **Polkadot, Kusama and Substrate**. For more information about the Web3 Foundation, please visit the [About page](https://web3.foundation/about/) on our website.
 
-The Open Grants Program tries to achieve the above while being:
-
-- fully transparent,
-- simple, and
-- effective.
-
 ### Guidelines
 
-Anyone is welcome to apply for a grant. Projects funded through our programs are broad in scope, but our focus lies on strong technical projects that add value to the ecosystem.
+Anyone is welcome to apply for a grant. Projects funded through our programs are broad in scope, but our focus lies on strong **technical** projects that add value to the ecosystem.
 
 Generally, your project will have better chances to get accepted if:
 
@@ -56,7 +44,7 @@ Additionally, it must fulfill the following requirements:
 - As a general rule, teams are asked to finish a grant before applying for another one.
 - Lastly, we do not fund projects that actively encourage gambling, illicit trade, money laundering or criminal activities in general.
 
-In addition to the information provided on your application, note that your project will need to comply with our [Guidelines for Milestone Deliverables](./src/milestone-deliverables-guidelines.md). In particular, we require all projects to create documentation that explains how their project works. At a minimum, _written_ documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product. If your team's background is purely technical, consider hiring a freelance or part-time technical writer as part of the grant.
+In addition to the information provided on your application, note that your project will need to comply with our [Guidelines for Milestone Deliverables](./src/milestone-deliverables-guidelines.md). In particular, we require all projects to create documentation that explains how their project works. At a minimum, _written_ documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product. 
 
 We also have [Announcement Guidelines](./src/announcement-guidelines.md) for grant-related communications.
 
@@ -115,6 +103,8 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 - [Rouven Pérez](https://github.com/RouvenP)
 
 ## :pencil: Process
+
+> **:loudspeaker:** We ask teams to follow the process below, which has **faster processing times** and provides grants of up to **$30,000 for initial applications** and **$100,000 for follow-up** ones disbursed in Bitcoin, USDT or DAI. However, if you want to apply in **private**, need to be paid out in **fiat** and/or you **seek funding of $100,000+** and your work cannot be split into smaller milestones, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform)
 
 1. **Application**
    1. [Fork](https://github.com/w3f/Open-Grants-Program/fork) this repository.
@@ -177,10 +167,6 @@ The treasury is a pot of on-chain funds collected through transaction fees, slas
 - [Treasury Wiki](https://wiki.polkadot.network/docs/en/learn-treasury)
 - [Polkadot Treasury Guide](https://docs.google.com/document/d/1IZykdp2cyQavcRyZd_dgNj5DcgxgZR6kAqGdcNARu1w)
 - [Kusama Treasury Guide](https://docs.google.com/document/d/1p3UQUjph5t8TVaWnTkfrI5mE-BABnM9Xvtuhdlhl6JE)
-
-### General Grants Program
-
-For larger grants, payments in fiat or partially private submissions, please see our [General Grants Program](./src/General-Grants-Program.md) page.
 
 ### Hackathons
 
