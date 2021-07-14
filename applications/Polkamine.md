@@ -246,7 +246,7 @@ Farrukh is a seasoned investment and financial professional who previously worke
 | 1.         | Mining Pool Standardization Pallet    | The Mining Pool Standardization Pallet will record all the stats of different standardized mining pools for different coins like BTC, ETH and FIL, etc. All the output, total hashrate power, daily expenses are fully recorded in this module. |
 | 2.         | Rewards Oracle                        | The Rewards Oracle part is another important module of this project. MINE Network will integrate Substrate's Off-chain Worker mechanism to ensure the openness and transparency of data, such as mining pool revenue and fees. |
 | 3.         | Article/Tutorial                      | We will publish medium articles that explains the mining standardization mechanisms and how it will help introduce the first substrate based standardized hashrate token protocol into the DeFi lego of the Polkadot Ecosystem. |
-| 4.         | Tests                     | Unit tests of Mining Pool Standardization Pallet |
+| 4.         | Tests                     | Unit tests of Mining Pool Standardization Pallet and Rewards Oracle|
 | 5.         | Docker image                    | We will provide a dockerfile to demonstrate the full functionality of testing Substrate. |
 
 **Milestone 2 - pToken Staking-to-Mine Pallet and Front-end Integration**
