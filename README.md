@@ -68,7 +68,7 @@ For questions about the grants program itself, see our [FAQ](./src/faq.md#freque
 
 ### Team
 
-#### W3F Grants Committee
+#### W3F Grants Committee <!-- omit in toc -->
 
 The committee consists of individuals who know the funding priorities of the Polkadot ecosystem, and is responsible for evaluating grant applications and providing feedback on these.
 
@@ -85,7 +85,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
 - [Gavin Wood](https://github.com/gavofyork)
 
-#### W3F Grants Evaluators
+#### W3F Grants Evaluators <!-- omit in toc -->
 
 Evaluators are individuals able to evaluate the technology delivered as a result of the Open Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
@@ -95,7 +95,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 - [Sebastian Müller](https://github.com/semuelle)
 - [Aleixo Sánchez](https://github.com/alxs)
 
-#### W3F Operations Team
+#### W3F Operations Team <!-- omit in toc -->
 
 The Operations Team takes care of legal documents, invoicing and remittances.
 
