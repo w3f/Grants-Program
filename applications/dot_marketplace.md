@@ -1,8 +1,9 @@
 # **Dot Marketplace**
 
 - Status: Open
-- Proposer: Wow Labz
-- Projects you think this work could be useful for: [Polkadot](https://polkadot.network/), [Kusama](https://kusama.network/), [Moonbeam](https://moonbeam.network/) and all Polkadot parachains/ parathreads 
+- Proposer: Wow Labz  
+- USDT Wallet Address: 0xF13001401396AA866E8012f31fD939C7E83B8601  
+- Projects you think this work could be useful for: [Polkadot](https://polkadot.network/), [Kusama](https://kusama.network/), [Moonbeam](https://moonbeam.network/) and any Polkadot parachains/ parathreads interested in including a marketplace 
 
 ### **Overview** 📄
 
