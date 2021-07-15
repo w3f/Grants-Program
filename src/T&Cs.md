@@ -73,11 +73,11 @@ You shall indemnify and hold harmless Web 3.0 from any third party claims (inclu
 
 To apply for the Web 3.0 Foundation Open Grants Program, your application shall fulfill the following criteria:
 
--  It shall be a software-based project, which contributes to the advancement of the Polkadot ecosystem;
+-  it shall be a software-based project, which contributes to the advancement of the Polkadot ecosystem;
 -  the total amount of funding requested for the project shall be below USD  30,000 and USD 100,000 for follow-up grants at the time of submission;
 -  the Software shall be released under the Apache license version 2.0.;
--  You must accept payment in the blockchain tokens native to the Bitcoin Network ("BTCs") or the Ethereum based stablecoin DAI. 
--  You will need to submit the application and deliver the milestones according to the process specified below.
+-  You must accept payment in the blockchain tokens native to the Bitcoin Network ("BTCs") or the Ethereum based stablecoin DAI;
+-  You will need to submit the application and deliver the milestones according to the process specified below;
 
 The open grants process consists of five parts, each of them described in more detail below:
 
@@ -143,7 +143,7 @@ The Parties acknowledge and agree that the requirements set out in the Milestone
 
 ## 6.  Obligations of User
 
-1.  You shall deliver the Software, as well as all related deliverables, including but not limited to the source code, to Web 3.0 free of defects, fully compliant with the Specifications and in accordance with the Time Schedule .
+1.  You shall deliver the Software, as well as all related deliverables, including but not limited to the source code, to Web 3.0 free of defects, fully compliant with the Specifications and in accordance with the Time Schedule.
 
 2.  Web 3.0 shall be in the position to further developing, re-engineering and using the delivered Software without any technical or other limitations.
 
@@ -208,12 +208,11 @@ These Terms and Conditions (i) comes into force on the Effective Date (notwithst
 
 Termination with immediate effect will occur if the terms of the Terms and Conditions agreement is violated, as follows:
 
-(a)  if a deadline according to the Time Schedule is not met;
-
-1.  if it results from Your behavior that such a deadline will not be met; 
-2.  if You become bankrupt, insolvent, wound-up or dissolved or otherwise loses its legal personality as a validly standing entity; 
-3.  if there is a Change in Control and Web 3.0. has not given his prior written consent to such Change in control; and/or
-4.  is the event You do not comply with Section 6 (d), (e) and (f) and/or causes, in any way and at Web 3.0.'s discretion, any damage to Web 3.0. or Polkadot's image or reputation.
+1. if a deadline according to the Time Schedule is not met;
+2. if it results from Your behavior that such a deadline will not be met;
+3. if You become bankrupt, insolvent, wound-up or dissolved or otherwise loses its legal personality as a validly standing entity;
+4. if there is a Change in Control and Web 3.0. has not given his prior written consent to such Change in control; and/or
+5. in the event You do not comply with Section 6.1, 6.4, 6.5, 6.6 and/or causes, in any way and at Web 3.0.'s discretion, any damage to Web 3.0. or Polkadot's image or reputation.
 
 Furthermore, termination can happen for any reason at the discretion of the Web 3.0 Technologies Foundation.
 
