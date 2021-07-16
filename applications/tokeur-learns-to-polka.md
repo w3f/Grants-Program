@@ -6,17 +6,15 @@
 
 ## Project Overview :page_facing_up:
 
-*NEOFACTO Blockchain Team* (hereafter referred to as NEO) wants to port its existing stablecoin which is currently running (in Beta) on Ethereum, Tezos and Next (an Ethereum based private POA blockchain) towards the Polkadot Technology. The stablecoin is called Tokeur and is developped by *tknext OÜ* in Estonia. tknext is a sister company of NEOFACTO and is authorized to provide stablecoins services in the EU. Tokeur is the first building block of a larger vision which is aiming at implementing and providing _DeFi_ services in an efficient and compliant way. Thanks to a specific agreement made with our cash depositor, the 1:1 coverage of all the Tokeur coins in circulation can be monitored in real-time. Moreover, thanks to the help of Scorechain, all Tokeur transactions are monitored insuring an end-to-end compliance.
+*NEOFACTO Blockchain Team* (hereafter referred to as NEO) wants to port its existing stablecoin which is currently running (in Beta) on Ethereum, Tezos and Next (an Ethereum based private POA blockchain) towards the Polkadot Technology. The stablecoin is called Tokeur and is developed by *tknext OÜ* in Estonia. tknext is a sister company of NEOFACTO and is authorized to provide stablecoins services in the EU. Tokeur is the first building block of a larger vision which is aiming at implementing and providing _DeFi_ services in an efficient and compliant way. Thanks to a specific agreement made with our cash depositor, the 1:1 coverage of all the Tokeur coins in circulation can be monitored in real-time. Moreover, thanks to the help of Scorechain, all Tokeur transactions are monitored ensuring an end-to-end compliance.
 
 ### Overview
 
 #### Description
 
 * Port Tokeur on the Polkadot Technology first with Substrate components
-* Use the Polkadot Relay Chain and one Parachain
+* Use the Polkadot Relay Chain and Parachain Statemine
 * Target Statemint (more specifically Statemine) for the port of Tokeur
-* Create a Parathread to implement DeFi logic with an ink! smart contract
-* Potentially use the Parathread to add functionnality to Tokeur that might not be available on Statemint
 
 ### Project Details
 
@@ -36,9 +34,7 @@ Our project includes:
 
 ### Ecosystem Fit
 
-Stablecoin projects on various networks and especially on Polkadot network are now being studied and developed by different kind of organizations. 
-
-Depending on the maturity and the functionnality of Statemint, we could consider deploying a custom plateform with Acala solution, that seems to correspond to our needs.
+Stablecoin projects on various networks and especially on Polkadot network are now being studied and developed by different kinds of organizations.
 
 ## Team :busts_in_silhouette:
 
@@ -117,73 +113,32 @@ Front-End Components are ready and the user interface only needs to be customize
 * Backend: Java, MySQL, Camunda BPM, Web3J, EJ4Tezos, ActiveMQ, Camel, Velocity, CXF 
 * Frontend: React.js/Redux
 
-### Overview
+### Overview - Implement Basic StableCoin Functionalities with Statemint
 
-* **Total Estimated Duration:** 2 months
+* **Total Estimated Duration:** 6 weeks
 * **Full-Time Equivalent (FTE):** 2 FTE
-* **Total Costs:** 30k USD
-
-### Milestone 1 - Implement Basic StableCoin Functionalities with Statemint 
-
-* **Estimated duration:** 1 month
-* **FTE:**  2
-* **Costs:** 15k USD
-
-Our vision for Milestone 1:
-
-In case Statemine is useable for our needs: 
+* **Total Costs:** 20k USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |  
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation X1 | We will provide **inline documentation** of the code. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Connector | Create connector to link our solution and statemint  |  
+| 1. | Connector | Create connector to link our solution and Statemint with Multisig and Proxy account abstractions |  
 | 2. | Integration Test | Write appropriate and detailed test to verify the connexion and its limits |  
-| 3. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 3. | Governance | Evaluate the utility to add governance motion with self-sufficient property
+| 4. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 5. | Documentation X2 | A complementary documentation about how we use Statemine and our feedback/tips that can help people to make similar deployments and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 
-In case where Statemine is not useable for our needs: 
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |  
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Parathread X1 | Create a parathread with substrate component |  
-| 2. | Connector | Create a connector to link parathread to our pre-existing solution  |  
-| 3. | Smart Contract | We will implement business logic in an ink! smart contract in rust on our parathread  |  
-| 4. | Unit-Test | Write unit-tests to verify smart contract functionalities |  
-| 5. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-
-### Milestone 2 — Complete stablecoin functionalities for Delivery Versus Payment - DvP - issue
-
-* **Estimated Duration:** 1 month
-* **FTE:**  2
-* **Costs:** 15k USD
-
-Our vision for Milestone 2: 
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Parathread X2 | Create a parathread with substrate component |  
-| 2. | Connector | Create a new connector or a custom connector from the previous milestone (our a more generic connector adapting for each case) to link parathread to our pre-existing solution  | 
-| 3. | Smart Contract | We will implement additional logic in an ink! smart contract in rust on our second parathread  | 
-| 4. | Unit-Test | Write unit-tests to verify smart contract functionalities |  
-| 5. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-
-We could also consider the Acala platform instead of using a first or second (depending on milestone 1's case) parathread, and adding more business logic with parathread if it seems to us that some functionalities are missing. 
 
 ## Future Plans
 
 * First of all, we intend to deploy in production all the functionalities (and potentially more stablecoins) we achieve during the project and provide support for them;
 * We would like to upgrade our solution to be fully GDPR compliant (using ZKP to introduce confidentiality and Claims to make wallets identifiable only by authorized parties);
-* Depending on the use-case, we would like to investigate if a transaction processing speed improvement would be appreciated by the users of our stable coin.
+* Depending on the use-case, we would like to investigate if a transaction processing speed improvement would be appreciated by the users of our stable coin;
+* We would also evaluate the possibility of use XCMP to move part of our backend business logic to parachains/threads;
+* Depending on the maturity and the functionality of Statemint, we could consider deploying a custom platform with Acala solution, that seems to correspond to our needs;
 
 ## Additional Information :heavy_plus_sign:
 
