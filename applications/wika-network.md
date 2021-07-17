@@ -61,8 +61,13 @@ centralized into a few powerful entities.
  
 So why Wika Network? Because we are engaged in solving this problem to make the internet a better place, 
 and we believe that with blockchain technology and Polkadot ecosystem, 
-we have all the necessary foundations and ingredients to succeed.
+we have all the necessary foundations and ingredients to succeed: 
 
+- Trustless design.
+- Decentralization.
+- Transparency.
+- Anonimity.
+- Security.
 
 
 
@@ -70,8 +75,8 @@ we have all the necessary foundations and ingredients to succeed.
 
 ### Project Details
 
-* Economic System:
-
+* Social (Smart) Contract:
+    ![Economic Model](https://www.wika.network/assets/images/wika_economy-388fcfae627eac16fbef5a9cc29ad713.png)
 
 * Components:
 
