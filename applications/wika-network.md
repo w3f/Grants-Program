@@ -101,15 +101,15 @@ we have all the necessary foundations and ingredients to succeed.
     - [Browser Extension](https://github.com/randombishop/wika_browser_ext) can be installed from source.
     
 * What Wika Network _is_ vs is _not_:
-    - *Is:* Wika Network core product is the blockchain until we reach 
+    - **IS:** Wika Network core product is the blockchain until we reach 
     a fully decentralized governance and maintenance process.
     
-    - *Is:* Wika Network also comes with a web app and a browser extension. 
+    - **IS:** Wika Network also comes with a web app and a browser extension. 
     Ultimately, we hope that alternatives will emerge with different approaches, 
     but until then, we will commit to building the front-end tools to facilitate 
     understanding, onboarding and interacting with the blockchain with the best UX. 
   
-    - *Is NOT:* We will also be developing an offchain indexed database, 
+    - **IS NOT:** We will also be developing an offchain indexed database, 
     a blockchain data explorer, a recommender system prototype, 
     plugins for website developers, and other tools as our idea evolves. 
     But we think of those as simple PoC implementations to kick-start 
