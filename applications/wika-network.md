@@ -76,19 +76,42 @@ we have all the necessary foundations and ingredients to succeed:
 ### Project Details
 
 * Social (Smart) Contract:
-    ![Economic Model](https://www.wika.network/assets/images/wika_economy-388fcfae627eac16fbef5a9cc29ad713.png)
+    ![Economic Model](https://www.wika.network/img/how-it-works/wika_economy.png)
 
 * Components:
 
+    ![Architecture](https://www.wika.network/img/docs/tech_architecture.png)
+
+    - **Blockchain** Repo [wika_node](https://github.com/randombishop/wika_node) 
+    | TestNet: [wss://testnode3.wika.network:443](https://telemetry.polkadot.io/#settings/Wika%20TestNet)
+    | Documentation: N/A
+    
+    - **Web App** Repo [wika_app](https://github.com/randombishop/wika_app)
+    | Live beta version:[app.wika.network](https://app.wika.network) 
+    | Documentaton: N/A
+    
+    - **Browser Extension** Repo [wika_browser_ext](https://github.com/randombishop/wika_browser_ext)
+    | Documentaton: [Test from source](https://www.wika.network/docs/contribute/test-browser-ext)
+    
+    - **Indexed Database** Not started yet.
+    
+    - **Offchain API** Not started yet.
+    
+    - **Polkaswap Bridge** Not started yet.
+    
+    - **Like Buttton Integrations** Not started yet.  
+    
+        
 * UI design:
-    - Front-end web app already deployed at https://app.wika.network
-    - Browser extension in development here: https://github.com/randombishop/wika_browser_ext
+    - The web app and the browser extension are already 
+    available to test the UI, iterate and improve the design.
+    Follow the [Getting Started](https://www.wika.network/docs/guides/getting-started) guide to give it a try.
 
 * Data models and code of the core functionality:
     - [Likes pallet](https://github.com/randombishop/wika_node/blob/master/pallets/likes/src/lib.rs)
-    - [Authors pallet](https://github.com/randombishop/wika_node/blob/master/pallets/likes/src/lib.rs)
+    - [Owners pallet](https://github.com/randombishop/wika_node/blob/master/pallets/owners/src/lib.rs)
     
-* An overview of the technology stack to be used:
+* Technology stack:
     - Blockchain: Substrate.
     - Web App: React JS.
     - Browser Extension: Pure JS, compatible both Chrome and Firefox.
@@ -133,55 +156,64 @@ with the intention to become a Kusama/Polkadot Parachain in the future.
 implement one simple registry and social contract, and plug to other ecosystem components to grow the capabilities.
 
 * Target audience: internet users familiar with Polkadot wallet and blockchains, 
-with the desire to contribute to improving content quality and protecting their data.
+with the desire to make a positive contribution and protect their data.
 (This will be the core community, 
 then it should spread from this niche to a broader audience by educating and convincing more users.)
 
-* Main need met by Wika blockchain: Webpage to Owner registry.
+* Main needs met by Wika blockchain: 
+    - Webpage to Owner registry
+    - Universal Like Button
 
 * Other projects similar to Wika in the Substrate / Polkadot / Kusama ecosystem: not yet.
-LikeCoin seems to be a similar initiative built with Cosmos SDK, but we believe our design is simpler.
+LikeCoin seems to be a similar initiative built with Cosmos SDK, 
+but we believe our design is simpler.
 
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-* Name of team leader
-* Names of team members 
+* Nabil Abdellaoui
+* Reda Bendiar
 
 ### Contact
 
-* **Contact Name:** Full name of the contact person in your team
-* **Contact Email:** Contact email (e.g. john@duo.com)
-* **Website:**
+* **Contact Name:** Nabil Abdellaoui
+* **Contact Email:** nabil.abdellaoui@expr-research.com
+* **Website:** www.wika.network
 
 ### Legal Structure
 
-* **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-* **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+* **Registered Address:** Creation in progress...
+* **Registered Legal Entity:** Creation in progress...
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
+* Nabil is a self-taught software architect with 25 years experience 
+coding in different programming languages and frameworks.
+Code Jammer, Kaggle Master, from Java backends
+to Data Science in R, Machine Learning Engineering in Python, front-ends in React-JS, 
+he has a full-stack expertise shaped over the years 
+by concrete business impact deliverables.
+Except when it comes to blockchain, but that's his latest passion and he is 
+now learning Rust and Substrate to join the amazing train of DApps.    
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+* Reda
 
 ### Team Code Repos
 
-* https://github.com/<your_organisation>
-* https://github.com/<your_organisation>/<project_1>
-* https://github.com/<your_organisation>/<project_2>
+* https://github.com/randombishop
+* https://github.com/redben
+* https://github.com/randombishop/wika_node
+* https://github.com/randombishop/wika_app
+* https://github.com/randombishop/wika_browser_ext
+* https://github.com/randombishop/wika_website
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-* https://github.com/<team_member_1>
-* https://github.com/<team_member_2>
 
 ### Team LinkedIn Profiles (if available)
 
-* https://www.linkedin.com/<person_1>
-* https://www.linkedin.com/<person_2>
+* https://www.linkedin.com/in/nabilabdellaoui/
+* https://www.linkedin.com/in/reda-bendiar-20841120/
 
 ## Development Status :open_book:
 
