@@ -98,7 +98,7 @@
 | [Kadena](https://www.kadena.io/) | Pact feasibility study | [GitHub](https://github.com/kadena-io/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [STAFI Protocol](http://www.stafi.io/) | Stafi is a protocol to provide liquidity for staking assets | [GitHub](https://github.com/stafiprotocol/stafi-node) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Vision Baker](https://playproject.io/) | DatDot — Dat protocol for Polkadot | [GitHub](https://github.com/playproject-io/datdot) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Speckle OS](https://www.speckleos.io/) | Integrating additional features into Speckle OS | [GitHub](https://github.com/SpeckleOS/speckle-browser-extension) | <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Speckle OS](https://www.speckleos.io/) | Integrating additional features into Speckle OS | [GitHub](https://github.com/SpeckleOS/speckle-browser-extension) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Archipel](https://archipel.id/) | Solution to resolve high availability problem of Validator nodes in PoS | [GitHub](https://github.com/luguslabs/archipel) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Zondax](https://zondax.ch/) | Flexible TrustZone-based HSM stack | [GitHub](https://github.com/ZondaX) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Usetech](http://usetech.com/blockchain.html) | SR25519 library in pure C and C# | [GitHub](https://github.com/usetech-llc/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
