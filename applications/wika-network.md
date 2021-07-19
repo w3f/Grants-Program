@@ -174,10 +174,10 @@ but we believe our design is simpler.
 
 ### Team members
 
-* Nabil Abdellaoui: Software Engineer
-* Reda Bendiar: Software Engineer
-* Doug Astor: Community Manager
-* John Candido: Advisor
+* Nabil Abdellaoui
+* Reda Bendiar
+* Doug Astor
+* John Candido
 
 ### Contact
 
