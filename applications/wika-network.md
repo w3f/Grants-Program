@@ -115,10 +115,10 @@ we have all the necessary foundations and ingredients to succeed:
     - Blockchain: Substrate.
     - Web App: React JS.
     - Browser Extension: Pure JS, compatible both Chrome and Firefox.
-    - Offchain indexed database and explorer: Still to be designed. 
-    - Recommender System prototype: Still TBD.
-    - Wika Plugin for website developers: Still TBD.
-    - Website: Docusaurus. 
+    - Indexed databases: ETL written in NodeJS, data stored in Elastic Search (URL documents) and Neo4J (social network.) 
+    - Offchain API: NodeJS web services.
+    - SORA/Polkaswap Bridge: Substrate.
+    - Website and documentation: Docusaurus. 
     
 * Documentation:
     - [Current state](https://www.wika.network/docs/intro)
@@ -129,7 +129,7 @@ we have all the necessary foundations and ingredients to succeed:
     - [Browser Extension](https://github.com/randombishop/wika_browser_ext) can be installed from source.
     
 * What Wika Network _is_ vs is _not_:
-    - **IS:** Wika Network core product is the blockchain until we reach 
+    - **IS:** Wika Network main product is the blockchain until we reach 
     a fully decentralized governance and maintenance process.
     
     - **IS:** Wika Network also comes with a web app and a browser extension. 
@@ -137,12 +137,13 @@ we have all the necessary foundations and ingredients to succeed:
     but until then, we will commit to building the front-end tools to facilitate 
     understanding, onboarding and interacting with the blockchain with the best UX. 
   
-    - **IS NOT:** We will also be developing an offchain indexed database, 
-    a blockchain data explorer, a recommender system prototype, 
+    - **IS NOT:** We will also be developing offchain indexed databases and APIs, 
+    a recommender system prototype, 
     plugins for website developers, and other tools as our idea evolves. 
     But we think of those as simple PoC implementations to kick-start 
     all the components of the future ecosystem and test their interactions.
-    Again, the architectural vision is do one thing right and plug to an ecosystem.
+    
+   
     
 
 ### Ecosystem Fit
@@ -173,8 +174,10 @@ but we believe our design is simpler.
 
 ### Team members
 
-* Nabil Abdellaoui
-* Reda Bendiar
+* Nabil Abdellaoui: Software Engineer
+* Reda Bendiar: Software Engineer
+* Doug Astor: Community Manager
+* John Candido: Advisor
 
 ### Contact
 
@@ -189,16 +192,27 @@ but we believe our design is simpler.
 
 ### Team's experience
 
-* Nabil is a self-taught software architect with 25 years experience 
+**Nabil** is a self-taught software architect with 25 years experience 
 coding in different programming languages and frameworks.
+
 Code Jammer, Kaggle Master, from Java backends
 to Data Science in R, Machine Learning Engineering in Python, front-ends in React-JS, 
 he has a full-stack expertise shaped over the years 
 by concrete business impact deliverables.
-Except when it comes to blockchain, but that's his latest passion and he is 
-now learning Rust and Substrate to join the amazing train of DApps.    
 
-* Reda
+Except when it comes to blockchain, but that's his latest passion and he is 
+now learning Rust and Substrate to join the amazing train of DApps!    
+
+**Reda** Reda has +20 years experience in IT across 3 continents and dozens of technologies from perl to golang. 
+
+On 2010, he co-founded a travel technology company, with API integration as its core product; 
+where he aquired skills in architecture, backend, front-end developement, ops, team and project management. 
+
+Hungry for discovering new grounds, on 2019, he joined a blockchain company focusing on multi-chain interoperabililty. 
+
+Lately he has been working on a computer vision application to aquaculture, 
+and he recently onboarded the rust boat to contribute to the Wika Network.
+
 
 ### Team Code Repos
 
@@ -217,65 +231,112 @@ now learning Rust and Substrate to join the amazing train of DApps.
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+The [global roadmap](https://www.wika.network/roadmap) of this project consists of 3 phases:
+1. Foundation
+2. Building
+3. Scaling
 
-* links to improvement proposals or [RFPs](https://github.com/w3f/General-Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-* academic publications relevant to the problem,
-* links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-* references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-* previous interface iterations, such as mock-ups and wireframes.
+We are requesting this Grant in the context of phase 1 -Foundation- to:
+ - Develop first versions of the indexed database and offchain API.
+ - Develop Integration libraries and guides for:
+    - Plain old HTML/JS.
+    - ReactJS framework.
+    - WordPress CMS.  
+ - Test, stablize and document the codebase developed so far.
+
+By the end of the milestones detailed below, the Wika Blockchain Test Net should be fully operational, 
+documented, and the project ready to graduate to its Main Net.
+
+ 
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that the scope of the work can fit within a three-month period and that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-For each milestone,
-
-* make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we have created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
-* include the amount of funding requested _per milestone_.
-* include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-* provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-* commit to providing Dockerfiles for the delivery of your project.
-* indicate milestone duration as well as number of full-time employees working on each milestone.
-* **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
 
 ### Overview
 
-* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-* **Total Costs:** Amount of payment in USD for the whole project. The total amount of funding _needs to be below $30k for initial grants_ and $100k for follow-up grants. (e.g. 12,000 USD). This and the costs for each milestone need to be in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+* **Total Estimated Duration:** 4 Months
+* **Full-Time Equivalent (FTE):**  1.0 FTE
+* **Total Costs:** 20,000 USD
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 — Indexed Databases
 
 * **Estimated duration:** 1 month
-* **FTE:**  2
-* **Costs:** 8,000 USD
+* **FTE:**  1
+* **Costs:** 5,000 USD
+
+Global success criteria:
+* ETL Service + Elastic Search + Neo4J up and running in wika.network GCP environment against TestNet blockchain.
+* ES front end running on https://esdb.test.wika.network
+* Neo4J front end running on https://graphdb.test.wika.network
+
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 0a. | License | GPLv3 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a **gituhb repo readme** that explains how to spin up database instances and sync them with a blockchain node. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile that packages the ETL service. |
+| 0e. | Article | We will publish an **article** that explains the design of this repo and showcases typical queries that can be run against Elastic Search and Neo4J.) |
+| 1. | ETL | The ETL starts at the block number saved in the database and processes one block at a time. When done processing history, it will listen to new blocks and apply the same ETL. |
+| 2. | ETL Elastic Search |  Elastic Search will store one document per URL with title and other meta information pulled from the web page.    |  
+| 3. | ETL Neo4J | Neo4J will store one node per URL, one node per Account, Like relationships (edges) and Ownership relationships... |  
+| 4. | ETL Error Recovery | The service should report errors to its admin recipient by email and gracefully keep retrying a certain number of times before stopping.  | 
+| 5. | ETL Logging | Advanced monitoring is out of scope for this first version, but the service will write clean logs to report status. |  
+| 6. | Configuration | Database endpoints are defined in a configuration file. The configuration file location has a default, and can also be changed using en environment variable. The ETL also allows to do Elastic Search only, Neo4J only, or both.  |  
+| 7. | Example clients | Not part of the repo scope itself, but it will provide documentation on how to plug-in client tools. |  
 
 
-### Milestone 2 Example — Additional features
+
+
+### Milestone 2 — Offchain API
+
+* **Estimated Duration:** 2 weeks
+* **FTE:**  1
+* **Costs:** 2,500 USD
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | GPLv3 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a **gituhb repo readme** that explains how to spin up database instances and sync them with a blockchain node. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile that packages the ETL service. |
+| 0e. | Article | We will publish an **article** that explains the design of this repo and showcases typical queries that can be run against Elastic Search and Neo4J.) |
+| 1. | ETL | The ETL starts at the block number saved in the database and processes one block at a time. When done processing history, it will listen to new blocks and apply the same ETL. |
+| 2. | ETL Elastic Search |  Elastic Search will store one document per URL with title and other meta information pulled from the web page.    |  
+| 3. | ETL Neo4J | Neo4J will store one node per URL, one node per Account, Like relationships (edges) and Ownership relationships... |  
+| 4. | ETL Error Recovery | The service should report errors to its admin recipient by email and gracefully keep retrying a certain number of times before stopping.  | 
+| 5. | ETL Logging | Advanced monitoring is out of scope for this first version, but the service will write clean logs to report status. |  
+| 6. | Configuration | Database endpoints are defined in a configuration file. The configuration file location has a default, and can also be changed using en environment variable. The ETL also allows to do Elastic Search only, Neo4J only, or both.  |  
+| 7. | Example clients | Not part of the repo scope itself, but it will provide documentation on how to plug-in client tools. |  
+
+Global success criteria:
+* ETL Service + Elastic Search + Neo4J up and running in wika.network GCP environment against TestNet blockchain.
+* ES front end running on https://esdb.test.wika.network
+* Neo4J front end running on https://graphdb.test.wika.network
+
+
+
+### Milestone 3 — Integration Libs
 
 * **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 4,000 USD
+* **Costs:** 5,000 USD
 
 ...
+
+
+
+### Milestone 4 — Test, debugging and documentation of full suite or repositories
+
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 5,000 USD
+
+...
+
+
 
 
 ## Future Plans
@@ -288,10 +349,5 @@ Please include here
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** Web3 Foundation Website 
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-* Work you have already done.
-* Wheter there are any other teams who have already contributed (financially) to the project.
-* Previous grants you may have applied for.
