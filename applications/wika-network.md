@@ -362,14 +362,14 @@ Global success criteria:
 * **Costs:** 5,000 USD
 
 Global success criteria:
-* Wika Blockchain Test Net and all the components of the foundation phase, except the SORA/Polkaswap bridge, 
-are fully operational:
-- **Blockchain** :white_check_mark:
-- **Web App** :white_check_mark:
-- **Browser Extension** :white_check_mark:
-- **Indexed Databases** :white_check_mark:
-- **Offchain API** :white_check_mark:
-- **Integrations** :white_check_mark:
+* **Blockchain** :white_check_mark:
+* **Web App** :white_check_mark:
+* **Browser Extension** :white_check_mark:
+* **Indexed Databases** :white_check_mark:
+* **Offchain API** :white_check_mark:
+* **Integrations** :white_check_mark:
+* Wika Blockchain Test Net and most of the components of the foundation phase, except the SORA/Polkaswap bridge, 
+are fully operational.
 * The above suite is fully documented, tested, and ready to graduate to the Main Net.
 
 
