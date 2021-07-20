@@ -76,9 +76,12 @@ we have all the necessary foundations and ingredients to succeed:
 ### Project Details
 
 * Social (Smart) Contract:
+
+
     ![Economic Model](https://www.wika.network/img/how-it-works/wika_economy.png)
 
 * Components:
+
 
     ![Architecture](https://www.wika.network/img/docs/tech_architecture.png)
 
