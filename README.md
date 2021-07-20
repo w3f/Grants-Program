@@ -104,7 +104,7 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 ## :pencil: Process
 
-> **:loudspeaker:** We ask teams to follow the process below, which has **faster processing times** and provides grants of up to **$30,000 for initial applications** and **$100,000 for follow-up** ones disbursed in Bitcoin, USDT or DAI. However, if you want to apply in **private**, need to be paid out in **fiat** and/or you **seek funding of $100,000+** and your work cannot be split into smaller milestones, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform).
+> **:loudspeaker:** The process below allows for grants of up to **$30,000 for first-time applications** and **$100,000 for follow-up ones**. Payment is made in Bitcoin, USDT or DAI. If you want to apply in **private**, need to be paid out in **fiat** and/or you **seek funding above the aforementioned limits**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform), but note that this will generally lead to longer processing times.
 
 1. **Application**
    1. [Fork](https://github.com/w3f/Open-Grants-Program/fork) this repository.
