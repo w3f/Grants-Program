@@ -4,7 +4,7 @@ These are the guidelines to be followed for milestones submitted for evaluation.
 
 ## Submission
 
-Unless you have applied through the application form, please submit your milestones via PR to the [Grant Milestone Delivery repository](https://github.com/w3f/Grant-Milestone-Delivery). Otherwise, please submit your milestones by email to grants@web3.foundation.
+Please submit all your milestones via PR to the [Grant Milestone Delivery repository](https://github.com/w3f/Grant-Milestone-Delivery).
 
 ## Invoice
 
@@ -82,7 +82,7 @@ We prefer dockerfiles to avoid problems with versions and dependencies.
 
 ## Milestone Deliverables
 
-Please provide a list of milestone deliverables. This list should closely reflect the list of deliverables agreed on in the Pull Request for the **Open Grants** program or in Annex 1 of the grant contract for the **General Grants** program.
+Please provide a list of milestone deliverables. This list should closely reflect the list of deliverables agreed on in the Pull Request for the public **Grants Program** application or in Annex 1 of the grant contract for the private applications.
 
 Each item in the list should include a link to the deliverable itself, e.g.:
 
