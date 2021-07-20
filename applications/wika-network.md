@@ -17,9 +17,9 @@
 Our mission is to build a clean, public and non-intrusive blockchain registry to empower 
 autors, search engines and recommendation systems that respect privacy and are 100% transparent.
 
-- **Generous Internet Users** will be able to like their favorite pages and reward the authors and previous likers.
+- **Content Consumers** will be able to like their favorite pages and reward the authors and previous likers.
 
-- **Internet Content Authors** will register their ownership in one public decentralized database, and whether their content lives in youtube, 
+- **Authors** will register their ownership in one public decentralized database, and whether their content lives in youtube, 
 facebook, medium or any other internet place, Wika users will be able to reward them directly.
  
 #### Why?
@@ -75,7 +75,7 @@ we have all the necessary foundations and ingredients to succeed:
 
 ### Project Details
 
-* Social (Smart) Contract:
+* Social Smart-Contract:
 
     ![Economic Model](https://www.wika.network/img/how-it-works/wika_economy.png)
 
