@@ -184,7 +184,7 @@ The first milestone already has been done. Funds for the next milestones will be
 
 ### Current work - Scope of this Grant
 
-#### Milestone 2 - Simplify usage of library. Add a new features to extend ink! Providing macros to define own library.
+#### Milestone 2 - Simplify usage of library. Add a new features which extend ink!. Provide macroses that will allow creation of your own base implementation.
 
 * **Estimated duration:** 6 weeks
 * **FTE:**  2.5
