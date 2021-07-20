@@ -313,7 +313,7 @@ Global success criteria:
 | 2. | list_url_by_owner(address) |  List the URLs owned by input address.    |  
 | 3. | search(query) | Search URLs matching the query using domain, title and meta data |  
 | 4. | recommend(address) | Generate a list of recommendations for a user  | 
-| 
+ 
 
 
 ### Milestone 3 — Integration Libs
