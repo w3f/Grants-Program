@@ -128,7 +128,7 @@ Additionally, we try to enforce the [code of conduct](CODE_OF_CONDUCT.md) and ba
 
 ## :mailbox_with_mail: Request for Proposals (RFP) Suggestions
 
-If you think that we should support the development of certain tools or projects (related to **Polkadot, Kusama or Substrate**) that aren't in the Polkadot/Kusama [tech stack](polkadot_stack.md), feel free to submit an RFP suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem. We will review your proposal and, if we believe it’s useful, will create an RFP based on your idea and try to find teams to work on it.
+If you think that we should support the development of certain tools or projects (related to **Polkadot, Kusama or Substrate**) that aren't in the Polkadot/Kusama [tech stack](./src/polkadot_stack.md), feel free to submit an RFP suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem. We will review your proposal and, if we believe it’s useful, will create an RFP based on your idea and try to find teams to work on it.
 
 **Instructions for submitting an RFP suggestion:**
 
@@ -139,7 +139,7 @@ If you think that we should support the development of certain tools or projects
 5. Once you're done, click on "Create new pull request". The pull request should only contain _one new file_—the Markdown file you created from the template.
 6. You will see the same template as for creating an application. Plase replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
 
-If you have an idea for a project but lack the technical background to create a detailed outline, you can open an [issue](https://github.com/w3f/Grants-Program/issues/new) instead or add it to the [tech stack](polkadot_stack.md) as a potentially interesting project. However, your idea will have better chances of being implemented if you can provide a project outline such that it can be picked up straight away by a capable team.
+If you have an idea for a project but lack the technical background to create a detailed outline, you can open an [issue](https://github.com/w3f/Grants-Program/issues/new) instead or add it to the [tech stack](./src/polkadot_stack.md) as a potentially interesting project. However, your idea will have better chances of being implemented if you can provide a project outline such that it can be picked up straight away by a capable team.
 
 ## :bulb: Help
 
