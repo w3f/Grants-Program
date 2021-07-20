@@ -87,7 +87,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 
 #### W3F Grants Evaluators <!-- omit in toc -->
 
-Evaluators are individuals able to evaluate the technology delivered as a result of the Open Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
+Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
 - [Marcin Górny](https://github.com/mmagician)
 - [Robert Hambrock](https://github.com/Lederstrumpf)
@@ -107,10 +107,10 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 > **:loudspeaker:** The process below allows for grants of up to **$30,000 for first-time applications** and **$100,000 for follow-up ones**. Payment is made in Bitcoin, USDT or DAI. If you want to apply in **private**, need to be paid out in **fiat** and/or you **seek funding above the aforementioned limits**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform), but note that this will generally lead to longer processing times.
 
 1. **Application**
-   1. [Fork](https://github.com/w3f/Open-Grants-Program/fork) this repository.
-   2. In the newly created fork, create a copy of the application template ([`applications/application-template.md`](applications/application-template.md)). If you're using the GitHub web interface, you will need to create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Open-Grants-Program/master/applications/application-template.md) of the template inside the new one. Make sure you **do not modify the template file directly**.
+   1. [Fork](https://github.com/w3f/Grants-Program/fork) this repository.
+   2. In the newly created fork, create a copy of the application template ([`applications/application-template.md`](applications/application-template.md)). If you're using the GitHub web interface, you will need to create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/applications/application-template.md) of the template inside the new one. Make sure you **do not modify the template file directly**.
    3. Name the new file after your project: `project_name.md`.
-   4. Fill out the template with the details of your project. The more information you provide, the faster the review. To get an idea of what a strong application looks like, you can have a look at the following examples:  [1](https://github.com/w3f/Open-Grants-Program/blob/master/applications/project_aurras_mvp_phase_1.md), [2](https://github.com/w3f/Open-Grants-Program/blob/master/applications/project_bodhi.md), [3](https://github.com/w3f/Open-Grants-Program/blob/master/applications/pontem.md), [4](https://github.com/w3f/Open-Grants-Program/blob/master/applications/spartan_poc_consensus_module.md). Naturally, if you're only applying for a smaller grant that only consists of, say, UI work, you don't need to provide as much detail.
+   4. Fill out the template with the details of your project. The more information you provide, the faster the review. To get an idea of what a strong application looks like, you can have a look at the following examples:  [1](https://github.com/w3f/Grants-Program/blob/master/applications/project_aurras_mvp_phase_1.md), [2](https://github.com/w3f/Grants-Program/blob/master/applications/project_bodhi.md), [3](https://github.com/w3f/Grants-Program/blob/master/applications/pontem.md), [4](https://github.com/w3f/Grants-Program/blob/master/applications/spartan_poc_consensus_module.md). Naturally, if you're only applying for a smaller grant that only consists of, say, UI work, you don't need to provide as much detail.
    5. Once you're done, create a pull request. The pull request should only contain _one new file_—the Markdown file you created from the template.
    6. You will see a comment template that contains a checklist. You can leave it as is and tick the checkboxes once the pull request has been created. Please read through these items and check all of them.
    7. Sign off on the [terms and conditions](src/T&Cs.md) presented by the [CLA assistant](https://github.com/claassistantio) bot as a Contributor License Agreement. You might need to reload the pull request to see its comment.
@@ -132,14 +132,14 @@ If you think that we should support the development of certain tools or projects
 
 **Instructions for submitting an RFP suggestion:**
 
-1. [Fork](https://github.com/w3f/Open-Grants-Program/fork) this repository.
-2. In the newly created fork, create a copy of the suggestion template ([`rfps/suggestion-template.md`](rfps/suggestion-template.md)) inside the [`rfps`](rfps) folder. Make sure you create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Open-Grants-Program/master/rfps/suggestion-template.md) of the template inside the new one, and _do not modify the template file directly._
+1. [Fork](https://github.com/w3f/Grants-Program/fork) this repository.
+2. In the newly created fork, create a copy of the suggestion template ([`rfps/suggestion-template.md`](rfps/suggestion-template.md)) inside the [`rfps`](rfps) folder. Make sure you create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/rfps/suggestion-template.md) of the template inside the new one, and _do not modify the template file directly._
 3. Name the file after your idea: `project_name.md`.
 4. Fill out the template with the project details. Please include as many details as possible.
 5. Once you're done, click on "Create new pull request". The pull request should only contain _one new file_—the Markdown file you created from the template.
 6. You will see the same template as for creating an application. Plase replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
 
-If you have an idea for a project but lack the technical background to create a detailed outline, you can open an [issue](https://github.com/w3f/Open-Grants-Program/issues/new) instead or add it to the [tech stack](polkadot_stack.md) as a potentially interesting project. However, your idea will have better chances of being implemented if you can provide a project outline such that it can be picked up straight away by a capable team.
+If you have an idea for a project but lack the technical background to create a detailed outline, you can open an [issue](https://github.com/w3f/Grants-Program/issues/new) instead or add it to the [tech stack](polkadot_stack.md) as a potentially interesting project. However, your idea will have better chances of being implemented if you can provide a project outline such that it can be picked up straight away by a capable team.
 
 ## :bulb: Help
 
