@@ -10,17 +10,17 @@
 ## 🧭 General
 
 <details>
-  <summary><b>Can anyone apply?</b></summary>
-
-  Projects for which a token sale has been or is being conducted are not eligible for a Web3 Foundation grant. Other than that, there are no restrictions.
-</details>
-
-<details>
   <summary><b>How much can I ask for?</b></summary>
 
   Initial grants are capped at US $30,000. If the first grant is successfully completed, you can apply for a follow-up grant, which is capped at $100k.
   
   Teams with a proven track record may apply for larger grants through [this application form](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform).
+</details>
+
+<details>
+  <summary><b>Can anyone apply?</b></summary>
+
+  Projects for which a token sale has been or is being conducted are not eligible for a Web3 Foundation grant. Other than that, there are no restrictions.
 </details>
 
 <details>
@@ -50,7 +50,7 @@
 <details>
   <summary><b>My application was rejected. Do you have any recommendations on where to go from here?</b></summary>
 
-  We usually give reasons why an application was rejected. We always try to be constructive and work with you towards an application that is beneficial to all parties. If we find no common ground, please have a look at [this section in our General Grants readme](https://github.com/w3f/General-Grants-Program#rocket-alternative-funding-sources) for a list of alternative funding opportunities.
+  We usually give reasons why an application was rejected. We always try to be constructive and work with you towards an application that is beneficial to all parties. If we find no common ground, please have a look at [this section in our Grants Program readme](https://github.com/w3f/Grants-Program#rocket-alternative-funding-sources) for a list of alternative funding opportunities.
 </details>
 
 <details>
