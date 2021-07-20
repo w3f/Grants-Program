@@ -205,28 +205,40 @@ For the details on the proposed implementation, please refer to the *Development
 ### Milestone 1: Cross-platform Tesseract Core in Rust
 
 Duration: 8 weeks
+
 This is the very foundation of the Tesseract protocol.
 
-Deliverables:
-* Architecture
-* Application-level framework
-* Messages and envelopes
-* Transport-level framework
-* APIs for platform-specific extensions
-	* Transport-layer development APIs
-	* Application-layer development APIs
-* Documentation
+| Number | Deliverable                        | Specification                                                                                                                                                                                                 |
+|--------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                            | Apache 2.0                                                                                                                                                                                                    |
+| 0b.    | Documentation                      | Documentation for Tesseract Core:<br>1) overview with usage examples<br>2) messages and envelopes structures<br>3) APIs for application and transport level with examples                                     |
+| 0c.    | Testing Guide                      | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                             |
+| 0d.    | Docker                             | Due to the client-side nature of the deliverable, there is no need for a docker image.                                                                                                                        |
+| 0e.    | Article                            | We will publish an article that explains the value Tesseract brings to the dApp developers and how Tesseract Core serves as a foundation for all future work.                                                 |
+| 1.     | Architecture                       | Repository with overall code structure. Serves as a framework for all the further development. Defines the layered structure and contains all the code that makes the layers (details below) to work together |
+| 2.     | Application-level framework        | Defines how application level calls are formed as data structures and passed down to the next layer                                                                                                           |
+| 3.     | Messages and envelopes             | Implements serialization and envelopes for the app level structures + parsing and identification on the other side                                                                                            |
+| 4.     | Transport-level framework          | Transport level abstractions, interfaces, data flow + transport initialization and selection logic                                                                                                            |
+| 5.     | Transport-layer development APIs   | APIs for transport protocol (IPC, socket, etc.) development. Will have two transport types: persistent, single-shot                                                                                           |
+| 6.     | Application-layer development APIs | APIs for application level stuff development (i.e. Tesseract handshaking and transport selection, Polkadot APIs)                                                                                              |
 
 ### Milestone 2: Platforms and Polkadot/Substrate Support
 
 Duration: 6 weeks
 
 This milestone is based on the foundation built in Milestone 1 and focuses on platform-specific transport extensions (iOS, Android) and Substrate integration.
-Deliverables:
-* iOS IPC transport protocol implementation
-* Android IPC transport protocol implementation
-* Substrate protocol specification
-* Substrate protocol implementation
+
+| Number | Deliverable                                   | Specification                                                                                                                                                                                                                                                                                |
+|--------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                                       | Apache 2.0                                                                                                                                                                                                                                                                                   |
+| 0b.    | Documentation                                 | We will provide:<br>1) README-type documentation for substrate-specific application-level APIs with examples<br>2) Rust API docs for substrate-specific application-level APIs<br>3) instructions on how to build and run the test apps for both iOS and Android                             |
+| 0c.    | Testing Guide                                 | Substrate application layer will be fully covered by unit tests for both dApp and Wallet sides with a mock transport. For the IPC transport, we will provide test apps for both iOS and Android.                                                                                             |
+| 0d.    | Docker                                        | Due to the client-side nature of the deliverable, there is no need for a docker image.                                                                                                                                                                                                       |
+| 0e.    | Article                                       | We will publish an article that describes how to start using Tesseract in Substrate applications. It's a continuation of the article from Milestone 1 and will tease part3, promising more examples and details.                                                                             |
+| 1.     | iOS IPC transport protocol implementation     | Implementation of IPC transport for iOS. Code is tested with small test app on an iOS device.                                                                                                                                                                                                |
+| 2.     | Android IPC transport protocol implementation | Implementation of IPC transport for Android. Code is tested with small test app on an Android device.                                                                                                                                                                                        |
+| 3.     | Substrate protocol specification              | Markdown-based documentation that provides details of workflows and messages required for proper substrate-based calls handling and transaction signing. This is separate from the main documentation and is a detailed description of the protocol to be implemented in the following step. |
+| 4.     | Substrate protocol implementation             | 1) implementation of Substrate application layer<br>2) substrate-specific application-level APIs                                                                                                                                                                                             |
 
 ### Milestone 3: Demo applications
 
@@ -234,11 +246,17 @@ Duration: 6 weeks
 
 To demonstrate the capabilities of Tesseract, we would like to provide easy-to-understand examples. These examples should be fully working (even though very basic and not intended for production use) and capable to showcase the capabilities to an unfamiliar audience.
 
-Deliverables:
-* Android Demo Wallet
-* Android Demo dApp
-* iOS Demo Wallet
-* iOS Demo dApp
+| Number | Deliverable         | Specification                                                                                                                                                                                                                        |
+|--------|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License             | Apache 2.0                                                                                                                                                                                                                           |
+| 0b.    | Documentation       | We will provide:<br>1) README-type documentation describing the key aspects of how the test applications work <br>2) instructions on how to build and run the test apps for both iOS and Android                                     |
+| 0c.    | Testing Guide       | We will provide a guide how to build and run the apps.                                                                                                                                                                               |
+| 0d.    | Docker              | Due to the client-side nature of the deliverable, there is no need for a docker image.                                                                                                                                               |
+| 0e.    | Article             | We will publish an article (part3) that covers more details about the integration of Tesseract into Substrate dApps and wallets. The article will also cover some of our plans, specifically - java and swift libraries integration. |
+| 1.     | Android Demo Wallet | Android Wallet test application with logic implemented in Rust, which demonstrates how a wallet can sign substrate transactions using the Rust APIs.                                                                                 |
+| 2.     | Android Demo dApp   | Android test dApp with logic implemented in Rust, that demonstrates transaction creation and signing through Tesseract via test wallet. The transaction is submitted to test-net after being signed.                                 |
+| 3.     | iOS Demo Wallet     | iOS Wallet test application with logic implemented in Rust, which demonstrates how a wallet can sign substrate transactions using the Rust APIs.                                                                                     |
+| 4.     | iOS Demo dApp       | iOS test dApp with logic implemented in Rust, that demonstrates transaction creation and signing through Tesseract via test wallet. The transaction is submitted to test-net after being signed.                                     |
 
 ## Future Plans
 
