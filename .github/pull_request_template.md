@@ -1,4 +1,4 @@
-# Grant Application Checklist
+# Grant Application
 
 - [ ] The [application template](https://github.com/w3f/Open-Grants-Program/blob/master/applications/application-template.md) has been copied, renamed ( `project_name.md`) and updated.
 - [ ] The total funding amount of the project is below USD $30k for first-time grant applications and $100k for follow-up ones.
