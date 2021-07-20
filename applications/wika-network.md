@@ -93,13 +93,13 @@ we have all the necessary foundations and ingredients to succeed:
     - **Browser Extension** Repo [wika_browser_ext](https://github.com/randombishop/wika_browser_ext)
     | Documentaton: [Test from source](https://www.wika.network/docs/contribute/test-browser-ext)
     
-    - **Indexed Database** Not started yet.
+    - **Indexed Databases** Not started yet.
     
     - **Offchain API** Not started yet.
     
     - **Polkaswap Bridge** Not started yet.
     
-    - **Like Buttton Integrations** Not started yet.  
+    - **Integrations** Not started yet.  
     
         
 * UI design:
@@ -237,11 +237,12 @@ The [global roadmap](https://www.wika.network/roadmap) of this project consists 
 3. Scaling
 
 We are requesting this Grant in the context of phase 1 -Foundation- to:
- - Develop first versions of the indexed database and offchain API.
+ - Develop first versions of the indexed databases and offchain API.
  - Develop Integration libraries and guides for:
     - Plain old HTML/JS.
     - ReactJS framework.
     - WordPress CMS.  
+ - Validate the blockchain code, upgrade and prepare for graduation to Main Net.
  - Test, stablize and document the codebase developed so far.
 
 By the end of the milestones detailed below, the Wika Blockchain Test Net should be fully operational, 
@@ -257,7 +258,7 @@ documented, and the project ready to graduate to its Main Net.
 
 * **Total Estimated Duration:** 4 Months
 * **Full-Time Equivalent (FTE):**  1.0 FTE
-* **Total Costs:** 20,000 USD
+* **Total Costs:** 25,000 USD
 
 ### Milestone 1 — Indexed Databases
 
@@ -291,31 +292,27 @@ Global success criteria:
 
 ### Milestone 2 — Offchain API
 
-* **Estimated Duration:** 2 weeks
+* **Estimated Duration:** 1 month
 * **FTE:**  1
-* **Costs:** 2,500 USD
+* **Costs:** 5,000 USD
+
+Global success criteria:
+* API is deployed on https://api.test.wika.network.
+* API is consumed by the UI in app.wika.network.
 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | GPLv3 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a **gituhb repo readme** that explains how to spin up database instances and sync them with a blockchain node. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code, a **gituhb repo readme** that explains how to spin up the API endpoint, and also auto-generated API documentation in s standard format. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile that packages the ETL service. |
-| 0e. | Article | We will publish an **article** that explains the design of this repo and showcases typical queries that can be run against Elastic Search and Neo4J.) |
-| 1. | ETL | The ETL starts at the block number saved in the database and processes one block at a time. When done processing history, it will listen to new blocks and apply the same ETL. |
-| 2. | ETL Elastic Search |  Elastic Search will store one document per URL with title and other meta information pulled from the web page.    |  
-| 3. | ETL Neo4J | Neo4J will store one node per URL, one node per Account, Like relationships (edges) and Ownership relationships... |  
-| 4. | ETL Error Recovery | The service should report errors to its admin recipient by email and gracefully keep retrying a certain number of times before stopping.  | 
-| 5. | ETL Logging | Advanced monitoring is out of scope for this first version, but the service will write clean logs to report status. |  
-| 6. | Configuration | Database endpoints are defined in a configuration file. The configuration file location has a default, and can also be changed using en environment variable. The ETL also allows to do Elastic Search only, Neo4J only, or both.  |  
-| 7. | Example clients | Not part of the repo scope itself, but it will provide documentation on how to plug-in client tools. |  
-
-Global success criteria:
-* ETL Service + Elastic Search + Neo4J up and running in wika.network GCP environment against TestNet blockchain.
-* ES front end running on https://esdb.test.wika.network
-* Neo4J front end running on https://graphdb.test.wika.network
-
+| 0d. | Docker | We will provide a Dockerfile that packages the API service. |
+| 0e. | Article | We will publish an **article** that explains the design of this repo and showcases the deployed functions.) |
+| 1. | list_url_by_liker(address) | List the URLs liked by input address. |
+| 2. | list_url_by_owner(address) |  List the URLs owned by input address.    |  
+| 3. | search(query) | Search URLs matching the query using domain, title and meta data |  
+| 4. | recommend(address) | Generate a list of recommendations for a user  | 
+| 
 
 
 ### Milestone 3 — Integration Libs
@@ -324,17 +321,55 @@ Global success criteria:
 * **FTE:**  1
 * **Costs:** 5,000 USD
 
-...
+Global success criteria:
+* Easy to add the Wika Widget in a website using plain HTML and JS by following a Dev guide.
+* Easy to add the Wika Widget to a WordPress website using a plugin and following a user guide.
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | GPLv3 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code, a **gituhb repo readme** that lists the available integrations and points to the guides. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
+| 0d. | Docker | Non Applicable to this project |
+| 0e. | Article | We will publish an **article** that explains how authors can take advantage of the Wika Network and shows how to add it to their website.) |
+| 1. | HTML+JS Integration | Add the Wika Like Button and balance to any website using plain HTML and JS. |
+| 2. | ReactJS Integration | Add the Wika Like Button and balance to any ReactJS website using npm install wika-react and adding the component to React source. |
+| 3. | WordPress Integration | Add the Wika Like Button and balance to a WordPress website using a WordPress plugin. |  
 
 
 
-### Milestone 4 — Test, debugging and documentation of full suite or repositories
+
+
+### Milestone 4 — Blockchain validation and upgrades
 
 * **Estimated Duration:** 1 month
 * **FTE:**  1
 * **Costs:** 5,000 USD
 
-...
+Global success criteria:
+* Blockchain code is validated by an experienced Rust/Substrate developer.
+* Blockchain has all the governance and technical foundations to be deployed as Main Net.
+
+
+
+
+### Milestone 5 — Test, debugging and documentation of full suite of repositories
+
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 5,000 USD
+
+Global success criteria:
+* Wika Blockchain Test Net and all the components of the foundation phase, except the SORA/Polkaswap bridge, 
+are fully operational:
+- **Blockchain** :check:    
+- **Web App** :check:    
+- **Browser Extension** :check: 
+- **Indexed Databases** :check: 
+- **Offchain API** :check: 
+- **Integrations** :check:    
+* The above suite is fully documented, tested, and ready to graduate to the Main Net.
 
 
 
@@ -342,12 +377,16 @@ Global success criteria:
 ## Future Plans
 
 Please include here
-
 * how you intend to use, enhance, promote and support your project in the short term, and
 * the team's long-term plans and intentions in relation to it.
 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website 
+**How we heard about the Grants Program?** Web3 Foundation Website 
 
+**Context of our request**
+- Introduce our project to Web3 / Polkadot / Substrate communities.
+- Gather feedback and learn.
+- Find resources for Milestone #4.
+- 
