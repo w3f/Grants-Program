@@ -77,11 +77,9 @@ we have all the necessary foundations and ingredients to succeed:
 
 * Social (Smart) Contract:
 
-
     ![Economic Model](https://www.wika.network/img/how-it-works/wika_economy.png)
 
 * Components:
-
 
     ![Architecture](https://www.wika.network/img/docs/tech_architecture.png)
 
@@ -366,12 +364,12 @@ Global success criteria:
 Global success criteria:
 * Wika Blockchain Test Net and all the components of the foundation phase, except the SORA/Polkaswap bridge, 
 are fully operational:
-- **Blockchain** :check:    
-- **Web App** :check:    
-- **Browser Extension** :check: 
-- **Indexed Databases** :check: 
-- **Offchain API** :check: 
-- **Integrations** :check:    
+- **Blockchain** [x] 
+- **Web App** [x] 
+- **Browser Extension** [x]
+- **Indexed Databases** [x]
+- **Offchain API** [x] 
+- **Integrations** [x] 
 * The above suite is fully documented, tested, and ready to graduate to the Main Net.
 
 
