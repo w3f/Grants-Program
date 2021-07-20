@@ -157,18 +157,19 @@ PSP - https://github.com/w3f/PSPs/pull/22
 
 ### Overview
 
-**We have decided to describe a full roadmap of an Openbrush here, with estimates. However the funding we request at this stage is a maximum amount of 30k USD.**
-At this point of time Milestone 1 and 2 are finished and 3rd is in progress. 
+**We have decided to describe a full roadmap of an Openbrush here, with estimates. However, the funding we request at this stage is only for the second milestone.**
+The first milestone already has been done. Funds for the next milestones will be requested in the next grant.
 
-* **Total Estimated Duration:** 6 months
+* **Total Estimated Duration:** 6 weeks
 * **Full-Time Equivalent (FTE):** 2.5
-* **Total Costs:** 105,000 USD
+* **Total Costs:** 29,999 USD
 
-### Milestone 1 - Implement reusable basic contracts in ink!, similar to Openzeppelin
+### Previous work
+
+#### Milestone 1 - Implement reusable basic contracts in ink!, similar to Openzeppelin
 
 * **Estimated duration:** 2 weeks
 * **FTE:**  2.5
-* **Costs:** 10,000 USD
 
 | Number | Deliverable                      | Specification                                                                                                                                                                                                    |
 | -----  | -----------                      | -------------                                                                                                                                                                                                    |
@@ -181,11 +182,13 @@ At this point of time Milestone 1 and 2 are finished and 3rd is in progress.
 | 2a.    | AccessControl                    | We will implement reusable [AccessControl](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/AccessControl.sol) analog on ink!                                                                                                         |
 | 2b.    | Ownable                          | We will implement reusable [Ownable](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol) analog on ink!                                                                                     |
 
-### Milestone 2 - Simplify usage of library. Add a new features to extend ink!
+### Current work - Scope of this Grant
 
-* **Estimated duration:** 4 weeks
+#### Milestone 2 - Simplify usage of library. Add a new features which extend ink!. Provide macroses that will allow creation of your own base implementation.
+
+* **Estimated duration:** 6 weeks
 * **FTE:**  2.5
-* **Costs:** 20,000 USD
+* **Costs:** 29,999 USD
 
 | Number | Deliverable                                         | Specification                                                                                                                                                                                    |
 | -----  | -----------                                         | -------------                                                                                                                                                                                    |
@@ -195,9 +198,12 @@ At this point of time Milestone 1 and 2 are finished and 3rd is in progress.
 | 1.     | Remove boilerplate code                             | We will provide a macro which will allow to remove boilerplate during usage of library(Library provides implementation on rust level in internal trait. User must reuse internal implementation with ink! messages. Our macro will simplify it). It will simplify the code structure and usage. |
 | 2.     | Derive for storages                                 | We will provide a derive macro to generate implementation for storage's structs. It will simplify integration of fields inside of struct and implementation of storage's traits for that fields. |
 | 3.     | Support default implementation in external traits   | We will add mnemonic support of default implementations inside of trait definition(traits defined via `#[ink::trait_definition]`). It is mnemonic, because under the hood we will generate internal trait with default implementation that will be used in external trait.  |
+| 4.     | Support of modifiers                                | We will add support of modifiers, like in Solidity. User will be able to mark some function to use modifiers and it will simplify the code. |
+| 5.     | ReentrancyGuard                                     | We will add implementation of [ReentrancyGuard](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/ReentrancyGuard.sol) |
 
-👇 We are currently here
-### Milestone 3. Pre-release - Standardization of tokens contracts. Modifiers. Providing macros to define own library. 
+### Future work
+
+#### Milestone 3. Pre-release - Standardization of tokens contracts. Implement extensions for contracts. Documentation.
 
 * **Estimated Duration:** 4 weeks(+ time for PSP approving)
 * **FTE:**  2.5
@@ -209,27 +215,26 @@ At this point of time Milestone 1 and 2 are finished and 3rd is in progress.
 | 0b.    | Documentation                                            | We will provide inline documentation for macros, create a tutorial on how to use macros in your own project, with a detailed description of how it works inside. |
 | 0c.    | Testing Guide                                            | We will add more tests to cover all macros, update tests according to new changes.                                                           |
 | 1.     | Create Proposal for Fungible token                       | We will create a proposal for standardization of Erc20 token in case of ink! and `contract-pallet`. Based on the final decision regarding the proposal update the implementation in library.              |
-| 2.     | Support of modifiers                                     | We will add support of modifiers, like in Solidity. User will be able to mark some function to use modifiers and it will simplify the code. |
-| 3.     | ReentrancyGuard                                          | We will add implementation of [ReentrancyGuard](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/ReentrancyGuard.sol) |
+| 2.     | Implement extensions for tokens                          | We will implement extensions for Erc20, Erc721 and Erc1155 tokens.              |
+| 3.     | Implement additional useful contract                     | We will implement [PaymentSplitter](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/finance/PaymentSplitter.sol), [TimelockController](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/TimelockController.sol) and etc. |
 | 4.     | Create Proposal for Non Fungible token and Multi token   | We will create proposals for NFT and multi token, when proposal for FT token will be approved. Based on the decisions of these approves, we will update implementation in library. |
 
-### Milestone 4. Release - Implement extensions for contracts. Contribution to ink!
+#### Milestone 4. Release - Contribution to ink!
 
-* **Estimated Duration:** 6 weeks(time depends on conversations in ink! repository)
-* **FTE:**  2.5
-* **Costs:** 20,000 USD
+* **Estimated Duration:** 4 weeks(time depends on conversations in ink! repository)
+* **FTE:**  2
+* **Costs:** 15,000 USD
 
 | Number | Deliverable                                                              | Specification                                                                                                                             |
 | -----  | -----------                                                              | -------------                                                                                                                             |
 | 0a.    | License                                                                  | MIT                                                                                                                                       |
 | 0b.    | Documentation                                                            | We will provide inline documentation, example of usage of extensions. |
 | 0c.    | Testing Guide                                                            | We will add tests for extensions and for a new changes from ink! side.                                                           |
-| 1.     | Implement extensions for tokens                                          | We will implement extensions for Erc20, Erc721 and Erc1155 tokens.              |
-| 2.     | Implement additional useful contract                                     | We will implement [PaymentSplitter](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/finance/PaymentSplitter.sol), [TimelockController](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/TimelockController.sol) and etc. |
-| 3.     | Contribute to ink! with fixing of events                                 | We will help to fix the [issue](https://github.com/paritytech/ink/issues/809) with events. |
-| 4.     | Add support of default implementation in trait definition on ink! level  | We will help with the support of default implementation inside of trait definition. It will require discussions with the ink! team to define the best way how to implement that without conflicts with their future changes.  |
+| 1.     | Contribute to ink! with fixing of events                                 | We will help to fix the [issue](https://github.com/paritytech/ink/issues/809) with events. |
+| 2.     | Add support of default implementation in trait definition on ink! level  | We will help with the support of default implementation inside of trait definition. It will require discussions with the ink! team to define the best way how to implement that without conflicts with their future changes.  |
+| 3.     | Refactor of implementation according changes in ink!                     | After changes in ink! we will refactor the code of library.  |
 
-### Milestone 5 - Support of upgradable contracts
+#### Milestone 5 - Support of upgradable contracts
 
 * **Estimated Duration:** 7 weeks(time depends on conversations in ink! and `contract-pallet` repositories)
 * **FTE:**  2.5
@@ -248,22 +253,22 @@ At this point of time Milestone 1 and 2 are finished and 3rd is in progress.
 ## Future Plans
 
 We're going to make strong impact on the community, making ink! simple and convenient for developers.
-- Experise sharing
+- Expertise sharing
    - Covering all crypto-related news websites, creating workshops online, handling all relevant forums and social networks
 - Becoming an entry point for a developer starting in ink!/Wasm
    - Nonstop updating our FAQ and knowledge base, creating educational content (text\video)
 - Marketing and PR strategy  
-   - Organizing hackatons, Developing growthhacking strategy for involving developers from different channels
+   - Organizing hackathons, Developing growthhacking strategy for involving developers from different channels
 
 
 ## Additional Information :heavy_plus_sign:
 So far we have taken it upon ourselves to fund this project. 
-In the roadmap you can see what was already done, currently we're on the 3-rd milestone.  
+In the roadmap you can see what was already done, currently we're on the 2-rd milestone.  
 
 We haven’t applied for any other grant programs.
 
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 
-Rersonal recommendation.
+Personal recommendation.
 
