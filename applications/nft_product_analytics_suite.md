@@ -89,7 +89,7 @@ Website:
 
 **Registered Legal Entity**
 
-- C Corp
+- Health Hero, Inc
 
 ### Team's experience
 
