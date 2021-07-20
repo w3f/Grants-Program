@@ -47,7 +47,7 @@ The Polkadot Tech Stack is a subset of the Web 3.0 Tech Stack, which consists of
 
 ## :battery: Funding
 
-The Web3 Foundation's [Open Grants Program](https://github.com/w3f/Open-Grants-Program) and [General Grants Program](https://github.com/w3f/General-Grants-Program) are focused on funding development work to build out all layers of the Polkadot Tech Stack. Please use the preceding links to apply for funding for relevant projects.
+The Web3 Foundation's [Grants Program](https://github.com/w3f/Grants-Program) is focused on funding development work to build out all layers of the Polkadot Tech Stack. Please use the preceding links to apply for funding for relevant projects.
 
 To get a better understanding of the projects we consider most relevant, you can explore a detailed breakdown of the various layers of the stack below. We divide each of the layers into the various *components* which we feel are most important. We then highlight some of the *exisiting projects* that address these components as well as some *potentially interesting projects* that we would like to fund.
 
