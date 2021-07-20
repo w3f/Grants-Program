@@ -82,7 +82,7 @@ We prefer dockerfiles to avoid problems with versions and dependencies.
 
 ## Milestone Deliverables
 
-Please provide a list of milestone deliverables. This list should closely reflect the list of deliverables agreed on in the Pull Request for the public **Grants Program** program application or in Annex 1 of the grant contract for the private applications.
+Please provide a list of milestone deliverables. This list should closely reflect the list of deliverables agreed on in the Pull Request for the public **Grants Program** application or in Annex 1 of the grant contract for the private applications.
 
 Each item in the list should include a link to the deliverable itself, e.g.:
 
