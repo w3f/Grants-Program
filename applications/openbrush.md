@@ -170,7 +170,7 @@ The first milestone already has been done. Funds for the next milestones will be
 
 * **Estimated duration:** 2 weeks
 * **FTE:**  2.5
-* **Costs:** 10,000 USD (this cost is covered by Supercolony)
+* **Costs:** ~~10,000 USD~~ (this cost is covered by Supercolony)
 
 | Number | Deliverable                      | Specification                                                                                                                                                                                                    |
 | -----  | -----------                      | -------------                                                                                                                                                                                                    |
@@ -271,4 +271,3 @@ We haven’t applied for any other grant programs.
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 
 Personal recommendation.
-
