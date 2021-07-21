@@ -234,7 +234,7 @@
 | [Sean Young](https://www.mess.org/) | Solidity to WASM compiler Phase 2 | [GitHub](https://github.com/hyperledger-labs/solang) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Nuclei Studio](https://nuclei.studio/) | Governance OS | [GitHub](https://github.com/NucleiStudio) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [NBLTrust](https://www.nbltrust.com/#/en/home) | Dart SCALE Codec | [GitHub](https://github.com/nbltrust/dart-scale-codec) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Nsure.Network](https://nsure.network/) | Open Insurance Platform for Open Finance | [GitHub](https://github.com/nsure-tech) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Nsure.Network](https://nsure.network/) | Open Insurance Platform for Open Finance | [GitHub](https://github.com/nsure-tech) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Kylin Network](https://kylin.network/) | Cross-chain Platform for the Data Economy | [GitHub](https://github.com/Kylin-Network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Bit.Country](http://bit.country/) | A decentralized world | [GitHub](https://github.com/bit-country) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [MIDL.dev](https://MIDL.dev) | Polkashots.io: Snapshot website for Polkadot and Kusama | [GitHub](https://github.com/midl-dev) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
