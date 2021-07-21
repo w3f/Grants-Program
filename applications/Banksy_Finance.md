@@ -147,47 +147,11 @@ Team members have rich development experience, including algorithm, front-end de
 
 ### Overview
 
-* **Total Estimated Duration:** 4 months
-* **Full-time equivalent (FTE):** 5
-* **Total Costs:**  DAI 25000
+* **Total Estimated Duration:** 1.5 months
+* **Full-time equivalent (FTE):** 6
+* **Total Costs:**  DAI 8500
 
-### Milestone 1 -- Implementation of fundamental function
-
-* **Estimated Duration:** 1 month
-* **FTE:** 3
-* **Costs:** DAI 8000
-
-
-| Number | Deliverable                           | Specification                                                |
-| ------ | ------------------------------------- | ------------------------------------------------------------ |
-| 0a.    | License                               | Apache License 2.0                                           |
-| 0b.    | Documentation                         | We will provide the documentations and examples for NFT creating, viewing, and trading. |
-| 0c.    | Testing Guide                         | We will provide test suites (simulation and test files) for NFT creation, viewing, and trading, and describe in detail how to test module functions. |
-| 1.     | Fundamental function：NFT Creation    | We will complete the fundamental function- NFT creation. NFT artists can create NFT on the Banksy platform and place it in the Banksy marketplace. |
-| 2.     | Fundamental function：NFT Transaction | We will complete the fundamental function - the NFT simple transaction. We will create an NFT trading market that supports NFT direct buying, selling, and auctioning. |
-| 3.     | Polkadot ecological deployment        | Deploy Banksy smart contracts on Polkadot parachains (such as Moonbeam) that support EVM smart contracts. |
-| 4.     | Tutorial                              | We will provide a tutorial on how to create an NFT and publish it to the NFT Market. |
-| 5.     | Testing                               | The code will have proper unit-test coverage to ensure functionality and robustness. |
-
-
-
-### Milestone 2 -- Implementation of AI-Kit
-
-* **Estimated Duration:** 1.5 month
-* **FTE:** 5
-* **Costs:**  DAI 8500
-
-
-| Number | Deliverable                  | Specification                                                |
-| ------ | ---------------------------- | ------------------------------------------------------------ |
-| 0a.    | License                      | Apache License 2.0                                           |
-| 0b.    | Documentation                | We will provide the rationale, instructions, and examples for implementing AI-KIT. |
-| 0c.    | Testing Guide                | We will provide test suites (simulation and test files) for AI-Kit, and describe in detail how to test the module functions. |
-| 1.     | Base Analysis Module         | We will implement NFT data real-time collection and implement the NFT data analysis module. |
-| 2.     | AI Oracle For NFT            | We will use the collected data to train the machine learning model and output AI Oracle For NFT. |
-| 3.     | Deploy the Oracle test chain | We will integrate analysis modules and machine learning models and deploy them to the test chain for testing. |
-
-### Milestone 3 -- Implementation of NFT pool-based lending
+### Milestone 1 -- Implementation of NFT pool-based lending
 
 * **Estimated Duration:** 1.5 month
 * **FTE:** 6
