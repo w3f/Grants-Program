@@ -173,8 +173,7 @@ To check this, oracle provider module should have these test functions:
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0|
-| 0b. | Oracle provider | A cron job software to periodically receive price and send it to standard protocol |
-| 0c. | Documentation | Documentation will introduce how to install the oracle and participate to get block reward | 
+| 0b. | Documentation | Documentation will introduce how to install the oracle and participate to get block reward | 
 | 1. | Oracle client | Oracle client to receive information from external sources then submit information regularly to substrate runtime |
 | 2. | Modified Oracle module | Oracle module to register operators and batch |
 | 3. | Unit test codes | Unit test codes in `tests.rs` in each runtime module |
