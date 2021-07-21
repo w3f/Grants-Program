@@ -164,12 +164,13 @@ The first milestone already has been done. Funds for the next milestones will be
 * **Full-Time Equivalent (FTE):** 2.5
 * **Total Costs:** 29,999 USD
 
-### Previous work
+### Current work - Scope of this Grant
 
 #### Milestone 1 - Implement reusable basic contracts in ink!, similar to Openzeppelin
 
 * **Estimated duration:** 2 weeks
 * **FTE:**  2.5
+* **Costs:** 0 USD
 
 | Number | Deliverable                      | Specification                                                                                                                                                                                                    |
 | -----  | -----------                      | -------------                                                                                                                                                                                                    |
@@ -182,7 +183,6 @@ The first milestone already has been done. Funds for the next milestones will be
 | 2a.    | AccessControl                    | We will implement reusable [AccessControl](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/AccessControl.sol) analog on ink!                                                                                                         |
 | 2b.    | Ownable                          | We will implement reusable [Ownable](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol) analog on ink!                                                                                     |
 
-### Current work - Scope of this Grant
 
 #### Milestone 2 - Simplify usage of library. Add a new features which extend ink!. Provide macroses that will allow creation of your own base implementation.
 
