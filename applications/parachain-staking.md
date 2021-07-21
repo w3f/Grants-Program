@@ -1,7 +1,5 @@
 # Open Grant Proposal
 
-> This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
-
 * **Project:** Pallet-dPoS for Parachain Staking
 * **Proposer:** [Moonbeam Network](https://github.com/PureStake/moonbeam)
 * **Payment Address:** 0x9a66721302d9f30a9d11cf48a09c7ef1a842b5c8
@@ -54,20 +52,20 @@ In addition to updating Rust crate-level docs and [outdated user-level docs](htt
 
 1. Benchmark to derive transaction weights. This work has been started in [this PR](https://github.com/PureStake/moonbeam/pull/372).
 
-2. The current implementation allows each `AccountId` to make up to `Config::MaxCollatorsPerNominator` nominations. Because anyone can create multiple accounts, this constraint is unnecessary. We will refactor the current implementation to constrain each `AccountId` to a maximum of 1 nomination and integrate `frame/pallet-proxy` to enable multiple nominations without the runtime complexity of handling these nominations in the `parachain-staking` pallet.
+2. Security Research Labs reported two critical vulnerabilities in `parachain-staking`: (i) total locked balance was not updated in `{collator, nominator}_bond_more` leading to a potential underflow error (which could trigger excessive issuance) (ii) bounded number of nominations per collator allowed any account to fill the slots with the minimum nomination thereby preventing higher nominations.
 
 3. The inflation logic implemented in [`parachain-staking`](https://github.com/PureStake/moonbeam/blob/master/pallets/parachain-staking/src/inflation.rs) is minimal. Instead of integrating `pallet-staking`'s reward curve, the current implementation calculates per-round inflation derived from an annual inflation rate. Although the inflation rate can be updated by governance (sudo as of now), it is constant. Some parachain teams (i.e. Kilt) have requested configurable inflation that uses `pallet-staking`'s reward curve instead because it has been audited and reviewed more closely.
 
-4. There is no slashing in the current implementation. We will add slashing for equivocation (signing two different blocks at the same height). This requires first adding equivocation detection to [`frame/aura`](https://github.com/paritytech/substrate/tree/master/frame/aura).
+4. Moonbeam reserves 30% of inflation for future parachain bond(s). To support this functionality, `parachain-staking` added the storage item `ParachainBondConfig`. This storage item is updatable by the root origin; it configures the percent (30%) of inflation reserved as well as the `AccountId` which receives the reserved funds. This feature is convenient for parachains in the Polkadot ecosystem, all of which must pay rent to the network by locking funds in the parachain bond.
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 0a. | License | GPL3 |
 | 0d. | Documentation | Update Rust crate-level docs and [user-level docs](https://meta5.world/stake-docs/) with implementation details. |
-| 1. | Benchmark | benchmark the existing implementation to derive transaction weights and discern optimization opportunities |  
-| 2.  | Refactor to Minimal delegated Proof of Stake | Add constraint of max 1 nomination per `AccountId` and integrate `frame/pallet-proxy` to maintain support for multiple nominations. |
-| 3.  | Configurable Inflation | Replace sudo with governance origin for setting inflation rate. Provide instructions for replacing constant inflation with `pallet-staking`'s reward curve logic. | 
-| 4.  | Implement Slashing | Add equivocation detection to [`frame/aura`](https://github.com/paritytech/substrate/tree/master/frame/aura). Report slashing to `parachain-staking` and enforce prior to reward distribution. |
+| 1. | Benchmark | Benchmark the existing implementation to derive transaction weights and discern optimization opportunities. |  
+| 2. | Patch SR-Labs Critical Vulnerabilities | Patch both critical vulnerabilities reported by SR labs. |
+| 3. | Configurable Inflation | Replace sudo with governance origin for setting inflation rate. Provide instructions for replacing constant inflation with `pallet-staking`'s reward curve logic. |
+| 4. | Configurable Parachain Bond Reservation | Add optional parachain bond configuration that enables reserving a portion of inflation for future parachain bonds. |
 
 ### Milestone 2: Parachain-Staking Polkadot-JS UI
 

@@ -72,7 +72,7 @@ Each option will generate a token, of which the market making will be automatica
 
 5. **Result Uploaded On-chain**
 
-    When the result is generated reaching the initially set-up timeline, the prediction result is uploaded automatically by the governance node through the oracle and is totally transparent to all users for judgement during the result announcement period.
+    When the result is generated reaching the initially set-up timeline, the prediction result is uploaded automatically by the governance node through the stake node and is totally transparent to all users for judgement during the result announcement period.
 
 6. **Market Settlement**
 
@@ -82,7 +82,7 @@ Each option will generate a token, of which the market making will be automatica
 
 - **X Predict Market in Polkadot ecosystem**
 
-    X Predict Market plans to build the parachain on Polkadot network. Our main focus in the early stage of development lies in the development and upgrade in the test chain.X Predict Market will play an important role in the Polkadot network as prediction market, an integration prediction platform including event prediction, community governance, cross-chain, market incentive as well as social system.Concerning the settlement currency in prediction market, X Predict Market will give priority to the tokens of Polkadot ecosystem. Besides, we will seek interaction with other projects in terms of the market incentive mining. For example, tokens of a certain project can be chosen as settlement currency of a certain popular topic of X Predict Market. In addition to the prediction mining, users can share the transaction fee by providing liquidity, obtained from which the LP token can be used for yield farm.
+    X Predict Market plans to build the parachain on Polkadot network. Our main focus in the early stage of development lies in the development and upgrade in the test chain.X Predict Market will play an important role in the Polkadot network as prediction market, an integration prediction platform including event prediction, community governance, market incentive as well as social system.Concerning the settlement currency in prediction market, X Predict Market will give priority to the tokens of Polkadot ecosystem. Besides, we will seek interaction with other projects in terms of the market incentive mining. For example, tokens of a certain project can be chosen as settlement currency of a certain popular topic of X Predict Market. In addition to the prediction mining, users can share the transaction fee by providing liquidity, obtained from which the LP token can be used for yield farm.
 
 - **Target audience**
 
@@ -115,7 +115,6 @@ Each option will generate a token, of which the market making will be automatica
     |Result community governance|:heavy_check_mark:|:x:|:x:|:heavy_check_mark:|:heavy_check_mark:|:x:|:x:|:heavy_check_mark:|
     |Report Supervision Mechanism|:heavy_check_mark:|:x:|:x:|:heavy_check_mark:|:heavy_check_mark:|:x:|:x:|:heavy_check_mark:|
     |Base on Polkadot|:x:|:x:|:x:|:x:|:heavy_check_mark:|:x:|:x:|:heavy_check_mark:|
-    |Cross chain|:x:|:x:|:x:|:x:|:heavy_check_mark:|:x:|:x:|:heavy_check_mark:|
     |Staking|:x:|:x:|:x:|:x:|:heavy_check_mark:|:x:|:x:|:heavy_check_mark:|
     |Prediction mining|:x:|:x:|:x:|:x:|:x:|:heavy_check_mark:|:x:|:heavy_check_mark:|
     |Liquidity yield farming|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:heavy_check_mark:|
@@ -125,7 +124,7 @@ Each option will generate a token, of which the market making will be automatica
 
     Compared with Option Room in the Polkadot ecology, it has no prediction product available yet. From its disclosed content, compared with X Predict Market, it lacks flexibility and does not operate Automatic market maker based on AMM; Lack of incentives, it is not featured with our prediction mining, LP mining, creator rewards, prediction rank list and other market incentives; lack of sociability, we will create a prediction topics driven Community interaction forum where users can interact with each other.
 
-    Compared with projects outside of Polkadot ecology. FTX is a centralized project, which is at the risk of being operated in the dark by the platform and legal issue; Prosper is based on Binance Chain, with only automatically generated short-term price forecasts, and the range of audience is narrow; Omen is not based on Polkadot, it lacks the diversity of cross-chain asset participation, and lacks diversified incentives and sociality;Polymarket is short of community governance and reporting and supervision mechanisms;The homogeneous topic of Catnip cannot even be independently created by users, as well as the absence of community governance and incentives; Augur is the order-book type, not as flexible and liquidity abundant as AMM's automatic market making, and lacks the participation of cross-chain assets and market incentives.
+    Compared with projects outside of Polkadot ecology. FTX is a centralized project, which is at the risk of being operated in the dark by the platform and legal issue; Prosper is based on Binance Chain, with only automatically generated short-term price forecasts, and the range of audience is narrow; Omen is not based on Polkadot, it lacks diversified incentives and sociality;Polymarket is short of community governance and reporting and supervision mechanisms;The homogeneous topic of Catnip cannot even be independently created by users, as well as the absence of community governance and incentives; Augur is the order-book type, not as flexible and liquidity abundant as AMM's automatic market making, and lacks market incentives.
 
 ## Team :busts_in_silhouette:
 
@@ -221,18 +220,16 @@ https://x-predict.com/X_Predict_market_Whitepaper_en.pdf?v=1.0
 | 0c. | Testing Guide | We will conduct unit test on all modules to ensure they can function properly. In this guide, we will describe how to run these tests. |
 | 1. | Creating proposal module | This module provides a method for creating prediction proposals using specific parameters, such as prediction topics, options, settlement currency, transaction fee ratio, and prediction period. |
 | 2. | Prediction participation module | This module provides the functions of using settlement tokens to participate in predictions, swapping prediction tokens, and providing and removing liquidity. |
-| 3. | Results uploading module | This module provides the function of submitting results through oracle. |
+| 3. | Results uploading module | This module provides the function of submitting results through stake node. |
 | 4. | Market settlement module | After the results are officially announced, users predicted correctly can exchange their prediction tokens with settlement tokens with equivalent value.Users who provide liquidity automatically remove liquidity after the end and share fees. |
 
 ## Future Plans
 
 1. In the second phase of the product development plan,multiple incentives are designed for users. In addition to gain rewards by predicting correctly, users also have rewards for predictive mining, staking, predicted leaderboard, liquidity providing and yield farming, and etc. Also, there are additional rewards for prediction topic creators and community nodes. The specific rules of this part of the reward are introduced in the white paper.
 
-1. In the second phase of the product development plan.We will integrate cross-chain mechanism, we're ready to become a para-chain of Polkadot. At present, the cross-chain will be concentrated between the parachains, the purpose is to make more other parachain assets can participate as the settlement currency of the forecast proposal. In addition, market-driven mining will seek to interact with other projects.
-
 1. In the third phase of the product development plan.The platform will open up community autonomous nodes, and reporting and supervision mechanisms. Each user will be able to become a governance node by staking governance tokens. The governance node can upload the results and share the revenue from withdrawal fee. The governance node is authorized to upload results and accept the supervision of the entire network. When the result submitted by the node is different from reality, any user can initiate a report through pledge, the reported person will be punished, and the reporter will be rewarded.
 
-1. In the third phase of the product development plan.Optimize an easier-to-use oracle. In order to encourage more non tech-savvy users to explore the oracle, we will develop a graphical operation interface for the common users to upload results through the oracle.
+1. In the third phase of the product development plan.Optimize an easier-to-use stake node. In order to encourage more non tech-savvy users to explore the stake node, we will develop a graphical operation interface for the common users to upload results after staking tokens, pass the review and become a staking node.
 
 1. In the third phase of the product development plan.Add the governance voting pool of the parameters and development of the platform it self. The range of voting concludes the settings of some parameters of the platform, future revisions, iterative upgrades of the platform, such as adding new features.
 
