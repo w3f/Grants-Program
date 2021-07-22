@@ -1,8 +1,8 @@
-# W3F Open Grant Proposal
+# W3F Grant Proposal
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 >
-> See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/#pencil-process) on how to submit a proposal.
+> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
 * **Project Name:** Name of your project (e.g. DuoSwap Module)
 * **Team Name:** Legal name of your team (e.g. Duo)
@@ -93,7 +93,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
-* links to improvement proposals or [RFPs](https://github.com/w3f/General-Grants-Program/tree/master/rfp-proposal) (requests for proposal),
+* links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
 * academic publications relevant to the problem,
 * links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
 * references to conversations you might have had related to this project with anyone from the Web3 Foundation,
@@ -108,7 +108,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 For each milestone,
 
 * make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we have created a document with examples for some grant categories [here](../src/grant_guidelines_per_category.md).
+To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md).
 * include the amount of funding requested _per milestone_.
 * include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
 * provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
