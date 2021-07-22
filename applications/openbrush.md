@@ -160,7 +160,7 @@ PSP - https://github.com/w3f/PSPs/pull/22
 **We have decided to describe a full roadmap of an Openbrush here, with estimates. However, the funding we request at this stage is only for the second milestone.**
 The first milestone already has been done. Funds for the next milestones will be requested in the next grant.
 
-* **Total Estimated Duration:** 6 weeks
+* **Total Estimated Duration:** 7 weeks
 * **Full-Time Equivalent (FTE):** 2.5
 * **Total Costs:** 29,999 USD
 
@@ -186,9 +186,9 @@ The first milestone already has been done. Funds for the next milestones will be
 
 #### Milestone 2 - Simplify usage of library. Add a new features which extend ink!. Provide macroses that will allow creation of your own base implementation.
 
-* **Estimated duration:** 6 weeks
+* **Estimated duration:** 7 weeks
 * **FTE:**  2.5
-* **Costs:** 29,999 USD
+* **Costs:** 29,999 USD(covered by grant) + 5,000 USD which is covered by Supercolony
 
 | Number | Deliverable                                         | Specification                                                                                                                                                                                    |
 | -----  | -----------                                         | -------------                                                                                                                                                                                    |
@@ -200,14 +200,15 @@ The first milestone already has been done. Funds for the next milestones will be
 | 3.     | Support default implementation in external traits   | We will add mnemonic support of default implementations inside of trait definition(traits defined via `#[ink::trait_definition]`). It is mnemonic, because under the hood we will generate internal trait with default implementation that will be used in external trait.  |
 | 4.     | Support of modifiers                                | We will add support of modifiers, like in Solidity. User will be able to mark some function to use modifiers and it will simplify the code. |
 | 5.     | ReentrancyGuard                                     | We will add implementation of [ReentrancyGuard](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/ReentrancyGuard.sol) |
+| 6.     | Implement additional useful contract                | We will implement [PaymentSplitter](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/finance/PaymentSplitter.sol), [TimelockController](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/TimelockController.sol) and etc. |
 
 ### Future work
 
 #### Milestone 3. Pre-release - Standardization of tokens contracts. Implement extensions for contracts. Documentation.
 
-* **Estimated Duration:** 4 weeks(+ time for PSP approving)
+* **Estimated Duration:** 3 weeks(+ time for PSP approving)
 * **FTE:**  2.5
-* **Costs:** 20,000 USD
+* **Costs:** 15,000 USD
 
 | Number | Deliverable                                              | Specification                                                                                                                             |
 | -----  | -----------                                              | -------------                                                                                                                             |
@@ -216,8 +217,7 @@ The first milestone already has been done. Funds for the next milestones will be
 | 0c.    | Testing Guide                                            | We will add more tests to cover all macros, update tests according to new changes.                                                           |
 | 1.     | Create Proposal for Fungible token                       | We will create a proposal for standardization of Erc20 token in case of ink! and `contract-pallet`. Based on the final decision regarding the proposal update the implementation in library.              |
 | 2.     | Implement extensions for tokens                          | We will implement extensions for Erc20, Erc721 and Erc1155 tokens.              |
-| 3.     | Implement additional useful contract                     | We will implement [PaymentSplitter](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/finance/PaymentSplitter.sol), [TimelockController](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/TimelockController.sol) and etc. |
-| 4.     | Create Proposal for Non Fungible token and Multi token   | We will create proposals for NFT and multi token, when proposal for FT token will be approved. Based on the decisions of these approves, we will update implementation in library. |
+| 3.     | Create Proposal for Non Fungible token and Multi token   | We will create proposals for NFT and multi token, when proposal for FT token will be approved. Based on the decisions of these approves, we will update implementation in library. |
 
 #### Milestone 4. Release - Contribution to ink!
 
