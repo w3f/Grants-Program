@@ -82,111 +82,173 @@ Hyungsuk is Plasm network's core developer. He developed Subswap, AMM in substra
 
 ### Overview
 
-As a synthetic asset protocol,Standard protocol heavily depends on the oracle for managing the system. Oracles should be formed in a legit way to be motivated for people to provide computing power.
+As a synthetic asset protocol,Standard protocol heavily depends on the oracle for maintaining the system. Oracles should be formed in a sustainable way to be motivated for people to provide computing power.
 To reward the network participant, Standard protocol proposes new PoS reward system by splitting block rewards from block validators to oracle providers.
 
 * **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):**  1
 * **Total Costs:** 1000DAI
-* **Payment Address:** `0x6EaD823cfB6d45996b8E413C7bE43282f042A78e`
+* **Payment Address:** `0xd2234E506862991ADA75f930c6D79B4236e3E265`
 
-### Milestone 1 - Rebased stablecoin supply vault 
+### Milestone 1 - Middleware for data submission and runtime integration
 * **Estimated Duration:** 1 month
 * **FTE:**  1
 * **Costs:** 500DAI
 
-This milestone focuses on building a oracle provider client for getting block rewards from standard protocol. PoA module for testing connection between oracle provider and the protocol is provided. Standard will use laminar's oracle module then rebases its stablecoin supply from vault module. 
+This milestone focuses on building a oracle provider client middleware which submits off-chain data to the blockchain. An authoritive module for testing connection between oracle provider and the protocol is provided in this phase. Then, Standard will extend the oracle module to distribute reward from session callback connected between `pallet_session` and `pallet_staking`. When oracle provider submits outliers or does not submit values that are out of sync from other oracle providers, a slash can be applied from anyone to report. Outliers are detected with [IQR method](https://online.stat.psu.edu/stat200/lesson/3/3.2).
 
-### Oracle provider client 
+### Oracle provider client
 
-Oracle provider client is actually a bot that uses [substrate-api-client](https://github.com/scs/substrate-api-client/blob/master/tutorials/api-client-tutorial/src/main.rs) to submit information in oracle module in a certain periods(e.g. 2 hour, 4 hour). For example, to send an oracle xt from an oracle client, 
+As chainlink and other oracle solution has a middleware or submitting client from off-chain, Standard also has its oracle client. Oracle provider client is actually a bot that uses [polkadot-js api](https://github.com/scs/substrate-api-client/blob/master/tutorials/api-client-tutorial/src/main.rs) to submit information in oracle module in a certain periods(e.g. 2 hour, 4 hour). For example, to send an oracle xt from an oracle client, 
 
-```rust
-#[derive(Encode, Decode, Debug)]
-struct Report {
-    asset_id: u128,
-    price: u128,
-}
+```javascript=
+// Loads config
+import LumenConfig from "@digitalnative/lumen-config";
+// Fetch functions for acquiring off-chain data
+import fetchData from "@digitalnative/lumen-fetch";
+// Submit function for submitting data to on-chain
+import submitData from "@digitalnative/lumen-submit";
+// Async Apis for polkadot
+import { ApiPromise, WsProvider } from "@polkadot/api";
 
-fn client_walkthrough() {
-    let url = "127.0.0.1:9944";
+const runClient = async (dir) => {
+  const cron = require("node-cron");
+  const config = LumenConfig.default({ dir });
+  const { events } = config;
+  events.emit("client:start");
+  const api = await polkadotApi(config);
+  // register cron job to execute in every minute
+  cron.schedule("*/90 * * * * *", async function() {
+    events.emit("client:next");
+    // fetch data
+    const data = await fetchData(false, config);
+    // Submit data
+    await submitData(data, config, api);
+  });
+  // Declare cron job has been set
+  events.emit("client:init");
+};
 
-    let signer = AccountKeyring::Alice.pair();
+export default runClient;
 
-    let api = Api::new(format!("ws://{}", url))
-        .map(|api| api.set_signer(signer.clone()))
-        .unwrap();
-
-    let xt: UncheckedExtrinsicV4<_> =
-        compose_extrinsic!(api, "OracleModule", "report", 1 as u128, 10 as u128);
-
-    println!("[+] Extrinsic: {:?}\n", xt);
-
-    let tx_hash = api
-        .send_extrinsic(xt.hex_encode(), XtStatus::Finalized)
-        .unwrap()
-        .unwrap();
-    println!("[+] Transaction got finalized. Hash: {:?}\n", tx_hash);
-
-    // get the asset info for an asset identifier
-    let res_str = api
-        .get_storage_map("Oracle", "Prices", Some(1u128), None)
-        .unwrap()
-        .unwrap();
-
-    let res_vec = Vec::from_hex(res_str).unwrap();
-
-    // type annotations are needed here to know that to decode into.
-    let report: Report = Decode::decode(&mut res_vec.as_slice()).unwrap();
-    println!("[+] Decoded Asset info: {:?}\n", report);
-}
-
-```
-
-Now combine this with cronjob like this provided example code from cronjob rust library [here](https://docs.rs/cronjob/0.3.17/cronjob/)
-
-```Rust
-extern crate cronjob;
-use cronjob::CronJob;
-
-fn main() {
-    // Create the `CronJob` object.
-    let mut cron = CronJob::new("Test Cron", on_cron);
-    // Start the cronjob.
-    cron.start_job();
-}
-
-// Our cronjob handler.
-fn on_cron(name: &str) {
-    println!("{}: It's time!", name);
+async function polkadotApi(config: LumenConfig) {
+  const provider = new WsProvider(config.rpc);
+  const definitions = require("@digitalnative/type-definitions/opportunity");
+  let types = definitions.types[0].types;
+  const api = await new ApiPromise({
+    provider,
+    types,
+  });
+  await api.isReady;
+  return api;
 }
 ```
 
-then you get a client for submitting price information. For the standard's stablecoin price, the stablecoin is not in the market yet, so a constant will be used for testing. 
+Here is the overall workflow for the client operation, and add-ons and options are expected to be added in each function in the library.
 
 ## Unit tests
 
 Standard protocol applies test driven development(TDD) on building runtime modules for the grant. 
-Here are unit tests that will be done along the development.
+Here are unit tests that will be done along the development in the runtime module.
 
 ## Oracle
 
 oracle in milestone 1 should achieve:
-- checking whether the sender is the oracle provider in an era
-- oracle provider set is changed after an era. In each era, 5 oracle providers will be chosen.
-- oracle value is checked in each session to detect outliers using IQR method
-- outliers are recorded for an era like `ValidatorSlashInEra` in pallet_staking, in this case it just records whether it was slashed. In this case, we call it `ProviderSlashInEra`.
-- oracle providers are rewarded in each era proportional to the points received in each session. 
-- checking whether provider recorded a value in each session
+- Only Root account can register oracle providers for slots to submit off-chain data
+- If slots are not open for an entity in the storage, a new oracle provider initializes the slot with the oracle provider count.
+- When the provider is designated for a slot, it can only submit data for a designated slot
+- If one reports slashing for the slot, runtime validates the slot data with iqr rule and remove provider and set the value as zero if the value violates it. 
+- zero values are excluded and the median is calculated in both even and odd cases
 
 To check this, oracle provider module should have these test functions:
-- `oracle_provider_set_changes_after_an_era`: using a `start_era`, the function should check the provider set storage whether the account id selected after era progression is different from before.  
-- `oracle_provider_is_slashed`: when outlier is detected, oracle module should register the provider to the `ProviderSlashInEra` storage. 
-- `outlier_is_detected`: when oracle is provided with array of the asset's price, IQR method should find the intended outlier in the test set.
+- `add_oracle_provider_works`: Oracle should be added by the root account for now until the module includes session callback between `pallet-staking` and `pallet-session` as a impl of `SessionManager`.  
+- `oracle_report_works`: Oracle provider should only be able to submit data only in designated slot, and create new batch if the price data has not been reported yet. 
+- `oracle_slash_works`: when one reports slashing for oracle provider in a slot, the runtime should run iqr rule to find out whether the slot value violates the rule from the collected oracle data batch. 
+- `oracle_excludes_zeros_and_return_median`: Oracle runtime should exclude zero-values since it means the data is empty or not available due to violation. median should be returned from the remainder of filtered batch.
+- `oracle_excludes_zeros_and_return_median_even`: the purpose is also same with the previous test function, but the batch length is even.
+
+
+
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0|
+| 0b. | Documentation | Documentation will introduce how to install the oracle and participate to get block reward | 
+| 1. | Oracle client | Oracle client to receive information from external sources then submit information regularly to substrate runtime |
+| 2. | Modified Oracle module | Oracle module to register operators and batch |
+| 3. | Unit test codes | Unit test codes in `tests.rs` in each runtime module |
+| 4. | Npm binary | We will provide a npm binary for oracle providers to install and run an oracle client |
+| 5. | Dockerfile | Dockerfile for running Standard protocol binary will be provided |
+
+### Milestone 2 - PoS oracle reward distribution  
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 500DAI
+
+This milestone focuses on including session callbacks related to sessions in implementations of `SessionManager` trait in `pallet-staking` module, and all related module will be tested with its separate implementation of `SessionManager` connected to `pallet-session` in a mock environment. 
 
 ## Vault 
 
-vault in milestone 1 should achieve:
+Vault in milestone 2 should have a trait for dependency Injection:
+
+```rust=
+pub trait RebaseCallback {
+    fn rebase(); // where it initiates rebase in the session
+}
+```
+
+The dependency injection will take place in the `pallet-staking`'s config as well as the oracle
+
+```rust=
+impl pallet_custom_staking::Config for Runtime{
+    ...
+    type Rebase = RebaseCallback; // for vault rebase
+    type Oracle = OracleCallback; // for oracle callback used as same as staking callbacks
+}
+```
+
+where the it will be included in `pallet-staking` module's `SessionManager` trait implementation in `end_session` function like:
+
+```rust=
+/// In this implementation `new_session(session)` must be called before `end_session(session-1)`
+/// i.e. the new session must be planned before the ending of the previous session.
+///
+/// Once the first new_session is planned, all session must start and then end in order, though
+/// some session can lag in between the newest session planned and the latest session started.
+impl<T: Config> pallet_session::SessionManager<T::AccountId> for Module<T> {
+	fn new_session(new_index: SessionIndex) -> Option<Vec<T::AccountId>> {
+		frame_support::debug::native::trace!(
+			target: LOG_TARGET,
+			"[{}] planning new_session({})",
+			<frame_system::Module<T>>::block_number(),
+			new_index
+		);
+		Self::new_session(new_index)
+	}
+	fn start_session(start_index: SessionIndex) {
+		frame_support::debug::native::trace!(
+			target: LOG_TARGET,
+			"[{}] starting start_session({})",
+			<frame_system::Module<T>>::block_number(),
+			start_index
+		);
+		Self::start_session(start_index)
+	}
+	fn end_session(end_index: SessionIndex) {
+		frame_support::debug::native::trace!(
+			target: LOG_TARGET,
+			"[{}] ending end_session({}) with rebase",
+			<frame_system::Module<T>>::block_number(),
+			end_index
+		);
+                T::Rebase::rebase();
+		Self::end_session(end_index)
+	}
+}
+```
+
+
+vault in milestone 2 should achieve:
 - In each era, vault module should bring registered stablecoin price from oracle module with its asset id (1) and rebase its total supply to `(circulating supply) / (oracle price)` in order to satisfy the ratio `(circulating supply) : (oracle price) = (total supply) : (1.0(USD) in decimal configured in the substrate chain)`.
 - Vault module should burn or mint stablecoin's module account's balance according to rebased balance
 - Alert community when total supply cannot be decreased anymore to keep the ratio(in case where decreased total supply exceeds circulating supply) in order to propose emergency shutdown or take further actions(e.g. issuing bonds, using community vault from stability fee to stabilize the ratio) 
@@ -194,66 +256,160 @@ vault in milestone 1 should achieve:
 To check this, vault module should have these test functions:
 
 - `supply_is_rebased_in_each_era`: Using an oracle module, set an oracle price and start an era so that the vault module can executes rebase mechanism. The total supply of the stablecoin is checked whether it changed to the right amount.
-- `report_emergency`: check whether vault module reports when the rebased next total supply is less than the circulating supply. 
+- `report_emergency`: check whether vault module reports when the rebased next total supply is less than the circulating supply.
 
 
+## Oracle
 
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0|
-| 0b. | Oracle provider | A cron job software to periodically receive price and send it to standard protocol |
-| 0c. | Documentation | Documentation will introduce how to install the oracle and participate to get block reward | 
-| 1. | Oracle client | Oracle client to receive information from external sources then submit information regularly to substrate runtime |
-| 2. | Modified Vault module | Vault module to rebase total supply of stablecoin with the ratio between circulating supply and price from oracle module |
-| 3. | Unit test codes | Unit test codes in `tests.rs` in each runtime module |
-| 4. | Docker | We will provide a dockerfile to demonstrate the full functionality of the oracle provider |
+oracle will replicate the `pallet-staking` module regarding election of the oracle provider and the reward logic. However, there will be difference in how the elected provider(or validator) is allocated to the slot. The module only accepts the stash account to submit oracle data once `validate()` tx has been finalized.
 
-### Milestone 2 - PoS oracle reward distribution  
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 500DAI
+For example, there will be addition in the `select_and_update_validators` function code 
 
-This milestone focuses on separating staking and phragmen election from block reward logic then apply it on oracle network participants while sharing era information in existing staking module. oracle account will act as validator in staking module, nominators will nominate oracle accounts. Slashes will be applied in each session(approximately 4 hours) when oracle provider submits outliers or does not register value in each session. Outliers are detected with [IQR method](https://online.stat.psu.edu/stat200/lesson/3/3.2). On each session, points are allocated to the elected oracle providers with constant divided by difference between median and the provider's value. Points will be allocated to elected oracle providers, and they will get block reward at the end of an era proportional to the point they made from sessions. Block rewards will be computed separately by being called from a reward module, managing the ratio of block reward in each era like `plasm_reward` runtime module(Credits to plasm network). 
+```rust=
+/// Select the new validator set at the end of the era.
+	///
+	/// Runs [`try_do_phragmen`] and updates the following storage items:
+	/// - [`EraElectionStatus`]: with `None`.
+	/// - [`ErasStakers`]: with the new staker set.
+	/// - [`ErasStakersClipped`].
+	/// - [`ErasValidatorPrefs`].
+	/// - [`ErasTotalStake`]: with the new total stake.
+	/// - [`SnapshotValidators`] and [`SnapshotNominators`] are both removed.
+	///
+	/// Internally, [`QueuedElected`], snapshots and [`QueuedScore`] are also consumed.
+	///
+	/// If the election has been successful, It passes the new set upwards.
+	///
+	/// This should only be called at the end of an era.
+	fn select_and_update_validators(current_era: EraIndex) -> Option<Vec<T::AccountId>> {
+		if let Some(ElectionResult::<T::AccountId, BalanceOf<T>> {
+			elected_stashes,
+			exposures,
+			compute,
+		}) = Self::try_do_election() {
+			// Totally close the election round and data.
+			Self::close_election_window();
+
+			// Populate Stakers and write slot stake.
+			let mut total_stake: BalanceOf<T> = Zero::zero();
+			exposures.into_iter().for_each(|(stash, exposure)| {
+				total_stake = total_stake.saturating_add(exposure.total);
+				<ErasStakers<T>>::insert(current_era, &stash, &exposure);
+
+				let mut exposure_clipped = exposure;
+				let clipped_max_len = T::MaxNominatorRewardedPerValidator::get() as usize;
+				if exposure_clipped.others.len() > clipped_max_len {
+					exposure_clipped.others.sort_by(|a, b| a.value.cmp(&b.value).reverse());
+					exposure_clipped.others.truncate(clipped_max_len);
+				}
+				<ErasStakersClipped<T>>::insert(&current_era, &stash, exposure_clipped);
+			});
+
+			// Insert current era staking information
+			<ErasTotalStake<T>>::insert(&current_era, total_stake);
+
+			// collect the pref of all winners
+			for (i, stash) in elected_stashes.iter().enumerate() {
+                <Slots<T>>::insert(i, stash.clone()); // allocating slots for elected oracle provider
+				let pref = Self::validators(stash);
+				<ErasValidatorPrefs<T>>::insert(&current_era, stash, pref);
+			}
+            
+
+			// emit event
+			Self::deposit_event(RawEvent::StakingElection(compute));
+
+			log!(
+				info,
+				"💸 new validator set of size {:?} has been elected via {:?} for era {:?}",
+				elected_stashes.len(),
+				compute,
+				current_era,
+			);
+
+			Some(elected_stashes)
+		} else {
+			None
+		}
+	}
+```
+
+Also, slash module function should include verifier from milestone 1.
+
+```rust=
+/// Slash the validator for a given amount of balance. This can grow the value
+	/// of the slash in the case that the validator has less than `minimum_balance`
+	/// active funds. Returns the amount of funds actually slashed.
+	///
+	/// Slashes from `active` funds first, and then `unlocking`, starting with the
+	/// chunks that are closest to unlocking.
+	fn slash(
+		&mut self,
+		mut value: Balance,
+		minimum_balance: Balance,
+        slot: SlotIndex,
+	) -> Balance {
+		let batch = Prices::get(_id).unwrap();
+		let value = batch[_slot as usize];
+		let det = Self::determine_outlier(batch, value);
+		ensure!(det, Error::<T>::NotOutlier);
+		let pre_total = self.total;
+		let total = &mut self.total;
+		let active = &mut self.active;
+
+		let slash_out_of = |
+			total_remaining: &mut Balance,
+			target: &mut Balance,
+			value: &mut Balance,
+		| {
+			let mut slash_from_target = (*value).min(*target);
+
+			if !slash_from_target.is_zero() {
+				*target -= slash_from_target;
+
+				// don't leave a dust balance in the staking system.
+				if *target <= minimum_balance {
+					slash_from_target += *target;
+					*value += sp_std::mem::replace(target, Zero::zero());
+				}
+
+				*total_remaining = total_remaining.saturating_sub(slash_from_target);
+				*value -= slash_from_target;
+			}
+		};
+
+		slash_out_of(total, active, &mut value);
+
+		let i = self.unlocking.iter_mut()
+			.map(|chunk| {
+				slash_out_of(total, &mut chunk.value, &mut value);
+				chunk.value
+			})
+			.take_while(|value| value.is_zero()) // take all fully-consumed chunks out.
+			.count();
+
+		// kill all drained chunks.
+		let _ = self.unlocking.drain(..i);
+
+		pre_total.saturating_sub(*total)
+	}
+}
+```
 
 # Unit test 
 
-Standard protocol applies test driven development(TDD) on building runtime modules for the grant. 
-Here are unit tests that will be done along the development. 
-Milestone 2 is about adding oracle reward logic in `pallet_staking` module.
-Current `pallet_staking` module has four features:
-1. manage inflation in one year and set total rewards
-2. trigger functions regarding election/reward distribution in start and end of an era and record total reward in `end_era` function 
-3. record which validator has which nominator and balance
-4. record nominator status on each era and payout rewards by executing `payout_stakers` function in a certain era
-5. slash validators with spans except `Invulnerables`
+Unit tests are all identical with the staking module's test in that all logics are identical regarding slash, reward and validation. 
 
-Since staking module actually processes reward by claiming to the module then get payout from the total reward recorded in the each era, the staking module's `inflation.rs` file can be separated to a module which focuses on determining total reward amount and record them for each network participant groups in each `end_era` function execution, and staking module can be used for its existing operation by total amount recorded by the separated module. 
-
-`standard-rewards` module will focus on feature 1 and 2, and recording total stake rewards to each network participant modules.
-
-In Standard protocol's `standard-staking` module, `pallet_staking` module removes `end_era` function and let `standard-rewards` module to record the `ErasTotalStakeRewards` storage for an each era. Oracles are also applies the same logic, but `slashing.rs` file is modified not having Slashingspan and slashed 1/3 when outlier is found in each `end_session`.
-
-To check this, `standard-rewards` module have these test functions:
-
-`test_oracle_rewards_computation`: from the `inflation.rs` file in `pallet_staking` module, reward computing function is checked whether the reward splits the right amount with the `ValidatorCount` returned from each network participant module. 
-
-`standard-staking` module have these test functions:
-
-`pallet_staking` test functions without regarding `end_era` function
-
-`standard-oracle` module have these test functions:
-
-`pallet_staking` test funcions witthout regarding `end_era` function
 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0c. | Documentation | Documentation will introduce how to nominate  | 
-| 1. | Rewards module | Rewards module to caculate the total amount of rewards to receive with each network participants will be set | 
-| 2. | Staking module | `pallet_staking` module without the `end_era` logic function using NPoS Curve | 
-| 3. | Oracle module | Modification for phragmen election, slashing on `end_session`, and removing `end_era` function | 
-| 4. | Unit test code | Unit test codes in `tests.rs` in each runtime module  |
+| 1. | Vault module | Vault module will declare dependancy injection trait to use session callback in `pallet-staking` module and the test code with separate `SessionManager` implementation will be provided | 
+| 2. | Modified Staking module | `pallet_staking` module which has two config trait for rebase callback and oracle staking callback will be provided | 
+| 3. | Oracle module | same as staking module including curve integration but difference in slot allocation and separate slashing verifier will be included | 
+| 4. | Unit test code | Unit test codes in `tests.rs` in each runtime module with separate `SessionManager` implementation  |
 | 5. | Docker | We will provide a dockerfile to demonstrate the full functionality of Standard protocol chain |
 
 
