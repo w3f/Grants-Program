@@ -188,7 +188,7 @@ The first milestone already has been done. Funds for the next milestones will be
 
 * **Estimated duration:** 7 weeks
 * **FTE:**  2.5
-* **Costs:** 29,999 USD
+* **Costs:** 29,999 USD(covered by grant) + 5,000 USD which is covered by Supercolony
 
 | Number | Deliverable                                         | Specification                                                                                                                                                                                    |
 | -----  | -----------                                         | -------------                                                                                                                                                                                    |
