@@ -48,7 +48,7 @@ Interface Stack:
 
 - **Substrate Pallet Details:**
 
-The `site-pallet` and the `note-pallet` will leverage code from the ORML (open runtime modules library: https://github.com/open-web3-stack/open-runtime-module-library) which will provide us with some underlying community managed and reviewed code.
+The `site-pallet` and the `note-pallet` will leverage code from the ORML (open runtime modules library: https://github.com/open-web3-stack/open-runtime-module-library) which will provide us with some underlying community managed and reviewed code. The `site-pallet` and `name-service-pallet` will leverage some existing code and ideas from Substrate Names(https://github.com/xaya/substrate-names) and ENS on Substrate(https://github.com/hskang9/substrate-name-service).
 
 Substrate Stack:
 
@@ -84,6 +84,24 @@ fn burn(origin, note_id: T::NoteIndex, reason: Vec<u8>) -> Result;
 
     The front-end will enable users to create, delete, transfer, modify and search for Web3.0 sites.
 
+Design of the settings screen.
+![img](https://github.com/davidrhodus/yibanchen-design/raw/main/Settings_Screen.png)
+
+Design of the IPFS Pinata API settings screen.
+![img](https://raw.githubusercontent.com/davidrhodus/yibanchen-design/main/Settings_IPFS_keys.png)
+
+Design of the account selection settings screen.
+![img](https://raw.githubusercontent.com/davidrhodus/yibanchen-design/main/Settings_Account_Select.png)
+
+Design of the create note screen.
+![img](https://raw.githubusercontent.com/davidrhodus/yibanchen-design/main/Compose_Note.png)
+
+Design of the note listing screen.
+![img](https://raw.githubusercontent.com/davidrhodus/yibanchen-design/main/Note_Listing.png)
+
+Design of the note view screen.
+![img](https://raw.githubusercontent.com/davidrhodus/yibanchen-design/main/Note_View.png)
+
 ### Ecosystem Fit
 
 The YibanChen will provide users a way to start using web3 internet daily. The `Note-pallet` will provide the ecosystem with a streamlined method to create, store and transfer communication data. YibanChen will also enable users to move from centralized website hosting to a decentralized web3 model with the `Site-pallet`. The `Name-service-pallet` will provide a mechanism for federated login with an substrate user owned wallet.
@@ -93,6 +111,8 @@ The audience will be users that want to start using web3 for communication, webs
 - **_Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?_**
 
 We are unaware of any of project that is focusing on critical components, such as email/communication, basic web3 hosting, and decentralized federated login, these services will enable a user to move from web2 to web3.
+
+We looked at the system.remark call, while we found system.remark would allow for simple note creation, but would limit the ability to enhance our Note feature. In the future we plan to add two gatekeeper mechanisms on the note receiver side. First, whitelist a set of wallet address senders, and secondly the ability of a wallet address to set an amount of token required to be sent along with the note before the wallet address would accept the note. We also have had some initial feedback that users would be interested in selling the notes, which we believe utilizing ORML-NFT would be the best for this scenario for selling notes in the future.
 
 ## Team :busts_in_silhouette:
 
@@ -139,7 +159,7 @@ Currently, work for the Dapp has started, the team has an initial Substrate node
 
 - **Total Estimated Duration:** 9 weeks
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** 28,000 USD
+- **Total Costs:** 25,000 USD
 
 ### Milestone 1 — Build YibanChen Notes DApp with Substrate Wallet Support
 
@@ -151,7 +171,7 @@ Currently, work for the Dapp has started, the team has an initial Substrate node
 | -----: | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |    0a. | License                                     | Apache 2.0 / MIT / Unlicense                                                                                                                                                                                                                                                 |
 |    0b. | Documentation                               | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
-|    0c. | Testing Guide                               | Core functions will be fully covered by tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                 |
+|    0c. | Testing Guide                               | Core pallet functions will be fully covered by unit tests to ensure functionality and robustness. ReactUI testing will be covered by selenium tests. In the guide, we will describe how to run these tests.                                                                  |
 |     1. | note-pallet                                 | We will create a Substrate module that will allow an Note to be created and transferred.                                                                                                                                                                                     |
 |     2. | Substrate Testnet Chain                     | Users can interact with the notes-pallet module through a simple substrate setup. We will run this substrate chain along with users being able to spin up their own copy.                                                                                                    |
 |     3. | Build React app structure                   | We will have the core structure of the application in place.                                                                                                                                                                                                                 |
@@ -165,13 +185,15 @@ Currently, work for the Dapp has started, the team has an initial Substrate node
 
 - **Estimated Duration:** 3 weeks
 - **FTE:** 2
-- **Costs:** 10,000 DAI
+- **Costs:** 9,000 DAI
 
 | Number | Deliverable                           | Specification                                                                                                                                                                                                                                                                         |
 | -----: | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |    0a. | License                               | Apache 2.0 / MIT / Unlicense                                                                                                                                                                                                                                                          |
 |    0b. | Documentation                         | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) create a site and modify the web3.0 sites.                                                                                                                      |
 |    0c. | Article/Tutorial                      | We will publish an article/tutorial for non-technical users that explains what the Dapp is and how to use it.                                                                                                                                                                         |
+|    0d. | Testing Guide                         | Core pallet functions will be fully covered by unit tests to ensure functionality and robustness. ReactUI testing will be covered by selenium tests. In the guide, we will describe how to run these tests.                                                                           |
+|        |
 |     1. | site-pallet                           | The Site-pallet will store a decentralized storage location such as a IPFS CID hash and a Site name as a String. The pallet will provide interfaces for create(), listing(), transfer(), burn().                                                                                      |
 |     2. | React frontend                        | This frontend will provide a UI for managing web3 sites. This will expand upon the existing ReactUI which enables wallet-to-wallet communication. Users will be able to create sites, upload website data to IPFS, modify IPFS hashes in the Site-pallet and transfer site ownership. |
 |     3. | Site Search                           | The UI will enable users to search for existing site names by reading the `site-pallet` name String data structure.                                                                                                                                                                   |
@@ -182,13 +204,13 @@ Currently, work for the Dapp has started, the team has an initial Substrate node
 
 - **Estimated Duration:** 3 weeks
 - **FTE:** 1.5
-- **Costs:** 8,000 DAI
+- **Costs:** 6,000 DAI
 
 | Number | Deliverable                                        | Specification                                                                                                                                                                                                                                                                                                                                                 |
 | -----: | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |    0a. | License                                            | Apache 2.0 / MIT / Unlicense                                                                                                                                                                                                                                                                                                                                  |
 |    0b. | Documentation                                      | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works.                                                                                  |
-|    0c. | Testing Guide                                      | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                                             |
+|    0c. | Testing Guide                                      | Core pallet functions will be fully covered by unit tests to ensure functionality and robustness. ReactUI testing will be covered by selenium tests. In the guide, we will describe how to run these tests.                                                                                                                                                   |
 |     1. | name-service-pallet                                | This pallet will provide users the ability link a name to a wallet.                                                                                                                                                                                                                                                                                           |
 |     2. | Riot/Matrix bot                                    | A Riot bot will be created that allows users to sign a data string with their Substrate based wallet. The bot will then place a judgement and verify the Riot user has control of the wallet.                                                                                                                                                                 |
 |     3. | React Name View                                    | Within the existing ReactUI the users will be able to set(), clear(), update() the `name-service-pallet` for their individual substrate wallet.                                                                                                                                                                                                               |
@@ -200,7 +222,7 @@ Currently, work for the Dapp has started, the team has an initial Substrate node
 
 YibanChen plans operate on both the Kusama and Polkadot chains and will be the first application of it's kind that delivers decentralized communication, generalized name login service, and web3 website hosting, all built on Substrate.
 
-However, Development of the YibanChen won't end after all milestones are met. We plan to add features such as expanding `Name Service` feature to support more blockchain storage objects, such as other decentralized protocols and substrate chain discovery. We are looking at integrating with more decentralized storage protocols such as DatProtocol. Prototyping and testing additional user interfaces including more p2p driven interfaces such as removing IPFS gateways and supporting smolDot in the front-end for substrate communication. We also plan on building a community around `Voting` to help try and enable better forms of democracy and governance on and off chain.
+However, Development of the YibanChen won't end after all milestones are met. We plan to add features such as expanding `Name Service` feature to support more blockchain storage objects, such as other decentralized protocols and substrate chain discovery. We are looking at integrating with more decentralized storage protocols such as DatProtocol. Prototyping and testing additional user interfaces including more p2p driven interfaces such as removing IPFS gateways with a combination of IPFS.js and offchain::ipfs. Also supporting smolDot in the front-end for substrate communication. We also plan on building a community around `Voting` to help try and enable better forms of democracy and governance on and off chain.
 
 There are lot possibilities where this project YibanChen can go and we are very excited to get started on it and make a difference within the Web3 ecosystem.
 
