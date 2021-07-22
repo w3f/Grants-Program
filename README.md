@@ -44,15 +44,15 @@ Additionally, it must fulfill the following requirements:
 - As a general rule, teams are asked to finish a grant before applying for another one.
 - Lastly, we do not fund projects that actively encourage gambling, illicit trade, money laundering or criminal activities in general.
 
-In addition to the information provided on your application, note that your project will need to comply with our [Guidelines for Milestone Deliverables](./src/milestone-deliverables-guidelines.md). In particular, we require all projects to create documentation that explains how their project works. At a minimum, _written_ documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product. 
+In addition to the information provided on your application, note that your project will need to comply with our [Guidelines for Milestone Deliverables](./docs/milestone-deliverables-guidelines.md). In particular, we require all projects to create documentation that explains how their project works. At a minimum, _written_ documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product. 
 
-We also have [Announcement Guidelines](./src/announcement-guidelines.md) for grant-related communications.
+We also have [Announcement Guidelines](./docs/announcement-guidelines.md) for grant-related communications.
 
 Finally, we take licensing and the right of all teams in and outside the ecosystem to be recognised for their work very seriously. Using others' work with no attribution or indication that this was not your own work as part of a milestone delivery **will lead to immediate termination**. Please reach out to us before submitting if you have any doubts on how to comply with a specific license and we'll be happy to help.
 
 ### Project ideas
 
-An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](./src/polkadot_stack.md), as well as a list of previously accepted applications [here](./src/accepted_grant_applications.md).
+An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](./docs/polkadot_stack.md), as well as a list of previously accepted applications [here](./docs/accepted_grant_applications.md).
 
 [Requests For Proposals](./rfps/) (RFPs) represent concrete ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, so even if another team has already applied to implement a certain RFP, we invite you to do the same if you're interested.
 
@@ -64,7 +64,7 @@ If you have a **good concept of the technical challenges** that your idea entail
 
 The scope of our Grants Programs consists of funding and feedback on delivered milestones. This means that we do not provide hands-on support as part of a grant, but if you face specific issues during development, we will do our best and try to direct you to the correct resources. If this sounds like something you would like however, you may also want to apply to Parity's [Substrate Builders Program](https://www.substrate.io/builders-program/), which provides hands-on technical, ecosystem and strategical long-term support and access to extensive resources. You can find general documentation and more information on Substrate on the [Substrate Developer Hub](https://substrate.dev/), and we encourage you to join the [community](https://substrate.dev/en/community) in order to get help with specific issues or to stay up to date with the most recent developments.
 
-For questions about the grants program itself, see our [FAQ](./src/faq.md#frequently-asked-questions).
+For questions about the grants program itself, see our [FAQ](./docs/faq.md#frequently-asked-questions).
 
 ### Team
 
@@ -113,7 +113,7 @@ The Operations Team takes care of legal documents, invoicing and remittances.
    4. Fill out the template with the details of your project. The more information you provide, the faster the review. To get an idea of what a strong application looks like, you can have a look at the following examples:  [1](https://github.com/w3f/Grants-Program/blob/master/applications/project_aurras_mvp_phase_1.md), [2](https://github.com/w3f/Grants-Program/blob/master/applications/project_bodhi.md), [3](https://github.com/w3f/Grants-Program/blob/master/applications/pontem.md), [4](https://github.com/w3f/Grants-Program/blob/master/applications/spartan_poc_consensus_module.md). Naturally, if you're only applying for a smaller grant that only consists of, say, UI work, you don't need to provide as much detail.
    5. Once you're done, create a pull request. The pull request should only contain _one new file_—the Markdown file you created from the template.
    6. You will see a comment template that contains a checklist. You can leave it as is and tick the checkboxes once the pull request has been created. Please read through these items and check all of them.
-   7. Sign off on the [terms and conditions](src/T&Cs.md) presented by the [CLA assistant](https://github.com/claassistantio) bot as a Contributor License Agreement. You might need to reload the pull request to see its comment.
+   7. Sign off on the [terms and conditions](docs/T&Cs.md) presented by the [CLA assistant](https://github.com/claassistantio) bot as a Contributor License Agreement. You might need to reload the pull request to see its comment.
 2. **Application Review**
    1. The [committee](#w3f-grants-committee) can (and usually does) issue comments and request changes on the pull request.
    2. Clarifications and amendments made in the comments _need to be included in the application_. You may address feedback by directly modifying your application and leaving a comment once you're done. Generally, if you don't reply within 2 weeks, the application will be closed due to inactivity, but you're always free to reopen it as long as it hasn't been rejected.
@@ -128,7 +128,7 @@ Additionally, we try to enforce the [code of conduct](CODE_OF_CONDUCT.md) and ba
 
 ## :mailbox_with_mail: Request for Proposals (RFP) Suggestions
 
-If you think that we should support the development of certain tools or projects (related to **Polkadot, Kusama or Substrate**) that aren't in the Polkadot/Kusama [tech stack](./src/polkadot_stack.md), feel free to submit an RFP suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem. We will review your proposal and, if we believe it’s useful, will create an RFP based on your idea and try to find teams to work on it.
+If you think that we should support the development of certain tools or projects (related to **Polkadot, Kusama or Substrate**) that aren't in the Polkadot/Kusama [tech stack](./docs/polkadot_stack.md), feel free to submit an RFP suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem. We will review your proposal and, if we believe it’s useful, will create an RFP based on your idea and try to find teams to work on it.
 
 **Instructions for submitting an RFP suggestion:**
 
@@ -139,7 +139,7 @@ If you think that we should support the development of certain tools or projects
 5. Once you're done, click on "Create new pull request". The pull request should only contain _one new file_—the Markdown file you created from the template.
 6. You will see the same template as for creating an application. Plase replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
 
-If you have an idea for a project but lack the technical background to create a detailed outline, you can open an [issue](https://github.com/w3f/Grants-Program/issues/new) instead or add it to the [tech stack](./src/polkadot_stack.md) as a potentially interesting project. However, your idea will have better chances of being implemented if you can provide a project outline such that it can be picked up straight away by a capable team.
+If you have an idea for a project but lack the technical background to create a detailed outline, you can open an [issue](https://github.com/w3f/Grants-Program/issues/new) instead or add it to the [tech stack](./docs/polkadot_stack.md) as a potentially interesting project. However, your idea will have better chances of being implemented if you can provide a project outline such that it can be picked up straight away by a capable team.
 
 ## :bulb: Help
 
