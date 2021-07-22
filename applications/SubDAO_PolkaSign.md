@@ -79,8 +79,6 @@ The project meets the need of signing contract with decentralization, immutabili
 * Qiang - CTO/Project Lead
 * Marvin Tong - Product Director
 * Dajun - System Architect/Substrate Developer
-* John Xie - Full-stack Developer
-* Tallone - Full-stack Developer
 
 ### Contact
 
