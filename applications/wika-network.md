@@ -272,10 +272,11 @@ Global success criteria:
 * ES front end running on https://esdb.test.wika.network
 * Neo4J front end running on https://graphdb.test.wika.network
 
+Note: check out https://doc.subquery.network/ for related code.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | GPLv3 |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a **gituhb repo readme** that explains how to spin up database instances and sync them with a blockchain node. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that packages the ETL service. |
@@ -304,7 +305,7 @@ Global success criteria:
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | GPLv3 |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code, a **gituhb repo readme** that explains how to spin up the API endpoint, and also auto-generated API documentation in s standard format. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that packages the API service. |
@@ -329,7 +330,7 @@ Global success criteria:
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | GPLv3 |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code, a **gituhb repo readme** that lists the available integrations and points to the guides. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
 | 0d. | Docker | Non Applicable to this project |
@@ -354,7 +355,7 @@ Global success criteria:
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | GPLv3 |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code, a **gituhb repo readme** that introduces the repo. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that packages a substrate node ready to run and join test network
@@ -385,7 +386,7 @@ are fully operational.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | GPLv3 |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will write and update documentation pages in wika.network website with pointers to the code repos and guides. |
 | 0c. | Testing Guide | Integration tests will be written to ensure overall robustness and we will describe how to run these tests. Also, some repos still don't have test so we'll start their test suites, and in general, as we test and discover bugs in the system, we will enrich test suites in each repo.|
 | 0d. | Docker | N/A
@@ -424,7 +425,22 @@ for a high level view of our 3-phases plan.
 Web3 Foundation Website 
 
 **Context of our request**
-- Introduce our project to Web3 / Polkadot / Substrate communities.
-- Gather feedback and learn.
-- Find resources for Milestone #4.
+
+Beyond the financial aspect of the grant, which will help motivate and reward contributors, 
+one of our key objectives is to introduce our project to Web3 / Polkadot / Substrate communities.
+
+Also, though  all team members have proven track records of expertise and success in their particular fields, 
+we are aware that we are still "beginners" when it comes to blockchain and Substrate. 
+As such, being able to present Wika to a panel of experts, gather feedback and learn, would be fantastic for our team.
+ 
+Finally, Nabil and Reda are definitely equiped to code the milestones #1, #2, #3 and #5;
+but for Milestone #4, we need to recruit a Substrate expert. 
+
+So if our Grant request were to be approved, 
+it would generate the right connections; and we would be set up for success to execute milestone #4.
+
+For these reasons, we are looking forward to starting a conversation with W3F, 
+and as we learning, we are very open to re-visiting this request's scope and form together. 
+
+   
 
