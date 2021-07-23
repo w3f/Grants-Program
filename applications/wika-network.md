@@ -206,7 +206,7 @@ now learning Rust and Substrate to join the amazing train of DApps!
 
 **Reda** Reda has +20 years experience in IT across 3 continents and dozens of technologies from perl to golang. 
 
-On 2010, he co-founded a travel technology company, with API integration as its core product; 
+In 2010, he co-founded a travel technology company, with API integration as its core product; 
 where he aquired skills in architecture, backend, front-end developement, ops, team and project management. 
 
 Hungry for discovering new grounds, on 2019, he joined a blockchain company focusing on multi-chain interoperabililty. 
@@ -323,8 +323,8 @@ Global success criteria:
 * **Costs:** 5,000 USD
 
 Global success criteria:
-* Easy to add the Wika Widget in a website using plain HTML and JS by following a Dev guide.
-* Easy to add the Wika Widget to a WordPress website using a plugin and following a user guide.
+* Easy to add the Wika Widget in a website using plain HTML/JS or ReactJS by following a Dev guide.
+* Easy to add the Wika Widget to a WordPress website using a ready-to-go plugin.
 
 
 | Number | Deliverable | Specification |
@@ -352,6 +352,16 @@ Global success criteria:
 * Blockchain code is validated by an experienced Rust/Substrate developer.
 * Blockchain has all the governance and technical foundations to be deployed as Main Net.
 
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | GPLv3 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code, a **gituhb repo readme** that introduces the repo. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile that packages a substrate node ready to run and join test network
+| 0e. | Article | We will publish an **article** that explains how a node can be deployed and the reward system when operating validator and verifier nodes. |
+| 1. | Code Review | Code will be reviewed by a substrate expert. |
+| 2. | Governance Foundations | Add necessary pallets and configurations to make the blockchain ready for decentralized governance. |
+| 3. | Upgrade TestNet blockchain | Upgrade the blockchain according to the code review recommendations. |
 
 
 
@@ -373,21 +383,48 @@ are fully operational.
 * The above suite is fully documented, tested, and ready to graduate to the Main Net.
 
 
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | GPLv3 |
+| 0b. | Documentation | We will write and update documentation pages in wika.network website with pointers to the code repos and guides. |
+| 0c. | Testing Guide | Integration tests will be written to ensure overall robustness and we will describe how to run these tests. Also, some repos still don't have test so we'll start their test suites, and in general, as we test and discover bugs in the system, we will enrich test suites in each repo.|
+| 0d. | Docker | N/A
+| 0e. | Article | We will publish an **article** at the end that describes all the work done so far in the project and celebrates this important milestone. |
+| 1. | Like | Test Suite OK  |
+| 2. | Recommend | Test Suite OK |
+| 3. | Wallet | Test Suite OK |
+| 4. | Account | Test Suite OK |
+| 5. | History | Test Suite OK |
+| 6. | Claim Page Ownership | Test Suite OK |
+| 7. | Owned Pages | Test Suite OK |
+| 8. | Network Selection | Test Suite OK |
+
+
 
 
 ## Future Plans
 
-Please include here
-* how you intend to use, enhance, promote and support your project in the short term, and
-* the team's long-term plans and intentions in relation to it.
+Once we achieve the above milestones, 
+Wika Network will be in a good position to start growing the community
+and harden the code base.
+
+We will also work next on a bridge to a DEX such as Polkaswap to create the means to ramp in and out the chain.
+
+The final goal of the Foundation phase is to reach 10,000 active Wika users.
+
+Please review our [Roadmap](https://www.wika.network/roadmap) 
+for a high level view of our 3-phases plan. 
+
 
 
 ## Additional Information :heavy_plus_sign:
 
-**How we heard about the Grants Program?** Web3 Foundation Website 
+**How we heard about the Grants Program?** 
+
+Web3 Foundation Website 
 
 **Context of our request**
 - Introduce our project to Web3 / Polkadot / Substrate communities.
 - Gather feedback and learn.
 - Find resources for Milestone #4.
-- 
+
