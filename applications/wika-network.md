@@ -84,16 +84,16 @@ we have all the necessary foundations and ingredients to succeed:
     ![Architecture](https://www.wika.network/img/docs/tech_architecture.png)
 
     - **Blockchain** 
-      - Repo [wika_node](https://github.com/randombishop/wika_node) 
+      - Repo: [wika_node](https://github.com/randombishop/wika_node) 
       - TestNet node: [wss://testnode3.wika.network:443](wss://testnode3.wika.network:443)
       - Telemetry: [telemetry.polkadot.io](https://telemetry.polkadot.io/#settings/Wika%20TestNet)
     
     - **Web App** 
-      - Repo [wika_app](https://github.com/randombishop/wika_app)
+      - Repo: [wika_app](https://github.com/randombishop/wika_app)
       - Live beta version:[app.wika.network](https://app.wika.network) 
     
     - **Browser Extension** 
-      - Repo [wika_browser_ext](https://github.com/randombishop/wika_browser_ext)
+      - Repo: [wika_browser_ext](https://github.com/randombishop/wika_browser_ext)
       - Documentation: [Test from source](https://www.wika.network/docs/contribute/test-browser-ext)
     
     - **Indexed Databases** 
