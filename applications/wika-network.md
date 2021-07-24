@@ -266,7 +266,7 @@ documented, and the project ready to graduate to its Main Net.
 ### Overview
 
 * **Total Estimated Duration:** 4 Months
-* **Full-Time Equivalent (FTE):**  1.0 FTE
+* **Full-Time Equivalent (FTE):**  1.25 FTE
 * **Total Costs:** 25,000 USD
 
 ### Milestone 1 — Indexed Databases
