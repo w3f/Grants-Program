@@ -90,7 +90,7 @@ we have all the necessary foundations and ingredients to succeed:
     
     - **Web App** 
       - Repo: [wika_app](https://github.com/randombishop/wika_app)
-      - Live beta version:[app.wika.network](https://app.wika.network) 
+      - Live beta version: [app.wika.network](https://app.wika.network) 
     
     - **Browser Extension** 
       - Repo: [wika_browser_ext](https://github.com/randombishop/wika_browser_ext)
@@ -112,7 +112,7 @@ we have all the necessary foundations and ingredients to succeed:
 * UI design:
     - The web app and the browser extension are already 
     available to test the UI, iterate and improve the design.
-    Follow the [Getting Started](https://www.wika.network/docs/guides/getting-started) guide to give it a try.
+    Follow the [Testing](https://www.wika.network/docs/contribute/test-browser-ext) guide to give it a try.
 
 * Data models and code of the core functionality:
     - [Likes pallet](https://github.com/randombishop/wika_node/blob/master/pallets/likes/src/lib.rs)
