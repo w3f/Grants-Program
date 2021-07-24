@@ -85,7 +85,7 @@ we have all the necessary foundations and ingredients to succeed:
 
     - **Blockchain** 
       - Repo: [wika_node](https://github.com/randombishop/wika_node) 
-      - TestNet node: [wss://testnode3.wika.network:443](wss://testnode3.wika.network:443)
+      - TestNet node: wss://testnode3.wika.network:443
       - Telemetry: [telemetry.polkadot.io](https://telemetry.polkadot.io/#settings/Wika%20TestNet)
     
     - **Web App** 
