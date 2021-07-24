@@ -172,8 +172,10 @@ then it should spread from this niche to a broader audience by educating and con
     - Webpage to Owner registry
     - Universal Like Button
 
-* Other projects similar to Wika in the Substrate / Polkadot / Kusama ecosystem: not yet.
-LikeCoin seems to be a similar initiative built with Cosmos SDK, 
+* Other projects similar to Wika in the Substrate / Polkadot / Kusama ecosystem: 
+    - Not found.
+
+* LikeCoin seems to be a similar initiative built with Cosmos SDK, 
 but we believe our design is simpler.
 
 
