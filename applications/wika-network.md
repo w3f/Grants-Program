@@ -212,7 +212,7 @@ by concrete business impact deliverables.
 Blockchain is his latest passion and he is 
 now learning Rust and Substrate to join the amazing train of DApps!    
 
-**Reda** Reda has +20 years experience in IT across 3 continents and dozens of technologies from perl to golang. 
+**Reda** has +20 years experience in IT across 3 continents and dozens of technologies from perl to golang. 
 
 In 2010, he co-founded a travel technology company, with API integration as its core product; 
 where he aquired skills in architecture, backend, front-end developement, ops, team and project management. 
