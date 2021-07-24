@@ -83,24 +83,30 @@ we have all the necessary foundations and ingredients to succeed:
 
     ![Architecture](https://www.wika.network/img/docs/tech_architecture.png)
 
-    - **Blockchain** Repo [wika_node](https://github.com/randombishop/wika_node) 
-    | TestNet: [wss://testnode3.wika.network:443](https://telemetry.polkadot.io/#settings/Wika%20TestNet)
-    | Documentation: N/A
+    - **Blockchain** 
+      - Repo [wika_node](https://github.com/randombishop/wika_node) 
+      - TestNet node: [wss://testnode3.wika.network:443](wss://testnode3.wika.network:443)
+      - Telemetry: [telemetry.polkadot.io](https://telemetry.polkadot.io/#settings/Wika%20TestNet)
     
-    - **Web App** Repo [wika_app](https://github.com/randombishop/wika_app)
-    | Live beta version:[app.wika.network](https://app.wika.network) 
-    | Documentaton: N/A
+    - **Web App** 
+      - Repo [wika_app](https://github.com/randombishop/wika_app)
+      - Live beta version:[app.wika.network](https://app.wika.network) 
     
-    - **Browser Extension** Repo [wika_browser_ext](https://github.com/randombishop/wika_browser_ext)
-    | Documentaton: [Test from source](https://www.wika.network/docs/contribute/test-browser-ext)
+    - **Browser Extension** 
+      - Repo [wika_browser_ext](https://github.com/randombishop/wika_browser_ext)
+      - Documentation: [Test from source](https://www.wika.network/docs/contribute/test-browser-ext)
     
-    - **Indexed Databases** Not started yet.
+    - **Indexed Databases** 
+      - Not started yet.
     
-    - **Offchain API** Not started yet.
+    - **Offchain API** 
+      - Not started yet.
     
-    - **Polkaswap Bridge** Not started yet.
+    - **Polkaswap Bridge** 
+      - Not started yet.
     
-    - **Integrations** Not started yet.  
+    - **Integrations** 
+      - Not started yet.  
     
         
 * UI design:
@@ -122,7 +128,7 @@ we have all the necessary foundations and ingredients to succeed:
     - Website and documentation: Docusaurus. 
     
 * Documentation:
-    - [Current state](https://www.wika.network/docs/intro)
+    - [Wika Website](https://www.wika.network/docs/intro)
  
 * PoC:
     - [Blockchain TestNet](https://telemetry.polkadot.io/#list/Wika%20TestNet) deployed.
