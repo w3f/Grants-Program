@@ -209,7 +209,7 @@ to Data Science in R, Machine Learning Engineering in Python, front-ends in Reac
 he has a full-stack expertise shaped over the years 
 by concrete business impact deliverables.
 
-Except when it comes to blockchain, but that's his latest passion and he is 
+Blockchain is his latest passion and he is 
 now learning Rust and Substrate to join the amazing train of DApps!    
 
 **Reda** Reda has +20 years experience in IT across 3 continents and dozens of technologies from perl to golang. 
