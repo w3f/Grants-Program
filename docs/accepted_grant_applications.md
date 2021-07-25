@@ -348,7 +348,7 @@
 | [Dora Factory](https://dorafactory.org/) | MolochDAO substrate pallets v1 and v2 | [GitHub](https://github.com/DoraFactory) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | BCANN |  Blockchain system for Assigned Names And Numbers | [GitHub](https://github.com/weitaolee) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [MyBank Labs](https://mybank.network/) | Platform Bank, Social Network Bank, MyDeX and Credit Scoring System | [GitHub](https://github.com/mybank-network/mybank-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [ChainBridge Network](https://github.com/ChainBridgeNetworkTeam) | Doter: A browser extension wallet for Polkadot | [GitHub](https://github.com/ChainBridgeNetworkTeam) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [ChainBridge Network](https://github.com/ChainBridgeNetworkTeam) | Doter: A browser extension wallet for Polkadot | [GitHub](https://github.com/ChainBridgeNetworkTeam) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [SubDAO Labs](https://www.subdao.network/) | SubDAO Chrome Extension | [GitHub](https://github.com/subdao-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Sukhavati Labs](https://sukhavati.io/) | Sukhavati PoC Module | [GitHub](https://github.com/Sukhavati-Labs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [HypeLabs Inc.](https://hypelabs.io) | UpLink - Decentralized and infrastructure-free approach to peer-to-peer connectivity | [GitHub](https://github.com/Hype-Labs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
