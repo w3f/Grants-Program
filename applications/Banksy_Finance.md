@@ -153,19 +153,27 @@ Team members have rich development experience, including algorithm, front-end de
 
 ### Milestone 1 -- Implementation of NFT pool-based lending
 
-* **Estimated Duration:** 1.5 month
+* **Estimated Duration:** 2 month
 * **FTE:** 6
 * **Costs:** DAI 8500 
 
 
-| Number | Deliverable                    | Specification                                                |
-| ------ | ------------------------------ | ------------------------------------------------------------ |
-| 0a.    | License                        | Apache License 2.0                                           |
-| 0b.    | Documentation                  | We will provide NFT Lending implementation principles, invocation instructions, and examples. |
-| 0c.    | Testing Guide                  | We will provide tests (mock and test files) for NFT Lending that describe in detail with testing NFT Lending functionality. |
-| 1.     | Implementation of NFT mortgage | We will construct the NFT mortgage pool and stable coin capital pool to realize the business logic of the NFT mortgage pool. |
-| 2.     | Implementation of liquidation  | We will implement the NFT liquidation mechanism and support users to liquidate the collateral of NFT with capital risks. |
-| 3.     | NFT Pool-based lending         | We will test the whole NFT pool-based lending business on the test chain. |
+| Number | Deliverable        | Specification                                                |
+| ------ | ------------------ | ------------------------------------------------------------ |
+| 0a.    | License            | Apache License 2.0                                           |
+| 0b.    | Documentation      | Document includes the business and technical framework of NFT pool-based Mortgage Lending,  as well as tutorials for Dapp users, including video tutorials. We will also provide NFT mortgage lending protocol and code calling instructions, and provide NFT pool-based mortgage lending infrastructure for other applications in the ecosystem. |
+| 0c.    | Testing Guide      | We will provide Banksy with a complete test suite and guide. The code will cover the unit tests of the main functions of NFT mortgage lending to ensure the robustness of business functions. |
+| 0d.    | Article/Tutorial   | We will write an article or tutorial that explains the work principle as part of the grant. |
+| 1a.    | Node Repo          | Complete the deploment of the basic public chain.            |
+| 2a.    | Pallet_lending     | We will complete the development of the NFT pool-based lending protocol and business, and run it on the test chain. |
+| 2b.    | Pallet_safetypool  | We will complete the design and development of the pallet_safetypool model, including auction module, backstop module and ecosystem reserve. |
+| 2c.    | Pallet_mortgage    | We will complete the design and development of Pallet_mortgage, including the real-time output module of NFT valuation and mortgage rate, the NFT mortgage contract module, and the user's cToken calculation module. |
+| 2d.    | Pallet_liquidation | We will complete the design and development of the Pallet_liquidation mechanism to support users to liquidate and benefit from NFTs with financial risks, including the NFT liquidation list module, liquidation protocol module, liquidation reward and penalty module. |
+| 2e.    | Pallet_dao         | We will complete the design and development of the Pallet_dao mechanism, including whitelist voting for the NFT series, banksy development voting, and dividend module. |
+| 3.     | UI/Desgin          | Design UI based on the pahse mockup.                         |
+| 4.     | User Interface     | Build the UI on top of the smart contract functionalities and base on the design. |
+| 5.     | Docker             | Well will provide a dockerfile to demonstrate the full functionality of the application. |
+
 
 ## Future Plans
 
