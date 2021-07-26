@@ -2,7 +2,7 @@
 
 * **Project Name:** Doter (A browser extension wallet for Polkadot)
 * **Team Name:** ChainBridge network
-* **Payment Address:** 15Sw2Sk7srnsJw3XtwN5YXPauYyajAhLBr
+* **USDT Payment Payment Address:** 0x9bb9af8f2fd4487c88f1352fdd32a3ec2b6d28b6(ERC20)
 
 
 ## Project Overview
