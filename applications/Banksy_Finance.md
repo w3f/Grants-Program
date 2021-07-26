@@ -51,7 +51,7 @@ Banksy Finance is a decentralized AI-driven NFT Pool-based lending hub, dedicate
 
 * **NFT Pool-based mortgage lending**
 
-![arch](https://user-images.githubusercontent.com/23376179/125627673-b631a15b-ab82-4c49-92ac-a6e86e915969.png)
+![arch](https://user-images.githubusercontent.com/23376179/126989384-e4ef07f5-4dd0-451e-8d2b-aff9377bfa31.png)
 
  To ensure the healthy and sustainable NFT mortgage lending business development on the platform, Banksy has designed the following mechanisms: 
 
@@ -147,7 +147,7 @@ Team members have rich development experience, including algorithm, front-end de
 
 ### Overview
 
-* **Total Estimated Duration:** 1.5 months
+* **Total Estimated Duration:** 2 months
 * **Full-time equivalent (FTE):** 6
 * **Total Costs:**  DAI 8500
 
