@@ -4,8 +4,6 @@
   <img src="src/Grants_Program.png" style="width:1300px";>
 </p>
 
----
-
 - [:wave: Introduction](#wave-introduction)
   - [Guidelines](#guidelines)
   - [Project ideas](#project-ideas)
