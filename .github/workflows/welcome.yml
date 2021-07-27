@@ -26,10 +26,12 @@ jobs:
         uses: thollander/actions-comment-pull-request@master
         with:
           message: > 
-            Congratulations! As part of the Open Grants Program, we want to help winning teams acknowledge their grants publicly. To that end, we’ve created a [badge for projects](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md)
-            that successfully delivered their first milestone. Please observe the 
-            [foundation’s guidelines](https://github.com/w3f/General-Grants-Program/blob/master/grants/announcement-guidelines.md) when making any announcements; in particular, <b>don’t announce the grant publicly before you've completed at least the first
-            milestone of the project.</b> <br/><br/> 
-            At that point, we will be happy to collaborate on an announcement about the work you’re doing. 
-            Please get in touch with us at grantspr@web3.foundation in case you're interested (at least two weeks notice is preferred).
+            Congratulations and welcome to the Web3 Foundation's Grants Program! Please refer to our [Milestone Delivery repository](https://github.com/w3f/Grant-Milestone-Delivery/) 
+            for instructions on how to submit milestones and invoices, our [FAQ doc](https://github.com/w3f/Grants-Program/blob/master/docs/faq.md) for frequently asked questions and 
+            the [Help section of our README](https://github.com/w3f/Grants-Program/blob/master/README.md#bulb-help) for more ways to find answers to your questions. <br/><br/> 
+            As part of the Grants Program, we want to help winning teams acknowledge their grants publicly. To that end, we have published 
+            our announcement guidelines [here](https://github.com/w3f/Grants-Program/blob/master/docs/announcement-guidelines.md). Most importantly, please <b>don’t announce 
+            the grant publicly before you've successfully submitted (meaning it's been submitted **and** approved) at least the first
+            milestone of the project.</b> At that point, we will be happy to collaborate on an announcement about the work you’re doing. Please get in touch with us at grantspr@web3.foundation 
+            in case you're interested (at least two weeks notice is preferred).
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
