@@ -1,7 +1,7 @@
 # Open Grants Program
 
 <p align="center">
-  <img src="./src/Open_Grants_Program.png" style="width:1300px";>
+  <img src="./src/Grants_Program.png" style="width:1300px";>
 </p>
 
 **:loudspeaker: 重要提示:** Web3 基金会 Open Grants 计划重点关注技术拨款，**初期拨款最高为3万美元**，**后续拨款最高为10万美元**，这些拨款会在 GitHub 上**公开透明**地供查阅并以 **比特币 或 DAI** 支付。
