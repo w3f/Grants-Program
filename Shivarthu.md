@@ -19,20 +19,8 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-Shivarthu: The blockchain-based decentralized governance system   
-Democracy is about fair and equal treatment of everyone in a country. But it
-becomes unrealistic to achieve when political parties have their conflict of interest,
-and leaders don’t have the expertise to make evidence-based policies and neither
-have the skill and manpower for solving problems that surround our society and
-ecosystem. The new fair democracy provides an elegant way of governance that
-separates the representative responsibility according to their specialization and can
-grow into any complexity. The governance is divided into various departments,
-and each department is supervised by representatives with expertise in the field.
-Voters are rational and need to have enough knowledge about the departments
-and the department problems, in order to vote for the selecting representatives of a
-department. The selection process of representatives is “difficult in and easy out”,
-which allows only utilitarian actors to hold the responsibility, weeding out frivolous
-ones.  
+Shivarthu: The blockchain-based decentralized governance system. Democracy is about fair and equal treatment of everyone in a country. But it becomes unrealistic to achieve when political parties have their conflict of interest, and leaders don’t have the expertise to make evidence-based policies and neither have the skill and manpower for solving problems that surround our society and ecosystem. The new fair democracy provides an elegant way of governance that separates the representative responsibility according to their specialization and can grow into any complexity. The governance is divided into various departments, and each department is supervised by representatives with expertise in the field. Voters are rational and need to have enough knowledge about the departments and the department problems, in order to vote for the selecting representatives of a department. The selection process of representatives is “difficult in and easy out”,
+which allows only utilitarian actors to hold the responsibility, weeding out frivolous ones.  
 
 https://shivarthu.reaudito.com/paper/Shivarthu_whitepaper.pdf 
 
@@ -48,12 +36,12 @@ Project Github link: https://github.com/amiyatulu/shivarthu
 
 #### Departments:
 The governance is divided into many departments like education, infrastructure, health, community service for every locality.
-#### KYC for representatives :
-KYC is done for voters and representatives by checking their experience. People applying for being a voter or representatives for a particular department should submit their experiences for the department.
-Their experience is evaluated by schelling game. 
-Schelling Game:
-In this project, the Schelling game is used for KYC and review of projects. We use a modification of Schelling game named score Schelling game for distribution of projects.
-Juror applies for making a decision like whether the application of KYC can be accepted or review the quality of projects is acceptable. The probability of being drawn as a juror is proportional to the amount of tokens a juror stakes. The higher the amount of tokens he stakes, the higher the probability that he will be drawn as a juror. Also, jurors are drawn randomly. This protects the system from sybil attacks. 
+#### Expertise evaluation of representatives :
+Voters and especially representatives need to have some experience or expertise in the department. Experience is required because education about the department leads to better decision making. 
+Their experience is evaluated by schelling game.    
+#### Schelling Game:
+In this project, the Schelling game is used for experise evaluation and review of projects. We use a modification of Schelling game named score Schelling game for fund distribution of projects.
+Juror applies for making a decision like whether the required experience can be accepted or review quality of projects is acceptable. The probability of being drawn as a juror is proportional to the amount of tokens a juror stakes. The higher the amount of tokens he stakes, the higher the probability that he will be drawn as a juror. Also, jurors are drawn randomly. This protects the system from sybil attacks. 
 We will use the substrate randomness trait for generating a random number.
 https://substrate.dev/recipes/randomness.html
 Then jurors will vote for their decision using the commit and reveal scheme. In the commit phase, they submit the hash of the vote string. Then, in the reveal phase, they submit the hash and the vote string. If the vote string matches with the hash, then the vote is accepted. 
@@ -89,7 +77,7 @@ Your stake = small y
 
 You can contribute to the Funding pool = X/Y * y
 
-Total burned: 50000
+Total transaction fees collected: 50000
 Total stake = 10000
 Your stake = 100
 
@@ -180,35 +168,53 @@ Soumya Ranjan Behera is also a full stack developer with experience in reactjs, 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0. | License | MIT |
-| 1. | Substrate module: KYC | Schelling game for KYC approval
-| 2. | Substrate Module: Approval voting| Selection of representatives through multi winner approval
-|3.| Reactjs UI for KYC| Uploading evidence of experience for the department using IPFS, UI for commit and reveal voting for schelling game and interaction of UI with substrate
-|4.| Reactjs Approval Voting UI| Userfriendly UI for voting the representatives where their profile is shown
+| 0a. | License |  MIT  |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user about the project |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains our project (what was done/achieved as part of the grant.) |
+| 1. | Substrate module: Experience Evaluation | Schelling game for experience evaluation |
+| 2. | Substrate Module: Approval voting| Selection of representatives through multi winner approval |
+|3.| Reactjs UI for Experience Evaluation| Uploading evidence of experience for the department using IPFS, UI for commit and reveal voting for schelling game and interaction of UI with substrate |
+|4.| Reactjs Approval Voting UI| Userfriendly UI for voting the representatives where their profile is shown |
 
 
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Additional features
 
 * **Estimated Duration:** 4 month
 * **FTE:**  2
 * **Costs:** 10,000 USD
 
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License |  MIT  |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user about the project |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains our project (what was done/achieved as part of the grant.) |
 | 1. | Substrate module: Peer review system | Reviewing the projects using schelling game | 
 | 2. | Substrate module: Fund allocation | Allocating the fund using score schelling game | 
-| 3.| Reactjs UI for peer review system and Fund allocation | User friendly UI for reviewing the projects, schelling game voting interface, and fund allocation
-| 4. | Search Engine| Offchain search engine for project discovery and finding representatives
+| 3.| Reactjs UI for peer review system and Fund allocation | User friendly UI for reviewing the projects, schelling game voting interface, and fund allocation |
+| 4. | Search Engine| Offchain search engine for project discovery and finding representatives |
 
 
-### Milestone 3 Example — Additional features
+### Milestone 3 — Additional features
 
 * **Estimated Duration:** 4 month
 * **FTE:**  2
 * **Costs:** 10,000 USD
 
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License |  MIT  |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user about the project |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | APK and Docker file | We will provide the apk and docker file for other functionality |
+| 0e. | Article | We will publish an **article**/workshop that explains our project (what was done/achieved as part of the grant. |
 | 1. | Android App | Building android app using react native |
-| 2. | Marketing and tutorial videos| Building video tutorials for interacting with the UI
+| 2. | Marketing and tutorial videos| Building video tutorials for interacting with the UI |
 
 ## Future Plans
 
