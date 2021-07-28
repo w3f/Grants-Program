@@ -1,10 +1,8 @@
-# Web3 Foundation Grants Program <!-- omit in toc -->
+# Web3 Foundation Grants Program<!-- omit in toc -->
 
 <p align="center">
   <img src="src/Grants_Program.png" style="width:1300px";>
 </p>
-
----
 
 - [:wave: Introduction](#wave-introduction)
   - [Guidelines](#guidelines)
@@ -68,7 +66,7 @@ For questions about the grants program itself, see our [FAQ](docs/faq.md#frequen
 
 ### Team
 
-#### W3F Grants Committee <!-- omit in toc -->
+#### W3F Grants Committee<!-- omit in toc -->
 
 The committee consists of individuals who know the funding priorities of the Polkadot ecosystem, and is responsible for evaluating grant applications and providing feedback on these.
 
@@ -85,7 +83,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
 - [Gavin Wood](https://github.com/gavofyork)
 
-#### W3F Grants Evaluators <!-- omit in toc -->
+#### W3F Grants Evaluators<!-- omit in toc -->
 
 Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
@@ -95,7 +93,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 - [Sebastian Müller](https://github.com/semuelle)
 - [Aleixo Sánchez](https://github.com/alxs)
 
-#### W3F Operations Team <!-- omit in toc -->
+#### W3F Operations Team<!-- omit in toc -->
 
 The Operations Team takes care of legal documents, invoicing and remittances.
 
@@ -185,6 +183,6 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
 
-## :information_source: License <!-- omit in toc -->
+## :information_source: License<!-- omit in toc -->
 
 [Apache License 2.0](LICENSE) © Web3 Foundation
