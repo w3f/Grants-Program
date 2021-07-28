@@ -102,7 +102,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 
 | Components | Existing projects | Potentially interesting projects
 |-|-|-
-| DeFi | [Vera](https://github.com/veradefi/defi), [Nsure Insurance](https://github.com/nsure-tech/dot-contract), [Everlasting Cash](https://github.com/CycanTech/ELC), [Coinversation](https://github.com/Coinversation/coinpro), [zenlink-dex-contract](https://github.com/zenlinkpro/zenlink-dex-contract) | 
+| DeFi | [Vera](https://github.com/veradefi/defi), [Nsure Insurance](https://github.com/nsure-tech/dot-contract), [Everlasting Cash](https://github.com/CycanTech/ELC), [Coinversation](https://github.com/Coinversation/coinpro), [zenlink-dex-contract](https://github.com/zenlinkpro/zenlink-dex-contract) | Seigniorage-style stable coins
 | Gaming | [NewOmega](https://github.com/WiktorStarczewski/newomega.polkadot/blob/master/newomega_delegator/newomega/newomega.rs) | |
 
 
