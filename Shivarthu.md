@@ -39,6 +39,8 @@ The governance is divided into many departments like education, infrastructure, 
 #### Expertise evaluation of representatives :
 Voters and especially representatives need to have some experience or expertise in the department. Experience is required because education about the department leads to better decision making. 
 Their experience is evaluated by schelling game.    
+<img src="https://raw.githubusercontent.com/amiyatulu/shivarthu_mockups/main/Portfolio.svg" alt="portfolio" height="600"/>
+
 #### Schelling Game:
 In this project, the Schelling game is used for experise evaluation and review of projects. We use a modification of Schelling game named score Schelling game for fund distribution of projects.
 Juror applies for making a decision like whether the required experience can be accepted or review quality of projects is acceptable. The probability of being drawn as a juror is proportional to the amount of tokens a juror stakes. The higher the amount of tokens he stakes, the higher the probability that he will be drawn as a juror. Also, jurors are drawn randomly. This protects the system from sybil attacks. 
@@ -49,20 +51,24 @@ If a juror's vote is coherent (more than 51% of other jurors agree) then they re
 
 #### Voting for selection of representatives:
 The election is multi-winner approval.  We will use seq-phragmen of the substrate to select the representatives. Here, we will keep vote weight as reputation score (instead of stake), the amount of score they obtained through the participation of network. 
-https://substrate.dev/rustdocs/v3.0.0/sp_npos_elections/fn.seq_phragmen.html
-
+https://substrate.dev/rustdocs/v3.0.0/sp_npos_elections/fn.seq_phragmen.html   
+Approval Voting:   
+<img src="https://raw.githubusercontent.com/amiyatulu/shivarthu_mockups/main/Approval%20Voting.svg" alt="Approval Voting" height="600"/>   
+Winners:   
+<img src="https://raw.githubusercontent.com/amiyatulu/shivarthu_mockups/main/Winners.svg" alt="Winner" height="600"/>
 
 #### Project application and acceptance:
 The representatives are in charge of accepting the incoming projects for funding. 
 People will submit their problems, for example, waterlogging in the locality.
 Then experts all around the globe will submit the solution. The solution will be peer-reviewed to check its pros, cons, and suggest improvements that can be made. The review must meet the scientific guidelines. The solution can undergo revision through peer review feedback.
-The solution provider and peer reviewer have to stake some money to receive incentives for their work. The solution and peer review will again be approved and disapproved through the shelling game after checking whether the content meets the quality as recommended in scientific guidelines. The solutions provider and reviewer will get the incentives if it gets approved, otherwise, some money will be cut from the stake. It creates pressure on the reviewer to maintain quality without noise.
-
-![Problem Solution](https://gateway.ipfs.io/ipfs/QmUTMU4ndH6TpjYZkuES78wDNbMKLr1d2eSjE6SMh4nmwJ/Problem_Solution.svg)
+The solution provider and peer reviewer have to stake some money to receive incentives for their work. The solution and peer review will again be approved and disapproved through the shelling game after checking whether the content meets the quality as recommended in scientific guidelines. The solutions provider and reviewer will get the incentives if it gets approved, otherwise, some money will be cut from the stake. It creates pressure on the reviewer to maintain quality without noise.   
+<img src="https://gateway.ipfs.io/ipfs/QmUTMU4ndH6TpjYZkuES78wDNbMKLr1d2eSjE6SMh4nmwJ/Problem_Solution.svg" alt="Problem Solution" height="600"/>   
 
 The representatives of the department will select the most optimal solution.
-After that persons wanting to take the lead to implement the solution will apply. Again representatives will select the best project leader from the application.
-![Leadership](https://gateway.ipfs.io/ipfs/QmUTMU4ndH6TpjYZkuES78wDNbMKLr1d2eSjE6SMh4nmwJ/Leadership.svg)
+After that persons wanting to take the lead to implement the solution will apply. Again representatives will select the best project leader from the application.   
+  
+<img src="https://gateway.ipfs.io/ipfs/QmUTMU4ndH6TpjYZkuES78wDNbMKLr1d2eSjE6SMh4nmwJ/Leadership.svg" alt="Leadership" height="600"/>      
+
 
 
 ### Money for projects:
@@ -96,6 +102,9 @@ e.g. If the total funding pool has $50000, you can’t assign a value larger tha
 The range of -10 to +10 has a problem because the mean works best without extreme values. So, if someone gives -10, and others give 1, the mean result can get screwed due to the -10 outlier. So the trick is to remove outliers by computing the standard deviation. Remove all values more than one standard deviation away from the mean. Then, we calculate the new mean of the left values (it consists of 68.27% data of the set).
 Code to calculate new mean:
 https://gateway.ipfs.io/ipfs/QmdgL7ytRPSE8vyp5KBffaAjmhGRLusiPcEbt9VWFkgMjf
+
+<img src="https://raw.githubusercontent.com/amiyatulu/shivarthu_mockups/main/Project%20score%20schelling%20game.svg" alt="Score Schelling Game" height="600"/>  
+
 
 3) Then, we will do quality score voting Schelling game that checks the project meets the quality guidelines. The score range is 0-5
 4) The amount of funding will be directly proportional to (Predicted Price) * (Quality Score/5*2)
