@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-The previous application [SubDAO Network Application - https://github.com/w3f/Grant-Milestone-Delivery/pull/114]
+The previous application [SubDAO Network Application - https://github.com/w3f/Grants-Program/pull/90]
 
 ### Overview
 
@@ -158,7 +158,7 @@ In this application, we planned to provide the first version of PolkaSign. The m
 | 0c. | Testing Guide | We will provide a testing guide on how to test it. |
 | 0d. | Article | We will publish an article describing our ideas. |
 | 1a. | PolkaSign Client | PolkaSign Client will be implemented as web app. |
-| 1b. | PolkaSign Smart Contract | PolkaSign Smart Contract will be implemented with ink!. |
+| 1b. | PolkaSign Smart Contract | PolkaSign Smart Contract will be implemented with ink!. The Unit tests of contracts will be included. |
 | 2. | Build instruction | We will provide a guide of building PolkaSign from source code. |
 
 ## Future Plans
