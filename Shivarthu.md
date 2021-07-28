@@ -209,21 +209,7 @@ Soumya Ranjan Behera is also a full stack developer with experience in reactjs, 
 | 4. | Search Engine| Offchain search engine for project discovery and finding representatives |
 
 
-### Milestone 3 — Additional features
 
-* **Estimated Duration:** 4 month
-* **FTE:**  2
-* **Costs:** 10,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License |  MIT  |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user about the project |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | APK and Docker file | We will provide the apk and docker file for other functionality |
-| 0e. | Article | We will publish an **article**/workshop that explains our project (what was done/achieved as part of the grant. |
-| 1. | Android App | Building android app using react native |
-| 2. | Marketing and tutorial videos| Building video tutorials for interacting with the UI |
 
 ## Future Plans
 
@@ -233,7 +219,8 @@ Short-term:
  Write the source code
  
 Long-term:
-    Build android app for the project
+    Onboard people into the app, and improve it taking feedback from the community.
+    Enhance the app, provide upgrades when required.  
 
 
 ## Additional Information :heavy_plus_sign:
