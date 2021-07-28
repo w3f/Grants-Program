@@ -135,6 +135,12 @@ Total Costs
 
 - 30,000 USD
 
+Tech Stack
+
+- We will be using rust as the primary language Rust
+- For the database we will be using PostgreSQL
+- The database will be exposed via a GraphQL node
+
 ### Milestone 1 - On Chain Data Sources
 
 Estimated Duration
@@ -156,10 +162,10 @@ Costs
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Press Release | We will publish a press release that explains the use and benefits of having an NFT analytics suite to provide NFT artists and content creators a way to better tell what their customers want without getting lost in technical documentation or spending time manually collecting data. Additionally, this release will expose Health Hero's work with Parity and how we are enhancing their ecosystem. |
-| 1. | Base | This will include creating the various structs for the needed data structures and ERC standards. |
+| 1. | Base Data Adapter / Data Adapter Template| This will include aggregating the various structs that are going to be used across the various data adapters(e.g. ink contract based NFT transactions, commodities frame pallet based NFTs, EVM contract based NFT transaction, etc.), and creating the abstracted structs with unified traits to allow them to be easily plugged into the routers. This could also be viewed as a data adapter template.  |
 | 2. | Base Routers | This will include the basic functionality that will handle the parsing of the predefined structs supplied by the various data adapters. |
-| 3. | Substrate Based Chain Indexer Adapter | Implementation of a Substrate chain indexer within a data adapter that allows it to load data into the base router. (A previously Web-3 funded project has an basic implementation of this in Substrate) |
-| 4. | Ethereum Based Chain Indexer Adapter | Implementation of an Ethereum chain indexer within a data adapter that allows it to load data into the base router. |
+| 3. | Substrate Based Chain Indexer Adapter | This milestone will include building out a data adapter specific to Substrate Archive as well as enhancing support for various common NFT specific events  |
+| 4. | EVM Compatibility Layer Adapter | Implementation of a data adapter for the EVM compatibility layer to allow us to process data from EVM based para-chains. |
 ---
 
 ### Milestone 2 - Off Chain Data Sources
@@ -178,11 +184,16 @@ Cost
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Enjin Jumpnet / Marketplace Adapter | Implementation of the Enjin specific indexer as well as the data adapter for the Enjin marketplace | 
-| 2. | OpenSea Marketplace Adapter | Implementation of the data adapter for the OpenSea marketplace |
-| 3. | Front-End | Implementation of the front-end of the application |
+| 0a. | License | Apache License 2.0 | 
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run a local instance and / or fetch metrics using the application. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Enjin Jumpnet / Marketplace Adapter | Implementation of the Enjin specific indexer as well as the data adapter for the Enjin marketplace to track metrics specific to Enjin (e.g. transfer settings, supply models, transfer settings, etc.) as well as the standard marketplace adapter metrics (e.g. bid activity, frequency of listings & marketplace supply, etc.) | 
+| 2. | OpenSea Marketplace Adapter | Implementation of the data adapter for the OpenSea marketplace (e.g. transfer settings, supply models, transfer settings, etc.) as well as the standard marketplace adapter metrics (e.g. bid activity, frequency of listings & marketplace supply, etc.) |
+| 3. | Efinity Adapter | Implementation of the data adapter for Enjin Efinity. This will build upon the previous Enjin based work, but will incorporate the substrate based functionality & new token standard |
+| 4. | Front-End | Base implementation of the front-end of the application |
 | 4. | Efinity Adapter | Implementation of the data adapter for Enjin Efinity |
-| 5. | Analytics | With all of the metrics in hand, we'll start computing the metrics to formalize the insights that we'll offer on our platform. |
+| 5. | Analytics | This milestone will include API endpoints & the front-end representation of the data to allows users to view key metrics (e.g. price trends, number of transfers, unique wallets, returning wallets) over edfined time periods. |
 | 6. | KPI Reports | Logic to allow users to receive KPI reports detailing their progress in emails |
 
 ## Future Plans
