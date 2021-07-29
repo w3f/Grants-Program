@@ -1,4 +1,4 @@
-#### Web3 Foundation Grants Programs'
+#### Web3 Foundation Grants Program
 
 # Frequently Asked Questions<!-- omit in toc -->
 
