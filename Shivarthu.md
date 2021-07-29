@@ -167,7 +167,7 @@ Soumya Ranjan Behera is also a full stack developer with experience in reactjs, 
 
 * **Total Estimated Duration:** 8 Months
 * **Full-Time Equivalent (FTE):**  2 FTE
-* **Total Costs:** 30,000 DAI
+* **Total Costs:** 20,000 DAI
 
 ### Milestone 1 Example — Implement Substrate Modules
 
