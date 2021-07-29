@@ -7,10 +7,10 @@ jobs:
   update_sheet:
     runs-on: ubuntu-latest
     steps:
-      - name: 'get all added files in the PR'
+      - name: 'get names of all added files in the PR'
         if: ${{ github.event.pull_request.merged == true && !env.ACT }}
         id: 'files'
-        uses: mmagician/get-changed-files@v2
+        uses: Ana06/get-changed-files@v1.2
 
       # - name: 'local test: get all added files in the PR'
       #   if: ${{ env.ACT }}
@@ -43,14 +43,14 @@ jobs:
       # - name: 'local testing parse files'
       #   if: ${{ env.ACT }}
       #   id: grant_parser
-      #   uses: mmagician/read-file-action@v1
+      #   uses: Ana06/get-changed-files@v1.2
       #   with:
       #     path: "${{ steps.filter.outputs.added }}"
 
       - name: 'parse files'
         if: ${{ github.event.pull_request.merged == true && !env.ACT }}
         id: grant_parser
-        uses: mmagician/read-file-action@v1
+        uses: w3f/parse-grant-application-action@v1
         with:
           path: "${{ github.workspace }}/${{ steps.filter.outputs.added }}"
 
