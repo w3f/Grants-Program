@@ -1,7 +1,7 @@
 Grants Terms and Conditions
 ===========================
 
-Updated December 2020
+Updated July 2021
 
 * * * * *
 
