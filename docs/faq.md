@@ -18,6 +18,12 @@
 </details>
 
 <details>
+  <summary><b>What activities/positions do you fund?</b></summary>
+
+  The Web3 Foundation's Grants Program aims to fund software development and research activities that are beneficial for the ecosystem as a whole. As such, we don't usually fund tangential costs such as business-oriented activities (marketing, business planning), events or outreach, and—for non-infrastructure projects—deployment and hosting costs, maintenance or audits. We also expect you to have a good understanding of the technologies you are planning to use, meaning that we don't fund time spent learning how to use Substrate or how to write ink! smart contracts.
+</details>
+
+<details>
   <summary><b>Can anyone apply?</b></summary>
 
   Projects for which a token sale has been or is being conducted are not eligible for a Web3 Foundation grant. Other than that, there are no restrictions.
