@@ -1,7 +1,7 @@
 Grants Terms and Conditions
 ===========================
 
-Updated December 2020
+Updated July 2021
 
 * * * * *
 
@@ -283,3 +283,7 @@ To the extent that You will gain access to and collect and process personally id
 ### Limitation of liability
 
 In no event and under no legal theory shall Web. 3.0 be liable to You for damages, including any direct, indirect, special, general, incidental or consequential damages of any character arising as a result of this License or out of the use or inability to use the  network (including, but not limited to, loss of data or data being rendered inaccurate or losses sustained by You or third parties or a failure of the network to operate with any other programs, loss of goodwill, work stoppage, business interruption, computer failure or malfunction or any and all other commercial damages or losses), even if a contributor has been advised of the possibility of such damages. Web 3.0 does not control, take responsibility for, or assume liability for the data in any way processed and stored by You or any third party using the  network and for any damage or loss incurred thereto. You shall solely be liable for the appropriateness, lawfulness, and accurateness of the data in any way processed by You using the network (and or if using such data outside of the network i.e. "off-chain".
+
+### Indemnification
+
+The Grantee shall indemnify, defend, and hold the Foundation and its officers, agents, employees, and affiliates harmless from and against all claims, causes of action, damages, fines, third-party claims, penalties, losses, expenses, costs (including reasonable attorney’s fees), and liabilities the Foundation incurs which relate to or arise out of any breach of this Agreement by Grantee or of any express or implied representation or warranty by Grantee, or any negligent or willful acts or omissions of Grantee or its Personnel.
