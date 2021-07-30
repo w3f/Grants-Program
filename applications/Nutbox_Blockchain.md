@@ -10,9 +10,9 @@
 
 Nutbox Chain is a decentralized public content platform and Dapp platform built with Substrate to serve the community. On Nutbox Chain, other projects or communities in the polkadot ecosystem can build their own social content platforms. Unlike Steem, a platform that only implements decentralized storage of content, Nutbox Chain will support the community to use its own community tokens to incentivize content creation. In the future, the Nutbox Chain will also support ink contract, and developers can build content-based DApps on the Nutbox Chain.
 
-Nutbox Chain is a decentralized public content platform and Dapp platform built with Substrate to serve the community. On Nutbox Chain, other projects or communities in the polkadot ecosystem can build their own social content platforms. Unlike Steem, a platform that only implements decentralized storage of content, Nutbox Chain will support the community to use its own community tokens to incentivize content creation. In the future, the Nutbox Chain will also support ink contract, and developers can build content-based DApps on the Nutbox Chain.
+Nutbox Chain is built entirely on Substrate, we will use a series of convenient and practical pallets provided by FRAME to build the runtime of Nutbox Chain. Before becoming a parachain, Nutbox Chain will run as Solo mode. After becoming a parachain, Nutbox Chain can exchange assets and transmit messages with other Polkadot/Kusama parachains through the XCMP protocol.
 
-Nutbox Chain is a decentralized public content platform and Dapp platform built with Substrate to serve the community. On Nutbox Chain, other projects or communities in the polkadot ecosystem can build their own social content platforms. Unlike Steem, a platform that only implements decentralized storage of content, Nutbox Chain will support the community to use its own community tokens to incentivize content creation. In the future, the Nutbox Chain will also support ink contract, and developers can build content-based DApps on the Nutbox Chain.
+The Nutbox team has been committed to serving the web3.0 community(i.e. DAO), and we firmly believe that the future DAO (including DeFi, DApp, Governance etc.) will be based on content. Steem, the earliest decentralized content platform, realized the decentralized storage of user content (articles & tweets) and a user content incentive system based on the PoB mechanism (Proof of Brain). However, the Steem network is not a community-centric content platform, nor does it support smart contract, which greatly reduces its network activity and scalability.
 
 Therefore, we need such a Public Content system, which will be designed with the community as the center, so that the community can create its own incentive public social media and activate the enthusiasm of users for creation. 
 
@@ -22,7 +22,7 @@ In addition, the community can also have its own set of governance system. Such 
 
  **Nutbox Chain Architecture**
 
-See [Nutbox Architecture Layout](https://www.processon.com/view/link/60e27963f346fb04d2d991db)
+See [Nutbox Architecture Layout](https://www.processon.com/view/link/61036e52637689719d312269)
 
 Nutbox Chain Runtime mainly includes three main parts: PoB (Proof of Brain), Contracts and StakingFactory.
 
@@ -45,10 +45,41 @@ Users have their own personal homepage
 - Users can comment and like other users’ posts, so that they can be rewarded as part of the posts' rewards
 - Developers can develop automatic vote robots based on Nutbox's RPC interfaces
 
+According to the layout we can see it contains two pallets: content pallet and PoB pallet. When user publish their article on Nutbox, we first save the 
+images/videos to CDN or IPFS(Optional, if choose IFPS, user need to pay more fee), with the returned URL, we generate the content metadata, which may contains 
+following fields:
+
+```sh
+{
+    "author": "tolak",
+    "account": "5En54NcpvxWur5BVk59Lw9ynwHnMA8Dr5zLeQfMtgs7HGAvs",
+    "id": "989272",
+    "hash": "hash of content",
+    "title": "Example Title",
+    "created": "2021-07-26T10:18:48",
+    "tag": ["tag1", "tag2", "tag3"],
+    "cdn": ["https://cdn-url-1", "https://cdn-url-2"],
+    "cid": "bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi",
+    "text": "user article raw text",
+    ...
+}
+```
+
+The metadata contains the cdn or IPFS CID url and the content hash, we can verify the content with a storage proof in **offchain worker**. This is necessary 
+when user gonna to convert the content to a NFT and transfer the NFT to others.
+
+After the metadata push to chain,  we created its vote and comments runtime storage at the same time. On Nutbox Chain, user who hold our native token NUT can 
+transfer it to NP, NP means NUT Power, which can be used to vote and comment a content, the more user contribute NP to the content, the more rewards they can 
+get from the rewards pool of the content. The PoB pallet handle all the logic about how many rewards every ready-to-settled-cotent can get. On Nutbox Chain 
+NUT would be mined every block, some of them are reward to validator, some of them are reward to content author and content participants, different content may 
+got differnt amount of NP contribution, it would be used to computing the reward that the content can get. As the layout shows, reward would be handled by a handler in content pallets, in this handler, we save every users rewards and they can claim the rewards later.
+
 **Smart contract module**
 
 - Developers can develop DApps based on content with Ink contracts
 - Nutbox provides an interface to the contract module to access content information, such as votex and comments of a post
+
+Substrate now can support send dispatch call to runtime from the contract, see this [PR](https://github.com/paritytech/substrate/pull/9276), so the **Content Dispatcher** here is used to send dispatch to read and write content pallet storage. The content info we get would be used by all the contracts as content metadata, that means developer can build content based DApp on Nutbox Chain, e.g.  build a robot contract that when user vote to a specific content, then distribute community token to the user as extra rewards. **Community Engine** would contains more modules that communities can use directly.
 
 **Content-based DeFi module**
 
@@ -124,9 +155,9 @@ Total Costs: 24,000 USD
 | 0b.    | Documentation    | 1) Publish documents on social media such as Medium/Twitter/Wechat to explain what is Nutbox and what we gonna do.<br>2) Provide documents and tutorial make people know how to run Nutbox Chain node locally and how to participate in our testnet. |
 | 0c.    | Testing Guide    | Writing documents on GitHub repo to give the developer the way how to test our code locally and run all substrate chain node. Also how to make contribution.                                                                             |
 | 0d.    | Article/Tutorial | Articles would be published:<br>1) Nutbox - Rebuild Steem with substrate.<br>2) Why Steem needs rebuild and why we use substrate.<br> <br>Tutorial would be published:<br>1) How To Run Nutbox Chain Locally.                                        |
-| 1      | Nutbox Chain     | 1) Upgrade Nutbox Chain from Substrate v3 to Substrate v4<br>2) Depoly Nutbox Chain as public testnet network                                                                                                                                        |
-| 2      | Content Pallets  | We will implement the basic function of two pallets:<br>1) pallet-account - implementation of Nutbox accont system.<br>2) pallet-content - Implementation of content module. Including the storage proof.                                            |
-| 3      | Tools            | 1) We will build a docker image that developer can run Nutbox Chain in one single container.<br>2) Nutbox Faucet bot.                                                                                                                                |
+| 1      | Content Store    | 1) Store content images/videos to CDN and IPFS<br>2) Generate content storage proof in offchain worker                                                                                                                                        |
+| 2      | Content Pallet  | 1) user publish content on chain<br>2) user vote and comment a content                                            |
+| 3      | Deploy Tools    | 1) We will build a docker image that developer can run Nutbox Chain in one single container.<br>2) Nutbox Faucet bot.                                                                                                                                |
 
 ### Milestone 2 —  Implement PoB incentive content system
 
@@ -140,11 +171,10 @@ Total Costs: 24,000 USD
 | 0b.    | Documentation    | 1) Publish documents about the topology of Nutbox Chain.<br>2) Publish documents to describe the PoB content system.                                                                                                                                        |
 | 0c.    | Testing Guide    | Continually writing documents on GitHub repo to give the developer the way how to test our code locally and run all substrate chain node.                                                                                                      |
 | 0d.    | Article/Tutorial | Articles would be published:<br>1) Different PoB incentive content system with Steem.<br> <br>Tutorial would be published:<br>1) Steps To Run Nutbox Blockchain Testnet Validator.<br>2) How To publish article and posts on Nutbox.                       |
-| 1      | Nutbox Chain     | The Nutbox Chain would have optimization on both consensus system and network. That means:<br>1) We would update consensus algorithm from PoA to PoS.<br>2) Deploy batch of validators for our testnet.<br>3) Open validators deployment to our community. |
-| 2      | PoB Pallets      | The pob-pallet would implement the PoB incentive algorithm:<br>1) Content storage proof validation.<br>2) Token reward computing and distribution.<br>3) vote and make comment on content.                                                                 |
-| 3      | Tools            | We will create scripts that contains:<br>1) Build and deploy code.<br>3) PoB test scripts.                                                                                                                                                                 |
+| 1      | Consens system update     | update consensus algorithm from PoA to PoS. |
+| 2      | PoB Pallet      | The pob-pallet would implement the PoB incentive algorithm:<br>1) NUT and NP conversion.<br>2) Reward computing.<br>3) rewards distribution                                                                 |
 
-### Milestone 3 —  Integrate ink module into Nutbox Chain
+### Milestone 3 —  Ink integration and contract template
 
 - **Estimated Duration:** 1 month
 - **FTE:** 5
@@ -156,9 +186,8 @@ Total Costs: 24,000 USD
 | 0b.    | Documentation    | 1) By collecting the feedback of our testnet, we will write Q&A documents.<br>2) More details about our implementation of the Nutbox Chain and Ink smart contract.                                                                                |
 | 0c.    | Testing Guide    | 1）Ink smart contract deployment on Nutbox Chain.                                                                                                                                                                                                 |
 | 0d.    | Article/Tutorial | Articles would be published:<br>1) Build you content based DApp with Ink on Nutbox Chain.<br> <br>Tutorial would be published:<br>1) What content API that Ink smart contract can use.<br>2) How to deploy a ERC20 smart contract use Nutbox Ink. |
-| 1      | Nutbox Chain     | 1) Monitor and optimize the block and transaction state of Nutbox Chain.                                                                                                                                                                          |
-| 2      | Ink Pallets      | Integrate Ink contract pallets into Nutbox Chain.                                                                                                                                                                                                 |
-| 3      | Tools            | Implement batch of commands that help developer and user interact with Ink such as query status and send Transaction to contract.                                                                                                                 |
+| 1      | Ink Integration    | 1) integrate ink! contract module. 2) build content dispatcher/reader/writer                                                                                                                                                                        |
+| 2      | Ink Template      | We would provide several contract templates to help developer and communities, e.g. Ink contract implementation for ERC20/ERC721/ERC1551                                                                                                                                                                                                                                  |
 
 ### Milestone 4 —  Add DeFi modules
 
@@ -172,9 +201,8 @@ Total Costs: 24,000 USD
 | 0b.    | Documentation    | 1) Describe how we conbine content and DeFi.<br>2) Details of DeFi module and develop usage in ink contract.                                                                                                                                     |
 | 0c.    | Testing Guide    | 1）Write posts and make it a NFT.                                                                                                                                                                                                                |
 | 0d.    | Article/Tutorial | Articles would be published:<br>1) How to make posts become a NFT one shot on Nutbox Chain.<br> <br>Tutorial would be published:<br>1) Trade the content based NFT on Nutbox.<br>2) How to write smart contract to transfer a content based NFT. |
-| 1      | Nutbox Chain     | 1) Asset transfer on Nutbox.<br>2) High TPS testing.                                                                                                                                                                                             |
-| 2      | NFT Pallets      | Implement of tranfering a content posts into a NFT.                                                                                                                                                                                              |
-| 3      | Tools            | 1) Interaction between smart contract and DeFi module.                                                                                                                                                                                           |
+| 1      | Community Token Distribution     | support community create its community token(not with balance-pallet) and token transfer between contract and runtime                                                                                                                                                                                            |
+| 2      | NFT Converter      | Implement of tranfering a content posts into a NFT.                                                                                                                                                                                              |
 
 
 ## Future Plans
