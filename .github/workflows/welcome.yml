@@ -17,14 +17,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout
-        if: github.event.pull_request.merged == true
-        uses: actions/checkout@v1
-
       - name: Comment PR
-        if: github.event.pull_request.merged == true
+        if: github.event.pull_request.merged == true && !success()
         uses: thollander/actions-comment-pull-request@master
         with:
+          route: "GET /orgs/w3f/teams/grants/memberships/{{ $github.event.pull_request.author }}"
           message: > 
             Congratulations and welcome to the Web3 Foundation Grants Program! Please refer to our
             [Milestone Delivery repository](https://github.com/w3f/Grant-Milestone-Delivery/) for
