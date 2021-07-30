@@ -29,6 +29,15 @@ The complete plan would be to:
 2. Documentation page and example GitHub repos for how to use the web wallet SDK.
 3. Buying a domain and setting up a landing page with a demo of the wallet.
 
+### Mockups
+
+![Onboarding Step 1](https://user-images.githubusercontent.com/20946466/127680838-19e171ce-ed06-4ce5-9eca-dd36b2289351.png)
+![Onboarding Step 2](https://user-images.githubusercontent.com/20946466/127680846-c8380ebd-5707-4d16-8c12-9b95ac698c0d.png)
+![Onboarding Step 3](https://user-images.githubusercontent.com/20946466/127680855-8914d554-9e14-496c-bab1-41a28b6b2f23.png)
+![Onboarding Step 4](https://user-images.githubusercontent.com/20946466/127680872-13593eb2-6676-4cdf-9e58-4a0f576c7134.png)
+![Onboarding Step 5](https://user-images.githubusercontent.com/20946466/127680884-e925fa83-d73f-4667-857d-5cf0d5bc7030.png)
+
+
 ### Ecosystem Fit
 
 * SnapWallet would greatly improve user experience, especially in mobile devices. 
