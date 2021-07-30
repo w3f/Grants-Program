@@ -27,13 +27,13 @@ The milestones below are just an initial draft. The milestones can be structured
 
 * **Total Estimated Duration:** 2 month
 * **Full-time equivalent (FTE):**  1
-* **Total Costs:** 20k
+* **Total Costs:** 30k
 
 ### Milestone 1 - Research & Design 
 
-* **Estimated Duration:** Duration of milestone 1 
-* **FTE:**  Amount of time (in days) required for a single person to complete this milestone
-* **Costs:** Amount of Payment in USD for milestone 1
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 10k
 
 
 | Number | Deliverable | Specification | 
@@ -44,9 +44,11 @@ The milestones below are just an initial draft. The milestones can be structured
 
 ### Milestone 2 - PoC Implementation
 
-* **Estimated Duration:** Duration of milestone 1 
-* **FTE:**  Amount of time (in days) required for a single person to complete this milestone
-* **Costs:** Amount of Payment in USD for milestone 1
+*Ideally part of a separate follow-up grant, since it depends on the outcome of the initial research!*  
+
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 20k
 
 
 | Number | Deliverable | Specification | 
