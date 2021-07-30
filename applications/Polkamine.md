@@ -191,9 +191,6 @@ Andreas has been involved in several projects since 2016, taking them to another
 **Vladan Falcic**  
 Vladan is a Blockchain and crypto enthusiast, he entered the crypto space back in 2014 and was mostly involved in early-stage projects. Since 2016 he started working with different projects, advising them, implementing effective marketing, growing strong communities and establishing valuable partnerships. He joined MINE Network as head of marketing and will help to ensure the further growth and success of the project.
 
-**Marcin Dudek**  
-Marcin, 2D/3D graphic designer with 20 years of experience. From 2002 to 2016 he owned a large advertising agency. Since 2016 he has been involved in the cryptocurrency market. He cooperated with many cryptocurrency projects, taking care of full graphic design of the projects. Investor, present on the investment market for 6 years. Economist and computer graphic designer by education.
-
 **Philippe Dee**  
 Phil is an IT professional with a unique combination of technical consulting, and management skills. He’s participated as an individual contributor, consultant, architect and manager on numerous projects of different sizes – from one-person shows to projects involving larger teams spanning globally. Phil is mostly focusing on Ethereum DeFi protocols.
 
@@ -218,7 +215,6 @@ Farrukh is a seasoned investment and financial professional who previously worke
 ### Team Linkedin Profiles
 * https://www.linkedin.com/in/andreas-a-62964a207/  
 * https://www.linkedin.com/in/vladan-falcic-sqcap/  
-* https://www.linkedin.com/in/marcin-dudekgr/  
 * https://www.linkedin.com/in/philippe-dee-a83baa1b5/
 * https://www.linkedin.com/in/david-l-9723b5173/
 * https://www.linkedin.com/in/mahmoud-el-hallab/
