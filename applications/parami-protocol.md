@@ -146,12 +146,12 @@ Yanping YANG
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-* **Total Estimated duration:** 6 months
+* **Total Estimated duration:** 8 months
 * **Full-time equivalent (FTE):** 3 FTE
 * **Total Costs:** 1 BTC
 
 ### Milestone 1 — The Parami Protocol
-* **Estimated duration:** 6 month
+* **Estimated duration:** 8 months
 * **FTE:** 3
 * **Costs:** 1 BTC
 
