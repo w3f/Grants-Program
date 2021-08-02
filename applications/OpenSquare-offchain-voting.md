@@ -34,7 +34,7 @@ Some implementation notes:
 - We have to call polkadot.js extension to sign the voting/poll, and some discussion messages.
 - About voting power, since Polkadot/Kusama have proxy accounts, so we have to support proxy account vote on behalf of the original one.
 - In this proposal, we will implement `balance of account` and `quadratic balance of account` strategies for Polkadot and Kusama. It means if Alice's balance is 100 at one chain height, her voting power will be 100 and 10 by these 2 strategies.  
-- We have a partnership with [Crust](https://crust.network/), and we many store data to IPFS through [decoo](https://decoo.io/) that crust granted. 
+- We have a partnership with [Crust](https://crust.network/), and we may store data to IPFS through [decoo](https://decoo.io/) that crust granted. 
 
 ### Ecosystem Fit
 - Providing off-chain voting/polls to help token holders/community members engage more in ecosystem building.
@@ -99,8 +99,6 @@ Milestone 1 — Implement Basic off-chain voting/polls logic for Polkadot & Kusa
 | 0b. | Code | Code will be open source, organized in one monorepo by [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/), hosted on [OpenSquare github account](https://github.com/opensquare-network/). It will be implemented in JavaScript, [React](https://reactjs.org/) for fronted, [koa](https://koajs.com/) for backend. Either fronted and backed will depend on polkadot.js, while fronted will also depend on [extension-dapp](https://github.com/polkadot-js/extension/tree/master/packages/extension-dapp) to interact with polkadot{.js} extension. |
 | 0c. | Documentation | We will provide a documentation site to explain necessary concepts, how this site work, and some user workflows. |
 | 0d. | Test cases | Core functions will be covered by unit tests to ensure functionality and robustness. They will could be verified in simple npm scripts. |
-| 0e. | Deployment | We will deploy it to our server and user can raise proposals or vote by just open the site(maybe opensquare.io). Of course, user have to install the polkadot{.js} extension before voting. |
-| 0f. | Promotion | We will send several twitters, ask friends in Polkadot ecosystem to try it and maybe articles at wechat to attract users to use it. |
 | 1. | User story 1 | Alice opens OpenSquare.io(domain not finally decided) and she can see spaces at least include polkadot and kusama. She can see a closed and ongoing proposal list after clicking a space. |  
 | 2. | User story 2 | Alice will see the proposal description, votes records and the final result or analysis/distribution on a closed proposal page. |  
 | 3. | User story 3 | Alice votes yes on an ongoing proposal with polkadot{.js} extension, she can see her vote and re-vote to override the previous one. The reason that she changed her vote is that she checked the discussion and found some related news. |  
