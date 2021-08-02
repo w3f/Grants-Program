@@ -64,7 +64,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Components | Existing projects | Potentially interesting projects
 |-|-|-
 | Desktop Wallets | [AirGap](https://github.com/airgap-it/airgap-wallet), [Sakura](https://github.com/w3finance/sakura) | User-friendly Wallet based on the [Recovery Pallet](https://github.com/paritytech/substrate/tree/master/frame/recovery), Web wallets focused on user-onboarding (e.g. using [localStorage](https://github.com/near/near-wallet))
-| Browser Extensions | [Polkadot{.js}](https://github.com/polkadot-js/extension), [Doter](https://github.com/ChainBridgeNetworkTeam/Doter), [Enzyme](https://getenzyme.dev/), [Speckle OS](https://www.speckleos.io/)  
+| Browser Extensions | [Polkadot{.js}](https://github.com/polkadot-js/extension), [Doter](https://github.com/ChainBridgeNetworkTeam/Doter), [Enzyme](https://getenzyme.dev/), [Speckle OS](https://www.speckleos.io/) | Sign-in with your polkadot,kusama, etc. account.  
 | Mobile Wallets|  [Lunie](https://github.com/luniehq/lunie), [Polkawallet](https://github.com/polkawallet-io/polkawallet-flutter), [Parity Signer](https://github.com/paritytech/parity-signer), [imToken](https://github.com/consenlabs/token-core), [Fearless Wallet Android](https://github.com/soramitsu/fearless-Android), [Fearless Wallet iOS](https://github.com/soramitsu/fearless-iOS), [Stylo](https://github.com/stylo-app/stylo)  
 | Burner Wallets/Faucet| [KodaDot](https://kodadot.js.org/) | Faucet (a sybil-resistant way to receive free tokens)
 | CLI Wallet | [Subwallet](https://github.com/yxf/subwallet), [Proxy-hot-wallet](https://github.com/canontech/proxy-hot-wallet)
