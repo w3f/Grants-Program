@@ -146,29 +146,31 @@ Yanping YANG
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
-* **Total Estimated duration:** 4 months
+* **Total Estimated duration:** 6 months
 * **Full-time equivalent (FTE):** 3 FTE
 * **Total Costs:** 1 BTC
 
-### Milestone 1 — The Parami Protocol
-* **Estimated duration:** 4 month
+### Milestone 1
+* **Estimated duration:** 6 month
 * **FTE:** 3
 * **Costs:** 1 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | API Documentation | We will provide inline documentation of the code and API documentation to help developers to integrate Parami DID into their project |
-| 0c. | Tutorial | We will provide a standalone tutorial for endusers and developers. This will be a step-by-step guide. |
-| 0d. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
-| 0b. | Testnet | Setup and run a testnet |
-| 1. | Substrate module: did | We will create a Substrate module that will generate and manage on-chain DID with detailed preference profile. A referral system will be integrated with DID |
-| 2. | Substrate module: ads | We will create a Substrate module that will manage ads metadata, including traditional ads metadata and rewarding settings |
-| 3. | Substrate module: prices | We will create a Substrate module that will act as the price oracle to provide real-world prices of different kinds of assets |
-| 4. | Substrate chain | All above modules of our custom chain will interact to provide a useable Ad platform. There will be APIs to setup DIDs and ads and APIs that allow transfer assets via DID |
-| 5. | Web UI: Advertiser App | We will create a web-ui for advertisers, hiding the raw APIs from advertisers, providing an easy access to the ad management system |
-| 6. | Wallet App | We will create a web-based wallet that is embedded to WeChat MiniProgram, the tech stack will be vue.js |
-| 7. | Social Integration SDK | We will integrate ads to some social platforms like WeChat, allowing ad viewers to be verified as DID owners and gain rewards. To enable the combination of Wallet App and social platforms, we will rely on the open platform functionality provided by social platforms. The functionality will include DID registry, DID read, Ad display, Ad track and Ad data upload. |
+| 0b. | Documentation | We will provide inline documentation of the code and API documentation to help developers to integrate Parami DID into their project |
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article or medium that explains what was done as part of the grant). |
+| 1. | Pallet(s)/DID | Develop DID to verify identity. Decentralized identifiers (DIDs) are a new type of identifier to provide verifiable, decentralized digital identity. The DID pallet provides functionality for DIDs management(Create, Update, Delete and so on) |
+| 2. | Pallet(s)/Oracle | Refine oracle implementation. Engage ad-specific validation into it, like an anti-spam check, visibility validation, and so on. |
+| 3. | Pallet(s)/Socialcoin | Develop Social coin for advertisers. Parami supports creators to create their own social coin, and their supporters can give something back to show their loyalty. These are decentralized and secured by Parami.
+| 4. | Pallet(s)/Ads | Develop Ads pallet to  manage ads metadata, including traditional ads metadata and rewarding settings. |
+| 5. | AD3-Maker | encode/decode the avatar of Telegram or Wechat users, and create the binding of DID and social user's identity image. Social users can transfer token through the avatar. Please refer to: https://github.com/parami-protocol/ad3-marker |
+| 6. | Wallet | We will create a web-based wallet that is embedded to WeChat MiniProgram, the tech stack will be vue.js | 
+| 7. | Explorer |  Build Parami Chain explorer,  and provide block and transaction query support;  |
+| 8. | Web UI: Advertiser App	|  We will create a web-ui for advertisers, hiding the raw APIs from advertisers, providing an easy access to the ad management system;  |
+| 9. | Social Integration SDK	|  We will integrate ads to some social platforms like WeChat, allowing ad viewers to be verified as DID owners and gain rewards. To enable the combination of Wallet App and social platforms, we will rely on the open platform functionality provided by social platforms. The functionality will include DID registry, DID read, Ad display, Ad track and Ad data upload.  |
 
 ## Future Plans
 
