@@ -147,29 +147,67 @@ no
 
 ### Overview
 
-* **Total Estimated Duration:**  3 month
-* **Full-Time Equivalent (FTE):**  45 days with 4 Full-Time 
-* **Total Costs:** $3000
+* **Total Estimated Duration:**  6 month
+* **Full-Time Equivalent (FTE):**  45 days with 6 Full-Time 
+* **Total Costs:** $3800
 
-### Milestone 1 Example — Implement Substrate Modules
+
+####  M1：Quote Vault Basic Module UI
+
+* **Estimated duration:** 1 month
+* **FTE:**  30
+* **Costs:** 800 USD
+
+| Number | Deliverable | Specification|
+| -----: | ----------- | ------------- |
+| 0a。| License | GPLv3 |
+| 0b。| Documentation | We will implement the expansion of Polkadot account login function. Users can see the currency price and the interactive interface with Dapp (pledge to Quote Vault)|
+| 0c。| Testing Guide | UI components will be covered by visual testing|
+| 0d. | Docker | Login interface, price view interface and mortgage interface |
+| 1. | dapp | Quote Vault UI|
+| 2. | User settings | Users can easily pledge to Quote Vault|
+
+####  M2：Integrate price chain module into HAZEL
 
 * **Estimated duration:** 2 month
-* **FTE:**  1
-* **Costs:** 3,000 USD
+* **FTE:**  80
+* **Costs:** 1,000 USD
+
+| Number | Deliverable | Specification|
+| -----: | ----------- | ------------- |
+| 0a。| License | GPLv3 |
+| 0b。| Documentation | We will provide a document to show how to use the SDK|
+| 0c。| Testing Guide | Provide testing guide documents to provide developers with how to test our code|
+| 0d. | Docker | Login interface, price view interface and mortgage interface |
+| 1. | Price chain |According to the mining rules, every T1 time, the final correct price of the changed block is successfully generated according to the weight |
+| 2. |The generation of price chain  |According to the price quoted by the bidder in T1, the validator must report a new price after the bidder's price transaction, and so on. When the T1 phase is over, the weighted price in T1 is calculated to generate a price chain|
+
+#### Governance and staking
+
+* Estimated Duration: 1 month
+* FTE: 65
+* Costs: $1,000
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | GPLv3 |
-| 0b. | Documentation | We provide documents on how users can participate in HAZEL quotation |
-| 0c. | Testing Guide | (1) We will provide how to run the complete quotation (2) How to call the interface by the third party |
-| 0d. | Docker | We provide documentation for all modules for easy testing |
-| 0e. | Article | We will provide an article in which we will publish what Hazel has done
-| 1. | Smart Contract | Quoting and generating price chains in the market，The smart contract can be deployed to any substrate chain with evm pallet. |  
-| 2. | Tests | Unit Test and also we will test it |  
-| 3. | Dapp | A page UI for viewing prices |  
-| 4. | Other | TEE module |  
+| 0a. | License | GPLv3|
+| 0b. | Description | We will continue to improve the contract mortgage function, developers can use our mortgage API to operate, and at the same time improve the governance function |
+| 0c。| Testing Guide | Provide test documentation and principle interpretation|
+| 1.  | Governance | Provide access to the proposal module in Polkadot, allowing users to easily support and elect community proposals |
 
+####  M3：TEE（Trusted Execution Environment） module
 
+* **Estimated duration:** 2 month
+* **FTE:**  80
+* **Costs:** 1,000 USD
+
+| Number | Deliverable | Specification|
+| -----: | ----------- | ------------- |
+| 0a。| License | GPLv3 |
+| 0b。| Documentation | Publish a document on the principle of Tee, and publish a description of the impact of Tee content on the price chain|
+| 0c。| Testing Guide | Provide test documentation and principle interpretation|
+| 1. | TEE module | The tee module is a transparent and safe code block that returns information from multiple trusted institutions to escort the price chain and form a second security threshold|
+| 2. | Documentation |We will release detailed documents about the TEE module to tell users the operating principle of TEE, so that everyone can use the oracle more at ease |
 ### Milestone 2 Example — Additional features
 
 no
