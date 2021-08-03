@@ -1,5 +1,6 @@
 # W3F Grant Proposal
 
+
 * **Project Name:** Hazelword
 * **Team Name:** Hazelword team (e.g. Duo)
 * **Payment Address:**  Ethereum (USDT) ：0x78c347cb184c84383d472810d81b05d91364c998
@@ -7,8 +8,9 @@
 
 ## Project Overview :page_facing_up:
 
-    this application is in response to an RFP
+If this application is in response to an RFP, please indicate this on the first line of this section.
 
+If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
 
 ### Overview
 
@@ -74,7 +76,6 @@ Web data source：The data source web server can be publicly verified without pe
 ![alt Contract Architecture](https://github.com/Hazelword/hzl-sol/blob/main/doc/quote-vault.png)
 In order to reduce the cost of ordinary users participating in quotation, it has truly become a decentralized quotation model. HazelWord provides users with automated quotation arbitrage capabilities by providing different on-chain strategy Quote Vault, which improves user asset income while solving the initial cold start problem of the agreement, and also provides more guarantees for the safety of the Hazel agreement.
 
-
 ### Ecosystem Fit
 
 In the indirect oracle, the credit risk of the node uploading the data determines the cost of attacking the data of the oracle. If 1 trillion dollars of assets are derived based on the price provided by the oracle, the credit of the oracle node should also match it. This is obviously impossible in reality. No matter what node randomness is used, it cannot be guaranteed. This is an essential problem, not a technical problem, so indirect oracles can only be used in small-scale, non-financial scenarios.
@@ -102,9 +103,8 @@ If 1 trillion dollars of assets are derived based on the price provided by the o
 
 ### Team members
 
-   Name of team leader：HuangShouYi
-   
-
+* Name of team leader:HuangShouYi
+* Names of team members 
 
 ### Contact
 
@@ -114,7 +114,8 @@ If 1 trillion dollars of assets are derived based on the price provided by the o
 
 ### Legal Structure
 
-HAZELWORD FOUNDATION LTD. ，20 MAXWELL ROAD, #08-08, MAXWELL HOUSE, SINGAPORE 069113
+* **Registered Address:** HAZELWORD FOUNDATION LTD.
+* **Registered Legal Entity:** 20 MAXWELL ROAD, #08-08, MAXWELL HOUSE, SINGAPORE 069113
 
 ### Team's experience
 
@@ -124,50 +125,53 @@ One of them has more than 7 years product/program/project management experience 
 The rest are front-end developers, ui designers, and Android IOS developers
 ### Team Code Repos
 
-* https://github.com/Hazelword
-* https://github.com/qksl
+*  https://github.com/Hazelword
+*  https://github.com/qksl
 
-the GitHub accounts of all team members. 
+Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
 * https://github.com/ydong3
 * https://github.com/ywdlucking
 ...
 
 ### Team LinkedIn Profiles (if available)
-no
+
+* https://www.linkedin.com/<person_1>
+* https://www.linkedin.com/<person_2>
 
 ## Development Status :open_book:
 
-1.  The smart contract complete phase 1.0 development
-2.  Deployed contract on test network
-3.  Complete DAPP Web UI development
+If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
+* The smart contract complete phase 1.0 development
+* Deployed contract on test network
+* Complete DAPP Web UI development
 
 ## Development Roadmap :nut_and_bolt:
 
+This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
+
+Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that the scope of the work can fit within a three-month period and that teams structure their roadmap as 1 milestone ≈ 1 month.
+
+For each milestone,
+
+* make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
+To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md).
+* include the amount of funding requested _per milestone_.
+* include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
+* provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
+* commit to providing Dockerfiles for the delivery of your project.
+* indicate milestone duration as well as number of full-time employees working on each milestone.
+* **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
+
+
 ### Overview
 
-* **Total Estimated Duration:**  6 month
+* **Total Estimated Duration:**  5 month
 * **Full-Time Equivalent (FTE):**  45 days with 6 Full-Time 
 * **Total Costs:** $3800
 
-
-####  M1：Quote Vault Basic Module UI
-
-* **Estimated duration:** 1 month
-* **FTE:**  30
-* **Costs:** 800 USD
-
-| Number | Deliverable | Specification|
-| -----: | ----------- | ------------- |
-| 0a。| License | GPLv3 |
-| 0b。| Documentation | We will implement the expansion of Polkadot account login function. Users can see the currency price and the interactive interface with Dapp (pledge to Quote Vault)|
-| 0c。| Testing Guide | UI components will be covered by visual testing|
-| 0d. | Docker | Login interface, price view interface and mortgage interface |
-| 1. | dapp | Quote Vault UI|
-| 2. | User settings | Users can easily pledge to Quote Vault|
-
-####  M2：Integrate price chain module into HAZEL
+####  M1：Basic module
 
 * **Estimated duration:** 2 month
 * **FTE:**  80
@@ -179,21 +183,27 @@ no
 | 0b。| Documentation | We will provide a document to show how to use the SDK|
 | 0c。| Testing Guide | Provide testing guide documents to provide developers with how to test our code|
 | 0d. | Docker | Login interface, price view interface and mortgage interface |
-| 1. | Price chain |According to the mining rules, every T1 time, the final correct price of the changed block is successfully generated according to the weight |
-| 2. |The generation of price chain  |According to the price quoted by the bidder in T1, the validator must report a new price after the bidder's price transaction, and so on. When the T1 phase is over, the weighted price in T1 is calculated to generate a price chain|
+| 0e. | Article | An article to introduce |
+| 1. | Price chain |According to the mining rules, every T1 time, the final correct price of the changed block is successfully generated according to the weight <br />Using the Solidity language, running on the virtual machine (EVM) in the Polkadot ecosystem<br />This picture is a good illustration of the price chain(https://github.com/Hazelword/hzl-sol/blob/main/doc/asset.png) |
+| 2. |The generation of price chain  |According to the price quoted by the bidder in T1, the validator must report a new price after the bidder's price transaction, and so on. When the T1 phase is over, the weighted price in T1 is calculated to generate a price chain<br />The price generation of the price chain in the block(https://github.com/Hazelword/hzl-sol/blob/main/doc/hzl-en.jpg)|
 
-#### Governance and staking
 
-* Estimated Duration: 1 month
-* FTE: 65
-* Costs: $1,000
+####  M2：Quote Vault Basic Module UI
 
-| Number | Deliverable | Specification |
+* **Estimated duration:** 1 month
+* **FTE:**  30
+* **Costs:** 800 USD
+
+| Number | Deliverable | Specification|
 | -----: | ----------- | ------------- |
-| 0a. | License | GPLv3|
-| 0b. | Description | We will continue to improve the contract mortgage function, developers can use our mortgage API to operate, and at the same time improve the governance function |
-| 0c。| Testing Guide | Provide test documentation and principle interpretation|
-| 1.  | Governance | Provide access to the proposal module in Polkadot, allowing users to easily support and elect community proposals |
+| 0a。| License | GPLv3 |
+| 0b。| Documentation | We will implement the expansion of Polkadot account login function. Users can see the currency price and the interactive interface with Dapp (pledge to Quote Vault)|
+| 0c。| Testing Guide | UI components will be covered by visual testing|
+| 0d. | Docker | Login interface, price view interface and mortgage interface |
+| 0e. | Article | An article to introduce |
+| 1. | dapp | Quote Vault UI <br />Use react or vue|
+| 2. | User settings | Users can easily pledge to Quote Vault|
+| 3. | dapp | Data user ui|
 
 ####  M3：TEE（Trusted Execution Environment） module
 
@@ -206,22 +216,29 @@ no
 | 0a。| License | GPLv3 |
 | 0b。| Documentation | Publish a document on the principle of Tee, and publish a description of the impact of Tee content on the price chain|
 | 0c。| Testing Guide | Provide test documentation and principle interpretation|
+| 0d. | Docker | Login interface, price view interface and mortgage interface |
+| 0e. | Article | An article to introduce |
 | 1. | TEE module | The tee module is a transparent and safe code block that returns information from multiple trusted institutions to escort the price chain and form a second security threshold|
 | 2. | Documentation |We will release detailed documents about the TEE module to tell users the operating principle of TEE, so that everyone can use the oracle more at ease |
-### Milestone 2 Example — Additional features
-
-no
 
 
 ## Future Plans
 
-Shares token design for governance.
-Products include well-matched back-end and front-end, which support iOS, Android, and WEB.
-The product for consulting service Blockchain Forest will be connected to Hezel data service
-More partners in the blockchain ecology will be introduced and accessed to.
+Please include here
+
+* Shares token design for governance.
+* Products include well-matched back-end and front-end, which support iOS, Android, and WEB.
+* The product for consulting service Blockchain Forest will be connected to Hezel data service
+* More partners in the blockchain ecology will be introduced and accessed to.
+
 
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website 
 
+Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
+
+* Work you have already done.
+* Wheter there are any other teams who have already contributed (financially) to the project.
+* Previous grants you may have applied for.
