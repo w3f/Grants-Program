@@ -123,7 +123,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Verifiable Claims | [KILT](https://github.com/KILTprotocol), [Dock](https://github.com/docknetwork)
 | Supply chain| 
 | Social Networking | [Social Network](https://github.com/social-network), [SubSocial](https://github.com/dappforce/dappforce-subsocial)
-| Governance/DAO| [Sunshine DAO](https://github.com/sunshine-protocol/sunshine-bounty), [Governance OS](https://github.com/NucleiStudio/governance-os), [Idavoll Network](https://github.com/idavollnetwork/idavoll)                                                |   [Consul](https://github.com/consul/consul) - Open Government and E-Participation Web Software
+| Governance/DAO| [Sunshine DAO](https://github.com/sunshine-protocol/sunshine-bounty), [Governance OS](https://github.com/NucleiStudio/governance-os), [Idavoll Network](https://github.com/idavollnetwork/idavoll), [Substrate Moloch](https://github.com/DoraFactory/Substrate-Moloch-V2) |   [Consul](https://github.com/consul/consul) - Open Government and E-Participation Web Software
 | Prediction Markets and Futarchy| [Zeitgeist](https://github.com/zeitgeistpm/zeitgeist), [X Predict Market](https://github.com/XPredictMarket) |
 | Messaging | [HOPR](https://github.com/validitylabs/HOPR-PL-Substrate), [Mailchain](https://github.com/mailchain)
 | File Storage, Cloud | [DatDot](https://github.com/playproject-io/datdot), [Crust Network](https://github.com/crustio), [offchain::ipfs](https://rs-ipfs.github.io/offchain-ipfs-manual/), [Canyon Network](https://github.com/canyon-network/canyon)
