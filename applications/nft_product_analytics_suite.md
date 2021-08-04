@@ -188,13 +188,11 @@ Cost
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run a local instance and / or fetch metrics using the application. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Enjin Jumpnet / Marketplace Adapter | Implementation of the Enjin specific indexer as well as the data adapter for the Enjin marketplace to track metrics specific to Enjin (e.g. transfer settings, supply models, transfer settings, etc.) as well as the standard marketplace adapter metrics (e.g. bid activity, frequency of listings & marketplace supply, etc.) | 
+| 1. | Base Marketplace Adapter | This will include the marketplace_adapter module & will allow users to plug in the API of the marketplace of their choosing. The module will contain a struct with generic traits related to the various events the can get emitted from various marketplaces (e.g. Auctions, bids, sales, etc.)
 | 2. | OpenSea Marketplace Adapter | Implementation of the data adapter for the OpenSea marketplace (e.g. transfer settings, supply models, transfer settings, etc.) as well as the standard marketplace adapter metrics (e.g. bid activity, frequency of listings & marketplace supply, etc.) |
-| 3. | Efinity Adapter | Implementation of the data adapter for Enjin Efinity. This will build upon the previous Enjin based work, but will incorporate the substrate based functionality & new token standard |
-| 4. | Front-End | Base implementation of the front-end of the application |
-| 4. | Efinity Adapter | Implementation of the data adapter for Enjin Efinity |
-| 5. | Analytics | This milestone will include API endpoints & the front-end representation of the data to allows users to view key metrics (e.g. price trends, number of transfers, unique wallets, returning wallets) over edfined time periods. |
-| 6. | KPI Reports | Logic to allow users to receive KPI reports detailing their progress in emails |
+| 3. | Front-End | Base implementation of the front-end of the application |
+| 4. | Analytics | This milestone will include API endpoints & the front-end representation of the data to allows users to view key metrics (e.g. price trends, number of transfers, unique wallets, returning wallets) over edfined time periods. |
+| 5. | KPI Reports | Logic to allow users to receive KPI reports detailing their progress in emails |
 
 ## Future Plans
 
