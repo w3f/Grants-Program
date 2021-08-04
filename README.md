@@ -100,6 +100,7 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 - [Kasper Mai Jørgensen](https://github.com/KasperJor)
 - [Rouven Pérez](https://github.com/RouvenP)
+- [Federica Dubbini](https://github.com/fededubbi)
 
 ## :pencil: Process
 
