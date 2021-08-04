@@ -1,54 +1,60 @@
-name: Google Sheet Update
+name: Application Accepted
 on:
   pull_request_target:
     types: [closed]
 
 jobs:
-  update_sheet:
+  get_filename:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+    outputs:
+      filename: ${{ steps.files.outputs.added }}
     steps:
+      # NOTE: commented code is for local testing only and most likely broken.
       # - name: 'local test: get all added files in the PR'
       #   if: ${{ env.ACT }}
       #   id: 'files'
       #   run: echo "::set-output name=added::$(echo applications/workflow_testing1.md5 applications/workflow_testing.md)"
 
-      # - name: Local Testing Checkout
-      #   uses: actions/checkout@master
-      #   if: ${{ env.ACT }}
-
-      # - name: 'local testing parse files'
-      #   if: ${{ env.ACT }}
-      #   id: grant_parser
-      #   uses: Ana06/get-changed-files@v2.0.0
-      #   with:
-      #     path: "${{ steps.filter.outputs.added }}"
-
-      - name: 'get names of all added files in the applications folder'
+      - name: Get application filename # We assume there's only one
         if: ${{ !env.ACT }}
         id: 'files'
         uses: Ana06/get-changed-files@v2.0.0
         with:
           filter: 'applications/*.md'
 
+  update_google_sheet:
+    needs: get_filename
+    if: needs.get_filename.outputs.filename
+    runs-on: ubuntu-latest
+    steps:
+      # - name: Local Testing checkout
+      #   uses: actions/checkout@master
+      #   if: ${{ env.ACT }}
+
+      # - name: Local testing parse files
+      #   if: ${{ env.ACT }}
+      #   id: grant_parser
+      #   uses: Ana06/get-changed-files@v2.0.0
+      #   with:
+      #     path: "${{ steps.filter.outputs.added }}"
+
       - name: Checkout
-        if: ${{ !env.ACT && steps.files.outputs.added }}
+        if: ${{ !env.ACT }}
         uses: actions/checkout@v2
 
-      - name: 'parse files'
-        if: ${{ !env.ACT && steps.files.outputs.added }}
+      - name: Parse application file
+        if: ${{ !env.ACT }}
         id: grant_parser
         uses: w3f/parse-grant-application-action@v1
         with:
-          path: "${{ github.workspace }}/${{ steps.files.outputs.added }}"
+          path: "${{ github.workspace }}/${{ needs.get_filename.outputs.filename }}"
 
       - name: Get current date
-        if: ${{ steps.files.outputs.added }}
         id: date
         run: echo "::set-output name=date::$(date +'%d/%m/%Y')"
 
-      - name: 'write the data to a gsheet'
-        if: ${{ steps.files.outputs.added }}
+      - name: Add entry to Google Sheet
         uses: jroehl/gsheet.action@v1.2.0
         with:
           spreadsheetId: ${{ secrets.SPREADSHEET_ID }}
@@ -90,3 +96,29 @@ jobs:
         env:
           GSHEET_CLIENT_EMAIL: ${{ secrets.GSHEET_CLIENT_EMAIL }}
           GSHEET_PRIVATE_KEY: ${{ secrets.GSHEET_PRIVATE_KEY }}
+
+  welcome_comment:
+    needs: get_filename
+    if: needs.get_filename.outputs.filename
+    runs-on: ubuntu-latest
+    steps:
+      - name: Leave welcome comment
+        uses: thollander/actions-comment-pull-request@1.0.1
+        with:
+          message: > 
+            Congratulations and welcome to the Web3 Foundation Grants Program! Please refer to our
+            [Milestone Delivery repository](https://github.com/w3f/Grant-Milestone-Delivery/) for
+            instructions on how to submit milestones and invoices, our
+            [FAQ](https://github.com/w3f/Grants-Program/blob/master/docs/faq.md) for frequently asked questions and the
+            [support section of our README](https://github.com/w3f/Grants-Program/blob/master/README.md#support)
+            for more ways to find answers to your questions. <br/><br/>
+            Before you start, take a moment to read through our
+            [announcement guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/announcement-guidelines.md)
+            for all communications related to the grant or make them known to the right person in your organisation.
+            In particular, please <b>don't announce the grant publicly before at least the first milestone of your
+            project has been approved.</b> At that point or shortly before, you can get in touch with us at
+            grantsPR@web3.foundation and we'll be happy to collaborate on an announcement about the work you’re doing.<br/><br/>
+            Lastly, please remember to let us know in case you run into any delays or deviate from the deliverables
+            in your application. You can either leave a comment here or directly request to amend your application
+            via PR. We wish you luck with your project! :rocket:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
