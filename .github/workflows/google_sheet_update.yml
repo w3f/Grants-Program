@@ -5,67 +5,54 @@ on:
 
 jobs:
   update_sheet:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-      - name: 'get names of all added files in the PR'
-        if: ${{ github.event.pull_request.merged == true && !env.ACT }}
-        id: 'files'
-        uses: Ana06/get-changed-files@v1.2
-
       # - name: 'local test: get all added files in the PR'
       #   if: ${{ env.ACT }}
       #   id: 'files'
       #   run: echo "::set-output name=added::$(echo applications/workflow_testing1.md5 applications/workflow_testing.md)"
 
-      - name: Checkout
-        uses: actions/checkout@master
-        if: ${{ github.event.pull_request.merged == true && !env.ACT }}
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
-
-      - name: Local Testing Checkout
-        uses: actions/checkout@master
-        if: ${{ env.ACT }}
-
-      - name: 'filter only .md added files'
-        if: github.event.pull_request.merged == true
-        id: 'filter'
-        run: |
-          for filename in ${{ steps.files.outputs.added }}
-          do
-            if [[ $filename =~ \.md$ ]]
-            then
-              echo "::set-output name=added::$filename"
-              break
-            fi
-          done
+      # - name: Local Testing Checkout
+      #   uses: actions/checkout@master
+      #   if: ${{ env.ACT }}
 
       # - name: 'local testing parse files'
       #   if: ${{ env.ACT }}
       #   id: grant_parser
-      #   uses: Ana06/get-changed-files@v1.2
+      #   uses: Ana06/get-changed-files@v2.0.0
       #   with:
       #     path: "${{ steps.filter.outputs.added }}"
 
+      - name: 'get names of all added files in the applications folder'
+        if: ${{ !env.ACT }}
+        id: 'files'
+        uses: Ana06/get-changed-files@v2.0.0
+        with:
+          filter: 'applications/*.md'
+
+      - name: Checkout
+        if: ${{ !env.ACT && steps.files.outputs.added }}
+        uses: actions/checkout@v2
+
       - name: 'parse files'
-        if: ${{ github.event.pull_request.merged == true && !env.ACT }}
+        if: ${{ !env.ACT && steps.files.outputs.added }}
         id: grant_parser
         uses: w3f/parse-grant-application-action@v1
         with:
-          path: "${{ github.workspace }}/${{ steps.filter.outputs.added }}"
+          path: "${{ github.workspace }}/${{ steps.files.outputs.added }}"
 
       - name: Get current date
-        if: github.event.pull_request.merged == true
+        if: ${{ steps.files.outputs.added }}
         id: date
         run: echo "::set-output name=date::$(date +'%d/%m/%Y')"
 
       - name: 'write the data to a gsheet'
-        if: github.event.pull_request.merged == true
-        id: 'update_worksheet'
-        uses: jroehl/gsheet.action@v1.1.1 # you can specify '@release' to always have the latest changes
+        if: ${{ steps.files.outputs.added }}
+        uses: jroehl/gsheet.action@v1.2.0
         with:
           spreadsheetId: ${{ secrets.SPREADSHEET_ID }}
-          commands: | # list of commands, specified as a valid JSON string
+          commands: |
             [
               {
                 "command": "appendData",
