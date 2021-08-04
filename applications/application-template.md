@@ -122,7 +122,7 @@ To assist you in defining it, we have created a document with examples for some 
 
 * **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
 * **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-* **Total Costs:** Amount of payment in USD for the whole project. The total amount of funding depends on the [level](https://github.com/w3f/Grants-Program/tree/Integrate-level#level_slider-level) of your grant application. 
+* **Total Costs:** Amount of payment in USD for the whole project. The maximum amount of funding depends on the [level](../README.md#level_slider-level) of your grant application. 
 
 ### Milestone 1 Example — Implement Substrate Modules
 
