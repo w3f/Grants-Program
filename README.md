@@ -125,16 +125,17 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 Additionally, we try to enforce the [code of conduct](CODE_OF_CONDUCT.md) and based on this may [block users](https://github.blog/2016-04-04-organizations-can-now-block-abusive-users/).
 
-## :level_slider: Levels
+## :level_slider: Level
 
-### :hatching_chick: Level 1 (= InstaGrants)
+The Web3 Grants Program offers different levels for grants to help you best depending on your current stage.  
 
-- **Target:** Individuals
-- **Amount:** Up to $10,000
-- **Requirements:** 2 Approvals
-- **Benefits:** Feedback during application process and evaluation, Introduction to related teams/projects  
+### Level 1 :hatching_chick: (= InstaGrants)
+  - **Target:** Individuals
+  - **Amount:** Up to $10,000
+  - **Requirements:** 2 Approvals
+  - **Benefits:** Feedback during application process and evaluation, Introduction to related teams/projects  
 
-### :baby_chick: Level 2
+### Level 2 :baby_chick:
 
 - **Target:** Small Teams/Start-ups 
 - **Amount:** Up to $50,000
@@ -142,7 +143,7 @@ Additionally, we try to enforce the [code of conduct](CODE_OF_CONDUCT.md) and ba
 - **Benefits:** All of the above + [Grant Announcement](./docs/announcement-guidelines.md), [Grant Badge](./docs/grant-badge-guidelines.md), Fast track to [Substrate
 Builders Program](https://www.substrate.io/builders-program/) 
 
-### :rooster: Level 3 
+### Level 3 :rooster: 
 
 - **Target:** Companies/Foundations with a proven track record 
 - **Amount:** Unlimited
