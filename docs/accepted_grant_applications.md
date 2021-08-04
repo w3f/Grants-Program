@@ -380,3 +380,4 @@
 | [SubDAO Labs](https://www.subdao.network/) | PolkaSign - Web3.0 app for electronic agreements | [GitHub](https://github.com/subdao-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Valibre](https://valibre.org) | People Local Interactions Protocol (PLIP) | [GitHub](https://github.com/valibre-org/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Reaudito](https://shivarthu.reaudito.com/#/) | Shivarthu: A blockchain-based decentralized governance system | [GitHub](https://github.com/amiyatulu/shivarthu) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| Uniscan | NFT Explorer | [GitHub](https://github.com/wuminzhe) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
