@@ -78,6 +78,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Staking Rewards | [Staking Rewards Collector](https://github.com/w3f/staking-rewards-collector), [Staking Rewards Viewer](https://github.com/jackson-harris-iii/staking-rewards-viewer), [Polkadot Staking Site](https://github.com/cryptolab-network/polkadot-staking-site) |
 | Bridge UI | [Parity Bridges UI](https://github.com/paritytech/parity-bridges-ui), [Donut Interface (Steem <> Dot)](https://github.com/nutbox-dao/donut-interface) | |
 | Parachain/Crowdloan | [Parachains.Network](https://github.com/jhonalino/parachains.network) | |
+| Other | [PolkadotWebIdenticon](https://github.com/RidOne-technologies/polkadot-web-identicon)
 
 ### :wrench: Tools, APIs and Languages
 
