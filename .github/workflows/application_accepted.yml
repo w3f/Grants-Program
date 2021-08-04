@@ -5,7 +5,7 @@ on:
 
 jobs:
   get_filename:
-    if: github.event.pull_request.merged == true && !contains(github.event.pull_request.labels.*.name, 'amendment')
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     outputs:
       filename: ${{ steps.files.outputs.added }}
