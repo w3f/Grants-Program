@@ -10,7 +10,7 @@
   - [Support](#support)
   - [Team](#team)
 - [:pencil: Process](#pencil-process)
-- [:level_slider: Level](#level_slider-level)  
+- [:level_slider: Levels](#level_slider-levels)  
 - [:mailbox_with_mail: Request for Proposals (RFP) Suggestions](#mailbox_with_mail-request-for-proposals-rfp-suggestions)
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
@@ -118,7 +118,7 @@ The Operations Team takes care of legal documents, invoicing and remittances.
    1. The [committee](#w3f-grants-committee) can (and usually does) issue comments and request changes on the pull request.
    2. Clarifications and amendments made in the comments _need to be included in the application_. You may address feedback by directly modifying your application and leaving a comment once you're done. Generally, if you don't reply within 2 weeks, the application will be closed due to inactivity, but you're always free to reopen it as long as it hasn't been rejected.
    3. When all requested changes are addressed and the terms and conditions have been signed, someone will mark your application as `ready for review` and share it internally with the rest of the committee.
-   4. The application will be accepted and merged as soon as it receives the required number of approvals (see [level](#level_slider-level)), or closed after two weeks of inactivity. Unless specified otherwise, the day on which it is accepted will be considered the starting date of the project, and will be used to estimate delivery dates.
+   4. The application will be accepted and merged as soon as it receives the required number of approvals (see [levels](#level_slider-levels)), or closed after two weeks of inactivity. Unless specified otherwise, the day on which it is accepted will be considered the starting date of the project, and will be used to estimate delivery dates.
 3. **Milestone Delivery and Payment**
    1. Milestones are to be delivered on the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery/) repository following the [process](https://github.com/w3f/Grant-Milestone-Delivery#mailbox-milestone-delivery-process) described therein.
 
@@ -126,30 +126,29 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 Additionally, we try to enforce the [code of conduct](CODE_OF_CONDUCT.md) and based on this may [block users](https://github.blog/2016-04-04-organizations-can-now-block-abusive-users/).
 
-## :level_slider: Level
+## :level_slider: Levels
 
-The Web3 Grants Program offers different levels for grants to help you best depending on your current stage.  
+The W3F Grants Program offers different grant levels to help you best depending on your current stage.  
 
 ### Level 1 :hatching_chick:
   - **Target:** Individuals
   - **Amount:** Up to $10,000
-  - **Requirements:** 2 Approvals
-  - **Benefits:** Feedback during application process and evaluation, Introduction to related teams/projects  
+  - **Requirements:** 2 approvals
+  - **Benefits:** Feedback during application process and evaluation, introduction to related teams/projects  
 
 ### Level 2 :baby_chick:
 
-- **Target:** Small Teams/Start-ups 
+- **Target:** Small teams/start-ups 
 - **Amount:** Up to $50,000
-- **Requirements:** 3 Approvals 
-- **Benefits:** All of the above + [Grant Announcement](./docs/announcement-guidelines.md), [Grant Badge](./docs/grant-badge-guidelines.md), Fast track to [Substrate
-Builders Program](https://www.substrate.io/builders-program/) 
+- **Requirements:** 3 approvals 
+- **Benefits:** All of the above + [co-promotion](./docs/announcement-guidelines.md#announcement-guidelines), [Grants Program badge](./docs/grant-badge-guidelines.md), fast track to [Substrate Builders Program](https://www.substrate.io/builders-program/) 
 
 ### Level 3 :rooster: 
 
-- **Target:** Companies/Foundations with a proven track record 
+- **Target:** Companies/foundations with a proven track record 
 - **Amount:** Unlimited
-- **Requirements:** Pitch Call + 5 Approvals (for > $100k W3F Foundation Council Approval) 
-- **Benefits:** All of the above + plus VC Introductions
+- **Requirements:** Pitch call + 5 approvals (for > $100k Web3 Foundation Council approval) 
+- **Benefits:** All of the above + VC introductions
 
 ## :mailbox_with_mail: Request for Proposals (RFP) Suggestions
 

@@ -5,9 +5,9 @@
 > If your application is a follow-up to a previous grant, please mention which one in the first line of the abstract and include a link to previous pull requests if applicable.
 
 ### For which grant [level](https://github.com/w3f/Grants-Program/tree/Integrate-level#level_slider-level) are you applying? 
-- [ ] **Level 1**:  Up to $10,000, 2 Approvals
-- [ ] **Level 2**:  Up to $50,000, 3 Approvals
-- [ ] **Level 3**:  Unlimited, 5 Approvals (for > $100k W3F Foundation Council Approval)
+- [ ] **Level 1**:  Up to $10,000, 2 approvals
+- [ ] **Level 2**:  Up to $50,000, 3 approvals
+- [ ] **Level 3**:  Unlimited, 5 approvals (for > $100k Web3 Foundation Council approval)
 
 ### Application Checklist
 
