@@ -16,6 +16,7 @@ To that end, we’ve created a badge for grant recipients. This is available for
   - when appropriate, in a tweet or blog post announcing your grant in a project-specific context.
 - Please **don’t**:
   - display the badge on your team or project's landing page,
+  - use the badge before your first milestone has been accepted,
   - add it to any social media profiles, or
   - use it in any other context that could misrepresent your relationship with the Web3 Foundation.
 
