@@ -144,7 +144,7 @@ The last part is to add support for `equivocations`.
 
 ### Overview
 
-* **Total Estimated Duration:** 57 working days
+* **Total Estimated Duration:** 67 working days
 * **Full-Time Equivalent (FTE):**  1.5
 * **Total Costs:** $44,220
 
