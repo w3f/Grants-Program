@@ -21,6 +21,7 @@ The goal of this RFP is to research and create new uncollateralized stablecoin m
 - https://www.youtube.com/watch?v=bnC5RQsaAXQ 
 - https://econteric.com/stablecoin/algo/
 - https://assets.fei.money/docs/whitepaper.pdf
+- https://www.terra.money/Terra_White_paper.pdf
 
 ## Deliverables :nut_and_bolt:
 
