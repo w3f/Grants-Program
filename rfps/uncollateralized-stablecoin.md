@@ -11,7 +11,7 @@ Stablecoins are cryptocurrencies where the price is designed to be pegged (=fixe
 - Scalability issues (restricted by the underlying asset) 
 - Devalue under massive crashes in the underlying assets 
 
-Purely algorithmic stablecoin would overcome these risks. Additionally it would be fairly simple to peg an algorithmic stablecoin to different assets (USD, EUR) or in the future even to a consumer price index (CPI). However, until now most algorithmic stablecoins introduced significant additional disadvantages or weren't able to maintain their peg for a longer period of time (e.g. AMPL, ESD, DSD, BAC, NuBits). 
+Purely algorithmic stablecoin would overcome these risks. Additionally it would be fairly simple to peg an algorithmic stablecoin to different assets (USD, EUR) or in the future even to a consumer price index (CPI). However, until now most algorithmic stablecoins introduced significant additional disadvantages or weren't able to maintain their peg for a longer period of time (e.g. AMPL, ESD, DSD, BAC, NuBits).
 
 The goal of this RFP is to research and create new uncollateralized stablecoin mechanisms and implement these as ink! smart contract or pallets. The biggest research question hereby is how to efficiently decrease the supply of the token.   
 
@@ -19,7 +19,8 @@ The goal of this RFP is to research and create new uncollateralized stablecoin m
 - https://www.basis.io/basis_whitepaper_en.pdf  
 - https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2425270 
 - https://www.youtube.com/watch?v=bnC5RQsaAXQ 
-- https://econteric.com/stablecoin/algo/ 
+- https://econteric.com/stablecoin/algo/
+- https://assets.fei.money/docs/whitepaper.pdf
 
 ## Deliverables :nut_and_bolt:
 
