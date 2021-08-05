@@ -10,6 +10,7 @@
   - [Support](#support)
   - [Team](#team)
 - [:pencil: Process](#pencil-process)
+- [:level_slider: Level](#level_slider-level)  
 - [:mailbox_with_mail: Request for Proposals (RFP) Suggestions](#mailbox_with_mail-request-for-proposals-rfp-suggestions)
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
@@ -99,10 +100,11 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 - [Kasper Mai Jørgensen](https://github.com/KasperJor)
 - [Rouven Pérez](https://github.com/RouvenP)
+- [Federica Dubbini](https://github.com/fededubbi)
 
 ## :pencil: Process
 
-> **:loudspeaker:** The process below allows for grants of up to **$30,000 for first-time applications** and **$100,000 for follow-up ones**. Payment is made in Bitcoin, USDT or DAI. If you want to apply in **private**, need to be paid out in **fiat** and/or you **seek funding above the aforementioned limits**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** The process below is independent of the [level](#level_slider-level). Payment is made in Bitcoin, USDT or DAI. If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 1. **Application**
    1. [Fork](https://github.com/w3f/Grants-Program/fork) this repository.
@@ -116,13 +118,38 @@ The Operations Team takes care of legal documents, invoicing and remittances.
    1. The [committee](#w3f-grants-committee) can (and usually does) issue comments and request changes on the pull request.
    2. Clarifications and amendments made in the comments _need to be included in the application_. You may address feedback by directly modifying your application and leaving a comment once you're done. Generally, if you don't reply within 2 weeks, the application will be closed due to inactivity, but you're always free to reopen it as long as it hasn't been rejected.
    3. When all requested changes are addressed and the terms and conditions have been signed, someone will mark your application as `ready for review` and share it internally with the rest of the committee.
-   4. The application will be accepted and merged as soon as it receives the approval of one third of the committee (currently 3 members), or closed after two weeks of inactivity. Unless specified otherwise, the day on which it is accepted will be considered the starting date of the project, and will be used to estimate delivery dates.
+   4. The application will be accepted and merged as soon as it receives the required number of approvals (see [level](#level_slider-level)), or closed after two weeks of inactivity. Unless specified otherwise, the day on which it is accepted will be considered the starting date of the project, and will be used to estimate delivery dates.
 3. **Milestone Delivery and Payment**
    1. Milestones are to be delivered on the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery/) repository following the [process](https://github.com/w3f/Grant-Milestone-Delivery#mailbox-milestone-delivery-process) described therein.
 
 :warning: Accepted grant applications can be amended at any time. However, this _necessitates a reevaluation by the committee_. If your application has been accepted and, during development, you find that your project significantly deviates from the original specification, please open a new pull request that modifies the existing application.
 
 Additionally, we try to enforce the [code of conduct](CODE_OF_CONDUCT.md) and based on this may [block users](https://github.blog/2016-04-04-organizations-can-now-block-abusive-users/).
+
+## :level_slider: Level
+
+The Web3 Grants Program offers different levels for grants to help you best depending on your current stage.  
+
+### Level 1 :hatching_chick:
+  - **Target:** Individuals
+  - **Amount:** Up to $10,000
+  - **Requirements:** 2 Approvals
+  - **Benefits:** Feedback during application process and evaluation, Introduction to related teams/projects  
+
+### Level 2 :baby_chick:
+
+- **Target:** Small Teams/Start-ups 
+- **Amount:** Up to $50,000
+- **Requirements:** 3 Approvals 
+- **Benefits:** All of the above + [Grant Announcement](./docs/announcement-guidelines.md), [Grant Badge](./docs/grant-badge-guidelines.md), Fast track to [Substrate
+Builders Program](https://www.substrate.io/builders-program/) 
+
+### Level 3 :rooster: 
+
+- **Target:** Companies/Foundations with a proven track record 
+- **Amount:** Unlimited
+- **Requirements:** Pitch Call + 5 Approvals (for > $100k W3F Foundation Council Approval) 
+- **Benefits:** All of the above + plus VC Introductions
 
 ## :mailbox_with_mail: Request for Proposals (RFP) Suggestions
 
