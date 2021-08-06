@@ -45,6 +45,7 @@ For instance, for a simplest sharing schema, when the vault is created to be sha
         }, {
             "cid":       "QmaTX2v2QuwkQvEERw17w2xACcr2WZhy9t3NAEPBjvqPSX",
             "member": "5Ef9ES1SLQZU4KucGsjvs8qexvppQFmDgHiqoqVptJ9nZDeu"
+     }]
 }
 ```
 
