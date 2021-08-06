@@ -300,7 +300,7 @@
 | [Nuclei Studio](https://nuclei.studio/) | Voting Pallets | [GitHub](https://github.com/NucleiStudio) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [RAMP DEFI](https://app.rampdefi.com/#/) | Polkakeeper - A Community-Led Value Assurance Protocol | [GitHub](https://github.com/RAMP-DEFI) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Stone](https://stonedefi.io) | Index project which aims to track the portfolio of multiple digital assets | [GitHub](https://github.com/stonedefi/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Reserve Labs](https://github.com/ReserveLabs) | AlgoCash - An algorithmic stablecoin | [GitHub](https://github.com/ReserveLabs/AlgoCash) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Reserve Labs](https://github.com/ReserveLabs) | AlgoCash - An algorithmic stablecoin | [GitHub](https://github.com/ReserveLabs/AlgoCash) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [gmajor](https://github.com/gmajor-encrypt) | PHP Scale Codec | [GitHub](https://github.com/gmajor-encrypt/php-scale-codec) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Trust Fractal GmbH](https://trustfractal.com/) | ink! Smart Contract Upgradeability | [GitHub](https://github.com/trustfractal/ink-upgrade-template) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Starry Network](https://github.com/Starry-Network) | Splittable NFTs | [GitHub](https://github.com/Starry-Network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
