@@ -258,7 +258,7 @@
 | [Stake Technologies](https://stake.co.jp/en/) | ZK Rollups Pallet | [GitHub](https://github.com/staketechnologies) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Apron Network](https://apron.network/) | Decentralized infrastructure provider | [GitHub](https://github.com/apron-network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Pocket 4D](https://pocket4d.io) | Substrate Dart API client | [GitHub](https://github.com/Pocket4D) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Listen](https://listen.io/) | Decentralized social network focusing on sound | [GitHub](https://github.com/ListenTeam) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Listen](https://listen.io/) | Decentralized social network focusing on sound | [GitHub](https://github.com/ListenTeam) | <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Protofire](https://protofire.io/) | Polkadot Mempool Explorer | [GitHub](https://github.com/protofire) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Fuzhou Wakanda Information Technology](https://www.heizuan.com/) | Black Diamond Wallet | [GitHub](https://github.com/bdwallet) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Konomi](http://konomi.network/) | Pool Lending Module | [GitHub](https://github.com/konomi-network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
