@@ -382,3 +382,4 @@
 | [Reaudito](https://shivarthu.reaudito.com/#/) | Shivarthu: A blockchain-based decentralized governance system | [GitHub](https://github.com/amiyatulu/shivarthu) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | Uniscan | NFT Explorer | [GitHub](https://github.com/wuminzhe) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [LimeChain](https://limechain.tech) | Subsembly - Support for GRANDPA | [GitHub](https://github.com/LimeChain) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [OpenSquare](https://www.opensquare.network) | Off-chain voting platform | [GitHub](https://github.com/opensquare-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
