@@ -81,7 +81,7 @@ Project Product Director, Master of User Experience at Kingston University, Lond
 In the milestone, our team will completed core code development to realize one-level rebates on the smart contract
 
 | Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
+| ----- | ----------- | ------------- |
 | 0a. | License | MIT |
 | 0b. | Documentation | Documentation includes contract interface description documentation, invocation examples. |
 | 0c. | Testing Guide | Core functions will have test demo coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to use test demo. |
@@ -98,7 +98,7 @@ In the milestone, our team will completed core code development to realize one-l
 In the milestone, our team will realize two-level rebates on the smart contract. We will test this project in the parallel chain which is compatible with EVM. We will deliver developer document of Rlink and a demo of Rlink
 
 | Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
+| ----- | ----------- | ------------- |
 | 0a. | License | MIT |
 | 0b. | Documentation | Documentation includes contract interface description documentation, invocation examples. |
 | 0c. | Testing Guide | Core functions will have test demo coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to use test demo. |
