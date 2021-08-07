@@ -179,6 +179,10 @@ We have Element channels for real-time discussions on Web3 and Polkadot. Join th
 
 - [Web3 Foundation](https://app.element.io/#/room/#w3f:matrix.org)
 - [Polkadot Watercooler](https://app.element.io/#/room/#polkadot-watercooler:web3.foundation)
+- [Kusama Watercooler](https://app.element.io/#/room/#kusamawatercooler:web3.foundation)
+
+Besides, we also have a **community room for all grant recipients**. Head over to that room to share your experience with other grantees, ask grants-related questions or simply hang out:
+- [W3F Grants Community](https://app.element.io/#/room/!XpynPDLusWUWfDpaqr:matrix.org)
 
 ## :rocket: Alternative Funding Sources
 
