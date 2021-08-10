@@ -222,8 +222,8 @@ SimPolk has completed the framework development of blockchain, but the data stru
 | :----- | ------------- | ------------------------------------------------------------ |
 | 0a.    | License       | Apache 2.0                                                   |
 | 0b.    | Documentation | Instructions for use and data structure will be provided     |
-| 0c.    | Testing Guide | Unit test the functions of API / lib / simulator.class.php file and provide unit test code |
-| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0c.    | Testing Guide | Unit test the functions of 'api/lib/simulator.class.php' file and provide unit test code |
+| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.<br />1.Simchain browser to explorer the data struct.<br />2.The block data struct is the same as actual parachain of Polkadot.<br /> |
 
 
 
@@ -239,8 +239,8 @@ Complete the simulation of smart contract, so that simPolk users can understand 
 | :----- | ------------- | ------------------------------------------------------------ |
 | 0a.    | License       | Apache 2.0                                                   |
 | 0b.    | Documentation | Documentation for the creation and execution of smart contracts, as well as instructions on how to simulate the implementation of smart contracts |
-| 0c.    | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0c.    | Testing Guide | Unit test the contract functions of 'api/lib/simulator.class.php' file and provide unit test code |
+| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.<br />1.Smart contract can be added in the portal of simPolk.<br />2.Smart contract can be called in the portal of simPolk.<br />3.Smart contract can work properly as same as actual parachain of simPolk. |
 
 
 
@@ -252,14 +252,14 @@ Complete the simulation of smart contract, so that simPolk users can understand 
 
 * **Costs:** 6,000 USD
 
-Switch the data request of virtual block world to simPolk to verify whether simPolk can help application development. Verifying simPolk 's simulation function can help application development verify data structures and smart contracts, and can quickly join Polkadot ecosystem.
+Switch the data request of [virtual block world](https://github.com/ff13dfly/VirtualBlockWorld) to simPolk to verify whether simPolk can help application development. Verifying simPolk 's simulation function can help application development verify data structures and smart contracts, and can quickly join Polkadot ecosystem.
 
 | Number | Deliverable   | Specification                                                |
 | :----- | ------------- | ------------------------------------------------------------ |
 | 0a.    | License       | Apache 2.0                                                   |
 | 0b.    | Documentation | Provides the PHP class file for virtual block world integration, which explains in detail how to realize the function. |
-| 0c.    | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0c.    | Testing Guide | Unit test the VBW functions of 'api/sim/vblock.class.php' file and provide unit test code |
+| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.VBW means [virtual block world](https://github.com/ff13dfly/VirtualBlockWorld)<br />1.VBW's vblock data can be storaged to the simchain.<br />2.VBW's vblock data can be updated to the simchain.<br />3.VBW's application ( Javascript ) can be loaded from the simchain. |
 
 
 
