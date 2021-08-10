@@ -1,34 +1,38 @@
-# This is a basic workflow to help you get started with Actions
-
 name: ask_for_details
 
-# Controls when the action will run. Triggers the workflow on push or pull request 
-# events but only for the master branch
 on:
   pull_request_target:
     types: [labeled]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   request_details:
     if: github.event.label.name == 'details missing'
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@master
         with:
           message: > 
-            Thank you for submitting a grant application.<br/><br/>
-            We checked your submission and found that it contains insufficient details in order to be considered for review.
-            We encourage you to improve your application by including as much technical specifications as possible.
-            You will find general guidelines on what we expect from teams [here](https://github.com/w3f/Open-Grants-Program/blob/master/applications/application-template.md#project-details).
-            Depending on what type of software you're building, you may also find [these category specific requirements](https://github.com/w3f/Open-Grants-Program/blob/master/src/grant_guidelines_per_category.md) useful.<br/><br/>
-            We hope to see an update from you soon!
+            Thank you for submitting a grant application.<br/>
+            
+            We've assessed your submission and have found that it requires a higher level
+            of technical detail in order to be considered for review. We encourage you to
+            expand on it by providing a more precise specification/technical details. The
+            [section on project details](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md#project-details)
+            in the application template is a good reference as to what type of information
+            we expect applicants to provide, and these
+            [category-specific requirements](https://github.com/w3f/Grants-Program/blob/master/docs/grant_guidelines_per_category.md)
+            contain more precise guidelines depending on what type of software you're building.<br/>
+
+            An area of the application that we often find to be insufficiently elaborated are the
+            milestone deliverables. At a minimum, please indicate what languages/technologies
+            you will be using to implement each deliverable, and provide a technical summary
+            of its expected functionality. Note that deliverables should be tangible, reusable
+            by other teams and in most cases not already present in the ecosystem. If they are,
+            you will need to provide a comparison to existing implementations and explain why
+            it makes sense to fund your approach. Also see our
+            [FAQ](https://github.com/w3f/Grants-Program/blob/master/docs/faq.md#-general)
+            for a breakdown of what we fund and what we don't.<br/>
+
+            Let us know as soon as you're done with your changes, and we'll give your application another look!
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

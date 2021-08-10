@@ -97,7 +97,7 @@ Contributions to other projects (Libra & Cosmos SDK):
 
 - **Total Estimated Duration:** 4 months.
 - **Total Effort:** 357 days.
-- **Total Costs:** 1.576 (30000$ equivalent).
+- **Total Costs:** 1.4658 BTC.
 
 ### Milestone 1 - Pre-Alpha version of Move pallet
 
@@ -124,19 +124,18 @@ Contributions to other projects (Libra & Cosmos SDK):
 - **Estimated Duration:** 1.5 month
 - Working days **x** ppl. **:** 28 **x** 5
 - Effort: 140 days
-- **Costs:** 0.661 BTC
+- **Costs:** 0.5508 BTC
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0. | Adopt storage             | Library that converts Move WriteSet in compatible format for Polkadot storage (LCS → Polkadot codec). |
-| 1. | WriteSets processing      | Process WriteSets from MoveVM to Polka storage. Read/Write operations, Del operations. |
-| 2. | Events processing         | Process Move events format to Polkadot one and publish them to block. | 
-| 3. | Publish Transaction       | Create a transaction type to support Move module publishing. |
-| 4. | Execute Arguments Parsing | To enable execute script transactions support we need to parse script arguments. |
-| 5. | Standard Library          | Move Standard Library Module adoption for Polkadot. |
-| 6. | Execute Transaction       | Create a transaction type to execute Move scripts. |
-| 7. | Unit-tests                | Cover 60% of the pallet functional with unit tests. | 
-| 8. | Resource viewer           | Resource viewer to view Move resources from Substrate node storage. |
+| 0. | WriteSets processing      | Process WriteSets from MoveVM to Polka storage. Read/Write operations, Del operations. |
+| 1. | Events processing         | Process Move events format to Polkadot one and publish them to block. | 
+| 2. | Publish Transaction       | Create a transaction type to support Move module publishing. |
+| 3. | Execute Arguments Parsing | To enable execute script transactions support we need to parse script arguments. |
+| 4. | Standard Library          | Move Standard Library Module adoption for Polkadot. |
+| 5. | Execute Transaction       | Create a transaction type to execute Move scripts. |
+| 6. | Unit-tests                | Cover 60% of the pallet functional with unit tests. | 
+| 7. | Resource viewer           | Resource viewer to view Move resources from Substrate node storage. |
 
 ### Milestone 3 — Beta version & Ecosystem
 

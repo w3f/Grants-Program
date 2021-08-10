@@ -32,6 +32,7 @@ The example team has 15 years of experience building applications in XYZ. We als
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
+| 0. | Apache License 2.0 | All code will be published under Apache 2.0 |
 | 1. | Coded types | This deliverable includes the following types of polkadot-js/api integrated into XYZ including unit tests: AbstractArray, Base, Compact, Enum, Int, ...|  
 | 2.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone | 
 | 4.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute | 
@@ -44,6 +45,7 @@ The example team has 15 years of experience building applications in XYZ. We als
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
+| 0. | Apache License 2.0 | All code will be published under Apache 2.0 |
 | 1.  | Primitive types| This deliverable includes the following types of polkadot-js/api integrated into XYZ including unit tests: AccountId, AccountIndex, AccountInfo, Address, Bool, Bytes, ... |  
 | 2.  | Docker | A docker container that will also run on CI to test the deliverables of the milestone| 
 | 3.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute| 

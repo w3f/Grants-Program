@@ -54,7 +54,7 @@ A complete decentralized financial network must has a privacy layer. Users are c
 
 ### Legal Structure 
 
-* Zhejiang Ruishi Technology Co., Ltd; Room 401, building 3, xixixin building, Xihu District, Hangzhou City, Zhejiang Province
+* EVANESCO FOUNDATION LTD, 3 Fraser Street #05-25 Duo Tower Singapore 189352.
 
 ### Team's experience
 
