@@ -68,7 +68,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Mobile Wallets|  [Lunie](https://github.com/luniehq/lunie), [Polkawallet](https://github.com/polkawallet-io/polkawallet-flutter), [Parity Signer](https://github.com/paritytech/parity-signer), [imToken](https://github.com/consenlabs/token-core), [Fearless Wallet Android](https://github.com/soramitsu/fearless-Android), [Fearless Wallet iOS](https://github.com/soramitsu/fearless-iOS), [Stylo](https://github.com/stylo-app/stylo)  
 | Burner Wallets/Faucet| [KodaDot](https://kodadot.js.org/) | Faucet (a sybil-resistant way to receive free tokens)
 | CLI Wallet | [Subwallet](https://github.com/yxf/subwallet), [Proxy-hot-wallet](https://github.com/canontech/proxy-hot-wallet)
-| Multisignature Wallets| [Subscan Multisig UI](https://github.com/itering/subscan-multisig-ui) |
+| Multisignature Wallets| [Subscan Multisig UI - React](https://github.com/itering/subscan-multisig-react), [Subscan Multisig UI](https://github.com/itering/subscan-multisig-ui) |
 | Hardware Wallets | [Ledger Polkadot](https://github.com/ZondaX/ledger-polkadot), [Ledger Kusama](https://github.com/Zondax/ledger-kusama), [NGRAVE](https://ngrave.io/) | Trezor
 | Block Explorers | [Polkascan](https://github.com/polkascan), [Polkastats](https://github.com/Colm3na), [Subscan](https://github.com/itering/subscan) | Mempool focused explorer (including parachain transaction)
 | Validator Dashboards | [Polkacube](https://github.com/hashquark-io), [YieldScan](https://github.com/buidl-labs/YieldScan), [Hubble](https://github.com/figment-networks/hubble/tree/master/app/controllers/polkadot)
