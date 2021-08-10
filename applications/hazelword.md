@@ -169,13 +169,13 @@ To assist you in defining it, we have created a document with examples for some 
 
 * **Total Estimated Duration:**  5 month
 * **Full-Time Equivalent (FTE):**  45 days with 6 Full-Time 
-* **Total Costs:** $3800
+* **Total Costs:** $7800
 
 ####  M1：Basic module
 
 * **Estimated duration:** 2 month
 * **FTE:**  80
-* **Costs:** 1,000 USD
+* **Costs:** 7,000 USD
 
 | Number | Deliverable | Specification|
 | -----: | ----------- | ------------- |
@@ -184,7 +184,7 @@ To assist you in defining it, we have created a document with examples for some 
 | 0c。| Testing Guide | Provide testing guide documents to provide developers with how to test our code|
 | 0d. | Docker | Login interface, price view interface and mortgage interface |
 | 0e. | Article | An article to introduce |
-| 1. | Price chain |According to the mining rules, every T1 time, the final correct price of the changed block is successfully generated according to the weight <br />Using the Solidity language, running on the virtual machine (EVM) in the Polkadot ecosystem<br />This picture is a good illustration of the price chain(https://github.com/Hazelword/hzl-sol/blob/main/doc/asset.png) |
+| 1. | Price chain |According to the mining rules, every T1 time, the final correct price of the changed block is successfully generated according to the weight <br />Using the lnk language<br />This picture is a good illustration of the price chain(https://github.com/Hazelword/hzl-sol/blob/main/doc/asset.png) |
 | 2. |The generation of price chain  |According to the price quoted by the bidder in T1, the validator must report a new price after the bidder's price transaction, and so on. When the T1 phase is over, the weighted price in T1 is calculated to generate a price chain<br />The price generation of the price chain in the block(https://github.com/Hazelword/hzl-sol/blob/main/doc/hzl-en.jpg)|
 
 
@@ -204,22 +204,6 @@ To assist you in defining it, we have created a document with examples for some 
 | 1. | dapp | Quote Vault UI <br />Use react or vue|
 | 2. | User settings | Users can easily pledge to Quote Vault|
 | 3. | dapp | Data user ui|
-
-####  M3：TEE（Trusted Execution Environment） module
-
-* **Estimated duration:** 2 month
-* **FTE:**  80
-* **Costs:** 1,000 USD
-
-| Number | Deliverable | Specification|
-| -----: | ----------- | ------------- |
-| 0a。| License | GPLv3 |
-| 0b。| Documentation | Publish a document on the principle of Tee, and publish a description of the impact of Tee content on the price chain|
-| 0c。| Testing Guide | Provide test documentation and principle interpretation|
-| 0d. | Docker | Login interface, price view interface and mortgage interface |
-| 0e. | Article | An article to introduce |
-| 1. | TEE module | The tee module is a transparent and safe code block that returns information from multiple trusted institutions to escort the price chain and form a second security threshold|
-| 2. | Documentation |We will release detailed documents about the TEE module to tell users the operating principle of TEE, so that everyone can use the oracle more at ease |
 
 
 ## Future Plans
