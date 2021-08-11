@@ -130,7 +130,7 @@ Additionally, we try to enforce the [code of conduct](CODE_OF_CONDUCT.md) and ba
 
 The W3F Grants Program offers different grant levels to help you best depending on your current stage.  
 
-### Level 1 :hatching_chick:
+### Level 1 (= InstaGrants) :hatching_chick:
   - **Target:** Individuals
   - **Amount:** Up to $10,000
   - **Requirements:** 2 approvals
