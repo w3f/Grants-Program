@@ -354,7 +354,7 @@
 | [HypeLabs Inc.](https://hypelabs.io) | UpLink - Decentralized and infrastructure-free approach to peer-to-peer connectivity | [GitHub](https://github.com/Hype-Labs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | Jackson Harris III | Staking Rewards Viewer | [GitHub](https://github.com/jackson-harris-iii/staking-rewards-viewer) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Klevoya](https://klevoya.com/) | WASM Smart Contract Fuzzer | [GitHub](https://github.com/klevoya/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Perun Network](https://perun.network/) | Perun Channels | [GitHub](https://github.com/perun-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Perun Network](https://perun.network/) | Perun Channels | [GitHub](https://github.com/perun-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [NewOmega](https://github.com/WiktorStarczewski/newomega.trinity ) | A blockchain game that cannot be shut down (Milestone 3 and 4) | [GitHub](https://github.com/WiktorStarczewski/newomega.trinity ) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Webb Tech](https://www.webb.tools/) | Webb Mixer Extended | [GitHub](https://github.com/webb-tools) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Jeton Network](http://www.jeton.network/) | UnitySDK for Substrate | [GitHub](https://github.com/JetonNetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
