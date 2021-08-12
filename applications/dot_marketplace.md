@@ -92,20 +92,17 @@ Any product or services marketplace would qualify, here are some examples from o
 * Bharath Kumar (tester)
 * Smita Ashok (tech content writer)
 
+### Contact
 
-### **Team Website**
-
-* [http://www.wowlabz.com](https://www.wowlabz.com/) 
-
-### **Project Website**
-* Dot marketplace website is under construction
+* **Contact Name:** Amit Singh
+* **Contact Email:** amit (dot) singh (@) wowlabz.com 
+* **Website:** [http://www.wowlabz.com](https://www.wowlabz.com/) 
+* **Project Website** Dot marketplace website is under construction
 
 ### **Legal Structure** 
-* Indian, Private Limited Company 
 
-Wow Labz
-
-[Address](https://g.page/2gethr-ORR): Wow Labz, 2Gethr Cowork, Tower B, Mantri Commercio, Outer Ring Rd, near Sakra World Hospital, Kariyammana Agrahara, Bellandur, Bengaluru, Karnataka 560103
+* **Registered Address:** Wow Labz, 2Gethr Cowork, Tower B, Mantri Commercio, Outer Ring Rd, Bellandur, Bengaluru, Karnataka, India 560103
+* **Registered Legal Entity:** Wow Internet Labz Private Limited 
 
 ### **Team&#39;s experience**
 
@@ -132,6 +129,17 @@ Profiles of the people working actively on Dot Marketplace
 * [Loakesh Indiran](https://www.linkedin.com/in/loakesh-indiran-8a2282140)
 * [Bharath Kumar](https://www.linkedin.com/in/bharath-kumar-h-13a572126/)
 * [Smita Ashok](https://www.linkedin.com/in/smita-ashok-823631175/)
+
+## Development Status :open_book: <-- TBD 
+
+If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+
+* links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
+* academic publications relevant to the problem,
+* links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
+* references to conversations you might have had related to this project with anyone from the Web3 Foundation,
+* previous interface iterations, such as mock-ups and wireframes.
+
 
 ## **Development Roadmap**🔩
 
@@ -239,3 +247,10 @@ Future releases of the Dot Marketplace include:
 
 
 ###
+
+## Additional Information :heavy_plus_sign:
+
+**How did you hear about the Grants Program?** Web3 Foundation Website, Polkadot India Buildathon 
+
+* We have been working on this roadmap since we applied for the Web3 grant
+
