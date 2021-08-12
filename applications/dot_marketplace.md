@@ -1,8 +1,9 @@
 # **Dot Marketplace**
 
 * **Status:** Open
-* **Proposer:** Wow Labz  
-* **USDT Wallet Address:** 0xF13001401396AA866E8012f31fD939C7E83B8601  
+* **Project Name:** Dot Marketplace
+* **Team Name:** Wow Labz  
+* **Payment Address:** 0xF13001401396AA866E8012f31fD939C7E83B8601  
 * **Level:** 2  
 
 
@@ -105,7 +106,7 @@ Any product or services marketplace would qualify, here are some examples from o
 * **Registered Address:** Wow Labz, 2Gethr Cowork, Tower B, Mantri Commercio, Outer Ring Rd, Bellandur, Bengaluru, Karnataka, India 560103
 * **Registered Legal Entity:** Wow Internet Labz Private Limited 
 
-### **Team&#39;s experience**
+### **Team's experience**
 
 Dot Marketplace is being built by the team at Wow Labz.
 Wow Labz is one of India&#39;s leading turnkey product development companies.
@@ -120,7 +121,7 @@ A list of centralised apps published can be found [here](https://www.wowlabz.com
 * [https://github.com/WowLabz/tasking\_backend](https://github.com/WowLabz/tasking_backend)
 * [https://github.com/WowLabz/tasking\_frontend](https://github.com/WowLabz/tasking_frontend)
 
-### **Team LinkedIn Profiles (if available)**
+### **Team LinkedIn Profiles**
 
 Profiles of the people working actively on Dot Marketplace
 * [Amit Singh](https://www.linkedin.com/in/startupamit/)
@@ -150,6 +151,13 @@ For the custom pallet (tasking) we have:
 All the below mentioned milestones are going to be an RFP response and this application is going to be fully public.
   
 NOTE: A barebones UI would also be provided as a part of this submission to help the developer experience the functionality
+
+### Overview
+
+* **Total Estimated Duration:** 2 months
+* **Full-Time Equivalent (FTE):**  5.9125
+* **Total Costs:** 18,920 USD (half of the development fee is financed by Yoda) 
+
 
 ### **Milestone 1**
 
@@ -215,13 +223,8 @@ The deliverable for this milestone is that we will be providing a multi user sce
 | 2      | Tagging Module | Support for smart tags with the user profiles for programmatic track/domain alignment in the future        |
 | 3      | File Transfer Module  | API connections to cloud storage async upload/download of small files via Rocket      |
 | 4      | Frontend App | Supporting frontend UI to test the aforementioned functionality   |
-
-
-### **Summary:**
-
-* **Team count:** 7  
-* **Total duration:** 2 months  
-* **Total cost:** 18,920 USD   
+| 5      | Website | Dedicated one page website for Dot Marketplace |  
+| 6      | Article | Website article sharing the motivation behind Dot Marketplace and how to make best use of it      |
 
 
 ### **Additional Project Details**
