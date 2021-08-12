@@ -1,13 +1,26 @@
 # **Dot Marketplace**
 
-- Status: Open
-- Proposer: Wow Labz  
-- USDT Wallet Address: 0xF13001401396AA866E8012f31fD939C7E83B8601  
-- Projects you think this work could be useful for: [Polkadot](https://polkadot.network/), [Kusama](https://kusama.network/), [Moonbeam](https://moonbeam.network/) and any Polkadot parachains/ parathreads interested in including a marketplace 
+* **Status:** Open
+* **Proposer:** Wow Labz  
+* **USDT Wallet Address:** 0xF13001401396AA866E8012f31fD939C7E83B8601  
+* **Level:** 2  
 
-### **Overview** 📄
 
-Dot Marketplace is a general purpose decentralised marketplace created as a Substrate pallet.  
+## Project Overview :page_facing_up:
+
+If this application is in response to an RFP, please indicate this on the first line of this section.
+
+If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+
+### **Overview**
+
+Dot Marketplace is a general purpose decentralised marketplace created as a Substrate pallet. 
+* Dot Marketplace can be used by any decentralised project to float tasks and invite their community members to execute them for a reward. Its MVP was developed during the Polkadot India buildathon (2021).  
+* It could be directly integrated in Polkadot JS Apps where such marketplaces could be used to create bounties and tasks that could be fulfilled by community members. 
+* The inspiration for Dot Marketplace emerged from our own needs while building Yoda - a protocol that facilitates decentralised app development leveraging open data. Dot Marketplace would be used to create data, services and app marketplaces on Yoda, which would motivate us to maintain this project in the long run.
+
+
+### **Project Details**
 
 The current scope of work involves two user types: **Customer** and **Service Provider (or Worker)**
 
@@ -53,9 +66,9 @@ The current focus is to enhance the existing Substrate pallet and allied code ba
 
 ### **Ecosystem Fit**
 
-Dot Marketplace can be used by any decentralised project to float tasks and invite their community members to execute them for a reward. Its MVP was developed during the Polkadot India buildathon (2021).  
-
-The inspiration for Dot Marketplace emerged from our own needs while building Yoda - a protocol that facilitates decentralised app development leveraging open data. Dot Marketplace would be used to create data, services and app marketplaces on Yoda, which would motivate us to maintain this project in the long run. 
+----- TBD 
+----- TBD
+We believe this work could be useful for: [Polkadot](https://polkadot.network/), [Kusama](https://kusama.network/), [Moonbeam](https://moonbeam.network/) and any Polkadot parachains/ parathreads interested in including a marketplace. 
 
 ![dotmarketplacegif](https://user-images.githubusercontent.com/11945179/124598936-c9f01000-de82-11eb-91d5-b2e37f1791df.gif)
 
