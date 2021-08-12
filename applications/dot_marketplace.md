@@ -47,6 +47,9 @@ Service Provider (Worker)
 
 Dot Marketplace is being built as a Substrate pallet. It would include boilerplate code that parachain teams can customize as per their own requirements. We believe this project has the potential to transform community participation, engagement and governance in decentralized projects.
 
+Dot Marketplace will also include frontend UI built on top of the `substrate-front-end-template`, here is a snapshot of the same 
+![dotmarketplacegif](https://user-images.githubusercontent.com/11945179/124598936-c9f01000-de82-11eb-91d5-b2e37f1791df.gif) <-- To be changed
+
 
 ### **Repository Hierarchy**
 ```
@@ -68,8 +71,6 @@ The current focus is to enhance the existing Substrate pallet and allied code ba
 
 We believe this work could be useful for: [Polkadot](https://polkadot.network/), [Kusama](https://kusama.network/), [Moonbeam](https://moonbeam.network/) and any Polkadot parachains/ parathreads interested in including a marketplace. 
 * Almost all Parachains/ parathreads would find motivation in encouraging their community members to contribute meaningfully to their roadmap. This can be achieved by utilising a marketplace like Dot Marketplace where technical, marketing or governance centric tasks can be published. And community members are invited to bid for and exectute them. 
-
-![dotmarketplacegif](https://user-images.githubusercontent.com/11945179/124598936-c9f01000-de82-11eb-91d5-b2e37f1791df.gif)
 
 **List of Competitors**
 
