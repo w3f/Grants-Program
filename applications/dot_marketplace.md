@@ -27,7 +27,7 @@ Customer
 :-------------------------:
 <img src = "https://user-images.githubusercontent.com/11945179/125753620-e1b094dc-552e-4a4f-9826-23cbefe3a677.png" widht=600>
 
-Worker
+Service Provider (Worker)
 :-------------------------:
 <img src = "https://user-images.githubusercontent.com/11945179/125753635-1cc3170e-7a19-410e-a350-93f75a10e93f.png" widht=600>
 
@@ -71,24 +71,24 @@ Any product or services marketplace would qualify, here are some examples from o
 
 ### **Team members**
 
-- Amit Singh (product manager)
-- Roshit Omanakuttan (technical architect)
-- Varun Gyanchandani (backend lead)
-- Loakesh Indiran (full stack dev)
-- Siddharth Teli (backend dev)
-- Bharath Kumar (tester)
-- Smita Ashok (tech content writer)
+* Amit Singh (product manager)
+* Roshit Omanakuttan (technical architect)
+* Varun Gyanchandani (backend lead)
+* Loakesh Indiran (full stack dev)
+* Siddharth Teli (backend dev)
+* Bharath Kumar (tester)
+* Smita Ashok (tech content writer)
 
 
 ### **Team Website**
 
-- [http://www.wowlabz.com](https://www.wowlabz.com/) 
+* [http://www.wowlabz.com](https://www.wowlabz.com/) 
 
 ### **Project Website**
-- Dot marketplace website is under construction
+* Dot marketplace website is under construction
 
 ### **Legal Structure** 
-- Indian, Private Limited Company 
+* Indian, Private Limited Company 
 
 Wow Labz
 
@@ -105,20 +105,20 @@ A list of centralised apps published can be found [here](https://www.wowlabz.com
 
 ### **Team Code Repos**
 
-- [https://github.com/orgs/WowLabz/projects](https://github.com/orgs/WowLabz/projects) 
-- [https://github.com/WowLabz/tasking\_backend](https://github.com/WowLabz/tasking_backend)
-- [https://github.com/WowLabz/tasking\_frontend](https://github.com/WowLabz/tasking_frontend)
+* [https://github.com/orgs/WowLabz/projects](https://github.com/orgs/WowLabz/projects) 
+* [https://github.com/WowLabz/tasking\_backend](https://github.com/WowLabz/tasking_backend)
+* [https://github.com/WowLabz/tasking\_frontend](https://github.com/WowLabz/tasking_frontend)
 
 ### **Team LinkedIn Profiles (if available)**
 
 Profiles of the people working actively on Dot Marketplace
-- [Amit Singh](https://www.linkedin.com/in/startupamit/)
-- [Roshit Omanakuttan](https://www.linkedin.com/in/roshit/)
-- [Varun Gyanchandani](https://www.linkedin.com/in/varunsays/)
-- [Siddharth Teli](https://www.linkedin.com/in/siddharthteli/) 
-- [Loakesh Indiran](https://www.linkedin.com/in/loakesh-indiran-8a2282140)
-- [Bharath Kumar](https://www.linkedin.com/in/bharath-kumar-h-13a572126/)
-- [Smita Ashok](https://www.linkedin.com/in/smita-ashok-823631175/)
+* [Amit Singh](https://www.linkedin.com/in/startupamit/)
+* [Roshit Omanakuttan](https://www.linkedin.com/in/roshit/)
+* [Varun Gyanchandani](https://www.linkedin.com/in/varunsays/)
+* [Siddharth Teli](https://www.linkedin.com/in/siddharthteli/) 
+* [Loakesh Indiran](https://www.linkedin.com/in/loakesh-indiran-8a2282140)
+* [Bharath Kumar](https://www.linkedin.com/in/bharath-kumar-h-13a572126/)
+* [Smita Ashok](https://www.linkedin.com/in/smita-ashok-823631175/)
 
 ## **Development Roadmap**🔩
 
@@ -134,32 +134,32 @@ NOTE: A barebones UI would also be provided as a part of this submission to help
 
 ### **Milestone 1**
 
-Duration: 2 weeks  
-FTEs: 1  
-PTEs: 4  
-Costs: 3,220 USDT    // rest is funded by Yoda  
+* **Estimated duration:** 2 weeks
+* **FTE:**  1
+* **PTE:**  4
+* **Costs:** 3,220 USDT    // rest is funded by Yoda  
 
 
-The main deliverable for this milestone will be to allow a user to register via a registration form and link her Polkawallet account along with role based switching from Service Provider view to Customer view and visa versa.
+The main deliverable for this milestone will be to allow a user to register via a registration form and link her wallet account along with role based switching from Service Provider view to Customer view and visa versa.
 
 
 | Number        | Deliverable   | Specification  |
 | :-------------|:-------------:| :--------------|
 | 0a      | License | Apache 2.0         |
 | 0b      | [Documentation](https://github.com/WowLabz/tasking_backend) | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of tasking pallet.         |
-| 0c      | Testing Guide | Scripts to help  deploy, run and test the build  |
+| 0c      | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build.  |
 | 0d      | Docker Image | Docker image of the build | 
 | 1      | Registration Module | Form based user registration         |
-| 2      | Wallet Linking | Support for user to link their Polkawallet with the account.     |
+| 2      | Wallet Linking | Support for user to link their Polkadot Js apps with the account.     |
 | 3      | Profile Module | Support for role based screens to ease the usability for users  |
 
 
 ### **Milestone 2**
   
-Duration: 3 weeks  
-FTEs: 2  
-PTEs: 4  
-Costs: 7,440 USDT    // rest is funded by Yoda  
+* **Estimated duration:** 3 weeks
+* **FTE:**  2
+* **PTE:**  4
+* **Costs:** 7,440 USDT    // rest is funded by Yoda  
  
 In continuation to the previous work, we will be working on a rating system for both Customer and Service Provider. This rating will eventually be the motivating factor for performance in the network to be incentivized for quality work. :
 
@@ -168,7 +168,7 @@ In continuation to the previous work, we will be working on a rating system for 
 | :-------------|:-------------:| :--------------|
 | 0a      | License | Apache 2.0         |
 | 0b      | [Documentation](https://github.com/WowLabz/tasking_backend) | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of tasking pallet.         |
-| 0c      | Testing Guide | Scripts to help  deploy, run and test the build  |
+| 0c      | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build.  |
 | 0d      | Docker Image | Docker image of the build | 
 | 1      | Rating Module | Support for profile based rating using substrate balances, treasury and staking pallets to be integrated with our custom tasking pallet to weigh the user's performance and rewards based rating system.          |
 | 2      | Programmatic Wallet Transfer | Substrate based Smart Contract transfer function for programmatic/automated transfer of tokens from one application/user to the other.         |
@@ -177,10 +177,10 @@ In continuation to the previous work, we will be working on a rating system for 
   
 ### **Milestone 3**
   
-Duration: 3 weeks  
-FTEs: 2  
-PTEs: 5  
-Costs: 8,260 USDT    // rest is funded by Yoda  
+* **Estimated duration:** 3 weeks
+* **FTE:**  2
+* **PTE:**  5
+* **Costs:** 8,260 USDT    // rest is funded by Yoda   
 
 The deliverable for this milestone is that we will be providing a multi user scenario to test the functionality and integrate with storage and backend APIs for multipart data to be uploaded and downloaded.
 
@@ -188,7 +188,7 @@ The deliverable for this milestone is that we will be providing a multi user sce
 | :-------------|:-------------:| :--------------|
 | 0a      | License | Apache 2.0         |
 | 0b      | [Documentation](https://github.com/WowLabz/tasking_backend) | Documentation of the entire pallet, a guide for developers forking the project including FAQ 
-| 0c      | Testing Guide | Scripts to help  deploy, run and test the build  |
+| 0c      | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build.  |
 | 0d      | Docker Image | Docker image of the build | 
 | 1      | Multiuser Module | Support for multiple Substrate seed users to test the functionality and make the task based transactions as per the Status mentioned. Substrate based Lockable currency for reserving user funds and allowing the escrow unlock after the approved status.         |
 | 2      | Tagging Module | Support for smart tags with the user profiles for programmatic track/domain alignment in the future        |
@@ -197,17 +197,17 @@ The deliverable for this milestone is that we will be providing a multi user sce
 
 ### **Summary:**
 
-Team count: 7  
-Total duration: 2 months  
-Total cost: 18,920 USD  
+* **Team count:** 7  
+* **Total duration:** 2 months  
+* **Total cost:** 18,920 USDT   
 
 
 ### **Additional Project Details**
 
-- Technology stack to be used
-  - Rust, Substrate, React, Python, centralised cloud storage
-- Documentation of workflows, architecture etc.
-  - [User Workflows](https://drive.google.com/drive/folders/1tLV5q5iRt7Rz-F89UBKalfQ_C-JzbUe4?usp=sharing)
+* Technology stack to be used
+  * Rust, Substrate, React, Python, centralised cloud storage
+* Documentation of workflows, architecture etc.
+  * [User Workflows](https://drive.google.com/drive/folders/1tLV5q5iRt7Rz-F89UBKalfQ_C-JzbUe4?usp=sharing)
 
 
 
