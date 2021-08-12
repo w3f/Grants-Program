@@ -66,15 +66,14 @@ The current focus is to enhance the existing Substrate pallet and allied code ba
 
 ### **Ecosystem Fit**
 
------ TBD 
------ TBD
 We believe this work could be useful for: [Polkadot](https://polkadot.network/), [Kusama](https://kusama.network/), [Moonbeam](https://moonbeam.network/) and any Polkadot parachains/ parathreads interested in including a marketplace. 
+* Almost all Parachains/ parathreads would find motivation in encouraging their community members to contribute meaningfully to their roadmap. This can be achieved by utilising a marketplace like Dot Marketplace where technical, marketing or governance centric tasks can be published. And community members are invited to bid for and exectute them. 
 
 ![dotmarketplacegif](https://user-images.githubusercontent.com/11945179/124598936-c9f01000-de82-11eb-91d5-b2e37f1791df.gif)
 
-### **List of Competitors**
+**List of Competitors**
 
-Any product or services marketplace would qualify, here are some examples from outside the Polkadot ecosystem. 
+Any product or services marketplace would qualify, here are some examples from outside the Polkadot/Kusama ecosystem. 
 1. [Human Protocol](https://data.iota.org/#/)
 2. [Effect Network](https://www.snowflake.com/data-marketplace/)
 3. [Ocean Protocol Market](https://market.oceanprotocol.com/)
