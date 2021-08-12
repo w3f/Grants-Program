@@ -48,7 +48,8 @@ Service Provider (Worker)
 Dot Marketplace is being built as a Substrate pallet. It would include boilerplate code that parachain teams can customize as per their own requirements. We believe this project has the potential to transform community participation, engagement and governance in decentralized projects.
 
 Dot Marketplace will also include frontend UI built on top of the `substrate-front-end-template`, here is a snapshot of the same 
-![dotmarketplacegif](https://user-images.githubusercontent.com/11945179/124598936-c9f01000-de82-11eb-91d5-b2e37f1791df.gif) <-- To be changed
+
+![DotMarketplaceU](https://user-images.githubusercontent.com/4363536/129244239-c843d1c7-477f-48b0-8d65-068bd6df9661.gif)
 
 
 ### **Repository Hierarchy**
@@ -75,8 +76,8 @@ We believe this work could be useful for: [Polkadot](https://polkadot.network/),
 **List of Competitors**
 
 Any product or services marketplace would qualify, here are some examples from outside the Polkadot/Kusama ecosystem. 
-1. [Human Protocol](https://data.iota.org/#/)
-2. [Effect Network](https://www.snowflake.com/data-marketplace/)
+1. [Human Protocol](https://www.humanprotocol.org/)
+2. [Effect Network](https://effect.ai/)
 3. [Ocean Protocol Market](https://market.oceanprotocol.com/)
 
 
@@ -130,15 +131,12 @@ Profiles of the people working actively on Dot Marketplace
 * [Bharath Kumar](https://www.linkedin.com/in/bharath-kumar-h-13a572126/)
 * [Smita Ashok](https://www.linkedin.com/in/smita-ashok-823631175/)
 
-## Development Status :open_book: <-- TBD 
+## Development Status :open_book: 
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+Dot Marketplace POC was conceptualised and developed during the Polkadot India hackathon. The roadmap listed below comprises of new features that would help take the POC to a minimum viable product (MVP). 
 
-* links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-* academic publications relevant to the problem,
-* links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-* references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-* previous interface iterations, such as mock-ups and wireframes.
+* Here's a link to our [Polkadot India Submission Video] (https://youtu.be/xQNOkXQdDnQ)
+* We are in touch with Marcin and Raul from the Web 3 Grants and Treasuries team
 
 
 ## **Development Roadmap**🔩
@@ -158,7 +156,7 @@ NOTE: A barebones UI would also be provided as a part of this submission to help
 * **Estimated duration:** 2 weeks
 * **FTE:**  1
 * **PTE:**  4
-* **Costs:** 3,220 USDT    // rest is funded by Yoda  
+* **Costs:** 3,220 USD    // rest is funded by Yoda  
 
 
 The main deliverable for this milestone will be to allow a user to register via a registration form and link her wallet account along with role based switching from Service Provider view to Customer view and visa versa.
@@ -181,7 +179,7 @@ The main deliverable for this milestone will be to allow a user to register via 
 * **Estimated duration:** 3 weeks
 * **FTE:**  2
 * **PTE:**  4
-* **Costs:** 7,440 USDT    // rest is funded by Yoda  
+* **Costs:** 7,440 USD    // rest is funded by Yoda  
  
 In continuation to the previous work, we will be working on a rating system for both Customer and Service Provider. This rating will eventually be the motivating factor for performance in the network to be incentivized for quality work. :
 
@@ -203,7 +201,7 @@ In continuation to the previous work, we will be working on a rating system for 
 * **Estimated duration:** 3 weeks
 * **FTE:**  2
 * **PTE:**  5
-* **Costs:** 8,260 USDT    // rest is funded by Yoda   
+* **Costs:** 8,260 USD    // rest is funded by Yoda   
 
 The deliverable for this milestone is that we will be providing a multi user scenario to test the functionality and integrate with storage and backend APIs for multipart data to be uploaded and downloaded.
 
@@ -223,12 +221,12 @@ The deliverable for this milestone is that we will be providing a multi user sce
 
 * **Team count:** 7  
 * **Total duration:** 2 months  
-* **Total cost:** 18,920 USDT   
+* **Total cost:** 18,920 USD   
 
 
 ### **Additional Project Details**
 
-* Technology stack to be used
+* Technology stack being used
   * Rust, Substrate, React, Python, centralised cloud storage
 * Documentation of workflows, architecture etc.
   * [User Workflows](https://drive.google.com/drive/folders/1tLV5q5iRt7Rz-F89UBKalfQ_C-JzbUe4?usp=sharing)
