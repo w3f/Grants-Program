@@ -152,6 +152,7 @@ The main deliverable for this milestone will be to allow a user to register via 
 | 1      | Registration Module | Form based user registration         |
 | 2      | Wallet Linking | Support for user to link their Polkadot Js apps with the account.     |
 | 3      | Profile Module | Support for role based screens to ease the usability for users  |
+| 4      | Frontend App | Supporting frontend UI to test the aforementioned functionality   |
 
 
 ### **Milestone 2**
@@ -173,6 +174,7 @@ In continuation to the previous work, we will be working on a rating system for 
 | 1      | Rating Module | Support for profile based rating using substrate balances, treasury and staking pallets to be integrated with our custom tasking pallet to weigh the user's performance and rewards based rating system.          |
 | 2      | Programmatic Wallet Transfer | Substrate based Smart Contract transfer function for programmatic/automated transfer of tokens from one application/user to the other.         |
 | 3      | Asset Restrictions | Support for the locking of assets by time         |
+| 4      | Frontend App | Supporting frontend UI to test the aforementioned functionality   |
 
   
 ### **Milestone 3**
@@ -193,6 +195,7 @@ The deliverable for this milestone is that we will be providing a multi user sce
 | 1      | Multiuser Module | Support for multiple Substrate seed users to test the functionality and make the task based transactions as per the Status mentioned. Substrate based Lockable currency for reserving user funds and allowing the escrow unlock after the approved status.         |
 | 2      | Tagging Module | Support for smart tags with the user profiles for programmatic track/domain alignment in the future        |
 | 3      | File Transfer Module  | API connections to cloud storage async upload/download of small files via Rocket      |
+| 4      | Frontend App | Supporting frontend UI to test the aforementioned functionality   |
 
 
 ### **Summary:**
