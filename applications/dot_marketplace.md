@@ -9,15 +9,11 @@
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
-
 ### **Overview**
 
 Dot Marketplace is a general purpose decentralised marketplace created as a Substrate pallet. 
-* Dot Marketplace can be used by any decentralised project to float tasks and invite their community members to execute them for a reward. Its MVP was developed during the Polkadot India buildathon (2021).  
-* It could be directly integrated in Polkadot JS Apps where such marketplaces could be used to create bounties and tasks that could be fulfilled by community members. 
+* Dot Marketplace can be used by any decentralised project to float tasks and invite their community members to execute them for a reward. Its POC was developed during the Polkadot India buildathon (2021).  
+* It would be directly integrated in Polkadot JS Apps where such marketplaces could be used to create bounties and tasks that could be fulfilled by community members. 
 * The inspiration for Dot Marketplace emerged from our own needs while building Yoda - a protocol that facilitates decentralised app development leveraging open data. Dot Marketplace would be used to create data, services and app marketplaces on Yoda, which would motivate us to maintain this project in the long run.
 
 
@@ -49,8 +45,6 @@ Service Provider (Worker)
 Dot Marketplace is being built as a Substrate pallet. It would include boilerplate code that parachain teams can customize as per their own requirements. We believe this project has the potential to transform community participation, engagement and governance in decentralized projects.
 
 Dot Marketplace will also include frontend UI built on top of the `substrate-front-end-template`, here is a snapshot of the same 
-
-![DotMarketplaceU](https://user-images.githubusercontent.com/4363536/129244239-c843d1c7-477f-48b0-8d65-068bd6df9661.gif)
 
 
 ### **Repository Hierarchy**
@@ -136,21 +130,23 @@ Profiles of the people working actively on Dot Marketplace
 
 Dot Marketplace POC was conceptualised and developed during the Polkadot India hackathon. The roadmap listed below comprises of new features that would help take the POC to a minimum viable product (MVP). 
 
-* Here's a link to our [Polkadot India Submission Video] (https://youtu.be/xQNOkXQdDnQ)
-* We are in touch with Marcin and Raul from the Web 3 Grants and Treasuries team
+* Here's a link to our [Polkadot India Submission Video](https://youtu.be/xQNOkXQdDnQ)
+* We are in touch with Marcin and Raul from the Web 3 Grants and Treasuries team respectively
 
 
 ## **Development Roadmap**🔩
 
 The development of Dot Marketplace is already underway. 
-For the custom pallet (tasking) we have: 
-1. Used various Substrate provided traits like - `Currency`, `ExistenceRequirement`, `LockIdentifier`, `LockableCurrency`, `ReservableCurrency` and few more;
-2. Used the pre-existing pallets like `assets`, `balances` and `staking`;
-3. Implemented custom structs like `TaskDetails` and `TransferDetails`. These in return are used for various functionalities like `create_task`, `bid_task`, `complete_task` and `approve_task`. A special transfer money function is only initiated once the task cycle gets completed and the escrow funds are released to the worker. 
+For the custom pallet (tasking) we are: 
+1. Using various Substrate provided traits like - `Currency`, `ExistenceRequirement`, `LockIdentifier`, `LockableCurrency`, `ReservableCurrency` and few more;
+2. Using the pre-existing pallets like `assets`, `balances` and `staking`;
+3. Implementing custom structs like `TaskDetails` and `TransferDetails`. These in turn are used for various functionalities like `create_task`, `bid_task`, `complete_task` and `approve_task`. A special transfer money function is only initiated once the task cycle gets completed and the escrow funds are released to the worker. 
 
-All the below mentioned milestones are going to be an RFP response and this application is going to be fully public.
+All the below mentioned milestones are going to be implemented and this application is going to be fully public.
   
 NOTE: A barebones UI would also be provided as a part of this submission to help the developer experience the functionality
+
+![DotMarketplaceU](https://user-images.githubusercontent.com/4363536/129244239-c843d1c7-477f-48b0-8d65-068bd6df9661.gif)
 
 ### Overview
 
@@ -189,7 +185,7 @@ The main deliverable for this milestone will be to allow a user to register via 
 * **PTE:**  4
 * **Costs:** 7,440 USD    // rest is funded by Yoda  
  
-In continuation to the previous work, we will be working on a rating system for both Customer and Service Provider. This rating will eventually be the motivating factor for performance in the network to be incentivized for quality work. :
+In continuation to the previous work, we will be working on a rating system for both Customer and Service Provider. This rating will eventually be the motivating factor for performance in the network. It would also help in designing incentives in future. 
 
 
 | Number        | Deliverable   | Specification  |
@@ -231,9 +227,6 @@ The deliverable for this milestone is that we will be providing a multi user sce
 
 * Technology stack being used
   * Rust, Substrate, React, Python, centralised cloud storage
-* Documentation of workflows, architecture etc.
-  * [User Workflows](https://drive.google.com/drive/folders/1tLV5q5iRt7Rz-F89UBKalfQ_C-JzbUe4?usp=sharing)
-
 
 
 ### **Future Plans** 
@@ -241,7 +234,7 @@ Future releases of the Dot Marketplace include:
 
 | Phase        | Deliverable   | Specification  |
 | :-------------|:-------------:| :--------------|
-| 2      | Decentralised Court | A fully decentralised dispute resolution mechanism along with configurible rules for slashing and reputation.          |
+| 2      | Decentralised Court | A fully decentralised dispute resolution mechanism along with configurable rules for slashing and reputation.          |
 | 3      | Milestone based submissions | Making provisions to breakdown a project into multiple configurable milestones to allow parallel or sequential execution        |
 | 4     | Decentralised Storage | Integration with IPFS or another decentralised storage platform        |
 
