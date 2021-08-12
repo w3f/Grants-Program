@@ -85,6 +85,7 @@ In the indirect oracle, the credit risk of the node uploading the data determine
 * Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 * What need(s) does your project meet?
 
+Our early thoughts were based on Vitalik Buterin article “UNI should become an oracle token” (https://gov.uniswap.org/t/uni-should- become-an-oracle-token/11988), this article has a big idea of our project
 | Number | Deliverable | Specification | Data Verification Time|
 | -----: | ----------- | ------------- | --------------------- |
 |ChainLink |Off-chain centralized submission, on-chain aggregation|YES|Post, after the data becomes effective|
@@ -184,7 +185,7 @@ To assist you in defining it, we have created a document with examples for some 
 | 0c。| Testing Guide | Provide testing guide documents to provide developers with how to test our code|
 | 0d. | Docker | Login interface, price view interface and mortgage interface |
 | 0e. | Article | An article to introduce |
-| 1. | Price chain |According to the mining rules, every T1 time, the final correct price of the changed block is successfully generated according to the weight <br />Using the lnk language<br />This picture is a good illustration of the price chain(https://github.com/Hazelword/hzl-sol/blob/main/doc/asset.png) |
+| 1. | Price chain |According to the mining rules, every T1 time, the final correct price of the changed block is successfully generated according to the weight <br />Using the ink! <br />This picture is a good illustration of the price chain(https://github.com/Hazelword/hzl-sol/blob/main/doc/asset.png) <br/ >This is the version using solidity( https://github.com/Hazelword)|
 | 2. |The generation of price chain  |According to the price quoted by the bidder in T1, the validator must report a new price after the bidder's price transaction, and so on. When the T1 phase is over, the weighted price in T1 is calculated to generate a price chain<br />The price generation of the price chain in the block(https://github.com/Hazelword/hzl-sol/blob/main/doc/hzl-en.jpg)|
 
 
@@ -201,7 +202,7 @@ To assist you in defining it, we have created a document with examples for some 
 | 0c。| Testing Guide | UI components will be covered by visual testing|
 | 0d. | Docker | Login interface, price view interface and mortgage interface |
 | 0e. | Article | An article to introduce |
-| 1. | dapp | Quote Vault UI <br />Use react or vue|
+| 1. | dapp | Quote Vault UI <br />Use react or vue we have a design model (https://github.com/Hazelword/hzl-sol/blob/main/doc/h1.png) (https://github.com/Hazelword/hzl-sol/blob/main/doc/h2.png) (https://github.com/Hazelword/hzl-sol/blob/main/doc/h3.png)|
 | 2. | User settings | Users can easily pledge to Quote Vault|
 | 3. | dapp | Data user ui|
 
