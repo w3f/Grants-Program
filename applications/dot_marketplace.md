@@ -150,7 +150,7 @@ The main deliverable for this milestone will be to allow a user to register via 
 | 0c      | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build.  |
 | 0d      | Docker Image | Docker image of the build | 
 | 1      | Registration Module | Form based user registration         |
-| 2      | Wallet Linking | Support for user to link their Polkadot Js apps with the account.     |
+| 2      | Wallet Linking | Support for user to link their Math wallet, Guarda wallet or Polkadot Js apps with the account.     |
 | 3      | Profile Module | Support for role based screens to ease the usability for users  |
 | 4      | Frontend App | Supporting frontend UI to test the aforementioned functionality   |
 
