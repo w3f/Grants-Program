@@ -232,8 +232,9 @@ SimPolk has completed the framework development of blockchain, but the data stru
   * [ ] $from, UTXO input data structure, need to be modified the same as Polkadot.
   * [ ] $to,UTXO output data structure, need to be modified the same as Polkadot.
   * [ ] $account, account data structure, need to be modified the same as Polkadot.
+  * [ ] Polkadot  Account-based Transaction Mode.
   * [x] Block chain I/O , use redis as storage engine.
-  * [x] UTXO function.
+  * [x] UTXO function.  Need to moved.
   * [x] Collected pool.
   * [x] Storage function.
 
