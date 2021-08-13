@@ -51,13 +51,13 @@ fn mission(origin,node: Vec<u8>) -> Result;
 `QuantContract` The contract will generate a $ENN based on the user's quantified assets
 **![](https://neon-oriole-121.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F128f43be-c30f-4c99-92bf-8c51c9751e0d%2F%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210813180616.png?table=block&id=6618391a-4b5c-4f12-9c6e-303c5e4105f5&spaceId=55561296-d7cc-47a9-838b-8f1c259446ef&width=1860&userId=&cache=v2)**
 
-### Javascript UI Details:
+### UI Details:
  The front-end UI will be utilizing React + Polkadot.js. This will be the entry point for the user to use the entire feature. Our mock is shown below. You can also browse [mock](http://www.eternitylab.cn/dapp/index.html).
 **![](https://neon-oriole-121.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2757c2f9-af95-41ca-a831-4f38f8f75e7f%2F%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210813180746.png?table=block&id=c4c34ea9-2cd6-44ed-af5a-41bcfa1275a8&spaceId=55561296-d7cc-47a9-838b-8f1c259446ef&width=4610&userId=&cache=v2)**
 
 
 ### Quant Code Details:
-The off-chain work algorithm is in Python, but we are still considering using Rust to do so for the possibility of integrating the quantization model into Substrate in the future. We will provide at least 10  models. Respectively as follows:
+The off-chain work algorithm will complete our quantitative tasks on the exchange. We will provide at least 10  models. Respectively as follows:
 1. Cryptocurrency futures and spot arbitrage.
 2. Grid transactions.
 3. DOT to be cast surely.
@@ -68,6 +68,8 @@ The off-chain work algorithm is in Python, but we are still considering using Ru
 8. Fuzzy trend model.
 9. Hidden Markov high-frequency arbitrage model.
 10. Bayesian price prediction model.
+
+It is worth mentioning that, although it is difficult to quantify on the chain, we are still considering the possibility of integrating quantization programs at Substrate 3.0.
 
 
 
@@ -131,7 +133,7 @@ Eternity labs is an open source community composed of a group of young developer
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | The documentation will be provided to show the whole achitecture of the  Eternity Network. |
 | 0c. | Testing Guide | The testing guide will be provided to test each component. |
-| 0d. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain. |
+| 0d. | Docker | We will provide a Dockerfile to demonstrate the full functionality of our chain. |
 | 0e. | Article | We will write an article published on media channels.)
 | 1. | quant-pallet | quant-pallet will be developed using Substrate 3.0. Pledge the tokens to pallets to ensure node security|  
 | 2. | front end/contract | 1）Smart contracts will be done with ink! 2）Pledge the token to quantize the node. 3）Contract token compensation scheme model. 4）Adaptation of Huobiwallet, Tokenpocket and Imtoken Wallet |  
