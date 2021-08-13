@@ -64,6 +64,16 @@ Of course, during the mining cycle T1, there may be price fluctuations. Therefor
 **Price chain Generation**
 According to the Quotation Mining Agreement, the price of a transaction pair quoted by the bidder in this T1 cycle is A1, A2, A3...AN, and the quantity is n1, n2...ni. In the agreement, the verifier is After the price of a quoter is traded, a new price needs to be forced to be quoted. For example, A2, A3 is found by the verifier to have arbitrage space, then after the transaction, a new quote will be provided B2=y1A2,B3=y2A3, of course, if other verifications feel that B3 There is also arbitrage space, then B3 will be taken and a new quotation C3=y3B3 will be provided. By analogy, a continuous price chain with T1 as the maximum quotation time interval is formed: A1—B2—C3...AN , When this time period T1 ends, it will be calculated within the changed block, so the price of the transaction pair P=∑Ai*ni/Ni
 
+**Safety**
+The Quote Vault is an important link in the security system. The TEE module will run transparent and safe code blocks to return information from multiple trusted institutions,
+ and make the smallest quotation based on market conditions, mainly to maintain continuous and stable price mining. In addition, 
+ The verifier Quote Vault can continuously monitor the quotations in the quotation market that do not conform to the market conditions, and accurately make arbitrage behavior.
+ Theoretically verify that the amount of the Quote Vault is directly proportional to the cost of doing evil. When the value of the Quote Vault increases, the cost of doing evil will increase. 
+ At the same time, anyone who finds arbitrage space will spontaneously maintain the Hazelword quotation market. For example: we set the take-to-order factor β=2, the Quote Vault p=1000ETH, the time period T1=1 minute, 
+ and the initial quotation is x=10ETH, then in the case of all transactions, x1=2020ETH, x2=4040ETH, x3=8080ETH. .. By analogy, 
+ the attacker will either be exposed to great arbitrage opportunities in the market (the scale increases by a series, this kind of attack is almost ineffective), 
+ or continue to use extremely high-scale assets to conduct self-transactions based on market prices in order to delay The chance of price being adopted, if one block of the current chain can contain 10 transactions, 
+ then about 10 blocks in 1 minute can provide one hundred valid transactions, 1010^100=2*10^300ETH, which will be a no The possible number and resistance to attack are also beyond the reach of most centralized data source oracles.
 **TEE encryption oracle**
 ![alt tee encryption](https://github.com/Hazelword/hzl-sol/blob/main/doc/tee.png)
 Application contract：On-chain applications deploy and run smart contracts on the blockchain
@@ -185,7 +195,7 @@ To assist you in defining it, we have created a document with examples for some 
 | 0c。| Testing Guide | Provide testing guide documents to provide developers with how to test our code|
 | 0d. | Docker | Login interface, price view interface and mortgage interface |
 | 0e. | Article | An article to introduce |
-| 1. | Price chain |According to the mining rules, every T1 time, the final correct price of the changed block is successfully generated according to the weight <br />Using the ink! <br />This picture is a good illustration of the price chain(https://github.com/Hazelword/hzl-sol/blob/main/doc/asset.png) <br/ >This is the version using solidity( https://github.com/Hazelword)|
+| 1. | Price chain |According to the mining rules, every T1 time, the final correct price of the changed block is successfully generated according to the weight <br />Using the ink! <br />This picture is a good illustration of the price chain(https://github.com/Hazelword/hzl-sol/blob/main/doc/asset.png) <br/ >This is the version using solidity(https://github.com/Hazelword/hzl-sol)|
 | 2. |The generation of price chain  |According to the price quoted by the bidder in T1, the validator must report a new price after the bidder's price transaction, and so on. When the T1 phase is over, the weighted price in T1 is calculated to generate a price chain<br />The price generation of the price chain in the block(https://github.com/Hazelword/hzl-sol/blob/main/doc/hzl-en.jpg)|
 
 
