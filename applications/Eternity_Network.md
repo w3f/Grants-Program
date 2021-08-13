@@ -49,9 +49,11 @@ fn mission(origin,node: Vec<u8>) -> Result;
 `ink!`  Smart contracts will offer two functions.
 `TokenContract` The contract will provide the basic functionality of the Eternity Network token.
 `QuantContract` The contract will generate a $ENN based on the user's quantified assets
+**![](https://neon-oriole-121.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F128f43be-c30f-4c99-92bf-8c51c9751e0d%2F%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210813180616.png?table=block&id=6618391a-4b5c-4f12-9c6e-303c5e4105f5&spaceId=55561296-d7cc-47a9-838b-8f1c259446ef&width=1860&userId=&cache=v2)**
 
 ### Javascript UI Details:
- The front-end UI will be utilizing React + Polkadot.js. This will be the entry point for the user to use the entire feature. Our mock is shown below. You can also browse [mock](http://www.eternitylab.cn/dapp/index.html)
+ The front-end UI will be utilizing React + Polkadot.js. This will be the entry point for the user to use the entire feature. Our mock is shown below. You can also browse [mock](http://www.eternitylab.cn/dapp/index.html).
+**![](https://neon-oriole-121.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2757c2f9-af95-41ca-a831-4f38f8f75e7f%2F%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210813180746.png?table=block&id=c4c34ea9-2cd6-44ed-af5a-41bcfa1275a8&spaceId=55561296-d7cc-47a9-838b-8f1c259446ef&width=4610&userId=&cache=v2)**
 
 
 ### Quant Code Details:
