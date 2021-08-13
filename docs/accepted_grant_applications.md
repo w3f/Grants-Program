@@ -209,7 +209,7 @@
 | [enfipy](https://github.com/enfipy) | Creator: Mobile Game Framework for Substrate | [GitHub](https://github.com/creator-rs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Halva](https://github.com/halva-suite) | Halva: Bootstrapping and Scaffolding | [GitHub](https://github.com/halva-suite) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Sunshine Systems](https://sunshine.foundation) | Sunshine Keybase | [GitHub](https://github.com/sunshine-protocol) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Subscan](subscan.io) | Multi-signature Management Tool | [GitHub](https://github.com/itering) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Subscan](subscan.io) | Multi-signature Management Tool | [GitHub](https://github.com/itering) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Evercity](https://evercity.io/) | Smart Sustainable Bond Protocol (SSB-P) | [GitHub](https://github.com/EvercityEcosystem/Smart-Sustainable-Bond) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Permiurly](http://permiurly.in) | Polkassembly | [GitHub](https://github.com/premiurly/polkassembly) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Zeropool](https://zeropool.network/) | Private transactions on Polkadot | [GitHub](https://github.com/zeropoolnetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
