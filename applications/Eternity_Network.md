@@ -27,7 +27,51 @@ The Eternity Network is composed of Eternity Node,Eternity Model Contract,Decent
 For more details, see our hackathon [documentation](https://github.com/ParityAsia/hackathon-2021-summer/tree/main/teams/04-EternityLabs/docs).
 
 ### Substrate/Polkadot Integration
-The Eternity Network can run as a parallchain to the Polkadot. It can also operate as a Polkadot independent chain. The whole network is built on the substrate 3.0 Framework, and OCW(Off-chain Work) will serve as the adaptation quantization model API for users. All contracts support Ink! and Solidity. Eternity Model Contract will be applied to polkadot.js.
+The Eternity Network can run as a parallchain to the Polkadot. It can also operate as a Polkadot independent chain. The whole network is built on the substrate 3.0 Framework, and OCW(Off-chain Work) will serve as the adaptation quantization model API for users. All contracts use Ink!. Eternity Model Contract will be applied to polkadot.js.
+
+## Deliverable
+### Substrate quant—pallet Details:
+`quant-Pallet` provides basic pallet quantification functions. The system includes adding nodes, pledging tokens, extracting tokens, and storing IPFS Hash.
+```rust
+// add a Node
+fn Node(origin, node: Vec<u8>) -> Result;
+// IPFS hash storage
+fn IPFSHash(origin, hash: Vec<u8>) -> Result;
+// stake token 
+fn stake(origin, T::AccountId: u64, token: Currency<T>) -> Result;
+// extract token
+fn extract(origin, T::AccountId: u64) -> Result;
+// quant mission
+fn mission(origin,node: Vec<u8>) -> Result;
+```
+
+### Contract:
+`ink!`  Smart contracts will offer two functions.
+`TokenContract` The contract will provide the basic functionality of the Eternity Network token.
+`QuantContract` The contract will generate a $ENN based on the user's quantified assets
+
+### Javascript UI Details:
+ The front-end UI will be utilizing React + Polkadot.js. This will be the entry point for the user to use the entire feature. Our mock is shown below. You can also browse [mock](http://www.eternitylab.cn/dapp/index.html)
+
+
+### Quant Code Details:
+The off-chain work algorithm is in Python, but we are still considering using Rust to do so for the possibility of integrating the quantization model into Substrate in the future. We will provide at least 10  models. Respectively as follows:
+1. Cryptocurrency futures and spot arbitrage.
+2. Grid transactions.
+3. DOT to be cast surely.
+4. Band tracking.
+5. Futures spot hedging.
+6. Implicit source model.
+7. Stochastic optimal control.
+8. Fuzzy trend model.
+9. Hidden Markov high-frequency arbitrage model.
+10. Bayesian price prediction model.
+
+
+
+### Log
+Log information will be uploaded to IPFS. Function execution information, parameters and trading information of the exchange in the off-chain work will be recorded to ensure its stability. The following images show how the nodes in the chain interact with the IPFS upload.
+
 
 
 
@@ -87,8 +131,8 @@ Eternity labs is an open source community composed of a group of young developer
 | 0c. | Testing Guide | The testing guide will be provided to test each component. |
 | 0d. | Docker | We will provide a dockerfile to demonstrate the full functionality of our chain. |
 | 0e. | Article | We will write an article published on media channels.)
-| 1. | Eternity Node Repo | We will create a customized chain node with Substrate 3.0 Framework, it will contains the OCW module. Pledge the tokens to pallets to ensure node security|  
-| 2. | front end/contract | 1）The contracts will be implemented with Ink! Contracts will be deployed to HECO, BSC, Ethereum. 2）Pledge the token to quantize the node. 3）Dapp for security audit of exchange addresses. 4）Contract token compensation scheme model. 5）Adaptation of Huobiwallet, Tokenpocket and Imtoken Wallet |  
+| 1. | quant-pallet | quant-pallet will be developed using Substrate 3.0. Pledge the tokens to pallets to ensure node security|  
+| 2. | front end/contract | 1）Smart contracts will be done with ink! 2）Pledge the token to quantize the node. 3）Contract token compensation scheme model. 4）Adaptation of Huobiwallet, Tokenpocket and Imtoken Wallet |  
 | 3. | Quantitative model | 1）Eternity will work with binance, Huobi, and Coinbase apis. 2）Ten stable quantitative models |  
 
 
