@@ -1,7 +1,7 @@
 # W3F Grant Proposal
 * **Project Name:** Eternity Network
 * **Team Name:** Eternity labs
-* **Payment Address:** BTC 1LYvQuzdyvy3KpkKxLK54SC3Mki3kSAtM7
+* **Payment Address:** 0x82c6777454244ebb5f3f372937993e260859f21e
 
 ## Project Overview :page_facing_up:
 
@@ -120,13 +120,13 @@ Eternity labs is an open source community composed of a group of young developer
 
 * **Total Estimated Duration:** 3 month
 * **Full-Time Equivalent (FTE):**  4
-* **Total Costs:** 0.45 BTC.
+* **Total Costs:** 20,000 USD
 
 ### Milestone 1  — Implement Eternity Network low pallet
 
 * **Estimated duration:** 3 month
 * **FTE:**  4
-* **Costs:** 0.45 BTC
+* **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
