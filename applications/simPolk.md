@@ -45,7 +45,7 @@
 
 ### Team members
 
-* Zhongqiang Fu , a web developer and metaverse devoeloper.
+* Zhongqiang Fu , a web developer and metaverse developer.
 
 
 ### Contact
@@ -221,11 +221,52 @@ SimPolk has completed the framework development of blockchain, but the data stru
 | Number | Deliverable   | Specification                                                |
 | :----- | ------------- | ------------------------------------------------------------ |
 | 0a.    | License       | Apache 2.0                                                   |
-| 0b.    | Documentation | Instructions for use and data structure will be provided     |
+| 0b.    | Documentation | Instructions for use and data structure will be provided.    |
 | 0c.    | Testing Guide | Unit test the functions of 'api/lib/simulator.class.php' file and provide unit test code |
-| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.<br />1.Simchain browser to explorer the data struct.<br />2.The block data struct is the same as actual parachain of Polkadot.<br /> |
+| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. The new version will be deployed, link [http://simpolk.android.im](http://simpolk.android.im) |
+| 0e.    | Source Code   | Details as follow.Not all file listed, just the ones need to be improved. |
 
+* api/lib/simulator.class.php, all simulator methods in this file.
+  * [ ] $raw, block data structure, need to be modified the same as Polkadot.
+  * [ ] $utxo,UTXO data structure, need to be modified the same as Polkadot.
+  * [ ] $from, UTXO input data structure, need to be modified the same as Polkadot.
+  * [ ] $to,UTXO output data structure, need to be modified the same as Polkadot.
+  * [ ] $account, account data structure, need to be modified the same as Polkadot.
+  * [x] Block chain I/O , use redis as storage engine.
+  * [x] UTXO function.
+  * [x] Collected pool.
+  * [x] Storage function.
 
+* api/sim/storage.class.php,
+
+  * [ ] $raw, storage data structure, need to be modified the same as Polkadot.
+  * [x] Set storage.
+  * [x] Get storage.
+
+* client/server.php
+
+  * [ ] Works as a cache server, response correctly to API calls.
+  * [ ] Mining simulation.
+
+* UI/
+
+  * [ ] Select target simulate node.
+
+  * [ ] Simchain contract management. 
+
+  * [x] Simchain setting. Pending the simchain,change the coin name. You can try this link http://simpolk.android.im/ui/#summary
+
+  * [x] Simchain browser.Simchain status, collected pool, block browse. You can try this link http://simpolk.android.im/ui/#chain
+
+  * [x] Simchain account management. You can try this link http://simpolk.android.im/ui/#account
+
+  * [x] Simchain transaction. You can try this link http://simpolk.android.im/ui/#transaction
+
+  * [x] Simchain storage management. You can try this link http://simpolk.android.im/ui/#storage
+
+  * [x] Simchain node management. Node list, Mining simulation.  You can try this link http://simpolk.android.im/ui/#node
+
+    
 
 ### Milestone 2 : Smart contract function
 
@@ -240,9 +281,28 @@ Complete the simulation of smart contract, so that simPolk users can understand 
 | 0a.    | License       | Apache 2.0                                                   |
 | 0b.    | Documentation | Documentation for the creation and execution of smart contracts, as well as instructions on how to simulate the implementation of smart contracts |
 | 0c.    | Testing Guide | Unit test the contract functions of 'api/lib/simulator.class.php' file and provide unit test code |
-| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.<br />1.Smart contract can be added in the portal of simPolk.<br />2.Smart contract can be called in the portal of simPolk.<br />3.Smart contract can work properly as same as actual parachain of simPolk. |
+| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. The new version will be deployed, link [http://simpolk.android.im](http://simpolk.android.im) |
+| 0e.    | Source Code   | Details as follow.Not all file listed, just the ones need to be improved. |
 
+* api/lib/simulator.class.php
 
+  * [ ] Collect contract to pool.
+  * [ ] Set contract by hash.
+  * [ ] Get contract by hash.
+
+* api/sim/contract.class.php
+
+  * [ ] Filter parameters for adding contract to simchain.
+  * [ ] Get contract ( raw Javascript code )  from simchain.
+  * [ ] Run contract . Current solution is that node sent the contract body ( raw Javascript code ) to browser, code will run in browser, it will do two things, call transaction or update storage.
+
+* UI/
+
+  * [ ] contract submisstion form.
+  * [ ] contract search.
+  * [ ] other neccessary modification.
+
+  
 
 ### Milestone 3 : Application integration 
 
@@ -259,9 +319,41 @@ Switch the data request of [virtual block world](https://github.com/ff13dfly/Vir
 | 0a.    | License       | Apache 2.0                                                   |
 | 0b.    | Documentation | Provides the PHP class file for virtual block world integration, which explains in detail how to realize the function. |
 | 0c.    | Testing Guide | Unit test the VBW functions of 'api/sim/vblock.class.php' file and provide unit test code |
-| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.VBW means [virtual block world](https://github.com/ff13dfly/VirtualBlockWorld)<br />1.VBW's vblock data can be storaged to the simchain.<br />2.VBW's vblock data can be updated to the simchain.<br />3.VBW's application ( Javascript ) can be loaded from the simchain. |
+| 0d.    | Docker        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.VBW means [virtual block world](https://github.com/ff13dfly/VirtualBlockWorld) |
+| 0e.    | Source Code   | Details as follow.Not all file listed, just the ones need to be improved. |
 
+* api/sim/anchor.class.php. Anchor is public access to simchain, loading Javascript application by this way.You can treate this file  as a pallet in substrate.
 
+  * [ ] Set anchor by name
+  * [ ] Get anchor by name
+  * [ ] Cache anchor data
+  * [ ] Rebuild anchor cache from simchain
+
+* api/sim/vblock.class.php. vBlock is a  JSON format string storaged in simchain . It is the basic stick of [Virtual Block World]() .
+
+  * [ ] Set  vblock by coordinate
+  * [ ] Get vblock by coordinate
+  * [ ] Cache vblock data
+  * [ ] Rebuild vblock cache from simchain
+
+* api/sim/vworld.class.php, vWorld is a  JSON format string storaged in simchain. It is the world setting of [Virtual Block World]() 
+
+  * [ ] Set  world setting by world ID.
+  * [ ] Get world setting by world ID.
+  * [ ] Cache world setting.
+  * [ ] Rebuild world setting cache from simchain
+
+* api/sim/vsource.class.php, vSource is Base64 string storaged in simchain. It can be any type of file, will be decoded by application.
+
+  * [ ] Set  source by  sha256(name).
+
+  * [ ] Get source by  sha256(name).
+
+  * [ ] Cache source files.
+
+  * [ ] Rebuild source files cache from simchain.
+
+    
 
 ## Future Plans
 
