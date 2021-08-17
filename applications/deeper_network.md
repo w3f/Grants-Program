@@ -3,6 +3,7 @@
 -   **Project:** Deeper Chain
 -   **Proposer:** [deeper.network](https://deeper.network)
 -   **Payment Address:** 1ZgK8ic8gmVSS3jJUwLJiWHaK5rhZVppF
+-   **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/141#issuecomment-891787856)
 
 ## Project Overview :page_facing_up:
 
