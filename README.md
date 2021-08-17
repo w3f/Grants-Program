@@ -104,7 +104,7 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 ## :pencil: Process
 
-> **:loudspeaker:** The process below is independent of the [level](#level_slider-level). Payment is made in Bitcoin, USDT or DAI. If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in Bitcoin, USDT or DAI. If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 1. **Application**
    1. [Fork](https://github.com/w3f/Grants-Program/fork) this repository.
