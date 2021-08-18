@@ -172,7 +172,7 @@
 | [Ethworks](https://ethworks.io/) | Polkadot.{js} Desktop Application | [GitHub](https://github.com/EthWorks/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Usetech](http://usetech.com/blockchain.html) | NFT Tracking Module | [GitHub](https://github.com/usetech-llc/nft_parachain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Chevdor](https://www.chevdor.com/) | Polkabot | [GitHub](https://github.com/chevdor) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Aleksandr Krupenkin](https://github.com/akru) | Haskell Web3 library | [GitHub](https://github.com/airalab/hs-web3) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Aleksandr Krupenkin](https://github.com/akru) | Haskell Web3 library | [GitHub](https://github.com/airalab/hs-web3) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [WEB3SCAN](https://www.web3scan.com/) | Polkascan Signer Interfaces | [GitHub](https://github.com/polkascan) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Fortmatic](https://fortmatic.com/) | SDK + Burner Wallet to implement Web 2.0 login for dapps | [GitHub](https://github.com/fortmatic) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [PureStake](https://www.purestake.com/) | Web3 Compatible API | [GitHub](https://github.com/PureStake) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
