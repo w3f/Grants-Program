@@ -222,7 +222,7 @@ Link to 2nd pull request
 | 0b. | Documentation | Documentation of the code and a basic tutorial describing how the software can be used and tested. |
 | 0c. | Testing Guide | Complex quality assurance for all platform features. Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an article that explains the functionality of the proposed pallet in this milestone. |
-| 1. | Substrate fork | Substrate last version fork with fully updated version of offchain::ipfs. |  
+| 1. | Update [offchain::ipfs](https://github.com/rs-ipfs/substrate) | We will coordinate with equilibrium.co to update offchain::ipfs to the latest Substrate version via PR to the existing repository |
 | 2. | Docker image| We will provide a dockerfile to demonstrate the full functionality of testing Substrate chain with integrated Database pallet. |
 
 ### Milestone 3  
