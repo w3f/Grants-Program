@@ -27,7 +27,7 @@ The interpretation and analysis of data should not be in the hands of certain ce
 
 #### Architecture
 
-![avatar][base64str]
+![](https://github.com/Moehringen/Storage/blob/main/Polka-Analytics.png)
 
 
 #### Components
