@@ -4,6 +4,15 @@
 -   **Proposer:** [deeper.network](https://deeper.network)
 -   **Payment Address:** 1ZgK8ic8gmVSS3jJUwLJiWHaK5rhZVppF
 
+## *Note to the grant approvers*
+
+*We have delayed the milestone completion for the following 2 reasons:*
+
+1. *The original application submitter left the team in May 2021 and the grant application was not handed over to any other team members and hence overlooked.*
+2. *Deeper Network has been busy recently preparing the mainnet launch at the end of this month (Aug 2021)*
+
+*We request that the starting date for the milestone will be the approval of this amendment. Much appreciated!*
+
 ## Project Overview :page_facing_up:
 
 ### Overview
