@@ -57,10 +57,10 @@ The smart contract on Substrate node is used to demand, publish, share and rewar
 
 
 
-8.  **Data Mining Module:**data mining module is used to look for regulations and patterns in large batches of data come from blockchain.  data mining is widely used in some traditional industries like Retail, manufacturing, financial and financial insurance, but we believe that apply this technology will benefit the blockchain industry. The module will dig through historical data to discover hidden connections and predict future trends in the specific area of the blockchain, like token price prediction,  Defi earns prediction, etc.  
+8.  **Data Mining Module:** data mining module is used to look for regulations and patterns in large batches of data come from blockchain.  data mining is widely used in some traditional industries like Retail, manufacturing, financial and financial insurance, but we believe that apply this technology will benefit the blockchain industry. The module will dig through historical data to discover hidden connections and predict future trends in the specific area of the blockchain, like token price prediction,  Defi earns prediction, etc.  
 
 
-9.  **Community Module:**a community module is a public place where data activities participants can communicate. for example,  data demander can publish their demand, the data analysts can accept the task or share their data board, and the most welcome data boards are listed here. 
+9.  **Community Module:**  a community module is a public place where data activities participants can communicate. for example,  data demander can publish their demand, the data analysts can accept the task or share their data board, and the most welcome data boards are listed here. 
 
 
 
