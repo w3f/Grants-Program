@@ -79,7 +79,7 @@ We are developing a hardware product with a cost of only US\$5, and we are confi
 Hui worked at Intel, Fortinet, and Palo Alto Networks, where he held positions such as R&D Manager and Chief Engineer. He brings more than ten years of experience in network security and operating system development. He spearheaded the development of the cloud firewall engine which still brings billions of dollars in annual revenue for the company.
 
 **Zhiwu Liu**  
-Yi earned his PhD degree in Computer Science. He worked on Network Infrastructure at Google, where he focused on data center congestion control, network measurement, and traffic engineering.
+Zhiwu has a master’s degree in Computer Science. He has been engaged in the software development of high security systems, from airborne embedded software development to blockchain software development.
 
 **Zhuang Jin**
 Zhuang has a master’s degree in Electrical Engineering. He has working experience in network security, distributed system, and embedded system development.
@@ -88,7 +88,7 @@ Zhuang has a master’s degree in Electrical Engineering. He has working experie
 Yang worked at Bytedance, Alibaba, Windriver, and has working experience in cloud infrastructure, operating system and embedded system.
 
 **Fei Yang**  
-Fei has been active in blockchain space since early 2017. He has worked as software engineer in blockchain startups, crypto exchanges and other grants. He has led team to  win a couple of blockchain hackathons.
+Fei has been active in blockchain space since early 2017. He has worked as software engineer in blockchain startups, crypto exchanges and other blockchain project grants. He has led teams organised on the Internet to  win a couple of blockchain hackathons.
 
 ### Team Code Repos
 
