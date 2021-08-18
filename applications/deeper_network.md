@@ -24,7 +24,7 @@ Deeper's vision is to combine network security, network sharing, and blockchain 
 
 ### Project Details
 
-#### Proof of Credit
+#### Delegated Proof of Credit
 
 The deeper network consists of two layers. The top layer will contain hundreds of validators that generate new blocks constantly. The deeper layer will consist of millions of deeper network devices. Proof of credit allows deeper network devices to mine new tokens by sharing their bandwidth. Each device will be associated with an account, i.e., public address. The more bandwidth a device shares, the more credit will be earned by the account. Each device will delegate its credit to a validator. The consensus of the deeper chain will be the GRANDPA/BABE hybrid consensus built in the Substrate node. The validator election algorithm is initially based on both popularity of the validator and a white list, and the white list will be removed in future so that any party can run validator nodes once the network run smoothly for a certain period and is proved to be stable and secure. The popularity of a validator is simply calculated as the number of deeper network devices that delegate its credit to the validator. We call this election algorithm as Delegated Proof of Credit (DPoC). Each era (or each day according to the time setting) the devices will be rewarded DPR tokens proportional to their credits. As in any credit systems of modern society, each account’s credit accumulation in a short period is capped by some maximum value Cmax.
 
