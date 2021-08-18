@@ -81,10 +81,10 @@ Hui worked at Intel, Fortinet, and Palo Alto Networks, where he held positions s
 **Zhiwu Liu**  
 Zhiwu has a master’s degree in Computer Science. He has been engaged in the software development of high security systems, from airborne embedded software development to blockchain software development.
 
-**Zhuang Jin**
+**Zhuang Jin**  
 Zhuang has a master’s degree in Electrical Engineering. He has working experience in network security, distributed system, and embedded system development.
 
-**Yang Liu**
+**Yang Liu**  
 Yang worked at Bytedance, Alibaba, Windriver, and has working experience in cloud infrastructure, operating system and embedded system.
 
 **Fei Yang**  
