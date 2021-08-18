@@ -100,7 +100,7 @@ Fei has been active in blockchain space since early 2017. He has worked as softw
 
 -   **Total Estimated Duration:** 1 month
 -   **Full-time equivalent (FTE):** 5 FTE.
--   **Total Costs:** 0.446 BTC
+-   **Total Costs:** 20,000 USD
 
 In this application, the deliverables are the micropayment pallet, the client codes and tutorial document. The micropayment pallet contains all the necessary functions for a user to interact with the blockchain including open channel, close channel, claim micropayments etc. The client codes contains two parts: one is for a user to interact with blockchain, the other is for a user to interact with another user. The micropayment design, use cases as well as detailed examples will be given in the totorial document. In the next phases/applications, we will add Proof of Credit and light node discovery pallets as well as their corresponding client codes.
 
@@ -108,7 +108,7 @@ In this application, the deliverables are the micropayment pallet, the client co
 
 -   **Estimated Duration:** 4 weeks
 -   **FTE:** 5
--   **Costs:** 0.446 BTC
+-   **Costs:** 20,000 USD
 
 | Number | Deliverable          | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ------ | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
