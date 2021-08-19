@@ -104,10 +104,15 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 ### Team's experience
 
 *Daniel*:  Daniel is currently a venture investor at [WEB3 Venture Capital](https://web3.vc/#/). Daniel previously is a solidity/EOS engineer. 
+
 *gogomath*:  gogomath is the CTO of the team and has 10 years of software development experience. The fields involved are big data, machine learning, SAAS, devops. And familiar with eth/near/polkadot in the field of digital encryption development.
+
 *cf*:  cf is a full stack engineer with five years of development experience. and familiar with Go/Rust/Java/Python/Javascript/Typescript 
+
 *tokggo*:  tokggo is the test/devops engineer of the team, he is very good at writing various documents.and has 6 years of development experience.
+
 *cj1afs*:  A graduate student in financial mathematics, a new friend in the field of blockchain, will participate in the development of various pallets.
+
 *meliart*:  Back-end development engineer with 3 years of experience, familiar with Go/Rust/Node/Typescript.
 
 ### Team Code Repos
