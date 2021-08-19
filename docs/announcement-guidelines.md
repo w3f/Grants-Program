@@ -1,6 +1,6 @@
 # Announcement Guidelines
 
-> Guidelines updated April 2021
+> Guidelines updated August 2021
 
 Web3 Foundation (W3F) supports many teams and organizations throughout the ecosystem. We often receive requests to participate in project announcements. Unfortunately, due to the high volume of requests, we rarely do joint announcements and do not provide quotes.
 
