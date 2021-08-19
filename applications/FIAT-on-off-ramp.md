@@ -99,24 +99,21 @@ There will be an off-chain worker using our pallets to connect to open banking A
 * https://en.wikipedia.org/wiki/Electronic_Banking_Internet_Communication_Standard
 * https://www.ppi.de/fileadmin/user_upload/Software-Produkte/Publikationen/2018-03-23_EBICS_3.0_Kompendium_V6_D6_EN.pdf
 
-Here is the specification of the PAIN.001 file we use to process bank statements: 
+Here is the XML specification of Camt.053 document to read daily statements:
+
+* https://wiki.xmldation.com/General_Information/Payment_Standards/ISO_20022/Bank-to-Customer_Cash_Management
+
+Here is the XML specification of the PAIN.001 document to generate payments:
 
 * https://wiki.xmldation.com/General_Information/ISO_20022/pain.001
 
-#### Get bank account balance
+#### Get bank statments (incoming/outgoing orders and account balances)
 
-Getting the account balance, which should be equal to total supply of the stable-coins, if there are no outstanding mint or burn orders. 
+Gets a list of new incoming and outgoing payments which will be used to create an order to mint new stable-coins. This message also includes account balance, which should be equal to total supply of the stable-coins, if there are no outstanding mint or burn orders. It may contain the data of more multiple bank account with specific currencies, bacause you may hold several bank account at one bank also with different currencies.
 
-```
-getAccountBalance():Decimal
-```
-
-#### Get new incoming orders (payments)
-
-Gets a list of new incoming payments which will be used to create an order to mint new stable-coins.
 
 ```
-getIncomingOrders():IncomingPayments
+getBankStatements():Statement[]
 ```
 
 #### Trigger outgoing order
@@ -124,17 +121,16 @@ getIncomingOrders():IncomingPayments
 If we detect a burn of stable-coins, we use the create order to initiate a wire-transfer on our bank account. If the transaction fails for some reason - e.g. the provided IBAN is not existing - then the pegging balance of the bank account will be higher then the total supply of stable-coins, the order reamins open until it can be resolved outside of the system, e.g. manually.
 
 ```
-createOrder (OutgoingPayment)
+createOrder (Payment)
 ```
 ### C) Event Processing (off-chain-worker)
 
 The Event Processing Module is responsible for synchronizing the pegging account with the stable-coins of our chain:
 
-1. Process incoming transactions with `A.getIncomingOrders():IncomingPayments` and initiate `B.mint(amount,targetAddress)`
+1. Process incoming transactions with `A.getBankStatements():Statement[]` and initiate `B.mint(amount,targetAddress)`
 2. Listen to blockchain events from module B) and initiate `A.createOrder(OutgoingPayment)`
 3. Check consistency `B.getAccountBalance() = (A.getTotalBalance() + balanceOfoutstandingOrders())`
 4. Generate payment information and store the mapping between bank accounts and blockchain accounts to do step 1. and 2.
-
 
 ### Attack vectors
 
@@ -228,14 +224,14 @@ For this proposal we focus on building a simple substrate based chain containing
 * **FTE:**  2
 * **Costs:** 5.000 USD
 
-* APIs: createOrder(Payment),  getIncomingPayments():Payments, simulatePayment(Payment)
+* APIs: createOrder(Payment), getBankStatements():Statement[], simulatePayment(Payment)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can link the Open Banking Client to an Ebis/ISO20022 compatible bank account. Once the docker instance is up, it will be possible to query balance, to read new transactions and to send test and real transactions that will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Module: Open Banking Client | We will create a module based on Spring-Boot that will provide `getAccountBalance():Decimal`, `getIncomingOrders():IncomingPayments`,  `createOrder (OutgoingPayment)` and `simulatePayment(Payment)`  as a REST interface as [described](#b-bank-account-rest-api). Aim of the module is to provide a much simpler and Json/REST based runtime to access account information, thus remove necessity to use a [complicated protocol](https://www.ebics.org/en/home) and XML based documents like [Pain-001](https://wiki.xmldation.com/General_Information/ISO_20022/pain.001) files for accessing account information.|  
+| 1. | Module: Open Banking Client | We will create a module based on Spring-Boot that will provide `getBankstatements():Statement[]` (which includes account balance),  `createOrder (OutgoingPayment)` and `simulatePayment(Payment)`  as a REST interface as [described](#b-bank-account-rest-api). Aim of the module is to provide a much simpler and Json/REST based runtime to access account information, thus remove necessity to use a [complicated protocol](https://www.ebics.org/en/home) and XML based documents for creating payment orders [(Pain-001)](https://wiki.xmldation.com/General_Information/ISO_20022/pain.001) and retrieving bank statements [(Camt.053)](https://wiki.xmldation.com/General_Information/Payment_Standards/ISO_20022/Bank-to-Customer_Cash_Management) files for accessing account and transaction information. In regard of the described functions, the module hides complexities of Ebics (Ebics protocoll issuing commands and XML files) through a simplier JSON/REST service. |  
 | 2. | Docker | We will provide a dockerfile for the Open Banking Client on Docker Hub, where we add documentation on how to link the image with a bank account.  |
 
 ### Milestone 2 Implement substrate based chain
@@ -273,8 +269,10 @@ For this proposal we focus on building a simple substrate based chain containing
 First step is to prove technical feasibility and also to learn more about the concepts of the Polkadot ecosystem. We already have some ideas in which direction we want to continue, but that is to be validated. In other words - maybe our thoughts will not make sense once we know more :) So far, our next milestones and development goals:
 
 * Integrate with relaychain, so that a node/token can be used throughout the ecosystem.
-* Support additional Bank-APIs
-* Make it easier to configure the pegging bank account.
+* Create first version of a utility/governance token, which is able to run a sustainable, 
+  freely accessible and open sourced infrastrucuture for integrating Open-Banking API into
+  Polkadot ecosystem.
+* Support additional Bank-APIs like Europe's [PSD2](https://ec.europa.eu/info/law/payment-services-psd-2-directive-eu-2015-2366_en) or [IndiaStack](https://www.indiastack.org/)
 * Integrate with an identity system and provide similar functionality as we do now on Ethereum with our contracts. Means: Only whitelisted identities may receive or mint funds.
 * Create a nice API and project/landing page, integrate with no-code tools like Integromat or Zapier to make our Functionality easy & accessible for developers.
 * Use a staking/pegging contract instead of a pegging bank account, try to combine both to remove the need for a trusted oracle for the pegging account balance.

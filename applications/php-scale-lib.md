@@ -54,7 +54,7 @@ https://github.com/gmajor-encrypt/php-substrate-api
 ### Milestone 2 Example — Additional features
 
 * **Estimated Duration:** 2 weeks 
-* **Costs:** 6000 Dai
+* **Costs:** 6200 Dai
 
 
 | Number | Deliverable | Specification | 
@@ -62,11 +62,12 @@ https://github.com/gmajor-encrypt/php-substrate-api
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | Simple documentation on how to use this library |
 | 1. | Metadata decode | support recent runtime metadata decode |  
-| 2. | Event decode | storage EventRecord decode|  
-| 3. | Extrinsic decode | Extrinsic decode  |
-| 4. | Custom Type reg |  Can register a custom type through the file  |
-| 5. | Unit test | Including all the unit tests mentioned above  |   
-| 6. | Packagist |  Submit to Packagist for composer to use  |  
+| 2. | Results encode/decode | Results types encode/decode, https://substrate.dev/docs/en/knowledgebase/advanced/codec#results|  
+| 3. | Event decode | storage EventRecord decode|  
+| 4. | Extrinsic decode | Extrinsic decode  |
+| 5. | Custom Type reg |  Can register a custom type through the file  |
+| 6. | Unit test | Including all the unit tests mentioned above  |   
+| 7. | Packagist |  Submit to Packagist for composer to use  |  
 
 ## Future Plans
 
