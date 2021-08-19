@@ -225,71 +225,75 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-For each milestone,
-
-* make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md).
-* include the amount of funding requested _per milestone_.
-* include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-* provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-* commit to providing Dockerfiles for the delivery of your project.
-* indicate milestone duration as well as number of full-time employees working on each milestone.
-* **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
 
-* **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-* **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-* **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+* **Total Estimated Duration:** 6 months
+* **Full-Time Equivalent (FTE):**  4
+* **Total Costs:** 120,000 DAI
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 Example — Implement SSL Certificate Modules
 
 * **Estimated duration:** 1 month
-* **FTE:**  2
-* **Costs:** 8,000 USD
+* **FTE:**  4
+* **Costs:** 20,000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide the following documentations:<ul><li>Inline Code Documentation</li><li>Configuration Documentation</li><li>docket Setup Documentation</li><li>SSL Certificate Validation Module Deployment Documentation</li></ul> |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 0e. | Article | We will publish an article that explains how Apsis can solve the problems of existing SSL certificate infrastructure. We will host a workshop that incentivizes developers to integrate Apsis with existing SSL infrastructures and applications. |
+| 1. | Substrate module: SSL Certificate Module | This Substrate module provide two core functionalities: <br/><ul><li>Allows public users to check the validity of an SSL certificate at any given timestamp;</li><li>Allows Apsis DAO members to propose and vote updates on Certificate Revocation List.</li></ul> |  
+| 2. | Substrate chain | We will deploy the initial version of Apsis chain with SSL Certificate Module to Rococo. Apsis testnet should operate independently as a public warfare chain as a standalone SSL certificate infrastructure. |  
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 Example — Implements HTTPS Client Modules
 
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 4,000 USD
+* **Estimated Duration:** 2 month
+* **FTE:**  4
+* **Costs:** 40,000 DAI
 
-...
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide the following documentations:<ul><li>Inline Code Documentation</li><li>Configuration Documentation</li><li>docket Setup Documentation</li><li>HTTPS Client Module Deployment Documentation</li></ul> |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article to explain how retroactively verifiable HTTP invocation works, as well as its benefits and potential applications. |
+| 1a. | Substrate Off-Chain Worker: HTTPS Invoker | HTTPS Invoker is a Substrate off-chain worker that invokes HTTPS APIs and generates HTTPS session proof. It relies on the runtime interface provided by Apsis runtime to access HTTPS server. |
+| 1b. | Substrate Module: HTTPS Validator | HTTPS Validator is a Substrate modules that validates HTTPS session proof generated by HTTPS invoker and persists HTTPS session data on-chain. |
+| 2. | Substrate chain | We will deploy the HTTPS Client module on Apsis testnet. We will also integrate HTTPS Client with XCMP to provide other parachains with HTTPS accessibility. |  
+
+### Milestone 3 Example — Implements Apsis EVM
+
+* **Estimated Duration:** 3 month
+* **FTE:**  4
+* **Costs:** 60,000 DAI
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide the following documentations:<ul><li>Inline Code Documentation</li><li>Configuration Documentation</li><li>docket Setup Documentation</li><li>Apsis EVM Deployment Documentation</li></ul> |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will host a workshop to build applications with Apsis EVM. |
+| 1a. | Substrate Off-chain Worker: Off-chain EVM | Off-chain EVM is a Substrate off-chain worker that executes EVM transactions involving HTTPS access. It relies on HTTPS Invoker to provide HTTPS access functionalities.<br>When HTTPS client precompile is invoked, Off-chain EVM synchronously invokes HTTPS APIs specified, generates proof and returns the parsed result. |
+| 1b. | Substrate Module: On-chain EVM | On-chain EVM is a Substrate module that executes EVM transactions on chain. <br>When HTTPS client precompile is invoked, On-chain EVM validates the HTTPS session proof generated by Off-chain EVM and executes the transaction. |
+| 1c. | Substrate Module: EVM Dispatcher | EVM Dispatcher is the front interface for EVM transactions. When new transaction is received, EVM dispatcher does the following: <ul><li>If the transaction does not involve HTTPS access, it’s executed on On-chain EVM directly;</li><li>Otherwise, it is dispatched to Off-chain EVM to execute and generate HTTPS proof. The generated HTTPS proof, along with the EVM transaction are dispatched to On-chain EVM to execute on-chain.</li></ul> |
+| 2. | Substrate chain | We will deploy the Apsis EVM module on Apsis testnet. |  
 
 
 ## Future Plans
 
-Please include here
+We plan to build on-chain Oracles for asset prices on Apsis, and integrate them with cross-chain applications, e.g. DeFi applications on Acala.
 
-* how you intend to use, enhance, promote and support your project in the short term, and
-* the team's long-term plans and intentions in relation to it.
+We also plan to incorporate HTTPS capabilities to Ink smart contract platform to allow Ink developer to write HTTPS-empowered Ink smart contracts.
 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+We’ve successfully launched two DeFi products on Ethereum, acBTC and BTC+. We’ve completed a W3F Open Grant for stable asset, which uses Curve’s StableSwap algorithm to generate synthetic assets from a basket of assets with the same peg.
+ 
+Based on our past experience in DeFi and Polkadot, we believe Oracle is one of the most critical bottlenecks of DeFi, and we believe Polkadot offers the best infrastructure to build such an Oracle chain.
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-* Work you have already done.
-* Wheter there are any other teams who have already contributed (financially) to the project.
-* Previous grants you may have applied for.
