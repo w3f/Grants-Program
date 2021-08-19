@@ -34,7 +34,30 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 
 #### Mockups and UI components
 
-![](assets/DAO.png)![](assets/1.png)![](assets/2.png)![](assets/3.png)![](assets/4.png)![](assets/5.png)![](assets/6.png)![](assets/7.png)
+<p align="center">
+  <img src="assets/DAO.png" width="50%" syt height="50%" />
+</p>
+<p align="center">
+  <img src="assets/1.png" width="50%" syt height="50%" />
+</p>
+<p align="center">
+  <img src="assets/2.png" width="50%" syt height="50%" />
+</p>
+<p align="center">
+  <img src="assets/3.png" width="50%" syt height="50%" />
+</p>
+<p align="center">
+  <img src="assets/4.png" width="50%" syt height="50%" />
+</p>
+<p align="center">
+  <img src="assets/5.png" width="50%" syt height="50%" />
+</p>
+<p align="center">
+  <img src="assets/6.png" width="50%" syt height="50%" />
+</p>
+<p align="center">
+  <img src="assets/7.png" width="50%" syt height="50%" />
+</p>
 
 
 
@@ -126,13 +149,13 @@ To assist you in defining it, we have created a document with examples for some 
 
 * **Total Estimated Duration:**  3 months
 * **Full-Time Equivalent (FTE):**  6 FTE
-* **Total Costs:** 10k USD
+* **Total Costs:** 30k USD
 
 ### Milestone 1 — Implement KYC, ICO, DAO Modules
 
 * **Estimated duration:** 1 month
 * **FTE:**  6
-* **Costs:** 4,000 USD
+* **Costs:** 12,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -148,7 +171,7 @@ To assist you in defining it, we have created a document with examples for some 
 
 * **Estimated duration:** 1 month
 * **FTE:**  6
-* **Costs:** 2,000 USD
+* **Costs:** 6,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -161,7 +184,7 @@ To assist you in defining it, we have created a document with examples for some 
 
 * **Estimated Duration:** 1 month
 * **FTE:**  6
-* **Costs:** 4,000 USD
+* **Costs:** 12,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
