@@ -5,6 +5,7 @@
 * **Project Name:** BLDG App
 * **Team Name:** BLDG BLOX INC
 * **Payment Address:** 3BR66M3qUbYKnUaP7ZF3G6cuyCcEF6nbgf
+* **Status:** [Terminated](https://github.com/w3f/Open-Grants-Program/pull/131#issuecomment-874245652)
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 

@@ -111,7 +111,7 @@ None.
 
 ### Overview
 
-* **Total Estimated Duration:** 2.75 months
+* **Total Estimated Duration:** 5 months
 * **Full-time equivalent (FTE):**  5.3
 * **Total Costs:** 1.48 BTC
 
@@ -131,36 +131,45 @@ None.
 | 5      | network         | Porting and implements `@polkadot/network`     |
 | 6      | tests           | Unit tests for deliverables above              |
 
-
 ### Milestone 2 — Porting `api`
 
 * **Estimated Duration:** 1 month
-* **FTE:**  2
-* **Costs:** 0.56 BTC
+* **FTE:**  1
+* **Costs:** 0.00 BTC
 
 | Number | Deliverable  | Specification                                   |
 | ------ | ------------ | ----------------------------------------------- |
-| 1      | types        | Porting `@polkadot/types`                       |
-| 2      | rpc_core     | Porting and implements `@polkadot/rpc`          |
-| 3      | rpc_provider | Porting and implements `@polkadot/rpc_provider` |
-| 4      | metadata     | Porting  `@polkadot/metadata`                   |
-| 5      | api_derive   | Porting  `@polkadot/api-derive`                 |
-| 6      | api_contract | Porting  `@polkadot/api-contract`               |
-| 7      | api          | Porting  `@polkadot/api`                        |
-| 8      | tests        | Unit tests for deliverables above               |
-| 9      | pub.dev      | Publish to pub.dev for v1.0.0-dev1              |
+| 0      | migration     | migrate all existing code to Null Safety        |
+| 1      | rpc_core     | Porting and implements `@polkadot/rpc`          |
+| 2      | rpc_provider | Porting and implements `@polkadot/rpc_provider` |
+| 3      | metadata     | Porting  `@polkadot/metadata`                   |
 
-### Milestone 3 — Publishing
+### Milestone 3 — Porting `api`
 
-* **Estimated Duration:** 3 weeks
+* **Estimated Duration:** 1.5 month
+* **FTE:**  1
+* **Costs:** 0.00 BTC
+
+| Number | Deliverable  | Specification                      |
+| ------ | ------------ | ---------------------------------- |
+| 0      | types        | Porting `@polkadot/types`          |
+| 1      | api_derive   | Porting  `@polkadot/api-derive`    |
+| 2      | api_contract | Porting  `@polkadot/api-contract`  |
+| 3      | api          | Porting  `@polkadot/api`           |
+| 4      | tests        | Unit tests for deliverables above  |
+| 5      | pub.dev      | Publish to pub.dev for v1.0.0-dev1 |
+
+### Milestone 4 — Publishing
+
+* **Estimated Duration:** 1.5 month
 * **FTE:**  1.3
-* **Costs:** 0.36 BTC
+* **Costs:** 0.92 BTC
 
 | Number | Deliverable    | Specification                        |
 | ------ | -------------- | ------------------------------------ |
-| 1      | tests          | Integration tests for all milestones |
-| 2      | documentations | Documentations for all packages      |
-| 3      | pub.dev        | Publish to pub.dev for v1.0.0        |
+| 0      | tests          | Integration tests for all milestones |
+| 1      | documentations | Documentations for all packages      |
+| 2      | pub.dev        | Publish to pub.dev for v1.0.0        |
 
 
 ### Community Engagement
