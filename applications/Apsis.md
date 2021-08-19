@@ -31,7 +31,7 @@ Apsis empowers blockchain applications with HTTPS access capabilities. By introd
 
 Apsis is a Polkadot parachain which can interact with HTTP APIs. Apsis EVM allows developers to write Solidity smart contracts which can invoke HTTP APIs synchronously within a single transaction.
 
-## Architecture
+#### Architecture
 
 Apsis node consists of the following three main components:
 
@@ -45,7 +45,7 @@ The two EVMs architectural design is adopted because Apsis requires raw SSL bina
 
 ![Apsis Architecture](https://github.com/nutsfinance/research/blob/main/images/apasis_architecture.png?raw=true)
 
-## Retroactively Verifiable HTTP Invocations
+#### Retroactively Verifiable HTTP Invocations
 
 Blockchain transaction data needs to be retroactively verifiable. The validity of past transactions can be verified by any others, even when these transactions are mined on-chain a long time before. HTTP, on the other hand, does not provide such native retroactive verifiability. We cannot verify an HTTP response by simply re-invoking the HTTP API because the HTTP API data might change already, This is especially true for HTTP responses recorded long ago.
 
@@ -74,7 +74,7 @@ One might argue that not all Web 2.0 HTTP servers can meet these three assumptio
 
 In short , Apsis chain is not supposed to support all Web 2.0 servers, but instead works with HTTP servers that are needed by blockchain applications. 
 
-## Apsis EVM
+#### Apsis EVM
 
 Apsis is an HTTPS-empowered blockchain which supports retroactively verifiable HTTPS invocations. The application scope of Apsis can be maximized with Apsis EVM, an HTTPS-empowered smart contract platform which allows smart contracts to invoke HTTPS API synchronously and reliably.
 
@@ -118,7 +118,7 @@ Apsis EVM provides a much enhanced development experience than off-chain Oracles
 
 One potential problem is the storage size. As transactions involving HTTP invocation accumulate, HTTPS session proof is likely to bloat and consume large amounts of storage space. This problem can be addressed by offloading HTTPS session proofs to external decentralized storage. For example, for relatively old blocks, we could package HTTPS session proofs for every 100 blocks and store them in other decentralized, content-addressable storage solutions such as IPFS, while leaving the response data(e.g. the return value of getData() in the example above) stored on-chain. Therefore, if miners want to validate relatively old transactions, they can download the HTTPS session data and discard them afterwards.
 
-## SSL Certificate Integration
+#### SSL Certificate Integration
 
 As mentioned in the previous section, the second assumption to meet is that HTTPS server should have a valid SSL certificate. To verify an HTTPS invocation record, Apsis miners need to validate its SSL certificate at the same time of the HTTPS invocation, since this SSL certificate might become invalid at the time of validation.
 
@@ -138,7 +138,7 @@ Since anyone can validate an SSL certificate for any given timestamp,  Apsis cha
 
 Polkadot is the best place to develop Apsis as it provides shared security and native cross-chain capabilities. Apsis can focus on HTTPS-Empowered smart contract development, and it could serve applications across multiple parachains via XCMP.
 
-## Polkadot Oracle Chain
+#### Polkadot Oracle Chain
 
 One notable application of Apsis is On-chain Oracles which provides end-to-end verifiability to access external data.
 
@@ -159,7 +159,7 @@ The Apsis chain can become the Oracle chain in the Polkadot ecosystem. Other Pol
 
 ![Oracle Chain](https://github.com/nutsfinance/research/blob/main/images/oracle_chain.png?raw=true)
 
-## Hybrid Blockchain Applications
+#### Hybrid Blockchain Applications
 
 The true potential of the Apsis chain is definitely not limited to Oracle. Since smart contracts on Apsis can access HTTP API synchronously within a single transaction, developers are able to write smart contracts involving complicated HTTP interactions, which are currently not available in any existing blockchain.
 
@@ -209,19 +209,10 @@ Through multiple projects, our aim is to deliver the working elements that can h
 
 ### Team LinkedIn Profiles (if available)
 
-[https://www.linkedin.com/in/joeztang](https://www.linkedin.com/in/joeztang)
-[https://www.linkedin.com/in/terry-lam-80a71927](https://www.linkedin.com/in/terry-lam-80a71927)
-[https://www.linkedin.com/in/dingshengda/](https://www.linkedin.com/in/dingshengda/)
+* [https://www.linkedin.com/in/joeztang](https://www.linkedin.com/in/joeztang)
+* [https://www.linkedin.com/in/terry-lam-80a71927](https://www.linkedin.com/in/terry-lam-80a71927)
+* [https://www.linkedin.com/in/dingshengda/](https://www.linkedin.com/in/dingshengda/)
 
-## Development Status :open_book:
-
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-* links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-* academic publications relevant to the problem,
-* links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-* references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-* previous interface iterations, such as mock-ups and wireframes.
 
 ## Development Roadmap :nut_and_bolt:
 
