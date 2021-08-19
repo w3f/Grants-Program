@@ -82,11 +82,11 @@ Publish open source Polkadot & Kusama plugins for the ChainJS standard, includin
 We will also deliver
 * Developer documentation 
 
-Estimated to be ~1 month total
+Estimated to be ~7 months total
 
 
 ### Overview
-* **Total Estimated Duration:** 1 month
+* **Total Estimated Duration:** 7 months
 * **Full-time equivalent (FTE):** 2 FTE
 * **Total Costs:** $15,000 in DAI
 
