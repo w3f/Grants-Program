@@ -17,7 +17,7 @@ We propose Apsis, a Polkadot parachain that supports synchronous and reliable in
 
 Apsis can be used to build on-chain Oracles which provides end-to-end data verifiability from data sources to data consumers. It is being pitched as the Oracle chain in the Polkadot ecosystem and other blockchains via cross-chain bridge integration.
 
-Apsis can be also used to build hybrid blockchain applications to take advantage of both Web 2.0 and Web 3.0. For more background about Apsis, please see Apsis Light Paper.
+Apsis can be also used to build hybrid blockchain applications to take advantage of both Web 2.0 and Web 3.0. For more background about Apsis, please see [Apsis Light Paper](https://github.com/nutsfinance/research/blob/main/Apsis%20HTTPS-Empowered%20Blockchain.pdf).
 
 ### Overview
 
