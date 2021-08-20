@@ -18,3 +18,49 @@ The purpose of this project is to provide a threshold signature wallet for the s
 Implementation categories include: 
   -  End-to-end private encrypted group chat based on ComingChat, which serves as the basis of private communication for each distributed node with threshold signatures.
   -  Implement the MAST protocol of BTC taproot in the form of a module on Substrate, which is used to combine the multisig logic of sr25519 to implement threshold signatures based on aggregate signatures.
+
+## Team :busts_in_silhouette:
+
+* **Members:** Guanghua Guo, Wei Dai, Jiangmang Luo, Bingxiao Liu, Yunhui Du and other PolkaX team members.
+* **LinkedIn Profiles:** https://www.linkedin.com/company/68944503/admin/
+* **Code Repos:** https://github.com/coming-chat, https://github.com/chainx-org
+* **Website:**	https://www.comingchat.com/
+* **Legal Structure:** Example GmbH
+* **Team's Experience:** 
+- Develop the ChainX network. 
+- Received more than 10 million block chain technology funding from the Chinese government. 
+- Developed ComingChat software
+
+## Development Roadmap :nut_and_bolt: 
+
+* **Total Estimated Duration:** 8 weeks
+* **Total Costs:** 100 000 DAI
+
+### Milestone 1
+
+* **Estimated Duration:** 4 weeks 
+* **Costs:** 50 000 DAI
+
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 0. | Apache License 2.0 | All code will be published under Apache 2.0 |
+| 1. | Substrate Module | Implement threshold signature module for BTC MAST contract |  
+| 2.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute | 
+
+### Milestone 2
+
+* **Estimated Duration:** 4 weeks 
+* **Costs:** 50 000 DAI
+
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 0. | Apache License 2.0 | All code will be published under Apache 2.0 |
+| 1.  | Wallet| Realize a threshold signature wallet based on a distributed privacy network |  
+| 3.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute| 
+
+
+## Additional Information :heavy_plus_sign: 
+
+* We are implementing the threshold signature of BTC based on the taproot protocol of BTC, so as to realize the decentralized cross-chain of BTC.
