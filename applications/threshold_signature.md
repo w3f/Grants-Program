@@ -25,7 +25,7 @@ Implementation categories include:
 * **LinkedIn Profiles:** https://www.linkedin.com/company/68944503/admin/
 * **Code Repos:** https://github.com/coming-chat, https://github.com/chainx-org
 * **Website:**	https://www.comingchat.com/
-* **Legal Structure:** Example GmbH
+* **Legal Structure:** Hangzhou Chainnet Technology Co., Ltd.
 * **Team's Experience:** 
 - Develop the ChainX network. 
 - Received more than 10 million block chain technology funding from the Chinese government. 
