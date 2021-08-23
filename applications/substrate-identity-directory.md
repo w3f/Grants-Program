@@ -25,11 +25,6 @@ https://identityhub.xyz/kusama<identity>
 Web service would read the <identity> parameter and make a query to the corresponding chain and retrieve identity data of the requested identity. 
 Web UI would have two ways of viewing data. A list view and a single page view. A list view would be a way for users to query the chain and display all registered identities on the Kusama and Polkadot chains. This view would be the default view if no specific identity is queried and provided in the URL. By clicking on the specific identity in the list, a user would be redirected to a single page view for the chosen identity. A single page view would be a way for users to query a specific identity data of the on-chain identity. This view would be a way for users to see identity activities indicative of a member’s reputation containing identity card of an on-chain identity along with all the metadata in the identity entry, an avatar if provided, any verifications from registrars in the chain, and buttons that allow you to send tokens directly to the user.
 
-Mock-ups:
-
-![List view](https://i.imgur.com/83jka9t.png)
-<br/>
-![Single page view](https://i.imgur.com/7u04sRV.png)
 
 
 
@@ -86,7 +81,10 @@ We have experience in several private and open source projects aswell as project
 | 4. | Implement individual identity page | Build UI components in VueJS used in the individual identity page. 
 | 5. | Implement query logic for identity data | Implement query logic which will be used to retrieve identity data. |
 
-
+Mockups:
+![List view](https://i.imgur.com/83jka9t.png)
+<br/>
+![Single page view](https://i.imgur.com/7u04sRV.png)
 
 ### Milestone 2 Implementing logic for sending tokens. Support for the offline mode.
 * **Estimated Duration:** 3 weeks
@@ -99,9 +97,23 @@ We have experience in several private and open source projects aswell as project
 | 2. | Make the web service work offline | Web service can be used in offline mode; the user can specify a local node to which will the service connect. |
  
 
+### Milestone 3 Index data and query
+* **Estimated Duration:** 3 weeks
+* **FTE:**  2
+* **Costs:** 8166 DAI
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | Index data from nodes | Setup [substrate-archive](https://github.com/paritytech/substrate-archive) with postgres for Polkadot and Kusama chains to store required data |
+| 2. | Backend development | Provide endpoints for data queries related to governance and treasury activities |
+| 3. | Fetch data on frontend | Consume provided endpoints and display data on frontend |
+
+Mockup:  
+![Identity activities](https://i.imgur.com/h9wQwXY.png)
+
 ## Future Plans
 
-After finishing milestones 1 and 2 users can utilize the basic application which supports querying by address. Application has a list page and a single page view with a basic info column fully functional. Users will be able to set their own node endpoint.
+After finishing milestones 1 and 2 users can utilize the basic application which supports querying by address, index or identity fields. Application has a list page and a single page view with a basic info column fully functional. Users will be able to set their own node endpoint.
 There will be a follow-up for the project that would support a plug-in ecosystem for different sub-views of identities. On-line version would come with some default plug-ins deactivated and an off-line version would support simple installation of other plug-ins. Default plug-ins would be basic info, governance, treasury and validator, and optional plug-in would be transaction history, identity history, remark history and society plug-ins.
 
 
