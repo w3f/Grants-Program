@@ -120,24 +120,6 @@ In short, our goal is to use ComingChat as the basis of communication, MuSig2 as
 | 1.b| Interface: Build an aggregated signature transaction |Through ComingChat's distributed encryption network, the construction of offline aggregated signature transactions is completed.|
 | 3.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute| 
 
-### Example
-    A, B, and C constitute a 2/3 threshold signature contract.
-    There are three possibilities for aggregation signature: AB, AC and BC.
-                        root
-                       /    \
-                   branch   BC
-                   /    \
-                  AB    AC
-         （Constructed threshold signature combination Merkel tree）
-     Substrate module provide 2 interface.
-     1: send_merkel_tree( merkel tree) -> threshold address
-     2: send_threshold_tx( tx) -> bool
-     
-     ComingChat distributed privacy computing network provides the assembly of two functions.
-     Shown in the form of ComingChat wallet
-     1: construct_merkel_tree( [A,B,C]) -> [AB, AC, BC, root]
-     2: construct_aggregate_signature_tx(msg, AB|AC|BC's signature) -> tx 
-
 ## Additional Information :heavy_plus_sign: 
 
 * The transaction can be completed without exposing the public key to achieve address privacy
