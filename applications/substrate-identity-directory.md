@@ -95,18 +95,25 @@ Mockups:
 | ------------- | ------------- | ------------- |
 | 1. | Implement logic for sending tokens | Implement logic for sending tokens; retrieve balance, parse inputs, display transaction fee, create the transfer transaction. |
 | 2. | Make the web service work offline | Web service can be used in offline mode; the user can specify a local node to which will the service connect. |
- 
 
 ### Milestone 3 Index data and query
+#### Requirements for the milestone:
+* https://github.com/paritytech/substrate/pull/8615
+* https://github.com/paritytech/substrate-archive/issues/97
+* https://github.com/paritytech/substrate-archive/issues/111
+* https://github.com/paritytech/substrate-archive/issues/132 
+
 * **Estimated Duration:** 3 weeks
 * **FTE:**  2
-* **Costs:** 8166 DAI
+* **Costs:** 2000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Index data from nodes | Setup [substrate-archive](https://github.com/paritytech/substrate-archive) with postgres for Polkadot and Kusama chains to store required data |
-| 2. | Backend development | Provide endpoints for data queries related to governance and treasury activities |
-| 3. | Fetch data on frontend | Consume provided endpoints and display data on frontend |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how the user can utilize the basic application. |
+| 0c. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
+| 1. | Backend development | Provide endpoints for data queries related to governance and treasury activities |
+| 2. | Fetch data on frontend | Consume provided endpoints and display data on frontend |
 
 Mockup:  
 ![Identity activities](https://i.imgur.com/h9wQwXY.png)
