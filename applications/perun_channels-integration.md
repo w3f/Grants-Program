@@ -3,7 +3,7 @@
 * **Project Name:** Perun Channels - Integration with go-perun
 * **Team Name:** PolyCrypt/Perun
 * **Payment Address:** 0x63DcE2cB0FeA77f4E55d01569583a40e17448B4b (DAI)
-* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
+* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 
 ## Project Overview :page_facing_up:
@@ -190,8 +190,8 @@ In 2020, we joined the hyperledger foundation together with our industry partner
 
 ### Overview
 
-* **Total Estimated Duration:** 5 months
-* **Total Costs:** 45,000 USD
+* **Total Estimated Duration:** 6.5 months
+* **Total Costs:** 60,000 USD
 
 ### Milestone 1 — Wallet Abstraction
 
@@ -232,8 +232,37 @@ In 2020, we joined the hyperledger foundation together with our industry partner
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a developer can use Perun channels on Polkadot, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article or workshop that explains what was done as part of the grant. |
 | 1. | End-to-end tests | We provide end-to-end tests that test the interplay between the new components. |
+
+
+### Milestone 4 — Improve Pallet
+
+* **Estimated Duration:** 0.5 months
+* **Costs:** 5,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 1. | Weight estimation | Currently, [perun-polkadot-pallet](https://github.com/perun-network/perun-polkadot-pallet) functions have a dummy constant weight. We will provide reasonable weight estimations, e.g., using [benchmarking](https://substrate.dev/docs/en/knowledgebase/runtime/benchmarking). This will require adapting our test setup. |
+| 2. | Code Coverage | We provide code coverage results and add a code coverage badge to [perun-polkadot-pallet](https://github.com/perun-network/perun-polkadot-pallet). |
+
+
+### Milestone 5 — CLI Demo
+
+* **Estimated Duration:** 1 month
+* **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article or workshop that explains what was done as part of the grant. |
+| 1. | CLI Demo | We provide a Perun Polkadot CLI Demo similar to [perun-eth-demo](https://github.com/perun-network/perun-eth-demo). The demo  lets users experiment with the technology and send payments between each other via a Perun Channel on Polkadot. |
 
 
 ## Future Plans
