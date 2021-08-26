@@ -314,8 +314,8 @@ Goal - Provide a standard and UI prototype for users to mint IPTs.
 | 0a. | License | GPLv3 |
 | 0b. | Documentation | Documentation includes We will provide both inline documentation of the code and a tutorial that explains how a user use the Invention Arch, and deploy their own IPT contracts, RMRK 2.0 Standard documentation, Polkadot.js Integration Guide, Readme file. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
-| 1. | IPT Standards: Integrating RMRK | integrate with RMRK 2.0, wrap RMRK 'Art Lego' functionality into our library. This deliverable is dependant on the development of the [RMRK 2.0 Standard](https://github.com/rmrk-team/rmrk-spec).|
-| 2. | IPT Standards: Extending RMRK | We will extend the RMRK Standards for minting a multi-attribute IPT needed for the MVP. Deploy smart contracts using Ink! rust-based native smart contract platform to the Karura Network. This deliverable is dependant on the development of the [Acala Platform](https://github.com/AcalaNetwork/Acala), please see the Acala [Developer Guide](https://wiki.acala.network/build/development-guide). |  
+| 1. | IPT Standards: Integrating RMRK | integrate with RMRK 2.0, wrap RMRK 'Art Lego' functionality by importing an [implementation](https://github.com/rmrk-team/rmrk-spec#implementations) of RMRK into our project library (ESM/TypeScript dependencies). This deliverable is dependant on the development of the [RMRK 2.0 Standard](https://github.com/rmrk-team/rmrk-spec).|
+| 2. | IPT Standards: Extending RMRK | We will extend the RMRK Standards for minting a multi-attribute IPT needed for the MVP. Release multi-chain IPT standard under the GPLv3 License |  
 | 3. | IPT Minter: UI | We will create a simple UI to interact with our smart contract and mint an IPT consisting of a variety of file-types and information accuractly capturing intellectual property. |  
 | 4. | Web dapp: Invention Arch  | Implement the dApp by deploying on the Karura parachain. | 
 | 5. | Article | We will publish an **article**/workshop that explains the process for minting an IPT focused towards university and trade school students, as well as throughout the Kusama ecosystem.
@@ -335,7 +335,7 @@ Goal - Expand IPT utility by implementing DEVs.
 | 0b. | Documentation | We will provide both inline documentation of the code, a tutorial that explains how to intitialize a DEV, and a Readme file. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 1. | DEV Framework: Smart Contract | We will create a smart contract framework for forming a DEV and implementing that framework. |
-| 2. | DEV Governance: IPTO | We will expand functionality to include IPT ownership (IPTO) tokens for both governance and financial utility. |  
+| 2. | DEV Governance: IPTO | We will expand functionality to include a DEV smart contract owning an IPT, and IPT ownership (IPTO) tokens for both governance and financial utility. Deploy Ink! rust-based native smart contract platform to the Karura Network. This deliverable is dependant on the development of the [Acala Platform](https://github.com/AcalaNetwork/Acala), please see the Acala [Developer Guide](https://wiki.acala.network/build/development-guide).|  
 | 3. | DEV Participation: Listing a DEV | We will create a simple UI for interacting with, applying to, and reviewing a DEV listing.  | 
 | 4. | DEV Integration: Invention + Involvement Arch | We will integrate the two features in order to bond an IPT to a DEV generate IPTO. |
 | 5. | Web dapp: Involvement Arch | Implement a very simple MVP dApp by deploying on the Karura platform and fully integrating with the Invention Arch. | 
