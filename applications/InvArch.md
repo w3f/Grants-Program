@@ -45,9 +45,7 @@ We expect the teams to already have a solid idea about your project's expected f
 
 ### Limitations
 While InvArch is designed to allow user to protect, store, authenticate, and securely share their intellectual property, it does not provide a system 
-for handling theft. Instead, the platform offers many of the resources needed to take action against an individual. Still, it is important to remember 
-that the platform does not litigate attempts of intellectual property theft. The platform does, however, provide governance measures to handle bad 
-actors within a DEV, and the platform is designed to prevent bad actors for taking over a project.
+for handling theft. Instead, the platform offers many of the resources needed to take action against an individual. It is important to note that the full contents/data of an IPT are not initially fully exposed on the platform. The platform addresses the problem of security by 1. integrating decentralized KYC, a requirement for users to access the platform, 2. only exposing limtited data (name, industry, focus, description) to users until after they have applied to a DEV and 3.) the initializer of said DEV reviews, interviews, and elects to share a temporary private-key fullu exposing the IPTs data. The platform does not litigate attempts of intellectual property theft. The platform does, however, provide governance measures to handle bad actors within a DEV. The platform is designed to prevent bad actors from taking over a project through the allocation structure of a DEV's IPT Ownership (IPTO) tokens. The platform extends the same security to intellectual property as digital art NFTs supply, but just as NFT platforms do not mitigate disputes, the InvArch platform does not as well. 
 
 ### Components
 ### 1. Invention Arch & IPT Minter
@@ -317,7 +315,7 @@ Goal - Provide a standard and UI prototype for users to mint IPTs.
 | 0b. | Documentation | Documentation includes We will provide both inline documentation of the code and a tutorial that explains how a user use the Invention Arch, and deploy their own IPT contracts, RMRK 2.0 Standard documentation, Polkadot.js Integration Guide, Readme file. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 1. | IPT Standards: Integrating RMRK | integrate with RMRK 2.0, wrap RMRK 'Art Lego' functionality into our library. This deliverable is dependant on the development of the [RMRK 2.0 Standard](https://github.com/rmrk-team/rmrk-spec).|
-| 2. | IPT Standards: IPT Minting | We will create a smart contract for minting a multi-attribute IPT and storing on Karura Parachain needed for the MVP. |  
+| 2. | IPT Standards: Extending RMRK | We will extend the RMRK Standards for minting a multi-attribute IPT needed for the MVP. Deploy smart contracts using Ink! rust-based native smart contract platform to the Karura Network. This deliverable is dependant on the development of the [Acala Platform](https://github.com/AcalaNetwork/Acala), please see the Acala [Developer Guide](https://wiki.acala.network/build/development-guide). |  
 | 3. | IPT Minter: UI | We will create a simple UI to interact with our smart contract and mint an IPT consisting of a variety of file-types and information accuractly capturing intellectual property. |  
 | 4. | Web dapp: Invention Arch  | Implement the dApp by deploying on the Karura parachain. | 
 | 5. | Article | We will publish an **article**/workshop that explains the process for minting an IPT focused towards university and trade school students, as well as throughout the Kusama ecosystem.
