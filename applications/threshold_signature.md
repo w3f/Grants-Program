@@ -47,7 +47,7 @@ There are three possibilities for aggregation signature: AB, AC and BC.
  2: construct_aggregate_signature_tx(msg, AB|AC|BC's signature) -> tx
 ```
 
-As shown in the following figure, a complete transaction process of our threshold signature may be: n individuals participate in a transaction with a threshold of m, and use the offline Musig2 module to generate all m possible aggregate public keys through the ComingChat distributed encrypted communication network. Then output all the aggregated public keys (for example: `[AB, AC, BC]`) as the input of the pallet's threshold signature interface and return a threshold signature address as the multi-signature address. When the m individual uses the multi-signature address to conduct a transaction, he first uses the ComingChat wallet to generate an aggregate signature, which is used as the input of the pallet verification interface and verifies whether the signature is passed. It is worth noting that in the signature verification process, first verify whether the merkle root is correct, and then whether the aggregated signature satisfies the aggregated public key. If both are successful, the verification passes, otherwise it fails.
+As shown in the following figure, a complete transaction process of our threshold signature may be: n individuals participate in a transaction with a threshold of m, and use the offline Musig module to generate all m possible aggregate public keys through the ComingChat distributed encrypted communication network. Then output all the aggregated public keys (for example: `[AB, AC, BC]`) as the input of the pallet's threshold signature interface and return a threshold signature address as the multi-signature address. When the m individual uses the multi-signature address to conduct a transaction, he first uses the ComingChat wallet to generate an aggregate signature, which is used as the input of the pallet verification interface and verifies whether the signature is passed. It is worth noting that in the signature verification process, first verify whether the merkle root is correct, and then whether the aggregated signature satisfies the aggregated public key. If both are successful, the verification passes, otherwise it fails.
 
 ### ![img](https://cdn.jsdelivr.net/gh/rjman-ljm/resources@master/assets/1629794873542-threshold_signature-1.png)
 
@@ -55,25 +55,42 @@ In the above process, the process of generating the threshold signature address 
 
 ### ![img](https://cdn.jsdelivr.net/gh/rjman-ljm/resources@master/assets/1629794912297-threshold_signature-2.png)
 
+#### Technology Stack
+
+Threshold signature pallet is a module we will write, mainly used for address generation and verification of threshold signature. For this pallet, we will use the rust language and the substrate framework to write it. Part of the encryption primitives comes from Schnoorkle (such as public keys, private keys), and some need to be written by ourselves (such as MAST). To complete this pallet, we may need to implement the list:
+
+1. Construct an aggregated public key scripts
+2. Build the MAST using the aggregated signature scripts
+3. Use MAST to generate threshold signature address
+4. Construct an aggregated signature
+5. Verify that the aggregated signature and the aggregated public key match
+6. Use the MAST to verify that the root matches
+
+The wallet is a threshold signature wallet built on the ComingChat distributed network, which is mainly used to generate aggregate public keys and aggregate signatures. Currently, we will use Musig as our multi-signature scheme. We will use Musig implemented in rust language as the basis for the calculation of aggregate public keys and aggregate signatures. Use the ComingChat network as our communication basis. Finally, a threshold signature wallet is constructed. To complete the threshold signature wallet, we may need to implement the list:
+
+1. Generate nonce and calculate commitment
+2. Use ComingChat network to deliver commitment
+3. Use ComingChat network to pass the nonce and verify the commitment
+4. Aggregate nonce to generate R, use the private key, R to generate signature fragments
+5. Use ComingChat network to deliver commitment and signature fragments
+6. Aggregate signature fragments to generate s
+7. Get the aggregate signature (R, s)
+
+[For more details](https://eprint.iacr.org/2018/068)
+
 ### Ecosystem Fit
 
 Under the current threshold signature scheme, multi-signature verification requires the submitted data to change from the original signature and public key to the submitted merkle proof, and the data level changes from O(n) to O(log n).
 
-#### Adopt MuSig2 to reduce the communication burden
-
-At present, w3f already supports [MuSig](https://github.com/w3f/schnorrkel) for three rounds of communication, which can help us realize multi-person aggregation signatures. However, due to the large amount of communication required between signers, it may be difficult to deploy MuSig in practice. In order to improve this process, [MuSig2](https://eprint.iacr.org/2020/1261), the successor of MuSig, follows.
-
-MuSig2 provides the same functionality and security as MuSig, but can eliminate almost all interactions between signers. With MuSig2, the signer only needs two rounds of communication to create a signature, and it is crucial that one of the rounds can be preprocessed before the signer knows the message they want to sign. Once there are some messages that need to be signed, the process is the same as the CHECKMULTSIG based wallet: the transaction is transferred to the signer and the signature is received in return, that is, the non-interactive signature is realized. At the same time, MuSig2 retains the simplicity and efficiency of MuSig, with only a small amount of additional calculations.
-
 #### Introducing MAST to realize the complex contract
 
-MuSig2 can help us achieve aggregate signatures, but in practice, we use m-of-n threshold signatures more. To this end, we introduced the MAST (Merkelized Abstract Syntax Tree) contract to help us implement threshold signatures based on MuSig2. The idea of MAST is to use a Merkle tree to encode branches in a script. Users may provide only the branches they are executing, and hashes that connect the branches to the fixed size Merkel root when spending. This reduces the size of the redemption stack from O(n) to O(log n) (n as the number of branches). This enables complicated redemption conditions that are currently not possible due to the script size and opcode limit, improves privacy by hiding unexecuted branches, and allows the inclusion of non-consensus enforced data with very low or no additional cost.
+MuSig can help us achieve aggregate signatures, but in practice, we use m-of-n threshold signatures more. To this end, we introduced the MAST (Merkelized Abstract Syntax Tree) contract to help us implement threshold signatures based on MuSig. The idea of MAST is to use a Merkle tree to encode branches in a script. Users may provide only the branches they are executing, and hashes that connect the branches to the fixed size Merkel root when spending. This reduces the size of the redemption stack from O(n) to O(log n) (n as the number of branches). This enables complicated redemption conditions that are currently not possible due to the script size and opcode limit, improves privacy by hiding unexecuted branches, and allows the inclusion of non-consensus enforced data with very low or no additional cost.
 
 #### Privacy communication based on Coming Chat
 
-In addition, an end-to-end private encrypted group chat based on Coming-Chat is used as the basis of private communication for each distributed node. ComingChat helps us realize the two-round communication process of MuSig2 quickly, efficiently, and safely.
+In addition, an end-to-end private encrypted group chat based on Coming-Chat is used as the basis of private communication for each distributed node. ComingChat helps us realize the two-round communication process of MuSig quickly, efficiently, and safely.
 
-In short, our goal is to use ComingChat as the basis of communication, MuSig2 as a multi-signature scheme, and introduce MAST to finally realize threshold signatures.
+In short, our ultimate goal is to use ComingChat as the basis of communication, MuSig as a multi-signature scheme, and introduce MAST to finally realize threshold signatures. 
 
 ## Team :busts_in_silhouette:
 
