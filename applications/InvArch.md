@@ -168,8 +168,8 @@ legal advisor for the Web3 Foundation, and as an active advisor for NEAR protoco
 ### Team Code Repos
 
 * https://github.com/InvArch
-* https://github.com/InvArch/InvArch
-* https://github.com/InvArch/Varch/
+* https://github.com/InvArch/InvArch-node
+* https://github.com/InvArch/InvArch-Spec
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
