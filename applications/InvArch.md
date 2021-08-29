@@ -24,7 +24,9 @@ helping to catalyze future innovations, it's a belief that motivates and inspire
 * [InvArch Litepaper](https://invarch.io/invarch-litepaper/)
 * [InvArch Pitch Deck](bit.ly/invarch_deck)
 
-![](https://i.ibb.co/cxTZQqK/Screen-Shot-2021-08-28-at-5-42-07-PM.png)<br>
+<div align=center>
+  <img src="https://i.ibb.co/cxTZQqK/Screen-Shot-2021-08-28-at-5-42-07-PM.png">
+</div>
 
 ### InvArch approaches ideas (IP) as a set of non-fungible components: 
 * IP Set = Idea
@@ -49,7 +51,10 @@ for handling theft. Instead, the platform offers many of the resources needed to
 ### 1. IP Protocol & Pallets
 * `Pallet_ips` - Provides basic functionality for creating and managing an `IPSet`. You can think of an `IPSet` as an idea, which is basically a collection of components (intellectual property tokens) that define and describe that idea.
 * `Pallet_ipt` - Provides basic functionality for creating and managing an `IPToken`. You can think of an `IPToken` as a component of an idea. For example, a business summary PDF file, or even a 3D rendering of a prototype mold. When combined and stored in an `IPSet`, that collection forms the foundtion for an idea. The more detailed and/or comprehensive an `IPSet` is, the stronger the idea.
-* `Pallet_ipo` - Provides basic functionality for creating and managing a `IPOwnership` tokens. You can think of `IPOwnership` tokens as a form of fungible and fractionalized ownership that are built-in to every `IPSet`. 
+* `Pallet_ipo` - Provides basic functionality for creating and managing a `IPOwnership` tokens. You can think of `IPOwnership` tokens as a form of fungible and fractionalized ownership that are built-in to every `IPSet`.
+<div align=center>
+  <img src="https://i.ibb.co/Cn1Vsvb/Screen-Shot-2021-08-29-at-11-48-57-AM.png">
+</div>
 
 ### 2. DEV Protocol & Pallets
 * `Pallet_dev` - Provides basic functionality for creating and managing a `DEV`(Decentralized Entrepreneurial Venture). You can think of a `DEV` as an agreement between multiple parties to come together as cofounders over a project in order to contribute towards an `IPSet`'s actualization.
@@ -61,7 +66,9 @@ for handling theft. Instead, the platform offers many of the resources needed to
 ### Key Info Regarding `IPOwnership`
 To ensure that no single actor can have a 51% hold over a project, IPO can be
 distributed within the following ranges: <br>
-![](https://i.ibb.co/7NKWDM6/Screen-Shot-2021-08-28-at-5-41-35-PM.png)
+<div align=center>
+  <img src="https://i.ibb.co/7NKWDM6/Screen-Shot-2021-08-28-at-5-41-35-PM.png">
+</div>
 <br>
 A DEV can dedicate 0-66% (0- Max. 6600) of its IPO to its founders (non-profits would
 distribute 0%). The rest (Min. 3400-10,000 IPO) would be allocated to the DEVs treasury.
@@ -87,7 +94,7 @@ The more IPO a participant has, the more voting weight they have.
 
 ### Ecosystem Fit
 
-:link: **Chains and Pallets**<br>
+:link:  **Chains and Pallets**<br>
 InvArch could arguably be applied to any of the one sub-categories below:
 * Social Networking
 * NFT
@@ -196,7 +203,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 * **Total Estimated Duration:** 3 months
 * **Full-Time Equivalent (FTE):** 2
-* **Total Costs:** $32,000 equivalent
+* **Total Costs:** $30,000 equivalent
 
 ### Milestone 1 — Implement IP Standards
 
@@ -224,7 +231,7 @@ Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain
 
 * **Estimated duration:** 8 weeks
 * **FTE:**  2
-* **Costs:** $22,000 equivalent
+* **Costs:** $20,000 equivalent
 
 Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain
 
@@ -246,7 +253,14 @@ Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain
 
 * 1a. Integrate decentralized KYC capabilities into our chain (Likely using KILT Protocol).
 * 1b. Look into extending IPO listing capabilities by integrating with Polkadex.
-* 1c. Expand IP Token capabilities by integrating with RMRK.
+* 1c. Expand IP Token capabilities by integrating with RMRK (if possible), or by expanding the standards.
+<div align=center>
+  (concept)
+  <img src="https://i.ibb.co/XsG84qs/Screen-Shot-2021-08-29-at-11-49-33-AM.png">
+  (example)
+  <img src="https://i.ibb.co/2gCx7cm/Screen-Shot-2021-08-29-at-11-50-01-AM.png">
+</div>
+
 * 2a. **Flagship dApp**: Launch a decentralized professional social networking platform for DEV partnership.
 * 2b. Develop a private instant messenger that uses on-chain identity.
 * 2c. Add an Innovation Bounties Board feature to our dApp.
