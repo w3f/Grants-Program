@@ -61,14 +61,14 @@ We have experience in several private and open source projects aswell as project
 ## Development Roadmap 
 
 ### Overview
-* **Total Estimated Duration:** 9 weeks
+* **Total Estimated Duration:** 12 weeks
 * **Full-time equivalent (FTE):**  3
 * **Total Costs:** 34500 DAI
 
 ### Milestone 1 Designing and design implementation for list page / individual identity page. 
 * **Estimated Duration:** 6 weeks
 * **FTE:**  3
-* **Costs:** 22.500 DAI
+* **Costs:** 14700 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -105,7 +105,7 @@ Mockups:
 
 * **Estimated Duration:** 3 weeks
 * **FTE:**  2
-* **Costs:** 2000 DAI
+* **Costs:** 9800 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
