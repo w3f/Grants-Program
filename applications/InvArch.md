@@ -217,7 +217,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 * **FTE:**  2
 * **Costs:** $10,000 equivalent
 
-Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain
+Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain/InvArch Pallet Library
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -239,7 +239,7 @@ Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain
 * **FTE:**  2
 * **Costs:** $20,000 equivalent
 
-Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain
+Goal - Develop and deliver the DEV Pallets & Standards for the InvArch Chain/InvArch Pallet Library
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
