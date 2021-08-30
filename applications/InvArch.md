@@ -211,7 +211,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 * **Full-Time Equivalent (FTE):** 2
 * **Total Costs:** $30,000 equivalent
 
-### Milestone 1 — Implement IP Standards
+### Milestone 1 — Implement IP Pallets & Standards
 
 * **Estimated duration:** 4 weeks
 * **FTE:**  2
@@ -233,7 +233,7 @@ Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain/InvA
 
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Implement DEV Pallets & Standards
 
 * **Estimated duration:** 8 weeks
 * **FTE:**  2
