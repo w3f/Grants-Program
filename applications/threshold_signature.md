@@ -78,6 +78,30 @@ The wallet is a threshold signature wallet built on the ComingChat distributed n
 
 [For more details](https://eprint.iacr.org/2018/068)
 
+#### UI
+
+The preliminary design of our **Threshold Signature Wallet** mainly consists of three parts.
+
+- Create a threshold signature address: This step is used to select parties to generate a threshold account.
+
+  ![](https://cdn.jsdelivr.net/gh/AAweidai/PictureBed@master/taproot/1630328549217-WechatIMG19.png)
+
+
+
+- Initiate transaction: This step refers to the initial action of initiating a threshold-signature transaction, it’s different from the sign a transaction shown below.
+
+  Entrance 1: Initiate transaction through wallet page:
+
+  ![](https://cdn.jsdelivr.net/gh/AAweidai/PictureBed@master/taproot/1630328784865-WechatIMG21.png)
+
+  Entrance 2: Initiate transaction through group page
+
+  ![](https://cdn.jsdelivr.net/gh/AAweidai/PictureBed@master/taproot/1630328956646-WechatIMG20.png)
+
+- Sign a transaction: This step refers to the action taken by other people to sign a specific transaction which someone had generated before.
+
+  ![](https://cdn.jsdelivr.net/gh/AAweidai/PictureBed@master/taproot/1630329110617-WechatIMG18.png)
+
 ### Ecosystem Fit
 
 Under the current threshold signature scheme, multi-signature verification requires the submitted data to change from the original signature and public key to the submitted merkle proof, and the data level changes from O(n) to O(log n).
@@ -107,11 +131,13 @@ In short, our ultimate goal is to use ComingChat as the basis of communication, 
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 8 weeks
+* **Full-time equivalent (FTE):** 10
 * **Total Costs:** 100 000 DAI
 
 ### Milestone 1
 
 * **Estimated Duration:** 4 weeks 
+* **FTE:** 7
 * **Costs:** 50 000 DAI
 
 | Number | Deliverable                                        | Specification                                                |
@@ -126,6 +152,7 @@ In short, our ultimate goal is to use ComingChat as the basis of communication, 
 ### Milestone 2
 
 * **Estimated Duration:** 4 weeks 
+* **FTE:** 10
 * **Costs:** 50 000 DAI
 
 
