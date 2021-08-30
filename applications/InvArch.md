@@ -1,6 +1,6 @@
 # W3F Grant Proposal
 
-* **Project Name:** InvArch
+* **Project Name:** InvArch - IP Infrastructure for Substrate
 * **Team Name:** InvArchitects
 * **BTC Payment Address:** bc1q8ere0hsz2rnledqev0e96artwuwtgrj4jf0u8z
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -10,10 +10,10 @@
 ### Overview
 
 * InvArch is a next generation blockchain for intellectual property tokenization, development, & networking.
-
+* Under this grant, the [InvArch Pallet Library](https://github.com/InvArch/InvArch-Pallet-Library) would be delivered, and would provide an IP tokenization and utility infrastructure for the Substrate ecosystem.
 * The InvArch platform provides utility for this new technology by allowing intellectual property tokens (IPTs) to be owned by a 
 Decentralized Entrepreneurial Venture (DEV) contract and governed as a DAO using built-in fungible IP Ownership (IPO) tokens. These tokens
-may also be leverages by participants in a DEV to raise startup funds for their projects.
+may also be leverages by participants in a DEV to raise startup funds for their projects. 
 * InvArch is built using Substrate/Rust.
 * Every member of the time has an honest belief that this project will help make the world better through increased economic decentralization and by
 helping to catalyze future innovations, it's a belief that motivates and inspires every one of us to see this project through.
@@ -48,6 +48,8 @@ for handling theft. Instead, the platform offers many of the resources needed to
 
 ### Components
 
+### InvArch Pallet Library
+
 ### 1. IP Protocol & Pallets
 * `Pallet_ips` - Provides basic functionality for creating and managing an `IPSet`. You can think of an `IPSet` as an idea, which is basically a collection of components (intellectual property tokens) that define and describe that idea.
 * `Pallet_ipt` - Provides basic functionality for creating and managing an `IPToken`. You can think of an `IPToken` as a component of an idea. For example, a business summary PDF file, or even a 3D rendering of a prototype mold. When combined and stored in an `IPSet`, that collection forms the foundtion for an idea. The more detailed and/or comprehensive an `IPSet` is, the stronger the idea.
@@ -74,14 +76,18 @@ A DEV can dedicate 0-66% (0- Max. 6600) of its IPO to its founders (non-profits 
 distribute 0%). The rest (Min. 3400-10,000 IPO) would be allocated to the DEVs treasury.
 The total distribution between these two must equal 100% of the DEV’s IPO.<br>
 <br>
-* 𝑓 + 𝑡 = 10000 | 0 ≤ 𝑓 ≤ 6600 | 3400 ≤ 𝑡 ≤ 10000<br>
+<div align=center>
+  𝑓 + 𝑡 = 10000 | 0 ≤ 𝑓 ≤ 6600 | 3400 ≤ 𝑡 ≤ 10000<br>
+</div>
 <br>
 Among the Founders, out of however much IPO is decided to be allocated, no single
 participant can have more than 50% (Max. 3300) of the allocated IPO. No single
 co-founder can have a higher stake than the founder. The distribution algorithm for the
 founder’s distribution is:<br>
 <br>
-* 𝑓(𝑂) / 𝑝(𝑛) ≥ 𝑝(𝑂)<br>
+<div align=center>
+  𝑓(𝑂) / 𝑝(𝑛) ≥ 𝑝(𝑂)<br>
+</div>
 <br>
 Where 𝑓(𝑂)represents the founder’s total IPOwnership tokens, 𝑝(𝑛)represents the number of
 co-founders, and 𝑝(𝑂)represents a co-founder’s IPOwnership tokens. This statement must
@@ -169,7 +175,7 @@ legal advisor for the Web3 Foundation, and as an active advisor for NEAR protoco
 
 * https://github.com/InvArch
 * https://github.com/InvArch/InvArch-node
-* https://github.com/InvArch/InvArch-Spec
+* https://github.com/InvArch/InvArch-Pallet-Library
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
@@ -220,9 +226,9 @@ Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain
 | 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 1. | Node Repo | Complete the deployment of the InvArch chain (https://github.com/InvArch/InvArch) |
-| 2a. | Pallet_ips | Complete the development of pallet_ips and realize the IP Collections standard. |
-| 2b. | Pallet_ipt | Complete the development of pallet_ipt and realize the IP Token Standard.  |
-| 2c. | Pallet_ipo | complete the development of pallet_ipo and realize the fractionalized ownership mechanism. |
+| 2a. | Pallet_ips | Complete the development of [pallet_ips](https://github.com/InvArch/InvArch-Pallet-Library/tree/main/ips) and realize the IP Sets standard. |
+| 2b. | Pallet_ipt | Complete the development of [pallet_ipt](https://github.com/InvArch/InvArch-Pallet-Library/tree/main/ipt) and realize the IP Token Standard.  |
+| 2c. | Pallet_ipo | complete the development of [pallet_ipo](https://github.com/InvArch/InvArch-Pallet-Library/tree/main/ipo) and realize the fractionalized ownership mechanism. |
 | 3. | Article | 	We will write an **article** that explains the work done as part of the grant. |
 
 
@@ -246,7 +252,7 @@ Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain
 | 1c. | Pallet_worklog | Complete the development of pallet_worklog and realize the development worklog mechanism mechanism. |
 | 1d. | Pallet_deliverables | Complete the development of pallet_deliverables and realize the deliverables mechanism. |
 | 1e. | Pallet_listings | Complete the development of pallet_listings and realize the IPO listing mechanism. |
-| 2. | InvArch UI | We will development a basic UI in Vue.js |
+| 2. | InvArch UI | We will develop a basic UI for our chain in Vue.js |
 | 3. | Article | 	We will write an **article** that explains the work done as part of the grant. |
 
 ## Future Plans
@@ -255,9 +261,9 @@ Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain
 * 1b. Look into extending IPO listing capabilities by integrating with Polkadex.
 * 1c. Expand IP Token capabilities by integrating with RMRK (if possible), or by expanding the standards.
 <div align=center>
-  (concept)
+  <br>(concept: Multi-attribute IPT)<br>
   <img src="https://i.ibb.co/XsG84qs/Screen-Shot-2021-08-29-at-11-49-33-AM.png">
-  (example)
+  <br>(concept: Multi-layer IPS)<br>
   <img src="https://i.ibb.co/2gCx7cm/Screen-Shot-2021-08-29-at-11-50-01-AM.png">
 </div>
 
@@ -269,6 +275,7 @@ Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website
+**How did you hear about the Grants Program?** 
+Web3 Foundation Website
 
 Only the InvArch team has financially contributed at this time.
