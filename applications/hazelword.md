@@ -14,12 +14,10 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-Hazel is a blockchain-oriented prediction service which features decentralization, or more specifically, a new generation of verifiable oracle machine based on Polkadot. It aims to exactly support the on-chain operation of enterprise-level Internet applications with high-concurrency through consensus mechanisms, smart contracts, trusted computing, privacy protection and the interaction of on-chain and off-chain data.
-
-Hazleword is set to build a data infrastructure by applying Off-chain Worker under Polkadot/Substrate Framework. The mission of Hazleword racle is to provide real-time, transparent, reliable and efficient on-chain/off-chain market statistics and social data sources.Hazleword is to build a decentralized Oracle system with advanced technologies. The Off-chain Worker for Hazleword will allow execution of expensive, long-running and private tasks such as the Computation-based Data Verification,and Through the collaborative application of TEE, MPC and on-chain contracts, Hazel will realize the privacy protection of high-value data from oracle and complete consequent collaborative calculation as well as application, making it possible that the transaction of value flow under the premise that all parties involved are invisible one another.
-
 The Internet has realized the efficient transmission of information where the concept of Internet of Everything and its application have greatly changed human life. As the next-generation "Internet of Value", blockchain is expected to deliver and exchange value as accurately, efficiently and safely as information while the digital assets based on the native blockchain system are important carriers in transmission of value.As an objective measurement of value, price is an important basic component for realizing value exchange. With the rapid development of blockchain, whether value can be exchanged at low cost safely and efficiently has become a core standard for measuring the application value of blockchain. Therefore, as it were, the measurement of application value of blockchain is inseparable from the objective measurement of assets on any chain.We expect to provide a data-driven prediction service based on the “asset-backed events” and a data-correction mechanism based on fact checking. The oracle machine could resolve fundamental problems about trusted source of data of blockchain through the mechanism of market arbitrage.
 
+At present, the quotation mode of the oracles on the market is basically uploaded by the node and verified by voting.
+As an oracle machine, Uniswap extracts the price of the transaction, and cannot confirm whether there is a spread in the transaction price of these transactions, and how big the spread, especially if there is malicious manipulation, the price deviation will be even greater.
 
 ### Project Details
 
@@ -31,8 +29,9 @@ https://test.hazelword.org
 ![alt Product Architecture](https://github.com/Hazelword/hzl-sol/blob/main/doc/project.png)
 
 **Quotation Process**
-Hazelword provides the idea of a multi-party game, using quotation, arbitrage verification, quote vault, price chain, trusted TEE module, security module, DAO autonomy and other modules to form a safe real-time decentralized oracle system, The following is the main process part of ETH/USDT trading pair mining:
-![alt Contract Architecture](https://github.com/Hazelword/hzl-sol/blob/main/doc/hzl-en.jpg)
+Hazelword provides the idea of a multi-party game, using quotation, arbitrage verification, quote vault, price chain, trusted TEE module, security module, DAO autonomy and other modules to form a safe real-time decentralized oracle system
+Hazel oracles generate oracles quotations based on protocol algorithms, where participants include bidders, verifiers, and price callers.
+The quotation realization process: If the current market price is 1 DOT=20.1 USDT, then the bidder needs to transfer 10 DOT and 201 USDT to the contract. During this period, the verifier can exchange at the price given by the bidder, such as , Transfer 201 USDT to the contract to exchange 10 DOT, or transfer 10 DOT to the contract to exchange 201 USDT.
 
 **Participant Description:**
 Quoter: Participants who provide quotes, including three parts: 
@@ -96,6 +95,7 @@ In the indirect oracle, the credit risk of the node uploading the data determine
 * What need(s) does your project meet?
 
 Our early thoughts were based on Vitalik Buterin article “UNI should become an oracle token” (https://gov.uniswap.org/t/uni-should- become-an-oracle-token/11988), this article has a big idea of our project
+If the quotation of the bidder deviates greatly from the true price of the market, it will give the verifier an opportunity for arbitrage. When the validator takes advantage of the deviation between the bidder and the real price for arbitrage, it will make the bidder lose money. Everyone wants to take advantage of others, but is unwilling to take advantage of others. Through such an arbitrage penalty mechanism, miners participating in the quotation can be encouraged to quote at the correct price in the market, so as to realize the delivery of truly effective price information to the quotation system.
 | Number | Deliverable | Specification | Data Verification Time|
 | -----: | ----------- | ------------- | --------------------- |
 |ChainLink |Off-chain centralized submission, on-chain aggregation|YES|Post, after the data becomes effective|
@@ -103,11 +103,6 @@ Our early thoughts were based on Vitalik Buterin article “UNI should become an
 | Band|Off-chain aggregation, on-chain voting verification | YES|Post, after the data becomes effective|
 | Tellor|Competing for computing power to obtain data reporting rights, aggregation on the chain |NO |Post, after the data becomes effective|
 | HazelWord| Decentralized submission on the chain, real-time verification and aggregation on the chain|NO |Before, before the data becomes effective|
-
-In the indirect oracle, the credit risk of the node uploading the data determines the cost of attacking the data of the oracle. 
-If 1 trillion dollars of assets are derived based on the price provided by the oracle, the credit of the oracle node should also match it.
- This is obviously impossible in reality. No matter what node randomness is used, it cannot be guaranteed. This is an essential problem,
- not a technical problem, so indirect oracles can only be used in small-scale, non-financial scenarios.
 
 
 ## Team :busts_in_silhouette:
@@ -195,8 +190,12 @@ To assist you in defining it, we have created a document with examples for some 
 | 0c。| Testing Guide | Provide testing guide documents to provide developers with how to test our code|
 | 0d. | Docker | Login interface, price view interface and mortgage interface |
 | 0e. | Article | An article to introduce |
-| 1. | Price chain |According to the mining rules, every T1 time, the final correct price of the changed block is successfully generated according to the weight <br />Using the ink! <br />This picture is a good illustration of the price chain(https://github.com/Hazelword/hzl-sol/blob/main/doc/asset.png) <br/ >This is the version using solidity(https://github.com/Hazelword/hzl-sol)|
-| 2. |The generation of price chain  |According to the price quoted by the bidder in T1, the validator must report a new price after the bidder's price transaction, and so on. When the T1 phase is over, the weighted price in T1 is calculated to generate a price chain<br />The price generation of the price chain in the block(https://github.com/Hazelword/hzl-sol/blob/main/doc/hzl-en.jpg)|
+| 1. | Quotation generation module |1. All quote miners 2. Quote vault|
+| 2. |Quote buy module |1. All verifiers 2. Verifier Quote vault|
+| 3. |Price caller module|Only need to pay a certain fee or purchase a certain number of queries to get the current price of all trading pairs in the current block, and any contract or account can become a price caller.|
+| 4. |Price caller | According to the mining rules, every T1 time period, all valid quotations (quotes that have not been taken) within this period of time are used to generate the final price of the block N of the transaction pair according to the weight.|
+
+
 
 
 ####  M2：Quote Vault Basic Module UI
