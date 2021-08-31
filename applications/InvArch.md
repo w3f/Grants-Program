@@ -36,6 +36,11 @@ helping to catalyze future innovations, it's a belief that motivates and inspire
 * A new IP set can be created (`create`) and new IPT can be minted (`mint`) and added to a Set.
 * Existing IPT can be burned (`burn`) or amended (`amend`). 
 * Subsequently, an entire IP Set could be destroyed (`destroy`) as well, burning all of its contents.
+* IPFS or Interplanetary File System allows data and IP contents to be securely stored off-chain and given a CID, or content identifier, that serves as a unique hash and is used to mint IP Tokens. The InvArch protocol will include the [`ipfs_api`](https://docs.rs/ipfs-api/0.11.0/ipfs_api/) crate to help achiave this.
+
+### InvArch's approach to Decentralized Entrepreneurial Ventures (DEVs): 
+* DEV = An agreement that defines the required/requested roles a project needs and their IP Ownership allocations, sets its milestones/deliverables, copyright terms, if any, and decides its application process. A DEV can also be imagined as a deigital representation of a real-world development project.
+* You can `initialize`,`list`,`amend`,`apply`,`launch`,`unlist`, and `deconstruct` a DEV.
 
 ### Technologies
 1. Substrate
@@ -44,7 +49,7 @@ helping to catalyze future innovations, it's a belief that motivates and inspire
 
 ### Limitations
 While InvArch is designed to allow user to protect, store, authenticate, and securely share their intellectual property, it does not provide a system 
-for handling theft. Instead, the platform offers many of the resources needed to take action against an individual. It is important to note that the full contents/data of an IPT are not initially fully exposed on the platform. The platform addresses the problem of security by 1. integrating decentralized KYC, a requirement for users to access the platform, 2. only exposing limtited data (name, industry, focus, description) to users until after they have applied to a DEV and 3.) the initializer of said DEV reviews, interviews, and elects to share a temporary private-key fullu exposing the IPTs data. The platform does not litigate attempts of intellectual property theft. The platform does, however, provide governance measures to handle bad actors within a DEV. The platform is designed to prevent bad actors from taking over a project through the allocation structure of a DEV's IP Ownership (IPO) tokens. The platform extends the same security to intellectual property as digital art NFTs supply, but just as NFT platforms do not mitigate disputes, the InvArch platform does not as well. 
+for handling theft. Instead, the platform offers many of the resources needed to take action against an individual. It is important to note that the full contents/data of an IPT are not initially fully exposed on the platform. The platform addresses the problem of security by 1. integrating decentralized KYC, a requirement for users to access the platform, 2. only exposing limtited data (name, industry, focus, description) to users until after they have applied to a DEV and 3.) the initializer of said DEV reviews, interviews, and elects to share a temporary private-key fullu exposing the IPTs data. The platform does not litigate attempts of intellectual property theft. The platform does, however, provide governance measures to handle bad actors within a DEV. The platform is designed to prevent bad actors from taking over a project through the allocation structure of a DEV's IP Ownership (IPO) tokens. The platform extends the same security to intellectual property as digital art NFTs supply, but just as NFT platforms do not mitigate disputes, the InvArch platform does not as well. The United States Copyright Office put out a summary of its basic rules. Generally, any original work of authorship, be it music, paintings, books, or any other even minimally creative tangible work, is protected under federal law. However, different countries have different rules. The European Union views NFTs in this same light. Due to the complexity of these institutions, InvArch does not serve to replace them. InvArch is only able to provide legal copyright where NFTs are recognized as such, considering that the scope of legal recognization is a matter based off of institutional perspective.
 
 ### Components
 
@@ -59,7 +64,7 @@ for handling theft. Instead, the platform offers many of the resources needed to
 </div>
 
 ### 2. DEV Protocol & Pallets
-* `Pallet_dev` - Provides basic functionality for creating and managing a `DEV`(Decentralized Entrepreneurial Venture). You can think of a `DEV` as an agreement between multiple parties to come together as cofounders over a project in order to contribute towards an `IPSet`'s actualization.
+* `Pallet_dev` - Provides basic functionality for structuring, managing, and listing a `DEV`(Decentralized Entrepreneurial Venture). You can think of a `DEV` as an agreement between multiple parties to come together as cofounders over a project in order to contribute towards an `IPSet`'s actualization.
 * `Pallet_dao` - Provides basic functionality for creating and managing a `DAO` that helps govern a `DEV`. You can think of a `DAO` as a `DEV`'s governance mechanism. It helps regulate the and ensure the integrity and prudence of participants within a `DEV`.
 * `Pallet_worklog` - Provides basic functionality for creating and managing a `WorkLog` within a `DEV`. You can think of a `Worklog` as a `DEV`'s method of recording and storing milestone/deliverables progressions and completions.
 * `Pallet_deliverables` - Provides basic functionality for creating and managing a `Deliverables` distribution mechainism for `IPOwnership` throughout a `DEV`. You can think of `Deliverables` as a mechanism for automatically distributing `IPOwnership` tokens to participants in a `DEV` as milestones/deliverables are met and confirmed by its `Worklog`.
@@ -116,7 +121,7 @@ powerful use-case unlike anything possible before the advancement of Web3 techno
 * Entrepreneurs/Founders -> Provides a new way to attract cofounders for their project without dealing with a private entity or sacrificing private information.
 * College/Trade Students -> Provides a more rewarding way to focus their skillsets and seek significant and fair economic opportunities for themselves.
 * Individual/private Investors -> Provides immediate access to invest in innovative startups and projects during their earliest stages of development at the largest scale ever made available to them.
-* Educators/Researchers -> Provides a way for them to securely protect their work, and also recieve rewards for when their work is viewed by other users.
+* Educators/Researchers -> Provides a way for them to securely and share protect their work.
 * Developers -> We're introducing a blockchain where developers will have a new type of digital-asset to play with and initegrate into their projects.
 ### Problem Addressed
 * No network exists where intellectual property can be verified, protected, openly shared, and dynamically used for building partnerships. As a result, many 
@@ -247,8 +252,8 @@ Goal - Develop and deliver the DEV Pallets & Standards for the InvArch Chain/Inv
 | 0b. | Documentation | An introduction video, and appropriate `README.md` files will be included. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1a. | Pallet_dev | complete the development of pallet_dev and realize the venture mechanism. |
-| 1b. | Pallet_dao | Complete the development of pallet_dao and realize the governance mechanism. |
+| 1a. | Pallet_dev | complete the development of pallet_dev and realize the project structuring mechanism. |
+| 1b. | Pallet_dao | Complete the development of pallet_dao and realize the governance mechanisms. |
 | 1c. | Pallet_worklog | Complete the development of pallet_worklog and realize the development worklog mechanism mechanism. |
 | 1d. | Pallet_deliverables | Complete the development of pallet_deliverables and realize the deliverables mechanism. |
 | 1e. | Pallet_listings | Complete the development of pallet_listings and realize the IPO listing mechanism. |
