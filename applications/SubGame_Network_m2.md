@@ -199,13 +199,13 @@ No Legal Entity
 ### Overview
 * **Total Estimated Duration:** 8 weeks
 * **Full-time equivalent (FTE):** 4 FTE  
-* **Total Costs:** 15,000 USD
+* **Total Costs:** 10,000 USD
 
 ### Milestone 2 : Build a module leasing platform
 
 * **Estimated duration:** 8 weeks
 * **FTE:** 4 FTE 
-* **Costs:** 15,000 USD
+* **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
