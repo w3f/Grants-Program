@@ -386,3 +386,4 @@
 | [Health Hero](https://www.gohealthhero.com/) | NFT Product Analytics Suite |  | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Tesseract](https://tesseract.one/) | Mobile dApps/Wallet Connection | [GitHub](https://github.com/tesseract-one) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Wow Labz](http://www.wowlabz.com) | Dot Marketplace | [GitHub](https://github.com/WowLabz) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [InvArchitects](https://www.invarch.io/) | InvArch - IP Infrastructure for Substrate | [GitHub](https://github.com/InvArch) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
