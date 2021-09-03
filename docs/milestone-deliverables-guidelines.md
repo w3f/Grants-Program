@@ -66,7 +66,7 @@ Depending on the deliverable, this could include (but is not limited to)
 
 - how to embed your library in another application,
 - how to make example API calls to your service,
-- running your web app,and
+- running your web app, and
 - steps to complete some desired action in your mobile app.
 
 ### Unit tests
