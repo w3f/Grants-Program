@@ -2,7 +2,7 @@
 
 The goal of this page is to provide an overview of the open-source Polkadot/Kusama Tech Stack.
 
-This is a living document and we are relying on our community to contribute to it and help maintain it. Please feel free to make edits and additions via pull requests. We apologize if we missed your project!
+This is a living document and we are relying on our community to contribute to it and help maintain it. [**Please feel free to make edits and additions via pull requests**](#construction_worker-contributing). We apologize if we missed your project!
 
 ---
 
@@ -47,11 +47,11 @@ The Polkadot Tech Stack is a subset of the Web 3.0 Tech Stack, which consists of
 
 ## :battery: Funding
 
-The Web3 Foundation's [Grants Program](https://github.com/w3f/Grants-Program) is focused on funding development work to build out all layers of the Polkadot Tech Stack. Please use the preceding links to apply for funding for relevant projects.
+The Web3 Foundation's [Grants Program](https://github.com/w3f/Grants-Program) is focused on funding development work to build out all layers of the Polkadot Tech Stack. 
 
 To get a better understanding of the projects we consider most relevant, you can explore a detailed breakdown of the various layers of the stack below. We divide each of the layers into the various *components* which we feel are most important. We then highlight some of the *exisiting projects* that address these components as well as some *potentially interesting projects* that we would like to fund.
 
-We typically like to fund more than one project for each component, so if you see a component with 1 or 0 exisiting projects then it's likely that we would consider an application in this area. In order to consider funding a proposal that addresses a component with many existing projects, we would need to be persuaded that yours brings unique value to the ecosystem. Such value could come in many forms including but not limited to differentiated functionality, better user experience, the attraction of new users to the ecosystem or a high likelihood that the technology would be maintained for a long period of time.
+We typically like to fund more than one project for each component. So, if you see a component with 1 or 0 exisiting projects, it's likely that we would consider an application in this area. In order to consider funding a proposal that addresses a component with many existing projects, we would need to be persuaded that yours brings unique value to the ecosystem. Such value could come in many forms including but not limited to differentiated functionality, better user experience, the attraction of new users to the ecosystem or a high likelihood that the technology would be maintained for a long period of time.
 
 By describing our areas of priority in detail, we do not wish to preclude grant applications that address different areas that we may not have thought of. We would like to fund all projects that bring value to the ecosystem. If you are considering applying for a project and are not sure if it falls within our areas of interest, please get in touch with us to discuss it.
 
