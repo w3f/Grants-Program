@@ -28,7 +28,8 @@ The Substrate framework allows us to put all our attention on optimizing the net
 
 * Thanks to the mature blockchain technologies and the development of web 3.0 , PoutineX could build an order book based decentralized trading platform. Our architecture is unique because it is a combination of multiple technologies: blockchain, parachain, TEE (Trusted Operating Environment), IPFS and other latest technologies available in the blockchain industry today.
 
-* [system architecture] (https://poutinex.org/assets/Architecture.png)
+* [system architecture] <br>
+<img src="https://poutinex.org/assets/Architecture.png" width="60%" />
 
 
 ### Technologies
