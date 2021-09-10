@@ -114,7 +114,7 @@
 <details>
   <summary><b>Can you help me advertise my project?</b></summary>
 
-  The Web3 Foundation does not provide PR services to its grantees. However, once per month we publish all newly signed grants on [Twitter](https://twitter.com/Web3foundation). Furthermore, if you would like our input on how to write about your grant, we have some general [announcement guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/announcement-guidelines.md). This document also lists an email address through which you can get in touch with our PR team in case you have specific questions.
+  The Web3 Foundation does not provide PR services to its grantees. However, once per month we co-promote announcements from grants that have delivered a milestone on [Twitter](https://twitter.com/Web3foundation). Note that the milestone needs to have been accepted prior to the announcement. Lastly, please observe our [announcement guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/announcement-guidelines.md) for all grant-related communications. This document also lists an email address through which you can get in touch with our PR team for feedback and in case you have specific questions.
 </details>
 
 <details>
