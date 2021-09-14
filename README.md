@@ -174,13 +174,14 @@ The process of applying for a Maintenance Grant is similar to what was already o
 - The repo(s) that need maintenance
 - Outline of why the specific project should continue being supported
 - Broad overview of the features/bugs that need development contributions
+- An assurance that the current project owners are willing to review/accept your contributions (a note here: if you're fully taking over the project, it would make more sense for the current owners to transfer the repository to your organisation. If you can't get in touch with them, you may of course work on a fork)
 - Max budget per month
 
-Then, at the end of each month, we will ask you to provide a comprehensive report of the work done, including the list of issues/bugs/pull requests worked on, time spent on each of these & finally the associated cost. It is quite likely that the time allocation & cost will vary from month-to-month, depedning on the nature of the project you're contributing to. The report should be in the form of a Milestone Delivery, again like the typical procedure. The payments will be done after the successful merge of each individual report.
+Then, at the end of each month, you will need to provide a comprehensive report of the work done, including the list of issues/bugs/pull requests worked on, time spent on each of these & finally the associated cost. It is quite likely that the time allocation & cost will vary from month to month, depending on the nature of the project you're contributing to. The report should be in the form of a Milestone Delivery, again like the typical procedure. The payments will be done after the successful merge of each individual report.
 
-Please bear in mind that the Grants Committee might be more strict in accepting the maintainers when compared to typical grants, mostly selecting for applicants with proven experience in the relevant tech stacks.
+Please bear in mind that the Grants Committee might be more strict in accepting maintainers when compared to typical grants, mostly selecting for applicants with proven experience in the relevant tech stacks.
 
-Note: the 1 month timeframe is just a guideline. If you find it unsuitable for you or the chosen project for any reason, feel free to adjust as seen fit.
+Note: the 1-month timeframe is just a guideline. If you find it unsuitable for you or the chosen project for any reason, feel free to adjust as seen fit and point this out in your application.
 
 ## :bulb: Help
 
