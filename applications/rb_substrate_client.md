@@ -82,6 +82,9 @@ The team is familiar with Ethereum and Substrate development.
 
 ## Development Status :open_book:
 
+Much of the technology is already implemented [app.uniarts.network](https://app.uniarts.network/). But now the code is in the project, not written as a library. and it needs more tests. We expect that we can refactor, reuse and generalize existing code. write gems to help other ruby developers.
+
+
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
