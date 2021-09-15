@@ -37,15 +37,20 @@ There are three possibilities for aggregation signature: AB, AC and BC.
                /    \
               AB    AC
      （Constructed threshold signature combination Merkel tree）
- Substrate module provide 2 interface.
+ Substrate module provide 3 interface.
  1: send_merkel_tree( merkel tree) -> threshold address
- 2: send_threshold_tx( tx) -> bool
- 
+ 2: approve_tx( signature, merkel_proof, script_hash)
+ 3: execute_tx(script)
+```
+
+For this substrate module, we divide it into two main parts. The first part is the authorization of a transaction, where the parties only need to upload their signature, merkel_proof and the hash of the script, which contains information about the transaction and the sender of the transaction, which looks like the transaction is locked in the script hash. The second part is that the user can execute the transaction through the script by comparing the sender in the script with the user who is currently invoking the transaction, and then constructing the transaction to execute according to the script.In this way, both parties to the transaction can agree while hiding the information about the transaction, and the transaction will only be revealed at the last moment.
+
+~~~
  ComingChat distributed privacy computing network provides the assembly of two functions.
  Shown in the form of ComingChat wallet
  1: construct_merkel_tree( [A,B,C]) -> [AB, AC, BC]
  2: construct_aggregate_signature_tx(msg, AB|AC|BC's signature) -> tx
-```
+~~~
 
 As shown in the following figure, a complete transaction process of our threshold signature may be: n individuals participate in a transaction with a threshold of m, and use the offline Musig module to generate all m possible aggregate public keys through the ComingChat distributed encrypted communication network. Then output all the aggregated public keys (for example: `[AB, AC, BC]`) as the input of the pallet's threshold signature interface and return a threshold signature address as the multi-signature address. When the m individual uses the multi-signature address to conduct a transaction, he first uses the ComingChat wallet to generate an aggregate signature, which is used as the input of the pallet verification interface and verifies whether the signature is passed. It is worth noting that in the signature verification process, first verify whether the merkle root is correct, and then whether the aggregated signature satisfies the aggregated public key. If both are successful, the verification passes, otherwise it fails.
 
@@ -104,17 +109,19 @@ The preliminary design of our **Threshold Signature Wallet** mainly consists of 
 
 ### Ecosystem Fit
 
-Under the current threshold signature scheme, multi-signature verification requires the submitted data to change from the original signature and public key to the submitted merkle proof, and the data level changes from O(n) to O(log n).
+#### Save transaction fees
+
+At present, the multisig pallet of substrate requires each participant to approve on the chain to complete the multi-signature verification. The transaction weight will increase linearly with the number of participants n, and the complexity is O(n). The idea of our theshold signature pallet is to complete signature aggregation off-chain and submit the corresponding merkle proof on the chain to complete signature verification. The complexity of the transaction weight is O(log(n)). At present, the difference in handling fees for a single multi-signature transaction is negligible, but as the number of transactions increases, the savings in handling fees should still be considerable.
 
 #### Introducing MAST to realize the complex contract
 
-MuSig can help us achieve aggregate signatures, but in practice, we use m-of-n threshold signatures more. To this end, we introduced the MAST (Merkelized Abstract Syntax Tree) contract to help us implement threshold signatures based on MuSig. The idea of MAST is to use a Merkle tree to encode branches in a script. Users may provide only the branches they are executing, and hashes that connect the branches to the fixed size Merkel root when spending. This reduces the size of the redemption stack from O(n) to O(log n) (n as the number of branches). This enables complicated redemption conditions that are currently not possible due to the script size and opcode limit, improves privacy by hiding unexecuted branches, and allows the inclusion of non-consensus enforced data with very low or no additional cost.
+MuSig can help us implement aggregate signatures, but in practice, we use m-of-n threshold signatures more. To this end, we introduced the MAST (Merkelized Abstract Syntax Tree) contract to help us implement a threshold signature based on MuSig. Of course, the implementation of threshold signature is only one of the reasons for introducing MAST. In addition, we will implement similar BTC spending to scripts and achieve script privacy. For specific details, please refer to [Substrate-taproot](https://github.com/chainx-org/Substrate-taproot/blob/main/README.md).
 
-#### Privacy communication based on Coming Chat
+#### Off-chain musig wallet
 
-In addition, an end-to-end private encrypted group chat based on Coming-Chat is used as the basis of private communication for each distributed node. ComingChat helps us realize the two-round communication process of MuSig quickly, efficiently, and safely.
+We use the Musig scheme to implement aggregated signatures off-chain. In order to facilitate the construction of threshold signature wallets on various platforms, we will provide three versions of the Musig interface: swift, java, and js.
 
-In short, our ultimate goal is to use ComingChat as the basis of communication, MuSig as a multi-signature scheme, and introduce MAST to finally realize threshold signatures. 
+In short, we are committed to providing a complete set of substrate threshold signature solutions. Using the three versions of the Musig interface in the plan can help us quickly build threshold signature wallets for various platforms. Use the theshold signature pallet in the solution to help us implement complex privacy scripts and help us cope with different usage scenarios.
 
 ## Team :busts_in_silhouette:
 
@@ -136,33 +143,36 @@ In short, our ultimate goal is to use ComingChat as the basis of communication, 
 
 ### Milestone 1
 
-* **Estimated Duration:** 4 weeks 
-* **FTE:** 7
-* **Costs:** 50 000 DAI
+- **Estimated Duration:** 4 weeks 
+- **FTE:** 7
 
-| Number | Deliverable                                        | Specification                                                |
-| ------ | -------------------------------------------------- | ------------------------------------------------------------ |
-| 0.     | Apache License 2.0                                 | All code will be published under Apache 2.0                  |
-| 1.     | Substrate Module                                   | Implement threshold signature module                         |
-| 1.a    | Interface: Construct a threshold signature address | Construct a threshold signature address and generate a merkle tree. There are three steps to generate an address: Accept the leaf nodes to construct a merkle tree; Calculate the public key according to the merkle root; Encode the public key with bech32m to generate an address. |
-| 1.b    | Interface: Send transaction and verify             | Send the transaction that has completed the aggregation signature, pass the verification and comparison of the merkle leaf node, and call the ordinary transaction interface of other non-root permissions on the chain. There are two steps to verify: verify the existence of the leaf node according to the merkle proof; verify that the script submitted to the branch is passed correctly |
-| 2.     | Testing Guide                                      | The test will verify basic functions such as correct generation of addresses and threshold signature verification. 1. The address is correctly generated: the node of the same leaf can generate the threshold signature address uniquely and correctly 2. Threshold signature verification: the submitted transaction with threshold signature can be verified |
-| 3.     | Repository                                         | Repository including a README that describes the milestone and explains how to run, test and contribute |
+- **Costs:** 50 000 DAI
+
+| **Number** | **Deliverable**             | **Specification**                                            |
+| ---------- | --------------------------- | ------------------------------------------------------------ |
+| 0.         | Apache License 2.0          | All code will be published under Apache 2.0                  |
+| 1.         | Substrate Module            | Implement threshold signature module                         |
+| 1.a        | Interface: Generate Address | Construct a threshold signature address and generate a merkle tree. There are three steps to generate an address: Accept the leaf nodes to construct a merkle tree; Calculate the public key according to the merkle root; Encode the public key to generate an address. |
+| 1.b        | Interface: Pass Script      | This interface will verify the threshold signature and upload the script hash.This is an authorized operation, which is equivalent to locking the funds into the script after the threshold signature verification is passed. |
+| 1.c        | Interface: Execute Script   | This interface is the real script execution. When the script is authorized to the user and meets the unlocking conditions, the user can actively execute the script. |
+| 2.         | Testing Guide               | The test will verify basic functions such as correct generation of addresses and threshold signature verification. 1. The address is correctly generated: the node of the same leaf can generate the threshold signature address uniquely and correctly 2. Threshold signature verification: the submitted transaction with threshold signature can be verified |
+| 3.         | Repository                  | Repository including a README that describes the milestone and explains how to run, test and contribute |
 
 ### Milestone 2
 
-* **Estimated Duration:** 4 weeks 
-* **FTE:** 10
-* **Costs:** 50 000 DAI
+- **Estimated Duration:** 4 weeks 
+- **FTE:** 10
 
+- **Costs:** 50 000 DAI
 
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
-| 0. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 1.  | Wallet| Realize a threshold signature wallet based on a distributed privacy network |  
-| 1.a | Interface: Construct merkel tree |Using the aggregate public keys of all possible aggregate signature combinations as leaf nodes, the merkle tree is generated through ComingChat's distributed encrypted communication network. Derive the threshold signature address with merkle root.|
-| 1.b| Interface: Build an aggregated signature transaction |Through ComingChat's distributed encryption network, the construction of offline aggregated signature transactions is completed.|
-| 3.  | Repository | Repository including a README that describes the milestone and explains how to run, test and contribute| 
+| **Number** | **Deliverable**                                         | **Specification**                                            |
+| ---------- | ------------------------------------------------------- | ------------------------------------------------------------ |
+| 0.         | Apache License 2.0                                      | All code will be published under Apache 2.0                  |
+| 1.         | Musig interactive interface                             | Various versions of musig interactive interface              |
+| 1.a        | Api-swift: Swift version of musig interactive interface | This interface is suitable for the swift platform to help the group quickly build a threshold signature wallet |
+| 1.b        | Api-java: Java version of musig interactive interface   | This interface is suitable for the java platform to help the group quickly build a threshold signature wallet |
+| 1.c        | Api-js: Js version of musig interactive interface       | This interface is suitable for the js platform to help the group quickly build a threshold signature wallet |
+| 3.         | Repository                                              | Repository including a README that describes the milestone and explains how to run, test and contribute |
 
 ## Additional Information :heavy_plus_sign: 
 
