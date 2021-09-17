@@ -179,9 +179,10 @@ In the below sections you can find a list of different layers of the Polkadot St
 
 ### :satellite: Networking
 
-| Components | Existing projects | Potentially interesting projects
-|-|-|-
-| DHT crawler | [Go](https://github.com/atredispartners/dht-crawler-polkadot), [Kotlin](https://github.com/emeraldpay/polkabot)
+| Components          | Existing projects                                                                                               | Potentially interesting projects |
+|---------------------|-----------------------------------------------------------------------------------------------------------------|----------------------------------|
+| DHT crawler         | [Go](https://github.com/atredispartners/dht-crawler-polkadot), [Kotlin](https://github.com/emeraldpay/polkabot) |                                  |
+| RPC Tor-like access | [WhiteNoise](https://github.com/Evanesco-Labs/WhiteNoise.rs)                                                    |                                  |
 
 ## :construction_worker: Contributing
 
