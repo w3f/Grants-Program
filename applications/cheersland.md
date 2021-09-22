@@ -190,23 +190,23 @@ Source codes will reside in: https://github.com/cheersland
 
 ### Overview
 
-* **Total Estimated Duration:** 6 weeks
+* **Total Estimated Duration:** 8 weeks
 * **Full-Time Equivalent (FTE):** 4 FTE
 * **Total Costs:** $7,000 DAI
 
 ### Milestone 1 — Implement Game module for Polkadot & Kusama
 
-* **Estimated duration:** 2 weeks
+* **Estimated duration:** 3 weeks
 * **FTE:**  4
 * **Costs:** $3,000 equivalent
 
 **Goal - Implement Game module and logic in the Polkadot ecosystem.**  
-In order to implement whole Game logic for Polkadot & Kusama, and be more compatible with crypto assets such as DOT and KSM, we will deploy Solidity smart contracts on Aster. The reason why we choose Aster is that Aster can provide faster transaction speed, lower trading fee and higher flexibility, which fits perfectly with our game.  
+In order to implement whole Game logic for Polkadot & Kusama, and be more compatible with crypto assets such as DOT and KSM, we will deploy ink! smart contracts on Aster. The reason why we choose Aster is that Aster can provide faster transaction speed, lower trading fee and higher flexibility, which fits perfectly with our game.  
 Our front-end will develop the connect function for Polkadot & Kusama's wallet, in-game rankings, invitation mechanism and other features. In order to be compatible with different blockchains, developers will also make corresponding code adjustments.  
 The in-game advertising content will also be flexibly configured as a sponsor's brand display according to different blockchains, bringing a complete Game-as-a-Service model to the Polkadot ecosystem.  
 **Therefore, under this milestone, our deliverables include:**  
 - Support Polkadot & Kusama wallet connect dashboard 
-- Invitation Mechanism Contract 
+- Invitation Mechanism Contract with ink!
 - Players' performance statistics and ranking interface
 
 | Number | Deliverable | Specification |
@@ -219,17 +219,17 @@ The in-game advertising content will also be flexibly configured as a sponsor's 
 
 ### Milestone 2 — Implement Multi-asset Staking Module for Polkadot & Kusama
 
-* **Estimated duration:** 4 weeks
+* **Estimated duration:** 5 weeks
 * **FTE:**  4
 * **Costs:** $4,000 DAI
 
 **Goal - Implement Multi-asset Staking Platform and the second game.**  
-We will develop the multi-asset staking module and deploy the Staking Contract on Aster with Solidity. When users stake tokens as required, the contract will count HPs based on their staking status. All contracts will be released and used after the audit is completed. We will develop the Multi-asset Staking Platform and open several staking pools including DOT and KSM first. Players can earn HPs by staking a certain amount of DOT or KSM and use them in the game.  
+We will develop the multi-asset staking module and deploy the Staking Contract on Aster with ink!. When users stake tokens as required, the contract will count HPs based on their staking status. All contracts will be released and used after the audit is completed. We will develop the Multi-asset Staking Platform and open several staking pools including DOT and KSM first. Players can earn HPs by staking a certain amount of DOT or KSM and use them in the game.  
 Our game dev team will develop a new classic game for the Polkadot ecosystem, similar to the Crypto Pirates deployed on BSC, which will adopt the same business model and anti-cheating algorithm.  
 
 We will optimize UI and allow players to have a more cheerful gaming experience.  
 **Therefore, under this milestone, our deliverables include:**  
-- Multi-asset Staking Contract 
+- Multi-asset Staking Contract with ink!
 - Multi-asset Staking Platform(Web UI) supporting staked asset such as DOT and kSM 
 - Classic games deployed in the Polkadot ecosystem
 
