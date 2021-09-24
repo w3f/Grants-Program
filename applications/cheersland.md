@@ -203,9 +203,11 @@ Source codes will reside in: https://github.com/cheersland
 **Goal - Implement Game module and logic in the Polkadot ecosystem.**  
 In order to implement whole Game logic for Polkadot & Kusama, and be more compatible with crypto assets such as DOT and KSM, we will deploy ink! smart contracts on Aster. The reason why we choose Aster is that Aster can provide faster transaction speed, lower trading fee and higher flexibility, which fits perfectly with our game.  
 Our front-end will develop the connect function for Polkadot & Kusama's wallet, in-game rankings, invitation mechanism and other features. In order to be compatible with different blockchains, developers will also make corresponding code adjustments.  
+We will deploy the classic game named *Crypto Pirates* for Polkadot & Kusama.  
 The in-game advertising content will also be flexibly configured as a sponsor's brand display according to different blockchains, bringing a complete Game-as-a-Service model to the Polkadot ecosystem.  
 **Therefore, under this milestone, our deliverables include:**  
 - Support Polkadot & Kusama wallet connect dashboard 
+- Deploy the classic game named *Crypto Pirates* for Polkadot & Kusama
 - Invitation Mechanism Contract with ink!
 - Players' performance statistics and ranking interface
 
@@ -215,7 +217,7 @@ The in-game advertising content will also be flexibly configured as a sponsor's 
 | 0b. | Documentation	| We will provide both inline documentation of the module as-well as update the official [documentation](https://docs.cheersland.org) of Cheersland. |
 | 0c. | Testing Guide	| The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 0d. | Article | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Game Module | We will implement whole game module for Polkadot & Kusama, including supporting Polkadot & Kusama wallet connect dashboard, using ink! to develop invitation mechanism smart contract, development of player's performance statistics and ranking interface. Our code will be open source, hosted on Cheersland github account. |
+| 1. | Game Module | We will implement whole game module for Polkadot & Kusama, including supporting Polkadot & Kusama wallet connect dashboard, the game named *Crypto Pirates*,  using ink! to develop invitation mechanism smart contract, development of player's performance statistics and ranking interface. Our code will be open source, hosted on Cheersland github account. |
 
 ### Milestone 2 — Implement Multi-asset Staking Module for Polkadot & Kusama
 
