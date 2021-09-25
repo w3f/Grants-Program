@@ -34,7 +34,7 @@ We would like to bring our Game-as-a-Service model to Polkadot, Kusama and to a 
 ## Project Details
 
 ### Technical Architecture
-![Technical](https://cheersland.s3.ap-southeast-1.amazonaws.com/docs/grant/p1-tech-web3.jpg)
+![Technical](https://cheersland.s3.ap-southeast-1.amazonaws.com/docs/grant/p8-tech.jpg)
 ### Gameplay Module
 In order for the platform to quickly enter the efficient operation phase, we choose classic mini games as the prioritized type of games for launch.  
 Classic mini games have a broad user base at any age around the world, and allow players to play the game at any time and anywhere with no barriers to participation.  
@@ -196,18 +196,16 @@ Source codes will reside in: https://github.com/cheersland
 
 ### Milestone 1 — Implement Game module for Polkadot & Kusama
 
-* **Estimated duration:** 3 weeks
+* **Estimated duration:** 4 weeks
 * **FTE:**  4
 * **Costs:** $3,000 equivalent
 
 **Goal - Implement Game module and logic in the Polkadot ecosystem.**  
 In order to implement whole Game logic for Polkadot & Kusama, and be more compatible with crypto assets such as DOT and KSM, we will deploy ink! smart contracts on Aster. The reason why we choose Aster is that Aster can provide faster transaction speed, lower trading fee and higher flexibility, which fits perfectly with our game.  
 Our front-end will develop the connect function for Polkadot & Kusama's wallet, in-game rankings, invitation mechanism and other features. In order to be compatible with different blockchains, developers will also make corresponding code adjustments.  
-We will deploy the classic game named *Crypto Pirates* for Polkadot & Kusama.  
 The in-game advertising content will also be flexibly configured as a sponsor's brand display according to different blockchains, bringing a complete Game-as-a-Service model to the Polkadot ecosystem.  
 **Therefore, under this milestone, our deliverables include:**  
 - Support Polkadot & Kusama wallet connect dashboard 
-- Deploy the classic game named *Crypto Pirates* for Polkadot & Kusama
 - Invitation Mechanism Contract with ink!
 - Players' performance statistics and ranking interface
 
@@ -217,11 +215,13 @@ The in-game advertising content will also be flexibly configured as a sponsor's 
 | 0b. | Documentation	| We will provide both inline documentation of the module as-well as update the official [documentation](https://docs.cheersland.org) of Cheersland. |
 | 0c. | Testing Guide	| The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 0d. | Article | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Game Module | We will implement whole game module for Polkadot & Kusama, including supporting Polkadot & Kusama wallet connect dashboard, the game named *Crypto Pirates*,  using ink! to develop invitation mechanism smart contract, development of player's performance statistics and ranking interface. Our code will be open source, hosted on Cheersland github account. |
+| 1. | Smart Contract Development | Use ink! to develop the smart contract of the game, including the function of adding and consuming HP in the game, Scores Records, as well as earning HP by the invitation mechanism and setting the user's nickname. |
+| 2. | Game Module | The game is named Crypto Pirates, and the logic of the game is realized by using layabox and nodejs as well as calls with contracts. |
+| 3. | Front-end Work | Use multiple different wallet buttons to connect different blockchains respectively. |
 
 ### Milestone 2 — Implement Multi-asset Staking Module for Polkadot & Kusama
 
-* **Estimated duration:** 5 weeks
+* **Estimated duration:** 4 weeks
 * **FTE:**  4
 * **Costs:** $4,000 DAI
 
@@ -242,7 +242,8 @@ We will optimize UI and allow players to have a more cheerful gaming experience.
 | 0c. | The second game | We will develop the second online game named *Click Click* based on Polkadot & Kusama. |
 | 0d. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 1. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. |
-| 2. | Multi-asset Staking Module | We will implement the multi-asset staking module for Polkadot & Kusama, including using ink! to develop Multi-asset Staking Contract, development of Multi-asset Staking Platform(Web UI) supporting staked asset such as DOT and kSM. Our code will be open source, hosted on Cheersland github account. |
+| 2. | Multi-asset Staking Contract | We will develop Multi-asset Staking Contract in ink!. Our code will be open source, hosted on Cheersland github account. |
+| 3. | Multi-asset Staking Web UI | We will develop Multi-asset Staking Platform(Web UI) supporting staked asset such as DOT and kSM to earn HPs. Our code will be open source, hosted on Cheersland github account. |
 
 ## Future Plans
 
