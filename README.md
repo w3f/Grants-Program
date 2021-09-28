@@ -9,9 +9,10 @@
   - [Project ideas](#project-ideas)
   - [Support](#support)
   - [Team](#team)
-- [:pencil: Process](#pencil-process)
 - [:level_slider: Levels](#level_slider-levels)  
+- [:pencil: Process](#pencil-process)
 - [:mailbox_with_mail: Request for Proposals (RFP) Suggestions](#mailbox_with_mail-request-for-proposals-rfp-suggestions)
+- [Maintenance Grants](#maintenance-grants)
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
@@ -55,7 +56,7 @@ An overview of existing projects in the Web 3.0 Technology Stack along with broa
 
 [Requests For Proposals](rfps) (RFPs) represent concrete ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, so even if another team has already applied to implement a certain RFP, we invite you to do the same if you're interested.
 
-Finally, you don't need to start your own project in order to be elligible for a grant. Instead, some teams choose to port existing work to Substrate, where the pertinent licenses allow, or even to contribute to an existing open-source project. In the latter case, you should check in advance that the maintainers of the project are interested in your contribution, and the acceptance of the milestones will generally be tied to the inclusion of your work in said project.
+Finally, you don't need to start your own project in order to be elligible for a grant. Instead, some teams choose to port existing work to Substrate, where the pertinent licenses allow, or even to contribute to an existing open-source project. In the latter case, you should check in advance that the maintainers of the project are interested in your contribution, and the acceptance of the milestones will generally be tied to the inclusion of your work in said project. See the [Maintenance Grants section](#maintenance-grants) for more info.
 
 If you have a **good concept of the technical challenges** that your idea entails and would like feedback before applying, you can send us an [email](mailto:grants@web3.foundation) and tell us about it.
 
@@ -102,9 +103,33 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 - [Rouven Pérez](https://github.com/RouvenP)
 - [Federica Dubbini](https://github.com/fededubbi)
 
+## :level_slider: Levels
+
+The W3F Grants Program offers different grant levels to help you best depending on your current stage.
+
+### Level 1 (= InstaGrants) :hatching_chick:
+  - **Target:** Individuals & small teams
+  - **Amount:** Up to $10,000
+  - **Requirements:** 2 approvals
+  - **Benefits:** Feedback during application process and evaluation, introduction to related teams/projects
+
+### Level 2 :baby_chick:
+
+- **Target:** Small teams/start-ups 
+- **Amount:** Up to $50,000
+- **Requirements:** 3 approvals 
+- **Benefits:** All of the above + [co-promotion](./docs/announcement-guidelines.md#announcement-guidelines), [Grants Program badge](./docs/grant-badge-guidelines.md), fast track to [Substrate Builders Program](https://www.substrate.io/builders-program/) 
+
+### Level 3 :rooster: 
+
+- **Target:** Companies/foundations with a proven track record 
+- **Amount:** Unlimited
+- **Requirements:** Pitch call + 5 approvals (for > $100k Web3 Foundation Council approval) 
+- **Benefits:** All of the above + VC introductions
+
 ## :pencil: Process
 
-> **:loudspeaker:** The process below is independent of the [level](#level_slider-level). Payment is made in Bitcoin, USDT or DAI. If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in Bitcoin, USDT, DAI or kUSD. If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 1. **Application**
    1. [Fork](https://github.com/w3f/Grants-Program/fork) this repository.
@@ -126,30 +151,6 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 Additionally, we try to enforce the [code of conduct](CODE_OF_CONDUCT.md) and based on this may [block users](https://github.blog/2016-04-04-organizations-can-now-block-abusive-users/).
 
-## :level_slider: Levels
-
-The W3F Grants Program offers different grant levels to help you best depending on your current stage.  
-
-### Level 1 (= InstaGrants) :hatching_chick:
-  - **Target:** Individuals
-  - **Amount:** Up to $10,000
-  - **Requirements:** 2 approvals
-  - **Benefits:** Feedback during application process and evaluation, introduction to related teams/projects  
-
-### Level 2 :baby_chick:
-
-- **Target:** Small teams/start-ups 
-- **Amount:** Up to $50,000
-- **Requirements:** 3 approvals 
-- **Benefits:** All of the above + [co-promotion](./docs/announcement-guidelines.md#announcement-guidelines), [Grants Program badge](./docs/grant-badge-guidelines.md), fast track to [Substrate Builders Program](https://www.substrate.io/builders-program/) 
-
-### Level 3 :rooster: 
-
-- **Target:** Companies/foundations with a proven track record 
-- **Amount:** Unlimited
-- **Requirements:** Pitch call + 5 approvals (for > $100k Web3 Foundation Council approval) 
-- **Benefits:** All of the above + VC introductions
-
 ## :mailbox_with_mail: Request for Proposals (RFP) Suggestions
 
 If you think that we should support the development of certain tools or projects (related to **Polkadot, Kusama or Substrate**) that aren't in the Polkadot/Kusama [tech stack](docs/polkadot_stack.md), feel free to submit an RFP suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem. We will review your proposal and, if we believe it’s useful, will create an RFP based on your idea and try to find teams to work on it.
@@ -164,6 +165,23 @@ If you think that we should support the development of certain tools or projects
 6. You will see the same template as for creating an application. Plase replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
 
 If you have an idea for a project but lack the technical background to create a detailed outline, you can open an [issue](https://github.com/w3f/Grants-Program/issues/new) instead or add it to the [tech stack](docs/polkadot_stack.md) as a potentially interesting project. However, your idea will have better chances of being implemented if you can provide a project outline such that it can be picked up straight away by a capable team.
+
+## Maintenance Grants
+
+Maintenance Grants are yet another idea to get involved with the Polkadot community. If you are a user of an open-source library that has gone out of date, or you simply want to work on new features/fix bugs in these repos, we can support your contributions via a grant. We are happy to award rolling grants on a monthly basis, as long as the work done within each time period is performed to a quality standard deemed satisfactory by the grant evaluators.
+
+The process of applying for a Maintenance Grant is similar to what was already outlined above, but instead of defining very detailed deliverables for each milestone upfront, we will ask you to specify, where possible:
+- The repo(s) that need maintenance
+- Outline of why the specific project should continue being supported
+- Broad overview of the features/bugs that need development contributions
+- An assurance that the current project owners are willing to review/accept your contributions (a note here: if you're fully taking over the project, it would make more sense for the current owners to transfer the repository to your organisation. If you can't get in touch with them, you may of course work on a fork)
+- Max budget per month
+
+Then, at the end of each month, you will need to provide a comprehensive report of the work done, including the list of issues/bugs/pull requests worked on, time spent on each of these & finally the associated cost. It is quite likely that the time allocation & cost will vary from month to month, depending on the nature of the project you're contributing to. The report should be in the form of a Milestone Delivery, again like the typical procedure. The payments will be done after the successful merge of each individual report.
+
+Please bear in mind that the Grants Committee might be more strict in accepting maintainers when compared to typical grants, mostly selecting for applicants with proven experience in the relevant tech stacks.
+
+Note: the 1-month timeframe is just a guideline. If you find it unsuitable for you or the chosen project for any reason, feel free to adjust as seen fit and point this out in your application.
 
 ## :bulb: Help
 

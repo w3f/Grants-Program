@@ -12,9 +12,7 @@
 <details>
   <summary><b>How much can I ask for?</b></summary>
 
-  Initial grants are capped at US $30,000. If the first grant is successfully completed, you can apply for a follow-up grant, which is capped at $100k.
-  
-  Teams with a proven track record may apply for larger grants through [this application form](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform).
+  Please refer to the [section on grant levels in our README](../README.md#level_slider-levels) for funding limits.
 </details>
 
 <details>
@@ -88,9 +86,9 @@
 </details>
 
 <details>
-  <summary><b>How do I apply if I want to keep information private / want to be paid in fiat / require more than US $100,000?</b></summary>
+  <summary><b>How do I apply if I want to keep information private or want to be paid in fiat?</b></summary>
 
-  For special cases that do not fit the regular grants structure, we provide [a form](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). You can provide all application data by submitting this form.
+  For special cases that do not fit the regular grants structure, we provide [a form](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). You can provide all application data by submitting this form, or submit the form with a reference to a pull request with data you are willing to make public.
 </details>
 
 ## 🥳 After Approval
@@ -98,7 +96,7 @@
 <details>
   <summary><b>When can I apply for a follow-up grant?</b></summary>
 
-  Anyone who has successfully completed a grant project (i.e. all milestones were accepted, or the previous grant was terminated in mutual agreement) can apply for a follow-up grant.
+  Anyone who has successfully completed a grant project (i.e. all milestones were accepted, or the previous grant was terminated in mutual agreement) can apply for a follow-up grant. Concurrent grants are only granted in special circumstances.
 </details>
 
 <details>
@@ -110,13 +108,13 @@
 <details>
   <summary><b>Can I list the Web3 Foundation as a partner?</b></summary>
 
-  No. Once the grants team has accepted your first milestone, you may display our [grants badge](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md) in a project-specific context, such as the repository containing the grant project work.
+  No. Once the grants team has accepted your first milestone, you may display our [grants badge](https://github.com/w3f/Grants-Program/blob/master/docs/grant-badge-guidelines.md) in a project-specific context, such as the repository containing the grant project work.
 </details>
 
 <details>
   <summary><b>Can you help me advertise my project?</b></summary>
 
-  The Web3 Foundation does not provide PR services to its grantees. However, once per month we will publish all newly signed grants on Twitter. Furthermore, if you would like our opinion on how to write about your grant, we have some general [announcement guidelines](https://github.com/w3f/General-Grants-Program/blob/master/grants/announcement-guidelines.md). This document also lists an email address through which you can get in touch with our PR team in case you have specific questions.
+  The Web3 Foundation does not provide PR services to its grantees. However, once per month we co-promote announcements from grants that have delivered a milestone on [Twitter](https://twitter.com/Web3foundation). Note that the milestone needs to have been accepted prior to the announcement. Lastly, please observe our [announcement guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/announcement-guidelines.md) for all grant-related communications. This document also lists an email address through which you can get in touch with our PR team for feedback and in case you have specific questions.
 </details>
 
 <details>

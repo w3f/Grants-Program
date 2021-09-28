@@ -2,7 +2,7 @@
 
 The goal of this page is to provide an overview of the open-source Polkadot/Kusama Tech Stack.
 
-This is a living document and we are relying on our community to contribute to it and help maintain it. Please feel free to make edits and additions via pull requests. We apologize if we missed your project!
+This is a living document and we are relying on our community to contribute to it and help maintain it. [**Please feel free to make edits and additions via pull requests**](#construction_worker-contributing). We apologize if we missed your project!
 
 ---
 
@@ -47,11 +47,11 @@ The Polkadot Tech Stack is a subset of the Web 3.0 Tech Stack, which consists of
 
 ## :battery: Funding
 
-The Web3 Foundation's [Grants Program](https://github.com/w3f/Grants-Program) is focused on funding development work to build out all layers of the Polkadot Tech Stack. Please use the preceding links to apply for funding for relevant projects.
+The Web3 Foundation's [Grants Program](https://github.com/w3f/Grants-Program) is focused on funding development work to build out all layers of the Polkadot Tech Stack. 
 
 To get a better understanding of the projects we consider most relevant, you can explore a detailed breakdown of the various layers of the stack below. We divide each of the layers into the various *components* which we feel are most important. We then highlight some of the *exisiting projects* that address these components as well as some *potentially interesting projects* that we would like to fund.
 
-We typically like to fund more than one project for each component, so if you see a component with 1 or 0 exisiting projects then it's likely that we would consider an application in this area. In order to consider funding a proposal that addresses a component with many existing projects, we would need to be persuaded that yours brings unique value to the ecosystem. Such value could come in many forms including but not limited to differentiated functionality, better user experience, the attraction of new users to the ecosystem or a high likelihood that the technology would be maintained for a long period of time.
+We typically like to fund more than one project for each component. So, if you see a component with 1 or 0 exisiting projects, it's likely that we would consider an application in this area. In order to consider funding a proposal that addresses a component with many existing projects, we would need to be persuaded that yours brings unique value to the ecosystem. Such value could come in many forms including but not limited to differentiated functionality, better user experience, the attraction of new users to the ecosystem or a high likelihood that the technology would be maintained for a long period of time.
 
 By describing our areas of priority in detail, we do not wish to preclude grant applications that address different areas that we may not have thought of. We would like to fund all projects that bring value to the ecosystem. If you are considering applying for a project and are not sure if it falls within our areas of interest, please get in touch with us to discuss it.
 
@@ -88,12 +88,12 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Client Libraries | [Go](https://github.com/centrifuge/go-substrate-rpc-client), [.Net](https://github.com/usetech-llc/polkadot_api_dotnet), [.NET Standard 2.0](https://github.com/dotmog/SubstrateNetApi), [C++](https://github.com/usetech-llc/polkadot_api_cpp), [C](https://github.com/finoabanking/substrate-c-tool), [Haskell](https://github.com/airalab/hs-web3), [Javascript](https://github.com/polkadot-js/api), [Substrate API Sidecar - TypeScript](https://github.com/paritytech/substrate-api-sidecar), [Ruby](https://github.com/itering/scale.rb), [Python](https://github.com/polkascan/substrate-interface-api), [Java](https://github.com/polkadot-java)*(old)*, [Java](https://github.com/emeraldpay/polkaj)*(new)*, [Rust SCS](https://github.com/scs/substrate-api-client), [Rust Parity](https://github.com/paritytech/substrate-subxt), [PHP](https://github.com/gmajor-encrypt/php-substrate-api), [RPC-Ethereum](https://github.com/paritytech/frontier), [Swift](https://github.com/tesseract-one/Substrate.swift) | |
 |Substrate Contract clients | [PatractGo](https://github.com/patractlabs/go-patract)  | |
 | SCALE Codec | [Rust](https://github.com/paritytech/parity-scale-codec), [Python](https://github.com/polkascan/py-scale-codec), [Golang Chainsafe](https://github.com/ChainSafe/gossamer/tree/development/lib/scale), [Golang Itering](https://github.com/itering/scale.go), [C++](https://github.com/soramitsu/kagome/tree/master/core/scale), [JavaScript](https://github.com/polkadot-js/api), [AssemblyScript](https://github.com/LimeChain/as-scale-codec), [Haskell](https://github.com/airalab/hs-web3/tree/master/src/Codec), [Java](https://github.com/emeraldpay/polkaj), [Ruby](https://github.com/itering/scale.rb), [Dart](https://github.com/nbltrust/dart-scale-codec), [Swift](https://github.com/tesseract-one/swift-scale-codec), [PHP](https://github.com/gmajor-encrypt/php-scale-codec) |
-| Easy Runtime Development | [VS Code Plugin](https://github.com/everstake/vscode-plugin-substrate), [Atom Code Plugin](https://github.com/everstake/atom-plugin-substrate), [Substrate Playground](https://github.com/paritytech/substrate-playground), [Substrate Marketplace VS Code Plugin](https://github.com/paritytech/vscode-substrate), [AssemblyScript Runtime Generation](https://github.com/LimeChain/as-substrate-runtime), [Substrate Package Manager](https://github.com/clearloop/sup), [Subsembly: Framework for developing AssemblyScript Substrate Runtimes](https://github.com/LimeChain/subsembly) | |
+| Easy Runtime Development | [VS Code Plugin](https://github.com/everstake/vscode-plugin-substrate), [Atom Code Plugin](https://github.com/everstake/atom-plugin-substrate), [Substrate Playground](https://github.com/paritytech/substrate-playground), [Substrate Marketplace VS Code Plugin](https://github.com/paritytech/vscode-substrate), [AssemblyScript Runtime Generation](https://github.com/LimeChain/as-substrate-runtime), [Substrate Package Manager](https://github.com/clearloop/sup), [Subsembly: Framework for developing AssemblyScript Substrate Runtimes](https://github.com/LimeChain/subsembly), [dependency diener](https://github.com/bkchr/diener) | |
 | Easy Smart Contract Development | [ink-playground](https://github.com/staketechnologies/ink-playground/tree/master), [Ink! Remix Plugin](https://github.com/blockchain-it-hr/ink-remix-plugin)
 | Runtime Security | [K specifications](https://github.com/kframework/wasm-semantics), [PolPatrol - Polkadot Runtime Checker](https://github.com/ChainSecurity/polpatrol) | Automated Runtime checking tools, economic audit simulator such as [gauntlet.network](https://gauntlet.network/)
 | Smart Contract Languages | [Ask!](https://github.com/patractlabs/ask), [Subscript](https://github.com/slickup/subscript), [Solang](https://github.com/hyperledger-labs/solang), [Ink!](https://github.com/paritytech/ink), [Pact](https://github.com/kadena-io/), [Move VM Substrate](https://github.com/pontem-network/sp-move),  | Functional Programming Languages, other languages with developed toolchains |
 | Smart Contract Security |
-| Testing | [Halva](https://github.com/orgs/halva-suite), [Ink Waterfall](https://github.com/paritytech/ink-waterfall), [Redspot](https://github.com/patractlabs/redspot), [MixBytes Tank](https://github.com/mixbytes/tank), [sub-flood](https://github.com/NikVolf/sub-flood), [Substrate debug-kit](https://github.com/paritytech/substrate-debug-kit), [Polkadot Launch](https://github.com/paritytech/polkadot-launch), [Dotscale - SCALE Codec Comparator](https://github.com/arijitAD/dotscale)
+| Testing | [Halva](https://github.com/orgs/halva-suite), [Ink Waterfall](https://github.com/paritytech/ink-waterfall), [Redspot](https://github.com/patractlabs/redspot), [MixBytes Tank](https://github.com/mixbytes/tank), [sub-flood](https://github.com/NikVolf/sub-flood), [Substrate debug-kit](https://github.com/paritytech/substrate-debug-kit), [Polkadot Launch](https://github.com/paritytech/polkadot-launch), [Dotscale - SCALE Codec Comparator](https://github.com/arijitAD/dotscale), [Asset CLI tool](https://github.com/JesseAbram/asset_cli_tool), [sub_crash](https://github.com/JesseAbram/unfinished_testing_tool), [subwasm](https://github.com/chevdor/subwasm), [subsee](https://github.com/ascjones/subsee)
 | Blockchain Indexing Engine | [Substrate Archive](https://github.com/paritytech/substrate-archive), [PSQL Indexer](https://github.com/usetech-llc/polkadot_psql_indexer), [Polkadothub Indexer](https://github.com/figment-networks/polkadothub-indexer), [Substrate Graph](https://github.com/playzero/substrate-graph), [Hydra](https://github.com/Joystream/hydra), [Subquery](https://github.com/OnFinality-io/subql) |
 | Blockchain/Event Monitoring | [Web3 Guardian](https://github.com/open-web3-stack/guardian), [Aurras Event Manager](https://github.com/HugoByte/aurras-event-manager) |
 | Gaming | [Mobile Game Framework for Substrate](https://github.com/creator-rs/creator/) | [Amethyst](https://amethyst.rs/) + [Substrate](https://substrate.dev/)
@@ -132,7 +132,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Gaming | [Bit.country](https://github.com/bit-country/Bit-Country-Blockchain), [SubGame](https://github.com/SubGame-Network/subgame-network) | 
 | Computation |
 | Enable specific use-cases | [Robonomics](https://github.com/airalab/substrate-node-robonomics)
-| NFT | [FRAME Pallet: NFTs for Substrate](https://github.com/danforbes/pallet-nft), [NFT Parachain by usetech](https://github.com/w3f-community/nft_parachain), [DNFT](https://github.com/DNFT-Team/dnft-substrate-node/tree/master/pallets)
+| NFT | [ternoa](https://github.com/capsule-corp-ternoa/chain), [FRAME Pallet: NFTs for Substrate](https://github.com/danforbes/pallet-nft), [NFT Parachain by usetech](https://github.com/w3f-community/nft_parachain), [DNFT](https://github.com/DNFT-Team/dnft-substrate-node/tree/master/pallets)
 | Randomness | [DKG and Randomness Beacon](https://github.com/Cardinal-Cryptography/substrate/tree/randomness-beacon)
 | Licensing |
 | Banking Integration | [FIAT on-off-ramp](https://github.com/element36-io/ebics-java-service)
@@ -179,9 +179,10 @@ In the below sections you can find a list of different layers of the Polkadot St
 
 ### :satellite: Networking
 
-| Components | Existing projects | Potentially interesting projects
-|-|-|-
-| DHT crawler | [Go](https://github.com/atredispartners/dht-crawler-polkadot), [Kotlin](https://github.com/emeraldpay/polkabot)
+| Components          | Existing projects                                                                                               | Potentially interesting projects |
+|---------------------|-----------------------------------------------------------------------------------------------------------------|----------------------------------|
+| DHT crawler         | [Go](https://github.com/atredispartners/dht-crawler-polkadot), [Kotlin](https://github.com/emeraldpay/polkabot) |                                  |
+| RPC Tor-like access | [WhiteNoise](https://github.com/Evanesco-Labs/WhiteNoise.rs)                                                    |                                  |
 
 ## :construction_worker: Contributing
 
