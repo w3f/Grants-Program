@@ -133,8 +133,8 @@ Besides blockchain development, each member has 5+ years of experience in Comput
 
 ### Overview
 
-- **Total Estimated Duration:** ~1.5 months
-- **Full-time equivalent (FTE):** 3.5
+- **Total Estimated Duration:** ~3 months
+- **Full-time equivalent (FTE):** 2 FTE
 - **Total Costs:** ~24,000 USD
 
 ### Technologies used
@@ -147,9 +147,9 @@ Besides blockchain development, each member has 5+ years of experience in Comput
 
 See [Auction Type Generalization](#auction-type-generalization) for definitions.
 
-- **Estimated Duration:** 2-4 weeks
-- **Estimated Delivery:** September, 2021
-- **FTE:** 3.5
+- **Estimated Duration:** 4-5 weeks
+- **Estimated Delivery:** November, 2021
+- **FTE:** 2
 - **Costs:** $6,000
 - Implement Auction Type Generalisation from the currently developed type of English auction
     - redefine traits and add more of them (these are interfaces to handle various types of auctions), current solution has only one
@@ -163,9 +163,9 @@ See [Auction Type Generalization](#auction-type-generalization) for definitions.
 
 See [Candle Auction Type](#candle-auction-type) and [Top-up Auction Type](#top-up-auction-type) for definitions.
 
-- **Estimated Duration:** 1-2 weeks
-- **Estimated Delivery:** September, 2021
-- **FTE:** 2.5
+- **Estimated Duration:** 2-3 weeks
+- **Estimated Delivery:** December, 2021
+- **FTE:** 2
 - **Costs:** $6,000
 - Implement:
   - the [Candle Auction Type](#candle-auction-type), a specific type for NFT auction to prevent snipping (placing bids in the very last second to gamble the system)
@@ -191,9 +191,9 @@ This is a very popular auction type used by charities. Each participant will pay
 
 See [Governance and Content Curation](#governance-and-content-curation) and [Business Model Mechanics](#business-model-mechanics) for definitions.
 
-- **Estimated Duration:** 2-4 weeks
-- **Estimated Delivery:** October, 2021
-- **FTE:** 3.5
+- **Estimated Duration:** 4-5 weeks
+- **Estimated Delivery:** January, 2022
+- **FTE:** 2
 - **Costs:** $12,000
 - Implement:
   - the content curation system and introduce governance DAO to prevent possible abusive content
