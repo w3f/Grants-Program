@@ -63,10 +63,7 @@ Smart contract approach has following advantages
 However, downside is obviously not exploiting great capabilities that Substrate offers and having to implement a lot of stuff by reinventing the wheel. 
 
 ### Token
-To be honest, we haven’t decided whether this project deserves its own token but we are more inclined to have one. The reason is, if we want to introduce proper governance and have our auctions usable across multiple chains, then there has to be a chain-agnostic way to elect members of council, approve new content, change rules of the auctions, etc. 
-In that case, smart contract keeping the token seems like a best choice since we can have a governance body supported by our tokenomics completely independent of the underlying platform where our auctions run.
-
-We will have to explore how would the token coming from the smart contract interact with the pallet and how can the users import that token to their wallets.
+We have decided to use Basilisk as the home chain so the auctions will leverage Basilisk's fungible as well as non-fungible tokens for transfers and governance. As it uses FRAME's Uniques pallet it will be possible to easily migrate and reuse the solution on other Substrate based chains.
 
 ### Curatorship
 Curatorship is closely tied to the governance since only approved members can have elevated privileges over the system (e.g. vote on removal of inappropriate content). Any user can report offensive content to the curators. Curators then remove the content or reject the report. We will probably run a Discord/Telegram channel to open a discussion about a right way to do the curatorship and what kind of stuff is acceptable for public auctioning and what is not 
@@ -100,14 +97,14 @@ Also, we are already in touch with several leading NFT projects within the Polka
 
 There are multiple different approaches to NFT implementation on the market with no official standard set in stone yet on Polkadot. We want to keep our solution as flexible as possible and have the ability to be integrated with a broad spectrum of NFTs. At this point, the closest resemblance of an NFT standard we could find was the ORML by Acala so we started and will continue building based on this library. On the other hand it should be easy in the future to migrate the solution to a different kind of NFT implementation or a Polkadot standard.
 
+UPDATE 2021-09-28: The solution has been migrated from ORML to FRAME's Uniques pallet.
+
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Michael Repetny (Product dev at Subauction, previously co-founder of web analytics Zeerat, graduate of University of Economics)
-- Petr Mensik (Blockchain dev at Subauction, previously Java/Clojure backend developer, graduate of Ostrava University of Technology)
-- Jindrich Zeleny (Blockchain dev at Subauction, previously BI engineer, graduate of Brno University of Technology)
-- we plan to bring a part-time (0.5 MD) technical writer to help with specific milestones as further described
+- Jindrich Zeleny (Blockchain dev @ HydraDX)
+- Valery Gantchev (Blockchain dev @ HydraDX)
 
 ### Team Website
 
@@ -123,16 +120,14 @@ We participated in the Encode hackathon winning 2nd prize in the Polkadot catego
 
 Besides blockchain development, each member has 5+ years of experience in Computer Science in different areas such as BI, software development, and enterprise-grade engineering.
 
-### Team Code Repos
+### Team Code Repo
 
-- https://github.com/polkadotters/SubAuction
-- https://github.com/polkadotters/SubAuction_Frontend
+- https://github.com/galacticcouncil/Basilisk-node/tree/feat/auctions/pallets
 
 ### Team LinkedIn Profiles
 
-- https://www.linkedin.com/in/repetny
-- https://www.linkedin.com/in/petr-men%C5%A1%C3%ADk-2566394b/
 - https://www.linkedin.com/in/jindrich-zeleny
+- https://www.linkedin.com/in/valery-gantchev-20a03971/
 
 ## Development Roadmap :nut_and_bolt:
 
