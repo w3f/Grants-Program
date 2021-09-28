@@ -288,7 +288,7 @@
 | [Sunrise Protocol](https://sunriseprotocol.com) | Sunrise DEX | [GitHub](https://github.com/sunriseprotocol) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Cobo](https://cobo.com/) | Cobo Vault Phase 2 | [GitHub](https://github.com/CoboVault) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [OxyDev](https://oxydev.ir) | SubsCrypt: Managing subscriptions | [GitHub](https://github.com/oxydev) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [DNFT-Team](https://github.com/DNFT-Team) | Data framework between personal data and AI models | [GitHub](https://github.com/DNFT-Team) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [DNFT-Team](https://github.com/DNFT-Team) | Data framework between personal data and AI models | [GitHub](https://github.com/DNFT-Team) | <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [UMC Labs](https://umc.network) | Secured token subscription | [GitHub](https://github.com/umc-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Perpetual Altruism Ltd](https://cryptograph.co/) | IP-Rights compliant NFT bridge protocol | [GitHub](https://github.com/Perpetual-Altruism-Ltd) |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Clover](https://clover.finance/) | Easy-to-use blockchain infrastructure | [GitHub](https://github.com/clover-network/) | <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
