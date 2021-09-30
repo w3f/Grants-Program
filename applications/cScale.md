@@ -116,34 +116,21 @@ SCALE=<1501> --- Hex=<45> --- Decoded=<69>
 * **Full-Time Equivalent (FTE):**  1 FTE
 * **Total Costs:** .25 BTC ~~ 10,750 USD
 
-### Milestone 1 - Basic Working Product
+### Milestone 1 - Working Product
 
-* **Estimated duration:** 1 week
+* **Estimated duration:** 2 weeks
 * **FTE:**  1
-* **Costs:** 0.2 BTC
+* **Costs:** 10,000 USD in BTC
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | GPLv3|
-| 0b. | Documentation | I will provide a README with several examples as well as a .c file for each data type with several tests showing encoding and decoding. |
+| 0b. | Documentation | I will provide a README with several examples as well as a .c file for each data type with several tests showing encoding and decoding. I will also provide a `docs` folder containing a markdown file giving examples for each data type as well as commenting  each function in the main header file. |
 | 1. | Intermediate Structs | I will provide a set of Structs which represent SCALE data internally before being processed |  
 | 2. | Encode | I will provide a set of functions that encode data into intermediate structs as well as others to serialize them. Each will generate an array of `uint8_t*` as well as a corresponding length |  
 | 3. | Decode | I will provide a set of functions that decode a valid SCALE `uint8_t*` array into the appropriate intermediate struct as well as functions to deserialize the struct back into raw data |  
-| 4. | Basic Testing | I will provide a testing application which tests each data type and ensures correctness |
+| 4. | Testing | I will provide a testing application which tests each data type and ensures correctness |
 | 5. | Basic CLI | I will provide a basic command line interface app which will encode/decode fixed width and compact integers |
-
-### Milestone 2 - Additional testing and documentation
-
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 0.05 BTC
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | GPLv3|
-| 0b. | Documentation | I will provide a docs folder which will contain a markdown file for each data type and more examples for each |
-| 1.  | Testing       | I will add more tests for each data type |
-| 2.  | More memory Testing | Continue checking for memory leaks using valgrind, etc. | 
 
 ## Future Plans
 
