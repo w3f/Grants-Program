@@ -2,8 +2,7 @@
 
 
 * **Project Name:** Web3Go
-* **Project Name:** Web3Go
-* **Team Name:** Litentry
+* **Team Name:** Web3Go
 * **Payment Address:** 0xD57e28773c92E6fB9D9Fb164889886cd360074BE(USDT)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
@@ -180,8 +179,7 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 | 0e. | Article | We will publish an **article**/workshop that explains the concept and vision of Web3Go
 | 1. | Indexer| We will develop our customized indexer on the top of Subquery to make it more compatible to our scenario |  
 | 2. | UI Module:general WebApp| We will create a web application that implements user sign-in/sign-up, categorization of data board,  social interactions functionality including like and share,  subscription of a specific event comes from a specific data board,  entry to the documentation, introduction, etc. |  
-| 3. | Backend| We will create a strong backend that communicates with our customized indexer and periodically synchronize to the real-time data on-chain. On the other hand, the backend will support all functionality of the UI. 
-|  
+| 3. | Backend| We will create a strong backend that communicates with our customized indexer and periodically synchronize to the real-time data on-chain. On the other hand, the backend will support all functionality of the UI. |  
 | 4. | Data Board:KSM crowdloan| We will create a data board that tracks the KSM crowdloan event basing on our customized indexer. The data board will contain the real-time status of crowdloan,  including the current progress of each project,  contributions, and historical analysis.  
 |  
 | 5. | Data Board:Karura CDP| We will create a data board that tracks the CDP information of Karura, and provide the historical analytics of each participant based on our custom indexer
