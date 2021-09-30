@@ -180,12 +180,9 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 | 1. | Indexer| We will develop our customized indexer on the top of Subquery to make it more compatible to our scenario |  
 | 2. | UI Module:general WebApp| We will create a web application that implements user sign-in/sign-up, categorization of data board,  social interactions functionality including like and share,  subscription of a specific event comes from a specific data board,  entry to the documentation, introduction, etc. |  
 | 3. | Backend| We will create a strong backend that communicates with our customized indexer and periodically synchronize to the real-time data on-chain. On the other hand, the backend will support all functionality of the UI. |  
-| 4. | Data Board:KSM crowdloan| We will create a data board that tracks the KSM crowdloan event basing on our customized indexer. The data board will contain the real-time status of crowdloan,  including the current progress of each project,  contributions, and historical analysis.  
-|  
-| 5. | Data Board:Karura CDP| We will create a data board that tracks the CDP information of Karura, and provide the historical analytics of each participant based on our custom indexer
-|  
-| 6. | Data Board:Moonriver staking| We will create a data board basing on our customized indexer, which tracks the staking history of the collator, the nominator, and their rewards, and predict the possible rewards by real-time on-chain events to provide guidance of maximizing the profit of a potential participant
-|  
+| 4. | Data Board:KSM crowdloan| We will create a data board that tracks the KSM crowdloan event basing on our customized indexer. The data board will contain the real-time status of crowdloan,  including the current progress of each project,  contributions, and historical analysis. |  
+| 5. | Data Board:Karura CDP| We will create a data board that tracks the CDP information of Karura, and provide the historical analytics of each participant based on our custom indexer|  
+| 6. | Data Board:Moonriver staking| We will create a data board basing on our customized indexer, which tracks the staking history of the collator, the nominator, and their rewards, and predict the possible rewards by real-time on-chain events to provide guidance of maximizing the profit of a potential participant|  
 | 7. | UI Module: semi-automatic chart generation| We will create a UI module to let users can generate visualized charts automatically by simply writing SQL language based on our existing indexed and formatted data. In the first milestone, the supported chart is bar chart, line chart, and piechart. The word "semi-automatic" means that the user still has to write SQL to generate the chart. In the second milestone, we will provide a fully automatic way to achieve it.|  
 
 ### Milestone 2 Example — Additional features
