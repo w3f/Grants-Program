@@ -67,7 +67,7 @@ The smart contract on Substrate node is used to demand, publish, share and rewar
 
 
 #### Technologies:
-* [Subquery](https://subquery.network/) is a blockchain indexer for Polkadot, Kusama and other parachains. We will rebuild and cusomizied this framework to fullfill our requirements.  
+* [Subquery](https://subquery.network/) is a blockchain indexer for Polkadot, Kusama, and other parachains. We will rebuild and customized this framework to fulfill our requirements.
 * Node.js
 * Docker
 * Substrate
@@ -76,7 +76,7 @@ The smart contract on Substrate node is used to demand, publish, share and rewar
 * Python
 
 #### PoC:
-A [web application](https://web3go.xyz/) with three data boards have been created for the proof of concept. We have used the architecture mentionted above to index three kinds of tokens: LIT, ATA and POLS. With nice chart and tables, the transaction, holders are visualized and some addresses have been labeled according to the labelling rules;  the second data board listed the crowdloan event on Kusama networks. This data board listed the contribution and participants for each project which attends the crowdloan event; the third data board track the CDP(collator debt position) stauts of Karura lending system and provide the realtime staus of each account.  
+A [web application](https://web3go.xyz/) with three data boards has been created for the proof of concept. We have used the architecture mentioned above to index three kinds of tokens: LIT, ATA, and POLS. With nice charts and tables, the transaction, holders are visualized and some addresses have been labeled according to the labeling rules; the second data board listed the crowdloan event on Kusama networks. This data board listed the contribution and participants for each project which attends the crowdloan event; the third data board tracks the CDP(collator debt position) status of Karura lending system and provides the real-time status of each account.
 
 
 
@@ -166,7 +166,7 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 
 ### Milestone 1 Example — Implement Substrate Modules
 
-* **Estimated duration:** 2 month
+* **Estimated duration:** 2 month2
 * **FTE:**  2
 * **Costs:** 25,000 USD
 
