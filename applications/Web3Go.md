@@ -183,7 +183,7 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 | 4. | Data Board:KSM crowdloan| We will create a data board that tracks the KSM crowdloan event basing on our customized indexer. The data board will contain the real-time status of crowdloan,  including the current progress of each project,  contributions, and historical analysis. |  
 | 5. | Data Board:Karura CDP| We will create a data board that tracks the CDP information of Karura, and provide the historical analytics of each participant based on our custom indexer|  
 | 6. | Data Board:Moonriver staking| We will create a data board basing on our customized indexer, which tracks the staking history of the collator, the nominator, and their rewards, and predict the possible rewards by real-time on-chain events to provide guidance of maximizing the profit of a potential participant|  
-| 7. | UI Module: semi-automatic chart generation| We will create a UI module to let users can generate visualized charts automatically by simply writing SQL language based on our existing indexed and formatted data. In the first milestone, the supported chart is bar chart, line chart, and piechart. The word "semi-automatic" means that the user still has to write SQL to generate the chart. In the second milestone, we will provide a fully automatic way to achieve it.|  
+| 7. | UI Module: semi-automatic chart generation| We will create a UI module to let users can generate visualized charts automatically by simply writing SQL language based on our existing indexed and formatted data. In the first milestone, the supported chart is bar chart, line chart, and pie chart. The word "semi-automatic" means that the user still has to write SQL to generate the chart. In the second milestone, we will provide a fully automatic way to achieve it.|  
 
 ### Milestone 2 Example — Additional features
 
@@ -200,8 +200,6 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 
 
 ## Future Plans
-
-Please include here
 
 * As our vision is to let "everyone enjoy the value behind the blockchain data", we will design the token economics to let more people involved in the whole data board activities. The rough idea is to design three kinds of roles: data demander, data analyst, and data validator, and introduce the token incentive to incentive the community to create more customized and interesting data boards, and this will be done through the parachain system. So after this grant is finished, we will immediately launch the token economics design and parachain development. 
 * As our team is a sub-team of Litentry, so we have a strong development team and operations team and have a 60k+ community, and have a good relationship with most of the projects in the Polkadot ecosystem.  all of the above has provided us a strong foundation of success. we want to be the best data analysis project in the Polkadot ecosystem, and collect more data across other public chains in the future. 
