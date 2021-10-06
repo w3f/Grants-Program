@@ -115,7 +115,7 @@ SCALE=<1501> --- Hex=<45> --- Decoded=<69>
 
 * **Total Estimated Duration:** 1 month
 * **Full-Time Equivalent (FTE):**  1 FTE
-* **Total Costs:** .25 BTC ~~ 10,750 USD
+* **Total Costs:** 10,000 USD, denominated in Bitcoin
 
 ### Milestone 1 - Working Product
 
