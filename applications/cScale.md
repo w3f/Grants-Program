@@ -17,6 +17,7 @@
 * Currently there does not seem to be a working standalone implementation of this serialization codec in C
 * A SCALE implementation would allow for the development of more desktop applications communicating with Substrate nodes
 * I am developing this because I am interested in creating a simple and secure desktop Substrate wallet
+* I already have a generally working product that I would also like to improve as I get suggestions
 
 ### Project Details
 
@@ -66,7 +67,7 @@ Currently have a basic working implementation. Generating a testing app, a basic
 
 Some examples:
 
-####Fixed Int
+#### Fixed Int
 ```c
 scale_fixed_int fixed = { 0 };
 encode_int_to_fixed_int_scale(&fixed, (uint16_t)42);
@@ -86,7 +87,7 @@ Prints:
 2A00 --- 42
 ```
 
-####Compact Int
+#### Compact Int
 
 ```c
  scale_compact_int compact = { 0 };
@@ -120,7 +121,7 @@ SCALE=<1501> --- Hex=<45> --- Decoded=<69>
 
 * **Estimated duration:** 2 weeks
 * **FTE:**  1
-* **Costs:** 10,000 USD in BTC
+* **Costs:** 9,000 USD in BTC
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -131,6 +132,19 @@ SCALE=<1501> --- Hex=<45> --- Decoded=<69>
 | 3. | Decode | I will provide a set of functions that decode a valid SCALE `uint8_t*` array into the appropriate intermediate struct as well as functions to deserialize the struct back into raw data |  
 | 4. | Testing | I will provide a testing application which tests each data type and ensures correctness |
 | 5. | Basic CLI | I will provide a basic command line interface app which will encode/decode fixed width and compact integers |
+
+### Milestone 2 - Additional testing
+
+* **Estimated duration:** 1 month
+* **FTE:**  1
+* **Costs:** 1,000 USD in BTC
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | GPLv3|
+| 0b. | Documentation | I will add several useful structs to the docs folder which represent actual Substrate data with their respective serialization functions. (AccountInfo, AccountData) |
+| 1. | Tests | I will work to provide more tests, preferably utilizing Rust FFI to compare against parity-scale-code results. This may or may not require some assistance as I have never used Rust FFI. |  
+
 
 ## Future Plans
 
