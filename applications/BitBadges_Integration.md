@@ -65,7 +65,7 @@ We are targeting many developers who want to build on top of BitBadges as well a
 
 * **Contact Name:** Andrew M. K. Nassief
 * **Contact Email:** andrew@cloutpool.net
-* **Website:** https://bitclout.web.app
+* **Website:** https://bitbadges.web.app
 
 ### Legal Structure
 
