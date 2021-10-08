@@ -2,7 +2,7 @@
 
 * **Project Name:** php substrate api
 * **Team Name:** Nitor Infotech
-* **Payment Address:** BTC or Ethereum (USDT/DAI) payment address. We don't accept payments for the program in other currencies at this stage. If this is an Ethereum address, please specify USDT or DAI. (e.g. 0x8920... (DAI))
+* **Payment Address:** We are working on BTC/Ethereum address, in following PR push we will provide this address.
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1 
 
 ## Project Overview :page_facing_up:
