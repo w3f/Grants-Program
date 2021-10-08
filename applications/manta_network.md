@@ -171,9 +171,9 @@ The Manta substrate pallets includes the ledger state implementation, the transa
 
 ### Milestone 2 — Manta DAP Wallet Protocol and XCM Integration
 
-* **Estimated Duration:** 7 weeks (Estimated Delivery Date: Oct. 30)
+* **Estimated Duration:** 7 weeks (Estimated Delivery Date: Nov. 15)
 * **FTE:**  7
-* **Costs:** 2 BTC
+* **Costs:** 0.5 BTC
 
 There are two major new deliverable in Milestone 2:
 1. Support minting Parachain asset via XCM. This requires the following:
@@ -181,16 +181,18 @@ There are two major new deliverable in Milestone 2:
     * Mint/reclaim tokens from/to the sister parachain / replay chain. 
 2. MantaPay wallet protocol and wallet implementation:
    * MantaPay wallet protocol (a draft version [here](https://github.com/Manta-Network/MIPS/pull/2)). The purpose of this protocol is to provide the user account abstraction despite MantaPay's UTXO design. 
-   * Manta Frontend: A web based DApp front-end that can manage, transact Manta supported private tokens. Manta frontend will also communicate with Manta Signer to get the ZKP.   
-   * Manta Signer: An native client on Mac/Win for generating ZKP. The reason that we uses a native client is due to the expensive computation will cause a inferior user-experience if using WASM on browser (measured 16X slow-down) to generate ZKP.
+   * Manta DApp: A web based DApp front-end that can manage, transact Manta supported private tokens. Manta frontend will also communicate with Manta Signer to get the ZKP.   
+   * Manta Signer: An native client on Mac/Win/Ubuntu for generating ZKP. The reason that we uses a native client is due to the expensive computation will cause a inferior user-experience if using WASM on browser (measured 16X slow-down) to generate ZKP.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | GPL V3 |
 | 1. | Manta Parachain Runtime with MantaPay | Compared with the prototype in Milestone I, we will add support for minting parachain assets to private coins in this prototype.|
-| 2. | MantaPay Pallet Implementation | This is the pallet that implements the updated MantaPay Protocol. | 
+| 2. | MantaPay Pallet Implementation | This is the pallet that implements the updated MantaPay Protocol with signficant speed improvement. | 
 | 3. | Manta DApp | A web based DApp that manages and transacts Manta supported private assets |
-| 4. | Manta Signer | Manta's Windows/Mac client that turbo-charges ZKP generation. Signer will communicate with Manta DApp  |
+| 4. | Manta Signer | Manta's Mac/Win/Ubuntu client that turbo-charges ZKP generation. Signer will communicate with Manta DApp |
+
+Note: 1 and 2 will be delivered together as a docker container.
 
 
 ### Community engagement
