@@ -200,3 +200,20 @@ Outside of updating dependencies and actively maintaining this project, our team
 ## Additional Information :heavy_plus_sign:
 
 We heard about this grant in particular through an open grants website. We thought this matched well w/ what we are trying to do. Currently, we haven't applied for grants in the past. There is work *as mentioned* already done w/ BitBadges 2.0 and in regards to the substrate sidechain. We are also well aware of substrate's core functionality and how lots of the modules work. So far, there hasn't been anybody else who has contributed financially towards this project and we wish for careful consideration given we believe what we are developing has the potential to be massively scaled.
+
+### FAQs
+1. **Can you please clarify a bit more about BitBadges and its implementation?**
+
+**Answer:** BitBadges is its own independent blockchain and a paper on it can be read on [IACR Preprints](https://eprint.iacr.org/2021/1186). Currently an example of BitBadges can be seen here [v1.0](https://bitbadges.web.app), but this is the version prior to the full release and where the database will be migrated to CouchDB. In regards to what we want to do w/ Substrate, Substrate is for a sidechain and not what builds the BitBadges blockchain. 
+
+2. **What are the sidechain integrations w/ BitBadges and how do they work?**
+
+**Answer:** A sidechain is a separate blockchain or connector in which data can be transmitted between that blockchain and the main chain *(BitBadges)*. The difference between a sidechain and crosschain compatibility is that sidechains can transmit data between chains while crosschains are more focused towards wrapping assets or [special transactions](https://academy.horizen.io/technology/expert/cross-chain-transactions/) as opposed to data transmission within the main chain.
+
+3. **What will be the core deliverables in regards to testing and documentation?**
+
+**Answer:** We will have CLI tests enabled for the core code modules, and in regards to documentation, we will document everything thoroughly in the README. User guides however, are different than dev guides, and some documentation follows different standards than others. For sake of simplicity, the documentation or what is included within the software packages will obviously go through some form of formalized approval. Documentation standards are based off of how software within similar categories documented their software.
+
+4. **How will this be integrated w/ Substrate? Will it be a module? How will it be programmed?**
+
+**Answer:** Most likely we will do some sort of module or pallet and integrate it with an example chain. If plans change, it will be communicated directly w/ the Web3 team. This will likely be coded in Rust and Wasm (in regards to the core code). If something is packageable as a [crates.io](crates.io) package, most likely we will fully package it along w/ its documentation.
