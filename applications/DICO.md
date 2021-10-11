@@ -34,31 +34,77 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 
 #### Mockups and UI components
 
+
 <p align="center">
-  <img src="assets/DAO.png" width="50%" syt height="50%" />
-</p>
-<p align="center">
-  <img src="assets/1.png" width="50%" syt height="50%" />
-</p>
-<p align="center">
-  <img src="assets/2.png" width="50%" syt height="50%" />
-</p>
-<p align="center">
-  <img src="assets/3.png" width="50%" syt height="50%" />
-</p>
-<p align="center">
-  <img src="assets/4.png" width="50%" syt height="50%" />
-</p>
-<p align="center">
-  <img src="assets/5.png" width="50%" syt height="50%" />
-</p>
-<p align="center">
-  <img src="assets/6.png" width="50%" syt height="50%" />
-</p>
-<p align="center">
-  <img src="assets/7.png" width="50%" syt height="50%" />
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Me/Me-home.jpg" width="50%" syt height="50%" />
 </p>
 
+
+#### ICO
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Ico/Add-project0.jpg" width="50%" syt height="50%" />
+</p>
+
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Ico/council-ico-permitIco1.jpg" width="50%" syt height="50%" />
+</p>
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Ico/ico-getReward.jpg" width="50%" syt height="50%" />
+</p>
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Ico/ico-request%20release.jpg" width="50%" syt height="50%" />
+</p>
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Ico/ico-unlock1.jpg" width="50%" syt height="50%" />
+</p>
+
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Ico/ico-userReleaseIcoAmount1.jpg" width="50%" syt height="50%" />
+</p>
+
+
+#### KYC
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Kyc/Apply_certification2.jpg" width="50%" syt height="50%" />
+</p>
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Kyc/Kyc_Clear2.jpg" width="50%" syt height="50%" />
+</p>
+
+
+#### DAO
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Dao/Dao-create%20motion.jpg" width="50%" syt height="50%" />
+</p>
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Dao/Dao-create%20motion.jpg" width="50%" syt height="50%" />
+</p>
+
+
+#### Swap
+
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Swap/swap-AddLiquidity1.jpg" width="50%" syt height="50%" />
+</p>
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Swap/swap-Exchange1-1.jpg" width="50%" syt height="50%" />
+</p>
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Swap/swap-removeLiquidity1.jpg" width="50%" syt height="50%" />
+</p>
 
 
 ### Ecosystem Fit
@@ -165,12 +211,12 @@ To assist you in defining it, we have created a document with examples for some 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 |
-| 1.a	 | Substrate module: KYC pallet | Includes identity authentication service(IAS), KYC users, and supervisor. responsible for providing users with a decentralized KYC certification service.|
+| 1.a  | Substrate module: KYC pallet | Includes identity authentication service(IAS), KYC users, and supervisor. responsible for providing users with a decentralized KYC certification service.|
 | 1.b | Substrate module: ICO pallet| Apply for ICO and council review for the project party. |  
 | 1.c | Substrate module: DAO pallet| Strict control of the progress and process of the project. |  
 | 2. | Integration with front-end(dapp) |integrate our existing front end to the finalized KYC,ICO,DAO module.
 |  
-| 3. | Testing and Documentation	 | Test and document the modules we write |   
+| 3. | Testing and Documentation   | Test and document the modules we write |   
 
 ### Milestone 2 — Implement Swap, Oracle Modules
 
@@ -181,9 +227,9 @@ To assist you in defining it, we have created a document with examples for some 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 |
-| 1.a	 | Substrate module: Swap module| Provide an exchange agreement for tokens and an interest-generating method for collateralized tokens into the liquidity pool for disposable tokens.|
+| 1.a  | Substrate module: Swap module| Provide an exchange agreement for tokens and an interest-generating method for collateralized tokens into the liquidity pool for disposable tokens.|
 | 1.b | Substrate module: Oracle module| Provide an oracle for the platform. |  
-| 2. | Testing and Documentation	 | Test and document the modules we write | 
+| 2. | Testing and Documentation   | Test and document the modules we write | 
 
 ### Milestone 3 — Additional features
 
@@ -194,6 +240,6 @@ To assist you in defining it, we have created a document with examples for some 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 |
-| 1	 | all modules integration with front-end	 | integrate our existing front end to the finalized substrate backend.|
+| 1  | all modules integration with front-end  | integrate our existing front end to the finalized substrate backend.|
 | 2 | Tutorial| We will create an wiki document and some videos that will explain how users can start using the platform for KYC,ICO and DAO module . Additionally, we will also create tutorials for users to use swap and staking. |
 | 3 | Attract users| We will plan some activities for users to join in. let users find what they want|  
