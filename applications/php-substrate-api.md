@@ -2,7 +2,7 @@
 
 * **Project Name:** php substrate api
 * **Team Name:** Nitor Infotech
-* **Payment Address:** We are working on BTC/Ethereum address, in following PR push we will provide this address.
+* **Payment Address:** We are working on BTC/Ethereum address, in following PR push we will provide this address. 
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1 
 
 ## Project Overview :page_facing_up:
