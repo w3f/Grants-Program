@@ -78,7 +78,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Staking Rewards | [Staking Rewards Collector](https://github.com/w3f/staking-rewards-collector), [Staking Rewards Viewer](https://github.com/jackson-harris-iii/staking-rewards-viewer), [Polkadot Staking Site](https://github.com/cryptolab-network/polkadot-staking-site) |
 | Bridge UI | [Parity Bridges UI](https://github.com/paritytech/parity-bridges-ui), [Donut Interface (Steem <> Dot)](https://github.com/nutbox-dao/donut-interface) | |
 | Parachain/Crowdloan | [Parachains.Network](https://github.com/jhonalino/parachains.network) | |
-| Other | [PolkadotWebIdenticon](https://github.com/RidOne-technologies/polkadot-web-identicon) | Portfolio Viewer like Zapper or Zerion
+| Other | [PolkadotWebIdenticon](https://github.com/RidOne-technologies/polkadot-web-identicon), [KappaSigmaMu Fratority](https://github.com/KappaSigmaMu/ksm-app), [Quadratic Funding Webapp](https://github.com/OAK-Foundation/quadratic-funding-webapp) | Portfolio Viewer like Zapper or Zerion
 
 ### :wrench: Tools, APIs and Languages
 
@@ -94,7 +94,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Smart Contract Languages | [Ask!](https://github.com/patractlabs/ask), [Subscript](https://github.com/slickup/subscript), [Solang](https://github.com/hyperledger-labs/solang), [Ink!](https://github.com/paritytech/ink), [Pact](https://github.com/kadena-io/), [Move VM Substrate](https://github.com/pontem-network/sp-move),  | Functional Programming Languages, other languages with developed toolchains |
 | Smart Contract Security |
 | Testing | [Halva](https://github.com/orgs/halva-suite), [Ink Waterfall](https://github.com/paritytech/ink-waterfall), [Redspot](https://github.com/patractlabs/redspot), [MixBytes Tank](https://github.com/mixbytes/tank), [sub-flood](https://github.com/NikVolf/sub-flood), [Substrate debug-kit](https://github.com/paritytech/substrate-debug-kit), [Polkadot Launch](https://github.com/paritytech/polkadot-launch), [Dotscale - SCALE Codec Comparator](https://github.com/arijitAD/dotscale), [Asset CLI tool](https://github.com/JesseAbram/asset_cli_tool), [sub_crash](https://github.com/JesseAbram/unfinished_testing_tool), [subwasm](https://github.com/chevdor/subwasm), [subsee](https://github.com/ascjones/subsee)
-| Blockchain Indexing Engine | [Substrate Archive](https://github.com/paritytech/substrate-archive), [PSQL Indexer](https://github.com/usetech-llc/polkadot_psql_indexer), [Polkadothub Indexer](https://github.com/figment-networks/polkadothub-indexer), [Substrate Graph](https://github.com/playzero/substrate-graph), [Hydra](https://github.com/Joystream/hydra), [Subquery](https://github.com/OnFinality-io/subql) |
+| Blockchain Indexing Engine | [Substrate Archive](https://github.com/paritytech/substrate-archive), [PSQL Indexer](https://github.com/usetech-llc/polkadot_psql_indexer), [Polkadothub Indexer](https://github.com/figment-networks/polkadothub-indexer), [Substrate Graph](https://github.com/playzero/substrate-graph), [Hydra](https://github.com/subsquid/hydra), [Subquery](https://github.com/OnFinality-io/subql) |
 | Blockchain/Event Monitoring | [Web3 Guardian](https://github.com/open-web3-stack/guardian), [Aurras Event Manager](https://github.com/HugoByte/aurras-event-manager) |
 | Gaming | [Mobile Game Framework for Substrate](https://github.com/creator-rs/creator/) | [Amethyst](https://amethyst.rs/) + [Substrate](https://substrate.dev/)
 | Other | [open-web3 JS library](https://github.com/open-web3-stack/open-web3.js), [VM-Bridge](https://github.com/CycanTech/GVM-Bridge)
@@ -174,7 +174,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | PoC | [Spartan](https://github.com/subspace/substrate) |
 | PoW | [PoW consensus for Substrate](https://github.com/paritytech/substrate/tree/master/client/consensus/pow), [RandomX](https://github.com/kulupu/kulupu/tree/master/pow), [Sha3 PoW](https://github.com/substrate-developer-hub/recipes/tree/master/consensus/sha3pow) |
 | Block production | [BABE](https://github.com/paritytech/substrate/tree/master/client/consensus/babe), [Aura](https://github.com/paritytech/substrate/tree/master/client/consensus/aura) |
-| Finality | [GRANDPA](https://github.com/paritytech/substrate/tree/master/client/finality-grandpate) |
+| Finality | [GRANDPA](https://github.com/paritytech/substrate/tree/master/frame/grandpa) |
 
 
 ### :satellite: Networking
