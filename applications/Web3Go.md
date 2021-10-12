@@ -35,11 +35,11 @@ The interpretation and analysis of data should not be in the hands of certain ce
 
 
 2. **Data Board:** 
-data board is the visualization result of data analysis created by analysts, which can display the analyzed and customized  information on the Polkadot ecosystem such as a token transaction or holders,  an NFT transfer, and history of the transaction, the statistics of a Defi protocol, or some special event like parachain auction, and governance. 
+data board is the visualization result of data analysis created by analysts or community member, which can display the analyzed and customized  information on the Polkadot ecosystem such as a token transaction or holders,  an NFT transfer, and history of the transaction, the statistics of a Defi protocol, or some special event like parachain auction, and governance. 
 
 
 3. **Contract on Substrate:**
-We're using smart contracts on the Substrate nodes to demand, publish, share and reward the data activities within Web3Go. There are primarily two kinds of players involved in the smart contract: data demander, who has a need of professional, visualized results of data analysis regarding events that happened on the blockchain. Data demanders will publish the needs through the contract with bounty to incentive whoever fulfill these needs; on the other hand, data analyst, who has professional knowledge and skills can take on data tasks, or they can publish and share any data board they have created to the community in a paid or free manner. This smart contract will incentive more people to contribute to the data activities in the ecosystem since those who create more valuable data boards will gain a higher reputation.
+We will use smart contracts on the Substrate nodes to demand, publish, share and reward the data activities within Web3Go. There are primarily two kinds of players involved in the smart contract: data demander, who has a need of professional, visualized results of data analysis regarding events that happened on the blockchain. Data demanders will publish the needs through the contract with bounty to incentive whoever fulfill these needs; on the other hand, data analyst, who has professional knowledge and skills can take on data tasks, or they can publish and share any data board they have created to the community in a paid or free manner. This smart contract will incentive more people to contribute to the data activities in the ecosystem since those who create more valuable data boards will gain a higher reputation.
 
 
 
@@ -76,7 +76,7 @@ We're using smart contracts on the Substrate nodes to demand, publish, share and
 * Python
 
 #### PoC:
-A [web application](https://web3go.xyz/) with three data boards has been built as a  proof of concept. We have used the architecture mentioned above to index three kinds of tokens: LIT, ATA, and POLS. With nice charts and tables, the transaction, holders are visualized and some addresses have been labeled according to the labeling rules; the second data board listed the crowdloan event on Kusama networks. This data board listed the contribution and participants for each project which attends the crowdloan event; the third data board tracks the CDP(collator debt position) status of Karura lending system and provides the real-time status of each account.
+A [web application](https://web3go.xyz/) with three data boards has been built as a  proof of concept. We have used the architecture mentioned above to index three kinds of tokens: LIT, ATA, and POLS. With nice charts and tables, the transaction, holders are visualized and some addresses have been labeled according to the labeling rules; the second data board lists the crowdloan event on Kusama networks. This data board lists the contribution and participants for each project which attends the crowdloan event; the third data board tracks the CDP(collator debt position) status of Karura lending system and provides the real-time status of each account.
 
 
 
@@ -91,9 +91,9 @@ Similar projects
 * https://debank.com/
   
 
-What makes us different is
+What makes us different is,as a part of Web 3 community and Polkadot ecosystem:
 
-As a part of Web 3 community and Polkadot ecosystem
+
 * The first project focuses on the data analysis for Polkadot world
 * Designed to let everyone can benefit from the value of data in the Polkadot world and make the valuable data public to everyone, not in the hand of one centralized project 
 * An incentive mechanism that gets everyone involved and participates in the data activities.
@@ -103,9 +103,9 @@ As a part of Web 3 community and Polkadot ecosystem
 
 ### Team members
 
-* Hao Ding: VP of Litentry. MSc of University Suttgart.
+* Hao Ding: VP of Litentry. MSc of University Stuttgart.
 * Yifei Wu: Substrate lead of Litentry. PhD of Tokyo University.
-* Han Zhao: Substrate core dev of litentry. MSc of University Suttgart.
+* Han Zhao: Substrate core dev of litentry. MSc of University Stuttgart.
 * Minqi Wang: Backend and contract developer. Master of University Columbia.
 * Yunjian Bian: Software Architect of Litentry. Bachelor of University Suzhou.
 
@@ -151,7 +151,7 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 ## Development Status :open_book:
 
 * [WebSite](https://www.web3go.xyz): visit this url:   https://www.web3go.xyz can take a look at the current developement progress of  the website. 
-* [Data board-Karura CDP](https://web3go.xyz/#/CDPProfiler): This data board tracks and visualizes the real-time CDP information of Karura, and provide the historical analytics and real-time CDP status of each participant. 
+* [Data board-Karura CDP](https://web3go.xyz/#/CDPProfiler): This data board tracks and visualizes the real-time CDP information of Karura, and provides the historical analytics and real-time CDP status of each participant. 
 * [Data board-KSM crowdloan](https://web3go.xyz/#/ParaChainProfiler): This data board tracks and visualizes the real-time Kusama crowdloan on each lease, including the total amount of each project, address, and amount of each contribution.
 * [Data board-ERC20 Token](http://106.52.138.224:8080/#/WalletProfiler?data=%7B%22type%22%3A%22ERC20%22,%22name%22%3A%22LIT%20Analysis%22,%22description%22%3A%22Sample%20Analysis%20For%20LIT%20To%20View%20The%20Details%20And%20Trends%22,%22created%22%3A%22Litentry%20Offical%20Team%22,%22data%22%3A%7B%22contractAddress%22%3A%220xb59490ab09a0f526cc7305822ac65f2ab12f9723%22%7D%7D): This data board tracks and visualizes the real-time and historical transactions, amounts,  and addresses of ERC20 tokens including LIT, ATA, and POLS with analysis. 
 * [UI Mock-ups](https://drive.google.com/drive/folders/1NIEB0Tbj7tIcf7Q2CRzuMwbkU95ADnH4?usp=sharing): here saved the UI design and mock-up of Web3Go, it is keep updating.
@@ -167,7 +167,7 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 * **Full-Time Equivalent (FTE):**  2 FTE
 * **Total Costs:** 40,000 USD
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1  — Website, customizied indexer,Semi-automatic chart generation and databoards
 
 * **Estimated duration:** 2 month2
 * **FTE:**  2
@@ -180,16 +180,15 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains the concept and vision of Web3Go
-| 1. | Indexer| We will develop our customized indexer on the top of Subquery to make it more compatible to our scenario in below two areas: 1. handle data/event and extract the result to external storage
- |  
-| 2. | UI Module:general WebApp| We will create a web application that implements user sign-in/sign-up, categorization of data board,  social interactions functionality including like and share,  subscription of a specific event comes from a specific data board,  entry to the documentation, introduction, etc. Currently the website is Currently, the developed website is only a POC, the UI will be refined and redesigned.
-| 3. | Data Board:3 more| We will create 3 more data board comes from other projects that have already won the bid in the Kusama auction(or Polkadot auction if it happens), so we will have more value data board on our platform and attract more user come. Three projects are planned to index: [RMRK](https://www.rmrk.app/)(NFT circulation), [Moonriver](https://moonbeam.network/networks/moonriver/)(stake tracking) and [Parallel](https://parallel.fi/index.html)(Defi tracking).  (The projects might be changed but the number of data boards is fixed)
+| 1. | Indexer| We will develop our customized indexer on the top of Subquery to make it more compatible to our scenario in below two areas: 1. Handle data/event and extract the result to external storage|  
+| 2. | UI Module:general WebApp| We will create a web application that implements user sign-in/sign-up, categorization of data board,  social interactions functionality including like and share,  subscription of a specific event comes from a specific data board,  entry to the documentation, introduction, etc. Currently the website is Currently, the developed website is only a POC, the UI will be refined and redesigned.|  
+| 3. | Data Board:3 more| We will create 3 more data board comes from other projects that have already won the bid in the Kusama auction(or Polkadot auction if it happens), so we will have more value data board on our platform and attract more user come. Three projects are planned to index: [RMRK](https://www.rmrk.app/)(NFT circulation), [Moonriver](https://moonbeam.network/networks/moonriver/)(stake tracking) and [Parallel](https://parallel.fi/index.html)(Defi tracking).  (The projects might be changed but the number of data boards is fixed)|  
 | 4. | UI Module: semi-automatic chart generation| This part is the core value of Web3Go, which can help users generate charts based on existing data. We will optimize the UI and make the chart more charming and easy to use. | 
 | 5. | More ERC20 Token:| We wll support 20 more kinds of mainstream ERC20 tokens.|   
 
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2  — More databoards, fully-automatic chart generation
 
 * **Estimated Duration:** 1 month
 * **FTE:**  2
