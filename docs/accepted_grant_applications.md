@@ -24,6 +24,7 @@
   - [:surfing_woman: Wave 9 - First Quarter 2021](#surfing_woman-wave-9---first-quarter-2021)
   - [:surfing_woman: Wave 10 - Second Quarter 2021](#surfing_woman-wave-10---second-quarter-2021)
   - [:surfing_woman: Wave 11 - Third Quarter 2021](#surfing_woman-wave-11---third-quarter-2021)
+  - [:surfing_woman: Wave 12 - Fourth Quarter 2021](#surfing_woman-wave-12---fourth-quarter-2021)
 
 # 2019
 
@@ -179,7 +180,7 @@
 | [Phala.Network](https://phala.network/) | Web3 Analytics | [GitHub](https://github.com/Phala-Network/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [TerenceGe](https://github.com/TerenceGe) | C implementation of Schnorrkel | [GitHub](https://github.com/TerenceGe/sr25519-donna) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Adoriasoft](https://adoriasoft.com/) | Cosmos-SDK Parachain Development Kit | [GitHub](https://github.com/adoriasoft/cosmos-sdk) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Laminar One](https://laminar.one/) | Reusable Libraries: Runtime Modules + Monitoring Framework | [GitHub](https://github.com/open-web3-stack) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Laminar One](https://laminar.one/) | Reusable Libraries: Runtime Modules + Monitoring Framework | [GitHub](https://github.com/open-web3-stack) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Faber](https://github.com/yxf) | Subwallet: CLI wallet for Polkadot/Substrate | [GitHub](https://github.com/yxf/subwallet) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Equilibrium.co](https://equilibrium.co/) | offchain::ipfs | [GitHub](https://github.com/eqlabs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Snowfork](http://www.snowfork.com/) | Ethereum Bridge | [GitHub](https://github.com/snowfork) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -312,7 +313,7 @@
 | [Skye Kiwi](https://skye.kiwi/) | SkyePass: A decentralized, open source password manager | [GitHub](https://github.com/skyekiwi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [RidOne Technologies](https://github.com/RidOne-technologies) | Polkadot UI Web + Angular Identicon | [GitHub](https://github.com/RidOne-technologies) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Zeropool](https://zeropool.network/) | Private transactions on Polkadot Phase 2 | [GitHub](https://github.com/zeropoolnetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [OAK Foundation](https://oak.tech) | Quadratic Funding Module and Dapp Application | [GitHub](https://github.com/OAK-Foundation/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [OAK Foundation](https://oak.tech) | Quadratic Funding Module and Dapp Application | [GitHub](https://github.com/OAK-Foundation/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Commonwealth Labs](https://commonwealth.im/) | Webb Mixer| [GitHub](https://github.com/edgeware-builders) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [TEA Project](http://teaproject.org/) | Gluon - Decentralized Hardware Crypto Wallet Services | [GitHub](https://github.com/tearust) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Cycan Technologies](http://cycan.network/) | Everlasting Cash: A hybrid of a crypto-collateralized and an algorithmic stablecoin | [GitHub](https://github.com/CycanTech) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -386,8 +387,14 @@
 | [Health Hero](https://www.gohealthhero.com/) | NFT Product Analytics Suite |  | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Tesseract](https://tesseract.one/) | Mobile dApps/Wallet Connection | [GitHub](https://github.com/tesseract-one) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Wow Labz](http://www.wowlabz.com) | Dot Marketplace | [GitHub](https://github.com/WowLabz) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [InvArchitects](https://www.invarch.io/) | InvArch - IP Infrastructure for Substrate | [GitHub](https://github.com/InvArch) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [InvArchitects](https://www.invarch.io/) | InvArch - IP Infrastructure for Substrate | [GitHub](https://github.com/InvArch) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SubGame Network](https://subgame.org) | A decentralized game platform Phase 2| [GitHub](https://github.com/SubGame-Network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [CESS LAB](https://www.cess.cloud/) | Cumulus Encrypted Storage System (CESS) | [GitHub](https://github.com/Cumulus2021/Whitepaper) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [CheersLand Labs](https://cheersland.org/) | Multi-game Platform for Polkadot & Kusama | [GitHub](https://github.com/cheersland) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [UNI-ARTS](https://app.uniarts.network/) | Ruby Substate Client | [GitHub](https://github.com/uni-arts-chain/sr25519) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+
+## :surfing_woman: Wave 12 - Fourth Quarter 2021
+
+| Team | Project | Link | Terminated | First Delivery | Completed
+| :--- | :------ | :--- | :--------: | :------------: | :-------: |
+| Matthew Darnell | cScale | [GitHub](https://github.com/MatthewDarnell/cScale) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
