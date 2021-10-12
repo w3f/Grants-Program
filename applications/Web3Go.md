@@ -169,7 +169,7 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 
 ### Milestone 1  — Website, customizied indexer,Semi-automatic chart generation and databoards
 
-* **Estimated duration:** 2 month2
+* **Estimated duration:** 2 month
 * **FTE:**  2
 * **Costs:** 25,000 USD
 
@@ -181,8 +181,8 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains the concept and vision of Web3Go
 | 1. | Indexer| We will develop our customized indexer on the top of Subquery to make it more compatible to our scenario in below two areas: 1. Handle data/event and extract the result to external storage|  
-| 2. | UI Module:general WebApp| We will create a web application that implements user sign-in/sign-up, categorization of data board,  social interactions functionality including like and share,  subscription of a specific event comes from a specific data board,  entry to the documentation, introduction, etc. Currently the website is Currently, the developed website is only a POC, the UI will be refined and redesigned.|  
-| 3. | Data Board:3 more| We will create 3 more data board comes from other projects that have already won the bid in the Kusama auction(or Polkadot auction if it happens), so we will have more value data board on our platform and attract more user come. Three projects are planned to index: [RMRK](https://www.rmrk.app/)(NFT circulation), [Moonriver](https://moonbeam.network/networks/moonriver/)(stake tracking) and [Parallel](https://parallel.fi/index.html)(Defi tracking).  (The projects might be changed but the number of data boards is fixed)|  
+| 2. | UI Module:general WebApp| We will continue on the development of the web application to implement: user sign-in/sign-up, categorization of data board,  social interactions functionality including like and share,  subscription of a specific event comes from a specific data board,  UI redesign and refinement, documentation and tutorial. |  
+| 3. | 3 more Data Board:| We will create 3 more data board comes from other projects that have already won the bid in the Kusama auction(or Polkadot auction if it happens), so we will have more value data board on our platform and attract more user come. Three projects are planned to index: [RMRK](https://www.rmrk.app/)(NFT circulation), [Moonriver](https://moonbeam.network/networks/moonriver/)(stake tracking) and [Parallel](https://parallel.fi/index.html)(Defi tracking).  (The projects might be changed but the number of data boards is fixed)|  
 | 4. | UI Module: semi-automatic chart generation| This part is the core value of Web3Go, which can help users generate charts based on existing data. We will optimize the UI and make the chart more charming and easy to use. | 
 | 5. | More ERC20 Token:| We wll support 20 more kinds of mainstream ERC20 tokens.|   
 
@@ -208,8 +208,8 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 
 ## Future Plans
 
-* As our vision is to let "everyone enjoy the value behind the blockchain data", we will design the token economics to let more people involved in the whole data board activities. The rough idea is to design three kinds of roles: data demander, data analyst, and data validator, and introduce the token incentive to incentive the community to create more customized and interesting data boards, and this will be done through the parachain system. So after this grant is finished, we will immediately launch the token economics design and parachain development. 
-* As our team is a sub-team of Litentry, so we have a strong development team and operations team and have a 60k+ community, and have a good relationship with most of the projects in the Polkadot ecosystem.  all of the above has provided us a strong foundation of success. we want to be the best data analysis project in the Polkadot ecosystem, and collect more data across other public chains in the future. 
+* As our vision is to let "everyone enjoy the value behind the blockchain data", we will design the token economics to let more people involved in the whole data board activities. The rough idea is to design three kinds of roles: data demander, data analyst, and data validator, and introduce the token incentive to incentive the community to create more customized and interesting data boards, and this will be done through the parachain system. We have already started doing the research on the token economics design, and after this grant is finished, parachain development will be started. 
+* As our team is a sub-team of Litentry, so we have a strong development team , operations team, a 60k+ community, and have a good relationship with most of the projects in the Polkadot ecosystem.  All of the above has provided us a strong foundation of success. we want to be the best data analysis project in the Polkadot ecosystem, and even collect more data across other public chains in the future. 
 
 
 ## Additional Information :heavy_plus_sign:
