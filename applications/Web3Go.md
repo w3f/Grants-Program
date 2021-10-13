@@ -185,7 +185,7 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 | 2. | UI Module:general WebApp| We will continue on the development of the web application to implement: user sign-in/sign-up, categorization of data board,  social interactions functionality including like and share,  subscription of a specific event comes from a specific data board,  UI redesign and refinement, documentation and tutorial. |  
 | 3. | 3 more Data Boards:| We will create 3 more data boards of other projects in Polkadot ecosystem that have already won the bid in the Kusama auction(or Polkadot auction if it happens), so we will have more valuable data boards on our platform and user collect their board basing on our data and tools. Three projects are planned to index: [RMRK](https://www.rmrk.app/)(NFT circulation), [Moonriver](https://moonbeam.network/networks/moonriver/)(stake tracking) and [Parallel](https://parallel.fi/index.html)(Defi tracking).  (The projects might be changed but the number of data boards is fixed)|  
 | 4. | UI Module: semi-automatic chart generation| This part is the core value of Web3Go, which can help users generate charts based on existing data. We will optimize the UI and make the chart more charming and easy to use. | 
-| 5. | Support more Kusama Token:| We wll support the token analysis for KSM, MOVR, KAR, kUSD, Heiko instead of ERC20 token.|   
+| 5. | Support more Kusama Token:| We will support the token analysis for KSM, MOVR, KAR, kUSD, Heiko instead of ERC20 token.|   
 
 
 
