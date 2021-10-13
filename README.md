@@ -11,12 +11,9 @@
   - [Support](#support)
   - [Team](#team)
 - [:level_slider: Levels](#level_slider-levels)
-  - [:hatching_chick: Level 1 (= InstaGrants)](#hatching_chick-level-1--instagrants)
-  - [:baby_chick: Level 2](#baby_chick-level-2)
-  - [:rooster: Level 3](#rooster-level-3)
 - [:pencil: Process](#pencil-process)
 - [:mailbox_with_mail: Request for Proposals (RFP) Suggestions](#mailbox_with_mail-request-for-proposals-rfp-suggestions)
-- [🛠️ Maintenance Grants](#️-maintenance-grants)
+- [:hammer_and_wrench: Maintenance Grants](#hammer_and_wrench-maintenance-grants)
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
@@ -111,21 +108,21 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 The W3F Grants Program offers different grant levels to help you best depending on your current stage.
 
-### :hatching_chick: Level 1 (= InstaGrants)
+### :hatching_chick: Level 1 (= InstaGrants)<!-- omit in toc -->
 
 - **Target:** Individuals & small teams
 - **Amount:** Up to $10,000
 - **Requirements:** 2 approvals
 - **Benefits:** Feedback during application process and evaluation, introduction to related teams/projects
 
-### :baby_chick: Level 2
+### :baby_chick: Level 2<!-- omit in toc -->
 
 - **Target:** Small teams/start-ups
 - **Amount:** Up to $50,000
 - **Requirements:** 3 approvals
 - **Benefits:** All of the above + [co-promotion](./docs/announcement-guidelines.md#announcement-guidelines), [Grants Program badge](./docs/grant-badge-guidelines.md), fast track to [Substrate Builders Program](https://www.substrate.io/builders-program/)
 
-### :rooster: Level 3
+### :rooster: Level 3<!-- omit in toc -->
 
 - **Target:** Companies/foundations with a proven track record
 - **Amount:** Unlimited
@@ -140,7 +137,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
    1. [Fork](https://github.com/w3f/Grants-Program/fork) this repository.
    2. In the newly created fork, create a copy of the application template ([`applications/application-template.md`](applications/application-template.md)). If you're using the GitHub web interface, you will need to create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/applications/application-template.md) of the template inside the new one. Make sure you **do not modify the template file directly**.
    3. Name the new file after your project: `project_name.md`.
-   4. Fill out the template with the details of your project. The more information you provide, the faster the review. Refer to our [Grant guidelines for most popular grant categories](docs/grant_guidelines_per_category.md) to make sure you have included all necessary deliverables. To get an idea of what a strong application looks like, you can have a look at the following examples:  [1](https://github.com/w3f/Grants-Program/blob/master/applications/project_aurras_mvp_phase_1.md), [2](https://github.com/w3f/Grants-Program/blob/master/applications/project_bodhi.md), [3](https://github.com/w3f/Grants-Program/blob/master/applications/pontem.md), [4](https://github.com/w3f/Grants-Program/blob/master/applications/spartan_poc_consensus_module.md). Naturally, if you're only applying for a smaller grant that only consists of, say, UI work, you don't need to provide as much detail.
+   4. Fill out the template with the details of your project. The more information you provide, the faster the review. Please refer to our [Grant guidelines for most popular grant categories](docs/grant_guidelines_per_category.md) and make sure your deliverables present a similar same level of detail. To get an idea of what a strong application looks like, you can have a look at the following examples:  [1](https://github.com/w3f/Grants-Program/blob/master/applications/project_aurras_mvp_phase_1.md), [2](https://github.com/w3f/Grants-Program/blob/master/applications/project_bodhi.md), [3](https://github.com/w3f/Grants-Program/blob/master/applications/pontem.md), [4](https://github.com/w3f/Grants-Program/blob/master/applications/spartan_poc_consensus_module.md). Naturally, if you're only applying for a smaller grant that only consists of, say, UI work, you don't need to provide as much detail.
    5. Once you're done, create a pull request. The pull request should only contain _one new file_—the Markdown file you created from the template.
    6. You will see a comment template that contains a checklist. You can leave it as is and tick the checkboxes once the pull request has been created. Please read through these items and check all of them.
    7. Sign off on the [terms and conditions](docs/T&Cs.md) presented by the [CLA assistant](https://github.com/claassistantio) bot as a Contributor License Agreement. You might need to reload the pull request to see its comment.
