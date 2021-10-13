@@ -13,7 +13,7 @@
 - [:level_slider: Levels](#level_slider-levels)
 - [:pencil: Process](#pencil-process)
 - [:mailbox_with_mail: Request for Proposals (RFP) Suggestions](#mailbox_with_mail-request-for-proposals-rfp-suggestions)
-- [:hammer_and_wrench: Maintenance Grants](#️hammer_and_wrench-maintenance-grants)
+- [:hammer_and_wrench: Maintenance Grants](#hammer_and_wrench-maintenance-grants)
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
