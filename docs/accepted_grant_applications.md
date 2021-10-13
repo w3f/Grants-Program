@@ -398,3 +398,5 @@
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
 | Matthew Darnell | cScale | [GitHub](https://github.com/MatthewDarnell/cScale) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Web3go](https://web3go.xyz/) | Web3go | [GitHub](https://github.com/web3go-xyz) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+
