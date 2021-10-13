@@ -746,19 +746,16 @@ Verification is achieved via:
 * Video including speech and an Ethereum address linked to your profile clearly shown (yes deepfakes are getting better but this particular method is still hard to falsify),
 * User vouching with one verification from registered profiles required.
 
-##### 2.9.4.1 If so, how is your project different?
+##### 2.9.4.1 How is your project different?
 
-1. Prosopo’s funding structure _can_ be the inverse of other captcha services. We believe it should be possible for Providers to be paid for reliably detecting humans and preventing bots.
+1. Prosopo’s funding structure _can_ be the inverse of other captcha services. We believe it should be possible for Providers to be paid for reliable human verification.
 2. By focusing on human verification, not data labelling, there is an incentive for Providers to find better ways to authenticate real humans. Therefore, we hope to see innovation through the creation of the Prosopo human verification marketplace.
 3. Prosopo has reputation scores that are completely transparent, which means they can be used by the wider Polkadot ecosystem.
 4. Prosopo reputation scores are self-sovereign, and non-transferrable. This means that verification tasks have to be completed by the account in question and cannot be faked by trading reputation.
 5. Prosopo is a blockchain only project. The aim is not to replace existing web 2.0 captcha systems but rather to create a marketplace for Providers to offer their services to the Polkadot ecosystem. \
-
 6. Prosopo enables low trust of the Provider by requiring deposits that are liable to slashing in the event of bad behaviour. The DApp Operator is not required to be trusted as the Dapp User interacts directly with the DApp Operator’s contract. \
-
 7. Prosopo will provide software for anyone to become a self-hosting Provider and will eventually allow captchas to be hosted on IPFS. This offers a high degree of decentralisation.
 8. Prosopo ultimately aims to reduce the need for captchas. This is in contrast to the data labelling business model, where the incentive will always be labelling data for AI Researchers. \
-
 9. Prosopo use is **mandatory**, not opt-in. Users must complete a captcha if a smart contract requires captcha verification.
 
 A review of existing solutions is provided below.
@@ -977,141 +974,37 @@ We expect this list to grow as we develop and deploy our marketing strategy.
 
 ## 5 Development Roadmap :nut_and_bolt:
 
-The table below shows the milestones for the following phases of the project:
+### 5.1 Overview
 
-1. Design - creating high-fidelity designs of the Minimum Viable Product and finalising the architecture and software interfaces to be developed.
-2. Initial setup - creating the initial repositories for the software components as well as an integration repository. We will also set up continuous integration and continuous delivery to a staging server to be used to easily get feedback on developed software.
+* Total Estimated Duration: 5 months
+* Full-Time Equivalent (FTE): 2 FTE
+* Total Costs: 20475 DAI
+
+The phases of the project are as follows.
+
+1. Design - creating high-fidelity designs of the Minimum Viable Product and finalising the architecture and software
+   interfaces to be developed.
+2. Initial setup - creating the initial repositories for the software components as well as an integration repository.
+   We will also set up continuous integration and continuous delivery to a staging server to be used to easily get
+   feedback on developed software.
 3. App development - Building the application systems functionalities.
-4. Delivery - undertaking security audits and various other measures of software quality assurance, deploying to a demoable substrate test network and packaging and releasing software components
+4. Delivery - undertaking security audits and various other measures of software quality assurance, deploying to a
+   demoable substrate test network and packaging and releasing software components
 
-<div style="margin-left:auto; margin-right:auto;">
-<table style="margin-left:auto; margin-right:auto;">
-  <tr>
-   <td>
-<strong>Phase</strong>
-   </td>
-   <td><strong>Milestone</strong>
-   </td>
-   <td><strong>Estimated Weeks</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Design
-   </td>
-   <td>1
-   </td>
-   <td>6
-   </td>
 
-  </tr>
-  <tr>
-   <td>Initial setup
-   </td>
-   <td>2
-   </td>
-   <td>3
-   </td>
-
-  </tr>
-  <tr>
-   <td>App development
-   </td>
-   <td>3
-   </td>
-   <td>10
-   </td>
-
-  </tr>
-  <tr>
-   <td>Delivery
-   </td>
-   <td>4
-   </td>
-   <td>14
-   </td>
-
-  </tr>
-</table>
-</div>
-
-Not all the work outlined in this implementation plan is part of our W3F grant request. We have outlined software that will not be included in this grant in [Section 2.8](#28-deliverables-summary). As we will be concurrently developing our own software and the grant software, we provide our entire project development plan for your understanding and to set expectations on delivery.
+Not all the work outlined in this implementation plan is part of our W3F grant request. We have outlined software that
+will not be included in this grant in [Section 2.8](#28-deliverables-summary). As we will be concurrently developing our
+own software and the grant software, we can provide our entire project development plan for your understanding and to set
+expectations on delivery.
 
 All our schedules assume two full time equivalent software developers / designers (**2 FTE**).
 
-### 5.1 Milestone 1 - design
+### 5.2 Milestone 1 - Prosopo Contract and Provider Service Development
 
-* Total duration: 6 weeks
-* Total estimated hours: 94
-* **Grant ask**: 50 hours
-* **Grant Cost**: 1250 DAI
-
-<table>
-   <thead>
-      <tr>
-            <td>Number</td>
-            <td>Deliverable</td>
-            <td>Specification</td>
-            <td>Hours</td>
-      </tr>
-   </thead>
-<tbody>
-   <tr>
-      <td>0</td>
-      <td>License</td>
-      <td>GPLv3</td>
-      <td>0</td>
-   </tr>
-   <tr>
-      <td>1a.</td>
-      <td>Designs</td>
-      <td>Captcha client Designs</td>
-      <td>4</td>
-   </tr>
-   <tr>
-      <td>1b.</td>
-      <td>Designs</td>
-      <td>User portal Designs</td>
-      <td>10</td>
-   </tr>
-   <tr>
-      <td>2a.</td>
-      <td>Testing</td>
-      <td>Functional Testing Plan</td>
-      <td>20</td>
-   </tr>
-   <tr>
-      <td>2b.</td>
-      <td>Testing</td>
-      <td>Non-Functional Testing Plan (scalability, stress tests, browser support, other)</td>
-      <td>4</td>
-   </tr>
-   <tr>
-      <td>3a.</td>
-      <td>Architecture</td>
-      <td>Final application architecture</td>
-      <td>2</td>
-   </tr>
-   <tr>
-      <td>3b.</td>
-      <td>Architecture</td>
-      <td>Final software component architecture</td>
-      <td>4</td>
-   </tr>
-   <tr>
-      <td>3c.</td>
-      <td>Architecture</td>
-      <td>Detailed implementation plan in Jira</td>
-      <td>6</td>
-   </tr>
-</tbody>
-</table>
-
-### 5.2 Milestone 2 - initial setup
-
-* Total duration: 3 weeks
-* Total estimated hours: 131
-* **Grant ask**: 24 hours
-* **Grant cost**: 600 DAI
+* Estimated duration: 10 weeks
+* FTE: 2
+* Grant ask: 546 hours
+* Grant cost: 13650 DAI
 
 <table>
    <thead>
@@ -1119,301 +1012,142 @@ All our schedules assume two full time equivalent software developers / designer
          <td>Number</td>
          <td>Deliverable</td>
          <td>Specification</td>
-         <td>Hours</td>
       </tr>
    </thead>
    <tbody>
       <tr>
          <td>0a.</td>
-         <td>Prosopo client SDK</td>
-         <td>Prosopo client SDK skeleton</td>
-         <td>2</td>
+         <td>License</td>
+         <td>GPLv3</td>
       </tr>
       <tr>
          <td>0b.</td>
-         <td>Prosopo client SDK</td>
          <td>Documentation</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td>1a.</td>
-         <td>User Portal</td>
-         <td>User Portal skeleton</td>
-         <td>2</td>
-      </tr>
-      <tr>
-         <td>1b.</td>
-         <td>User Portal</td>
-         <td>Documentation</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td>2a.</td>
-         <td>Provider Service SDK</td>
-         <td>Provider Service skeleton</td>
-         <td>2</td>
-      </tr>
-      <tr>
-         <td>2b.</td>
-         <td>Provider Service SDK</td>
-         <td>Documentation</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td>3a.</td>
-         <td><s>Prosopo Substrate Contract</s></td>
-         <td><s>Provider Service skeleton</s></td>
-         <td>0 (Done)</td>
-      </tr>
-      <tr>
-         <td>3b.</td>
-         <td>Prosopo Substrate Contract</td>
-         <td>Documentation</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td>4a.</td>
-         <td>Continuous Integration</td>
-         <td>Prosopo client SDK Github action scripts</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td>4b.</td>
-         <td>Continuous Integration</td>
-         <td>Prosopo Provider SDK Github action scripts</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td>4c.</td>
-         <td>Continuous Integration</td>
-         <td>Prosopo substrate contract Github action scripts</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td>4d.</td>
-         <td>Continuous Integration</td>
-         <td>Integration repository for development environment</td>
-         <td>5</td>
-      </tr>
-   </tbody>
-</table>
-
-### 5.3 Milestone 3 - app development
-
-* Total duration: 10 weeks
-* Total estimated hours: 516
-* Grant ask: 281 hours
-* Grant cost: 7025 DAI
-
-<table>
-   <thead>
-      <tr>
-         <td>Number</td>
-         <td>Deliverable</td>
-         <td>Specification</td>
-         <td>Hours</td>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>0</td>
-         <td>Prosopo client SDK</td>
-         <td>Front End logic, Back end logic, Front End UI, Backend Unit Tests, Blockchain Unit Tests</td>
-         <td>145</td>
-      </tr>
-      <tr>
-         <td>1a.</td>
-         <td>Prosopo Contract compatible with pallets-contract</td>
-         <td>Blockchain external contract function to check Dapp User Reputation</td>
-         <td>20</td>
-      </tr>
-      <tr>
-         <td>1b.</td>
-         <td>Prosopo Contract compatible with pallets-contract</td>
-         <td>Blockchain minimum unit tests</td>
-         <td>14 (Partially Implemented)</td>
-      </tr>
-      <tr>
-         <td>2a.</td>
-         <td>User Portal</td>
-         <td>Blockchain interactions</td>
-         <td>70</td>
-      </tr>
-      <tr>
-         <td>2b.</td>
-         <td>User Portal</td>
-         <td>Blockchain Unit Tests</td>
-         <td>32</td>
-      </tr>
-
-</tbody>
-</table>
-
-
-
-
-
-### 5.4 Milestone 4 - delivery
-
-* Total duration: 14 weeks
-* Total estimated hours: 592
-* **Grant ask**: 464 hours
-* **Grant cost**: 464 hours
-
-<table>
-   <thead>
-      <tr>
-         <td>Number</td>
-         <td>Deliverable</td>
-         <td>Specification</td>
-         <td>Hours</td>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>0a.</td>
-         <td>Quality Control</td>
-         <td>Application security audit</td>
-         <td>40</td>
-      </tr>
-      <tr>
-         <td>0b.</td>
-         <td>Quality Control</td>
-         <td>Prosopo Contract Upgradeability audit</td>
-         <td>40</td>
+         <td>We will provide both inline documentation of the code and a basic tutorial that explains a user can use the Contract docker image and Provider Service docker image. This will demonstrate how to register as a Provider from the command line and host and serve captcha data with a local Substrate Chain (Substrate Contracts Node).</td>
       </tr>
       <tr>
          <td>0c.</td>
-         <td>Quality Control</td>
-         <td>Cryptography audit</td>
-         <td>30</td>
+         <td>Testing Guide</td>
+         <td>Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the project READMEs.</td>
       </tr>
       <tr>
          <td>0d.</td>
-         <td>Quality Control</td>
-         <td>Static code analysis setup (e.g. sonar cube)</td>
-         <td>15</td>
-      </tr>
-      <tr>
-         <td>0d.</td>
-         <td>Quality Control</td>
-         <td>Finalise unit tests - Back End logic (not full coverage)</td>
-         <td>30</td>
+         <td>Docker</td>
+         <td>We will provide two Dockerfile(s) that can be used to test all the functionality delivered with this milestone.</td>
       </tr>
       <tr>
          <td>0e.</td>
-         <td>Quality Control</td>
-         <td>Finalize unit tests - blockchain (not full coverage)</td>
-         <td>30</td>
+         <td>Article</td>
+         <td>We will publish an article that introduces Prosopo and the service it will provide. The contract features will be described in the README.md along with details how to run.  (Content, language and medium should reflect your target audience described above.)</td>
       </tr>
       <tr>
-         <td>1a.</td>
-         <td>Finalisation of CI</td>
-         <td>Prosopo client SDK</td>
-         <td>4</td>
-      </tr>
-      <tr>
-         <td>1b.</td>
-         <td>Finalisation of CI</td>
-         <td>User portal</td>
-         <td>4</td>
-      </tr>
-      <tr>
-         <td>1c.</td>
-         <td>Finalisation of CI</td>
-         <td>Prosopo Provider Service SDK</td>
-         <td>4</td>
-      </tr>
-      <tr>
-         <td>1d.</td>
-         <td>Finalisation of CI</td>
-         <td>Prosopo Substrate Contract</td>
-         <td>4</td>
-      </tr>
-      <tr>
-         <td>2a.</td>
-         <td>Testing</td>
-         <td>Functional testing plan execution</td>
-         <td>80</td>
-      </tr>
-      <tr>
-         <td>2b.</td>
-         <td>Testing</td>
-         <td>Functional testing plan execution fixes</td>
-         <td>80</td>
-      </tr>
-      <tr>
-         <td>2c.</td>
-         <td>Testing</td>
-         <td>Non functional testing plan scripts</td>
-         <td>50</td>
-      </tr>
-      <tr>
-         <td>2d.</td>
-         <td>Testing</td>
-         <td>Non functional testing plan scripts execution</td>
-         <td>10</td>
-      </tr>
-      <tr>
-         <td>2e.</td>
-         <td>Testing</td>
-         <td>Non functional testing plan scripts execution fixes</td>
-         <td>30</td>
-      </tr>
-      <tr>
-         <td>3a.</td>
-         <td>Finalise Documentation</td>
-         <td>Prosopo Client SDK</td>
-         <td>2</td>
-      </tr>
-      <tr>
-         <td>3b.</td>
-         <td>Finalise Documentation</td>
-         <td>Prosopo Provider Service SDK</td>
-         <td>2</td>
-      </tr>
-      <tr>
-         <td>3c.</td>
-         <td>Finalise Documentation</td>
-         <td>Prosopo Substrate Contract</td>
-         <td>2</td>
-      </tr>
-      <tr>
-         <td>4a.</td>
-         <td>Versioning and Releases</td>
-         <td>Prosopo Client SDK</td>
          <td>1</td>
+         <td>Prosopo Contract Development</td>
+         <td>
+            <ul>
+               <li>Contract containing all set / get functions for Prosopo captcha service written in ink!</li>
+               <li>ink! Unit Tests for Prosopo Contract (80% coverage)</li>
+               <li>External ink! contract containing function to check DApp User reputation in Prosopo Contract</li>
+            </ul>
+         </td>
       </tr>
       <tr>
-         <td>4b.</td>
-         <td>Versioning and Releases</td>
-         <td>Prosopo Provider Service SDK</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td>4c.</td>
-         <td>Versioning and Releases</td>
-         <td>Prosopo Substrate Contract</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td>5a.</td>
-         <td>Public package publishing and licensing</td>
-         <td>Prosopo Client SDK</td>
          <td>2</td>
+         <td>Prosopo Provider Service</td>
+         <td>
+            <ul>
+               <li>Command line interface for Providers to:</li>
+                  <ul>
+                     <li>store a local captcha database (MongoDB)</li>
+                     <li>serve captchas to users</li>
+                     <li>check captcha solutions</li>
+                     <li>interact with the Prosopo Contract</li>
+                  </ul>
+               <li>Written in TypeScript</li>
+               <li>TypeScript unit tests (80% coverage)</li>
+            </ul>
+         </td>
       </tr>
       <tr>
-         <td>5b.</td>
-         <td>Public package publishing and licensing</td>
-         <td>Prosopo Provider Service SDK</td>
          <td>2</td>
+         <td>External Contract</td>
+         <td>External contract containing function to check DApp User reputation in Prosopo Contract</td>
       </tr>
+</tbody>
+</table>
 
 
+### 5.3 Milestone 2 - Prosopo Client SDK & Delivery
+
+* Estimated duration: 8 weeks
+* FTE: 2
+* Grant ask: 273 hours
+* Grant cost: 6825 DAI
+
+<table>
+   <thead>
+      <tr>
+         <td>Number</td>
+         <td>Deliverable</td>
+         <td>Specification</td>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>0a.</td>
+         <td>License</td>
+         <td>GPLv3</td>
+      </tr>
+      <tr>
+         <td>0b.</td>
+         <td>Documentation</td>
+         <td>We will documentation that explains how to include the Captcha Client in a DApp website and smart contract. All previous documentation will be reviewed and finalised.</td>
+      </tr>
+      <tr>
+         <td>0c.</td>
+         <td>Testing Guide</td>
+         <td>Core functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests in the project README.</td>
+      </tr>
+      <tr>
+         <td>0d.</td>
+         <td>Docker</td>
+         <td>We will provide Dockerfile(s) that can be used to test all the functionality delivered with this milestone. These come as a single docker-compose file for all three services (Prosopo Client SDK, Provider Service SDK, Prosopo Contract)</td>
+      </tr>
+      <tr>
+         <td>0e.</td>
+         <td>Article</td>
+         <td>We will create a demo website on GitHub pages that shows how to implement the Captcha Client and create an accompanying article about this.</td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td>Prosopo Client SDK</td>
+         <td>This is a frontend JavaScript client presented to a DApp User that will:
+         <ul>
+            <li>check account status</li>
+            <li>request captchas from the Prosopo Provider Service</li>
+            <li>submit solutions</li>
+            <li>validate captcha data with on-chain commitment from Provider</li>
+            <li>validate solution was approved on-chain</li>
+         </ul>
+         Unit tests will be provided. The client will be written in TypeScript.
+         </td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td>Demo Website</td>
+         <td>We will create a demo website on GitHub pages that shows how to implement the Captcha Client.</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td>Integration Repository</td>
+         <td>Scrips to run all components in developer environment</td>
+      </tr>
 </tbody>
 </table>
 
 ## 6 Future Plans
+
+The Prosopo captcha service will be deployed to a Substrate chain (chain to be confirmed) that implements pallet-contracts. This will be the initial version of the service and will help us refine before deploying on additional chains. Initially, Provider registrations will be invite only and will be opened up once the service is deemed to be properly functioning.
 
 ### 6.1 Enhancements
 
@@ -1449,6 +1183,10 @@ This opens up the possibility of distributed reputation stores that each hold th
 ##### 6.1.2.4 Self-referencing
 
 A self-referencing reputation system will be created by assigning some small amount of positive reputation to previously unknown new Dapp Users if they are vouched for by existing Dapp Users with large positive reputations. Vouching may involve some kind of staking.
+
+##### 6.1.2.5 Provider FRAME Pallet
+
+A pallet may be introduced so that the Provider service can become part of the Substrate chain hosting it. This will reduce the need for multiple services to be run by Providers as the Provider Service SDK would not be required, instead replaced by a single substrate node. This strategy may also increase Provider numbers if a major chain adopts the pallet.
 
 ### 6.2 Promotion
 
