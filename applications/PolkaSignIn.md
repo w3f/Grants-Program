@@ -38,7 +38,7 @@ to ask the user to sign such a magic string with injected signers and provides i
 
 - **Service providers** are the dApps that have the sign-in requirement.
 - **Identity providers** are the injected signers which provide the authentication information of the user who holds the wallet.
-- **Resource Owners** are the users who hold the crypto wallets, have registered identities on ENS.
+- **Resource Owners** are the users who hold the self-custody crypto wallets.
 
 #### Workflow
 
@@ -231,6 +231,8 @@ Github accounts:
 The development is not started yet.
 
 ## Development Roadmap :nut_and_bolt:
+
+As the project is small, we only have 1 milestone to be finished.
 
 1. Survey and discuss with related team 20 FTE hours
 2. Create the specification w/o OAuth 20 FTE hours
