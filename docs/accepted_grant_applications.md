@@ -183,7 +183,7 @@
 | [Laminar One](https://laminar.one/) | Reusable Libraries: Runtime Modules + Monitoring Framework | [GitHub](https://github.com/open-web3-stack) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Faber](https://github.com/yxf) | Subwallet: CLI wallet for Polkadot/Substrate | [GitHub](https://github.com/yxf/subwallet) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Equilibrium.co](https://equilibrium.co/) | offchain::ipfs | [GitHub](https://github.com/eqlabs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Snowfork](http://www.snowfork.com/) | Ethereum Bridge | [GitHub](https://github.com/snowfork) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Snowfork](http://www.snowfork.com/) | Ethereum Bridge | [GitHub](https://github.com/snowfork) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Lunie](http://lunie.io/) | Lunie Governance integration | [GitHub](https://github.com/luniehq/lunie) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [LimeChain](https://github.com/LimeChain) | AssemblyScript Runtime | [GitHub](https://github.com/LimeChain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [MVP Workshop](https://mvpworkshop.co/) | Substrate startkit GUI (marketplace for substrate pallets) | [GitHub](https://github.com/MVPWorkshop) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
@@ -342,7 +342,7 @@
 | [Phala Network](https://phala.network/) | Open Node Framework| [GitHub](https://github.com/Tenet-X) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Ruby Protocol](http://rubyprotocol.com/) | Cryptographic Infrastructure for Data Monetization | [GitHub](https://github.com/Ruby-Protocol) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Find Signal Studio PTE. LTD.](https://yieldscan.app/) | YieldScan Phase 2 | [GitHub](https://github.com/yieldscan) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [PolkaMusic](https://polkamusic.io/) | Operating decentralized music businesses on blockchain | [GitHub](https://github.com/polkamusic/PolkaMusic) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [PolkaMusic](https://polkamusic.io/) | Operating decentralized music businesses on blockchain | [GitHub](https://github.com/polkamusic/PolkaMusic) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [element36](https://element36.io) | FIAT on-off-ramp | [GitHub](https://github.com/element36-io) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Zondax](https://zondax.ch/) | Ledger Asset App | [GitHub](https://github.com/Zondax) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Moonbeam Network](https://moonbeam.network/) | Pallet-dPoS for Parachain Staking | [GitHub](https://github.com/PureStake/moonbeam) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
