@@ -4,15 +4,19 @@
   <img src="src/Grants_Program.png" style="width:1300px";>
 </p>
 
+
 - [:wave: Introduction](#wave-introduction)
   - [Guidelines](#guidelines)
   - [Project ideas](#project-ideas)
   - [Support](#support)
   - [Team](#team)
-- [:level_slider: Levels](#level_slider-levels)  
+- [:level_slider: Levels](#level_slider-levels)
+  - [:hatching_chick: Level 1 (= InstaGrants)](#hatching_chick-level-1--instagrants)
+  - [:baby_chick: Level 2](#baby_chick-level-2)
+  - [:rooster: Level 3](#rooster-level-3)
 - [:pencil: Process](#pencil-process)
 - [:mailbox_with_mail: Request for Proposals (RFP) Suggestions](#mailbox_with_mail-request-for-proposals-rfp-suggestions)
-- [Maintenance Grants](#maintenance-grants)
+- [🛠️ Maintenance Grants](#️-maintenance-grants)
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
@@ -44,7 +48,7 @@ Additionally, it must fulfill the following requirements:
 - As a general rule, teams are asked to finish a grant before applying for another one.
 - Lastly, we do not fund projects that actively encourage gambling, illicit trade, money laundering or criminal activities in general.
 
-In addition to the information provided on your application, note that your project will need to comply with our [Guidelines for Milestone Deliverables](docs/milestone-deliverables-guidelines.md). In particular, we require all projects to create documentation that explains how their project works. At a minimum, _written_ documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product. 
+In addition to the information provided on your application, note that your project will need to comply with our [Guidelines for Milestone Deliverables](docs/milestone-deliverables-guidelines.md). In particular, we require all projects to create documentation that explains how their project works. At a minimum, _written_ documentation is required for funding. Tutorials or videos are also helpful for new users to understand how to use your product.
 
 Please also heed our [Announcement Guidelines](docs/announcement-guidelines.md) for grant-related communications.
 
@@ -107,24 +111,25 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 The W3F Grants Program offers different grant levels to help you best depending on your current stage.
 
-### Level 1 (= InstaGrants) :hatching_chick:
-  - **Target:** Individuals & small teams
-  - **Amount:** Up to $10,000
-  - **Requirements:** 2 approvals
-  - **Benefits:** Feedback during application process and evaluation, introduction to related teams/projects
+### :hatching_chick: Level 1 (= InstaGrants)
 
-### Level 2 :baby_chick:
+- **Target:** Individuals & small teams
+- **Amount:** Up to $10,000
+- **Requirements:** 2 approvals
+- **Benefits:** Feedback during application process and evaluation, introduction to related teams/projects
 
-- **Target:** Small teams/start-ups 
+### :baby_chick: Level 2
+
+- **Target:** Small teams/start-ups
 - **Amount:** Up to $50,000
-- **Requirements:** 3 approvals 
-- **Benefits:** All of the above + [co-promotion](./docs/announcement-guidelines.md#announcement-guidelines), [Grants Program badge](./docs/grant-badge-guidelines.md), fast track to [Substrate Builders Program](https://www.substrate.io/builders-program/) 
+- **Requirements:** 3 approvals
+- **Benefits:** All of the above + [co-promotion](./docs/announcement-guidelines.md#announcement-guidelines), [Grants Program badge](./docs/grant-badge-guidelines.md), fast track to [Substrate Builders Program](https://www.substrate.io/builders-program/)
 
-### Level 3 :rooster: 
+### :rooster: Level 3
 
-- **Target:** Companies/foundations with a proven track record 
+- **Target:** Companies/foundations with a proven track record
 - **Amount:** Unlimited
-- **Requirements:** Pitch call + 5 approvals (for > $100k Web3 Foundation Council approval) 
+- **Requirements:** Pitch call + 5 approvals (for > $100k Web3 Foundation Council approval)
 - **Benefits:** All of the above + VC introductions
 
 ## :pencil: Process
@@ -135,7 +140,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
    1. [Fork](https://github.com/w3f/Grants-Program/fork) this repository.
    2. In the newly created fork, create a copy of the application template ([`applications/application-template.md`](applications/application-template.md)). If you're using the GitHub web interface, you will need to create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/applications/application-template.md) of the template inside the new one. Make sure you **do not modify the template file directly**.
    3. Name the new file after your project: `project_name.md`.
-   4. Fill out the template with the details of your project. The more information you provide, the faster the review. To get an idea of what a strong application looks like, you can have a look at the following examples:  [1](https://github.com/w3f/Grants-Program/blob/master/applications/project_aurras_mvp_phase_1.md), [2](https://github.com/w3f/Grants-Program/blob/master/applications/project_bodhi.md), [3](https://github.com/w3f/Grants-Program/blob/master/applications/pontem.md), [4](https://github.com/w3f/Grants-Program/blob/master/applications/spartan_poc_consensus_module.md). Naturally, if you're only applying for a smaller grant that only consists of, say, UI work, you don't need to provide as much detail.
+   4. Fill out the template with the details of your project. The more information you provide, the faster the review. Refer to our [Grant guidelines for most popular grant categories](docs/grant_guidelines_per_category.md) to make sure you have included all necessary deliverables. To get an idea of what a strong application looks like, you can have a look at the following examples:  [1](https://github.com/w3f/Grants-Program/blob/master/applications/project_aurras_mvp_phase_1.md), [2](https://github.com/w3f/Grants-Program/blob/master/applications/project_bodhi.md), [3](https://github.com/w3f/Grants-Program/blob/master/applications/pontem.md), [4](https://github.com/w3f/Grants-Program/blob/master/applications/spartan_poc_consensus_module.md). Naturally, if you're only applying for a smaller grant that only consists of, say, UI work, you don't need to provide as much detail.
    5. Once you're done, create a pull request. The pull request should only contain _one new file_—the Markdown file you created from the template.
    6. You will see a comment template that contains a checklist. You can leave it as is and tick the checkboxes once the pull request has been created. Please read through these items and check all of them.
    7. Sign off on the [terms and conditions](docs/T&Cs.md) presented by the [CLA assistant](https://github.com/claassistantio) bot as a Contributor License Agreement. You might need to reload the pull request to see its comment.
@@ -166,11 +171,12 @@ If you think that we should support the development of certain tools or projects
 
 If you have an idea for a project but lack the technical background to create a detailed outline, you can open an [issue](https://github.com/w3f/Grants-Program/issues/new) instead or add it to the [tech stack](docs/polkadot_stack.md) as a potentially interesting project. However, your idea will have better chances of being implemented if you can provide a project outline such that it can be picked up straight away by a capable team.
 
-## Maintenance Grants
+## 🛠️ Maintenance Grants
 
 Maintenance Grants are yet another idea to get involved with the Polkadot community. If you are a user of an open-source library that has gone out of date, or you simply want to work on new features/fix bugs in these repos, we can support your contributions via a grant. We are happy to award rolling grants on a monthly basis, as long as the work done within each time period is performed to a quality standard deemed satisfactory by the grant evaluators.
 
 The process of applying for a Maintenance Grant is similar to what was already outlined above, but instead of defining very detailed deliverables for each milestone upfront, we will ask you to specify, where possible:
+
 - The repo(s) that need maintenance
 - Outline of why the specific project should continue being supported
 - Broad overview of the features/bugs that need development contributions
@@ -200,6 +206,7 @@ We have Element channels for real-time discussions on Web3 and Polkadot. Join th
 - [Kusama Watercooler](https://app.element.io/#/room/#kusamawatercooler:web3.foundation)
 
 Besides, we also have a **community room for all grant recipients**. Head over to that room to share your experience with other grantees, ask grants-related questions or simply hang out:
+
 - [W3F Grants Community](https://app.element.io/#/room/!XpynPDLusWUWfDpaqr:matrix.org)
 
 ## :rocket: Alternative Funding Sources
