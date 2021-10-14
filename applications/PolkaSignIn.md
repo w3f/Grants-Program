@@ -1,9 +1,5 @@
 # W3F Grant Proposal
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
 * **Project Name:** Polka SignIn 
 * **Team Name:** Litentry 
 * **Payment Address:** 0x37a45AdBb275d5d3F8100f4cF16977cd4B0f9Fb7 (USDT) 
@@ -47,7 +43,7 @@ The workflow works the same with or without OAuth specification. Only the 4th st
 1. A user sends a request to a service provider.
 2. The service provider sends a callback address, the sign-in challenge, and required permissions to the user.
 3. The user connects to the injected signer.
-4. injected signed to sign the challenge, and send the signature together with the public address, an access token specifying the scopes like valid time, back to the callback address. With OAuth Implementation, the access token is compliant with the OAuth standard.
+4. injected signed to sign the challenge, and send the signature together with the public address, an access token specifying the scopes like expire time, back to the callback address. With OAuth Implementation, the access token is compliant with the OAuth standard.
 5. The service provider validates the signature, if successful, the user signed in,
 6. If there is no related user information in the database, the service provider will lookup for the user information from Identity Registrar, if related TEXT records are found for this address, the information will be imported into the service provider’s database.
 
@@ -234,10 +230,16 @@ The development is not started yet.
 
 As the project is small, we only have 1 milestone to be finished.
 
-1. Survey and discuss with related team 20 FTE hours
-2. Create the specification w/o OAuth 20 FTE hours
-3. Create a Javascript/Typescript library 50 FTE hours
-4. Integration with a dApp as first use case 30 FTE hours
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1a. | Research |Survey and discuss with related team 20 FTE hours |  
+| 1b. | Standard Development |Create the specification w/o OAuth 20 FTE hours |  
+| 1c. | Create Library |Create a Javascript/Typescript library 50 FTE hours |  
+| 1d. | Real Use Case |Integration with a dApp as first use case 30 FTE hours |  
 
 The hourly pay rate is 50 USD/hour
 
@@ -247,3 +249,5 @@ In total is 120 hours, and the total payment will be 6000 USD equivalent USDT.
 ## Future Plans
 
 We planned to have a web app for user to manage the access control of the logged platforms, and enable user to curate the profile information in the future. 
+
+It would be great to integrate with popular auth solutions in web technology, like passport (node js), next-auth (next.js).
