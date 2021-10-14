@@ -146,6 +146,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | C++ | [Kagome](https://github.com/soramitsu/kagome)
 | Go | [Gossamer](https://github.com/ChainSafe/gossamer)
 | AssemblyScript |
+| Light Client | [Substrate Connect](https://github.com/paritytech/substrate-connect) |
 
 ### :electric_plug: Network Maintenance Tools
 
