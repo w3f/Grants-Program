@@ -271,7 +271,7 @@
 | [Polkadot Technology Alliance](https://polkachina.org) | Shadows Network: synthetic assets | [GitHub](https://github.com/ShadowsNetwork) | <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [BLDG BLOX](https://bldg.app/) | ESG (Environmental, Social, and Corporate Governance) ratings dashboard | [GitHub](https://github.com/BLDG-BLOX/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [DEIPWORLD](https://deip.world/) | IP Management/Governance Module | [GitHub](https://github.com/DEIPworld) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Deeper.Network](https://deeper.network/) | Micropayments pallet | [GitHub](https://github.com/e2chain-dev/deeper-chain) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Deeper.Network](https://deeper.network/) | Micropayments pallet | [GitHub](https://github.com/e2chain-dev/deeper-chain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Evanesco](https://evanesco.org/) | Private network protocol | [GitHub](https://github.com/Evanesco-Labs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [HugoByte](https://hugobyte.com/) | Project Aurras: Event Manager | [GitHub](https://github.com/HugoByte) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Bounce Protocol](https://bounce.finance/) | Decentralized Auction Protocol | [GitHub](https://github.com/bouncefinance/bounce-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
