@@ -65,7 +65,7 @@ https://github.com/gmajor-encrypt/php-substrate-api
 ### Overview
 
 * **Total Estimated Duration:** 2 months
-* **Total Costs:** 12000 DAI
+* **Total Costs:** 10000 DAI
 
 ### Milestone 1 
 
@@ -77,10 +77,10 @@ https://github.com/gmajor-encrypt/php-substrate-api
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | Simple documentation on how to use this library |
-| 1. | Metadata v14 support | Support substrate latest update https://github.com/paritytech/substrate/pull/8615 |  
-| 2. | HTTP RPC support  | Http Rpc support, include http/websocket |  
-| 3. | Unit test | Including all the unit tests mentioned above  |  
-| 4. | Packagist |  Submit to Packagist for composer to use  |  
+| 1. | HTTP RPC support  | Http Rpc support, include http/websocket |  
+| 2. | sr25519  | sr25519,ed25519 bindings |  
+| 2. | Unit test | Including all the unit tests mentioned above  |  
+| 3. | Packagist |  Submit to Packagist for composer to use  |  
 
 
 ### Milestone 2 
