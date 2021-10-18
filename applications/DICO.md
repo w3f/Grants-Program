@@ -137,7 +137,7 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 ### Contact
 
 * **Contact Name:** gogomath
-* **Contact Email:** gomath@protonmail.com
+* **Contact Email:** gogomath@outlook.com
 * **Website:** https://dico.io/
 
 ### Legal Structure
@@ -210,13 +210,13 @@ To assist you in defining it, we have created a document with examples for some 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0 | License | Apache 2.0 |
-| 1.a  | Substrate module: KYC pallet | Includes identity authentication service(IAS), KYC users, and supervisor. responsible for providing users with a decentralized KYC certification service.|
-| 1.b | Substrate module: ICO pallet| Apply for ICO and council review for the project party. |  
-| 1.c | Substrate module: DAO pallet| Strict control of the progress and process of the project. |  
-| 2. | Integration with front-end(dapp) |integrate our existing front end to the finalized KYC,ICO,DAO module.
-|  
-| 3. | Testing and Documentation   | Test and document the modules we write |   
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and combined with screenshots to show how to use. include pallets are KYC, ICO, DAO|
+| 0c. | Testing Guide	 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 1.  | Substrate module: KYC pallet | Includes identity authentication service(IAS), KYC users, and supervisor. responsible for providing users with a decentralized KYC certification service.|
+| 2. | Substrate module: ICO pallet| Apply for ICO and council review for the project party. |  
+| 3. | Substrate module: DAO pallet| Strict control of the progress and process of the project. |  
+| 4. | Integration with front-end(dapp) |integrate our existing front end to the finalized KYC,ICO,DAO module.|     
 
 ### Milestone 2 — Implement Swap, Oracle Modules
 
@@ -226,10 +226,13 @@ To assist you in defining it, we have created a document with examples for some 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0 | License | Apache 2.0 |
-| 1.a  | Substrate module: Swap module| Provide an exchange agreement for tokens and an interest-generating method for collateralized tokens into the liquidity pool for disposable tokens.|
-| 1.b | Substrate module: Oracle module| Provide an oracle for the platform. |  
-| 2. | Testing and Documentation   | Test and document the modules we write | 
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and combined with screenshots to show how to use.include pallets are Swap, Oracle|
+| 0c. | Testing Guide	 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
+| 1.  | Substrate module: Swap module| Provide an exchange agreement for tokens and an interest-generating method for collateralized tokens into the liquidity pool for disposable tokens.|
+| 2. | Substrate module: Oracle module| Provide an oracle for the platform. |  
+
 
 ### Milestone 3 — Additional features
 
@@ -237,9 +240,19 @@ To assist you in defining it, we have created a document with examples for some 
 * **FTE:**  6
 * **Costs:** 12,000 USD
 
+In this Milestone, we will try the combination and derivation of the ico module and other popular areas.
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0 | License | Apache 2.0 |
-| 1  | all modules integration with front-end  | integrate our existing front end to the finalized substrate backend.|
-| 2 | Tutorial| We will create an wiki document and some videos that will explain how users can start using the platform for KYC,ICO and DAO module . Additionally, we will also create tutorials for users to use swap and staking. |
-| 3 | Attract users| We will plan some activities for users to join in. let users find what they want|  
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and combined with screenshots to show how to use. include pallets are AMM, Farm|
+| 0c. | Testing Guide	 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker-compose | We will provide a docker-compse.yml that can be used to test parachain version node delivered with this milestone.in this version, users will be invited to this testnet |
+| 1. | Substrate module: Farm module| The farm module is used to mortgage assets (including general assets and liquid assets) and harvest the native assets of dicochain. | 
+| 2.  | Substrate module: NFT module| Commemorative NFT for various events.|
+| 3.  | Lending module(research oriented)| Innovation combining ICO and lending.|
+
+
+
+
+ 
