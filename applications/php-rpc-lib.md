@@ -18,10 +18,43 @@ I have already developed https://github.com/gmajor-encrypt/php-scale-codec in th
 
 ### Project Details
 
+* Sr 25519 
 
-* Metadata v14 support
+Since PHP does not have an encryption library for sr25519
+
+Will provide the following interfaces
+
+1. SR25519.NewKeypairFromSeed(seed)
+2. SR25519.sign(message), 
+3. SR25519.verify(message, signature)
+
+
 * Send transaction
-* Read HTTP/Websocket to RPC endpoints
+
+Example
+```php
+$api = new SubstrateRpc("websocket_or_http_url");
+$signer = new SubstrateRpc\Util\Keyring\Signer("privatekey");// or HD
+$api->setSigner($signer);
+$tx = $api->tx->balances->transfer("to_address", 10000);
+$tx->signAndSend();
+```
+
+* Read/subscribe HTTP/Websocket to RPC endpoints
+
+Example
+
+```php
+$api = new SubstrateRpc("websocket_or_http_url");
+$api->rpc->System->Heath();
+
+# or read storage 
+$api = new SubstrateRpc("websocket_or_http_url");
+$api->rpc->state->System->Account("/ALICE");
+
+```
+
+* Support all substrate RPC method https://polkadot.js.org/docs/substrate/rpc
 
 ### Ecosystem Fit
 
@@ -71,16 +104,16 @@ https://github.com/gmajor-encrypt/php-substrate-api
 
 * **Estimated duration:** 1 month
 * **FTE:**  1
-* **Costs:** 6,000 USD
+* **Costs:** 5000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | Simple documentation on how to use this library |
 | 1. | HTTP RPC support  | Http Rpc support, include http/websocket |  
-| 2. | sr25519  | sr25519,ed25519 bindings |  
-| 2. | Unit test | Including all the unit tests mentioned above  |  
-| 3. | Packagist |  Submit to Packagist for composer to use  |  
+| 2. | sr25519  | sr25519 bindings |  
+| 3. | Unit test | Including all the unit tests mentioned above  |  
+| 4. | Packagist |  Submit to Packagist for composer to use  |  
 
 
 ### Milestone 2 
@@ -96,8 +129,8 @@ https://github.com/gmajor-encrypt/php-substrate-api
 | 1. | Extrinsic encode | Extrinsic encode |  
 | 2. | Signed Extrinsic send | Send transaction support, include ed25519&sr25519|  
 | 3. | substrate rpc api | support all substrate rpc like https://polkadot.js.org/docs/substrate/rpc |  
-| 3. | Unit test | Including all the unit tests mentioned above  |  
-| 4. | Packagist |  Submit to Packagist for composer to use  |  
+| 4. | Unit test | Including all the unit tests mentioned above  |  
+| 5. | Packagist |  Submit to Packagist for composer to use  |  
 
 
 ## Future Plans
