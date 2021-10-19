@@ -4,7 +4,7 @@
 * **Team Name:** [SuperColony](https://github.com/Supercolony-net)
 * **Payment Address:** ERC 20 ADDRESS:
   0x112C9eDB60D16f9Cf501721b03B9D0F275682213
-* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3, It is follow-up grant for [first grant](https://github.com/w3f/Grants-Program/pull/497).
+* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2, It is follow-up grant for [first grant](https://github.com/w3f/Grants-Program/pull/497).
 
 
 ## Project Overview :page_facing_up:
@@ -13,9 +13,7 @@ It is an application for a follow-up grant. The [initial grant](https://github.c
  - [Openbrush Milestone 1 delivery report](https://github.com/w3f/Grant-Milestone-Delivery/pull/249)
  - [Openbrush Milestone 2 delivery report](https://github.com/w3f/Grant-Milestone-Delivery/pull/261)
 
-http://docs.openbrush.io/
-
-This grant aims to cover milestones 3-6.
+This grant aims to cover milestones 3-5.
 
 ### Overview
 The mission of this project is to make ink! usable and facilitate WASM ecosystem adoption. 
@@ -162,9 +160,9 @@ PSP - https://github.com/w3f/PSPs/pull/25
 
 **We have decided to describe a full roadmap of an OpenBrush here, with estimates. However, the funding we request at this stage is for milestones 3-6.**
 
-* **Total Estimated Duration:** 16 weeks(+ time for approving changes in ink!, substrate, and PSP repositories)
+* **Total Estimated Duration:** 10 weeks(+ time for approving changes in ink! and PSP repositories)
 * **Full-Time Equivalent (FTE):** 2.5
-* **Total Costs:** 72,500 USD
+* **Total Costs:** 39,000 USD
 
 ### Previous work
 
@@ -210,15 +208,15 @@ PSP - https://github.com/w3f/PSPs/pull/25
 
 #### Milestone 3. Reduce the size of Erc20 contract.
 
-* **Estimated Duration:** 2 weeks
+* **Estimated Duration:** 3 weeks
 * **FTE:**  1.5
-* **Costs:** 7,500 USD
+* **Costs:** 9,000 USD
 
 | Number | Deliverable                                              | Specification                                                                                                                             |
 | -----  | -----------                                              | -------------                                                                                                                             |
 | 0a.    | License                                                  | MIT                                                                                                                                       |
 | 0b.    | Documentation                                            | We will provide a report of how much each optimization reduced the size. |
-| 1.     | Reduce the size of Erc20 contract                        | Now the most critical moment with ink! is the huge size of contracts. [This issue](https://github.com/paritytech/substrate/issues/9354) described the problem very well. The parity team works in this direction, and we want to help with ink! side. The ink! team created issue [906](https://github.com/paritytech/ink/issues/906), [916](https://github.com/paritytech/ink/issues/916) and [910](https://github.com/paritytech/ink/issues/910). We want to briefly(not full change, only minimal changes to reduce the size) implement them and provide a report. Based on this report, the ink! team can decide how better to implement them and which part is more critical. During the implementation, we will build examples with our version of ink! (also maybe we will modify some sub-crates). So the output of this work is a report and custom version of ink!. The code can be reused, or if ink! team agrees we can try to implement these issues by ourselves later as separate work.             |
+| 1.     | Reduce the size of Erc20 contract                        | Now the most critical moment with ink! is the huge size of contracts. [This issue](https://github.com/paritytech/substrate/issues/9354) described the problem very well. The parity team works in this direction, and we want to help with ink! side. The ink! team created issue [906](https://github.com/paritytech/ink/issues/906), [916](https://github.com/paritytech/ink/issues/916) and [910](https://github.com/paritytech/ink/issues/910). We want to briefly(not full change, only minimal changes to reduce the size) implement them and provide a report(re-working data structure, reducing monomorphization, using dynamic dispatch in some cases). Based on this report, the ink! team can decide how better to implement them and which part is more critical. During the implementation, we will build examples with our version of ink! (also maybe we will modify some sub-crates). So the output of this work is a report and custom version of ink!. The code can be reused, or if ink! team agrees we can try to implement these issues by ourselves later as separate work.             |
 
 #### Milestone 4. Pre-release - Standardization of tokens contracts. Implement extensions for contracts. Documentation.
 
@@ -250,23 +248,9 @@ PSP - https://github.com/w3f/PSPs/pull/25
 | 2.     | Add support of default implementation in trait definition on ink! level  | We will help with the support of default implementation inside of trait definition. It will require discussions with the ink! team to define the best way how to implement that without conflicts with their future changes.  |
 | 3.     | Refactor of implementation according changes in ink!                     | After changes in ink! we will refactor the code of library.  |
 
-#### Milestone 6 - Support of upgradable contracts
-
-* **Estimated Duration:** 7 weeks(time depends on conversations in ink! and `contract-pallet` repositories)
-* **FTE:**  2.5
-* **Costs:** 35,000 USD
-
-| Number | Deliverable                      | Specification                                                                                                                             |
-| -----  | -----------                      | -------------                                                                                                                             |
-| 0a.    | License                          | MIT                                                                                                                                       |
-| 0b.    | Documentation                    | We will provide inline documentation, example of upgradable contracts. |
-| 0c.    | Testing Guide                    | We will add tests to cover upgradability of contracts.                                                           |
-| 1.     | Implement delegated call         | We will find and provide the idea of how [delegeted call](https://docs.soliditylang.org/en/v0.4.21/introduction-to-smart-contracts.html#delegatecall-callcode-and-libraries) can be implemented in `contract-pallet`. Help with it's implementation.            |
-| 2.     | Help with fallback function      | We will help with implementation of [fallback function](https://github.com/paritytech/ink/issues/739) if it is not ready. |
-| 3.     | Creation of Proxy contracts      | We will provide an alternative of [Proxy](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/proxy) contracts. |
-| 4.     | Documentation and examples       | We will add examples and documentation on how the upgradable contract must be implemented.  |
-
 ## Future Plans
+
+After, this Grant, we will create a grant related to upgradable contracts.
 
 We're going to make a strong impact in the community, making ink! simple and convenient for developers.
 - Expertise sharing
