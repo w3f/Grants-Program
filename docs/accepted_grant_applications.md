@@ -170,7 +170,7 @@
 | [Soramitsu](https://soramitsu.co.jp/) | Hyperledger Iroha Bridge | [GitHub](https://github.com/sora-xor/polkaswap-web) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [LimeChain](https://github.com/LimeChain) | AssemblyScript SCALE Codec | [GitHub](https://github.com/LimeChain/as-scale-codec) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Insight](https://insightfellows.com/) | Load Balanced Endpoints | [GitHub](https://github.com/insight-w3f/terragrunt-polkadot) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Ethworks](https://ethworks.io/) | Polkadot.{js} Desktop Application | [GitHub](https://github.com/EthWorks/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Ethworks](https://ethworks.io/) | Polkadot.{js} Desktop Application | [GitHub](https://github.com/EthWorks/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Usetech](http://usetech.com/blockchain.html) | NFT Tracking Module | [GitHub](https://github.com/usetech-llc/nft_parachain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Chevdor](https://www.chevdor.com/) | Polkabot | [GitHub](https://github.com/chevdor) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Aleksandr Krupenkin](https://github.com/akru) | Haskell Web3 library | [GitHub](https://github.com/airalab/hs-web3) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
