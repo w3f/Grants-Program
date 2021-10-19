@@ -98,7 +98,7 @@ https://github.com/gmajor-encrypt/php-substrate-api
 ### Overview
 
 * **Total Estimated Duration:** 2 months
-* **Total Costs:** 10000 DAI
+* **Total Costs:** 9000 DAI
 
 ### Milestone 1 
 
