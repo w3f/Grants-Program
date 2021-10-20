@@ -273,7 +273,7 @@
 | [DEIPWORLD](https://deip.world/) | IP Management/Governance Module | [GitHub](https://github.com/DEIPworld) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Deeper.Network](https://deeper.network/) | Micropayments pallet | [GitHub](https://github.com/e2chain-dev/deeper-chain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Evanesco](https://evanesco.org/) | Private network protocol | [GitHub](https://github.com/Evanesco-Labs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [HugoByte](https://hugobyte.com/) | Project Aurras: Event Manager | [GitHub](https://github.com/HugoByte) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [HugoByte](https://hugobyte.com/) | Project Aurras: Event Manager | [GitHub](https://github.com/HugoByte) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Bounce Protocol](https://bounce.finance/) | Decentralized Auction Protocol | [GitHub](https://github.com/bouncefinance/bounce-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
 # 2021
