@@ -114,30 +114,16 @@ once RPC endpoints are consumed package it and make it usable for other applicat
 ```bash
 composer require neha0921/substrate-interface-package
 ```
-
-For each milestone,
-
-* make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md).
-* include the amount of funding requested _per milestone_.
-* include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-* provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-* commit to providing Dockerfiles for the delivery of your project.
-* indicate milestone duration as well as number of full-time employees working on each milestone.
-* **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
 
 * **Total Estimated Duration:** 15 days
-* **Full-Time Equivalent (FTE):**  55 FTE
+* **Full-Time Equivalent (FTE):**  2 FTE
 * **Total Costs:** 5500 USD
 
 ### Milestone 1 Example — Implement Substrate Modules
 
 * **Estimated duration:** 10 days
-* **FTE:**  45
+* **FTE:**  2
 * **Costs:** 5000 USD
 
 | Number | Deliverable | Specification |
@@ -152,7 +138,7 @@ To assist you in defining it, we have created a document with examples for some 
 ### Milestone 2 Example — Additional features
 
 * **Estimated Duration:** 5 days
-* **FTE:**  10
+* **FTE:**  1
 * **Costs:** 500 USD
 
 | Number | Deliverable | Specification |
