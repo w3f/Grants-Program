@@ -198,9 +198,9 @@ To assist you in defining it, we have created a document with examples for some 
 
 ### Overview
 
-* **Total Estimated Duration:**  3 months
+* **Total Estimated Duration:**  1 months
 * **Full-Time Equivalent (FTE):**  6 FTE
-* **Total Costs:** 30k USD
+* **Total Costs:** 12k USD
 
 ### Milestone 1 — Implement KYC, ICO, DAO Modules
 
@@ -211,48 +211,12 @@ To assist you in defining it, we have created a document with examples for some 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and combined with screenshots to show how to use. include pallets are KYC, ICO, DAO|
-| 0c. | Testing Guide	 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1.  | Substrate module: KYC pallet | Includes identity authentication service(IAS), KYC users, and supervisor. responsible for providing users with a decentralized KYC certification service.|
-| 2. | Substrate module: ICO pallet| Apply for ICO and council review for the project party. |  
-| 3. | Substrate module: DAO pallet| Strict control of the progress and process of the project. |  
-| 4. | Integration with front-end(dapp) |integrate our existing front end to the finalized KYC,ICO,DAO module.|     
-
-### Milestone 2 — Implement Swap, Oracle Modules
-
-* **Estimated duration:** 1 month
-* **FTE:**  6
-* **Costs:** 6,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and combined with screenshots to show how to use.include pallets are Swap, Oracle|
 | 0c. | Testing Guide	 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
-| 1.  | Substrate module: Swap module| Provide an exchange agreement for tokens and an interest-generating method for collateralized tokens into the liquidity pool for disposable tokens.|
-| 2. | Substrate module: Oracle module| Provide an oracle for the platform. |  
-
-
-### Milestone 3 — Additional features
-
-* **Estimated Duration:** 1 month
-* **FTE:**  6
-* **Costs:** 12,000 USD
-
-In this Milestone, we will try the combination and derivation of the ico module and other popular areas.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and combined with screenshots to show how to use. include pallets are AMM, Farm|
-| 0c. | Testing Guide	 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker-compose | We will provide a docker-compse.yml that can be used to test parachain version node delivered with this milestone.in this version, users will be invited to this testnet |
-| 1. | Substrate module: Farm module| The farm module is used to mortgage assets (including general assets and liquid assets) and harvest the native assets of dicochain. | 
-| 2.  | Substrate module: NFT module| Commemorative NFT for various events.|
-| 3.  | Lending module(research oriented)| Innovation combining ICO and lending.|
-
-
-
-
- 
+| 0e. | Docker-compose | We will provide a docker-compse.yml that can be used to test parachain version node delivered with this milestone.in this version, users will be invited to this testnet |
+| 1.  | Substrate module: KYC pallet | Includes identity authentication service(IAS), KYC users, and supervisor. responsible for providing users with a decentralized KYC certification service.|
+| 2. | Substrate module: ICO pallet| Apply for ICO and council review for the project party. |  
+| 3. | Substrate module: DAO pallet| Strict control of the progress and process of the project. |  
+| 4. | Integration with front-end(dapp) |integrate our existing front end to the finalized KYC,ICO,DAO module.| 
+| 5.  | Lending module(research oriented)| Innovation combining ICO and lending.|    
