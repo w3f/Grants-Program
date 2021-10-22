@@ -211,7 +211,7 @@ To assist you in defining it, we have created a document with examples for some 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and combined with screenshots to show how to use.include pallets are Swap, Oracle|
+| 0b. | Documentation | We will provide both inline documentation of the code and combined with screenshots to show how to use.include pallets are KYC, ICO,DAO|
 | 0c. | Testing Guide	 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
 | 0e. | Docker-compose | We will provide a docker-compse.yml that can be used to test parachain version node delivered with this milestone.in this version, users will be invited to this testnet |
