@@ -129,9 +129,8 @@ composer require neha0921/substrate-interface-package
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **example** that explains how a user can use this library. A documentation containing class, function details.|
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
 | 1. | substrate RPC enpoint integration | Integrate all substrate RPC endpoints in PHP to make them available in other PHP applications |  
 
 
@@ -143,8 +142,7 @@ composer require neha0921/substrate-interface-package
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | 1.  | packaging application for integration | make packagist of this integration to enable composer installation | 
 
 ## Future Plans
