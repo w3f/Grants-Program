@@ -78,7 +78,6 @@ The names of these extrinsics are tentative, but the basic functions we expose t
   * request_get_bytes: request that some content identified by {CID, Owner}
   * request_storage: called by a node to request that a CID be stored for some duration
   * check_availability: Query the DHT to check if the CID is available
-  * report_content: report a cid and multiaddr along with a reason and a token amount
 * OCW only:
   * submit_ipfs_results: submit ipfs results on chain
 
@@ -151,8 +150,10 @@ To eject (a copy of) data from the network, authorized nodes in parachains invok
 
 The parachain connected to Iris must implement a [custom rpc endpoint](#custom-rpc-endpoints) that can receive file data from authorized nodes in Iris. When an OCW processes the command, it verifies that the requesting node owns a ticket to the owned CID. After successful verification, the OCW calls the RPC endpoint, passing the file bytes as the request body.
 
-#### Governance and Cleanup
-Due to the nature of decentralization, there is a wide berth for potential abuse of the network. Particularly, for a storage network, this could manifest as leveraging the network to store or share illegal or abusive content (e.g. hate speech). In order to counteract this, Iris lets nodes report or flag content through an extrinsic, providing a cid, multiaddr, as well as a reason for reporting the content. When certain conditions are met, nodes who hold the content are incentivized to remove it from their IPFS node and punished if they do not.
+#### Governance, Moderation and Cleanup
+**DISCLAIMER**: Governance is not in the scope of this proposal, however, we want to stress that governance is one of the main focuses of future work after completion and will become one of the main features of Iris going forward. Due to the importance of this topic, we mention it here.
+
+Due to the nature of decentralization, there is a wide berth for potential abuse of the network. Particularly, for a storage network, this could manifest as leveraging the network to store or share illegal or abusive content (e.g. hate speech). In order to counteract this, Iris lets nodes report or flag content through an extrinsic, providing a cid, multiaddr, as well as a reason for reporting the content. When certain conditions are met, nodes who hold the content are incentivized to remove it from their IPFS node and punished if they do not. 
 
 Iris has two flavors of governance: Content governance (moderation) as well as membership governance.
 - content governance
@@ -269,88 +270,96 @@ I am a software engineer who enjoys problem-solving and learning new languages a
 
 ## Development Roadmap :nut_and_bolt:
 
-### Milestone 1 — The Iris Runtime
+Guidelines/Assumptions:
+- We always remain in sync with the latest substrate master branch and use the latest FRAME version.
+- We maintain a minimum of 85% coverage on new code.
 
-* **Estimated duration:** 6 weeks
+### Milestone 1 — The Iris Runtime (Foundations of the DSN)
+
+* **Estimated duration:** 4 weeks
 * **FTE:**  1.5
 * **Costs:** 8,000 DAI
 
-**Goal**: The first milestone delivers the Iris decentralized storage network. Some of the functionality delivered as part of this milestone will be shortlived within Iris, as it will be moved into parachains in the subsequent milestone. We deliver the functionality to add, store, and retrieve data as part of this milestone. We intend to be able to provide end to end testing scenarios in which a node adds owned data, stores it, and subsequently retrieves it.
-
-**Note**: Data privacy/tickets is not present in this iteration - all data is retrievable by anyone. 
+**Goal**: The first milestone delivers a minimally functional, isolated version of Iris. Some of the functionality delivered as part of this milestone will be shortlived within Iris, as it will be moved into parachains in subsequent milestones. We deliver the functionality to add and retrieve data as part of this milestone. We intend to be able to provide end to end testing scenarios in which a node adds owned data, purchases access to owned data, and retrieves it. We also introduce the idea of the "ticket" to control access to data as well as functionality to verify tickets when processing requests to deliver data.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can setup an Iris node, join the private network, and provide storage capacity. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We intend to deliver fully functional tests along with each deliverable (which warrants testing). We intend to achieve a minimum of 85% coverage on new code. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish a bi-weekly log explaining what was achieved as part of the grant. This will take the form of a blog, whose url is TBD.
-| 1. | Genesis State and the Private IPFS Network | Create a private IPFS network and encode initial bootstrap nodes in the genesis block |  
-| 2. | Substrate module: IPFS Module | We build the module used by storage providers in Iris to ingest and eject data from the private IPFS network and to deliver data to sources. |
-| 3. | Substrate module: IPFS Module | We enhance the IPFS module to let nodes request storage and to let nodes form storage pools. We deliver a rudimentary pool reward distibution scheme. |
-| 3. | Custom RPC Endpoint | We implement the custom RPC endpoint to retreive data from OCWs. |
-| 4. | User Interface | We build a simple UI using polkadot.js and js-ipfs to provide an easy mechanism to test data ingestion and retreival from the network and form the basis for a potential use case or integration guide/example. |
+| 0e. | Article | We will publish a weekly log explaining what was achieved as part of the grant, as well as any additional learnings that we deem important throughout development. https://medium.com/iris-blockchain |
+| 0f. | Update offchain::ipfs to latest substrate master  | Sync the iris fork of the offchain::ipfs runtime to the latest substrate master branch. (work is completed but needs review) |
+| 1. | Genesis State and the Private IPFS Network | Create a private IPFS network and encode initial bootstrap nodes in the iris genesis block. (estimated duration: 0.5 weeks) |  
+| 2. | Substrate module: iris Runtime Module | We build the module used by nodes in Iris to ingest and eject data from the private IPFS network. The pallet's functionality includes: creating requests to add and retreive data, to create, purchase, and validate [tickets](#data-structures), and to allow OCWs to process requests initiated by nodes (i.e. call IPFS and publish results on chain). The outcome is for nodes to be able to create owned data and to monetize access to that data via the ticket asset. (estimated duration: 2 weeks) |
+| 3. | Custom RPC Endpoint | We implement the custom RPC endpoint to retreive data from OCWs as defined [here](#custom-rpc-endpoints). (estimated duration: 0.5 weeks) |
+| 4. | User Interface | We build a UI using react, polkadot.js, and js-ipfs to provide an easy way to test data ingestion and retrieval from the network and to form the basis for a potential use case and integration guide/example. This minimally functional UI will let users add data to the network, view and purchase tickets, as well as download data retrieved from the network. (estimated duration: 1.5 weeks) |
 
-### Milestone 2 - Parachain-ing
+### Milestone 2 - Iris as a Decentralized Pinning Service
+
+* **Estimated duration:** 4 weeks
+* **FTE:**  1.5
+* **Costs:** 8,000 DAI
+
+**Goal**: The second milestone enables a decentralized and incentivized IPFS pinning service in Iris.
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can setup an Iris node, join the private network, and provide storage capacity. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We intend to deliver fully functional tests along with each deliverable (which warrants testing). We intend to achieve a minimum of 85% coverage on new code. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a weekly log explaining what was achieved as part of the grant, as well as any additional learnings that we deem important throughout development. https://medium.com/iris-blockchain |
+| 1. | Substrate module: iris Runtime Module | We enhance the iris module to let nodes request storage, to form storage pools and to be rewarded using the rudimentary pool reward distibution scheme as described [above](#data-retrieval-and-delivery) (We intend to elaborate on this process in depth as part of deliverable 0b.). The outcome of this deliverable is a fully decentralized storage network achieved by through a decentralized IPFS pinning service (estimated duration: 3 weeks) |
+| 2. | User Interface | We will iterate on the previous user interface to create two separate functionalities in the UI. Firstly, a "data-owner/consumer" facing page which let nodes view the availability of specific assets (number of online nodes pinning some CID), to request storage of data and to pay nodes for storage. The "data-owner/consumer" view swallows the of the functionality built in milestone 1 as well. Secondly, we build a "storage-provider" facing user interface, which displays to nodes running the embedded ipfs node their DHT stats and their rewards for pinning CIDS.  (estimated duration: 1.5 weeks) |
+
+**NOTE**: Future development will include the ability to configure the embedded IPFS node from the UI, but for the time being we assume a static IPFS configuration is used in all nodes.
+
+### Milestone 3 - Parachaining: Creating a parachain and pallet to use XCM to interact with Iris
 
 * **Estimated Duration:** 6 weeks
 * **FTE:**  1.5
 * **Costs:** 8,000 DAI
 
-**Goal**: The second milestone delivers an Iris-compatible parachain and enhancements to Iris to validate tickets.
+**Goal**: The third milestone delivers an Iris-compatible parachain and enhancements to Iris to handle XCM messages. The outcome of this milestone is to separate the management and monetization of access to iris assets to a parachain, which can then use iris-backed assets and the "box-office" pallet to manage and sell access to assets in iris with the ticket entity. We do this by building functionality in the box-office pallet allowing parachain nodes to add data to iris, create iris-backed assets, define ticket costs and details, and finally to let ticket holders teleport their tickets to iris, where they can finally be used and verified. At the end of this milestone, iris nodes (i.e. storage providers) themselves will no longer be able to inject or eject data from Iris and is only responsible for processing commands added by parachain nodes (i.e. they **can not** add requests to be processed by OCWs, though the OCW itself can of course still interact with IPFS). 
+
+**The parachain will enable a decentralized dropbox-like application.** We intend this use case to serve as an example of how to make an iris-compatible parachain, and thus the use case is intended to be as general as possible. 
+
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can create and run the iris-compatible parachain as well as document the process through which interactions with Iris are made and verified. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We intend to deliver fully functional tests along with each deliverable (which warrants testing). We intend to achieve a minimum of 85% coverage on new code. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish a bi-weekly log explaining what was achieved as part of the grant. This will take the form of a blog, whose url is TBD.
-| 1. | The Parachain | Create a parachain based on the minimal configuration shown in the overview. This will contain the xcm, balances, and box-office pallets. |  
-| 2. | Substrate module: Box-Office pallet | We build the box-office frame pallet which uses XCM to interact with Iris. This includes teleporting assets from the parachain to Iris and creating iris-backed assets in the parachain. |
-| 3. | Custom RPC endpoint | migrate the implementation from Iris to the parachain |
-| 4. | Substrate module: IPFS pallet | We enhance the IPFS pallet to validate tickets when data is requested. |
-| 5. | Testing | Setup and document a local test environment with a relay chain. |
-| 6. | User Interface | We iterate on the UI for use by the parachain. |
-
-### Milestone 3 - Governance
-
-* **Estimated Duration:** 4 weeks
-* **FTE:**  1.5
-* **Costs:** 5,000 DAI
-
-**Goal**: This milestone enhances the Iris runtime to provide means for users to report data and to achieve a form a distributed moderation within Iris.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish a bi-weekly log explaining what was achieved as part of the grant. This will take the form of a blog, whose url is TBD.
-| 1. | Substrate module: Governance Module | We build the module used by Iris to purge or block data or accounts from the network. |
-| 2. | User Interface | We continue to iterate on the UI for both Iris node and the parachain. The goal will be to display a working example of how to integrate with Iris and a potential use case: a decentralized digital content marketplace. |
+| 0e. | Article | We will publish a weekly log explaining what was achieved as part of the grant, as well as any additional learnings that we deem important throughout development. https://medium.com/iris-blockchain |
+| 1. | Creating a Parachain and Relay chain | We create a parachain and relay chain which will be used to communicate with Iris. This is purely setup/creation of both chains and integration of parachains with the relay chain. (estimated duration: 1 week) |
+| 2a. | Substrate module: Box-Office Runtime Module | We build the box-office frame pallet (**used in the parachain**) which uses XCM to interact with Iris. This includes using XCM to send instructions to transfer tokens to their derived-address in Iris, adding and storing data in Iris, creating iris-backed assets in the parachain, purchasing tickets, and teleporting ticket assets from the parachain to Iris. (estimated duration: 3 weeks) |
+| 2b. | Substrate module: iris Runtime Module | We update the iris runtime module (as built in milestone 1) to retrieve tickets from the holding register (as placed there by the parachain node). (estimated duration: 1.5 weeks) |
+| 3. | Custom RPC endpoint | Migrate the implementation of the custom rpc endpoint and associated tests from Iris to the parachain. (estimated duration: 0.2 weeks) |
+| 4. | Testing | Setup and document a local test environment with the relay chain to enable cross-chain testing. (estimated duration: 0.5 weeks) |
+| 5. | User Interface | We iterate on the UI for use by the parachain. Here, we split some of the features in the milestone-1 version of the UI into two pieces, one for use by Iris nodes and one for parachain nodes. The **iris-facing user interface** is simply the "storage-provider" view of the UI as defined in the previous milestone. The "data-owner/consumer" portion of the already developed UI will become the **parachain-facing user interface**, which takes the form of a decentralized dropbox-like application. In this iteration of the UI nodes can add, view metadata/ownership, and retrieve data to/from Iris and use the box-office pallet to manage ownership, tickets, etc. The parachain-facing user interface allows parachain nodes to invoke extrinsics (in their parachain) and read from iris' runtime storage. (estimated duration: 1.5 weeks) |
 
 ## Future Plans
 
 In the short term:
+- Determine moderation and governance approaches and best practices. This is a major focus of Iris moving forward.
 - Write a proper whitepaper on the Iris blockchain
 - Create an online presence for the project via social media
 - Continue to search for more potential collaborators
 - Expand on the scope of this proposal to build a more feature-complete version of Iris (what this looks like is still not totally known)
+- migrate the UI to substrate-connect
 
 * the team's long-term plans and intentions in relation to it.
   * become a parachain on Kusama and Polkadot
   * build a dedicated dev team to contribute to and maintain Iris
-  * Support parachain and dapp developers who wish to use Iris in their applications or blockchains.
+  * Support parachain and dapp developers who wish to use Iris in their smart contracts or parachain runtimes.
   * Continue to research and enhance existing features in Iris
-
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
-I learned about the grants program through the substrate website, as well as was encouraged to submit a proposal during a discussion with some folks from P
+I learned about the grants program through the substrate website, as well as was encouraged to submit a proposal during discussions with Parity on the Substrate Builder's Program.
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 * I've attempted building a decentralized storage application with IPFS and Ethereum in the past. That application was also called Iris, which you can find here https://github.com/driemworks/iris.
