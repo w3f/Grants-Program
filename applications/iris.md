@@ -123,10 +123,17 @@ Availability is tricky in a decentralized context when the data is not stored on
 
 Pools do not need to be well defined. Rather, we allow them to be instantaneously formed while processing requests on a first come first served basis. When an owner requests that a CID is pinned they specify the:
 - CID: the cid of the content (already added to and available in the network, but not pinned)
-- storage_rate (OBOL/kb/block): The number of Obol per kilobyte per second the owner is willing to pay for storage
+- storage_rate (tokens/kb/block): The number of tokens per kilobyte per second the owner is willing to pay for storage. The token used depends on the parachain.
 - pool_size: The number of storage providers who should pin this content
 - epoch_blocks: The number of blocks which define an epoch (for reward distribution)
 
+**As a content owner** you must provide some minimum amount of tokens to fund at least 1 epoch. We lock these tokens in Iris until they are ready to be distributed as rewards to storage providers.
+
+**As a storage provider** you are given a static amount of tokens, called an OBOL, when you join the network directly mapped to the number of kilobytes of storage that you promise to provide. We do this to ensure that nodes cannot store more content than they either want or have. When a node agrees to pin a CID, they lock a quantity of tokens directly tied to the size of the data they are pinning (e.g. To store 10kb the node must lock 10 OBOL).
+
+Verification of storage hinges on the assumption that results from queries to the DHT of the embedded IPFS instances in Iris nodes can be trusted. After an OCW processes a request to store data and pins the CID to their IPFS node, they submit a transaction on chain to update runtime storage to reflect that they are agreeing pinning the owned content, locking a quantity of OBOL equivalent to the file size. The DHT is queried at the end of each epoch to verify that the storage providers have the data pinned. If they are offline then their locked OBOLS are moved to a new storage map which will allow nodes to unlock their tokens only when they unpin the data (nodes periodically check if they can or should unpin a CID from their node), and requests for storage providers are added back to the queue (on behalf of the data owner). If the data is not pinned, then the tokens are unlocked and returned to the node.
+
+##### Reward Distribution
 The reward distribution will depend on the number of nodes who maintained data availability at the beginning and end of the epoch. For example, if the pool_size is `N` and all pool members are online at block 0 and block epoch_blocks-1, then after the last block in the epoch we distribute a reward to each of the pinners who were active throughout: 
 
 `(storage_rate * file_size_in_kb * epoch_blocks) / num_active_providers_during_epoch`
@@ -134,6 +141,9 @@ The reward distribution will depend on the number of nodes who maintained data a
 Additionally, at the end of each epoch we also verify that the owner has provided enough tokens to fund storage for the upcoming epoch. We check the maximum value: `(storage_rate * file_size_in_kb * epoch_blocks) / pool_size`. If the owner has not provided enough tokens for the epoch, the storage nodes can either remove the pin or keep it, at their discretion. Removal is the default behavior, but retention can be a configurable property. When funding is sufficient, this forms the basis for a reserve-backed NFT within a parachain. We leverage XCM to do this. The reserve is based on the amount of tokens funding the entry. This provides a basis for consumers to choose which owner to use (will the data be available for a long or short duration, etc).
 
 We also build a mechanism which can remove and replace inactive members of a pool. If a pool provider has been offline for a preset number of epochs and at least one other provider is online (so the bytes are available in IPFS), then an automatic process will run in which the inactive pool providers are purged and new AddBytes requests are added to the queue (feeless), allowing new pool providers to be selected.
+
+#### Data Availability
+Iris does not ensure that data is available 24/7. 
 
 #### Data Access
 Iris provides access controls to the owner of any data and allows the owner to manage access to the data within any number of parachains connected through a relay chain. It treats data access as the ownership of a "ticket". A ticket provides its holder access to some content in Iris as identified by the CID and owner detailed within. Iris is not responsible for creating tickets, only for redeeming them.
@@ -270,9 +280,16 @@ I am a software engineer who enjoys problem-solving and learning new languages a
 
 ## Development Roadmap :nut_and_bolt:
 
+### Overview
+
+- **Total Estimated Duration:** 14 weeks
+- **Full-Time Equivalent (FTE):**  1.5
+- **Total Costs:** 24,000 USD
+
 Guidelines/Assumptions:
 - We always remain in sync with the latest substrate master branch and use the latest FRAME version.
 - We maintain a minimum of 85% coverage on new code.
+
 
 ### Milestone 1 — The Iris Runtime (Foundations of the DSN)
 
