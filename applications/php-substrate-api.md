@@ -144,6 +144,7 @@ composer require neha0921/substrate-interface-package
 | -----: | ----------- | ------------- |
 | 0. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | 1.  | packaging application for integration | make packagist of this integration to enable composer installation | 
+| 2.  | integration and use | an example of how to use this package in PHP application | 
 
 ## Future Plans
 
