@@ -3,7 +3,7 @@
 
 * **Project Name:** DICO
 * **Team Name:** DICO Team
-* **Payment Address:** 15KE7QsT5cru8cGHeoo4BNH6bgY1ufua8vDQarvEJGmXSsrS(DOT)
+* **Payment Address:** 0x0211ae8881a3a0a41150627da07c900b78144a84
 
 
 ## Project Overview
