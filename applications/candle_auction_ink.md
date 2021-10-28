@@ -11,7 +11,7 @@ This application is submitted in response to the **[following RFP](rfps/candle-a
 
 ### Overview
 
-- **An `Ink!` smart contract that handles a candle auction mechanism.**
+- **An `Ink!` smart contract that handles a [candle auction](https://wiki.polkadot.network/docs/learn-auction#mechanics-of-a-candle-auction) mechanism.**
 - I follow up the Substrate & Polkadot technology from the first `sub0` conference back then in 2019.  
   (_See my [blogpost](https://agryaznov.com/reports/2019/05/06/sub-0-highlights/) on that topic btw_)
 - Started getting my hands dirty with it some time ago.
@@ -19,6 +19,29 @@ This application is submitted in response to the **[following RFP](rfps/candle-a
 
 ### Project Details
 Project is a *Work in Progress*.  
+Please have a look at the project's [Github repo](https://github.com/agryaznov/candle-auction-ink) for details and `cargo doc` documentation.  
+
+Main **design considerations** to date are following:  
+
+- Contract logic is heavily inspired by [parachain auction](https://github.com/paritytech/polkadot/blob/master/runtime/common/src/auctions.rs) implementation.
+- Auction is initialized by setting Opening\Ending periods in block numbers.   
+  ```rust
+  // example of an auction schedule:
+  //  [1][2][3][4][5][6][7][8][9][10][11][12][13]
+  //     | opening  |        ending         |   
+  ```
+- The contract accepts payments and records participants` balances.
+- Bids storage is a *HashMap* which stores only a top bid per user, therefore serving as users` balances ledger.  
+- In order to make *candle* logic possible, we also store `winning_data` in featured *StorageVec* which holds bids for every *sample*.
+- *Sample* is a number of consequent blocks identifying a time interval inside Ending Period.  
+  In *PoC* version, sample equals to a single block. This will be enhanced later to be a configurable parameter.  
+- The *winning sample* (i.e. in which candle "went out") will be randomly selected retrospectively after Ending period ends.  
+- Bids are made by transferring an amount to increment current bidder's balance which effectively equals her top bid at any point of time.  
+  > E.g. Alice making calls:  
+  > 1. `bid()` with `101` `<Balance>` <- Alice' top bid is 101   
+  > some time later, she calls 
+  > 2. `bid()` again, with `1000` `<Balance>` <- Alice' top bid now is 1101 (*not 1000*)
+
 
 See current project status [below](#development-status-open_book).
 
@@ -79,6 +102,10 @@ which contains both sources and documentation.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 | 
+| 0b. | Documentation | Inline documentation (builds to *cargo doc*) + basic *How-Tos* explaining installation, deployment and usage of the contract |
+| 0c. | Testing | Core functions are covered by unit tests, which serve both sustainability of code and providing another way of explaining its logic |
+| 0d. | Docker | `N/A` for smart contracts |
 | 1. :white_check_mark: | Start & close period | Create an auction mechanism that has a fixed start and end period |
 | 2. :white_check_mark: | Accept bids | Any user can call the contract with a bid that is higher than the last highest bid |
 | 3. :white_check_mark: | Find winner | Determine a winner at the close period |
@@ -93,6 +120,11 @@ which contains both sources and documentation.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 | 
+| 0b. | Documentation | Inline documentation (builds to *cargo doc*) + basic *How-Tos* explaining installation, deployment and usage of the contract |
+| 0c. | Testing | Core functions are covered by unit tests, which serve both sustainability of code and providing another way of explaining its logic |
+| 0d. | Docker | `N/A` for smart contracts |
+| 0e. | Article | A blogpost and\or a workshop showing the smart contract features will be published | 
 | 1. | Retroactive close | At the close block, rather than announcing the highest bidder at that point, the contract should randomly determine a block in the past (between start & end blocks) and calculate the highest bidder at that block to be the winner |
 | 2. | Randomness source (optional) | Randomness source should be configurable (e.g. from hash of the block in the relay chain, from a randomness beacon parachain etc.)
 
