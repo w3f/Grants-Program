@@ -3,7 +3,7 @@
 
 * **Project Name:** DICO
 * **Team Name:** DICO Team
-* **Payment Address:** 0x0211ae8881a3a0a41150627da07c900b78144a84
+* **Payment Address:** 0x0211ae8881a3a0a41150627da07c900b78144a84(USDT)
 
 
 ## Project Overview
@@ -190,7 +190,7 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 | 0 | License | Apache 2.0 |
 | 1.a | Substrate module: KYC pallet | KYC pallet Includes identity authentication service(IAS), KYC users, and swordholder. responsible for providing users with a decentralized KYC certification service.and provide area authentication of the account|
 | 1.b | Substrate module: ICO pallet | Apply for ICO and council review for the project party. |
-| 1.c | Substrate module: DAO pallet | Strict control of the progress and process of the project. |
+| 1.c | Substrate module: DAO pallet | Integrate governance with the ICO module to provide governance logic for the opening and closing of the ICO of the project. |
 | 2.a. | Integration with front-end(dapp) |integrate our existing front end to the finalized module.| 
 | 2.b | Tutorial| We will create an screenshot tutorial and a demo video that will explain how users can start using the platform for KYC and ICO. |
 | 3. | Testing Guide/Documentation	 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests and add inline documentation of the code. |
