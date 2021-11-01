@@ -209,15 +209,15 @@ Note: the 1-month timeframe is just a guideline. If you find it unsuitable for y
 
 ### Real-time conversation
 
-We have Element channels for real-time discussions on Web3 and Polkadot. Join the conversation.
+We have Matrix/Element channels for real-time discussions on Web3 and Polkadot. Join the conversation.
 
-- [Web3 Foundation](https://app.element.io/#/room/#w3f:matrix.org)
-- [Polkadot Watercooler](https://app.element.io/#/room/#polkadot-watercooler:web3.foundation)
-- [Kusama Watercooler](https://app.element.io/#/room/#kusamawatercooler:web3.foundation)
+- [Web3 Foundation Chat](https://matrix.to/#/#w3f:matrix.org)
+- [Polkadot Space](https://matrix.to/#/#polkadot:web3.foundation)
+- [Kusama Space](https://matrix.to/#/#kusama:web3.foundation)
 
 Besides, we also have a **community room for all grant recipients**. Head over to that room to share your experience with other grantees, ask grants-related questions or simply hang out:
 
-- [W3F Grants Community](https://app.element.io/#/room/!XpynPDLusWUWfDpaqr:matrix.org)
+- [W3F Grants Community](https://matrix.to/#/!rdJOXrswfxmnBFwGWt:web3.foundation)
 
 ## :rocket: Alternative Funding Sources
 
