@@ -16,7 +16,7 @@ Our platform offers a few key features:
 
 * *KYC*: Includes identity authentication service(IAS), KYC users, and supervisor. responsible for providing users with a decentralized KYC certification service.
 * *ICO*: Apply for ICO and council review for the project party.
-* *DAO*: Strict control of the progress and process of the project.
+* *DAO*: Integrate governance with the ICO module to provide governance logic for the opening and closing of the ICO of the project..
 * *Swap*: Provide an exchange agreement for tokens and an interest-generating method for collateralized tokens into the liquidity pool for disposable tokens
 * *Oracle*: Provide an oracle for the platform.
 
