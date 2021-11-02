@@ -16,7 +16,7 @@ Our platform offers a few key features:
 
 * *KYC*: Includes identity authentication service(IAS), KYC users, and supervisor. responsible for providing users with a decentralized KYC certification service.
 * *ICO*: Apply for ICO and council review for the project party.
-* *DAO*: Integrate governance with the ICO module to provide governance logic for the opening and closing of the ICO of the project..
+* *DAO*: Integrate governance with the ICO module to provide governance logic for the opening and closing of the ICO of the project.
 * *Swap*: Provide an exchange agreement for tokens and an interest-generating method for collateralized tokens into the liquidity pool for disposable tokens
 * *Oracle*: Provide an oracle for the platform.
 
@@ -188,12 +188,12 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 |
-| 1.a | Substrate module: KYC pallet | KYC pallet Includes identity authentication service(IAS), KYC users, and swordholder. responsible for providing users with a decentralized KYC certification service.and provide area authentication of the account|
-| 1.b | Substrate module: ICO pallet | Apply for ICO and council review for the project party. |
-| 1.c | Substrate module: DAO pallet | Integrate governance with the ICO module to provide governance logic for the opening and closing of the ICO of the project. |
+| 1.a | Substrate module: KYC pallet | KYC pallet Includes identity authentication service(IAS), KYC users, and swordholder. responsible for providing users with a decentralized KYC certification service.and provide area authentication of the account.Detailed explanation is described [here](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/kyc/README.md)|
+| 1.b | Substrate module: ICO pallet | Apply for ICO and council review for the project party. Detailed explanation is described [here](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/ico/README.md)|
+| 1.c | Substrate module: DAO pallet | Integrate governance with the ICO module to provide governance logic for the opening and closing of the ICO of the project. Detailed explanation is described [here](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/dao/README.md)|
 | 2.a. | Integration with front-end(dapp) |integrate our existing front end to the finalized module.| 
 | 2.b | Tutorial| We will create an screenshot tutorial and a demo video that will explain how users can start using the platform for KYC and ICO. |
 | 3. | Testing Guide/Documentation	 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests and add inline documentation of the code. |
 | 4. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
 | 5. | Docker-compose | We will provide a docker-compse.yml that can be used to test parachain version node delivered with this milestone.in this version, users will be invited to this testnet |
-| 6.  | Lending module(research oriented)| Innovation combining ICO and lending.|    
+| 6.  | Lending module(research oriented)| Innovation combining ICO and borrowing/lending. In our 2.0 version, we hope to introduce an innovation combining lending and ICO. The goal is to make ICO more diversified through borrowing/lending. Through the logic of borrowing/lending, and participation in ICO, the participants will be more diverse. At the same time, in the 2.0 testnet, we will let users participate in this pallet. According to the test results, publish a blog to show the test results.|    
