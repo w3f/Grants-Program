@@ -128,7 +128,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Governance/DAO| [Sunshine DAO](https://github.com/sunshine-protocol/sunshine-bounty), [Governance OS](https://github.com/NucleiStudio/governance-os), [Idavoll Network](https://github.com/idavollnetwork/idavoll), [Substrate Moloch](https://github.com/DoraFactory/Substrate-Moloch-V2) |   [Consul](https://github.com/consul/consul) - Open Government and E-Participation Web Software
 | Prediction Markets and Futarchy| [Zeitgeist](https://github.com/zeitgeistpm/zeitgeist), [X Predict Market](https://github.com/XPredictMarket) |
 | Messaging | [HOPR](https://github.com/validitylabs/HOPR-PL-Substrate), [Mailchain](https://github.com/mailchain)
-| File Storage, Cloud | [DatDot](https://github.com/playproject-io/datdot), [Crust Network](https://github.com/crustio), [offchain::ipfs](https://rs-ipfs.github.io/offchain-ipfs-manual/), [Canyon Network](https://github.com/canyon-network/canyon), [CESS](https://github.com/Cumulus2021/cess)
+| File Storage, Cloud | [DatDot](https://github.com/playproject-io/datdot), [Crust Network](https://github.com/crustio), [offchain::ipfs](https://rs-ipfs.github.io/offchain-ipfs-manual/), [Canyon Network](https://github.com/canyon-network/canyon), [CESS](https://github.com/Cumulus2021/cess), [Iris](https://github.com/iridium-labs/iris)
 | Name Service| [Substrate Names](https://github.com/xaya/substrate-names), [ENS on Substrate](https://github.com/hskang9/substrate-name-service)
 | Gaming | [Bit.country](https://github.com/bit-country/Bit-Country-Blockchain), [SubGame](https://github.com/SubGame-Network/subgame-network) | 
 | Computation |
