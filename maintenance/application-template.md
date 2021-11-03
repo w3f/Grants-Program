@@ -7,7 +7,6 @@
 - **Project Code Name:** Code name of the project (e.g. JsonRPC Tools Maintenance)
 - **Team Name:** Legal name of your team (e.g. JsonCorp)
 - **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
@@ -85,26 +84,31 @@ If you've already started implementing your project or it is part of a larger re
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation,
 - previous interface iterations, such as mock-ups and wireframes.
 
-## Development Roadmap :nut_and_bolt:
+## Maintenance Responsibilities :nut_and_bolt:
 
-This section should break the development roadmap into a broad overview of the features/bugs that need development contributions and specify what you think to fix/add in the future by priority order. If you have already outlined a list of issues or pull requests that need further development - you can specify them here to provide more context on what tasks you will close.
+This section should specify what kind of tasks and responsibilities the maintainer team will cover during future development. If you have already outlined a list of issues/bugs or pull requests that need further development - you can specify them here to provide more context on what tasks you will close.
 
-Make sure the current project owners are willing to review/accept your contributions (a note here: if you're fully taking over the project, it will make more sense for the current owners to transfer the repository to your organization. If you can't get in touch with them, you may, of course, work on a fork).
+Also, make sure the current project owners are willing to review/accept your contributions (a note here: if you're fully taking over the project, it will make more sense for the current owners to transfer the repository to your organization. If you can't get in touch with them, you may, of course, work on a fork).
 
-Below we provide an **example roadmap**.
+Below we provide an **maintenance responsibilities**.
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 1. | JsonRPC wasm compatibility | We will make the JsonRPC library compatible with wasm... (Please list the functionality that you want to implement) |  
-| 2. | JsonRPC speed | We will remove the JsonRPC bug that affects its speed... |  
-| 3. | JsonRPC documentation | We will create more detailed documentation for the JsonRPC library... |  
-| 4. | Make PR for Substrate with new JsonRPC version | After fixing all bugs and finishing all feature, we will make a PR for Substrate with new JsonRPC version |  
+Issues we want to fix:
+- There's a bug in the JsonRPC library that affects its speed.
+- Massive lack of documentation and part of it is outdated.
+- Code has no comments, and it's tough for new developers to understand the code and contribute.
+
+Our responsibilities:
+- We will maintain the project's documentation.
+- We will answer issues and discussions.
+- We will fix new bugs as we receive and help contributors who have pull requests get any needed information.
+
+> ⚠️ *Note that all code should be published under an open-source license during the maintenance period.*
 
 ### Overview
 
 - **Sprint/Period Duration:** Duration of the sprint/period (e.g. 4 weeks)
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Max budget per sprint/period:** Requested max budget in USD per sprint/period (e.g. 7,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Max budget per sprint/period:** Requested max budget in USD per sprint/period (e.g. 7,000 USD). Cost for each period need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
 > ⚠️ *Note that you will need to provide a comprehensive report of the work done at the end of each month, including the list of issues/bugs/pull requests worked on, time spent on each of these, & finally, the associated cost. The time allocation & price will likely vary from month to month, depending on the nature of the project you're contributing to. The report should be in the form of a Milestone Delivery, again like the typical procedure. W3F will make the payments only after the successful merge of each individual report.*
 
