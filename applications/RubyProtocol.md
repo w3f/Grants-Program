@@ -130,7 +130,7 @@ Dylan Dewdney is a longtime crypto enthusiast (2011). In 2017 he co-founded Harb
 * **Total Costs:** 30,000 DAI
 
 #### Milestone 1 — Implement Cryptographic Modules
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 5 months
 * **FTE:** 1
 * **Costs:** 10K DAI
 

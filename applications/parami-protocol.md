@@ -3,7 +3,7 @@
 * **Project Name:** The Parami Protocol
 * **Team Name:** The Parami Team
 * **Payment Address:** 1ET2d5D2aDebVdrV21d6h9w2kuYV4fthv
-* **Status:** [Terminated](https://github.com/w3f/Open-Grants-Program/pull/160#issuecomment-874247355)
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/521#issuecomment-899650244)
 
 ## Project Overview :page_facing_up:
 

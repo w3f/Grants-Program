@@ -6,6 +6,8 @@ Open Grant Proposal of Polkadot-Dart
 
 * **Payment Address:** 3PbhNyWhiSTwb58fc5uYhg2mV2vJ34KwAJ
 
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/125#issuecomment-946479942) 
+
   
 
 ## Project Overview :page_facing_up: 

@@ -3,6 +3,7 @@
 * **Project:** Coinversation Protocol
 * **Proposer:** [coin-pro](https://github.com/coin-pro)
 * **Payment Address:** 3FX6TD7Qm255foMg7xZStZNAfpLvDai5P8
+* **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/233#issuecomment-886535171)
 
 ## Project Overview :page_facing_up: 
 Coinversation Protocol is an open financial platform integrating stablecoin, synthetic asset issuance, collateral lending, decentralized contract exchange and Polkadot bridge.  Coinversation Stablecoin is a very important part of it.  Coinversation is committed to making breakthrough contributions to the stablecoin and DeFi in the Polkadot ecosystem.
