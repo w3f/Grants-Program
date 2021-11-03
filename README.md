@@ -198,7 +198,7 @@ Then, at the end of each month, you will need to provide a comprehensive report 
 Please note that:
 - Maintenance grants, as the name suggests, are meant to allow teams/individuals to maintain a certain project, and not to continue its development or implement larger features. Please use the traditional application process for this purpose.
 - The 1-month timeframe is just a guideline. If you find it unsuitable for you or the chosen project for any reason, feel free to adjust as seen fit and point this out in your application.
-- Please bear in mind that the Grants Committee might be sctricter in accepting maintainers when compared to typical grants, mostly selecting for applicants with proven experience in the relevant tech stacks.
+- Please bear in mind that the Grants Committee might be stricter in accepting maintainers when compared to typical grants, mostly selecting for applicants with proven experience in the relevant tech stacks.
 - Maintenance Grants are only awarded for fixed timeframes. The requested duration needs to be specified in the application.
 
 ## :bulb: Help
