@@ -90,7 +90,7 @@ This section should specify what kind of tasks and responsibilities the maintain
 
 Also, make sure the current project owners are willing to review/accept your contributions (a note here: if you're fully taking over the project, it will make more sense for the current owners to transfer the repository to your organization. If you can't get in touch with them, you may, of course, work on a fork).
 
-Below we provide an **maintenance responsibilities**.
+Below we provide **example maintenance responsibilities**.
 
 Issues we want to fix:
 - There's a bug in the JsonRPC library that affects its speed.
