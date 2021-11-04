@@ -3,8 +3,8 @@
 
 
 * **Project:** Koi Metaverse
-* **Proposer: **https://github.com/KoiMetaverse
-* **Payment Address: **
+* **Proposer:** https://github.com/KoiMetaverse
+* **Payment Address:** 0xfADc3c36E41D36796ca05B4D55b148725c804cE0
 
 
 # Project Overview
@@ -66,22 +66,22 @@ The gaming NFT protocols and Dapp consists of:
 
 
 
-* **name: **activity name
-* **nft: **nft contract address
-* **noin: **coin contract address
-* **price: **fees needed to run lottery
+* **name:** activity name
+* **nft:** nft contract address
+* **noin:** coin contract address
+* **price:** fees needed to run lottery
 * **total:** total number of lotteries 
-* **remain: **remnant quantity
-* **limit: **nft limited per person 
-* **startTime: **activity start time 
-* **endTime: **activity end time
+* **remain:** remnant quantity
+* **limit:** nft limited per person 
+* **startTime:** activity start time 
+* **endTime:** activity end time
 
 
 ### Functions
 
 
 
-* **lottery(): **lottery
+* **lottery():** lottery
 
 **NFT Auction Sale**
 
@@ -90,22 +90,22 @@ The gaming NFT protocols and Dapp consists of:
 
 
 
-* **name: **activity name
-* **nft: **nft contract address
-* **coin: **coin contract address
-* **startTime: **activity start time
-* **endTime: **activity end time
+* **name:** activity name
+* **nft:** nft contract address
+* **coin:** coin contract address
+* **startTime:** activity start time
+* **endTime:** activity end time
 
 
 ### Function
 
 
 
-* **fishList(): **read the fish list in the auction activity
-* **fishGeneList(): **read the fish gene list in the auction activity
-* **bid(): **users submit bids
-* **refreshFishList(): **refresh the fish list
-* **getMyFish(): **users acquired the bade fish
+* **fishList():** read the fish list in the auction activity
+* **fishGeneList():** read the fish gene list in the auction activity
+* **bid():** users submit bids
+* **refreshFishList():** refresh the fish list
+* **getMyFish():** users acquired the bade fish
 
 **NFT Minting**
 
@@ -114,8 +114,8 @@ The gaming NFT protocols and Dapp consists of:
 
 
 
-* **nft: **nft contract address
-* **coin: **coin contract address
+* **nft:** nft contract address
+* **coin:** coin contract address
 * **totalNft:** current NFT quantities in mining pool
 * **totalNftPower():** current total NFT mining power in mining pool
 
@@ -124,13 +124,13 @@ The gaming NFT protocols and Dapp consists of:
 
 
 
-* **myNft(): **read staked NFT
-* **getNft(): **read one nft info
+* **myNft():** read staked NFT
+* **getNft():** read one nft info
 * **earned():** read mining profit
-* **stakeNft(): **stake nft
-* **withdrawNft(): **withdraw the staked nft
-* **withdrawNftAll(): **withdraw all staked nfts
-* **getReward(): **acquire mining reward
+* **stakeNft():** stake nft
+* **withdrawNft():** withdraw the staked nft
+* **withdrawNftAll():** withdraw all staked nfts
+* **getReward():** acquire mining reward
 
 
 #### NFT Assets
@@ -526,7 +526,7 @@ Hongfeng Liu
 
 * **Play to Earn:** Koi Metaverse will also adopt the P2E model to inspire players of GameFi games. Through P2E, players can share the growth and development dividend of the Koi Metaverse.
 * **Genesis Collection:** [Koi NFTs Genesis Collection Offering — Phase 1: Newborn](https://koimetaverse.medium.com/koi-nfts-genesis-collection-offering-phase-1-newborn-5619038200c6) Genesis Collection is an effective way to start a project and have public awareness.
-* **GameFi Communities: **Koi Metaverse will collaborate with game P2E communities, including Yield Guild Games (YGG), A16, etc. to complete users acquisition and users growth.
+* **GameFi Communities:** Koi Metaverse will collaborate with game P2E communities, including Yield Guild Games (YGG), A16, etc. to complete users acquisition and users growth.
 
 
 # Future Plans
