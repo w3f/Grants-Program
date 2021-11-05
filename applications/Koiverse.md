@@ -313,7 +313,7 @@ Hongfeng Liu
 
 * Total Estimated Duration: 4 months
 * Full-time equivalent (FTE): 6 FTE
-* Total Costs: 42,000 DAI
+* Total Costs: 24,000 DAI
 
 
 ### **Milestone 1 —— Koi Metaverse NFT Modules and Assets**
@@ -322,7 +322,7 @@ Hongfeng Liu
 
 * Estimated Duration: 2 months
 * FTE: 4 FTE.
-* Costs: 20,000 DAI
+* Costs: 12,000 DAI
 
 <table>
   <tr>
@@ -363,7 +363,7 @@ Hongfeng Liu
    </td>
    <td>Substrate Module: NFT Lottery Draw
    </td>
-   <td>NFT lottery module include: `lottery` function implemented by rust
+   <td>NFT lottery module include: lottery function implemented by rust
    </td>
   </tr>
   <tr>
@@ -371,7 +371,7 @@ Hongfeng Liu
    </td>
    <td>Substrate Module: NFT Auction Sale
    </td>
-   <td>NFT auction module include: `fishList`, `fishGeneList`, `bid`, `refreshFishList`, `getMyFish` functions implemented by rust
+   <td>NFT auction module include: fishList, fishGeneList, bid, refreshFishList, getMyFish functions implemented by rust
    </td>
   </tr>
   <tr>
@@ -379,7 +379,7 @@ Hongfeng Liu
    </td>
    <td>Substrate Module: NFT Minting
    </td>
-   <td>NFT minting module include: `myNft`, `getNft`, `earned`, `stakeNft`, `withdrawNft`, `withdrawNftAll`, `getReward` functions implemented by rust
+   <td>NFT minting module include: myNft, getNft, earned, stakeNft, withdrawNft, withdrawNftAll, getReward functions implemented by rust
    </td>
   </tr>
   <tr>
@@ -387,7 +387,7 @@ Hongfeng Liu
    </td>
    <td>Substrate Module: Fish
    </td>
-   <td>fish module include: `gene`, `birthday`, `power`, `reproduction`, `growth` implemented by rust
+   <td>fish module include: gene, birthday, power, reproduction, growth implemented by rust
    </td>
   </tr>
   <tr>
@@ -395,7 +395,7 @@ Hongfeng Liu
    </td>
    <td>Substrate Module: Fish Tank 
    </td>
-   <td>fish tank module include: `capacity`, `totalPower`, `fishList` implemented by rust
+   <td>fish tank module include: capacity, totalPower, fishList implemented by rust
    </td>
   </tr>
   <tr>
@@ -440,7 +440,7 @@ Hongfeng Liu
 
 * Estimated Duration: 2 months
 * FTE: 6 FTE
-* Costs: 22,000 DAI
+* Costs: 12,000 DAI
 
 <table>
   <tr>
