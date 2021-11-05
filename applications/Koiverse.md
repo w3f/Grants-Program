@@ -66,22 +66,22 @@ The gaming NFT protocols and Dapp consists of:
 
 
 
-* **name:** activity name
-* **nft:** nft contract address
-* **noin:** coin contract address
-* **price:** fees needed to run lottery
-* **total:** total number of lotteries 
-* **remain:** remnant quantity
-* **limit:** nft limited per person 
-* **startTime:** activity start time 
-* **endTime:** activity end time
+* `name` - activity name
+* `nft` - nft contract address
+* `noin` - coin contract address
+* `price` - fees needed to run lottery
+* `total` - total number of lotteries 
+* `remain` - remnant quantity
+* `limit` - nft limited per person 
+* `startTime` - activity start time 
+* `endTime` - activity end time
 
 
 ### Functions
 
 
 
-* **lottery():** lottery
+* `lottery()` - lottery
 
 **NFT Auction Sale**
 
@@ -90,22 +90,22 @@ The gaming NFT protocols and Dapp consists of:
 
 
 
-* **name:** activity name
-* **nft:** nft contract address
-* **coin:** coin contract address
-* **startTime:** activity start time
-* **endTime:** activity end time
+* `name` - activity name
+* `nft` - nft contract address
+* `coin` - coin contract address
+* `startTime` - activity start time
+* `endTime` - activity end time
 
 
 ### Function
 
 
 
-* **fishList():** read the fish list in the auction activity
-* **fishGeneList():** read the fish gene list in the auction activity
-* **bid():** users submit bids
-* **refreshFishList():** refresh the fish list
-* **getMyFish():** users acquired the bade fish
+* `fishList()` - read the fish list in the auction activity
+* `fishGeneList()` - read the fish gene list in the auction activity
+* `bid()` - users submit bids
+* `refreshFishList()` - refresh the fish list
+* `getMyFish()` - users acquired the bade fish
 
 **NFT Minting**
 
@@ -114,23 +114,23 @@ The gaming NFT protocols and Dapp consists of:
 
 
 
-* **nft:** nft contract address
-* **coin:** coin contract address
-* **totalNft:** current NFT quantities in mining pool
-* **totalNftPower():** current total NFT mining power in mining pool
+* `nft` - nft contract address
+* `coin` - coin contract address
+* `totalNft` - current NFT quantities in mining pool
+* `totalNftPower()` - current total NFT mining power in mining pool
 
 
 ### Function
 
 
 
-* **myNft():** read staked NFT
-* **getNft():** read one nft info
-* **earned():** read mining profit
-* **stakeNft():** stake nft
-* **withdrawNft():** withdraw the staked nft
-* **withdrawNftAll():** withdraw all staked nfts
-* **getReward():** acquire mining reward
+* `myNft()` - read staked NFT
+* `getNft()` - read one nft info
+* `earned()` - read mining profit
+* `stakeNft()` - stake nft
+* `withdrawNft()` - withdraw the staked nft
+* `withdrawNftAll()` - withdraw all staked nfts
+* `getReward()` - acquire mining reward
 
 
 #### NFT Assets
@@ -363,7 +363,7 @@ Hongfeng Liu
    </td>
    <td>Substrate Module: NFT Lottery Draw
    </td>
-   <td>NFT lottery module include: lottery function implemented by rust
+   <td>NFT lottery module include: `lottery` function implemented by rust
    </td>
   </tr>
   <tr>
@@ -371,7 +371,7 @@ Hongfeng Liu
    </td>
    <td>Substrate Module: NFT Auction Sale
    </td>
-   <td>NFT auction module include: fishList, fishGeneList, bid, refreshFishList, getMyFish functions implemented by rust
+   <td>NFT auction module include: `fishList`, `fishGeneList`, `bid`, `refreshFishList`, `getMyFish` functions implemented by rust
    </td>
   </tr>
   <tr>
@@ -379,7 +379,7 @@ Hongfeng Liu
    </td>
    <td>Substrate Module: NFT Minting
    </td>
-   <td>NFT minting module include: myNft, getNft, earned, stakeNft, withdrawNft, withdrawNftAll, getReward functions implemented by rust
+   <td>NFT minting module include: `myNft`, `getNft`, `earned`, `stakeNft`, `withdrawNft`, `withdrawNftAll`, `getReward` functions implemented by rust
    </td>
   </tr>
   <tr>
@@ -387,7 +387,7 @@ Hongfeng Liu
    </td>
    <td>Substrate Module: Fish
    </td>
-   <td>fish module include: gene, birthday, power, reproduction, growth implemented by rust
+   <td>fish module include: `gene`, `birthday`, `power`, `reproduction`, `growth` implemented by rust
    </td>
   </tr>
   <tr>
@@ -395,7 +395,7 @@ Hongfeng Liu
    </td>
    <td>Substrate Module: Fish Tank 
    </td>
-   <td>fish tank module include: capacity, totalPower, fishList implemented by rust
+   <td>fish tank module include: `capacity`, `totalPower`, `fishList` implemented by rust
    </td>
   </tr>
   <tr>
