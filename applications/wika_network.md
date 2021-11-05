@@ -15,7 +15,7 @@
 #### Make the Internet a Better Place.
 
 Our mission is to build a clean, public and non-intrusive blockchain registry to empower 
-autors, search engines and recommendation systems that respect privacy and are 100% transparent.
+authors, search engines and recommendation systems that respect privacy and are 100% transparent.
 
 - **Content Consumers** will be able to like their favorite pages and reward the authors and previous likers.
 
