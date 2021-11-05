@@ -117,7 +117,7 @@ The gaming NFT protocols and Dapp consists of:
 * `nft` - nft contract address
 * `coin` - coin contract address
 * `totalNft` - current NFT quantities in mining pool
-* `totalNftPower()` - current total NFT mining power in mining pool
+* `totalNftPower` - current total NFT mining power in mining pool
 
 
 ### Function
@@ -297,7 +297,7 @@ Hongfeng Liu
 
 
 
-* [www.linkedin.com/in/anetta-sultygova](www.linkedin.com/in/anetta-sultygova)
+* [www.linkedin.com/in/anetta-sultygova](https://www.linkedin.com/in/anetta-sultygova/)
 * [https://www.linkedin.com/in/taoliu-designer/](https://www.linkedin.com/in/taoliu-designer/)
 * [https://www.linkedin.com/in/vladan-falcic-sqcap/](https://www.linkedin.com/in/vladan-falcic-sqcap/)
 * [https://www.linkedin.com/in/jelly-ji-7b193a177/](https://www.linkedin.com/in/jelly-ji-7b193a177/)
