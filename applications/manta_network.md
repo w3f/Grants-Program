@@ -96,8 +96,12 @@ The current ecentralized exchanges scheme lack privacy, anti surveillance intero
 * **Shumo Chu, Co-Founder**.
 * **Victor Ji, Co-Founder**.
 * **Kenny Li, Product Lead**.
-* **Z. Zhang, Researcher**.
-* **Qiudong Xia, Cryptographic System Engineer**.
+* **Kevin Gislason, Full-stack Engineer**.
+* **Georgi Zlatarev, Infrastructure Engineer**.
+* **Jammie Deng, Infrastructure Engineer**.
+* **Gabriela Brown, Full-stack Engineer**.
+* **Brandon Gomes, Cryptographic Engineer**.
+* **Rob Thijssen, Devop Engineer**.
 
 Detailed experience see **Team's experience section**.
 
@@ -117,13 +121,20 @@ Manta Network Ltd., a British Virgin Islands corporation
 
 * Kenny Li: Kenny is an entrepreneur that has started, advised, and invested in startups for over seven years. His initial business exposure in the cryptocurrency space was an advisory role for a Bitcoin options trading platform in 2014. He is a frequent writer on blockchain topics and operates a fund. He is the teaching assistant for Blockchain Lab and MBA graduate at MIT Sloan.
 
-* Z. Zhang: Dr. Zhang obtained his Ph.D. in computer science at University of Wollongong, Australia. He was the director of cryptographic research at OnBoard Security, and a cryptographic engineer at Algorand. Dr. Zhang has published over 25 papers in cryptography; contributed to multiple proposals to NIST post-quantum cryptography competition; and co-drafted the BLS IETF Internet-draft.
+* Kevin Gislason, full stack developer: A UChicago English undergrad, Kevin self-taught programming in order to work on cryptocurrencies. Kevin previously developed supply chain software for Wayfair, quantitative trading tools for a private office, and a custom Bitcoin hardware wallet
 
-* Qiudong Xia, Crypto System Engineer: Master student at University of Science and Technology of China. Qiudong has been working actively on access control and security of networking systems and published papers in top networking conferences and journals such as IEEE INFOCOM, ACM Trans. Networking, and ICC.
+* Georgi Zlatarev: Georgi Zlatarev: Georgi is a systems engineer with a varied background. He studied math with economics in University College London but began his professional career in business development for a Cloud company. Once he moved to engineering he worked on web projects, and then in the vfx industry developing a fluid dynamics simulator and a renderer. His pashion for low level programming led him to Rust and the crypto world.
 
+* Jammie Deng: Jamie is a software engineer at Manta Network. He was a former software and test developer at National Instruments. Last two years, He was working on developing pallets/contracts/bridge between EOS and Substrate at a blockchain startup.
+
+* Gabriela Brown: Gabriela is a full stack software engineer who love Rust! She has been at Manta Networks for 4 months and previously worked in healthcare technology. She is currently getting her Master’s in Math.
+
+* Brandon Gomes: Brandon is a software engineer and mathematician. He obtained his undergraduate degree in Mathematics and Physics from Rutgers University. During his undergraduate, he studied homotopy type theory and formal verification of modern mathematics using the Lean Proof Assistant. Before studying mathematics, Brandon worked on the MATHUSLA project through the Rutgers Physics Department where he built particle detector simulation software to explore designs for a new high energy particle detector at the LHC.
+
+* Rob Thijssen: Rob is a seasoned build and deployment expert having worked many years in the financial and energy trading sectors. he joins manta after a six year term at mozilla where he helped to build some of the largest open source multi-cloud integration testing infrastructure in use
 
 ### Team Code Repos
-* https://github.com/Manta-Network/Manta-Core
+* https://github.com/Manta-Network/Manta
 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/shumo-chu-a1722416/
@@ -158,28 +169,30 @@ The Manta substrate pallets includes the ledger state implementation, the transa
 | 3. | Docker | We will provide a dockerfile to demonstrate the end-to-end use case of Manta DAP.  |
 
 
-### Milestone 2 — Manta DAP Client and Integration
+### Milestone 2 — Manta DAP Wallet Protocol and XCM Integration
 
-* **Estimated Duration:** 4 weeks
-* **FTE:**  3
+* **Estimated Duration:** 7 weeks (Estimated Delivery Date: Nov. 15)
+* **FTE:**  7
 * **Costs:** 0.5 BTC
 
 There are two major new deliverable in Milestone 2:
-1. Extend the Manta pallet to support parachain assets. We are still figuring out what is the best way of supporting that. This essentially requires a cross-chain communication mechanism such as XCM or XCMP (which hasn't been put into Rococo yet). We are also actively talking to Polkadot eco-systems members such as Acala and Equilibrium to discuss what is the best standard interface for mining parachain asset to private coins.
-2. A client prototype, which could:
-   * Sign and initiate Mint transactions
-   * Generate zero-knowldge proofs and send transfer transaction of private coins
-   We plan to benchmark and optimize the efficiency of zero-knowledge proof generation
-
+1. Support minting Parachain asset via XCM. This requires the following:
+    * An token abstraction layer in Manta code that unifies Relay chain native token, parachain native/non-native token.
+    * Mint/reclaim tokens from/to the sister parachain / replay chain. 
+2. MantaPay wallet protocol and wallet implementation:
+   * MantaPay wallet protocol (a draft version [here](https://github.com/Manta-Network/MIPS/pull/2)). The purpose of this protocol is to provide the user account abstraction despite MantaPay's UTXO design. 
+   * Manta DApp: A web based DApp front-end that can manage, transact Manta supported private tokens. Manta frontend will also communicate with Manta Signer to get the ZKP.   
+   * Manta Signer: An native client on Mac/Win/Ubuntu for generating ZKP. The reason that we uses a native client is due to the expensive computation will cause a inferior user-experience if using WASM on browser (measured 16X slow-down) to generate ZKP.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 1. | Manta Substrate Node Prototype | Compared with the prototype in Milestone I, we will add support for minting parachain assets to private coins in this prototype.|
-| 2. | Manta Client Prototype | The client that could generate `tx_mint` and `tx_transfer` transactions with zero-knowledge proofs. | 
-| 3. | Benchmark | We will benchmark the laterncy and throughput of using parachain assets as basecoins, as well as the overhead of prover in the client side.   |
-| 4. | Docker | A docker file to that demonstrate both Manta substrate node and Manta client functionalities. |
-| 5. | Community & Partner Test | We will deploy the prototype on Kusama/Rococo that allows our community and partners to test |
+| 0a. | License | GPL V3 |
+| 1. | Manta Parachain Runtime with MantaPay | Compared with the prototype in Milestone I, we will add support for minting parachain assets to private coins in this prototype.|
+| 2. | MantaPay Pallet Implementation | This is the pallet that implements the updated MantaPay Protocol with signficant speed improvement. | 
+| 3. | Manta DApp | A web based DApp that manages and transacts Manta supported private assets |
+| 4. | Manta Signer | Manta's Mac/Win/Ubuntu client that turbo-charges ZKP generation. Signer will communicate with Manta DApp |
+
+Note: 1 and 2 will be delivered together as a docker container.
 
 
 ### Community engagement
