@@ -6,6 +6,8 @@
 
 NFT Product Analytics Suite
 
+**Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/675#issuecomment-961422841)
+
 ## Team Name
 
 Health Hero
@@ -133,7 +135,7 @@ FTE
 
 Total Costs
 
-- 30,000 USD
+- 0 USD (Terminated)
 
 Tech Stack
 
