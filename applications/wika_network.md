@@ -102,7 +102,7 @@ we have all the necessary foundations and ingredients to succeed:
     - **Offchain API** 
       - Not started yet.
     
-    - **Polkaswap Bridge** 
+    - **DEX Bridge** 
       - Not started yet.
     
     - **Integrations** 
@@ -124,7 +124,7 @@ we have all the necessary foundations and ingredients to succeed:
     - Browser Extension: Pure JS, compatible both Chrome and Firefox.
     - Indexed databases: ETL written in NodeJS, data stored in Elastic Search (URL documents) and Neo4J (social network.) 
     - Offchain API: NodeJS web services.
-    - SORA/Polkaswap Bridge: Substrate.
+    - DEX Bridge: Substrate.
     - Website and documentation: Docusaurus. 
     
 * Documentation:
@@ -280,11 +280,10 @@ We are requesting this Grant in the context of phase 1 -Foundation- to:
     - Plain old HTML/JS.
     - ReactJS framework.
     - WordPress CMS.  
- - Validate the blockchain code, upgrade and prepare for graduation to Main Net.
  - Test, stablize and document the codebase developed so far.
 
-By the end of the milestones detailed below, the Wika Blockchain Test Net should be fully operational, 
-documented, and the project ready to graduate to its Main Net.
+By the end of the milestones detailed below, the Wika Blockchain Test Net should be ready for a substrate code review, 
+then preparation for its graduation to mainnet.
 
  
 
@@ -294,9 +293,9 @@ documented, and the project ready to graduate to its Main Net.
 
 ### Overview
 
-* **Total Estimated Duration:** 4 Months
-* **Full-Time Equivalent (FTE):**  1.25 FTE
-* **Total Costs:** 25,000 USD
+* **Total Estimated Duration:** 3 Months
+* **Full-Time Equivalent (FTE):**  1 FTE
+* **Total Costs:** 15,000 USD
 
 ### Milestone 1 — Indexed Databases
 
@@ -305,9 +304,9 @@ documented, and the project ready to graduate to its Main Net.
 * **Costs:** 5,000 USD
 
 Global success criteria:
-* ETL Service + Elastic Search + Neo4J up and running in wika.network GCP environment against TestNet blockchain.
-* ES front end running on https://esdb.test.wika.network
-* Neo4J front end running on https://graphdb.test.wika.network
+* Fully dockerized ETL Service up and running in wika.network GCP environment against TestNet blockchain.
+* Elastic Search front end running on https://esdb.test.wika.network, with documentation and a medium article detailing its fully reproducible deployment process.
+* Neo4J front end running on https://graphdb.test.wika.network, with documentation and medium article detailing its fully reproducible deployment process.
 
 Note: check out https://doc.subquery.network/ for related code.
 
@@ -317,7 +316,7 @@ Note: check out https://doc.subquery.network/ for related code.
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a **gituhb repo readme** that explains how to spin up database instances and sync them with a blockchain node. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that packages the ETL service. |
-| 0e. | Article | We will publish an **article** that explains the design of this repo and showcases typical queries that can be run against Elastic Search and Neo4J.) |
+| 0e. | Article | We will publish a series of **articles** that explain: - The design of this repo and showcases typical queries that can be run against Elastic Search and Neo4J. - Fully reproducible guide to deploy Elastic Search along the ETL. - Fully reproducible guide to deploy Neo4J along the ETL. |
 | 1. | ETL | The ETL starts at the block number saved in the database and processes one block at a time. When done processing history, it will listen to new blocks and apply the same ETL. |
 | 2. | ETL Elastic Search |  Elastic Search will store one document per URL with title and other meta information pulled from the web page.    |  
 | 3. | ETL Neo4J | Neo4J will store one node per URL, one node per Account, Like relationships (edges) and Ownership relationships... |  
@@ -380,63 +379,6 @@ Global success criteria:
 
 
 
-### Milestone 4 — Blockchain validation and upgrades
-
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 5,000 USD
-
-Global success criteria:
-* Blockchain code is validated by an experienced Rust/Substrate developer.
-* Blockchain has all the governance and technical foundations to be deployed as Main Net.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code, a **gituhb repo readme** that introduces the repo. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. The **github  repo readme** we will also describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile that packages a substrate node ready to run and join test network
-| 0e. | Article | We will publish an **article** that explains how a node can be deployed and the reward system when operating validator and verifier nodes. |
-| 1. | Code Review | Code will be reviewed by a substrate expert. |
-| 2. | Governance Foundations | Add necessary pallets and configurations to make the blockchain ready for decentralized governance. |
-| 3. | Upgrade TestNet blockchain | Upgrade the blockchain according to the code review recommendations. |
-
-
-
-### Milestone 5 — Test, debugging and documentation of full suite of repositories
-
-* **Estimated Duration:** 1 month
-* **FTE:**  1
-* **Costs:** 5,000 USD
-
-Global success criteria:
-* **Blockchain** :white_check_mark:
-* **Web App** :white_check_mark:
-* **Browser Extension** :white_check_mark:
-* **Indexed Databases** :white_check_mark:
-* **Offchain API** :white_check_mark:
-* **Integrations** :white_check_mark:
-* Wika Blockchain Test Net and most of the components of the foundation phase, except the SORA/Polkaswap bridge, 
-are fully operational.
-* The above suite is fully documented, tested, and ready to graduate to the Main Net.
-
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will write and update documentation pages in wika.network website with pointers to the code repos and guides. |
-| 0c. | Testing Guide | Integration tests will be written to ensure overall robustness and we will describe how to run these tests. Also, some repos still don't have test so we'll start their test suites, and in general, as we test and discover bugs in the system, we will enrich test suites in each repo.|
-| 0d. | Docker | N/A
-| 0e. | Article | We will publish an **article** at the end that describes all the work done so far in the project and celebrates this important milestone. |
-| 1. | Like | Test Suite OK  |
-| 2. | Recommend | Test Suite OK |
-| 3. | Wallet | Test Suite OK |
-| 4. | Account | Test Suite OK |
-| 5. | History | Test Suite OK |
-| 6. | Claim Page Ownership | Test Suite OK |
-| 7. | Owned Pages | Test Suite OK |
-| 8. | Network Selection | Test Suite OK |
-
 
 
 
@@ -448,8 +390,7 @@ Please review our [Roadmap](https://www.wika.network/roadmap)
 for a high level view of our 3-phases plan. 
 
 At the technical level, once we achieve the above milestones, 
-we will be in a good position to start growing the community
-and harden the code base.
+we will be in a good position to start implementing governance aspects, audit and harden the codebase and grow the community.
 
 We will also work next on a bridge to a DEX to create the means to ramp in and out the chain.
 
@@ -494,12 +435,9 @@ one of our key objectives is to introduce our project to Web3 / Polkadot / Subst
 Also, though  all team members have proven track records of expertise and success in their particular fields, 
 we are aware that we are still "beginners" when it comes to blockchain and Substrate. 
 As such, being able to present our project to a panel of experts, gather feedback and learn, would be fantastic for our team.
- 
-Finally, we are definitely equiped to code the milestones #1, #2, #3 and #5;
-but for Milestone #4, we need to recruit a Substrate expert. 
 
 So if our Grant request were to be approved, 
-it would generate the right connections; and we would be set up for success to execute milestone #4.
+it would generate the right connections; and we would be set up for success to improve our blockchain codebase and graduate to mainnet afterwards.
 
 For these reasons, we are looking forward to starting a conversation with W3F, 
 and as we learn, we are very open to re-visiting this request's scope and form together. 
