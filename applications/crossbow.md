@@ -31,7 +31,7 @@ Of course, there are already a bunch of promising game engine projects, but they
 ### Team members
 
 - David Knyshenko, Blockchain/Full stack developer and Team Leader
-- Oleksii Knyshenko, Game/Mobile/Backend developer
+- Oleksii Knyshenko, Mobile/Backend developer
 - Kulmurzin Adil, Android developer
 - Daniil Anikin, Mobile and system developer
 
@@ -71,27 +71,51 @@ GitHub accounts of all team members:
 
 ## Development Roadmap :nut_and_bolt:
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 1. | Support AAB | Add support of generation AAB file. [Android App Bundle](https://developer.android.com/guide/app-bundle) is a publishing format that includes all your app’s compiled code and resources. |  
-| 2. | Support Macroquad engine | Add support of [Macroquad](https://macroquad.rs/) engine. We will change our crossbundle command-line tool to support Android and iOS building of Macroquad. |  
-| 3. | Support Android Plugins | Add support of Android plugins to help add additional functionality provided by the Android platform and ecosystem (like Ads, Auth, In-app purchases, etc.). Something similar to [Godot Android plugins](https://docs.godotengine.org/en/stable/tutorials/plugins/android/android_plugin.html). |  
-| 4. | Support Cross-platform permissions | Provide a single cross-platform permission API that works with any [iOS](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/accessing-user-data/), [Android](https://developer.android.com/games/develop/permissions), etc application that can be accessed from shared code no matter how the user interface is created. |  
-| 5. | Simple installation | Simple installation with environment variables, libs, etc. Make installation of Android SDK, NDK, tools more robust. |  
-| 6. | Support iOS Plugins | Add support of iOS plugins to help add additional functionality provided by the Apple platforms and ecosystem (like Ads, Auth, In-app purchases, etc.). Something similar to [Godot iOS plugins](https://docs.godotengine.org/en/stable/tutorials/platform/ios/ios_plugin.html). |  
-| 7. | Sign in with Google | Add support of [Google Sign In](https://developers.google.com/games/services/common/concepts/sign-in) inside any application. |  
-| 8. | Sign in with Apple | Add support of [Apple Sign In](https://github.com/lupidan/apple-signin-unity) inside any application. |  
-| 9. | Better support for Apple xcrun, xcode proj | Add better support and rust wrappers for Apple xcode tools, xcrun. Make cool xcode project generation library. |  
-| 10. | Apple Game Center | Add [Apple Game Center](https://developer.apple.com/documentation/gamekit) support. |  
-| 11. | Android In-App purchases & Google Play Billing | Add support for [Google Play Billing](https://github.com/godotengine/godot-google-play-billing). Make it possible to buy items from your application. |  
-| 12. | Support Apple In-App purchases | Support Apple [StoreKit](https://developer.apple.com/documentation/storekit/in-app_purchase). Make it possible to buy items from your application. |  
-| 13. | Support Android In-App updates | Add support for [Android In-App updates](https://developer.android.com/guide/playcore/in-app-updates). |  
-
 ### Overview
 
-- **Sprint/Period Duration:** 1 month
-- **Full-Time Equivalent (FTE):** Min. 3 FTE
-- **Max budget per sprint/period:** 10,000 USD
+* **Total Estimated Duration:** 5.0 months
+* **Full-time equivalent (FTE):** 3.5
+* **Total Costs:** 40,000 USD
+
+### Milestone 1 — AAB and new engine support
+
+* **Estimated Duration:** 1 month
+* **FTE:** 3.5
+* **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Add aapt2 tool wrapper | Add wrapper for [aapt2](https://developer.android.com/studio/command-line/aapt2) tool for AAB generation. |
+| 2. | Add bundletool wrapper | Add wrapper for [bundletool](https://developer.android.com/studio/command-line/aapt2) for generation AAB file. |
+| 3. | Support AAB (needs deliverable#1 and deliverable#2) | Add support of generation AAB file. [Android App Bundle](https://developer.android.com/guide/app-bundle) is a publishing format that includes all your app’s compiled code and resources. |
+| 4. | Support Macroquad engine | Add support of [Macroquad](https://macroquad.rs/) engine. We will change our crossbundle command-line tool to support Android building of Macroquad. |
+| 5. | Enhance documentation | Write better code and wiki documentation. |
+
+### Milestone 2 — Android Plugins and Cross-platform permissions
+
+* **Estimated Duration:** 2.0 month
+* **FTE:** 4.0
+* **Costs:** 15,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Support Android Plugins | Add support of Android plugins to help add additional functionality provided by the Android platform and ecosystem (like Ads, Auth, In-app purchases, etc.). Something similar to [Godot Android plugins](https://docs.godotengine.org/en/stable/tutorials/plugins/android/android_plugin.html) and [Unity Plugins](https://github.com/google/play-unity-plugins) (or [here](https://github.com/playgameservices/play-games-plugin-for-unity)). |
+| 2. | Support Cross-platform permissions | Provide a single cross-platform permission API that works with any [iOS](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/accessing-user-data/), [Android](https://developer.android.com/games/develop/permissions) application that can be accessed from shared code no matter how the user interface is created. |
+| 3. | Simple installation of Android SDK and NDK | Simple installation with environment variables, libs, etc. Make installation of Android SDK, NDK, tools more robust. |
+| 4. | Enhance documentation | Add wiki documentation on how to create own Android plugins and how to use cross-platform permissions. |
+
+### Milestone 3 — Android Plugins
+
+* **Estimated Duration:** 2.0 months
+* **FTE:** 3.5
+* **Costs:** 15,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Sign in with Google | Add support of [Google Sign In](https://developers.google.com/games/services/common/concepts/sign-in) inside any application. |
+| 2. | Android In-App purchases with Google Play Billing | Add support for [Google Play Billing](https://github.com/godotengine/godot-google-play-billing). Make it possible to buy items from your game. |
+| 3. | Support Android In-App updates | Add support for [Android In-App updates](https://developer.android.com/guide/playcore/in-app-updates). |
+| 4. | Support Android In-App billing | Add support for [Android In-App billing](https://github.com/google/play-unity-plugins/tree/master/GooglePlayPlugins). |
 
 ## Future Plans
 
@@ -100,6 +124,16 @@ Possible additional features:
 - Firebase SDK.
 - Android Game SDK.
 - Some features that people will may be interested in.
+
+Also we want to make similar stuff for native iOS apps. Current nearest plans are:
+
+| Number | Title | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Support iOS Plugins | Add support of iOS plugins to help add additional functionality provided by the Apple platforms and ecosystem (like Ads, Auth, In-app purchases, etc.). Something similar to [Godot iOS plugins](https://docs.godotengine.org/en/stable/tutorials/platform/ios/ios_plugin.html). |
+| 2. | Sign in with Apple | Add support of [Apple Sign In](https://github.com/lupidan/apple-signin-unity) inside any application. |
+| 3. | Better support for Apple xcrun, xcode proj | Add better support and rust wrappers for Apple xcode tools, xcrun. Make cool xcode project generation library. |
+| 4. | Apple Game Center | Add [Apple Game Center](https://developer.apple.com/documentation/gamekit) support. |
+| 5. | Support Apple In-App purchases | Support Apple [StoreKit](https://developer.apple.com/documentation/storekit/in-app_purchase). Make it possible to buy items from your application. |
 
 ## Additional Information :heavy_plus_sign:
 
