@@ -95,7 +95,7 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 * **Total Costs:** 1.21 BTC
 
 ### Milestone 1 Implement IP Management/Governance Module 
-* **Estimated Duration:** 2 month
+* **Estimated Duration:** 2 months
 * **FTE:**  3.5
 * **Costs:** 0.94 BTC
 
@@ -110,15 +110,19 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 | 4. | Access control | Manage access permissions to specific IP asset with unique Proof of Share entries that confirm a specific user was granted access to an asset. C++/Rust|
 | 5. | Docker | Dockerfile to run a chain. 
 
-### Milestone 2 Implement Web-base UI 
-* **Estimated Duration:** 1 month
+### Milestone 2 Implement Web-base UI (Human Capital Tokeization Use-Case (Vedai))
+* **Estimated Duration:** 2 months
+* **Estimated Completion:** End of December 2021
 * **FTE:**  1
-* **Costs:** 0.27 BTC
+* **Costs:** 11000 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 1. | Web-based UI | Manage working groups (DAOs), project management, IP asset creation and registration, certificate verification page. Vue.js & Node.js + MongoDb for web-based app backend|
+| 1. | Web-based UI | Manage working groups (DAOs), project management, IP asset creation and registration (tokenized Income Share Agreements). Vue.js & Node.js + MongoDb for web-based app backend|
+
+#### Use-case description
+[Vedai](https://vedai.org) is an investment platform that enables companies and individuals to invest into coding bootcamp Income Share Agreement (ISA) programs and receive a share of the bootcamp profits in ISA returns. This novel investment mechanism allows to align incentives for all participants of the educational market and advance the development of global human capital.
 
 ## Future Plans
 
