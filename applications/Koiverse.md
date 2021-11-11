@@ -188,6 +188,8 @@ The gaming NFT protocols and Dapp consists of:
 
 * Implement web front-end based on react.js and polkadot.js. Modules include: NFT Lottery Draw, NFT Auction Sale, NFT Minting, Fish and Fish Tank.
 * Implement web front-end based on react.js, polkadot.js and pixi.js. Game functions include Fishing Mining, Fish Breeding, Pictorial Book Mining.
+* UI mockups: https://www.figma.com/file/0uuKT3XxB6hbzyFxLnzfAr/Koi-Metaverse?node-id=0%3A1
+* Fish Gene and Images: https://drive.google.com/drive/folders/1R4EoaDhoPkpxd9vchh7KLs-jx94pKad1?usp=sharing
 
 
 ### Ecosystem Fit
@@ -403,7 +405,7 @@ Hongfeng Liu
    </td>
    <td>UI mock-ups
    </td>
-   <td><a href="https://www.figma.com/file/0uuKT3XxB6hbzyFxLnzfAr/Koi-Metaverse?node-id=0%3A1">https://www.figma.com/file/0uuKT3XxB6hbzyFxLnzfAr/Koi-Metaverse?node-id=0%3A1</a>
+   <td>The UI design of product frontend and product workflow.
    </td>
   </tr>
   <tr>
@@ -411,7 +413,7 @@ Hongfeng Liu
    </td>
    <td>Fish Genes and Images
    </td>
-   <td><a href="https://drive.google.com/drive/folders/1R4EoaDhoPkpxd9vchh7KLs-jx94pKad1?usp=sharing">https://drive.google.com/drive/folders/1R4EoaDhoPkpxd9vchh7KLs-jx94pKad1?usp=sharing</a>
+   <td>The UI design and gene system of fish NFTs.
    </td>
   </tr>
   <tr>
