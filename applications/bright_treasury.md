@@ -281,6 +281,7 @@ The main goal of this milestone is implementation of the bounties mechanism. Use
 |	13.	|	User story 34	|	As a user I can see the proposal’s description published on Polkassembly.	|
 |	14.	|	User story 35	|	As a user I can see the bounty’s description published on Polkassembly.	|
 |	15.	|	User story 36	|	As a user I can use the Milestone 1 and Milestone 2 features in production environment	|
+|	16.	|	User story 37	|	As a user I cannot edit my idea once the associated proposal is closed (rewarded or rejected)	|
 
 ### Community engagement
 It is our priority to make the BrightTreasury app a living part of the community’s life and as such, we plan on several informational activities such as:
