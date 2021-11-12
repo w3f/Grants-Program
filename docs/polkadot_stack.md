@@ -137,7 +137,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Randomness | [DKG and Randomness Beacon](https://github.com/Cardinal-Cryptography/substrate/tree/randomness-beacon)
 | Licensing |
 | Banking Integration | [FIAT on-off-ramp](https://github.com/element36-io/ebics-java-service)
-| Other | [Substrate Open Runtime Module Library](https://github.com/open-web3-stack/open-runtime-module-library), [AI Infrastructure on Blockchain](https://github.com/anudit/cerebrum), [Substrate Account Filter](https://github.com/gautamdhameja/substrate-account-filter), [Subtensor](https://github.com/opentensor/subtensor) | On-chain quadratic funding (e.g. https://clr.fund/#/about), Decentralized review/reputation system 
+| Other | [Substrate Open Runtime Module Library](https://github.com/open-web3-stack/open-runtime-module-library), [AI Infrastructure on Blockchain](https://github.com/anudit/cerebrum), [Substrate Account Filter](https://github.com/gautamdhameja/substrate-account-filter), [Subtensor](https://github.com/opentensor/subtensor), [BitGreen](https://github.com/bitgreen/bitg-node) | On-chain quadratic funding (e.g. https://clr.fund/#/about), Decentralized review/reputation system 
 
 ### :black_circle: Host
 
