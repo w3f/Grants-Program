@@ -33,7 +33,8 @@ Of course, there are already a bunch of promising game engine projects, but they
 - David Knyshenko, Blockchain/Full stack developer and Team Leader
 - Oleksii Knyshenko, Mobile/Backend developer
 - Kulmurzin Adil, Android developer
-- Daniil Anikin, Mobile and system developer
+- Daniil Anikin, Mobile/System developer
+- Rodrigo Oliveira, Game/Mobile developer
 
 ### Contact
 
@@ -63,6 +64,7 @@ GitHub accounts of all team members:
 - https://github.com/olvyko
 - https://github.com/Heezay
 - https://github.com/Adoka3710
+- https://github.com/rodrigocam
 
 ### Team LinkedIn Profiles (if available)
 
@@ -85,6 +87,10 @@ GitHub accounts of all team members:
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can create own game project with Macroquad and our toolkit, generate and sign AAB file. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Add aapt2 tool wrapper | Add wrapper for [aapt2](https://developer.android.com/studio/command-line/aapt2) tool for AAB generation. |
 | 2. | Add bundletool wrapper | Add wrapper for [bundletool](https://developer.android.com/studio/command-line/aapt2) for generation AAB file. |
 | 3. | Support AAB (needs deliverable#1 and deliverable#2) | Add support of generation AAB file. [Android App Bundle](https://developer.android.com/guide/app-bundle) is a publishing format that includes all your app’s compiled code and resources. |
@@ -116,6 +122,7 @@ GitHub accounts of all team members:
 | 2. | Android In-App purchases with Google Play Billing | Add support for [Google Play Billing](https://github.com/godotengine/godot-google-play-billing). Make it possible to buy items from your game. |
 | 3. | Support Android In-App updates | Add support for [Android In-App updates](https://developer.android.com/guide/playcore/in-app-updates). |
 | 4. | Support Android In-App billing | Add support for [Android In-App billing](https://github.com/google/play-unity-plugins/tree/master/GooglePlayPlugins). |
+| 5. | Article | We will prepare and publish an article/tutorial that explains how to add Sign in with Google, create own Android Plugins with our toolkit (what was done/achieved as part of the grant). |
 
 ## Future Plans
 
