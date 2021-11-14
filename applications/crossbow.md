@@ -105,10 +105,13 @@ GitHub accounts of all team members:
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how to create own Android plugins and how to use cross-platform permissions. Also, update docs on how to install and start using toolkit. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Support Android Plugins | Add support of Android plugins to help add additional functionality provided by the Android platform and ecosystem (like Ads, Auth, In-app purchases, etc.). Something similar to [Godot Android plugins](https://docs.godotengine.org/en/stable/tutorials/plugins/android/android_plugin.html) and [Unity Plugins](https://github.com/google/play-unity-plugins) (or [here](https://github.com/playgameservices/play-games-plugin-for-unity)). |
 | 2. | Support Cross-platform permissions | Provide a single cross-platform permission API that works with any [iOS](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/accessing-user-data/), [Android](https://developer.android.com/games/develop/permissions) application that can be accessed from shared code no matter how the user interface is created. |
 | 3. | Simple installation of Android SDK and NDK | Simple installation with environment variables, libs, etc. Make installation of Android SDK, NDK, tools more robust. |
-| 4. | Enhance documentation | Add wiki documentation on how to create own Android plugins and how to use cross-platform permissions. |
 
 ### Milestone 3 — Android Plugins
 
@@ -118,6 +121,10 @@ GitHub accounts of all team members:
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how to use Google Play Billing and In-App updates in your own rust game project. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Sign in with Google | Add support of [Google Sign In](https://developers.google.com/games/services/common/concepts/sign-in) inside any application. |
 | 2. | Android In-App purchases with Google Play Billing | Add support for [Google Play Billing](https://github.com/godotengine/godot-google-play-billing). Make it possible to buy items from your game. |
 | 3. | Support Android In-App updates | Add support for [Android In-App updates](https://developer.android.com/guide/playcore/in-app-updates). |
