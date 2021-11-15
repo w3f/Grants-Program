@@ -10,7 +10,7 @@ Health Hero
 
 ## Payment Address
 
-0xc7ad868f9b421dabf7cdaa0e6c508ff74e2f1cfd
+0xc7ad868f9b421dabf7cdaa0e6c508ff74e2f1cfd (USDT)
 
 ## Overview
 
