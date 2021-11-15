@@ -87,6 +87,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Robert Hambrock](https://github.com/Lederstrumpf)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
+- [Bill Laboon](https://github.com/laboon)
 - [Aleixo Sánchez](https://github.com/alxs)
 - [Reto Trinkler](https://github.com/retotrinkler)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
