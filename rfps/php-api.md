@@ -1,7 +1,7 @@
 # PHP Substrate API
 
 * **Proposer:** [swader](https://github.com/api)
-* **Status:** Open
+* **Status:** [In progress](https://github.com/gmajor-encrypt/php-substrate-api)
 
 ## Project Description :page_facing_up: 
 
