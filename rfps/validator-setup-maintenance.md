@@ -12,6 +12,7 @@ This RFP aims at providing maintenance to that repository and add some small fea
 ## Deliverables :nut_and_bolt:
 
 A list of possible tasks to work on:
+- fixing issues and improving documentation
 - updating any libraries/deps needed
 - support additional terraform backends to store the terraform state (currently only `gcp`, could add `s3`: see [this issue](https://github.com/w3f/polkadot-validator-setup/issues/108) and local storage or even git - it should be discouraged in prod but very useful for testing). See also [this issue](https://github.com/w3f/polkadot-validator-setup/issues/7)
 - investigate pass-phrased ssh key deployment: [issue 109](https://github.com/w3f/polkadot-validator-setup/issues/109)
