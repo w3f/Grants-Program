@@ -81,7 +81,7 @@ we have all the necessary foundations and ingredients to succeed:
 
 * Components:
 
-    ![Architecture](https://www.wika.network/img/docs/tech_architecture.png)
+    ![Architecture](https://www.wika.network/img/tech/architecture.png)
 
     - **Blockchain** 
       - Repo: [wika_node](https://github.com/randombishop/wika_node) 
@@ -100,9 +100,6 @@ we have all the necessary foundations and ingredients to succeed:
       - Not started yet.
     
     - **Offchain API** 
-      - Not started yet.
-    
-    - **DEX Bridge** 
       - Not started yet.
     
     - **Integrations** 
