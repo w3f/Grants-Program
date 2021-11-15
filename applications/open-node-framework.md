@@ -50,11 +50,10 @@ Open Node Framework has its MVP implementaion availabe at our [Github Repo](http
 
 In this grant, we are going to expand Open Node Framework in aspects:
 
-1. Enable parachain architecture (the MVP only supports standalone Substrate blockchains)
-2. Support more cloud service providers by default
-3. Cross-datacenter deployment with central management
-4. Better dashboard and data visualization frontend
-5. HA collator validator setup
+1. Switch the code base to a fork of w3f/polkadot-deployer
+2. Enable parachain and 3rd party binary config
+3. Cross-datacenter deployment with a central place to manage and view the dashboard
+4. HA collator validator setup
 
 We are interested in the following areas but want to leave them for future work:
 
@@ -106,7 +105,7 @@ Open Node Framework is an open source project initiated by core members of [Phal
 
 ### Team Code Repos
 
-* Open Node development repo: https://github.com/Phala-Network/open-node
+* Open Node development repo: https://github.com/Phala-Network/open-node-deployer
 * Open Node MVP: https://github.com/Tenet-X
 * Phala Network team repo: https://github.com/Phala-Network
 ### Team LinkedIn Profiles
@@ -116,7 +115,7 @@ Open Node Framework is an open source project initiated by core members of [Phal
 
 ## Development Status :open_book: 
 
-The first version of Open Node Framework is available on [Github](https://github.com/Tenet-X). It has the basic framework to run validators. Please see [Project Details](#Project-Details).
+The MVP of Open Node Framework is available on [Github](https://github.com/Tenet-X) but we are going to switch to build on polkadot-deployer [on our fork](https://github.com/Phala-Network/open-node-deployer) instead. Please see [Project Details](#Project-Details).
 
 ## Development Roadmap :nut_and_bolt: 
 
@@ -125,6 +124,8 @@ The first version of Open Node Framework is available on [Github](https://github
 * **Total Estimated Duration:** 3 months
 * **Full-Time Equivalent (FTE):**  2 FTE
 * **Total Costs:** 22,000 USD
+
+In the milestone deliverable table, the features marked with _"(addition)"_ means add-on feature to the upstrea polkadot-deployer, and _"(integration)"_ means some changes in the upstream are required.
 
 ### Milestone 1 - Basic features and operating security improvement
 
@@ -138,12 +139,10 @@ The first version of Open Node Framework is available on [Github](https://github
 | 0b. | Documentation | Design docs including the architecture of the system and the design choices (including which open source projects to integrate). Inline documentation of the config files. |
 | 0c. | Testing Guide | A guide describing how to run the tests covering the cases in 0b. |
 | 0d. | Article/Tutorial | We will publish a tutorial and an workshop that explains how the project can be used to deploy different types of blockchain network. |
-| 1. | Operating scripts | The scripts to: scale up / down the nodes and get direct access to the nodes |
-| 2. | Authenticated RPC | Add the authentication layer to the node RPC for node ops |
-| 3. | Parachain support | Add parachain config. Allow to put relay chain validators or parachain collators directly behind a firewall for Collator Protocol. |
-| 4. | Custom Substrate support | Enable custom Substrate blockchain integration with the example configs to integrate with Substrate sample node (substrate/node/cli) |
-| 5. | Resize the node cluster | Scripts to support scaling up or down the size of the cluster |
-
+| 1. | Parachain support | Add parachain config support. (addition) |
+| 2. | Custom Substrate support | Enable custom Substrate blockchain integration with the example configs to integrate with Substrate sample node (substrate/node/cli) (addition) |
+| 3. | Operating scripts | The scripts to: scale up / down the nodes (addition) and get direct access to the nodes (integration) |
+| 4. | Authenticated RPC | Add the authentication layer to the node RPC for node operation (integration) |
 
 ### Milestone 2 — Advanced Features
 
@@ -158,12 +157,12 @@ The first version of Open Node Framework is available on [Github](https://github
 | 0b. | Documentation | We will provide high availability and session key management design docs, inline documentation of the config files and a basic tutorial that explains how to add HA setup, backup nodes, and alerts to the basic configurations as in M1. |
 | 0c. | Testing Guide | A guide describing how to run the tests covering the cases in 0b. |
 | 0d. | Article/Tutorial | We will extend the workshop to show how to deploy a hardened node network. |
-| 1. | Backup node and recovery | Add sync node type and database backup & recovery routines. Add scripts to trigger and minotor the process. |
-| 2. | Session key management | Add the script to interact with the node and the blockchain to generate and rotate the session keys, and add routines to migrate keys between validators and collators (or mount the keystore db to the assigned validators) |
-| 3. | Alerts, monitoring, and logging | Implement the monitoring infrastructure with Prometheus and Loki to collect metrics and logs. Define the collator / validator related warnings and metrics and add them to the alerm manager. |
-| 4. | Grey release | Integrate with CI/CD pipeline and enable greyscale release inside the cluster |
-| 5. | HPA scaling | Automatically scale the storage and the size of the cluster based on load of the nodes |
-| 6. | More deployment modes | Templates to deploy bootstrap nodes, API nodes, and simulation network |
+| 1. | Backup node and recovery | Add sync node type and database backup & recovery routines. Add scripts to trigger and minotor the process. (addition) |
+| 2. | Session key management | Add the script to interact with the node and the blockchain to generate and rotate the session keys, and add routines to migrate keys between validators and collators (or mount the keystore db to the assigned validators) (addition) |
+| 3. | Alerts, monitoring, and logging | Implement the monitoring infrastructure with Prometheus and Loki to collect metrics and logs. Define the collator / validator related warnings and metrics and add them to the alerm manager. (integration) |
+| 4. | Grey release | Integrate with CI/CD pipeline and enable greyscale release inside the cluster. (addition) |
+| 5. | HPA scaling | Automatically scale the storage and the size of the cluster based on load of the nodes. (addition) |
+| 6. | More deployment modes | Templates to deploy bootstrap nodes, API nodes, and simulation network. (addition) |
 
 ## Future Plans
 
