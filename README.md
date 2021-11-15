@@ -249,6 +249,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
+- [Picasso / Composable Grants Program](https://grants.composable.finance)
 
 ## :information_source: License<!-- omit in toc -->
 
