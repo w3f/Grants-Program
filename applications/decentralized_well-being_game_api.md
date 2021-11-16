@@ -130,7 +130,7 @@ FTE
 
 Costs
 
-- $10,000 USD
+- $50,000 USD
 
 ### Purposed Architecture Diagram
 ![Architecture  Diagram](https://user-images.githubusercontent.com/44548958/141519034-141c54af-9818-42ea-9ae3-37f5abd8fc7a.png)
