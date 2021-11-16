@@ -1,4 +1,4 @@
-# W3F Maintenance Grant Proposal
+# W3F Grant Proposal
 
 - **Project Code Name:** Crossbow (formerly `Creator`)
 - **Team Name:** DodoRare, Inc.
