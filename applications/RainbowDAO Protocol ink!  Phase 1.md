@@ -675,6 +675,7 @@ For the first milestone, we focused on developing some basic contracts of Rainbo
 |     7. | ink! Contract: authorityManage | This contract belongs to the authority management contract and is mainly used to manage the authority of the protocol.|
 |     8. | ink! Contract: routeManage  | This contract belongs to the routing management contract and is mainly used to manage and replace the contract address of the protocol. |
 |     9. | ink! Contract: rainbowcore  | The Rainbowcore contract is the entry management of these three contracts,roleManage ,authorityManage and routeManage ,overall planning and coordination. |
+|     10. | protocol UI  | We will deliver the UI of the first milestone with the contract. |
 
 ### Milestone 2 
 
@@ -699,6 +700,7 @@ For the second milestone, we focused on the development of DAO factory contract 
 |     6. | ink! Contract: daoVote  | This contract is used to manage DAO voting.          |
 |     7. | ink! Contract: daoUsers | This contract is used to manage the users of the DAO.               |
 |     8. | ink! Contract: daoVault | This contract is used to manage the DAO's treasury. |
+|     9. | protocol UI  | We will deliver the UI of the second milestone with the contract. |
 
 
 
