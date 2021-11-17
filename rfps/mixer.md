@@ -15,15 +15,13 @@ While it works to an extent, there are major drawbacks:
 * The entire process is cumbersome
 * If the user wants to *mix* the whole amount, analysis tools can still correlate similar-looking values (especially taking the fees into account).
 
-This is where **Smoothie** comes in: giving the user back their privacy.
-
 ### Project Details
 
 Conceptually, the project is similar to an Ethereum-based [tornado.cash](https://tornado.cash/). We won't describe the mechanics of that project in this application, but rather outline the differences in implementation and how it will translate to a Polkadot deployment.
 
 1. ZK Proof system
 
-Tornado cash uses a Groth16 proving scheme, whereas Smoothie will leverage a more modern and efficient scheme Plonk.
+Tornado cash uses a Groth16 proving scheme, whereas this proposal will leverage a more modern and efficient scheme Plonk.
 The three main advantages of Plonk over Groth16 are:
 
 * Faster prover time
@@ -45,12 +43,12 @@ Most importantly the Dusk lib uses custom data structures, that will need to be:
  - later, for optimisation, custom PackedLayout needs to be implemented for taking advantage of efficient storage
 
 
-Aside from the core of Smoothie (smart contracts), there are two more critical components to make it fully functional:
+Aside from the core protocol (smart contracts), there are two more critical components to make it fully functional:
 1. Tx Relayer: the whole idea of a mixer is that the withdrawing account can't be linked to the deposit account. This means withdrawing from an empty account which can't cover its Tx fees. This is where the relayer comes in: a user would generate the proof in the frontend portal with their own payout address and relayer's fee address as parameters, so that the relayer can't steal the funds. The relayer submits the Tx to the smart contract, which, upon verifying the correctness, would pay the amount to the user and a subtract the fee for the relayer.
 2. Frontend: users should have a friendly interface (akin to Tornado.cash) to:
   - create commitments and submit them to the mixer. They should be presented with a "note" that allows them to withdraw the amount later
   - select the relayer
-  - spend the notes, by submitting the necessary data to the smoothie contract for it to verify the ownership of the deposited coin
+  - spend the notes, by submitting the necessary data to the contract for it to verify the ownership of the deposited coin
 
 ### Ecosystem Fit
 
@@ -76,7 +74,7 @@ The project closest to ours is [anon](https://github.com/webb-tools/anon). They 
 3. Add the signature for the `withdraw` function. Verify that the submitted nullifier hash hasn't been "spent" yet.
 4. Emit the `Deposit` and `Withdraw` events.
 
-### Milestone 2: Integrate Poseidon hash into Smoothie
+### Milestone 2: Integrate Poseidon hash
 
 * **Estimated duration:** 0.5 month
 * **FTE:**  1
@@ -126,7 +124,7 @@ Utilise [Dusk's Plonk implementation](https://github.com/dusk-network/plonk) as 
 * **FTE:**  1
 
 An offline tool (written in Rust or TypeScript, TBD) that is pre-funded and accepts incoming requests.
-It verifies the validity of the submitted proof & Tx. If correct, it submits the Tx to the smoothie `ink!` contract.
+It verifies the validity of the submitted proof & Tx. If correct, it submits the Tx to the `ink!` contract.
 
 Also here we will write out the smart contract logic for paying out the fee `f` to relayer address `t`, once a valid Tx has been submitted. This will fall under the `withdraw` method.
 
@@ -144,7 +142,7 @@ Also here we will write out the smart contract logic for paying out the fee `f` 
 
 1. Supporting arbitrary tokens
 2. ?? Wallet ??
-3. Incentive layer with Smoothie token: This is akin to Tornado.cash's TORN token. This is not strictly necessary for the functioning of the project, but it serves in users' best interest. The longer they keep the tokens in the smart contract (a.k.a anonymity pool), the more Smoothie they accumulate, thus keeping a high anonymity set and preserving privacy. This is also the most likely way to monetize the project, e.g.:
+3. Incentive layer with a token: This is akin to Tornado.cash's TORN token. This is not strictly necessary for the functioning of the project, but it serves in users' best interest. The longer they keep the tokens in the smart contract (a.k.a anonymity pool), the more tokens they accumulate, thus keeping a high anonymity set and preserving privacy. This is also the most likely way to monetize the project, e.g.:
   - 10% allocated to the founding team
   - 20% for early investors
   - 20% for public sale
