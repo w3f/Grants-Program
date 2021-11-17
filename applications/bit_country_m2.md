@@ -39,10 +39,7 @@ The team has been reconsidering the block planner for a bit country and its rela
 
 ### Tech Stack
 
-Frontend/UI: ReactJs, BabylonJs, HTML, JS, CSS
-API: C#/.NET Core, NodeJs
 Blockchain: Substrate/Rust
-Database: MongoDB
 
 ### Overview
 
