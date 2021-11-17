@@ -1,6 +1,7 @@
 # Multi-chain Block Explorer
 
 * **Status:** Open
+* **Teams/People that could deliver the RFP:** @clearloop, @carlhong
 
 ## Project Description :page_facing_up: 
 
