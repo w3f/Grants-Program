@@ -9,7 +9,7 @@ A part of the promise of Polkadot is to bring scalability to the blockchains. Th
 
 The full mechanism is described in [the host specification](https://github.com/w3f/polkadot-spec/blob/main/host-spec/c07-anv.tm). In short, it is split in two parts: first, a publicly known subset of validators attests that the parachain block data is available to them (i.e. they must have it in their local storage); second, once 2/3+ of the first group have published their availability votes, a "secret" (VRF-based assignment) subset of validators checks the validitiy of the candidate, by checking its state transition against that parachain runtime, which is available on-(the relay)chain.
 
-Currently, the gossip network among the relay chain validators does not make use of the public assignment of a the first subgroup of validators to a particular parachain. Instead, the candidate block is passed around the network until it reaches 2/3+ of approvals, causing an additional delay in the process of finalisation of the candidate.
+Currently, the gossip network among the relay chain validators does not make use of the public assignment of the first subgroup of validators to a particular parachain. Instead, the candidate block is passed around the network until it reaches 2/3+ of approvals, causing an additional delay in the process of finalisation of the candidate.
 
 This proposal aims to solve this issue by creating a selective gossip topology among the publicly known subset of validators assigned to a particular parachain ID.
 
