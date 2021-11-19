@@ -25,12 +25,16 @@ Tornado cash uses a Groth16 proving scheme, whereas this proposal will leverage 
 The three main advantages of Plonk over Groth16 are:
 
 * Faster prover time
-* Smaller number of circuit constraints[^1](for a concrete circuit proving leaf knowledge in a Merkle tree, which is essential for any mixer), leading to smaller program sizes
+* Smaller number of circuit constraints[^1], leading to smaller program sizes
 * Trusted setup, while still required, is universal (not relevant for this project)
+
+[^1]: for a concrete circuit proving leaf knowledge in a Merkle tree, which is essential for any mixer
 
 2. Hash function
 
-The advantage of building an end-product after Tornado is the opportunity to use newer hash functions, too. Specifically, we will be using a Poseidon hash function, which is more suited for ZK proof systems than Pedersen hash used in Tornado, using up to 8x less constraints per message bit [^2]([Poseidon Hash paper](https://eprint.iacr.org/2019/458.pdf))
+The advantage of building an end-product after Tornado is the opportunity to use newer hash functions, too. Specifically, we will be using a Poseidon hash function, which is more suited for ZK proof systems than Pedersen hash used in Tornado, using up to 8x less constraints per message bit [^2].
+
+[^2]: [Poseidon Hash paper](https://eprint.iacr.org/2019/458.pdf)
 
 3. Implementation
 
@@ -54,7 +58,6 @@ Aside from the core protocol (smart contracts), there are two more critical comp
 
 The project closest to ours is [anon](https://github.com/webb-tools/anon). They are building a mixer as a substrate module as opposed to smart contracts. Furthermore, they are utilizing the Bulletproofs system in contrast to Plonk.
 
-## Team :busts_in_silhouette:
 
 ## Development Roadmap :nut_and_bolt:
 

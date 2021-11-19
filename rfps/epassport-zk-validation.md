@@ -21,7 +21,7 @@ Please note that the below given details do not comprise neither detailed nor se
 * **Estimated Duration:** 3 months (incl. research)
 * **Costs:** 60,000 kUSD
 
-As the first step, we propose the creation of a working PoC without the use of zero-knowledge proofs taht can be deployed on substrate.
+As the first step, we propose the creation of a working PoC without the use of zero-knowledge proofs that can be deployed on substrate.
 
 Deliverables:
 - Chain can store the necessary certificates from CSCA
