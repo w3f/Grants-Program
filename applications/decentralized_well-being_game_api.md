@@ -132,7 +132,7 @@ Costs
 
 - $50,000 USD
 
-### Purposed Architecture Diagram
+### Purposed Diagram
 ![Architecture  Diagram](https://gohealthhero-production.s3.amazonaws.com/Web3.png)
 
 | Number | Deliverable | Specification |
