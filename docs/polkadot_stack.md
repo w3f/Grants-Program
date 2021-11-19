@@ -74,7 +74,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Validator Dashboards | [Polkacube](https://github.com/hashquark-io), [YieldScan](https://github.com/buidl-labs/YieldScan), [Hubble](https://github.com/figment-networks/hubble/tree/master/app/controllers/polkadot)
 | Node Explorers | [Polkadot Node Explorer](https://github.com/protos-research/polkadot-node-explorer)
 | NFT Explorer | [NFT Explorer for Kusama & Polkadot](https://github.com/kodadot/nft-gallery)
-| Governance Dashboards | [Polkassembly](https://github.com/premiurly/polkassembly), [dotreasury](https://github.com/opensquare-network/dotreasury), [Bright Treasury](https://github.com/bright/bright-tresury) | UI for the kusama and/or polkadot treasury (see [bounty module](https://github.com/paritytech/substrate/pull/5715)), UI for Parachain Lease Offering (PLO)  |
+| Governance Dashboards | [Polkassembly](https://github.com/premiurly/polkassembly), [dotreasury](https://github.com/opensquare-network/dotreasury), [Bright Treasury](https://github.com/bright/bright-tresury), [OpenSquare offchain voting](https://github.com/opensquare-network/collaboration) | UI for the kusama and/or polkadot treasury (see [bounty module](https://github.com/paritytech/substrate/pull/5715)), UI for Parachain Lease Offering (PLO)  |
 | Staking Rewards | [Staking Rewards Collector](https://github.com/w3f/staking-rewards-collector), [Staking Rewards Viewer](https://github.com/jackson-harris-iii/staking-rewards-viewer), [Polkadot Staking Site](https://github.com/cryptolab-network/polkadot-staking-site) |
 | Bridge UI | [Parity Bridges UI](https://github.com/paritytech/parity-bridges-ui), [Donut Interface (Steem <> Dot)](https://github.com/nutbox-dao/donut-interface) | |
 | Parachain/Crowdloan | [Parachains.Network](https://github.com/jhonalino/parachains.network) | |
@@ -112,7 +112,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 
 | Components | Existing projects | Potentially interesting projects
 |-|-|-
-| Scalable Transactions | [Perun channels](https://github.com/perun-network/perun-polkadot-pallet), [Plasm](https://github.com/staketechnologies/Plasm), [Celer](https://github.com/celer-network), [Gunclear](https://github.com/GunClear)| roll-ups, DAG-based consensus mechanisms, side chains |
+| Scalable Transactions | [Perun channels](https://github.com/perun-network/perun-polkadot-pallet), [CLI demo of Perun](https://github.com/perun-network/perun-polkadot-demo), [Plasm](https://github.com/staketechnologies/Plasm), [Celer](https://github.com/celer-network), [Gunclear](https://github.com/GunClear)| roll-ups, DAG-based consensus mechanisms, side chains |
 | Bridges |  [interBTC](https://github.com/interlay/interbtc), [Ethereum by Centrifuge](https://github.com/centrifuge/), [EOS by Bifrost](https://github.com/bifrost-finance), [POA <> Substrate](https://github.com/paritytech/parity-bridge), [Substrate <> Ethereum DAI Bridge](https://github.com/akropolisio/POC-polkadai-bridge), [Substrate <> Substrate Bridge](https://github.com/paritytech/substrate-bridge-relay), [BTC by ChainX](https://github.com/chainx-org/ChainX), [Cosmos-Substrate bridge](https://github.com/ChorusOne/wormhole-bridge), [Substrate IBC Pallet](https://github.com/octopus-network/substrate-ibc), [Polkadot Ethereum Bridge](https://github.com/Snowfork/polkadot-ethereum), [Darwinia](https://github.com/darwinia-network/darwinia), [Stellar/DeFi Bridge by Pendulum](https://github.com/pendulum-chain/pendulum-prototype) | ZCash |
 | Privacy | [Webb Anon](https://github.com/webb-tools/anon), [ZeroChain](https://github.com/LayerXcom/zero-chain), [pLibra (Phala Network)](https://github.com/phala-network), [Automata Network](https://github.com/automata-network/automata)
 | ZKP | [ZeroPool](https://github.com/zeropoolnetwork), [Megaclite](https://github.com/patractlabs/megaclite), [zkMega](https://github.com/patractlabs/zkmega) |
@@ -137,7 +137,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Randomness | [DKG and Randomness Beacon](https://github.com/Cardinal-Cryptography/substrate/tree/randomness-beacon)
 | Licensing |
 | Banking Integration | [FIAT on-off-ramp](https://github.com/element36-io/ebics-java-service)
-| Other | [Substrate Open Runtime Module Library](https://github.com/open-web3-stack/open-runtime-module-library), [AI Infrastructure on Blockchain](https://github.com/anudit/cerebrum), [Substrate Account Filter](https://github.com/gautamdhameja/substrate-account-filter), [Subtensor](https://github.com/opentensor/subtensor) | On-chain quadratic funding (e.g. https://clr.fund/#/about), Decentralized review/reputation system 
+| Other | [Substrate Open Runtime Module Library](https://github.com/open-web3-stack/open-runtime-module-library), [AI Infrastructure on Blockchain](https://github.com/anudit/cerebrum), [Substrate Account Filter](https://github.com/gautamdhameja/substrate-account-filter), [Subtensor](https://github.com/opentensor/subtensor), [BitGreen](https://github.com/bitgreen/bitg-node) | On-chain quadratic funding (e.g. https://clr.fund/#/about), Decentralized review/reputation system 
 
 ### :black_circle: Host
 

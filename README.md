@@ -87,6 +87,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Robert Hambrock](https://github.com/Lederstrumpf)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
+- [Bill Laboon](https://github.com/laboon)
 - [Aleixo Sánchez](https://github.com/alxs)
 - [Reto Trinkler](https://github.com/retotrinkler)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
@@ -162,7 +163,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
 
 ### Changes to a Grant after Approval
 
-- Accepted grant applications can be amended at any time. However, this _necessitates a reevaluation by the committee_ and the same number of approvals as an application (according to the [levels](#level_slider-levels). If your application has been accepted and, during development, you find that your project significantly deviates from the original specification, please open a new pull request that modifies the existing application. This also applies in case of significant delays.
+- Accepted grant applications can be amended at any time. However, this _necessitates a reevaluation by the committee_ and the same number of approvals as an application (according to the [levels](#level_slider-levels)). If your application has been accepted and, during development, you find that your project significantly deviates from the original specification, please open a new pull request that modifies the existing application. This also applies in case of significant delays.
 - If your _delivery schedule_ signficantly changes, please also open a pull request with an updated timeline.
 - If your deliveries are significantly delayed and we cannot get a hold of you, we will terminate your grant (3 approvals required, regardless of level).
 
@@ -193,7 +194,7 @@ The process of applying for a Maintenance Grant is similar to what was already o
 - An assurance that the current project owners are willing to review/accept your contributions (a note here: if you're fully taking over the project, it would make more sense for the current owners to transfer the repository to your organisation. If you can't get in touch with them, you may, of course, work on a fork)
 - Max budget per month
 
-Then, at the end of each month, you will need to provide a comprehensive report of the work done, including the list of issues/bugs/pull requests worked on, time spent on each of these & finally the associated cost. It is quite likely that the time allocation & cost will vary from month to month, depending on the nature of the project you're contributing to. The report should be in the form of a Milestone Delivery, again like the typical procedure. The payments will be done after the successful merge of each individual report.
+Then, at the end of each month, you will need to provide a comprehensive report of the work done, including the list of issues/bugs/pull requests worked on, time spent on each of these & finally the associated cost. It is quite likely that the time allocation & cost will vary from month to month, depending on the nature of the project you're contributing to. The delivery process and format should follow that of a typical [milestone delivery](https://github.com/w3f/Grant-Milestone-Delivery#mailbox-milestone-delivery-process), as will the processing of the payment.
 
 Please note that:
 - Maintenance grants, as the name suggests, are meant to allow teams/individuals to maintain a certain project, and not to continue its development or implement larger features. Please use the traditional application process for this purpose.
@@ -249,6 +250,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
+- [Picasso / Composable Grants Program](https://grants.composable.finance)
 
 ## :information_source: License<!-- omit in toc -->
 
