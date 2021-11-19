@@ -1,6 +1,8 @@
 # e-Passport ZK Validation
 
 * **Status:** Open
+* **Proposer:** [burges](https://github.com/burges), [FlorianFranzen](https://github.com/FlorianFranzen)
+
 
 ## Project Description :page_facing_up: 
 
