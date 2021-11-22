@@ -387,6 +387,7 @@
 | [Health Hero](https://www.gohealthhero.com/) | NFT Product Analytics Suite |  | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Tesseract](https://tesseract.one/) | Mobile dApps/Wallet Connection | [GitHub](https://github.com/tesseract-one) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Wow Labz](http://www.wowlabz.com) | Dot Marketplace | [GitHub](https://github.com/WowLabz) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Perun Network](https://perun.network/) | Perun Channels - Integration with go-perun | [GitHub](https://github.com/perun-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [InvArchitects](https://www.invarch.io/) | InvArch - IP Infrastructure for Substrate | [GitHub](https://github.com/InvArch) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SubGame Network](https://subgame.org) | A decentralized game platform Phase 2| [GitHub](https://github.com/SubGame-Network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [CESS LAB](https://www.cess.cloud/) | Cumulus Encrypted Storage System (CESS) | [GitHub](https://github.com/Cumulus2021/Whitepaper) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
