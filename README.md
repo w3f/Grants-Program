@@ -63,7 +63,7 @@ An overview of existing projects in the Web 3.0 Technology Stack along with broa
 
 [Requests For Proposals](rfps) (RFPs) represent concrete ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, so even if another team has already applied to implement a certain RFP, we invite you to do the same if you're interested.
 
-Finally, you don't need to start your own project in order to be elligible for a grant. Instead, some teams choose to port existing work to Substrate, where the pertinent licenses allow, or even to contribute to an existing open-source project. In the latter case, you should check in advance that the maintainers of the project are interested in your contribution, and the acceptance of the milestones will generally be tied to the inclusion of your work in said project. See the [Maintenance Grants section](#hammer_and_wrench-maintenance-grants) for more info.
+Finally, you don't need to start your own project in order to be eligible for a grant. Instead, some teams choose to port existing work to Substrate, where the pertinent licenses allow, or even to contribute to an existing open-source project. In the latter case, you should check in advance that the maintainers of the project are interested in your contribution, and the acceptance of the milestones will generally be tied to the inclusion of your work in said project. See the [Maintenance Grants section](#hammer_and_wrench-maintenance-grants) for more info.
 
 If you have a **good concept of the technical challenges** that your idea entails and would like feedback before applying, you can send us an [email](mailto:grants@web3.foundation) and tell us about it.
 
@@ -87,6 +87,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Robert Hambrock](https://github.com/Lederstrumpf)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
+- [Bill Laboon](https://github.com/laboon)
 - [Aleixo Sánchez](https://github.com/alxs)
 - [Reto Trinkler](https://github.com/retotrinkler)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
@@ -162,7 +163,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
 
 ### Changes to a Grant after Approval
 
-- Accepted grant applications can be amended at any time. However, this _necessitates a reevaluation by the committee_ and the same number of approvals as an application (according to the [levels](#level_slider-levels). If your application has been accepted and, during development, you find that your project significantly deviates from the original specification, please open a new pull request that modifies the existing application. This also applies in case of significant delays.
+- Accepted grant applications can be amended at any time. However, this _necessitates a reevaluation by the committee_ and the same number of approvals as an application (according to the [levels](#level_slider-levels)). If your application has been accepted and, during development, you find that your project significantly deviates from the original specification, please open a new pull request that modifies the existing application. This also applies in case of significant delays.
 - If your _delivery schedule_ signficantly changes, please also open a pull request with an updated timeline.
 - If your deliveries are significantly delayed and we cannot get a hold of you, we will terminate your grant (3 approvals required, regardless of level).
 
@@ -177,7 +178,7 @@ If you think that we should support the development of certain tools or projects
 3. Name the file after your idea: `project_name.md`.
 4. Fill out the template with the project details. Please include as many details as possible.
 5. Once you're done, create a pull request. The pull request should only contain _one new file_—the Markdown file you created from the template.
-6. You will see the same template as for creating an application. Plase replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
+6. You will see the same template as for creating an application. Please replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
 
 If you have an idea for a project but lack the technical background to create a detailed outline, you can open an [issue](https://github.com/w3f/Grants-Program/issues/new) instead or add it to the [tech stack](docs/polkadot_stack.md) as a potentially interesting project. However, your idea will have better chances of being implemented if you can provide a project outline such that it can be picked up straight away by a capable team.
 
@@ -193,7 +194,7 @@ The process of applying for a Maintenance Grant is similar to what was already o
 - An assurance that the current project owners are willing to review/accept your contributions (a note here: if you're fully taking over the project, it would make more sense for the current owners to transfer the repository to your organisation. If you can't get in touch with them, you may, of course, work on a fork)
 - Max budget per month
 
-Then, at the end of each month, you will need to provide a comprehensive report of the work done, including the list of issues/bugs/pull requests worked on, time spent on each of these & finally the associated cost. It is quite likely that the time allocation & cost will vary from month to month, depending on the nature of the project you're contributing to. The report should be in the form of a Milestone Delivery, again like the typical procedure. The payments will be done within two weeks after the successful merge of each individual report.
+Then, at the end of each month, you will need to provide a comprehensive report of the work done, including the list of issues/bugs/pull requests worked on, time spent on each of these & finally the associated cost. It is quite likely that the time allocation & cost will vary from month to month, depending on the nature of the project you're contributing to. The delivery process and format should follow that of a typical [milestone delivery](https://github.com/w3f/Grant-Milestone-Delivery#mailbox-milestone-delivery-process), as will the processing of the payment.
 
 Please note that:
 - Maintenance grants, as the name suggests, are meant to allow teams/individuals to maintain a certain project, and not to continue its development or implement larger features. Please use the traditional application process for this purpose.
@@ -249,6 +250,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
+- [Picasso / Composable Grants Program](https://grants.composable.finance)
 
 ## :information_source: License<!-- omit in toc -->
 
