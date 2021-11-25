@@ -1,79 +1,64 @@
-
-
 # Multisig Pallet
 
-* **Project Name:** Build Multisig on substrate
+* **Project Name:** Build A Minimum Viable Functioning Multisig Product on Substrate
 * **Team Name:** Dora Factory
 * **Payment Address:** 0xadcba9C5C8c33F7F71600c436F2F2B00bAbc9997
 
 ## Project Overview
 
-=== is the mostly used venture DAO template so far, hosting major venture & grant DAOs such as MolochDAO, The LAO, and MetaCartel Ventures. This project implements MolochDAO v1 on a Substrate pallet. The goal of this project is to eventually launch a MolochDAO for Polkadot ecosystem grants.
+Multisig is the mostly used DAO infrastructure so far. In the Ethereum ecosystem, multisig wallets are hosting major DAOs (such as venture DAOs & grant DAOs). This project implements a multisig pallet and a minimum viable functioning multisig product on a Substrate. The goal of this project is to eventually launch a multisig product that is integrated with Dora Factory's testnets and parachain.
 
-### Overview
-
-=== was conceived after the fail of The DAO -- the first pioneering effort to support Ethereum ecosystem projects. After The DAO failed, MolochDAO revived the idea of The DAO but with simplicity and security. The MolochDAO itself is a minimum viable DAO, which implemented a concise set of mechanisms including proposal submission, voting, and ragequit. It has been operating safely for some time, and currently hosting more than $6 Million to support Ethereum ecosystem projects with grants. 
-
-The open-source approach of MolochDAO has encouraged many other efforts. For example, The LAO (https://www.thelao.io/) and MetaCartel Ventures are using Moloch as an infrastructure to build DAO venture funds. Together, they are managing more than $50 Million worth of assets at this moment of writing. DAOhaus, on the other hand, creates a platform to create DAOs based on Moloch. It allows different types of organizations to create Moloch-like DAOs on Ethereum to manage its funds. The Open Law team is also developing a MolochV3 codebase (https://github.com/openlawteam/molochv3-contracts), which aims to break Moloch main contract into smaller smart contracts, and bring modularity to Moloch.
-
-Currently, there are two mature versions of MolochDAO that are widely accepted -- the MolochDAO v1 and the MolochDAO v2. MolochV2 has some major features on top of MolochV1, including 1) multiple tokens in guild bank; 2) loot and shares; 3) guildkick.
-
-This project develops a substrate pallet that implmenets MolochDAO v1 and v2, in two separate milestones. The goal of this project is to bring MolochDAO to Substrate and make it available for future DAOs on Polkadot, Kusama, and other parachain ecosystems.
-
-Dora Factory and DoraHacks team is building tools and infrastructures to incentivize / fund open source blockchain innovation. Therefore, one of the first use cases of a Substrate MolochDAO can be a grant DAO to support open source developer projects that build on Substrate. It is yet another alternative to the current funding schemes.
 
 ### Project Details 
 
-
 The MultiSig Substrate pallet will implement features including the following:
 - Create wallet by organization
-- Multi assets management
-- Sign a transaction for a wallet
+- Multi-asset management
+- Initiate a transaction in a wallet
+- Sign a transaction in a wallet
 - Spend assets on wallet
-- Collection address management
+- Controller address management
 - Organization member management
 
-There've been a multisig pallet developed by parity, however, that pallet (https://libraries.io/cargo/pallet-multisig) is too simple to meet actual requirements of DAO market. Our multisig comes from our deep thoughts about the DAO market requirements. 
+There've been a multisig pallet developed by parity. The pallet (https://libraries.io/cargo/pallet-multisig) is a basic building block for us to build a more complete multisig MVP to meet actual demands of DAOs. It should also become an open-source module for us and other developers to build more complicated multisig features in the future.
 
-Besides, in this grant, we'll implement a front end prototype project to demonstrate our functions.
+Besides, in this grant, we'll implement a frontend MVP to make the multisig work for end users.
 
 ### Ecosystem Fit 
 
-===Since quadratic funding is a community driven funding mechanism for early-stage grants, it will introduce a more community-driven method to fund developer community projects in the Polkadot and Kusama ecosystem.
+The Dora Factory team has built the first functioning quadratic funding pallet, a MolochDAO pallet (for both MolochDAO v1 & v2), and a POA local testnet that runs an actual quadratic funding round for Dora Factory ecosystem projects (https://hackerlink.io/grant/dora-factory/).
 
-It's also exciting to implement quadratic funding as an on-chain governance module and add it to Polkadot governance stack.
+In addition to the pallets, the Dora Factory team has also built up the parachain infrastructure with a core pallet that helps organizations register and use future pallets that are available on the Dora Factory parachain.
 
-MolochDAO is the most important open source DAO template in Ethereum ecosystem at this moment. It supports grant DAOs like MolochDAO and venture DAOs like The LAO and MetaCartel. Because of the simplicity of the Moloch mechanism, it can be extended to more use cases in the future.
-
-Supporting on-chain governance and open source ventures is an important task in the Polkadot ecosystem. Therefore, an open source MolochDAO will be a useful building block is important.
-
+Although structures vary in different organizations, funding management is a general demand of all decentralized organizations. Multisig has been proven to be the most general and flexible way of managing funds within a DAO (or any other forms of decentralized organizations / communities), because it introduces minimum procedure requirements of funding management except multi-signature itself. Therefore it is also the best entry point to a wider range of dGov applications.
 
 ### Team members
-* Dora Factory & DoraHacks Dev Team -- a team of developers who has built HackerLink.io/en, now hosting quadratic funding grants, bounties, and hackathons for BSC, Filecoin, HECO, Solana, etc. The team also implemented a quadratic funding Substrate pallet (https://github.com/w3f/Grant-Milestone-Delivery/pull/104).
+* Dora Factory & DoraHacks Dev Community -- a community of developers who has built HackerLink.io/en, now hosting quadratic funding grants, bounties, and hackathons for EVM ecosystems, Polygon, BSC, Filecoin, Solana, and Dora Factory itself (https://hackerlink.io/grant/dora-factory/). The team also implemented a quadratic funding Substrate pallet (https://github.com/w3f/Grant-Milestone-Delivery/pull/104), a Moloch pallet, and a DAO-as-a-Service Substrate chain to host dGov applications within the Polkadot / Substrate ecosystem.
 
 ### Contact
-* **Contact Name:** Eric Zhang
+* **Contact Name:** Paul Deng, Eric Zhang
 * **Contact Email:** eric@dorafactory.org
-* HackerLink.io/en
+* HackerLink.io
 
 ### Legal Structure 
 * Matsushiba Foundation LTD.
 
 ### Team Code Repos
 * https://github.com/DoraFactory
+* https://github.com/dorahacksglobal
 * https://github.com/zhangjiannan/QFgrant
 
 ## Development Roadmap
 
 ### Overview
-* **Total Estimated Duration:** 2 months
-* **Full-time equivalent (FTE):**  2
-* **Total Costs:** 2000 DAI
+* **Total Estimated Duration:** 3 months
+* **Full-time equivalent (FTE):**  3
+* **Total Costs:** 25000 DAI
 
 ### Milestone 1 -- Implement Multisig Pallet
 * **Estimated Duration:** 8 weeks
 * **FTE:**  2
-* **Costs:**  1000 DAI
+* **Costs:**  15000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -82,10 +67,10 @@ Supporting on-chain governance and open source ventures is an important task in 
 | 1. | Multisig Substrate Pallet | An open-source prototype of a MolochDAO v1 substrate pallet. The pallet will implement Multisig Key features include 1) Create wallet by organization 2) Multi assets management 3) Sign a transaction for a wallet 4) Spend assets on wallet 5) Collection address management 6) Organization member management |
 | 2. | Test | Deploy the runtime module to a Substrate node and test Multisig functions described above｜
 
-### Milestone 2  -- Implement Multisig frontend prototype
+### Milestone 2  -- Design and Implement An Multisig Frontend MVP
 * **Estimated Duration:** 4 weeks
 * **FTE:**  2
-* **Costs:** 1000 DAI
+* **Costs:** 10000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -96,4 +81,4 @@ Supporting on-chain governance and open source ventures is an important task in 
 
 ## Future Plans
 
-The next step after completion of the milestone, we will consider to integrate with our Dorafactory DAO  core module, which is designed to be an open DAO platforms. Any one interested can implement their own product based on our DAO core modules or just use our DAO service.
+Integrate the multisig MVP with the Dora Factory core pallet and allow any organization on the Dora Factory Substrate chain to create a multisig wallet and use it to manage funds and access the other dGov applications (e.g. Quadratic Funding, MolochDAO, etc.) in the ecosystem.
