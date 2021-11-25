@@ -99,7 +99,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Blockchain Indexing Engine | [Substrate Archive](https://github.com/paritytech/substrate-archive), [PSQL Indexer](https://github.com/usetech-llc/polkadot_psql_indexer), [Polkadothub Indexer](https://github.com/figment-networks/polkadothub-indexer), [Substrate Graph](https://github.com/playzero/substrate-graph), [Hydra](https://github.com/subsquid/hydra), [Subquery](https://github.com/OnFinality-io/subql) |
 | Blockchain/Event Monitoring | [Web3 Guardian](https://github.com/open-web3-stack/guardian), [Aurras Event Manager](https://github.com/HugoByte/aurras-event-manager) |
 | Gaming | [Mobile Game Framework for Substrate](https://github.com/creator-rs/creator/) | [Amethyst](https://amethyst.rs/) + [Substrate](https://substrate.dev/)
-| Other | [open-web3 JS library](https://github.com/open-web3-stack/open-web3.js), [VM-Bridge](https://github.com/CycanTech/GVM-Bridge)
+| Other | [open-web3 JS library](https://github.com/open-web3-stack/open-web3.js), [VM-Bridge](https://github.com/CycanTech/GVM-Bridge), [srtool](https://github.com/paritytech/srtool)
 
 ### :memo: ink Smart Contracts 
 
