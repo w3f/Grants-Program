@@ -14,11 +14,8 @@ Multisig is the mostly used DAO infrastructure so far. In the Ethereum ecosystem
 The MultiSig Substrate pallet will implement features including the following:
 - Create wallet by organization
 - Multi-asset management
-- Initiate a transaction in a wallet
-- Sign a transaction in a wallet
-- Spend assets on wallet
-- Controller address management
-- Organization member management
+- Initiate a transaction in a wallet, sign a transaction, confirm a transaction
+- Add a signer, update multisig rule
 
 There've been a multisig pallet developed by parity. The pallet (https://libraries.io/cargo/pallet-multisig) is a basic building block for us to build a more complete multisig MVP to meet actual demands of DAOs. It should also become an open-source module for us and other developers to build more complicated multisig features in the future.
 
@@ -56,7 +53,7 @@ Although structures vary in different organizations, funding management is a gen
 * **Total Costs:** 25000 DAI
 
 ### Milestone 1 -- Implement Multisig Pallet
-* **Estimated Duration:** 8 weeks
+* **Estimated Duration:** 10 weeks
 * **FTE:**  2
 * **Costs:**  15000 DAI
 
@@ -64,8 +61,10 @@ Although structures vary in different organizations, funding management is a gen
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT |
 | 0b. | Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Multisig Substrate Pallet | An open-source prototype of a MolochDAO v1 substrate pallet. The pallet will implement Multisig Key features include 1) Create wallet by organization 2) Multi assets management 3) Sign a transaction for a wallet 4) Spend assets on wallet 5) Collection address management 6) Organization member management |
-| 2. | Test | Deploy the runtime module to a Substrate node and test Multisig functions described above｜
+| 1. | Multisig Substrate Pallet | An open-source prototype of a Multisig substrate pallet. The pallet will implement Multisig Key features include 1) Create wallet by organization 2) Multi assets management 3) Initiate a transaction in a wallet, sign a transaction, confirm a transaction 4) Add a signer, update multisig rule | 
+| 2. | Parachain Integration | Deploy to some parachain(local/rococo) to demonstrate multi assests management flow |
+| 3. | Test | Deploy the runtime module to a Substrate node and test Multisig functions described above | 
+
 
 ### Milestone 2  -- Design and Implement An Multisig Frontend MVP
 * **Estimated Duration:** 4 weeks
@@ -76,7 +75,7 @@ Although structures vary in different organizations, funding management is a gen
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT |
 | 0b. | Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Multisig frontend prototype | An open-source prototype of a web project which is used to demonstrate communication with the substrate pallet. The demo will show the whole flow of the pallet key features including 1) Create wallet by organization 2) Multi assets management 3) Sign a transaction for a wallet 4) Spend assets on wallet 5) Collection address management 6) Organization member management|
+| 1. | Multisig frontend MVP | A functioning open-source frontend project. The frontend MVP will enable the whole flow of the pallet key features including 1) Create wallet by organization 2) Initiate, sign, and confirm transactions 3) Add signer and update multi-sig rule 4) Show transaction history of a wallet
 | 2. | Test | Deploy the runtime module to a Substrate node and test Multisig functions described above
 
 ## Future Plans
