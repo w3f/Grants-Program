@@ -16,7 +16,7 @@ This proposal aims to solve this issue by creating a selective networking topolo
 ## Deliverables :nut_and_bolt:
 
 * **Total Estimated Duration:** 14 weeks
-* **Total Costs:** 70,000 DAI
+* **Total Costs:** 90,000 DAI
 
 ### Milestone 1 - update & implementation plan
 
@@ -28,8 +28,8 @@ Tasks:
 - produce a write-up detailing the differences between current and proposed design
 - develop a roadmap for implementation, clearly identifying which parts of the codebase would be affected
 
-* **Estimated Duration:** 2 weeks
-* **Costs:** 10,000 DAI
+* **Estimated Duration:** 3 weeks
+* **Costs:** 15,000 DAI
 
 ### Milestone 2 - Topology discovery by validators
 
@@ -44,15 +44,15 @@ Tasks:
 - add a method that returns the above result. This can either be an RPC method, thus allowing it to be verified externally, or an internal method, where the validators report (could be as simple as console logs) their assignment
 - run tests to verify the correctness of the calculation and unanimous consensus
 
-* **Estimated Duration:** 4 weeks
-* **Costs:** 20,000 DAI
+* **Estimated Duration:** 6 weeks
+* **Costs:** 30,000 DAI
 
 ### Milestone 3 - Networking and benchmarking
 
 This should be a "simple" milestone, in that it replaces the previous mechanism for candidate block distribution (broadcast medium B) with direct links(D), as proposed in the [Overview](https://research.web3.foundation/en/latest/polkadot/networking/3-avail-valid.html#overview).
 
 * **Estimated Duration:** 8 weeks
-* **Costs:** 40,000 DAI
+* **Costs:** 45,000 DAI
 
 Tasks:
 - apply the topology calculated
