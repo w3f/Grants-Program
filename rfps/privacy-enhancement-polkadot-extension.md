@@ -4,7 +4,7 @@
 * **Proposer:** jonasW3F
 * **Your Project(s):** [optional]: N/A
 * **Projects you think this work could be useful for** [optional]: https://github.com/polkadot-js/extension
-* **Teams/People that could deliver the RFP** [optional]: N/A
+* **Teams/People that could deliver the RFP:** @celrisen
 
 ## Project Description :page_facing_up: 
 
