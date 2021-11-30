@@ -363,41 +363,41 @@ Hongfeng Liu
   <tr>
    <td>1
    </td>
-   <td>Substrate Module: NFT Lottery Draw
+   <td>smart contract: NFT Lottery Draw
    </td>
-   <td>NFT lottery module include: lottery function implemented by rust
+   <td>NFT lottery contract include: lottery function implemented by ink
    </td>
   </tr>
   <tr>
    <td>2
    </td>
-   <td>Substrate Module: NFT Auction Sale
+   <td>smart contract: NFT Auction Sale
    </td>
-   <td>NFT auction module include: fishList, fishGeneList, bid, refreshFishList, getMyFish functions implemented by rust
-   </td>
-  </tr>
-  <tr>
-   <td>3.
-   </td>
-   <td>Substrate Module: NFT Minting
-   </td>
-   <td>NFT minting module include: myNft, getNft, earned, stakeNft, withdrawNft, withdrawNftAll, getReward functions implemented by rust
+   <td>NFT auction contract include: fishList, fishGeneList, bid, refreshFishList, getMyFish functions implemented by ink
    </td>
   </tr>
   <tr>
    <td>3.
    </td>
-   <td>Substrate Module: Fish
+   <td>smart contract: NFT Minting
    </td>
-   <td>fish module include: gene, birthday, power, reproduction, growth implemented by rust
+   <td>NFT minting contract include: myNft, getNft, earned, stakeNft, withdrawNft, withdrawNftAll, getReward functions implemented by ink
+   </td>
+  </tr>
+  <tr>
+   <td>3.
+   </td>
+   <td>smart contract: Fish
+   </td>
+   <td>fish contract include: gene, birthday, power, reproduction, growth implemented by ink
    </td>
   </tr>
   <tr>
    <td>4.
    </td>
-   <td>Substrate Module: Fish Tank 
+   <td>smart contract: Fish Tank 
    </td>
-   <td>fish tank module include: capacity, totalPower, fishList implemented by rust
+   <td>fish tank contract include: capacity, totalPower, fishList implemented by ink
    </td>
   </tr>
   <tr>
