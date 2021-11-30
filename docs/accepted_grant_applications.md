@@ -407,7 +407,7 @@
 | [logion](https://logion.network/) | Logion wallet | [GitHub](https://github.com/logion-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SuperColony](https://www.supercolony.net/) | OpenBrush - Secure smart-contract development on ink! Phase 2 | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Nitor Infotech](https://www.nitorinfotech.com/) | Php substrate api | [GitHub](https://github.com/nitor-infotech-oss) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [@agryaznov](https://github.com/agryaznov) | Candle Auctions on Ink! | [GitHub](https://github.com/agryaznov/candle-auction-ink) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [@agryaznov](https://github.com/agryaznov) | Candle Auctions on Ink! | [GitHub](https://github.com/agryaznov/candle-auction-ink) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Iridium Industries](http://www.iridium.industries) | Iris: Decentralized storage network for substrate-based chains | [GitHub](https://github.com/iridium-labs/iris) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [DICO Team](https://dico.io/) | DICO: Decentralized and governable ICO platform | [GitHub](https://github.com/DICO-TEAM/dico-chain) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [DodoRare, Inc.](https://dodorare.com) | Crossbow - Cross-Platform Rust Toolkit for Games | [GitHub](https://github.com/dodorare) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
