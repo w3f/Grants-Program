@@ -7,34 +7,33 @@
 
 ## Project Overview :page_facing_up:
 
-We applied for a grant in 2020 which was approved under the name [Sensio Network](https://github.com/w3f/Grants-Program/pull/5). Since then the approach has been refined and greatly improved. We also did rebranding; SensioPhoto became [Kelp Digital](http://Kelp.Digital) and SensioNetwork became [Anagolay Network](http://Anagolay.Network).
+We applied for a grant in 2020 and got approved under the name [Sensio Network](https://github.com/w3f/Grants-Program/pull/5). Since then we did a lot of research and improved the approach. We did rebranding; SensioPhoto is [Kelp Digital](http://Kelp.Digital) and SensioNetwork is [Anagolay Network](http://Anagolay.Network).
 
 ### Overview
 
 Anagolay is a peer-to-peer network that stores records of Rights (Copyright, Licenses, and Ownership), Restrictions, and Proofs of any digital content. It empowers the users to store, claim, sell, and rent their work with the correct transfer of Rights and usage of Licenses. Actual digital data is _never_ stored on the chain, only the respective cryptographic proof. As such, it acts as an identifier, verifiable by users who have access to that same data without disclosing it in the process.
 
 
-In this grant we will be focusing on the basic building blocks, **Operation** and a **Workflow**. 
+In this grant we will focus on the core building blocks, **Operation** and a **Workflow**. 
 
-#### Operation explanation
-Operation is a well structured library with standardized input and output signatures, written in Rust and compiled to WASM. It acts as a lego piece, which you use to connect to other pieces, creating a Workflow. Operation itself consists of two parts, a manifest and its version. The version uses a content versioning system which allows the version to be used as a dependency exactly as it is, always. This solves the problem when a dependency introduces braking changes at the patch version or gets sold to a bad actor and they ship malicious code, or it's removed from the centralized registry. There are three type of the operations: `User`, `FlowControl`, and `System`. In this grant we are going to focus on `System` Operations and their execution.
 
-#### Workflow explanation 
-Workflow, as mentioned above, is a collection of Operations, chained together. Once executed, they produce the list of strings which act as the input data identifiers, which we call **Proofs**. The way how Operations are linked together is by following this rule `OperationA.outputType === OperationB.inputType`, which comes from the standardized interface that every Operation must implement. Execution is performed from bottom to top, where the most bottom operation acts as an entry point that receives the data. When Operation finishes the execution the Workflow execution function will pass the output as an input to the parent Operation, and so on until the execution reaches the top level, when it stops. The Workflow doesn't contain the Operation manifest, rather direct links to the Versions.
+#### Operation 
+Operation is a well-structured library with standardized input and output signatures, written in Rust and compiled to WASM. It acts as a lego piece, which you use to connect to other pieces, creating a Workflow. Operation itself consists of two parts, a manifest and its version. The version uses a content versioning system which allows the version to be used as a dependency exactly as it is, always. This solves the problem when a dependency introduces breaking changes at the patch version or gets sold to a bad actor and they ship malicious code, or it's removed from the centralized registry. There are three types of Operations: `User`, `FlowControl`, and `System`. In this grant, we are will focus on `System` Operations and their execution.
+
+#### Workflow 
+Workflow is a collection of Operations, chained together producing a tree-like structure where the leaf Operation is the entry-point. Once executed, they produce the list of strings that act as the input data identifiers, we call them **Proofs**. The way how Operations are linked together is by following this rule `OperationA.outputType === OperationB.inputType`, this is standardized interface that every Operation must implement. Execution is performed from bottom to top, where the most bottom operation acts as an entry point for receiving the data. When Operation is executed the Workflow execution function will pass the output as an input to the parent Operation, and so on until the execution reaches the top level when it stops. The Workflow doesn't contain the Operation manifest, rather direct links to the Versions.
 You can see [here](#workflow-for-image-poe) a diagram how one Workflow might look like. 
 
 **Execution**
 
-The most imporatnt environment for Workflow execution is Browser(WebWorkers) and Nodejs. All the Operations are compiled to WASM and completely WASM runtime agnostic. We will provide the examples for webpack, but they can be used directly in the WebWorkers or using Wasmer in non-Rust or non-wasm-native environments. Each Operation passes the data to their parent as a `bincode bytearray`, then the parent Operation deserializes it and uses it. It is mos efficient way we found which still keeps the execution in optimal speed limits.  HERE WE PUT THE DIAGRAM ABOUT THE OPERATION INTERNALS
+The most important environment for Workflow execution is Browser (WebWorkers) and Nodejs. All the Operations are compiled to WASM which can be run almost [anywhere](https://webassembly.org/roadmap/). Each Operation passes the data to its parent as a `bincode ByteArray`, then the parent Operation deserializes it and uses it. It's the most efficient way we found which still keeps the execution in optimal speed limits. 
 
 
-
-#### Example
-The most obvious examples where this approach is a game-changer are the NFT marketplaces. Especially when it comes to the definition of uniqueness. NFT is considered to be a unique thing, but it's not. What is unique is the identifier and not the content. It is possible to mint the same image as an NFT on different marketplaces ( [Kelp Digital Are NFTs as Unique as We Think? video](https://www.youtube.com/watch?v=ntyZ1tCy9Is) ) and on some marketplaces slightly modified image you can mint again, this alone states that there is no uniqueness. What we are building is a way to determine the uniqueness of the digital content. The Proofs are plural, they are the describing identifiers of the image. When this gets implemented, the NFT will stop being NFT and become something else,  because we rely on the identifiers of the content rather than on the incrementing value which is obtained through the minting process. The identifiers are as good as it is unique and reproducible Workflow, which anybody can create and store on Anagolay. With that in place, a third party could as well execute the Workflow and check that the content to verify it is the same as the original, or to which degree it is similar; this suggests that an operation result's nature can be other than cryptographic, for example, [LSH](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) where the most prominent example is a perceptual hash.
-
+#### Example how this approach affects other things
+The most obvious examples where this approach is a game-changer are the NFT marketplaces. Especially when it comes to the definition of uniqueness. NFT is considered to be a unique thing, but it's not. What is unique is the identifier and not the content. It is possible to mint the same image as an NFT on different marketplaces ( [Kelp Digital Are NFTs as Unique as We Think? video](https://www.youtube.com/watch?v=ntyZ1tCy9Is) ) and on some marketplaces slightly modified image you can mint again, this alone states that there is no uniqueness. What we are building is a way to determine the uniqueness of the digital content. The Proofs are plural, they are the describing identifiers of the image. When this gets implemented, the NFT will be obsolete and either die out or become something else. Why? Because we rely on the identifiers of the content rather than on the incrementing value which is obtained through the minting process and that makes every image or digital data potential NFT without minting. Third parties ( current NFT marketplaces ) can execute specific Workflow to obtain the Proofs, which they can store internally, or query Anagolay Network to see are these Proofs match any records with claimed Copyrights or Ownerships. Due to the nature of the Operation and its return, not every time, all Proofs will match, especially for an image; remember that the 2 out of 3 are cryptographic proofs, and one is [LSH](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) proof which can be used to calculate the similarity between the original image data and one that is already claimed. We can say that the distance of 0.98 will be considered as valid Proof of equality which means that the uploaded data is already known to the system and already has the owner. Example Workflow is [here](#workflow-for-image-poe)
 
 #### Workflow for image PoE
-Here is a working example of the Workflow, represented as a diagram for the dependencies only which at the end of the execution provide 3 proofs; 2 CIDs and 1 Perceptual hash. These Proofs are tied together and represent the identifiers of an image. Not using only cryptographic hashes like CID we can have the flexibility when it comes to the identifier creation by adding the weights which can signify the importance of the Proof in relation to another Proof. 
+Here is a working example of the Workflow, represented as a diagram for the dependencies only which at the end of the execution provide 3 proofs; 2 CIDs and 1 Perceptual hash. These Proofs are tied together and represent the identifiers of an image.  
 
 Image is located [here](https://bafybeieh5nuwrr2f75ejf4nalc5xyhrspj67yl7ha27toupsrg5wnowedm.ipfs.dweb.link/universe.jpg)
 
@@ -67,7 +66,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
     - can include and use the Anagolay pallets if they wish to maintain the Proofs and Statements for themselves
     - can include and use the Anagolay pallets to store and build the Workflows and Operations
   - Substrate based projects ( using Anagolay chain )
-    - define their own Workflows which are stored on the Anagolay chain and then execute them on the runtime or in off-chain-workers
+    - define their Workflows which are stored on the Anagolay chain and then execute them on the runtime or in off-chain-workers
     - chains that require Rights management for Copyrights and Ownerships of digital content where they would create them and assign to the users
     - using the Anagolay Workflows on any rust or wasm able runtime
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
@@ -152,7 +151,7 @@ This milestone will set the base for the next milestones.
 |    0e. | Article                          | We will publish an article that explains what was done as part of the grant, with the focus on the developers' community                                                                        |
 |     1. | Substrate module: `an_operation` | [See here](#substrate-module---an_operation)                                                                                                                                                    |
 |     2. | Benchmarks: `an_operation`       | Improving the benchmarking and re-calculation.                                                                                                                                                  |
-|     3. | Anagolay CLI: Operation Part 1        | [See here](#anagolay-cli-operation-part-1)                                                                                                                                                      |
+|     3. | Anagolay CLI: Operation Part 1   | [See here](#anagolay-cli-operation-part-1)                                                                                                                                                      |
 |     4. | Operation: `op_file`             | [See here](#operation---op_file)                                                                                                                                                                |
 |     5. | Rust demo crate - Part 1         | Part 1 of the rust demo crate. Setup the initial structure for the demo as a lib and binary.                                                                                                    |
 
