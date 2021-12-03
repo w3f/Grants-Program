@@ -166,7 +166,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 
 | Components | Existing projects | Potentially interesting projects
 |-|-|-
-| SR25519 | [rust](https://github.com/w3f/schnorrkel) (contains partial bindings for C, JavaScript, and Python), [.Net bindings](https://github.com/gautamdhameja/sr25519-dotnet), [C](https://github.com/usetech-llc/sr25519) *(old)*, [C](https://github.com/TerenceGe/sr25519-donna) *(new)*, [C/C++](https://github.com/soramitsu/soramitsu-sr25519-crust), [C#](https://github.com/usetech-llc/sr25519_dotnet), [Go](https://github.com/ChainSafe/go-schnorrkel), [java](https://github.com/debuggor/schnorrkel-java)
+| SR25519 | [rust](https://github.com/w3f/schnorrkel) (contains partial bindings for C, JavaScript, and Python), [.Net bindings](https://github.com/gautamdhameja/sr25519-dotnet), [C](https://github.com/usetech-llc/sr25519) *(old)*, [C](https://github.com/TerenceGe/sr25519-donna) *(new)*, [C/C++](https://github.com/soramitsu/soramitsu-sr25519-crust), [C#](https://github.com/usetech-llc/sr25519_dotnet), [Go](https://github.com/ChainSafe/go-schnorrkel), [java](https://github.com/debuggor/schnorrkel-java), [PHP](https://github.com/gmajor-encrypt/sr25519-bindings)
 | Distributed key generation (DKG) | [keygen.rs](https://github.com/isislovecruft/frost-dalek)
 | Validator HSMs| |
 | Validator HSM-like solutions|
