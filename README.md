@@ -16,7 +16,7 @@
   - [2. Application Review](#2-application-review)
   - [3. Milestone Delivery and Payment](#3-milestone-delivery-and-payment)
   - [Changes to a Grant after Approval](#changes-to-a-grant-after-approval)
-- [:mailbox_with_mail: Request for Proposals (RFP) Suggestions](#mailbox_with_mail-request-for-proposals-rfp-suggestions)
+- [:mailbox_with_mail: Suggest a Project](#mailbox_with_mail-suggest-a-project)
 - [:hammer_and_wrench: Maintenance Grants](#hammer_and_wrench-maintenance-grants)
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
@@ -167,20 +167,24 @@ The W3F Grants Program offers different grant levels to help you best depending 
 - If your _delivery schedule_ signficantly changes, please also open a pull request with an updated timeline.
 - If your deliveries are significantly delayed and we cannot get a hold of you, we will terminate your grant (3 approvals required, regardless of level).
 
-## :mailbox_with_mail: Request for Proposals (RFP) Suggestions
+## :mailbox_with_mail: Suggest a Project
 
-If you think that we should support the development of certain tools or projects (related to **Polkadot, Kusama or Substrate**) that aren't in the Polkadot/Kusama [tech stack](docs/polkadot_stack.md), feel free to submit an RFP suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem. We will review your proposal and, if we believe it’s useful, will create an RFP based on your idea and try to find teams to work on it.
+If you think that we should support the development of certain tools or projects (related to **Polkadot, Kusama or Substrate**) that aren't in the Polkadot/Kusama [tech stack](docs/polkadot_stack.md), feel free to submit a suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.
 
-**Instructions for submitting an RFP suggestion:**
+**Submit an idea:**
+
+If you have an idea for a project or would like to highlight an area in which you'd like to see teams build, but lack the technical background to create a detailed outline, you're welcome to open an [issue](https://github.com/w3f/Grants-Program/issues/new) or add it to the [tech stack](docs/polkadot_stack.md) as a potentially interesting project. We will review your suggestion and, if necessary, will create an RFP based on it and reach out to teams able to build it.
+
+**Submit an RFP (Request for Proposals):**
+
+Ideas generally have better chances of being implemented if they're presented in a project outline format that can be picked up straight away by a team, so if you have a good concept of the milestones required to bring your project to life, you can follow the process below and directly submit an RFP:
 
 1. [Fork](https://github.com/w3f/Grants-Program/fork) this repository.
-2. In the newly created fork, create a copy of the suggestion template ([`rfps/suggestion-template.md`](rfps/suggestion-template.md)) inside the [`rfps`](rfps) folder. Make sure you create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/rfps/suggestion-template.md) of the template inside the new one, and _do not modify the template file directly._
+2. In the newly created fork, create a copy of the suggestion template ([`rfps/suggestion-template.md`](rfps/suggestion-template.md)) inside the [`rfps`](rfps) folder. Make sure you create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/rfps/suggestion-template.md) of the template into the new one, and _do not modify the template file directly._
 3. Name the file after your idea: `project_name.md`.
 4. Fill out the template with the project details. Please include as many details as possible.
 5. Once you're done, create a pull request. The pull request should only contain _one new file_—the Markdown file you created from the template.
 6. You will see the same template as for creating an application. Please replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
-
-If you have an idea for a project but lack the technical background to create a detailed outline, you can open an [issue](https://github.com/w3f/Grants-Program/issues/new) instead or add it to the [tech stack](docs/polkadot_stack.md) as a potentially interesting project. However, your idea will have better chances of being implemented if you can provide a project outline such that it can be picked up straight away by a capable team.
 
 ## :hammer_and_wrench: Maintenance Grants
 
