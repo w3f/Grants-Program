@@ -17,7 +17,12 @@ The MultiSig Substrate pallet will implement features including the following:
 - Initiate a transaction in a wallet, sign a transaction, confirm a transaction
 - Add a signer, update multisig rule
 
-There've been a multisig pallet developed by parity. The pallet (https://libraries.io/cargo/pallet-multisig) is a basic building block for us to build a more complete multisig MVP to meet actual demands of DAOs. It should also become an open-source module for us and other developers to build more complicated multisig features in the future.
+There've been a multisig pallet developed by parity. The pallet (https://libraries.io/cargo/pallet-multisig) is a basic building block for us to build a more complete multisig MVP to meet actual demands of DAOs. It should also become an open-source module for us and other developers to build more complicated multisig features in the future. The reasons why build a new pallet are below
+
+1. Multisig pallet only provides 3 methods, which can not meet requirements application-level and DAO use cases
+2. The multisig pallet has not been updated for a while, we’ll implement more new features to help community to build a multisig pallet faster
+3. The latest polkadot{.js} has removed feautres to support multisig, which makes this pallet hard to debug/demonstrate
+4. As Dora Factory is working on DAO infrastructures, most of our users are organization users, we are creating a multisig for organization users (e.g. a DAO can deposit and manage funding using the pallet and get access to a broader range of applications from Dora Factory). In this way this pallet can integrate with other Dora Factory pallets seamlessly.
 
 Besides, in this grant, we'll implement a frontend MVP to make the multisig work for end users.
 
