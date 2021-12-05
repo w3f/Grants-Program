@@ -13,7 +13,7 @@ Advertising in Metaverse
 
 AdMeta is a Metaverse advertisement platform that focuses on privacy-preserving. AdMeta uses DID to identify target groups for advertiser, and with the usage of zero-knowledge proof, AdMeta guarantees not to collect any user data. AdMeta builds billboard assets in Metaverse platforms like Decentraland, Bit.Country, to allow land holders to integrate our products easily.
 
-In Polkadot and Kusama ecosystem, DID projects like Litentry are growing fast along with its related products. We have already discussed and agreed on our initial cooperation with Litentry. Also, we have contacted with Metaverse projects like Bit.Country, who shows great interests as well.
+In Polkadot and Kusama ecosystem, DID projects like Litentry are growing fast along with its related products. We have already discussed and agreed on our initial cooperation with Litentry. Also, we have contacted with Metaverse projects like Bit.Country, who shows great interests in cooperation as well.
 
 Unlike traditional ad platforms, who collect users sensitive data(e.g. location, browsing history) for advertising, AdMeta does not collect or store any user data per se. Instead, users voluntarily decide and control what data can be stored in TEE, and the stored data in TEE cannot be accessed by anyone except users themselves.
 
@@ -27,19 +27,19 @@ The content of this ad component is selected according to user's personal data a
 
 Our blockchain is built with Substrate, and the pallet-ad provides the functionality of advertisement proposal, storage and governance. The user pallet will connect to TEE-based external identity aggregation and DID service provided by Litentry (we have already the initial cooperation plan) to match ads with users data and preference.
 
-#### Architecture:
+#### Architecture
 
 ![AdMeta Architecture](https://raw.githubusercontent.com/h4n0/gists/master/admeta/admeta_architecture.svg)
 
-Advertisers can propose an ad with certain acceptance rule, e.g. link clicking, and also advertiser provides how many times the ads are displayed and converted, and how much they pay for each conversion. They need to pay the total price (the number of ad conversion \* price per conversion) while proposing the ad.
+**Advertisers** can propose an ad with certain acceptance rule, e.g. link clicking, and also advertiser provides how many times the ads are displayed and converted, and how much they pay for each conversion. They need to pay the total price (the number of ad conversion \* price per conversion) while proposing the ad.
 
-Councils shall approve or reject ad proposals according to the content of ads. Also, advertisers are evaluated on their behavior democratically.
+**Councils** shall approve or reject ad proposals according to the content of ads. Also, advertisers are evaluated on their behavior democratically.
 
-Users can switch on the "Ad Display" option on AdMeta, so that users can get rewards by viewing and interacting with ads. By default, this option is off, which means users who haven't set up their AdMeta won't see any ads. Users can also provide their data for a better ad matching, by this means they will get more rewards.
+**Users** can switch on the "Ad Display" option on AdMeta, so that users can get rewards by viewing and interacting with ads. By default, this option is off, which means users who haven't set up their AdMeta won't see any ads. Users can also provide their data for a better ad matching, by means of this they will get more rewards.
 
-Publishers can simply utilize our Ad Assets on any Metaverse platform and place it on their lands. Users also get rewards by a successful display conversion.
+**Publishers** can simply utilize our Ad Assets on any Metaverse platform and place it on their lands. Users also get rewards by a successful display conversion.
 
-#### Technology Stack:
+#### Technology Stack
 
 - Substrate
 - Node.js
@@ -53,7 +53,7 @@ Our target audiences can be Web3 projects, who are potential advertisers, Metave
 
 Advertising is our natural needs in almost all social scenarios, and we meet this needs in Metaverse.
 
-[Parami](https://parami.io/) builds Web3 ad platforms as well, and their scope is to build the DID and privacy layer by themselves. While we are focusing on the advertising functionality only, and the DID service will be provided by Litentry, who is more professional on this field and has already their products. Also, our ad platform is targeting only in Metaverse, not Web3.
+[Parami](https://parami.io/) builds Web3 ad platforms as well, and their scope is to build the DID and privacy layer by themselves. While we are focusing on the advertising functionality, and the DID service will be provided by Litentry, who is more professional on this field and has already their products. Also, our ad platform is targeting on Metaverse, not Web3.
 
 ## Team :busts_in_silhouette:
 
@@ -61,7 +61,7 @@ Advertising is our natural needs in almost all social scenarios, and we meet thi
 
 Han Zhao - Core Dev and PM of Litentry Parachain Team, University of Stuttgart
 
-Yue Xie - Digital Marketing Lead, King's College London
+Yvonne Xie - Digital Marketing Lead, King's College London
 
 Shihao Zhao - Full Stack Dev of Litentry, University of Toronto
 
@@ -71,7 +71,7 @@ Hao Ding - VP of Litentry, Founder of Web3Go, University of Stuttgart
 
 - **Contact Name:** Han Zhao
 - **Contact Email:** windzhaohan@gmail.com
-- **Website:**
+- **Website:** https://admeta.network/
 
 ### Legal Structure
 
@@ -82,13 +82,13 @@ Hao Ding - VP of Litentry, Founder of Web3Go, University of Stuttgart
 
 Han is a core developer and project manager at Litentry, and he is one of the main developers who implemented the Litentry parachain from scratch. Litentry is an identity aggregation focused company in Polkadot ecosystem, and has got the Web3 Foundation grant since 2019.
 
-Yue has more than 8 years experience of digital marketing, and she has a deep understanding and practice of various online marketing and advertising methods.
+Yvonne has more than 8 years experience of digital marketing, and she has a deep understanding and practice of various online marketing and advertising methods.
 
 Shihao is a full stack developer at Litentry, who contributes a lot in Litentry and Web3Go web apps and backend apps.
 
 Hao is the founder of Web3Go, VP of Litentry, who has a very solid practical experience on both blockchain and data science.
 
-Note: Both Litentry and Web3Go mentioned above are Web3 granted project.
+Note: Both Litentry and Web3Go mentioned above are Web3 granted projects.
 
 ### Team Code Repos
 
