@@ -19,6 +19,8 @@ Unlike traditional ad platforms, who collect users sensitive data(e.g. location,
 
 ### Project Details
 
+![AdMeta Demo - the floating billboard](https://user-images.githubusercontent.com/4738254/144754078-1877d8a5-8ef9-49ec-8ef5-f79496a689f0.png)
+
 In the above image, the floating billboard is our prototype ad component built with decentraland SDK. Users who registered on our blockchain, and switched "Ad Display" option on (by default it's off) are able to see a customized ad content on this billboard while gaming in decentraland.
 
 The content of this ad component is selected according to user's personal data and preference. Unlike centralized ad platforms, we don't store user's data on or database. Instead, it's stored on the TEE layer of blockchain, and by using zero-knowledge proof, the target group matching and selecting happen also in the TEE layer, which ensures that no private data are exposed during the whole process. Eventually, both user and publisher receive some amount of token as rewards from advertiser.
