@@ -11,7 +11,7 @@
 
 Advertising in Metaverse
 
-AdMeta is a Metaverse advertisement platform that focuses on privacy-preserving. AdMeta uses DID to identify target groups for advertiser, and with the usage of zero-knowledge proof, AdMeta guarantees not to collect any user data. AdMeta builds billboard assets in Metaverse platforms like Decentraland, Bit.Country, to allow land holders to integrate our products easily.
+AdMeta is a Metaverse advertisement platform that focuses on privacy-preserving. AdMeta uses a TEE-based DID service to identify target groups for advertisers, and with the usage of zero-knowledge proof, AdMeta guarantees not to collect any user data. AdMeta builds multiple forms of ad assets (e.g. billboards, wall paintings) in Metaverse platforms like Decentraland, Bit.Country, to allow land holders to integrate our products easily. Qualified conversions let both users and publishers get rewards from advertisers. 
 
 In Polkadot and Kusama ecosystem, DID projects like Litentry are growing fast along with its related products. We have already discussed and agreed on our initial cooperation with Litentry. Also, we have contacted with Metaverse projects like Bit.Country, who shows great interests in cooperation as well.
 
@@ -31,13 +31,13 @@ Our blockchain is built with Substrate, and the pallet-ad provides the functiona
 
 ![AdMeta Architecture](https://raw.githubusercontent.com/h4n0/gists/master/admeta/admeta_architecture.svg)
 
-**Advertisers** can propose an ad with certain acceptance rule, e.g. link clicking, and also advertiser provides how many times the ads are displayed and converted, and how much they pay for each conversion. They need to pay the total price (the number of ad conversion \* price per conversion) while proposing the ad.
+**Advertisers** can propose an ad with certain acceptance rule, e.g. link clicking, and also advertiser provides how many times the ads are displayed and converted, and how much they pay for each conversion. They need to pay the total price (the number of conversions \* price per conversion) while proposing the ad.
 
 **Councils** shall approve or reject ad proposals according to the content of ads. Also, advertisers are evaluated on their behavior democratically.
 
 **Users** can switch on the "Ad Display" option on AdMeta, so that users can get rewards by viewing and interacting with ads. By default, this option is off, which means users who haven't set up their AdMeta won't see any ads. Users can also provide their data for a better ad matching, by means of this they will get more rewards.
 
-**Publishers** can simply utilize our Ad Assets on any Metaverse platform and place it on their lands. Users also get rewards by a successful display conversion.
+**Publishers** can simply utilize our Ad Assets on any Metaverse platform and place it on their lands. Users also get rewards by a qualified display conversion.
 
 #### Technology Stack
 
