@@ -15,8 +15,10 @@ The key objective of this grant is to design and build a production ready Java (
 
 #### Relevance to Substrate & Polkadot
 
-There are currently a number of language-specific client libraries that can be used to interact with Substrate-based blockchains, as indicated in [client-libraries](https://docs.substrate.io/v3/integration/client-libraries).
-However no stable and well maintained Java library for Java applications exist.
+There currently is a number of language-specific client libraries that can be used to interact with Substrate-based blockchains, as indicated in [client-libraries](https://docs.substrate.io/v3/integration/client-libraries). However no stable and well maintained Java library for Java applications exists:
+- [polkadot-java](https://github.com/polkadot-java/api) is totally outdated, thus absolutely unusable.
+- [polkaj](https://github.com/emeraldpay/polkaj) is not maintained, lacks support for Java 8 (the most popular version of Java so far), is focused mainly on polkadot so isn't generic enough and doesn't provide any easy/convenient way to operate a custom pallet.
+
 The objective of this grant is to fill in this gap. Being an enterprise ourselves and building comercial products with substrate we know exactly what is needed for other enterprises to have the best experince with the Substrate.
 
 ### Project Details
