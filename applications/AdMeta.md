@@ -57,9 +57,7 @@ Advertising is our natural needs in almost all social scenarios, and we meet thi
 
 ## Team :busts_in_silhouette:
 
-### Team members
-
-In order of joining time:
+### Team members (In order of joining time)
 
 Han Zhao - Core Dev and PM of Litentry Parachain Team. University of Stuttgart
 
