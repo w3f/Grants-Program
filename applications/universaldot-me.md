@@ -161,7 +161,7 @@ https://github.com/UniversalDot/universal-dot-front-end
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  2.5 FTE
-- **Total Costs:** 42,000 USD
+- **Total Costs:** 40,000 USD
 
 ### Milestone 1  — Design/Infrastrucutre/Substrate Modules
 
@@ -185,7 +185,7 @@ https://github.com/UniversalDot/universal-dot-front-end
 
 - **Estimated duration:** 2 months
 - **FTE:**  3,5
-- **Costs:** 24,000 USD
+- **Costs:** 22,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -193,7 +193,7 @@ https://github.com/UniversalDot/universal-dot-front-end
 | 0b. | Documentation | We will provide **inline documentation** of the code. This documentation will be build with _rust doc_ and published on designated subdomain to be easily accessible by the community. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the repo description, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **User Manuals** that explain how to interact with the application.
+| 0e. | Article | We will publish an **User Manual** that explain how to interact with the application.
 | 1. | React module: Profile | We will create a React module that will display blockchain information from Substrate Profile Pallet via RPC. The user will be able to input, delete this data from the UI. |  
 | 2. | React module: Task | We will create a React module that display task information and will enable users to assign tasks. |  
 | 3. | React module: DAO | We will create a React module that will enable user to create decentralized organizations. |  
@@ -218,7 +218,11 @@ Use Case Diagram
 ![Architecture Design](https://github.com/UniversalDot/documents/blob/master/designs/architecture/Use-Case.drawio.png?raw=true)
 
 
+Additional Requirement: Each pallet will be provide Weight Estimation for each extrinsic using Benchmarking.
+
 Bellow are provided minimal requirements/implementation details for each pallet. 
+
+
 Note: The final version _may_ contain more storage items and functions.
 
 Profile Pallet
