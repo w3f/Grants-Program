@@ -59,13 +59,15 @@ Advertising is our natural needs in almost all social scenarios, and we meet thi
 
 ### Team members
 
-Han Zhao - Core Dev and PM of Litentry Parachain Team, University of Stuttgart
+Han Zhao - Core Dev and PM of Litentry Parachain Team. University of Stuttgart
 
-Yvonne Xie - Digital Marketing Lead, King's College London
+Yvonne Xie - Digital Marketing Lead. King's College London
 
-Shihao Zhao - Full Stack Dev of Litentry, University of Toronto
+Shihao Zhao - Full Stack Dev of Litentry. University of Toronto
 
-Hao Ding - VP of Litentry, Founder of Web3Go, University of Stuttgart
+Hao Ding - VP of Litentry, Founder of Web3Go. University of Stuttgart
+
+Dr. John Wu - Core Dev of Litentry Parachain Team. The University of Tokyo
 
 ### Contact
 
@@ -80,15 +82,15 @@ Hao Ding - VP of Litentry, Founder of Web3Go, University of Stuttgart
 
 ### Team's experience
 
-Han is a core developer and project manager at Litentry, and he is one of the main developers who implemented the Litentry parachain from scratch. Litentry is an identity aggregation focused company in Polkadot ecosystem, and has got the Web3 Foundation grant since 2019.
+Han and John are core developers as well as project managers at Litentry, and both of them are main developers who implemented the Litentry parachain from scratch. Litentry is an identity aggregation focused company in Polkadot ecosystem, and has got the Web3 Foundation grant since 2019.
 
-Yvonne has more than 8 years experience of digital marketing, and she has a deep understanding and practice of various online marketing and advertising methods.
+Yvonne has more than 8 years experience of digital marketing, and she has a deep understanding and practice of various online marketing and advertising methods. She also initialized this idea of combining advertisement and zero-knowledge proof, to archive the goal of privacy preserving.
 
 Shihao is a full stack developer at Litentry, who contributes a lot in Litentry and Web3Go web apps and backend apps.
 
 Hao is the founder of Web3Go, VP of Litentry, who has a very solid practical experience on both blockchain and data science.
 
-Note: Both Litentry and Web3Go mentioned above are Web3 granted projects.
+Note: Both [Litentry](https://www.litentry.com/) and [Web3Go](https://github.com/w3f/Grants-Program/blob/master/applications/Web3Go.md) are Web3 granted projects.
 
 ### Team Code Repos
 
