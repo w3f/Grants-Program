@@ -59,6 +59,8 @@ Advertising is our natural needs in almost all social scenarios, and we meet thi
 
 ### Team members
 
+In order of joining time:
+
 Han Zhao - Core Dev and PM of Litentry Parachain Team. University of Stuttgart
 
 Yvonne Xie - Digital Marketing Lead. King's College London
