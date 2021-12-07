@@ -405,7 +405,7 @@
 | [Litentry](www.litentry.com) | Polka SignIn | [GitHub](https://github.com/litentry) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [gmajor](https://github.com/gmajor-encrypt) | PHP RPC Lib | [GitHub](https://github.com/gmajor-encrypt/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [logion](https://logion.network/) | Logion wallet | [GitHub](https://github.com/logion-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [SuperColony](https://www.supercolony.net/) | OpenBrush - Secure smart-contract development on ink! Phase 2 | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [SuperColony](https://www.supercolony.net/) | OpenBrush - Secure smart-contract development on ink! Phase 2 | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Nitor Infotech](https://www.nitorinfotech.com/) | Php substrate api | [GitHub](https://github.com/nitor-infotech-oss) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [@agryaznov](https://github.com/agryaznov) | Candle Auctions on Ink! | [GitHub](https://github.com/agryaznov/candle-auction-ink) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Iridium Industries](http://www.iridium.industries) | Iris: Decentralized storage network for substrate-based chains | [GitHub](https://github.com/iridium-labs/iris) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
