@@ -385,7 +385,7 @@ Hongfeng Liu
    </td>
   </tr>
   <tr>
-   <td>3.
+   <td>4.
    </td>
    <td>smart contract: Fish
    </td>
@@ -393,7 +393,7 @@ Hongfeng Liu
    </td>
   </tr>
   <tr>
-   <td>4.
+   <td>5.
    </td>
    <td>smart contract: Fish Tank 
    </td>
@@ -401,7 +401,7 @@ Hongfeng Liu
    </td>
   </tr>
   <tr>
-   <td>5a.
+   <td>6a.
    </td>
    <td>UI mock-ups
    </td>
@@ -409,7 +409,7 @@ Hongfeng Liu
    </td>
   </tr>
   <tr>
-   <td>5b.
+   <td>6b.
    </td>
    <td>Fish Genes and Images
    </td>
@@ -417,7 +417,7 @@ Hongfeng Liu
    </td>
   </tr>
   <tr>
-   <td>6.
+   <td>7.
    </td>
    <td>Front end
    </td>
@@ -425,7 +425,7 @@ Hongfeng Liu
    </td>
   </tr>
   <tr>
-   <td>6. 
+   <td>8. 
    </td>
    <td>Test
    </td>
