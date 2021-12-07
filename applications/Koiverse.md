@@ -313,16 +313,16 @@ Hongfeng Liu
 
 
 
-* Total Estimated Duration: 4 months
-* Full-time equivalent (FTE): 6 FTE
-* Total Costs: 24,000 DAI
+* Total Estimated Duration: 3 months
+* Full-time equivalent (FTE): 4 FTE
+* Total Costs: 12,000 DAI
 
 
 ### **Milestone 1 —— Koi Metaverse NFT Modules and Assets**
 
 
 
-* Estimated Duration: 2 months
+* Estimated Duration: 3 months
 * FTE: 4 FTE.
 * Costs: 12,000 DAI
 
@@ -421,7 +421,7 @@ Hongfeng Liu
    </td>
    <td>Front end
    </td>
-   <td>Implement web front-end based on react.js and polkadot.js. Modules include: NFT Lottery Draw, NFT Auction Sale, NFT Minting, Fish and Fish Tank.
+   <td>Implement web front-end based on react.js and polkadot.js. Modules include: NFT Lottery Draw, NFT Auction Sale, NFT Minting, Fish and Fish Tank. Fish Mining, Fish Breeding.
    </td>
   </tr>
   <tr>
@@ -433,93 +433,6 @@ Hongfeng Liu
    </td>
   </tr>
 </table>
-
-
-
-### **Milestone 2 —— Koi Metaverse Games and Web Applications**
-
-
-
-* Estimated Duration: 2 months
-* FTE: 6 FTE
-* Costs: 12,000 DAI
-
-<table>
-  <tr>
-   <td>
-<strong>Number</strong>
-   </td>
-   <td><strong>Deliverable</strong>
-   </td>
-   <td><strong>Specification</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>0a.
-   </td>
-   <td>License
-   </td>
-   <td>Apache 2.0 / MIT / Unlicense
-   </td>
-  </tr>
-  <tr>
-   <td>0b.
-   </td>
-   <td>Documentation
-   </td>
-   <td>We will provide inline documentation, video, medium articles & start creating the lightpaper of the project.
-   </td>
-  </tr>
-  <tr>
-   <td>0c.
-   </td>
-   <td>Testing Guide
-   </td>
-   <td>The code will have proper unit-test and guid coverage for Koi Metaverse modules
-   </td>
-  </tr>
-  <tr>
-   <td>1.
-   </td>
-   <td>Dapp: Fish Mining
-   </td>
-   <td>The function in rust implements fish mining logic. Users can stake NFT to mine game rewards.
-   </td>
-  </tr>
-  <tr>
-   <td>2.
-   </td>
-   <td>Dapp: Fish Breeding
-   </td>
-   <td>The function in rust implements fish breeding by two parent fish.
-   </td>
-  </tr>
-  <tr>
-   <td>3.
-   </td>
-   <td>Dapp: Pictorial Book Mining
-   </td>
-   <td>The function in rust implements pictorial book mining.
-   </td>
-  </tr>
-  <tr>
-   <td>4.
-   </td>
-   <td>Front end
-   </td>
-   <td>Implement web front-end based on react.js, polkadot.js and pixi.js. Game functions include Fishing Mining, Fish Breeding, Pictorial Book Mining.
-   </td>
-  </tr>
-  <tr>
-   <td>5. 
-   </td>
-   <td>Test
-   </td>
-   <td>We will provide a dockerfile to demonstrate the usage of our modules. We will also launch a web game prototype for players.
-   </td>
-  </tr>
-</table>
-
 
 
 ## Community Engagement
