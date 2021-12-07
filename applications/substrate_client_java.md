@@ -299,6 +299,7 @@ Implement a query api similar to the one of polkadot-js.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
 | 1. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can execute queries. |
 | 2. | Testing | Core functions will be covered by unit and integration tests to ensure functionality and robustness. |
 | 3. | Wiki | We will publish a wiki page that explains the details of the implementation for queries within the substrate-client-java library. |
@@ -312,6 +313,7 @@ Implement a query api similar to the one of polkadot-js.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
 | 1. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can handle events. |
 | 2. | Testing | Core functions will be fully covered by unit and integration tests to ensure functionality and robustness. |
 | 3. | Wiki | We will publish a wiki page that explains the details of the implementation for events within the substrate-client-java library. |
@@ -327,6 +329,7 @@ Implement a transactions api similar to `api.tx` of polkadot-js.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
 | 1. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can submit transactions. |
 | 2. | Testing | Core functions will be fully covered by unit and integration tests to ensure functionality and robustness. |
 | 3. | Wiki | We will publish a wiki page that explains the details of the implementation for transactions within the substrate-client-java library. |
@@ -342,6 +345,7 @@ Implement RPC sections and methods that remained unimplemented from the previous
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
 | 1. | Documentation | We will provide **inline documentation** of the declared RPC sections and methods. |
 | 2. | Testing | Core functions will be fully covered by integration tests to ensure functionality and robustness. |
 | 3. | Wiki | We will publish a wiki page that explains the details of the implementation for RPC sections and methods within the substrate-client-java library. |
@@ -355,6 +359,7 @@ Implement RPC sections and methods that remained unimplemented from the previous
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
 | 1. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains about handling of metadata. |
 | 2. | Testing | Core functions will be fully covered by unit and integration tests to ensure functionality and robustness. |
 | 3. | Wiki | We will publish a wiki page that explains the details of metadata handling within the substrate-client-java library. |
@@ -368,6 +373,7 @@ Implement RPC sections and methods that remained unimplemented from the previous
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
 | 1. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that covers ED25519. |
 | 2. | Testing | Core functions will be fully covered by unit tests to ensure functionality and robustness. |
 | 3. | Wiki | We will publish a wiki page that explains the details of using ED25519 within the substrate-client-java library. |
@@ -383,6 +389,7 @@ Implement Constants API similar to `api.consts` of polkadot-js that allows acces
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
 | 1. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to access the runtime constants. |
 | 2. | Testing | Core functions will be fully covered by unit and integration tests to ensure functionality and robustness. |
 | 3. | Wiki | We will publish a wiki page that explains the details of the constants api within the substrate-client-java library. |
