@@ -118,8 +118,6 @@ For universaldot.me, his main focus will be toward CI/CD, Docker, and React.
 
 Slave Atanasov is a front-end developer that currently works for a Italian subcontracting company Be. He is building application using React, Angular and other javascript based libraries. 
 For universaldot.me, his responsibilities will be to create the App.js skeleton, React Components and improving User Experience.
- 
-We will be hiring one UI design expert.
 
 
 ### Team Code Repos
@@ -161,7 +159,7 @@ https://github.com/UniversalDot/universal-dot-front-end
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  2.5 FTE
-- **Total Costs:** 40,000 USD
+- **Total Costs:** 35,000 USD
 
 ### Milestone 1  — Design/Infrastrucutre/Substrate Modules
 
@@ -184,8 +182,8 @@ https://github.com/UniversalDot/universal-dot-front-end
 ### Milestone 2  — UI Implementation/support Pallets?/ Reference dApp
 
 - **Estimated duration:** 2 months
-- **FTE:**  3,5
-- **Costs:** 22,000 USD
+- **FTE:**  2,5
+- **Costs:** 17,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
