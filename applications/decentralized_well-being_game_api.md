@@ -20,7 +20,8 @@ Well-being engagement is up and rising. With a more health-conscious generation 
 
 ### Project Details
 
-The Health Hero Game API provides the opportunity for developers to build games, apps, and features using well-being data endpoints that are centered around steps and fitness data. The play-to-earn approach of the API endpoints, allows the users to earn points in different areas such as XP (Experience Points), HP (Hero Points), Levels, Life, Star Power, badges, and parcels of land that ultimately rewards the user with digital assets (collectibles/NFTs) that are valued in Polkadot currency.
+The Health Hero Game API provides the opportunity for developers to build games, apps, and features using well-being data endpoints that are centered around steps and fitness data. The play-to-earn approach of the API endpoints, allows the users to earn points in different areas such as XP (Experience Points), HP (Hero Points), Levels, Life, Star Power, badges, and parcels of land that ultimately rewards the user with digital assets (collectibles/NFTs) that are valued in Polkadot currency and Using [State Channels](https://github.com/perun-network/perun-polkadot-pallet) to send out the payouts to users from the treasury based on their authentic health data.
+
 
 API specifications of the core functionality
 
@@ -106,7 +107,7 @@ Website:
 
 ### Team LinkedIn Profiles
 
-- Umair Azhar: [https://www.linkedin.com/in/umair-azhar-a72259206/](https://www.linkedin.com/in/umair-azhar-a72259206/)
+- Umair Azhar: [https://www.linkedin.com/in/umair-azhar-a72259206/](https://www.linkedin.com/in/iumairazhar/)
 
 - Angel Leon: [https://www.linkedin.com/in/angelgleon/](https://www.linkedin.com/in/angelgleon/)
 
@@ -130,10 +131,14 @@ FTE
 
 Costs
 
-- $50,000 USD
+- $25,000 USD
 
 ### Purposed Diagram
 ![Architecture  Diagram](https://gohealthhero-production.s3.amazonaws.com/Web3.png)
+
+### State Channels Implementation
+![State Channels (2)](https://user-images.githubusercontent.com/44548958/144947081-88d681a9-e9c7-419d-96b0-8ec68fda6687.png)
+
 
 | Number | Deliverable | Specification |
 | --- | --- | --- |
@@ -144,3 +149,4 @@ Costs
 | 0e | Press Release | We will create a press release to inform the audience. |
 | 1a | Ink Contract Development | A contract with all required functions for service written in ink!                                                               In our ecosystem, smart contracts will be utilized in a variety of ways within the platform such as: To store user data smart contracts will need to be used via state channels for all aspects of the relationship between the data store and the user. Fitness games within the Ecosystem will utilize smart contracts to pay out and reward winners or games and challenges. A multi-signature smart contract will hold all DAO funds and payout based on milestones reached. Users will be rewarded for logging and tracking well-being through simple actions such as taking a picture of food, logging breakfast via smartwatches, or through slack. |
 | 1b | Services Implementation | API for developers to: 1. store user data to Postgres Database 2. serve API to users to collect the Health Data 3. interact with the Smart Contract 4. Written in Rust/TypeScript5. Rust/TypeScript unit tests|
+|1c| [State Channels](https://github.com/perun-network/perun-polkadot-pallet)| We will be implementing Perun Polkadot Pallet and RUST language for the backend implementing state channels.These channels will allow us to make transactions to the users for their payouts from the treasury based on their authentic health data. As state channels will be established between treasury and users to handle frequently occurring transactions for their payouts
