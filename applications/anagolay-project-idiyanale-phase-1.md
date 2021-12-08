@@ -5,11 +5,11 @@
 - **Payment Address:** `0x3da76bca7ccc8f92dc9c3bc000ea5fc64d7f76b8` (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up:
+# Project Overview :page_facing_up:
 
 We applied for a grant in 2020 and got approved under the name [Sensio Network](https://github.com/w3f/Grants-Program/pull/5). Since then we did a lot of research and improved the approach. We did rebranding; SensioPhoto is [Kelp Digital](http://Kelp.Digital) and SensioNetwork is [Anagolay Network](http://Anagolay.Network).
 
-### Overview
+## Overview
 
 Anagolay is a peer-to-peer network that stores records of Rights (Copyright, Licenses, and Ownership), Restrictions, and Proofs of any digital content. It empowers the users to store, claim, sell, and rent their work with the correct transfer of Rights and usage of Licenses. Actual digital data is _never_ stored on the chain, only the respective cryptographic proof. As such, it acts as an identifier, verifiable by users who have access to that same data without disclosing it in the process.
 
@@ -17,30 +17,51 @@ Anagolay is a peer-to-peer network that stores records of Rights (Copyright, Lic
 In this grant we will focus on the core building blocks, **Operation** and a **Workflow**. 
 
 
-#### Operation 
-Operation is a well-structured library with standardized input and output signatures, written in Rust and compiled to WASM. It acts as a lego piece, which you use to connect to other pieces, creating a Workflow. Operation itself consists of two parts, a Manifest and its Version. The Version uses a content versioning system which allows the version to be used as a dependency exactly as it is, always. This solves the problem when a dependency introduces breaking changes at the patch version or gets sold to a bad actor and they ship malicious code, or it's removed from the centralized registry. The Manifest contains the data which describe the Operation inputs, outputs, potential configuration, execution group and few other fields for developers, like descripton and name. Once Operation is created, the Manifest cannot be updated and all Versions must adhere to their Manifest entirely. There are three types of Operations: `User`, `FlowControl`, and `System`. In this grant, we will focus on `System` Operations and their execution.
+### Operation 
+Operation is a well-structured library with standardized input and output signatures, written in Rust and compiled to WASM. It acts as a lego piece, which you use to connect to other pieces, creating a Workflow. Operation itself consists of two parts, a Manifest and a Version. The Version uses a content versioning system which allows it to be used as a dependency exactly as it is, always. This solves the problem when a dependency introduces breaking changes at the patch version or gets sold to a bad actor and they [ship malicious code](https://github.com/greatsuspender/thegreatsuspender/issues/1263), or it's [removed](https://www.theregister.com/2016/03/23/npm_left_pad_chaos/) from the centralized registry. The Manifest contains the data which describe the Operation inputs, outputs, potential configuration, execution group, and a few other fields for developers, like description and name. Once Operation is created, the Manifest cannot be updated and all Versions must adhere to their Manifest entirely. There are three types of Operations: `User`, `FlowControl`, and `System`. In this grant, we will focus on `System` Operations and their execution.
 
-#### Workflow 
+### Workflow 
 Workflow is a collection of Operations, chained together producing a tree-like structure where the leaf Operation is the entry-point. Once executed, they produce the list of strings that act as the input data identifiers, we call them **Proofs**. The way how Operations are linked together is by following this rule `OperationA.outputType === OperationB.inputType`, this is a standardized interface that every Operation must implement. Execution is performed from bottom to top, where the most bottom operation acts as an entry point for receiving the data. When Operation is executed the Workflow execution function will pass the output as an input to the parent Operation, and so on until the execution reaches the top level when it stops. The Workflow doesn't contain the Operation manifest, rather direct links to the Versions.
 You can see [here](#workflow-for-image-poe) a diagram how one Workflow might look like. 
 
-**Execution**
+Execution
 
 The most important environment for Workflow execution is Browser (WebWorkers) and Nodejs. All the Operations are compiled to WASM which can be run almost [anywhere](https://webassembly.org/roadmap/). Each Operation passes the data to its parent as a `bincode ByteArray`, then the parent Operation deserializes it and uses it. It's the most efficient way we found which still keeps the execution in optimal speed limits. 
 
 
-#### Example how this approach affects other things
+### On decentralized storage
+
+Decentralized storage is a complex topic where many projects contribute in different ways. In the whole ecosystem, there are two distinct subdomains, ones with the token, and one without. Essentially all of them are trying to find the best way to incentivize people to store other people's data, to make sure the data stays available over a long period of time via contract-based approach like FileCoin and Crust, or store data permanently like Arweave and Canyon. Some of the projects have high entry hardware requirements, some little bit less, but all of them agree that unused harddrive resources can be utilized and contributed to the respective network. Each of the projects gives guarantees about the data durability, either through the on-chain _Deal_ or as a default, in case of permanent storage.
+
+Now when we explained the projects that contain the token/coin, let's talk about the vanilla IPFS and how it compares to others. Based on the image below, you can see that some of the projects mentioned above are built on top of, or work with the IPFS. This gives them out-of-the-box all of the IPFS features. What IPFS doesn't provide, is the guarantee that the uploaded content will be available forever, BUT it can, it all depends on the people who host it without any monetary incentive, rather than the reason they want to host it. Also, there is a lot smaller hardware requirement for hosting a normal IPFS node than being a miner/validator for big projects mentioned above. 
+
+Thing is that, why not use both? One as a temporary, short-term, high-volume storage of not so important data and another as permanent storage for the data we want to keep forever.
+
+
+This is the approach we are taking in Anagolay, storing the important data like Operation Version and Workflow Manifest. Our main requirements regarding decentralized storage are:
+
+* content addressability or IPFS based 
+* permanency
+* high durability ( at least 11 9s )
+
+At the time of writing, only one project has all the requirements we need, that is Canyon. The project is in the early stages, and it needs a lot of work but has a huge potential. Because of that, we are going to build our components in a way so we can spend a minimum amount of effort implementing permanent storage later on. We will use the Anagolay-hosted public IPFS cluster which will be used as short-term storage and as permanent storage until we have the _real_ permanent storage connected. 
+
+Even though this poses the problem of centralization, where we host all the Operations and their source code, nothing prevents developers who build their Operations and Workflows, to spin up the IPFS node and pin only the content they are interested in. This also applies to any other dApp, they can personally host IPFS node or use Infura and friends, to pin the Operations and Workflows they depend on. [Here](https://kelp.notion.site/FileCoin-vs-Crust-vs-Arweave-vs-Canyon-vs-Vanilla-IPFS-d5d4943e66e74f1381b36b28bdc030bd) is a page we maintain, which contains the comparison table of decentralized storage providers.
+
+
+### Example of how this approach affects other things
 The most obvious examples where this approach is a game-changer are the NFT marketplaces. Especially when it comes to the definition of uniqueness. NFT is considered to be a unique thing, but it's not. What is unique is the identifier and not the content. It is possible to mint the same image as an NFT on different marketplaces ( [Kelp Digital Are NFTs as Unique as We Think? video](https://www.youtube.com/watch?v=ntyZ1tCy9Is) ) and on some marketplaces slightly modified image you can mint again, this alone states that there is no uniqueness. What we are building is a way to determine the uniqueness of the digital content. The Proofs are plural, they are the describing identifiers of the image. When this gets implemented, the NFT will be obsolete and either die out or become something else. Why? Because we rely on the identifiers of the content rather than on the incrementing value which is obtained through the minting process and that makes every image or digital data potential NFT without minting. Third parties ( current NFT marketplaces ) can execute specific Workflow to obtain the Proofs, which they can store internally, or query Anagolay Network to see are these Proofs match any records with claimed Copyrights or Ownerships. Due to the nature of the Operation and its return, not every time, all Proofs will match, especially for an image; remember that the 2 out of 3 are cryptographic proofs, and one is [LSH](https://en.wikipedia.org/wiki/Locality-sensitive_hashing) proof which can be used to calculate the similarity between the original image data and one that is already claimed. We can say that the distance of 0.98 will be considered as valid Proof of equality which means that the uploaded data is already known to the system and already has the owner. Example Workflow is [here](#workflow-for-image-poe)
 
-#### Workflow for image PoE
+### Workflow for image PoE
 Here is a working example of the Workflow, represented as a diagram for the dependencies only which at the end of the execution provide 3 proofs; 2 CIDs and 1 Perceptual hash. These Proofs are tied together and represent the identifiers of an image.  
 
 Image is located [here](https://bafybeieh5nuwrr2f75ejf4nalc5xyhrspj67yl7ha27toupsrg5wnowedm.ipfs.dweb.link/universe.jpg)
 
 ![Diagram of a workflow that creates the PoE of any image](https://bafybeihrkjwjgfqrhnlgtmjbd3zkfmdzyqmbdjsqj3hghxtiobi7ng7ilm.ipfs.dweb.link/AnagolayNetwork-Workflow_for_PoE_of_an_image.jpg)
 
+----
 
-### Project Details
+## Project Details
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
@@ -57,7 +78,7 @@ We expect the teams to already have a solid idea about your project's expected f
 - What your project is _not_ or will _not_ provide or implement
   - The scope of the project is experimental and is not going to produce a production-ready artifact
 
-### Ecosystem Fit
+## Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
@@ -104,7 +125,7 @@ An IT generalist with 13 years of on-hand experience in different business domai
 
 #### Adriano Dalpane
 
-He is a developer with 11 years of experience in the domain of several telecom operators and travel industry. Passionate about AI, he implemented a Monte Carlo Tree Search artificial intelligence for a game and a Bayesian classifier to perform match-making on a marketplace platform. He has been working with Rust and Substrate blockchain technologies for about two years and more recently he joined the Anagolay team.
+He is a developer with 11 years of experience in the domain of several telecom operators and the travel industry. Passionate about AI, he implemented a Monte Carlo Tree Search artificial intelligence for a game and a Bayesian classifier to perform match-making on a marketplace platform. He has been working with Rust and Substrate blockchain technologies for about two years and more recently he joined the Anagolay team.
 
 #### Suraj Kumar
 
@@ -128,15 +149,15 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - [https://www.linkedin.com/in/adriano-dalpane/](https://www.linkedin.com/in/adriano-dalpane/)
 - [https://www.linkedin.com/in/s5k0651/](https://www.linkedin.com/in/s5k0651/)
 
-## Development Roadmap :nut_and_bolt:
+# Development Roadmap :nut_and_bolt:
 
-### Overview
+## Overview
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 3 FTE
 - **Total Costs:** 45,000 USDT
 
-### Milestone 1 — Implement core functionality
+## Milestone 1 — Implement core functionality
 
 - **Estimated duration:** 1 month
 - **FTE:** 3
@@ -157,7 +178,7 @@ This milestone will set the base for the next milestones.
 |     5. | Rust demo crate - Part 1         | Part 1 of the rust demo crate. Setup the initial structure for the demo as a lib and binary.                                                                                                     |
 
 
-#### Substrate module - an_operation
+### Substrate module - an_operation
 We will create a Substrate pallet that will contain the storage and extrinsics for creating the `Operation`s and `OperationVersion`s and their storage items. The storage items include all the stores we will need (not 100% decided yet) and mapping storage for `OperationVersion <-> Operation`. The list of extrinsics is not 100% defined yet and what we have might be subject to change, but what we have defined is the following:
 
 __Extrinsics__:
@@ -171,21 +192,19 @@ __Storage__:
 * `OperationCount` -  `StorageValue` a `u64` incremented when we create Operation
 * `OperationVersions` - `StorageMap`, a mapping between the `Operation_CID` and `Vec<OperationVersion>`, where the last item is considered to be the latest
 
-> 💡 Note that there is no `DELETE` on the Operations or OperationVersions. We can implement that in the future but then we need to figure out what to do with the `OperationVersion` since that is stored on the IPFS + Filecoin for maximum availability ( and we all know that it's almost impossible to remove them once they end up with the FIL deal ). So, we are not deleting anything now, rather using the `approve` approach. 
-
 [V1 of Operation is explained here](https://anagolay.dev/about/operation/) 
 
 
 [ ◀️ Go back to Milestone 1](#milestone-1--implement-core-functionality)
 
 
-#### Operation - op_file
+### Operation - op_file
 We will create an Anagolay operation called file. This operation can take a string or a file buffer. In the case of the string, it will read the file and return the file buffer instance, in the case of a buffer it will return the correct instance. This way we can make sure that all targeted environments are using the same file reading approach and correct return data. Of course, the wasm will accept the `ArrayBuffer` and it will be correctly returned for any other operation that is executed after in the browser environment. Nodejs and Rust can simply pass the file path as a string and the `op_file` will read it.
 
 [ ◀️ Go back to Milestone 1](#milestone-1--implement-core-functionality)
 
 
-#### Anagolay CLI: Operation Part 1
+### Anagolay CLI: Operation Part 1
 The purpose of the CLI is to build the Operation artifacts, rehost the repository, store all the links to the Anagolay chain, and scaffold new Operation
 
 We will implement this list of features:
@@ -220,7 +239,7 @@ Operation published and the ID is bafybeifcmrf2ulnwdrhjpkwi2ifbixegegcs22rqbvlzh
 
 
 
-### Milestone 2 — Implementing the Workflow pallet, execution, manifest generation, and CID and Multihash Operations
+## Milestone 2 — Implementing the Workflow pallet, execution, manifest generation, and CID and Multihash Operations
 
 - **Estimated duration:** 1 month
 - **FTE:** 3
@@ -244,10 +263,10 @@ Operation published and the ID is bafybeifcmrf2ulnwdrhjpkwi2ifbixegegcs22rqbvlzh
 > __NOTE__: All the apps, _Nodejs_, and _Rust demo crate_ when executed must produce the same CID. WHY? Because if they use the same data and the same Workflow they must produce the same output. Same Workflow means using the same Operation manifest which means using the same Operation Version. 100% the same code execution!
 
 
-#### Substrate module - an_workflow
+### Substrate module - an_workflow
 We will be implementing the `an_workflow` pallet which will contain extrinsics and storage. This pallet is used to store and retrieve the Workflow manifest which is then used by developers to create or verify the set of proofs. The [Workflow execution](#workflow-execution) depends on this pallet and its storage. For Workflow explanation click [here](#workflow-explanation).
 
-#### Anagolay CLI: Workflow manifest generation
+### Anagolay CLI: Workflow manifest generation
  We will build an interactive CLI which will be used to generate the Workflow manifest, validate it and store it on the chain. The CLI will be written in Typescript for Nodejs environment and published on IPFS and maybe NPM. The exact structure is not yet defined but here is the idea of what it should look like:
  ```text
 
@@ -278,13 +297,13 @@ As you can see the second question shows only the operations that can be connect
 [ ◀️ Go back to Milestone 2](#milestone-2--implementing-the-workflow-pallet-execution-manifest-generation-and-cid-and-multihash-operations)
 
 
- #### Operation - op_cid
+### Operation - op_cid
 We will create an Anagolay operation called `op_cid`. This takes any Multihash type and generates the CID with the multicodec set as `RAW` and the multibase set as `base32`.
 
-#### Operation - op_multihash
+### Operation - op_multihash
  We will create an Anagolay operation called `op_multihash`. The Operation takes a buffer and creates the multihash instance. Possible multihashes will be `sha2-256`, `blake2b-256`, and `blake3`     
 
-### Milestone 3 — Finalizing the feature set
+## Milestone 3 — Finalizing the feature set
 
 - **Estimated duration:** 1 month
 - **FTE:** 3
@@ -306,11 +325,11 @@ We will create an Anagolay operation called `op_cid`. This takes any Multihash t
 
 > __NOTE__: All the apps, _Nodejs_, and _Web app_ when executed must produce the same Proofs. WHY? Because if they use the same data and the same Workflow they must produce the same output. Same Workflow means using the same Operation manifest which means using the same Operation Version. 100% the same code execution!
 > 
-#### Workflow: execution
+### Workflow: execution
 Execution of the Workflow manifest created in [#3](#workflow-manifest-generation). We will implement basic recursive and automatic execution of the Workflow only for `SYSTEM` Operations. The execution will load all the dependencies and execute them in the correct order.  We will NOT implement any kind of optimizations like caching or memoization to gain a boost in speed.  
 
 
-#### Anagolay CLI: Operation Part 2
+### Anagolay CLI: Operation Part 2
 Part 2 will focus on rehosting the operation source code git repository and scaffolding new ones. The rehosting creates an immutable link that replaces the traditional semver and it must be used as a dependency in the package.json files. If you want to know more about the approach in general, Daniel wrote an article about it [here](https://dev.to/woss/part-1-rehosting-git-repositories-on-ipfs-23bf). 
 
 We will implement this list of features:
@@ -328,11 +347,11 @@ Next steps: cd op_create_qrcode && start developing
 ``` 
 
 
-## Future Plans
+# Future Plans
 
 Later, we will implement the social aspect of the Operation and Workflow credibility creating the revenue streams for developers who will be testing the Operations and the developer who creates the Operation. This is part of the Reputation system for the Developers, Operations, and Workflows.
 
-## Additional Information :heavy_plus_sign:
+# Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 
