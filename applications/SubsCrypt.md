@@ -165,12 +165,9 @@ The main functions that will be deployed on the chain in this milestone are as f
 | 1.2 | Backend RestAPI Documntaion | A fully comprehensive documentation to use our RestAPI |
 | 1.3 | Backend RestAPI Unit test | The code will have unit-test coverage (100%) to ensure functionality and robustness.|
 | 2. | Third Party libraries | We will provide some library to make integration of our service easier in different backend stacks by connecting to our Backend RestAPI|  
-| 2.1 | Django Library | A high-level library to use our service in Django| 
-| 2.2 | Django Library documentation | A fully comprehensive documentation to use our library| 
-| 2.3 | Django Library Unit test | The code will have unit-test coverage (100%) to ensure functionality and robustness| 
-| 2.4 | Node.js Library | A high-level library to use our service in Node.js| 
-| 2.5 | Node.js Library documentation | A fully comprehensive documentation to use our library| 
-| 2.6 | Node.js Library Unit test | The code will have unit-test coverage (100%) to ensure functionality and robustness| 
+| 2.1 | Node.js Library | A high-level library to use our service in Node.js| 
+| 2.2 | Node.js Library documentation | A fully comprehensive documentation to use our library| 
+| 2.3 | Node.js Library Unit test | The code will have unit-test coverage (100%) to ensure functionality and robustness| 
 
 
 ## Future Plans
