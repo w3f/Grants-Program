@@ -168,8 +168,6 @@ To check this, oracle provider module should have these test functions:
 - `oracle_excludes_zeros_and_return_median_even`: the purpose is also same with the previous test function, but the batch length is even.
 
 
-
-
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0|
@@ -180,7 +178,31 @@ To check this, oracle provider module should have these test functions:
 | 4. | Npm binary | We will provide a npm binary for oracle providers to install and run an oracle client |
 | 5. | Dockerfile | Dockerfile for running Standard protocol binary will be provided |
 
-### Milestone 2 - PoS oracle reward distribution  
+
+### Milestone 2 - Oracle EVM precompile 
+* **Estimated Duration:** 1 month
+* **FTE:**  1
+* **Costs:** 10DAI
+
+It is obvious that existing infrastructure supports EVM as primary in current industry. Hence, a evm precompile should be built for mainstream blockchain dapp developers who are building 
+around the oracle. This will give more use cases of oracle module. 
+
+
+# Oracle precompile
+
+Oracle precompile pallet exposes `price` function to get prices that is reported by oracle clients.
+
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0|
+| 0b. | Documentation | Documentation will introduce how to use oracle evm precompile | 
+| 1. | Oracle precompile pallet | Oracle evm precompile where smart contract developers can use in solidity |
+| 2. | Unit test codes | Unit test codes in `tests.rs` in the precompile |
+| 3. | Dockerfile | Dockerfile for new Standard with evm precompile will be provided |
+
+
+### Milestone 3 - PoS oracle reward distribution  
 * **Estimated Duration:** 1 month
 * **FTE:**  1
 * **Costs:** 500DAI
