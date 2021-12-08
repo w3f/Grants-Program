@@ -1,6 +1,6 @@
 # High-availability validator setup
 
-* **Status:**
+* **Status:** Open
 * **Proposer:** mmagician
 * **Projects you think this work could be useful for:** Polkadot & Kusama Validators
 
