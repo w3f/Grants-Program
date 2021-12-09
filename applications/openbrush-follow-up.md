@@ -158,11 +158,11 @@ PSP - https://github.com/w3f/PSPs/pull/25
 
 ### Overview
 
-**We have decided to describe a full roadmap of an OpenBrush here, with estimates. However, the funding we request at this stage is for milestones 3-6.**
+**We have decided to describe a full roadmap of an OpenBrush here, with estimates. However, the funding we request at this stage is for milestones 3-5.**
 
-* **Total Estimated Duration:** 10 weeks(+ time for approving changes in ink! and PSP repositories)
+* **Total Estimated Duration:** 12.5 weeks(+ time for approving changes in ink! and PSP repositories)
 * **Full-Time Equivalent (FTE):** 2.5
-* **Total Costs:** 39,000 USD
+* **Total Costs:** 49,500 USD
 
 ### Previous work
 
@@ -208,9 +208,9 @@ PSP - https://github.com/w3f/PSPs/pull/25
 
 #### Milestone 3. Reduce the size of Erc20 contract.
 
-* **Estimated Duration:** 3 weeks
+* **Estimated Duration:** 4 weeks
 * **FTE:**  1.5
-* **Costs:** 9,000 USD
+* **Costs:** 12,000 USD
 
 | Number | Deliverable                                              | Specification                                                                                                                             |
 | -----  | -----------                                              | -------------                                                                                                                             |
@@ -220,18 +220,21 @@ PSP - https://github.com/w3f/PSPs/pull/25
 
 #### Milestone 4. Pre-release - Standardization of tokens contracts. Implement extensions for contracts. Documentation.
 
-* **Estimated Duration:** 3 weeks(+ time for PSP approving)
+* **Estimated Duration:** 4.5 weeks(+ time for PSP approving)
 * **FTE:**  2.5
-* **Costs:** 15,000 USD
+* **Costs:** 22,500 USD
 
-| Number | Deliverable                                              | Specification                                                                                                                             |
-| -----  | -----------                                              | -------------                                                                                                                             |
-| 0a.    | License                                                  | MIT                                                                                                                                       |
-| 0b.    | Documentation                                            | We will provide inline documentation for macros, create a tutorial on how to use macros in your own project, with a detailed description of how it works inside. |
-| 0c.    | Testing Guide                                            | We will add more tests to cover all macros, update tests according to new changes.                                                           |
-| 1.     | Create Proposal for Fungible token                       | We will create a proposal for standardization of Erc20 token in case of ink! and `contract-pallet`. Based on the final decision regarding the proposal update the implementation in library.              |
-| 2.     | Implement extensions for tokens                          | We will implement extensions for Erc20, Erc721 and Erc1155 tokens.              |
-| 3.     | Create Proposal for Non Fungible token and Multi token   | We will create proposals for NFT and multi token, when proposal for FT token will be approved. Based on the decisions of these approves, we will update implementation in library. |
+| Number | Deliverable                                                         | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|--------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a.    | License                                                             | MIT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| 0b.    | Documentation                                                       | We will provide inline documentation for macros, create a tutorial on how to use macros in your own project, with a detailed description of how it works inside.                                                                                                                                                                                                                                                                                                                                                                                                         |
+| 0c.    | Testing Guide                                                       | We will add more tests to cover all macros, update tests according to new changes.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| 1.     | Create Proposal for Fungible token                                  | We will create a proposal for standardization of Erc20 token in case of ink! and `contract-pallet`. Based on the final decision regarding the proposal update the implementation in library.                                                                                                                                                                                                                                                                                                                                                                             |
+| 2.     | Implement extensions for tokens                                     | We will implement extensions for Erc20, Erc721 and Erc1155 tokens.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| 3.     | Create Proposal for Non Fungible token and Multi token              | We will create proposals for NFT and multi token, when proposal for FT token will be approved. Based on the decisions of these approves, we will update implementation in library.                                                                                                                                                                                                                                                                                                                                                                                       |
+| 4.     | Use original ink! instead of our own                                | We will use ink! `3.0-rc6` version(or a new one if it will be compatible) instead of our own version of ink!.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| 5.     | Refactor the contracts to be compatible with PSPs                   | We will refactor the contracts according to the PSP.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| 6.     | Refactor the structure of the OpenBrush to provide agnostic traits  | We will refactor the structure of the OpenBrush to provide traits for each implementation of the contract without restriction and implementation related information:<br/> - Traits will be defined in a separate module.<br/> - The default implementation of that trait for a contract will be provided via unstable feature `#![feature(min_specialization)]`.<br/> - We will provide a new macro to generate a wrapper around a trait. That wrapper can be used for cross-contract calls. So the user is enough of the trait definition to do a cross contract call. |
 
 #### Milestone 5. Release - Contribution to ink!
 
