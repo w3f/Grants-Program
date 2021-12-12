@@ -21,7 +21,20 @@
   Sarah then goes to Ed (the employer) to get a job that requires skill_1 and skill_2. Sarah presents Ed with
   certificates and give Ed a chance to punish Tanya and Terry. If Ed believes Sarah has the skills, he will hire Sarah
   and also pay Sarah for the certificates use. Otherwise, Ed may penalize teachers for incorrect certificates.\
-  All parties: Sarah, Tanya, Teri and Ed are economically motivated to behave honestly.
+  SLON works as a reputation token. You could be surprised that we provide a possibility to buy reputation but this design
+  really works - since you pay for your reputation, you value it.\
+  The relation between SLONs and guarantees is following: teacher can issue 5 guarantees having 100 SLONs on his account, 
+  but each guarantee, if penalized, costs teacher 100 SLON.\
+  All parties: Sarah, Tanya, Teri and Ed are economically motivated to behave honestly.\
+  Ed is economic incentivized penalize a teacher in case if Sarah lack the skill because he gets SLON from such teacher.\
+  But also Ed can't behave dishonestly. If he starts to penalize teachers in case when skill is present - he will lose
+  all new workers - nobody whants to work with unfair hirer.\
+  In different professions two models of payments exist: per hour (or per month) and per result. The first one is secure to workers but doesn't motivate them to produce the result. The second one - paying for the result enables to democratize the service market - you just pay for what you need and don't require CVs of worker. Also it enables us to include students and pupils in system as teachers - students teach each other and pay each other only for the result.\
+  The idea initially was developed in 2019 year at a private school as a [paper game](https://slon-i-giraf.ru/app/work?view=paperGameView&language=ENG)\
+Then in 2020 we implemented the web version of this educational model on Java/Mysql and use it for now.
+Some of our classes are online and free to participate and you can join and see how does it work - 
+every Saturday we have free to join biology class where students teach and examine each other 
+using of Java/Mysql version of system. [Here](https://t.me/bio_slonigiraf) is our telegram group of the class. And [here](https://us02web.zoom.us/j/86918554814?pwd=aUpndVI0dU9KclNybk1pVlM3K0FkQT09) is a Zoom link (20.00 each Saturday, Moscow time).
 - This grant application request funding to build datastore for the Slonigiraf game results in a form of Substrate
   pallet that could be used in a parachain to any Substrate based relay chain representing the first educational dApp at
   the ecosystem.
@@ -35,6 +48,10 @@
   with key consisted of teacher address concatenated to index of window where certificate id resides. Valid certificates
   will be stored offchain to save blockchain space.
 - We plan to use Rust / Substrate to complete this part of the project.
+we initially thought that smart contracts on Ethereum/Polka etc would be enough. But there are two problems with such approach: UX and technical.
+UX one requires users to buy the token that allows to pay for smart contract execution. Most of our users don't know anything about crypto, thus it's exceptionally hard to make them buy some crypto. SLON token initially is given for free to any school/university.
+Technical. We implement the system that should process requests from millions of users every day. No single chain can process transactions if all pupils in Russia will use our educational model at classes - too many transactions, even considering that we use offchain as much as possible. Thus we look for any approach to shard and parallelize transaction processing. Polkadot design with relay and parachains looks great to solve this parallelization issue.
+
 - We've built PoC/MVP product on Java Vaadin framework that can be used via
   link: https://slon-i-giraf.ru/app/work?language=ENG
 - What needs to be completed: datastore, penalizing capability, certificate validity lookup, tests, documentation,
