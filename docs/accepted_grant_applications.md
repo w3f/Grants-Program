@@ -417,6 +417,7 @@
 | [Elamin LTD](http://imbue.network/) | Imbue Network | [GitHub](https://github.com/ImbueNetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Koi Metaverse](https://koi.io/) | Building the Digital Collectibles Platform for Virtual GameFi NFTs | [GitHub](https://github.com/KoiMetaverse) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Health Hero](https://www.gohealthhero.com/) | Decentralized Well-being Game API | [GitHub](https://github.com/iumairazhar) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [UNIVERSALDOT FOUNDATION](https://universaldot.foundation) | A freelancing decentralized application | [GitHub](https://github.com/UniversalDot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
 
 
