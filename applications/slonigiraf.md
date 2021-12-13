@@ -34,7 +34,8 @@
 Then in 2020 we implemented the web version of this educational model on Java/Mysql and use it for now.
 Some of our classes are online and free to participate and you can join and see how does it work - 
 every Saturday we have free to join biology class where students teach and examine each other 
-using of Java/Mysql version of system. [Here](https://t.me/bio_slonigiraf) is our telegram group of the class. And [here](https://us02web.zoom.us/j/86918554814?pwd=aUpndVI0dU9KclNybk1pVlM3K0FkQT09) is a Zoom link (20.00 each Saturday, Moscow time).
+using of Java/Mysql version of system. [Here](https://t.me/bio_slonigiraf) is our telegram group of the class. And [here](https://us02web.zoom.us/j/86918554814?pwd=aUpndVI0dU9KclNybk1pVlM3K0FkQT09) is a Zoom link (20.00 each Saturday, Moscow time). There is an ongoing study to compare the efficacy of such learning to traditional lecture based approach. We're looking for the comparison results to be published by the end of 2022 year.\
+By the way working in pairs is known to improve the learging in schools, see for example paper on [programming teaching](https://www.sciencedirect.com/science/article/abs/pii/S0360131520302219?dgcid=rss_sd_all). Thus it's highly likely that adding the quality controls for such work in pairs is a further improvement.
 - This grant application request funding to build datastore for the Slonigiraf game results in a form of Substrate
   pallet that could be used in a parachain to any Substrate based relay chain representing the first educational dApp at
   the ecosystem.
