@@ -338,7 +338,7 @@
 | [GamePower](https://gamepower.network) | NFT Collectibles Wallet | [GitHub](https://github.com/GamePowerNetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Subspace Labs](https://www.subspace.network/) | Proof-of-Capacity Consensus for Substrate | [GitHub](https://github.com/subspace) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [ChainSafe](https://chainsafe.io/) | Go implementation of Cumulus | [GitHub](https://github.com/ChainSafeSystems) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Polkadotters](https://polkadotters.medium.com/) | Subauction| [GitHub](https://github.com/polkadotters/SubAuction) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Polkadotters](https://polkadotters.medium.com/) | Subauction| [GitHub](https://github.com/polkadotters/SubAuction) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Phala Network](https://phala.network/) | Open Node Framework| [GitHub](https://github.com/Tenet-X) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Ruby Protocol](http://rubyprotocol.com/) | Cryptographic Infrastructure for Data Monetization | [GitHub](https://github.com/Ruby-Protocol) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Find Signal Studio PTE. LTD.](https://yieldscan.app/) | YieldScan Phase 2 | [GitHub](https://github.com/yieldscan) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
