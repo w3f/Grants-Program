@@ -1,4 +1,4 @@
-# Multisig Pallet
+# Multisig Product on Substrate
 
 * **Project Name:** Build A Minimum Viable Functioning Multisig Product on Substrate
 * **Team Name:** Dora Factory
@@ -11,20 +11,14 @@ Multisig is the mostly used DAO infrastructure so far. In the Ethereum ecosystem
 
 ### Project Details 
 
-The MultiSig Substrate pallet will implement features including the following:
+The MultiSig Substrate product functions include the following:
 - Create wallet by organization
 - Multi-asset management
 - Initiate a transaction in a wallet, sign a transaction, confirm a transaction
 - Add a signer, update multisig rule
 
-There've been a multisig pallet developed by parity. The pallet (https://libraries.io/cargo/pallet-multisig) is a basic building block for us to build a more complete multisig MVP to meet actual demands of DAOs. It should also become an open-source module for us and other developers to build more complicated multisig features in the future. The reasons why build a new pallet are below
-
-1. Multisig pallet only provides 3 methods, which can not meet requirements application-level and DAO use cases
-2. The multisig pallet has not been updated for a while, we’ll implement more new features to help community to build a multisig pallet faster
-3. The latest polkadot{.js} has removed feautres to support multisig, which makes this pallet hard to debug/demonstrate
-4. As Dora Factory is working on DAO infrastructures, most of our users are organization users, we are creating a multisig for organization users (e.g. a DAO can deposit and manage funding using the pallet and get access to a broader range of applications from Dora Factory). In this way this pallet can integrate with other Dora Factory pallets seamlessly.
-
-Besides, in this grant, we'll implement a frontend MVP to make the multisig work for end users.
+There've been a multisig pallet developed by parity. The pallet (https://libraries.io/cargo/pallet-multisig) is a basic building block for us to build a more complete multisig MVP to meet actual demands of DAOs. 
+We'll implement a frontend MVP which interacts with the pallet to make the multisig work for end users.
 
 ### Ecosystem Fit 
 
@@ -53,27 +47,26 @@ Although structures vary in different organizations, funding management is a gen
 ## Development Roadmap
 
 ### Overview
-* **Total Estimated Duration:** 3 months
-* **Full-time equivalent (FTE):**  3
-* **Total Costs:** 25000 DAI
+* **Total Estimated Duration:** 2 months
+* **Full-time equivalent (FTE):**  2
+* **Total Costs:** 15000 DAI
 
-### Milestone 1 -- Implement Multisig Pallet
-* **Estimated Duration:** 10 weeks
-* **FTE:**  2
-* **Costs:**  15000 DAI
+### Milestone 1 -- The multisig MVP mock up
+* **Estimated Duration:** 4 weeks
+* **FTE:**  1
+* **Costs:**  5000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT |
-| 0b. | Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1. | Multisig Substrate Pallet | An open-source prototype of a Multisig substrate pallet. The pallet will implement Multisig Key features include 1) Create wallet by organization 2) Multi assets management 3) Initiate a transaction in a wallet, sign a transaction, confirm a transaction 4) Add a signer, update multisig rule | 
-| 2. | Parachain Integration | Deploy to some parachain(local/rococo) to demonstrate multi assests management flow |
-| 3. | Test | Deploy the runtime module to a Substrate node and test Multisig functions described above | 
+| 0b. | Visting Guide | The delivery will be posted on [figma](https://www.figma.com/login).We'll share a public access link for it | 
+| 1. | Multisig Desgin | An open-source prototype of a Multisig product. The desgin will focus on implementing the user interactions including 1) Create wallet by organization 2) Multi assets management 3) Initiate a transaction in a wallet, sign a transaction, confirm a transaction 4) Add a signer, update multisig rule | 
+| 2. | Evaluate | View the demonstration and find out some missing parts or enchancement | 
 
 
-### Milestone 2  -- Design and Implement An Multisig Frontend MVP
+### Milestone 2  --The code implementation Multisig Frontend MVP
 * **Estimated Duration:** 4 weeks
-* **FTE:**  2
+* **FTE:**  1
 * **Costs:** 10000 DAI
 
 | Number | Deliverable | Specification |
