@@ -306,7 +306,7 @@
 | [Trust Fractal GmbH](https://trustfractal.com/) | ink! Smart Contract Upgradeability | [GitHub](https://github.com/trustfractal/ink-upgrade-template) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Starry Network](https://github.com/Starry-Network) | Splittable NFTs | [GitHub](https://github.com/Starry-Network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Equilibrium](https://equilibrium.co/) | Research Storage Network| [GitHub](https://github.com/eqlabs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [DOT Mog](https://dotmog.com/) | Substrate .NET API  | [GitHub](https://github.com/dotmog/SubstrateNetApi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
+| [Ajuna](https://ajuna.io/) | Substrate .NET API  | [GitHub](https://github.com/dotmog/SubstrateNetApi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [NewOmega](https://github.com/WiktorStarczewski/newomega.trinity ) | A blockchain game that cannot be shut down | [GitHub](https://github.com/WiktorStarczewski/newomega.trinity ) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Bright Inventions](https://brightinventions.pl/) | Treasury Web application| [GitHub](https://github.com/bright/bright-tresury) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Standard protocol](https://github.com/digitalnativeinc/standard-substrate) | A collateralized algorithmic stablecoin protocol for synthetic assets | [GitHub](https://github.com/digitalnativeinc/standard-substrate) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -327,7 +327,7 @@
 | [MVP Workshop](https://mvpworkshop.co/) | pallet-maci (Minimal Anti Collusion Infrastructure) | [GitHub](https://github.com/MVPWorkshop) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [X-Predict](https://x-predict.com/) | Decentralized prediction market | [GitHub](https://github.com/XPredictMarket) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Chevdor](https://www.chevdor.com/) | SRTOOL App | [GitLab](https://gitlab.com/chevdor/srtool-app) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Bit.Country](http://bit.country/) | A decentralized world - Phase 2 | [GitHub](https://github.com/bit-country) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Bit.Country](http://bit.country/) | A decentralized world - Phase 2 | [GitHub](https://github.com/bit-country) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Vera](https://veraprotocol.org/) | NFT Lending + Exchange | [GitHub](https://github.com/veraprotocol) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Parallel Finance](https://parallel.fi/#/) | Decentralized lending/borrowing and staking protocol | [GitHub](https://github.com/parallel-finance/parallel) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 
@@ -338,7 +338,7 @@
 | [GamePower](https://gamepower.network) | NFT Collectibles Wallet | [GitHub](https://github.com/GamePowerNetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Subspace Labs](https://www.subspace.network/) | Proof-of-Capacity Consensus for Substrate | [GitHub](https://github.com/subspace) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [ChainSafe](https://chainsafe.io/) | Go implementation of Cumulus | [GitHub](https://github.com/ChainSafeSystems) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Polkadotters](https://polkadotters.medium.com/) | Subauction| [GitHub](https://github.com/polkadotters/SubAuction) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Polkadotters](https://polkadotters.medium.com/) | Subauction| [GitHub](https://github.com/polkadotters/SubAuction) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Phala Network](https://phala.network/) | Open Node Framework| [GitHub](https://github.com/Tenet-X) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Ruby Protocol](http://rubyprotocol.com/) | Cryptographic Infrastructure for Data Monetization | [GitHub](https://github.com/Ruby-Protocol) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Find Signal Studio PTE. LTD.](https://yieldscan.app/) | YieldScan Phase 2 | [GitHub](https://github.com/yieldscan) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
@@ -358,7 +358,7 @@
 | [Perun Network](https://perun.network/) | Perun Channels | [GitHub](https://github.com/perun-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [NewOmega](https://github.com/WiktorStarczewski/newomega.trinity ) | A blockchain game that cannot be shut down (Milestone 3 and 4) | [GitHub](https://github.com/WiktorStarczewski/newomega.trinity ) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Webb Tech](https://www.webb.tools/) | Webb Mixer Extended | [GitHub](https://github.com/webb-tools) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Jeton Network](http://www.jeton.network/) | UnitySDK for Substrate | [GitHub](https://github.com/JetonNetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Ajuna](https://ajuna.io/) | UnitySDK for Substrate | [GitHub](https://github.com/JetonNetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Canyon Labs](https://canyon-network.io) | Permanent decentralized storage | [GitHub](https://github.com/canyon-network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [ZeroDAO Network](https://zerodao.net/) | Decentralised reputation systems and social networks | [GitHub](https://github.com/ZeroDAO) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Stake Technologies](https://stake.co.jp/) | ZK Plonk Pallet | [GitHub](https://github.com/PlasmNetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -405,7 +405,7 @@
 | [Litentry](www.litentry.com) | Polka SignIn | [GitHub](https://github.com/litentry) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [gmajor](https://github.com/gmajor-encrypt) | PHP RPC Lib | [GitHub](https://github.com/gmajor-encrypt/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [logion](https://logion.network/) | Logion wallet | [GitHub](https://github.com/logion-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [SuperColony](https://www.supercolony.net/) | OpenBrush - Secure smart-contract development on ink! Phase 2 | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [SuperColony](https://www.supercolony.net/) | OpenBrush - Secure smart-contract development on ink! Phase 2 | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Nitor Infotech](https://www.nitorinfotech.com/) | Php substrate api | [GitHub](https://github.com/nitor-infotech-oss) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [@agryaznov](https://github.com/agryaznov) | Candle Auctions on Ink! | [GitHub](https://github.com/agryaznov/candle-auction-ink) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Iridium Industries](http://www.iridium.industries) | Iris: Decentralized storage network for substrate-based chains | [GitHub](https://github.com/iridium-labs/iris) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -415,5 +415,10 @@
 | [Web Registry DAO](www.wika.network) | Wika Network | [GitHub](https://github.com/randombishop/wika_node) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Helikon Labs](http://www.helikon.tech/) | SubVT Telegram Bot for Kusama and Polkadot | [GitHub](https://github.com/helikon-labs/polkadot-kusama-1kv-telegram-bot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Elamin LTD](http://imbue.network/) | Imbue Network | [GitHub](https://github.com/ImbueNetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Koi Metaverse](https://koi.io/) | Building the Digital Collectibles Platform for Virtual GameFi NFTs | [GitHub](https://github.com/KoiMetaverse) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Health Hero](https://www.gohealthhero.com/) | Decentralized Well-being Game API | [GitHub](https://github.com/iumairazhar) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [UNIVERSALDOT FOUNDATION](https://universaldot.foundation) | A freelancing decentralized application | [GitHub](https://github.com/UniversalDot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+
+
 
 

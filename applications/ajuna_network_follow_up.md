@@ -4,12 +4,12 @@
 
 > This page is also available in [Chinese (中文)](./application-template-cn.md).
 
-* **Project Name:** Jeton Network & DOTMog
-* **Team Name:** DOTMog Team
+* **Project Name:** Ajuna Network
+* **Team Name:** Ajuna Network Team
 * **Payment Address:** 1FgaH4sRHF4boR4Fw316ddKMJbFpsDXGeL
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
-![image](https://user-images.githubusercontent.com/17710198/120234744-e502ab00-c258-11eb-80e0-dac144164b46.png)
+![image](https://user-images.githubusercontent.com/17710198/136852531-d9eb47cd-efcd-4c88-bdbf-78dfcbffe287.png)
 
 ## Project Overview :page_facing_up: 
 
@@ -32,7 +32,7 @@ What matters for the grant are the artifacts that can be reused and extracted ou
 
 This is part of the components that **Jeton Network** is providing and maintaining for future blockchain game developers. Jeton Network intends to work towards a second order relay chain for games that like the benefit of using there own blockchain, but can't afford a parachain or parathread slot on Polkadot or Kusama.
 
-![image](https://user-images.githubusercontent.com/17710198/121006443-33e89d00-c791-11eb-995a-948be52ae070.png)
+![image](https://user-images.githubusercontent.com/17710198/144747995-1290d21b-7767-4f8b-9057-b978e8e81067.png)
 
 **Bot based testing with the SubstrateNetApi and GameEngine**
 ![image](https://user-images.githubusercontent.com/17710198/116819828-2167bc00-ab72-11eb-8806-f402fa807054.png)
@@ -63,7 +63,7 @@ https://github.com/dotmog/SubstrateNetApi
 
 #### Documentation of core components, protocols, architecture etc. to be deployed
 
-* https://github.com/JetonNetwork All components for the Generic Gaming Blockchain and the UnitySDK will be provided under the organisation Jeton Network.
+* https://github.com/ajuna-network All components for the Generic Gaming Blockchain and the UnitySDK will be provided under the organisation Ajuna Network.
 
 **Generic Game Pallets**<br/>
 Generic Game Pallets, build special features used in games, they are fully supported in the UnitySDk<br/>
@@ -111,12 +111,12 @@ Artists:
 
 ### Contact
 * **Contact Name:** Cedric Decoster
-* **Contact Email:** cedric.decoster@gmail.com
-* Website www.dotmog.com
+* **Contact Email:** cedric@ajuna.io
+* Website www.ajuna.io
 
 ### Legal Structure 
 * **Registered Address:** Stetten SH, Switzerland
-* **Registered Legal Entity:** BloGa Tech AG (in incorporation)
+* **Registered Legal Entity:** BloGa Tech AG
 
 ### Team's experience
 The team consists of three experienced developers, one project manager / designer and additionally two supplying artists working on illustrations and 3D models.
@@ -145,11 +145,8 @@ Adding a polkadot related commit here ..
 https://github.com/usetech-llc/polkadot_api_dotnet/pull/10
 
 Active organisations of the teammebers
+* https://github.com/ajuna-network
 * https://github.com/dotmog
-* https://github.com/JetonNetwork
-* https://github.com/WorldOfMogwais
-* https://github.com/mogwaicoin
-* https://github.com/HearthSim
 
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/cedric-decoster-3a004510b/
@@ -194,11 +191,11 @@ SubstrateNetApi is the base API and it needs a dedicated documentation to allow 
 | 6c. | Types | Wiki documentation on workflow for adding types and maintaining the api |
 | 6d. | Node | Add documentation how to setup live node-template testing, for extrinsic |
 | 6e. | Custom Test | Add documentation for custom pallet and type testing |
-| 7. | Jeton Network | Internet appearance of the Jeton Network, under www.jeton.network |
-| 7a. | Jeton Network | Article and Blog about this open grant and the deliverables, at least one deep dive post into each milestone subject area, SubstrateNetApi, GameEngine, ServiceLayer & ConnectFour (if accpeted) |
+| 7. | Ajuna Network | Internet appearance of the Ajuna Network, under www.ajuna.io |
+| 7a. | Ajuna Network | Article and Blog about this open grant and the deliverables, at least one deep dive post into each milestone subject area, SubstrateNetApi, GameEngine, ServiceLayer & ConnectFour (if accpeted) |
 
 ### Milestone 2: GameEngine — Implement Basic GameEngine Domain Driven Design (DDD) & Implement Basic Bot's for Load and Game Testing
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 1 month (est. February 2022)
 * **FTE:**  1-2
 * **Costs:** 7.500 USD 
 
@@ -226,10 +223,15 @@ Game Engine is the logic layer for games and provides the necessary informations
 | 3d. | Service Layer | Create event system for storage changes, this is needed for example to trigger presentation layer updates or animations, like egg hatching animation when gameevent triggers | 
 | 4. | Rest API | Adding service Layer Rest API, accessing Game data |
 | 5. | Basic Bot | Implement Basic Bot, that plays Connect Four with an human like strategic |
-| 6. | Tutorial | Service layer, Docker setup, Rest API & Multithreaded Bot testing of Game and Performance
+| 6. | Tutorial | Service layer, Docker setup, Rest API & Multithreaded Bot testing of Game and Performance |
+| 7. | Generator | Since substrate monthly-2021-10, types are fully disclosed in the metadata, which allows to generated more or less everything for the service layer |
+| 7a. | MetaData | Decode Node exposed Metadata into a json format readable and interpretable for the generator, json file of the node exposed metadata |
+| 7b. | Generator | Ajuna.NetApiExt Generator, including all Types |
+| 7c. | Generator | Storage Generator, including all Pallets |
+| 7d. | Generator | Rest Generator, including all Pallets |
 
 ### Milestone 3: Unity — Substrate SDK for Unity, Documentation, Templates and Tutorial Video
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 1 month (est. March 2022)
 * **FTE:**  1-2
 * **Costs:** 7.500 USD 
 
@@ -252,7 +254,7 @@ Creating a Free Unity Asset in the Assetstore, will allow access to Substrate fo
 | 3c. | Asset | Integration Guide of adding a new function in a pallet, adding it as custom pallet function to SubstrateNetApi, adding custom storage access to Service Layer, and adding access in game engine to the new function for unity |
 
 ### Milestone 4: Complete Game "Connect four", as Tutorial from scratch on Substrate and Unity playable on Mobile (Player vs. Player)
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 1 month (est. March 2022)
 * **FTE:**  1-2
 * **Costs:** 5.000 USD 
 
