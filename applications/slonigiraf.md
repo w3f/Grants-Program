@@ -50,8 +50,14 @@ using of Java/Mysql version of system. [Here](https://t.me/bio_slonigiraf) is ou
 - We plan to use Rust / Substrate to complete this part of the project.
 we initially thought that smart contracts on Ethereum/Polka etc would be enough. But there are two problems with such approach: UX and technical.
 UX one requires users to buy the token that allows to pay for smart contract execution. Most of our users don't know anything about crypto, thus it's exceptionally hard to make them buy some crypto. SLON token initially is given for free to any school/university.
-Technical. We implement the system that should process requests from millions of users every day. No single chain can process transactions if all pupils in Russia will use our educational model at classes - too many transactions, even considering that we use offchain as much as possible. Thus we look for any approach to shard and parallelize transaction processing. Polkadot design with relay and parachains looks great to solve this parallelization issue.
-
+Technical. We implement the system that should process requests from millions of users every day.\
+Let's calculate the required number of transactions per second.\
+There are two types of transactions that are sent: first - usual for any blockchain - transfer of SLON between holders. We will not count this type of transaction because the number of second type transactions is large enough to convince that we need a parallelization.\
+The second type transaction is a reimbursement where the person who is eligible to punish the teacher uses that right.\
+We have enough statistics from the school that uses such educational approach to estimate number of reimbursement transactions per second. Usually we process about 30 reimbursements per 45 minutes lesson per class of 20 students or 0.67 transactions per minute per 20 students.\
+In Russia there are about 15 million of pupils at schools. If we assume that all teachers will use such system at lesson we get (0.67*15*10^6/20) transactions per minute or 8375 transactions per second.\
+Substrate gives about 1000 transactions per second per chain. Thus we need at least 9 chains only for Russia to make this blockchain work. One can argue that in Russia there are different time zones and transaction load will be lowered by this mean. But don't forget that on Earth we have about 50x more pupils than in Russia.\
+Thus no single chain can process transactions if all pupils in Russia will use our educational model at classes - too many transactions, even considering that we use offchain as much as possible. Thus we look for any approach to shard and parallelize transaction processing. Polkadot design with relay and parachains looks great to solve this parallelization issue.
 - We've built PoC/MVP product on Java Vaadin framework that can be used via
   link: https://slon-i-giraf.ru/app/work?language=ENG
 - What needs to be completed: datastore, penalizing capability, certificate validity lookup, tests, documentation,
