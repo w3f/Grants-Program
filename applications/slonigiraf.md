@@ -27,8 +27,12 @@
   but each guarantee, if penalized, costs teacher 100 SLON.\
   All parties: Sarah, Tanya, Teri and Ed are economically motivated to behave honestly.\
   Ed is economic incentivized penalize a teacher in case if Sarah lack the skill because he gets SLON from such teacher.\
-  But also Ed can't behave dishonestly. If he starts to penalize teachers in case when skill is present - he will lose
-  all new workers - nobody whants to work with unfair hirer.\
+  Let's consider different ways of misbehavior of parties.\
+We should note here that Sara and Tanya, Sara and Teri are persons who trust each other, and Ed is a public company that Sara trusts. This "trust" is an essential composite of the system. Teacher will not issue a certificate for a student whom he doesn't trust. A student will not show a certificate to a company that is known for misbehavior.\
+A). Sarah gets a certificate from Tanya but then intentionally tells Teri that she lack such skill. Teri penalize Tanya and Tanya loses some amount of SLON. As Tanya knows exactly that Sarah is good at the skill then Tanya decides not to work any more with Sarah and not to issue other certificates for Sarah. Sarah loses faith in herself in Tanya's mind. And this "faith" cost a lot. By the way Sarah has no motif to act in such way.\
+B). The same as above but Sarah allows Ed to penalize Tanya. Sarah will not get a work if she do so. It's not profitable for Sarah.\
+C). Ed knows that Sarah has a skill but penalize a teacher. He will lose all new workers - nobody wants to work with unfair hirer
+D). Teri knows that Sarah has a skill but penalize Tanya. Sarah knows that Teri cheated and will not work with him in future, Teri will lose a profit from issuing future certificates for Sarah.\
   In different professions two models of payments exist: per hour (or per month) and per result. The first one is secure to workers but doesn't motivate them to produce the result. The second one - paying for the result enables to democratize the service market - you just pay for what you need and don't require CVs of worker. Also it enables us to include students and pupils in system as teachers - students teach each other and pay each other only for the result.\
   The idea initially was developed in 2019 year at a private school as a [paper game](https://slon-i-giraf.ru/app/work?view=paperGameView&language=ENG)\
 Then in 2020 we implemented the web version of this educational model on Java/Mysql and use it for now.
