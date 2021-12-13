@@ -33,6 +33,7 @@ A). Sarah gets a certificate from Tanya but then intentionally tells Teri that s
 B). The same as above but Sarah allows Ed to penalize Tanya. Sarah will not get a work if she do so. It's not profitable for Sarah.\
 C). Ed knows that Sarah has a skill but penalize a teacher. He will lose all new workers - nobody wants to work with unfair hirer
 D). Teri knows that Sarah has a skill but penalize Tanya. Sarah knows that Teri cheated and will not work with him in future, Teri will lose a profit from issuing future certificates for Sarah.\
+E). Sarah bribes a teacher to issue a certificate. Ed will examine her and penalize the teacher. The pennalization sum is larger that Sarah's bribe. Thus the teacher can't afford to get a bribe from a student.\
   In different professions two models of payments exist: per hour (or per month) and per result. The first one is secure to workers but doesn't motivate them to produce the result. The second one - paying for the result enables to democratize the service market - you just pay for what you need and don't require CVs of worker. Also it enables us to include students and pupils in system as teachers - students teach each other and pay each other only for the result.\
   The idea initially was developed in 2019 year at a private school as a [paper game](https://slon-i-giraf.ru/app/work?view=paperGameView&language=ENG)\
 Then in 2020 we implemented the web version of this educational model on Java/Mysql and use it for now.
