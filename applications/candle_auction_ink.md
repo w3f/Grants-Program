@@ -137,6 +137,7 @@ A comprehensive tutorial\workshop to be added to [Substrate Developer Hub](https
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
+| 0a. | License | Same as *substrate-docs* or Apache 2.0. The delivery will be either merged into [*substrate-docs*](https://github.com/substrate-developer-hub/substrate-docs) and inherit license from it, or published under *Apache 2.0* as part of a separate repo |
 | 1. | § Candle Auction Basics | Learn the basic mechanincs of a candle auction |
 | 2. | § *ERC721* & *DNS* | Learn *ERC721* and *DNS* contracts implementations in Ink! |
 | 3. | § Cross-Contract Calls | Learn cross-contract communication patterns in Ink! |
