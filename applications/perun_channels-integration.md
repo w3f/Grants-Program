@@ -2,7 +2,7 @@
 
 * **Project Name:** Perun Channels - Integration with go-perun
 * **Team Name:** PolyCrypt/Perun
-* **Payment Address:** 0x63DcE2cB0FeA77f4E55d01569583a40e17448B4b (DAI)
+* **Payment Address:** 0x308Ca526B009e10Ef0482C38A3370BFb44A32908 (DAI)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 

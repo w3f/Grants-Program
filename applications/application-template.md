@@ -166,5 +166,5 @@ Please include here
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
 - Work you have already done.
-- Wheter there are any other teams who have already contributed (financially) to the project.
+- If there are any other teams who have already contributed (financially) to the project.
 - Previous grants you may have applied for.
