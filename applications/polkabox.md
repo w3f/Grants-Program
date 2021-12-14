@@ -148,7 +148,7 @@ We have created a deployment and usage how-to-article describing the deliverable
 ### Overview
 - **Total Estimated Duration:** 3 months 
 - **Full-Time Equivalent (FTE):**  4.5
-- **Total Costs:** 47,000 USD 
+- **Total Costs:** 47,100 USD 
  
 ### Milestone 1 - Indexer Instances, Database, API Layer #1, Data Board, More Tokens
 - **Estimated duration:** 1 month
@@ -192,7 +192,7 @@ We have created a deployment and usage how-to-article describing the deliverable
 ### Milestone 3 - Feature Engineeering, WebApp, UI Design, Dashboards
 - **Estimated duration:** 1 month
 - **FTE:**  4
-- **Costs:** 14,000 USD
+- **Costs:** 14,100 USD
  
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
