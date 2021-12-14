@@ -26,7 +26,37 @@ The new functionalities, that will be added to the polkadot js extension are:
 
 The UI of the already added functionalitys:
 
+Account page, which shows all accounts balances, and icon buttons to access some features:
+
 ![account page screen shot](https://bafkreiaqqp7b5kprdveugwboxlb7wlgz3exv6s7wsalv6prtdlubjhl67q.ipfs.dweb.link)
+
+
+Transfer funds pages, to enter/choose the recepient address, determine the transfer amount, and finally confirm transfer:
+
+![transfer add recepient page screen shot](https://bafkreig42fspwcrzzyk5f6gpvavicrqtkzn5oezbtxrgknnrzx6rgg2jva.ipfs.dweb.link)
+
+![transfer add amount page screen shot](https://bafkreiak3kk3zmvc7xyesla5xxggekxszzwuks3ibq7j5wnqunazz6mv24.ipfs.dweb.link)
+
+![transfer confirmation page screen shot](https://bafkreigjwuj2prhl2fggos3m2wwkiou5kwbsorlm6px6yt6j7jevos7cqe.ipfs.dweb.link)
+ 
+ 
+ Staking pages, to stake, unskae, redeem, and even change your already nominated validators:
+ 
+![staking page screen shot](https://bafkreihq2nszhn2qmb42wzq4r5pyiotxiyss7cjntdrcefgifjt7tifpfe.ipfs.dweb.link)
+
+![staking confirmmation page screen shot](https://bafkreifv5linxp3p2zwxj4qkxhbjnk6qerxbyc6n2nk27jpmxhz3wytlyy.ipfs.dweb.link)
+
+
+The UI of under developement feature:
+
+Viewing the auction and its crowdloans on different relay chains (polkadot, kusama, and westend testnet):
+
+![auction crowdloans confirmmation page screen shot](https://bafkreig7ltmgzzxqihbkikhgpjw5kygxmdi4kr6ey76m2a7gs7gh6nchge.ipfs.dweb.link)
+
+![auction crowdloans page screen shot](https://bafkreicu7mqieyyezsgdvqtcsw4htjtrmyajcv7pqv53svi7fs5t4zqvzi.ipfs.dweb.link)
+
+![auction crowdloans confirmmation page screen shot](https://bafkreieo2ckh4zfztjxwhksimqwq3owhudmdfppd27hif4df22d4a4w7f4.ipfs.dweb.link)
+
 
 ### Ecosystem Fit
 
