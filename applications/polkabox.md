@@ -160,9 +160,8 @@ We have created a deployment and usage how-to-article describing the deliverable
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide **inline documentation** of the code. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Indexer Instances | We will deploy the existing SubQuery SDK framework to index low level blockchain elements including accounts, blocks, events, and transactions. Currently SubQuery saves by default the indexed data in the built-in Postgres database. This is convenient for us as we're also usin Postgres as our database of choice. We will adapt the indexers to the metadata of the specific parachain we want to index. | 
-| 2. | Database, Endpoints | We will set up Postgres as the database storing the indexed on-chain data, and we will create a set of GET endpoints with limited usage from the database (to be used by the dashboard). |
+| 2. | Database, Endpoints | We will set up Postgres as the database storing the indexed on-chain data (in order to store historical data for robust prediction),  and we will create a set of GET endpoints with limited usage from the database (to be used by the dashboard). The database stack will be open-sourced for user who want to self-host. |
 | 3. | Sentiment Analysis Data Board |  The Market Sentiment Analysis is the core value and novelty of PolkaBox. We will build pre-defined schemas of tables with referential integrity of on-chain data (TVL, historical of price, transactions count and volume) to later build our Market Sentiment Analysis dashboard. |
 | 4. | Support Polkadot Tokens  |  We want integrate data for DOT, PCX, RING tokens. | 
 | 5. | Support Kusama Tokens  |  We want integrate data for KSM, KAR, MOVR, KMA tokens. | 
@@ -180,8 +179,7 @@ We have created a deployment and usage how-to-article describing the deliverable
 | 0b. | Documentation | We will provide **inline documentation** of the code.|
 | 0c. | API Documentation | We will provide hosted API docs with a prebuilt collection and environment
 | 0d. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0e. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | APIs Module | We will build several public APIs to fetch off-chain data. The data sources and their corresponding docs and limitations will be published in an API readme file. | 
+| 1. | APIs Module | We will build several public APIs to fetch off-chain data. The data sources and their corresponding docs and limitations will be published in an API readme file. The API will be open source for self hosting or local deployment. | 
 | 2. | Data Ingestion/Storage | Set up external data ingestion and storage + public API endpoints for accessing external data in isolation. |
 | 3. | Sentiment Analysis | Deploy Python’s modules TensorFlow, PyTorch, Scikit-Learn to perform a news sentiment analysis of aggregated API data (tokenize, normalize, stemming, lemmatize) and determine investor’s attitude (greed/stalemate/fear) on DOT (native currency) in the Polkadot ecosystem. |
 | 4. | Sentiment Algorithm | Design the algorithm to quantify market sentiment for a token (bullish-stale-bearish) after aggregating news feed. Publish a README file to describe the Market Sentiment Algorithm. |
