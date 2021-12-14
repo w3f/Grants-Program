@@ -13,9 +13,8 @@
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
+Venice is a next-generation, ZK powered, decentralized finance platform, primarily focused on privacy preservation and cross-chain liquidity aggregation. At launch, Venice will be the first front-running resistant Automated Market Maker (AMM) Decentralized Exchange (DEX) in the world.
 
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
 
 ### Overview
 
@@ -25,6 +24,15 @@ Please provide the following:
 - A brief description of your project.
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 - An indication of why your team is interested in creating this project.
+
+Venice offers programmable & composable privacy solutions for liquidity migration cross all blockchains via bridges. Venice provides the following features:
+* Advanced cryptography algorithms including Bulletproofs, Turbo-PLONK, MPC, etc. to encrypt smart contract inputs. 
+Front-running resistance and full anonymity to protect users from value extracting players.
+* VENI’s innovative deflationary tokenomics design and game-theoretic-inspired mining mechanism guarantees long-term sustainability of Venice protocol. 
+Venetians collectively decide on the optimum solution for the protocol through farming, staking and voting.
+* Venice allows users to frictionlessly and trustlessly move liquidity inter-ecosystem without revealing their position or identity.
+Venice has secured $10 million worth of liquidity incentives from its investors and partners towards launch. 
+
 
 ### Project Details
 
@@ -37,6 +45,9 @@ We expect the teams to already have a solid idea about your project's expected f
 - PoC/MVP or other relevant prior work or research on the topic
 - What your project is _not_ or will _not_ provide or implement
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+
+* Onion Transfer & ZK Synthetic Assets
+
 
 ### Ecosystem Fit
 
