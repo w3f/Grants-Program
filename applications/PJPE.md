@@ -1,15 +1,9 @@
 # W3F Grant Proposal
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
 - **Project Name:** Polkadot js plus extension
 - **Team Name:** Kami Ekbatanifard
 - **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
-
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
@@ -18,9 +12,7 @@
 Polkadot js plus extension is actually polkadot js extention, pluse som new features.
 we don't want to rebuild the wheel, we just want to perfect it,standing on the shoulders of giants like "polkadot js extension" and make it more userfreindly for average users.
 
-The reason why we have decided to work on this project is every day user comments on social medias that complain "why the extension does not show the balance?", "It is too abstract", "It is too complicated for new/average users to work with the extension", " why should we go to another web site to to work with the extension", " where the extension show their contribution on crowdloans", and similar ones.
- 
-- An indication of why your team is interested in creating this project.
+The reason why we have decided to work on this project is every day user comments on social medias that complain "why the extension does not show the balance?", "It is too abstract", "It is too complicated for new/average users to work with the extension", " why should we go to another web site to to work with the extension", " where the extension show their contribution on crowdloans", and similar ones. Thats why we ecouraged to work on Polkadot js PLUS extension to address such concenrs/requests of the polkadot community. 
 
 ### Project Details
 
