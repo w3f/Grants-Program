@@ -9,22 +9,24 @@
 
 ### Overview
 
-Polkadot js plus extension is actually polkadot js extention, pluse som new features.
-we don't want to rebuild the wheel, we just want to perfect it,standing on the shoulders of giants like "polkadot js extension" and make it more userfreindly for average users.
+Polkadot js plus extension is actually polkadot js extention, plus som new features.
+we don't want to rebuild the wheel, we just want to perfect it, standing on the shoulders of giants like "polkadot js extension" and Make it more user-friendly for average users.
 
-The reason why we have decided to work on this project is every day user comments on social medias that complain "why the extension does not show the balance?", "It is too abstract", "It is too complicated for new/average users to work with the extension", " why should we go to another web site to to work with the extension", " where the extension show their contribution on crowdloans", and similar ones. Thats why we ecouraged to work on Polkadot js PLUS extension to address such concenrs/requests of the polkadot community. 
+The reason why we have decided to work on this project is every day user comments on social medias that complain "why the extension does not show the balance?", "It is too complicated for new/average users to work with the extension", "It is too abstract", " why should we go to another web site to work with the extension", " where the extension show their contribution on crowdloans", and similar ones. That's why we've got encouraged to work on Polkadot js PLUS extension to address such concenrs/requests of the polkadot community. 
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+The new functionalities, that will be added to the polkadot js extension are:
+- View balances
+- Transfer funds
+- View an address as QR code
+- Stake / unstake / redeem funds and edit nominated validator list
+- Contribute in crowdloans
+- Referendums 
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+The UI of the already added functionalitys:
+
+![account page screen shot](https://bafkreiaqqp7b5kprdveugwboxlb7wlgz3exv6s7wsalv6prtdlubjhl67q.ipfs.dweb.link)
 
 ### Ecosystem Fit
 
