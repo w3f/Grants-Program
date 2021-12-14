@@ -24,7 +24,7 @@ The new functionalities, that will be added to the polkadot js extension are:
 - Contribute in crowdloans
 - Referendums 
 
-The UI of the already added functionalitys:
+The UI of the already added functionalities:
 
 Account page, which shows all accounts balances, and icon buttons to access some features:
 
@@ -56,6 +56,12 @@ Viewing the auction and its crowdloans on different relay chains (polkadot, kusa
 ![auction crowdloans page screen shot](https://bafkreicu7mqieyyezsgdvqtcsw4htjtrmyajcv7pqv53svi7fs5t4zqvzi.ipfs.dweb.link)
 
 ![auction crowdloans confirmmation page screen shot](https://bafkreieo2ckh4zfztjxwhksimqwq3owhudmdfppd27hif4df22d4a4w7f4.ipfs.dweb.link)
+
+
+
+
+
+
 
 
 ### Ecosystem Fit
