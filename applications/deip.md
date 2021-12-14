@@ -112,7 +112,7 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 
 ### Milestone 2 Implement Web-base UI (Human Capital Tokeization Use-Case (Vedai))
 * **Estimated Duration:** 2 months
-* **Estimated Completion:** End of December 2021
+* **Estimated Completion:** End of January 2022
 * **FTE:**  1
 * **Costs:** 11000 USD
 
