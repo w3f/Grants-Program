@@ -55,9 +55,9 @@ Venice supports trades/swaps wherein the asset type and amount are masked, provi
 
 * FULLY-ANONYMOUS PRIVACY (Turbo-PLONK, MPC)
 The technologies of Onion Transfer, together with front-running resistance, have provided a full set of privacy solutions. For mass adoption of the Pri-fi evolution through frictionless UX and better product-market fit, V3 will interface ‘Triple Masking’ to EVM to provide fully-anonymous privacy to obfuscate all smart contract inputs, allowing a user to trade without revealing his identity or position.
-- This feature is implemented by an efficient implementation of Turbo-PLONK, to be deployed on the UTXO ledger first and then exposed to the EVM ledger through pre-compiled contracts.
-- This feature enables the sender to provide zero-knowledge proofs of a transaction inputs, which is verifiable by the ledger without revealing details of the transaction.
-- The network in this case would be secured through a multi-party computation (MPC).
+ - This feature is implemented by an efficient implementation of Turbo-PLONK, to be deployed on the UTXO ledger first and then exposed to the EVM ledger through pre-compiled contracts.
+ - This feature enables the sender to provide zero-knowledge proofs of a transaction inputs, which is verifiable by the ledger without revealing details of the transaction.
+ - The network in this case would be secured through a multi-party computation (MPC).
 ![image](https://user-images.githubusercontent.com/96151378/146103649-4af3af42-c3a2-4c1c-b90d-93930a530df6.png)
 
 
@@ -103,9 +103,9 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/VeniceFinance
+- https://github.com/VeniceFinance/venice-swap-periphery
+- https://github.com/VeniceFinance/venice-swap-core
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
@@ -147,8 +147,8 @@ For each milestone,
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
+- **Total Estimated Duration:** 6 monthes
+- **Full-Time Equivalent (FTE):**  6
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
 ### Milestone 1 Example — Implement Substrate Modules
