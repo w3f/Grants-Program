@@ -2,7 +2,7 @@
 
 - **Project Name:** Polkadot js plus extension
 - **Team Name:** Kami Ekbatanifard
-- **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:** 0xa4Eff15578D1450912DED08c85679F453C45A710 (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
@@ -19,8 +19,9 @@ The reason why we have decided to work on this project is every day user comment
 The new functionalities, that will be added to the polkadot js extension are:
 - View balances
 - Transfer funds
-- View an address as QR code
 - Stake / unstake / redeem funds and edit nominated validator list
+- View transaction history
+- View an address as a QR code
 - Contribute in crowdloans
 - Referendums 
 
@@ -31,7 +32,7 @@ Account page, which shows all accounts balances, and icon buttons to access some
 ![account page screen shot](https://bafkreiaqqp7b5kprdveugwboxlb7wlgz3exv6s7wsalv6prtdlubjhl67q.ipfs.dweb.link)
 
 
-Transfer funds pages, to enter/choose the recepient address, determine the transfer amount, and finally confirm transfer:
+Transfer funds pages, to enter/choose the recipient address, determine the transfer amount, and finally confirm transfer:
 
 ![transfer add recepient page screen shot](https://bafkreig42fspwcrzzyk5f6gpvavicrqtkzn5oezbtxrgknnrzx6rgg2jva.ipfs.dweb.link)
 
@@ -47,7 +48,12 @@ Transfer funds pages, to enter/choose the recepient address, determine the trans
 ![staking confirmmation page screen shot](https://bafkreifv5linxp3p2zwxj4qkxhbjnk6qerxbyc6n2nk27jpmxhz3wytlyy.ipfs.dweb.link)
 
 
-The UI of under developement feature:
+view transaction history:
+
+![staking confirmmation page screen shot](https://bafkreifnrzopgjnl4jeru3eagfqpkcwbyalosppwjszwrz5blk2cby2mpa.ipfs.dweb.link)
+
+
+The UI of under developement features:
 
 Viewing the auction and its crowdloans on different relay chains (polkadot, kusama, and westend testnet):
 
@@ -66,14 +72,16 @@ Viewing the auction and its crowdloans on different relay chains (polkadot, kusa
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+Polkadot js plus extension is a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is based on polkadot js extension, which injects a @polkadot/api signer into a page, along with any associated accounts.
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+
+Competitive product analysis
+Polkadot's browser extension wallet, the currently known competitors are are Enzyme, Speckle OS, Doter.
+
+Enzyme and Speckle OS have very limited features and not been maintained for a long time. The third one, Dotter also has very limitted capabilities, so that the functional modules achieved by polkadot js plus extension's first milestone have exceeded Doter (Recently, we have completed the first milestone), and more functional modules that will serve the Polkadot ecology will be implemented in the plan.
+
+From the perspective of UI experience, polkadot js plus tries to not just be more user-userfriendlier but also consistent with the previous taste of the users, who are already familiar with the original polkadot js extension. wWe try to make the UI more attractive to users, and also support all the languages that are currently existd on the original extension.
+
 
 ## Team :busts_in_silhouette:
 
