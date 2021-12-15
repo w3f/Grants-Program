@@ -18,13 +18,6 @@ Venice is a next-generation, ZK powered, decentralized finance platform, primari
 
 ### Overview
 
-Please provide the following:
-
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
-
 Venice offers programmable & composable privacy solutions for liquidity migration cross all blockchains via bridges. Venice provides the following features:
 * Advanced cryptography algorithms including Bulletproofs, Turbo-PLONK, MPC, etc. to encrypt smart contract inputs. 
 Front-running resistance and full anonymity to protect users from value extracting players.
@@ -32,6 +25,9 @@ Front-running resistance and full anonymity to protect users from value extracti
 Venetians collectively decide on the optimum solution for the protocol through farming, staking and voting.
 * Venice allows users to frictionlessly and trustlessly move liquidity inter-ecosystem without revealing their position or identity.
 Venice has secured $10 million worth of liquidity incentives from its investors and partners towards launch. 
+
+Inheriting default programmable privacy, Venice is able to protect the users in Substrate / Polkadot / Kusama from malicious exploits including front-running attacks/GPA-style MEV, transaction linkability, identity traceability, and so on. Venice is committed to the ideals of permissionless access, privacy-protection, and auditable transparency, all indispensable components for a future where anyone in the world can access financial services without fear of identity breach or related counterparty risk. 
+
 
 
 ### Project Details
