@@ -31,15 +31,15 @@ Venice has secured $10 million worth of liquidity incentives from its investors 
 
 ### Project Details
 
-~~We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+<s>We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
-~~- Mockups/designs of any UI components
-~~- Data models / API specifications of the core functionality
-~~- An overview of the technology stack to be used
-~~- Documentation of core components, protocols, architecture, etc. to be deployed
-~~- PoC/MVP or other relevant prior work or research on the topic
-~~- What your project is _not_ or will _not_ provide or implement
-  ~~- This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+- Mockups/designs of any UI components
+- Data models / API specifications of the core functionality
+- An overview of the technology stack to be used
+- Documentation of core components, protocols, architecture, etc. to be deployed
+- PoC/MVP or other relevant prior work or research on the topic
+- What your project is _not_ or will _not_ provide or implement
+  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious </s>
 
 * Onion Transfer & ZK Synthetic Assets
 Onion Transfer utilizes cryptography algorithms, like atomic swap and anonymous transfer, to create ZK synthetic versions of any asset supported in the Venice ecosystem, removing account traceability and introducing fundamental privacy protection.
@@ -49,7 +49,8 @@ This process enables a “decontamination” process which helps users to establ
 
 * FRONTRUNNING RESISTANCE (Bulletproofs)
 Leveraging the Bulletproofs functionality interfacing to the EVM ledger using pre-compiled contracts, the asset type and amount in the txn data can be masked in a smart contract while the transaction itself still remains public and verifiable. 
-Venice supports trades/swaps wherein the asset type and amount are masked, providing an elegant mechanism to prevent front-running while maintaining the ideology behind a completely decentralized and transparent system. 
+Venice supports trades/swaps wherein the asset type and amount are masked, providing an elegant mechanism to prevent front-running while maintaining the ideology behind a completely decentralized and transparent system.
+
 ![image](https://user-images.githubusercontent.com/96151378/146103370-165c6d44-9056-4491-859b-6454a14428c0.png)
 
 * FULLY-ANONYMOUS PRIVACY (Turbo-PLONK, MPC)
@@ -64,14 +65,14 @@ The technologies of Onion Transfer, together with front-running resistance, have
 
 ### Ecosystem Fit
 
-~~Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+<s>Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
-~~- Where and how does your project fit into the ecosystem?
-~~- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-~~- What need(s) does your project meet?
-~~- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  ~~- If so, how is your project different?
-  ~~- If not, are there similar projects in related ecosystems?
+- Where and how does your project fit into the ecosystem?
+- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+- What need(s) does your project meet?
+- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
+  - If so, how is your project different?
+  - If not, are there similar projects in related ecosystems? </s>
 
 Built on the ethos of usability and privacy, Venice is a next-generation decentralized finance (DeFi) platform focused on privacy preservation and cross-chain liquidity & interoperability, to be launched as the first front-running resistant Automated Market Maker (AMM) Decentralized Exchange (DEX) in the world. Venice provides the Polkadot ecosystem with the features of atomic swaps and anonymous transfers. 
 There are some similar AMM like Uniswap and Polkaswap. But these DEXes exploits from a fully-transparent ledger when privacy is deprioritized. Inheriting default programmable privacy, Venice is able to protect the users in Substrate / Polkadot / Kusama from malicious exploits including front-running attacks/GPA-style MEV, transaction linkability, identity traceability, and so on. Venice is committed to the ideals of permissionless access, privacy-protection, and auditable transparency, all indispensable components for a future where anyone in the world can access financial services without fear of identity breach or related counterparty risk.
