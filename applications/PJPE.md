@@ -9,10 +9,10 @@
 
 ### Overview
 
-Polkadot js plus extension is actually polkadot js extention, plus som new features.
-we don't want to rebuild the wheel, we just want to perfect it, standing on the shoulders of giants like "polkadot js extension" and Make it more user-friendly for average users.
+Polkadot js plus extension will be a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is actually polkadot js extention, plus some new features.
+We don't want to rebuild the wheel, we just want to perfect it, standing on the shoulders of giants like "polkadot js extension" and Make it more user-friendly for average users.
 
-The reason why we have decided to work on this project is every day user comments on social medias that complain "why the extension does not show the balance?", "It is too complicated for new/average users to work with the extension", "It is too abstract", " why should we go to another web site to work with the extension", " where the extension show their contribution on crowdloans", and similar ones. That's why we've got encouraged to work on Polkadot js PLUS extension to address such concenrs/requests of the polkadot community. 
+The reason why we have decided to work on this project is every day user comments on social medias that complain "why the extension does not show the balance?", "It is too complicated for new/average users to work with", "It is too abstract", " why should we go to another web site to work with the extension", " where does the extension show their contribution on crowdloans", and so on. That's why we've decided to work on Polkadot js PLUS extension to address such concenrs/requests of the polkadot community. 
 
 ### Project Details
 
@@ -65,17 +65,13 @@ Viewing the auction and its crowdloans on different relay chains (polkadot, kusa
 
 
 
-
-
-
-
-
 ### Ecosystem Fit
 
 Polkadot js plus extension is a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is based on polkadot js extension, which injects a @polkadot/api signer into a page, along with any associated accounts.
 
 
-Competitive product analysis
+#Competitive product analysis
+
 Polkadot's browser extension wallet, the currently known competitors are are Enzyme, Speckle OS, Doter.
 
 Enzyme and Speckle OS have very limited features and not been maintained for a long time. The third one, Dotter also has very limitted capabilities, so that the functional modules achieved by polkadot js plus extension's first milestone have exceeded Doter (Recently, we have completed the first milestone), and more functional modules that will serve the Polkadot ecology will be implemented in the plan.
