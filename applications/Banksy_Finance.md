@@ -1,11 +1,12 @@
 # Open Grant Proposal
 
-* **Project:** Banksy Finance
+- **Project:** Banksy Finance
 
-* **Proposer:** Clink Li
+- **Proposer:** Clink Li
 
-* **Payment Address:** 0x111767Cb725C92f06031570Cf2dfb694EbD25bf6
+- **Payment Address:** 0x111767Cb725C92f06031570Cf2dfb694EbD25bf6
 
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/495#issuecomment-980596405)
   
 
 
@@ -21,7 +22,7 @@ The existing NFT lending platforms in the market, including NFTfi, UpShot One, N
 
 Banksy Finance is a decentralized AI-driven NFT Pool-based lending hub, dedicated to addressing the issues of the NFT market, providing a complete solution for NFT mortgage lending that is different from the P2P lending model. It supports mortgage NFT for loans directly on the platform, without requiring both lenders and borrowers to an agreement. It is the first NFT pool-based lending platform in the market.
 
-* NAK Protocol
+- NAK Protocol
 
   Banksy Finance first integrated AI technology in the NFT market and provided a reliable NFT pool-based lending solution to address the issues for the market.
 
@@ -35,7 +36,7 @@ Banksy Finance is a decentralized AI-driven NFT Pool-based lending hub, dedicate
 
   4. **AI Oracle For NFT**: Banksy integrates the data Analysis results of Base Analysis, uses a machine-learning algorithm to calculate the NFT price in real-time, and feeds the price to oracle.
 
-* **NFT lending pool**
+- **NFT lending pool**
 
   Based on the NAK protocol, Banksy built the NFT pool-based lending platform to provide effective funds security for lenders and meet the needs of NFT holders and lenders.
 
@@ -49,15 +50,15 @@ Banksy Finance is a decentralized AI-driven NFT Pool-based lending hub, dedicate
 
 
 
-* **NFT Pool-based mortgage lending**
+- **NFT Pool-based mortgage lending**
 
 ![arch](https://user-images.githubusercontent.com/23376179/126989384-e4ef07f5-4dd0-451e-8d2b-aff9377bfa31.png)
 
- To ensure the healthy and sustainable NFT mortgage lending business development on the platform, Banksy has designed the following mechanisms: 
+ To ensure the healthy and sustainable NFT mortgage lending business development on the platform, Banksy has designed the following mechanisms:
 
 1. Whitelist
 
-   By community voting, the pool-based lending business will support series of NFT works, such as the CryptoKitties series and the Bored Ape Yacht series. Introduce high-quality NFT works to eliminate worthless NFT works, thereby ensuring the quality of the NFT works in the platform and ensuring the security of the funds. 
+   By community voting, the pool-based lending business will support series of NFT works, such as the CryptoKitties series and the Bored Ape Yacht series. Introduce high-quality NFT works to eliminate worthless NFT works, thereby ensuring the quality of the NFT works in the platform and ensuring the security of the funds.
 
 2. Mortgage Rate
 
@@ -76,18 +77,18 @@ Banksy Finance is a decentralized AI-driven NFT Pool-based lending hub, dedicate
    We set up a Safety Funds Pool where users can stake KSY and KSY/ETH trading pairs in the pool for revenues and rewards from the platform.  In case of capital loss, the safety funds pool will use up to 30% of the assets locked to cover the deficit.  It will ensure the funds when the shortfall event occurs.
 
 6. Platform revenue sharing
-   
-   Since the users are taking certain risks for staking their funds, Banksy will give incentives and platform revenue to stakes. 
+
+   Since the users are taking certain risks for staking their funds, Banksy will give incentives and platform revenue to stakes.
 
 
 
-* **AI Oracle**
+- **AI Oracle**
 
   **Oracle algorithm**
   
-  The open and transparency of NFT transaction data in the chains allow access to historical transactions, NFT attribute information, NFT creator information, and NFT popularity information (including Twitter attention, major media NFT attention). It will facilitate a comprehensive analysis of NFT value and trend forecast. 
+  The open and transparency of NFT transaction data in the chains allow access to historical transactions, NFT attribute information, NFT creator information, and NFT popularity information (including Twitter attention, major media NFT attention). It will facilitate a comprehensive analysis of NFT value and trend forecast.
   
-  Banksy will aggregate all the transaction data, take the transaction price and experts estimate as to the machine learning labels of sample data, and take all the relevant data of NFT as sample attribute data for the model training through machine learning algorithms. It will set out a reasonable model of machine learning. 
+  Banksy will aggregate all the transaction data, take the transaction price and experts estimate as to the machine learning labels of sample data, and take all the relevant data of NFT as sample attribute data for the model training through machine learning algorithms. It will set out a reasonable model of machine learning.
   
   The real-time attribute data of NFT is used as the model input to predict the NFT price with the machine learning model. It finally multiples with a valuation coefficient to serve as the real-time reference price, as shown in the figure below:
 
@@ -95,7 +96,7 @@ Banksy Finance is a decentralized AI-driven NFT Pool-based lending hub, dedicate
 
 ![ml](https://user-images.githubusercontent.com/23376179/125627056-7d95c24f-4816-435a-9b24-0aa802a01095.png)
 
-​	**Decentralized deployment**
+​ **Decentralized deployment**
 
 AI Oracle uses a decentralized oracle deployment, as shown in the following picture. The machine learning model calculates at AI Node, with data input provided by the Data sources node. Not the only one predictor node O is in the network, but n different predictor nodes (O1, O2,......, On). Each predictor Oi has its data sources that may not overlap. Oi takes and aggregates the data from the data sources and sends its own aggregated data Ai to request Req. BANKSY-SC will calculate A-Agg (A1, A2,...... using the number of Agg letters an) and return result A to USER-SC.
 
@@ -105,7 +106,7 @@ AI Oracle uses a decentralized oracle deployment, as shown in the following pict
 
 **Banksy-Oracle workflow**
 
-1. User-SC initiates on-chain requests. 
+1. User-SC initiates on-chain requests.
 2. Banksy-SC records events for Oracle.
 3. Banksy-AI-Node receives the event log and performs the task, request data from external API.
 4. Banksy-AI-Node processes the returned data and returns the processing result.
@@ -123,19 +124,19 @@ Banksy breaks through the P2P lending and supports users to directly mortgage NF
 
 ### Team members
 
-* **Clink Li**：[Linkdin](https://www.linkedin.com/in/clink-li-aa1ba418a/)
-* **Chris Su** : [Github](https://github.com/chrissoso)
-* **Wei Jiang** : [Github](https://github.com/GleipnirJ)
-* **Roger Luo** : [Github](https://github.com/luojie1024)
-* **Chen Chen** : [Github](https://github.com/cchen1101)
-* **Peihuang Guo** : [Github](https://github.com/Disperito)
-* **Chengyang Lin** : [Github](https://github.com/linchengyang1116)
+- **Clink Li**：[Linkdin](https://www.linkedin.com/in/clink-li-aa1ba418a/)
+- **Chris Su** : [Github](https://github.com/chrissoso)
+- **Wei Jiang** : [Github](https://github.com/GleipnirJ)
+- **Roger Luo** : [Github](https://github.com/luojie1024)
+- **Chen Chen** : [Github](https://github.com/cchen1101)
+- **Peihuang Guo** : [Github](https://github.com/Disperito)
+- **Chengyang Lin** : [Github](https://github.com/linchengyang1116)
 
 
 ### Contact
 
-* **Contact Name:** Clink Li
-* ***Contact Email:***  contact@banksy.finance
+- **Contact Name:** Clink Li
+- ***Contact Email:***  contact@banksy.finance
 
 ### Team's experience
 
@@ -143,19 +144,19 @@ Team members have rich development experience, including algorithm, front-end de
 
 ### Team Code Repos
 
-* https://github.com/Banksy-Finance
+- https://github.com/Banksy-Finance
 
 ### Overview
 
-* **Total Estimated Duration:** 2 months
-* **Full-time equivalent (FTE):** 6
-* **Total Costs:**  DAI 8500
+- **Total Estimated Duration:** 2 months
+- **Full-time equivalent (FTE):** 6
+- **Total Costs:**  DAI 8500
 
 ### Milestone 1 -- Implementation of NFT pool-based lending
 
-* **Estimated Duration:** 2 month
-* **FTE:** 6
-* **Costs:** DAI 8500 
+- **Estimated Duration:** 2 month
+- **FTE:** 6
+- **Costs:** DAI 8500
 
 
 | Number | Deliverable        | Specification                                                |
@@ -185,9 +186,9 @@ Team members have rich development experience, including algorithm, front-end de
 
 ## Additional Information :heavy_plus_sign:
 
-* Dapp: http://app.banksy.finance/
-* Website：http://www.banksy.finance/
-* Discord：https://discord.gg/NdRGt4BDFe
-* Twitter: https://twitter.com/banksy_finance
-* Telegram: https://t.me/Banskyfinance
+- Dapp: http://app.banksy.finance/
+- Website：http://www.banksy.finance/
+- Discord：https://discord.gg/NdRGt4BDFe
+- Twitter: https://twitter.com/banksy_finance
+- Telegram: https://t.me/Banskyfinance
 
