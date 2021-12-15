@@ -180,6 +180,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | PoW | [PoW consensus for Substrate](https://github.com/paritytech/substrate/tree/master/client/consensus/pow), [RandomX](https://github.com/kulupu/kulupu/tree/master/pow), [Sha3 PoW](https://github.com/substrate-developer-hub/recipes/tree/master/consensus/sha3pow) |
 | Block production | [BABE](https://github.com/paritytech/substrate/tree/master/client/consensus/babe), [Aura](https://github.com/paritytech/substrate/tree/master/client/consensus/aura) |
 | Finality | [GRANDPA](https://github.com/paritytech/substrate/tree/master/frame/grandpa) |
+| Other | [Nimbus: Upgradeable consensus framework](https://github.com/PureStake/nimbus) | 
 
 
 ### :satellite: Networking
