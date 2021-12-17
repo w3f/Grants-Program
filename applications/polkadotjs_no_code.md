@@ -14,21 +14,18 @@ A free polkadot.js wrapped into a NoCode plugin tool for one of the biggest no-c
 Users will be able to build projects on Polkadot without code. So, this is a tool to use the main tool but without code.
 All main features from the polkadot.js will be implemented in the plugin and it will be free to use.
 
-The plugin will open a door to many new developers that could build apps in the Polkadot ecosystem without code.
-
-About your interest in this.
-Our main focus is to bring as many crypto tools to the no-code as possible making our plugins the first you think of when building crypto-related apps on Bubble.
-Polkadot.js plugin would be a new really powerful tool attracting new developers and potential clients that we can work with.
+The plugin will open a door to the Polkadot ecosystem for a big community of no-code developers.
 
 ### Project Details
 
-First, let me shortly introduce you to the no-code platform so you know why we see a big perspective in this plugin.
-Bubble.io is the most powerful no-code platform for creating web apps. It is flexible, with many unique features such as customizable backend API, database, and database API, all without code!
+First, let me shortly introduce you to the Bubble, a no-code platform.
+Bubble.io is the most powerful no-code platform for creating web apps. Being flexible for any use case, it has many unique features such as customizable backend API and database, plugins, and much more, all without code!
 
-The main tool that Bubble has is plugins (similar to WordPress plugins), a plugin can be paid or free, it can add new powerful features to your app.
+The main tool that Bubble has is, plugins (similar to WordPress plugins), a plugin can be paid or free, it can add a variety of new powerful features to your app.
 
-The final version of the plugin will have a separate element for each category that Polkadot.js has. 
-For example, currently Polkadot.js Wallet, this element will have all features related to the Polkadot.js Extension.
+A plugin can have different "elements" in it, each element can add visual or technical additions to Bubble.
+The final version of the Polkadotjs plugin will have a separate element for each category that Polkadot.js has (Extension, API, Contracts etc.)
+For example, the plugin currently has one element called Polkadot.js Wallet, this element will have all features related to the Polkadot.js Extension.
 Other elements will be divided just like in the official documentation of the polkadot.js
 Polkadot.js API
 Polkadot.js Utilities
@@ -39,13 +36,11 @@ Currently, the plugin will be available in the frontend only, it will not have a
 
 ### Ecosystem Fit
 
-The main target of this plugin is for every potential user of the Substrate / Polkadot / Kusama ecosystem not only developers because no code is easy and the plugin is free to use, everyone can try to build something with it.
+The main target of this plugin is every potential user of the Substrate / Polkadot / Kusama ecosystem. No-Code requires much less time to start work with, making it very easy for everyone that wants to experiment with it to bring their ideas to life.
 
-Developers will be able to build dapps and users will be able to connect their wallets to it.
-All while without a single line of code. 
-The potential here is big since currently there are no similar plugins that could do this for Polkadot.
-There are a few other plugins that do the same thing but for other chains (those were built by us as well) and all of them became pretty popular, even the paid ones. 
-So the potential for a free plugin that will bring the Polkadot ecosystem is big, there are no other no-code solutions for Polkadot/Substrate/Kusama
+We see it as a big potential for the Polkadot ecosystem and Bubble ecosystem, since currently there are no similar plugins that could do this for Polkadot without code.
+So far we have to build a few Web3 plugins for other networks like Ethereum or Solana, and from the activity on those plugins forum thread, turns out there are a lot of no-code developers interested in building something with it even if they are paid.
+So the potential for a free plugin that will bring the Polkadot ecosystem to no-code is big.
 
 ## Team :busts_in_silhouette:
 
@@ -65,7 +60,7 @@ So the potential for a free plugin that will bring the Polkadot ecosystem is big
 ### Team's experience
 
 Providing services and building templates&plugins on the Bubble platform for 3 years now.
-Recently we won a grant on Rarible Protocol for integration of their SDK into a free plugin as well.
+Recently won a grant on Rarible Protocol for integration of their SDK into a similar free plugin.
 Here is a link to it:
 https://snapshot.org/#/rarible.eth/proposal/Qmcy5SxiJRHDW8vrcjVZdJm3BngENjdGsM4KSHQDQEXipB
 
@@ -149,20 +144,22 @@ Features that are already implemented and you can see them in the demo:
 
 ## Future Plans
 
-As with all our plugins, we provide constant support on the Bubble Forum, the plugin will have a separate thread where we will help users and answer their questions.
-If there will be any updates in the polkadot.js and may break currently working plugin features, we will implement that update in the plugin as well.
-In case of any bugs, we will fix them and deploy updates.
+As with all our plugins, we provide constant support on the Bubble Forum, the plugin will have a separate thread where we will help users, answer their questions and post updates.
+If there will be any updates in the polkadot.js that may break currently working plugin features, we will implement those updates in the plugin as well.
+So, the main focus is to provide constant support for the plugin users after its release.
 
 ## Additional Information :heavy_plus_sign:
 
 Important info about Bubble itself. 
 Does it worth it to build plugins for it? 
-Our team works only with Bubble for 3 years now, building templates, plugins, and apps for clients so, we can say it is worth it.
+Our team works only with Bubble for 3 years now, building templates, plugins, and apps for clients, we certainly can say that it is worth it.
 
-Bubble recently reached one million users.
+Here are a few numbers about Bubble:
+
+- Bubble recently reached one million users.
 https://twitter.com/bubble/status/1408451614415937543
 
-The Bubble has closed a $100M round led by Insight Partners.
+- The Bubble has closed a $100M round led by Insight Partners.
 https://bubble.io/blog/bubble-series-a-100m/ 
 
 All our crypto-related plugins 
