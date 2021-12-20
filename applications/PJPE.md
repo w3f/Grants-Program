@@ -76,8 +76,16 @@ Polkadot's browser extension wallet, the currently known competitors are Enzyme,
 
 Enzyme and Speckle OS have very limited features and not been maintained for a long time over a year. Dotter also has very limitted capabilities, so that the functional modules achieved by polkadot js plus extension's first milestone have exceeded Doter (Recently, we have completed the first milestone), and more functional modules that will serve the Polkadot ecology will be implemented in the plan.
 
+# The difference with polkadot.js extension
+
+Polkadot.js extension is an official account management tool, but polkadot js plus extension will be not nly an account management tool but also also implements a series of common functions in Polkadot ecology, such as fund transfer and receive, transaction histrory (including, send, recieve, bond, nominate, bond_extra, redeem, etc), staking, easy-to-operate on-chain governance modules, contribute to crowdloans, etc. This means that polkadot js plus can not only do what originalextension does, but also independently complete the functions mentioned above, providing users with a one-stop experience, which polkadot.js extension does not have.
+
 From the perspective of UI experience, polkadot js plus tries to not just be more user-userfriendlier but also consistent with the previous taste of the users, who are already familiar with the original polkadot js extension. We try to make the UI more attractive to users, and also support all the languages that are currently existd on the original extension.
 
+# Product direction and advantages
+...
+# How to maintain the wallet
+...
 
 ## Team :busts_in_silhouette:
 
