@@ -70,7 +70,7 @@ Viewing the auction and its crowdloans on different relay chains (polkadot, kusa
 Polkadot js plus extension will be a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is based on the original polkadot js extension, which injects a @polkadot/api signer into a page, along with any associated accounts.
 
 
-#Competitive product analysis
+# Competitive product analysis
 
 Polkadot's browser extension wallet, the currently known competitors are Enzyme, Speckle OS, and Doter.
 
@@ -83,7 +83,7 @@ From the perspective of UI experience, polkadot js plus tries to not just be mor
 
 ### Team members
 
--Kami Ekbatanifard
+- Kami Ekbatanifard
 
 ### Contact
 
@@ -95,7 +95,7 @@ From the perspective of UI experience, polkadot js plus tries to not just be mor
 
 Polkadotjs plus extension is maintained by the Kami Ekbatanifard, and no company entity has been created yet, The following is our communication information.
 
-- **Mailing Address:** 6575, ch kildare, cote-st luc, H4W1B6, Montreal, Quebec,Canada
+- **Mailing Address:** 6575, ch kildare, cote-st luc, H4W1B6, Montreal, Quebec, Canada
 - **E-mail:** ekbatanifard@gmail.com
 - **Twitter:** ekbatanifard
  
@@ -112,7 +112,7 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 ### Team LinkedIn Profile
 
-- https:/www.linkedin.com/in/ekbatanifard
+- https://www.linkedin.com/in/ekbatanifard
 
 ## Development Status :open_book:
 
