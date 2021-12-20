@@ -159,7 +159,7 @@ We divide the project into three milestones. We aim to finish the whole project 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
+| 0a. | License | BSD |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how to run the bug detection component as a standalone tool on terminal.|
 | 0c. | Testing Guide | We will include unit tests to ensure the functionality and robustness of our code. We will also include 10 toy programs containing different types of deadlocks to demonstrate the bug detection capability. We will also run this component on the latest version of Substrate, Polkadot, and ink!. We will manually inspect all reported results to count the number of bugs and the number of false positives. | 
 | 1. | Detecting Conflicting Locks  | We will implement a detector that can identify deadlocks due to locks in conflicting orders through analyzing the MIR of Rust programs.|  
@@ -175,7 +175,7 @@ We divide the project into three milestones. We aim to finish the whole project 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
+| 0a. | License | BSD |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how to install and use the changed rust-analyzer.  |
 | 0c. | Testing Guide | We will also use the 10 toy programs designed in the last milestone to test whether the bug detection capability is successfully integrated into rust-analyzer. | 
 | 1. | Extend Language Server Protocol (LSP) | We will extend LSP to contain the key information related to deadlocks (e.g., the start and the end of a critical section, blocking operations in a critical section).|  
@@ -191,7 +191,7 @@ We divide the project into three milestones. We aim to finish the whole project 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 |
+| 0a. | License | BSD |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how to install and use the visualization component in VSCode. |
 | 0c. | Testing Guide | We will include unit tests to ensure the functionality and robustness of our code. We will also include 10 toy programs to test whether channel operations are correctly identified, whether channel operations are correctly visualized, whether operations on conditional variables are correctly identified, and whether operations on conditional variables are correctly highlighted. | 
 | 1. | Parse the Extended LSP | We will implement a component to parse the extended LSP and get computed information, such as the scope of a critical section and identified blocking operations. |  
