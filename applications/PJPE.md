@@ -67,16 +67,16 @@ Viewing the auction and its crowdloans on different relay chains (polkadot, kusa
 
 ### Ecosystem Fit
 
-Polkadot js plus extension is a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is based on polkadot js extension, which injects a @polkadot/api signer into a page, along with any associated accounts.
+Polkadot js plus extension will be a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is based on the original polkadot js extension, which injects a @polkadot/api signer into a page, along with any associated accounts.
 
 
 #Competitive product analysis
 
-Polkadot's browser extension wallet, the currently known competitors are are Enzyme, Speckle OS, Doter.
+Polkadot's browser extension wallet, the currently known competitors are Enzyme, Speckle OS, and Doter.
 
-Enzyme and Speckle OS have very limited features and not been maintained for a long time. The third one, Dotter also has very limitted capabilities, so that the functional modules achieved by polkadot js plus extension's first milestone have exceeded Doter (Recently, we have completed the first milestone), and more functional modules that will serve the Polkadot ecology will be implemented in the plan.
+Enzyme and Speckle OS have very limited features and not been maintained for a long time over a year. Dotter also has very limitted capabilities, so that the functional modules achieved by polkadot js plus extension's first milestone have exceeded Doter (Recently, we have completed the first milestone), and more functional modules that will serve the Polkadot ecology will be implemented in the plan.
 
-From the perspective of UI experience, polkadot js plus tries to not just be more user-userfriendlier but also consistent with the previous taste of the users, who are already familiar with the original polkadot js extension. wWe try to make the UI more attractive to users, and also support all the languages that are currently existd on the original extension.
+From the perspective of UI experience, polkadot js plus tries to not just be more user-userfriendlier but also consistent with the previous taste of the users, who are already familiar with the original polkadot js extension. We try to make the UI more attractive to users, and also support all the languages that are currently existd on the original extension.
 
 
 ## Team :busts_in_silhouette:
