@@ -83,41 +83,36 @@ From the perspective of UI experience, polkadot js plus tries to not just be mor
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+-Kami Ekbatanifard
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:**
+- **Contact Name:** Kami Ekbatanifard
+- **Contact Email:** ekbatanifard@gmail.com
+- **Website:** Polkadot js plus extension is currently maintained on [Github](https://github.com/Nick-1979/polkadot-Js-Plus-extension), no website has been created yet
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+Polkadotjs plus extension is maintained by the Kami Ekbatanifard, and no company entity has been created yet, The following is our communication information.
 
+- **Mailing Address:** 6575, ch kildare, cote-st luc, H4W1B6, Montreal, Quebec,Canada
+- **E-mail:** ekbatanifard@gmail.com
+- **Twitter:** ekbatanifard
+ 
 ### Team's experience
 
 Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
 
 If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
 
-### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+#### Personal Code Repo:
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+- https://github.com/Nick-1979
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+### Team LinkedIn Profile
 
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- https:/www.linkedin.com/in/ekbatanifard
 
 ## Development Status :open_book:
 
