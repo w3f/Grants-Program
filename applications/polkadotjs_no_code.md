@@ -116,7 +116,7 @@ Features that are already implemented and you can see them in the demo:
 | 0a. | License | MIT |
 | 0b. | Demo pages | Open source demo pages that will demonstrate the available features and how to implement them |
 | 0c. | Documentation | A documentation page that will explain the plugin element fields, what they mean, what parameters are needed, and how to use the element actions (For example, action to connect the wallet or to Sign a message) |
-| 0d. | Testing Guide | Since No-Code doesn't have any type of testing, we will provide demo pages that will cover at least 50% of all plugin features that can be tested directly on the page with a description in the documentation |
+| 0d. | Testing Guide | Since No-Code doesn't have any type of testing, we will provide demo pages that will cover 100% of all plugin features that can be tested directly on the page with a description in the documentation |
 | 0e. | Forum post | We will create a thread on Bubble's forum describing the plugin features with all links to the plugin, demo, and documentation |
 | 1. | Extension | Plugin element that will implement all Extension features |  
 | 2. | Utilities | Plugin element with the Utility features | 
