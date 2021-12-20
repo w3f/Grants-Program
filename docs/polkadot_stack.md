@@ -66,7 +66,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Desktop/Web Wallets | [Talisman Web Application](https://github.com/TalismanSociety/talisman-web), [AirGap](https://github.com/airgap-it/airgap-wallet), [Sakura](https://github.com/w3finance/sakura) | User-friendly Wallet based on the [Recovery Pallet](https://github.com/paritytech/substrate/tree/master/frame/recovery), Web wallets focused on user-onboarding (e.g. using [localStorage](https://github.com/near/near-wallet))
 | Browser Extensions | [Polkadot{.js}](https://github.com/polkadot-js/extension), [Doter](https://github.com/ChainBridgeNetworkTeam/Doter), [Enzyme](https://getenzyme.dev/), [Speckle OS](https://github.com/GetSpeckle) | Sign-in with your polkadot, kusama, etc. account.  
 | Mobile Wallets|  [Lunie](https://github.com/luniehq/lunie), [Polkawallet](https://github.com/polkawallet-io/polkawallet-flutter), [Parity Signer](https://github.com/paritytech/parity-signer), [imToken](https://github.com/consenlabs/token-core), [Fearless Wallet Android](https://github.com/soramitsu/fearless-Android), [Fearless Wallet iOS](https://github.com/soramitsu/fearless-iOS), [Stylo](https://github.com/stylo-app/stylo), [Nova Wallet](https://github.com/nova-wallet), [Fractapp](https://github.com/fractapp/fractapp/)  
-| Burner Wallets/Faucet| [KodaDot](https://kodadot.js.org/) | Faucet (a sybil-resistant way to receive free tokens)
+| Burner Wallets/Faucet| [KodaDot](https://kodadot.js.org/), [Astar Faucet Bot](https://github.com/AstarNetwork/astar-faucet-bot) | Faucet (a sybil-resistant way to receive free tokens)
 | CLI Wallet | [Subwallet](https://github.com/yxf/subwallet), [Proxy-hot-wallet](https://github.com/canontech/proxy-hot-wallet)
 | Multisignature Wallets| [Subscan Multisig UI - React](https://github.com/itering/subscan-multisig-react), [Subscan Multisig UI](https://github.com/itering/subscan-multisig-ui) |
 | Hardware Wallets | [Ledger Polkadot](https://github.com/ZondaX/ledger-polkadot), [Ledger Kusama](https://github.com/Zondax/ledger-kusama), [NGRAVE](https://ngrave.io/) | Trezor
@@ -115,7 +115,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 
 | Components | Existing projects | Potentially interesting projects
 |-|-|-
-| Scalable Transactions | [Perun channels](https://github.com/perun-network/perun-polkadot-pallet), [CLI demo of Perun](https://github.com/perun-network/perun-polkadot-demo), [Plasm](https://github.com/staketechnologies/Plasm), [Celer](https://github.com/celer-network), [Gunclear](https://github.com/GunClear)| roll-ups, DAG-based consensus mechanisms, side chains |
+| Scalable Transactions | [Perun channels](https://github.com/perun-network/perun-polkadot-pallet), [CLI demo of Perun](https://github.com/perun-network/perun-polkadot-demo), [Astar](https://github.com/AstarNetwork/Astar), [Celer](https://github.com/celer-network), [Gunclear](https://github.com/GunClear)| roll-ups, DAG-based consensus mechanisms, side chains |
 | Bridges |  [interBTC](https://github.com/interlay/interbtc), [Ethereum by Centrifuge](https://github.com/centrifuge/), [EOS by Bifrost](https://github.com/bifrost-finance), [POA <> Substrate](https://github.com/paritytech/parity-bridge), [Substrate <> Ethereum DAI Bridge](https://github.com/akropolisio/POC-polkadai-bridge), [Substrate <> Substrate Bridge](https://github.com/paritytech/substrate-bridge-relay), [BTC by ChainX](https://github.com/chainx-org/ChainX), [Cosmos-Substrate bridge](https://github.com/ChorusOne/wormhole-bridge), [Substrate IBC Pallet](https://github.com/octopus-network/substrate-ibc), [Polkadot Ethereum Bridge](https://github.com/Snowfork/polkadot-ethereum), [Darwinia](https://github.com/darwinia-network/darwinia), [Stellar/DeFi Bridge by Pendulum](https://github.com/pendulum-chain/pendulum-prototype), [Filecoindot](https://github.com/ChainSafe/filecoindot) | ZCash |
 | Privacy | [Webb Anon](https://github.com/webb-tools/anon), [ZeroChain](https://github.com/LayerXcom/zero-chain), [pLibra (Phala Network)](https://github.com/phala-network), [Automata Network](https://github.com/automata-network/automata)
 | ZKP | [ZeroPool](https://github.com/zeropoolnetwork), [Megaclite](https://github.com/patractlabs/megaclite), [zkMega](https://github.com/patractlabs/zkmega) |
@@ -180,6 +180,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | PoW | [PoW consensus for Substrate](https://github.com/paritytech/substrate/tree/master/client/consensus/pow), [RandomX](https://github.com/kulupu/kulupu/tree/master/pow), [Sha3 PoW](https://github.com/substrate-developer-hub/recipes/tree/master/consensus/sha3pow) |
 | Block production | [BABE](https://github.com/paritytech/substrate/tree/master/client/consensus/babe), [Aura](https://github.com/paritytech/substrate/tree/master/client/consensus/aura) |
 | Finality | [GRANDPA](https://github.com/paritytech/substrate/tree/master/frame/grandpa) |
+| Other | [Nimbus: Upgradeable consensus framework](https://github.com/PureStake/nimbus) | 
 
 
 ### :satellite: Networking
