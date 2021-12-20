@@ -93,11 +93,11 @@ From the perspective of UI experience, polkadot js plus tries to not just be mor
 
 ### Legal Structure
 
-Polkadotjs plus extension is maintained by the Kami Ekbatanifard, and no company entity has been created yet, The following is our communication information.
+Polkadot js plus extension is maintained by the Kami Ekbatanifard, and no company entity has been created yet, The following is our communication information.
 
 - **Mailing Address:** 6575, ch kildare, cote-st luc, H4W1B6, Montreal, Quebec, Canada
 - **E-mail:** ekbatanifard@gmail.com
-- **Twitter:** ekbatanifard
+- **Twitter:** [ekbatanifard](https://twitter.com/ekbatanifard)
  
 ### Team's experience
 
