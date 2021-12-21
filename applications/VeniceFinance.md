@@ -6,92 +6,82 @@
 
 - **Project Name:** Venice Finance
 - **Team Name:** Venice
-- **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:** Ethereum (USDT/DAI) 0x176e32A652F9f5Ad2a3A8EF3302F34D540EdfC3E
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
-Venice is a next-generation, ZK powered, decentralized finance platform, primarily focused on privacy preservation and cross-chain liquidity aggregation. At launch, Venice will be the first front-running resistant Automated Market Maker (AMM) Decentralized Exchange (DEX) in the world.
+ETHEREUM is a dark forest
+Since January 2020, cumulative miner extractable value, or MEV, has reached a total of $761M on Ethereum alone. *MEV, as a measure of the profit that miners can make through their ability to arbitrarily include/exclude/re-order transactions within the blocks they produce, is mainly prevalent as front-running attacks on decentralized exchanges, which is becoming a billion dollar problem, together with millions of dollars lost in gas fees.
+The U.S. infrastructure bill’s crypto provision implies to expand the Tax Code’s definition of “broker” to capture non-custodial actors, including the $53 Billion DEX markets, forcing them all to KYC users.
+Sophisticated tools to track wallet movements in a more granular and organized fashion, such as Nansen, are emerging, which diminishes a trader’s alpha by having their trading strategies exposed.
+Above are only examples of DEX exploits from a fully-transparent ledger when privacy is deprioritized.
 
+With programmable privacy by default, Venice protects its users from such malicious exploits as front-running attacks/GPA-style MEV, transaction linkability, identity traceability, and more.
 
 ### Overview
 
-Venice offers programmable & composable privacy solutions for liquidity migration cross all blockchains via bridges. Venice provides the following features:
-* Advanced cryptography algorithms including Bulletproofs, Turbo-PLONK, MPC, etc. to encrypt smart contract inputs. 
-Front-running resistance and full anonymity to protect users from value extracting players.
-* VENI’s innovative deflationary tokenomics design and game-theoretic-inspired mining mechanism guarantees long-term sustainability of Venice protocol. 
-Venetians collectively decide on the optimum solution for the protocol through farming, staking and voting.
-* Venice allows users to frictionlessly and trustlessly move liquidity inter-ecosystem without revealing their position or identity.
-Venice has secured $10 million worth of liquidity incentives from its investors and partners towards launch. 
- 
+Venice is a next-generation, Zero-Knowledge powered decentralized exchange, primarily focused on privacy preservation, front-running resistance, and cross-chain liquidity aggregation.
+
+Venice utilizes advanced cryptography algorithms like Bulletproofs and Turbo-PLONKS to protect users from value extracting players and other malicious exploits while providing lightning-fast trades, minimal slippage, and maximum liquidity efficiency (Uniswap’s market making algorithm is implemented in V0 with future upgrades planned).
+
+Venice is committed to the ideals of permissionless access, privacy-protection, and auditable transparency, all indispensable components for a future where anyone in the world can access financial services without fear of identity breach or related counterparty risk.
 
 
 
 ### Project Details
 
-<s>We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious </s>
-
 **Onion Transfer & ZK Synthetic Assets**
 
-Onion Transfer utilizes cryptography algorithms, like atomic swap and anonymous transfer, to create ZK synthetic versions of any asset supported in the Venice ecosystem, removing account traceability and introducing fundamental privacy protection.
-This process enables a “decontamination” process which helps users to establish privacy-preserving on-chain identities by breaking the link between sources and destination addresses. It automates the transfer of user assets from a traceable account, linked to an identity KYC'ed on CEX, to an untraceable address; users can migrate and trade their assets from a “contaminated” accounts on the many ecosystems supported by Venice  for privacy protection. 
+![image4](https://user-images.githubusercontent.com/96151378/147000970-f3412510-c6f8-4c75-a95c-30861c13bdad.png)
 
-![image](https://user-images.githubusercontent.com/96151378/146103229-8510bfa5-09c7-4604-bb6b-1b4ff4192bc6.png)
+Venice’s beta implementation supports Onion Transfer, utilizing cryptography algorithms, like atomic swap and anonymous transfer, to create ZK synthetic versions of any asset supported in the Venice ecosystem, removing account traceability and introducing fundamental privacy protection.
+
+Onion Transfer enables a “decontamination” process which helps users to establish privacy-preserving on-chain identities by breaking the on-chain link between sources and destination addresses: it automates the transfer of user assets from a traceable account, linked to an identity KYC’ed on CEX, to an untraceable address; users can migrate and trade their assets from a “contaminated” accounts on the many ecosystems supported by Venice for privacy protection.
+
 
 **FRONTRUNNING RESISTANCE (Bulletproofs)**
 
-Leveraging the Bulletproofs functionality interfacing to the EVM ledger using pre-compiled contracts, the asset type and amount in the txn data can be masked in a smart contract while the transaction itself still remains public and verifiable. 
-Venice supports trades/swaps wherein the asset type and amount are masked, providing an elegant mechanism to prevent front-running while maintaining the ideology behind a completely decentralized and transparent system.
+![image3](https://user-images.githubusercontent.com/96151378/147001093-8e7dee45-8d03-4d26-a7d0-9499e2aba486.png)
 
-![image](https://user-images.githubusercontent.com/96151378/146103370-165c6d44-9056-4491-859b-6454a14428c0.png)
+V2 plans to leverage the Bulletproofs functionality by interfacing to the EVM ledger using pre-compiled contracts, the asset type and amount in the txn data can be masked in a smart contract while the transaction itself still remains public and verifiable.
+
+Venice supports trades/swaps wherein the asset type and amount are masked, effectively removing any chance of malicious users exploiting the system. It also provides an elegant mechanism to prevent front-running while maintaining the ideology behind a completely decentralized and transparent system.
 
 **FULLY-ANONYMOUS PRIVACY (Turbo-PLONK, MPC)**
 
+![image2](https://user-images.githubusercontent.com/96151378/147001267-b977fdd4-ebd3-4f16-83c4-f1e6719ba97c.png)
+
 The technologies of Onion Transfer, together with front-running resistance, have provided a full set of privacy solutions. For mass adoption of the Pri-fi evolution through frictionless UX and better product-market fit, V3 will interface ‘Triple Masking’ to EVM to provide fully-anonymous privacy to obfuscate all smart contract inputs, allowing a user to trade without revealing his identity or position.
- - This feature is implemented by an efficient implementation of Turbo-PLONK, to be deployed on the UTXO ledger first and then exposed to the EVM ledger through pre-compiled contracts.
- - This feature enables the sender to provide zero-knowledge proofs of a transaction inputs, which is verifiable by the ledger without revealing details of the transaction.
- - The network in this case would be secured through a multi-party computation (MPC).
-![image](https://user-images.githubusercontent.com/96151378/146103649-4af3af42-c3a2-4c1c-b90d-93930a530df6.png)
-
-
-
+- This feature is implemented by an efficient implementation of Turbo-PLONK, to be deployed on the UTXO ledger first and then exposed to the EVM ledger through pre-compiled contracts.
+- This feature enables the sender to provide zero-knowledge proofs of a transaction input, which is verifiable by the ledger without revealing details of the transaction.
+- The network in this case would be secured through a multi-party computation (MPC).
 
 ### Ecosystem Fit
 
-<s>Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+![image1](https://user-images.githubusercontent.com/96151378/147001486-c69edaaf-ee36-42b3-8e3a-c1cbdfefdc4d.png)
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems? </s>
+Venice offers programmable & composable privacy solutions for liquidity to migrate in and out of the polkadot ecosystem across all blockchains via bridges. 
 
-Built on the ethos of usability and privacy, Venice is a next-generation decentralized finance (DeFi) platform focused on privacy preservation and cross-chain liquidity & interoperability, to be launched as the first front-running resistant Automated Market Maker (AMM) Decentralized Exchange (DEX) in the world. Venice provides the Polkadot ecosystem with the features of atomic swaps and anonymous transfers. 
-There are some similar AMM like Uniswap and Polkaswap. But these DEXes exploits from a fully-transparent ledger when privacy is deprioritized. Inheriting default programmable privacy, Venice is able to protect the users in Substrate / Polkadot / Kusama from malicious exploits including front-running attacks/GPA-style MEV, transaction linkability, identity traceability, and so on. Venice is committed to the ideals of permissionless access, privacy-protection, and auditable transparency, all indispensable components for a future where anyone in the world can access financial services without fear of identity breach or related counterparty risk.
+Venice provides:
+- Programmability to liquidity native to privacy-centric ecosystems like Zcash, Monero 
+- Cheap transactions, fast finality and privacy-protection to liquidity native to EVM- compatible protocols like Polygon & Ethereum
+- Privacy-preserving interoperability to cross-ecosystem swaps, like Cosmos<>Polkadot
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Name of team leader: Beth Li
+- Names of team members: Alex Park, Tanmay, Taylor, Oleks, Sergio, Andy, Beth Li, Carrie
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:**
+- **Contact Name:** Beth Li
+- **Contact Email:** Beth@venice.finance
+- **Website:** venice.finance
 
 ### Legal Structure
 
@@ -100,9 +90,7 @@ There are some similar AMM like Uniswap and Polkaswap. But these DEXes exploits 
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+We are an elite group of world-class engineers, researchers, business operators, and investment professionals. The Venice contributors team has more than 80 years of combined leadership experience in fintech, financial engineering, and cryptography, with experience from top-tier schools/institutions/corporates including UC Berkeley, Yahoo, Stanford University, Columbia, EY, Deloitte, MUFG, CITI Group, Plug&Play, etc. 
 
 ### Team Code Repos
 
@@ -112,25 +100,16 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
-
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- https://github.com/VeniceDeveloper
+- https://github.com/PassengerAndy
 
 ## Development Status :open_book:
 
-<s> If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+MVP LINK: testnet.venice.finance
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes. </s>
-
+**Research Dairy:**
 **Zero-Knowledge Proof Systems for FULLY-ANONYMOUS PRIVACY SUPPORT**
+
 The goal is to prove a statement without leaking extra information. for example, for some N,xN,x, prove xx is a quadratic residue in Z∗NZN∗.
 
 Let L⊆Σ∗L⊆Σ∗. A zero-knowledge proof system for LL is a pair (P,V)(P,V) satisfying
@@ -198,25 +177,9 @@ Let f:{0,1}n→{0,1}nf:{0,1}n→{0,1}n be a one-way permutation. Choose r←{0,1
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-For each milestone,
-
-- make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-- include the amount of funding requested _per milestone_.
-- include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-- provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-- commit to providing Dockerfiles for the delivery of your project.
-- indicate milestone duration as well as number of full-time employees working on each milestone.
-- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
 
-- **Total Estimated Duration:** 6 monthes
+- **Total Estimated Duration:** 2 monthes
 - **Full-Time Equivalent (FTE):**  6
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
@@ -224,44 +187,50 @@ For each milestone,
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 8,000 USD
+- **Costs:** 500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) utilize venice finance to trade, provide liquidity and farm. Link: docs.venice.finance |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-
-
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 4,000 USD
-
-...
+| 0e. | Article | We will publish an article/workshop that explains tokenomics, product intro, testnet user flow, etc. 
+| 1. | VenicePair | We will create a Substrate module that will enable pair-tokens staking |  
+| 2. | VeniceRouter | we will implement the SWAP router |  
+| 3. | Venice | Implement all basic features of Venince |  
 
 
 ## Future Plans
 
-Please include here
+Built on the ethos of usability and privacy, Venice provides a foundation for the open & accessible financial system of the future.
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+**V0 2021 Q4**
 
+- MVP launch on testnet w/ Onion Transfer utilizing ZK synthetic assets supported by atomic swaps and confidential transfers
+- Bridge Integration to Ethereum and Binance Smart Chain
 
-## Additional Information :heavy_plus_sign:
+**V1 2022 Q1**
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+- V1 Mainnet launch
+- Bridge integration to Bitcoin and Arbitrum, deployment on Ethereum and BSC
+- Governance & VENI community DAO w/ $10 million initial liquidity support
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
+**V2**
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+- V2 launch w/ front-running resistance utilizing Bulletproofs
+- Bridge integration to Polygon, Terra and Avalanche, deployment on Avalanche, Polygon and Arbitrum
+- Introduce limit order functionality to support customizable liquidity positions
+
+**V3**
+
+- V3 launch w/ full anonymity utilizing Turbo-PLONK and Multi Party Computation
+- Oracle integration
+- Improved market-making algorithm to support single-sided liquidity provision, staking rewards auto compounding and stablecoin swap support
+
+**V4**
+
+- V4 launch w/ customized private money market supporting leveraged lending and NFT collateralization
+- Introduce launchpad for new project incubation
+
+***As a decentralized ecosystem, any further roadmap will be determined by Venice’s community. Venice welcomes other teams to innovate on top of the existing product, creating a thriving ecosystem and network effect. Grants and bounties will be given to contributors who create new successful features.***
