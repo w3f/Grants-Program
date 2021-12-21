@@ -2,7 +2,7 @@
 
 * **Project Name:** php substrate api
 * **Team Name:** Nitor Infotech
-* **Payment Address:** We are working on BTC/Ethereum address, in following PR push we will provide this address.
+* **Payment Address:** We are doing this free to contribute to Blockchain community
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1 
 
 ## Project Overview :page_facing_up:
@@ -118,13 +118,13 @@ composer require neha0921/substrate-interface-package
 
 * **Total Estimated Duration:** 15 days
 * **Full-Time Equivalent (FTE):**  2 FTE
-* **Total Costs:** 5500 USD
+* **Total Costs:** 0 USD
 
 ### Milestone 1 Example — Implement Substrate Modules
 
 * **Estimated duration:** 10 days
 * **FTE:**  2
-* **Costs:** 5000 USD
+* **Costs:** 0 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -138,7 +138,7 @@ composer require neha0921/substrate-interface-package
 
 * **Estimated Duration:** 5 days
 * **FTE:**  1
-* **Costs:** 500 USD
+* **Costs:** 0 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
