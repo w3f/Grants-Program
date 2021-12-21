@@ -7,7 +7,7 @@
 - **Project Name:** Venice Finance
 - **Team Name:** Venice
 - **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
@@ -41,19 +41,22 @@ Venice has secured $10 million worth of liquidity incentives from its investors 
 - What your project is _not_ or will _not_ provide or implement
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious </s>
 
-* Onion Transfer & ZK Synthetic Assets
+**Onion Transfer & ZK Synthetic Assets**
+
 Onion Transfer utilizes cryptography algorithms, like atomic swap and anonymous transfer, to create ZK synthetic versions of any asset supported in the Venice ecosystem, removing account traceability and introducing fundamental privacy protection.
 This process enables a “decontamination” process which helps users to establish privacy-preserving on-chain identities by breaking the link between sources and destination addresses. It automates the transfer of user assets from a traceable account, linked to an identity KYC'ed on CEX, to an untraceable address; users can migrate and trade their assets from a “contaminated” accounts on the many ecosystems supported by Venice  for privacy protection. 
 
 ![image](https://user-images.githubusercontent.com/96151378/146103229-8510bfa5-09c7-4604-bb6b-1b4ff4192bc6.png)
 
-* FRONTRUNNING RESISTANCE (Bulletproofs)
+**FRONTRUNNING RESISTANCE (Bulletproofs)**
+
 Leveraging the Bulletproofs functionality interfacing to the EVM ledger using pre-compiled contracts, the asset type and amount in the txn data can be masked in a smart contract while the transaction itself still remains public and verifiable. 
 Venice supports trades/swaps wherein the asset type and amount are masked, providing an elegant mechanism to prevent front-running while maintaining the ideology behind a completely decentralized and transparent system.
 
 ![image](https://user-images.githubusercontent.com/96151378/146103370-165c6d44-9056-4491-859b-6454a14428c0.png)
 
-* FULLY-ANONYMOUS PRIVACY (Turbo-PLONK, MPC)
+**FULLY-ANONYMOUS PRIVACY (Turbo-PLONK, MPC)**
+
 The technologies of Onion Transfer, together with front-running resistance, have provided a full set of privacy solutions. For mass adoption of the Pri-fi evolution through frictionless UX and better product-market fit, V3 will interface ‘Triple Masking’ to EVM to provide fully-anonymous privacy to obfuscate all smart contract inputs, allowing a user to trade without revealing his identity or position.
  - This feature is implemented by an efficient implementation of Turbo-PLONK, to be deployed on the UTXO ledger first and then exposed to the EVM ledger through pre-compiled contracts.
  - This feature enables the sender to provide zero-knowledge proofs of a transaction inputs, which is verifiable by the ledger without revealing details of the transaction.
