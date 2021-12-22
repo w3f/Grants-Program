@@ -176,13 +176,13 @@ Let f:{0,1}n→{0,1}nf:{0,1}n→{0,1}n be a one-way permutation. Choose r←{0,1
 
 - **Total Estimated Duration:** 3 monthes
 - **Full-Time Equivalent (FTE):**  6
-- **Total Costs:** 10,000 USD
+- **Total Costs:** 2,500 USD
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 Implement the SWAP and other basic features of Venice
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 500 USD
+- **Costs:** 2,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -193,7 +193,7 @@ Let f:{0,1}n→{0,1}nf:{0,1}n→{0,1}n be a one-way permutation. Choose r←{0,1
 | 0e. | Article | We will publish an article/workshop that explains tokenomics, product intro, testnet user flow, etc. 
 | 1. | VenicePair | We will create a Substrate module that will enable pair-tokens staking |  
 | 2. | VeniceRouter | we will implement the SWAP router |  
-| 3. | Venice | Implement all basic features of Venince |  
+| 3. | Venice | Implement all basic features of Venice |  
 
 
 ## Future Plans
