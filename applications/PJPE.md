@@ -50,7 +50,13 @@ Transfer funds pages, to enter/choose the recipient address, determine the trans
 
 view transaction history:
 
-![staking confirmmation page screen shot](https://bafkreifnrzopgjnl4jeru3eagfqpkcwbyalosppwjszwrz5blk2cby2mpa.ipfs.dweb.link)
+ - the list of Transactions
+
+![Transactions list page screen shot](https://bafkreieunhr4jwzlcq3p4xauga4pneaamglxurb6niavwouw6ifa5npfje.ipfs.dweb.link)
+ 
+ - a transaction detail
+
+![transaction detail page screen shot](https://bafkreihs3netktz5wdyxr5lfytkq6om33xhzvk25zojwtuyhiqtg744rdi.ipfs.dweb.link)
 
 
 The UI of under developement features:
