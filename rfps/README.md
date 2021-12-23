@@ -1,27 +1,28 @@
-# Requests for Proposals (RFPs)
+<p align="center">
+  <img src="../src/rfp-header.png" style="width:1300px";>
+</p>
 
-- [Requests for Proposals (RFPs)](#requests-for-proposals-rfps)
-  - [:grey_question: What is an RFP?](#grey_question-what-is-an-rfp)
-  - [:scroll: List of current RFPs](#scroll-list-of-current-rfps)
-    - [Availability and Validity - Network Topology](#availability-and-validity---network-topology)
-    - [Candle auction smart contract](#candle-auction-smart-contract)
-    - [e-Passport ZK Validation](#e-passport-zk-validation)
-    - [RFP: Substrate Identity Directory](#rfp-substrate-identity-directory)
-    - [ink!/pallet/solidity performance benchmarking](#inkpalletsolidity-performance-benchmarking)
-    - [DOT & KSM mixer](#dot--ksm-mixer)
-    - [Multi-chain Block Explorer](#multi-chain-block-explorer)
-    - [On-chain Quadratic Funding](#on-chain-quadratic-funding)
-    - [PHP Substrate API](#php-substrate-api)
-    - [Polkadot Collator Setup](#polkadot-collator-setup)
-    - [Privacy Enhancement for Polkadot Extension](#privacy-enhancement-for-polkadot-extension)
-    - [High-availability validator setup](#high-availability-validator-setup)
-    - [Summary](#summary)
-    - [SCALE Codec Comparator](#scale-codec-comparator)
-    - [Social Recovery Wallet](#social-recovery-wallet)
-    - [Uncollateralized Stablecoin](#uncollateralized-stablecoin)
-    - [polkadot-validator-setup maintenance](#polkadot-validator-setup-maintenance)
-    - [XCM library & tools](#xcm-library--tools)
-  - [:mailbox_with_mail: Suggest an RFP](#mailbox_with_mail-suggest-an-rfp)
+- [:grey_question: What is an RFP?](#grey_question-what-is-an-rfp)
+- [:scroll: List of current RFPs](#scroll-list-of-current-rfps)
+  - [Availability and Validity - Network Topology](#availability-and-validity---network-topology)
+  - [Candle auction smart contract](#candle-auction-smart-contract)
+  - [e-Passport ZK Validation](#e-passport-zk-validation)
+  - [RFP: Substrate Identity Directory](#rfp-substrate-identity-directory)
+  - [ink!/pallet/solidity performance benchmarking](#inkpalletsolidity-performance-benchmarking)
+  - [DOT & KSM mixer](#dot--ksm-mixer)
+  - [Multi-chain Block Explorer](#multi-chain-block-explorer)
+  - [On-chain Quadratic Funding](#on-chain-quadratic-funding)
+  - [PHP Substrate API](#php-substrate-api)
+  - [Polkadot Collator Setup](#polkadot-collator-setup)
+  - [Privacy Enhancement for Polkadot Extension](#privacy-enhancement-for-polkadot-extension)
+  - [High-availability validator setup](#high-availability-validator-setup)
+  - [Summary](#summary)
+  - [SCALE Codec Comparator](#scale-codec-comparator)
+  - [Social Recovery Wallet](#social-recovery-wallet)
+  - [Uncollateralized Stablecoin](#uncollateralized-stablecoin)
+  - [polkadot-validator-setup maintenance](#polkadot-validator-setup-maintenance)
+  - [XCM library & tools](#xcm-library--tools)
+- [:mailbox_with_mail: Suggest an RFP](#mailbox_with_mail-suggest-an-rfp)
 
 
 ## :grey_question: What is an RFP?
@@ -477,15 +478,7 @@ XCM is the crosschain communication standard that will be used by all the parach
 
 There are currently two major areas of XCM that still awaiting to be improves: ...
 
-
-
-
 ----
-
-
-
-
-
 
 ## :mailbox_with_mail: Suggest an RFP
 
