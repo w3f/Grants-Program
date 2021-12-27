@@ -164,15 +164,18 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 For each milestone,
 
 - make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
+Our software uses windows 11 and has software from android studio, Unreal engine 4, data processing, rust processing, Ui design software, testing program.
 - include the amount of funding requested _per milestone_.
-50000 USD 
+10000 USD 
 - include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
 - provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
+The project will buy a filw to upload for reference for the community and developers.
 - commit to providing Dockerfiles for the delivery of your project.
+If it takes 5 months at most to complete an early stage project with few workers, then this sounds long but we are speeding up the duration to quickly launch an early stage project.
 - indicate milestone duration as well as number of full-time employees working on each milestone.
 5 FTe
 - **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
+N/A
 > :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
 
 ### Overview
@@ -192,14 +195,14 @@ For each milestone,
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 0b. | Documentation | We'll provide in-line documentation and basic tutorials explaining polka-dots and how a simple, retestable and scalable system works. |
+| 0c. | Testing Guide | In the core function we explain and describe the process for testing, all will be clear and applicable. |
+| 0d. | Docker | We will also provide documentation on this as a functional complement and commitment to testing. |
+| 0e. | Article | We'll also be making a brief history on the medium about funding grants from Web3 to excite the team and readers. |
+| 1. | Substrate module: X | We will generate token with testnet polka dot network as test. |  
+| 2. | Substrate module: Y | After the token is tested, the token is created with the mainnet polkadot network and is used to build Dapps milestones, in detail polkadot will become a Dapps network and focus on polkadot. |  
+| 3. | Substrate module: Z | testing continues in the mobile application program section with defi and decentralized systems, all will improve rapidly by sufficient resources, polkadot will become data and blockchain transactions.|  
+| 4. | Substrate chain | I will create with a polkadot network for tokens and Dapps development, all of this will refer to the polkadot ecosystem which has a pretty good function for Dapps development. |  
 
 
 ### Milestone 2 Example — Additional features
@@ -217,8 +220,8 @@ Please include here:
 Bika Token will be a token with a high value, have liquidity and will be used in novel platforms and PC games (as a game purchase token issued by the Bika Token project), Bika token will create Dapps for exchange on the polkadot network, most projects will use the ecosystem of  polka dots, horror-themed Game creation and launch and game purchase with Bika Token.
 
 - how you intend to use, enhance, promote and support your project in the short term, and
+The project will create an Airdrop and promote the Launchpad and Dapps launch events, and will conduct a campaign about the project's opening event by providing freelancers to help with short promotions.
 - the team's long-term plans and intentions in relation to it.
-
 After the project has finished the first development and has a Beta version of the product will carry out promotions in a period of 2 to 5 months for early users.  and after the final version immediately continue the promotion for up to 1 year to check whether there is a bug or stuck.
 
 ## Additional Information :heavy_plus_sign:Goal Bika token was created to give freedom and get results from readers and novel writers, I will create an online Novel platform with a defi wallet system and Nft Marketplace.  I strive to create and develop web applications and wallet development with good partners and I will change lives for the better with crypto.
@@ -241,9 +244,13 @@ A grand total of 50k USD.
 
 
 **How did you hear about the Grants Program?** Web3 Foundation Website 
+We found out from the foundation's official Web3 website, and Twitter.
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
 - Work you have already done.
+We have compiled a framework for the development of Dapps and mobile applications, with the creation of Android studio software and Ui designer software, the project already has an initial website and needs development, the project will have new ideas for creating horror genre games, as entertainment this game can be played on Pc with windows system, game project will continue after project token has good value.
 - If there are any other teams who have already contributed (financially) to the project.
+Bika Token also submitted a proposal to Gateio but the project has not received funding assistance and is still waiting for evaluation.
 - Previous grants you may have applied for.
+Bika Token applied for grant funds on Web3 for the development of Dapps projects on the polka-dot network and decentralized applications to increase progress.
