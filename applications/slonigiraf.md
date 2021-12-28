@@ -65,7 +65,7 @@ The second type transaction is a reimbursement where the person who is eligible 
 We have enough statistics from the school that uses such educational approach to estimate number of reimbursement transactions per second. Usually we process about 30 reimbursements per 45 minutes lesson per class of 20 students or 0.67 transactions per minute per 20 students.\
 In Russia there are about 15 million of pupils at schools. If we assume that all teachers will use such system at lesson we get (0.67*15*10^6/20) transactions per minute or 8375 transactions per second.\
 Substrate gives about 1000 transactions per second per chain. Thus we need at least 9 chains only for Russia to make this blockchain work. One can argue that in Russia there are different time zones and transaction load will be lowered by this mean. But don't forget that on Earth we have about 50x more pupils than in Russia.\
-Thus no single chain can process transactions if all pupils in Russia will use our educational model at classes - too many transactions, even considering that we use offchain as much as possible. Thus we look for any approach to shard and parallelize transaction processing. Polkadot design with relay and parachains looks great to solve this parallelization issue.
+Thus no single chain can process transactions if all pupils in Russia will use our educational model at classes - too many transactions, even considering that we use offchain as much as possible. Thus we look for any approach to shard and parallelize transaction processing. Polkadot design with relay and parachains looks great to solve this parallelization issue. As we need a lot of parachains to make the system work it's unlikely to include all of them in Polkadot or Kusama directly instead we plan to use our own relay chain with our parachains. Our relay chain can be connected to Polkadot or Kusama with bridges.
 - The reputation system in current education system is organized as following: universities issue diploma and risk to lose their reputation by graduating students with bad skills. We propose just accelerate that feedback loop for those who issue diploma and lower a barrier to enter market of diploma issuing to make it more democratic and competitive.
 - We've built PoC/MVP product on Java Vaadin framework that can be used via
   link: https://slon-i-giraf.ru/app/work?language=ENG
@@ -75,7 +75,7 @@ Thus no single chain can process transactions if all pupils in Russia will use o
 
 ### Ecosystem Fit
 
-- Our projects fits to dApp part of Polkadot/Kusama ecosystem.
+- Our projects fits to dApp part of Polkadot/Kusama like ecosystem.
 - The project audience consists of pupils, students, teachers and employees. Most of them never touched crypto world.
   This part of the project is intended to build the blockchain API that will be used in future for UI creation.
 - Our projects meet the need for a new educational paradigm.
