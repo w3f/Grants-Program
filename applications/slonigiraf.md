@@ -13,8 +13,9 @@
 - We want to bring to Web3 infrastructure the renowned Slonigiraf learning game, which has been designed to deliver more
   interactive and productive lessons through peer-to-peer learning and quality control through cross-exams. This game in
   a nutshell consists of the following parts:\
-  Sara (student) pays Tanya (teacher) to teach skill_1 and issue a certificate that Sarah has this skill. Such a
-  certificate not only shows that Sarah has skill_1, but also gives Sarah the ability to allow other people fine Tania a
+  Sara (student) pays Tanya (teacher) to teach skill_1 and issue a certificate that Sarah has this skill. \
+  A "skill" discussed here is a specific learned ability to perform an action that can can be attested by different examiners in a similar way (not all everyday skills fall in this definition). \
+  Such a certificate not only shows that Sarah has skill_1, but also gives Sarah the ability to allow other people fine Tania a
   fixed amount of money if Sarah lacks the skill. The penalty could be applied only once.\
   Sarah then goes to another teacher Teri and pays him to teach skill_2 and get a certificate. Sarah provides Teri the
   opportunity to revise skill_1 and penalize Tania.\
