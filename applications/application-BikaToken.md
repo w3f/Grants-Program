@@ -6,8 +6,8 @@
 
 - **Project Name:Bika Token (BKT)
 - **Team Name:Bika Literacy (BKT STARX)
-- **Payment Address:BTC Address
-bc1q7pcmjexpch27wgpqeqakl66cjpgafqnl6sxuv6
+- **Payment Address:USDT Address
+0x131D81D983fdf0948e03423013f9905ffA7ab45C
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):1
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -27,26 +27,17 @@ Bika Token is a project more than Defi and has a wider reach that focuses on nov
 - A brief description of your project.
 
 What is Bika Token?
-
 Bika Token (BKT) is a token  that functions as payment and reward for writers and novel readers on the Bika Novel platform that will be coming soon. We created this token with the aim of increasing the creativity of writers as well as producing talented writers. Everyone can join our platform, bolt novice writers and professional writers. Because we really deal with all work and they deserve to be rewarded according to the work they create. If the token was created to answer the concerns pf the writers due to very little income and very difficult payment. We are hare to make all that easier with a decentralized system.
 
-
 Why Bika Token was Created?
-
 Bika Token (BKT) was created to give more appreciation to novel lovers and give full support to writers to work and get appropriate rewards, We value each work and give appropriate prizes for each work, We provide a great opportunity for everyone to continue to work and get and award that is in accordance whit his work.
 
-
 What is Bika Novel?
-
 Bika Novel is an online novel platform created as a place for writers to work to 
-
 increase their creativity and also get prizes for novel lovers who can read online novels easily and at relatively affordable prices and in the future we will present an NFT market where everyone can participate in in it and sell digital works. Every work published on Bika Novel will get an exclusive contract where the author is not allowed to publish his work on platforms other than Bika Novel. Each author who has concluded an exclusive contract will become Bika Token/USDT while still including the author's name as the copyright of the owner of the work. If someone commits fraud or plagiarism so that is not original in the Bika Novel application and it is declared correct to do so, then we will freeze the account within a few months or even permanently. If user’s account commits fraud or plagiarism, he want to reactive his account then must pay a final 10 % to 20% depending the fraud. But if the user doesn’t want to active his account and let us freeze the maximum 1 year after 1 year has passed, the remaining balance in our frozen account will be used to buy back Bika Token and burn it. If there is an agency or company that wants the author's work and turns it into a book, film, drama, electronic cinema, we will give 60% of the income to the author and 40% of the income we will use to buy back Bika Token and burn Bika Token on a regular basis. In the Bika Token application, we will provide a BKT/USDT pair to make it easier to buy and sell Bika Tokens.
 
-
 Goals and how to achieve them?
-
 Goal Bika token was created to give freedom and get results from readers and novel writers, I will create an online Novel platform with a defi wallet system and Nft Marketplace.  I strive to create and develop web applications and wallet development with good partners and I will change lives for the better with crypto.
-
 
 Bika Token Vision and Mission
 
@@ -68,6 +59,7 @@ the Bika Token team is interested in new challenges, the team wants to help and 
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant).
 The Bika Token team wants a long term project, the Want Bika token team has its own value and successfully launched this new idea, as a leader I want to make this project not inferior to the Metaverse Project which is currently booming, and has many users and is on the exchange.
+Bika project will make polkadot network and blockchain for Bika, we will also create Dapps using Polkadot network for exchange, liquidity, new token farm, etc.  Bika Token will make the Bika Novel application this application is an online novel for readers and novel writers with a defi system this application has features such as -Nft Marketplace -Wallet, -Decentralized Dapps, -Gifts for users, and, etc.  and don't forget the games for entertainment we made with our best system, so this has high potential to be developed, has a good and long-term reputation, and I will join to become a polkadot partner.
 
 - Mockups/designs of any UI components
 The project will issue Dapps for exchange and will be listed in the top 3 Exchange markets, UI design like Dapps in general, take Bika Novel UI and games.
@@ -185,12 +177,12 @@ N/A
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 2 FTE
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
-0,14 BTC
+10000 USDT
 ### Milestone 1 Example — Implement Substrate Modules
 
 - **Estimated duration:** 3 month
 - **FTE:**  3
-- **Costs: 0,1 BTC
+- **Costs: 8000 USDT
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -209,7 +201,7 @@ N/A
 
 - **Estimated Duration:** 2 month
 - **FTE:**  2
-- **Costs:** 0.04
+- **Costs:** 2000 USDT
 
 ...
 
@@ -224,12 +216,12 @@ The project will create an Airdrop and promote the Launchpad and Dapps launch ev
 - the team's long-term plans and intentions in relation to it.
 After the project has finished the first development and has a Beta version of the product will carry out promotions in a period of 2 to 5 months for early users.  and after the final version immediately continue the promotion for up to 1 year to check whether there is a bug or stuck.
 
-## Additional Information :heavy_plus_sign:Goal Bika token was created to give freedom and get results from readers and novel writers, I will create an online Novel platform with a defi wallet system and Nft Marketplace.  I strive to create and develop web applications and wallet development with good partners and I will change lives for the better with crypto.
-Bika Token:
+## Additional Information :heavy_plus_sign:
+Bika Token: 
 The Bika Token project is also a Defi project and has accessibility, with a decentralized system.
-
 Goal Bika token was created to give freedom and get results from readers and novel writers, I will create an online Novel platform with a defi wallet system and Nft Marketplace, I strive to create and develop web applications and wallet development with good partners and I will change lives for the better with crypto.
 
+Funds under 50k for future needs building new innovations, funds below are obtained through investors and Launchpad tokens.  we have a lot of ideas that can be turned into good products, so this is a repression for future projects that will require funds to continue to be developed, so I asked for funds to use USDT so I don't misunderstand I need funds around 10,000 USDT, which is called a level 1 grant I need funds  Grant asap so I can do development as soon as possible.
 This project can also keep pace with the Metaverse project which is booming in the crypto world if the project is supported and has sufficient resources.
 I need additional funds at level 2 around 50k USD
 - Security audit and bug audit:10k USD.  
