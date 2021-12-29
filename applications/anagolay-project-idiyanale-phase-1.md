@@ -109,7 +109,6 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 - Daniel Maricic
 - Adriano Dalpane
-- Suraj Kumar
 
 ### Contact
 
@@ -131,10 +130,6 @@ An IT generalist with 13 years of on-hand experience in different business domai
 
 He is a developer with 11 years of experience in the domain of several telecom operators and the travel industry. Passionate about AI, he implemented a Monte Carlo Tree Search artificial intelligence for a game and a Bayesian classifier to perform match-making on a marketplace platform. He has been working with Rust and Substrate blockchain technologies for about two years and more recently he joined the Anagolay team.
 
-#### Suraj Kumar
-
-He is a Computer Science Engineer with hands-on experience with substrate framework. He was a part of a successful w3f grant in the past where he created substrate pallets for music management. He joined the team 5 months ago to help us build the next-generation blockchain for Copyrights and Ownerships.
-
 ### Team Code Repos
 
 - [https://gitlab.com/anagolay/docs](https://gitlab.com/anagolay/docs)
@@ -145,27 +140,25 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - [https://github.com/woss](https://github.com/woss)
 - [https://github.com/digitalillusion](https://github.com/digitalillusion)
-- [https://github.com/s5k0651](https://github.com/s5k0651)
 
 ### Team LinkedIn Profiles (if available)
 
 - [https://www.linkedin.com/in/danielmaricic/](https://www.linkedin.com/in/danielmaricic/)
 - [https://www.linkedin.com/in/adriano-dalpane/](https://www.linkedin.com/in/adriano-dalpane/)
-- [https://www.linkedin.com/in/s5k0651/](https://www.linkedin.com/in/s5k0651/)
 
 # Development Roadmap :nut_and_bolt:
 
 ## Overview
 
-- **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):** 3 FTE
-- **Total Costs:** 45,000 USDT
+- **Total Estimated Duration:** 2 months
+- **Full-Time Equivalent (FTE):** 2 FTE
+- **Total Costs:** 20,000 USDT
 
 ## Milestone 1 — Implement core functionality
 
 - **Estimated duration:** 1 month
-- **FTE:** 3
-- **Costs:** 15,000 USDT
+- **FTE:** 2
+- **Costs:** 10,000 USDT
 
 This milestone will set the base for the next milestones.
 | Number | Deliverable                      | Specification                                                                                                                                                                                    |
@@ -209,7 +202,7 @@ We will create an Anagolay operation called file. This operation can take a stri
 
 
 ### Anagolay CLI: Operation Part 1
-The purpose of the CLI is to build the Operation artifacts, rehost the repository, store all the links to the Anagolay chain, and scaffold new Operation
+The purpose of the CLI is to build the Operation artifacts, rehost the repository, store all the links to the Anagolay chain.
 
 We will implement this list of features:
 * build WASM with `.d.ts` for 
@@ -246,8 +239,8 @@ Operation published and the ID is bafybeifcmrf2ulnwdrhjpkwi2ifbixegegcs22rqbvlzh
 ## Milestone 2 — Implementing the Workflow pallet, execution, manifest generation, and CID and Multihash Operations
 
 - **Estimated duration:** 1 month
-- **FTE:** 3
-- **Costs:** 15,000 USDT
+- **FTE:** 2
+- **Costs:** 10,000 USDT
 
 | Number | Deliverable                                | Specification                                                                                                                                                                                    |
 | -----: | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -261,7 +254,8 @@ Operation published and the ID is bafybeifcmrf2ulnwdrhjpkwi2ifbixegegcs22rqbvlzh
 |     3. | Anagolay CLI: workflow manifest generation | [See here](#anagolay-cli-workflow-manifest-generation)                                                                                                                                           |
 |     5. | Operation: `op_cid`                        | [See here](#operation---op_cid)                                                                                                                                                                  |
 |     6. | Operation: `op_multihash`                  | [See here](#operation---op_multihash)                                                                                                                                                            |
-|     7. | Demo nodejs app part 2                     | Creating the nodejs app which will use implemented operations as WASM and produce the CID of an image                                                                                            |
+|     7. | Workflow: execution                        | [See here](#workflow-execution)                                                                                                                                                                  |
+|     8. | Demo nodejs app part 1                     | Creating the nodejs app which will use implemented operations as WASM and produce the CID of an image                                                                                            |
 |     9. | Rust demo crate - Part 2                   | Creating the rust crate which will use the implemented Operation as a rust library to read a file and generate the CID.                                                                          |
 
 > __NOTE__: All the apps, _Nodejs_, and _Rust demo crate_ when executed must produce the same CID. WHY? Because if they use the same data and the same Workflow they must produce the same output. Same Workflow means using the same Operation manifest which means using the same Operation Version. 100% the same code execution!
@@ -271,8 +265,8 @@ Operation published and the ID is bafybeifcmrf2ulnwdrhjpkwi2ifbixegegcs22rqbvlzh
 We will be implementing the `an_workflow` pallet which will contain extrinsics and storage. This pallet is used to store and retrieve the Workflow manifest which is then used by developers to create or verify the set of proofs. The [Workflow execution](#workflow-execution) depends on this pallet and its storage. For Workflow explanation click [here](#workflow-explanation).
 
 ### Anagolay CLI: Workflow manifest generation
- We will build an interactive CLI which will be used to generate the Workflow manifest, validate it and store it on the chain. The CLI will be written in Typescript for Nodejs environment and published on IPFS and maybe NPM. The exact structure is not yet defined but here is the idea of what it should look like:
- ```text
+We will build an interactive CLI which will be used to generate the Workflow manifest, validate it and store it on the chain. The CLI will be written in Typescript for Nodejs environment and published on IPFS and maybe NPM. The exact structure is not yet defined but here is the idea of what it should look like:
+```text
 
  > anagolay workflow create
 Please select the starting operation from the list:
@@ -307,48 +301,8 @@ We will create an Anagolay operation called `op_cid`. This takes any Multihash t
 ### Operation - op_multihash
  We will create an Anagolay operation called `op_multihash`. The Operation takes a buffer and creates the multihash instance. Possible multihashes will be `sha2-256`, `blake2b-256`, and `blake3`     
 
-## Milestone 3 — Finalizing the feature set
-
-- **Estimated duration:** 1 month
-- **FTE:** 3
-- **Costs:** 15,000 USDT
-
-| Number | Deliverable                    | Specification                                                                                                                                                                                                                                                                                                                                                                                        |
-| -----: | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|    0a. | License                        | All `an_` prefixes will be GPLv3, all `op_` Apache2                                                                                                                                                                                                                                                                                                                                                  |
-|    0b. | Documentation                  | We will provide both inline documentation of the code and a basic tutorial that explains how a developer can create Operations and their versions. How to store them on the chain and query them                                                                                                                                                                                                     |
-|    0c. | Testing Guide                  | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                                                                                    |
-|    0d. | Docker                         | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                                                                           |
-|    0e. | Article                        | We will publish an article that explains what was done as part of the grant, with the focus on the developers' community                                                                                                                                                                                                                                                                             |
-|     1. | Workflow: execution            | [See here](#workflow-execution)                                                                                                                                                                                                                                                                                                                                                                      |
-|     2. | Anagolay CLI: Operation Part 2 | [See here](#anagolay-cli-operation-part-2)                                                                                                                                                                                                                                                                                                                                                           |
-|     3. | Demo nodejs app part 3         | Improve Part 2 with automatic Workflow execution which will produce correct Proofs.                                                                                                                                                                                                                                                                                                                  |
-|     4. | Demo web app                   | Simple web app which will use the Workflow automatic execution and produce correct Proofs. Tech used Svelte or React with Typescript and Bulma for CSS. UI mockup is [here](https://bafybeib3sisk6hoejqm4ki46m6jtnzris6psrlrpqcldayorupwuqtcuui.ipfs.dweb.link/Home-page.png) and [here](https://bafybeigbep6y37ghbgmmwxtr5d2jbxi2t7rtyb3m7d3qvxaoxzve73fcry.ipfs.dweb.link/page-image-uploaded.png) |
-
-
-
-> __NOTE__: All the apps, _Nodejs_, and _Web app_ when executed must produce the same Proofs. WHY? Because if they use the same data and the same Workflow they must produce the same output. Same Workflow means using the same Operation manifest which means using the same Operation Version. 100% the same code execution!
-> 
 ### Workflow: execution
 Execution of the Workflow manifest created in [#3](#anagolay-cli-workflow-manifest-generation). We will implement basic recursive and automatic execution of the Workflow only for `SYSTEM` Operations. The execution will load all the dependencies and execute them in the correct order.  We will NOT implement any kind of optimizations like caching or memoization to gain a boost in speed.  
-
-
-### Anagolay CLI: Operation Part 2
-Part 2 will focus on rehosting the operation source code git repository and scaffolding new ones. The rehosting creates an immutable link that replaces the traditional semver and it must be used as a dependency in the package.json files. If you want to know more about the approach in general, Daniel wrote an article about it [here](https://dev.to/woss/part-1-rehosting-git-repositories-on-ipfs-23bf). 
-
-We will implement this list of features:
-* rehost the repo to the latest revision
-* simple scaffolding of the Operation file structure
-
-The invocation will be like this :
-
-```bash
-> anagolay operation init op_create_qrcode
-Scaffolding...
-Done ✅!
-
-Next steps: cd op_create_qrcode && start developing
-``` 
 
 
 # Future Plans
