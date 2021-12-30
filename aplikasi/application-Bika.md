@@ -164,6 +164,8 @@ If you've already started implementing your project or it is part of a larger re
 
 - links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
 
+https://github.com/arifark/Grants-Program/edit/patch-1/aplikasi/application-Bika.md?pr=%2Fw3f%2FGrants-Program%2Fpull%2F757
+
 - academic publications relevant to the problem,
 
 Publications for developers and for scrutiny as to which ones are already in continuous development anyone can provide innovations.
