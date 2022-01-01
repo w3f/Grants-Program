@@ -232,7 +232,7 @@
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
-| [Sean Young](https://www.mess.org/) | Solidity to WASM compiler Phase 2 | [GitHub](https://github.com/hyperledger-labs/solang) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Sean Young](https://www.mess.org/) | Solidity to WASM compiler Phase 2 | [GitHub](https://github.com/hyperledger-labs/solang) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Nuclei Studio](https://nuclei.studio/) | Governance OS | [GitHub](https://github.com/NucleiStudio) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [NBLTrust](https://www.nbltrust.com/#/en/home) | Dart SCALE Codec | [GitHub](https://github.com/nbltrust/dart-scale-codec) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Nsure.Network](https://nsure.network/) | Open Insurance Platform for Open Finance | [GitHub](https://github.com/nsure-tech) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -378,7 +378,7 @@
 | [YibanChen](https://yibanchen.com) | Notes DApp & Site-Pallet | [GitHub](https://github.com/YibanChen/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SuperColony](https://github.com/Supercolony-net) | OpenBrush - Secure smart-contract development on ink! | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Banksy Finance](http://www.banksy.finance/) | NFT Pool-Based Lending Hub | [GitHub](https://github.com/Banksy-Finance) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [SubDAO Labs](https://www.subdao.network/) | PolkaSign - Web3.0 app for electronic agreements | [GitHub](https://github.com/subdao-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [SubDAO Labs](https://www.subdao.network/) | PolkaSign - Web3.0 app for electronic agreements | [GitHub](https://github.com/subdao-network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Valibre](https://valibre.org) | People Local Interactions Protocol (PLIP) | [GitHub](https://github.com/valibre-org/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Reaudito](https://shivarthu.reaudito.com/#/) | Shivarthu: A blockchain-based decentralized governance system | [GitHub](https://github.com/amiyatulu/shivarthu) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | Uniscan | NFT Explorer | [GitHub](https://github.com/wuminzhe) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
@@ -394,6 +394,7 @@
 | [CheersLand Labs](https://cheersland.org/) | Multi-game Platform for Polkadot & Kusama | [GitHub](https://github.com/cheersland) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [UNI-ARTS](https://app.uniarts.network/) | Ruby Substate Client | [GitHub](https://github.com/uni-arts-chain/sr25519) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Skye Kiwi](https://skye.kiwi/) | SkyeKiwi Protocol | [GitHub](https://github.com/skyekiwi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Evercity](https://evercity.io/) | Sustainable Finance Protocol | [GitHub](https://github.com/EvercityEcosystem) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 
 ## :surfing_woman: Wave 12 - Fourth Quarter 2021
 
@@ -404,7 +405,7 @@
 | [Prosopo Limited](https://prosopo.io) | Prosopo: Human Verification Marketplace | [GitHub](https://github.com/prosopo-io) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Litentry](www.litentry.com) | Polka SignIn | [GitHub](https://github.com/litentry) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [gmajor](https://github.com/gmajor-encrypt) | PHP RPC Lib | [GitHub](https://github.com/gmajor-encrypt/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [logion](https://logion.network/) | Logion wallet | [GitHub](https://github.com/logion-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [logion](https://logion.network/) | Logion wallet | [GitHub](https://github.com/logion-network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SuperColony](https://www.supercolony.net/) | OpenBrush - Secure smart-contract development on ink! Phase 2 | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Nitor Infotech](https://www.nitorinfotech.com/) | Php substrate api | [GitHub](https://github.com/nitor-infotech-oss) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [@agryaznov](https://github.com/agryaznov) | Candle Auctions on Ink! | [GitHub](https://github.com/agryaznov/candle-auction-ink) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -419,6 +420,7 @@
 | [Health Hero](https://www.gohealthhero.com/) | Decentralized Well-being Game API | [GitHub](https://github.com/iumairazhar) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [UNIVERSALDOT FOUNDATION](https://universaldot.foundation) | A freelancing decentralized application | [GitHub](https://github.com/UniversalDot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [AdMeta](https://admeta.network/) | A privacy-preserving Ad Platform | [GitHub](https://github.com/AdMetaNetwork/admeta) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| Crypto Pay Lab (CPL)) | Dotpay a github paid task platform using DOT | [GitHub](https://github.com/bytepayment) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
 
 
