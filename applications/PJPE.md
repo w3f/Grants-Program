@@ -32,7 +32,7 @@ Account page, which shows all accounts balances, and icon buttons to access some
 ![account page screen shot](https://bafkreiaqqp7b5kprdveugwboxlb7wlgz3exv6s7wsalv6prtdlubjhl67q.ipfs.dweb.link)
 
 
-Transfer funds pages, to enter/choose the recipient address, determine the transfer amount, and finally confirm transfer:
+Transfer funds pages, to enter/choose the recipient address, determine the transfer amount, and finally confirm transfer along with relevant alerts and tooltips:
 
 ![transfer add recepient page screen shot](https://bafkreig42fspwcrzzyk5f6gpvavicrqtkzn5oezbtxrgknnrzx6rgg2jva.ipfs.dweb.link)
 
