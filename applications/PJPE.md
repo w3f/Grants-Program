@@ -50,11 +50,11 @@ The UI of the already woking functionalities:
 
 #### View transaction history:
 
- - the list of Transactions
+ - The list of Transactions
 
 ![Transactions list page screen shot](https://bafkreieunhr4jwzlcq3p4xauga4pneaamglxurb6niavwouw6ifa5npfje.ipfs.dweb.link)
  
- - a transaction detail
+ - Details of a transaction
 
 ![transaction detail page screen shot](https://bafkreihs3netktz5wdyxr5lfytkq6om33xhzvk25zojwtuyhiqtg744rdi.ipfs.dweb.link)
 
