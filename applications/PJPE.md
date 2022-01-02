@@ -10,22 +10,22 @@
 ### Overview
 
 Polkadot js plus extension will be a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is actually polkadot js extention, plus some new features.
-We don't want to rebuild the wheel, we just want to perfect it, standing on the shoulders of giants like "polkadot js extension" and Make it more user-friendly for average users.
+We don't want to rebuild the wheel, we just want to perfect it, standing on the shoulders of giants like "polkadot js extension" and Make it user-friendlier for users.
 
-The reason why we have decided to work on this project is every day user comments on social medias that complain "why the extension does not show the balance?", "It is too complicated for new/average users to work with", "It is too abstract", " why should we go to another web site to work with the extension", " where does the extension show their contribution on crowdloans", and so on. That's why we've decided to work on Polkadot js PLUS extension to address such concenrs/requests of the polkadot community. 
+The reason why we have decided to work on this project is every day user comments on social medias that complain "why the extension does not show the balance?", "It is too complicated for new/average users to work with", "It is too abstract", " why should we go to another web site to work with the extension", " how could contribute to the crowdloans via extension", and so on. That's why we've decided to work on Polkadot js PLUS extension to address such concenrs/requests of the polkadot community.
 
 ### Project Details
 
 The new functionalities, that will be added to the polkadot js extension are:
 - View balances
 - Transfer funds
-- Stake / unstake / redeem funds and edit nominated validator list
+- Easy staking (auto stake/unstake/redeem funds and edit nominated validator list)
+- Contribute in crowdloans
+- Governance
 - View transaction history
 - View an address as a QR code
-- Contribute in crowdloans
-- Referendums 
 
-The UI of the already added functionalities:
+The UI of the already woking functionalities:
 
 Account page, which shows all accounts balances, and icon buttons to access some features:
 
