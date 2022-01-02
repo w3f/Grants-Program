@@ -27,12 +27,12 @@ The new functionalities, that will be added to the polkadot js extension are:
 
 The UI of the already woking functionalities:
 
-Account page, which shows all accounts balances, and icon buttons to access some features:
+#### Account page, which shows all accounts balances, and icon buttons to access some features:
 
 ![account page screen shot](https://bafkreiaqqp7b5kprdveugwboxlb7wlgz3exv6s7wsalv6prtdlubjhl67q.ipfs.dweb.link)
 
 
-Transfer funds pages, to enter/choose the recipient address, determine the transfer amount, and finally confirm transfer along with relevant alerts and tooltips:
+#### Transfer funds pages, to enter/choose the recipient address, determine the transfer amount, and finally confirm transfer along with relevant alerts and tooltips:
 
 ![transfer add recepient page screen shot](https://bafkreig42fspwcrzzyk5f6gpvavicrqtkzn5oezbtxrgknnrzx6rgg2jva.ipfs.dweb.link)
 
@@ -41,14 +41,14 @@ Transfer funds pages, to enter/choose the recipient address, determine the trans
 ![transfer confirmation page screen shot](https://bafkreigjwuj2prhl2fggos3m2wwkiou5kwbsorlm6px6yt6j7jevos7cqe.ipfs.dweb.link)
  
  
- Staking pages, to stake, unskae, redeem, and even change your already nominated validators:
+ #### Staking pages, to stake, unskae, redeem, and even change your already nominated validators:
  
 ![staking page screen shot](https://bafkreihq2nszhn2qmb42wzq4r5pyiotxiyss7cjntdrcefgifjt7tifpfe.ipfs.dweb.link)
 
 ![staking confirmmation page screen shot](https://bafkreifv5linxp3p2zwxj4qkxhbjnk6qerxbyc6n2nk27jpmxhz3wytlyy.ipfs.dweb.link)
 
 
-view transaction history:
+#### View transaction history:
 
  - the list of Transactions
 
