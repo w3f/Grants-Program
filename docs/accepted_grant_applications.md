@@ -25,6 +25,8 @@
   - [:surfing_woman: Wave 10 - Second Quarter 2021](#surfing_woman-wave-10---second-quarter-2021)
   - [:surfing_woman: Wave 11 - Third Quarter 2021](#surfing_woman-wave-11---third-quarter-2021)
   - [:surfing_woman: Wave 12 - Fourth Quarter 2021](#surfing_woman-wave-12---fourth-quarter-2021)
+- [2022](#2022)
+  - [:surfing_woman: Wave 13 - First Quarter 2022](#surfing_woman-wave-13---first-quarter-2022)
 
 # 2019
 
@@ -422,6 +424,10 @@
 | [AdMeta](https://admeta.network/) | A privacy-preserving Ad Platform | [GitHub](https://github.com/AdMetaNetwork/admeta) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | Crypto Pay Lab (CPL)) | Dotpay a github paid task platform using DOT | [GitHub](https://github.com/bytepayment) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
+## :surfing_woman: Wave 13 - First Quarter 2022
 
+| Team | Project | Link | Terminated | First Delivery | Completed
+| :--- | :------ | :--- | :--------: | :------------: | :-------: |
+| [Chainify](https://github.com/chainify) | Nolik | [GitHub](https://github.com/chainify) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 
 
