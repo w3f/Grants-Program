@@ -424,6 +424,8 @@
 | [AdMeta](https://admeta.network/) | A privacy-preserving Ad Platform | [GitHub](https://github.com/AdMetaNetwork/admeta) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | Crypto Pay Lab (CPL)) | Dotpay a github paid task platform using DOT | [GitHub](https://github.com/bytepayment) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
+# 2022
+
 ## :surfing_woman: Wave 13 - First Quarter 2022
 
 | Team | Project | Link | Terminated | First Delivery | Completed
