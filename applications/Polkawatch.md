@@ -114,10 +114,10 @@ The current prototype has been useful is gathering feedback from participants ab
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up the project deliverables. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-|     1. | Indexer Extension | Indexer Node Module/Extension with additional required capabilities: Inverted Index and weak relationship tracing. |
-| 2. | Live Query Server | LQS Node Module that provices a programatic interface to the indexer, implemented in Typescript/Javascript. |
-| 3. | Gitlab Pipelines  | Continuous integration deliverables will be created for automated build and test of each module. |
+| 0d. | Docker | We will provide a Dockerfile(s) / Dockercompose that can be used to test all the functionality delivered with this milestone. |
+|     1. | Indexer Extension | Indexer Node Module/Extension with additional required capabilities: Inverted Index and weak relationship tracing. The relationship "traces" will be available for later user to "trust and verify". |
+| 2. | Live Query Server | LQS Node Module that provices a programatic interface to the indexer, implemented in Typescript/Javascript. The implementation will be generic and template based, mapping entrypoints to lucene filters and agregations. |
+| 3. | Gitlab Pipelines  | Continuous integration deliverables will be created for automated build and test of each module. Continuous delivery will include steps to update docker images of the deliverables. |
 
 
 ### Milestone 2 — Data Presentation Modules
@@ -133,9 +133,9 @@ The current prototype has been useful is gathering feedback from participants ab
 |    0c. | Testing Guide    | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |    0d. | Docker           | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 |    0e. | Article          | We will publish a blog post about Polkawatch, it will include information about: how to check the effective decentralization of the network, how to check the effective decentralization of a nominator and how to adjust the nomination to better contribute to decentralization of the network. A companion Video tutorial will also be provided. |
-|     1. | DDP              | Distributed Data Pack builder node module, implemented in Typescript/Javascript. |
-|     2. | DAPP             | Distributed Application Node/React module, implemented in Typescript/Javascript. |
-|     3. | Gitlab Pipelines | Continuous integration deliverables will be created for automated build and test of each module. |
+|     1. | DDP              | Distributed Data Pack builder node module, implemented in Typescript/Javascript. Will use the LQS to build IPFS friendly data to be consumed by the DAPP. |
+|     2. | DAPP             | Distributed Application Node/React module, implemented in Typescript/Javascript. React based DAPP, built with a modern and fresh UI toolkit (such as Material UI or Chackra). Gatsby will be used to efficiently pack the DAPP. |
+|     3. | Gitlab Pipelines | Continuous integration deliverables will be created for automated build and test of each module. Continuous delivery will include steps to update docker images of the deliverables and publish IPFS updates. |
 
 
 ## Future Plans
