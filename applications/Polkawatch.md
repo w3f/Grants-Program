@@ -116,7 +116,7 @@ The current prototype has been useful is gathering feedback from participants ab
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 |     1. | Indexer Extension | Indexer Node Module/Extension with additional required capabilities: Inverted Index and weak relationship tracing. |
-| 2. | Live Query Server | LQS Node Module that provices a programatic interface to the indexer. |
+| 2. | Live Query Server | LQS Node Module that provices a programatic interface to the indexer, implemented in Typescript/Javascript. |
 | 3. | Gitlab Pipelines  | Continuous integration deliverables will be created for automated build and test of each module. |
 
 
@@ -133,8 +133,8 @@ The current prototype has been useful is gathering feedback from participants ab
 |    0c. | Testing Guide    | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |    0d. | Docker           | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 |    0e. | Article          | We will publish a blog post about Polkawatch, it will include information about: how to check the effective decentralization of the network, how to check the effective decentralization of a nominator and how to adjust the nomination to better contribute to decentralization of the network. A companion Video tutorial will also be provided. |
-|     1. | DDP              | Distributed Data Pack builder node module.                   |
-|     2. | DAPP             | Distributed Application Node/React module.                   |
+|     1. | DDP              | Distributed Data Pack builder node module, implemented in Typescript/Javascript. |
+|     2. | DAPP             | Distributed Application Node/React module, implemented in Typescript/Javascript. |
 |     3. | Gitlab Pipelines | Continuous integration deliverables will be created for automated build and test of each module. |
 
 
