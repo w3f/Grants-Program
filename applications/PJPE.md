@@ -89,7 +89,9 @@ Polkadot.js extension is an official account management tool, but polkadot js pl
 From the perspective of UI experience, polkadot js plus tries to not just be more user-userfriendlier but also consistent with the previous taste of the users, who are already familiar with the original polkadot js extension. We try to make the UI more attractive to users, and also support all the languages that are currently existd on the original extension.
 
 #### Product direction and advantages
-...
+
+Analogous to MetaMask, browser extension wallets are more convenient to interact with DApp than mobile wallets. Plus is positioned as a browser extension wallet and has a first-mover advantage in the product direction. It focuses on the Polkadot ecosystem and enables more users to participate in the Polkadot ecosystem through customized and truly friendly interactive experience.
+
 #### How to maintain the wallet
 ...
 
