@@ -85,7 +85,7 @@ David has a background in Geographic Information Systems and data science. His f
 
 ### Team LinkedIn Profiles 
 
-- https://www.linkedin.com/rvalle
+- https://www.linkedin.com/in/rvallel/
 
 ## Development Status :open_book:
 
