@@ -435,4 +435,5 @@
 | [Anagolay](https://anagolay.network/) | Project Idiyanale | [GitHub](https://github.com/anagolay) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Fennel Labs](https://fennellabs.com/) | Fennel Protocol | [GitHub](https://github.com/fennelLabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Valletech AB](https://valletech.eu/) | Polkawatch | [GitHub](https://gitlab.com/polkawatch) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [EzCode](https://ezcode.co/) | Polkadot.js NoCode Plugin | [GitHub](https://github.com/inartin) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
