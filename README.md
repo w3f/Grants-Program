@@ -28,7 +28,7 @@
 
 ## :wave: Introduction
 
-As part of our commitment to promoting the Web3 ecosystem, we offer comprehensive grants programs focused on funding software development and research efforts related to **Polkadot, Kusama and Substrate**. For more information about the Web3 Foundation, please visit the [About page](https://web3.foundation/about/) on our website.
+As part of our commitment to promoting the Web3 ecosystem, we offer comprehensive grants programs focused on funding software development and research efforts related to **Polkadot, Kusama, [Substrate](https://github.com/paritytech/substrate) and [ink!](https://github.com/paritytech/ink)**. For more information about the Web3 Foundation, please visit the [About page](https://web3.foundation/about/) on our website.
 
 ### Guidelines
 
@@ -170,7 +170,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
 
 ## :mailbox_with_mail: Suggest a Project
 
-If you think that we should support the development of certain tools or projects (related to **Polkadot, Kusama or Substrate**) that aren't in the Polkadot/Kusama [tech stack](docs/polkadot_stack.md), feel free to submit a suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.
+If you think that we should support the development of certain tools or projects that aren't in the Polkadot/Kusama [tech stack](docs/polkadot_stack.md), feel free to submit a suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.
 
 **Submit an idea:**
 
