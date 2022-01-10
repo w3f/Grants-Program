@@ -3,7 +3,6 @@
 - **Project Name:** Substrate Client for Java
 - **Team Name:** Doken  
 - **Payment Address:** Information provided in the "W3F Technical Grant Application Form"  
-- **Level:** 3
 
 ## Project Overview :page_facing_up:
 
