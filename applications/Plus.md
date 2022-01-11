@@ -113,15 +113,13 @@ fix bugs, and even improve the experience，to making Plus as close as possible 
 
 Plus extension is maintained by Kami Ekbatanifard, and no company entity has been created yet, the following is our communication information.
 
-- **Mailing Address:** No 13, Lahijan, Gilan, Iran
+- **Mailing Address:** I will pleased to offer such information in private.
 - **E-mail:** ekbatanifard@gmail.com
 - **Twitter:** [ekbatanifard](https://twitter.com/ekbatanifard)
  
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+Kami has a Phd in software systems and works a blockchain engineer, he has experince in developing applications mostly in private sources including centralized/decentralized crypto exchanges, NFT market on Ethereum utilizing filecoin, etc. He also have a research track which could be find listed [here](https://scholar.google.com/citations?user=pJ0HwqEAAAAJ&hl=en). 
 
 
 #### Personal Code Repo:
