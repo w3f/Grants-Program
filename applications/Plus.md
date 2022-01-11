@@ -21,11 +21,11 @@ The new functionalities, that will be added to the original polkadot js extensio
 - Transfer funds
 - Easy staking (auto stake/unstake/redeem funds and edit nominated validator list)
 - Contribute in crowdloans
-- Governance
 - View transaction history
 - View an address as a QR code
+- Governance (Referendums/Proposals voting, Treasury Tips, councils/motions )
 
-The UI of the already woking functionalities:
+The UI of the already implemented/woking functionalities are as follows:
 
 #### Account page, which shows all accounts balances, and icon buttons to access some features:
 
