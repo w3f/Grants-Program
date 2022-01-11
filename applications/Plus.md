@@ -1,6 +1,6 @@
 # W3F Grant Proposal
 
-- **Project Name:** Polkadot js plus extension (Plus)
+- **Project Name:** Plus: Polkadot js plus extension
 - **Team Name:** Kami Ekbatanifard
 - **Payment Address:** 0xa4Eff15578D1450912DED08c85679F453C45A710 (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
@@ -9,14 +9,14 @@
 
 ### Overview
 
-Polkadot js plus extension will be a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is actually polkadot js extention, plus some new features.
+Plus extension will be a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is actually polkadot js extention, plus some new features.
 We don't want to rebuild the wheel, we just want to perfect it, standing on the shoulders of giants like "polkadot js extension" and Make it user-friendlier for users.
 
-The reason why we have decided to work on this project is every day user comments on social medias that complain "why the extension does not show the balance?", "It is too complicated for new/average users to work with", "It is too abstract", " why should we go to another web site to work with the extension", " how could contribute to the crowdloans via extension", and so on. That's why we've decided to work on Polkadot js PLUS extension to address such concenrs/requests of the polkadot community.
+The reason why we have decided to work on this project is every day user comments on social medias that complain "why the extension does not show the balance?", "It is too complicated for new/average users to work with", "It is too abstract", " why should we go to another web site to work with the extension", " how could contribute to the crowdloans via extension", and so on. That's why we've decided to work on Plus extension to address such concenrs/requests of the polkadot community.
 
 ### Project Details
 
-The new functionalities, that will be added to the polkadot js extension are:
+The new functionalities, that will be added to the original polkadot js extension are:
 - View balances
 - Transfer funds
 - Easy staking (auto stake/unstake/redeem funds and edit nominated validator list)
