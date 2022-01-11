@@ -10,7 +10,7 @@
 ### Overview
 
 Plus extension will be a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is actually polkadot js extention, plus some new features.
-We don't want to rebuild the wheel, we just want to perfect it, standing on the shoulders of giants like "polkadot js extension" and Make it user-friendlier for users.
+We don't want to rebuild the wheel, we just want to perfect it, standing on the shoulders of giants like "polkadot js extension" and make it user-friendlier for users.
 
 The reason why we have decided to work on this project is every day user comments on social medias that complain "why the extension does not show the balance?", "It is too complicated for new/average users to work with", "It is too abstract", " why should we go to another web site to work with the extension", " how could contribute to the crowdloans via extension", and so on. That's why we've decided to work on Plus extension to address such concenrs/requests of the polkadot community.
 
