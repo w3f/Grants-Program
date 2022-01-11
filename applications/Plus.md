@@ -73,18 +73,18 @@ Viewing the auction and its crowdloans on different relay chains (polkadot, kusa
 
 ### Ecosystem Fit
 
-Polkadot js plus extension will be a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is based on the original polkadot js extension, which injects a @polkadot/api signer into a page, along with any associated accounts.
+Plus extension will be a user-friendly wallet to interact with the Polkadot/Substrate based blockchains through a browser. It allows users to access their Polkadot account(s), which can also be used to interact with decentralized apps. It is based on the original polkadot js extension, which injects a @polkadot/api signer into a page, along with any associated accounts.
 
 
 #### Competitive product analysis
 
 Polkadot's browser extension wallet, the currently known competitors are Enzyme, Speckle OS, and Doter.
 
-Enzyme and Speckle OS have very limited features and not been maintained for a long time over a year. Dotter also has very limitted capabilities, so that the functional modules achieved by polkadot js plus extension's first milestone have exceeded Doter (Recently, we have completed the first milestone), and more functional modules that will serve the Polkadot ecology will be implemented in the plan.
+Enzyme and Speckle OS have very limited features and not been maintained for a long time over a year. Dotter also has very limitted capabilities, so that the functional modules achieved by Plus extension's first milestone have exceeded Doter (Recently, we have completed the first milestone), and more functional modules that will serve the Polkadot ecology will be implemented in the plan.
 
 #### The difference with polkadot.js extension
 
-Polkadot.js extension is an official account management tool, but polkadot js Plus extension will be not only an account management tool but also implements a series of common functions in Polkadot ecology, such as fund transfer, transaction histrory (including, send, recieve, bond, nominate, bond_extra, redeem, etc), easy staking, easy-to-operate on-chain governance modules, contribute to crowdloans, etc. This means that polkadot js plus can not only do what original extension does, but also independently complete the above mentioned functions, providing users with a one-stop experience, which polkadot.js extension does not have.
+Polkadot.js extension is an official account management tool, but Plus extension will be not only an account management tool but also implements a series of common functions in Polkadot ecology, such as fund transfer, transaction histrory (including, send, recieve, bond, nominate, bond_extra, redeem, etc), easy staking, easy-to-operate on-chain governance modules, contribute to crowdloans, etc. This means that polkadot js plus can not only do what original extension does, but also independently complete the above mentioned functions, providing users with a one-stop experience, which polkadot.js extension does not have.
 
 From the perspective of UI experience, polkadot js plus tries to not just be more user-userfriendlier but also consistent with the previous taste of the users, who are already familiar with the original polkadot js extension. We try to make the UI more attractive to users, and also support all the languages that are currently existd on the original extension.
 
