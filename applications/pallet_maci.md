@@ -2,7 +2,8 @@
 
 * **Project:** pallet-maci
 * **Proposer:** MVP Workshop - https://github.com/MVPWorkshop
-* **Payment Address:** 0x57bc8af36A7E900C438B0652ff2EEb24954a3e6d 
+* **Payment Address:** 0x57bc8af36A7E900C438B0652ff2EEb24954a3e6d
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/232#issuecomment-942292877)
 
 ## Project Overview 📄
 

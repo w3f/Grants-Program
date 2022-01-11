@@ -45,6 +45,7 @@ For instance, for a simplest sharing schema, when the vault is created to be sha
         }, {
             "cid":       "QmaTX2v2QuwkQvEERw17w2xACcr2WZhy9t3NAEPBjvqPSX",
             "member": "5Ef9ES1SLQZU4KucGsjvs8qexvppQFmDgHiqoqVptJ9nZDeu"
+     }]
 }
 ```
 
@@ -173,7 +174,6 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 
 * **Costs:** 6480 DAI (2 FTE * 35 Hours per week * 3 Weeks * $38 Hourly Wage. Of course, I'll be surprised if we will actually work less than 50 hours per week.) 
 
-    
 
 | Number | Deliverable       | Specification                                                |
 | ------ | ----------------- | ------------------------------------------------------------ |
@@ -184,46 +184,22 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 | 3.     | Client Side UI/UX | an simple Electron UI/UX not wired up with logic yet         |
 
 
+### Milestone 1  — Desktop App & Browser Extension 
 
-### Milestone 1 — Core Encryption/Identity Management Smart Conctracts/Basic Desktop App 
-
-* **Estimated Duration:** 7 Weeks
-
-* **FTE:**  2
-
-* **Costs:** 18,620 DAI (2 FTE * 35 Hours per week * 7 Weeks * $38 Hourly Wage. Of course, I'll be surprised if we will actually work less than 50 hours per week.) 
-
-
-
-| Number | Deliverable                    | Specification                                                |
-| ------ | ------------------------------ | ------------------------------------------------------------ |
-| 0a.    | License                        | Apache 2.0                                                   |
-| 0b.    | Documentations/Project Website | A minimalism project homepage with a user manual that documents how to use SkyePass from account creation to manage passwords, and install extensions and browser extensions. <br/>A developer documentation that describes the encryption mechanism in details; Basic API documentation for extension development. |
-| 1.     | Desktop App/Browser Extension  | **Desktop App**<br/>A React.js + Electron App to start with. The App will implement as close as possible to the graphic design (per 3). <br/>- Wallet Creation / Backup Phase / Create Master Password<br/>- Wallet Import / Signin<br/>- Autolock after timed inactivity or manually lock the App <br/>- Create/Share/Manage Vaults<br/>- Add/Update/Delete Password Items (with 2FA OTP support)<br/>- Add/Update/Delete Secure Note/Credit Card <br/>- Basic ETH wallet extension<br/>- Basic Polkadot wallet extension <br/> - Application Marketplace<br/>- sharing a single password item directly to another user<br/><br/>**Browser Extension** <br/>- Communication to Desktop Application<br/>- Auto-fill account/passwords<br/> <br/>**IPFS Connection**<br/>- upload / update / read from a public IPFS node. |
-| 2.     | Smart Contract                 | Finish all 4 smart contracts mentioned in the `Ecosystem Fit` section. For this phase, these contracts are testing contracts, and they are subject to minor changes as long as they provide the same/very similar functionality. We might use the "identity pallet" instead of deploying smart contract 3 & 4. We will use Rust, ink! for smart contract development, along with tools like Redspot by [Patract Hub](https://patract.io/?lang=en-US) |
-| 3.     | UI/UX Design Standards         | Color Schema, Composition & Balance, Typography, Animation, Navigation, Icon Set, Brand Logo |
-| 4.     | Basic Marketing Efforts        | send out private alpha invitation                            |
-| 5.     | Testing                        | Unit Testing                                                 |
-### Milestone 2  — Ready for Beta Release
-
-* **Estimated Duration:** 6 Weeks
+* **Estimated Duration:** 10 Weeks / **Est. Start Early 2022**
 
 * **FTE:**  4
 
-* **Costs:** 3,400 DAI is what we are requesting for this phase. We understand that there is a $30,000 limit and we will fill in the funding gap in other ways. 
+* **Costs:** 22,020 DAI
 
-* **Actually Costs**: 35,920 DAI (4 FTE * 35 Hours per week * 6 Weeks * \$38Hourly Wage + A security Auditing \$4,000 ) We will be far less stressed at this phase. It's gonna be more about tweaking here and there and security auditing. 
-
-    
 
 | Number | Deliverable                                    | Specification                                                |
 | ------ | ---------------------------------------------- | ------------------------------------------------------------ |
 | 0a.    | License                        | Apache 2.0                                                   |
 | 0b.    | Developer Resource/API Documentation/Community | - A comprehensive API spec documentation <br/>- Riot group for support, suggestions and questions<br/> |
 | 0c.     | **Security Auditing**                          | Audited by a trusted 3rd party                               |
-| 1.     | Desktop App/Browser Extension                  | Create an open Github repo for `extensions`, build a management system for open PR of new integrations. The "marketplace" in the desktop app will pull a list of available integrations from the repo.  <br/>Support at least 2 password importing source<br/>Support unencrypted password exporting<br/>Add in support for browser extension to inject hot wallet like Metamask<br/> |
+| 1.     | Desktop App/Browser Extension                  | Create an open Github repo for `extensions`, build a management system for open PR of new integrations. The "marketplace" in the desktop app will pull a list of available integrations from the repo.  <br/>Support at least 2 password importing source<br/>Support unencrypted password exporting<br/>Add in support for browser extension to inject hot wallet like Metamask<br/>**Desktop App**<br/>A React.js + Electron App. The App will implement as close as possible to the graphic design (per 3). <br/>- Wallet Creation / Backup Phase / Create Master Password<br/>- Wallet Import / Signin<br/>- Autolock after timed inactivity or manually lock the App <br/>- Create/Share/Manage Vaults<br/>- Add/Update/Delete Password Items (with 2FA OTP support)<br/>- Add/Update/Delete Secure Note/Credit Card <br/>- Basic ETH wallet extension<br/>- Basic Polkadot wallet extension <br/> - Application Marketplace<br/>- sharing a single password item directly to another user<br/><br/>**Browser Extension** <br/>- Communication to Desktop Application<br/>- Auto-fill account/passwords<br/> <br/> |
 | 2.     | Smart Contracts                                | All contract tested and audited and we will deploy the V1.0 contract to the appropriate parachains. |
-| 3.     | Partnership                                    | Build partnerships for developer/marketing/user support resources |
 | 4.     | Mobile Apps                                    | Draft up UI/UX designs for mobile apps.                      |
 
 
