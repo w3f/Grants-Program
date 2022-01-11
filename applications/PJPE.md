@@ -84,7 +84,7 @@ Enzyme and Speckle OS have very limited features and not been maintained for a l
 
 #### The difference with polkadot.js extension
 
-Polkadot.js extension is an official account management tool, but polkadot js plus extension will be not only an account management tool but also implements a series of common functions in Polkadot ecology, such as fund transfer, transaction histrory (including, send, recieve, bond, nominate, bond_extra, redeem, etc), easy staking, easy-to-operate on-chain governance modules, contribute to crowdloans, etc. This means that polkadot js plus can not only do what original extension does, but also independently complete the above mentioned functions, providing users with a one-stop experience, which polkadot.js extension does not have.
+Polkadot.js extension is an official account management tool, but polkadot js Plus extension will be not only an account management tool but also implements a series of common functions in Polkadot ecology, such as fund transfer, transaction histrory (including, send, recieve, bond, nominate, bond_extra, redeem, etc), easy staking, easy-to-operate on-chain governance modules, contribute to crowdloans, etc. This means that polkadot js plus can not only do what original extension does, but also independently complete the above mentioned functions, providing users with a one-stop experience, which polkadot.js extension does not have.
 
 From the perspective of UI experience, polkadot js plus tries to not just be more user-userfriendlier but also consistent with the previous taste of the users, who are already familiar with the original polkadot js extension. We try to make the UI more attractive to users, and also support all the languages that are currently existd on the original extension.
 
@@ -93,7 +93,9 @@ From the perspective of UI experience, polkadot js plus tries to not just be mor
 Analogous to MetaMask, browser extension wallets are convenient to interact with DApps. Plus is positioned as a browser extension wallet and has a first-mover advantage in the product direction. It focuses on the Polkadot ecosystem and enables more users to participate in the Polkadot ecosystem through customized and truly friendly interactive experience.
 
 #### How to maintain the wallet
-...
+
+In the near future, we will have someone in charge of maintaining the Plus extension, not only update it with the original polkadot js extension but also
+fix bugs, and even improve the experience，to making Plus as close as possible to a mature browser extension in other ecosystems like MetaMask.
 
 ## Team :busts_in_silhouette:
 
