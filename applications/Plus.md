@@ -138,7 +138,7 @@ The current status of the implementation of Plus extension can be found [here](h
 
 ### Overview
 
-- **Total Estimated Duration:** 2 months
+- **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 2 FTE
 - **Total Costs: 10,000 USD
 
@@ -151,39 +151,37 @@ The current status of the implementation of Plus extension can be found [here](h
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Description | We will implement View balances, Transfer funds, Easy staking, Contribute in crowdloans, View transaction history, View an address as a QR code on Kusama and Polkadot parachains |
+| 0b. | Description | We will implement part 1 of functionalities which includes View balances, Transfer funds, Easy staking, Contribute in crowdloans, View transaction history, View an address as a QR code on Kusama and Polkadot |
 | 0c. | Delivery Time | Mid March |
 | 0d. | How to verify | It is expected that in Mid March, you can install the latest version of Plus based on information on [README](https://github.com/Nick-1979/polkadot-Js-Plus-extension/blob/master/README.md) and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results.|
-| 1. | view balance | We create view balance, to view your available and total balances in cryto and USD |  
+| 1. | Show balance and address as QRcode | We create view balance, to view your available and total balances in cryto and USD, also show your address as a QRcode |  
 | 2. | Fund transfer | We create Transfer fund to transfer funds from one account to another |  
 | 3. | Tranaction history | We create history where all transactions history can be viewd in different categories |  
 | 4. | Easy staking | We create easy staking to stake, unstake, redeem funds, and nominate validators |  
 | 5. | Crowdloan contribution | we create crowdloan contribution to view auctions, bids, and active/winner crowdloans on Polkadot and kusama, where contribution can be done easily |  
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — part 2 of functionalities
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 2 month
 - **FTE:**  1
 - **Costs:** 3,000 USD
 
-...
-
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Description | We will implement part 2 of functionalities, i.e. Governance which includes Referendums, Proposals, show council, motions, Treasury and Tips   |
+| 0c. | Delivery Time | Mid April |
+| 0d. | How to verify | It is expected that in Mid April, you can install the latest version of Plus based on information on [README](https://github.com/Nick-1979/polkadot-Js-Plus-extension/blob/master/README.md) and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results.|
+| 1. | referendums and proposals | We create these functionalities to enable viewing and voting for referendums and proposals |  
+| 2. | Council and motions | Council members and motions can be seen in this part |  
+| 3. | Treasury and tips | We create history Treasury to view/submit proposals and tips |  
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+After we finish these 2 milestones, we will publish Plus extension to Chrome and Firefox browser addon market, we have some plans to extend Plus features on parachains, as an example one plan is adding token swapping of Acala to Plus extension, supporting NFT on parachains like Efinity will be another plan for feature.
 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- Wheter there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+**How did you hear about the Grants Program?**  In the initial stage of Plus, we presented it to the core developers of the original polkadot js extension on Github, there they suggested us to apply for W3 grants.
