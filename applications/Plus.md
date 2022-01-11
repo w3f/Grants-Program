@@ -119,7 +119,7 @@ Plus extension is maintained by Kami Ekbatanifard, and no company entity has bee
  
 ### Team's experience
 
-Kami has a Phd in software systems and works as a blockchain engineer, he has experince in developing applications mostly in private sources including centralized/decentralized crypto exchanges, NFT market on Ethereum utilizing filecoin, etc. He also have a research track which could be find listed [here](https://scholar.google.com/citations?user=pJ0HwqEAAAAJ&hl=en). 
+Kami has a Phd in software systems and works as a blockchain engineer, he has experince in developing applications mostly in private sources including centralized/decentralized crypto exchanges, NFT market on Ethereum utilizing filecoin, etc. He also has a research track which could be find listed [here](https://scholar.google.com/citations?user=pJ0HwqEAAAAJ&hl=en). 
 
 
 #### Personal Code Repo:
