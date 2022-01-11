@@ -173,9 +173,9 @@ The current status of the implementation of Plus extension can be found [here](h
 | 0b. | Description | We will implement part 2 of functionalities, i.e. Governance which includes Referendums, Proposals, show council, motions, Treasury and Tips   |
 | 0c. | Delivery Time | Mid April |
 | 0d. | How to verify | It is expected that in Mid April, you can install the latest version of Plus based on information on [README](https://github.com/Nick-1979/polkadot-Js-Plus-extension/blob/master/README.md) and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results.|
-| 1. | referendums and proposals | We create these functionalities to enable viewing and voting for referendums and proposals |  
+| 1. | Referendums and Proposals | We create these functionalities to enable viewing and voting for referendums and proposals |  
 | 2. | Council and motions | Council members and motions can be seen in this part |  
-| 3. | Treasury and tips | We create history Treasury to view/submit proposals and tips |  
+| 3. | Treasury and Tips | We create Treasury to view/submit proposals and tips |  
 
 ## Future Plans
 
