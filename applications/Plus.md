@@ -107,13 +107,13 @@ fix bugs, and even improve the experience，to making Plus as close as possible 
 
 - **Contact Name:** Kami Ekbatanifard
 - **Contact Email:** ekbatanifard@gmail.com
-- **Website:** Polkadot js plus extension is currently maintained on [Github](https://github.com/Nick-1979/polkadot-Js-Plus-extension), no website has been created yet
+- **Website:** Plus extension is currently maintained on [Github](https://github.com/Nick-1979/polkadot-Js-Plus-extension), no website has been created yet
 
 ### Legal Structure
 
-Polkadot js plus extension is maintained by the Kami Ekbatanifard, and no company entity has been created yet, The following is our communication information.
+Plus extension is maintained by Kami Ekbatanifard, and no company entity has been created yet, the following is our communication information.
 
-- **Mailing Address:** 6575, ch kildare, cote-st luc, H4W1B6, Montreal, Quebec, Canada
+- **Mailing Address:** No 13, Lahijan, Gilan, Iran
 - **E-mail:** ekbatanifard@gmail.com
 - **Twitter:** [ekbatanifard](https://twitter.com/ekbatanifard)
  
