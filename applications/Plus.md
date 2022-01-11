@@ -29,7 +29,7 @@ The UI of the already implemented/woking functionalities are as follows:
 
 #### Account page, which shows all accounts balances, and icon buttons to access some features:
 
-![account page screen shot](https://bafkreiaqqp7b5kprdveugwboxlb7wlgz3exv6s7wsalv6prtdlubjhl67q.ipfs.dweb.link)
+![account page screen shot](https://github.com/Nick-1979/polkadot-Js-Plus-extension/raw/master/packages/extension-plus/docs/screenshots/addRecepiet00.PNG)
 
 
 #### Transfer funds pages, to enter/choose the recipient address, determine the transfer amount, and finally confirm transfer along with relevant alerts and tooltips:
