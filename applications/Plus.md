@@ -63,9 +63,9 @@ The UI of under developement features:
 
 Viewing the auction and its crowdloans on different relay chains (polkadot, kusama, and westend testnet):
 
-![auction crowdloans confirmmation page screen shot](https://bafkreig7ltmgzzxqihbkikhgpjw5kygxmdi4kr6ey76m2a7gs7gh6nchge.ipfs.dweb.link)
+![auction crowdloans search page screen shot](https://github.com/Nick-1979/polkadot-Js-Plus-extension/raw/master/packages/extension-plus/docs/screenshots/contributeInCrowdloans00.PNG)
 
-![auction crowdloans page screen shot](https://bafkreicu7mqieyyezsgdvqtcsw4htjtrmyajcv7pqv53svi7fs5t4zqvzi.ipfs.dweb.link)
+![auction crowdloans page screen shot](https://github.com/Nick-1979/polkadot-Js-Plus-extension/raw/master/packages/extension-plus/docs/screenshots/crowdloans00.PNG)
 
 ![auction crowdloans confirmmation page screen shot](https://bafkreieo2ckh4zfztjxwhksimqwq3owhudmdfppd27hif4df22d4a4w7f4.ipfs.dweb.link)
 
