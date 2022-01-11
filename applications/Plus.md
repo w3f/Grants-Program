@@ -142,7 +142,7 @@ The current status of the implementation of Plus extension can be found [here](h
 - **Full-Time Equivalent (FTE):** 2 FTE
 - **Total Costs: 10,000 USD
 
-### Milestone 1 — Implement Crowdloan contribution
+### Milestone 1 — Implement part 1 of functionalities
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
@@ -151,13 +151,14 @@ The current status of the implementation of Plus extension can be found [here](h
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Description | We will implement crowdloan contribution on Kusama and Polkadot parachains |
+| 0b. | Description | We will implement View balances, Transfer funds, Easy staking, Contribute in crowdloans, View transaction history, View an address as a QR code on Kusama and Polkadot parachains |
 | 0c. | Delivery Time | Mid March |
-| 0d. | How to verify | It is expected that in Mid May, you can install the latest version of Plus based on information on [README](https://github.com/Nick-1979/polkadot-Js-Plus-extension/blob/master/README.md) and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results.|
-| 1. | Fund transfer | We create Transfer fund to transfer funds from one account to another |  
-| 2. | Tranaction history | We create history where all transactions history can be viewd in different categories |  
-| 3. | Easy staking | We create easy staking to stake, unstake, redeem funds, and nominate validators |  
-| 4. | Crowdloan contribution | we create crowdloan contribution to view auctions, bids, and active/winner crowdloans on Polkadot and kusama, where contribution can be done easily |  
+| 0d. | How to verify | It is expected that in Mid March, you can install the latest version of Plus based on information on [README](https://github.com/Nick-1979/polkadot-Js-Plus-extension/blob/master/README.md) and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results.|
+| 1. | view balance | We create view balance, to view your available and total balances in cryto and USD |  
+| 2. | Fund transfer | We create Transfer fund to transfer funds from one account to another |  
+| 3. | Tranaction history | We create history where all transactions history can be viewd in different categories |  
+| 4. | Easy staking | We create easy staking to stake, unstake, redeem funds, and nominate validators |  
+| 5. | Crowdloan contribution | we create crowdloan contribution to view auctions, bids, and active/winner crowdloans on Polkadot and kusama, where contribution can be done easily |  
 
 
 ### Milestone 2 Example — Additional features
