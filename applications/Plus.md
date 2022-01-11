@@ -139,21 +139,21 @@ The current status of the implementation of Plus extension can be found [here](h
 ### Overview
 
 - **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):** 2 FTE
+- **Full-Time Equivalent (FTE):** 3 FTE
 - **Total Costs: 10,000 USD
 
 ### Milestone 1 — Implement part 1 of functionalities
 
-- **Estimated duration:** 1 month
-- **FTE:**  1
+- **Estimated duration:** 2 month
+- **FTE:**  2
 - **Costs:** 7,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Description | We will implement part 1 of functionalities which includes View balances, Transfer funds, Easy staking, Contribute in crowdloans, View transaction history, View an address as a QR code on Kusama and Polkadot |
-| 0c. | Delivery Time | Mid March |
-| 0d. | How to verify | It is expected that in Mid March, you can install the latest version of Plus based on information on [README](https://github.com/Nick-1979/polkadot-Js-Plus-extension/blob/master/README.md) and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results.|
+| 0c. | Delivery Time | Mid May |
+| 0d. | How to verify | It is expected that in Mid May, you can install the latest version of Plus based on information on [README](https://github.com/Nick-1979/polkadot-Js-Plus-extension/blob/master/README.md) and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results.|
 | 1. | Show balance and address as QRcode | We create view balance, to view your available and total balances in cryto and USD, also show your address as a QRcode |  
 | 2. | Fund transfer | We create Transfer fund to transfer funds from one account to another |  
 | 3. | Tranaction history | We create history where all transactions history can be viewd in different categories |  
@@ -163,7 +163,7 @@ The current status of the implementation of Plus extension can be found [here](h
 
 ### Milestone 2 — part 2 of functionalities
 
-- **Estimated Duration:** 2 month
+- **Estimated Duration:** 1 month
 - **FTE:**  1
 - **Costs:** 3,000 USD
 
