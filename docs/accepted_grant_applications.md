@@ -25,6 +25,8 @@
   - [:surfing_woman: Wave 10 - Second Quarter 2021](#surfing_woman-wave-10---second-quarter-2021)
   - [:surfing_woman: Wave 11 - Third Quarter 2021](#surfing_woman-wave-11---third-quarter-2021)
   - [:surfing_woman: Wave 12 - Fourth Quarter 2021](#surfing_woman-wave-12---fourth-quarter-2021)
+- [2022](#2022)
+  - [:surfing_woman: Wave 13 - First Quarter 2022](#surfing_woman-wave-13---first-quarter-2022)
 
 # 2019
 
@@ -187,7 +189,7 @@
 | [Lunie](http://lunie.io/) | Lunie Governance integration | [GitHub](https://github.com/luniehq/lunie) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [LimeChain](https://github.com/LimeChain) | AssemblyScript Runtime | [GitHub](https://github.com/LimeChain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [MVP Workshop](https://mvpworkshop.co/) | Substrate startkit GUI (marketplace for substrate pallets) | [GitHub](https://github.com/MVPWorkshop) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [P2P](https://p2p.org/) | Multiblockchain ELT | [GitHub](https://github.com/p2p-org/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [P2P](https://p2p.org/) | Multiblockchain ELT | [GitHub](https://github.com/p2p-org/polkadot-profit-transformer) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [FlexDapps](https://flexdapps.com/) | Gantree Phase 4 | [GitHub](https://github.com/flex-dapps) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Zondax](http://zondax.ch/) | Ledgeracio: A command-line tool and Ledger app designed for staking operations | [GitHub](https://github.com/paritytech/ledgeracio) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Dipole Tech](https://www.dipole.tech) | Dipole Oracle: Distributed energy resource management | [GitHub](https://github.com/DipoleTech/dipole-oracle) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
@@ -245,7 +247,7 @@
 | [Wificoin](https://wificoin.com/) | PESA: On-ramp/off-ramp to crypto/local currencies for Polkadot | | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [WalletConnect](https://walletconnect.org/) | Open protocol for connecting Wallets to Dapps | [GitHub](https://github.com/walletconnect) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Citadel.one](https://citadel.one/) | Non-custodial Proof-of-Stake platform | | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Insight](https://insightfellows.com/) | Load Balanced Endpoints Phase 2 | [GitHub](https://github.com/insight-w3f/terragrunt-polkadot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Geometry Labs](https://geometrylabs.io/) | Load Balanced Endpoints Phase 2 | [GitHub](https://github.com/geometry-labs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [MAP labs](https://www.maplabs.io/) | Map Bridge: Connect Polkadot and other PoW chains | [GitHub](https://github.com/Philasande-map/mapbridge) | <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [RareLink](http://rarelink.network/) | Dynamic non-fungible token (NFT) Protocol | [GitHub](https://github.com/RareLink) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Cere Network](http://cere.network/) | Turnkey Private Blockchain Network | [GitHub](https://github.com/Cerebellum-Network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
@@ -308,7 +310,7 @@
 | [Equilibrium](https://equilibrium.co/) | Research Storage Network| [GitHub](https://github.com/eqlabs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Ajuna](https://ajuna.io/) | Substrate .NET API  | [GitHub](https://github.com/dotmog/SubstrateNetApi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [NewOmega](https://github.com/WiktorStarczewski/newomega.trinity ) | A blockchain game that cannot be shut down | [GitHub](https://github.com/WiktorStarczewski/newomega.trinity ) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Bright Inventions](https://brightinventions.pl/) | Treasury Web application| [GitHub](https://github.com/bright/bright-tresury) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Bright Inventions](https://brightinventions.pl/) | Treasury Web application| [GitHub](https://github.com/bright/bright-tresury) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Standard protocol](https://github.com/digitalnativeinc/standard-substrate) | A collateralized algorithmic stablecoin protocol for synthetic assets | [GitHub](https://github.com/digitalnativeinc/standard-substrate) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Skye Kiwi](https://skye.kiwi/) | SkyePass: A decentralized, open source password manager | [GitHub](https://github.com/skyekiwi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [RidOne Technologies](https://github.com/RidOne-technologies) | Polkadot UI Web + Angular Identicon | [GitHub](https://github.com/RidOne-technologies) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
@@ -422,6 +424,17 @@
 | [AdMeta](https://admeta.network/) | A privacy-preserving Ad Platform | [GitHub](https://github.com/AdMetaNetwork/admeta) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | Crypto Pay Lab (CPL)) | Dotpay a github paid task platform using DOT | [GitHub](https://github.com/bytepayment) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
+# 2022
 
+## :surfing_woman: Wave 13 - First Quarter 2022
 
+| Team | Project | Link | Terminated | First Delivery | Completed
+| :--- | :------ | :--- | :--------: | :------------: | :-------: |
+| [Chainify](https://github.com/chainify) | Nolik | [GitHub](https://github.com/chainify) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Pennsylvania State University](https://www.psu.edu/) | Avoiding Rust Deadlocks via Lifetime Visualization | [GitHub](https://songlh.github.io/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Anagolay](https://anagolay.network/) | Project Idiyanale | [GitHub](https://github.com/anagolay) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Fennel Labs](https://fennellabs.com/) | Fennel Protocol | [GitHub](https://github.com/fennelLabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Valletech AB](https://valletech.eu/) | Polkawatch | [GitHub](https://gitlab.com/polkawatch) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [EzCode](https://ezcode.co/) | Polkadot.js NoCode Plugin | [GitHub](https://github.com/inartin) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Virto Network](https://virto.network/) | LIP payments pallet | [GitHub](https://github.com/virto-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
