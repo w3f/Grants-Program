@@ -155,9 +155,8 @@ The current status of the implementation of Plus extension can be found [here](h
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Description | We will implement part 1 of functionalities which includes View balances, Transfer funds, Easy staking, Contribute in crowdloans, View transaction history, View an address as a QR code on Kusama and Polkadot |
-| 0c. | Delivery Time | Mid May |
-| 0d. | How to verify | It is expected that in Mid May, you can install the latest version of Plus based on information on [README](https://github.com/Nick-1979/polkadot-Js-Plus-extension/blob/master/README.md) and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results.|
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use each of the implemented functionalities. |
+| 0c. | Testing Guide	| We will conduct unit test on all modules to ensure they can function properly. In this guide, we will describe how to run these tests.|
 | 1. | Show balance and address as QRcode | We create view balance, to view your available and total balances in cryto and USD, also show your address as a QRcode |  
 | 2. | Fund transfer | We create Transfer fund to transfer funds from one account to another |  
 | 3. | Tranaction history | We create history where all transactions history can be viewd in different categories |  
@@ -174,9 +173,9 @@ The current status of the implementation of Plus extension can be found [here](h
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Description | We will implement part 2 of functionalities, i.e. Governance which includes Referendums, Proposals, show council, motions, Treasury and Tips   |
-| 0c. | Delivery Time | Mid April |
-| 0d. | How to verify | It is expected that in Mid April, you can install the latest version of Plus based on information on [README](https://github.com/Nick-1979/polkadot-Js-Plus-extension/blob/master/README.md) and verify the functional modules promised in the milestone. In addition, you can also verify through integration tests, We will provide yarn commond for anyone who want to run the unit test scripts and check the results.|
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use each of the implemented functionalities. |
+| 0c. | Testing Guide	| We will conduct unit test on all modules to ensure they can function properly. In this guide, we will describe how to run these tests.|
+| 0d. |Article	| We will write an article or tutorial that explains the work principle as part of the grant.|
 | 1. | Referendums and Proposals | We create these functionalities to enable viewing and voting for referendums and proposals |  
 | 2. | Council and Motions | Council members and motions can be seen in this part |  
 | 3. | Treasury and Tips | We create Treasury to view/submit proposals and tips |  
