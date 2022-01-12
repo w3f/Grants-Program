@@ -3,7 +3,7 @@
 
 - **Project Name:** ORI (Onchain Risk Intelligence)
 - **Team Name:** SyntiFi
-- **Payment Address:** *PRIVATE*
+- **Payment Address:** 0x5E89f8d81C74E311458277EA1Be3d3247c7cd7D1 (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**
   2
 
@@ -47,7 +47,19 @@ In a nutshell this project is composed of two main steps:
        according to some AML metrics.
 
 The tool is implemented in Java and uses the micro-service framework
-Quarkus, as well as the Spring Jobs for the crawler.
+Quarkus, as well as the Spring Jobs for the crawler. Up until now we 
+were indexing directly on ElasticSearch but we are currently changing 
+it to use Postgresql as persistency layer together with ElasticSearch 
+for an efficient search (more precisely we use a hibernate-elastic-search 
+module to facilitate the sync between the SQL DB and Elastic Search). 
+
+Additionally we could have decied to use any of the already available 
+indexers for the different chains. The issue is that these indexers are 
+often storing the whole information of the blocks and merkle trees, but 
+we just need a smaller portion of that. For this reason we decided to 
+create our own, simple crawler, to index just what we need and replicate 
+that for the different chains. We believe that in doing so we can facilitate
+the integration of other chains into the system.
 
 ORI also comes with a front-end implemented in React. The further
 development/improvement of the front end is **NOT** part of this
