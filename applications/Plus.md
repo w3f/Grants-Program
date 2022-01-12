@@ -139,13 +139,13 @@ The current status of the implementation of Plus extension can be found [here](h
 ### Overview
 
 - **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):** 3 FTE
+- **Full-Time Equivalent (FTE):** 1 FTE
 - **Total Costs: 10,000 USD
 
 ### Milestone 1 — Implement part 1 of functionalities
 
 - **Estimated duration:** 2 month
-- **FTE:**  2
+- **FTE:**  1
 - **Costs:** 7,000 USD
 
 | Number | Deliverable | Specification |
