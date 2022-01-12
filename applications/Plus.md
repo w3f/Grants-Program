@@ -59,15 +59,19 @@ The UI of the already implemented/woking functionalities are as follows:
 ![transaction detail page screen shot](https://bafkreihs3netktz5wdyxr5lfytkq6om33xhzvk25zojwtuyhiqtg744rdi.ipfs.dweb.link)
 
 
-The UI of under developement features:
+#### The UI of under developement features:
 
-Viewing the auction and its crowdloans on different relay chains (polkadot, kusama, and westend testnet):
+##### Viewing the auction and its crowdloans on different relay chains (polkadot, kusama, and westend testnet) to contribute on:
 
 ![auction crowdloans search page screen shot](https://github.com/Nick-1979/polkadot-Js-Plus-extension/raw/master/packages/extension-plus/docs/screenshots/contributeInCrowdloans00.PNG)
 
 ![auction crowdloans page screen shot](https://github.com/Nick-1979/polkadot-Js-Plus-extension/raw/master/packages/extension-plus/docs/screenshots/crowdloans00.PNG)
 
 ![auction crowdloans confirmmation page screen shot](https://bafkreieo2ckh4zfztjxwhksimqwq3owhudmdfppd27hif4df22d4a4w7f4.ipfs.dweb.link)
+
+##### Governance, including Democracy, Council and Treasury:
+
+![Governance page screen shot](https://bafkreic6qtchnk6kh3atm5fmdofznj3lllcvzqkz3cykkok4xsoms337o4.ipfs.dweb.link)
 
 
 
