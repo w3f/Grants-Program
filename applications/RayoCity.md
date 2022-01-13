@@ -4,7 +4,7 @@
 - **Project Name:** RayoCity
 - **Team Name:** RCITY Team
 - **Payment Address:** 0xEA908E359FfF0C19AC07D1FA8349E5DC544FF1E3 (USDT)
-- **[Level]** 2 
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
