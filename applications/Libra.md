@@ -300,7 +300,7 @@ Libra is founded and developed in the Polkadot APAC Hackathon 2021. We already b
 | 0b. | Documentation | The documentation is about the basic concepts, functions specs, and samples of how to use SDK to integrate with the Libra Network.    |
 | 0c. | Testing | The unit tests and integration tests will cover at least 70% of the code. |
 | 0d. | CI/CD | The lint, tests, and release will run automatically on the Github actions. If a new version is available, it will be published on NPM.|
-| 1. | SDK | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
+| 1. | SDK | The set of Javascript libraries and utils that help front-end developers easy to integrate their web app with the Libra network. The specification of the SDK is listed in the project detail session. |  
 
 ## Future Plans
 
