@@ -118,31 +118,39 @@ For each milestone,
 
 - **Total Estimated Duration: 12 Months
 - **Full-Time Equivalent (FTE): 2 FTE / 1 PTE
-- **Total Costs: $40,000
+- **Total Costs: $30,000
 
 Project Deck: https://drive.google.com/file/d/1GFJqs2WiNIrE50Pq_YRDxafKsAQZt0D4/view?usp=sharing (Roadmap incl.)
 Project Site: www.discoverco.webflow.io
 
 
-### Milestone 1 — UI/UX Mockup and Prototype
+### Milestone 1 — Security/Risk/Partnership Assessment, UI/UX Mockup and Prototype
 
-- **Estimated duration:** 2 months
+- **Estimated duration:** 4 months
 - **FTE:**  2
 - **Costs:** 8,000 USD
 
-### Milestone 2 — Testnet Launch
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | Graphic Design and Illustration | Source and build custom illustrations
+| 0b. | Documentation | Gitbook Documentation |
+| 0c. | Core Design Mockup and Build | We will build a initial phased app mockup
+| 0d. | Prototype Deployment | Test and deploy functionality of UI and user flows.
+| 0e. | Partnership Assessment | Assess blockchain ecosystem partnerhisp and protocols
 
-- **Estimated Duration:** 6 months
+
+### Milestone 2 — Testnet and Mainnet Launch
+
+- **Estimated Duration:** 8 months
 - **FTE:**  2
-- **Costs:** 12,000 USD
+- **Costs:** 22,000 USD
 
-### Milestone 3 — Mainnet Launch, Marketing and Ecosystem Development
-
-- **Estimated Duration:** 4 months
-- **FTE:**  2
-- **Costs:** 20,000 USD
-
-...
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | Token Launch | Native token launch and relase
+| 0b. | Testnet Launch | GUtilize Substrate nodes to test operating transactions on platform.
+| 0c. | Mainnet Launch | Main net launch to all users across platforms.
+| 0d. | Staking Interface | Test staking rewards and interface.
 
 
 ## Future Plans
@@ -160,6 +168,5 @@ Please include here
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+Project Deck: https://drive.google.com/file/d/1GFJqs2WiNIrE50Pq_YRDxafKsAQZt0D4/view?usp=sharing (Roadmap incl.)
+Project Site: www.discoverco.webflow.io
