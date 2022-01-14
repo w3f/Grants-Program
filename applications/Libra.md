@@ -269,7 +269,7 @@ Libra is founded and developed in the Polkadot APAC Hackathon 2021. We already b
 | 0c. | Testing | All of the code will be covered by unit and integration test suites with the testing instruction.  |
 | 0d. | Live testnet | The live testnet with a few nodes and public RPC endpoints to test or connect more nodes. |
 | 1. | Substrate module: LRP pallet | The LRP protocol implementation. |  
-| 2. | Substrate module: Currencies pallet | Multiple currencies payment implementation. |    
+| 2. | Substrate module: Currencies pallet | The extended module of ORML currencies allows creates and manages currencies by bonding some native tokens. |    
 | 3. | Substrate based chain | The integration LRP protocol with substrate chain. |  
 
 ### Milestone 2 - Resolvers Network Implementation
@@ -283,7 +283,7 @@ Libra is founded and developed in the Polkadot APAC Hackathon 2021. We already b
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | The documentation includes: general concepts explanation, setup and run node guide, RPC specs |
 | 0c. | Testing | All of the code will be covered by unit and integration test suites with the testing instruction.  |
-| 1. | Substrate module: Identity pallet | On-chain identity setup for the resolvers and more roles in the future. |  
+| 1. | Substrate module: Identity pallet | The identity pallet handles more specific fields of on-chain identity including identity credibility which is calculated by the actions that identity made on-chain such as transactions, dispute rates, dispute decisions... We will also add domain verification to prevent identity impersonation. |  
 | 2. | Substrate module: Resolvers pallet | Resolver's application and nomination logic. |  
 | 3. | Substrate module: Dispute resolution pallet | Dispute resolution implementation. |  
 | 4. | Substrate chain integration | Integrate identity pallet, resolvers pallet and dispute resolution pallet with current chain.  |  
