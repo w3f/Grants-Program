@@ -21,8 +21,8 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 Please provide the following:
 
-- To buid a decentralized community which enables every day citizens and organizations to pilot projects forward.
-- Discoverco combines online decentralized communities to support and fund offline physical initiatives and projects.
+- Tagline: To buid a decentralized community which enables every day citizens and organizations to pilot projects forward.
+- Description: Discoverco combines online decentralized communities to support and fund offline physical initiatives and projects. We aim to maximize the number of crowdfunding initiatives funded by adopting community-consensus models for approving projects while enabling community governance models for managing ecosystems. The current model has led to lack of participation with just 22% of projects receiving any funding. These projects are often retail or product focused and fail to garner the support of local or community participants. Community participants will have the power to manage Discoverco and all aspect of its ecosystem through local system and use native tokens to approve new communities and projects. These token can be obtained through direct purchase or by staking for rewards. Participants are then incentivized to support their favorite projects within their community or organize their very own.
 
 ### Project Details
 
