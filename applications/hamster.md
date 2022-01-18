@@ -239,4 +239,4 @@ Our long-term vision is to provide distributed shared computing power. When the 
 
 ## Additional Information :heavy_plus_sign:
 
-So far, we are self-funded development. However, for our long-term vision, we will try to get support from investment institutions.
+So far, we are self-funded development. However, for our long-term vision, we will try to get support from investment institutions. 
