@@ -5,6 +5,7 @@
 * **Project:** Manta Network
 * **Proposer:** [Manta-Network](https://github.com/Manta-Network/Manta-Whitepaper/blob/main/manta-whitepaper.pdf)
 * **Payment Address:** bc1qcnghrzsfwnnv5fuh8095a6g3cf820c9y7t432q
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/117#issuecomment-971644753)
 
 
 ## Project Overview :page_facing_up:
