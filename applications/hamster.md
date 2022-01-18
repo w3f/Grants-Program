@@ -87,7 +87,7 @@ Our project is a distributed shared computing platform. Through the shared compu
 
 - **Contact Name:** Liang Teng
 - **Contact Email:** ltyuanmu@gmail.com
-- **Website:** Hamster is currently maintained on [Github](https://github.com/ChainBridgeNetworkTeam/Doter), no website has been created yet
+- **Website:** Hamster is currently maintained on [Github](https://github.com/orgs/hamster-shared), no website has been created yet
 
 ### Legal Structure
 
