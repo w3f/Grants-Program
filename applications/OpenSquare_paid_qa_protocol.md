@@ -67,6 +67,8 @@ The user interfaces will include:
 - In site notifications(centralized)
     - A topic author/supporter will receive a notification when there are new answers.
     - An answer author will receive a notification when his/her answer gets funded.
+  
+Please check part of the UIs [here](https://www.figma.com/proto/vqpglMGW8psHKB00eIVDUV/OpenSquare?page-id=3655%3A16149&node-id=3659%3A30988&viewport=322%2C48%2C0.08&scaling=min-zoom).
 
 ### Ecosystem Fit
 
