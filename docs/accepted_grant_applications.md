@@ -91,7 +91,7 @@
 | [WEB3SCAN](https://www.web3scan.com/) | Python API client | [GitHub](https://github.com/polkascan) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Galactic Council](https://github.com/galacticcouncil) | Polkalert: Validator Monitoring | [GitHub](https://github.com/galacticcouncil/polkalert) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Bandot](http://bandot.io/) | Stablecoin | [GitHub](https://github.com/bandotorg/Bandot) | <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Laminar One](https://laminar.one/) | LaminarChain: High performance Flow Protocols powering synthetic asset and margin trading | [GitHub](https://github.com/laminar-protocol/laminar-chain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Laminar One](https://laminar.one/) | LaminarChain: High performance Flow Protocols powering synthetic asset and margin trading | [GitHub](https://github.com/laminar-protocol/laminar-chain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Stake Technologies](https://stake.co.jp/) | Ink! Playground | [GitHub](https://github.com/staketechnologies/ink-playground) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [B-Harvest](https://bharvest.io/) | Node Monitoring Tool | [GitHub](https://github.com/b-harvest) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Simply VC](https://simply-vc.com.mt/) | P.A.N.I.C. Validator alerting solution | [GitHub](https://github.com/SimplyVC/panic_polkadot) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
