@@ -15,9 +15,9 @@ The MultiSig Substrate product functions include the following:
 - Create wallet by organization
 - Multi-asset management
 - Initiate a transaction in a wallet, sign a transaction, confirm a transaction
-- Add a signer, update multisig rule
+- Switch wallet, manage multiple multisig account at the same time
 
-There've been a multisig pallet developed by parity. The pallet (https://libraries.io/cargo/pallet-multisig) is a basic building block for us to build a more complete multisig MVP to meet actual demands of DAOs. 
+There've been a multisig pallet developed by parity. The pallet (https://github.com/paritytech/substrate/tree/master/frame/multisig) is a basic building block for us to build a more complete multisig MVP to meet actual demands of DAOs. 
 We'll implement a frontend MVP which interacts with the pallet to make the multisig work for end users.
 
 ### Ecosystem Fit 
@@ -59,8 +59,9 @@ Although structures vary in different organizations, funding management is a gen
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT |
-| 0b. | Visting Guide | The delivery will be posted on [figma](https://www.figma.com/login).We'll share a public access link for it | 
-| 1. | Multisig Desgin | An open-source prototype of a Multisig product. The desgin will focus on implementing the user interactions including 1) Create wallet by organization 2) Multi assets management 3) Initiate a transaction in a wallet, sign a transaction, confirm a transaction 4) Add a signer, update multisig rule | 
+| 0b. | Desgin Source | The delivery will be posted on [figma](https://www.figma.com/login).We'll share a public access link for it | 
+| 0c. | Article | We'll publish an aritcle which explains our desgin principle and whole flow for this MVP | 
+| 1. | Multisig Desgin | An open-source prototype of a Multisig product. The desgin will focus on implementing the user interactions including 1) Create wallet by organization 2) Multi assets management 3) Initiate a transaction in a wallet, sign a transaction, confirm a transaction 4) Swtich wallets, switch to another different mulitsig wallet | 
 | 2. | Evaluate | View the demonstration and find out some missing parts or enchancement | 
 
 
@@ -72,7 +73,9 @@ Although structures vary in different organizations, funding management is a gen
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 / MIT |
-| 0b. | Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0b. | Documentation | We'll provide a simple documentation for current pallet that we'll support and a basic guide for our design principle |
+| 0c. | Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0d. | Docker | For easy deployment, we'll provide a Dockerfile coming with our code, so that it can be published easier and faster | 
 | 1. | Multisig frontend MVP | A functioning open-source frontend project. The frontend MVP will enable the whole flow of the pallet key features including 1) Create wallet by organization 2) Initiate, sign, and confirm transactions 3) Add signer and update multi-sig rule 4) Show transaction history of a wallet
 | 2. | Test | Deploy the runtime module to a Substrate node and test Multisig functions described above
 
