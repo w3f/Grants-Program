@@ -34,10 +34,35 @@ Hamster is composed of Hamster nodes, Hamster resource providers, Hamster client
 
 
 
-Project Flow
+###### Project Flow
 
 ![](https://gitee.com/ltyuanmu/drawing-bed/raw/master/202201121707081.jpg)
 
+###### Anti-malicious attacks
+
+- How do you ensure the system isn’t exploited and users actually fulfill the agreement?
+
+  When the agreement is reached, the provider is required to complete the creation of the virtual machine, notify the blockchain of the completion of the order agreement, and request a heartbeat per epoch, which includes the number of cpu cores and memory size, for the blockchain to verify that it is working and providing valid resources. The potential threat is a nefarious provider forging heartbeats to trick the network into providing a valid service that actually provides less than the promised resources or even none at all. Since we have thought long and hard about this, and we do not currently have a cryptographic or better design to accomplish such a solution, we have adopted the idea of an arbitration model to prevent malicious attacks.
+
+  ![](https://gitee.com/ltyuanmu/drawing-bed/raw/master/202201241409500.jpg)
+
+  1. when the user finds a problem with the resource and the information configured at the time of purchase does not match, submits a validation request and requests arbitration. in order to ensure that there is no malicious validation, the submission of the request will have a certain cost pledge.
+  2. the arbitration group is subject to the validation request, currently designed to arbitrate the group for the current chain of validators. because he is the block validator, will promote the role of the current ecology. It is a trusted team
+  3. the arbitration group to link the computing resources, after entering the link for linux least privilege account, to query the virtual machine specifications
+  4. arbitration break to verify and report the vote
+  5. according to the voting results for incentives and penalties, to achieve the purpose of malicious evil.
+
+  We will follow up with cryptography or a better algorithmic model to replace the arbitration model. This will be a major topic of our subsequent research.
+
+- What are other potential attack vectors and how are you going to address them?
+
+  - Virtual machine p2p connection security:
+
+    The connection port of the virtual machine is exposed to the p2p network and is vulnerable to security attacks from the p2p network. When provier creates a virtual machine, it will use the public key of the purchasing user and inject it into the virtual machine. The password will be changed to a random password to ensure that no one can access it, and disable remote login by password. This protects the login security of the virtual machine.
+
+  - Host network security:
+
+    Mainly facing `Escape Exploit` . The 'Escape Exploit' problem is a persistent network security attack and needs to be solved by updating the corresponding software in time. We will iterate on the provider virtualization technology in the future.
 
 Project Technology Stacks
 
@@ -60,11 +85,11 @@ The current project is in the primary stage of validation of the entire business
 
 - Resource Registration
 
-![](https://gitee.com/ltyuanmu/drawing-bed/raw/master/202201141534648.jpg)
+  ![](https://gitee.com/ltyuanmu/drawing-bed/raw/master/202201141534648.jpg)
 
 - Resource Purchase
 
-​	![](https://gitee.com/ltyuanmu/drawing-bed/raw/master/202201141520784.jpg)
+  ![](https://gitee.com/ltyuanmu/drawing-bed/raw/master/202201141520784.jpg)
 
 - Resource Usage
 
