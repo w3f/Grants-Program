@@ -3,65 +3,65 @@
 - **Project Name:** Spacewalk: a Stellar bridge
 - **Team Name:** Pendulum
 - **Payment Address:** [0x41826C59a853969DA6B819130E1c32A9fd7c94ba](https://etherscan.io/address/0x41826C59a853969DA6B819130E1c32A9fd7c94ba#tokentxns) (DAI)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
-
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
 ### Overview
 
-Spacewalk is a bridge between Substrate-based parachains and [Stellar](https://stellar.org) which enables asset transfers to and from Stellar. This grant application is for developing the *Spacewalk protocol and pallet*. The Spacewalk bridge is built by the team behind the [Pendulum](http://pendulumchain.org) network (an upcoming parachain that connects fiat tokens from across multiple blockchain ecosystems).
+Spacewalk is a bridge between Substrate-based parachains and [Stellar](https://stellar.org) which enables asset transfers to and from Stellar. This grant application is for developing the _Spacewalk protocol and pallet_. The Spacewalk bridge is built by the team behind the [Pendulum](http://pendulumchain.org) network (an upcoming parachain that connects fiat tokens from across multiple blockchain ecosystems).
 
 ### Project Details
 
 Spacewalk bridge is developed to be a decentralized and trustless bridge to Stellar. This bridge enables two main activities:
 
-- **Deposit**: bridge any Stellar asset to Substrate-based chains. The tokens of the source asset are transferred to some dedicated **bridge account** in Stellar where they are locked. The bridge then mints wrapped tokens in the target chain and transfers them to the recipient account.
-- **Withdrawal**: bridge wrapped tokens in Substrate-based chains to Stellar. First, the user instructs the bridge to burn wrapped tokens in the Substrate-based chain. Afterwards, the bridge unlocks tokens held in the bridge account in Stellar and transfers them to some target account.
+- **Deposit**: bridge any Stellar asset to Substrate-based chains. The tokens of the source asset are transferred to some dedicated **vault** in Stellar where they are locked. The bridge then mints wrapped tokens in the target chain and transfers them to the recipient account.
+- **Withdrawal**: bridge wrapped tokens in Substrate-based chains to Stellar. First, the user instructs the bridge to burn wrapped tokens in the Substrate-based chain. Afterwards, an appropriate vault unlocks tokens and transfers them to some target account.
 
-Stellar is not smart contract capable – therefore we follow the recommendation laid out in the [Polkadot documentation](https://wiki.polkadot.network/docs/learn-bridges#via-higher-order-protocols) and base our bridge design on XCLAIM. In XCLAIM, the bridge account is called a **vault**. XCLAIM is based on the following four core features:
+Stellar is not smart contract capable – therefore we follow the recommendation laid out in the [Polkadot documentation](https://wiki.polkadot.network/docs/learn-bridges#via-higher-order-protocols) and base our bridge design on XCLAIM, which is based on the following four core features:
 
 - Implement a chain relay for Stellar in the bridge pallet
 - Employ collateralization in order to ensure that the vault exhibits good behavior
 - Ensure that the economic value of the collateral exceeds the value of the vault
 - Enable a decentralized network of vaults
 
-Our bridge differs from XCLAIM in some details as follows:
+XCLAIM has been implemented and further improved by [Interlay](https://interlay.io/) for the open source Bitcoin bridge _interBTC_. Spacewalk is based on the interBTC implementation. It differs from interBTC as follows:
 
-- Implementing a full chain relay for Stellar is out of scope of this web3 grant proposal as this requires an update to the Stellar consensus protocol. Instead the Spacewalk protocol assumes that a light Stellar node is co-located for every node of the Substrate-based chain and uses the Stellar nodes as an oracle.
-- We will employ a single vault instead of a network of vaults because according to Section V.E. of [Xclaim: Trustless, interoperable, cryptocurrency-backed assets](https://eprint.iacr.org/2018/643.pdf), the latter version leads to non-fungible wrapped tokens which is not a desirable condition.
+- Currently Stellar does not use Merkle trees inside its blocks. Therefore, there is no efficient way to prove that a transaction is included in a block given only the block header – a prover would require to complete the complete set of transactions instead of a Merkle path.
+- Stellar does not employ Nakamoto consensus but a custom consensus algorithm called [Stellar Consensus Protocol](https://www.stellar.org/papers/stellar-consensus-protocol). For that reason it is not possible to infer from sequences of block headers alone which sequence is valid – for Nakamoto consensus this is simply the sequence with the highest amount of work.
+- Stellar supports custom assets: every account holder can create new assets and mint their own tokens. Spacewalk supports to bridge any Stellar asset to the Substrate chain. This implies that the Spacewalk pallet can dynamically create and mint new assets that are not known beforehand.
+
+The first two differences imply that there is no efficient way to implement an SPV client and a chain relay for Stellar. Spacewalk will address this by replacing the chain relay with an oracle for Stellar.
 
 **Architecture**
 
-![Stellar Bridge Web3 Grant(3)](https://user-images.githubusercontent.com/52105313/146759286-01810328-a383-4306-9ad2-61515913b7fb.png)
+![Stellar Bridge Web3 Grant(5)](https://user-images.githubusercontent.com/15174476/150945211-31393eef-9e86-425d-921a-a48e3fd7af70.png)
 
 The architecture of the bridge consists of the following components:
 
-- **Bridge accounts**: this is a set of escrow accounts used to lock assets. They are completely and only controlled by the bridge nodes. The Spacewalk bridge potentially requires multiple bridge accounts instead of a single bridge accounts because in Stellar a single account is limited to hold up to 1000 distinct assets. Every bridge account is associated with a maximum of 1000 distinct Stellar assets and will be used whenever one of its associated assets is used in a deposit or withdrawal operation. Stellar users initiate a deposit by sending tokens to the appropriate bridge account, which they request from the bridge pallet prior to the deposit. Likewise bridge nodes will instruct the bridge accounts to unlock and send tokens back the users during a withdrawal.
-- **Bridge Pallet**: this is the main component of the Spacewalk bridge that implements all logic on the side of the Substrate-based chain. It is particularly responsible for minting tokens during deposits and burning tokens during withdrawals. The storage of the bridge pallet maintains the complete state that is required for the bridge to work correctly. This state contains (among others): the account ids of the Stellar bridge accounts, the association of bridge accounts to Stellar assets, book keeping information about the state of the Stellar network and assets locked in the bridge accounts. It also maintains the collateral of the bridge nodes and slashes it in case one of the bridge nodes misbehaves.
-- **Bridge Nodes**: these are privately owned nodes that watch changes in the storage of the bridge and create, sign and submit Stellar transactions that a) unlock tokens during a withdrawal and b) maintain the set of bridge accounts and its signers. Each bridge nodes contains some secret value. Together these secrets can be used to sign transactions for the bridge accounts. The bridge nodes use a t-out-of-n threshold signing scheme for the bridge accounts. For n ≤ 20 this is achieved through multisignature accounts that are directly supported through the Stellar protocol and for n > 20 this is achieved through key aggregation for Schnorr signatures (see [Maxwell, Gregory, et al. "Simple schnorr multi-signatures with applications to bitcoin"](https://eprint.iacr.org/2018/068.pdf)). Every bridge node needs to lock a certain amount of PEN tokens as a collateral in the bridge pallet. These tokens are slashed in case the bridge node misbehaves.
-- **Stellar Oracle**: is a system that provides information about the state of the Stellar network to the bridge pallet. In XCLAIM this is implemented through a chain relay in the bridge pallet. However, we will aim for a solution where every node of the Substrate-based chain is co-located with a Stellar validator node, which it uses as an oracle.
+- **Vaults**: this is a set of escrow accounts used to lock assets in Stellar. Their behavior is defined in XCLAIM and interBTC. In Spacewalk they have an additional property: each vault has an allow list of assets that it can lock and support for bridging operations between Stellar and the Substrate chain. This allow list is implemented through [trustlines](https://developers.stellar.org/docs/issuing-assets/anatomy-of-an-asset/#trustlines) of the Stellar account. There can be at most 1000 supported assets per vault due to limitations in Stellar. Stellar users initiate a deposit by sending tokens to an appropriate vault, which they request from the bridge pallet prior to the deposit. Likewise vaults will unlock and send tokens back to Stellar accounts during a withdrawal. Every vault needs to lock a certain amount of DOT or KSM (or related) tokens as collateral with the bridge pallet. These tokens are slashed in case the vault misbehaves.
+- **Bridge Pallet**: this is the main component of the Spacewalk bridge that implements all logic on the side of the Substrate-based chain. Its behavior is based on interBTC. It is particularly responsible for minting tokens during deposits and burning tokens during withdrawals. It is able to support any Stellar asset by employing the [Tokens](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/tokens) and [Currrencies](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/currencies) pallets of the Substrate Open Runtime Module Library. The storage of the bridge pallet maintains the complete state that is required for the bridge to work correctly. This state contains (among others): the account ids of the vaults, the asset allow lists of each vault and book keeping information about the state of the Stellar network.
+- **Stellar Oracle**: is a system that provides information about the state of the Stellar network to the bridge pallet. In interBTC this is implemented through a chain relay in the bridge pallet. However, we will aim for a solution where every node of the Substrate-based chain is co-located with a Stellar validator node, which it uses as an oracle.
 
 **Out of scope**
 
 The following aspects are out of scope of the current proposal and subject to future applications:
 
 - Stellar protocol updates that are required to implement a chain relay/light client/simplified payment verification for Stellar as a Substrate pallet
-- Stellar protocol updates that allow to use key aggregation for ed25519 signature schemes
 
 ### Ecosystem Fit
 
-The Spacewalk bridge is the first bridge between the Stellar network and the Polkadot / Kusama ecosystem, which opens up a flow of stable tokens from the Stellar network into the Polkadot / Kusama ecosystem and, simultaneously, allow any Substrate-based blockchains to implement a direct Stellar bridge.
+The Spacewalk bridge is the first bridge between the Stellar network and the Polkadot/Kusama ecosystem, which opens up a flow of stable tokens from the Stellar network into the Polkadot/Kusama ecosystem and, simultaneously, allow any Substrate-based blockchains to implement a direct Stellar bridge.
 
 As part of the Pendulum goal of bringing as much fiat-based token liquidity to the parachain ecosystems, Spacewalk plays a central role. Furthermore, the entire community can benefit from this bridge by innovating on the open source code.
 
-Currently, we are not aware of any projects in the Substrate / Polkadot / Kusama ecosystem that are building a bridge to the Stellar network, but similar bridges are being built for Ethereum layer 2 networks, such as the [Newscrypto](https://bridge.newscrypto.io/) bridge between Polygon and Stellar.
+Currently, we are not aware of any projects in the Substrate/Polkadot/Kusama ecosystem that are building a bridge to the Stellar network, but similar bridges are being built for Ethereum layer 2 networks, such as the [Newscrypto](https://bridge.newscrypto.io/) bridge between Polygon and Stellar.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Meinhard Benn, CEO
+- Meinhard Benn, Chairman
 - Dr. Torsten Stüber, CTO
 - Gonza Montiel, Full stack engineer
 
@@ -88,7 +88,7 @@ Dr. Torsten Stüber
 
 - Ph.D. in theoretical Computer Science
 - 7 year academic researcher and lecturer in
-    - formal languages, automata theory, complexity theory, computational logic, natural language processing, machine learning, cryptography
+  - formal languages, automata theory, complexity theory, computational logic, natural language processing, machine learning, cryptography
 - author of a [WASM cryptography library](https://github.com/TorstenStueber/TweetNacl-WebAssembly)
 
 Eng. Gonzalo Montiel
@@ -101,6 +101,7 @@ Eng. Gonzalo Montiel
 ### Team Code Repos
 
 - [https://github.com/pendulum-chain](https://github.com/pendulum-chain)
+- [https://github.com/pendulum-chain/pendulum](https://github.com/pendulum-chain/pendulum)
 - [https://github.com/pendulum-chain/pendulum-prototype](https://github.com/pendulum-chain/pendulum-prototype)
 
 Members:
@@ -116,10 +117,9 @@ Members:
 
 ## Development Status :open_book:
 
-A single-node prototype of the bridge has been developed. See links:
+A single-node prototype of the bridge has been developed. See the link:
 
 - [Prototype bridge GitHub repo](https://github.com/pendulum-chain/pendulum-prototype)
-- [Prototype bridge UI](https://playground.pendulumchain.org/bridge)
 
 A detailed bridge concept is currently being researched (described in this grant application)
 
@@ -127,96 +127,55 @@ A detailed bridge concept is currently being researched (described in this grant
 
 ### Overview
 
-- **Total Estimated Duration:** 6 Months
-- **Full-Time Equivalent (FTE):** 1
-- **Total Costs:** 48,000 USD
+- **Total Estimated Duration:** 3 Months
+- **Full-Time Equivalent (FTE):** 0.5
+- **Total Costs:** 9,000 USD
 
-### Milestone 1 – Protocol for single bridge account and bridge node
-
-- **Estimated duration:** 1 month
-- **FTE:** 1
-- **Costs:** 8,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can employ the bridge pallet and the Spacewalk protocol to build a working bridge. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an article that explains the phase 1 Spacewalk protocol and will give an overview of the upcoming phases of the protocol.
-| 1. | Phase 1 bridge protocol specification | We will define phase 1 of the Spacewalk protocol. In this phase we take the assumption that there is (a) only one bridge node (b) one bridge account and (c) one node of the Substrate chain. |  
-| 1a. | Add trustlines | Protocol specification of how the bridge node adds trustlines for new Stellar assets to the bridge account. |  
-| 2a. | Off-chain worker to watch deposits | The off-chain worker of the bridge pallet regularly queries a Stellar node to detect incoming deposits. |  
-| 2b. | Prepare deposit | An extrinsic of the bridge pallet to register a deposit and to associate a target address in the Substrate chain. |  
-| 2c. | Mint tokens | The pallet will mint wrapped tokens and send them to a target account whenever there is an incoming deposit. |  
-| 2d. | Withdraw | An extrinsic of the bridge pallet to initiate a withdrawal. It will burn tokens in the Substrate chain. |  
-
-
-### Milestone 2 – Fixed set of multiple bridge nodes
+### Milestone 1 – Multi asset support
 
 - **Estimated duration:** 1 month
-- **FTE:** 1
-- **Costs:** 8,000 USD
+- **FTE:** 0.5
+- **Costs:** 3,000 USD
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can employ the bridge pallet and the Spacewalk protocol to build a working bridge. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1   | Phase 2 bridge protocol specification | We will define phase 2 of the Spacewalk protocol. In this phase we take the assumption that there are (a) multiple bridge nodes – but the set of nodes is fixed (b) one bridge account and (c) one node of the Substrate chain. |  
-| 1.1 | Bridge account cosigning | Protocol specification of how the bridge nodes cosign the bridge account. Uses Stellar t-out-of-n multi-signature accounts. |  
- 
+| Number | Deliverable              | Specification                                                                                                                                                                          |
+| -----: | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License                  | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                   |
+|    0b. | Documentation            | We will provide both inline documentation of the code and a basic tutorial that explains how a user can employ the bridge pallet and the Spacewalk protocol to build a working bridge. |
+|    0c. | Testing Guide            | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                      |
+|    0d. | Article                  | We will publish an article that explains how we extend interBTC to support multiple Stellar assets and that provides an overview of the upcoming milestones of the protocol.           |
+|     1. | Protocol specification   | The protocol will describe how vaults need to behave in order to support multiple Stellar asset.                                                                                       |
+|    2a. | Multi asset deposit      | Add support for a deposit operation involving any possible Stellar asset.                                                                                                              |
+|    2b. | Multi asset withdrawal   | Add support for a withdrawal operations involving any possible Stellar asset.                                                                                                          |
+|    2c. | Stellar asset allow list | 1) Allow vaults to register the set of allow listed Stellar assets with the Spacewalk pallet. 2) Allow users to query vaults and their supported assets from the Spacewalk pallet.     |
 
-### Milestone 3 – Advanced Stellar oracle
-
-- **Estimated duration:** 1 month
-- **FTE:** 1
-- **Costs:** 8,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can employ the bridge pallet and the Spacewalk protocol to build a working bridge. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Phase 3 bridge protocol specification | We will define phase 3 of the Spacewalk protocol. In this phase we take the assumption that there are (a) multiple bridge nodes – but the set of nodes is fixed (b) one bridge account and (c) multiple nodes of the Substrate chain – but this set is fixed. |  
-| 2. | Stellar oracle with consensus | The off-chain worker of the bridge pallet regularly queries a Stellar node to detect incoming deposits. The bridge nodes will find consensus about the state of the Stellar through voting. |  
-
-
-### Milestone 4 – Dynamic set of bridge nodes
-
-- **Estimated duration:** 2 month
-- **FTE:** 2
-- **Costs:** 16,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can employ the bridge pallet and the Spacewalk protocol to build a working bridge. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Phase 4 bridge protocol specification | We will define phase 4 of the Spacewalk protocol. In this phase we take the assumption that there is (a) dynamic set of multiple bridge nodes – but limited to 20 nodes (b) one bridge account and (c) multiple nodes of the Substrate chain – but this set is fixed. Bridge nodes need to stake collateral to disincentivize misbehaviour. |  
-| 1.1 | Change cosigners of bridge account | Protocol specification of how the bridge nodes dynamically redefine the cosigners of the bridge account. |  
-| 2a. | Collateral staking | Pallet function that allows bridge nodes to stake collateral. |  
-| 2b. | Collateral slashing | Detect misbehaviour of bridge nodes and slash their collateral. |  
-| 2c. | Add bridge nodes | Pallet function to add a new bridge node to the set of registered bridge nodes. |  
-| 2d. | Remove bridge node | Pallet function to remove a bridge node from the set of registered bridge nodes. |  
-
-
-### Milestone 5 – Dynamic set of bridge accounts
+### Milestone 2 – Multi asset collateral management
 
 - **Estimated duration:** 1 month
-- **FTE:** 1
-- **Costs:** 8,000 USD
+- **FTE:** 0.5
+- **Costs:** 3,000 USD
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can employ the bridge pallet and the Spacewalk protocol to build a working bridge. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an article that explains the phase Spacewalk protocol and pallet that we built as part of the grant.
-| 1. | Phase 5 bridge protocol specification | We will define phase 5 of the Spacewalk protocol. In this phase we take the assumption that there is (a) dynamic set of multiple bridge nodes – but limited to 20 nodes (b) dynamic set of bridge accounts and (c) multiple nodes of the Substrate chain – but this set is fixed. Bridge nodes need to stake collateral to disincentivize misbehaviour. |  
-| 1.1 | Add new bridge accounts | Protocol specification of how the bridge nodes create a new bridge account and set up appropriate cosigners. |  
-| 2a. | Query bridge accounts | Pallet function to query the set of bridge accounts and Stellar assets associated with each bridge accounts. |  
-| 2b. | Set up new bridge account | Pallet function(s) to create a new bridge account if the current set of bridge account already reached their trustline limits. |  
+| Number | Deliverable              | Specification                                                                                                                                                                          |
+| -----: | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License                  | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                   |
+|    0b. | Documentation            | We will provide both inline documentation of the code and a basic tutorial that explains how a user can employ the bridge pallet and the Spacewalk protocol to build a working bridge. |
+|    0c. | Testing Guide            | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                      |
+|     1. | Protocol specification   | The protocol will describe how vaults need to behave in case of vault liquidations involving multiple Stellar assets.                                                                  |
+|     2. | Monitoring of collatoral | The bridge pallet monitors whether vaults need to be liquidated. This requires to take all locked tokens for every supported token of a specific vault into account.                   |
 
+### Milestone 3 – Stellar oracle
+
+- **Estimated duration:** 1 month
+- **FTE:** 0.5
+- **Costs:** 3,000 USD
+
+| Number | Deliverable                   | Specification                                                                                                                                                                          |
+| -----: | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License                       | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                   |
+|    0b. | Documentation                 | We will provide both inline documentation of the code and a basic tutorial that explains how a user can employ the bridge pallet and the Spacewalk protocol to build a working bridge. |
+|    0c. | Testing Guide                 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                      |
+|    0d. | Article                       | We will publish an article that explains the completed Spacewalk protocol and pallet that we built as part of the grant.                                                               |
+|     1. | Protocol specification        | The protocol will describe how the bridge pallet interacts with the oracle.                                                                                                            |
+|     2. | Stellar oracle with consensus | The bridge pallet queries a trusted Stellar node to inquire about incoming deposits. The bridge nodes will find consensus about the state of Stellar through voting.                   |
 
 ## Future Plans
 
