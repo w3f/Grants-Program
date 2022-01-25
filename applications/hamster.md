@@ -223,6 +223,7 @@ The following is a list of the features that have been implemented:
 | 2. | Hamster Provider | We will create a a resource provider server that will have **Initialize configuration**,**Resource details**,**Account information** and **Configuration information** module. |
 | 3. | Hamster Provider: web app | We will create a web app integrated in the Hamster Provider, to let users easily interact with our Hamster Provider function module. |
 | 4. | Hamster chain | Module provider and resource-order can be integrated into a substrate node, to enable users to share computing resources , receive rewards, etc. |
+| 5. | Whitepaper | Preparation of project white papers |
 
 ### Milestone 2 Example — Implement Hamster Gateway Modules
 
@@ -241,7 +242,7 @@ The following is a list of the features that have been implemented:
 | 3. | Hamster Gateway: web app | We will create a web app integrated in the Hamster Gateway, to let users easily interact with our Hamster Gateway function module. |
 | 4. | Hamster chain | Add a gateway module in the Hamster chain, to enable users to share gateway resources with public IP , receive rewards, etc. |
 
-### Milestone 3 Example — Implement Hamster Evil punishment Modules
+### Milestone 3 Example — Implement Hamster Anti-malicious attacks Modules
 
 - **Estimated duration:** 1 month
 - **FTE:**  4
