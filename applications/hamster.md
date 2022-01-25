@@ -26,7 +26,7 @@ Hamster is composed of Hamster nodes, Hamster resource providers, Hamster client
 - Hamster Node: is a custom node built on Substrate 3.0.
   - pallet_provider: performs resource provider registration and provider resource information storage, and provides a computational marketplace
   - pallet_resource-order: performs resource lease order functions and lease agreement execution
-  - pallet_gateway: performs gateway registration and gateway information related functions
+  - pallet_gateway: The gateway mainly has the following functions: gateway registration, gateway heartbeat detection, gateway status reset, gateway drop penalty, and receive rewards. The main role is to add the gateway as an important player in the shared computing platform
 - Hamster Gateway: p2p gateway with public IP, used to link information between resource provider and resource user, built with libp2p component, is the cornerstone of the leased resource availability, can register itself to Hamster Node
 - Hamster Provider: can provide compute resources and register them with Hamster Node. Compute resources are provided using both vm virtual machine technology and docker technology. Currently vm virtual machine technology is used to better protect user privacy
 - Hamster Client: After purchasing in the front end marketplace, users can view their purchased compute resources through the client and link to them.
@@ -222,7 +222,7 @@ The following is a list of the features that have been implemented:
 | 1. | Hamster Client | We will create a desktop client that will have **Market**,**My order** and **My resource** module. |
 | 2. | Hamster Provider | We will create a a resource provider server that will have **Initialize configuration**,**Resource details**,**Account information** and **Configuration information** module. |
 | 3. | Hamster Provider: web app | We will create a web app integrated in the Hamster Provider, to let users easily interact with our Hamster Provider function module. |
-| 4. | Hamster chain | Module provider and resource-order can be integrated into a substrate node, to enable users to share computing resources , receive rewards, etc. |
+| 4. | Hamster chain | pallet_provider, pallet_resource-order modifications and optimizations due to the need to optimize and adapt already developed pallets when adding features for customers. As code delivery of the underlying framework, there are two integrated pallets |
 | 5. | Whitepaper | Preparation of project white papers |
 
 ### Milestone 2 Example — Implement Hamster Gateway Modules
