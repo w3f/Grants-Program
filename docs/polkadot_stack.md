@@ -108,6 +108,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | DeFi | [Vera](https://github.com/veradefi/defi), [Nsure Insurance](https://github.com/nsure-tech/dot-contract), [Everlasting Cash](https://github.com/CycanTech/ELC), [Coinversation](https://github.com/Coinversation/coinpro), [zenlink-dex-contract](https://github.com/zenlinkpro/zenlink-dex-contract), [AlgoCash](https://github.com/ReserveLabs/AlgoCash/blob/main/LICENSE) | New seigniorage-style stable coins
 | Gaming | [NewOmega](https://github.com/WiktorStarczewski/newomega.polkadot/blob/master/newomega_delegator/newomega/newomega.rs) | |
 | DAO | [subDAO](https://github.com/SubDAO-Network/subDAO-contracts), [RainbowDAO](https://github.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-milestone_1) | |
+| Nocode Platforms | [Bubble.io Nocode plugin](https://bubble.io/plugin/polkadotjs-1639402639641x977692461648052200) | |
 | Other | [Candle Auctions](https://github.com/agryaznov/candle-auction-ink), [polkasign-contract](https://github.com/SubDAO-Network/polkasign-contract) | |
 
 
@@ -134,7 +135,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | File Storage, Cloud | [DatDot](https://github.com/playproject-io/datdot), [Crust Network](https://github.com/crustio), [offchain::ipfs](https://rs-ipfs.github.io/offchain-ipfs-manual/), [Canyon Network](https://github.com/canyon-network/canyon), [CESS](https://github.com/Cumulus2021/cess), [CESS Proving Subsystem](https://github.com/CESSProject/cess-proving-system), [Iris](https://github.com/iridium-labs/iris), [fmd-cess](https://github.com/CESSProject/fmd-cess), [IPFS Frame V3](https://github.com/DanHenton/pocket-substrate/tree/ipfs-ocw)
 | Name Service| [Substrate Names](https://github.com/xaya/substrate-names), [ENS on Substrate](https://github.com/hskang9/substrate-name-service)
 | Gaming | [Bit.country](https://github.com/bit-country/Bit-Country-Blockchain), [SubGame](https://github.com/SubGame-Network/subgame-network), [subzero](https://github.com/playzero/subzero) | 
-| Computation |
+| Computation | [DeepBrain Chain](https://github.com/DeepBrainChain/DeepBrainChain-MainChain) |
 | Enable specific use-cases | [Robonomics](https://github.com/airalab/substrate-node-robonomics)
 | NFT | [ternoa](https://github.com/capsule-corp-ternoa/chain), [FRAME Pallet: NFTs for Substrate](https://github.com/danforbes/pallet-nft), [NFT Parachain by usetech](https://github.com/w3f-community/nft_parachain), [DNFT](https://github.com/DNFT-Team/dnft-substrate-node/tree/master/pallets)
 | Randomness | [DKG and Randomness Beacon](https://github.com/Cardinal-Cryptography/substrate/tree/randomness-beacon)
