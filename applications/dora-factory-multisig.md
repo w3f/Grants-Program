@@ -18,7 +18,7 @@ The MultiSig Substrate product functions include the following:
 - Switch wallet, manage multiple multisig account at the same time
 
 There've been a multisig pallet developed by parity. The pallet (https://github.com/paritytech/substrate/tree/master/frame/multisig) is a basic building block for us to build a more complete multisig MVP to meet actual demands of DAOs. 
-We'll implement a frontend MVP which interacts with the pallet to make the multisig work for end users.
+We have finished the desgin based on the functions of current pallet, you view it [here](https://www.figma.com/file/NBavL709zClLkDMAqP1maR/Substrate-Multisig-Frontend-MVP?node-id=225%3A1575).We'll implement a frontend MVP which interacts with the pallet to make the multisig work for end users.
 
 ### Ecosystem Fit 
 
@@ -47,28 +47,14 @@ Although structures vary in different organizations, funding management is a gen
 ## Development Roadmap
 
 ### Overview
-* **Total Estimated Duration:** 2 months
+* **Total Estimated Duration:** 1 months
 * **Full-time equivalent (FTE):**  2
 * **Total Costs:** 15000 DAI
 
-### Milestone 1 -- The multisig MVP mock up
+### Milestone 1  --The code implementation Multisig Frontend MVP
 * **Estimated Duration:** 4 weeks
 * **FTE:**  1
-* **Costs:**  5000 DAI
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT |
-| 0b. | Desgin Source | The delivery will be posted on [figma](https://www.figma.com/login).We'll share a public access link for it | 
-| 0c. | Article | We'll publish an aritcle which explains our desgin principle and whole flow for this MVP | 
-| 1. | Multisig Desgin | An open-source prototype of a Multisig product. The desgin will focus on implementing the user interactions including 1) Create wallet by organization 2) Multi assets management 3) Initiate a transaction in a wallet, sign a transaction, confirm a transaction 4) Swtich wallets, switch to another different mulitsig wallet | 
-| 2. | Evaluate | View the demonstration and find out some missing parts or enchancement | 
-
-
-### Milestone 2  --The code implementation Multisig Frontend MVP
-* **Estimated Duration:** 4 weeks
-* **FTE:**  1
-* **Costs:** 10000 DAI
+* **Costs:** 15000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
