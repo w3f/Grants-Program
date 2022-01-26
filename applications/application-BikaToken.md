@@ -163,11 +163,11 @@ Miliston has tests but can't provide shareable encoding due to being a tester.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. Testing will be carried out as long as bugs and vulnerabilities have been resolved, all will be explained how to test and others through the official Bika Token block. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). all reviews of the project and associated work or testing. |
-| 1. | Substrate module: X | We will create a Substrate module that will... we will create Dapps and decentralized applications for the development of new innovations in polkadot Blockchain Dapps. |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... for centralized application development using react.js, node.js, typescript, database for linking data, and substrate for coding. |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... make test for each achievement to know the project developer. |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... modules will interact with each other to complete and create a unique ecosystem and for project development with software or tools that contain modules for development. |  
-
+| 1. | DEX developers and decentralized applications | We will create a decentralized application and DEX for the development of new innovations in Polkadot and BSC Dapps, this DEX aims to exchange Polkadot and BSC tokens, to Launchpad Polkadot tokens, and grow the latest innovations such as novel, portfolio, trading and selling nft or others. |  
+| 2. | Software usage | Creation and software for decentralized application development using react.js, node.js, typescript, databases for connecting data, and react,js as a framework for coding. With Blockchain technology to record transactions and store. |
+| 3. | Running test stage module | Create a step module to test each achievement to find out the project developer, project development or each achievement that will be implemented and published on the Bika Project block or forum. |
+| 4. | Create a working blockchain polkadot for Dapps | Polkadot here acts as a blockchain and for the development of Launchpad (DOT) tokens and provides the exchange of DOT and BSC tokens, polkadot will work for the growth of the Bika Project Ecosystem, building centralized applications and NFT on polkadot. Create resources for development. |
+| 5. | Build a Polkadot community | Develop and improve the polka-dot community with Bika to provide access to the latest innovations in Bika. Bika will work and provide the best experience for Polkadot users or community. |
 
 ### Milestone 2 Example — Additional features
 
