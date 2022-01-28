@@ -17,7 +17,7 @@
 
 Tao Framework is designed to overcome the ultimate obstacle faced by blockchain technology which is scalability, especially running smart contact in the public blockchain. The main issue is the unstructured P2P network underline which causes the pubic network to impose hefty fees and per-block resource limits to avoid transaction gridlock. Polkadot as a popular cross-chaining solution, creates a network of interoperable blockchains to improve the transaction throughput but doesn't directly address the storage and computing capacity for running the smart contracts.  
 
- Our approach is to deploy the decentralized smart contracts in a centralized but scalable cloud environment, so the framework is scalable on computing power, data storage, and transaction throughputs.
+ Our approach is to deploy the decentralized smart contracts in a centralized but scalable cloud environment, so the framework is scalable on computing power, data storage, and transaction throughputs.To encourage cooperation between the Nodes in the P2P network instead of competing with each other like in other public blockchains (e.g., Nakamoto consensus). Our Network nodes' size is fixed, the execution is processed synchronously, openly, and transparent, the payment model is separated from the consensus; thus, the nodes have no incentive to cheat. Moreover, each Node benefits from the fast and successful execution of transactions by all other nodes in the system.
 
 The framework will utilize the existing toolchain in Polkadot which is MoonBeam to build a decentralized environment for executing smart contracts on a fixed set of cloud notes synchronized by the proprietary consensus protocol POC ( Proof of Correctness). POC will be empowered by a smart contract deployed into the Eherium public blockchain network with an independent auditing software running to monitor and verify the workflow.
 
@@ -25,7 +25,7 @@ The framework will utilize the existing toolchain in Polkadot which is MoonBeam 
 
 #### Architecture
 
-![image] <https://docs.google.com/document/d/1OZGnH8jOXyX-OhbBdvvAJbO9EfcA8E-Fig2CeXx86xo/edit?usp=sharing>
+![image] <https://docs.google.com/document/d/15H0rkXj5aa8xvFHNL-7jxbWnsXSX9d8PfVapbE8kyag/edit?usp=sharing>
 We will use the MoonBean Unified Accounts to deploy the smart contract into the Ethereum public network.
 
 #### Code Execution
@@ -42,7 +42,7 @@ All data is openly accessible and managed via custom models implemented in the d
 
 #### POC (proof of Correctness) Consensus
 
-![image] <https://docs.google.com/document/d/1nqyskjdRKbw9p8EnkmX3J0muZd2x7u654EYRkri2t0E/edit?usp=sharing>
+![image] <https://docs.google.com/document/d/1PSReANu_j4J_AsOo3Zgj4rqp9_pupvV5EjgNkAJr6PQ/edit?usp=sharing>
 
 The core idea of POC consensus is to periodically report the hashes of data snapshots to a dedicated smart contract deployed on an Etherurem public blockchain. Once the report is submitted, it cannot be altered. The node cannot be trusted if the report does not match the publicly available and independently verifiable snapshot. The smart contract is used to check the liveness and integrity of the deployment. POC consensus uses correctness check instead of voting. All incoming transactions are recorded. There is only one correct way to execute them so no two conflicting transactions in different nodes. All transactions are executed immediately, during the open session of the Node, with a pre-defined decision deadline so that no fork will be created in TaoCoDAO blockchain.
 
@@ -55,7 +55,7 @@ As a result, each transaction entails an identical state transition of each node
 **TaoFramework Auditors**:
 The Framework is an open-data system, so all the data is openly available. Auditors run the software to oversee the integrity of the network deployment. It employs a community auditing model commonly used in public blockchains. Nodes in the cloud can perform cross-audit. The auditing process requires only a server and the auditing software to do the snapshot succession audit, which verifies all transactions process and data integrity audit that verifies the snapshot footprints and makes sure the footprints in reports match the actual data in Nodes.
 
-[img] <https://docs.google.com/document/d/1oqSBPgNRoJZSkKLBN2ZjfLyvI7g8kJ-TpVxCV3jSC3s/edit?usp=sharing>
+[img] <https://docs.google.com/document/d/1fpD6B04xI-yF0yEj9qixv2VcskuuPO_6xl64KwpNRqM/edit?usp=sharing>
 
 **Scalable Cloud**: The cloud is a predefined set of TaoCoDAO nodes. The number of nodes should be sufficient to guarantee the system's availability, but it should not be too large (less than 10) to avoid performance degradation. Unlike peers in blockchain, multiple nodes in TaoCoDAO are used to achieve accessibility and fault tolerance rather than the consensus. Since clouds allow vertical scalability, which adds resources to existing entities, a large number of nodes (horizontal scalability) is not needed for performance improvement. Therefore, the size of nodes and the set of identities of the participating nodes are the system parameters set before the deployment.
 
@@ -80,7 +80,6 @@ Every data snapshot denoted Si , has serial number i, which is called the report
 
 #### TaoCoDAO node Architecture
 
-[img] <https://docs.google.com/document/d/1MbwbvpBS0wnmpcl1SOR0zWINTgo7j3Rhq1crv90cX5c/edit?usp=sharing>
 
 **Node Core**:  The Core is responsible for networking, cryptography, synchronization, protocol, process and thread management, signature and authenticity verification, transaction parsing, data encoding and decoding, and communication with the smart contract.
 
@@ -124,7 +123,7 @@ custom Tcontract deployer serves as an interface for developers to add their cus
 
 **Operation Lifecycle**:
 
-[img] <https://docs.google.com/document/d/1HdeexJJmYOYnjgKj-gTIaA-ZmkgrhBrZgRRKaoI0enw/edit?usp=sharing>
+[img] <https://docs.google.com/document/d/1OGstvHvzH3Fd9cKFF6NMiBAR8EJmShlpBuqz8-lD9Rk/edit?usp=sharing>
 
  the lifecycle of TaoCoDAO involves an oscillation of two stages:  main stage and report stage.
 
@@ -134,7 +133,7 @@ custom Tcontract deployer serves as an interface for developers to add their cus
 
  **Transaction workflow**:
 
- [img] <https://docs.google.com/document/d/1ZQJpcSeAz6Z_LOnO7OKUPk4Vh22m8gGXNTOQxiZEzPk/edit?usp=sharing>
+ [img] <https://docs.google.com/document/d/1_EM1j5RK0CEYNZ6F66TM-X14fe7bZNaCiizXNDr5Bek/edit?usp=sharing>
 
  ❶: Client creates a transaction and commits it to the TaoCoDAO node with which they have an access subscription;
  ❷: the service node verifies the authenticity of the transaction and forwards it to all the other nodes in the cloud;
@@ -201,13 +200,13 @@ This project has been developed for more than a year. We have partnered with Bei
 
 - **Total Estimated Duration:** 1.5 months
 - **Full-Time Equivalent (FTE):**  2 FTE)
-- **Total Costs:** 1.7 BTC
+- **Total Costs:** $49,850 USD
 
 ### Milestone 1 Implement core functionality
 
 - **Estimated duration:**1 month
 - **FTE:**  2
-- **Costs:** 1 BTC
+- **Costs:** $38,650 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -215,17 +214,25 @@ This project has been developed for more than a year. We have partnered with Bei
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a developer can create nodes and run the nodes in the test network |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains our advertising workflow as well as technical details.)
+| 0e. | Article | We will publish an **article**/workshop that explains our advertising workflow as well as technical details.|
 | 1. | Substrate module: Node Core| We will create a Substrate module that works as a network node on the cloud, which is sufficient for participating in POC (proof of correctness) protocol. The core is responsible for networking, cryptography, synchronization, protocol, process and thread management, signature and authenticity verification, transaction parsing, data encoding and decoding, and communication with the smart contract  |  
 | 2. | Smart contract | We will develop a smart contract and deploy it through MooBeam into the Etherum public blockchain network |  
 | 3. | Substrate module: Auditor | We will create an auditing process to do the snapshot succession audit, which verifies all transactions process and data integrity audit that verifies the snapshot footprints and makes sure the footprints in reports match the actual data in Nodes. |  
 | 4. | Uniform RESTful Interface| We will develop a uniform RESTful interface to do the client-node, node-node, and auditor-node communication |  
 
 ## Milestone 2 —System integration and running the workflows on the test environment. Final run and performance testing in the pre-production-like environment
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+
+| 1. | System Integration | We will integrate all the development components, including the Node Module, Smart contract deployment; Auditor Module; POC ( Proof of Correctness) consensus protocol, and RESTFul Interface. Set up the test environment|  
+| 2. | Smart Contract Test Run|We will take one custom build Tcontract as an input, run one Node in the network and monitor the entire execution and auditing process. | 
+| 3. | Multiple Nodes Network Run| We will run some sample custom build Tcontracts on a network that contains a fixed number of the Nodes.|  
+| 4. | Performance Evaluation |We will run the performance evaluation, including the Transaction Throughput, Transaction Latency, Communication Overhead, etc.| 
+
 
 - **Estimated duration:** 0.5 month
 - **FTE:** 2
-- **Costs:** 0.7 BTC
+- **Costs:** $11,200 USD
 
 ## Future Plans
 
