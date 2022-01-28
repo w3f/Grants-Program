@@ -49,12 +49,12 @@ Although structures vary in different organizations, funding management is a gen
 ### Overview
 * **Total Estimated Duration:** 1 months
 * **Full-time equivalent (FTE):**  2
-* **Total Costs:** 15000 DAI
+* **Total Costs:** 10000 DAI
 
 ### Milestone 1  --The code implementation Multisig Frontend MVP
 * **Estimated Duration:** 4 weeks
 * **FTE:**  1
-* **Costs:** 15000 DAI
+* **Costs:** 10000 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
