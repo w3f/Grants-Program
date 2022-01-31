@@ -99,6 +99,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Blockchain Indexing Engine | [Substrate Archive](https://github.com/paritytech/substrate-archive), [PSQL Indexer](https://github.com/usetech-llc/polkadot_psql_indexer), [Polkadothub Indexer](https://github.com/figment-networks/polkadothub-indexer), [Substrate Graph](https://github.com/playzero/substrate-graph), [Hydra](https://github.com/subsquid/hydra), [Subquery](https://github.com/OnFinality-io/subql), [Polkadot Profit Transformer](https://github.com/p2p-org/polkadot-profit-transformer) |
 | Blockchain/Event Monitoring | [Web3 Guardian](https://github.com/open-web3-stack/guardian), [Aurras Event Manager](https://github.com/HugoByte/aurras-event-manager) |
 | Gaming | [Mobile Game Framework for Substrate](https://github.com/creator-rs/creator/) | [Amethyst](https://amethyst.rs/) + [Substrate](https://substrate.dev/)
+| Nocode Platforms | [Bubble.io Nocode plugin](https://bubble.io/plugin/polkadotjs-1639402639641x977692461648052200) | |
 | Other | [open-web3 JS library](https://github.com/open-web3-stack/open-web3.js), [VM-Bridge](https://github.com/CycanTech/GVM-Bridge), [srtool](https://github.com/paritytech/srtool), [Substrate Tip Bot](https://github.com/paritytech/substrate-tip-bot), [ORI (Onchain Risk Intelligence)](https://github.com/syntifi/ori), [PolkaTools](https://github.com/albertov19/PolkaTools)
 
 ### :memo: ink Smart Contracts 
@@ -108,7 +109,6 @@ In the below sections you can find a list of different layers of the Polkadot St
 | DeFi | [Vera](https://github.com/veradefi/defi), [Nsure Insurance](https://github.com/nsure-tech/dot-contract), [Everlasting Cash](https://github.com/CycanTech/ELC), [Coinversation](https://github.com/Coinversation/coinpro), [zenlink-dex-contract](https://github.com/zenlinkpro/zenlink-dex-contract), [AlgoCash](https://github.com/ReserveLabs/AlgoCash/blob/main/LICENSE) | New seigniorage-style stable coins
 | Gaming | [NewOmega](https://github.com/WiktorStarczewski/newomega.polkadot/blob/master/newomega_delegator/newomega/newomega.rs) | |
 | DAO | [subDAO](https://github.com/SubDAO-Network/subDAO-contracts), [RainbowDAO](https://github.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-milestone_1) | |
-| Nocode Platforms | [Bubble.io Nocode plugin](https://bubble.io/plugin/polkadotjs-1639402639641x977692461648052200) | |
 | Other | [Candle Auctions](https://github.com/agryaznov/candle-auction-ink), [polkasign-contract](https://github.com/SubDAO-Network/polkasign-contract) | |
 
 
@@ -141,7 +141,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Randomness | [DKG and Randomness Beacon](https://github.com/Cardinal-Cryptography/substrate/tree/randomness-beacon)
 | Licensing |
 | Banking Integration | [FIAT on-off-ramp](https://github.com/element36-io/ebics-java-service)
-| Other | [Substrate Open Runtime Module Library](https://github.com/open-web3-stack/open-runtime-module-library), [AI Infrastructure on Blockchain](https://github.com/anudit/cerebrum), [Substrate Account Filter](https://github.com/gautamdhameja/substrate-account-filter), [Subtensor](https://github.com/opentensor/subtensor), [BitGreen](https://github.com/bitgreen/bitg-node), [AdMeta](https://github.com/AdMetaNetwork/admeta), [Chocolate Node](https://github.com/chocolatenetwork/chocolate-node) | On-chain quadratic funding (e.g. https://clr.fund/#/about), Decentralized review/reputation system 
+| Other | [Substrate Open Runtime Module Library](https://github.com/open-web3-stack/open-runtime-module-library), [AI Infrastructure on Blockchain](https://github.com/anudit/cerebrum), [Substrate Account Filter](https://github.com/gautamdhameja/substrate-account-filter), [Subtensor](https://github.com/opentensor/subtensor), [BitGreen](https://github.com/bitgreen/bitg-node), [AdMeta](https://github.com/AdMetaNetwork/admeta), [Chocolate Node](https://github.com/chocolatenetwork/chocolate-node), [Virto Network](https://github.com/virto-network/virto-node) | On-chain quadratic funding (e.g. https://clr.fund/#/about), Decentralized review/reputation system 
 
 ### :black_circle: Host
 
