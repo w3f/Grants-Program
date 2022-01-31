@@ -48,7 +48,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 #### Project Description :page_facing_up:
 
-A part of the promise of Polkadot is to bring scalability to the blockchains. The way it achieves it is via delegating application-specific logic from layer 0 (the relay chain) to layer 1 chains (parachains). In order to achieve this efficiently yet securely, each parachain has its own block production mechanism (achieving efficienct block production), but the finalisation of candidate parachain blocks still happens with the involvement of the relay chain validators.
+A part of the promise of Polkadot is to bring scalability to the blockchains. The way it achieves it is via delegating application-specific logic from layer 0 (the relay chain) to layer 1 chains (parachains). In order to achieve this efficiently yet securely, each parachain has its own block production mechanism (achieving efficient block production), but the finalisation of candidate parachain blocks still happens with the involvement of the relay chain validators.
 
 The full mechanism is described in [the host specification](https://github.com/w3f/polkadot-spec/blob/main/host-spec/c07-anv.tm). In short, it is split in two parts: first, a publicly known subset of validators attests that the parachain block data is available to them (i.e. they must have it in their local storage); second, once 2/3+ of the first group have published their availability votes, a "secret" (VRF-based assignment) subset of validators checks the validitiy of the candidate, by checking its state transition against that parachain runtime, which is available on-(the relay)chain. ...
 
@@ -269,7 +269,7 @@ The basic deliverable of this project is an API package hosted on Packagist whic
 - [:arrow_right: polkadot-collator-setup.md](./polkadot-collator-setup.md)
 
 
-- **Proposer:** mmagician
+- **Proposer:** [mmagician](https://github.com/mmagician)
 
 
 #### Project Description :page_facing_up:
@@ -325,7 +325,7 @@ As outlined [here](https://github.com/polkadot-js/extension/issues/893), the del
 - [:arrow_right: raft-validators.md](./raft-validators.md)
 
 
-- **Proposer:** mmagician
+- **Proposer:** [mmagician](https://github.com/mmagician)
 
 
 #### Project Description :page_facing_up:
@@ -474,7 +474,7 @@ A list of possible tasks to work on:
 
 #### Project Description :page_facing_up:
 
-XCM is the crosschain communication standard that will be used by all the parachains. Currently XCM is still in early stage but is already support some main usecases such as crosschain transfer of fungible tokens.
+XCM is the crosschain communication standard that will be used by all the parachains. Currently XCM is still in early stage but already supports some main use cases such as crosschain transfer of fungible tokens.
 
 There are currently two major areas of XCM that still awaiting to be improves: ...
 
