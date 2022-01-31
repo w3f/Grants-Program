@@ -253,7 +253,7 @@ Grateful if you could also copy the email address doken.network@gmail.com in all
 ### Legal Structure
 
 - **Registered Address:** ul. "Tsaribrodska" 70, 1309 Sveta Troitsa, Sofia, Bulgaria
-- **Registered Legal Entity:** Strategy Object Ltd.
+- **Registered Legal Entity:** Strategy Object EOOD
 
 ### Team's experience
 
