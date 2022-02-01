@@ -128,7 +128,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | IoT | [Nodle](https://github.com/NodleCode/), [MXC/DataHighway](https://github.com/DataHighway-DHX/node)
 | Verifiable Claims | [KILT](https://github.com/KILTprotocol), [Dock](https://github.com/docknetwork)
 | Supply chain| 
-| Social Networking | [Social Network](https://github.com/social-network), [SubSocial](https://github.com/dappforce/dappforce-subsocial), [ZeroDAO](https://github.com/ZeroDAO/ZeroDAO-node) | Private instant messenger that uses on-chain identity
+| Social Networking | [Social Network](https://github.com/social-network), [SubSocial](https://github.com/dappforce/dappforce-subsocial), [ZeroDAO](https://github.com/ZeroDAO/ZeroDAO-node), [Myriad Node](https://github.com/myriadsocial/myriad-node) | Private instant messenger that uses on-chain identity
 | Governance/DAO| [Sunshine DAO](https://github.com/sunshine-protocol/sunshine-bounty), [Governance OS](https://github.com/NucleiStudio/governance-os), [Idavoll Network](https://github.com/idavollnetwork/idavoll), [Substrate Moloch](https://github.com/DoraFactory/Substrate-Moloch-V2) |   [Consul](https://github.com/consul/consul) - Open Government and E-Participation Web Software
 | Prediction Markets and Futarchy| [Zeitgeist](https://github.com/zeitgeistpm/zeitgeist), [X Predict Market](https://github.com/XPredictMarket) |
 | Messaging | [HOPR](https://github.com/validitylabs/HOPR-PL-Substrate), [Mailchain](https://github.com/mailchain)
@@ -141,7 +141,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Randomness | [DKG and Randomness Beacon](https://github.com/Cardinal-Cryptography/substrate/tree/randomness-beacon)
 | Licensing |
 | Banking Integration | [FIAT on-off-ramp](https://github.com/element36-io/ebics-java-service)
-| Other | [Substrate Open Runtime Module Library](https://github.com/open-web3-stack/open-runtime-module-library), [AI Infrastructure on Blockchain](https://github.com/anudit/cerebrum), [Substrate Account Filter](https://github.com/gautamdhameja/substrate-account-filter), [Subtensor](https://github.com/opentensor/subtensor), [BitGreen](https://github.com/bitgreen/bitg-node), [AdMeta](https://github.com/AdMetaNetwork/admeta), [Chocolate Node](https://github.com/chocolatenetwork/chocolate-node), [Virto Network](https://github.com/virto-network/virto-node), [Substrate Validator Set](https://github.com/gautamdhameja/substrate-validator-set), [DEIP](https://github.com/DEIPworld/deip-substrate) | On-chain quadratic funding (e.g. https://clr.fund/#/about), Decentralized review/reputation system 
+| Other | [Substrate Open Runtime Module Library](https://github.com/open-web3-stack/open-runtime-module-library), [AI Infrastructure on Blockchain](https://github.com/anudit/cerebrum), [Substrate Account Filter](https://github.com/gautamdhameja/substrate-account-filter), [Subtensor](https://github.com/opentensor/subtensor), [BitGreen](https://github.com/bitgreen/bitg-node), [AdMeta](https://github.com/AdMetaNetwork/admeta), [Chocolate Node](https://github.com/chocolatenetwork/chocolate-node), [Virto Network](https://github.com/virto-network/virto-node), [Substrate Validator Set](https://github.com/gautamdhameja/substrate-validator-set), [DEIP](https://github.com/DEIPworld/deip-substrate), [DeBio](https://github.com/debionetwork/debio-node) | On-chain quadratic funding (e.g. https://clr.fund/#/about), Decentralized review/reputation system 
 
 ### :black_circle: Host
 
