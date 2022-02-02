@@ -442,4 +442,5 @@
 | [Blackprint](https://github.com/Blackprint) | Integrating Polkadot.js with Blackprint | [GitHub](https://github.com/Blackprint) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [OpenSquare Network](https://www.opensquare.network/) | OpenSquare Paid QA protocol | [GitHub](https://github.com/opensquare-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [@Scale Technologies](https://atscale.xyz) | Libra - Decentralized Payment Network | [GitHub](https://github.com/atscaletech/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Interstellar](https://www.interstellar.gg/) | Interstellar - Wallet Phase 1 | [GitHub](https://github.com/Interstellar-Network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
