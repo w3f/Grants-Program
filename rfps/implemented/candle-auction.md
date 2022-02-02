@@ -1,6 +1,6 @@
 # Candle auction smart contract
 
-* **Status:** [In progress](https://github.com/w3f/Grants-Program/pull/666)
+* **Status:** [Implemented](https://github.com/agryaznov/candle-auction-ink/tree/master)
 * **Proposer:** [mmagician](https://github.com/mmagician)
 
 

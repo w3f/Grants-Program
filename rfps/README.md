@@ -5,7 +5,6 @@
 - [:grey_question: What is an RFP?](#grey_question-what-is-an-rfp)
 - [:scroll: List of current RFPs](#scroll-list-of-current-rfps)
   - [Availability and Validity - Network Topology](#availability-and-validity---network-topology)
-  - [Candle auction smart contract](#candle-auction-smart-contract)
   - [e-Passport ZK Validation](#e-passport-zk-validation)
   - [RFP: Substrate Identity Directory](#rfp-substrate-identity-directory)
   - [ink!/pallet/solidity performance benchmarking](#inkpalletsolidity-performance-benchmarking)
@@ -62,34 +61,6 @@ The full mechanism is described in [the host specification](https://github.com/w
 
 ----
 
-
-### Candle auction smart contract
-
-
-- Published: 2021-07-20
-
-
-- [:arrow_right: candle-auction.md](./candle-auction.md)
-
-
-- **Proposer:** [mmagician](https://github.com/mmagician)
-
-
-#### Project Description :page_facing_up:
-
-Auctions will come in handy for various types of applications, but especially for NFTs.
-
-The idea behind this proposal is to create an `ink!` smart contract that is able to run a candle auction mechanism. This will be known to Polkadot followers from the [parachain auction mechanism](https://wiki.polkadot.network/docs/en/learn-auction). One of the advantages of the candle mechanism is that it incentivises bidders to submit their true bids early, thus leading to more optimal market. ...
-
-
-#### Deliverables :nut_and_bolt:
-
-- **Total Estimated Duration:** 1 month
-- **Full-time equivalent (FTE):** 1
-
-
-
-----
 
 
 ### e-Passport ZK Validation
