@@ -4,7 +4,7 @@
 * **Project Name:** Substrate Identity Hub
 * **Team Name:** https://github.com/Shard-Labs
 * **Payment Address:** 0x526F2bC9a5fc0839AD4956b06CB6dFf26F9503be
-
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/255#issuecomment-1014556219)
 
 ## Project Overview 
 This application is in response to following RFP https://github.com/w3f/General-Grants-Program/blob/master/rfps/identity-directory.md
