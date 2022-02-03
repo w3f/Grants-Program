@@ -125,19 +125,23 @@ custom Tcontract deployer serves as an interface for developers to add their cus
 
 [img] <https://docs.google.com/document/d/1OGstvHvzH3Fd9cKFF6NMiBAR8EJmShlpBuqz8-lD9Rk/edit?usp=sharing>
 
- the lifecycle of TaoCoDAO involves an oscillation of two stages:  main stage and report stage.
-
-    TaoCoDAO actively accepts and processes incoming transactions that shape the current data snapshot in the main stage, which is longer than the report stage. During the main stage, auditors download the previous data snapshot for review and storage.
-
-    In the report stage, TaoCoDAO accepts transactions, but instead of executing them, it queues them in a buffer. Once the current snapshot is footprinted, TaoCoDAO continues executing incoming and queued transactions. Also, as soon as the footprint is ready. However, at this point, the execution of the incoming transactions resumes because the execution inhibition is needed only for calculating the footprint, not for smart contract submission.
+ the lifecycle of TaoCoDAO involves an oscillation of two stages:  main stage and report stage:
+ TaoCoDAO actively accepts and processes incoming transactions that shape the current data snapshot in the main stage, which 
+ is longer than the report stage. During the main stage, auditors download the previous data snapshot for review and storage.
+ In the report stage, TaoCoDAO accepts transactions, but instead of executing them, it queues them in a buffer. Once the current snapshot is footprinted, TaoCoDAO
+ continues executing incoming and queued transactions. Also, as soon as the footprint is ready. However, at this point, the execution of the incoming transactions resumes
+ because the execution inhibition is needed only for calculating the footprint, not for smart contract submission.
 
  **Transaction workflow**:
 
  [img] <https://docs.google.com/document/d/1_EM1j5RK0CEYNZ6F66TM-X14fe7bZNaCiizXNDr5Bek/edit?usp=sharing>
 
  ❶: Client creates a transaction and commits it to the TaoCoDAO node with which they have an access subscription;
+ 
  ❷: the service node verifies the authenticity of the transaction and forwards it to all the other nodes in the cloud;
+ 
  ❸: the nodes of the consortium process the transaction and send a signed confirmation back to the service node within a strict deadline;
+ 
 ❹: the service node executes the transaction, serializes the confirmations into an aggregated receipt, and sends it to the client as a reply to the initial commit request
 
 **Transactions**:
