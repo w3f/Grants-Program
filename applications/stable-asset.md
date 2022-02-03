@@ -127,18 +127,18 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 | 3 | Testing | Comprehensive tests that cover the Stable Asset Substrate modules |  
 | 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |  
 
-### **Milestone 3 — Implement Stable Saving Module**
+### **Milestone 3 — Support Yield in Stable Asset**
 
-* **Estimated Duration:** 1 week
+* **Estimated Duration:** 2 week
 * **FTE:** 2
 * **Costs:** 6,000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 / MIT / Unlicense |
-| 1 | Documentation | Provide documentation on components, working algorithms, and deployment processes |
-| 2 | Substrate module: Stable Saving Substrate module | This module will contain core functionalities on stable saving module including:<br>collect fees in stable asset,<br>distribute fees in stable saving,<br>generate additional yield with the underlying assets. |
-| 3 | Testing | Comprehensive tests that cover Stable Saving Substrate modules |  
+| 1 | Documentation | Provide documentation on how to handle yield in stable asset pools |
+| 2 | Substrate module: Stable Asset Substrate module | The Stable Asset module will support yield asset as underlying asset by collecting the generated yield. It will also support updating amplification parameters and handle asset value change caused. |
+| 3 | Testing | Comprehensive tests that cover yield asset and amplification parameter change. |  
 | 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |  
 
 
