@@ -30,7 +30,7 @@ While this is a robust and logical expansion of Bitins, probably the most lucrat
 ![Architecture](https://user-images.githubusercontent.com/98888366/152210104-02b45847-25aa-4601-adc0-c27b65195349.png)
 
 The system itself as it seen by BSN has five functional modules:
-1.	Decentralized smart contract in Moonbeam parachain, that executes all logic for cashflows and coupons operations;
+1.	Ink! smart contract, that executes all logic for cashflows and coupons operations;
 2.	Centralized system management module for coupons generation, invalidation and financial management;
 3.	Centralized user management module for new off-chain users: all-in-one service for wallet generation and immediate transaction;
 4.	Management apps;
@@ -132,7 +132,7 @@ Bela Supernova has already apllied for a grant [OpenEHR Integration](https://git
 ## Development Roadmap :nut_and_bolt:
 
 At this stage we’ll execute three deliverables:
-- a smart contract with main functional logic for Moonbeam parachain;
+- an Ink! smart contract with main functional logic;
 - system management tools MVP;
 - Buyer's UI.
 
@@ -151,7 +151,7 @@ The project will be split in 4 milestones:
 - **Full-Time Equivalent (FTE):**  9 FTE
 - **Total Costs:** 183,500 USD
 
-### Milestone 1 — Design and development of functional smart contract
+### Milestone 1 — Design and development of an Ink! smart contract
 
 - **Estimated duration:** 2 months
 - **FTE:**  3 FTE
