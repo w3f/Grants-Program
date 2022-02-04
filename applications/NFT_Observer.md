@@ -2,7 +2,7 @@
 
 - **Project Name:** NFT Observer
 - **Team Name:** Kedruga
-- **Payment Address:** bc1qwx9m40wvhamtkdmfkh9fzmn2day3cux5dndetf
+- **Payment Address:** bc1qwx9m40wvhamtkdmfkh9fzmn2day3cux5dndetf (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
@@ -11,30 +11,32 @@
 
 - NFT Observer is all about giving insights on the Freshest, Hottest & Valuable NFTs to all NFT lovers every day & hour.
 - NFT space needs this feature (NFT Observer) to know about latest, most valued, high gainer, trending, and flip-able NFTs for better decision-making abilities as well as for more profits by buying and selling them.
-- NFT Observer can integrate with Substrate/Polkadot/Kusama like we integrated Ethereum, Solana and Binance Smart Chain, and their NFTs.
+- NFT Observer can integrate with Kusama like we integrated Ethereum, Solana and Binance Smart Chain, and their NFTs.
 
 ### Project Details
 
 - NFT Observer is and will be written in React JS, Node JS, PostgreSQL, and Strapi.
-- One of the game changing feature in it will be NFTs cart, because till now not a single NFT marketplace has the feature of 'Add to cart'.
-- It will help avid NFT collectors to checkout at a single time after adding collections and different kind of NFTs into their carts.
-- Right now, a person can only purchase a single NFT at a time, and needs to repeat the whole process again to purchase another one.
+- NFT Observer is simply a single page website which showcase NFTs in two categories:
+ HOTTEST OF THE HOUR (Premium category)
+ FRESHEST OF THE DAY (Free category)
+- For any NFT project who wants to get listed in our first category, they need to provide a little information about their project and have to complete the payment according to their NFT blockchain by switching the Chain option.
+- For any NFT project who wants to get listed in our second category, they can either contact us on [Twitter](https://twitter.com/observernft) or we are constantly searching for blue chip projects that could be beneficial for investors to flip.
+- We only list projects that have good stats in a given day or hour, and when a day or hour ends we remove that project and list new ones, as we are expanding our team we will be more active to search and list projects regularly. We've a dedicated Strapi CMS through which our team can CRUD the NFT projects.
 
 ### Ecosystem Fit
 
-
 - Where and how does your project fit into the ecosystem?
-NFT Observer fits into the ecosystem in a unique way to bring as many NFTs as possible to a single platform, of different blockchains including Ethereum, Solana, Binance Smart Chain and Substrate/Polkadot/Kusama.
+NFT Observer fits into the ecosystem in a unique way to bring as many NFTs as possible to a single platform, of different blockchains including Ethereum, Solana, Binance Smart Chain and Kusama.
 
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-Our initial target audience is rarity.tools, solanart.io and solanalysis.com userbase as well as our own userbase.
+- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's user base, yourself)?
+Our initial target audience is rarity.tools, solanart.io and solanalysis.com user base as well as our own user base.
 
 - What need(s) does your project meet?
-NFT Observer meets the needs of NFT traders who require the insightful statistics about the NFTs from as many blockchains as possible in one place.
+NFT Observer meets the needs of NFT traders who require insightful statistics about the NFTs from as many blockchains as possible in one place.
 To make better understanding and decision-making regarding buying and selling of non-fungible tokens, NFT Observer is a key requisite for it.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-There are no other projects handling this NFTs flipping and statistics area. Because we are constantly expanding our approach in terms of blockchains and parachains, like NFT Observer is now amplifying towards Substrate/Polkadot/Kusama ecosystem.
+There are no other projects handling this NFTs flipping and statistics area. Because we are constantly expanding our approach in terms of blockchains and parachains, like NFT Observer is now amplifying towards the Substrate/Polkadot/Kusama ecosystem.
 
 ## Team :busts_in_silhouette:
 
@@ -67,7 +69,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 ## Development Status :open_book:
 
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues, https://observernft.medium.com/fractal-a-new-invention-in-a-sea-of-opportunities-e8b2e4bffee4
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation, so in December, we have had a conversation with Hashmasks related to listing about their work, collections and NFTs.
+- references to conversations you might have had related to this project with anyone from the Web3 Foundation, so in December, we had a conversation with Hashmasks related to listing their work, collections and NFTs.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -77,7 +79,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Full-Time Equivalent (FTE):** 0.5 FTE
 - **Total Costs:** 10,000 USD
 
-### Milestone 1 — UI Design & Substrate/Polkadot/Kusama NFTs Listing Option
+### Milestone 1 — UI Design & Kusama NFTs Listing Option
 
 - **Estimated duration:** 1 week
 - **FTE:**  0.5
@@ -90,6 +92,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0c. | Testing Guide | Core functions will be fully covered by unit & E2E tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the NFTs Listing Option & UI Design. |
+| 1. | UI Design | We will work more on UI aspects of NFT Observer like payment modal will only be shown after clicking/tapping the 'Promote' button instead in bottom-front of the [website](https://kedruga.com/nftobserver), there will be a customer support Discord server invite link as well as blog about latest news related to NFTs & metaverse, and will also have sorting options (recent, old, followers count, floor price, volume, market cap and average price). |
+| 2. | Listing Option | We will add stats of Kusama NFTs as well as there will be an option to select KSM besides ETH, SOL & BSC, in the 'Payment' modal. |
 
 ### Milestone 2 — Downloadable NFT Observer through Decentralized Cloud Storage of Polkadot (IPFS) & ability to customize and host it as you want
 
@@ -104,6 +108,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0c. | Testing Guide | Core functions will be fully covered by unit & E2E tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains how users can download, customize and host the NFT Observer on their own. |
+| 1. | Downloadable NFT Observer through IPFS | We will be using Decentralized Cloud Storage of Polkadot (IPFS) to make it one of the open-sourced NFT statistics websites of the world. |
+| 2. | Ability to customize | We will push the ability of customization into the NFT Observer, meaning all React components like button, table, background, etc. will be easy to customize by providing theme options into it. |
+| 3. | Host your own NFT Observer | After customizing the NFT Observer, anyone will be able to host their version of NFT Observer as they want, by following our setup guide. |
 
 ## Future Plans
 
