@@ -203,5 +203,4 @@ Simple web building, community social creation, building roadmap and ideas in wh
 - If there are any other teams who have already contributed (financially) to the project.
 Funds only from Bika StarX team and have not received funds from other projects.
 - Previous grants you may have applied for.
-
 This is the first.
