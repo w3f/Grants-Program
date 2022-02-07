@@ -156,10 +156,10 @@ Miliston has tests but can't provide shareable encoding due to being a tester.
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / license |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can Make a polkadot chain network or chain, create an open source decentralization application and make a token exchange. |
+| 0b. | Documentation | We will provide basic inline code documentation that explains how users can Create a polka dot network or chain to create open source decentralized applications, and perform token exchanges. And made in the form of a file Readme.md. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. Testing will be carried out as long as bugs and vulnerabilities have been resolved, all will be explained how to test and others through the official Bika Token block. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains (what was done/achieved as part of the grant). All reviews of the project and associated work or testing. |
+| 0e. | Article | We will publish an article that explains (what was done/achieved as part of the grant). All reviews of the project and associated work or testing. |
 | 1. | DEX developers and decentralized applications | We will create a decentralized application and DEX for the development of new innovations in Polkadot and BSC Dapps, this DEX aims to exchange Polkadot and BSC tokens, to Launchpad Polkadot tokens, and grow the latest innovations such as novel, portfolio, trading and selling nft or others. |  
 | 2. | Software usage | Creation and software for decentralized application development using react.js, node.js, typescript, databases for connecting data, and react,js as a framework for coding. With Blockchain technology to record transactions and store. |
 | 3. | Running test stage module | Create a step module to test each achievement to find out the project developer, project development or each achievement that will be implemented and published on the Bika Project block or forum. |
