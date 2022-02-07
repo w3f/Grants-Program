@@ -1,42 +1,72 @@
 # W3F Grant Proposal
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** Name of your project (e.g. DuoSwap Module)
-- **Team Name:** Legal name of your team (e.g. Duo)
-- **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
-
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+- **Project Name:** DeAINet
+- **Team Name:** DeAI Team
+- **Payment Address(USDT):** 0x8341e551B0AE5E5905C20A112b123b5F797612f3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
-
 ### Overview
 
-Please provide the following:
+The DeAI project aims to deliver a fully decentralized artificial intelligence (AI) service network with highly scalable, crypto token incentivized and results in a solution that can serve as the application interface (API) layer in the decentralized development (web3) stack. We present solutions for incentivizing AI nodes for maximum usage of idle resources and distributing AI services for higher availability and security. This grant will allow us to implement a substrate-based AI algorithm blockchain that can not only be used to decentralize computational provider but also used to create DeAI Algorithm NFT. All the AI pretrained weight files and source code will be deployed on IPFS as well as Algorithm NFT.
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+DeAINet as a part of Substrate / Kusama / Polkadot / Web 3 Ecosystem and has Following Rich Properties
 
+  - Protect the privacy for AI users by executing encryption protocol transparently.
+  - Improve the security for AI system by miners consensus.
+  - Strengthen robustness for AI service by DeAPI runtime redundancy of miners.
+  - Save energy and reduce the service cost by making use of spare resource to mine.
+  - Protect AI intellectual properties by algorithm NFTs.
+
+  
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+#### Architecture
+  ![image](https://user-images.githubusercontent.com/95557343/152795929-621711c2-8ab9-4af5-8dfe-078ad29ee7ee.png)
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+  - Users pay DEAI token to access DeAPIs. DeAINet will periodically generate a certain
+amount of new DEAI tokens and half of them will reward to the most active
+users. Another half tokens distribute to a random address as an airdrop.
+After 4 years, no more DEAI is generated.
+
+  - Miners earn 95%’ users’ paid DEAI to execute DeAPI on their hardware. Each
+miner can run all kinds of DeAPIs to satisfy any kind of DeRequest. The
+redundancy exactly achieves the decentralization and reliability of DeAINet.
+
+  - Inventors earn 5% users’ paid DEAI as patent fee aside from miners, since they
+are AI researchers or developers who invent and create new DeAPIs.
+
+  - DEAI Stakers share profit from miners by staking DEAI to miners for DPoS
+(Delegation PoS) consensus.
+
+![image](https://user-images.githubusercontent.com/95557343/152797749-a96e9f40-e1ae-4a02-9679-b446e09f59c5.png)
+
+#### Technologies
+
+  1. Deep learning frameworks: Pytorch, Tensorflow, MxNet, Caffe
+  2. Docker
+  3. libp2p
+  4. Substrate
+  5. IPFS
+  6. gRPC
+  7. Rust
+  8. Go
+
+#### Components
+  1. **Miner Network**
+  It consists of all the computational power providers to offer decentralized AI as a Service which undertake to execute DeAPI to reply DeResponse for user's DeRequest. All the DeAPIs are deployed by Inventors on each miner. Thus, one miner is crashed other miners could follow up to replace the old one. This redundancy with shading could guarantee the decentralized and robustness for DeAI network. 
+  
+  2. **Inventor Network**
+  It is a DAO sub-project for Inventors such as AI researchers and developers to submit their code and pretrain weights to setup AI service API through DAO mechanism which is a decentralized App with a UI website interface. Any inventors can submit a proposal to setup APIs but, only DAO approved proposals could finally be realized and accepted to deploy on all the miners. Therefore, DAO could make sure the quality and necessity for a new API creation. Meanwhile, once a new DeAPI is setup, a corresponding algorithm NFT is minted and send to inventors address as a digital patent. The user's  paid fee will send to NFT holders.
+  
+  3. **User Network**
+  It consists of all the callable DeAPIs in the application layer for users to send request and retrieve the response which also implements a DPoS concensus aside from kusama/polkadot to guarantee the decentralization, venerable and security. 
+  
+  4. **NFT Marketplace**
+  A marketplace beyond the DeAINet for traders to buy and sell algorithm NFT or digital patent to earn gains. 
 
 ### Ecosystem Fit
 
