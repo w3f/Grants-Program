@@ -1,9 +1,10 @@
 # W3F Grant Proposal
 
-* **Project Name:** Substrate Polywrapper
-* **Team Name:** Polywrap DAO + ChainSafe
+* **Project Name:** Substrate Core Polywrapper
+* **Team Name:** ChainSafe
+* **Co-Sponsor:** Polywrap DAO ([Approved Grant Proposal](https://snapshot.org/#/polywrap.eth/proposal/0x62c3657d805dfa271b6c0f0acb332ddd78c4d89450b04a8cb9222794a36a49f2))
 * **Payment Address:** 0x85D81Ab61Fe16CDcaeF2Ca556ED4577A51b9b07C (USDC preffered)
-* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3 
+* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
 
@@ -11,10 +12,15 @@
 
 For this proposal, we'll be developing:
 1. **Substrate Core Polywrapper:** Polywrapper in Rust that enables users to interact with substrate-based chains using any language on any platform.
-2. **Token Balance Interface:** Polywrap standard interface that defines common functionality for all pallets supporting "balances".
-3. **Balances Implementation Wrapper:** An implementation of the "Token Balance" interface that interacts with the [Balances pallet](https://github.com/paritytech/substrate/tree/master/frame/balances)'s ABI.
-5. **[Pallet ABI -> Polywrapper] Codegenerator:** A code generator that generates Polywrap code based on a Pallet's ABI (leveraging the [chain's metadata](https://github.com/paritytech/substrate/pull/8615)).
-6. **Developer Documentation:** Documentation showing developers how they can use the Balance wrapper, implement their own Balances implementation, and generate Polywrappers from pallet ABIs.
+2. **Developer Documentation:** Documentation showing developers how they can use the substrate core wrapper within their dapps and wrappers.
+
+In the future, we'd like to continue this work by developing:
+1. **Token Balance Interface:** Polywrap standard interface that defines common functionality for all pallets supporting "balances".
+2. **Balances Implementation Wrapper:** An implementation of the "Token Balance" interface that interacts with the [Balances pallet](https://github.com/paritytech/substrate/tree/master/frame/balances)'s ABI.
+3. **[Pallet ABI -> Polywrapper] Codegenerator:** A code generator that generates Polywrap code based on a Pallet's ABI (leveraging the [chain's metadata](https://github.com/paritytech/substrate/pull/8615)).
+4. **Developer Documentation:** Documentation showing developers how they can use the Balance wrapper, implement their own Balances implementation, and generate Polywrappers from pallet ABIs.
+
+Future proposals will be made for the above. Below we'll explain the work in its entirety.
 
 **About Polywrap:**
 Polywrap is a dev toolchain that enables easy integration of Web3 protocols into any application. It makes it possible for software on any device, written in any language, to read and write data to Web3 protocols.
@@ -32,7 +38,7 @@ Project heavily relies on the Polywrap toolchain and Polywrap team support.
   
   Polywrap will allow polkadot dapp developers to integrate protocol logic into dapps in a simple, familiar way, regardless of their implementation language.
 
-  Additionally it will enable a new "standardization layer" for dapps developers to use, enabling the aggregation of multiple similar-but-different chains. The first standard interface we'll be developing for this grant will be the "token balance" interface. We will create an implementation of this interface for the [Substrate Balance Pallet](https://github.com/paritytech/substrate/tree/master/frame/balances).
+  Additionally it will enable a new "standardization layer" for dapps developers to use, enabling the aggregation of multiple similar-but-different chains. The first standard interface we'll be developing in the future will be the "token balance" interface. We will create an implementation of this interface for the [Substrate Balance Pallet](https://github.com/paritytech/substrate/tree/master/frame/balances).
 
 
 * **Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?**
@@ -120,16 +126,17 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-* **Total Estimated Duration:** 2.5 months
-* **Full-Time Equivalent (FTE):**  2 FTE
-* **Total Costs:** 220 000$
+* **Total Estimated Duration:** 1 month
+* **Full-Time Equivalent (FTE):**  2 Software Engineer, 0.5 Project Manager
+* **Total W3F Costs:** 55 000$
+* **Total Polywrap DAO Costs:** 22 000$ & 60 WRAP ([Approved Grant Proposal](https://snapshot.org/#/polywrap.eth/proposal/0x62c3657d805dfa271b6c0f0acb332ddd78c4d89450b04a8cb9222794a36a49f2))
 * **Start Date:** 28. February 2022
 
 ### Milestone 1 - Substrate Core Polywrapper
 
 * **Estimated duration:** 1 month
-* **FTE:**  2
-* **Costs:** 110 000$
+* **FTE:**  2 Software Engineer, 0.5 Project Manager
+* **Costs:** 77 000$ & 60 WRAP
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -155,54 +162,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - Implement graphql schema methods in rust using Polywrap http plugin
 - Deploy polywrapper to ipfs
 
-### Milestone 2 — Substrate Balances Polywrapper & Token Balance Interface
-
-* **Estimated duration:** 3 weeks
-* **FTE:**  2
-* **Costs:** 55 000$
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can interact with polywrapper |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests and e2e tests using polywrap recipes json tests |
-| 1. | "Token Balance" Standard Interface | Described below |  
-| 2. | Substrate Balances Polywrapper | Descibed below |  
-
-#### "Token Balance" Standard Interface
-- Bootstrap polywrap interface project using w3/cli
-- Write graphql schema for the following methods:
-    - transfer - send funds to target account
-    - balance - returns balance of given account
-- Deploy interface to ipfs
-
-##### Substrate Balances Polywrapper
-- Bootstrap polywrapper project using w3/cli
-- Implement graphql schema for the "Token Balance" interface described above
-- Implement graphql schema methods in rust using Substrate Core Polywrapper
-- Deploy polywrapper to ipfs
-
-### Milestone 3 — Codegenerator + Developer Documentation
-
-* **Estimated duration:** 3 weeks
-* **FTE:**  2
-* **Costs:** 55000$
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can interact with polywrapper |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests and e2e tests using polywrap recipes json tests |
-| 1. | Developer documentation | Documentation showing developers how they can use the Balance wrapper, implement their own Balances implementation, and generate Polywrappers from pallet ABIs. |  
-| 2. | [Pallet ABI -> Polywrapper] Codegenerator | Described below |  
-
-##### [Pallet ABI -> Polywrapper] Codegenerator
-- Giving a pallet's ABI
-- Generate Polywrap code that can be used to easily encode/decode types when interacting with the pallet
-
-Example of generating Polywrapper for Ethereum based on ABI: https://github.com/nerfZael/abi-to-wrap
-
 ## Future Plans
+
+As stated above, we'd like to continue to build upon the work done within this proposal, by enabling multi-chain token balance aggregation (through the use of Polywrap interfaces).
 
 We hope that with this work complete, a team like Talisman will be able to continuing using the tooling we've developed to fully realize their vision of having a fully featured multi-para-chain wallet.
 
