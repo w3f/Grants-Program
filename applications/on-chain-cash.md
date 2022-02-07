@@ -140,16 +140,15 @@ At this stage we’ll execute three deliverables:
 
 Deliverables are marked on the scheme above.
 
-The project will be split in 4 milestones:
+The project will be split in 2 milestones:
 - milestones 1 will be supported by a group of 2 developers, 1 DevOps engineer and 1 QA;
-- milestone 2 will be supported by a group of 2 developers, 1 UI/UX designer, 1 DevOps engineer and 1 QA;
-- milestone 3 will be supported by a group of 1 developer, 1 tech writer, 1 DevOps engineer and 1 QA.
+- milestone 2 will be supported by a group of 2 developers, 1 UI/UX designer, 1 DevOps engineer and 1 QA.
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):**  9 FTE
-- **Total Costs:** 183,500 USD
+- **Total Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):**  6,5 FTE
+- **Total Costs:** 153,200 USD
 
 ### Milestone 1 — Design and development of an Ink! smart contract
 
@@ -163,9 +162,10 @@ The project will be split in 4 milestones:
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what benefits what are the benefits of using the system |  
 | 1. | Liquidity pool management methods | We will create methods for keeping and managing main liquidity pool, withdraw/top-up assets from/to main liquidity pool (service provider's pool) |  
 | 2. | Coupon data storage | We will create a method for storing issued and sold coupons in the smart contract |  
-| 3. | Coupon registration | We will create a coupon registration method |  
+| 3. | Coupon registration | We will create a coupon registration method (for each registering coupon code an appropriate assets volume will be locked in the liquidity pool) and coupon code ZK-validation method (to prove to coupon seller, that the coupon is registered and there’s enough liquidity locked for it without showing the private key) |  
 | 4. | Coupon validation | We will create an algorithm for validation of a redeemable coupon using its public and private keys. Each coupon will have public and private keys: the public one will be stored in the smart contract and the private one will be known only to buyer/user from the entire coupon. The destination wallet address for the transaction will be signed by the private key so that no destination wallet spoofing could be done by scams. Smart contract will validate the coupon and the destination address with the public key, pushed to the contract by the management tools service. After validation of the coupon smart contract will transfer appropriate sum from the service provider’s pool to the specified wallet. |  
 | 5. | Coupon liquidation | We will create a coupon burn method upon it’s redemption and corresponding transaction |  
 
@@ -182,40 +182,24 @@ The project will be split in 4 milestones:
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Coupon management tools | We will develop a coupon generation service and algorythms for coupons registration in the smart contract. Each coupon will consist of a public and a private key. Public keys will be delivered to the smart contract for operations. Private keys will be accessible only to buyers and will validate the transaction upon coupon redemption. Upon registration of a coupon in the smart contract the appropriate sum of tokens will be locked in the service provider’s pool as a collateral for the coupon balance |  
-| 2. | Interest management tools | We will create an MVP for accounting of service provider's interest and it's withdrawal. DISCLAIMER: All tools for financial and sales management are not included in the MVP for this project. |  
+| 0e. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what benefits what are the benefits of using the system |  
+| 1. | Coupon management tools | We will develop service provider’s CLI tools for coupon lifecycle management including: coupon generation algorithm implementation, coupon storage DB, coupon registration in a blockchain with indication of a success registration or fail due to insufficient funds in the liquidity pool, coupon sale management (send to a seller, receive info on coupon sale or loss), coupon statistics. Also it will include tools for liquidity pool management – assets top-up or withdrawal, indication of spare assets (not locked to registered coupons) in the liquidity pool. Each coupon will consist of a public and a private key. Public keys will be delivered to the smart contract for operations. Private keys will be accessible only to buyers and will validate the transaction upon coupon redemption. Upon registration of a coupon in the smart contract the appropriate sum of tokens will be locked in the service provider’s pool as a collateral for the coupon balance. Only coupons that are registered in the blockchain (with locked liquidity in the service provider’s pool) could be sent to a seller for sale. Coupons that failed their registration in a blockchain due to insufficient funds in the liquidity pool or whatever won’t be available for sale. |  
+| 2. | Interest management tools | It is assumed that the service will work on a b2c as well as a b2b basis, so several types of monetization are provided – the main two are transaction fees from users and sales fees from sellers. In this section BSN will deliver a service, that will get information on collected fees from the blockchain and offer a solution for modelling statistics on gathered interest and it’s accounting. DISCLAIMER: All tools for financial and sales management (e.g. CRM) are not included in the MVP for this project. |  
 | 3. | Buyer's web interface | We will develop UI for coupons' redemption for users that already have an existing wallet with non-zero balance. Validation of the coupon will be made straight by the smart contract with gas taken from user’s wallet. |  
-
-### Milestone 3 — Testing, documentation, and MVP deployment  
-
-- **Estimated Duration:** 1 month
-- **FTE:**  2,5 FTE
-- **Costs:** 30,300 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains what was achieved, how to use реу new Dapp and what benefits what are the benefits of using the system |  
-| 1. | Testing | We will do smart contract vulnerability, security, and functional audit, stress testing of management tools software and troubleshooting |  
-| 2. | Documentation | We will develop solution technical documentation user guide | 
-| 3. | Deployment | We will release the smart contract into the main net and implement management tools and UIs | 
 
 ## Future Plans
 
 Above defined deliverables are just a start position for future development of the product – a unified platform for users for easiest exchange of their fiat assets to crypto and with a personal wallet that can be used for payments in the ecosystem without excessive transactions and gas fees. Also, this is going to be a service for sellers and service providers to add straight fiat-to-crypto payments to their apps and smart contracts. The easiest way to perform a reliable yet confidential way of payments.
 
 Our future plans for the project:
-- Design and development of seller’s API for on-line coupon codes delivery to a POS terminal upon sales. Development of service provider’s tools for financial management and accounting: fees and commissions management on both sides (seller fees and user coupon commissions), sales management (accounting for sent/sold/lost coupons for each seller).
-- User app development for the new “off-chain” users that yet do not have a wallet: first coupon validation and redemption will be made with gas from service provider’s wallet and a new user’s wallet will be created immediately; smart contract will count this gas to the service prover’s commission.
+- Design and development of seller’s API for on-line coupon codes delivery to a POS terminal upon sales.
+- Development of UI for service provider’s tools for financial management and accounting: fees and commissions management on both sides (seller fees and user coupon commissions), CRM and sales management (accounting for sent/sold/lost coupons for each seller).
+- User app development for the new “off-chain” users that yet do not have a wallet: first coupon validation and redemption will be made by a centralized back-end solution with gas taken from service provider’s wallet and a new user’s wallet will be created immediately (if needed); smart contract will count this gas to the service provider’s commission.
 - Developing a user’s mobile app for “on-the-fly” coupon redemption by scanning a QR-code on the coupon – private key will be coded with a QR-code;
 - Develop APIs for buying coupons via SMS;
 - Algorithmic stablecoin development for using as a native service asset;
 - Payment widget and APIs development for straight coupon-to-crypto payments in 3rd party Dapps;
-- Fiat off-ramp development: a converse coupon technology to withdraw cash on sales partners POS terminals;
-- Development of service provider’s functional UI for managing assets pool and coupons with built-in CRM and sales management.
+- Fiat off-ramp development: a converse coupon technology to withdraw cash on sales partners POS terminals.
 
 ## Additional Information :heavy_plus_sign:
 
