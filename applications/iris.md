@@ -260,7 +260,7 @@ Tony is a full-stack engineer with over 5 years of experience building enterpris
 
 - **Total Estimated Duration:** 14 weeks
 - **Full-Time Equivalent (FTE):**  1.5
-- **Total Costs:** 24,000 USD
+- **Total Costs:** 22,500 USD
 
 Guidelines/Assumptions:
 
