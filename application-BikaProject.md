@@ -89,7 +89,7 @@ Arif Rahman CEO of Dapps and application development.  Head of community and soc
 - **Registered Legal Entity:** N/A 
 
 ### Team's experience
-Biika StarX team has members who are able to work together and have ideas or abilities according to experience, team members have 3 years experience in Crypto and Blockchain project development, we will create and provide the latest innovations with qualified technology for development in the polkadot ecosystem.
+Bika StarX team has members who are able to work together and have ideas or abilities according to experience, team members have 3 years experience in Crypto and Blockchain project development, we will create and provide the latest innovations with qualified technology for development in the polkadot ecosystem.
 
  :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
 ### Team Code Repos
