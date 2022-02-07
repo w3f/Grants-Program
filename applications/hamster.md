@@ -256,7 +256,7 @@ The following is a list of the features that have been implemented:
 | 0d. | Article | We will write an article or tutorial that explains the work done as part of the grant. |
 | 1. | Evil punishment | Design and implementation of punishment module for evil doing |
 | 2. | Hamster Front end | Front end function addition and optimization to let users easily interact with our Hamster function module. |
-| 3. | Hamster chain | We will integrate this chain with the Ministry of finance, Parliament, democracy and also other essential pallets ,to build a full-featured blockchain. |
+| 3. | Hamster chain | We will integrate this chain with the [Treasury](https://github.com/paritytech/substrate/tree/v3.0.0/frame/treasury), [Society](https://github.com/paritytech/substrate/tree/v3.0.0/frame/society), [Democracy](https://github.com/paritytech/substrate/tree/v3.0.0/frame/democracy) and also other essential pallets ,to build a full-featured blockchain. |
 | 4. | Benchmark | Perform unit tests on the individual algorithms to ensure system safety. |
 
 ## Future Plans
