@@ -291,7 +291,7 @@ Guidelines/Assumptions:
 
 ### Milestone 2 - Iris as a Decentralized Pinning Service
 
-- **Estimated duration:** 4 weeks
+- **Estimated duration:** 6 weeks
 - **FTE:**  1
 - **Costs:** 8,000 DAI
 
@@ -309,9 +309,9 @@ Guidelines/Assumptions:
 
 ### Milestone 3 - Creating an smart contract that uses Iris
 
-* **Estimated Duration:** 4 weeks
-* **FTE:**  1
-* **Costs:** 8,000 DAI
+- **Estimated Duration:** 4 weeks
+- **FTE:**  1
+- **Costs:** 6,500 DAI
 
 **Goal**: The third milestone delivers a decentralized application that uses Iris as a storage layer. We will deliver a smart contract (on Iris) that acts as a simple data marketplace where owners can buy and sell access to data. We also build a user interface to accompany the smart contract.
 
