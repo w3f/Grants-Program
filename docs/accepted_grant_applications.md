@@ -189,7 +189,7 @@
 | [Lunie](http://lunie.io/) | Lunie Governance integration | [GitHub](https://github.com/luniehq/lunie) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [LimeChain](https://github.com/LimeChain) | AssemblyScript Runtime | [GitHub](https://github.com/LimeChain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [MVP Workshop](https://mvpworkshop.co/) | Substrate startkit GUI (marketplace for substrate pallets) | [GitHub](https://github.com/MVPWorkshop) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [P2P](https://p2p.org/) | Multiblockchain ELT | [GitHub](https://github.com/p2p-org/polkadot-profit-transformer) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
+| [P2P](https://p2p.org/) | Multiblockchain ETL | [GitHub](https://github.com/p2p-org/polkadot-profit-transformer) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [FlexDapps](https://flexdapps.com/) | Gantree Phase 4 | [GitHub](https://github.com/flex-dapps) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Zondax](http://zondax.ch/) | Ledgeracio: A command-line tool and Ledger app designed for staking operations | [GitHub](https://github.com/paritytech/ledgeracio) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Dipole Tech](https://www.dipole.tech) | Dipole Oracle: Distributed energy resource management | [GitHub](https://github.com/DipoleTech/dipole-oracle) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
@@ -409,7 +409,7 @@
 | [gmajor](https://github.com/gmajor-encrypt) | PHP RPC Lib | [GitHub](https://github.com/gmajor-encrypt/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [logion](https://logion.network/) | Logion wallet | [GitHub](https://github.com/logion-network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SuperColony](https://www.supercolony.net/) | OpenBrush - Secure smart-contract development on ink! Phase 2 | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Nitor Infotech](https://www.nitorinfotech.com/) | Php substrate api | [GitHub](https://github.com/nitor-infotech-oss) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Nitor Infotech](https://www.nitorinfotech.com/) | Php substrate api | [GitHub](https://github.com/nitor-infotech-oss) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [@agryaznov](https://github.com/agryaznov) | Candle Auctions on Ink! | [GitHub](https://github.com/agryaznov/candle-auction-ink) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Iridium Industries](http://www.iridium.industries) | Iris: Decentralized storage network for substrate-based chains | [GitHub](https://github.com/iridium-labs/iris) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [DICO Team](https://dico.io/) | DICO: Decentralized and governable ICO platform | [GitHub](https://github.com/DICO-TEAM/dico-chain) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -417,7 +417,7 @@
 | [Rainbowcity Foundation](http://www.rainbowcity.io/) | RainbowDAO Protocol ink! Phase 1 | [GitHub](https://github.com/RainbowcityFoundation/RainbowcityDAO) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Web Registry DAO](www.wika.network) | Wika Network | [GitHub](https://github.com/randombishop/wika_node) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Helikon Labs](http://www.helikon.tech/) | SubVT Telegram Bot for Kusama and Polkadot | [GitHub](https://github.com/helikon-labs/polkadot-kusama-1kv-telegram-bot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Elamin LTD](http://imbue.network/) | Imbue Network | [GitHub](https://github.com/ImbueNetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Elamin LTD](http://imbue.network/) | Imbue Network | [GitHub](https://github.com/ImbueNetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Koi Metaverse](https://koi.io/) | Building the Digital Collectibles Platform for Virtual GameFi NFTs | [GitHub](https://github.com/KoiMetaverse) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Health Hero](https://www.gohealthhero.com/) | Decentralized Well-being Game API | [GitHub](https://github.com/iumairazhar) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [UNIVERSALDOT FOUNDATION](https://universaldot.foundation) | A freelancing decentralized application | [GitHub](https://github.com/UniversalDot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
