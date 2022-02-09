@@ -10,11 +10,11 @@
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
 If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+This is Pr from the first Bika project
 
 ### Overview
 What is Bika Token?
@@ -67,8 +67,6 @@ No similar project
   - If not, are there similar projects in related ecosystems?
   Bika project is different because it has a novel application as an mvp product, Bika is a unique project with a myriad of features and innovations.
 
-## Team :busts_in_silhouette:
-
 ### Team members
 
 - Name of team leader
@@ -90,9 +88,6 @@ Arif Rahman CEO of Dapps and application development.  Head of community and soc
 
 ### Team's experience
 Bika StarX team has members who are able to work together and have ideas or abilities according to experience, team members have 3 years experience in Crypto and Blockchain project development, we will create and provide the latest innovations with qualified technology for development in the polkadot ecosystem.
-
- :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-### Team Code Repos
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
@@ -122,9 +117,6 @@ https://drive.google.com/file/d/1ybTJF5hDS_zgS6HgXbGSR0WkTxV83oQW/view?usp=drive
 
 ## Development Roadmap :nut_and_bolt:
 
- :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-For each milestone,
-
 - make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
 The project is built with good software, namely react native for DEX development, Visual code applications, node.js, vue.js, and typescript.
 - include the amount of funding requested _per milestone_.
@@ -140,7 +132,6 @@ It takes 5 months/3FTE and 3 workers for each achievement.
 - **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
 Miliston has tests but can't provide shareable encoding due to being a tester.
 
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
 ### Overview
 
 - **Total Estimated Duration:** 8 months
@@ -195,6 +186,7 @@ long term plan is to create and work on all ecosystem, promote longer duration c
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+Web3 Foundation Website
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
