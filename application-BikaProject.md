@@ -14,7 +14,9 @@
 ## Project Overview :page_facing_up:
 
 If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+
 This is Pr from the first Bika project
+
 
 ### Overview
 What is Bika Token?
