@@ -14,6 +14,7 @@
 ## Project Overview :page_facing_up:
 
 If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section. 
+
 This is Pr from the first Bika project
 
 
@@ -191,9 +192,15 @@ Web3 Foundation Website
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
+
 - Work you have already done.
+
 Simple web building, community social creation, building roadmap and ideas in whitepaper, working on DEX development.
+
 - If there are any other teams who have already contributed (financially) to the project.
+
 Funds only from Bika StarX team and have not received funds from other projects.
+
 - Previous grants you may have applied for.
+
 This is the first.
