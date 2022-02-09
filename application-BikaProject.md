@@ -188,19 +188,20 @@ long term plan is to create and work on all ecosystem, promote longer duration c
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-Web3 Foundation Website
+
+   Web3 Foundation Website
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
 
 - Work you have already done.
 
-Simple web building, community social creation, building roadmap and ideas in whitepaper, working on DEX development.
+   Simple web building, community social creation, building roadmap and ideas in whitepaper, working on DEX development.
 
 - If there are any other teams who have already contributed (financially) to the project.
 
-Funds only from Bika StarX team and have not received funds from other projects.
+   Funds only from Bika StarX team and have not received funds from other projects.
 
 - Previous grants you may have applied for.
 
-This is the first.
+   This is the first.
