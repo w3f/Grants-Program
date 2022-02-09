@@ -110,11 +110,11 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 - Name of team leader
 
-Jhonny Allen Co-Founder
+   Jhonny Allen Co-Founder
 
 - Names of team members
 
-Arif Rahman CEO of Dapps and application development.  Head of community and social operations, Luke Texas administration and web development CTO, John Rodriguez as vice president.
+   Arif Rahman CEO of Dapps and application development.  Head of community and social operations, Luke Texas administration and web development CTO, John Rodriguez as vice president.
 
 
 ### Contact
