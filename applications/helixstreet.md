@@ -5,7 +5,7 @@
 - **Project Name:** helixstreet parathread
 - **Team Name:** helixstreet
 - **Payment Address:** bc1qvu2mjjm602rqshwkspy2v7a6wke529uzkucnej
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
@@ -56,9 +56,9 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:**
+- **Contact Name:** Thomas Deisen
+- **Contact Email:** thomas.deisen@helixstreet.io
+- **Website:** https://helixstreet.io
 
 ### Legal Structure
 
