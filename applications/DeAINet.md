@@ -142,7 +142,7 @@ GitHub accounts of all team members.
 - **Full-Time Equivalent (FTE):**  4
 - **Total Costs:** 48500 USDT
 
-### Milestone 1 — DeAPI Documentation, Algorithm NFT Mint & Marketplace
+### Milestone 1 — DeAPI Documentation, Cross-Chain Algorithm NFT Mint & Marketplace
 
 - **Estimated duration:** 2 month
 - **FTE:**  4
@@ -155,10 +155,10 @@ GitHub accounts of all team members.
 | 0c. | Testing Guide | We will provide a full test suite and guide for algorithm NFT mint and trade using moonriver on kusama|
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | NFT Mint Smart Contract | The EVM compatible smart contracts will be deployed on moonriver with kusama consensus for algorithm NFT mint. In this milestone, all the algorithm NFTs are code avatars or non-functional piece of code. Once, the whole ecosystem was finished, the corresponding profitable NFT or digital patient NFT will be sent as an airdrop to the code avatar holders. |  
-| 2. | Crosschain Algorithm NFT marketplace | We will setup an NFT marketplace with multichain system through moonriver and kusama cross-chain technology. For instance, the cross-chain NFTs could be sold and traded on multiple cross-chain marketplaces such as Opensea, Singular, RMRK, and NFTTrade |  
+| 1. | NFT Mint Smart Contract | The EVM compatible smart contracts will be deployed on moonriver with kusama consensus for algorithm NFT mint. In this milestone, all the algorithm NFTs are code avatars or non-functional piece of code. Once, the whole ecosystem was finished, the corresponding profitable NFT or digital patent NFT will be sent as an airdrop to the code avatar holders. |  
+| 2. | Crosschain Algorithm NFT marketplace | We will setup an NFT marketplace with multichain system by moonriver and kusama cross-chain technology. For instance, the cross-chain NFTs could be sold and traded on multiple cross-chain marketplaces such as Opensea, Singular, RMRK, and NFT-Trade |  
 | 3. | UI & Frontend | The frontend and UI of NFT mint and cross-chain trading will be finished in this milestone. |  
-| 4. | Initial Algorithm NFT Offer | Several notable AI algorithm inventors & researchers will mint their typical achievements as algorithm NFTs on DeAI network as an NFT crowdsale.|  
+| 4. | Initial Algorithm NFT Offer | We will invite some notable AI algorithm inventors & researchers will mint their typical academic research achievements to algorithm NFTs on DeAI network as an NFT crowdsale. Those tradable NFTs will become functional as digital patents to earn patent fees for holders once the whole project is established. |  
 
 
 ### Milestone 2 — DeAI Protocol, Miner & Inventor and User Network
@@ -170,14 +170,14 @@ GitHub accounts of all team members.
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0|
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how four roles: User, Miner, Inventor, Stakers can work together for win-win to maximize their profit and lower their cost with a finely detailed example.|
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains and guides to four roles: User, Miner, Inventor, Stakers respectively with some finely detailed examples. For instance, how to setup machines and mine tokens for miners.|
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests for three networks: User network, Miner network, and Inventor network.|
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | User network| The callable DeAPIs in the application layer of the network for users to send requests and retrieve the responses which also implements a DPoS consensus with smart contracts on moonriver/kusama to guarantee the decentralization, venerable and security. |
-| 2. | Miner network | The computational power providers or miners in the network to offer decentralized AI as a Service which aim to execute DeAPI to reply DeResponse for user's DeRequest. All the DeAPIs are deployed by Inventors on each miner. |
-| 3. | Inventor network & DAO | A DAO sub-project for Inventors such as AI researchers and developers to submit their code and pretrain weights to setup AI service API through DAO mechanism which is a decentralized App with a UI website interface. Only accepted DeAPIs are deployed to miners to setup AI services for users.|
-| 4. | UI & Frontend | The frontend for three networks including DeAPI description for user access, document website for miner DeAPI execution and Inventor submission DAO project|  
+| 0e. | Article | We will publish an **article**/workshop that explains (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above). |
+| 1. | User network| The callable DeAPIs in the application layer of the network for users to send requests and retrieve the responses which also implements a DPoS consensus with smart contracts on moonriver/kusama to guarantee the decentralization, endurance and security. |
+| 2. | Miner network | The computational power providers or miners in the network to offer decentralized AI as a Service which aim to execute DeAPI to reply DeResponse for user's DeRequest. Each DeAPI is deployed by an Inventor on all miners with sharding technology. |
+| 3. | Inventor network & DAO | A DAO sub-project for Inventors such as AI researchers and developers to submit their code and pretrain weights to setup AI service APIs through DAO mechanism which is a decentralized App with a UI website interface. Only accepted DeAPIs are deployed to miners to setup AI services for users. |
+| 4. | UI & Frontend | The frontend user interface of three networks and four roles including DeAPI description for user access, and document website to guide miner DeAPI execution, Inventor submission DAO project, and token staking. |  
 
 ## Future Plans
 
