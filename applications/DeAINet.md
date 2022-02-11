@@ -11,7 +11,7 @@
 
 ### Overview
 
-The DeAI project aims to deliver a fully decentralized artificial intelligence (AI) service network with highly scalable, crypto token incentivized and results in a solution that can serve as the application interface (API) layer in the decentralized development (web3) stack. We present solutions for incentivizing AI nodes for maximum usage of idle resources and distributing AI services for higher availability and security. This grant will allow us to implement a moonriver-based AI algorithm service protocol that can not only be used to decentralize computational provider but also used to create DeAI Algorithm NFT with multi-chain compatibility. All the AI pretrained weight files and source code will be deployed on IPFS as well as Algorithm NFT.
+The DeAI project aims to deliver a fully decentralized artificial intelligence (AI) service network with highly scalable, crypto token incentivized and results in a solution that can serve as the application interface (API) layer in the decentralized development (web3) stack. We present solutions for incentivizing AI nodes for maximum usage of idle resources and distributing AI services for higher availability and security. This grant will allow us to implement a AI service protocol on Kusama blockchain that can not only be used to decentralize computational providers but also used to create DeAI's Algorithm NFT with multi-chain compatibility with moonriver. All the AI pretrained weight files and source code will be deployed on IPFS as well as Algorithm NFT.
 
 DeAINet as a part of Moonriver / Kusama / Web 3 Ecosystem and has Following Rich Properties
 
@@ -28,7 +28,7 @@ DeAINet as a part of Moonriver / Kusama / Web 3 Ecosystem and has Following Rich
   ![image](https://user-images.githubusercontent.com/95557343/152795929-621711c2-8ab9-4af5-8dfe-078ad29ee7ee.png)
 
   - Users pay DEAI token to access DeAPIs. DeAINet will periodically generate a certain
-amount of new DEAI tokens and half of them will reward to the most active
+amount of new DEAI tokens and half of them will reward the most active
 users. Another half tokens distribute to a random address as an airdrop.
 After 4 years, no more DEAI is generated.
 
@@ -39,7 +39,7 @@ redundancy exactly achieves the decentralization and reliability of DeAINet.
   - Inventors earn 5% users’ paid DEAI as patent fee aside from miners, since they
 are AI researchers or developers who invent and create new DeAPIs.
 
-  - DEAI Stakers share profit from miners by staking DEAI to miners for DPoS
+  - DEAI Stakers share profit from miners by staking DEAI to miners to select high-quality miners to execute DeAPIs in a DPoS
 (Delegation PoS) consensus.
 
 ![image](https://user-images.githubusercontent.com/95557343/153165766-e5a4fd52-49e6-489a-a422-e9aa9ccd080e.png)
@@ -61,26 +61,26 @@ are AI researchers or developers who invent and create new DeAPIs.
   It consists of all the computational power providers to offer decentralized AI as a Service which undertake to execute DeAPI to reply DeResponse for user's DeRequest. All the DeAPIs are deployed by Inventors on each miner. Thus, one miner is crashed other miners could follow up to replace the old one. This redundancy with shading could guarantee the decentralized and robustness for DeAI network. 
   
   2. **Inventor Network**
-  It is a DAO sub-project for Inventors such as AI researchers and developers to submit their code and pretrain weights to setup AI service API through DAO mechanism which is a decentralized App with a UI website interface. Any inventors can submit a proposal to setup APIs but, only DAO approved proposals could finally be realized and accepted to deploy on all the miners. Therefore, DAO could make sure the quality and necessity for a new API creation. Meanwhile, once a new DeAPI is setup, a corresponding algorithm NFT is minted and send to inventors address as a digital patent. The user's  paid fee will send to NFT holders.
+  It is a DAO sub-project for Inventors such as AI researchers and developers to submit their code and pretrain weights to setup AI service API through DAO mechanism which is a decentralized App with a UI website interface. Any inventors can submit a proposal to setup APIs but, only DAO-approved proposals could finally be realized and accepted to deploy on all the miners. Therefore, DAO could make sure the quality and necessity for new API creations. Meanwhile, once a new DeAPI is setup, a corresponding algorithm NFT is minted and sent to inventors address as a digital patent. The user's paid fee will send to NFT holders.
   
   3. **User Network**
-  It consists of all the callable DeAPIs in the application layer for users to send request and retrieve the response which also implements a DPoS concensus aside from moonriver/kusama to guarantee the decentralization, venerable and security. 
+  It consists of all the callable DeAPIs in the application layer for users to send request and retrieve the response which also implements a DPoS concensus aside from moonriver/kusama to guarantee decentralization, venerable, and security. 
   
   4. **NFT Marketplace**
   A marketplace beyond the DeAINet for traders to buy and sell algorithm NFT or digital patent to earn gains. 
 
 ### Ecosystem Fit
 
-Using blockchain technology to construct a decentralized network to provide AaaS (AI as a Service) for App/Dapp developers to replace centralized API providers such as Microsoft Azure and Google AI.  We devote to build a decentralized SaaS platform to combine millions of users, computational power providers with API inventors in such a harmony way for offering extremely low costing and privacy preserving services in Web3.0 era. DeAI aims to become the world largest decentralized SaaS platform to provide high-quality API services with extremely cheap prices for Kusama multichain ecosystem. 
+Using blockchain technology to construct a decentralized network to provide AaaS (AI as a Service) for App/Dapp developers to replace centralized API providers such as [Microsoft Azure](https://docs.microsoft.com/en-us/rest/api/azureml/) and [Google AI](https://cloud.google.com/products/ai).  We are devoted to building a decentralized SaaS platform to combine millions of users, computational power providers with API inventors in such a harmony way for offering extremely low costing and privacy-preserving services in Web3.0 era. DeAI aims to become the world largest decentralized SaaS platform to provide high-quality API services with extremely cheap prices for Kusama multichain ecosystem. It is worth to mentioning that DeAI only focuses on the inference or deployment phase of machine models to provide decentralized AI services, thus the training-related things should be solved by Inventors themselves. Once the training is completed, the pretrained weights and related code can be submitted to DeAINet as a DeAPI proposal and prepared to deploy on miners. 
 
 Similar Projects:
-- **Livepeer** https://livepeer.org/ Only provides video encoding service instead of general usage. 
-- **SingularityNet** https://singularitynet.io/ It's just a distributive AI API store with no API deployment redundancy to guarantee high performance, robustness and privacy preserving. There is no miner-inventor isolation to clear division of labour for API creation and execution. 
-- **API3** https://api3.org/ It's a decentralized Oracle to provide off-chain data streaming for smart contract instead of on-chain computation works. 
+- **Livepeer** https://livepeer.org/ It provides video encoding service instead of general Web3.0 SaaS usage. 
+- **SingularityNet** https://singularitynet.io/ It's just a distributive AI API store with no API deployment redundancy to guarantee high performance, robustness and privacy-preserving. There is no miner-inventor isolation to clear division of labor for API creation and execution and all the works are assigned to a centralized API provider, thus their system did not work well.
+- **API3** https://api3.org/ It's a decentralized Oracle to provide off-chain data streaming for smart contract instead of on-chain computation things to offer a SaaS in Web3.0. 
 
-AI market in Web3.0 and Metaverse:
+AI market in Dapp, Web3.0, and Metaverse:
 
-- **Basic Recognition** Speech2Text, Voice2Text, Image Recognition, UGC NFT Recognition, Marketing Analysis, Algorithm Recommendation and Behavior Analysis. 
+- **Basic Recognition** Speech2Text, Voice2Text, Image Recognition, UGC NFT Recognition, Marketing Analysis, Algorithm Recommendation, and Behavior Analysis. 
 - **Game** PVE, Bot-AI
 
 
@@ -98,7 +98,7 @@ development. He has mined bitcoin since 2015. Therefore, he has a lot of experie
 
 - **Israel** is the core developer of DeAI and undertakes the development of the inventor submission network. Besides, he is the CTO of Chapa. He is the founder of Colimo City. Previously, He was the AI researcher in Google Brain, MILA of Turing Award Winner Yoshua Bengio’s Lab. He has 4 years of experience in AI development.
 
-- **Haruki** is an AI Ph.D. and vice president of DeAI to build DeAPI on p2p network and financing-related works. Currently, he is an AI researcher and blockchain developer. He has written computer programs since he was 14 and got many hackathon awards in the past. 
+- **Haruki** is a Ph.D. in artificial intelligence and vice president of DeAI to build DeAPI on p2p network and financing-related works. Currently, he is an AI researcher and blockchain developer. He has written computer programs since he was 14 and got many hackathon awards in the past. 
 
 
 ### Contact
@@ -155,10 +155,10 @@ GitHub accounts of all team members.
 | 0c. | Testing Guide | We will provide a full test suite and guide for algorithm NFT mint and trade using moonriver on kusama|
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | NFT Mint Smart Contract | The EVM compatible smart contract will be deployed on moonriver with kusama consensus for algorithm NFT mint. In this milestone, all the algorithm NFTs are code avatars or non-functional piece of code. Once, the whole ecosystem is finished, the corresponding profitable NFT or digital patient will be send as an airdrop to the code avatar holders. |  
-| 2. | Crosschain Algorithm NFT marketplace | We will setup a NFT marketplace with multichain system through moonriver and kusama cross-chain technology. For instance, the cross-chain NFTs could be sold and traded on Opensea, Singular, RMRK and NFTTrade |  
+| 1. | NFT Mint Smart Contract | The EVM compatible smart contracts will be deployed on moonriver with kusama consensus for algorithm NFT mint. In this milestone, all the algorithm NFTs are code avatars or non-functional piece of code. Once, the whole ecosystem was finished, the corresponding profitable NFT or digital patient NFT will be sent as an airdrop to the code avatar holders. |  
+| 2. | Crosschain Algorithm NFT marketplace | We will setup an NFT marketplace with multichain system through moonriver and kusama cross-chain technology. For instance, the cross-chain NFTs could be sold and traded on multiple cross-chain marketplaces such as Opensea, Singular, RMRK, and NFTTrade |  
 | 3. | UI & Frontend | The frontend and UI of NFT mint and cross-chain trading will be finished in this milestone. |  
-| 4. | Initial Algorithm NFT Offer | Several notable AI algorithm inventors & researchers will mint their typical achievements as algorithm NFTs on DeAI network as a NFT crowdsale.|  
+| 4. | Initial Algorithm NFT Offer | Several notable AI algorithm inventors & researchers will mint their typical achievements as algorithm NFTs on DeAI network as an NFT crowdsale.|  
 
 
 ### Milestone 2 — DeAI Protocol, Miner & Inventor and User Network
@@ -170,11 +170,11 @@ GitHub accounts of all team members.
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0|
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how four roles: User, Miner, Inventor, Stakers can work together for win-win to maximum their profit and lower their cost with a finely detailed example.|
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests for three networks: User network, Miner network and Inventor network.|
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how four roles: User, Miner, Inventor, Stakers can work together for win-win to maximize their profit and lower their cost with a finely detailed example.|
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests for three networks: User network, Miner network, and Inventor network.|
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | User network| The callable DeAPIs in the application layer of the network for users to send request and retrieve the response which also implements a DPoS concensus with smart contract on moonriver/kusama to guarantee the decentralization, venerable and security. |
+| 1. | User network| The callable DeAPIs in the application layer of the network for users to send requests and retrieve the responses which also implements a DPoS consensus with smart contracts on moonriver/kusama to guarantee the decentralization, venerable and security. |
 | 2. | Miner network | The computational power providers or miners in the network to offer decentralized AI as a Service which aim to execute DeAPI to reply DeResponse for user's DeRequest. All the DeAPIs are deployed by Inventors on each miner. |
 | 3. | Inventor network & DAO | A DAO sub-project for Inventors such as AI researchers and developers to submit their code and pretrain weights to setup AI service API through DAO mechanism which is a decentralized App with a UI website interface. Only accepted DeAPIs are deployed to miners to setup AI services for users.|
 | 4. | UI & Frontend | The frontend for three networks including DeAPI description for user access, document website for miner DeAPI execution and Inventor submission DAO project|  
