@@ -225,7 +225,7 @@ We have Matrix/Element channels for real-time discussions on Web3 and Polkadot. 
 
 Besides, we also have a **community room for all grant recipients**. Head over to that room to share your experience with other grantees, ask grants-related questions or simply hang out:
 
-- [W3F Grants Community](https://matrix.to/#/!rdJOXrswfxmnBFwGWt:web3.foundation)
+- [W3F Grants Community](https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&via=matrix.org)
 
 ## :rocket: Alternative Funding Sources
 
