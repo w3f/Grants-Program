@@ -181,8 +181,8 @@ GitHub accounts of all team members.
 
 ## Future Plans
 
-- Adding general SaaS service applications rather than AI field into the project.
-- Marketing to develop DeAI's ecosystem to make the world in a better place with a fully decentralized AI SaaS computing platform, since we believe the decentralized AI will be a general quantizer for all human behavior and further become the border of smart contracts on blockchain in the future.  
+- Adding generic SaaS service applications rather than just AI services into the project.
+- Marketing the project to develop DeAI's ecosystem to make the world in a better place with a fully decentralized AI SaaS computing platform, since we believe finally the decentralized AIs will be generic quantizers for all human behaviors and further become the border of smart contracts on blockchain in the future.  
 
 
 ## Additional Information :heavy_plus_sign:
