@@ -94,4 +94,4 @@ The pallet is gradually expanded to document the relationship to other public ke
 
 **How did you hear about the Grants Program?** Web3 Foundation Website
 
-The project is a very long term project. Parallel to the Blockchain and decentralized governance development there is actually a game changing shift in the sequencing technology (SMRT Long Read Sequencing ) based on the availability of HiFi sequencing which allows the sequencing of human ( and other species ) in a reference grade level quality.
+The project is a very long term project. Parallel to the Blockchain and decentralized governance development there is actually a game changing shift in the sequencing technology (SMRT Long Read Sequencing ) based on the availability of HiFi sequencing which allows the sequencing of human DNA ( and other species ) in a reference grade level quality.
