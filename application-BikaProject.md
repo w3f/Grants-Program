@@ -205,14 +205,14 @@ If you've already started implementing your project or it is part of a larger re
 
 - **Total Estimated Duration:** 8 months
 - **Full-Time Equivalent (FTE):** 3 FTE
-- **Total Costs:** 14,000 USD
+- **Total Costs:** 10,000 USD
 
 
 ### Milestone 1 Example — Implement Substrate Modules
 
 - **Estimated duration:** 3 month
 - **FTE:**  1
-- **Costs:** 6,000 USD
+- **Costs:** 4,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -232,7 +232,7 @@ If you've already started implementing your project or it is part of a larger re
 
 - **Estimated Duration:** 5 month
 - **FTE:**  1
-- **Costs:** 8,000 USD
+- **Costs:** 6,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
