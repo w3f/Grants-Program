@@ -178,7 +178,7 @@ If you've already started implementing your project or it is part of a larger re
 
 - include the amount of funding requested _per milestone_.
 
-   10,000 USD
+   5,000 USD
 
 - include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
 
