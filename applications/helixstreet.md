@@ -7,7 +7,6 @@
 - **Payment Address:** bc1qvu2mjjm602rqshwkspy2v7a6wke529uzkucnej
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
@@ -16,7 +15,7 @@
 
 helixstreet is a project to extend the use of Blockchain technology to genomics. helixstreet chose substrate as technology to implement a pallet to store a Merkle tree hash of genomic raw sequencing data. Relationsships ( ancestry ) can be documented in the blockchain based on relationships between genomic data. Currently we are planning to implement helixstreet as parathread.
 
-Ancestry data an personal genomic relationships are today centralized. helixstreet's approach allows the representation of ancestry data in a decentralized manner.
+Ancestry data and personal genomic relationships are today stored centralized. helixstreet's approach allows the representation of ancestry data in a decentralized manner.
 
 
 ### Project Details
@@ -25,7 +24,7 @@ The project is in this stage just a pallet.
 
 ### Ecosystem Fit
 
-The project extends the use of Polkadot to a whole new use case. helixstreet would be an application specific parathread. It solves the problem of ownership of genomic data and the the human desire to conduct genealogical research without a central authority.
+The project extends the use of Polkadot ( or Kusama ) to a whole new use case. helixstreet would be an application specific parathread. It solves the problem of ownership of genomic data and the the human desire to conduct genealogical research without a central authority.
 
 ## Team :busts_in_silhouette:
 
@@ -82,7 +81,7 @@ N/A
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can send test transactions, which will show how the new functionality works. |
-| 1. | Substrate module: genomics | We will create a Substrate module that will.store the merkle hash of genomic sequencing raw data an a rust program to create the hash
+| 1. | Substrate module: genomics | We will create a Substrate module that will.store the merkle hash of genomic sequencing raw data and a rust program to create the hash
 
 
 
@@ -95,4 +94,4 @@ The pallet is gradually expanded to document the relationship to other public ke
 
 **How did you hear about the Grants Program?** Web3 Foundation Website
 
-The project is a very long term project. Parallel to the Blockchain and decentralized governance development there is actually a a game changing shift in the sequencing technology bases on the availability of HiFi sequencing which allows the sequencing of human ( and other species ) in a reference grade level quality.
+The project is a very long term project. Parallel to the Blockchain and decentralized governance development there is actually a game changing shift in the sequencing technology (SMRT Long Read Sequencing ) based on the availability of HiFi sequencing which allows the sequencing of human ( and other species ) in a reference grade level quality.
