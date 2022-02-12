@@ -87,7 +87,7 @@ N/A
 
 ## Future Plans
 
-The pallet is gradually expanded to document the relationship to other public keys. It is also examining the possibility of working with HiFi sequencing manufacturers who could store genomic footprints directly from the machines in the blockchain. Longterm we plan to develop a healthcare ecosystem in the blockchain based on genomic data.
+The pallet is gradually expanded to document the relationship to other public keys. There is also the possibility of working together with HiFi sequencing manufacturers ( e.g. PACB ) who could store genomic footprints directly from the machines in the blockchain. Longterm we plan to develop a healthcare ecosystem in the blockchain based on genomic data.
 
 
 ## Additional Information :heavy_plus_sign:
