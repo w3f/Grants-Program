@@ -13,11 +13,11 @@ Please provide the following:
 
 - If the name of your project is not descriptive, a tag line (one sentence summary).
 
-Implementation in one of programming languages of my hash function to pairing-friendly curves BLS12 (for example, BLS12-381 or BLS12-377).
+Implementation in Sage of my hash function to pairing-friendly curves BLS12 (for example, BLS12-381 or BLS12-377).
   
 - A brief description of your project.
 
-Recently, my article https://link.springer.com/article/10.1007/s10623-022-01012-8 was published in the quite prestigious cryptographic journal "Designs, Codes and Cryptography". This article provides a new hash function (indifferentiable from a random oracle) to the subgroup G1 of pairing-friendly elliptic curves BLS12-381 and BLS12-377 (Barreto-Lynn-Scott). These curves and such hash functions are actively used in blockchains, namely in the BLS (Boneh-Lynn-Shacham) aggregate signature. My hash function is much faster than previous state-of-the-art ones, including the Wahby-Boneh indirect map. For instance, BLS12-377 is defined over a highly 2-adic finite field Fp (of characteristic p), hence the indifferentiable Wahby-Boneh hash function requires to apply twice the slow Tonelli-Shanks algorithm for extracting two square roots in the basic field. In comparison, the new hash function extracts only one cubic root, which can be expressed via one exponentiation in Fp. I have already checked the correctness of my results in the computer algebra system Magma. The project is dedicated to implementing the new hash function in one of industrial programming languages (according to my wish or yours).
+Recently, my article https://link.springer.com/article/10.1007/s10623-022-01012-8 was published in the quite prestigious cryptographic journal "Designs, Codes and Cryptography". This article provides a new hash function (indifferentiable from a random oracle) to the subgroup G1 of pairing-friendly elliptic curves BLS12-381 and BLS12-377 (Barreto-Lynn-Scott). These curves and such hash functions are actively used in blockchains, namely in the BLS (Boneh-Lynn-Shacham) aggregate signature. My hash function is much faster than previous state-of-the-art ones, including the Wahby-Boneh indirect map. For instance, BLS12-377 is defined over a highly 2-adic finite field Fp (of characteristic p), hence the indifferentiable Wahby-Boneh hash function requires to apply twice the slow Tonelli-Shanks algorithm for extracting two square roots in the basic field. In comparison, the new hash function extracts only one cubic root, which can be expressed via one exponentiation in Fp. I have already checked the correctness of my results in the computer algebra system Magma. The project is dedicated to implementing the new hash function in Sage.
   
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 
@@ -41,7 +41,7 @@ Hashing to elliptic curves in the BLS (Boneh-Lynn-Shacham) aggregate signature.
 
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 
-Developers who will use my hash function already implemented.
+Developers who will easily adopt my high-level implementation for their low-level programming languages such as Rust.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   - If so, how is your project different?
@@ -107,18 +107,11 @@ https://link.springer.com/article/10.1007/s10623-022-01012-8
 - **Total Costs:** 10,000 USD
 
 
-### Milestone 1 — Learning the syntax of the desired programming language (in fact, the advance payment for the milestone 2)
+### Milestone 1 — Implementation of the new hash function
 
-- **Estimated duration:** 3 months
+- **Estimated duration:** 6 months
 - **FTE:**  1
-- **Costs:** 5,000 USD  
-
-
-### Milestone 2 — Implementation of the new hash function
-
-- **Estimated Duration:** 3 months
-- **FTE:**  1
-- **Costs:** 5,000 USD
+- **Costs:** 10,000 USD  
 
 ...
 
