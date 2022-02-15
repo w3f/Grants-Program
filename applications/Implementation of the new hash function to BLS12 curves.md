@@ -21,7 +21,7 @@ Recently, my article https://link.springer.com/article/10.1007/s10623-022-01012-
   
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 
-If I am not mistaken, hashing to curves BLS12-381 or BLS12-377 is applied in these technologies.
+According to the web page https://wiki.polkadot.network/docs/learn-keys, the BLS signature will be in particular used in Polkadot.
   
 - An indication of why your team is interested in creating this project.
 
