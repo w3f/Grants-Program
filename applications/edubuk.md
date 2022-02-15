@@ -33,8 +33,6 @@ Smart Contracts code saved here on Github Repository: GitHub - edubuk/Edubukio-b
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
 Images below for the screenshots of the contract deployment on the Polygon Mumbai Testnet: This has been checked by team: Zeeve to cross check the contracts (audit it).
 
 ![image](https://user-images.githubusercontent.com/41775852/154083263-b4bfc0a9-7098-45f9-8b98-fea619d0509d.png)
@@ -135,7 +133,7 @@ MS from London School of Economics
 ### Legal Structure
 
 - **Registered Address:** F-507, Aditya Imperial Heights, Hafeezpet, Hyderabad-500049, Telangana, India.
-- **Registered Legal Entity:** Eduprovince Technologies Private Limitied.
+- **Registered Legal Entity:** Eduprovince Technologies Private Limited.
 
 ### Team's experience
 
