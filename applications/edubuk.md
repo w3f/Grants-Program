@@ -203,10 +203,10 @@ Total Funds invested till date: USD 60,000 as below:
 Founders Money Invested: USD 25,000 (2019-2021)
 AWS Credits Received : USD 25,000 (2019-2021)
 Polygon Blockchain Ecosystem Grant: 10,000 (Jan 2022)
-![image](https://user-images.githubusercontent.com/41775852/154086608-a23dce81-cb4e-4f09-981e-f690bd6e5535.png)
 
 Edubuk is globally award winning by reputed organization:
-![image](https://user-images.githubusercontent.com/41775852/154086768-0bb54375-0e24-4aca-897f-8160e89c4858.png)
+![image](https://user-images.githubusercontent.com/41775852/154088324-684c81c2-68dd-4483-b55c-c18476df0f97.png)
+
 
 Edubuk is a part of 2 accelerator programs: ![image](https://user-images.githubusercontent.com/41775852/154086821-4f9f0001-05aa-4028-a09f-73bce6d4fae6.png)
  and ![image](https://user-images.githubusercontent.com/41775852/154086848-95f29efc-4e5c-465a-a8a9-12420484bd81.png)
