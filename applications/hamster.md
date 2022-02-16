@@ -32,7 +32,7 @@ Hamster is composed of Hamster nodes, Hamster resource providers, Hamster client
   - Receive rewards: Revenue for those who provide gateway resources.
   - Configuration: Basic configuration of p2p gateway information.
 
-- Hamster Provider: can provide compute resources and register them with Hamster Node. Compute resources are provided using both vm virtual machine technology and docker technology. Currently vm virtual machine technology is used to better protect user privacy.That include **Initialize configuration**,**Resource details**,**Account information** and **Configuration information** module.
+- Hamster Provider: can provide compute resources and register them with Hamster Node. Compute resources are provided using both vm virtual machine technology and docker technology. Currently vm virtual machine technology is used to better protect user privacy. That includes the **Initialize configuration**, **Resource details**, **Account information** and **Configuration information** modules.
   - Initialize configuration: Initialize configuration, including p2p seed node configuration, p2p port configuration.
   - Resource details: Available spare resource specifications (cpu, memory, etc.), and price.
   - Account information: Provide the import of the substrate account, provide the pledge of the deposit before the service, etc.
