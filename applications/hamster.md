@@ -38,7 +38,7 @@ Hamster is composed of Hamster nodes, Hamster resource providers, Hamster client
   - Account information: Provide the import of the substrate account, provide the pledge of the deposit before the service, etc.
   - Configuration information: resources that have not reached a transaction are offline at any time, resource specifications, price configuration, etc.
 
-- Hamster Client: After purchasing in the front end marketplace, users can view their purchased compute resources through the client and link to them. That include **Market**,**My order** and **My resource** module.
+- Hamster Client: After purchasing compute resources in the front-end marketplace, users can view them through the client and link to them. That includes the **Market**, **My order** and **My resource** modules.
   - Market: A trading market where computing power providers submit idle computing power to the market and configure prices. The client can choose the configuration and price resources to be purchased to form a transaction contract.
   - My Orders: List and details of all resource orders I have purchased.
   - My resources: The list of resources corresponding to the current valid order, the client app can establish a connection with the remote resources through the list of resources.
