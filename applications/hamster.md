@@ -27,9 +27,21 @@ Hamster is composed of Hamster nodes, Hamster resource providers, Hamster client
   - pallet_provider: performs resource provider registration and provider resource information storage, and provides a computational marketplace
   - pallet_resource-order: performs resource lease order functions and lease agreement execution
   - pallet_gateway: The gateway mainly has the following functions: gateway registration, gateway heartbeat detection, gateway status reset, gateway drop penalty, and receive rewards. The main role is to add the gateway as an important player in the shared computing platform
-- Hamster Gateway: p2p gateway with public IP, used to link information between resource provider and resource user, built with libp2p component, is the cornerstone of the leased resource availability, can register itself to Hamster Node
-- Hamster Provider: can provide compute resources and register them with Hamster Node. Compute resources are provided using both vm virtual machine technology and docker technology. Currently vm virtual machine technology is used to better protect user privacy
-- Hamster Client: After purchasing in the front end marketplace, users can view their purchased compute resources through the client and link to them.
+- Hamster Gateway: p2p gateway with public IP, used to link information between resource provider and resource user, built with libp2p component, is the cornerstone of the leased resource availability, can register itself to Hamster Node. That include **Register**,**Receive rewards ** and **Configuration** module.
+  - Register: Register Gateway information to Hamster Node.
+  - Receive rewards: Revenue for those who provide gateway resources.
+  - Configuration: Basic configuration of p2p gateway information.
+
+- Hamster Provider: can provide compute resources and register them with Hamster Node. Compute resources are provided using both vm virtual machine technology and docker technology. Currently vm virtual machine technology is used to better protect user privacy.That include **Initialize configuration**,**Resource details**,**Account information** and **Configuration information** module.
+  - Initialize configuration: Initialize configuration, including p2p seed node configuration, p2p port configuration.
+  - Resource details: Available spare resource specifications (cpu, memory, etc.), and price.
+  - Account information: Provide the import of the substrate account, provide the pledge of the deposit before the service, etc.
+  - Configuration information: resources that have not reached a transaction are offline at any time, resource specifications, price configuration, etc.
+
+- Hamster Client: After purchasing in the front end marketplace, users can view their purchased compute resources through the client and link to them. That include **Market**,**My order** and **My resource** module.
+  - Market: A trading market where computing power providers submit idle computing power to the market and configure prices. The client can choose the configuration and price resources to be purchased to form a transaction contract.
+  - My Orders: List and details of all resource orders I have purchased.
+  - My resources: The list of resources corresponding to the current valid order, the client app can establish a connection with the remote resources through the list of resources.
 - Hamster Front End: Hamster Dapp, which allows users to purchase compute resources that have already been provided, and pay a certain Token to purchase a certain amount of time to use the compute resources. We can pay by the hour for more flexible use.
 
 
@@ -203,9 +215,9 @@ The following is a list of the features that have been implemented:
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
+- **Total Estimated Duration:** ~~3 months~~ 2months
 - **Full-Time Equivalent (FTE):**  4 FTE
-- **Total Costs:** $38,400
+- **Total Costs:** ~~$38,400~~ $25,600
 
 ### Milestone 1 Example — Implement Hamster Client and Provider Modules
 
@@ -216,12 +228,11 @@ The following is a list of the features that have been implemented:
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use Hamster to share and use computing resources |
+| 0b. | Documentation | We will provide online documentation of the code and a basic tutorial that includes<br/>1. Hamster Client installation tutorial<br/>2. Hamster Client usage tutorial<br/>3. Hamster Provider installation tutorial<br/>4. Hamster Provider usage tutorial<br/>5. Hamster Chain installation tutorial<br/>6. Hamster Chain usage tutorial |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Hamster Client | We will create a desktop client that will have **Market**,**My order** and **My resource** module. |
-| 2. | Hamster Provider | We will create a a resource provider server that will have **Initialize configuration**,**Resource details**,**Account information** and **Configuration information** module. |
-| 3. | Hamster Provider: web app | We will create a web app integrated in the Hamster Provider, to let users easily interact with our Hamster Provider function module. |
+| 1. | Hamster Client | We will create a desktop client that will have **Market**,**My order** and **My resource** module.<br/>We will provide a desktop (windows, macos) app based on [wails](https://wails.io/) to achieve<br/>1: Market inquiry and management of purchased resources,<br/>2: The point-to-point communication between the client and the computing resource provider.<br/>3: Query historical orders<br/>4: Partial fee refund for defaulted orders<br/>Tech stack: go+wails+go-libp2p+vue.js+polkadot.js |
+| 2. | Hamster Provider | We will create a a resource provider server that will have **Initialize configuration**,**Resource details**,**Account information** and **Configuration information** module.<br/>The resource provider will use the idle resources of the machine, register in the market, and declare that it can provide rental. When the provided virtual machine reaches a transaction in the market, the resource provider provides the virtual machine with the corresponding quota for the remote purchaser to use according to the agreement. The resource provider will establish a p2p connection with the used client for remote management, such as ssh, rdesktop, etc.<br/>Our initial idea is to use the libvirt scheme to implement the management of virtual machines. (Windows uses Hyper-V)<br/>Tech stack: go+go-libp2p+libvirt+go-substrate-rpc-client+gin |
+| 3. | Hamster Provider: web app | Web app is a set of web management tools of Provider. Through this set of management tools, users can share or stop sharing idle resources for their own use, set prices for their own idle resources, adjust the specifications of idle resources provided, and modify the provisioning services of idle resources. period, etc. And when a transaction is terminated normally, the desired compensation can be obtained through the contract. (Providing idle resource services requires a certain pledge. After the transaction is breached, part of the pledge deposit will be deducted. If the pledge deposit is too low, other people will not be able to see this idle shared resource in the market)<br/>Tech stack: vue.js+polkadot.js+Node.js |
 | 4. | Hamster chain | pallet_provider, pallet_resource-order modifications and optimizations due to the need to optimize and adapt already developed pallets when adding features for customers. As code delivery of the underlying framework, there are two integrated pallets |
 | 5. | Whitepaper | Preparation of project white papers |
 
@@ -234,33 +245,33 @@ The following is a list of the features that have been implemented:
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use Hamster to share and use computing resources |
+| 0b. | Documentation | We will provide online documentation of the code and a basic tutorial that includes<br/>1. Hamster Gateway installation tutorial<br/>2. Hamster Gateway usage tutorial |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Hamster Gateway | We will create a desktop client that will have **Register**,**Receive rewards ** and **Configuration** module. |
+| 1. | Hamster Gateway | We will create a desktop client that will have **Register**,**Receive rewards ** and **Configuration** module.<br/>Tech stack: go+go-libp2p+libvirt+go-substrate-rpc-client+gin |
 | 2. | Hamster Node: pallet_gateway | We will create a Substrate module that will have **Register gateway**,**Receive rewards** etc function. |
-| 3. | Hamster Gateway: web app | We will create a web app integrated in the Hamster Gateway, to let users easily interact with our Hamster Gateway function module. |
+| 3. | Hamster Gateway: web app | We will create a web app integrated in the Hamster Gateway, to let users easily interact with our Hamster Gateway function module.<br/>Tech stack: vue.js+polkadot.js+Node.js |
 | 4. | Hamster chain | Add a gateway module in the Hamster chain, to enable users to share gateway resources with public IP , receive rewards, etc. |
 
-### Milestone 3 Example — Implement Hamster Anti-malicious attacks Modules
+### ~~Milestone 3 Example — Implement Hamster Anti-malicious attacks Modules~~
 
-- **Estimated duration:** 1 month
-- **FTE:**  4
-- **Costs:** $12,800
+- ~~**Estimated duration:** 1 month~~
+- ~~**FTE:**  4~~
+- ~~**Costs:** $12,800~~
 
-| Number | Deliverable | Specification |
+| ~~Number~~ | ~~Deliverable~~ | ~~Specification~~ |
 |-------:| ----------- | ------------- |
-|    0a. | License | Apache 2.0 |
-|    0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use Hamster to share and use computing resources |
-|    0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-|    0d. | Article | We will write an article or tutorial that explains the work done as part of the grant. |
-|     1. | Evil punishment | Design and implementation of punishment module for evil doing |
-|     2. | Hamster Front end | Front end function addition and optimization to let users easily interact with our Hamster function module. |
-|     3. | Benchmark | Perform unit tests on the individual algorithms to ensure system safety. |
+| ~~0a.~~ | ~~License~~ | ~~Apache 2.0~~ |
+| ~~0b.~~ | ~~Documentation~~ | ~~We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use Hamster to share and use computing resources~~ |
+| ~~0c.~~ | ~~Testing Guide~~ | ~~Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.~~ |
+| ~~0d.~~ | ~~Article~~ | ~~We will write an article or tutorial that explains the work done as part of the grant.~~ |
+| ~~1.~~ | ~~Evil punishment~~ | ~~Design and implementation of punishment module for evil doing~~ |
+| ~~2.~~ | ~~Hamster Front end~~ | ~~Front end function addition and optimization to let users easily interact with our Hamster function module.~~ |
+| ~~3.~~ | ~~Benchmark~~ | ~~Perform unit tests on the individual algorithms to ensure system safety.~~ |
 
 ## Future Plans
 
-Our long-term vision is to provide distributed shared computing power. When the milestone is completed, we will expand the upper level ecology based on resources, where more web services can be built and constructed into a new service ecosystem in the Hamster network. Perhaps it can become a meta-universe service cornerstone possibility.
+Our current goal is to provide distributed shared computing power. After this milestone is completed, we will be able to build our own ecosystem based on resources. That is, when everyone is willing to add their free resources to the hamster network, it can be assumed that there are near-infinite computing resources in the network, and more quality services can be built and constructed in the hamster network. For example, service providers no longer need to rely on the support of a single cloud vendor, but only need to use the computing resources in the hamster network, and the system automatically schedules the resource arithmetic needed for the services to build their own services in the form of edge computing. In addition to this, we can also provide some toolkits so that these computing resources can participate in other services with one click, such as becoming a chain node of Thegraph, so that they can participate in other networks, and later on, we can also use incentives to encourage people to develop toolkits for different ecologies. When more and more people and more service providers participate in the hamster network, maybe it can become a truly decentralized meta-universe service cornerstone.
 
 ## Additional Information :heavy_plus_sign:
 
