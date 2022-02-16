@@ -217,7 +217,7 @@ The following is a list of the features that have been implemented:
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  4 FTE
-- **Total Costs:** ~~$38,400~~ $25,600
+- **Total Costs:** $25,600
 
 ### Milestone 1 Example — Implement Hamster Client and Provider Modules
 
