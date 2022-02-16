@@ -215,7 +215,7 @@ The following is a list of the features that have been implemented:
 
 ### Overview
 
-- **Total Estimated Duration:** ~~3 months~~ 2months
+- **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** ~~$38,400~~ $25,600
 
