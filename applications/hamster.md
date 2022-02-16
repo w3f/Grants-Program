@@ -27,7 +27,7 @@ Hamster is composed of Hamster nodes, Hamster resource providers, Hamster client
   - pallet_provider: performs resource provider registration and provider resource information storage, and provides a computational marketplace
   - pallet_resource-order: performs resource lease order functions and lease agreement execution
   - pallet_gateway: The gateway mainly has the following functions: gateway registration, gateway heartbeat detection, gateway status reset, gateway drop penalty, and receive rewards. The main role is to add the gateway as an important player in the shared computing platform
-- Hamster Gateway: p2p gateway with public IP, used to link information between resource provider and resource user, built with libp2p component, is the cornerstone of the leased resource availability, can register itself to Hamster Node. That include **Register**,**Receive rewards ** and **Configuration** module.
+- Hamster Gateway: p2p gateway with public IP, used to link information between resource provider and resource user, built with libp2p component, is the cornerstone of the leased resource availability, can register itself to Hamster Node. That includes the **Register**, **Receive rewards** and **Configuration** modules.
   - Register: Register Gateway information to Hamster Node.
   - Receive rewards: Revenue for those who provide gateway resources.
   - Configuration: Basic configuration of p2p gateway information.
