@@ -248,7 +248,7 @@ The following is a list of the features that have been implemented:
 | 0b. | Documentation | We will provide online documentation of the code and a basic tutorial that includes<br/>1. Hamster Gateway installation tutorial<br/>2. Hamster Gateway usage tutorial |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will write an article or tutorial that explains the work done as part of the grant. |
-| 1. | Hamster Gateway | We will create a desktop client that will have **Register**,**Receive rewards ** and **Configuration** module.<br/>Tech stack: go+go-libp2p+libvirt+go-substrate-rpc-client+gin |
+| 1. | Hamster Gateway | We will create a desktop client that will have **Register**, **Receive rewards** and **Configuration** module.<br/>Tech stack: go+go-libp2p+libvirt+go-substrate-rpc-client+gin |
 | 2. | Hamster Node: pallet_gateway | We will create a Substrate module that will have **Register gateway**,**Receive rewards** etc function. |
 | 3. | Hamster Gateway: web app | We will create a web app integrated in the Hamster Gateway, to let users easily interact with our Hamster Gateway function module.<br/>Tech stack: vue.js+polkadot.js+Node.js |
 | 4. | Hamster chain | Add a gateway module in the Hamster chain, to enable users to share gateway resources with public IP , receive rewards, etc. |
