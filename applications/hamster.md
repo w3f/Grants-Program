@@ -253,22 +253,6 @@ The following is a list of the features that have been implemented:
 | 3. | Hamster Gateway: web app | We will create a web app integrated in the Hamster Gateway, to let users easily interact with our Hamster Gateway function module.<br/>Tech stack: vue.js+polkadot.js+Node.js |
 | 4. | Hamster chain | Add a gateway module in the Hamster chain, to enable users to share gateway resources with public IP , receive rewards, etc. |
 
-### ~~Milestone 3 Example — Implement Hamster Anti-malicious attacks Modules~~
-
-- ~~**Estimated duration:** 1 month~~
-- ~~**FTE:**  4~~
-- ~~**Costs:** $12,800~~
-
-| ~~Number~~ | ~~Deliverable~~ | ~~Specification~~ |
-|-------:| ----------- | ------------- |
-| ~~0a.~~ | ~~License~~ | ~~Apache 2.0~~ |
-| ~~0b.~~ | ~~Documentation~~ | ~~We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use Hamster to share and use computing resources~~ |
-| ~~0c.~~ | ~~Testing Guide~~ | ~~Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.~~ |
-| ~~0d.~~ | ~~Article~~ | ~~We will write an article or tutorial that explains the work done as part of the grant.~~ |
-| ~~1.~~ | ~~Evil punishment~~ | ~~Design and implementation of punishment module for evil doing~~ |
-| ~~2.~~ | ~~Hamster Front end~~ | ~~Front end function addition and optimization to let users easily interact with our Hamster function module.~~ |
-| ~~3.~~ | ~~Benchmark~~ | ~~Perform unit tests on the individual algorithms to ensure system safety.~~ |
-
 ## Future Plans
 
 Our current goal is to provide distributed shared computing power. After this milestone is completed, we will be able to build our own ecosystem based on resources. That is, when everyone is willing to add their free resources to the hamster network, it can be assumed that there are near-infinite computing resources in the network, and more quality services can be built and constructed in the hamster network. For example, service providers no longer need to rely on the support of a single cloud vendor, but only need to use the computing resources in the hamster network, and the system automatically schedules the resource arithmetic needed for the services to build their own services in the form of edge computing. In addition to this, we can also provide some toolkits so that these computing resources can participate in other services with one click, such as becoming a chain node of Thegraph, so that they can participate in other networks, and later on, we can also use incentives to encourage people to develop toolkits for different ecologies. When more and more people and more service providers participate in the hamster network, maybe it can become a truly decentralized meta-universe service cornerstone.
