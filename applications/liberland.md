@@ -31,10 +31,6 @@ built as soon as possible grows with each milestone on that project.
 
 #### Liberland Blockchain
 
-Wecreate ourownSubstratebasedblockchain.Theconsensusmechanismwillbea
-versionofDelegatedProofofStake,basedonPolkadot.Thisisnotaparachainbuta
-stand-alone blockchain.
-
 ##### Backend and Frontend
 
 The scope of this project is both our front-end, or more properly said, a set of    
@@ -243,7 +239,7 @@ Auditing
 ● having at this stage one account only per wallet connection;
 ● it should have a fully functioning (polka) staking function;
 ● there must not be overt bugs;
-● allactioninthefrontendshouldoneononematchtheactioninthePolkaJS
+● all action in the frontend should one on one match the action in the PolkaJS
     wallet; and
 ● Test it for seamless integration with the backend.
 
@@ -280,12 +276,12 @@ necessary so that the product won't be seen as half-done by the client. Those in
 what reasons, etc.;
 ● No major frontend and backend bugs that interact with user functionality;
 ● Seamless working with the Polka JS extension;
-● integrationwithourLiberland.orgwebsite;meaning:theE-Residencyloginwill
-result in Liberland blockchainlogin,matchinga wallettothe corresponding
+● integration with our Liberland.org website; meaning: the E-Residency login will
+result in Liberland blockchain login,matching a wallet to the corresponding
 login;
 ● Having LLM from Liberland.org visible as mainnet LLM and vice versa;
 ● Setting up a mobile version (in a browser, Google Chrome at first); and
-● Anythingelsethetestersmightfindnecessary,insteadofincluding"merelynice
+● Anything else the testers might find necessary,instead of including "merely nice
 to have".
 ```
 Optional
@@ -328,7 +324,7 @@ The Legislative Branch also can work on its own without the other branches.
 ● running full elections into the Congressional Assembly, our parliament;
 ● onboarding new Representatives (elected ocials);
 ● ending their term when the election cycle is over;
-● work withaspecialalgorithm thatallocatesvotes(youvotewithyourStaked
+● work with a special algorithm that allocates votes(you vote with your Staked
 LLM);
 ● Representatives can vote in the Prime Minister and Ministers;
 ● they can fire the Prime Minister or Ministers.
@@ -359,7 +355,7 @@ We will be able to run Liberland on-chain.
 
 **Deadline: Q3/Q**
 
-The final task in the Q4 to Q1 scope is to prepare the SmartContract pallet.This pallet 
+The final task in the Q4 to Q1 scope is to prepare the Smart Contract pallet.This pallet 
 will enable others to write and run smart contracts,enabling functionality to
 Ethereumor BSC-DEXes and DAPPs. We do not expect this tobe _completely_ finished  
 before the end of Q4, but significant work should already be done by then.  
