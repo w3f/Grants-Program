@@ -177,8 +177,8 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Operator Documentation, Flow design, Readme file |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
-| 1a. | Workflow Composer: Flow Macro | To add methods for the flow design. |
-| 1b. | Workflow Composer: Derive Macro(s) | To add methods for the task struct based on the type of it |
+| 1a. | Workflow Composer: Flow Macro | There are of three types of flow: init, pipe and terminator. The init is used to create the first task in the workflow and the terminator is used to create the last task. The pipe method is used to create other tasks that accept inputs and are dependent on other tasks. |
+| 1b. | Workflow Composer: Derive Macro(s) | Derive macros for tasks in a workflow: invoking OpenWhisk action, invoking OpenWhisk trigger, invoking smart contracts. The tasks are structs, based on a generic format that would include name, inputs and endpoints and macros add functionalities for the tasks |
 
 
 ### Milestone 3 Example — Web API/Backend
@@ -196,6 +196,7 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 | 1a. | Web API: Workflow Registration | API Exposed as a part of workflow deployment, Workflow will be registered and made available to specific namespace |
 | 1b. | Web API: User Registration | Basic User Registration API to register user to the system |
 | 1c. | Web API: User Workflow Management | User to select workflow and provide argument values, Pause Workflow, Delete Workflow |
+| 2. | Example User Stories | User stories to demonstrate the capabilities of Functional MVP |
 
 
 ## Future Plans
