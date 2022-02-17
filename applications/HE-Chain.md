@@ -41,6 +41,22 @@ We expect the teams to already have a solid idea about your project's expected f
 - What your project is _not_ or will _not_ provide or implement
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
+![HE-Chain Architecture](https://github.com/cryptoviet/he-chain/blob/dev/HE-Chain%20Architecture.jpg)
+
+
+- **HE-Chain Architecture**:
+
+  Two part of HE-Chain is Heroes and Empires, heroes is outside of the red rounded rectangle, and empires in inside the red rounded rectangle.
+  
+  **Heroes**:
+  
+  As heroes player can do anything with no restriction but with the 'high' transaction fee. 
+  
+  **Empires**:
+  
+  Player have to join to Empires to get the privileges, when they are in the Empires, they won't bother about the transaction fee but they can only make the limited of transaction per minutes that handled by TX-Handler, and they will be charge amout of fee base on the period of time they stay in the Empire Pool. The Empire Pool will also ban 'bad' player with Autoban mechanism.
+
+
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
