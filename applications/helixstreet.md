@@ -85,7 +85,8 @@ N/A
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. The docker image will not include sequencing data. |
 | 0e. | Article | We will publish an **article**/workshop that explains what was achieved as part of the grant. |
 | 1. | Substrate module: genomics | We will create a Substrate module that will store the merkle hash of genomic sequencing raw data. | 
-| 2. | Program to generate Hashtree | We will creates a hash tree for all reads of DNA the probe  | 
+| 2. | Program to generate Hashtree | We will creates a hash tree for all reads of DNA the probe.  
+The script should calculate for every Read of every Chromosome a hash and create a Merkle tree to reduce storage. Furthermore the script should store a vector ( or the main root ) of the root hashes automatically in the Blockchain assigned to the private key. A flag is needed to distinguish between entries made by a machine ( e.g. Sequel II ) or by the identified owner of the DNA raw data ( the private key of the human being represented by the sequencing data ). The program will be realized in rust. | 
 
 
 
@@ -93,6 +94,11 @@ N/A
 ## Future Plans
 
 The pallet is gradually expanded to document the relationship to other public keys. There is also the possibility of working together with HiFi sequencing manufacturers ( e.g. PACB ) who could store genomic footprints directly from the machines in the blockchain. Longterm we plan to develop a healthcare ecosystem in the blockchain based on genomic data.
+
+Selling any private data is completely out of scope of this project. The focus is to keep private DNA data private. The purpose of the project is to enable all the possibilities of owning his own DNA ( firstly ancestry research ) without revealing the whole data ( zero knowledge processing). When the raw data goes through the process of variant calling ( DeepVariant / open source variant caller / https://github.com/google/deepvariant  ) groups of variants will additionally be stored in the blockchain. Scope of the grant is a genomics pallet with the described basic functionality, which should be adaptable and extensible.
+
+
+
 
 
 ## Additional Information :heavy_plus_sign:
