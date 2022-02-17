@@ -4,28 +4,31 @@
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** Name of your project (e.g. DuoSwap Module)
-- **Team Name:** Legal name of your team (e.g. Duo)
-- **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
+- **Project Name:** HE-Chain
+- **Team Name:** Cryptoviet
+- **Payment Address:** 
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
 
 ### Overview
 
-Please provide the following:
+- Abstract
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+  HE-Chain: The decentralized blockchain platform is built for high-frequency application, customization for NFT blockchain game projects. Applications running on top of HE-Chain will never bother about the security, spamming, transaction fee, malicious accounts, and many other bad factors,  they only need to focus on gameplay, game experience. HE-Chain supports EVM (Ethereum Virtual Machine) that projects deploy from Ethereum, Binance Smart Chain to HE-Chain with little or no changing.
 
+- Thanks to Parity's technologies
+  
+  HE-Chain is layer one that builds from Substrate and EVM compatible using [Frontier](https://github.com/paritytech/frontier).
+  
+- Cryptoviet team motivation
+
+  As the current project name [Heroes And Empires](https://heroesempires.com/) running on Binance Smart Chain, mostly due to the scalability and the cost of operating, we build the platform for Heroes And Empires then many other NFT Blockchain Games.
+  We had the experience of What NFT blockchain games need, Why we have to build HE-Chain, and How to build HE-Chain to solve the problems that current NFT Game face when they run on Ethereum, BSC, even Solana.
+  
 ### Project Details
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
