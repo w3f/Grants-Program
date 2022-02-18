@@ -154,15 +154,15 @@ Whitepaper + Yellowpaper: Comming soon
 
 ### Overview
 
-- **Total Estimated Duration:** 8 months
+- **Total Estimated Duration:** 9 months
 - **Full-Time Equivalent (FTE):**  1.2 FTEs
-- **Total Costs:** 49,000 USDT
+- **Total Costs:** 59,000 USDT
 
 ### Milestone 1 — The Heroes & Empires + EVM
 
-- **Estimated duration:** 3 month
+- **Estimated duration:** 4 month
 - **FTE:**  1.2
-- **Costs:** 20,000 USD
+- **Costs:** 25,000 USD
 
 In this milestone, we build modules Player, Empires, and EVM, the requirements will fall into acceptance criteria:
 + Users can join Empires
@@ -194,7 +194,7 @@ In this milestone, we build modules Player, Empires, and EVM, the requirements w
 
 - **Estimated duration:** 2 month
 - **FTE:**  1.2
-- **Costs:** 15,000 USD
+- **Costs:** 14,000 USD
 
 In this milestone, we build modules DAO, TX-Handler, HE-Chain Testnet, the requirements will fall into acceptance criteria:
 + HE-Chain Testnet launch with at least 5 nodes
@@ -222,7 +222,7 @@ In this milestone, we build modules DAO, TX-Handler, HE-Chain Testnet, the requi
 
 - **Estimated duration:** 3 month
 - **FTE:**  1.2
-- **Costs:** 14,000 USD
+- **Costs:** 20,000 USD
 
 In this milestone, we build HE-Bridge to (Ethereum + BSC), KSM parachain, the requirements will fall into acceptance criteria:
 + Must have published a technical document of HE-Bridge
