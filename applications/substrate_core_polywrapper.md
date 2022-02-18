@@ -143,24 +143,81 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can interact with polywrapper |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests and e2e tests using polywrap recipes json tests |
-| 1. |Substrate Core Polywrapper | Described below |  
+| 1. | Schema Definitions | Described below |
+| 2. | `substrate-signer-provider` Polywrap Client JavaScript Plugin | Described below |
+| 3. | `substrate-core` Wrapper | Described below |
 
-##### Substrate Core Polywrapper
-- Bootstrap polywrapper project using w3/cli
-- Write graphql schema for substrate core methods:
-    - author_submitExtrinsic
-    - chain_getBlockHash
-    - chain_getHeader
-    - chain_getFinalizedHead
-    - chain_getBlock
-    - state_getStorage
-    - state_queryStorage
-    - state_queryStorageAt
-    - state_getMetadata
-    - state_getRuntimeVersion
-    - system_properties
-- Implement graphql schema methods in rust using Polywrap http plugin
-- Deploy polywrapper to ipfs
+> NOTE: 2 & 3 can be developed in parallel once schemas are defined.
+
+### 1. Schema Definitions
+
+There will be 2 Polywrap schemas:
+- `substrate-signer-provider` - Low-level interface for accessing the application's configureable signer / provider.
+- `substrate-core` - Higher-level interface for interacting with a substrate based chain. This depends upon on an implementation of the substrate-signer-provider interface above.
+
+To get a better idea of what this "separation of concerns" looks like in practice, please refer to [this example specification](https://github.com/polywrap/integrations/blob/main/near/Near%20Polywrapper%20Specification.md#near-polywrapper-specification) for the Polywrap <> Near integration that's actively being developed.
+
+### 2. `substrate-signer-provider` JavaScript Plugin
+
+A JavaScript plugin is necessary to perform the following actions that cannot be implemented directly within a Polywrapper due to limitations of WASM, and security best-practices:
+* Filesystem interaction, such as reading and writing to local keystores
+* Browser interaction, including interaction with the Polkadot.js Wallet
+* Sending RPC requests, through the application's configurable providers
+* Likewise, Polywrapper execution is stateless and therefore the plugin is used to cache the network configuration parameters provided when instantiating the plugin. Configuration items can include a network and wallet settings, as well as optional data developers might provide when instantiating a Polkadot.js class instance.
+
+The plugin would typically be instantiated and configured when instantiating the Polywrap Client, like so:
+```typescript
+import {
+  substratePlugin
+} from "substrate-signer-provider-plugin-js";
+
+const client = new Web3ApiClient({
+  plugins: [{
+    uri: "plugin/substrate-signer-provider",
+    plugin: substratePlugin({
+      // Can include Polkadot.js instance here
+      ...
+    })
+  }]
+})
+```
+
+To get an idea of what the `substrate-signer-provider` schema might look like, please see the Near plugin's schema [here](https://github.com/polywrap/integrations/blob/main/near/Near%20Polywrapper%20Specification.md#near-javascript-plugin).
+
+### 3. `substrate-core` Wrapper
+
+The Polywrapper is a set of WASM modules that contain the bulk of the logic needed to interact with substrate based chains. The Polywrapper calls the aforementioned JavaScript Plugin only when necessary to perform specific tasks.
+
+A call to the Polywrapper might look something like this (TS/JS application):
+```typescript
+import { Header } from "./polywrap-codegen/substrate-core";
+
+const result = await client.invoke<Header>({
+  uri: "/ens/substrate-core.eth",
+  module: "query",
+  method: "getHeader"
+  input: {
+    hash: "0x1c54f419aa058319b198142ece3a625989f8cea01f80bd6110c0fd10c1e6cc3e",
+  }
+});
+```
+
+A Polywrapper can have two WASM modules--a "Mutation" module and a "Query" module. As the names imply, functions in the Mutation module may change on-chain state while Query functions do not.
+
+The core methods that will be worked on for this proposal will be:
+- author_submitExtrinsic
+- chain_getBlockHash
+- chain_getHeader
+- chain_getFinalizedHead
+- chain_getBlock
+- state_getStorage
+- state_queryStorage
+- state_queryStorageAt
+- state_getMetadata
+- state_getRuntimeVersion
+- system_properties
+
+We will be heavily leverage existing Rust crates in the substrate developer ecosystem to implement the wrapper detailed above.
 
 ## Future Plans
 
