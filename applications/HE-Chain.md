@@ -33,28 +33,37 @@
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
 ![HE-Chain Architecture](https://github.com/cryptoviet/he-chain/blob/dev/HE-Chain%20Architecture.jpg)
 
 
 - **HE-Chain Architecture**:
 
-  Two part of HE-Chain is Heroes and Empires, heroes is outside of the red rounded rectangle, and empires in inside the red rounded rectangle.
-  
-  **Heroes**:
-  
-  As heroes player can do anything with no restriction but with the 'high' transaction fee. 
+  Two-part of the HE-Chain are Heroes and Empires, the Empires is inside the red rounded rectangle and the outside is the Heroes.
   
   **Empires**:
   
-  Player have to join to Empires to get the privileges, when they are in the Empires, they won't bother about the transaction fee but they can only make the limited of transaction per minutes that handled by TX-Handler, and they will be charge amout of fee base on the period of time they stay in the Empire Pool. The Empire Pool will also ban 'bad' player with Autoban mechanism.
+  Players have to join Empires to get the privileges, when they are in the Empires, they won't bother about the transaction fee but they can only make the limited of transactions per minute that are handled by TX-Handler, and they will be charged the amount of fee base on the period of time they stay in the Empire Pool. The Empire Pool will also ban 'bad' players with the Autoban mechanism.
+  
+  **Heroes**:
+  
+  As heroes players can do anything with no restriction but with the 'high' transaction fee. 
+  
+
+  
+- **Pallet structure**
+
+Project breaks down into 4 pallets:
+
+pallet-pool: Mange players in the Empires by limiting the number of players, changing upfront every 'x' time (x depends on the number of players staying in the pool and number of projects running on HE-Chain, x will be determined when testnet go live). Ban players with bad activities follow by the DAO rules.
+
+pallet-tx-handler: Manage player's transactions on the Empires, every minute or hours players only can make 'x' transactions. Reduce 'y' percentage of transaction fee. 'x' and 'y' will be determined by DAO.
+
+pallet-player: Handle player information likes id, name, friends...
+
+pallet-evm: build Ethereum compatible to deploy Solidity code.
+
+
 
 
 ### Ecosystem Fit
