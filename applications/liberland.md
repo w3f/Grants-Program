@@ -211,7 +211,8 @@ https://github.com/liberland_node
 Our team will develop our first iteration of a working testnet style network using. Complete with custom    
 pallet's that allow the functionality to send and 
 recieve tokens, configure user roles, custom voting functionality: allowing the citizen to vote on petition using the underlaying democracy pallet.
-After internal discussion we also decided not to go with the Proof of Authority consense and went with a polkadot inspired Nominated Proof of stake consensus 
+After internal discussion we also decided not to go with the Proof of Authority consense and went   
+with a polkadot inspired Nominated Proof of stake consensus 
 algorithm, utilizing the babe pallet for block production.
 
 
