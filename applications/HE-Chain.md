@@ -172,6 +172,8 @@ In this milestone, we build modules Player, Empires, and EVM, the requirements w
 + Refund correct amount when users leave the pool
 + Solidity code can be deployed and call on HE-Chain
 + Create pallet-player
++ Unittest have to pass 100%
++ Dispatchable functions must have comments
 
 
 | Number | Deliverable | Specification |
@@ -188,13 +190,32 @@ In this milestone, we build modules Player, Empires, and EVM, the requirements w
 
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — DAO + TX-Handler + HE-Chain Testnet
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 4,000 USD
+- **Estimated duration:** 2 month
+- **FTE:**  1.2
+- **Costs:** 15,000 USD
 
-...
+In this milestone, we build modules DAO, TX-Handler, HE-Chain Testnet, the requirements will fall into acceptance criteria:
++ HE-Chain Testnet launch with at least 5 nodes
++ Build DAO to vote on-chain governance
++ Determine the 'x' number of limit transactions per minute by Testnet and vote by on-chain governance
++ TX-Handler manage the transaction limit with the 'x' above
++ Determine the 'y' percentage to reduce transaction fee by Testnet and vote by on-chain governance
++ TX-Handler reduce 'y' percentage with the number above
++ Unittest have to pass 100%
++ Dispatchable functions must have comments
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | Apache 2.0|
+| 0b. | Documentation | We will comment on code, publish documents as text articles and videos to show users how to run HE-Chain Node, how HE-Chain on-chain governance works, why 'x' and 'y' are reasonable|
+| 0c. | Testing Guide | Every internal and external function must have the comment follow with unittest, Bounty for finding bug will apply for community |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
+| 1. | Substrate module: pallet_tx_handler | module to limit the transaction and reduce transaction fee|  
+| 2. | Substrate module: pallet_dao | module to vote on-chain runtime data |  
 
 
 ## Future Plans
