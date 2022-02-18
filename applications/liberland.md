@@ -29,6 +29,10 @@ built as soon as possible grows with each milestone on that project.
 
 ### Scope of the Project:
 
+As of writing this we at liberland currently have over 660k(662329) signed up users. We aim       
+to utilize our substrate-base "liberland-chain" to provide e-services for these users.   
+
+
 #### Liberland Blockchain
 
 ##### Backend and Frontend
@@ -173,7 +177,7 @@ justice@liberland.org
 
 ## Intended Language of Development
 
-Rust for the blockchain backend ,Javascriptfor the Frontend,Angular for centralized
+Rust for the blockchain backend ,Javascript for the Frontend, Rust substrate-based   
 Backend.
 
 
