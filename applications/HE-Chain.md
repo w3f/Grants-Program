@@ -67,7 +67,9 @@
 ### Ecosystem Fit
 
   At this moment, most of NFT Gaming projects running on Ethereum, BSC, or Solana name Axie Infinity, the Sandbox, Decentraland... and as we do the [Heroes and Empires](https://heroesempires.com/). We consider thoes platform are "common" chain because they can fit to many purposes but doesn't specialize for NFT Blockchain Game. Inspired fron Substrate philosophi that 'builders can just focus on the chain logic' so we build HE-Chain specialize for NFT Blockchain Game.
+  
   We know the 'pain' of scalability and  the cost of operating that Heroes & Empires spent more than $3M just for the transaction fees, we do think if we bring that money to grow H&E ecosystem that could be the game changing.
+  
   Our current user target is the NFT Gaming projects or high-frequency applications and of course if Heroes and Empires. HE-Chain will ship fully decentrialze platform and web3 to around 400k users of H&E and millions of users in cryptocurrency world.
   
   At the Kusama/Polkadot ecosystem, all the EVM compatible can be the same as HE-Chain at this time but with specialize of HE-Chain chain logic, there is no project nearly the same as HE-Chain acording to [Dotmarketcap](https://dotmarketcap.com/ecosystem).
