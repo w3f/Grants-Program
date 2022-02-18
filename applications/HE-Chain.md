@@ -70,7 +70,7 @@
   
   We know the 'pain' of scalability and  the cost of operating that Heroes & Empires spent more than $3M just for the transaction fees, we do think if we bring that money to grow H&E ecosystem that could be the game changing.
   
-  Our current user target is the NFT Gaming projects or high-frequency applications and of course if Heroes and Empires. HE-Chain will ship fully decentrialze platform and web3 to around 400k users of H&E and millions of users in cryptocurrency world.
+  Our current user target is the NFT Gaming projects or high-frequency applications and of course is Heroes and Empires. HE-Chain will bring fully decentrialze platform and web3 to around 40k users of H&E and millions of users in cryptocurrency world.
   
   At the Kusama/Polkadot ecosystem, all the EVM compatible can be the same as HE-Chain at this time but with specialize of HE-Chain chain logic, there is no project nearly the same as HE-Chain acording to [Dotmarketcap](https://dotmarketcap.com/ecosystem).
 
@@ -78,12 +78,12 @@
 
 ### Team members
 
-- Huynh Van Quyet (Jack)
-- Phan Dang Quy (David)
-- Truong Ngoc Vuong (Michael)
-- Do Tan Trung (Jackson)
-- Luu Hoang Trung (Mike)
-- Bui Minh Thanh (Stefan Muto)
+- Huynh Van Quyet (Jack) - CEO + Leader
+- Phan Dang Quy (David) - Teachnical Lead
+- Truong Ngoc Vuong (Michael) - CTO + UX/UI
+- Do Tan Trung (Jackson) - Full-Stack Developer + DevOps
+- Luu Hoang Trung (Mike) - UI/UI + DevOps
+- Bui Minh Thanh (Stefan Muto) - Substrate developer
 
 ### Contact
 
@@ -99,9 +99,21 @@
 
 ### Team's experience
 
-Cryptoviet team start on crypto industry since 2017, back then we do the social media, marketing plans. 2020 we build web3 products started 
-with (CasperStats)[https://casperstats.io/] as an Explorer for Casper Network that granted from DEVxDAO, NFT Blockchain Game name (Heroes and Empires)[https://heroesempires.com/]
+Cryptoviet team started in the crypto industry in 2017, back then we do the social media, marketing plans. 2020 we build web3 products started with (CasperStats)[https://casperstats.io/] as an Explorer for Casper Network that granted from DEVxDAO, NFT Blockchain Game name (Heroes and Empires)[https://heroesempires.com/] with ~400k total users and ~40k daily users.
 
+Team experiences came from many aspects but focus on 'build to last'. Well model design, clean code is the philosophy of the Cryptoviet developer team
+
+CEO + Leader Jack has created the most active social media in Vietnam (Bitcoin Vietnam News).
+
+David has designed and built smart contracts model for H&E, a granted project from Contentos for [wallet](https://play.google.com/store/apps/details?id=com.xonic.wallet) (source code)[https://github.com/quyphandang/xonic_wallet].
+
+Michael with more than 4 years of experience with Nodejs and React, Nuxtjs. UX/UI for https://casperstats.io and https://heroesempires.com/
+
+Jackson back then do Technical Lead for the well-known bank in Vietnam, with 4 years of experience on static languages (Java, C++, Typescript)
+
+Mike with 4 years of experience in UX/UI and Nodejs, has designed and built  (marketplace)[https://market.heroesempires.com/] for H&E and https://casperstats.io
+
+Stefan with 5 years of experience as Software Engineer working on the top crypto exchange in Vietnam, he best on design pattern, SOLID, and Substrate
 
 ### Team Code Repos
 
