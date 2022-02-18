@@ -3,7 +3,7 @@
 ```
 ● Project: Liberland
 ● Team Name: Liberland (liberland.org)
-● Payment Address DOT: insert address here
+● Payment Address btc: bc1qh0ejszphu4e8u04h6d6urlrmr2nyujsxhfq2rj
 ● Status: Open
 ● Total Estimated Duration: 1 year
 ● Full-time equivalent (FTE): 5 developers full time
@@ -202,6 +202,19 @@ We have a simple, functioning blockchain. We will begin with a marketing campaig
 and a funding/investor-seekingcampaign. We will give their work some publicity,and
 we will also start airdropping their wages.
 
+##### Delivery:   
+We will deliver a working blockchain under the MIT license that can be used by anyone and will be avaliable here:
+https://github.com/liberland_node
+
+
+##### Technical information:    
+Our team will develop our first iteration of a working testnet style network using. Complete with custom    
+pallet's that allow the functionality to send and 
+recieve tokens, configure user roles, custom voting functionality: allowing the citizen to vote on petition using the underlaying democracy pallet.
+After internal discussion we also decided not to go with the Proof of Authority consense and went with a polkadot inspired Nominated Proof of stake consensus 
+algorithm, utilizing the babe pallet for block production.
+
+
 #### Frontend
 
 **Deadline: Q2 2022**
@@ -303,6 +316,20 @@ from their PCs and maybe from their smartphone. Staking will become easy and
 transparent,enabling us to market it as a source of passive income and a usecasefor
 our token.
 
+
+##### Delivery:   
+We will deliver an internet facing frontend that can interact with our blockchain. This     
+frontend will be programmed in angular js and interact with our    
+backend blockchain using our chains websocket that is listening for active websocket connections.  
+The public frontend will allow all users to interact with the liberland blockchain, being able to transact, vote and stake tokens.
+
+
+##### Technical information:    
+The frontend is written in angular js and utilizes substrate's built in listening websocket. Thanks to this functionality our frontend  
+can communicate and call pallet functions. We are implementing the frontend to communicate with both the websocket of the chain as well as  
+polkadot.js browser plugin wallet. Allowing anyone to use our frontend that has a working browser.
+
+
 ### State Governance
 
 **Deadline: Q3 2022**
@@ -316,8 +343,6 @@ why we have a burning need to implement the Legislative Branch first, far ahead 
 
 The Legislative Branch also can work on its own without the other branches.    
 
-
-
 ##### Basic representative democracy
 
 ```
@@ -329,6 +354,7 @@ LLM);
 ● Representatives can vote in the Prime Minister and Ministers;
 ● they can fire the Prime Minister or Ministers.
 ```
+
 ##### Basic legislative process
 
 ```
@@ -347,9 +373,22 @@ of a Law;
 ● the VetoProposal(referendum) stays open until 50 percent plus one citizen vote
 yea or nay.   
 ```
-##### Output
 
-We will be able to run Liberland on-chain.
+##### Delivery:   
+Liberland's blockchain will be released with the mentioned features on our public    
+liberland_node repository on github. This release will focus mostly on   
+expanding voting functionality introducing anyone to propose and vote on laws. 
+
+
+##### Technical information:    
+By utilizing pallet-democracy from Parity, we will implement custom functionality to allow our users  
+to vote on different referendum and proposals depending on a users role, a user has   
+can be a regular user without roles, e-residence or a citizen. Then we have assembly members, an assembly member is either a e-residence  
+or a citizen that also has more privledges and is allowed to have more of an authority when voting. If you are familiar with unix based operating system  
+you can see the Assembly member as a Linux or a BSD user that's added to the "staff" group.  
+Our frontend will be able to query these custom pallets for processing highlevel voting functionality   
+in order to give the end-user a more smoother experience.
+
 
 #### Smart Contracts
 
@@ -409,6 +448,20 @@ We will be able to build smart contracts on our chain, which will create attract
 use cases, which will also enable us to take our governance to the next level. We will be 
 able to setup more government processes as smartcontracts. We will provide every 
 citizen with their tokenized citizenship right in their wallet.  
+
+
+##### Delivery:   
+The public release of this be able for everyone to download and use from our public liberland_node github.   
+
+##### Technical information:    
+This release will add functionality for users to run and interact with smart contracts. We will utilize substrate's own smart contract   
+framework "!ink". Liberland has gained a lot traction and interest since our start in 2015. Thanks to our larger userbase we expect to have a larger amount.  
+
+
+References:
+https://paritytech.github.io/ink-docs/   
+https://docs.substrate.io/v3/runtime/smart-contracts/   
+https://e-residency.liberland.org/   
 
 #### Current Development Status
 
