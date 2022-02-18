@@ -99,46 +99,46 @@
 
 ### Team's experience
 
-Cryptoviet team started in the crypto industry in 2017, back then we do the social media, marketing plans. 2020 we build web3 products started with (CasperStats)[https://casperstats.io/] as an Explorer for Casper Network that granted from DEVxDAO, NFT Blockchain Game name (Heroes and Empires)[https://heroesempires.com/] with ~400k total users and ~40k daily users.
+Cryptoviet team started in the crypto industry in 2017, back then we do the social media, marketing plans. 2020 we build web3 products started with [CasperStats](https://casperstats.io/) as an Explorer for Casper Network that granted from DEVxDAO, NFT Blockchain Game name [Heroes and Empires](https://heroesempires.com/) with ~400k total users and ~40k daily users.
 
 Team experiences came from many aspects but focus on 'build to last'. Well model design, clean code is the philosophy of the Cryptoviet developer team
 
 CEO + Leader Jack has created the most active social media in Vietnam (Bitcoin Vietnam News).
 
-David has designed and built smart contracts model for H&E, a granted project from Contentos for [wallet](https://play.google.com/store/apps/details?id=com.xonic.wallet) (source code)[https://github.com/quyphandang/xonic_wallet].
+David has designed and built smart contracts model for H&E, a granted project from Contentos for [wallet](https://play.google.com/store/apps/details?id=com.xonic.wallet) [source code](https://github.com/quyphandang/xonic_wallet).
 
 Michael with more than 4 years of experience with Nodejs and React, Nuxtjs. UX/UI for https://casperstats.io and https://heroesempires.com/
 
 Jackson back then do Technical Lead for the well-known bank in Vietnam, with 4 years of experience on static languages (Java, C++, Typescript)
 
-Mike with 4 years of experience in UX/UI and Nodejs, has designed and built  (marketplace)[https://market.heroesempires.com/] for H&E and https://casperstats.io
+Mike with 4 years of experience in UX/UI and Nodejs, has designed and built  [marketplace](https://market.heroesempires.com/) for H&E and https://casperstats.io
 
 Stefan with 5 years of experience as Software Engineer working on the top crypto exchange in Vietnam, he best on design pattern, SOLID, and Substrate
 
 ### Team Code Repos
 
-- (Cryptoviet)[https://github.com/cryptoviet]
-- (Heroes and Empires)[https://github.com/HeroesEmpires]
+- [Cryptoviet](https://github.com/cryptoviet)
+- [Heroes and Empires](https://github.com/HeroesEmpires)
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+### Team Member Github
 
-(David)[https://github.com/quyphandang]
-(Michael)[https://github.com/satoshiman]
-(Jackson)[https://github.com/dttr278]
-(Mike)[https://github.com/lhtrung307]
-(Stefan)[https://github.com/mutobui]
+[David](https://github.com/quyphandang)
+[Michael](https://github.com/satoshiman)
+[Jackson](https://github.com/dttr278)
+[Mike](https://github.com/lhtrung307)
+[Stefan](https://github.com/mutobui)
 
 
 ### Team LinkedIn Profiles (if available)
 
-(Cryptoviet)[https://www.linkedin.com/company/cryptoviet/mycompany/]
+[Cryptoviet](https://www.linkedin.com/company/cryptoviet/mycompany/)
 
-(Jack)[https://www.linkedin.com/in/quyethuynh2002/]
-(David)[https://www.linkedin.com/in/phan-dang-quy/]
-(Michael)[https://www.linkedin.com/in/truongngocvuong/]
-(Jackson)[https://www.linkedin.com/in/trung-dt/]
-(Mike)[https://www.linkedin.com/in/l%C6%B0u-ho%C3%A0ng-trung-53036a168/]
-(Stefan)[https://www.linkedin.com/in/thanhbuiminh/]
+[Jack](https://www.linkedin.com/in/quyethuynh2002/)
+[David](https://www.linkedin.com/in/phan-dang-quy/)
+[Michael](https://www.linkedin.com/in/truongngocvuong/)
+[Jackson](https://www.linkedin.com/in/trung-dt/)
+[Mike](https://www.linkedin.com/in/l%C6%B0u-ho%C3%A0ng-trung-53036a168/)
+[Stefan](https://www.linkedin.com/in/thanhbuiminh/)
 
 ## Development Status :open_book:
 
