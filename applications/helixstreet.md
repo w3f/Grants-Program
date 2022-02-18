@@ -5,7 +5,7 @@
 - **Project Name:** helixstreet Module
 - **Team Name:** helixstreet
 - **Payment Address:** bc1qvu2mjjm602rqshwkspy2v7a6wke529uzkucnej
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
 ## Project Overview :page_facing_up:
@@ -67,15 +67,15 @@ N/A
 
 ### Overview
 
-- **Total Estimated Duration:** 2
+- **Total Estimated Duration:** 1
 - **Full-Time Equivalent (FTE):**  1
-- **Total Costs:** 10000 USD
+- **Total Costs:** 1000 USD
 
 ### Milestone 1 Example — Implement Substrate Modules
 
-- **Estimated duration:** 2 month
+- **Estimated duration:** 1 month
 - **FTE:**  1
-- **Costs:** 10000 USD
+- **Costs:** 1000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
