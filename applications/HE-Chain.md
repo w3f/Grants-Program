@@ -151,6 +151,7 @@ Whitepaper + Yellowpaper: Comming soon
 
 ## Development Roadmap :nut_and_bolt:
 
+![HE-Chain Development Roadmap](https://github.com/cryptoviet/he-chain-assets/blob/main/HE-Chain%20Development%20Roadmap.jpg)
 
 ### Overview
 
