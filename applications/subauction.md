@@ -143,7 +143,7 @@ Besides blockchain development, each member has 5+ years of experience in Comput
 - Integrated with IPFS
 - For the actual code please check our **[repository](https://github.com/polkadotters/SubAuction)**
 
-### Milestone 0: Implement Auction Type Generalisation
+### Milestone 1: Implement Auction Type Generalisation
 
 See [Auction Type Generalization](#auction-type-generalization) for definitions.
 
@@ -159,7 +159,7 @@ See [Auction Type Generalization](#auction-type-generalization) for definitions.
 - The code will have proper unit-test coverage to ensure functionality and robustness.
 - Provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
 
-### Milestone 1: Implement New Auction Types
+### Milestone 2: Implement New Auction Types
 
 See [Candle Auction Type](#candle-auction-type) and [Top-up Auction Type](#top-up-auction-type) for definitions.
 
@@ -187,7 +187,7 @@ This is a very popular auction type used by charities. Each participant will pay
 
 [Top-up Auction Type Diagram](https://github.com/green-jay/Open-Grants-Program/blob/24ed082bf5a6778392d6264ffc81cbbed77acfc2/applications/topup_auction.png?raw=true)
 
-### Milestone 2: Governance, Content Curation & Business Model Mechanics
+### Milestone 3: Governance, Content Curation & Business Model Mechanics
 
 See [Governance and Content Curation](#governance-and-content-curation) and [Business Model Mechanics](#business-model-mechanics) for definitions.
 
