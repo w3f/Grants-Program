@@ -19,7 +19,10 @@ The ecosystem and standards of the Asylum are not going to be related to some sp
 
 ### Project Details
 
-The asylum project is about building the ecosystem, where every сomponent is connected with each other, achieving a synergy.
+
+#### Asylum overview
+
+The Asylum project is about building the ecosystem, where every сomponent is connected with each other, achieving a synergy.
 
 So, the best way to give a detailed description of the Asylum - is to define its main components:
 
@@ -50,7 +53,101 @@ For players, Asylum will provide an application, similar to the common gaming pl
 
 A simple scheme with Asylum ecosystem components:
 
-![Key-components](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/94f63b3e-b53d-4c2b-aa3a-e59ed1a071d5/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220202%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220202T153401Z&X-Amz-Expires=86400&X-Amz-Signature=068c53a0027b9f8494c9d1c022d2a639cbf837044c861722c3d6f33c7a828b62&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![Core-components](https://gitlab.com/asylum-space/asylum-docs/-/raw/main/materials/Asylum-core-components.png)
+
+As it was described above, Asylum is a big and complex project. However, we are at the start for now, and work related to this grant application is about to build a PoC of our ecosystem.
+
+#### Asylum PoC overview
+
+As a PoC we want to deliver a compact version of our ecosystem: 
+
+1. Substrate pallet with basic API for creating templates, minting in-game item NFTs, and updating items metadata. Our pallet will utilize https://github.com/rmrk-team/rmrk-substrate.
+2. Game Developers Console (admin web application), which allows creating/editing NFTs, uploading media resources for in-game items, and trying them on different games.
+3. Connection library, which provides integration of the Asylum on-chain ecosystem into the client applications. 
+4. Two sandbox games (2d and 3d), where admins can try out in-game items.
+
+
+##### Pallet
+
+> Tech: Rust, Substrate, JS (for tests)
+
+We will extend the RMRK Core pallet (built on top of the Uniques pallet) and introduce the `Asylum Core` Pallet.
+
+![Pallet-extension](https://gitlab.com/asylum-space/asylum-item-nft/-/raw/basic-functionality/pallets/asylum-core/docs/Pallet-extension.png)
+
+**Disclaimer: RMRK pallets are in the early stage of development, so the Asylum pallets’ config, dispatchable functions, and storage structure are unstable.**
+
+RMRK standard will always support a limited set of operations. For our goal, we need to extend RMRK core mechanics. We plan to create an association between the RMRK Collection and different Interpretation types and Interpretations. Each Item minted from this Template should have the same set of Interpretation types and Interpretations as Template. Updating the Template will lead to possible updating of the Item, but this update won't be forced. We intend to leverage RMRK multi-resource NFT's model to implement the Asylum Interpretation concept. Still, the current RMRK pallet state won't allow us to predict the best way to do this. For example, we need Resource mutability [https://github.com/rmrk-team/rmrk-spec/issues/44]. Still, we don't have it right now, so we will manage Item's resources in the Asylum core pallet instead of using the RMRK resource model, but this can change depending on the RMRK pallet pace of development.
+
+Dispatchable functions and storage model can be found [here](https://gitlab.com/asylum-space/asylum-item-nft/-/blob/f62d9b694422b8deb40becdfe719182f524ccedf/pallets/asylum-core/INTERFACE.md)
+
+Use-case diagram for pallet:
+
+![use-case-diagram](https://gitlab.com/asylum-space/asylum-item-nft/-/raw/basic-functionality/pallets/asylum-core/docs/Use-case-diagram.png)
+
+The standard way to work with items via our pallet is given below:
+
+1. **Create a template**
+    Template in the Asylum terms is such kind of “NFT collection” where the items have identical interpretations set (at least one interpretation is mandatory, with 'default-view' type). Every item can have its own custom properties, but the only way to  get any interpretation - is to be minted from a template (or updated, will be described below)
+2. **Mint item**
+    The issuer of the Template can mint NFT items within it. 
+3. **Edit template**
+    After the template was built and items were minted in this collection the only way to update items interpretations set - is to update the template and then every owner of the item will be able to update it to the latest version (if he wants so). The template update process is planned to use DAO approval. However, we will not fully implement it within this grant application, just make a template update proposal logic, which will be automatically approved.
+4. **Update item**
+    After the template was updated all items will have the ability to be updated, according to the template, by their owners.
+
+Interpretations for the items will be stored under the string key, which can be composite. Such an approach will give the ability to build "presets".
+
+For example, sword for "Heroes 2D" game can have such interpretations: "heroes-2D-pixeled-inventory-view", "heroes-2D-pixeled-equiped-view", "heroes-2D-pixeled-strike-animation-atlas".
+By using such structure for keys, the "Heroes 2D" game client will be able to filter interpretations on fetch, to load all resources with the "heroes-2D-pixeled" prefix (in other terms, load "heroes-2D-pixeled" preset).
+
+
+
+##### Game Developers Console
+
+> Tech: JS, TS, React, Redux
+
+The web application, that we are plan to deliver within this grant application will be a prototype of the Asylum Game Developers Console, where game admins will be able to manage their games and particularly set up the templates for in-game NFTs.
+However, in this app, we will also provide two features, that in the future will be available publicly - template update proposal (via Creator Studio) and items explorer.
+
+Initial wireframes for application can be found [here](https://www.figma.com/file/wIbe2L0Y1lhuZbsCkSnZgJ/%5BAsylum%5D-Game-Developers-Console?node-id=1011%3A3346) along with a comments
+
+##### Connection library
+
+> Tech: JS
+
+This library is about to be a simple wrapper for Asylum on-chain ecosystem, which allows clients to easily integrate it. Library interfaces are currently not defined, but they will cover the base pallet functionality that client apps need.
+
+##### Games
+
+> Tech: C#, Unity
+
+Games, delivered within this grant application will be small playable demos, with a purpose to show cross-games NFT items’ use-cases.
+
+- “Game A” will be the 3D “Diablo-like” RPG, build on [this](https://assetstore.unity.com/packages/templates/packs/prodigy-game-framework-119282) assets pack
+    Basic mechanics:
+    - Base gameplay:
+    you will be able to move, jump and fight with enemies
+    - Inventory system
+    NFT items will be fetched from the user’s wallet and can be used in the game
+    - Loot system
+    NFT items can be obtained during the game process	
+    - Characters evolution with items
+    NFT items can improve player’s characteristic
+    
+- “Game B” will be the 2D platformer adventure, build on [this](https://assetstore.unity.com/packages/templates/packs/ninja-rian-complete-game-176835) assets pack
+    Basic mechanics:
+    - Base gameplay:
+    you will be able to move, jump and fight with enemies
+    - Inventory system
+    NFT items will be fetched from the user’s wallet and can be used in the game
+    - Loot system
+    NFT items can be obtained during the game process
+    - Hidden locations
+    NFT items can gain access to the hidden locations
+    - In-game shop
+    With the possibility of passive income of in-game currency
+
 
 
 ### Ecosystem Fit
@@ -126,7 +223,6 @@ Blockchain dev since 2021.
 
 - https://gitlab.com/asylum-space/
 - https://gitlab.com/asylum-space/asylum-app
-- https://gitlab.com/asylum-space/asylum-ecosystem
 - https://gitlab.com/asylum-space/asylum-item-nft
 - https://gitlab.com/asylum-space/asylum-standards
 
@@ -182,13 +278,14 @@ Actual concept materials
 | 0d.    | Docker                          | - |
 | 0e.    | Article                         | - |
 | 1.     | Item standard definition        | The definition of the in-game item standard will consist of three parts: JSON schema, descriptive documentation, and examples of usage. Standard properties will be described below in the subparagraphs. |
-| 1.1    | 2D visualization                | NFT item created with the proposed standard will have the ability to have a visual interpretation in form of a 2D image. *Supported image formats are currently not defined.* |
-| 1.2    | 3D visualization                | NFT item created with the proposed standard will have the ability to have a visual interpretation in form of a 3D model. *Supported model formats are currently not defined.*         |
+| 1.1    | 2D visualization                | NFT item created with the proposed standard will have the ability to have a visual interpretation in form of a 2D image. |
+| 1.2    | 3D visualization                | NFT item created with the proposed standard will have the ability to have a visual interpretation in form of a 3D model. |
 | 1.3    | Multiple visual interpretations | NFT item created with the proposed standard will have the ability to have multiple visual interpretations, both for 2D or 3D visualization types. Interpretations will be stored under the different tags, for example, "2d-pixeled-inventory-view" or "3d-realistic-equipped". |
-| 2.     | Item standard implementation    | We will deliver the implementation of the described standard. It will be pallets, which will implement base operations with item  |
-| 3.     | Game A                          | We will create (or extend the existing one) a 2d web-faced platformer game sandbox in pixeled style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
-| 4.     | Game B                          | We will create (or extend the existing one) a 3d web-faced game sandbox in realistic style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
-| 5.     | Web application                 | We will create a web application that will give an ability to interact with mentioned pallets: mint and update test NFT items. Also, there will be links to Game A and Game B to manually test items in different representations |
+| 2.     | Asylum Core pallet              | We will deliver the implementation of the described standard. It will be pallets, which will implement base operations with item  |
+| 3.     | Connection library              | We will deliver the JS library, that will cover functionality of Asylum Core pallet.  |
+| 4.     | Web application                 | We will create a web application that will give an ability to interact with mentioned pallets: mint and update test NFT items. Also, there will be links to Game A and Game B to manually test items in different representations |
+| 5.     | Game A                          | We will create a 2d web-faced platformer game sandbox in pixeled style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
+| 6.     | Game B                          | We will create a 3d web-faced game sandbox in realistic style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
 
 ### Milestone 2 — Extended in-game NFT items standard and testing environment
 
@@ -204,14 +301,15 @@ Actual concept materials
 | 0d.    | Docker                          | - |
 | 0e.    | Article                         | We will write an article on the Medium platform about the use-cases of using defined standards. |
 | 1.     | Item standard definition        | We will extend the definition of the in-game item standard, that was done in the first milestone. Standard properties will be described below in the subparagraphs. |
-| 1.1    | Animation effects               | NFT item created with the proposed standard will have the ability to have animated visual effects, both for 2D or 3D visualization types. *Supported animation formats are currently not defined.* Example: animation of the sword strike. |
-| 1.2    | Sound effects                   | NFT item created with the proposed standard will have the ability to have audio effects, that can be combined with the animation. *Supported audio formats are currently not defined.* Example: the sound of the sword strike.    |
+| 1.1    | Animation effects               | NFT item created with the proposed standard will have the ability to have animated visual effects. Example: animation of the sword strike. |
+| 1.2    | Sound effects                   | NFT item created with the proposed standard will have the ability to have audio effects, that can be combined with the animation. Example: the sound of the sword strike.    |
 | 1.3    | Nested ownership                | NFT item created with the proposed standard will have the ability to have "slots" for a child NFT items. The slot will describe how child visual and non-visual interpretations will be combined with the parent interpretation and requirements for child items. Such option can be used in the items craft system |
 | 1.4    | In-game properties              | NFT item created with the proposed standard will have the ability to have some in-game properties, stored as a dictionary. |
-| 2.     | Item standard implementation    | We will extend the implementation of the standard to support new options.  |
-| 3.     | Game A                          | We will extend Game A, delivered in the first milestone to support new options from the specified standard (animation, sound effects, nested ownership). |
-| 4.     | Game B                          | We will extend Game B, delivered in the first milestone to support new options from the specified standard (animation, sound effects, nested ownership). |
-| 5.     | Web application                 | We will extend the web application, delivered in the first milestone to support new options from the specified standard: mint and update test NFT items with properties of animation, sound effects, and nested ownership. |
+| 2.     | Asylum Core pallet              | We will extend the implementation of the standard to support new options.  |
+| 3.     | Connection library              | We will extend the JS library, that will cover functionality of Asylum Core pallet.  |
+| 4.     | Web application                 | We will extend the web application, delivered in the first milestone to support new options from the specified standard: mint and update test NFT items with properties of animation, sound effects, and nested ownership. |
+| 5.     | Game A                          | We will extend Game A, delivered in the first milestone to support new options from the specified standard (animation, sound effects, nested ownership). |
+| 6.     | Game B                          | We will extend Game B, delivered in the first milestone to support new options from the specified standard (animation, sound effects, nested ownership). |
 
 ## Future Plans
 
@@ -222,7 +320,7 @@ In our plans, the launch of the Asylum platform is set for the end of the 2022 y
 **Materials**:
 
 - Roadmap:
-  ![Roadmap](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/76c2d63f-e16f-46b4-be13-47ad5d6bf712/Asylum_roadmap_-_Roadmap_v2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220203%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220203T122747Z&X-Amz-Expires=86400&X-Amz-Signature=b56e78f8e910b58fef46a05c716e12728c465106aa4babc5f1444f186b8ecd0a&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Asylum%2520roadmap%2520-%2520Roadmap%2520v2.jpg%22&x-id=GetObject)
+  ![Roadmap](https://gitlab.com/asylum-space/asylum-docs/-/raw/main/materials/Asylum-roadmap.jpg)
 - [Pitch deck](https://www.canva.com/design/DAE1y6AHyCA/Lh0gxRtIePVtb_QfzyP6aQ/view?utm_content=DA[%E2%80%A6]tm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 ## Additional Information :heavy_plus_sign:
