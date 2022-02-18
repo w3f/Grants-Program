@@ -78,41 +78,55 @@
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Huynh Van Quyet (Jack)
+- Phan Dang Quy (David)
+- Truong Ngoc Vuong (Michael)
+- Do Tan Trung (Jackson)
+- Luu Hoang Trung (Mike)
+- Bui Minh Thanh (Stefan Muto)
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:**
+- **Contact Name:** Stefan
+- **Contact Email:** stefan@cryptoviet.com
+- **Contact Telegram:** @stefan_muto
+- **Website:** https://team.cryptoviet.com/
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 
+- **Registered Legal Entity:** 
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
+Cryptoviet team start on crypto industry since 2017, back then we do the social media, marketing plans. 2020 we build web3 products started 
+with (CasperStats)[https://casperstats.io/] as an Explorer for Casper Network that granted from DEVxDAO, NFT Blockchain Game name (Heroes and Empires)[https://heroesempires.com/]
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- (Cryptoviet)[https://github.com/cryptoviet]
+- (Heroes and Empires)[https://github.com/HeroesEmpires]
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+(David)[https://github.com/quyphandang]
+(Michael)[https://github.com/satoshiman]
+(Jackson)[https://github.com/dttr278]
+(Mike)[https://github.com/lhtrung307]
+(Stefan)[https://github.com/mutobui]
+
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+(Cryptoviet)[https://www.linkedin.com/company/cryptoviet/mycompany/]
+
+(Jack)[https://www.linkedin.com/in/quyethuynh2002/]
+(David)[https://www.linkedin.com/in/phan-dang-quy/]
+(Michael)[https://www.linkedin.com/in/truongngocvuong/]
+(Jackson)[https://www.linkedin.com/in/trung-dt/]
+(Mike)[https://www.linkedin.com/in/l%C6%B0u-ho%C3%A0ng-trung-53036a168/]
+(Stefan)[https://www.linkedin.com/in/thanhbuiminh/]
 
 ## Development Status :open_book:
 
