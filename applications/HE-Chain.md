@@ -154,7 +154,7 @@ Whitepaper + Yellowpaper: Comming soon
 
 ### Overview
 
-- **Total Estimated Duration:** 48 weeks
+- **Total Estimated Duration:** 8 months
 - **Full-Time Equivalent (FTE):**  1.2 FTEs
 - **Total Costs:** 49,000 USDT
 
@@ -218,20 +218,35 @@ In this milestone, we build modules DAO, TX-Handler, HE-Chain Testnet, the requi
 | 2. | Substrate module: pallet_dao | module to vote on-chain runtime data |  
 
 
+### Milestone 3 — HE-Bridge and KSM parachain
+
+- **Estimated duration:** 3 month
+- **FTE:**  1.2
+- **Costs:** 14,000 USD
+
+In this milestone, we build HE-Bridge to (Ethereum + BSC), KSM parachain, the requirements will fall into acceptance criteria:
++ Must have published a technical document of HE-Bridge
++ Able to transfer HE-Chain token between HE-Chain <-> Ethereum and HE-Chain <-> BSC
++ Able to start an auction on Kusama Network
++ Unittest have to pass 100%
++ Dispatchable functions must have comments
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | Apache 2.0|
+| 0b. | Documentation | Publish document explain of How HE-Bridge work, the trust of HE-Bridge|
+| 0c. | Testing Guide | Every internal and external function must have the comment follow with unittest, Bounty for finding bug will apply for community |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
+| 1. | Substrate module: pallet_bridge | module to mint and burn HE-Chain token by listen to events from (Ethereum + BSC) |  
+| 2. | Substrate module: pallet_auction | module to implement Kusama parachain auction |  
+
+
 ## Future Plans
 
-Please include here
+Luckily, we will integrate Heroes&Empires to HE-Chain first that we can put all our resources (20 team members including marketing team, QA, QC) to expand, use, and test HE-Chain.
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+We will work with several top NFT Game projects and teams in Vietnam such as [Axie Infinity](https://axieinfinity.com/), [Imba Game](https://imba.co/), [StarPunk](https://starpunk.io/) to deploy on HE-Chain.
 
 
-## Additional Information :heavy_plus_sign:
-
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
