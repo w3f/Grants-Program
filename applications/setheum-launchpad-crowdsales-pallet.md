@@ -146,6 +146,8 @@ We have started development of this specific protocol in [this repository](https
 | 2. | Types Generation | We will create a `types.json` file that defines the types in the `launchpad-crowdsales` Substrate module. |
 | 3. | Demo node | The Pallet will be added to a demo substrate node fork of Setheum node |
 | 4. | Docker file | Provide a docker file with the demo chain that demonstrates this project |
+| 5. | Simple UI | Provide a simple UI for interacting with the pallet |
+| 6. | Benchmarking | Add benchmarking to the pallet |
 
 ## Future Plans
 
