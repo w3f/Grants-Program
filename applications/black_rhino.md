@@ -199,11 +199,47 @@ For each milestone,
 - **FTE:** 5
 - **Costs:** 10,000 USD
 
-[Milestone 1 — Product Demo w/ Some Smart Contract Capabilities](https://www.notion.so/2f3cb52c917e4e7fb90bf9b8268fbcbd)
+### Milestone 1 Product Demo w/ Some Smart Contract Capabilities
 
-[Milestone 2 - MVP TestNet Deploy (Audit) (FTE: 5) (3 Months) ($10,000)](https://www.notion.so/11f0f8230ecb413dabae84fb9907f947)
+- **Estimated duration:** 2 months
+- **FTE:**  5
+- **Costs:** 10,000 USD
 
-[Milestone 3 - MainNet Deploy (FTE: 5) (3 Months) ($25,000)](https://www.notion.so/27f1e0028a4e4185abc418a7ad0c3515)
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Reach/Fireblocks API |
+| 0b. | Documentation | We will provide documentation of the code of the base protocol from Reach and a basic tutorial that explains how a user can (for example) enter the Raffle Pool and send test deposits. |
+| 0c. | Testing Guide | Core functions of the Raffle Pool  will be fully covered by unit tests to ensure functionality and robustness. We will be providing video demos as well to demonstrate the functionality of the Raffle Pool product. |
+| 0d. | Docker | We will provide a Dockerfile(s) as well as a URL that can be used to test all the functionality of the Raffle Pool delivered with this milestone. |
+| 0e. | Article | We will publish an article on our Website and/or on our Medium page, introducing the product and explaining the functionality of this product, as well as a roadmap. We will also outline and update the progress from this first Milestone. |
+
+### Milestone 2 MVP TestNet Deploy (Audit)
+
+- **Estimated duration:** 3 months
+- **FTE:**  5
+- **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Reach/ Fireblocks API/ Acala |
+| 0b. | Documentation | We will provide documentation of the MVP code from Reach, providing basic documentation on the complete functionality of the protocol up till this point. We will include documentation on the core functionality of the smart contracts, a full Audit of the Smart contracts by a reputable third-party entity, as well as the User Journey. |
+| 0c. | Testing Guide | The core functions of the Raffle Pool will be tested by beta users on the testnet, to ensure full functionality of all important components of the main product.   We will be providing a URL link for TestNet deploy, as well as a guide with full documentation for users interested in testing protocol on TestNet. |
+| 0d. | Docker | We will provide a Dockerfile(s) as well that can be used to test all the functionality of the Raffle Pool delivered with this milestone. The URL will be included with a complete guide for users. |
+| 0e. | Article | We will publish an article on our Website and/or on our Medium page, announcing the launch of the product on the TestNet with a fully product deploy. We will provide access for select users who show genuine interest in helping improve the protocol and improving the product. We will also provide the full testing guide for users, as well as explain the core functionality of the product in a digestible way.  |
+
+### Milestone 3 MainNet Deploy
+
+- **Estimated duration:** 3 months
+- **FTE:**  5
+- **Costs:** 25,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Reach/ Fireblocks API/ Acala |
+| 0b. | Documentation | We will provide documentation of the code of the base protocol from Reach as well as provide the deployed code from our repository with the smart contracts which will be deployed on the Polkadot Relay Chain. We will provide documentation of the smart contracts and provide a guide for how the contracts execute exact functions within the protocol. |
+| 0c. | Testing Guide | At this point, the core functions of the Raffle Pool will have been fully tested and audited with any errors or roadblocks sorted through. A full and complete testing guide will be provided at this point for all users, explaining the entire functionality of the product. |
+| 0d. | Docker | We will provide a Dockerfile(s) as well as a Mainnet URL that can be used to participate in the Raffle Pool once it is live and functional on the Mainnet. |
+| 0e. | Article | We will publish an article on our Website and/or on our Medium page, announcing the launch of the product on the Mainnet, with a full walk-through and guide explaining the user journey from start to finish as well as the full functionality of the product. |
 
 ## Future Plans
 
