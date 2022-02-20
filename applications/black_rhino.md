@@ -119,7 +119,7 @@ Our project focus is Endangered Species Conservation and to provide new opportun
 
 - **Registered Address:**
 
-**Toronto, Ontario, Canada
+Toronto, Ontario, Canada
 
 - **Registered Legal Entity:**
 
