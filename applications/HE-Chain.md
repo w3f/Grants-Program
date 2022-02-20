@@ -6,7 +6,7 @@
 
 - **Project Name:** HE-Chain
 - **Team Name:** Cryptoviet
-- **Payment Address:** 
+- **Payment Address:** 0x7fD4b72d3Bf681C2e80D6076D7997B21DEf45130 (USDT on BSC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -18,16 +18,16 @@
 
 - Abstract
 
-  HE-Chain: The decentralized blockchain platform is built for high-frequency application, customization for NFT blockchain game projects. Applications running on top of HE-Chain will never bother about the security, spamming, transaction fee, malicious accounts, and many other bad factors,  they only need to focus on gameplay, game experience. HE-Chain supports EVM (Ethereum Virtual Machine) that projects deploy from Ethereum, Binance Smart Chain to HE-Chain with little or no changing.
+  HE-Chain: The decentralized blockchain platform is built for high-frequency applications and customization for NFT blockchain game projects. Applications running on top of HE-Chain will never bother about security, spamming, transaction fees, malicious accounts, and many other bad factors. They can just focus on gameplay, game experience. HE-Chain supports EVM (Ethereum Virtual Machine) that projects deploy from Ethereum, Binance Smart Chain to HE-Chain with little or no change.
 
-- Thanks to Parity's technologies
+- Thanks to Parity technologies
   
-  HE-Chain is layer one that builds from Substrate and EVM compatible using [Frontier](https://github.com/paritytech/frontier).
+  HE-Chain is layer one that builds from the Substrate and is EVM compatible using [Frontier](https://github.com/paritytech/frontier).
   
-- Cryptoviet team motivation
+- Motivating the Cryptoviet team
 
-  As the current project name [Heroes And Empires](https://heroesempires.com/) running on Binance Smart Chain, mostly due to the scalability and the cost of operating, we build the platform for Heroes And Empires then many other NFT Blockchain Games.
-  We had the experience of What NFT blockchain games need, Why we have to build HE-Chain, and How to build HE-Chain to solve the problems that current NFT Game face when they run on Ethereum, BSC, even Solana.
+  As the current project titled [Heroes And Empires](https://heroesempires.com/) is running on Binance Smart Chain, mostly due to the scalability and the cost of operating, we build the platform for Heroes And Empires and many other NFT Blockchain Games.
+  We have the experience of What NFT blockchain games need, Why we have to build HE-Chain, and How to build HE-Chain to solve the problems that current NFT games face when they run on Ethereum, BSC, or even Solana.
   
 ### Project Details
 
@@ -37,49 +37,49 @@
 
 - **HE-Chain Architecture**:
 
-  Two-part of the HE-Chain are Heroes and Empires, the Empires is inside the red rounded rectangle and the outside is the Heroes.
+  Two parts of the HE-Chain are Heroes and Empires. The Empires are inside the red rounded rectangle and the outside is the Heroes.
   
   **Empires**:
   
-  Players have to join Empires to get the privileges, when they are in the Empires, they won't bother about the transaction fee but they can only make the limited of transactions per minute that are handled by TX-Handler, and they will be charged the amount of fee base on the period of time they stay in the Empire Pool. The Empire Pool will also ban 'bad' players with the Autoban mechanism.
+  Players have to join Empires to get the privileges. When they are in the Empires, they won't bother about the transaction fee but they can only make the limited of transactions per minute that are handled by TX-Handler, and they will be charged the amount of fee based on the period of time they stay in the Empire Pool. The Empire Pool will also ban 'bad' players with the Autoban mechanism.
   
   **Heroes**:
   
-  As heroes players can do anything with no restriction but with the 'high' transaction fee. 
+  As heroes, players can do anything with no restrictions, but with the 'high' transaction fee. 
   
 
   
 - **Pallet structure**
 
-  Project breaks down into 4 pallets:
+  The project is broken down into 4 pallets:
 
-  pallet-pool: Mange players in the Empires by limiting the number of players, changing upfront every 'x' time (x depends on the number of players staying in the       pool and number of projects running on HE-Chain, x will be determined when testnet go live). Ban players with bad activities follow by the DAO rules.
+  pallet-pool: Manage players in the Empires by limiting the number of players, changing upfront every 'x' amount of time (x depends on the number of players staying in the pool and number of projects running on HE-Chain, x will be determined when testnet goes live). Ban players with bad activities followed by the DAO rules.
 
-  pallet-tx-handler: Manage player's transactions on the Empires, every minute or hours players only can make 'x' transactions. Reduce 'y' percentage of               transaction fee. 'x' and 'y' will be determined by DAO.
+  pallet-tx-handler: Manage player's transactions on the Empires, every minute or hour players can only make 'x' transactions. Reduce 'y' percentage of transaction fee. 'x' and 'y' will be determined by DAO.
 
   pallet-player: Handle player information likes id, name, friends...
 
-  pallet-evm: build Ethereum compatible to deploy Solidity code.
+  pallet-evm: create an Ethereum compatible environment for deploying Solidity code.
 
 
 
 
 ### Ecosystem Fit
 
-  At this moment, most of NFT Gaming projects running on Ethereum, BSC, or Solana name Axie Infinity, the Sandbox, Decentraland... and as we do the [Heroes and Empires](https://heroesempires.com/). We consider thoes platform are "common" chain because they can fit to many purposes but doesn't specialize for NFT Blockchain Game. Inspired fron Substrate philosophi that 'builders can just focus on the chain logic' so we build HE-Chain specialize for NFT Blockchain Game.
+  At this moment, most of the NFT Gaming projects are running on Ethereum, BSC, or Solana name Axie Infinity, the Sandbox, Decentraland... and as we do the [Heroes and Empires](https://heroesempires.com/). We consider these platforms are "common" chains because they can fit many purposes but don't specialize in NFT Blockchain Games. Inspired by Substrate philosophy that 'builders can just focus on the chain logic', so we built HE-Chain that specialized in NFT Blockchain Game.
   
-  We know the 'pain' of scalability and  the cost of operating that Heroes & Empires spent more than $3M just for the transaction fees, we do think if we bring that money to grow H&E ecosystem that could be the game changing.
+  We know the 'pain' of scalability and  the cost of operating that Heroes & Empires spent more than $3M just for the transaction fees, we do think if we brought that money to grow the H&E ecosystem that could be game-changing.
   
-  Our current user target is the NFT Gaming projects or high-frequency applications and of course is Heroes and Empires. HE-Chain will bring fully decentrialze platform and web3 to around 40k users of H&E and millions of users in cryptocurrency world.
+  Our current user target is the NFT Gaming projects, high-frequency applications, and, of course, is Heroes and Empires. HE-Chain will bring fully decentralized platform and web3 to around 40k users of H&E and millions of users in the cryptocurrency world.
   
-  At the Kusama/Polkadot ecosystem, all the EVM compatible can be the same as HE-Chain at this time but with specialize of HE-Chain chain logic, there is no project nearly the same as HE-Chain acording to [Dotmarketcap](https://dotmarketcap.com/ecosystem).
+  At this time, in the Kusama/Polkadot ecosystem, all the EVM compatible can be the same as HE-Chain at this time but with specialization of HE-Chain chain logic, there is no project nearly the same as HE-Chain according to [Dotmarketcap](https://dotmarketcap.com/ecosystem).
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
 - Huynh Van Quyet (Jack) - CEO + Leader
-- Phan Dang Quy (David) - Teachnical Lead
+- Phan Dang Quy (David) - Technical Lead
 - Truong Ngoc Vuong (Michael) - CTO + UX/UI
 - Do Tan Trung (Jackson) - Full-Stack Developer + DevOps
 - Luu Hoang Trung (Mike) - UI/UI + DevOps
@@ -99,21 +99,21 @@
 
 ### Team's experience
 
-Cryptoviet team started in the crypto industry in 2017, back then we do the social media, marketing plans. 2020 we build web3 products started with [CasperStats](https://casperstats.io/) as an Explorer for Casper Network that granted from DEVxDAO, NFT Blockchain Game name [Heroes and Empires](https://heroesempires.com/) with ~400k total users and ~40k daily users.
+Cryptoviet team started in the crypto industry in 2017. Back then we did the social media, marketing plans. In 2020 we build web3 products starting with [CasperStats](https://casperstats.io/) as an Explorer for Casper Network that granted by DEVxDAO, NFT Blockchain Game named [Heroes and Empires](https://heroesempires.com/) with ~400k total users and ~40k daily users.
 
-Team experiences came from many aspects but focus on 'build to last'. Well model design, clean code is the philosophy of the Cryptoviet developer team
+Team experiences comes from many aspects, but focus is on 'build to last'. Good model design and clean code is the philosophy of the Cryptoviet developer team
 
 CEO + Leader Jack has created the most active social media in Vietnam (Bitcoin Vietnam News).
 
-David has designed and built smart contracts model for H&E, a granted project from Contentos for [wallet](https://play.google.com/store/apps/details?id=com.xonic.wallet) [source code](https://github.com/quyphandang/xonic_wallet).
+David has designed and built smart contract models for H&E, a grant project from Contentos for [wallet](https://play.google.com/store/apps/details?id=com.xonic.wallet) [source code](https://github.com/quyphandang/xonic_wallet).
 
 Michael with more than 4 years of experience with Nodejs and React, Nuxtjs. UX/UI for https://casperstats.io and https://heroesempires.com/
 
-Jackson back then do Technical Lead for the well-known bank in Vietnam, with 4 years of experience on static languages (Java, C++, Typescript)
+Jackson, back then as Technical Lead for a well-known bank in Vietnam, with 4 years of experience in static languages (Java, C++, Typescript)
 
-Mike with 4 years of experience in UX/UI and Nodejs, has designed and built  [marketplace](https://market.heroesempires.com/) for H&E and https://casperstats.io
+Mike, with 4 years of experience in UX/UI and Nodejs, has designed and built  [marketplace](https://market.heroesempires.com/) for H&E and https://casperstats.io
 
-Stefan with 5 years of experience as Software Engineer working on the top crypto exchange in Vietnam, he best on design pattern, SOLID, and Substrate
+Stefan with 5 years of experience as Software Engineer working on the top crypto exchange in Vietnam, he is best on design pattern, SOLID, and Substrate
 
 ### Team Code Repos
 
@@ -161,19 +161,19 @@ Whitepaper + Yellowpaper: Comming soon
 
 ### Milestone 1 — The Heroes & Empires + EVM
 
-- **Estimated duration:** 4 month
+- **Estimated duration:** 4 months
 - **FTE:**  1.2
 - **Costs:** 25,000 USD
 
-In this milestone, we build modules Player, Empires, and EVM, the requirements will fall into acceptance criteria:
+At this milestone, we build modules for Player, Empires, and EVM. The requirements will fall into acceptance criteria:
 + Users can join Empires
 + Users can leave Empires
-+ Charge upfront fee when users join the pool
-+ Charge fee based on the period of time they stay in the pool
-+ Refund correct amount when users leave the pool
-+ Solidity code can be deployed and call on HE-Chain
++ Charge an upfront fee when users join the pool
++ Charge a fee based on the period of time they stay in the pool
++ Refund the correct amount when users leave the pool
++ Solidity code can be deployed and called on HE-Chain
 + Create pallet-player
-+ Unittest have to pass 100%
++ Unittest has to pass 100%
 + Dispatchable functions must have comments
 
 
@@ -182,10 +182,10 @@ In this milestone, we build modules Player, Empires, and EVM, the requirements w
 | 0a. | Apache 2.0|
 | 0b. | Whitepaper & Yellowpaper |
 | 0c. | Documentation | We will comment on code, publish documents as text articles and videos to show users how Empire Pool works, how to create a player account, how to join and leave the pool |
-| 0d. | Testing Guide | Every internal and external function must have the comment follow with unittest, Bounty for finding bug will apply for community |
+| 0d. | Testing Guide | Every internal and external function must have the comment followed by a unittest, and the community will be rewarded for finding bugs |
 | 0e. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0f. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
-| 1. | Substrate module: pallet_player | module to store player information likes (name, id, friends, tokens) |  
+| 1. | Substrate module: pallet_player | module to store player information like (name, id, friends, tokens) |  
 | 2. | Substrate module: pallet_pool | module to manage players in the Empires |  
 | 3. | Substrate module: pallet_evm | EVM compatible on HE-Chain |
 
@@ -212,7 +212,7 @@ In this milestone, we build modules DAO, TX-Handler, HE-Chain Testnet, the requi
 | -----: | ----------- | ------------- |
 | 0a. | Apache 2.0|
 | 0b. | Documentation | We will comment on code, publish documents as text articles and videos to show users how to run HE-Chain Node, how HE-Chain on-chain governance works, why 'x' and 'y' are reasonable|
-| 0c. | Testing Guide | Every internal and external function must have the comment follow with unittest, Bounty for finding bug will apply for community |
+| 0c. | Testing Guide | Every internal and external function must have the comment followed by a unittest, and the community will be rewarded for finding bugs |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
 | 1. | Substrate module: pallet_tx_handler | module to limit the transaction and reduce transaction fee|  
@@ -236,18 +236,18 @@ In this milestone, we build HE-Bridge to (Ethereum + BSC), KSM parachain, the re
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | Apache 2.0|
-| 0b. | Documentation | Publish document explain of How HE-Bridge work, the trust of HE-Bridge|
-| 0c. | Testing Guide | Every internal and external function must have the comment follow with unittest, Bounty for finding bug will apply for community |
+| 0b. | Documentation | Publish a document explaining  how HE-Bridge work, the trust of HE-Bridge|
+| 0c. | Testing Guide | Every internal and external function must have the comment followed by a unittest, and the community will be rewarded for finding bugs |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
-| 1. | Substrate module: pallet_bridge | module to mint and burn HE-Chain token by listen to events from (Ethereum + BSC) |  
-| 2. | Substrate module: pallet_auction | module to implement Kusama parachain auction |  
+| 1. | Substrate module: pallet_bridge | module to minting and burning HE-Chain token by listen to events from (Ethereum + BSC) |  
+| 2. | Substrate module: pallet_auction | Kusama parachain auction implementation module |  
 
 
 ## Future Plans
 
-Luckily, we will integrate Heroes&Empires to HE-Chain first that we can put all our resources (20 team members including marketing team, QA, QC) to expand, use, and test HE-Chain.
+Fortunately, we will integrate Heroes & Empires into HE-Chain first, allowing us to devote all of our resources (20 team members including marketing, QA, and QC) to expanding, using, and testing HE-Chain.
 
-We will work with several top NFT Game projects and teams in Vietnam such as [Axie Infinity](https://axieinfinity.com/), [Imba Game](https://imba.co/), [StarPunk](https://starpunk.io/) to deploy on HE-Chain.
+We will work with several top NFT Game projects and teams in Vietnam such as [Axie Infinity](https://axieinfinity.com/), [Imba Game](https://imba.co/), and [StarPunk](https://starpunk.io/) to deploy on HE-Chain.
 
 
