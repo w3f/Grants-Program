@@ -119,7 +119,7 @@ Our project focus is Endangered Species Conservation and to provide new opportun
 
 - **Registered Address:**
 
-**212 Carmichael Ave, Toronto, Ontario, Canada M5M2X**3
+**Toronto, Ontario, Canada
 
 - **Registered Legal Entity:**
 
