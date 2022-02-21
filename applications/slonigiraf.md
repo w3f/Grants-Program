@@ -1,6 +1,6 @@
 # W3F Grant Proposal
 
-- **Project Name:** Slonigiraf
+- **Project Name:** SLON - a recommendation letter system
 - **Team Name:** Slonigiraf
 - **Payment Address:** bc1qyuk4rdeqvc2rmetfhr3key4clty5sglaw4n5wx (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
@@ -9,44 +9,19 @@
 
 ### Overview
 
-- Slonigiraf is an p2p education system.
-- We want to bring to Web3 infrastructure the renowned Slonigiraf learning game, which has been designed to deliver more
-  interactive and productive lessons through peer-to-peer learning and quality control through cross-exams. This game in
-  a nutshell consists of the following parts:\
-  Sara (student) pays Tanya (teacher) to teach skill_1 and issue a certificate that Sarah has this skill. \
-  A "skill" discussed here is a specific learned ability to perform an action that can can be attested by different examiners in a similar way (not all everyday skills fall in this definition). \
-  Such a certificate not only shows that Sarah has skill_1, but also gives Sarah the ability to allow other people fine Tania a
-  fixed amount of money if Sarah lacks the skill. The penalty could be applied only once.\
-  Sarah then goes to another teacher Teri and pays him to teach skill_2 and get a certificate. Sarah provides Teri the
-  opportunity to revise skill_1 and penalize Tania.\
-  Sarah then goes to Ed (the employer) to get a job that requires skill_1 and skill_2. Sarah presents Ed with
-  certificates and give Ed a chance to punish Tanya and Terry. If Ed believes Sarah has the skills, he will hire Sarah
-  and also pay Sarah for the certificates use. Otherwise, Ed may penalize teachers for incorrect certificates.\
-  SLON works as a reputation token. You could be surprised that we provide a possibility to buy reputation but this design
-  really works - since you pay for your reputation, you value it.\
-  The relation between SLONs and guarantees is following: teacher can issue 5 guarantees having 100 SLONs on his account, 
-  but each guarantee, if penalized, costs teacher 100 SLON.\
-  All parties: Sarah, Tanya, Teri and Ed are economically motivated to behave honestly.\
-  Ed is economic incentivized penalize a teacher in case if Sarah lack the skill because he gets SLON from such teacher.\
-  Let's consider different ways of misbehavior of parties.\
-We should note here that Sara and Tanya, Sara and Teri are persons who trust each other, and Ed is a public company that Sara trusts. This "trust" is an essential composite of the system. Teacher will not issue a certificate for a student whom he doesn't trust. A student will not show a certificate to a company that is known for misbehavior.\
-A). Sarah gets a certificate from Tanya but then intentionally tells Teri that she lack such skill. Teri penalize Tanya and Tanya loses some amount of SLON. As Tanya knows exactly that Sarah is good at the skill then Tanya decides not to work any more with Sarah and not to issue other certificates for Sarah. Sarah loses faith in herself in Tanya's mind. And this "faith" cost a lot. By the way Sarah has no motif to act in such way.\
-B). The same as above but Sarah allows Ed to penalize Tanya. Sarah will not get a work if she do so. It's not profitable for Sarah.\
-C). Ed knows that Sarah has a skill but penalize a teacher. He will lose all new workers - nobody wants to work with unfair hirer
-D). Teri knows that Sarah has a skill but penalize Tanya. Sarah knows that Teri cheated and will not work with him in future, Teri will lose a profit from issuing future certificates for Sarah.\
-E). Sarah bribes a teacher to issue a certificate. Ed will examine her and penalize the teacher. The pennalization sum is larger that Sarah's bribe. Thus the teacher can't afford to get a bribe from a student.\
-  In different professions two models of payments exist: per hour (or per month) and per result. The first one is secure to workers but doesn't motivate them to produce the result. The second one - paying for the result enables to democratize the service market - you just pay for what you need and don't require CVs of worker. Also it enables us to include students and pupils in system as teachers - students teach each other and pay each other only for the result.\
-  The idea initially was developed in 2019 year at a private school as a [paper game](https://slon-i-giraf.ru/app/work?view=paperGameView&language=ENG)\
+- SLON is a recommendation letter system on a blockchain.
+- Reputation is the cornerstone of economic life. Societies with great social trust grow faster than those that do not trust each other. Today we have many private reputation systems: Airbnb, which allows travelers and homeowners to trust each other, Uber, which ranks taxi drivers and passengers by their history and comments about each other, Google Places, which ranks restaurants and other businesses... \
+The reputation systems mentioned above collect recommendations from people and centrally accumulate this value within a private company. \
+[It’s known](https://www.econstor.eu/bitstream/10419/176431/1/10.1186_s40854-016-0039-4.pdf) that such systems are vulnerable to ballot-stuffing, bad-mouthing, and various attack models including constant attack, camouflage attack, whitewashing attack and sybil attack. \
+Traditional reputation systems try to solve such problems by tying economic interactions to reputation or ranking, for example Amazon.com flags a product's rating if it comes from a "verified purchase". However, such ratings can be influenced by the seller imitating the buyer and rating their own product. \
+However, there is a well-known working orthogonal approach that has proven to be effective and stable for more than centuries and is decentralized - letters of recommendation. \
+A letter of recommendation is a document issued by a person with a social reputation. Such a person (referee) recommends an employee for hiring in the company. The company can downgrade and ultimately damage the referee's reputation if they refer a bad employee, so the referee makes some profit from the employee before recommending them, often not in monetary terms to deal with such risk. Thus, the referee acts as an insurer. \
+A letter of recommendation divides the rating system into two parts: a statement about the employee and the reputation of the referee. For example, if Uber uses this approach, then the taxi driver rating will consist of a series of letters of recommendation, and referees will lose reputation if they recommend a bad taxi driver to a new client. \
+The recommendation letter system has limited applications due to the difficulty of disseminating information about bad-faith referees who cheat the system, and the difficulty of calculating the actual reputation of the referee. \
+We are aiming to create a blockchain recommendation letter system that can solve the problems of maintaining the reputation of referees and punishing them in case of bad recommendations.
+- Our team has an experience of using a recommendation letter system at a public school education. We apply it to teacher-student interaction where a teacher issues recommendation letters about student skills. The idea initially was developed in 2019 year as a [paper game](https://slon-i-giraf.ru/app/work?view=paperGameView&language=ENG)\
 Then in 2020 we implemented the web version of this educational model on Java/Mysql and use it for now.
-Some of our classes are online and free to participate and you can join and see how does it work - 
-every Saturday we have free to join biology class where students teach and examine each other 
-using of Java/Mysql version of system. [Here](https://t.me/bio_slonigiraf) is our telegram group of the class. And [here](https://us02web.zoom.us/j/86918554814?pwd=aUpndVI0dU9KclNybk1pVlM3K0FkQT09) is a Zoom link (20.00 each Saturday, Moscow time). There is an ongoing study to compare the efficacy of such learning to traditional lecture based approach. We're looking for the comparison results to be published by the end of 2022 year.\
-By the way working in pairs is known to improve the learging in schools, see for example paper on [programming teaching](https://www.sciencedirect.com/science/article/abs/pii/S0360131520302219?dgcid=rss_sd_all). Thus it's highly likely that adding the quality controls for such work in pairs is a further improvement.
-- This grant application request funding to build datastore for the Slonigiraf game results in a form of Substrate
-  pallet that could be used in a parachain to any Substrate based relay chain representing the first educational dApp at
-  the ecosystem.
-- Moving this game to blockchain version enables the team to issue tokens (SLON) and create an economical stimulus to
-  education organizations to join via token donations to them. Thus we are highly aimed to complete this project.
+- This grant application is asking for funding to create a reputation letter system in the form of a Substrate pallet that can be used in any substrate-based chain that provides a reputation tracking feature.
 
 ### Project Details
 
