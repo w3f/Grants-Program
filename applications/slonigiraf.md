@@ -120,35 +120,35 @@ Team leader:
 <tr><td> 0d. </td><td> Docker </td><td> We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. </td></tr>
 <tr><td> 0e. </td><td> Article </td><td> We will publish an <b>article</b> that explains what was done/achieved as part of the grant. (Content, language and medium should reflect your target audience described above.)</td></tr>
 <tr><td> 1. </td><td> Substrate module </td><td> <b>Publicly exposed methods:</b> <br/> 
-Function to penalize a teacher. Will allow a student to enable employer to penalize the teacher. 
-Should test if teacher and student signatures are valid and certificate was not previously used.
+Function to penalize a referee. Will allow a worker to enable employer to penalize the referee. 
+Should test if referee and worker signatures are valid and a letter was not previously used.
 <pre>
 pub fn reimburse(
 			origin: OriginFor<T>,
-			insurance_id: u32,
-			teacher_id: H256,
-			student_id: H256,
+			letter_id: u32,
+			referee_id: H256,
+			worker_id: H256,
 			employer_id: H256,
 			ask_price: BalanceOf<T>,
-			teacher_sign: H512,
-			student_sign: H512,
+			referee_sign: H512,
+			worker_sign: H512,
 		) -> DispatchResultWithPostInfo 
 </pre>
 
-Function to see if the certificate is valid. Should return TRUE if teacher was not penalized yet.
+Function to see if the letter is valid. Should return TRUE if referee was not penalized yet.
 <pre>
-fn was_insurance_used(
-		teacher: H256,
+fn was_letter_used(
+		referee: H256,
 		number: usize,
 	) -> bool 
 </pre>
 <br/>
 <b>Runtime Storage defined by your module:</b><br/>
-Invalid certificates are planned to be stored as Map of boolean arrays with key consisted of teacher address concatenated to index of window where certificate id resides.
+Invalid letters are planned to be stored as Map of boolean arrays with key consisted of referee address concatenated to index of window where letter id resides.
 <pre>
 #[pallet::storage]
-#[pallet::getter(fn insurance_of_owner_by_index)]
-pub(super) type OwnedInsurancesArray<T: Config> =
+#[pallet::getter(fn letter_of_owner_by_index)]
+pub(super) type OwnedLetersArray<T: Config> =
 StorageMap<_, Twox64Concat, (H256, u64), Vec<bool>, ValueQuery>;
 </pre>
 </td></tr>
