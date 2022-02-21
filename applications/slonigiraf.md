@@ -155,7 +155,7 @@ StorageMap<_, Twox64Concat, (H256, u64), Vec<bool>, ValueQuery>;
   </tbody>
 </table>
 
-[Use case diagram](https://drive.google.com/file/d/1hqeF9jXbK-9rwgn-2y7WDZXOOzz6B9od/view?usp=sharing)
+[Use case diagram](https://drive.google.com/file/d/1tJp9ucrf-1OMzSmOJ5X9taixQed4gmSS/view?usp=sharing)
 
 ## Future Plans
 
