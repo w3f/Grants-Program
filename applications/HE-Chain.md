@@ -62,7 +62,23 @@
   pallet-evm: create an Ethereum compatible environment for deploying Solidity code.
 
 
+- **DAO**
 
+  Currently, by design, there are three objects that need to determine through DAO:
+
+    1. Autoban mechanism
+  
+     There are several rules of Empires that players must follow when they join the pool. These are ideas to keep the pool 'as clean as possible' such as ban/kick     AFK(away from keyboard) players, ban/kick players on the Spamming Blacklist.
+  
+    2. The Empire Pool fee
+  
+     Pool fee is another base idea to keep the pool clean, with a reasonable fee determined by DAO, the Empires Pool can prevent the network from malicious accounts. When many players join the pool, the total network fee charged by the pool can be significant to grow the ecosystem by granting the projects. 
+  
+    3. The number transaction limit of TX-Handler
+
+     The idea of TX-Handler is to protect the network from the DDOS, also determining the right number is important because if the number is not appropriate, it's can drive away many goof projects for example. Currently, our Heroes & Empires only need a maximum of 10 TXs/minute but another good PvP game can require 30 TXs/minutes, at this point the limit number is 30 is reasonable for the HE-Chain network.
+  
+Although these ideas would be different in blockchain, we must deploy Heroes & Empires on HE-Chain to determine those numbers.
 
 ### Ecosystem Fit
 
@@ -157,15 +173,15 @@ Whitepaper + Yellowpaper: Comming soon
 
 - **Total Estimated Duration:** 9 months
 - **Full-Time Equivalent (FTE):**  1.2 FTEs
-- **Total Costs:** 59,000 USDT
+- **Total Costs:** 54,000 USDT
 
-### Milestone 1 — The Heroes & Empires + EVM
+### Milestone 1 — The Heroes & Empires
 
 - **Estimated duration:** 4 months
 - **FTE:**  1.2
-- **Costs:** 25,000 USD
+- **Costs:** 20,000 USD
 
-At this milestone, we build modules for Player, Empires, and EVM. The requirements will fall into acceptance criteria:
+At this milestone, we build modules for Player, Empires. The requirements will fall into acceptance criteria:
 + Users can join Empires
 + Users can leave Empires
 + Charge an upfront fee when users join the pool
@@ -187,7 +203,6 @@ At this milestone, we build modules for Player, Empires, and EVM. The requiremen
 | 0f. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
 | 1. | Substrate module: pallet_player | module to store player information like (name, id, friends, tokens) |  
 | 2. | Substrate module: pallet_pool | module to manage players in the Empires |  
-| 3. | Substrate module: pallet_evm | EVM compatible on HE-Chain |
 
 
 
@@ -241,7 +256,6 @@ In this milestone, we build HE-Bridge to (Ethereum + BSC), KSM parachain, the re
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
 | 1. | Substrate module: pallet_bridge | module to minting and burning HE-Chain token by listen to events from (Ethereum + BSC) |  
-| 2. | Substrate module: pallet_auction | Kusama parachain auction implementation module |  
 
 
 ## Future Plans
