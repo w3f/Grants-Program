@@ -130,7 +130,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 * **Full-Time Equivalent (FTE):**  2 Software Engineer, 0.5 Project Manager
 * **Total W3F Costs:** 55 000$
 * **Total Polywrap DAO Costs:** 22 000$ & 60 WRAP ([Approved Grant Proposal](https://snapshot.org/#/polywrap.eth/proposal/0x62c3657d805dfa271b6c0f0acb332ddd78c4d89450b04a8cb9222794a36a49f2))
-* **Start Date:** 28. February 2022
+* **Start Date:** 11. April 2022
 
 ### Milestone 1 - Substrate Core Polywrapper
 
