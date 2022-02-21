@@ -19,43 +19,35 @@ A letter of recommendation is a document issued by a person with a social reputa
 A letter of recommendation divides the rating system into two parts: a statement about the employee and the reputation of the referee. For example, if Uber uses this approach, then the taxi driver rating will consist of a series of letters of recommendation, and referees will lose reputation if they recommend a bad taxi driver to a new client. \
 The recommendation letter system has limited applications due to the difficulty of disseminating information about bad-faith referees who cheat the system, and the difficulty of calculating the actual reputation of the referee. \
 We are aiming to create a blockchain recommendation letter system that can solve the problems of maintaining the reputation of referees and punishing them in case of bad recommendations.
-- Our team has an experience of using a recommendation letter system at a public school education. We apply it to teacher-student interaction where a teacher issues recommendation letters about student skills. The idea initially was developed in 2019 year as a [paper game](https://slon-i-giraf.ru/app/work?view=paperGameView&language=ENG)\
-Then in 2020 we implemented the web version of this educational model on Java/Mysql and use it for now.
+- Our team has an experience of using a recommendation letter system at a public school education. We apply it to teacher-student interaction where a teacher issues recommendation letters about student skills. The idea initially was developed in 2019 year as a [paper game](https://slon-i-giraf.ru/app/work?view=paperGameView&language=ENG). Then in 2020 we implemented the web version of this educational model on Java/Mysql and use it for now.
 - This grant application is asking for funding to create a reputation letter system in the form of a Substrate pallet that can be used in any substrate-based chain that provides a reputation tracking feature.
 
 ### Project Details
 
-- The pallet interface will be consisted of functions that enable users to check a certificate validity \
-  and penalize teachers for dishonest behavior. Invalid certificates are planned to be stored as Map of boolean arrays
-  with key consisted of teacher address concatenated to index of window where certificate id resides. Valid certificates
-  will be stored offchain to save blockchain space.
-- The identity of users is tracked as follows: each certificate contains the address of the teacher and student. There is a balance known to all on the teacher's address. If the teacher's balance becomes less than the amount of the fine for the certificate, this certificate is considered temporarily canceled. If a student wants to show an active certificate to an employer to get a job, or to another teacher in order to take a second exam, the student signs that he agrees to grant that person the right to impose fines. The student knows the real identity and addresses of employee and teachers, teachers know a real identity and blockchain address of the student. Teacher knows the address who fined him and a real identity of the students who had the certificate. This information is enough to prevent "silent" fines. Teacher can track each fine with aid from the student. Sybil attack is not possible in principle in such system, as all transactions are done between real world identities.
-- We plan to use Rust / Substrate to complete this part of the project.
-we initially thought that smart contracts on Ethereum/Polka etc would be enough. But there are two problems with such approach: UX and technical.
-UX one requires users to buy the token that allows to pay for smart contract execution. Most of our users don't know anything about crypto, thus it's exceptionally hard to make them buy some crypto. SLON token initially is given for free to any school/university.
-Technical. We implement the system that should process requests from millions of users every day.\
-Let's calculate the required number of transactions per second.\
-There are two types of transactions that are sent: first - usual for any blockchain - transfer of SLON between holders. We will not count this type of transaction because the number of second type transactions is large enough to convince that we need a parallelization.\
-The second type transaction is a reimbursement where the person who is eligible to punish the teacher uses that right.\
-We have enough statistics from the school that uses such educational approach to estimate number of reimbursement transactions per second. Usually we process about 30 reimbursements per 45 minutes lesson per class of 20 students or 0.67 transactions per minute per 20 students.\
-In Russia there are about 15 million of pupils at schools. If we assume that all teachers will use such system at lesson we get (0.67*15*10^6/20) transactions per minute or 8375 transactions per second.\
-Substrate gives about 1000 transactions per second per chain. Thus we need at least 9 chains only for Russia to make this blockchain work. One can argue that in Russia there are different time zones and transaction load will be lowered by this mean. But don't forget that on Earth we have about 50x more pupils than in Russia.\
-Thus no single chain can process transactions if all pupils in Russia will use our educational model at classes - too many transactions, even considering that we use offchain as much as possible. Thus we look for any approach to shard and parallelize transaction processing. Polkadot design with relay and parachains looks great to solve this parallelization issue. As we need a lot of parachains to make the system work it's unlikely to include all of them in Polkadot or Kusama directly instead we plan to use our own relay chain with our parachains. Our relay chain can be connected to Polkadot or Kusama with bridges.
-- The reputation system in current education system is organized as following: universities issue diploma and risk to lose their reputation by graduating students with bad skills. We propose just accelerate that feedback loop for those who issue diploma and lower a barrier to enter market of diploma issuing to make it more democratic and competitive.
+- The pallet interface will consist of functions that enable users to check a letter validity and penalize referees for dishonest behavior. Invalid recommendation letters are planned to be stored as Map of boolean arrays with keys consisting of referees addresses concatenated to the index of the window where letter id resides. Valid recommendation letters will be stored off chain to save blockchain space.
+- The identity of users is tracked as follows: each letter of recommendation contains public keys of the referee and the worker. The referee key is linked to a publicly visible reputation balance. If the referee's balance falls below the amount of the letter penalty, the letter of recommendation is considered temporarily void. If the worker wants to present the employer with an active letter of recommendation for employment, the employee signs an agreement to give the employer the right to impose fines. The worker knows the real identity and public keys of the employees and referee, the referee know the real identity and public key of the worker. The referee knows the public key of who fined him and the real identity of the worker who had the letter. This information is enough to prevent "silent" fines. Referees can keep track of each penalty with the help of a worker. A Sibyl attack is basically impossible in such a system, since all transactions are carried out between real individuals. Note that the worker can be his own referee, but it is economically unprofitable for him, because he cannot adequately determine the risk of being a bad worker. It is safer for the employee not to issue the letter himself, but to ask the referee to do it.
+- We plan to use Rust / Substrate to complete this part of the project. We initially thought that smart contracts on Ethereum/Polka etc would be enough. However we implement the system that should process requests from millions of users every day. \
+Let's calculate the required number of transactions per second. \
+There are two types of transactions that are sent: first - usual for any blockchain - transfer of SLON between holders. We will not count this type of transaction because the number of second type transactions is large enough to convince us that we need a parallelization.
+The second type transaction is a reimbursement where the person who is eligible to punish the recommender uses that right. \
+We will take into account only our educational project where we do have real world statistics about reimbursement transactions.
+Usually we process about 30 reimbursements per 45 minutes lesson per class of 20 students or 0.67 transactions per minute per 20 students.
+In Russia there are about 15 million pupils at schools. If we assume that all teachers will use such a system at lesson we get (0.671510^6/20) transactions per minute or 8375 transactions per second. \
+Substrate gives about 1000 transactions per second per chain. Thus we need at least 9 chains only for Russia to make this blockchain work. One can argue that in Russia there are different time zones and transaction load will be lowered by this means. But don't forget that on Earth we have about 50x more pupils than in Russia. \
+Thus no single chain can process transactions if all pupils in Russia will use our educational model at classes - too many transactions, even considering that we use offchain as much as possible. Thus we look for any approach to shard and parallelize transaction processing. Polkadot design with relay and parachains looks great to solve this parallelization issue. As we need a lot of parachains to make the system work it's unlikely to include all of them in Polkadot or Kusama directly. Instead we plan to use our own relay chain with our parachains. [Our relay chain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fwss1.slonigiraf.org#/explorer) can be connected to Polkadot or Kusama with bridges. We’ve already launched our own relay chain and it’s active from 12 April 2021.
 - We've built PoC/MVP product on Java Vaadin framework that can be used via
   link: https://slon-i-giraf.ru/app/work?language=ENG
-- What needs to be completed: datastore, penalizing capability, certificate validity lookup, tests, documentation,
+- What needs to be completed: datastore, penalizing capability, letter validity lookup, tests, documentation,
   example integration to parachain template
 - UI part is not intended to be done for this proposal and can be submitted at next proposal.
 
 ### Ecosystem Fit
 
 - Our projects fits to dApp part of Polkadot/Kusama like ecosystem.
-- The project audience consists of pupils, students, teachers and employees. Most of them never touched crypto world.
+- The project audience consists of pupils, students, teachers, employees and companies. Most of them never touched crypto world.
   This part of the project is intended to build the blockchain API that will be used in future for UI creation.
-- Our projects meet the need for a new educational paradigm.
-- Our educational model is unique and no similar approach exists neither in blockchain world nor in regular economic
-  life.
+- Our projects meet the need for a decentralized reputation system.
+- Recommendation letter is a well known tool in the real world but was never ported to blockchain.
 
 ## Team :busts_in_silhouette:
 
