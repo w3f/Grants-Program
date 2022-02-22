@@ -69,7 +69,7 @@ The initial implementation of the project which was intended as a deliverable fo
 
 #### Technology Stack
 
-The substrate pallet is written in rust based on the `FRAME` Substrate framework. The pallet types in `types.json` are generated in `JSON`, and the Test Node will be a fork of the `Setheum Node` based on the `substrate-node-template`, the node leverages the `ORML` stack for a lot of functionalities especially `Multi-Currency` functionalities. And the GUI to be used in the tutorial is the `Setheum Console` which is a fork of the `polkadot-js` UI;
+The substrate pallet is written in rust based on the `FRAME` Substrate framework. The pallet types in `types.json` are generated in `JSON`, and the Test Node will be a fork of the `Setheum Node` based on the `substrate-node-template`, the node leverages the `ORML` stack for a lot of functionalities especially `Multi-Currency` functionalities. And the GUI to be used in the tutorial is a custom `Reach.JS` app utilising `Polkadot.JS`.
 
 #### Non-Goals
 
@@ -127,13 +127,13 @@ We have started development of this specific protocol in [this repository](https
 
 - **Total Estimated Duration:** 4 weeks;
 - **Full-Time Equivalent (FTE):**  1.2
-- **Total Costs:** 10,000 USD;
+- **Total Costs:** 7,700 USD;
 
 ### Milestone 1 Example — Implement Substrate Modules
 
 - **Estimated duration:** 1 month
 - **FTE:**  1.2
-- **Costs:** 10,000 USD (BTC)
+- **Costs:** 7,700 USD (BTC)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -146,8 +146,9 @@ We have started development of this specific protocol in [this repository](https
 | 2. | Types Generation | We will create a `types.json` file that defines the types in the `launchpad-crowdsales` Substrate module. |
 | 3. | Demo node | The Pallet will be added to a demo substrate node fork of Setheum node |
 | 4. | Docker file | Provide a docker file with the demo chain that demonstrates this project |
-| 5. | Simple UI | Provide a simple UI for interacting with the pallet |
-| 6. | Benchmarking | Add benchmarking to the pallet |
+| 5. | CLient API | Provide a custom Client API for interacting with the pallet |
+| 6. | Simple UI | Provide a simple UI for interacting with the pallet |
+| 7. | Benchmarking | Add benchmarking to the pallet |
 
 ## Future Plans
 
