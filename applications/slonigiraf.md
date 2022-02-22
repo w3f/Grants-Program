@@ -191,7 +191,7 @@ fn letter_index_from_coordinates(coordinates: LetterCoordinates) -> usize
 See if letter is fraud.
 <pre>
 fn was_letter_canceled(
-		garantee: H256,
+		guarantee: H256,
 		number: usize,
 	) -> bool
 </pre>
@@ -200,7 +200,7 @@ fn was_letter_canceled(
 Mark letter as fraud.
 <pre>
 fn mark_letter_as_fraud(
-		garantee: H256,
+		guarantee: H256,
 		letter_number: usize,
 	) -> DispatchResult
 </pre>
