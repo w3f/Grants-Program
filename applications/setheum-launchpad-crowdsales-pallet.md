@@ -69,7 +69,7 @@ The initial implementation of the project which was intended as a deliverable fo
 
 #### Technology Stack
 
-The substrate pallet is written in rust based on the `FRAME` Substrate framework. The pallet types in `types.json` are generated in `JSON`, and the Test Node will be a fork of the `Setheum Node` based on the `substrate-node-template`, the node leverages the `ORML` stack for a lot of functionalities especially `Multi-Currency` functionalities. And the GUI to be used in the tutorial is a custom `Reach.JS` app utilising `Polkadot.JS`.
+The substrate pallet is written in rust based on the `FRAME` Substrate framework. The pallet types in `types.json` are generated in `JSON`, and the Test Node will be a fork of the `Setheum Node` based on the `substrate-node-template`, the node leverages the `ORML` stack for a lot of functionalities especially `Multi-Currency` functionalities. And the GUI to be used in the tutorial is a custom `React.JS` app utilising `Polkadot.JS`.
 
 #### Non-Goals
 
