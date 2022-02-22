@@ -136,13 +136,14 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 * **Estimated duration:** 1 month
 * **FTE:**  2 Software Engineer, 0.5 Project Manager
-* **Costs:** 77 000$ & 60 WRAP
+* **Costs:** 55 000$
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can interact with polywrapper |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests and e2e tests using polywrap recipes json tests |
+| 0d. | Article | We will publish an article that explains the what/why/how of integrating Substrate based chains using Polywrap. Some examples from the BlockWatch team's Tezos integration: [launch article](https://blockwatch.cc/blog/announcing-tezos-polywrapper/), [dev docs](https://blockwatch.gitbook.io/polywrap-tezos/). |
 | 1. | Schema Definitions | Described below |
 | 2. | `substrate-signer-provider` Polywrap Client JavaScript Plugin | Described below |
 | 3. | `substrate-core` Wrapper | Described below |
