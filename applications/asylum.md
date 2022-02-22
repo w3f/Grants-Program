@@ -3,7 +3,7 @@
 - **Project Name:** [Asylum](https://asylum.space/)
 - **Team Name:** Asylum
 - **Payment Address:** 0x4dE01f5904651353021b9694f16FAb5f02DCD00e (USDT (ERC20))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -260,8 +260,8 @@ Actual concept materials
 ### Overview
 
 - **Total Estimated Duration:** 6 weeks
-- **FTE:** 3 FTE
-- **Total Costs:** 60,000 USD
+- **FTE:** 2-3 FTE
+- **Total Costs:** 50,000 USD
 
 
 ### Milestone 1 — Basic in-game NFT items standard and web-app
@@ -289,8 +289,8 @@ Actual concept materials
 ### Milestone 2 — Extended web-app and testing games
 
 - **Estimated Duration:** 3 weeks
-- **FTE:** 3
-- **Costs:** 30,000 USD
+- **FTE:** 2
+- **Costs:** 20,000 USD
 
 | Number | Deliverable                     | Specification |
 | -----: | ------------------------------- | ------------- |
@@ -301,12 +301,11 @@ Actual concept materials
 | 0e.    | Article                         | - |
 | 1.     | Web application                 | We will extend a web application to make it correspond provided mockups. |
 | 2.     | Game A                          | We will create a 2d web-faced platformer game sandbox in pixeled style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
-| 3.     | Game B                          | We will create a 3d web-faced game sandbox in realistic style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
 
 
 ## Future Plans
 
-As was described in the 'Overview' section, Asylum is a big project which has ambitious plans for the future. The milestones described in this grant application are about to become the first step for building a huge ecosystem for crypto gaming.
+As was described in the 'Overview' section, Asylum is a big project which has ambitious plans for the future. The milestones described in this grant application are about to become the first step for building a huge ecosystem for crypto gaming. We are planning to create a follow-up grant where we will describe one more game to show interoperability and extend our ecosystem.
 
 In our plans, the launch of the Asylum platform is set for the end of the 2022 year, but we are planning to support and extend our product long-term. Also, we would like not only to build but also empower real metaverse gaming by creating Asylum Studio - an independent team that will develop games on top of the Asylum ecosystem.
 
