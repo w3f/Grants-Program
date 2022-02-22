@@ -259,22 +259,22 @@ Actual concept materials
 
 ### Overview
 
-- **Total Estimated Duration:** 3 month
+- **Total Estimated Duration:** 6 weeks
 - **FTE:** 3 FTE
-- **Total Costs:** 120,000 USD
+- **Total Costs:** 60,000 USD
 
 
-### Milestone 1 — Basic in-game NFT items standard and testing environment
+### Milestone 1 — Basic in-game NFT items standard and web-app
 
-- **Estimated Duration:** 1.5 month
+- **Estimated Duration:** 3 weeks
 - **FTE:** 3
-- **Costs:** 60,000 USD
+- **Costs:** 30,000 USD
 
 | Number | Deliverable                     | Specification |
 | -----: | ------------------------------- | ------------- |
 | 0a.    | License                         | MIT           |
 | 0b.    | Documentation                   | We will provide a repository with documentation for the defined standard of NFT metadata in the format of text docs (most likely in .md). Also, examples of metadata will be provided. |
-| 0c.    | Testing Guide                   | For manually testing we will provide a basic **tutorial** that explains how a user can interact with the testing environment - go through a "happy path" which includes running a node, hosting web-app and games, minting the NFT in specified standard and trying to use it in two games. For implemented standard unit tests will be provided along with a guide on how to run them. |
+| 0c.    | Testing Guide                   | For implemented standard unit tests will be provided along with a guide on how to run them. |
 | 0d.    | Docker                          | - |
 | 0e.    | Article                         | - |
 | 1.     | Item standard definition        | The definition of the in-game item standard will consist of three parts: JSON schema, descriptive documentation, and examples of usage. Standard properties will be described below in the subparagraphs. |
@@ -283,33 +283,26 @@ Actual concept materials
 | 1.3    | Multiple visual interpretations | NFT item created with the proposed standard will have the ability to have multiple visual interpretations, both for 2D or 3D visualization types. Interpretations will be stored under the different tags, for example, "2d-pixeled-inventory-view" or "3d-realistic-equipped". |
 | 2.     | Asylum Core pallet              | We will deliver the implementation of the described standard. It will be pallets, which will implement base operations with item  |
 | 3.     | Connection library              | We will deliver the JS library, that will cover functionality of Asylum Core pallet.  |
-| 4.     | Web application                 | We will create a web application that will give an ability to interact with mentioned pallets: mint and update test NFT items. Also, there will be links to Game A and Game B to manually test items in different representations |
-| 5.     | Game A                          | We will create a 2d web-faced platformer game sandbox in pixeled style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
-| 6.     | Game B                          | We will create a 3d web-faced game sandbox in realistic style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
+| 4.     | Web application                 | We will create a web application that will give an ability to interact with mentioned pallets: create and update template and mint test NFT items. Related to the proposed UI mockups, the "templates section" will be implemented |
 
-### Milestone 2 — Extended in-game NFT items standard and testing environment
 
-- **Estimated duration:** 1.5 month
+### Milestone 2 — Extended web-app and testing games
+
+- **Estimated Duration:** 3 weeks
 - **FTE:** 3
-- **Costs:** 60,000 USD
+- **Costs:** 30,000 USD
 
 | Number | Deliverable                     | Specification |
 | -----: | ------------------------------- | ------------- |
 | 0a.    | License                         | MIT           |
-| 0b.    | Documentation                   | We will extend standard documentation and examples, delivered in the first milestone with new properties |
-| 0c.    | Testing Guide                   | We will extend tutorials for manually testing to cover new standard properties. |
+| 0b.    | Documentation                   | -             |
+| 0c.    | Testing Guide                   | For manually testing we will provide a basic **tutorial** that explains how a user can interact with the testing environment - go through a "happy path" which includes running a node, hosting web-app and games, minting the NFT in specified standard and trying to use it in two games. |
 | 0d.    | Docker                          | - |
-| 0e.    | Article                         | We will write an article on the Medium platform about the use-cases of using defined standards. |
-| 1.     | Item standard definition        | We will extend the definition of the in-game item standard, that was done in the first milestone. Standard properties will be described below in the subparagraphs. |
-| 1.1    | Animation effects               | NFT item created with the proposed standard will have the ability to have animated visual effects. Example: animation of the sword strike. |
-| 1.2    | Sound effects                   | NFT item created with the proposed standard will have the ability to have audio effects, that can be combined with the animation. Example: the sound of the sword strike.    |
-| 1.3    | Nested ownership                | NFT item created with the proposed standard will have the ability to have "slots" for a child NFT items. The slot will describe how child visual and non-visual interpretations will be combined with the parent interpretation and requirements for child items. Such option can be used in the items craft system |
-| 1.4    | In-game properties              | NFT item created with the proposed standard will have the ability to have some in-game properties, stored as a dictionary. |
-| 2.     | Asylum Core pallet              | We will extend the implementation of the standard to support new options.  |
-| 3.     | Connection library              | We will extend the JS library, that will cover functionality of Asylum Core pallet.  |
-| 4.     | Web application                 | We will extend the web application, delivered in the first milestone to support new options from the specified standard: mint and update test NFT items with properties of animation, sound effects, and nested ownership. |
-| 5.     | Game A                          | We will extend Game A, delivered in the first milestone to support new options from the specified standard (animation, sound effects, nested ownership). |
-| 6.     | Game B                          | We will extend Game B, delivered in the first milestone to support new options from the specified standard (animation, sound effects, nested ownership). |
+| 0e.    | Article                         | - |
+| 1.     | Web application                 | We will extend a web application to make it correspond provided mockups. |
+| 2.     | Game A                          | We will create a 2d web-faced platformer game sandbox in pixeled style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
+| 3.     | Game B                          | We will create a 3d web-faced game sandbox in realistic style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
+
 
 ## Future Plans
 
