@@ -26,6 +26,7 @@ We are aiming to create a blockchain recommendation letter system that can solve
 
 - The pallet interface will consist of functions that enable users to check a letter validity and penalize referees for dishonest behavior. Invalid recommendation letters are planned to be stored as Map of boolean arrays with keys consisting of referees addresses concatenated to the index of the window where letter id resides. Valid recommendation letters will be stored off chain to save blockchain space.
 - The identity of users is tracked as follows: each letter of recommendation contains public keys of the referee and the worker. The referee key is linked to a publicly visible reputation balance. If the referee's balance falls below the amount of the letter penalty, the letter of recommendation is considered temporarily void. If the worker wants to present the employer with an active letter of recommendation for employment, the employee signs an agreement to give the employer the right to impose fines. The worker knows the real identity and public keys of the employees and referee, the referee know the real identity and public key of the worker. The referee knows the public key of who fined him and the real identity of the worker who had the letter. This information is enough to prevent "silent" fines. Referees can keep track of each penalty with the help of a worker. A Sibyl attack is basically impossible in such a system, since all transactions are carried out between real individuals. Note that the worker can be his own referee, but it is economically unprofitable for him, because he cannot adequately determine the risk of being a bad worker. It is safer for the employee not to issue the letter himself, but to ask the referee to do it.
+- A letter of recommendation is NOT registered on the blockchain when issued. This design principle saves blockchain space and hides important personal information from intruders. A letter of recommendation is a sign by guarantee of a string consisting of the letter_id, the public key of the guarantee, the public key of the worker, and the amount of reputation staked on this letter. The worker can sign the employer's right to send a letter of recommendation to the blockchain to penalize the guarantee.
 - We plan to use Rust / Substrate to complete this part of the project. We initially thought that smart contracts on Ethereum/Polka etc would be enough. However we implement the system that should process requests from millions of users every day. \
 Let's calculate the required number of transactions per second. \
 There are two types of transactions that are sent: first - usual for any blockchain - transfer of SLON between holders. We will not count this type of transaction because the number of second type transactions is large enough to convince us that we need a parallelization.
@@ -151,6 +152,60 @@ Invalid letters are planned to be stored as Map of boolean arrays with key consi
 pub(super) type OwnedLetersArray<T: Config> =
 StorageMap<_, Twox64Concat, (H256, u64), Vec<bool>, ValueQuery>;
 </pre>
+
+<br/>
+<b>Private functions:</b>
+
+<br/>
+Function that creates a part of datastore to mark fraud letter. See runtime storage definition.
+<pre>
+fn mint_chunk(
+		to: H256,
+		chunk: usize,
+	) -> DispatchResult 
+</pre>
+
+
+<br/>
+Function to see if chunk of datastore exists.
+<pre>
+fn chunk_exists(
+		to: H256,
+		chunk: usize,
+	) -> bool
+</pre>
+
+<br/>
+Conversion from letter index to coordinates of it in datastore.
+<pre>
+fn coordinates_from_letter_index(number: usize) -> LetterCoordinates
+</pre>
+
+<br/>
+Conversion from coordinates in datastore to letter index.
+<pre>
+fn letter_index_from_coordinates(coordinates: LetterCoordinates) -> usize
+</pre>
+
+<br/>
+See if letter is fraud.
+<pre>
+fn was_letter_canceled(
+		garantee: H256,
+		number: usize,
+	) -> bool
+</pre>
+
+<br/>
+Mark letter as fraud.
+<pre>
+fn mark_letter_as_fraud(
+		garantee: H256,
+		letter_number: usize,
+	) -> DispatchResult
+</pre>
+
+
 </td></tr>
   </tbody>
 </table>
