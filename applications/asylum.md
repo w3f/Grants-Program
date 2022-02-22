@@ -300,7 +300,8 @@ Actual concept materials
 | 0d.    | Docker                          | - |
 | 0e.    | Article                         | - |
 | 1.     | Web application                 | We will extend a web application to make it correspond provided mockups. |
-| 2.     | Game A                          | We will create a 2d web-faced platformer game sandbox in pixeled style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
+| 2.     | Unity integration               | We will provide a simple library for Unity (SDK) for integration of the Asylum on-chain ecosystem (Asylum Core pallet) into the game client. |
+| 3.     | Game A                          | We will create a 2d web-faced platformer game sandbox in pixeled style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable). The game will use NFT items minted on the Asylum Core pallet via the Unity library. |
 
 
 ## Future Plans
