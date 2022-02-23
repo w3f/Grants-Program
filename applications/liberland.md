@@ -180,6 +180,11 @@ justice@liberland.org
 Rust for the blockchain backend ,Javascript for the Frontend, Rust substrate-based   
 Backend.
 
+## License:  
+We will release all code under the MIT license, in order to give everyone access to our chain and enable developers to build applications    
+with the liberland blockchain.   
+Read more about MIT license here:   
+https://en.wikipedia.org/wiki/MIT_License
 
 ## Timeline and Milestones
 
