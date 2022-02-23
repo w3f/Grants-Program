@@ -205,6 +205,46 @@ fn mark_letter_as_fraud(
 	) -> DispatchResult
 </pre>
 
+<br/>
+<b>Benchmarking:</b>
+
+Data structures to run benchmarks and create weights
+<pre>
+benchmarks! {
+	create {
+		...
+	}: _(RawOrigin::Signed(caller))
+
+	reimburse {
+		...
+	}: _(RawOrigin::Signed(caller), origin, letter_id, referee_id, worker_id, employer_id, ask_price, referee_sign, worker_sign)
+}
+
+impl_benchmark_test_suite!(
+	...
+);
+</pre>
+
+<br/>
+<b>Weights</b>
+<pre>
+pub trait WeightInfo {
+	fn reimburse() -> Weight;
+}
+
+pub struct SubstrateWeight<T>(PhantomData<T>);
+impl<T: frame_system::Config> WeightInfo for SubstrateWeight<T> {
+	fn create() -> Weight {
+		...
+	}
+}
+
+impl WeightInfo for () {
+	fn create() -> Weight {
+		...
+	}
+}
+</pre>
 
 </td></tr>
   </tbody>
