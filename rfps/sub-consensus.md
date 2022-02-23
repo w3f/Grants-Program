@@ -19,7 +19,7 @@ Should this mechanism be opt-in for collators, they could be incentivised to par
 
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 1
-* **Total Costs:** 30,000 DAI
+* **Total Costs:** 40,000 DAI
 
 ### Milestone 1 - Research and technical specification
 
