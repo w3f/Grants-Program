@@ -186,6 +186,15 @@ with the liberland blockchain.
 Read more about MIT license here:   
 https://en.wikipedia.org/wiki/MIT_License
 
+
+## Requested funding   
+We request a total amount of 50 000 USD, payable in BTC for all the milestones. Our goal is also to become part of  
+substrate's builders program.  
+
+## Documentation for all deliverable's  
+Documentation is something we take very seriously and our goal is to have the entire code base documented   
+with both inline code comments and how-to guides, teaching users how to easiely use the tools that we provide.
+
 ## Timeline and Milestones
 
 #### Basic blockchain
