@@ -203,8 +203,8 @@ At this milestone, we build modules for Player, Empires. The requirements will f
 | 0e. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0f. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
 | 1. | Substrate module: pallet_player | module to store player information like (name, id, friends, tokens) |  
-| 2. | Substrate module: pallet_pool | module to manage players in the Empires |  
-
+| 2. | Substrate module: pallet_pool | module to manage players in the Empires |
+| 3. | Weights/Benchmarking | implement benchmarking for pallet_player + pallet_pool to determine appropriate weights |
 
 
 ### Milestone 2 — DAO + TX-Handler + HE-Chain Testnet
@@ -234,7 +234,8 @@ In this milestone, we build modules DAO, TX-Handler, HE-Chain Testnet, the requi
 | 0e. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
 | 1. | Substrate module: pallet_tx_handler | module to limit the transaction and reduce transaction fee|  
 | 2. | Substrate module: pallet_dao | module to vote on-chain runtime data |  
-| 3. | End-user Test + Article/Tutorial | Testing as an end-user product along with articles/tutorials of how to use HE-Chain | 
+| 3. | Weights/Benchmarking | implement benchmarking for pallet_tx_handler + pallet_dao to determine appropriate weights  |
+| 4. | End-user Test + Article/Tutorial | Testing as an end-user product along with articles/tutorials of how to use HE-Chain | 
 
 
 ## Future Plans
