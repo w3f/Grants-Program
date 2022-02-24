@@ -27,19 +27,25 @@ Coupons are technically utility tokens by definition. While efficient by current
 
 While this is a robust and logical expansion of Bitins, probably the most lucrative route of further development lies within the future expansion of services on top of the token platform. While integration with existing DeFi systems is logical, there might be enough traction within the basic platform for the development of an own exchange/DeFi platform.
 
-![Architecture](https://user-images.githubusercontent.com/98888366/152210104-02b45847-25aa-4601-adc0-c27b65195349.png)
-
-The system itself as it seen by BSN has five functional modules:
+The system itself as it seen by BSN has 4 subject types (actors):
+1.	A user;
+2.	A service provider;
+3.	A stakeholder;
+4.	A seller (POS owner).
+A service provider and a stakeholder can be the same person (in b2c model) as well as different persons (in b2b model), also there can be several independent stakeholders in a b2b model.
+The system will have five functional modules:
 1.	Ink! smart contract, that executes all logic for cashflows and coupons operations;
-2.	Centralized system management module for coupons generation, invalidation and financial management;
-3.	Centralized user management module for new off-chain users: all-in-one service for wallet generation and immediate transaction;
+2.	Centralized system management module for stakeholders (coupons generation, invalidation and financial management);
+3.	Centralized system management module for service provider (commissions management and stats) with front-end service for new off-chain users: all-in-one service for wallet generation and immediate transaction with gas charged from service provider’s pool;
 4.	Management apps;
 5.	User apps.
 
-The service will have several ways for monetization:
-1. Sale fees upon a coupon sale: e.g. a coupon with 50EUR value will be sold for 55EUR, the 5EUR comission could be split between a seller and a service provider as well as being fully credited to the seller.
-2. User's transaction fees: a service provider would be able to gather fees for different user's transactions and there will be an ability to customize terms for charging commissions and their size: e.g. transactions upon coupon redemption with an existing user's wallet (with charging gas from this wallet) can be free and transactions for users without a wallet can be additionally charged (as a service provider uses it's own account for charging gas). Another example: different commission rates for different assets or additional fees for redemting a coupon that was recently expired.
-3. The service could be run on a b2b market when one contractor provides a service for creating and managing coupons for several counterparties on a SaaS basis. The smart-contrat will allow to share commissions from user transactions between contractors, as well as the ability to set different rates for such commissions for different contractors or different assets.
+![Architecture 2 drawio](https://user-images.githubusercontent.com/98888366/155559730-166ed4da-8712-48a3-941f-168f825d1649.png)
+
+The service will have three types of commissions/fees:
+1. Sale fees upon a coupon sale: e.g. a coupon with 50EUR value will be sold for 55EUR, the 5EUR commission could be split between a Seller and a Stakeholder as well as being fully credited to the Seller.
+2. User's transaction fees: a service provider would be able to gather fees for different user's transactions and there will be an ability to customize terms for charging commissions and their size: e.g. transactions upon coupon redemption with an existing user's wallet (with charging gas from this wallet) could be free and transactions for users without a wallet can be additionally charged (as a service provider uses its own account for paying gas). Another example: different commission rates for different assets or additional fees for redeeming a coupon that was recently expired.
+3. The service could be run on a b2b market when one contractor (Service provider) provides a service for creating and managing coupons for one or several counterparties (Stakeholders) on a SaaS basis. The smart-contract will allow to share commissions from user transactions between contractors, as well as the ability to set different rates for such commissions for different contractors or different assets.
 
 ### Ecosystem Fit
 
@@ -141,9 +147,7 @@ At this stage we’ll execute three deliverables:
 - system management tools MVP;
 - Buyer's UI.
 
-![Milestones](https://user-images.githubusercontent.com/98888366/152210186-b5cbb319-bd36-462f-a9ae-df44b97c8801.png)
-
-Deliverables are marked on the scheme above.
+![Milestones 2 drawio](https://user-images.githubusercontent.com/98888366/155560672-88bb34a4-0dcc-4553-8039-820a2d54c598.png)
 
 The project will be split in 2 milestones:
 - milestones 1 will be supported by a group of 2 developers, 1 DevOps engineer and 1 QA;
@@ -173,6 +177,10 @@ The project will be split in 2 milestones:
 | 3. | Coupon registration | We will create a coupon registration method (for each registered coupon code an appropriate assets volume will be locked in the liquidity pool) and coupon code ZK-validation method (to prove to a coupon seller, that the coupon is registered and there’s enough liquidity locked for it without showing the private key) |  
 | 4. | Coupon validation | We will create an algorithm for validation of a redeemable coupon using its public and private keys. Each coupon will have public and private keys: the public one will be stored in the smart contract and the private one will be known only to buyer/user from the entire coupon. The destination wallet address for the transaction will be signed by the private key so that no destination wallet spoofing could be done by scams. Smart contract will validate the coupon and the destination address with the public key, pushed to the contract by the management tools service. After validation of the coupon smart contract will transfer appropriate sum from the service provider’s pool to the specified wallet. |  
 | 5. | Coupon liquidation | We will create a coupon burn method upon it’s redemption and corresponding transaction |  
+| 6. | Service provider’s commissions methods | We will create methods for managing and withdrawing service provider’s commissions: the smart-contract will allow to share commissions from user transactions between contractors, as well as the ability to set different rates for such commissions for different contractors or different assets |  
+| 7. | Stakeholder’s commissions methods | We will create methods for managing and withdrawing stakeholder’s commissions for different user's transactions with an ability to customize terms for charging commissions and their size |  
+| 8. | “Get stats” methods | We will create methods for obtaining stats by a service provider or a stakeholder on the life cycle of coupons referred to them |  
+| 9. | “Uninvolved users” service | Centralized service that allows managing transactions without a user’s wallet: gas for coupon validation, redemption and asset transfer will be charged from service provider’s wallet and additional fee will be taken from the user |  
 
 
 ### Milestone 2 — Design and development of system management tools
@@ -189,8 +197,8 @@ The project will be split in 2 milestones:
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what benefits what are the benefits of using the system |  
 | 1. | Coupon management tools | We will develop service provider’s CLI tools for coupon lifecycle management including: coupon generation algorithm implementation, coupon storage DB, coupon registration in a blockchain with indication of a success registration or fail due to insufficient funds in the liquidity pool, coupon sale management (send to a seller, receive info on coupon sale or loss), coupon statistics. Also it will include tools for liquidity pool management – assets top-up or withdrawal, indication of spare assets (not locked to registered coupons) in the liquidity pool. Each coupon will consist of a public and a private key. Public keys will be delivered to the smart contract for operations. Private keys will be accessible only to buyers and will validate the transaction upon coupon redemption. Upon registration of a coupon in the smart contract the appropriate sum of tokens will be locked in the service provider’s pool as a collateral for the coupon balance. Only registered coupons (with locked liquidity in the service provider’s pool) could be sent to a seller for sale. Coupons that failed their registration in a blockchain due to insufficient funds in the liquidity pool or whatever won’t be available for sale.  |  
-| 2. | Comissions management tools | It is assumed that the service will work on a b2c as well as a b2b basis, so several types of monetization are provided – the main two are transaction fees from users and sales fees from sellers. In this section BSN will deliver a service, that will get information on collected fees from the blockchain and offer a solution for modelling statistics on gathered comissions and it’s accounting. DISCLAIMER: All tools for financial and sales management (e.g. CRM) are not included in the MVP for this project. |  
-| 3. | Buyer's web interface | We will develop UI for coupons' redemption for users that already have an existing wallet with non-zero balance. Validation of the coupon will be made straight by the smart contract with gas taken from user’s wallet. |  
+| 2. | Commissions management tools | It is assumed that the service will work on a b2c as well as a b2b basis, so several income models are provided – the main two are transaction fees from users and sales fees from sellers. In this section BSN will deliver a service, that will get information on collected fees from the blockchain and offer a solution for modelling statistics on gathered commissions and it’s accounting. DISCLAIMER: All tools for financial and sales management (e.g. CRM) are not included in the MVP for this project. |  
+| 3. | Buyer's web interface | We will develop UI for coupons' redemption for users that already have an existing wallet with non-zero balance. Validation of the coupon will be made straight by the smart contract with gas taken from the user’s wallet. |  
 
 ## Future Plans
 
@@ -199,7 +207,6 @@ Above defined deliverables are just a start position for future development of t
 Our future plans for the project:
 - Design and development of seller’s API for on-line coupon codes delivery to a POS terminal upon sales.
 - Development of UI for service provider’s tools for financial management and accounting: fees and commissions management on both sides (seller fees and user coupon commissions), sales management (accounting for sent/sold/lost coupons for each seller).
-- User app development for new “off-chain” users that yet do not have a wallet: first coupon validation and redemption will be made by a centralized back-end solution with gas taken from service provider’s wallet and a new user’s wallet will be created immediately (if needed); smart contract will count this gas to the service prover’s commission.
 - Developing a user’s mobile app for “on-the-fly” coupon redemption by scanning a QR-code on the coupon – private key will be coded with a QR-code;
 - Develop APIs for buying coupons via SMS;
 - Algorithmic stablecoin development for using as a native service asset;
