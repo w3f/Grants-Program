@@ -162,18 +162,18 @@ HE-Chain Repos: https://github.com/cryptoviet/he-chain
 
 [Heroes & Empires 2021 Roundup](https://medium.com/@stefan_muto/heroes-and-empires-2021-roundup-a6617941ef5a)
 
-Whitepaper + Yellowpaper: Comming soon
+Whitepaper + Yellowpaper: Coming soon
 
 
 ## Development Roadmap :nut_and_bolt:
 
-![HE-Chain Development Roadmap](https://github.com/cryptoviet/he-chain-assets/blob/main/HE-Chain%20Development%20Roadmap.jpg)
+![HE-Chain Development Roadmap](https://github.com/cryptoviet/he-chain-assets/blob/main/HE-Chain%20Development%20Roadmap%20v2.jpg)
 
 ### Overview
 
 - **Total Estimated Duration:** 9 months
 - **Full-Time Equivalent (FTE):**  1.2 FTEs
-- **Total Costs:** 54,000 USDT
+- **Total Costs:** 39,000 USDT
 
 ### Milestone 1 — The Heroes & Empires
 
@@ -189,7 +189,8 @@ At this milestone, we build modules for Player, Empires. The requirements will f
 + Refund the correct amount when users leave the pool
 + Solidity code can be deployed and called on HE-Chain
 + Create pallet-player
-+ Unittest has to pass 100%
++ Unittest
++ Code coverage > 80%
 + Dispatchable functions must have comments
 
 
@@ -208,9 +209,9 @@ At this milestone, we build modules for Player, Empires. The requirements will f
 
 ### Milestone 2 — DAO + TX-Handler + HE-Chain Testnet
 
-- **Estimated duration:** 2 month
+- **Estimated duration:** 3 month
 - **FTE:**  1.2
-- **Costs:** 14,000 USD
+- **Costs:** 19,000 USD
 
 In this milestone, we build modules DAO, TX-Handler, HE-Chain Testnet, the requirements will fall into acceptance criteria:
 + HE-Chain Testnet launch with at least 5 nodes
@@ -219,7 +220,8 @@ In this milestone, we build modules DAO, TX-Handler, HE-Chain Testnet, the requi
 + TX-Handler manage the transaction limit with the 'x' above
 + Determine the 'y' percentage to reduce transaction fee by Testnet and vote by on-chain governance
 + TX-Handler reduce 'y' percentage with the number above
-+ Unittest have to pass 100%
++ Unittest
++ Code coverage > 80%
 + Dispatchable functions must have comments
 
 
@@ -232,30 +234,7 @@ In this milestone, we build modules DAO, TX-Handler, HE-Chain Testnet, the requi
 | 0e. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
 | 1. | Substrate module: pallet_tx_handler | module to limit the transaction and reduce transaction fee|  
 | 2. | Substrate module: pallet_dao | module to vote on-chain runtime data |  
-
-
-### Milestone 3 — HE-Bridge and KSM parachain
-
-- **Estimated duration:** 3 month
-- **FTE:**  1.2
-- **Costs:** 20,000 USD
-
-In this milestone, we build HE-Bridge to (Ethereum + BSC), KSM parachain, the requirements will fall into acceptance criteria:
-+ Must have published a technical document of HE-Bridge
-+ Able to transfer HE-Chain token between HE-Chain <-> Ethereum and HE-Chain <-> BSC
-+ Able to start an auction on Kusama Network
-+ Unittest have to pass 100%
-+ Dispatchable functions must have comments
-
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | Apache 2.0|
-| 0b. | Documentation | Publish a document explaining  how HE-Bridge work, the trust of HE-Bridge|
-| 0c. | Testing Guide | Every internal and external function must have the comment followed by a unittest, and the community will be rewarded for finding bugs |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
-| 1. | Substrate module: pallet_bridge | module to minting and burning HE-Chain token by listen to events from (Ethereum + BSC) |  
+| 3. | End-user Test + Article/Tutorial | Testing as an end-user product along with articles/tutorials of how to use HE-Chain | 
 
 
 ## Future Plans
