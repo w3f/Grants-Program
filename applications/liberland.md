@@ -195,6 +195,16 @@ substrate's builders program.
 Documentation is something we take very seriously and our goal is to have the entire code base documented   
 with both inline code comments and how-to guides, teaching users how to easiely use the tools that we provide.
 
+## Testing   
+We require all our functionality to have stable tests and benchmarking in order to verify high code quality. Our CI is configured to 
+execute all the tests that we have written and shut down pull requests that do not live up to our criteria.   
+
+## Releases   
+All releases will come with docker images and deployment files in order to make it as easy possible for   
+users to run our blockchain. We will publish an article about every release we do in order to showcase what we worked on  
+and also allow more people to interact with liberland's blockchain.   
+
+
 ## Timeline and Milestones
 
 #### Basic blockchain
