@@ -157,7 +157,7 @@ Dot Marketplace POC was conceptualized and developed during the Polkadot India h
 * **PTE:**  2
 * **Costs:**  8,325 USD  
 
-The main deiverable for this milestone will be to migrate the existing application to substrate frame v2 and include the chat feature for communication between a customer and worker.
+The main deiverable for this milestone will be to migrate the existing application to substrate frame v2 and include the chat feature as a pallet for communication between a customer and a service provider to have a one-on-one conversation over the deliverables and timelines. The entire milestone covers the Rust/Substrate code implementation.
 
 | Sr no. | Deliverable | Description |
 | --- | --- | --- |
@@ -165,8 +165,8 @@ The main deiverable for this milestone will be to migrate the existing applicati
 | 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of tasking pallet. |
 | 0c | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build. |
 | 0d | Docker Image | Docker image of the build |
-| 1 | Migration from frame v1 to frame v2 | The existing application backend will be migrated to frme v2 to account for the new features provided by the framework |
-| 2 | User Chat | Chat functionality to be exposed and consumed between two users to ease communication |
+| 1 | Migration from frame v1 to frame v2 | The [existing application backend](https://github.com/WowLabz/tasking_backend/blob/Phase1_Milestone3/pallets/pallet-tasking/src/lib.rs) will be migrated to frame v2 to account for the new features provided by the framework |
+| 2 | Chat Pallet | Chat functionality is to be exposed and consumed between the customer and the service provider to ease communication and this will be integrated with the tasking pallet's frame v2 version |
 |  |  |  |
 
 ### **Milestone 2**
@@ -177,7 +177,7 @@ The main deiverable for this milestone will be to migrate the existing applicati
 * **Costs:**  15,900 USD  
 
 
-In continuation to previous work, this milestone involves creation of a on chain decentralized court to handle dispute resolution. Being a juror is one of the user incentives that can be achieved thanks to the rating module mentioned in the first phase of dot marketplace.
+In continuation to previous work, this milestone involves creation of a on chain decentralized court to handle dispute resolution. Being a juror is one of the user incentives that can be achieved thanks to the rating module mentioned in the first phase of dot marketplace. The entire milestone covers the Rust/Substrate code implementation.
 
 | Sr no. | Deliverable | Description |
 | --- | --- | --- |
@@ -201,7 +201,7 @@ In continuation to previous work, this milestone involves creation of a on chain
 * **PTE:**  2
 * **Costs:**  16,050 USD    
 
-Dot Marketplace will also include frontend UI including the court and chat functionality built on top of the `substrate-front-end-template`
+Dot Marketplace will also include frontend UI including the court and chat functionality built on top of the `substrate-front-end-template`. 
 
 | Sr no. | Deliverable | Description |
 | --- | --- | --- |
