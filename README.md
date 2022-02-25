@@ -99,7 +99,6 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 
 - [Marcin Górny](https://github.com/mmagician)
 - [Ashley Grevelink](https://github.com/cruikshankss)
-- [Robert Hambrock](https://github.com/Lederstrumpf)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Aleixo Sánchez](https://github.com/alxs)
