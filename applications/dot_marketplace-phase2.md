@@ -145,9 +145,9 @@ Dot Marketplace POC was conceptualized and developed during the Polkadot India h
 
 ****Overview****
 
-* **Total Estimated Duration:** 5 Weeks
+* **Total Estimated Duration:** 3 Weeks
 * **Full-Time Equivalent (FTE):**  3.36
-* **Total Costs:** 40,275 USD
+* **Total Costs:** 24,305 USD
 
 
 ### **Milestone 1**
@@ -194,26 +194,7 @@ In continuation to previous work, this milestone involves creation of a on chain
 | 4 | Escrow  | Single account for storing all the funds for transfer/exchange. Account for creating task, bidding for the task, transferring juror fees (if the court is summoned), transferring winner fees. |
 | 5 | Scheduler | Custom event scheduler built based on block number to facilitate the waiting periods for jury acceptance and juror voting. |
 
-### **Milestone 3**
 
-* **Estimated duration:** 2 weeks
-* **FTE:**  2
-* **PTE:**  2
-* **Costs:**  16,050 USD    
-
-Dot Marketplace will also include frontend UI including the court and chat functionality built on top of the `substrate-front-end-template`. 
-
-| Sr no. | Deliverable | Description |
-| --- | --- | --- |
-| 0a | License | Apache 2.0 |
-| 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of tasking pallet. |
-| 0c | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build. |
-| 0d | Docker Image | Docker image of the build |
-| 1 | Frontend App | Supporting frontend UI to test the aforementioned functionality |
-| 1a | Chat  | UI and supporting functionality fro the user chat feature |
-| 1b  | Court | UI and supporting functionality for the decentralized court module |
-| 2 | Website | Dedicated one page website for Dot Marketplace |
-| 3 | Article | Website article sharing the motivation behind phase 2 of Dot Marketplace and how to make best use of it |
 
 ### **Additional Project Details**
 
