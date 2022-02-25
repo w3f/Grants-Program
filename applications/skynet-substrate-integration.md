@@ -1,10 +1,8 @@
 # W3F Open Grant Proposal
 
-
-* **Project Name:** Pallet for Decentralized Off-Chain Storage on Skynet
-* **Team Name:** Skynet Labs
-* **Payment Address:** BTC `39aFV1bfcxgjbYrWjgMs3A2fjM7bkKouhg`
-
+- **Project Name:** Pallet for Decentralized Off-Chain Storage on Skynet
+- **Team Name:** Skynet Labs
+- **Payment Address:** ETH `0xa4e14Aa5F82Cd903d97BE09B921c97E7Fc43d909`
 
 ## Project Overview :page_facing_up:
 
@@ -30,7 +28,6 @@ Our team wants to take on this project to expand the possibilities of what can b
 At this point, we have a JS SDK to easily expose Skynet in the browser to users, who can upload files and then store the unique URI (skylink) on-chain. Later, those can be retrieved and easily downloaded in the browser. We'd love to see developers building applications where blockchains themselves can interact more deeply with Skynet, writing data to Skynet, either for later access or for consumption by other web applications.
 
 ### Project Details
-
 
 In its final form, the Skynet Pallet would allow projects built with Substrate FRAME to access any Skynet Portal on the network using off-chain workers in order to do the following on Skynet:
 
@@ -78,11 +75,11 @@ _To be more specific on the functionality needing to be built out in Milestone 1
 - Then a hash of the public key and data key is taken and encoded into a skylink format (combining with a version number) before encoding to Base64 to generate the v2 Skylink.
 - Reading a Skylink v2 involves a GET request, which returns the data from the pointed to immutable Skylink (if the Skylink v2 points to another Skylink v2, if acts recursively until immutable file is resolved). The portal also returns a "proof" containing the chain of registry entries (each a Skylink v2) that need their signatures verified.
 
----------
+---
 
 For this grant, we seek the support of the Web3 Foundation for doing an initial build-out of Skynet functionality. The Skynet Labs team (formerly Nebulous, creators of the Sia blockchain network) have extensive experience in blockchain development, but have much less experience in Rust and the Polkadot ecosystems. We would view this as an opportunity to build out support for many of the Skynet primitives and utility functions while working to find the most developer friendly way of exposing those to applications building with Substrate.
 
-For more information on Skynet and our SDKs, see our [support guide](http://support.siasky.net/) and our [SDK documentation](http://siasky.net/docs/).
+For more information on Skynet and our SDKs, see our [support guide](http://support.skynetlabs.com/) and our [SDK documentation](http://siasky.net/docs/).
 
 ### Ecosystem Fit
 
@@ -118,13 +115,13 @@ Some use cases where we believe Skynet will be useful for Substrate devs:
 ### Contact
 
 * **Contact Name:** Daniel Helm, _Developer Evangelist for Skynet Labs_
-* **Contact Email:** daniel@siasky.net
-* **Website:** https://siasky.net/
+* **Contact Email:** daniel@skynetlabs.com
+* **Website:** https://skynetlabs.com/
 
 ### Legal Structure
 
 - **Registered Address:** 177 Huntington Ave Ste 1703, PMB 71942, Boston, Massachusetts 02115-3153 US
-- **Registered Legal Entity:** Nebulous Inc.
+- **Registered Legal Entity:** Skynet Labs
 
 ### Team's experience
 
@@ -175,7 +172,6 @@ Preliminary research has been undertaken into the Polkadot ecosystem generally a
 
 > We intend to take the lessons learned from the first version of this pallet and extend Skynet functionality according to the needs of developers. What follows are some steps we would look to take outside of the scope of this grant.
 
-
 | Number | Deliverable                                                   | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ------ | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1.     | Skynet Off-Chain Worker Pallet (SkyDB and MySky File support) | We will extend the pallet from milestone 1 to interact with the primatives built on Skynet's registry. This mutable storage layer acts as key-value database from which SkyDB and MySky files are constructed. This allows getting and setting arbitrary data and pointing to JSON files, encrypted files, and arbitrary skyfiles pointed to by consistent MySky file paths. These use public/private key combinations for access-control. This will also contain functionality for generating decryption and derivation keys that are interoperable with Skynet's MySky SDK. |
@@ -196,3 +192,13 @@ Skynet Labs will continue to develop Skynet by furthering integrations with bloc
 **How did you hear about the Grants Program?** - Parity & Web3 Foundation Representatives
 
 No work outside preliminary research has been done on the pallet so far. Skynet Labs does have investors, but we have no other contributors or grants related to this specific project.
+
+## Update & Amendments
+
+### 02/25/2022
+
+We grossly underestimated the number of blockers and competing priorities we'd encounter as a team, and the timeline has now been exceeded by several months. We are ready to submit our work, and will do so soon.
+
+As we better understood the ecosystem, we realized that a library for using Skynet in an off-chain worker was much more flexible for developing an application off-chain worker than was a proper pallet. As part of our deliverables, we now include the SDK library code [skynet-substrate](https://github.com/SkynetLabs/skynet-substrate), along with a substrate example off-chain worker and front-end showing how to use various features of the SDK.
+
+This amendment also updates our company name, URL, and payout address.
