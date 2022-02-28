@@ -60,9 +60,8 @@ https://github.com/pawnz0/NuLink
 | 0b. | Documentation | We will provide both documentation of the code and a basic tutorial that explains how a user can use the pallet. |
 | 0c. | Testing Guide | This milestone will have unit-test for each function to ensure functionality. In the guide we will describe how to run these tests. |
 | 1.     | register_watcher   | This function would record the public key of the watcher nodes and would be executed when the Nuproxy pallet first deployed. |
-| 2.     | ValidateWatchers | This function would check the signature in the update request. It would return true when the signature match the register watcher. |
-| 3.     | UpdateStakers   | This function would provide the functionality of updating the information of current stakers and bonding workers of Ursulas network. |
-| 4.     | GetActiveStakers | This function would return a list of active stakers by random sampling. |
+| 2.     | UpdateStakers   | This function would provide the functionality of updating the information of current stakers and bonding workers of Ursulas network. It will be restricted to watchers. |
+| 3.     | GetActiveStakers | This function would return a list of active stakers by random sampling. |
 
 ### Milestone 2 Implement Policy Pallet
 * **Estimated Duration:** 2 month
