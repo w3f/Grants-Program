@@ -5,7 +5,7 @@
 ● Team Name: Liberland (liberland.org)
 ● Payment Address btc: bc1qh0ejszphu4e8u04h6d6urlrmr2nyujsxhfq2rj
 ● Status: Open
-● Total Estimated Duration: 1 year
+● Total Estimated Duration: 3-4 months for first milestone 
 ● Full-time equivalent (FTE): 5 developers full time
 ```
 ## Project Description:
@@ -189,7 +189,8 @@ https://en.wikipedia.org/wiki/MIT_License
 
 ## Requested funding   
 We request a total amount of 50 000 USD, payable in BTC for all the milestones. Our goal is also to become part of  
-substrate's builders program.  
+substrate's builders program in order to get technical support and guidance from Parity.
+
 
 ## Documentation for all deliverable's  
 Documentation is something we take very seriously and our goal is to have the entire code base documented   
@@ -250,89 +251,24 @@ with a polkadot inspired Nominated Proof of stake consensus
 algorithm, utilizing the babe pallet for block production.
 
 
-#### Frontend
+#### Milestone Frontend
 
 **Deadline: Q2 2022**
 
-The Liberland frontend environment, our DAPP must betested and audited,and
-connected firmly to the now-functioning backend. It should be:
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License |  MIT |
+| 0b. | Documentation | We will provide both inline code documentation as well as user guides that shows how people can interact with our pallets and chain |
+| 0c. | Testing Guide | We will have test files for all mayor functions, more about our testing procedure can be found under the testing section  |
+| 0d. | Docker | We will provide a Dockerfiles that can be used to run our node and also test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a detailed article, walking a user through all functionality and features.)
+| 1.  | Frontend application | We will our frontend ready to be  |  create a Substrate module that will enable users to send and recieve the on-chain token LLMvgft
+|  2. | User onboardings                 |      We will onboard users to our Frontend using a browser based wallet, allowing them to interact with the liberland blockchain       |
+| 3. | Validator search | our frontend will allow the functionality to view and interact with running on-chain validators |
 
 ```
-● running;
-● connective with the wallet extensions used (initially Polka JS);
-● without overt bugs;
-● giving all the necessary messages and feedback to the users;
-```
 
-```
-● the blockchain actions performed fromthe frontend shouldbe 100 percent
-explainable from the Polka JS and the Terminal Blockchain explorers;
-● enabling the proof of stake functionality, that is
-○ nominating; and
-○ validating.
-● be linked to our Liberland.org website
-```
-##### Subprojects:
-
-Auditing
-
-1. Compile and deploy the contents of the frontend repository;
-2. Test it whether it has the following functionalities:
-● function as a wallet environment [like Terra Station or YOLO wallet for
-    Cardano];
-● sending, receiving transactions;
-● Benchmarking in order to set the transaction costs right;
-● transaction history incl. senders and recipients (KYCed entities where
-    applicable);
-● having at this stage one account only per wallet connection;
-● it should have a fully functioning (polka) staking function;
-● there must not be overt bugs;
-● all action in the frontend should one on one match the action in the PolkaJS
-    wallet; and
-● Test it for seamless integration with the backend.
-
-Implementing new functionality
-
-Next, comes the improvements. The following is the list of _core_ features our system does
-not yet have but should finish at this stage. It should:   
-
-```
-● show a list of available validators;
-● list of their rewards and risk parameters(how long have they been validating,
-how many slashing incidents);
-```
-
-```
-● enablea validator to set themselves up in the system and say how much they
-reward their nominators;
-● there should be a nominate function;
-● there should be an overview for the validator (rewards list, uptime, etc.);
-● there should also be an overview for the nominator(rewardslist, ability to claim
-rewards); and
-● the rewards system should work fully with the front end.
-```
-Your sources of inspiration are TerraStation, Exodus Wallet,YoloWallet, Phantom
-Wallet, and the Polka JS environment (although that is not exactly user-friendly).
-
-Polishing
-
-This phase will end with testing and adding new features that are largely cosmetic but  
-necessary so that the product won't be seen as half-done by the client. Those include:
-
-```
-● Having all popups functioning,i.e.that users know when a transactio nfails,for
-what reasons, etc.;
-● No major frontend and backend bugs that interact with user functionality;
-● Seamless working with the Polka JS extension;
-● integration with our Liberland.org website; meaning: the E-Residency login will
-result in Liberland blockchain login,matching a wallet to the corresponding
-login;
-● Having LLM from Liberland.org visible as mainnet LLM and vice versa;
-● Setting up a mobile version (in a browser, Google Chrome at first); and
-● Anything else the testers might find necessary,instead of including "merely nice
-to have".
-```
-Optional
+#### Optional
 
 Provided there is developmenttime, work can begin on a Liberand Android app,
 followed by an iOS app.
@@ -365,7 +301,7 @@ can communicate and call pallet functions. We are implementing the frontend to c
 polkadot.js browser plugin wallet. Allowing anyone to use our frontend that has a working browser.
 
 
-### State Governance
+### Milestone: State Governance
 
 **Deadline: Q3 2022**
 
@@ -375,6 +311,18 @@ The reason for that is that the Legislative Branch is the most citizen-facing. W
 need our citizens and supporters to find themselves in our system - ASAP. This is    
 why we have a burning need to implement the Legislative Branch first, far ahead of all the others.    
 
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License |  MIT |
+| 0b. | Documentation | We will provide both inline code documentation as well as user guides that shows how people can interact with our pallets and chain |
+| 0c. | Testing Guide | We will have test files for all mayor functions, more about our testing procedure can be found under the testing section  |
+| 0d. | Docker | We will provide a Dockerfiles that can be used to run our node and also test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a detailed article, walking a user through all functionality and features.)
+| 1. | Voting module | We will create a Substrate module that will enable users to vote and take an active part in voting in Liberland's judicial system |  
+| 2. | Law module | We will create a substrate module that allows users to create and vote for removal of laws | 
+
+
+The voting and the law module will enable the following functionality: 
 
 The Legislative Branch also can work on its own without the other branches.    
 
@@ -427,39 +375,29 @@ in order to give the end-user a more smoother experience.
 
 #### Smart Contracts
 
-**Deadline: Q3/Q**
+**Deadline: Q3 2022**
 
 The final task in the Q4 to Q1 scope is to prepare the Smart Contract pallet.This pallet 
 will enable others to write and run smart contracts,enabling functionality to
 Ethereumor BSC-DEXes and DAPPs. We do not expect this tobe _completely_ finished  
 before the end of Q4, but significant work should already be done by then.  
  
-Deadline: The end of Q2 2022.
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License |  MIT |
+| 0b. | Documentation | We will provide both inline code documentation as well as user guides that shows how people can interact with our pallets and chain |
+| 0c. | Testing Guide | We will have test files for all mayor functions, more about our testing procedure can be found under the testing section  |
+| 0d. | Docker | We will provide a Dockerfiles that can be used to run our node and also test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a detailed article, walking a user through all functionality and features.)
+| 1. | Smart contract module | We will create a Substrate module that will enable developers to create decentralized application using !ink smart contracts |  
+| 2. | Smart contract dex | We will create a simple decentralized exchange to showcase functionality of our smart contract module | 
+| 3. | Public blockchain explorer | we will release a public blockchain explorer where our users can see all transactions in real time |
+| 4. | On-chain smart contract assets | We will use our smart contract functionality to create on-chain assets such as NFT's | 
 
-##### Subprojects
 
-Prepare the Pallet
+On-chain smart contracts assets:
 
-1. Take a similar pallet from Polkadot or other open source. ;
-2. Make sure it works in our system.
-3. Test it with a sample smart contract or smart contracts.
-4. Prepare a demonstration, run it in a meeting with us.
-
-
-Launch of public block explorer
-
-1. Smart contracts require a blockchain explorer capable of monitoring the action;
-2. Take the opensource software of a similar blockchain explorer such as subscan
-    clone it.
-3. Make minimal changes so that it is _barely_ usable.
-4. It needs not to be _perfect_ by the end of Q4 - thisis a monumental task in scope!
-
-Set up guidelines to write Smart Contracts on Liberland
-
-1. Please copy a similar guideline from the source material.
-2. Make a Wiki explaining how it works.
-
-Citizenship NFT
+#### Citizenship NFT
 
 This will be the first Smart Contract we create on our new pallet.The purpose will be
 to represent the citizenship of every citizen.
@@ -477,6 +415,8 @@ citizen will be for the system this token!)
 ● the history of this particular citizenship token,i.e.who was the previous holder
 and holders of this NFT, creating a potentially "collectable" NFT.
 ```
+
+
 ##### Output
 
 We will be able to build smart contracts on our chain, which will create attractivity and 
@@ -498,6 +438,14 @@ https://paritytech.github.io/ink-docs/
 https://docs.substrate.io/v3/runtime/smart-contracts/   
 https://e-residency.liberland.org/   
 
+
+
+
+
+
+
+
+
 #### Current Development Status
 
 There have been about 7 full months of development spent on the project by various   
@@ -506,6 +454,13 @@ developers outside of the current team.
 Th ecurrent node implementation of Liberland’s blockchain has started and we have a   
 early beta version that you can find and download here:     
 https://github.com/liberland/liberland_node
+
+
+
+
+
+
+
 
 ## Ecosystem Fit:
 
@@ -530,11 +485,6 @@ the formance and security of the Rust programming.
 Parity’s vision for substrate aligns with our vision of providing e-services for our citizens.
 
 
-## Funds Required
-
-We ask for a level 2 funding, we want to put the liberland blockchain under the
-substrate builders program so that we can get technical support from Parity,so that we
-can provide the best possible stability for our chain.
 
 ## The Future
 
