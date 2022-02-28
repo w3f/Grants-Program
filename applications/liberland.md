@@ -205,25 +205,31 @@ users to run our blockchain. We will publish an article about every release we d
 and also allow more people to interact with liberland's blockchain.   
 
 
-## Timeline and Milestones
+## Timeline and Milestones :nut_and_bolt:   
 
-#### Basic blockchain
+All milestones are included in the total funding, that can be found in the Requested funding section above.   
 
-**Deadline: Q2 2022**
+
+### Milestone 1: Basic blockchain
 
 A basic mainnet blockchain based on Substrate. This is to a large extent already  
 built thanks to earlier efforts, but the project must be finished and deployed.
 
-```
-● Functional token transactions, send and receive LLM;
-● Frontend with on-chain wallet interaction;
-● Publicly see and interact with the blockchain;
-● Simple node deployment instructions;
-● Npos consensus
-● stake LLM in PolkaStaking (28 days), i.e. to nominate validators;
-● Active testnet; and
-● Onboard users.
-```
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License |  MIT |
+| 0b. | Documentation | We will provide both inline code documentation as well as user guides that shows how people can interact with our pallets and chain |
+| 0c. | Testing Guide | We will have test files for all mayor functions, more about our testing procedure can be found under the testing section  |
+| 0d. | Docker | We will provide a Dockerfiles that can be used to run our node and also test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a detailed article, walking a user through all functionality and features.)
+| 1. | Transaction module | We will create a Substrate module that will enable users to send and recieve the on-chain token LLM |  
+| 2. | Nominated Proof of stake consensus | We are shipping with nominated proof of stake consensus instead of Proof of Authority in order to promote decentralization and motivate user to run validators |  
+| 3. | Staking module | We will create a staking module that will allow users to stake their tokens and earn rewards|  
+| 4. | Active testnet | We will launch and host our first release testnet  |  
+
+**Deadline: Q2 2022**
+
+
 #### Output
 
 We have a simple, functioning blockchain. We will begin with a marketing campaign
