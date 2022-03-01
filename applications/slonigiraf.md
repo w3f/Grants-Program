@@ -39,8 +39,7 @@ Thus no single chain can process transactions if all pupils in Russia will use o
 - We've built PoC/MVP product on Java Vaadin framework that can be used via
   link: https://slon-i-giraf.ru/app/work?language=ENG
 - What needs to be completed: datastore, penalizing capability, letter validity lookup, tests, documentation,
-  example integration to parachain template
-- UI part is not intended to be done for this proposal and can be submitted at next proposal.
+  example integration to parachain template, example UI.
 
 ### Ecosystem Fit
 
@@ -247,6 +246,27 @@ impl WeightInfo for () {
 </pre>
 
 </td></tr>
+<tr><td> 2. </td><td> Example UI </td><td> 
+
+<b>Recommendation letter creation</b><br/>
+Template/Example React.js component that allows to create a letter of recommendation for guarantees. <br/>
+Contains a text area where guarantee can specify text of the letter; text field to specify a public <br/>
+key of worker; a button to sign a transaction; QR code of the signed letter to be transferred to the worker.
+<br/><br/>
+<b>Penalization right transfer</b><br/>
+Template/Example React.js component that transfers a right to penalize guarantees to employer. <br/>
+Creates a QR code that can be shown to an employer to transfer the letter text, guarantee and <br/>
+worker public keys, signatures of guarantee and worker.
+<br/><br/>
+<b>Penalization submission to a blockchain</b><br/>
+Template/Example React.js component for employers to send recommendation letter for penalization of <br/>
+guarantees. Contains a text field to show a text of the letter; a button to send a penalization transaction <br/>
+to the blockchain.
+<br/><br/>
+<b>Simple UI</b><br/>
+Should contain React.js components mentioned above combined in a single page web application based <br/>
+on the [substrate-front-end-template](https://github.com/substrate-developer-hub/substrate-front-end-template).
+</td></tr>
   </tbody>
 </table>
 
@@ -255,7 +275,7 @@ impl WeightInfo for () {
 ## Future Plans
 
 - We plan to launch a chain with this pallet in short term and integrate it with our current App.
-- Next we plan to rewrite the user interface using polkadot.js to exclude current UI centralization.
+- Next we plan to integrate React.js components with our MVP that to use in schools and universities.
 
 ## Additional Information :heavy_plus_sign:
 
