@@ -162,13 +162,13 @@ GitHub accounts of all team members.
 
 - **Total Estimated Duration:** 5 months
 - **Full-Time Equivalent (FTE):**  4
-- **Total Costs:** 48500 USDT
+- **Total Costs:** 45500 USDT
 
 ### Milestone 1 — SaaS3 Documentation, pallet-pNFT, pallet-user, Initial pNFT Offering
 
 - **Estimated duration:** 2 month
 - **FTE:**  4
-- **Costs:** 25000 USD
+- **Costs:** 24000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -187,7 +187,7 @@ GitHub accounts of all team members.
 
 - **Estimated Duration:** 3 month
 - **FTE:**  5
-- **Costs:** 23500 USD
+- **Costs:** 21500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
