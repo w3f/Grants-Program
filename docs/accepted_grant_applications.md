@@ -447,4 +447,5 @@
 | [Dmitrii Koshelev](https://github.com/dishport) | Implementation of the new hash function to BLS12 curves | [GitHub](https://github.com/dishport) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Hamster](https://github.com/orgs/hamster-shared) | Hamster - A decentralized computing network | [GitHub](https://github.com/orgs/hamster-shared) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Papers GmbH](https://papers.ch/en/) | Zaturn - A Generic Attestable Oracle parachain Phase 1 | [GitHub](https://github.com/airgap-it) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Slonigiraf](https://www.slonigiraf.org/) | SLON - a recommendation letter system| [GitHub](https://github.com/slonigiraf) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
