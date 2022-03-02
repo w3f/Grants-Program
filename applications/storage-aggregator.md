@@ -129,15 +129,17 @@ Code is being developed and product requirements are finalized.
 - **FTE:**  4 Developers & 1 Product Manager
 - **Costs:** 15,000 DAI
 
-| Number | Deliverable                                      | Specification                                                |
-| -----: | ------------------------------------------------ | ------------------------------------------------------------ |
-|    0a. | License                                          | Apache 2.0                                                   |
-|    0b. | Requirements finalization                        | We will finalize the product direction, profit model, technical architecture, etc. |
-|    0c. | Storage Aggregator official website UI design    | Website interface design, including product introduction, user experience, sponsors, how to contact us, etc. |
-|    0d. | Storage Aggregator Blockchain Network Deployment | We use `Substrate` to deploy the `storage aggregator` blockchain network, choose the pallet that suits us, open RPC ports. |
-|    0e. | Related functional tests                         | We will test the stability of the entire network, the official website interaction test. |
-|     1. | Substrate module: File Storage                   | We will create a File Storage Substrate module that will Mainly record file storage information, file type, storage node, storage platform |
-|     2. | Substrate module: Aggregator                     | We will create a `Aggregator Substrat`e module that will Aggregate storage platform file information, mainly used for intercommunication between storage information |
+| Number | Deliverable                                   | Specification                                                |
+| ------ | --------------------------------------------- | ------------------------------------------------------------ |
+| 0a.    | License                                       | Apache 2.0 / GPLv3 / MIT / Unlicense                         |
+| 0b.    | Documentation                                 | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can ) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c.    | Testing Guide                                 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d.    | Docker                                        | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e.    | Article                                       | We will publish an **article**/workshop that explains how the Storage Aggregator network works, storage mechanism description, etc. |
+| 1.     | Requirements finalization                     | We will finalize the product direction, profit model, technical architecture, etc. |
+| 2.     | Storage Aggregator official website UI design | Website interface design, including product introduction, user experience, sponsors, how to contact us, etc. |
+| 3.     | Substrate module: File Storage                | We will create a File Storage Substrate module that will Mainly record file storage information, file type, storage node, storage platform. |
+| 4.     | Substrate module: Aggregator                  | We will create a `Aggregator Substrat`e module that will Aggregate storage platform file information, mainly used for intercommunication between storage information. |
 
 ### Milestone 2
 
@@ -145,13 +147,16 @@ Code is being developed and product requirements are finalized.
 - **FTE:**  5 developers
 - **Costs:** 25,000 DAI
 
-| umber | Deliverable                                                  | Specification                                                |
-| ----: | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|   0a. | Develop unified storage API to index and decode mainstream storage platforms | Develop unified storage API, make mainstream storage platform interface compatible with `Amazon S3` API 100% unified data exchange API Store and retrieve user data in SA storage cloud |
-|   0b. | Mainstream storage platform node construction                | Build multiple storage platforms (Amazon Glacier, Google Coldline, IPFS, Swarm, Filecoin, storj, arweave, SIQ, 0CHAIN, Lambad, BitTorrent, Alibaba Cloud, etc.) |
-|   0c. | Develop primer switching engine                              | An internal transformation language inspired by the MongoDB query language. Using Primer, developers can select only the fields they want and further aggregate the data to meet their needs. All of this is done on the fly at query time. |
-|   0d. | Write relevant documentation                                 | We use Substrate to deploy the storage aggregator blockchain network, choose the pallet that suits us, open RPC ports. |
-|   0f. | Related functional tests                                     | The team will test all functions of the development as a whole and give relevant test reports. |
+| Number | Deliverable                                                  | Specification                                                |
+| ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 0a.    | License                                                      | Apache 2.0 / GPLv3 / MIT / Unlicense                         |
+| 0b.    | Documentation                                                | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can  spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c.    | Testing Guide                                                | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d.    | Docker                                                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e.    | Article                                                      | We will publish an **article**/workshop that explains how to operate to store data, technical implementation details. |
+| 1.     | Develop unified storage API to index and decode mainstream storage platforms | Develop unified storage API, make mainstream storage platform interface compatible with `Amazon S3` API 100% unified data exchange API Store and retrieve user data in SA storage cloud |
+| 2.     | Mainstream storage platform node construction                | Build multiple storage platforms (Amazon Glacier, Google Coldline, IPFS, Swarm, Filecoin, storj, arweave, SIQ, 0CHAIN, Lambad, BitTorrent, Alibaba Cloud, etc.) |
+| 3.     | Develop primer switching engine                              | An internal transformation language inspired by the MongoDB query language. Using Primer, developers can select only the fields they want and further aggregate the data to meet their needs. All of this is done on the fly at query time. |
 
 ### Milestone 3
 
@@ -159,14 +164,18 @@ Code is being developed and product requirements are finalized.
 - **FTE:**  5 developers
 - **Costs:** 20,000 DAI
 
-| umber | Deliverable                                                  | Specification                                                |
-| ----: | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|   0a. | Payment System Design                                        | Design of payment system for file storage and retrieval, docking with various wallets for payment, including `Polkadot` parachain tokens |
-|   0b. | Storage and Bandwidth Charge Design                          | Mainly product profit model design.                          |
-|   0c. | Develop decentralized index query middleware                 | Use `Go` to develop decentralized index query middleware, which has the characteristics of high throughput and high speed. |
-|   0d. | Front-end development storage file information display and operation | We use Substrate to deploy the storage aggregator blockchain network, choose the pallet that suits us, open RPC ports. |
-|   0e. | Storage permission design                                    | Create a stored query api key for the user, the api key is completely kept by the user, currently we plan to use `DID` to build it. |
-|   0f. | Related functional tests                                     | We will test our decentralized index query middleware, wallet payment functionality, usage of api keys, etc. |
+| Number | Deliverable                                                  | Specification                                                |
+| ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 0a.    | License                                                      | Apache 2.0 / GPLv3 / MIT / Unlicense                         |
+| 0b.    | Documentation                                                | We will provide both **inline documentation** of the code and a basic **tutorial** that explains Details of payment system design, how does the query indexer work |
+| 0c.    | Testing Guide                                                | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d.    | Docker                                                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e.    | Article                                                      | We will publish an **article**/workshop that explains In the implementation of the payment system, storage indexer development, facing the problem and how to solve it. |
+| 1.     | Payment System Design                                        | Design of payment system for file storage and retrieval, docking with various wallets for payment, including `Polkadot` parachain tokens. |
+| 2.     | Storage and Bandwidth Charge Design                          | Mainly product profit model design.                          |
+| 3.     | Develop decentralized index query middleware                 | Use `Go` to develop decentralized index query middleware, which has the characteristics of high throughput and high speed. |
+| 4.     | Front-end development storage file information display and operation | We use Substrate to deploy the storage aggregator blockchain network, choose the pallet that suits us, open RPC ports. |
+| 5.     | Storage permission design                                    | Create a stored query api key for the user, the api key is completely kept by the user, currently we plan to use `DID` to build it. |
 
 ### Milestone 4
 
@@ -174,13 +183,18 @@ Code is being developed and product requirements are finalized.
 - **FTE:**  5 developers
 - **Costs:** 20,000 DAI
 
-| umber | Deliverable                                  | Specification                                                |
-| ----: | -------------------------------------------- | ------------------------------------------------------------ |
-|   0a. | Smart Contract Integration(NFT&Defi)         | Use Rust language to develop smart contracts, deploy them in the network, mainly provide NFT and Defi functions, and empower the circulation of tokens, allowing more users to participate in data storage. |
-|   0b. | Regression testing                           | Retest to verify that the modification did not introduce new bugs or cause errors in other code. Automated regression testing will greatly reduce the cost of system testing, maintenance and upgrades. |
-|   0c. | Develop decentralized index query middleware | Use `Go` to develop decentralized index query middleware, mainly for data exchange between different storage platforms |
-|   0d. | Bug fixes and Improvements                   | Bug fixes for serious problems, allow more users to participate in making suggestions, improve performance problems in related modules in actual use, etc. |
-|   0e. | Deploying Application                        | Deploy the application on multiple nodes in the world, and use the monitoring program to monitor the health status in real time. |
+| Number | Deliverable                                  | Specification                                                |
+| ------ | -------------------------------------------- | ------------------------------------------------------------ |
+| 0a.    | License                                      | Apache 2.0 / GPLv3 / MIT / Unlicense                         |
+| 0b.    | Documentation                                | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how can users participate in Defi&NFT through contracts to improve their profitability. |
+| 0c.    | Testing Guide                                | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d.    | Docker                                       | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e.    | Article                                      | We will publish an **article**/workshop that explains how do we use technology to solve the problems encountered during the operation of the entire storage system. |
+| 1.     | Smart Contract Integration(NFT&Defi)         | Use Rust language to develop smart contracts, deploy them in the network, mainly provide NFT and Defi functions, and empower the circulation of tokens, allowing more users to participate in data storage. |
+| 2.     | Develop decentralized index query middleware | Mainly product profit model design.                          |
+| 3.     | Develop decentralized index query middleware | Use `Go` to develop decentralized index query middleware, mainly for data exchange between different storage platforms |
+| 4.     | Bug fixes and Improvements                   | Bug fixes for serious problems, allow more users to participate in making suggestions, improve performance problems in related modules in actual use, etc. |
+| 5.     | Deploying Application                        | Deploy the application on multiple nodes in the world, and use the monitoring program to monitor the health status in real time. |
 
 ### Milestone 5
 
@@ -188,12 +202,15 @@ Code is being developed and product requirements are finalized.
 - **FTE:** 4 developers
 - **Costs:** 10,000 DAI
 
-| umber | Deliverable                                            | Specification                                                |
-| ----: | ------------------------------------------------------ | ------------------------------------------------------------ |
-|   0a. | Governance Testing                                     | One of the essential parts of Devops is automated testing, and automated testing naturally involves the construction and maintenance of an automated test environment, so a targeted solution is needed -- test environment governance. In fact, the management and maintenance of the test environment is earlier than the practice of Devops; but the attention and investment in the test environment, so there are various forms of test environment governance solutions. |
-|   0b. | Tokenomics Finalized                                   | Determine the storage aggregator blockchain network governance token for the multi-faceted ecology of the community. |
-|   0c. | Payment Model Testing                                  | Payment model testing, mainly used in Defi and NFT markets, testing capital flow pools. |
-|   0d. | Features/changes will be as a result of DAO proposals. | Features/changes will be the result of community user proposals. |
+| Number | Deliverable           | Specification                                                |
+| ------ | --------------------- | ------------------------------------------------------------ |
+| 0a.    | License               | Apache 2.0 / GPLv3 / MIT / Unlicense                         |
+| 0b.    | Documentation         | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how do economic models work. |
+| 0c.    | Testing Guide         | One of the essential parts of Devops is automated testing, and automated testing naturally involves the construction and maintenance of an automated test environment, so a targeted solution is needed -- test environment governance. In fact, the management and maintenance of the test environment is earlier than the practice of Devops; but the attention and investment in the test environment, so there are various forms of test environment governance solutions. |
+| 0d.    | Docker                | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e.    | Article               | We will publish an **article**/workshop that explains how storage fees are designed, features/changes will be the result of community user proposals. |
+| 1.     | Tokenomics Finalized  | Determine the storage aggregator blockchain network governance token for the multi-faceted ecology of the community. |
+| 2.     | Payment Model Testing | Payment model testing, mainly used in Defi and NFT markets, testing capital flow pools. |
 
 ## Future Plans
 
