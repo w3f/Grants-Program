@@ -184,7 +184,7 @@ In continuation to previous work, this milestone involves creation of a on chain
 | 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of the tasking pallet. |
 | 0c | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build. |
 | 0d | Docker Image | Docker image of the build |
-| 1 | Decentralized Court Module | An on chain decentralized court for dispute resolution within the ecosystem. |
+| 1 | Decentralized Court Module | An on-chain decentralized court for dispute resolution within the ecosystem. |
 | 1a | Disapprove Task  | In the case of a customer not being satisfied by the work submitted by the service provider (worker). A set of jurors is formed (court-summon) to resolve the dispute and pass a verdict. |
 | 1b | Disapprove Rating | The customer or the service provider, once they have received their rating for a particular task and are not satisfied by it. |
 | 1c | General Dispute | A general dispute function for cases that do not fall under the categories mentioned in 1a and 1b. |
