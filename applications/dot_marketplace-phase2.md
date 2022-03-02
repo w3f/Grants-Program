@@ -157,7 +157,7 @@ Dot Marketplace POC was conceptualized and developed during the Polkadot India h
 * **PTE:**  2
 * **Costs:**  8,325 USD  
 
-The main deiverable for this milestone will be to migrate the existing application to substrate frame v2 and include the chat feature as a pallet for communication between a customer and a service provider to have a one-on-one conversation over the deliverables and timelines. The entire milestone covers the Rust/Substrate code implementation.
+The main deliverable for this milestone will be to migrate the existing application to substrate frame v2 and include the chat feature as a pallet for communication between a customer and a service provider to have a one-on-one conversation over the deliverables and timelines. The entire milestone covers the Rust/Substrate code implementation.
 
 | Sr no. | Deliverable | Description |
 | --- | --- | --- |
