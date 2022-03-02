@@ -34,7 +34,7 @@ The current scope of work involves implementing a **decentralized court system**
 - In case of a tie or if no juror votes, the voting is carried out by the super juror, who will cast a vote based on the work submitted.
 - A user can call the court on the unsatisfactory rating provided by either the customer or the worker.
 
-The flow of tasking pallet with decentralized court implementation
+The flow of the tasking pallet with decentralized court implementation
 
 
 ![Tasking-Court-Flow4 drawio](https://user-images.githubusercontent.com/58659064/154290137-741e7fb6-5aea-40dc-8b3b-71304e08ba79.svg)
