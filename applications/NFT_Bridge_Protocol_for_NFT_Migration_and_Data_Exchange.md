@@ -42,30 +42,30 @@ To our knowledge, there was no work being done on a standardized, universal brid
 
 ## Team :busts_in_silhouette:
 ### Team members
-● Guillaume Gonnaud
-● Edouard Bessire
-● Alexandre Guillioud
-● Ian Rodriguez
-● Nicolas Foin
+* Guillaume Gonnaud
+* Edouard Bessire
+* Alexandre Guillioud
+* Ian Rodriguez
+* Nicolas Foin
 
 ### Contact
-● Edouard Bessire
-● e.bessire@perpetual-altruism.org
-● [myNFT.com](https://www.mynft.com/)
+* Edouard Bessire
+* e.bessire@perpetual-altruism.org
+* [myNFT.com](https://www.mynft.com/)
 
 ### Legal Structure 
 * Perpetual Altruism Ltd
 * Brock House, 19 Langham Street, London W1W 6BP      
 
 ### Team's experience
-**[Guillaume](https://github.com/Nokhal)**[ ](https://github.com/Nokhal)[Gonnaud](https://github.com/Nokhal): Co-Founder and CTO of Perpetual Altruism Ltd, the developer of NFT publisher Cryptograph and the upcoming myNFT marketplace. Previously co-founded two
+**[Guillaume Gonnaud](https://github.com/Nokhal)**: Co-Founder and CTO of Perpetual Altruism Ltd, the developer of NFT publisher Cryptograph and the upcoming myNFT marketplace. Previously co-founded two
 other companies as CTO, and worked as a researcher and developer for Japan’s National
 Institute of Informatics in Tokyo. He holds a MSc Computer Science from France’s National
 Polytechnic Institute and a MSc Research in Artificial Intelligence from Paul Sabatier
 University. He is the main author of the [GBM](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[ ](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[auction](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[ ](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[mechanism](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[ ](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)as well as of the [ERC-2665](https://github.com/ethereum/EIPs/issues/2665)
 on-chain royalty standard.
 
-**[Edouard](https://github.com/edouardru)**[ ](https://github.com/edouardru)[Bessire](https://github.com/edouardru): Co-Founder of Perpetual Altruism Ltd, the developer of NFT publisher
+**[Edouard Bessire](https://github.com/edouardru)**: Co-Founder of Perpetual Altruism Ltd, the developer of NFT publisher
 Cryptograph and the upcoming myNFT marketplace. Computer science engineer with
 extensive product development and project management experience. Edouard holds an MSc
 in Applied Mathematics from France’s National Polytechnic Institute, and an MSc in
@@ -73,13 +73,13 @@ Innovation, Entrepreneurship and Management from the Imperial College Business S
 He is also a co-author of the [GBM](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[ ](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[auction](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[ ](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[mechanism](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5).
 
 
-**[Alexandre](https://github.com/alex38160)**[ ](https://github.com/alex38160)[Guillioud](https://github.com/alex38160): Senior Backend Developer, computer science engineer with extensive experience on frontend, backend, software architecture and IoT over the last 10 years in both startups and large corporations. Alex has been involved in crypto since 2013 and also runs a mid-sized Ethereum crypto mining company since 2017.
+**[Alexandre Guillioud](https://github.com/alex38160)**: Senior Backend Developer, computer science engineer with extensive experience on frontend, backend, software architecture and IoT over the last 10 years in both startups and large corporations. Alex has been involved in crypto since 2013 and also runs a mid-sized Ethereum crypto mining company since 2017.
 
-**[Ian](https://github.com/IRealIan)**[ ](https://github.com/IRealIan)[Rodriguez](https://github.com/IRealIan): Backend/Blockchain Developer, computer science engineer who holds a MSc
+**[Ian Rodriguez](https://github.com/IRealIan)**: Backend/Blockchain Developer, computer science engineer who holds a MSc
 Computer Science from France's National Polytechnic Institute. Experiences in startups and
 entrepreneurship. Worked on the web3 features and the backend of the relay.
 
-**[Nicolas](https://github.com/NicolasF-N7)**[ ](https://github.com/NicolasF-N7)[Foin:](https://github.com/NicolasF-N7)[ ](https://github.com/NicolasF-N7)Frontend developer - computer science engineer who holds a MSc Computer Science from France's National Polytechnic Institute. Built automation software and worked on the Bridge frontend (UI & UX), and connection to the relay.
+**[Nicolas Foin](https://github.com/NicolasF-N7)**: Frontend developer - computer science engineer who holds a MSc Computer Science from France's National Polytechnic Institute. Built automation software and worked on the Bridge frontend (UI & UX), and connection to the relay.
 
 ### Team Code Repos
 [https://github.com/Nokhal/Cryptograph_Project](https://github.com/Nokhal/Cryptograph_Project)        
@@ -117,9 +117,42 @@ three months to determine the most desirable features of an NFT migration and da
 exchange messaging protocol. These features were included in accordance with both the
 spirit of our endeavour, and the communities wishes in mind.
 
- See [A Protocol for NFT Migration](https://docs.google.com/document/d/1c5Uor2By5igFWXimipcKhsWjTAG8OWrl9bSVWTPsi6U/edit#heading=h.rflpba7y4sfj) for a more detailed explanation.
+<table>
+  <tr>
+   <td>#
+   </td>
+   <td>Deliverable
+   </td>
+   <td>Specification
+   </td>
+   <td>Link
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td> Peer-Reviewed Exploratory Document 
+   </td>
+   <td> A document that is peer reviewed describing the problems and challenge of migrating NFT (especially vs ERC20) and exploring solutions
+   </td>
+   <td>
+      <a href="https://docs.google.com/document/d/1c5Uor2By5igFWXimipcKhsWjTAG8OWrl9bSVWTPsi6U/edit#heading=h.rflpba7y4sfj">A Protocol for NFT Migration</a>.
+   </td>
+  </tr>
+  <tr>
+   <td>2
+   </td>
+   <td>Planification of delivarable 
+   </td>
+   <td> A table summarizing and planning what need to be developped for a workable open source, IP friendly NFT migration
+   </td>
+   <td> See Below.
+   </td>
+  </tr>
+</table>
 
-The table below is actually the Deliverable itself along [this document](https://docs.google.com/document/d/1c5Uor2By5igFWXimipcKhsWjTAG8OWrl9bSVWTPsi6U/edit#heading=h.rflpba7y4sfj), as it was preparatory work into what the bridge would need to be able to do. Their implementation is the deliverable of the next milestones.
+
+The table below is actually the Deliverable itself along [the document linked above](https://docs.google.com/document/d/1c5Uor2By5igFWXimipcKhsWjTAG8OWrl9bSVWTPsi6U/edit#heading=h.rflpba7y4sfj), as it was preparatory work into what the bridge would need to be able to do. Their implementation is the deliverable of the next milestones.
 
 
 <table>
