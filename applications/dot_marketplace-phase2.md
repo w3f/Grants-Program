@@ -167,7 +167,6 @@ The main deliverable for this milestone will be to migrate the existing applicat
 | 0d | Docker Image | Docker image of the build |
 | 1 | Migrate [Tasking Pallet](https://github.com/WowLabz/tasking_backend/blob/11ff1dfe620016d2943adc7b7a0ba60f2d6413cd/pallets/pallet-tasking/src/lib.rs) from FRAME v1 to FRAME v2 | The [existing Tasking Pallet](https://github.com/WowLabz/tasking_backend/blob/Phase1_Milestone3/pallets/pallet-tasking/src/lib.rs) will be migrated to FRAME v2 to account for the new features provided by the framework |
 | 2 | Chat Pallet | Chat functionality is to be exposed and consumed between the customer and the service provider to ease communication and this will be integrated with the tasking pallet's frame v2 version |
-|  |  |  |
 
 ### **Milestone 2**
 
