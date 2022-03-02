@@ -181,7 +181,7 @@ In continuation to previous work, this milestone involves creation of a on chain
 | Sr no. | Deliverable | Description |
 | --- | --- | --- |
 | 0a | License | Apache 2.0 |
-| 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of tasking pallet. |
+| 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of the tasking pallet. |
 | 0c | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build. |
 | 0d | Docker Image | Docker image of the build |
 | 1 | Decentralized Court Module | An on chain decentralized court for dispute resolution within the ecosystem. |
