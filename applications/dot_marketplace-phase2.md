@@ -162,7 +162,7 @@ The main deliverable for this milestone will be to migrate the existing applicat
 | Sr no. | Deliverable | Description |
 | --- | --- | --- |
 | 0a | License | Apache 2.0 |
-| 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of tasking pallet. |
+| 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of the tasking pallet. |
 | 0c | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build. |
 | 0d | Docker Image | Docker image of the build |
 | 1 | Migration from frame v1 to frame v2 | The [existing application backend](https://github.com/WowLabz/tasking_backend/blob/Phase1_Milestone3/pallets/pallet-tasking/src/lib.rs) will be migrated to frame v2 to account for the new features provided by the framework |
