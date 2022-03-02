@@ -176,7 +176,7 @@ The main deliverable for this milestone will be to migrate the existing applicat
 * **Costs:**  15,900 USD  
 
 
-In continuation to previous work, this milestone involves creation of a on chain decentralized court to handle dispute resolution. Being a juror is one of the user incentives that can be achieved thanks to the rating module mentioned in the first phase of dot marketplace. The entire milestone covers the Rust/Substrate code implementation.
+In continuation to previous work, this milestone involves the creation of an on-chain decentralized court to handle dispute resolution. Being a juror is one of the user incentives that can be achieved thanks to the rating module mentioned in the first phase of dot marketplace. The entire milestone covers the Rust/Substrate code implementation.
 
 | Sr no. | Deliverable | Description |
 | --- | --- | --- |
