@@ -312,7 +312,7 @@
 | [NewOmega](https://github.com/WiktorStarczewski/newomega.trinity ) | A blockchain game that cannot be shut down | [GitHub](https://github.com/WiktorStarczewski/newomega.trinity ) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Bright Inventions](https://brightinventions.pl/) | Treasury Web application| [GitHub](https://github.com/bright/bright-tresury) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Standard protocol](https://github.com/digitalnativeinc/standard-substrate) | A collateralized algorithmic stablecoin protocol for synthetic assets | [GitHub](https://github.com/digitalnativeinc/standard-substrate) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Skye Kiwi](https://skye.kiwi/) | SkyePass: A decentralized, open source password manager | [GitHub](https://github.com/skyekiwi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
+| [Skye Kiwi](https://skye.kiwi/) | SkyePass: A decentralized, open source password manager | [GitHub](https://github.com/skyekiwi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [RidOne Technologies](https://github.com/RidOne-technologies) | Polkadot UI Web + Angular Identicon | [GitHub](https://github.com/RidOne-technologies) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Zeropool](https://zeropool.network/) | Private transactions on Polkadot Phase 2 | [GitHub](https://github.com/zeropoolnetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [OAK Foundation](https://oak.tech) | Quadratic Funding Module and Dapp Application | [GitHub](https://github.com/OAK-Foundation/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
@@ -395,7 +395,7 @@
 | [CESS LAB](https://www.cess.cloud/) | Cumulus Encrypted Storage System (CESS) | [GitHub](https://github.com/Cumulus2021/Whitepaper) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [CheersLand Labs](https://cheersland.org/) | Multi-game Platform for Polkadot & Kusama | [GitHub](https://github.com/cheersland) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [UNI-ARTS](https://app.uniarts.network/) | Ruby Substate Client | [GitHub](https://github.com/uni-arts-chain/sr25519) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Skye Kiwi](https://skye.kiwi/) | SkyeKiwi Protocol | [GitHub](https://github.com/skyekiwi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Skye Kiwi](https://skye.kiwi/) | SkyeKiwi Protocol | [GitHub](https://github.com/skyekiwi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Evercity](https://evercity.io/) | Sustainable Finance Protocol | [GitHub](https://github.com/EvercityEcosystem) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 
 ## :surfing_woman: Wave 12 - Fourth Quarter 2021
