@@ -449,4 +449,6 @@
 | [Papers GmbH](https://papers.ch/en/) | Zaturn - A Generic Attestable Oracle parachain Phase 1 | [GitHub](https://github.com/airgap-it) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Slonigiraf](https://www.slonigiraf.org/) | SLON - a recommendation letter system| [GitHub](https://github.com/slonigiraf) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Helixstreet](https://helixstreet.io/) | Helixstreet Module | [GitHub](https://github.com/helixstreet) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Cryptoviet](https://team.cryptoviet.com/) |  HE-Chain | [GitHub](https://github.com/HeroesEmpireshttps://github.com/HeroesEmpires) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+
 
