@@ -2,8 +2,7 @@
 
 * **Project Name:** [OpenBrush](https://github.com/Supercolony-net/openbrush-contracts)
 * **Team Name:** [SuperColony](https://github.com/Supercolony-net)
-* **Payment Address:** ERC 20 ADDRESS:
-  0x112C9eDB60D16f9Cf501721b03B9D0F275682213
+* **Payment Address:** ERC 20 ADDRESS: 0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2, It is follow-up grant for [first grant](https://github.com/w3f/Grants-Program/pull/497).
 
 
