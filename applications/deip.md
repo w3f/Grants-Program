@@ -95,7 +95,7 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 * **Total Costs:** 1.21 BTC
 
 ### Milestone 1 Implement IP Management/Governance Module 
-* **Estimated Duration:** 2 month
+* **Estimated Duration:** 2 months
 * **FTE:**  3.5
 * **Costs:** 0.94 BTC
 
@@ -103,22 +103,30 @@ The existing code is not fully open-sourced at the moment. DEIP team is fully co
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | Documentation describing the DEIP protocol and basic workflows implemented in the IPMG module. |
-| 0c. | Testing Guide | Complete test-suite with acceptable unit-test coverage, and instructions how to run these tests. | 
+| 0c. | Testing Guide | Complete test-suite with acceptable unit-test coverage, and instructions how to run these tests. |
+| 0d. | Docker | DEIP will provide a Docker file to start up a node for testing the functionality. |
 | 1. | Basic working group management (DAO) | We need some way to minimally manage organizations because assets are owned by organization initially. We will implement a minimal needed governance operations for IP assets, but will also implement an adapter which will allow to connect DAO pallets in the future. С++/Rust| 
 | 2. | Project and IP management | Create project, edit project, create IP asset within project. C++/Rust|  
 | 3. | IP registration | Register (timestamp) a fact of creation and/or ownership of specific IP asset on the blockchain. C++/Rust|
 | 4. | Access control | Manage access permissions to specific IP asset with unique Proof of Share entries that confirm a specific user was granted access to an asset. C++/Rust|
-| 5. | Docker | Dockerfile to run a chain. 
 
-### Milestone 2 Implement Web-base UI 
-* **Estimated Duration:** 1 month
+### Milestone 2 Implement Web-base UI (Human Capital Tokeization Use-Case (Vedai))
+* **Estimated Duration:** 2 months
+* **Estimated Completion:** End of January 2022
 * **FTE:**  1
-* **Costs:** 0.27 BTC
+* **Costs:** 11000 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 1. | Web-based UI | Manage working groups (DAOs), project management, IP asset creation and registration, certificate verification page. Vue.js & Node.js + MongoDb for web-based app backend|
+| 0b. | Documentation | User stories describing the use-case features and documentation with details on application stucture and DEIP modules used to built it.|
+| 0c. | Testing guide | Testing guide on how to test functionality (described in user stories provided in 0b) of the web application delivered. |
+| 0d. | Docker | Docker file to run both test node and Web-base UI for testing the functionality delivered within milestone #2. |
+| 0e. | Article | DEIP will publish an article to explain the purpose, applications and functionality of the application implemented in the scope of this milestone. Article will be published on DEIP blog (Medium) as well as it will be shared in DEIP media channels (e.g. official Telegram channel with 20k members, Twitter, Facebook)
+| 1. | Web-based UI | Manage working groups (DAOs), project management, IP asset creation and registration (tokenized Income Share Agreements). Vue.js & Node.js + MongoDb for web-based app backend|
+
+#### Use-case description
+[Vedai](https://vedai.org) is an investment platform that enables companies and individuals to invest into coding bootcamp Income Share Agreement (ISA) programs and receive a share of the bootcamp profits in ISA returns. This novel investment mechanism allows to align incentives for all participants of the educational market and advance the development of global human capital.
 
 ## Future Plans
 

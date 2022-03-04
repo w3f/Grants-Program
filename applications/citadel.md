@@ -37,11 +37,17 @@ _Mobile version mockups_
 
 ![](https://citadel.one/staticf/mob1.png) ![](https://citadel.one/staticf/mob2.png)
 
+**As the integration of Polkadot with a complicated flow and unexpected issues took us much longer than we’ve expected, we would love to apply a new timeline to the product delivery. Over this period, we were working on the major interface update and now we are happy to present you with Citadel.one v.2!** 
+
+![](https://github.com/citadeldao/polkadot/blob/main/main.png)
+![](https://github.com/citadeldao/polkadot/blob/main/stake.png)
+![](https://github.com/citadeldao/polkadot/blob/main/mob.png)
+
 - **API specifications of the core functionality**
 
 Below you can find the link to our API documentation. Not only we plan to integrate Polkadot into Citadel, but also upon the integration completion, we will share the open API for the development associated with DOT coins, including transfers, staking, transaction types, etc.
 
-[https://work.paradigmfund.io/api/doc/](https://work.paradigmfund.io/api/doc/)
+[https://work.3ahtim54r.ru/api/doc/](https://work.3ahtim54r.ru/api/doc/)
 
 - **An overview of the technology stack to be used**
 
@@ -147,9 +153,16 @@ From our side, we are ready to make the part associated specifically with Polkad
 - Rina Spasenkova - [https://www.linkedin.com/in/neshtedle/](https://www.linkedin.com/in/neshtedle/)
 - Vlad Gorlov - [https://www.linkedin.com/in/vladgorlov/](https://www.linkedin.com/in/vladgorlov/)
 
-## **Development Roadmap**🔩
 
-# **Roadmap Overview**
+### Milestone 1 
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | The described requirements fully cover the use cases and user interaction with the system.  [ 1. Create and import an address](https://paradigmcitadel.atlassian.net/wiki/external/1741783055/ZWI4NGNjMzgwNTNkNGMxN2EzZjJlOWE0NTQyZjE0MTY)  [2. Integration of staking](https://paradigmcitadel.atlassian.net/wiki/external/1742372869/YjE0ZmE5ZmRmM2VmNDU5NjhkYjViNjVhODZjY2YxMmM?atlOrigin=eyJpIjoiMTBiYWFhMzc3NGIyNGMxNDg1MGYzNzkwYjdmYmI5MTMiLCJwIjoiYyJ9) [3. Integration of transfers](https://paradigmcitadel.atlassian.net/wiki/external/1742209311/ODM1YTc1MGFjNTQ1NGI4Y2FjMDdlOWYyNTg5YmIwZWU?atlOrigin=eyJpIjoiMDRmZDk2ZWFhMjRiNGM1Mzk5NGIzM2IyYzU0YzRjNTkiLCJwIjoiYyJ9) [4. Price and market performance information](https://paradigmcitadel.atlassian.net/wiki/external/1741553682/MGQxZmI1NWIzMmVjNDc4M2ExNDA2OTJiMDk2MWUzNDA?atlOrigin=eyJpIjoiZTU0NzNkMzJhNzI1NGRlZDliNmVlZDY0YzQ5YTRhYjEiLCJwIjoiYyJ9) [5. Integration of transaction ](https://paradigmcitadel.atlassian.net/wiki/external/1745387542/Njk0NWRiNWUyOGY1NDlhZWFjYTYxZDA0OWQ3MzkwZDY?atlOrigin=eyJpIjoiMGNjMzU2NjU1ZGJkNDYzNzk5ZjU3NDVhYWJjMTk2NGIiLCJwIjoiYyJ9)|
+| 0c. | Testing Guide | Each epic describes testing opportunities.  [ 1. Create and import an address](https://paradigmcitadel.atlassian.net/wiki/external/1741783055/ZWI4NGNjMzgwNTNkNGMxN2EzZjJlOWE0NTQyZjE0MTY)  [2. Integration of staking](https://paradigmcitadel.atlassian.net/wiki/external/1742372869/YjE0ZmE5ZmRmM2VmNDU5NjhkYjViNjVhODZjY2YxMmM?atlOrigin=eyJpIjoiMTBiYWFhMzc3NGIyNGMxNDg1MGYzNzkwYjdmYmI5MTMiLCJwIjoiYyJ9) [3. Integration of transfers](https://paradigmcitadel.atlassian.net/wiki/external/1742209311/ODM1YTc1MGFjNTQ1NGI4Y2FjMDdlOWYyNTg5YmIwZWU?atlOrigin=eyJpIjoiMDRmZDk2ZWFhMjRiNGM1Mzk5NGIzM2IyYzU0YzRjNTkiLCJwIjoiYyJ9) [4. Price and market performance information](https://paradigmcitadel.atlassian.net/wiki/external/1741553682/MGQxZmI1NWIzMmVjNDc4M2ExNDA2OTJiMDk2MWUzNDA?atlOrigin=eyJpIjoiZTU0NzNkMzJhNzI1NGRlZDliNmVlZDY0YzQ5YTRhYjEiLCJwIjoiYyJ9) [5. Integration of transaction ](https://paradigmcitadel.atlassian.net/wiki/external/1745387542/Njk0NWRiNWUyOGY1NDlhZWFjYTYxZDA0OWQ3MzkwZDY?atlOrigin=eyJpIjoiMGNjMzU2NjU1ZGJkNDYzNzk5ZjU3NDVhYWJjMTk2NGIiLCJwIjoiYyJ9) |
+| 0d. | Docker | Access will be granted after several iterations |
+| 0e. | Article |  Press release will be prepared a few weeks before the official rollout of the network. The link to the article will be sent when ready
 
 | **Number** | **Step** | **Specification** | **Detailed description** | **Team members involved** |
 | --- | --- | --- | --- | --- |
@@ -172,9 +185,12 @@ From our side, we are ready to make the part associated specifically with Polkad
 
 ![](https://citadel.one/staticf/ttable2.png)
 
-- Total Costs: 1,665 BTC
+- Total Costs: $22200
 
-![](https://citadel.one/staticf/table003.png)
+![](https://github.com/citadeldao/polkadot/blob/main/priceupd.PNG)
+
+The planned delivery dates are Q1’2022 (approximately March). 
+We are still sticking to the previous financial requests we mentioned in the very beginning.
 
 ## **Future Plans**
 

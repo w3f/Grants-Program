@@ -53,7 +53,7 @@ Our team has very specific experience in this subject matter. Zondax developed b
 
 *Support*: In Polkadot / Kusama, we do not develop or operate web/desktop/mobile wallets, servers, user interfaces, etc.. However, given our involvement in the community (and the fact that we have developed both Ledger apps in addition to other related grants), we are currently receiving a sizeable amount of requests and support questions.
 
-A large quantity of questions refers to the aforementioned problem (locked funds). In other cases, they are mostly about misusage or lack of training on polkadot.js user interface, connection issues or questions about polkadot and kusama network operations. We believe that newcomers to the ecosystem would definitely profit from a much better support experience and we can contribute to this. We also think that a closer collaboration and joining forces with support@polkadot.network would be a major improvement. 
+A large quantity of questions refers to the aforementioned problem (locked funds). In other cases, they are mostly about misusage or lack of training on polkadot.js user interface, connection issues or questions about polkadot and kusama network operations. We believe that newcomers to the ecosystem would definitely profit from a much better support experience and we can contribute to this. We also think that a closer collaboration and joining forces with https://support.polkadot.network would be a major improvement. 
 
 Last but not least, in the following weeks after the release of the "recovery extensions", we understand that adequate and specific guidance and support will be necessary.
 
@@ -61,7 +61,7 @@ In this respect, we propose:
 
 * To reactivate and improve our processes, response times and broadening the range of questions that the team at support@zondax.ch are able to answer.
 
-* To improve coordination with support@polkadot.network.
+* To improve coordination with https://support.polkadot.network.
 
 * To develop and expand a Polkadot/Kusama support website with documentation and articles that address a large quantity of the typical support questions that Zondax receives every day.
 

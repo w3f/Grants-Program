@@ -3,6 +3,7 @@
 * **Project Name:** Klevoya - Substrate WASM Smart Contract Fuzzer
 * **Team Name:** Klevoya
 * **Payment Address:** DAI 0x31840be5bf48811ffa35512735de0a53b4ba230d
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/420#issuecomment-1017430431)
 
 ## Project Overview :page_facing_up:
 
