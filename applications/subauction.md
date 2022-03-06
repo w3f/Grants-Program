@@ -135,7 +135,7 @@ Besides blockchain development, each member has 5+ years of experience in Comput
 
 - **Total Estimated Duration:** ~3 months
 - **Full-time equivalent (FTE):** 2 FTE
-- **Total Costs:** ~24,000 USD
+- **Total Costs:** ~12,000 USD
 
 ### Technologies used
 - Built as a standalone auction module using **Rust** and **Substrate**
@@ -164,13 +164,12 @@ See [Auction Type Generalization](#auction-type-generalization) for definitions.
 See [Candle Auction Type](#candle-auction-type) and [Top-up Auction Type](#top-up-auction-type) for definitions.
 
 - **Estimated Duration:** 2-3 weeks
-- **Estimated Delivery:** December, 2021
+- **Estimated Delivery:** March, 2022
 - **FTE:** 2
 - **Costs:** $6,000
 - Implement:
   - the [Candle Auction Type](#candle-auction-type), a specific type for NFT auction to prevent snipping (placing bids in the very last second to gamble the system)
   - the [Top-up Auction Type](#top-up-auction-type), a specific type for NFT auction usually used for fundraising or charity auctions
-- Deliver docker-compose file to run node
 - The code will have proper unit-test coverage to ensure functionality and robustness.
 - Provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
 - Record demo walkthrough recording to better illustrate how to set up auctions of different types and describe different mechanics between each of them.
@@ -186,22 +185,6 @@ Candle auction is a variant of the English auction where the last part of the au
 This is a very popular auction type used by charities. Each participant will pay a "top-up fee" which is based on the bid he made minus the closest lower bid. This effectively means that each participant will pay the top-up fee except the first and the last bidder. The last bidder wins the auction, obtains the item, and only pays the item's price. We believe that bringing this kind of auction type enables entities to raise funds for good causes so that we can connect socially responsible projects with supporters and philanthropists.
 
 [Top-up Auction Type Diagram](https://github.com/green-jay/Open-Grants-Program/blob/24ed082bf5a6778392d6264ffc81cbbed77acfc2/applications/topup_auction.png?raw=true)
-
-### Milestone 3: Governance, Content Curation & Business Model Mechanics
-
-See [Governance and Content Curation](#governance-and-content-curation) and [Business Model Mechanics](#business-model-mechanics) for definitions.
-
-- **Estimated Duration:** 4-5 weeks
-- **Estimated Delivery:** January, 2022
-- **FTE:** 2
-- **Costs:** $12,000
-- Implement:
-  - the content curation system and introduce governance DAO to prevent possible abusive content
-- Deliver docker-compose file to run node
-- The code will have proper unit-test coverage to ensure functionality and robustness.
-- Provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
-- See [Governance and Content curation specification](#governance-and-content-curation)
-
 
 ### Community engagement
 
