@@ -5,6 +5,7 @@
 * **Project Name:** PolkaMusic
 * **Team Name:** PolkaMusic
 * **Payment Address (BTC):** 3NQASZ1jJHsWVo6xDdAxyzWWu67HpfRr5u
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/332#issuecomment-994706244)
 
 ## Project Overview :page_facing_up: 
 

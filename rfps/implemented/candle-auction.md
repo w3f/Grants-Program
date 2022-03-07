@@ -1,6 +1,6 @@
 # Candle auction smart contract
 
-* **Status:** Open
+* **Status:** [Implemented](https://github.com/agryaznov/candle-auction-ink/tree/master)
 * **Proposer:** [mmagician](https://github.com/mmagician)
 
 

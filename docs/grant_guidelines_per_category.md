@@ -14,8 +14,8 @@ The list below serves only as a guide and is not exhaustive.
 
 - List the publicly exposed methods
 - For each method, specify (to the best of present knowledge):
-    - Method signature (incl. parameters with their types, return type)
-    - Short description (code template)
+  - Method signature (incl. parameters with their types, return type)
+  - Short description (code template)
 - Runtime Storage defined by your module
 - [Use case diagram](https://www.wikiwand.com/en/Use_case_diagram) with e.g. UML or SysML (or similar tool demonstrating how external users/system components interact with one another)
 
@@ -31,9 +31,9 @@ The list below serves only as a guide and is not exhaustive.
 
 - State what programming language you'll use
 - Describe the commands that you want to make available to the users:
-    - Name
-    - Parameters
-    - Result (value returned / file created or modified / application started etc.)
+  - Name
+  - Parameters
+  - Result (value returned / file created or modified / application started etc.)
 
 
 ## UI Development
@@ -61,6 +61,7 @@ The list below serves only as a guide and is not exhaustive.
 - Choose how & where will your backend be hosted (cloud provider, IPFS, localhost?)
 - Consider scaling & how you plan to handle it
 - Consider CI/CD
+- If you are (planning on) hosting the backend yourself, consider adding a [security.txt](https://securitytxt.org/) file so people can get in touch with you regarding (potential) security issues
 - Provide a link to your Github repository if you already have the structure in place
 
 
