@@ -15,12 +15,12 @@
   - [Polkadot Collator Setup](#polkadot-collator-setup)
   - [Privacy Enhancement for Polkadot Extension](#privacy-enhancement-for-polkadot-extension)
   - [High-availability validator setup](#high-availability-validator-setup)
-  - [Summary](#summary)
   - [SCALE Codec Comparator](#scale-codec-comparator)
   - [Social Recovery Wallet](#social-recovery-wallet)
   - [Uncollateralized Stablecoin](#uncollateralized-stablecoin)
   - [polkadot-validator-setup maintenance](#polkadot-validator-setup-maintenance)
   - [XCM library & tools](#xcm-library--tools)
+  - [Sub-consensus mechanism](#sub-consensus-mechanism)
 - [:mailbox_with_mail: Suggest an RFP](#mailbox_with_mail-suggest-an-rfp)
 
 
@@ -301,8 +301,6 @@ As outlined [here](https://github.com/polkadot-js/extension/issues/893), the del
 
 #### Project Description :page_facing_up:
 
-### Summary
-
 Validator leader selection via Raft consensus. Inspired by internal discussions & [certus.one active-active validator setup](https://kb.certus.one/validator_ha.html#active-active-validator). ...
 
 
@@ -448,6 +446,31 @@ A list of possible tasks to work on:
 XCM is the crosschain communication standard that will be used by all the parachains. Currently XCM is still in early stage but already supports some main use cases such as crosschain transfer of fungible tokens.
 
 There are currently two major areas of XCM that still awaiting to be improves: ...
+
+
+----
+
+
+### Sub-consensus mechanism
+
+
+- [:arrow_right: sub-consensus.md](./sub-consensus.md)
+- Published: 2022-02-23
+- **Status:** Open
+- **Proposer:** mmagician, laboon
+
+
+#### Project Description :page_facing_up:
+
+Parachain dApps suffer from long confirmation times due to the time taken for the Relay Chain to issue an on-chain verification of the parachain blocks. This proposal aims at providing an alternative mechanism for providing parachain users with an alternative, probabilistic sub-consensus mechanism. ...
+
+
+#### Deliverables :nut_and_bolt:
+
+- **Total Estimated Duration:** 3 months
+- **Full-time equivalent (FTE):** 1
+- **Total Costs:** 40,000 DAI
+
 
 ----
 
