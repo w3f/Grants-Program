@@ -196,7 +196,10 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 | 1a. | Web API: Workflow Registration | API Exposed as a part of workflow deployment, Workflow will be registered and made available to specific namespace |
 | 1b. | Web API: User Registration | Basic User Registration API to register user to the system |
 | 1c. | Web API: User Workflow Management | User to select workflow and provide argument values, Pause Workflow, Delete Workflow |
-| 2. | Example User Stories | User stories to demonstrate the capabilities of Functional MVP |
+| 2a. | Workflow Yaml Polkadot Payouts | Workflow yaml defining the flow for claims payout |
+| 2b. | Claim actions | Claim the validator rewards to the provided wallet |
+| 2c. | Reward actions | Index validator reward details to kafka |
+| 2d. | Polkadot API Derive macro for workflow task | Derive macro for smartcontract call |
 
 
 ## Future Plans
