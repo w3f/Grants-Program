@@ -139,9 +139,9 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 ### Overview
 
 - **Description** Development of Project Aurras - MVP - Phase 2 
-- **Total Estimated Duration:** 240 Person Days
+- **Total Estimated Duration:** 268 Person Days
 - **Full-time equivalent (FTE):** 4
-- **Total Costs:** 38400 USD 
+- **Total Costs:** 42880 USD 
 
 ### Milestone 1 — Workflow Composer - Part 1
 
@@ -183,9 +183,9 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 
 ### Milestone 3 Example — Web API/Backend
 
-- **Estimated Duration:** 13 Working days
+- **Estimated Duration:** 20 Working days
 - **FTE:**  4
-- **Costs:** 8320 USD
+- **Costs:** 12800 USD
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
