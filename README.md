@@ -109,9 +109,11 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 
 The Operations Team takes care of legal documents, invoicing and remittances.
 
+- [Melanie Diener](https://github.com/meldien)
+- [Federica Dubbini](https://github.com/fededubbi)
 - [Kasper Mai Jørgensen](https://github.com/KasperJor)
 - [Rouven Pérez](https://github.com/RouvenP)
-- [Federica Dubbini](https://github.com/fededubbi)
+
 
 ## :level_slider: Levels
 
