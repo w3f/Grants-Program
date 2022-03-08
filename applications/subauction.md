@@ -172,7 +172,6 @@ See [Candle Auction Type](#candle-auction-type) and [Top-up Auction Type](#top-u
   - the [Top-up Auction Type](#top-up-auction-type), a specific type for NFT auction usually used for fundraising or charity auctions
 - The code will have proper unit-test coverage to ensure functionality and robustness.
 - Provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
-- Record demo walkthrough recording to better illustrate how to set up auctions of different types and describe different mechanics between each of them.
 
 #### Candle Auction Type
 
