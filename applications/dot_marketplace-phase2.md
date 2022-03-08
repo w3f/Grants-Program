@@ -176,14 +176,14 @@ The main deliverable for this milestone will be to migrate the existing applicat
 * **Costs:**  15,900 USD  
 
 
-In continuation to previous work, this milestone involves the creation of an on-chain decentralized court to handle dispute resolution. Being a juror is one of the user incentives that can be achieved thanks to the rating module mentioned in the first phase of dot marketplace. The entire milestone covers the Rust/Substrate code implementation.
+In continuation to previous work, this milestone involves the creation of an on-chain decentralized court to handle dispute resolution. Being a juror is one of the user incentives that can be achieved thanks to the rating module mentioned in the first phase of dot marketplace. The entire milestone covers the Rust/Substrate code implementation. The court process can be called at any one of the instances mentioned from point 1a to 1c below. The dispute logic is a function which will be called from two extrinsics. The additional dispute function for 1c will to cover one case (at the moment- for ex, the customer is not closing the task due to some reason. The worker gets the functionality to raise dispute for this particular case). There can be more cases as such, which can be consumed and utilized for any use case. The functions for jury, that is court summon, dispute resolution time and other helpers can be configured and managed as per the use case.
 
 | Sr no. | Deliverable | Description |
 | --- | --- | --- |
 | 0a | License | Apache 2.0 |
 | 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of the tasking pallet. |
 | 0c | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build. |
-| 0d | Docker Image | Docker image of the build |
+| 0d | Docker Image | Docker image of the build will contain the entire code for court and tasking pallet, with all the dependencies to directly run the code|
 | 1 | Decentralized Court Module | An on-chain decentralized court for dispute resolution within the ecosystem. |
 | 1a | Disapprove Task  | In the case of a customer not being satisfied by the work submitted by the service provider (worker). A set of jurors is formed (court-summon) to resolve the dispute and pass a verdict. |
 | 1b | Disapprove Rating | The customer or the service provider, once they have received their rating for a particular task and are not satisfied by it. |
