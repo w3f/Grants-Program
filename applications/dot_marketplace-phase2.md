@@ -28,7 +28,7 @@ The current scope of work involves implementing a **decentralized court system**
 - Then the final jurors can nominate themselves to be part of the jury for a specific job after accepting the proposal
 - All court cases are time-bound and are given 3 days (43,000 slots) in total
 - The 3 days are divided into 2 parts:
-    - Jury acceptance period (14,400 slots) - This is the period for the potential jurors to accept the jury duty
+    - Jury acceptance period (14,400 slots/1 day) - This is the period for the potential jurors to accept the jury duty
     - Voting period (28,800 slots) - This is the time for the jurors to cast their vote. One juror gets only one vote which can be in favor of the customer or service provider (worker)
 - After concluding, all the jurors who participated in the case get a commission, which is based on the total cost of the entire task.
 - In case of a tie or if no juror votes, the voting is carried out by the super juror, who will cast a vote based on the work submitted.
