@@ -81,14 +81,15 @@ The committee consists of individuals who know the funding priorities of the Pol
 
 In cases where a niche expert opinion is desirable, one of the committee members may request such a review.
 
+- [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Gautam Dhameja](https://github.com/gautamdhameja)
-- [Marcin Górny](https://github.com/mmagician)
-- [Robert Hambrock](https://github.com/Lederstrumpf)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Bill Laboon](https://github.com/laboon)
+- [Raul Romanutti](https://github.com/rrtti)
 - [Aleixo Sánchez](https://github.com/alxs)
+- [Seraya Takahashi](https://github.com/takahser)
 - [Reto Trinkler](https://github.com/retotrinkler)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
 - [Gavin Wood](https://github.com/gavofyork)
@@ -98,7 +99,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
 - [Marcin Górny](https://github.com/mmagician)
-- [Robert Hambrock](https://github.com/Lederstrumpf)
+- [Ashley Grevelink](https://github.com/cruikshankss)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Aleixo Sánchez](https://github.com/alxs)
@@ -108,9 +109,11 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 
 The Operations Team takes care of legal documents, invoicing and remittances.
 
+- [Melanie Diener](https://github.com/meldien)
+- [Federica Dubbini](https://github.com/fededubbi)
 - [Kasper Mai Jørgensen](https://github.com/KasperJor)
 - [Rouven Pérez](https://github.com/RouvenP)
-- [Federica Dubbini](https://github.com/fededubbi)
+
 
 ## :level_slider: Levels
 
@@ -225,7 +228,7 @@ We have Matrix/Element channels for real-time discussions on Web3 and Polkadot. 
 
 Besides, we also have a **community room for all grant recipients**. Head over to that room to share your experience with other grantees, ask grants-related questions or simply hang out:
 
-- [W3F Grants Community](https://matrix.to/#/!rdJOXrswfxmnBFwGWt:web3.foundation)
+- [W3F Grants Community](https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&via=matrix.org)
 
 ## :rocket: Alternative Funding Sources
 

@@ -2,8 +2,7 @@
 
 * **Project Name:** [OpenBrush](https://github.com/Supercolony-net/openbrush-contracts)
 * **Team Name:** [SuperColony](https://github.com/Supercolony-net)
-* **Payment Address:** ERC 20 ADDRESS:
-  0x112C9eDB60D16f9Cf501721b03B9D0F275682213
+* **Payment Address:** ERC 20 ADDRESS: 0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2, It is follow-up grant for [first grant](https://github.com/w3f/Grants-Program/pull/497).
 
 
@@ -242,14 +241,14 @@ PSP - https://github.com/w3f/PSPs/pull/25
 * **FTE:**  2
 * **Costs:** 15,000 USD
 
-| Number | Deliverable                                                              | Specification                                                                                                                             |
-| -----  | -----------                                                              | -------------                                                                                                                             |
-| 0a.    | License                                                                  | MIT                                                                                                                                       |
-| 0b.    | Documentation                                                            | We will provide inline documentation, example of usage of extensions. |
-| 0c.    | Testing Guide                                                            | We will add tests for extensions and for a new changes from ink! side.                                                           |
-| 1.     | Contribute to ink! with fixing of events                                 | We will help to fix the [issue](https://github.com/paritytech/ink/issues/809) with events. |
-| 2.     | Add support of default implementation in trait definition on ink! level  | We will help with the support of default implementation inside of trait definition. It will require discussions with the ink! team to define the best way how to implement that without conflicts with their future changes.  |
-| 3.     | Refactor of implementation according changes in ink!                     | After changes in ink! we will refactor the code of library.  |
+| Number | Deliverable                                          | Specification                                                                              |
+| -----  |------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| 0a.    | License                                              | MIT                                                                                        |
+| 0b.    | Documentation                                        | We will provide inline documentation, example of usage of extensions.                      |
+| 0c.    | Testing Guide                                        | We will add tests for extensions and for a new changes from ink! side.                     |
+| 1.     | Contribute to ink! with fixing of events             | We will help to fix the [issue](https://github.com/paritytech/ink/issues/809) with events. |
+| 2.     | Re-work the storage of contracts                     | We want to resolve the [issue](https://github.com/paritytech/ink/issues/1134).             |
+| 3.     | Refactor of implementation according changes in ink! | After changes in ink! we will refactor the code of library.                                |
 
 ## Future Plans
 
