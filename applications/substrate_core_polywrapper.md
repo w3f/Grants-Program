@@ -2,9 +2,9 @@
 
 * **Project Name:** Substrate Core Polywrapper
 * **Team Name:** ChainSafe
-* **Co-Sponsor:** Polywrap DAO ([Approved Grant Proposal](https://snapshot.org/#/polywrap.eth/proposal/0x62c3657d805dfa271b6c0f0acb332ddd78c4d89450b04a8cb9222794a36a49f2))
+* **Co-Sponsor:** Polywrap DAO ([Approved Grant Proposal](https://snapshot.org/#/polywrap.eth/proposal/0x1c4b651c654c9409353e70e4675b3311f06a06ab40d8818e4370faa064c5645d))
 * **Payment Address:** 0x85D81Ab61Fe16CDcaeF2Ca556ED4577A51b9b07C (USDC preffered)
-* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -128,15 +128,15 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 * **Total Estimated Duration:** 1 month
 * **Full-Time Equivalent (FTE):**  2 Software Engineer, 0.5 Project Manager
-* **Total W3F Costs:** 55 000$
-* **Total Polywrap DAO Costs:** 22 000$ & 60 WRAP ([Approved Grant Proposal](https://snapshot.org/#/polywrap.eth/proposal/0x62c3657d805dfa271b6c0f0acb332ddd78c4d89450b04a8cb9222794a36a49f2))
+* **Total W3F Costs:** 50 000$
+* **Total Polywrap DAO Costs:** 27 000$ & 60 WRAP ([Approved Grant Proposal](https://snapshot.org/#/polywrap.eth/proposal/0x1c4b651c654c9409353e70e4675b3311f06a06ab40d8818e4370faa064c5645d))
 * **Start Date:** 11. April 2022
 
 ### Milestone 1 - Substrate Core Polywrapper
 
 * **Estimated duration:** 1 month
 * **FTE:**  2 Software Engineer, 0.5 Project Manager
-* **Costs:** 55 000$
+* **Costs:** 50 000$
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
