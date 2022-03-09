@@ -20,11 +20,11 @@ SaaS3 project aims to deliver a fully decentralized software as a service (SaaS)
 SaaS3 is devoted to transforming traditional web2 projects to web3 services by decentralized docker runtime (dRuntime). 
 Particularly, regardless of development stack differences, any Linux-based Web2 projects can be deployed on our platform for providing web3 services. 
 Essentially, SaaS3 is an off-chain scaling technique of layer-2 which utilizes cheap off-chain docker computation to replace high-priced on-chain WASM / EVM runtime, while still remaining computation decentralization by delegated proof of stake (DPoS) consensus. 
-Therefore, such layer-2 off-chain is not only for computation but technical development stacks. 
-The SaaS3 can not only be utilized to decentralize computational providers but also used to mint patent-NFT to protect creator intellectual property.
-The service creators could earn a patent fee by holding those pNFT or selling them to the NFT marketplace.  
-As a result, the SaaS3 project will bridge web2 projects to web3 services for a flourishing ecosystem and achieving creator economy in a truly decentralized and trust-minimized way. 
-This grant will allow us to develop several pallets to implement a parachain with substrate framework on Polkadot / Kusama. 
+Therefore, such layer-2 off-chain scaling is not only for computation price but technical development stacks compatible. 
+The SaaS3 project aims to decentralize computational providers and mint patent-NFT to protect creator intellectual property.
+The service creators could earn a patent fee by holding those pNFT or selling them on NFT marketplace.  
+As a result, the SaaS3 project will bridge web2 projects to web3 services to flourish web3 ecosystem and achieve creator economy in a decentralized and trust-minimized way. 
+This grant will allow us to develop several pallets to implement a parachain with substrate on Polkadot / Kusama. 
 
 SaaS3 as a part of Polkadot / Kusama / web 3 Ecosystem and has the following properties:
 
@@ -42,7 +42,7 @@ SaaS3 as a part of Polkadot / Kusama / web 3 Ecosystem and has the following pro
 
 ![image](https://user-images.githubusercontent.com/95557343/157395059-1f4924c3-d64d-4399-b5cb-79b8eecef4d5.png)
 
-Decentralized docker runtime (dRuntime) is the middleware between three roles: web2 project dockers, computation power, and services user:
+Decentralized docker runtime (dRuntime) is the middleware between three roles: web2 project dockers, computation powers, and services users:
 
   - Users pay $SAAS to miners and creators to use web3 software services. 
 
@@ -57,7 +57,7 @@ Decentralized docker runtime (dRuntime) is the middleware between three roles: w
 Similar to API3 insurance, we utilize Delegated Proof of Staking (DPoS). Particularly, the token stakers stake their coin to miners as the collateral which is the same conception with that nominators nominates validators in Polkadot / Kusama. 
 Such backs insurance services protect users from damages caused by miners' malfunctions. Besides, the user could raise a sue on SaaS3DAO or Kleros court to slash the miner's stake to compensate the user. 
 
-###### User Sue Procedure
+##### User Sue Procedure
 Once the service user notices a malfunction, they will assess damages and make an on-chain sue claim. 
 The staked tokens or collaterals have a lock period to prevent stakers from front-running claims, i.e., withdrawing as soon as a miner malfunction to evade claims.
 On the other hand, the user is required to stake funds to be able to make a claim to disincentivize abuse.
@@ -74,9 +74,9 @@ Such reward and punishment mechanism cloud guarantee the miner's loyalty and dec
 1. Substrate
 2. Docker
 3. Virtualization Technology
-4. Deep learning frameworks: Pytorch, Tensorflow, MxNet, Caffe
+4. Deep learning frameworks
 5. libp2p
-6. IPFS
+6. IPFS / AR
 7. gRPC
 8. Rust
 9. Substrate front-end template
