@@ -140,7 +140,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Enable specific use-cases | [Robonomics](https://github.com/airalab/substrate-node-robonomics)
 | NFT | [ternoa](https://github.com/capsule-corp-ternoa/chain), [FRAME Pallet: NFTs for Substrate](https://github.com/danforbes/pallet-nft), [NFT Parachain by usetech](https://github.com/w3f-community/nft_parachain), [DNFT](https://github.com/DNFT-Team/dnft-substrate-node/tree/master/pallets), [RMRK-Substrate](https://github.com/rmrk-team/rmrk-substrate)
 | Randomness | [DKG and Randomness Beacon](https://github.com/Cardinal-Cryptography/substrate/tree/randomness-beacon)
-| Licensing |
+| Licensing | [Anagolay Network](https://github.com/anagolay/anagolay-chain)  | 
 | Banking Integration | [FIAT on-off-ramp](https://github.com/element36-io/ebics-java-service)
 | Crowdfunding | [Imbue Network](https://github.com/ImbueNetwork/imbue)
 | Other | [Substrate Open Runtime Module Library](https://github.com/open-web3-stack/open-runtime-module-library), [AI Infrastructure on Blockchain](https://github.com/anudit/cerebrum), [Substrate Account Filter](https://github.com/gautamdhameja/substrate-account-filter), [Subtensor](https://github.com/opentensor/subtensor), [BitGreen](https://github.com/bitgreen/bitg-node), [AdMeta](https://github.com/AdMetaNetwork/admeta), [Chocolate Node](https://github.com/chocolatenetwork/chocolate-node), [Virto Network](https://github.com/virto-network/virto-node), [Substrate Validator Set](https://github.com/gautamdhameja/substrate-validator-set), [DEIP](https://github.com/DEIPworld/deip-substrate), [DeBio](https://github.com/debionetwork/debio-node) | On-chain quadratic funding (e.g. https://clr.fund/#/about), Decentralized review/reputation system 
