@@ -152,18 +152,18 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | Documentation includes Inline Code Documentation, Composer Configuration Documentation, Readme file |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests|
-| 1a. | Workflow Composer: Rust Openwhisk Client Library | Minimal Implementation to Openwhisk Rust Client |
-| 1b. | Workflow Composer: Composer | Wrapper Library to integrate plugging operators and Openwhisk Client |
-| 1c. | Workflow Composer: Pipe | Interface to connect other operators and tasks |
-| 1d. | Workflow Composer: structured YAML file | A YAML with a predefined structure to configure the workflow composer. |
-| 1e. | Workflow Composer: Concat Operator | Operator interface to merge two flows. |
-| 1f. | Workflow Composer: Map Operator | Operator to map the inputs to the outputs of each type. |
-| 2   | Predefined boiler plate | Predefined Rust code for flow generation. |
-| 3a. | Flow Provider for Tackle Box |Create the necessary hooks for the workflow |
-| 3b. | Task Provider for Tackle Box | Generate Rust code with structure for the given arguments |
-| 3c. | Workflow Provider for Tackle Box  | Interface to connect other operators and tasks |  
+| 0b. | Documentation | We will provide the following documentation: Inline Code Documentation, Flow design, Readme file |
+| 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness |
+| 1a. | Workflow Composer: Rust Openwhisk Client Library | We will create a Minimal Implementation to Openwhisk Rust Client |
+| 1b. | Workflow Composer: Composer | We will build a Wrapper Library compose yaml to wasm |
+| 1c. | Workflow Composer: Pipe | We will build an interface to connect other operators and tasks |
+| 1d. | Workflow Composer: structured YAML file | We will provide a YAML file with a predefined structure to configure the workflow composer |
+| 1e. | Workflow Composer: Concat Operator | We will build an operator interface to merge two flows |
+| 1f. | Workflow Composer: Map Operator | We will create an operator to map the inputs to the outputs of each flow |
+| 2   | Predefined boiler plate | We will build a predefined Rust code for flow generation |
+| 3a. | Flow Provider for Tackle Box |We will create a provider to employ the necessary hooks for the workflow |
+| 3b. | Task Provider for Tackle Box | We will create a provider that will generate a struct with the given macros and arguments |
+| 3c. | Workflow Provider for Tackle Box  | We will create a provider that will interface the operators and tasks |  
 
 
 ### Milestone 2 Workflow Composer - Part 2
@@ -175,13 +175,13 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | Documentation includes Inline Code Documentation, Operator Documentation, Flow design, Readme file |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
-| 1a. | Workflow Composer: Flow Macro | There are of three types of flow: init, pipe and terminator. The init is used to create the first task in the workflow and the terminator is used to create the last task. The pipe method is used to create other tasks that accept inputs and are dependent on other tasks. |
-| 1b. | Workflow Composer: Derive Macro(s) | Derive macros for tasks in a workflow: invoking OpenWhisk action, invoking OpenWhisk trigger, invoking smart contracts. The tasks are structs, based on a generic format that would include name, inputs and endpoints and macros add functionalities for the tasks |
+| 0b. | Documentation | We will provide the following documentation: Inline Code Documentation, Operator Documentation, Flow design, Readme file |
+| 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness |
+| 1a. | Workflow Composer: Flow Macro | We will create three types of flows: init, pipe and terminator. The init is used to create the first task in the workflow and the terminator is used to create the last task. The pipe method is used to create other tasks that accept inputs and are dependent on other tasks |
+| 1b. | Workflow Composer: Derive Macro(s) | We will create derive macros to enable the tasks in a workflow to invoke OpenWhisk actions and triggers. The tasks are structs, based on a generic format that would include name, inputs and endpoints and macros add functionalities for the tasks |
 
 
-### Milestone 3 Example — Web API/Backend
+### Milestone 3 — Web API/Backend
 
 - **Estimated Duration:** 20 Working days
 - **FTE:**  4
@@ -191,15 +191,15 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Operator Documentation, API doc, Readme file |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |
-| 0d. | Article | We will write a Medium article that explains the work done as part of the grant. |
-| 1a. | Web API: Workflow Registration | API Exposed as a part of workflow deployment, Workflow will be registered and made available to specific namespace |
-| 1b. | Web API: User Registration | Basic User Registration API to register user to the system |
-| 1c. | Web API: User Workflow Management | User to select workflow and provide argument values, Pause Workflow, Delete Workflow |
-| 2a. | Workflow Yaml Polkadot Payouts | Workflow yaml defining the flow for claims payout |
-| 2b. | Claim actions | Claim the validator rewards to the provided wallet |
-| 2c. | Reward actions | Index validator reward details to kafka |
-| 2d. | Polkadot API Derive macro for workflow task | Derive macro for smartcontract call |
+| 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness |
+| 0d. | Article | We will write a Medium article that explains the work done as part of the grant |
+| 1a. | Web API: Workflow Registration | We will create an API that is Exposed as a part of workflow deployment, where workflow will be registered as an openwhisk action and made available to specific namespace |
+| 1b. | Web API: User Registration | We will create an API for User to register themselves |
+| 1c. | Web API: User Workflow Management | We will create an API for User to select workflow and provide argument values, Pause Workflow, Delete Workflow |
+| 2a. | Workflow Yaml Polkadot Payouts | We will create a YAML file that defines the workflow for claiming the Polkadot validator payouts to the provided wallet |
+| 2b. | Claim actions | We will create a set of actions to carry out the tasks of claiming the validator rewards to the provided wallet as defined in the workflow |
+| 2c. | Reward actions | We will create actions to index the validator details to the Kafka topic that will invoke the validator payout workflow |
+| 2d. | Polkadot API Derive macro for workflow task | We will create derive macros that will provide the necessary functionalities for the task struct to perform RPC calls |
 
 
 ## Future Plans
