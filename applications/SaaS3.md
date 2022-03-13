@@ -270,7 +270,7 @@ web3 Foundation Website
 - PitchDeck: https://www.saas3.io/file/PitchDeck_SaaS3.pdf
 - SaaS3 website: https://saas3.io
 - pNFT Demo (move to RMRK standard soon): https://saas3.io/non-api-nft
-- Whitepaper (Beta version will be released soon)
+- Whitepaper(Beta Version): https://www.saas3.io/file/SaaS3Whitepaper.pdf
 
 **Other Grants**
 
