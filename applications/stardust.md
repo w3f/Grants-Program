@@ -29,7 +29,7 @@ Our proposal is to utilize the latest advancements in decentralized finance to i
 
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 
-What we are proposing is relatively unprecedented but there are promising signs. Angle Labs launched on Ethereum last year as an ERC20 token in order to provide a stablecoin pegged to the Euro. They term themselves "the first decentralized, capital efficient and over-collateralized stablecoin protocol" (https://www.angle.money/). Angle Lab's stablecoin is collateralized with Ethereum and more specifically over-collateralized to ensure safety. In July of 2021 they published a whitepaper indicating that they were going to deploy self-minted perpetual contracts as a tool to bring in additional collateral and protection against large price moves. These perpetuals provide additional outsourcing of risk in addition to directly increasing ETH collateral. 5 months ago, they raised $5M from a16z and others to explore the technology. Our proposed architecture would bring that attention and innovation to the Polkadot network. More importantly for the Polkadot ecosystem, our proposal is decentralized and truly uncollateralized as it manages risks entirely through derivatives, and can generate synthetic stablecoins between any arbitrary pairs provided there is a perputual contract market with sufficient liquidity.
+What we are proposing is relatively unprecedented but there are promising signs. Angle Labs launched on Ethereum last year as an ERC20 token in order to provide a stablecoin pegged to the Euro. They term themselves "the first decentralized, capital efficient and over-collateralized stablecoin protocol" (https://www.angle.money/). Angle Lab's stablecoin is collateralized with Ethereum and more specifically over-collateralized to ensure safety. In July of 2021 they published a whitepaper indicating that they were going to deploy self-minted perpetual contracts as a tool to bring in additional collateral and protection against large price moves. These perpetuals provide additional outsourcing of risk in addition to directly increasing ETH collateral. 5 months ago, they raised $5M from a16z and others to explore the technology. Our proposed architecture would bring that attention and innovation to the Polkadot network. More importantly for the Polkadot ecosystem, our proposal is decentralized and truly uncollateralized as it manages risks entirely through derivatives, and can generate synthetic stablecoins between any arbitrary pairs provided there is a perpetual contract market with sufficient liquidity.
 
 - An indication of why your team is interested in creating this project.
 
@@ -47,15 +47,15 @@ Stardust labs recommends a fundamentally different approach. The primary utility
 
 Defirate has a good in-depth explanation of both how perpetual contracts work and how they can be hedged to earn the nominal interest at the risk-free funding rate. (https://defirate.com/perpetual-contracts/)
 
-Ultimately, our proposed stablecoin isn't a managed token or backed by an underlying asset. Instead, the stablecoin smart contract purchases and returns a tokenized, engineered bundle of options and perpetual contracts that, combined, ensure a stable price relative to the pegged currency in the future. We term this type of asset a 'synthetic' stablecoin, termed because it is the exact same process as building a synthetic option. In addition, this process is similar to securitization whereby several financial products are pooled to yield a purchasable interest bearing security with a different risk-reward curve.
+Ultimately, our proposed stablecoin isn't a managed token or backed by an underlying asset. Instead, the stablecoin smart contract purchases and returns a tokenized, engineered bundle of options and perpetual contracts that, combined, ensure a stable price relative to the pegged currency in the future. We term this type of asset a 'synthetic' stablecoin, termed because it is the exact same process as building a synthetic option. In addition, this process is similar to securitization whereby several financial products are pooled to yield a purchasable interest-bearing security with a different risk-reward curve.
 
-The astute reader will observe that constructing these synthetic options will incur a cost. However, the advent of flash loans and depository institutions like AAVE allow the capital in the smart contracts to be deployed to generate risk-free interest, allowing the stablecoin contract to offset the cost of purchasing these options. We envision the smart contract assessing either a transaction fee for origination or a penalty for early withdrawals where users have not held the synthetic stablecoin long enough for the interest to offset the contract purchase fees and transaction costs. Though it varies dramatically, Bitcoin futures seem to have a 3.69% risk-free rate (https://quantpedia.com/what-is-the-bitcoins-risk-free-interest-rate/), the risk free rates at Binance for Perpetual contracts (the funding rate) is 0.01% every 8 hours (or an annualized rate of 11.57%). Meanwhile the fee to enter a perpetual ranges from 0.05%(dxdy) - 0.02% (Binance) so it is likely that these fees would be entirely covered by the interest payments on the overall stabilized value.
+The astute reader will observe that constructing these synthetic options will incur a cost. However, the advent of flash loans and depository institutions like AAVE allow the capital in the smart contracts to be deployed to generate risk-free interest, allowing the stablecoin contract to offset the cost of purchasing these options. We envision the smart contract assessing either a transaction fee for origination or a penalty for early withdrawals where users have not held the synthetic stablecoin long enough for the interest to offset the contract purchase fees and transaction costs. Though it varies dramatically, Bitcoin futures seem to have a 3.69% risk-free rate (https://quantpedia.com/what-is-the-bitcoins-risk-free-interest-rate/), the risk free rates at Binance for Perpetual contracts (the funding rate) is 0.01% every 8 hours (or an annualized rate of 11.57%). Meanwhile, the fee to enter a perpetual ranges from 0.05%(dxdy) - 0.02% (Binance) so it is likely that these fees would be entirely covered by the interest payments on the overall stabilized value.
 
 ### Why Now & Risks
 
-Ultimately this is only possible today thanks to both the recent advancements in decentralized finance, and more importantly the liquidity in the market. One of the outstanding risks to this stable coin is if liquidity quickly dries up. An example of the impact of liquidity shocks on securitized financial derivatives is best seen by the 2008 financial crisis. Unlike traditional financial markets however, positions are monitored in real time and can be forcefully liquidated, preventing direct losses. However there are fundamental limits on how much stability this construct or any uncollateralized stablecoin could absorb. One of the key outstanding questions, and the main exogenous risk that is currently unknown, is the strength of correlation between overall crypto prices, volatility, and its impact on the liquidity of decentralized financial markets.
+Ultimately this is only possible today thanks to both the recent advancements in decentralized finance, and more importantly the liquidity in the market. One of the outstanding risks to this stable coin is if liquidity quickly dries up. An example of the impact of liquidity shocks on securitized financial derivatives is best seen by the 2008 financial crisis. Unlike traditional financial markets however, positions are monitored in real-time and can be forcefully liquidated, preventing direct losses. However, there are fundamental limits on how much stability this construct or any uncollateralized stablecoin could absorb. One of the key outstanding questions, and the main exogenous risk that is currently unknown, is the strength of correlation between overall crypto prices, volatility, and its impact on the liquidity of decentralized financial markets.
 
-One of the primary anticipated challenges is the lack of regulatory oversight in the markets and the ability of individual companies to offer arbitrary leverage ratios. For example Binance is offering 125x leverage meaning some perpetual contracts are at risk of being forcibly liquidated even with less than a 1% price movement. (https://bitcoinist.com/binance-125x-leverage-sparks-criticism-from-community/) Our smart contract can simply repurchase another perpetual contract during liquidation, however a risk exists that market liquidity would dry up during periods of unprecedented volatility such as a major market crash. Without liquid markets with leveraged counter-parties willing to absorb the risk, the synthetic stablecoin would be forced to return the money to the user in the underlying currency at the price of the stable peg, having done its job, but at the same time being unable to offer continued stability.
+One of the primary anticipated challenges is the lack of regulatory oversight in the markets and the ability of individual companies to offer arbitrary leverage ratios. For example, Binance is offering 125x leverage meaning some perpetual contracts are at risk of being forcibly liquidated even with less than a 1% price movement. (https://bitcoinist.com/binance-125x-leverage-sparks-criticism-from-community/) Our smart contract can simply repurchase another perpetual contract during liquidation, however a risk exists that market liquidity would dry up during periods of unprecedented volatility such as a major market crash. Without liquid markets with leveraged counter-parties willing to absorb the risk, the synthetic stablecoin would be forced to return the money to the user in the underlying currency at the price of the stable peg, having done its job, but at the same time being unable to offer continued stability.
 
 Due to the use of options, perpetuals, and lack of human intervention, our proposed system is able to absorb far more volatility than algorithmically managed uncollateralized stablecoins. These implementations have strong negative feedback loops during periods of decreasing demand and, as of date, no robust solution for reducing supply. These struggles have caused many to fail even under benign conditions and these challenges will be dramatically amplified in the type of major market crash where liquidity in financial markets begins to dry up. At that point, the only efficient solution would be custodied collateralized assets by trustworthy centralized entities.
 
@@ -114,41 +114,69 @@ Our test blockchain network: https://explorer.stardust.finance/
 
 ## Development Roadmap :nut_and_bolt:
 
-At the end of this grant proposal, we aim to provide both a summary of extant stablecoin solutions and a well defined framework for generating a synthetic stablecoin capable of originating and closing positions.
-
-Our primary deliverable for the former will be summary that breaks down the predominant extant strategies as well as deep-dives into specific coin failures such as Ampleforth, a stablecoin that has fluctuated between $0.30 - $4.00.
-
-Our research deliverable will be a feasible stablecoin architecture that utilizes financial derivatives to underpin a synthetic stablecoin relative to a pegged currency.
+Through this grant proposal, we aim to provide a well-detailed analysis of the current state of industry for stablecoins, extant and historical stablecoin solutions including failures, and a summary of the current view by the US Federal Government. These materials will also be used to generate a well-defined framework for a derivatives based synthetic stablecoin capable of originating and closing positions.
 
 ### Overview
 
-- **Total Estimated Duration:** 1 months
+- **Total Estimated Duration:** TBD (Estimated 8 Weeks)
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** 10k USD (Based on RFP Guidance see note)
+- **Total Costs:** TBD (Estimated 20K USD)
 
-### Milestone 1 — Research and Development
+### Milestone 1 — State of the Industry on Stablecoins
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 2 Weeks
 - **FTE:** 2
-- **Costs:** 10k USD
+- **Costs:** 5k USD
 
-| Number | Deliverable | Specification |
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | N/A |
-| 0b. | Rights | All developed materials will be publicly accessible. The informational research on the state of modern stablecoins, extant solutions, and specific deep dives into failed initiatives will be public domain. At this time, Stardust Labs Inc. reserves the rights for any innovations or research into a financial derivative powered stablecoins. |
-| **1a.** | State of the Industry on Stablecoins | We will provide an overview of the current state of the modern stablecoin ecosystem including a deep-dive into the largest stablecoins by volume. |
-| **1b.** | Deep-dive into Failed Stablecoin Projects | A forensic deep dive into the top failed stablecoins. |
-| **1c.** | Financial Derivative-based Stablecoin | Stardust Labs will be performing foundational research into the technical and economic feasibility of a next generation derivative-based stablecoin. A large portion of this research will involve designing the algorithm to generate stable price derivatives on demand and the mathematics of generating synthetic derivatives using perpetuals instead of options. Currently, a detailed quantitative understanding for perpetual contracts is still in its infancy, though it's superficially similar to a traditional or future may allow us to make assumptions at this stage. |
-| **NOTE.** | We are cognizant of the fact that we are likely significantly broadening the relatively limited scope of the original RFP. We've kept our total cost to the RFP Guidance amount, but we would appreciate any guidance from the team as to their interest in exploring the launch of a derivatives backed stablecoin on the Polkadot Network. Ultimately, the amount of foundational research necessary to fully develop the first derivatives backed stablecoin archictecture is likely to take longer than the original scope and proposed 1 month timeframe. |
+|  Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
+| ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|      0. | Rights            | All developed materials will be publicly accessible and public domain.                                                                                                                                                                                                                                                         |
+|  **1.** | Research Goal     | We will provide an overview of the current state of the modern stablecoin ecosystem including a summary of demand and historical growth over time, industry size and a rough forecast of future growth, the largest existing players, and the main revenue and cost drivers for service providers.                             |
+| **1a.** | Specific Coverage | Coverage will span [historical and current industry volumes](https://coinmarketcap.com/view/stablecoin/), [academic sources](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952045), and [recent developments](https://blockworks.co/congressional-action-on-stablecoins-could-come-as-soon-as-this-month-source-says/). |
 
-### Milestone 2 — TBD
+### Milestone 2 — Extant Stablecoins
 
-Post a sucessful Milestone 1 deliverable, we will work with the team to construct next steps as per RFP guidance: "Ideally part of a separate follow-up grant, since it depends on the outcome of the initial research!"
+- **Estimated duration:** TBD (Estimated 3 Weeks)
+- **FTE:** 2
+- **Costs:** TBD (Estimated 7K USD)
+
+|  Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                |
+| ------: | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      0. | Rights            | All developed materials will be publicly accessible and public domain.                                                                                                                                                                                                                                                       |
+|  **1.** | Research Goal     | We will provide an overview of the current state of the modern stablecoin ecosystem including a deep-dive into the largest stablecoins by volume.                                                                                                                                                                            |
+| **1a.** | Specific Coverage | Coverage is currently planned for: Angle Labs, Luna, Terra, DAI, Tether, USDC, BinanceUSD, Gemini Dollar, TrueUSD, Pax Dollar, NeutrinoUSD, Tribe, Frax, Liquidity USD, HUSD, XSGD, Reserve Rights, Origin dollar, Facebook's Diem, and Float. However, we may add additional coverage based on any findings in Milestone 1. |
+
+### Milestone 3 — Historical Failed Stablecoins
+
+- **Estimated duration:** TBD (Estimated 2 Weeks)
+- **FTE:** 2
+- **Costs:** TBD (Estimated 5K USD)
+
+|  Number | Deliverable       | Specification                                                                                                                                                                                                             |
+| ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      0. | Rights            | All developed materials will be publicly accessible and public domain.                                                                                                                                                    |
+|  **1.** | Research Goal     | We will provide an analysis of failed stablecoins and the dynamics that led to their downfall.                                                                                                                            |
+| **1a.** | Specific Coverage | Coverage is currently planned for: IRON which was tied to TITAN, Fei, Ampleforth, EmptySetDollar, DynamicSetDollar, BasisCash, NuBits. However, we may add additional coverage based on any findings in Milestone 1 or 2. |
+
+### Milestone 4 — US Government Future Outlook and Past Regulatory Actions
+
+- **Estimated duration:** TBD (Estimated 1 Week)
+- **FTE:** 2
+- **Costs:** TBD (Estimated 3K USD)
+
+|  Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                        |
+| ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|      0. | Rights            | All developed materials will be publicly accessible and public domain.                                                                                                                                                                                                                                                               |
+|  **1.** | Research Goal     | We will provide a summary of the future-looking perspectives and regulatory implications of the published documentation by U.S. Federal entities regarding stablecoins.                                                                                                                                                              |
+| **1a.** | Specific Coverage | [Treasury Report on Stablecoins](https://home.treasury.gov/system/files/136/StableCoinReport_Nov1_508.pdf), [Executive Order on Ensuring Responsible Development of Digital Assets](https://www.whitehouse.gov/briefing-room/presidential-actions/2022/03/09/executive-order-on-ensuring-responsible-development-of-digital-assets/) |
+
+### Milestone 5 — Derivative Backed Stablecoin Architecture
+
+Post research deliverables, we will work with the team to construct next steps as per RFP guidance: "Ideally part of a separate follow-up grant, since it depends on the outcome of the initial research!"
 
 ## Future Plans
 
-- Our long-term vision is to develop and deploy the first derivative-backed stablecoin and launch it on the Polkadot Network.
+- Our long-term vision is to build an understanding of the stablecoin infrastructure environment and then develop and deploy the first derivative-backed stablecoin and launch it on the Polkadot Network.
 
 ## Additional Information :heavy_plus_sign:
 
