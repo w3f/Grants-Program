@@ -107,7 +107,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 
 | Components | Existing projects | Potentially interesting projects
 |-|-|-
-| DeFi | [Vera](https://github.com/veradefi/defi), [Nsure Insurance](https://github.com/nsure-tech/dot-contract), [Everlasting Cash](https://github.com/CycanTech/ELC), [Coinversation](https://github.com/Coinversation/coinpro), [zenlink-dex-contract](https://github.com/zenlinkpro/zenlink-dex-contract), [AlgoCash](https://github.com/ReserveLabs/AlgoCash/blob/main/LICENSE) | New seigniorage-style stable coins
+| DeFi | [Vera](https://github.com/veradefi/defi), [Nsure Insurance](https://github.com/nsure-tech/dot-contract), [Everlasting Cash](https://github.com/CycanTech/ELC), [Coinversation](https://github.com/Coinversation/coinpro), [zenlink-dex-contract](https://github.com/zenlinkpro/zenlink-dex-contract), [AlgoCash](https://github.com/ReserveLabs/AlgoCash) | New seigniorage-style stable coins
 | Gaming | [NewOmega](https://github.com/WiktorStarczewski/newomega.polkadot/blob/master/newomega_delegator/newomega/newomega.rs) | |
 | DAO | [subDAO](https://github.com/SubDAO-Network/subDAO-contracts), [RainbowDAO](https://github.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-milestone_1) | |
 | Other | [Candle Auctions](https://github.com/agryaznov/candle-auction-ink), [polkasign-contract](https://github.com/SubDAO-Network/polkasign-contract) | |
@@ -129,7 +129,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | IoT | [Nodle](https://github.com/NodleCode/), [MXC/DataHighway](https://github.com/DataHighway-DHX/node), [peaq-network-node](https://github.com/peaqnetwork/peaq-network-node)
 | Verifiable Claims | [KILT](https://github.com/KILTprotocol), [Dock](https://github.com/docknetwork), [Fennel Protocol](https://github.com/fennelLabs/Fennel-Protocol)
 | Supply chain| 
-| Social Networking | [Social Network](https://github.com/social-network), [SubSocial](https://github.com/dappforce/dappforce-subsocial), [ZeroDAO](https://github.com/ZeroDAO/ZeroDAO-node), [Myriad Node](https://github.com/myriadsocial/myriad-node) | Private instant messenger that uses on-chain identity
+| Social Networking | [Social Network](https://github.com/social-network), [SubSocial](https://github.com/dappforce/dappforce-subsocial), [ZeroDAO](https://github.com/ZeroDAO/ZeroDAO-node), [Myriad Node](https://github.com/myriadsocial/myriad-node), [Wika Network](https://github.com/randombishop/wika_etl) | Private instant messenger that uses on-chain identity
 | Governance/DAO| [Sunshine DAO](https://github.com/sunshine-protocol/sunshine-bounty), [Governance OS](https://github.com/NucleiStudio/governance-os), [Idavoll Network](https://github.com/idavollnetwork/idavoll), [Substrate Moloch](https://github.com/DoraFactory/Substrate-Moloch-V2) |   [Consul](https://github.com/consul/consul) - Open Government and E-Participation Web Software
 | Prediction Markets and Futarchy| [Zeitgeist](https://github.com/zeitgeistpm/zeitgeist), [X Predict Market](https://github.com/XPredictMarket) |
 | Messaging | [HOPR](https://github.com/validitylabs/HOPR-PL-Substrate), [Mailchain](https://github.com/mailchain), [Nolik](https://github.com/chainify/pallet-nolik/)
@@ -140,7 +140,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Enable specific use-cases | [Robonomics](https://github.com/airalab/substrate-node-robonomics)
 | NFT | [ternoa](https://github.com/capsule-corp-ternoa/chain), [FRAME Pallet: NFTs for Substrate](https://github.com/danforbes/pallet-nft), [NFT Parachain by usetech](https://github.com/w3f-community/nft_parachain), [DNFT](https://github.com/DNFT-Team/dnft-substrate-node/tree/master/pallets), [RMRK-Substrate](https://github.com/rmrk-team/rmrk-substrate)
 | Randomness | [DKG and Randomness Beacon](https://github.com/Cardinal-Cryptography/substrate/tree/randomness-beacon)
-| Licensing |
+| Licensing | [Anagolay Network](https://github.com/anagolay/anagolay-chain)  | 
 | Banking Integration | [FIAT on-off-ramp](https://github.com/element36-io/ebics-java-service)
 | Crowdfunding | [Imbue Network](https://github.com/ImbueNetwork/imbue)
 | Other | [Substrate Open Runtime Module Library](https://github.com/open-web3-stack/open-runtime-module-library), [AI Infrastructure on Blockchain](https://github.com/anudit/cerebrum), [Substrate Account Filter](https://github.com/gautamdhameja/substrate-account-filter), [Subtensor](https://github.com/opentensor/subtensor), [BitGreen](https://github.com/bitgreen/bitg-node), [AdMeta](https://github.com/AdMetaNetwork/admeta), [Chocolate Node](https://github.com/chocolatenetwork/chocolate-node), [Virto Network](https://github.com/virto-network/virto-node), [Substrate Validator Set](https://github.com/gautamdhameja/substrate-validator-set), [DEIP](https://github.com/DEIPworld/deip-substrate), [DeBio](https://github.com/debionetwork/debio-node) | On-chain quadratic funding (e.g. https://clr.fund/#/about), Decentralized review/reputation system 
