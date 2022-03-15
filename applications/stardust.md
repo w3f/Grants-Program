@@ -118,9 +118,9 @@ Through this grant proposal, we aim to provide a well-detailed analysis of the c
 
 ### Overview
 
-- **Total Estimated Duration:** TBD (Estimated 8 Weeks)
+- **Total Estimated Duration:** 5 Weeks
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** TBD (Estimated 20K USD)
+- **Total Costs:** 10K
 
 ### Milestone 1 — State of the Industry on Stablecoins
 
@@ -136,9 +136,9 @@ Through this grant proposal, we aim to provide a well-detailed analysis of the c
 
 ### Milestone 2 — Extant Stablecoins
 
-- **Estimated duration:** TBD (Estimated 3 Weeks)
+- **Estimated duration:** 3 Weeks
 - **FTE:** 2
-- **Costs:** TBD (Estimated 7K USD)
+- **Costs:** 5K USD
 
 |  Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                |
 | ------: | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -146,37 +146,9 @@ Through this grant proposal, we aim to provide a well-detailed analysis of the c
 |  **1.** | Research Goal     | We will provide an overview of the current state of the modern stablecoin ecosystem including a deep-dive into the largest stablecoins by volume.                                                                                                                                                                            |
 | **1a.** | Specific Coverage | Coverage is currently planned for: Angle Labs, Luna, Terra, DAI, Tether, USDC, BinanceUSD, Gemini Dollar, TrueUSD, Pax Dollar, NeutrinoUSD, Tribe, Frax, Liquidity USD, HUSD, XSGD, Reserve Rights, Origin dollar, Facebook's Diem, and Float. However, we may add additional coverage based on any findings in Milestone 1. |
 
-### Milestone 3 — Historical Failed Stablecoins
-
-- **Estimated duration:** TBD (Estimated 2 Weeks)
-- **FTE:** 2
-- **Costs:** TBD (Estimated 5K USD)
-
-|  Number | Deliverable       | Specification                                                                                                                                                                                                             |
-| ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|      0. | Rights            | All developed materials will be publicly accessible and public domain.                                                                                                                                                    |
-|  **1.** | Research Goal     | We will provide an analysis of failed stablecoins and the dynamics that led to their downfall.                                                                                                                            |
-| **1a.** | Specific Coverage | Coverage is currently planned for: IRON which was tied to TITAN, Fei, Ampleforth, EmptySetDollar, DynamicSetDollar, BasisCash, NuBits. However, we may add additional coverage based on any findings in Milestone 1 or 2. |
-
-### Milestone 4 — US Government Future Outlook and Past Regulatory Actions
-
-- **Estimated duration:** TBD (Estimated 1 Week)
-- **FTE:** 2
-- **Costs:** TBD (Estimated 3K USD)
-
-|  Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                        |
-| ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|      0. | Rights            | All developed materials will be publicly accessible and public domain.                                                                                                                                                                                                                                                               |
-|  **1.** | Research Goal     | We will provide a summary of the future-looking perspectives and regulatory implications of the published documentation by U.S. Federal entities regarding stablecoins.                                                                                                                                                              |
-| **1a.** | Specific Coverage | [Treasury Report on Stablecoins](https://home.treasury.gov/system/files/136/StableCoinReport_Nov1_508.pdf), [Executive Order on Ensuring Responsible Development of Digital Assets](https://www.whitehouse.gov/briefing-room/presidential-actions/2022/03/09/executive-order-on-ensuring-responsible-development-of-digital-assets/) |
-
-### Milestone 5 — Derivative Backed Stablecoin Architecture
-
-Post research deliverables, we will work with the team to construct next steps as per RFP guidance: "Ideally part of a separate follow-up grant, since it depends on the outcome of the initial research!"
-
 ## Future Plans
 
-- Our long-term vision is to build an understanding of the stablecoin infrastructure environment and then develop and deploy the first derivative-backed stablecoin and launch it on the Polkadot Network.
+- We'll follow up with a future research grant on historic failures of stablecoins, a summary of articulated Federal Government viewpoints on stablecoins, and its potential impact on the future regulatory landscape. Our long-term vision is to build an understanding of the stablecoin infrastructure environment and then develop and deploy the first derivative-backed stablecoin and launch it on the Polkadot Network.
 
 ## Additional Information :heavy_plus_sign:
 
