@@ -456,6 +456,7 @@
 | [Bela Supernova](https://bsn.si/en/home/) | On-chain cash exchange |  | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Second State](https://www.secondstate.io/) | WasmEdge for Substrate | [GitHub](https://github.com/wasmedge) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Wow Labz](https://www.wowlabz.com/) | Dot Marketplace Phase 2 | [GitHub](https://github.com/WowLabz) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Stardust Labs Inc.](https://stardust.finance/) | Uncollateralized Stablecoin Research and Design | [GitHub](https://github.com/adit313/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
 
 
