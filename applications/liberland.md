@@ -242,6 +242,9 @@ We will deliver a working blockchain under the MIT license that can be used by a
 https://github.com/liberland_node
 
 
+##### Price per milestone:   
+This milestone is included in the full-price.
+
 ##### Technical information:    
 Our team will develop our first iteration of a working testnet style network using. Complete with custom    
 pallet's that allow the functionality to send and 
@@ -294,6 +297,8 @@ frontend will be programmed in angular js and interact with our
 backend blockchain using our chains websocket that is listening for active websocket connections.  
 The public frontend will allow all users to interact with the liberland blockchain, being able to transact, vote and stake tokens.
 
+##### Price per milestone:   
+This milestone is included in the full-price.
 
 ##### Technical information:    
 The frontend is written in angular js and utilizes substrate's built in listening websocket. Thanks to this functionality our frontend  
@@ -362,6 +367,8 @@ Liberland's blockchain will be released with the mentioned features on our publi
 liberland_node repository on github. This release will focus mostly on   
 expanding voting functionality introducing anyone to propose and vote on laws. 
 
+##### Price per milestone:   
+This milestone is included in the full-price.
 
 ##### Technical information:    
 By utilizing pallet-democracy from Parity, we will implement custom functionality to allow our users  
@@ -431,6 +438,9 @@ The public release of this be able for everyone to download and use from our pub
 ##### Technical information:    
 This release will add functionality for users to run and interact with smart contracts. We will utilize substrate's own smart contract   
 framework "!ink". Liberland has gained a lot traction and interest since our start in 2015. Thanks to our larger userbase we expect to have a larger amount.  
+
+##### Price per milestone:   
+This milestone is included in the full-price.
 
 
 References:
