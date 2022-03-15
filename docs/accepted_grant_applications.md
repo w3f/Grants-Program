@@ -455,6 +455,7 @@
 | [ChainSafe](https://chainsafe.io/) | Substrate Core Polywrapper | [GitHub](https://github.com/polywrap) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Bela Supernova](https://bsn.si/en/home/) | On-chain cash exchange |  | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Second State](https://www.secondstate.io/) | WasmEdge for Substrate | [GitHub](https://github.com/wasmedge) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Wow Labz](https://www.wowlabz.com/) | Dot Marketplace | [GitHub](https://github.com/WowLabz) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
 
 
