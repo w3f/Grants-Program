@@ -185,22 +185,28 @@ justice@liberland.org
 Rust for the blockchain backend ,Javascript for the Frontend, Rust substrate-based   
 Backend.
 
-## License:  
+
+
+### Every milestone also includes:
+
+#### License:  
 We will release all code under the MIT license, in order to give everyone access to our chain and enable developers to build applications    
 with the liberland blockchain.   
 Read more about MIT license here:   
 https://en.wikipedia.org/wiki/MIT_License
 
-
-
-
-## Documentation for all deliverable's  
+#### Documentation for all deliverable's  
 Documentation is something we take very seriously and our goal is to have the entire code base documented   
 with both inline code comments and how-to guides, teaching users how to easiely use the tools that we provide.
 
-## Testing   
+#### Testing   
 We require all our functionality to have stable tests and benchmarking in order to verify high code quality. Our CI is configured to 
 execute all the tests that we have written and shut down pull requests that do not live up to our criteria.   
+
+#### Generic Linux x86 and Docker deployment files
+With every milestone we will provide automated deployed files and pre-compiled binaries so that new user can  
+easily deploy and run liberland nodes.
+
 
 ## Releases   
 All releases will come with docker images and deployment files in order to make it as easy possible for   
@@ -210,7 +216,7 @@ and also allow more people to interact with liberland's blockchain.
 
 ## Timeline and Milestones :nut_and_bolt:   
 
-All milestones are included in the total funding, that can be found in the Requested funding section above. Every milestone also includes:
+All milestones are included in the total funding, that can be found in the Requested funding section above.
 
 
 
