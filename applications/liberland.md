@@ -9,8 +9,10 @@
 ● Full-time equivalent (FTE): 4 developers full time
 ```       
 ## Project Description:    
-> The Liberland blockchain’s main feature is to expand the actual list of use cases for the blockchain ecosystem to drive the government of an entire Nation-State on-chain.   
-The government is that of Liberland, a State that is first going to exist in the Metaverse and also physically in *Gornja Siga* between Croatia and Serbia. 
+> The Liberland blockchain’s main feature is to expand the actual list of use cases for    
+> the blockchain ecosystem to drive the government of an entire Nation-State on-chain.   
+> The government is that of Liberland, a State that is first going to exist in the    
+> Metaverse and also physically in *Gornja Siga* between Croatia and Serbia. 
 
 
 
