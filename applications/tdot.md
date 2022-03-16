@@ -133,4 +133,4 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 
 ## Future Plans
 
-We will support DOT assets in EVM, such as stDOT, in the follow-up grant.
+We will upgrade taiKSM to tKSM with similar architecture shortly after the launch of tDOT. Since Karura does not have crowdloan KSM yet, tKSM will mostly focus on KSM assets on other parachains such as Bifrost.
