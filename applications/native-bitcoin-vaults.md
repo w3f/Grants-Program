@@ -251,6 +251,15 @@ These videos were recorded by Max and feature projects that we developed.
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  2 FTE (across 4 developers)
 - **Total Costs:** 43,200 USD
+
+#### Languages
+- All pallets and any associated backend services will be developed in Rust.
+- Primary web app (`Vault Manager`) will likely be in Vuejs, but perhaps React.
+- `Spectre Desktop` or `Caravan` customizations 
+  - neither of these clients use a UI framework like Vuejs or React
+  - our customizations will seek to be as non-disruptive as possible and hopefully remain forward compatible
+  - `Spectre Desktop` has a python backend; if changes are required to that, they would be made in python.
+
 ### Milestone 1 — Prepare Dependencies and Build Vault Configuration
 - **Estimated duration:** 6 weeks
 - **FTE:**  2
@@ -271,6 +280,13 @@ These videos were recorded by Max and feature projects that we developed.
 | 5. | List and View vaults | NBV client will show a list of treasuries/vault, their labels, and the eligible signers |  
 | 6. | Pass to Signer | Fork `Spectre Desktop` (or `Caravan`) and enable handing off an output descriptor from the pallet/node to the signer |  
 
+The following Extrinsics or RPC calls, with relevant UI functions, will be included in milestone #1.
+
+- **set_identity** - we may need to create a wrapper Extrinsic to appropriately fit the data into the `Identity` pallet
+- **create_vault** - takes a set or `BoundedVec` of accounts as well as the signature `threshold`. (we may also have a `T::ClassId` to categorize vaults similar to the `Uniques` pallet. 🤔 )
+- **propose** - this receives the `vault_id`, `recipient_address`, and `amount_in_sats`. This constructs an open unsigned transaction saved within the pallet (or saved and hashed in the pallet), which will be visible in the Vault Manager client and provides a link to the Signer app. This generates a `proposal_id`.
+- **generate_new_address** - receives `vault_id`, reads the vault descriptor, calculates `last_used_address` to check for UTXO. If one exists, increment the `derivation_index` and return a new address based on that. If the last address is still empty, simply return that one again (this will likely also have a flag to force incrementing the index). This behavior is similar to many wallets work.
+
 ### Milestone 2 — Signing, Broadcasting and a Hosted Release
 - **Estimated Duration:** 6 weeks
 - **FTE:**  2
@@ -289,6 +305,15 @@ These videos were recorded by Max and feature projects that we developed.
 | 4. | Hosted Instances | We will host a `testnet` and `mainnet` instance of the full solution (as a standalone Substrate chain) for no less than 2 years |  
 | 5. | EZ-Try | The hosted instances will have `EZ-Try`, which is our method of ensuring any level user can easily go to the app with no prerequisites and try it. (e.g. auto-faucet, auto-generate `xpubs`) |  
 | 6. | Support & Maintenance | We will provide user support and maintain compatibility with Substrate releases for no less than 2 years |  
+
+The following Extrinsics or RPC calls, with relevant UI functions, will be included in milestone #2.
+
+- **save_psbt** - receives `proposal_id` and the PSBT `payload`. Security here is not really important (only convenience). The intermediary PSBT files will be saved with the node but perhaps on IPFS and hashed on chain. They are all transient by nature and will be erased after they are broadcast or expired, the earlier of the two. PSBT wallets (such as Spectre Desktop/Caravan) typically require users to share the intermediate files through a side channel, like email or chat, so this will be a nice usability upgrade.
+- **finalize_tx** - recieves the `proposal_id` - PSBTs require a finalization step before broadcast.
+- **broadcast** - receives the `proposal_id` - this will broadcast the transaction to the in-built or configured Bitcoin Core node.
+- **save_finalize_broadcast** - the `save_psbt` function will also accept an optional flag for convenience so that if the node detects that the threshold is met with the provided approval, then the node should finalize and broadcast it.
+- **erase_vault** - receives `vault_id` - remove vault and any open proposals or PSBTs from storage
+- **cancel_trx** - receives `proposal_id` - remove any records and PSBTs associated with the transaction
 
 ## Future Plans
 ### Immediate Use
@@ -327,4 +352,27 @@ Other relevant info:
 - We have developed and deployed (albeit mostly prebuilt) a 5 node testnet to serve as a shell for this and related business features.
 - We have significant experience with Bitcoin and some with the Bitcoin Dev Kit.
 - Although we have no specific plans as of yet, as we grow our presence and migrate users to Substrate, we may evaluate pursuing a parachain or parathread slot for enhanced security.
-- No other teams besides Hashed (us) have contributed financially or otherwise to this project. r
+- No other teams besides Hashed (us) have contributed financially or otherwise to this project.
+
+## Q&A 
+### Do you know of any similar projects on other blockchains?
+
+There are tons and tons of examples of wrapped Bitcoin of course, with various forms of trust, custody, and/or light clients. As referenced above, there is also interlay/interbtc in the Dotsama ecosystem which seems to be trustless and supports insurance for lost Bitcoin.
+
+In a few DAOs we built and participate in on Telos, there's an onchain badge for treasurers as they are elected/assigned, which helps, but certainly falls well short of delivering what NBV does.
+
+Besides that, I have not come across any tools or products that offer this capability, and certainly not with the strength of user experience that non-technical users expect and we intend to build.
+
+### Comparison to Remark pallet
+>  What for example is the advantage of your solution compared to having a bitcoin multisig wallet which is controlled by a DAO and signing a remark on substrate that says this multisig account is controlled by the DAO? I guess you could do the same on bitcoin using OP_RETURN.
+
+This would be possible. At a high level, any state trie and state transition function can be summarized to a hash to sign in a remark. As seen with the RMRK NFT project 👍, a lot of functionality can be driven through that capability. The benefit of using remark is that it is compatible with the relay chains.
+
+The trade-offs, IMHO, are mostly around usability, composability, and designing idiomatically, which I find incredibly useful for re-usability by other developers (particularly in initial releases). As an example, the Identity pallet developer chose to store fields, including the registrars' judgments 🧑‍⚖️ , within the pallet rather than hashing them into a remark field. I tend to think of these as "first class" attributes because the architect decided they were worth the space and mind-share of being stored directly on chain. In a similar pattern, I think the xpubs 🔑 are important enough to persist this way also.
+
+In the future, I expect there to be a quite complex many:many relationship between users, DAOs, and vaults. For example, within the Hypha DAO, there are team "circles" or quests (projects) that are allocated a budget to a vault. There may be many circles/quests per DAO. There may also be many DAOs and circles/quests for each user, and they will likely desire different xpubs in their profiles for these scenarios.
+
+We can use the remark pallet, and it would be valuable 'back-end' for NBV that works on the relay chains. I think there are likely privacy preserving benefits to this as well. But the functionality and logic of generating the output descriptors dynamically along with receiving addresses, the user experience, vault handling, managing the user flow, etc, still needs to be developed.
+
+My suggestion would be that we implement the most vanilla, idiomatic way first, and then add compatibility to relay chain/remark as a future step. OP_RETURN compatibility is interesting too. A caution with that is, in my experience, the more complex/obfuscated the persisted state, the harder it is (more tooling/logic) for more casual users to verify and adopt. But there is absolutely value in pursuing these. Let me know what you think, and we would be happy to pivot or add this to the proposal.
+
