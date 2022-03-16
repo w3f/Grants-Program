@@ -5,7 +5,7 @@
 * **Payment Address:**        
 BTC : 1B6AHziiBvE28Lg74n23V3dYXbxcVLGKYi        
 ETH/DAI : 0xA7427d0D45e8dd969049872F9cDE383716A39B23
-
+* **Level**: 3
 ## Project Overview :page_facing_up: 
 
 This proposal is in response to Polkadot Bridge RFP.
@@ -32,7 +32,7 @@ The aim of this proposal is to explore and implement what information is suffici
 
 There are already Polkadot bridges under development for ERC-20 tokens and other arbitrary data. However, there is no consensus yet on how to bridge NFTs across chains. This project aim is to create a standard to do so at the messaging level.
 
-Our team is building NFT.com, a marketplace for the world’s tokenized assets and we need this infrastructure for our marketplace to work effectively on the Polkadot Network. Previous to this we also developed [Cryptograph](https://cryptograph.co), an NFT publisher and marketplace on Ethereum.
+Our team is building [myNFT.com](https://mynft.com), a marketplace for the world’s tokenized assets and we need this infrastructure for our marketplace to work effectively on the Polkadot Network. Previous to this we also developed [Cryptograph](https://cryptograph.co), an NFT publisher and marketplace on Ethereum.
 
 ### Project Details
 The deliverable of this proposal is a process specification and it's implementation.
@@ -54,8 +54,8 @@ To our knowledge, there was no work being done on a standardized, universal brid
 * [myNFT.com](https://www.mynft.com/)
 
 ### Legal Structure 
-* Perpetual Altruism Ltd
 * Brock House, 19 Langham Street, London W1W 6BP      
+* Perpetual Altruism Ltd
 
 ### Team's experience
 **[Guillaume Gonnaud](https://github.com/Nokhal)**: Co-Founder and CTO of Perpetual Altruism Ltd, the developer of NFT publisher Cryptograph and the upcoming myNFT marketplace. Previously co-founded two
@@ -63,6 +63,7 @@ other companies as CTO, and worked as a researcher and developer for Japan’s N
 Institute of Informatics in Tokyo. He holds a MSc Computer Science from France’s National
 Polytechnic Institute and a MSc Research in Artificial Intelligence from Paul Sabatier
 University. He is the main author of the [GBM](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[ ](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[auction](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[ ](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[mechanism](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)[ ](https://medium.com/cryptograph/incentivised-bidding-the-gbm-auction-c6dae5a756e5)as well as of the [ERC-2665](https://github.com/ethereum/EIPs/issues/2665)
+
 on-chain royalty standard.
 
 **[Edouard Bessire](https://github.com/edouardru)**: Co-Founder of Perpetual Altruism Ltd, the developer of NFT publisher
@@ -119,8 +120,8 @@ spirit of our endeavour, and the communities wishes in mind.
 
 |#|Deliverable|Specification|Link|
 |--- |--- |--- |--- |
-|1|Peer-Reviewed Exploratory Document|A document that is peer reviewed describing the problems and challenge of migrating NFT (especially vs ERC20) and exploring solutions|[A Protocol for NFT Migration](https://docs.google.com/document/d/1c5Uor2By5igFWXimipcKhsWjTAG8OWrl9bSVWTPsi6U/edit#heading=h.rflpba7y4sfj).|
-|2|Planification of delivarable|A table summarizing and planning what need to be developped for a workable open source, IP friendly NFT migration|See Below.|
+|1|Peer-Reviewed Exploratory Document|A document that is peer reviewed describing the problems and challenge of migrating NFT (especially vs ERC20) and exploring solutions|[A Protocol for NFT Migration](https://docs.google.com/document/d/1c5Uor2By5igFWXimipcKhsWjTAG8OWrl9bSVWTPsi6U/edit#heading=h.rflpba7y4sfj)|
+|2|Planification of deliverable|A table summarizing and planning what need to be developped for a workable open source, IP friendly NFT migration|See Below|
 
 
 
@@ -128,12 +129,15 @@ The table below is actually the Deliverable itself along [the document linked ab
 
 |#|Deliverable|Specification|Link|
 |--- |--- |--- |--- |
-|1|ERC-721 token migration.|Users have the ability to migrate any ERC-721 token between EVM-compatible chains.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts)   [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js)   [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
-|2|Migrate an NFT back and forth to get the original token back.|When a user migrates a token from chain A to chain B, and then vice versa, the token received again on chain A should be the original one sent from A to B.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts)   [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js)   [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
-|3|Migrate an NFT to an arbitrary world|Users may send an NFT from one world to another. We control these destination worlds.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts)   [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js)   [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
-|4|Perform IOU migrations|A migration where the original token is in escrow in the origin universe, and a deed that allows the bearer to redeem that token is created in the destination universe.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts)   [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js)   [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
-|5|Migrate an NFT with ‘unchecked’ migration.|The token in the original world needs to first be attributed to a tokenID on the destination chain, then it is simply put in escrow with the bridge on the origin chain.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts)   [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js)   [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
-|6|License|Licensed under the [Unlicense](https://unlicense.org).|[License](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/LICENSE)|
+|0a.|License|[Unlicense](https://unlicense.org/)|[License](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/LICENSE)|
+|0b.|Documentation|We will provide documentation on the process of migration|[docs](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge#sequence-schema)|
+|0c.|Testing Guide|Core functions will be fully covered by unit tests to ensure functionality and robustness||
+|0d.|Docker|We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone|see Milestone 2|
+|1.|ERC-721 token migration.|Users have the ability to migrate any ERC-721 token between EVM-compatible chains.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts), [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js), [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
+|2.|Migrate an NFT back and forth to get the original token back.|When a user migrates a token from chain A to chain B, and then vice versa, the token received again on chain A should be the original one sent from A to B.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts), [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js), [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
+|3.|Migrate an NFT to an arbitrary world|Users may send an NFT from one world to another. We control these destination worlds.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts), [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js), [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
+|4.|Perform IOU migrations|A migration where the original token is in escrow in the origin universe, and a deed that allows the bearer to redeem that token is created in the destination universe.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts), [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js), [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
+|5.|Migrate an NFT with ‘unchecked’ migration.|The token in the original world needs to first be attributed to a tokenID on the destination chain, then it is simply put in escrow with the bridge on the origin chain.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts), [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js), [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
 
 
 
@@ -150,12 +154,19 @@ Our team has developed an implementation of “the protocol for NFT migration an
 
 |#|Deliverable|Specification|Link|
 |--- |--- |--- |--- |
-|1|Bridge contract implementation|Supports ERC-721 universe migration via the IOU migration processes.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts)   [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js)   [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
-|2|Manipulator implementation|The manipulator is the contract that will permit multiple nonce independant asynchronous transactions per block through using multiple wallets simultaneously on the relay.|Manipulator: [Repository](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Manipulator_Contracts)   [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/MANIPULATOR.md)|
-|3|Relay implementation|The relay is used to call the bridge via RPC on origin and destination universes.|Relay: [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Relay/test/ipfsClient.test.js) [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/RELAY.md) [Repository](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Relay)|
-|4|Bridge Frontend implementation|A both user-friendly and effective implementation of a frontend for the bridge.|[Live Implementation](https://bridge.mynft.com/wallet_connection) [Bridge Frontend Repository](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Frontend)|
-|5|Created IOU migrations|Implement IOU migration as defined in milestone 1.|[Bridge Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts)|
-|6|Testing|Tested on several EVM chains. Spent over a month of beta testing and bug fixing.|[Bridge Repository](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge) [Rinkeby Test Contract](https://rinkeby.etherscan.io/txs?a=0xba5ad339c13446a9d00e380e9335be61d1ed4d4c&p=1)|
+|0a.|License|[Unlicense](https://unlicense.org/).|[License](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/LICENSE)|
+|0b.|Documentation|We will provide documentation on each implementation||
+|0c.|Testing Guide|??|??|
+|0d.|Docker|??|??|
+|0e.|Article|We will publish an article that explains the protocol of migrating an NFT with the escrow mecanism|[Article](https://docs.google.com/document/d/1c5Uor2By5igFWXimipcKhsWjTAG8OWrl9bSVWTPsi6U/edit#heading=h.rflpba7y4sfj)|
+|1.|Bridge contract implementation|Supports ERC-721 universe migration via the IOU migration processes.|Bridge: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts), [Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/test/00_test.js), [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/README.md)|
+|2.|Manipulator implementation|The manipulator is the contract that will permit multiple nonce independant asynchronous transactions per block through using multiple wallets simultaneously on the relay.|Manipulator: [Repository](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Manipulator_Contracts), [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/MANIPULATOR.md)|
+|3.|Relay implementation|The relay is used to call the bridge via RPC on origin and destination universes.|[Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Relay/test/ipfsClient.test.js) [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/RELAY.md) [Repository](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Relay)|
+|3a.|Origin RPC calls|The relay put in escrow the origin token with the signature of the client, and make sure that the event is emitted, otherwise in some case the Relay will emit an IOU before having put the token in escrow|[Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Relay/test/ipfsClient.test.js) [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/RELAY.md) [Repository](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Relay)|
+|3b.|Destination RPC call|The relay initiates the migration on destination blockchain, with the hash of origin blockchain, register a newly emitted hash signed again by the client|[Test](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Relay/test/ipfsClient.test.js) [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/RELAY.md) [Repository](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Relay)|
+|4.|Bridge Frontend implementation|A both user-friendly and effective implementation of a frontend for the bridge.|[Live Implementation](https://bridge.mynft.com/wallet_connection) [Bridge Frontend Repository](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Frontend) [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/FRONTEND.md)|
+|5.|Created IOU migrations|Implement IOU migration as defined in milestone 1.|[Bridge Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/05bc177087f4fdba1662b71cadb54afa82185513/Codebase/Bridge_Contracts/contracts)|
+|6.|Testing|Tested on several EVM chains. Spent over a month of beta testing and bug fixing.|[Bridge Repository](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge) [Rinkeby Test Contract](https://rinkeby.etherscan.io/txs?a=0xba5ad339c13446a9d00e380e9335be61d1ed4d4c&p=1)|
 
 There were difficulties encountered during implementation, most of them stemming from technical limitations of the EVM and consensus protocols in general. Those include but are not limited to:      
 -The limitation of the EVM to a reachable stack depth of 16 words, limiting the amount of data that can be processed without using SSTORE or other gas expensive tricks.    
@@ -175,10 +186,13 @@ This required multiple iterations of the code, many man hours, as well as in dep
 
 |#|Deliverable|Specification|Link|
 |--- |--- |--- |--- |
-|1|Migration Interface|A standard interface written in Solidity including predicate and postulate for each function and events that would allow for either IOU or full migrations to be performed for the same asset, from the same bridge.|[Bridge Interface](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/contracts/Bridge.sol) [Abi Json & solidity interface](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/CONTRACT_ARCHI.md)|
-|2|Established predicate and postulate on what are the allowed pair of source/destination worlds.|Allowed pairs are designed in a decentralized trustless fashion.|[See section seven](https://docs.google.com/document/d/1c5Uor2By5igFWXimipcKhsWjTAG8OWrl9bSVWTPsi6U/edit#heading=h.gin6x1ljt7jq)|
-|3|Thorough user guide|A documented step by step process that would allow a trusted relayer to perform efficient migrations of NFTs.|[See the document](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/USERHOWTO.md)|
-|4|License|Licensed under the [Unlicense](https://unlicense.org/).|[License](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/LICENSE)|
+|0a.|License|[Unlicense](https://unlicense.org/)|[License](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/LICENSE)|
+|0b.|Documentation|We will provide documentation for the Bridge protocol and implementation||
+|0c.|Testing Guide|We will provide test for ensuring robustness and we will write documentation on how running those test||
+|0d.|Docker|We will provide dockerfiles to run the protocol||
+|1.|Migration Interface|A standard interface written in Solidity including predicate and postulate for each function and events that would allow for either IOU or full migrations to be performed for the same asset, from the same bridge.|[Bridge Interface](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/Codebase/Bridge_Contracts/contracts/Bridge.sol) [Abi Json & solidity interface](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/CONTRACT_ARCHI.md)|
+|2.|Established predicate and postulate on what are the allowed pair of source/destination worlds.|Allowed pairs are designed in a decentralized trustless fashion.|[See section seven](https://docs.google.com/document/d/1c5Uor2By5igFWXimipcKhsWjTAG8OWrl9bSVWTPsi6U/edit#heading=h.gin6x1ljt7jq)|
+|3.|Thorough user guide|A documented step by step process that would allow a trusted relayer to perform efficient migrations of NFTs.|[See the document](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/USERHOWTO.md)|
 
 
 ## 
@@ -186,13 +200,16 @@ This required multiple iterations of the code, many man hours, as well as in dep
 
 |Milestone|Deliverable|Specification|Link|
 |--- |--- |--- |--- |
-|1|Bridge Contract implementation|Our own implementation of the bridge.|[Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/master/Codebase/Bridge_Contracts)|
-|2|Bridge Frontend implementation|Our own frontend implementation for the bridge.|[Frontend](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/master/Codebase/Bridge_Frontend)|
-|2|Manipulator Contract implementation|The manipulator is a contract allowing multiple unordered transactions per block through using multiple wallets simultaneously on the relay side.|Manipulator: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/MANIPULATOR.md)    [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/MANIPULATOR.md)|
-|2|Relay implementation|The relay is used to call the bridge via RPC on origin and destination universes. A single frontend can be connected to multiple relays|[Relay](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/master/Codebase/Relay)|
-|3|Documentation for the bridge|Written documentation on how to use the bridge.|[Repo](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge)|
-|3|User Guide to perform a migration|Guide to migrate any ERC-721 in one universe, to an IOU in another.|[User HOWTO](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/USERHOWTO.md)|
-|3|License|Project licensed under  the [Unlicense](https://unlicense.org/).|[License](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/LICENSE)|
+|0a.|License|[Unlicense](https://unlicense.org/)|[License](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/LICENSE)|
+|0b.|Documentation|We will provide documentation for the Bridge protocol and implementation||
+|0c.|Testing Guide|We will provide test for ensuring robustness and we will write documentation on how running those test||
+|0d.|Docker|We will provide dockerfiles to run the protocol||
+|1.|Bridge Contract implementation|Our own implementation of the bridge.|[Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/master/Codebase/Bridge_Contracts)|
+|2.|Bridge Frontend implementation|Our own frontend implementation for the bridge.|[Frontend](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/master/Codebase/Bridge_Frontend)|
+|3.|Manipulator Contract implementation|The manipulator is a contract allowing multiple unordered transactions per block through using multiple wallets simultaneously on the relay side.|Manipulator: [Contracts](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/MANIPULATOR.md)    [Guide](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/MANIPULATOR.md)|
+|4.|Relay implementation|The relay is used to call the bridge via RPC on origin and destination universes. A single frontend can be connected to multiple relays|[Relay](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/tree/master/Codebase/Relay)|
+|5.|Documentation for the bridge|Written documentation on how to use the bridge.|[Repo](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge)|
+|6.|User Guide to perform a migration|Guide to migrate any ERC-721 in one universe, to an IOU in another.|[User HOWTO](https://github.com/Perpetual-Altruism-Ltd/myNFT-Bridge/blob/master/USERHOWTO.md)|
 
 
 
@@ -203,7 +220,7 @@ This required multiple iterations of the code, many man hours, as well as in dep
 
 ## Future Plans 🗺️
 * Support for ERC1155
-* **Blacklist for IOU
+* **Blacklist** for IOU
 * Have built-in protections against “bad” migration by preventing migration to non-registered destination worlds.
 * Allowing Polkadot parachains to migrate NFTs from one parachain to another using SPREE/XCM in a trustless manner.
 * Perform Full migration (which requires Digital Rights Management at the bridge level).
