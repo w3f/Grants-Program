@@ -91,7 +91,7 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 ### Team LinkedIn Profiles
 * https://www.linkedin.com/in/joeztang
 * https://www.linkedin.com/in/terry-lam-80a71927
-* https://www.linkedin.com/dingshengda
+* https://www.linkedin.com/in/dingshengda
 
 ## Development Status :open_book:
 
