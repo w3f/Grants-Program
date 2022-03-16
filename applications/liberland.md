@@ -5,8 +5,8 @@
 ● Team Name: Liberland (liberland.org)
 ● Payment Address btc: bc1qh0ejszphu4e8u04h6d6urlrmr2nyujsxhfq2rj
 ● Status: Open
-● Total Estimated Duration: 3-4 months for first milestone 
-● Full-time equivalent (FTE): 5 developers full time
+● Total Estimated Duration: 3-6 months 
+● Full-time equivalent (FTE): 4 developers full time
 ```
 ## Project Description:
 
@@ -31,6 +31,11 @@ built as soon as possible grows with each milestone on that project.
 
 As of writing this we at liberland currently have over 660k(662329) signed up users. We aim       
 to utilize our substrate-base "liberland-chain" to provide e-services for these users.   
+
+
+# Requested funding   
+We request a total amount of 50 000 USD, payable in BTC for all the milestones. Our goal is also to become part of  
+substrate's builders program in order to get technical support and guidance from Parity.
 
 
 #### Liberland Blockchain
@@ -187,9 +192,6 @@ Read more about MIT license here:
 https://en.wikipedia.org/wiki/MIT_License
 
 
-## Requested funding   
-We request a total amount of 50 000 USD, payable in BTC for all the milestones. Our goal is also to become part of  
-substrate's builders program in order to get technical support and guidance from Parity.
 
 
 ## Documentation for all deliverable's  
