@@ -230,7 +230,7 @@ built thanks to earlier efforts, but the project must be finished and deployed.
 | 2. | Nominated Proof of stake consensus | We are shipping with nominated proof of stake consensus instead of Proof of Authority in order to promote decentralization and motivate user to run validators |  
 | 3. | Staking module | We will create a staking module that will allow users to stake their tokens and earn rewards|  
 | 4. | Active testnet | We will launch and host our first release testnet  |  
-
+| 5. | User Roles | We will create a substrate module that allows users to have roles/on-chain idenities | 
 
 **Deadline: Q2 2022**
 
@@ -256,6 +256,9 @@ recieve tokens, configure user roles, custom voting functionality: allowing the 
 After internal discussion we also decided not to go with the Proof of Authority consense and went   
 with a polkadot inspired Nominated Proof of stake consensus 
 algorithm, utilizing the babe pallet for block production.
+Because Liberland's blockchain is hosting a digital nation state, we want to allow users to have roles. So all e-citizens have the 
+e-citizens role, all assembly members have the assembly role and so on. Different roles will allow   
+for different privledged functionality. Such as being able to vote and propose laws.
 
 
 #### Milestone Frontend
@@ -272,7 +275,6 @@ algorithm, utilizing the babe pallet for block production.
 | 1.  | Frontend application | We will our frontend ready to be  |  create a Substrate module that will enable users to send and recieve the on-chain token LLMvgft
 |  2. | User onboarding                 |      We will onboard our current userbase of citizen's to our Frontend using a browser based wallet, allowing them to interact with the liberland blockchain       |
 | 3. | Validator search | our frontend will allow the functionality to view and interact with running on-chain validators |
-| 4. | |
 ```
 
 #### Optional
