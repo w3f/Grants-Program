@@ -27,11 +27,11 @@ These hurdles are extremely difficult to overcome, given Polkadot network liquid
 
 ### Project Details
 
-tDOT is a synthetic DOT-pegged asset built on top of the stable asset protocol.
+tDOT is a DOT-pegged derivative built on top of the stable asset protocol.
 
-Stable asset is a synthetic asset based on Curve's stable swap algorithm and is back by a pool of assets with the same peg. It utilizes traders to dynamically rebalance pool composition while maintaining a consistent pool value, thus generating a synthetic asset whose peg is much stronger than any of the underlying assets.
+Stable asset is based on Curve's stable swap algorithm and is back by a pool of assets with the same peg. It utilizes traders to dynamically rebalance pool composition while maintaining a consistent pool value, thus generating a synthetic asset whose peg is much stronger than any of the underlying assets.
 
-taiKSM is the first stable asset deployed on the Dotsama ecosystem. It aggregates liquidity from KSM and Acala's LKSM to generate unified KSM liquidity in Karura. 
+taiKSM is the first KSM-pegged derivative deployed on the Dotsama ecosystem. It aggregates liquidity from KSM and Acala's LKSM to generate unified KSM liquidity in Karura. 
 
 <img width="707" alt="image" src="https://user-images.githubusercontent.com/3374016/158498318-a1a4269c-d93b-42f1-a944-3f663ae99073.png">
 
@@ -41,9 +41,9 @@ tDOT extends the idea of taiKSM to provide unified DOT liquidity over the whole 
 * Each xDOT-DOT pool can mint and burn tDOT on parachain A which is tDOT's hosting chain;
 * If xDOT is not on parachain A, e.g. cDOT and dDOT, xDOT-DOT pool uses XCM to mint and burn tDOT.
 
-Each xDOT-DOT pool is a trading pair between xDOT and DOT. It allows certain range of price difference between xDOT and DOT but ensures the value of its synthetic asset is pegged to DOT. Each xDOT represents a different form of 1 DOT in Polkadot network. According to the stable asset algorithm, when the prices of xDOT and DOT are equal, the synthetic asset is 100% collateralized and is backed by exactly 1 DOT. When the price of xDOT shifts, the synthetic asset is over collateralized and the collateral ratio increases as price shifts further. Each xDOT-DOT pool can control how fast the collateral ratio increases with its own parameter values.
+Each xDOT-DOT pool is a trading pair between xDOT and DOT. It allows a dynamic trading range between xDOT and DOT but ensures the value of pool derivative is pegged to DOT. Each xDOT represents a different form of 1 DOT in Polkadot network. According to the stable asset algorithm, when the exchange rate between xDOT and DOT trades at 1:1, tDOT is 100% collateralized and is backed by exactly 1 DOT. When the exchange rate shifts, tDOT is over-collateralized and the collateral ratio increases as the exchange rate shifts further. Each xDOT-DOT pool can control how fast the collateral ratio increases with its own parameter values.
 
-Since each xDOT-DOT pool can maintain pegging of its own synthetic asset, it's a natural choice to unify these synthetic assets into a single tDOT. This brings extra benefits:
+Since each xDOT-DOT pool can maintain pegging of its own pool derivative, it's a natural choice to unify these pool derivatives into a single tDOT. This brings extra benefits:
 
 * It ensures a single tDOT and it can be bridged to any parachain;
 * It unifies all xDOTs over the Polkadot network. New xDOT assets can be included by deploying new xDOT-DOT pool on their native chains;
@@ -57,10 +57,10 @@ tDOT will be minted on Acala since it's the DeFi hub in the Polkadot ecosystem. 
 Parachains such as Parallel can deploy xDOT-DOT pools on their own chains and mint tDOT on Acala. Their benefits include:
 
 * The xDOT-DOT pool provides a stable swap between xDOT and DOT;
-* The xDOT-DOT liquidity is locked in its original chain while minting tDOT so that their TVL is not lost;
+* The xDOT-DOT liquidity is locked in its original chain while minting tDOT so the parachains can retain its TVL;
 * The minted tDOT can be bridged to other chains other than Acala. For example, the minted tDOT can be bridged back to Parallel and be used as collateral of Parallel's lending applicaiton.
 
-For the whole Polkadot network, a unified DOT asset can promote its DeFi applications since it can provide the largest DOT liquidity over the network. In such case, DeFi application builders can support a single DOT asset instead of managing multiple ones.
+For the whole Polkadot network, a standardized DOT derivative can service the entire Polkadot ecosystem; it can unify all forms of DOT liquidity and unleash maximum usability for DOT across Parachains.
 
 ## Team :busts_in_silhouette:
 
