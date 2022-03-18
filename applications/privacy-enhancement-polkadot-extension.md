@@ -55,25 +55,39 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 ## Development Status :open_book:
 
-Fisibility for development environment and the completion of first task: https://imgur.com/a/qsfhD0z
+Feasibility for development environment and the completion of first task: https://imgur.com/a/qsfhD0z
 
-The task #2 might be challenging and the implementation have to be arranged between stakeholder and developer
+The task #2 might be challenging and the implementation have to be arranged between stakeholder and developer. The arrengement is done by review of test cases for non-visual functionalities and UI design shall have an additional first-step and approval for GUI extension proposal.
 
 ## Development Roadmap :nut_and_bolt:
 
-The development shall comply the with tasks from milestones. The stakeholder shall provide coding guide lines or standards if those exist. The estimated FTE about 1 month (160h) shall be splitted for each task like this
+The development shall comply the with tasks from milestones. The stakeholder shall provide coding guide lines or standards if those exist. The estimated FTE about 1 month (160h) shall be splitted for each task like this. Project budget of 10.000$ is equal to 62,5$/h. The funding amount calculation is based on 60$/h.
 
-| Number | Deliverable | Specification | Time |
+| Number | Deliverable | Specification | Time | Total cost | Delivery date |
 | ------------- | ------------- | ------------- | -------------  |
-| 1. | "Hide all" | A global button that hides/un-hides all addresses |  20 |
-| 2.  | "View-Groups" | Create and name groups which a user can organize their accounts to. For example, a "polkadot-js" group could unhide all accounts, while a "Parachain X" group only unhides those accounts a user knows that they have those parachain tokens on. | 40 |
-| 3. | "Privacy Mode" | A setting that automatically changes the extension to a specific view group (which could be "hide all"). | 30 |
-| 4. | "Hide from Extension" | A feature that lets users hide addresses in the extension itself. This is useful for doing demos or presenting the screen. Those accounts are listed in a special tab and can be unhidden from there. | 20 |
-| 5. | "Link View-Groups to URLs" | The extension already features an access control to specific URLs. To add on that, the extension could automatically switch to a defined view-group when entering an URL. Building on that, upon *first* authorization of a website, the extension could ask which view-groups to add it to or offer to create a new one. | 20 |
+| 1. | "Hide all" | A global button that hides/un-hides all addresses |  20h | 1200 $ | 01.05.2022|
+| 2.  | "View-Groups" | Create and name groups which a user can organize their accounts to. For example, a "polkadot-js" group could unhide all accounts, while a "Parachain X" group only unhides those accounts a user knows that they have those parachain tokens on. | 40h | 2400 $ | 25.05.2022 |
+| 3. | "Privacy Mode" | A setting that automatically changes the extension to a specific view group (which could be "hide all"). | 30h | 1800 $ | 15.06.2022 |
+| 4. | "Hide from Extension" | A feature that lets users hide addresses in the extension itself. This is useful for doing demos or presenting the screen. Those accounts are listed in a special tab and can be unhidden from there. | 20h | 1200 $ | 30.06.2022 |
+| 5. | "Link View-Groups to URLs" | The extension already features an access control to specific URLs. To add on that, the extension could automatically switch to a defined view-group when entering an URL. Building on that, upon *first* authorization of a website, the extension could ask which view-groups to add it to or offer to create a new one. | 20h | 1200 $ | 15.07.2022 |
 
-The rest 30h shall be used for architectural changes or meetings.
+The rest 30h (1800$) shall be used for architectural concepts and/or meetings. The total funding budget is set on 9600 $.
+
+Technical development might force that the task order and so the delivery date of order can be shifted.
 
 20% of development time shall be used for testing and documentation.
+
+## Validation of deliverables
+
+The delivered code, libraries or UI design, shall be approved by the stakeholder based on following criteria.
+
+| Number        | Test (Verification) | Approval (Validation)   | Documentation | 
+| ------------- | -------------       | -------------           | ------------- |
+| 1. |  Testsuit: set adress visibility of any entity, switch and check again. Manual tests: Click on the button in chrome and firefox extension and see the change of the visibility  |  Check the completeness of verification tests, execute a manual tests, approve that the button complies with generic GUI design and user experience.                   |  The documentation shall locate the button in GUI and describe which entities are affected by that button click funtion.                       |               |
+| 2. |                                |                     |                         |               |
+| 3. |                                |                     |                         |               |
+| 4. |                                |                     |                         |               |
+| 5. |                                |                     |                         |               |
 
 
 
