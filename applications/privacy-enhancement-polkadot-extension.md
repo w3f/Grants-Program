@@ -81,9 +81,11 @@ Technical development might force that the task order and so the delivery date o
 
 The delivered code, libraries or UI design, shall be approved by the stakeholder based on following criteria.
 
-| Number        | Test (Verification) | Approval (Validation)   | Documentation | 
-| ------------- | -------------       | -------------           | ------------- |
-| 1. |  Testsuit: set adress visibility of any entity, switch and check again. Manual tests: Click on the button in chrome and firefox extension and see the change of the visibility  |  Check the completeness of verification tests, execute a manual tests, approve that the button complies with generic GUI design and user experience.                   |  The documentation shall locate the button in GUI and describe which entities are affected by that button click funtion.                       |               |
+Tests shall be executed in chrome and firefox extensions in privacy mode without any other extensions installed.
+
+| Number        | Test (Verification) | Approval (Validation)   | Documentation |    Concept    |
+| ------------- | -------------       | -------------           | ------------- | ------------- |
+| 1. |  Testsuit: Test_101 Call a function to set address visibility on true. Check GUI. Test_102: Call a function to set address visibility on false. Observe GUI changes.  Manual tests: Select the menu item "Hide all addresses" and see the change of the visibility. Select the menu item "Show" all addresses and see the change of visibility.  |  Check the completeness of verification tests, execute a manual tests, approve that the button complies with generic GUI design and user experience. Record the chrome version and commit hash in review protocoll.                  |  The documentation shall introduce the privacy menu in GUI and describe that the visibility of all accounts are affected by the buttons click funtion.                       |    https://imgur.com/a/avJXaGL          |
 | 2. |                                |                     |                         |               |
 | 3. |                                |                     |                         |               |
 | 4. |                                |                     |                         |               |
