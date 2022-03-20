@@ -129,7 +129,7 @@ In the milestone deliverable table, the features marked with _"(addition)"_ mean
 
 ### Milestone 1 - Basic features and operating security improvement
 
-* **Estimated Duration:** 1 month (ETA: Dec 15, 2021)
+* **Estimated Duration:** 3 months (ETA: Mar 15, 2022)
 * **FTE:**  4
 * **Costs:** 10,000 USD
 
@@ -141,12 +141,14 @@ In the milestone deliverable table, the features marked with _"(addition)"_ mean
 | 0d. | Article/Tutorial | We will publish a tutorial and an workshop that explains how the project can be used to deploy different types of blockchain network. |
 | 1. | Parachain support | Add parachain config support. (addition) |
 | 2. | Custom Substrate support | Enable custom Substrate blockchain integration with the example configs to integrate with Substrate sample node (substrate/node/cli) (addition) |
-| 3. | Operating scripts | The scripts to: scale up / down the nodes (addition) and get direct access to the nodes (integration) |
-| 4. | Authenticated RPC | Add the authentication layer to the node RPC for node operation (integration) |
+| 3. | Operating scripts | Apply the declarative configs to: scale up / down the nodes (addition) |
+| 4. | Monitoring, and logging | Implement the monitoring infrastructure with Prometheus and Loki to collect metrics and logs. (integration) |
+| 5. | Grey release | Integrate with CI/CD pipeline and enable greyscale release inside the cluster. (addition) |
+| 6. | More deployment modes | Templates to deploy bootstrap nodes, API nodes, and simulation network. (addition) |
 
 ### Milestone 2 — Advanced Features
 
-* **Estimated Duration:** 1 month (ETA: Jan 15, 2021)
+* **Estimated Duration:** 1.5 month (ETA: Apr 30, 2022)
 * **FTE:**  4
 * **Costs:** 12,000 USD
 
@@ -159,10 +161,9 @@ In the milestone deliverable table, the features marked with _"(addition)"_ mean
 | 0d. | Article/Tutorial | We will extend the workshop to show how to deploy a hardened node network. |
 | 1. | Backup node and recovery | Add sync node type and database backup & recovery routines. Add scripts to trigger and minotor the process. (addition) |
 | 2. | Session key management | Add the script to interact with the node and the blockchain to generate and rotate the session keys, and add routines to migrate keys between validators and collators (or mount the keystore db to the assigned validators) (addition) |
-| 3. | Alerts, monitoring, and logging | Implement the monitoring infrastructure with Prometheus and Loki to collect metrics and logs. Define the collator / validator related warnings and metrics and add them to the alerm manager. (integration) |
-| 4. | Grey release | Integrate with CI/CD pipeline and enable greyscale release inside the cluster. (addition) |
-| 5. | HPA scaling | Automatically scale the storage and the size of the cluster based on load of the nodes. (addition) |
-| 6. | More deployment modes | Templates to deploy bootstrap nodes, API nodes, and simulation network. (addition) |
+| 3. | Alerts | Define the collator / validator related warnings and metrics from Prometheus and Loki and add them to the alerm manager. (integration) |
+| 4. | HPA scaling | Automatically scale the storage and the size of the cluster based on load of the nodes. (addition) |
+| 5. | Authenticated RPC | Add the authentication layer to the node RPC for node operation (integration) |
 
 ## Future Plans
 
