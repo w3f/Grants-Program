@@ -2,7 +2,7 @@
 
 - **Project Name:** Project Aurras - MVP - Phase 2
 - **Team Name:** HugoByte AI Labs Private Limited
-- **Payment Address:** 18axrB6cfmaUs7thCKzPQmRekYiAvQi5QX (BTC)
+- **Payment Address:** 1G5Fo5KfLSopTFKPRDUZgeCSU5PNY2kkD5 (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -41,16 +41,16 @@ This is the source for events from the blockchain and the events will be sent to
 The indexer will use a NoSQL database to store the last indexed block and metadata. Using the substrate indexer as our event source will help us in solving many challenges ranging from fault tolerance to scalability to uniquely identifying multiple events with the same payload within a single block. The indexer will be connected to a substrate-based chain and RocksDB where the chain data is stored. When a new block is produced by the chain, the indexer collects the raw blocks from the RocksDB and sends it to the event actor. The event actor processes the block. The block data is decoded using the parity scale codec and mapped with the data types provided to the runtime. Once the event is decoded, the event actor posts a trigger to the event trigger manager.  
 
 **2.Event Trigger Manager**  
-Event trigger manager is composed of multiple actions including using a database to store trigger URLs and their respective auths, and Kafka provider, consumer and producer. Once the event manager receives an event from the event feed, this data is produced to a topic. The feed action in the trigger manager lets the user hook into the system. That is,  once an event is indexed to a particular topic, it can invoke a particular action. While creating the workflow, users can choose the event trigger as feed and provide necessary parameters from which chain it should be listening to and from which block it should start listening.
+Event trigger manager is composed of multiple Openwhisk actions including using a database to store trigger URLs and their respective auths, and Kafka provider, consumer and producer. Once the event manager receives an event from the event feed, this data is produced to a topic. The feed action in the trigger manager lets the user hook into the system. That is,  once an event is indexed to a particular topic, it can invoke a particular action. While creating the workflow, users can choose the event trigger as feed and provide necessary parameters from which chain it should be listening to and from which block it should start listening.
 
-Under the hood, a feed action is invoked with create lifecycle, which accepts the mandatory parameters the lifecycle, auth, trigger name, and other optional parameters of the event source. The feed action invokes the related actions of creating the entry in the database, adding to the Kafka consumer group, etc. The next component in the event trigger manager is a persistent connection to Kafka where it is used to produce and consume the stream of data. Once data is received in Kafka, the event trigger manager invokes the action to check the consumer groups for that particular topic and if found any, the trigger for the users under that particular group is invoked, which in turn invokes the workflow action.  
+Under the hood, a feed action is invoked with create lifecycle, which accepts the mandatory parameters the lifecycle, auth, trigger name, and other optional parameters of the event source. The feed action invokes the related actions of creating the entry in the database, adding to the Kafka consumer group, etc. The next component in the event trigger manager is a persistent connection to Kafka where it is used to produce and consume the stream of data. Once data is received in Kafka, the event trigger manager invokes the action to check the consumer groups for that particular topic and if found any, the trigger for the users under that particular group is invoked, which in turn invokes the workflow.  
 
 **3.Workflow Composer**  
 The workflow composer is at the heart of Aurras and is responsible for composing and deploying the necessary workflows. It consists of an async Rust library to compose multiple triggers, a deployment configuration generator, providers for Tackle Box, several operators, macros and a whisk deployment tool.
 
-To create a workflow, the only necessary input is the YAML configuration file. The composition, direction of flow, triggers and actions are laid out in the YAML file. This YAML is parsed using Tackle Box, which in turn composes it into a wasm which can be deployed to openwhisk. Once deployed to a namespace, each workflow will have a unique workflow id.
+To create a workflow, the only necessary input is the YAML configuration file. The composition, direction of flow and tasks are laid out in the YAML file. This YAML is parsed using Tackle Box, which in turn composes it into a wasm which can be deployed to openwhisk. Once deployed to a namespace, each workflow will have a unique workflow id.
 
-Workflow configuration comprises the input URL of workflow tasks, the sequence of processing tasks, and argument structure. Arguments must match the task input parameters.
+Workflow configuration comprises the endpoint URL for workflow tasks, the sequence of processing tasks, and argument structure. Arguments must match the task input parameters.
  
 **4.Web API Gateway and Backend Service**   
 This is the end-user facing component that enables easy and intuitive usage of Aurras. This final component is has a backend application that provides user registration, workflow registration and workflow management. Users can also easily create, select or manage workflows along with providing the necessary input parameters.  
@@ -70,7 +70,7 @@ What makes us different is
 As a part of the Web 3 Community and Ecosystem
 * First class support to connect blockchains
 * Deployment and definition of workflows will be done through easy-to-write YAML configuration.
-* Workflow tasks can be written in multiple languages - NodeJS, Go, Java, Scala, PHP, Python, Ruby, Ballerina, .NET and Rust (We prefer and recommend WASM compatible Rust)
+* Workflow tasks can be RPC calls or Openwhisk actions which can be written in multiple languages - NodeJS, Go, Java, Scala, PHP, Python, Ruby, Ballerina, .NET and Rust (We prefer and recommend WASM compatible Rust)
 * First class support to MQTT Endpoints.  
 
 ## Team :busts_in_silhouette:
@@ -149,21 +149,21 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 - **FTE:** 4 
 - **Costs:** 19200 USD
 
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0  |
-| 0b. | Documentation | We will provide the following documentation: Inline Code Documentation, Flow design, Readme file |
-| 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness |
-| 1a. | Workflow Composer: Rust Openwhisk Client Library | We will create a Minimal Implementation to Openwhisk Rust Client |
-| 1b. | Workflow Composer: Composer | We will build a Wrapper Library compose yaml to wasm |
-| 1c. | Workflow Composer: Pipe | We will build an interface to connect other operators and tasks |
-| 1d. | Workflow Composer: structured YAML file | We will provide a YAML file with a predefined structure to configure the workflow composer |
-| 1e. | Workflow Composer: Concat Operator | We will build an operator interface to merge two flows |
-| 1f. | Workflow Composer: Map Operator | We will create an operator to map the inputs to the outputs of each flow |
-| 2   | Predefined boiler plate | We will build a predefined Rust code for flow generation |
-| 3a. | Flow Provider for Tackle Box |We will create a provider to employ the necessary hooks for the workflow |
-| 3b. | Task Provider for Tackle Box | We will create a provider that will generate a struct with the given macros and arguments |
-| 3c. | Workflow Provider for Tackle Box  | We will create a provider that will interface the operators and tasks |  
+| Number | Deliverable | Specification | User Story |  
+| ------------- | ------------- | ------------- | ------------- |  
+| 0a. | License | Apache 2.0  | |  
+| 0b. | Documentation | We will provide the following documentation: Inline Code Documentation, Flow design, Readme file | |  
+| 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness | |  
+| 1a. | Workflow Composer: Rust Openwhisk Client Library | We will create a Minimal Implementation to Openwhisk Rust Client | Users can invoke workflows that employ certain pre-deployed actions in the OpenWhisk. |  
+| 1b. | Workflow Composer: Composer | We will build a Wrapper Library compose yaml to wasm | Users can compose the WASM from the workflow YAML. |  
+| 1c. | Workflow Composer: Pipe | We will build an interface to connect other operators and tasks | Users can facilitate the usage of the output of one task as the input of the next. |  
+| 1d. | Workflow Composer: structured YAML file | We will provide a YAML file with a predefined structure to configure the workflow composer | Users can utilize the pre-defined YAML file to create custom workflows. |  
+| 1e. | Workflow Composer: Concat Operator | We will build an operator interface to merge two flows | Users can facilitate the concatenation of two tasks to get a combined final output that can be consumed by the next task. |  
+| 1f. | Workflow Composer: Map Operator | We will create an operator to map the inputs to the outputs of each flow | Users can facilitate the transformation of the output of one task to a format required by a subsequent task. |  
+| 2   | Predefined boiler plate | We will build a predefined Rust code for flow generation | Users can create workflow WASM that utilizes the boilerplate code to implement the necessary functionalities that carry out the tasks defined in the YAML. |  
+| 3a. | Flow Provider for Tackle Box |We will create a provider to employ the necessary hooks for the workflow | Users can use the flow provider to generate the code to implement the flow of data between the tasks. |  
+| 3b. | Task Provider for Tackle Box | We will create a provider that will generate a struct with the given macros and arguments | Users can use the task provider to generate the code necessary to execute the tasks defined in the workflow YAML. |  
+| 3c. | Workflow Provider for Tackle Box  | We will create a provider that will interface the operators and tasks | Users can use the workflow provider to generate the code necessary to execute the workflow as defined in the workflow YAML. |  
 
 
 ### Milestone 2 Workflow Composer - Part 2
@@ -172,13 +172,13 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 - **FTE:**  4
 - **Costs:** 10880 USD
 
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0  |
-| 0b. | Documentation | We will provide the following documentation: Inline Code Documentation, Operator Documentation, Flow design, Readme file |
-| 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness |
-| 1a. | Workflow Composer: Flow Macro | We will create three types of flows: init, pipe and terminator. The init is used to create the first task in the workflow and the terminator is used to create the last task. The pipe method is used to create other tasks that accept inputs and are dependent on other tasks |
-| 1b. | Workflow Composer: Derive Macro(s) | We will create derive macros to enable the tasks in a workflow to invoke OpenWhisk actions and triggers. The tasks are structs, based on a generic format that would include name, inputs and endpoints and macros add functionalities for the tasks |
+| Number | Deliverable | Specification | User Story |  
+| ------------- | ------------- | ------------- | ------------- |  
+| 0a. | License | Apache 2.0  | |  
+| 0b. | Documentation | We will provide the following documentation: Inline Code Documentation, Operator Documentation, Flow design, Readme file | |  
+| 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness | |  
+| 1a. | Workflow Composer: Flow Macro | We will create three types of flows: init, pipe and terminator. The init is used to create the first task in the workflow and the terminator is used to create the last task. The pipe method is used to create other tasks that accept inputs and are dependent on other tasks | Users can utilise the flow macro that is used by the flow provider to generate the code to implement the flow of data between the tasks. |  
+| 1b. | Workflow Composer: Derive Macro(s) | We will create derive macros to enable the tasks in a workflow to invoke OpenWhisk actions and triggers. The tasks are structs, based on a generic format that would include name, inputs and endpoints and macros add functionalities for the tasks | Users can utilize the derive macro to add specific functionalities to the tasks that are required for the execution of the workflow. |  
 
 
 ### Milestone 3 — Web API/Backend
@@ -187,19 +187,19 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 - **FTE:**  4
 - **Costs:** 12800 USD
 
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0  |
-| 0b. | Documentation | Documentation includes Inline Code Documentation, Operator Documentation, API doc, Readme file |
-| 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness |
-| 0d. | Article | We will write a Medium article that explains the work done as part of the grant |
-| 1a. | Web API: Workflow Registration | We will create an API that is Exposed as a part of workflow deployment, where workflow will be registered as an openwhisk action and made available to specific namespace |
-| 1b. | Web API: User Registration | We will create an API for User to register themselves |
-| 1c. | Web API: User Workflow Management | We will create an API for User to select workflow and provide argument values, Pause Workflow, Delete Workflow |
-| 2a. | Workflow Yaml Polkadot Payouts | We will create a YAML file that defines the workflow for claiming the Polkadot validator payouts to the provided wallet |
-| 2b. | Claim actions | We will create a set of actions to carry out the tasks of claiming the validator rewards to the provided wallet as defined in the workflow |
-| 2c. | Reward actions | We will create actions to index the validator details to the Kafka topic that will invoke the validator payout workflow |
-| 2d. | Polkadot API Derive macro for workflow task | We will create derive macros that will provide the necessary functionalities for the task struct to perform RPC calls |
+| Number | Deliverable | Specification | User Story |
+| ------------- | ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0  | |
+| 0b. | Documentation | We will provide the following documentation: Inline Code Documentation, Operator Documentation, Flow design, Readme file | |
+| 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness | |
+| 0d. | Article | We will write a Medium article that explains the work done as part of the grant | |
+| 1a. | Web API: Workflow Registration | We will create an API that is Exposed as a part of workflow deployment, where workflow will be registered as an Openwhisk action and made available to specific namespace | Users can deploy a workflow to execute the required tasks for a particular scenario. |
+| 1b. | Web API: User Registration | We will create an API for User to register themselves | Users can register themselves to the system and receive a unique ID. |
+| 1c. | Web API: User Workflow Management | We will create an API for User to select workflow and provide argument values, Pause Workflow, Delete Workflow | Users can update the inputs of a registered workflow.  <br/> Users can pause an active workflow.  <br/> Users can unfreeze a paused workflow.  <br/> Users can delete a registered workflow. |
+| 2a. | Workflow Yaml Polkadot Payouts | We will create a YAML file that defines the workflow for claiming the Polkadot validator payouts to the provided wallet | Users can create a workflow YAML to claim PolkaDot payouts using the pre-defined YAML file. |
+| 2b. | Reward Openwhisk actions | We will create Openwhisk actions to index the validator details to the Kafka topic that will invoke the validator payout workflow | Users can utilise the pre-deployed Openwhisk actions to validate the validator ID and check claims for the particular validator. |
+| 2c. | Claim Openwhisk actions | We will create a set of Openwhisk actions to carry out the tasks of claiming the validator rewards to the provided wallet as defined in the workflow | Users can claim Polkadot payout rewards using the registered workflow. |
+| 2d. | Polkadot API Derive macro for workflow task | We will create derive macros that will provide the necessary functionalities for the task struct to perform RPC calls | Users can facilitate the execution of tasks that utilize the derive macro to perform RPC calls. |
 
 
 ## Future Plans
@@ -218,7 +218,8 @@ Our Roadmap includes
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website.
+**How did you hear about the Grants Program?**  
+We came across the Web3 Grants Program while perusing about the developments in the Web3 ecosystem on the Web3 Foundation Website.
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
