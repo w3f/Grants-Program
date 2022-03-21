@@ -28,13 +28,11 @@ This grant will allow us to develop several pallets to implement a parachain wit
 
 SaaS3 as a part of Polkadot / Kusama / web 3 Ecosystem and has the following properties:
 
-  - Bridge - Patent and monetize abundant web2 projects as decentralized web3 services in a very short time with extremely cheap cost. 
+  - Bridge - Monetize abundant web2 projects as decentralized web3 services in a very short time with extremely cheap cost. 
   - No Middleman - Cheap fee for service users compare with centralized SaaS products.
   - Security - Improve the security for a system by PoS consensus and zero knowledge proof for miner network. Web3 API services are backed by token stakers (DPoS) with a reward and punishment mechanism.
   - Reliability - Strengthen robustness for service by computation decentralization and dRuntime redundancy of miners.
   - Green - Save energy and reduce the service cost by making use of spare computation resources for API computation.
-  - Creator Economy - Protect intellectual properties by income-NFT (iNFTs) for service creators.
-
   
 ### Protocol Details
 
@@ -42,13 +40,13 @@ SaaS3 as a part of Polkadot / Kusama / web 3 Ecosystem and has the following pro
 
 ![image](https://user-images.githubusercontent.com/95557343/157395059-1f4924c3-d64d-4399-b5cb-79b8eecef4d5.png)
 
-Decentralized docker runtime (dRuntime) can be defined as the middleware that enables the following actions to be executed by three parties. The first party is the docker creator, the party that creates software services as a result of intellectual labor. The second is the computational node, or better known as the 'miner', namely the party that performs the computational tasks. They are hereafter referred to as 'nodes' or 'miners'. The third is the service user, who sends requests and pays to access the API. Their actions are detailed below.
+Decentralized docker runtime (dRuntime) can be defined as the middleware that enables the following actions to be executed by three parties. The first party is the docker creator, the party that creates software services as a result of development labor. The second is the computational node, or better known as the 'miner', namely the party that performs the computational tasks. They are hereafter referred to as 'nodes' or 'miners'. The third is the service user, who sends requests and pays to access the API. Their actions are detailed below.
 
   - To access a web3 API, users pay $SA3 tokens to nodes as the transaction fee and to software creators as the royalty fee. 
 
   - The node(s) are rewarded to execute the software on their equipment. Importantly, each miner can run multiple API services with dRuntime cache (dCache) to maximize the throughput.
 
-  - The Creator receives the royalty fee as the reward for their intellectual commitment to the docker development; they are the author of API codes. 
+  - The Creator receives the royalty fee as the reward for their commitment to the docker development; they are the author of API codes. 
 
 <img src="https://user-images.githubusercontent.com/95557343/159318152-e35babbf-7acd-4217-b781-b67f657dd514.png" width="512">
 
