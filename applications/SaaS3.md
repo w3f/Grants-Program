@@ -100,11 +100,10 @@ dRuntime cache is a 3-level caching mechanism to guarantee high performance and 
 
 4. **SaaSDAO**
 SaaSDAO refers to the decentralized autonomous organization charged with governance duties.
-
-<img src="https://user-images.githubusercontent.com/95557343/157394839-c6df5230-1800-454d-9a61-e90272459865.png" width="512">
+<img src="https://user-images.githubusercontent.com/95557343/159328187-2b0104df-9e53-4000-b4bc-a122adc97fbf.png" width="512">
 
 5. **iNFT** 
-iNFT refers to a tradable income NFT that is minted when a creator submits a docker proposal to create a service. iNFT allows the service creator to earn royalty fee from running the docker.
+iNFT refers to a tradable income NFT that is minted when a creator submits a docker image to create a service. iNFT allows the service creator to earn royalty fee from running the container.
 
 6. **Miner Network**
 Miner Network The miner network is implemented by pallet-dRuntime and consists of all the providers of computational capabilities. The network offer decentralized Software as a Service which undertakes to execute dDocker to reply DeResponse for user's DeRequest. All the dDockers can be deployed by creators on each miner. Thus, other nodes are called in replacement should any node break down. The 'redundancy' of computing nodes, which is at the miner-level, helps the SaaS3 network maintain its decentralization features and remain robust.
@@ -258,7 +257,7 @@ GitHub accounts of all team members.
 | 1. | pallet-entity| [pallet_assets](https://crates.io/crates/pallet-assets) is utilized for implementation with a minor change to fit SaaS3 project. An user and creator both can be implemented as entity. They are same in implementation perspective. | 
 |    | Functions     | No public function | 
 | 2. | pallet-service| `pallet-service` is core implementation of SaaS3 project which is a key middle ware and interacted a lot with other pallets' functions. A service is also a iNFT to indicate the beneficial right for service creator. NFT related part is implemented based on [RMRK core pallet](https://github.com/rmrk-team/rmrk-substrate/tree/main/pallets/rmrk-core) which is an extension of pallet-uniques. A marketplace will be set up to trade those NFTs such as [Singular](https://singular.rmrk.app), RMRK, and [Kodadot](https://kodadot.xyz). | 
-|    | Functions| 1). `pub fn subscribe_service(eid:u32, iNFT_id:u64, timespan:u256, count:u256) ` User call this function to pay token to subscribe API service. <br> 2). `pub fn create_service(eid:u32, pid:u32)` Once a service is accepted, the proposal corresponding docker will be deployed as a service. <br> 3). `pub fn use_service(eid:u32, ip_address:Vec<u8>, iNFT_id:u64)` User call this function to allocate a reliable miner to use API service. <br> 4). `fn check_service(eid:u32, iNFT_id:u64)` The function can automatically check whether the service is available for usage. <br> 5). `fn distribute_rewards()` It can distribute subscription fee to miners and creators with a predefined ratio.|
+|    | Functions| 1). `pub fn subscribe_service(eid:u32, iNFT_id:u64, timespan:u256, count:u256) ` User call this function to pay token to subscribe API service. <br> 2). `pub fn create_service(eid:u32, pid:u32)` Creator's docker will be deployed as a service. <br> 3). `pub fn use_service(eid:u32, ip_address:Vec<u8>, iNFT_id:u64)` User call this function to allocate a reliable miner to use API service. <br> 4). `fn check_service(eid:u32, iNFT_id:u64)` The function can automatically check whether the service is available for usage. <br> 5). `fn distribute_rewards()` It can distribute subscription fee to miners and creators with a predefined ratio.|
 |    | Storage| `ServiceList get(fn iNFT_list): map hasher(blake2_128_concat) u32 => Vec<PNFT>;`<br>  `SubscriptionList get(fn subscription_list): map hasher(blake2_128_concat) u32 => Vec<Subscription>;` <br> `Usages get(fn get_usages): map hasher(blake2_128_concat) u32 => Vec<Usage>; `|
 |    | Struct| `pub struct PNFT<iNFT_id, docker_file, fee, eid, readme>` <br> `pub struct Subscription<sub_id, eid, iNFT_id, time_end, count>` <br> `pub struct Usage<us_id, sub_id, mid>`|
 | 3. | pallet-stake| This pallet implements rewards and slashes related functions for token stakers to stake their tokens to services for DPoS consensus. [pallet-staking](https://crates.io/crates/pallet-staking) will be utilized for initial implementation and we will finely package it into our pallet-stake. |
@@ -275,7 +274,7 @@ GitHub accounts of all team members.
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0|
-| 0b. | Documentation | We will provide both inline documentation of the code and basic tutorials that explains and guides to four roles: User, Miner, Creator, Stakers respectively with some finely detailed examples. For instance, how to set up machines and mine tokens for miners, or how to propose a decentralized docker proposal and submit to SaaS3DAO. |
+| 0b. | Documentation | We will provide both inline documentation of the code and basic tutorials that explains and guides to four roles: User, Miner, Creator, Stakers respectively with some finely detailed examples. For instance, how to set up machines and mine tokens for miners, or how to propose a decentralized docker image and submit to miner network. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests for four pallets: pallet-miner and pallet-DAO|
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains (what was done/achieved as part of the grant). (Content, language and medium should reflect our target audience described above). |
