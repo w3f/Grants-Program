@@ -48,7 +48,8 @@ Decentralized docker runtime (dRuntime) can be defined as the middleware that en
 
   - The Creator receives the royalty fee as the reward for their commitment to the docker development; they are the author of API codes. 
 
-<img src="https://user-images.githubusercontent.com/95557343/159318152-e35babbf-7acd-4217-b781-b67f657dd514.png" width="512">
+<img src="https://user-images.githubusercontent.com/95557343/159499068-ee628ecf-9fce-4d7f-9a3d-e30a1a9ac1c0.png" width="800">
+
 
 
 ##### Security & Off-chain Miner Consensus 
@@ -113,7 +114,7 @@ Each API call will be executed by 3 miners. Therefore, the hash values generated
    - There is no agreement among the three nodes. In this case, the API call returns failure. The gas fee is nonetheless consumed and has no refunds. No party will face slash or claim reward, as neither miner malfunctions nor API bugs can be found attributable. However, the failure-logs are recorded on on-chain storage. The user could raise an issue to the creator to push for a new docker, or lodge a sue claim on SaaS3DAO as a query for potential compensation from miners / creators. For more details, please refer to 9. 3-zkcg.
 
 8. **Court DAO**
-At Court DAO, the user can pay a fee for sue claims and, subject to the court's ruling, may claim compensation from miners / creators on SaaS3 DAO on grounds of any API failure. To supplement the on-chain failure logs, the user is required to provide the details regarding the failure case, such as the input data and the version of the failed API (docker image file version). The Jury consists of top 100 largest staked creators who are open source developers and active on DAO events. Members of the Jury can download the same version docker image and retest the failure case to investigate the failure cause. The on-chain failure log is available for jury members. 
+At Court DAO, the user can pay a fee for sue claims and, subject to the court's ruling, may claim compensation from miners / creators on SaaS3 DAO on grounds of any API failure. To supplement the on-chain failure logs, the user is required to provide the details regarding the failure case, such as the input data and the version of the failed API (docker image file version). The Jury consists of top 101 largest staked creators who are open source developers and active on DAO events. Members of the Jury can download the same version docker image and retest the failure case to investigate the failure cause. The on-chain failure log is available for jury members. 
 
     Jury will have the following options given the on-chain log records and local test results.
 
@@ -127,23 +128,29 @@ At Court DAO, the user can pay a fee for sue claims and, subject to the court's 
 
 9. **3-zkc and gas calculation algorithm (3-zkcg)**
 
-We will provide a protocol / software which is similar with [AWS Lambda API Pricing](https://aws.amazon.com/lambda/pricing/) for miner, but replace dollar unit with gas. In SaaS3, miners should monitor each container's resource usage by our software to calculate gas usage i.e., `gas_used` for once API call. `rewards=gas_used*gas_price` gas_used is defined by following process with 3-zkc. Here, we illustrate the algorithm to show the procedure, a user request is sent to three miners `m1,m2,m3` at time `t=0` with user-set maximum timeout `Tmax`, there will be following scenarios: 
+We will provide a protocol / software which is similar with [AWS Lambda API Pricing](https://aws.amazon.com/lambda/pricing/) for miner, but replace dollar unit with gas. In SaaS3, miners should monitor each container's resource usage by our software to calculate gas usage i.e., `gas_used` for once API call. `rewards=gas_used*gas_price` gas_used is defined by following process with 3-zkc. Here, we illustrate the algorithm to show the procedure, a user request with `gas_limit` is sent to three miners `m1,m2,m3` at time `t=0` with user-set maximum timeout `Tmax`, there will be following scenarios: 
  - If after timeout `Tmax`, no response is received, go to the failure state.
  - Else, got `m1` response `r1` with reported gas `g1` at time `t1`, reset timeout `Tmax=max(2*t1, Tmax)`.
    - If after timeout `Tmax`, go to failure state.
    - Else, got `m2` response `r2` with reported gas `g2` at time `t2`, zkc will be conducted to confirm whether `r1=r2`
-     - `r1=r2` return `r1` to user and distribute `rewards=min(g1,g2) * gas_price` to `m1` since it early. 
+     - `r1=r2` return `r1` to user and distribute `rewards=min(g1,g2) * gas_price` to `m1` with `(1-g1/(g1+g2)) * rewards` and to `m2` with `(1-g2/(g1+g2))*rewards` which means the lower `gas report`, the more rewards. 
      - `r1!=r2` reset timeout `Tmax=max(2*t2, Tmax)`
        - If after timeout `Tmax`, go to failure state.
        - Else, got `m3` response `r3` with reported gas `g3` at time `t3`, zkc will be conducted to confirm whether `r3=r1` or `r3=r2`
          - If `r1!=r2!=r3`, go to failure state.
          - Else, two conditions
-           - `r3=r1`, return `r1` to user and distribute `rewards=min(g1, g3) * gas_price` to `m1`, `m2` will be slashed.
-           - `r3=r2`, return `r2` to user and distribute `rewards=min(g2, g3) * gas_price` to `m2`, `m1` will be slashed.
- - Failure state: reply user `error: API fail` and charge gas fee as `gas_mean * gas_price`, where `gas_mean` is the average gas for that API in the history. Neither three miners will be slashed, since in such case, it hard to determine whether the API service has bugs. The user could raise an issue/sue to Creator/CourtDAO to acquire compensation based on above on-chain records.
+           - `r3=r1`, return `r1` to user and distribute `rewards=min(g1, g3) * gas_price` to `m1` with `(1-g1/(g1+g3)) * rewards` and to `m3` with `(1-g3/(g1+g3))*rewards`. `m2` will be slashed.
+           - `r3=r2`, return `r2` to user and distribute `rewards=min(g2, g3) * gas_price` to `m2` with `(1-g2/(g2+g3)) * rewards` and to `m3` with `(1-g3/(g2+g3))*rewards`. `m1` will be slashed.
+ - Failure state: reply user `error: API fail` and charge gas fee as `gas_mean * gas_price`, where `gas_mean` is the average gas for that API in the history. Neither three miners will be slashed, since in such case, it hard to determine whether the API service has bugs. The user could raise an issue/sue to Creator/CourtDAO to acquire compensation based on above on-chain records. If the miners notice some weird slashes with on-chain evidence, miners could raise sue to CourtDAO with their proof (e.g., give an IPFS docker image path which is the same version as creator submitted) to acquire claims and slash service with acceptance from Court DAO. 
 
 ![bfab1125635c0ea2fe37f956120d024](https://user-images.githubusercontent.com/95557343/159319549-47ac496a-38a4-42c2-b569-cf47006466b6.jpg)
 
+
+
+### Game theory Proof for 3-zkc algorithm with Nash Equilibrium Convergence ###
+
+Both Miner1,Miner2, and Miner3 will choose loyalty.
+<img src="https://user-images.githubusercontent.com/95557343/159501485-82e62eaf-9564-4601-9068-f75cf739ea70.png" width="800">
 
 
 
@@ -191,7 +198,7 @@ development. He has mined bitcoin since 2015. Therefore, he has a lot of experie
 
 - **Israel** is the core developer of SaaS3 and undertakes the development of the creator submission network. Besides, he is the CTO of Chapa. He is the founder of Colimo City. Previously, He was the AI researcher in Google Brain, MILA of Turing Award Winner Yoshua Bengio’s Lab. He has 4 years of experience in AI development.
 
-- **Haruki** is a Ph.D. in artificial intelligence and vice president of SaaS3 to build dRuntime on p2p network and financing-related works. Currently, he is an AI researcher and blockchain developer. He has written computer programs since he was 14 and got many hackathon awards in the past. 
+- **Haruki (Steven)** is a Ph.D. in artificial intelligence and vice president of SaaS3 to build dRuntime on p2p network and financing-related works. Currently, he is an AI researcher and blockchain developer. He has written computer programs since he was 14 and got many hackathon awards in the past. 
 
 
 ### Contact
