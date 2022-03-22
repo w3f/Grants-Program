@@ -24,6 +24,9 @@ Aurras as a part of Substrate / Kusama / Polkadot / Web 3 Ecosystem
 #### Architecture
 ![](https://storage.googleapis.com/hugobyte-2.appspot.com/architecture.jpeg)
 
+#### Flow Diagram
+![](https://storage.googleapis.com/hugobyte-2.appspot.com/aurras-flow-daigram.jpeg)
+
 #### Technologies
 
 1. [Apache OpenWhisk](https://openwhisk.apache.org) is an open source, distributed Serverless platform that executes functions (fx) in response to events at any scale. OpenWhisk manages the infrastructure, servers and scaling using Docker containers. The OpenWhisk platform supports a programming model in which developers write functional logic (called Actions), in any supported programming language, that can be dynamically scheduled and run in response to associated events (via Triggers) from external sources (Feeds) or from HTTP requests
