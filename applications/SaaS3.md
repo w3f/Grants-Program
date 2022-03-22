@@ -143,7 +143,7 @@ We will provide a protocol / software which is similar with [AWS Lambda API Pric
            - `r3=r2`, return `r2` to user and distribute `rewards=min(g2, g3) * gas_price` to `m2` with `(1-g2/(g2+g3)) * rewards` and to `m3` with `(1-g3/(g2+g3))*rewards`. `m1` will be slashed.
  - Failure state: reply user `error: API fail` and charge gas fee as `gas_mean * gas_price`, where `gas_mean` is the average gas for that API in the history. Neither three miners will be slashed, since in such case, it hard to determine whether the API service has bugs. The user could raise an issue/sue to Creator/CourtDAO to acquire compensation based on above on-chain records. If the miners notice some weird slashes with on-chain evidence, miners could raise sue to CourtDAO with their proof (e.g., give an IPFS docker image path which is the same version as creator submitted) to acquire claims and slash service with acceptance from Court DAO. 
 
-![bfab1125635c0ea2fe37f956120d024](https://user-images.githubusercontent.com/95557343/159319549-47ac496a-38a4-42c2-b569-cf47006466b6.jpg)
+<img width="875" alt="a0e9fb71f04ea16161f09ca17048e72" src="https://user-images.githubusercontent.com/95557343/159504829-c65eacd8-3d48-4f32-9dfa-b341a5d6f117.png">
 
 
 
