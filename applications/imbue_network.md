@@ -129,7 +129,6 @@ We are still at the early stage of development, getting our website out in the n
 | 0b. | Dapp | UI to add proposals onchain. This can be either stored onchain completely or a combination of IPFS and onchain. The UI will be written in Typescript/NodeJS and interact with PolkadotJS wallets to deduct costs for voting/adding proposals
 | 0c. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish a medium article and workshop that explains how the grant funds were spent as well as detailed guides on how to spin up the collators and submit a proposal then vote on it
 | 1. | Substrate module: Grants pallet | Add grants pallet to add proposals onchain, each proposal has a unique ID which votes will be counted against. This pallet will be called by project proposers to submit new projects/milestones.
 
 The grants pallet is essentially a data store of grants, it will also need to track progress on each grant application
@@ -150,6 +149,7 @@ I.e one unique grant ID has a one-to-many milestones relationship and the counci
 | 0c. | Voting Pallet| Add voting module to add governance and votes on grants
 | 0d. | Public board | Work in an agile manner and maintain a public board so the community could keep an eye on progress
 | 0e. | Dapp | Allow voting on proposals via a linked PolkadotJS wallet. Votes on new projects/milestones for existing ones. To be built in react
+| 0f. | Article | We will publish a medium article and workshop that explains how the grant funds were spent as well as detailed guides on how to spin up the collators and submit a proposal then vote on it
 | 1. | Substrate module: Democracy pallet | Votes pallet to allow voting on proposals (working alongside the grants pallet). Votes meant to be stored via IPFS. Voting will be done with 1 $IMBU = 1 vote. 
 | 2. | Substrate module: Funding pallet | Works alongside the democracy pallet to unlock funding in the stages defined by the project orignally. This will be called after council votes on approval of funding/milestones. This will also be called by the proposer to withdraw the approved funds. Can potentially be merged with the grants pallet
 
