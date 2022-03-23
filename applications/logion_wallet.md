@@ -4,7 +4,7 @@
 
 * **Team Name:** logion  
 
-* **Payment Address:** 0x5823cBD1D4b986E434718BeEc41Ba7816098BF77 - ETH network / USDT - GoLion srl - BCE 0684.722.109 - Belgium
+* **Payment Address:** 0x3bf8D93Bbe15c002a2c731D5139077aA1c7002Cd - logion.ETH - GoLion srl - BCE 0684.722.109 - Belgium
 
 
 ## Project Overview  

@@ -3,6 +3,7 @@
 * **Project Name:** UpLink
 * **Team Name:** HypeLabs Inc.
 * **Payment Address:** 3Fwmy2QHw1Xp7S956PMG9NKq1yngzRqGqf (BTC)
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/424#issuecomment-1006435267)
 
 ## Project Overview :page_facing_up:
 

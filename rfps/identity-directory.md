@@ -1,9 +1,8 @@
 # RFP: Substrate Identity Directory
 
-* **Status:** Open
+* **Status:** [In progress](https://github.com/w3f/Grants-Program/pull/255)
 * **Proposer:** swader
 * **Projects you think this work could be useful for**: Kusama, Polkadot, Substrate chains
-* **Teams/People that could deliver the RFP**: Shardlabs.io
 
 ## Project Description :page_facing_up: 
 

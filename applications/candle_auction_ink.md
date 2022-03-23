@@ -114,7 +114,7 @@ which contains both sources and documentation.
 
 ### Milestone 2 - Random close
 
-* **Estimated Duration:** 1 weeks
+* **Estimated Duration:** 1 week
 * **Costs:** 2500 DAI
 
 
@@ -128,11 +128,31 @@ which contains both sources and documentation.
 | 1. | Retroactive close | At the close block, rather than announcing the highest bidder at that point, the contract should randomly determine a block in the past (between start & end blocks) and calculate the highest bidder at that block to be the winner |
 | 2. | Randomness source (optional) | Randomness source should be configurable (e.g. from hash of the block in the relay chain, from a randomness beacon parachain etc.)
 
+### Milestone 3 - Substrate.dev Workshop
+
+* **Estimated Duration:** 1.5 weeks
+* **Costs:** 3000 DAI
+
+A comprehensive tutorial\workshop to be added to [Substrate Developer Hub](https://docs.substrate.io/tutorials/v3/).
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | License | Same as *substrate-docs* or Apache 2.0. The delivery will be either merged into [*substrate-docs*](https://github.com/substrate-developer-hub/substrate-docs) and inherit license from it, or published under *Apache 2.0* as part of a separate repo |
+| 1. | § Candle Auction Basics | Learn the basic mechanincs of a candle auction |
+| 2. | § *ERC721* & *DNS* | Learn *ERC721* and *DNS* contracts implementations in Ink! |
+| 3. | § Cross-Contract Calls | Learn cross-contract communication patterns in Ink! |
+| 4. | § Auction Set Up | Learn to deploy and to instantiate these contracts, to mint tokens, to register domain and to put them dowm to an auction |
+| 5. | § Auction Run | Learn to place bids to an auction, to check its subject and status, to detect winner and to get payouts |
+| 6. | § Contract Verification | Learn how to verify smart contract code on Polkadot parachain |
+| 7. | § Add New Reward Contract | Learn to add a new type of auction subject and to plug-in it into our conract logic | 
+| 8. | § Change Randomness Source | Learn to set another on-chain randomness source for our candle |
+
+
 ## Future Plans
 
 + I would be happy to gather feedback from folks using the contract and to enhance it to better fit the real needs.  
-+ Specific UI template for delaing with this contract could be implemented.
-+ Probably making a tutorial out of this project would be valuable to be added to the [substrate.dev](https://docs.substrate.io/) portal.
++ Specific UI template for dealing with this contract could be implemented.
+
 
 ## Additional Information :heavy_plus_sign:
 
