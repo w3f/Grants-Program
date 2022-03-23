@@ -127,7 +127,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Milestone 1 — Substrate Chain with Impression Ad, Web App
 
-- **Estimated duration:** 1 month
+
+- **Estimated duration:** 6 month
 - **FTE:** 2
 - **Costs:** 12,000 USD
 
