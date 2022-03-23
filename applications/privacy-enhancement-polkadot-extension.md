@@ -70,10 +70,9 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 3. | "Privacy Mode" | A setting that automatically changes the extension to a specific view group (which could be "hide all"). | 30h | 1800 $ | 15.06.2022 |
 | 4. | "Hide from Extension" | A feature that lets users hide addresses in the extension itself. This is useful for doing demos or presenting the screen. Those accounts are listed in a special tab and can be unhidden from there. | 20h | 1200 $ | 30.06.2022 |
 | 5. | "Link View-Groups to URLs" | The extension already features an access control to specific URLs. To add on that, the extension could automatically switch to a defined view-group when entering an URL. Building on that, upon *first* authorization of a website, the extension could ask which view-groups to add it to or offer to create a new one. | 20h | 1200 $ | 15.07.2022 |
+| 6. | Translate GUI: Add i18n for German and Spanish | 4h | 240 $ | 16.07.2022 |
 
-The rest 30h (1800$) shall be used for architectural concepts and/or meetings. The total funding budget is set on 9600 $.
-
-Technical development might force that the task order and so the delivery date of order can be shifted.
+The rest 30h (1800$) shall be used for architectural concepts and/or meetings.
 
 20% of development time shall be used for testing and documentation.
 
@@ -83,16 +82,37 @@ The delivered code, libraries or UI design, shall be approved by the stakeholder
 
 Tests shall be executed in chrome and firefox extensions in privacy mode without any other extensions installed.
 
-| Number        | Test (Verification) | Approval (Validation)   | Documentation |    Concept    |
+A validation (approval) shall start after following pre-checks:
+- Check the completeness of verification tests
+- Execute the manual tests
+- Approve that the function of the menu items complies with generic GUI design and user experience.
+- Save the chrome version and commit hash in review protocoll. 
+
+| Number        | Test (Verification) | Approval (Validation)   | Documentation |    GUI Concept    |
 | ------------- | -------------       | -------------           | ------------- | ------------- |
-| 1. |  Testsuit: Test_101 Call a function to set address visibility on true. Check GUI. Test_102: Call a function to set address visibility on false. Observe GUI changes.  Manual tests: Select the menu item "Hide all addresses" and see the change of the visibility. Select the menu item "Show" all addresses and see the change of visibility.  |  Check the completeness of verification tests, execute a manual tests, approve that the button complies with generic GUI design and user experience. Record the chrome version and commit hash in review protocoll.                  |  The documentation shall introduce the privacy menu in GUI and describe that the visibility of all accounts are affected by the buttons click funtion.                       |    ![GUI Proposal](https://i.imgur.com/DP7uNiU.png)          |
-| 2. |                                |                     |                         |               |
-| 3. |                                |                     |                         |               |
-| 4. |                                |                     |                         |               |
-| 5. |                                |                     |                         |               |
-
-
+| 1. | Test_101: Call a function to set global address visibility on true. Check GUI: All addresses shall be shown. Test_102: Call a function to set global address visibility on false. Check GUI: All addresses shal be hidden. Test_103: Repeat Test_101 for account visibility instead of address visibility. Test_104: Repeat Test_102 for account visibility instead of address visibility. Manual tests: Select the menu item "Hide all addresses" and see the change of the visibility. Select the menu item "Show all addresses" and see the change of visibility. Repeat the manual tests for account visibility instead of address visibility.  |   Approve that new object variables of an account object is named and defined properly.                  |  The documentation shall introduce the privacy menu in GUI and describe that the visibility of all accounts and address are affected by the privacy menu.                       |    ![Privacy Menu](https://imgur.com/a/pdSqvVY)          |
+| 2. |  Will be added after approval   | After first installation of extension, there is no exsiting group. Open the groups menu. Add a new group. A group shall be automatically selected, if it is created. Test if renaming and removing of groups works. Go to address properties menu and assign an account to this group. Export and import the account, to check if the group assignment of an account can be saved.         |  Will be added after approval  |      ![Groups Menu](https://imgur.com/a/Dtst98i)         |
+| 3. |  Will be added after approval          |   Default values for privacy level of a group is 1 and address visibility is TRUE, so the accounts and addresses are all visible.   Assign two accounts to a group. Change address visibility and privacy level of that group to approve, that accounts and addresses can be shown and hide.                      | Will be added after approval  |   ![Privacy Menu](https://imgur.com/a/pdSqvVY)            |
+| 4. |   Will be added after approval      |   Define an account as hidden-account. Check if hidden accounts are listed in the account list. Set the option to see the hidden account. Approve that the list contains now the hidden account. Reset the account visibility, so the account is listed in normal view mode.                       |   Will be added after approval    |               |
+| 5. |   Will be added after approval    |   Call the app with a url parameter "&privacy_level=n". This will override the default privacy level of GUI.                  |  Will be added after approval  |      ![Privacy Menu](https://imgur.com/a/3dE4Rkf)          |
+| 6. |  Will be added after approval   |                     | Switch the GUI language to german and spanish. For both cases take each tenth of the word and compare the translation using a translator if the approver do not have the basic knowledge about this language.                    |               |
 
 ## Additional Information :heavy_plus_sign:
+
+The solution for the milestones above is based on four new properties of accounts: 
+- Group membership. 
+- Privacy Level (Account visibility)
+- Address Visibility
+- Global Account Visibility
+- Global Address Visibility
+
+The main GUI will show an account only if an account is:
+- Not hidden or ( Hidden but Hidden accounts shall be shown )  AND
+- Group Privacy Level of the account is lower than user-defined privacy level
+
+The main GUI will show an account address only if an account has:
+- (Group Address Visibility is set on TRUE in privacy menu AND Global address Visibility is set on FALSE by user) OR
+- Global address Visibility is set on TRUE by user
+
 
 **How did you hear about the Grants Program?** : https://github.com/jonasW3F posted it on reddit
