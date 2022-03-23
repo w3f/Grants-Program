@@ -100,7 +100,7 @@ A validation (approval) shall start after following pre-checks:
 ## Additional Information :heavy_plus_sign:
 
 The solution for the milestones above is based on four new properties of accounts: 
-- Group membership. 
+- Group membership
 - Privacy Level (Account visibility)
 - Address Visibility
 - Global Account Visibility
