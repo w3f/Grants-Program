@@ -140,7 +140,7 @@ A basic application with a responsive design is developed which supports queryin
 - **FTE:**  3
 - **Costs:** 16500 DAI
 
- A user can query identities from Polkadot, Kusama or provide his own node endpoint. It is possible to directly interact with the underlying account by sending tokens to it.
+ A user can query identities from Polkadot, Kusama or provide his own node endpoint. It is possible to directly interact with the underlying account by sending tokens to it. The application can be hosted on IPFS.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -150,8 +150,8 @@ A basic application with a responsive design is developed which supports queryin
 | 1. | Implement offline mode | Enable a user to connect to a local node and fetch identities from there |
 | 2. | Implement UI for node selection |  Enable a user to select the node from the UI |
 | 3. | Implement URL param logic | URL Parameters can specify which cards are visible and in which order |
-| 4. | Performance improvement | Focus on improving the web applications performance to maximize usability |
-| 5. | Implement logic for sending tokens| Implement logic to get balance of current account and make a transaction to displayed identity; consider transaction fees |
+| 4. | Performance improvement | Focus on improving the web applications performance to maximize usability by enabling caching to IPFS if a user provides a pinata key; fetch from IPFS if it improves performance |
+| 5. | Implement logic for sending tokens| Implement logic to get balance of current account and make a transaction to displayed identity; consider transaction fees; use an open protocol (e.g. wallet connect) to establish a secure connection to a wallet |
 | 6. | Implement UI for sending tokens| Implement UI for sending tokens, including a button to trigger a transaction, an input field and a display of balances and fees | 
 
 ### Milestone 3 - Implementation of default plugins
@@ -175,7 +175,7 @@ A flexible, expandable and component-based application is developed, that suppor
 ## Future Plans
 
 After we have provided a flexible, expandable and component-based application with the above-mentioned functions as part of milestones 1, 2 and 3, the development of further components as plugins could follow, as suggested in the [RFP](https://github.com/w3f/Grants-Program/blob/master/applications/substrate-identity-directory.md) in the Additional Plug-in Ideas chapter.
-
+In addition, TDSoftware can undertake maintenance tasks as part of a maintenance grant.
 
 ## Additional Information :heavy_plus_sign:
 
