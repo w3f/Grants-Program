@@ -77,7 +77,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Governance Dashboards | [Polkassembly](https://github.com/premiurly/polkassembly), [dotreasury](https://github.com/opensquare-network/dotreasury), [Bright Treasury](https://github.com/bright/bright-tresury), [OpenSquare offchain voting](https://github.com/opensquare-network/collaboration) | UI for the kusama and/or polkadot treasury (see [bounty module](https://github.com/paritytech/substrate/pull/5715)), UI for Parachain Lease Offering (PLO)  |
 | Staking Rewards | [Staking Rewards Collector](https://github.com/w3f/staking-rewards-collector), [Staking Rewards Viewer](https://github.com/jackson-harris-iii/staking-rewards-viewer), [Polkadot Staking Site](https://github.com/cryptolab-network/polkadot-staking-site) |
 | Bridge UI | [Parity Bridges UI](https://github.com/paritytech/parity-bridges-ui), [Donut Interface (Steem <> Dot)](https://github.com/nutbox-dao/donut-interface) | |
-| Parachain/Crowdloan | [Parachains.Network](https://github.com/jhonalino/parachains.network) | |
+| Parachain/Crowdloan | [Parachains.Network](https://github.com/jhonalino/parachains.network), [PolkAuction](https://github.com/CrommVardek/polk-auction-ui) | |
 | Other | [PolkadotWebIdenticon](https://github.com/RidOne-technologies/polkadot-web-identicon), [Polkadot Angular IdentIcon](https://github.com/RidOne-technologies/polkadot-angular-identicon), [KappaSigmaMu Fratority](https://github.com/KappaSigmaMu/ksm-app), [Quadratic Funding Webapp](https://github.com/OAK-Foundation/quadratic-funding-webapp), [Polkawatch](https://gitlab.com/polkawatch), [Bytepay](https://github.com/bytepayment/bytepay) | Portfolio Viewer like Zapper or Zerion
 
 ### :wrench: Tools, APIs and Languages
