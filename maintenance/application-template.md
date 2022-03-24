@@ -107,8 +107,10 @@ Our responsibilities:
 ### Overview
 
 - **Sprint/Period Duration:** Duration of the sprint/period (e.g. 4 weeks)
+- **Total Duration:** Duration of the entire maintenance contract (e.g. 1 year)
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Max budget per sprint/period:** Requested max budget in USD per sprint/period (e.g. 7,000 USD). Cost for each period need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Hourly rate:** Amount of budget per hour, since it’s unlikely that the maintenance of the project requires the exact same workload each sprint. 
 
 > ⚠️ *Note that you will need to provide a comprehensive report of the work done at the end of each month, including the list of issues/bugs/pull requests worked on, time spent on each of these, & finally, the associated cost. The time allocation & price will likely vary from month to month, depending on the nature of the project you're contributing to. The report should be in the form of a Milestone Delivery, again like the typical procedure. W3F will make the payments only after the successful merge of each individual report.*
 
