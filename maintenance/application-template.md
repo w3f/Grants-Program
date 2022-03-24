@@ -107,7 +107,7 @@ Our responsibilities:
 ### Overview
 
 - **Sprint/Period Duration:** Duration of the sprint/period (e.g. 4 weeks)
-- **Total Duration:** Duration of the entire maintaince contract (e.g. 1 year)
+- **Total Duration:** Duration of the entire maintenance contract (e.g. 1 year)
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Max budget per sprint/period:** Requested max budget in USD per sprint/period (e.g. 7,000 USD). Cost for each period need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 - **Hourly rate:** Amount of budget per hour, since it’s unlikely that the maintenance of the project requires the exact same workload each sprint. 
