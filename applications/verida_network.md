@@ -150,17 +150,24 @@ The Verida engineering team consists of 6+ software engineers with expertise in 
 A collection of Verida repos can be found here https://github.com/verida
 
 Repos relevant to this grant proposal include:
+
 https://github.com/verida/verida-js
+
 https://github.com/verida/storage-node
+
 https://github.com/verida/vault-auth-server
+
 https://github.com/verida/wallet-utils
 
 
 ### Team LinkedIn Profiles (if available)
 
 https://www.linkedin.com/company/verida-technology
+
 https://www.linkedin.com/in/nicklothian/
+
 https://www.linkedin.com/in/chriswere/
+
 https://www.linkedin.com/in/yolandasam/
 
 
