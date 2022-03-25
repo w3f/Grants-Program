@@ -210,7 +210,7 @@ See below for a summary of the software licencing for deliverables on the roadma
 We are seeking a level 2 grant to deliver on Milestone 1, which provides DOT support in the Verida Vault, and support for requesting a DOT payment via Verida decentralized messaging. This work will provide the necessary foundation to enable self-sovereign identity claims, verifiable credentials, encrypted personal data storage, single sign-on, and more for Polkadot as outlined in future milestones.
 
 | Number | Deliverable | Specification |
-| ------ | ----------- | ------------- |
+| :------ | :-------- | :--------------- |
 | 0a. | License | ISC (MIT equivalent)
 | 1 | DOT support in Verida Vault
 | 1a. | Sign transactions | Add PolkadotJS support into the Verida Vault to support signing transactions
@@ -249,7 +249,7 @@ Single sign-on will provide users with a seamless experience for signing in acro
 We will provide the capabilities for developers to request verifiable credentials and build Polkadot dApps with encrypted data storage for private and sensitive data. This enables Polkadot developers to build user-oriented, privacy-preserving, feature rich dApps across industrial verticals including DeFi and metaverse.
 
 | Number | Deliverable | Specification |
-| ------ | ----------- | ------------- |
+| :------ | :-------- | :--------------- |
 | 0a. | License | ISC (MIT equivalent)
 | 1. | Single Sign-On (SSO) for DOT applications
 | 1a. | Establish SSO request | Support establishing a SSO request for a Polkadot dApp
@@ -283,7 +283,7 @@ We are seeking a level 2 grant for Milestone 3 which delivers
 This work will be based on Chain Agnostic Improvement Proposal (CAIP) standards.
 
 | Number | Deliverable | Specification |
-| ------ | ----------- | ------------- |
+| :------ | :-------- | :--------------- |
 | 0a. | License | ISC (MIT equivalent)
 | 1. | Support for additional parachains, building on the work done with Polkadot
 | 1a. | Kusama | Support for Kusama
