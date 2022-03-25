@@ -192,6 +192,16 @@ The focus of this grant proposal is to build and enhance existing capabilities a
 
 See below for a summary of the software licencing for deliverables on the roadmap.
 
+| Name | Description | Licence | GitHub Link |
+| ---: | ----------- | ------- | ----------- |
+| verida-js | The core Verida protocol library | ISC (MIT equivalent) | https://github.com/verida/verida-js |
+| Verida Account Explorer | A web front end showing details of each DID | ISC  (MIT equivalent) | https://github.com/verida/account-explorer/ |
+| Verida Vault | The Verida mobile wallet application. Closed source, but freely available. | Integration libraries are open source | N/A |
+| Wallet-Utils | Integration library between the Verida Vault and blockchains | ISC (MIT equivalent) | https://github.com/verida/wallet-utils |
+| Auth Server | Decentralized server that faciliates single sign-on connections | ISC (MIT equivalent) | https://github.com/verida/vault-auth-server |
+
+
+
 ### Milestone 1 - Support for DOT token and DOT payment requests in Verida Vault
 - **Estimated duration:** 2 months
 - **FTE:**  1,7 FTE
