@@ -62,15 +62,14 @@ The task #2 might be challenging and the implementation have to be arranged betw
 
 The development shall comply the with tasks from milestones. The stakeholder shall provide coding guide lines or standards if those exist. The estimated FTE about 1 month (160h) shall be splitted for each task like this. Project budget of 10.000$ is equal to 62,5$/h. The funding amount calculation is based on 60$/h.
 
-| Number | Deliverable | Specification | Time | Total cost | Delivery date |
-| ------------- | ------------- | ------------- | -------------  | -------------  | -------------  |
-| 1. | "Hide all" | A global button that hides/un-hides all addresses |  20h | 1200 $ | 01.05.2022|
-| 2.  | "View-Groups" | Create and name groups which a user can organize their accounts to. For example, a "polkadot-js" group could unhide all accounts, while a "Parachain X" group only unhides those accounts a user knows that they have those parachain tokens on. | 40h | 2400 $ | 25.05.2022 |
-| 3. | "Privacy Mode" | A setting that automatically changes the extension to a specific view group (which could be "hide all"). | 30h | 1800 $ | 15.06.2022 |
-| 4. | "Hide from Extension" | A feature that lets users hide addresses in the extension itself. This is useful for doing demos or presenting the screen. Those accounts are listed in a special tab and can be unhidden from there. | 20h | 1200 $ | 30.06.2022 |
-| 5. | "Link View-Groups to URLs" | The extension already features an access control to specific URLs. To add on that, the extension could automatically switch to a defined view-group when entering an URL. Building on that, upon *first* authorization of a website, the extension could ask which view-groups to add it to or offer to create a new one. | 20h | 1200 $ | 15.07.2022 |
-| 6. | Translate GUI: Add i18n for German and Spanish |  |4h | 240 $ | 16.07.2022 |
-| 7. | Milestone  budget |  | 134h | 8040 $ | 16.07.2022 |
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | "Hide all" | A global button that hides/un-hides all addresses | 
+| 2.  | "View-Groups" | Create and name groups which a user can organize their accounts to. For example, a "polkadot-js" group could unhide all accounts, while a "Parachain X" group only unhides those accounts a user knows that they have those parachain tokens on. | 
+| 3. | "Privacy Mode" | A setting that automatically changes the extension to a specific view group (which could be "hide all"). |
+| 4. | "Hide from Extension" | A feature that lets users hide addresses in the extension itself. This is useful for doing demos or presenting the screen. Those accounts are listed in a special tab and can be unhidden from there. | 
+| 5. | "Link View-Groups to URLs" | The extension already features an access control to specific URLs. To add on that, the extension could automatically switch to a defined view-group when entering an URL. Building on that, upon *first* authorization of a website, the extension could ask which view-groups to add it to or offer to create a new one. | |
+| 6. | Translate GUI  | Add i18n for German and Spanish |
 
 
 ### Overview
@@ -118,7 +117,7 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how the privacy level is associated to a group and the privacy level can be set using privacy menu in GUI. |
 | 0c. | Testing Guide | Setting the privacy level will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. The testing will cover all 3 three new properties of an account (address visibility in network, address visibility in GUI, account visibility in GUI). |
-| 1. | Set privacy level | Default value for privacy level is 1. If the user changes the privacy level in privacy menu ![Privacy Menu](https://i.imgur.com/ckyhjbm.png) the visibility of addresses in network will be change. |  
+| 1. | Set privacy level | Default value for privacy level is 1. If the user changes the privacy level in privacy menu  the visibility of addresses in network will be change. ![Privacy Menu](https://i.imgur.com/ckyhjbm.png)|  
 | 2. | GUI privacy |  Add 2 another properties: "account visibility in GUI" and "address visibility in GUI" based on the group property "address visibility in network" |  
 
 
@@ -133,7 +132,7 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how an account can be set as hidden in GUI, how the user can show the hidden accounts and can reset this property to make an account visible again. |
 | 0c. | Testing Guide | Setting the account visibility will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. The testing will cover that some accounts from account list will be randomly set as hidden and those are not visible in the gui. This settings shall be saved, so after reset of GUI, the hidden accounts are still invisible |
-| 1. | Override group property for account visibility in GUI | Default value for hidden account is false. If the user changes the account visibility in account menu ![Account Menu](https://i.imgur.com/ckyhjbm.png) the visibility of an account gui will be changed. |  
+| 1. | Override group property for account visibility in GUI | Default value for hidden account is false. If the user changes the account visibility in account menu  the visibility of an account gui will be changed. ![Account Menu](https://i.imgur.com/ckyhjbm.png) |  
 | 2. | Hide/Show hidden accounts | In the privacy menu, the hidden accounts can be made visible and their properties can be editted ![Privacy Menu](https://i.imgur.com/ckyhjbm.png) |  
 
 
