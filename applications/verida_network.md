@@ -193,7 +193,7 @@ The focus of this grant proposal is to build and enhance existing capabilities a
 See below for a summary of the software licencing for deliverables on the roadmap.
 
 | Name | Description | Licence | GitHub Link |
-| --- | ----------- | ------- | ----------- |
+| :--- | :----------- | :------- | :----------- |
 | verida-js | The core Verida protocol library | ISC (MIT equivalent) | https://github.com/verida/verida-js |
 | Verida Account Explorer | A web front end showing details of each DID | ISC  (MIT equivalent) | https://github.com/verida/account-explorer/ |
 | Verida Vault | The Verida mobile wallet application. Closed source, but freely available. | Integration libraries are open source | N/A |
