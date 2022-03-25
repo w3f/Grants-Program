@@ -3,7 +3,7 @@
 - **Project Name:** Verida
 - **Team Name:** Verida PTE LTD
 - **Payment Address:** 0x1596525C44f68b45CDd53db49b03A390e2687331
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Level:** 2
 
 ## Project Overview :page_facing_up:
 
