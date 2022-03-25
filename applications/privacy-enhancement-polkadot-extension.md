@@ -11,13 +11,13 @@ The project description, deliverables and Milestone 1 is described here: https:/
 
 ### Project Details
 
-As a newcomer to Polkadot environment, i was able to create chrome extension and make some changes to work in the development environment. I was able to extend the global settings but i had to change the polkadot/ui-settings package. I didn't want to change so far but wanted to see first result so i used an existing button to see, if i can show/hide the address of an account. It was possible and i made a gif of it: https://imgur.com/a/qsfhD0z
+As a newcomer to Polkadot environment, I was able to create chrome extension and make some changes to work in the development environment. I was able to extend the global settings but I had to change the polkadot/ui-settings package. I didn't want to change too much but wanted to see a first result so I used an existing button to see, if I can show/hide the address of an account. It was possible and I made a gif of it: https://imgur.com/a/qsfhD0z
 
-I would make GUI mock-ups and a concept of change in the code hierarchy (interfaces, etc) before starting with the tasks of Milestone 1. In my professional projects, i like to use v-modell but i would like to present my solution and proposal to stakeholder before i start coding.
+I would make GUI mock-ups and a concept of change in the code hierarchy (interfaces, etc) before starting with the tasks of Milestone 1. In my professional projects, I like to use the [v-model](https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/#:~:text=The%20V%2Dmodel%20is%20a,associated%20with%20the%20testing%20phase.) but I would like to present my solution and proposal to the stakeholders before I start coding.
 
 ### Ecosystem Fit
 
-As described in RFPS, the development will enhance the privacy of the Polkadot Extension.
+As described in the [RFP](https://github.com/w3f/Grants-Program/blob/master/rfps/privacy-enhancement-polkadot-extension.md), the development will enhance the privacy of the Polkadot Extension.
 
 ## Team :busts_in_silhouette:
 
@@ -38,15 +38,14 @@ As described in RFPS, the development will enhance the privacy of the Polkadot E
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+- No open source professional project. Only hobby projects which are targetted for educational purposes (children between 9-14)
+- TypeScript is used in this project https://github.com/nodi-andy/noditron. Forked from shapez.io and the goal was to create a gamefied programming language. A demo is running on www.noditron.com
+- C/C++/C# programmer since 2004.
 
 ### Team Code Repos
 
 - https://github.com/nodi-andy
-- No open source professional project. Only hobby projects which are targetted for educational purposes (children between 9-14)
-- TypeScript is used in this project https://github.com/nodi-andy/noditron. Forked from shapez.io and the goal was to create a gamefied programming language. A demo is running on www.noditron.com
+
 
 ### Team LinkedIn Profiles (if available)
 
@@ -73,11 +72,99 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 6. | Translate GUI: Add i18n for German and Spanish |  |4h | 240 $ | 16.07.2022 |
 | 7. | Milestone  budget |  | 134h | 8040 $ | 16.07.2022 |
 
-The rest 32h (1920$) shall be used for architectural concepts, review corrections and meetings. The project contains more tasks as described in RFPS and the total budegt is lower than in RFPS. The total budget is set on 9960$ (60$/h * 166h)
 
-20% of development time shall be used for testing and documentation.
+### Overview
 
-## Validation of deliverables
+- **Total Estimated Duration:** 4 months
+- **Full-Time Equivalent (FTE):**  20 days
+- **Total Costs:** 10,000 USD
+
+### Milestone 1 Hide and show the addresses in network
+
+- **Estimated duration:** 2 days
+- **FTE:** 16h
+- **Costs:** 960 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can hide and show all addresses using a menu entry. |
+| 0c. | Testing Guide | Hiding and showing addresses in network will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended.|
+| 1. | GUI Menu | I will create a privacy menu, which contains two menu items to hide and show all addresses in network. Example: ![Privacy Menu](https://i.imgur.com/ckyhjbm.png) |  
+
+### Milestone 2 Implement group assignation for accounts
+
+- **Estimated duration:** 9 days
+- **FTE:**  72h
+- **Costs:** 4320 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how a group is created, renamed and an account can be assigned to this group. Furthermore, the override order of accounts network visibility will described, so that the user know exactly how to control the network visibility |
+| 0c. | Testing Guide | Creating, renaming and association of accounts to groups will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended.|
+| 1. | Create and rename groups | After first installation of extension, there is no existing group. Open the groups menu. Add a new group. A group shall be automatically selected, if it is created. Test if renaming and removing of groups works. Go to address properties menu and assign an account to this group. Export and import the account, to check if the group assignment of an account can be saved. Change the three visibility properties for a group: "Account visibility in GUI", "Address visibility in GUI" and "Address visibility in network". Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Groups Menu](https://i.imgur.com/sZ9gwes.png) |  
+| 2. | Remember groups and group associations of an account |  Export and import the account, to check if the group assignment of an account can be saved. Change the "Address visibility in network". Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Account Menu](https://i.imgur.com/a39ItOm.png)|  
+| 4. | Override account network visibility |  If an account is assigned to a group with higher privacy level, current network visibility will be taken from group. It shall be decided, if the user can override the network visisbility of the group for a single account.  |  
+
+### Milestone 3 Implement privacy level
+
+- **Estimated duration:** 4 days
+- **FTE:**  32h
+- **Costs:** 1920 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how the privacy level is associated to a group and the privacy level can be set using privacy menu in GUI. |
+| 0c. | Testing Guide | Setting the privacy level will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. The testing will cover all 3 three new properties of an account (address visibility in network, address visibility in GUI, account visibility in GUI). |
+| 1. | Set privacy level | Default value for privacy level is 1. If the user changes the privacy level in privacy menu ![Privacy Menu](https://i.imgur.com/ckyhjbm.png) the visibility of addresses in network will be change. |  
+| 2. | GUI privacy |  Add 2 another properties: "account visibility in GUI" and "address visibility in GUI" based on the group property "address visibility in network" |  
+
+
+### Milestone 4 Define an account as hidded
+
+- **Estimated duration:** 2 days
+- **FTE:**  16h
+- **Costs:** 960 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how an account can be set as hidden in GUI, how the user can show the hidden accounts and can reset this property to make an account visible again. |
+| 0c. | Testing Guide | Setting the account visibility will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. The testing will cover that some accounts from account list will be randomly set as hidden and those are not visible in the gui. This settings shall be saved, so after reset of GUI, the hidden accounts are still invisible |
+| 1. | Override group property for account visibility in GUI | Default value for hidden account is false. If the user changes the account visibility in account menu ![Account Menu](https://i.imgur.com/ckyhjbm.png) the visibility of an account gui will be changed. |  
+| 2. | Hide/Show hidden accounts | In the privacy menu, the hidden accounts can be made visible and their properties can be editted ![Privacy Menu](https://i.imgur.com/ckyhjbm.png) |  
+
+
+### Milestone 5 Set privacy level using URL
+
+- **Estimated duration:** 2 days
+- **FTE:**  16h
+- **Costs:** 960 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how an url can change the privacy level. |
+| 0c. | Testing Guide | TBD |  
+| 1. | TBD | TBD |  
+
+### Milestone 6 Add i18n for Spanish and German
+
+- **Estimated duration:** 1 day
+- **FTE:**  8h
+- **Costs:** 480 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how an url can change the privacy level. |
+| 0c. | Testing Guide | TBD |  
+| 1. | TBD | TBD |  
+
+
+## General rules of validation
 
 The delivered code, libraries or UI design, shall be approved by the stakeholder based on following criteria.
 
@@ -87,16 +174,7 @@ A validation (approval) shall start after following pre-checks:
 - Check the completeness of verification tests
 - Execute the manual tests
 - Approve that the function of the menu items complies with generic GUI design and user experience.
-- Save the chrome version and commit hash in review protocoll. 
-
-| Number        | Test (Verification) | Approval (Validation)   | Documentation |    GUI Concept    |
-| ------------- | -------------       | -------------           | ------------- | ------------- |
-| 1. | Test_101: Call a function to set "global address visibility in GUI" on true. Check GUI: All addresses shall be shown. Test_102: Call a function to set "global address visibility in GUI" on false. Check GUI: All addresses shall be hidden. Test_103: Repeat Test_101 for account visibility instead of address visibility. Test_104: Repeat Test_102 for account visibility instead of address visibility. Manual tests: Select the menu item "Hide all addresses" and see the change of the visibility. Select the menu item "Show all addresses" and see the change of visibility. Repeat the manual tests for account visibility and adress visibility in network instead of address visibility in gui.  |   Approve that new object variables of an account object is named and defined properly.                  |  The documentation shall introduce the privacy menu in GUI and describe that the visibility of all accounts and address are affected by the privacy menu.                       |    ![Privacy Menu](https://i.imgur.com/ckyhjbm.png)          |
-| 2. |  Will be added after approval   | After first installation of extension, there is no exsiting group. Open the groups menu. Add a new group. A group shall be automatically selected, if it is created. Test if renaming and removing of groups works. Go to address properties menu and assign an account to this group. Export and import the account, to check if the group assignment of an account can be saved. Change the three visibility properties for a group: "Account visibility in GUI", "Address visibility in GUI" and "Address visibility in network". Change the privacy level in privacy menu and see the changes. Test cases will be added after approval.         |  Will be added after approval  |      ![Groups Menu](https://i.imgur.com/sZ9gwes.png)         |
-| 3. |  Will be added after approval          |   Default values for privacy level of a group is 1 and address visibility is TRUE, so the accounts and addresses are all visible.   Assign two accounts to a group. Change address visibility and privacy level of that group to approve, that accounts and addresses can be shown and hide.                      | Will be added after approval  |   ![Privacy Menu](https://i.imgur.com/ckyhjbm.png)            |
-| 4. |   Will be added after approval      |   Define an account as hidden-account. Check if hidden accounts are listed in the account list. Set the option to see the hidden account. Approve that the list contains now the hidden account. Reset the account visibility, so the account is listed in normal view mode.                       |   Will be added after approval    | ![Privacy Menu](https://i.imgur.com/a39ItOm.png) |
-| 5. |   Will be added after approval    |   Call the app with a url parameter "&privacy_level=n". This will override the default privacy level of GUI.                  |  Will be added after approval  |      ![Privacy Menu](https://i.imgur.com/a39ItOm.png)          |
-| 6. |  Will be added after approval   |                     | Switch the GUI language to german and spanish. For both cases take each tenth of the word and compare the translation using a translator if the approver do not have the basic knowledge about this language.                    |               |
+- Save the chrome version and commit hash in review protocoll.                  |               |
 
 ## Additional Information :heavy_plus_sign:
 
