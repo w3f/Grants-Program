@@ -325,7 +325,7 @@
 | [AIKON](https://aikon.com/) | ChainJS integration | [GitHub](https://github.com/TeamAikon/chain-js) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Nathan Schwermann](https://github.com/nschwermann) |  PolkaJ Android Support | [GitHub](https://github.com/nschwermann) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Acala](https://acala.network/) | xtokens - XCM Implementation for Fungible Assets | [GitHub](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/xtokens) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [NUTS Finance](https://nuts.finance/) | Stable Assets | [GitHub](https://github.com/nutsfinance) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [NUTS Finance](https://nuts.finance/) | Stable Asset | [GitHub](https://github.com/nutsfinance) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [MVP Workshop](https://mvpworkshop.co/) | pallet-maci (Minimal Anti Collusion Infrastructure) | [GitHub](https://github.com/MVPWorkshop) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [X-Predict](https://x-predict.com/) | Decentralized prediction market | [GitHub](https://github.com/XPredictMarket) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Chevdor](https://www.chevdor.com/) | SRTOOL App | [GitLab](https://gitlab.com/chevdor/srtool-app) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
