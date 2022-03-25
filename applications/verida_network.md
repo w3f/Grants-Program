@@ -193,7 +193,7 @@ The focus of this grant proposal is to build and enhance existing capabilities a
 See below for a summary of the software licencing for deliverables on the roadmap.
 
 | Name | Description | Licence | GitHub Link |
-| ---: | ----------- | ------- | ----------- |
+| --- | ----------- | ------- | ----------- |
 | verida-js | The core Verida protocol library | ISC (MIT equivalent) | https://github.com/verida/verida-js |
 | Verida Account Explorer | A web front end showing details of each DID | ISC  (MIT equivalent) | https://github.com/verida/account-explorer/ |
 | Verida Vault | The Verida mobile wallet application. Closed source, but freely available. | Integration libraries are open source | N/A |
@@ -210,16 +210,26 @@ See below for a summary of the software licencing for deliverables on the roadma
 We are seeking a level 2 grant to deliver on Milestone 1, which provides DOT support in the Verida Vault, and support for requesting a DOT payment via Verida decentralized messaging. This work will provide the necessary foundation to enable self-sovereign identity claims, verifiable credentials, encrypted personal data storage, single sign-on, and more for Polkadot as outlined in future milestones.
 
 | Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| ------ | ----------- | ------------- |
+| 0a. | License | ISC (MIT equivalent)
+| 1 | DOT support in Verida Vault
+| 1a. | Sign transactions | Add PolkadotJS support into the Verida Vault to support signing transactions
+| 1b. | Submit transactions | Add PolkadotJs support into the Verida Vault blockchain API to submit transactions on chain
+| 1c. | Transaction history | Support fetching and building up transaction history information for Polkadot addresses
+| 1d. | On-chain events | Support listening to on-chain events relating to new transactions for Polkadot addresses
+| 1e. | Transaction fee | Support for fetching and displaying transaction fee information
+| 1f. | DOT token support | Add support for the DOT token on the Polkadot parachain
+| 1g. | DOT token price | Support fetching price information for the DOT token
+| 1h. | CAIP compatibility for Polkadot | Support CAIP compatible token specifications for Polkadot
+| 1i. | Unit tests | Develop unit tests for all new capabilities
+| 2 | Support requesting a DOT payment via Verida message
+| 2a. | Payment Request schema | Define a new inbox message schema for “Payment Request” message types that includes the recipient address and a description of the request purpose
+| 2b. | Payment Request screens | Design new Verida Vault screens for handling “Payment Request” inbox messages
+| 2c. | Facilitating DOT payment | Implement an inbox handler that facilitates making a payment in DOT tokens to the requested address
+| 2d. | Edge case handling | Handle edge cases such as insufficient DOT tokens
+| 2e. | Purchase DOT | Redirect the user to purchase more DOT tokens if required
+| 2f. | Unit tests | Develop unit tests for the inbox handler
+| 2g. | Documentation | Document how Polkadot developers can initiate a Payment Request
 
 
 ### Milestone 2 - Single Sign-On for Apps in Polkadot Ecosystem
@@ -238,6 +248,25 @@ Single sign-on will provide users with a seamless experience for signing in acro
 
 We will provide the capabilities for developers to request verifiable credentials and build Polkadot dApps with encrypted data storage for private and sensitive data. This enables Polkadot developers to build user-oriented, privacy-preserving, feature rich dApps across industrial verticals including DeFi and metaverse.
 
+| Number | Deliverable | Specification |
+| ------ | ----------- | ------------- |
+| 0a. | License | ISC (MIT equivalent)
+| 1. | Single Sign-On (SSO) for DOT applications
+| 1a. | Establish SSO request | Support establishing a SSO request for a Polkadot dApp
+| 1b. | Show available Polkadot addresses | Support specifying a list of available Polkadot addresses for the user to select from
+| 1c. | Specify Polkadot address | Support a user specifying their Polkadot address during user sign
+| 1d. | Documentation | Document how Polkadot developers can establish a SSO request for a Polkadot dApp
+| 2.  | Implement generic transaction support for Polkadot
+| 2a. | Support transaction signing | Support an application requesting a transaction to be signed by the end user
+| 2b. | Support transaction submission | Support an application requesting a transaction to be signed and submitted by the end user
+| 2c. | Support signing any message | Support an application requesting a message to be signed by the end user
+| 2d. | Unit tests | Develop unit tests for the integration
+| 2d. | Documentation | Document how Polkadot developers can initiate a WalletConnect connection during user sign in
+| 3. | Support requesting a Verifiable Credential from a Polkadot dApp
+| 3a. | Documentation | Document how a Polkadot dApp can make a Verifiable Credential request once connected
+| 4. | Support storing encrypted personal data within a Polkadot dApp
+| 4a. | Documentation | Document how a Polkadot dApp can create, update, view, query and delete encrypted private data for a user of their application
+
 
 ### Milestone 3 - Add Chain Support and Developer Documentation
 
@@ -252,6 +281,29 @@ We are seeking a level 2 grant for Milestone 3 which delivers
 3. Examples and tutorials for developers
 
 This work will be based on Chain Agnostic Improvement Proposal (CAIP) standards.
+
+| Number | Deliverable | Specification |
+| ------ | ----------- | ------------- |
+| 0a. | License | ISC (MIT equivalent)
+| 1. | Support for additional parachains, building on the work done with Polkadot
+| 1a. | Kusama | Support for Kusama
+| 1b. | Moonbeam | Support for Moonbeam
+| 2. | Support an “Add chain” capability to the Vault
+| 2a. | Research | Research into the best architecture and CAIP compatible implementation to support all current and future parachains
+| 2b. | Add Chain schema | Define a new inbox message schema for “Add chain” message types that support adding a new parachain into the Verida Vault
+| 2c. | Add Chain screens | Design new Verida Vault screens for handling “Add chain” inbox messages
+| 2d. | Add new chain in Vault | Implement an inbox handler that facilitates adding the new chain into the Verida Vault
+| 2e. | Add Chain as part of SSO | Support adding a chain, if it doesn’t already exist, as part of the SSO process
+| 2f. | Auto-create new parachain account | Support auto-creating a new parachain account if it doesn’t already exist for the user in the Vault
+| 2g. | Unit tests | Develop unit tests for the inbox handler
+| 2h. | Documentation | Document how Polkadot developers can initiate an “Add chain” request
+| 3. | Examples and tutorials
+| 3a. | Tutorial 1 | Tutorial for adding SSO and establishing a WalletConnect connection into an existing Polkadot dApp
+| 3b. | Tutorial 2 | Tutorial for requesting a Verifiable Credential from a user from an existing Polkadot dApp
+| 3c. | Tutorial 3 | Tutorial for initiating a Payment Request from a user for any supported parachain
+| 3d. | Tutorial 4 | Tutorial for creating an encrypted database to retain private data for a user in an existing Polkadot dApp
+| 3e. | Tutorial 5 | Tutorial for requesting a user add a new parachain into their Vault
+
 
 
 ## Future Plans
