@@ -102,7 +102,7 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how a group is created, renamed and an account can be assigned to this group. Furthermore, the override order of accounts network visibility will described, so that the user know exactly how to control the network visibility |
 | 0c. | Testing Guide | Creating, renaming and association of accounts to groups will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended.|
-| 1. | Create and rename groups | After first installation of extension, there is no existing group. Open the groups menu. Add a new group. A group shall be automatically selected, if it is created. Test if renaming and removing of groups works. Go to address properties menu and assign an account to this group. Export and import the account, to check if the group assignment of an account can be saved. Change the three visibility properties for a group: "Account visibility in GUI", "Address visibility in GUI" and "Address visibility in network". Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Groups Menu](https://i.imgur.com/sZ9gwes.png) |  
+| 1. | Create and rename groups | After first installation of extension, there is no existing groups. Open the groups menu. Add a new group. A group shall be automatically selected, if it is created. Test if renaming and removing of groups works. Go to address properties menu and assign an account to this group. Export and import the account, to check if the group assignment of an account can be saved. Change the three visibility properties for a group: "Account visibility in GUI", "Address visibility in GUI" and "Address visibility in network". Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Groups Menu](https://i.imgur.com/sZ9gwes.png) |  
 | 2. | Remember groups and group associations of an account |  Export and import the account, to check if the group assignment of an account can be saved. Change the "Address visibility in network". Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Account Menu](https://i.imgur.com/a39ItOm.png)|  
 | 4. | Override account network visibility |  If an account is assigned to a group with higher privacy level, current network visibility will be taken from group. It shall be decided, if the user can override the network visisbility of the group for a single account.  |  
 
@@ -162,18 +162,6 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 0c. | Testing Guide | TBD |  
 | 1. | TBD | TBD |  
 
-
-## General rules of validation
-
-The delivered code, libraries or UI design, shall be approved by the stakeholder based on following criteria.
-
-Tests shall be executed in chrome and firefox extensions in privacy mode without any other extensions installed.
-
-A validation (approval) shall start after following pre-checks:
-- Check the completeness of verification tests
-- Execute the manual tests
-- Approve that the function of the menu items complies with generic GUI design and user experience.
-- Save the chrome version and commit hash in review protocoll.                  |               |
 
 ## Additional Information :heavy_plus_sign:
 
