@@ -136,10 +136,10 @@ Once complete, this integration opens up the possibilities for future capabiliti
 
 ### Team's experience
 
-**Chris Were** (CEO and co-founder, @tahpot)
+**Chris Were** (CEO and co-founder, [@tahpot](https://github.com/tahpot))
 Chris is an Australian based technology entrepreneur who has spent more than 20 years devoted to developing innovative software solutions. He’s led the development of Verida, a decentralized, self-sovereign data network. Chris previously co-founded Community Data Solutions, providing secure CRM solutions for not-for-profit organizations and government, growing the company to 150 enterprise customers across Australia.
 
-**Nick Lothian** (Head of Product, @nick-verida)
+**Nick Lothian** (Head of Product, [@nick-verida](https://github.com/nick-verida))
 Nick is an experienced software professional with over 20 years of experience in a wide variety of roles. Prior to joining Verida he started and successfully exited an Artificial Intelligence company. He has significant experience in standards (eg W3C ActivityStream, JSR168) and open source (Apache Foundation). 
 
 **Verida Engineering Team**
