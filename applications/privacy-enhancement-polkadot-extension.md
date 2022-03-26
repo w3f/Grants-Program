@@ -54,9 +54,9 @@ As described in the [RFP](https://github.com/w3f/Grants-Program/blob/master/rfps
 
 ## Development Status :open_book:
 
-Feasibility for development environment and the completion of first task: https://imgur.com/a/qsfhD0z
+Feasibility for development environment and an example for hiding the addresses in gui using an existing button: https://imgur.com/a/qsfhD0z
 
-The task #2 might be challenging and the implementation have to be arranged between stakeholder and developer. The arrengement is done by review of test cases for non-visual functionalities and UI design shall have an additional first-step and approval for GUI extension proposal.
+The GUI modifications are done to generate GUI wireframes. The screenshots of those wireframes are added in each specification in milestones. The new features rely heavily on privacy concept, which kept as simple as possible, so that the user only have to set a privacy level to change the visibility of accounts and addresses in GUI and also the accounts in network. If this solution is not sufficient, privacy level can be splittet into two different privacy levels; the GUI privacy and network privacy. This can be decided by grant committee and the concept will be adjusted without changes in "estimated duration" and FTE.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -75,12 +75,12 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 ### Overview
 
 - **Total Estimated Duration:** 4 months
-- **Full-Time Equivalent (FTE):**  20 days
-- **Total Costs:** 10,000 USD
+- **Full-Time Equivalent (FTE):**  166 hours
+- **Total Costs:** 9960 USD
 
 ### Milestone 1 Hide and show the addresses in network
 
-- **Estimated duration:** 2 days
+- **Estimated duration:** 8 days
 - **FTE:** 16h
 - **Costs:** 960 USD
 
@@ -93,7 +93,7 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 
 ### Milestone 2 Implement group assignation for accounts
 
-- **Estimated duration:** 9 days
+- **Estimated duration:** 36 days
 - **FTE:**  72h
 - **Costs:** 4320 USD
 
@@ -108,9 +108,9 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 
 ### Milestone 3 Implement privacy level
 
-- **Estimated duration:** 4 days
-- **FTE:**  32h
-- **Costs:** 1920 USD
+- **Estimated duration:** 16 days
+- **FTE:**  36h
+- **Costs:** 2160 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -123,7 +123,7 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 
 ### Milestone 4 Define an account as hidded
 
-- **Estimated duration:** 2 days
+- **Estimated duration:** 8 days
 - **FTE:**  16h
 - **Costs:** 960 USD
 
@@ -132,35 +132,34 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how an account can be set as hidden in GUI, how the user can show the hidden accounts and can reset this property to make an account visible again. |
 | 0c. | Testing Guide | Setting the account visibility will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. The testing will cover that some accounts from account list will be randomly set as hidden and those are not visible in the gui. This settings shall be saved, so after reset of GUI, the hidden accounts are still invisible |
-| 1. | Override group property for account visibility in GUI | Default value for hidden account is false. If the user changes the account visibility in account menu  the visibility of an account gui will be changed. ![Account Menu](https://i.imgur.com/ckyhjbm.png) |  
+| 1. | Override group property for account visibility in GUI | Default value for hidden account is false. If the user sets an account as hidden, the account will be immediately removed in gui. ![Account Menu](https://i.imgur.com/ckyhjbm.png) |  
 | 2. | Hide/Show hidden accounts | In the privacy menu, the hidden accounts can be made visible and their properties can be editted ![Privacy Menu](https://i.imgur.com/ckyhjbm.png) |  
 
 
-### Milestone 5 Set privacy level using URL
+### Milestone 5 Set privacy level using an URL
 
-- **Estimated duration:** 2 days
+- **Estimated duration:** 8 days
 - **FTE:**  16h
 - **Costs:** 960 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how an url can change the privacy level. |
-| 0c. | Testing Guide | TBD |  
-| 1. | TBD | TBD |  
+| 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains, how an URL can change the privacy level. |
+| 0c. | Testing Guide | Setting the privacy level using an URL will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. In the tests, the privacy level will be set on at least 3 different values and the three properties of privacy concept: visibility of accounts, addresses in gui and addresses in network will be checked. |  
+| 1. | Set privacy level using an URL | The extension already features an access control to specific URLs. To add on that, the extension will switch to a defined privacy level when entering an URL. |  
 
 ### Milestone 6 Add i18n for Spanish and German
 
-- **Estimated duration:** 1 day
+- **Estimated duration:** 4 days
 - **FTE:**  8h
 - **Costs:** 480 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how an url can change the privacy level. |
-| 0c. | Testing Guide | TBD |  
-| 1. | TBD | TBD |  
+| 0b. | Testing Guide | All translatable GUI elements will be checked in GUI for all new languages manually |  
+| 1. | Add spanish and german GUI i18n | I will translate current GUI elements and all translatable (t<string>) elements in German and Spanish. All translations will be reviewed by native speakers (German: native Germany, Spanish: native Argentinian) |  
 
 
 ## Additional Information :heavy_plus_sign:
