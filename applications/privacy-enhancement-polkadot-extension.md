@@ -78,7 +78,7 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 - **Full-Time Equivalent (FTE):**  166 hours
 - **Total Costs:** 9960 USD
 
-### Milestone 1 Hide and show the addresses in network
+### Milestone 1 Hide and show the accounts in network
 
 - **Estimated duration:** 8 days
 - **FTE:** 16h
@@ -87,9 +87,9 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can hide and show all addresses using a menu entry. |
-| 0c. | Testing Guide | Hiding and showing addresses in network will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended.|
-| 1. | GUI Menu | I will create a privacy menu, which contains two menu items to hide and show all addresses in network. Example: ![Privacy Menu](https://i.imgur.com/ckyhjbm.png) |  
+| 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can hide and show all accounts using a menu entry. |
+| 0c. | Testing Guide | Hiding and showing accounts in network will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended.|
+| 1. | GUI Menu | I will create a privacy menu, which contains two menu items to hide and show all accounts in network. Example: ![Privacy Menu](https://i.imgur.com/bOqR0c3.png) |  
 
 ### Milestone 2 Implement group assignation for accounts
 
@@ -102,8 +102,8 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how a group is created, renamed and an account can be assigned to this group. Furthermore, the override order of accounts network visibility will described, so that the user know exactly how to control the network visibility |
 | 0c. | Testing Guide | Creating, renaming and association of accounts to groups will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended.|
-| 1. | Create and rename groups | After first installation of extension, there is no existing groups. Open the groups menu. Add a new group. A group shall be automatically selected, if it is created. Test if renaming and removing of groups works. Go to address properties menu and assign an account to this group. Export and import the account, to check if the group assignment of an account can be saved. Change the three visibility properties for a group: "Account visibility in GUI", "Address visibility in GUI" and "Address visibility in network". Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Groups Menu](https://i.imgur.com/sZ9gwes.png) |  
-| 2. | Remember groups and group associations of an account |  Export and import the account, to check if the group assignment of an account can be saved. Change the "Address visibility in network". Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Account Menu](https://i.imgur.com/a39ItOm.png)|  
+| 1. | Create and rename groups | After first installation of extension, there is no existing groups. Open the groups menu. Add a new group. A group shall be automatically selected, if it is created. Test it, if renaming and removing of groups works. Go to address properties menu and assign an account to this group. Export and import the account, to check if the group assignment of an account can be saved. Change the both visibility properties for a group: "Account visibility in GUI" and "Account visibility in network". Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Groups Menu](https://i.imgur.com/iG4hg1A.png) |  
+| 2. | Remember groups and group associations of an account |  Export and import the account, to check if the group assignment of an account can be saved. Change the account visibility in network and GUI. Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Account Menu](https://i.imgur.com/a39ItOm.png)|  
 | 4. | Override account network visibility |  If an account is assigned to a group with higher privacy level, current network visibility will be taken from group. It shall be decided, if the user can override the network visisbility of the group for a single account.  |  
 
 ### Milestone 3 Implement privacy level
@@ -117,8 +117,8 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how the privacy level is associated to a group and the privacy level can be set using privacy menu in GUI. |
 | 0c. | Testing Guide | Setting the privacy level will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. The testing will cover all 3 three new properties of an account (address visibility in network, address visibility in GUI, account visibility in GUI). |
-| 1. | Set privacy level | Default value for privacy level is 1. If the user changes the privacy level in privacy menu  the visibility of addresses in network will be change. ![Privacy Menu](https://i.imgur.com/ckyhjbm.png)|  
-| 2. | GUI privacy |  Add 2 another properties: "account visibility in GUI" and "address visibility in GUI" based on the group property "address visibility in network" |  
+| 1. | Set privacy level | Privacy level can be changed in gui and defined as an enum : "low", "medium", "high". Default value for privacy level is "low". |  
+| 2. | Change privacy |  If the user changes the privacy level in privacy menu, the visibility of accounts in network and gui will be changed based on the group properties. ![Privacy Menu](https://i.imgur.com/bOqR0c3.png) |  
 
 
 ### Milestone 4 Define an account as hidded
@@ -132,8 +132,8 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how an account can be set as hidden in GUI, how the user can show the hidden accounts and can reset this property to make an account visible again. |
 | 0c. | Testing Guide | Setting the account visibility will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. The testing will cover that some accounts from account list will be randomly set as hidden and those are not visible in the gui. This settings shall be saved, so after reset of GUI, the hidden accounts are still invisible |
-| 1. | Override group property for account visibility in GUI | Default value for hidden account is false. If the user sets an account as hidden, the account will be immediately removed in gui. ![Account Menu](https://i.imgur.com/ckyhjbm.png) |  
-| 2. | Hide/Show hidden accounts | In the privacy menu, the hidden accounts can be made visible and their properties can be editted ![Privacy Menu](https://i.imgur.com/ckyhjbm.png) |  
+| 1. | Override group property for account visibility in GUI | Default value for hidden account is false. If the user sets an account as hidden, this account will be immediately removed in gui. ![Account Menu](https://i.imgur.com/a39ItOm.png) |  
+| 2. | Hide/Show hidden accounts | In the privacy menu, the hidden accounts can be made visible and their visibility can be resetted. This feature shows and hides account as hidden files in Windows OS. A hidden account is not visibile unless all hidden files are shown. ![Privacy Menu](https://i.imgur.com/bOqR0c3.png) |  
 
 
 ### Milestone 5 Set privacy level using an URL
