@@ -5,6 +5,7 @@
 - **Payment Address:** 0x1596525C44f68b45CDd53db49b03A390e2687331 (USDC)
 - **Level:** 2
 
+
 ## Project Overview :page_facing_up:
 
 Verida will bring single-sign on, decentralized identities, messaging and private data storage to the Polkadot ecosystem.
