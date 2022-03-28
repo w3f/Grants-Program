@@ -54,9 +54,9 @@ As described in the [RFP](https://github.com/w3f/Grants-Program/blob/master/rfps
 
 ## Development Status :open_book:
 
-Feasibility for development environment and an example for hiding the addresses in gui using an existing button: https://imgur.com/a/qsfhD0z
+Feasibility for development environment and an example for hiding the addresses in gui using an existing button: https://imgur.com/a/qsfhD0z. GUI mock-ups are added in milestones
 
-The GUI modifications are done to generate GUI wireframes. The screenshots of those wireframes are added in each specification in milestones. The new features rely heavily on privacy concept, which kept as simple as possible, so that the user only have to set a privacy level to change the visibility of accounts and addresses in GUI and also the accounts in network. If this solution is not sufficient, privacy level can be splittet into two different privacy levels; the GUI privacy and network privacy. This can be decided by grant committee and the concept will be adjusted without changes in "estimated duration" and FTE.
+The GUI modifications are done to generate GUI wireframes. The screenshots of those wireframes are added in each specification in milestones. The new features rely heavily on privacy concept, which kept as simple as possible, so that the user only have to set a privacy level to change the visibility of accounts in GUI and in network. If this solution is not sufficient, privacy level can be splittet into two different privacy levels; the GUI privacy and network privacy. This can be decided by grant committee and the concept will be adjusted without changes in "estimated duration" and FTE.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -102,7 +102,7 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how a group is created, renamed and an account can be assigned to this group. Furthermore, the override order of accounts network visibility will described, so that the user know exactly how to control the network visibility |
 | 0c. | Testing Guide | Creating, renaming and association of accounts to groups will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended.|
-| 1. | Create and rename groups | After first installation of extension, there is no existing groups. Open the groups menu. Add a new group. A group shall be automatically selected, if it is created. Test it, if renaming and removing of groups works. Go to address properties menu and assign an account to this group. Export and import the account, to check if the group assignment of an account can be saved. Change the both visibility properties for a group: "Account visibility in GUI" and "Account visibility in network". Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Groups Menu](https://i.imgur.com/iG4hg1A.png) |  
+| 1. | Create and rename groups | After first installation of extension, there is no existing groups. Open the groups menu. Add a new group. A group shall be automatically selected, if it is created. Test it, if renaming and removing of groups works. Go to account properties menu and assign an account to this group. Export and import the account, to check if the group assignment of an account can be saved. Change the both visibility properties for a group: "Account visibility in GUI" and "Account visibility in network". Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Groups Menu](https://i.imgur.com/iG4hg1A.png) |  
 | 2. | Remember groups and group associations of an account |  Export and import the account, to check if the group assignment of an account can be saved. Change the account visibility in network and GUI. Change the privacy level in privacy menu and see the changes. Test cases will be added after approval. ![Account Menu](https://i.imgur.com/a39ItOm.png)|  
 | 4. | Override account network visibility |  If an account is assigned to a group with higher privacy level, current network visibility will be taken from group. It shall be decided, if the user can override the network visisbility of the group for a single account.  |  
 
@@ -116,7 +116,7 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains how the privacy level is associated to a group and the privacy level can be set using privacy menu in GUI. |
-| 0c. | Testing Guide | Setting the privacy level will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. The testing will cover all 3 three new properties of an account (address visibility in network, address visibility in GUI, account visibility in GUI). |
+| 0c. | Testing Guide | Setting the privacy level will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. The testing will cover both new properties of an account (visibility in network and in GUI). |
 | 1. | Set privacy level | Privacy level can be changed in gui and defined as an enum : "low", "medium", "high". Default value for privacy level is "low". |  
 | 2. | Change privacy |  If the user changes the privacy level in privacy menu, the visibility of accounts in network and gui will be changed based on the group properties. ![Privacy Menu](https://i.imgur.com/bOqR0c3.png) |  
 
@@ -146,7 +146,7 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | I will provide both **inline documentation** of the code and a basic **tutorial** that explains, how an URL can change the privacy level. |
-| 0c. | Testing Guide | Setting the privacy level using an URL will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. In the tests, the privacy level will be set on at least 3 different values and the three properties of privacy concept: visibility of accounts, addresses in gui and addresses in network will be checked. |  
+| 0c. | Testing Guide | Setting the privacy level using an URL will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. If a testsuit already exists, this test environment will be extended. In the tests, the privacy level will be set on 3 different values (low, medium, high) and both properties of privacy concept: visibility of accounts in gui and network will be checked. |  
 | 1. | Set privacy level using an URL | The extension already features an access control to specific URLs. To add on that, the extension will switch to a defined privacy level when entering an URL. |  
 
 ### Milestone 6 Add i18n for Spanish and German
@@ -166,18 +166,17 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 
 The solution for the milestones above is based on four new properties of accounts: 
 - Group membership
-- Visibility properties: "Account visibility in GUI", "Address visibility in GUI" and "Address visibility in network"
-- Privacy level, which affects the three visibilities
-- Global Account Visibility
-- Global Address Visibility
+- Visibility properties: "Account visibility in GUI" and "Account visibility in network"
+- Privacy level, which affects both visibilities
+- Global Account Visibility (overrides groups visibility)
 
 The main GUI will show an account only if an account is:
 - Not hidden or ( Hidden but Hidden accounts shall be shown )  AND
 - Group Privacy Level of the account is lower than user-defined privacy level
 
-The main GUI will show an account address only if an account has:
-- (Group Address Visibility is set on TRUE in privacy menu AND Global address Visibility is set on FALSE by user) OR
-- Global address Visibility is set on TRUE by user
+The main GUI will provide an account to network only if an account has:
+- (Group Account Network Visibility is set on TRUE in privacy menu AND Global Network Visibility is set on FALSE by user) OR
+- Global Account Visibility is set on TRUE by user
 
 
 **How did you hear about the Grants Program?** : https://github.com/jonasW3F posted it on reddit
