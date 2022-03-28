@@ -126,7 +126,7 @@ Once complete, this integration opens up the possibilities for future capabiliti
 ### Contact
 
 - **Contact Name:** Yolanda Sam / Chris Were
-- **Contact Email:** yolanda@verida.io / chris@verida.io
+- **Contact Email:** hello@verida.io
 - **Website:** https://www.verida.io/
 
 ### Legal Structure
