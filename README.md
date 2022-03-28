@@ -137,7 +137,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
 
 - **Target:** Companies/foundations with a proven track record
 - **Amount:** Unlimited
-- **Requirements:** Pitch call + 5 approvals (for > $100k Web3 Foundation Council approval)
+- **Requirements:** Pitch call + 5 approvals (for >$100k: Web3 Foundation Council approval)
 - **Benefits:** All of the above + VC introductions
 
 ## :pencil: Process
