@@ -5,12 +5,12 @@
 - [:grey_question: What is an RFP?](#grey_question-what-is-an-rfp)
 - [:scroll: List of current RFPs](#scroll-list-of-current-rfps)
   - [Availability and Validity - Network Topology](#availability-and-validity---network-topology)
+  - [Anti-Collusion Infrastructure](#anti-collusion-infrastructure)
   - [e-Passport ZK Validation](#e-passport-zk-validation)
   - [RFP: Substrate Identity Directory](#rfp-substrate-identity-directory)
   - [ink!/pallet/solidity performance benchmarking](#inkpalletsolidity-performance-benchmarking)
   - [DOT & KSM mixer](#dot--ksm-mixer)
   - [Multi-chain Block Explorer](#multi-chain-block-explorer)
-  - [On-chain Quadratic Funding](#on-chain-quadratic-funding)
   - [PHP Substrate API](#php-substrate-api)
   - [Polkadot Collator Setup](#polkadot-collator-setup)
   - [Privacy Enhancement for Polkadot Extension](#privacy-enhancement-for-polkadot-extension)
@@ -60,7 +60,24 @@ The full mechanism is described in [the host specification](https://github.com/w
 
 
 ----
+###  Anti-Collusion Infrastructure
 
+
+- Published: 2021-07-20
+
+
+- [:arrow_right: anti-collusion infrastructure.md](./anti-collusion infrastructure.md)
+
+
+- **Proposer:** [Noc2](https://github.com/Noc2)
+
+
+#### Project Description :page_facing_up:
+
+A lot of blockchain applications that involve some kind of voting, like on-chain quadratic funding, can potentially be exploited via collusion and bribery (see [Vitalik’s post about collusion](https://vitalik.ca/general/2019/04/03/collusion.html)). Therefore, it’s important to design mechanisms that effectively prevent any kind of on-chain collusion or at least make it more difficult. The goal of this RFP is to encourage people to try to research and come up with their own solutions or to implement existing solutions, like [Minimal anti-collusion infrastructure](https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413) as a substrate pallet or ink! smart contract.  
+
+
+----
 
 
 ### e-Passport ZK Validation
@@ -177,28 +194,6 @@ As parachains become an integral part of the Polkadot and Kusama ecosystems, a c
 Some of the functionality that should be covered as part of the development: ...
 
 
-
-
-----
-
-
-### On-chain Quadratic Funding
-
-
-- Published: 2021-07-20
-
-
-- [:arrow_right: on-chain-quadratic-funding.md](./on-chain-quadratic-funding.md)
-
-
-- **Proposer:** [Noc2](https://github.com/Noc2)
-
-
-#### Project Description :page_facing_up:
-
-CLR, short for [Constrained Liberal Radicalism algorithm](https://blogchains.org/wp-content/uploads/sites/4/2019/04/SSRN-id3243656.pdf), commonly called quadratic funding (QF), is a way to efficiently fund projects in the Web3 ecosystem. The way it works is that users contribute directly to projects which they value and in doing so, help the projects earn a share of a matching pool of funds. The *number* and amount of each contribution influences the total amount allocated to a project. This means even a small contribution is valuable and can result in a high matched amount.
-
-[Gitcoin](https://gitcoin.co/) is currently using this mechanism to successfully fund and support public goods. However, Gitcoin is centralized. The goal of this RFP is to develop a decentralized solution on top of [Substrate](https://github.com/paritytech/substrate), which can potentially be integrated into Kusama, Polkadot or any other Substrate-based chain as a pallet. The on-chain treasury could potentially sustainably fund the matching pool in the long-run. However, the Web3 Foundation would also be committed to fund a matching pool of the solution for initial test rounds.  ...
 
 
 ----
