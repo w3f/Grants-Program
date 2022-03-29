@@ -66,7 +66,7 @@ The full mechanism is described in [the host specification](https://github.com/w
 - Published: 2021-07-20
 
 
-- [:arrow_right: anti-collusion infrastructure.md](./anti-collusion infrastructure.md)
+- [:arrow_right: anti-collusion infrastructure.md](./anti-collusion-infrastructure.md)
 
 
 - **Proposer:** [Noc2](https://github.com/Noc2)
