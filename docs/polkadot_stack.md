@@ -159,7 +159,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 
 | Components | Existing projects | Potentially interesting projects
 |-|-|-
-| Secure validator setup | [Trutzone-based HSM](https://github.com/ZondaX), [W3F Polkadot Validator Setup](https://github.com/w3f/polkadot-validator-setup)  
+| Secure validator setup | [Polkadot Validation Node Ansible Setup](https://github.com/polkachu/polkadot-validator), [Trutzone-based HSM](https://github.com/ZondaX), [W3F Polkadot Validator Setup](https://github.com/w3f/polkadot-validator-setup)  
 | High availability setup | [Archipel](https://github.com/luguslabs/archipel), [Polkadot Failover Mechanism](https://github.com/protofire/polkadot-failover-mechanism), [Open Node Framework](https://github.com/Tenet-X/open-node)
 | Load Balanced Endpoints | [terragrunt-polkadot](https://github.com/insight-w3f/terragrunt-polkadot)
 | Deployment Tools| [Polkadot Package Manager](https://github.com/Blockdaemon/bpm-sdk), [PolkaHub](https://github.com/akropolisio/polkahub-monorepo), [Avado](https://github.com/AvadoDServer/AVADO-DNP-Polkadot-custom), [Polkadot Deployer](https://github.com/w3f/polkadot-deployer)
