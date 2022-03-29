@@ -111,7 +111,7 @@ His technical skills include ML, AI, Blockchain, .NET Core Framework, Azure DevO
 **Shreyas Kura Subramanya**  
 Shreyas is an experienced software developer with great zeal in implementing solutions in the software domain. He is skilled in Blockchain, smart contracts, ethical hacking, Rust and Golang. He currently is the Development Team Lead at HugoByte AI Labs and is instrumental in driving the team to great success. He obtained his Bachelor's degree focused in Computer Science from Bapuji Institute of Engineering & Technology, Davanagere. 
  
-**Shanith K K**
+**Shanith K K**  
 Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in Software Engineering, he is a diligent and industrious technocrat. He has published a paper titled on "Segmentation: A review" in JETIR (JETIRCG06006). He has worked on machine learning using python programming. He has substantial and working knowledge about programming languages like Rust, Python, C, C++, and he is currently working on blockchain development in HugoByte AI Labs. He has an insatiable passion for coding and is exceptionally good at problem-solving.
 
 ### Team Code Repos
