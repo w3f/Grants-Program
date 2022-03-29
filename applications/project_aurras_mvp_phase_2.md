@@ -83,6 +83,9 @@ As a part of the Web 3 Community and Ecosystem
 * Muhammed Irfan K - CTO & Co-Founder - HugoByte AI Labs
 * Hanumantappa Budihal - CIO, Project Manager & Solutions Architect, DevOps - HugoByte AI Labs	
 * Shreyas Kura Subramanya - Development Team Lead - HugoByte AI Labs
+* Shanith KK - Systems Developer - HugoByte AI Labs
+* Amogha Sudarshan - Project Analyst - HugoByte AI Labs
+* Immanuel Stanley - Junior Blockchain Tester - HugoByte AI Labs
 
 ### Contact
 
@@ -108,6 +111,9 @@ His technical skills include ML, AI ,Blockchain, .NET Core Framework, Azure DevO
 **Shreyas Kura Subramanya**  
 Shreyas is an experienced software developer with great zeal in implementing solutions in the software domain. He is skilled in Blockchain, smart contracts, ethical hacking, RUST and GOlang. He currently is the Development Team Lead at HugoByte AI Labs and is instrumental in driving the team to great success. He obtained his Bachelor's degree focused in Computer Science from Bapuji Institute of Engineering & Technology, Davanagere. 
  
+**Shanith KK**
+Shanith KK is a Software Engineer and a Web developer. Shanith graduated with M.Sc Software Engineering, and he is an energetic and hardworking person. He has published a paper titled on "Segmentation: A review" in jetir (JETIRCG06006). He was worked on machine learning using python programming for his final year project. Also, he has substantial knowledge about programming languages like Rust, Python, C, C++, and he is currently working on blockchain development in HugoByte AI Labs. He has an insatiable passion for coding and exceptionally good at problem-solving. He is eagerly waiting for a platform to highlight his skill-set.
+
 ### Team Code Repos
 
 - https://github.com/hugobyte
@@ -121,6 +127,9 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 - https://www.linkedin.com/in/muhammed-irfan-k
 - https://www.linkedin.com/in/hanumantappa-budihal/
 - https://www.linkedin.com/in/shreyas-ks/
+- https://www.linkedin.com/in/shanith-k-k-09378988/
+- https://www.linkedin.com/in/amogha-sudarshan/
+- https://www.linkedin.com/in/immanuel-stanley-436456218/
 
 ## Development Status :open_book:
 
@@ -203,6 +212,7 @@ Shreyas is an experienced software developer with great zeal in implementing sol
 | 2b. | Reward OpenWhisk actions | We will create OpenWhisk actions to index the validator details to the Kafka topic that will invoke the validator payout workflow | Users can utilise the pre-deployed OpenWhisk actions to validate the validator ID and check claims for the particular validator. |
 | 2c. | Claim OpenWhisk actions | We will create a set of OpenWhisk actions to carry out the tasks of claiming the validator rewards to the provided wallet as defined in the workflow | Users can claim Polkadot payout rewards using the registered workflow. |
 | 2d. | Polkadot API Derive macro for workflow task | We will create derive macros that will provide the necessary functionalities for the task struct to perform RPC calls | Users can facilitate the execution of tasks that utilize the derive macro to perform RPC calls. |
+| 3. | Video Tutorial | We will create a set of video tutorials to guide the users to use this MVP | |
 
 
 ## Future Plans
