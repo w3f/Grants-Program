@@ -70,7 +70,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | CLI Wallet | [Subwallet](https://github.com/yxf/subwallet), [Proxy-hot-wallet](https://github.com/canontech/proxy-hot-wallet)
 | Multisignature Wallets| [Subscan Multisig UI - React](https://github.com/itering/subscan-multisig-react), [Subscan Multisig UI](https://github.com/itering/subscan-multisig-ui) |
 | Hardware Wallets | [Ledger Polkadot](https://github.com/ZondaX/ledger-polkadot), [Ledger Kusama](https://github.com/Zondax/ledger-kusama), [NGRAVE](https://ngrave.io/) | Trezor
-| Block Explorers | [Polkascan](https://github.com/polkascan), [Polkastats](https://github.com/Colm3na), [Subscan](https://github.com/itering/subscan) | Mempool focused explorer (including parachain transaction)
+| Block Explorers | [Polkascan](https://github.com/polkascan), [Polkastats](https://github.com/Colm3na), [Subscan](https://github.com/itering/subscan), [Statescan](https://github.com/opensquare-network/statescan) | Mempool focused explorer (including parachain transaction)
 | Validator Dashboards | [Polkacube](https://github.com/hashquark-io), [YieldScan](https://github.com/buidl-labs/YieldScan), [Hubble](https://github.com/figment-networks/hubble/tree/master/app/controllers/polkadot)
 | Node Explorers | [Polkadot Node Explorer](https://github.com/protos-research/polkadot-node-explorer)
 | NFT Explorer | [NFT Explorer for Kusama & Polkadot](https://github.com/kodadot/nft-gallery)
