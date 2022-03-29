@@ -2,7 +2,7 @@
 
 - **Project Name:** Afloat Tax Infrastructure Polkadot Integration
 - **Team Name:** Afloat Inc.
-- **Payment Address:** BTC Louise to provide a BTC address
+- **Payment Address:** bc1q0aghk8qufzwpmrp5nfyu9r7dh3yynmphk7rhjj
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
