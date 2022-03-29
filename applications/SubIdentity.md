@@ -134,13 +134,13 @@ A basic application with a responsive design is developed which supports queryin
 | 3. | Implement UI for search and list view | Build UI with Vue.js |  
 | 4. | Implement UI for detailed identity view| Build UI with Vue.js | 
 
-### Milestone 2 - Offline mode and enable direct interaction
+### Milestone 2 - Offline mode and performance improvement
 
 - **Estimated Duration:** 1 month
 - **FTE:**  3
 - **Costs:** 16500 DAI
 
- A user can query identities from Polkadot, Kusama or provide his own node endpoint. It is possible to directly interact with the underlying account by sending tokens to it. The application can be hosted on IPFS.
+ A user can query identities from Polkadot, Kusama or provide his own node endpoint. The application can be hosted on IPFS and a backend is developed in order to improve performance.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -150,17 +150,18 @@ A basic application with a responsive design is developed which supports queryin
 | 1. | Implement offline mode | Enable a user to connect to a local node and fetch identities from there |
 | 2. | Implement UI for node selection |  Enable a user to select the node from the UI |
 | 3. | Implement URL param logic | URL Parameters can specify which cards are visible and in which order |
-| 4. | Performance improvement | Focus on improving the web applications performance to maximize usability by enabling caching to IPFS if a user provides a pinata key; fetch from IPFS if it improves performance |
-| 5. | Implement logic for sending tokens| Implement logic to get balance of current account and make a transaction to displayed identity; consider transaction fees; use an open protocol (e.g. wallet connect) to establish a secure connection to a wallet |
-| 6. | Implement UI for sending tokens| Implement UI for sending tokens, including a button to trigger a transaction, an input field and a display of balances and fees | 
+| 4a. | Performance improvement | Focus on improving the web applications performance to maximize usability e.g. by storing fetched information from a local node to IPFS if a users pinata key was provided |
+| 4b. | Backend Development | Implement backend with e.g. Node.js to increase performance through indexing; Provide an API for frontend |
+| 4c. | Consume API | Use the provided API in frontend to increase performance |
 
-### Milestone 3 - Implementation of default plugins
+
+### Milestone 3 - Implementation of default plugins and direct interaction
 
 - **Estimated Duration:** 1 month
 - **FTE:**  3
 - **Costs:** 16500 DAI
 
-A flexible, expandable and component-based application is developed, that supports the following default plugins: basic info, governance, treasury and validator.  Manual and automated quality assurance is done.
+A flexible, expandable and component-based application is developed, that supports the following default plugins: basic info, governance, treasury and validator. It is possible to directly interact with the underlying account by sending tokens to it.  Manual and automated quality assurance is done.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -168,9 +169,12 @@ A flexible, expandable and component-based application is developed, that suppor
 | 0b. | Documentation | We will provide both **inline documentation** of the code and update the basic **tutorial** that explains how a user can use the application. |
 | 0c.	| Testing |	Core functions will be covered by unit tests as far as reasonably applicable to ensure functionality and robustness. In the documentation, we will describe how to run these tests. |
 | 0d.	| Article	| We will publish an article that explains what was done as part of the grant. |
-| 1. | Implement logic for default plugins | Implement logic to get information for default plugins governance, treasury and validator |
+| 1a. | Implement logic for default plugins - backend | Implement logic to get information for default plugins governance, treasury and validator on backend, provide API for frontend |
+| 1b. | Implement logic for default plugins - frontend | Implement logic to to get information for default plugins governance, treasury and validator; Consume provided API |
 | 2. | Implement components for displaying default plugins | Implement UI for displaying default plugins |
-| 3. | Quality Assurance | Manual and automated QA |
+| 3. | Implement logic for sending tokens| Implement logic to get balance of current account and make a transaction to displayed identity; consider transaction fees; use an open protocol (e.g. wallet connect) to establish a secure connection to a wallet |
+| 4. | Implement UI for sending tokens| Implement UI for sending tokens, including a button to trigger a transaction, an input field and a display of balances and fees | 
+| 5. | Quality Assurance | Manual and automated QA |
 
 ## Future Plans
 
