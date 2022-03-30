@@ -109,13 +109,13 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0. | License | Apache 2.0 |
-| 1. | Documentation | Provide documentation on the architecture of tDOT and flow diagrams of cross-chain minting process. |  
-| 2. | Substrate module: Stable Asset | The stable asset module will be enhanced with minter access control and minter cap functionalities. |  
-| 3. | Substrate module: Stable Asset Local Minter | The stable asset local minter module is deployed in the stable asset hosting parachain. It uses local method calls to mint stable asset. |
-| 4. | Substrate module: Stable Asset Remote Minter | The stable asset local minter module is deployed on parachains other than the stable asset hosting parachain. It relies on XCM v3 to mint stable asset remotely. Slippage control for remote minter is handled locally. Underlying assets used to mint stable asset remotely are locked until receiving XCM acknowledgement that stable asset is minted successfully. |
-| 5. | Testing | Provide comprehensive tests that covers both stable asset local minter and stable asset remote minter. Test for remote minter must cover the case the minting fails due to minter access or minter cap. The underlying asset used to mint remotely must return to the user. |
-| 6. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | Provide documentation on the architecture of tDOT and flow diagrams of cross-chain minting process. |  
+| 0c. | Testing | Provide comprehensive tests that covers both stable asset local minter and stable asset remote minter. Test for remote minter must cover the case the minting fails due to minter access or minter cap. The underlying asset used to mint remotely must return to the user. |
+| 0d. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
+| 1. | Substrate module: Stable Asset | The stable asset module will be enhanced with minter access control and minter cap functionalities. |  
+| 2. | Substrate module: Stable Asset Local Minter | The stable asset local minter module is deployed in the stable asset hosting parachain. It uses local method calls to mint stable asset. |
+| 3. | Substrate module: Stable Asset Remote Minter | The stable asset local minter module is deployed on parachains other than the stable asset hosting parachain. It relies on XCM v3 to mint stable asset remotely. Slippage control for remote minter is handled locally. Underlying assets used to mint stable asset remotely are locked until receiving XCM acknowledgement that stable asset is minted successfully. |
 
 ### Milestone 2 — Cross-Chain Redeem
 
@@ -125,12 +125,12 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0. | License | Apache 2.0 |
-| 1. | Documentation | Provide documentation on the architecture of tDOT and flow diagrams of cross-chain redeem process. |  
-| 2. | Substrate module: Stable Asset Local Minter | Proportion and single asset redeem are invoked in stable asset local minter which is deployed on the hosting parachain. If slippage fails on the receiving parachain, the locked stable asset is returned to the user.  |
-| 3. | Substrate module: Stable Asset Remote Minter | Multi asset redeem is invoked in stable asset remote minter which is not deployed on the hosting parachain. If slippage fails on the hosting parachain, the locked multi assets are returned to the user. |
-| 4. | Testing | Provide comprehensive tests that covers proportion, single and multi asset redeem.  |
-| 5. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | Provide documentation on the architecture of tDOT and flow diagrams of cross-chain redeem process. |  
+| 0c. | Testing | Provide comprehensive tests that covers proportion, single and multi asset redeem.  |
+| 0d. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
+| 1. | Substrate module: Stable Asset Local Minter | Proportion and single asset redeem are invoked in stable asset local minter which is deployed on the hosting parachain. If slippage fails on the receiving parachain, the locked stable asset is returned to the user.  |
+| 2. | Substrate module: Stable Asset Remote Minter | Multi asset redeem is invoked in stable asset remote minter which is not deployed on the hosting parachain. If slippage fails on the hosting parachain, the locked multi assets are returned to the user. |
 
 
 ### Milestone 3 — Cross-Chain Swap
@@ -141,11 +141,12 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0. | License | Apache 2.0 |
-| 1. | Documentation | Provide documentation on the architecture of tDOT and flow diagrams of cross-chain swap process. |  
-| 2. | Substrate module: Stable Asset Remote Minter | Swap can be seen as a combination of cross-chain mint and single asset redeem. Stable asset remote minter will consolidate the process and handles slippage. |
-| 3. | Testing | Provide comprehensive tests that covers cross-chain swap process. The test must cover the case when there are insufficient liquidity on target parachain, or slippage fails.  |
-| 4. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | Provide documentation on the architecture of tDOT and flow diagrams of cross-chain swap process. | 
+| 0c. | Testing | Provide comprehensive tests that covers cross-chain swap process. The test must cover the case when there are insufficient liquidity on target parachain, or slippage fails.  |
+| 0d. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
+| 0e. | Article | We will publish an article that explains the architecture of tDOT and how does cross-chain mint/redeem/swap works. The article will discuss potential attack vectors of tDOT and how does tDOT addresses it. |
+| 1. | Substrate module: Stable Asset Remote Minter | Swap can be seen as a combination of cross-chain mint and single asset redeem. Stable asset remote minter will consolidate the process and handles slippage. |
 
 ### Milestone 4 — Cross-Chain Fees and Yield Hanlding
 
@@ -155,12 +156,13 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0. | License | Apache 2.0 |
-| 1. | Documentation | Provide documentation on the how the fees and yields are handled across multiple parachains. |  
-| 2. | Substrate module: Stable Asset | The Stable Asset module will bookkeep all fees and yields locally until an explicit collect method is invoked. |
-| 3. | Substrate module: Stable Asset Minters | The Stable Asset Local/Remote minters module will mint fees and yield explicitly. |
-| 4. | Testing | Comprehensive tests that covers the Stable Asset Substrate modules on fees and yields handling. |
-| 5. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | Provide documentation on the how the fees and yields are handled across multiple parachains. |  
+| 0c. | Testing | Comprehensive tests that covers the Stable Asset Substrate modules on fees and yields handling. |
+| 0d. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
+| 0e. | Article | We will publish an article that explains why and how tDOT maintains its peg to DOT, despite there are multiple forms of underlying DOT assets. |
+| 1. | Substrate module: Stable Asset | The Stable Asset module will bookkeep all fees and yields locally until an explicit collect method is invoked. |
+| 2. | Substrate module: Stable Asset Minters | The Stable Asset Local/Remote minters module will mint fees and yield explicitly. |
 
 
 ## Future Plans
