@@ -52,13 +52,13 @@ Since each xDOT-DOT pool can maintain pegging of its own pool derivative, it's a
 
 ### Ecosystem Fit
 
-tDOT will be minted on Acala since it's the DeFi hub in the Polkadot ecosystem. Acala provides both staked DOT, namely LDOT and crowdloan DOT, namely LCDOT which are both mainstream DOT assets. LCDOT-DOT and LDOT-DOT will be the first two xDOT-DOT pools as well as the first two minters of tDOT. tDOT unifies all DOT liquidity on Acala and it can be used in Acala's native DeFi applications.
+tDOT will be minted on a single parachain which is the hosting parachain for tDOT. It can be migrated to a different parachain or even a dedicated parachain. The hosting parachain can deploy its own xDOT-DOT pools so that tDOT is minted locally.
 
-Parachains such as Parallel can deploy xDOT-DOT pools on their own chains and mint tDOT on Acala. Their benefits include:
+Any other parachains such as Acala and Parallel which have their own native DOT derivatives can deploy xDOT-DOT pools on their own chains and mint tDOT on the hosting chain as remote minters. Their benefits include:
 
 * The xDOT-DOT pool provides a stable swap between xDOT and DOT;
 * The xDOT-DOT liquidity is locked in its original chain while minting tDOT so the parachains can retain its TVL;
-* The minted tDOT can be bridged to other chains other than Acala. For example, the minted tDOT can be bridged back to Parallel and be used as collateral of Parallel's lending applicaiton.
+* The minted tDOT can be bridged to other chains other than the hosting parachain. For example, the minted tDOT can be bridged back to Parallel and be used as collateral of Parallel's lending applicaiton.
 
 For the whole Polkadot network, a standardized DOT derivative can service the entire Polkadot ecosystem; it can unify all forms of DOT liquidity and unleash maximum usability for DOT across Parachains.
 
@@ -101,36 +101,68 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 - **Full-Time Equivalent (FTE):**  2
 - **Total Costs:** 20,000 DAI
 
-### Milestone 1 — Cross-Chain Mint and Burn
+### Milestone 1 — Cross-Chain Mint
 
-- **Estimated duration:** 2 weeks
+- **Estimated duration:** 1 week
 - **FTE:**  2
-- **Costs:** 10,000 DAI
+- **Costs:** 5,000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0. | License | Apache 2.0 |
-| 1. | Documentation | Provide documentation on the architecture of tDOT and flow diagrams of cross-chain minting and burning process |  
-| 2. | Substrate module: Tokens | We will enhance the tokens modules with minter access control and minter cap functionalities. |  
-| 3. | Substrate module: Stable Asset | We will enhance the stable asset module with cross-chain minting and burning functionalities. |  
-| 4. | Testing | Comprehensive tests that covers the tokens and stable asset Substrate modules. |
+| 1. | Documentation | Provide documentation on the architecture of tDOT and flow diagrams of cross-chain minting process. |  
+| 2. | Substrate module: Stable Asset | The stable asset module will be enhanced with minter access control and minter cap functionalities. |  
+| 3. | Substrate module: Stable Asset Local Minter | The stable asset local minter module is deployed in the stable asset hosting parachain. It uses local method calls to mint stable asset. |
+| 4. | Substrate module: Stable Asset Remote Minter | The stable asset local minter module is deployed on parachains other than the stable asset hosting parachain. It relies on XCM v3 to mint stable asset remotely. Slippage control for remote minter is handled locally. Underlying assets used to mint stable asset remotely are locked until receiving XCM acknowledgement that stable asset is minted successfully. |
+| 5. | Testing | Provide comprehensive tests that covers both stable asset local minter and stable asset remote minter. Test for remote minter must cover the case the minting fails due to minter access or minter cap. The underlying asset used to mint remotely must return to the user. |
+| 6. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
+
+### Milestone 2 — Cross-Chain Redeem
+
+- **Estimated duration:** 1 weeks
+- **FTE:**  2
+- **Costs:** 5,000 DAI
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0. | License | Apache 2.0 |
+| 1. | Documentation | Provide documentation on the architecture of tDOT and flow diagrams of cross-chain redeem process. |  
+| 2. | Substrate module: Stable Asset Local Minter | Proportion and single asset redeem are invoked in stable asset local minter which is deployed on the hosting parachain. If slippage fails on the receiving parachain, the locked stable asset is returned to the user.  |
+| 3. | Substrate module: Stable Asset Remote Minter | Multi asset redeem is invoked in stable asset remote minter which is not deployed on the hosting parachain. If slippage fails on the hosting parachain, the locked multi assets are returned to the user. |
+| 4. | Testing | Provide comprehensive tests that covers proportion, single and multi asset redeem.  |
 | 5. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
 
-### Milestone 2 Example — Cross-Chain Fees and Yield Hanlding
 
-- **Estimated Duration:** 2 weeks
+### Milestone 3 — Cross-Chain Swap
+
+- **Estimated duration:** 1 week
 - **FTE:**  2
-- **Costs:** 10,000 USD
+- **Costs:** 5,000 DAI
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0. | License | Apache 2.0 |
-| 1. | Documentation | Provide documentation on the how the fees and yields are handled across multiple chains |  
-| 2. | Substrate module: Stable Asset | We will enhance the stable asset module with cross-chain fees and yields handling functionalities. |  
-| 3. | Testing | Comprehensive tests that covers the stable asset Substrate modules. |
+| 1. | Documentation | Provide documentation on the architecture of tDOT and flow diagrams of cross-chain swap process. |  
+| 2. | Substrate module: Stable Asset Remote Minter | Swap can be seen as a combination of cross-chain mint and single asset redeem. Stable asset remote minter will consolidate the process and handles slippage. |
+| 3. | Testing | Provide comprehensive tests that covers cross-chain swap process. The test must cover the case when there are insufficient liquidity on target parachain, or slippage fails.  |
 | 4. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
+
+### Milestone 4 — Cross-Chain Fees and Yield Hanlding
+
+- **Estimated Duration:** 1 week
+- **FTE:**  2
+- **Costs:** 5,000 DAI
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0. | License | Apache 2.0 |
+| 1. | Documentation | Provide documentation on the how the fees and yields are handled across multiple parachains. |  
+| 2. | Substrate module: Stable Asset | The Stable Asset module will bookkeep all fees and yields locally until an explicit collect method is invoked. |
+| 3. | Substrate module: Stable Asset Minters | The Stable Asset Local/Remote minters module will mint fees and yield explicitly. |
+| 4. | Testing | Comprehensive tests that covers the Stable Asset Substrate modules on fees and yields handling. |
+| 5. | Docker | Provide a Docker image with Substrate chain that demonstrate this project. |
 
 
 ## Future Plans
 
-We will upgrade taiKSM to tKSM with similar architecture shortly after the launch of tDOT. Since Karura does not have crowdloan KSM yet, tKSM will mostly focus on KSM assets on other parachains such as Bifrost.
+We will upgrade taiKSM to tKSM with similar architecture shortly after the launch of tDOT. 
