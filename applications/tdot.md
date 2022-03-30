@@ -7,7 +7,7 @@
 
 ## Project Overview :page_facing_up:
 
-This application is a follow-up of the Stable Asset grant.
+This application is a follow-up of the [Stable Asset grant](https://github.com/w3f/Grants-Program/blob/master/applications/stable-asset.md).
 
 ### Overview
 
