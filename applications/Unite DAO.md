@@ -242,6 +242,22 @@ In the link below, you will find the conversation between Unite DAO Core Team me
 
 
 
+Key takeaways from the video are:
+
+- Standards should be Public Goods.
+
+- Right now, building standards cost a fortune and take 1-5 years.
+
+- Right now, standards are built by experts (corporations who don't care about standards and don't want to use them).
+
+- Web3 needs standards: Metaverse, DeFi, NFT, Art, Music, Gaming, and many more. 
+
+- We will offer a way where coders, people who are building something, go to this Wikipedia for standards (Unite DAO) because we want to have them in the same place. I look for the standard, and if it's there, I can use it. If not - I can build it within the Unite DAO or look for someone in the Unite DAO community who would build the standard.
+
+- There are some standards that you need to pay if you want to use them. And we think it's wrong. Standards really should be Public Goods and open-source so everybody can use them.
+
+
+
 ## Development Roadmap :nut_and_bolt:
 
 
@@ -274,7 +290,7 @@ The in Detail Roadmap consists of these parts:
 
 In the Phase section, we also mark with yellow "-" when the task is expected to be done and a green box named "done" when the task is finished. 
 
-Community Team Member Art Kateiva is responsible for checking if everything is done on time.
+Community Team Member Art Kateiva and Operations Team Member Sandra is responsible for checking if everything is done on time.
 
 
 
@@ -284,7 +300,79 @@ Community Team Member Art Kateiva is responsible for checking if everything is d
 
 - **Total Estimated Duration:** 12 weeks until we launch Unite DAO, and then it's an ongoing evergreen project.
 - **Full-Time Equivalent (FTE):**  9
-- **Total Costs:** [You can check the total costs in this sheet.](https://docs.google.com/spreadsheets/d/1Cg38Fum1Wg95BH6savCjGpaUvO9Gst4TASexf-JjisM/edit#gid=1447454187)
+- **Total Costs:** We are asking for a 50,000.00 USD Grant, and we need this Grant for Milestone number 1 - 43,950.00 USD. [You can check the total costs in this sheet](https://docs.google.com/spreadsheets/d/1Cg38Fum1Wg95BH6savCjGpaUvO9Gst4TASexf-JjisM/edit#gid=1447454187) but our total costs right now are at 275,800.00 USD.
+
+
+
+### Milestone 1 — Phase 0 - Grants application
+
+- **Estimated duration:** 3 weeks 
+- **FTE:**  9
+- **Costs:** 43,950 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | DAO v1 | Deploy the DAO v1 - Start a DAO before Week 3. / Code - Start coding the Skill NFT (Phase 2). |
+| 2. | Documentation (GitHub) | Roadmap building - Build the Roadmap. / Expand GitHub - Fix Github. / Grant Applications - Prepare applications for Grants. |
+| 3. | Research | Partnerships - Search for partners. / Contributors pipeline - Make a list of Youtube Guests. |
+| 4. | Documentation (GitHub) | Short, Mid, Long term Goals - Work on Tokenomics of Unite DAO. |
+| 5. | Unite NFT | Generate ideas for Phase 1 - Start working on Unite NFT. |
+| 6. | Legal Documentation | Deploy Legal Docs into Github - Art will help Enrique to do it. |  
+| 7. | Operations Management | Research apps for DAO - Find apps that suits DAO developement. / Check - Check if all done on time. |
+
+
+
+### Milestone 2 — Phase 1 - Raising funds (Unite NFT)
+
+- **Estimated duration:** 3 weeks 
+- **FTE:**  9
+- **Costs:** 43,950 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Website & NFTs | Desgin & Code - Build website for Unite DAO. Build Unite NFTs. Sell Unite NFTs to raise funds. |
+| 2. | Documentation (Blog) | Marketing - Start creating the content. / Community Creation - Start interacting with the community. |
+| 3. | Partnerships | Partnerships - Search for partners. / Contributors pipeline - Make a list of Youtube Guests. |
+| 4. | Private Sale | Unite NFT Private sale - Take care of Private sale. / Treasury Bounties - Define how Bounties will work. / Coordination Working Group creation (v1) - v1 CWG creation. |
+| 5. | Unite NFT | Design & Features - Unite NFT design and features. / Launch an NFT - Launch Unite NFT. / Generate ideas for Phase 2 - Start working on Skill NFT MVP (Phase 2). |
+| 6. | Legal DAO | Consulting - Make sure Unite DAO is Legally compliant. |  
+| 7. | Operations Management | Research apps for DAO - Find apps that suits DAO developement. / Check - Check if all done on time. |
+
+
+
+### Milestone 3 — Phase 2 - Skill NFT MVP
+
+- **Estimated duration:** 3 weeks 
+- **FTE:**  9
+- **Costs:** 43,950 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | NFT Skills MVP | Design, Coding, Testing, Launch - Build a very first MVP (Skill NFT). / MVP Standard implementation - Implement the Standard. / Sell Unite NFTs to raise funds (Public sale). |
+| 2. | Content | Youtube - Make Youtube Videos. / Blog & Socials - Potential topics list, Posts Schedule, Launch. / Discord - Moderator goals, Discord dinamics, Discord improvements. |
+| 3. | Partnerships and Research | Partnerships - Search for partners. / Contributors pipeline - Make a list of Youtube Guests. |
+| 4. | Public Sale | Unite NFT Public sale - Take care of Public sale. / Treasury - Ensure Unite DAO has necessary Treasury. |
+| 5. | Skill NFT | Design & Features - Skill NFT design and features. / Launch a Skill NFT - Launch Skill NFT. / Generate ideas for future NFTs - Think of what future NFTs could look like. |
+| 6. | Legal DAO | Consulting - Make sure Unite DAO is Legally compliant. |  
+| 7. | Operations Management | Research apps for DAO - Find apps that suits DAO developement. / Check - Check if all done on time. |
+
+
+
+### Milestone 4 — Phase 3 - Unite DAO launch
+
+- **Estimated duration:** 3 weeks 
+- **FTE:**  9
+- **Costs:** 43,950 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Standards | Build Standards - Create and build next Standards. |
+| 2. | Content | Youtube - Manage Youtube Videos. / Blog & Socials - Manage Social presence. / Discord - Manage Community on Discord. |
+| 3. | Partnerships and Research | Partnerships - Search for partners. / Contributors pipeline - Make a list of Youtube Guests. |
+| 4. | Tokenomics | Create Tokenomics together with the community - Ensure we have functional Tokenomics. / Coordination Working Group creation (v2) - v2 CWG creation. |
+| 5. | Content | Content design - Help with content design and future NFT design. |
+| 6. | Legal DAO | Consulting - Make sure Unite DAO is Legally compliant. |  
+| 7. | Operations Management | Research apps for DAO - Find apps that suits DAO developement. / Check - Check if all done on time. |
 
 
 
