@@ -300,7 +300,7 @@ Community Team Member Art Kateiva and Operations Team Member Sandra is responsib
 
 - **Total Estimated Duration:** 12 weeks until we launch Unite DAO, and then it's an ongoing evergreen project.
 - **Full-Time Equivalent (FTE):**  9
-- **Total Costs:** We are asking for a 50,000.00 USD Grant, and we need this Grant for Milestone number 1 - 43,950.00 USD. [You can check the total costs in this sheet](https://docs.google.com/spreadsheets/d/1Cg38Fum1Wg95BH6savCjGpaUvO9Gst4TASexf-JjisM/edit#gid=1447454187) but our total costs right now are at 275,800.00 USD.
+- **Total Costs:** We are asking for a 50,000.00 USD Grant.
 
 
 
@@ -308,7 +308,7 @@ Community Team Member Art Kateiva and Operations Team Member Sandra is responsib
 
 - **Estimated duration:** 3 weeks 
 - **FTE:**  9
-- **Costs:** 43,950 USD
+- **Costs:** 12,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -326,7 +326,7 @@ Community Team Member Art Kateiva and Operations Team Member Sandra is responsib
 
 - **Estimated duration:** 3 weeks 
 - **FTE:**  9
-- **Costs:** 43,950 USD
+- **Costs:** 12,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -344,7 +344,7 @@ Community Team Member Art Kateiva and Operations Team Member Sandra is responsib
 
 - **Estimated duration:** 3 weeks 
 - **FTE:**  9
-- **Costs:** 43,950 USD
+- **Costs:** 12,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -362,7 +362,7 @@ Community Team Member Art Kateiva and Operations Team Member Sandra is responsib
 
 - **Estimated duration:** 3 weeks 
 - **FTE:**  9
-- **Costs:** 43,950 USD
+- **Costs:** 12,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -396,6 +396,10 @@ The future is exciting for Unite DAO, as more community members and contributors
 
 
 **How did you hear about the Grants Program?** Alex Puig's recommendation.
+
+
+
+[You can check the total costs in this sheet](https://docs.google.com/spreadsheets/d/1Cg38Fum1Wg95BH6savCjGpaUvO9Gst4TASexf-JjisM/edit#gid=1447454187) but our total costs right now are at 275,800.00 USD. We are asking 50,000.00 Grant to cover our 1st Milestone in full. 
 
 
 
