@@ -8,8 +8,6 @@
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
 ### Overview
 
 We are sincerely applying for a grant from Web3 Foundation to build an infrastructure to help multi-chains currently in web3 be connected together just as OSI did for the internet in web2. We call this infrastructure Dante Network.
