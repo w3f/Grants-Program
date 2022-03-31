@@ -15,9 +15,56 @@ As a newcomer to Polkadot environment, I was able to create chrome extension and
 
 I would make GUI mock-ups and a concept of change in the code hierarchy (interfaces, etc) before starting with the tasks of Milestone 1. In my professional projects, I like to use the [v-model](https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/#:~:text=The%20V%2Dmodel%20is%20a,associated%20with%20the%20testing%20phase.) but I would like to present my solution and proposal to the stakeholders before I start coding.
 
+- State of Art
+Account sharing on network:
+
+The extension manages accounts and the dapp websites can call the account numbers using the authorization feature. Authorized webpages can be found under settings>Manage Website Access (link: index.html#/auth-list). A dapp website have to ask for authorization and after the authorization is approved in extension, all visible accounts are shared with the dapp. As example, visit https://apps.karura.network/ and select polkadot as wallet and following window will appear: 
+![Authorization Panel](https://i.imgur.com/Ad3GfWz.png).
+
+At this stage, it is considered as weak privacy, because the users might tend to share all accounts because the user might forget to check the visibility or just do not make any change in extension due to negligence.
+
+Account visibility on GUI:
+
+All accounts are always visible in GUI with the account addresses. In case of the users desktop is visible to any other person during the screen is shared, this is considered as privacy violation because the participants of meeting might record the screen sharing.
+
+- Privacy concept
+
+The privacy concept for GUI and network are treated separately.
+
+Account sharing on network:
+Authorization for a webpage shall not provide access to users accounts without the user explicitly decides which accounts have to be shared. In the authorization panel shall be possible to decide which accounts are to be provided but unvisible accounts can not be shared.
+
+All visible accounts shall be listed in the authorization panel as a checkbox (default: all unchecked). The GUI offers three buttons:
+    - Select all
+    - Select none
+    - Approval button, which already exists: "Yes, allow this application access"
+
+This decision for provided accounts shall be visible in GUI similar to "account (network) visibility" an icon (link/unlink) shall show the state of an account, if the account is shared. That means, that the intended "link/unlink" function will overtake the function of current "account (network) visibility" and the visibility button shall be only used to filter the accounts during authorization of dapp website. This decision shall be remembered for each authorized dapp.
+
+Additionally a menu button ("Block all accounts") shall block all accounts with single-click and another menu button shall revert this step: "Unblock all accounts". In this case the account setting for linking/unlinking shall be not be changed but the icon shall be outgrayed.
+
+Account groups are considered to be too complex and not worthy.
+
+Account visibility on GUI:
+It shall be possible to hide an account as windows OS file visibility feature. If an account is set as "hidden", it shall be immediately removed from GUI and can only be reverted if the menu checkbox "Show hidded accounts" is checked.
+
+Same feature for hiding accounts, shall be implemented for hiding the account addresses.
+
+- Implementation
+The solution for the concept above can be realized with four new properties of accounts:
+    - Visibility (This property exists already but the usage will be changed)
+    - Blocked
+    - Linked (Same as current account visibility)
+
+    An account is only provided if it is not Blocked and Linked. Linking is only possible by clicking on link button in GUI or selecting the account during authorization
+
+    - Hidden (GUI)
+    - AddressHidden (GUI)
+
+
 ### Ecosystem Fit
 
-As described in the [RFP](https://github.com/w3f/Grants-Program/blob/master/rfps/privacy-enhancement-polkadot-extension.md), the development will enhance the privacy of the Polkadot Extension.
+As described in the [RFP](https://github.com/w3f/Grants-Program/blob/master/rfps/privacy-enhancement-polkadot-extension.md), the development will enhance the GUI and network privacy of the Polkadot Extension.
 
 ## Team :busts_in_silhouette:
 
@@ -161,22 +208,6 @@ The development shall comply the with tasks from milestones. The stakeholder sha
 | 0b. | Testing Guide | All translatable GUI elements will be checked in GUI for all new languages manually |  
 | 1. | Add spanish and german GUI i18n | I will translate current GUI elements and all translatable (t<string>) elements in German and Spanish. All translations will be reviewed by native speakers (German: native Germany, Spanish: native Argentinian) |  
 
-
-## Additional Information :heavy_plus_sign:
-
-The solution for the milestones above is based on four new properties of accounts: 
-- Group membership
-- Visibility properties: "Account visibility in GUI" and "Account visibility in network"
-- Privacy level, which affects both visibilities
-- Global Account Visibility (overrides groups visibility)
-
-The main GUI will show an account only if an account is:
-- Not hidden or ( Hidden but Hidden accounts shall be shown )  AND
-- Group Privacy Level of the account is lower than user-defined privacy level
-
-The main GUI will provide an account to network only if an account has:
-- (Group Account Network Visibility is set on TRUE in privacy menu AND Global Network Visibility is set on FALSE by user) OR
-- Global Account Visibility is set on TRUE by user
 
 
 **How did you hear about the Grants Program?** : https://github.com/jonasW3F posted it on reddit
