@@ -19,6 +19,7 @@ I would make GUI mock-ups and a concept of change in the code hierarchy (interfa
 Account sharing on network:
 
 The extension manages accounts and the dapp websites can call the account numbers using the authorization feature. Authorized webpages can be found under settings>Manage Website Access (link: index.html#/auth-list). A dapp website have to ask for authorization and after the authorization is approved in extension, all visible accounts are shared with the dapp. As example, visit https://apps.karura.network/ and select polkadot as wallet and following window will appear: 
+
 ![Authorization Panel](https://i.imgur.com/Ad3GfWz.png).
 
 At this stage, it is considered as weak privacy, because the users might tend to share all accounts because the user might forget to check the visibility or just do not make any change in extension due to negligence.
@@ -51,6 +52,7 @@ It shall be possible to hide an account as windows OS file visibility feature. I
 Same feature for hiding accounts, shall be implemented for hiding the account addresses.
 
 - Implementation
+
 The solution for the concept above can be realized with four new properties of accounts:
     - Visibility (This property exists already but the usage will be changed)
     - Blocked
