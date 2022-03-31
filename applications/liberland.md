@@ -6,9 +6,11 @@
 ● Payment Address btc: bc1qh0ejszphu4e8u04h6d6urlrmr2nyujsxhfq2rj
 ● Status: Open
 ● Total Estimated Duration: 3-6 months 
-● Full-time equivalent (FTE): 4 developers full time
-
+● Full-time equivalent (FTE): 3-4 developers full time
+● Request Total Funding: 50 000 USD, we also aim to access the substrate builders program.     
 ```       
+
+
 ## Project Description:    
 > The Liberland blockchain’s main feature is to expand the actual list of use cases for    
 > the blockchain ecosystem to drive the government of an entire Nation-State on-chain using substrate as its backbone.      
@@ -246,6 +248,7 @@ built thanks to earlier efforts, but the project must be finished and deployed.
 | 4. | Active testnet | We will launch and host our first release testnet  |  
 | 5. | User Roles | We will create a substrate module that allows users to have roles/on-chain idenities | 
 
+
 **Deadline: Q2 2022**
 
 
@@ -345,7 +348,7 @@ why we have a burning need to implement the Legislative Branch first, far ahead 
 | 0e. | Article | We will publish a detailed article, walking a user through all functionality and features.)
 | 1. | Voting module | We will create a Substrate module that will enable users to vote and take an active part in voting in Liberland's judicial system |  
 | 2. | Law module | We will create a substrate module that allows users to create and vote for removal of laws | 
-
+| 3. | Company Registration Pallet | We will create a module that allows anyone that is holding LLM to incorporate a company | 
 
 The voting and the law module will enable the following functionality: 
 
@@ -381,6 +384,16 @@ of a Law;
 ● the VetoProposal(referendum) stays open until 50 percent plus one citizen vote
 yea or nay.   
 ```
+
+
+#### Company Registration Functionality     
+*  Allow user to incorporate companies.   
+*  Generate unqiue company id's   
+
+Liberland is moving our company registration on-chain. Allowing anyone to register their company   
+using our company registration pallet.   
+
+
 
 ##### Delivery:   
 Liberland's blockchain will be released with the mentioned features on our public    
