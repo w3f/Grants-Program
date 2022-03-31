@@ -54,10 +54,12 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ## Team :busts_in_silhouette:
 
-### Team members
+### Team members & experience
 
-- Name of team leader
-- Names of team members
+
+
+
+- Zack W: 
 
 ### Contact
 
