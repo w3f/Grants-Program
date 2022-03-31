@@ -36,6 +36,8 @@ That’s the overview of the protocol stack in Dante Network. We think it can be
 
 ### Ecosystem Fit
 
+![EN Dante Pitch Deck3 7_05](https://user-images.githubusercontent.com/83746881/160986968-ef356b6e-95fa-4f18-b4c6-8ad85a2d0acd.jpg)
+
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
