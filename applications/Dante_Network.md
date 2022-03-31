@@ -54,7 +54,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - Shawn Zheng (Tech leader of Dante Network)
     - Worked for a state-owned enterprise (Fortune 500) engaged in the security business for 10+ years.
     - Full-stack engineer in information security, AI, blockchain, etc.
-    - Hackathon reward as a team leader: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
+    - Hackathon winner as a team leader: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
     - Github: https://github.com/xiyu1984
     - Mail: xiyuzheng1984@gmail.com
 
@@ -63,7 +63,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
     - Technical mentor for EOS 1st Hong Kong Hackathon Live.
     - Technical leader of EOS Genesis node eosiomeetone, the largest node in Asia in terms of traffic when the main network was launched, with TPS 8k+.
     - Senior full-stack engineer (worked in Go, Snowball).
-    - Hackathon reward: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
+    - Hackathon winner: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
     - Github main page: https://github.com/wuyahuang.
     - Technical articles: https://github.com/meet-one/documentation.
     - Mail: wuyahuang@gmail.com
@@ -73,7 +73,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
     - Built and maintained Polkadot, Kusama, PlatON, Eth2.0, ChainX, and other project nodes
     - Crust, Phala project node data center leader, responsible for project operations and maintenance, and the development of operations and maintenance-related tools.
     - 10 years as a full-stack engineer in finance, games, education, etc.
-    - Hackathon reward: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
+    - Hackathon winner: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
     - Github: https://github.com/virgil2019.
     - Mail: hht2015ily@gmail.com
 
@@ -81,7 +81,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
     - A state-owned enterprise medical alliance chain development, as well as the construction and maintenance of distributed storage network, related SDK development.
     - Years of experience in blockchain, a deep participant in EOS, PlatON, and other communities, exporting technical articles and modifying bugs.
     - Participate in EOS node maintenance, EOS DAPP development.
-    - Hackathon reward: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
+    - Hackathon winner: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
     - GitHub: https://github.com/kay404.
     - Mail: kay20475@gmail.com
 
@@ -89,7 +89,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
     - Over 10 years of working experience in various aspects of computer programming, analysis, developing and testing.
     - EOS, Fluence,Nervos technical community participant.
     - Full-stack engineer(worked in Go/Rust/C++/Javascript)
-    - Hackathon reward: [FluenceLabs gitcoin hackathon](https://gitcoin.co/issue/fluencelabs/sovereign-data-hackathon/1/100026738), [nervos gitcoin hackathon](https://www.nervos.org/blog/nervos-gitcoin-hackathon-winners-announced). 
+    - Hackathon winner: [FluenceLabs gitcoin hackathon](https://gitcoin.co/issue/fluencelabs/sovereign-data-hackathon/1/100026738), [nervos gitcoin hackathon](https://www.nervos.org/blog/nervos-gitcoin-hackathon-winners-announced). 
     - Github: https://github.com/fsy412
     - Mail: fsy412@gmail.com
 
