@@ -28,6 +28,11 @@ The “Consensus Verification Layer” is the bottom layer of the protocol stack
 
 That’s the overview of the protocol stack in Dante Network. We think it can be treated as the “internet” of Web3. The implementation of the protocol stack can be embedded in public chains as the smart contract. That’s just like the TCP/IP protocol cluster embedded in operating systems to construct the computer network.
 
+#### Highlights
+- Multi-ecosystem barrier-free cooperation(More than Token): Provide a general data verification protocol to execute the circulation of Token, the comprehensive sensing of information, and the free collaboration of Dapps among multi-chains just like the “internet”.
+- A dynamic balance between security, scalability, and decentralization: Provide an SQoS mechanism to customize to various scenarios just like the QoS in TCP/IP protocol cluster.
+
+
 **Technology stack**
 * Rust
 * Solidity
@@ -47,6 +52,13 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
   - If so, how is your project different?
   - If not, are there similar projects in related ecosystems?
 
+Polkadot/Kusama creates an interesting and great thing that various chains in its ecosystem with different abilities can be connected and cooperate with each other. We cannot indeed agree this philosophy more. The future of web3 would be in a multi-chains world, and currently, besides Polkadot ecosystem there also has been lots of chains with special abilities, some of which are very famous and have made great success already(such ETH, Solana, Avalanche, Near, etc.), some of which are really special(such as Flow, PlatON, Arweave, etc.). Although chains in Polkadot/Kusuma can make general communications with each other with XCMP, there's no way general and convenient enough for them to interact with chains "outside of Polkadot". 
+
+According to the philosophy of Polkadot/Kusama, Dante Network provides a suitable method to connect Polkadot/Kusama with the whole web3 world. Unlike current Token bridges from Polkadot to other ecosystems, more than token, we provide a general message distribution and contracts invocation mechanism between Polkadot and other ecosystems. So With Dante Network, every paticipants in Polkadot can enjoy not only the services provided by chains in Polkadota ecosystem, but also a wider range of services provided by the whole web3 world. And more users outside of Polkadot can visit services and resources in Polkadot without leaving their familiar environment. 
+
+In general, Dante Network will help Polkadot to expand its boundaries.
+
+
 ## Team :busts_in_silhouette:
 
 ### Team members & experience
@@ -54,7 +66,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - Shawn Zheng (Tech leader of Dante Network)
     - Worked for a state-owned enterprise (Fortune 500) engaged in the security business for 10+ years.
     - Full-stack engineer in information security, AI, blockchain, etc.
-    - Hackathon winner as a team leader: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
+    - Hackathon winner as a team tech leader: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
     - Github: https://github.com/xiyu1984
     - Mail: xiyuzheng1984@gmail.com
 
