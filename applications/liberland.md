@@ -7,6 +7,7 @@
 ● Status: Open
 ● Total Estimated Duration: 3-6 months 
 ● Full-time equivalent (FTE): 4 developers full time
+
 ```       
 ## Project Description:    
 > The Liberland blockchain’s main feature is to expand the actual list of use cases for    
@@ -288,7 +289,7 @@ for different privledged functionality. Such as being able to vote and propose l
 | 1.  | Frontend application | We will our frontend ready to be  |  create a Substrate module that will enable users to send and recieve the on-chain token LLMvgft
 |  2. | User onboarding                 |      We will onboard our current userbase of citizen's to our Frontend using a browser based wallet, allowing them to interact with the liberland blockchain       |
 | 3. | Validator search | our frontend will allow the functionality to view and interact with running on-chain validators |
-```
+
 
 #### Optional
 
