@@ -14,7 +14,7 @@ We are sincerely applying for a grant from Web3 Foundation to build an infrastru
 
 Dante Network is a middleware to empower multiple ecosystems to interoperate and interconnect in web3. In Dante Network, we define and offer a general protocol stack to realize interoperability and interconnection. This is an infrastructure bringing innovative experiences in web3, just as internet protocol is for today’s internet. With this infrastructure, participants in web3 can make general message transmission and contract invocation among multi-chains.
 
-We will cooperate with the smart contract platforms in Polkadot/Kusama to build our protocol stack along with an on-chain router, such that the whole Polkadot/Kusama ecosystem can interoperate with public chains in the whole web3 world generally. For example, more than token, general information can be sent from contracts on ETH to Crust with the help of the on-chain router based on our protocol stack deployed on Moonriver and XCMP of Polkadot.
+We will cooperate with the smart contract platforms in Polkadot/Kusama to build and deploy our protocol stack, such that the whole Polkadot/Kusama ecosystem can interoperate with public chains in the whole web3 world generally. For example, more than token, general information can be sent from contracts on ETH to Crust with the help of our protocol stack deployed on Moonriver and XCMP of Polkadot/Kusama.
 
 #### Inspiration
 We highly endorse the philosophy of Web3 Foundation. We think the web3 world is expected to be an “internet” of multi-chains, each of which can provide its own special features and every participant can share it worldwide. So there should be a kind of infrastructure that can provide consistent and convenient multi-chain interoperability for Dapps in Web3 so that they can focus on their application business which can serve the whole web3 market instead of staying in some certain ecosystem. 
@@ -33,6 +33,11 @@ The “Consensus Verification Layer” is the bottom layer of the protocol stack
 
 That’s the overview of the protocol stack in Dante Network. We think it can be treated as the “internet” of Web3. The implementation of the protocol stack can be embedded in public chains as the smart contract. That’s just like the TCP/IP protocol cluster embedded in operating systems to construct the computer network.
 
+**Technology stack**
+* Rust
+* Solidity
+* Cadence
+* node.js
 
 ### Ecosystem Fit
 
@@ -82,20 +87,21 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://github.com/<team_member_1>
 - https://github.com/<team_member_2>
 
-### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+### Vedio Show
+Our concept can be seen at: 
+https://youtu.be/YhPwb8_s9xY
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+### Demo
+We have a demo at: [Demo](https://github.com/dantenetwork/cross-chain-demo/tree/develop)
+
+### Tasting SDK
+There will be a dev SDK for multi-chain DApp developers, and we’ve published a tasting version at: 
+[tasting SDK](https://github.com/dantenetwork/solidity-contract-template/tree/develop)
+
 
 ## Development Roadmap :nut_and_bolt:
 
