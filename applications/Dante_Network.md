@@ -16,11 +16,6 @@ Dante Network is a middleware to empower multiple ecosystems to interoperate and
 
 We will cooperate with the smart contract platforms in Polkadot/Kusama to build and deploy our protocol stack, such that the whole Polkadot/Kusama ecosystem can interoperate with public chains in the whole web3 world generally. For example, more than token, general information can be sent from contracts on ETH to Crust with the help of our protocol stack deployed on Moonriver and XCMP of Polkadot/Kusama.
 
-#### Inspiration
-We highly endorse the philosophy of Web3 Foundation. We think the web3 world is expected to be an “internet” of multi-chains, each of which can provide its own special features and every participant can share it worldwide. So there should be a kind of infrastructure that can provide consistent and convenient multi-chain interoperability for Dapps in Web3 so that they can focus on their application business which can serve the whole web3 market instead of staying in some certain ecosystem. 
-In our idea, we think different public chains are like realms in mythology. There are barriers for users to having universal transportation to travel around the different realms. And there is Bifrost to open a teleport between realms, but it is neither cheap nor easy.  So inspired by this, we want to grow a “World Tree” that supports open and collaborative ecosystems in web3. 
-It can take roots in the computing resources and storage infrastructures in web3 and web2 to provide orderly resource scheduling. And it can grow by offering non-differentiated data collaboration services for Dapps in web3 and providing valid resources. This is why we have the Dante Network. 
-
 
 ### Project Details
 **Architecture**
@@ -156,7 +151,7 @@ There will be a dev SDK for multi-chain DApp developers, and we’ve published a
 - **Full-Time Equivalent (FTE):**  5 FTE
 - **Total Costs:** 30,000 USD. 
 
-### Milestone 1 — `Service expression layer`,  message verification & router credibility evaluation algorithms
+### Milestone 1 — Service expression layer,  message verification & router credibility evaluation algorithms
 
 - **Estimated duration:** 3 month
 - **FTE:**  5
@@ -193,16 +188,17 @@ There will be a dev SDK for multi-chain DApp developers, and we’ve published a
 
 ## Future Plans
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+Our next step is to work with many application-based projects to iterate our SDK for developers based on their needs, making web3's multi-chain interaction easier.
+
+At the same time, we will continue to improve and update our protocol stack as we use it. We will invite more project parties, developers, and end users to participate and give their valuable suggestions.
+
+Security is the most important point in this field, so it will be testing very fully on the testnet. And there will also be some targeted hackathon events related to security.
+
+Dante Network will be a long term project, because our final goal is to provide a simple, easy-to-use, secure infrastructure. At that time, the interaction between most of the chains in web3 will be as convenient as communications with terminal devices in web2 through internet. 
 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+We highly endorse the philosophy of Web3 Foundation. We think the web3 world is expected to be an “internet” of multi-chains, each of which can provide its own special features and every participant can share it worldwide. So there should be a kind of infrastructure that can provide consistent and convenient multi-chain interoperability for Dapps in Web3 so that they can focus on their application business which can serve the whole web3 market instead of staying in some certain ecosystem. 
+In our idea, we think different public chains are like realms in mythology. There are barriers for users to having universal transportation to travel around the different realms. And there is Bifrost to open a teleport between realms, but it is neither cheap nor easy.  So inspired by this, we want to grow a “World Tree” that supports open and collaborative ecosystems in web3. 
+It can take roots in the computing resources and storage infrastructures in web3 and web2 to provide orderly resource scheduling. And it can grow by offering non-differentiated data collaboration services for Dapps in web3 and providing valid resources. This is why we have the Dante Network. 
