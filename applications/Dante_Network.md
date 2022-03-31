@@ -56,40 +56,84 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members & experience
 
+- Shawn Zheng (Tech leader of Dante Network)
+    - Worked for a state-owned enterprise (Fortune 500) engaged in the security business for 10+ years.
+    - Full-stack engineer in information security, AI, blockchain, etc.
+    - Hackathon reward as a team leader: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
+    - Github: https://github.com/xiyu1984
+    - Mail: xiyuzheng1984@gmail.com
 
+- Zack Wu (Full stack Dev in web3, core dev in Dante Network)
+    - EOS, PlatON technical community senior participant (output 40 technical articles, help EOS, PlatON fix many bugs).
+    - Technical mentor for EOS 1st Hong Kong Hackathon Live.
+    - Technical leader of EOS Genesis node eosiomeetone, the largest node in Asia in terms of traffic when the main network was launched, with TPS 8k+.
+    - Senior full-stack engineer (worked in Go, Snowball).
+    - Hackathon reward: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
+    - Github main page: https://github.com/wuyahuang.
+    - Technical articles: https://github.com/meet-one/documentation.
+    - Mail: wuyahuang@gmail.com
 
+- George Huang (Full stack Dev in web3, core dev in Dante Network)
+    - 2Senior participant of PlatON technical community ported Chainlink project for PlatON and exported several technical articles.
+    - Built and maintained Polkadot, Kusama, PlatON, Eth2.0, ChainX, and other project nodes
+    - Crust, Phala project node data center leader, responsible for project operations and maintenance, and the development of operations and maintenance-related tools.
+    - 10 years as a full-stack engineer in finance, games, education, etc.
+    - Hackathon reward: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
+    - Github: https://github.com/virgil2019.
+    - Mail: hht2015ily@gmail.com
 
-- Zack W: 
+- Kay Lin (Full stack Dev in web3, core dev in Dante Network)
+    - A state-owned enterprise medical alliance chain development, as well as the construction and maintenance of distributed storage network, related SDK development.
+    - Years of experience in blockchain, a deep participant in EOS, PlatON, and other communities, exporting technical articles and modifying bugs.
+    - Participate in EOS node maintenance, EOS DAPP development.
+    - Hackathon reward: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
+    - GitHub: https://github.com/kay404.
+    - Mail: kay20475@gmail.com
+
+- James Fan (Full stack Dev in web3, core dev in Dante Network)
+    - Over 10 years of working experience in various aspects of computer programming, analysis, developing and testing.
+    - EOS, Fluence,Nervos technical community participant.
+    - Full-stack engineer(worked in Go/Rust/C++/Javascript)
+    - Hackathon reward: [FluenceLabs gitcoin hackathon](https://gitcoin.co/issue/fluencelabs/sovereign-data-hackathon/1/100026738), [nervos gitcoin hackathon](https://www.nervos.org/blog/nervos-gitcoin-hackathon-winners-announced). 
+    - Github: https://github.com/fsy412
+    - Mail: fsy412@gmail.com
+
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:**
+- **Contact Name:** Shawn Zheng
+- **Contact Email:** DanteDev01@hotmail.com, xiyuzheng1984@gmail.com
+- **Website:** https://www.dantechain.com/
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 
+5001 BEACH ROAD
+#07-37
+GOLDEN MILE COMPLEX
+SINGAPORE (199588)
+
+- **Registered Legal Entity:** KVANACE TECHNOLOGY FOUNDATION LTD.
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
+Our technical team consists of several experienced full-stack engineers and scientists. Each member has many years of technical experience. Our members have a lot of experience in the web3 world. They are deep participants in several technical communities, hackathon winners, and node servers for Polkadot/Kusama ,EOS, and PlatON.
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- [Github Organization](https://github.com/dantenetwork)
+- [Demo Repo](https://github.com/dantenetwork/cross-chain-demo/tree/develop)
+- [SDK Repo](https://github.com/dantenetwork/solidity-contract-template)
+- Our protocol stack development repos are `private` for the moment, if anyone wants to view and check it, please contact us. It will be open source with license `GPLv3` when the development and testing is completed.
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
-
-
+#### Team members' repos:
+- [Shawn Z](https://github.com/xiyu1984)
+- [Zack W](https://github.com/wuyahuang)
+- [George H](https://github.com/virgil2019)
+- [Kay L](https://github.com/kay404)
+- [James F](https://github.com/fsy412)
 
 ## Development Status :open_book:
 
@@ -106,60 +150,48 @@ There will be a dev SDK for multi-chain DApp developers, and we’ve published a
 
 
 ## Development Roadmap :nut_and_bolt:
-
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-For each milestone,
-
-- make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-- include the amount of funding requested _per milestone_.
-- include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-- provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-- commit to providing Dockerfiles for the delivery of your project.
-- indicate milestone duration as well as number of full-time employees working on each milestone.
-- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 6 months
+- **Full-Time Equivalent (FTE):**  5 FTE
+- **Total Costs:** 30,000 USD. 
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 — `Service expression layer`,  message verification & router credibility evaluation algorithms
 
-- **Estimated duration:** 1 month
-- **FTE:**  2
-- **Costs:** 8,000 USD
+- **Estimated duration:** 3 month
+- **FTE:**  5
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. | License | GPLv3  |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
+| 1. | smart contracts: `Service expression layer` | Development and testing of `Service expression layer` on one of Polkadot’s smart contract platforms (like Moonriver, Shiden, OAK, etc.); Demo for communication and interoperation between one of Polkadot’s smart contract platforms and ETH, Near, Avalanche.|  
+| 2. | smart contracts: message verification algorithm | Development and testing of verification algorithms of the `consensus verification layer` on one of Polkadot’s smart contract platforms and other chains including ETH, Near, Avalanche, Flow, PlatON. Verification contracts deployed on testnet (Moonriver/Shiden/OAK in Polkadot, ETH, Near, Avalanche, Flow, PlatON). Demo for information verification.|  
+| 3. | smart contracts: router credibility evaluation algorithm | Development and testing of the credibility evaluation algorithms of the `consensus verification layer`; Selection of growth function and decrease function suitable for smart contract on-chain is the key point; Router behavior evaluation contracts deployed on testnet(Moonriver/Shiden/OAK in Polkadot, ETH, Near, Avalanche, Flow, PlatON); Demo for router evaluation according to their behaviors.|   
+
+
+### Milestone 2 — parallel router scheduling algorithms, SQoS, testnet
+
+- **Estimated duration:** 3 month
+- **FTE:**  5
+- **Costs:** 15,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | GPLv3 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-
-
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 4,000 USD
-
-...
+| 1. | smart contracts: parallel router scheduling algorithm | Development and testing of parallel router scheduling algorithms of the `consensus verification layer`; Suitable randomness is the key point; Scheduling contracts deployed on testnet (Moonriver/Shiden/OAK in Polkadot, ETH, Near, Avalanche, Flow, PlatON).Demo for router scheduling, a router with high credibility will have a higher probability to be chosen. |  
+| 2. | smart contracts: SQoS | Development and testing the SQoS (Security Quality of Service) mechanisms including `hidden & reveal`, `challenge confirm`, `error rollback`, `verification threshold`, etc. Multi-chain message contracts deployed on testnet (Moonriver/Shiden/OAK in Polkadot, ETH, Near, Avalanche, Flow, PlatON)’Demo for showing each of the SQoS items. |  
+| 3. | testnet | The testing for the basic abilities of the whole protocol stack. Demo for the whole abilities. Launch the testnet of Dante Network.|  
 
 
 ## Future Plans
-
-Please include here
 
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
