@@ -36,9 +36,13 @@ Account sharing on network:
 Authorization for a webpage shall not provide access to users accounts without the user explicitly decides which accounts have to be shared. In the authorization panel shall be possible to decide which accounts are to be provided but unvisible accounts can not be shared.
 
 All visible accounts shall be listed in the authorization panel as a checkbox (default: all unchecked). The GUI offers three buttons:
+
     - Select all
+
     - Select none
+
     - Approval button, which already exists: "Yes, allow this application access"
+
 
 This decision for provided accounts shall be visible in GUI similar to "account (network) visibility" an icon (link/unlink) shall show the state of an account, if the account is shared. That means, that the intended "link/unlink" function will overtake the function of current "account (network) visibility" and the visibility button shall be only used to filter the accounts during authorization of dapp website. This decision shall be remembered for each authorized dapp.
 
@@ -54,11 +58,15 @@ Same feature for hiding accounts, shall be implemented for hiding the account ad
 - Implementation
 
 The solution for the concept above can be realized with four new properties of accounts:
+
     - Visibility (This property exists already but the usage will be changed)
+
     - Blocked
+
     - Linked (Same as current account visibility)
 
-    An account is only provided if it is not Blocked and Linked. Linking is only possible by clicking on link button in GUI or selecting the account during authorization
+
+An account is only provided if it is not Blocked and Linked. Linking is only possible by clicking on link button in GUI or selecting the account during authorization
 
     - Hidden (GUI)
     - AddressHidden (GUI)
