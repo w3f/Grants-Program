@@ -38,7 +38,7 @@ The “Security Quality Layer” is the next down from the top, which defines a 
 The “Consensus Verification Layer” is the bottom layer of the protocol stack, which is especially for web3. The verification algorithms include commitment verification and belief verification, which can be adapted to a wider range of scenarios in web3. And besides, a “Parallel Route Scheduling” algorithm is within the protocol responsible for the “route nodes” selection, along with which are the algorithms include evaluation, incentives, and challenge. At the bottom of this layer, they define a “Physical” protocol defining the standard behavior of the working node(named “Adaption node” officially), which is just analogous to the “Physical Layer” of OSI. 
 
 
-That’s the overview of the protocol stack in Dante Network. We think it can be treated as the “internet” of Web3. The implementation of the protocol stack can be embedded in public chains as the smart contract. That’s just like the TCP/IP protocol cluster embedded in operating systems to construct the computer network.
+That’s the overview of the protocol stack in Dante Network. We think it can be regard as the “Internet protocol” of Web3. The implementation of the protocol stack can be embedded in public chains as the smart contract. That’s just like the TCP/IP protocol cluster embedded in operating systems to construct the computer network.
 
 #### Highlights
 - Multi-ecosystem barrier-free Collaboration(More general than Token): Provide a general data verification protocol to execute the circulation of Token, the comprehensive sensing of information, and the free collaboration of Dapps among multi-chains just like the “internet”.
