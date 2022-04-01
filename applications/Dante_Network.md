@@ -24,14 +24,19 @@ Dante Network will build a multi-chain cooperation protocol stack along with an 
 - Secondly, we will build off-chain routers called "adaption nodes" to make the underlying information routing. Anyone can participate in Dante Network by deploying an "adaption node" with their own private key.
 - Thirdly, we will provide SDKs covering multiple technology stacks for DApp developers to make multi-chain interoperations more convenient and easier. The technology stacks will include Rust(OAK in Polkadot, and Near, ICP outside), Solidity(Moonriver, Shiden in Polkadot, and EVM chains outside), Cadence(Flow), etc.
 
+More details of the project are as follows: 
 
 **Architecture**
 ![Architecture](https://github.com/dantenetwork/Pitch-Deck/blob/main/images/%5BEN%5DDante%20Pitch%20Deck3.7_06.jpg)
 
 Generally, the protocol stack includes three layers, the “Service Presentation Layer”, the “Security Quality Layer”, and the “Consensus Verification Layer”. We make a concrete implementation of these.
+
 The “Service Presentation Layer” is at the top of the protocol stack, which can be called “web3 service protocol” in the white paper. They have defined the message organization protocol, the invocation method, and the service interfaces, which can be analogous to “RESTful Web Service” and “HTTPS” in web2. This makes developers of web3 DApps easier to construct. We will bring privacy transaction technology into our protocol stack to help protect the privacy of behavior and data.
+
 The “Security Quality Layer” is the next down from the top, which defines a collection of security mechanisms that can be chosen according to the demand of the application. “SQoS” defines the concrete mechanisms of routing, verification, privacy, authority, etc. This can be analogous to the “QoS” in TCP/IP protocol cluster. 
+
 The “Consensus Verification Layer” is the bottom layer of the protocol stack, which is especially for web3. The verification algorithms include commitment verification and belief verification, which can be adapted to a wider range of scenarios in web3. And besides, a “Parallel Route Scheduling” algorithm is within the protocol responsible for the “route nodes” selection, along with which are the algorithms include evaluation, incentives, and challenge. At the bottom of this layer, they define a “Physical” protocol defining the standard behavior of the working node(named “Adaption node” officially), which is just analogous to the “Physical Layer” of OSI. 
+
 
 That’s the overview of the protocol stack in Dante Network. We think it can be treated as the “internet” of Web3. The implementation of the protocol stack can be embedded in public chains as the smart contract. That’s just like the TCP/IP protocol cluster embedded in operating systems to construct the computer network.
 
