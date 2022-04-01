@@ -254,9 +254,8 @@ built thanks to earlier efforts, but the project must be finished and deployed.
 
 #### Output
 
-We have a simple, functioning blockchain. We will begin with a marketing campaign
-and a funding/investor-seekingcampaign. We will give their work some publicity,and
-we will also start airdropping their wages.
+We will have a functional blockchain network that is fulfilling the needs of Liberland's State administration. 
+This functionality will allow our citizen to interact and use our chain.
 
 ##### Delivery:   
 We will deliver a working blockchain under the MIT license that can be used by anyone and will be avaliable here:
