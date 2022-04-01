@@ -156,9 +156,11 @@ We are owners of the SubstrateSnap repository. Further, the maintainers of Polka
 
 ### Overview / Budget
 
-- **Estimated Duration:**  3 Months - followed by a review for renewal.
-- **Discounted Weekly Rate** US$8,000 / eng-week.
-- **Full-Time Equivalent (FTE):** 0.5
+- **Estimated Duration:**  3 Months - followed by a renewal review.
+- **Sprint/Period Duration:**  Monthly - with 1 x 'syncs' per month prior to being in production, and the possibility to increase to 2 x 'syncs' per month when in production and upon discussion.
+- **Full-Time Equivalent (FTE):**  0.5 FTE (20h per week)
+- **Discounted Monthly Rate Per Period:** US$16,000 / eng-month.
+
 - **Total Costs:** US$48,000
 
 
