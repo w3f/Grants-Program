@@ -14,7 +14,7 @@ We are sincerely applying for a grant from Web3 Foundation to build an infrastru
 
 Dante Network is a middleware to empower multiple ecosystems to interoperate and interconnect in web3. In Dante Network, we define and offer a general protocol stack to realize interoperability and interconnection. This is an infrastructure bringing innovative experiences in web3, just as internet protocol is for today’s internet. With this infrastructure, participants in web3 can make general message transmission and contract invocation among multi-chains.
 
-We will cooperate with the smart contract platforms in Polkadot/Kusama to build and deploy our protocol stack, such that the whole Polkadot/Kusama ecosystem can interoperate with public chains not allowed to access XCMP generally. For example, more than token, general information can be sent from contracts on ETH to Crust with the help of our protocol stack deployed on Moonriver and XCMP of Polkadot/Kusama.
+We will cooperate with the smart contract platforms in Polkadot/Kusama to build and deploy our protocol stack, such that the whole Polkadot/Kusama ecosystem can interoperate with public chains not allowed to access XCMP generally. For example, more general than token, general information can be sent from contracts on ETH to Crust with the help of our protocol stack deployed on Moonriver and XCMP of Polkadot/Kusama.
 
 
 ### Project Details
@@ -41,7 +41,7 @@ The “Consensus Verification Layer” is the bottom layer of the protocol stack
 That’s the overview of the protocol stack in Dante Network. We think it can be treated as the “internet” of Web3. The implementation of the protocol stack can be embedded in public chains as the smart contract. That’s just like the TCP/IP protocol cluster embedded in operating systems to construct the computer network.
 
 #### Highlights
-- Multi-ecosystem barrier-free cooperation(More than Token): Provide a general data verification protocol to execute the circulation of Token, the comprehensive sensing of information, and the free collaboration of Dapps among multi-chains just like the “internet”.
+- Multi-ecosystem barrier-free cooperation(More general than Token): Provide a general data verification protocol to execute the circulation of Token, the comprehensive sensing of information, and the free collaboration of Dapps among multi-chains just like the “internet”.
 - A dynamic balance between security, scalability, and decentralization: Provide an SQoS mechanism to customize to various scenarios just like the QoS in TCP/IP protocol cluster.
 
 
