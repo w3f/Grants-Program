@@ -31,7 +31,7 @@ More details of the project are as follows:
 
 Generally, the protocol stack includes three layers, the “Service Presentation Layer”, the “Security Quality Layer”, and the “Consensus Verification Layer”. We make a concrete implementation of these.
 
-The “Service Presentation Layer” is at the top of the protocol stack. They have defined the message organization protocol, the invocation method, and the service interfaces, which can be analogous to “RESTful Web Service” and “HTTPS” in web2. This makes developers of web3 DApps easier to construct. We will bring privacy transaction technology into our protocol stack to help protect the privacy of behavior and data.
+The “Service Presentation Layer” is at the top of the protocol stack. They have defined the message organization protocol, the invocation method, and the service interfaces, which can be analogous to “RESTful Web Service” and “HTTPS” in web2. This makes developers of web3 DApps easier to construct. We will bring privacy transaction technology into our protocol stack to help protect the privacy of behavior and data on chain.
 
 The “Security Quality Layer” is the next down from the top, which defines a collection of security mechanisms that can be chosen according to the demand of the application. “SQoS” defines the concrete mechanisms of routing, verification, privacy, authority, etc. This can be analogous to the “QoS” in TCP/IP protocol cluster. 
 
