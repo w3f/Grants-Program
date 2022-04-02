@@ -126,7 +126,7 @@ SINGAPORE (199588)
 
 ### Team's experience
 
-Our technical team consists of several experienced full-stack engineers and scientists. Each member has many years of technical experience. Our members have a lot of experience in the web3 world. They are deep participants in several technical communities, hackathon winners, and node operators for Polkadot/Kusama, EOS, and PlatON.
+Our technical team consists of several experienced full-stack engineers and scientists. Each member has many years of technical experience. Our members have a lot of experience in the web3 world. They are deep participants in several technical communities, hackathon winners, and node service providers for Polkadot/Kusama, EOS, and PlatON.
 
 
 ### Team Code Repos
