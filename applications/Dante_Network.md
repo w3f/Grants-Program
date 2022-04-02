@@ -211,7 +211,7 @@ At the same time, we will continue to improve and update our protocol stack as w
 
 Security is the most important point in this field, so it will be fully tested on the testnet. And there will also be some targeted hackathon events related to security.
 
-Dante Network will be a long-term project because our final goal is to provide a simple, easy-to-use, secure infrastructure. At that time, the interaction between most of the chains in web3 will be as convenient as communications with terminal devices in web2 through the internet. 
+Dante Network will be a long-term project because our final goal is to provide a simple, easy-to-use, secure infrastructure. At that time, the interactions between most of the chains in web3 will be as convenient as the interactions with terminal devices in web2 through the internet. 
 
 
 ## Additional Information :heavy_plus_sign:
