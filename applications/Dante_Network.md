@@ -12,7 +12,7 @@
 
 We are sincerely applying for a grant from Web3 Foundation to build an infrastructure to help multi-chains currently in web3 be connected together just as OSI did for the internet in web2. We call this infrastructure Dante Network.
 
-Dante Network is a middleware to empower multiple ecosystems to interoperate and interconnect in web3. In Dante Network, we define and offer a general protocol stack to realize interoperability and interconnection. This is an infrastructure bringing innovative experiences in web3, just as internet protocol is for today’s internet. With this infrastructure, participants in web3 can make general message transmission and contract invocation among multi-chains.
+Dante Network is a middleware to empower multiple ecosystems to interoperate and interconnect in web3. In Dante Network, we define and offer a general protocol stack to realize interoperability and interconnection. This is an infrastructure bringing innovative experiences in web3, just as internet protocol is for today’s internet. With this infrastructure, participants in web3 can make general message transmission and contract invocation between multi-chains.
 
 We will cooperate with the smart contract platforms in Polkadot/Kusama to build and deploy our protocol stack, such that the whole Polkadot/Kusama ecosystem can interoperate with public chains temporarily not able to access XCMP generally. For example, more general than token, general information can be sent from contracts on Ethereum to Crust with the help of our protocol stack deployed on Moonriver and XCMP of Polkadot/Kusama.
 
