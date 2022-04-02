@@ -136,7 +136,6 @@ Our technical team consists of several experienced full-stack engineers and scie
 - [SDK Repo](https://github.com/dantenetwork/solidity-contract-template)
 - The main of our protocol stack development repos are **private** for the moment, if anyone wants to view and check it, please contact us. It will be open source with license GPLv3 when the development and testing are completed.
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 #### Team members' repos:
 - [Shawn Z](https://github.com/xiyu1984)
 - [Zack W](https://github.com/wuyahuang)
