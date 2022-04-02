@@ -119,8 +119,11 @@ In general, Dante Network will help Polkadot to expand its boundaries.
 
 - **Registered Address:** 
 5001 BEACH ROAD
+
 #07-37
+
 GOLDEN MILE COMPLEX
+
 SINGAPORE (199588)
 
 - **Registered Legal Entity:** KVANACE TECHNOLOGY FOUNDATION LTD.
@@ -163,7 +166,7 @@ There will be a dev SDK for multi-chain DApp developers, and we’ve published a
 ### Overview
 
 - **Total Estimated Duration:** 6 months
-- **Full-Time Equivalent (FTE):**  5 FTE
+- **Full-Time Equivalent (FTE):**  3 FTE
 - **Total Costs:** 30,000 USD. 
 
 ### Milestone 1 — Service expression layer,  message verification & router credibility evaluation algorithms
