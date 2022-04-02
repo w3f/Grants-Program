@@ -57,7 +57,7 @@ That’s the overview of the protocol stack in Dante Network. We think it can be
 
 Polkadot/Kusama creates an interesting and great thing that various chains in its ecosystem with different abilities can be connected and cooperate with each other. We cannot agree on this philosophy more. The future of web3 would be in a multi-chains world, and currently, besides Polkadot ecosystem, there also has been lots of chains with special abilities, some of which are very famous and have made great success already(such Ethereum, Solana, Avalanche, Near, etc.), some of which are really special(such as Flow, PlatON, Arweave, etc.). Although chains in Polkadot/Kusuma can make general communications with each other with XCMP, there's no way general and convenient enough for them to interact with chains "outside of Polkadot". 
 
-According to the philosophy of Polkadot/Kusama, Dante Network provides a suitable method to connect Polkadot/Kusama with the other chains of web3 world. Unlike current Token bridges from Polkadot to other ecosystems, more general than token, we provide a general message distribution and contracts invocation mechanism between Polkadot and other ecosystems. So With Dante Network, every participant in Polkadot can enjoy not only the services provided by chains in Polkadot ecosystem but also a wider range of services provided by the whole web3 world. And more users outside of Polkadot can visit services and resources in Polkadot without leaving their familiar environment. 
+According to the philosophy of Polkadot/Kusama, Dante Network provides a suitable method to connect Polkadot/Kusama with the other chains of web3 world. Unlike current Token bridges from Polkadot to other ecosystems, more general than token, we provide a general message distribution and contracts invocation mechanism between Polkadot and other ecosystems. With Dante Network, every participant in Polkadot can enjoy not only the services provided by chains in Polkadot ecosystem but also a wider range of services provided by the whole web3 world. And more users outside of Polkadot can visit services and resources in Polkadot without leaving their familiar environment. 
 
 In general, Dante Network will help Polkadot to expand its boundaries.
 
@@ -209,7 +209,7 @@ Our next step is to work with many application-based projects to iterate our SDK
 
 At the same time, we will continue to improve and update our protocol stack as we use it. We will invite more project parties, developers, and end-users to participate and give their valuable suggestions.
 
-Security is the most important point in this field, so it will be tested very fully on the testnet. And there will also be some targeted hackathon events related to security.
+Security is the most important point in this field, so it will be fully tested on the testnet. And there will also be some targeted hackathon events related to security.
 
 Dante Network will be a long-term project because our final goal is to provide a simple, easy-to-use, secure infrastructure. At that time, the interaction between most of the chains in web3 will be as convenient as communications with terminal devices in web2 through the internet. 
 
