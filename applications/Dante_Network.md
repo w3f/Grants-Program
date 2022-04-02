@@ -145,15 +145,15 @@ Our technical team consists of several experienced full-stack engineers and scie
 
 ## Development Status :open_book:
 
-### Vedio Show
-Our concept can be seen at: 
+### Demo Vedio
+An early version about part of our protocol stack can be seen at: 
 https://youtu.be/YhPwb8_s9xY
 
 ### Demo
-We have a demo at [Demo](https://github.com/dantenetwork/cross-chain-demo/tree/develop)
+Everyone can try a simple demo at [Demo](https://github.com/dantenetwork/cross-chain-demo/tree/develop)
 
 ### Tasting SDK
-There will be a dev SDK for multi-chain DApp developers, and we’ve published a tasting version at: 
+We’ve published a tasting version of the dev SDK for multi-chain DApp developers at: 
 [tasting SDK](https://github.com/dantenetwork/solidity-contract-template/tree/develop)
 
 
@@ -164,7 +164,7 @@ There will be a dev SDK for multi-chain DApp developers, and we’ve published a
 - **Full-Time Equivalent (FTE):**  3 FTE
 - **Total Costs:** 30,000 USD. 
 
-### Milestone 1 — Service expression layer,  message verification & router credibility evaluation algorithms
+### Milestone 1 — Service expression layer,  message verification & router credibility evaluation algorithms, basic off-chain routers, basic SDK
 
 - **Estimated duration:** 3 month
 - **FTE:**  3
@@ -183,7 +183,7 @@ There will be a dev SDK for multi-chain DApp developers, and we’ve published a
 | 5. | SDK: general message sharing | Build an early-stage SDK including a general message sending and receiving interface. Adapted to more than one smart contract platform in Polkadot, along with Ethereum, Near, PlatON, etc. |          
 
 
-### Milestone 2 — parallel router scheduling algorithms, SQoS, testnet
+### Milestone 2 — parallel router scheduling algorithms, SQoS, off-chain routers, SDK, testnet
 
 - **Estimated duration:** 3 month
 - **FTE:**  3
