@@ -118,7 +118,10 @@ In general, Dante Network will help Polkadot to expand its boundaries.
 ### Legal Structure
 
 - **Registered Address:** 
-5001 BEACH ROAD #07-37 GOLDEN MILE COMPLEX SINGAPORE (199588)
+5001 BEACH ROAD 
+\#07-37 
+GOLDEN MILE COMPLEX 
+SINGAPORE (199588)
 - **Registered Legal Entity:** KVANACE TECHNOLOGY FOUNDATION LTD.
 
 ### Team's experience
