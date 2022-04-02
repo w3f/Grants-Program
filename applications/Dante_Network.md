@@ -134,7 +134,6 @@ Our technical team consists of several experienced full-stack engineers and scie
 - [Github Organization](https://github.com/dantenetwork)
 - [Demo Repo](https://github.com/dantenetwork/cross-chain-demo/tree/develop)
 - [SDK Repo](https://github.com/dantenetwork/solidity-contract-template)
-- The main of our protocol stack development repos are **private** for the moment, if anyone wants to view and check it, please contact us. It will be open source with license GPLv3 when the development and testing are completed.
 
 #### Team members' repos:
 - [Shawn Z](https://github.com/xiyu1984)
