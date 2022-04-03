@@ -48,7 +48,7 @@ Event trigger manager is composed of multiple OpenWhisk actions, including a dat
 
 Under the hood, a feed action is invoked with create lifecycle, which accepts the mandatory parameters the lifecycle, auth, trigger name, and other optional parameters of the event source. The feed action invokes the related actions of creating the entry in the database, adding to the Kafka consumer group, etc. The next component in the event trigger manager is a persistent connection to Kafka where it is used to produce and consume the stream of data. Once data is received in Kafka, the event trigger manager invokes the action to check the consumer groups for that particular topic and if found any, the trigger for the users under that particular group is invoked, which in turn invokes the workflow.  
 
-**3.Workflow Composer**  
+**3. Workflow Composer**  
 The workflow composer is at the heart of Aurras and is responsible for composing and deploying the necessary workflows. It consists of an async Rust library to compose multiple triggers, a deployment configuration generator, providers for Tackle Box, several operators, macros and a whisk deployment tool.
 
 To create a workflow, the only necessary input is the YAML configuration file. The composition, direction of flow and tasks are laid out in the YAML file. This YAML is parsed using Tackle Box, which in turn composes it into a WASM which can be deployed to OpenWhisk. Once deployed to a namespace, each workflow will have a unique workflow id.
