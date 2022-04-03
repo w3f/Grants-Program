@@ -55,7 +55,7 @@ To create a workflow, the only necessary input is the YAML configuration file. T
 
 Workflow configuration comprises the endpoint URL for workflow tasks, the sequence of processing tasks, and argument structure. Arguments must match the task input parameters.
  
-**4.Web API Gateway and Backend Service**   
+**4. Web API Gateway and Backend Service**   
 This is the end-user facing component that enables easy and intuitive usage of Aurras. This final component is has a backend application that provides user registration, workflow registration and workflow management. Users can also easily create, select or manage workflows along with providing the necessary input parameters.  
 
 ### Ecosystem Fit
