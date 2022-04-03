@@ -31,7 +31,7 @@ Aurras as a part of Substrate / Kusama / Polkadot / Web 3 Ecosystem
 
 1. [Apache OpenWhisk](https://openwhisk.apache.org) is an open source, distributed Serverless platform that executes functions (fx) in response to events at any scale. OpenWhisk manages the infrastructure, servers and scaling using Docker containers. The OpenWhisk platform supports a programming model in which developers write functional logic (called Actions), in any supported programming language, that can be dynamically scheduled and run in response to associated events (via Triggers) from external sources (Feeds) or from HTTP requests
 2. [Apache Kafka](https://kafka.apache.org) is an open-source distributed event streaming platform. Kafka works well as a replacement for a more traditional message broker. Message brokers are used for a variety of reasons (to decouple processing from data producers, to buffer unprocessed messages, etc.). In comparison to most messaging systems, Kafka has better throughput, built-in partitioning, replication, and fault-tolerance which makes it a good solution for large scale message processing applications.
-3. [Tackle box](https://robcxyz.github.io/tackle-box/) is a declarative DSL for building modular utilities and code generators. Tool is plugins based and can easily be extended by writing additional hooks or importing external providers creating a web of interoperable CLIs.
+3. [Tackle box](https://robcxyz.github.io/tackle-box/) is a declarative DSL for building modular utilities and code generators. Tackle box is plugins based and can easily be extended by writing additional hooks or importing external providers creating a web of interoperable CLIs.
 4. Docker 
 5. Rust  
 6. Go
@@ -189,6 +189,7 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 | 0a. | License | Apache 2.0  | |  
 | 0b. | Documentation | We will provide the following documentation: Inline Code Documentation, Operator Documentation, Flow design, Readme file | |  
 | 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness | |  
+| 0d. | Docker File | We will provide docker file for running the workflow composer | Users can utilize the docker image as a cli tool to generate workflow wasm from the provided yaml |  
 | 1a. | Workflow Composer: Flow Macro | We will create three types of flows: init, pipe and terminator. The init is used to create the first task in the workflow and the terminator is used to create the last task. The pipe method is used to create other tasks that accept inputs and are dependent on other tasks | Users can utilize the flow macro that is used by the flow provider to generate the code to implement the flow of data between the tasks. |  
 | 1b. | Workflow Composer: Derive Macro(s) | We will create derive macros to enable the tasks in a workflow to invoke OpenWhisk actions and triggers. The tasks are structs, based on a generic format that would include name, inputs and endpoints and macros add functionalities for the tasks | Users can utilize the derive macro to add specific functionalities to the tasks that are required for the execution of the workflow. |  
 
