@@ -73,7 +73,7 @@ What makes us different is
 As a part of the Web 3 Community and Ecosystem
 * First class support to connect blockchains
 * Deployment and definition of workflows will be done through easy-to-write YAML configuration.
-* Workflow tasks can be RPC calls or OpenWhisk actions which can be written in multiple languages - NodeJS, Go, Java, Scala, PHP, Python, Ruby, Ballerina, .NET and Rust (We prefer and recommend WASM compatible Rust)
+* Workflow tasks can be RPC calls or OpenWhisk actions which can be written in multiple languages - NodeJS, Go, Java, Scala, PHP, Python, Ruby, Ballerina, .NET and Rust (We prefer and recommend WASM-compatible Rust)
 * First class support to MQTT Endpoints.  
 
 ## Team :busts_in_silhouette:
