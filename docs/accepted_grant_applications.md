@@ -348,7 +348,7 @@
 | [PolkaMusic](https://polkamusic.io/) | Operating decentralized music businesses on blockchain | [GitHub](https://github.com/polkamusic/PolkaMusic) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [element36](https://element36.io) | FIAT on-off-ramp | [GitHub](https://github.com/element36-io) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Zondax](https://zondax.ch/) | Ledger Asset App | [GitHub](https://github.com/Zondax) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Moonbeam Network](https://moonbeam.network/) | Pallet-dPoS for Parachain Staking | [GitHub](https://github.com/PureStake/moonbeam) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Moonbeam Network](https://moonbeam.network/) | Pallet-dPoS for Parachain Staking | [GitHub](https://github.com/PureStake/moonbeam) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Dora Factory](https://dorafactory.org/) | MolochDAO substrate pallets v1 and v2 | [GitHub](https://github.com/DoraFactory) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | BCANN |  Blockchain system for Assigned Names And Numbers | [GitHub](https://github.com/weitaolee) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [MyBank Labs](https://mybank.network/) | Platform Bank, Social Network Bank, MyDeX and Credit Scoring System | [GitHub](https://github.com/mybank-network/mybank-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
