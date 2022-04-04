@@ -2,7 +2,7 @@
 
 - **Project Name:** Privacy Enhancement for Polkadot Extension
 - **Developer:** Ender Dogan
-- **Payment Address:** Ethereum: 0xD4130B0F66F1a621A901888B6e239906D1B680Ee
+- **Payment Address:** Ethereum: 0x422CCe9bb1693f7878657B067471F762a3953681
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
