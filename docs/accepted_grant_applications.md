@@ -27,6 +27,7 @@
   - [:surfing_woman: Wave 12 - Fourth Quarter 2021](#surfing_woman-wave-12---fourth-quarter-2021)
 - [2022](#2022)
   - [:surfing_woman: Wave 13 - First Quarter 2022](#surfing_woman-wave-13---first-quarter-2022)
+  - [:surfing_woman: Wave 14 - Second Quarter 2022](#surfing_woman-wave-14---second-quarter-2022)
 
 # 2019
 
@@ -461,5 +462,9 @@
 | [Setheum](https://setheum.xyz/) | Setheum HighEnd LaunchPad Crowdsales Module | [GitHub](https://github.com/Setheum-Labs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SaaS3 Lab](https://www.saas3.io) | SaaS3 | [GitHub](https://github.com/SaaS3DAO/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [NUTS Finance](https://nuts.finance) | DOT-pegged derivative built on top of the stable asset protocol | [GitHub](https://github.com/nutsfinance/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [TDSoftware](https://www.tdsoftware.de/) | SubIdentity | [GitHub](https://github.com/TDSoftware) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
+## :surfing_woman: Wave 14 - Second Quarter 2022
+
+| Team | Project | Link | Terminated | First Delivery | Completed
+| :--- | :------ | :--- | :--------: | :------------: | :-------: |
+| [TDSoftware](https://www.tdsoftware.de/) | SubIdentity | [GitHub](https://github.com/TDSoftware) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
