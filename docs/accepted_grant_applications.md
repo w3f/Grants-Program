@@ -468,3 +468,4 @@
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
 | [TDSoftware](https://www.tdsoftware.de/) | SubIdentity | [GitHub](https://github.com/TDSoftware) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [ChainSafe Systems](https://chainsafe.io/) | SubstrateSnap Maintenance Proposal | [GitHub](https://github.com/ChainSafe/metamask-snap-polkadot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
