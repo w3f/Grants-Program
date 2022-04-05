@@ -196,8 +196,8 @@ This proposal outlines the second step in the development of Fennel Protocol, a 
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains the basic structure of our identity management tools and how they can be used at the blockchain level. |
-| 1. | Encryption and Message Tie-Ins | Support for Fennel Protocol’s off-chain encryption, key generation, and message passing features will be wrapped with a user-friendly interface than the CLI. |
+| 0e. | Article | We will publish an **article** that describes the interface we've designed and the experience of Fennel Protocol it conveys. |
+| 1. | Encryption and Message Tie-Ins | Support for Fennel Protocol’s off-chain encryption, key generation, and message passing features will be wrapped with a more user-friendly web app-based interface. |
 | 2. | Fennel Protocol Tie-Ins | Using the Fennel Protocol RPC and polkadot.js directly, we’ll add support for interacting directly with the blockchain from the web interface. |
 | 3. | Whiteflag Message Support | Using fennel-lib, we will integrate Whiteflag Protocol with the Fennel Protocol interface. This will also support other location-based signaling mechanisms. |
 
@@ -213,9 +213,9 @@ This proposal outlines the second step in the development of Fennel Protocol, a 
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that describes key generation and management with Fennel Protocol. |
-| 1. | Implementation of Whiteflag Protocol | Following the Whiteflag specification, we will expand our existing Whiteflag message generation/parsing to include all elements of the Protocol. |
-| 2. | Whiteflag Integration - fennel-cli | The Fennel command line client will be updated with full support for the full range of features provided by the Whiteflag Protocol |
+| 0e. | Article | We will publish an **article** that describes the interface design process and gives further background on the full features of Whiteflag beyond those already discussed in our first grant application. |
+| 1. | Implementation of Whiteflag Protocol | Following the Whiteflag specification, we will expand our existing Whiteflag message generation/parsing to include all elements of the Protocol. This will include support for encoding and decoding all message classes, as well as JSON support for serialization of already-decoded messages between off-chain Whiteflag resources. <br><br>This deliverable encompasses achieving full testing parity with github.com/WhiteflagProtocol/whiteflag-java. |
+| 2. | Whiteflag Integration - fennel-cli | The Fennel command line client will be updated with full support for the full range of features provided by the Whiteflag Protocol. At the conclusion of the first grant, fennel-lib included encode/decode support for authentication messages and the basic set of Whiteflag message reference codes. This expansion will include all reference codes as command-line options for all message classes with some intelligent automation (e.g., if an authentication message has already been sent the interface will disallow another authenciation message from being sent until the previous is revoked), as well as full integration of fennel-lib's cryptography functions with our Whiteflag implementation. |
 | 3. | IPFS Support | Up until now, the Fennel Protocol Keystore Pallet relied on users publishing keys and announcing their locations to the chain. We shall update the fennel-lib repository with IPFS integration to allow applications to publish keys in one command. |
 
 ## Future Plans
