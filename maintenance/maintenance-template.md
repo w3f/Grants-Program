@@ -106,6 +106,7 @@ Our responsibilities:
 
 ### Overview
 
+- **Start Date:** Date, when you plan to start with the maintenance work. 
 - **Sprint/Period Duration:** Duration of the sprint/period (e.g. 4 weeks)
 - **Total Duration:** Duration of the entire maintenance contract (e.g. 1 year)
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
