@@ -8,6 +8,7 @@
 * **Team Name:** Matthew Darnell (Individual)
 * **Payment Address:** `15ssDeS9peN9a3rDwFrV19YJ8oRffmphaE` (BTC)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/625#issuecomment-1047869564)
 
 ## Project Overview :page_facing_up:
 

@@ -103,7 +103,7 @@ Features that are already implemented and you can see them in the demo:
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  2 FTE
-- **Total Costs:** 20,000 USD
+- **Total Costs:** 18,000 USD
 
 ### Milestone 1 Implement: Extension, Utilities
 
@@ -123,11 +123,11 @@ Features that are already implemented and you can see them in the demo:
 | 3. | Deploy v.1.0 | First deployment, the potential users will help to identify any bugs |
 
 
-### Milestone 2 Implement: API, Contracts, Keyring
+### Milestone 2 Implement: API, Keyring
 
 - **Estimated Duration:** 1 month
 - **FTE:**  2 FTE
-- **Costs:** 10,000 USD
+- **Costs:** 8,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -136,10 +136,9 @@ Features that are already implemented and you can see them in the demo:
 | 0c. | Documentation | A documentation page that will explain the plugin element fields, what they mean, what parameters are needed, and how to use the element actions. |
 | 0d. | Testing Guide | Since No-Code doesn't have any type of testing, we will provide demo pages that will cover at least 50% of all plugin features that can be tested directly on the page with a description in the documentation |
 | 0e. | Forum post | Post updates with the new features and elements |
-| 1. | API | Plugin element that will implement all API features |  
-| 2. | Contracts | Plugin element with the Contracts features | 
-| 3. | Keyring | Plugin element with the Keyring features | 
-| 4. | Deploy v.2.0 | Deploy newly created elements |
+| 1. | API | Plugin element that will implement main API features |  
+| 2. | Keyring | Plugin element with the Keyring features | 
+| 3. | Deploy v.2.0 | Deploy newly created elements |
 
 
 ## Future Plans

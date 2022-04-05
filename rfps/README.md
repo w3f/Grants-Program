@@ -5,7 +5,6 @@
 - [:grey_question: What is an RFP?](#grey_question-what-is-an-rfp)
 - [:scroll: List of current RFPs](#scroll-list-of-current-rfps)
   - [Availability and Validity - Network Topology](#availability-and-validity---network-topology)
-  - [Candle auction smart contract](#candle-auction-smart-contract)
   - [e-Passport ZK Validation](#e-passport-zk-validation)
   - [RFP: Substrate Identity Directory](#rfp-substrate-identity-directory)
   - [ink!/pallet/solidity performance benchmarking](#inkpalletsolidity-performance-benchmarking)
@@ -16,18 +15,18 @@
   - [Polkadot Collator Setup](#polkadot-collator-setup)
   - [Privacy Enhancement for Polkadot Extension](#privacy-enhancement-for-polkadot-extension)
   - [High-availability validator setup](#high-availability-validator-setup)
-  - [Summary](#summary)
   - [SCALE Codec Comparator](#scale-codec-comparator)
   - [Social Recovery Wallet](#social-recovery-wallet)
   - [Uncollateralized Stablecoin](#uncollateralized-stablecoin)
   - [polkadot-validator-setup maintenance](#polkadot-validator-setup-maintenance)
   - [XCM library & tools](#xcm-library--tools)
+  - [Sub-consensus mechanism](#sub-consensus-mechanism)
 - [:mailbox_with_mail: Suggest an RFP](#mailbox_with_mail-suggest-an-rfp)
 
 
 ## :grey_question: What is an RFP?
 
-An RFP (Request for Proposals) is a declaration of interest for others to submit a grant application regarding a specific project. They usually revolve around issues that the author (often someone from our team, but [anyone can suggest one](#mailbox_with_mail-rfp-suggestions)) deems useful and missing or unsolved in our ecosystem.
+An RFP (Request for Proposals) is a declaration of interest for others to submit a grant application regarding a specific project. They usually revolve around issues that the author (often someone from our team, but [anyone can suggest one](/README.md#mailbox_with_mail-suggest-a-project)) deems useful and missing or unsolved in our ecosystem.
 
 If you find an open RFP here that you think you can address, feel free to [submit a grant application](../README.md#1-application). There is a [section in our application template](../applications/application-template.md#project-overview-page_facing_up) where you can reference the RFP you are addressing.
 
@@ -48,7 +47,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 #### Project Description :page_facing_up:
 
-A part of the promise of Polkadot is to bring scalability to the blockchains. The way it achieves it is via delegating application-specific logic from layer 0 (the relay chain) to layer 1 chains (parachains). In order to achieve this efficiently yet securely, each parachain has its own block production mechanism (achieving efficienct block production), but the finalisation of candidate parachain blocks still happens with the involvement of the relay chain validators.
+A part of the promise of Polkadot is to bring scalability to the blockchains. The way it achieves it is via delegating application-specific logic from layer 0 (the relay chain) to layer 1 chains (parachains). In order to achieve this efficiently yet securely, each parachain has its own block production mechanism (achieving efficient block production), but the finalisation of candidate parachain blocks still happens with the involvement of the relay chain validators.
 
 The full mechanism is described in [the host specification](https://github.com/w3f/polkadot-spec/blob/main/host-spec/c07-anv.tm). In short, it is split in two parts: first, a publicly known subset of validators attests that the parachain block data is available to them (i.e. they must have it in their local storage); second, once 2/3+ of the first group have published their availability votes, a "secret" (VRF-based assignment) subset of validators checks the validitiy of the candidate, by checking its state transition against that parachain runtime, which is available on-(the relay)chain. ...
 
@@ -62,34 +61,6 @@ The full mechanism is described in [the host specification](https://github.com/w
 
 ----
 
-
-### Candle auction smart contract
-
-
-- Published: 2021-07-20
-
-
-- [:arrow_right: candle-auction.md](./candle-auction.md)
-
-
-- **Proposer:** [mmagician](https://github.com/mmagician)
-
-
-#### Project Description :page_facing_up:
-
-Auctions will come in handy for various types of applications, but especially for NFTs.
-
-The idea behind this proposal is to create an `ink!` smart contract that is able to run a candle auction mechanism. This will be known to Polkadot followers from the [parachain auction mechanism](https://wiki.polkadot.network/docs/en/learn-auction). One of the advantages of the candle mechanism is that it incentivises bidders to submit their true bids early, thus leading to more optimal market. ...
-
-
-#### Deliverables :nut_and_bolt:
-
-- **Total Estimated Duration:** 1 month
-- **Full-time equivalent (FTE):** 1
-
-
-
-----
 
 
 ### e-Passport ZK Validation
@@ -269,7 +240,7 @@ The basic deliverable of this project is an API package hosted on Packagist whic
 - [:arrow_right: polkadot-collator-setup.md](./polkadot-collator-setup.md)
 
 
-- **Proposer:** mmagician
+- **Proposer:** [mmagician](https://github.com/mmagician)
 
 
 #### Project Description :page_facing_up:
@@ -325,12 +296,10 @@ As outlined [here](https://github.com/polkadot-js/extension/issues/893), the del
 - [:arrow_right: raft-validators.md](./raft-validators.md)
 
 
-- **Proposer:** mmagician
+- **Proposer:** [mmagician](https://github.com/mmagician)
 
 
 #### Project Description :page_facing_up:
-
-### Summary
 
 Validator leader selection via Raft consensus. Inspired by internal discussions & [certus.one active-active validator setup](https://kb.certus.one/validator_ha.html#active-active-validator). ...
 
@@ -474,9 +443,34 @@ A list of possible tasks to work on:
 
 #### Project Description :page_facing_up:
 
-XCM is the crosschain communication standard that will be used by all the parachains. Currently XCM is still in early stage but is already support some main usecases such as crosschain transfer of fungible tokens.
+XCM is the crosschain communication standard that will be used by all the parachains. Currently XCM is still in early stage but already supports some main use cases such as crosschain transfer of fungible tokens.
 
 There are currently two major areas of XCM that still awaiting to be improves: ...
+
+
+----
+
+
+### Sub-consensus mechanism
+
+
+- [:arrow_right: sub-consensus.md](./sub-consensus.md)
+- Published: 2022-02-23
+- **Status:** Open
+- **Proposer:** mmagician, laboon
+
+
+#### Project Description :page_facing_up:
+
+Parachain dApps suffer from long confirmation times due to the time taken for the Relay Chain to issue an on-chain verification of the parachain blocks. This proposal aims at providing an alternative mechanism for providing parachain users with an alternative, probabilistic sub-consensus mechanism. ...
+
+
+#### Deliverables :nut_and_bolt:
+
+- **Total Estimated Duration:** 3 months
+- **Full-time equivalent (FTE):** 1
+- **Total Costs:** 40,000 DAI
+
 
 ----
 
