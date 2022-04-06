@@ -469,3 +469,4 @@
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
 | [TDSoftware](https://www.tdsoftware.de/) | SubIdentity | [GitHub](https://github.com/TDSoftware) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [ChainSafe Systems](https://chainsafe.io/) | SubstrateSnap Maintenance Proposal | [GitHub](https://github.com/ChainSafe/metamask-snap-polkadot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [HugoByte](https://hugobyte.com/) | Project Aurras - MVP - Phase 2 | [GitHub](https://github.com/HugoByte) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
