@@ -114,6 +114,10 @@ In general, Dante Network will help Polkadot to expand its boundaries.
 - **Contact Name:** Shawn Zheng
 - **Contact Email:** DanteDev01@hotmail.com, xiyuzheng1984@gmail.com
 - **Website:** https://www.dantechain.com/
+- **Twitter:** https://twitter.com/DanteNetwork 
+- **Medium:** https://dante-network.medium.com/ 
+- **Telegram:** https://t.me/DanteNetworkEN 
+- **Email:** murphy_l@dantechain.com 
 
 ### Legal Structure
 
