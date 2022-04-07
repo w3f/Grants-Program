@@ -22,6 +22,7 @@
 
 - [ ] Social Media
 - [ ] Hackathon
+- [ ] Personal Recommendation
 - [ ] Substrate Builders Program
 - [ ] Investor/VC
 - [ ] Online Search 
