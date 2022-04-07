@@ -17,3 +17,12 @@
 - [ ] The software delivered for this grant will be released under an open-source license specified in the application.
 - [ ] The initial PR contains only one commit (squash and force-push if needed).
 - [ ] The grant will only be announced once the first milestone [has been accepted](https://github.com/w3f/Grant-Milestone-Delivery#process).
+
+### How Did You Hear About Us?
+
+- [ ] Social Media
+- [ ] Hackathon
+- [ ] Substrate Builders Program
+- [ ] Investor/VC
+- [ ] Online Search 
+- [ ] Other _______
