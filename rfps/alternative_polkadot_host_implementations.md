@@ -27,4 +27,4 @@ For Polkadot Host Implementations, it’s probably too complex to structure the 
 - Consensus engine for GRANDPA and BABE.
 - Wasm interpreter and virtual machine.
 - Low level primitives for a blockchain, such as cryptographic primitives like hash functions.
-- Availability & Validity components 
+- Availability & Validity components to support parachains. 
