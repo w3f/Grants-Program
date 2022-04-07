@@ -25,4 +25,4 @@
 - [ ] Substrate Builders Program
 - [ ] Investor/VC
 - [ ] Online Search 
-- [ ] Other _______
+- [ ] Other: _______
