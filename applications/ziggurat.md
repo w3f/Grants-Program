@@ -23,8 +23,7 @@ This work started with the ZCash network, and now we would like to expand it to 
 
 ### Project Details
 
-Ziggurat currently exists as a [command line tool] but this scope of work
-will expand that into CI/CD pipelines, as well as a web-based UI.
+Ziggurat currently exists as a [command line tool] for node developers to test conformance to spec, performance bottlenecks, and resistance against malicious behavior. 
 
 For ease of review, a sample test is included here:
 
@@ -67,14 +66,7 @@ see the [Test Index]. **Please note that Ziggurat is a **black box** testing fra
 
 ### Technology Stack
 
-#### The Test Runner
 Ziggurat uses the Rust programming language to create very detailed network-only node implementations for our target networks. Within Rust, we have adopted the tokio ecosystem (bytes, tokio-util, tracing etc.)
-
-#### CI Integration
-The technology stack here is unfortunately determined by third-party vendors such as GitHub or GitLab. We will work within these constraints but keep touchpoints minimal during the integration to mitigate as much lock-in as we can.
-
-#### Web-based User Interface
-We have not yet determined which framework we will build our UI in, but it will likely be chosen from one of the following: Python/Django, Rust/Rocket, React, or Remix.
 
 ### Ecosystem Fit
 
@@ -91,7 +83,7 @@ This comes with many benefits:
 - *Flexibility* - The custom nodes can be written "from scratch" - not relying on external dependencies on underlying libraries, and can therefore test behavior that is "out of bounds"
 - *Developer Experience* - the custom nodes can generally be spun up and torn down very quickly, which can be helpful in large-scale topology tests. Our current `pea2pea` benchmarks shows a node can be ready in 120us, using as little as 3-18kB of base RAM and ~21kB of RAM per connection.
 - Plus, the node can be easily customized further, e.g. holding necessary state for more complex testing.
-- *Capabilities beyond testing* - The custom nodes will also be utilized in the network crawler and could potentially have other use cases beyond that.
+- *Capabilities beyond testing* - The custom nodes could also be utilized in the network crawler and could potentially have other use cases beyond that - see the "Future Work" section below for more information.
 
 While Ziggurat is not a generalized panacea, it is the first steps toward more foundational network tooling and already has a proven track record of guiding node developers toward mitigation.
 
@@ -180,17 +172,12 @@ Team members:
 
 For detailed information on this implementation, see the [Ziggurat manual].
 
-Beyond expanding the test suite itself, the team will add new functionality to Ziggurat: CI support, and network crawler, and a web-based GUI. This tooling would further streamline development and allow us to look beyond a single node's networking interfaces.
-We will then use the data collected for analysis in terms of node centrality, clustering, island formation, and overall performance.
-
-Additionally, David Hawig suggested we apply for a grant in recent conversations.
-
 [Ziggurat]: https://github.com/eqlabs/ziggurat
 [Ziggurat manual]: (https://fluttering-gem-83c.notion.site/The-Ziggurat-Manual-88f6ab7d85774c5fb1bc12bcd64bf700)
 
 ## Development Roadmap :nut_and_bolt:
 
-This project has several clear activities / deliverables.
+This project has one main deliverable: the test suite. However, this deliverable is prefaced by a pre-flight check phase of requirement gathering and liasing with node developers.
 
 ### 1. Pre-flight Checks
 
@@ -211,85 +198,30 @@ Create a suite of black box tests for conformance to spec, performance bottlenec
   - Spawning a vast amount of connections or reconnecting many times
   - Spamming messages
 
-### 3. CI Integration
+## Budget and Schedule
 
-Work the above test suite into continuous integration, to run against any future releases of Polkadot
-
-- Ensure that Ziggurat is flexible and configurable enough to run in a CI/CD context
-- Generate basic HTML output from Zigurrat runs to be displayed from the CI/CD UI
-
-### 4. Create network crawler
-
-Use our existing lightweight node implementation that only includes the networking portion of the protocol in order to map the network topology (and other relevant data) for analysis
-
-- Extend the test-driven subset of the network protocol (if needed)
-- Create a node designed specifically to crawl the Polkadot network
-- Introduce runtime logs and, possibly, means of interactive introspection via RPC or similar
-
-### 5. Create web-based UI
-Create a web application that encapsulates all feasible Ziggurat features.
-
-- Collect relevant data from both Ziggurat nodes and crawlers
-- Introduce endpoints exposing that data to be consumed by GUI clients
-- Implement a front-end based either on CI integration or "front door" user login
-
-### 6. Ziggurat-as-a-Service, closed beta
-Once the team is confident in the new UI based tooling, they will invite members of the Web3, Polkadot, and Kusama team to log in to the web application and try it out.
-
-- Instrument the front-end with analytics and observability
-- Invite a small group of people to test the front-end
-- Collect feedback from the user group
-
-### Overview
-
-- **Total Estimated Duration:** Six months
+- **Total Estimated Duration:** Three months
 - **Full-Time Equivalent (FTE):**  4 FTE
-- **Total Costs:** $372,000
-
-All milestones will have similar deliverables, see the table below the list of milestones.
-
-### Milestone 1 — Pre-Flight Checks
-
-- **Estimated duration:** 1 month
-- **FTE:**  4
-- **Costs:** 90,000 USD
-
-### Milestone 2 — 33% Completion
-
-- **Estimated duration:** 2 months
-- **FTE:**  4
-- **Costs:** 94,000 USD
-
-### Milestone 3 — 66% Completion
-
-- **Estimated duration:** 2 months
-- **FTE:**  4
-- **Costs:** 94,000 USD
-
-### Milestone 4 — 100% Completion
-
-- **Estimated duration:** 1 month
-- **FTE:**  4
-- **Costs:** 94,000 USD
+- **Total Costs:** $186,000
 
 ### Milestone Deliverables
 
-Each milestone will include a progress report with the following
-deliverables, to cover the grant requirements.
+We would like to request 50% payment upon the approval of the grant, and 50% payment upon delivery of the following:
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | Progress Report | May be in the form of an email, markdown file, blog post, whichever is most approproate for the time and context. |
-| 0b. | Documentation | Documentation will be diligently updated and maintained as the codebase progresses and tests are written. |
-| 0c. | Testing Guide | We will provide developer-level guidelines for running the test suite, as well as running the crawler and UI in a development environment. |
-| 0d. | Docker | We will provide and update Dockerfiles as appropriate for e.g. Zigurat, the Crawler, and the UI. |
-| 0e. | PR (case by case) | When appropriate, we will work with the W3F to publish articles and/or social media posts regarding our findings |
-| 0f. | Security Disclosures | Though we will disclose these as soon as they are discovered, they are included here as a digest. We will follow W3F guidelines for responsible disclosures.  |
+| 1a. | The test suite | A respository of Rust code quite like the [existing ZCash test suite](https://github.com/eqlabs/ziggurat). |
+| 1a. | Final report | May be in the form of an email, markdown file, blog post, whichever is most approproate for the time and context. |
+| 1b. | Documentation | Documentation will be diligently updated and maintained as the codebase progresses and tests are written. Likely an extension or continuation of the existing [Ziggurat Manual](https://fluttering-gem-83c.notion.site/The-Ziggurat-Manual-88f6ab7d85774c5fb1bc12bcd64bf700) |
+| 1c. | Testing Guide | We will provide developer-level guidelines for running the test suite locally. |
+| 1e. | PR (case by case) | When appropriate, we will work with the W3F to publish articles and/or social media posts regarding our findings |
+| 1f. | Security Disclosures | Though we will disclose these as soon as they are discovered, they are included here as a digest. **We will default to pricate disclosure of security vulnerabilities and otherwise follow W3F guidelines.**  |
 
 ## Future Plans
 
 One we have the Ziggurat service up and running, we will continue to add new features that could potentially include (but not be limited to):
 
+- Network crawler for topology analysis
 - Network Layer Auditing: More formalized processes
 - "Continuous" features, such as continuous testing, fuzzing, and overall network health monitoring
 - Additional exposure and coverage of other L1/L2 networks, and bridges between them
