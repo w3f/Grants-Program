@@ -211,11 +211,12 @@ We would like to request 50% payment upon the approval of the grant, and 50% pay
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 1a. | The test suite | A respository of Rust code quite like the [existing ZCash test suite](https://github.com/eqlabs/ziggurat). |
-| 1a. | Final report | May be in the form of an email, markdown file, blog post, whichever is most approproate for the time and context. |
-| 1b. | Documentation | Documentation will be diligently updated and maintained as the codebase progresses and tests are written. Likely an extension or continuation of the existing [Ziggurat Manual](https://fluttering-gem-83c.notion.site/The-Ziggurat-Manual-88f6ab7d85774c5fb1bc12bcd64bf700) |
-| 1c. | Testing Guide | We will provide developer-level guidelines for running the test suite locally. |
-| 1e. | PR (case by case) | When appropriate, we will work with the W3F to publish articles and/or social media posts regarding our findings |
+| 1b. | Final report | May be in the form of an email, markdown file, blog post, whichever is most approproate for the time and context. |
+| 1c. | Documentation | Documentation will be diligently updated and maintained as the codebase progresses and tests are written. Likely an extension or continuation of the existing [Ziggurat Manual](https://fluttering-gem-83c.notion.site/The-Ziggurat-Manual-88f6ab7d85774c5fb1bc12bcd64bf700) |
+| 1d. | Testing Guide | We will provide developer-level guidelines for running the test suite locally. |
+| 1e. | Marketing / Public Relations (case by case) | When appropriate, we will work with the W3F to publish articles and/or social media posts regarding our findings |
 | 1f. | Security Disclosures | Though we will disclose these as soon as they are discovered, they are included here as a digest. **We will default to pricate disclosure of security vulnerabilities and otherwise follow W3F guidelines.**  |
+| 1g. | Open Source License | Ziggurat is currently dual-licensed under the exceedingly permissive Apache + MIT combination and will continue to be. |
 
 ## Future Plans
 
