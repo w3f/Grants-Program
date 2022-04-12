@@ -236,7 +236,7 @@ All data is openly accessible and managed via custom models implemented in the d
 
 ![image] <https://docs.google.com/document/d/1nqyskjdRKbw9p8EnkmX3J0muZd2x7u654EYRkri2t0E/edit?usp=sharing>
 
-The core idea of POC consensus is to periodically report the hashes of data snapshots to a dedicated smart contract deployed on an Etherurem public blockchain. Once the report is submitted, it cannot be altered. The node cannot be trusted if the report does not match the publicly available and independently verifiable snapshot. The smart contract is used to check the liveness and integrity of the deployment. POC consensus uses correctness check instead of voting. All incoming transactions are recorded. There is only one correct way to execute them so no two conflicting transactions in different nodes. All transactions are executed immediately, during the open session of the Node, with a pre-defined decision deadline so that no fork will be created in TaoCoDAO blockchain.
+The core idea of POC consensus is to periodically report the hashes of data snapshots to a dedicated smart contract deployed on an MoonBeam public blockchain. Once the report is submitted, it cannot be altered. The node cannot be trusted if the report does not match the publicly available and independently verifiable snapshot. The smart contract is used to check the liveness and integrity of the deployment. POC consensus uses correctness check instead of voting. All incoming transactions are recorded. There is only one correct way to execute them so no two conflicting transactions in different nodes. All transactions are executed immediately, during the open session of the Node, with a pre-defined decision deadline so that no fork will be created in TaoCoDAO blockchain.
 
 The framework provides autonomous but distinct execution environments for each individual TContract. The contracts with mismatched footprints can be excluded from the consensus, thus guarantee timely footprint reports even if some contracts cannot establish consensus within their contexts. The goal of each TContract is to assure each transaction is executed identically across all the nodes. To enforce this, the TContract will produce a footprint of its current data after each transaction. If the footprints do not match, the TContract will be temporarily excluded from the snapshot.
 
@@ -451,10 +451,10 @@ Our Private Blockchain is running on the Tao Framework, which is designed to enc
 | 0c. | Testing Guide 2d | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker 1d| We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article 1d | We will publish an article/workshop that explains our advertising workflow as well as technical details.|
-| 1. | Payment Infrastrue components 6d|we will build the payment infrastructure components, which include VPOS; Token Signers; Communication Channels, etc. |  
-| 2. | Exchange Server Components 6d | We will develop Token Exchange Smart Contract, Transaction Data Structure etc. |  
+| 1. | Payment Infrastrue components 6d|we will build the payment infrastructure components, which include VPOS; Token Signers; Communication Channels |  
+| 2. | Exchange Server Components 6d | We will develop Token Exchange Smart Contract, Transaction Data Structure |  
 | 3. | Tao-Framework components 6d | We will create a Substrate module that works as a network node on the cloud, which is sufficient for participating in POC (proof of correctness) protocol. The core is responsible for networking, cryptography, synchronization, protocol, process and thread management, signature and authenticity verification, transaction parsing, data encoding and decoding, and communication with the smart contract  |  
-| 4. | Blockchain consensus protocol 6d | Develop the TNPOS(Transaction Nominated Proof of Stake) consensus protocol, including how to elect the collector, how to produce the block, block finality determination, etc. |  
+| 4. | Blockchain consensus protocol 6d | Develop the TNPOS(Transaction Nominated Proof of Stake) consensus protocol, including how to elect the collector, how to produce the block, block finality determination |  
 
 ### Milestone 2 —System integration and running the workflows on the test environment. Final run and performance testing in the pre-production-like environment
 
@@ -464,10 +464,14 @@ Our Private Blockchain is running on the Tao Framework, which is designed to enc
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | System Integration 4d| We will integrate all the development components, including Tao-Blockchain, Vpos, TaoToken Protocol, Token Signers, Communication Channels etc. |  
+| 0a. | Documentation 1d| We will provide  a basic tutorial that explains what an use case looks like and how to run a test case |
+| 0b. | Testing Guide 2d | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0c. | Docker 1d| We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0d. | Article 1d | We will publish an article/workshop that explains our advertising workflow as well as technical details.|
+| 1. | System Integration 4d| We will integrate all the development components, including Tao-Blockchain, Vpos, TaoToken Protocol, Token Signers, Communication Channels |  
 | 2. | ProtoType development 4d |We will develop a prototype for a specific use case. |
 | 3. | ProtoTpe test run 4d| We will run the prototype in the test environment.|  
-| 4. | Performance Evaluation 3d |We will run the performance evaluation, including the Transaction Throughput, Transaction Latency, Communication Overhead, etc.|
+| 4. | Performance Evaluation 3d |We will run the performance evaluation, including the Transaction Throughput, Transaction Latency, Communication Overhead |
 
 ## Future Plans
 
