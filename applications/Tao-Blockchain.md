@@ -407,16 +407,21 @@ This project has been developed for more than a year. We have partnered with Bei
 
 ### Tao-Framework Development
 
- Refer to <https://docs.google.com/document/d/1wDyPcazULS7TwKM6L0iwdzD_XVFNvPyKmm9aLW0NR38/edit?usp=sharing> for detail
+The Tao-Framework web communication API will be implemented using Web3.js 1.3.0, and node-rest-client 1.3.1. The Tao-Node will be implemented base on MoonBeam Dev node, using Node.js 10, Substrate Pallet, and Web3.js 1.3. We will deploy 4 TaoCODAO Nodes on individual Ubuntu 20.04 servers on Microsoft Azure cloud for testing. Then, we implement the smart contract using Substrate ink!, with the test deployment available on MoonBeam test network.
+
+Refer to <https://docs.google.com/document/d/1wDyPcazULS7TwKM6L0iwdzD_XVFNvPyKmm9aLW0NR38/edit?usp=sharing> for detail
 
 ### Exchange Server Development
+
+We will use MoonBeam unified account to sign the transaction and deploy the smart contract, which has the standard ERC777 implementation on the MoonBeam network.
 
 Refer to <https://docs.google.com/document/d/1BMW0y6hxiBQcLa5-SypvjpHRheM_xLg0NacN3MWUU4E/edit?usp=sharing> for detail
 
 ### Offline Payment Infrastructure Development
 
-Refer to <https://docs.google.com/document/d/1-ebWPoWI4fQgJfifLP8PRTMUxONLGjyc11r-37yQDXE/edit?usp=sharing> for detail
+We will use the Private blockchain that developed under the Tao-Framework as mentioned above. Use the MoonBeam blockchain network as the public blockchain network. The offline payment communication protocol will be developed using web3.py.
 
+Refer to <https://docs.google.com/document/d/1-ebWPoWI4fQgJfifLP8PRTMUxONLGjyc11r-37yQDXE/edit?usp=sharing> for detail
 
 ## EcoSystem Fit
 
