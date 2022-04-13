@@ -8,9 +8,9 @@
 
 ## Overview
 
-[Afloat](https://stayafloat.io/#/) is one of the first real-use cases of blockchain technology in the accounting industry. It enables the fractional buying and selling of tax credits that historically have been inefficient, opaque and centralized. It has already processed tax credits ranging in orders from $2K -$70k USD.
+[Afloat](https://stayafloat.io/#/) is one of the first real-use cases of blockchain technology in the accounting industry. It enables the fractional buying and selling of tax credits that historically have been inefficient, opaque, and centralized. It has already processed tax credits ranging in orders from $2K -$70k USD.
 
-Afloat was built on a private Ethereum clone but wants to migrate to Polkadot due to its technology, identity management and community. Parachains like Kilt and their identity services would be crucial at validating government roles and professional certifications like accountants and institutional sellers. 
+Afloat was built on a private Ethereum clone but wants to migrate to Polkadot due to its technology, identity management, and community. Parachains like Kilt and their identity services would be crucial at validating government roles and professional certifications like accountants and institutional sellers. 
 
 ## Project Details
 
@@ -22,9 +22,9 @@ Historically, the tax credit industry’s transfer process has been deeply ineff
 
 ### Product
 
-[Afloat](https://stayafloat.io/#/) uses blockchain technology to add trust and liquidity to the market, allowing smaller fractional shares of tax credits to be transferred. So far, Afloat has facilitated the transfer of $145,000 worth of tax credits between multiple buyers and sellers, 90% with whom Afloat anticipates an ongoing relationship. One of the platform’s sellers is an international company with over 10,000 employees, and the value of tax credits purchased per buyer has so far ranged between less than $2,000 and over $70,000.
+[Afloat](https://stayafloat.io/#/) uses blockchain technology to add trust and liquidity to the market, allowing smaller fractional shares of tax credits to be transferred. So far, Afloat has facilitated the transfer of over $500,000 worth of tax credits between multiple buyers and sellers, 90% with whom Afloat anticipates an ongoing relationship. One of the platform’s sellers is an international company with over 10,000 employees, and the value of tax credits purchased per buyer has so far ranged between less than $2,000 and over $70,000.
 
-Afloat has 108 active users. Many of these are CPAs (public accountants) and represent a network of taxpayers (credit buyers and sellers). We purposefully haven't had any marketing campaigns, and have been cautious with growth so far. We had a large batch of users enroll in December 2021 (end of tax year) and material increase (4x) year over year."
+With the ability to tap into a market sector that knows nothing about blockchain or cryptocurrency, Afloat has the potential to lay the foundation to onboard traditional companies into the Polkadot ecosystem beyond using only Afloat. We have 120 active users, many of which are CPAs (public accountants) and represent a network of taxpayers (credit buyers and sellers). We purposefully haven't had any marketing campaigns and have been cautious with growth so far. As of April 15, 2022, we have successfully processed more than twice the total number of tax credits processed in 2021. We had a large batch of users enroll in December 2021 (end of tax year) and material increase (4x) year over year."
 
 Having started in the US, Afloat, Inc., a Wyoming company, is compliant with existing federal, state, and local regulations and takes care of the entire transfer process with the following functions:
 
