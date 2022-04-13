@@ -8,7 +8,7 @@
 
 ## Overview
 
-[Afloat](https://stayafloat.io/#/) is one of the first real use-cases of blockchain technology in the accounting industry. It enables the fractional buying and selling of tax credits that historically have been inefficient, opaque and centralized. It has already processed tax credits ranging in orders from $2K -$70k USD.
+[Afloat](https://stayafloat.io/#/) is one of the first real-use cases of blockchain technology in the accounting industry. It enables the fractional buying and selling of tax credits that historically have been inefficient, opaque and centralized. It has already processed tax credits ranging in orders from $2K -$70k USD.
 
 Afloat was built on a private Ethereum clone but wants to migrate to Polkadot due to its technology, identity management and community. Parachains like Kilt and their identity services would be crucial at validating government roles and professional certifications like accountants and institutional sellers. 
 
@@ -163,7 +163,7 @@ Louise Reed is scheduled to speak at the following Certified Public Accountant S
 
 ### Team's experience
 
-Louise Reed has years of experience as a CPA and a successful private practice with a wide range of customers including multinationals. For the last X years she has focused on tax credits. Under her leadership, Afloat built the current application (private ethereum clone) with an in-house team and successfully launched in 2021. [Awards](https://stayafloat.io/#/media)
+With a master's degree in physics from Duke University and a Master of Accounting from the University of North Carolina at Chapel Hill, Louise W. Reed has been a CPA for fifteen years and has grown a successful private practice that specializes in working with small businesses. In the spring of 2018, Louise conceptualized and founded Afloat to allow her clients to have the same tax opportunities traditionally found in only the largest of CPA firms. Under her leadership, Afloat built the current application (private ethereum clone) with an in-house team and successfully launched in 2021. [Awards](https://stayafloat.io/#/media)
 
 Afloat is partnering with Hashed Systems DAO LLC, a substrate development team with years of experience building blockchain applications. They have worked on substrate and Polkadot since spring 2021. Their developers completed Brian Chen's course and have experience running substrate chains and have significant experience working with the Uniques, Identity and Node-authorization pallets. Additional relevant experience below:
 
