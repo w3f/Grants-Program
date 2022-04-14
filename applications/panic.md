@@ -174,13 +174,17 @@ This grant request consists of a single milestone with the aim of expanding the 
 #### Table 3
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0. | Research | Research about the metrics and data sources |
-| 1. | Monitors | Develop Substrate monitors |
-| 2. | Data Transformers | Develop Substrate data transformers |
-| 3. | Data Store | Develop Substrate data store |
-| 4. | Alerter | Develop Substrate alerter |
-| 5. | UI | Update high-level dashboards with new metric information |
-| 6. | Documentation | Update design and setup documentation |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | Update of design and setup documentation present on our repository |
+| 0c. | Testing Guide | Backend functions will be covered by unit tests. Frontend components will go through unit and end-to-end testing. When deliverables 1 - 7 are implemented and tested, a release candidate will be provided to our staking team for UAT |
+| 0d. | Docker | Our system will run on Docker. We will make available Dockerfiles to make the running and testing of the product possible |
+| 0e. | Article | Delivery of a Medium article on the need fulfilled by PANIC, together with a high-level description of the product and what’s coming next |
+| 1. | Research | Research about the metrics and data sources |
+| 2. | Monitors | Develop Substrate monitors |
+| 3. | Data Transformers | Develop Substrate data transformers |
+| 4. | Data Store | Develop Substrate data store |
+| 5. | Alerter | Develop Substrate alerter |
+| 6. | UI | Update high-level dashboards with new metric information |
 | 7. | UAT | User acceptance testing carried out by Simply VC’s staking team |
 
 ## Future Plans
