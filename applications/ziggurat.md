@@ -200,23 +200,42 @@ Create a suite of black box tests for conformance to spec, performance bottlenec
 
 ## Budget and Schedule
 
-- **Total Estimated Duration:** Three months
-- **Full-Time Equivalent (FTE):**  4 FTE
-- **Total Costs:** $186,000
-
 ### Milestone Deliverables
 
-We would like to request 50% payment upon the approval of the grant, and 50% payment upon delivery of the following:
+We will split the grant process into two milestones: one for requirement gathering and solidification, and another for the final test suite deliverables.
+
+#### Milestone 1: Requirement Gathering
+
+The Equilibrium team will liase with the Polkadot node developers to determine the best course of action, testing metholody, and testing targets for Ziggurat, culminating in a specification document to be followed in Milestone 2.
+
+- **Total Estimated Duration:** One months
+- **Full-Time Equivalent (FTE):**  4 FTE
+- **Total Costs:** $62,000
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1a. | The test suite | A respository of Rust code quite like the [existing ZCash test suite](https://github.com/eqlabs/ziggurat). |
-| 1b. | Final report | May be in the form of an email, markdown file, blog post, whichever is most approproate for the time and context. |
-| 1c. | Documentation | Documentation will be diligently updated and maintained as the codebase progresses and tests are written. Likely an extension or continuation of the existing [Ziggurat Manual](https://fluttering-gem-83c.notion.site/The-Ziggurat-Manual-88f6ab7d85774c5fb1bc12bcd64bf700) |
-| 1d. | Testing Guide | We will provide developer-level guidelines for running the test suite locally. |
-| 1e. | Marketing / Public Relations (case by case) | When appropriate, we will work with the W3F to publish articles and/or social media posts regarding our findings |
-| 1f. | Security Disclosures | Though we will disclose these as soon as they are discovered, they are included here as a digest. **We will default to pricate disclosure of security vulnerabilities and otherwise follow W3F guidelines.**  |
-| 1g. | Open Source License | Ziggurat is currently dual-licensed under the exceedingly permissive Apache + MIT combination and will continue to be. |
+| 1a. | Ziggurat Spec for Polkadot | This will be in the form of the form of the [ZCash spec] |
+| 1b. | Open Source License | Ziggurat is currently dual-licensed under the exceedingly permissive Apache + MIT combination and will continue to be. |
+
+[ZCash spec]: https://github.com/eqlabs/ziggurat/blob/main/SPEC.md
+
+#### Milestone 2: Test Suite Delivery
+
+The Equlibrium team will write and perform the testing designated by the specification delivered in Milestone 1, in addition to accoutrements such as documentation, blog posts, etc.
+
+- **Total Estimated Duration:** Two months
+- **Full-Time Equivalent (FTE):**  4 FTE
+- **Total Costs:** $124,000
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 2a. | The test suite | A respository of Rust code quite like the [existing ZCash test suite](https://github.com/eqlabs/ziggurat). |
+| 2b. | Final report | May be in the form of an email, markdown file, blog post, whichever is most approproate for the time and context. |
+| 2c. | Documentation | Documentation will be diligently updated and maintained as the codebase progresses and tests are written. Likely an extension or continuation of the existing [Ziggurat Manual](https://fluttering-gem-83c.notion.site/The-Ziggurat-Manual-88f6ab7d85774c5fb1bc12bcd64bf700) |
+| 2d. | Testing Guide | We will provide developer-level guidelines for running the test suite locally. |
+| 2e. | Marketing / Public Relations (case by case) | When appropriate, we will work with the W3F to publish articles and/or social media posts regarding our findings |
+| 2f. | Security Disclosures | Though we will disclose these as soon as they are discovered, they are included here as a digest. **We will default to pricate disclosure of security vulnerabilities and otherwise follow W3F guidelines.**  |
+| 2g. | Open Source License | Ziggurat is currently dual-licensed under the exceedingly permissive Apache + MIT combination and will continue to be. |
 
 ## Future Plans
 
