@@ -471,3 +471,4 @@
 | [ChainSafe Systems](https://chainsafe.io/) | SubstrateSnap Maintenance Proposal | [GitHub](https://github.com/ChainSafe/metamask-snap-polkadot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [HugoByte](https://hugobyte.com/) | Project Aurras - MVP - Phase 2 | [GitHub](https://github.com/HugoByte) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Perun Network](https://perun.network/) | Perun App Channels | [GitHub](https://github.com/perun-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [ChainSafe Systems](https://chainsafe.io/) | Privacy enhancement for Polkadot-js extension | [GitHub](https://github.com/ChainSafe) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
