@@ -94,17 +94,17 @@ This feature can only be delivered in 1 Milestone considering its scope and the 
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can authorize a Dapp to get access to some accounts, and how a user can change these accesses. |
 | 0c. | Testing Guide | This part of the extension does not have tests, because it does not have many moving part, and writing integration tests would be a whole other project. |
-| 0d. | Docker | There is no Docker needed |
+| 0d. | Docker | There is no Docker needed. |
 | 0e. | Article | We will publish an **article** that explains the new functionnality included in this project and its privacy benefits for all polkadot-js extension's users.
-| 1. | new approval screen | Users will be able to see all their accounts, check which one they want to share with the website, and optionnaly select all accounts at once |
-| 2. | new approval back-end | The current system of whitelist will be retired and a new system of authorization per website per account will be implemented. Note that the current account visibility feature (with the eye) will be kept untouched |
-| 3. | website approval enhancement | The current parameter screen "Manage Website Access" will be enhance where users can select per website what accounts are shared with each website. The account selection component will be re-used here so as to reduce maintenance hurdle. |
+| 1. | new approval screen | Users will be able to see all their accounts, check which one they want to share with the website, and optionnaly select all accounts at once. |
+| 2. | new approval back-end | The current system of whitelist will be retired and a new system of authorization per website per account will be implemented. Note that the current account visibility feature (with the eye) will be kept untouched. |
+| 3. | website approval enhancement | The current parameter screen "Manage Website Access" will be enhanced where users can select per website what accounts are shared with each website. The account selection component will be re-used here so as to reduce maintenance hurdle. |
 
 ## Future Plans
 
 Please include here
 
-- Thibaut has been a regular comtributor of the extension, as well as helping with the curration of the extension's issues, andthis should continue in the future.
+- Thibaut has been a regular comtributor of the extension in the past, he's been helping with the curration of the extension's issues as well, and this should continue in the future.
 
 
 ## Additional Information :heavy_plus_sign:
