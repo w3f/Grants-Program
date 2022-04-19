@@ -190,7 +190,7 @@ This milestone will allow citizens to register companies using our company regis
 | 0e. | Article | We will publish a detailed article, walking a user through all functionality and features.)
 | 1. | Land owner Pallet | We will create a pallet that will manage on-chain assets for land ownership |  
 | 2. | Metaverse integration Pallet | We will create a substrate pallet that interacts with our Metaverse|
-| 2. | Company Registration Pallet | We will create a substrate pallet that allows anyone that is holding LLM to incorporate a company | 
+| 3. | Company Registration Pallet | We will create a substrate pallet that allows anyone that is holding LLM to incorporate a company | 
 
 
 We have currently had a very talented architect firm design and create our metaverse, that you can find more information about here:
