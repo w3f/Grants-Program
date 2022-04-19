@@ -4,7 +4,7 @@
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** Tao : Asynchronous Payment Channels
+- **Project Name:** Tao: Asynchronous Payment Channels
 - **Team Name:** TAOCODAO LLC
 - **Payment Address:** bc1qseztg063z7p6kyje4eeqapy5gqkdel4248gsgf BTC, Ethereum (USDT/DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -20,12 +20,18 @@ Tao is designed to overcome blockchain technology's ultimate challenges: scalabi
 Therefore, we introduce "Tao," an innovative payment channel solution that remains secure under network asynchrony and concurrently provides correct incentives. The core idea is to incorporate the conflict resolution process within the channel by introducing a rational committee of external parties. Hence, if a party wants to close a channel unilaterally, it can only get the committee's approval for the last valid state. Furthermore, to provide sub-second latency, It uses consistent broadcasts to announce updates and close the channel. This lightweight abstraction is powerful enough to preserve safety and liveness to any rational parties.
 
 The system will address three challenges:
-**How to achieve the proactive security check without using a single trusted third party to approve every transaction:**
-    The system will employ a group of validators. If there is a dispute, they will make sure the correct state is the only one available for submission on-chain, regardless of its time to make this final state visible.
-**How to reduce the cost:**
-    The system will use a lightweight, consistent broadcast protocol to preserve safety and liveness.
-**How to address incentives:**
-    We employ both rewards and punishment to design the appropriate incentives such that the honest and rational behavior of Validators aligns. At the same time, no synchrony assumptions are required; the sentence of misbehaving Wardens is not conditional on timing assumptions.
+
+#### How to achieve the proactive security check without using a single trusted third party to approve every transaction
+
+The system will employ a group of validators. If there is a dispute, they will make sure the correct state is the only one available for submission on-chain, regardless of its time to make this final state visible.
+
+#### How to reduce the cost
+
+The system will use a lightweight, consistent broadcast protocol to preserve safety and liveness.
+
+#### How to address incentives
+
+We employ both rewards and punishment to design the appropriate incentives such that the honest and rational behavior of Validators aligns. At the same time, no synchrony assumptions are required; the sentence of misbehaving Wardens is not conditional on timing assumptions.
 
 ## Project Details
 
@@ -33,11 +39,17 @@ The system will address three challenges:
 
 ![image] <https://docs.google.com/document/d/1Ta4Zim2uT3sAUIjpVQ_Ie5nhf8pzyoR74ih7vv63DkM/edit?usp=sharing>
 
-Both channel parties agree on a committee of Validators before opening the channel. The committee acts as power of attorney for the parties of the channel. Furthermore, The system employs correct incentives for the t rational Validators.
+1. The Validators commit their identities on the blockchain during the funding transaction of the channel open.
+2. Both channel parties agree on a committee of Validators before opening the channel.
+3. The channel can only be closed by a transaction published on the blockchain and signed by both parties or one of the parties and a threshold (t) of honest Validators. Thus committee acts as power of attorney for the parties of the channel.
+4. Tao employs correct incentives for the t rational Validators to follow the protocol hence it can withstand t = 2f + 1 rational and f Byzantine Validators. Consensus is not necessary for updating transactions, as we only provide guarantees to rational parties (if both parties misbehave, one of them might lose its funds).
+When a new update state occurs in the channel, the parties run a consistent broadcast protocol (cost of O(n)) with the committee :
+    a)  a party announces to each Validator that a state update has occurred.
+    b)  This announcement is a monotonically increasing sequence number to guarantee that the new state is the freshest state, signed by both channel parties to signal that they agree.
+If the consistent broadcast protocol succeeds (t Validators acknowledge reception), this can prove to both parties that the state update is safe.
+5. Both parties proceed to the execution of the off-chain state.
 
-To follow the protocol and instruct the committee to run asynchronous consensus on every new update, which would cost  O(n) instead of O(n4)  per transaction, thus dramatically reducing the cost. Specifically, a party announces to each Validator that a state update has occurred. This announcement is a monotonically increasing sequence number to guarantee that the new state is the freshest state, signed by both channel parties to signal that they agree. If the consistent broadcast protocol succeeds, both parties can prove that the state update is safe. After this procedure terminates correctly, both parties proceed to execute the off-chain state.
-
-At the end of the life cycle of a channel, a dispute might occur, leading to the unilateral closing of the channel. The Validator will reply to the party that it can only close at the state represented by the last sequence number thus. Define a successful closing at the maximum of all proposed states, guaranteeing safety. The closing process is safe because the transactions are already totally ordered and agreed to by the parties of the channel; thus, the committee simply acts as a shared memory of the last sequence number.
+At the end of the life cycle of a channel, a dispute might occur, leading to the unilateral closing of the channel. The Validator will reply to the party that it can only close at the state represented by the last sequence number. Define a successful closing at the maximum of all proposed states, guaranteeing safety. The closing process is safe because the transactions are already totally ordered and agreed to by the parties of the channel; thus, the committee acts as a shared memory of the last sequence number.
 
 ### BACKGROUND AND PRELIMINARIES
 
@@ -55,8 +67,7 @@ Essentially, off-chain solutions allow two parties to create a “channel” on 
 
 #### Consistent Broadcast
 
-Consistent broadcast is a distributed protocol run by a node that wants to reliably send a message to a set of peers. It is called consistent because it guarantees that if a correct peer delivers a message m with sequence number s and another correct peer delivers message m’ with sequence number s, then m = m’. Thus, the sender cannot equivocate. In other words, the protocol maintains consistency among the delivered
-messages with the same sender and sequence numbers but makes no provisions that any parties deliver the messages. In our system, we only care about the consistency of sequence numbers, as any channel party can be the sender of a message m even after m is correctly broadcast. We allow this to remove the need for parties to share the proof that the transaction is committed, as there is no incentive to do so.
+Consistent broadcast is a distributed protocol run by a node that wants to reliably send a message to a set of peers. It is called consistent because it guarantees that if a correct peer delivers a message m with sequence number s and another valid peer delivers message m’ with sequence number s, then m = m’. Thus, the sender will be correctly identified. In other words, the protocol maintains consistency among the delivered messages with the same sender and sequence numbers but makes no provisions that any parties deliver the messages. Our system only cares about the consistency of sequence numbers, as any channel party can be the sender of a message m even after m is correctly broadcast. We allow this to remove the need for parties to share the proof that the transaction is committed, as there is no incentive to do so.
 
 ### PROTOCOL OVERVIEW
 
@@ -72,28 +83,27 @@ We initially assume that at least one party in the channel is honest to simplify
 
 To avoid bribing attacks, we enforce the Validator to lock collateral in the channel. The total amount of collateral is proportional to the value of the channel, meaning that if the committee size is large, then the collateral per Validator is small. Additionally, the committee is incentivized to actively participate in the channel with a small reward that each Warden gets when they acknowledge a state update of the channel. This reward is given with a unidirectional channel, which does not suffer from the problems the system solves. Moreover, the Validators that participate in the closing state of the channel get an additional reward; hence the Validators are incentivized to assist a party when closing in collaboration with the committee is necessary.
 
-#### Auditor Overview
+#### Audit Function Overview
 
-The auditor is designed to enable payment channels in a permissioned, regulated setting, for example, a centrally-banked cryptocurrency. In such a setting, an auditor (e.g., the IRS) will check all the transactions inside a channel as these transactions might be taxable or illegal. This
-is a real case as the scalability in payment channels comes from an ongoing relationship that models healthy B2B and B2C relationships usually taxed. In this setting, we assume that the auditor can punish the parties and the committee externally of the system; hence our goal is to enhance transparency even if misbehavior is detected retroactively.
+The audit function is designed to enable payment channels in a permissioned, regulated setting, for example, a centrally-banked cryptocurrency. In such a setting, an auditor will check all the transactions inside a channel as these transactions might be taxable or illegal. In this setting, we assume that the auditor can punish the parties and the committee externally of the system; hence our goal is to enhance transparency even if misbehavior is detected retroactively.
 We ensure that
     (a) nothing happens without the committee's approval and
     (b) a sufficient audit trail is left on the chain to stop regulators from misbehaving.
-We resolve the first issue by disabling the parties' ability to close the channel without the committee's participation. For the second challenge, the parties generate a hash chain of (blinded) states and sequence numbers, and Validators always remember the head of the hash chain together with the last sequence number. To prevent the auditor from misbehaving, we force the auditor to post a "lawful access request" on-chain to convince the channel parties to initiate the closing of the channel for audit purposes and send the state history to the auditor.
+We resolve the first issue by disabling the parties' ability to close the channel without the committee's participation. For the second challenge, the parties generate a hash chain of (blinded) states and sequence numbers, and Validators always remember the head of the hash chain together with the last sequence number. Finally, to prevent the auditor from misbehaving, we force the auditor to post a "lawful access request" on-chain to convince the channel parties to initiate the channel's closing for audit purposes and send the state history to the auditor.
 
 #### Protocol Goals
 
-To define the goals, we first need to define the necessary properties of channel construction. Intuitively, a channel should ensure similar properties with a blockchain system, i.e., a party cannot cheat another party out of its funds, and any party has the prerogative to spend its funds at any point in time eventually.
+To define the goals, we first need to define the necessary properties of channel construction. Intuitively, a channel should ensure similar properties with a blockchain system, i.e., a party cannot cheat another party out of its funds, and any party has the prerogative to eventually spend its funds at any point in time.
 
-When applied to channels, the first property means that no party can cheat the channel funds of the counterparty and is encapsulated by Safety. The second property for a channel solution is captured by Liveness; it translates to any party having the prerogative to close the channel at any point in time eventually. We say that a channel is closed when the locked funds of the channel are spent on chain, while a channel update refers to the off-chain change of the channel’s state.
+When applied to channels, the first property means that no party can cheat the channel funds of the counterparty and is encapsulated by **Safety**. The second property for a channel solution is captured by **Liveness**; it translates to any party having the preference to close the channel at any point in time eventually. We say that a channel is completed when the locked funds of the channel are spent on chain, while a channel update refers to the off-chain change of the channel’s state.
 
-In addition, we define Privacy which is not guaranteed in many popular blockchains but constitutes an important practical concern for any functional monetary (cryptocurrency) system. Furthermore, we define another optional property, Auditability, which allows authorized external parties to audit the states of the channel, thus making the channel construction suitable for use on a regulated currency.
-First, we define some characterizations of the state of the channel, namely, validity and commitment. Later, we define the properties for the channel construction. Each state of the channel has a discrete sequence number that reflects the order of the state. We assume the initial state of the channel has sequence number 1 and every new state has a sequence number one higher than the previous state agreed by both parties. We denote by si the state with sequence number i.
+In addition, we define **Privacy** which is not guaranteed in many popular blockchains but constitutes an essential practical concern for any functional monetary (cryptocurrency) system. Furthermore, we define another optional property, **Auditability**, which allows authorized external parties to audit the states of the channel, thus making the channel construction suitable for use on a regulated currency.
+First, we define some characterizations of the state of the channel, namely, validity and commitment. Later, we define the properties for the channel construction. Each state of the channel has a discrete sequence number that reflects the order of the state. We assume the initial state of the channel has sequence number 1, and every new state has a sequence number one higher than the previous state agreed by both parties. We denote by si the state with sequence number i.
 
 **Definition 1**. A state of the channel, si  is valid if the following hold:
-    • Both parties of the channel have signed the state si.
-    • The state si is the freshest state, i.e., no subsequent statesi+1 is valid.
-    • The committee has not invalidated the state. The committee can invalidate the state si if the channel closes in the state si-1
+    *Both parties of the channel have signed the state si.
+    *The state si is the freshest state, i.e., no subsequent statesi+1 is valid.
+    *The committee has not invalidated the state. The committee can invalidate the state si if the channel closes in the state si-1
 
 **Definition 2**. A state of the channel is committed if it was signed by at least 2f + 1 Validators or is valid and part of a block in the persistent part of the blockchain.
 
@@ -198,7 +208,7 @@ Lastly, the system achieves privacy even against byzantine Validators since they
 
 ### Team's experience
 
-Our team has extensive expertise on multiple levels, from software development to system analysis. With knowledge and skills, we can tackle the challenges and come up with solutions in the FinTech industry. Moreover, the natural ability of some of the team members to navigate and predict future technological trends combined with the technical experience and project management skills of other members translates into a clear roadmap.
+Our team has extensive expertise on multiple levels, from software development to system analysis. With knowledge and skills, we can tackle the challenges and develop solutions in the FinTech industry. Moreover, the natural ability of some of the team members to navigate and predict future technological trends combined with the technical experience and project management skills of other members translates into a clear roadmap.
 
 ### Team Code Repos
 
@@ -231,7 +241,13 @@ As a part of web3/MoonBeam Community and Ecosystem
 
 ### Link to source Code
 
-- <https://github.com/taocodao/moonbeam> This the Tao Framework nodes implementation , we have started with taking the moonBeam development node as the template, and use it as the smart contract engine
+- <https://github.com/taocodao/moonbeam>
+
+This the Tao Framework nodes implementation , we have started with taking the moonBeam development node as the template, and use it as the smart contract engine
+
+- <https://docs.google.com/document/d/1uJDEuZDMij0Pu63XEMM-PRSYU_opuQsRBjJJBLWhiCA/edit?usp=sharing>
+
+This is the smart contract implementation in Solidary for the channel open, update and close.
 
 ## Development Roadmap :nut_and_bolt
 
@@ -277,4 +293,4 @@ As a part of web3/MoonBeam Community and Ecosystem
 
 ## Future Plans
 
-We will develop the payment channel base on the Fiat Currency pegged token. 
+We will develop the payment channel base on the Fiat Currency pegged token.
