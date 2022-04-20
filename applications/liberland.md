@@ -76,6 +76,8 @@ The Treasury will be fueled by transaction fees and staking as well as by “rea
 Several projects such as "bit.country", are trying to be an incubator for the metaverse. We, on the other hand,
 have been here for 7 years now, with a clear vision of being a real state both in the real physical world  
 as well as in the virtual Metaverse. Our chain will manage registration for both the physical land in Liberland as well as the virtual metaverse.
+Liberland's on-chain governance systems stands out from current existing systems. Our system is  
+designed and built with the sole purpose of serving as a nation-state. Allow the users to vote differently based on their role, in accordance to Liberland's governance system. 
 
 
 ##### Voting   
