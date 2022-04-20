@@ -208,7 +208,7 @@ We will split the grant process into two milestones: one for requirement gatheri
 
 The Equilibrium team will liase with the Polkadot node developers to determine the best course of action, testing metholody, and testing targets for Ziggurat, culminating in a specification document to be followed in Milestone 2.
 
-- **Total Estimated Duration:** One months
+- **Total Estimated Duration:** One month
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** $62,000
 
