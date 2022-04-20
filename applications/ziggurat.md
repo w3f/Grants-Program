@@ -212,6 +212,8 @@ The Equilibrium team will liase with the Polkadot node developers to determine t
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** $62,000
 
+The grant template deliverables 0a-0d are not required for this milestone as this is entirely communications and research-based. Indeed, you could consider the Zigguarat and license commensurate in this milestone for their corresponding deliverables whereas the Docker image and test suite itself are likewise commensurate in Milestone 2. More detail in the following milestone.
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 1a. | Ziggurat Spec for Polkadot | This will be in the form of the form of the [ZCash spec] |
@@ -229,13 +231,15 @@ The Equlibrium team will write and perform the testing designated by the specifi
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 2a. | The test suite | A respository of Rust code quite like the [existing ZCash test suite](https://github.com/eqlabs/ziggurat). |
-| 2b. | Final report | May be in the form of an email, markdown file, blog post, whichever is most approproate for the time and context. |
-| 2c. | Documentation | Documentation will be diligently updated and maintained as the codebase progresses and tests are written. Likely an extension or continuation of the existing [Ziggurat Manual](https://fluttering-gem-83c.notion.site/The-Ziggurat-Manual-88f6ab7d85774c5fb1bc12bcd64bf700) |
-| 2d. | Testing Guide | We will provide developer-level guidelines for running the test suite locally. |
-| 2e. | Marketing / Public Relations (case by case) | When appropriate, we will work with the W3F to publish articles and/or social media posts regarding our findings |
-| 2f. | Security Disclosures | Though we will disclose these as soon as they are discovered, they are included here as a digest. **We will default to pricate disclosure of security vulnerabilities and otherwise follow W3F guidelines.**  |
-| 2g. | Open Source License | Ziggurat is currently dual-licensed under the exceedingly permissive Apache + MIT combination and will continue to be. |
+| 2a. | Open Source License | Ziggurat is currently dual-licensed under the exceedingly permissive Apache + MIT combination and will continue to be. |
+| 2b. | Documentation | Documentation will be diligently updated and maintained as the codebase progresses and tests are written. Likely an extension or continuation of the existing [Ziggurat Manual]
+| 2c. | Testing Guide | We will provide developer-level guidelines for running the test suite locally. |
+| 2d. | Docker | As appropriate, we will provide Docker images of Ziggurat, particularly in the context of CI/CD integration. |
+| 2e. | The test suite | A respository of Rust code quite like the [existing ZCash test suite](https://github.com/eqlabs/ziggurat). |
+| 2f. | Final report | May be in the form of an email, markdown file, blog post, whichever is most approproate for the time and context. |
+(https://fluttering-gem-83c.notion.site/The-Ziggurat-Manual-88f6ab7d85774c5fb1bc12bcd64bf700) |
+| 2g. | Marketing / Public Relations (case by case) | When appropriate, we will work with the W3F to publish articles and/or social media posts regarding our findings |
+| 2h. | Security Disclosures | Though we will disclose these as soon as they are discovered, they are included here as a digest. **We will default to pricate disclosure of security vulnerabilities and otherwise follow W3F guidelines.**  |
 
 ## Future Plans
 
