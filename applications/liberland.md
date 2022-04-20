@@ -70,6 +70,19 @@ The Treasury will be fueled by transaction fees and staking as well as by “rea
 
 
 
+## Project comparison 
+Several projects such as "bit.country", are trying to be an incubator for the metaverse. We, on the other hand,
+have been here for 7 years now, with a clear vision of being a real state both in the real physical world  
+as well as in the virtual Metaverse. Our chain will manage registration for both the physical land in Liberland as well as the virtual metaverse.
+
+
+#### Voting   
+We will make our own pallet, where we adopt the voting functionality from pallet democracy to interact with our public veto governance system. 
+Allowing citizens to vote on laws, assembly members to vote on government funding proposals(who is going to build a new road and so on).
+Our voting pallet will interact with our identity pallet to serve our governance system. Unlike previous chains, we have customized the voting  
+to be limited to voting on the creation and removal of laws and not allow non-assembly members to vote on government treasury funding proposals.   
+
+
 ##### Land Registry
 
 Using a custom substrate pallet with pallet-assets integration we aim to allow users to register land, based on geographical coordinates. Digitizing land ownership. 
@@ -167,10 +180,14 @@ https://docs.google.com/spreadsheets/d/1Q5DnVI4WuQWncMY985xuQ30HB7-bJz6X6EZFr2Vz
 | 0d. | Docker | We will provide a Dockerfiles that can be used to run our node and also test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a detailed article, walking a user through all functionality and features.)
 | 1. | Substrate chain | We will customize a substrate based code base and add our custom pallets |  
-| 2. | Nominated Proof of stake consensus | We are shipping with nominated proof of stake consensus instead of Proof of Authority in order to promote decentralization and motivate user to run validators |  
-| 3. | LLM module | We will create substrate pallet to handle the distribution and inflation of the LLM currency |  
-| 4. | Public Veto Module | We want our users to utilize our chain to have election and vote using a pallet  |  
-| 5. | User Roles | We will create a substrate module that allows users to have roles/on-chain identities | 
+| 2. | LLM module | We will create substrate pallet to handle the distribution and inflation of the LLM currency |  
+| 3. | Public Veto Module | We want our users to utilize our chain to have election and vote using a pallet  |  
+| 4. | Liberland Identity Pallet | We will create a substrate pallet that will allow accounts to have different account roles | 
+   
+   
+   
+#### Liberland Identity Pallet  
+Liberland's on-chain governance is tailor to serve a nation state, therefor we need functionality for users to be citizen, e-residence, assembly member, minister and so on. We will fork the identity pallet from Parity and rewrite it to fit our custom needs, in order to properly take part of the governance system.
 
 
 ### Milestone 2: Land and Company registration
