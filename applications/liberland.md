@@ -76,9 +76,9 @@ have been here for 7 years now, with a clear vision of being a real state both i
 as well as in the virtual Metaverse. Our chain will manage registration for both the physical land in Liberland as well as the virtual metaverse.
 
 
-#### Voting   
-We will make our own pallet, where we adopt the voting functionality from pallet democracy to interact with our public veto governance system. 
-Allowing citizens to vote on laws, assembly members to vote on government funding proposals(who is going to build a new road and so on).
+##### Voting   
+We will make our own pallet, where we adopt the voting functionality from pallet democracy to interact with our public veto governance system.   
+Allowing citizens to vote on laws, assembly members to vote on government funding proposals(who is going to build a new road and so on).   
 Our voting pallet will interact with our identity pallet to serve our governance system. Unlike previous chains, we have customized the voting  
 to be limited to voting on the creation and removal of laws and not allow non-assembly members to vote on government treasury funding proposals.   
 
