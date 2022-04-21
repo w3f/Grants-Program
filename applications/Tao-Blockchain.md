@@ -65,6 +65,14 @@ Proposed solutions can be categorized into two groups:
 
 Essentially, off-chain solutions allow two parties to create a “channel” on the blockchain through which they can transact fast and secure; this solution is known as “Payment channels”. It allows transactions between two parties to be executed instantly off-chain while maintaining the guarantees of the blockchain. Essentially, the underlying blockchain acts as a “judge” in case of fraud.
 
+#### Various payment channels solution and limitations
+
+The various proposals differ in the way they handle disputes, i.e., the case where one of the parties misbehaves and attempts to close the channel with a transaction that is not the latest update transaction, thus violating the safety property.
+
+Lightning channels penalize the misbehaving party by assigning the money of the channel to the counterparty in case of fraud. To achieve this, each party releases a secret to the counterparty every time an update transaction is signed. That secret enables the counterparty to claim the money of the channel in case the party publishes the previous update transaction (breach remedy). However, this transaction is valid only for a window of time since the party should eventually be able to spend its money from the channel in case of no fraud. Therefore, this dispute period is enforced with a (relative) timelock.
+
+On the other hand, Duplex channels guarantee that the latest update transaction will become valid before any previous update transaction, again utilizing timelocks. In both cases, the liveness of the underlying blockchain and timelocks are crucial to the safety of the payment channel solution. Additionally, both solutions require online participants that frequently monitor the blockchain to ensure safety.
+
 #### Consistent Broadcast
 
 Consistent broadcast is a distributed protocol run by a node that wants to reliably send a message to a set of peers. It is called consistent because it guarantees that if a correct peer delivers a message m with sequence number s and another valid peer delivers message m’ with sequence number s, then m = m’. Thus, the sender will be correctly identified. In other words, the protocol maintains consistency among the delivered messages with the same sender and sequence numbers but makes no provisions that any parties deliver the messages. Our system only cares about the consistency of sequence numbers, as any channel party can be the sender of a message m even after m is correctly broadcast. We allow this to remove the need for parties to share the proof that the transaction is committed, as there is no incentive to do so.
