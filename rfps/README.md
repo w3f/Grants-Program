@@ -5,6 +5,7 @@
 - [:grey_question: What is an RFP?](#grey_question-what-is-an-rfp)
 - [:scroll: List of current RFPs](#scroll-list-of-current-rfps)
   - [Availability and Validity - Network Topology](#availability-and-validity---network-topology)
+  - [Alternative Polkadot Host Implementation](#alternative-polkadot-host-implementation)
   - [Anti-Collusion Infrastructure](#anti-collusion-infrastructure)
   - [e-Passport ZK Validation](#e-passport-zk-validation)
   - [RFP: Substrate Identity Directory](#rfp-substrate-identity-directory)
@@ -60,6 +61,27 @@ The full mechanism is described in [the host specification](https://github.com/w
 
 
 ----
+###  Alternative Polkadot Host Implementation
+
+
+- Published: 2022-04-07
+
+
+- [:arrow_right: alternative_polkadot_host_implementations.md](./alternative_polkadot_host_implementations.md)
+
+
+- **Proposer:** [Noc2](https://github.com/Noc2)
+
+
+#### Project Description :page_facing_up:
+
+The architecture of Polkadot can be divided into two different parts, the Polkadot runtime and the Polkadot host. The Polkadot runtime is the core state transition logic of the chain and can be upgraded over the course of time and without the need for a hard fork. In comparison, the Polkadot host is the environment in which the runtime executes and is expected to remain stable and mostly static over the lifetime of Polkadot.
+
+The Polkadot host interacts with the Polkadot runtime in limited, and well-specified ways. For this reason, implementation teams can build an alternative implementation of the Polkadot host while treating the Polkadot runtime as a black box. For more details of the interactions between the host and the runtime, please [see the specification](https://github.com/w3f/polkadot-spec/).
+
+
+----
+
 ###  Anti-Collusion Infrastructure
 
 

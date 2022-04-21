@@ -1,11 +1,9 @@
 # W3F Grant Proposal
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** HE-Chain
+- **Project Name:** Gafi Network - The Network of Game Finance
 - **Team Name:** Cryptoviet
+- **Home Site:** https://gafi.network/
 - **Payment Address:** 0x7fD4b72d3Bf681C2e80D6076D7997B21DEf45130 (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
@@ -18,42 +16,45 @@
 
 - Abstract
 
-  HE-Chain: The decentralized blockchain platform is built for high-frequency applications and customization for NFT blockchain game projects. Applications running on top of HE-Chain will never bother about security, spamming, transaction fees, malicious accounts, and many other bad factors. They can just focus on gameplay, game experience. HE-Chain supports EVM (Ethereum Virtual Machine) that projects deploy from Ethereum, Binance Smart Chain to HE-Chain with little or no change.
+  The decentralized blockchain platform that built for blockchain games and high-frequency applications. Applications running on top of Gafi Network will never bother about the security, transaction fee, malicious accounts, and many other bad factors. They can just focus on gameplay, game experience, or application logic. The Gafi Network supports EVM (Ethereum Virtual Machine) that projects deploy from Ethereum or Binance Smart Chain to Gafi with little or no change.
 
 - Thanks to Parity technologies
   
-  HE-Chain is layer one that builds from the Substrate and is EVM compatible using [Frontier](https://github.com/paritytech/frontier).
+  Gafi Network is layer one that builds from the Substrate and is EVM compatible using [Frontier](https://github.com/paritytech/frontier).
   
 - Motivating the Cryptoviet team
 
   As the current project titled [Heroes And Empires](https://heroesempires.com/) is running on Binance Smart Chain, mostly due to the scalability and the cost of operating, we build the platform for Heroes And Empires and many other NFT Blockchain Games.
-  We have the experience of What NFT blockchain games need, Why we have to build HE-Chain, and How to build HE-Chain to solve the problems that current NFT games face when they run on Ethereum, BSC, or even Solana.
+  We have the experience of What NFT blockchain games need, Why we have to build Gafi Network, and How to build Gafi to solve the problems that current NFT games face when they run on Ethereum, BSC, or even Solana.
   
 ### Project Details
 
 
-![HE-Chain Architecture](https://github.com/cryptoviet/he-chain/blob/dev/HE-Chain%20Architecture.jpg)
+![Gafi Network Architecture](https://github.com/cryptoviet/he-chain/blob/dev/HE-Chain%20Architecture.jpg)
 
 
-- **HE-Chain Architecture**:
+- **Gafi Architecture**:
 
-  Two parts of the HE-Chain are Heroes and Empires. The Empires are inside the red rounded rectangle and the outside is the Heroes.
+  Two parts of the Gafi Network are Heroes and Empires. The Empires are inside the red rounded rectangle and the outside is the Heroes.
   
   **Empires**:
   
-  Players have to join Empires to get the privileges. When they are in the Empires, they won't bother about the transaction fee but they can only make the limited of transactions per minute that are handled by TX-Handler, and they will be charged the amount of fee based on the period of time they stay in the Empire Pool. The Empire Pool will also ban 'bad' players with the Autoban mechanism.
+  Players have to join Empires to get the privileges. When they are in the Empires, they won't bother about the transaction fee but they can only make the limited of transactions per minute that are handled by TX-Handler, and they will be frozen amount of token or charged the amount of fee based on the period of time they stay in the Empire Pool. The Empire Pool will also ban 'bad' players with the Autoban mechanism.
   
   **Heroes**:
   
   As heroes, players can do anything with no restrictions, but with the 'high' transaction fee. 
   
-
   
 - **Pallet structure**
 
-  The project is broken down into 4 pallets:
+  The project is broken down into following pallets:
 
-  pallet-pool: Manage players in the Empires by limiting the number of players, changing upfront every 'x' amount of time (x depends on the number of players staying in the pool and number of projects running on HE-Chain, x will be determined when testnet goes live). Ban players with bad activities followed by the DAO rules.
+  proof-mapping: mapping Substrate (AccountId) address with EVM address (H160) by given signature.
+
+  pallet-option-pool: Manage players in the Empires by limiting the number of players, changing upfront every 'x' amount of time (x depends on the number of players staying in the pool and number of projects running on Gafi, x will be determined when testnet goes live). Ban players with bad activities followed by the DAO rules.
+  
+  pallet-staking-pool: Freeze the amount of token to reduce the transaction fee.
 
   pallet-tx-handler: Manage player's transactions on the Empires, every minute or hour players can only make 'x' transactions. Reduce 'y' percentage of transaction fee. 'x' and 'y' will be determined by DAO.
 
@@ -76,19 +77,19 @@
   
     3. The number transaction limit of TX-Handler
 
-     The idea of TX-Handler is to protect the network from the DDOS, also determining the right number is important because if the number is not appropriate, it's can drive away many goof projects for example. Currently, our Heroes & Empires only need a maximum of 10 TXs/minute but another good PvP game can require 30 TXs/minutes, at this point the limit number is 30 is reasonable for the HE-Chain network.
+     The idea of TX-Handler is to protect the network from the DDOS, also determining the right number is important because if the number is not appropriate, it's can drive away many goof projects for example. Currently, our Heroes & Empires only need a maximum of 10 TXs/minute but another good PvP game can require 30 TXs/minutes, at this point the limit number is 30 is reasonable for the Gafi Network.
   
-Although these ideas would be different in blockchain, we must deploy Heroes & Empires on HE-Chain to determine those numbers.
+Although these ideas would be different in blockchain, we must deploy Heroes & Empires on Gafi to determine those numbers.
 
 ### Ecosystem Fit
 
-  At this moment, most of the NFT Gaming projects are running on Ethereum, BSC, or Solana name Axie Infinity, the Sandbox, Decentraland... and as we do the [Heroes and Empires](https://heroesempires.com/). We consider these platforms are "common" chains because they can fit many purposes but don't specialize in NFT Blockchain Games. Inspired by Substrate philosophy that 'builders can just focus on the chain logic', so we built HE-Chain that specialized in NFT Blockchain Game.
+  At this moment, most of the NFT Gaming projects are running on Ethereum, BSC, or Solana name Axie Infinity, the Sandbox, Decentraland... and as we do the [Heroes and Empires](https://heroesempires.com/). We consider these platforms are "common" chains because they can fit many purposes but don't specialize in NFT Blockchain Games. Inspired by Substrate philosophy that 'builders can just focus on the chain logic', so we built Gafi Network that specialized in NFT Blockchain Game.
   
   We know the 'pain' of scalability and  the cost of operating that Heroes & Empires spent more than $3M just for the transaction fees, we do think if we brought that money to grow the H&E ecosystem that could be game-changing.
   
-  Our current user target is the NFT Gaming projects, high-frequency applications, and, of course, is Heroes and Empires. HE-Chain will bring fully decentralized platform and web3 to around 40k users of H&E and millions of users in the cryptocurrency world.
+  Our current user target is the NFT Gaming projects, high-frequency applications, and, of course, is Heroes and Empires. Gafi Network will bring fully decentralized platform and web3 to around 40k users of H&E and millions of users in the cryptocurrency world.
   
-  At this time, in the Kusama/Polkadot ecosystem, all the EVM compatible can be the same as HE-Chain at this time but with specialization of HE-Chain chain logic, there is no project nearly the same as HE-Chain according to [Dotmarketcap](https://dotmarketcap.com/ecosystem).
+  At this time, in the Kusama/Polkadot ecosystem, all the EVM compatible can be the same as Gafi Network at this time but with specialization of Gafi chain logic, there is no project nearly the same as Gafi according to [Dotmarketcap](https://dotmarketcap.com/ecosystem).
 
 ## Team :busts_in_silhouette:
 
@@ -158,20 +159,20 @@ Stefan with 5 years of experience as Software Engineer working on the top crypto
 
 ## Development Status :open_book:
 
-HE-Chain Repos: https://github.com/cryptoviet/he-chain
+Gafi Node Repos: https://github.com/cryptoviet/gafi
 
 [Heroes & Empires 2021 Roundup](https://medium.com/@stefan_muto/heroes-and-empires-2021-roundup-a6617941ef5a)
 
-Whitepaper + Yellowpaper: Coming soon
+Whitepaper: Coming soon
 
 
 ## Development Roadmap :nut_and_bolt:
 
-![HE-Chain Development Roadmap](https://github.com/cryptoviet/he-chain-assets/blob/main/HE-Chain%20Development%20Roadmap%20v2.jpg)
+![Gafi Network Development Roadmap](https://github.com/cryptoviet/he-chain-assets/blob/main/HE-Chain%20Development%20Roadmap%20v2.jpg)
 
 ### Overview
 
-- **Total Estimated Duration:** 9 months
+- **Total Estimated Duration:** 7 months
 - **Full-Time Equivalent (FTE):**  1.2 FTEs
 - **Total Costs:** 39,000 USDT
 
@@ -184,10 +185,11 @@ Whitepaper + Yellowpaper: Coming soon
 At this milestone, we build modules for Player, Empires. The requirements will fall into acceptance criteria:
 + Users can join Empires
 + Users can leave Empires
-+ Charge an upfront fee when users join the pool
-+ Charge a fee based on the period of time they stay in the pool
++ Charge an upfront fee when users join the pool with service options
++ Freeze and unfreeze the correct amount of token when users join the pool with staking option
++ Charge a correct transaction fee based on the their option
 + Refund the correct amount when users leave the pool
-+ Solidity code can be deployed and called on HE-Chain
++ Solidity code can be deployed and called on Gafi
 + Create pallet-player
 + Unittest
 + Code coverage > 80%
@@ -197,24 +199,26 @@ At this milestone, we build modules for Player, Empires. The requirements will f
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | Apache 2.0|
-| 0b. | Whitepaper & Yellowpaper |
+| 0b. | Whitepaper |
 | 0c. | Documentation | We will comment on code, publish documents as text articles and videos to show users how Empire Pool works, how to create a player account, how to join and leave the pool |
 | 0d. | Testing Guide | Every internal and external function must have the comment followed by a unittest, and the community will be rewarded for finding bugs |
 | 0e. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0f. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
 | 1. | Substrate module: pallet_player | module to store player information like (name, id, friends, tokens) |  
-| 2. | Substrate module: pallet_pool | module to manage players in the Empires |
-| 3. | Weights/Benchmarking | implement benchmarking for pallet_player + pallet_pool to determine appropriate weights |
+| 2. | Substrate module: pallet_option_pool | Provide service options for users to join the Empire |
+| 3. | Substrate module: pallet_staking_pool | Provide staking option for users to join the Empire |
+| 4. | Substrate module: proof-mapping | mapping accountid with h160 |
+| 5. | Weights/Benchmarking | implement benchmarking for pallets to determine appropriate weights |
 
 
-### Milestone 2 — DAO + TX-Handler + HE-Chain Testnet
+### Milestone 2 — DAO + TX-Handler + Gafi Testnet
 
 - **Estimated duration:** 3 month
 - **FTE:**  1.2
 - **Costs:** 19,000 USD
 
-In this milestone, we build modules DAO, TX-Handler, HE-Chain Testnet, the requirements will fall into acceptance criteria:
-+ HE-Chain Testnet launch with at least 5 nodes
+In this milestone, we build modules DAO, TX-Handler, Gafi Testnet, the requirements will fall into acceptance criteria:
++ Gafi Network Testnet launch with at least 5 nodes
 + Build DAO to vote on-chain governance
 + Determine the 'x' number of limit transactions per minute by Testnet and vote by on-chain governance
 + TX-Handler manage the transaction limit with the 'x' above
@@ -228,20 +232,18 @@ In this milestone, we build modules DAO, TX-Handler, HE-Chain Testnet, the requi
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | Apache 2.0|
-| 0b. | Documentation | We will comment on code, publish documents as text articles and videos to show users how to run HE-Chain Node, how HE-Chain on-chain governance works, why 'x' and 'y' are reasonable|
+| 0b. | Documentation | We will comment on code, publish documents as text articles and videos to show users how to run Gafi Node, how Gafi on-chain governance works, why 'x' and 'y' are reasonable|
 | 0c. | Testing Guide | Every internal and external function must have the comment followed by a unittest, and the community will be rewarded for finding bugs |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
 | 1. | Substrate module: pallet_tx_handler | module to limit the transaction and reduce transaction fee|  
 | 2. | Substrate module: pallet_dao | module to vote on-chain runtime data |  
-| 3. | Weights/Benchmarking | implement benchmarking for pallet_tx_handler + pallet_dao to determine appropriate weights  |
-| 4. | End-user Test + Article/Tutorial | Testing as an end-user product along with articles/tutorials of how to use HE-Chain | 
+| 3. | Weights/Benchmarking | implement benchmarking for pallets to determine appropriate weights  |
+| 4. | End-user Test + Article/Tutorial | Testing as an end-user product along with articles/tutorials of how to use Gafi | 
 
 
 ## Future Plans
 
-Fortunately, we will integrate Heroes & Empires into HE-Chain first, allowing us to devote all of our resources (20 team members including marketing, QA, and QC) to expanding, using, and testing HE-Chain.
+Fortunately, we will integrate Heroes & Empires into Gafi Network first, allowing us to devote all of our resources (20 team members including marketing, QA, and QC) to expanding, using, and testing Gafi Network.
 
-We will work with several top NFT Game projects and teams in Vietnam such as [Axie Infinity](https://axieinfinity.com/), [Imba Game](https://imba.co/), and [StarPunk](https://starpunk.io/) to deploy on HE-Chain.
-
-
+We will work with several top NFT Game projects and teams in Vietnam such as [Axie Infinity](https://axieinfinity.com/), [Imba Game](https://imba.co/), and [StarPunk](https://starpunk.io/) to deploy on Gafi Network.
