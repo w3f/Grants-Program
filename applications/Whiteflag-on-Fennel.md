@@ -204,7 +204,7 @@ This proposal outlines the second step in the development of Fennel Protocol, a 
 ### Milestone 2 — Full Whiteflag
 
 * **Estimated duration:** 2 months
-* **FTE:**  2
+* **FTE:**  3
 * **Costs:** 65,000 USD
 
 | Number | Deliverable | Specification |
