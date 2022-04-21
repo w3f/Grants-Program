@@ -147,18 +147,18 @@ The system works without the fees if we assume one honest party and t honest Val
 
 #### 1) Update Fee (r)
 
-    The parties establish a one-way channel with each Validator where they send a small payment every time they want a signature for a state update. Note that the update fee is awarded to the Validators at step 1 of Protocol 3.
+The parties establish a one-way channel with each Validator where they send a small payment every time they want a signature for a state update. Note that the update fee is awarded to the Validators at step 1 of Protocol 3.
 
 #### 2) Closing Fee (F)
 
-    During phase Open (Protocol 1), the parties lock a closing fee F in the channel, which is split only among the first t Validators that participate in Protocol 5. If the channel closes optimistically (Protocol 4), the closing fee returns to the parties.
+During phase Open (Protocol 1), the parties lock a closing fee F in the channel, which is split only among the first t Validators that participate in Protocol 5. If the channel closes optimistically (Protocol 4), the closing fee returns to the parties.
 
 #### 3) Validator Collateral
 
-    During phase Open, each Validator locks collateral at least equal to the amount locked in the channel v divided by f. The collateral is either returned to the Validator at the closing of the channel or claimed by a channel party that provides a proof-of-fraud. A proof-of-fraud consists of two conflicting messages signed by the same Validator:
-        (a) a signature on an announcement on a state update of the channel, 
-        (b) a signature on an announcement for closing on a previous state of the Channel
-    In case, a party submits the closing announcements and at most f proofs-of-fraud, to close the channel we execute a second closing process excluding the Validators that committed fraud. Then, the channel closes in the state with the maximum sequence number of the announcements submitted by a total of t non-excluded Validators. 
+During phase Open, each Validator locks collateral at least equal to the amount locked in the channel v divided by f. The collateral is either returned to the Validator at the closing of the channel or claimed by a channel party that provides a proof-of-fraud. A proof-of-fraud consists of two conflicting messages signed by the same Validator:
+    (a) a signature on an announcement on a state update of the channel, 
+    (b) a signature on an announcement for closing on a previous state of the Channel
+In case, a party submits the closing announcements and at most f proofs-of-fraud, to close the channel we execute a second closing process excluding the Validators that committed fraud. Then, the channel closes in the state with the maximum sequence number of the announcements submitted by a total of t non-excluded Validators. 
 
 ### Security Analysis
 
