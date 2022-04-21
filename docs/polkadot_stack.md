@@ -138,7 +138,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Name Service| [Substrate Names](https://github.com/xaya/substrate-names), [ENS on Substrate](https://github.com/hskang9/substrate-name-service), [PNS-Pallets](https://github.com/pnsproject/pns-pallets)
 | Gaming | [Bit.country](https://github.com/bit-country/Bit-Country-Blockchain), [SubGame](https://github.com/SubGame-Network/subgame-network), [subzero](https://github.com/playzero/subzero), [Web3Games](https://github.com/web3gamesofficial/web3games-blockchain), [Ajuna Network](https://github.com/ajuna-network/) | 
 | Computation | [DeepBrain Chain](https://github.com/DeepBrainChain/DeepBrainChain-MainChain) |
-| Enable specific use-cases | [Robonomics](https://github.com/airalab/substrate-node-robonomics), [UniversalDOT](https://github.com/UniversalDot)
+| Enable specific use-cases | [Robonomics](https://github.com/airalab/substrate-node-robonomics), [UniversalDOT](https://github.com/UniversalDot), [Evercity Sustainable Finance Protocol](https://github.com/EvercityEcosystem/evercity-chain)
 | NFT | [ternoa](https://github.com/capsule-corp-ternoa/chain), [FRAME Pallet: NFTs for Substrate](https://github.com/danforbes/pallet-nft), [NFT Parachain by usetech](https://github.com/w3f-community/nft_parachain), [DNFT](https://github.com/DNFT-Team/dnft-substrate-node/tree/master/pallets), [RMRK-Substrate](https://github.com/rmrk-team/rmrk-substrate)
 | Randomness | [DKG and Randomness Beacon](https://github.com/Cardinal-Cryptography/substrate/tree/randomness-beacon)
 | Licensing | [Anagolay Network](https://github.com/anagolay/anagolay-chain)  | 
