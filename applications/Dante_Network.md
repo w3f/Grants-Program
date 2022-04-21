@@ -46,9 +46,7 @@ That’s the overview of the protocol stack in Dante Network. We think it can be
 
 
 **Technology stack**
-* Rust
-* Solidity
-* Cadence
+* ink!, Rust
 * node.js
 
 ### Ecosystem Fit
@@ -179,11 +177,11 @@ We’ve published a tasting version of the dev SDK for multi-chain DApp develope
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.)
-| 1. | smart contracts: Service expression layer | Development and testing of Service expression layer on more than one of Polkadot’s smart contract platforms (like Moonriver, Shiden, OAK, etc.); Demos for communication and interoperation between one of Polkadot’s smart contract platforms and Ethereum, Near, Avalanche.|  
-| 2. | smart contracts: message verification algorithm | Development and testing of verification algorithms of the consensus verification layer on more than one of Polkadot’s smart contract platforms and other chains including Ethereum, Near, Avalanche, Flow, PlatON. Verification contracts deployed on testnet (Moonriver/Shiden/OAK in Polkadot, Ethereum, Near, Avalanche, Flow, PlatON). Demos for information verification.|  
-| 3. | smart contracts: router credibility evaluation algorithm | Development and testing of the credibility evaluation algorithms of the consensus verification layer; Selection of growth function and decrease function suitable for smart contract on-chain is the key point; Router behavior evaluation contracts deployed on testnet(more than one of Polkadot’s smart contract platforms, Ethereum, Near, Avalanche, Flow, PlatON); Demos for router evaluation according to their behaviors.|
-| 4. | off-chain routers: general message sharing | Development and testing of the basic abilities of the off-chain router, including general message encoding and decoding, message delivery between multi-chains; Demos covering more than one smart contract platform in Polkadot, along with Ethereum, Near, PlatON, etc. |
-| 5. | SDK: general message sharing | Build an early-stage SDK including a general message sending and receiving interface. Adapted to more than one smart contract platform in Polkadot, along with Ethereum, Near, PlatON, etc. |          
+| 1. | (ink!)smart contracts: Service expression layer | Development and testing of Service expression layer on some of Polkadot’s smart contract parachain (AStar/edgeware); Demos for communication and interoperation between one of Polkadot’s smart contract platforms and Ethereum, Near, Avalanche.|  
+| 2. | (ink!)smart contracts: message verification algorithm | Development and testing of verification algorithms of the consensus verification layer on some of Polkadot’s smart contract parachain (AStar/edgeware) and other chains including Ethereum, Near, Avalanche, Flow, PlatON. Verification contracts deployed on testnet. Demos for information verification.|  
+| 3. | (ink!)smart contracts: router credibility evaluation algorithm | Development and testing of the credibility evaluation algorithms of the consensus verification layer; Selection of growth function and decrease function suitable for smart contract on-chain is the key point; Router behavior evaluation contracts deployed on testnet; Demos for router evaluation according to their behaviors.|
+| 4. | off-chain routers: general message sharing | Development and testing of the basic abilities of the off-chain router, including general message encoding and decoding, message delivery between multi-chains; Demos for some of Polkadot's smart-contracts parachain, along with Ethereum, Near, PlatON, etc. |
+| 5. | (Rust)SDK: general message sharing | Build an early-stage SDK including a general message sending and receiving interface. Adapted to some of Polkadot's smart-contracts parachain, along with Ethereum, Near, PlatON, etc. |          
 
 
 ### Milestone 2 — parallel router scheduling algorithms, SQoS, off-chain routers, SDK, testnet
@@ -199,14 +197,16 @@ We’ve published a tasting version of the dev SDK for multi-chain DApp develope
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.)
-| 1. | smart contracts: parallel router scheduling algorithm | Development and testing of parallel router scheduling algorithms of the consensus verification layer; Suitable randomness is the key point; Scheduling contracts deployed on testnet (more than one of Polkadot’s smart contract platforms, Ethereum, Near, Avalanche, Flow, PlatON). Demos for router scheduling, a router with high credibility will have a higher probability to be chosen. |  
-| 2. | smart contracts: SQoS | Development, and testing of the SQoS (Security Quality of Service) mechanisms including hidden & reveal, challenge confirm, error rollback, verification threshold, authority context, etc. Multi-chain message contracts deployed on testnet (more than one of Polkadot’s smart contract platforms, Ethereum, Near, Avalanche, Flow, PlatON). Demos for showing each of the SQoS items. |  
-| 3. | off-chain routers: SQoS | SQoS abilities related to off-chain routers, including hidden & reveal, challenge confirm, error rollback, verification threshold, authority context, etc.  Adapted to more than one smart contract platform in Polkadot, along with Ethereum, Near, PlatON, etc. | 
-| 4. | SDK: contracts invocation; SQoS | Interface of contracts invocation between multi-chains and setting of SQoS;  Adapted to more than one smart contract platform in Polkadot, along with Ethereum, Near, PlatON, etc. | 
+| 1. | (ink!)smart contracts: parallel router scheduling algorithm | Development and testing of parallel router scheduling algorithms of the consensus verification layer; Suitable randomness is the key point; Scheduling contracts deployed on testnet. Demos for router scheduling, a router with high credibility will have a higher probability to be chosen. |  
+| 2. | (ink!)smart contracts: SQoS | Development, and testing of the SQoS (Security Quality of Service) mechanisms including hidden & reveal, challenge confirm, error rollback, verification threshold, authority context, etc. Multi-chain message contracts deployed on testnet. Demos for showing each of the SQoS items. |  
+| 3. | off-chain routers: SQoS | SQoS abilities related to off-chain routers, including hidden & reveal, challenge confirm, error rollback, verification threshold, authority context, etc.  Adapted to some of smart contract parachain in Polkadot, along with Ethereum, Near, PlatON, etc. | 
+| 4. | (Rust)SDK: contracts invocation; SQoS | Interface of contracts invocation between multi-chains and setting of SQoS;  Adapted to some of smart contract parachain in Polkadot, along with Ethereum, Near, PlatON, etc. | 
 | 5. | testnet | The testing for the basic abilities of the whole protocol stack. Demos for the whole abilities. Launch the testnet of Dante Network.|  
 
 
 ## Future Plans
+
+After the `ink!` version of the Dante protocol stack is fully tested, we would like to implement a `pallet` version for Polkadot ecosystems. Anyone who is integrating it can communicate with other ecosystems conveniently.
 
 Our next step is to work with many application-based projects to iterate our SDK for developers based on their needs, making web3's multi-chain interaction easier.
 
