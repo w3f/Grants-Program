@@ -179,12 +179,12 @@ Suppose now the operation is close and never invalidated. Then, if it is an opti
 
 Suppose the operation is a valid update and it was never committed. Since the operation is valid and at least one party of the channel is honest, the Validators eventually received the state update (Consistent Broadcast). However, the new state was never committed; therefore, at least f + 1 Validators did not sign the update state. We assumed at most f Byzantine Validators; hence at least one honest Warden did not sign the valid update state. An honest Validator does specific verifications, and if the verifications hold, the Warden signs the new state. Thus, one of the verifications failed for the honest Validator that did not sign. If the first verification fails, then a signature from the channel parties is missing; thus, the state is not valid.
 
-The second verification concerns the sequence number and cannot fail, assuming at least one honest channel party. Thus, the Validator has previously published a closing announcement on-chain and ignores the state update. In this case, either
+The second verification concerns the sequence number and cannot fail, assuming at least one honest channel party. Thus, the Validator has previously published a closing announcement on-chain and ignores the state update. In this case, either.
     (a) the closing state of the channel is the new state - submitted by another Warden that received the update before the closing request
     (b) the closing state had a smaller sequence number from the new state.
-In the first case (a), the new state is committed eventually (on-chain), while in the second case (b) the new state is invalidated as the channel closed in a previous state.
+In the first case (a), the new state is committed eventually (on-chain), while in the second case (b), the new state is invalidated as the channel closed in a previous state.
 
-Suppose the operation is a valid update for the last case and it was never invalidated. We will show the state update was eventually committed. Suppose the negation of the argument towards contradiction. We want to prove that an update state that is not committed is either not valid or invalidated. The reasoning of the proof is similar to the previous case.
+Suppose the operation is a valid update for the last case and it was never invalidated. We will show the state update was eventually committed. Suppose the negation of the argument towards contradiction. We want to prove that an updated state that is not committed is either not valid or invalidated. The reasoning of the proof is similar to the previous case.
 
 Lastly, the system achieves privacy even against byzantine Validators since they only receive the sequence number of each state update in a channel. Therefore, as long as parties do not intentionally reveal any information to anyone external, privacy is maintained. However, we note that in a network with multiple channels, each channel needs to maintain a unique id that will be included in the announcement to avoid replay attacks.
 
@@ -208,7 +208,7 @@ Lastly, the system achieves privacy even against byzantine Validators since they
 
 ### Team's experience
 
-Our team has extensive expertise on multiple levels, from software development to system analysis. With knowledge and skills, we can tackle the challenges and develop solutions in the FinTech industry. Moreover, the natural ability of some of the team members to navigate and predict future technological trends combined with the technical experience and project management skills of other members translates into a clear roadmap.
+Our team has extensive expertise on multiple levels, from software development to system analysis. With knowledge and skills, we can tackle the challenges and develop solutions in the blockchain technology. Moreover, the natural ability of some of the team members to navigate and predict future technological trends combined with the technical experience and project management skills of other members translates into a clear roadmap.
 
 ### Team Code Repos
 
@@ -221,7 +221,7 @@ Our team has extensive expertise on multiple levels, from software development t
 
 ## EcoSystem Fit
 
-Tao payment channel is designed to provide scalable, low-cost, secure micro-payment to the Polkadot/MoonBeam ecosystem. As a layer2 offline solution, Tao is built on top of the blockchain's consensus layer and operates independently. Therefore, it only uses the blockchain as a fail-safe mechanism and moves the transaction load offline. Furthermore, it supports cryptocurrency and Fiat Currency since the channel construction is also suitable for regulated environments.
+Tao payment channel is designed to provide scalable, low-cost, secure micro-payment service to the Polkadot/MoonBeam ecosystem. As a layer2 offline solution, Tao is built on top of the blockchain's consensus layer and operates independently. Therefore, it only uses the blockchain as a fail-safe mechanism and moves the transaction load offline. Furthermore, it supports cryptocurrency and Fiat Currency since the channel construction is also suitable for regulated environments.
 
 Similar Projects:
 
@@ -268,11 +268,14 @@ This is the smart contract implementation in Solidary for the channel open, upda
 | 0a. | License 2d| we will apply for the Apache 2.0 license  |
 | 0b. | Documentation 2d| We will provide both inline documentation of the code and a basic tutorial that explains how a developer can create nodes and run the nodes in the test network |
 | 0c. | Testing Guide 2d | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker 1d| We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article 1d | We will publish an article/workshop that explains our advertising workflow as well as technical details.|
-| 1. | Payment channel phase I (open), II( Update), III(Close)  6d|we will build the smart contract on Ink! for the channel open, update and close. Running these smart contracts on MoonBeam Dev Nodes  |  
-| 2. | Consistent Broadcast 6d | We will develop consistent Braoadcase communication protocol using substrate communication package  |  
-| 3. | Incentive Mechanisms 6d |  Build the validator nodes base on moonbeam dev nodes. Develop the mechanism for Update Fee, Closing Fee, Validator collateral.|
+| 0d. | Article 1d | We will publish an article/workshop that explains our advertising workflow and technical details.|
+| 1a. | MoonBean Dev Node 1d|Set up the MoonBeam Dev node as the Development Test Environment|
+| 1b. | Payment channel phase I 2d| Develop the smart contracts in Solidary for Channel Open, then deploy them into the MoonBeam dev node. |
+| 1c. | Payment channel phase II 2d| Develop the smart contracts in Solidary for Channel Update, then deploy them into the MoonBeam dev node. |
+| 1d. | Payment channel phase III 2d| Develop the smart contracts in Solidary for Channel close, then deploy them into the MoonBeam dev node. |
+| 2. | Consistent Broadcast 5d | We will develop consistent Braoadcase communication protocol using substrate communication package  |  
+| 3a. | Validator node  2d |  Build the validator nodes base on moonbeam dev nodes.|
+|3b.| Incentive Mechanisms |Develop the Fee mechanism, including  Update Fee, Closing Fee, Validator collateral.|
 
 ### Milestone 2 —System integration and running the workflows on the test environment. Final run and performance testing in the pre-production-like environment
 
@@ -280,17 +283,17 @@ This is the smart contract implementation in Solidary for the channel open, upda
 - **FTE:** 2
 - **Costs:** $11,200 USD
 
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | Documentation 1d| We will provide  a basic tutorial that explains what an use case looks like and how to run a test case |
+| 0a. | Documentation 1d| We will provide a basic tutorial that explains what a use case looks like and how to run a test case |
 | 0b. | Testing Guide 2d | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0c. | Docker 1d| We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0d. | Article 1d | We will publish an article/workshop that explains our advertising workflow as well as technical details.|
-| 1. | System Integration 4d| We will integrate all the development components, including Tao-Blockchain, Vpos, TaoToken Protocol, Token Signers, Communication Channels |  
-| 2. | ProtoType development 4d |We will develop a prototype for a specific use case. |
-| 3. | ProtoTpe test run 4d| We will run the prototype in the test environment.|  
+| 0c. | Article 1d | We will publish an article/workshop that explains our advertising workflow and technical details.|
+| 1. | System Integration 4d| We will integrate all the development components, including payment channel and validators and constant broadcasting communication channel |  
+| 2. | ProtoType development 4d |We will develop a prototype for a specific use case as proof of concept. |
+| 3. | ProtoType test run 4d| We will run the prototype in the test environment.|  
 | 4. | Performance Evaluation 3d |We will run the performance evaluation, including the Transaction Throughput, Transaction Latency, Communication Overhead |
 
 ## Future Plans
 
-We will develop the payment channel base on the Fiat Currency pegged token.
+We will develop a payment channel-based HEX(hybrid Exchange), which extends existing solutions by adding a new payment channel layer to benefit frequent traders and alleviate the pending transaction congestion.
