@@ -183,35 +183,12 @@ We have made significant progress on the Verida roadmap, including releasing the
 
 The focus of this grant proposal is to build and enhance existing capabilities and make them developer-ready for builders in the Polkadot ecosystem.
 
-## Development Roadmap :nut_and_bolt:
-
-### Overview
-- **Total Estimated Duration:** 6 months
-- **Full-Time Equivalent (FTE):**  1.7 FTE
-- **Total Costs:** 145,000 USD
-
-See below for a summary of the software licencing for deliverables on the roadmap.
-
-| Name | Description | Licence | GitHub Link |
-| :--- | :----------- | :------- | :----------- |
-| verida-js | The core Verida protocol library | ISC (MIT equivalent) | https://github.com/verida/verida-js |
-| Verida Account Explorer | A web front end showing details of each DID | ISC  (MIT equivalent) | https://github.com/verida/account-explorer/ |
-| Verida Vault | The Verida mobile wallet application. Closed source, but freely available. | Integration libraries are open source | N/A |
-| Wallet-Utils | Integration library between the Verida Vault and blockchains | ISC (MIT equivalent) | https://github.com/verida/wallet-utils |
-| Auth Server | Decentralized server that faciliates single sign-on connections | ISC (MIT equivalent) | https://github.com/verida/vault-auth-server |
-
-
-
-### Milestone 1 - Support for DOT token and DOT payment requests in Verida Vault
-- **Estimated duration:** 2 months
-- **FTE:**  1,7 FTE
-- **Costs:** 50,000 USD
-
-We are seeking a level 2 grant to deliver on Milestone 1, which provides DOT support in the Verida Vault, and support for requesting a DOT payment via Verida decentralized messaging. This work will provide the necessary foundation to enable self-sovereign identity claims, verifiable credentials, encrypted personal data storage, single sign-on, and more for Polkadot as outlined in future milestones.
+### Verida Self-Funded Contribution
+As part of this proposal, Verida will self-fund the software development to provide DOT support in the Verida Vault, and support for requesting a DOT payment via Verida decentralized messaging. This work will provide the necessary foundation to enable self-sovereign identity claims, verifiable credentials, encrypted personal data storage, single sign-on, and more for Polkadot as outlined in future milestones.
+Verida Self-Funded Contribution
 
 | Number | Deliverable | Specification |
 | :------ | :-------- | :--------------- |
-| 0a. | License | ISC (MIT equivalent)
 | 1 | DOT support in Verida Vault
 | 1a. | Sign transactions | Add PolkadotJS support into the Verida Vault to support signing transactions
 | 1b. | Submit transactions | Add PolkadotJs support into the Verida Vault blockchain API to submit transactions on chain
@@ -231,14 +208,29 @@ We are seeking a level 2 grant to deliver on Milestone 1, which provides DOT sup
 | 2f. | Unit tests | Develop unit tests for the inbox handler
 | 2g. | Documentation | Document how Polkadot developers can initiate a Payment Request
 
+## Development Roadmap :nut_and_bolt:
 
-### Milestone 2 - Single Sign-On for Apps in Polkadot Ecosystem
+### Overview
+- **Total Estimated Duration:** 2 months
+- **Full-Time Equivalent (FTE):**  1.7 FTE
+- **Total Costs:** 50,000 USD
+
+See below for a summary of the software licencing for deliverables on the roadmap.
+
+| Name | Description | Licence | GitHub Link |
+| :--- | :----------- | :------- | :----------- |
+| verida-js | The core Verida protocol library | ISC (MIT equivalent) | https://github.com/verida/verida-js |
+| Verida Account Explorer | A web front end showing details of each DID | ISC  (MIT equivalent) | https://github.com/verida/account-explorer/ |
+| Wallet-Utils | Integration library between the Verida Vault and blockchains | ISC (MIT equivalent) | https://github.com/verida/wallet-utils |
+| Auth Server | Decentralized server that faciliates single sign-on connections | ISC (MIT equivalent) | https://github.com/verida/vault-auth-server 
+
+### Milestone 1 - Single Sign-On for Apps in Polkadot Ecosystem
 
 - **Estimated Duration:** 2 months
 - **FTE:**  1.7 FTE
 - **Costs:** 50,000 USD
 
-We are seeking a level 2 grant to deliver Milestone 2, which includes:
+We are seeking a level 2 grant for the following deliverables:
 1. Single Sign-On (SSO) for DOT applications
 2. Implement generic transaction support for Polkadot
 3. Support requesting a Verifiable Credential from a Polkadot dApp
@@ -251,11 +243,16 @@ We will provide the capabilities for developers to request verifiable credential
 | Number | Deliverable | Specification |
 | :------ | :-------- | :--------------- |
 | 0a. | License | ISC (MIT equivalent)
+| 0b. | Documentation | We will provide both inline documentation of the code and update the necessary tutorials that explain how a user can use the application.
+| 0c. | Testing | Core functions will be covered by unit tests as far as reasonably applicable to ensure functionality and robustness. In the documentation, we will describe how to run these tests.
+| 0d. | Docker | N/A - We are not providing any infrastructure. All functionality can be tested via unit tests in the repo's.
+| 0e. | Article | We will publish an article that explains what was done as part of the grant.
 | 1. | Single Sign-On (SSO) for DOT applications
 | 1a. | Establish SSO request | Support establishing a SSO request for a Polkadot dApp
-| 1b. | Show available Polkadot addresses | Support specifying a list of available Polkadot addresses for the user to select from
-| 1c. | Specify Polkadot address | Support a user specifying their Polkadot address during user sign
-| 1d. | Documentation | Document how Polkadot developers can establish a SSO request for a Polkadot dApp
+| 1b. | Link Polkadot to Verida DID | Support linking a Polkadot account to a Verida DID account to unlock messaging and payment use cases
+| 1c. | Show available Polkadot addresses | Support specifying a list of available Polkadot addresses for the user to select from
+| 1d. | Specify Polkadot address | Support a user specifying their Polkadot address during user sign
+| 1e. | Documentation | Document how Polkadot developers can establish a SSO request for a Polkadot dApp
 | 2.  | Implement generic transaction support for Polkadot
 | 2a. | Support transaction signing | Support an application requesting a transaction to be signed by the end user
 | 2b. | Support transaction submission | Support an application requesting a transaction to be signed and submitted by the end user
@@ -266,44 +263,6 @@ We will provide the capabilities for developers to request verifiable credential
 | 3a. | Documentation | Document how a Polkadot dApp can make a Verifiable Credential request once connected
 | 4. | Support storing encrypted personal data within a Polkadot dApp
 | 4a. | Documentation | Document how a Polkadot dApp can create, update, view, query and delete encrypted private data for a user of their application
-
-
-### Milestone 3 - Add Chain Support and Developer Documentation
-
-- **Estimated Duration:** 2 months
-- **FTE:**  1.7 FTE
-- **Costs:** 45,000 USD
-
-
-We are seeking a level 2 grant for Milestone 3 which delivers
-1. Support for additional parachains, building on the work done with Polkadot
-2. Support an “Add chain” capability to the Vault for adding Polkadot parachains
-3. Examples and tutorials for developers
-
-This work will be based on Chain Agnostic Improvement Proposal (CAIP) standards.
-
-| Number | Deliverable | Specification |
-| :------ | :-------- | :--------------- |
-| 0a. | License | ISC (MIT equivalent)
-| 1. | Support for additional parachains, building on the work done with Polkadot
-| 1a. | Kusama | Support for Kusama
-| 1b. | Moonbeam | Support for Moonbeam
-| 2. | Support an “Add chain” capability to the Vault
-| 2a. | Research | Research into the best architecture and CAIP compatible implementation to support all current and future parachains
-| 2b. | Add Chain schema | Define a new inbox message schema for “Add chain” message types that support adding a new parachain into the Verida Vault
-| 2c. | Add Chain screens | Design new Verida Vault screens for handling “Add chain” inbox messages
-| 2d. | Add new chain in Vault | Implement an inbox handler that facilitates adding the new chain into the Verida Vault
-| 2e. | Add Chain as part of SSO | Support adding a chain, if it doesn’t already exist, as part of the SSO process
-| 2f. | Auto-create new parachain account | Support auto-creating a new parachain account if it doesn’t already exist for the user in the Vault
-| 2g. | Unit tests | Develop unit tests for the inbox handler
-| 2h. | Documentation | Document how Polkadot developers can initiate an “Add chain” request
-| 3. | Examples and tutorials
-| 3a. | Tutorial 1 | Tutorial for adding SSO and establishing a WalletConnect connection into an existing Polkadot dApp
-| 3b. | Tutorial 2 | Tutorial for requesting a Verifiable Credential from a user from an existing Polkadot dApp
-| 3c. | Tutorial 3 | Tutorial for initiating a Payment Request from a user for any supported parachain
-| 3d. | Tutorial 4 | Tutorial for creating an encrypted database to retain private data for a user in an existing Polkadot dApp
-| 3e. | Tutorial 5 | Tutorial for requesting a user add a new parachain into their Vault
-
 
 
 ## Future Plans
@@ -317,8 +276,13 @@ The Verida network stores personal data for end users. Every piece of data is si
 
 Verida has developed a way to securely use this off-chain signed data as an input to smart contracts in a gas efficient manner. This capability unlocks a huge range of new use cases for smart contracts that can be leveraged by Polkadot applications.
 
-We are also developing an API Connector framework, trust framework and data schemas to enhance trust and enable growth in the Verida network. More details on our future plans can be found in the Verida Whitepaper .
+### Expanding the Data Ecosystem
+We are also developing an API Connector framework, trust framework and data schemas to enhance trust and enable growth in the Verida network. Once the Polkadot integration is complete, these capabilities can be unlocked for the broader Polkadot ecosystem.
 
+### Supporting additional Polkadot Parachains
+Building on the foundational work completed as part of this grant proposal, Verida will be able to build support for additional parachains in the Verida Vault based on Chain Agnostic Improvement Proposal (CAIP) standards. Further examples and tutorials will be developed to support and enable developers.
+
+More details on our future plans can be found in the [Verida Whitepaper](https://www.verida.io/whitepaper).
 
 ## Additional Information :heavy_plus_sign:
 
