@@ -227,7 +227,7 @@ Liberland blockchain will be the first candidate for digital decentralized natio
 
 ### Long term vision
 
-The Liberland blockchain is a project for the long term. We aim to onboard our current user-base, which is currently over half a million users to use our chain for the majority of Liberland's e-government services.
+The Liberland blockchain is a project for the long term. We aim to onboard our current user base, which is currently over half a million users to use our chain for the majority of Liberland's e-government services.
 
 ## Additional Information  
 
