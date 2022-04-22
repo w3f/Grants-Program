@@ -15,7 +15,7 @@ Liberland’s State project could be summarized by two concepts: Minimal state a
 
 ### Overview
 
-Our team is working on this project because this is the first web3 digitization of a countries constitution and government e-services. Liberland's blockchain will be a substrate based blockchain that will serve the citizen of Liberland, taking part of the legal system such as participating in public veto elections and voting. As well as expanding beyond that, and allowing our chain to serve on-chain company registrations, land registration and a lot more!
+Our team is working on this project because this is the first web3 digitization of a country's constitution and government e-services. Liberland's blockchain will be a substrate-based blockchain that will serve the citizen of Liberland, taking part in the legal system such as participating in public veto elections and voting. As well as expanding beyond that, and allowing our chain to serve on-chain company registrations, land registration and a lot more!
 
 
 ### Project Details
