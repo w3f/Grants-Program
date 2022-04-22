@@ -27,11 +27,10 @@ Liberland chain's main functionality will be:
 We name our currency and main on-chain token to Liberland Merit (LLM), signifying 
 the connection between money and real-life value. LLM will be the governance token
 of our blockchain and of Liberland itself. 
-The tokennomics of LLM will be a hard cap of 70 million being distributed over 
-a fixed amount of LLM will be minted over a timeframe of 48 years, allowing inflation 
-to be fixed (being able to pre-calculate future inflation percentages) and controlled over time.  
+LLM will have a hard cap of 70 million tokens, being distributed at the rate of 0.9% per year, over a timeframe of 48 years, allowing inflation 
+to be pre-calculated and controlled over time.  
 
-LLM is a hard-limit currency with a limited amount of coins being put into circulation. The LLM Pallet is automatically minting a certain amount of tokens every X amount of block. Based on a formula of precalculating time based on block production. This will allow the pallet to have time limits between the minting processes, allowing us to precalculate the circulating supply and the inflation curve. 
+Based on a time based block production formula. This will allow the pallet to have time limits between the minting processes, allowing us to precalculate the circulating supply and the inflation curve. 
 
 Please see more details here:
 https://docs.google.com/spreadsheets/d/1uBuGNQMuyz9p4_JBbza7Wa8hWCYkGdGjoOI
