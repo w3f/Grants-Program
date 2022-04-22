@@ -11,35 +11,28 @@ Fudge (FUlly Decoupled Generic Environment for substrate-based chains) provides 
 
 ### Overview
 
-Please provide the following:
+Interacting with a substrate client, database and runtime is inherently complicated and complex. To the best of our knowledge there currently does not exist a simple way to run analytics on a database, test-runtime apis or block-building or in general "debug" the inner workings of substrate. 
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+Fudge is a library that aims to help users doing this. The general idea is to create access to the core traits of substrate that are concerned with client, database and runtime-api logic. Amongs others, this allows to test runtime-apis, analyze and manipulate database states as also block-building and block-importing logics. If developed properly the library will help other projects to have safer runtime upgrades, better testing capabilites and more possibilites to build tooling around their chain.
+
+The idea for the project rose from issues we had with runtime-upgrades. Due to the differences in the "state-debt" of our test environments and the "real-debt" of our live networks, storage access were significantly heavier than anticipated. The idea at the beginning was to fork the "real-state" of a network, manipulate the block prodcution authorities of the last known state with known keys and restart the network locally to run the upgrade. Fudge is generalized lib that allows the needed manipulation. We believe that it will be valuable for teams to have this kind of access to a database and client. As it saves time and increases security. The Centrifuge-chain is currently using the library to run integration tests, that simulate real-block-production, test wasm-execution-code-path and warp time in order to test states in the future.
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+We have a already delivered a PoC of the library that proves the possibilty of the concept and we will continue the development to meet a production-grade standard for the library, as also provide missing core-features. Hence, this grant is applied partially in retrospect.
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+Deliverables are: 
+
+* A detailed documentation for other parachain-teams on how to use and extend the library 
+* Extensive unit and integration-tests
+* Stabilization of the existing PoC
+* Improving the block-production mechanism in a relay-para-chain environment by mimicing the `ParachainInherent` building logic of the Polkadot node
+* Implementing XCM of the library. This enables e2e-tests for xcm-integration.
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+As already described in the overview section, the library is core component for projects to develop their own tooling for understanding, testing and analyzing their nodes, runtimes and upgrades. The audience for such a library are the core-developers of the respective teams. In general, the current need to start a full environment (i.e. a normal blockchain-node of the respective chain) in order to test upgrades and other core-logic is a huge overhead with respect to time. Also, the analytics are reduced to overseeing logs and events. Eliminating this overhead is a big additional value the library provides.
+In order to not reproduce the same tools at every team, the ecosystem might agree to develop further cli's and library in the repo, allwoing the whole ecosystem to benefit from the project.
 
 ## Team :busts_in_silhouette:
 
@@ -137,10 +130,10 @@ For each milestone,
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)|
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |
-| 2. | Substrate module: Y | We will create a Substrate module that will... |
-| 3. | Substrate module: Z | We will create a Substrate module that will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
+| 1. | Substrate module: X |                                                              |
+|        |                     |                                                              |
+|        |                     |                                                              |
+|        |                     |                                                              |
 
 
 ### Milestone 2  — 
