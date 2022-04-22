@@ -79,6 +79,14 @@ as well as in the virtual Metaverse. Our chain will manage registration for both
 Liberland's on-chain governance systems stands out from current existing systems. Our system is  
 designed and built with the sole purpose of serving as a nation-state. Allow the users to vote differently based on their role, in accordance to Liberland's governance system. 
 
+#### Liberland's Metaverse  
+We currently have a beta version of our metaverse that has been designed by [Zaha Hadid Architects](https://en.wikipedia.org/wiki/Zaha_Hadid_Architects), developed by [Mytaverse](https://www.mytaverse.com/) and cordinated by [Arch Agenda](https://archagenda.com/).   
+Our metaverse is currently being used for internal meetings and conferences, such as our 7th anniversary, that can be viewed here:
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/G_1m8ZwqKMw/0.jpg)](http://www.youtube.com/watch?v=G_1m8ZwqKMw "Liberland MetaVerse")
+
+Our metaverse is not currently public, however, we are more then happy to provide a guided private tour of it, if requested.
+
 
 ##### Voting   
 We will make our own pallet, where we adopt the voting functionality from pallet democracy to interact with our public veto governance system.   
