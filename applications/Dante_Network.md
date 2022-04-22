@@ -147,8 +147,8 @@ Our technical team consists of several experienced full-stack engineers and scie
 ## Development Status :open_book:
 
 ### Demo Vedio
-An early version about part of our protocol stack can be seen at: 
-https://youtu.be/YhPwb8_s9xY
+The principle of Dante protocol stack can be seen below: 
+https://www.youtube.com/watch?v=CYXx4O8Xgcs
 
 ### Demo
 Everyone can try a simple demo at [Demo](https://github.com/dantenetwork/cross-chain-demo/tree/develop)
