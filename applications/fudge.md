@@ -66,7 +66,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 The team is made of experienced Substrate builders and part of a well established project in the Polkadot/Kusama ecosystem.
 
-It has already received grant and developed a go-based rpc library for interacting with Substrate nodes ([GSRPC](https://github.com/centrifuge/go-substrate-rpc-client)). Furhtermore, the centrifuge chain is actively pushing xcm integrations in the Polkadot/Kusama ecosystem. All team members have worked extensively on launching Centrifuge and Altair launching the respective parachains. The team is actively contributing to the ecosystem by providing a Chachacha Testnet for other teams. Various team members have presented talks on polkadot related events (sub0, Amsterdot, etc.).
+It has already received grant and developed a go-based rpc library for interacting with Substrate nodes ([GSRPC](https://github.com/centrifuge/go-substrate-rpc-client)). Furthermore, the centrifuge chain is actively pushing xcm integrations in the Polkadot/Kusama ecosystem. All team members have worked extensively on launching Centrifuge and Altair launching the respective parachains. The team is actively contributing to the ecosystem by providing a Chachacha Testnet for other teams. Various team members have presented talks on polkadot related events (sub0, Amsterdot, etc.).
 
 ### Team Code Repos
 
@@ -120,52 +120,54 @@ For each milestone,
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 1 year
+- **Full-Time Equivalent (FTE):**  TBD
+- **Total Costs:** TBD
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 — Stabilize fudge PoC
 
-- **Estimated duration:** 1 month
-- **FTE:**  2
-- **Costs:** 8,000 USD
+- **Estimated duration:** 6 month
+- **FTE:**  TBD
+- **Costs:** TBD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. | License | Apache 2.0 / GPLv3 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)|
+| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |
+| 2. | Substrate module: Y | We will create a Substrate module that will... |
+| 3. | Substrate module: Z | We will create a Substrate module that will... |
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2  — 
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 4,000 USD
+- **Estimated Duration:** 3 month
+- **FTE:**  TBD
+- **Costs:** TBD
 
-...
+### Milestone 3  — Implement fudge eco-system CLIs
+
+- **Estimated Duration:** 3 month
+- **FTE:**  TBD
+- **Costs:** TBD
 
 
 ## Future Plans
 
-Please include here
+The fudge-library is currently actively used by the Centrifuge project to enable real integration-testing. As the library allows to progress blockchain networks locally the plan is to use it extensively to test complete code-path executions for chains and more importantly for the overall ecosystem, for full xcm-integration tests.
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+As defined by milestone 3, the lib can be used to generate tools in the ecosystem to ease testing and manipulating a blockchains database for this purpose.
 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
 - Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
+  &rarr; The library has a working PoC, see https://github.com/centrifuge/fudge. Also, is it actively used for the Centrifuge chains integration tests (https://github.com/centrifuge/centrifuge-chain/tree/parachain/runtime/integration-tests).
+- If there are any other teams who have already contributed (financially) to the project. 
+  &rarr; Just k-f Dev
 - Previous grants you may have applied for.
+  &rarr; gsrpc 
