@@ -1,21 +1,13 @@
 # W3F Grant Proposal
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
-- **Project Name:** Name of your project (e.g. DuoSwap Module)
-- **Team Name:** Legal name of your team (e.g. Duo)
-- **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
-
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+- **Project Name:** fudge
+- **Team Name:** k-f Dev
+- **Payment Address:** *ToBeDetermined*
+- **Level:** 3
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+Fudge (FUlly Decoupled Generic Environment for substrate-based chains) provides a simple and generic way to interact with and manipulate the database of a substrate-based blockchain.
 
 ### Overview
 
@@ -53,41 +45,50 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Frederik Gartenmeister (Core Developer, Fudge project Lead)
+- Jeroen Offerijns (CTO)
+- Branan Riley (Core Developer)
+- Miguel Hervás (Core Developer)
+- Nuno Alexandre (Core Developer)
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:**
+- **Contact Name:** Frederik Gartenmeister
+- **Contact Email:** frederik@centrifuge.io
+- **Website:** [Centrifuge](https://centrifuge.io/)
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** Grafenauweg 8, 6300 Zug, CH
+- **Registered Legal Entity:** k-f Dev AG
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
+The team is made of experienced Substrate builders and part of a well established project in the Polkadot/Kusama ecosystem.
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+It has already received grant and developed a go-based rpc library for interacting with Substrate nodes ([GSRPC](https://github.com/centrifuge/go-substrate-rpc-client)). Furhtermore, the centrifuge chain is actively pushing xcm integrations in the Polkadot/Kusama ecosystem. All team members have worked extensively on launching Centrifuge and Altair launching the respective parachains. The team is actively contributing to the ecosystem by providing a Chachacha Testnet for other teams. Various team members have presented talks on polkadot related events (sub0, Amsterdot, etc.).
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- GSRPC: https://github.com/centrifuge/go-substrate-rpc-client
+- Centrifuge-Chain: https://github.com/centrifuge/centrifuge-chain
+- Fudge: https://github.com/centrifuge/fudge
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+Teams github accounts:
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- Branan - https://github.com/branan
+- Nuno - https://github.com/NunoAlexandre
+- Jeroen - https://github.com/offerijns
+- Miguel - https://github.com/mikiquantum
+- Frederik - https://github.com/mustermeiszer
 
-### Team LinkedIn Profiles (if available)
+### Team LinkedIn Profiles
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- https://www.linkedin.com/in/branan-riley/
+- https://www.linkedin.com/in/nunoalexandredotcom/
+- https://www.linkedin.com/in/jofferijns/
+- https://www.linkedin.com/in/mhervas/
+- https://www.linkedin.com/in/frederik-gartenmeister
 
 ## Development Status :open_book:
 
