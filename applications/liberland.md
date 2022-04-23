@@ -199,6 +199,9 @@ https://docs.google.com/spreadsheets/d/1Q5DnVI4WuQWncMY985xuQ30HB7-bJz6X6EZFr2Vz
    
 #### Liberland Identity Pallet  
 Liberland's on-chain governance is tailor to serve a nation state, therefor we need functionality for users to be citizen, e-residence, assembly member, minister and so on. We will fork the identity pallet from Parity and rewrite it to fit our custom needs, in order to properly take part of the governance system.
+More documentation about Liberland's identity pallet can be found here:           
+https://github.com/liberland/liberland_substrate/blob/main/docs/liberland/identity.md    
+
 
 
 ### Milestone 2: Land and Company registration
