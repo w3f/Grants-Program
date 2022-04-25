@@ -13,46 +13,25 @@
 
 ## Project Overview :page_facing_up:
 
-With battle hardened experience from Edgeware, one of the most active proposal and governance system within the substrate ecosystem, we have developed some insight to improve the proposal process. The
+**tagline** - Sovereign on-chain governance, publishing and organisation for Substrate  
 
-Currently proposal platforms like Commonwealth enable off-chain proposals for communities, but they are a governance risk to a community, where the proposal history is stuck within a centralised off-chain system. 
+With nearly three years of battle hardened experience funding projects in Edgeware, one of the most active proposal and governance system within the Substrate ecosystem, we have developed some insight to improve the proposal process. 
 
- 
+We believe governance systems should be considered as publishing platforms for sovereign public networks since the persistence of nuanced and context specific communications alongside on-chain actions are essential to the enduring and scalable collective intelligence of a Substrate community. 
 
-
-
-
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+We propose Edgeware to match fund with W3F.
 
 ### Overview
 
-With battle hardened experience from Edgeware, one of the most active proposal and governance system within the substrate ecosystem, we have developed some insight to improve the proposal process.
+This grant focuses on building DGov 1.0 - a project that moves many off-chain elements into on-chain actions. We are also introducing a _Network Services_ organisational structure thats aid the curation, onboarding and management of funded projects. We expect to develop it further to expand the native governance logic of Substrate, making systems simpler, more intuive and ultimately sovereign. 
 
-Currently, off-chain governance and proposal platforms like Commonwealth enable a convenient option for communities. However, storing the entire historical proposal data on a centralised platform is a governance risk to communities who value sovereignty, as the proposal history is stuck within a centralised off-chain system. There is also no API for another team in the community to leverage the data, and make their own interface / tools, which forms an unecessary monopoly on the data. Proposals are also an essential part of a community, as it is the core records which unlocks funding from the treasury. The verification and preservation of this data is essential to just distribution of a cryptocurrency, and also in some cases justify inflation of the cryptocurrency to fund human endevour. 
-
-Human interface and collective intellegince is stored in centralised servers. How can the mos timportant of our communications apparatus. 
-
-Honoring of ongoing funding and proposal as evidence. 
+With governance systems acting as publishing platforms for network native communities, there is a pressing requirement to build core Substrate infrastructure that ensures Web3 values of data ownership, provenance and sovereignity are prioritised.
 
 The solution is DGov on-chain proposal system (first remarks, then pallets) and well documented and easy to use API. 
 
-We will store key proposal data on-chain linked to IPFS, protecting the version history.
+We will store key proposal data on-chain linked to IPFS, protecting the version history, allowing for the honoring of proposals with hashes as evidence. 
 
 The API opens up access to other teams and platforms to use the data in useful ways that benefit the community. 
-
-
-Secondly, proposals that unlock funding are an essential part of a and the feedback are essential part of a proposal process, the version history is something that should be preserved. 
-
-
-
-Please provide the following:
-
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
 
 ### Project Details
 
@@ -71,11 +50,30 @@ We expect the teams to already have a solid idea about your project's expected f
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
+
+On-chain governance and publishing tools for sovereign Substrate chains 
+
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+
+We are building this as a pressing requirement for both Edgeware and Kabocha and believe it is a project that can benefit the ecosystem more broadly since it seeks to address a primary challenge facing the long term viability, productivity and scalability of Substrate communities.  
+
 - What need(s) does your project meet?
+
+Sovereign on-chain governance and publishing
+
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
+
+Currently dedicated governance platforms such as [Commonwealth](https://commonwealth.im) which is where Edgeware's communication is based offer basic tools and chain integrations, but are primarily off-chain.
+
   - If so, how is your project different?
+
+The proposal history is held within a centralised off-chain system, with data held by a third party focused on a multi-chain architecture whose design may not prioritise the long or even short term sovereignity of a community. 
+
+There is also no API for another team in the community to leverage the data, and make their own interface / tools, which forms an unecessary monopoly on the data. Proposals are also an essential part of a community, as it is the core records which unlocks funding from the treasury. The verification and preservation of this data is essential to just distribution of a cryptocurrency, and also in some cases justify inflation of the cryptocurrency to fund human endevour. 
+
   - If not, are there similar projects in related ecosystems?
+
+We can see inspiration in Decred's transparent censorship model for its on-chain governance and proposal system [Politeia](https://docs.decred.org/governance/politeia/overview/) where they include version control and proposals and comments are hashed to the chain. 
 
 ## Team :busts_in_silhouette:
 
@@ -107,6 +105,8 @@ Interested in Education surrounding blockchain. Recently helped to get Substrate
 
 Relevant previous (Web2) work includes building an API and spec for invoice factoring fintech https://docs.beansapi.com
 
+Rich - Edgeware council member, nearly 2+ years contributor, founder at [Decent Partners](https://decent.partners), introduced Network Services model and has stewarded many of the projects proposals and iterated the governance process. Previously Decred contributor, cofounder [Copa90](https://copa90.media). 
+
 Jan - Full Stack Developer with experience building tools for Edgeware and Kabocha parachain crowdloan.  
 
 
@@ -116,6 +116,7 @@ Jan - Full Stack Developer with experience building tools for Edgeware and Kaboc
 - https://github.com/kabocha-network/parachain
 - https://github.com/edgeware-network
 - https://github.com/johny
+- https://github.com/monsieurbulb/forksintheroad/blob/master/Decred_forks_in_the_road.md
 
 ## Development Status :open_book:
 
