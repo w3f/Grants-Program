@@ -87,9 +87,6 @@ Team members have invested in and participated in many notable projects and prom
 
 Past achievements of team members: founders of well-known exchanges actively seek cooperation;  had received investment from top capital institutions in the industry.
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
 
 ### Team Code Repos
 
