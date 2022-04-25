@@ -23,7 +23,7 @@ We propose Edgeware to match fund with W3F.
 
 ### Overview
 
-This grant focuses on building DGov 1.0 - a project that moves many off-chain elements into on-chain actions. We are also introducing a _Network Services_ organisational structure thats aid the curation, onboarding and management of funded projects. We expect to develop it further to expand the native governance logic of Substrate, making systems simpler, more intuive and ultimately sovereign. 
+This grant focuses on building DGov 1.0 - a project that moves many off-chain elements into on-chain actions. We are also introducing a [_Network Services_](https://commonwealth.im/edgeware/discussion/3650-decent-partners-an-introduction-to-network-services) organisational structure thats aid the curation, onboarding and management of funded projects. We expect to develop it further to expand the native governance logic of Substrate, making systems simpler, more intuive and ultimately sovereign. 
 
 With governance systems acting as publishing platforms for network native communities, there is a pressing requirement to build core Substrate infrastructure that ensures Web3 values of data ownership, provenance and sovereignity are prioritised.
 
