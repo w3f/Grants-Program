@@ -138,7 +138,7 @@ For each milestone,
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 8,000 USD
+- **Costs:** 15000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -167,7 +167,8 @@ For each milestone,
 Please include here
 
 - how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+- the team's long-term plans and intentions in relation to it.![image](https://user-images.githubusercontent.com/103482054/165081553-4d1d6d1b-e9a0-42f4-933e-a05b14046d75.png)
+
 
 
 ## Additional Information :heavy_plus_sign:
