@@ -38,7 +38,8 @@ OpenBox is committed to serving creators around the world and inspiring creativi
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
 - Mockups/designs of any UI components![image](https://user-images.githubusercontent.com/103482054/165078707-3ee60674-e1c9-4932-b98a-f47e0f88708a.png)
-
+- [image](https://user-images.githubusercontent.com/103482054/165079014-605a0b07-a7cb-4d21-bb2c-66ae4b7571a4.png)
+- [image](https://user-images.githubusercontent.com/103482054/165079190-7f56d9d8-13d8-40b5-8c3e-4c2285627c2f.png)
 - Data models / API specifications of the core functionality
 - An overview of the technology stack to be used
 - Documentation of core components, protocols, architecture, etc. to be deployed
