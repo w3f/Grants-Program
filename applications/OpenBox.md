@@ -82,6 +82,10 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - **Registered Legal Entity:** No legal structure yet.
 
 ### Team's experience
+Our team members participated in Polkadot's ICO in 2017. And led many people in the Asia-Pacific region to join Polkadot ICO. Assisted many people in operating and completing Picops KYC.Has been a supporter of the Polkadot ecosystem since 2017.
+Team members have invested in and participated in many notable projects and promoted the community development of well-known projects. The team has a mix of backgrounds. Some are listed companies, some are from top CEX, some are senior blockchain investors, some are senior blockchain operators, and others are members of e-commerce organizations.
+
+Past achievements of team members: founders of well-known exchanges actively seek cooperation;  had received investment from top capital institutions in the industry.
 
 Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
 
