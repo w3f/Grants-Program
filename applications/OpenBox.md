@@ -167,9 +167,7 @@ For each milestone,
 Please include here
 
 - how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.![image](https://user-images.githubusercontent.com/103482054/165081788-5970f493-301f-4d3e-98c7-d44d1fb1383d.png)
-
-
+- the team's long-term plans and intentions in relation to it.![image](https://user-images.githubusercontent.com/103482054/165083428-327a4e45-99ad-4cc3-8d74-06b2519f7f0d.png)
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
