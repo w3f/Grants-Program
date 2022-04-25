@@ -67,7 +67,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 ### Contact
 
 - **Contact Name:** Michael Choo
-- **Contact Email:** Contact email
+- **Contact Email:** Contact@openbox.io
 - **Website:** openbox.io
 
 ### Legal Structure
