@@ -94,8 +94,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- https://www.linkedin.com/in/mo-ismail-0468526b/
+- www.linkedin.com/in/michael-choo-b49353236
+- https://www.linkedin.com/in/teddyli/
 
 ## Development Status :open_book:
 
