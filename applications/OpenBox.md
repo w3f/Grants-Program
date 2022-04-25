@@ -138,7 +138,7 @@ For each milestone,
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 15000 USD
+- **Costs:** 25000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -157,7 +157,7 @@ For each milestone,
 
 - **Estimated Duration:** 6 month
 - **FTE:**  4
-- **Costs:** 4,000 USD
+- **Costs:** 12000 USD
 
 ...
 
