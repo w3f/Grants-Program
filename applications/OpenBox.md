@@ -4,8 +4,8 @@
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** OpenBox(e.g. DuoSwap Module)
-- **Team Name:** OpenBox.io(e.g. Duo)
+- **Project Name:** OpenBox
+- **Team Name:** OpenBox.io
 - **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
 
@@ -31,7 +31,7 @@ At the same time, Box will also build a Mystery Box system so that users can enj
 OpenBox is committed to serving creators around the world and inspiring creativity. At the same time, more high-quality works will be oriented to users...
 
 - We will  Building Multichain NFT MarketPlace on Substrate Blockchain.We will support NFT minting and transaction circulation based on Wasm, RMRK... based on the Polkadot ecosystem.Finally, with the help of Polkadot's across-chain technology, to achieve NFT's across-chain circulation transactions. 
-- An indication of why your team is interested in creating this project.
+- Our team members participated in Polkadot's ICO in 2017. And led many people in the Asia-Pacific region to join Polkadot ICO. Assisted many people in operating and completing Picops KYC.Has been a supporter of the Polkadot ecosystem since 2017.
 
 ### Project Details
 
