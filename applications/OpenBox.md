@@ -155,8 +155,8 @@ For each milestone,
 
 ### Milestone 2 Example — Additional features
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1
+- **Estimated Duration:** 6 month
+- **FTE:**  4
 - **Costs:** 4,000 USD
 
 ...
