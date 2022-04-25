@@ -131,13 +131,13 @@ For each milestone,
 ### Overview
 
 - **Total Estimated Duration:** Duration of the whole project (6months)
-- **Full-Time Equivalent (FTE):**  4FTE
+- **Full-Time Equivalent (FTE):**  5FTE
 - **Total Costs:** 45000 USD
 
 ### Milestone 1 Example — Implement Substrate Modules
 
 - **Estimated duration:** 2 month
-- **FTE:**  4
+- **FTE:**  5 FTE
 - **Costs:** 25000 USD
 
 | Number | Deliverable | Specification |
