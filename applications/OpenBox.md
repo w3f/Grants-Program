@@ -43,6 +43,10 @@ We expect the teams to already have a solid idea about your project's expected f
 - Data models / API specifications of the core functionality
 - An overview of the technology stack to be used
 - Documentation of core components, protocols, architecture, etc. to be deployed
+- . ![image](https://user-images.githubusercontent.com/103482054/165156033-61730553-5fa8-4a63-bc03-a9177926524c.png)
+  . ![image](https://user-images.githubusercontent.com/103482054/165156132-988d79ef-5017-4883-a159-5802f6ad26b2.png)
+  . ![image](https://user-images.githubusercontent.com/103482054/165156207-824c3f69-dfb0-403f-8d68-cd3f28411805.png)
+
 - PoC/MVP or other relevant prior work or research on the topic
 - What your project is _not_ or will _not_ provide or implement
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
