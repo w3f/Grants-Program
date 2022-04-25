@@ -37,7 +37,8 @@ OpenBox is committed to serving creators around the world and inspiring creativi
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
--  https://openbox.io/  UI1 [MarketPlace](https://user-images.githubusercontent.com/103482054/165078707-3ee60674-e1c9-4932-b98a-f47e0f88708a.png)
+-  https://openbox.io/  UI1. ![image](https://user-images.githubusercontent.com/103482054/165080450-cc12f6e0-02ad-47d3-b4ed-c49973a07ebe.png)
+
 - Data models / API specifications of the core functionality
 - An overview of the technology stack to be used
 - Documentation of core components, protocols, architecture, etc. to be deployed
