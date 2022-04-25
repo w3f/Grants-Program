@@ -30,7 +30,7 @@ In the early stage, Box will mainly support popular  ecological chains that adop
 At the same time, Box will also build a Mystery Box system so that users can enjoy more collection fun.
 OpenBox is committed to serving creators around the world and inspiring creativity. At the same time, more high-quality works will be oriented to users...
 
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
+- We will  Building Multichain NFT MarketPlace on Substrate Blockchain.We will support NFT minting and transaction circulation based on Wasm, RMRK... based on the Polkadot ecosystem.Finally, with the help of Polkadot's across-chain technology, to achieve NFT's across-chain circulation transactions. 
 - An indication of why your team is interested in creating this project.
 
 ### Project Details
