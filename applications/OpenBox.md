@@ -60,14 +60,15 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Michael Choo -Had received investment from top cex capital in the industry
+- Mo Ismail - Mo2.ae Managing Director，SnapCity.me Founder，five years at AT&T.
+-  Teddy Li -Former Pfizer Sr Director Technology,Rowan University Adjunct Business Strategy Professor
 
 ### Contact
 
 - **Contact Name:** Full name of the contact person in your team
 - **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:**
+- **Website:** openbox.io
 
 ### Legal Structure
 
