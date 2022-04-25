@@ -157,7 +157,7 @@ For each milestone,
 
 - **Estimated Duration:** 6 month
 - **FTE:**  4
-- **Costs:** 12000 USD
+- **Costs:** 20000 USD
 
 ...
 
