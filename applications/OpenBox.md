@@ -136,8 +136,8 @@ For each milestone,
 
 ### Milestone 1 Example — Implement Substrate Modules
 
-- **Estimated duration:** 1 month
-- **FTE:**  2
+- **Estimated duration:** 6 month
+- **FTE:**  4
 - **Costs:** 25000 USD
 
 | Number | Deliverable | Specification |
