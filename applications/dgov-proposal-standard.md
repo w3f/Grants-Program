@@ -4,7 +4,7 @@
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** DGov Proposal Standard 
+- **Project Name:** DGov on-chain proposals and API
 - **Team Name:** Decentration
 - **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -13,6 +13,13 @@
 
 ## Project Overview :page_facing_up:
 
+With battle hardened experience from Edgeware, one of the most active proposal and governance system within the substrate ecosystem, we have developed some insight to improve the proposal process. The
+
+Currently proposal platforms like Commonwealth enable off-chain proposals for communities, but they are a governance risk to a community, where the proposal history is stuck within a centralised off-chain system. 
+
+ 
+
+
 
 
 If this application is in response to an RFP, please indicate this on the first line of this section.
@@ -20,6 +27,25 @@ If this application is in response to an RFP, please indicate this on the first 
 If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
 
 ### Overview
+
+With battle hardened experience from Edgeware, one of the most active proposal and governance system within the substrate ecosystem, we have developed some insight to improve the proposal process.
+
+Currently, off-chain governance and proposal platforms like Commonwealth enable a convenient option for communities. However, storing the entire historical proposal data on a centralised platform is a governance risk to communities who value sovereignty, as the proposal history is stuck within a centralised off-chain system. There is also no API for another team in the community to leverage the data, and make their own interface / tools, which forms an unecessary monopoly on the data. Proposals are also an essential part of a community, as it is the core records which unlocks funding from the treasury. The verification and preservation of this data is essential to just distribution of a cryptocurrency, and also in some cases justify inflation of the cryptocurrency to fund human endevour. 
+
+Human interface and collective intellegince is stored in centralised servers. How can the mos timportant of our communications apparatus. 
+
+Honoring of ongoing funding and proposal as evidence. 
+
+The solution is DGov on-chain proposal system (first remarks, then pallets) and well documented and easy to use API. 
+
+We will store key proposal data on-chain linked to IPFS, protecting the version history.
+
+The API opens up access to other teams and platforms to use the data in useful ways that benefit the community. 
+
+
+Secondly, proposals that unlock funding are an essential part of a and the feedback are essential part of a proposal process, the version history is something that should be preserved. 
+
+
 
 Please provide the following:
 
@@ -71,31 +97,25 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team's experience
 
-Ramsey - Have 18 months experience in the substrate ecosystem.
+Ramsey - Substrate Engineer, API developer and technical founder. Have 15 months experience in the substrate ecosystem.
 Here is a recent contribution from me in Substrate Seminar:
 https://www.youtube.com/watch?v=IiAkJAfZsug&t=2299s
 
 Joined the Edgeware community, and became a council memeber. I am technical steward for Kabocha parachain https://kabocha.network.
 
+Interested in Education surrounding blockchain. Recently helped to get Substrate Recipes funded as it was a deprecated learning resource, but one that was very useful and many others in their success path in Substrate. 
+
 Relevant previous (Web2) work includes building an API and spec for invoice factoring fintech https://docs.beansapi.com
 
+Jan - Full Stack Developer with experience building tools for Edgeware and Kabocha parachain crowdloan.  
 
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
-
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
-
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- https://github.com/decentration
+- https://github.com/kabocha-network/parachain
+- https://github.com/edgeware-network
+- https://github.com/johny
 
 ## Development Status :open_book:
 
@@ -152,9 +172,9 @@ For each milestone,
 
 ### Milestone 2 Example — Additional features
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 3 month
 - **FTE:**  1
-- **Costs:** 4,000 USD
+- **Costs:** 37,000 USD
 
 ...
 
