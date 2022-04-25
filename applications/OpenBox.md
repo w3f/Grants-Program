@@ -4,10 +4,10 @@
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** Name of your project (e.g. DuoSwap Module)
-- **Team Name:** Legal name of your team (e.g. Duo)
+- **Project Name:** OpenBox(e.g. DuoSwap Module)
+- **Team Name:** OpenBox.io(e.g. Duo)
 - **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
@@ -21,8 +21,15 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 Please provide the following:
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
+- Web 3.0 & A decentralized multi-chain NFT MarketPlace
+- OpenBox  is a multi-chain aggregated decentralized NFT trading market, supporting ETH, BSC, Polygon,and supporting more chains shortly: Polkadot（Wasm,RMRK）, Avalanche, Solana, Flow...Utilize blockchain technology to create immutable digital resources and ownership transfer channels for physical NFT works, game equipment, art, music, books... and establish limited digital resources.
+
+Users can mint, share, collect, auction, and trade in the marketplace, which is realized through blockchain intelligent contracts without central control and secure copyright ownership. Protected ownership will be established and guaranteed using NFTs, where each NFT item has a unique and immutable blockchain identifier. At the same time, the corresponding metadata will be permanently stored in decentralized storage platforms such as IPFS and Arweave.
+In the early stage, Box will mainly support popular  ecological chains that adopt EVM-based casting standards of 721 and 1155. Creators can complete the creation, casting, and storage of NFTs in a few minutes. Users can buy, sell, and auction their NFTs on the platform.
+
+At the same time, Box will also build a Mystery Box system so that users can enjoy more collection fun.
+OpenBox is committed to serving creators around the world and inspiring creativity. At the same time, more high-quality works will be oriented to users...
+
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 - An indication of why your team is interested in creating this project.
 
