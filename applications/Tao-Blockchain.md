@@ -280,9 +280,9 @@ This is the smart contract implementation in Solidary for the channel open, upda
 | 0c. | Testing Guide 2d | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article 1d | We will publish an article/workshop that explains our advertising workflow and technical details.|
 | 1a. | MoonBean Dev Node 1d|Set up the MoonBeam Dev node as the Development Test Environment|
-| 1b. | Payment channel phase I 2d| Develop the smart contracts in Solidary for Channel Open, then deploy them into the MoonBeam dev node. |
-| 1c. | Payment channel phase II 2d| Develop the smart contracts in Solidary for Channel Update, then deploy them into the MoonBeam dev node. |
-| 1d. | Payment channel phase III 2d| Develop the smart contracts in Solidary for Channel close, then deploy them into the MoonBeam dev node. |
+| 1b. | Payment channel phase I 2d| Develop the smart contracts in ink! for Channel Open, then deploy them into the MoonBeam dev node. |
+| 1c. | Payment channel phase II 2d| Develop the smart contracts in ink! for Channel Update, then deploy them into the MoonBeam dev node. |
+| 1d. | Payment channel phase III 2d| Develop the smart contracts in ink! for Channel close, then deploy them into the MoonBeam dev node. |
 | 2. | Consistent Broadcast 5d | We will develop consistent Braoadcase communication protocol using substrate communication package  |  
 | 3a. | Validator node  2d |  Build the validator nodes base on moonbeam dev nodes.|
 |3b.| Incentive Mechanisms |Develop the Fee mechanism, including  Update Fee, Closing Fee, Validator collateral.|
