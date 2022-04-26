@@ -36,7 +36,7 @@ Please see more details here:
 https://docs.google.com/spreadsheets/d/1uBuGNQMuyz9p4_JBbza7Wa8hWCYkGdGjoOISF0LPKro/edit#gid=
 
 Note: 
-The most important colums
+The most important colums to notice is the Reserve, Merits in circulation and State budget columns that our LLM pallet will use in order to limit the distribution/minting of LLM tokens, the rest of the columns may change in a near future.
 
 We will create our own custom LLM-pallet, Liberland's chain will automatically mint the 0.9% per year and sends the minted tokens to the treasury, using a pre-calculated blocktime. We are using pallet-assets minting functionality in order to make LLM an easy to adopt on-chain asset for thirdparty integration.
 
