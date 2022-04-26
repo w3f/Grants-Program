@@ -5,17 +5,9 @@
 - **Payment Address:** 0x678176dbb2d18dcae0f20a58e5a46dc6470c6e7a (ERC USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
 
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
-
 ### Overview
-
-Please provide the following:
 
 - Web 3.0 & A decentralized multi-chain NFT MarketPlace
 - OpenBox  is a multi-chain aggregated decentralized NFT trading market, supporting ETH, BSC, Polygon,and supporting more chains shortly: Polkadot（Wasm,RMRK）, Avalanche, Solana, Flow...Utilize blockchain technology to create immutable digital resources and ownership transfer channels for physical NFT works, game equipment, art, music, books... and establish limited digital resources.
@@ -27,7 +19,6 @@ At the same time, Box will also build a Mystery Box system so that users can enj
 OpenBox is committed to serving creators around the world and inspiring creativity. At the same time, more high-quality works will be oriented to users...
 
 - We will  Building Multichain NFT MarketPlace on Substrate Blockchain.We will support NFT minting and transaction circulation based on Wasm, RMRK... based on the Polkadot ecosystem.Finally, with the help of Polkadot's across-chain technology, to achieve NFT's across-chain circulation transactions. 
-- Our team members participated in Polkadot's ICO in 2017. And led many people in the Asia-Pacific region to join Polkadot ICO. Assisted many people in operating and completing Picops KYC.Has been a supporter of the Polkadot ecosystem since 2017.
 
 ### Project Details
 
@@ -59,7 +50,8 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 - Michael Choo -Had received investment from top cex capital in the industry
 - Mo Ismail - Mo2.ae Managing Director，SnapCity.me Founder，five years at AT&T.
--  Teddy Li -Former Pfizer Sr Director Technology,Rowan University Adjunct Business Strategy Professor
+- Teddy Li -Former Pfizer Sr Director Technology,Rowan University Adjunct Business Strategy Professor
+- ...
 
 ### Contact
 
@@ -126,7 +118,7 @@ For each milestone,
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (6months)
+- **Total Estimated Duration:** Duration of the whole project (4months)
 - **Full-Time Equivalent (FTE):**  5FTE
 - **Total Costs:** 45000 USD
 
@@ -151,7 +143,7 @@ For each milestone,
 
 ### Milestone 2 Example — Additional features
 
-- **Estimated Duration:** 6 month
+- **Estimated Duration:** 4 month
 - **FTE:**  4
 - **Costs:** 20000 USD
 
@@ -160,13 +152,10 @@ For each milestone,
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.![image](https://user-images.githubusercontent.com/103482054/165083428-327a4e45-99ad-4cc3-8d74-06b2519f7f0d.png)
+- ![image](https://user-images.githubusercontent.com/103482054/165083428-327a4e45-99ad-4cc3-8d74-06b2519f7f0d.png)
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** Web3 Foundation Website
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
