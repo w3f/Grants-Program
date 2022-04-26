@@ -35,6 +35,9 @@ Based on a time based block production formula. This will allow the pallet to ha
 Please see more details here:
 https://docs.google.com/spreadsheets/d/1uBuGNQMuyz9p4_JBbza7Wa8hWCYkGdGjoOISF0LPKro/edit#gid=
 
+Note: 
+The most important colums
+
 We will create our own custom LLM-pallet, Liberland's chain will automatically mint the 0.9% per year and sends the minted tokens to the treasury, using a pre-calculated blocktime. We are using pallet-assets minting functionality in order to make LLM an easy to adopt on-chain asset for thirdparty integration.
 
 
@@ -54,6 +57,7 @@ In the Assembly elections, a Citizen votes _with their tokens_ , producing a
 proof-of-stake-like meritocracy in Liberland’s politics. 
 Voters will be allowed to rethink their vote, even mid-term. They can rearrange the  
 LLM allotted to the Congressmen based on their performance.   
+
 
 ##### Executive
 Our Executive is a fork of modern parachain council’s implementations such as Polkadot’s Council, though   
