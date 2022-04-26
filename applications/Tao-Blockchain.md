@@ -257,7 +257,7 @@ This the Tao Framework nodes implementation , we have started with taking the mo
 
 - <https://docs.google.com/document/d/1uJDEuZDMij0Pu63XEMM-PRSYU_opuQsRBjJJBLWhiCA/edit?usp=sharing>
 
-This is the smart contract implementation in Solidary for the channel open, update and close.
+This is the smart contract experimental implementation for open, update, and close channels. The final implementation will be in ink!. 
 
 ## Development Roadmap :nut_and_bolt
 
