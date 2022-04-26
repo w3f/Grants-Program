@@ -46,7 +46,7 @@ and adapt it to Liberland’s legal system.
 
 ##### Congress
 
-The Congress is a customized pallet, using delegated voting functionality using the
+The Congress is part of the Public Veto pallet, using delegated voting functionality using the
 underlying Democracy pallet from parity. By utilizing this technology we are creating a true
 representative democracy. Representative democracy is used to _enact_ laws and other 
 regulations, both on-chain (as governance) and o-chain (for the state).  
@@ -106,6 +106,8 @@ We intend to form an on-chain judiciary system, working to resolve conflicts bot
 on-chain and in Liberland. Information about our Judiciary system can be found here:
 
 https://docs.google.com/document/d/1UpfN6T3LqfOjUZYGJHvFe2dDahNALzy1qWAQNk9sbGE/edit?usp=sharing
+
+We aim to bring Liberland's Judiciary system on-chain using our Identity and Public Veto Pallet.
 
 
 ### Ecosystem Fit
