@@ -8,7 +8,7 @@
 
 ## Project Overview 
 
-Liberland is a country established in 2015, on a noman’s land( _terranullius_ ) between 
+Liberland is a country established in 2015, on a noman’s land (_terranullius_) between 
 Croatia and Serbia. Liberland’s founders are blockchain and liberty enthusiasts.     
 Liberland’s State project could be summarized by two concepts: Minimal state and distributive governance. Our goal is to put Liberland's e-governance services on a substrate-based chain, being the first nation-state in the world to serve our citizens in a truly web3 decentralized way.
 
