@@ -3,49 +3,42 @@
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-- **Project Name:** Name of your project (e.g. DuoSwap Module)
-- **Team Name:** Legal name of your team (e.g. Duo)
-- **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Project Name:** Relation
+- **Team Name:** Relationlabs
+- **Payment Address:** 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+## Project Overview :page_facing_up:  
 
 ### Overview
 
-Please provide the following:
+Relation is a Multi Chain Social protocol of Web3.
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+Relation is committed to building Web3.0 through a series of infrastructure 0 social networks. Users can easily and conveniently manage their social network data through relation, and insert them into the application according to their own needs. Relationship will make social more democratic and return the ownership of social data to users.
+
+Developers can build applications based on relationship and insert appropriate data models into your applications. It will help you efficiently solve the infrastructure of data storage, update, search and recommendation, so as to quickly build the social map of your applications. Through this unified way of building social applications, the data in social networks will have better composability and interoperability, and relation enables data to flow and combine among applications.
+
+Firstly, relation will add Polkadot's signature verification scheme to the user's relation account, so that users of Poka ecology can register and access the Web3 social graph built by relation.
+
+Secondly, based on the existing user data model, relation will expand the picture, video, file sharing and other scenes in social scenes for relation one by integrating ctrust services.
+
+Finally, relation will build the relation graph pallet, which is a parallel thread of graph database based on substrate and will be used to build the social graph subgraph of Poka ecology.
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+1.	Relation ONE 文档github索引
+2.	个人Canister数据模型及API文档索引
+3.	技术栈简述：@hehe补充
+4.	现有系统架构图+平行线程pallet的设计架构图
+5.	Relation toolsuite文档链接
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+- Access Polkadot JS, and deploy the relation graph pallet to build the sub graph of Poka ecological social graph, so as to lower the threshold of social scene construction of Poka ecology.
+- DAPP developers and relation's own user base
+- Relationship effectively reduces the development threshold of building Web3 decentralized social applications, and returns the user's data sovereignty to the user, allowing users to capture their own data value.
+- Mem protocol。 Firstly, through the self built graph dB, relation can effectively reduce the technical threshold of developers and make high-frequency operation possible on the blockchain. Secondly, the existing implementation of relation can better serve gamefi, while MEM seems to be more focused on the creator economy.
 
 ## Team :busts_in_silhouette:
 
@@ -99,54 +92,48 @@ If you've already started implementing your project or it is part of a larger re
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
+•	预计总工期：整个项目的工期（例如 2 个月）
+•	全职当量 (FTE)： 在整个项目期间从事项目工作的全职员工的平均人数（参见维基百科，例如 2 FTE）
+•	总成本：整个项目要求的美元金额（例如 12,000 美元）。请注意，接受标准和额外好处取决于所申请的资金水平。这和每个里程碑的成本需要以美元提供；如果赠款以比特币支付，金额将根据支付时的汇率计算。
 
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
 
-For each milestone,
+### Milestone 1 — Relation账户实现波卡签名验证模块
 
-- make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-- include the amount of funding requested _per milestone_.
-- include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-- provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-- commit to providing Dockerfiles for the delivery of your project.
-- indicate milestone duration as well as number of full-time employees working on each milestone.
-- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
+- **Estimated duration:** 0.5 month
+- **FTE:**  2
+- **Costs:** 4,000 USD
 
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-### Overview
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0b. | Documentation | 我们将提供代码的内联文档解释开发者如何在Relation账户中实现波卡签名验证功能，并说明其安全性. |
+| 0c. | Testing Guide | 单元测试将完全覆盖核心功能，以确保功能性和稳健性。在指南中，我们将描述如何运行这些测试. |
+| 0d. | Docker | 我们将提供一个 Dockerfile(s)，可用于测试此里程碑提供的所有功能. |
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
-
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 2— Crust 集成
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 8,000 USD
+- **Costs:** 4,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0b. | Documentation | 我们将提供代码的内联文档解释开发者如何通过Crust服务扩展用户的个人存储空间以及的文件服务索引功能更 |
+| 0c. | Testing Guide | 单元测试将完全覆盖核心功能，以确保功能性和稳健性。在指南中，我们将描述如何运行这些测试. |
+| 0d. | Docker | 我们将提供一个 Dockerfile(s)，可用于测试此里程碑提供的所有功能. |
+
+### Milestone 3 — Relation Graph Pallet
+
+- **Estimated duration:** 2 month
+- **FTE:**  2
+- **Costs:** 4,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-
-
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 4,000 USD
-
-...
-
+| 0b. | Documentation | 我们将提供代码的内联文档解释开发者如何通过Crust服务扩展用户的个人存储空间以及的文件服务索引功能更 |
+| 0d. | Docker | 我们将提供一个 Dockerfile(s)，可用于测试此里程碑提供的所有功能. |
+| 0e. | 文章 | 我们将发表一篇文章/研讨会，解释 Relation Graph Pallet的实现方案以及对于生态的意义. |
+| 1. | Substrate module: X | 我们将创建一个substrate pallet模版，可以根据我们的指引快速部署属于用户自己的图数据库. |
 
 ## Future Plans
 
@@ -156,12 +143,4 @@ Please include here
 - the team's long-term plans and intentions in relation to it.
 
 
-## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
