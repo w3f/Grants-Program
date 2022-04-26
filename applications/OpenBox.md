@@ -1,9 +1,5 @@
 # W3F Grant Proposal
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
 - **Project Name:** OpenBox
 - **Team Name:** OpenBox.io
 - **Payment Address:** 0x678176dbb2d18dcae0f20a58e5a46dc6470c6e7a (ERC USDT)
