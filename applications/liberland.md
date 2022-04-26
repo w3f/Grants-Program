@@ -33,8 +33,7 @@ to be pre-calculated and controlled over time.
 Based on a time based block production formula. This will allow the pallet to have time limits between the minting processes, allowing us to precalculate the circulating supply and the inflation curve. 
 
 Please see more details here:
-https://docs.google.com/spreadsheets/d/1uBuGNQMuyz9p4_JBbza7Wa8hWCYkGdGjoOI
-SF0LPKro/edit#gid=
+https://docs.google.com/spreadsheets/d/1uBuGNQMuyz9p4_JBbza7Wa8hWCYkGdGjoOISF0LPKro/edit#gid=
 
 We will create our own custom pallet, so the chain can automatically control the LLM's monetary model. Using pallet-assets, limited minting and distribution. 
 
