@@ -84,6 +84,7 @@ Our metaverse is currently being used for internal meetings and conferences, suc
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/G_1m8ZwqKMw/0.jpg)](http://www.youtube.com/watch?v=G_1m8ZwqKMw "Liberland MetaVerse")
 
 Our metaverse is not currently public, however, we are more then happy to provide a guided private tour of it, if requested.
+If so, please email justice@liberland.org and we shall set up a scheduled session.
 
 
 ##### Voting   
