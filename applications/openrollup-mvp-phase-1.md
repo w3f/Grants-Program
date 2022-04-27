@@ -40,7 +40,7 @@ We give a brief overview of the rollup protocols.
 
 #### Scope of current proposal
 
-Due to the time and resource constraints of us, we limit the scope of the current proposal to implementing the on-chain rollup part of the pallet involving one currency.
+Due to the time and resource constraints of us, we limit the scope of the current proposal to implementing the on-chain rollup part of the pallet involving Currency(Balances pallet)/Assets(Assets pallet)/NFT(Uniques pallet).
 We are still considering and researching the proof and verification protocol, we can't provide very detailed details yet, we will design it while implementing this proposal.
 
 ### Ecosystem Fit
