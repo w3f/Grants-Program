@@ -269,9 +269,9 @@ This is the smart contract experimental implementation for open, update, and clo
 
 ### Milestone 1 Implement core functionality
 
-- **Estimated duration:** 30 working days
+- **Estimated duration:** 45 working days
 - **FTE:**  2
-- **Costs:** $38,760 USD
+- **Costs:** $49,760 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -280,29 +280,15 @@ This is the smart contract experimental implementation for open, update, and clo
 | 0c. | Testing Guide 2d | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article 1d | We will publish an article/workshop that explains our advertising workflow and technical details.|
 | 1a. | MoonBean Dev Node 1d|Set up the MoonBeam Dev node as the Development Test Environment|
-| 1b. | Payment channel phase I 2d| Develop the smart contracts in ink! for Channel Open, then deploy them into the MoonBeam dev node. |
-| 1c. | Payment channel phase II 2d| Develop the smart contracts in ink! for Channel Update, then deploy them into the MoonBeam dev node. |
-| 1d. | Payment channel phase III 2d| Develop the smart contracts in ink! for Channel close, then deploy them into the MoonBeam dev node. |
-| 2. | Consistent Broadcast 5d | We will develop consistent Braoadcase communication protocol using substrate communication package  |  
+| 1b. | Payment channel phase I 5d| Develop the smart contracts in ink! for Channel Open, then deploy them into the Substrate Node. |
+| 1c. | Payment channel phase II 5d| Develop the smart contracts in ink! for Channel Update, then deploy them into the Substrate Node. |
+| 1d. | Payment channel phase III 5d| Develop the smart contracts in ink! for Channel close, then deploy them into the Substrate Node. |
+| 2a. | Consistent Broadcast 5d | We will develop a consistent Braoadcastimg communication protocol using substrate libp2p package  |
+| 2b. | Substrate Private Network 6d | We will create a substrate private network base on the consistent broadcasting communication protocol |
 | 3a. | Validator node  2d |  Build the validator nodes base on moonbeam dev nodes.|
 |3b.| Incentive Mechanisms |Develop the Fee mechanism, including  Update Fee, Closing Fee, Validator collateral.|
 
-### Milestone 2 —System integration and running the workflows on the test environment. Final run and performance testing in the pre-production-like environment
 
-- **Estimated duration:** 15 working days
-- **FTE:** 2
-- **Costs:** $11,200 USD
-
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | Documentation 1d| We will provide a basic tutorial that explains what a use case looks like and how to run a test case |
-| 0b. | Testing Guide 2d | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0c. | Article 1d | We will publish an article/workshop that explains our advertising workflow and technical details.|
-| 1. | System Integration 4d| We will integrate all the development components, including payment channel and validators and constant broadcasting communication channel |  
-| 2. | ProtoType development 4d |We will develop a prototype for a specific use case as proof of concept. |
-| 3. | ProtoType test run 4d| We will run the prototype in the test environment.|  
-| 4. | Performance Evaluation 3d |We will run the performance evaluation, including the Transaction Throughput, Transaction Latency, Communication Overhead |
 
 ## Future Plans
 
