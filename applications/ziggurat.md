@@ -216,8 +216,9 @@ The grant template deliverables 0a-0d are not required for this milestone as thi
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1a. | Ziggurat Spec for Polkadot | This will be in the form of the form of the [ZCash spec] |
-| 1b. | Open Source License | Ziggurat is currently dual-licensed under the exceedingly permissive Apache + MIT combination and will continue to be. |
+| 0a. | License | Ziggurat is currently dual-licensed under the exceedingly permissive Apache + MIT combination and will continue to be. |
+| 1. | Ziggurat Spec for Polkadot | This will be in the form of the form of the [ZCash spec] |
+
 
 [ZCash spec]: https://github.com/eqlabs/ziggurat/blob/main/SPEC.md
 
