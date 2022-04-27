@@ -232,15 +232,15 @@ The Equlibrium team will write and perform the testing designated by the specifi
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 2a. | Open Source License | Ziggurat is currently dual-licensed under the exceedingly permissive Apache + MIT combination and will continue to be. |
-| 2b. | Documentation | Documentation will be diligently updated and maintained as the codebase progresses and tests are written. Likely an extension or continuation of the existing [Ziggurat Manual]
-| 2c. | Testing Guide | We will provide developer-level guidelines for running the test suite locally. |
-| 2d. | Docker | As appropriate, we will provide Docker images of Ziggurat, particularly in the context of CI/CD integration. |
-| 2e. | The test suite | A respository of Rust code quite like the [existing ZCash test suite](https://github.com/eqlabs/ziggurat). |
-| 2f. | Final report | May be in the form of an email, markdown file, blog post, whichever is most approproate for the time and context. |
+| 0a. | License | Ziggurat is currently dual-licensed under the exceedingly permissive Apache + MIT combination and will continue to be. |
+| 0b. | Documentation | Documentation will be diligently updated and maintained as the codebase progresses and tests are written. Likely an extension or continuation of the existing [Ziggurat Manual]
+| 0c. | Testing Guide | We will provide developer-level guidelines for running the test suite locally. |
+| 0d. | Docker | As appropriate, we will provide Docker images of Ziggurat, particularly in the context of CI/CD integration. |
+| 0e. | Marketing / Public Relations (case by case) | When appropriate, we will work with the W3F to publish articles and/or social media posts regarding our findings |
+| 1. | The test suite | A respository of Rust code quite like the [existing ZCash test suite](https://github.com/eqlabs/ziggurat). |
+| 2. | Final report | May be in the form of an email, markdown file, blog post, whichever is most approproate for the time and context. |
 (https://fluttering-gem-83c.notion.site/The-Ziggurat-Manual-88f6ab7d85774c5fb1bc12bcd64bf700) |
-| 2g. | Marketing / Public Relations (case by case) | When appropriate, we will work with the W3F to publish articles and/or social media posts regarding our findings |
-| 2h. | Security Disclosures | Though we will disclose these as soon as they are discovered, they are included here as a digest. **We will default to pricate disclosure of security vulnerabilities and otherwise follow W3F guidelines.**  |
+| 3. | Security Disclosures | Though we will disclose these as soon as they are discovered, they are included here as a digest. **We will default to pricate disclosure of security vulnerabilities and otherwise follow W3F guidelines.**  |
 
 ## Future Plans
 
