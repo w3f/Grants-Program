@@ -118,7 +118,7 @@ For each milestone,
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (4months)
+- **Total Estimated Duration:** Duration of the whole project (3months)
 - **Full-Time Equivalent (FTE):**  5FTE
 - **Total Costs:** 45000 USD
 
@@ -143,8 +143,8 @@ For each milestone,
 
 ### Milestone 2 Example — Additional features
 
-- **Estimated Duration:** 4 month
-- **FTE:**  4
+- **Estimated Duration:** 3 month
+- **FTE:**  5
 - **Costs:** 20000 USD
 
 ...
