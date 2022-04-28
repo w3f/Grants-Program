@@ -219,7 +219,7 @@ Dante Network will be a long-term project because our final goal is to provide a
 
 ## Additional Information :heavy_plus_sign:
 
-We highly endorse the philosophy of Web3 Foundation. We think the web3 world is expected to be an “internet” of multi-chains, each of which can provide its own special features and every participant can share it worldwide. So there should be a kind of infrastructure that can provide consistent and convenient multi-chain interoperability for Dapps in Web3 so that they can focus on their application business. At that time, DApps can serve the whole web3 market instead of staying in some certain ecosystem. 
+We highly endorse the philosophy of Web3 Foundation. We think the web3 world is expected to be an “internet” of multi-chains, each of which can provide its own special features and every participant can share it worldwide. So there should be a kind of infrastructure that can provide consistent and convenient multi-chain interoperability for DApps in Web3 so that they can focus on their application business. At that time, DApps can serve the whole web3 market instead of staying in some certain ecosystem. 
 
 In our idea, we think different chains are like realms in mythology. There are barriers for users to having universal transportation to travel around the different realms. And there is Bifrost to open a teleport between realms, but it is neither cheap nor easy.  So inspired by this, we want to grow a “World Tree” that supports open and collaborative ecosystems in web3. 
 
