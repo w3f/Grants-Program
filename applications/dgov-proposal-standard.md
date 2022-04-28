@@ -50,9 +50,16 @@ Secondly, proposals that unlock funding are an essential part of a and the feedb
 Please provide the following:
 
 - If the name of your project is not descriptive, a tag line (one sentence summary).
+On-chain proposal system with an API.
+
 - A brief description of your project.
+Proposals systems are one of the most important cateogries of data for a community with governance and funding mechanisms, other than the curreny itself. Therefore we are building a system to store proposals on-chain. 
+
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
+We are designging a proposal system that can data on any chain, using system#remarks extrinsic. We will provide an API and host IPFS gateway that will enable any community leverage their proposal data. 
 - An indication of why your team is interested in creating this project.
+We are one of the most experienced substrate chains in the substrate ecosystem, and we see a great need to store proposals on-chain which will reduce risk of loss, and improve sovereignty, accessibility and interoperability. 
+
 
 ### Project Details
 
@@ -71,11 +78,30 @@ We expect the teams to already have a solid idea about your project's expected f
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+
+Any chain can either use system#remarks to submit proposals via the API. 
+The proposal system will be used by Kabocha and Edgeware, and can also be used by any other substrate based chain. 
+
+- Who is your target audience 
+
+We are building which solves Edgeware's acute problems with off-chain proposal systems. And we know that many other chains currently have similar problems. 
+
+Generally, our target audience are Relays and parachains who wish to bring their proposals on-chain. 
+
+Specifically, our target audience are:
+
+- full-stack/UI developers who want to interface with a chain via an API with well crafted documentation, so that they can build their own interfaces. 
+
+- substrate engineers who want to include `pallet_proposal` in their chain. 
+(parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 - What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+There is a need to preserve and verify proposals, which is used by communities to decide and justify unlocking funds from a treasury (or minting new coins). 
+
+- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem? **https://commonwealth.im**
+- how is your project different?
+ - their proposal data is stored off-chain and centralised, which is a governance risk for a community; and cannot be accessed for other teams to leverage the data. They will not share an archive of our data when requested.  
+ - we value sovereignty and interoperable, so our project stores hashes of proposals on-chain, so the history is truly preserved; it is accessible via an Open API so anyone can interact with the data on their own custom interaces.   
+
 
 ## Team :busts_in_silhouette:
 
