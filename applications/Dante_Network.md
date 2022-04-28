@@ -20,7 +20,7 @@ We will cooperate with the smart contract platforms in Polkadot/Kusama to build 
 ### Project Details
 
 Dante Network will build a multi-chain Collaboration protocol stack along with an implementation of it.
-- Firstly, Dante protocol stack will be implemented as smart contracts deployed on multi-chains including more than one smart contract platform in Polkadot ecosystem, through which DApps' in Polkadot ecosystem can send or receive general messages, to or from contracts deployed on chains outside. Besides, Contracts deployed on different chains can call each other as convenient as they did in the same chain.
+- Firstly, Dante protocol stack will be implemented as smart contracts deployed on multi-chains including more than one smart contract platform in the Polkadot ecosystem, through which DApps' in the Polkadot ecosystem can send or receive general messages, to or from contracts deployed on chains outside. Besides, Contracts deployed on different chains can call each other as convenient as they did in the same chain.
 - Secondly, we will build off-chain routers called "Adaption nodes" to make the underlying information routing. Anyone can participate in Dante Network by deploying an "Adaption node" with their own private key.
 - Thirdly, we will provide SDKs covering multiple technology stacks for DApp developers to make multi-chain interoperations more convenient and easier. The technology stacks will include Rust (OAK in Polkadot, and Near, ICP outside), Solidity (Moonriver, Shiden in Polkadot, and EVM chains outside), Cadence (Flow), etc.
 
