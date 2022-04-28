@@ -259,6 +259,16 @@ This the Tao Framework nodes implementation , we have started with taking the mo
 
 This is the smart contract experimental implementation for open, update, and close channels. The final implementation will be in ink!. 
 
+## Development Status :open_book
+
+![image] <https://docs.google.com/document/d/1fjKhFj0BRQxODYddjGafobw6zZFwtGlBbZTHVXuCs5o/edit?usp=sharing>
+
+We will implement a prototype based on a particular use case: A barbershop issuing digital tokens at a 30% discount. So a client goes to the website and pays USD 300 and gets 400 TaoTokens. Then the client goes to the barbershop and has a haircut. After the service, the client use a client app and VPOS in the barbarshop to make the payment for his service.
+
+### Link to source Code
+
+- <https://github.com/taocodao/moonbeam> This the Tao Framework nodes implementation , we have started with taking the substrate development node as the template, and use it as the smart contract engine. 
+
 ## Development Roadmap :nut_and_bolt
 
 ### Overview
@@ -269,24 +279,41 @@ This is the smart contract experimental implementation for open, update, and clo
 
 ### Milestone 1 Implement core functionality
 
-- **Estimated duration:** 45 working days
+- **Estimated duration:** 30 working days
 - **FTE:**  2
-- **Costs:** $49,760 USD
+- **Costs:** $38,760 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License 2d| we will apply for the Apache 2.0 license  |
-| 0b. | Documentation 2d| We will provide both inline documentation of the code and a basic tutorial that explains how a developer can create nodes and run the nodes in the test network |
-| 0c. | Testing Guide 2d | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0b. | Documentation 1d| We will provide both inline documentation of the code and a basic tutorial that explains how a developer can create nodes and run the nodes in the test network |
+| 0c. | Testing Guide 1d | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article 1d | We will publish an article/workshop that explains our advertising workflow and technical details.|
 | 1a. | MoonBean Dev Node 1d|Set up the MoonBeam Dev node as the Development Test Environment|
-| 1b. | Payment channel phase I 5d| Develop the smart contracts in ink! for Channel Open, then deploy them into the Substrate Node. |
-| 1c. | Payment channel phase II 5d| Develop the smart contracts in ink! for Channel Update, then deploy them into the Substrate Node. |
-| 1d. | Payment channel phase III 5d| Develop the smart contracts in ink! for Channel close, then deploy them into the Substrate Node. |
-| 2a. | Consistent Broadcast 5d | We will develop a consistent Braoadcastimg communication protocol using substrate libp2p package  |
-| 2b. | Substrate Private Network 6d | We will create a substrate private network base on the consistent broadcasting communication protocol |
+| 1b. | Payment channel phase I 2d| Develop the smart contracts in ink! for Channel Open, then deploy them into the Substrate Node. |
+| 1c. | Payment channel phase II 2d| Develop the smart contracts in ink! for Channel Update, then deploy them into the Substrate Node. |
+| 1d. | Payment channel phase III 2d| Develop the smart contracts in ink! for Channel close, then deploy them into the Substrate Node. |
+| 2a. | Consistent Broadcast 5d | We will implement the consistent Braoadcastimg communication protocol on smart contract in ink!  |
+| 2b. | Substrate Private Network 2d | We will create a substrate private network base on the consistent broadcasting communication protocol |
 | 3a. | Validator node  2d |  Build the validator nodes base on moonbeam dev nodes.|
 |3b.| Incentive Mechanisms |Develop the Fee mechanism, including  Update Fee, Closing Fee, Validator collateral.|
+
+### Milestone 2 —System integration and running the workflows on the test environment. Final run and performance testing in the pre-production-like environment
+
+- **Estimated duration:** 15 working days
+- **FTE:** 2
+- **Costs:** $11,200 USD
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | Documentation 1d| We will provide a basic tutorial that explains what a use case looks like and how to run a test case |
+| 0b. | Testing Guide 2d | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0c. | Article 1d | We will publish an article/workshop that explains our advertising workflow and technical details.|
+| 1. | System Integration 4d| We will integrate all the development components, including payment channel and validators and constant broadcasting communication channel |  
+| 2. | ProtoType development 4d |We will develop a prototype for a specific use case as proof of concept. |
+| 3. | ProtoType test run 4d| We will run the prototype in the test environment.|  
+| 4. | Performance Evaluation 3d |We will run the performance evaluation, including the Transaction Throughput, Transaction Latency, Communication Overhead |
 
 
 
