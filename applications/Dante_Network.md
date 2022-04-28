@@ -223,6 +223,6 @@ We highly endorse the philosophy of Web3 Foundation. We think the web3 world is 
 
 In our idea, we think different chains are like realms in mythology. There are barriers for users to having universal transportation to travel around the different realms. And there is Bifrost to open a teleport between realms, but it is neither cheap nor easy.  So inspired by this, we want to grow a “World Tree” that supports open and collaborative ecosystems in web3. 
 
-It can take roots in the computing resources and storage infrastructures in web3 and web2 to provide orderly resource scheduling. And it can grow by offering non-differentiated data collaboration services for Dapps in web3 and providing valid resources. This is why we have the Dante Network. 
+It can take roots in the computing resources and storage infrastructures in web3 and web2 to provide orderly resource scheduling. And it can grow by offering non-differentiated data collaboration services for DApps in web3 and providing valid resources. This is why we have the Dante Network. 
 
 
