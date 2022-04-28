@@ -32,7 +32,7 @@ It supports the following specifications:
 * [Turtle](https://www.w3.org/TR/turtle/), [TriG](https://www.w3.org/TR/trig/), [N-Triples](https://www.w3.org/TR/n-triples/), and [N-Quads](https://www.w3.org/TR/n-quads/).
 * [SPARQL 1.1 Query Results JSON Format](https://www.w3.org/TR/sparql11-results-json/) and [SPARQL 1.1 Query Results CSV and TSV Formats](https://www.w3.org/TR/sparql11-results-csv-tsv/).
 
-<img width="592" alt="1" src="https://user-images.githubusercontent.com/91399393/165587783-c55954fe-6d72-4702-95d9-75a4521e980d.png">
+![arch.png](https://user-images.githubusercontent.com/91399393/165587783-c55954fe-6d72-4702-95d9-75a4521e980d.png)
 
 **Usage**
 
