@@ -41,7 +41,7 @@ The “Consensus Verification Layer” is the bottom layer of the protocol stack
 That’s the overview of the protocol stack in Dante Network. We think it can be regard as the “Internet protocol” of Web3. The implementation of the protocol stack can be embedded in public chains as the smart contract along with the off-chain "Adaption node". That’s just like the TCP/IP protocol cluster embedded in operating systems to construct the computer network along with the routers.
 
 #### Highlights
-- Multi-ecosystem barrier-free Collaboration(Including Token,and more than Token): Provide a general data verification protocol to execute the circulation of Token, the comprehensive sensing of information, and the free collaboration of Dapps among multi-chains just like the “internet”.
+- Multi-ecosystem barrier-free Collaboration (Including a Token, and more than a Token): Provide a general data verification protocol to execute the circulation of the Token, the comprehensive sensing of information, and the free collaboration of DApps among multi-chains just like the “internet”.
 - A dynamic balance between security, scalability, and decentralization: Provide an SQoS mechanism to customize to various scenarios just like the QoS in TCP/IP protocol cluster.
 
 
