@@ -23,7 +23,7 @@
 The core of Open rollup is open-rollup-pallet, which saves the program-hash, balance, operations(e.g., transfer, swap, move),  and account state root hash of each zkapp. in addition it saves each users' balance of each zkapp.
 It includes two main components: rollup and verifier. 
 The rollup component includes zkapp registration, user deposits to a zkapp, exit when zkapp is inactive which didn't submit a batch before 7 days, and handling full-exit operations on the zkapp side.
-Due to resource and time constraints, this proposal currently only contains the rollup component and only deals with one currency, instead of implementing a mock verifier which always returns true.
+Due to resource and time constraints, this proposal currently only contains the rollup component, and instead of implementing a mock verifier which always returns true.
 The verifier will be included in future proposals, and the rollup part will also increase the support of tokens and NFTs.
 Our initial idea about the verifier is to implement the verifier of [Cairo VM](https://eprint.iacr.org/2021/1063.pdf) in the future, which requires implementing the AIR of zkstark for Cairo VM. Then the developers of zkapp can use [Cairo-lang](https://www.cairo-lang.org/) to develop zkapp.
 
@@ -125,7 +125,8 @@ We've been working on techniques for zk-rollup, and verifiable computation for s
 | 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. |
 | 1.  | Setup | We provide a repository that forms the basis of our deliverables.|
 | 2.  | Core Types | We provide the core data types, as specified in Project Details. |
-| 3.  | Pallet functions | We provide the functionalities(zkapp registration/user deposit/user exit/user full exit/zkapp batch submit) as specified in Project Details. |
+| 3.  | Verifier trait and mock verifier | We provide the verifier trait suitable for general apps and a mock verifier that always pass the zk-verification. |
+| 4.  | Pallet functions | We provide the functionalities(zkapp registration/user deposit/user exit/user full exit/zkapp batch submit) which support currencies/tokens/NFTs as specified in Project Details. |
 
 ## Future Plans
 
