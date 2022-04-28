@@ -131,7 +131,6 @@ We've been working on techniques for zk-rollup, and verifiable computation for s
 ## Future Plans
 
 - A proof and verification protocol for developing Cairo programs using the Rust language. 
-- Added support for tokens and NFTs,
 - Add recursive zero-knowledge proof protocol
 
 ## Additional Information :heavy_plus_sign:
