@@ -93,7 +93,7 @@ In general, Dante Network will help Polkadot to expand its boundaries.
 - Kay Lin (Full-stack Dev in web3, core dev in Dante Network)
     - A state-owned enterprise medical alliance chain development, as well as the construction and maintenance of distributed storage network, related SDK development.
     - Years of experience in blockchain, a deep participant in EOS, PlatON, and other communities, exporting technical articles, and modifying bugs.
-    - Participate in EOS node maintenance, EOS DAPP development.
+    - Participate in EOS node maintenance, EOS DApp development.
     - Hackathon winner: [Near Metabuild Hackathon](https://devpost.com/software/universal-trusted-cross-chain-bridge), [PlatON Dorahacks](https://forum.latticex.foundation/t/topic/5676);
     - GitHub: https://github.com/kay404.
     - Mail: kay20475@gmail.com
