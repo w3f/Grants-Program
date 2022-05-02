@@ -73,14 +73,12 @@ Past achievements of team members: founders of well-known exchanges actively see
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/openbox-NFT
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- https://github.com/openbox-NFT
+
 
 ### Team LinkedIn Profiles (if available)
 
