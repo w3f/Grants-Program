@@ -120,35 +120,41 @@ For each milestone,
 
 - **Total Estimated Duration:** Duration of the whole project (3months)
 - **Full-Time Equivalent (FTE):**  5FTE
-- **Total Costs:** 45000 USD
+- **Total Costs:** 50000 USD
 
 ### Milestone 1 Example — Implement Substrate Modules
 
 - **Estimated duration:** 2 month
 - **FTE:**  5 FTE
-- **Costs:** 25000 USD
+- **Costs:** 30000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation |Documents containing the description of whole architecture design for Openbox NFT MarketPlace . |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | Documents containing the description of whole architecture design for Openbox NFT MarketPlace . |
+| 0c. | Testing Guide | Provide a full test suite and guide for NFT MarketPlace. Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Front End | Complete the development of the basic interactive page: https://openbox.io/ . |  
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
+| 0e. | Article | We will publish an **OpenBox&Web3.Foundation**/workshop that explains the work done as part of the grant .  |
 | 1a. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 2. | Substrate module: compatible with solidity| We will create a Substrate module that will compatible with solidity EVM |  
+| 3. | Substrate module: Multi-chain support| We will create a Substrate module that will Support NFT mint, circulation, trade of multi-chain (ETH, BSC, Polygon) based on solidity EVM... |  
+| 4. | Test | Deploy the runtime module to a Substrate node and test  described above |  
 
 
 ### Milestone 2 Example — Additional features
 
-- **Estimated Duration:** 3 month
+- **Estimated Duration:** 1 month
 - **FTE:**  5
 - **Costs:** 20000 USD
 
-...
-
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up, which will show how the new functionality(Mystery Box on Chain) works. |
+| 0c. | Testing Guide | Unit tests will fully cover core functions to ensure new functionality(Mystery Box on Chain) and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Front End | Complete the development of the basic interactive page: https://openbox.io/ . |  
+| 0e. | Article | describing how to use the new functionality(Mystery Box on Chain)  |
+| 1a. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
 
 ## Future Plans
 
