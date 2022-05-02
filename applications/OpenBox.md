@@ -48,7 +48,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Michael Choo -Had received investment from top cex capital in the industry
+- Michael Choo -Had received investment from top cex capital in the industry. 
 - Mo Ismail - Mo2.ae Managing Director，SnapCity.me Founder，five years at AT&T.
 - Teddy Li -Former Pfizer Sr Director Technology,Rowan University Adjunct Business Strategy Professor
 - ...
@@ -130,7 +130,7 @@ For each milestone,
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation |Documents containing the description of whole architecture design for Openbox NFT MarketPlace . |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Front End | Complete the development of the basic interactive page: https://openbox.io/ . |  
