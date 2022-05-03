@@ -476,3 +476,4 @@
 | [Simply VC](https://simply-vc.com.mt/) | PANIC Monitoring and Alerting For Blockchains | [GitHub](https://github.com/SimplyVC/panic) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Artree LLC](https://artree.co.jp/) | Zero Network | [GitHub](https://github.com/zero-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [sigma prime](https://sigmaprime.io/) | Differential Fuzzer | [GitHub](https://github.com/sigp) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [t3rn](https://www.t3rn.io/) | XBI - xcm-based high-level standard and interface (ABI) for smart contracts | [GitHub](https://github.com/t3rn/t3rn) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
