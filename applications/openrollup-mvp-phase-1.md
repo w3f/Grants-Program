@@ -70,7 +70,7 @@ assert verifier.vefify(zk-proof, public_inputs)
 saved_state_roots[program_hash] = new_state_root
 ```
 
-**node**
+**note**
 
 As the detailed zkvm is determined, this abstraction may change.
 
