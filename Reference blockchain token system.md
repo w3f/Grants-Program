@@ -46,13 +46,13 @@ In order to incentive the opening of the old work, we want to make a revenue dis
 
 ### Ecosystem Fit
 
-For online services:
+**For online services:**
 The project could make Web3 online services more decentralized. With full composability, interoperability and compatibility, each online service could have different versions interoperable with each other without barriers, and each version could be composed by different parts made by different contributors purely out of founder’s control. Different works could coexist equally to meet the needs of different users, interconnect and combine with each other seamlessly to provide better online services together.
 
 With revenue tracking and distribution scheme, different works could collaborate with each other for mutual benefit rather than vicious competition for monopoly. New works could freely improve and upgrade existing old works without restriction because old works would allow them to do so for maximizing self-interests, and old works wouldn’t compress the emergence of innovative new works because they can share the profits from the new works built based on them.
 
 
-For online service management (DAO):
+**For online service management (DAO):**
 By enabling fully decentralized online services, online service development and management could also be fully decentralized. Nowadays although we achieve free economy in the market, the production and collaboration within the organization like company are still highly central and planned, which is inefficient because the management cost is very high, and ineffective because the needs of users in the market may not reflected accurately and passed smoothly. 
 
 In our project, without such central planning and arraignment inside the organization, everyone who develop and manage online services on Ethererum called service managers could directly connect users without third-party intervention, and provide their services freely in the market to be selected and picked by users directly rather than checked and determined inside the organization first. It will achieve fully free market economy inside the organization by connecting users and service managers directly without centralized planning, allocation and control between them.
@@ -60,7 +60,7 @@ In our project, without such central planning and arraignment inside the organiz
 After founder of the work opens governance rights to the public, everyone would have equal opportunity to participant in the governance, collaborate with each other freely, make innovations and contributions without any limitation to provide the best online service together. They can be anyone in anywhere rather than having to join a company or be accepted by a team first, and they could do anything on any work as long as chosen by any user without predefined governance and compromised voting. 
 
 
-For users and service providers (like drivers in Uber, or bloggers in YouTube):
+**For users and service providers** (like drivers in Uber, or bloggers in YouTube):
 As the project provides unlimited versions of each online service, users can freely choose what they want without compromise. As different versions are interconnected sharing the same network and resources without monopoly, users can freely switch among them without any cost and barrier. 
 
 In this way, users can get best online services that fully protect their own digital rights, freedom and properties. As online services are made by public for public interests, they can be truly reliable and regulated without having more privileges for suppressing users and service providers. 
@@ -89,26 +89,53 @@ As for Jieliang Yin, by studying in both business and Information Technology maj
 
 ## Development Status :open_book:
 
-Still planning and will start the development after the grant is given.
+We have made an inital design on the standard token format of our proposed system as follows. More specific details are still planning now, and we will finish the design and start the development after the grant is given.
+
+**Token data standard:**
+
+| Key | Value | Attribute | Operator |
+| --: | ----- | --------- | -------- |
+| Version | _versionId | compulsory | automatic |
+| Work | _tokenId | compulsory | automatic |
+| Creator  | _address | invariant | creator |
+| Reference | _tokenId | multiple | creator |
+| Content | name, symbol, tokenURI | customized | creator |
+| Shares | address: percent% | multiple | investor | 
+| Usage | Address: note | multiple | buyer | 
+| Transaction | Transaction_id | multiple | automatic |  
+
+**Smart contract standard:**
+
+| Function | Input | Logic | Output |
+| -------: | ----- | ----- | ------ |
+| mint | address,reference,content,(pricing),(shares) | set 100% share to the creator by default | token id |
+| append | address,token id,reference,content  | Can’t modify original items |  |
+| transfer | address,token id | Change the ownership of one’s share | shares, transaction |
+| invest | address,token id,shares | Become new stakeholder or change shares | shares, transaction |
+| purchase | address,token id | Add usage record; pay to stakeholders and all referred tokens | usage,(price),transaction |
 
 ## Development Roadmap :nut_and_bolt:
 
-First month: make the formal research plan determining the research details including scope, goal, participants, and schedule
+**Expected deliverables: **
 
-Second month: do research on addressing defined problems and designing possible solution to produce draft of research proposal
+1. A reference system coded in Solidity smart contract that records and reflects the reference relationship between the referred old works and the new works that are based on others’ old works. By referring to the old work, anyone can build new work based on any other’s work to create better online service. 
+2. A reference token standard like ERC that users and service providers can pay for the new work for usage, and investors can purchase the shares of the new work and get its earnings according to the shares they own.
+3. A revenue distribution scheme that new work will share its earnings with all its referred old work, and the return of opening and sharing should more than closure and monopoly.
 
-Third month: develop a demo to test the effectiveness of the proposed research solution
 
-Fourth month: improve the solution according to the result of the test
+**Milestones:**
 
-Fifth month: publish the improved demo to community and ask for critiques
-
-Sixth month: evaluate the solution according to the critiques, and finalize the research proposal
+1. First month: make the formal research plan determining the research details including scope, goal, participants, and schedule
+2. Second month: do research on addressing defined problems and designing possible solution to produce draft of research proposal
+3. Third month: develop a demo to test the effectiveness of the proposed research solution
+4. Fourth month: improve the solution according to the result of the test
+5. Fifth month: publish the improved demo to community and ask for critiques
+6. Sixth month: evaluate the solution according to the critiques, and finalize the research proposal
 
 ### Overview
 
 - **Total Estimated Duration:** 6 months
-- **Full-Time Equivalent (FTE):**  3 ~ 10 people depending on the grant
+- **Full-Time Equivalent (FTE):**  3 ~ 10 people depending on the given grant
 - **Total Costs:** $50,000
 
 ## Future Plans
