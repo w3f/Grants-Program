@@ -104,6 +104,8 @@ We have made an inital design on the standard token format of our proposed syste
 | Usage | Address: note | multiple | buyer | 
 | Transaction | Transaction_id | multiple | automatic |  
 
+Each token will represent the content and creator of the work especially its reference relationship with unique token id and version id. Each token could be purcahsed, invested and transferred via transactions.
+
 **Smart contract standard:**
 
 | Function | Input | Logic | Output |
@@ -113,6 +115,8 @@ We have made an inital design on the standard token format of our proposed syste
 | transfer | address,token id | Change the ownership of one’s share | shares, transaction |
 | invest | address,token id,shares | Become new stakeholder or change shares | shares, transaction |
 | purchase | address,token id | Add usage record; pay to stakeholders and all referred tokens | usage,(price),transaction |
+
+Everyone could mint a new token represent his new work based on any referred old work. He can update the work by appending new inforamtion. The earnings come from the purchase of the token for usage, which will be distributed according to shares, and they could be freely transferred and invested.
 
 ## Development Roadmap :nut_and_bolt:
 
