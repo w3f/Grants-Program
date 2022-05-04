@@ -1,6 +1,6 @@
 # Open Grant Proposal
 
-- **Project:** [ZeroPool](https://zeropool.network)
+- **Project:** [ZeroPool](https://zeropool.network) Phase 2
 - **Proposer:** snjax
 - **Payment Address:** DAI ERC20: 0xb6F9F891497C0B72a8A817f3D3E3C721fca6f9CC
 
@@ -95,7 +95,7 @@ Alexandra is responsible for product development and cooperation with other team
 * **Full-time equivalent (FTE):**  3 FTE
 * **Total Costs:** 63000 DAI
 
-### Milestone 2 — Implement zkSNARK circuit and cryptography for private transaction
+### Milestone 1 — Implement zkSNARK circuit and cryptography for private transaction
 
 * **Estimated Duration:** 2 months
 * **FTE:**  3
@@ -120,7 +120,7 @@ The resulting software will be available to sign and prove, encrypt and decrypt 
 
 
 
-### Milestone 3 — Implement private transactions contract for substrate pallet and client library
+### Milestone 2 — Implement private transactions contract for substrate pallet and client library
 
 * **Estimated Duration:** 2 months
 * **FTE:**  3

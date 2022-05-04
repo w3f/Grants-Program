@@ -5,22 +5,23 @@
 - [:grey_question: What is an RFP?](#grey_question-what-is-an-rfp)
 - [:scroll: List of current RFPs](#scroll-list-of-current-rfps)
   - [Availability and Validity - Network Topology](#availability-and-validity---network-topology)
+  - [Alternative Polkadot Host Implementation](#alternative-polkadot-host-implementation)
+  - [Anti-Collusion Infrastructure](#anti-collusion-infrastructure)
   - [e-Passport ZK Validation](#e-passport-zk-validation)
   - [RFP: Substrate Identity Directory](#rfp-substrate-identity-directory)
   - [ink!/pallet/solidity performance benchmarking](#inkpalletsolidity-performance-benchmarking)
   - [DOT & KSM mixer](#dot--ksm-mixer)
   - [Multi-chain Block Explorer](#multi-chain-block-explorer)
-  - [On-chain Quadratic Funding](#on-chain-quadratic-funding)
   - [PHP Substrate API](#php-substrate-api)
   - [Polkadot Collator Setup](#polkadot-collator-setup)
   - [Privacy Enhancement for Polkadot Extension](#privacy-enhancement-for-polkadot-extension)
   - [High-availability validator setup](#high-availability-validator-setup)
-  - [Summary](#summary)
   - [SCALE Codec Comparator](#scale-codec-comparator)
   - [Social Recovery Wallet](#social-recovery-wallet)
   - [Uncollateralized Stablecoin](#uncollateralized-stablecoin)
   - [polkadot-validator-setup maintenance](#polkadot-validator-setup-maintenance)
   - [XCM library & tools](#xcm-library--tools)
+  - [Sub-consensus mechanism](#sub-consensus-mechanism)
 - [:mailbox_with_mail: Suggest an RFP](#mailbox_with_mail-suggest-an-rfp)
 
 
@@ -60,7 +61,45 @@ The full mechanism is described in [the host specification](https://github.com/w
 
 
 ----
+###  Alternative Polkadot Host Implementation
 
+
+- Published: 2022-04-07
+
+
+- [:arrow_right: alternative_polkadot_host_implementations.md](./alternative_polkadot_host_implementations.md)
+
+
+- **Proposer:** [Noc2](https://github.com/Noc2)
+
+
+#### Project Description :page_facing_up:
+
+The architecture of Polkadot can be divided into two different parts, the Polkadot runtime and the Polkadot host. The Polkadot runtime is the core state transition logic of the chain and can be upgraded over the course of time and without the need for a hard fork. In comparison, the Polkadot host is the environment in which the runtime executes and is expected to remain stable and mostly static over the lifetime of Polkadot.
+
+The Polkadot host interacts with the Polkadot runtime in limited, and well-specified ways. For this reason, implementation teams can build an alternative implementation of the Polkadot host while treating the Polkadot runtime as a black box. For more details of the interactions between the host and the runtime, please [see the specification](https://github.com/w3f/polkadot-spec/).
+
+
+----
+
+###  Anti-Collusion Infrastructure
+
+
+- Published: 2021-07-20
+
+
+- [:arrow_right: anti-collusion infrastructure.md](./anti-collusion%20infrastructure.md)
+
+
+- **Proposer:** [Noc2](https://github.com/Noc2)
+
+
+#### Project Description :page_facing_up:
+
+A lot of blockchain applications that involve some kind of voting, like on-chain quadratic funding, can potentially be exploited via collusion and bribery (see [Vitalik’s post about collusion](https://vitalik.ca/general/2019/04/03/collusion.html)). Therefore, it’s important to design mechanisms that effectively prevent any kind of on-chain collusion or at least make it more difficult. The goal of this RFP is to encourage people to try to research and come up with their own solutions or to implement existing solutions, like [Minimal anti-collusion infrastructure](https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413) as a substrate pallet or ink! smart contract.  
+
+
+----
 
 
 ### e-Passport ZK Validation
@@ -182,28 +221,6 @@ Some of the functionality that should be covered as part of the development: ...
 ----
 
 
-### On-chain Quadratic Funding
-
-
-- Published: 2021-07-20
-
-
-- [:arrow_right: on-chain-quadratic-funding.md](./on-chain-quadratic-funding.md)
-
-
-- **Proposer:** [Noc2](https://github.com/Noc2)
-
-
-#### Project Description :page_facing_up:
-
-CLR, short for [Constrained Liberal Radicalism algorithm](https://blogchains.org/wp-content/uploads/sites/4/2019/04/SSRN-id3243656.pdf), commonly called quadratic funding (QF), is a way to efficiently fund projects in the Web3 ecosystem. The way it works is that users contribute directly to projects which they value and in doing so, help the projects earn a share of a matching pool of funds. The *number* and amount of each contribution influences the total amount allocated to a project. This means even a small contribution is valuable and can result in a high matched amount.
-
-[Gitcoin](https://gitcoin.co/) is currently using this mechanism to successfully fund and support public goods. However, Gitcoin is centralized. The goal of this RFP is to develop a decentralized solution on top of [Substrate](https://github.com/paritytech/substrate), which can potentially be integrated into Kusama, Polkadot or any other Substrate-based chain as a pallet. The on-chain treasury could potentially sustainably fund the matching pool in the long-run. However, the Web3 Foundation would also be committed to fund a matching pool of the solution for initial test rounds.  ...
-
-
-----
-
-
 ### PHP Substrate API
 
 
@@ -301,8 +318,6 @@ As outlined [here](https://github.com/polkadot-js/extension/issues/893), the del
 
 #### Project Description :page_facing_up:
 
-### Summary
-
 Validator leader selection via Raft consensus. Inspired by internal discussions & [certus.one active-active validator setup](https://kb.certus.one/validator_ha.html#active-active-validator). ...
 
 
@@ -361,7 +376,7 @@ This would provide (some) assurance that the implementation in a given language 
 
 Managing your own private keys is a difficult task. The average person doesn’t want to spend multiple hours to ensure the security of their keys. This leads to people having difficulties to join the blockchain space or even worse leads to the loss of funds. One solution to this problem is the implementation of a social recovery system. It allows users to recover their accounts if their key or other authentication mechanism has been lost. Therefore you usually set up at least 3 "guardians" (e.g. other devices, friends or family or institutions), of which a majority can cooperate to change the key of the account (often after some delay). Kusama has for this purpose currently the [social recovery pallet implemented](https://github.com/paritytech/substrate/blob/master/frame/recovery).
 
-The goal of this RFP is to find teams that are willing to leverage this or similar mechanism to create wallet solutions (desktop, web, mobile, extensions, etc.) which are as easy to use as possible and at the same time offer a high security for the average user.  ...
+The goal of this RFP is to find teams that are willing to leverage this or similar mechanism to create wallet solutions (desktop, web, mobile, extensions, etc.) which are as easy to use as possible and at the same time offer a high security for the average user.
 
 
 #### Deliverables :nut_and_bolt:
@@ -448,6 +463,31 @@ A list of possible tasks to work on:
 XCM is the crosschain communication standard that will be used by all the parachains. Currently XCM is still in early stage but already supports some main use cases such as crosschain transfer of fungible tokens.
 
 There are currently two major areas of XCM that still awaiting to be improves: ...
+
+
+----
+
+
+### Sub-consensus mechanism
+
+
+- [:arrow_right: sub-consensus.md](./sub-consensus.md)
+- Published: 2022-02-23
+- **Status:** Open
+- **Proposer:** mmagician, laboon
+
+
+#### Project Description :page_facing_up:
+
+Parachain dApps suffer from long confirmation times due to the time taken for the Relay Chain to issue an on-chain verification of the parachain blocks. This proposal aims at providing an alternative mechanism for providing parachain users with an alternative, probabilistic sub-consensus mechanism. ...
+
+
+#### Deliverables :nut_and_bolt:
+
+- **Total Estimated Duration:** 3 months
+- **Full-time equivalent (FTE):** 1
+- **Total Costs:** 40,000 DAI
+
 
 ----
 
