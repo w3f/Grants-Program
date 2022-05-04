@@ -120,7 +120,7 @@ Everyone could mint a new token represent his new work based on any referred old
 
 ## Development Roadmap :nut_and_bolt:
 
-**Expected deliverables: **
+**Expected deliverables:**
 
 1. A reference system coded in Solidity smart contract that records and reflects the reference relationship between the referred old works and the new works that are based on others’ old works. By referring to the old work, anyone can build new work based on any other’s work to create better online service. 
 2. A reference token standard like ERC that users and service providers can pay for the new work for usage, and investors can purchase the shares of the new work and get its earnings according to the shares they own.
