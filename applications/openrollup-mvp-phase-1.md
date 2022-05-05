@@ -145,15 +145,15 @@ We've been working on techniques for zk-rollup, and verifiable computation for s
 
 ### Overview
 
-- **Total Estimated Duration:** 2.5 months
+- **Total Estimated Duration:** 2.7 months
 - **Full-Time Equivalent (FTE):** 1.5 FTE
-- **Total Costs:** 45,000 USD). 
+- **Total Costs:** 48,600 USD).
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 — Implement Substrate Modules
 
-- **Estimated duration:** 2.5 month
+- **Estimated duration:** 2.7 month
 - **FTE:**  1.5
-- **Costs:** 45,000 USD
+- **Costs:** 48,600 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -166,6 +166,7 @@ We've been working on techniques for zk-rollup, and verifiable computation for s
 | 2.  | Core Types | We provide the core data types, as specified in Project Details. |
 | 3.  | Verifier trait and mock verifier | We provide the verifier trait suitable for general apps and a mock verifier that always pass the zk-verification. |
 | 4.  | Pallet functions | We provide the functionalities(zkapp registration/user deposit/user exit/user full exit/zkapp batch submit/zkapp management/zkapp info api) which support currencies/tokens/NFTs as specified in Project Details. |
+| 5.  | zkapp demo example | We provide an demo example of a payment zkapp that uses a node.js application to fetch pallet transactions, provide user API service, manage its merkle state database, register the zkapp with the Open rollup pallet and submit transaction batches. We use [assemblyscript](https://www.assemblyscript.org/) and [node.js's WASI](https://nodejs.org/api/wasi.html) to mock a mock zkvm: zkwasm, we provide the payment logic in assemblyscript and then use this zkwasm to execute it and generate a mock proof. As a demo example, the payment logic doesn't provide user authentication.|
 
 ## Future Plans
 
