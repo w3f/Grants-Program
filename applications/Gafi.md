@@ -44,21 +44,24 @@
 
   The project is broken down into following pallets:
 
-  proof-address-mapping: mapping Substrate (AccountId) address with EVM address (H160) by given signature.
+  **proof-address-mapping**: mapping Substrate (AccountId) address with EVM address (H160) by given signature.
 
-  upfront-pool: Changing upfront every 'x' amount of time (x depends on the number of players staying in the pool and the number of projects running on Gafi, x will be determined when testnet goes live) to get the discount on the transaction fee.
+  **upfront-pool**: Changing upfront every 'x' amount of time (x depends on the number of players staying in the pool and the number of projects running on Gafi, x will be determined when testnet goes live) to get the discount on the transaction fee.
   
-  staking-pool: Freeze the amount of token to reduce the transaction fee.
+  **staking-pool**: Freeze the amount of token to reduce the transaction fee.
   
-  sponsored-pool: Provide the service to help the game-creator appeal to their users, the sponsored pool created by the game-creator to pay a part of the transaction fee when players deploy their smart contracts.
+  **sponsored-pool**: Provide the service to help the game-creator appeal to their users, the sponsored pool created by the game-creator to pay a part of the transaction fee when players deploy their smart contracts.
 
-  gafi-tx: Manage player's transactions on the Gafi Pool, every minute or hour players can only make 'x' discounted transactions. Reduce 'y' percentage of transaction fee. 'x' and 'y' will be and should be determined by DAO.
+  **gafi-tx**: Manage player's transactions on the Gafi Pool, every minute or hour players can only make 'x' discounted transactions. Reduce 'y' percentage of transaction fee. 'x' and 'y' will be and should be determined by DAO.
   
-  game-creator: Control the transaction fee to reward the game-creator.
+  **game-creator**: With the purpose of rewarding the game's creator, pallet game-creator provides the following main functionality:
+    1. Game's creator claim the ownership of the contract by given transaction hash
+    2. Withdraw the transaction fee reward
+    3. Change the ownership
   
-  pallet-cache: Store runtime data temporarily.
+  **pallet-cache**: Store pallet data temporarily.
 
-  pallet-player: Handle player information likes id, name, friends...
+  **pallet-player**: Handle player information likes id, name, friends...
 
 
 - **DAO**
