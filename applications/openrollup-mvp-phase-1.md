@@ -20,7 +20,7 @@
 
 ### Project Details
 
-The core of Open rollup is open-rollup-pallet, which saves the program-hash, balance, operations(e.g., transfer, swap, move),  and account state root hash of each zkapp. in addition it saves each users' balance of each zkapp.
+The core of Open rollup is open-rollup-pallet, which saves the program-hash, balance, operations(e.g., transfer, swap, move),  and account state root hash of each zkapp. in addition it saves each users' balance of each zkapp, one child trie per zkapp.
 It includes two main components: rollup and verifier. 
 The rollup component includes zkapp registration, user deposits to a zkapp, exit when zkapp is inactive which didn't submit a batch before 7 days, and handling full-exit operations on the zkapp side.
 Due to resource and time constraints, this proposal currently only contains the rollup component, and instead of implementing a mock verifier which always returns true.
@@ -37,6 +37,9 @@ We give a brief overview of the rollup protocols.
 - **User exit.** If this zkapp ignores the user's operation in zkapp, the user can submit an exit transaction, and this zkapp must include this exit operation in the next submission.
 - **User full exit.** If the zkapp has not been submitted for a period of time, the user can exit the zkapp and withdraw the assets.
 - **Zkapp batch submit.** The submission includes the batch's commitment, operations, proof, and new and previous account state root hash. The commitment is the hash of the batch's operations, it's the public output of the zkapp's execution, so the verifier can be convinced of the state transition of the operations is correct. Operations include transfers, swaps, move to another zkapp, and exits ops, which are used to update user balances for int the zkapp.
+
+- **Zkapp management** The registrant of one zkapp can manage batch submiter, manually set the zkapp to be inactive
+- **Zkapps info api.** Query the status(assets's balances, last submission time, inactive status) of each zkapp, and the assets's balances of each user in each zkapp
 
 #### Prove and Verification abstraction
 
@@ -162,7 +165,7 @@ We've been working on techniques for zk-rollup, and verifiable computation for s
 | 1.  | Setup | We provide a repository that forms the basis of our deliverables.|
 | 2.  | Core Types | We provide the core data types, as specified in Project Details. |
 | 3.  | Verifier trait and mock verifier | We provide the verifier trait suitable for general apps and a mock verifier that always pass the zk-verification. |
-| 4.  | Pallet functions | We provide the functionalities(zkapp registration/user deposit/user exit/user full exit/zkapp batch submit) which support currencies/tokens/NFTs as specified in Project Details. |
+| 4.  | Pallet functions | We provide the functionalities(zkapp registration/user deposit/user exit/user full exit/zkapp batch submit/zkapp management/zkapp info api) which support currencies/tokens/NFTs as specified in Project Details. |
 
 ## Future Plans
 
