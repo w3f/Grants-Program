@@ -79,14 +79,10 @@ This proposal covers the migration or creation of the following:
 2. Sign and Login with email.
 3. Originate and configure a tax credit and create sales orders for tax credits.
 4. Support for encrypted files attached to tax credits.
-5. Order matching (has to match the price but also the state and follow specific rules laid out by each jurisdiction).
-6. Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.
-7. Ability for buyers to place buy orders.
-8. Asset redemption workflow (tax credits require a 'redemption specialist').
-9. Automatic government form/PDF population to make tax credit compatible with on-chain.
-10. Freeze assets on-chain.
-11. Launch materials, videos and speaking arrangements.
-
+5. Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.
+6. Ability for buyers to place buy orders.
+7. Asset redemption workflow (tax credits require a 'redemption specialist').
+8. Launch materials, videos and speaking arrangements.
 
 ### Workflow
 
@@ -174,7 +170,6 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 
 
 ### Relevant profile links
-
 - Louise Reed CPA website: https://louisereedcpa.com/
 - Louise Reed LinkedIn: https://www.linkedin.com/in/louisewreed/
 - Abel on Github: https://github.com/amatsonkali
@@ -184,15 +179,15 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 
 
 ## Development Roadmap :nut_and_bolt:
-
 ### Overview
 - **Total Estimated Duration:** 13 weeks
 - **Full-Time Equivalent (FTE):**  2 FTE (across 5 contributors)
 - **Total Costs:** 46,200 USD
 
 #### Languages
-- All pallets and any associated backend services will be developed in Rust.
-- The front end will be Angular 
+- All pallets will be developed in Rust. 
+- The custodial/persistence partner backend will be developed in Nodejs, with a slight possibility of porting it to Rust.
+- The front end will be Angular, with a possibility that it will be migrated to Vuejs.
 
 ### Milestone 1 — User onboarding (set and verify identity with gatekeeper parameters) and slides.
 - **Estimated duration:** 5 weeks
@@ -205,10 +200,11 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 | 0a. | License | MIT |
 | 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** of the modules delivered in this Milestone.|
 | 0c. | Testing | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article** in English and Spanish that explains what was built and how it can benefit other projects
-| 1. | Substrate Modules | 1. Comprehensive user onboarding web client for uploading identity details in a privacy preserving manner.<br />2. Sign and Login with email.<br />3. Extensions to Identity pallet, if necessary (configuration of registrars for `additional` field arrays)<br /> 4. Gatekeeper screen for viewing and approving new user (market participant) requests|
-| 2. | Slides |1-3 additional presentation slides for Louise W. Reed, CPA’s currently scheduled talks at CPA conferences regarding blockchain, cryptocurrency, triple-entry accounting and transferring state tax credits.  The additional slides will be added to address why Afloat sees value in being supported by Polkadot’s ecosystem| 
+| 0d. | Video | We will provide a video demonstration that will illustrate all of the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article** in English and Spanish that explains what was built and how it can benefit other projects |
+| 1. | Set Profile and Upload KYC Materials | User onboarding web client for uploading identity details in a privacy preserving manner. Data will be encrypted and only accessible by 1) the user, 2) a pre-specified KYC administrator account, and 3) a persistence partner/custodian that the user or app administrator selects. |
+| 2. | KYC Admin | KYC administrator screen for viewing and approving new user (market participant) requests. We plan to use the existing `registrar` process on the Identity pallet. UI is in Angular, with a small chance we may migrate it to Vuejs |
+| 3. | Slides |1-3 additional presentation slides for Louise W. Reed, CPA’s currently scheduled talks at CPA conferences regarding blockchain, cryptocurrency, triple-entry accounting and transferring state tax credits.  The additional slides will be added to address why Afloat sees value in being supported by Polkadot’s ecosystem| 
 
 
 ### Milestone 2 — Originate and configure a tax credit and create sales order for tax credits.
@@ -222,9 +218,12 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 | 0a. | License | MIT |
 | 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** of the modules delivered in this Milestone.|
 | 0c. | Testing | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0d. | Video | We will provide a video demonstration that will illustrate all of the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** in English and Spanish that explains what was built and how it can benefit other projects
-| 1. | Substrate Modules | 1. Web client for onboarding new tax credits as NFTs, including privacy preserving document storage. <br />2. Support for encrypted files attached to tax credits.<br />3. Tax Credit (NFT) marketplace pallet (perhaps ability to re-use RMRK marketplace) <br />4. MVP Tax Credit pallet, compatible with the prebuilt Uniques pallet (and/or RMRK), supporting setup rules by jurisdiction. <br />5. Ability for Tax Credit (NFT) owners to assign a price and list it for sale.| 
+| 1. | Originate Tax Credit | Web client for onboarding new tax credits as NFTs, appropriate metadata persisted using the Uniques and likely Statemint specifications. |
+| 2. | Upload Confidential Documents | This feature allows for NFT originators to upload encrypted files attached to tax credits. The files will be accessible only by the user and the application administartor. | 
+| 3. | Tax Credit verification | MVP Tax Credit pallet, compatible with the prebuilt Uniques pallet (and/or RMRK), will support data validation rules by jurisdiction and tax credit type. The user will be able to save a draft of their tax credit if they need to identify more IRL steps to fix discrepancies. It's like a 'tax credit compiler'. |
+| 4. | List for Sale | Ability for Tax Credit (NFT) owners to assign a price and list it for sale.| 
 
 
 ### Milestone 3 — Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.
@@ -238,9 +237,11 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 | 0a. | License | MIT |
 | 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** of the modules delivered in this Milestone. |
 | 0c. | Testing | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0d. | Video | We will provide a video demonstration that will illustrate all of the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** in English and Spanish that explains what was built and how it can benefit other projects
-| 1. | Substrate Modules | 1. Web client and pallet support for fractionalizing a Tax Credit NFT. Users may specify the % and/or direct amount for the newly spawned NFT. <br />2. Web client for buyers to buy a listed Tax Credit NFT and make an offer. <br />3. Order matching (has to match the price but also the state and follow specific rules laid out by each jurisdiction).<br />4. Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets.<br />5. Ensure the marketplace correctly calculates appropriate commissions and fees.|  
+| 1. | Order Part of an NFT | Web client and pallet support for fractionalizing a Tax Credit NFT. Users may specify the % and/or direct amount for the order. Rust and Angular/Vuejs | 
+| 2. | Complete/Confirm Order | Sell the entire or a fraction of the tax credit to interested buyers using fruniques pallets. Rust and Angular/Vuejs | 
+| 3. | Order Settlement | Ensure the marketplace correctly calculates appropriate commissions and fees. Calculations will be in Rust, displayed in application using Angular/Vuejs |
 
 ### Milestone 4 — Redeem the tax credit and confirm redemption and freeze/burn asset on-chain.
 - **Estimated duration:** 2 weeks
@@ -253,32 +254,40 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 | 0a. | License | MIT |
 | 0b. | Documentation | We will provide **inline documentation** of the code and a basic **tutorial** of the modules delivered in this Milestone.|
 | 0c. | Testing | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0d. | Video | We will provide a video demonstration that will illustrate all of the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** in English and Spanish that explains what was built and how it can benefit other projects
-| 1. | Substrate Modules | 1. Pallet and web client for onboarding and approving/enrolling Tax Credit Redemption Specialists. <br />2. Pallet and web function/form for requesting redemption, optionally from a specific Redemption Specialist or system will choose. <br />3. Pallet and web client for Redemption Specialist to review tax credit materials and confirm that off-chain IRL redemption has been completed. Redemption completion approved by owner and Redemption specialist. <br />4. Pallet and web client for Tax Credit Asset Manager(s) to lock, freeze, and/or burn the NFT.<br /> 5. Asset redemption workflow (tax credits require a 'redemption specialist').<br />6. Automatic government form/PDF population to make tax credit transferability compatible with on-chain.<br /> 7.Freeze asset on-chain.<br />8. Launch materials, videos and speaking arrangements.|  
+| 1. | Approve Redemption Specialists | Pallet and web client for onboarding and approving/enrolling Tax Credit Redemption Specialists. These are experts that know how to perform appropriate steps to migrate a tax credit IRL. Approval will be handled by marketplace administrator initially, by the community eventually. |
+| 2. | Request Redemption | Pallet and web function/form for requesting redemption, optionally from a specific Redemption Specialist or system will choose. |
+| 3. | View materials and Redeem | Pallet support and web client for Redemption Specialist to review the encrypted tax credit materials and confirm that off-chain IRL redemption has been completed. Redemption completion will be approved by owner and Redemption specialist. | 
+| 4. | Asset Manager | Once part or all of a tax credit NFT is redeemed, the Tax Credit Asset Manager(s) will be able to lock, freeze, and/or burn the NFT. |
+| 5. | Launch Materials | Launch materials, videos and speaking arrangements for Louise are already in queue.|  
  
 ## Future Plans
-
 ### Immediate Use
-
 All Afloat users will be migrated to the substrate application and benefit from the identity and security enhancements. Afloat will gain access to the full substrate ecosystem and vice versa. 
 
 ### Next Phases
-
 This proposal covers Afloat migration of the current functionality. Below are future phases that expand it:
 
-- Phase 2: User scenarios: registration/approval of new appraisers, request appraisal of NFT, appraise NFT, review and compensate appraiser
+#### Phase 2
+User scenarios: 
+- Registration/approval of new appraisers, 
+- Request appraisal of NFT, 
+- Appraise NFT, 
+- Review and compensate appraiser
 
 Web client for: 
-NFT creator to request judgment and grant access to Asset Grader(s)
-Asset Grader to review materials and provide judgment
+- NFT creator to request judgment and grant access to Asset Grader(s)
+- Asset Grader to review materials and provide judgment
 
+#### Phase 3
+User scenarios: 
+- More advanced ordering and pricing models, 
+- Candle auctions, 
+- Improved compatibility with more jurisdictions.
 
-- Phase 3: User scenarios: More advanced ordering and pricing models, candle auctions, improved compatibility with more jurisdictions,
-
-- Phase 4: Provide API access and referral program for tax industry participants. (e.g. allow existing systems and networks to seamlessly integrate)
-
-
+#### Phase 4
+- Provide API access and referral program for tax industry participants. (e.g. allow existing systems and networks to seamlessly integrate)
 
 ## Additional Information :heavy_plus_sign:
 
@@ -305,8 +314,3 @@ Blockchain Friendly State Breakdown
 </p>
 <br />
 https://www.investopedia.com/news/majority-us-states-are-still-acknowledge-cryptocurrencies/
-
-
-
-
-
