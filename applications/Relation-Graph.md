@@ -199,9 +199,22 @@ former product leader of top blockchain companies,
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.  |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide inline documentation and a tutorial of use and deploy pallet |
+| 0c. | Testing Guide | We will add unit tests to cover all basic logic.|
+| 1. | wasm package | We will create a wasm package that can deployed as pallet,contains insert,query,delete and update|  
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will enhance inline documentation and create a tutorial of ACL,OGM and subgraph. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
+| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
+| 2. | Substrate module: Y | We will create a Substrate module that will... |  
+| 3. | Substrate module: Z | We will create a Substrate module that will... |  
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
 
 ### Milestone 2— Expand the basic functions of database，contains ACL,OGM and subgraph
 
@@ -211,9 +224,10 @@ former product leader of top blockchain companies,
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.  |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will enhance inline documentation and create a tutorial of ACL,OGM and subgraph. |
+| 0c. | Testing Guide | We will add unit tests to cover all ACL,OGM and subgraph.|
+| 1. | wasm package | We will create a updated wasm package that can deployed as pallet,contains ACL,OGM and subgraph.|  
 
 ### Milestone 3 — Finish use case，scaffold and demo for Relation Graph
 
@@ -223,9 +237,11 @@ former product leader of top blockchain companies,
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.|
-| 1. | Substrate module: X | We will create a substrate pallet template,Developers can quickly deploy their own graph database according to our guidelines. |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide documentation of use case，scaffold and demo for Relation graph |
+| 0c. | Testing Guide | we wil provide functional tests to ensure scaffold  functionality and robustness. In the guide, we will describe how to run the scaffold. |
+| 1. | package of scaffold | We will create a package of scaffold ,developer can easily and quickly bulid their business function. |
+| 2. | demo | A demo to show the process use the scaffold. |
 
 ## Future Plans
 
