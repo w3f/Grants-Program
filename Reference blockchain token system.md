@@ -71,6 +71,8 @@ In this way, users can get best online services that fully protect their own dig
 
 Founder: Jieliang Yin, major in Master of Technology Innovation Management at Carnegie Mellon University, U.S now with industry PhD offer on blockchain in Digital Finance Co-operative Research Centre (DFCRC) and Commonwealth Scientific and Industrial Research Organisation (CSIRO), Australia. He is interested in the design and improvement of blockchain underlying structure, and exploring new valuable and realistic blockchain applications, which are also his academic and career goals.
 
+Supervisor: Dr.Shiping Chen, a senior principal research scientist in CSIRO Data61, Australia. He is also a conjoint professor with the University of New South Wales (UNSW) and an adjunct professor with University of Technology Sydney (UTS). He has been working on distributed systems for over 20 years with focus on performance and security. He has published 240+ research papers and technical reports in these areas. He is active in research communities through publishing papers, journal editorships and conference Chairs/PC members. He is participating in and contributing to IETF RFC on Blockchain Interoperability as one of key members in the working group. His current research interests include: distributed systems and blockchain. He is a Fellow of Institute of Engineering Technology (FIET) and a senior member of the IEEE (SMIEEE).
+
 Other members will be confirmed after the application is approved.
 
 ### Contact
@@ -129,26 +131,105 @@ Everyone could mint a new token represent his new work based on any referred old
 
 **Milestones:**
 
-1. First month: make the formal research plan determining the research details including scope, goal, participants, and schedule
-2. Second month: do research on addressing defined problems and designing possible solution to produce draft of research proposal
-3. Third month: develop a demo to test the effectiveness of the proposed research solution
-4. Fourth month: improve the solution according to the result of the test
-5. Fifth month: publish the improved demo to community and ask for critiques
-6. Sixth month: evaluate the solution according to the critiques, and finalize the research proposal
-
 ### Overview
 
 - **Total Estimated Duration:** 6 months
-- **Full-Time Equivalent (FTE):**  3 ~ 10 people depending on the given grant
-- **Total Costs:** $50,000
+- **Full-Time Equivalent (FTE):**  2 ~ 5 people depending on the given grant
+- **Total Costs:** $20,000
+
+
+### Milestone 1 — Reference Token Design
+
+- **Estimated duration:** 1 month
+- **FTE:**  1 developers and 1 technical researchers
+- **Costs:** 2,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | We will design a new reference license standard for ourselves |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can create their own work, refer to others' work, and get the earnings of their work using the reference token in our reference system on chain. |
+| 0c. | Testing Guide | Core functions of the reference token system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of reference token system delivered with this milestone. |
+| 0e. | Article | We will publish an **article** that explains the token design of our reference system.
+
+
+### Milestone 2 — Interoperability & Composability Design
+
+- **Estimated duration:** 1 month
+- **FTE:**  2 developers and 1 technical researchers
+- **Costs:** 3,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | We will design a new reference license standard for ourselves |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can freely change others' old work to build their new work based on them, and their new work can still connect to the referred old work seamlessly on our reference system. |
+| 0c. | Testing Guide | Core functions of the full interoperable and composable reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of interoperability and composability reference system delivered with this milestone. |
+| 0e. | Article | We will publish an **article** that explains the interoperability and composability design of our reference system.
+
+
+### Milestone 3 — Security & Privacy Design
+
+- **Estimated duration:** 1 month
+- **FTE:**  2 developers and 1 technical researcher
+- **Costs:** 3,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | We will design a new reference license standard for ourselves |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the security of privacy could be fully protected against malicious attacks on our reference system. |
+| 0c. | Testing Guide | Core functions of the security and privacy of our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of security and privacy of the reference system delivered with this milestone. |
+| 0e. | Article | We will publish an **article** that explains the security and privacy design of our reference system.
+
+
+### Milestone 4 — Economic Model and Incentive Scheme Design
+
+- **Estimated duration:** 1 month
+- **FTE:**  2 developers, 1 technical researcher, and 1 economic researcher
+- **Costs:** 4,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | We will design a new reference license standard for ourselves |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the earnings of the referred work could be collected, invested, and distributed based on references among different works and shares within each work proportionally on our reference system. |
+| 0c. | Testing Guide | Core functions of the economic model and incentive scheme of our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of the economic model and incentive scheme of our reference system delivered with this milestone. |
+| 0e. | Article | We will publish an **article** that explains the economic model and incentive scheme of our reference system.
+
+
+### Milestone 5 — DAO Community Management Design
+
+- **Estimated duration:** 1 month
+- **FTE:**  1 developer, 1 economic researcher, and 1 management researcher
+- **Costs:** 3,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | We will design a new reference license standard for ourselves |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can participant in our DAO community and contribute to the management of our reference system. |
+| 0c. | Testing Guide | Core functions of the DAO community and management our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of the DAO community and management of our reference system delivered with this milestone. |
+| 0e. | Article | We will publish an **article** that explains the DAO community and management of our reference system.
+
+
+### Milestone 6 — User Testing and Evaluation
+
+- **Estimated duration:** 1 month
+- **FTE:**  2 developer, 1 technical researcher, 1 economic researcher, and 1 management researcher
+- **Costs:** 5,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | We will design a new reference license standard for ourselves |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use our reference system. |
+| 0c. | Testing Guide | Core functions of our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of our reference system delivered with this milestone. |
+| 0e. | Article | We will publish an **article** that explains the whole design, functionalities, and usage of our reference system like white paper.
+
 
 ## Future Plans
 
-Funding Plan:
-$10,000  Build demo for the proposed research solution
-$20,000  Test the demo for evaluating proposed solution
-$20,000  Promote our testing, invite and encourage more users to try and give feedback
+We will invite all members in the commumity to give golden feedback and critiques of our work for improving our proposed solution further. 
 
-We will design, build and test our proposed solution better and get critiques from developers and engineers. 
-
-It would  be better if we could also get your community support to evaluate acceptance and feasibility of our proposed solution for target users and relevant stakeholders, and improve our proposal accordingly.
+It would be better if we could also get your technical and communal support to improve and evaluate acceptance and feasibility of our proposed solution for target users and relevant stakeholders. We will also plan to promote our work in the market, and run it in a fully decentralized way via DAO. 
