@@ -150,7 +150,7 @@ For each milestone,
 | 0a. | License | Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up, which will show how the new functionality(Mystery Box on Chain) works. |
 | 0c. | Testing Guide | Unit tests will fully cover core functions to ensure new functionality(Mystery Box on Chain) and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Front End | Based on the previous front-end page, the interactive page of Mystery Box is added, and the contract access to the function of Mystery Box is completed. |  
+| 0d. | Front End | Based on the previous front-end page, add the interactive page of Mystery Box, and complete the contract access to the function of Mystery Box. |  
 | 0e. | Article | describing how to use the new functionality(Mystery Box on Chain)  |
 | 1a. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
 
