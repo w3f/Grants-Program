@@ -134,9 +134,9 @@ For each milestone,
 | 0d. | Front End | Complete the development of the basic interactive page: https://openbox.io/ . |  
 | 0e. | Article | We will publish an **OpenBox&Web3.Foundation**/workshop that explains the work done as part of the grant .  |
 | 1a. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 2. | Substrate module: compatible with solidity| We will create a Substrate module that will compatible with solidity EVM |  
-| 3. | Substrate module: Multi-chain support| We will create a Substrate module that will Support NFT mint, circulation, trade of multi-chain (ETH, BSC, Polygon) based on solidity EVM... |  
-| 4. | Test | Deploy the runtime module to a Substrate node and test  described above |  
+| 2. | Develop an NFT contract that also uses the EVM chain based on Substrate | Develop NFT, minting, and trading contracts for BSC using Substrate FRAME EVM compatible with Solidity|  
+| 3. |Extend ETH and Polygon on top of previous| Based on the previous Substrate and support for BSC, continue to expand to support ETH, Polygon, and other EVM-based multi-chain NFTs. |  
+| 4. | Test | A test developed NFT MarketPlace contracts supporting ETH, BSC, and Polygon and generated test reports |  
 
 
 ### Milestone 2 Example — Additional features
@@ -150,7 +150,7 @@ For each milestone,
 | 0a. | License | Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up, which will show how the new functionality(Mystery Box on Chain) works. |
 | 0c. | Testing Guide | Unit tests will fully cover core functions to ensure new functionality(Mystery Box on Chain) and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Front End | Complete the development of the basic interactive page: https://openbox.io/ . |  
+| 0d. | Front End | Based on the previous front-end page, the interactive page of Mystery Box is added, and the contract access to the function of Mystery Box is completed. |  
 | 0e. | Article | describing how to use the new functionality(Mystery Box on Chain)  |
 | 1a. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
 
