@@ -249,6 +249,15 @@ As a part of web3/MoonBeam Community and Ecosystem
 
 - Built on top of the MoonBeam network, the DAPP that runs on the MoonBeam can directly use it by embedding the payment channel inside their DAPP code.
 
+## Development Status :open_book:
+
+### Link to Document 
+
+Below is the link to an illustration of the detailed process. 
+
+-<https://docs.google.com/document/d/15pOrIl6cI2gj2cJWrOHOFEd-m0x49ZjrHbXXnhZfYGw/edit?usp=sharing>  
+
+
 ### Link to source Code
 
 - <https://github.com/taocodao/moonbeam>
