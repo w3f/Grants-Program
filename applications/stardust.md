@@ -6,7 +6,7 @@
 
 - **Project Name:** Derivative Powered Uncollateralized Stablecoin Research and Design
 - **Team Name:** Stardust Labs Inc.
-- **Payment Address:** 0x19450AB6Db4086155e29d528Fe7d9A693703dD1E (DAI)
+- **Payment Address:** 0xF3d5F194D9eF961a85a4d5be05EFda7B2B33005d (DAI, Ethereum Mainet)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 > ⚠️ _The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe._

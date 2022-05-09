@@ -1,6 +1,6 @@
 # On-chain Quadratic Funding
 
-* **Status:** Open
+* **Status:**  [Implementation by Dora](https://github.com/zhangjiannan/QFgrant), [Implementation by OAK](https://github.com/OAK-Foundation/quadratic-funding-pallet/tree/master)
 * **Proposer:** [Noc2](https://github.com/Noc2)
 
 ## Project Description :page_facing_up: 
@@ -17,21 +17,10 @@ Key-problems to solve as part of the grant:
 
 ## Deliverables :nut_and_bolt:
 
-The milestones below are just an initial draft. The milestones can be structured completely differently and the implementation can also leverage other tools and infrastructure as long as the overall goal of the RFP is met. Specifically it might make sense to initially start with milestone 3 and leverage centralized solutions for milestone 1 and 2 at the beginning of the project in order to start testing the implementation early.  
-
-### Milestone 1 - Anti-collusion
-
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | Inline documentation of the code and a basic tutorial that explains how a developer can use the project |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 0d. | Article/Tutorial | Article or tutorial that explains the work done as part of the grant. 
-| 1. | Anti-collusion | Implement a mechanism to prevent bribery and collusion, leveraging encrypting votes (ZKPs) potentially via [Minimum Anti-Collusion Infrastructure (MACI)](https://ethresear.ch/t/minimal-anti-collusion-infrastructure/5413) |  
-| 2.  | Voting Example | Integrate a basic voting example that lets you test the mechanism | 
+The milestones below are just an initial draft. The milestones can be structured completely differently and the implementation can also leverage other tools and infrastructure as long as the overall goal of the RFP is met. 
 
 
-### Milestone 2 - Sybil resistance
+### Milestone 1 - Sybil resistance
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -42,7 +31,7 @@ The milestones below are just an initial draft. The milestones can be structured
 | 1. | Sybil resistance | Mechanism to prevent Sybil attacks, either implemented as its own Substrate pallet or possible integration of the existing on-chain identity on Kusama/Polkadot provided by specified registrar  |  
 | 2.  | UI | UI for verification of identities, including a polkadot.js extension support | 
 
-### Milestone 3 - CLR
+### Milestone 2 - CLR
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
