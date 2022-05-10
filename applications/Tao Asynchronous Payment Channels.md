@@ -257,6 +257,31 @@ Below is the link to an illustration of the detailed process.
 
 -<https://docs.google.com/document/d/15pOrIl6cI2gj2cJWrOHOFEd-m0x49ZjrHbXXnhZfYGw/edit?usp=sharing>  
 
+### the channel open process
+
+Implemented the on-chain operations in the form of a smart contract in ink!
+The contract allows the parties to specify the number n of Validators they desire to involve and their identities.
+The signature scheme makes off-chain signatures compatible with on-chain accounts, and as such, signatures made off-chain can be verified using public keys available on-chain.
+Once the contract is deployed on the Ethereum network, Alice funds it first.
+Subsequently, once Alice's funding transaction is finalized, Bob funds it.
+Once Bob's funding transaction is finalized, the collateral can be calculated, so the Validators can fund it in any order simultaneously.
+When all Validators have funded the contract, any of the two parties can open the channel.
+At any time before opening the channel, any party or Validator can withdraw their money. At this point, the channel is canceled and can no longer be opened but allows the rest of the parties to withdraw in any order.
+Once the channel is open, the parties can continue exchanging states off-chain.
+If multiple channels are used, then the cost of smart contract deployment can be amortized by abstracting the common functionality into a Solidity library. However, the opening and closing costs are recurrent.
+When the parties wish to close the channel optimistically, Alice initially submits a transaction to the smart contract requesting the channel to close. This request contains Alice's claimed closing state (namely, Alice's value at closing time, as Bob's value at closing time can be deduced from this.
+Once Alice's transaction is confirmed, if Bob is in agreement, he submits a transaction to the smart contract to signal his agreement.
+The smart contract then returns Alice's and Bob's values and Validators' collateral. Check that the sum of Alice's value and Bob's value at the closing state does not exceed the sum of their values at their initial state so that sufficient funds remain to return the Validators' collateral.
+If Bob does not agree with Alice’s claim, the channel becomes unusable and must be closed pessimistically (Alice can no longer make an optimistic claim on a different state).
+The optimistic close operation measures the cumulative gas cost of the two transactions from both parties. The cost is minimal and should be the normal path since parties need not pay closing fees.
+Each Validator then submits a transaction to the smart contract containing the sequence number they have seen last, together with Alice’s and Bob’s off-chain signature on it. These can be submitted in any order.
+The signatures of Alice and Bob on the sequence number are verified on-chain; this incurs the majority of the gas cost for the pessimistic close. The party who wishes to close the channel monitors the chain for such claims and remembers any fraudulent ones.
+As soon as t (honest or adversarial) claims have been recorded, either Alice or Bob can send a transaction to the smart contract to close the channel.
+The transaction is accompanied by the fraud proofs the closing party could assemble, namely the latest announcement for each Validator who claimed an earlier sequence number.
+These announcements contain the signature of the Validator on the plaintext, which consists of the smart contract address and the sequence number.
+These announcements contain the signature of the Validator on the plaintext, which consists of the smart contract address and the sequence number.
+The pessimistic close operation was measured when no fraud proofs are provided and included the transaction of each of the t Validators and the final transaction by one of the parties. Additionally, it was assumed that, while the counterparty is unresponsive or malicious, the Validators were responsive and all submitted the same sequence number (hence limiting the need for multiple signature validations).
+
 
 ### Link to source Code
 
