@@ -5,7 +5,7 @@
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 - **Project Name:** Relation Graph
 - **Team Name:** Relationlabs
-- **Payment Address:** 0x9fE784bD844C6c7eB7a570467937e6005eEd1C4C
+- **Payment Address:** 0x9fE784bD844C6c7eB7a570467937e6005eEd1C4C   Ethereum (USDT/DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
@@ -181,7 +181,7 @@ former product leader of top blockchain companies,
 ## Development Status :open_book:
 
 
-- We have finished a version on Internet computer.It is a graph database written in Rust and deployed on WASM.Ereryone can try it here （https://kziov-eaaaa-aaaag-aaaxa-cai.ic0.app/ic_graph_developer.html）.
+- We have finished a version on Internet computer.It is a graph database written in Rust and deployed on WASM.Ereryone can try it here(https://kziov-eaaaa-aaaag-aaaxa-cai.ic0.app/ic_graph_developer.html).
 
 
 ## Development Roadmap :nut_and_bolt:
@@ -203,18 +203,7 @@ former product leader of top blockchain companies,
 | 0b. | Documentation | We will provide inline documentation and a tutorial of use and deploy pallet |
 | 0c. | Testing Guide | We will add unit tests to cover all basic logic.|
 | 1. | wasm package | We will create a wasm package that can deployed as pallet,contains insert,query,delete and update|  
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will enhance inline documentation and create a tutorial of ACL,OGM and subgraph. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+ 
 
 ### Milestone 2— Expand the basic functions of database，contains ACL,OGM and subgraph
 
@@ -229,7 +218,7 @@ former product leader of top blockchain companies,
 | 0c. | Testing Guide | We will add unit tests to cover all ACL,OGM and subgraph.|
 | 1. | wasm package | We will create a updated wasm package that can deployed as pallet,contains ACL,OGM and subgraph.|  
 
-### Milestone 3 — Finish use case，scaffold and demo for Relation Graph
+### Milestone 3 — Finish use case，scaffold and demo for Relation Graph (scaffold is a package of technique tools for building and using the relation graph easily)
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
