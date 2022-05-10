@@ -333,4 +333,5 @@ This is the smart contract experimental implementation for open, update, and clo
 
 ## Future Plans
 
-We will develop a payment channel-based HEX(hybrid Exchange), which extends existing solutions by adding a new payment channel layer to benefit frequent traders and alleviate the pending transaction congestion.
+This design could potentially extend to an asynchronous state channel solution if there existed a valuation function for the states of the contract ( i.e., a mapping of each state to the monetary value for the parties) to correctly align incentives. In this case, the channel can evolve as long as the parties update
+the state, while in case of of an uncooperative counterparty the honest party can always pessimistically close the channel at the last agreed state and continue execution on-chain
