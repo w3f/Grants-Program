@@ -85,13 +85,13 @@ We also attended the AmsterDOT conference and established working connections wi
 
 - **Total Estimated duration:** 5 weeks
 - **Total Effort:**  2 FTE
-- **Total Costs:** 1.19 BTC
+- **Total Costs:** $38000
 
 ### Milestone 1
 
 - **Estimated duration:** 5 weeks
 - **Total Effort:**  2 FTE
-- **Costs:** 1.19 BTC
+- **Costs:** $38000
 
 Goal - Implement a pallet that allows chains to calculate transaction fees used on-chain during a period of time and send those funds from their treasury via XCMP to the Sequester chain.
 
