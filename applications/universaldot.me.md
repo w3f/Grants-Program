@@ -214,3 +214,69 @@ Complete Github User Story breakdown of the milestone to be updated [here] once 
 We intend to create a start-up company out of this project. 
 
 Thus, the funds will be used to further expand the team and continue development on the existing product. 
+
+
+## Additional Questions 
+
+- **semuelle**: We have already funded a number of Substrate-IPFS integrations. Can you elaborate why/how the existing solutions don't work for you?
+  
+  >ANSWER: *We have investigated some of the Substrate-IPFS solutions in the following technical [spike](https://github.com/UniversalDot/universal-dot-node/issues/31). We have not ruled-out using existing solutions. However, we have to customize the IPFS integration to the context and use-case of our application.*
+- **semuelle**: I don't understand how Tensorflow relates to the rest of the system. In the architecture diagram, there are Pallets blocks and a Tensorflow block, but no explanation of how they interact with another.
+  
+  >ANSWER:*The overall architecture was only focused on the components. For details on how Tensorflow interacts with the web app, please see the [following diagram](https://github.com/UniversalDot/documents/blob/master/designs/architecture/Tensorflow.drawio.png).*
+- **semuelle**:Several of your deliverables are labeled as "redesign" or "improve", but without an explanation why the mentioned elements need to be redesigned and how. Given the size of the grant, I would like to see a lot more detail on that.
+  > ANSWER: *The Substrate pallets will be improved with the following enriched data-models shown below. Furthermore, Additional extrinsics will be implemented related to creating, updating, deleting the data represented bellow. 
+  In relation to the UI-Redisign of the DAO, we intend to create richer User experience based on the following [wireframes](https://drive.google.com/file/d/1anfrnnouibzRrksamzRWZKb3hvnZU4WF/view?usp=sharing).* 
+
+#### Profile Pallet
+
+| Characteristic  | Description                                                                | Type                                        | Entry             |
+|-----------------|----------------------------------------------------------------------------|---------------------------------------------|-------------------|
+| AccountID       | Primary ID for a profile. One profile per AccountID                        | Pub key                                     | Automatic         |
+| Username        | Personal description of profile                                            | String                                      | Manual, Mandatory |
+| Interests       | Personal interests of the user. Can incorporate skills, preferences, etc.  | Array of Strings                            | Manual, Mandatory |
+| Reputation      | Score of points that the User has earned                                   | Number                                      | Automatic         |
+| Balance         | Cryptocurrency balance in the native chain coin                            | Number                                      | Automatic         |
+| Portfolio       | User can showcase personal portfolio, additional description, etc          | String (may contain list of IPFS documents) | Manual, Optional  |
+| Availability    | Hours per week the User is Available                                       | Number (approx. Or list of 10hr,20hr,30hr)  | Manual, Mandatory |
+| Profile History | Previous work history of the User                                          | Array of Tasks                              | Automatic         |       
+
+  
+#### Task Pallet
+
+| Characteristic | Description                                                                                                  | Type                                               | Entry             |
+|----------------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------|-------------------|
+| TaskID         | Unique Identifier for each task                                                                              | Hash                                               | Automatic         |
+| Title          | Task Title that describes the task                                                                           | String                                             | Manual, Mandatory |
+| Requirements   | Definition that specifies the requirements of the task                                                       | String (RichTextEditor?: JSON-Strigify)            | Manual, Mandatory |
+| Budget         | The budget for a task                                                                                        | Number                                             | Manual, Mandatory |
+| Deadline       | Expected end time for the task                                                                               | Datetime                                           | Manual, Mandatory |
+| Attachments    | Additional information that is relevant to a task.                                                           | File (Referenced by IPFS Hash)                     | Manual, Optional  |
+| Keywords       | Few words used to filter the task (mainly used for the recommendation)                                       | Array of Strings                                   | Manual, Optional  |
+| Feedback       | Comments that are added to the task. Intermediary steps of communication between the initiator and volunteer | String                                             | Manual, Optional  |
+| Initiator?     | The User who created the task                                                                                | AccoundID                                          | Automatic         |
+| Volunteer?     | The User who Volunteered for the task                                                                        | AccountID                                          | Automatic         |
+| CurrentOwner   | The user who currently is working on the task and thus has ownership of it.                                  | AccountID                                          | Automatic         |
+| Related        | Group of tasks that are related to the current task.                                                         | List of Tasks                                      | Manual            |
+| Status         | The current status of the task                                                                               | Enum [Created, InProgress, Closed] To be expanded? | Automatic         |
+| Created        | The time the task was created                                                                                | DateTime                                           | Automatic         |
+| LastUpdated    | Time when the task has been updated                                                                          | DateTime                                           | Automatic         |
+| Completed      | Time when the task was completed                                                                             | DateTime                                           | Automatic         |
+
+
+#### DAO Pallet
+
+
+| ID          | Unique identifier for an organization                                                                                                   | UUID or similar                | Automatic            |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|----------------------|
+| Name        | The name of the organization                                                                                                            | String                         | Manual, Mandatory    |
+| Description | Basic description regarding the organization, industry, and goals                                                                       | String                         | Manual, Optional     |
+| Owner       | The account that owns the organization. The initial owner is the founder. Ownership should be able to be transferred to other accounts. | Account ID                     | Automatic, Mandatory |
+| Vision      | Document that describes company Vision                                                                                                  | String (Hash to IPFS Document) | Manual, Mandatory    |
+| Members     | Members that belong to an organization                                                                                                  | Array of AccountID             | Manual, Mandatory    |
+| Tasks       | Tasks that belong to a certain Organization                                                                                             | Array of TaskID                | Manual, Mandatory    |
+| Applicants  | Users that have applied to join to a certain organization                                                                               | Array of AccountID             | Automatic            |
+| Created     | The date when the organization was created                                                                                              | DateTime, Block                | Automatic            |
+| LastUpdated | The date when the organization had an update                                                                                            | DateTime, Block                | Automatic            |
+| Properties  | Custom collection of properties that can be added.                                                                                      | An array of Objects            | Manual, Optional     |
+|             |                                                                                                                                         
