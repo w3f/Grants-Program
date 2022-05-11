@@ -134,7 +134,7 @@ Through this grant proposal, we aim to provide a well-detailed analysis of the c
 |  **1.** | Research Goal     | We will provide an overview of the current state of the modern stablecoin ecosystem including a summary of demand and historical growth over time, industry size and a rough forecast of future growth, the largest existing players, and the main revenue and cost drivers for service providers.                             |
 | **1a.** | Specific Coverage | Coverage will span [historical and current industry volumes](https://coinmarketcap.com/view/stablecoin/), [academic sources](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3952045), and [recent developments](https://blockworks.co/congressional-action-on-stablecoins-could-come-as-soon-as-this-month-source-says/). |
 
-### Milestone 2 — Extant Stablecoins
+### Milestone 2 — Terra Collapse Deep Dive
 
 - **Estimated duration:** 3 Weeks
 - **FTE:** 2
@@ -143,12 +143,12 @@ Through this grant proposal, we aim to provide a well-detailed analysis of the c
 |  Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                |
 | ------: | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |      0. | Rights            | All developed materials will be publicly accessible and public domain.                                                                                                                                                                                                                                                       |
-|  **1.** | Research Goal     | We will provide an overview of the current state of the modern stablecoin ecosystem including a deep-dive into the largest stablecoins by volume.                                                                                                                                                                            |
-| **1a.** | Specific Coverage | Coverage is currently planned for: Angle Labs, Luna, Terra, DAI, Tether, USDC, BinanceUSD, Gemini Dollar, TrueUSD, Pax Dollar, NeutrinoUSD, Tribe, Frax, Liquidity USD, HUSD, XSGD, Reserve Rights, Origin dollar, Facebook's Diem, and Float. However, we may add additional coverage based on any findings in Milestone 1. |
+|  **1.** | Research Goal     | Stardust will breakdown and perform a deep dive into the collapse and ultimate failure of Terra to maintain it's peg to USD.                                                                                                                                                                            |
+| **1a.** | Specific Coverage | Specific deep dives at this time are an overall summary of events and the price changes in early May 2022, the large and consistent outflows from their lending protocol Anchor, the complete saturation of lending pools on Curve that contained UST, and finally the deployment of BTC reserves by the Luna Foundation Guard (LFG). |
 
 ## Future Plans
 
-- We'll follow up with a future research grant on historic failures of stablecoins, a summary of articulated Federal Government viewpoints on stablecoins, and its potential impact on the future regulatory landscape. Our long-term vision is to build an understanding of the stablecoin infrastructure environment and then develop and deploy the first derivative-backed stablecoin and launch it on the Polkadot Network.
+- We'll follow up with a future research grant on historic failures of stablecoins, a summary of articulated Federal Government viewpoints on stablecoins, and its potential impact on the future regulatory landscape. Our long-term vision is to build an understanding of the stablecoin infrastructure environment and then develop and deploy an improved version on the Polkadot Network.
 
 ## Additional Information :heavy_plus_sign:
 
