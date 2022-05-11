@@ -319,10 +319,6 @@ This is the smart contract experimental implementation for open, update, and clo
 | 3a. | Validator node  2d |  Build the validator nodes base on moonbeam dev nodes.|
 |3b.| Incentive Mechanisms |Develop the Fee mechanism, including  Update Fee, Closing Fee, Validator collateral.|
 
-
-
-
-
 ## Future Plans
 
 This design could potentially extend to an asynchronous state channel solution if there existed a valuation function for the states of the contract ( i.e., a mapping of each state to the monetary value for the parties) to correctly align incentives. In this case, the channel can evolve as long as the parties update
