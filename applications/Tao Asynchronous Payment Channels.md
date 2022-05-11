@@ -283,18 +283,10 @@ These announcements contain the signature of the Validator on the plaintext, whi
 The pessimistic close operation was measured when no fraud proofs are provided and included the transaction of each of the t Validators and the final transaction by one of the parties. Additionally, it was assumed that, while the counterparty is unresponsive or malicious, the Validators were responsive and all submitted the same sequence number (hence limiting the need for multiple signature validations).
 
 
-### Link to source Code
-
-- <https://github.com/taocodao/moonbeam>
-
-This the Tao Framework nodes implementation , we have started with taking the moonBeam development node as the template, and use it as the smart contract engine
-
-- <https://docs.google.com/document/d/1uJDEuZDMij0Pu63XEMM-PRSYU_opuQsRBjJJBLWhiCA/edit?usp=sharing>
-
-This is the smart contract experimental implementation for open, update, and close channels. The final implementation will be in ink!. 
-
 
 ### Link to source Code
+
+-<https://github.com/taocodao/Tao-Payment-Channel> This is the on-chain smart contract for open, update and close the payment channel. 
 
 - <https://github.com/taocodao/moonbeam> This the Tao Framework nodes implementation , we have started with taking the substrate development node as the template, and use it as the smart contract engine. 
 
