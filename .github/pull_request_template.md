@@ -19,6 +19,7 @@
 - [ ] The software delivered for this grant will be released under an open-source license specified in the application.
 - [ ] The initial PR contains only one commit (squash and force-push if needed).
 - [ ] The grant will only be announced once the first milestone [has been accepted](https://github.com/w3f/Grant-Milestone-Delivery#process).
+- [ ] I prefer the discussion of this application to be in a private Element/Matrix channel. My username is: @_______
 
 ### How Did You Hear About our grants program?
 
