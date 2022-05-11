@@ -65,7 +65,7 @@ Not yet
 ### Overview
 
 * **Total Estimated Duration:** 2 months
-* **Total Costs:** 12000 DAI
+* **Total Costs:** 12500 DAI
 
 ### Milestone 1
 
