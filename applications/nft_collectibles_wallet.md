@@ -2,7 +2,7 @@
 
 * **Project Name:** NFT Collectibles Wallet
 * **Payment Address (DAI):** 0x16D7A415040D52F2427C2b921dfC31829C0d17fc
-
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/341#issuecomment-994701023)
 
 
 ## Project Overview :page_facing_up: 

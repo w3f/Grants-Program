@@ -3,6 +3,7 @@
 * **Project Name:** X Predict Market
 * **Proposer:** Wenzhu liang
 * **Payment Address:** DAI：0x6e30f740A57a330de35D0ecE0ADF1eEc3D8C6c34
+* **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/148#issuecomment-1004782716)
 
 
 ## Project Overview :page_facing_up: 

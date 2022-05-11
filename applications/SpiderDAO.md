@@ -4,6 +4,7 @@
 * **Proposer:** [SpiderDAO] (https://github.com/SpiderDAO)
 * **Payment Address:** 3Pxq3ViqRW6b3e7qsX7Mo7gSikHcToa7ig
 * **Document Version:** Version 2.4
+* **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/129#issuecomment-1011987896)
 
 
 ## Project Overview :page_facing_up: 

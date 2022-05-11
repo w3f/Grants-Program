@@ -85,7 +85,6 @@ Features will include:
 
 <ol>
 <li>Add a new bounty </li>
-<li>Add a sub-bounty</li>
 
 ![Bounties](https://github.com/bright/bright-treasury-proposal-src/blob/main/Screenshot%202021-01-29%20at%2013.21.03.png)
 
@@ -228,6 +227,7 @@ The main goal of this milestone is to implement the core flow of the app, that i
 |	5.	|	User story 5	|	As an idea owner, I can add/edit/remove milestones.	|
 |	6.	|	User story 6	|	As an idea owner, I can submit my idea as a proposal (signing and submitting one transaction).	|
 |	7.	|	User story 7	|	As an idea owner, I can turn each milestone separately to a proposal (signing and submitting a separate transaction for each milestone). One milestone at a time.	|
+|	8.	|	User story 8	|	As an idea owner, I can edit my ideas as long as the proposal is not closed (rejected or submitted).	|
 |	9.	|	User story 9	|	As an unlogged user I can view all ideas.	|
 |	10.	|	User story 10	|	As an unlogged user I can view details of an idea.	|
 |	11.	|	User story 11	|	As an unlogged user I can view the details of proposals and their votings. (In this milestone, there will be no in-app history of transactions made outside of the app. Once a proposal is rewarded, it’s voting result will not be visible in the app. This will be available in the milestone 3)	|
@@ -262,7 +262,7 @@ The goal of this milestone is to add more features to the ideas and proposals ha
 - Costs: 9 500 DAI
 
 
-The main goal of this milestone is implementation of the bounties mechanism. Users will be able to add and browse through bounties, votings for their curators and check the current status. The curators will be able to accept (or reject) their nominations and manage the bounty’s status. Additionally, in this milestone we plan to add a basic integration with Polkassembly. It will be possible to see the description of a proposal/bounty published on Polkassembly. We will also include the history feature based on the data from Polkassembly, which would allow users to browse through closed proposals and bounties, in addition to in-app ideas.
+The main goal of this milestone is implementation of the bounties mechanism. Users will be able to add and browse through bounties, votings for their curators and check the current status. The curators will be able to accept (or reject) their nominations and manage the bounty’s status. Additionally, in this milestone we plan to add a basic integration with Polkassembly. It will be possible to see the description of a proposal/bounty published on Polkassembly. We will also include the history feature based on the data from Polkassembly, which would allow users to browse through closed proposals and bounties, in addition to in-app ideas. What is more, we plan to prepare the Milestone 1 and 2 features for production environment and deploy them,  so they would be already fully functional to the Polkadot and Kusama proposals. 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -271,19 +271,17 @@ The main goal of this milestone is implementation of the bounties mechanism. Use
 |	3.	|	User story 24	|	As an unlogged user I can view proposed curator and voting on assigning them	|
 |	4.	|	User story 25	|	As a curator I can accept the nomination	|
 |	5.	|	User story 26	|	As a curator I can reject the nomination	|
-|	6.	|	User story 27	|	As a curator I can award the bounty and sub-bounty with a chosen beneficiary	|
-|	7.	|	User story 28	|	As a curator I can extend expiry date of a bounty and a sub-bounty	|
+|	6.	|	User story 27	|	As a curator I can award the bounty with a chosen beneficiary	|
+|	7.	|	User story 28	|	As a curator I can extend expiry date of a bounty	|
 |	8.	|	User story 29	|	As a user I can claim the payout of the bounty (the reserved amount will be paid out to the beneficiary account)	|
 |	9.	|	User story 30	|	As an unlogged user I can view the bounty proposal status	|
 |	10.	|	User story 31	|	As a curator I can edit the contextual info of a bounty (title, description, people who do the work) and report progress.	|
-|	11.	|	User story 32	|	As a curator I can create a sub-bounty within a curated bounty.	|
-|	12.	|	User story 33	|	As a curator I can edit the contextual info of a sub-bounty (title, description, people who do the work) and report progress.	|
-|	13.	|	User story 34	|	As a curator of a bounty I can set a curator for a sub-bounty (me or someone else)	|
-|	14.	|	User story 35	|	As a user, I can view the details and voting history of closed proposals (only for Polkadot and Kusama networks)	|
-|	15	|	User story 36	|	As a user, I can view the details and voting history of closed bounties and sub-bounties (only for Polkadot and Kusama networks)	|
-|	16	|	User story 37	|	As a user I can see the proposal’s description published on Polkassembly.	|
-|	17	|	User story 38	|	As a user I can see the bounty’s description published on Polkassembly.	|
-|	18	|	User story 39	|	As a user I cannot edit my idea once the associated proposal is closed (rewarded or rejected)	|
+|	11.	|	User story 32	|	As a user, I can view the details and voting history of closed proposals (only for Polkadot and Kusama networks)	|
+|	12.	|	User story 33	|	As a user, I can view the details and voting history of closed bounties  (only for Polkadot and Kusama networks)	|
+|	13.	|	User story 34	|	As a user I can see the proposal’s description published on Polkassembly.	|
+|	14.	|	User story 35	|	As a user I can see the bounty’s description published on Polkassembly.	|
+|	15.	|	User story 36	|	As a user I can use the Milestone 1 and Milestone 2 features in production environment	|
+|	16.	|	User story 37	|	As a user I cannot edit my idea once the associated proposal is closed (rewarded or rejected)	|
 
 ### Community engagement
 It is our priority to make the BrightTreasury app a living part of the community’s life and as such, we plan on several informational activities such as:

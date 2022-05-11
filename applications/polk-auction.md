@@ -55,12 +55,7 @@ The crowdloan page display the ongoing crowdlending campaigns as a list. The use
 Current parachains page :
 ![](https://i.imgur.com/0bdQ0xH.jpg)
 
-The parachains page display the running parachains of the selected chain as a list. The user can click on any displayed parachain to access the parachain details page.
-
-Select parachain details page :
-![](https://i.imgur.com/pB7IoK3.jpg)
-
-This page gathers the on-chain details of the selected parachain with some extra information, such as a link the the official website, a link to the github repository of the blockchain, etc.
+The parachains page display the running parachains of the selected chain as a list. This page gathers the on-chain details of the selected parachain with some extra information, such as a link the the official website, a link to the github repository of the blockchain, etc.
 
 Details about the UI (that I cannot render on paper) :
 
@@ -217,8 +212,7 @@ See overview section for the mock-up
 | 0c. | Testing Guide | Unit tests (code coverage of 60%) will be done to ensure most important functionalities are working as planned. A guide on how to run the tests will be made. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 1. | Current-Auction page | The current auction page will display information from the API end-point /auction for the selected chain. |  
-| 2.a. | Current-Parachains page | The parachains page will display information from the API end-point /parachains for the selected chain. The page will looks like a list of the parachain with its specificities in the network.  |  
-| 2.b. | Parachain page | The parachain (Id) page will display information from the API end-point /parachain/{chain}/{paraId} for the selected chain. The page will provide details about the chain in the network along with some extra details.  |  
+| 2. | Current-Parachains page | The parachains page will display information from the API end-point /parachains for the selected chain. The page will looks like a list of the parachain with its specificities in the network.  |  
 | 3. | Current-Crowdloan page | The current crowdload page will display information from the API end-point /crowdloan for the selected chain. | 
 | 4. | Others pages | Some other pages will be included such as a FAQ section and an About section (describing the website/project). | 
 | 5. | Header | The header of the website will contain the list of the relay-chains (for now Kusama and Polkadot) and some external links to the github page, the Polkadot website (network), etc. | 

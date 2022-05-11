@@ -3,6 +3,7 @@
 * **Project Name:** People Local Interactions Protocol (PLIP)  
 * **Team Name:** Valibre
 * **Payment Address:** 0x9D418c51B8B417A7ac9299aFcb736Bb6aE6018B7, (DAI)
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/756)
 
 ## Project Overview :page_facing_up:
 

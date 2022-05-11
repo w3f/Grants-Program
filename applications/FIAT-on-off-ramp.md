@@ -168,6 +168,7 @@ As an example for a usage scenario , we want to refer again to crowdlitoken.com,
 ### Team members
 
 * Leader: Walter Strametz, full-stack developer, founder element36.io: Worked on roughly a dozen blockchain projects in Switzerland - among them the digital identity project for the City of Zug, Swiss OTC Blockchain - the predecessor of the blockchain based swiss digital exchange (sdx.ch), ethereum smart contracts (ERC20 stablecoin and compliance contracts), and large parts of the element36 backend, especially access to banking system.
+* Dastanbek Samatov: Polkadot Developer, worked on [Subsemly](https://github.com/LimeChain/subsembly) - a framework used for designing and implementing Substrate runtimes from scratch. Subsembly utilises Substrate Core to build runtimes in a non-native language of Substrate. Check out the substrate runtime [here](https://github.com/LimeChain/as-substrate-runtime).
 * Vladimir Nicolic, Full Stack Developer: Javascript Senior, worked on decentral identity, large parts of the element36 modules and the Dapp for the exchange and compliance-administration.
 * Ivan Baresic, Frontend and javascript full-stack developer: CI/CD, javascript-backend components, React-frontends and Dapp development.
 
@@ -190,13 +191,14 @@ Team: We implemented a fully pegged ERC-20 stable-coin (EUR, CHF) and an exchang
 Here are our public repositories of the core product. We had quite a "break" because we were working on our mandate with crowdlitoken.com, which is a commercial product which does not expose their code. So we were more active than it seems on github. More modules are in a private gitlab repo - we will refactor project related code and make it public with respective open-source licences. We are happy to show you the private code on gitlab as well.
 
 * https://github.com/element36-io/cash36-contracts
-* https://github.com/element36-io/cash36-exchange 
+* https://github.com/element36-io/cash36-exchange
 * https://github.com/element36-io/cash36-frontend
 * https://github.com/element36-io/cash36-examples
 
 ### Team LinkedIn Profiles
 
 * https://www.linkedin.com/in/walter-strametz-6b44618b/
+* https://www.linkedin.com/in/dastanbek-samatov-30ab71128/
 * https://www.linkedin.com/in/vladimir-nikolic-941634b7/
 
 ## Development Status :open_book:
@@ -236,7 +238,7 @@ For this proposal we focus on building a simple substrate based chain containing
 
 ### Milestone 2 Implement substrate based chain
 
-* **Estimated Duration:** 2 months
+* **Estimated Duration:** 6 months
 * **FTE:**  2
 * **Costs:** 20.000 USD
 
@@ -253,8 +255,8 @@ For this proposal we focus on building a simple substrate based chain containing
 
 ### Milestone 3 Documentation & Demo-Dapp
 
-* **Estimated Duration:** 0.5 month
-* **FTE:**  2
+* **Estimated Duration:** 1 month
+* **FTE:**  1
 * **Costs:** 5.000 USD
 
 | Number | Deliverable | Specification |

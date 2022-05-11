@@ -3,6 +3,7 @@
 * **Project:**  DNFT Protocol
 * **Proposer:** [DNFT](https://github.com/DNFT-Team)
 * **Payment Address:**  1Atc7JjqeSw1PwxCsSr8KPHEKDoRfh5ERF
+* **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/213#issuecomment-918946371)
 
 ## Project Overview :page_facing_up:
 

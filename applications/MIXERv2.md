@@ -147,9 +147,9 @@ Definitions: Secret Key(S), Public key(P), Nullifier (N), Leaf(L), Hash function
 | 0a. | License | Apache 2.0 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes. Once the node is up, it will be possible to send test transactions that will show how the new functionality works. |
 | 1. | Relayer in Rust | We will build a transaction relayer that supports the relaying transactions for a fee and add support for these new pallets. |
-| 2. | CLI in Rust | We will build out a Rust based CLI for interacting with the mixer |
-| 2a. | CLI Support: Note storage | Creation and storage of deposit notes handled by the CLI |
-| 2b. | CLI Support: Note spending | Proof generation and transaction submission to relayers or directly to the chain handled by the CLI. |
+| ~~2.~~ | ~~CLI in Rust~~ | ~~We will build out a Rust based CLI for interacting with the mixer~~ |
+| ~~2a.~~ | ~~CLI Support: Note storage~~ | ~~Creation and storage of deposit notes handled by the CLI~~ |
+| ~~2b.~~ | ~~CLI Support: Note spending~~ | ~~Proof generation and transaction submission to relayers or directly to the chain handled by the CLI.~~ |
 | 3. | WASM bindings | We will build out necessary WASM compatible proof generation code to be reused in the browser for dApp support. |
 | 3a. | WASM bindings: Web Worker support | We will build out a pipeline for integrating this logic into web workers. |
 | 4. | UI Support: Multi-Asset support | We will build out multi-asset support in our UI for mixers of arbitrary token types. |

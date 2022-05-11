@@ -142,7 +142,7 @@
 <details>
   <summary><b>Can I add a badge to my repo once I’ve completed a milestone?</b></summary>
 
-  Yes, after your first milestone has been merged and as long as you follow the [badge guidelines](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md).
+  If yours is a [Level 2 or 3](https://github.com/w3f/Grants-Program/blob/master/README.md#level_slider-levels) grant and your first milestone has been submitted **and accepted**, yes. Please make sure that you follow the [badge guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/grant-badge-guidelines.md) when doing so.
 </details>
 
 <details>

@@ -6,6 +6,7 @@
 
 * **Payment Address:** 0x111767Cb725C92f06031570Cf2dfb694EbD25bf6
 
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/495#issuecomment-980596405)
   
 
 

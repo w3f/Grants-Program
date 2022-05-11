@@ -89,6 +89,7 @@ To reward the network participant, Standard protocol proposes new PoS reward sys
 * **Full-time equivalent (FTE):**  1
 * **Total Costs:** 1000DAI
 * **Payment Address:** `0xd2234E506862991ADA75f930c6D79B4236e3E265`
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/244#issuecomment-1014764739)
 
 ### Milestone 1 - Middleware for data submission and runtime integration
 * **Estimated Duration:** 1 month

@@ -7,6 +7,10 @@
 * **Project Name:** Project 1001 - MVP - Phase 1
 * **Team Name:** Uniwrap/1001 Group
 * **Payment Address:** 0x173553c179bbf5af39D8Db41F0B60e4Fc631066a (USDT)
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/486#issuecomment-994778719)
+
+
+
 
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*

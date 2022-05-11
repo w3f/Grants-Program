@@ -1,13 +1,14 @@
 # Usage guidelines for the W3F Grants Program badge
 
 <img align="right" width="400" src="../src/badge_black.svg">
-
+ 
 **Once a project's first milestone has been accepted**, we intend to help teams acknowledge their grant publicly while observing the foundation’s guidelines.
 
 To that end, we’ve created a badge for grant recipients. This is available for download in four formats under [web3.foundation/grants/badge](https://web3.foundation/grants/badge).
 
 *Before you begin using the badge, please note the following points:*
 
+- Use of the Grants Program badge is reserved for [Level 2 and 3 grants](https://github.com/w3f/Grants-Program/blob/master/README.md#level_slider-levels).
 - Grants are awarded **for specific projects**, not to teams in general as a blanket endorsement.
 - Web3 Foundation and its grants program **don’t broker partnerships or joint ventures**, or cosign wholesale any external team’s work. Bearing that in mind, **the badge should only be displayed in project-specific contexts.**
 - Please **do**: display the badge
