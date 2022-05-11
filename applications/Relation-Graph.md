@@ -12,8 +12,8 @@
 ## Project Overview :page_facing_up:  
 
 ### Overview
-`Rlation Graph` is a substrate pallet that allows anyone to use GraphDB in [Substrate platform](https://substrate.io/).
-`Rlation Graph` provides organizations with ready-to-use GraphDB service for successfully running Dapps on the Substrate.  using `Rlation Graph` Dapps builders can focus on bussiness logic by removing the complexities of Substrate.
+`Relation Graph` is a substrate pallet that allows anyone to use GraphDB in [Substrate platform](https://substrate.io/).
+`Relation Graph` provides organizations with ready-to-use GraphDB service for successfully running Dapps on the Substrate.  using `Relation Graph` Dapps builders can focus on bussiness logic by removing the complexities of Substrate.
 
 
 ### Project Details
@@ -21,8 +21,8 @@
 
 **Relation Graph**
 
-`Rlation Graph` is a substrate pallet that allows anyone to use GraphDB in [Substrate platform](https://substrate.io/).
-`Rlation Graph` provides organizations with ready-to-use GraphDB service for successfully running Dapps on the Substrate.  using `Rlation Graph` Dapps builders can focus on bussiness logic by removing the complexities of Substrate.
+`Relation Graph` is a substrate pallet that allows anyone to use GraphDB in [Substrate platform](https://substrate.io/).
+`Relation Graph` provides organizations with ready-to-use GraphDB service for successfully running Dapps on the Substrate.  using `Relation Graph` Dapps builders can focus on bussiness logic by removing the complexities of Substrate.
 1、one click deploy on substrate;
 2、Mask complex all on-chain operations with sparql;
 3、sparql as blockchain.
