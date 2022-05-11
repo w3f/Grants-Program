@@ -1,44 +1,29 @@
 # W3F Grant Proposal
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
 - **Project Name:** Web3 Bazaar
 - **Team Name:** Web3 Bazaar
 - **Payment Address:** 0x453b719D4E8A663C11C21cEe225649527083a758 (ETH)
 - **Level:** 2 
 
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up:
 
 ### Overview
 
-Please provide the following:
-
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
-
 The Web3 Bazaar is a peer-to-peer exchange for Web3 assets supported by an escrow smart contract that allows for swaps between any ERC-20 or NFT token between counter-parties that have already agreed to terms.
-The Web3 Bazaar connects an easy to use dApp interface with escrow smart contracts on EVM compatible chains that enable the on-chain establishment of trade terms and ensure both parties possess and swap the intended assets in a non-custodial manner.
-
-The Bazaar was built to support P2P trades from all assets on all chains and to provide a safe haven for trustless trades between unknown parties. The Bazaar was built by 3 frens who are active members of the gaming NFT and DeFi space and decided to build it after seeing the explosions in P2P trading scams within Discord groups and subreddits.
+The Web3 Bazaar connects an easy to use dApp interface with escrow smart contracts that enable the on-chain establishment of trade terms and ensure both parties possess and swap the intended assets in a non-custodial manner.
+The Bazaar was built to support P2P trades from all assets on all chains and to provide a safe haven for trustless trades between unknown parties. The Bazaar was built by 3 frens who are active members of the gaming NFT and DeFi space and decided to build it after seeing the explosions in P2P trading scams within Discord groups and subreddits.We're a group of devs deeply worried that our ability to do anonymous P2P trades will soon be a high-priority target by governments and other malificent actors therefore we're trying to give it our best to use this window of opportunity and build the tools that will be impossible to target before its too late.
 
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+Web3 Bazaar endgame is to provide a fully decentralised platform that enables P2P trades of all assets on-chain and between any blockchain or network. We want to make sure that not every asset is dependent on Liquity pools and that there's no vector of attack for P2P trades.
+The test version of the dApp and the smart contract V1 is already live and anyone can enter and test it out through the [Website](https://web3bazaar.org) or fully on-chain, interacting with the [smart contract](https://mumbai.polygonscan.com/address/0x670bc34b16e0994fd64D90F127fDe38c0f1Afb83#code).
+The Bazaar is fully open-source and all its code can be verified in our Github or on-chain and we intend to keep it open to all, free to use and KYCless forever,
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+**Here's a sneak peak into what it looks like to create a trade in the bazaar:**
+
+![image](https://user-images.githubusercontent.com/92461670/167898841-f52728c8-475e-49d7-b8d2-4eae4ede0608.png)
+
 
 ### Ecosystem Fit
 
@@ -55,38 +40,34 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-S3mz
-Dr. Brown
-0XVallados
+- [S3mz](https://github.com/orgs/Web3bazaar/people/S3mz)
+- [Dr. Brown](https://github.com/orgs/Web3bazaar/people/drEmmetBrown85)
+- [0XVallados](https://github.com/orgs/Web3bazaar/people/0xVallados)
 
 ### Contact
 
 - **Contact Name:** S3mz
 - **Contact Email:** s3mztube@gmail.com
-- **Website:**https://twitter.com/unrealS3mz
+- **Twitter:** https://twitter.com/unrealS3mz
+- **Telegram:** unrealS3mz
 
 ### Legal Structure
 This is a fully-open source project with a treasury funded only through gratns and donations. There's no legal structure and there was never a company incomporation.
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
+S3mz is a Biz Dev and PM in the Web3 for about 5 years. He's been mostly involved in Decentralised ID projects and recently started working on a few side projects such as [Strio](https://strio.xyz), a decentralised protocol for Creators.
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+Dr. Brown is a Backend and Solidity dev for more than 5 years after working with digital IDs and met S3mz. He most of all become very aware that we needed to start working on self-sustained P2P tools and since then has been siding with S3mz on Strio and Web3 Bazaar
+
+0xVallados is a frontend and Web3 dev who will never give up his real ID. He's main focus in life is to create easy tools for people to keep their self-sovereignty. We know nothing about him except that he his still in college and that's the way way he wants to stay known.
+
+
 
 ### Team Code Repos
 
-- https://github.com/Web3bazaar
+- [Web3 Bazaar Github](https://github.com/Web3bazaar)
 
-
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
-
-### Team LinkedIn Profiles (if available)
-
-N/A
 
 ## Development Status :open_book:
 
@@ -98,13 +79,13 @@ N/A
 ### Overview
 
 - **Total Estimated Duration:** 3 months 
-- **Full-Time Equivalent (FTE):**  3 FTE
+- **Full-Time Equivalent (FTE):** 3 FTE
 - **Total Costs:** 30,000 USD
 
 ### Milestone 1 — EVM Mainnets Launch
 
 - **Estimated duration:** 3 months
-- **FTE:**  5
+- **FTE:** 3
 - **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
@@ -130,10 +111,6 @@ Please include here
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+### Use of proceeds
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
