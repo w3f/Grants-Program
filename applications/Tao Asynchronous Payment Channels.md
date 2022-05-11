@@ -257,18 +257,18 @@ Below is the link to an illustration of the detailed process.
 
 -<https://docs.google.com/document/d/15pOrIl6cI2gj2cJWrOHOFEd-m0x49ZjrHbXXnhZfYGw/edit?usp=sharing>  
 
-### the channel open process
+### The channel open, update, close process
 
 Implemented the on-chain operations in the form of a smart contract in ink!
 The contract allows the parties to specify the number n of Validators they desire to involve and their identities.
 The signature scheme makes off-chain signatures compatible with on-chain accounts, and as such, signatures made off-chain can be verified using public keys available on-chain.
-Once the contract is deployed on the Ethereum network, Alice funds it first.
+Once the contract is deployed on the public blockchain network, Alice funds it first.
 Subsequently, once Alice's funding transaction is finalized, Bob funds it.
 Once Bob's funding transaction is finalized, the collateral can be calculated, so the Validators can fund it in any order simultaneously.
 When all Validators have funded the contract, any of the two parties can open the channel.
 At any time before opening the channel, any party or Validator can withdraw their money. At this point, the channel is canceled and can no longer be opened but allows the rest of the parties to withdraw in any order.
 Once the channel is open, the parties can continue exchanging states off-chain.
-If multiple channels are used, then the cost of smart contract deployment can be amortized by abstracting the common functionality into a Solidity library. However, the opening and closing costs are recurrent.
+If multiple channels are used, then the cost of smart contract deployment can be amortized by abstracting the common functionality into a smart contract library. However, the opening and closing costs are recurrent.
 When the parties wish to close the channel optimistically, Alice initially submits a transaction to the smart contract requesting the channel to close. This request contains Alice's claimed closing state (namely, Alice's value at closing time, as Bob's value at closing time can be deduced from this.
 Once Alice's transaction is confirmed, if Bob is in agreement, he submits a transaction to the smart contract to signal his agreement.
 The smart contract then returns Alice's and Bob's values and Validators' collateral. Check that the sum of Alice's value and Bob's value at the closing state does not exceed the sum of their values at their initial state so that sufficient funds remain to return the Validators' collateral.
