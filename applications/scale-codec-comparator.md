@@ -23,6 +23,7 @@ I have already developed https://github.com/gmajor-encrypt/php-scale-codec
 1. Providing an FFI to Rust's reference implementation
 2. Tested with rust's FFI along with the scale lib https://github.com/w3f/Grants-Program/blob/master/rfps/scale-codec-comparator.md
 3. Passing the test will release the scale code badge of the GitHub action
+4. Add Github action ci automatically test if these libs are updated
 
 ### Ecosystem Fit
 
@@ -47,7 +48,7 @@ individual
 ### Team's experience
 
 I have many years of php development experience and nearly five years of blockchain development experience, familiar
-with PHP, GOLANG, PYTHON, Nodejs
+with PHP, GOLANG, PYTHON, Nodejs, Rust
 
 ### Team Code Repos
 
@@ -75,7 +76,7 @@ Not yet
 | Number | Deliverable      | Specification                                                                                                                              |
 |-------:|------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 |    0a. | License          | MIT                                                                                                                                        |
-|    0b. | Documentation    | Simple documentation on how to use and hot to test                                                                                         |
+|    0b. | Documentation    | Simple documentation on how to use and how to test                                                                                         |
 |     1. | enable Unit test | providing a FFI make test echo listed on [substrate.dev](https://github.com/w3f/Grants-Program/blob/master/rfps/scale-codec-comparator.md) |  
 |     2. | github action    | auto test when  comparator commit code                                                                                                     |  
 
@@ -83,11 +84,15 @@ Not yet
 
 * **Estimated Duration:** 2 week
 * **FTE:**  1
-* **Costs:** 2,000 USD
+* **Costs:** 2,500 USD
 
 | Number | Deliverable            | Specification                                            |
 |-------:|------------------------|----------------------------------------------------------|
 |    0a. | License                | MIT                                                      |
-|    0b. | Documentation          | Simple documentation on how to use and hot to test       |
+|    0b. | Documentation          | Simple documentation on how to use and how to test       |
 |     1. | GitHub badge           | Create a GitHub badge for SCALE feature complete libs    |
 |     2. | GitHub Ci ensure badge | libs are tested with github actions if they are released |
+
+## Future Plans
+
+I have been maintaining php scale code and php api lib for 2 years, and this application will continue to be maintained
