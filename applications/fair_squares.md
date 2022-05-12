@@ -9,26 +9,24 @@
 
 ### Overview
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-
-Fair Squares aims to co-create a more transparent and fair housing market for tenants, co-owners, social investors and servicers. In order to make rental housing more affordable and accessible to a larger group of people.
+#### Fair Squares aims is to co-create a more transparent and fair housing market for tenants, co-owners and social investors. In order to make rental housing more affordable and accessible to a larger group of people.
 
 - A brief description of your project.
 
-Fair squares aims to implement the return-on-rent global variable1, this variable bring the investor and tenant in direct relationship. Our goal is to find the right balance for the affordable housing gap. A group of individuals, each bundling their capital to invest in a house that is for sale, with the purpose to rent it out. Based on their individual fractional share of the house they will get a yield which is the social return-on-rent.
+Fair squares aims to implement the return-on-rent variable on rental houses that has fractional ownership.This variable bring the investor and tenant in direct relationship. Our goal is to find the right balance for the affordable housing gap. A group of individuals, each bundling their capital to invest in a house that is for sale, with the purpose to rent it out. Based on their individual fractional share of the house they will get a yield which is the social return-on-rent.
 
 In order to create affordable housing, while offering investors a better return compared to other defensive investments. The community agrees on the capped yield, which controls the rent and keeps it affordable. These parameters are governed by the council and stakeholders that strive for a fair housing market.  
 
 By using Web3 technology in a semi-permissionless system for real-world assets, digital currencies and decision making we lower the barrier to entry to invest in the housing market and make it transparent and equitable. 
 
 
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
+- Integration into Substrate / Polkadot / Kusama.
 
 The Kusama and Polkadot ecosystem allows us to use the required building blocks through the relay-chain. The substrate framework gives us the runtime to be very specialized and bring out a protocol that does like clockwork to onboard assets and rent them out. The already open-sourced frame pallets and community work helps out a lot in this. 
 
 Because of the social mission and required actions on-chain we want a feeless parachain while getting the security from the relay-chain. We are looking to collaborate and use parachain services for DIDs, stablecoins, storage protocols within the substrate web3 ecosystem. In order to combine the real word with assets, by a solid permissioned process and still connected to para and relaychain.
 
-- An indication of why your team is interested in creating this project.
+- Our Motivativation.
 
 It is exciting to see DeFi rise, liquidity fights and blockchain tech evolve. We as a team are users of these products and believe there is not turning back from this. Nevertheless we are seeing the negative social economical consequences for the low and middle class even in developed countries. For us blockchain technology was a bigger promise and needs more woven fibers into the real-world. We want people to still earn returns on their investments, but develop for equitable systems that are accesible for all and stop the profit maximization mechanisms on basic needs. 
 
@@ -36,7 +34,7 @@ It is exciting to see DeFi rise, liquidity fights and blockchain tech evolve. We
 ### Project Details
 
 
-We are looking to develop a first usable version of the fair-squares node and interface. A fully rounded MVP that gives access to the core functions. We have been already coding on this since September 2021 on the code-base participated in the APAC hackathon. Where we in very hacky way achieved parts of milestones 1 & 2 reusing parts of old archived substrate.dev codecase.  
+We are looking to develop a first usable version of the fair-squares node and interface. A fully rounded MVP that gives access to the core functions. We have been already coding on this since September 2021 on the code-base while participating to the APAC hackathon. Where we in very hacky way achieved parts of milestones 1 & 2 reusing parts of old archived substrate.dev codecase.  
 
 
 Since then we having been discussing what the modules and pallets are required to make this a working software. We ave created this type of [interface](https://youtu.be/_8mnawfNpBQ) that will be for now our front-end. In the last milestone we have a UI sepcialist on board 
@@ -58,15 +56,15 @@ Since then we having been discussing what the modules and pallets are required t
 
 - Where and how does your project fit into the ecosystem?
 
-Looking at Kusama & Polkadot onboarding more specialized parachains offering generic functionality. We want to make use of these functions such as stable tokens, DIDs/ID, storage, privacy and messaging. We want to focus creating protocol and platform that focuses on solving affordable housing. It's a very specific  idea in the substrate ecosystem, it has a social good focus with coordination of funds and actions in which we can automate the flow in the runtime. The fit is in the usage of relay-chain security and using all the parachain connectivity while allowing our own custom logic for the Fair Squares solution. 
+Looking at Kusama & Polkadot onboarding more specialized parachains offering generic functionality. We want to make use of these functions such as stable tokens, DIDs/ID, storage, privacy and messaging. We want to focus on creating a protocol and platform that focuses on solving affordable housing. It's a very specific idea in the substrate ecosystem, it has a social good focus with coordination of funds and actions in which we can automate the flow in the runtime. The fit is in the usage of relay-chain security and using all the parachain connectivity while allowing our own custom logic for the Fair Squares solution. 
 
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 
-The target audience for using the developed pallets are the end-users such as investors, sellers, verifiers, oracles. The current short-term goal is to further research and experiment. We are in talks with several institutions in the Netherlands that we rely on for a functional application for affordable housing. Our goal is to get in to a functional MVP that can handle a case and learn from the short comings of our architecture, solution and the idea to iterate together after that.
+The target audience for using the developed pallets are the end-users such as investors, sellers, verifiers, oracles. The current short-term goal is to further research and experiment. We are in talks with several institutions in the Netherlands that we rely on for a functional application for affordable housing. Our goal is to get into a functional MVP that can handle a case and learn from the interaction. This will help us gather information about the limitations of interactions between Blockchain and real-world processes, and devise additional solutions.
 
 - What need(s) does your project meet?
 
-FS project focuses is on utilizing the available building blocks that are known in the cryptosphere to make affordable housing possible with maximum as possible transparancy, while respecting pseudonimity of the users. The real world integration of blockchains are still minimal. We have payments for pyshical goods, but nothing really interacting with the real world, business and retailers. We believe that crypto systems implementation will look very different 5-10 years from now, we hope kick that of by focusing on a real-world problem.
+FS project focuses is on utilizing the available building blocks that are known in the cryptosphere to make affordable housing possible with maximum as possible transparancy, while respecting pseudonimity of the users. The real world integration of blockchains are still minimal. We have payments for pyshical goods, but nothing really interacting with the real world, business and retailers. We believe that crypto systems implementation will look very different 5-10 years from now, we hope kick that of by focusing on a real-world problem. For now the need is for the solution just to be functional, but combined with good token-design fair distributions that gives access to equitable systems for future users.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
@@ -92,12 +90,12 @@ No projects we aware of that are focusing on housing and/or real estate. There a
 
 ### Team's experience
 
-The idea of Fair Squares and work has been existing for 2 years. We wrote a light-paper to put things on paper and develop our idea further on paper. After that finished we decided to publish the idea in a hackathon to get some exposure and experience. The team that stuck after the APAC hackathon (Ilhan & Kazu). The team had limited experience in developing with rust and substrate, this is growing by the day.  After finishing the hackathon we had a much more clear idea what we needed in terms of skills. After the hackathon Stephen joined us. We are not seasoned system developers, this will reflect in the FTE en Amount asked in the rest of our proposal, but we are very eager to achieve the milestones presented. 
+The idea of Fair Squares and work has been existing for 2 years. We wrote a light-paper to put things on paper and develop our idea further on paper. After that finished we decided to publish the idea in a hackathon to get some exposure and experience. The team that stuck after the APAC hackathon (Ilhan & Kazu). The team had limited experience in developing with Rust and Substrate, this is growing by the day.  After finishing the hackathon we had a much more clear idea of what we needed in terms of skills. After the hackathon Stephen joined us. We are not seasoned system developers, this will reflect in the FTE en Amount asked in the rest of our proposal, but we are very eager to achieve the milestones presented. 
 
 
 
 - __Ilhan__: has experience with different blockchain development architectures. During his time with the Blocklab.nl (a innovation arm /subsidiary of the Port Authorities in Rotterdam) he has created different applications for Energy and Supply-chains using a decentralized stack. He was also a part of the first cohort runtime developers academy. Active member in Kusama / Polkadot blockchains governance and validating. 
-- __Kazu__: Engineer of mechanical design at Fuji Electric. He started studying Rust in August 2021 and participated in 3 hackathons (2 with Polkadot and 1 with Phala) between August and November 2021. Most of what he has done can be found on [GitHub](https://github.com/ndkazu).  The first original program written with Rust is demonstrated in this [video](https://youtu.be/sMpUnaz_AiY)
+- __Kazu__: Engineer in mechanical design at Fuji Electric. He started studying Rust in August 2021 and participated in 3 hackathons (2 with Polkadot and 1 with Phala) between August and November 2021. Most of what he has done can be found on [GitHub](https://github.com/ndkazu).  The first original program written with Rust is demonstrated in this [video](https://youtu.be/sMpUnaz_AiY)
 - __Stephen__: Is a software engineer with experience mainly in .net environment, web app and desktop applications for different clients in banks, health and sport. He started to learn Rust in December with the objective to help concretize the project with his development skills according to the roadmap that we will define further. 
 - __Mahir__: is responsible for the market part of the FS research and the pilots with municipalities and other stakeholders. He is involved as an entrepreneur and consultant in various IT solutions such as [unlocQed](https://www.unlocQed.com) (honest recruitment) and works on Weconomics Blockchain projects and is responsible for research, design and valorization. Mahir is not taking part in the grants program as his contribution is not technical, but is vital part of the team for busuiness development. 
 - __Thibaut__: MBA and industrial design graduate, 15+ years of experience designing digital products and services for finance, insurance, luxury industry and governments. Thibaut will be focusing on th design and the front-end mainly in the last milestone. 
