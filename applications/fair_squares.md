@@ -132,14 +132,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://www.linkedin.com/in/mahirozdemir/
 - https://www.linkedin.com/in/thibautsegura/
 - https://www.linkedin.com/in/mrisho-lukamba/
-- 
+
 ## Development Status :open_book:
 
 - We started of with publishing a [light-paper](https://fair-squares.nl/lightpaper/fair/squares/2021/09/14/english_whitepaper.html). To bring light to the problem and structure the idea. We have interviewed 4 organisations about these research questions presented in the light-paper that we thought needed to be enlightened. The link to the research results can be found [here](https://docs.google.com/document/d/1Y50h3JthlXBGSiG92eQP8MghSd4H07N8GKhO9d_nz7w).
 - We have presented our project at amsterDOT conference, the link for the video can be found [here](https://youtu.be/rZdqHgn69wU)
 - We have discussed this project with several members of the polkadot community. We talked about it couple of times with Raul from the Polkadot community whether a treasury proposal would be good, we didn't go for this as we saw a lot of parachain development projects to Kusama of Polkadot being rejected by the council. 
 
-//
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
@@ -246,18 +245,15 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - We intend to enter the substrate builders program with our developed solution, hopefully we are elegible to be fast-tracked. 
 - We intend to bring-up a public live testnet with an interface in which everyone can use Fair squares. The developed solution is based on all of the functionality on the milestones. The time frames  might be tweaked so the platform can work faster. Setting roles will be publicly available and we will be monitoring the chain to see if we can assist and verify users. 
 - We will notify partners we have interviewed and see based on our solution we have built to get their feedback and see if we can continue experimenting with them to build a next iteration, not only the software but also the 
-- On the medium term we are looking to have funding that is neutral and benefits from this solution. This is usually governments. 
-
-## Medium Term
-- how you intend to use, enhance, promote and support your project in the short term, and
-
+- On the medium term we are looking to have funding that is neutral and benefits from this solution. This is usually falls into the corner of public institutions. 
 
 ### Long Term
 In 1-3 years from now we hope to found a legal framework and partnership with municipality, state or governmental level that gives us the pass to implement this. We aim to organize from the bottom-up with other parties that find this relevant and iterate together with them. Ideally we would needed to get funded by a neutral party that benefits from this. But we like to take it step for step. 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** We have been around in the ecosystem for some time and we knew from the W3F grants program since it's inception.
+**How did you hear about the Grants Program?** 
+We have been around in the ecosystem for some time and we knew from the W3F grants program since it's inception.
 
 
 
