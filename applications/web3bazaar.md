@@ -16,7 +16,7 @@ The Bazaar was built to support P2P trades from all assets on all chains and to 
 
 ### Project Details
 
-Web3 Bazaar endgame is to provide a fully decentralised platform that enables P2P trades of all assets on-chain and between any blockchain or network. We want to make sure that not every asset is dependent on Liquity pools and that there's no vector of attack for P2P trades.
+Web3 Bazaar endgame is to provide a fully decentralised platform that enables P2P trades of all assets on-chain and between any blockchain or network. We want to make sure that not every asset is dependent on Liquity Pools and that there's no vector of attack for P2P trades.
 The test version of the dApp and the smart contract V1 is already live and anyone can enter and test it out through the [Website](https://web3bazaar.org) or fully on-chain, interacting with the [smart contract](https://mumbai.polygonscan.com/address/0x670bc34b16e0994fd64D90F127fDe38c0f1Afb83#code).
 The Bazaar is fully open-source and all its code can be verified in our Github or on-chain and we intend to keep it open to all, free to use and KYCless forever,
 
@@ -26,15 +26,6 @@ The Bazaar is fully open-source and all its code can be verified in our Github o
 
 
 ### Ecosystem Fit
-
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
 
 Web3 Bazaar eng game is to be the multi-chain non-custodial P2P exchange of the Metaverse. We aim to make it possible for Web3 user to swap any asset with anyone independently of market liquidity or infrastrcuture.
 We're starting by addressing EVM compatible chains and especially gaming and DeFi projects with intensive P2P activity. Most activity in this area comes from chains such as Polygon, BSC and Avalanche.
@@ -61,13 +52,11 @@ This is a fully-open source project with a treasury funded only through gratns a
 
 ### Team's experience
 
-S3mz is a Biz Dev and PM in the Web3 for about 5 years. He's been mostly involved in Decentralised ID projects and recently started working on a few side projects such as [Strio](https://strio.xyz), a decentralised protocol for Creators.
+S3mz is a Biz Dev and PM in the tech industry for more than 10 years. He fell down the  web3 rabbit hole back in 2017 but started building in 2021 only, kickstarting a few side projects such as [Strio](https://strio.xyz), a decentralised protocol for Creators. Met Dr.Brown at Strio DAO and both matched their obsession with self-sovereignty, starting to pursue it 100% by building the Web3Bazaar first.
 
-Dr. Brown is a Backend and Solidity dev for more than 5 years after working with digital IDs and met S3mz. He most of all become very aware that we needed to start working on self-sustained P2P tools and since then has been siding with S3mz on Strio and Web3 Bazaar
+Dr. Brown is a Backend and Solidity dev for more than 5 years after working alone building DeFi optimisation tools he met S3mz at Strio DAO, where he designed its protocol and from then on both matched their obsession with self-sovereignty, starting to pursue it 100% by building the Web3Bazaar first.
 
-0xVallados is a frontend and Web3 dev who will never give up his real ID. He's main focus in life is to create easy tools for people to keep their self-sovereignty. We know nothing about him except that he his still in college and that's the way way he wants to stay known.
-
-
+0xVallados is a frontend and Web3 for 2+ years, after contributing to some projects and DAOs such as Strio where he met S3mZ and Brown. He's main focus in life is to create easy tools for people to keep their self-sovereignty. 
 
 ### Team Code Repos
 
@@ -96,7 +85,7 @@ Dr. Brown is a Backend and Solidity dev for more than 5 years after working with
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide inline documentation, techinical documentation of the code of the smart contracts and dApp features and a basic **tutorial** that explains how a user can interact with the Bazaar. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a series of articles that explains what was done as part of the grant as well as user guides and partnerships announcements
@@ -115,7 +104,7 @@ Dr. Brown is a Backend and Solidity dev for more than 5 years after working with
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide inline documentation, techinical documentation of the code of the smart contracts and dApp features and a basic **tutorial** that explains how a user can interact with the Bazaar. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a series of articles that explains what was done as part of the grant as well as user guides and partnerships announcements
@@ -127,14 +116,17 @@ Dr. Brown is a Backend and Solidity dev for more than 5 years after working with
 
 ## Future Plans
 
-Please include here
+Our growth strategy is focused on promoting the Bazaar next to gaming and DeFi project owners as the tool to safeguard the P2P trades of their communities. By listing with us they get a "verified" checkmark on their assets within the Bazaar frontend and we expect them to co-promote us within their community and bring most of the users to the platform.
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+Core team's goal is to keep working on the development of the Bazaar, increasing the number of users, listed projects and funds in the treasury. We aim to build a fully open-source community of contributors that becomes self-sustainable through donations and when that happens we will step down from a leading role, 
 
 
 ## Additional Information :heavy_plus_sign:
 
-### Use of proceeds
+### Use of proceeds:
+
+- Audits - 50%
+- Marketing and partnerships - 25%
+- Core team and contributor rewards - 25%
 
 
