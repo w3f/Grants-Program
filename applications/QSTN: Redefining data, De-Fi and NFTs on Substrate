@@ -1,0 +1,233 @@
+# QSTN Grant Proposal
+
+- **Project Name:** QSTN
+- **Team Name:** QSTN
+- **Payment Address:** ETH - 0x7056A5Da7D269B31Eb2E54E5579e41ef283d7D2C
+- **[Level]:** Level 2
+
+
+## Project Overview :page_facing_up:
+
+QSTN is a web application where users participate in surveys, quizzes and short questionnaires to earn virtual credit. These credits can be swapped for a combination of incentives ranging from brand items, NFTs, and discount codes.
+
+### Overview
+
+**What problem are we trying to solve?**
+
+When we agree to terms and conditions, most of the time, our data gets sold and commodified without permission or compensation. QSTN acts as an “interface” for consumers to paygate their information towards businesses.
+
+**Who benefits from this system?**
+
+By compensating QSTIEs for data, we provide incentive for rich and meaningful insights. This information is then accessed by our partners for market research.
+
+**How will privacy be built into the system?**
+
+Our team is currently in talks with two self sovereign identity solutions to allow users to contribute while hiding their connection to the data.
+
+**How is NEAR being integrated into the application?**
+
+By building on the NEAR blockchain, we are able to create a timestamp each time questions are answered to act as record of input on-chain.
+
+**Is QSTN blockchain agnostic?**
+
+We are initially building on NEAR Protocol due to their low gas environment but since users earn our virtual credit (not issued on a blockchain) and we can mint NFTs on any network - we can service any chain.
+
+**What happens to this information?**
+
+We keep this information offline in a cold storage, meaning it is inaccessible; only keeping users’ name, balance and email address in our hot storage at the moment.
+
+**How do we know these companies will not abuse our data?**
+
+While initial sponsors are chosen by us, the goal is to open voting through credit ownership. These rights, supported by passive income, is the first digital attempt to break away from the corporate silo of data mismanagement.
+
+### Project Details
+
+QSTN is a blockchain enabled market research portal built on NEAR Protocol in order to take advantage of their low gas environment. Since winning the Octopus Network Star Prize, we realize the importance of interopoerability and the low transactional fees on Substrate; which Octopus supports. 
+
+Building on this narrative, we would like Polkadot to be the next blockchain we service and to allow users on its network to answer questions, earn our virtual credit and spend it for digital rewards minted and issued on Polkadot (e.g. purchase NFTs on RMRK). 
+
+For scope, QSTN can be broken down into three different user experiences:
+1. User view - general users create an account, complete onboarding process and then have the ability to answer 5 question daily in return for credit which can be spent within our NFT marketplace
+2. Business view - businesses and corporate entities (e.g. DAOs and protocols) can establish an account from which they can create their own question portal, reward users for their participation and track each individual's completion rate and response. 
+3. Commission - businesses and corporate entities can pay a fee to have their questions slipped into the "User View" rotation and glean insights from our daily, active audience for their own market research purposes
+
+Within this scope, we want to offer points 1 and 2 to the Polkadot ecosystem; offering users and businesses alike the chance to create a question portal, track, reward and incentive user responses on-chain using our virtual credit and native NFTs. 
+
+Scope 1
+- We will integrate Polkadot into the QSTN platform so that users can do the following:
+A. Sign into our platform using the Polkadot.JS wallet 
+B. Track their rewards (e.g NFTs and digital tokens) earned on the platform within their Polkadot.JS wallet
+C. Purchase NFTs minted on the Polkadot network
+D. Create a timestamp "on-chain" as proof of their data contributions and respective credits earned 
+
+Scope 2 
+- We will integrate Polkadot into the QSTN platform so that businesses can do the following:
+A. Sign into our platform using the Polkadot.JS wallet 
+B. Track their rewards (e.g NFTs and digital tokens) earned on the platform within their Polkadot.JS wallet
+C. Load the business portal with a DOT token of their choosing and evenly distribute among portal respondents 
+
+### Ecosystem Fit
+
+QSTN is meant to be overall Web3 infrastructure to accelerate the adoption of data monetization. Since users can earn with or without a Web3 wallet but have the option to do so later, we aim to be a huge proponent for matriculating users from Web2 to Web3.
+
+We aim to do this by taking advantage of the Substrate coding language to allow users to earn credits and purchase NFTs within a low gas environment, initially we centrally store these assets but upon request, and wallet creation, we then mint the credits and NFTs to users' wallets. 
+
+Right now, our target audience can be broken down in the following groups:
+1. Data privacy enthusiasts (Web2 and Web3)
+2. High school and college students seeking additional income 
+3. Web3 DAOs and Protocols which need to capture market research (e.g. DAO governance) and want to reward participants 
+4. Web2 users wishing to matriculate to Web3 but no upfront capital or resources to get into the space - in theme with this thinking, we are working on partnerships with Jack & Jill of America, Inc., The Gray Matter Experience and New York University to help students learn about Web3 while earning. 
+
+Our platform is able to act as a huge proponent to drive Web3 adoption for the more novice, less experienced internet user. This is important because in our initial feedback, we learned **alot** of people want to get into blockchain but do not have the capital, resources or know where to start.
+
+Using our web application users are able to begin earning credits (e.g. tokens), NFTs and other digital goods without putting any upfront capital besides their personal information which most companies sipon and sell without compensation.
+
+There are currently no other projects similar to ours in the Substrate ecosystem. However, we do see a potential partnership with Ocean Protocol as we can sell and aggregate the data profiles within their secondary market. 
+
+### Team members
+
+Orrin Campbell – QSTN founder, CEO and blockchain architect who will be designing the workflow and user experience **team leader**
+
+Twitter - https://twitter.com/realorrin
+
+Instagram - https://instagram.com/realorrin
+
+YouTube - https://youtube.com/realorrin
+
+Linkedin - https://linkedin.com/in/realorrin
+
+GitHub - https://github.com/@qstnus
+
+Anibal Suriel - QSTN Head of Legal **team member**
+
+Linkedin - https://linkedin.com/in/anibal-suriel-esq
+
+Phillip Coleman - Entreprenuer In Residence **team member**
+
+Linkedin - https://www.linkedin.com/in/phillip-coleman-791b1475
+
+Eugen Pyatygin – QSTN lead developer and back-end specialist, will be leading the integration and coding the Substrate integration **team member**
+
+Github - https://github.com/3ugen
+
+Lafi Raed & Borhen Jlidi – QSTN junior developers and front-end specialist, will be leading the visual redesign for the NFT marketplace and related functionality **team member**
+
+### Contact
+
+- **Contact Name:** Orrin Campbell
+- **Contact Email:** qstnus@gmail.com
+- **Website:** https://qstn.us
+
+### Legal Structure
+
+- **Registered Address:** 67 Edgehill Drive, Wappingers Falls, New York, 12590, USA
+- **Registered Legal Entity:** QSTN, LLC
+
+### Team's experience
+
+Orrin Campbell
+Besides his entrepreneurial pursuits in Web3, Orrin has a large following in entertainment due to his national television appearance on Dr. Phil during an hour long episode about his caricature as a "cyborg from the future."
+
+In an attempt to build on this platform, Orrin has amassed a large following on social media (Tik Tok - 250K, Instagram - 17K, YouTube - 40K) who follow his advice and input on topics ranging from music, fashion, entertainment and technology.
+
+Dr. Phil episode - 
+https://www.youtube.com/watch?v=ReRddYVYfHU&t=1s
+
+Press links - 
+https://vman.com/article/orrin-discusses-indie-rap-persona/
+https://lyricallemonade.com/p/meet-orrin-the-cyborg-rapper-sent-from-2050-to-save-us-all
+https://i-d.vice.com/en_uk/article/evq83k/orrin-system-control-met-museum-art-world-racism-music-video
+
+Socials - 
+https://tiktok.com/@realorrin
+https://instagram.com/realorrin
+https://youtube.com/c/realorrin
+
+### Team Code Repos
+
+- https://github.com/qstnus
+- https://github.com/3ugen
+
+Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+
+- https://github.com/3ugen
+
+### Team LinkedIn Profiles (if available)
+
+- https://www.linkedin.com/in/realorrin
+- https://linkedin.com/in/anibal-suriel-esq
+- https://www.linkedin.com/in/phillip-coleman-791b1475
+
+## Development Status :open_book:
+
+QSTN has been successfully implemented on NEAR Protocol and after completing three accelerator programs, we feel comfortable beginning to look crosschain and offering our services within other low gas environments.
+
+Development in chronological order 
+1. QSTN receives initial grant Human Guild DAO on NEAR Protocol - https://medium.com/nearprotocol/qstn-is-launching-on-near-protocol-introducing-the-future-of-data-privacy-4c7567085666
+2. QSTN participates in the 1871 x BLK Tech Verizon incubator program
+3. QSTN participates in the Gitcoin KERNEL Block 4 accelerator + presents at their Alumni Showcase - https://opensea.io/assets/matic/0x1c39d4c8ad7ce5206355d43e343f5136ba5ca50f/40816239257166240
+4. QSTN places 2nd and 4th in the Encode Club x Filecoin NFT Hackathon - https://medium.com/encode-club/nft-hack-finale-prizewinners-and-summary-a68be99f6c66
+5. QSTN participates in the Filecoin accelerator and graduates as grant receipient - https://medium.com/encode-club/filecoin-accelerator-summary-94e30a571563
+6. QSTN participates in the Octopus Network x Huobi accelerator + 1 of 5 teams to receive the Star Prize (grant) - https://medium.com/oct-network/spring-2022-octopus-accelerator-star-prize-winners-d884456ce248
+
+## Development Roadmap :nut_and_bolt:
+
+Here is the roadmap + milestones we find appropriate to complete this integration 
+
+Pre-milestone
+- Release $15,000 to begin work on the initial framework 
+
+Milestone 1 - release $10,000 upon completion 
+- "General Users" can sign-in to QSTN using their Polkadot.JS wallet and from there on-board or earn their daily allotment 
+- "General Users" can purchase and mint DOT NFTs to their personal Polkadot.JS wallet from our marketplace 
+- "General Users" have option to create a 'blockchain timestamp' or receipt after answering a set of questions [user must pay gas fee]
+
+Milestone 2 - release $25,000 upon completion 
+- "Business Users" can sign-in to QSTN using their Polkadot.JS wallet and from there on-board or earn their daily allotment 
+- "Business Users" can load their portal with DOT tokens as a reward for survey respondents 
+
+### Overview
+
+- **Total Estimated Duration:** 4 months maximum 
+- **Full-Time Equivalent (FTE):**  4 FTE
+- **Total Costs:** 50,000 USD
+
+### Milestone 0 - Pre-Milestone dispension
+**FTE:** 4
+**Costs:** $15,000
+
+### Milestone 1 — Implement Substrate for "Business User" dashboard, UI, UX and workflow
+
+- **Estimated duration:** 2 month
+- **FTE:**  4
+- **Costs:** 10,000 USD
+
+0a. | License | Non-exclusive to strategic partners upon approval | Proprietarty - we also own a patent for this method 
+| 0b. | Documentation | We will provide both a read.me (and Github access) to the code and a basic YouTube tutorial that explains how a general user can sign in with their Polkadot wallet, earn credits and NFTs on Substrate, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article on Medium in partnership with Octopus Network to document the integration, its value and why we are choosing to build and support the Substrate Network 
+
+### Milestone 2 — Implement Substrate for "Business User" dashboard, UI, UX and workflow 
+
+- **Estimated duration:** 2 month
+- **FTE:**  4
+- **Costs:** 15,000 USD
+
+0a. | License | Non-exclusive to strategic partners upon approval | Proprietarty - we also own a patent for this method
+| 0b. | Documentation | We will provide both a read.me (and Github access) to the code and a basic YouTube tutorial that explains how a business user can sign in with their Polkadot wallet and load the questionnaire with DOT tokens to reward participants 
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article on Medium in partnership with Octopus Network to document the integration, its value and why we are choosing to build and support the Substrate Network 
+
+
+## Future Plans
+
+Please include here:
+1. We must finish our participation in the Encode Club x BitDAO Hackathon (May 9)
+2. Release our first generative NFT collection on the NEAR Protocol (June 15)
+3. NEAR Protocol mainnet launch event in the metaverse sponsored by our strategic partners (July 1) 
+4. Begin production on the mobile application (August 1)
+5. Finish the IP protection measures to begin licensing our software and technique (September 1) 
+
+**How did you hear about the Grants Program?** Web3 Foundation Website 
