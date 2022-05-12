@@ -264,6 +264,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Picasso / Composable Grants Program](https://grants.composable.finance)
 - [SubQuery Grants Programme](https://subquery.network/grants)
 - [Acala Grants Program](https://github.com/AcalaNetwork/Acala-Grants-Program)
+- [OAK’s Developer Grants](https://oak.tech/community/grants/)
 
 ## :information_source: License<!-- omit in toc -->
 
