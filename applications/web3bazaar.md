@@ -36,6 +36,11 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
   - If so, how is your project different?
   - If not, are there similar projects in related ecosystems?
 
+Web3 Bazaar eng game is to be the multi-chain non-custodial P2P exchange of the Metaverse. We aim to make it possible for Web3 user to swap any asset with anyone independently of market liquidity or infrastrcuture.
+We're starting by addressing EVM compatible chains and especially gaming and DeFi projects with intensive P2P activity. Most activity in this area comes from chains such as Polygon, BSC and Avalanche.
+
+However, Polkadot parachain activity in this sector is rising as well and that's the next ecosystem we're targetting (see Milestone 2 in this project). The first contact with the ecosystem will occur on the 1st Milestone through the deployment of our smart contracts in the MoonBeam chain (Polkadot's EVM compatible parachain preparing the ground for an easy adaptation for Polkadot's exclusive deployments.
+
 ## Team :busts_in_silhouette:
 
 ### Team members
@@ -78,15 +83,15 @@ Dr. Brown is a Backend and Solidity dev for more than 5 years after working with
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months 
-- **Full-Time Equivalent (FTE):** 3 FTE
-- **Total Costs:** 30,000 USD
+- **Total Estimated Duration:** 6 months 
+- **Full-Time Equivalent (FTE):** 5 FTE
+- **Total Costs:** 40,000 USD
 
 ### Milestone 1 — EVM Mainnets Launch
 
 - **Estimated duration:** 3 months
 - **FTE:** 3
-- **Costs:** 30,000 USD
+- **Costs:** 25,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -98,6 +103,25 @@ Dr. Brown is a Backend and Solidity dev for more than 5 years after working with
 | 1. | Smart contract| We will deploy the Bazaar escrow smart contract on Top EVM compatible chains (Polygon, Moonbeam, Avanlanche, BSC, Aurora and Fantom) supporting all ERC-20, ERC-1155 and ERC-721 assets in individual or bundle transactions and in a non-custodial manner |  
 | 2. | dApp interface | We will deploy an uodated and fine tunned version of the dApp that will support bundle transactions and checkmarked projects |  
 | 3. | Audits | We will audit the smart contracts deployed on Mainnets  |  
+| 4. | Community | We will be onboarding 10+ projects to list their smart contracts and assets and get a verified checkmark on the Bazaar frontend. |  
+
+
+### Milestone 2 — Polkadot Mainnet Launch
+
+- **Estimated duration:** 3 months
+- **FTE:** 5
+- **Costs:** 15,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Unlicense |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a series of articles that explains what was done as part of the grant as well as user guides and partnerships announcements
+| 1. | Smart contract| We will deploy the Bazaar escrow smart contract on Polkadot, Kusama, and other ecosystem parachains with significant NFT and DeFi activity. |  
+| 2. | dApp interface | We will adapt the dapp to support Polkadot wallet authentication and the interaction with the ecosystem chains |  
+| 3. | Audits | We will audit the smart contracts deployed |  
 | 4. | Community | We will be onboarding 10+ projects to list their smart contracts and assets and get a verified checkmark on the Bazaar frontend. |  
 
 
