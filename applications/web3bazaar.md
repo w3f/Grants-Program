@@ -52,11 +52,11 @@ This is a fully-open source project with a treasury funded only through gratns a
 
 ### Team's experience
 
-S3mz is a Biz Dev and PM in the tech industry for more than 10 years. He fell down the  web3 rabbit hole back in 2017 but started building in 2021 only, kickstarting a few side projects such as [Strio](https://strio.xyz), a decentralised protocol for Creators. Met Dr.Brown at Strio DAO and both matched their obsession with self-sovereignty, starting to pursue it 100% by building the Web3Bazaar first.
+[S3mz](https://twitter.com/unrealS3mz) is a Biz Dev and PM in the tech industry for more than 10 years. He fell down the  web3 rabbit hole back in 2017 but started building in 2021 only, kickstarting a few side projects such as [Strio](https://strio.xyz), a decentralised protocol for Creators. Met Dr.Brown at Strio DAO and both matched their obsession with self-sovereignty, starting to pursue it 100% by building the Web3Bazaar first.
 
-Dr. Brown is a Backend and Solidity dev for more than 5 years after working alone building DeFi optimisation tools he met S3mz at Strio DAO, where he designed its protocol and from then on both matched their obsession with self-sovereignty, starting to pursue it 100% by building the Web3Bazaar first.
+[Dr.Brown](https://github.com/orgs/Web3bazaar/people/drEmmetBrown85) is a Backend and Solidity dev for more than 5 years after working alone building DeFi optimisation tools he met S3mz at Strio DAO, where he designed its protocol and from then on both matched their obsession with self-sovereignty, starting to pursue it 100% by building the Web3Bazaar first.
 
-0xVallados is a frontend and Web3 for 2+ years, after contributing to some projects and DAOs such as Strio where he met S3mZ and Brown. He's main focus in life is to create easy tools for people to keep their self-sovereignty. 
+[0XVallados](https://github.com/orgs/Web3bazaar/people/0xVallados) is a frontend and Web3 for 2+ years, after contributing to some projects and DAOs such as Strio where he met S3mZ and Brown. He's main focus in life is to create easy tools for people to keep their self-sovereignty. 
 
 ### Team Code Repos
 
@@ -90,7 +90,7 @@ Dr. Brown is a Backend and Solidity dev for more than 5 years after working alon
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a series of articles that explains what was done as part of the grant as well as user guides and partnerships announcements
 | 1. | Smart contract| We will deploy the Bazaar escrow smart contract on Top EVM compatible chains (Polygon, Moonbeam, Avanlanche, BSC, Aurora and Fantom) supporting all ERC-20, ERC-1155 and ERC-721 assets in individual or bundle transactions and in a non-custodial manner |  
-| 2. | dApp interface | We will deploy an uodated and fine tunned version of the dApp that will support bundle transactions and checkmarked projects |  
+| 2. | dApp interface | We will deploy an updated and fine-tuned version of the dApp that will support bundle transactions and checkmarked projects |  
 | 3. | Audits | We will audit the smart contracts deployed on Mainnets  |  
 | 4. | Community | We will be onboarding 10+ projects to list their smart contracts and assets and get a verified checkmark on the Bazaar frontend. |  
 
@@ -119,7 +119,6 @@ Dr. Brown is a Backend and Solidity dev for more than 5 years after working alon
 Our growth strategy is focused on promoting the Bazaar next to gaming and DeFi project owners as the tool to safeguard the P2P trades of their communities. By listing with us they get a "verified" checkmark on their assets within the Bazaar frontend and we expect them to co-promote us within their community and bring most of the users to the platform.
 
 Core team's goal is to keep working on the development of the Bazaar, increasing the number of users, listed projects and funds in the treasury. We aim to build a fully open-source community of contributors that becomes self-sustainable through donations and when that happens we will step down from a leading role, 
-
 
 ## Additional Information :heavy_plus_sign:
 
