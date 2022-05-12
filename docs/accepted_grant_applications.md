@@ -480,3 +480,4 @@
 | [Dante Network](https://www.dantechain.com/) | Dante Network | [GitHub](https://github.com/dantenetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Verida](https://www.verida.io/) | Single Sign-On for Apps | [GitHub](https://github.com/verida) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Kami Ekbatanifard](https://github.com/Nick-1979/) | Polkadot js plus / Nomination pools | [GitHub](https://github.com/Nick-1979/polkadot-Js-Plus-extension/wiki) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Afloat Inc](https://stayafloat.io/#/) | Tax Infrastructure Polkadot Integration | N/A | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
