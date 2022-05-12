@@ -1,6 +1,6 @@
 # W3F Grant Proposal 
 
-- **Project Name:** Fair Squares
+- **Project Name:** Fair Squares (FS)
 - **Team Name:** FS
 - **Payment Address:** //TODO DAI(agreed)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -9,9 +9,9 @@
 
 ### Overview
 
-#### Fair Squares aims is to co-create a more transparent and fair housing market for tenants, co-owners and social investors. In order to make rental housing more affordable and accessible to a larger group of people.
+Fair Squares aims is to co-create a more transparent and fair housing market for tenants, co-owners and social investors. In order to make rental housing more affordable and accessible to a larger group of people.
 
-- A brief description of your project.
+- A brief description of our project.
 
 Fair squares aims to implement the return-on-rent variable on rental houses that has fractional ownership.This variable bring the investor and tenant in direct relationship. Our goal is to find the right balance for the affordable housing gap. A group of individuals, each bundling their capital to invest in a house that is for sale, with the purpose to rent it out. Based on their individual fractional share of the house they will get a yield which is the social return-on-rent.
 
@@ -37,19 +37,24 @@ It is exciting to see DeFi rise, liquidity fights and blockchain tech evolve. We
 We are looking to develop a first usable version of the fair-squares node and interface. A fully rounded MVP that gives access to the core functions. We have been already coding on this since September 2021 on the code-base while participating to the APAC hackathon. Where we in very hacky way achieved parts of milestones 1 & 2 reusing parts of old archived substrate.dev codecase.  
 
 
-Since then we having been discussing what the modules and pallets are required to make this a working software. We ave created this type of [interface](https://youtu.be/_8mnawfNpBQ) that will be for now our front-end. In the last milestone we have a UI sepcialist on board 
-- Data models / API specifications of the core functionality
+Since then we having been discussing what the modules and pallets are required to make this a working software. We ave created this type of [interface](https://youtu.be/_8mnawfNpBQ) that will be for now our front-end. In the last milestone we have a UI sepcialist on board
+
+#### Data model
 
 ![](https://mermaid.ink/img/pako:eNrFV1tP2zAU_itWngoU8Y7QpLEOrdLGEEU8RbJMfAoZiV3ZTlnF-O_zPU7iFva0Sm3Tc75zv9h9LSpOoTgvqoZIuajJoyBtyUp2tcI3pGlAoePT02MkeAPyiuKWUyxkyr74c3qK7gQQ2YmdJ5ZsiB_qqBW0hmjMlMwaRtdr5WVfS4YQ5bjSKhVgy54deWJbM2V-lOytlx0ZtwoQ2nDlxBCSG2AUrztGZSBtBN9wCdiyAlHAL6gUdjzS9OSWbwGTjWZsHTm1zp-BXe5-vjAQC6KINX-iuk0DaAOiAqYw10xq6UsmFWEV8DWq_eNebVgqLsgjOI2zz1XFO6ZqivzTks7RTCfOSmqy_V4u5iaZQbkmB5NLemQDOpFKdJWaOI6Q9yTng6tgX6WS9c--BUbqjKZRF1hcqqOPO_aTr94PXWj8jXcSQhW-uH4YF2cFjalZxZkS9UOnvY01vvFQfM9VVHOluwDfRCWG5BhKECbXOmK2jo2zqKXTClgAi-S34PWSbcEk6Dt_HBYrVqivVZr6IGcT7lTZWHUwDfyztkQ0UWgyCNTyhto03YksGYXfE0WDdrw13btKpCdgS3ogjekwpLgizYjWEuMIc51uOVuoVr4FDV3JmNVg9kuoZs2ZHKdjf0Li3F02vHpmXfsA4uzS-XF2D9VFqvdTrHxiODRGxqZJW2DHzB20aDN0dsl5E0drEJ7VMq1N6qQ3lMiGyg3k0nJmohnDc7EkYq5z9JxOGnF_61yv77yOgaPYsX0ONfzWbARkl4SMRJ8wdE-aDnqqSZwZV6ATpJnGSNQDi_Qb186pg900cWhPxkf2UkTP7GuOdIoSu_bUyOy-MPfei_3Aaz1I-kB7D-bm511YsiCy2HAg9-D3YZmkOnS6MtypEXe7X-R7hjsLzmzYLC4zuFlcZitmcfl1fCiewTTv15nM4sFA3sPlhjQDDN04PK8mU7B3ofoJScbrUPMjxOBl1l9PnmyereBRQMTyA1bcjPeMi_qxZvOtmf4IM2d2POz9nc_PVx_PtLH_S0jV6GqSBpQKzI3NFhSh-n4UpakuieC7iXjOkrn_YsvwqCEnuboM8jRYJx9I0duwbQZr5mMZDovzNlnUN2Q3vkb116_0M7yKedGC0BcIqv-gWLtloZ6ghbI414-UiOey0MeOxnUbnVP4Smvd3cX5mjQS5gXR18HVjlWR4FD-X46nvv0F3yGBHQ "Data model")
 
-- An overview of the technology stack to be used
-  - Substrate node template, frame pallets and customized pallets based on FS logic
-  - Front-end template connected through WS + Polkadot.js for testing specific features.
-- Documentation of core components, protocols, architecture, etc. to be deployed
-  - //TODO Docusaurus... @Ilhan and Team
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - We are not aiming for an immediate parachain or live application. We are aiming for a live testnet, where a lot more testing, experimenting and interaction is required. After completion of all milestones we will  with other parachains are required to happen after the completed milestones. 
+The techstack that will be created:
+- Substrate node template, frame pallets and customized pallets based on FS logic
+- Front-end template connected through WS + Polkadot.js for testing specific features.
+
+//TODO
+ deliver per milestones drawings of the flows. 
+
+
+//REMOVE: 
+What your project is _not_ or will _not_ provide or implement:
+
+We are not aiming for an immediate parachain or live application. We are aiming for a live testnet, where a lot more testing, experimenting and interaction is required. After completion of all milestones we will  with other parachains are required to happen after the completed milestones. 
 
 ### Ecosystem Fit
 
@@ -130,13 +135,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - 
 ## Development Status :open_book:
 
-- We started of with publishing a [light-paper](https://fair-squares.nl/lightpaper/fair/squares/2021/09/14/english_whitepaper.html). To bring light to the problem and structure the idea. We have interviewed 4 organisations about these research questions in our light-paper that we thought needed to be enlightened. The link to the research results can be found here //TODO 
+- We started of with publishing a [light-paper](https://fair-squares.nl/lightpaper/fair/squares/2021/09/14/english_whitepaper.html). To bring light to the problem and structure the idea. We have interviewed 4 organisations about these research questions presented in the light-paper that we thought needed to be enlightened. The link to the research results can be found [here](https://docs.google.com/document/d/1Y50h3JthlXBGSiG92eQP8MghSd4H07N8GKhO9d_nz7w).
 - We have presented our project at amsterDOT conference, the link for the video can be found [here](https://youtu.be/rZdqHgn69wU)
 - We have discussed this project with several members of the polkadot community. We talked about it couple of times with Raul from the Polkadot community whether a treasury proposal would be good, we didn't go for this as we saw a lot of parachain development projects to Kusama of Polkadot being rejected by the council. 
 
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- previous interface iterations, such as mock-ups and wireframes.
-
+//
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
@@ -250,16 +253,16 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 
 ### Long Term
-In 1-3 years from now we hope to found a legal framework and partnership in government within the EU that let's u
+In 1-3 years from now we hope to found a legal framework and partnership with municipality, state or governmental level that gives us the pass to implement this. We aim to organize from the bottom-up with other parties that find this relevant and iterate together with them. Ideally we would needed to get funded by a neutral party that benefits from this. But we like to take it step for step. 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** We have been around in the ecosystem for some time and we knew from the W3F grants program from the beginning it started. 
+**How did you hear about the Grants Program?** We have been around in the ecosystem for some time and we knew from the W3F grants program since it's inception.
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-- Work you have already done?
-  - We have all finished most of the substrate.dev tutorials and guides that are available. We are well aware of all the tools and support places we can ask. 
+
+ Work you have already done?
+  - We have all finished most of the substrate.dev tutorials and guides that are available. We are well aware of all usable pallets the tools and support places we can ask.
   - Since the amsterDOT some teams such as Acala have offered to also support technically and other ways. Before the amsterDot we were in talks with Litentry for the DID programme, this resulted in a technical chat with their runtime engineers that we can get technical support from, but the application is not continuing anymore because of a change in their structure. 
-  - We are in talks with municipalities in the Netherlands to build towards a case. 
-  - We have applied for two EU grants in the past through the f6s platform, but those resulted in nothing.
+  - We are in talks with municipalities in the Netherlands to build towards a case and apart from the technical part, we just need the partnerships and coalition just as much as the node-software.
+  - Some structural parts of the milestones are done in the branche [structure-template](https://github.com/Fair-Squares/fair-squares/tree/structure_template)
