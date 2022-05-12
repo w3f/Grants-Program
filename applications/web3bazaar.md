@@ -27,10 +27,10 @@ The Bazaar is fully open-source and all its code can be verified in our Github o
 
 ### Ecosystem Fit
 
-Web3 Bazaar eng game is to be the multi-chain non-custodial P2P exchange of the Metaverse. We aim to make it possible for Web3 user to swap any asset with anyone independently of market liquidity or infrastrcuture.
+Web3 Bazaar is the multi-chain non-custodial P2P exchange of the Metaverse. We aim to make it possible for Web3 users to swap any asset with anyone independently of market liquidity or infrastrcuture.
 We're starting by addressing EVM compatible chains and especially gaming and DeFi projects with intensive P2P activity. Most activity in this area comes from chains such as Polygon, BSC and Avalanche.
 
-However, Polkadot parachain activity in this sector is rising as well and that's the next ecosystem we're targetting (see Milestone 2 in this project). The first contact with the ecosystem will occur on the 1st Milestone through the deployment of our smart contracts in the MoonBeam chain (Polkadot's EVM compatible parachain preparing the ground for an easy adaptation for Polkadot's exclusive deployments.
+However, Polkadot parachain activity in this sector is rising as well and that's the next ecosystem we're targetting (see Milestone 2 in this project). The first contact with the ecosystem will occur on the 1st Milestone through the deployment of our smart contracts in the [MoonBeam](https://moonbeam.network/) chain (Polkadot's EVM compatible parachain preparing the ground for an easy adaptation for Polkadot's exclusive deployments.
 
 ## Team :busts_in_silhouette:
 
@@ -48,7 +48,7 @@ However, Polkadot parachain activity in this sector is rising as well and that's
 - **Telegram:** unrealS3mz
 
 ### Legal Structure
-This is a fully-open source project with a treasury funded only through gratns and donations. There's no legal structure and there was never a company incomporation.
+This is a fully-open source project with a treasury funded only through gratns and donations. There's no legal structure and there was never a company incorporation.
 
 ### Team's experience
 
