@@ -144,7 +144,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-- **Total Estimated Duration:** 6 months
+- **Total Estimated Duration:** 7 months
 - **Full-Time Equivalent (FTE):**  2
 - **Total Costs:** 36000 USD
 
@@ -152,7 +152,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Estimated duration:** 6 weeks
 - **FTE:**  2
-- **Costs:** 6,000 USD
+- **Costs:** 7200 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -171,7 +171,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Estimated Duration:** 6 weeks
 - **FTE:**  2
-- **Costs:** 6,000 USD
+- **Costs:** 7200 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -189,7 +189,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Estimated Duration:** 6 weeks
 - **FTE:**  2
-- **Costs:** 6,000 USD
+- **Costs:** 7200 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -208,7 +208,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 //New business roles, on-chain reporters ( notary)
 - **Estimated Duration:** 6 weeks
 - **FTE:**  2
-- **Costs:** 6,000 USD
+- **Costs:** 7200 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -226,7 +226,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Estimated Duration:** 6 weeks
 - **FTE:**  2
-- **Costs:** 8,000 USD
+- **Costs:** 7200 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
