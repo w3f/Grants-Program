@@ -9,7 +9,7 @@
 
 * **Project Name:** Delmonicos
 * **Team Name:** Lumena
-* **Payment Address:** DAI(ERC20) 0x8cbc9b6191c1bba1652d51ae73f7c15f485a1c72
+* **Payment Address:** DAI(ERC20) 0x8cbc9b6191c1bba1652d51ae73f7c15f485a1c72. Payment address for Milestone 3 : DAI(ERC20) 0x8cbc9b6191c1bba1652d51ae73f7c15f485a1c72
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique
 identifier during the program. Please keep them safe.*
