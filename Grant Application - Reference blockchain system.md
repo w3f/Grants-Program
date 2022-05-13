@@ -138,7 +138,7 @@ Everyone could mint a new token represent his new work based on any referred old
 - **Total Costs:** $20,000
 
 
-### Milestone 1 — Reference Token Design
+### Milestone 1 — Reference token standard
 
 - **Estimated duration:** 1 month
 - **FTE:**  1 developers and 1 technical researchers
@@ -153,7 +153,7 @@ Everyone could mint a new token represent his new work based on any referred old
 | 0e. | Article | We will publish an **article** that explains the token design of our reference system.
 
 
-### Milestone 2 — Interoperability & Composability Design
+### Milestone 2 — Achieve full interoperability and composability among referred works
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developers and 1 technical researchers
@@ -168,7 +168,7 @@ Everyone could mint a new token represent his new work based on any referred old
 | 0e. | Article | We will publish an **article** that explains the interoperability and composability design of our reference system.
 
 
-### Milestone 3 — Security & Privacy Design
+### Milestone 3 — Achieve security and privacy
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developers and 1 technical researcher
@@ -183,7 +183,7 @@ Everyone could mint a new token represent his new work based on any referred old
 | 0e. | Article | We will publish an **article** that explains the security and privacy design of our reference system.
 
 
-### Milestone 4 — Economic Model and Incentive Scheme Design
+### Milestone 4 — Design economic model and incentive scheme
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developers, 1 technical researcher, and 1 economic researcher
@@ -198,7 +198,7 @@ Everyone could mint a new token represent his new work based on any referred old
 | 0e. | Article | We will publish an **article** that explains the economic model and incentive scheme of our reference system.
 
 
-### Milestone 5 — DAO Community Management Design
+### Milestone 5 — Build DAO Community
 
 - **Estimated duration:** 1 month
 - **FTE:**  1 developer, 1 economic researcher, and 1 management researcher
@@ -213,7 +213,7 @@ Everyone could mint a new token represent his new work based on any referred old
 | 0e. | Article | We will publish an **article** that explains the DAO community and management of our reference system.
 
 
-### Milestone 6 — User Testing and Evaluation
+### Milestone 6 — User testing and evaluation
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developer, 1 technical researcher, 1 economic researcher, and 1 management researcher
