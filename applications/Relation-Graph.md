@@ -216,6 +216,7 @@ former product leader of top blockchain companies,
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will enhance inline documentation and create a tutorial of ACL,OGM and subgraph. |
 | 0c. | Testing Guide | We will add unit tests to cover all ACL,OGM and subgraph.|
+| 0e. | Article | We will publish an article that explains function and structure of Relation graph,and helping developers understand it.  |
 | 1. | wasm package | We will create a updated wasm package that can deployed as pallet,contains ACL,OGM and subgraph.|  
 
 ### Milestone 3 — Finish use case，scaffold and demo for Relation Graph (scaffold is a package of technique tools for building and using the relation graph easily)
