@@ -158,37 +158,16 @@ All our past moves are in Araki's Github, see there.
 
 - **Total Estimated Duration:** 6month(First section)
 - **Full-Time Equivalent (FTE):**  5
-- **Total Costs:** 600,000USD
+- **Total Costs:** 10,000USD
 
 ### Milestone 1 — Web Service Development
 
 - **Estimated duration:** 3 month
 - **FTE:** 3
-- **Costs:** 65,000 USD
+- **Costs:** 10,000 USD
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-
-
-### Milestone 2  — DMTP DAO making
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 5,000 USD
-...
-
-### Milestone 3  — Token Development(on Astar Network)
-
-- **Estimated Duration:** 2 month
-- **FTE:**  2
-- **Costs:** 35,000 USD
-...
-  
+First we create a bidirectional message protocol on Astar. The client side is already somewhat complete.
+The destination wallet address, recipient wallet address, and IPFS address will be inscribed on the chain, and the body of the message will be inscribed in the IPFS.
   
 ## Future Plans
 
