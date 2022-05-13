@@ -3,9 +3,9 @@
 
 - **Project Name:** Gafi Network - The Network of Game Finance
 - **Team Name:** Cryptoviet
-- **Home Site:** https://gafi.network/
+- **Wiki:** https://wiki.gafi.network/
 - **Payment Address:** 0x7fD4b72d3Bf681C2e80D6076D7997B21DEf45130 (USDT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
@@ -30,37 +30,38 @@
 ### Project Details
 
 
-![Gafi Network Architecture](https://github.com/cryptoviet/he-chain/blob/dev/HE-Chain%20Architecture.jpg)
+![Gafi Network Architecture](https://github.com/cryptoviet/he-chain-assets/blob/main/Gafi%20Network%20Architecture.jpg)
 
 
 - **Gafi Architecture**:
-
-  Two parts of the Gafi Network are Heroes and Empires. The Empires are inside the red rounded rectangle and the outside is the Heroes.
   
-  **Empires**:
+  **Inside Players**: Players have to join Gafi Pool to get the privileges. When they are in the Gafi Pool, they won't bother about the transaction fee but they can only make the limited of discounted transactions that are handled by Gafi-TX, there are three different pool services [Upfront](https://wiki.gafi.network/learn/upfront-pool), [Staking](https://wiki.gafi.network/learn/staking-pool) and [Sponsored](https://wiki.gafi.network/learn/sponsored-pool). Please visit Gafi Wiki to get more information about [Gafi Network Structure](https://wiki.gafi.network/learn/gafi-network-structure) and [Gafi Pool](https://wiki.gafi.network/learn/gafi-pool). The Gafi Pool will ban 'bad' players with the Autoban mechanism.
   
-  Players have to join Empires to get the privileges. When they are in the Empires, they won't bother about the transaction fee but they can only make the limited of transactions per minute that are handled by TX-Handler, and they will be frozen amount of token or charged the amount of fee based on the period of time they stay in the Empire Pool. The Empire Pool will also ban 'bad' players with the Autoban mechanism.
-  
-  **Heroes**:
-  
-  As heroes, players can do anything with no restrictions, but with the 'high' transaction fee. 
+  **Outside Player**: As a player outside Gafi Pool, you can do anything with no restrictions, but with the 'high' transaction fee. 
   
   
 - **Pallet structure**
 
   The project is broken down into following pallets:
 
-  proof-mapping: mapping Substrate (AccountId) address with EVM address (H160) by given signature.
+  **proof-address-mapping**: mapping Substrate (AccountId) address with EVM address (H160) by given signature.
 
-  pallet-option-pool: Manage players in the Empires by limiting the number of players, changing upfront every 'x' amount of time (x depends on the number of players staying in the pool and number of projects running on Gafi, x will be determined when testnet goes live). Ban players with bad activities followed by the DAO rules.
+  **upfront-pool**: Changing upfront every 'x' amount of time (x depends on the number of players staying in the pool and the number of projects running on Gafi, x will be determined when testnet goes live) to get the discount on the transaction fee.
   
-  pallet-staking-pool: Freeze the amount of token to reduce the transaction fee.
+  **staking-pool**: Freeze the amount of token to reduce the transaction fee.
+  
+  **sponsored-pool**: Provide the service to help the game-creator appeal to their users, the sponsored pool created by the game-creator to pay a part of the transaction fee when players deploy their smart contracts.
 
-  pallet-tx-handler: Manage player's transactions on the Empires, every minute or hour players can only make 'x' transactions. Reduce 'y' percentage of transaction fee. 'x' and 'y' will be determined by DAO.
+  **gafi-tx**: Manage player's transactions on the Gafi Pool, every minute or hour players can only make 'x' discounted transactions. Reduce 'y' percentage of transaction fee. 'x' and 'y' will be and should be determined by DAO.
+  
+  **game-creator**: With the purpose of rewarding the game's creator, pallet game-creator provides the following main functionality:
+    1. Game's creator claim the ownership of the contract by given transaction hash
+    2. Withdraw the transaction fee reward
+    3. Change the ownership
+  
+  **pallet-cache**: Store pallet data temporarily.
 
-  pallet-player: Handle player information likes id, name, friends...
-
-  pallet-evm: create an Ethereum compatible environment for deploying Solidity code.
+  **pallet-player**: Handle player information likes id, name, friends...
 
 
 - **DAO**
@@ -69,15 +70,15 @@
 
     1. Autoban mechanism
   
-     There are several rules of Empires that players must follow when they join the pool. These are ideas to keep the pool 'as clean as possible' such as ban/kick     AFK(away from keyboard) players, ban/kick players on the Spamming Blacklist.
+     There are several rules of Gafi Network that players must follow when they join the pool. These are ideas to keep the pool 'as clean as possible' such as ban/kick AFK(away from keyboard) players, ban/kick players on the Spamming Blacklist.
   
-    2. The Empire Pool fee
+    2. The Gafi Pool fee
   
-     Pool fee is another base idea to keep the pool clean, with a reasonable fee determined by DAO, the Empires Pool can prevent the network from malicious accounts. When many players join the pool, the total network fee charged by the pool can be significant to grow the ecosystem by granting the projects. 
+     Pool fee is another base idea to keep the pool clean, with a reasonable fee determined by DAO, the Gafi Pool can prevent the network from malicious accounts. When many players join the pool, the total network fee charged by the pool can be significant to grow the ecosystem by granting the projects. 
   
-    3. The number transaction limit of TX-Handler
+    3. The number discounted transaction limit of Gafi-TX
 
-     The idea of TX-Handler is to protect the network from the DDOS, also determining the right number is important because if the number is not appropriate, it's can drive away many goof projects for example. Currently, our Heroes & Empires only need a maximum of 10 TXs/minute but another good PvP game can require 30 TXs/minutes, at this point the limit number is 30 is reasonable for the Gafi Network.
+     The idea of Gafi-TX is to protect the network from the DDOS, also determining the right number is important because if the number is not appropriate, it's can drive away many good projects for example. Currently, our Heroes & Empires only need a maximum of 10 TXs/minute but another good PvP game can require 30 TXs/minutes, at this point the limit number is 30 is reasonable for the Gafi Network.
   
 Although these ideas would be different in blockchain, we must deploy Heroes & Empires on Gafi to determine those numbers.
 
@@ -168,13 +169,13 @@ Whitepaper: Coming soon
 
 ## Development Roadmap :nut_and_bolt:
 
-![Gafi Network Development Roadmap](https://github.com/cryptoviet/he-chain-assets/blob/main/HE-Chain%20Development%20Roadmap%20v2.jpg)
+![Gafi Network Development Roadmap session 2](https://github.com/cryptoviet/he-chain-assets/blob/main/Gafi%20Network%20Development%20Roadmap%20session%202.jpg)
 
 ### Overview
 
-- **Total Estimated Duration:** 7 months
+- **Total Estimated Duration:** 11.5 months
 - **Full-Time Equivalent (FTE):**  1.2 FTEs
-- **Total Costs:** 39,000 USDT
+- **Total Costs:** 59,000 USDT
 
 ### Milestone 1 — The Heroes & Empires
 
@@ -211,35 +212,63 @@ At this milestone, we build modules for Player, Empires. The requirements will f
 | 5. | Weights/Benchmarking | implement benchmarking for pallets to determine appropriate weights |
 
 
-### Milestone 2 — DAO + TX-Handler + Gafi Testnet
+### Milestone 2 — Sponsored-Pool + Gafi-TX + Pallet-Cache
 
-- **Estimated duration:** 3 month
+- **Estimated duration:** 3.5 months
 - **FTE:**  1.2
-- **Costs:** 19,000 USD
+- **Costs:** 20,000 USD
 
-In this milestone, we build modules DAO, TX-Handler, Gafi Testnet, the requirements will fall into acceptance criteria:
-+ Gafi Network Testnet launch with at least 5 nodes
-+ Build DAO to vote on-chain governance
-+ Determine the 'x' number of limit transactions per minute by Testnet and vote by on-chain governance
-+ TX-Handler manage the transaction limit with the 'x' above
-+ Determine the 'y' percentage to reduce transaction fee by Testnet and vote by on-chain governance
-+ TX-Handler reduce 'y' percentage with the number above
-+ Unittest
+In this milestone, the requirements will fall into acceptance criteria:
++ Gafi-TX manage the discounted transaction limit
++ Sponsored-Pool works
++ Pallet-Cache works
++ All dispatchable functions and public functions must have unittest
 + Code coverage > 80%
-+ Dispatchable functions must have comments
++ Module documentation and Wiki(optional)
 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | Apache 2.0|
-| 0b. | Documentation | We will comment on code, publish documents as text articles and videos to show users how to run Gafi Node, how Gafi on-chain governance works, why 'x' and 'y' are reasonable|
-| 0c. | Testing Guide | Every internal and external function must have the comment followed by a unittest, and the community will be rewarded for finding bugs |
+| 0b. | Documentation | Module documentation and Wiki(optional) |
+| 0c. | Testing Guide | Dispatable functions and public functions must have the comment followed by a unittest |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | This will merge with Documentation, mostly on SubSocial, Medium, and Twitter)
-| 1. | Substrate module: pallet_tx_handler | module to limit the transaction and reduce transaction fee|  
+| 0e. | Article | wiki.gafi.network and Medium |
+| 1. | Substrate module: pallet sponsored_pool | https://wiki.gafi.network/learn/sponsored-pool |  
+| 2. | Substrate module: pallet gafi-tx | https://wiki.gafi.network/learn/gafi-tx |  
+| 3. | Substrate module: pallet-cache | store runtime data temporarily |  
+| 4. | Weights/Benchmarking | implement benchmarking for pallets to determine appropriate weights  |
+| 5. | Demo | Demo new features in milestone 2 with guide article | 
+
+### Milestone 3 — DAO + Game-Creator + Gafi Testnet
+
+- **Estimated duration:** 4 months
+- **FTE:**  1.2
+- **Costs:** 19,000 USD
+
+In this milestone, the requirements will fall into acceptance criteria:
++ Gafi Network Testnet launch with at least 5 nodes
++ Build DAO to vote on-chain governance
++ Pallet Game-Creator works
++ Determine the 'x' number of limit discount transactions per minute by Testnet and vote by on-chain governance
++ Determine the 'y' percentage to reduce transaction fee by Testnet and vote by on-chain governance
++ Determine the 'z' percentage of the transaction fee to reward the game-creator
++ All dispatchable functions and public functions must have unittest
++ Code coverage > 80%
++ Module documentation and Wiki(optional)
+
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | Apache 2.0|
+| 0b. | Documentation | Module documentation and Wiki(optional) |
+| 0c. | Testing Guide | Dispatable functions and public functions must have the comment followed by a unittest |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | wiki.gafi.network and Medium |
+| 1. | Substrate module: pallet game-creator | https://wiki.gafi.network/learn/game-creator |  
 | 2. | Substrate module: pallet_dao | module to vote on-chain runtime data |  
 | 3. | Weights/Benchmarking | implement benchmarking for pallets to determine appropriate weights  |
-| 4. | End-user Test + Article/Tutorial | Testing as an end-user product along with articles/tutorials of how to use Gafi | 
+| 4. | Demo | Demo new features in milestone 3 with guide article | 
 
 
 ## Future Plans
