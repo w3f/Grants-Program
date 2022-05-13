@@ -157,7 +157,7 @@ All our past moves are in Araki's Github, see there.
 ### Overview
 
 - **Total Estimated Duration:** 6month(First section)
-- **Full-Time Equivalent (FTE):**  5
+- **Full-Time Equivalent (FTE):**  3
 - **Total Costs:** 10,000USD
 
 ### Milestone 1 — Web Service Development
@@ -166,8 +166,10 @@ All our past moves are in Araki's Github, see there.
 - **FTE:** 3
 - **Costs:** 10,000 USD
 
-First we create a bidirectional message protocol on Astar. The client side is already somewhat complete.
-The destination wallet address, recipient wallet address, and IPFS address will be inscribed on the chain, and the body of the message will be inscribed in the IPFS.
+Initially, we plan to develop a bidirectional message protocol on Astar.
+Since the front side is somewhat done, it is the blockchain side, but programmed to automatically list the destination wallet address, recipient wallet address, and IPFS address on the chain.
+The message body will be developed to be automatically stored in the IPFS.
+
   
 ## Future Plans
 
