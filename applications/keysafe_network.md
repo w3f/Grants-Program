@@ -136,30 +136,32 @@ The relevant [RFP is here](https://github.com/w3f/Grants-Program/blob/master/rfp
 
 ### Milestone 1 — Implement On-chain Modules
 
-* **Estimated duration:** 1.5 month
+* **Estimated duration:** 2 month
 * **FTE:**  3
-* **Costs:** 14,000USD
+* **Costs:** 15,000USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code, API, and a basic **tutorial** that explains how a user can use Keysafe as a key recovery tool. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests on both Node.js and Browser environment. |
-| 1. | Core Protocol | Implements the `nodeRegister` `userRegister` `userAuthentication` and `keyRecovery` APIs. |
-| 2. | Smart Contract | Implements and test for the smart contract used for node register and user register. |
-| 3. | Polkadot.js | Add in encryption/decryption functionality to `@polkadot/keyring` and `@polkadot/extension` so that the protocol can run without the needs to read the private key of users. |
+| 1. | License | Apache 2.0 |
+| 2. | Documentation | We will provide both **inline documentation** of the code, API, and a basic **tutorial** that explains how a user can use Keysafe as a key recovery tool. |
+| 3. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests on both Node.js and Browser environment. |
+| 4. | Core Protocol | Implements the `nodeRegister` `userRegister` `userAuthentication` and `keyRecovery` APIs in Node program. |
+| 5. | TEE Implementation | Implements the `nodeRegister` `userRegister` `userAuthentication` and `keyRecovery` APIs in TEE trusted program. |
+| 6. | Smart Contract | Implements and test for the smart contract used for node register and user register. |
+| 7. | Web Server | Provide meta-data management service for Keysafe users, the user can manage his keys and authentication methods |
+| 8. | Polkadot.js | Add in encryption/decryption functionality to `@polkadot/keyring` and `@polkadot/extension` so that the protocol can run without the needs to read the private key of users. |
 
-* **Estimated duration:** 1.5 month
+* **Estimated duration:** 1 month
 * **FTE:**  3
-* **Costs:** 13,000USD
+* **Costs:** 12,000USD
 
 | Number | Deliverable         | Specification                                                |
 | -----: | ------------------- | ------------------------------------------------------------ |
-|    0a. | License             | Apache 2.0                                                   |
-|    0b. | Documentation       | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a project can integrate the Keysafe Protocol into their project. |
-|    0c. | Testing Guide       | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests on both Node.js, Browser and Rust environment. |
-|     1. | Keysafe SDK    | Develop the Keysafe SDK and the corresponding Adapters, so that the projects in Polkadot ecosystem can integrate Keysafe to provide users with a secured private key backup and recovery function. |
-|     2. | Support mainstream authentication methods | Provide multiple authentication methods for user key recovery, such as Ethereum wallet, Polkadot wallet, email and other authentication methods. |
+|    1. | Documentation       | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a project can integrate the Keysafe Protocol into their project. |
+|    2. | Testing Guide       | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests on both Node.js, Browser and Rust environment. |
+|    3. | MPMC(Multi-Party-Multi-Cloud)  | Cooperation with multiple institutions, different institutions run Keysafe nodes on different cloud vendors. Decentralizing the Keysafe Network. |
+|    4. | Keysafe SDK    | Develop the Keysafe SDK and the corresponding Adapters, so that the projects in Polkadot ecosystem can integrate Keysafe to provide users with a secured private key backup and recovery function. |
+|    5. | Support mainstream authentication methods | Provide multiple authentication methods for user key recovery, such as Ethereum wallet, Polkadot wallet, email and other authentication methods. |
 
 ## Future Plans
 
