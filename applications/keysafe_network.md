@@ -5,8 +5,6 @@
 - **Payment Address:** 0x09C08f46d523822cC9D18A077e2e3BDE5BC07a0b (Ethereum (USDT)) 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up:
 
 This grant is for the RFP [Social Recovery Wallet](https://github.com/w3f/Grants-Program/blob/master/rfps/social-recovery-wallet.md)
@@ -24,6 +22,8 @@ We are thus inspired and encouraged by this initiatives and create Keysafe, a de
 Keysafe is a decentralized protocol for private key backup, retrieval, and access management. Keysafe allows users to register their keys with multiple authentications (SMS, email, etc.) and access their keys from anywhere in the world securely without carrying specific devices that store them.
 
 #### Our solution
+
+![architecture](https://raw.githubusercontent.com/keysafe-protocol/documents/main/network_structure.png)
 
 Keysafe Protocol uses Secure Multi-party Computation (MPC), Threshold BLS Signatures, and Trusted Execution Environment (TEE) technology to manage private keys and allows owners to access with a customized combination of Web2 third-party authentication services including SMS, email, Google Auth, and even another Web3 address.
 
