@@ -73,12 +73,12 @@ Not yet
 * **FTE:**  1
 * **Costs:** 10000 USD
 
-| Number | Deliverable      | Specification                                                                                                                              |
-|-------:|------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License          | MIT                                                                                                                                        |
-|    0b. | Documentation    | Simple documentation on how to use and how to test                                                                                         |
-|     1. | enable Unit test | providing a FFI make test echo listed on [substrate.dev](https://github.com/w3f/Grants-Program/blob/master/rfps/scale-codec-comparator.md) |  
-|     2. | github action    | auto test when  comparator commit code                                                                                                     |  
+| Number | Deliverable      | Specification                                                                                                                             |
+|-------:|------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License          | MIT                                                                                                                                       |
+|    0b. | Documentation    | Simple documentation on how to use and how to test                                                                                        |
+|     1. | enable Unit test | Providing a FFI make test all listed on [substrate.dev](https://github.com/w3f/Grants-Program/blob/master/rfps/scale-codec-comparator.md) |  
+|     2. | github action    | Auto test when comparator commit code                                                                                                     |  
 
 ### Milestone 2
 
@@ -91,7 +91,7 @@ Not yet
 |    0a. | License                | MIT                                                      |
 |    0b. | Documentation          | Simple documentation on how to use and how to test       |
 |     1. | GitHub badge           | Create a GitHub badge for SCALE feature complete libs    |
-|     2. | GitHub Ci ensure badge | libs are tested with github actions if they are released |
+|     2. | GitHub Ci ensure badge | Libs are tested with github actions if they are released |
 
 ## Future Plans
 
