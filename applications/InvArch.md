@@ -188,6 +188,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Milestone 1 — Implement IP Pallets & Standards
 
+* **Estimated duration:** 4 weeks
 * **FTE:**  2
 * **Costs:** $10,000 equivalent
 
@@ -208,6 +209,7 @@ Goal - Develop Substrate Pallets that fully realize Git-level composability for 
 
 ### Milestone 2 — Implement DEV Pallets & Standards
 
+* **Estimated duration:** 10 weeks
 * **FTE:**  3
 * **Costs:** $15,000 equivalent
 
