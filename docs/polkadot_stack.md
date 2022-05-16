@@ -79,7 +79,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Bridge UI | [Parity Bridges UI](https://github.com/paritytech/parity-bridges-ui), [Donut Interface (Steem <> Dot)](https://github.com/nutbox-dao/donut-interface) | |
 | Parachain/Crowdloan | [Parachains.Network](https://github.com/jhonalino/parachains.network), [PolkAuction](https://github.com/CrommVardek/polk-auction-ui) | |
 | Identicon | [PolkadotWebIdenticon](https://github.com/RidOne-technologies/polkadot-web-identicon), [Polkadot Angular IdentIcon](https://github.com/RidOne-technologies/polkadot-angular-identicon), [Bird Identicon](https://github.com/Noc2/Bird-Identicon)  |
-| Other | [KappaSigmaMu Fratority](https://github.com/KappaSigmaMu/ksm-app), [Quadratic Funding Webapp](https://github.com/OAK-Foundation/quadratic-funding-webapp), [Polkawatch](https://gitlab.com/polkawatch), [Bytepay](https://github.com/bytepayment/bytepay), [charging-management-platform](https://github.com/Delmonicos/charging-management-platform) | Portfolio Viewer like Zapper or Zerion
+| Other | [KappaSigmaMu Fratority](https://github.com/KappaSigmaMu/ksm-app), [Quadratic Funding Webapp](https://github.com/OAK-Foundation/quadratic-funding-webapp), [Polkawatch](https://gitlab.com/polkawatch), [Bytepay](https://github.com/bytepayment/bytepay), [charging-management-platform](https://github.com/Delmonicos/charging-management-platform), [subidentity-webapp](https://github.com/TDSoftware/subidentity-webapp) | Portfolio Viewer like Zapper or Zerion
 
 ### :wrench: Tools, APIs and Languages
 
