@@ -29,20 +29,15 @@ In this way, anyone could have equal opportunity and rights to participate in th
 
 ### Project Details
 
-We are going to do research on how to make online services and works in Web3 fully decentralized made by public, and for public. It means that public services and works should be developed and managed not only by any single entity like founders in private, which is centralized, but by everyone in public jointly so that anyone could have chance to make any contributions to any online services and works equally and freely. 
+In order to really achieve fully decentralized and incentive Web3, we plan to design a reference system on blockchain to enable permissionless and seamless collaboration for developing and improving online services via reference, track the reference relationships among different online works, and incentivize everyone to open and share their online work to the public.
 
-In order to do this we will research how to enable and incentive the founder to open and share its online service or work with others that allows others to contribute to it and build their new work based on it. Specifically, technically we need to design new composability and compatibility scheme to allow different works can interconnect and interoperate seamlessly so that old work can fully open and share its internal network and resources with the new work, and new work can freely change, improve and combine with the old work.
+Technically our reference system achieves full interconnectivity, interoperability, and composability among different works directly and seamlessly. By referring to others’ work they are based on, everyone can freely connect, change, and improve others’ work to build their new work.
 
-Secondly in order to protect the rights and interests of the founder opening and sharing his work, we need to use blockchain to confirm and record the relationship between new work and the old work it based on clearly, just like new block linking and confirming old work on blockchain.
+Nominally we also make a reference token standard that confirms, records and tracks reference relationships among different works immutable on blockchain to protect the rights and interests of the owners opening and sharing their work to others. 
 
-Furthermore, according to the relationship stored on blockchain, economically we need to track the earnings of the new work, and distribute its earnings to the old work the new work is based on fairly so that the owner of the old work can get corresponding return of opening and sharing his work from the earnings of the new work. Ideally the revenue of opening and sharing should not less than isolating and closing.
+Economically, in order to incentivize the owners to open and share their work with others and allow others build their new work based on it freely, we propose a revenue distribution scheme that earnings of the new work should be collected like purchase and investment, and distributed with all its referred work fairly. 
 
-Output:
-We want to make a reference system that records and reflects the reference relationship between the referred old works and the new works that are based on others’ old works. By referring to the old work, anyone can build new work based on any other’s work to create better online service. 
-
-In order to collect and tack the earnings of the new work, based on the reference system, we want to make a reference token standard that users and service providers can pay for the new work for usage, and investors can purchase the shares of the new work and get its earnings according to the shares they own.
-
-In order to incentive the opening of the old work, we want to make a revenue distribution scheme that new work will share its earnings with all its referred old work, and the return of opening and sharing should more than closure and monopoly.
+With our reference system, we expect that owners are willing to open and share their online services, so they could be developed and managed by different people to meet different needs, and users could choose and switch among them freely without limitation. According to the reference relationships, each contribution to the online services would be traced and rewarded to give contributors incentive while maintaining the opening and decentralization of Web3.
 
 ### Ecosystem Fit
 
@@ -73,6 +68,8 @@ Founder: Jieliang Yin, major in Master of Technology Innovation Management at Ca
 
 Supervisor: Dr.Shiping Chen, a senior principal research scientist in CSIRO Data61, Australia. He is also a conjoint professor with the University of New South Wales (UNSW) and an adjunct professor with University of Technology Sydney (UTS). He has been working on distributed systems for over 20 years with focus on performance and security. He has published 240+ research papers and technical reports in these areas. He is active in research communities through publishing papers, journal editorships and conference Chairs/PC members. He is participating in and contributing to IETF RFC on Blockchain Interoperability as one of key members in the working group. His current research interests include: distributed systems and blockchain. He is a Fellow of Institute of Engineering Technology (FIET) and a senior member of the IEEE (SMIEEE).
 
+Co-supervisor: Xiaotong Sun, PhD student at the Adam Smith Business School, University of Glasgow. Her research interests generally lie in the area of blockchain and crypto finance. She is particularly interested in Ethereum and Decentralized Finance (DeFi). Currently, she focuses on empirical evidence of centralization in blockchain.
+
 Other members will be confirmed after the application is approved.
 
 ### Contact
@@ -91,9 +88,13 @@ As for Jieliang Yin, by studying in both business and Information Technology maj
 
 ## Development Status :open_book:
 
-We have made an inital design on the standard token format of our proposed system as follows. More specific details are still planning now, and we will finish the design and start the development after the grant is given.
+**Definition**
+Our reference system is a smart contract standard on blockchain that records the reference relationship between new work and the old work it based on like file or program. By referring to the old work, anyone can create their new work by connecting, improving and changing the old work freely. The earnings of the new work will be tracked and shared with the referred old work based on their reference relationship. 
 
-**Token data standard:**
+
+We have made an inital design on the standard format of the token and smart contract of our proposed system as follows. More specific details are still planning now, and we will continue working to finish the design and development after the grant is given.
+
+**Pallets Token standard:**
 
 | Key | Value | Attribute | Operator |
 | --: | ----- | --------- | -------- |
@@ -102,32 +103,30 @@ We have made an inital design on the standard token format of our proposed syste
 | Creator  | _address | invariant | creator |
 | Reference | _tokenId | multiple | creator |
 | Content | name, symbol, tokenURI | customized | creator |
-| Shares | address: percent% | multiple | investor | 
-| Usage | Address: note | multiple | buyer | 
 | Transaction | Transaction_id | multiple | automatic |  
 
-Each token will represent the content and creator of the work especially its reference relationship with unique token id and version id. Each token could be purcahsed, invested and transferred via transactions.
+Each token will represent a work with unique token id and version id by recording its content and creator especially the reference relationship with other works. The earnings of the work like being purchased and invested will be recorded within the token, and distributed with all its referred tokens via transactions. 
 
-**Smart contract standard:**
+**ink! smart contract standard:**
 
 | Function | Input | Logic | Output |
 | -------: | ----- | ----- | ------ |
-| mint | address,reference,content,(pricing),(shares) | set 100% share to the creator by default | token id |
-| append | address,token id,reference,content  | Can’t modify original items |  |
-| transfer | address,token id | Change the ownership of one’s share | shares, transaction |
-| invest | address,token id,shares | Become new stakeholder or change shares | shares, transaction |
-| purchase | address,token id | Add usage record; pay to stakeholders and all referred tokens | usage,(price),transaction |
+| Mint | address,content,reference | Represent the new work and record the referring works of the new work | token_id |
+| Referred | address, token_id | Set the revenue distribution scheme when being referred by following works |
+| Append | address,token_id,reference,content  | Can’t modify original items |  |
+| Transfer | address,token_id | Change the ownership of one’s share | shares, transaction |
 
-Everyone could mint a new token represent his new work based on any referred old work. He can update the work by appending new inforamtion. The earnings come from the purchase of the token for usage, which will be distributed according to shares, and they could be freely transferred and invested.
+When creating a new work, a corresponding token will be minted automatically with unique token id to represent the new work and store all its referring works. The token also defines when it's referred by the following new tokens, how the earnings of the new work should be distributed with it.
 
 ## Development Roadmap :nut_and_bolt:
 
 **Expected deliverables:**
 
-1. A reference system coded in Solidity smart contract that records and reflects the reference relationship between the referred old works and the new works that are based on others’ old works. By referring to the old work, anyone can build new work based on any other’s work to create better online service. 
-2. A reference token standard like ERC that users and service providers can pay for the new work for usage, and investors can purchase the shares of the new work and get its earnings according to the shares they own.
-3. A revenue distribution scheme that new work will share its earnings with all its referred old work, and the return of opening and sharing should more than closure and monopoly.
+1. A **reference token standard** that records and reflects the nominal reference relationship between new work and its referred old work. When creating a new work, the corresponding new token will also be generated and attached where the reference relationship between the new work and its referred work will be added and stored. 
+2. A **reference system** that makes old work truly composable and interoperable with the new work. By referring to the old work, new work could be created by adding anything new or changing anywhere on the referred work while still connecting and sharing other parts of the referred work seamlessly. 
+3. A **revenue tracking and allocation system** that distributes the earnings of the new work with its referred old work according to their reference relationship. The revenue of any work including usage and investment will be distributed with all its referred old work, and all investors holding its shares.
 
+All programs will be developed in !ink on Pallets.
 
 **Milestones:**
 
@@ -146,11 +145,11 @@ Everyone could mint a new token represent his new work based on any referred old
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | We will design a new reference license standard for ourselves |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can create their own work, refer to others' work, and get the earnings of their work using the reference token in our reference system on chain. |
-| 0c. | Testing Guide | Core functions of the reference token system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of reference token system delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains the token design of our reference system.
+| 1a. | License | We will design a new reference license in our project, which records and reflects the reference relationship between the referred old works and the new works that are based on the old works. |
+| 1b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can create their own work, refer to others' work, and get the earnings of their work via the reference token in the reference system. |
+| 1c. | Testing Guide | Core functions of the reference token system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 1d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of reference token system delivered with this milestone. |
+| 1e. | Article | We will publish an **article** that explains the token design of our reference system.
 
 
 ### Milestone 2 — Achieve full interoperability and composability among referred works
@@ -161,11 +160,11 @@ Everyone could mint a new token represent his new work based on any referred old
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | We will design a new reference license standard for ourselves |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can freely change others' old work to build their new work based on them, and their new work can still connect to the referred old work seamlessly on our reference system. |
-| 0c. | Testing Guide | Core functions of the full interoperable and composable reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of interoperability and composability reference system delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains the interoperability and composability design of our reference system.
+| 2a. | License | We will design a new reference license among different works to allow them can connect, interoperate and compose with each other seamlessly and directly via reference. |
+| 2b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can freely change others' old work to build their new work based on them, and their new work can still connect to the referred old work seamlessly on our reference system. |
+| 2c. | Testing Guide | Core functions of the full interoperable and composable reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 2d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of interoperability and composability reference system delivered with this milestone. |
+| 2e. | Article | We will publish an **article** that explains the interoperability and composability design of our reference system.
 
 
 ### Milestone 3 — Achieve security and privacy
@@ -176,11 +175,11 @@ Everyone could mint a new token represent his new work based on any referred old
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | We will design a new reference license standard for ourselves |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the security of privacy could be fully protected against malicious attacks on our reference system. |
-| 0c. | Testing Guide | Core functions of the security and privacy of our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of security and privacy of the reference system delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains the security and privacy design of our reference system.
+| 3a. | License | We will design a new license to ensure the security and privacy among different works when they connect and combine with each other. |
+| 3b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the security of privacy could be fully protected against malicious attacks on our reference system. |
+| 3c. | Testing Guide | Core functions of the security and privacy of our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 3d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of security and privacy of the reference system delivered with this milestone. |
+| 3e. | Article | We will publish an **article** that explains the security and privacy design of our reference system.
 
 
 ### Milestone 4 — Design economic model and incentive scheme
@@ -191,11 +190,11 @@ Everyone could mint a new token represent his new work based on any referred old
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | We will design a new reference license standard for ourselves |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the earnings of the referred work could be collected, invested, and distributed based on references among different works and shares within each work proportionally on our reference system. |
-| 0c. | Testing Guide | Core functions of the economic model and incentive scheme of our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of the economic model and incentive scheme of our reference system delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains the economic model and incentive scheme of our reference system.
+| 4a. | License | We will design a new license where the way of distributing the earnings between new work and its referred work is clearly defined. The earnings of the new work will be tracked and distributed with its referred work, which will motivate the owner to choose to open and share his work rather than closure and monopoly. |
+| 4b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the earnings of the referred work could be collected, invested, and distributed based on references among different works and shares within each work proportionally on our reference system. |
+| 4c. | Testing Guide | Core functions of the economic model and incentive scheme of our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 4d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of the economic model and incentive scheme of our reference system delivered with this milestone. |
+| 4e. | Article | We will publish an **article** that explains the economic model and incentive scheme of our reference system.
 
 
 ### Milestone 5 — Build DAO Community
@@ -206,11 +205,11 @@ Everyone could mint a new token represent his new work based on any referred old
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | We will design a new reference license standard for ourselves |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can participant in our DAO community and contribute to the management of our reference system. |
-| 0c. | Testing Guide | Core functions of the DAO community and management our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of the DAO community and management of our reference system delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains the DAO community and management of our reference system.
+| 5a. | License | We will design a new license with the rules of building and managing the self-governing DAO and community of our reference system.  |
+| 5b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how users can participant in our DAO community and contribute to the management of our reference system. |
+| 5c. | Testing Guide | Core functions of the DAO community and management our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 5d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of the DAO community and management of our reference system delivered with this milestone. |
+| 5e. | Article | We will publish an **article** that explains the DAO community and management of our reference system.
 
 
 ### Milestone 6 — User testing and evaluation
@@ -221,15 +220,15 @@ Everyone could mint a new token represent his new work based on any referred old
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | We will design a new reference license standard for ourselves |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use our reference system. |
-| 0c. | Testing Guide | Core functions of our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of our reference system delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains the whole design, functionalities, and usage of our reference system like white paper.
+| 6a. | License | We will test and evaluate the reference licenses we design for the reference system to ensure its functionality and feasibility. |
+| 6b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use our reference system. |
+| 6c. | Testing Guide | Core functions of our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 6d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of our reference system delivered with this milestone. |
+| 6e. | Article | We will publish an **article** that explains the whole design, functionalities, and usage of our reference system like white paper.
 
 
 ## Future Plans
 
-We will invite all members in the commumity to give golden feedback and critiques of our work for improving our proposed solution further. 
+After receiving the grant, we will post our detailed research plan and weekly updates to the Web3 community regularly. Everyone in the community is welcome to join the research, make their contributions, and undertake any work. All valuable contributions will be counted and rewarded including the nomination of the research paper and shares of the realistic application.
 
 It would be better if we could also get your technical and communal support to improve and evaluate acceptance and feasibility of our proposed solution for target users and relevant stakeholders. We will also plan to promote our work in the market, and run it in a fully decentralized way via DAO. 
