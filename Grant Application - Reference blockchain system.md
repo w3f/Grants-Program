@@ -114,7 +114,7 @@ Each token will represent a work with unique token id and version id by recordin
 | Mint | address,content,reference | Represent the new work and record the referring works of the new work | token_id |
 | Referred | address, token_id | Set the revenue distribution scheme when being referred by following works |
 | Append | address,token_id,reference,content  | Can’t modify original items |  |
-| Transfer | address,token_id | Change the ownership of one’s share | shares, transaction |
+| Transfer | address,token_id | Change the ownership of one’s token | address, transaction |
 
 When creating a new work, a corresponding token will be minted automatically with unique token id to represent the new work and store all its referring works. The token also defines when it's referred by the following new tokens, how the earnings of the new work should be distributed with it.
 
@@ -124,7 +124,7 @@ When creating a new work, a corresponding token will be minted automatically wit
 
 1. A **reference token standard** that records and reflects the nominal reference relationship between new work and its referred old work. When creating a new work, the corresponding new token will also be generated and attached where the reference relationship between the new work and its referred work will be added and stored. 
 2. A **reference system** that makes old work truly composable and interoperable with the new work. By referring to the old work, new work could be created by adding anything new or changing anywhere on the referred work while still connecting and sharing other parts of the referred work seamlessly. 
-3. A **revenue tracking and allocation system** that distributes the earnings of the new work with its referred old work according to their reference relationship. The revenue of any work including usage and investment will be distributed with all its referred old work, and all investors holding its shares.
+3. A **revenue tracking and allocation system** that distributes the earnings of the new work with its referred old work according to their reference relationship. The revenue of any work including usage and investment will be distributed with all its referred old works.
 
 All programs will be developed in !ink on Pallets.
 
@@ -190,8 +190,9 @@ All programs will be developed in !ink on Pallets.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 4a. | License | We will design a new license where the way of distributing the earnings between new work and its referred work is clearly defined. The earnings of the new work will be tracked and distributed with its referred work, which will motivate the owner to choose to open and share his work rather than closure and monopoly. |
-| 4b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the earnings of the referred work could be collected, invested, and distributed based on references among different works and shares within each work proportionally on our reference system. |
+| 4a. | License | We will design a new license where the way of distributing the earnings between new work and its referred work is clearly defined. The earnings of the new work will be tracked and distributed with its referred work, which will motivate the owner to choose to open and 
+his work rather than closure and monopoly. |
+| 4b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the earnings of the referred work could be collected, invested, and distributed based on references among different works proportionally on our reference system. |
 | 4c. | Testing Guide | Core functions of the economic model and incentive scheme of our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 4d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of the economic model and incentive scheme of our reference system delivered with this milestone. |
 | 4e. | Article | We will publish an **article** that explains the economic model and incentive scheme of our reference system.
