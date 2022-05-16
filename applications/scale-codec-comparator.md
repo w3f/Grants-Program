@@ -21,7 +21,7 @@ I have already developed https://github.com/gmajor-encrypt/php-scale-codec
 ### Project Details
 
 1. Providing an FFI to Rust's reference implementation
-2. Tested with rust's FFI along with the scale lib https://github.com/w3f/Grants-Program/blob/master/rfps/scale-codec-comparator.md
+2. Tested with rust's FFI along with the scale lib https://docs.substrate.io/v3/advanced/scale-codec/#implementations
 3. Passing the test will release the scale code badge of the GitHub action
 4. Add Github action ci automatically test if these libs are updated
 
@@ -73,12 +73,12 @@ Not yet
 * **FTE:**  1
 * **Costs:** 10000 USD
 
-| Number | Deliverable      | Specification                                                                                                                             |
-|-------:|------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License          | MIT                                                                                                                                       |
-|    0b. | Documentation    | Simple documentation on how to use and how to test                                                                                        |
-|     1. | enable Unit test | Providing a FFI make test all listed on [substrate.dev](https://github.com/w3f/Grants-Program/blob/master/rfps/scale-codec-comparator.md) |  
-|     2. | github action    | Auto test when comparator commit code                                                                                                     |  
+| Number | Deliverable      | Specification                                                                                                               |
+|-------:|------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License          | MIT                                                                                                                         |
+|    0b. | Documentation    | Simple documentation on how to use and how to test                                                                          |
+|     1. | enable Unit test | Providing a FFI make test all listed on [substrate.dev](https://docs.substrate.io/v3/advanced/scale-codec/#implementations) |  
+|     2. | github action    | Auto test when comparator commit code                                                                                       |  
 
 ### Milestone 2
 
