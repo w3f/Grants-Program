@@ -97,7 +97,7 @@ https://github.com/rusty-crewmates/substrate-tutorials/issues/3
 
 - **Total Estimated Duration:** around 4 month
 - **Full-Time Equivalent (FTE):** 0,5 FTE
-- **Total Costs:** 37,000 USD
+- **Total Costs:** 25,000 USD
 
 ### Milestone 1 - Rework the repository architecture
 
@@ -150,34 +150,6 @@ Any Substrate developer will end up using those at some point.
 | 4. | Exercise `hooks` | We will add a pallet that will teach users how to add usefull hooks to a pallet |  
 | 5. | Exercise `imbalances` | We will add a pallet that will teach users about a recuring feature of Substrate's architecture, imbalance. They will understand its role and get familiar with the associated functions |  
 | 6. | Exercise `external_workers` | We will add a pallet that will teach users how to make use of external workers |
-
-### Milestone 3 - Videos
-
-- **Estimated duration:** 1 month 
-- **FTE:**  0,5
-- **Costs:** 12,000 USD
-
-While learning a new tech, having a more senior developer to talk to and learn from makes a huge difference. We cannot provide individual tutoring but we can record ourselves while doing the tutorials. We will try to highlight the important points to remember, cover some extra variations and usecases and more than anything verbalise the mental process we are going through while coding in Substrate. We believe it will have a major impact on the students' learning curve.  
-Those videos will be published in youtube and a link will be present for each exercise.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Creative Common |
-| 0b. | Documentation | Those videos are a form of documentation |
-| 0c. | Testing Guide | No testing required |
-| 0d. | Docker | No docker required |
-| 0e. | Article | There will be an introduction video explaining what are this playlist dedicated to |
-| 1. | Video `pallet testing` | A video of a senior Substrate dev doing the tutorial |  
-| 2. | Video `fungible token` | A video of a senior Substrate dev doing the tutorial |  
-| 3. | Video `nft` | A video of a senior Substrate dev doing the tutorial |  
-| 4. | Video `marketplace` | A video of a senior Substrate dev doing the tutorial |  
-| 5. | Video `runtime` | A video of a senior Substrate dev doing the tutorial |
-| 6. | Video `genesis_config` | A video of a senior Substrate dev doing the tutorial |  
-| 7. | Video `mocks` | A video of a senior Substrate dev doing the tutorial |  
-| 8. | Video `weight` | A video of a senior Substrate dev doing the tutorial |  
-| 9. | Video `hooks` | A video of a senior Substrate dev doing the tutorial |  
-| 10. | Video `imbalances` | A video of a senior Substrate dev doing the tutorial |  
-| 11. | Video `external_workers` | A video of a senior Substrate dev doing the tutorial |
 
 ## Future Plans
 
