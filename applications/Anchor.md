@@ -55,21 +55,21 @@
   
 1. setAnchor
    The method of setting and updating Anchor, the implementation logic is as follows:
-   ![set_anchor.png](http://android.im/anchor/set_anchor_2.png)
-   Parameters of 1.0.0-dev   ``` key: Vec<u8>,raw: Vec<u8>,protocol: Vec<u8> ```
-   Parameters of 2.0.0-dev   ``` key: Vec<u8>,raw: Vec<u8>,protocol: Vec<u8> ```
+   ![set_anchor.png](http://android.im/anchor/set_anchor_3.png)
+   - Parameters of 1.0.0-dev   ``` key: Vec<u8>,raw: Vec<u8>,protocol: Vec<u8> ```
+   - Parameters of 2.0.0-dev   ``` key: Vec<u8>,raw: Vec<u8>,protocol: Vec<u8> ```
 
 2. sellAnchor
     Set and update Anchor to the state of sale, the implementation logic is as follows:
-    ![sell_anchor.png](http://android.im/anchor/sell_anchor_2.png)
-    Parameters of 1.0.0-dev   ``` key: Vec<u8>, cost: u32 ```
-    Parameters of 2.0.0-dev   ``` key: Vec<u8>, cost: u32 , target : T::AccountId ```
+    ![sell_anchor.png](http://android.im/anchor/sell_anchor_3.png)
+    - Parameters of 1.0.0-dev   ``` key: Vec<u8>, cost: u32 ```
+    - Parameters of 2.0.0-dev   ``` key: Vec<u8>, cost: u32 , target : T::AccountId ```
 
 3. buyAnchor
     The purchase of Anchor is in the state of sale, and the implementation logic is as follows:
     ![buy_anchor.png](http://android.im/anchor/buy_anchor_2.png)
-    Parameters of 1.0.0-dev  ``` key: Vec<u8> ```
-    Parameters of 2.0.0-dev  ``` key: Vec<u8> ```
+    - Parameters of 1.0.0-dev  ``` key: Vec<u8> ```
+    - Parameters of 2.0.0-dev  ``` key: Vec<u8> ```
 
 - Two StorageMaps to maintain the state of all Anchor. This upgrade mainly link the Anchor history by adding data:
   
@@ -162,7 +162,7 @@ Personal development experience is mainly concentrated in the non-blockchain , b
 | 1b. | Pallet Anchor: sellAnchor| Set the Anchor on-sale status, you can specify the account |  
 | 1c. | Pallet Anchor: buyAnchor | Purchase the specified Anchor |  
 
-### Milestone 2 Example — Anchor Chain Application ( cApp ) Demo
+### Milestone 2  — Anchor cApp ( on-chain Application ) Blog Demo
 
 - **Estimated Duration:** 1 month
 - **FTE:**  1
@@ -189,7 +189,7 @@ Please include here
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 
 - What work has been done so far?  
-Anchor v1 deployed. 
+Anchor v1 deployed.
 Network entry : [wss://network.metanchor.net](wss://network.metanchor.net).
 Demo link : [http://demo.metanchor.net](http://demo.metanchor.net/).
 You can run the basic cApp 'blog' by searching 'blog' on http://demo.metanchor.net/.
