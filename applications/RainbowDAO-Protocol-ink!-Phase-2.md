@@ -363,8 +363,8 @@ In this milestone, we mainly completed the document design, UI design, smart con
 |    0c. | Testing Guide                  | Core functions will be  covered by unit tests to ensure. |
 |    0d. | Docker                         | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 |    0e. | Article                        | We will publish an article in our medium introducing the various functions of the DAO Multi-Signature Committee System. |
-|     1. | UI picture | We will provide UI design pictures of this DAO tool product. |
-|     2. | Frontend files | We will provide front-end files and deployment tutorials for this DAO tool product. |
+|     1. | wireframes | We will provide wireframes  of this DAO Multi-Signature Committee System,We hope to fully demonstrate the functional logic of this product through wireframes. |
+|     2. | Frontend files | We will provide front-end files and deployment tutorials for this DAO Multi-Signature Committee System.The front-end file(s) will interact with ink! smart contracts to make DAO Multi-signature Committee System complete, including the creation of multi-signature governance committee, members managing the whole selection process and the application of vault capital proposal. We will also add the detailed front-end deployment tutorials to let developers conveniently deploy the file(s) to ultimately make the interaction with Ink! smart contracts possible.  |
 |     3. | ink! Contracts: | We will provide the complete ink! smart contracts of this DAO tool product, covering the main product logic according to the logical architecture diagram, which is also the main work of this milestone. |
 |     4. | demo video | We will provide a demo video of this DAO tool product, showing its basic functions in the form of video. |
 
@@ -387,8 +387,8 @@ In this milestone, we mainly completed the document design, UI design, smart con
 |    0c. | Testing Guide                  | Core functions will be  covered by unit tests to ensure. |
 |    0d. | Docker                         | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 |    0e. | Article                        | We will publish an article in our medium introducing the various functions of the DAO NFT Bank System. |
-|     1. | UI picture | We will provide UI design pictures of this DAO tool product. |
-|     2. | Frontend files | We will provide front-end files and deployment tutorials for this DAO tool product. |
+|     1. | wireframes | We will provide wireframes  of this  DAO NFT Bank System,  We hope to fully demonstrate the functional logic of this product through wireframes. |
+|     2. | Frontend files | We will provide front-end files and deployment tutorials for this DAO NFT Bank System.The front-end file(s) will interact with ink! smart contracts to make DAO NFT Bank System complete, including initiating DAO NFT Bank, creating NFTs credentials, transfering and staking NFT credentials to loan.  We will also add the detailed front-end deployment tutorials to let developers conveniently deploy the file(s) to ultimately make the interaction with Ink! smart contracts possible. |
 |     3. | ink! Contracts: | We will provide the complete ink! smart contracts of this DAO tool product, covering the main product logic according to the logical architecture diagram, which is also the main work of this milestone. |
 |     4. | demo video | We will provide a demo video of this DAO tool product, showing its basic functions in the form of video. |
 
