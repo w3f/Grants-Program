@@ -1,4 +1,4 @@
-                                                                        # W3F Grant Proposal
+# W3F Grant Proposal
 
 * **Project Name:** SCALE Codec Comparator
 * **Team Name:** [gmajor](https://github.com/gmajor-encrypt)
