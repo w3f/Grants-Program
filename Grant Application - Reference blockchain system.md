@@ -192,7 +192,7 @@ All programs will be developed in !ink on Pallets.
 | -----: | ----------- | ------------- |
 | 4a. | License | We will design a new license where the way of distributing the earnings between new work and its referred work is clearly defined. The earnings of the new work will be tracked and distributed with its referred work, which will motivate the owner to choose to open and 
 his work rather than closure and monopoly. |
-| 4b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the earnings of the referred work could be collected, invested, and distributed based on references among different works proportionally on our reference system. |
+| 4b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the earnings of the referred work could be collected and distributed based on references among different works proportionally on our reference system. |
 | 4c. | Testing Guide | Core functions of the economic model and incentive scheme of our reference system will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 4d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality of the economic model and incentive scheme of our reference system delivered with this milestone. |
 | 4e. | Article | We will publish an **article** that explains the economic model and incentive scheme of our reference system.
