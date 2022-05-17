@@ -142,14 +142,15 @@ The relevant [RFP is here](https://github.com/w3f/Grants-Program/blob/master/rfp
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | License | Apache 2.0 |
-| 2. | Documentation | We will provide both **inline documentation** of the code, API, and a basic **tutorial** that explains how a user can use Keysafe as a key recovery tool. |
-| 3. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests on both Node.js and Browser environment. |
-| 4. | Core Protocol | Implements the `nodeRegister` `userRegister` `userAuthentication` and `keyRecovery` APIs in Node program. |
-| 5. | TEE Implementation | Implements the `nodeRegister` `userRegister` `userAuthentication` and `keyRecovery` APIs in TEE trusted program. |
-| 6. | Smart Contract | Implements and test for the smart contract used for node register and user register. |
-| 7. | Web Server | Provide meta-data management service for Keysafe users, the user can manage his keys and authentication methods |
-| 8. | Polkadot.js | Add in encryption/decryption functionality to `@polkadot/keyring` and `@polkadot/extension` so that the protocol can run without the needs to read the private key of users. |
+|    0a. | License             | Apache 2.0                                                   |
+|    0b. | Documentation       | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use Keysafe. |
+|    0c. | Testing Guide       | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+|    0d. | Docker     | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Core Protocol | Implements the `nodeRegister` `userRegister` `userAuthentication` and `keyRecovery` APIs in Node program. |
+| 2. | TEE Implementation | Implements the `nodeRegister` `userRegister` `userAuthentication` and `keyRecovery` APIs in TEE trusted program. |
+| 3. | Smart Contract | Implements and test for the smart contract used for node register and user register. |
+| 4. | Web Server | Provide meta-data management service for Keysafe users, the user can manage his keys and authentication methods |
+| 5. | Polkadot.js | Add in encryption/decryption functionality to `@polkadot/keyring` and `@polkadot/extension` so that the protocol can run without the needs to read the private key of users. |
 
 * **Estimated duration:** 1 month
 * **FTE:**  3
@@ -157,11 +158,13 @@ The relevant [RFP is here](https://github.com/w3f/Grants-Program/blob/master/rfp
 
 | Number | Deliverable         | Specification                                                |
 | -----: | ------------------- | ------------------------------------------------------------ |
-|    1. | Documentation       | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a project can integrate the Keysafe Protocol into their project. |
-|    2. | Testing Guide       | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests on both Node.js, Browser and Rust environment. |
-|    3. | MPMC(Multi-Party-Multi-Cloud)  | Cooperation with multiple institutions, different institutions run Keysafe nodes on different cloud vendors. Decentralizing the Keysafe Network. |
-|    4. | Keysafe SDK    | Develop the Keysafe SDK and the corresponding Adapters, so that the projects in Polkadot ecosystem can integrate Keysafe to provide users with a secured private key backup and recovery function. |
-|    5. | Support mainstream authentication methods | Provide multiple authentication methods for user key recovery, such as Ethereum wallet, Polkadot wallet, email and other authentication methods. |
+|    0a. | License             | Apache 2.0                                                   |
+|    0b. | Documentation       | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a project can integrate the Keysafe Protocol into their project. |
+|    0c. | Testing Guide       | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+|    0d. | Docker     | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+|    1. | MPMC(Multi-Party-Multi-Cloud)  | Cooperation with multiple institutions, different institutions run Keysafe nodes on different cloud vendors. Decentralizing the Keysafe Network. |
+|    2. | Keysafe SDK    | Develop the Keysafe SDK and the corresponding Adapters, so that the projects in Polkadot ecosystem can integrate Keysafe to provide users with a secured private key backup and recovery function. |
+|    3. | Support mainstream authentication methods | Provide multiple authentication methods for user key recovery, such as Ethereum wallet, Polkadot wallet, email and other authentication methods. |
 
 ## Future Plans
 
