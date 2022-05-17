@@ -17,7 +17,7 @@
 
 - Anchor has currently developed to version "1.0.0-dev" ([Anchor github](https://github.com/ff13dfly/Anchor)). Dev network is deployed, the websocket link is wss://network.metanchor.net.
 
-- This apply is for the improvement of Anchor. There are two main functions, one is to connect the history of Anchor, and the other is to sell Anchor to specified account.
+- This appling is for the improvement of Anchor. There are two main functions, one is to connect the history of Anchor, and the other is to sell Anchor to specified account.
 
 - Video about Anchor, main function included.
   
@@ -89,19 +89,19 @@ What sets this project apart is the introduction of a pure on-chain application 
 
 - Simple NS service that can quickly calibrate the content on the chain.
 - On-chain APP development decoupled from assets simplifies access to blockchain data.
-- Free customized cApp development
+- Free customized cApp development.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Zhongqiang Fu, individual develper.
+- Zhongqiang Fu, individual developer.
 
 ### Contact
 
 - **Contact Name:** Zhongqiang Fu
 - **Contact Email:** ff13dfly@163.com
-- **Website:** https://github.com/ff13dfly/anchor
+- **Website:** https://github.com/ff13dfly/Anchor
 
 ### Legal Structure
 
@@ -116,7 +116,7 @@ Personal development experience is mainly concentrated in the non-blockchain , b
 
 - Anchor, Substrate-based key-value system.
   
-- vExplorer, Anchor web explorer.
+- vExplorer, Anchor web explorer , can decode special data.
 
 - cApp, cApp demos。
 
@@ -136,6 +136,8 @@ Personal development experience is mainly concentrated in the non-blockchain , b
 
 - Anchor version '1.0.0-dev' : https://github.com/ff13dfly/Anchor
 - Anchor dev network websocket link : wss://network.metanchor.net
+- Anchor explorer : https://github.com/ff13dfly/vExplorer
+- Anchor cApp demo : https://github.com/ff13dfly/cApp
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -156,9 +158,9 @@ Personal development experience is mainly concentrated in the non-blockchain , b
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Event Post Action Deployment guide, Docker and Docker compose setup documentation, Openwhisk Setup Documentation, Readme file |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 1a. | Pallet Anchor: setAnchor | A function to set the data of the anchor and connect the history of the anchor |
-| 1b. | Pallet Anchor: sellAnchor| Set the anchor to the function of sales status, you can specify the sales account |  
-| 1c. | Pallet Anchor: buyAnchor | Purchase the specified anchor function |  
+| 1a. | Pallet Anchor: setAnchor | Set the data of the Anchor and connect the history of the Anchor |
+| 1b. | Pallet Anchor: sellAnchor| Set the Anchor on-sale status, you can specify the account |  
+| 1c. | Pallet Anchor: buyAnchor | Purchase the specified Anchor |  
 
 ### Milestone 2 Example — Anchor Chain Application ( cApp ) Demo
 
@@ -171,7 +173,7 @@ Personal development experience is mainly concentrated in the non-blockchain , b
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Kafka and Zookeeper Deployment guide, wskdeploy guide, Readme file |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |  
-| 1a. | cApp : blog | The cApp of blog based on anchor can be browsed for free and written for a fee |
+| 1a. | cApp : blog | Normal blog application based on Anchor, coded just by Javascript. |
 
 
 ## Future Plans
