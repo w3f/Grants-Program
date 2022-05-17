@@ -103,7 +103,8 @@ Goal - Implement a pallet that allows chains to calculate transaction fees used 
 | 0d. | Docker | We will provide a Dockerfile(s) to run a test node in order to test that our pallet functions correctly. |
 | 1. | Calculate Transaction Fees | Inside our pallet, we will create a method that calculates the transaction fees over a period of x blocks. For the fee-calculation, we will be using an off-chain worker to index the transaction fees on a per-block basis and store that calculation in off-chain storage. |  
 | 2. | Send to Sequester | Implement a method that will retrieve the sum of transaction fees from offchain-storage and will send a percentage (a configurable variable) of them to Sequester's chain via XCM every x blocks (also a configurable variable). This transfer process will be automated so that no manual transfer will be needed by the parachain through governance. This method will also handle resetting the proper off-chain variables. |  
-| 3. | Article/Tutorial | We will provide a full tutorial outlining how to add the pallet to your chain. This will be added to the wiki of the sequester website.  We will also provide instructions on benchmarking via Polkadot.js.
+| 3. | Article/Tutorial | We will provide a full tutorial outlining how to add the pallet to your chain. This will be added to the wiki of the sequester website.
+| 4. | Weight estimation | We will provide reasonable weight estimations, e.g., using benchmarking. |
 
 ## Future Plans
 
