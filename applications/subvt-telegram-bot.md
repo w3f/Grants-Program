@@ -5,6 +5,31 @@
 - **Payment Address:** `bc1qxjy7sw0ffvpq86t6hj3mmqhnfz2hxt6pk7zdz0` (BTC)
 - **Level:** 🐣 1
 
+---
+
+#### 📣 _10th of May, 2022 Development Update_
+
+Despite the initial plan to upgrade the existing 1KV Telegram Bot, SubVT Telegram Bot has been rewritten from scratch in Rust and is fully integrated with the [SubVT Backend](https://github.com/helikon-labs/subvt-backend). You may find the Telegram bot [crate](https://github.com/helikon-labs/subvt-backend/tree/development/subvt-telegram-bot) in the SubVT Backend repository.
+
+Release and submission date for the bot including all milestones is the **19th of May 2022**. It's going to be an overdelivery with the following additional features on top of the complete initial promises:
+
+- Extra commands:
+  - `/referenda`: Lists the open on-chain referenda for the network, and the user can click on one of them to view the contextual information fetched from Polkassembly, and the information also shows the votes of the validators on the chat for the selected referendum.
+  - `/nfts`: Displays a paged list of the NFTs on the stash account of a selected validator. User can then select an NFT and get redirected to its web URL. This command uses the [sub.id](https://sub.id) API.
+  - `/networkstatus`: This command was included under Future Plans in the initial proposal. It is implemented and is going to be available on the release.
+  - `/contact`: Lets the user to post bug reports and feature requests directly from the bot to the dev team.
+  - `/summary`: Summary information of all the validators on the chat. Useful to get an overall view of the validators such as which ones are active, which ones are active next session, their nominator count and active/inactive nomination amounts etc.
+- Extra notifications when:
+  - A validator is going to be active/inactive next session (early notification for possible preparation or checks).
+  - A validator has outstanding payouts.
+  - A validator votes for a referendum.
+  - There's a new referendum open for vote.
+  - Referendum passed / not passed / cancelled.
+  - There's a new democracy proposal.
+  - A validator has delegated or undelegated its votes.
+
+---
+
 ## Project Overview :page_facing_up:
 
 ### Overview
