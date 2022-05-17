@@ -1,6 +1,6 @@
 # W3F Grant Proposal
 
-* **Project Name:** The InvArch - INV4 Frame : IP Assets, Licensings, & Finance for the Substate ecosystem.
+* **Project Name:** The InvArch - INV4 Frame : IP Assets, Licensings, & CLI tool for the Substate ecosystem.
 * **Team Name:** InvArch Network
 * **aUSD Payment Address:** 25aeg1bNLXaYm526R7cXfQNtpEvnv9S23eR17AeDtm5BD7Ce (PLEASE NOTE CHANGE)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -205,11 +205,9 @@ Goal - Develop Substrate Pallets that fully realize Git-level composability for 
 | 2b. | Pallet_ipf | Complete the development of [pallet_ipf](https://github.com/InvArch/InvArch-Pallet-Library/tree/main/ipt) and realize the IP Token Standard. |
 | 3. | Article | 	We will write an **article** that explains the work done as part of the grant. |
 
-
-
 ### Milestone 2 — Implement DEV Pallets & Standards
 
-* **Estimated duration:** 10 weeks
+* **Estimated duration:** 12 weeks
 * **FTE:**  3
 * **Costs:** $15,000 equivalent
 
@@ -223,17 +221,18 @@ Goal - Develop and deliver the DEV Pallets & Standards for the InvArch Chain/Inv
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 1a. | Pallet_ipl | complete the development of [pallet_ipl](https://github.com/InvArch/InvArch-Frames/tree/main/INV4/pallet-ipl) and copyright & license structuring mechanism. |
 | 1b. | Pallet_ipt | Complete the development of [pallet_ipt](https://github.com/InvArch/InvArch-Frames/tree/main/INV4/pallet-ipt) and realize the refungible & multi-layer governance mechanisms. |
-| 2. | Brainstorm Testnet | We will deploy the Brainstorm testnet (solochain) where INV4 FRAME features will be available for anyone to test for free |
+| 2. | INV4-Git middleware | We will release a middleware tool for managing INV4 assets using the standard git CLI commands transparently. |
 | 3. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video walk through demonstrating the INV4 protocol |
 
 ## Future Plans
 
+* Launch the InvArchitects Assemble Program, the builders program of the InvArch Network.
 * Finish Development on the On-Chain Innovation Funding (OCIF) & Cross-Chain Authentication (XCA) protocols.
 * Maintain the Brainstorm Testnet, launch the Tinkernet Parachain on Kusama, & deploy the InvArch Network on Polkadot.
 
-1. Launch the InvArchitects Assemble Program, the builders program of the InvArch Network.
-2. GitArch - Decentralized, Incentivized, Open-Source On-Chain Repository Platform powered with Git.
-3. Tinkerspace - A VR Sandbox for experiementing, collaboration, simulated development, & connecting with IP funding.
+1. GitArch - Decentralized, Incentivized, Open-Source On-Chain Repository Platform powered using INV4-Git.
+2. Tinkerspace - A VR Sandbox for experimenting, collaborating, & simulating development using INV4 Assets.
+3. xcINV4 Module - Upgrade the INV4 protocol with enhancements made possible due with XCA for all Parachains to enjoy.
 
 ## Additional Information :heavy_plus_sign:
 
