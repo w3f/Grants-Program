@@ -484,3 +484,4 @@
 | [gmajor](https://github.com/gmajor-encrypt) | SCALE Codec Comparator | [GitHub](https://github.com/gmajor-encrypt) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Rusty Crewmates](http://rustycrewmates.com/) | Substrate Tutorials | [GitHub](https://github.com/rusty-crewmates/substrate-tutorials) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Sequester](https://github.com/SequesterChain) | A Common-Good Carbon Sink on Polkadot | [GitHub](https://github.com/SequesterChain/pallets) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Keysafe Network](https://github.com/keysafe-protocol) | A decentralized protocol for private key custody and crypto asset management | [GitHub](https://github.com/keysafe-protocol) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
