@@ -87,7 +87,7 @@ Data struct of 2.0.0-dev : ```Vec<u8> -> (T::AccountId, u32, T::AccountId)```
 
 What sets this project apart is the introduction of a pure on-chain application (cApp), a simplified economic model.
 
-- Simple NS service that can quickly calibrate the content on the chain.
+- Simple Name Service that can quickly locate the content on the chain.
 - On-chain APP development decoupled from assets simplifies access to blockchain data.
 - Free customized cApp development.
 
