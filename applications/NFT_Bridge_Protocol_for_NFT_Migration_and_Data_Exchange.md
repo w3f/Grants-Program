@@ -100,9 +100,9 @@ entrepreneurship. Worked on the web3 features and the backend of the relay.
 
 * **Total Estimated Duration:** 12 months
 * **Full-time equivalent (FTE):** 5 FTE
-**Total Work Days:** 222 days
-**Cost per work day:** £300
-**Total Costs:** £66,600 (89479.10 USD/DAI)
+* **Total Work Days:** 222 days
+* **Cost per work day:** £300
+* **Total Costs:** £66,600 (89479.10 USD/DAI)
 
 ### Milestone 1 — Desirable Protocol Features (COMPLETED)
 * **Estimated Duration:** ~2 months
