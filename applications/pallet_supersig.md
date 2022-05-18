@@ -19,9 +19,9 @@ Extending the very-well-used multisig to have features suitable to manage more f
 
 This is Decentration's first grant proposal to Web3. We view this simple, suitable and potentially pervasivaely used pallet as a great opportunity to develop an ongoing relationship with Web3 Foundation, given that we have shared and aligned interests.
 
-These pallets improvements have already created a lot of interested feedback from people in the community and on twitter, so we believe its a valuable use of resources. 
+These pallets improvements have already created a lot of interest and feedback from people in the community and on twitter, so we believe its a valuable use of resources. 
 
-We also believe in building things people need rather over-engineering without validation, so this simple pallet is an example of this. 
+We also believe in building things people need rather over-engineering without validation. The simplicity of this pallet is a great example of this. 
 
 
 ### Overview
@@ -30,7 +30,7 @@ We also believe in building things people need rather over-engineering without v
 - The first version lets you add and remove members, and has simpleMajority voting for all calls. 
 - Edgeware and Kabocha networks will use this, but we believe all chains will benefit from it. 
 - The pallet will be unit tested and benchmarked.
-- Our team is interested in this as we are building out "DGov" (decentralised governance) functionality for Kabocha and Edgeware, "Pallet Supersig" is but one of the multiple pallets we are building, which aims to benefit substrate chains. Our focus is on making Kabocha a grassroots substrate chain that benefits the wider substrate community. 
+- Our team is interested in this as we are building out "DGov" (decentralised governance) functionality for Kabocha and Edgeware. "Pallet Supersig" is but one of the multiple pallets we are building, which aims to benefit substrate chains. Our focus is on making Kabocha a grassroots substrate chain that benefits the wider substrate community. 
 
 ### Project Details
 
@@ -47,7 +47,8 @@ Or [here](https://github.com/rusty-crewmates/pallet_dorg/blob/e702f1a1b3fc5361dc
   - Maintaining and upgrading [Substrate Recipes](https://trello.com/c/YPOPV5U8) for the benefit of the Substrate community. 
   
 - What your project is _not_ or will _not_ provide or implement
-  - In this grant proposal we are focussing on the first minimimal viable version of the pallet, which will have fixed simpleMajority for all decisions, and add/remove member functionality. We envisage many directions this can go and many features to improve it, but will stick to this simple implementation in the MVP. We will not be adapting the polkadot-js-ui in this milestone, but we do envisage visualising members in the Accounts and Address Book section would be very useful. 
+  - In this grant proposal we are focussing on the first minimimal viable version of the pallet, where threshold is enumerated to various options including simple and superMajority; and add/remove member functionality. We envisage many directions this can go and many features to improve it, but will stick to this simple implementation in the MVP. We also (in the second milestone) be adapting the polkadot-js-ui, as we do envisage visualising members in the Accounts and Address Book section would be very useful. 
+  - We wont be creating a brand new UI, but this may be part of another proposal which will encompass various pallets we are working on. 
 
 ### Ecosystem Fit
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
@@ -67,7 +68,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 ### Team members
 
 - *Name of team leader:* Ramsey Ajram
-- *Names of team members:* Timothée Delabrouille, Nathan Gardet
+- *Names of team members:* Timothée Delabrouille, Nathan Gardet, Jan Kraus, Eljo Prfiti 
 
 ### Contact
 
@@ -91,7 +92,7 @@ Nathan Gardet-Derc (erudyx) - Substrate / Rust Engineer, contributor to Edgeware
 
 Jan Kraus - Edgeware and Kabocha Full stack deveveloper - Javascript / Typescript / React / Node.js / Next.js / Gatsby / Ruby on Rails
 
-Elio - Substrate Engineer - Upgraded Substrate Recipes... https://wiki.kabocha.network/recipes
+Elio - Substrate Engineer - Edgeware and Kabocha - Upgraded Substrate Recipes... https://wiki.kabocha.network/recipes
 
 
 ### Team Code Repos
@@ -185,7 +186,10 @@ pub fn remove_call(
 
 **Milestone 2** will make the Supersig as visible of an experience within the polkadot js UI as Multisig, The PR will be made, and if there is a blocker, then the apps.decentration.org fork will house the feature. 
 
-- Polkadot JS UI will be forked and adapted to show the Supersig IF the chain has the pallet installed. 
+- Polkadot JS UI will be forked and adapted to show the Supersig IF the chain has the pallet installed.
+
+**Milestone 3** Will get feedback and make some improvements. One improvement is adding a "Super Beneficiary" option that allows a threshold of 2/n only if the Super Beneficiary is involved in the transaction. Else the transactio will default to a superMajority. 
+
 
 
 - include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
@@ -199,19 +203,25 @@ pub fn remove_call(
 
 - **Total Estimated Duration:** 5 to 7 weeks
 - **Full-Time Equivalent (FTE):**  2
-- **Total Costs:** USD 21,000
+- **Total Costs:** USD 29,000
 
 ### Milestone 1 — pallet_supersig MVP
 
 - **Estimated duration:** 3 to 4 weeks
 - **FTE:**  2
-- **Costs:** 13,000 USD
+- **Costs:** 14,000 USD
 
 ### Milestone 2 — Supersig for Polkadot JS UI
 
+- **Estimated duration:** 2 to 4 weeks
+- **FTE:**  1.5
+- **Costs:** 8,000 USD
+
+### Milestone 3 — Testing Feedback and Improvements
+
 - **Estimated duration:** 2 to 3 weeks
 - **FTE:**  2
-- **Costs:** 8,000 USD
+- **Costs:** 7,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
