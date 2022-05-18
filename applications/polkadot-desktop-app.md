@@ -72,7 +72,7 @@ Part of the work will be the setup of CI/CD pipeline, including application sign
 
 ### Milestone 2
 
-#### Account management redesign
+#### Account creation redesign and visual improvements
 
 * **Estimated Duration:** 1 month
 * **FTE:** 1.25
@@ -86,37 +86,50 @@ As part of the design we’ll create new visual components (sidebar, buttons, no
 
 Here's how we envision the Accounts list:
 ![Preliminary design - Accounst list](https://i.imgur.com/KhKdMwl.png)
-The following two designs are a result of our re-thinking of the user onboarding process. In this milestone we won't be working on the user onbaording yet. However, we might use parts of the following designs in the account creation modals.
+The following two designs are a result of our re-thinking of the user onboarding process. In this milestone we won't be working on the user onboarding yet. However, we might use parts of the following designs in the account creation modals.
 ![Preliminary design - First account creation](https://i.imgur.com/sO51bph.png)
 ![Preliminary design - Adding a new account](https://i.imgur.com/C9ys8Pn.png)
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | Accounts design | Design of [Accounts](https://polkadot.js.org/apps/#/accounts) application, including sidebar and visual components (in Figma) |
-| 2. | Account list | Implementation of the new accounts list design |
-| 3. | Updated UX flows for Account creation actions | All the following actions/features will be updated in terms of design and usability:<ol><li>Generation of new account</li><li>Generation of account from saved seed</li><li>Importing external account from Parity Signer</li><li>Restoring from JSON backup</li><li>Creation of Multisig account</li> |
-| 4. | Update transfers | Update UX flow for token Transfer + Sign Transaction |
-| 5. | Documentation | Updates to relevant documentation where needed |
-
+| 1. | Accounts design | Design of [Accounts](https://polkadot.js.org/apps/#/accounts) application, including sidebar and visual components (in Figma). |
+| 2. | Updated UX flow for Account creation | Implement redesigned account creation flow. Password validation improvements. |
+| 3. | Initial Style Guide | Document containing color palette and UI components for the application. |
+| 4. | Implement new style | Implement parts of the new designs, including consistent font usage, new navigation, minor improvements of layout and dark mode. | 
 
 
 ### Milestone 3
 
-#### Update visual style across all applications
+#### Improve User Experience in Accounts app
 
 * **Estimated Duration:** 1 month
 * **FTE:** 1.25
 * **Costs:** 1,13 BTC
 
-The goal of this milestone is to provide a consistent look and feel across the whole application. With Milestone 2 finished, only Accounts have the new UI. To give users a feeling of working with one, consistent product, we need to update the visual style for other parts of the application.
+In this Milestone we'll tackle usability issues with [Accounts](https://polkadot.js.org/apps/#/accounts).
 
-To achieve this goal, we'll create a Style Guide, which will include all the widely-used basic components: Buttons, Tables, Modals, Inputs, etc. Then we'll apply those designs to the application.
+Currently, users face following difficulties:
+* cannot see at a glance the totals of their balances across all accounts
+* account names cannot be edited
+* accounts list default sort is not intuitive and cannot be changed by the user
+* unlock is not next to the locked balance, but in the drop down menu
+* some information provided in the accounts list gives little value to users (eg. type, tags, transactions count) and could be hidden in some detail view
+* expanding balances messes up the table layout
+* account modals don't react to keyboard, e.g. Enter to confirm or Escape to quit
+
+For sure coming up with an effective design will require some iterating over wireframes/prototypes, and possibly also with implementations.
+
+Code-wise, we'll remove dependencies on SUI library components where possible. Also, we're going to add more unit and UI automated tests and remove code duplication where possible.
+
+For a more detailed preliminary backlog, consult [this list](https://workflowy.com/s/accounts-backlog/9ppyPN0DpdNL3vG5).
 
 | Number | Deliverable | Specification |
 | -------| ----------- | ------------- |
-| 1.     | Style Guide | Document containing color palette, typography and all UI components for the application |
-| 2.     | Implement new style | Achieving consistent look and feel across the whole application |
-| 3.     | Documentaion updates | We'll add or update the relevant documentation where needed |
+| 1.     | Accounts list redesign | Figma design that solve all usability issues mentioned above |
+| 2.     | Accounts list implementation | Implementing the designs in Polkadot-JS apps |
+| 3.     | Accounts sidebar implementation | Re-Implementing the sidebar that pops up after clicking on an account |
+| 4.     | Accounts App modals improvements | Improve usability and consistency in Account modal, eg. Derive, Add Proxy. Remove code duplication between Create and Derive |
+| 5.     | Documentation updates | We'll add or update the relevant documentation where needed, including screenshots in polkadot wiki |
 
 ## Additional Information :heavy_plus_sign:
 
@@ -124,7 +137,7 @@ To achieve this goal, we'll create a Style Guide, which will include all the wid
 * [Preliminary designs](https://www.figma.com/proto/5NAICV06SHNbbIoYhrUS3u/PolkaDot?node-id=763%3A81&viewport=-213%2C-44%2C0.2232329249382019&scaling=min-zoom)
 
 ### Have you applied for other grants so far?
-We have successfuly applied for a grant on [Polkadot.{js} Extension](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/polkadot_js_chrome_extension.md). We are now awaiting acceptance of the last milestone of this grant.
+We have successfully applied for a grant on [Polkadot.{js} Extension](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/polkadot_js_chrome_extension.md). We are now awaiting acceptance of the last milestone of this grant.
 
 ### Similar projects
 

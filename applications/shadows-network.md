@@ -2,6 +2,7 @@
 
 * **Project Name:** Shadows Network
 * **Payment Address:** 198yWGziNfUgrTXf6QiUC5QqEhJ34cyxf
+* **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/95#issuecomment-794343113)
 
 ## Project Overview :page_facing_up: 
 Shadows Network is a Polkadot parachain based on Substrate. As long as you consider valuable assets, they can be synthesized on the chain through Shadows Network. And Shadows network is a decentralized financial integrated platform integrating stablecoins, collateral lending, asset synthesis, and derivatives trading. will introduce a trillion-level derivatives market into the Polkadot ecosystem.

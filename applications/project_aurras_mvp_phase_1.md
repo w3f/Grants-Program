@@ -4,7 +4,7 @@
 
 * **Project Name:** Project Aurras - MVP - Phase 1
 * **Team Name:** HugoByte AI Labs Private Limited
-* **Payment Address:** 18DYHK9UTqfjDHZx4qYT5Gu5zqNuhn1NEZ
+* **Payment Address:** 1QKz2R86JKDuCLGAQE5fCH54BR5yV1rQNA
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 

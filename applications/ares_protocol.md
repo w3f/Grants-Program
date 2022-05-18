@@ -58,7 +58,7 @@ We implemented the POW + DPOS consensus integrated with ethereum, used tendermin
 
 ### Team Website
 
-* https://www.aresprotocol.com/
+* https://www.aresprotocol.io/
 
 ## Development Roadmap :nut_and_bolt:
 

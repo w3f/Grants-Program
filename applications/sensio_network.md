@@ -39,7 +39,7 @@ SensioNetwork is the backbone of the Sensio project. Building the SensioNetwork 
 ## Development Roadmap :nut_and_bolt:
 
 - **Total Estimated Duration:** 6 weeks
-- **Total Costs:** 1.5 BTC
+- **Total Costs:** 0.5 BTC
 
 Building the modules follows a least-dependency approach, which means that we will build the modules that are most dependent on first.
 
@@ -66,14 +66,14 @@ PoE is an essential step towards generating any kind of statement. The ruleset i
 4. Self-explanatory
 5. Self-explanatory
 
-### Milestone 2
+### Milestone 2 - Canceled via Elements
 
 In this milestone we will start working on PoCLO, implementing the connection to PoE and working on the implementation of the rules and data validations. By the end of this milestone, we will have the working runtime that validates that equipment information already exists in PoE and has never been claimed and can create the ownership statement for a given input.
 
 We have developed the algorithm for PoCLO in nodejs and the workflow is built with different architecture in mind. We must change it to fit the current solution. This module will be in charge of creating records for provable camera/lens ownership statements. The [current implementation](https://gitlab.com/sensio_group/sensio-faas/-/blob/master/client/src/views/Device/Verification.js) is built with React in our Proof-of-Concept webapp. PoCLO is a process that is very similar to what is used in image forensics. It's our first step to registering provable ownership statements. Our current solution uses PKI and CID, which we will keep in the future together with the SSI and DID.
 
 - **Estimated Duration:** 4 weeks
-- **Costs:** 1 BTC
+- **Costs:** 0 BTC
 
 | Number | Deliverable          | Specification                                                                  |
 | ------ | -------------------- | ------------------------------------------------------------------------------ |

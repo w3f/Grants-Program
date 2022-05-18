@@ -5,6 +5,7 @@
 * **Project Name:** Bounce Protocol
 * **Team Name:** Bounce
 * **Payment Address:** bc1qwm44hpv8qyvmwpcupqwn4rx52xzt5qr9lremhz
+* **Status:** [Terminated](https://github.com/w3f/Open-Grants-Program/pull/159#issuecomment-830110107)
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 

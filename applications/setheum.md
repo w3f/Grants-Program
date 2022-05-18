@@ -2,6 +2,7 @@ Open Grant Proposal
 * **Project:** Setheum 
 * **Proposer:** JBA-Khalifa
 * **Payment Address:** 1EDXptvCZo1sWpT8BFTvdopZbBShhurkGA
+* **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/101#issuecomment-827683019)
 
 ## Project Overview :page_facing_up: 
 
