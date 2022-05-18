@@ -57,9 +57,10 @@ There are a lot of tasks involved to get all of these into a product-ready state
 
 __Grant scope__
 
-- Develop TEE modules that supports basic private key transfer and management functions.
-- Develop a protocol (could be a smart contract) that organizes all TEE nodes into a functioning network
-- Develop a key management tool with Web-UI that supports Ethereum and Polkadot accounts.
+- Develop TEE module(written in C++) that supports basic private key transfer and management functions.
+- Develop off-chain node program(written in Rust) that coordinating with TEE module.
+- Develop on-chain protocol (written in ink! smart contract) that organizes all TEE nodes into a functioning network.
+- Develop a key management tool with Web-UI (written in JS) that supports Ethereum and Polkadot accounts.
 - Implement a hybrid authentication mode that includes mailbox, password, Google 2FA, and Polkadot account.
 - Contribute SDKs for polkadot-js or polkadot-apps, so that polkadot users can use Keysafe Network to backup, recover and manage their substrate-based keys.
 
@@ -146,10 +147,10 @@ The relevant [RFP is here](https://github.com/w3f/Grants-Program/blob/master/rfp
 |    0b. | Documentation       | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can use Keysafe. |
 |    0c. | Testing Guide       | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |    0d. | Docker     | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Core Protocol | Implements the `nodeRegister` `userRegister` `userAuthentication` and `keyRecovery` APIs in Node program. |
-| 2. | TEE Implementation | Implements the `nodeRegister` `userRegister` `userAuthentication` and `keyRecovery` APIs in TEE trusted program. |
-| 3. | Smart Contract | Implements and test for the smart contract used for node register and user register. |
-| 4. | Web Server | Provide meta-data management service for Keysafe users, the user can manage his keys and authentication methods |
+| 1. | Core Protocol | Implements the `nodeRegister` `userRegister` `userAuthentication` and `keyRecovery` functions for Node program written in Rust. |
+| 2. | TEE Implementation | Implements the `nodeRegister` `userRegister` `userAuthentication` and `keyRecovery` functions for TEE part written in C++. |
+| 3. | Smart Contract | Implements and test for the !ink smart contracts used for `nodeRegister` and `userRegister`. |
+| 4. | Web Server | Provide meta-data management service for Keysafe users written in Rust, users can manage keys and authentication methods |
 | 5. | Polkadot.js | Add in encryption/decryption functionality to `@polkadot/keyring` and `@polkadot/extension` so that the protocol can run without the needs to read the private key of users. |
 
 * **Estimated duration:** 1 month
@@ -163,7 +164,7 @@ The relevant [RFP is here](https://github.com/w3f/Grants-Program/blob/master/rfp
 |    0c. | Testing Guide       | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |    0d. | Docker     | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 |    1. | MPMC(Multi-Party-Multi-Cloud)  | Cooperation with multiple institutions, different institutions run Keysafe nodes on different cloud vendors. Decentralizing the Keysafe Network. |
-|    2. | Keysafe SDK    | Develop the Keysafe SDK and the corresponding Adapters, so that the projects in Polkadot ecosystem can integrate Keysafe to provide users with a secured private key backup and recovery function. |
+|    2. | Keysafe SDK    | Develop the Keysafe SDK and the corresponding Adapters written in JS, so that the projects in Polkadot ecosystem can integrate Keysafe to provide users with a secured private key backup and recovery function. |
 |    3. | Support mainstream authentication methods | Provide multiple authentication methods for user key recovery, such as Ethereum wallet, Polkadot wallet, email and other authentication methods. |
 
 ## Future Plans
