@@ -268,6 +268,9 @@ Therefore, ares-oracle is determined to build a decentralized, safe and stable i
 
 
 ### Overview
+- **Total Estimated Duration:** 2 months
+- **Full-Time Equivalent (FTE):**  3 FTE
+- **Total Costs:** 30,000 USDT
 
 ### Milestone 1 Implement the rotation quotation rule
 
