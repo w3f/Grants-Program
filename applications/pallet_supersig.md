@@ -188,7 +188,7 @@ pub fn remove_call(
 
 - Polkadot JS UI will be forked and adapted to show the Supersig IF the chain has the pallet installed.
 
-**Milestone 3** Will get feedback and make some improvements. One improvement is adding a "Super Beneficiary" option that allows a threshold of 2/n only if the Super Beneficiary is involved in the transaction. Else the transactio will default to a superMajority. 
+**Milestone 3** Will get feedback and make some improvements. One improvement is adding a "Super Beneficiary" option that allows a threshold of 2/n only if the Super Beneficiary is involved in the transaction. Else the transactio will default to a superMajority. This allows for greater than the usual 2/3 multisig, but without loss of security. 
 
 
 
