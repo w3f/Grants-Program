@@ -68,7 +68,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 ### Team members
 
 - *Name of team leader:* Ramsey Ajram
-- *Names of team members:* Timothée Delabrouille, Nathan Gardet, Jan Kraus, Eljo Prfiti 
+- *Names of team members:* Timothée Delabrouille, Nathan Gardet, Jan Kraus, Eljo Prfiti, Richard Wells
 
 ### Contact
 
@@ -86,13 +86,15 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 Ramsey (decentration) - Substrate Engineer, Product manager, startup technical founder. Leading [Kabocha's](https://kabocha.network) chain development and launch; Edgeware council member. Designer pallet_mint (done), pallet_proposals (ongoing).
 Here is a recent contribution from Ramsey in a [Substrate Seminar](https://www.youtube.com/watch?v=IiAkJAfZsug&t=2299s)
 
-Timothée Delabrouille (tdelabro) - Substrate / Rust Engineer, founder of Rusty Crewmates, contributor to Edgeware and Kabocha
+Timothée Delabrouille (tdelabro) - Substrate / Rust Engineer, founder of Rusty Crewmates, contributor to Kabocha
 
-Nathan Gardet-Derc (erudyx) - Substrate / Rust Engineer, contributor to Edgeware and Kabocha, Rusty Crewmate. developer on [pallet_mint](https://github.com/kabocha-network/parachain/pull/6)
+Nathan Gardet-Derc (erudyx) - Substrate / Rust Engineer, contributor to Kabocha, Rusty Crewmate. developer on [pallet_mint](https://github.com/kabocha-network/parachain/pull/6)
 
 Jan Kraus - Edgeware and Kabocha Full stack deveveloper - Javascript / Typescript / React / Node.js / Next.js / Gatsby / Ruby on Rails
 
 Elio - Substrate Engineer - Edgeware and Kabocha - Upgraded Substrate Recipes... https://wiki.kabocha.network/recipes
+
+Richard Wells - Edgeware council member and Kabocha founding steward, key stakeholder and communicator.  
 
 
 ### Team Code Repos
