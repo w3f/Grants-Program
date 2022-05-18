@@ -15,7 +15,7 @@
 
 "A Supersig is a Multisig with superpowers"
 
-Extending the very-well-used multisig to have features suitable to manage more funds and members. Governance for a DAO, or as we like to call it a DOrg (Decentralised Organisation).
+A new pallet that improves on the the very-well-used multisig, but making it fit for functioning more like a larger fund, sub-treasury, DAO, or as we like to call it a DOrg. 
 
 This is Decentration's first grant proposal to Web3. We view this simple, suitable and potentially pervasivaely used pallet as a great opportunity to develop an ongoing relationship with Web3 Foundation, given that we have shared and aligned interests.
 
