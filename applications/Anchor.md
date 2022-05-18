@@ -157,7 +157,7 @@ Personal development experience is mainly concentrated in the non-blockchain , b
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Event Post Action Deployment guide, Docker and Docker compose setup documentation, Openwhisk Setup Documentation, Readme file |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 80%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 1a. | Pallet Anchor: setAnchor | Set the data of the Anchor and connect the history of the Anchor |
 | 1b. | Pallet Anchor: sellAnchor| Set the Anchor on-sale status, you can specify the account |  
 | 1c. | Pallet Anchor: buyAnchor | Purchase the specified Anchor |  
@@ -172,7 +172,7 @@ Personal development experience is mainly concentrated in the non-blockchain , b
 | ------------- | ------------- | ------------- |
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | Documentation includes Inline Code Documentation, Configuration Documentation, Kafka and Zookeeper Deployment guide, wskdeploy guide, Readme file |
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 50%) to ensure functionality and robustness. In the guide we will describe how to run these tests |  
+| 0c. | Testing Guide | The code will have unit-test coverage (min. 80%) to ensure functionality and robustness. In the guide we will describe how to run these tests |  
 | 1a. | cApp : blog | Normal blog application based on Anchor, coded just by Javascript. |
 
 
