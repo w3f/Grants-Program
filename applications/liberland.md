@@ -10,155 +10,212 @@
 
 Liberland is a country established in 2015, on a noman’s land (_terranullius_) between 
 Croatia and Serbia. Liberland’s founders are blockchain and liberty enthusiasts.     
-Liberland’s State project could be summarized by two concepts: Minimal state and distributive governance. Our goal is to put Liberland's e-governance services on a substrate-based chain, being the first nation-state in the world to serve our citizens in a truly web3 decentralized way.
+Liberland’s State project could be summarized by two concepts: Minimal state and distributive governance.     
+We want to build and enable all e-government services (to be available to our citizens and others) using our substrate-based blockchain (https://github.com/liberland/liberland_substrate). 
+During this process we aim to provide the community with the substrate pallets needed to run a nation state on-chain. Besides Liberland, we aim at a wider adoption by blockchain States, metaverse States and real-life States. The pallets, though initially adapted to our constitution, to provide a strong use-case, will be easy to adapt to virtually any modern State-system. 
+ 
+We aim to provide the substrate ecosystem with a number of pallets that can be customized in a modular design pattern. The aim is to build blockchains that have the main purpose of serving nation states and other highly security oriented entities like the enterprise sector; and on-chain governance. These entities have unique requirements which make them currently gravitate towards private blockchains. We see this as an opportunity on the public blockchain market we aim to answer.
+ 
+This blockchain will be the first blockchain specifically aimed at States (and potentially other large organizations) as they function in the current world, as opposed to projects aiming at once at a reform of the political system and at once at obtaining some degree of State adoption. We are the first separation of powers enforcing chain in the space, and that on two axes: 
+-  the traditional Montesquiean separation between the executive, legislative and justice
+-  the blockchain-centered separation between politics itself and network security/validators
 
 
-### Overview
-
-Our team is working on this project because this is the first web3 digitization of a country's constitution and government e-services. Liberland's blockchain will be a substrate-based blockchain that will serve the citizen of Liberland, taking part in the legal system such as participating in public veto elections and voting. As well as expanding beyond that, and allowing our chain to serve on-chain company registrations, land registration and a lot more!
+While working on establishing the physical State in the designated real-world area of Gornja Siga, Liberland is building in collaboration with Zaha Hadid Architects a virtual representation of that area in its Metaverse. This “virtual Liberland” governance will become the first use case for our system. The Metaverse is being built as we speak (world.liberland.org).
 
 
 ### Project Details
 
-Liberland chain's main functionality will be:
+Liberland's chain will be the home of our pallets, the consensus mechanism will be a version of Nominated Proof of Stake. The goal of our chain is provide a public and safe place where our pallets can be used in production and also tested.
+We implement the “division of powers” between politics and network security as a blockchain designed to run States.
+We base our backend on the current/Polkadot version of the Substrate and are conservative in implementing this battle-tested system. States require established security solutions instead of highly experimental infrastructure; even modern metaverse-based States, which we envision as our first full adopters. 
 
-##### Liberland Merit (LLM)
-
-We name our currency and main on-chain token to Liberland Merit (LLM), signifying 
-the connection between money and real-life value. LLM will be the governance token
-of our blockchain and of Liberland itself. 
-LLM will have a hard cap of 70 million tokens, being distributed at the rate of 0.9% per year, over a timeframe of 48 years, allowing inflation 
-to be pre-calculated and controlled over time.  
-
-Based on a time based block production formula. This will allow the pallet to have time limits between the minting processes, allowing us to precalculate the circulating supply and the inflation curve. 
-
-Please see more details here:
-https://docs.google.com/spreadsheets/d/1uBuGNQMuyz9p4_JBbza7Wa8hWCYkGdGjoOISF0LPKro/edit#gid=
-
-Note: 
-The most important colums to notice is the Reserve, Merits in circulation and State budget columns that our LLM pallet will use in order to limit the distribution/minting of LLM tokens, the rest of the columns may change in a near future.
-
-We will create our own custom LLM-pallet, Liberland's chain will automatically mint the 0.9% per year and sends the minted tokens to the treasury, using a pre-calculated blocktime. We are using pallet-assets minting functionality in order to make LLM an easy to adopt on-chain asset for thirdparty integration.
-
-
-##### Citizenship
-
-Citizenship and e-residency user statuses and roles shall be held on-chain and
-therefore validated along with other transactions. We will implement the identity pallet   
-and adapt it to Liberland’s legal system.     
-
-##### Congress
-
-The Congress is part of the Public Veto pallet, using delegated voting functionality using the
-underlying Democracy pallet from parity. By utilizing this technology we are creating a true
-representative democracy. Representative democracy is used to _enact_ laws and other 
-regulations, both on-chain (as governance) and o-chain (for the state).  
-In the Assembly elections, a Citizen votes _with their tokens_ , producing a   
-proof-of-stake-like meritocracy in Liberland’s politics. 
-Voters will be allowed to rethink their vote, even mid-term. They can rearrange the  
-LLM allotted to the Congressmen based on their performance.   
-
-
-##### Executive
-Our Executive is a fork of modern parachain council’s implementations such as Polkadot’s Council, though   
-heavily modified. It is composed of four ministers led by one prime minister. The powers    
-of the Executive are to govern directly on-chain within the limits of Congress’s laws   
-and off-chain as well in the metaverse and later the real-life state.   
+##### Metaverse Pallet   
+The metaverse pallet will use an offchain worker in order to bridge between our blockchain and the virtual metaverse’s network on a standard tcp application layer.
+We are also creating API connections with our Metaverse and its specific functions and other extrinsic services. Easy to adapt to other Metaverses and systems where State-like polities run or to "virtual States" existing on the internet in a generalized fashion.
 
 
 
-##### Treasury
-One of the standing values that Liberland has is that all taxes are paid voluntarily  
-by the citizens of Liberland. Liberland's chain will have an on-chain treasure, that will be used to fund projects and government budges in a fully transparent way.  
-Treasury, we will handle funding proposals, mainly initiated by the Executive and the Congress.
-The Treasury will be fueled by transaction fees and staking as well as by “real estate fees”, when we are able to launch our Metaverse integration in Milestone 2.
+
+##### Liberland Dollar (LLD)    
+
+Our token, used as a medium of exchange and for validators/nominators, is the Liberland Dollar (LLD). Unlike the Dot, our LLD is meant to serve as the currency. It will in fact have the potential to become the common-grounds currency for all the projects involved. The LLD core system keeps close to Polkadot's battle-tested tokenomics and rules for standalone projects.
+ 
+We envision a possible future of an international organization on the blockchain, an agreement of free trade. The LLD or other LLD-like currencies would be easily transferable and commutative. The other adopters might build their chains based on our example or become parachains to the Liberland Smart Chain.
+
+## Frontend  
+The project also has an easy to use Frontend, serving as the Citizen-facing interface for a State. Our system is Liberland branded but made easy to adopt by other States, legacy or otherwise, real-life or metaverse-based. We are building some standard but many new, sought-after features, including and not limited to:
+-  wallet, nominator/validator interface (our streamlined design adapted for State purposes);
+-  identity management (citizenship, residence) adapted for State, and not just on-chain use;
+-  Direct democracy;
+-  Representative Democracy and Elections;
+-  legislative drafting and legislative extrinsic management; and
+-  the E-executive; a portal for the government to rule and regulate with API connection to extrinsic information systems of extant States (including Liberland).
 
 
 
-## Project comparison 
-Several projects such as "bit.country", are trying to be an incubator for the metaverse. We, on the other hand,
-have been here for 7 years now, with a clear vision of being a real state both in the real physical world  
-as well as in the virtual Metaverse. Our chain will manage registration for both the physical land in Liberland as well as the virtual metaverse.
-Liberland's on-chain governance systems stands out from current existing systems. Our system is  
-designed and built with the sole purpose of serving as a nation-state. Allow the users to vote differently based on their role, in accordance to Liberland's governance system. 
-
-#### Liberland's Metaverse  
-We currently have a beta version of our metaverse that has been designed by [Zaha Hadid Architects](https://en.wikipedia.org/wiki/Zaha_Hadid_Architects), developed by [Mytaverse](https://www.mytaverse.com/) and cordinated by [Arch Agenda](https://archagenda.com/).   
-Our metaverse is currently being used for internal meetings and conferences, such as our 7th anniversary, that can be viewed here:
-
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/G_1m8ZwqKMw/0.jpg)](http://www.youtube.com/watch?v=G_1m8ZwqKMw "Liberland MetaVerse")
-
-Our metaverse is not currently public, however, we are more then happy to provide a guided private tour of it, if requested.
-If so, please email justice@liberland.org and we shall set up a scheduled session.
+## Backend   
+#### LLM Ecosystem  
+To set up the required functions for States' running and give developers and end-users the best adaptability, we utilize pallet assets. We use them for
+-  Proof of Commitment; enabling citizenship/e-residence functions by utilizing the User Role Pallet; adapted from the Identity Pallet combined with the Assets Pallet for Citizenship and other status NFT tokens;
+-  the creation of our governance token, LLM, using the Assets Pallet.
+-  the Legislative, as manifested in
+    -  the Congress (representative democracy), a new custom pallet, set up to support what States expect of parliaments; and
+    -  Direct Democracy, another customization which works closely with the Identity Pallet to provide a one-head-one-vote system of referenda;
+-  the Executive, centred on the Cabinet adapted from the Council / the Collective Pallet;
+-  an adaptation of the Treasury to serve as the reserves of a State;
+-  the Senate, another fork of the Collective pallet, represents the on-chain governance over the Treasury; and
+-  the completely new Landownership Pallet & Company Pallet, forking the Assets pallet to create an on-chain property register.
+We will describe the function of each of these custom Pallets below.	
 
 
-##### Voting   
-We will make our own pallet, where we adopt the voting functionality from pallet democracy to interact with our public veto governance system.   
-Allowing citizens to vote on laws, assembly members to vote on government funding proposals(who is going to build a new road and so on).   
-Our voting pallet will interact with our identity pallet to serve our governance system. Unlike previous chains, we have customized the voting  
-to be limited to voting on the creation and removal of laws and not allow non-assembly members to vote on government treasury funding proposals.   
+##### Proof of Commitment
+We are implementing the identity pallet and adapting it to Liberland’s legal system: Citizenship requires a semi-permanent pooling of LLM to prove the applicant’s commitment to the State. When you move to a different country, this asks something of you, and there are requirements; we are mirroring this principle on-chain.                   
+The committed money remains in the Wallet of the user, who can then use these for politics. The limitation is that they can’t transfer the LLM into other wallets. 
+We are the first to introduce NFTs as proof of belonging to a State. When one pools 5k LLM in this way and passes our KYC, a quasi-NFT will be minted for them, the Citizenship token. This token is transferable but only to KYC-ed users.             
+The principle that a Citizen has to pool a certain amount to prove they are loyal is called the “Proof of Commitment” in our system. This system transforms the legacy-State principle of Citizenship on a blockchain, using game-theory correlation (willingness to lock tokens = higher chance users are serious with the project).      
 
 
-##### Land Registry
+## Liberland Merit (Pallet LLM)   
+#### Governance Token    
+The governance token is the Liberland Merit (LLM), a token minted based on a fixed schedule and having a fixed cap, BTC style. LLM will be the governance token of our blockchain and Liberland itself and is meant to be used in our DeFi ecosystem. The tokenomics of LLM will be a hard cap of 70 million.
+ 
+We build the LLM into the system using the underlying pallet assets combined with customized logic. The LLM Pallet will be able to support the following functionality:
 
-Using a custom substrate pallet with pallet-assets integration we aim to allow users to register land, based on geographical coordinates. Digitizing land ownership. 
+#### Treasury Minting and Predefined Max cap   
+Using a simple runtime parameter, we allow developers to simplify the printing amount of tokens, the amount of percentage to issue every X amount of time, and the maximum amount of tokens to be minted and sent to the Treasury, allowing the Treasury to manage on-chain assets. 
+We are therefore releasing the LLM based on the smart inflation curve of the LLD, connecting the tokens into a single ecosystem or "cell". Other State adopters will be encouraged to create and modify their own "cells" as they see fit.
+Cell pairs enable what is crucial for a State adopter: an algorithmic barrier between politics and Validators. We make sure that it is not necessarily the same people who get voted into political functions that count the votes—our system's basic separation of powers.     
 
 
-##### Judiciary
+#### Time-Based Minting    
+The LLM pallet will allow adopters to delay the minting process using a regular DateTime format. LLM pre-calculates time based on block time, allowing us to postpone the execution of issuing tokens. This functionality does not currently exist in the substrate ecosystem. 
+LLM will be minted over a timeframe of 48 years, allowing inflation to get fixed (being able to pre-calculate future inflation percentages) and controlled over time. Ninety-five per cent of all LLM get minted on behalf of the Treasury. Still, most of the Tokens typically don't stay there for long - they will be distributed into politics using the Members of Congress by a system described below. Please see the details here: https://docs.google.com/spreadsheets/d/1uBuGNQMuyz9p4_JBbza7Wa8hWCYkGdGjoOISF0LPKro/edit#gid=0. 
 
-We intend to form an on-chain judiciary system, working to resolve conflicts both   
-on-chain and in Liberland. Information about our Judiciary system can be found here:
+#### Senate approved transfers   
+We create a special organ, the Senate, adaptable by other adopters as they see fit (see below). One of the main purposes of this organ is to preside over Treasury spending. It is not a political organ per-se; instead, it is composed of the most committed (invested) individuals in the State and the syste, providing a game-theory based incentive to make rational decisions.   
 
+#### Incentive to HODL LLM   
+Due to the Proof of Commitment and the legislative system offering possible APR (see above and below respectively), token holders have an incentive to keep their LLM vested, and we expect this to raise and stabilize the price. 
+
+## Legislative Power 1: Representative Democracy   
+
+#### A Tokenized Parliament    
+States are internationally expected to run some form of representative democracy. The core of the legislative power implemented on our chain is Congress. We suggest other adopters will keep and adapt it.  
+The Congress is a customized pallet, using delegated voting functionality using the underlying Democracy pallet. Where the original Democracy pallet effects direct democracy, we focus on a faithful representation of a Representative democracy. By default, States and State-like actors currently tend towards this type of democracy, but it is underrepresented in current blockchain projects. 
+ 
+Representative democracy enacts laws and other regulations, both on-chain (as governance) and off-chain (for the state), and Congress is the heart of Liberland's political system. 
+
+#### Smart Elections   
+We implement an election system where a Citizen votes with their tokens by Liberland's design for a proof-of-stake-like meritocracy. The Citizens are analogous to Nominators. Instead of Validators, one chooses one or more Members of Congress to delegate their political power. 
+Members of Congress receive a share of LLM minted into the Treasury, and they are free to incentivize the voters to vote for them. Voters can expect (also) material returns for giving their trust to politicians, further strengthening the nPoS-like mechanics. 
+ 
+However, this system is easily adaptable to "one-citizen-one-vote" if required by more conservative adopters and without the voter incentive. Conversely, more experimental polities can tweak it and add alternative voting or other algorithms. The executive typically keeps the lion's share of the Treasury in those use-cases.
+ 
+In Liberland, Voters will be allowed to rethink their vote, even mid-term. Based on their performance, they can rearrange the LLM allotted to the Congressmen, creating live feedback to keep them loyal to their voter base.
+
+
+## Legislative Power 2: Direct democracy
+To fit the Liberland specs and enable more widespread adoption by traditional polities, we implement direct democracy. There, the system counts KYCed voters on the regular "one person-one vote" principle to introduce equality and equity between the rich and the poor (in Liberland, those who commit less and those who commit more).     
+
+Direct democracy is our basic check-and-balance: the people can second-guess their representatives in Congress. In Liberland, this is used to strike down unwanted regulations but can be easily adapted for positive democracy or even as the basis for elections. We complement this system with a front end.   
+
+The hitherto unseen benefit is that voting on-chain can stay permanent. An online system's relatively low transaction costs allow a polity to use higher thresholds for adopting a motion. "Paper" referenda as implemented in current States usually rely on artificially low quora, breaking the original assumption of a "majority rule". We hope to be able to unleash the true power of the people by giving them the flexibility and the security of a public blockchain. 
+
+
+#### Executive Power    
+As required by the standards of modern Statehood, the Executive (vested in a central organ, the Cabinet) is voted in and removed by Congress. The standard of a "fully responsible" government requires States to adopt such a system or face criticism as "not fully democratic".    
+Our Executive is a fork of modern parachain councils such as Polkadot's Council, though heavily modified. It is composed of four ministers led by one prime minister. Other adoptees can expand the system, designed to handle complex administrative processes such as regulations, making decisions and even dispute resolution.
+
+
+Connection to extrinsic systems, standard or customized per-state via API will enable the system to integrate seamlessly into an existing State information system. We build e-government for Liberland, partly inspired by Estonia but fully Web-3 based.
+The powers of the Executive in Liberland are to govern directly on-chain within the limits of Congress's laws and off-chain as well in the metaverse and later the real-life state.
+    
+    
+More complex State actors might create specialized parachains which would govern their municipalities or even byzantine central bureaucracies. Given that States generate traffic as a matter of course, such systems are very interesting for Validators and Nominators and virtually non-existent in the current space.
+ 
+
+
+#### Treasury   
+The Treasury for LLM, unlike that of Polkadot and like treasuries of extant States, operates without the burn mechanism. LLD follows the same rules as Polkadot, and so there is a burn mechanism to offset the “infinite” (really: algorithmic) supply. 
+As the LLM tokenomics suppose a deflationary token, holding LLM in the treasury will help finance running the State. The System distributes a significant portion of the treasury among the Members of Congress. Through this, the tokens get directly into the hands of the Voters (Citizens). Using Pallet-llm the treasury is the owner and manager of several on-chain assets, allowing us to expand the base functionality to have the treasury securely manage on-chain assets for us. Decentralizing trust in a true way.
+
+
+#### Company Registration Pallet    
+The company registration pallet works similar to government company registrar authorities. This pallet will handle the registration of companies in a truly decentralized way. Allowing anyone to apply for registering on-chain companies
+
+#### Liberland Identity Pallet   
+The sole purpose of this pallet is to perform on-chain account privilege verification. Manage and track users residency status and all identity verification logic that an individual is needed to identity it self. Because we are building an identity system that is tailored for serving a digital nation state, we can not use the default identity pallet from parity and need to build one that serve as a citizen identity record.
+
+####  Senate   
+One of the standing values that Liberland has is that all taxes are paid voluntarily by the citizens of Liberland. Liberland uses and enables other adopters to use a system where the biggest investors gain a special status token, that of a Senator. The system mints this token where one vests a considerable amount of LLM, proving an extraordinary commitment.
+
+The Senate is another Collective as per the Collective Pallet. It is a very simple Collective; comprised of all the holders of the Senatorship, the Senate 
+-  handles Treasury spending; 
+-  Repeals Regulations, exactly as the Direct Democracy does.   
+There are many States with two-chambers systems in their Parliament. Others may create a special “(de-)central bank”-like solution out of the Senate, with an independent body of experts being the co-owners of the multi-sig there.
+
+#### Registers  
+
+We will build NFT-fuelled registers of many kinds of entities, starting with virtual real estate for our Metaverse. Next will come registers for persons and even companies. These registers will connect to front-end interfaces. We base the registers on strong unifying aspects, a universal philosophy, easy to adopt by other actors, States or otherwise.
+
+
+#### Judiciary   
+
+We intend to form an on-chain judiciary system, working to resolve conflicts both on-chain and in Liberland. You can find more information as to this topic here:
 https://docs.google.com/document/d/1UpfN6T3LqfOjUZYGJHvFe2dDahNALzy1qWAQNk9sbGE/edit?usp=sharing
 
-We aim to bring Liberland's Judiciary system on-chain using our Identity and Public Veto Pallet.
+We will build the judiciary around Q1 2023. It is to be more traditional than other blockchain-based justice systems, as we want to follow the expectations of our adopters and their citizens. We also see that innovation and preferring mathematical innovation before tried-and-tested solutions can be detrimental, as seen by the low adoption of blockchain judiciaries in the real world.
+
+## Team   
+#### Team Members   
+-  Dorian Stern-Vukotic, Frontend developer
+-  Filip Kalebo, Rust substrate Team leader and developer; Github: https://github.com/flipchan;
+-  Max Gravit, expert advisor on nPoS substrate blockchains; Github: https://github.com/3yekn;
+-  Abel Yañez, expert advisor on design patterns and substrate technology;
+-  Balazs Magyar, Quality Assurance Engineer with a background in web-development and security audits for crypto projects. Github: https://github.com/balazs091
+-  As a backup and to provide a second opinion, we have the possibility of asking a second experienced team of developers, which has a great track record in the development of crypto related projects. Please see their earlier work here:
+https://www.mantleblockchain.com/
+https://www.masscrypto.io
+https://www.hglobal.io
+https://www.nftytoken.io
+
+### Team’s Website
+https://github.com/liberland/liberland
+
+#### Legal Structure
+A Hong Kong-based Limited Liability Company; later a Liberland Company as the entity in charge.
+Development Team at Rust Syndicate LLC, Tbilisi, Republic of Georgia.
+
+#### Team’s Experience   
+The team has a strong background in Rust and frontend development. On the advisory side, we got Max and Abel; They have a broad knowledge of the substrate ecosystem. Max is the Sole operator of a Kusama Validator enrolled in Kusama’s 1k validator program, Completed Bryan Chen’s substrate course, deployed a 5-node testnet for Hashed Chain.   
+Filip has been working with the substrate for nine months. He was one of the first members and builders of what we know today as the Picasso para chain, has a background in IT security and has been working on various enterprise applications in Rust. Holds a strong knowledge in information security and devops.   
+ 
+#### Team linkedin Profiles:
+https://www.linkedin.com/in/djstern
+https://se.linkedin.com/in/filip-k%C3%A4lebo-479314115
 
 
-### Ecosystem Fit
-
-Liberland blockchain is the first blockchain to serve a nation state in a decentralized way. This is a new innovation and giant step for the web3 ecosystem. With the help of the web3 foundation we can make the first digital state, similar to what is described on polkadot's wiki:
-https://wiki.polkadot.network/docs/build-pdk#digital-nation-states
-This is a perfect ecosystem match, we want to make Liberland's e-governance services to be substrate based!
-
-## Team 
-
-### Team members
-
-- Filip Kalebo, Rust Developer
-> Github: https://github.com/flipchan
-- Max Gravit, Rust Developer
-> Github: https://github.com/3yekn
-- Dorian Stern-Vukotic, Frontend developer
-
-#### Team’s Website
-https://liberland.org   
-https://github.com/liberland/liberland   
+#### Team Code Repositories 
+https://github.com/liberland/liberland_backend   
+https://github.com/liberland/liberland_frontend   
+https://github.com/liberland/liberland_substrate   
+https://github.com/liberland/docs/blob/master/Blockchain%20Strategy.md  
+https://github.com/flipchan   
+https://github.com/3yekn  
+ 
+### Contact:   
+justice@liberland.org
 
 
-### Contact
+### Intended Language of Development   
+Rust for the blockchain backend, Javascript and Angular for the Frontend.
 
-- **Contact Name:** Michal Placnik, Liberland's Minister of Justice.
-- **Contact Email:** justice@liberland.org
-- **Website:** https://liberland.org
-
-### Legal Structure
-
-- **Registered Address:** 14/F, Manning House, 38-48 Queen’s Road Central, Central, Hong Kong
-- **Registered Legal Entity:** Liberland LLC
-
-### Team's experience
-
-Our team has worked on several substrate based projects such as Picasso and hashed-chain. The team has demonstrated knowledge of the substrate ecosystem and now we aim to build the first on-chain constitution and nation state on a substrate based chain.
-
-The team has started to develop the liberland chain on github:
-https://github.com/liberland/liberland_substrate
+## Community   
+Liberland’s greatest asset is its name, which opens many doors in the libertarian and blockchain world and the community of enthusiast supporters. We got about 700k (!) applications and have close to 1k citizens.    
+We have reliable means of communication and social media by which we will inform “our people” that their main tool for political life has become operational. We expect the adoption to skyrocket after that. Hence we practice a “rolled phaseout”, to ensure maximum system stability.
 
 
-### Team LinkedIn Profiles 
-
-- https://www.linkedin.com/in/balazs
-- https://www.linkedin.com/in/djstern
-- https://se.linkedin.com/in/filip-k%C3%A4lebo-
 
 ## Development Status 
 
@@ -168,8 +225,6 @@ We have already started to develop our chain, links:
 
 
 ## Development Roadmap :nut_and_bolt:
-
-We aim to have a production ready system in 5 months, our chain will have the functionality to serve 
 
 
 ### Overview
@@ -197,17 +252,13 @@ https://docs.google.com/spreadsheets/d/1Q5DnVI4WuQWncMY985xuQ30HB7-bJz6X6EZFr2Vz
 | 0c. | Testing Guide | We will have test files for all mayor functions, more about our testing procedure can be found under the testing section  |
 | 0d. | Docker | We will provide a Dockerfiles that can be used to run our node and also test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a detailed article, walking a user through all functionality and features.)
-| 1. | Substrate chain | We will customize a substrate based code base and add our custom pallets |  
-| 2. | LLM module | We will create substrate pallet to handle the distribution and inflation of the LLM currency |  
-| 3. | Public Veto Module | We want our users to utilize our chain to have election and vote using a pallet  |  
-| 4. | Liberland Identity Pallet | We will create a substrate pallet that will allow accounts to have different account roles | 
+| 1. | LLM Pallet | LLM is a pallet customized to serve custom functionality for onchain Assets managed by the treasury |  
+| 2. | Congress Pallet | We are building a substrate pallet handling a tokenized direct democracy; we test it in limited conditions and then deploy it in the production environment |  
+| 3. | We will create a pallet that will be tailored to serve the voting and approval logic for governance for Nation States.   |  
+| 4. | Liberland Identity Pallet | We set up a substrate pallet that will allow accounts to have different roles. Liberland's on-chain governance is tailor to serve a nation state, therefor we need functionality for users to be citizen, e-residence, assembly member, minister and so on. In order to implement user roles checks and adopt our chain after https://github.com/liberland/liberland_substrate/blob/main/docs/liberland/identity.md | 
    
    
    
-#### Liberland Identity Pallet  
-Liberland's on-chain governance is tailor to serve a nation state, therefor we need functionality for users to be citizen, e-residence, assembly member, minister and so on. We will fork the identity pallet from Parity and rewrite it to fit our custom needs, in order to properly take part of the governance system.
-More documentation about Liberland's identity pallet can be found here:           
-https://github.com/liberland/liberland_substrate/blob/main/docs/liberland/identity.md    
 
 
 
@@ -226,33 +277,69 @@ This milestone will allow citizens to register companies using our company regis
 | 0c. | Testing Guide | We will have test files for all mayor functions, more about our testing procedure can be found under the testing section  |
 | 0d. | Docker | We will provide a Docker files that can be used to run our node and also test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a detailed article, walking a user through all functionality and features.)
-| 1. | Land owner Pallet | We will create a pallet that will manage on-chain assets for land ownership |  
-| 2. | Metaverse integration Pallet | We will create a substrate pallet that interacts with our Metaverse|
-| 3. | Company Registration Pallet | We will create a substrate pallet that allows anyone that is holding LLM to incorporate a company | 
+| 1. | Land owner Pallet | We make a pallet that will manage on-chain assets for land ownership based on geo coordination. |  
+| 2. | Metaverse integration Pallet | We are setting up a new substrate pallet that interacts with our Metaverse|
+| 3. | Company Registration Pallet | We are building a pallet that allows anyone to incorporate and manage Liberland companies on-chain | 
+
+### Current Development Status
+The current Development status of all the pallets and our main chain, can be found here: https://github.com/liberland/liberland_substrate.
+
+### Ecosystem Fit:   
+Liberland seeks to bring substrate up to a new level, running an on-chain Metaverse and an entire sovereign country on it. 
+The blockchain world and especially the Substrate/Polkadot environment is a perfect fit for running public administration, as governments are ledgers. They must be secure and transparent; public blockchains provide that.
+States, however, tend to use, if any, private blockchains. This must change, and we propose to become the pioneers of this change. 
+Current blockchains want to be great projects for the Web3 community first, and State oriented second. We are instead proposing a harmonious connection between the goals, which, in our opinion, aren't mutually exclusive. We have, unlike these other projects, real-life State governance experience. Hence we focus on:
+-  being recognized as a "government" project, doing what is expected well and then creating "hip" new ideas;
+-  Representative democracy (while not neglecting the awesome potential of direct democracy);
+-  division of powers between validators and politics (unseen in the ecosystem) and in the Montesquieu sense;
+-  responsibility of the Executive to the Legislative (a basic requirement for a "good" State);
+-  conservative code base, auditable, transparent;
+-  E-government, APIs, the realization that governments use many tools; and 
+-  not wanting to be the Swiss Army Knife which nobody needs but a set of sharp, specialized projects integrated into a whole;
+We are following along with Polkadot's future vision of hosting decentralized nation-states: 
+https://wiki.polkadot.network/docs/build-pdk#digital-nation-states
+As builders of the infrastructure to support a country's digitization, we want to utilize the performance and security of the Rust programming. Parity's vision for substrate aligns with our vision of providing e-services for our citizens.
+
+### Funds Required   
+We ask for level 2 funding. We want to put the Liberland blockchain under the substrate builders program to get technical support from Parity so that we can provide the best possible stability for our chain.
 
 
-We have currently had a very talented architect firm design and create our metaverse, that you can find more information about here:
-https://world.liberland.org/
+### The Future
+#### Outlook
+Land in Liberland, both the real and virtual versions thereof, will be tokenized into on-chain assets. 
+-  we aim to utilize our substrate-based blockchain for all our currency and e-governance services to all current and future citizens of Liberland;      
+-  offer our blockchain and coin to various exchanges;      
+-  connect the system to smart contract/DAO generators;    
+-  allow developers to create and build DAPPs;    
+-  create our judicial system; and   
+-  connect the blockchain to the metaverse.      
+Regarding the last topic, we have the following milestones, which might become the subject of a consecutive Grant Application:
 
-Our metaverse is currently being used for Virtual Reality Based conferences and social gatherings.
+
+### Virtual Land and Assets  
+Land in Liberland, both the real and virtual versions thereof, will be tokenized into on-chain assets.    
+The initial purchase of the land will be by an Initial Land Offering (ILO). After privatizing most land, further purchases will occur using Liberland's blockchain dex virtual marketplaces.     
 
 
+#### Merging the Real and the Virtual    
+Many marketplaces for digital items are currently available on blockchains (primarily the Ethereum blockchain), such as;
+http://rarible.com, https://opensea.io and http://marketplace.decentraland.org/.
+We will build tools to establish API connections with popular online marketplaces as an integral part of our project.    
+We will ensure that users can apply objects to other objects and that, combining those objects, effects that somewhat resemble what one might expect in real life.    
 
-## Future Plans
 
-Liberland blockchain will be the first candidate for digital decentralized nation states. Allowing the government to execute very similar to how a modern a voting based DAO(Decentralized autonomous organization) is.
+#### A marketplace for virtualized real assets
+Answering the call of a widespread demand and seeing that there is no comparable solution currently available and functional/user friendly to the extent which we would find desirable, VR Liberland will feature a marketplace of real-world goods.
+We will represent real-world goods:
+-  in the virtual world as avatars;   
+-  on the blockchain as on-chain assets;  
+-  by proof of their real-world existence to the prospective seller.
 
-### Long term vision
+## Additional Information 
 
-The Liberland blockchain is a project for the long term. We aim to onboard our current user base, which is currently over half a million users to use our chain for the majority of Liberland's e-government services.
+#### How did you hear about the Grants Program?    
+Our team is familiar with the Web3 Foundation and the works of Parity due to previous experience in substrates. 
 
-## Additional Information  
-
-**How did you hear about the Grants Program?** Our team members are familiar with both the Web3 Foundation and Parity's amazing work.
-
-Liberland's blockchain has not applied for any other grants at current moment.
-
-Read more about Liberland here:
-- https://liberland.org   
-- https://en.wikipedia.org/wiki/Liberland   
+#### Any other grants? 
+Liberland's blockchain project has not asked for any previous grants before. We plan to launch another grant application by Parity for the decentralized justice system of Liberland soon.
 
