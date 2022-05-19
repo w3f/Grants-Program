@@ -262,7 +262,31 @@ Therefore, ares-oracle is determined to build a decentralized, safe and stable i
 
 ## Development Status :open_book:
 - https://warehouseui.aresprotocol.io/
-  Multi price data source weight configuration
+  Multi price data source weight configuration front end
+  
+-  [Warehouse API](https://github.com/aresprotocols/warehouse#api)
+   > A centralized exchange price weight configurable service with golang， provides single exchange price query, weight aggregation price query, price history query, price request history query and price update interval setting
+    1. Get exchange price
+    2. Get price after aggregation
+    3. Get all price by symbol
+    4. Get coin history price
+    5. Get symbol request info
+    6. Get update price history
+
+- [Documentation](https://docs.aresprotocol.io/en)
+  * Introduce the concept of Oracle,
+  * Principle introduction and compiling source code
+  * How to access ares testnet
+
+- [Aresscan](https://aresscan.aresprotocol.io/ares)
+  > Aresscan is a Block Explorer and Analytics Platform for Ares, display ares price data, validator audit, validator prepayment reward claim.
+
+- [Gladios testnet](https://js.aresprotocol.io/?rpc=wss%3A%2F%2Fgladios.aresprotocol.io#/explorer) 
+
+- [Staking on evm](https://trojan.aresprotocol.io/)
+  > Regular and current staking mining on Eth and BSC
+
+- [Mars and Odyssey Parachain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fwss.mars.aresprotocol.io#/explorer)
 
 ## Development Roadmap :nut_and_bolt:
 
