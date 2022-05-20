@@ -14,7 +14,7 @@
 
 - [x] The [application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md) has been copied, renamed ( `project_name.md`) and updated.
 - [ ] I have read and understood the [FAQs](https://github.com/w3f/Grants-Program/blob/master/docs/faq.md), [application guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/grant_guidelines_per_category.md) and [announcement guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/announcement-guidelines.md).
-- [ ] A BTC or Ethereum (DAI/USDT) address for the payment of the milestones is provided inside the application.
+- [ ] A BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) address for the payment of the milestones is provided inside the application.
 - [ ] I have read and acknowledge the [terms and conditions](https://github.com/w3f/Grants-Program/blob/master/docs/T&Cs.md).
 - [ ] The software delivered for this grant will be released under an open-source license specified in the application.
 - [ ] The initial PR contains only one commit (squash and force-push if needed).
