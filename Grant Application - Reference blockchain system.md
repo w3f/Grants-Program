@@ -44,12 +44,14 @@ With our reference system, we expect that owners are willing to open and share t
 ### Ecosystem Fit
 
 **For online services:**
+
 The project could make Web3 online services more decentralized. With full composability, interoperability and compatibility, each online service could have different versions interoperable with each other without barriers, and each version could be composed by different parts made by different contributors purely out of founder’s control. Different works could coexist equally to meet the needs of different users, interconnect and combine with each other seamlessly to provide better online services together.
 
 With revenue tracking and distribution scheme, different works could collaborate with each other for mutual benefit rather than vicious competition for monopoly. New works could freely improve and upgrade existing old works without restriction because old works would allow them to do so for maximizing self-interests, and old works wouldn’t compress the emergence of innovative new works because they can share the profits from the new works built based on them.
 
 
 **For online service management (DAO):**
+
 By enabling fully decentralized online services, online service development and management could also be fully decentralized. Nowadays although we achieve free economy in the market, the production and collaboration within the organization like company are still highly central and planned, which is inefficient because the management cost is very high, and ineffective because the needs of users in the market may not reflected accurately and passed smoothly. 
 
 In our project, without such central planning and arraignment inside the organization, everyone who develop and manage online services on Ethererum called service managers could directly connect users without third-party intervention, and provide their services freely in the market to be selected and picked by users directly rather than checked and determined inside the organization first. It will achieve fully free market economy inside the organization by connecting users and service managers directly without centralized planning, allocation and control between them.
@@ -58,9 +60,18 @@ After founder of the work opens governance rights to the public, everyone would 
 
 
 **For users and service providers** (like drivers in Uber, or bloggers in YouTube):
+
 As the project provides unlimited versions of each online service, users can freely choose what they want without compromise. As different versions are interconnected sharing the same network and resources without monopoly, users can freely switch among them without any cost and barrier. 
 
 In this way, users can get best online services that fully protect their own digital rights, freedom and properties. As online services are made by public for public interests, they can be truly reliable and regulated without having more privileges for suppressing users and service providers. 
+
+
+**Use case**
+For example, currently one DeFi application couldn’t have multiple versions made by different people. If others change a DeFi protocol to make a new version of it, it couldn’t get the internal network and resources of the original version. For instance, Sushiswap improved Uniswap, but Uniswap couldn’t open and share its liquidity pool with Sushiswap. Sushiswap has to build a new protocol completely independent from Uniswap even though it’s based on Uniswap. In order to have its own liquidity, Sushiswap launched vampire attacks to scramble for Uniswap’s liquidity. 
+
+With our reference system, Uniswap can have unlimited new versions just like branches or forks made by anyone including Sushiswap. Uniswap opens and shares its internal users and network and allows anyone makes any changes on itself, so Sushiswap can access the liquidity pools of Uniswap and build their protocol based on them directly with no need to build their own from scratch. As the return, the earnings of the Sushiswap will be distributed with Uniswap as the incentive of its opening and sharing. Users don’t have to choose between Uniswap and Sushiswap, but can use both at the same time without separation.
+
+![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/use_case.png)
 
 ## Team :busts_in_silhouette:
 
@@ -97,8 +108,8 @@ Our reference system is a smart contract standard on blockchain that records the
 
 **Functions**
 1. Anyone can refer their new work to any old work to establish the reference relationship if their new work are based on the old work 
-2. By referring to the old work, anyone can freely connect, combine and change the old work to create their new work 
-3. Anyone can invest any work and get the shares of the work, and can pay for any work when using the work  
+2. By referring to the old work, anyone can freely connect, combine and change the old work to create their new work
+3. Anyone can invest any work and get the shares of the work, and can pay for any work when using the work 
 4. The earnings of the new work including purchase and investment will be distributed among all its referred old work, and redistributed in each work among all stakeholders according to their shares proportionally
 
 ![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/deliverables.png)
@@ -140,6 +151,7 @@ When creating a new work, a corresponding token will be minted automatically wit
 3. A **revenue tracking and allocation system** that distributes the earnings of the new work with its referred old work according to their reference relationship. The revenue of any work including usage and investment will be distributed with all its referred old work, and all investors holding its shares.
 
 All programs will be developed in !ink on Pallets.
+
 
 **Milestones:**
 
@@ -252,7 +264,7 @@ All programs will be developed in !ink on Pallets.
 |  1. | Specification | We will combine all our previous works above together to build the integrated system. We will specify the configurations and implementations of the whole system, and encourage everyone within the community to use, test and improve. |
 |  2. | Setup | We provide a repository that forms the basis of our deliverables. |
 |  3. | Core Types | We provide the core data and coding types in details. |
-|  1. | User Testing | We will make the testing plan and invite users for testing and evaluation. After that we will produce testing report, and improve our system continually based on that. |
+|  4. | User Testing | We will make the testing plan and invite users for testing and evaluation. After that we will produce testing report, and improve our system continually based on that. |
 
 ## Future Plans
 
