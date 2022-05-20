@@ -149,6 +149,67 @@ For example, the entire proposal implementation can be divided into 4 stages. Th
 
 The fund multi-signature committee will review the implementation process. If the committee approves the implementation of the proposal, then no action is needed. If the committee believes that the implementation goes against the description of the application, they can veto the proposal. If 7 of the 13 people vote against the proposal, then the proposal won't be passed and the remaining fees will not be released. Proposal applicants can continue to submit the implementation report and apply for review. Each stage can be reviewed for up to three times. If the implementation of one stage passes the review, the applicant will receive the fees for the next stage. If it fails to pass the review three times in a row, the remaining fees will not be released, the proposal will be officially terminated. That is a complete fee application process.
 
+##### 4. What is the UI of this DAO Multi-Signature Committee System?
+
+
+1-initialization
+
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/1-initialization.png)
+
+
+
+2-global-governance-system
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/2-global-governance-system.png)
+
+3-Committee
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/3-Committee.png)
+
+4-Member-List
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/4-Member-List.png)
+
+5-Committee-Voting-Details
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/5-Committee-Voting-Details.png)
+
+6-Committee-Impeachment
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/6-Committee-Impeachment.png)
+
+7-committee-vote
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/7-committee-vote.png)
+
+8-Financial-Details
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/8-Financial-Details.png)
+
+9-Initiate-Proposal
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/9-Initiate-Proposal.png)
+
+10-Proposal-Details-Voting-Period
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/10-Proposal-Details-Voting-Period.png)
+
+11-Proposal-Details-Publicity-Period
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/11-Proposal-Details-Publicity-Period.png)
+
+
+12-Proposal-Details-In-Progress
+
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/12-Proposal-Details-In-Progress.png)
+
+13-Proposal-Details-Completed
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/Multi-signature-Management-Committee/13-Proposal-Details-Completed.png)
+
+
 
 
 
@@ -194,6 +255,69 @@ Meanwhile, in order to guarantee the liquidity of the deposited ERC20 governance
 ⑻   The transfer market orders contain information as below: order serial No., NFT serial No., NFT initial creator, NFT current holder, NFT set time, NFT expiry date, unlock remaining time, NFT transfer price, whole Token amount and transfer fees.
 
 ⑼   Anyone can buy the available NFTs through the transfer market and gain tokens included in this NFT. As soon as the hedging date expires, one can get withdraw the token from the bank with the NFT lock-position badge.
+
+
+##### 4. What is the UI of this DAO NFT Bank System?
+
+
+0-Create-NFT-Bank-1
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/0-Create-NFT-Bank-1.png)
+
+
+
+1-Create-NFT-Bank-2
+
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/1-Create-NFT-Bank-2.png)
+
+2-Bank
+
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/2-Bank.png)
+
+3-Bank-Pledge
+
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/3-Bank-Pledge.png)
+
+4- My-loan-information
+
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/4-My-loan-information.png)
+
+
+5-My-Borrowing-Information-Order1
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/5-My-Borrowing-Information-Order1.png)
+
+6-My-Borrowing-Information-Order2
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/6-My-Borrowing-Information-Order2.png)
+
+7- have-lent
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/7-have-lent.png)
+
+8- Borrowing-Market
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/8-Borrowing-Market.png)
+
+9-Token-Transfer-Market-Purchase
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/9-Token-Transfer-Market-Purchase.png)
+
+10-Screening
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/10-Screening.png)
+
+11-Token-Transfer-Market-Sale
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/11-Token-Transfer-Market-Sale.png)
+
+12-Sale-Popup
+
+![image](https://raw.githubusercontent.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-docs/main/UI/DAO-NFT-Bank/12-Sale-Popup.png)
 
 
 
