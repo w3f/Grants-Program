@@ -239,7 +239,6 @@ The Equlibrium team will write and perform the testing designated by the specifi
 | 0e. | Marketing / Public Relations (case by case) | When appropriate, we will work with the W3F to publish articles and/or social media posts regarding our findings |
 | 1. | The test suite | A respository of Rust code quite like the [existing ZCash test suite](https://github.com/eqlabs/ziggurat). |
 | 2. | Final report | May be in the form of an email, markdown file, blog post, whichever is most approproate for the time and context. |
-(https://fluttering-gem-83c.notion.site/The-Ziggurat-Manual-88f6ab7d85774c5fb1bc12bcd64bf700) |
 | 3. | Security Disclosures | Though we will disclose these as soon as they are discovered, they are included here as a digest. **We will default to pricate disclosure of security vulnerabilities and otherwise follow W3F guidelines.**  |
 
 ## Future Plans
