@@ -48,7 +48,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Michael Choo -Had received investment from top cex capital in the industry. 
+- Michael Choo -Expert on global collaborations: he built technology collaborations for various government agencies, leading MBA schools, premier security companies and security media companies. Had received investment from top cex capital in the industry. 
 - Mo Ismail - Mo2.ae Managing Director，SnapCity.me Founder，five years at AT&T.
 -  Stephen Chen- Partner of Kentmoore Capital,NFT expert.Business Executive with a network of global family offices.Worked at JP Morgan 
 - Henry X-Software Technical Advisor.Senior technical developer, a Bitcoin believer, worked at Huobi in the past.（one of the former partners）
