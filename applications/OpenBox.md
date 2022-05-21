@@ -447,6 +447,9 @@ The team has completed the construction of the overall logical framework and the
 | 1b. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
 
 ## Future Plans
+JUN2022
+
+![image](https://user-images.githubusercontent.com/103482054/169665949-b8066648-0ffd-471f-9bec-ec2fbf9f8e2b.png)
 
 - ![image](https://user-images.githubusercontent.com/103482054/165083428-327a4e45-99ad-4cc3-8d74-06b2519f7f0d.png)
 ## Additional Information :heavy_plus_sign:
