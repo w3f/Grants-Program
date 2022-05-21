@@ -42,8 +42,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - What need(s) does your project meet?
 - Multi-chain NFT collection and transaction, High gas solution： NFT cross-chain trade , collection fun, and social sharing
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+  - There are some products with similar functions, but no platform supports multi-chain, cross-chain, and the logic of the mysterious box on the chain designed by itself like OpenBox. Moreover, OpenBox has advantages in brand promotion, operation, marketing, and creator resources.
 
 ## Team :busts_in_silhouette:
 
@@ -52,7 +51,8 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - Michael Choo -Had received investment from top cex capital in the industry. 
 - Mo Ismail - Mo2.ae Managing Director，SnapCity.me Founder，five years at AT&T.
 -  Stephen Chen- Partner of Kentmoore Capital,NFT expert.Business Executive with a network of global family offices.Worked at JP Morgan 
-- ...
+- Henry X-Software Technical Advisor.Senior technical developer, a Bitcoin believer, worked at Huobi in the past.（one of the former partners）
+
 
 ### Contact
 
