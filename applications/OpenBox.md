@@ -33,50 +33,56 @@ We expect the teams to already have a solid idea about your project's expected f
   . ![image](https://user-images.githubusercontent.com/103482054/165167074-f7f9c1ea-6500-4ac0-a0be-16cb6dfbaacb.png)
 
 Core functions:
-  function createMarketItem(address nftContract,uint256 tokenId,uint256 price) payable 
-  function deleteMarketItem(uint256 itemId) public
-  function createMarketSale(address nftContract,uint256 id) public payable
+     
+     function createMarketItem(address nftContract,uint256 tokenId,uint256 price) payable 
+     function deleteMarketItem(uint256 itemId) public
+     function createMarketSale(address nftContract,uint256 id) public payable
  
  Query functions:
-  function fetchActiveItems() public view returns (MarketItem[] memory) 
-  function fetchMyPurchasedItems() public view returns (MarketItem[] memory)
-  function fetchMyCreatedItems() public view returns (MarketItem[] memory) 
+ 
+     function fetchActiveItems() public view returns (MarketItem[] memory) 
+     function fetchMyPurchasedItems() public view returns (MarketItem[] memory)
+     function fetchMyCreatedItems() public view returns (MarketItem[] memory) 
+
 
 Make directories:
-  --nftmarket
-  --chain
-  --webapp
+
+    --nftmarket
+    --chain
+    --webapp
+  
+  
 NFT smart contract(ERC721):
  
-/ contracts/BadgeToken.sol
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+     // contracts/BadgeToken.sol
+     // SPDX-License-Identifier: MIT
+     pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/utils/Strings.sol";
-import "@openzeppelin/contracts/utils/Base64.sol";
+     import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+     import "@openzeppelin/contracts/utils/Strings.sol";
+     import "@openzeppelin/contracts/utils/Base64.sol";
 
-contract BadgeToken is ERC721 {
-    uint256 private _currentTokenId = 0; //tokenId will start from 1
+     contract BadgeToken is ERC721 {
+     uint256 private _currentTokenId = 0; //tokenId will start from 1
 
-    constructor(
+     constructor(
         string memory _name,
         string memory _symbol
-    ) ERC721(_name, _symbol) {
+     ) ERC721(_name, _symbol) {
 
-    }
-function _getNextTokenId() private view returns (uint256) {
+     }
+     function _getNextTokenId() private view returns (uint256) {
         return _currentTokenId+1;
-    }
-function _incrementTokenId() private {
+     }
+     function _incrementTokenId() private {
         _currentTokenId++;
-    }function _incrementTokenId() private {
+     }function _incrementTokenId() private {
         _currentTokenId++;
-    }
-  function tokenURI(uint256 tokenId) override public pure returns (string memory) {
+     }
+     function tokenURI(uint256 tokenId) override public pure returns (string memory) {
         string[3] memory parts;
 
-        parts[0] = "<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 350 350'><style>.base { fill: white; font-family: serif; font-size: 300px; }</style><rect width='100%' height='100%' fill='brown' /><text x='100' y='260' class='base'>";
+        parts[0] = "<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 350 350'><style>.base { fill: white; font-family: serif;        font-size: 300px; }</style><rect width='100%' height='100%' fill='brown' /><text x='100' y='260' class='base'>";
 
         parts[1] = Strings.toString(tokenId);
 
@@ -93,29 +99,29 @@ function _incrementTokenId() private {
             ))));
 
         return string(abi.encodePacked("data:application/json;base64,", json));
-    }    
-}
+        }    
+    }
 
-MarketPlace smart contract:
+  MarketPlace smart contract:
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import "@openzeppelin/contracts/utils/Address.sol";
+    import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+    import "@openzeppelin/contracts/utils/Counters.sol";
+    import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+    import "@openzeppelin/contracts/utils/Address.sol";
 
-import "hardhat/console.sol";
+    import "hardhat/console.sol";
 
-contract NFTMarketplace is ReentrancyGuard {
-  using Counters for Counters.Counter;
-  Counters.Counter private _itemCounter;//start from 1
-  Counters.Counter private _itemSoldCounter;
+    contract NFTMarketplace is ReentrancyGuard {
+    using Counters for Counters.Counter;
+    Counters.Counter private _itemCounter;//start from 1
+    Counters.Counter private _itemSoldCounter;
 
-  address payable public marketowner;
-  uint256 public listingFee = 0.025 ether;
+    address payable public marketowner;
+    uint256 public listingFee = 0.025 ether;
 
-  enum State { Created, Release, Inactive }
+    enum State { Created, Release, Inactive }
 
-  struct MarketItem {
+    struct MarketItem {
     uint id;
     address nftContract;
     uint256 tokenId;
@@ -123,11 +129,11 @@ contract NFTMarketplace is ReentrancyGuard {
     address payable buyer;
     uint256 price;
     State state;
-  }
+    }
 
-  mapping(uint256 => MarketItem) private marketItems;
+    mapping(uint256 => MarketItem) private marketItems;
 
-  event MarketItemCreated (
+    event MarketItemCreated (
     uint indexed id,
     address indexed nftContract,
     uint256 indexed tokenId,
@@ -135,9 +141,9 @@ contract NFTMarketplace is ReentrancyGuard {
     address buyer,
     uint256 price,
     State state
-  );
+    );
 
-  event MarketItemSold (
+    event MarketItemSold (
     uint indexed id,
     address indexed nftContract,
     uint256 indexed tokenId,
@@ -145,29 +151,29 @@ contract NFTMarketplace is ReentrancyGuard {
     address buyer,
     uint256 price,
     State state
-  );
+    );
 
-  constructor() {
+    constructor() {
     marketowner = payable(msg.sender);
-  }
+     }
 
-  /**
-   *  Returns the listing fee of the marketplace
-   */
-  function getListingFee() public view returns (uint256) {
+    /**
+    *  Returns the listing fee of the marketplace
+    */
+    function getListingFee() public view returns (uint256) {
     return listingFee;
-  }
+     }
 
-  /**
-   *  create a MarketItem for NFT sale on the marketplace.
-   * 
-   * List an NFT.
-   */
-  function createMarketItem(
+    /**
+    *  create a MarketItem for NFT sale on the marketplace.
+    * 
+    * List an NFT.
+    */
+    function createMarketItem(
     address nftContract,
     uint256 tokenId,
     uint256 price
-  ) public payable nonReentrant {
+    ) public payable nonReentrant {
 
     require(price > 0, "Price must be at least 1 wei");
     require(msg.value == listingFee, "Fee must be equal to listing fee");
@@ -199,17 +205,17 @@ contract NFTMarketplace is ReentrancyGuard {
       address(0),
       price,
       State.Created
-    );
-  }
+      );
+     }
 
-  /**
-   *  delete a MarketItem from the marketplace.
-   * 
-   * de-List an NFT.
-   * 
-   * todo ERC721.approve can't work properly!! comment out
-   */
-  function deleteMarketItem(uint256 itemId) public nonReentrant {
+    /**
+    *  delete a MarketItem from the marketplace.
+    * 
+    * de-List an NFT.
+    * 
+    * todo ERC721.approve can't work properly!! comment out
+    */
+    function deleteMarketItem(uint256 itemId) public nonReentrant {
     require(itemId <= _itemCounter.current(), "id must <= item count");
     require(marketItems[itemId].state == State.Created, "item must be on market");
     MarketItem storage item = marketItems[itemId];
@@ -227,21 +233,21 @@ contract NFTMarketplace is ReentrancyGuard {
       address(0),
       0,
       State.Inactive
-    );
+      );
 
-  }
+     }
 
-  /**
-   * (buyer) buy a MarketItem from the marketplace.
-   * Transfers ownership of the item, as well as funds
-   * NFT:         seller    -> buyer
-   * value:       buyer     -> seller
-   * listingFee:  contract  -> marketowner
-   */
-  function createMarketSale(
+    /**
+    * (buyer) buy a MarketItem from the marketplace.
+    * Transfers ownership of the item, as well as funds
+    * NFT:         seller    -> buyer
+    * value:       buyer     -> seller
+    * listingFee:  contract  -> marketowner
+    */
+    function createMarketSale(
     address nftContract,
     uint256 id
-  ) public payable nonReentrant {
+    ) public payable nonReentrant {
 
     MarketItem storage item = marketItems[id]; //should use storge!!!!
     uint price = item.price;
@@ -267,75 +273,75 @@ contract NFTMarketplace is ReentrancyGuard {
       msg.sender,
       price,
       State.Release
-    );    
-  }
+      );    
+      }
 
-  /**
-   * Returns all unsold market items
-   * condition: 
-   *  1) state == Created
-   *  2) buyer = 0x0
-   *  3) still have approve
-   */
-  function fetchActiveItems() public view returns (MarketItem[] memory) {
-    return fetchHepler(FetchOperator.ActiveItems);
-  }
+     /**
+     * Returns all unsold market items
+     * condition: 
+     *  1) state == Created
+     *  2) buyer = 0x0
+     *  3) still have approve
+     */
+     function fetchActiveItems() public view returns (MarketItem[] memory) {
+     return fetchHepler(FetchOperator.ActiveItems);
+     }
 
  
-  function fetchMyPurchasedItems() public view returns (MarketItem[] memory) {
-    return fetchHepler(FetchOperator.MyPurchasedItems);
-  }
+     function fetchMyPurchasedItems() public view returns (MarketItem[] memory) {
+     return fetchHepler(FetchOperator.MyPurchasedItems);
+     }
 
-  function fetchMyCreatedItems() public view returns (MarketItem[] memory) {
-    return fetchHepler(FetchOperator.MyCreatedItems);
-  }
+     function fetchMyCreatedItems() public view returns (MarketItem[] memory) {
+     return fetchHepler(FetchOperator.MyCreatedItems);
+     }
 
-  enum FetchOperator { ActiveItems, MyPurchasedItems, MyCreatedItems}
+     enum FetchOperator { ActiveItems, MyPurchasedItems, MyCreatedItems}
 
-   function fetchHepler(FetchOperator _op) private view returns (MarketItem[] memory) {     
-    uint total = _itemCounter.current();
+     function fetchHepler(FetchOperator _op) private view returns (MarketItem[] memory) {     
+     uint total = _itemCounter.current();
 
-    uint itemCount = 0;
-    for (uint i = 1; i <= total; i++) {
+     uint itemCount = 0;
+     for (uint i = 1; i <= total; i++) {
       if (isCondition(marketItems[i], _op)) {
         itemCount ++;
+       }
       }
-    }
 
-    uint index = 0;
-    MarketItem[] memory items = new MarketItem[](itemCount);
-    for (uint i = 1; i <= total; i++) {
+     uint index = 0;
+     MarketItem[] memory items = new MarketItem[](itemCount);
+     for (uint i = 1; i <= total; i++) {
       if (isCondition(marketItems[i], _op)) {
         items[index] = marketItems[i];
         index ++;
+        }
       }
-    }
-    return items;
-  } 
+     return items;
+    } 
 
-  function isCondition(MarketItem memory item, FetchOperator _op) private view returns (bool){
+    function isCondition(MarketItem memory item, FetchOperator _op) private view returns (bool){
     if(_op == FetchOperator.MyCreatedItems){ 
       return 
         (item.seller == msg.sender
           && item.state != State.Inactive
         )? true
          : false;
-    }else if(_op == FetchOperator.MyPurchasedItems){
+     }else if(_op == FetchOperator.MyPurchasedItems){
       return
         (item.buyer ==  msg.sender) ? true: false;
-    }else if(_op == FetchOperator.ActiveItems){
+     }else if(_op == FetchOperator.ActiveItems){
       return 
         (item.buyer == address(0) 
           && item.state == State.Created
           && (IERC721(item.nftContract).getApproved(item.tokenId) == address(this))
         )? true
          : false;
-    }else{
-      return false;
-    }
-   }
+      }else{
+        return false;
+      }
+      }
 
-   }
+      }
    
 
   
