@@ -427,7 +427,7 @@ The team has completed the construction of the overall logical framework and the
 | 1a. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 2. | Use Substrate  to be compatible with Solidity contracts | Develop NFT, minting, and trading contracts for BSC using Substrate FRAME EVM compatible with Solidity.And complete the NFT development support of ETH and Polygon that belong to EVM.|  
 | 3. | Backend | Complete the back-end user name, collection information management, data retrieval, NFT trade price tracking function development..., related API access debugging.  https://github.com/UniqueNetwork/unique-marketplace-api#readme |  | 
-| 4. | Test | A test developed NFT MarketPlace contracts supporting ETH, BSC, and Polygon and generated test reports |  
+| 4. | Test | Complete relevant tests of NFT MarketPlace functions developed with Substrate and generate test reports |  
 
 
 ### Milestone 2 Example — Additional features
