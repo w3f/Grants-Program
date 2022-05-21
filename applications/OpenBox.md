@@ -51,7 +51,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 - Michael Choo -Had received investment from top cex capital in the industry. 
 - Mo Ismail - Mo2.ae Managing Director，SnapCity.me Founder，five years at AT&T.
-- Teddy Li -Former Pfizer Sr Director Technology,Rowan University Adjunct Business Strategy Professor
+-  Stephen Chen- Partner of Kentmoore Capital,NFT expert.Business Executive with a network of global family offices.Worked at JP Morgan 
 - ...
 
 ### Contact
@@ -85,7 +85,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - https://www.linkedin.com/in/mo-ismail-0468526b/
 - www.linkedin.com/in/michael-choo-b49353236
-- https://www.linkedin.com/in/teddyli/
+- https://www.linkedin.com/in/stephenchen/
 
 ## Development Status :open_book:
 
