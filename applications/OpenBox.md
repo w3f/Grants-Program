@@ -37,9 +37,10 @@ We expect the teams to already have a solid idea about your project's expected f
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+- OpenBox uses the Substrate architecture for development because Substrate not only supports WebAssembly (Wasm) and is perfectly compatible with EVM. OpenBox can support the casting and trading of NFTs based on EVM, RMRK, and Wasm. The substrate is also a necessary condition for OpenBox to support NFT cross-chain transactions in the later stage.
+- Target audience： own user base,NFT collectors，collaborative Investment Community,The former partner's cryptocurrency website has more than 700,000 DAU and can cooperate to convert users. He will also give guidance on traffic acquisition and user conversion.
 - What need(s) does your project meet?
+- Multi-chain NFT collection and transaction, High gas solution： NFT cross-chain trade , collection fun, and social sharing
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   - If so, how is your project different?
   - If not, are there similar projects in related ecosystems?
