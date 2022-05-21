@@ -32,7 +32,313 @@ We expect the teams to already have a solid idea about your project's expected f
   . ![image](https://user-images.githubusercontent.com/103482054/165156132-988d79ef-5017-4883-a159-5802f6ad26b2.png)
   . ![image](https://user-images.githubusercontent.com/103482054/165167074-f7f9c1ea-6500-4ac0-a0be-16cb6dfbaacb.png)
 
+Core functions:
+  function createMarketItem(address nftContract,uint256 tokenId,uint256 price) payable 
+  function deleteMarketItem(uint256 itemId) public
+  function createMarketSale(address nftContract,uint256 id) public payable
+ 
+ Query functions:
+  function fetchActiveItems() public view returns (MarketItem[] memory) 
+  function fetchMyPurchasedItems() public view returns (MarketItem[] memory)
+  function fetchMyCreatedItems() public view returns (MarketItem[] memory) 
 
+Make directories:
+  --nftmarket
+  --chain
+  --webapp
+NFT smart contract(ERC721):
+ 
+/ contracts/BadgeToken.sol
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
+import "@openzeppelin/contracts/utils/Base64.sol";
+
+contract BadgeToken is ERC721 {
+    uint256 private _currentTokenId = 0; //tokenId will start from 1
+
+    constructor(
+        string memory _name,
+        string memory _symbol
+    ) ERC721(_name, _symbol) {
+
+    }
+function _getNextTokenId() private view returns (uint256) {
+        return _currentTokenId+1;
+    }
+function _incrementTokenId() private {
+        _currentTokenId++;
+    }function _incrementTokenId() private {
+        _currentTokenId++;
+    }
+  function tokenURI(uint256 tokenId) override public pure returns (string memory) {
+        string[3] memory parts;
+
+        parts[0] = "<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 350 350'><style>.base { fill: white; font-family: serif; font-size: 300px; }</style><rect width='100%' height='100%' fill='brown' /><text x='100' y='260' class='base'>";
+
+        parts[1] = Strings.toString(tokenId);
+
+        parts[2] = "</text></svg>";
+
+        string memory json = Base64.encode(bytes(string(abi.encodePacked(
+            "{\"name\":\"Badge #", 
+            Strings.toString(tokenId), 
+            "\",\"description\":\"Badge NFT with on-chain SVG image.\",",
+            "\"image\": \"data:image/svg+xml;base64,", 
+            // Base64.encode(bytes(output)), 
+            Base64.encode(bytes(abi.encodePacked(parts[0], parts[1], parts[2]))),     
+            "\"}"
+            ))));
+
+        return string(abi.encodePacked("data:application/json;base64,", json));
+    }    
+}
+
+MarketPlace smart contract:
+
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/utils/Address.sol";
+
+import "hardhat/console.sol";
+
+contract NFTMarketplace is ReentrancyGuard {
+  using Counters for Counters.Counter;
+  Counters.Counter private _itemCounter;//start from 1
+  Counters.Counter private _itemSoldCounter;
+
+  address payable public marketowner;
+  uint256 public listingFee = 0.025 ether;
+
+  enum State { Created, Release, Inactive }
+
+  struct MarketItem {
+    uint id;
+    address nftContract;
+    uint256 tokenId;
+    address payable seller;
+    address payable buyer;
+    uint256 price;
+    State state;
+  }
+
+  mapping(uint256 => MarketItem) private marketItems;
+
+  event MarketItemCreated (
+    uint indexed id,
+    address indexed nftContract,
+    uint256 indexed tokenId,
+    address seller,
+    address buyer,
+    uint256 price,
+    State state
+  );
+
+  event MarketItemSold (
+    uint indexed id,
+    address indexed nftContract,
+    uint256 indexed tokenId,
+    address seller,
+    address buyer,
+    uint256 price,
+    State state
+  );
+
+  constructor() {
+    marketowner = payable(msg.sender);
+  }
+
+  /**
+   *  Returns the listing fee of the marketplace
+   */
+  function getListingFee() public view returns (uint256) {
+    return listingFee;
+  }
+
+  /**
+   *  create a MarketItem for NFT sale on the marketplace.
+   * 
+   * List an NFT.
+   */
+  function createMarketItem(
+    address nftContract,
+    uint256 tokenId,
+    uint256 price
+  ) public payable nonReentrant {
+
+    require(price > 0, "Price must be at least 1 wei");
+    require(msg.value == listingFee, "Fee must be equal to listing fee");
+
+    require(IERC721(nftContract).getApproved(tokenId) == address(this), "NFT must be approved to market");
+
+    // change to approve mechanism from the original direct transfer to market
+    // IERC721(nftContract).transferFrom(msg.sender, address(this), tokenId);
+
+    _itemCounter.increment();
+    uint256 id = _itemCounter.current();
+
+    marketItems[id] =  MarketItem(
+      id,
+      nftContract,
+      tokenId,
+      payable(msg.sender),
+      payable(address(0)),
+      price,
+      State.Created
+    );
+
+
+    emit MarketItemCreated(
+      id,
+      nftContract,
+      tokenId,
+      msg.sender,
+      address(0),
+      price,
+      State.Created
+    );
+  }
+
+  /**
+   *  delete a MarketItem from the marketplace.
+   * 
+   * de-List an NFT.
+   * 
+   * todo ERC721.approve can't work properly!! comment out
+   */
+  function deleteMarketItem(uint256 itemId) public nonReentrant {
+    require(itemId <= _itemCounter.current(), "id must <= item count");
+    require(marketItems[itemId].state == State.Created, "item must be on market");
+    MarketItem storage item = marketItems[itemId];
+
+    require(IERC721(item.nftContract).ownerOf(item.tokenId) == msg.sender, "must be the owner");
+    require(IERC721(item.nftContract).getApproved(item.tokenId) == address(this), "NFT must be approved to market");
+
+    item.state = State.Inactive;
+
+    emit MarketItemSold(
+      itemId,
+      item.nftContract,
+      item.tokenId,
+      item.seller,
+      address(0),
+      0,
+      State.Inactive
+    );
+
+  }
+
+  /**
+   * (buyer) buy a MarketItem from the marketplace.
+   * Transfers ownership of the item, as well as funds
+   * NFT:         seller    -> buyer
+   * value:       buyer     -> seller
+   * listingFee:  contract  -> marketowner
+   */
+  function createMarketSale(
+    address nftContract,
+    uint256 id
+  ) public payable nonReentrant {
+
+    MarketItem storage item = marketItems[id]; //should use storge!!!!
+    uint price = item.price;
+    uint tokenId = item.tokenId;
+
+    require(msg.value == price, "Please submit the asking price");
+    require(IERC721(nftContract).getApproved(tokenId) == address(this), "NFT must be approved to market");
+
+    IERC721(nftContract).transferFrom(item.seller, msg.sender, tokenId);
+
+    payable(marketowner).transfer(listingFee);
+    item.seller.transfer(msg.value);
+
+    item.buyer = payable(msg.sender);
+    item.state = State.Release;
+    _itemSoldCounter.increment();    
+
+    emit MarketItemSold(
+      id,
+      nftContract,
+      tokenId,
+      item.seller,
+      msg.sender,
+      price,
+      State.Release
+    );    
+  }
+
+  /**
+   * Returns all unsold market items
+   * condition: 
+   *  1) state == Created
+   *  2) buyer = 0x0
+   *  3) still have approve
+   */
+  function fetchActiveItems() public view returns (MarketItem[] memory) {
+    return fetchHepler(FetchOperator.ActiveItems);
+  }
+
+ 
+  function fetchMyPurchasedItems() public view returns (MarketItem[] memory) {
+    return fetchHepler(FetchOperator.MyPurchasedItems);
+  }
+
+  function fetchMyCreatedItems() public view returns (MarketItem[] memory) {
+    return fetchHepler(FetchOperator.MyCreatedItems);
+  }
+
+  enum FetchOperator { ActiveItems, MyPurchasedItems, MyCreatedItems}
+
+   function fetchHepler(FetchOperator _op) private view returns (MarketItem[] memory) {     
+    uint total = _itemCounter.current();
+
+    uint itemCount = 0;
+    for (uint i = 1; i <= total; i++) {
+      if (isCondition(marketItems[i], _op)) {
+        itemCount ++;
+      }
+    }
+
+    uint index = 0;
+    MarketItem[] memory items = new MarketItem[](itemCount);
+    for (uint i = 1; i <= total; i++) {
+      if (isCondition(marketItems[i], _op)) {
+        items[index] = marketItems[i];
+        index ++;
+      }
+    }
+    return items;
+  } 
+
+  function isCondition(MarketItem memory item, FetchOperator _op) private view returns (bool){
+    if(_op == FetchOperator.MyCreatedItems){ 
+      return 
+        (item.seller == msg.sender
+          && item.state != State.Inactive
+        )? true
+         : false;
+    }else if(_op == FetchOperator.MyPurchasedItems){
+      return
+        (item.buyer ==  msg.sender) ? true: false;
+    }else if(_op == FetchOperator.ActiveItems){
+      return 
+        (item.buyer == address(0) 
+          && item.state == State.Created
+          && (IERC721(item.nftContract).getApproved(item.tokenId) == address(this))
+        )? true
+         : false;
+    }else{
+      return false;
+    }
+  }
+
+}
+   
+
+  
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
@@ -110,7 +416,7 @@ The team has completed the construction of the overall logical framework and the
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | Documents containing the description of whole architecture design for Openbox NFT MarketPlace . |
 | 0c. | Testing Guide | Provide a full test suite and guide for NFT MarketPlace. Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Front End | Complete the development of the basic interactive page: https://openbox.io/ . |  
+| 0d. | Front End | Complete the development of the basic interactive page, which can demonstrate essential functional interaction: https://openbox.io/ .Use Unique marketplace's custom UI to improve front-end architecture.https://github.com/UniqueNetwork/unique-marketplace-frontend#readme https://github.com/UniqueNetwork/unique-marketplace-api#readme |  
 | 0e. | Article | We will publish an **OpenBox&Web3.Foundation**/workshop that explains the work done as part of the grant .  |
 | 1a. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 2. | Develop an NFT contract that also uses the EVM chain based on Substrate | Develop NFT, minting, and trading contracts for BSC using Substrate FRAME EVM compatible with Solidity|  
