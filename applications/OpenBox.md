@@ -419,14 +419,14 @@ The team has completed the construction of the overall logical framework and the
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0  |
+| 0a. | License | Apache 2.0 /MIT |
 | 0b. | Documentation | Documents containing the description of whole architecture design for Openbox NFT MarketPlace . |
 | 0c. | Testing Guide | Provide a full test suite and guide for NFT MarketPlace. Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Front End | Complete the development of the basic interactive page, which can demonstrate essential functional interaction: https://openbox.io/ .Use Unique marketplace's custom UI to improve front-end architecture.https://github.com/UniqueNetwork/unique-marketplace-frontend#readme https://github.com/UniqueNetwork/unique-marketplace-api#readme |  
 | 0e. | Article | We will publish an **OpenBox&Web3.Foundation**/workshop that explains the work done as part of the grant .  |
 | 1a. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 2. | Develop an NFT contract that also uses the EVM chain based on Substrate | Develop NFT, minting, and trading contracts for BSC using Substrate FRAME EVM compatible with Solidity|  
-| 3. |Extend ETH and Polygon on top of previous| Based on the previous Substrate and support for BSC, continue to expand to support ETH, Polygon, and other EVM-based multi-chain NFTs. |  
+| 2. | Use Substrate  to be compatible with Solidity contracts | Develop NFT, minting, and trading contracts for BSC using Substrate FRAME EVM compatible with Solidity.And complete the NFT development support of ETH and Polygon that belong to EVM.|  
+| 3. | Backend | Complete the back-end user name, collection information management, data retrieval, NFT trade price tracking function development..., related API access debugging.  https://github.com/UniqueNetwork/unique-marketplace-api#readme |  | 
 | 4. | Test | A test developed NFT MarketPlace contracts supporting ETH, BSC, and Polygon and generated test reports |  
 
 
@@ -441,9 +441,10 @@ The team has completed the construction of the overall logical framework and the
 | 0a. | License | Unlicense |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up, which will show how the new functionality(Mystery Box on Chain) works. |
 | 0c. | Testing Guide | Unit tests will fully cover core functions to ensure new functionality(Mystery Box on Chain) and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Front End | Based on the previous front-end page, add the interactive page of Mystery Box, and complete the contract access to the function of Mystery Box. |  
+| 0d. | Front End | Based on the previous front-end page, add the interactive page of Mystery Box |  
 | 0e. | Article | describing how to use the new functionality(Mystery Box on Chain)  |
-| 1a. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
+| 1a. | Mystery Box| To develop the mystery box contract, the mystery box, and the corresponding items will be mint to become NFT (NFTa and NFTb). The development contract completes the exchange of NFTa and NFTb and destroys NFTa. There will combine some of the platform's marketing gameplay as an attraction for users because it involves Business logic, considering the first-mover advantage of products and gameplay, so I didn't want to reveal it too early|
+| 1b. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
 
 ## Future Plans
 
