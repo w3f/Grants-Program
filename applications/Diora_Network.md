@@ -116,23 +116,14 @@ We are a fairly experienced team, though we will be adding more team members to 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0. | PoSM Substrate  | a PoW/PoS hybrid consensus protocol, we apply PoSM with voting and Double Validation to create, verify and vote
-for blocks smoothly and efficiently. Whenever potentials of fork branches are detected, we employ the idea
-in PoW to select the longest branch with the most votes and discard the other branches. With this hybrid
-approach, PoSM does not only increase the performance and security of blockchain, but also reduce the
-fork situation in an efficient and practical manner. DPoS is similar to PoSM in the sense
-that masternodes (block creators or witnesses in DPoS) are elected through a voting system. However,
-Diora requires that masternodes need to deposit a required minimum amount of DIOR to become
-a masternode candidate, which puts more pressure on the masternodes to work honestly. Furthermore, the
-Double Validation mechanism lowers the probability of handshaking attacks and having
-invalid blocks. With a maximum of 150 masternodes elected (and this number of masternodes can be changed based on the decentralized governance through voting)  |
+| 0. | PoSM Substrate  | a PoW/PoS hybrid consensus protocol, we apply PoSM with voting and Double Validation to create, verify and vote for blocks smoothly and efficiently. Whenever potentials of fork branches are detected, we employ the idea in PoW to select the longest branch with the most votes and discard the other branches. With this hybrid approach, PoSM does not only increase the performance and security of blockchain, but also reduce the fork situation in an efficient and practical manner. DPoS is similar to PoSM in the sense that masternodes (block creators or witnesses in DPoS) are elected through a voting system. However, Diora requires that masternodes need to deposit a required minimum amount of DIOR to become a masternode candidate, which puts more pressure on the masternodes to work honestly. Furthermore, the Double Validation mechanism lowers the probability of handshaking attacks and having invalid blocks. With a maximum of 150 masternodes elected (and this number of masternodes can be changed based on the decentralized governance through voting)  |
 | 1. | PoSM Smart Contracts      | BlockSigner.sol, DioraRandomize.sol, Validator.sol | 
 | 2. | Diora Gov Dapp       | Our governance dapp "DioraGov", will provide a professional UI that allows users to see the list of masternodes and candidates, to deposit 25k DIOR to become a masternode candidate, to vote for masternodes, and to show masternode performance statistics. |
-| 3. | Pallets An Recipes | Staking related pallets: staking, session, authorship, im-online, offences, utility
-Governance related pallets: collective, membership, elections-phragmen, democracy, treasure |
+| 3. | Pallets An Recipes | Staking related pallets: staking, session, authorship, im-online, offences, utility amd Governance related pallets: collective, membership, elections-phragmen, democracy, treasure |
 | 4. | Kusama Parachain Testnet         | We will launch a beta version of the Diora parachain built using cumulus live on the kusama test network with PoSM, full EVM compatiblity, Double Validation & Randomization for security guarantees. |
 | 5. | DioraScan      | DioraScan is a feature rich blockchain explorer that provides a user friendly experience, details and perfection-oriented user interface for Diora block explorer. DioraScan brings Diora’s transparency to users, because all block, transaction, finality, smart contracts, Dapp and token information are read from Diora and shown to users. Furthermore, DioraScan also offers technical visualizations and provides useful statistics about the Diora performance, token holders and other functionalities. |
 | 6. | Crowdloan Prep         | Preparation for the Diora network Crowdloan such as Liquid Rewards, Crowd loan rewards calculator, etc | 
+
 
 
 ## Additional Information
