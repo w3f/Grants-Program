@@ -12,8 +12,8 @@ Diora Network is a public EVM-compatible parachain for the Dotsama ecosystem. We
 
 Diora Network proposes the Proof of Stake Masternode (PoSM) consensus, which is a PoS based blockchain protocol with a fair voting mechanism, rigorous security guarantees, and uniform probability eventually. The consensus has the following key novelties:
 
-- Double Validation to strengthen security and reduce fork
-- Randomization to guarantee the fair and prevent handshaking attack
+- Double Validation to strengthen security and reduce forking
+- Randomization to guarantee the fair and prevent handshaking attacks
 - Fast confirmation time and efficient checkpoints for finality or re-base
 
 Blockchain technology is rapidly changing the world as we know it, but public and private blockchain networks are mostly still operating in isolation. Decentralized finance must be connected. Polkadot is enabling financial freedom, empowerment and connectivity that we’ve never experienced in history. We seek to accelerate this change through global connectivity, simple to use dApps & making decentralized finance accessible to anyone around the world with a internet connection.
@@ -21,7 +21,7 @@ Blockchain technology is rapidly changing the world as we know it, but public an
 
 ### Project Details
 
-The backbone of Diora's products and ecosystem is the Diora blockchain, with its innovative Proof of Stake Masternode (PoSM) consensus. PoSM does not only increase the performance and security of blockchain, but also reduce the fork situation in an efficient and practical manner.
+The backbone of Diora's products and ecosystem is the Diora blockchain, with its innovative Proof of Stake Masternode (PoSM) consensus. PoSM not only increases the performance and security of blockchain, but also reduces the fork risk in an efficient and practical manner.
 
 To facilitate interactions between users (including Stakers and Masternode owners and the Diora blockchain, 
 a set of products have been actively being developed, including DioraScan, DioraMaster (GOV), DioraDex, Diora Wallets, EVM & Substrate Token Bridges and testnet faucets.
@@ -36,10 +36,10 @@ Decentralized / Open Finance
 Diora relies on a system of 150 Masternodes with Proof of Stake Masternode (PoSM) consensus that can support low transaction fees and fast transaction confirmation times. Security, stability and chain finality are guaranteed via novel techniques such as double validation, staking via smart-contracts and true randomization processes.
 
 EVM Compatible
-Diora supports all EVM-compatible smart-contracts, protocols, and cross-chain token brdiges meaning any EVM Dapp can easily be migrated to Diora. New scaling techniques such as sharding, EVM parallelisation, private-chain generation, hardware integration will be continuously researched and incorporated into Diora's Masternode architecture. It will be an ideal scalable smart-contract public blockchain for decentralized apps, token issuances and token integrations for small and big businesses.
+Diora supports all EVM-compatible smart-contracts, protocols, and cross-chain token bridges meaning any EVM Dapp can easily be migrated to Diora. New scaling techniques such as sharding, EVM parallelisation, private-chain generation, hardware integration will be continuously researched and incorporated into Diora's Masternode architecture. It will be an ideal scalable smart-contract public blockchain for decentralized apps, token issuances and token integrations for small and big businesses.
 
 Gaming Networks
-Historically, games have been run by companies who control the supply and sale of in-game currencies as well as digital assets and collectibles. Users do not own the assets they buy or win on traditional gaming platforms. Blockchain offers us a credible way of users taking control of their assets for ownership and trade. Diora can help increase the efficiency of performing transactions of gaming networks over a blockchain. Transactions such as buying or selling in-game currencies and buying and digital assets can be significantly sped up.
+Historically, games have been run by companies who control the supply and sale of in-game currencies as well as digital assets and collectibles. Users do not own the assets they buy or win on traditional gaming platforms. Blockchain offers us a credible way of enabling users to take control of their assets for ownership and trade. Diora can help increase the efficiency of performing transactions of gaming networks over a blockchain. Transactions such as buying or selling in-game currencies and buying and digital assets can be significantly sped up.
 
 Payments
 Integrate DeFi Payments on your Dapps with a few simple steps. Settle payments on-chain whenever needed. Payment transactions on Diora can be confirmed in sub-seconds due to faster block generation times while incurring significantly lower fees. Make payments smoother and friction-free for users on your Dapps. Diora provides payment APIs/SDKs for Dapps, merchant, and users to instantly accept or pay in crypto assets like ERC20 tokens.
@@ -75,7 +75,7 @@ It should be noted that we are actively recruiting new team members for various 
 
 ### Team’s experience
 
-We are an fairly experienced team, tho we will be adding more team members to fill various roles.  With over 3 years experience in building with solidity and web3. I also personally have been learning substrate for the past 8 months and believe we have good knowledge on how to run and build a successful layer 1 evm chain.
+We are a fairly experienced team, though we will be adding more team members to fill various roles.  With over 3 years experience in building with solidity and web3. I also personally have been learning substrate for the past 8 months and believe we have good knowledge on how to run and build a successful layer 1 evm chain.
 
 ### Code Repos
 
@@ -125,18 +125,16 @@ that masternodes (block creators or witnesses in DPoS) are elected through a vot
 Diora requires that masternodes need to deposit a required minimum amount of DIOR to become
 a masternode candidate, which puts more pressure on the masternodes to work honestly. Furthermore, the
 Double Validation mechanism lowers the probability of handshaking attacks and having
-invalid blocks. With a maximum of 150 masternodes elected (and this
-number of masternodes can be changed based on the decentralized governance through voting)  |
-| 1. | PoSM Smart Contracts        | BlockSigner.sol, DioraRandomize.sol, Validator.sol | 
-| 2. | Diora Gov Dapp       | Our governance dapp "DioraGov", will provide a professional UI that allows to see the list of masternodes and candidates, to deposit 25k DIOR to become a masternode candidate, to vote for masternodes, and to show masternode performance statistics. |
+invalid blocks. With a maximum of 150 masternodes elected (and this number of masternodes can be changed based on the decentralized governance through voting)  |
+| 1. | PoSM Smart Contracts      | BlockSigner.sol, DioraRandomize.sol, Validator.sol | 
+| 2. | Diora Gov Dapp       | Our governance dapp "DioraGov", will provide a professional UI that allows users to see the list of masternodes and candidates, to deposit 25k DIOR to become a masternode candidate, to vote for masternodes, and to show masternode performance statistics. |
 | 3. | Pallets An Recipes | Staking related pallets: staking, session, authorship, im-online, offences, utility
 Governance related pallets: collective, membership, elections-phragmen, democracy, treasure |
-| 4. | Kusama Parachain Testnet         | We will launch a beta version of the Diora parachain built using culmbus live on the kusama test network with PoSM, full EVM compatiblity, Double Validation & Randomization for security guarantees. |
-| 5. | DioraScan      | DioraScan is a feature rich blockchain exlporer that provides a user friendly expernice, details and perfection-oriented user interface for Diora block explorer. DioraScan brings Diora’s transparency to users, because all block, transaction, finality, smart contracts, Dapp and token information are read from Diora and shown to users. Furthermore, DioraScan also offers technical visualizations and does useful statistics about the Diora performance, token holders and other functionalities. |
-| 6. | Crowdloan Prep         | Prepation for the Diora network Crowdloan such as Liquid Rewards, Crowd loan rewards calculator, etc | 
-
+| 4. | Kusama Parachain Testnet         | We will launch a beta version of the Diora parachain built using cumulus live on the kusama test network with PoSM, full EVM compatiblity, Double Validation & Randomization for security guarantees. |
+| 5. | DioraScan      | DioraScan is a feature rich blockchain explorer that provides a user friendly experience, details and perfection-oriented user interface for Diora block explorer. DioraScan brings Diora’s transparency to users, because all block, transaction, finality, smart contracts, Dapp and token information are read from Diora and shown to users. Furthermore, DioraScan also offers technical visualizations and provides useful statistics about the Diora performance, token holders and other functionalities. |
+| 6. | Crowdloan Prep         | Preparation for the Diora network Crowdloan such as Liquid Rewards, Crowd loan rewards calculator, etc | 
 
 
 ## Additional Information
 
-We understand the blockchain space is rapidly changing at we will research the latest technology to try implement into Diora such as ZkProof's, WASM development and IBC.
+We understand the blockchain space is rapidly changing and we will research the latest technology to try implement into Diora such as ZkProof's, WASM development and IBC.
