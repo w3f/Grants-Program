@@ -411,7 +411,7 @@ The team has completed the construction of the overall logical framework and the
 - **Full-Time Equivalent (FTE):**  5FTE
 - **Total Costs:** 50000 USD
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 — Implement Substrate Modules
 
 - **Estimated duration:** 2 month
 - **FTE:**  5 FTE
@@ -430,7 +430,7 @@ The team has completed the construction of the overall logical framework and the
 | 4. | Test | Complete relevant tests of NFT MarketPlace functions developed with Substrate and generate test reports |  
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Additional features
 
 - **Estimated Duration:** 1 month
 - **FTE:**  5
