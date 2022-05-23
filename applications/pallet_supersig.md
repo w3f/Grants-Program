@@ -246,6 +246,7 @@ pub fn remove_member(
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
 | 1. | Substrate module: pallet_supersig | We will create a Substrate pallet that will allow user you to create a "supersig" where users can be added and removed. All extrinsics will require a simpleMajority to approve. The clear difference from multisig is that the supersig address is not a composite of its signatories, therefore it will stay static when adding or removing signatories.   |  
+| 2. | Benchmarking | The pallet will be benchmarked and unit tested using worst case weightings. |
 
 
 ### Milestone 2 — Supersig for Polkadot JS UI
