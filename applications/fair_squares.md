@@ -28,16 +28,15 @@ For our the social mission to be succesful we require several actions on-chain, 
 
 - Our Motivativation.
 
-It is exciting to see the rise of DeFi, the increasing TVL of liquidity, taking over traditional finance roles such as a market-maker, but not fully. We as a team are users of these (DeFi) products and believe there is not turning back from this. Nevertheless we are seeing the negative social economical consequences, collapsing protocols, or not being fully educated just because of a juicy APR. We want to focus on the blockchain technology that is equitable no matter the time-frame you enter that creates more intervowen links to the real-world and usable in the multi-chain world. We want people to still earn returns on their investments, while building equitable systems that are accesible for all. Another  stop the profit maximization mechanisms on basic needs. 
+It is exciting to see the rise of DeFi, the increasing TVL of liquidity, taking over traditional finance roles such as a market-maker, but not fully. We as a team are users of these (DeFi) products and believe there is not turning back from this. Nevertheless we are seeing the negative social economical consequences, collapsing protocols, or not being fully educated just because of a juicy APR. We want to focus on the blockchain technology that is equitable no matter the time-frame you enter that creates more intervowen links to the real-world and usable in the multi-chain world. We want people to still earn returns on their investments, while building equitable systems that are accesible for all. Another reason to motivate us is that we found a way we can stop profit maximization on basic needs while striving to keep both ends of the supply and demand in balance. 
 
 
 ### Project Details
 
 
-We are looking to develop a first usable version of the fair-squares node and interface. A fully rounded MVP that allows us to use the core functions. We have been already coding on this since September 2021 on the code-base while participating to the APAC hackathon. Where we in very hacky way achieved parts of milestones 1 & 2 reusing parts of old archived substrate.dev codecase and our own logic on top. 
+We are looking to develop a first usable version of the Fair squares node and interface. A fully rounded MVP that allows future users to use the core functions. We have been already coding on this since September 2021 on the code-base while participating to the APAC hackathon. Where we in very hacky way achieved parts of milestones 1 & 2 reusing parts of old archived substrate.dev codecase and our own logic on top. 
 
-
-Since then we having been discussing what the modules and pallets are required to make this a working software. We ave created this type of [interface](https://youtu.be/_8mnawfNpBQ) that will be for now our front-end. In the last milestone we have a UI sepcialist on board
+Since then we having been discussing what the modules and pallets are required to make this a working software. We ave created this type of [interface](https://youtu.be/_8mnawfNpBQ) that will be for _now_ our front-end. In the last milestone we set have a UI sepcialist on board
 
 #### Data model
 
@@ -45,7 +44,7 @@ Since then we having been discussing what the modules and pallets are required t
 classDiagram
 
 FS_Pallet *--* rolesFd_mod_rs
-FS_Pallet <|-- Treasury_Pallet
+FS_Pallet <|-- Housing_Fund
 rolesFd_mod_rs *--* rolesFd_item_rs 
 
 
@@ -55,7 +54,7 @@ class Nft_Pallet{
 
 }
 
-class Treasury_Pallet{
+class Housing_Fund{
     pot()
     spend_funds()
     propose_spend()
@@ -200,15 +199,11 @@ class Contribution_struct{
     
 ```
 
-The techstack that will be created:
-- Substrate node template, frame pallets and customized pallets based on FS logic
+The **techstack** that is currently focused on:
+- Substrate node, substrate pallets and customized pallets based on FS logic
 - Front-end template connected through WS,  Polkadot.js for testing specific features through the extensics.
 
-//TODO
- deliver per milestones drawings of the flows. 
-
-
-We are not aiming for an immediate parachain or live application. We are aiming for a live testnet, where a lot more testing, experimenting and interaction is required. After completion of all milestones we will  with other parachains are required to happen after the completed milestones. 
+We are not aiming for an immediate parachain or live application. We are building this system so we can publish it as a live project and will ask the companies such a municiaplities, housing coops, housing coperations to use it and give us feedback and get in further dialogue. We want to go first for a live testnet where further testing, experimenting, coordindation can take place on. This will give us the time to focus and iterate again after completion of all milestones.
 
 
 ### Ecosystem Fit
@@ -216,15 +211,15 @@ We are not aiming for an immediate parachain or live application. We are aiming 
 
 - Where and how does your project fit into the ecosystem?
 
-Looking at Kusama & Polkadot onboarding more specialized parachains offering generic functionality. We want to make use of these functions such as stable tokens, DIDs/ID, storage, privacy and messaging. We want to focus on creating a protocol and platform that focuses on solving affordable housing. It's a very specific idea in the substrate ecosystem, it has a social good focus with coordination of funds and actions in which we can automate the flow in the runtime. The fit is in the usage of relay-chain security and using all the parachain connectivity while allowing our own custom logic for the Fair Squares solution. 
+Looking at Kusama & Polkadot there are more specialized parachains being onboarded that are  offering generic functionality. We want to make use of these functions such as stable tokens, DIDs/ID, storage, privacy and messaging. We want to focus on creating a protocol and platform that focuses on solving affordable housing. It's a very specific idea in the substrate ecosystem, it has a social good focus with coordination of funds and actions in which we can automate the flow in the runtime. The fit is in the usage of relay-chain security and using all the parachain connectivity while allowing our own custom logic for the Fair Squares solution. 
 
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+- Who is your target audience ?
 
-The target audience for using the developed pallets are the end-users such as investors, sellers, verifiers, oracles. The current short-term goal is to further research and experiment. We are in talks with several institutions in the Netherlands that we rely on for a functional application for affordable housing. Our goal is to get into a functional MVP that can handle a case and learn from the interaction. This will help us gather information about the limitations of interactions between Blockchain and real-world processes, and devise additional solutions.
+The target audience for using the developed pallets are the end-users such as investors, sellers, verifiers, oracles. The current short-term goal is to further research and experiment. We are in talks with several institutions in the Netherlands that we rely on for further developing this concept to bring it in the longer term future to be a  functional application for affordable housing. Our goal is to get into a functional MVP that can handle a case and learn from the interaction. This will help us gather information about the limitations of interactions between Blockchain and real-world processes, and devise additional solutions.
 
 - What need(s) does your project meet?
 
-FS project focuses is on utilizing the available building blocks that are known in the cryptosphere to make affordable housing possible with maximum as possible transparancy, while respecting pseudonimity of the users. The real world integration of blockchains are still minimal. We have payments for pyshical goods, but nothing really interacting with the real world, business and retailers. We believe that crypto systems implementation will look very different 5-10 years from now, we hope kick that of by focusing on a real-world problem. For now the need is for the solution just to be functional, but combined with good token-design fair distributions that gives access to equitable systems for future users.
+FS project focuses is on utilizing the available building blocks that are known in the cryptospace to make affordable housing possible with maximum as possible transparancy, while respecting pseudonimity of the users. The real world integration of blockchains are still minimal. We have payments for pyshical goods, but nothing really interacting with the real world, business and retailers. We believe that crypto systems implementation will look very different 5-10 years from now, we hope kick-start that of by focusing on a real-world problem. For now the need is for the solution just to be functional, but combined with good token-design fair distributions that gives access to equitable systems for future users.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
@@ -250,16 +245,16 @@ No projects we aware of that are focusing on housing and/or real estate. There a
 
 ### Team's experience
 
-The idea of Fair Squares and work has been existing for 2 years. We wrote a light-paper to put things on paper and develop our idea further on paper. After that finished we decided to publish the idea in a hackathon to get some exposure and experience. The team that stuck after the APAC hackathon (Ilhan & Kazu). The team had limited experience in developing with Rust and Substrate, this is growing by the day.  After finishing the hackathon we had a much more clear idea of what we needed in terms of skills. After the hackathon Stephen joined us. We are not seasoned system developers, this will reflect in the FTE en Amount asked in the rest of our proposal, but we are very eager to achieve the milestones presented. 
+The idea of Fair Squares and work has been existing for 2 years. We wrote a [light-paper](https://drive.google.com/file/d/1Uz_eTUKOcvjQu9R5zYNVJoF2KNGts7kW/view)(Mahir and Ilhan) to have a document and share it with similar minded organisations. After publishing the light-paper we decided to take part in a hackathon to get some exposure and experience and maybe get to know some other substrate enthousiast. The tech-team that stayed together after the APAC hackathon were Ilhan & Kazu. We had limited experience in developing with Rust and Substrate. But we have come a long way since then and are comfortable in developing the below milestones with the team below. After finishing the hackathon we had a much more clear idea of what we needed in terms of skills. After the hackathon Stephen joined us. We are not seasoned system developers, this will reflect in the FTE en Amount asked in the rest of our proposal, but we are very eager to achieve the milestones presented and are confident we will. 
 
 
 
 - __Ilhan__: has experience with different blockchain development architectures. During his time with the Blocklab.nl (a innovation arm /subsidiary of the Port Authorities in Rotterdam) he has created different applications for Energy and Supply-chains using a decentralized stack. He was also a part of the first cohort runtime developers academy. Active member in Kusama / Polkadot blockchains governance and validating. 
 - __Kazu__: Engineer in mechanical design at Fuji Electric. He started studying Rust in August 2021 and participated in 3 hackathons (2 with Polkadot and 1 with Phala) between August and November 2021. Most of what he has done can be found on [GitHub](https://github.com/ndkazu).  The first original program written with Rust is demonstrated in this [video](https://youtu.be/sMpUnaz_AiY)
 - __Stephen__: Is a software engineer with experience mainly in .net environment, web app and desktop applications for different clients in banks, health and sport. He started to learn Rust in December with the objective to help concretize the project with his development skills according to the roadmap that we will define further. 
-- __Mahir__: is responsible for the market part of the FS research and the pilots with municipalities and other stakeholders. He is involved as an entrepreneur and consultant in various IT solutions such as [unlocQed](https://www.unlocQed.com) (honest recruitment) and works on Weconomics Blockchain projects and is responsible for research, design and valorization. Mahir is not taking part in the grants program as his contribution is not technical, but is vital part of the team for busuiness development. 
+- __Mahir__: is responsible for the market part of the FS research and the pilots with municipalities and other stakeholders. He is involved as an entrepreneur and consultant in various IT solutions such as [unlocQed](https://www.unlocQed.com) (honest recruitment) and works on [Weconomics blockchain projects](https://weconomics.org/) and is responsible for research, design and valorization. Mahir is not taking part in the grants program as his contribution is not technical, but is vital part of the team for busuiness development. 
 - __Thibaut__: MBA and industrial design graduate, 15+ years of experience designing digital products and services for finance, insurance, luxury industry and governments. Thibaut will be focusing on th design and the front-end mainly in the last milestone. 
-- __Mrisho__: Mrisho was a part of the APAC hackathon team but didn't get to really contribute. He is an active member in different substrate ecosystem channels. Studies intelligence robotics in multimedia at Malaysia University. Has 2 years experience on software engineering journey. 
+- __Mrisho__: Mrisho was a part of the APAC hackathon team but didn't get to really contribute. He is an active member in different substrate ecosystem channels. Studies intelligence robotics in multimedia at Malaysia University. Has 2 years experience on software engineering.
 
 
 Part of the team  team together has only ideating and been working on Fair squares and has not applied for other Web3F grants. 
@@ -292,26 +287,27 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - We started of with publishing a [light-paper](https://fair-squares.nl/lightpaper/fair/squares/2021/09/14/english_whitepaper.html). To bring light to the problem and structure the idea. We have interviewed 4 organisations about these research questions presented in the light-paper that we thought needed to be enlightened. The link to the research results can be found [here](https://docs.google.com/document/d/1Y50h3JthlXBGSiG92eQP8MghSd4H07N8GKhO9d_nz7w).
 - We have presented our project at amsterDOT conference, the link for the video can be found [here](https://youtu.be/rZdqHgn69wU)
-- We have discussed this project with several members of the polkadot community. We talked about it couple of times with Raul from the Polkadot community whether a treasury proposal would be good, we didn't go for this as we saw a lot of parachain development projects to Kusama of Polkadot being rejected by the council. 
+- We have discussed this project with several members of the polkadot community. We talked about it couple of times with Raul from the Polkadot community whether a treasury proposal would be good, we didn't go for this as we saw a lot of parachain development projects to Kusama of Polkadot being rejected by the council. With the Square-one developments and close after amsterDot we believed further developing the idea with support from W3F grant was the next best step.
+- Our repo is in active development, but with the milestones we will create according to spec. 
 
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
-- **Total Estimated Duration:** 7 months
+- **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):**  2
-- **Total Costs:** 36000 USD
+- **Total Costs:** 36720 USD
 
 ### Milestone 1 — Implement module roles, fund and role-verifiers 
 
-- **Estimated duration:** 6 weeks
+- **Estimated duration:** 5 weeks
 - **FTE:**  2
 - **Costs:** 7200 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up the fs-node and how to interact with the housing-fund functionality works and how to use it.|
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up the fs-node and how to interact with the housing-fund and creating a role and identity. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the roles modules. In which a user can register on-chain with minimal information and participate in the fair-squares platform |
@@ -325,7 +321,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Estimated Duration:** 6 weeks
 - **FTE:**  2
-- **Costs:** 7200 USD
+- **Costs:** 7920 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -341,7 +337,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Milestone 3  — Bidding Mechanism
 
-- **Estimated Duration:** 6 weeks
+- **Estimated Duration:** 5 weeks
 - **FTE:**  2
 - **Costs:** 7200 USD
 
@@ -359,7 +355,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Milestone 4  — finalizing sale, representative, finding a tenant 
 
-- **Estimated Duration:** 6 weeks
+- **Estimated Duration:** 5 weeks
 - **FTE:**  2
 - **Costs:** 7200 USD
 
@@ -377,7 +373,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Milestone 5 — Matching, reccuring payments and UI development
 
-- **Estimated Duration:** 6 weeks
+- **Estimated Duration:** 5 weeks
 - **FTE:**  2
 - **Costs:** 7200 USD
 
@@ -398,13 +394,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Short to medium term
 
-- We intend to enter the substrate builders program with our developed solution, hopefully we are elegible to be fast-tracked. 
-- We intend to bring-up a public live testnet with an interface in which everyone can use Fair squares. The developed solution is based on all of the functionality on the milestones. The time frames  might be tweaked so the platform can work faster. Setting roles will be publicly available and we will be monitoring the chain to see if we can assist and verify users. 
-- We will notify partners we have interviewed and see based on our solution we have built to get their feedback and see if we can continue experimenting with them to build a next iteration, not only the software but also the 
-- On the medium term we are looking to have funding that is neutral and benefits from this solution. This is usually falls into the corner of public institutions. 
+- We intend to enter the substrate builders program with our developed solution, we want to showcase our sol we are elegible to be fast-tracked. 
+- We intend to bring-up a public live testnet with an interface in which everyone can use Fair squares. The developed solution is based on all of the functionality on the milestones. The time frames will be tweaked so the time-frames will work faster. Setting roles will be publicly available and we will be monitoring the chain to see if we can assist and verify users. 
+- We will involve partners we have interviewed and see based on our solution we have built to get their feedback and see if we can continue experimenting with them to build a next iteration, not only the software but also in researching and pushing for a solution that is deploying as long as it's beneficial for the users and still serves the purpose making affordable housing possible. 
+- On the medium term we are looking get funded that is neutral for the project, without giving away equity/tokens from this solution that would benefit an early funder. The distribution is supposed to happen over long-term distribution. This type of funding usually falls into the corner of public institutions.
 
 ### Long Term
-In 1-3 years from now we hope to found a legal framework and partnership with municipality, state or governmental level that gives us the pass to implement this. We aim to organize from the bottom-up with other parties that find this relevant and iterate together with them. Ideally we would needed to get funded by a neutral party that benefits from this. But we like to take it step for step. 
+In 2-4 years from now we hope to co-founded, co-researhed a legal framework a more other institutions where the outlook for deployment is clear. We are laying strong ties with municipalities or state-level governmental instituions that will allow us the sand-box enviroment to implement this. We aim to organize from the bottom-up with other parties that find this relevant and iterate together with them. But we like to take it step for step and this grant will give us the fundamental code that will showcase it's techincally safe and possible, while recorded right. 
 
 ## Additional Information :heavy_plus_sign:
 
@@ -415,4 +411,4 @@ We have been around in the ecosystem for some time and we knew from the W3F gran
   - We have all finished most of the substrate.dev tutorials and guides that are available. We are well aware of all usable pallets the tools and support places we can ask.
   - Since the amsterDOT some teams such as Acala have offered to also support technically and other ways. Before the amsterDot we were in talks with Litentry for the DID programme, this resulted in a technical chat with their runtime engineers that we can get technical support from, but the application is not continuing anymore because of a change in their structure. 
   - We are in talks with municipalities in the Netherlands to build towards a case and apart from the technical part, we just need the partnerships and coalition just as much as the node-software.
-  - Some structural parts of the milestones are done in the branche [structure-template](https://github.com/Fair-Squares/fair-squares/tree/structure_template)
+  - Some structural parts of the milestones are done in the branche [structure-template](https://github.com/Fair-Squares/fair-squares/tree/structure_template), 
