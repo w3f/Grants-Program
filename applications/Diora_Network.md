@@ -8,6 +8,10 @@
 
 ### Overview
 
+
+https://user-images.githubusercontent.com/49777543/169790482-a3fb8c03-4df0-4858-a494-7cc911318f0f.mp4
+
+
 Diora Network is a public EVM-compatible parachain for the Dotsama ecosystem. We are hoping to realize 2000+ TPS utilizing advanced PoSM with Double Validation & Randomization for security guarantees.
 
 Diora Network proposes the Proof of Stake Masternode (PoSM) consensus, which is a PoS based blockchain protocol with a fair voting mechanism, rigorous security guarantees, and uniform probability eventually. The consensus has the following key novelties:
