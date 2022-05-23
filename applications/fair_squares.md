@@ -45,16 +45,14 @@ Since then we having been discussing what the modules and pallets are required t
 
 The techstack that will be created:
 - Substrate node template, frame pallets and customized pallets based on FS logic
-- Front-end template connected through WS + Polkadot.js for testing specific features.
+- Front-end template connected through WS,  Polkadot.js for testing specific features through the extensics.
 
 //TODO
  deliver per milestones drawings of the flows. 
 
 
-//REMOVE: 
-What your project is _not_ or will _not_ provide or implement:
-
 We are not aiming for an immediate parachain or live application. We are aiming for a live testnet, where a lot more testing, experimenting and interaction is required. After completion of all milestones we will  with other parachains are required to happen after the completed milestones. 
+
 
 ### Ecosystem Fit
 
@@ -113,7 +111,7 @@ Part of the team  team together has only ideating and been working on Fair squar
 
 - https://github.com/Fair-squares  - Github Organisation
 - https://github.com/Fair-Squares/fair-squares - substrate node-software
-- https://github.com/Fair-Squares/front-end-template - front-end for FS
+- https://github.com/Fair-Squares/fair-square-front-end- front-end for FS
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
@@ -160,10 +158,10 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the roles modules. In which a user can register on-chain with minimal information and participate in the fair-squares platform |
-| 1. |  **pallet-roles** | We will create a Substrate pallet in which users can set their roles when they register, for now this will be a single role per address. They can choose between investor, seller, tenant, servicer (generic). Picking a role should give the user the rights to fullfill it's role in the coming modules. | 
+| 1. |  **pallet-roles** | We will create a Substrate pallet in which users can set their roles when they register, for now this will be a single role per address. They can choose between investor, seller, tenant, servicer (generic in this milestone). Picking a role should give the user the rights to fullfill it's role in the coming modules. | 
 | 2. | __pallet-housing-fund__ | We will create a Substrate module in wich users can desposit and withdraw their funds. This fund registers which `accountId`, `amount`, and `blocknr` the funds are commited. Other variables such as the `total_contribution_user` keep up the total per user and if a user has `withdrawn(bool)` their funds. The housing fund needs to have a getter for the `total_funds`. These storages will be used further in next modules for the selection of investors. The housing fund will bid for a house, if it has the funds to bid for an asset, so it also needs a function to allow the bidding mechanism to `reserve`, `lock` and `transfer` the amount out of the housing fund and eventually is able to bid. |  
 | 3. | module: **role-verifier** | built in the **roles-pallet**, this module will focus on the roles that need verification, such as businesses that will report data on-chain. These roles will be appraisers, notaries, technical verifiers, these roles might again verify retailers or other users.| 
-| 4. | Substrate chain | The end-result after this milestone that on current chain. Users and businesses should be able to register. The verification of roles will at this point be done with the help of the sudo key or activate a verifier or KYC activator that can do the rest. If roles are set users can contribute, as it will be mandatory to invest with the role.  This will be in the future connected to a DID system and KYC (not our focus at this moment). With role setting which will be built on in further milestones. |  
+| 4. | Substrate chain _M1_ | The end-result after this milestone that on current chain. Users and businesses should be able to register. The verification of roles will at this point be done with the help of the sudo key or activate a verifier or KYC activator that can do the rest. If roles are set users can contribute, as it will be mandatory to invest with the role.  This will be in the future connected to a DID system and KYC (not our focus at this moment). With role setting which will be built on in further milestones. |  
 
 
 ### Milestone 2  — Onboarding a house (asset)
@@ -181,7 +179,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0e. | Article | We will publish an **article** that explains the onboarding module, governance structure for onboarding a house and flows that are possible. 
 | 1. | **pallet-onboarding** | The asset (houses) are unique assets, for this the `pallet-uniques` will be used. The additional functionalities we will extend from the pallet-uniques add fracationalizing functionality. The asset needs to fractionalize after a sale is concluded to the new owners. Furthermore only a seller can onboard an asset we will set a deposit mechanism, so not everybody can just onbaord an asset. The user will have to present some proof in this early MVP that he/she is the legal owner, this will be coded in a shortcuted way. Currently we can't really connect live systems to proof an asset is our. 
 | 2. | **pallet-voting**| We will create a pallet on top the known frame pallets. collective pallet and devise the pallet to democratic systems that are required for FS. The housing-council will be very much the first line of defence and it's structure and selection is very similar to the council as we know from kusama/polkadot. The housing council will be able to asses an asset and approve, reject, request more info. We need to give the housing council access to these tools. When approved the asset can continue to the investor voting. The investor voting is set by their role. We can set a minimum to the investors of investing. We ask the investors to vote from a POV of wether they see the asset presented to them worthy of investing. The investors don't know with certainty that their capital will be allocated on the house their voting. It's being voted from the POV that the housing fund will be used.|  
-| 3. | Substrate chain | Pallets **onboarding** and **voting** will allow onboarding of assets even though it will be a very of onboarding assets while on-chain governance by the housing council act as a 2-step due diligence. The steps from milestone 1 will also be upgraded with this as we need new roles for council members. |  
+| 3. | Substrate chain _M2_ | Pallets **onboarding** and **voting** will allow onboarding of assets even though it will be a very of onboarding assets while on-chain governance by the housing council act as a 2-step due diligence. The steps from milestone 1 will also be upgraded with this as we need new roles for council members. |  
 
 
 ### Milestone 3  — Bidding Mechanism
@@ -193,18 +191,17 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains //TODO. 
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. Also there will be integration tests covering the pallets and modules of milestone 1 & 2. In the guide, we will describe how to run these tests. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains what the bidding mechanism does and why it's designed that way. 
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. Also there will be integration tests covering the pallets and modules of milestone 1,2 and 3. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains the bidding mechanism module, what purpose it serves and why it's necessary. governance structure for onboarding a house and flows that are possible. 
-| 1. | **pallet-bidding** | The bidding mechanism is key part of what makes FS fair, the bidding pallet focuses on calculating the allocations from the `housing_fund` it will assemble different investors according to the fair rule-set, which needs to be configurable on-chain. The Rules are as follows: _1._ First come, first serve (blocknr) _2._ If a share of the contribution is taken out the user will drop in the ranking (points ranking) _3._ No more than X% share per participant and no more than X participants. _4._ The housing fund is programmed to make a bid, but has to adhere to the above rules, then a bid can be placed.|
-| 3. | Module: **timer** | We need an on-chain mechanism that checks every X hours (session) if new and old assets are available and it can bid if it has enough funds in housing fund. If already a bid took place it takes no action. If the housing-fund doesn't have the 
-| 4. | Module: **fractioning** | When the bidding-pallet has assembled the set of investors. The percentages owned by the investors is known on-chain from the rules. 
-| 5. | Substrate chain | The combination of the previous milestones and this one, with **pallet-bidding** gives us the automation that fs can bid on a house, with a set of investors selected by the fair algorithm. If the bid is successful there be an asset with fractionalized owners based on the selection done by the bidding pallet. **Note**: _for this milestone we will take a shortcut with finalizing the sale, the next milestone we will focus on making it more secure the interaction with the off-chain world._ |  
+| 0e. | Article | We will publish an **article** that explains the bidding mechanism, what purpose it serves and why it's necessary. Furthermore in the artcile we will expand on the timer module and the flow of the bidding mechanism. The effects of the scenario's we will run through.
+| 1. | **pallet-bidding** | The bidding mechanism is a big part of what makes FS fair, the bidding pallets job is calculating the allocations from the `housing_fund` it will assemble different investors according to the fair rule-set, which will be be configurable on-chain. The Rules are as follows: _1._ First come, first serve (blocknr) based on deposit _2._ If a share of the contribution is taken out the user will drop in the ranking (points ranking) _3._ No more than X% share per participant and no more than X participants. _4._ The housing fund is programmed to make a bid, but has to adhere to the above rules, then a bid can be placed. When a bid is made, the set of investors are known, if the bid is succesful this is taken along with the fractional share investors get based on the price.|
+| 3. | Module: **timer** | The timer is the on-chain mechanism that checks every X hours (session) if new and old assets are available and it can bid on assets, if it has enough funds in housing fund. If already a bid took place it takes no action. If the housing-fund doesn't have the funds, it's doesn't bid. All events are registered. 
+| 4. | Module: **fractioning** | When the bidding-pallet has assembled the set of investors and the bid is succesful. This is passed along to the fractionalizing module that fractions the assets purchase price with the  the investors and gives them a share of the unique-asset.| 
+| 5. | Substrate chain _M3_ | The combination of the previous milestones and this one, with **pallet-bidding** gives us automation that FS can bid on a asset (house) based on the funds it has on-chain. In a still a simplified flow, however with the next milestone more on-chain verificaton is added based on verified roles in the off-chain world. **Note**: _for this milestone we will take a shortcut with finalizing the sale, the next milestone we will focus on making it more secure the interaction with the off-chain world._ |  
 
-### Milestone 4  — finalizing sale and finding a tenant 
+### Milestone 4  — finalizing sale, representative, finding a tenant 
 
-//New business roles, on-chain reporters ( notary)
 - **Estimated Duration:** 6 weeks
 - **FTE:**  2
 - **Costs:** 7200 USD
@@ -212,16 +209,16 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains //TODO. 
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. Also there will be integration tests covering the pallets and modules of milestone 1,2,3. In the guide, we will describe how to run these tests. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that walks through how finalization works, how this role can be acquired and why it was created. The same applies to the representative. Both have a different function and can be called upon after specific situations. We will also walk through 
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. Also there will be integration tests covering the pallets and modules of milestone 1,2,3,4 . In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains the the usage of the functionality, why it's designed this way. 
-| 1. | Module: **finalize** |Before the house title can be transfered to the fractional new owners if an asset sale is succesful, there needs to be check done by the appointed notary. It's needs to check if the asset is able to be transferred based on checks from it's own system. This will be ingrained in the **pallet-roles**|
-| 2. | Module: **representative** | When the sale of an asset is finalized, the new fractionalized owners need a representative is required to pick a tenant  that will represent the house owners and find a tenant. The house owners  |
+| 0e. | Article | We will publish an **article** that explains the the usage of the functionality in additon to the previous milestones. The article will emphasize why finalization of the asset acquirement is required, why a representative is needed and what it's role is. How other previous stakeholders interact with the new functions and roles.|
+| 1. | **pallet-finalizer** | Before the house title can be transfered to the fractional new owners when the sale of an asset sale is succesful there needs to be checks done by the appointed notary. This is the authority, also in the current finalization of the title transfers. Notaries make sure the new buyers are aware of what they are buing and the notary makes sure no one else can write the asset on their name. In FS's case this swap is done by the blockchain, but the notary would give the green light. The finalization will be it's own pallet and functionality will be expanded in the future. The roles will be set in **pallet-roles**, which gives the notary and the land registry users rights to let the exchange pass. The transfer titles need to be proofs, the proof for now will be simplified random hashes, but only the notary role should be allowed to and sigantures by the notary roles |
+| 2. | Module: **representative** | When the sale of an asset is finalized, the new fractionalized owners are to be assigned a representative. The representative of the owners finds a tenant from the pools of tentants registered on-chain. The representatitive has to find the match based on region, total inhabitants and costs. The tenant will have to provide all this information. that will represent the house owners and find a tenant. |
+| 3. | Module: **landlord-voting** | With the sale being finalized the new asset-owners/landlords can vote in a representative, vote over improvements, lay-down a representative if it doesn't perform or represent the best interest of the owners. This module is created in the **pallet-roles** and **pallet-voting** |
+| 4. | FS-chain | In milestones we build the functionality further with the **pallet-finalizer** the finalizer, gives us the certainty that a sworn trusting legal entity is able to finalize the sale and with the representatitve we us the finalization of the asset and fractional owners. With the following new modules landlord voting, we can give the shareholders of a house a say in who get's to be the representative. So the next steps for matching can be handled.   | 
 
-| 2. | Substrate chain | The combination of the previous milestones and this one, with **pallet-bidding** gives us the automation that fs can bid on a house, with a set of investors. This is what we want to achieve with this milestone.  | 
-
-### Milestone 5 — UI development
+### Milestone 5 — Matching, reccuring payments and UI development
 
 - **Estimated Duration:** 6 weeks
 - **FTE:**  2
@@ -234,8 +231,10 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** and **video** that explains what actions you can take on the front-end does and the build up of the several pages. 
-| 1. |  **front-end** | With the back-end being finished, we need an interface to showcase Before the house title can be transfered to the fractional new owners if an asset sale is succesful, there needs to be check done by the appointed notary. It's needs to check if the asset is able to be transferred. |
-| 2. | Total product FS | The combination of the previous milestones and this one, with UI gives us the  us the automation the first iteration of the Fair Squares platform that will allow us a crowdfunded fair housing protocol. | 
+| 1. |  Module: **matching** | We will expand on the tenants registration, we will be keeping when a tenant is registered, what region they are applying for and how big their family is. We will also epand on this on the asset (home) features side. So we can the offer with the demand. The representative, will have the  these two things. |
+| 2. |  **pallet-recurring-payments** | The renter will have to place a deposit and the monthly rent in. The rent can be credited per x-block basis. The recurring payment can also go in the negative if the renter cannot pay the rent on time, let's say per rule-of-law 14 days and it signals the representative after this time to get in touch. |
+| 2. |  **UI & frond-end** | During the time of development also in previous milestone we will have produced several wire-frames and a front-end frame we will work with. We want to have for each main section page, which are: Funding, Onboarding, Voting, Finalizing and Renting. These will be the most used functionalities. If time allows also a front-end a dashboard that shows the total homes that are on the platformm, the value locked etc. |
+| 2. | Total product FS | The combination of the previous milestones and this one, with UI gives us the  us the automation the first iteration of the Fair Squares platform that will allow us a crowdfunded fair housing protocol, with an simplified legal acceptance framework. | 
 
 
 ## Future Plans
@@ -254,8 +253,6 @@ In 1-3 years from now we hope to found a legal framework and partnership with mu
 
 **How did you hear about the Grants Program?** 
 We have been around in the ecosystem for some time and we knew from the W3F grants program since it's inception.
-
-
 
  Work you have already done?
   - We have all finished most of the substrate.dev tutorials and guides that are available. We are well aware of all usable pallets the tools and support places we can ask.
