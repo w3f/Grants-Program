@@ -19,57 +19,60 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-Current Web2 applications provide and manage online service to the public, but are still owned and controlled in private. Such a contradiction causes many problems like privacy invasion, personal data occupation and exclusive monopoly when the interests of public and private conflict. 
+Current Web2 applications provide and manage online services to the public, but are still owned and controlled in private. Such a contradiction causes problems like privacy invasion, personal data occupation and exclusive monopoly when public and private interests conflict. 
 
-In order to solve these problems to build a truly decentralized and communal Web3, we propose a blockchain reference system to enable and incentivize everyone to open and share their work so others can also manage and improve their work freely and equally. In our system, by referring to others’ work, everyone can build their new work based on the referred work, and the earnings of the new work will be distributed among all its referred old work. 
+To build a truly decentralized and communal Web3, we propose a blockchain-based reference system to enable and incentivize everyone to open and share their works so others can have equal opportunity to contribute to them for mutual benefits. By referring to others’ work, everyone can freely improve them and build new work based on them, and the earnings of the new work will be automatically distributed with all its referred works according to their agreement. 
 
-We believe in our system, creators of the public services will choose to give up their privileges in governance and everyone will have the same rights and freedom as them to develop and manage the public services because opening and sharing can give them more return than closure and monopoly. In this way, we can have large-scale permissionless, boundless, seamless online collaboration and governance to build a truly decentralized and fully incentive Web3 made by everyone, and for everyone.
+We believe in our system, creators or owners of each work will choose to open and share their works because with our incentive mechanism, opening and sharing can give them more return than closure and monopoly. Everyone can have the same rights and freedom as them to develop and improve their works easily on our fully composable and interoperable system. In this way, we can form unlimited, permissionless, and boundless Internet-scale online collaboration to build a fully decentralized and incentive Web3 made by everyone, and for everyone without private monopoly or privileges.
 
 
 ### Project Details
+In Web1 users read online content and use online services via protocols like SMTP, HTTP, and RSS. Protocols are decentralized that no single entity fully owns and controls them, but also resulted in no one having incentives to provide better public online services. Therefore, although being widely used, they still remain primitive unchanged until now. 
 
-In Web2 users are not just consumers, but also become service providers to create online content and provide online services on online platforms. Online platforms are owned and controlled privately, which give their owners incentives to manage and improve online services to the public better continuously. In this way Web2 online services have higher quality than Web1, but such centralization also causes many problems.
+In Web2 users are not just consumers, but also become service providers to create online content and provide online service on platforms. Those platforms are owned and controlled privately, which give their owners incentives to manage and improve online services to the public better continuously. In this way Web2 online services have higher quality than Web1, but such centralization also causes problems as service managers maximize self-interests at the expense of others in public.
 
-Web3 aims at solving the problem of centralization in Web2, and non-incentive in Web1 to make online services both decentralized and incentive. In Web3, online public services should be maintained and managed not by any centralized entity in private, but by users in public collectively making everyone have equal rights and freedom for self-governance without limitations. Users will not only consume and provide online services, but also contribute to the governance of the service together.
+Therefore Web3 aims at solving the problem of non-incentive in Web1, and centralization in Web2 to make online services both decentralized and incentive. In Web3, online public services should be maintained and managed not by any centralized entity in private, but by users in public collectively. Users will not only consume and provide online services, but also manage them together to protect their own digital rights, freedom and assets. 
 
-Some Web3 projects try to break the barriers among different applications, and give some governance rights to the community via DAO, but still far from the goal above. A central team like the founders still has more privileges and plays a more vital role than others in determining the development and management of its Web3 project. The rights of governance given to the community in DAO are limited and predefined with reservation. To participate in the DAO, users need to buy and stake the governance token, which sets a high threshold and causes inequality. The decision-making process like proposing and voting are inefficient, and the results couldn’t meet the needs of everyone, so someone still has to compromise. 
+Some Web3 projects try to break the monopoly among different platforms, and give some rights of self-governance to the community via DAO, but still far from the goal above. A central team like the founding company still has more privileges and plays a more vital role than others in determining the development and management of its project, and they predefine and limit the self-governance of the DAO, making it not so useful. To participate in DAO, users need to buy and stake governance tokens, which sets a high threshold and causes inequality. The distribution of governance tokens is often uneven, making DAO not so decentralized and representative. The users who don’t have the majority of votes have to compromise. 
 
-In order to really achieve fully decentralized and incentive Web3, we want to design a reference system on blockchain to enable permissionless and seamless collaboration for developing and improving online services via reference, track the reference relationships among different online works, and incentivize everyone to open and share their online work to the public.
+In order to really achieve fully decentralized and incentive Web3, we design a reference system on blockchain to enable permissionless and unlimited public collaboration for managing and improving online services via the reference relationship that new work refers to the old work it is based on, and sharing its earnings with the referred old work. 
 
-With our reference system, we expect that owners are willing to open and share their online services, so they could be developed and managed by different people to meet different needs, and users could choose and switch among them freely without limitation. According to the reference relationships, each contribution to the online services would be traced and rewarded to give contributors incentive while maintaining the opening and decentralization of Web3.
+With our reference system, we expect that owners are willing to open and share their works of online services, so they could be developed and managed by different people to meet different needs, and users could freely choose and switch among different new works without limitations. According to the reference relationship, each contribution to the online services would be traced and rewarded to give contributors incentive while maintaining the opening and decentralization of Web3. 
 
 ![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/overview.png)
 
 
 ### Ecosystem Fit
 
+![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/impact.png)
+
 **For online services:**
 
-The project could make Web3 online services more decentralized. With full composability, interoperability and compatibility, each online service could have different versions interoperable with each other without barriers, and each version could be composed by different parts made by different contributors purely out of founder’s control. Different works could coexist equally to meet the needs of different users, interconnect and combine with each other seamlessly to provide better online services together.
+The project could make Web3 online services more decentralized. With full composability, each online service could have different new versions made by different contributors out of the original version like permissionless branches or forks. With full interoperability, new versions can freely change and improve the original versions while still directly connecting to the other parts of the original version, especially accessing its internal network resources seamlessly. In this way there could be many versions of each online service without limitations to meet the needs of different users, and they could coexist equally rather than only one version could remain even if it has more users. 
 
-With revenue tracking and distribution scheme, different works could collaborate with each other for mutual benefit rather than vicious competition for monopoly. New works could freely improve and upgrade existing old works without restriction because old works would allow them to do so for maximizing self-interests, and old works wouldn’t compress the emergence of innovative new works because they can share the profits from the new works built based on them.
+With the revenue tracking and distribution scheme, different works made by different people could coexist and collaborate with each other for mutual benefit rather than vicious competition for monopoly. Old works are willing to allow others to freely change them, and open and share their internal network resources because new works will share the profits with them, and the earnings of opening and sharing will be more than closure and monopoly. In this way new works could freely improve and upgrade old works without restriction to make the online service better and better out of old works’ upper limit.
 
 
 **For online service management (DAO):**
 
-By enabling fully decentralized online services, online service development and management could also be fully decentralized. Nowadays although we achieve free economy in the market, the production and collaboration within the organization like company are still highly central and planned, which is inefficient because the management cost is very high, and ineffective because the needs of users in the market may not reflected accurately and passed smoothly. 
+By enabling fully decentralized online services, its development and management could also be fully decentralized. Nowadays, although we achieve a free economy in the market where different products and services coexist for consumers to choose freely, their internal production within the organization like inside the company are still centralized, which needs to be arranged and approved by a single leader. What our reference system does is opening such internal organization to everyone in public, and enabling large-scale permissionless, unlimited, and boundless online collaboration without any central planning or controlling. 
 
-In our project, without such central planning and arraignment inside the organization, everyone who develop and manage online services on Ethererum called service managers could directly connect users without third-party intervention, and provide their services freely in the market to be selected and picked by users directly rather than checked and determined inside the organization first. It will achieve fully free market economy inside the organization by connecting users and service managers directly without centralized planning, allocation and control between them.
+In our system, everyone can have equal opportunity to participate in and contribute to the development and management of online service by freely changing and improving it with a new version, and directly putting the new work into the market for users to choose. In this way the collaboration and production within the organization are fully open and equal to everyone, and the development and governance of the online service are fully decentralized and autonomous. 
 
-After founder of the work opens governance rights to the public, everyone would have equal opportunity to participant in the governance, collaborate with each other freely, make innovations and contributions without any limitation to provide the best online service together. They can be anyone in anywhere rather than having to join a company or be accepted by a team first, and they could do anything on any work as long as chosen by any user without predefined governance and compromised voting. 
-
+![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/DAO.png)
 
 **For users and service providers** (like drivers in Uber, or bloggers in YouTube):
 
-As the project provides unlimited versions of each online service, users can freely choose what they want without compromise. As different versions are interconnected sharing the same network and resources without monopoly, users can freely switch among them without any cost and barrier. 
+As our system provides unlimited different versions for each online service, users can freely choose what they want even if it’s not the choice of majority without compromise. As different versions are interconnected sharing the same network and resources without monopoly and isolation, users can freely switch among them when having better choice without any cost or barrier. 
 
-In this way, users can get best online services that fully protect their own digital rights, freedom and properties. As online services are made by public for public interests, they can be truly reliable and regulated without having more privileges for suppressing users and service providers. 
+In this way, users can get the best online services to fully protect their individual digital rights, freedom and properties. As online services are fully decentralized made by the public and for the public, they can be truly reliable and regulated without having privileges or monopoly to suppress users and service providers for self-interests, while still fully incentivizing to maintain and improve their online services continuously. 
 
+![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/users.png)
 
 **Use case**
-For example, currently one DeFi application couldn’t have multiple versions made by different people. If others change a DeFi protocol to make a new version of it, it couldn’t get the internal network and resources of the original version. For instance, Sushiswap improved Uniswap, but Uniswap couldn’t open and share its liquidity pool with Sushiswap. Sushiswap has to build a new protocol completely independent from Uniswap even though it’s based on Uniswap. In order to have its own liquidity, Sushiswap launched vampire attacks to scramble for Uniswap’s liquidity. 
+For example, currently one DeFi application couldn’t have multiple versions made by different people. If others change a DeFi protocol to make a new version of it, it couldn’t get the internal network and resources of the original version. For instance, Sushiswap improved Uniswap, but Uniswap couldn’t open and share its liquidity pool with Sushiswap. Sushiswap has to build a new protocol completely independent from Uniswap even though it’s based on Uniswap. In order to have its own liquidity, Sushiswap launched vampire attacks to scramble for Uniswap’s liquidity. 
 
-With our reference system, Uniswap can have unlimited new versions just like branches or forks made by anyone including Sushiswap. Uniswap opens and shares its internal users and network and allows anyone makes any changes on itself, so Sushiswap can access the liquidity pools of Uniswap and build their protocol based on them directly with no need to build their own from scratch. As the return, the earnings of the Sushiswap will be distributed with Uniswap as the incentive of its opening and sharing. Users don’t have to choose between Uniswap and Sushiswap, but can use both at the same time without separation.
+With our reference system, Uniswap can have unlimited new versions just like branches or forks made by anyone including Sushiswap. Uniswap opens and shares its internal users and network and allows anyone to make any changes on itself, so Sushiswap can access the liquidity pools of Uniswap and build their protocol based on them directly with no need to build their own from scratch. In return, the earnings of the Sushiswap will be distributed with Uniswap as the incentive for its opening and sharing. Users don’t have to choose between Uniswap and Sushiswap, but can use both at the same time without separation.
 
 ![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/use_case.png)
 
@@ -102,15 +105,18 @@ As for Jieliang Yin, by studying in both business and Information Technology maj
 ## Development Status :open_book:
 
 **Definition**
-Our reference system is a smart contract standard on blockchain that records the reference relationship between new work and the old work it based on like file or program. By referring to the old work, anyone can create their new work by connecting, improving and changing the old work freely. The earnings of the new work will be tracked and shared with the referred old work based on their reference relationship. 
+Our reference system is a smart contract standard on blockchain that records the reference relationship between new work and the old work it‘s based on. By referring to the old work, anyone can create their new work by freely connecting, changing and improving the referred work. The earnings of the new work will be tracked and shared with the old work it refers to according to their reference relationship. 
+
+The **work** in our system ideally could be any kind of digital item including digital file in bytes, program providing online service, and resources like computation, storage and network. It could be fine-grained like an idea, concept or action. It could also cover on chain and off chain objects. However for simplicity, in this paper we limit the work within on-chain smart contracts providing Web3 online service as DApp with internal network resources of users and service providers. The people working on developing and improving the smart contract of DApps are called service managers.   
 
 ![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/details.png)
 
 **Functions**
-1. Anyone can refer their new work to any old work to establish the reference relationship if their new work are based on the old work 
-2. By referring to the old work, anyone can freely connect, combine and change the old work to create their new work
-3. Anyone can invest any work and get the shares of the work, and can pay for any work when using the work 
-4. The earnings of the new work including purchase and investment will be distributed among all its referred old work, and redistributed in each work among all stakeholders according to their shares proportionally
+1.Anyone can refer their new work to any other existing work to establish the reference relationship when their new work is based on the referred work 
+
+2.By referring to the old work, anyone can freely connect, combine and change the old work to create their new work
+
+3.The earnings of the new work including usage and investment will be distributed with all its referred old work according to their distribution scheme
 
 ![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/deliverables.png)
 
@@ -144,11 +150,11 @@ When creating a new work, a corresponding token will be minted automatically wit
 
 **Expected deliverables:**
 
-1. A **reference token standard** that records and reflects the nominal reference relationship between new work and its referred old work. When creating a new work, the corresponding new token will also be generated and attached where the reference relationship between the new work and its referred work will be added and stored. 
+1. A reference token standard that records and reflects the nominal reference relationship between new work and its referred old work. When creating a new work, the corresponding new token will also be generated and attached where the reference relationship between the new work and its referred work will be added and stored. 
 
-2. A **reference system** that makes old work truly composable and interoperable with the new work. By referring to the old work, new work could be created by adding anything new or changing anywhere on the referred work while still connecting and sharing other parts of the referred work seamlessly. 
+2. A reference system that makes old work truly composable and interoperable with the new work. By referring to the old work, new work could be created by adding anything new or changing anywhere on the referred work while still connecting and sharing other parts of the referred work seamlessly. 
 
-3. A **revenue tracking and allocation system** that distributes the earnings of the new work with its referred old work according to their reference relationship. The revenue of any work including usage and investment will be distributed with all its referred old work, and all investors holding its shares.
+3. A revenue allocation and distribution system that confirms the revenue distribution scheme agreed by different works with the reference relationship. It will track the earnings of the new work, and distribute them with the old work which the new work refers to according to their distribution scheme.
 
 All programs will be developed in !ink on Pallets.
 
