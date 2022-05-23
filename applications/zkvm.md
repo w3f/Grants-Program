@@ -21,6 +21,12 @@ for the application of zero-knowledge technology within the substrate ecosystem.
 This project will leverage [`Miden VM`](https://github.com/maticnetwork/miden), a STARK based zero-knowledge virtual machine built on the
 [`Winterfell`](https://github.com/novifinancial/winterfell) proof system. We will provide a pallet implementation that allows for _creation_, _execution_ and
 _verification_ of programs on the VM. We will also expose verification via rpc such that client side applications can perform verification of proofs.
+STARK proof generation is a resource intensive process and as such it often results in large runtimes.  To make this more concrete, ["the time needed to run the 
+program is only about 3% of the time needed to generate the proof"](https://github.com/maticnetwork/miden/blob/next/README.md?plain=1#L143).  Long proof generation time 
+poses an issue in substrate chains with constrained block times.  To address this problem we will decouple execution and proving of computation.  Execution of the computation
+will take place when the `call` extrinsic is executed and this will add a proving task to a proving queue (FIFO vec) maintained in pallet storage.  We will then provide
+an off-chain worker pallet which will be responsible for monitoring this queue and creating proofs.  The off-chain worker will submit the proof via the `submit_proof`
+call and the proof will be verified on-chain. 
 
 #### API
 
@@ -28,6 +34,8 @@ _verification_ of programs on the VM. We will also expose verification via rpc s
 pub fn create(origin: OriginFor<T>, init: Script, num_output: u32) { ... }
 
 pub fn call(origin: OriginFor<T>, target: Address, input: Vec<u32>) { ... }
+
+pub fn submit_proof(origin: OriginFor<T>, target: Address, proof: StarkProof) { ... }
 
 pub fn verify(origin: OriginFor<T>, target: Address, input: Vec<u32>, output: Vec<u32>, proof: StarkProof) { ... }
 ```
@@ -37,6 +45,7 @@ pub fn verify(origin: OriginFor<T>, target: Address, input: Vec<u32>, output: Ve
 ```rust
 pub struct Program {
     pub code_hash: Digest,
+    pub input: Vec<u32>,
     pub output: Vec<u32>,
     pub proof: StarkProof
 }
@@ -45,6 +54,8 @@ pub struct Codes {
     pub code_hash: Digest,
     pub code: Script
 }
+
+pub type ProverQueue<T: Config> = StorageValue<_, Vec<Address>>;
 ```
 
 \*The API and Data Model may be subject to change
@@ -154,14 +165,15 @@ Development has not started yet.
 - **FTE:** 2
 - **Costs:** $50,000 USD
 
-| Number | Deliverable            | Specification                                                                                                                                          |
-| -----: | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|    0a. | License                | MIT                                                                                                                                                    |
-|    0b. | Documentation          | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can register, execute and verify programs. |
-|    0c. | Testing Guide          | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.      |
-|    0d. | Docker                 | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                          |
-|    0e. | Article                | We will publish an **article** that explains how we were able to build out our deliverables and how substrate projects can leverage the zkVM module.   |
-|     1. | Substrate module: zkVM | We will create a Substrate module that will enable a user to register, execute and verify a program using miden VM with winterfell backend.            |
+| Number | Deliverable              | Specification                                                                                                                                          |
+|-------:|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                  | MIT                                                                                                                                                    |
+|    0b. | Documentation            | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can register, execute and verify programs. |
+|    0c. | Testing Guide            | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.      |
+|    0d. | Docker                   | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                          |
+|    0e. | Article                  | We will publish an **article** that explains how we were able to build out our deliverables and how substrate projects can leverage the zkVM module.   |
+|     1. | Substrate module: zkVM   | We will create a Substrate module that will enable a user to register, execute and verify a program using miden VM with winterfell backend.            |
+|     2. | Off-chain worker: Prover | We will create an off-chain worker which will be responsible for generating proofs of computations.                                                    |
 
 ## Future Plans
 
