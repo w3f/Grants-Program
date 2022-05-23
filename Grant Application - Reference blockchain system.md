@@ -11,11 +11,13 @@
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
+
 ## Project Overview :page_facing_up:
 
 If this application is in response to an RFP, please indicate this on the first line of this section.
 
 If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+
 
 ### Overview
 
@@ -27,6 +29,7 @@ We believe in our system, creators or owners of each work will choose to open an
 
 
 ### Project Details
+
 In Web1 users read online content and use online services via protocols like SMTP, HTTP, and RSS. Protocols are decentralized that no single entity fully owns and controls them, but also resulted in no one having incentives to provide better public online services. Therefore, although being widely used, they still remain primitive unchanged until now. 
 
 In Web2 users are not just consumers, but also become service providers to create online content and provide online service on platforms. Those platforms are owned and controlled privately, which give their owners incentives to manage and improve online services to the public better continuously. In this way Web2 online services have higher quality than Web1, but such centralization also causes problems as service managers maximize self-interests at the expense of others in public.
@@ -52,7 +55,6 @@ The project could make Web3 online services more decentralized. With full compos
 
 With the revenue tracking and distribution scheme, different works made by different people could coexist and collaborate with each other for mutual benefit rather than vicious competition for monopoly. Old works are willing to allow others to freely change them, and open and share their internal network resources because new works will share the profits with them, and the earnings of opening and sharing will be more than closure and monopoly. In this way new works could freely improve and upgrade old works without restriction to make the online service better and better out of old works’ upper limit.
 
-
 **For online service management (DAO):**
 
 By enabling fully decentralized online services, its development and management could also be fully decentralized. Nowadays, although we achieve a free economy in the market where different products and services coexist for consumers to choose freely, their internal production within the organization like inside the company are still centralized, which needs to be arranged and approved by a single leader. What our reference system does is opening such internal organization to everyone in public, and enabling large-scale permissionless, unlimited, and boundless online collaboration without any central planning or controlling. 
@@ -69,12 +71,15 @@ In this way, users can get the best online services to fully protect their indiv
 
 ![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/users.png)
 
+
 **Use case**
+
 For example, currently one DeFi application couldn’t have multiple versions made by different people. If others change a DeFi protocol to make a new version of it, it couldn’t get the internal network and resources of the original version. For instance, Sushiswap improved Uniswap, but Uniswap couldn’t open and share its liquidity pool with Sushiswap. Sushiswap has to build a new protocol completely independent from Uniswap even though it’s based on Uniswap. In order to have its own liquidity, Sushiswap launched vampire attacks to scramble for Uniswap’s liquidity. 
 
 With our reference system, Uniswap can have unlimited new versions just like branches or forks made by anyone including Sushiswap. Uniswap opens and shares its internal users and network and allows anyone to make any changes on itself, so Sushiswap can access the liquidity pools of Uniswap and build their protocol based on them directly with no need to build their own from scratch. In return, the earnings of the Sushiswap will be distributed with Uniswap as the incentive for its opening and sharing. Users don’t have to choose between Uniswap and Sushiswap, but can use both at the same time without separation.
 
 ![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/use_case.png)
+
 
 ## Team :busts_in_silhouette:
 
@@ -105,6 +110,7 @@ As for Jieliang Yin, by studying in both business and Information Technology maj
 ## Development Status :open_book:
 
 **Definition**
+
 Our reference system is a smart contract standard on blockchain that records the reference relationship between new work and the old work it‘s based on. By referring to the old work, anyone can create their new work by freely connecting, changing and improving the referred work. The earnings of the new work will be tracked and shared with the old work it refers to according to their reference relationship. 
 
 The **work** in our system ideally could be any kind of digital item including digital file in bytes, program providing online service, and resources like computation, storage and network. It could be fine-grained like an idea, concept or action. It could also cover on chain and off chain objects. However for simplicity, in this paper we limit the work within on-chain smart contracts providing Web3 online service as DApp with internal network resources of users and service providers. The people working on developing and improving the smart contract of DApps are called service managers.   
@@ -112,6 +118,7 @@ The **work** in our system ideally could be any kind of digital item including d
 ![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/details.png)
 
 **Functions**
+
 1.Anyone can refer their new work to any other existing work to establish the reference relationship when their new work is based on the referred work 
 
 2.By referring to the old work, anyone can freely connect, combine and change the old work to create their new work
