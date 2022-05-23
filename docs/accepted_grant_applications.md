@@ -451,7 +451,7 @@
 | [Slonigiraf](https://www.slonigiraf.org/) | SLON - a recommendation letter system| [GitHub](https://github.com/slonigiraf) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Helixstreet](https://helixstreet.io/) | Helixstreet Module | [GitHub](https://github.com/helixstreet) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Cryptoviet](https://team.cryptoviet.com/) |  Gafi Network - The Network of Game Finance | [GitHub](https://github.com/cryptoviet/gafi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Asylum](https://asylum.space/) |  Metaverse for next generation gaming | [GitHub](https://gitlab.com/asylum-space/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Asylum](https://asylum.space/) |  Metaverse for next generation gaming | [GitHub](https://gitlab.com/asylum-space/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [CESS LAB](https://www.cess.cloud/) | Data Store Pallet | [GitHub](https://github.com/CESSProject/cess) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [ChainSafe](https://chainsafe.io/) | Substrate Core Polywrapper | [GitHub](https://github.com/polywrap) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Bela Supernova](https://bsn.si/en/home/) | On-chain cash exchange |  | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
