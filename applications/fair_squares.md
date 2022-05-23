@@ -9,39 +9,196 @@
 
 ### Overview
 
-Fair Squares aims is to co-create a more transparent and fair housing market for tenants, co-owners and social investors. In order to make rental housing more affordable and accessible to a larger group of people.
+Fair Squares aims is to co-create a more transparent and fair housing market for tenants, co-owners and social investors. In order to make rental housing more affordable and accessible to a larger group of people. 
 
 - A brief description of our project.
 
-Fair squares aims to implement the return-on-rent variable on rental houses that has fractional ownership.This variable bring the investor and tenant in direct relationship. Our goal is to find the right balance for the affordable housing gap. A group of individuals, each bundling their capital to invest in a house that is for sale, with the purpose to rent it out. Based on their individual fractional share of the house they will get a yield which is the social return-on-rent.
+Fair squares aims to implement the return-on-rent variable on rental houses that has fractional ownership. This variable brings the investor and tenant in direct relationship. Our goal is to find the right balance for the affordable housing gap. A group of individuals, each bundling their capital to invest in a house that is for sale, with the purpose to rent it out. Based on their individual fractional share of the house they will get a yield which is the social return-on-rent.
 
-In order to create affordable housing, while offering investors a better return compared to other defensive investments. The community agrees on the capped yield, which controls the rent and keeps it affordable. These parameters are governed by the council and stakeholders that strive for a fair housing market.  
+In order to create affordable housing, while offering investors a better return compared to other defensive investments. The community agrees on the capped yield, which controls the rent and keeps it affordable. These parameters are governed by the council and stakeholders that strive for a fair housing market. 
 
-By using Web3 technology in a semi-permissionless system for real-world assets, digital currencies and decision making we lower the barrier to entry to invest in the housing market and make it transparent and equitable. 
+To achieve the above we rely on bringing assets on-chain and verifiable by real world actors that have the credentials to do so. By using Web3 technology in a semi-permissionless system for real-world assets together with digital currencies and decision making tools, we can lower the barrier to entry to invest in the housing market and make it transparent and equitable. 
 
 
 - Integration into Substrate / Polkadot / Kusama.
 
-The Kusama and Polkadot ecosystem allows us to use the required building blocks through the relay-chain. The substrate framework gives us the runtime to be very specialized and bring out a protocol that does like clockwork to onboard assets and rent them out. The already open-sourced frame pallets and community work helps out a lot in this. 
+The Kusama and Polkadot ecosystem allows us to use the required building blocks through the relay-chain. The substrate framework allows us to configure runtime to the custom needs and bring out a protocol that works like clockwork to onboard assets and rent them out. The already open-sourced frame pallets and other teams building blocks are helping us a lot in achieving the above.
 
-Because of the social mission and required actions on-chain we want a feeless parachain while getting the security from the relay-chain. We are looking to collaborate and use parachain services for DIDs, stablecoins, storage protocols within the substrate web3 ecosystem. In order to combine the real word with assets, by a solid permissioned process and still connected to para and relaychain.
+For our the social mission to be succesful we require several actions on-chain, such as voting, selection of funds, governing and reccuring payments. We are looking to build a feeless parachain while getting the security from the relay-chain. We believe that the parachain functiunality collaboration is crucial to our mission by using multi-chain services for DIDs, stablecoins, storage protocols within the substrate web3 ecosystem. 
 
 - Our Motivativation.
 
-It is exciting to see DeFi rise, liquidity fights and blockchain tech evolve. We as a team are users of these products and believe there is not turning back from this. Nevertheless we are seeing the negative social economical consequences for the low and middle class even in developed countries. For us blockchain technology was a bigger promise and needs more woven fibers into the real-world. We want people to still earn returns on their investments, but develop for equitable systems that are accesible for all and stop the profit maximization mechanisms on basic needs. 
+It is exciting to see the rise of DeFi, the increasing TVL of liquidity, taking over traditional finance roles such as a market-maker, but not fully. We as a team are users of these (DeFi) products and believe there is not turning back from this. Nevertheless we are seeing the negative social economical consequences, collapsing protocols, or not being fully educated just because of a juicy APR. We want to focus on the blockchain technology that is equitable no matter the time-frame you enter that creates more intervowen links to the real-world and usable in the multi-chain world. We want people to still earn returns on their investments, while building equitable systems that are accesible for all. Another  stop the profit maximization mechanisms on basic needs. 
 
 
 ### Project Details
 
 
-We are looking to develop a first usable version of the fair-squares node and interface. A fully rounded MVP that gives access to the core functions. We have been already coding on this since September 2021 on the code-base while participating to the APAC hackathon. Where we in very hacky way achieved parts of milestones 1 & 2 reusing parts of old archived substrate.dev codecase.  
+We are looking to develop a first usable version of the fair-squares node and interface. A fully rounded MVP that allows us to use the core functions. We have been already coding on this since September 2021 on the code-base while participating to the APAC hackathon. Where we in very hacky way achieved parts of milestones 1 & 2 reusing parts of old archived substrate.dev codecase and our own logic on top. 
 
 
 Since then we having been discussing what the modules and pallets are required to make this a working software. We ave created this type of [interface](https://youtu.be/_8mnawfNpBQ) that will be for now our front-end. In the last milestone we have a UI sepcialist on board
 
 #### Data model
 
-![](https://mermaid.ink/img/pako:eNrFV1tP2zAU_itWngoU8Y7QpLEOrdLGEEU8RbJMfAoZiV3ZTlnF-O_zPU7iFva0Sm3Tc75zv9h9LSpOoTgvqoZIuajJoyBtyUp2tcI3pGlAoePT02MkeAPyiuKWUyxkyr74c3qK7gQQ2YmdJ5ZsiB_qqBW0hmjMlMwaRtdr5WVfS4YQ5bjSKhVgy54deWJbM2V-lOytlx0ZtwoQ2nDlxBCSG2AUrztGZSBtBN9wCdiyAlHAL6gUdjzS9OSWbwGTjWZsHTm1zp-BXe5-vjAQC6KINX-iuk0DaAOiAqYw10xq6UsmFWEV8DWq_eNebVgqLsgjOI2zz1XFO6ZqivzTks7RTCfOSmqy_V4u5iaZQbkmB5NLemQDOpFKdJWaOI6Q9yTng6tgX6WS9c--BUbqjKZRF1hcqqOPO_aTr94PXWj8jXcSQhW-uH4YF2cFjalZxZkS9UOnvY01vvFQfM9VVHOluwDfRCWG5BhKECbXOmK2jo2zqKXTClgAi-S34PWSbcEk6Dt_HBYrVqivVZr6IGcT7lTZWHUwDfyztkQ0UWgyCNTyhto03YksGYXfE0WDdrw13btKpCdgS3ogjekwpLgizYjWEuMIc51uOVuoVr4FDV3JmNVg9kuoZs2ZHKdjf0Li3F02vHpmXfsA4uzS-XF2D9VFqvdTrHxiODRGxqZJW2DHzB20aDN0dsl5E0drEJ7VMq1N6qQ3lMiGyg3k0nJmohnDc7EkYq5z9JxOGnF_61yv77yOgaPYsX0ONfzWbARkl4SMRJ8wdE-aDnqqSZwZV6ATpJnGSNQDi_Qb186pg900cWhPxkf2UkTP7GuOdIoSu_bUyOy-MPfei_3Aaz1I-kB7D-bm511YsiCy2HAg9-D3YZmkOnS6MtypEXe7X-R7hjsLzmzYLC4zuFlcZitmcfl1fCiewTTv15nM4sFA3sPlhjQDDN04PK8mU7B3ofoJScbrUPMjxOBl1l9PnmyereBRQMTyA1bcjPeMi_qxZvOtmf4IM2d2POz9nc_PVx_PtLH_S0jV6GqSBpQKzI3NFhSh-n4UpakuieC7iXjOkrn_YsvwqCEnuboM8jRYJx9I0duwbQZr5mMZDovzNlnUN2Q3vkb116_0M7yKedGC0BcIqv-gWLtloZ6ghbI414-UiOey0MeOxnUbnVP4Smvd3cX5mjQS5gXR18HVjlWR4FD-X46nvv0F3yGBHQ "Data model")
+```mermaid
+classDiagram
+
+FS_Pallet *--* rolesFd_mod_rs
+FS_Pallet <|-- Treasury_Pallet
+rolesFd_mod_rs *--* rolesFd_item_rs 
+
+
+class Nft_Pallet{
+  do_create_class()
+  do_mint()
+
+}
+
+class Treasury_Pallet{
+    pot()
+    spend_funds()
+    propose_spend()
+    reject_proposal()
+    remove_approval()
+}
+
+class TokenByOwnerData{
+  +tuple percent_owned
+  +Instanceof instance
+}
+
+class TokenByOwner_storage{
+  +(Accountid AccountId, (Nftclassid classID, Nftinstanceid InstanceId))
+  +struct TokenByOwnerData  
+}
+
+TokenByOwner_storage *--* Nft_Pallet
+Nft_Pallet <|-- TokenByOwnerData
+
+rolesFd_mod_rs <|-- Nft_Pallet
+
+
+class FS_Pallet{
+    Mint_House()
+    Create_proposal()
+    Select_contributors()
+    Proposal_Vote()
+    Fund_Proposal()    
+    transfer_nft()
+    Distribute_rent()
+    }
+class InvestorLog_storage{
+  +AccountId AccountId
+  +struct Investor
+}
+class HouseSellerLog_storage{
+  +AccountId AccountId
+  +struct HouseSeller
+}
+class MintedHouse_storage{
+  +int HouseIndex
+  +struct House
+}
+
+class Rent_Storage{
+    +struct House
+    +balance total
+    +balance maintenance
+    +vecStruct Tenants
+    }
+
+class ContributionsLog_storage{
+    +AccountId AccountId
+    +tuple Blocknumber/Balance/Vec<Contribution>   
+    }
+
+class ProposalLog_storage{
+    +int ProposalIndex
+    +tuple Blocknumber/Balance/House/Bool  
+}
+
+class ContribIndex_storage{
+  +int ContributionIndex
+}
+
+class HouseInd_storage{
+  HouseIndex
+}
+
+class ProposalInd_storage{
+  +int ProposalIndex
+}
+
+class MintedNftLog_storage{
+  +int HouseIndex
+  +struct NfT
+}
+
+
+class House_struct{
+      +Roles Owners
+      +Balance Value
+      +Bool Funded
+      +Balance rent
+      +nft nft_index
+
+    }
+
+class Contribution_struct{
+      +int ContributionIndex
+      +Balance Contribution
+      +Blocknumber age
+    }
+
+    rolesFd_mod_rs <|-- Investor_struct
+    rolesFd_mod_rs <|-- Notary_struct
+    rolesFd_mod_rs <|-- Tenant_struct
+    rolesFd_mod_rs <|-- HouseSeller_struct
+    rolesFd_item_rs <|-- House_struct
+    rolesFd_item_rs <|-- Contribution_struct
+    Rent_Storage *--* FS_Pallet
+    ContributionsLog_storage *--* FS_Pallet
+    InvestorLog_storage *--* FS_Pallet
+    ProposalLog_storage *--* FS_Pallet
+    MintedHouse_storage *--* FS_Pallet
+    HouseSellerLog_storage *--* FS_Pallet
+    ContribIndex_storage *--* FS_Pallet
+    HouseInd_storage *--* FS_Pallet
+    ProposalInd_storage *--* FS_Pallet
+    MintedNftLog_storage *--* FS_Pallet
+  
+
+    class Investor_struct{
+      +AccountId AccountId
+      +int nft_index
+      +Blocknumber age
+      new(AccountId,house_index)
+      Contribute_toFund(origin,value)
+      Vote_proposalt()
+
+    }
+    class HouseSeller_struct{
+      +AccountId AccountId
+      +int nft_index
+      +Blocknumber age
+      new(AccountId,house_index)
+      create_proposal(origin,value,house_index,nft_metadata)
+      destroy_proposal(origin,house_index)
+      mint_house(origin)
+      mint_nft()
+    }
+    class Notary_struct{
+      +AccountId AccountId
+    }
+
+    class Tenant_struct{
+      +AccountId AccountId
+      +Balance Rent
+      Pay_rent()
+    }
+    
+```
 
 The techstack that will be created:
 - Substrate node template, frame pallets and customized pallets based on FS logic
