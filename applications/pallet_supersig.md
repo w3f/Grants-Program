@@ -278,11 +278,11 @@ pub fn remove_member(
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: pallet_supersig | We will make any necessary updates from previous milestones.   |  
-
-| 2. | Polkadot JS Apps UI: Polkadot JS UI Fork | We will make any necessary updates from previous milestones.  | 
+| 0d. | Docker | We will update the Dockerfile(s) from previous milestones.|
+| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| 1. | User interviews, feedback iteration | We will conduct user interviews to collate feedback and put them in a task backlog. We will select priorities that fit within the scope of this grant, which will be updated. From the findings of our feedback, a backlog of future tasks may be added on our kanban baord to create minor/major version bumps, and would inform the priority of future work. This milestone is vague because we are using this time to finding out unknowns to make changes with care (and in Good Faith).
+| 2. | Substrate module: pallet_supersig | We will make any necessary updates from previous milestones.   | 
+| 3. | Polkadot JS Apps UI: Polkadot JS UI Fork | We will make any necessary updates from previous milestones.  | 
 
 
 
