@@ -3,7 +3,7 @@
 - **Project Name:** Implementation of the new hash function to BLS12 curves
 - **Team Name:** Dmitrii Koshelev
 - **Payment Address:** With your permission, I would prefer provide my Bitcoin payment address after I won the grant
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -17,7 +17,7 @@ Implementation in Sage of my hash function to pairing-friendly curves BLS12 (for
   
 - A brief description of your project.
 
-Recently, my article https://link.springer.com/article/10.1007/s10623-022-01012-8 was published in the quite prestigious cryptographic journal "Designs, Codes and Cryptography". This article provides a new hash function (indifferentiable from a random oracle) to the subgroup G1 of pairing-friendly elliptic curves BLS12-381 and BLS12-377 (Barreto-Lynn-Scott). These curves and such hash functions are actively used in blockchains, namely in the BLS (Boneh-Lynn-Shacham) aggregate signature. My hash function is much faster than previous state-of-the-art ones, including the Wahby-Boneh indirect map. For instance, BLS12-377 is defined over a highly 2-adic finite field Fp (of characteristic p), hence the indifferentiable Wahby-Boneh hash function requires to apply twice the slow Tonelli-Shanks algorithm for extracting two square roots in the basic field. In comparison, the new hash function extracts only one cubic root, which can be expressed via one exponentiation in Fp. I have already checked the correctness of my results in the computer algebra system Magma. The project is dedicated to implementing the new hash function in Sage.
+Recently, my article https://link.springer.com/article/10.1007/s10623-022-01012-8 was published in the quite prestigious cryptographic journal "Designs, Codes and Cryptography". This article provides a new hash function (indifferentiable from a random oracle) to the subgroup G1 of pairing-friendly elliptic curves BLS12-381 and BLS12-377 (Barreto-Lynn-Scott). These curves and such hash functions are actively used in blockchains, namely in the BLS (Boneh-Lynn-Shacham) aggregate signature. My hash function is much faster than previous state-of-the-art ones, including the Wahby-Boneh indirect map. For instance, BLS12-377 is defined over a highly 2-adic finite field Fp (of characteristic p), hence the indifferentiable Wahby-Boneh hash function requires to apply twice the slow Tonelli-Shanks algorithm for extracting two square roots in the basic field. In comparison, the new hash function extracts only one cubic root, which can be expressed via one exponentiation in Fp. I have already checked the correctness of my results in the computer algebra system Magma. The project is dedicated to implementing the new hash function in Rust.
   
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 
@@ -41,7 +41,7 @@ Hashing to elliptic curves in the BLS (Boneh-Lynn-Shacham) aggregate signature.
 
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 
-Developers who will easily adopt my high-level implementation for their low-level programming languages such as Rust.
+Developers who will use the new hash function in their implementations of cryptographic protocols.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   - If so, how is your project different?
@@ -59,7 +59,7 @@ Dmitrii Koshelev
 
 - Names of team members
 
-There are no other members.
+My colleague who is a professional Rust programmer. He prefers to be anonymous.
 
 ### Contact
 
@@ -104,25 +104,25 @@ https://link.springer.com/article/10.1007/s10623-022-01012-8
 
 - **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):** 1 FTE
-- **Total Costs:** 10,000 USD
+- **Total Costs:** 15,000 USD
 
 
 ### Milestone 1 — Implementation of the new hash function
 
 - **Estimated duration:** 6 months
 - **FTE:**  1
-- **Costs:** 10,000 USD  
+- **Costs:** 15,000 USD  
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | GNU GPL |
 | 0b. | Documentation | I will provide **inline documentation** of the code. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. Ie will describe how to run these tests. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. I will describe how to run these tests. |
 | 0d. | Docker | I do not intend to deliver this, because Milestone 1 is research oriented. |
-| 0e. | Article | I will cite the implementation in Section 1.1 of my new article https://eprint.iacr.org/2021/1082. I would like to submit this article to the international conference https://fq15.telecom-paris.fr/index.html in Paris if it is not canceled because of COVID-19.
-| 1. | Implementation | Sage implementation of the hash function described below.
+| 0e. | Article | I will cite the implementation and I will thank Web3 Foundation for its financial support in my new article https://eprint.iacr.org/2021/1082. I submitted this article to Journal of Cryptology. At the moment, it is under review.
+| 1. | Implementation | Rust non-constant-time implementation of the hash function described below.
 
-To be definite, let me use the notation of my article https://link.springer.com/article/10.1007/s10623-022-01012-8. The new hash function consists of three components: a classical one \eta: {0,1}^* -> Fp^2, a rational map \varphi: Fp^2 -> T(Fp), and an additional map h^\prime: T(Fp) -> E(Fp), where E is a given elliptic Fp-curve of j-invariant 0 and T is a suplementary algebraic threefold. A construction of \eta is represented in Section 5 of the draft https://datatracker.ietf.org/doc/draft-irtf-cfrg-hash-to-curve/. This is the composition of a hash function {0,1}^* -> {0,1}^n for some n \in N and the subsequent restriction modulo p, hence we can use a standard hash function from one of Sage libraries. It remains to implement \varphi and h^\prime just as described in my article. In particular, to perform the (unique) exponentiation in Fp (arising in h^\prime) in the case of BLS12-381 curve an addition chain of quite small length has already been derived in https://github.com/dishport/Some-remarks-on-how-to-hash-faster-onto-elliptic-curves (cf. Section 1.1 of https://eprint.iacr.org/2021/1082).
+To be definite, let me use the notation of my article https://link.springer.com/article/10.1007/s10623-022-01012-8. The new hash function consists of three components: a classical one \eta: {0,1}^* -> Fp^2, a rational map \varphi: Fp^2 -> T(Fp), and an additional map h^\prime: T(Fp) -> E(Fp), where E is a given elliptic Fp-curve of j-invariant 0 and T is a suplementary algebraic threefold. A construction of \eta is represented in Section 5 of the draft https://datatracker.ietf.org/doc/draft-irtf-cfrg-hash-to-curve/. This is the composition of a hash function {0,1}^* -> {0,1}^n for some n \in N and the subsequent restriction modulo p, hence we can use a standard hash function from one of cryptographic libraries. It remains to implement \varphi and h^\prime just as described in my article. In particular, to perform the (unique) exponentiation in Fp (arising in h^\prime) in the case of BLS12-381 curve an addition chain of quite small length has already been derived in https://github.com/dishport/Some-remarks-on-how-to-hash-faster-onto-elliptic-curves (cf. Section 1.1 of https://eprint.iacr.org/2021/1082).
 
 ...
 
