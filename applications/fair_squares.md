@@ -314,10 +314,10 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 1. |  **pallet-roles** | We will create a Substrate pallet in which users can set their roles when they register, for now this will be a single role per address. They can choose between investor, seller, tenant, servicer (generic in this milestone). Picking a role should give the user the rights to fullfill it's role in the coming modules. The investor and tenant role will be for now KYC-free. They can imediately play around with test-tokens. The other roles will need to go through a verifier. A seller and server have to go through vetting process.| 
 | 2. | __pallet-housing-fund__ | We will create a Substrate pallet in wich users can desposit and withdraw their funds. This fund registers which `accountId`, `amount`, and `blocknr` the funds are commited. Other variables such as the `total_contribution_user` keep up the total per user and if a user has `withdrawn(bool)` their funds. The housing fund needs to have a getter for the `total_funds`. These storages will be used further in next modules for the selection of investors. The housing fund will bid for a house, if it has the funds to bid for an asset, so it also needs a function to allow the bidding mechanism to `reserve` and `transfer` the amount out of the housing fund and eventually is able to bid. |  
 | 3. | module: **role-verifier** | built in the **roles-pallet**, this module will focus on the roles that need verification, such as businesses that will report data on-chain. These roles will be appraisers, notaries, technical verifiers, these roles might again verify retailers or other users.| 
-| 4. | Substrate chain _M1_ | The end-result after this milestone that on current chain. Users and businesses should be able to register. The verification of roles will at this point be done with the help of the sudo key or activate a verifier or KYC activator that can do the rest. If roles are set users can contribute, as it will be mandatory to invest with the role.  This will be in the future connected to a DID system and KYC (not our focus at this moment). With role setting which will be built on in further milestones. |  
+| 4. | Substrate chain _M1_ | After this milestone users and businesses should be able to pick a role and register. The verification of roles will at this point be done with the help of the sudo key. If roles are set users can contribute, as it will be mandatory to invest with the role.  This will be in the future connected to a DID system and KYC (not our focus at this moment). With role setting which will be built on in further milestones. |  
 
 ```mermaid
-flowchart
+flowchart LR
 Milestone:1
     D -->|register| Z[(tentant-registry)]
     subgraph pallet-roles
@@ -325,7 +325,7 @@ Milestone:1
     B -->|investor| C[role given]
     B -->|tenant| D[role given]
     B -->|seller| E{verifier}
-    B -->|servicer| E{need verification}
+    B -->|servicer| E(need verification)
     end
     subgraph role-verifier council/sudo
     E .-> F{approve or deny}
@@ -339,7 +339,6 @@ Milestone:1
     C .-> I[withdraw]
     end
 ```
-</br>
 </br>
 </br>
 
@@ -356,9 +355,36 @@ Milestone:1
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. Also there will be integration tests covering the pallets and modules of milestone 1. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the onboarding module, governance structure for onboarding a house and flows that are possible. 
-| 1. | **pallet-onboarding** | The asset (houses) are unique assets, for this the `pallet-uniques` will be used. The additional functionalities we will extend from the pallet-uniques add fracationalizing functionality. The asset needs to fractionalize after a sale is concluded to the new owners. Furthermore only a seller can onboard an asset we will set a deposit mechanism, so not everybody can just onbaord an asset. The user will have to present some proof in this early MVP that he/she is the legal owner, this will be coded in a shortcuted way. Currently we can't really connect live systems to proof an asset is our. 
-| 2. | **pallet-voting**| We will create a pallet on top the known frame pallets. collective pallet and devise the pallet to democratic systems that are required for FS. The housing-council will be very much the first line of defence and it's structure and selection is very similar to the council as we know from kusama/polkadot. The housing council will be able to asses an asset and approve, reject, request more info. We need to give the housing council access to these tools. When approved the asset can continue to the investor voting. The investor voting is set by their role. We can set a minimum to the investors of investing. We ask the investors to vote from a POV of wether they see the asset presented to them worthy of investing. The investors don't know with certainty that their capital will be allocated on the house their voting. It's being voted from the POV that the housing fund will be used.|  
-| 3. | Substrate chain _M2_ | Pallets **onboarding** and **voting** will allow onboarding of assets even though it will be a very of onboarding assets while on-chain governance by the housing council act as a 2-step due diligence. The steps from milestone 1 will also be upgraded with this as we need new roles for council members. |  
+| 1. | **pallet-onboarding** | The asset (houses) are unique assets, for this the `pallet-uniques` will be used. The additional functionalities we will extend from the pallet-uniques add focus on specializing it for real esate. The seller role needs to call `onboardAsset` and needs to provide information about the house such as `sqm`,`price`,`reports` and `proof of ownership`. Furthermore a `despositFee` is required so not everybody can just onboard an asset, which will be X% of the sellprice. The user will have to present some proof in this early MVP that he/she is the legal owner, this will be built simplistic way. Currently we can't really connect live systems to proof an asset is our. With the above characteristics, we should have enough to 
+| 2. | **pallet-voting**| We will customizethe known frame pallets such as `democracy` and `collective` pallet and devise to fit the voting structures that are required for FS. The **housing-council** will be the first line of defence and it's structure and selection is very similar to the council as we know from kusama/polkadot. The housing council will be able to asses an asset and approve, reject, request more info. Creating custom calls for the housing council specific to asset information is crucial to determine the state of an asset onboarding. When approved the asset can continue to the investor voting. The **investor-voting** is randomly selected by their role. We can set a minimum of X investors to vote. They will vote from tehir POV whether tthe asset presented to them is worthy of investing. The investors don't know with certainty that their capital will be allocated on the house their voting. It's being voted from the POV that the housing fund will be used. |  
+| 3. | Substrate chain _M2_ | Pallets **onboarding** and **voting** will allow onboarding of assets with a two-layer governance approach with different interests. The council will be for now voted in with sudo by protocol creators and the investors will be selected by on-chain runtime. As additional work we can ping the voters through their discord or element ID  though when we need their on-chain voting power and decision making. Council members can be any identity, they are voted in by sudo and for the sake of iterating finding conflicts of interests would also be very welcome.|  
+
+```mermaid
+flowchart
+    subgraph pallet-onboarding
+    A(seller/estate-agent) -->|sell home| B[register on-chain/mint unique asset/depositFee]
+    B -->|proof of ownership and characteristics| C{complete?}
+    C --> D[yes]
+    C --> E[no]
+    E -->|/provide required info| B
+    E -->|or/ stop listing| F[destroy/burn unique asset/return deposit]
+    end
+    subgraph housing-council
+    D -->|council looks at asset proposal| G{approve onboarding?}
+    G -->|council approves onboarding| H[asset goes to next round]
+    G --> I[dissaprove]
+    I --> F
+    end
+    subgraph investor-voting
+    H -->|inform| R
+    R[runtime] -->| assemble investors with investment over xK USD| K[selected investors-voting group]
+    K --> L{decide if assets is onboarded}
+    L .-> M[asset is listed]
+    L .-> no
+    no --> F
+    end
+
+```
 
 
 ### Milestone 3  — Bidding Mechanism
