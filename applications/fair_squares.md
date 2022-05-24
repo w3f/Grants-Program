@@ -310,12 +310,38 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up the fs-node and how to interact with the housing-fund and creating a role and identity. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article** that explains the roles modules. In which a user can register on-chain with minimal information and participate in the fair-squares platform |
-| 1. |  **pallet-roles** | We will create a Substrate pallet in which users can set their roles when they register, for now this will be a single role per address. They can choose between investor, seller, tenant, servicer (generic in this milestone). Picking a role should give the user the rights to fullfill it's role in the coming modules. | 
-| 2. | __pallet-housing-fund__ | We will create a Substrate module in wich users can desposit and withdraw their funds. This fund registers which `accountId`, `amount`, and `blocknr` the funds are commited. Other variables such as the `total_contribution_user` keep up the total per user and if a user has `withdrawn(bool)` their funds. The housing fund needs to have a getter for the `total_funds`. These storages will be used further in next modules for the selection of investors. The housing fund will bid for a house, if it has the funds to bid for an asset, so it also needs a function to allow the bidding mechanism to `reserve`, `lock` and `transfer` the amount out of the housing fund and eventually is able to bid. |  
+| 0e. | Article | We will publish an **article** that explains the roles modules. In which a user or can register on-chain with minimal information and participate in the fair-squares platform. The investor role  |
+| 1. |  **pallet-roles** | We will create a Substrate pallet in which users can set their roles when they register, for now this will be a single role per address. They can choose between investor, seller, tenant, servicer (generic in this milestone). Picking a role should give the user the rights to fullfill it's role in the coming modules. The investor and tenant role will be for now KYC-free. They can imediately play around with test-tokens. The other roles will need to go through a verifier. A seller and server have to go through vetting process.| 
+| 2. | __pallet-housing-fund__ | We will create a Substrate pallet in wich users can desposit and withdraw their funds. This fund registers which `accountId`, `amount`, and `blocknr` the funds are commited. Other variables such as the `total_contribution_user` keep up the total per user and if a user has `withdrawn(bool)` their funds. The housing fund needs to have a getter for the `total_funds`. These storages will be used further in next modules for the selection of investors. The housing fund will bid for a house, if it has the funds to bid for an asset, so it also needs a function to allow the bidding mechanism to `reserve` and `transfer` the amount out of the housing fund and eventually is able to bid. |  
 | 3. | module: **role-verifier** | built in the **roles-pallet**, this module will focus on the roles that need verification, such as businesses that will report data on-chain. These roles will be appraisers, notaries, technical verifiers, these roles might again verify retailers or other users.| 
 | 4. | Substrate chain _M1_ | The end-result after this milestone that on current chain. Users and businesses should be able to register. The verification of roles will at this point be done with the help of the sudo key or activate a verifier or KYC activator that can do the rest. If roles are set users can contribute, as it will be mandatory to invest with the role.  This will be in the future connected to a DID system and KYC (not our focus at this moment). With role setting which will be built on in further milestones. |  
 
+```mermaid
+flowchart
+Milestone:1
+    D -->|register| Z[(tentant-registry)]
+    subgraph pallet-roles
+    A[user/org] -->|picks role: investor,tentant,seller,servicer| B{decision}
+    B -->|investor| C[role given]
+    B -->|tenant| D[role given]
+    B -->|seller| E{verifier}
+    B -->|servicer| E{need verification}
+    end
+    subgraph role-verifier council/sudo
+    E .-> F{approve or deny}
+    F .-> G(approve verfication)
+    F .-> K(deny verification)
+    G --> J[role given]
+    K --> L[no access to role features]
+    end
+    subgraph pallet-housing-fund
+    C .-> H[deposit]
+    C .-> I[withdraw]
+    end
+```
+</br>
+</br>
+</br>
 
 ### Milestone 2  — Onboarding a house (asset)
 
