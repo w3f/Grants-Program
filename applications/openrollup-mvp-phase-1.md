@@ -36,7 +36,7 @@ We give a brief overview of the rollup protocols.
 - **User deposit.** Users who want to participate in a zkapp deposit to this zkapp, and the batch submitted by this zkapp needs to include this deposit.
 - **User exit.** If this zkapp ignores the user's operation in zkapp, the user can submit an exit transaction, and this zkapp must include this exit operation in the next submission.
 - **User full exit.** If the zkapp has not been submitted for a period of time, the user can exit the zkapp and withdraw the assets.
-- **Zkapp batch submit.** The submission includes the batch's commitment, operations, proof, and new and previous account state root hash. The commitment is the hash of the batch's operations, it's the public output of the zkapp's execution, so the verifier can be convinced of the state transition of the operations is correct. Operations include transfers, swaps, move to another zkapp, and exits ops, which are used to update user balances for int the zkapp.
+- **Zkapp batch submit.** The submission includes the batch's commitment, operations, proof, and new and previous account state root hashes. The commitment is the hash of the batch's operations, it's the public output of the zkapp's execution, so the verifier can be convinced that the state transition of the operations is correct. Operations include transfers, swaps, moving to another zkapp, and exit ops, which are used to update user balances for int the zkapp.
 
 - **Zkapp management** The registrant of one zkapp can manage batch submiter, manually set the zkapp to be inactive
 - **Zkapps info api.** Query the status(assets's balances, last submission time, inactive status) of each zkapp, and the assets's balances of each user in each zkapp
