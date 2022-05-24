@@ -425,14 +425,20 @@ Milestone:3
     subgraph housing-fund
     A .->|asset triggers the housing fund | Z{fund have enough funds?}
     Z --> Y[yes]
+    Y --> |assemble investor set according to FS rules| IS((investors))
     Z --> X[no]
-    Y --> I[bid]
+    IS --> I[bid]
     I --> A
     X --> R[no-bid]
     R -->|wait for next session|B
+    end
+    A --> |seller| S{decides}
+    S --> yes
+    yes -->|pass to| notary
+    S -->|got a bid outside of FS| no
+    no --> burn-asset
 
 style B fill:#f9f,stroke:#333,stroke-width:4px
-    end
 ```
 
 
@@ -461,8 +467,27 @@ style B fill:#f9f,stroke:#333,stroke-width:4px
 ```mermaid
 flowchart
 Milestone:4
-    A[asset|succesful bid]
-style B fill:#f9f,stroke:#333,stroke-width:4px
+    A[asset]
+    U[seller]
+    S[sudo/council]-->|apoint/approve| N[notary]
+    subgraph pallet-finalize
+    N .-> |check/due diligence| A
+    N .-> |check seller| U
+    N .-> |check assembled set investors| I[investors]
+    A --> G{approved?}
+    U --> G{approved?}
+    I --> G{approved?}
+    G --> NN[no]
+    NN --> B[burn digital asset]
+    B --> TE[return reserve balances]
+    TE --> SP(stop process)
+    G --> Y[yes]
+    Y --> |assemble| IS((fractionalized owners))
+    end
+    subgraph appointing-representative
+    IS --> |apoint representative| RE[(pool of representative)]
+    RE .-> | represents| IS
+    end
 ```
 
 </br>
