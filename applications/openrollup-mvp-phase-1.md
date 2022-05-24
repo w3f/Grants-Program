@@ -124,7 +124,7 @@ There are many zk-rollup projects, such as zksync, starknet, hermez, plonky2, th
 ### Team's experience
 
 Our team has a lot of experience in applied cryptography, blockchain research, and software development. 
-Chris has been a software engineer for over many years in the gaming industry and has led the development of various multiplayer online games. Recently he develop a hybrid consensus of Progpow and AuthorityRound [https://github.com/chrisicen/openethereum-unity](https://github.com/chrisicen/openethereum-unity). He is currently devoted to the development of off-chain ZK scalability solution for blockchain.
+Chris has been a software engineer for many years in the gaming industry and has led the development of various multiplayer online games. Recently he develop a hybrid consensus of Progpow and AuthorityRound [https://github.com/chrisicen/openethereum-unity](https://github.com/chrisicen/openethereum-unity). He is currently devoted to the development of an off-chain ZK scalability solution for blockchain.
 MJewzk is a blockchain development engineer and has been involved in the development of some blockchain and web3 projects.
 
 ### Team Code Repos
