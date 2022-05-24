@@ -231,7 +231,8 @@ former product leader of top blockchain companies,
 | 0b. | Documentation | We will provide documentation of use case，scaffold and demo for Relation graph |
 | 0c. | Testing Guide | we wil provide functional tests to ensure scaffold  functionality and robustness. In the guide, we will describe how to run the scaffold. |
 | 1. | package of scaffold | We will create a package of scaffold ,developer can easily and quickly bulid their business function. |
-| 2. | demo | A demo to show the process use the scaffold. |
+| 2. | demo | A demo to show the process use the scaffold,built by js+rust.It will contains simple UI. |
+| 3. | open source code | the actual pallet as open source code. |
 
 ## Future Plans
 
