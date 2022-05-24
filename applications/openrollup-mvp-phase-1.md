@@ -52,7 +52,7 @@ Open rollup supports arbitrary programs (zkapp) to interact with it, the open ro
 - **operations** emitted by zkapp-txs (such as transfer, swap, move) to update state
 - **state** merkle tree of the account's balances of tokens of a zkapp
 - **state root** the Merkle root hash of the state of a zkapp
-- **batch_commitment** the state changes commitment(hash) of the batch, it ensures the submitted operations are the result of the batch's execution
+- **batch_commitment** the state changes commitment (hash) of the batch, it ensures the submitted operations are the result of the batch's execution
 
 **Pseudocode run offchain on zkapp side**
 
