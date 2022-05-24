@@ -20,7 +20,7 @@
 
 ### Project Details
 
-The core of Open rollup is open-rollup-pallet, which saves the program-hash, balance, operations(e.g., transfer, swap, move),  and account state root hash of each zkapp. in addition it saves each users' balance of each zkapp, one child trie per zkapp.
+The core of Open rollup is open-rollup-pallet, which saves the program-hash, balance, operations (e.g., transfer, swap, move),  and account state root hash of each zkapp. In addition it saves each users' balance of each zkapp, one child trie per zkapp.
 It includes two main components: rollup and verifier. 
 The rollup component includes zkapp registration, user deposits to a zkapp, exit when zkapp is inactive which didn't submit a batch before 7 days, and handling full-exit operations on the zkapp side.
 Due to resource and time constraints, this proposal currently only contains the rollup component, and instead of implementing a mock verifier which always returns true.
