@@ -23,7 +23,7 @@
 The core of Open rollup is open-rollup-pallet, which saves the program-hash, balance, operations (e.g., transfer, swap, move),  and account state root hash of each zkapp. In addition it saves each users' balance of each zkapp, one child trie per zkapp.
 It includes two main components: rollup and verifier. 
 The rollup component includes a zkapp registration, user deposits to a zkapp, exit when a zkapp is inactive which didn't submit a batch within 7 days and the handling of full-exit operations on the zkapp side.
-Due to resource and time constraints, this proposal currently only contains the rollup component, and instead of implementing a mock verifier which always returns true.
+Due to resource and time constraints, this proposal currently contains a rollup component, and a [miden](https://github.com/maticnetwork/miden) verifier instead of a zkvm that we want to implement in the future.
 The verifier will be included in future proposals, and the rollup part will also increase the support of tokens and NFTs.
 Our initial idea about the verifier is to implement the verifier of [Cairo VM](https://eprint.iacr.org/2021/1063.pdf) in the future, which requires implementing the AIR of zkstark for Cairo VM. Then the developers of zkapp can use [Cairo-lang](https://www.cairo-lang.org/) to develop zkapp.
 
@@ -162,11 +162,8 @@ We've been working on techniques for zk-rollup, and verifiable computation for s
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. |
-| 1.  | Setup | We provide a repository that forms the basis of our deliverables.|
-| 2.  | Core Types | We provide the core data types, as specified in Project Details. |
-| 3.  | Verifier trait and mock verifier | We provide the verifier trait suitable for general apps and a mock verifier that always pass the zk-verification. |
-| 4.  | Pallet functions | We provide the functionalities(zkapp registration/user deposit/user exit/user full exit/zkapp batch submit/zkapp management/zkapp info api) which support currencies/tokens/NFTs as specified in Project Details. |
-| 5.  | zkapp demo example | We provide an demo example of a payment zkapp that uses a node.js application to fetch pallet transactions, provide user API service, manage its merkle state database, register the zkapp with the Open rollup pallet and submit transaction batches. We use [assemblyscript](https://www.assemblyscript.org/) and [node.js's WASI](https://nodejs.org/api/wasi.html) to mock a mock zkvm: zkwasm, we provide the payment logic in assemblyscript and then use this zkwasm to execute it and generate a mock proof. As a demo example, the payment logic doesn't provide user authentication.|
+| 1.  | Pallet | We provide the core data types and the functionalities(zkapp registration/user deposit/user exit/user full exit/zkapp batch submit/zkapp management/zkapp info api) which support currencies/tokens/NFTs as specified in Project Details. |
+| 2.  | Verifier trait and [miden](https://github.com/maticnetwork/miden) verifier | We provide the verifier trait suitable for general apps, and a miden verifier that implements the verifier trait. |
 
 ## Future Plans
 
