@@ -43,7 +43,7 @@ We give a brief overview of the rollup protocols.
 
 #### Prove and Verification abstraction
 
-Open rollup supports arbitrary programs (zkapp) to interact with it, the open rollup pallet runs on-chain (L1), and zkapp runs off-chain (L2). To ensure the correctness of off-chain zkapp execution and state transitions, open rollup abstracts an zkvm runs off chain, and an on-chain verifier verify the batch submitted by zkapp.
+Open rollup supports arbitrary programs (zkapp) to interact with it, the open rollup pallet runs on-chain (L1), and zkapp runs off-chain (L2). To ensure the correctness of off-chain zkapp execution and state transitions, open rollup abstracts a zkvm that runs off-chain, and an on-chain verifier verifies the batch submitted by zkapp.
 
 - **zkvm** run a zkapp program, generate proofs
 - **program** zkapp program, consisting of zkvm instructions
