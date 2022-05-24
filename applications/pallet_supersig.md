@@ -244,7 +244,7 @@ pub fn remove_member(
 | 0b. | Documentation | We will provide inline documentation of the supersig pallet's code, and a basic tutorial that explains how a user can spin up one of our Substrate nodes and send test transactions, which will show how the supersig functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article that explains supersig pallet to developers; and a substrate workshop/seminar that explains that shows how the pallet was designed.
+| 0e. | Article | We will publish an article that explains supersig pallet to developers on medium and subsocial; and a substrate workshop/seminar that explains that shows how the pallet was designed (if there available slot, else a video shared on youtube).
 | 1. | Substrate module: pallet_supersig | We will create a Substrate pallet that will allow user you to create a "supersig" where users can be added and removed. All extrinsics will require a simpleMajority to approve. The clear difference from multisig is that the supersig address is not a composite of its signatories, therefore it will stay static when adding or removing signatories.   |  
 | 2. | Benchmarking | The pallet will be benchmarked and unit tested using worst case weightings. |
 
@@ -261,7 +261,7 @@ pub fn remove_member(
 | 0b. | Documentation | We will provide inline documentation and a tutorial with a polkadot-js apps fork that guides a developer to simply set up supersig pallet and UI. |
 | 0c. | Error messages | Core functions will be fully covered by very informative error messages. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with milestone 2. The dockerfile will be a polkadot JS UI fork, it will also be the smallest possible file size (MBs not GBs) |
-| 0e. | Article | We will publish an article that explains supersig pallet to the end-user. 
+| 0e. | Article | We will publish an article that explains supersig pallet to the end-user. The article will be on medium and subsocial. 
 | 1. | Substrate module: pallet_supersig | We will create a Substrate module from Milestone 1 that will be connected to a substrate chain as mentioned in 2.   |  
 | 2. | Substrate chain | We will create a custom substrate template that will contain pallet supersig |  
 | 3. | Polkadot JS Apps UI Fork | We will add the custom feature to a polkadot JS UI fork (and make a PR to the main repo), so that the user can see the pallet in action, end to end.   |  
