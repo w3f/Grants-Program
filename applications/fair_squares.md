@@ -338,6 +338,7 @@ Milestone:1
     C .-> H[deposit]
     C .-> I[withdraw]
     end
+    style A fill:#f9f,stroke:#333,stroke-width:4px
 ```
 </br>
 </br>
@@ -361,6 +362,7 @@ Milestone:1
 
 ```mermaid
 flowchart
+Milestone:2
     subgraph pallet-onboarding
     A(seller/estate-agent) -->|sell home| B[register on-chain/mint unique asset/depositFee]
     B -->|proof of ownership and characteristics| C{complete?}
@@ -383,8 +385,10 @@ flowchart
     L .-> no
     no --> F
     end
-
+    style A fill:#f9f,stroke:#333,stroke-width:4px
 ```
+</br>
+</br>
 
 
 ### Milestone 3  — Bidding Mechanism
@@ -405,6 +409,36 @@ flowchart
 | 4. | Module: **fractioning** | When the bidding-pallet has assembled the set of investors and the bid is succesful. This is passed along to the fractionalizing module that fractions the assets purchase price with the  the investors and gives them a share of the unique-asset.| 
 | 5. | Substrate chain _M3_ | The combination of the previous milestones and this one, with **pallet-bidding** gives us automation that FS can bid on a asset (house) based on the funds it has on-chain. In a still a simplified flow, however with the next milestone more on-chain verificaton is added based on verified roles in the off-chain world. **Note**: _for this milestone we will take a shortcut with finalizing the sale, the next milestone we will focus on making it more secure the interaction with the off-chain world._ |  
 
+```mermaid
+flowchart
+Milestone:3
+    A[onboarded asset]
+    Z[housing fund]
+    subgraph pallet-bidding
+    B[bidding engine] -->|scans available assets every session| C([pool of onboarded assets that are open])
+    C --> D{are there assets to bid on?}
+    D --> E[yes] 
+    D --> F[no]
+    E --> A
+    F -->|wait for next session| B
+    end
+    subgraph housing-fund
+    A .->|asset triggers the housing fund | Z{fund have enough funds?}
+    Z --> Y[yes]
+    Z --> X[no]
+    Y --> I[bid]
+    I --> A
+    X --> R[no-bid]
+    R -->|wait for next session|B
+
+style B fill:#f9f,stroke:#333,stroke-width:4px
+    end
+```
+
+
+</br>
+</br>
+
 ### Milestone 4  — finalizing sale, representative, finding a tenant 
 
 - **Estimated Duration:** 5 weeks
@@ -422,6 +456,18 @@ flowchart
 | 2. | Module: **representative** | When the sale of an asset is finalized, the new fractionalized owners are to be assigned a representative. The representative of the owners finds a tenant from the pools of tentants registered on-chain. The representatitive has to find the match based on region, total inhabitants and costs. The tenant will have to provide all this information. that will represent the house owners and find a tenant. |
 | 3. | Module: **landlord-voting** | With the sale being finalized the new asset-owners/landlords can vote in a representative, vote over improvements, lay-down a representative if it doesn't perform or represent the best interest of the owners. This module is created in the **pallet-roles** and **pallet-voting** |
 | 4. | FS-chain | In milestones we build the functionality further with the **pallet-finalizer** the finalizer, gives us the certainty that a sworn trusting legal entity is able to finalize the sale and with the representatitve we us the finalization of the asset and fractional owners. With the following new modules landlord voting, we can give the shareholders of a house a say in who get's to be the representative. So the next steps for matching can be handled.   | 
+
+
+```mermaid
+flowchart
+Milestone:4
+    A[asset|succesful bid]
+style B fill:#f9f,stroke:#333,stroke-width:4px
+```
+
+</br>
+</br>
+
 
 ### Milestone 5 — Matching, reccuring payments and UI development
 
