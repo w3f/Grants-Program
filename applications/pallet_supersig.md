@@ -241,10 +241,10 @@ pub fn remove_member(
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide inline documentation of the supersig pallet's code, and a basic tutorial that explains how a user can spin up one of our Substrate nodes and send test transactions, which will show how the supersig functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article that explains supersig pallet to developers; and a substrate workshop/seminar that explains that shows how the pallet was designed.
 | 1. | Substrate module: pallet_supersig | We will create a Substrate pallet that will allow user you to create a "supersig" where users can be added and removed. All extrinsics will require a simpleMajority to approve. The clear difference from multisig is that the supersig address is not a composite of its signatories, therefore it will stay static when adding or removing signatories.   |  
 | 2. | Benchmarking | The pallet will be benchmarked and unit tested using worst case weightings. |
 
@@ -258,10 +258,10 @@ pub fn remove_member(
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. The dockerfile will be a polkadot JS UI fork. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
+| 0b. | Documentation | We will provide inline documentation and a tutorial with a polkadot-js apps fork that guides a developer to simply set up supersig pallet and UI. |
+| 0c. | Error messages | Core functions will be fully covered by very informative error messages. |
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with milestone 2. The dockerfile will be a polkadot JS UI fork, it will also be the smallest possible file size (MBs not GBs) |
+| 0e. | Article | We will publish an article that explains supersig pallet to the end-user. 
 | 1. | Substrate module: pallet_supersig | We will create a Substrate module from Milestone 1 that will be connected to a substrate chain as mentioned in 2.   |  
 | 2. | Substrate chain | We will create a custom substrate template that will contain pallet supersig |  
 | 3. | Polkadot JS Apps UI Fork | We will add the custom feature to a polkadot JS UI fork (and make a PR to the main repo), so that the user can see the pallet in action, end to end.   |  
@@ -277,10 +277,10 @@ pub fn remove_member(
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will update the Dockerfile(s) from previous milestones.|
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| 0b. | Documentation | We will update inline documentation and tutorials based on updates and feedback gained from user interviews. |
+| 0c. | Testing Guide | If required we will update unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will update the Dockerfile from previous milestones.|
+| 0e. | Article | We will update our prior articles if we have made any changes during this milestone.  |
 | 1. | User interviews, feedback iteration | We will conduct user interviews to collate feedback and put them in a task backlog. We will select priorities that fit within the scope of this grant, which will be updated. From the findings of our feedback, a backlog of future tasks may be added on our kanban baord to create minor/major version bumps, and would inform the priority of future work. This milestone is vague because we are using this time to finding out unknowns to make changes with care (and in Good Faith).
 | 2. | Substrate module: pallet_supersig | We will make any necessary updates from previous milestones.   | 
 | 3. | Polkadot JS Apps UI: Polkadot JS UI Fork | We will make any necessary updates from previous milestones.  | 
