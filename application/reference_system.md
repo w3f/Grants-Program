@@ -31,11 +31,11 @@ In Web2 users are not just consumers, but also become service providers to creat
 
 Therefore Web3 aims at solving the problem of non-incentive in Web1, and centralization in Web2 to make online services both decentralized and incentive. In Web3, online public services should be maintained and managed not by any centralized entity in private, but by users in public collectively. Users will not only consume and provide online services, but also manage them together to protect their own digital rights, freedom and assets. 
 
-Some Web3 projects try to break the monopoly among different platforms, and give some rights of self-governance to the community via DAO, but still far from the goal above. A central team like the founding company still has more privileges and plays a more vital role than others in determining the development and management of its project, and they predefine and limit the self-governance of the DAO, making it not so useful. To participate in DAO, users need to buy and stake governance tokens, which sets a high threshold and causes inequality. The distribution of governance tokens is often uneven, making DAO not so decentralized and representative. The users who don’t have the majority of votes have to compromise. 
+Some Web3 projects try to break the monopoly among different platforms, and give some rights of self-governance to the community via DAO, but still far from the goal above. A central team like the founding company still has more privileges and plays a more vital role than others in determining the development and management of its project, and they predefine and limit the self-governance of the DAO, making it not so useful. To participate in DAO, under the current mode of many DAO, users need to buy and stake governance tokens, which sets a high threshold and causes inequality. The distribution of governance tokens is often uneven, making collusion and bribe possible. The users who don’t have the majority of stakes or votes have to compromise. 
 
 In order to really achieve fully decentralized and incentive Web3, we design a reference system on blockchain to enable permissionless and unlimited public collaboration for managing and improving online services via the reference relationship that new work refers to the old work it is based on, and sharing its earnings with the referred old work. 
 
-With our reference system, we expect that owners are willing to open and share their works of online services, so they could be developed and managed by different people to meet different needs, and users could freely choose and switch among different new works without limitations. According to the reference relationship, each contribution to the online services would be traced and rewarded to give contributors incentive while maintaining the opening and decentralization of Web3. 
+With our reference system, we expect that owners are willing to open and share their works of online services, so they could be developed and managed by different people to meet different needs, and users could freely choose and switch among different new works without limitations. According to the reference relationship, each contribution to the online services would be traced and rewarded to give contributors incentive while maintaining the opening and decentralization of Web3.
 
 ![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/overview.png)
 
@@ -69,9 +69,10 @@ In this way, users can get the best online services to fully protect their indiv
 
 **Use case**
 
-For example, currently one DeFi application couldn’t have multiple versions made by different people. If others change a DeFi protocol to make a new version of it, it couldn’t get the internal network and resources of the original version. For instance, Sushiswap improved Uniswap, but Uniswap couldn’t open and share its liquidity pool with Sushiswap. Sushiswap has to build a new protocol completely independent from Uniswap even though it’s based on Uniswap. In order to have its own liquidity, Sushiswap launched vampire attacks to scramble for Uniswap’s liquidity. 
+Current on-chain applications couldn’t allow different new versions (or forks, or branches) made by different people based on its original version. For instance, Uniswap only allows one version at one time, like v1 in 2018, v2 in 2020, and v3 in 2021, and they are all made by the official. They don't allow new versions made by others based on their version at the same time, like v1.1, v1.2, v1.3... in 2018, v2.1, v2.1.1, v2.1.1.1 in 2020.... If others change and improve a DeFi protocol to make a new version based on it such as Sushiswap wants to add goverance token to Uniswap, the new version is totally seperate from the original version without access to the orginal version including its internal network and resources such as Sushiswap couldn't connect to the liquidty pool of Uniswap. Sushiswap has to build a new protocol completely independent from Uniswap from scratch even though it’s based on Uniswap. In order to have its own liquidity, Sushiswap launched vampire attacks to scramble Uniswap’s liquidity, which is not optimal for both. 
 
-With our reference system, Uniswap can have unlimited new versions just like branches or forks made by anyone including Sushiswap. Uniswap opens and shares its internal users and network and allows anyone to make any changes on itself, so Sushiswap can access the liquidity pools of Uniswap and build their protocol based on them directly with no need to build their own from scratch. In return, the earnings of the Sushiswap will be distributed with Uniswap as the incentive for its opening and sharing. Users don’t have to choose between Uniswap and Sushiswap, but can use both at the same time without separation.
+
+With our reference system, Uniswap allows unlimited new versions based on it made by anyone including Sushiswap. Although made by different people, different versions can access and interoperate with the official versions v1, v2, or v3, like soft fork not hard fork. In this way users can freely choose old version or new version. In this way Sushiswap can directly build their new version based on Uniswap, and share the same liquidity pool with Uniswap rather than having to build another completely new project and launching vampire attack to scramble the liquidity of Uniswap.  In return, the earnings of the Sushiswap will be distributed with Uniswap as the incentive for its opening and sharing. Users don’t have to choose one between Uniswap and Sushiswap, but can use both at the same time without separation. Such collaboration rather than vicious competition would be beneficial to users and both Uniswap and Sushiswap.
 
 ![img](https://github.com/hoho-yin/Grants-Program/blob/hoho-yin-patch-1/use_case.png)
 
@@ -158,7 +159,7 @@ When creating a new work, a corresponding token will be minted automatically wit
 
 3. A revenue allocation and distribution system that confirms the revenue distribution scheme agreed by different works with the reference relationship. It will track the earnings of the new work, and distribute them with the old work which the new work refers to according to their distribution scheme.
 
-All programs will be developed in !ink on Pallets.
+we will develop in ink! and implement for Substrate-based blockchains with the virtual machine of Contracts pallet.
 
 
 **Milestones:**
@@ -166,15 +167,15 @@ All programs will be developed in !ink on Pallets.
 ### Overview
 
 - **Total Estimated Duration:** 6 months
-- **Full-Time Equivalent (FTE):**  2 ~ 4 people depending on actual workload
-- **Total Costs:** $20,000
+- **Full-Time Equivalent (FTE):**  4 ~ 6 people depending on actual workload
+- **Total Costs:** $40,000
 
 
 ### Milestone 1 — Reference token standard
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developers and 1 technical researcher
-- **Costs:** 3,000 USD
+- **Costs:** 6,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -185,14 +186,14 @@ All programs will be developed in !ink on Pallets.
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
 |  1. | Specification | We will specify the details of our token standard design that how users can create their own work, refer to others' work, and get the earnings of their work via the reference token in the reference system. |
 |  2. | Setup | We provide a repository that forms the basis of our deliverables. |
-|  3. | Core Types | We provide the core data and coding types in details. |
+|  3. | Core Types | We will provide the core data format and coding types of the token standard in details. |
 
 
 ### Milestone 2 — Achieve full interoperability and composability among referred works
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developers and 1 technical researcher
-- **Costs:** 3,000 USD
+- **Costs:** 6,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -201,16 +202,16 @@ All programs will be developed in !ink on Pallets.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
-|  1. | Specification | We will specify the configurations and parameters of the interoperability and composability features that allows users in our system to freely change anywhere of others' old work to build their new work based on them, while their new work can still connect to the referred old work seamlessly and access its internal network resources directly. |
+|  1. | Specification | We will specify the configurations and parameters of the interoperability and composability features that allows users in our system to freely change anywhere of others' old work to build their new work based on them, while their new work can still connect to the referred old work seamlessly especially accessing its internal network resources directly. |
 |  2. | Setup | We provide a repository that forms the basis of our deliverables. |
-|  3. | Core Types | We provide the core data and coding types in details. |
+|  3. | Core Types | We will provide the core types of interfaces and smart contracts that directly connects different programs in details. |
 
 
 ### Milestone 3 — Achieve security and privacy
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developers and 1 technical researcher
-- **Costs:** 3,000 USD
+- **Costs:** 6,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -221,14 +222,14 @@ All programs will be developed in !ink on Pallets.
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
 |  1. | Specification | We will specify the configurations and parameters of the security and privacy features that protects old work against malicious new work from launching attacks on them by referring to them in our system. |
 |  2. | Setup | We provide a repository that forms the basis of our deliverables. |
-|  3. | Core Types | We provide the core data and coding types in details. |
+|  3. | Core Types | We will provide the core data and coding types of security techniques and privacy protection measurements of our system in details. |
 
 
 ### Milestone 4 — Design economic model and incentive scheme
 
 - **Estimated duration:** 1 month
 - **FTE:**  1 technical researcher, and 2 economic researchers
-- **Costs:** 3,000 USD
+- **Costs:** 6,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -237,14 +238,14 @@ All programs will be developed in !ink on Pallets.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
-|  1. | Specification | We will specify the formalization and analysis of the economic model and incentive scheme design that collects the earnings of the new work and distributes them with all its referred works based on their reference relationships recorded on our reference system, which can motivate old works to open and share their works including internal network resources with others who can build their new work based on them. |
-
+|  1. | Specification | We will specify the formalization and analysis of the economic model and incentive scheme design that collects the earnings of the new work and distributes them with all its referred works based on their reference relationships recorded on our reference system. We will prove it can motivate old works to open and share their works including internal network resources with others who can build their new work based on them. |
+|  2. | Design Report | We will provide detailed design of the economic model and whole process of the incentive mechnism in our system. |
 
 ### Milestone 5 — Build DAO Community
 
 - **Estimated duration:** 1 month
 - **FTE:**  1 economic researcher, and 2 management researchers
-- **Costs:** 3,000 USD
+- **Costs:** 6,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -254,13 +255,13 @@ All programs will be developed in !ink on Pallets.
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
 |  1. | Specification | We will specify the design and management of our DAO community where users can participant in and contribute to the governance of our reference system equally and directly. |
-
+|  2. | Design Report | We will provide detailed self-goverance rules of the DAO, and operation and management guidelines of the coummnity for our system. |
 
 ### Milestone 6 — System building and testing
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developer, 1 technical researcher, 1 economic researcher, and 1 management researcher
-- **Costs:** 5,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -272,7 +273,8 @@ All programs will be developed in !ink on Pallets.
 |  1. | Specification | We will combine all our previous works above together to build the integrated system. We will specify the configurations and implementations of the whole system, and encourage everyone within the community to use, test and improve. |
 |  2. | Setup | We provide a repository that forms the basis of our deliverables. |
 |  3. | Core Types | We provide the core data and coding types in details. |
-|  4. | User Testing | We will make the testing plan and invite users for testing and evaluation. After that we will produce testing report, and improve our system continually based on that. |
+|  4. | Theoretical Analysis | We will measure the degree and utility of decentralization in Web3 brought by our project. How decentralized Web3 could be after using our system, and how online services could be better on such more decentralized Web3. |
+|  4. | User Testing | We will test the functionalities, security, and performance of our system by making the testing plan and inviting users for our testing and evaluation. After that we will produce testing report, and improve our system continually based on that. |
 
 ## Future Plans
 
