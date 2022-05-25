@@ -179,7 +179,7 @@ All programs will be developed in !ink on Pallets.
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | We will design a new reference license in our project, which records and reflects the reference relationship between the referred old works and the new works that are based on the old works. |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up a [Substrate contracts node](https://github.com/paritytech/substrate-contracts-node), deploy and intialize the contracts and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
