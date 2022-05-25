@@ -435,7 +435,7 @@
 | [Pennsylvania State University](https://www.psu.edu/) | Avoiding Rust Deadlocks via Lifetime Visualization | [GitHub](https://songlh.github.io/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Anagolay](https://anagolay.network/) | Project Idiyanale | [GitHub](https://github.com/anagolay) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Fennel Labs](https://fennellabs.com/) | Fennel Protocol | [GitHub](https://github.com/fennelLabs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Valletech AB](https://valletech.eu/) | Polkawatch | [GitHub](https://gitlab.com/polkawatch) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Valletech AB](https://valletech.eu/) | Polkawatch | [GitHub](https://gitlab.com/polkawatch) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [EzCode](https://ezcode.co/) | Polkadot.js NoCode Plugin | [GitHub](https://github.com/inartin) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Virto Network](https://virto.network/) | LIP payments pallet | [GitHub](https://github.com/virto-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Kami Ekbatanifard](https://github.com/Nick-1979/) | Polkadot.js Plus Extension | [GitHub](https://github.com/Nick-1979/polkadot-Js-Plus-extension/wiki) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
