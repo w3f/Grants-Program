@@ -13,7 +13,7 @@ Fair Squares aims is to co-create a more transparent and fair housing market for
 
 - A brief description of our project.
 
-Fair squares aims to implement the return-on-rent variable on rental houses that has fractional ownership. This variable brings the investor and tenant in direct relationship. Our goal is to find the right balance for the affordable housing gap. A group of individuals, each bundling their capital to invest in a house that is for sale, with the purpose to rent it out. Based on their individual fractional share of the house they will get a yield which is the social return-on-rent.
+Fair squares aims to implement the return-on-rent variable on rental houses that have fractional ownership. This variable brings the investor and tenant in direct relationship. Our goal is to find the right balance for the affordable housing gap. A group of individuals, each bundling their capital to invest in a house that is for sale, with the purpose to rent it out. Based on their individual fractional share of the house they will get a yield which is the social return-on-rent.
 
 In order to create affordable housing, while offering investors a better return compared to other defensive investments. The community agrees on the capped yield, which controls the rent and keeps it affordable. These parameters are governed by the council and stakeholders that strive for a fair housing market. 
 
@@ -22,13 +22,13 @@ To achieve the above we rely on bringing assets on-chain and verifiable by real 
 
 - Integration into Substrate / Polkadot / Kusama.
 
-The Kusama and Polkadot ecosystem allows us to use the required building blocks through the relay-chain. The substrate framework allows us to configure runtime to the custom needs and bring out a protocol that works like clockwork to onboard assets and rent them out. The already open-sourced frame pallets and other teams building blocks are helping us a lot in achieving the above.
+The Kusama and Polkadot ecosystem allow us to use the required building blocks through the relay-chain. The substrate framework allows us to configure runtime to the custom needs and bring out a protocol that works like clockwork to onboard assets and rent them out. The already open-sourced frame pallets and other teams building blocks are helping us a lot in achieving the above.
 
-For our the social mission to be succesful we require several actions on-chain, such as voting, selection of funds, governing and reccuring payments. We are looking to build a feeless parachain while getting the security from the relay-chain. We believe that the parachain functiunality collaboration is crucial to our mission by using multi-chain services for DIDs, stablecoins, storage protocols within the substrate web3 ecosystem. 
+For our social mission to be succesful we require several actions on-chain, such as voting, selection of funds, governing and reccuring payments. We are looking to build a feeless parachain while getting the security from the relay-chain. We believe that the parachain functiunality collaboration is crucial to our mission by using multi-chain services for DIDs, stablecoins, storage protocols within the substrate web3 ecosystem. 
 
 - Our Motivativation.
 
-It is exciting to see the rise of DeFi, the increasing TVL of liquidity, taking over traditional finance roles such as a market-maker, but not fully. We as a team are users of these (DeFi) products and believe there is not turning back from this. Nevertheless we are seeing the negative social economical consequences, collapsing protocols, or not being fully educated just because of a juicy APR. We want to focus on the blockchain technology that is equitable no matter the time-frame you enter that creates more intervowen links to the real-world and usable in the multi-chain world. We want people to still earn returns on their investments, while building equitable systems that are accesible for all. Another reason to motivate us is that we found a way we can stop profit maximization on basic needs while striving to keep both ends of the supply and demand in balance. 
+It is exciting to see the rise of DeFi, the increasing TVL of liquidity, taking over traditional finance roles such as a market-maker, but not fully. We as a team are users of these (DeFi) products and believe there is no turning back from this. Nevertheless we are seeing the negative social economical consequences, collapsing protocols, or not being fully educated just because of a juicy APR. We want to focus on the blockchain technology that is equitable no matter the time-frame you enter that creates more intervowen links to the real-world and usable in the multi-chain world. We want people to still earn returns on their investments, while building equitable systems that are accesible for all. Another reason to motivate us is that we found a way we can stop profit maximization on basic needs while striving to keep both ends of the supply and demand in balance. 
 
 
 ### Project Details
@@ -43,149 +43,140 @@ Since then we having been discussing what the modules and pallets are required t
 ```mermaid
 classDiagram
 
-FS_Pallet *--* rolesFd_mod_rs
-FS_Pallet <|-- Housing_Fund
-rolesFd_mod_rs *--* rolesFd_item_rs 
-
-
-class Nft_Pallet{
-  do_create_class()
-  do_mint()
-
-}
-
-class Housing_Fund{
+class Treasury_Pallet{
     pot()
     spend_funds()
     propose_spend()
     reject_proposal()
     remove_approval()
 }
+FS_Pallet <|-- Treasury_Pallet
 
-class TokenByOwnerData{
-  +tuple percent_owned
-  +Instanceof instance
+class Accounts_enum{
+    +INVESTOR
+    +SELLER
+    +TENANT
+    +INVALID
 }
-
-class TokenByOwner_storage{
-  +(Accountid AccountId, (Nftclassid classID, Nftinstanceid InstanceId))
-  +struct TokenByOwnerData  
-}
-
-TokenByOwner_storage *--* Nft_Pallet
-Nft_Pallet <|-- TokenByOwnerData
-
-rolesFd_mod_rs <|-- Nft_Pallet
-
-
+FS_Pallet -- Accounts_enum
 class FS_Pallet{
-    Mint_House()
-    Create_proposal()
+    +enum Accounts
+    +trait Config
+    create_account(origin,account_type)
+    create_asset(origin)
+    create_proposal(origin,value,house_index,metadata)
     Select_contributors()
     Proposal_Vote()
-    Fund_Proposal()    
-    transfer_nft()
+    fractional_transfer(from,to,proposal_index)
     Distribute_rent()
+    pot()
     }
-class InvestorLog_storage{
-  +AccountId AccountId
-  +struct Investor
+FS_Pallet -- rolesFd_mod_rs
+rolesFd_mod_rs -- rolesFd_item_rs 
+
+
+
+class Investor_Registry{
+  +key AccountId
+  +value Investor_struct
 }
-class HouseSellerLog_storage{
-  +AccountId AccountId
-  +struct HouseSeller
+class Seller_Registry{
+  +key AccountId
+  +value Seller_struct
 }
-class MintedHouse_storage{
-  +int HouseIndex
-  +struct House
+class MintedHouse_Registry{
+  +key HouseIndex_int
+  +value House_struct
 }
 
-class Rent_Storage{
-    +struct House
-    +balance total
-    +balance maintenance
-    +vecStruct Tenants
+class Contributions_Registry{
+    +key AccountId
+    +value tuple(Blocknumber,Balance,Vec~Contribution_struct~)
     }
 
-class ContributionsLog_storage{
-    +AccountId AccountId
-    +tuple Blocknumber/Balance/Vec<Contribution>   
-    }
-
-class ProposalLog_storage{
-    +int ProposalIndex
-    +tuple Blocknumber/Balance/House/Bool  
+class Proposals_Registry{
+    +key ProposalIndex_int
+    +value tuple(Blocknumber,Balance,House_struct,Bool  )
 }
 
-class ContribIndex_storage{
-  +int ContributionIndex
+class Contribution_index_Registry{
+  +value ContributionIndex_int
 }
 
-class HouseInd_storage{
-  HouseIndex
+class House_index_Registry{
+  +value HouseIndex_int
 }
 
-class ProposalInd_storage{
-  +int ProposalIndex
+class Proposal_index_Registry{
+  +value ProposalIndex_int
 }
 
-class MintedNftLog_storage{
-  +int HouseIndex
-  +struct NfT
+class MintedNft_Registry{
+  +key tuple(AccountId,HouseIndex)
+  +value tuple(ClassOf,InstanceOf,NfT_struct)
 }
 
+
+
+class NfT_type{
+    +struct TokenByOwnerData
+}
+
+class ClassOf_type{
+    +type NftClassId
+}
+class InstanceOf_type{
+    +type NftInstanceId
+}
 
 class House_struct{
-      +Roles Owners
-      +Balance Value
-      +Bool Funded
-      +Balance rent
-      +nft nft_index
-
+      +Vec Vec~AccountId~
+      +int nft_index
+      +BlockNumberOf age
+      +int index
     }
 
 class Contribution_struct{
-      +int ContributionIndex
-      +Balance Contribution
-      +Blocknumber age
+      +BalanceOf amount
+      +BlockNumberOf age
+      +int index
     }
 
-    rolesFd_mod_rs <|-- Investor_struct
-    rolesFd_mod_rs <|-- Notary_struct
-    rolesFd_mod_rs <|-- Tenant_struct
-    rolesFd_mod_rs <|-- HouseSeller_struct
-    rolesFd_item_rs <|-- House_struct
-    rolesFd_item_rs <|-- Contribution_struct
-    Rent_Storage *--* FS_Pallet
-    ContributionsLog_storage *--* FS_Pallet
-    InvestorLog_storage *--* FS_Pallet
-    ProposalLog_storage *--* FS_Pallet
-    MintedHouse_storage *--* FS_Pallet
-    HouseSellerLog_storage *--* FS_Pallet
-    ContribIndex_storage *--* FS_Pallet
-    HouseInd_storage *--* FS_Pallet
-    ProposalInd_storage *--* FS_Pallet
-    MintedNftLog_storage *--* FS_Pallet
+    rolesFd_mod_rs -- Investor_struct
+    rolesFd_mod_rs -- Notary_struct
+    rolesFd_mod_rs -- Tenant_struct
+    rolesFd_mod_rs -- Seller_struct
+    rolesFd_item_rs -- House_struct
+    rolesFd_item_rs -- Contribution_struct
+    Contributions_Registry -- FS_Pallet
+    Investor_Registry -- FS_Pallet
+    Proposals_Registry -- FS_Pallet
+    MintedHouse_Registry -- FS_Pallet
+    Seller_Registry -- FS_Pallet
+    Contribution_index_Registry -- FS_Pallet
+    House_index_Registry -- FS_Pallet
+    Proposal_index_Registry -- FS_Pallet
+    MintedNft_Registry -- FS_Pallet
   
 
     class Investor_struct{
       +AccountId AccountId
       +int nft_index
-      +Blocknumber age
-      new(AccountId,house_index)
-      Contribute_toFund(origin,value)
-      Vote_proposalt()
-
+      +BlocknumberOf age
+      +Balanceof share
+      +int selections
+      new(origin)
+      Contribute_toFund(self,origin,value)
     }
-    class HouseSeller_struct{
+
+    class Seller_struct{
       +AccountId AccountId
       +int nft_index
-      +Blocknumber age
-      new(AccountId,house_index)
-      create_proposal(origin,value,house_index,nft_metadata)
+      +BlocknumberOf age
+      new(origin)
+      mint_house(self,origin)
+      new_proposal(self,origin,value,house_index,metadata)
       destroy_proposal(origin,house_index)
-      mint_house(origin)
-      mint_nft()
     }
     class Notary_struct{
       +AccountId AccountId
@@ -196,7 +187,44 @@ class Contribution_struct{
       +Balance Rent
       Pay_rent()
     }
-    
+
+class Nft_Pallet{
+    +type BoundedVecOfUnq~T~
+    +type ClassInfoOf~T~
+    +type InstanceInfoOf~T~
+    +enum Config_nft    
+    do_create_class()
+    do_mint()
+
+}
+
+class Config_Nft{
+    +type NftClassId
+    +type NftInstanceId
+}
+
+class TokenByOwnerData_struct{
+  +tuple percent_owned
+  +Instanceof instance
+}
+
+
+class TokenByOwner_storage{
+  +key tuple(AccountId, tuple(Nftclassid, Nftinstanceid))
+  +struct TokenByOwnerData  
+}
+
+TokenByOwner_storage -- Nft_Pallet
+Nft_Pallet -- TokenByOwnerData_struct
+Config_Nft -- NftClassId
+Config_Nft -- NftInstanceId
+Nft_Pallet -- Config_Nft
+TokenByOwnerData_struct --|> NfT_type
+NftClassId --|> ClassOf_type
+NftInstanceId --|> InstanceOf_type
+rolesFd_mod_rs -- InstanceOf_type
+rolesFd_mod_rs -- ClassOf_type
+rolesFd_mod_rs -- NfT_type
 ```
 
 The **techstack** that is currently focused on:
@@ -319,9 +347,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 ```mermaid
 flowchart LR
 Milestone:1
-    D -->|register| Z[(tentant-registry)]
+    D -->|register| Z[(tenant-registry)]
     subgraph pallet-roles
-    A[user/org] -->|picks role: investor,tentant,seller,servicer| B{decision}
+    A[user/org] -->|picks role: investor,tenant,seller,servicer| B{decision}
     B -->|investor| C[role given]
     B -->|tenant| D[role given]
     B -->|seller| E{verifier}
@@ -459,7 +487,7 @@ style B fill:#f9f,stroke:#333,stroke-width:4px
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the the usage of the functionality in additon to the previous milestones. The article will emphasize why finalization of the asset acquirement is required, why a representative is needed and what it's role is. How other previous stakeholders interact with the new functions and roles.|
 | 1. | **pallet-finalizer** | Before the house title can be transfered to the fractional new owners when the sale of an asset sale is succesful there needs to be checks done by the appointed notary. This is the authority, also in the current finalization of the title transfers. Notaries make sure the new buyers are aware of what they are buing and the notary makes sure no one else can write the asset on their name. In FS's case this swap is done by the blockchain, but the notary would give the green light. The finalization will be it's own pallet and functionality will be expanded in the future. The roles will be set in **pallet-roles**, which gives the notary and the land registry users rights to let the exchange pass. The transfer titles need to be proofs, the proof for now will be simplified random hashes, but only the notary role should be allowed to and sigantures by the notary roles |
-| 2. | Module: **representative** | When the sale of an asset is finalized, the new fractionalized owners are to be assigned a representative. The representative of the owners finds a tenant from the pools of tentants registered on-chain. The representatitive has to find the match based on region, total inhabitants and costs. The tenant will have to provide all this information. that will represent the house owners and find a tenant. |
+| 2. | Module: **representative** | When the sale of an asset is finalized, the new fractionalized owners are to be assigned a representative. The representative of the owners finds a tenant from the pools of tenants registered on-chain. The representatitive has to find the match based on region, total inhabitants and costs. The tenant will have to provide all this information. that will represent the house owners and find a tenant. |
 | 3. | Module: **landlord-voting** | With the sale being finalized the new asset-owners/landlords can vote in a representative, vote over improvements, lay-down a representative if it doesn't perform or represent the best interest of the owners. This module is created in the **pallet-roles** and **pallet-voting** |
 | 4. | FS-chain | In milestones we build the functionality further with the **pallet-finalizer** the finalizer, gives us the certainty that a sworn trusting legal entity is able to finalize the sale and with the representatitve we us the finalization of the asset and fractional owners. With the following new modules landlord voting, we can give the shareholders of a house a say in who get's to be the representative. So the next steps for matching can be handled.   | 
 
@@ -507,7 +535,7 @@ Milestone:4
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** and **video** that explains what actions you can take on the front-end does and the build up of the several pages. 
-| 1. |  Module: **matching** | We will expand on the tenants registration, we will be keeping when a tenant is registered, what region they are applying for and how big their household is. We will also expand on this structs on the asset side. The representative can ask for more information in which the user can share it with the representative. The representative will propose a tentant to the letter.|
+| 1. |  Module: **matching** | We will expand on the tenants registration, we will be keeping when a tenant is registered, what region they are applying for and how big their household is. We will also expand on this structs on the asset side. The representative can ask for more information in which the user can share it with the representative. The representative will propose a tenant to the letter.|
 | 2. |  **pallet-recurring-payments** | The renter will have to place a deposit and the monthly rent in. The rent can be credited per x-block basis. The recurring payment can also go in the negative if the renter cannot pay the rent on time, let's say per rule-of-law 14 days and it signals the representative after this time to get in touch. |
 | 2. |  **UI & frond-end** | During the time of development also in previous milestone we will have produced several wire-frames and a front-end frame we will work with. We want to have for each main section page, which are: Funding, Onboarding, Voting, Finalizing and Renting. These will be the most used functionalities. If time allows also a front-end a dashboard that shows the total homes that are on the platformm, the value locked etc. This will be the biggest effort of this milestone.|
 | 2. | Total product FS | The combination of the previous milestones and this one, with UI gives us the  us the automation the first iteration of the Fair Squares platform that will allow us a crowdfunded fair housing protocol, with an simplified legal acceptance framework. | 
