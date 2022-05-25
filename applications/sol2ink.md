@@ -2,8 +2,8 @@
 
 - **Project Name:** Sol2Ink
 - **Team Name:** [SuperColony](https://github.com/Supercolony-net)
-- **Payment Address:** ERC 20 ADDRESS:
-0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942
+- **Payment Address:** ERC 20 ADDRESS (USDT):
+0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
