@@ -274,7 +274,7 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 |  2. | Setup | We provide a repository that forms the basis of our deliverables. |
 |  3. | Core Types | We provide the core data and coding types in details. |
 |  4. | Theoretical Analysis | We will measure the degree and utility of decentralization in Web3 brought by our project. How decentralized Web3 could be after using our system, and how online services could be better on such more decentralized Web3. |
-|  4. | User Testing | We will test the functionalities, security, and performance of our system by making the testing plan and inviting users for our testing and evaluation. After that we will produce testing report, and improve our system continually based on that. |
+|  5. | User Testing | We will test the functionalities, security, and performance of our system by making the testing plan and inviting users for our testing and evaluation. After that we will produce testing report, and improve our system continually based on that. |
 
 ## Future Plans
 
