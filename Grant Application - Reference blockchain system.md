@@ -14,11 +14,6 @@
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
-
-
 ### Overview
 
 Current Web2 applications provide and manage online services to the public, but are still owned and controlled in private. Such a contradiction causes problems like privacy invasion, personal data occupation and exclusive monopoly when public and private interests conflict. 
