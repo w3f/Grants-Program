@@ -140,7 +140,9 @@ The main delivery of this milestone is to have an easy to use and interactive da
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a tutorial that explains the UI of the Societal platform and how to use the application. |
 | 1. | Client Modules | We will create a client facing UI that will interact with the Societal chain. The main function of the dashboard will be a for governance and treasury management. |  
-| 2. | Substrate chain | In this milestone the Substrate chain will be built and the necessary pallets will be implemented. |  
+| 2. | Substrate chain | In this milestone the Substrate chain will be built and the necessary pallets will be implemented. The pallets that will be included are: System, Support, Executive, Assets, Authority Discovery, BABE, Balances, Democracy, Elections, Referenda, GRANDPA, Indices, Membership, Multisig, Nicks, Proxy, Scheduler, Transaction Payment, and Treasury |  
+
+Notes: Please note that the list of pallets is not exhausted. Some pallets may need to be added or removed from the MVP. However, based on my initial research the pallets listed above will be the required pallets for the Societal chain. 
 
 
 ### Milestone 2 — Cross-Chain Smart Contract Execution via an Approved Governance Proposal
@@ -149,7 +151,7 @@ The main delivery of this milestone is to have an easy to use and interactive da
 - **FTE:**  3
 - **Costs:** 15,000 USD
 
-The main delivery of this milestone will allow an approved governance proposal on the Societal chain to execute a smart contract on Moonbeam or Astar.
+The main delivery of this milestone will allow an approved governance proposal on the Societal chain to execute a smart contract on Moonbeam Alpha TestNet. 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -160,6 +162,10 @@ The main delivery of this milestone will allow an approved governance proposal o
 | 0e. | Article | We will publish a tutorial that explains how to setup a governance proposal that will execute contracts cross-chain. |
 | 1. | Substrate module: Governance Execution | This substrate module will be a loosely coupled pallet to the existing governance pallet. We will make this into a separate pallet to allow for governance proposals to take place that do not require a smart contact to execute after approval. |  
 
+Notes:
+- This will be created for Moonbeam's testnet - Moonbase Alpha, so we do not have to win a parachain slot before testing the pallet
+- An HRMP channel will need to be established between Societal’s testnet and Moonbase Alpha to sucessfully complete this milesotne
+- This milestone assumes that it will be better to create a new pallet that allows for the smart contract execution on another chain, which works in conjunction with the existing governance pallets such as the democracy, elections or referenda pallets. However, a modification to the existing governance pallets may be all that is necessary and a better design. 
 
 ### Milestone 3 — SaaS Pricing Model Pallet
 
@@ -167,7 +173,7 @@ The main delivery of this milestone will allow an approved governance proposal o
 - **FTE:**  3
 - **Costs:** 15,000 USD
 
-The main delivery of this milestone will be the creation of a 'SaaS' Pricing pallet. Transactions on the Societal chain will always be free for the users. However, once the DAO is large enough or requires certain functions, the Societal platform will require monthly payments for those features, which will come directly from the DAOs treasury. This will bring current web2 pricing models to web3, increasing user experience and ease of adoption. An overview of the initial plans can be found [here](https://docs.sctl.xyz/societal-platform/pricing)
+The main delivery of this milestone will be the creation of a 'SaaS' Pricing pallet. Transactions on the Societal chain will always be free to the user for the creation of proposals and voting on proposals. However, once the DAO is large enough or requires certain functions, the Societal platform will require monthly payments for those features, which will come directly from the DAOs treasury. This will bring current web2 pricing models to web3, increasing user experience and ease of adoption. An overview of the initial plans can be found [here](https://docs.sctl.xyz/societal-platform/pricing)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -176,7 +182,13 @@ The main delivery of this milestone will be the creation of a 'SaaS' Pricing pal
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that gives an overview of the pricing plans and the features that are associated with each plan. |
-| 1. | Substrate module: SaaS Pricing | We will create a Substrate module that will require DAOs to pay a monthly subscription fee if they want to have a certain number of users in their DAO or access to certain functions. The payment for the monthly subscriptions will come directly from the DAOs wallet and not the individual members. Transactions on the Societal platform will always be free for the individual users. |  
+| 1. | Substrate module: SaaS Pricing | We will create a Substrate module that will require DAOs to pay a monthly subscription fee if they want to have a certain number of users in their DAO or access to certain functions. The payment for the monthly subscriptions will come directly from the DAOs wallet and not the individual members. Transactions on the Societal platform will always be free for the individual users for the creation of proposals and voting on proposals. |  
+
+Implementation notes:
+- To make this work, the SaaS pricing pallet would do the following:
+    - First, it will check how many members are in the DAO via how many holders there are of the DAO token. 
+    - Second, it would have to check if the DAO has made a monthly payment from one of its wallets to the Societal subscriptions wallet. 
+    - Based on the answer to these questions, the UI would display certain functions to the DAO users on their dashboard.
 
 
 ## Future Plans
