@@ -283,7 +283,7 @@ Please list the deliverables of the project in as much detail as possible. Pleas
 - Published: 2021-11-26
 
 
-- [:arrow_right: privacy-enhancement-polkadot-extension.md](./privacy-enhancement-polkadot-extension.md)
+- [:arrow_right: privacy-enhancement-polkadot-extension.md](./under_development/privacy-enhancement-polkadot-extension.md)
 
 
 - **Proposer:** jonasW3F
@@ -387,13 +387,13 @@ The deliverables highly depend on the exact wallet implementation and therefore 
 ----
 
 
-### Uncollateralized Stablecoin
+### Uncollateralized Stablecoin Research
 
 
 - Published: 2021-07-30
 
 
-- [:arrow_right: uncollateralized-stablecoin.md](./uncollateralized-stablecoin.md)
+- [:arrow_right: uncollateralized-stablecoin-research.md](./under_development/uncollateralized-stablecoin-research.md)
 
 
 - **Proposer:** [Noc2](https://github.com/Noc2)
