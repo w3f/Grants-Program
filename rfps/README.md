@@ -15,7 +15,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 ## :scroll: List of current RFPs
 
-Status:
+**Status:**
 - **:green_circle: Open:** We are actively looking for (additional) teams to implement this. 
 - **:yellow_circle: Under Development:** One or more teams are already working on this. We still might be interested in additional implementations, but it’s better to double check this with the grants team.  
 - **:red_circle: Implemented:** This RFP is already implemented. However, if it’s not maintained, we potentially would be interested in signing a [maintenance grant](https://github.com/w3f/Grants-Program#hammer_and_wrench-maintenance-grants).  
@@ -24,7 +24,7 @@ Status:
 | :--- | :------ | :--- | 
 | [a-and-v-topology.md](./open/a-and-v-topology.md) | :green_circle: | 29.11.2021 |   
 | [alternative_polkadot_host_implementations.md](./open/alternative_polkadot_host_implementations.md) | :green_circle: | 29.11.2021 |   
-| [anti-collusion infrastructure.md](./open/anti-collusion infrastructure.md) | :green_circle: | 29.11.2021 |   
+| [anti-collusion infrastructure.md](./open/anti-collusion_infrastructure.md) | :green_circle: | 29.11.2021 |   
 | [appi.md](./implemented/appi.md) | :red_circle: | 20.07.2021 |   
 | [candle-auction.md](./implemented/candle-auction.md) | :red_circle: | 02.02.2022 |  
 | [epassport-zk-validation.md](./open/epassport-zk-validation.md) | :green_circle: | 29.11.2021 | 
