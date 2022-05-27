@@ -28,8 +28,14 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [appi.md](./implemented/appi.md) | :red_circle: | 20.07.2021 |   
 | [candle-auction.md](./implemented/candle-auction.md) | :red_circle: | 02.02.2022 |  
 | [epassport-zk-validation.md](./open/epassport-zk-validation.md) | :green_circle: | 29.11.2021 | 
+| [identity-directory.md](./open/identity-directory.md) | :green_circle: | 23.11.2021 | 
+| [implementation-benchmarking.md](./open/implementation-benchmarking.md) | :green_circle: | 20.07.2021 | 
+| [ink!_smart_contract_block_explorer.md](./open/ink!_smart_contract_block_explorer.md) | :green_circle: | 27.05.2022 | 
 | [ksm-tipping-button.md](./implemented/ksm-tipping-button.md) | :red_circle: | 20.07.2021 |  
+| [mixer.md](./open/mixer.md) | :green_circle: | 23.11.2021 | 
+| [multi-chain-block-explorer.md](./open/multi-chain-block-explorer.md) | :green_circle: | 23.11.2021 | 
 | [on-chain-quadratic-funding.md](./implemented/on-chain-quadratic-funding.md) | :red_circle: | 29.03.2022 |  
+| [php-api.md](./implemented/php-api.md) | :red_circle: | 27.05.2022 |  
 | [php-scale.md](./implemented/php-scale.md) | :red_circle: | 23.11.2022 |  
 | [privacy-enhancement-polkadot-extension.md](./under_development/privacy-enhancement-polkadot-extension.md) | :yellow_circle: | 27.05.22 | 
 | [staking-rewards-collector-front-end.md](./implemented/staking-rewards-collector-front-end.md) | :red_circle: | 20.07.2021 |  
