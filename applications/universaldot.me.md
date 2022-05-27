@@ -170,7 +170,7 @@ Figure 2. Roadmap for 2022
 | 3. | DAO Redisign | Complete Redesign and reimplementation of DAO pallet and front-end application. |  
 | 4. | IPFS Design Document | Create Design for integration of Substrate with IPFS. |  
 | 5. | CI/CD | Complete CI/CD pipelines and automated testing. |  
-| 6. | Substrate chain | Update testnet currently deployed at: wss://3lnc.l.time4vps.cloud:443 |  
+| 6. | Udot Wiki | Complete wiki documentation on how the open-source community can use the dApp to start digital organizations. Available at https://docs.universaldot.me |
 
 Complete Github User Story breakdown of the milestone can be found [here.](https://github.com/UniversalDot/universal-dot-node/milestone/2)
 
@@ -193,7 +193,7 @@ Complete Github User Story breakdown of the milestone can be found [here.](https
 | 3. | Docker Compose | Dockerize the whole stack (Docker Compose) |  
 | 4. | Integration tests | Complete Integration Tests Suite with >90 test coverage. |  
 | 5. | Front-end | Finilized React application with improved components and overall design | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
-| 6. | Substrate chain | Launch Mainnet with custom genesis configration |  
+| 6. | Udot Wiki| Complete documentation on how the open-source community can use the implemented infrastructure to further **build** features. https://docs.universaldot.me/docs/build  | 
 
 Complete Github User Story breakdown of the milestone to be updated [here] once Milestone 1 has been completed.
 
@@ -233,6 +233,10 @@ Thus, the funds will be used to further expand the team and continue development
   > ANSWER: *See the answer above to Semuelle regarding IPFS. One of the deliverables of the 1st milestone is IPFS Design Document. (See Article 4). Regarding, the UI-Redisign, we have the following [wireframes](https://drive.google.com/file/d/1anfrnnouibzRrksamzRWZKb3hvnZU4WF/view?usp=sharing) for the new User Experience. We have hired a designer to work on finishing the Redesign. The Tensorflow integration will only be integrated with the front-end application. Currently, we are showing random lists of tasks, organizations to users but with Tensorflow we will make better recommendations relevant to users and their interests/history.*
 - **hakan-w3f**: I find the ML part of this project super valuable. Is the majority of the ML related work going to be integrating the ML stack with the rest of the architecture? I'm asking this because there are really good off-the-shelf recommendation models for TF.
   > ANSWER: *Yes. The majority of the related work is integrating Tensorflow within the current architecture. We have selected the universal-sentance-encoder: https://tfhub.dev/google/universal-sentence-encoder/4 as a model which provides semantic similarity between text for the initial implementation. In the future, the models will based on more sophisticated neural nets. If you know some great off-the-shelf tensorflow models, we will be happy to look into them.*
+- **Noc2**: I have a few more questions/comments: Could you remove “Launch Mainnet with custom genesis configuration” and potentially the testnet from the deliverables? We usually don’t support the deployment via our grants program, since this is something that is mostly beneficial for you and your project and not for the entire ecosystem (like the open source code). Also would you be willing to reduce the price a little bit more? In my opinion, if you don’t plan to become a common good chain, more and more of the development should be covered by VCs, since our grants program also not necessarily looks into the business model etc. Btw. we would be more than happy to help you with finding potential VCs in case you are interested in this.
+  > ANSWER: *I have update the deliverables. Instead of testnet/mainnet, we will provide wiki documentation on how the ecosystem could use the application and build further on it. Regarding price, I don't think I can reduce further. I am recruiting a team of developers to continue building the application further. Getting in touch with VC will be greatly beneficial at this point of time and your help is appreciated.*
+- **semuelle**: I like the project in its current form and would like to see it expand. However, I don't support the application in its current form. I don't think the Tensorflow integration is useful for the ecosystem as it's a centralised service serving one frontend and one very specific use case and does not address any critical functionality. Serving suggestions based on keywords would achieve the same. The IPFS integration and pallet redesigns do not justify 27 person-months.
+- > ANSWER: *Thanks for the feedback. There is also Tensorflow Federated: https://www.tensorflow.org/federated, where the models are not centralized on single server. This can be the next step of implementation of the project. Serving suggestions based on keywords is not sufficient since we plan to take into account personal history and user behavior into the recommendation model in the future. Our goal currently to incorporate all these technologies with minimal functionality, and continuously improve them as we go all long. If you think some of this functionality is critical to the success of the app, we can place more focus on that aspect.*
   
 #### Profile Pallet
 
