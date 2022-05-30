@@ -24,13 +24,13 @@ The specification includes:
 
 #### Cryptography
 
-Define primitives / library requirements such as blake2 hashing for proof verification
+Define primitives / library requirements such as blake2 hashing for proof verification  
 Check library availabilities and provide estimates for missing libraries
 
 #### Embedding Runtime
 
-Define runtime environment requirements (Browser / NodeJS application / Other?)\*
-Select runtimes such as wasmedge and/or emscripten cross-compilation for desktop / server and/or browser
+Define runtime environment requirements (Browser / NodeJS application / Other?)\*  
+Select runtimes such as wasmedge and/or emscripten cross-compilation for desktop / server and/or browser  
 Define embedding environment interface such as bindings in JavaScript
 
 #### Specifications for multichain support
@@ -42,9 +42,11 @@ Specify scope and support for Parachain and Relay chain
 Define APIs to be supported\*
 (submitting transactions, watching transactions / blocks / accounts, etc)
 
+As the RPC API is currently unstable (see [PSPs#41](https://github.com/w3f/PSPs/issues/41)), part of this task will be validating a minimal interface.
+
 #### Components specifications / selection
 
-Networking (likely cpp-libp2p)
+Networking (likely cpp-libp2p)  
 Database (likely SQLite)
 
 \*Web3 Foundation input required
@@ -99,7 +101,7 @@ This proposal is only for Phase 0 and will culminate with the delivery of a deta
 - **Full-Time Equivalent (FTE):** 1
 - **Total Costs:** 37500 Euro
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 — Substrate Module Research
 
 - **Estimated duration:** 5 weeks
 - **FTE:** 1
@@ -108,7 +110,7 @@ This proposal is only for Phase 0 and will culminate with the delivery of a deta
 | Number | Deliverable   | Specification                                                                                                                                                                                                                                 |
 | -----: | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |    0a. | License       | Apache 2.0 / MIT                                                                                                                                                                                                                              |
-|    0b. | Phase 1 Proposal |  We will deliver a detailed proposal to implement the Polkadot C++ light node with technical specifications|
+|    0b. | Phase 1 Proposal |  We will deliver a detailed proposal to implement the Polkadot C++ light node with technical specifications: cryptography, runtime environment requirements, multichain support, JSON-RPC APIs and other dependencies |
 
 
 ## Future Plans
