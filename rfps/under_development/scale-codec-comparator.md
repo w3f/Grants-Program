@@ -1,6 +1,6 @@
 # SCALE Codec Comparator
 
-* **Status:** [In progress](https://github.com/arijitAD/dotscale) for Golang, submissions for other languages welcome
+* **Status:** [In progress](https://github.com/arijitAD/dotscale) for Golang, submissions for other languages welcome, [Under Development](https://github.com/w3f/Grants-Program/blob/master/applications/scale-codec-comparator.md)
 * **Proposer:** [Marcin Górny](https://github.com/mmagician/)
 
 ## Project Description :page_facing_up:

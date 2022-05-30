@@ -37,9 +37,16 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [on-chain-quadratic-funding.md](./implemented/on-chain-quadratic-funding.md) | :red_circle: | 29.03.2022 |  
 | [php-api.md](./implemented/php-api.md) | :red_circle: | 27.05.2022 |  
 | [php-scale.md](./implemented/php-scale.md) | :red_circle: | 23.11.2022 |  
+| [polkadot-collator-setup.md](./open/polkadot-collator-setup.md) | :green_circle: | 23.11.2021 | 
 | [privacy-enhancement-polkadot-extension.md](./under_development/privacy-enhancement-polkadot-extension.md) | :yellow_circle: | 27.05.22 | 
+| [raft-validators.md](./open/raft-validators.md) | :green_circle: | 23.11.2021 | 
+| [scale-codec-comparator.md](./open/scale-codec-comparator.md) | :yellow_circle: | 30.05.2022 | 
+| [social-recovery-wallet.md](./open/social-recovery-wallet.md) | :green_circle: | 23.11.2021 | 
 | [staking-rewards-collector-front-end.md](./implemented/staking-rewards-collector-front-end.md) | :red_circle: | 20.07.2021 |  
+| [sub-consensus.md](./open/sub-consensus.md) | :green_circle: | 23.11.2021 | 
 | [uncollateralized-stablecoin-research.md](./under_development/uncollateralized-stablecoin-research.md) | :yellow_circle: | 27.05.22 | 
+| [validator-setup-maintenance.md](./open/validator-setup-maintenance.md) | :green_circle: | 23.11.2021 | 
+| [xcm-tool.md](./open/xcm-tool.md) | :green_circle: | 20.07.2021 | 
 
 ## :mailbox_with_mail: Suggest an RFP
 
