@@ -3,7 +3,7 @@
 </p>
 
 - [:grey_question: What is an RFP?](#grey_question-what-is-an-rfp)
-- [:scroll: List of current RFPs](#scroll-list-of-current-rfps)
+- [:scroll: List of RFPs](#scroll-list-of-rfps)
 - [:mailbox_with_mail: Suggest an RFP](#mailbox_with_mail-suggest-an-rfp)
 
 ## :grey_question: What is an RFP?
@@ -13,12 +13,12 @@ An RFP (Request for Proposals) is a declaration of interest for others to submit
 If you find an open RFP here that you think you can address, feel free to [submit a grant application](../README.md#1-application). There is a [section in our application template](../applications/application-template.md#project-overview-page_facing_up) where you can reference the RFP you are addressing.
 
 
-## :scroll: List of current RFPs
+## :scroll: List of RFPs
 
 **Status:**
-- **:green_circle: Open:** We are actively looking for (additional) teams to implement this. 
-- **:yellow_circle: Under Development:** One or more teams are already working on this. We still might be interested in additional implementations, but it’s better to double check this with the grants team.  
-- **:red_circle: Implemented:** This RFP is already implemented. However, if it’s not maintained, we potentially would be interested in signing a [maintenance grant](https://github.com/w3f/Grants-Program#hammer_and_wrench-maintenance-grants).  
+- **:green_circle: Open:** We are looking for (additional) teams to implement this. 
+- **:yellow_circle: Under Development:** One or more teams are working on this. We might be interested in additional implementations, but it’s better to double check this with the grants team.  
+- **:red_circle: Implemented:** This RFP is implemented. However, if it’s not maintained, we would be interested in signing a [maintenance grant](https://github.com/w3f/Grants-Program#hammer_and_wrench-maintenance-grants).  
 
 | RFP | Status  | Last Updated
 | :--- | :------ | :--- | 
