@@ -1,220 +1,190 @@
 # W3F Grant Proposal
 
-* **Project Name:** InvArch - IP Infrastructure for Substrate
-* **Team Name:** InvArchitects
-* **BTC Payment Address:** bc1q8ere0hsz2rnledqev0e96artwuwtgrj4jf0u8z
+* **Project Name:** The InvArch - INV4 Frame : IP Assets, Licensings, & CLI tool for the Substate ecosystem.
+* **Team Name:** InvArch Network
+* **aUSD Payment Address:** 25aeg1bNLXaYm526R7cXfQNtpEvnv9S23eR17AeDtm5BD7Ce (PLEASE NOTE CHANGE)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
 ### Overview
 
-* InvArch is a next generation blockchain for intellectual property tokenization, development, & networking.
-* Under this grant, the [InvArch Pallet Library](https://github.com/InvArch/InvArch-Pallet-Library) would be delivered, and would provide an IP tokenization and utility infrastructure for the Substrate ecosystem.
-* The InvArch platform provides utility for this new technology by allowing intellectual property tokens (IPTs) to be owned by a 
-Decentralized Entrepreneurial Venture (DEV) contract and governed as a DAO using built-in fungible IP Ownership (IPO) tokens. These tokens
-may also be leverages by participants in a DEV to raise startup funds for their projects. 
-* InvArch is built using Substrate/Rust.
-* Every member of the time has an honest belief that this project will help make the world better through increased economic decentralization and by
-helping to catalyze future innovations, it's a belief that motivates and inspires every one of us to see this project through.
+* The InvArch Network is the cross-chain IP development & authentication hub built on Polkadot. InvArch provides a proven & validated "best-to-market"
+environment for IP Assets & dApps, where as the InvArch Tinkernet provides a "first-to-market" bleeding-edge environment on Kusama for testing. 
+The Eureka Relay is envisioned for future scaling improvements.
+
+### The InvArch Network is powered by the INV4, On-Chain Innovation Funding (OCIF), & Cross-Chain Authentication (XCA) protocols.
+* INV4 is responsible for defining how IP Assets are defined, stored, & interacted with across Web3.
+* OCIF harnesses new & transparent funding possibilities to direct wealth towards the incentivization of realizing IP & unlocking true value.
+* XCA unlocks the power of a trustless XC file tracking & data fingerprinting solution that realizes files just as uniquely as NFTs do with CIDs.
+
+Under this grant, the [InvArch INV4 FRAME](https://github.com/InvArch/InvArch-Frames/tree/main/INV4) will be released & maintained by the InvArch
+Network team. The INV4 FRAME is a Rust Pallet Module for Substrate-based chains that realizes the INV4 protocol, and as a result, the possibility for
+on-chain IP Assets, Licenses, & flexibility for international compliance. IP Assets will be showcased in the Substate ecosystem. The INV4 FRAME Pallet
+is a critical component to the InvArch Network's runtime & is hoursed within the [InvArch FRAME Pallet Library](https://github.com/InvArch/InvArch-Frames).
+
+Every member of the time has an honest belief that this project will help make the world better through increased economic decentralization and by
+helping to catalyze future innovations, it's a belief that motivates and inspires every one of us to see this project through. Together, we have
+fostered a community of nearly 20,000 incredible supporters, partners, & ambassadors from all around the globe who understand & believe in the InvArch
+mission. We have also held many exciting discussions with other Parachain teams about the empowering, understandable, and novel applications that on-chain IP will bring to the ecosystem.
 
 ### Project Details
 
-* [InvArch Whitepaper](https://invarch.io/invarch-whitepaper/)
-* [InvArch Litepaper](https://invarch.io/invarch-litepaper/)
-* [InvArch Pitch Deck](bit.ly/invarch_deck)
+* [InvArch Website](https://invarch.network/)
+* [InvArch EduSeries 1 (Background)](https://invarch.medium.com/invarch-eduseries-1-the-i-p-war-zone-innovation-graveyard-we-live-in-1f11ded41b5f)
+* [InvArch EduSeries 2 (IPS & IPF)](https://invarch.medium.com/invarch-eduseries-2-blockchains-bright-light-a-shining-future-for-ip-rights-164b7a4eaba5)
+* [InvArch EduSeries 3 (IP License)](https://invarch.medium.com/invarch-eduseries-3-web3s-super-highway-the-future-of-transporting-ip-rights-ce1368800927)
+* [InvArch EduSeries 4 (IPT & SIPA)](https://invarch.medium.com/invarch-eduseries-4-the-sipa-revolution-a-new-golden-age-for-innovation-3e90aed4a57)
 
 <div align=center>
-  <img src="https://i.ibb.co/cxTZQqK/Screen-Shot-2021-08-28-at-5-42-07-PM.png">
+  <img src="https://i.ibb.co/K7xF83D/Screen-Shot-2022-05-16-at-2-30-52-AM.png">
 </div>
 
-### InvArch approaches ideas (IP) as a set of non-fungible components: 
-* IP Set = Idea
-* IP Tokens  = components of their idea. 
-* An IP Set can have built-in IP Ownership tokens. 
-* You can,`list`,`sell`,`buy`,`transfer`, and `destroy` an IP Set, but not individual IP Tokens, since they're only components. 
-* A new IP set can be created (`create`) and new IPT can be minted (`mint`) and added to a Set.
-* Existing IPT can be burned (`burn`) or amended (`amend`). 
-* Subsequently, an entire IP Set could be destroyed (`destroy`) as well, burning all of its contents.
-* IPFS or Interplanetary File System allows data and IP contents to be securely stored off-chain and given a CID, or content identifier, that serves as a unique hash and is used to mint IP Tokens. The InvArch protocol will include the [`ipfs_api`](https://docs.rs/ipfs-api/0.11.0/ipfs_api/) crate to help achiave this.
+### InvArch approaches ideas (IP) as a set of non-fungible components: The INV4 Protocol 
+* IP Sets - Either a Root or Parent IP Set, and/or a Child Subset (collections) of interchangeable & freely composable IP Files & NFTs. 
+* IP Files - NFT-based files that which can emulate or contain any content or data as found as any other file on the internet & local devices.
+* IP Licenses - On-chain Licensing agreements pegged to an IP Set that can be used to allocate ownership, manage custom access, & define utility.
+* IP Tokens - Fungible tokens pegged to an IP Set & managed using an IP License; multiple unique classes of IP Tokens can be pegged to the same IP Set.
 
-### InvArch's approach to Decentralized Entrepreneurial Ventures (DEVs): 
-* DEV = An agreement that defines the required/requested roles a project needs and their IP Ownership allocations, sets its milestones/deliverables, copyright terms, if any, and decides its application process. A DEV can also be imagined as a deigital representation of a real-world development project.
-* You can `initialize`,`list`,`amend`,`apply`,`launch`,`unlist`, and `deconstruct` a DEV.
+* When interacting with `Pallet_ips` users can call the following functions `create_ips`, `destroy`, `append`, `remove`, `Allow_replica`, `Disallow_replica`, & `Create_replica`.
+* When interacting with `Pallet_ipf` users can call the following functions: `mint` & `burn`.
+* When interacting with `Pallet_ipl` users can call the following functions: `set_asset_weight` & `set_permission`.
+* When interacting with `Pallet_ipt` users can call the following functions: `mint`, `burn`, `create_subasset`, `operate_multisig`, `vote_multisig`, `withdraw_vote_multisig`, `burn`.
+* While some hidden functions are only callable by the actual Pallets in the INV4 FRAME themselves.
 
 ### Technologies
-1. Substrate
-2. Rust
-3. Vue.js
-
-### Limitations
-While InvArch is designed to allow user to protect, store, authenticate, and securely share their intellectual property, it does not provide a system 
-for handling theft. Instead, the platform offers many of the resources needed to take action against an individual. It is important to note that the full contents/data of an IPT are not initially fully exposed on the platform. The platform addresses the problem of security by 1. integrating decentralized KYC, a requirement for users to access the platform, 2. only exposing limtited data (name, industry, focus, description) to users until after they have applied to a DEV and 3.) the initializer of said DEV reviews, interviews, and elects to share a temporary private-key fullu exposing the IPTs data. The platform does not litigate attempts of intellectual property theft. The platform does, however, provide governance measures to handle bad actors within a DEV. The platform is designed to prevent bad actors from taking over a project through the allocation structure of a DEV's IP Ownership (IPO) tokens. The platform extends the same security to intellectual property as digital art NFTs supply, but just as NFT platforms do not mitigate disputes, the InvArch platform does not as well. The United States Copyright Office put out a summary of its basic rules. Generally, any original work of authorship, be it music, paintings, books, or any other even minimally creative tangible work, is protected under federal law. However, different countries have different rules. The European Union views NFTs in this same light. Due to the complexity of these institutions, InvArch does not serve to replace them. InvArch is only able to provide legal copyright where NFTs are recognized as such, considering that the scope of legal recognization is a matter based off of institutional perspective.
+1. Rust
+2. Substrate
+3. Polkadot.js
 
 ### Components
 
-### InvArch Pallet Library
+### InvArch INV4 FRAME
 
-### 1. IP Protocol & Pallets
+### 1. IP Sets & IP Files
 * `Pallet_ips` - Provides basic functionality for creating and managing an `IPSet`. You can think of an `IPSet` as an idea, which is basically a collection of components (intellectual property tokens) that define and describe that idea.
-* `Pallet_ipt` - Provides basic functionality for creating and managing an `IPToken`. You can think of an `IPToken` as a component of an idea. For example, a business summary PDF file, or even a 3D rendering of a prototype mold. When combined and stored in an `IPSet`, that collection forms the foundtion for an idea. The more detailed and/or comprehensive an `IPSet` is, the stronger the idea.
-* `Pallet_ipo` - Provides basic functionality for creating and managing a `IPOwnership` tokens. You can think of `IPOwnership` tokens as a form of fungible and fractionalized ownership that are built-in to every `IPSet`.
+* `Pallet_ipf` - Provides basic functionality for creating and managing an `IPToken`. You can think of an `IPToken` as a component of an idea. For example, a business summary PDF file, or even a 3D rendering of a prototype mold. When combined and stored in an `IPSet`, that collection forms the foundtion for an idea. The more detailed and/or comprehensive an `IPSet` is, the stronger the idea.
+
 <div align=center>
-  <img src="https://i.ibb.co/Cn1Vsvb/Screen-Shot-2021-08-29-at-11-48-57-AM.png">
+  <img src="https://i.ibb.co/2q9ZJcP/IPL.png">
 </div>
 
-### 2. DEV Protocol & Pallets
+### 2. IP Licenses & Tokens
 * `Pallet_dev` - Provides basic functionality for structuring, managing, and listing a `DEV`(Decentralized Entrepreneurial Venture). You can think of a `DEV` as an agreement between multiple parties to come together as cofounders over a project in order to contribute towards an `IPSet`'s actualization.
 * `Pallet_dao` - Provides basic functionality for creating and managing a `DAO` that helps govern a `DEV`. You can think of a `DAO` as a `DEV`'s governance mechanism. It helps regulate the and ensure the integrity and prudence of participants within a `DEV`.
 * `Pallet_worklog` - Provides basic functionality for creating and managing a `WorkLog` within a `DEV`. You can think of a `Worklog` as a `DEV`'s method of recording and storing milestone/deliverables progressions and completions.
-* `Pallet_deliverables` - Provides basic functionality for creating and managing a `Deliverables` distribution mechainism for `IPOwnership` throughout a `DEV`. You can think of `Deliverables` as a mechanism for automatically distributing `IPOwnership` tokens to participants in a `DEV` as milestones/deliverables are met and confirmed by its `Worklog`.
-* `Pallet_listings` - Provides basic functionality for creating and managing a `Listing` for a `DEV`'s `IPOwnership` tokens. `Listings` allows for public listings of `IPOwnership` to be purchased by outside participants/investors.
 
-### Key Info Regarding `IPOwnership`
-To ensure that no single actor can have a 51% hold over a project, IPO can be
-distributed within the following ranges: <br>
 <div align=center>
-  <img src="https://i.ibb.co/7NKWDM6/Screen-Shot-2021-08-28-at-5-41-35-PM.png">
+  <img src="https://i.ibb.co/4WCtTzh/055.png">
 </div>
-<br>
-A DEV can dedicate 0-66% (0- Max. 6600) of its IPO to its founders (non-profits would
-distribute 0%). The rest (Min. 3400-10,000 IPO) would be allocated to the DEVs treasury.
-The total distribution between these two must equal 100% of the DEV’s IPO.<br>
-<br>
-<div align=center>
-  𝑓 + 𝑡 = 10000 | 0 ≤ 𝑓 ≤ 6600 | 3400 ≤ 𝑡 ≤ 10000<br>
-</div>
-<br>
-Among the Founders, out of however much IPO is decided to be allocated, no single
-participant can have more than 50% (Max. 3300) of the allocated IPO. No single
-co-founder can have a higher stake than the founder. The distribution algorithm for the
-founder’s distribution is:<br>
-<br>
-<div align=center>
-  𝑓(𝑂) / 𝑝(𝑛) ≥ 𝑝(𝑂)<br>
-</div>
-<br>
-Where 𝑓(𝑂)represents the founder’s total IPOwnership tokens, 𝑝(𝑛)represents the number of
-co-founders, and 𝑝(𝑂)represents a co-founder’s IPOwnership tokens. This statement must
-pass to form a DEV, and changes that break this statement cannot be implemented.
-* Voting Weight
-IPO acts as a governance token over a DEV. Holders have the right to propose
-development changes, financing strategies, report misconduct, and vote on status
-consensus reports. Every DEV has 10,000 votes, with an IPO representing a single vote.
-The more IPO a participant has, the more voting weight they have.
+
+* Ownership can be fractionalized using multiple pegged fungible assets representing ownership (ARO). An ARO is (typically) reflected in the first IP Token (IPT) attached to an IP Set. The asset ID of an ARO is defined in a copyright ownership agreement, and there can be multiples of these fungible assets.
 
 ### Ecosystem Fit
 
 :link:  **Chains and Pallets**<br>
-InvArch could arguably be applied to any of the one sub-categories below:
-* Social Networking
+InvArch applies the categories below:
 * NFT
 * Governance/DAO
-* Other (IP Infrastructure on Substrate)
+* Other (IP Assets)
 
 ### Project Uniqueness
-* InvArch is unique because there's nothing else like it. It's more than a blockchain, it's a tool for the entire world to build a better future with. 
-It's not just a platform for those who are interested in blockchain, it's an entirely new world of economic opportunity for everyday people. It's 
-unique because it's bold, it's powerful, and it has the ability to foster a global decentralized economy. We're reinventing NFTs and giving them a 
-powerful use-case unlike anything possible before the advancement of Web3 technologies.
+* The world's first truly composable network for fully unlocking IP assets & on-chain IP attribution solution (that is flexible for its assets to experience international compliance in business, copyright, & legal transactions. InvArch revolutionizes the world of innovation beginning at the very start of development & pushes the bounds of web3 by taking existing concepts & challenging them to be different and better. By unlocking new doors & redefining what’s possible, InvArch will revolutionize the worlds of technical development & real-world collaboration down to their very core.
+
 ### Target Audience
-* Entrepreneurs/Founders -> Provides a new way to attract cofounders for their project without dealing with a private entity or sacrificing private information.
-* College/Trade Students -> Provides a more rewarding way to focus their skillsets and seek significant and fair economic opportunities for themselves.
-* Individual/private Investors -> Provides immediate access to invest in innovative startups and projects during their earliest stages of development at the largest scale ever made available to them.
-* Educators/Researchers -> Provides a way for them to securely and share protect their work.
-* Developers -> We're introducing a blockchain where developers will have a new type of digital-asset to play with and initegrate into their projects.
+* Entrepreneurs/Innovators
+* Developers/DAOs/Artists
+* Educators/Researchers
+* Philanthropists
+
 ### Problem Addressed
-* No network exists where intellectual property can be verified, protected, openly shared, and dynamically used for building partnerships. As a result, many 
-innovations never find the skills they require to become real and in the end, great ideas fade. How many great ideas have never had the opportunity 
-to partner with the skills they needed to develop further? How many life-changing innovations have faded away in the minds of their founders? How many 
-people have never had the chance to contribute their skills towards something remarkable? What would the world look like if no great idea ever faded?
+* On-chain IP attribution (Achieved with this grant proposal).
+* International flexibility for compliance (Achieved with this grant proposal).
+* Barriers of access to startup capital. (OCIF Protocol)
+* On-chain donations for access & transparency. (OCIF Protocol)
+* File piracy & inability to securely expose data. (XCA Protocol)
 
 ## Team :busts_in_silhouette:
 
-### Team members
+### Team members 
+(Development & Engineers)
 
-* [Dakota Barnett](https://www.linkedin.com/in/dakotasb97), Founder
-* [Gabriel Facco de Arruda](https://github.com/arrudagates), Sr. Rust Dev
-* [Danny Salman](https://github.com/DannyS03), Substrate Dev
-* [Kresna Sucandra](https://github.com/SHA888), Substrate Dev
-* [Mindaugas Savickas](https://www.linkedin.com/in/savickas), Head of Marketing
-* [Brunk Škvorc](https://www.linkedin.com/in/swader), Technical Advisor
-* [Sonja Prstec](https://www.linkedin.com/in/sonja-prstec-mag-iur-89a0b324), Legal Advisor
+* [Dakota Barnett](https://www.linkedin.com/in/xcastronaut) - Founder & Head of Development
+* [Gabriel Facco de Arruda](https://github.com/arrudagates) - Co-Founder & Head of Technology Development
+* [Kresna Sucandra](https://github.com/SHA888) - Co-Founder & Head of Protocol Development
+* [Mindaugas Savickas](https://www.linkedin.com/in/savickas) - Co-Founder & Head of Ecosystem Development
+* [Matheus Braña Iannuzzi Baliones](https://github.com/S0raWasTaken) - Rust Core Engineer
+
+* [Brunk Škvorc](https://www.linkedin.com/in/swader) - Technical Advisor (Founder, RMRK)
+* [Marvin Tong](https://twitter.com/marvin_tong) - Product Advisor (Founder, Phala Network)
 
 ### Contact
 
 * **Contact Name:** Dakota Barnett
-* **Contact Email:** dakota@invarch.io
-* **Website:** [invarch.io](https://www.invarch.io)
+* **Contact Email:** dakota@invarch.network
+* **Website:** [https://invarch.network](https://www.invarch.network)
 
 ### Legal Structure
 
-Information Pending. To be transparent, the legal structure has not yet been formed.
+The InvArch Association. </br> 
+Baarerstrasse 86, </br> 
+6300 Zug, Switzerland </br> 
 
-### Team's experience
+### Founders' experiences
 
 * [Dakota Barnett](https://www.linkedin.com/in/dakotasb97) has experience succesfully directing and leading multi-national teams, overseeing and directing 
 succesful project management strategies, and scaling large operations. He's a seasoned developer, programming in JavaScript (3yrs), Node.js (2yrs), 
-React.js (2yrs), Python (2yrs), Rust (1yr), and the Substrate framework (1yr). Past work includes private projects for previous employers focused on machine
-learning, task automation, and website development. 💡
+React.js (2yrs), Python (2yrs), Rust (1yr), and the Substrate framework (1yr). Past work includes private projects for previous employers focused on machine learning, task automation, and website development. 💡
 
-* [Gabriel Facco de Arruda](https://github.com/arrudagates) has experience as a Rust Developer, programming for the past 3 years, and as a developer in the 
-Web3 ecosystem. Gabriel is a a dedicated programmer and DeFi ninja who loves cutting edge technology and all things Substrate/Rust. He is committed to building
-applications that help promote a more decentralized global economy, and comes with past experience developing and scaling such applications. He brings direct 
-experience developing applications for the Substrate ecosystem and as a Polkadot ecosystem contributor dedicated to building the future. 🧠
+* [Gabriel Facco de Arruda](https://github.com/arrudagates) has experience as a Rust Developer, programming for the past 3 years, and as a developer in
+the Web3 ecosystem. Gabriel is a a dedicated programmer and DeFi ninja who loves cutting edge technology and all things Substrate/Rust. He is committed to
+building applications that help promote a more decentralized global economy, and comes with past experience developing and scaling such applications. He
+brings direct experience developing applications for the Substrate ecosystem and as a Polkadot ecosystem contributor dedicated to building the future. 🧠
 
-* [Danny Salman](https://github.com/DannyS03) comes with 3 years of solid experience as a developer, utilizing languages like C, JavaScript, TypeScript, and Rust. Danny is also an educator at the Web3 Foundation. Danny is a blockchain enthusiast and educator with a background in computer engineering, who has a keen interest in blockchain infrastructure and interoperability, DeFi and NFTs. He leverages past experience in DevOps management and brings first-hand insights and experience as a software developer, Web3 educator and researcher. Danny is a Polkadot ecosystem contributor committed to a decentralized web. 🌐
+* [Kresna Sucandra](https://github.com/SHA888) is a dedicated programmer and Parity/Substrate enthusiast. Kusandra has been dedicated for the past year
+learning everything there is to know about the Web3 ecosystem. Kresna is a medical doctor turned programmer with a background in Substrate blockchain
+development focusing on multi-chain interoperability, DeFi, NFTs, and the Metaverse. He brings first-hand insights and experience as a former blockchain
+startup co-founder and developer with a history focusing on JavaScript and Rust programming. Kresna is a Polkadot ecosystem contributor who loves 
+entrepreneurship. 🚀
 
-* [Kresna Sucandra](https://github.com/SHA888) is a dedicated programmer and Parity/Substrate enthusiast. Kusandra has been dedicated for the past year learning everything there is to know about the Web3 ecosystem. Kresna is a medical doctor turned programmer with a background in Substrate blockchain development focusing on multi-chain interoperability, DeFi, NFTs, and the Metaverse. He brings first-hand insights and experience as a former blockchain startup co-founder and developer with a history focusing on JavaScript and Rust programming. Kresna is a Polkadot ecosystem contributor who loves entrepreneurship. 🚀
-
-* [Mindaugas Savickas](https://www.linkedin.com/in/savickas) is a veteran marketing advisor and fundraising rockstar with a background providing strategic marketing solutions and scaling over 40+ product & marketing teams worldwide. He Provides a proven history of success and strategic insights as a Harvard Business School graduate and tech marketing guru who lives & breathes strategic marketing. 📈
-
-### Advisors
-
-* [Brunk Škvorc](https://www.linkedin.com/in/swader) is one of the most knowledgeable programmers in the Polkadot/Kusama ecosystem as a former Web3 educator, Polkadot Council member, and the founder of the RMRK standard. 
-
-* [Sonja Prstec](https://www.linkedin.com/in/sonja-prstec-mag-iur-89a0b324) is one of the most informed legal experts in the blockchain field, having served as a 
-legal advisor for the Web3 Foundation, and as an active advisor for NEAR protocol.
+* [Mindaugas Savickas](https://www.linkedin.com/in/savickas) is a veteran marketing advisor and fundraising rockstar with a background providing strategic marketing solutions and scaling over 40+ product & marketing teams worldwide. He Provides a proven history of success and strategic insights as a tech marketing guru who lives & breathes outside of the box. 📈
 
 ### Team Code Repos
 
-* https://github.com/InvArch
-* https://github.com/InvArch/InvArch-node
-* https://github.com/InvArch/InvArch-Pallet-Library
+* InvArch Github: https://github.com/InvArch
+* InvArch Node https://github.com/InvArch/InvArch-node
+* InvArch Frames : https://github.com/InvArch/InvArch-Frames
+* InvArch INV4 FRAME : https://github.com/InvArch/InvArch-Frames/tree/main/INV4
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* [Dakota Barnett](https://github.com/Invarchitect), Founder
-* [Gabriel Facco de Arruda](https://github.com/arrudagates), Sr. Rust Dev
-* [Danny Salman](https://github.com/DannyS03), Substrate Dev
-* [Kresna Sucandra](https://github.com/SHA888), Substrate Dev
+* [Dakota Barnett](https://www.linkedin.com/in/xcastronaut) - Founder & Head of Development
+* [Gabriel Facco de Arruda](https://github.com/arrudagates) - Co-Founder & Head of Technology Development
+* [Kresna Sucandra](https://github.com/SHA888) - Co-Founder & Head of Protocol Development
+* [Matheus Braña Iannuzzi Baliones](https://github.com/S0raWasTaken) - Rust Core Engineer
 
 ### Team LinkedIn Profiles (if available)
 
 * [Dakota Barnett](https://www.linkedin.com/in/dakotasb97), Founder
 * [Gabriel Facco de Arruda](https://www.linkedin.com/in/gabriel-facco-de-arruda-00880787), Sr. Rust Dev
-* [Danny Salman](https://www.linkedin.com/in/dannysalman), Substrate Dev
 * [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra/), Substrate Dev
 * [Mindaugas Savickas](https://www.linkedin.com/in/savickas), Head of Marketing
-* [Brunk Škvorc](https://www.linkedin.com/in/swader), Technical Advisor
-* [Sonja Prstec](https://www.linkedin.com/in/sonja-prstec-mag-iur-89a0b324), Legal Advisor
 
 ## Development Status :open_book:
 
-* Early-stage, node setup and Ink! smart contracts have begun being designed. (Please see our [GitHub](https://github.com/InvArch))
-* [InvArch Whitepaper](https://invarch.io/invarch-whitepaper/)
-* [InvArch Litepaper](https://invarch.io/invarch-litepaper/)
-* [InvArch Pitch Deck](bit.ly/invarch_deck)
-* [Publish0x](https://www.publish0x.com/blockchain-economy)
-* Conversations regarding the arhitecture design of InvArch as well as the development path forwards have been held with former Web3 Educator [Brunk Škvorc](https://www.linkedin.com/in/swader), who has joined InvArch as the project's Technical Advisor.
+* InvArch is a project in the Substrate Builders Program.
+* The INV4 protocol is complete & available for public testing.
+* Gearing up for the launch of the Brainstorm Testnet (Solo-chain) on May 23rd, 2022.
+* Preparing the InvArch Tinkernet for a crowdloan campaign & slot auction on the Kusama relay.
+
+* INV4 v2 & xcINV4  (Est. August, 2022) will add additional functionality, wrapping of other Substrate NFTs, & authentication of assets.
 
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
-* **Total Estimated Duration:** 3 months
-* **Full-Time Equivalent (FTE):** 2
-* **Total Costs:** $28,000 equivalent
+* **Full-Time Equivalent (FTE):** 2.5
+* **Total Costs:** $25,000 equivalent
 
 ### Milestone 1 — Implement IP Pallets & Standards
 
@@ -222,7 +192,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 * **FTE:**  2
 * **Costs:** $10,000 equivalent
 
-Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain/InvArch Pallet Library
+Goal - Develop Substrate Pallets that fully realize Git-level composability for NFTs; fully emulating file & folder functionalities.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -232,17 +202,14 @@ Goal - Develop and deliver the IP Pallets & Standards for the InvArch Chain/InvA
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 1. | Node Repo | Complete the deployment of the InvArch chain (https://github.com/InvArch/InvArch) |
 | 2a. | Pallet_ips | Complete the development of [pallet_ips](https://github.com/InvArch/InvArch-Pallet-Library/tree/main/ips) and realize the IP Sets standard. |
-| 2b. | Pallet_ipt | Complete the development of [pallet_ipt](https://github.com/InvArch/InvArch-Pallet-Library/tree/main/ipt) and realize the IP Token Standard.  |
-| 2c. | Pallet_ipo | complete the development of [pallet_ipo](https://github.com/InvArch/InvArch-Pallet-Library/tree/main/ipo) and realize the fractionalized ownership mechanism. |
+| 2b. | Pallet_ipf | Complete the development of [pallet_ipf](https://github.com/InvArch/InvArch-Pallet-Library/tree/main/ipt) and realize the IP Token Standard. |
 | 3. | Article | 	We will write an **article** that explains the work done as part of the grant. |
-
-
 
 ### Milestone 2 — Implement DEV Pallets & Standards
 
-* **Estimated duration:** 8 weeks
-* **FTE:**  2
-* **Costs:** $18,000 equivalent
+* **Estimated duration:** 12 weeks
+* **FTE:**  3
+* **Costs:** $15,000 equivalent
 
 Goal - Develop and deliver the DEV Pallets & Standards for the InvArch Chain/InvArch Pallet Library
 
@@ -252,35 +219,22 @@ Goal - Develop and deliver the DEV Pallets & Standards for the InvArch Chain/Inv
 | 0b. | Documentation | An introduction video, and appropriate `README.md` files will be included. |
 | 0c. | Testing Guide | The code will have proper unit-test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1a. | Pallet_dev | complete the development of pallet_dev and realize the project structuring mechanism. |
-| 1b. | Pallet_dao | Complete the development of pallet_dao and realize the governance mechanisms. |
-| 1c. | Pallet_worklog | Complete the development of pallet_worklog and realize the development worklog mechanism mechanism. |
-| 1d. | Pallet_deliverables | Complete the development of pallet_deliverables and realize the deliverables mechanism. |
-| 1e. | Pallet_listings | Complete the development of pallet_listings and realize the IPO listing mechanism. |
-| 2. | InvArch UI | We will develop a basic UI for our chain in Vue.js |
-| 3. | Article | 	We will write an **article** that explains the work done as part of the grant. |
+| 1a. | Pallet_ipl | complete the development of [pallet_ipl](https://github.com/InvArch/InvArch-Frames/tree/main/INV4/pallet-ipl) and copyright & license structuring mechanism. |
+| 1b. | Pallet_ipt | Complete the development of [pallet_ipt](https://github.com/InvArch/InvArch-Frames/tree/main/INV4/pallet-ipt) and realize the refungible & multi-layer governance mechanisms. |
+| 2. | INV4-Git middleware | We will release a middleware tool for managing INV4 assets using the standard git CLI commands transparently. |
+| 3. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video walk through demonstrating the INV4 protocol |
 
 ## Future Plans
 
-* 1a. Integrate decentralized KYC capabilities into our chain (Likely using KILT Protocol).
-* 1b. Look into extending IPO listing capabilities by integrating with Polkadex.
-* 1c. Expand IP Token capabilities by integrating with RMRK (if possible), or by expanding the standards.
-<div align=center>
-  <br>(concept: Multi-attribute IPT)<br>
-  <img src="https://i.ibb.co/XsG84qs/Screen-Shot-2021-08-29-at-11-49-33-AM.png">
-  <br>(concept: Multi-layer IPS)<br>
-  <img src="https://i.ibb.co/2gCx7cm/Screen-Shot-2021-08-29-at-11-50-01-AM.png">
-</div>
+* Launch the InvArchitects Assemble Program, the builders program of the InvArch Network.
+* Finish Development on the On-Chain Innovation Funding (OCIF) & Cross-Chain Authentication (XCA) protocols.
+* Maintain the Brainstorm Testnet, launch the Tinkernet Parachain on Kusama, & deploy the InvArch Network on Polkadot.
 
-* 2a. **Flagship dApp**: Launch a decentralized professional social networking platform for DEV partnership.
-* 2b. Develop a private instant messenger that uses on-chain identity.
-* 2c. Add an Innovation Bounties Board feature to our dApp.
-* 2d. Implement an on-chain treasury to promote future development and maintain platform upkeep.
-* 3. Research uses cases of tokenized IP and explore the implementation of a decentralized education platform.
+1. GitArch - Decentralized, Incentivized, Open-Source On-Chain Repository Platform powered using INV4-Git.
+2. Tinkerspace - A VR Sandbox for experimenting, collaborating, & simulating development using INV4 Assets.
+3. xcINV4 Module - Upgrade the INV4 protocol with enhancements made possible due with XCA for all Parachains to enjoy.
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** 
 Web3 Foundation Website
-
-Only the InvArch team has financially contributed at this time.
