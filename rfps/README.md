@@ -28,7 +28,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [appi.md](./implemented/appi.md) | :red_circle: | 20.07.2021 |   
 | [candle-auction.md](./implemented/candle-auction.md) | :red_circle: | 02.02.2022 |  
 | [epassport-zk-validation.md](./open/epassport-zk-validation.md) | :green_circle: | 29.11.2021 | 
-| [identity-directory.md](./open/identity-directory.md) | :yellow_circle: | 30.05.2022 | 
+| [identity-directory.md](./under_development/identity-directory.md) | :yellow_circle: | 30.05.2022 | 
 | [implementation-benchmarking.md](./open/implementation-benchmarking.md) | :green_circle: | 20.07.2021 | 
 | [ink!_smart_contract_block_explorer.md](./open/ink!_smart_contract_block_explorer.md) | :green_circle: | 27.05.2022 | 
 | [ISO_20022.md](./open/ISO_20022.md) | :green_circle: | 31.05.2022 | 
