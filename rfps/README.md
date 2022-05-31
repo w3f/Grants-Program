@@ -41,7 +41,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [polkadot-collator-setup.md](./open/polkadot-collator-setup.md) | :green_circle: | 23.11.2021 | 
 | [privacy-enhancement-polkadot-extension.md](./under_development/privacy-enhancement-polkadot-extension.md) | :yellow_circle: | 27.05.22 | 
 | [raft-validators.md](./open/raft-validators.md) | :green_circle: | 23.11.2021 | 
-| [scale-codec-comparator.md](./open/scale-codec-comparator.md) | :yellow_circle: | 30.05.2022 | 
+| [scale-codec-comparator.md](./under_development/scale-codec-comparator.md) | :yellow_circle: | 30.05.2022 | 
 | [social-recovery-wallet.md](./open/social-recovery-wallet.md) | :green_circle: | 23.11.2021 | 
 | [staking-rewards-collector-front-end.md](./implemented/staking-rewards-collector-front-end.md) | :red_circle: | 20.07.2021 |  
 | [sub-consensus.md](./open/sub-consensus.md) | :green_circle: | 23.11.2021 | 
