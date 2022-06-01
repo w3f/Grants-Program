@@ -50,7 +50,7 @@ The project could make Web3 online services more decentralized. With full compos
 
 With the revenue tracking and distribution scheme, different works made by different people could coexist and collaborate with each other for mutual benefit rather than vicious competition for monopoly. Old works are willing to allow others to freely change them, and open and share their internal network resources because new works will share the profits with them, and the earnings of opening and sharing will be more than closure and monopoly. In this way new works could freely improve and upgrade old works without restriction to make the online service better and better out of old works’ upper limit.
 
-**For online service management (DAO):**
+**For online service management(DAO):**
 
 By enabling fully decentralized online services, its development and management could also be fully decentralized. Nowadays, although we achieve a free economy in the market where different products and services coexist for consumers to choose freely, their internal production within the organization like inside the company are still centralized, which needs to be arranged and approved by a single leader. What our reference system does is opening such internal organization to everyone in public, and enabling large-scale permissionless, unlimited, and boundless online collaboration without any central planning or controlling. 
 
