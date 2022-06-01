@@ -13,11 +13,15 @@
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+An organization’s social responsibility can take the form of a wide variety of commitments. These can range from having a diverse workplace to increasing green energy use. It’s easy for an organization to make claims regarding how they’re run, but these often exist only as marketing copy. Etch is a platform that allows organizations to make socially responsible commitments and have them written indelibly to the blockchain using smart contracts. This will make an organization's stated goals regarding social responsibility transparent and permanent. It will also provide a place for workers to see what an organization stands for.
 
 ### Overview
+
+Etch is software for organizations to make enduring commitments regarding their social responsibility.
+
+Having worked previously on Advokat; an NLP powered chatbot that helped workers understand their rights during the COVID-19 Pandemic, it was clear that many organizations didn’t behave in ways that aligned with their mandates. In addition, we feel strongly that inequality and global warming are the two defining issues of our time. We’d love to be able to contribute in some way to help alleviate these issues. Commitments made in marketing copy are like words on a whiteboard: easily erased when they prove to be inconvenient. It’s our hope that Etch makes socially responsible commitments more akin to words carved into stone.
+
+This project will use ink! and substrate to create smart contracts that store the commitments. Create React app and Polkadot js will be used to create a front end to create and maintain these contracts with a simple UI.
 
 Please provide the following:
 
