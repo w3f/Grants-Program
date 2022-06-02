@@ -491,3 +491,4 @@
 | [Web3 Labs Ltd](https://www.web3labs.com/epirus-explorer) | Epirus Substrate Explorer | [GitHub](https://github.com/web3labs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SuperColony](https://github.com/Supercolony-net) | Sol2Ink | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SuperColony](https://github.com/Supercolony-net) | OpenBrush Phase 3 | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [FS](https://fair-squares.nl/) | Fair Squares | [GitHub](https://github.com/Fair-squares) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
