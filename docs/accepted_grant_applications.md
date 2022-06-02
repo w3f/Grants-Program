@@ -492,4 +492,4 @@
 | [SuperColony](https://github.com/Supercolony-net) | Sol2Ink | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SuperColony](https://github.com/Supercolony-net) | OpenBrush Phase 3 | [GitHub](https://github.com/Supercolony-net) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [FS](https://fair-squares.nl/) | Fair Squares | [GitHub](https://github.com/Fair-squares) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Ideal Labs](https://www.idealabs.network/) | Iris: Phase 2 | [GitHub](https://github.com/ideal-lab5) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
+| [Ideal Labs](https://www.idealabs.network/) | Iris: Phase 2 | [GitHub](https://github.com/ideal-lab5) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
