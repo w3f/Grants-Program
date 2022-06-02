@@ -125,7 +125,7 @@ The **work** in our system ideally could be any kind of digital item including d
 
 We have made an inital design on the standard format of the token and smart contract of our proposed system as follows. More specific details are still planning now, and we will continue working to finish the design and development after the grant is given.
 
-**Pallets Token standard:**
+**ink! Token standard:**
 
 | Key | Value | Attribute | Operator |
 | --: | ----- | --------- | -------- |
@@ -185,8 +185,9 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
 |  1. | Specification | We will specify the details of our token standard design that how users can create their own work, refer to others' work, and get the earnings of their work via the reference token in the reference system. |
-|  2. | Setup | We provide a repository that forms the basis of our deliverables. |
-|  3. | Core Types | We will provide the core data format and coding types of the token standard in details. |
+|  2. | Implementation | We will develop the token standard via ink! and implement it on Pallets. |
+|  3. | Setup | We provide a repository that forms the basis of our deliverables. |
+|  4. | Core Types | We will provide the core data format and coding types of the token standard in details. |
 
 
 ### Milestone 2 — Achieve full interoperability and composability among referred works
@@ -203,8 +204,9 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
 |  1. | Specification | We will specify the configurations and parameters of the interoperability and composability features that allows users in our system to freely change anywhere of others' old work to build their new work based on them, while their new work can still connect to the referred old work seamlessly especially accessing its internal network resources directly. |
-|  2. | Setup | We provide a repository that forms the basis of our deliverables. |
-|  3. | Core Types | We will provide the core types of interfaces and smart contracts that directly connects different programs in details. |
+|  2. | Implementation | We will develop our reference system with full interoperability and composability via ink! and implement it on Pallets. |
+|  3. | Setup | We provide a repository that forms the basis of our deliverables. |
+|  4. | Core Types | We will provide the core types of interfaces and smart contracts that directly connects different programs in details. |
 
 
 ### Milestone 3 — Achieve security and privacy
@@ -221,8 +223,9 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
 |  1. | Specification | We will specify the configurations and parameters of the security and privacy features that protects old work against malicious new work from launching attacks on them by referring to them in our system. |
-|  2. | Setup | We provide a repository that forms the basis of our deliverables. |
-|  3. | Core Types | We will provide the core data and coding types of security techniques and privacy protection measurements of our system in details. |
+|  2. | Implementation | We will develop our reference system with high security and privacy via ink! and implement it on Pallets. |
+|  3. | Setup | We provide a repository that forms the basis of our deliverables. |
+|  4. | Core Types | We will provide the core data and coding types of security techniques and privacy protection measurements of our system in details. |
 
 
 ### Milestone 4 — Design economic model and incentive scheme
@@ -239,7 +242,8 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
 |  1. | Specification | We will specify the formalization and analysis of the economic model and incentive scheme design that collects the earnings of the new work and distributes them with all its referred works based on their reference relationships recorded on our reference system. We will prove it can motivate old works to open and share their works including internal network resources with others who can build their new work based on them. |
-|  2. | Design Report | We will provide detailed design of the economic model and whole process of the incentive mechnism in our system. |
+|  2. | Implementation | We will code economic model and incentive scheme, add them to our reference system via ink! and implement them on Pallets. |
+|  3. | Design Report | We will provide detailed design of the economic model and whole process of the incentive mechnism in our system. |
 
 ### Milestone 5 — Build DAO Community
 
@@ -255,7 +259,8 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
 |  1. | Specification | We will specify the design and management of our DAO community where users can participant in and contribute to the governance of our reference system equally and directly. |
-|  2. | Design Report | We will provide detailed self-goverance rules of the DAO, and operation and management guidelines of the coummnity for our system. |
+|  2. | Implementation | We will code on-chain governance part of our DAO, add it to our reference system via ink!, and implement it on Pallets. |
+|  3. | Design Report | We will provide detailed self-goverance rules of the DAO, and operation and management guidelines of the coummnity for our system. |
 
 ### Milestone 6 — System building and testing
 
@@ -271,6 +276,7 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that explains the design and usage of our work in details. |
 |  1. | Specification | We will combine all our previous works above together to build the integrated system. We will specify the configurations and implementations of the whole system, and encourage everyone within the community to use, test and improve. |
+|  2. | Implementation | We will develop testing programs of our reference system via ink!, and implement them on Pallets. |
 |  2. | Setup | We provide a repository that forms the basis of our deliverables. |
 |  3. | Core Types | We provide the core data and coding types in details. |
 |  4. | Theoretical Analysis | We will measure the degree and utility of decentralization in Web3 brought by our project. How decentralized Web3 could be after using our system, and how online services could be better on such more decentralized Web3. |
@@ -278,6 +284,6 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 
 ## Future Plans
 
-After receiving the grant, we will post detailed research plan and update working progress to the community regularly opening to everyone. Everyone in the community is welcome to participant in the research like giving any insights or undertaking any work. All valuable contributions will be counted and rewarded including the nomination of the research paper and shares of the realistic application.
+After receiving the grant, we will post detailed research plan and update working progress to the community regularly opening to everyone. Everyone in the community is welcome to participant in the research like giving any insights or undertaking any work. All valuable contributions will be counted and rewarded including the nomination of the research paper, monetary returns, and shares of the realistic application.
 
 It would be better if we could also get your technical and communal support to improve and evaluate acceptance and feasibility of our proposed solution for target users and relevant stakeholders. We will also plan to promote our work in the market, and run it in a fully decentralized way via DAO. 
