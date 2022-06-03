@@ -5,7 +5,7 @@
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
 - **Project Name:** Iridius
-- **Team Name:** TODO
+- **Team Name:** Iridius
 - **Payment Address:** Ethereum 0x00874b14ec1e9430f3c9870f02fdb25a6183d7ab (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
@@ -24,21 +24,16 @@ Iridius presents a consensus-driven way to sign DApp websites, Android and iOS a
 
 How DApps are verified depends on the platform. On the Web, due to the lack of native ways to authenticate server content, users need to install a browser extension. On Android, iOS, and Firefox extensions, verification happens out-of-the-box because every app is signed by a developer key by design - all that needs to happen is for developers to stop using their key and start using the MPC's key. For Chrome extensions, which are not signed by default, we propose a new extension webstore for verified software. 
 
-We are interested in this project simply because we are looking to work on a high-impact, security-focused project involving novel cryptography research. 
+We are interested in this project simply because we are looking to work on a high-impact, security-focused project involving novel methodologies in the field of cryptography. 
 
 ### Project Details
 
-TODO
+By the end of the grant, we expect to have a backend system (on-chain smart contract) which will allow developers to submit software revisions to be voted on by their community. We will also have a network of Multiparty Computation nodes which will sign all software revisions which have passed a vote. We will also design a public key infrastructure (PKI) where anyone will be able to learn the correct signing identity for any given app (say, polkadot.js.org). In order for users to verify the websites they visit, they will setup a browser extension we will develop, which will connect to the PKI and verify that the signature served by the web server matches that public key. 
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+More details are found in our whitepaper here. TODO
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+Post the scope of the grant, we will also support the signing of Android and iOS apps, as well as Browser extensions. 
+
 
 ### Ecosystem Fit
 
@@ -68,14 +63,14 @@ We therefore decided to list large Polkadot projects which are vulnerable to a s
 
 ### Legal Structure
 
-- **Registered Address:** Apartment 4, Read House, 1 Childer Close, Coventry, CV6 5NG
-- **Registered Legal Entity:** PUI LTD TODO
+- **Registered Address:** Apartment 4, Read House, 1 Childer Close, Coventry, CV6 5NG, United Kingdom
+- **Registered Legal Entity:** Pui Ltd
 
 ### Team's experience
 
 We are two founders - one with a security and Blockchain protocol design background, and the other with project management, partnerships & community and trust building experience. 
 
-Zvezdin (Tech):
+Zvezdin Besarabov (Tech):
 - Education: University College London
 - Ex CTO and Co-Founder at https://burrowvest.com/
 - Founding member & tech lead https://scynet.ai/
@@ -88,15 +83,15 @@ Zvezdin (Tech):
 
 Ana-Maria Pricop (Management & Partnerships):
 - Education: Sciences Po Paris
-- Ex CEO & Co-founder: ucurious.co
-- Project manager: Mission Automate, Cambridge House
-- Start-up advisor & mentor - pricop.co
-- 3 Published research papers in Global economy
+- Business Startup consultant at [pricop.co](https://pricop.co)
+- Ex CEO & Co-founder: [ucurious.co](https://www.facebook.com/ucurious.co)
+- Project manager: [Mission Automate](https://www.missionautomate.com/), [Cambridge House](http://cambridgehouse.ro/cursuri-engleza/)
+- [3 Published research papers in student conferences](https://drive.google.com/drive/folders/1sJJBhS13ZNV9rId7xWDo7fqZVa5okiCh) in Global economy
 - Managed more than 20 teams, including tech teams
 - Philanthropy:
-  - Oxford for Romania -  board member, free summer school for brilliant highschool students from Romania
-  - KIND - founder, national campaign for kids with oncological problems
-  - Lindenfeld Association - math teacher, orphanage
+  - [Oxford for Romania](https://www.oxfordforromania.org/) -  board member, free summer school for brilliant highschool students from Romania
+  - [KIND](https://www.facebook.com/KidsInNeedofDreams) - founder, national campaign for kids with oncological problems
+  - [Lindenfeld Association](https://www.en.ajungemmari.ro/) - math teacher, orphanage
 
 ### Team Code Repos
 
@@ -105,8 +100,6 @@ Ana-Maria Pricop (Management & Partnerships):
   - Proof of concept android ZK prover: https://github.com/OutDID-io/passport-reader
 - https://github.com/Zvezdin
 
-TODO ana can you find links to projects you did or something people can verify about you
-
 ### Team LinkedIn Profiles (if available)
 
 - https://www.linkedin.com/in/zvezdak/
@@ -114,14 +107,7 @@ TODO ana can you find links to projects you did or something people can verify a
 
 ## Development Status :open_book:
 
-
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+We have conducted appropriate technical and theoretical research, together with a theoretical explanation on how the proposed system works and its limitations, are summarized in our Whitepaper linked here. TODO
 
 ## Development Roadmap :nut_and_bolt:
 
