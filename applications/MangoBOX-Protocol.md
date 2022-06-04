@@ -252,11 +252,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 |    0b. | Documentation                 | We will provide a basic **tutorial** that explains how a user can deploy and test our ink contract. |
 |    0c. | Testing Guide                 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |    0d. | Docker                        | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-|     1. | Contract:MBTokenStore         | Manages token minting and burning for all projects.          |
-|     2. | Contract: MBFundingCycleStore | Manages funding cycle configurations and scheduling.         |
-|     3. | Contract:MBProjects           | Manages and tracks ownership over projects, which are represented as ERC-721 tokens.The protocol uses this to enforce permissions needed to access several project-oriented transactions. |
-|     4. | Contract:MBSplitsStore        | Stores information about how arbitrary distributions should be split. The surface contracts currently use these to split up payout distributions and reserved token distributions. |
-|     5. | Contract:MBPrices             | Manages and normalizes price feeds of various currencies.    |
+|     1. | Ink！Contract:                |         In the first milestone, we mainly implement how to create a fundraising project.It mainly consists of two parts, the first part is to create an NFT to represent the ownership and management of the project.Each project within the MangoBOX protocol is represented as an ERC-721 NFT.   Whoever is the owner of a project's NFT has access to [admin functionality]for that project within the protocol, which ultimately gives it control over the project's funds.The second part is the basic rules for initializing this project. It mainly needs to set the following parameters:Start timestamp、  Duration、Distribution limit、Overflow allowance、Weight、Discount rate、Reserved rate, etc.                                                     |
 
 
 
@@ -274,12 +270,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 |    0c. | Testing Guide              | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |    0d. | Docker                     | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 |    0e. | Article                    | We will publish an **article** that explains how to use our product. |
-|     1. | Contract:MBOperatorStore   | Stores operator permissions for all addresses. Addresses can give permissions to any other address to take specific indexed actions on their behalf, while confining the permissions to an arbitrary number of domain namespaces. |
-|     2. | Contract: MBDirectory      | Keeps a reference of which terminal contracts each project is currently accepting funds through, and which controller contract is managing each project's tokens and funding cycles. |
-|     3. | Contract: MBController     | Stitches together funding cycles and project tokens, allowing for restricted control, accounting, and token management. |
-|     4. | Contract:MBPaymentTerminal | Manages all inflows of funds into the ecosystem.             |
-|     5. | Contract:MBSingleToken     | Manages accounting data on behalf of payment terminals that manage balances of only one token type. |
-|     6. | Frontend files             | We will provide front-end files and deployment tutorials.    |
+|     1. | Ink！Contract:             | In the second milestone, we mainly implement how to manage the funds raised by the project. It also contains two parts. The first part is the allocation and management of funds. The project will allocate the raised funds to designated accounts according to the pre-determined settings. The second part is the management of governance tokens. Donors can burn the corresponding governance tokens to redeem a certain percentage of overflow funds. |
+|     2. | Frontend files             | We will provide front-end files and deployment tutorials.    |
 
 
 
