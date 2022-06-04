@@ -23,15 +23,15 @@ We anticipate participation incentivization via built in token and use of Data E
 
 Please provide the following:
 
-- Project Name Medical Stats and AI- users scan documents and submit with dr records via an app that will be developed on marvsai.com
-- This proposal is for creation of medical specific API to securely store the data collected by our and other apps . The api will be open.
+Project Name Medical Stats and AI- users store any medical documents through scanning with camera app , the part we want polkadot cooperation is for storage of the medical data on the blockchain
+- This proposal is for creation of medical specific blockchain API to securely store the data collected by our and other apps . The api will be open and allow users to maintain ownership while remaining public.
 - A heath focused blockchain we are proposing should be standardized as an API layer for substrate
-- An indication of why your team is interested in creating this project.
-We use clinics worlwide and it is inconvenient to carry data over from clinic to clinic especially worldwide.
-In addition one of our team was a user of a medical data as part of a GSK Welcomme trust funded PhD.
-Dr Ali Marvasti's research with medical data made evident the need for such a project and the total useless of existing 
-solutions like MedicalChain and Binance Health. 
-
+- An indication of why your team is interested in creating this project.  
+  Many patients use clinics worlwide and it is inconvenient to carry data over from clinic to clinic especially worldwide.  
+  In addition one of our team was a user of a medical data as part of a GSK Welcomme trust funded PhD.  
+  Dr Ali Marvasti's research with medical data made evident the need for such a project and the total uselessness of existing   
+  solutions like MedicalChain and Binance Health.   
+  Sample screen of users view of the data can be seen https://docs.google.com/presentation/d/1XEQ6qtTLwkmc6JgtpytEUJqhh1behskOWh3s4uE1cXw/edit?usp=sharing
 ### Project Details
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
@@ -40,16 +40,18 @@ We expect the teams to already have a solid idea about your project's expected f
  Data models
 We propose to store encrypted natively and only allow owners of NFT to decrypt these details via the smart contract.
 - The data 
-  - Medical ID - consisting of HASH And JSON details which are encrypted. The hash is stored as an NFT int the smart contract
- 
-| hash | health system id | dob | sex | blood type |
-|------|----------------------|-----|-----|------------|
-|      |                      |     |     |            |
+  - Medical ID - consisting of HASH And JSON details which are encrypted and optional only the ID reference is required. The decryption native the the parachain and requires ownership of NFT. 
+  - ID are verified by special validation addresses linked to special trusted organizations  on the parachain
+  - ID verification is for users of data to require which authorities they accept. Initially it will be us or other organization we work with like the NHS in the UK.
+| hashID | health system id | dob (o)| sex(o) | blood type(o) |
+|--------|----------------------|-----|-----|------------|
+|        |                      |     |     |            |
 
- 
-| hash | name |   dob  |  sex   |   bloodtype  |
-|------|--|-----|-----|-----|
-|      |  |     |     |     |
+| hashID | SignedVerifier |
+|--------|----------------|
+|        |                |
+|        |                |
+|        |                |
 
 
   - Medical documents consisting of ID HASH and encrypted JSON of the following details: 
@@ -73,9 +75,11 @@ We propose to store encrypted natively and only allow owners of NFT to decrypt t
 | Urine          | bacteria    | 9-30-20 | Negative |   native::xjslfdjl     |
 | Histopathology | Skin Legion | 4-30-20 | Melanoma |  native::xjslfdjl      |
  
-Addition of MSAI parachain webassembly smart contract for effecient encryptyion and decryption
+Addition of MSAI parachain webassembly smart contract for effecient encryptyion and decryption if necessary 
+although in the first instance encryption maybe provided off chain through the bridge.
 Storage of NFT
 - An overview of the technology stack to be used
+- Image: ![](img/component.png)
 - Documentation of core components, protocols, architecture, etc. to be deployed
 - PoC/MVP we have built backend services using Google GCP and need to now integrate with the polkadot chain
 What we will provide :
@@ -85,6 +89,7 @@ Ultlimately when the correct modules are written we intend to store the entire m
   - Data extraction will be a separate project that we may or may not deliver with this
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
   Data storage for images on chain will be a difficult and may be placed securely on IPFS. The API will be public but our UI and APP will not be.
+
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
@@ -156,51 +161,61 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Roadmap :nut_and_bolt:
 
-For each of these milestone except work on the backend will nneed to be done for Andriod, IOS and Web for complete coverage of our user demographics.
-- development of backend
+- Development of backend
 
 - 1- Basic Blockchain parachain detailed design
   - Milestone one basic API layer design integration with elements of configuring Substrate for new parachain with smart contract facility and verification of structured data (10000 USD )
   - Development of reusable mechanism for storing data on chain through API service that connects to the polkadot node (10000 USD)
-  - Customisation of efinity NFT capability in our subtrate based parachain with a storage layer (40K USD 1 man year)
+  - 
+  2- Customisation of efinity NFT capability in our subtrate based parachain with a storage layer (40K USD 1 man year)
   - development of backend mock based on substrate and Poladot or other blockchain tech
-  - Connection of app direclty to node infrastructor provider to provide non-custodial functionality (10000 USD)
+  - Connection of app directly to node infrastructure provider to provide non-custodial functionality (10000 USD)
   - Development of data access NFT smart contract -- smart contract depending on substrate functionality we incorporate based on 
+  3- testing on Kusama 
   - Development of example scripts for interaction with new parachain based on docker files (10000 USD)
   - Development of reference APP based on cutomisation of Alphawallet or other suitable wallet for the new Polkadot parachain 6 months (50000)
-
 
 ### Overview
 
 - **Total Estimated Duration:** 1.5 years for MVP parachain
 - **Full-Time Equivalent (FTE):** 3 
-- **Total Costs:** 500 000 of which some will be covered by founders Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Costs:** 500 000 of which some will be covered by founders Requested amount in USD for the whole project 100,000 USD till MVP stage. 
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 Example — Implement Substrate Chain API
 
-- **Estimated duration:** 1 month
-- **FTE:**  2
-- **Costs:** 8,000 USD
-* Andriod app integrate with  PolkaJs
+- **Estimated duration:** 4 month
+- **FTE:**  1
+- **Costs:** 40,000 USD
+* API design of subtrate blockchain with native data structures outlined above
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 Example — Implement NFT based decryption access only for NFT owners
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 4,000 USD
+- **Estimated Duration:** 3-6 months
+- **FTE:**  1.5
+- **Costs:** 50,000 USD
 
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
+| 1. | Substrate module: X | We will create a Substrate module for NFT based storage of hash against the KV pairs defined above |  
 | 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
+| 3. | Kusama based testing : Z | We will deploy the Substrate module for integration and performance testing of the parachian using Locust |  
 | 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+
+### Milestone 3 Example — Implement sample Andriod app
+
+- **Estimated Duration:** 3-6 months
+- **FTE:**  2
+- **Costs:** 60,000 USD
+
+| 1. | App structure: X | We will create a Substrate module for NFT based storage of hash against the KV pairs defined above |  
+| 2. | Connection to the substrate module: Y | We will create a Substrate module that will... |  
+| 3. | Substrate module: Z | We will create a Substrate module that will... |  
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
 
 
 
@@ -209,7 +224,7 @@ For each of these milestone except work on the backend will nneed to be done for
 Extention module to connect to NHS app and other health systems around the work.
 Already negotiated with NHS Heal app team 
 Please include here
-
+Offchain bridger for faster processing in case of trusted thirdparties
 Promotion will be through parternships with private and public clinics 
 Promotion will be through coin giveaways on the side chain.
 
