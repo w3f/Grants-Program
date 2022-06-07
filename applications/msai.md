@@ -4,7 +4,7 @@
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** MarvSai Personal Medical Data Chain
+- **Project Name:** Private ownership public Medical Data Chain
 - **Team Name:** Marvsai Team
 - **Payment Address:** 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
@@ -12,9 +12,11 @@
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview
-A blockchain API built on Substrate by ISO/IEC 27001:2013 security process approved. 
-We plan to integrate ID verification and data storage like IPFS through a substrate api eleminating the need for 
-integrating security on top of projects such as FileCoin. The idea is to make data a first class citizen of the Poladot ecosystem. 
+A blockchain API built on Substrate with security approved by ISO standard encryption built into smart contracts written in WebAssembly . 
+We would like to integrate ID verification and data storage like IPFS through a substrate api eliminating the need for 
+integrating security on top of projects such as FileCoin. The idea is to make data a first class citizen of the Polkadot ecosystem.
+Unlike centralized health platforms, we don't store user's data on a database. Instead, it's stored on the TEE layer of blockchain, and the target group matching and selecting happen also in the TEE layer, which ensures that no private data are exposed during the whole process. Eventually, both user and publisher receive some amount of token as rewards from advertiser.
+
 NFT based data exchange infrastructure for data ownership and medical data submission for use by our own propriatory app as well as any other apps so that medical data can both be sold and exchanged.
 
 We anticipate participation incentivization via built in token and use of Data Extraction engine built as part of team members PhD.
@@ -23,9 +25,11 @@ We anticipate participation incentivization via built in token and use of Data E
 
 Please provide the following:
 
-Project Name Medical Stats and AI- users store any medical documents through scanning with camera app , the part we want polkadot cooperation is for storage of the medical data on the blockchain
+Project Name Medical Stats and AI- we are developing an app where users store any medical documents from various clinics through scanning with camera app,
+we would like to standardize storage of this data on the blockchain.
+We intend to provide a reusable parachain with medical data api ready for use by anyone within the Polkadot ecosystem.
 - This proposal is for creation of medical specific blockchain API to securely store the data collected by our and other apps . The api will be open and allow users to maintain ownership while remaining public.
-- A heath focused blockchain we are proposing should be standardized as an API layer for substrate
+- A heath focused blockchain through substrate we are proposing should be standardized as an API layer for substrate
 - An indication of why your team is interested in creating this project.  
   Many patients use clinics worlwide and it is inconvenient to carry data over from clinic to clinic especially worldwide.  
   In addition one of our team was a user of a medical data as part of a GSK Welcomme trust funded PhD.  
@@ -93,7 +97,8 @@ Ultlimately when the correct modules are written we intend to store the entire m
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
+The deliverables described above are intended to be used by any substrate based project that would like to leverage encrypted data stored on the blockchain and shared via NFT
+tokens. This project makes secure data storage more accessible to developers within the substrate ecosystem. 
 - Where and how does your project fit into the ecosystem?
 
 The project is a real useful application of web3 technologies which we intend to build on polkadot if we receive funding
