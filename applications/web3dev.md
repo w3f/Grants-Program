@@ -5,7 +5,7 @@
 
 - **Project Name:** web3dev
 - **Team Name:** web3dev
-- **Payment Address:** 0x47e02B21aD7242A8614a38b65599c941435a6525 (DAI)
+- **Payment Address:** 0x47e02B21aD7242A8614a38b65599c941435a6525 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
