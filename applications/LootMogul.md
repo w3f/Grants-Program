@@ -2,7 +2,7 @@
 
 - **Project Name:** Lootmogul
 -  **Team Name:** Lootmogul
-- **Payment Address:**  (ERC20 USDT)
+- **Payment Address:** 0x69Ca7ed1E033B42C28D5e3a7B802Bd74F63E752a (ERC20 USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -168,6 +168,11 @@ Vibhu Sirvastava is in Community Management at Lootmogul with 11+ years of exper
 
 | Number | Milestone                 | Key Activities                                                                                                                                                                                                                                                                                                  |
 | -----: | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License                     | MIT                                                                                                                                                                                                                                                                                                          |
+|    0b. | Documentation               | We will provide inline documentation of the code and a basic tutorial of the modules delivered in this Milestone.                                                                  |
+|    0c. | Testing Guide               | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided                                                                                                                      |
+|    0d. | Video                      | We will provide a video demonstration that will illustrate all of the functionality delivered with this milestone.                                                                                                                                                                                                  |
+|    0e. | Article                     | We will publish an **article**/workshop/gitbook that explains our application workflow as well as technical details.                                                                                                                                                                                                   |
 |    1. | Core Foundation and Infrastructure Setup                     |  * GitHub/Lab Polkadot dev branch & configure supporting APIs. <br />                                                                    * Finalize requirements with internal game developers & KOL                                                                                                                                                                                                                                                                                                   |
 |    2. | Smart Contract libraries for NFT Marketplace               | * Ability to mint meta NFTs using Polkadot.<br /> * Ability to set royalty, pricing, KOL & guild specific tracking on Polkadot                                                          |
 |    3. | Stablecoin integration with Polkadot               | * Stable coin transaction for game in-app purchases. <br /> * Stable coin integration for all metaverse NFT and land sale                                                                                                                                 |
