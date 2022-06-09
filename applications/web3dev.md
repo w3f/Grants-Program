@@ -13,7 +13,7 @@
 ## Project Overview :page_facing_up:
 Web3dev is the largest and most engaged web3 developers community in LATAM.
 
-We already have a Discord with more than 1800 developers: https://bit.ly/w3b3d3v/ Our community is organized in pods, each pod for a different theme or blockchain. Each pod has a leader, which helps that pod to evolve, promoting growth to the ecosystem and the whole web3dev community.
+We already have a Discord with more than 1800 developers: https://bit.ly/w3b3d3v Our community is organized in pods, each pod for a different theme or blockchain. Each pod has a leader, which helps that pod to evolve, promoting growth to the ecosystem and the whole web3dev community.
 
 We already have leaders for Ethereum, Cardano, NEAR, Algorand, Solana, Terra. We incentivize those pods, creating bounties and paying individual contributors when they create new content and deliver value. 
 
