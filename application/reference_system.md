@@ -168,14 +168,14 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 
 - **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):**  4 ~ 6 people depending on actual workload
-- **Total Costs:** $40,000
+- **Total Costs:** $30,000
 
 
 ### Milestone 1 — Reference token standard
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developers and 1 technical researcher
-- **Costs:** 6,000 USD
+- **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -194,7 +194,7 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developers and 1 technical researcher
-- **Costs:** 6,000 USD
+- **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -213,7 +213,7 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developers and 1 technical researcher
-- **Costs:** 6,000 USD
+- **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -232,7 +232,7 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 
 - **Estimated duration:** 1 month
 - **FTE:**  1 technical researcher, and 2 economic researchers
-- **Costs:** 6,000 USD
+- **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -249,7 +249,7 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 
 - **Estimated duration:** 1 month
 - **FTE:**  1 economic researcher, and 2 management researchers
-- **Costs:** 6,000 USD
+- **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -266,7 +266,7 @@ we will develop in ink! and implement for Substrate-based blockchains with the v
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 developer, 1 technical researcher, 1 economic researcher, and 1 management researcher
-- **Costs:** 10,000 USD
+- **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
