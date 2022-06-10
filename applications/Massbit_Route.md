@@ -263,7 +263,7 @@ When a Node or Gateway joins Massbit, it needs to go through different states be
 | 1.b    | Expand Node Providers and dAPI users for routing quality and performance testing                                                       | DApps and strategic partners are onboard and offered to use dAPI from Massbit Route launched testnet. We will collect feedbacks/performance metrics and improve the product from End-user/Consumer standpoint                                                |
 | 1.c    | Docker release                                                                                                                         | We will provide docker files of simulate Massbit network that can be used to test all of the functionality delivered with this milestone                                                                                                                     |
 
-### Milestone 2 - Massbit Route tokenomic and Mainnet
+### Milestone 2 - Massbit Route tokenomic
 
 - **Estimated Duration:** 1 month
 - **FTE:**  6
