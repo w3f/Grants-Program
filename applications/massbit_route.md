@@ -66,7 +66,7 @@ wss://[API ID].eth-mainnet.massbitroute.net/[API key]
 
 |   **5. Fisherman Pallet - Decentralized Node Verification Service**
 
-- Massbit Route becomes a faster and more reliable BDN when the number of Community Nodes and Gateway increases. For that reason, Nodes and gateways need to meet certain bandwidth and latency requirements checks by Fishermans in order to be part of Massbit global network. Fisherman Pallet and Off-Chain Woker that is included with the Massbit Gateway installation script. 
+- Massbit Route becomes a faster and more reliable BDN when the number of Community Nodes and Gateway increases. For that reason, Nodes and gateways need to meet certain bandwidth and latency requirements checks by Fishermans in order to be part of Massbit global network. Fisherman Pallet is an Off-Chain Woker that is included with the Massbit Gateway installation script. The more Massbit Gateways are deployed, the more decentralized this service become, which make the process of node/gateway onboarding un-biased.
 
 - When a Node requests to join the Massbit network, nearest Fishermans checks if the Node is able to forward requests to its blockchain data source and return results matching with the blockchain data source such as block data, block hash, and runtime version. If all checks passed the validation process, the node becomes a part of the Massbit network and gets ready to receive traffic from Gateways in the same zone.
 
