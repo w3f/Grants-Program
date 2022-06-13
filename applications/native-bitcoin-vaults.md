@@ -9,7 +9,7 @@ Native Bitcoin Vaults (NBV) is a composable Substrate application for **native**
 
 A vault is a [BIP-174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki) multisignature Bitcoin wallet.
 
-Substrate accounts set their [Extended Public Key](https://river.com/learn/terms/x/xpub-extended-public-key/) to their profile on the prebuilt [Identity pallet](https://github.com/paritytech/substrate/blob/master/frame/identity/). These accounts, vault signers, may be selected via any mechanism, usually an election. 
+Substrate accounts set their [Extended Public Key](https://river.com/learn/terms/x/xpub-extended-public-key/) to their profile on the `nbv` pallet. These accounts, vault signers, may be selected via any mechanism, usually an election. 
 
 Using [Partially Signed Bitcoin Transactions (PSBT)](https://river.com/learn/what-are-partially-signed-bitcoin-transactions-psbts/) and [output descriptor](https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md), NBV facilitates secure receiving address generation and a seamless user experience for managing and executing multisig Bitcoin transactions.
 
@@ -29,22 +29,15 @@ DAOs' native token(s) are nearly always secure and trustless. However, small bus
 ### User Identity Setup
 To get started, each account will need at least one [Extended Public Key](https://river.com/learn/terms/x/xpub-extended-public-key/) (`xpub`) [docs.rs](https://docs.rs/bitcoin/0.27.1/bitcoin/util/bip32/struct.ExtendedPubKey.html). This can be used to calculate a nearly infinite number of receiving addresses, and it can be combined with other  `xpubs` to generate [BIP-0174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki) compatible PSBT multisig wallets.
 
-User calls `setIdentity` to specify their `xpub`:
+User calls `set_xpub` to specify their `xpub`:
 ```sh
-polkadot-js-api --ws wss://n1.hashed.systems tx.identity.setIdentity '{
-    "display": {
-        "Raw": "Paul McCartney"
-    },
-    "additional": [[{
-            "Raw": "xpub"
-        },{
-            "Raw": "[dca67f77/84/1/0/0]tpubDEQ2wZuuDfizT2aThADBimVaDwWb3aK6WtA3VRMoCDog2Gg3PtDa1gHWhZYEiGba5XA2D2opry9MxZVVjgAaGM8MCnvW6kt6v5AURRyLHPh/*"
-          }
-        ]
-    ]
+polkadot-js-api --ws wss://n1.hashed.systems tx.nbvStorage.setXPub '{
+    {
+       "Raw": "[dca67f77/84/1/0/0]tpubDEQ2wZuuDfizT2aThADBimVaDwWb3aK6WtA3VRMoCDog2Gg3PtDa1gHWhZYEiGba5XA2D2opry9MxZVVjgAaGM8MCnvW6kt6v5AURRyLHPh/*"
+    }
 }' --seed "bargain album current caught tragic slab identify squirrel embark black drip imitate"
 ```
-> Note: the above string is too long for the `additional` fields, thus it will likely be stored elsewhere with a hash. Above for illustrative purposes.
+
 ### Treasurer Selection
 A `treasurer` is any account that is a participant on an NBV wallet.
 
@@ -106,15 +99,14 @@ pub fn propose(
 ```
 Within the user interface, the list of proposed and partially signed transactions will show in a table along with an identifier of which accounts have and have not signed the transaction.
 ### Signatures
-When a treasurer clicks on one of the proposals, it is opened in a customized version of [Spectre Desktop](https://github.com/cryptoadvance/specter-desktop). Spectre Desktop is a web-based, open source Bitcoin transaction coordinator. In the customized version, it will use the information from the pallet to open the wallet and the transaction(s).
+When a treasurer requests to sign a PSBT, a QR code with the PSBT content is shown on screen. The user scans the QR code with [BlueWallet](https://github.com/BlueWallet/BlueWallet), an open source React Native mobile application. 
 
-Spectre Desktop supports all of the common Bitcoin hardware wallets.
+![image](https://user-images.githubusercontent.com/32852271/173380021-631f1166-f4a0-4a2d-afff-51d7d8672093.png)
 
-![image](https://user-images.githubusercontent.com/32852271/157713181-061fa126-89be-43e1-8c73-6f7cb6e2d9d3.png)
+After signing the PSBT, the user can click 'Share', which generates a QR code with the signed payload. The user will be able to scan this back into the NBV web application, where it is saved temporarily in storage until enough treasurers have signed. 
 
-The unsigned transaction must be signed by a `threshold` number of signers, and then it may be broadcast.
+The unsigned transaction must be signed by a `threshold` number of signers, and then it will be finalized and broadcast by the off-chain worker.
 
-Spectre Desktop requires connecting to a Bitcoin Core node, which will be operated as part of the required stack.
 ## Tech Stack
 ### License
 Unless W3F has an opinion or there are other factors to consider with the dependencies, all deliverables will be licensed MIT.
@@ -137,12 +129,11 @@ Both of these are temporary solutions, and we would later revert to mainline whe
 BDK has an extensible structure that, according to their website, *"developers can implement customized logic for blockchain backends, databases, signers, coin selection, and more, without having to fork and modify th[e] library."*
 
 Our preference is that we will be able to do just this by supporting a Substrate data store as a [`bdk::database::Database`](https://docs.rs/bdk/latest/bdk/database/trait.Database.html). However, we can also use BDK in a stateless manner and manage the information outside of BDK storage.
-### Bitcoin Signer: Spectre Desktop and/or Caravan
-There are multiple options for the Bitcoin signer. Our first choice is to use Spectre Desktop because of the support for output descriptors, existing user adoption, breadthe of supported hardware wallets, and reputation for high quality and secure software. Spectre Desktop has a python backend and a web client.  
+### Bitcoin Signer: BlueWallet 
+The strategy is to use well-adopted standards such as output descriptors to be compatible with multiple signers. For the initial phases, we will use [BlueWallet](https://bluewallet.io), an open source React native Bitcoin wallet.
 
-Another option is to use [Caravan - Stateless Multisig Coordinator](https://unchained-capital.github.io/caravan/#/), which is a web client with no backend. Caravan is also highly regarded and supports a number of hardware wallets, namely Trezor, Ledger, and Coldcard. Caravan does not have support for output descriptors. 
+BlueWallet communicates with our NBV web application using QR codes. Users can import the overall multisignature vault from NBV into BlueWallet to sign transactions and view transaction history. After a user signs a PSBT, they can click 'Share', which produces a QR code, and that can be scanned back into NBV where it will be combined with other PSBTs, finalized, and broadcast.
 
-In either case, the signer will open the transaction and prompt the user to sign and save the PSBT back to the Substrate node.
 ### Native Bitcoin Vault (NBV) Web Client
 The NBV client will be developed in Vuejs or React, and will support the `polkadot{js}` browser plugin. The user will be able to create, edit, or remove `xpubs` from the `Identity` pallet using the NBV client.
 
@@ -253,12 +244,8 @@ These videos were recorded by Max and feature projects that we developed.
 - **Total Costs:** 43,200 USD
 
 #### Languages
-- All pallets and any associated backend services will be developed in Rust.
-- Primary web app (`Vault Manager`) will likely be in Vuejs, but perhaps React.
-- `Spectre Desktop` or `Caravan` customizations 
-  - neither of these clients use a UI framework like Vuejs or React
-  - our customizations will seek to be as non-disruptive as possible and hopefully remain forward compatible
-  - `Spectre Desktop` has a python backend; if changes are required to that, they would be made in python.
+- All pallets and any associated backend services (e.g. `bdk_services`) will be developed in Rust.
+- Primary web app (`Native Bitcoin Vault Manager`) will be in Vuejs
 
 ### Milestone 1 — Prepare Dependencies and Build Vault Configuration
 - **Estimated duration:** 6 weeks
@@ -274,15 +261,15 @@ These videos were recorded by Max and feature projects that we developed.
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Video | We will record and publish a video explainer and demonstration of all features in English and Spanish. |
 | 1. | BDK Integration | Preferably, we will build a `no_std` version of BDK, and if not, we will create an off-chain worker for all pertinent functions |  
-| 2. | Identity `xpub` | User can set an `xpub` on their Identity- larger than 32 bytes |  
+| 2. | Account `xpub` | User can set an `xpub` on their account in the NBV pallet |  
 | 3. | Output Descriptors | Generate output descriptor (vault/wallet) based on the selected Vault Signers |  
 | 4. | Generate Receiving Addresses | NBV will be able to generate receiving addresses for a vault |  
 | 5. | List and View vaults | NBV client will show a list of treasuries/vault, their labels, and the eligible signers |  
-| 6. | Pass to Signer | Fork `Spectre Desktop` (or `Caravan`) and enable handing off an output descriptor from the pallet/node to the signer |  
+| 6. | Pass to Signer | Scan a treasury/vault from NBV into BlueWallet |  
 
 The following Extrinsics or RPC calls, with relevant UI functions, will be included in milestone #1.
 
-- **set_identity** - we may need to create a wrapper Extrinsic to appropriately fit the data into the `Identity` pallet
+- **set_xpub** - we may need to create a wrapper Extrinsic to appropriately fit the data into the `Identity` pallet
 - **create_vault** - takes a set or `BoundedVec` of accounts as well as the signature `threshold`. (we may also have a `T::ClassId` to categorize vaults similar to the `Uniques` pallet. 🤔 )
 - **propose** - this receives the `vault_id`, `recipient_address`, and `amount_in_sats`. This constructs an open unsigned transaction saved within the pallet (or saved and hashed in the pallet), which will be visible in the Vault Manager client and provides a link to the Signer app. This generates a `proposal_id`.
 - **generate_new_address** - receives `vault_id`, reads the vault descriptor, calculates `last_used_address` to check for UTXO. If one exists, increment the `derivation_index` and return a new address based on that. If the last address is still empty, simply return that one again (this will likely also have a flag to force incrementing the index). This behavior is similar to many wallets work.
