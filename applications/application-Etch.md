@@ -75,6 +75,11 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 Nira is a UX Researcher / Designer and has been creating accessible, user friendly experiences in the government, not for profit and private sectors for over 10 years. 
 She will help design Etch so it is easy-to-understand and accessible for all users, ensuring it is up to the standards of industry design principals.
+Previous projects include: 
+- Designing and implementing a user friendly chatbot to help workers understand their rights in collaboration with the Legal Aid at Work, and employment law not-for profit
+- Designing and implementing the first mobile check-in experience to allow Veterans to prepare and check in to health appointments easily online
+- Implementing ux content design best practices for CourseHero online education platform allowing students to easily connect with expert tutors
+- Designing and building a new version of the San Jose 311 mobile app, allowing citizens to report issues to the City of San Jose, including those who speak a primary language other than English.
 
 Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
 
