@@ -19,7 +19,7 @@ An organization’s social responsibility can take the form of a wide variety of
 
 Etch is software for organizations to make enduring commitments regarding their social responsibility.
 
-Having worked previously on Advokat; an NLP powered chatbot that helped workers understand their rights during the COVID-19 Pandemic, it was clear that many organizations didn’t behave in ways that aligned with their mandates. In addition, we feel strongly that inequality and global warming are the two defining issues of our time. We’d love to be able to contribute in some way to help alleviate these issues. Commitments made in marketing copy are like words on a whiteboard: easily erased when they prove to be inconvenient. It’s our hope that Etch makes socially responsible commitments more akin to words carved into stone.
+Having worked previously on Advokat; an NLP powered chatbot that helped workers understand their rights during the COVID-19 Pandemic, it was clear from user input that many organizations didn’t behave in ways that aligned with their mandates. In addition, we feel strongly that inequality and global warming are the two defining issues of our time. We’d love to be able to contribute in some way to help alleviate these issues. Commitments made in marketing copy are like words on a whiteboard: easily erased when they prove to be inconvenient. It’s our hope that Etch makes socially responsible commitments more akin to words carved into stone.
 
 This project will use ink! and substrate to create smart contracts that store the commitments. Create React app and Polkadot js will be used to create a front end to create and maintain these contracts with a simple UI.
 
@@ -43,6 +43,11 @@ We expect the teams to already have a solid idea about your project's expected f
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
 ### Ecosystem Fit
+
+Our primary audience are business owners and heads of organizations. Particularly those who wish to distinguish themselves from others and attract enthusiastic workers who align with their mission. Additionally, workers who want to understand the commitments an organization has made would also find this useful.
+
+There’s currently a great desire by workers that their employers engage in socially responsible behavior, be held accountable and provide workers with purpose. Etch moves these commitments from websites to the blockchain to provide more transparency.
+
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
@@ -73,6 +78,12 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team's experience
 
+Ash is Co-founder and CTO of BrighTex Bio-Photonics, an integrated hardware and software company focused on A.I. He has 17 years of software development and data science experience. 
+- Created DeepTag, a cloud AI platform for use in digital marketing in skin care and cosmetics
+- Oversaw the development of Skin Advisor and Clarity hardware & software systems used by laboratories in skin care R&D.
+- Worked with Legal Aid at Work to develop an NLP powered chatbot that helped inform workers of their rights during the pandemic. Designed and developed logic modeled on legal rights
+
+
 Nira is a UX Researcher / Designer and has been creating accessible, user friendly experiences in the government, not for profit and private sectors for over 10 years. 
 She will help design Etch so it is easy-to-understand and accessible for all users, ensuring it is up to the standards of industry design principals.
 Previous projects include: 
@@ -102,6 +113,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://www.linkedin.com/in/niradatta
 
 ## Development Status :open_book:
+
+Articles and studies on meaningful, purpose driven work and CSR statistics.
+https://f.hubspotusercontent40.net/hubfs/9253440/Asset%20PDFs/Promotions_Assets_Whitepapers/BetterUp-Meaning&Purpose.pdf
+https://www.mckinsey.com/business-functions/people-and-organizational-performance/our-insights/help-your-employees-find-purpose-or-watch-them-leave
+https://online.hbs.edu/blog/post/corporate-social-responsibility-statistics
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
