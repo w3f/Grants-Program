@@ -32,6 +32,14 @@ Please provide the following:
 
 ### Project Details
 
+We will engage in user-research to identify in detail the requirements and needs of business owners and heads of organizations related to CSR commitments.
+
+The software will include pre-made templates for different types of organizations. Users will then be able to customize these commitments before storing them on the blockchain.
+
+An additional section will contain a UI where a user can store information about the employees and their salaries. The software will automatically create a report including information about gender pay gaps and pay ratios based on this data.
+
+The goal with the proof of concept will be to implement the functionality for mock entities/organizations and not real-world organizations. 
+
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
 - Mockups/designs of any UI components
