@@ -57,13 +57,13 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Ashutosh Chhibbar
+- Nira Datta
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
+- **Contact Name:** Ashutosh Chhibbar
+- **Contact Email:** ashchhibbar@gmail.com
 - **Website:**
 
 ### Legal Structure
@@ -72,6 +72,9 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
 
 ### Team's experience
+
+Nira is a UX Researcher / Designer and has been creating accessible, user friendly experiences in the government, not for profit and private sectors for over 10 years. 
+She will help design Etch so it is easy-to-understand and accessible for all users, ensuring it is up to the standards of industry design principals.
 
 Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
 
@@ -90,8 +93,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- https://www.linkedin.com/in/ashutoshchhibbar
+- https://www.linkedin.com/in/niradatta
 
 ## Development Status :open_book:
 
