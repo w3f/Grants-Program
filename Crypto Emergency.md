@@ -221,7 +221,7 @@ Head of the department for work with designers. Higher field-specific education.
   Yes
 * Have we applied for other grants?
 
-  no
+  No
 * Why did we decide to get a grant from you?
 
 We looked into you, and we saw that you were giving grants to big projects and had established yourself as a reliable partner.
