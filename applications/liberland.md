@@ -71,8 +71,15 @@ We will describe the function of each of these custom Pallets below.
 
 ##### Proof of Commitment
 We are implementing the identity pallet and adapting it to Liberland’s legal system: Citizenship requires a semi-permanent pooling of LLM to prove the applicant’s commitment to the State. When you move to a different country, this asks something of you, and there are requirements; we are mirroring this principle on-chain.                   
-The committed money remains in the Wallet of the user, who can then use these for politics. The limitation is that they can’t transfer the LLM into other wallets. 
-We are the first to introduce NFTs as proof of belonging to a State. When one pools 5k LLM in this way and passes our KYC, a quasi-NFT will be minted for them, the Citizenship token. This token is transferable but only to KYC-ed users.             
+The committed money remains in the Wallet of the user, who can then use these for politics. 
+The limitation is that they can’t transfer the LLM into other wallets, as the token remain frozen. 
+We are the first to introduce NFTs as proof of belonging to a State.
+A user need to:   
+*  Pass a KYC process  
+*  Lock up 5000 LLM   
+
+
+If these requriements are met, the user account get's the on-chain citizen user role added to it's account. This token is transferable but only to KYC-ed users.             
 The principle that a Citizen has to pool a certain amount to prove they are loyal is called the “Proof of Commitment” in our system. This system transforms the legacy-State principle of Citizenship on a blockchain, using game-theory correlation (willingness to lock tokens = higher chance users are serious with the project).      
 
 
