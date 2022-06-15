@@ -93,6 +93,11 @@ We build the LLM into the system using the underlying [assets pallet](https://pa
 Using a simple runtime parameter, we allow developers to simplify the printing amount of tokens, the amount of percentage to issue every X amount of time, and the maximum amount of tokens to be minted and sent to the Treasury, allowing the Treasury to manage on-chain assets. 
 We are therefore releasing the LLM based on the smart inflation curve of the LLD, connecting the tokens into a single ecosystem or "cell". Other State adopters will be encouraged to create and modify their own "cells" as they see fit.
 Cell pairs enable what is crucial for a State adopter: an algorithmic barrier between politics and Validators. We make sure that it is not necessarily the same people who get voted into political functions that count the votes—our system's basic separation of powers.     
+In our implementation on the liberland Chain, LLM Pallet mints 0.9x of the total supply each year and gives the treasury the ownership of the LLM. In  
+this technical implementation we are using the treasury pallet id as an origin and accountid to hold the funds. An implementation of pallet-asset's that 
+has not been adopted by otherchains. Using LLM Pallet the treasury manages the ownership of the minted tokens and there is no need to trust a user.  
+The Senate is the only entity that is allowed to request the treasury to transfer LLM to users.
+
 
 
 #### Time-Based Minting    
