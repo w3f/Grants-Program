@@ -166,7 +166,9 @@ As the LLM tokenomics suppose a deflationary token, holding LLM in the treasury 
 
 
 #### Company Registration Pallet    
-The company registration pallet works similar to government company registrar authorities. This pallet will handle the registration of companies in a truly decentralized way. Allowing anyone to apply for registering on-chain companies
+The company registration pallet works similar to government company registrar authorities. This pallet will handle the registration of companies in a truly decentralized way. Allowing anyone to apply for registering on-chain companies. The Registrar of Companies part of the government will which will  
+work similar to an on-chain council will manually approve all requests for registration.  
+
 
 #### Liberland Identity Pallet   
 The sole purpose of this pallet is to perform on-chain account privilege verification. Manage and track users residency status and all identity verification logic that an individual is needed to identity it self. Because we are building an identity system that is tailored for serving a digital nation state, we can not use the default identity pallet from parity and need to build one that serve as a citizen identity record.
