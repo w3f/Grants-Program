@@ -245,7 +245,7 @@ The first milestone aims to provide all citizens with the functionality to have 
 https://docs.google.com/spreadsheets/d/1Q5DnVI4WuQWncMY985xuQ30HB7-bJz6X6EZFr2Vzr38/edit
 
 
-| Number | Deliverable | Specification |
+| Number | Specification | Deliverable |
 | -----: | ----------- | ------------- |
 | 0a. | License |  MIT |
 | 0b. | Documentation | We will provide both inline code documentation as well as user guides that shows how people can interact with our pallets and chain |
