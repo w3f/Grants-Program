@@ -98,6 +98,11 @@ this technical implementation we are using the treasury pallet id as an origin a
 has not been adopted by otherchains. Using LLM Pallet the treasury manages the ownership of the minted tokens and there is no need to trust a user.  
 The Senate is the only entity that is allowed to request the treasury to transfer LLM to users.
 
+#### Freezing LLM   
+Since we have the usecase of utilizing pallet-asset's to freeze the llm when a user vote's on proposals and in elections. Other chains are all using 
+their native balance and token for voting, however, we are utilizing our on-chain asset LLM to vote. In order to allow users to vote with LLM we had to  
+manually implement freezing functionality, as pallet-asset's do not currently support freezing anything else except for the entire asset class.  
+We will be the first chain to roll out politics supported by on-chain assets.
 
 
 #### Time-Based Minting    
