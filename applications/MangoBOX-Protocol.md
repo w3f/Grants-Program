@@ -240,6 +240,12 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Full-Time Equivalent (FTE):**   4FTE
 - **Total Costs:** 44000 USD
 
+This is the link of Juicebox's solidity code, we will use Ink to rewrite all the functional logic with reference to this code, and add some optimizations and innovations of our own.
+
+https://github.com/Mangoboxlabs/juice-contracts-v2
+
+
+
 ### Milestone 1 — Ink!  contract Modules
 
 - **Estimated duration:** 1 month
