@@ -42,7 +42,18 @@ The goal with the proof of concept will be to implement the functionality for mo
 
 Examples of information to be stored and calculated for each organization:
 
-Employee
+Stored commitments
+- Recycling
+- Carbon offset usage
+- Maternity/Paternity leave
+- Paid sick leave
+- Charitable donations
+- Employee profit sharing
+- Green energy generation
+- Vegetarian/Vegan meal options
+- No blocking of unionization efforts
+
+Employee 
 - Grade
 - Salary
 - Gender
@@ -54,17 +65,6 @@ Metrics
 - Gender pay disparity
 - Diversity
 - Executive pay ratio
-
-Stored commitments
-- Recycling
-- Carbon offset usage
-- Maternity/Paternity leave
-- Paid sick leave
-- Charitable donations
-- Employee profit sharing
-- Green energy generation
-- Vegetarian/Vegan meal options
-- No blocking of unionization efforts
 
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
@@ -116,7 +116,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 Ash is Co-founder and CTO of BrighTex Bio-Photonics, an integrated hardware and software company focused on A.I. He has 17 years of software development and data science experience. 
 - Created DeepTag, a cloud AI platform for use in digital marketing in skin care and cosmetics
 - Oversaw the development of Skin Advisor and Clarity hardware & software systems used by laboratories in skin care R&D.
-- Worked with Legal Aid at Work to develop an NLP powered chatbot that helped inform workers of their rights during the pandemic. Designed and developed logic modeled on legal rights
+- Worked with Legal Aid at Work to develop an NLP powered chatbot that helped inform workers of their rights during the pandemic. Designed and developed logic modeled on legal rights and employment law
 
 
 Nira is a UX Researcher / Designer and has been creating accessible, user friendly experiences in the government, not for profit and private sectors for over 10 years. 
@@ -182,15 +182,15 @@ For each milestone,
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 6 Months
+- **Full-Time Equivalent (FTE):**  0.5
+- **Total Costs:** 10,000 USD
 
-### Milestone 1 Example — Implement Substrate Modules
+### Milestone 1 — User Research, Prototypes & Design
 
-- **Estimated duration:** 1 month
-- **FTE:**  2
-- **Costs:** 8,000 USD
+- **Estimated duration:** 2 months
+- **FTE:**  0.5
+- **Costs:** 3,300 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
