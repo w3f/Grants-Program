@@ -85,7 +85,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Gautam Dhameja](https://github.com/gautamdhameja)
 - [Ashley Grevelink](https://github.com/cruikshankss)
-- [Hakan Gurel](https://github.com/hakan-w3f)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Bill Laboon](https://github.com/laboon)
@@ -101,7 +100,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
 - [Ashley Grevelink](https://github.com/cruikshankss)
-- [Hakan Gurel](https://github.com/hakan-w3f)
 - [David Hawig](https://github.com/Noc2)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Aleixo Sánchez](https://github.com/alxs)
