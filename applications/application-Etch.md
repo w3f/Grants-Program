@@ -38,7 +38,34 @@ The software will include pre-made templates for different types of organization
 
 An additional section will contain a UI where a user can store information about the employees and their salaries. The software will automatically create a report including information about gender pay gaps and pay ratios based on this data.
 
-The goal with the proof of concept will be to implement the functionality for mock entities/organizations and not real-world organizations. 
+The goal with the proof of concept will be to implement the functionality for mock entities/organizations and not real-world organizations.
+
+Examples of information to be stored and calculated for each organization:
+
+Employee
+- Grade
+- Salary
+- Gender
+- Demographic data
+
+Metrics
+- Median worker salary
+- Gender representation
+- Gender pay disparity
+- Diversity
+- Executive pay ratio
+
+Stored commitments
+- Recycling
+- Carbon offset usage
+- Maternity/Paternity leave
+- Paid sick leave
+- Charitable donations
+- Employee profit sharing
+- Green energy generation
+- Vegetarian/Vegan meal options
+- No blocking of unionization efforts
+
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
@@ -54,7 +81,7 @@ We expect the teams to already have a solid idea about your project's expected f
 
 Our primary audience are business owners and heads of organizations. Particularly those who wish to distinguish themselves from others and attract enthusiastic workers who align with their mission. Additionally, workers who want to understand the commitments an organization has made would also find this useful.
 
-There’s currently a great desire by workers that their employers engage in socially responsible behavior, be held accountable and provide workers with purpose. Etch moves these commitments from websites to the blockchain to provide more transparency.
+There’s currently a great desire by workers that their employers to engage in socially responsible behavior, be held accountable and provide workers with purpose. Etch moves these commitments from websites to the blockchain to provide more transparency.
 
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
