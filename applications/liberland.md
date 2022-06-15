@@ -78,7 +78,7 @@ The principle that a Citizen has to pool a certain amount to prove they are loya
 
 ## Liberland Merit (LLM Pallet)   
 #### Governance Token    
-The governance token is the Liberland Merit (LLM), a token minted based on a fixed schedule and having a fixed cap, BTC style. LLM will be the governance token of our blockchain and Liberland itself and is meant to be used in our DeFi ecosystem. The tokenomics of LLM will be a hard cap of 70 million.
+The governance token is the Liberland Merit (LLM), a token minted based on a fixed schedule and having a fixed cap, BTC style. LLM will be the governance token of our blockchain and Liberland itself and is meant to be used in our DeFi ecosystem. The hard cap of LLM will be 70 million.
  
 We build the LLM into the system using the underlying pallet assets combined with customized logic. The LLM Pallet will be able to support the following functionality:
 
