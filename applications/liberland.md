@@ -32,15 +32,22 @@ We base our backend on the current/Polkadot version of the Substrate and are con
 
 ##### Metaverse Pallet   
 The metaverse pallet will use an offchain worker in order to bridge between our blockchain and the virtual metaverse’s network on a standard tcp application layer.
+Our metaverse is running the industry standard "Unreal Engine 4" to power the graphics. Using standarized API's 
 We are also creating API connections with our Metaverse and its specific functions and other extrinsic services. Easy to adapt to other Metaverses and systems where State-like polities run or to "virtual States" existing on the internet in a generalized fashion.
-
-
+     
+##### Integrations between the metaverse and our substrate based chain:    
+-  Register, Manage and run on-chain companies   
+-  Register virtual land, where the land in the metaverse is managed by a pallet      
+-  Trade with on-chain assets, NFT's and LLM   
+-  e-citizenship, you can apply for an e-citizenship   
+ 
 
 
 ##### Liberland Dollar (LLD)    
 
 Our token, used as a medium of exchange and for validators/nominators, is the Liberland Dollar (LLD). Unlike the Dot, our LLD is meant to serve as the currency. It will in fact have the potential to become the common-grounds currency for all the projects involved. The LLD core system keeps close to Polkadot's battle-tested tokenomics and rules for standalone projects.
- 
+LLD is our native token, allowing anyone to run a validator.
+
 We envision a possible future of an international organization on the blockchain, an agreement of free trade. The LLD or other LLD-like currencies would be easily transferable and commutative. The other adopters might build their chains based on our example or become parachains to the Liberland Smart Chain.
 
 ## Frontend  
