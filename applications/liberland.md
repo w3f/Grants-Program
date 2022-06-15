@@ -113,7 +113,7 @@ We will be the first chain to roll out politics supported by on-chain assets.
 
 
 #### Time-Based Minting    
-The LLM pallet will allow adopters to delay the minting process using a regular DateTime format. LLM pre-calculates time based on block time, allowing us to postpone the execution of issuing tokens. This functionality does not currently exist in the substrate ecosystem. 
+The LLM pallet allows delays in the minting process using a regular DateTime format. LLM pre-calculates time based on block time, allowing us to postpone the execution of issuing tokens. This functionality does not currently exist in the substrate ecosystem. 
 LLM will be minted over a timeframe of 48 years, allowing inflation to get fixed (being able to pre-calculate future inflation percentages) and controlled over time. Ninety-five per cent of all LLM get minted on behalf of the Treasury. Still, most of the Tokens typically don't stay there for long - they will be distributed into politics using the Members of Congress by a system described below. Please see the details here: https://docs.google.com/spreadsheets/d/1uBuGNQMuyz9p4_JBbza7Wa8hWCYkGdGjoOISF0LPKro/edit#gid=0. 
 
 #### Senate approved transfers   
