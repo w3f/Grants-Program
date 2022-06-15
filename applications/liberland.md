@@ -80,7 +80,7 @@ The principle that a Citizen has to pool a certain amount to prove they are loya
 #### Governance Token    
 The governance token is the Liberland Merit (LLM), a token minted based on a fixed schedule and having a fixed cap, BTC style. LLM will be the governance token of our blockchain and Liberland itself and is meant to be used in our DeFi ecosystem. The hard cap of LLM will be 70 million.
  
-We build the LLM into the system using the underlying pallet assets combined with customized logic. The LLM Pallet will be able to support the following functionality:
+We build the LLM into the system using the underlying [assets pallet](https://paritytech.github.io/substrate/master/pallet_assets/index.html) combined with customized logic. The LLM Pallet will be able to support the following functionality:
 
 #### Treasury Minting and Predefined Max cap   
 Using a simple runtime parameter, we allow developers to simplify the printing amount of tokens, the amount of percentage to issue every X amount of time, and the maximum amount of tokens to be minted and sent to the Treasury, allowing the Treasury to manage on-chain assets. 
