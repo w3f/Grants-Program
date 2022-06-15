@@ -149,7 +149,7 @@ Connection to extrinsic systems, standard or customized per-state via API will e
 The powers of the Executive in Liberland are to govern directly on-chain within the limits of Congress's laws and off-chain as well in the metaverse and later the real-life state.
     
     
-More complex State actors might create specialized parachains which would govern their municipalities or even byzantine central bureaucracies. Given that States generate traffic as a matter of course, such systems are very interesting for Validators and Nominators and virtually non-existent in the current space.
+More complex State actors might create specialized parachains which would govern their municipalities or even more complex central bureaucracies. Given that States generate traffic as a matter of course, such systems are very interesting for Validators and Nominators and virtually non-existent in the current space.
  
 
 
