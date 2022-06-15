@@ -50,7 +50,19 @@ ExoSys is also responsible for issuing the Non-Transferrable NFTs and keeps a tr
 Selected set of security auditor tools, packaged and adapted to be executed by the request of ExoSys.
 
 #### What is AuditorRep?
-Élő based reputation system for the manual auditors.
+Élő's assumption is that the performance of an auditor in each audit is a random variable following a normal distributed bell curve over time.
+An auditor might perform significantly better or worse from one audit to the next.
+Using Élő their mean skill level would remain the same.
+The assumption here is that the mean skill level of an auditor changes slowly over time.
+Each audit can be challenged by other auditors with a high enough score, who can either find other vulnerabilities or remove  false positives the original auditor has missed.
+If additional vulnerabilities are found or  false positives are removed, the challenging auditor increase their own score and decrease the score of the original auditor.
+The increase and decrease of every individual auditor is relative to the Élő score of the original auditor and the one re-auditing a project.
+
+High ranked auditor wins:
+- few points are transferred from the low ranked auditor to the higher rated one.
+
+Low rated auditor wins:
+-  a lot of points are transferred from the higher rated auditor to the low rated one.
 
 #### What is the CCTF talent pool?
 CCTF provides a proven track record of hackers solving challenges and based on their reputation, they are awarded as manual auditors in the QDAO ecosystem.
