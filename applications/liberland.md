@@ -155,7 +155,7 @@ More complex State actors might create specialized parachains which would govern
 
 #### Treasury   
 The Treasury for LLM, unlike that of Polkadot and like treasuries of extant States, operates without the burn mechanism. LLD follows the same rules as Polkadot, and so there is a burn mechanism to offset the “infinite” (really: algorithmic) supply. 
-As the LLM tokenomics suppose a deflationary token, holding LLM in the treasury will help finance running the State. The System distributes a significant portion of the treasury among the Members of Congress. Through this, the tokens get directly into the hands of the Voters (Citizens). Using Pallet-llm the treasury is the owner and manager of several on-chain assets, allowing us to expand the base functionality to have the treasury securely manage on-chain assets for us. Decentralizing trust in a true way.
+As the LLM tokenomics suppose a deflationary token, holding LLM in the treasury will help finance running the State. The System distributes a significant portion of the treasury among the Members of Congress. Through this, the tokens get directly into the hands of the Voters (Citizens). Using the LLM Pallet the treasury is the owner and manager of several on-chain assets, allowing us to expand the base functionality to have the treasury securely manage on-chain assets for us. Decentralizing trust in a true way.
 
 
 #### Company Registration Pallet    
