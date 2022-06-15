@@ -36,6 +36,25 @@ We are the first connecting defensive as well as offensive security tool executi
 - What your project is _not_ or will _not_ provide or implement
   - We won't solve business questions here, though we think our idea fill fit into the Polkadot/Kusama ecosystem.
   - This project won't save all the smart contracts or render manual auditors/hackers useless. Quite the opposite, by providing proven execution, we want to provide work to the manual workers who verify and validate vulnerabilities.
+- Main programming languages to be used: Rust, Python and JavaScript (for frontend)
+
+<p align="center">
+  <img src="https://github.com/Qrucial/QRUCIAL-DAO/blob/main/docs/topology.png" style="width:600px";>
+</p>
+
+#### What is ExoSys?
+ExoSys is the system that schedules audit requests and handles ExoTool connections. It is implemented as a combination of a pallet and a daemon, running on the same system as the blockchain node.
+ExoSys is also responsible for issuing the Non-Transferrable NFTs and keeps a track record of audit hashes and meta data.
+
+#### What is ExoTool?
+Selected set of security auditor tools, packaged and adapted to be executed by the request of ExoSys.
+
+#### What is AuditorRep?
+Élő based reputation system for the manual auditors.
+
+#### What is the CCTF talent pool?
+CCTF provides a proven track record of hackers solving challenges and based on their reputation, they are awarded as manual auditors in the QDAO ecosystem.
+
 
 ### Ecosystem Fit
 
@@ -76,7 +95,7 @@ Six aka David Pethes is a co-founder of QRUCIAL. He is a web3 researcher and sec
 ra33it0 aka Sebastian Kraus is a co-founder of QRUCIAL. He is also the founder and strategic mind behind a multitude of companies. His activities range from carbon-neutral real estate with OLYMP to Cryptocurrency Marketing with Elfzntrollz and information security QRUCIAL aiming to make Web3 more secure.
 Back in 2016, he became interested in blockchain and hacking and has since refined his skills in the field.
 
-Wigy is an ex-Parity substrate developer. He is proficient in coding in Rust.
+Wigy is an ex-Parity Substrate developer. He is working as a blockchain developer since 2016. His main interests are Rust development, architecture, incentive systems and wallet implementations.
 
 Silur is working at the Hungarian Academy of Sciences (MTA) as cryptographer, was an early Ethereum developer and still works on cryptocurrency projects.
 
@@ -113,58 +132,44 @@ The PoC is working, and we want to move forward in developing a live testnet ver
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):**  4.5 FTE
-- **Total Costs:** 43,000 USD
+- **Total Estimated Duration:** 4 months
+- **Full-Time Equivalent (FTE):**  0.7 FTE
+- **Total Costs:** 40,000 USD
 
 ### Milestone 1 — Implement substrate runtime and core modules
 
-- **Estimated duration:** 1 month
-- **FTE:**  2 FTE
-- **Costs:** 15,000 USD
+- **Estimated duration:** 2 months
+- **FTE:**  0.7 FTE
+- **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation v1 | Documentation for the core system, development and basic concepts introduced by QRUCIAL DAO. |
-| 0c. | Substrate runtime | The runtime config and compilable code for QRUCIAL DAO. |  
-| 0d. | Exogenous connection | Working nodes that connect to each other and execute the requested security tools. |  
-| 1. | Substrate module: ExoSys | Core system that handles the extrinsics that request ExoTool execution. |  
-| 2. | Substrate module: HackRep | Reputation system for the manual auditors who verify the output recorded by ExoSys. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Substrate runtime | The runtime config and compilable code for QRUCIAL DAO. |    
+| 2. | Substrate pallet: ExoSys | Core system that handles the extrinsics that request ExoTool execution. |  
+| 3. | Substrate pallet: AuditorRep | Reputation system for the manual auditors who verify the output recorded by ExoSys. |
+| 4. | Substrate report storage | Includes the tools exogenous to the Substrate system, it is connected through the glue/proxy. |
 
+### Milestone 2 — Implement Exogenous tooling and hardened node system
 
-### Milestone 2 — Implement ExoTools and hardened proxy/glue system
-
-- **Estimated duration:** 1 month
-- **FTE:**  1.5 FTE
-- **Costs:** 15,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | ExoGlue | This is the system the listens to events on QRUCIAL DAO and executes the requested tools. |
-| 0b. | ExoTool Core | Modular system for exotools with guide on how to create new ones. We plan to use Podman. |
-| 0c. | ExoTool - Slither | Implement Slither as an exotool for Solidity contracts. |
-| 0d. | ExoTool - Octopus | Implement Octopus as an exotools for bytecodes (WASM and Solidity) |
-| 1. | Substrate ExoGlue: ExoTools | Includes the tools exogenous to the Substrate system, it is connected through the glue/proxy. |
-| 2. | QRUCIAL DAO Hardening | We test and harden the system against attacks. |
-
-
-### Milestone 3 — Live test network
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 13,000 USD
-
+- **Estimated duration:** 2 months
+- **FTE:**  0.7 FTE
+- **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | Unit tests and internal security audit | Code that can be used for testing and an audit conducted against the system created in the 1-2 milestones.|
-| 0b. | Public report on security | Report shared publicly about the tests and security audit, including technical details. |
-| 0c. | Documentation v2 | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run her/his own QRUCIAL DAO nodes and send test transactions, which will show how the new functionality works. |
-| 0d. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. Images will also be prepared for the Exogenous tools separately. |
-| 2. | Article | We will publish **articles** and conduct workshop that explain QRUCIAL DAO. These will appear on QRUCIAL blog and the workshops will be conducted at Polkadot meetups (e.g. Polkadot Hungary meetup and at hackerspaces).
-| 2. | Community building | We will start building a larger community for QRUCIAL DAO and improve our partnership with CCTF.
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains QRUCIAL DAO (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
+| 1. | ExoSys Deamon | This is the glue system which listens to events on QRUCIAL DAO and executes the requested tools. |
+| 2. | QRUCIAL DAO Frontend | Frontend development for accessing the functionalities. |
+| 3. | ExoTool - Slither | Implement [Slither](https://github.com/crytic/slither) as an exotool for Solidity contracts. |
+| 4. | ExoTool - Octopus | Implement [Octopus](https://github.com/pventuzelo/octopus) as an exotools for bytecodes (WASM and Solidity) |
 
 
 ## Future Plans
@@ -172,6 +177,7 @@ The PoC is working, and we want to move forward in developing a live testnet ver
 - In the short term, we'd like to have the grant, so development goes faster. QRUCIAL as a company will keep funding the project until it becomes self-sustaining (meaning, the governance system keeps the DAO running on its own).
 - CCTF (cryptoctf.org) is already a partner, helping to bring the best web3 hackers to the system.
 - Elfz'n'Trollz is a marketing partner, so we don't just develop a DAO, but also make it usable and visually acceptable to all audiences.
+- After final milestone, we will start building a larger community for QRUCIAL DAO and improve our partnership with CCTF.
 
 
 ## Additional Information :heavy_plus_sign:
