@@ -117,7 +117,7 @@ The LLM pallet allows delays in the minting process using a regular DateTime for
 LLM will be minted over a timeframe of 48 years, allowing inflation to get fixed (being able to pre-calculate future inflation percentages) and controlled over time. Ninety-five per cent of all LLM get minted on behalf of the Treasury. Still, most of the Tokens typically don't stay there for long - they will be distributed into politics using the Members of Congress by a system described below. Please see the details here: https://docs.google.com/spreadsheets/d/1uBuGNQMuyz9p4_JBbza7Wa8hWCYkGdGjoOISF0LPKro/edit#gid=0. 
 
 #### Senate approved transfers   
-We create a special organ, the Senate, adaptable by other adopters as they see fit (see below). One of the main purposes of this organ is to preside over Treasury spending. It is not a political organ per-se; instead, it is composed of the most committed (invested) individuals in the State and the syste, providing a game-theory based incentive to make rational decisions.   
+We create a special organ, the Senate, adaptable by other adopters as they see fit (see below). One of the main purposes of this organ is to preside over Treasury spending. It is not a political organ per-se; instead, it is composed of the most committed (invested) individuals in the State and the system, providing a game-theory based incentive to make rational decisions.   
 
 #### Incentive to HODL LLM   
 Due to the Proof of Commitment and the legislative system offering possible APR (see above and below respectively), token holders have an incentive to keep their LLM vested, and we expect this to raise and stabilize the price. 
