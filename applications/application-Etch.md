@@ -133,6 +133,15 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 ### Team Code Repos
 
+DeepTag homepage and web app
+https://deeptag.ai/DeepTagPage.html#home-section
+DeepTag documentation
+https://api.btbp.org/apidocs/deeptag/
+
+Blog post detailing the work we undertook with Legal Aid at Work to develop the NLP powered Advokat chatbot.
+The software featured a large, branching logic model that meticulously matched the labor laws that were created during the pandemic in the U.S.
+https://legalaidatwork.org/blog/new-chatbot/
+
 - https://github.com/<your_organisation>
 - https://github.com/<your_organisation>/<project_1>
 - https://github.com/<your_organisation>/<project_2>
@@ -149,7 +158,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-Articles and studies on meaningful, purpose driven work and CSR statistics.
+Articles and studies that point to meaningful, purpose driven work and CSR statistics becoming increasingly important to employees and workers.
 https://f.hubspotusercontent40.net/hubfs/9253440/Asset%20PDFs/Promotions_Assets_Whitepapers/BetterUp-Meaning&Purpose.pdf
 https://www.mckinsey.com/business-functions/people-and-organizational-performance/our-insights/help-your-employees-find-purpose-or-watch-them-leave
 https://online.hbs.edu/blog/post/corporate-social-responsibility-statistics
@@ -191,6 +200,19 @@ For each milestone,
 - **Estimated duration:** 2 months
 - **FTE:**  0.5
 - **Costs:** 3,300 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | 3 user research interviews to identify user needs. The interviewees will be a variety of business owners and organization leaders.|
+| 0c. | Figma prototypes (or alternative prototype software) | 3 business archetypes with ability to change template values|
+| 0d. | Figma prototypes (or alternative prototype software) | Ability to create and store an organization’s employees and data|
+| 0e. | Figma prototypes (or alternative prototype software) | Organization report of metrics based on stored data|
+| 0f. | Figma prototypes (or alternative prototype software) | Search function that pulls data and reports for existing organizations|
+| 0g. | Figma prototypes (or alternative prototype software) | Search function that pulls commitments for existing organizations|
+| 1. | 2 user tests of prototypes|
+| 2. | Ink! Smart Contract designs | Data flow diagrams|
+ 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
