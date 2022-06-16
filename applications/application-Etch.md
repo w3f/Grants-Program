@@ -158,6 +158,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
+We had a conversation with Sebastian Müller about the concept of Etch. He mentioned additional details that he’d like to see in a grant proposal and to start with a level 1 grant.
+
 Articles and studies that point to meaningful, purpose driven work and CSR statistics becoming increasingly important to employees and workers.
 https://f.hubspotusercontent40.net/hubfs/9253440/Asset%20PDFs/Promotions_Assets_Whitepapers/BetterUp-Meaning&Purpose.pdf
 https://www.mckinsey.com/business-functions/people-and-organizational-performance/our-insights/help-your-employees-find-purpose-or-watch-them-leave
@@ -205,48 +207,36 @@ For each milestone,
 | -----: | ----------- | ------------- |
 | 0. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 | 1. | User research interview|  Interview 3 business owners/organization leaders to identify user needs.|
-| 2c. | Prototype | 3 business archetypes with ability to change template values|
-| 2d. | Prototype | Ability to create and store an organization’s employees and data|
-| 2e. | Prototype | Organization report of metrics based on stored data|
-| 2f. | Prototype | Search function that pulls data and reports for existing organizations|
-| 2g. | Prototype | Search function that pulls commitments for existing organizations|
+| 2a. | Prototype | 3 business archetypes with ability to change template values|
+| 2b. | Prototype | Ability to create and store an organization’s employees and data|
+| 2c. | Prototype | Organization report of metrics based on stored data|
+| 2d. | Prototype | Search function that pulls data and reports for existing organizations|
+| 2e. | Prototype | Search function that pulls commitments for existing organizations|
 | 3. | User testing| Conduct user testing of the prototypes with 2 individuals|
 | 4. | Data flow diagrams| Ink! Smart Contract designs based on the prototypes and information gathered from user testing| 
  
+### Milestone 2 — Implementation
+
+- **Estimated Duration:** 4 month
+- **FTE:**  0.5
+- **Costs:** 6,400 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |  
+| 0. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
 
-
-### Milestone 2 Example — Additional features
-
-- **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 4,000 USD
-
-...
 
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+Have Etch work for real-world businesses. Add a secure log-in and the ability to upload business documents that verify identity and ownership. Integrate with DAOs to automatically pull relevant information for automated calculations.
 
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+
+We found out about the grants program by researching online about potential grants for web 3.0 projects. 
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
