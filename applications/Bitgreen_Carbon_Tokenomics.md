@@ -1,18 +1,13 @@
 # W3F Grant Proposal
 
-![](Bitgreen_Carbon_Tokenomics_A0.png)
+![Bitgreen_Carbon_Tokenomics_A0](https://user-images.githubusercontent.com/7604554/174072021-2cc73674-23c6-49d4-a5df-26ff3244112a.png)
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
 - **Project Name:** Carbon-Based Tokenomics
 - **Team Name:** Bitgreen Inc
 - **Payment Address:** 0x7C9F0962D07AF7EE4A788a1a6576Efb4F121DA3A USDC
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 - **Applied Amount:** $100,000
-
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
@@ -115,7 +110,7 @@ This novel approach would introduce several desirable outcomes:
 
 ### Schema
 
-![](Bitgreen_Carbon_Tokenomics_A1.png)
+![Bitgreen_Carbon_Tokenomics_A1](https://user-images.githubusercontent.com/7604554/174072184-d9e9b915-6426-41f6-9ad1-e51ad352e24a.png)
 
 ### Proof of Concept
 
@@ -135,7 +130,7 @@ or lack of liquidity (market frictions). Upon this, we can develop either a fixe
 schedule that works in conjunction with market oracles to produce a dynamic tokenomics model based on carbon financing
 and climate change mitigation.
 
-![](Bitgreen_Carbon_Tokenomics_A2.png)
+![Bitgreen_Carbon_Tokenomics_A2](https://user-images.githubusercontent.com/7604554/174072236-cb9633ec-4e6a-4a5c-bf9d-7535719f8601.png)
 
 ### Scope
 
@@ -258,19 +253,4 @@ product is in the final stage of development and due to release fully in Q3 2022
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
-
-## Additional Information :heavy_plus_sign:
-
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by
-another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it
-already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+-
