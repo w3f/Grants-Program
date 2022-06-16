@@ -162,10 +162,10 @@ Iris is *not* intended to act as a decentralized replacement for traditional clo
 
 ### Team members
 
-Tony Riemer: co-founder/engineer
-Tom Richard: engineer
-Sebastian Spitzer: co-founder
-Brian Thamm: co-founder
+- Tony Riemer: co-founder/engineer
+- Tom Richard: engineer
+- Sebastian Spitzer: co-founder
+- Brian Thamm: co-founder
 
 ### Contact
 
