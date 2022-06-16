@@ -236,7 +236,7 @@ product is in the final stage of development and due to release fully in Q3 2022
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and extensive module documentation. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish medium articles explaining how the Tokenomics system works **
+| 0d. | Article | We will publish medium articles explaining how the Tokenomics system works.
 | 1a. | Relationships | Develop legal relationship with Will Cong based on published, peer-reviewed academic research on crypto-economics and consensus protocols. Co-design project parameters and negotiate consulting & licensing arrangement |  
 | 1b. | Documentation | Provide a research team with written project scope, performance indicators, timeline and final deliverables. Reach mutual agreement on scope |  
 | 1c. | Initial Proposal | Research team to present initial proposal exhibiting viable model for a dependent emissions system based on a) carbon asset inventory, b) carbon asset price, or c) both |  
