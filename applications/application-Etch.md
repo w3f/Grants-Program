@@ -203,15 +203,15 @@ For each milestone,
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | 3 user research interviews to identify user needs. The interviewees will be a variety of business owners and organization leaders.|
-| 0c. | Figma prototypes (or alternative prototype software) | 3 business archetypes with ability to change template values|
-| 0d. | Figma prototypes (or alternative prototype software) | Ability to create and store an organization’s employees and data|
-| 0e. | Figma prototypes (or alternative prototype software) | Organization report of metrics based on stored data|
-| 0f. | Figma prototypes (or alternative prototype software) | Search function that pulls data and reports for existing organizations|
-| 0g. | Figma prototypes (or alternative prototype software) | Search function that pulls commitments for existing organizations|
-| 1. | 2 user tests of prototypes|
-| 2. | Ink! Smart Contract designs | Data flow diagrams|
+| 0. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 1. | User research interview|  Interview 3 business owners/organization leaders to identify user needs.|
+| 2c. | Prototype | 3 business archetypes with ability to change template values|
+| 2d. | Prototype | Ability to create and store an organization’s employees and data|
+| 2e. | Prototype | Organization report of metrics based on stored data|
+| 2f. | Prototype | Search function that pulls data and reports for existing organizations|
+| 2g. | Prototype | Search function that pulls commitments for existing organizations|
+| 3. | User testing| Conduct user testing of the prototypes with 2 individuals|
+| 4. | Data flow diagrams| Ink! Smart Contract designs based on the prototypes and information gathered from user testing| 
  
 
 | Number | Deliverable | Specification |
