@@ -262,7 +262,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
 - [Picasso / Composable Grants Program](https://grants.composable.finance)
 - [SubQuery Grants Programme](https://subquery.network/grants)
-- [Acala Grants Program](https://github.com/AcalaNetwork/Acala-Grants-Program)
+- [Acala Grants Program](https://acala.network/ecosystem-program)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
 
 ## :information_source: License<!-- omit in toc -->
