@@ -206,16 +206,16 @@ For each milestone,
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0. | License | Apache 2.0 |
-| 1. | User research interview|  Interview 3 business owners/organization leaders to identify user needs in detail|
+| 1. | 3 User research interview|  Interview 3 business owners/organization leaders to identify user needs in detail|
 | 2a. | Wireframes | 3 business archetypes with ability to change template values|
 | 2b. | Wireframes | Ability to create and store an organization’s employees and data|
 | 2c. | Wireframes | Organization report of metrics based on stored data|
 | 2d. | Wireframes | Search function that pulls data and reports for existing organizations|
 | 2e. | Wireframes | Search function that pulls commitments for existing organizations|
-| 3. | User tests| Conduct user testing of the prototypes with 2 individuals|
+| 3. | 2 User tests| Conduct user testing of the prototypes with 2 individuals|
 | 4. | Data flow diagrams| Ink! Smart Contract designs based on the prototypes and user research| 
  
-### Milestone 2 — UI
+### Milestone 2 — Implementation
 
 - **Estimated Duration:** 2 months
 - **FTE:**  0.5
@@ -224,8 +224,8 @@ For each milestone,
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 5. | Smart Contracts | Implementation of designs from data flow diagrams and prototypes |
-| 6. | React Native | Implementation of prototypes |
-| 7. | web app | Hosted and functioning web app |
+| 6. | React Native | Implementation of UI prototypes |
+| 7. | Web app | Hosted and functioning web app |
 
 
 ## Future Plans
@@ -237,12 +237,6 @@ For each milestone,
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?**
 
-We found out about the grants program by researching online about potential grants for web 3.0 projects. 
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+We found out about the grants program by researching online about potential grants for web 3.0 projects.
