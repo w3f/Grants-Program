@@ -81,7 +81,7 @@ We expect the teams to already have a solid idea about your project's expected f
 
 Our primary audience are business owners and heads of organizations. Particularly those who wish to distinguish themselves from others and attract enthusiastic workers who align with their mission. Additionally, workers who want to understand the commitments an organization has made would also find this useful.
 
-There’s currently a great desire by workers that their employers engage in socially responsible behavior, be held accountable and provide workers with purpose. Etch moves these commitments from websites to the blockchain to provide more transparency.
+There’s currently a great desire by workers that their employers engage in socially responsible behavior, be held accountable and provide workers with purpose. Etch moves these commitments from websites and talking points to the blockchain to provide more transparency.
 
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
