@@ -2,7 +2,7 @@
 
 - **Project Name:** DKSAP
 - **Team Name:** DKSAP
-- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:** 0xf4f463B9A0ADa68536423121e7Bf9E559ce54fAf(Ethereum ERC20 USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ### Overview
@@ -21,19 +21,16 @@ The first full working implementation of DKSAP(Dual-Key Stealth Address Protocol
 
 In DKSAP, if an auditor or a proxy server exists in the system, the receiver can share the ‘scan private key’ s and the ‘spend public key’ B with the auditor/proxy server so that those entities can scan the blockchain transaction on behalf of the receiver. However, they are not able the compute the ephemeral private key c + b and spend the payment.
 
+I want to develop an anonymous NFT contract based on DKSAP, and all NFT owner address are encrypted by the receiver's scan public key. At the same time, users send transaction through relayer to ensure the anonymity of the transaction.
+
 
 ### Project Details
 
 ### Ecosystem Fit
 
-I believe that solidity-based technical facilities like DKSAP are of great significance in the Polkadot ecosystem.
+I believe that technical facilities like DKSAP are of great significance in the Polkadot ecosystem.
 
 Many of today’s blockchains, including Bitcoin and Ethereum, are open and public ledgers in the sense that there are no restrictions on participation and all transaction details are visible on the blockchain. In a public ledger, the transaction entities are only identified by their blockchain addresses, which are derived from the corresponding public keys. Public ledgers are generally considered to be “pseudo-anonymous”, which means that an address is linked to one person, but that person is unknown to the public. However, by analyzing the transaction graph and combining with other information, it is possible to reveal the true real world identity behind a blockchain address, as shown by recent research. People and corporations prefer to add privacy-enhancing features to blockchain transactions for various reasons, including but not limited to managing law-enforcement related issues and hiding sensitive, company-specific information.
-
-Compatibility with Ethereum, in particular, has been part of the Polkadot roadmap since day one, having been discussed in the very first lines of the [Polkadot whitepaper](https://polkadot.network/PolkaDotPaper.pdf).
-
-Substrate EVM is an SRML module that provides an EVM execution environment for running unmodified Solidity code “natively” on a Substrate-based blockchain.Existing Solidity applications can be deployed and executed in this environment, and will gain the added benefits of being part of a Substrate-based blockchain.
-
 
 ## Team :busts_in_silhouette:
 
@@ -84,34 +81,23 @@ Blockchain-Based Internet of Things Systems](https://arxiv.org/pdf/1806.00951.pd
 - **Full-Time Equivalent (FTE):**  1
 - **Total Costs:** 10,000 USD
 
-### Milestone 1 — Node.js features
+### Milestone 1 — Implement Substrate Modules & DKSAP
 
-- **Estimated duration:** 4 weeks
+- **Estimated duration:** 6 weeks
 - **FTE:**  1
-- **Costs:** 5,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0a. | License | GPLv3
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Node.js | DKSAP encrypt and decrypt off-chain implement by Node.js
-
-### Milestone 2 — Smart contract features
-
-- **Estimated duration:** 4 weeks
-- **FTE:**  1
-- **Costs:** 5,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Smart Contart | DKSAP encrypt and decrypt on-chain implement by Solidity
-| 0e. | Relayer | A relayer to push transaction
+| 1. | (Node.js)SDK: Client Tool | Development and testing of the basic abilities of the client tool, including computing a shared secret by ECDH, computing encrypted public key of the receiver, computing ephemeral private key(adding points in elliptic curve cryptography), and pushing transactions to relayer through HTTPS.
+| 2. | (ink!)Smart contracts: Anonymous NFT | Development and testing of the core functions of the Anonymous NFT smart contract, including minting new NFT, transferring NFT, and burning NFT. In particular, it is important to note that the address of the owner stored in the contract is encrypted by the scan public key of receiver. At the same time, when users need to perform Mint or Transfer operations, smart contract need to verify the signature of the private key corresponding to this address on-chain.
+| 3. | HTTPS Service: Node.js Relayer | Build an early-stage HTTPS service relayer including accepts requests from users and pushes transaction to NFT smart contract. 
 
 
 ## Future Plans
 
-After the Solidity implementation of DKSAP is fully tested, I will continue to improve the DKSAP implementation for the Polkadot ecosystems. At the same time, I will help other teams that need to use the DKSAP protocol to reduce development costs.
+* After the Solidity implementation of DKSAP is fully tested, I will continue to improve the DKSAP implementation for the Polkadot ecosystems. At the same time, I will help other teams that need to use the DKSAP protocol to reduce development costs.
+* Currently, user transactions is sent free of charge by relayer. This is not possible in the production environment, so we need to modify the relayer in the furture version. We can add a deposit function to NFT, so that users can deposit token into contract, and then transfer the token to realyer based on zero-knowledge proof.
