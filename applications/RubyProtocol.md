@@ -4,6 +4,7 @@
 * **Project:** Ruby Protocol
 * **Proposer:** Ruby Protocol
 * **Payment Address:** 0x5aBBe7b65c572b9f5Cc7655Ba4a1Acad0e892720
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/613#issuecomment-1122685293)
 
 ## Project Overview :page_facing_up:
 ### Overview
