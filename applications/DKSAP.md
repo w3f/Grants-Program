@@ -77,8 +77,8 @@ Blockchain-Based Internet of Things Systems](https://arxiv.org/pdf/1806.00951.pd
 ## Development Roadmap :nut_and_bolt:
 ### Overview
 
-- **Total Estimated Duration:** 8 weeks
-- **Full-Time Equivalent (FTE):**  1
+- **Total Estimated Duration:** 6 weeks
+- **Full-Time Equivalent (FTE):** 1
 - **Total Costs:** 10,000 USD
 
 ### Milestone 1 — Implement Substrate Modules & DKSAP
