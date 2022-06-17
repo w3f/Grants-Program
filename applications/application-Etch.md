@@ -5,8 +5,8 @@
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
 - **Project Name:** Etch
-- **Team Name:** 
-- **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Team Name:** Generation Spark
+- **Payment Address:** 3B5ZuUZQDE4MdAEaTC8uB8ueaXcXX5R3Vb (BTC)
 - **[Level]** 1
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -205,8 +205,8 @@ For each milestone,
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 1. | User research interview|  Interview 3 business owners/organization leaders to identify user needs.|
+| 0. | License | Apache 2.0 |
+| 1. | User research interview|  Interview 3 business owners/organization leaders to identify user needs in detail|
 | 2a. | Prototype | 3 business archetypes with ability to change template values|
 | 2b. | Prototype | Ability to create and store an organization’s employees and data|
 | 2c. | Prototype | Organization report of metrics based on stored data|
@@ -223,13 +223,17 @@ For each milestone,
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 5. | Smart Contracts | Implementation of designs from data flow disgrams and prototypes |
+| 6. | Create React app/Polkadot js | Implementation of prototypes |
+| 7. | Dapp | Hosted and functioning Dapp |
 
 
 
 ## Future Plans
 
-Have Etch work for real-world businesses. Add a secure log-in and the ability to upload business documents that verify identity and ownership. Integrate with DAOs to automatically pull relevant information for automated calculations.
+- Have Etch work for real-world businesses. 
+- Add a secure log-in and the ability to upload business documents that verify identity and ownership. This will avoid users adding businesses they have no links to. -
+- Integrate with DAOs to automatically pull relevant information for automated metrics calculations.
 
 
 ## Additional Information :heavy_plus_sign:
