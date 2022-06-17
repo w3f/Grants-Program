@@ -273,9 +273,9 @@ Actual concept materials
 
 ### Overview
 
-- **Total Estimated Duration:** 6 weeks
-- **FTE:** 2-3 FTE
-- **Total Costs:** 50,000 USD
+- **Total Estimated Duration:** 5 weeks
+- **FTE:** 3 FTE
+- **Total Costs:** 48,000 USD
 
 ### Previous work:
 
