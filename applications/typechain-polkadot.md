@@ -142,12 +142,12 @@ Technical specifications can be found [here](https://github.com/Supercolony-net/
 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
-| 0 | License | MIT |
+| 0a | License | MIT |
+| 0b | Documentation | We will provide TypeScript code examples of this package in use (some can be already found [here](https://github.com/Supercolony-net/typechain-polkadot/blob/master/docs/tech-specs.md#usage-examples)). As well, as inline documentation, JSDoc and its features description. |
 | 1 | TS types | We will research & match types from ABI to TypeScript, compatible with [polkadot{.js} v8](https://polkadot.js.org) library. Separately, for methods' arguments and return values. Files with types definition will be generated. |
 | 2 | Runtime code | Prepare output(its draft can be seen in [technical specification](https://github.com/Supercolony-net/typechain-polkadot/blob/master/docs/tech-specs.md#generated-code-draft)) of runtime code with contracts' methods implementation. At this point we have minimal viable coverage of the ABI types, original methods' names, and general types for methods' options, without specifics for contract's [namespaces](https://github.com/Supercolony-net/typechain-polkadot/blob/master/docs/tech-specs.md#namespaces). |
 | 3 | Testing | Minimal coverage of PSP22 contract with integration tests. We will be testing correctness of the derived types of the arguments and return values. |
 | 4 | NPM Packaging | Prepare the repository to work through CLI as a package. In TypeScript, as is, without translation to JavaScript. We will publish the package to [NPM repository](https://npmjs.com) and provide set-up instructions (i.e. for [installation](https://github.com/Supercolony-net/typechain-polkadot/blob/master/docs/tech-specs.md#set-up), [input](https://github.com/Supercolony-net/typechain-polkadot/blob/master/docs/tech-specs.md#input) & [output](https://github.com/Supercolony-net/typechain-polkadot/blob/master/docs/tech-specs.md#output)). |
-| 5 | Examples & Documentation | We will provide TypeScript code examples of this package in use (some can be already found [here](https://github.com/Supercolony-net/typechain-polkadot/blob/master/docs/tech-specs.md#usage-examples)). As well, as document its features. |
 
 
 ## Future Plans
@@ -161,12 +161,12 @@ Technical specifications can be found [here](https://github.com/Supercolony-net/
 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
-| 0 | License | MIT |
+| 0a | License | MIT |
+| 0b | Documentation | We will cover new-added features in documentation and usage examples. |
 | 1 | Investigation | Broaden types definitions for methods arguments and return values (to full coverage). |
 | 2 | Parser & generators modules | Design and implement a new parser module for ABI JSON to work with different versions of the ABI. Parser's output structure serves as an input for generators. Refactor, replace inlne generation with parser to generator flow. |
 | 3 | Contract deployment | Support of parsing `*.contract` files. Provide means for contract deployment. |
 | 4 | Testing | Full coverage of PSP22 contract with integration tests. Both for contract usage and deployment. We will be testing arguments' & return values' types correctness. |
-| 5 | Examples & Documentation | Cover new-added features in documentation and usage examples. |
 
 
 #### Milestone 3 - Optimization. Improve type system of the generated code.
@@ -177,13 +177,13 @@ Technical specifications can be found [here](https://github.com/Supercolony-net/
 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
-| 0 | License | MIT |
+| 0a | License | MIT |
+| 0b | Documentation | We will cover new-added features in documentation and usage examples. |
 | 1 | Precise methods definitions | Refine definitions and bahavior of contracts methods (i.e. methods' arguments and returns), depending on namespace, call options and properties of the method, like `payable` & `mutable`. E.g. preamptive querying for transaction calls, controlled by a call options flag. |
 | 2 | Methods' names | Format methods' names in the output from original `MethodTrait::method_name` to more user-friendly `methodName` naming scheme, while resolving overlap in formatted names. |
 | 3 | Contract classes extension | Extend generated contract classes with useful properties, normally available on the contract (e.g. address, name, signer, etc.). Rely on usage experience in doing so. |
 | 4 | IDE hints | Prepare generated code to have more informattive IDE hints, based on both JSDoc and output typesystem itself (if needed). Rely on usage experience in doing so. |
 | 5 | NPM Package | Translate package's code to JavaScript upon deployment. Provide informattive CLI, when needed. Make sure to have a cross-platform CLI support. |
-| 6 | Examples & Documentation | Cover new-added features in documentation and usage examples. |
 
 
 After this grant, we will be maintaining the project to keep up with new emerging ecosystem standards and also listen to issues from community and update the tool to make the process of transformation a nicer experience for the developers and teams.
