@@ -158,12 +158,12 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-We had a conversation with Sebastian Müller about the concept of Etch. He mentioned additional details that he’d like to see in a grant proposal and to start with a level 1 grant.
-
 Articles and studies that point to meaningful, purpose driven work and CSR statistics becoming increasingly important to employees and workers.
-https://f.hubspotusercontent40.net/hubfs/9253440/Asset%20PDFs/Promotions_Assets_Whitepapers/BetterUp-Meaning&Purpose.pdf
-https://www.mckinsey.com/business-functions/people-and-organizational-performance/our-insights/help-your-employees-find-purpose-or-watch-them-leave
-https://online.hbs.edu/blog/post/corporate-social-responsibility-statistics
+- https://f.hubspotusercontent40.net/hubfs/9253440/Asset%20PDFs/Promotions_Assets_Whitepapers/BetterUp-Meaning&Purpose.pdf
+- https://www.mckinsey.com/business-functions/people-and-organizational-performance/our-insights/help-your-employees-find-purpose-or-watch-them-leave
+- https://online.hbs.edu/blog/post/corporate-social-responsibility-statistics
+
+We had a conversation with Sebastian Müller about the concept of Etch. He mentioned additional details that he’d like to see in a grant proposal and to start with a level 1 grant.
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
