@@ -207,26 +207,25 @@ For each milestone,
 | -----: | ----------- | ------------- |
 | 0. | License | Apache 2.0 |
 | 1. | User research interview|  Interview 3 business owners/organization leaders to identify user needs in detail|
-| 2a. | Prototype | 3 business archetypes with ability to change template values|
-| 2b. | Prototype | Ability to create and store an organization’s employees and data|
-| 2c. | Prototype | Organization report of metrics based on stored data|
-| 2d. | Prototype | Search function that pulls data and reports for existing organizations|
-| 2e. | Prototype | Search function that pulls commitments for existing organizations|
-| 3. | User testing| Conduct user testing of the prototypes with 2 individuals|
-| 4. | Data flow diagrams| Ink! Smart Contract designs based on the prototypes and information gathered from user testing| 
+| 2a. | Wireframes | 3 business archetypes with ability to change template values|
+| 2b. | Wireframes | Ability to create and store an organization’s employees and data|
+| 2c. | Wireframes | Organization report of metrics based on stored data|
+| 2d. | Wireframes | Search function that pulls data and reports for existing organizations|
+| 2e. | Wireframes | Search function that pulls commitments for existing organizations|
+| 3. | User tests| Conduct user testing of the prototypes with 2 individuals|
+| 4. | Data flow diagrams| Ink! Smart Contract designs based on the prototypes and user research| 
  
-### Milestone 2 — Implementation
+### Milestone 2 — UI
 
-- **Estimated Duration:** 4 month
+- **Estimated Duration:** 2 months
 - **FTE:**  0.5
 - **Costs:** 6,400 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 5. | Smart Contracts | Implementation of designs from data flow disgrams and prototypes |
-| 6. | Create React app/Polkadot js | Implementation of prototypes |
-| 7. | Dapp | Hosted and functioning Dapp |
-
+| 5. | Smart Contracts | Implementation of designs from data flow diagrams and prototypes |
+| 6. | React Native | Implementation of prototypes |
+| 7. | web app | Hosted and functioning web app |
 
 
 ## Future Plans
