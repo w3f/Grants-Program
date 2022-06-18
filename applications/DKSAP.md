@@ -99,5 +99,5 @@ Blockchain-Based Internet of Things Systems](https://arxiv.org/pdf/1806.00951.pd
 
 ## Future Plans
 
-* After the Solidity implementation of DKSAP is fully tested, I will continue to improve the DKSAP implementation for the Polkadot ecosystems. At the same time, I will help other teams that need to use the DKSAP protocol to reduce development costs.
+* After the ink! implementation of DKSAP is fully tested, I will continue to improve the DKSAP implementation for the Polkadot ecosystems. At the same time, I will help other teams that need to use the DKSAP protocol to reduce development costs.
 * Currently, user transactions is sent free of charge by relayer. This is not possible in the production environment, so we need to modify the relayer in the furture version. We can add a deposit function to NFT, so that users can deposit token into contract, and then transfer the token to realyer based on zero-knowledge proof.
