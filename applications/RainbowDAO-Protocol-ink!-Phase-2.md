@@ -476,7 +476,7 @@ Therefore, in our second grant, we focused on developing two extended functions,
 - **FTE:**  3
 - **Costs:** 25,000 USD
 
-For the first milestone, we focused on developing DAO Multi-Signature Committee System. 
+**For the first milestone, we focused on developing DAO Multi-Signature Committee System.** 
 
 In this milestone, we mainly completed the document design, UI design, smart contract development, and front-end file development of this system, so that this DAO tool can be used normally and serve various types of DAO organizations.
 
@@ -487,9 +487,9 @@ In this milestone, we mainly completed the document design, UI design, smart con
 |    0c. | Testing Guide                  | Core functions will be  covered by unit tests to ensure. |
 |    0d. | Docker                         | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 |    0e. | Article                        | We will publish an article in our medium introducing the various functions of the DAO Multi-Signature Committee System. |
-|     1. | Frontend files | We will provide front-end files and deployment tutorials for this DAO Multi-Signature Committee System.The front-end file(s) will interact with ink! smart contracts to make DAO Multi-signature Committee System complete, including the creation of multi-signature governance committee, members managing the whole selection process and the application of vault capital proposal. We will also add the detailed front-end deployment tutorials to let developers conveniently deploy the file(s) to ultimately make the interaction with Ink! smart contracts possible.  |
-|     2. | ink! Contracts: | We will provide the complete ink! smart contracts of this DAO tool product, covering the main product logic according to the logical architecture diagram, which is also the main work of this milestone. |
-|     3. | demo video | We will provide a demo video of this DAO tool product, showing its basic functions in the form of video. |
+|     1. | Frontend files for DAO Multi-Signature Committee System | We will provide front-end files and deployment tutorials for this DAO Multi-Signature Committee System.The front-end file(s) will interact with ink! smart contracts to make DAO Multi-signature Committee System complete, including the creation of multi-signature governance committee, members managing the whole selection process and the application of vault capital proposal. We will also add the detailed front-end deployment tutorials to let developers conveniently deploy the file(s) to ultimately make the interaction with Ink! smart contracts possible.  |
+|     2. | ink! Contracts for DAO Multi-Signature Committee System: | We will provide the complete ink! smart contracts of this DAO tool product, covering the main product logic according to the logical architecture diagram, which is also the main work of this milestone. |
+|     3. | demo video for DAO Multi-Signature Committee System | We will provide a demo video of this DAO tool product, showing its basic functions in the form of video. |
 
 
 ### Milestone 2 
@@ -499,7 +499,7 @@ In this milestone, we mainly completed the document design, UI design, smart con
 - **Costs:** 20,000 USD
 
 
-For the second  milestone, we focused on developing DAO NFT Bank System. 
+**For the second  milestone, we focused on developing DAO NFT Bank System.** 
 
 In this milestone, we mainly completed the document design, UI design, smart contract development, and front-end file development of this system, so that this DAO tool can be used normally and serve various types of DAO organizations.
 
@@ -510,9 +510,9 @@ In this milestone, we mainly completed the document design, UI design, smart con
 |    0c. | Testing Guide                  | Core functions will be  covered by unit tests to ensure. |
 |    0d. | Docker                         | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 |    0e. | Article                        | We will publish an article in our medium introducing the various functions of the DAO NFT Bank System. |
-|     1. | Frontend files | We will provide front-end files and deployment tutorials for this DAO NFT Bank System.The front-end file(s) will interact with ink! smart contracts to make DAO NFT Bank System complete, including initiating DAO NFT Bank, creating NFTs credentials, transfering and staking NFT credentials to loan.  We will also add the detailed front-end deployment tutorials to let developers conveniently deploy the file(s) to ultimately make the interaction with Ink! smart contracts possible. |
-|     2. | ink! Contracts: | We will provide the complete ink! smart contracts of this DAO tool product, covering the main product logic according to the logical architecture diagram, which is also the main work of this milestone. |
-|     3. | demo video | We will provide a demo video of this DAO tool product, showing its basic functions in the form of video. |
+|     1. | Frontend files for DAO NFT Bank System| We will provide front-end files and deployment tutorials for this DAO NFT Bank System.The front-end file(s) will interact with ink! smart contracts to make DAO NFT Bank System complete, including initiating DAO NFT Bank, creating NFTs credentials, transfering and staking NFT credentials to loan.  We will also add the detailed front-end deployment tutorials to let developers conveniently deploy the file(s) to ultimately make the interaction with Ink! smart contracts possible. |
+|     2. | ink! Contracts for DAO NFT Bank System: | We will provide the complete ink! smart contracts of this DAO tool product, covering the main product logic according to the logical architecture diagram, which is also the main work of this milestone. |
+|     3. | demo video for DAO NFT Bank System:| We will provide a demo video of this DAO tool product, showing its basic functions in the form of video. |
 
 
 ## Future Plans
