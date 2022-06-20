@@ -271,11 +271,11 @@ This milestone delivers two distinct deliverables.
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a medium article explaining what was achieved as part of the grant, as well as any additional learnings that we deem important throughout development. https://medium.com/ideal-labs |
 | 1. | Separate Iris node from substrate runtime fork | We migrate the existing pallets used in iris to a new repository based on the substrate node template |
-| 2. | Replace offchain::ipfs bindings with http bindings | We abandon the integration with the embedded rust-ipfs instance in favor of using http bindings which communicate with go-ipfs |
-| 3. | Substrate module: DataSpaces | Create a pallet, similar to iris-assets pallet, that acts as a wrapper around the assets pallet and allows nodes to construct new data spaces and mint data space access tokens. |  
-| 4. | Substrate module: Iris-Assets | Modify the iris-assets pallet to allow nodes to specify data spaces with which to associate their data. Additionally, we implement the logic required to verify that the data owner holds tokens to access the space. |
-| 5. | Contracts | Create the trait definition for a Composable Access Rule and develop a `limited use rule`, allowing a token associated with an asset id to be used only 'n' times. Additionally, we develop the `RuleExecutor` contract which aggregates rules and submits the results on chain. |  
-| 6. | Substrate Module: Iris-Ejection | We develop a module to handle the association of rule exectors with asset classes, the submission of results from rule executors, and management of the data access locking mechanism. |
+| 2. | Substrate module: DataSpaces | Create a pallet, similar to iris-assets pallet, that acts as a wrapper around the assets pallet and allows nodes to construct new data spaces and mint data space access tokens. |  
+| 3. | Substrate module: Iris-Assets | Modify the iris-assets pallet to allow nodes to specify data spaces with which to associate their data. Additionally, we implement the logic required to verify that the data owner holds tokens to access the space. |
+| 4. | Contracts | Create the trait definition for a Composable Access Rule and develop a `limited use rule`, allowing a token associated with an asset id to be used only 'n' times. Additionally, we develop the `RuleExecutor` contract which aggregates rules and submits the results on chain. |  
+| 5. | Substrate Module: Iris-Ejection | We develop a module to handle the association of rule exectors with asset classes, the submission of results from rule executors, and management of the data access locking mechanism. |
+| 6. | Substrate Module: Iris-Session | We modify the data ejection workflow to verify data authorisation via the iris ejection pallet's "lock". |
 | 7. | User Interface | We update the iris-ui repository so as to keep calls to extrinsics in sync with changes to parameters. |
 
 ### Milestone 2 - Proxy/Gateway Nodes
@@ -300,9 +300,10 @@ This milestone delivers two distinct deliverables.
 | 1. | Substrate Module: Iris-Proxy: Proxy Node creation | Implement mechanism to allow nodes to act as a proxy, including verification of network connection speed. |
 | 2. | Substrate Pallet: Iris-Proxy | Implement a layer to assign incoming commands in the DataQueue to be processed by specific proxy nodes. This will function similarly to how validators are selected in a Proof of Stake system. |
 | 3. | Offchain Module: Data Ingestion + Reception Server | Build an offchain client using Go that allows data owners to make data available to proxy nodes and data consumers to receive data streams from proxy nodes |
-| 4. | Substrate Module: Iris-Proxy | Implement offchain service to fetch data from a data-owner's offchain client and stream bytes to a data-consumer's offchain client. Additionally, we reintroduce "hot" storage via IPFS using http bindings to `go-ipfs` nodes and introduce a simplistic encryption schema as mentioned above (which will be replaced by threshold encryption in the future). |
-| 5. | Light Client | We use [Substrate Connect](https://paritytech.github.io/substrate-connect/) to interact with an in-browser light client and ingest/eject data to/from the network. |
-| 6. | User Interface | We update the iris-ui repository so as to keep calls to extrinsics in sync with changes to parameters. |
+| 4. | Replace offchain::ipfs bindings with http bindings | We abandon the integration with the embedded rust-ipfs instance in favor of using http bindings which communicate with go-ipfs |
+| 5. | Substrate Module: Iris-Proxy | Implement offchain service to fetch data from a data-owner's offchain client and stream bytes to a data-consumer's offchain client. Additionally, we reintroduce "hot" storage via IPFS using http bindings to `go-ipfs` nodes and introduce a simplistic encryption schema as mentioned above (which will be replaced by threshold encryption in the future). |
+| 6. | Light Client | We use [Substrate Connect](https://paritytech.github.io/substrate-connect/) to interact with an in-browser light client and ingest/eject data to/from the network. |
+| 7. | User Interface | We update the iris-ui repository so as to keep calls to extrinsics in sync with changes to parameters. |
 
 ### Milestone 3 - Storage System
 
