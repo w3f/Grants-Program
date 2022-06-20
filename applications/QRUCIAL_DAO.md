@@ -164,6 +164,7 @@ The PoC is working, and we want to move forward in developing a live testnet ver
 | 2. | Substrate pallet: ExoSys | Core system that handles the extrinsics that request ExoTool execution. |  
 | 3. | Substrate pallet: AuditorRep | Reputation system for the manual auditors who verify the output recorded by ExoSys. |
 | 4. | Substrate report storage | Includes the tools exogenous to the Substrate system, it is connected through the glue/proxy. |
+| 5. | Substrate pallet: governance | We plan to use a similar governance system as Polkadot, but plan to focus more on a meritocratic side. It needs to be decided if we use the democracy pallet as it is or we modify it to use reputation for weights. |
 
 ### Milestone 2 — Implement Exogenous tooling and hardened node system
 
@@ -180,8 +181,8 @@ The PoC is working, and we want to move forward in developing a live testnet ver
 | 0e. | Article | We will publish an **article**/workshop that explains QRUCIAL DAO (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
 | 1. | ExoSys Deamon | This is the glue system which listens to events on QRUCIAL DAO and executes the requested tools. |
 | 2. | QRUCIAL DAO Frontend | Frontend development for accessing the functionalities. |
-| 3. | ExoTool - Slither | Implement [Slither](https://github.com/crytic/slither) as an exotool for Solidity contracts. |
-| 4. | ExoTool - Octopus | Implement [Octopus](https://github.com/pventuzelo/octopus) as an exotools for bytecodes (WASM and Solidity) |
+| 3. | ExoTool - CCA | Implement [Clippy](https://github.com/rust-lang/rust-clippy) and [Cargo Audit](https://docs.rs/cargo-audit/0.15.1/cargo_audit/) as an exotool package for ink!/WASM smart contract audits. |
+| 4. | ExoTool - Octopus | Implement [Octopus](https://github.com/pventuzelo/octopus) as an exotool for bytecodes (WASM and Solidity) |
 
 
 ## Future Plans
