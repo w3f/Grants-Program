@@ -104,8 +104,6 @@ Blog post detailing the work we undertook with Legal Aid at Work to develop the 
 The software featured a large, branching logic model that meticulously matched the labor laws that were created during the pandemic in the U.S.
 https://legalaidatwork.org/blog/new-chatbot/
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
 - https://github.com/achhibbar
 
 ### Team LinkedIn Profiles (if available)
