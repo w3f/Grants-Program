@@ -3,6 +3,7 @@
 * **Project Name:** Ruby Substate Client
 * **Team Name:** UNI-ARTS
 * **Payment Address:** 0xE7188c7e225D473eE9D99108482Af54952d71527 (USDT)
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/613#issuecomment-1122685293)
 
 ## Project Overview :page_facing_up:
 
