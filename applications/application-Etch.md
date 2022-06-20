@@ -1,15 +1,9 @@
 # W3F Grant Proposal
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
 - **Project Name:** Etch
 - **Team Name:** Generation Spark
 - **Payment Address:** 3B5ZuUZQDE4MdAEaTC8uB8ueaXcXX5R3Vb (BTC)
 - **[Level]** 1
-
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
@@ -21,14 +15,7 @@ Etch is software for organizations to make enduring commitments regarding their 
 
 Having worked previously on Advokat; an NLP powered chatbot that helped workers understand their rights during the COVID-19 Pandemic, it was clear from user input that many organizations didn’t behave in ways that aligned with their mandates. In addition, we feel strongly that inequality and global warming are the two defining issues of our time. We’d love to be able to contribute in some way to help alleviate these issues. Commitments made in marketing copy are like words on a whiteboard: easily erased when they prove to be inconvenient. It’s our hope that Etch makes socially responsible commitments more akin to words carved into stone.
 
-This project will use ink! and substrate to create smart contracts that store the commitments. Create React app and Polkadot js will be used to create a front end to create and maintain these contracts with a simple UI.
-
-Please provide the following:
-
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+This project will use ink! and substrate to create smart contracts that store the commitments. React and Polkadot js will be used to create a front end to create and maintain these contracts with a simple UI.
 
 ### Project Details
 
@@ -66,32 +53,11 @@ Metrics
 - Diversity
 - Executive pay ratio
 
-
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
-
 ### Ecosystem Fit
 
 Our primary audience are business owners and heads of organizations. Particularly those who wish to distinguish themselves from others and attract enthusiastic workers who align with their mission. Additionally, workers who want to understand the commitments an organization has made would also find this useful.
 
 There’s currently a great desire by workers that their employers engage in socially responsible behavior, be held accountable and provide workers with purpose. Etch moves these commitments from websites and talking points to the blockchain to provide more transparency.
-
-
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
 
 ## Team :busts_in_silhouette:
 
@@ -108,8 +74,8 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 
+- **Registered Legal Entity:** 
 
 ### Team's experience
 
@@ -127,10 +93,6 @@ Previous projects include:
 - Implementing ux content design best practices for CourseHero online education platform allowing students to easily connect with expert tutors
 - Designing and building a new version of the San Jose 311 mobile app, allowing citizens to report issues to the City of San Jose, including those who speak a primary language other than English.
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
-
 ### Team Code Repos
 
 DeepTag homepage and web app
@@ -142,14 +104,9 @@ Blog post detailing the work we undertook with Legal Aid at Work to develop the 
 The software featured a large, branching logic model that meticulously matched the labor laws that were created during the pandemic in the U.S.
 https://legalaidatwork.org/blog/new-chatbot/
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
-
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- https://github.com/achhibbar
 
 ### Team LinkedIn Profiles (if available)
 
@@ -165,31 +122,7 @@ Articles and studies that point to meaningful, purpose driven work and CSR stati
 
 We had a conversation with Sebastian Müller about the concept of Etch. He mentioned additional details that he’d like to see in a grant proposal and to start with a level 1 grant.
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
-
 ## Development Roadmap :nut_and_bolt:
-
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-For each milestone,
-
-- make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-- include the amount of funding requested _per milestone_.
-- include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-- provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-- commit to providing Dockerfiles for the delivery of your project.
-- indicate milestone duration as well as number of full-time employees working on each milestone.
-- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
 
 ### Overview
 
@@ -213,7 +146,7 @@ For each milestone,
 | 2d. | Wireframes | Search function that pulls data and reports for existing organizations|
 | 2e. | Wireframes | Search function that pulls commitments for existing organizations|
 | 3. | 2 User tests| Conduct user testing of the prototypes with 2 individuals|
-| 4. | Data flow diagrams| Ink! Smart Contract designs based on the prototypes and user research| 
+| 4. | Data flow & Class Diagrams| Ink! Smart Contract designs based on the prototypes and user research| 
  
 ### Milestone 2 — Implementation
 
@@ -224,8 +157,8 @@ For each milestone,
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 5. | Smart Contracts | Implementation of designs from data flow diagrams and prototypes |
-| 6. | React Native | Implementation of UI prototypes |
-| 7. | Web app | Hosted and functioning web app |
+| 6. | React | Implementation of UI prototypes |
+| 7. | Web App | Hosted and functioning web app |
 
 
 ## Future Plans
