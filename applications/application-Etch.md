@@ -148,7 +148,7 @@ We had a conversation with Sebastian Müller about the concept of Etch. He menti
  
 ### Milestone 2 — Implementation
 
-- **Estimated Duration:** 2 months
+- **Estimated Duration:** 4 months
 - **FTE:**  0.5
 - **Costs:** 6,400 USD
 
