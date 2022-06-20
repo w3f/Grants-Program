@@ -157,6 +157,7 @@ We had a conversation with Sebastian Müller about the concept of Etch. He menti
 | 5. | Smart Contracts | Implementation of designs from data flow diagrams and prototypes |
 | 6. | React | Implementation of UI prototypes |
 | 7. | Web App | Hosted and functioning web app |
+| 8. | Docker |	We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 
 
 ## Future Plans
