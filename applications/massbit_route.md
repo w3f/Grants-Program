@@ -103,6 +103,38 @@ wss://[API ID].eth-mainnet.massbitroute.net/[API key]
   - Create dAPI entry-point and view the quota
   - Deposit fee for dAPI
 
+- Below is the first version UI of the Massbit Web Portal
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/6365545/174591708-1f48182c-1981-4d88-b110-408d2a261889.png" alt="Home Page"/>
+  Massbit Route Home Page
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/6365545/174590330-f3d726c8-45f4-4265-aa6b-0328cc9ab439.PNG" alt="Gateway List"/>
+  Massbit Gateway List
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/6365545/174590460-b9e92f90-fa48-43df-a86a-3e1d86f4b27d.PNG" alt="Gateway Detail"/>
+  Massbit Gateway Detail
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/6365545/174590389-c7cdcf5e-fb89-4d60-a45b-5f81cb38dbe4.PNG" alt="Node List"/>
+  Massbit Node List
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/6365545/174592617-79cc8dec-1e65-4241-bd7d-3eea72d67b42.jpg" alt="Node Detail"/>
+  Massbit Node Detail
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/6365545/174590493-e34f31a5-f179-484f-a8ed-1f653106f3b3.PNG" alt="dAPI Detail"/>
+  dAPI detail
+</p>
+
 |   **8. Community Gateway**
 
 - Gateways are entry-points to the Massbit network, which receive blockchain API requests from dApps. It keeps a list of verified Nodes in the same zone, and forward requests to those nodes. It also stores static content of blockchain requests to reduce the response time for identical requests that come in later
@@ -162,6 +194,57 @@ When a Node or Gateway joins Massbit, it needs to go through different states be
 
 - **Reported**: While nodes/gateways are servicing the network, Fisherman continuously checks for the network stability of each node/gateway. In case a node/gateway does not pass the check, it will be reported and eliminated from the Massbit network.
 
+#### How does Massbit make sure that the nodes actually fulfil the Performance requirements?
+
+- In Milestone 1, we place Fisherman in each regions to check the network performance of new Nodes/Gateways before joining Massbit network. By measuring Rount Trip Time and network bandwidth from it self to the new Node/Gateway, it makes decisions whether the new node is eligible for joining the network. 
+- We are aware that this approach has many drawbacks and the evaluation proccess is not fair for all new nodes. The first version of Fisherman is a prototype for us to test the functionality of all Massbit components together.
+
+- In Milestone 2, Fisherman is modified to be more decentralized and more efficient. All Massbit Gateways have Fisherman component included, which is responsible for ensuring the neighbor Nodes and Gateways are functional. Each Fisherman talks to a Scheduler in its region and perform assgined tasks. 
+
+1. When a Node/Gateway needs to join Massbit network, the Schedulers requires all active Gateways in the network to measure Round Trip Time (RTT) and network bandwidth to the new Node/Gateway. 
+2. Based on the result of RTT and network bandwidth from active Gateways to the new Node/Gateway, if they satisfy the RTT and network bandwidth baseline, the new Node/Gateway is verified. The Node Provider can stake the new node with MBT tokens and serve traffic. In case of a new Node, it also needs to be able to forward test RPC requests to its attached blockchain datasource and returns back valid RPC response.
+3. Once the new Node/Gateway is staked and actively serving traffic, the Scheduler will inform the Massbit Core to update the network configuration for the whole network with the new node. Based on measured RTTs and network bandwidth measure from each active Gateway to the new Node/Gateway:
+   - The new Gateway will receive a new network configuration to pair and forward traffic to low latency/nearby existing Nodes
+   - The new Node will receive a new network configuration to receive traffic from nearby Gateways
+4. The previous process will repeat periodically to update Gateway and Node pairings with the most optimized paths and make sure the new Node/Gateway remain functional in the Massbit network.
+
+- The specific values for ideal RTT and network bandwidth are to be determined as Massbit team needs to perform more benchmark and testing for further evaluation.
+- The Scheduler is designed to assign multiple checks/tasks to Fishermans on active Gateways. Depend on our findings, more tasks may be added after our internal testing and during testnet phase.
+
+#### How does Massbit system deal with denial-of-service (DDoS) attacks?
+
+- Malicious actors will find a way to disrupt Massbit network in order to cause outage and interuption for Web3/DApp. For Massbit Gateways and Nodes, the only required open port is 443 to minimize the attack surface to Massbit network. What counter-measurements does Massbit implement to prevent this problem?
+
+- Massbit Route is designed as distributed network of Nodes and Gateways. As Massbit network grows in the number of Nodes/Gateways in 6 different regions, high network load is scattered across different paths to reach a specific blockchain RPC node, which will reduce the network congestion and mitigate the effect of DDOS attacks.
+
+- Protection at Node level:
+
+  - Massbit nodes only need to receive traffic from nearby Gateways with low RTT and high network bandwidth. For that reason, HTTPS connections are only whitelisted for those nearby Gateways.
+
+- Protection at dAPI level:
+
+  - Attacker can obtain Massbit dAPI URL from Web3/DApps source code and perform volume-based DDoS at Layer 7 on the URL with the desire of saturating the bandwidth of the whole network. Each Massbit dAPI created has a default rate limiting configuration of 100 requests/sec which is applied on all Gateways that will be serving traffic for the specific dAPI URL. The consumers can adjust this number from the Web Portal based on their usage.
+
+  - When the dAPI URL is called, the traffic is handled by a Gateway which is in the same zone as the requester's source IP. If the DDoS attack is lauched from many different botnets in a single or multiple Geo resgions to the dAPI endpoint, their traffic is served by multiple Massbit Gateways, which mitigate the impact of high-volume traffic. Once the request/sec threshold reaches on a Gateway, it start to refuses subsequent incoming requests. As a result, Massbit Gateways prevents volume-based DDoS traffic from entering Massbit network, and reaching underlying Massbit Nodes/RPC nodes. The more Gateways are deployed across regions, the better Massbit network sustain volume-based DDoS attack
+
+  - The Fisherman component of the nearby Gateways periodically check its neighbor for liveness, and inform Massbit Core to update the routing/DNS configuration for the entire network to instruct healthy Gateways to serve incoming RPC requests within a zone. If a Gateway's resources are overwhelmed and can no longer serve request due to DDoS protocol attacks such as SYN flood, or IP spoofing, Massbit Core updates with Gateway Manager to stop resolving the host portion in the dAPI URL to the unhealthy Gateway. This will add redundacy and ensure Massbit network remain functional in the event of some Gatways are taken down due to DDoS attack.
+
+  - The attacker can also create multiple Massbit dAPI entries to increase the attack surface, and amplify the magnitude of the attack. In order for the attacker's volume-based network traffic to penerate into Massbit network and reached Massbit Nodes and RPC nodes, they will need to deposit MBT token to their Massbit dAPI and receive a specific quota according to the deposit amount. If the dAPI quota reaches 0, Gateways stop serving traffic for the dAPI URL. This also discourage the attacker as there is cost involved in launching the attack, and the Node Providers earns reward for maintain the network.
+
+- Protection at Gateway level:
+
+  - The attacker can focus on a specific Gateway IP and perform a direct DDoS attack without using the dAPI URL.
+
+  - At Layer 3 and 4, monitoring network health and anomaly detection is one of our team's primary focus for DDoS mitigation strategy. Each Gateway and Node will be installed with a monitoring client which will report network statistics, network flow and top talkers. Known DDoS attack patterns are rejected and alerted to our internal team's monitoring service with pre-configured patterns/rules such as certains IPs causing peaks in network, open connections and resource depletion. 
+
+  - Additionally, based on our observation, we can also implement a new traffic configuration policy, and allow Massbit Core to update the entire network of Massbit Gateways/Nodes to defend against malicious DDoS traffic. DDoS protection at Layer 3/4 for Massbit network is a challenging task with unexpected and sophisticated threats, so we will have to take both pro-active and re-active approach to keep the network healthy.
+
+- Other counter-measurements:
+  
+  - Gateway Manager is also a crucial part of Massbit network as it the authoritative DNS component of the network. DNS components are prone to reflection and amplification attack, which accelerate the rate of malformed traffic to deplete the server resources. We will utilize existing third-party service with Deep Packet Inspection capability, DNS query whitelisting and rate-limiting to add a layer of defense and DDoS mitigation to this component.
+
+  - Massbit Core and Massbit web portal are also placed behind a Web Application Firewall and Layer 3 Network Firewall  to protect against DDOS and common web application attacks.
+
 #### Tokenomic of MBT
 
 - MBT tokens will be used within the Massbit network by Node Providers, dAPI Consumers, and Delegators. In order to join the Massbit network, Node Providers need to stake their Massbit Nodes and Gateways to become actively serving blockchain requests in Massbit. In return, Node Providers will receive MBT token rewards from serving requests from dAPI Consumers. 
@@ -174,14 +257,14 @@ When a Node or Gateway joins Massbit, it needs to go through different states be
 
 #### Project Technology Stacks
 
-Rust
-Substrate
-Node.js
-NGINX (Open Resty)
-Lua
-Docker
-Vue.js
-Polkadot.js
+- Rust
+- Substrate
+- Node.js
+- NGINX (Open Resty)
+- Lua
+- Docker
+- Vue.js
+- Polkadot.js
 
 ### Ecosystem Fit
 
@@ -281,11 +364,11 @@ Polkadot.js
 | 0.e    | Article                                      | We will publish an article that explains the technical details of Massbit Routing mechanism, Node/Gateway verification process and how individuals/communities around the world can run Nodes and Gateways and participate in service Massbit network |
 | 1.     | Massbit Core Implementation (Lua)            | We will implement Massbit Core which is responsible for ochestrating, generating installation scripts and routing configuration for all Nodes and Gateways within Massbit network                                                                     |
 | 2.     | Gateway Manager Implementation (C)           | We will implement Gateway Manager as an Authoritative DNS server for Massbit network                                                                                                                                                                  |
-| 3.     | Session Manager (Rust)                       | We will implement Session Manager to control and grant session keys to Massbit Community Gateways                                                                                                                                                     |
-| 4.     | Fisherman - Node Verification Service (Rust) | We will implement Fishserman which will be also included as part of Massbit Gateway. This allows the Node/Gateway to be verified and with the others before join Massbit network                                                                      |
-| 5.     | Massbit Nodes and Gateway  (Lua)             | We will implement Massbit Node and Gateway with Open Resty framework. These components are responsible for routing API requests to RPC blockchain nodes nodes within each zone                                                                        |
-| 6.     | Stats and monitoring system implementation   | We will implement a metric collection module to observe traffic and network performance to make improvement/adjustment to routing mechanism as needed                                                                                                 |
-| 7.     | Web Portal implementation  (Vue.js)          | We will implement the front-end web portal to allow user interaction with Massbit such as creating new node/gateway and generate installation scripts, or staking and claiming token rewards                                                          |
+| 3.     | Fisherman - Node Verification Service (Rust) | We will implement the first version of Fishserman. This allows the Node/Gateway to be verified with Fisherman in each  before join Massbit network                                                                      |
+| 4.     | Massbit Nodes and Gateway  (Lua)             | We will implement Massbit Node and Gateway with Open Resty framework. These components are responsible for routing API requests to RPC blockchain nodes nodes within each zone                                                                        |
+| 5.     | Web Portal implementation  (Vue.js)          | We will implement the front-end web portal to allow user interaction with Massbit such as creating new node/gateway and generate installation scripts, or staking and claiming token rewards                                                          |
+| 6.     | Pallet Implementation for Consumer dAPI fee and reward distribution for providers | We will implement reward distribution from Consumer fee to Node providers based on the number of API requests served by each Provider.                                                                                                                                                                                                       |
+| 7.     | Pallet Implementation for Node Provider/Delegator staking and reward distribution | We will implement the Node/Gateway Staking feature for Providers and Delegators. In addition, the reward for each Node staking can be also claimed and sent to stakers' wallets                                                                                                                                                              |
 
 ### Milestone 2 - Implementation for substrate-based Massbit chain
 
@@ -300,17 +383,17 @@ Polkadot.js
 | 0.c    | Testing Guide                                                                     | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                            |
 | 0.d    | Docker release                                                                    | We will provide docker files to simulate Massbit network that can be used to test all of the functionality delivered with this milestone                                                                                                                                                                                                     |
 | 0.e    | Article                                                                           | We will publish an article that explains the usage of MBT token for dAPI and Node/Gateway staking, the reward distribution mechanism, and the Node Provider incentives to increase the number of Nodes and Gateway for high-traffic zones in Massbit Route network                                                                           |
-| 1.     | Fisherman Pallet - Collect Provider Performance Oracle                            | With performance metrics observed from testnet, we will  use Subtrate Offchain Worker to allow the community to operate this component under the Proof of Authority concept. This will provide a better and decentralized Node Approval Process as Fisherman is no longer a single component controlled by the Massbit team.                 |
-| 2.     | Node Provider staking Pallet - Provider incentive pot                             | At the early stage of the Massbit network, the number of Consumers will be low, which leads a small reward for Node Providers. The Provider Incentive Pot is a module with 10% of the total token supply locked and will be allocated 0.01% of the remaining balance for each Era to incentivize Node Providers to maintain network service. |
-| 3.     | Pallet Implementation for Consumer dAPI fee and reward distribution for providers | We will implement reward distribution from Consumer fee to Node providers based on the number of API requests served by each Provider.                                                                                                                                                                                                       |
-| 4.     | Pallet Implementation for Node Provider/Delegator staking and reward distribution | We will implement the Node/Gateway Staking feature for Providers and Delegators. In addition, the reward for each Node staking can be also claimed and sent to stakers' wallets                                                                                                                                                              |
+| 1.     | Fisherman Pallet - Collect Provider Performance Oracle                            | With performance metrics observed from testnet, we will  use Subtrate Offchain Worker to allow the community to operate this component under the Proof of Authority concept. This will provide an unbiased, fair and decentralized Node Approval Process as Fisherman is no longer a single component in each zone controlled by the Massbit team. Active Gateways are also automatically update to include this component                |
+| 2.     | Session Manager (Rust)                       | We will implement Session Manager to control and grant session keys to Massbit Community Gateways                                                                                                                                                     |
+| 3.     | Node Provider staking Pallet - Provider incentive pot                             | At the early stage of the Massbit network, the number of Consumers will be low, which leads a small reward for Node Providers. The Provider Incentive Pot is a module with 10% of the total token supply locked and will be allocated 0.01% of the remaining balance for each Era to incentivize Node Providers to maintain network service. |
+| 4.     | Stats and monitoring system implementation   | We will implement a metric collection module to observe traffic and network performance to make improvement/adjustment to routing mechanism, Consumer dAPI  as needed                                                                                                 |
 
 ## Future Plans
 
 - Our testnet phase is currently open to let our community experiment with Massbit Route core routing functionality with ETH and DOT blockchain nodes. Within the scope of Milestone 1, we want to take this opportunity to observe the following to release the stable version of the Massbit Route blockchain distribution network:
 
   - User experience with Node/Gateway installation process
-  - Node approval process with a fair evaluation of response latency in different locations within a zone
+  - Node approval process with a fair evaluation of RTT and network bandwidth by distributed Fisherman component at different locations within a zone
   - Accuracy in IP Geolocation for Nodes/Gateways
     - This ensures Nodes/Gateways are approved and benchmarked by Fisherman in the right zone
     - Detect inaccuracy in IP Geolocation database by surrounding gateways
