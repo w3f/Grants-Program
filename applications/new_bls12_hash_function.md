@@ -108,11 +108,11 @@ https://link.springer.com/article/10.1007/s10623-022-01012-8
 
 - **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):** 1 FTE
-- **Total Costs:** 25,000 USD
+- **Total Costs:** 15,000 USD
 
 ### Milestone 1 — An implementation in Sage
 
-- **Estimated duration:** 2 months
+- **Estimated duration:** 3 months
 - **FTE:**  1
 - **Costs:** 10,000 USD  
 
@@ -129,24 +129,9 @@ To be definite, let me use the notation of my article https://link.springer.com/
 
 ### Milestone 2 — A non-constant-time implementation in Rust
 
-- **Estimated duration:** 2 months
+- **Estimated duration:** 3 months
 - **FTE:**  1
 - **Costs:** 5,000 USD  
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache License, Version 2.0 and MIT license |
-| 0b. | Documentation | I will provide **inline documentation** of the code. |
-| 0c. | Testing Guide | |
-| 0d. | Docker | I do not intend to deliver this, because the project is research oriented. |
-| 0e. | Article | I will cite the implementation and I will thank Web3 Foundation for its financial support in my new article https://eprint.iacr.org/2021/1082. I submitted this article to Journal of Cryptology. At the moment, it is under review.
-| 1. | Implementation | Rust non-constant-time implementation of the new hash function.
-
-### Milestone 3 — A constant-time implementation in Rust
-
-- **Estimated duration:** 2 months
-- **FTE:**  1
-- **Costs:** 10,000 USD  
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -155,15 +140,13 @@ To be definite, let me use the notation of my article https://link.springer.com/
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. I will describe how to run these tests. |
 | 0d. | Docker | I do not intend to deliver this, because the project is research oriented. |
 | 0e. | Article | I will cite the implementation and I will thank Web3 Foundation for its financial support in my new article https://eprint.iacr.org/2021/1082. I submitted this article to Journal of Cryptology. At the moment, it is under review.
-| 1. | Implementation | Rust constant-time implementation of the new hash function.
-
-
-...
-
+| 1. | Implementation | Rust non-constant-time implementation of the new hash function. It is suggested to use the library arkworks (https://github.com/arkworks-rs/curves) as a base.
 
 ## Future Plans
 
-The new hash function appears to be optimal, because it performs only one exponentiation in the basic field Fp. In other words, since it is highly unlikely that there is a hash function to an elliptic curve without exponentiations at all (even if it is supersingular), the result of my article seems to be unimprovable. Thus I hope that the implementation of my hash function will be interesting not only to you, but also to all blockchain projects that involve the BLS signature.
+The new hash function appears to be optimal, because it performs only one exponentiation in the basic field Fp. In other words, since it is highly unlikely that there is a hash function to an elliptic curve without exponentiations at all (even if it is supersingular), the result of my article seems to be unimprovable. Thus I hope that the implementation of my hash function will be interesting not only to you, but also to all blockchain projects that involve the BLS signature. 
+
+It is also worth noting that the new hash function is in fact relevant for any ordinary (i.e., non-supersingular) elliptic Fq-curve y^2 = x^3 + b (of j-invariant 0) such that the square root of b lies in Fq. Here Fq is an arbitrary finite field (of characteristic p > 3) for which 3 divides q-1, but 27 does not. Therefore, our implementation can be easily extended to such curves and fields. The BLS12-381 curve corresponds to the case when q = 10 (mod 27) and b is not a cubic residue in Fq. The current implementation allows to change q and b satisfying the given conditions.
 
 ## Additional Information :heavy_plus_sign:
 
