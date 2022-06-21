@@ -49,6 +49,8 @@ Finally, LootMogul's seed round is funded by billion-dollar web 3 crypto compani
 - 3D Model Design
 - Polygon Matic
 - Strapi CMS
+- Rust 
+- Solidity
 
 ### Ecosystem Fit
 
@@ -174,9 +176,9 @@ Vibhu Sirvastava is in Community Management at Lootmogul with 11+ years of exper
 |    0d. | Video                      | We will provide a video demonstration that will illustrate all of the functionality delivered with this milestone.                                                                                                                                                                                                  |
 |    0e. | Article                     | We will publish an **article**/workshop/gitbook that explains our application workflow as well as technical details.                                                                                                                                                                                                   |
 |    1. | Core Foundation and Infrastructure Setup                     |  * GitHub/Lab Polkadot dev branch & configure supporting APIs. <br />                                                                    * Finalize requirements with internal game developers & KOL                                                                                                                                                                                                                                                                                                   |
-|    2. | Smart Contract libraries for NFT Marketplace               | * Ability to mint meta NFTs using Polkadot.<br /> * Ability to set royalty, pricing, KOL & guild specific tracking on Polkadot                                                          |
-|    3. | Stablecoin integration with Polkadot               | * Stable coin transaction for game in-app purchases. <br /> * Stable coin integration for all metaverse NFT and land sale                                                                                                                                 |
-|    4. | Browser extension of Kaikas wallet                      | * Web 3 integration for the Kaikas wallet. <br />  * NFT/Meta/Game transaction authorization and wallet tracking                                                                                                                                                                                                |
+|    2. | Smart Contract libraries for NFT Marketplace               | * Ability to mint meta NFTs using EVM pallet  for writing smart-contracts offered by Frontier. we <br /> * Ability to set royalty, pricing, KOL & guild specific tracking on Polkadot                                                          |
+|    3. | Stablecoin integration with Polkadot               | * aUSD Stable coin transaction for game in-app purchases. <br /> * aUSD Stable coin integration for all metaverse NFT and land sale                                                                                                                                 |
+|    4. | Browser extension of polkadot-js wallet                      | * Web 3 integration for the polkadot-js wallet. <br />  * NFT/Meta/Game transaction authorization and wallet tracking                                                                                                                                                                                                |
 |    5. | Fractional stadium and land ownership                     | * Integrate in-game fractional NFT ownership. <br /> * Integrate stadium fractional ownership                                                                                                                                |
 |     6. | Proof of contribution platform integration        | * Evaluate all possible proof of contribution integration for LootMogul. <br /> * Select specific paths for metaverse and in-game staking/rewards mechanics |
 |     7. | Game development and Guild integration | * Selective on chain transactions migrations for game dev. <br /> * Integrate scholar/community managers rewards for Guilds                                                                  |
