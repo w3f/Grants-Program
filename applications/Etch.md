@@ -163,8 +163,8 @@ We had a conversation with Sebastian Müller about the concept of Etch. He menti
 ## Future Plans
 
 - Have Etch work for real-world businesses. 
-- Add a secure log-in and the ability to upload business documents that verify identity and ownership. This will avoid users adding businesses they have no links to. -
-- Integrate with DAOs to automatically pull relevant information for automated metrics calculations.
+- Add a secure log-in and the ability to upload business documents that verify identity and ownership. This will avoid users adding businesses they have no links to.
+- Integrate with DAOs to automatically pull relevant information for automated calculation of metrics.
 
 
 ## Additional Information :heavy_plus_sign:
