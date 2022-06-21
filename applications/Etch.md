@@ -36,7 +36,7 @@ Stored commitments
 - Paid sick leave
 - Charitable donations
 - Employee profit sharing
-- Green energy generation
+- Green energy generation/usage
 - Vegetarian/Vegan meal options
 - No blocking of unionization efforts
 
