@@ -151,7 +151,7 @@ Notes: Please note that the list of pallets is not exhausted. Some pallets may n
 - **FTE:**  3
 - **Costs:** 15,000 USD
 
-The main delivery of this milestone will allow an approved governance proposal on the Societal chain to execute a smart contract on Moonbeam Alpha TestNet. 
+The main delivery of this milestone will allow an approved governance proposal on the Societal chain to execute a smart contract on Moonbeam Alpha TestNet. The delivery will also include minor UI updates, to allow the user to interact with the pallet.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -161,6 +161,7 @@ The main delivery of this milestone will allow an approved governance proposal o
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a tutorial that explains how to setup a governance proposal that will execute contracts cross-chain. |
 | 1. | Substrate module: Governance Execution | This substrate module will be a loosely coupled pallet to the existing governance pallet. We will make this into a separate pallet to allow for governance proposals to take place that do not require a smart contact to execute after approval. |  
+| 2. | Client Modules | Minor UI updates will be made, to allow the user to interact with the pallet. |
 
 Notes:
 - This will be created for Moonbeam's testnet - Moonbase Alpha, so we do not have to win a parachain slot before testing the pallet
@@ -173,7 +174,7 @@ Notes:
 - **FTE:**  3
 - **Costs:** 15,000 USD
 
-The main delivery of this milestone will be the creation of a 'SaaS' Pricing pallet. Transactions on the Societal chain will always be free to the user for the creation of proposals and voting on proposals. However, once the DAO is large enough or requires certain functions, the Societal platform will require monthly payments for those features, which will come directly from the DAOs treasury. This will bring current web2 pricing models to web3, increasing user experience and ease of adoption. An overview of the initial plans can be found [here](https://docs.sctl.xyz/societal-platform/pricing)
+The main delivery of this milestone will be the creation of a 'SaaS' Pricing pallet. Transactions on the Societal chain will always be free to the user for the creation of proposals and voting on proposals. However, once the DAO is large enough or requires certain functions, the Societal platform will require monthly payments for those features, which will come directly from the DAOs treasury. This will bring current web2 pricing models to web3, increasing user experience and ease of adoption. An overview of the initial plans can be found [here](https://docs.sctl.xyz/societal-platform/pricing). The delivery will also include minor UI updates, to allow the user to interact with the pallet.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -183,6 +184,7 @@ The main delivery of this milestone will be the creation of a 'SaaS' Pricing pal
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article that gives an overview of the pricing plans and the features that are associated with each plan. |
 | 1. | Substrate module: SaaS Pricing | We will create a Substrate module that will require DAOs to pay a monthly subscription fee if they want to have a certain number of users in their DAO or access to certain functions. The payment for the monthly subscriptions will come directly from the DAOs wallet and not the individual members. Transactions on the Societal platform will always be free for the individual users for the creation of proposals and voting on proposals. |  
+| 2. | Client Modules | Minor UI updates will be made, to allow the user to interact with the pallet. |
 
 Implementation notes:
 - To make this work, the SaaS pricing pallet would do the following:
