@@ -118,7 +118,11 @@ There are two storage layers in Iris, a 'hot' storage layer which is supported b
 
 ![hot-cold-storage](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/hot_cold_storage.png)
 
-We will build a generic pallet that allows for any given storage backend to be configured for use with Iris. The intention behind this is that it may allow the network to function independently of any one given storage solution. Initially, we will build a pallet which acts a connector to the Crust network via XCM. The pallet will expose two main extrinsics, a 'read' and a 'write' extrinsic. Additionally, we will demonstrate how this can be used to allow connections to other storage backends by also building a connector to an external, centralized data store.
+We will build a generic pallet that allows for any given storage backend to be configured for use with Iris. The intention behind this is that it may allow the network to function agnostically of any one given storage solution. The pallet will expose two main extrinsics, a 'read' extrinsic and a 'write' extrinsic, which send commands to proxy nodes to either ingest data from a configured storage system into hot storage, or to store data available in hot storage into cold storage. This approach allows us to support multiple storage backends, as well as provides us the freedom to implement our own storage system in the future without impacting the user experience.
+
+Initally, we will demonstrate how this can be used to allow connections to an external storage backend by adapting the connector to an external, centralized data store (e.g. either a locally running file server or AWS S3), which may be useful in B2B/C solutions who want to maintain ownership of their own storage system.
+
+To realize a decentralized solution to storage, we will use the same approach to implement a pallet which acts as a connector to the Crust network via XCMP. Explicitly, we intend to use the [xStorage](https://github.com/crustio/crust/blob/parachain/shadow/crust-collator/pallets/xstorage/src/lib.rs) pallet provided by the crust project, which allows for us to place storage orders on the Crust network. Crust IPFS nodes will then fetch data, as based on the given CID and Multiaddress, from an Iris proxy node. Further, we will integrate with the [xTokens](https://github.com/open-web3-stack/open-runtime-module-library/tree/master/xtokens) pallet to enable the usage of our native token (IRIS) to pay for storage fees. The interactions with Crust (and this would be the same for any given storage system) will be abstracted away from the user through the generic storage connector pallet, which exposes read/write functionality. We intend to follow the approach described [here](https://wiki.crust.network/docs/en/buildCrossChainSolution#i-xcmp-based-substrate-pallet) as well as open a dialogue with the Crust team in order to ensure all testing is sufficient and successful. We enable proxy nodes to ingest data from cold storage by reading from the IPFS gateway in which Crust has stored the data.
 
 In order to properly test and verify this, we will also setup our own relay chain with both Iris and Crust deployed as parachains.
 
@@ -300,10 +304,9 @@ This milestone delivers two distinct deliverables.
 | 1. | Substrate Module: Iris-Proxy: Proxy Node creation | Implement mechanism to allow nodes to act as a proxy, including verification of network connection speed. |
 | 2. | Substrate Pallet: Iris-Proxy | Implement a layer to assign incoming commands in the DataQueue to be processed by specific proxy nodes. This will function similarly to how validators are selected in a Proof of Stake system. |
 | 3. | Offchain Module: Data Ingestion + Reception Server | Build an offchain client using Go that allows data owners to make data available to proxy nodes and data consumers to receive data streams from proxy nodes |
-| 4. | Replace offchain::ipfs bindings with http bindings | We abandon the integration with the embedded rust-ipfs instance in favor of using http bindings which communicate with go-ipfs |
-| 5. | Substrate Module: Iris-Proxy | Implement offchain service to fetch data from a data-owner's offchain client and stream bytes to a data-consumer's offchain client. Additionally, we reintroduce "hot" storage via IPFS using http bindings to `go-ipfs` nodes and introduce a simplistic encryption schema as mentioned above (which will be replaced by threshold encryption in the future). |
-| 6. | Light Client | We use [Substrate Connect](https://paritytech.github.io/substrate-connect/) to interact with an in-browser light client and ingest/eject data to/from the network. |
-| 7. | User Interface | We update the iris-ui repository so as to keep calls to extrinsics in sync with changes to parameters. |
+| 4. | Substrate Module: Iris-Proxy | Implement offchain service to fetch data from a data-owner's offchain client and stream bytes to a data-consumer's offchain client. Additionally, we reintroduce "hot" storage via IPFS using http bindings to `go-ipfs` nodes and introduce a simplistic encryption schema as mentioned above (which will be replaced by threshold encryption in the future). |
+| 5. | Light Client | We use [Substrate Connect](https://paritytech.github.io/substrate-connect/) to interact with an in-browser light client and ingest/eject data to/from the network. |
+| 6. | User Interface | We update the iris-ui repository so as to keep calls to extrinsics in sync with changes to parameters. |
 
 ### Milestone 3 - Storage System
 
@@ -322,11 +325,11 @@ This milestone delivers two distinct deliverables.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We will provide a demo video and a manual testing guide, including environment setup instructions. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a medium article explaining what was achieved as part of the grant, as well as any additional learnings that we deem important throughout development. https://medium.com/ideal-labs |
-| 2. | Substrate Module: Generic Storage Service pallet | We build a generic pallet with read and write capabilities which can be modified to support multiple storage systems. |
-| 3. | Substrate Module: Centralized Storage System | We build a storage system connector based on (2) which can read and write data to a centralized storage system (i.e. an AWS S3 or equivalent local file server). |
-| 4. | Substrate Module: Integration with Crust | We use the pallet developed during part 2 to use XCM to store and retrieve data in the Crust network. |
-| 5. | Test Environment Setup | We deploy a relay chain with Iris and Crust as parachains and ensure that XCM messages are properly relayed between chains. |
-| 6. | Testnet | We deploy the Iris testnet. |
+| 1. | Substrate Module: Generic Storage Service pallet | We build a generic pallet with read and write capabilities which can be modified to support multiple storage systems. |
+| 2. | Substrate Module: Centralized Storage System | We build a storage system connector based on (2) which can read and write data to a centralized storage system (i.e. an AWS S3 or equivalent local file server). |
+| 3. | Substrate Module: Integration with Crust via the xStorage and xTokens pallets | We use the pallet developed during part 2 to use XCMP to store data in the Crust network, based on the approach outlined [here](https://wiki.crust.network/docs/en/buildCrossChainSolution#i-xcmp-based-substrate-pallet). |
+| 4. | Test Environment Setup | We deploy a relay chain with Iris and Crust as parachains and ensure that XCM messages are properly relayed between chains. |
+| 5. | Testnet | We develop our testnet chainspec and deploy the Iris testnet. |
 
 ## Milestone 4 - iris.js Javascript SDK
 
