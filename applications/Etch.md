@@ -7,13 +7,13 @@
 
 ## Project Overview :page_facing_up:
 
-An organization’s social responsibility can take the form of a wide variety of commitments. These can range from having a diverse workplace to increasing green energy use. It’s easy for an organization to make claims regarding how they’re run, but these often exist only as marketing copy. Etch is a platform that allows organizations to make socially responsible commitments and have them written indelibly to the blockchain using smart contracts. This will make an organization's stated goals regarding social responsibility transparent and permanent. It will also provide a place for workers to see what an organization stands for.
+An organization’s social responsibility (CSR) can take the form of a wide variety of commitments. These can range from having a diverse workplace to increasing green energy use. It’s easy for an organization to make claims regarding how they’re run, but these often exist only as marketing copy. Etch is a platform that allows organizations to make socially responsible commitments and have them written indelibly to the blockchain using smart contracts. This will make an organization's stated goals regarding social responsibility transparent and permanent. It will also provide a place for workers to see what an organization stands for.
 
 ### Overview
 
 Etch is software for organizations to make enduring commitments regarding their social responsibility.
 
-Having worked previously on Advokat; an NLP powered chatbot that helped workers understand their rights during the COVID-19 Pandemic, it was clear from user input that many organizations didn’t behave in ways that aligned with their mandates. In addition, we feel strongly that inequality and global warming are the two defining issues of our time. We’d love to be able to contribute in some way to help alleviate these issues. Commitments made in marketing copy are like words on a whiteboard: easily erased when they prove to be inconvenient. It’s our hope that Etch makes socially responsible commitments more akin to words carved into stone.
+Having worked previously on Advokat, an NLP powered chatbot that helped workers understand their rights during the COVID-19 Pandemic, it was clear from user input that many organizations didn’t behave in ways that aligned with their mandates. In addition, we feel strongly that inequality and global warming are the two defining issues of our time. We’d love to be able to contribute in some way to help alleviate these issues. Commitments made in marketing copy are like words on a whiteboard: easily erased when they prove to be inconvenient. It’s our hope that Etch makes socially responsible commitments more akin to words carved into stone.
 
 This project will use ink! and substrate to create smart contracts that store the commitments. React and Polkadot js will be used to create a front end to create and maintain these contracts with a simple UI.
 
@@ -137,7 +137,7 @@ We had a conversation with Sebastian Müller about the concept of Etch. He menti
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0. | License | Apache 2.0 |
-| 1. | 3 User research interview|  Interview 3 business owners/organization leaders to identify user needs in detail|
+| 1. | 3 User research interviews|  Interview 3 business owners/organization leaders to identify user needs in detail|
 | 2a. | Wireframes | 3 business archetypes with ability to change template values|
 | 2b. | Wireframes | Ability to create and store an organization’s employees and data|
 | 2c. | Wireframes | Organization report of metrics based on stored data|
