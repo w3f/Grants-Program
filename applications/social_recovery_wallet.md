@@ -181,7 +181,7 @@ For each milestone, we will deliver documentation and a video.
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 1. | QR Code Format | Flutter library for scanning polkadot.{js} QR codes |  
-| 2. | Node Selector | User can configure which network they are connecting |  
+| 2. | Node Selector | User can configure which network they are connecting to |  
 | 3. | Sign and Broadcast | Integrate Sign and Broadcast for Flutter |  
 | 4. | Deployment | Wallet deployed to iOS and Android app stores |  
 
