@@ -497,3 +497,4 @@
 | [Tribal Protocol Labs](https://www.tribal.fyi/) | Tribal Protocol Smart Contract Development | [GitHub](https://github.com/tribal-protocol) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Yahuang Wu](https://github.com/wuyahuang) | Dual-Key Stealth Address Protocol | [GitHub](https://github.com/wuyahuang) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [UNIVERSALDOT FOUNDATION](https://universaldot.foundation) | Universaldot.me Phase 2 | [GitHub](https://github.com/UniversalDot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Societal Labs Ltd.](https://www.sctl.xyz/) | Societal - MVP - Phase 1 | [GitHub](https://github.com/sctllabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
