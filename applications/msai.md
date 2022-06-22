@@ -12,26 +12,38 @@
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview
-A blockchain API built on Substrate with a level of encryption built into smart contracts written for Ink!/ WebAssembly.
-The plan is to integrate ID verification and data storage through a substrate api eliminating the need for 
-integrating security and storage for every application that that wishes to use this new parachain module, providing both anonymity and data sharing capability. We want to make data a first class citizen of the Polkadot ecosystem.
-Unlike centralized health platforms, we don't store patients health records on a database. Instead, it's stored on a layer of the blockchain, with anonymous tags such that no user identified private data would be exposed 
-during the whole process. To encourage adoption , both users and publishers of health can receive some amount of token as rewards from any sponsor on the platform. This would be determined in subsequent phases of the project.
+An easy-to-use blockchain API developed on Substrate with a level of encryption built into smart contracts written for Ink!/ WebAssembly.
+We want to implement an api that allows natively storing and sharing health data thereby eliminating the need for a central database.
+The idea is integrate ID verification and data storage through a substrate node api using a sidecar approach allowing
+other app developers within the health ecosystem to interoperate without having to design their own backend. 
+Integrating security and storage for every application is a major pain point which is not addresses by any web3 chains natively. 
+In particular the api will  provide both anonymity and data sharing capability using a standardized format, making data a first class citizen of the Polkadot ecosystem.
 
-Initially the user would be our own health app. An NFT based data exchange infrastructure for data ownership and medical data submission. The api would be public so that any other apps such that deal with medical data can use this parachain.
- Our teams' relevance to this proposal is years of research and development on medical data and expertise of data collection extraction and analysis with domain experts.
+Unlike centralized health platforms, the idea is not to not store patients health records on a database. Instead, it's stored on a layer of 
+the blockchain, with anonymous tags such that no user identified private data would be exposed 
+during the whole process and various layers of encryption and anonymity would be provided in subsequent phases. 
+This platform would allow game theory incentives and smart contract based marketplaces for data trading:
+To encourage adoption , 
+
+* various mechanisms for incentives could be developed as smart tokens or native token of the parachain linked to DOT.
+* users and publishers of health can receive some amount of token as rewards from any sponsor on the platform.
+
+Initially the main user would be our own health app. An NFT based data exchange infrastructure for data ownership and medical data submission. 
+The api would be public so that any other apps such that deal with medical data can use this parachain.
+Our teams' relevance to this proposal is years of research and development on medical data and expertise of data collection extraction and analysis with domain experts.
 Further Dr Salman Marvasti has mutliple years experience working with blockchain technologies both for cross border fintech as well as for data analysis through storing all the chains data in AWS Neptune and AWS Aurora API based databases.
 [A general introduction to data sharing can be found in our notion blog](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2).
 
+This is a phased plan with part of the design to be implemented in this first phase, which each phase being usable .
 ### Overview
 
 Please provide the following:
 
-Project Name Medical Stats and AI or MARVSAI - we are developing an app where users store any medical documents from various clinics through scanning with camera app, using propriatory ai and automatic data extraction.
+Project Name Medical Stats and AI Health Blockchian - we are developing an app where users store any medical documents from various clinics through scanning with camera app, using propriatory ai and automatic data extraction.
 We would like to standardize storage of this data on the blockchain.
 We intend to provide a reusable parachain with medical data api ready for use by anyone within the Polkadot ecosystem.
 - This proposal is for creation of medical specific blockchain API to securely store the data collected by our and other apps . The api will be open and allow users to maintain ownership while remaining public.
-- A heath focused blockchain through substrate we are proposing should be standardized as an API layer for substrate
+- A heath focused public blockchain through substrate we are proposing should be standardized as an API layer for substrate
 - An indication of why your team is interested in creating this project.  
   Many patients use clinics worldwide, but they face difficulty or redundant duplicate tests when visiting a new clinic. It is inconvenient and many cases not practical to carry data over from clinic to clinic especially worldwide.  
   In addition one of our team was a user of a medical data as part of a GSK Welcomme trust funded PhD.  
@@ -42,10 +54,10 @@ We intend to provide a reusable parachain with medical data api ready for use by
 
 Data models
 We propose to store encrypted natively and only allow owners of NFT to decrypt these details via the smart contract. 
-However initially the binary data may be encrypted outside of the blockchain through a third party service.
+In this first phase the data may be encrypted outside of the blockchain through a third party service which we will specify.
 As part of this proposal we intend to develop a smart contract that is deployed for each user to the chain with the users medical data.
 - The data 
-  - Medical ID - consisting of HASH And JSON details which are encrypted and optional only the ID reference is required. The decryption native the the parachain and requires ownership of NFT. 
+  - Medical ID - consisting of HASH And JSON details which are encrypted and optional only the secure hash of an ID reference is required. The decryption will be handled by dedicated service which will be open sources to run with the substrate parachain. 
   - ID are verified by special validation addresses linked to special trusted organizations  on the parachain
   - ID verification is for users of data to require which authorities they accept. Initially it will be us or other organization we work with like the NHS in the UK.
 | hashID | health system id | dob (o)| sex(o) | blood type(o) |
@@ -92,7 +104,7 @@ As part of this proposal we intend to develop a smart contract that is deployed 
 These two types of account access will differ in the at access permission to external account will need to be provided by a dedicated bridging service which internally runs a HSM or Hardware Secure Module.
 
 Addition of MSAI parachain webassembly smart contract for effecient encryptyion and decryption if necessary 
-although in the first instance encryption maybe provided off chain through the bridge.
+although in the first instance encryption maybe provided off chain through a separate service.
 Storage of NFT
 - An overview of the technology stack to be used
 - Image: ![](img/component.png)
@@ -100,7 +112,7 @@ Storage of NFT
 - PoC/MVP we have built backend services using Google GCP and need to now integrate with the Polkadot chain
 What we will provide :
 App connecting to the Polkadot chain with storage on the blochchain of hash and encryption keys to medical data.
-Ultlimately when the correct modules are written we intend to store the entire medical data on a sidechain. 
+Ultimately when the correct modules are written we intend to store the entire medical data on a sidechain. 
 - What we will not provide
   - Data extraction will be a separate project that we may or may not deliver with this
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
@@ -149,7 +161,7 @@ Advisory
 
 Dr Ali Marvasti is an AI specialist PhD candidate at UCL and a practicing neurologist with Python coding skills
 - He is author of open source tools for seminology https://github.com/thenineteen/Semiology-Visualisation-Tool
-Dr Salman Marvasti is a senior IT graduate from Imperial College and 
+Dr Salman Marvasti is a senior IT graduate from Imperial College and has contributed to projects which use blockhchain for the last several years
 
 ### Team Code Repos
 
@@ -170,8 +182,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://www.linkedin.com/in/ali-alim-marvasti-1a846855/
 - https://www.linkedin.com/in/rahim-lalani-9823691/
 ## Development Status :open_book:
+- a standard blockchain layer/ data storage layer and smart contract has yet to be written
 - data extraction is proprietary
-- app started to be developed
+- app UI has been started
 - required api for blockchain developed 
 
 ## Development Roadmap :nut_and_bolt:
@@ -183,10 +196,12 @@ Please also provide the GitHub accounts of all team members. If they contain no 
   - Development of reusable mechanism for storing data on chain through API service that connects to the Polkadot node (10000 USD)
   - 
   2- Configuration of subtrate based parachain with a binary data storage layer (40K USD 1 man year)
-  - development of backend mock based on substrate and Polkadot or other blockchain tech
+  - development of backend mock api service
   - Connection of app directly to node infrastructure provider to provide non-custodial functionality (10000 USD)
-  - Development of data access NFT smart contract -- smart contract depending on substrate functionality we incorporate based on 
-  3- Ink! or other smart contract language based NFT to control encryption to and from the data storage layer
+  - Development of data access service possibly using a sidecar approach to extending the substrate node API. 
+  - NFT smart contract default template-- We will incorporate based on 
+  3- Ink! or other smart contract language that supports NFTs and ERC721 level in addition to ownership authentication:
+  - Only owners of the NFT will be able to access the encrypted data within using the sidecar service. Control encryption to and from the data storage layer
   4- testing on Kusama 
   - Development of example scripts for interaction with new parachain based on docker files (10000 USD)
   - Development of reference APP based on customisation of Alphawallet or other suitable wallet for the new Polkadot parachain 6 months (50000)
@@ -230,21 +245,21 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 2. | Substrate module: API extection |Allow the sidecar service to extend the default Substrate api with the additional needed functionality|  
 | 3. | Kusama based testing : | We will deploy the Substrate module for integration and performance testing of the parachian using Locust |  
 
-### Milestone 3 Example — Implement sample Andriod app
+### Milestone 3 Example — Implement Data Encryption service as a side car extension to the node
 
 - **Estimated Duration:** 3-6 months
 - **FTE:**  2
 - **Costs:** 10,000 USD
 
-| 1. | App structure: X | We will create a Substrate module for NFT based storage of hash against the KV pairs defined above |  
-| 2. | Connection to the substrate module: Y | We will create a Substrate module that will... |  
-| 3. | Substrate module: Z | We will create a Substrate module that will... |  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
+| 1. | App structure: X | We will create a standard template service and library to encrypt data with a secrete key based a function of  (NFC contract, owner address) . The key will be stored securely on the service with support for usage of HWS hardware. This service can optinally encryp any data that and provide the encrypted data.
+It will also decrypt the data to whomever send it a valid signature proving that they posses the relavent NFT|  
+| 2. | Provide documentation for how to encrypt data for users of this polkadot parachain|  
 
 
 
 ## Future Plans
-
+Adding Homomorphic Encryption (HE) [11][12] is an emerging technique that allows data
+to be processed in encrypted form and would be suitable for medical data sharing
 Extension module to connect to NHS app and other health systems around the work.
 Already negotiated with NHS Heal app team
 Offchain bridger for faster processing in case of trusted thirdparties
@@ -252,7 +267,9 @@ Promotion through parternships with private and public clinics
 Promotion will be through coin giveaways on the side chain once accepted on Kusama or mainnet Polkadot or alternative chain.
 
 ## Additional Information :heavy_plus_sign:
-** References: https://www.nature.com/articles/s41746-019-0211-0.pdf
+## References: https://www.nature.com/articles/s41746-019-0211-0.pdf
+C. Gentry, “Fully homomorphic encryption using ideal lattices,” in Proceedings of the
+41st annual ACM symposium on Theory of Computing (STOC), pp. 169–178, 2009
 **How did you hear about the Grants Program?** Web3 Foundation Website 
 
 This is an ambitious project but with your help we will be able to deliver the frontend and make the changes needed to the backend to support these medical usage of web3
