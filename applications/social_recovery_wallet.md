@@ -129,13 +129,7 @@ https://www.youtube.com/watch?v=Vpb8IbHvcNU
 - All deliverables will be written in Flutter/Dart. 
 
 ## Milestones
-For each milestone, we will deliver documentation and a video.
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | MIT |
-| 0b. | Documentation | We will provide **inline documentation** of the code. |
-| 0c. | Video | We will record and publish a video explainer and demonstration of all features. |
 
 ### Milestone 1 — Screen Designs and Configure Recovery
 - **Estimated duration:** 4 weeks
@@ -144,6 +138,11 @@ For each milestone, we will deliver documentation and a video.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can deploy the app on their mobile phone. |
+| 0c. | Testing Guide | Business logic functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests. |
+| 0d. | App Binaries | We will provide an APK for Android and deliver the app on both Android and iOS platforms via the respective testing tracks in the Google Play and Apple App stores. |
+| 0e. | Video | We will record and publish a video explainer and demonstration of all features. |
 | 1. | Screen Designs | We will work with our designer to design the screens for all of the steps required. Designed in Figma, images will be in repository. |  
 | 2. | Configure Recovery | Functionality for a user to add recovery configuration to their account. Identify a list of existing accounts to serve as guardians, and select threshold |  
 
@@ -158,6 +157,11 @@ For each milestone, we will deliver documentation and a video.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can deploy the app on their mobile phone. |
+| 0c. | Testing Guide | Business logic functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests. |
+| 0d. | App Binaries | We will provide an APK for Android and deliver the app on both Android and iOS platforms via the respective testing tracks in the Google Play and Apple App stores. |
+| 0e. | Video | We will record and publish a video explainer and demonstration of all features. |
 | 1. | Recovery Lookup | The ability to add guardians and an indicator whether that an account has a an active recovery.  |  
 | 2. | Vouch | The ability to vouch for user that has an active recovery requesting signature from the account in the wallet.  |  
 | 3. | Claim and Recover | When threshold is met, user will have the ability to claim and recover their tokens.  |  
@@ -180,6 +184,11 @@ For each milestone, we will deliver documentation and a video.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can deploy the app on their mobile phone. |
+| 0c. | Testing Guide | Business logic functions will be fully covered by unit tests to ensure functionality and robustness. We will describe how to run these tests. |
+| 0d. | App Binaries | We will provide an APK for Android and deliver the app on both Android and iOS platforms via the respective testing tracks in the Google Play and Apple App stores. |
+| 0e. | Video | We will record and publish a video explainer and demonstration of all features. |
 | 1. | QR Code Format | Flutter library for scanning polkadot.{js} QR codes |  
 | 2. | Node Selector | User can configure which network they are connecting to |  
 | 3. | Sign and Broadcast | Integrate Sign and Broadcast for Flutter |  
