@@ -161,6 +161,37 @@ The following properties can be configured into a funding cycle:
   - [Substrate Contracts Node](https://github.com/paritytech/substrate-contracts-node) ‒ Simple Substrate blockchain which includes smart contract functionality.
 
 
+- **Some UI Mock-ups of   MangoBOX protocol**
+
+**Some UI Mock-ups of   MangoBOX protocol-01**
+
+![image](https://raw.githubusercontent.com/Mangoboxlabs/Mangoboxdocs/main/UI/01.png)
+
+
+**Some UI Mock-ups of   MangoBOX protocol-02**
+
+![image](https://raw.githubusercontent.com/Mangoboxlabs/Mangoboxdocs/main/UI/02.png)
+
+**Some UI Mock-ups of   MangoBOX protocol-03**
+
+![image](https://raw.githubusercontent.com/Mangoboxlabs/Mangoboxdocs/main/UI/03.png)
+
+**Some UI Mock-ups of   MangoBOX protocol-04**
+
+![image](https://raw.githubusercontent.com/Mangoboxlabs/Mangoboxdocs/main/UI/04.png)
+
+
+**Some UI Mock-ups of   MangoBOX protocol-05**
+
+![image](https://raw.githubusercontent.com/Mangoboxlabs/Mangoboxdocs/main/UI/05.png)
+
+
+**Some UI Mock-ups of   MangoBOX protocol-06**
+
+![image](https://raw.githubusercontent.com/Mangoboxlabs/Mangoboxdocs/main/UI/6.png)
+
+
+
 
 ### Ecosystem Fit
 
