@@ -7,7 +7,7 @@
 
 ## Project Overview :page_facing_up:
 
-An organization’s social responsibility (CSR) can take the form of a wide variety of commitments. These can range from having a diverse workplace to increasing green energy use. It’s easy for an organization to make claims regarding how they’re run, but these often exist only as marketing copy. Etch is a platform that allows organizations to make socially responsible commitments and have them written indelibly to the blockchain using smart contracts. This will make an organization's stated goals regarding social responsibility transparent and permanent. It will also provide a place for workers to see what an organization stands for.
+An organization’s social responsibility (CSR) can take the form of a wide variety of commitments. These can range from having a diverse workplace to increasing green energy use. It’s easy for an organization to make claims regarding how they’re run, but these often exist only as marketing copy. Etch is software that allows organizations to make socially responsible commitments and have them written indelibly to the blockchain using smart contracts. This will make an organization's stated goals regarding social responsibility transparent and permanent. It will also provide a place for workers to see what an organization stands for.
 
 ### Overview
 
@@ -81,7 +81,7 @@ There’s currently a great desire by workers that their employers engage in soc
 
 Ash is Co-founder and CTO of BrighTex Bio-Photonics, an integrated hardware and software company focused on A.I. He has 17 years of software development and data science experience. 
 - Created DeepTag, a cloud AI platform for use in digital marketing in skin care and cosmetics
-- Oversaw the development of Skin Advisor and Clarity hardware & software systems used by laboratories in skin care R&D.
+- Oversaw the development of Skin Advisor and Clarity hardware & software systems used by laboratories in skin care R&D
 - Worked with Legal Aid at Work to develop an NLP powered chatbot that helped inform workers of their rights during the pandemic. Designed and developed logic modeled on legal rights and employment law
 
 
@@ -118,7 +118,7 @@ Articles and studies that point to meaningful, purpose driven work and CSR stati
 - https://www.mckinsey.com/business-functions/people-and-organizational-performance/our-insights/help-your-employees-find-purpose-or-watch-them-leave
 - https://online.hbs.edu/blog/post/corporate-social-responsibility-statistics
 
-We had a conversation with Sebastian Müller about the concept of Etch. He mentioned additional details that he’d like to see in a grant proposal and to start with a level 1 grant.
+We had a conversation with Sebastian Müller about the concept of Etch via email. He mentioned additional details that he’d like to see in a grant proposal and to start with a level 1 grant.
 
 ## Development Roadmap :nut_and_bolt:
 
