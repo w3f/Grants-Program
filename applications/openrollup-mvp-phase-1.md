@@ -147,7 +147,7 @@ We've been working on techniques for zk-rollup, and verifiable computation for s
 
 - **Total Estimated Duration:** 2.7 months
 - **Full-Time Equivalent (FTE):** 1.5 FTE
-- **Total Costs:** 48,600 USD).
+- **Total Costs:** 48,600 USD.
 
 ### Milestone 1 — Implement Substrate Modules
 
@@ -162,8 +162,8 @@ We've been working on techniques for zk-rollup, and verifiable computation for s
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains what was done/achieved as part of the grant. |
-| 1.  | Pallet | We provide the core data types and the functionalities(zkapp registration/user deposit/user exit/user full exit/zkapp batch submit/zkapp management/zkapp info api) which support currencies/tokens/NFTs as specified in Project Details. |
-| 2.  | Verifier trait and [miden](https://github.com/maticnetwork/miden) verifier | We provide the verifier trait suitable for general apps, and a miden verifier that implements the verifier trait. |
+| 1.  | Open rollup Pallet | We provide the core data types and the functionalities(zkapp registration/user deposit/user exit/user full exit/zkapp batch submit/zkapp management/zkapp info api) which support currencies/tokens/NFTs as specified in Project Details. |
+| 2.  | Miden verifier in Open rollup Pallet | We provide the verifier trait suitable for general apps, and a miden verifier that implements the verifier trait. |
 
 ## Future Plans
 
