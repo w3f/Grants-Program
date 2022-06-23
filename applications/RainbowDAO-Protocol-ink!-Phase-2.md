@@ -468,7 +468,7 @@ Therefore, in our second grant, we focused on developing two extended functions,
 
 - **Total Estimated Duration:**  10 weeks
 - **Full-Time Equivalent (FTE):** 5
-- **Total Costs:** 45000 USD
+- **Total Costs:** 40000 USD
 
 ### Milestone 1 
 
@@ -496,7 +496,7 @@ In this milestone, we mainly completed the document design, UI design, smart con
 
 - **Estimated Duration:** 4 weeks
 - **FTE:**  2
-- **Costs:** 20,000 USD
+- **Costs:** 15,000 USD
 
 
 **For the second  milestone, we focused on developing DAO NFT Bank System.** 
