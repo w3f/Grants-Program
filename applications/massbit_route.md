@@ -349,6 +349,12 @@ When a Node or Gateway joins Massbit, it needs to go through different states be
 
 ### Overview
 
+- **Total Estimated Duration:** 2 months (only applied for the delivery scope of this project)
+- **Full-Time Equivalent (FTE):** 6 FTE 
+- **Total Costs:** $50,000 USD
+
+- We do not have an estimate for the actual cost and duration of this project, as we continue to integrate more blockchain projects, improve the performance/efficiency of the network, and building tools to support dAPI users.
+
 ### Milestone 1 - Global Blockchain Distribution Network
 
 - **Estimated duration:** 1 month
