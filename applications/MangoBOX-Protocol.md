@@ -269,7 +269,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Total Estimated Duration:**  2 months
 - **Full-Time Equivalent (FTE):**   4FTE
-- **Total Costs:** 44000 USD
+- **Total Costs:** 40000 USD
 
 This is the link of Juicebox's solidity code, we will use Ink to rewrite all the functional logic with reference to this code, and add some optimizations and innovations of our own.
 
@@ -297,7 +297,7 @@ https://github.com/Mangoboxlabs/juice-contracts-v2
 
 - **Estimated Duration:** 1 month
 - **FTE:**  4
-- **Costs:** 24,000 USD
+- **Costs:** 20,000 USD
 
 
 | Number | Deliverable                | Specification                                                |
