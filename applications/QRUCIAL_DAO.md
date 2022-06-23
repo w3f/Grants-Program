@@ -180,7 +180,7 @@ The PoC is working, and we want to move forward in developing a live testnet ver
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains QRUCIAL DAO (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)
 | 1. | ExoSys Deamon | This is the glue system which listens to events on QRUCIAL DAO and executes the requested tools. |
-| 2. | QRUCIAL DAO Frontend | Frontend development for accessing the functionalities. |
+| 2. | QRUCIAL DAO Frontend | Frontend development for accessing the functionalities. Design will look like [this](https://github.com/Qrucial/QRUCIAL-DAO/blob/main/docs/QRUCIAL%20DAO%20UI.png)|
 | 3. | ExoTool - CCA | Implement [Clippy](https://github.com/rust-lang/rust-clippy) and [Cargo Audit](https://docs.rs/cargo-audit/0.15.1/cargo_audit/) as an exotool package for ink!/WASM smart contract audits. |
 | 4. | ExoTool - Octopus | Implement [Octopus](https://github.com/pventuzelo/octopus) as an exotool for bytecodes (WASM and Solidity) |
 
