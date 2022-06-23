@@ -123,7 +123,7 @@ https://www.youtube.com/watch?v=Vpb8IbHvcNU
 ### Overview
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  2.5 FTE 
-- **Total Costs:** 50,000 USD
+- **Total Costs:** 45,500 USD
 
 #### Languages
 - All deliverables will be written in Flutter/Dart. 
@@ -134,7 +134,7 @@ https://www.youtube.com/watch?v=Vpb8IbHvcNU
 ### Milestone 1 — Screen Designs and Configure Recovery
 - **Estimated duration:** 4 weeks
 - **FTE:**  2.5
-- **Costs:** 10,000 USD
+- **Costs:** 14,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -151,9 +151,9 @@ https://www.youtube.com/watch?v=Vpb8IbHvcNU
 | create_recovery |
 
 ### Milestone 2 — Initiate Social Recovery, Vouch, Claim, and Recover
-- **Estimated duration:** 6 weeks
+- **Estimated duration:** 5 weeks
 - **FTE:**  2.5
-- **Costs:** 20,000 USD
+- **Costs:** 17,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -178,9 +178,9 @@ https://www.youtube.com/watch?v=Vpb8IbHvcNU
 | extrinsic | remove_recovery | 
 
 ### Milestone 3 — Scan QR code, Sign, and Broadcast
-- **Estimated Duration:** 6 weeks
+- **Estimated Duration:** 4 weeks
 - **FTE:**  2.5
-- **Costs:** 20,000 USD
+- **Costs:** 14,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
