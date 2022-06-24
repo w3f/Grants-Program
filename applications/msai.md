@@ -12,44 +12,35 @@
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview
-An easy-to-use blockchain API developed on Substrate with a level of encryption built into smart contracts written for Ink!/ WebAssembly.
-We want to implement an api that allows natively storing and sharing health data thereby eliminating the need for a central database.
-The idea is integrate ID verification and data storage through a substrate node api using a sidecar approach allowing
-other app developers within the health ecosystem to interoperate without having to design their own backend. 
-Integrating security and storage for every application is a major pain point which is not addresses by any web3 chains natively. 
-In particular the api will  provide both anonymity and data sharing capability using a standardized format, making data a first class citizen of the Polkadot ecosystem.
+### Overview
+Many patients use clinics worldwide, but they face difficulty or redundant duplicate tests when visiting a new clinic. It is inconvenient and in many cases not practical to carry data over from clinic to clinic especially worldwide.  
+While designing an international app for this use case we realised there is no easy way to store the data in a decentralised manner.
+For further background you can[ read our blog](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
 
-Unlike centralized health platforms, the idea is not to not store patients health records on a database. Instead, it's stored on a layer of 
+Our solution is to start from the patients perspective and customise a blockchain such that data storage becomes a first class citizen of the ecosystem. In the first instance, the parachains user would be our own app where users store any medical documents with automated information extraction, along with authenticated gpdr opt out.
+Through a standardized api, our proposed system will be usable by any application or system where they deal with health data and get user opt-in thus contributing to demand for the Polkadot ecosystem. 
+
+We intend to incorporate a level of encryption and anonymity guaranteed by the nodes with a ready smart contract developed in  Ink!/ WebAssembly which records ownership and access [1].
+ID verification and data storage could be integrated through a Sidecar approach allowing
+other app developers within the health ecosystem to reuse the chain without needing their own backend. 
+Integrating security and storage for every application is a major pain point which is not addresses by any web3 chains natively. 
+
+Sample screen of users view of how the data will be presented in our implementation can be seen here https://docs.google.com/presentation/d/1XEQ6qtTLwkmc6JgtpytEUJqhh1behskOWh3s4uE1cXw/edit?usp=sharing
+
+Unlike centralized health platforms, the idea is to store the value-added data on a layer of 
 the blockchain, with anonymous tags such that no user identified private data would be exposed 
 during the whole process and various layers of encryption and anonymity would be provided in subsequent phases. 
-This platform would allow game theory incentives and smart contract based marketplaces for data trading:
-To encourage adoption , 
+This platform would allow game theory incentives and smart contract based marketplaces for data trading to encourage adoption along with a reference app. 
 
-* various mechanisms for incentives could be developed as smart tokens or native token of the parachain linked to DOT.
-* users and publishers of health can receive some amount of token as rewards from any sponsor on the platform.
-
-Initially the main user would be our own health app. An NFT based data exchange infrastructure for data ownership and medical data submission. 
-The api would be public so that any other apps such that deal with medical data can use this parachain.
-Our teams' relevance to this proposal is years of research and development on medical data and expertise of data collection extraction and analysis with domain experts.
-Further Dr Salman Marvasti has mutliple years experience working with blockchain technologies both for cross border fintech as well as for data analysis through storing all the chains data in AWS Neptune and AWS Aurora API based databases.
-[A general introduction to data sharing can be found in our notion blog](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2).
-
+Our teams' relevance to this proposal is years of research and development on medical data along with technology aware accredited medical doctors. We also have experts of data collection extraction and scaling.
+Further Dr Salman Marvasti has multiple years experience working with blockchain technologies including ZKP both for cross border fintech as well as for data analysis through storing all the chains data in AWS Neptune and AWS Aurora API based databases.
 This is a phased plan with part of the design to be implemented in this first phase, which each phase being usable .
-### Overview
-
-Please provide the following:
-
-Project Name Medical Stats and AI Health Blockchian - we are developing an app where users store any medical documents from various clinics through scanning with camera app, using propriatory ai and automatic data extraction.
-We would like to standardize storage of this data on the blockchain.
-We intend to provide a reusable parachain with medical data api ready for use by anyone within the Polkadot ecosystem.
-- This proposal is for creation of medical specific blockchain API to securely store the data collected by our and other apps . The api will be open and allow users to maintain ownership while remaining public.
-- A heath focused public blockchain through substrate we are proposing should be standardized as an API layer for substrate
-- An indication of why your team is interested in creating this project.  
-  Many patients use clinics worldwide, but they face difficulty or redundant duplicate tests when visiting a new clinic. It is inconvenient and many cases not practical to carry data over from clinic to clinic especially worldwide.  
-  In addition one of our team was a user of a medical data as part of a GSK Welcomme trust funded PhD.  
-  Dr Ali Marvasti's research with medical data made evident the need for such a project and the total uselessness of existing   
-  solutions like MedicalChain and Binance Health such that NHS and other health systems could also theoretically connect.   
-  Sample screen of users view of how the data will be presented in our implementation can be seen here https://docs.google.com/presentation/d/1XEQ6qtTLwkmc6JgtpytEUJqhh1behskOWh3s4uE1cXw/edit?usp=sharing
+in summary benefits of blockchain for this data includes
+* Decentralised: Data ownership is not lost to any central authority
+* Incentive to participate: various mechanisms  could be developed as smart tokens or native token of the parachain linked to DOT.
+* Users:  publishers of health can receive some amount of token as rewards from any sponsor on the platform. 
+* Public: The api and parachain would be public so that any other apps such that deal with medical data can use this parachain. 
+* The detailed API and openAPI specifications for GRPC and or REST will be developed as part of this proposal as it depends on the public blockchain that the system is implemented in.
 ### Project Details
 
 Data models
@@ -142,9 +133,13 @@ Marvsai team www.marvsai.com
 Core:
 - Dr Salman Alim Marvasti --  Experienced Finance and Blockchain Senior Developer currently at Blockchain.com
 - Dr Ali Marvasti -- Consultant Neurologist - NHS , Cambridge University
+  - In addition one of our team was a user of a medical data as part of a GSK Wellcome trust funded PhD.  
+    Dr Ali Marvasti's research with medical data made evident that even if an application is developed that could scan and store all the data there is no reliable standard to store it in a decentralised manner.
+    The existing projects are note useful for instance solutions like MedicalChain (relies on private chains) and Binance Health (more commercial pump and dump than substance) such that NHS and other health systems could also theoretically connect.
+
 - Dr Atefeh Alihossieni - Internal Medicine Specialist - Medical App Design Baan Clinic- Millway medical practice
 Advisory
-- Dr Luke Riley - Blockchain post doc and Innovation labs head at Quant Network
+- James Isilay - Cognism AI founder and CEO
 - Rahim Lalani CEO Text services and contract app development company in Pakistan 
 ### Contact
 
@@ -162,7 +157,7 @@ Advisory
 Dr Ali Marvasti is an AI specialist PhD candidate at UCL and a practicing neurologist with Python coding skills
 - He is author of open source tools for seminology https://github.com/thenineteen/Semiology-Visualisation-Tool
 Dr Salman Marvasti is a senior IT graduate from Imperial College and has contributed to projects which use blockhchain for the last several years
-
+Dr Mehdi Ghandi is an AI production expert at Microsoft who is advising us on scaling our solutions
 ### Team Code Repos
 
 - https://github.com/thenineteen/Semiology-Visualisation-Tool
@@ -180,7 +175,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://www.linkedin.com/in/marvastisalman/
 - https://www.linkedin.com/in/atefeh-alihoseini-a3850a202/
 - https://www.linkedin.com/in/ali-alim-marvasti-1a846855/
+- Scaling help
+- https://www.linkedin.com/in/mahdi-ghandi-3410114/
+- Advisors
 - https://www.linkedin.com/in/rahim-lalani-9823691/
+- 
 ## Development Status :open_book:
 - a standard blockchain layer/ data storage layer and smart contract has yet to be written
 - data extraction is proprietary
@@ -267,9 +266,11 @@ Promotion through parternships with private and public clinics
 Promotion will be through coin giveaways on the side chain once accepted on Kusama or mainnet Polkadot or alternative chain.
 
 ## Additional Information :heavy_plus_sign:
-## References: https://www.nature.com/articles/s41746-019-0211-0.pdf
-C. Gentry, “Fully homomorphic encryption using ideal lattices,” in Proceedings of the
+## References:
+[1] https://www.nature.com/articles/s41746-019-0211-0.pdf
+[2] C. Gentry, “Fully homomorphic encryption using ideal lattices,” in Proceedings of the
 41st annual ACM symposium on Theory of Computing (STOC), pp. 169–178, 2009
+[3] https://medium.com/@hashedhealth/on-building-better-healthcare-ecosystems-bd009d5b1190
 **How did you hear about the Grants Program?** Web3 Foundation Website 
 
 This is an ambitious project but with your help we will be able to deliver the frontend and make the changes needed to the backend to support these medical usage of web3
