@@ -28,7 +28,8 @@ Integrating security and storage for every application is a major pain point whi
 Sample screen of users view of how the data will be presented in our implementation can be seen here https://docs.google.com/presentation/d/1XEQ6qtTLwkmc6JgtpytEUJqhh1behskOWh3s4uE1cXw/edit?usp=sharing
 
 Unlike centralized health platforms, the idea is to store the value-added data on a layer of 
-the blockchain, with anonymous tags such that no user identified private data would be exposed 
+the blockchain. With trust being established by the blockchain layer, any blockchain node that provides faulty data will be kicked out and forfiet their staking in the parachains native token. 
+With anonymous tags such that no user identified private data would be exposed 
 during the whole process and various layers of encryption and anonymity would be provided in subsequent phases. 
 This platform would allow game theory incentives and smart contract based marketplaces for data trading to encourage adoption along with a reference app. 
 
@@ -98,7 +99,8 @@ Addition of MSAI parachain webassembly smart contract for effecient encryptyion 
 although in the first instance encryption maybe provided off chain through a separate service.
 Storage of NFT
 - An overview of the technology stack to be used
-- Image: ![](img/component.png)
+- Parachain Scaling: ![component](https://github.com/salmanmarvasti/Grants-Program/blob/master/applications/img/component.png) each parachain node will be an IPFS node
+- Nft representing medical data and access/ownership:  ![component](https://github.com/salmanmarvasti/Grants-Program/blob/master/applications/img/nft_Deploy.png)
 - Documentation of core components, protocols, architecture, etc. to be deployed
 - PoC/MVP we have built backend services using Google GCP and need to now integrate with the Polkadot chain
 What we will provide :
@@ -192,11 +194,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - 1- Basic Blockchain parachain detailed design
   - Milestone one basic API layer design integration with elements of configuring Substrate for new parachain with smart contract facility and verification of structured data (10000 USD )
-  - Development of reusable mechanism for storing data on chain through API service that connects to the Polkadot node (10000 USD)
-  - 
-  2- Configuration of subtrate based parachain with a binary data storage layer (40K USD 1 man year)
+  - Development of reusable mechanism for storing data on chain through API service that connects to the Polkadot node 
+  - In this first instance data storage will be assumed to be trusted as long as parachain node operator is trusted (Without additinal complexity)
+  2- Configuration of Subtrate based parachain with a binary data storage layer (40K USD 1 man year)
   - development of backend mock api service
-  - Connection of app directly to node infrastructure provider to provide non-custodial functionality (10000 USD)
+  - Connection of app directly to node infrastructure provider to provide non-custodial functionality 
   - Development of data access service possibly using a sidecar approach to extending the substrate node API. 
   - NFT smart contract default template-- We will incorporate based on 
   3- Ink! or other smart contract language that supports NFTs and ERC721 level in addition to ownership authentication:
@@ -235,23 +237,25 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 
 
-### Milestone 2 Example — Implement blockchain linked native storage layer and encryption /decryption capability
+### Milestone 2 Example — Implement blockchain linked native storage layer with extran capability
 
 - **Estimated Duration:** 3 months
 - **FTE:**  1.5
 - **Costs:** 50,000 USD
 
-| 1. | Substrate module: sidecar encryption and IPFS | Create a node sidecar service that links to the substrate parachain node using the RPC api and provides NIST capable encryption and redirection |  
+| 1. | Substrate module: sidecar IPFS node running side by side with substrate node| Create a node sidecar service that links to the substrate parachain node using the RPC api and provides NIST capable encryption and redirection. Setup governance model for data such that if faulty data is provided by a node it could be penalized by the other substrate nodes |  
 | 2. | Substrate module: API extection |Allow the sidecar service to extend the default Substrate api with the additional needed functionality|  
 | 3. | Kusama based testing : | We will deploy the Substrate module for integration and performance testing of the parachian using Locust |  
 
 ### Milestone 3 Example — Implement Data Encryption service as a side car extension to the node
 
-- **Estimated Duration:** 3-6 months
+- **Estimated Duration:** 1 months
 - **FTE:**  2
 - **Costs:** 10,000 USD
 
-| 1. | App structure: X | We will create a standard template service and library to encrypt data with a secrete key based a function of  (NFC contract, owner address) . The key will be stored securely on the service with support for usage of HWS hardware. This service can optinally encryp any data that and provide the encrypted data.
+| 1. | App structure: X | We will create a standard template service and library to encrypt data with a secrete key based a function of  (NFC contract, owner address) . The key will be stored securely on the service with support for usage of HWS hardware or software emulation. 
+At a later stage this will be standardized. This will be a simple proof of concept
+This service can optionally encrypt any data provide the encrypted data back through.
 It will also decrypt the data to whomever send it a valid signature proving that they posses the relavent NFT|  
 | 2. | Provide documentation for how to encrypt data for users of this polkadot parachain|  
 
