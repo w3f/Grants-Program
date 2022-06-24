@@ -212,19 +212,20 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Total Costs:** 500 000 of which some will be covered by founders Requested amount in USD for the whole project min 100,000 USD till MVP stage. 
 
 ### Milestone 1 Example — Implement basic parachain Substrate Chain API
-
-|     Number | Deliverable | Specification                                                                                                                                        |
-|-----------:| ----------- |------------------------------------------------------------------------------------------------------------------------------------------------------|
-|        0a. | License | Apache 2.0                                                                                                                                           |
-|        0b. | Documentation | [Link to why healthcare decentralised](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)              |
-|        0c. | Testing Guide | Each epic describes testing opportunities.  [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) |
-|        0d. | Docker | Access will be granted after several iterations                                                                                                      |
-|        0e. | Article | Press release will be prepared a few weeks before the official rollout of the network. The link to the article will be sent when ready               | 
-|            |             |                                                                                                                                                      |
 - 
 - **Estimated duration:** 4 month
 - **FTE:**  1
 - **Costs:** 40,000 USD
+
+|     Number | Deliverable | Specification                                                                                                                                                                                                                                                                                                                                                      |
+|-----------:| ----------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|        0a. | License | Apache 2.0                                                                                                                                                                                                                                                                                                                                                         |
+|        0b. | Documentation | [Link to why healthcare decentralised](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)                                                                                                                                                                                                                            |
+|        0c. | Testing Guide | Each epic describes testing opportunities.  [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) 2. Create openapi specifcations for reading and writing data to and from the NFT smart contract (Depends on blockchain nft tech used) . 3. Impement hash based impelementation for external reference storage |
+|        0d. | Docker | Access will be granted after several iterations to run sidecar datastorage with Substrate together                                                                                                                                                                                                                                                                 |
+|        0e. | Article | Press release will be prepared a few weeks before the official rollout of the network. The link to the article will be sent when ready                                                                                                                                                                                                                             | 
+|            |             |                                                                                                                                                                                                                                                                                                                                                                    |
+
 * API design of substrate blockchain with native data structures outlined above
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -234,7 +235,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 
 
-### Milestone 2 Example — Implement blockchain linked native storage layer
+### Milestone 2 Example — Implement blockchain linked native storage layer and encryption /decryption capability
 
 - **Estimated Duration:** 3 months
 - **FTE:**  1.5
