@@ -99,8 +99,8 @@ Addition of MSAI parachain webassembly smart contract for effecient encryptyion 
 although in the first instance encryption maybe provided off chain through a separate service.
 Storage of NFT
 - An overview of the technology stack to be used
-- Parachain Scaling: ![component](https://github.com/salmanmarvasti/Grants-Program/blob/master/applications/img/component.png) each parachain node will be an IPFS node
-- Nft representing medical data and access/ownership:  ![component](https://github.com/salmanmarvasti/Grants-Program/blob/master/applications/img/nft_Deploy.png)
+- Parachain Scaling: ![component](https://github.com/salmanmarvasti/Grants-Program/blob/master/applications/img/nft_Deploy.png?raw=true) each parachain node will be an IPFS node
+- Nft representing medical data and access/ownership:  ![component](https://raw.githubusercontent.com/salmanmarvasti/Grants-Program/master/applications/img/component.png)
 - Documentation of core components, protocols, architecture, etc. to be deployed
 - PoC/MVP we have built backend services using Google GCP and need to now integrate with the Polkadot chain
 What we will provide :
