@@ -280,7 +280,7 @@ https://docs.google.com/spreadsheets/d/1Q5DnVI4WuQWncMY985xuQ30HB7-bJz6X6EZFr2Vz
 | 0e. | Article | We will publish a detailed article, walking a user through all functionality and features.)
 | 1. | LLM Pallet | LLM is a pallet customized to serve custom functionality for onchain Assets managed by the treasury |  
 | 2. | Congress Pallet | We are building a substrate pallet handling a tokenized direct democracy; we test it in limited conditions and then deploy it in the production environment |  
-| 3. | We will create a pallet that will be tailored to serve the voting and approval logic for governance for Nation States.   |  
+| 3. | Voting Pallet | We will create a pallet that will be tailored to serve the voting and approval logic for governance for Nation States using on-chain assets.   |  
 | 4. | Liberland Identity Pallet | We set up a substrate pallet that will allow accounts to have different roles. Liberland's on-chain governance is tailored to serve a nation state, therefore we need functionality for users to be citizens, e-residence, assembly members, ministers, and so on. In order to implement user role checks and adopt our chain after https://github.com/liberland/liberland_substrate/blob/main/docs/liberland/identity.md | 
    
    
