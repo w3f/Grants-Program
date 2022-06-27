@@ -1,4 +1,4 @@
-# Open Source Polkadot Stack [WIP!] <!-- omit in toc -->
+# Open Source Polkadot Stack <!-- omit in toc -->
 
 The goal of this page is to provide an overview of the open-source Polkadot/Kusama Tech Stack.
 
@@ -55,9 +55,15 @@ We typically like to fund more than one project for each component. So, if you s
 
 By describing our areas of priority in detail, we do not wish to preclude grant applications that address different areas that we may not have thought of. We would like to fund all projects that bring value to the ecosystem. If you are considering applying for a project and are not sure if it falls within our areas of interest, please get in touch with us to discuss it.
 
+For open source infrastructure projects that are no longer maintained, we are also interested in signing [maintenance grants](https://github.com/w3f/Grants-Program#hammer_and_wrench-maintenance-grants). 
+
 ## :bookmark_tabs: Layers of Polkadot Stack
 
 In the below sections you can find a list of different layers of the Polkadot Stack.
+
+**Maintenance Status [WIP!]**: 
+- :red_circle: Unmaintained for more than 3 Months
+- :green_circle: Actively maintained
 
 ### :iphone: User Interface 
 
@@ -86,7 +92,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Components | Existing projects | Potentially interesting projects
 |-|-|-
 | Parachain | [Parachain utilities](https://github.com/AcalaNetwork/parachain-utilities), [Gantree](https://github.com/flex-dapps)| Tools to create parachains from frameworks used in other ecosystems |
-| Client Libraries | [Go](https://github.com/centrifuge/go-substrate-rpc-client), [.Net](https://github.com/usetech-llc/polkadot_api_dotnet), [.NET Standard 2.0](https://github.com/ajuna-network/Ajuna.NetApi), [C++](https://github.com/usetech-llc/polkadot_api_cpp), [C](https://github.com/finoabanking/substrate-c-tool), [Haskell](https://github.com/airalab/hs-web3), [Javascript](https://github.com/polkadot-js/api), [Substrate API Sidecar - TypeScript](https://github.com/paritytech/substrate-api-sidecar), [Ruby](https://github.com/itering/scale.rb), [Python](https://github.com/polkascan/substrate-interface-api), [Java (+ Android)](https://github.com/emeraldpay/polkaj), [Substrate Client Java](https://github.com/strategyobject/substrate-client-java), [Rust SCS](https://github.com/scs/substrate-api-client), [Rust Parity](https://github.com/paritytech/substrate-subxt), [PHP (gmajor-encrypt)](https://github.com/gmajor-encrypt/php-substrate-api), [PHP (neha0921)](https://github.com/neha0921/substrate-interface-package), [RPC-Ethereum](https://github.com/paritytech/frontier), [Swift](https://github.com/tesseract-one/Substrate.swift) | |
+| Client Libraries | [Go](https://github.com/centrifuge/go-substrate-rpc-client), [.Net](https://github.com/usetech-llc/polkadot_api_dotnet) :red_circle:, [.NET Standard 2.0](https://github.com/ajuna-network/Ajuna.NetApi), [C++](https://github.com/usetech-llc/polkadot_api_cpp), [C](https://github.com/finoabanking/substrate-c-tool) :red_circle:, [Haskell](https://github.com/airalab/hs-web3), [Javascript](https://github.com/polkadot-js/api), [Substrate API Sidecar - TypeScript](https://github.com/paritytech/substrate-api-sidecar), [Ruby](https://github.com/itering/scale.rb), [Python](https://github.com/polkascan/substrate-interface-api), [Java (+ Android)](https://github.com/emeraldpay/polkaj), [Substrate Client Java](https://github.com/strategyobject/substrate-client-java), [Rust SCS](https://github.com/scs/substrate-api-client), [Rust Parity](https://github.com/paritytech/substrate-subxt), [PHP (gmajor-encrypt)](https://github.com/gmajor-encrypt/php-substrate-api), [PHP (neha0921)](https://github.com/neha0921/substrate-interface-package), [RPC-Ethereum](https://github.com/paritytech/frontier), [Swift](https://github.com/tesseract-one/Substrate.swift) | |
 |Substrate Contract clients | [PatractGo](https://github.com/patractlabs/go-patract)  | |
 | SCALE Codec | [Rust](https://github.com/paritytech/parity-scale-codec), [Python](https://github.com/polkascan/py-scale-codec), [Golang Chainsafe](https://github.com/ChainSafe/gossamer/tree/development/lib/scale), [Golang Itering](https://github.com/itering/scale.go), [C](https://github.com/MatthewDarnell/cScale), [C++](https://github.com/soramitsu/scale-codec-cpp), [JavaScript](https://github.com/polkadot-js/api), [AssemblyScript](https://github.com/LimeChain/as-scale-codec), [Haskell](https://github.com/airalab/hs-web3/tree/master/src/Codec), [Java](https://github.com/emeraldpay/polkaj), [Ruby](https://github.com/itering/scale.rb), [Dart](https://github.com/nbltrust/dart-scale-codec), [Swift](https://github.com/tesseract-one/swift-scale-codec), [PHP](https://github.com/gmajor-encrypt/php-scale-codec),  [JavaScript by Soramitsu](https://github.com/soramitsu/scale-codec-js-library) |
 | Easy Runtime Development | [VS Code Plugin](https://github.com/everstake/vscode-plugin-substrate), [Atom Code Plugin](https://github.com/everstake/atom-plugin-substrate), [Substrate Playground](https://github.com/paritytech/substrate-playground), [Substrate Marketplace VS Code Plugin](https://github.com/paritytech/vscode-substrate), [AssemblyScript Runtime Generation](https://github.com/LimeChain/as-substrate-runtime), [Substrate Package Manager](https://github.com/clearloop/sup), [Subsembly: Framework for developing AssemblyScript Substrate Runtimes](https://github.com/LimeChain/subsembly), [dependency diener](https://github.com/bkchr/diener) | |
