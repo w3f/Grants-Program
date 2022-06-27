@@ -67,7 +67,7 @@ The project closest to ours is [anon](https://github.com/webb-tools/anon). They 
 * **FTE:**  1
 Replace Blake2x256 with [Poseidon](https://github.com/dusk-network/Poseidon252/) hash algorithm.
 ### Milestone 3: Plonk prover CLI tool (compiles to WASM)
-* **Estimated duration:** 1.5 months
+* **Estimated duration:** 2 months
 * **FTE:**  1
  
 Create a CLI tool that takes as inputs:
@@ -82,7 +82,7 @@ Create a CLI tool that takes as inputs:
 And produces a ZK proof `P`. The tool can be compiled to WASM for future inclusion in the frontend component.
 Utilise [Dusk's Plonk implementation](https://github.com/dusk-network/plonk) as much as possible.
 ### Milestone 4: `withdraw` method & Plonk verifier in `ink!`
-* **Estimated duration:** 2 months
+* **Estimated duration:** 1.5 months
 * **FTE:**  1
 To withdraw a coin, a user needs to submit a proof that they know the randomness & nullifier, i.e. they are the true owners of the coin.
 The `withdraw` method of the mixer ensure that the nullifier `k` has not been spent yet (by storing the previously spent nullifier hashes).
