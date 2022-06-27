@@ -24,7 +24,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | :--- | :------ | :--- | 
 | [a-and-v-topology.md](./open/a-and-v-topology.md) | :green_circle: | 29.11.2021 |   
 | [alternative_polkadot_host_implementations.md](./open/alternative_polkadot_host_implementations.md) | :green_circle: | 29.11.2021 |   
-| [anti-collusion infrastructure.md](./open/anti-collusion_infrastructure.md) | :green_circle: | 29.11.2021 |   
+| [anti-collusion_infrastructure.md](./open/anti-collusion_infrastructure.md) | :green_circle: | 29.11.2021 |   
 | [appi.md](./implemented/appi.md) | :red_circle: | 20.07.2021 |   
 | [candle-auction.md](./implemented/candle-auction.md) | :red_circle: | 02.02.2022 |  
 | [epassport-zk-validation.md](./open/epassport-zk-validation.md) | :green_circle: | 29.11.2021 | 
