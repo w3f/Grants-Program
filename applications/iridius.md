@@ -7,7 +7,7 @@
 - **Project Name:** Iridius
 - **Team Name:** Iridius
 - **Payment Address:** Ethereum 0x48ea6C35ed906bEAa2bFebf0725D67b4Bb39C161 (USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 (Note: We saw that you reduced level 2 to 30k a few hours ago. Given that this grant application has been in preparation for weeks (and the technical complexity involved with implementing our security models), we would appreciate if you could express flexibility and allow us to apply for level 2 with the previous maximum budget)
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
