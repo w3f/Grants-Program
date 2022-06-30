@@ -6,7 +6,7 @@
 
 - **Project Name:** Iridius
 - **Team Name:** Iridius
-- **Payment Address:** Ethereum 0x00874b14ec1e9430f3c9870f02fdb25a6183d7ab (USDC)
+- **Payment Address:** Ethereum 0x48ea6C35ed906bEAa2bFebf0725D67b4Bb39C161 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -18,35 +18,37 @@
 **Iridius: Peer review web/app software signing and user-sided verification to close Web3 interface centralisation chokepoints**
 
 
-While blockchains technologically are decentralized, the ways users interact with them is not. A key centralized weak point are the server-hosted DApp websites, and all mobile apps and browser extensions currently in use by Blockchain users. This requires everyday users to trust the developer of the particular app, which is against blockchain spirit. For example, if someone gains access to the server of **polkadot.js.org/apps** and pushes an update that makes users unknowingly delegate to a malicious validator, this would compromise the security of the Polkadot chain. 
+While blockchains technologically are decentralized, the ways users interact with them is not. A key centralized weak point are the server-hosted DApp websites, and all mobile apps and browser extensions currently in use by Blockchain users. This requires everyday users to trust the developer of the particular app, which is against blockchain spirit.
 
-Iridius presents a consensus-driven way to sign DApp websites, Android and iOS apps, and browser extensions. Users' browser or phone would automatically verify that signature to ensure that the software is what it should be. For example, when the developer of a DApp wants to publish an update, they will start an on-chain vote where users and auditors review and accept the update. Then, a network of Multiparty Computation (MPC) nodes sign that update with a key that the developer does not control. Lastly, the users would only be able to open the DApp if it holds a valid signature from the MPC nodes. Verification is transparent, similarly to how SSL authentication works for servers, so users do not need to be aware of it. 
+[Just last week, Convex's frontend was hijacked](https://thedefiant.io/convex-exploit/). A few months ago [BadgerDAO lost $130M](https://twitter.com/hiddentao/status/1466323984056791043), and [Cream Finance](https://twitter.com/CreamdotFinance/status/1371448627663491088) and [PancakeSwap](PancakeSwap) were compromised in March 2021. The server of **polkadot.js.org/apps**, the main way Polkadot users govern and secure the network, is also vulnerable to these attacks, together with the **Polkadot.js browser extension**. For example, an attacker can push an update that makes users unknowingly delegate to a malicious validator, which would compromise the security of the Polkadot chain. The cost to insure that this doesn't happen? A $50k grant :) 
 
-How DApps are verified depends on the platform. On the Web, due to the lack of native ways to authenticate server content, users need to install a browser extension. On Android, iOS, and Firefox extensions, verification happens out-of-the-box because every app is signed by a developer key by design - all that needs to happen is for developers to stop using their key and start using the MPC's key. For Chrome extensions, which are not signed by default, we propose a new extension webstore for verified software. 
+Iridius presents a consensus-driven way to sign DApp websites, Android and iOS apps, and browser extensions. Users' browser or phone would automatically verify that signature to ensure that the software is what it should be. For example, when the developer of a DApp wants to publish an update, they will start an on-chain vote where users and auditors review and accept the update. Then, a network of Multiparty Computation (MPC) nodes sign that update with a key that the developer does not control. Lastly, the users would only be able to open the DApp if it holds a valid signature from the MPC nodes. Verification is transparent, similarly to how SSL authentication works for servers, so users do not need to be aware of it. [Our pitch deck](https://docs.google.com/presentation/d/1dswx0b31pTVWaZcUxC_6yY6B-rBE4OBIJIAh4OeDlnE/edit?usp=sharing) visualises this process. 
 
-We are interested in this project simply because we are looking to work on a high-impact, security-focused project involving novel methodologies in the field of cryptography. 
+How DApps are verified depends on the platform. On the Web, due to the lack of native ways to authenticate server content, users need to install a browser extension. On Android, iOS, and Firefox extensions, verification happens out-of-the-box because every app is signed by a developer key by design - all that needs to happen is for developers to stop using their key and start using the MPC's key. For Chrome extensions, which due to google policies **cannot even be signed by the developer**, we would partner with Brave or other Web3 enabled browsers to include the necessary functionality to secure extensions. 
+
+We are interested in this project simply because we are firm believers in decentralisation, privacy, and security, and the opportunity we have identified is both high-impact and involves novel methodologies in the field of cryptography. Lastly, we are applying for a Polkadot grant, and not a grant from one of its parachains, because we like Polkadot's focus on decentralisation without compromise, and we think that our proposal resonates with this. 
 
 ### Project Details
 
-By the end of the grant, we expect to have a backend system (on-chain smart contract) which will allow developers to submit software revisions to be voted on by their community. We will also have a network of Multiparty Computation nodes which will sign all software revisions which have passed a vote. We will also design a public key infrastructure (PKI) where anyone will be able to learn the correct signing identity for any given app (say, polkadot.js.org). In order for users to verify the websites they visit, they will setup a browser extension we will develop, which will connect to the PKI and verify that the signature served by the web server matches that public key. 
+By the end of the grant, we expect to have a backend system (on-chain smart contract) which will allow developers to submit software revisions to be voted on by their community. We will also have a network of Multiparty Computation nodes which will sign all software revisions which have passed a vote. We will also design a public key infrastructure (PKI) where anyone will be able to learn the correct signing identity for any given app (say, **polkadot.js.org**). We will focus primarily on verifying Web3 websites. In order for users to verify the websites they visit, they will setup a browser extension we will develop, which will connect to the PKI and verify that the signature served by the web server matches that public key. 
 
-More details are found in our whitepaper here. TODO
+More details are [found in our whitepaper here](https://drive.google.com/file/d/1YQLlk-oG6kj4lyMI9zDbPOs9rozeeKTw/view). 
 
-Post the scope of the grant, we will also support the signing of Android and iOS apps, as well as Browser extensions. 
+Beyond the scope of the grant, we will also support the signing of Android and iOS apps, as well as Browser extensions. We expect Iridius to live in a multichain environment, finding utility in most major Blockchains and apps. 
 
 
 ### Ecosystem Fit
 
-Iridius's MPC backend (non-user-verification) side, which is responsible for voting, accepting, and signing software revisions, will be based in a Polkadot parachain. The main criteria is for the environment to be accessible enough to as many ecosystems as possible (we anticipate this to be useful for nearly every Blockchain ecosystem), as well as scalability. In particular, we anticipate users to be both developers of Blockchain projects, the stakeholders in these ecosystems' DAOs (which should be given the vote on updates), and end-users, who either do nothing or just install an extension. 
+Iridius's MPC backend (non-user-verification) side, which is responsible for voting, accepting, and signing software revisions, will be based in a Polkadot parachain. The main criteria is for the environment to be accessible enough to as many ecosystems as possible (we anticipate this to be useful for nearly every Blockchain ecosystem), as well as scalability. In particular, we anticipate Iridius to interact with developers of Blockchain projects, the stakeholders in these ecosystems' DAOs (which might want to review and vote the updates), and end-users, who either do nothing or just install an extension. 
 
-We could not find a relevant Polkadot project which addresses this problem (in fact, we could not find something like that on any chain!). The closest project we found is a recent initiative by Meta named Code Verify, which developed an open-source web-based extension for the verification of WhatApp Web and other sites (part of what we want to do too, but their verification relies on a trusted third party). The fact that even a major centralized corporation is trying to solve this problem shows that the need for such a solution is even more critical in Web3. 
+We could not find a relevant Polkadot project which addresses this problem (in fact, we could not find something like that on any chain!). The closest project we found is a recent initiative by Meta named [Code Verify](https://github.com/facebookincubator/meta-code-verify), which developed an open-source web-based extension for the verification of WhatApp Web and other sites (part of what we want to do too, but their verification relies on a trusted third party). The fact that even a major centralized corporation is trying to solve makes us think that the need for such a solution is even greater in Web3. 
 
-We therefore decided to list large Polkadot projects which are vulnerable to a server-sided attack, which our project should be able to prevent within the scope of this grant.
+We therefore decided to list large Polkadot projects which are vulnerable to a server-sided attack, which our project should be able to secure within the scope of this grant.
 
 1. Main Polkadot Portal (polkadot.js.org/apps), through which most users delegate and manage their DOT funds;
-2. Centrifuge (centrifuge.io) - with a TVL of $84,381,086; 
+2. Centrifuge (centrifuge.io) - with a TVL of ~80M; 
 3. Astar (astar.network) - with a TVL of $1B;
-4. Parallel (parallel.fi) - with a TVL of $537,850,936;
+4. Parallel (parallel.fi) - with a TVL of ~500M;
 5. Moonbeam (moonbeam.network), whose DApp manages their native token and Staking mechanics.
 
 ## Team :busts_in_silhouette:
@@ -72,6 +74,7 @@ We are two founders - one with a security and Blockchain protocol design backgro
 
 Zvezdin Besarabov (Tech):
 - Education: University College London
+- Co-Founder at https://outdid.io/
 - Ex CTO and Co-Founder at https://burrowvest.com/
 - Founding member & tech lead https://scynet.ai/
 - Founding member https://wetonomy.com/
@@ -83,6 +86,7 @@ Zvezdin Besarabov (Tech):
 
 Ana-Maria Pricop (Management & Partnerships):
 - Education: Sciences Po Paris
+- Co-Founder at https://outdid.io/
 - Business Startup consultant at [pricop.co](https://pricop.co)
 - Ex CEO & Co-founder: [ucurious.co](https://www.facebook.com/ucurious.co)
 - Project manager: [Mission Automate](https://www.missionautomate.com/), [Cambridge House](http://cambridgehouse.ro/cursuri-engleza/)
@@ -95,6 +99,10 @@ Ana-Maria Pricop (Management & Partnerships):
 
 ### Team Code Repos
 
+- Demo code for Iridius
+  - [DApp website to be secured](https://github.com/Zvezdin/iridius-demo-website)
+  - [Browser extension veirfying the website](https://github.com/Zvezdin/iridius-demo-extension)
+  - [A decentralised way to source verification data from an on-chain smart contract](https://github.com/Zvezdin/iridius-the-graph)
 - Demo code for an earlier iteration of our Polkadot grant proposal, after which we pivoted (read about this in “Additional information” at the end):
   - Demo version of a ZK verifier and circuit: https://github.com/OutDID-io/passport-verifier-circom
   - Proof of concept android ZK prover: https://github.com/OutDID-io/passport-reader
@@ -107,7 +115,9 @@ Ana-Maria Pricop (Management & Partnerships):
 
 ## Development Status :open_book:
 
-We have conducted appropriate technical and theoretical research, together with a theoretical explanation on how the proposed system works and its limitations, are summarized in our Whitepaper linked here. TODO
+We have conducted appropriate technical and theoretical research, together with a theoretical explanation on how the proposed system works and its limitations, are summarized in [our Whitepaper linked here](https://drive.google.com/file/d/1YQLlk-oG6kj4lyMI9zDbPOs9rozeeKTw/view). 
+
+We also developed a minimal demo on securing a web3-enabled website which uses Metamask to do on-chain actions. We forked & developed a browser extension which would verify this website, and developed an on-chain data feeder to retrieve verification data from a smart contract in a decentralised way (otherwise you just replace one centralisation bottleneck with another). Links in "Code Repos" section. 
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -205,6 +215,14 @@ In the speculative longter-term, we would like more open source projects and lib
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Personal recommendation
+
+Summary of external resources for Iridius:
+- [Pitch deck](https://docs.google.com/presentation/d/1dswx0b31pTVWaZcUxC_6yY6B-rBE4OBIJIAh4OeDlnE/edit?usp=sharing)
+- [Whitepaper](https://drive.google.com/file/d/1YQLlk-oG6kj4lyMI9zDbPOs9rozeeKTw/view)
+- Demo code
+  - [DApp website to be secured](https://github.com/Zvezdin/iridius-demo-website)
+  - [Browser extension veirfying the website](https://github.com/Zvezdin/iridius-demo-extension)
+  - [A decentralised way to source verification data from an on-chain smart contract](https://github.com/Zvezdin/iridius-the-graph)
 
 We had already spent 2 months working towards a slightly different idea - building a Zero-Knowledge KYC solution leveraging ZK proofs and MPC. We wrote a whitepaper, had live code demos, a list of blockchain projects interested in integrating this verification for their users, and even a draft of a Polkadot grant proposal. However, we then made the decision to pivot as we believe we’ve identified a larger opportunity with our current proposal. Nonetheless, we would share details of our prior work to show our team’s determination and ability to deliver:
 
