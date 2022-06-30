@@ -152,7 +152,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Total Estimated Duration:** ~~2 months~~ 5 months in total
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** 35,000 USDT
+- **Total Costs:** 27,500 USDT
 
 ## Milestone 1 — Implement core functionality
 
@@ -240,7 +240,7 @@ Operation published and the ID is bafybeifcmrf2ulnwdrhjpkwi2ifbixegegcs22rqbvlzh
 
 - **Estimated duration:** ~~1 month~~ actual 3.5 months
 - **FTE:** 2
-- **Costs:** 25,000 USDT
+- **Costs:** 17,500 USDT
 
 | Number | Deliverable                                | Specification                                                                                                                                                                                    |
 | -----: | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
