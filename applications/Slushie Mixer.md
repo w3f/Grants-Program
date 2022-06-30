@@ -36,39 +36,36 @@ The advantage of building an end-product after Tornado is the opportunity to use
 [^2]: [Poseidon Hash paper](https://eprint.iacr.org/2019/458.pdf)
 3. Implementation
 While we could build the smart contract with solidity and deploy on an EVM-compatible parachain, we believe that using a rust-based smart contract language brings unquestionable security benefits to the table.
-There are Rust-based implementations already available of both [Plonk](https://github.com/dusk-network/plonk) and [Poseidon Hash](https://github.com/dusk-network/Poseidon252/). The challenge will be integrating these into an `ink!` contract.
-Most importantly the Dusk lib uses custom data structures, that will need to be:
- - initially for testing, wrapped in local data structures and have the Spread/PackedLayout derive'd on them (due to the orphan rule you can't have non-local both struct and derive macro)
- - later, for optimisation, custom PackedLayout needs to be implemented for taking advantage of efficient storage
+There are Rust-based implementations already available of both [Plonk](https://github.com/dusk-network/plonk) and [Poseidon Hash](https://github.com/dusk-network/Poseidon252/). In the scope of this project, we will reuse those implementations in ink!-based smart contracts to build a usable product.
 Aside from the core protocol (smart contracts), there are two more critical components to make it fully functional:
-1. Tx Relayer: the whole idea of a mixer is that the withdrawing account can't be linked to the deposit account. This means withdrawing from an empty account which can't cover its Tx fees. This is where the relayer comes in: a user would generate the proof in the frontend portal with their own payout address and relayer's fee address as parameters, so that the relayer can't steal the funds. The relayer submits the Tx to the smart contract, which, upon verifying the correctness, would pay the amount to the user and a subtract the fee for the relayer.
-2. Frontend: users should have a friendly interface (akin to Tornado.cash) to:
-  - create commitments and submit them to the mixer. They should be presented with a "note" that allows them to withdraw the amount later
-  - select the relayer
-  - spend the notes, by submitting the necessary data to the contract for it to verify the ownership of the deposited coin
+    1. Tx Relayer: the whole idea of a mixer is that the withdrawing account can't be linked to the deposit account. This means withdrawing from an empty account which can't cover its Tx fees. This is where the relayer comes in: a user would generate the proof in the frontend portal with their own payout address and relayer's fee address as parameters, so that the relayer can't steal the funds. The relayer submits the Tx to the smart contract, which, upon verifying the correctness, would pay the amount to the user and a subtract the fee for the relayer.
+    2. Frontend: users should have a friendly interface (akin to Tornado.cash) to:
+          - create commitments and submit them to the mixer. They should be presented with a "note" that allows them to withdraw the amount later
+          - select the relayer
+          - spend the notes, by submitting the necessary data to the contract for it to verify the ownership of the deposited coin
+
+The end goal of this grant is a deployed set of smart contracts on some ink!-supporting testnet (like [Shibuya](https://shibuya.subscan.io/)) and a deployed Relayer.
+Since this grant only covers smart contracts, CLI & relayer development, we plan to include the frontend into the follow-up grant application, which would turn this set of smart contracts into a user-friendly application.
 
 ### Ecosystem Fit
 The project closest to ours is [anon](https://github.com/webb-tools/anon). They are building a mixer as a substrate module as opposed to smart contracts. Furthermore, they are utilizing the Bulletproofs system in contrast to Plonk. 
 
 ## Development Roadmap :nut_and_bolt:
 ### Overview
-* **Total Estimated Duration:** 5 months
+* **Total Estimated Duration:** 3 months
 * **Full-Time Equivalent (FTE):**  1
 
-### Milestone 1: MerkleTree implementation and contract template
+### Milestone 1: ink! contract with Poseidon-based MerkleTree storage
 * **Estimated duration:** 0.5 month
 * **FTE:**  1
-1. Implement an append-only `MerkleTree` struct on 32-byte arrays as leafs, that can be imported into an `ink!` contract. Use an `ink!` built-in hash function (Blake2x256) for now.
-2. Create an `ink!` contract with `deposit` function, that uses the MerkleTree as the underlying data storage and appends the commitments "deposited" to it.
-3. Add the signature for the `withdraw` function. Verify that the submitted nullifier hash hasn't been "spent" yet.
-4. Emit the `Deposit` and `Withdraw` events.
-### Milestone 2: Integrate Poseidon hash
-* **Estimated duration:** 0.5 month
+* **Cost** 5000 USDT 
+1. Create an `ink!` contract with `deposit` function, that uses the MerkleTree as the underlying data storage and appends the commitments "deposited" to it. The MerkleTree will use some Poseidon implementation (e.g., [neptune](https://github.com/filecoin-project/neptune), [poseidon252](https://github.com/dusk-network/Poseidon252) or alike).
+2. Add the signature for the `withdraw` function. Verify that the submitted nullifier hash hasn't been "spent" yet.
+3. Emit the `Deposit` and `Withdraw` events.
+### Milestone 2: Plonk prover CLI tool (compiles to WASM)
+* **Estimated duration:** 1 month
 * **FTE:**  1
-Replace Blake2x256 with [Poseidon](https://github.com/dusk-network/Poseidon252/) hash algorithm.
-### Milestone 3: Plonk prover CLI tool (compiles to WASM)
-* **Estimated duration:** 2 months
-* **FTE:**  1
+* **Cost** 10000 USDT
  
 Create a CLI tool that takes as inputs:
 - the prover key `d_p`(hardcoded for now; later generated from a trusted setup ceremony)
@@ -80,12 +77,13 @@ Create a CLI tool that takes as inputs:
 - relayer address `t`
 - relayer fee `f`
 And produces a ZK proof `P`. The tool can be compiled to WASM for future inclusion in the frontend component.
-Utilise [Dusk's Plonk implementation](https://github.com/dusk-network/plonk) as much as possible.
-### Milestone 4: `withdraw` method & Plonk verifier in `ink!`
-* **Estimated duration:** 1.5 months
+As [Dusk's Plonk implementation](https://github.com/dusk-network/plonk) already compiles to WASM, the only thing left is to write the code that constructs Zero-Knowledge proofs according to our input parameters.
+### Milestone 3: `withdraw` method & Plonk verifier in `ink!`
+* **Estimated duration:** 1 month
 * **FTE:**  1
+* **Cost** 10000 USDT
 To withdraw a coin, a user needs to submit a proof that they know the randomness & nullifier, i.e. they are the true owners of the coin.
-The `withdraw` method of the mixer ensure that the nullifier `k` has not been spent yet (by storing the previously spent nullifier hashes).
+The `withdraw` method of the mixer ensures that the nullifier `k` has not been spent yet (by storing the previously spent nullifier hashes).
 Critically, the method delegates the checking of the proof to the verifier (another method), which takes as inputs:
 - the verifier key `d_v` (hardcoded for now; later generated from a trusted setup ceremony)
 - ZK Proof `P` generated by the prover
@@ -95,10 +93,11 @@ Critically, the method delegates the checking of the proof to the verifier (anot
 - relayer address `t`
 - relayer fee `f`
 It returns true if the proof `P` satisfies the public values (the rest of the inputs)
-Utilise [Dusk's Plonk implementation](https://github.com/dusk-network/plonk) as much as possible.
-### Milestone 5: Relayer
+We will utilise [Dusk's Plonk implementation](https://github.com/dusk-network/plonk) to do the verification for us.
+### Milestone 4: Relayer
 * **Estimated duration:** 0.5 month
 * **FTE:**  1
+* **Cost:** 5000 USDT
 An offline tool (written in Rust) that is pre-funded and accepts incoming requests.
 It verifies the validity of the submitted proof & Tx. If correct, it submits the Tx to the `ink!` contract (using `subxt`, `substrate-api-client` or other crates).
 Also here we will write out the smart contract logic for paying out the fee `f` to relayer address `t`, once a valid Tx has been submitted. This will fall under the `withdraw` method.
@@ -111,8 +110,8 @@ Frontend application development, Trusted setup ceremony, potential integration 
 ### Team members
 **Kyrylo Gorokhovskyi** (CTO and Blockchain solution architect)
 **Volodymyr Antonov** (Blockchain Rust Engineer)
-**Nino Lipartia** (Cryptography Engineer)
-**Arthur Torosian** (Backend developer)
+**Nino Lipartia** (Cryptography Engineer, Rust Engineer)
+
 
 ### Contact
 * **Contact Name:** Kyrylo Gorokhovskyi
@@ -125,15 +124,15 @@ Frontend application development, Trusted setup ceremony, potential integration 
 
 ### Team Code Repos
 * https://github.com/4IRE-Labs
-https://github.com/Kyrylog
-https://github.com/azazak123
-https://github.com/NinoLipartiia4ire
-https://github.com/artur-torosian-4irelabs
+* https://github.com/Kyrylog
+* https://github.com/azazak123
+* https://github.com/NinoLipartiia4ire
+
 
 ### Team LinkedIn Profiles (if available)
-https://www.linkedin.com/mwlite/in/kyrylo-gorokhovskyi-9b33701
-https://www.linkedin.com/mwlite/in/nino-lipartiia-428302236
-https://www.linkedin.com/mwlite/in/artur-torosian-222b64100
+* https://www.linkedin.com/mwlite/in/kyrylo-gorokhovskyi-9b33701
+* https://www.linkedin.com/mwlite/in/nino-lipartiia-428302236
+
 ## Development Status :open_book:
 The project is on internal discovery phase.
 
@@ -142,33 +141,31 @@ The project is on internal discovery phase.
 ### Overview
 **We have decided to describe a full roadmap of the Slushie project here, with estimates.**
 
-* **Total Estimated Duration:** 5 months
+* **Total Estimated Duration:** 3 months
 * **Full-Time Equivalent (FTE):** 1
-* **Total Costs:** 50000 USD
+* **Total Costs:** 30000 USDT
 
-### Milestone 1 - MerkleTree implementation and contract template
+### Milestone 1 - ink! contract with Poseidon-based MerkleTree storage
+**Duration**: 0.5 months
+**Costs**: 5000 USDT
+**Programming languages**: ink!, Rust
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and a README with the details of our Merkletree implementation. |
+| 0a. | License | MPL-2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a README with the details used libraries & contract structure. |
 | 0c. | Tests | The tests will be presented as unit tests, and instructions on how to run them will be referenced in the README file. |
-| 1. | MerkleTree struct | Implement an append-only MerkleTree struct on 32-byte arrays as leafs, that can be imported into an ink! contract. Use an ink! built-in hash function (Blake2x256) for now. |
-| 2. | Contract creation | Create an ink! contract with deposit function, that uses the MerkleTree as the underlying data storage and appends the commitments “deposited” to it. |
+| 1. | ink! contract with MerkleTree storage | Create an ink! contract that stores internal data (commits, nullifiers, etc.) as a Merkle Tree, add signature for "deposit" function |
+| 2. | Change hash type of the Merkle Tree to some Poseidon implementation | Change hash type for the Merkle Tree to some Poseidon implementation (Dusk's [Poseidon252](https://github.com/dusk-network/poseidon252), [Neptune](https://github.com/filecoin-project/neptune)) |
 | 3. | Withdraw function signature | Add the signature for the withdraw function. Verify that the submitted nullifier hash hasn’t been “spent” yet. |
 | 4. | Add events | Emit the Deposit and Withdraw events. |
 
-### Milestone 2 - Integrate Poseidon hash
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and reference the used algorithm in the README. |
-| 0c. | Tests | The tests will be presented as unit tests, and instructions on how to run them will be referenced in the README file. |
-| 1.  | Replace Blake2x256 hash with the Poseidon hash | Replace Blake2x256 with [Poseidon](https://github.com/dusk-network/Poseidon252/) hash algorithm. |
+### Milestone 2 - Plonk prover CLI tool (compiles to WASM)
 
-### Milestone 3 - Plonk prover CLI tool (compiles to WASM)
-
+**Duration**: 1 month
+**Costs**: 10000 USDT
+**Programming languages**: Rust
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -178,26 +175,35 @@ The project is on internal discovery phase.
 | 1.  | The CLI app | Create the CLI app to later include the proof generation logic |
 | 2.  | Proof production logic | Create Plonk proofs from the given data (prover key, randomness etc.) |
 
-### Milestone 4: `withdraw` method & Plonk verifier in `ink!`
+### Milestone 3: `withdraw` method & Plonk verifier in `ink!`
+
+**Duration**: 1 month
+**Costs**: 10000 USDT
+**Programming languages**: ink!, Rust
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MPL-2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and reference the used algorithm in the README. |
-| 0c. | Tests | The tests will be presented as unit tests, and instructions on how to run them will be referenced in the README file. |
-| 1.  | Plonk verifier | Ink! contract logic that verifies provided proofs |
-| 2.  | Withdrawal contract logic | Add contract logic for coins withdrawal and saving used nullifier |
+| 0b. | Documentation | We will provide the inline documentation of the code and docs for the verifier separately. |
+| 0c. | Tests | The tests will be presented as unit tests, integration tests using `polkadot.js` / `redspot` (TBD) and instructions on how to run them will be referenced in the README file. |
+| 1.  | Plonk verifier | ink! contract logic that verifies provided proofs |
+| 2.  | Withdrawal contract logic | Add contract logic for withdrawing coins and saving the used nullifier |
 
-### Milestone 5: Relayer
+### Milestone 4: Relayer
+
+**Duration**: 0.5 months
+**Costs**: 5000 USDT
+**Programming languages**: Rust
+
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MPL-2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and reference the used algorithm in the README. |
+| 0b. | Documentation | We will provide both inline documentation of the code and quick walk-through of the service. |
 | 0c. | Tests | The tests will be presented as unit tests, and instructions on how to run them will be referenced in the README file. |
-| 1.  | Relayer service | Service for validating transactions and proofs and relaying them to a blockchain for a fee |
-| 2.  | Fee logic | Change in a contract to pay a fee to the relayer |
+| 1.  | Relayer service | Service for validating transactions and proofs and relaying them to the blockchain for a fee |
+| 2.  | Fee logic | Change in a contract to pay a fee to the relayer from the transferred funds directly |
 
 ### Current work - Scope of this Grant
 ## Additional Information :heavy_plus_sign:
-**How did you hear about the Grants Program?** Substrate Builders Program! 
+**How did you hear about the Grants Program?** Substrate Builders Program
