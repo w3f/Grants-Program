@@ -41,12 +41,12 @@ So, what is verifiably shared by the validators of the FB is the series of hashe
 
 Since the blocktime of the Parachain is longer than the blocktime of the FB, both the raw data from the user and the hashed data from the validator are sent to the Parachain in an asynchronous way (typically it could be every 10 to 30 blocks of the FB). 
 The parachain is not re-computing all the raw and the hashed data, for the moment is just storing them in a verifiable way.
-![datagen_deep_infrastructure_diagram](https://i.imgur.com/AAbO25j.png)
+![datagen_deep_infrastructure_diagram](https://i.imgur.com/w0obsru.png)
 
-**Example**: ```raw data X``` came from ```user A```, resulting in ```hash Y``` from ```validator A```. Randomly, the Parachain extracts some computational problems to be double-checked. For example, it can randomly extract ```raw data X``` for double-checking and entrust it to validator ```B```, ```C``` and ```D``` (sending back the request to them in the FB). 
-```B```, ```C``` and ```D``` compute ```X``` again. Presuming that the majority of ```B```, ```C``` and ```D``` (so at least two of them) are honest, the majority of them should compute ```X``` and obtain the same hash (```hash Z```). They send the hash back to the Parachain, and than compare the hashes. If for at least two validators (between ```B```, ```C``` and ```D```) ```hash Z```  = ```hash Y``` (the same hash obtained by ```validator A```), ```validator A``` is then presumed honest and can continue with its validating activity.
-If, instead, for at least 2 validators (between ```B```, ```C``` and ```D```) ```hash Z``` ≠ ```hash Y```, ```validator A``` is presumed a liar.
-Since to be a validator ```A``` needed both to provide GPU and/or CPU processing capacity and to buy and stake DataGen native tokens, is easy to impose an economical cost for the cheating ```validator A``` by making it loose staked coins as a consequence of its wrong computation. In this regard the Parachain acts as an authority for the random processes of the FB. 
+**Example**: `raw data X` came from `user A`, resulting in `hash Y` from `validator A`. Randomly, the Parachain extracts some computational problems to be double-checked. For example, it can randomly extract `raw data X` for double-checking and entrust it to validator `B`, `C` and `D` (sending back the request to them in the FB). 
+`B`, `C` and `D` compute `X` again. Presuming that the majority of `B`, `C` and `D` (so at least two of them) are honest, the majority of them should compute `X` and obtain the same hash (`hash Z`). They send the hash back to the Parachain, and than compare the hashes. If for at least two validators (between `B`, `C` and `D`) `hash Z`  = `hash Y` (the same hash obtained by `validator A`), `validator A` is then presumed honest and can continue with its validating activity.
+If, instead, for at least 2 validators (between `B`, `C` and `D`) `hash Z` ≠ `hash Y`, `validator A` is presumed a liar.
+Since to be a validator `A` needed both to provide GPU and/or CPU processing capacity and to buy and stake DataGen native tokens, is easy to impose an economical cost for the cheating `validator A` by making it loose staked coins as a consequence of its wrong computation. In this regard the Parachain acts as an authority for the random processes of the FB. 
 
 We prefer the use of a Parachain, instead of two FB or a HB of our own FB, because of the improved resiliency that the Polkadot ecosystem can provide.
 
@@ -58,7 +58,7 @@ This collateral positive externality happens since validators that are faster to
 
 Those independent validators, while not optimally located to compete with AWS-hosted validators for users in the “north of the world”, can also become validators of last resort in the case in which the centralized server farms are not providing service anymore (it can be due to technical outage or political pressure for censorship or other factors). As said, the goal is not to expel AWS-hosted validators from the Datagen network, but to keep it decentralized enough while being at the same time low latency and computationally efficient.
 
-The only computational activity that is happening off-chain is (following the example above) the act of ```validator A``` processing the ```raw data X``` and giving it to the ```user A```, but: to receive the reward in ```#DG```, ```validator A``` needs also to send the hashed data to both the other validators of the FB lighter chain and to the Parachain, since failing to do so will mean no reward because ```validator A``` would be processing off-chain data which wouldn't be recorded in the blockchain. Raw data is also sent independently from the ```user A``` to the Parachain and the correct pairing between hashing and raw data is always verified in-chain.
+The only computational activity that is happening off-chain is (following the example above) the act of `validator A` processing the `raw data X` and giving it to the `user A`, but: to receive the reward in `#DG`, `validator A` needs also to send the hashed data to both the other validators of the FB lighter chain and to the Parachain, since failing to do so will mean no reward because `validator A` would be processing off-chain data which wouldn't be recorded in the blockchain. Raw data is also sent independently from the `user A` to the Parachain and the correct pairing between hashing and raw data is always verified in-chain.
 
 Ideally, we would like to explore some technic to keep light the blockchains long-term to keep it clean of old unnecessary raw data and just having hashes long term (that’s why we like so much Polkadot’s feature that allows blockchains to evolve without forking).
 
@@ -173,13 +173,13 @@ The goal is to achive a fully functional mechanism for the random selection of t
 
 - **Total Estimated Duration:** 5 months (starting date - August 2022)
 - **Full-Time Equivalent (FTE):**  2
-- **Total Costs:** 50,000 USD
+- **Total Costs:** 44,000 USD
 
-### Milestone 1 — Implement the randomized substrate pallet ```pallet_random_node_selector```
+### Milestone 1 — Implement the randomized substrate pallet `pallet_random_node_selector` and `pallet_check_node_computational_work`
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 1,5 month
 - **FTE:**  2
-- **Costs:** 10,000 USD
+- **Costs:** 12,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -188,14 +188,19 @@ The goal is to achive a fully functional mechanism for the random selection of t
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** on Medium that explains how we are going to develop the pallet. |
-| 1. | Substrate pallet | We will create a ```pallet_random_node_selector``` that implement the randomized selection of the nodes for the fast blockchain using the Substrate ```Randomness``` trait |  
+| 1. | Substrate pallet | We will create a `pallet_random_node_selector` that implement the randomized selection of the nodes for the fast blockchain using the Substrate `Randomness` trait. This pallet run on the Heavy Blockchain. |
+|1a.| Functions | <ul><li>`reliable_node` update the list of the reliable nodes on the Heavy Blockchain.</li><li> `random_checker_node_selector` select 3 reliable random nodes in the fast blockchain to check the computational work.</li><li>`random_node_to_check` select a single random node to be check by the 3 checker nodes.</li></ul> 
+|2.| Substrate pallet | We will create a `pallet_computational_work` that runs computational work on the fast nodes and pair them with their works.
+|2a.| Functions | <ul><li>`math_work_testing` this function will provide math problems to solve by Fast Blockahin nodes, just for testing.</li><li>`hash_work` function will hash the raw math problem and the elaborated result from the node and pair, comunicate to the Heavy Blockchain.</li></ul>
+|3.| Substrate pallet| We will crate a `pallet_check_node_computational_work` that manage the control process on the Fast Blockchain.
+|3a.| Functions | <ul><li>`check_computational_work` take info from the Heavy Blockchain (from the `pallet_random_node_selector`) and check the computational work of the target node. At this moment the nodes will make a simple math calculations just to check the mechanism.</li><li>`check_result` elaborate the result of the check process. If checked node has the same result of the majority of the checker nodes nothing happen. If the majority of the nodes have a different result from checked node this one will lose all his staked tokens (at this moment we only simulate the token lost) and checked node will be excluded from the Fast Blockchain.<li>`reliable_node` update the list of the reliable nodes on the Fast Blockchain.</li></ul>
 
 
 ### Milestone 2 — Connecting the two blockchains
 
-- **Estimated Duration:** 2 months
+- **Estimated Duration:** 1,5 months
 - **FTE:**  2
-- **Costs:** 20,000 USD
+- **Costs:** 12,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -204,9 +209,10 @@ The goal is to achive a fully functional mechanism for the random selection of t
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** on Medium that explains how we are going to develop this step. |
-| 1. | RPC Method (Random Selector) | We will create a custom RPC method to get the result of the random selection of the nodes to the fast blockchain  |
-| 2. | RPC Method (Blockchain status) | We will implement a set of RPC methods to check the status of the two blockchains. (e.g. if a node on the fast blockchain is reliable) |
-| 3. | Setup the two blockchains | We will setup the two blockchains to test the communication and the ```pallet_random_node_selector``` |
+| 1. | RPC Method (Random Selector) | We will create a custom RPC method to get the result of the random selection of the nodes to the Fast Blockchain. We will implement comunication to get: <ul><li> Random node id to check and raw math problem (From HB to FB) </li><li>3 Random node id for the checkers and raw math problem (From HB to FB)</li></ul>|
+| 2. | RPC Method (Blockchain status) | We will implement a set of RPC methods to check the status of the two blockchains. <ul><li>Mapping of all nodes an their status (reliable or not reliable) sync from Heavy Blockchain.</li><li>Computetional works done and to be done by FB (total and mapping for every fast node)</li></ul> |
+| 3. | Setup the two blockchains | We will setup the two blockchains to deep test the communications and `pallet_random_node_selector`, `pallet_check_node_computational_work` and `pallet_computational_work`.|
+
 
 
 ### Milestone 3 — Web Dapp
@@ -223,6 +229,12 @@ The goal is to achive a fully functional mechanism for the random selection of t
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** on Medium that explains how we are going to develop this step. |
 | 1. | Web Dapp | We will create a web dapp to verify the functionality of the infrastructure, the GUI will display interactions between the two blockchains. |
+| 1a.| Dapp Mock-up| Download the mock-up of the dapp at [this link](https://drive.google.com/drive/folders/1SJRPbczZhRaXVLHnLvmp_XIeBtBBv0g-). |
+| 1b. | Home page | ![home page](https://i.imgur.com/oJecYBw.png) |
+| 1c. | Fast Blockchain - Block Page| ![FB Block](https://i.imgur.com/Oq6DFLu.png) |
+| 1d. | Heavy Blockchain - Block Page | ![HB Block](https://i.imgur.com/iJCc6nh.png) |
+| 1e. | Fast Blockchain - Node Page | ![FB Node](https://i.imgur.com/IaPz2A3.png) |
+| 1f. | Heavy Blockchain - Node Page | ![HB Node](https://i.imgur.com/IYEyVzA.png)|
 
 
 ## Future Plans
