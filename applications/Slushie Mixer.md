@@ -98,6 +98,7 @@ We will utilise [Dusk's Plonk implementation](https://github.com/dusk-network/pl
 * **Estimated duration:** 0.5 month
 * **FTE:**  1
 * **Cost:** 5000 USDT
+
 An offline tool (written in Rust) that is pre-funded and accepts incoming requests.
 It verifies the validity of the submitted proof & Tx. If correct, it submits the Tx to the `ink!` contract (using `subxt`, `substrate-api-client` or other crates).
 Also here we will write out the smart contract logic for paying out the fee `f` to relayer address `t`, once a valid Tx has been submitted. This will fall under the `withdraw` method.
