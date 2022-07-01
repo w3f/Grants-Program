@@ -58,14 +58,14 @@ The project closest to ours is [anon](https://github.com/webb-tools/anon). They 
 ### Milestone 1: ink! contract with Poseidon-based MerkleTree storage
 * **Estimated duration:** 0.5 month
 * **FTE:**  1
-* **Cost** 5000 USDT 
+* **Cost:** 5000 USDT 
 1. Create an `ink!` contract with `deposit` function, that uses the MerkleTree as the underlying data storage and appends the commitments "deposited" to it. The MerkleTree will use some Poseidon implementation (e.g., [neptune](https://github.com/filecoin-project/neptune), [poseidon252](https://github.com/dusk-network/Poseidon252) or alike).
 2. Add the signature for the `withdraw` function. Verify that the submitted nullifier hash hasn't been "spent" yet.
 3. Emit the `Deposit` and `Withdraw` events.
 ### Milestone 2: Plonk prover CLI tool (compiles to WASM)
 * **Estimated duration:** 1 month
 * **FTE:**  1
-* **Cost** 10000 USDT
+* **Cost:** 10000 USDT
  
 Create a CLI tool that takes as inputs:
 - the prover key `d_p`(hardcoded for now; later generated from a trusted setup ceremony)
@@ -81,7 +81,7 @@ As [Dusk's Plonk implementation](https://github.com/dusk-network/plonk) already 
 ### Milestone 3: `withdraw` method & Plonk verifier in `ink!`
 * **Estimated duration:** 1 month
 * **FTE:**  1
-* **Cost** 10000 USDT
+* **Cost:** 10000 USDT
 
 To withdraw a coin, a user needs to submit a proof that they know the randomness & nullifier, i.e. they are the true owners of the coin.
 The `withdraw` method of the mixer ensures that the nullifier `k` has not been spent yet (by storing the previously spent nullifier hashes).
@@ -148,9 +148,9 @@ The project is on internal discovery phase.
 * **Total Costs:** 30000 USDT
 
 ### Milestone 1 - ink! contract with Poseidon-based MerkleTree storage
-**Duration**: 0.5 months
-**Costs**: 5000 USDT
-**Programming languages**: ink!, Rust
+**Duration:** 0.5 months
+**Costs:** 5000 USDT
+**Programming languages:** ink!, Rust
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -165,9 +165,9 @@ The project is on internal discovery phase.
 
 ### Milestone 2 - Plonk prover CLI tool (compiles to WASM)
 
-**Duration**: 1 month
-**Costs**: 10000 USDT
-**Programming languages**: Rust
+**Duration:** 1 month
+**Costs:** 10000 USDT
+**Programming languages:** Rust
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -179,9 +179,9 @@ The project is on internal discovery phase.
 
 ### Milestone 3: `withdraw` method & Plonk verifier in `ink!`
 
-**Duration**: 1 month
-**Costs**: 10000 USDT
-**Programming languages**: ink!, Rust
+**Duration:** 1 month
+**Costs:** 10000 USDT
+**Programming languages:** ink!, Rust
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -193,9 +193,9 @@ The project is on internal discovery phase.
 
 ### Milestone 4: Relayer
 
-**Duration**: 0.5 months
-**Costs**: 5000 USDT
-**Programming languages**: Rust
+**Duration:** 0.5 months
+**Costs:** 5000 USDT
+**Programming languages:** Rust
 
 
 | Number | Deliverable | Specification |
@@ -208,4 +208,4 @@ The project is on internal discovery phase.
 
 ### Current work - Scope of this Grant
 ## Additional Information :heavy_plus_sign:
-**How did you hear about the Grants Program?** Substrate Builders Program
+**How did you hear about the Grants Program?** Personal recommendation
