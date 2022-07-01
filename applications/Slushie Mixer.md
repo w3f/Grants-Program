@@ -82,6 +82,7 @@ As [Dusk's Plonk implementation](https://github.com/dusk-network/plonk) already 
 * **Estimated duration:** 1 month
 * **FTE:**  1
 * **Cost** 10000 USDT
+
 To withdraw a coin, a user needs to submit a proof that they know the randomness & nullifier, i.e. they are the true owners of the coin.
 The `withdraw` method of the mixer ensures that the nullifier `k` has not been spent yet (by storing the previously spent nullifier hashes).
 Critically, the method delegates the checking of the proof to the verifier (another method), which takes as inputs:
