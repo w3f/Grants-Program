@@ -40,7 +40,7 @@ Get entity's follower list:Query through check the who is holding the entity's N
 
 ### Team members
 
--Lester 
+- Lester 
 
 ### Contact
 
@@ -85,7 +85,7 @@ No.
 - **Full-Time Equivalent (FTE):**  1 FTE
 - **Total Costs:**  5,000 USD
 
-### Milestone 1 Example — Implement ink! Contract & Front-end Modules
+### Milestone 1 — Implement Five Degrees ink! Contract & Front-end Modules
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
@@ -93,10 +93,10 @@ No.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. |  Unlicense |
 | 0b. | Documentation |We will provide both inline documentation of the code and a basic tutorial that explains how a user can deploy our smart contract, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0d. | Docker | We will provide a Docker file(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article on medium detailing our social protocol construction .
 | 1. |  ink! Contract: FiveDegrees | This contract is the overall contract of the FiveDegrees protocol.Set Entity's Info, Get Entity's Info,Build the relationship,Destroy the relationship and so on. |  
 | 2. |  protocol front-end  | We will deliver the front-end  with the contract |  
@@ -110,6 +110,7 @@ No.
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** 
-personal recommendation.
+
+- personal recommendation.
 
 
