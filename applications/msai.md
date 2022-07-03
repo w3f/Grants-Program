@@ -140,15 +140,14 @@ Marvsai team www.marvsai.com
 Core:
 - Dr Salman Alim Marvasti --  Experienced Finance and Blockchain Senior Developer currently at Blockchain.com
 - Dr Atefeh Alihossieni - Internal Medicine Specialist - Medical App Design Baan Clinic- Millway medical practice
-  In addition one of our team was a user of a medical data as part of a GSK Wellcome trust funded PhD.  
-  Dr Ali Marvasti's research with medical data made evident that even if an application is developed that could scan and store all the data there is no reliable standard to store it in a decentralised manner.
-  The existing projects are not benefitial for real life situation.  
-- Advisory
-- James Isilay - Cognism AI founder and CEO
+  Advisory
 - Rahim Lalani CEO Text services and contract app development company in Pakistan 
-Potential Client:
-- - Dr Ali Marvasti -- Consultant Neurologist - NHS , Cambridge University
-- 
+Advisor and  Client:
+- James Isilay - Cognism AI founder and CEO
+- Dr Ali Marvasti -- Consultant Neurologist  and PhD candidate- NHS , Cambridge University 
+    Dr Ali Marvasti's research with medical data made evident that even if an application is developed that could scan and store all the data there is no reliable standard to store it in a decentralised manner.
+    The existing projects are not benefitial for real life situation.
+
 ### Contact
 
 - **Contact Name:**Salman Marvasti
