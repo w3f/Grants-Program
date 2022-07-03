@@ -43,13 +43,6 @@ We are also creating API connections with our Metaverse and its specific functio
  
 
 
-##### Liberland Dollar (LLD)    
-
-Our token, used as a medium of exchange and for validators/nominators, is the Liberland Dollar (LLD). Unlike the Dot, our LLD is meant to serve as the currency. It will in fact have the potential to become the common-grounds currency for all the projects involved. The LLD core system keeps close to Polkadot's battle-tested tokenomics and rules for standalone projects.
-LLD is our native token, allowing anyone to run a validator.
-
-We envision a possible future of an international organization on the blockchain, an agreement of free trade. The LLD or other LLD-like currencies would be easily transferable and commutative. The other adopters might build their chains based on our example or become parachains to the Liberland Smart Chain.
-
 ## Frontend  
 The project also has an easy to use Frontend, serving as the Citizen-facing interface for a State. Our system is Liberland branded but made easy to adopt by other States, legacy or otherwise, real-life or metaverse-based. We are building some standard but many new, sought-after features, including and not limited to:
 -  wallet, nominator/validator interface (our streamlined design adapted for State purposes);
@@ -58,6 +51,7 @@ The project also has an easy to use Frontend, serving as the Citizen-facing inte
 -  Representative Democracy and Elections;
 -  legislative drafting and legislative extrinsic management; and
 -  the E-executive; a portal for the government to rule and regulate with API connection to extrinsic information systems of extant States (including Liberland).
+
 
 
 
@@ -76,18 +70,7 @@ To set up the required functions for States' running and give developers and end
 We will describe the function of each of these custom Pallets below.	
 
 
-##### Proof of Commitment
-We are implementing the identity pallet and adapting it to Liberland’s legal system: Citizenship requires a semi-permanent pooling of LLM to prove the applicant’s commitment to the State. When you move to a different country, this asks something of you, and there are requirements; we are mirroring this principle on-chain.                   
-The committed money remains in the Wallet of the user, who can then use these for politics. 
-The limitation is that they can’t transfer the LLM into other wallets, as the token remain frozen. 
-We are the first to introduce NFTs as proof of belonging to a State.
-A user need to:   
-*  Pass a KYC process  
-*  Lock up 5000 LLM   
 
-
-If these requriements are met, the user account get's the on-chain citizen user role added to it's account. This token is transferable but only to KYC-ed users.             
-The principle that a Citizen has to pool a certain amount to prove they are loyal is called the “Proof of Commitment” in our system. This system transforms the legacy-State principle of Citizenship on a blockchain, using game-theory correlation (willingness to lock tokens = higher chance users are serious with the project).      
 
 
 ## Liberland Merit (LLM Pallet)   
@@ -119,8 +102,14 @@ LLM will be minted over a timeframe of 48 years, allowing inflation to get fixed
 #### Senate approved transfers   
 We create a special organ, the Senate, adaptable by other adopters as they see fit (see below). One of the main purposes of this organ is to preside over Treasury spending. It is not a political organ per-se; instead, it is composed of the most committed (invested) individuals in the State and the system, providing a game-theory based incentive to make rational decisions.   
 
-#### Incentive to HODL LLM   
-Due to the Proof of Commitment and the legislative system offering possible APR (see above and below respectively), token holders have an incentive to keep their LLM vested, and we expect this to raise and stabilize the price. 
+#### LLM Currency Trait   
+Liberland is the first project that utilize on-chain assets instead of the default currency traits. Allowing on-chain assets to be used by third pallet pallet, such as our LLM integration with Pallet democracy. We aim to build out the functionality for on-chain assets. Driving the path for on-chain assets integration. This allows us to use on-chain assets to be easily adopted by the entire system for governance(currency locks, voting) and custom functionality.
+
+
+
+#### Treasury integration  
+Unlike other pallet, we trust the on-chain treasury to be the owner of LLM, this design decition allows us to have a safe place to store on-chain assets, while at the same time minimizing trust for any centralized solution such as a multisig or having LLM managed by a regular account key.  
+
 
 ## Legislative Power 1: Representative Democracy   
 
@@ -136,7 +125,7 @@ Members of Congress receive a share of LLM minted into the Treasury, and they ar
  
 However, this system is easily adaptable to "one-citizen-one-vote" if required by more conservative adopters and without the voter incentive. Conversely, more experimental polities can tweak it and add alternative voting or other algorithms. The executive typically keeps the lion's share of the Treasury in those use-cases.
  
-In Liberland, Voters will be allowed to rethink their vote, even mid-term. Based on their performance, they can rearrange the LLM allotted to the Congressmen, creating live feedback to keep them loyal to their voter base.
+In Liberland, Voters will be allowed to rethink their vote, even mid-term. Based on their performance, they can rearrange the LLM allotted to the Congressmen, creating live feedback to keep them loyal to their voter base. All voting is made with the LLM Pallet, allowing use to vote with on-chain assets. 
 
 
 ## Legislative Power 2: Direct democracy
@@ -159,12 +148,6 @@ The powers of the Executive in Liberland are to govern directly on-chain within 
 More complex State actors might create specialized parachains which would govern their municipalities or even more complex central bureaucracies. Given that States generate traffic as a matter of course, such systems are very interesting for Validators and Nominators and virtually non-existent in the current space.
  
 
-
-#### Treasury   
-The Treasury for LLM, unlike that of Polkadot and like treasuries of extant States, operates without the burn mechanism. LLD follows the same rules as Polkadot, and so there is a burn mechanism to offset the “infinite” (really: algorithmic) supply. 
-As the LLM tokenomics suppose a deflationary token, holding LLM in the treasury will help finance running the State. The System distributes a significant portion of the treasury among the Members of Congress. Through this, the tokens get directly into the hands of the Voters (Citizens). Using the LLM Pallet the treasury is the owner and manager of several on-chain assets, allowing us to expand the base functionality to have the treasury securely manage on-chain assets for us. Decentralizing trust in a true way.
-
-
 #### Company Registration Pallet    
 The company registration pallet works similar to government company registrar authorities. This pallet will handle the registration of companies in a truly decentralized way. Allowing anyone to apply for registering on-chain companies. The Registrar of Companies part of the government will which will  
 work similar to an on-chain council will manually approve all requests for registration.  
@@ -177,7 +160,7 @@ The sole purpose of this pallet is to perform on-chain account privilege verific
 One of the standing values that Liberland has is that all taxes are paid voluntarily by the citizens of Liberland. Liberland uses and enables other adopters to use a system where the biggest investors gain a special status token, that of a Senator. The system mints this token where one vests a considerable amount of LLM, proving an extraordinary commitment.
 
 The Senate is another Collective as per the Collective Pallet. It is a very simple Collective; comprised of all the holders of the Senatorship, the Senate 
--  handles Treasury spending; 
+-  Can request Treasury spending requests for LLM; 
 -  Repeals Regulations, exactly as the Direct Democracy does.   
 There are many States with two-chambers systems in their Parliament. Others may create a special “(de-)central bank”-like solution out of the Senate, with an independent body of experts being the co-owners of the multi-sig there.
 
@@ -345,7 +328,8 @@ Regarding the last topic, we have the following milestones, which might become t
 ### Virtual Land and Assets  
 Land in Liberland, both the real and virtual versions thereof, will be tokenized into on-chain assets.    
 The initial purchase of the land will be by an Initial Land Offering (ILO). After privatizing most land, further purchases will occur using Liberland's blockchain dex virtual marketplaces.     
-
+We will create our own Land ownership pallet, thanks to our implementation of LLM Pallet we want to build on our on-chain asset implementation, using will build a pallet that allows users to own and trade Virtual Land. Liberland's Land ownership pallet will have the same Deed functionality as a current land ownership realestate web2. 
+The pallet will use pallet-assets combined with custom functionality to keep an on-chain registry, keeping track of the address, geo locations and owner address.
 
 #### Merging the Real and the Virtual    
 Many marketplaces for digital items are currently available on blockchains (primarily the Ethereum blockchain), such as;
