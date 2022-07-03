@@ -13,56 +13,56 @@
 
 ## Project Overview
 ### Overview
-Many patients use clinics worldwide, but they face difficulty moving having to take redundant duplicate tests when visiting a new clinic. It is inconvenient and in many cases not practical to carry data over from clinic to clinic parcticularly between countries.  
-While designing an international app for this use case we wanted to store the data in a decentralised manner.
+Many patients use clinics worldwide, but they face difficulty moving patient records, thus they have to take redundant duplicate tests. It is inconvenient and impractical to carry data folders over particularly between countries.  
+To solve this problem we gathered a team and designed an international app. We wanted to store the data in a decentralised manner.
 For further background you can[ read our blog](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
 
-Our proposal is to customise a blockchain such that data storage becomes a first class citizen of the ecosystem. Essentially we could implement something like the w3c Solid pod decentralised storage as a sidecar integration with a Susbtrate node.
+Our goal is to customise a blockchain such that data storage becomes a first class citizen of the ecosystem. Essentially we could implement something like the w3c Solid pod decentralised storage integrated with a Susbtrate node.
 Integrating application specific security and storage for every application is a major pain point which is not addressed by blockchains.
 A combination of a blockchain, parachain and Solid pod api would provide the security, decentralisation and immutable record keeping that is needed to make healthcare interoperable.
-To make this feasible it needs to be split into stages initially using a smart contract developed in  Ink!/ WebAssembly which records ownership and access [1] to a pod with a similar API to Solid PODs [4].
+To make this feasible it needs to be split into stages initially using a smart contract developed in  Ink!/ WebAssembly which records ownership and access [1] to a data pod with a similar API to Solid PODs [4].
 
-ID verification and data storage could be integrated through a Sidecar approach allowing other app developers within the ecosystem to reuse the chain without needing their own backend. 
+ID verification and data storage could be integrated through a Sidecar approach ( a containerized system design pattern) allowing other app developers within the ecosystem to reuse the chain without needing their own backend. 
 For a simpler initial alpha we could integrate IPFS as a pod, thus not implementing all the security and encryption api that are required for Solid pods.
-Rather than complicating the protocol in the first phase we would distribute the data and verify it is authentic by having a secure hash stored on the chain with the data in the separate pod.
-With trust being established by the blockchain layer, any blockchain node that provides faulty data as verified through blockchain smart contract stored hashes will be kicked out and forfiet their staking in the parachains native token.
+Distributed data could be verified is authentic by having a secure hash stored on the chain with the data in the separate pod.
+With trust being established by the blockchain layer, any blockchain node that provides faulty data as verified through smart contract hashes will be kicked out and forfiet their staking in the parachains native token.
 We also propose specific data format for anonymous tags such that no user identified private data would be exposed
 during the whole process. Additional layers of encryption and anonymity would be provided in subsequent phases.
 
 The initial user of this parachain would be our own app where users store any medical documents with automated information extraction, along with authenticated gpdr opt out.
-
 Sample screen of users view of how the data will be presented in our implementation can be seen here https://docs.google.com/presentation/d/1XEQ6qtTLwkmc6JgtpytEUJqhh1behskOWh3s4uE1cXw/edit?usp=sharing
 
 Such a platform would allow game theory incentives and smart contract based marketplaces for data trading to encourage adoption along with a reference app. 
 
-Our teams' relevance to this proposal is years of research and development on medical data along with technology aware accredited medical doctors. We also have experts of data collection extraction and scaling.
-Further Dr Salman Marvasti has multiple years experience working with blockchain technologies including ZKP both for cross border fintech as well as for data analysis through storing all the chains data in AWS Neptune and AWS Aurora API based databases.
+Our team has years of research and development on medical data along with senior blockchain developers working with IT capable PhD accredited medical doctor(s). Data collection extraction and real time scaling is also part of Dr S Marvasti's and Dr Mahdi Ghandi's resume .
+Furthermore, Dr Marvasti has multiple years experience working with blockchain technologies including ZKP both for cross border fintech and for data analysis through AWS Neptune and AWS Aurora API based databases.
 This is a phased plan with part of the design to be implemented in this first phase, which each phase being usable .
 in summary benefits of blockchain for this data includes
 * Decentralised: Data ownership is not lost to any central authority and access is controlled through secure ownership of NFTs
 * Incentive to participate: various mechanisms  could be developed as smart tokens or native token of the parachain linked to DOT.
 * Users:  publishers of health can receive some amount of token as rewards from any sponsor on the platform. 
 * Public: The api and parachain would be public so that any other apps such that deal with medical data can use this parachain. 
-* The detailed API and openAPI specifications for GRPC and or REST will be developed as part of this proposal as it depends on the public blockchain that the system is implemented in.
+* The detailed API and openAPI specifications for GRPC and or REST will be developed as part of this proposal with reference to the Solid pod api as details depends on the public blockchain that the system is implemented in.
 ### Project Details
 
 Data models
-We propose to store encrypted natively and only allow owners of NFT to decrypt these details via the smart contract. 
-In this first phase the data may be encrypted outside of the blockchain through a third party service which we will specify.
-As part of this proposal we intend to develop a smart contract that is deployed for each user to the chain with the users medical data.
+
+We propose to store data encrypted at client side using the Pod api . The data would be anonymous at the storage layer and encrypted with access to ID available only to owner(s) of the NFT controlled via a smart contract. 
+Later we could add functionality to decrypt data at the smart contract level once access to an HSM or secure key storage becomes native to the chain.  
+Thus, in this first phase the data may be encrypted outside the blockchain through the Sidecar container service which we will specify and provide a reference implementation.
 - The data 
-  - Medical ID - consisting of HASH And JSON details which are encrypted and optional only the secure hash of an ID reference is required. The decryption will be handled by dedicated service which will be open sources to run with the substrate parachain. 
-  - ID are verified by special validation addresses linked to special trusted organizations  on the parachain
+  - Medical ID - consisting of HASH And JSON details which are encrypted and optional; only the secure hash of an ID reference is required. The decryption will be handled by dedicated service which will be open sources to run alongside the Substrate node. 
+  - ID are verified by special validation addresses linked to special trusted organization addresses on the parachain
   - ID verification is for users of data to require which authorities they accept. Initially it will be us or other organization we work with like the NHS in the UK.
 | hashID | health system id | dob (o)| sex(o) | blood type(o) |
 |--------|----------------------|-----|-----|------------|
 |        |                      |     |     |            |
 
-| hashID | SignedVerifier |
-|--------|----------------|
-|        |                |
-|        |                |
-|        |                |
+| hashID Public Address | SignedVerifier |
+|-----------------------|----------------|
+|                       |                |
+|                       |                |
+|                       |                |
 
 
 
@@ -73,10 +73,10 @@ As part of this proposal we intend to develop a smart contract that is deployed 
         Date
         Place
 
-| Hash (Account) | Type       | Detail           | Date    | Place   | Result | Link to BLOB                                   |
-|----------------|------------|------------------|---------|---------|-------|:-----------------------------------------------|
-|   0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2             | Ultrasound | liver sonography | 1-1-20  | Ukraine | normal | native::xjslfdjl                               |
-|   0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2             | Xray      | Chest            | 1-30-20 | London  | pneumonia | external:https://wwww.marvsai.com/xkjdslkdjslk |
+| Hash (Account)(s)                          | Type       | Detail           | Date    | Place   | Result | Link to BLOB                                   | SH1 data integrity hash |
+|--------------------------------------------|------------|------------------|---------|---------|-------|:-----------------------------------------------|-------------------------|
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | Ultrasound | liver sonography | 1-1-20  | Ukraine | normal | native::xjslfdjl                               | 12jlklxlx               |
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | Xray      | Chest            | 1-30-20 | London  | pneumonia | external:https://wwww.marvsai.com/xkjdslkdjslk | 49jhdfjoeolfn           |
 
 
 
@@ -88,21 +88,21 @@ As part of this proposal we intend to develop a smart contract that is deployed 
 |        0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2        | Urine          | bacteria    | 9-30-20 | Negative |   native::xjslfdjl     |
 |       0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2         | Histopathology | Skin Legion | 4-30-20 | Melanoma |  native::xjslfdjl      |
  
-- Permission to access Binary data (BLOB internal or external)
+- Permission to access Binary data (BLOB internal or external) can only be written to by Authorized Addresses (Verifier address) enforced through smart contract
 
-| AccountHash                                | Permission to Access Binary data               |
-|--------------------------------------------|------------------------------------------------|
-| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | native::xjslfdjl                               |
-| 0x8e1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | external:https://wwww.marvsai.com/xkjdslkdjslk |
+| AccountHash Allowed Read Permission        | Account  Hash ID                     | Data link to Binary (encrypted) Image data |
+|--------------------------------------------|--------------------------------------------------------------------|--|
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | HashID,                            | Pod::xjslfdjl    |
+| 0x8e1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | HashID,  |  external:https://wwww.marvsai.com/xkjdslkdjslk |
 
-These two types of account access will differ in the at access permission to external account will need to be provided by a dedicated bridging service which internally runs a HSM or Hardware Secure Module.
+These two types of data storage access will differ in the that access permission to external storage (pod) account will need to be provided by a dedicated bridging service which internally runs a HSM or Hardware Secure Module.
 
-Addition of MSAI parachain webassembly smart contract for effecient encryptyion and decryption if necessary 
-although in the first instance encryption maybe provided off chain through a separate service.
+Addition of MSAI parachain webassembly smart contract for efficient encryption and decryption if necessary 
 Storage of NFT
-- An overview of the technology stack to be used
-- Parachain Scaling: ![component](https://github.com/salmanmarvasti/Grants-Program/blob/master/applications/img/nft_Deploy.png?raw=true) each parachain node will be an IPFS node
-- Nft representing medical data and access/ownership:  ![component](https://raw.githubusercontent.com/salmanmarvasti/Grants-Program/master/applications/img/component.png)
+### An overview of the technology stack to be used
+- Parachain Scaling:  ![component](https://raw.githubusercontent.com/salmanmarvasti/Grants-Program/master/applications/img/component.png)
+- Each parachain node will be an IPFS like Solid Pod + node
+- Nft representing medical data and access/ownership:  ![component](https://github.com/salmanmarvasti/Grants-Program/blob/master/applications/img/nft_Deploy.png?raw=true) 
 - Documentation of core components, protocols, architecture, etc. to be deployed
 - PoC/MVP we have built backend services using Google GCP and need to now integrate with the Polkadot chain
 What we will provide :
@@ -115,11 +115,12 @@ Ultimately when the correct modules are written we intend to store the entire me
 
 ### Ecosystem Fit
 
-The deliverables described above are intended to be used by any substrate based project that would like to leverage encrypted data stored on the blockchain and shared via NFT
-tokens. This project makes secure data storage more accessible to developers within the substrate ecosystem. Through a standardized api, our proposed system will be usable by any application or system where they deal with health data and get user opt-in thus contributing to demand for the Polkadot ecosystem.
+The deliverables described above can be generalized but are intended to be used by any project that would like to leverage encrypted data stored on the blockchain ( via NFT).
+Integrating this layer of storage with NFT smart contracts makes storage more accessible for developers within the Substrate ecosystem. 
+Our proposed system will be usable by any application or system where they deal with health data and get user opt-in thus contributing to demand for the Polkadot ecosystem.
 
-The project is a practical application of web3 technologies which we intend to build on Polkadot if we receive funding.
-Using a PolkaDot side chain can prove Polkadot's scalability by for instance spliting records by region and having a parachain per region as our plantuml diagram.
+The project is a practical application of web3 technologies which we intend to build within the Polkadot.
+Additional benefits include proving Polkadot's scalability as the number of users on the parachain grows by for instance spliting records by region and having a parachain per region as illustrated in our component diagram.
 Ultimately consumers will benefit , particularly health patients who travel in multiple jurisdictions (e.g. Ukranians who arrive in UK have no medical history, and it is difficult to carry and validate scans from different countries)
 Target audience is any healthcare data silo and any health patients who can contribute their data and earn ERC20 like tokens on this chain.
 - What need(s) does your project meet?
@@ -155,8 +156,8 @@ Potential Client:
 
 ### Legal Structure
 
-- **Registered Address:** Ibrandnewdirect Flat 903, E14 OBN 
-- **Registered Legal Entity:**Ibrannewdirect LTD
+- **Registered Address:** Marvsai Ltd Flat 903, 262 Poplar High Street E14 OBN 
+- **Registered Legal Entity:** MarvsAI LTD Registered in England and Wales
 
 ### Team's experience
 Dr Salman Marvasti is a senior software developer with blockhchain since 2015
