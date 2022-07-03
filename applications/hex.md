@@ -1,8 +1,8 @@
 # W3F Grant Proposal
 
-- **Project Name:**Five Degrees on Substrate
+- **Project Name:** Five Degrees on Substrate
 - **Team Name:** Lee
-- **Payment Address:**0x352a7f69df71bda6c51ee7fa938dd76ff2375087(USDT)
+- **Payment Address:** 0x352a7f69df71bda6c51ee7fa938dd76ff2375087(USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
@@ -28,9 +28,7 @@ Get entity's follower list:Query through check the who is holding the entity's N
 
 | Project | 5Degrees | Lens Protocol |RSS3 | CyberConnect |
 | -----: | ----------- | ------------- | ----------- | ------------- |
-| Introduce |5Degrees is a Web3.0 native social protocol,Capitalize the user's core data,Generate NFTs. Protocol compatible and recognized.The ERC-1155 standard allows developers to Any protocol that is firstly implanted into Web 3.0
-protocol layer or business layer |Lens Protocol is a Web3.0 social graph protocol. It capitalizes users' calibration data through self-defined protocol standards, generates NFT, and builds a healthy social network. |RSS3 is Decentralized Content Distribution and Aggregation protocol, the RSS3 network consists of service nodes(Server Node).Subgroups and Global Indexers (Global Indexer) composition, the content is stored in Arweave, |CyberConnect implements the Web3.0 social graph protocol and builds an extensible standardized social graph module, which simplifies the development process. CyberConnect Society
-The cross-graph data is stored on IPFS through Ceramic, and the CyberConnect gateway provides a common data layer for DApps. |
+| Introduce |5Degrees is a Web3.0 native social protocol,Capitalize the user's core data,Generate NFTs. Protocol compatible and recognized.The ERC-1155 standard allows developers to Any protocol that is firstly implanted into Web 3.0 protocol layer or business layer |Lens Protocol is a Web3.0 social graph protocol. It capitalizes users' calibration data through self-defined protocol standards, generates NFT, and builds a healthy social network. |RSS3 is Decentralized Content Distribution and Aggregation protocol, the RSS3 network consists of service nodes(Server Node).Subgroups and Global Indexers (Global Indexer) composition, the content is stored in Arweave, |CyberConnect implements the Web3.0 social graph protocol and builds an extensible standardized social graph module, which simplifies the development process. CyberConnect Society The cross-graph data is stored on IPFS through Ceramic, and the CyberConnect gateway provides a common data layer for DApps. |
 |Core functions |Profile, on-chain user relationship | Profile, on-chain user relationshipPost Mirror. Comment |Profile. Web3.0 social graph module, public chain |Profile, Web3.0 social graph module  Cyberchat |
 | Technical implement | ERC-1155 protocol standard |Lens Protocol self-built protocol standard |Arweave | Ceramics IPFS |
 |  Open source | Yes | Yes | Yes | Unknown |
