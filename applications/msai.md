@@ -140,9 +140,9 @@ Marvsai team www.marvsai.com
 Core:
 - Dr Salman Alim Marvasti --  Experienced Finance and Blockchain Senior Developer currently at Blockchain.com
 - Dr Atefeh Alihossieni - Internal Medicine Specialist - Medical App Design Baan Clinic- Millway medical practice
-  Advisory
-- Rahim Lalani CEO Text services and contract app development company in Pakistan 
-Advisor and  Client:
+- Rahim Lalani CEO Text services and contract app development company in Pakistan
+####  Advisory:
+- Dr Mehdi Ghandi - Senior FPGA AI developer
 - James Isilay - Cognism AI founder and CEO
 - Dr Ali Marvasti -- Consultant Neurologist  and PhD candidate- NHS , Cambridge University 
     Dr Ali Marvasti's research with medical data made evident that even if an application is developed that could scan and store all the data there is no reliable standard to store it in a decentralised manner.
@@ -160,11 +160,11 @@ Advisor and  Client:
 - **Registered Legal Entity:** MarvsAI LTD Registered in England and Wales
 
 ### Team's experience
-Dr Salman Marvasti is a senior software developer with blockhchain since 2015
-Dr Atefeh Alihosieni is a medical physician with extensive experience with Patient systems at Baan Clinic and Millway Medical Practice London
-Dr Mehdi Ghandi is an AI production expert at Microsoft who is advising us on scaling our solutions
-Dr Ali Marvasti is an AI specialist PhD candidate at UCL and a practicing neurologist with Python coding skills
-- He is author of open source tools for seminology https://github.com/thenineteen/Semiology-Visualisation-Tool
+- Dr Salman Marvasti is a senior software developer with blockhchain since 2015
+- Dr Atefeh Alihosieni is a medical physician with extensive experience with Patient systems at Baan Clinic and Millway Medical Practice London
+- Dr Mehdi Ghandi is an AI production expert at Microsoft who is advising us on scaling our solutions
+- Dr Ali Marvasti is an AI specialist PhD candidate at UCL and a practicing neurologist with Python coding skills . He is author of open source tools for seminology https://github.com/thenineteen/Semiology-Visualisation-Tool
+- Rahim Lalani runs and manages an App and Development outsourcing team in East Asia.
 
 ### Team Code Repos
 
@@ -183,11 +183,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://www.linkedin.com/in/marvastisalman/
 - https://www.linkedin.com/in/atefeh-alihoseini-a3850a202/
 - https://www.linkedin.com/in/ali-alim-marvasti-1a846855/
-- Scaling help
 - https://www.linkedin.com/in/mahdi-ghandi-3410114/
-- Advisors
 - https://www.linkedin.com/in/rahim-lalani-9823691/
-- 
+
 ## Development Status :open_book:
 - a standard blockchain layer/ data storage layer and smart contract has yet to be written
 - data extraction is proprietary
