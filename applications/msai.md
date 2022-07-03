@@ -124,12 +124,13 @@ Additional benefits include proving Polkadot's scalability as the number of user
 Ultimately consumers will benefit , particularly health patients who travel in multiple jurisdictions (e.g. Ukranians who arrive in UK have no medical history, and it is difficult to carry and validate scans from different countries)
 Target audience is any healthcare data silo and any health patients who can contribute their data and earn ERC20 like tokens on this chain.
 - What need(s) does your project meet?
-Specialising public blockchain for exchange of health data and creation of the backbone fabric of a federated healthcare system.
+Specialising public blockchain for storage and exchange of health data. This allows the creation a federated healthcare system.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 Not that we know of
 No project has been able to create a public health blockchain as it is either too slow or for data privacy
 Medicalchain
-BNB Chain all projects dead in the water either because they use a private unscalable chain or use public blockchains which are too expensive to use at scale. Furthermore Binance Health (more commercial pump and dump than substance) such that NHS and other health systems could also theoretically connect.
+BNB Chain all projects dead in the water either because they use a private unscalable chain or use public blockchains which are too expensive to use at scale. 
+- Furthermore Binance Health (more commercial pump and dump than substance) such that NHS and other health systems could also theoretically connect.
 
 Solid pods could be considered as solving a similar problem though without a public append only ledger which reduces traceability and auditability of data access.
 ## Team :
