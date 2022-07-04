@@ -32,6 +32,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [implementation-benchmarking.md](./open/implementation-benchmarking.md) | :green_circle: | 20.07.2021 | 
 | [ink!_smart_contract_block_explorer.md](./open/ink!_smart_contract_block_explorer.md) | :green_circle: | 27.05.2022 | 
 | [ISO_20022.md](./open/ISO_20022.md) | :green_circle: | 31.05.2022 | 
+| [ISO_8583.md](./open/ISO_8583.md) | :green_circle: | 31.05.2022 | 
 | [ksm-tipping-button.md](./implemented/ksm-tipping-button.md) | :red_circle: | 20.07.2021 |  
 | [mixer.md](./open/mixer.md) | :green_circle: | 23.11.2021 | 
 | [multi-chain-block-explorer.md](./open/multi-chain-block-explorer.md) | :green_circle: | 23.11.2021 | 
