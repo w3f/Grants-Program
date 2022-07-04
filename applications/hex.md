@@ -9,7 +9,7 @@
 
 ### Overview
 
-Hex is  heavily inspired by Five Degrees protocol implementation [5degrees](https://github.com/5DegreesProtocol/5degrees-protocol.git)
+Hex  Space Social Graph is  heavily inspired by Five Degrees protocol implementation [5degrees](https://github.com/5DegreesProtocol/5degrees-protocol.git)
 Five Degrees propose a simple entity data ownership protocol and use the protocol to capitalize these core data. To make the protocol simple enough, permission-less, and composable, we choose to build the protocol under the existing ERC-1155 standard. Compatible with the ERC-1155 standard, meaning it will be easily implanted into any protocol or business of Web3 that supports ERC-1155. The NFT generated in the protocol can be traded in any NFT market, also any smart contract that requires user relationships can track this data on chain. Any application that supports ERC-1155, can easily integrate this protocol.
 
 
