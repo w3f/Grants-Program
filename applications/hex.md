@@ -85,13 +85,13 @@ No.
 
 - **Total Estimated Duration:**  1 months
 - **Full-Time Equivalent (FTE):**  1 FTE
-- **Total Costs:**  5,000 USD
+- **Total Costs:**  3,500 USD
 
 ### Milestone 1 — Implement Five Degrees ink! Contract & Front-end Modules
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
-- **Costs:** 5,000 USD
+- **Costs:**  3,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -101,7 +101,7 @@ No.
 | 0d. | Docker | We will provide a Docker file(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article on medium detailing our social protocol construction .
 | 1. |  ink! Contract: FiveDegrees | This contract is the overall contract of the FiveDegrees protocol.Set Entity's Info, Get Entity's Info,Build the relationship,Destroy the relationship and so on. |  
-| 2. |  protocol front-end  | We will deliver the front-end  with the contract |  
+| 2. |  protocol front-end  | We will deliver the  react-based front-end base on substrate-front-end-template  with the contract,which demonstrates core methods of the contract. |  
 
 
 ## Future Plans
