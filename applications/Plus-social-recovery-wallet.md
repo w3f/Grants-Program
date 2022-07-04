@@ -35,7 +35,7 @@ Based on the [Social Recovery Wallet](https://github.com/w3f/Grants-Program/blob
 
 ### Project Details
 
-With the new functionality the token holders will be able to make their accounts Recoverable.
+With the new functionality the token holders will be able to make their accounts Recoverable. Almost all required information will be saved on-chain, utilizing Substrate/Recovery-Pallet.
 
 # ![polkadot{.js} plus extension make recoverable](https://raw.githubusercontent.com/Nick-1979/PolkadotJsPlusPictures/main/socialRecovery/makeRecoverable.png)
 
@@ -79,7 +79,7 @@ Therfore, the lost account can close the recovery to protect their account.
 
 
 
-There would be also modules for friends to send their vouches, enabling claim recovery by a rescuer, modules for canceling recovery, taking over the lost account (as recovered), and etc.
+There would be also modules for friends to send their vouches, enabling claim recovery by a rescuer, modules for canceling recovery, taking over the lost account (as recovered), and etc. Finally, in a successful recovery attempt, the rescuer account will act as a proxy of the lost account.
 
 ### Ecosystem Fit
 
