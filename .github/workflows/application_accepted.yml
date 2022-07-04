@@ -22,6 +22,7 @@ jobs:
         uses: Ana06/get-changed-files@v2.0.0
         with:
           filter: 'applications/*.md'
+          format: 'csv'
 
   update_google_sheet:
     needs: get_filename
