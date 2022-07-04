@@ -187,10 +187,14 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://www.linkedin.com/in/rahim-lalani-9823691/
 
 ## Development Status :open_book:
-- a standard blockchain layer/ data storage layer and smart contract has yet to be written
-- data extraction is proprietary
-- app UI has been started
-- required api for blockchain developed 
+
+### in this proposal
+- Preliminary study of Substrate features completed
+- required api for blockchain to be developed based on Solid
+- NFT based contract developed for Solidity but tobe rewritten in Rust/INK
+- A standard blockchain layer/ data storage layer and smart contract
+### outside this proposal
+- App UI design and development has been started
 
 ## Development Roadmap :nut_and_bolt:
 
