@@ -510,3 +510,4 @@
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
 | [4ire](https://4irelabs.com/) | Slushie | [GitHub](https://github.com/4IRE-Labs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [QRUCIAL OÜ](https://qrucial.io/) | QRUCIAL DAO | [GitHub](https://github.com/Qrucial/QRUCIAL-DAO) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
