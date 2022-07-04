@@ -9,6 +9,7 @@
 
 ### Overview
 
+Hex is  heavily inspired by Five Degrees protocol implementation [5degrees](https://github.com/5DegreesProtocol/5degrees-protocol.git)
 Five Degrees propose a simple entity data ownership protocol and use the protocol to capitalize these core data. To make the protocol simple enough, permission-less, and composable, we choose to build the protocol under the existing ERC-1155 standard. Compatible with the ERC-1155 standard, meaning it will be easily implanted into any protocol or business of Web3 that supports ERC-1155. The NFT generated in the protocol can be traded in any NFT market, also any smart contract that requires user relationships can track this data on chain. Any application that supports ERC-1155, can easily integrate this protocol.
 
 
@@ -21,7 +22,8 @@ Set Entity's Info:Invoke setInfo to set entity's information
 Get Entity's Info:Invoke contract's URI methods to get current entity's information Set entity's followers limitation:invoke increaseMaxSupply method
 Build the relationship between entities:Invoke mint method to mint an NFT of the following, hold his NFT means your relationship is connected
 Destroy the relationship between entities:Invoke burn method to destroy a following's NFT to disconnect the relationship
-Get entity's follower list:Query through check the who is holding the entity's NFT Get entity's following list:Query through check the whose NFT is the entity holding
+Get entity's follower list:Query through check the who is holding the entity's NFT Get entity's following list:Query through check the whose NFT is the entity holding.
+(5degrees protocol white paper)[https://www.5degrees.io/5Degrees-Whitepaper.pdf]
 
 
 ### Ecosystem Fit
