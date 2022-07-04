@@ -72,7 +72,7 @@ After half a year of research, we have especially summarized some of the problem
 
   After half a year of research, we found that although DAO represents the future, the current DAO field is still at a very early stage, and there are still a lot of problems and difficulties. We have now summarized some of the difficulties that currently exist in the DAO industry, mainly as follows:
   
-
+  
   
   ![image](https://raw.githubusercontent.com/rainbowcitykun/Grants-Program/master/pic/3.png)
   
