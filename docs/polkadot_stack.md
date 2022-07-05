@@ -47,7 +47,7 @@ The Polkadot Tech Stack is a subset of the Web 3.0 Tech Stack, which consists of
 
 ## :battery: Funding
 
-The Web3 Foundation's [Grants Program](https://github.com/w3f/Grants-Program) is focused on funding development work to build out all layers of the Polkadot Tech Stack. 
+The Web3 Foundation's [Grants Program](https://github.com/w3f/Grants-Program)<!-- NO_STATUS_BADGE --> is focused on funding development work to build out all layers of the Polkadot Tech Stack. 
 
 To get a better understanding of the projects we consider most relevant, you can explore a detailed breakdown of the various layers of the stack below. We divide each of the layers into the various *components* which we feel are most important. We then highlight some of the *existing projects* that address these components as well as some *potentially interesting projects* that we would like to fund.
 
@@ -55,15 +55,16 @@ We typically like to fund more than one project for each component. So, if you s
 
 By describing our areas of priority in detail, we do not wish to preclude grant applications that address different areas that we may not have thought of. We would like to fund all projects that bring value to the ecosystem. If you are considering applying for a project and are not sure if it falls within our areas of interest, please get in touch with us to discuss it.
 
-For open source infrastructure projects that are no longer maintained, we are also interested in signing [maintenance grants](https://github.com/w3f/Grants-Program#hammer_and_wrench-maintenance-grants). 
+For open source infrastructure projects that are no longer maintained, we are also interested in signing [maintenance grants](https://github.com/w3f/Grants-Program#hammer_and_wrench-maintenance-grants)<!-- NO_STATUS_BADGE -->. 
 
 ## :bookmark_tabs: Layers of Polkadot Stack
 
 In the below sections you can find a list of different layers of the Polkadot Stack.
 
-**Maintenance Status [WIP!]**: 
-- :red_circle: Unmaintained for more than 3 Months
+**Maintenance Status**: 
 - :green_circle: Actively maintained
+- :yellow_circle: Stale (no activity since 1 month)
+- :red_circle: Unmaintained (no activity for more than 3 months)
 
 ### :iphone: User Interface 
 
