@@ -30,11 +30,11 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [epassport-zk-validation.md](./open/epassport-zk-validation.md) | :green_circle: | 29.11.2021 | 
 | [identity-directory.md](./under_development/identity-directory.md) | :yellow_circle: | 30.05.2022 | 
 | [implementation-benchmarking.md](./open/implementation-benchmarking.md) | :green_circle: | 20.07.2021 | 
-| [ink!_smart_contract_block_explorer.md](./open/ink!_smart_contract_block_explorer.md) | :green_circle: | 27.05.2022 | 
+| [ink!_smart_contract_block_explorer.md](./under_development/ink!_smart_contract_block_explorer.md) | :yellow_circle: | 05.07.2021 | 
 | [ISO_20022.md](./open/ISO_20022.md) | :green_circle: | 31.05.2022 | 
 | [ISO_8583.md](./open/ISO_8583.md) | :green_circle: | 31.05.2022 | 
 | [ksm-tipping-button.md](./implemented/ksm-tipping-button.md) | :red_circle: | 20.07.2021 |  
-| [mixer.md](./open/mixer.md) | :green_circle: | 23.11.2021 | 
+| [mixer.md](./under_development/mixer.md) | :yellow_circle: | 05.07.2021 | 
 | [multi-chain-block-explorer.md](./open/multi-chain-block-explorer.md) | :green_circle: | 23.11.2021 | 
 | [on-chain-quadratic-funding.md](./implemented/on-chain-quadratic-funding.md) | :red_circle: | 29.03.2022 |  
 | [php-api.md](./implemented/php-api.md) | :red_circle: | 27.05.2022 |  
@@ -43,7 +43,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [privacy-enhancement-polkadot-extension.md](./under_development/privacy-enhancement-polkadot-extension.md) | :yellow_circle: | 27.05.22 | 
 | [raft-validators.md](./open/raft-validators.md) | :green_circle: | 23.11.2021 | 
 | [scale-codec-comparator.md](./under_development/scale-codec-comparator.md) | :yellow_circle: | 30.05.2022 | 
-| [social-recovery-wallet.md](./open/social-recovery-wallet.md) | :green_circle: | 23.11.2021 | 
+| [social-recovery-wallet.md](./under_development/social-recovery-wallet.md) | :yellow_circle: | 05.07.2021 | 
 | [staking-rewards-collector-front-end.md](./implemented/staking-rewards-collector-front-end.md) | :red_circle: | 20.07.2021 |  
 | [sub-consensus.md](./open/sub-consensus.md) | :green_circle: | 23.11.2021 | 
 | [uncollateralized-stablecoin-research.md](./under_development/uncollateralized-stablecoin-research.md) | :yellow_circle: | 27.05.22 | 
