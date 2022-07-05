@@ -1,6 +1,6 @@
 # RFP: Substrate Identity Directory
 
-* **Status:** Open
+* **Status:** [Under Development](https://github.com/w3f/Grants-Program/blob/master/applications/epirus_substrate_explorer.md)
 * **Proposer:** [Noc2](https://github.com/Noc2)
 
 ## Project Description :page_facing_up: 
