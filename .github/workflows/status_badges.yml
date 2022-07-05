@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: '0 0 * * *'
   push:
+    branches:
+      - '*'
+      - '!master'
     paths:
       - 'docs/polkadot_stack.md'
   workflow_dispatch:
