@@ -31,39 +31,13 @@ Technology Stack: (Almost) static Web App built with React/Redux and PolkadotJs.
 
 A PoC on the redirecting mechnisim is available [here](https://github.com/RoyTimes/wallet-sandbox-demo). 
 
-**Features: In Form of {Milestones}_{Features} - {Description}:**
+- Setup on Another Device via QR: generate a QR code that displays a *plaintext* of the seed phrase and scan it on another device. Similar to Metamask.
 
-Milestone1_Create Account - Generate a 12 words seed phrase and encrypt with user-input password. Validate as randomly selected word to validate if the user has securely write down the seed. (i.e. ask the user to input and validate word #7)
+- Email Recovery/Create Via Email: have a centralized service to send an email to the user with a link that contains *plaintext* of the seed phrase to recover the seed phrase (i.e. Email saying "Please keep this email for recovery of your wallet. Click link: https://choko.app/recovery?11111aaaaaaa...... "). A banner with warning should be presented when the user has more than $50 in the wallet.  
 
-Milestone1_Import Account - Import a 12 words seed phrase and encrypt with user-input password.
+- "Linkdrop": a feature inspired by other ecosystems. A Dapp developer might initialize a Linkdrop vault of some tokens as gas fee for their seed users. (i.e. Having 10 DOT for the first 100 signup users). A pallet might be required, so we will build a pallet on SkyeKiwi Network first to test things out. The wallet will provide the developer with a simple interface to generate a linkdrop vault and generate a linkdrop link. (i.e. https://choko.app/claim?vault=1&authorization=0x8dad7777..."). The developer can distribute the link drop link to users. When a user click the link, it will guide the user to create a new seed phrase and then have the gas fee token deposited to the wallet.
 
-Milestone1_Network Selector - Allow user to switch between a few selected networks using endpoint and color information on https://github.com/polkadot-js/apps.
-
-Milestone1_Sign Message/Transaction - An interface to sign a transaction or a message. Send the transaction using user's private key to the selected network endpoint. 
-
-Milestone1_Simple SDK for DApp - A simple SDK for DApp developer to redirect signature/transaction request to Choko Wallet and receive transaction status.
-
-Milestone2_Send Token - allow user to send token to a recepient.
-
-Milestone2_Setup On Another Device - Generate a QR code that contains the *clear* seed phrase to setup on another device. (Similar to Metamask's process)
-
-Milestone2_Signup with Email - Randomly generate a new seed and send the *clear* encoded seed phrase to email. (i.e. Email saying "Please keep this email for recovery of your wallet. Click link: https://choko.app/recovery?11111aaaaaaa...... ") This is intent for easy non-crypto user onboarding. The wallet will display warning when the user has more than $50 value of crypto in wallet on the curret connected blockchain. We would have to use a centralized email service provider for this until there is a better solution. 
-
-Milestone2_User Dashboard - A simple dashboard that display the balance of the user. 
-
-Milestone2_"Linkdrop" - a feature inspired by other ecosystems. A Dapp developer might initialize a Linkdrop vault of some tokens as gas fee for their seed users. (i.e. Having 10 DOT for the first 100 signup users). A pallet might be required, so we will build a pallet on SkyeKiwi Network first to test things out. The wallet will provide the developer with a simple interface to generate a linkdrop vault and generate a linkdrop link. (i.e. https://choko.app/claim?vault=1&authorization=0x8dad7777..."). The developer can distribute the link drop link to users. When a user click the link, it will guide the user to create a new seed phrase and then have the gas fee token deposited to the wallet. 
-
-Milestone3_Multi-account Support - allow creating or importing multiple accounts and selecting which one to use. 
-
-Milestone3_Encryption/Decryption - A few solutions avaliable: 1. allow encryption/decryption on Sr25519 key agreement. Drawback would be that the composed message would be hard to process outside the wallet. 2. Find a method to calculate a Curve25519 public key from a Sr25519 public key. We are not hardcore cryptographer and has no intention of implementing this ourselves. Looking for a more expertised answer to whether this is possible or if there is an implementation to it. Such conversion would greatly increase compatbility with popular Curve25519 based encryption softwares. 3. Worst case senario: ask users to register a Curve25519 public key on account creation. This is horrible but allow the encryption schema to be further compatible with other ECs like secp256k1. Would love to have a discussion on this. 
-
-Milestone3_Staking - allow user to one-click stake/unstake token on a few selected network. 
-
-Milestone3_DeFi Integration - (More details provided on delivery of either Mileston1 or Milestone2.) Natively enable one-click interaction with AMM swaps, lending protocols, money market protocol, staking liquidity derivatives etc. The reason why we cannot be more specific on this is because it will depends on DeFi ecosystem of some specific blockchain.
-
-Milestone3_Better SDK for DApp - easy to use SDK to call all standard features of Choko Wallet. (i.e. get current user address, request approval to send transaction, request signature, request decryption/encryption, request change network endpoint). Grammar candy Wrapper around PolkadotJs: fetch the user account balance etc. 
-
-Milestone3_SDK Contribution Standard - a **standard** for blockchain developers in the Polkadot ecosystem to customize wrapper around PolkadotJs that lower the barrier for developers on their ecosystem. (i.e. `teleportAssetsTo` to teleport assets from Parachain A to Parachain B). 
+- Encryption/Decryption: A few solutions avaliable: 1. allow encryption/decryption on Sr25519 key agreement. Drawback would be that the composed message would be hard to process outside the wallet. 2. Find a method to calculate a Curve25519 public key from a Sr25519 public key. We are not hardcore cryptographer and has no intention of implementing this ourselves. Looking for a more expertised answer to whether this is possible or if there is an implementation to it. Such conversion would greatly increase compatbility with popular Curve25519 based encryption softwares. 3. Worst case senario: ask users to register a Curve25519 public key on account creation. This is horrible but allow the encryption schema to be further compatible with other ECs like secp256k1. Would love to have a discussion on this. 
 
 Mockups:
 [![jYkTaT.png](https://s1.ax1x.com/2022/07/04/jYkTaT.png)](https://imgtu.com/i/jYkTaT)
@@ -138,10 +112,10 @@ Mostly described above in the Overview section.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | A Dockerfile won't be much useful for a static web app. Therefore, we are not going to provide one for this milestone. |
 | 0e. | Article | We will publish an **article** that explains the concept of the Choko Wallet. More general-public-oriented version of what described in this application. |
-| 1. | Reactjs WebApp | Pages: import/create account, sign message/transaction, a almost blank dashboard but allow switching between networks (support at least Polkadot, Kusama and SkyeKiwi Network) |
+| 1. | Reactjs WebApp | Pages: import/create account (create 12 words seed phrase, encrypt with user-input password and store in browser localStorage, make sure the user has writen down the seed by testing a randomly selected word i.e. ask user to input and validate word #7; import a seed phrase and encrypt with user-input password), sign message/transaction, a almost blank dashboard but allow switching between networks (support at least Polkadot, Kusama and SkyeKiwi Network) |
 | 2. | Network Adapter | One package in the SDK that establish configuration to connect to networks (i.e. RPC endpoints, color schema, customized types, chain specific grammar candy over PolkadotJs etc.) |
 | 3. | Simple SDK | wallet SDK for developers to connect to Choko Wallet from Dapps (connect wallet and request user address, request approve transactions, request approve singatures)  |  
-
+ 
 
 ### Milestone 2 
 
@@ -173,7 +147,7 @@ Mostly described above in the Overview section.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | A Dockerfile won't be much useful for a static web app. Therefore, we are not going to provide one for this milestone. |
 | 0e. | Article | We will host at least one workshop that walk through the process of integrating an existing Dapp into Choko Wallet. |
-| 1. | Reactjs WebApp | Pages: account selector across all pages, encryption/decryption approval, staking tab on the main dashboard |
+| 1. | Reactjs WebApp | Pages: account selector (allow creating or importing multiple accounts and select default account to use), encryption/decryption approval, staking tab on the main dashboard |
 | 2. | DeFi Integration | Integrate popular DeFi protocols in the Polkadot ecosystem, and allow some XCM assets teleport. Details to be provided on delivery of Milestone1 or Milestone 2 |
 | 3. | Complete SDK | get current user address, request approval to send transaction, request signature, request decryption/encryption, request change network endpoint and more common grammer candy over PolkadotJs (fetch latest `block_number`, fetch user token balances) |  
 | 4. | Network Adapter Contribution Standard | a **standard** network adapter for blockchain developers in the Polkadot ecosystem to customize wrapper around PolkadotJs that lower the barrier of development for developers on their ecosystem. (i.e. `teleportAssetsTo` to teleport assets from Parachain A to Parachain B, evm specific cals etc.) |  
@@ -194,6 +168,6 @@ Mostly described above in the Overview section.
 
 - More face-to-face events features - i.e. genrate printable QR codes for Linkdrops to be distributed at event venues; location based events check-ins. Scan and validate tickets (as NFTs) at event venues. 
 
-
+- Integrate social-recovery-pallet for an easy recovery process. 
 
 
