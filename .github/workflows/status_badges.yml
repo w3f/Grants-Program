@@ -2,12 +2,6 @@ name: Update Status Badges
 on:
   schedule:
     - cron: '0 0 * * *'
-  push:
-    branches:
-      - '*'
-      - '!master'
-    paths:
-      - 'docs/polkadot_stack.md'
   workflow_dispatch:
 
 jobs:
@@ -18,8 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Check and update badges
-        uses: lucasvanmol/status-badges@v1
+        uses: lucasvanmol/status-badges@v1.1
         with:
           path: 'docs/polkadot_stack.md'
           token: ${{ secrets.GITHUB_TOKEN }}
           find-all-links: true
+          pull-request: true
