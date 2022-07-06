@@ -75,6 +75,11 @@ In addition to cross-network interoperability, users utilizing Cosmos will gain 
 [Mosaic](https://mosaic.composable.finance/), Composable Finance's cross-layer union transferral (asset transfer) 
 system.
 
+[Snowbridge](https://snowbridge.snowfork.com/) resembles similar intentions to bridge, but for connecting Polkadot
+to Ethereum. Centarui implements MMR verification in Go, but it is not based on Snowfork's Solidity implementation.
+Rather, is is based on the [MMR implementation by Nervos](https://github.com/nervosnetwork/merkle-mountain-range), 
+being the same implementation used to generate the BEEFY proofs.
+
 > Mosaic is a bridging solution based on liquidity management, single-sided liquidity pools, and a relayer network. 
 > [Blog post on Mosaic](https://medium.com/composable-finance/introducing-mosaic-phase-2-10d1bfe5f6f8).
 > [Mosaic publication](https://dl.acm.org/doi/fullHtml/10.1145/3523181.3523198)
@@ -113,7 +118,7 @@ Gros-Islet, P.O. Box 838, Castries, Saint Lucia
 
 - [IBC Go implementation](https://github.com/ComposableFi/ibc-go/)
 - [IBC Rust implementation](https://github.com/ComposableFi/ibc-rs/)
-- [Substrate IBC](https://github.com/ComposableFi/composable/blob/david/substrate-ibc/frame/ibc/src/lib.rs)
+- [Substrate IBC](https://github.com/ComposableFi/composable/tree/main/frame/ibc)
 
 #### Team GitHub accounts:
 
