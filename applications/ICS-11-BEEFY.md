@@ -178,6 +178,12 @@ IBC-RS:
 | 1. | Development | Implementation of the ICS - 02 clients interface using our Beefy verification and the Parity-trie library for IBC packets commitments and verification     |  
 | 2. | Testing | Implementation of the IBC test framework that allows for verification of incoming headers as well as IBC packets  |  
 
+## Overview
+
+Total Estimated Duration: 12.3 weeks
+Full-Time Equivalent (FTE): 1
+Total Costs: 49,999
+
 ## Future Plans
 
 **Immediate plans involve finalizing the development of all components of the Centauri bridge.** 
