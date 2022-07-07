@@ -22,21 +22,21 @@ License: Apache 2.0
 ### 📌 Project Details
 
 - An overview of the technology stack to be used:
-```Dart
+```
 This library will be written purely in Dart technology from scratch.
 ```
 - Documentation of core components, protocols, architecture, etc. to be deployed:
-```Dart
+```
 We will follow Polkadot specifications and, as a license for PolkaDart library, we will use Apache 2.0.
 ```
 - What your project is _not_ or will _not_ provide or implement:
-```Dart
+```
 This project will not support legacy metadata protocols, such as metadata v9, v10, and v11.\
 Polkadart will not implement any front-end, since it is going to allow developers to use Dart to
 connect to the Substrate based network.
 ```
 - This is a place for you to manage expectations and to clarify any limitations that might not be obvious:
-```Dart
+```
 Polkadart is similar to the project "https://github.com/polkadot-js/api" but for Dart, instead of JavaScript.
 ```
 
@@ -81,7 +81,7 @@ Pocket4 was similar to PolkaDart but it was discontinued for lack of progress an
 
 **Lohann Ferreira** \
 [**Enjin**](https://enjin.io/) • Lead Blockchain Architect \
-Lohann have a deep understanding of Polkadot/Substrate stack amongst other stack languages. Previously worked at [First Foundry](https://www.firstfoundry.co/) as Senior Software Engineer. Founder and lead engineer at [Jurimetric](https://jurimetric.com.br/). Co-founder of [Veever](https://veever.global/), which through the combination of beacons, a web platform, and a mobile app aims to assist people with visual impairment to easily get around and interact with the urban environment. He is focused on solving big problems with simple ambitious solutions. \
+Lohann have a deep understanding of Polkadot/Substrate stack amongst other blockchain technologies. Previously worked at [First Foundry](https://www.firstfoundry.co/) as Senior Software Engineer. Founder and lead engineer at [Jurimetric](https://jurimetric.com.br/). Co-founder of [Veever](https://veever.global/), which through the combination of beacons, a web platform, and a mobile app aims to assist people with visual impairment to easily get around and interact with the urban environment. He is focused on solving big problems with simple ambitious solutions. \
 🚀 [Github](https://github.com/Lohann) **|** 
 👔 [linkedin](https://www.linkedin.com/in/lohannferreira/)
 <br/>
@@ -142,7 +142,7 @@ https://github.com/rankanizer/polkadart
 <br><br/>
 ## 🔩 Development Roadmap 
 
-->> EXAMPLE OF DOCUMENTATION/HOW TO: https://polkadot.js.org/docs/api/start
+https://polkadot.js.org/docs/api/start
 <br><br/>
 ## 🔎 Overview
 
@@ -156,15 +156,15 @@ https://github.com/rankanizer/polkadart
 - **FTE:**  4.
 - **Costs:** 12,500 USD.
 
-|Nᵒ   |  Stage  |    Tasks                           |
-|:---:|  ---    |             ---                    |
-| 1a. | License | Apache 2.0                         |
-| 1b. | Types   | Porting @polkadot-js/types.        |
-| 1c. | Codec   | Porting @polkadot-js/types-codec   |
-| 1d. | Known   | Porting @polkadot-js/types-known   |
-| 1e. | Support | Porting @polkadot-js/types-support |
-| 1f. | Create  | Porting @polkadot-js/types-create  |
-| 1g. | Tests   | Unit tests for deliverables above  |
+|Number|Deliverable|    Specification                   |
+|:---: |  ---      |             ---                    |
+| 1a.  | License   | Apache 2.0                         |
+| 1b.  | Types     | Porting @polkadot-js/types.        |
+| 1c.  | Codec     | Porting @polkadot-js/types-codec   |
+| 1d.  | Known     | Porting @polkadot-js/types-known   |
+| 1e.  | Support   | Porting @polkadot-js/types-support |
+| 1f.  | Create    | Porting @polkadot-js/types-create  |
+| 1g.  | Tests     | Unit tests for deliverables above  |
 
 
 ### 🚩 Milestone 2 — 
@@ -173,13 +173,13 @@ https://github.com/rankanizer/polkadart
 - **FTE:**  4.
 - **Costs:** 12,500 USD.
 
-|Nᵒ   |  Stage  |    Tasks                           |
-|:---:|  ---    |             ---                    |
-| 2a. | Augment | Porting @polkadot-js/types-augment |
-| 2b. | Core    | Porting @polkadot-js/rpc-core      |
-| 2c. | Provider| Porting @polkadot-js/rpc-provider  |
-| 2d. | Augment |  Porting @polkadot-js/rpc-augment  |
-| 2e. | Tests   | Unit tests for deliverables above  |
+|Number|Deliverable|    Specification                   |
+|:---: |  ---      |             ---                    |
+| 2a.  | Augment   | Porting @polkadot-js/types-augment |
+| 2b.  | Core      | Porting @polkadot-js/rpc-core      |
+| 2c.  | Provider  | Porting @polkadot-js/rpc-provider  |
+| 2d.  | Augment   |  Porting @polkadot-js/rpc-augment  |
+| 2e.  | Tests     | Unit tests for deliverables above  |
 
 ### 🚩 Milestone 3 — 
 
@@ -187,14 +187,14 @@ https://github.com/rankanizer/polkadart
 - **FTE:**  4.
 - **Costs:** 12,500 USD.
 
-|Nᵒ   |  Stage  |    Tasks                           |
-|:---:|  ---    |             ---                    |
-| 3a. | Base    | Porting @polkadot-js/api-base.     |
-| 3b. | Derive  | Porting @polkadot-js/api-derive.   |
-| 3c. | Contract| Porting @polkadot-js/api-contract  |
-| 3d. | Api     | Porting @polkadot-js/api           |
-| 3e. | Tests   | Unit tests for deliverables above  |
-| 3f. | Pub.dev | Publish to pub.dev for V1.0.0      |
+|Number|Deliverable|    Specification                   |
+|:---: |  ---      |             ---                    |
+| 3a.  | Base      | Porting @polkadot-js/api-base.     |
+| 3b.  | Derive    | Porting @polkadot-js/api-derive.   |
+| 3c.  | Contract  | Porting @polkadot-js/api-contract  |
+| 3d.  | Api       | Porting @polkadot-js/api           |
+| 3e.  | Tests     | Unit tests for deliverables above  |
+| 3f.  | Pub.dev   | Publish to pub.dev for V1.0.0      |
 
 ### 🚩 Milestone 4 — 
 
@@ -202,12 +202,12 @@ https://github.com/rankanizer/polkadart
 - **FTE:**  4.
 - **Costs:** 12,500 USD.
 
-|Nᵒ   |  Stage            |    Tasks                                                                                                |
-|:---:|  ---             |             :---                                                                                         |
-| 4a. | Tests            | Integration tests for all milestones                                                                     |
-| 4b. | Documentations   | Documentations for all packages                                                                          |
-| 4c. | Pub.dev          | Publish to pub.dev for V1.0.0                                                                            |
-| 4d. | Article/Workshop | We will publish an example flutter project using the library to explain what was done and how to use it. |
+|Number|Deliverable       |    Specification                                                                                         |
+|:---: |  ---             |             :---                                                                                         |
+| 4a.  | Tests            | Integration tests for all milestones                                                                     |
+| 4b.  | Documentations   | Documentations for all packages                                                                          |
+| 4c.  | Pub.dev          | Publish to pub.dev for V1.0.0                                                                            |
+| 4d.  | Article/Workshop | We will publish an example flutter project using the library to explain what was done and how to use it. |
 
 <br><br/>
 ## 🗓️ Future Plans
