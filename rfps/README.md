@@ -20,8 +20,8 @@ If you find an open RFP here that you think you can address, feel free to [submi
 - **:yellow_circle: Under Development:** One or more teams are working on this. We might be interested in additional implementations, but it’s better to double check this with the grants team.  
 - **:red_circle: Implemented:** This RFP is implemented. However, if it’s not maintained, we would be interested in signing a [maintenance grant](https://github.com/w3f/Grants-Program#hammer_and_wrench-maintenance-grants).  
 
-| RFP | Status  | Last Updated
-| :--- | :------ | :--- | 
+| RFP | Status | Last Updated |
+| :-- | :----: | :----------: | 
 | [a-and-v-topology.md](./open/a-and-v-topology.md) | :green_circle: | 29.11.2021 |   
 | [alternative_polkadot_host_implementations.md](./open/alternative_polkadot_host_implementations.md) | :green_circle: | 29.11.2021 |   
 | [anti-collusion_infrastructure.md](./open/anti-collusion_infrastructure.md) | :green_circle: | 29.11.2021 |   
