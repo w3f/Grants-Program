@@ -178,7 +178,6 @@ Discussions with the grant team: David Hawig and Seraya Takahashi, mail conversa
 | 0a. | License | Creative Commons CC-BY |
 | 0b. | Documentation | In this milestone the goal is to publish a proof of concept of the approach, a peer-reviewed article summarising the theoretical framework of the approach, and to produce a detailed roadmap for Milestone 2. We will document the process by the way of a notion site opened to the public. |
 | 0c. | Testing protocol | We will test the approach with key actors of the Web3 / Crypto governance ecosystem in the Dotsama ecosystem and outside (we particularly think about Aave, Paladin, Element.fi, and SNX, who all have interesting governance structures). |
-| 0d. | Docker | We will not provide a docker file as Milestone 1 is research-oriented |
 | 0e. | Article | At the end of Milestone 1 we will publish a peer-reviewed paper consisting of the state of the art of deliberative and crypto governance, a gap analysis, a research and action agenda, and a prototype for experimentation with a real-life DAO or Chain/Parachain. The research will be embedded in the work of the Metagov group (https://metagov.org/) and could be run in collaboration with the Mc Court Institute as both are high-quality networks of researchers on the question. |  
 
 ### Milestone 2 — Experimentation
