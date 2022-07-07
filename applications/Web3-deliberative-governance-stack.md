@@ -1,5 +1,12 @@
 # W3F Grant Proposal - A stack for deliberative decentralized governance
 
+## Key data 
+
+- **Project Name:** Web3 Deliberative Governance Stack 
+- **Team Name:** Missions Publiques and contributors 
+- **Payment Address:** USDC / 0xa176b698d62956266f7677704da66806912843e7 
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+
 ## Overview
 
 ### Tag line
@@ -158,9 +165,9 @@ Discussions with the grant team: David Hawig and Seraya Takahashi, mail conversa
 ### Overview
 - **Total Estimated Duration:** 6 months for milestones 1 and 6 months for milestones 2 / 1 year for milestones 3 and 4 and one year for milestones 5 
 - **Full-Time Equivalent (FTE):**  1,5 FTE for milestones 1 and 2 / 2 FTE for milesteones 3 and 4 and 2 FTE for milestone 5
-- **Total Costs:** The full process of all Milestones demands extended funding. But we do not seek complete funding now. Each milestone can be funded in a consequent order, or partially in combination with other grant-making programs. The current grant application aims at funding Milestone 1 and if successful milestone 2 which will allow unlocking Milestones 3 to 5. Funding for milestones 3 to 5 is difficult to estimate at this stage. Milestone 1: €25.000 / Milestone 2: €58.000. 
+- **Total Costs:** The full process of all Milestones demands extended funding. But we do not seek complete funding now. Each milestone can be funded in a consequent order, or partially in combination with other grant-making programs. **The current grant application aims at funding Milestone 1** and if successful milestone 2 which will allow unlocking Milestones 3 to 5. Funding for milestones 3 to 5 is difficult to estimate at this stage. Milestone 1: $25.000 / Milestone 2: $58.000. 
 
-### Milestone 1 - Research paper and Proof of concept
+### Milestone 1 - Research paper and Proof of concept (THIS IS THE DEMAND FOR FUNDING)
 
 - **Estimated duration:** 6 months
 - **FTE:**  4 months of a mixed team of junior and senior
