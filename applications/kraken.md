@@ -112,7 +112,7 @@ Singapore </br>
 
 ### Founders' experiences
 
-* [Hyungsuk Kang](https://www.linkedin.com/in/hyungsukkang) has experience working in blockchain industry over 3 years and is a contributor to UST restitution group. He is now making a new standard in defi securing self-sovereignty of users' finance in web3.0 with enforceable financial contract.
+* [Hyungsuk Kang](https://www.linkedin.com/in/hyungsukkang) has experience working in blockchain industry over 3 years and is a contributor to UST restitution group. Being enlightened that with people who are saying DAOs and Governance can bring decentralzation were actually the one who tries to rule the whole system, He is now making a new standard in defi securing self-sovereignty of users' finance in web3.0 with enforceable, immutable financial contract that can keep promise without Governance's interference.
 
 ### Team Code Repos
 
