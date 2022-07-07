@@ -81,7 +81,9 @@ After developing wasm contract development framework [Houston](https://github.co
 To keep an eye on whole contracts, I found out the monorepo is the optimal way to develop them to provide the most same experience as existing solidity contract dev tools.
 
 **2. Rust compilation is heavy in local computer**
+<br>
 For cloud build.
+<br>
 ![image](https://user-images.githubusercontent.com/12888144/177867044-74491815-860b-4e0e-ab36-95d021498699.png)
 
 Rust smart contracts take extensive amount of time just to compile a contract.
