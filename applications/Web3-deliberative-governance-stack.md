@@ -165,7 +165,7 @@ Discussions with the grant team: David Hawig and Seraya Takahashi, mail conversa
 ### Overview
 - **Total Estimated Duration:** 6 months for milestones 1 and 6 months for milestones 2 / 1 year for milestones 3 and 4 and one year for milestones 5 
 - **Full-Time Equivalent (FTE):**  1,5 FTE for milestones 1 and 2 / 2 FTE for milesteones 3 and 4 and 2 FTE for milestone 5
-- **Total Costs:** The full process of all Milestones demands extended funding. But we do not seek complete funding now. Each milestone can be funded in a consequent order, or partially in combination with other grant-making programs. **The current grant application aims at funding Milestone 1** and if successful milestone 2 which will allow unlocking Milestones 3 to 5. Funding for milestones 3 to 5 is difficult to estimate at this stage. Milestone 1: $25.000 / Milestone 2: $58.000. 
+- **Total Costs:** The full process of all Milestones demands extended funding. But we do not seek complete funding now. Each milestone can be funded in a consequent order, or partially in combination with other grant-making programs. **The current grant application aims at funding Milestone 1** and if successful milestone 2 which will allow unlocking Milestones 3 to 5. Funding for milestones 3 to 5 is difficult to estimate at this stage. Milestone 1: $25.000
 
 ### Milestone 1 - Research paper and Proof of concept (THIS IS THE DEMAND FOR FUNDING)
 
@@ -178,7 +178,11 @@ Discussions with the grant team: David Hawig and Seraya Takahashi, mail conversa
 | 0a. | License | Creative Commons CC-BY |
 | 0b. | Documentation | In this milestone the goal is to publish a proof of concept of the approach, a peer-reviewed article summarising the theoretical framework of the approach, and to produce a detailed roadmap for Milestone 2. We will document the process by the way of a notion site opened to the public. |
 | 0c. | Testing protocol | We will test the approach with key actors of the Web3 / Crypto governance ecosystem in the Dotsama ecosystem and outside (we particularly think about Aave, Paladin, Element.fi, and SNX, who all have interesting governance structures). |
-| 0e. | Article | At the end of Milestone 1 we will publish a peer-reviewed paper consisting of the state of the art of deliberative and crypto governance, a gap analysis, a research and action agenda, and a prototype for experimentation with a real-life DAO or Chain/Parachain. The research will be embedded in the work of the Metagov group (https://metagov.org/) and could be run in collaboration with the Mc Court Institute as both are high-quality networks of researchers on the question. |  
+| 0e. | Article | At the end of Milestone 1 we will have a paper submitted for peer-review or already published. This will be done in collaboration with the DeSci initiative of the Samrt Contract Research Forum (https://www.smartcontractresearch.org/). We will be in the second batch of their pilot on decentralized peer review from September. This should allow for a peer-reviewed publication by end of year. Also we have been exploring the path to a publication in the https://www.frontiersin.org/journals/blockchain journal with their team. The paper will consist of the state of the art of deliberative and crypto governance, a gap analysis, a research and action agenda, and a prototype for experimentation with a real-life DAO or Chain/Parachain. The research will be embedded in the work of the Metagov group (https://metagov.org/) and could be run in collaboration with the Mc Court Institute as both are high-quality networks of researchers on the question. |  
+
+## Future Plans
+
+If milestones 1 is successful, we plan following milestones 2 to 5: 
 
 ### Milestone 2 — Experimentation
 
@@ -194,9 +198,6 @@ Discussions with the grant team: David Hawig and Seraya Takahashi, mail conversa
 | 0d. | Docker | We will not provide a docker file as Milestone 2 is a test with people and not software |
 | 0e. | Article | At the end of Milestone 2 we will publish a second peer-reviewed paper consisting of the results of the experimentation, an update on the theoretical and practical approach, and a roadmap for milestones 3 to 5. | 
 
-## Future Plans
-
-If milestones 1 and 2 are successful we plan following milestones 3 to 5: 
 
 Milestone 3: Dissemination and impact. After experimentation, we will capitalize on lessons learned and take time to engage with the Dotsama communities and stakeholders to disseminate the approach and improve the process. It will aim at embarking new DAOs and chains. We will start product design for a suite of onchain tools to guide the deliberative bricks of the process. For example, we could design a “constitution builder” based on a deliberative process aimed at new parachains. We could also propose a referendum to start implementing deliberative elements into the governance of Kusama and Polkadot.  
 
