@@ -3,7 +3,7 @@
 * **Project Name:** Kraken - a monorepo plugin for developing multiple Parity ink! smart contracts
 * **Team Name:** Standard Protocol
 * **USDC Payment Address:**  (PLEASE NOTE CHANGE)
-* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
 
