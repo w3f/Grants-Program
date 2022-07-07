@@ -127,8 +127,10 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 * [Hyungsuk Kang](https://www.linkedin.com/in/hyungsukkang), Founder
 
 ## Development Status :open_book:
+I have used nx with other rust smart contract Cosmwasm for developing a project.
 
-* 
+[nxcw](https://github.com/digitalnativeinc/nxcw)
+
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
