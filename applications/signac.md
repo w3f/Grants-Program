@@ -169,7 +169,7 @@ The cli binary aims to cover whole feature in [ink-waterfall](https://github.com
 | -----: | ----------- | ------------- |
 | 0a. | License | GPLv3 | 
 | 0b. | Documentation | Documentation on Github |
-| 0c. | Signac Repo | |
+| 0c. | Signac Repo | The entire code for the binary will be shared in a github public repository. |
 | 1. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video walk through demonstrating Signac |
 
 ## Future Plans
