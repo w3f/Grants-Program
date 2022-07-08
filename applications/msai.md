@@ -7,7 +7,7 @@
 - **Project Name:** MSAI Medical Data Chain
 - **Team Name:** Marvsai Team
 - **Payment Address:** 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
@@ -17,13 +17,13 @@ Many patients use clinics worldwide, but they face difficulty moving patient rec
 To solve this problem we gathered a team and designed an international app. We wanted to store the data in a decentralised manner.
 For further background you can[ read our blog](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
 
-Our goal is to customise a blockchain such that data storage becomes a first class citizen of the ecosystem. Essentially we could implement something like the w3c Solid pod decentralised storage integrated with a Susbtrate node.
+Our goal is to customise a blockchain Pallet such that data storage can become a first class citizen of the ecosystem. Essentially we would like to implement something similar to w3c Solid pod integrated with a Susbtrate node.
 Integrating application specific security and storage for every application is a major pain point which is not addressed by blockchains.
-A combination of a blockchain, parachain and Solid pod api would provide the security, decentralisation and immutable record keeping that is needed to make healthcare interoperable.
+A combination of a Substrate blockchain and Solid pod api [5] would provide the security, decentralisation and immutable record keeping that is needed to make healthcare interoperable.
 To make this feasible it needs to be split into stages initially using a smart contract developed in  Ink!/ WebAssembly which records ownership and access [1] to a data pod with a similar API to Solid PODs [4].
 
 ID verification and data storage could be integrated through a Sidecar approach ( a containerized system design pattern) allowing other app developers within the ecosystem to reuse the chain without needing their own backend. 
-For a simpler initial alpha we could integrate IPFS as a pod, thus not implementing all the security and encryption api that are required for Solid pods.
+For a simpler initial alpha we could integrate IPFS as a pod making it simpler than the full Pod api [4].
 Distributed data could be verified is authentic by having a secure hash stored on the chain with the data in the separate pod.
 With trust being established by the blockchain layer, any blockchain node that provides faulty data as verified through smart contract hashes will be kicked out and forfiet their staking in the parachains native token.
 We also propose specific data format for anonymous tags such that no user identified private data would be exposed
@@ -151,8 +151,8 @@ Core:
 ### Contact
 
 - **Contact Name:**Salman Marvasti
-- **Contact Email:** salman_marvasti@yahoo.co.uk
-- **Website:** marvasi.com
+- **Contact Email:** marvasti@marvsai.com
+- **Website:** marvsai.com
 
 ### Legal Structure
 
@@ -165,7 +165,7 @@ Core:
 - Dr Mehdi Ghandi is an AI production expert at Microsoft who is advising us on scaling our solutions
 - Dr Ali Marvasti is an AI specialist PhD candidate at UCL and a practicing neurologist with Python coding skills . He is author of open source tools for seminology https://github.com/thenineteen/Semiology-Visualisation-Tool
 - Rahim Lalani runs and manages an App and Development outsourcing team in East Asia.
-
+- Yadmin Nouri - ex World Bank director blockchain emerging tech
 ### Team Code Repos
 
 - https://github.com/thenineteen/Semiology-Visualisation-Tool
@@ -190,8 +190,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### in this proposal
 - Preliminary study of Substrate features completed
-- required api for blockchain to be developed based on Solid
 - NFT based contract developed for Solidity but tobe rewritten in Rust/INK
+- Api for blockchain to be developed based on Solid
 - A standard blockchain layer/ data storage layer and smart contract
 ### outside this proposal
 - App UI design and development has been started
@@ -200,12 +200,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - Development of backend
 
-- 1- Basic Blockchain parachain detailed design
-  - Milestone one basic API layer design integration with elements of configuring Substrate for new parachain with smart contract facility and verification of structured data (10000 USD )
-  - Development of reusable mechanism for storing data on chain through API service that connects to the Polkadot node 
+- 1- Basic Blockchain parachain build using current available Pallets
+  - Milestone one basic API layer design integration with elements of configuring Substrate for new parachain with smart contract facility
+  - Integration of Indentity validation mechanism : Use pallet-identity or other method of assigning identity signers that provide added value to NFT generated from users health data (As fake data has no value)
+  2- Configuration of Subtrate based parachain with a binary data storage layer
+  - Development of backend mock api service
+  - Development of reusable mechanism for storing data on chain through API service that connects to the Polkadot node
   - In this first instance data storage will be assumed to be trusted as long as parachain node operator is trusted (Without additinal complexity)
-  2- Configuration of Subtrate based parachain with a binary data storage layer (40K USD 1 man year)
-  - development of backend mock api service
   - Connection of app directly to node infrastructure provider to provide non-custodial functionality 
   - Development of data access service possibly using a sidecar approach to extending the substrate node API. 
   - NFT smart contract default template-- We will incorporate based on 
@@ -221,11 +222,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Full-Time Equivalent (FTE):** 3 
 - **Total Costs:** 500 000 of which some will be covered by founders Requested amount in USD for the whole project min 100,000 USD till MVP stage. 
 
-### Milestone 1 Example — Implement basic parachain Substrate Chain API
+### Milestone 1 Example — Implement basic runtime with Substrate Chain API configured with the faetures described above
 - 
-- **Estimated duration:** 4 month
+- **Estimated duration:** 3 months
 - **FTE:**  1
-- **Costs:** 40,000 USD
+- **Costs:** 25,000 USD
 
 |     Number | Deliverable | Specification                                                                                                                                                                                                                                                                                                                                                      |
 |-----------:| ----------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -236,23 +237,24 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 |        0e. | Article | Press release will be prepared a few weeks before the official rollout of the network. The link to the article will be sent when ready                                                                                                                                                                                                                             | 
 |            |             |                                                                                                                                                                                                                                                                                                                                                                    |
 
-* API design of substrate blockchain with native data structures outlined above
+* API design of substrate blockchain with native data structures outlined above minus large data storage (binary BLOB)
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes will show how the new data storage and functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 
 
-### Milestone 2 Example — Implement blockchain linked native storage layer with extran capability
+### Milestone 2 Example — Implement blockchain linked native storage layer as a pallet with Solid pod like basic capability
 
 - **Estimated Duration:** 3 months
 - **FTE:**  1.5
-- **Costs:** 50,000 USD
+- **Costs:** 25,000 USD
 
-| 1. | Substrate module: sidecar IPFS node running side by side with substrate node| Create a node sidecar service that links to the substrate parachain node using the RPC api and provides NIST capable encryption and redirection. Setup governance model for data such that if faulty data is provided by a node it could be penalized by the other substrate nodes |  
-| 2. | Substrate module: API extection |Allow the sidecar service to extend the default Substrate api with the additional needed functionality|  
+| 1. | Substrate module: sidecar IPFS node running side by side with substrate node| Create a node sidecar service that links to the substrate parachain node using the RPC api.
+Setup governance model for data such that if faulty data is provided by a node it could be penalized by the other substrate nodes |  
+| 2. | Substrate module: API extension |Allow the sidecar service to extend the default Substrate api with the additional needed functionality|  
 | 3. | Kusama based testing : | We will deploy the Substrate module for integration and performance testing of the parachian using Locust |  
 
 ### Milestone 3 Example — Implement Data Encryption service as a side car extension to the node
@@ -263,20 +265,18 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 | 1. | App structure: X | We will create a standard template service and library to encrypt data with a secrete key based a function of  (NFC contract, owner address) . The key will be stored securely on the service with support for usage of HWS hardware or software emulation. 
 At a later stage this will be standardized. This will be a simple proof of concept
-This service can optionally encrypt any data provide the encrypted data back through.
 It will also decrypt the data to whomever send it a valid signature proving that they posses the relavent NFT|  
 | 2. | Provide documentation for how to encrypt data for users of this polkadot parachain|  
 
 
 
 ## Future Plans
-Full implementation of w3 solid pos API
-Adding Homomorphic Encryption (HE) is an emerging technique that allows data
-to be processed in encrypted form and would be suitable for medical data sharing
-Extension module to connect to NHS app and other health systems around the work.
-Offchain bridger for faster processing in case of trusted thirdparties
-Promotion through parternships with private and public clinics 
-Promotion will be through coin giveaways on the side chain once accepted on Kusama or mainnet Polkadot or alternative chain.
+- Full implementation of w3 solid pos API
+- Adding Homomorphic Encryption (HE) is an emerging technique that allows data
+to be processed in encrypted form Extension module to connect to NHS app and other health systems around the work.
+- Offchain bridger for faster processing in case of trusted thirdparties
+- Promotion through partnerships with private and public clinics 
+- Promotion will be through coin giveaways on the side chain once accepted on Kusama or mainnet Polkadot or alternative chain.
 
 ## Additional Information :heavy_plus_sign:
 ## References:
@@ -285,7 +285,7 @@ Promotion will be through coin giveaways on the side chain once accepted on Kusa
 41st annual ACM symposium on Theory of Computing (STOC), pp. 169–178, 2009
 [3] https://medium.com/@hashedhealth/on-building-better-healthcare-ecosystems-bd009d5b1190
 [4] https://molid.readthedocs.io/en/latest/programmatic-start.html#construct-an-absolute-uri
-[5] 
+[5] https://solidproject.org/
 **How did you hear about the Grants Program?** Web3 Foundation Website 
 
-This is an ambitious project but with your help we will be able to deliver the frontend and make the changes needed to the backend to support these medical usage of web3
+This is an ambitious project but with your help we will be able to make the changes needed to the backend to support these medical usage of web3
