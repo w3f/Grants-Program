@@ -230,11 +230,11 @@ The goal is to achive a fully functional mechanism for the random selection of t
 | 0e. | Article | We will publish an **article** on Medium that explains how we are going to develop this step. |
 | 1. | Web Dapp | We will create a web dapp to verify the functionality of the infrastructure, the GUI will display interactions between the two blockchains. |
 | 1a.| Dapp Mock-up| Download the mock-up of the dapp at [this link](https://drive.google.com/drive/folders/1SJRPbczZhRaXVLHnLvmp_XIeBtBBv0g-). |
-| 1b. | Home page | ![home page](https://i.imgur.com/oJecYBw.png) |
-| 1c. | Fast Blockchain - Block Page| ![FB Block](https://i.imgur.com/Oq6DFLu.png) |
-| 1d. | Heavy Blockchain - Block Page | ![HB Block](https://i.imgur.com/iJCc6nh.png) |
-| 1e. | Fast Blockchain - Node Page | ![FB Node](https://i.imgur.com/IaPz2A3.png) |
-| 1f. | Heavy Blockchain - Node Page | ![HB Node](https://i.imgur.com/IYEyVzA.png)|
+| 1b. | Home page | ![home page](https://i.imgur.com/MhQVfEj.png) <ol><li>Filter to switch between the two blockcahins for searching purpose </li><li>Searching field (could search for blocks or nodes by typing id)</li><li>The id of the last node checked with `check_computational_work` pallet</li><li>The total number of nodes checked with `check_computational_work` pallet</li><li>Total checks with `check_computational_work`</li><li>Avarage number of checks on a single fast node with `check_computational_work` pallet</li><li>Id of a fast blockchain node</li><li>Number of checks on a node with `check_computational_work` pallet</li><li>The fast nodes that verify the computational work with `check_computational_work` pallet</li><li>Check result from `check_computational_work` pallet</li><li>Total blocks finalized by the blockcahin</li><li>Total nodes of the blockchain</li><li>Block height</li><li>Block age</li><li>Validator id of the block</li></ol>|
+| 1c. | Fast Blockchain - Block Page| ![FB Block](https://i.imgur.com/ZDMuX7I.png) <ol><li>Blockchain identifier</li><li>Block  identifier (height)</li><li>Block height, arrows change the block by 1 (left -1, right +1)</li><li>The age of the block and its creation time</li><li>Validator identifier, optionally a name and time required to validate the block</li><li>Total  number of  fast nodes at this block height</li><li>Number of nodes checked with `check_computational_work` pallet in this block</li><ol>|
+| 1d. | Heavy Blockchain - Block Page | ![HB Block](https://i.imgur.com/iJCc6nh.png) For functionalities see 1c. list. |
+| 1e. | Fast Blockchain - Node Page | ![FB Node](https://i.imgur.com/wOBlIdp.png) <ol><li>Node identifier</li><li>Node identifier arrows change the node by 1 (left -1, right +1)</li><li>Blockchain identifier</li><li>Last time node  checked with `check_computational_work` pallet.</li><li>Total number of checks with `check_computational_work` pallet on this node</li><li>How many pass results on this block</li><ol>|
+| 1f. | Heavy Blockchain - Node Page | ![HB Node](https://i.imgur.com/IYEyVzA.png) For functionalities see 1e. list.| 
 
 
 ## Future Plans
