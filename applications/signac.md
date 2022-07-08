@@ -150,8 +150,10 @@ Goal - Develop Nx plugin for boilerplate in Parity ink! contract project
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | GPLv3 |
-| 0b. | Testing Guide | The code will have end-to-end test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | This code is the inner works of the signac, so what user needs to focus is the documnetation from signac, so there will be no documentation. |
+| 0c. | Testing Guide | E2E test code will be provided to test. If not verifiable due to processing time on a command, sandbox is provided in `/tmp` folder so tester can manually operate to verify functionality. |
+| 0d. | Docker | This is a javascript library that does not need docker. |
 | 1. | Nx Plugin Repo | The entire code for the boilerplate plugin will be shared in a github public repository. |
 
 ### Milestone 2 — Signac CLI
@@ -167,10 +169,12 @@ The cli binary aims to cover whole feature in [ink-waterfall](https://github.com
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | GPLv3 | 
-| 0b. | Documentation | Documentation on Github |
-| 0c. | Signac Repo | The entire code for the binary will be shared in a github public repository. |
-| 1. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video walk through demonstrating Signac |
+| 0a. | License | Apache 2.0 | 
+| 0b. | Documentation | Documentation of Signac will be provided in gitbook |
+| 0c. | Testing Guide | Testing guide will be provided as a tutorial in gitbook documentation |
+| 0d. | Docker | There will be a dockerfile included in the codebase to run local substrate node with `contract` pallet |
+| 1. | Signac Repo | The entire code for the binary will be shared in a github public repository. |
+| 2. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video walk through demonstrating Signac |
 
 ## Future Plans
 
