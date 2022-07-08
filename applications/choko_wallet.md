@@ -95,9 +95,9 @@ Mostly described above in the Overview section.
 
 ### Overview
 
-- **Total Estimated Duration:** 4 months
+- **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  5 FTE
-- **Total Costs:** $86,000
+- **Total Costs:** $64,000
 
 ### Milestone 1
 
@@ -112,7 +112,7 @@ Mostly described above in the Overview section.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | A Dockerfile won't be much useful for a static web app. Therefore, we are not going to provide one for this milestone. |
 | 0e. | Article | We will publish an **article** that explains the concept of the Choko Wallet. More general-public-oriented version of what described in this application. |
-| 1. | Reactjs WebApp | Pages: import/create account (create 12 words seed phrase, encrypt with user-input password and store in browser localStorage, make sure the user has writen down the seed by testing a randomly selected word i.e. ask user to input and validate word #7; import a seed phrase and encrypt with user-input password), sign message/transaction, a almost blank dashboard but allow switching between networks (support at least Polkadot, Kusama and SkyeKiwi Network) |
+| 1. | Reactjs WebApp | Pages: import/create account (create 12 words seed phrase, encrypt with user-input password and store in browser localStorage, encrypted with cryptographic primitives from `@skyekiwi/crypto`,  make sure the user has writen down the seed by testing a randomly selected word i.e. ask user to input and validate word #7; import a seed phrase and encrypt with user-input password), sign message/transaction, a almost blank dashboard but allow switching between networks (support at least Polkadot, Kusama and SkyeKiwi Network) |
 | 2. | Network Adapter | One package in the SDK that establish configuration to connect to networks (i.e. RPC endpoints, color schema, customized types, chain specific grammar candy over PolkadotJs etc.) |
 | 3. | Simple SDK | wallet SDK for developers to connect to Choko Wallet from Dapps (connect wallet and request user address, request approve transactions, request approve singatures)  |  
  
@@ -133,24 +133,6 @@ Mostly described above in the Overview section.
 | 1. | Reactjs WebApp | Pages: dashboard (display balance, send tokens), setup-on-another-device(instruction and QR code generator), import from clear seed(a route to receive a *clear* encoded seed pharse via URL and import into wallet), create wallet page(option to send a URL with a *clear* seed phrase via email & warning banner when a wallet that had exposed a *clear* seed phrase has more than $50 on the selected network) |
 | 2. | Linkdrop Pallet | A substrate pallet that enable anyone to create a linkdrop vault with X number of Y maximum recepients. The developer will create a batch of Y authorization code by `encode( signMessage(vaultId, receipientIndex) )` and distribute the authorization code to seed users. The pallet will then accept a rate limited 0 weight transaction that validate the authorization code and make transfers. |
 | 3. | Linkdrop in Web App | Web App interface to create and claim LinkDrops |
-
-### Milestone 3 
-
-- **Estimated Duration:** 1 month
-- **FTE:**  5 FTE
-- **Costs:** 22,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a **live demo**. Documentation to SDK.|
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | A Dockerfile won't be much useful for a static web app. Therefore, we are not going to provide one for this milestone. |
-| 0e. | Article | We will host at least one workshop that walk through the process of integrating an existing Dapp into Choko Wallet. |
-| 1. | Reactjs WebApp | Pages: account selector (allow creating or importing multiple accounts and select default account to use), encryption/decryption approval, staking tab on the main dashboard |
-| 2. | DeFi Integration | Integrate popular DeFi protocols in the Polkadot ecosystem, and allow some XCM assets teleport. Details to be provided on delivery of Milestone1 or Milestone 2 |
-| 3. | Complete SDK | get current user address, request approval to send transaction, request signature, request decryption/encryption, request change network endpoint and more common grammer candy over PolkadotJs (fetch latest `block_number`, fetch user token balances) |  
-| 4. | Network Adapter Contribution Standard | a **standard** network adapter for blockchain developers in the Polkadot ecosystem to customize wrapper around PolkadotJs that lower the barrier of development for developers on their ecosystem. (i.e. `teleportAssetsTo` to teleport assets from Parachain A to Parachain B, evm specific cals etc.) |  
 
 ## Future Plans
 
