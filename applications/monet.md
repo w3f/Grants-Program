@@ -1,22 +1,24 @@
 # W3F Grant Proposal
 
-* **Project Name:** Kraken - a monorepo plugin for developing multiple Parity ink! smart contracts
+* **Project Name:** Signac - a monorepo plugin for developing multiple Parity ink! smart contracts
 * **Team Name:** Standard Protocol
 * **USDC Payment Address:**  (PLEASE NOTE CHANGE)
-* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
-Inspired from squid spitting ink, I first tried to come up with the name "squid", but to glorify I named the framework "Kraken". Maybe name "squid" may be more memorable due to Squid Game, but I leave the decision to reviewers. 
+Inspired from painter from pointillism, I named the framework signac. Seurat was reserved in NPM, so the framework name is now signac.
 
-In short, Kraken is monorepo parity ink! framework for versatile functions regarding wasm smart contract development on Polkadot ecosystem. The framework was initially being made for implementing Standard Protocol in ink!, but I see the opportunity to make it as offical smart contract dev tool.
+Here is the overview of Signac by Sotherby's [link](https://www.youtube.com/watch?v=XcOF5Ok6vrM).
+
+In short, Signac is monorepo parity ink! framework for versatile functions regarding wasm smart contract development on Polkadot ecosystem. The framework was initially being made for implementing Standard Protocol in ink!, but I see the opportunity to make it as offical smart contract dev tool.
 
 
 ### Overview
 
 * Why Monorepo?
 
-After developing wasm contract development framework [Houston](https://github.com/terra-money/houston) in Cosmos ecosystem. I found out it will never going to work like hardhat nor truffle because **Rust smart contracts are consisted of not just files, but projects**.
+After developing wasm contract development framework [Houston](https://github.com/terra-money/houston) in Cosmos ecosystem, I found out it will never going to work like hardhat nor truffle because **Rust smart contracts are consisted of not just files, but projects**.
   1. They are wrapped in Cargo, which means you have to move around current working directory to compile each contract. (e.g. cd .. && cd ./contract1 && cargo build --release && ..)
   2. To import from other contracts, it is not done in path, you have to specify both path and version -> More tedious jobs
   3. Multiple compiled outputs in each project folder -> harder to locate each of them on deployment
@@ -54,10 +56,10 @@ I have used nx with other rust smart contract Cosmwasm for developing a project.
 
 Nxink is a nx plugin where it creates boilerplates for parity ink! smart contracts. It also supports cloud build where developers 
 
-### Kraken
+### Signac
 
-Kraken is a CLI that creates an nxink-integrated project for developers to start developing with ink! contract without knowing nx.
-Kraken is also used to call other related tools in ink! smart contract ecosystem.
+Signac is a CLI that creates an nxink-integrated project for developers to start developing with ink! contract without knowing nx.
+Signac is also used to call other related tools in ink! smart contract ecosystem.
 
 ### Ecosystem Fit
 
@@ -136,13 +138,13 @@ I have used nx with other rust smart contract Cosmwasm for developing a project.
 ### Overview
 
 * **Full-Time Equivalent (FTE):** 1
-* **Total Costs:** $16000 equivalent
+* **Total Costs:** $30000 equivalent
 
 ### Milestone 1 — Implement Nx plugin for Parity ink!
 
 * **Estimated duration:** 4 weeks
 * **FTE:**  1
-* **Costs:** $14,000 equivalent USDC
+* **Costs:** $10,000 equivalent USDC
 
 Goal - Develop Nx plugin for boilerplate in Parity ink! contract project
 
@@ -152,14 +154,14 @@ Goal - Develop Nx plugin for boilerplate in Parity ink! contract project
 | 0b. | Testing Guide | The code will have end-to-end test coverage to ensure functionality and robustness. In the guide we will describe how to run these tests. |
 | 1. | Nx Plugin Repo | The entire code for the boilerplate plugin will be shared in a github public repository. |
 
-### Milestone 2 — Kraken CLI
+### Milestone 2 — Signac CLI
 
 * **Estimated duration:** 10 weeks
 * **FTE:**  1
-* **Costs:** $28,000 equivalent USDC
+* **Costs:** $20,000 equivalent USDC
 
 Goal - Make a CLI binary that can put this in a production level.
-Taking one step further from [create-nx-workspace](https://github.com/nrwl/nx/blob/b8efa778f639d26e339cecb1d16e0f5a51b1d082/packages/create-nx-workspace/bin/create-nx-workspace.ts), Kraken will generate nx boilerplate for parity ink! smart contract development and support other commands that are related to not only in contract development.
+Taking one step further from [create-nx-workspace](https://github.com/nrwl/nx/blob/b8efa778f639d26e339cecb1d16e0f5a51b1d082/packages/create-nx-workspace/bin/create-nx-workspace.ts), Signac will generate nx boilerplate for parity ink! smart contract development and support other commands that are related to not only in contract development.
 This includes deploying contract, running the test chain, and setting up a task to run.
 The cli binary aims to cover whole feature in [ink-waterfall](https://github.com/paritytech/ink-waterfall).
 
@@ -167,8 +169,8 @@ The cli binary aims to cover whole feature in [ink-waterfall](https://github.com
 | -----: | ----------- | ------------- |
 | 0a. | License | GPLv3 | 
 | 0b. | Documentation | Documentation on Github |
-| 0c. | Kraken Repo | |
-| 1. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video walk through demonstrating Kraken |
+| 0c. | Signac Repo | |
+| 1. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video walk through demonstrating Signac |
 
 ## Future Plans
 
