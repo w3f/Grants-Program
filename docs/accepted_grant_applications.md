@@ -487,7 +487,7 @@
 | [Rusty Crewmates](http://rustycrewmates.com/) | Substrate Tutorials | [GitHub](https://github.com/rusty-crewmates/substrate-tutorials) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Sequester](https://github.com/SequesterChain) | A Common-Good Carbon Sink on Polkadot | [GitHub](https://github.com/SequesterChain/pallets) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Keysafe Network](https://github.com/keysafe-protocol) | A decentralized protocol for private key custody and crypto asset management | [GitHub](https://github.com/keysafe-protocol) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Fennel Labs](https://fennellabs.com/) | Whiteflag on Fennel Protocol | [GitHub](https://github.com/fennelLabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Fennel Labs](https://fennellabs.com/) | Whiteflag on Fennel Protocol | [GitHub](https://github.com/fennelLabs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Relationlabs](https://relationlabs.ai/#/home) | Relation Graph | [GitHub](https://github.com/relationlabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Decentration](https://kabocha.network) | Supersig | [GitHub](https://github.com/kabocha-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Web3 Labs Ltd](https://www.web3labs.com/epirus-explorer) | Epirus Substrate Explorer | [GitHub](https://github.com/web3labs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
