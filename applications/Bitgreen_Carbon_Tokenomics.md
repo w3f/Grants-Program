@@ -224,32 +224,33 @@ product is in the final stage of development and due to release fully in Q3 2022
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 40000 USD
+- **Costs:** 100,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0  |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and extensive module documentation. |
+| 0c. | Article | Public distribution of white paper and research findings in leading technology and Web3 publications |
+| 1a. | Relationships | Contract Will Cong and Team based on published, peer-reviewed academic research on crypto-economics and consensus protocols. Co-design project parameters and negotiate consulting & licensing arrangement |
+| 1b. | Scoping | Provide a research team with written project scope, performance indicators, timeline and final deliverables. |
+| 1c. | Initial Proposal | Research team to present initial proposal exhibiting viable model for a dependent emissions system based on a) carbon asset inventory, b) carbon asset price, or c) both |
+| 1d. | Proposal approval and quantititve assesment | Refinement of the initial economics proposal to include a) coin buybacks, b) staking rewards, c) governance and voting rights. Final delivery to comprise a summary written explanation and quantitative assessment  |
+| 1e. | Whitepaper | Write a full whitepaper |
+
+### Milestone 2 Example — Palette, White Paper, Article
+
+- **Estimated Duration:** 2 month
+- **FTE:**  3
+- **Costs:** 0 (carried by Bitgreen)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and extensive module documentation. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish medium articles explaining how the Tokenomics system works.
-| 1a. | Relationships | Develop legal relationship with Will Cong based on published, peer-reviewed academic research on crypto-economics and consensus protocols. Co-design project parameters and negotiate consulting & licensing arrangement |  
-| 1b. | Documentation | Provide a research team with written project scope, performance indicators, timeline and final deliverables. Reach mutual agreement on scope |  
-| 1c. | Initial Proposal | Research team to present initial proposal exhibiting viable model for a dependent emissions system based on a) carbon asset inventory, b) carbon asset price, or c) both |  
-| 1d. | Proposal approval and quantititve assesment | Refinement of the initial economics proposal to include a) coin buybacks, b) staking rewards, c) governance and voting rights. Final delivery to comprise a summary written explanation and quantitative assessment  |
-
-### Milestone 2 Example — Palette, White Paper, Article
-
-- **Estimated Duration:** 2 month
-- **FTE:**  3
-- **Costs:** 60,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
+| 0d. | Article | Publish documentation and distribution of the tokenomics system
 | 2a | Palette: Amend Bitgreen’s Ecosystem Service Credits (VCU) Palette | Bitgreen developed a Palette which allows to tokenize carbon credits. This palette needs to be properly prepared to allow for the tokenomics concept. |
-| 2b | Implement Model | Bitgreen to implement the written and quantitative research into code for implementation on the Bitgreen parachain and open source the module for other teams to implement (using carbon credits or other tokenized real world assets). Implementation will be done using the assets palette allowing for an arbitrary number of assets to be used as triggers. |
-| 2c | Documentation | Modul documentation and testing guides | 
-| 3 | Security Audit | An external security audit has to be conducted to avoid unwanted minting. Security measures and caps have to be implemented carefully to avoid economic and code attack vectors | 
-| 4 | Publicity | Public distribution of white paper and research findings in leading technology and Web3 publications |
+| 2b | Implement Model | Bitgreen to implement the written and quantitative research into code for implementation on the Bitgreen parachain and open source the module for other teams to implement (using carbon credits or other tokenized real world assets). Implementation will be done using the assets palette allowing for an arbitrary number of assets to be used as triggers. Security measures and caps have to be implemented carefully to avoid economic and code attack vectors minting arbitrary amounts of network tokens |
 
 ## Future Plans
 
