@@ -3,7 +3,7 @@
 
 * **Project Name:** daos
 * **Team Name:** daos-org
-* **Payment Address:** DbBm2iAbzZgom238zU2W6JcSgLUFWpofDi7wEUehjQaERDs (KSM)
+* **Payment Address:** 0x08A7876db92b07057E12fAF29AA3CCF33b5aAe3D (USDT ERC20)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Overview
