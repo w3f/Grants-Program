@@ -4,7 +4,7 @@
 * **Project Name:** daos
 * **Team Name:** daos-org
 * **Payment Address:** DbBm2iAbzZgom238zU2W6JcSgLUFWpofDi7wEUehjQaERDs (KSM)
-* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Overview
 * This project provides a more flexible governance framework for a large number of small groups with common characteristics. It allows developers to create behavior templates based on this set of governance solutions in the simplest way possible,
@@ -84,7 +84,7 @@ We will continue to update, it makes sense, and both KICO and LISTEN are high-qu
 ### Overview
 * **Total Estimated Duration:** 2 months
 * **Full-Time Equivalent (FTE):** 6FTE
-* **Total Costs:** 10k USD
+* **Total Costs:** 12k USD
 ### Milestone 1 — Implement Create-Dao, Agency, DoAS, Square, and Sudo Modules
 * **Estimated duration:** 1 month
 * **FTE:** 6
@@ -106,7 +106,7 @@ We will continue to update, it makes sense, and both KICO and LISTEN are high-qu
 ### Milestone 2 - Emergency, UI design and JS code implementation examples
 * **Estimated duration:** 1 month
 * **FTE:** 3
-* **Costs:** 3000 USD
+* **Costs:** 5000 USD
 
 |Number   | Deliverable              | Specification                        |
 |-----:   |--------------------------|--------------------------------------|
