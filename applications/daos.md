@@ -2,7 +2,7 @@
 ***
 
 * **Project Name:** daos
-* **Team Name:** dao-org
+* **Team Name:** daos-org
 * **Payment Address:** DbBm2iAbzZgom238zU2W6JcSgLUFWpofDi7wEUehjQaERDs (KSM)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
