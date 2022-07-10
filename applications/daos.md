@@ -16,7 +16,7 @@ Each large group can be subdivided indefinitely into smaller groups, and smaller
 ### Background
 * polkadot provides a set of on-chain governance solutions, but it is also very limited. It assumes that any demands made by each user can be fulfilled through the system's very limited referendum or parliamentary resources. This is obviously unreasonable.
 This leads to inefficiency and low willingness of users to vote and participate, which is the root of centralization.
-* The polkadot referendum and parliament are not flexible enough to make big decisions at the system level. Parallel chains have many application-level businesses, each of which can be viewed as a behavior template,
+* The polkadot  democracy and council are not flexible enough to make more decisions at the non-system level. Parallel chains have many application-level businesses, each of which can be viewed as a behavior template,
 Different groups have different origin requirements for specific behaviors.
 So we're offering this flexible governance supplement, where we want each community to be able to make more decisions autonomously and efficiently,
 They have their own dao's democracy and council, but this is not enough to break the system, because each group performs external execution transactions using origin as a common user.
@@ -42,7 +42,7 @@ It uses native referendums or parliaments to help each DAO handle emergencies, s
 ### Workflow
 To be added
 ## Ecosystem Fit
-This is a project without any token, focused on community contribution, and currently both KICO and LISTEN will be used.
+This is a project without any token, focused on community contribution, and tt is now ready for use on KICO and LISTEN.
 We believe that this is a very useful product for other projects in application,
 it will bring you not only the convenience of development, but also the free flow and integration of resources, as long as you pay attention to it.
 Developers can use our governance model by providing a behavior template, regardless of the number of DAOs but only the type of DAOs.
