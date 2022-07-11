@@ -126,8 +126,10 @@ We will continue to introduce more algorithms at the governance level to meet th
 
 ## Additional Information :heavy_plus_sign:
 * **How did you hear about the Grants Program?**
-Announcement by another team
+
+    Announcement by another team
 * **This is an example of kico network use daos for its own vc behavior template**.  
 
     [https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/kico/src/vc.rs#L275](https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/kico/src/vc.rs#L275)
     [https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/kico/src/lib.rs#L1602](https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/kico/src/lib.rs#L1602)
+    > This case is to create a vc behavior template for any type of asset (including NFT), and users can create a DAO based on any asset id.
