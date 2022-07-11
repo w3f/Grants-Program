@@ -164,7 +164,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
 
 ### 3. Milestone Delivery and Payment
 
-   1. Milestones are to be delivered on the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery/) repository following the [process](https://github.com/w3f/Grant-Milestone-Delivery#mailbox-milestone-delivery-process) described therein.
+   Milestones are to be delivered on the [Grant Milestone Delivery](https://github.com/w3f/Grant-Milestone-Delivery/) repository following the [process](https://github.com/w3f/Grant-Milestone-Delivery#mailbox-milestone-delivery-process) described therein.
 
 ### Changes to a Grant after Approval
 
