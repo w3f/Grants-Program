@@ -17,22 +17,22 @@ Many patients use clinics worldwide, but they face difficulty moving patient rec
 To solve this problem we gathered a team and designed an international app. We wanted to store the data in a decentralised manner.
 For further background you can[ read our blog](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
 
-Our goal is to customise a blockchain Pallet such that data storage can become a first class citizen of the ecosystem. Essentially we would like to implement something similar to w3c Solid pod integrated with a Susbtrate node.
+Our goal is to customise a blockchain Pallet/OFW such that a standardized format data storage becomes a first class citizen of the ecosystem. The data should be distributable accessible and auditable. Essentially we would like to implement something similar to w3c Solid pod integrated with a Susbtrate node.
 Integrating application specific security and storage for every application is a major pain point which is not addressed by blockchains.
 A combination of a Substrate blockchain and Solid pod api [5] would provide the security, decentralisation and immutable record keeping that is needed to make healthcare interoperable.
 To make this feasible it needs to be split into stages initially using a smart contract developed in  Ink!/ WebAssembly which records ownership and access [1] to a data pod with a similar API to Solid PODs [4].
 
 ID verification and data storage could be integrated through a Sidecar approach ( a containerized system design pattern) allowing other app developers within the ecosystem to reuse the chain without needing their own backend. 
 For a simpler initial alpha we could integrate IPFS as a pod making it simpler than the full Pod api [4].
-Distributed data could be verified is authentic by having a secure hash stored on the chain with the data in the separate pod.
+Distributed data could be verified as authentic by having a secure hash stored on the chain with the data in the separate pod.
 With trust being established by the blockchain layer, any blockchain node that provides faulty data as verified through smart contract hashes will be kicked out and forfiet their staking in the parachains native token.
 We also propose specific data format for anonymous tags such that no user identified private data would be exposed
-during the whole process. Additional layers of encryption and anonymity would be provided in subsequent phases.
+during the whole process. Additional layers of encryption and anonymity would be provided in subsequent stages.
 
-The initial user of this parachain would be our own app where users store any medical documents with automated information extraction, along with authenticated gpdr opt out.
+The initial user of this parachain would be our own app where users store any medical documents with automated information extraction, along with authenticated GPDR opt out.
 Sample screen of users view of how the data will be presented in our implementation can be seen here https://docs.google.com/presentation/d/1XEQ6qtTLwkmc6JgtpytEUJqhh1behskOWh3s4uE1cXw/edit?usp=sharing
 
-Such a platform would allow game theory incentives and smart contract based marketplaces for data trading to encourage adoption along with a reference app. 
+Such a platform would allow game theory incentives and smart contract based marketplaces for data trading to encourage adoption of the reference application. 
 
 Our team has years of research and development on medical data along with senior blockchain developers working with IT capable PhD accredited medical doctor(s). Data collection extraction and real time scaling is also part of Dr S Marvasti's and Dr Mahdi Ghandi's resume .
 Furthermore, Dr Marvasti has multiple years experience working with blockchain technologies including ZKP both for cross border fintech and for data analysis through AWS Neptune and AWS Aurora API based databases.
@@ -58,13 +58,11 @@ Thus, in this first phase the data may be encrypted outside the blockchain throu
 |--------|----------------------|-----|-----|------------|
 |        |                      |     |     |            |
 
-| hashID Public Address | SignedVerifier |
-|-----------------------|----------------|
-|                       |                |
-|                       |                |
-|                       |                |
-
-
+| hashID Public Address | SignedVerifier          |
+|-----------------------|-------------------------|
+|          0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2             | MSAI_LTD_HASH_SIGNATURE |
+|                       |                         |
+|                       |                         |
 
   - Medical documents consisting of ID HASH and encrypted JSON of the following details: 
 
@@ -90,15 +88,16 @@ Thus, in this first phase the data may be encrypted outside the blockchain throu
  
 - Permission to access Binary data (BLOB internal or external) can only be written to by Authorized Addresses (Verifier address) enforced through smart contract
 
-| AccountHash Allowed Read Permission        | Account  Hash ID                     | Data link to Binary (encrypted) Image data |
-|--------------------------------------------|--------------------------------------------------------------------|--|
-| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | HashID,                            | Pod::xjslfdjl    |
-| 0x8e1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | HashID,  |  external:https://wwww.marvsai.com/xkjdslkdjslk |
+| AccountHash                                | Accounts Allowed Read Permission |   Data link to Binary (encrypted) Image data  |
+|--------------------------------------------|----------------------------------|-----|
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | [HASHID1, HASHID2]               |  Pod::xjslfdjl   |
+| 0x9e1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | [HASHID3, HASHID4]               |  external:https://wwww.marvsai.com/xkjdslkdjslk   |
 
 These two types of data storage access will differ in the that access permission to external storage (pod) account will need to be provided by a dedicated bridging service which internally runs a HSM or Hardware Secure Module.
 
 Addition of MSAI parachain webassembly smart contract for efficient encryption and decryption if necessary 
 Storage of NFT
+
 ### An overview of the technology stack to be used
 - Parachain Scaling:  ![component](https://raw.githubusercontent.com/salmanmarvasti/Grants-Program/master/applications/img/component.png)
 - Each parachain node will be an IPFS like Solid Pod + node
@@ -133,6 +132,7 @@ e.g
 - BNB Chain all projects 
 - Binance Health -  (more commercial pump and dump than substance) using Binance smart chain that is both expensive and unscaleable being a copy of Ethereum such that NHS and other health systems could also theoretically connect. 
 - Solid pods could be considered as solving a similar problem though without a public append only ledger which reduces traceability and auditability of data access.
+
 ## Team :
 Marvsai team www.marvsai.com
 
@@ -141,12 +141,13 @@ Core:
 - Dr Salman Alim Marvasti --  Experienced Finance and Blockchain Senior Developer currently at Blockchain.com
 - Dr Atefeh Alihossieni - Internal Medicine Specialist - Medical App Design Baan Clinic- Millway medical practice
 - Rahim Lalani CEO Text services and contract app development company in Pakistan
+
 ####  Advisory:
 - Dr Mehdi Ghandi - Senior FPGA AI developer
 - James Isilay - Cognism AI founder and CEO
-- Dr Ali Marvasti -- Consultant Neurologist  and PhD candidate- NHS , Cambridge University 
-    Dr Ali Marvasti's research with medical data made evident that even if an application is developed that could scan and store all the data there is no reliable standard to store it in a decentralised manner.
-    The existing projects are not benefitial for real life situation.
+- Dr Ali Marvasti -- Consultant Neurologist  and PhD candidate - NHS , Cambridge University 
+- Dr Ali Marvasti's research with medical data made evident that even if an application is developed that could scan and store all the data there is no reliable standard to store it in a decentralised manner.
+    The existing projects are not beneficial for real life situation.
 
 ### Contact
 
@@ -163,9 +164,9 @@ Core:
 - Dr Salman Marvasti is a senior software developer with blockhchain since 2015
 - Dr Atefeh Alihosieni is a medical physician with extensive experience with Patient systems at Baan Clinic and Millway Medical Practice London
 - Dr Mehdi Ghandi is an AI production expert at Microsoft who is advising us on scaling our solutions
-- Dr Ali Marvasti is an AI specialist PhD candidate at UCL and a practicing neurologist with Python coding skills . He is author of open source tools for seminology https://github.com/thenineteen/Semiology-Visualisation-Tool
 - Rahim Lalani runs and manages an App and Development outsourcing team in East Asia.
-- Yadmin Nouri - ex World Bank director blockchain emerging tech
+- Dr Ali Marvasti is an AI specialist PhD candidate at UCL and a practicing neurologist with Python coding skills . He is author of open source tools for seminology https://github.com/thenineteen/Semiology-Visualisation-Tool
+- Dr Yasmin Nouri - ex World Bank director blockchain emerging tech
 ### Team Code Repos
 
 - https://github.com/thenineteen/Semiology-Visualisation-Tool
@@ -182,9 +183,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - https://www.linkedin.com/in/marvastisalman/
 - https://www.linkedin.com/in/atefeh-alihoseini-a3850a202/
-- https://www.linkedin.com/in/ali-alim-marvasti-1a846855/
 - https://www.linkedin.com/in/mahdi-ghandi-3410114/
 - https://www.linkedin.com/in/rahim-lalani-9823691/
+- https://www.linkedin.com/in/yasmin-saadat-0623/
 
 ## Development Status :open_book:
 
@@ -197,22 +198,21 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - App UI design and development has been started
 
 ## Development Roadmap :nut_and_bolt:
-
+### Preface
 - Development of backend
 
 - 1- Basic Blockchain parachain build using current available Pallets
   - Milestone one basic API layer design integration with elements of configuring Substrate for new parachain with smart contract facility
-  - Integration of Indentity validation mechanism : Use pallet-identity or other method of assigning identity signers that provide added value to NFT generated from users health data (As fake data has no value)
-  2- Configuration of Subtrate based parachain with a binary data storage layer
-  - Development of backend mock api service
-  - Development of reusable mechanism for storing data on chain through API service that connects to the Polkadot node
+  - Integration of Identity validation mechanism : Use pallet-identity or other method of assigning identity signers that provide added value to NFT generated from users health data (As fake data has no value)
+  2- Configuration of Subtrate based parachain with a binary data storage layer that preferably distrubuted
+  - Development of backend mock api service that is extended from the Pallet OFW
+  - Investigating extension of off chain data storage mechanism build into Subtrate OFW.
   - In this first instance data storage will be assumed to be trusted as long as parachain node operator is trusted (Without additinal complexity)
-  - Connection of app directly to node infrastructure provider to provide non-custodial functionality 
-  - Development of data access service possibly using a sidecar approach to extending the substrate node API. 
   - NFT smart contract default template-- We will incorporate based on 
-  3- Ink! or other smart contract language that supports NFTs and ERC721 level in addition to ownership authentication:
-  - Only owners of the NFT will be able to access the encrypted data within using the sidecar service. Control encryption to and from the data storage layer
-  4- testing on Kusama 
+  3- Built in smart contract on the subtrate chain - written in Ink! or other webassembly language that supports NFTs and ERC721 level in addition to ownership authentication:
+  - Only owners of the NFT will be able to access the encrypted data within using the sidecar service. Control encryption to and from the data storage layer.
+  - Built on the model documented in refernce [1]
+  4- Testing on Kusama 
   - Development of example scripts for interaction with new parachain based on docker files (10000 USD)
   - Development of reference APP based on customisation of Alphawallet or other suitable wallet for the new Polkadot parachain 6 months (50000)
 
@@ -222,7 +222,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Full-Time Equivalent (FTE):** 3 
 - **Total Costs:** 500 000 of which some will be covered by founders Requested amount in USD for the whole project min 100,000 USD till MVP stage. 
 
-### Milestone 1 Example — Implement basic runtime with Substrate Chain API configured with the faetures described above
+### Milestone 1 Example — Implement basic runtime with Substrate Chain API configured with the features described above
 - 
 - **Estimated duration:** 3 months
 - **FTE:**  1
@@ -238,36 +238,36 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 |            |             |                                                                                                                                                                                                                                                                                                                                                                    |
 
 * API design of substrate blockchain with native data structures outlined above minus large data storage (binary BLOB)
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes will show how the new data storage and functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+
+| No  |  Deliverable |   Specification  |
+|-----|-----|-----|
+| 1a. |  License |    Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 1b. |  Documentation |  We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes will show how the new data storage and functionality works.   |
+| 1c. |  Testing Guide |  Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.   |
+| 1d. |  Docker |  We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.   |
 
 
-### Milestone 2 Example — Implement blockchain linked native storage layer as a pallet with Solid pod like basic capability
+### Milestone 2 Example — Implement/Extend blockchain linked native storage layer as a pallet with Solid pod like basic capability
 
 - **Estimated Duration:** 3 months
 - **FTE:**  1.5
 - **Costs:** 25,000 USD
 
-| 1. | Substrate module: sidecar IPFS node running side by side with substrate node| Create a node sidecar service that links to the substrate parachain node using the RPC api.
+| 1. | Substrate module: Extend OFW feature or add features via a Sidecar IPFS node running side by side with substrate node such that OFW data storage is distrbuted between nodes|
 Setup governance model for data such that if faulty data is provided by a node it could be penalized by the other substrate nodes |  
 | 2. | Substrate module: API extension |Allow the sidecar service to extend the default Substrate api with the additional needed functionality|  
 | 3. | Kusama based testing : | We will deploy the Substrate module for integration and performance testing of the parachian using Locust |  
 
-### Milestone 3 Example — Implement Data Encryption service as a side car extension to the node
-
+### Milestone 3 Example — Implement Data Encryption service as an extension to the node
+This will be a working alpha software.
 - **Estimated Duration:** 1 months
 - **FTE:**  2
 - **Costs:** 10,000 USD
 
-| 1. | App structure: X | We will create a standard template service and library to encrypt data with a secrete key based a function of  (NFC contract, owner address) . The key will be stored securely on the service with support for usage of HWS hardware or software emulation. 
-At a later stage this will be standardized. This will be a simple proof of concept
-It will also decrypt the data to whomever send it a valid signature proving that they posses the relavent NFT|  
-| 2. | Provide documentation for how to encrypt data for users of this polkadot parachain|  
-
+| No  | Deliverable                           |   Specification  |
+|-----|---------------------------------------|-----|
+| 1.  | App structure: Alpha working software |   We will create a standard template service and library to encrypt data with a secrete key based a function of  (NFC contract, owner address) . The key will be stored securely on the service with support for usage of HWS hardware or software emulation.     |
+| 2.  | Documentation                         | Provide documentation for how to encrypt data for users of this polkadot parachain|  
 
 
 ## Future Plans
