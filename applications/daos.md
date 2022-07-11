@@ -125,5 +125,8 @@ voice of the community. Using this project, the voice of every small community c
 We will continue to introduce more algorithms at the governance level to meet the governance needs of different project parties. We welcome more developers to join us to improve.
 
 ## Additional Information :heavy_plus_sign:
-**How did you hear about the Grants Program?**
+* **How did you hear about the Grants Program?**
 Announcement by another team
+* **This is an example of kico network use daos for its own vc behavior template**.  
+
+    [https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/kico/src/vc.rs#L275](https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/kico/src/vc.rs#L275)
