@@ -90,34 +90,34 @@ We will continue to update, it makes sense, and both KICO and LISTEN are high-qu
 * **FTE:** 6
 * **Costs:** 7000 USD
 
-|Number   | Deliverable       | Specification                                        |
-|-----:  |-------------------|------------------------------------------------------|
-|0a.     | License           | MIT APACHE                                           |
-|0b.     | Documentation     | Document for each module                             |
-|0c.     | Testing           | Testing for each module                              |
-|0d.      | Example           | Provides examples of substarte developers using daos |
-|0e.      | Comment           | Comment for each module                              |
-|0f.      | Benchmarking      | Benchmarking for each module                  |
-|1.       | create-dao pallet | Complete the code                                                |
-|2.        | agency pallet     | Complete the code                                                |
-|3.     | doas pallet       | Complete the code                                                 |
-|4.     | square pallet     | Complete the code                                                |
-|5.     | sudo pallet       | Complete the code                                                 |
+|Number   | Deliverable       | Specification                                                                                                                                                               |
+|-----:  |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|0a.     | License           | MIT, APACHE2.0                                                                                                                                                              |
+|0b.     | Documentation     | Write Document for each module                                                                                                                                              |
+|0c.     | Testing           | Write test code for each module                                                                                                                                             |
+|0d.      | Example           | Provides code for examples of using DAOS on substrate projects                                                                                                              |
+|0e.      | Comment           | Provide detailed comments for each module                                                                                                                                   |
+|0f.      | Benchmarking      | Write Benchmarking code for each module                                                                                                                                     |
+|1.       | create-dao pallet | Developers can quickly create a behavior template that works with daos, and users can create DAOs based on behavior templates in this module.                               |
+|2.        | agency pallet     | A power agent in DAO can solve some things in DAO more quickly. The module can set the difficulty level of transactions that can be executed by power agent, namely Origin. Has its own voting system|
+|3.     | doas pallet       | Through this module, the agency can obtain a dao-account, which is the identity of an ordinary user to perform external transactions                                        |
+|4.     | square pallet     | The highest authority in dao, can execute all transactions in dao. And the execution difficulty of each transaction can be set in this modlue, namely vote weight. Has its own voting system         |
+|5.     | sudo pallet       | Giving someone root privileges can execute all executable methods in dao. It should be remove when the DAO is necessary for decentralization.                               |
 ### Milestone 2 - Emergency, UI design and JS code implementation examples
 * **Estimated duration:** 1 month
 * **FTE:** 3
 * **Costs:** 5000 USD
 
-|Number   | Deliverable              | Specification                        |
-|-----:   |--------------------------|--------------------------------------|
-|0a. | Documentation            | Provide documentation for using daos |
-|0b. | Testing                  | Complete all module tests                           |
-|0c. | Comment                  | Comment for each module                            |
-|0d. | weight                   | Implement default weight for each module               |
-|1.       | emergency pallet         | Complete the code                        |
-|2.       | `set_xxx` in these pallets | More parameters can be set directly and governance is more flexible                 |
-|3.       | UI design                | Providing a UI framework                               |
-|4.        | JS                       | Provides code cases based on UI framework implementation                      |
+|Number   | Deliverable                         | Specification                                                                                                                    |
+|-----:   |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+|0a. | Documentation                       | Provide documentation for using daos                                                                                             |
+|0b. | Testing                             | Complete all module tests                                                                                                        |
+|0c. | Comment                             | Comment for each module                                                                                                          |
+|0d. | weight                              | Implement default weight for each module                                                                                         |
+|1.       | emergency pallet                    | When dao cannot run normally for some reason, such as wrong parameter settings, it can be adjusted through democracy and council |
+|2.       | Add more `set_xxx` in these pallets | More parameters can be set directly and governance is more flexible                                                              |
+|3.       | UI design                           | Providing a UI framework                                                                                                         |
+|4.        | JS                                  | Provides js code cases based on UI framework implementation                                                                      |
 > The hardest thing about Milestone 2 is UI design, because the front end doesn't know what behavior boundaries the behavior template designer set. Our current solution is to design with metadata.
 ## Future Plans
 We will focus on getting more people to use this project than just LISTEN and KICO. A mature product should pay more attention to the sinking market and listen to differences
