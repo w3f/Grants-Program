@@ -515,3 +515,4 @@
 | [Polkadot js plus](http://polkadotjs.plus/) | Polkadot js plus / Social Recovery Wallet | [GitHub](https://github.com/Nick-1979/polkadot-Js-Plus-extension/wiki) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Lee](https://github.com/rust-0x0) | Hex Space Social Graph | [GitHub](https://github.com/rust-0x0) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Liberland LLC](https://liberland.org/en/) | Liberland Pallets | [GitHub](https://github.com/liberland/liberland_substrate) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Standard Protocol](https://standard.tech/) | Signac - a monorepo plugin for developing multiple Parity ink! smart contracts | [GitHub](https://github.com/digitalnativeinc) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
