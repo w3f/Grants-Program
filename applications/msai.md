@@ -185,7 +185,6 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://www.linkedin.com/in/atefeh-alihoseini-a3850a202/
 - https://www.linkedin.com/in/mahdi-ghandi-3410114/
 - https://www.linkedin.com/in/rahim-lalani-9823691/
-- https://www.linkedin.com/in/yasmin-saadat-0623/
 
 ## Development Status :open_book:
 
@@ -227,31 +226,37 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Estimated duration:** 3 months
 - **FTE:**  1
 - **Costs:** 25,000 USD
-
-|     Number | Deliverable | Specification                                                                                                                                                                                                                                                                                                                                                      |
-|-----------:| ----------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|        0a. | License | Apache 2.0                                                                                                                                                                                                                                                                                                                                                         |
-|        0b. | Documentation | [Link to why healthcare decentralised](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)                                                                                                                                                                                                                            |
-|        0c. | Testing Guide | Each epic describes testing opportunities.  [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) 2. Create openapi specifcations for reading and writing data to and from the NFT smart contract (Depends on blockchain nft tech used) . 3. Impement hash based impelementation for external reference storage |
-|        0d. | Docker | Access will be granted after several iterations to run sidecar datastorage with Substrate together                                                                                                                                                                                                                                                                 |
-|        0e. | Article | Press release will be prepared a few weeks before the official rollout of the network. The link to the article will be sent when ready                                                                                                                                                                                                                             | 
-|            |             |                                                                                                                                                                                                                                                                                                                                                                    |
+#### Part A
+| Number | Deliverable   | Specification                                                                                                                                                                                                                                                                                                                                                      |
+|-------:|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License       | Apache 2.0                                                                                                                                                                                                                                                                                                                                                         |
+|    0b. | Documentation | [Link to why healthcare decentralised](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)                                                                                                                                                                                                                            |
+|    0c. | Testing Guide | Each epic describes testing opportunities.  [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) 2. Create openapi specifcations for reading and writing data to and from the NFT smart contract (Depends on blockchain nft tech used) . 3. Impement hash based impelementation for external reference storage |
+|    0d. | Docker        | Access will be granted after several iterations to run sidecar datastorage with Substrate together                                                                                                                                                                                                                                                                 |
+|    0e. | Article       | Press release will be prepared a few weeks before the official rollout of the network. The link to the article will be sent when ready                                                                                                                                                                                                                             | 
+|    1a. | Node Repo     | Complete the deploment of the basic public chain.            |
+|    2a. | Pallet        |       Milestone one basic API layer design integration with elements of configuring Substrate for new parachain with smart contract facility             |
 
 * API design of substrate blockchain with native data structures outlined above minus large data storage (binary BLOB)
-
-| No  |  Deliverable |   Specification  |
+#### Part B
+| No  |  Deliverable |   Specification |
 |-----|-----|-----|
-| 1a. |  License |    Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 1b. |  Documentation |  We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes will show how the new data storage and functionality works.   |
-| 1c. |  Testing Guide |  Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.   |
-| 1d. |  Docker |  We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.   |
+| 0a. |  License |    MIT  |
+| 0b. |  Documentation |  We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes will show how the new data storage and functionality works. |
+| 0c. |  Testing Guide |  Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. |  Docker |  We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 
 
-### Milestone 2 Example — Implement/Extend blockchain linked native storage layer as a pallet with Solid pod like basic capability
+### Milestone 2 — Implement/Extend blockchain linked native storage layer as a pallet with Solid pod like basic capability
 
 - **Estimated Duration:** 3 months
 - **FTE:**  1.5
 - **Costs:** 25,000 USD
+
+| No  |  Deliverable |   Specification |
+|-----|-----|-----|
+| 0a. |  License |    MIT  |
+| 0b. |  Documentation |  We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes will show how the new data storage and functionality works. |
 
 | 1. | Substrate module: Extend OFW feature or add features via a Sidecar IPFS node running side by side with substrate node such that OFW data storage is distrbuted between nodes|
 Setup governance model for data such that if faulty data is provided by a node it could be penalized by the other substrate nodes |  
