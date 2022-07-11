@@ -130,3 +130,4 @@ Announcement by another team
 * **This is an example of kico network use daos for its own vc behavior template**.  
 
     [https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/kico/src/vc.rs#L275](https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/kico/src/vc.rs#L275)
+    [https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/kico/src/lib.rs#L1602](https://github.com/DICO-TEAM/dico-chain/blob/main/runtime/kico/src/lib.rs#L1602)
