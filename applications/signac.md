@@ -2,7 +2,7 @@
 
 * **Project Name:** Signac - a monorepo plugin for developing multiple Parity ink! smart contracts
 * **Team Name:** Standard Protocol
-* **USDC Payment Address:**  (PLEASE NOTE CHANGE)
+* **USDC Payment Address:**  0xd2234E506862991ADA75f930c6D79B4236e3E265
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -54,7 +54,7 @@ I have used nx with other rust smart contract Cosmwasm for developing a project.
 
 ### Nxink
 
-Nxink is a nx plugin where it creates boilerplates for parity ink! smart contracts. It also supports cloud build where developers 
+Nxink is a nx plugin where it creates boilerplates for parity ink! smart contracts. It also supports cloud build where developers can save local computer resources for compiling smart contracts.
 
 ### Signac
 
