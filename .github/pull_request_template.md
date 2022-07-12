@@ -8,7 +8,7 @@
 
 - [ ] **Level 1**:  Up to $10,000, 2 approvals
 - [ ] **Level 2**:  Up to $30,000, 3 approvals
-- [ ] **Level 3**:  Unlimited, 5 approvals (for > $100k Web3 Foundation Council approval)
+- [ ] **Level 3**:  Unlimited, 5 approvals (for >$100k: Web3 Foundation Council approval)
 
 ### Application Checklist
 
