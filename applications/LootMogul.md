@@ -13,7 +13,7 @@
 
 ### Project Details
 
-![Lootmogul Demo - Build your own metaverse land](https://lootmogul.com/_next/image?url=https%3A%2F%2Fmedia-content.lootmogul.com%2FCreate_Land_2_1440x600_dc8b092056_095d617610.webp&w=3840&q=75)
+![Lootmogul Demo - Build your own metaverse land](https://github.com/nilesh-sukalikar/image-storage/blob/main/new-metaverse-3.jpg?raw=true)
 
 LootMogul is an influencer-led sports metaverse gaming platform powered by exclusive properties (Lands, Stadium, Arenas, etc.), NFTs, and token rewards for the fans and business community.
 
@@ -44,17 +44,12 @@ Finally, LootMogul's seed round is funded by billion-dollar web 3 crypto compani
 #### Technology Stack
 
 - React
-- React-native
 - Node.js
-- 3D Model Design
-- Polygon Matic
-- Strapi CMS
+- ink
 - Rust 
-- Solidity
+- Substrate
 
 ### Ecosystem Fit
-
-
 
 ## Team :busts_in_silhouette:
 
@@ -71,9 +66,6 @@ Corsley Edwards - Infuencer Management
 Harshit Kashiv - Growth Marketing
 
 Vibhu Sirvastava - Community Management
-
-
-
 
 ### Contact
 
@@ -150,9 +142,6 @@ Vibhu Sirvastava is in Community Management at Lootmogul with 11+ years of exper
 - Troy Brazell
 - Thomas E. Doyle
 
-
-
-
 <!-- ## Development Status :open_book:
 
 - https://lootmogul.com/metaverse This is metaverse implementaion for stadium landsale with momento360 view.
@@ -162,7 +151,7 @@ Vibhu Sirvastava is in Community Management at Lootmogul with 11+ years of exper
 
 ## Development Roadmap :nut_and_bolt:
 
-### Milestone 1 — Implementing NFT, metaverse using polkadot blockchain.
+### Milestone 1 — Implementing NFT marketplace on Polkadot ecosystem using substrate
 
 - **Estimated duration:** 6 months
 - **FTE:** 4 to 5 developers
@@ -175,14 +164,11 @@ Vibhu Sirvastava is in Community Management at Lootmogul with 11+ years of exper
 |    0c. | Testing Guide               | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided                                                                                                                      |
 |    0d. | Video                      | We will provide a video demonstration that will illustrate all of the functionality delivered with this milestone.                                                                                                                                                                                                  |
 |    0e. | Article                     | We will publish an **article**/workshop/gitbook that explains our application workflow as well as technical details.                                                                                                                                                                                                   |
-|    1. | Core Foundation and Infrastructure Setup                     |  * GitHub/Lab Polkadot dev branch & configure supporting APIs. <br />                                                                    * Finalize requirements with internal game developers & KOL                                                                                                                                                                                                                                                                                                   |
-|    2. | Smart Contract libraries for NFT Marketplace               | * Ability to mint meta NFTs using INK for writing smart-contracts.<br /> * Ability to set royalty, pricing, KOL & guild specific tracking on Polkadot                                                          |
-|    3. | Stablecoin integration with Polkadot               | * aUSD Stable coin transaction for game in-app purchases. <br /> * aUSD Stable coin integration for all metaverse NFT and land sale                                                                                                                                 |
-|    4. | Browser extension of polkadot-js wallet                      | * Web 3 integration for the polkadot-js wallet. <br />  * NFT/Meta/Game transaction authorization and wallet tracking                                                                                                                                                                                                |
-|    5. | Fractional stadium and land ownership                     | * Integrate in-game fractional NFT ownership. <br /> * Integrate stadium fractional ownership                                                                                                                                |
-|     6. | Proof of contribution platform integration        | * Evaluate all possible proof of contribution integration for LootMogul. <br /> * Select specific paths for metaverse and in-game staking/rewards mechanics |
-|     7. | Game development and Guild integration | * Selective on chain transactions migrations for game dev. <br /> * Integrate scholar/community managers rewards for Guilds                                                                  |
-|     8. | Final Release            | * Final integration & regression testing. <br /> * Early access to scholars/KOL and full production release                                                    |
+|    1. | Core Foundation and Infrastructure Setup  | * subtracte environment setup, updating rust environment, setuping nodes. <br/> * Preparing required github repositories for frontend and backend work
+|    2. | Writing Smartcontracts using substrate with ink  | Writing smartcontract for NFT minting, trafer, approve. <br/> Lootmogul will mint influcer based NFTs and land NFTs to make it available on polakadot ecosystem. 
+|    3. | Writing metadata apis for NFT                    | * To provide additional metadatainformation to minted NFTs on the frontend side.                                                                                                                                 |
+|    4. | Creating frontend                   | * Fronend web3 application which will connect to smartcontarct.                                                                                                                                 |
+|    5. | Final Release            | * Final integration & regression testing. <br /> * Early access to scholars/KOL and full production release                                                    |
 
 ### Development roadmap
 - Polkadot integration 
