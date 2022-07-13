@@ -121,7 +121,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 | Gaming | [NewOmega](https://github.com/WiktorStarczewski/newomega.polkadot/blob/master/newomega_delegator/newomega/newomega.rs) :red_circle:| |
 | DAO | [subDAO](https://github.com/SubDAO-Network/subDAO-contracts) :red_circle:, [RainbowDAO](https://github.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-milestone_1) :red_circle:| |
 | Spam Protection | [Prosopo](https://github.com/prosopo-io/integration) :green_circle:| |
-| Other | [Candle Auctions](https://github.com/agryaznov/candle-auction-ink) :red_circle:, [polkasign-contract](https://github.com/SubDAO-Network/polkasign-contract) :red_circle:, [OCEX](https://github.com/w3f-community/ocex-smartcontract) :yellow_circle:| |
+| Other | [Candle Auctions](https://github.com/agryaznov/candle-auction-ink) :red_circle:, [polkasign-contract](https://github.com/SubDAO-Network/polkasign-contract) :red_circle:, [OCEX](https://github.com/bsn-si/ocex-cli) :yellow_circle:| |
 
 
 ### :link: Chains and Pallets 
