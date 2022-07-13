@@ -93,8 +93,8 @@ balance that has become perilously dislodged since the industrial revolution. Mo
 increasingly more scarce every year as industry and consumption continue unabated.
 
 Bitgreen will tokenize high quality carbon credits and offer them for sale and retirement on the Bitgreen parachain. A
-user, upon purchasing and retiring a tokenized credit, receives in return an amount of Bitgreen Network Tokens (BNT)
-determined by a dynamic tokenomics algorithm. BNT can be used to access the Bitgreen network, pay for certain
+user, upon purchasing and retiring a tokenized credit, receives in return an amount of Bitgreen Network Tokens (BBB)
+determined by a dynamic tokenomics algorithm. BBB can be used to access the Bitgreen network, pay for certain
 applications, vote on governance referendums, participate in staking, and pay transaction fees.
 
 ### Benefits
@@ -102,9 +102,9 @@ applications, vote on governance referendums, participate in staking, and pay tr
 This novel approach would introduce several desirable outcomes:
 
 1. Eliminates arbitrary token pre-mines and emissions often structured to appease traders.
-2. Congruence of total BNT supply and the real-world supply of high quality carbon sinks.
+2. Congruence of total BBB supply and the real-world supply of high quality carbon sinks.
 3. Dynamic supply based on the ebbs and flows of the free market.
-4. Altruistic conception – Every BNT token is initially born from an original good deed.
+4. Altruistic conception – Every BBB token is initially born from an original good deed.
 5. Regulatory advantages by issuing commodities intended for consumption rather than securities intended for
    speculation.
 
@@ -120,10 +120,10 @@ supply. The inputs include:
 
 * Carbon asset price
 * Carbon asset supply
-* Price of BNT network token
+* Price of BBB network token
 * Emissions (staking) rate of Bitgreen network
 * Revenue rate of Bitgreen network
-* Burn rate of BNT network tokens
+* Burn rate of BBB network tokens
 
 The simulation will illustrate tolerances where certain market conditions could result in runaway inflation, deflation,
 or lack of liquidity (market frictions). Upon this, we can develop either a fixed emissions schedule or reflexive
