@@ -8,13 +8,13 @@
 
 ## Project Overview :page_facing_up:
 
-Ink Explorer is an application that provides Ink contracts related information on live Substrate based blockchains. It subscribes to blockchain events and store the informaction on its own PostgreSQL database. The backend exposes an API that can interact with the DB and run fast queries to get specific information in a short time. 
+Ink Explorer is an application that provides Ink contracts related information on Substrate based blockchains. It subscribes to blockchain and Ink modules events and store the informaction on its own PostgreSQL database. The backend exposes an API that can interact with the DB and run fast queries to get specific information in a short time. 
 
-This project serves useful information that is not available anywhere else. Since the back end is in charge of obtaining information related to the balances, transactions and more, of the contracts that use the Ink protocol.
+The idea of this project is to have fast way to start a node that can be used as an explorer getting live and old data for specific contracts or addresses. 
 
-Ink Explorer uses polkadot.js to communicate with the Substrate / Polkadot networks. It is safe to say that this project is a must.
+This project serves useful information that is not available anywhere else. Since the back end is in charge of obtaining information related to the balances, transactions and more, of the contracts that use Ink modules. Ink Explorer uses polkadot.js to communicate with the Substrate / Polkadot networks. It is safe to say that this project is a must. 
 
-Blockcoders is a team that is always contributing to blockchain projects to help the growth of the ecosystem. 
+Blockcoders is a team that is always contributing to blockchain projects to help the growth of the ecosystem.
 
 ### Ecosystem Fit
 
