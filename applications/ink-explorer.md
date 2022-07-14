@@ -92,9 +92,14 @@ The service will expose an API that will provide all the required information th
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide both **english** and **spanish** versions of the documentation. This will cover step by step how to set up and start the project using both docker and running the node locally. |
+| 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
+| 0d. | Docker | A Dockerfile will be provided that will be able to start the node and run tests for all the functionality delivered within this milestone. |
+| 0e. | Article | We will post an article on Twitter and Reddit for both english and spanish speakers communities.
 | 1. | Create database | Create a DB on PostgreSQL to store all the information |  
-| 2. | backend service | Create a service that subscribes to blockchain events and store information on the DB |  
-| 3. | API | Extend the service to expose an API that gets the contracts data |
+| 2. | Backend service | Create a service that subscribes to blockchain events and Ink modules events. This service will store and index the information in the database to be accessed quickly and easily. |  
+| 3. | API | Extend the service functionality to expose an API that gets the contracts data |
 | 4. | Testing | Achieve a testing coverage of the functionalities above 90% |
 
 Deliverables in this milestone will be dockerized. We will provide a README with examples showing how to start the service, and query the API.
@@ -108,30 +113,38 @@ Create tables and indexes.
 #### 2 - Backend service
 
 Create a docker container to start a typescript project.
-Add all subscriptions needed to retrieve the information from the blockchain (using polkadot.js) and store it on the DB. (If needed sync all data from blockHash - can be from genesis but it will take longer)
+Add all subscriptions needed to retrieve the information of the emited events from both the blockchain (using polkadot.js) and Ink modules. 
+Store and index the events data on the database. (If needed sync all data from blockHash - can be from genesis but it will take longer)
 
 #### 3 - API
 
-Create endpoints that get all the contracts information from the DB.
+Create an interface to get all the contracts information from the database.
 
 #### 4 - Testing
 
-Add unit tests and e2e test to achieve a high coverage.
+Add unit tests and end to end test to achieve a high coverage of the functionality.
 
 ### Milestone 2 - Frontend
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 1.5 month
 - **FTE:**  2
-- **Costs:** 10,000 USD
+- **Costs:** 15,000 USD
 
 This milestone is entirely about creating a frontend app and making it work along with the back end service. The app will be mounted on the same docker as the backend service so it can be started with a single docker command.
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide both **english** and **spanish** versions of the documentation. This will cover step by step how to set up and start the project using both docker and running the node locally. |
+| 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
+| 0d. | Docker | A Dockerfile will be provided that will be able to start the node and run tests for all the functionality delivered within this milestone. |
+| 0e. | Article | We will post an article on Twitter and Reddit for both english and spanish speakers communities.
 | 1. | Design | Design the application frontend |  
 | 2. | Create App | Create a frontend application that mocks the data |  
 | 3. | Interact with backend | Integrate both frontend and backend replacing the mocks with real data from the service |  
 | 4. | Testing | Add tests to the components |
+| 5. | Final setups | Deal with all production issues/configuration requirements |
+| 6. | Deploy the app | Deploy the app to the final domain |
 
 #### 1 - Design
 
@@ -146,27 +159,20 @@ Dockerize the app to start in a container.
 
 #### 3 - Interact with backend
 
-Add the react app to the docker compose so it starts all the containers together.
+Add the react app to the docker compose so it starts all the containers together (backend and frontend).
 Remove the mocks and replace them with backend real data.
 
 #### 4 - Testing
 
 Add tests to the components of the app.
 
-### Milestone 3 - Final testing and Deploy
+#### 5 - Final setups
 
-- **Estimated Duration:** 0.5 month
-- **FTE:**  2
-- **Costs:** 5,000 USD
+Deal with all production issues/configuration requirements such as creating the final docker image, reviewing the documentation and verifying everything works fine.
 
-This milestone is entirely about creating a frontend app and making it work along with the back end service. The app will be mounted on the same docker as the backend service so it can be started with a single docker command.
+#### 6 - Deploy the app
 
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
-| 1. | Run e2e tests | Make sure all tests are passing and test the app manually |  
-| 2. | Create docker image | Create a docker image and start it |
-| 3. | Final setups | Deal with all production issues/configuration requirements |
-| 4. | Deploy the app | Deploy the app to the final domain |
+Define the final domain and deploy the app.
 
 ## Future Plans
 
