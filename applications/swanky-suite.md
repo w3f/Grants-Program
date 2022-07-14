@@ -8,18 +8,14 @@
 > 
 - **Project Name:** Swanky Suite - The all-in-one WASM development tool
 - **Team Name:** Astar Foundation / Astar Network ([https://github.com/AstarNetwork/](https://github.com/AstarNetwork/)) & Supercolony ([https://github.com/Supercolony-net](https://github.com/Supercolony-net))
-- **Payment Address:** **TODO** - BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+* **Payment Address:** Astar Network: `0xa8A86B4B7d5a280f37523B1369D5c118923f43C5` (USDC).
+* **Payment Address:** Supercolony: `0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942` (USDC).
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 > ⚠️ The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.
 
 * **Status:** Open (anyone is allowed to apply)
 * **Proposer:** Astar Network & Supercolony
-* **Your Project(s):** [optional]: Link(s)
-* **Projects you think this work could be useful for** [optional]: Link(s)
-* **Teams/People that could deliver the RFP** [optional]: Link(s)
-* **Payment Address:** Astar Network: `0xa8A86B4B7d5a280f37523B1369D5c118923f43C5` (USDC).
-* **Payment Address:** Supercolony: `0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942` (USDC).
 
 ## Project Description :page_facing_up:
 
