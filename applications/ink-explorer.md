@@ -142,9 +142,10 @@ This milestone is entirely about creating a frontend app and making it work alon
 | 1. | Design | Design the application frontend |  
 | 2. | Create App | Create a frontend application that mocks the data |  
 | 3. | Interact with backend | Integrate both frontend and backend replacing the mocks with real data from the service |  
-| 4. | Testing | Add tests to the components |
-| 5. | Final setups | Deal with all production issues/configuration requirements |
-| 6. | Deploy the app | Deploy the app to the final domain |
+| 4. | Support for Spanish speakers community | Translate the app to spanish and add support to switch languages. |  
+| 5. | Testing | Add tests to the components |
+| 6. | Final setups | Deal with all production issues/configuration requirements |
+| 7. | Deploy the app | Deploy the app to the final domain |
 
 #### 1 - Design
 
@@ -162,21 +163,26 @@ Dockerize the app to start in a container.
 Add the react app to the docker compose so it starts all the containers together (backend and frontend).
 Remove the mocks and replace them with backend real data.
 
-#### 4 - Testing
+#### 4 - Support for Spanish speakers community
+
+Add support for new languages. This first iteration will only cover english and spanish.
+
+#### 5 - Testing
 
 Add tests to the components of the app.
 
-#### 5 - Final setups
+#### 6 - Final setups
 
 Deal with all production issues/configuration requirements such as creating the final docker image, reviewing the documentation and verifying everything works fine.
 
-#### 6 - Deploy the app
+#### 7 - Deploy the app
 
 Define the final domain and deploy the app.
 
 ## Future Plans
 
 We plan to expose all the data throughout a Graphql application.
+Add support for more languages.
 
 ## License
 
