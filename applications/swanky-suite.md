@@ -14,10 +14,12 @@
 > ⚠️ The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.
 
 * **Status:** Open (anyone is allowed to apply)
-* **Proposer:** AstarNetwork
+* **Proposer:** Astar Network & Supercolony
 * **Your Project(s):** [optional]: Link(s)
 * **Projects you think this work could be useful for** [optional]: Link(s)
 * **Teams/People that could deliver the RFP** [optional]: Link(s)
+* **Payment Address:** Astar Network: `0xa8A86B4B7d5a280f37523B1369D5c118923f43C5` (USDC).
+* **Payment Address:** Supercolony: `0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942` (USDC).
 
 ## Project Description :page_facing_up:
 
@@ -282,7 +284,7 @@ Key features of Swanky Node are:
 
 Swanky Suite will be shipped with a set of project templates that can be used via the Swanky init command. 
 
-Templates will provide the full stack scaffolding including both the smart contract code as well as the front-end dApp code. This will allow the developers to jump right into development. The list of project templates will grow as new features are shipped and standards evolve, but the initial set of projects at the end of this project will be:
+Templates will provide the full stack scaffolding including both the smart contract code and the front-end dApp code. This will allow the developers to jump right into development. The list of project templates will grow as new features are shipped and standards evolve, but the initial set of projects at the end of this project will be:
 
 - "Blank" - blank smart contract project scaffolding
 - "Flipper" - Flipper smart contract project scaffolding with an accompanying front-end project in React
