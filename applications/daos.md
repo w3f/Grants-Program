@@ -84,11 +84,11 @@ We will continue to update, it makes sense, and both KICO and LISTEN are high-qu
 ### Overview
 * **Total Estimated Duration:** 2 months
 * **Full-Time Equivalent (FTE):** 6FTE
-* **Total Costs:** 12k USD
+* **Total Costs:** 10k USD
 ### Milestone 1 — Implement Create-Dao, Agency, DoAS, Square, and Sudo Modules
 * **Estimated duration:** 1 month
 * **FTE:** 6
-* **Costs:** 7000 USD
+* **Costs:** 6000 USD
 
 |Number   | Deliverable       | Specification                                                                                                                                                               |
 |-----:  |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -106,7 +106,7 @@ We will continue to update, it makes sense, and both KICO and LISTEN are high-qu
 ### Milestone 2 - Emergency, UI design and JS code implementation examples
 * **Estimated duration:** 1 month
 * **FTE:** 3
-* **Costs:** 5000 USD
+* **Costs:** 4000 USD
 
 |Number   | Deliverable                         | Specification                                                                                                                    |
 |-----:   |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
