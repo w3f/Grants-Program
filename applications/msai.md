@@ -17,7 +17,7 @@ Many patients use clinics worldwide, but they face difficulty moving patient rec
 To solve this problem we gathered a team and designed an international app. We wanted to store the data in a decentralised manner.
 For further background you can[ read our blog](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
 
-Our goal is to customise a blockchain Pallet/OFW such that a standardized format data storage becomes a first class citizen of the ecosystem. The data should be distributable accessible and auditable. Essentially we would like to implement something similar to w3c Solid pod integrated with a Susbtrate node.
+Our goal is to customise a blockchain Pallet/OFW such that a standardized format data storage is made a straight forward part of the ecosystem. The data should be distributable accessible and auditable. Essentially we would like to implement something similar to w3c Solid pod integrated with a Susbtrate node.
 Integrating application specific security and storage for every application is a major pain point which is not addressed by blockchains.
 A combination of a Substrate blockchain and Solid pod api [5] would provide the security, decentralisation and immutable record keeping that is needed to make healthcare interoperable.
 To make this feasible it needs to be split into stages initially using a smart contract developed in  Ink!/ WebAssembly which records ownership and access [1] to a data pod with a similar API to Solid PODs [4].
@@ -199,11 +199,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 ## Development Roadmap :nut_and_bolt:
 ### Preface
 - Development of backend
-
+Summary 
 - 1- Basic Blockchain parachain build using current available Pallets
-  - Milestone one basic API layer design integration with elements of configuring Substrate for new parachain with smart contract facility
+  - Milestone one basic API layer design integration with elements of configur Substrate for new parachain with smart contract facility
   - Integration of Identity validation mechanism : Use pallet-identity or other method of assigning identity signers that provide added value to NFT generated from users health data (As fake data has no value)
-  2- Configuration of Subtrate based parachain with a binary data storage layer that preferably distrubuted
+  2- Configuration of Subtratewith a binary data storage layer that preferably distrubuted
   - Development of backend mock api service that is extended from the Pallet OFW
   - Investigating extension of off chain data storage mechanism build into Subtrate OFW.
   - In this first instance data storage will be assumed to be trusted as long as parachain node operator is trusted (Without additinal complexity)
@@ -213,7 +213,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
   - Built on the model documented in refernce [1]
   4- Testing on Kusama 
   - Development of example scripts for interaction with new parachain based on docker files (10000 USD)
-  - Development of reference APP based on customisation of Alphawallet or other suitable wallet for the new Polkadot parachain 6 months (50000)
+  - le wallet for the newDevelopment of reference APP based on customisation of Alphawallet or other suitab Polkadot parachain 6 months (50000)
 
 ### Overview
 
@@ -225,43 +225,42 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - 
 - **Estimated duration:** 3 months
 - **FTE:**  1
-- **Costs:** 25,000 USD
+- **Costs:** 20,000 USD
 #### Part A
-| Number | Deliverable   | Specification                                                                                                                                                                                                                                                                                                                                                      |
-|-------:|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License       | Apache 2.0                                                                                                                                                                                                                                                                                                                                                         |
-|    0b. | Documentation | [Link to why healthcare decentralised](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)                                                                                                                                                                                                                            |
-|    0c. | Testing Guide | Each epic describes testing opportunities.  [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) 2. Create openapi specifcations for reading and writing data to and from the NFT smart contract (Depends on blockchain nft tech used) . 3. Impement hash based impelementation for external reference storage |
-|    0d. | Docker        | Access will be granted after several iterations to run sidecar datastorage with Substrate together                                                                                                                                                                                                                                                                 |
-|    0e. | Article       | Press release will be prepared a few weeks before the official rollout of the network. The link to the article will be sent when ready                                                                                                                                                                                                                             | 
-|    1a. | Node Repo     | Complete the deploment of the basic public chain.            |
-|    2a. | Pallet        |       Milestone one basic API layer design integration with elements of configuring Substrate for new parachain with smart contract facility             |
+| Number | Deliverable      | Specification                                                                                                                                                                                                                                                                                |
+|-------:|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License          | Apache 2.0                                                                                                                                                                                                                                                                                   |
+|    0b. | Documentation    | [Link to why healthcare decentralised](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)                                                                                                                                                      |
+|    0c. | Testing Guide    | Each epic describes testing opportunities.  [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) 2. Create openapi specifcations for reading and writing data to and from the NFT smart contract (Depends on blockchain nft tech used) . |
+|    0d. | Docker           | Access will be granted after several iterations to run sidecar datastorage with Substrate together                                                                                                                                                                                           |
+|    0e. | Article          | Press release will be prepared a few weeks before the official rollout of the network. The link to the article will be sent when ready                                                                                                                                                       | 
+|    1a. | Node Repo        | Complete the deploment of the basic public chain.                                                                                                                                                                                                                                            |
+|    2a. | Substrate setup  | [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) Milestone one basic API layer design integration with elements of configuring Substrate for new parachain with smart contract facility                                              |                                                                                                                                                        |
+|    3a. | Build Chain      | Basic Blockchain parachain build using current available Pallets  Milestone one basic API layer design integration with elements of configuriSubstrate for new parachain with smart contract facility                                                                                        |
+|    4a. | ID Validation    | Integration of Identity validation mechanism : Use pallet-identity or other method of assigning identity signers that provide added value to NFT generated from users health data (As fake data has no value)                                                                                |
+|    5a. | Base Data Pallet | Design of substrate blockchain with native data structures smart contract outlined above minus large data storage (binary BLOB)                                                                                                                                                              |
 
-* API design of substrate blockchain with native data structures outlined above minus large data storage (binary BLOB)
-#### Part B
-| No  |  Deliverable |   Specification |
-|-----|-----|-----|
-| 0a. |  License |    MIT  |
-| 0b. |  Documentation |  We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes will show how the new data storage and functionality works. |
-| 0c. |  Testing Guide |  Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. |  Docker |  We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-
-
-### Milestone 2 — Implement/Extend blockchain linked native storage layer as a pallet with Solid pod like basic capability
+### Milestone 2 — Implement/Extend blockchain linked native storage layer as a pallet with OFW/ Solid pod like basic capability
 
 - **Estimated Duration:** 3 months
 - **FTE:**  1.5
-- **Costs:** 25,000 USD
+- **Costs:** 30,000 USD
 
-| No  |  Deliverable |   Specification |
-|-----|-----|-----|
-| 0a. |  License |    MIT  |
-| 0b. |  Documentation |  We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes will show how the new data storage and functionality works. |
+| No  | Deliverable                         | Specification                                                                                                                                                                                                                                                                       |
+|-----|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a. | License                             | MIT                                                                                                                                                                                                                                                                                 |
+| 0b. | Documentation                       | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes will show how the new data storage and functionality works.                                                        |
+| 0c. | Testing Guide                       | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                   |
+| 0d. | Docker                              | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                       |
+| 1a. | Substrate Off Chain Storage Format  | Configuration of Subtrate based parachain with a binary data storage OFW                                                                                                                                                                                                            |
+| 1b. | Mock API                            | Development of backend mock api service that is extended from the Pallet OFW                                                                                                                                                                                                        |
+| 2a. | Extension of OFW                    | Extend the off chain data storage mechanism with native tags with ability for data to be distributed for fastger query and build into Subtrate OFW.                                                                                                                                 |
+| 3b. | NFT Contract                        | NFT smart contract default template-- Built in smart contract on the subtrate chain - written in Ink! or other webassembly language that supports NFTs and ERC721 level in addition to ownership authentication:                                                                    |
+| 4c. | Data Validation on store            | Validation check every data stored on node against a hash must have a corresonding entry in template smart contract. In this first instance data storage will be assumed to be trusted as long as parachain node operator is trusted and hashes match the blockchain smart contract |
+| 5a  | Example  APP Scripts                | Development of example scripts for interaction (encryption will be handled at app layer) with new parachain based on docker files  (10000 USD)                                                                                                                                      |
+| 6a  | Parachain staking governance config | Setup governance model for data such that if faulty data is provided by a node it could be penalized by the other substrate nodes                                                                                                                                                   |
+| 7a  | Kusama based testing                | We will deploy the Substrate module for integration and performance testing of the parachian using Locust to simulate multiple simultaneous call from apps                                                                                                                          |
 
-| 1. | Substrate module: Extend OFW feature or add features via a Sidecar IPFS node running side by side with substrate node such that OFW data storage is distrbuted between nodes|
-Setup governance model for data such that if faulty data is provided by a node it could be penalized by the other substrate nodes |  
-| 2. | Substrate module: API extension |Allow the sidecar service to extend the default Substrate api with the additional needed functionality|  
-| 3. | Kusama based testing : | We will deploy the Substrate module for integration and performance testing of the parachian using Locust |  
 
 ### Milestone 3 Example — Implement Data Encryption service as an extension to the node
 This will be a working alpha software.
@@ -269,10 +268,15 @@ This will be a working alpha software.
 - **FTE:**  2
 - **Costs:** 10,000 USD
 
-| No  | Deliverable                           |   Specification  |
-|-----|---------------------------------------|-----|
-| 1.  | App structure: Alpha working software |   We will create a standard template service and library to encrypt data with a secrete key based a function of  (NFC contract, owner address) . The key will be stored securely on the service with support for usage of HWS hardware or software emulation.     |
-| 2.  | Documentation                         | Provide documentation for how to encrypt data for users of this polkadot parachain|  
+| No  | Deliverable                                 | Specification                                                                                                                                                                                                                   |
+|-----|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0a. | App structure: Alpha working software       | .                                                                                                                                                                                                                               |
+| 0b. | Documentation                               | Provide documentation for how to encrypt data for users of this polkadot parachain                                                                                                                                              |  
+| 0c. | Testing Guide                               | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                               |
+| 0d. | Docker                                      | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                   |
+| 1a  | Template library                            | A standard template library to encrypt data with a secrete key based a function of  (NFC contract, owner address) . The key will be stored securely on the service with support for usage of HWS hardware or software emulation |
+| 2b. | Encryption service linked to smart contract | Smart contract checking service build as pallet extension: Only owners of the NFT will be able to access the encrypted data within using the sidecar service. Control encryption to and from the data storage layer.            |
+| 3a. | Distributed binary data                     | Extend OFW feature or add features via a Sidecar IPFS node running side by side with substrate node such that OFW data storage is distrbuted between nodes                                                                      |                                                                                                                                                                                                               |
 
 
 ## Future Plans
