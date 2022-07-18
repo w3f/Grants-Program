@@ -109,8 +109,14 @@ This proposal is only for Phase 0 and will culminate with the delivery of a deta
 
 | Number | Deliverable   | Specification                                                                                                                                                                                                                                 |
 | -----: | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|    0a. | License       | Apache 2.0 / MIT                                                                                                                                                                                                                              |
-|    0b. | Phase 1 Proposal |  We will deliver a detailed proposal to implement the Polkadot C++ light node with technical specifications: cryptography, runtime environment requirements, multichain support, JSON-RPC APIs and other dependencies |
+|    0a. | License       | Apache 2.0 / MIT                                      |
+|    0b. | Format        | Markdown (mdBook)                                     |
+|    0c. | Published     | GitHub, GitHub Pages                                  |
+|    1. | Cryptography | security advantages over connecting to 3rd-party node, limitations compared to full client  |
+|    2. | Runtime environment requirements | for browser and Node.js |
+|    3. | Multichain support | use cases for cross-chain communication |
+|    4. | JSON-RPC APIs | minimal run-time access interface |
+|    5. | Dependencies | libraries for cryptography, networking, build |
 
 
 ## Future Plans
