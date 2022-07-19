@@ -235,8 +235,9 @@ During this phase we will prepare the project for production and integrate it wi
 | 0c. | Testing Guide | Basic integration tests for both binary and library. |
 | 0d. | Docker | Docker is not required for this project. |
 | 0e. | Article | Publish a technical blog post about how the project was developed and indicating it is available for use. |
-| 1. | `cargo-contract` integration | Submit a PR to `cargo-contract` that integrates the `wasm-opt` crate. |
-| 2. | CI | Set up CI for all indicated platforms. |
+| 1. | APIs | Ensure the APIs expose all the `wasm-opt` options, and can be easily integrated into tools like `cargo-contract`. |
+| 2. | `cargo-contract` integration | Submit a PR to `cargo-contract` that integrates the `wasm-opt` crate. |
+| 3. | CI | Set up CI for all indicated platforms. |
 
 
 
