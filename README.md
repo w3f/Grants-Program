@@ -234,7 +234,7 @@ Besides, we also have a **community room for all grant recipients**. Head over t
 
 ## :rocket: Alternative Funding Sources
 
-We encourage you to explore alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
+We encourage you to explore the alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
 
 **Substrate Builders Program vs Treasury vs Web3 Grants** (Oversimplified, to provide initial guidance)
 
