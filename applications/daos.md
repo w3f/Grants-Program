@@ -4,7 +4,7 @@
 * **Project Name:** daos
 * **Team Name:** daos-org
 * **Payment Address:** 0x08A7876db92b07057E12fAF29AA3CCF33b5aAe3D (USDT ERC20)
-* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+* **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Overview
 * This project provides a more flexible governance framework for a large number of small groups with common characteristics. It allows developers to create behavior templates based on this set of governance solutions in the simplest way possible,
