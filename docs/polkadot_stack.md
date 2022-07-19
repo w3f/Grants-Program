@@ -118,7 +118,7 @@ In the below sections you can find a list of different layers of the Polkadot St
 |-|-|-
 | Bridges | [Dante Protocol](https://github.com/dantenetwork/protocol-stack-for-ink) :green_circle:| |
 | DeFi | [Polkadot AMM](https://github.com/realnimish/polkadot-amm), [Vera](https://github.com/veradefi/defi) :red_circle:, [Nsure Insurance](https://github.com/nsure-tech/dot-contract) :red_circle:, [Everlasting Cash](https://github.com/CycanTech/ELC) :red_circle:, [Coinversation](https://github.com/Coinversation/coinpro) :red_circle:, [zenlink-dex-contract](https://github.com/zenlinkpro/zenlink-dex-contract) :green_circle:, [AlgoCash](https://github.com/ReserveLabs/AlgoCash) :red_circle:| New seigniorage-style stable coins
-| Gaming | [NewOmega](https://github.com/WiktorStarczewski/newomega.polkadot/blob/master/newomega_delegator/newomega/newomega.rs) :red_circle:| |
+| Gaming | [Open Emoji Battler](https://github.com/OpenEmojiBattler/open-emoji-battler), [NewOmega](https://github.com/WiktorStarczewski/newomega.polkadot/blob/master/newomega_delegator/newomega/newomega.rs) :red_circle:| |
 | DAO | [subDAO](https://github.com/SubDAO-Network/subDAO-contracts) :red_circle:, [RainbowDAO](https://github.com/RainbowcityFoundation/RainbowDAO-Protocol-Ink-milestone_1) :red_circle:| |
 | Spam Protection | [Prosopo](https://github.com/prosopo-io/integration) :green_circle:| |
 | Other | [Candle Auctions](https://github.com/agryaznov/candle-auction-ink) :red_circle:, [polkasign-contract](https://github.com/SubDAO-Network/polkasign-contract) :red_circle:, [OCEX](https://github.com/bsn-si/ocex-cli) :green_circle:| |
