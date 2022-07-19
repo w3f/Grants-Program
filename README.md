@@ -281,7 +281,7 @@ The best way to find out about upcoming hackathons is by following Polkadot on t
 
 Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 
-- [Darwinia Grants Program](https://docs.darwinia.network/developers/dev-bounty)
+- [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [Edgeware Grants and Bounties](https://github.com/edgeware-builders/construction-projects)
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
