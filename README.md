@@ -253,6 +253,10 @@ flowchart LR
     style F stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style G stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style H stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
+    
+    click C "#pencil-process" "You are already in the right place :)"
+    click D "https://wiki.polkadot.network/docs/en/learn-treasury" _blank
+    click H "https://www.substrate.io/builders-program/" _blank
 ```
 
 ### Substrate Builders Program 
