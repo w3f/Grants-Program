@@ -30,11 +30,11 @@ so that their users are not required to manually install the tool.
 
 `wasm-opt` is a part of the [binaryen] toolset, written in C++.
 It is almost universally required by all toolchains that compile to WebAssembly.
-It is required by Parity's [`cargo-contract`] tool for [Ink!] development.
+It is required by Parity's [`cargo-contract`] tool for [ink!] development.
 
 [binaryen]: https://github.com/WebAssembly/binaryen
 [`cargo-contract`]: https://github.com/paritytech/cargo-contract
-[Ink!]: https://github.com/paritytech/ink
+[ink!]: https://github.com/paritytech/ink
 
 **This tool can not be aquired in the way Rust programmers expect &mdash; with `cargo install`.**
 Installation of the tool is system-dependent.
@@ -43,7 +43,7 @@ in some cases an old version;
 or it can be downloaded in binary form for most platforms, from GitHub,
 in which case it has to be extracted and added to the environment `PATH` variable in an ad-hoc way.
 
-In [our personal experience][wasmexp], aquiring this tool was a minor, but needless, barrier, to programming with [Ink!].
+In [our personal experience][wasmexp], aquiring this tool was a minor, but needless, barrier, to programming with [ink!].
 
 [wasmexp]: #appendix-the-wasm-opt-installation-experience
 
@@ -98,7 +98,7 @@ We will also deliver the following:
   - `x86_64-pc-windows-msvc`
   - `x86_64-unknown-linux-gnu`
 - Pull requests adding optional support for the `wasm-opt` crate to
-  - `cargo-contract`, the Ink build tool
+  - `cargo-contract`, the ink! build tool
 - One blog post about the tool and its development, at https://brson.github.io
 
 
@@ -109,7 +109,7 @@ We will also deliver the following:
 This project is immediately useful to all Rust developers that build for wasm.
 
 It is more specifically useful to developers of Rust-based toolchains that target wasm,
-and most specifically the `cargo-contract` tool used to compile Ink programs.
+and most specifically the `cargo-contract` tool used to compile ink! programs.
 It is probably relevant to authors of Substrate runtimes as well,
 though we do not have that experience yet.
 
@@ -252,7 +252,7 @@ and responding to issue reports.
 We are interested in pursuing a pure-Rust alternative to `wasm-opt` with a limited
 focus of quickly shrinking wasm binaries.
 
-We expect to pursue additional projects related to Ink and Substrate.
+We expect to pursue additional projects related to ink! and Substrate.
 
 
 
