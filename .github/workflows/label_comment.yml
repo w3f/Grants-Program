@@ -1,4 +1,4 @@
-name: ask_for_details
+name: comment_on_label
 
 on:
   pull_request_target:
@@ -35,4 +35,15 @@ jobs:
             for a breakdown of what we fund and what we don't.<br/>
 
             Let us know as soon as you're done with your changes, and we'll give your application another look!
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  private_conversation:
+    if: github.event.label.name == 'discussion private'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@1.0.2
+        with:
+          message: > 
+            The applicant has requested the discussion of the application to happen in a private chat room. 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
