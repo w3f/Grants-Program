@@ -255,7 +255,7 @@ flowchart LR
     
     click C "https://github.com/w3f/Grants-Program/blob/semuelle-test-1/README.md#pencil-process" "You are already in the right place :)" _blank
     click D "https://wiki.polkadot.network/docs/en/learn-treasury" _blank
-    click F "[#pencil-process](https://github.com/w3f/Grants-Program/blob/semuelle-test-1/README.md#pencil-process)" "You are already in the right place :)"
+    click F "https://github.com/w3f/Grants-Program/blob/semuelle-test-1/README.md#pencil-process" "You are already in the right place :)"
     click H "https://www.substrate.io/builders-program/" _blank
 ```
 
