@@ -236,7 +236,9 @@ Besides, we also have a **community room for all grant recipients**. Head over t
 
 We encourage you to explore the alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
 
-**Substrate Builders Program vs Treasury vs Web3 Grants** (Oversimplified, to provide initial guidance)
+### Substrate Builders Program vs Treasury vs Web3 Grants
+
+The following flowchart gives a rough, oversimplified view of how the W3F Grants Program, the Polkadot and Kusama treasuries and Parity's Substrate Builders Program relate, and where your project might fit best. Note that this diagram does not include any of the [parachain-specific grants/builders programs](#other-grant-programs) other organisations are offering.  
 
 ```mermaid
 flowchart LR
