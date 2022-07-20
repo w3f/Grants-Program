@@ -236,7 +236,9 @@ Besides, we also have a **community room for all grant recipients**. Head over t
 
 We encourage you to explore the alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
 
-**Substrate Builders Program vs Treasury vs Web3 Grants** (Oversimplified, to provide initial guidance)
+### Substrate Builders Program vs Treasury vs Web3 Grants
+
+The following flowchart gives a rough, oversimplified view of how the W3F Grants Program, the Polkadot and Kusama treasuries and Parity's Substrate Builders Program relate, and where your project might fit best. Note that this diagram does not include any of the [parachain-specific grants/builders programs](#other-grant-programs) other organisations are offering.  
 
 ```mermaid
 flowchart LR
@@ -251,12 +253,12 @@ flowchart LR
     style C stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style D stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style F stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
-    style G stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style H stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     
-    click C "#pencil-process" "You are already in the right place :)"
-    click D "https://wiki.polkadot.network/docs/en/learn-treasury" _blank
-    click H "https://www.substrate.io/builders-program/" _blank
+    click C "https://github.com/w3f/Grants-Program/blob/semuelle-test-1/README.md#pencil-process" "You are already in the right place :)"
+    click D "https://wiki.polkadot.network/docs/en/learn-treasury" "https://wiki.polkadot.network/docs/en/learn-treasury" _blank
+    click F "https://github.com/w3f/Grants-Program/blob/semuelle-test-1/README.md#pencil-process" "You are already in the right place :)"
+    click H "https://www.substrate.io/builders-program/" "https://www.substrate.io/builders-program/" _blank
 ```
 
 ### Substrate Builders Program 
