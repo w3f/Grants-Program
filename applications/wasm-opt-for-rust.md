@@ -160,7 +160,7 @@ possibly by extracting the existing logic from `cargo-wasi`.
 The team lead is one of the original authors of the Rust programming language,
 with 12 years of Rust experience.
 They have performed Rust work for Mozilla, Reddit, PingCAP, Solana, MobileCoin, Parity, and Nervos.
-Both team members are maintainers of the Rust in Blockchain newsletter.
+Both team members are maintainers of the [Rust in Blockchain](https://rustinblockchain.org/) newsletter.
 
 ### Team Code Repos
 
