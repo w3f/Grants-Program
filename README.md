@@ -251,11 +251,11 @@ flowchart LR
     style C stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style D stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style F stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
-    style G stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     style H stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     
-    click C "https://github.com/w3f/Grants-Program/blob/master/README.md#pencil-process" "You are already in the right place :)" _parent
+    click C "#pencil-process" "You are already in the right place :)" _parent
     click D "https://wiki.polkadot.network/docs/en/learn-treasury" _blank
+    click F "#pencil-process" "You are already in the right place :)" _parent
     click H "https://www.substrate.io/builders-program/" _blank
 ```
 
