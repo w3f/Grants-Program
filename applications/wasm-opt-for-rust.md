@@ -216,7 +216,6 @@ During this phase we will prove the concept and produce a `wasm-opt` Rust binary
 | 0b. | Documentation | Basic README. |
 | 0c. | Testing Guide | Manual smoke testing on Linux, Windows, and MacOS, x86_64 and ARM. |
 | 0d. | Docker | Docker is not required for this project. |
-| 0e. | Article | None. |
 | 1. | `wasm-opt` binary | Produce a `wasm-opt` binary that can be built by cargo but is otherwise identical to stock `wasm-opt`. |
 | 2. | APIs | Write an idiomatic, but possibly incomplete, Rust API for loading wasm, optimizing it, and writing it again. |
 
