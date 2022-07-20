@@ -139,43 +139,35 @@ This milestone is entirely about creating a frontend app and making it work alon
 | 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
 | 0d. | Docker | A Dockerfile will be provided that will be able to start the node and run tests for all the functionality delivered within this milestone. |
 | 0e. | Article | We will post an article on Twitter and Reddit for both english and spanish speakers communities.
-| 1. | Design | Design the application frontend |  
-| 2. | Create App | Create a frontend application that mocks the data |  
-| 3. | Interact with backend | Integrate both frontend and backend replacing the mocks with real data from the service |  
-| 4. | Support for Spanish speakers community | Translate the app to spanish and add support to switch languages. |  
-| 5. | Testing | Add tests to the components |
-| 6. | Final setups | Deal with all production issues/configuration requirements |
-| 7. | Deploy the app | Deploy the app to the final domain |
+| 1. | Create App | Create a frontend application |    
+| 2. | Support for Spanish speakers community | Translate the app to spanish and add support to switch languages. |  
+| 3. | Testing | Add tests to the components |
+| 4. | Final setups | Deal with all production issues/configuration requirements |
+| 5. | Deploy the app | Deploy the app to the final domain |
 
-#### 1 - Design
 
-Create a design for all view needed on the application
+#### 1 - Create App
 
-#### 2 - Create App
-
-Create a react app.
-Mock all data from backend.
-Create all the views needed.
+Create a frontend application that follows the proposed design.
+Cover the following functionalities:
+- Blocks explorer
+- Transactions explorer
+- Contracts explorer (this section will provide to the user information related to the contract, such as transactions, the contract data and events) 
 Dockerize the app to start in a container.
 
-#### 3 - Interact with backend
-
-Add the react app to the docker compose so it starts all the containers together (backend and frontend).
-Remove the mocks and replace them with backend real data.
-
-#### 4 - Support for Spanish speakers community
+#### 2 - Support for Spanish speakers community
 
 Add support for new languages. This first iteration will only cover english and spanish.
 
-#### 5 - Testing
+#### 3 - Testing
 
 Add tests to the components of the app.
 
-#### 6 - Final setups
+#### 4 - Final setups
 
 Deal with all production issues/configuration requirements such as creating the final docker image, reviewing the documentation and verifying everything works fine.
 
-#### 7 - Deploy the app
+#### 5 - Deploy the app
 
 Define the final domain and deploy the app.
 
