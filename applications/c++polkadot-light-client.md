@@ -99,13 +99,13 @@ This proposal is only for Phase 0 and will culminate with the delivery of a deta
 
 - **Total Estimated Duration:** 5 weeks
 - **Full-Time Equivalent (FTE):** 1
-- **Total Costs:** 34000 Euro
+- **Total Costs:** $34000 USD
 
 ### Milestone 1 — Substrate Module Research
 
 - **Estimated duration:** 5 weeks
 - **FTE:** 1
-- **Costs:** 34000 Euro
+- **Costs:** $34000 USD
 
 | Number | Deliverable   | Specification                                                                                                                                                                                                                                 |
 | -----: | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
