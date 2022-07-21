@@ -8,7 +8,7 @@
 
 ## Project Overview :page_facing_up:
 
-Ink Explorer is an application that provides Ink contracts related information on Substrate based blockchains. It subscribes to blockchain and Ink modules events and store the informaction on its own PostgreSQL database. The backend exposes an API that can interact with the DB and run fast queries to get specific information in a short time. 
+Ink Explorer is an application that provides Ink contracts related information on Substrate based blockchains. It subscribes to blockchain and Ink modules events and store the information on its own PostgreSQL database. The backend exposes an API that can interact with the DB and run fast queries to get specific information in a short time. 
 
 The idea of this project is to have fast way to start a node that can be used as an explorer getting live and old data for specific contracts or addresses. 
 
