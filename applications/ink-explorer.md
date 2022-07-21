@@ -145,6 +145,11 @@ This milestone is entirely about creating a frontend app and making it work alon
 | 4. | Final setups | Deal with all production issues/configuration requirements |
 | 5. | Deploy the app | Deploy the app to the final domain |
 
+#### User Interface
+
+The user interface will be based on this [mock-up](https://www.figma.com/file/WzYV7xQIfFx7HpMB77z9NS/inkExplorer?node-id=42%3A619):
+
+![Blockcoders Ink Explorer](https://user-images.githubusercontent.com/3802516/180186130-7a6b6856-f926-44f2-8887-b82e4cb640b4.png)
 
 #### 1 - Create App
 
