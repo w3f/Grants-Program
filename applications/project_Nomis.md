@@ -3,7 +3,7 @@
 - **Project Name:** Nomis
 - **Team Name:** Nomis
 - **Payment Address:** 0xD587404cd28Bf4eE059ac84a6B7C0219d05EA6CF (DAI)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
 
