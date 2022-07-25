@@ -16,21 +16,21 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-**What is the Me Protocol?
-- Me protocol is a blockchain solution that provides a decentralized multi-vendor loyalty ecosystem for brands.
+**What is the Me Protocol?**
+Me protocol is a blockchain solution that provides a decentralized multi-vendor loyalty ecosystem for brands.
 
-- **Background
-- Most brand loyalty programs are currently estimated to be only 46% effective, meaning more than half of the $180billion market valuation is doing no useful work. The inherent problem is rooted in the limited use of the rewards provided by these programs. To dampen this risk, brands are merging to form multivendor programs e.g miles and more, Singapore airlines, etc. where customers can move rewards and get value across brands in the given network. This approach has greatly solved the ineffectiveness of these programs and tremendously improved the customer loyalty index; a KPI used by brands to measure the success of these loyalty programs, but the approach comes with its overhead. The multivendor loyalty programs are not so easy to form, brands need to figure out useful partners, have numerous meetings, sign numerous documents and even in some cases have to agree on an eventual settlement when value is moved. While the approach is effective, its rigorous processes make it less utilized. Many solutions have emerged to fix this problem by building a well-planned program that can accommodate multiple brands, both LSEs, and SMEs. While this is witnessing brand adoption, it has created new problem sets based on its centralized nature. Blockchain technology is the seamless and perfect solution for this, in fact, each of these solutions when placed on a hypothetical path, appear to have been forged to gradually evolve into an era of decentralization which we call “ the era of customer-driven rewards”.
-- The Me protocol is a blockchain-based technology, that seeks to seamlessly, frictionlessly, and cost-effectively solve these problems in a decentralized way and also champion the movement towards the vision of “customer-driven rewards”.
+**Background**
+Most brand loyalty programs are currently estimated to be only 46% effective, meaning more than half of the $180billion market valuation is doing no useful work. The inherent problem is rooted in the limited use of the rewards provided by these programs. To dampen this risk, brands are merging to form multivendor programs e.g miles and more, Singapore airlines, etc. where customers can move rewards and get value across brands in the given network. This approach has greatly solved the ineffectiveness of these programs and tremendously improved the customer loyalty index; a KPI used by brands to measure the success of these loyalty programs, but the approach comes with its overhead. The multivendor loyalty programs are not so easy to form, brands need to figure out useful partners, have numerous meetings, sign numerous documents and even in some cases have to agree on an eventual settlement when value is moved. While the approach is effective, its rigorous processes make it less utilized. Many solutions have emerged to fix this problem by building a well-planned program that can accommodate multiple brands, both LSEs, and SMEs. While this is witnessing brand adoption, it has created new problem sets based on its centralized nature. Blockchain technology is the seamless and perfect solution for this, in fact, each of these solutions when placed on a hypothetical path, appear to have been forged to gradually evolve into an era of decentralization which we call “ the era of customer-driven rewards”.
+The Me protocol is a blockchain-based technology, that seeks to seamlessly, frictionlessly, and cost-effectively solve these problems in a decentralized way and also champion the movement towards the vision of “customer-driven rewards”.
 
-**How it simply works: 
-- The Me protocol comprises two elements, the App and the Exchange Protocol. The app allows users to store or/and keep track of their rewards earned across multiple brands and also provides a marketplace of offers from various brands across the world. The exchange protocol is basically a decentralized exchange that enables a swap of loyalty rewards from one brand reward to another and it differs from Uniswap or other popular Dexs in that the swapping process is not visible to the user, the user only sees that he can redeem his Adidas rewards for an offer from Mc Donalds, but under the hood, the protocol swaps these rewards and pays each brand appropriately.
+**How it simply works:**
+The Me protocol comprises two elements, the App and the Exchange Protocol. The app allows users to store or/and keep track of their rewards earned across multiple brands and also provides a marketplace of offers from various brands across the world. The exchange protocol is basically a decentralized exchange that enables a swap of loyalty rewards from one brand reward to another and it differs from Uniswap or other popular Dexs in that the swapping process is not visible to the user, the user only sees that he can redeem his Adidas rewards for an offer from Mc Donalds, but under the hood, the protocol swaps these rewards and pays each brand appropriately.
 
-**How do we integrate with Substrate / Polkadot / Kusama?
-- The Exchange functionality utilizes the concept of decentralized exchanges but for loyalty rewards, leveraging Polkadot's ecosystem for cross-chain operation.
+**How do we integrate with Substrate / Polkadot / Kusama?**
+The Exchange functionality utilizes the concept of decentralized exchanges but for loyalty rewards, leveraging Polkadot's ecosystem for cross-chain operation.
 
-**Why are we interested in creating this project?
--  We are interested in creating this project because it solves one of the biggest problem in the loyalty space, a problem causing an estimate of over $90billion effective loss. We have done a great study of the space and can clearly see that the solution is heavily needed and would be eventually implemented by any team who pays close attention to the loyalty space even if we don’t implement it.
+**Why are we interested in creating this project?**
+We are interested in creating this project because it solves one of the biggest problem in the loyalty space, a problem causing an estimate of over $90billion effective loss. We have done a great study of the space and can clearly see that the solution is heavily needed and would be eventually implemented by any team who pays close attention to the loyalty space even if we don’t implement it.
 
 ### Project Details
 
@@ -51,30 +51,31 @@ Things that shouldn’t be part of the application (see also our [FAQ](../docs/f
 
 ### Ecosystem Fit
 
-**Where do we fit in the Web3 ecosystem?
-- Our Project fits into the DEFI and social space
+**Where do we fit in the Web3 ecosystem?**
+Our Project fits into the DEFI and social space
 
- **Target Audience
-- Our target audience includes brands/businesses with loyalty or seeking to have loyalty programs and their consumers, web3-based projects with    utility/reward tokens, social protocols e.t.c 
+ **Target Audience**
+Our target audience include brands/businesses with loyalty or seeking to have loyalty programs and their consumers, web3-based projects with    utility/reward tokens, social protocols e.t.c 
 
-**Needs that we meet
+**Needs that we meet**
 - Brands, web3 native or not, irrespective of their existing loyalty program can connect to the Me Protocol to access the decentralized multivendor loyalty program, and hence open the doors to new customer acquisition while satisfying existing customers with the same budget.
 
-Web3-based applications with utility tokens/rewards can connect to the Me protocol and hence enable their users to get more value from their rewards which otherwise tend to become monotonous after a given number of months or years. 
+- Web3-based applications with utility tokens/rewards can connect to the Me protocol and hence enable their users to get more value from their rewards which otherwise tend to become monotonous after a given number of months or years. 
 
-Social protocols leveraging blockchain to facilitate human interaction can leverage the Me protocol to boost engagement and provide real values to current and prospective users.
+- Social protocols leveraging blockchain to facilitate human interaction can leverage the Me protocol to boost engagement and provide real values to current and prospective users.
 
-Day-to-day consumers of brand products can now track their rewards in one place, and in this one place see what to spend this on across multiple brands like no other solution.
+- Day-to-day consumers of brand products can now track their rewards in one place, and in this one place see what to spend this on across multiple brands like no other solution.
 
-Analytics subscribers and providers can leverage the Me protocol to provide due (privacy censored) analytics to needing industries. This fit would revolutionize businesses on a global scale.
+- Analytics subscribers and providers can leverage the Me protocol to provide due (privacy censored) analytics to needing industries. This fit would revolutionize businesses on a global scale.
 
- **Similar projects in the  Substrate / Polkadot / Kusama ecosystem?
-- A most similar project on the DEFI side is Stellaswap (https://stellaswap.com/) and on the loyalty program side is Project Venkmann https://www.venkmanholdings.com/
+ **Similar projects in the  Substrate / Polkadot / Kusama ecosystem?**
+A similar project on the DEFI side is Stellaswap (https://stellaswap.com/) and on the loyalty program side is Project Venkmann https://www.venkmanholdings.com/
 
- **How are we different?
-  - Me Protocol is different from Stellaswap because we are not a typical DEX, we just use the concepts of decentralized exchanges to power our multi-vendor loyalty program and to enable the swapping of loyalty rewards across brands. Consumers of these rewards would hardly know that there is a swap, all they know is that they can spend the same reward across multiple brands.
+ **How are we different?**
+ - Me Protocol is different from Stellaswap because we are not a typical DEX, we just use the concepts of decentralized exchanges to power our multi-vendor loyalty program and to enable the swapping of loyalty rewards across brands. Consumers of these rewards would hardly know that there is a swap, all they know is that they can spend the same reward across multiple brands.
 
-Me Protocol is also different from project Venkmann because we do not set out as a loyalty program manager for brands, rather we are the interoperator of loyalty programs, providing one blockchain protocol that brands and even loyalty program managers can integrate to enable a multivendor loyalty ecosystem where rewards can be moved seamlessly across brands with no overhead. Consumers are satisfied because they can get more value from the reward issued by any brand on the network and brands can tap into customers from other brands while satisfying new ones with the same loyalty budget.
+- Me Protocol is also different from project Venkmann because we do not set out as a loyalty program manager for brands, rather we are the interoperator of loyalty programs, providing one blockchain protocol that brands and even loyalty program managers can integrate to enable a multivendor loyalty ecosystem where rewards can be moved seamlessly across brands with no overhead. Consumers are satisfied because they can get more value from the reward issued by any brand on the network and brands can tap into customers from other brands while satisfying new ones with the same loyalty budget.
+
   - If not, are there similar projects in related ecosystems?
 
 ## Team :busts_in_silhouette:
