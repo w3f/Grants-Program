@@ -77,15 +77,15 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-- **Total Estimated Duration:** 3 month
-- **Full-Time Equivalent (FTE):**  3
+- **Total Estimated Duration:** 4 month
+- **Full-Time Equivalent (FTE):**  2
 - **Total Costs:** 30000 USD
 
 ### Milestone 1 - Backend
 
-- **Estimated duration:** 1.5 month
+- **Estimated duration:** 2.5 month
 - **FTE:**  2
-- **Costs:** 15,000 USD
+- **Costs:** 20,000 USD
 
 In this milestone the focus is on creating a new service that can be consider a full node of the aplication that will create a new DB and will start syncing all the data from the blockchain (can be synced from genesis or a specific block). This node will also have the frontend covered in Milestone 2.
 The service will expose an API that will provide all the required information that the frontend may need.
@@ -97,38 +97,18 @@ The service will expose an API that will provide all the required information th
 | 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
 | 0d. | Docker | A Dockerfile will be provided that will be able to start the node and run tests for all the functionality delivered within this milestone. |
 | 0e. | Article | We will post an article on Twitter and Reddit for both english and spanish speakers communities.
-| 1. | Create database | Create a DB on PostgreSQL to store all the information |  
-| 2. | Backend service | Create a service that subscribes to blockchain events and Ink modules events. This service will store and index the information in the database to be accessed quickly and easily. |  
+| 1. | Create database | Create a docker container to start a PostgreSQL database to store all the information, define the models to store and create tables and indexes. |  
+| 2. | Backend service | Create a docker container to start a typescript service that subscribes to blockchain events and Ink modules events. This service will store and index the information in the database to be accessed quickly and easily. Add all subscriptions needed to retrieve the information of the emited events from both the blockchain (using polkadot.js) and Ink modules. Store and index the events data on the database. (If needed sync all data from blockHash - can be from genesis but it will take longer) |  
 | 3. | API | Extend the service functionality to expose an API that gets the contracts data |
 | 4. | Testing | Achieve a testing coverage of the functionalities above 90% |
 
 Deliverables in this milestone will be dockerized. We will provide a README with examples showing how to start the service, and query the API.
 
-#### 1 - Create database
-
-Create a docker container to start a PostgreSQL database.
-Define the models to store.
-Create tables and indexes.
-
-#### 2 - Backend service
-
-Create a docker container to start a typescript project.
-Add all subscriptions needed to retrieve the information of the emited events from both the blockchain (using polkadot.js) and Ink modules. 
-Store and index the events data on the database. (If needed sync all data from blockHash - can be from genesis but it will take longer)
-
-#### 3 - API
-
-Create an interface to get all the contracts information from the database.
-
-#### 4 - Testing
-
-Add unit tests and end to end test to achieve a high coverage of the functionality.
-
 ### Milestone 2 - Frontend
 
 - **Estimated Duration:** 1.5 month
 - **FTE:**  2
-- **Costs:** 15,000 USD
+- **Costs:** 10,000 USD
 
 This milestone is entirely about creating a frontend app and making it work along with the back end service. The app will be mounted on the same docker as the backend service so it can be started with a single docker command.
 
@@ -139,11 +119,11 @@ This milestone is entirely about creating a frontend app and making it work alon
 | 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
 | 0d. | Docker | A Dockerfile will be provided that will be able to start the node and run tests for all the functionality delivered within this milestone. |
 | 0e. | Article | We will post an article on Twitter and Reddit for both english and spanish speakers communities.
-| 1. | Create App | Create a frontend application |    
+| 1. | Create App | Create a frontend application that follows the proposed design. Cover the following functionalities: Blocks explorer, Transactions explorer and Contracts explorer (this section will provide to the user information related to the contract, such as transactions, the contract data and events). Dockerize the app to start in a container. |
 | 2. | Support for Spanish speakers community | Translate the app to spanish and add support to switch languages. |  
-| 3. | Testing | Add tests to the components |
-| 4. | Final setups | Deal with all production issues/configuration requirements |
-| 5. | Deploy the app | Deploy the app to the final domain |
+| 3. | Testing | Add tests to the components. Achieve a testing coverage of the functionalities above 90% |
+| 4. | Final setups | Deal with all production issues/configuration requirements such as creating the final docker image, reviewing the documentation and verifying everything works fine. |
+| 5. | Deploy the app | Define the final domain and deploy the app. |
 
 #### User Interface
 
@@ -151,35 +131,9 @@ The user interface will be based on this [mock-up](https://www.figma.com/file/Wz
 
 ![Blockcoders Ink Explorer](https://user-images.githubusercontent.com/3802516/180186130-7a6b6856-f926-44f2-8887-b82e4cb640b4.png)
 
-#### 1 - Create App
-
-Create a frontend application that follows the proposed design.
-Cover the following functionalities:
-- Blocks explorer
-- Transactions explorer
-- Contracts explorer (this section will provide to the user information related to the contract, such as transactions, the contract data and events) 
-Dockerize the app to start in a container.
-
-#### 2 - Support for Spanish speakers community
-
-Add support for new languages. This first iteration will only cover english and spanish.
-
-#### 3 - Testing
-
-Add tests to the components of the app.
-
-#### 4 - Final setups
-
-Deal with all production issues/configuration requirements such as creating the final docker image, reviewing the documentation and verifying everything works fine.
-
-#### 5 - Deploy the app
-
-Define the final domain and deploy the app.
-
 ## Future Plans
 
-We plan to expose all the data throughout a Graphql application.
-Add support for more languages.
+We plan to expose all the data throughout a Graphql application and add support for more languages.
 
 ## License
 
