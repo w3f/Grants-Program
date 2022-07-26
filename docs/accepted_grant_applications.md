@@ -519,3 +519,4 @@
 | [B-Datagray](https://www.b-datagray.com/) | Datagen Project | [GitHub](https://github.com/Datagen-Project) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Colorful Notion](https://polkaholic.io/#chains) | Polkaholic.io's Multi-Chain Substrate Block Explorer | [GitHub](https://github.com/colorfulnotion/polkaholic/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Common Orbit LLC](https://brson.github.io) | `wasm-opt` for Rust | [GitHub](https://github.com/brson/wasm-opt-rs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Blockcoders](https://blockcoders.io/) | Ink Explorer | [GitHub](https://github.com/blockcoders) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
