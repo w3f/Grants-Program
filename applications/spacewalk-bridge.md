@@ -131,7 +131,7 @@ A detailed bridge concept is currently being researched (described in this grant
 
 - **Total Estimated Duration:** 3 Months
 - **Full-Time Equivalent (FTE):** 0.5
-- **Total Costs:** 9,000 USD
+- **Total Costs:** 30,000 USD
 
 ### Milestone 1 – Multi asset support
 
@@ -150,25 +150,11 @@ A detailed bridge concept is currently being researched (described in this grant
 |    2b. | Multi asset withdrawal   | Add support for a withdrawal operations involving any possible Stellar asset.                                                                                                          |
 |    2c. | Stellar asset allow list | 1) Allow vaults to register the set of allow listed Stellar assets with the Spacewalk pallet. 2) Allow users to query vaults and their supported assets from the Spacewalk pallet.     |
 
-### Milestone 2 – Multi asset collateral management
+### Milestone 2 – Stellar oracle
 
-- **Estimated duration:** 1 month
-- **FTE:** 0.5
-- **Costs:** 3,000 USD
-
-| Number | Deliverable              | Specification                                                                                                                                                                          |
-| -----: | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|    0a. | License                  | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                   |
-|    0b. | Documentation            | We will provide both inline documentation of the code and a basic tutorial that explains how a user can employ the bridge pallet and the Spacewalk protocol to build a working bridge. |
-|    0c. | Testing Guide            | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                      |
-|     1. | Protocol specification   | The protocol will describe how vaults need to behave in case of vault liquidations involving multiple Stellar assets.                                                                  |
-|     2. | Monitoring of collatoral | The bridge pallet monitors whether vaults need to be liquidated. This requires to take all locked tokens for every supported token of a specific vault into account.                   |
-
-### Milestone 3 – Stellar oracle
-
-- **Estimated duration:** 1 month
-- **FTE:** 0.5
-- **Costs:** 3,000 USD
+- **Estimated duration:** 2 months
+- **FTE:** 1
+- **Costs:** 12,000 USD
 
 | Number | Deliverable              | Specification                                                                                                                                                                                                              |
 | -----: | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -178,6 +164,22 @@ A detailed bridge concept is currently being researched (described in this grant
 |    0d. | Article                  | We will publish an article that explains the completed Spacewalk protocol and pallet that we built as part of the grant.                                                                                                   |
 |     1. | Protocol specification   | The protocol will specify how the Stellar oracle behaves and what messages it forwards to the bridge pallet.                                                                                                               |
 |     2. | Stellar oracle consensus | The bridge pallet processes information received from the oracle, which comprises signed messages from Tier 1 Stellar nodes. This is used to reliably find consensus about finalized Stellar blocks and incoming deposits. |
+
+### Milestone 3 – Multi asset collateral management
+
+- **Estimated duration:** 2.5 months
+- **FTE:** 1
+- **Costs:** 15,000 USD
+
+| Number | Deliverable              | Specification                                                                                                                                                                          |
+| -----: | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License                  | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                   |
+|    0b. | Documentation            | We will provide both inline documentation of the code and a basic tutorial that explains how a user can employ the bridge pallet and the Spacewalk protocol to build a working bridge. |
+|    0c. | Testing Guide            | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                      |
+|     1. | Protocol specification   | The protocol will describe how vaults need to behave in case of vault liquidations involving multiple Stellar assets.                                                                  |
+|     2. | Monitoring of collatoral | The bridge pallet monitors whether vaults need to be liquidated. This requires to take all locked tokens for every supported token of a specific vault into account.                   |
+
+
 
 ## Future Plans
 
