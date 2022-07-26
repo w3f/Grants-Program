@@ -17,7 +17,7 @@ On a high level, the C++ Light Client will allow users (via JSON-RPC) to:
 
 ### Project Details
 
-We will deliver a detailed specification for the implementation based on the research done in the time frame specified in this proposal.
+We will extend the [Polkadot specification](https://spec.polkadot.network/) with Light Client requirements\* and deliver a detailed specification for the implementation based on the research done in the time frame specified in this proposal.
 The actual implementation will be performed in the next phase.
 
 The specification includes:
@@ -42,7 +42,7 @@ Specify scope and support for Parachain and Relay chain
 Define APIs to be supported\*
 (submitting transactions, watching transactions / blocks / accounts, etc)
 
-As the RPC API is currently unstable (see [PSPs#41](https://github.com/w3f/PSPs/issues/41)), part of this task will be validating a minimal interface.
+As the RPC API is currently unstable (see [PSPs#41](https://github.com/w3f/PSPs/issues/41)), specification must be written first.
 
 #### Components specifications / selection
 
