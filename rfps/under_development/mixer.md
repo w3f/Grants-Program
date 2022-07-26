@@ -1,5 +1,7 @@
 # DOT & KSM mixer
 
+* **Status:** [Under Development 1](https://github.com/w3f/Grants-Program/blob/master/applications/MIXERv2.md), [Slushie](https://github.com/w3f/Grants-Program/blob/master/applications/Slushie%20Mixer.md)
+
 ## Project Overview :page_facing_up:
 
 ### Overview
