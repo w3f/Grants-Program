@@ -6,7 +6,7 @@
 
 - **Project Name:** Name of your project (e.g. DuoSwap Module)
 - **Team Name:** Legal name of your team (e.g. Duo)
-- **Payment Address:** BTC, Ethereum (USDT/DAI) or Karura (kUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -37,6 +37,11 @@ We expect the teams to already have a solid idea about your project's expected f
 - PoC/MVP or other relevant prior work or research on the topic
 - What your project is _not_ or will _not_ provide or implement
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+
+Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
+- The (future) tokenomics of your project 
+- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
+- Business-oriented activities (marketing, business planning), events or outreach
 
 ### Ecosystem Fit
 

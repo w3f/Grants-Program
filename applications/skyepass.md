@@ -5,6 +5,7 @@
 * **Project Name:** SkyePass
 * **Team Name:** SkyeKiwi Team
 * **Payment Address**: 0xa5E4E1BB29eE2D16B07545CCf565868aE34F92a2
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/212#issuecomment-1173601830)
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
@@ -167,7 +168,7 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 * **Full-time equivalent (FTE):**  2.5 FTE 
 * **Total Costs:** $28,500
 
-### Milestone 0 — PoC
+### Milestone 1 — PoC
 * **Estimated Duration:** 3 Weeks
 
 * **FTE:**  2
@@ -184,7 +185,7 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 | 3.     | Client Side UI/UX | an simple Electron UI/UX not wired up with logic yet         |
 
 
-### Milestone 1  — Desktop App & Browser Extension 
+### Milestone 2  — Desktop App & Browser Extension 
 
 * **Estimated Duration:** 10 Weeks / **Est. Start Early 2022**
 

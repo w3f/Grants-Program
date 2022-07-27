@@ -6,7 +6,7 @@
 
 * **Project Name:** Ajuna Network
 * **Team Name:** Ajuna Network Team
-* **Payment Address:** 1FgaH4sRHF4boR4Fw316ddKMJbFpsDXGeL
+* **Payment Address:** 1. Milestone: 1FgaH4sRHF4boR4Fw316ddKMJbFpsDXGeL 2-4. Milestone: 3H2shhx3GyMjc5Y4QuF9D5skbQgZDhvPMq
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
 ![image](https://user-images.githubusercontent.com/17710198/136852531-d9eb47cd-efcd-4c88-bdbf-78dfcbffe287.png)

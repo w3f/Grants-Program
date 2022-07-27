@@ -2,6 +2,7 @@
 
 - **Project Name:** Yiban Chen (General chain)
 - **Payment Address (DAI):** 0x6F19fdD08e5f08a26b6240eD3A83ff44fB8E670E
+- **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/402#issuecomment-1110671713)
 
 ## Project Overview :page_facing_up:
 

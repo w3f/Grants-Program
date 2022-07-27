@@ -86,7 +86,7 @@ Estimated to be ~14 months total
 
 
 ### Overview
-* **Total Estimated Duration:** 14 months
+* **Total Estimated Duration:** 22 months
 * **Full-time equivalent (FTE):** 2 FTE
 * **Total Costs:** $15,000 in DAI
 
