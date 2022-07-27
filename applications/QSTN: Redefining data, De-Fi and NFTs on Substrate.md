@@ -245,7 +245,7 @@ For each milestone,
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Proprietary | We filed patents for our data monetization method within the US, UK, Portugal, Switzerland, and Germany. While the overarching code for the web application cannot be licensed, we will open source the smart contract code being used for the blockchain timestamp, NFT purchase, Polkadot.JS wallet creation and Polkadot.JS wallet log-in
+| 0a. | License | Open Source | We will open source the code being used for the blockchain timestamp, NFT purchase, Polkadot.JS wallet creation, Polkadot.JS wallet log-in and DOT NFT marketplace 
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can generate a Polkadot.JS wallet during on boarding, connect this wallet to our web application, mint and/or transfer NFTs from our marketplace to that DOT wallet, and create a blockchain timestamp “receipt” as proof of their data monetization. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
