@@ -1,5 +1,3 @@
-
-
 # W3F Grant Proposal
 
 - **Project Name:** [Asylum](https://asylum.space/)
@@ -11,182 +9,172 @@
 
 ### Overview
 
-Asylum is a metaverse for next generation gaming.
+Asylum is a fundamental metaverse platform.
 
-Our vision of the future of gaming is unicity between the games: interoperability of the in-game items, unified economics, cross-game gameplay, etc. Nothing of that can be achieved without users' trust and here is where blockchain gaming is becoming a solution. Thanks to the migration of the games' economics and in-game items to the blockchain, players don't have to trust some particular game publishers or marketplaces and the game economy and world will become more stabilized.
+We're seeing a big gap in the Metaverse market because every project is mostly just trying to do some sandbox-like game with some extra blockchain-related stuff, whether it is suitable or not.
 
-But in fact, it's not the only thing that blockchain can give us. We, at the Asylum, believe that if the approaches to blockchain gaming will be standardized we will achieve much more than just trust - we can achieve the real metaverse experience, where will be no borders between the games and no limits for the creative minds. With the creation of basic building blocks for the gaming metaverse, we want to do for crypto gaming what Polkadot doing for the blockchains.
+But we believe that Metaverse is not about many separate projects - it is about a united and open system, consisting of many granular interconnected components. We can use the analogy with the Internet - there are a lot of different components, services, and content that are united into a single system due to the defined standards and protocols.
 
-The ecosystem and standards of the Asylum are not going to be related to some specific blockchain, as the new chains, more suitable for games, can be created anytime. And in addition, the requirements of game developers can differ and we are not seeking to limit their choice. So, we are developing Asylum to support firstly substrate-based chains, as they are developed with interoperability in mind. Particularly Polkadot, as it provides access to the ecosystem of many different parachains with various possibilities and bridges to the most popular chains.
+And as the Internet was started by defining the basic standards we should start building the Metaverse in the same way. That's why the main focus for Asylum will be creating a set of open standards and protocols that will be a basement for future Metaverse. We call this set of standards IMP - Interoperable Metaverse Protocol. And such standards cannot be proprietary - we're not trying to make it a part of our product. We are building it open and free for everyone.
+
+And the Asylum product will consist of the etalon implementation of our standards, tools to make it usable for devs, and immersive apps for Users.
 
 ### Project Details
 
+Here we will show two parts of our work in detail - IMP and Asylum product.
 
-#### Asylum overview
+#### IMP
 
-The Asylum project is about building the ecosystem, where every сomponent is connected with each other, achieving a synergy.
+**What is it?**
 
-So, the best way to give a detailed description of the Asylum - is to define its main components:
+IMP (Interoperable Metaverse Protocol) - is a set of open standards and protocols that will be a basement for the Metaverse - a virtual open space with a life-like experience for the user.
 
-- **Asylum standards**
+**Why is it important?**
 
-In our conception **in-game item** can be represented as an NFT metadata followed by a certain standard. The main goal of the standard is to make every item independent of the concrete game. Storing various possible interpretations will give the ability to use them in different games. On the high level, it means that if two RPG games will use these standards you will be able to buy a single N to buy a single NFT artifact and use it in both games.
-The same approach will be used for the player’s identity – the **Avatar System**. Like the in-game items, Avatar will be compatible with different games.
+A real Metaverse, that will be open and consistent can be built only with a down-top approach when firstly we are building an infrastructure and only after that start creating User-side solutions. IMP (and its implementation by Asylum) will be the fundamental layer for Metaverse, which will natively connect different spaces, games, and apps into a single space. And unlike infrastructure products that are not separate the standards and protocol to the separate entity - **IMP will give an ability for every new project to implement its version of it, remaining compatible with other implementations**.
 
-The standard for the **Games Distribution System**. Using the developer’s proof of ownership, and player’s game access NTFs (so-called Tickets) we are creating a system similar to traditional game stores (Steam, Epic Game) but fully decentralized.
+**Who will work on it?**
 
+We understand the open standard can not be built only by some particular company - that's why we plan to gather a strong community of key players from the Metaverse market around IMP and make it owned by this community.
 
-- **On-chain metaverse ecosystem**
+**What components will be in?**
 
-The standards themselves are a good first step, but they require an ecosystem to support operations with them. That's why the next component will be an on-chain ecosystem, split into a few agnostic Blocks.
+IMP will consist of 6 loosely coupled blocks:
 
-**Core Block** implements Asylum standards: in-game item standard, Avatar System, Game Distribution System. **Economic Block** consists of Marketplace and token swap protocol to unite the economy of individual games. **Gameplay Block** includes solutions for repeatable gameplay patterns. This block is responsible for bringing interoperability in the context of gameplay. As an example, we provide on-chain infrastructure for creating custom smart-contracts between players. The possible application might be custom in-game quests.
+1. Metaverse objects standard
 
-- **SDK for ecosystem integration**
+Within this standard, we are using a new approach to use NFT technology for building digital objects for Metaverse. We've reworked the concept of NFT as an image and concept of the NFT collections. We are seeking to make every object maximally independent from any client applications, store its history, be **natively** interoperable between different kinds of spaces (applications/games/etc inside the metaverse) and have fixed value to support balance between these spaces.
 
-We will build an SDK that wraps ecosystem functionality into a clear interface and simplifies integration. Initially, we will provide two possible options: SDK for game engine (Unity, UE) and agnostic JS connection library.
+We wrote the main pieces of this standard within our [first grant application](https://github.com/w3f/Grants-Program/blob/master/applications/asylum.md).
 
-- **Creator tools**
+Here are the main materials that describe our work:
 
-The initial tool for the Creators is **"Game Developers Console"** - a web application allowing Creators to set up the game in the Game Distribution System, configure in-game items and smoothly test them with different game clients.
+- [PitchDeck](https://asylum.space/files/AsylumPitchDeck.pdf).
+- [Litepaper](https://asylum.space/files/litepaper.pdf).
+
+Here is also a diagram to have a quick overview of the standard:
+
+![img](https://gitlab.com/asylum-space/asylum-standards/-/raw/main/standards/asylum0.1/docs/img/asylum-entities-flow-diagram.png)
+
+2. DAO protocol
+
+DAO for the Metaverse is th necessary foundation to exist - it provides ownership and participation for a User, which creates the feeling of the real life, and guarantees community-driven evolution.
+
+As the Metaverse is a huge space that consists of many various smaller spaces and components it is not suitable to have only one big DAO to rule them all. That's why we're seeing this protocol and the **agile framework to build multiple layers of DAO inside the Metaverse**, connected to the incentivize model.
+
+For different purposes it is suitable to use different solutions - in one place it could be critical to have fast decision making time, in another - to make sure that some proposal will be the right change for everybody. Because of this reason, we will include the different mechanisms of governance for different DAO layers.
+
+Main layers that we see for now:
+
+- DAO of the Metaverse
+- DAO of the space
+- DAO of the object
+
+The development of the last one will be included in the scope of this grant.
+
+3. Identity protocol
+
+For the metaverse, it is critically important to have a definition of the identity of every User. That will be the primary goal of the Identity protocol.
+
+Besides this, it will serve to provide an interoperable NFT Avatar(s) for the User, partially by utilizing the Metaverse objects standard.
+
+4. Exchange protocol
+
+In our vision Metaverse spaces should be interoperable not only in a "gameplay" way by also economically. For example, the problem of current games and web2.0 apps is that every such app has its own closed economy and there is no possibility for, for example, usage of some in-game currency on the social platform. This block the possibility of both products growing in synergy.
+
+We can think about Exchange protocol as the base economic laws and rules in the Metaverse. Every space can create its own, more detailed, rules as it wants, but working on the same ground it will make these economics connected.
+
+Particularly Exchange protocol will define the base standards and workflows for exchanging currencies (FTs) and objects (NFTs). The important part of it will be incentivized model that will fairly reward ecosystem Creators and Participants (DAO participants, artists, developers, space owners, etc) for their contribution to the ecosystem.
+
+5. L1 - L2 sync protocol
+
+A protocol for the L2 solution is necessary here because almost every space in the Metaverse will need a fast and secure backend. Usage of the blockchain for every space need is not the best solution and that is why we need to define the L2 standard for the Metaverse.
+
+6. World protocol
+
+World protocol is designed to standardize the structure and rules of space inside the Metaverse. It will include space DAO, space access rights, revenue model, economy rules, versioning and control rights of client&backend code, and so on.
+
+It will be the high-level organization block and will be coupled with every block mentioned above.
+
+#### Asylum product
+
+After we're described the IMP structure let's give a presentation of the Asylum product.
+
+On the high level it can be divided into two significant parts:
+
+- Metaverse provider
+
+  Which includes complete and ready-to-use implementation of the IMP
+
+- Metaverse ecosystem
+
+  Which includes applications, SDKs, tools, and frameworks for Creators and Players - to make the entrypoint to the Metaverse easier.
+
+##### Metaverse provider
+
+Just like Internet has a set of standards and has providers - Asylum will develop the reference implementation of the IMP, becoming the Metaverse provider.
+
+As the concept and functionality of IMP were described above here will be provided a short description of our implementation.
+
+For every part of the IMP, we will implement a Substrate pallet, which will be the basement for Asylum node. For the L2 solution, we'll use TEE technology. We plan to become firstly Kusama and then Polkadot parachain to achieve interoperability on the chain level.
+
+For every part of the IMP we will implement a Substrate pallet, which will be the basement for Asylum node. For the L2 solution we'll use TEE technology. Our plans are to become firstly Kusama and then Polkadot parachain to achieve interoperability on the chain level.
+
+We've already partially implemented a pallet for Metaverse objects within our first grant application. Here you could find all materials and code related to it.
+
+##### Metaverse ecosystem
+
+To make our product accessible for the Creators and Users we will provide necessary apps and tools that will lower the barrier of entry and attract more businesses and people to become participants in this ecosystem.
+
+- **SDK for game engines**
+
+As the Metaverse is about the more immersive approach to the applications - game engines are the best tools for builders of future apps. We've already started the development of the Unity SDK within our first grant application, here you could find all materials and code related to it. By our launch on the Kusame we also plan to deliver SDK for the Unreal engine to cover most of the market.
+
+Working on the SDK and Creato studio we're creating an environment where game/space developers and artists will not deal with some blockchain-specific tech but will work in their comfortable environment.
+
+- **Creator studio app**
+
+Creator Studio - is the web interface for the exploring and management of the Asylum ecosystem designed for artists and developers. It was partially delivered within our first grant application, here you could find all materials and code related to it. After the last milestone delivery, it was already extended with new features and now going through the design improvement stage.
+
+Finally it will be a single application with the different "mods" designed specifically for every actor: artist, developer, and space owner. It will cover functionality to set up and manage the space, work with objects, integrate them into a client, explore existing spaces and objects, etc.
 
 - **Asylum App**
 
-In the Asylum App, Players will be able to browse existing games on the platform, buy them, play, manage their inventory, and use the marketplace - everything like on common gaming platforms but fully decentrali platforms but fully decentralized
+Asylum App - the entrypoint to the Metaverse for User. As Metaverse is about immersive interfaces it will be a 3d space with life-like interactions with the system. We're working on a design that will bring a new kind of user experience and make actions more intuitive.
 
-A simple scheme with Asylum ecosystem components:
-
-![Core-components](https://gitlab.com/asylum-space/asylum-docs/-/raw/main/materials/Asylum-core-components.png)
-
-As it was described above, Asylum is a big and complex project. However, we are at the start for now, and work related to this grant application is about to build a PoC of our ecosystem.
-
-#### Asylum PoC overview
-
-As a PoC we want to deliver a compact version of our ecosystem: 
-
-1. Substrate pallet with basic API for creating templates, minting in-game item NFTs, and updating items metadata. Our pallet will utilize https://github.com/rmrk-team/rmrk-substrate.
-2. Game Developers Console (admin web application), which allows creating/editing NFTs, uploading media resources for in-game items, and trying them on different games.
-3. Connection library, which provides integration of the Asylum on-chain ecosystem into the client applications. 
-4. SDK for Unity engine.
-5. Two demo games (2d and 3d), where admins can try out in-game items.
-
-
-##### Pallet
-
-> Tech: Rust, Substrate, JS (for tests)
-
-We will extend the RMRK Core pallet (built on top of the Uniques pallet) and introduce the `Asylum Core` Pallet.
-
-![Pallet-extension](https://gitlab.com/asylum-space/asylum-docs/-/raw/main/materials/Asylum-pallet-RMRK.png)
-
-**Disclaimer: RMRK pallets are in the early stage of development, so the Asylum pallets’ config, dispatchable functions, and storage structure are unstable.**
-
-RMRK standard will always support a limited set of operations. For our goal, we need to extend RMRK core mechanics. We plan to create an association between the RMRK Collection and different Interpretation types and Interpretations. Each Item minted from this Template should have the same set of Interpretation types and Interpretations as Template. Updating the Template will lead to possible updating of the Item, but this update won't be forced. We intend to leverage RMRK multi-resource NFT's model to implement the Asylum Interpretation concept. Still, the current RMRK pallet state won't allow us to predict the best way to do this. For example, we need Resource mutability [https://github.com/rmrk-team/rmrk-spec/issues/44]. Still, we don't have it right now, so we will manage Item's resources in the Asylum core pallet instead of using the RMRK resource model, but this can change depending on the RMRK pallet pace of development.
-
-Dispatchable functions and storage model can be found [here](https://gitlab.com/asylum-space/asylum-item-nft/-/blob/f62d9b694422b8deb40becdfe719182f524ccedf/pallets/asylum-core/INTERFACE.md)
-
-Use-case diagram for pallet:
-
-![use-case-diagram](https://gitlab.com/asylum-space/asylum-docs/-/raw/main/materials/Asylum-pallet-use-case-diagram.png)
-
-The standard way to work with items via our pallet is given below:
-
-1. **Create a template**
-    Template in the Asylum terms is such kind of “NFT collection” where the items have identical interpretations set (at least one interpretation is mandatory, with 'default-view' type). Every item can have its own custom properties, but the only way to  get any interpretation - is to be minted from a template (or updated, will be described below)
-2. **Mint item**
-    The issuer of the Template can mint NFT items within it. 
-3. **Edit template**
-    After the template was built and items were minted in this collection the only way to update items interpretations set - is to update the template and then every owner of the item will be able to update it to the latest version (if he wants so). The template update process is planned to use DAO approval. To update the template any actor can create an update proposal, that should de be approved by the Template DAO (all owners and actors that are involved in the template development - initial creators, game developers that are integrating the item, etc.).
-4. **Update item**
-    After the template was updated all items will have the ability to be updated, according to the template, by their owners.
-
-Interpretations for the items will be stored under the string key, which can be composite. Such an approach will give the ability to build "presets".
-
-For example, sword for "Heroes 2D" game can have such interpretations: "heroes-2D-pixeled-inventory-view", "heroes-2D-pixeled-equiped-view", "heroes-2D-pixeled-strike-animation-atlas".
-By using such structure for keys, the "Heroes 2D" game client will be able to filter interpretations on fetch, to load all resources with the "heroes-2D-pixeled" prefix (in other terms, load "heroes-2D-pixeled" preset).
-
-
-
-##### Game Developers Console
-
-> Tech: JS, TS, React, Redux
-
-The web application, that we are plan to deliver within this grant application will be a prototype of the Asylum Game Developers Console, where game admins will be able to manage their games and particularly set up the templates for in-game NFTs.
-However, in this app, we will also provide two features, that in the future will be available publicly - template update proposal (via Creator Studio) and items explorer.
-
-Readme for Game Developers Console can be found [here](https://gitlab.com/asylum-space/asylum-ui/-/blob/main/packages/game-developers-console/README.md).
-
-##### Connection library
-
-> Tech: JS
-
-This library is about to be a simple wrapper for Asylum on-chain ecosystem, which allows clients to easily integrate it. Library interfaces are currently not defined, but they will cover the base pallet functionality that client apps need.
-
-Readme for Connection library can be found [here](https://gitlab.com/asylum-space/asylum-ui/-/blob/main/packages/connection-library/README.md).
-
-##### Unity SDK
-
-> Tech: C#
-
-The purpose of this SDK is to simplify the integration to the Unity engine. It will contain the set of classes that are necessary to connect to the player's account, fetch all NFT items and their interpretations and add them to the unity game objects.
-
-Asylum Unity SDK repository can be found [here](https://gitlab.com/asylum-space/asylum-unity-sdk).
-
-##### Games
-
-> Tech: C#, Unity
-
-Games, delivered within this grant application will be small playable demos, with a purpose to show cross-games NFT items’ use-cases.
-
-- “Game A” will be the 3D “Diablo-like” RPG, build on [this](https://assetstore.unity.com/packages/templates/packs/prodigy-game-framework-119282) assets pack
-    Basic mechanics:
-    - Base gameplay:
-    you will be able to move, jump and fight with enemies
-    - Inventory system
-    NFT items will be fetched from the user’s wallet and can be used in the game
-    - Loot system
-    NFT items can be obtained during the game process	
-    - Characters evolution with items
-    NFT items can improve player’s characteristic
-    
-- “Game B” will be the 2D platformer adventure, build on [this](https://assetstore.unity.com/packages/templates/packs/ninja-rian-complete-game-176835) assets pack
-    Basic mechanics:
-    - Base gameplay:
-    you will be able to move, jump and fight with enemies
-    - Inventory system
-    NFT items will be fetched from the user’s wallet and can be used in the game
-    - Loot system
-    NFT items can be obtained during the game process
-    - Hidden locations
-    NFT items can gain access to the hidden locations
-    - In-game shop
-    With the possibility of passive income of in-game currency
-
-
+This application will provide a "room" for every User where he can work with his inventory and avatars and dive into available spaces.
 
 ### Ecosystem Fit
 
 - Where and how does your project fit into the ecosystem?
 
-The Polkadot ecosystem should be very attractive for blockchain-based games development, thanks to the possibilities, that parachains opens. Such standards will help create a basis for game development and tools will help developers save their time. So, eventually, Asylum's mission is to create the ecosystem that accelerates games development in the Polkadot network, bringing a gaming experience to a new level.
+One of our main values is interoperability, this is why Polkadot ecosystem is a good fit for us. While we're working on intreroperability on the Metaverse layer - Polkadot is providing native interoperability on the chain level. We're seeking to be a chain agnostic platform, because for different types of our customers there will be different chains that better fits their needs. This is why interoperability in Polkadot is so suitable solution for our platform.
+
+From our side we will provide the first open Metaverse platform in the Polkadot ecosystem, that will be valuable for many parachains.
 
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 
-Our target audience is game development studios and their user base (players).
+Our target audience is applications, that want to become a part of united Metaverse - connect with their partners, open their economic, power up their content.
+
+We see here three basic areas: gaming, events, education and social.
+Because of games are natively attractive, have immersive approach to interactions and smooth UX - we see this field as a first and a big target for us, as it will be a starting point for the Metaverse adoption.
 
 - What need(s) does your project meet?
 
-Asylum is seeking to become a starting point for the development of blockchain-based games.
+As the large-scale fundamental project we see gathering community as one of the main need now. The community with witch we will build and implement IMP so can the real world can be built.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
-There is the [RMRK](https://www.rmrk.app/) project in the Kusama ecosystem. We're considering their standards as a starting point for creating ours.
+There are few projects in ecosystem that are working in the similar direction with Asylum:
+
+1. [RMRK](https://www.rmrk.app/).
+2. [Ajuna Network](https://ajuna.io/).
+3. [CypherMod](https://cyphermod.com/) by PhalaNetwork and RMRKAPP.
 
 - If so, how is your project different?
 
-The main difference is that Asylum builds a complete ecosystem for gaming when RMRK is only providing a standard for NFTs and tools.
-
-Speaking particularly about standards, RMRK provides a basic standard for NFT legos, but Asylum wants to extend it to make a ready-to-use standard for an in-game item.
+Asylum is operating on the fundamental layer, working on the standards and its implementation for the whole Metaverse ecosystem. There are no such projects for now, that are working on the infrastructure solution for the whole Metaverse ecosystem (not focusing only on NFT, or other spheres) and meanwhile implementing it as an open and extendable solution, not a closed (like Sandbox).
+Because of this, almost all projects operating in this market are good candidates to work together, for example including their infrastructure solutions in our ecosystem.
 
 ## Team :busts_in_silhouette:
 
@@ -211,36 +199,43 @@ Speaking particularly about standards, RMRK provides a basic standard for NFT le
 
 ### Team's experience
 
-**Illia Abrosimov** - CEO and Founder of Asylum.
+**Illia Abrosimov** - CEO and Founder of Asylum. </br>
 Illia used to be a backend developer since 2015, started coding at Unit Factory, had experience with algorithms, graphics, and game engines.
 Was working at Ubisoft as an online programmer for two years, was dealing with backend infrastructure, led game jams and hackathons.
 Have C#, C/C++, Rust, AWS in the stack.
 
-**Markian Ivanichok** - CEO and co-founder of Supercolony.
+**Markian Ivanichok** - CEO and co-founder of Supercolony. </br>
 Blockchain entrepreneur, Software Engineer.
 Markian started his engineering career back when he was 15. Since then, developed and got a lot of experience in engineering and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded, and invested in Sector F, one of the top consulting companies in Ukraine that help entrepreneurs to move faster.
 Co-founded and led Supercolony, a Polkadot venture studio that is dedicated to building and creating Polkadot’s ecosystem.
 
-**Maria Yaremenko** - Head of operations and co-founder of Asylum.
+**Maria Yaremenko** - Head of operations and co-founder of Asylum. </br>
 In 2019 started to work as a front-end developer, Maria became interested in blockchain technology and soon started her career as a blockchain developer in the Polkadot ecosystem in 2021.
 Maria has mentorship experience as a computer science tutor with, background in economics.
 
-**Sven Seven** - Head of Engineering at Supercolony.
+**Alexander Kaplaty** - Financial Analytic & CFO, Supercolony. </br>
+Internationally experienced financial and commerce professional helping businesses grow sales, improve operational performance, introduce corporate best practices, change organizational culture, and attract investments.
+
+**Kyrylo Nagorny** - CMO, Supercolony. </br>
+
+**Sven Seven** - CTO, Supercolony. </br>
 Software engineer with prod experience since 2015. Master degree in Information Security.
 Has worked in finance, e-commerce, networking domains as full-stack dev.
 Programming languages are JS, Java, Python, Rust, C++.
 Blockchain dev since 2021.
 
-**Horacio Lex** - Blockchain developer at Supercolony. Software engineer since 2018. Master of Science in Applied Mathematics. Has worked in data science and game development. Former Ubisoft employee was working on HUD/UI & gameplay systems. Programming languages are Python, C++, Rust. Blockchain developer since 2021.
+**Horacio Lex** - Blockchain developer, Supercolony. </br>
+Software engineer since 2018. Master of Science in Applied Mathematics. Has worked in data science and game development. Former Ubisoft employee was working on HUD/UI & gameplay systems. Programming languages are Python, C++, Rust. Blockchain developer since 2021.
 
 ### Team Code Repos
 
 - https://gitlab.com/asylum-space/
-- https://gitlab.com/asylum-space/asylum-app
+- https://gitlab.com/asylum-space/asylum-ui
 - https://gitlab.com/asylum-space/asylum-item-nft
 - https://gitlab.com/asylum-space/asylum-standards
 
 Members:
+
 - https://github.com/LastSymbol0
 - https://github.com/0xMarkian
 - https://github.com/YaremenkoM
@@ -253,29 +248,45 @@ Members:
 - https://www.linkedin.com/in/maria-yaremenko/
 - https://www.linkedin.com/in/0xmarkian/
 - https://www.linkedin.com/in/sven-seventimes/
+- https://www.linkedin.com/in/%D0%BD%D0%B0%D0%B3%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BA%D0%B8%D1%80%D0%B8%D0%BB%D0%BB-3bb2276a/
+- https://www.linkedin.com/in/kaplaty/
 - https://www.linkedin.com/in/heorhii-lutsenko-502873164/
 
 ## Development Status :open_book:
 
-Asylum was firstly implemented on the Solana Ignition hackathon in its initial idea.
-After that, the project received its first positive feedback from game developers and multiple VCs and Supercolony venture studio entered the project as a co-founder. Was held two strategical sessions, the concept was largely clarified and reworked. For now, we already have such partners as Darvinia Network and Evolution land (first DeFi game) and conversations with games such as Eizper Chain, Wind metaverse, SpaceFalcon.io. Also, we have already raised the first money from Mempool ventures and speaking with other VCs (Hillrise Group, Woodstock Fund, 500 Startups, and others).
+Current status of the Asylum development - finalization of the PoC. Mainly previous work were delivered within our [first grant application](https://github.com/w3f/Grants-Program/blob/master/applications/asylum.md)
 
-Materials which was implemented during the time of the hackathon:
-- [Repository of Asylum demo made for Solana Ignition hackathon](https://github.com/LastSymbol0/Asylum),
-- [Basic SDK for interactions with the Asylum programs and data](https://github.com/LastSymbol0/asylum-sdk),
-- [Asylum on devpost](https://devpost.com/software/asylum)
+1. Creator studion - [link](https://gitlab.com/asylum-space/asylum-ui/-/blob/main/packages/game-developers-console/)
 
-Actual concept materials
-- [Asylum Litepaper](https://drive.google.com/file/d/1sEk159ISUZypgUSflsHFyqP0Z7IRJtdl/view)
-- [Asylum Pitchdeck](https://www.canva.com/design/DAE1y6AHyCA/Lh0gxRtIePVtb_QfzyP6aQ/view?utm_content=DA[%E2%80%A6]tm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+Web application for NFT artists and game/space developers. Delivered within our first grant application. Now goining throught redesign stage.
+
+2. [Connection library](https://gitlab.com/asylum-space/asylum-ui/-/blob/main/packages/connection-library/README.md)
+
+TS library for connection with Asylum node. Fully delivered within our first grant application.
+
+3. [Unity SDK](https://gitlab.com/asylum-space/asylum-unity-sdk)
+
+Library for integration of the Asylum ecosystem into the unity engine. Delivered within our first grant application.
+
+4. [Asylum node](https://gitlab.com/asylum-space/asylum-item-nft)
+
+Currently includes pallet that implements Metaverse object standard (now called "asylum-core") and pallet for game/spaces distribution ("asylum-game-distribution"). Delivered within our first grant application.
+
+5. [Metaverse object standard](https://gitlab.com/asylum-space/asylum-standards/-/blob/main/standards/asylum0.1/README.md)
+
+Now called "Asylum stadard", will be renamed in process of separation standards from Aslum to IMP. The basic version of the "Metaverse object standard" from IMP. Fully delivered within our first grant application.
+
+6. [Testing game A - 2d platformer "Ninja rian"](https://gitlab.com/asylum-space/asylum-ui/-/tree/main/packages/connection-library/data)
+
+Build of the 2d testing game with integration with Asylum node. Delivered within our first grant application.
 
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
-- **Total Estimated Duration:** 5 weeks
+- **Total Estimated Duration:** 4 weeks
 - **FTE:** 3 FTE
-- **Total Costs:** 48,000 USD
+- **Total Costs:** 38,400 USD
 
 ### Previous work:
 
@@ -286,21 +297,20 @@ Actual concept materials
 - **Costs:** 30,000 USD
 - **Devilery Status**: [Delivered](https://github.com/w3f/Grant-Milestone-Delivery/pull/438)
 
-| Number | Deliverable                     | Specification |
-| -----: | ------------------------------- | ------------- |
-| 0a.    | License                         | MIT           |
-| 0b.    | Documentation                   | We will provide a repository with documentation for the defined standard of NFT metadata in the format of text docs (most likely in .md). Also, examples of metadata will be provided. |
-| 0c.    | Testing Guide                   | For implemented standard unit tests will be provided along with a guide on how to run them. |
-| 0d.    | Docker                          | - |
-| 0e.    | Article                         | - |
-| 1.     | Item standard definition        | The definition of the in-game item standard will consist of three parts: JSON schema, descriptive documentation, and examples of usage. Standard properties will be described below in the subparagraphs. |
-| 1.1    | 2D visualization                | NFT item created with the proposed standard will have the ability to have a visual interpretation in form of a 2D image. |
-| 1.2    | 3D visualization                | NFT item created with the proposed standard will have the ability to have a visual interpretation in form of a 3D model. |
-| 1.3    | Multiple visual interpretations | NFT item created with the proposed standard will have the ability to have multiple visual interpretations, both for 2D or 3D visualization types. Interpretations will be stored under the different tags, for example, "2d-pixeled-inventory-view" or "3d-realistic-equipped". |
-| 2.     | Asylum Core pallet              | We will deliver the implementation of the described standard. It will be pallets, which will implement base operations with item  |
-| 3.     | Connection library              | We will deliver the JS library, that will cover functionality of Asylum Core pallet.  |
-| 4.     | Web application                 | We will create a web application that will give an ability to interact with mentioned pallets: create and update template and mint test NFT items. Related to the proposed UI mockups, the "templates section" will be implemented |
-
+| Number | Deliverable                     | Specification                                                                                                                                                                                                                                                                   |
+| -----: | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License                         | MIT                                                                                                                                                                                                                                                                             |
+|    0b. | Documentation                   | We will provide a repository with documentation for the defined standard of NFT metadata in the format of text docs (most likely in .md). Also, examples of metadata will be provided.                                                                                          |
+|    0c. | Testing Guide                   | For implemented standard unit tests will be provided along with a guide on how to run them.                                                                                                                                                                                     |
+|    0d. | Docker                          | -                                                                                                                                                                                                                                                                               |
+|    0e. | Article                         | -                                                                                                                                                                                                                                                                               |
+|     1. | Item standard definition        | The definition of the in-game item standard will consist of three parts: JSON schema, descriptive documentation, and examples of usage. Standard properties will be described below in the subparagraphs.                                                                       |
+|    1.1 | 2D visualization                | NFT item created with the proposed standard will have the ability to have a visual interpretation in form of a 2D image.                                                                                                                                                        |
+|    1.2 | 3D visualization                | NFT item created with the proposed standard will have the ability to have a visual interpretation in form of a 3D model.                                                                                                                                                        |
+|    1.3 | Multiple visual interpretations | NFT item created with the proposed standard will have the ability to have multiple visual interpretations, both for 2D or 3D visualization types. Interpretations will be stored under the different tags, for example, "2d-pixeled-inventory-view" or "3d-realistic-equipped". |
+|     2. | Asylum Core pallet              | We will deliver the implementation of the described standard. It will be pallets, which will implement base operations with item                                                                                                                                                |
+|     3. | Connection library              | We will deliver the JS library, that will cover functionality of Asylum Core pallet.                                                                                                                                                                                            |
+|     4. | Web application                 | We will create a web application that will give an ability to interact with mentioned pallets: create and update template and mint test NFT items. Related to the proposed UI mockups, the "templates section" will be implemented                                              |
 
 #### Milestone 2 — Extended web-app and testing games
 
@@ -309,16 +319,16 @@ Actual concept materials
 - **Costs:** 20,000 USD
 - Delivery status: In development
 
-| Number | Deliverable                     | Specification |
-| -----: | ------------------------------- | ------------- |
-| 0a.    | License                         | MIT           |
-| 0b.    | Documentation                   | -             |
-| 0c.    | Testing Guide                   | For manually testing we will provide a basic **tutorial** that explains how a user can interact with the testing environment - go through a "happy path" which includes running a node, hosting web-app and games, minting the NFT in specified standard and trying to use it in two games. |
-| 0d.    | Docker                          | - |
-| 0e.    | Article                         | - |
-| 1.     | Web application                 | We will extend a web application to make it correspond provided mockups. |
-| 2.     | Unity integration               | We will provide a simple library for Unity (SDK) for integration of the Asylum on-chain ecosystem (Asylum Core pallet) into the game client. |
-| 3.     | Game A                          | We will create a 2d web-faced platformer game sandbox in pixeled style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable). The game will use NFT items minted on the Asylum Core pallet via the Unity library. |
+| Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                                            |
+| -----: | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License           | MIT                                                                                                                                                                                                                                                                                                                                                      |
+|    0b. | Documentation     | -                                                                                                                                                                                                                                                                                                                                                        |
+|    0c. | Testing Guide     | For manually testing we will provide a basic **tutorial** that explains how a user can interact with the testing environment - go through a "happy path" which includes running a node, hosting web-app and games, minting the NFT in specified standard and trying to use it in two games.                                                              |
+|    0d. | Docker            | -                                                                                                                                                                                                                                                                                                                                                        |
+|    0e. | Article           | -                                                                                                                                                                                                                                                                                                                                                        |
+|     1. | Web application   | We will extend a web application to make it correspond provided mockups.                                                                                                                                                                                                                                                                                 |
+|     2. | Unity integration | We will provide a simple library for Unity (SDK) for integration of the Asylum on-chain ecosystem (Asylum Core pallet) into the game client.                                                                                                                                                                                                             |
+|     3. | Game A            | We will create a 2d web-faced platformer game sandbox in pixeled style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable). The game will use NFT items minted on the Asylum Core pallet via the Unity library. |
 
 ### Scope of this Grant:
 
@@ -328,42 +338,41 @@ Actual concept materials
 - **FTE:** 3
 - **Costs:** 19,200 USD
 
-| Number | Deliverable                     | Specification |
-| -----: | ------------------------------- | ------------- |
-| 0a.    | License                         | MIT           |
-| 0b.    | Documentation                   | -             |
-| 0c.    | Testing Guide                   | - |
-| 0d.    | Docker                          | - |
-| 0e.    | Article                         | - |
-| 1.     | GDC - Tags                      | We will extend a Game Developers Console interface to support operations with [Tags](https://gitlab.com/asylum-space/asylum-standards/-/blob/main/standards/asylum0.1/entities/interpretation-tag.md), such as creating a tag, and modifying the existing one. |
-| 2.     | GDC - Supported items           | We will extend a Game Developers Console "Game Overview" page interface to show Templates, or criteria for Templates/Items, which are supported by the game. |
-| 3.     | Unity SDK - 3D                  | We will extend Asylum Unity SDK to add support for the Items with 3D interpretations, to make them easily integrated to the game client. |
-| 4.     | 3D Game                         | We will create a 3d web-faced game sandbox in realistic style with a small "level" space. Player will have the possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable) |
+| Number | Deliverable               | Specification                                                                                                                                                                                                 |
+| ------ | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                   | MIT                                                                                                                                                                                                           |
+| 0b.    | Documentation             | Improve documentation for Unity SDK, describe new features with managing 3D items and items drop                                                                                                              |
+| 0c.    | Testing Guide             | Guide though the interoperability game mechanics between two games                                                                                                                                            |
+| 0d.    | Docker                    | Current Docker setup doesn’t require additional changes                                                                                                                                                       |
+| 0e.    | Article                   | -                                                                                                                                                                                                             |
+| 1.     | Unity SDK updates         | We’ll expand Unity SDK to make it more abstract and reusable between Unity projects, as well as introduce new features:<br/>1. Ability to manage 3D assets<br/>2. Items drop system                           |
+| 2.     | 3D Game                   | We’ll develop 3D game, which operates 3D NFT representation and implement game mechanics, which will become the reference on items interoperability                                                           |
+| 3.     | In-game items association | We’ll improve Game Developers Console and introduce possibility to define in-game items on the level of Game Client (so-called Patterns) and mechanism to associate these in-game patterns with NFT Templates |
 
+#### Milestone 4 — Public availability
 
-#### Milestone 4 — DAO
-
-- **Estimated Duration:** 3 weeks
+- **Estimated Duration:** 2 weeks
 - **FTE:** 3
-- **Costs:** 28,800 USD
+- **Costs:** 19,200 USD
 
-| Number | Deliverable                     | Specification |
-| -----: | ------------------------------- | ------------- |
-| 0a.    | License                         | MIT           |
-| 0b.    | Documentation                   | -             |
-| 0c.    | Testing Guide                   | - |
-| 0d.    | Docker                          | - |
-| 0e.    | Article                         | - |
-| 1.     | Pallet - Template DAO           | We will implement substrate pallets to handle  Template (Asylum Core pallet) updates. This process will be done through the update proposals, which can be submitted by anybody, but should be approved (or declined) by the Template DAO members, who will be the actors, interested in the Template development - the creator of the Template, developers of the game-integrator, creators who already made their contribution to the Template development and item owners. |
-| 2.     | GDC - Proposal approval process | We will extend a Game Developers Console interface to show all stages of the Template and Item, during the update process. This includes - showing pending update proposals, showing the proposal's history, the possibility to vote for the proposal, possibility to update the current Item according to the template. |
+| Number | Deliverable         | Specification                                                                                                                                      |
+| ------ | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License             | MIT                                                                                                                                                |
+| 0b.    | Documentation       | We’ll improve documentation, combining all distinct parts in one place, organize it with existing documentation tools and make it public available |
+| 0c.    | Testing Guide       | Guide for Players WebApp, where we’ll describe how user can configure wallet and achieve tokens to enter Asylum platform                           |
+| 0d.    | Docker              | -                                                                                                                                                  |
+| 0e.    | Article             | -                                                                                                                                                  |
+| 1.     | Test-net deployment | We’ll deploy Asylum pallets on testnet, introduce basic gaming back-end and apply anti-cheating measures                                           |
+| 2.     | Players WebApp      | We’ll implement WebApp for players, where user can see and manage his obtained NFTs                                                                |
 
 ## Future Plans
 
-As was described in the 'Overview' section, Asylum is a big project which has ambitious plans for the future. The milestones described in this grant application are about to become the first step for building a huge ecosystem for crypto gaming. We are planning to create a follow-up grant where we will describe one more game to show interoperability and extend our ecosystem.
+As was described in the 'Overview' section, Asylum is a big project which has ambitious plans for the future. The milestones described in this grant application are about to become the first step for building a huge ecosystem for the Metaverse.
 
-In our plans, the launch of the Asylum platform is set for the end of the 2022 year, but we are planning to support and extend our product long-term. Also, we would like not only to build but also empower real metaverse gaming by creating Asylum Studio - an independent team that will develop games on top of the Asylum ecosystem.
+Here you could find Asylum roadmap - ![roadmap](https://i.ibb.co/KX4WDXS/2022-07-28-17-23-56.jpg)
 
 **Materials**:
+
 - [Website](https://asylum.space/)
 - [Litepaper](https://asylum.space/files/litepaper.pdf)
 - [Pitch deck](https://asylum.space/files/AsylumPitchDeck.pdf)
