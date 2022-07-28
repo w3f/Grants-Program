@@ -10,11 +10,11 @@
  
 ### Overview
  
-Meta Defender is a decentralised insurance protocol built on the blockchain. It is compatible with both the most popular EVM and the Substrate framework, and is designed to provide insurance for transactional and non-transactional assets on the blockchain by users. In the meantime, Meta Defender is also working to apply blockchain technology to real-world insurance scenarios, becoming an important addition to the traditional insurance industry. This project is the first-place winner of Acala Hackathon and is in the 2022 cohort of Web3.0 Bootcamp supported by Web3.0 Foundation and Parity.
+Meta Defender is a decentralised insurance protocol built on the blockchain. It is developed with ink! smart contract, and is designed to provide insurance for transactional and non-transactional assets on the blockchain of users. Later on, it will support cross-chain insurance through substrate and XCM. In the meantime, Meta Defender is also working to apply blockchain technology to real-world insurance scenarios, becoming an important addition to the traditional insurance industry. This project is the first-place winner of Acala Hackathon and is in the 2022 cohort of Web3.0 Bootcamp supported by Web3.0 Foundation and Parity.
  
 The rapid development of Defi has led to a huge increase in the digital assets that are transactional in smart contracts, which also makes it very vulnerable to cyber attacks. Conventional insurances, on the other hand, have limited capacity to provide transparent, secured and rapid protection for precious assets. In order to cater for the increasing needs, our team decided to work on a Defi insurance protocol, also to solve several pain points in existing web3 insurance products.
  
-Meta Defender is planned to launch on the Acala EVM+ chain, designed to provide insurance services to multiple subject-matters in the Polkadot Ecosystem. Later on, Meta Defender will be compatible with the Substrate framework and Karura network.
+Meta Defender is planned to launch on the parachains in the Polkadot Ecosystem, designed to provide insurance services to multiple subject-matters in the Polkadot Ecosystem. 
  
 ### Project Details
  
@@ -38,7 +38,6 @@ Meta Defender is planned to launch on the Acala EVM+ chain, designed to provide 
 - Substrate
 - Node.js
 - Ethers.js
-- Solidity
  
 
 
@@ -62,7 +61,7 @@ The Meta Defender protocol makes secondary use of the underwriting capital, with
  
 - Risk Reserve
 
-When a claim occurs, priority is given to using the funds in the Risk Reserve to pay out; when there is not enough to pay out, the excess is shared among all underwriters according to the weighting of the capital in the Capital Reserve by the underwriters. 
+When a claim occurs, priority is given to using the funds in the Risk Reserve to pay out; when there is not enough to pay out, the excess is shared among all underwriters according to the weighting of the capital in the Capital Reserve by the underwriters. In that way, returns for underwriters can be maximised and the risk of loss can be minimised.
 
 
  
@@ -238,7 +237,7 @@ The holder of sToken, i.e. the underwriter of Meta Defender, is entitled to the 
 
 In order to encourage underwriters to provide long-term, stable capital, sToken holders are required to hold their sTokens for a certain period of time (approximately 14 natural days, with minor variations depending on the speed of block creation on the mainnet) before they can participate in the withdrawal of this Rewards.
 
-After withdrawing from the Capital Reserve and destroying the sToken, the holder will lose the eligibility to withdraw the proceeds. The mining proceeds will be hosted separately by Meta Defender's governance contract and will be claimed from the pool for sToken
+After withdrawing from the Capital Reserve and destroying the sToken, the holder will lose the eligibility to withdraw the proceeds. The mining proceeds will be hosted separately by Meta Defender's governance contract and will be claimed from the pool for sToken.
  
  
  
@@ -247,36 +246,36 @@ After withdrawing from the Capital Reserve and destroying the sToken, the holder
  
 - Where and how does your project fit into the ecosystem?
 
-Meta Defender will use aUSD, the stablecoin in Acala as the currency for buying cover, being an underwriter and for payouts of claims. Currently Meta Defender is planned to be deployed on Acala EVM+, and later on will be also deployed with ink! Smart contract and compatible with Substrate and XCM. Ultimately, we would like to provide insurance services to the main parachains and major protocols in the Polkadot Ecosystem. Also, by introducing XCM, we would like to achieve cross-chain insurance.
+Meta Defender will use the stablecoin in parachains as the currency for buying cover, underwriting and for payouts of claims. Currently Meta Defender is planned to be deployed with ink! Smart contract and compatible with Substrate and XCM. Ultimately, we would like to provide insurance services to the main parachains and major protocols in the Polkadot Ecosystem. Also, by introducing XCM, we would like to achieve cross-chain insurance.
 
 Our Leveraged Mining component will cooperate with top liquidity mining protocols in Polkadot Eco, which will increase the TVL of those projects.
+
 We are planning to integrate the Blockchain Oracles function in the Polkadot Ecosystem，e.g. Phala, which will expand our insured subject-matters to more off-chain scenarios.
 
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 
-Our target audience will be the users who would like to buy covers for their digital assets in the Polkadot Ecosystem, as well as those who would like to utilise their idle capital to become an underwriter and gain proceeds from Liquidity Mining in the Polkadot Ecosystem.
+Our target audience will be the users who would like to buy covers for their digital assets in the Polkadot Ecosystem, as well as those who would like to utilise their idle capital to become an underwriter and gain proceeds from Liquidity Mining in the Polkadot Ecosystem and rewards from our insurance protocol.
 
 - What need(s) does your project meet?
 
-As the rapid development of Defi markets, asset holders are looking for an insurance protocol that can protect them when emergencies like theft ,cyber attack and data leakage happen. Meta Defender is designed for providing such services.
+As the rapid development of Defi markets, asset holders are looking for an insurance protocol that can protect them when emergencies like theft, cyber attack and data leakage happen. Meta Defender is designed for providing such services.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
 There is an insurance protocol called Nsure that received a grant from W3F. Meta Defender has following highlights compared to Nsure：
+
 Meta Defender’s pricing model is an upgraded Automated Market Maker Model purely based on the relations between supply and demand. Therefore, there is no need to manually adjust the factors for calculating the premium rates because it's auto-generated.
 
 Meta Defender’s Leveraged Mining will cooperate with Liquidity Mining protocols in the ecosystem while Nsure has their own capital mining pool. We believe, cooperating with top Liquidity Mining protocols in the ecosystem will maximise the returns with the capital that underwriters inject to the protocol.
-We are planning to provide insurance service for more off-chain scenarios by integrating blockchain oracles, such as flight cancellation insurance.
+
+We are also planning to provide insurance service for more off-chain scenarios by integrating blockchain oracles, such as flight cancellation insurance.
  
 ## Team :busts_in_silhouette:
  
 ### Team members
  
-- Name of team leader
-Alvin, CEO
-- Names of team members
-Angie, Fullstack Engineer
-0xdeadbeef, Fullstack Engineer
+- Name of team leader: Alvin, CEO
+- Names of team members: Angie, Fullstack Engineer & 0xdeadbeef, Fullstack Engineer
  
 ### Contact
  
@@ -313,27 +312,11 @@ Angie: She is a Data Scientist in an Australian Fintech company who is also a CP
  
 ### Overview
  
-- **Total Estimated Duration:** 9 months
+- **Total Estimated Duration:** 8 months
 - **Full-Time Equivalent (FTE):**  2
-- **Total Costs:** 10,000 USD
+- **Total Costs:** 8,000 USD
  
 ### Milestone 1 — Basic Functionalities
- 
-- **Estimated duration:** 1 month
-- **FTE:**  2
-- **Costs:** 3,000 USD
- 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to deploy and use the smart contract in EVM+. |
-| 0c. | Testing Guide | Core functions will be covered by unit tests, along with detailed explanation step by step. |
-| 0d. | Docker | N/A for smart contract |
-| 1. | Buy Cover | A functionality that will enable the digital assets holders to buy cover on Acala EVM+. |  
-| 2. |Underwriting | A functionality that will enable the capital holder to become an underwriter for the protocol on Acala EVM+. |   
- 
- 
-### Milestone 2 ink! implementation
  
 - **Estimated Duration:** 4 months
 - **FTE:**  2
@@ -342,14 +325,14 @@ Angie: She is a Data Scientist in an Australian Fintech company who is also a CP
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to deploy and use the ink! smart contract in Kuraru network. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to deploy and use the ink! smart contract. |
 | 0c. | Testing Guide | Core functions will be covered by unit tests, along with detailed explanation step by step. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1. | Buy Cover | A functionality that will enable the digital assets holders to buy cover on Karura network. |  
-| 2. |Underwriting | A functionality that will enable the capital holder to become an underwriter for the protocol on Karura network. | 
+| 1. | Buy Cover | A functionality that will enable the digital assets holders to buy cover. |  
+| 2. |Underwriting | A functionality that will enable the capital holder to become an underwriter. | 
 | 3. | Manual of interaction between ink! and front-end | We will provide a manual regarding constructing an interface for the interaction between front-end and ink! smart contract & Polkadot.js wallet, just like what web3.js and ethers.js have done in the EVM ecosystem. | 
  
-### Milestone 3 Substrate + XCM
+### Milestone 2 Substrate + XCM
  
 - **Estimated Duration:** 4 months
 - **FTE:**  2
@@ -361,9 +344,9 @@ Angie: She is a Data Scientist in an Australian Fintech company who is also a CP
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how Meta Defender protocol enables cross-chain insurances. |
 | 0c. | Testing Guide | Core functions will be covered by unit tests, which will be considered as another way of explanation |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains the functionalities Meta Defender provides which will cover: 1. auto-pricing model; 2. economic model of insuring and underwriting; 3. how we achieve cross-chain insurance through substrate and XCM and open source this part of code.  |
-| 1a. | Cross-chain support 1 | Function that enables users to buy cover from addresses on Acala/Karura and receive his claim on other parachains. |  
-| 1b. | Cross-chain support 2 | Function that enables users to buy covers, underwrite and initiate a claim from addresses on other parachains, interacting with Meta Defender protocol deployed on Acala/Karura through a cross-chain way built by XCM. |  
+| 0e. | Article | We will publish an **article** that explains the functionalities Meta Defender provides, which will cover: 1. auto-pricing model; 2. economic model of insuring and underwriting; 3. how we achieve cross-chain insurance through substrate and XCM and open source this part of code.  |
+| 1a. | Cross-chain support 1 | Function that enables users to buy cover from addresses on the parachain that the Meta Defender protocol deployed and receive his claim on other parachains. |  
+| 1b. | Cross-chain support 2 | Function that enables users to buy covers, underwrite and initiate a claim from addresses on parachains, interacting with Meta Defender protocol deployed on another parachain through a cross-chain way built by XCM. |  
  
  
 ## Future Plans
@@ -380,4 +363,6 @@ Long-term: We would like to cooperate with professional security service provide
  
 Meta Defender is the first-place winner of Acala Hackathon: https://twitter.com/AcalaNetwork/status/1527290444379394049?s=20&t=u60vX2VZTWvSoZ1x62Y-sA
 
-Meta Defender is also in the 2022 cohort of Web3.0 Bootcamp supported by Web3 Foundation, Parity and Wanxiang Blockchain Labs.
+Meta Defender is also in the 2022 cohort of Web3.0 Bootcamp supported by Web3 Foundation, Parity and Wanxiang Blockchain Labs. 
+
+Since we have participated in a few activities in the Polkadot Ecosystem and have a profound understanding of the eco, we have been advised that we could apply for the grants program and grow with Polkadot.
