@@ -99,7 +99,7 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 
 - **Total Estimated Duration:** 4 weeks
 - **Full-Time Equivalent (FTE):**  2
-- **Total Costs:** 16,000 DAI
+- **Total Costs:** 14,000 DAI
 
 ### Milestone 1 — Stable Asset XCM Pallet
 
