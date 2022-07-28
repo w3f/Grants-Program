@@ -234,7 +234,36 @@ Besides, we also have a **community room for all grant recipients**. Head over t
 
 ## :rocket: Alternative Funding Sources
 
-Some funding sources might be more and some less suitable for your project throughout its various stages. We encourage you to explore alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
+We encourage you to explore the alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
+
+### Substrate Builders Program vs Treasury vs Web3 Grants
+
+The following flowchart gives a rough, oversimplified view of how the W3F Grants Program, the Polkadot and Kusama treasuries and Parity's Substrate Builders Program relate, and where your project might fit best. Note that this diagram does not include any of the [parachain-specific grants/builders programs](#other-grant-programs) other organisations are offering.  
+
+```mermaid
+flowchart LR
+    A(Project Focus)
+    A -->|Development| B[Stage of Development]
+    A -->|Research| C[Grants Program]
+    A -->|Other| D[Treasury]
+    B -->|Existing POC| E[Goal of the Application]
+    B -->|No POC| F[Grants Program]
+    E -->|Funding| G[Treasury or Grants Program]
+    E -->|Support| H[Substrate Builders Program]
+    style C stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
+    style D stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
+    style F stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
+    style H stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
+    
+    click C "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
+    click D "https://wiki.polkadot.network/docs/en/learn-treasury" "https://wiki.polkadot.network/docs/en/learn-treasury" _blank
+    click F "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
+    click H "https://www.substrate.io/builders-program/" "https://www.substrate.io/builders-program/" _blank
+```
+
+### Substrate Builders Program 
+
+The [Substrate Builders Program](https://substrate.io/ecosystem/substrate-builders-program/) directly supports you by connecting you with Parity’s extensive resources. 
 
 ### Treasury
 
@@ -254,7 +283,7 @@ The best way to find out about upcoming hackathons is by following Polkadot on t
 
 Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 
-- [Darwinia Grants Program](https://docs.darwinia.network/developers/dev-bounty)
+- [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [Edgeware Grants and Bounties](https://github.com/edgeware-builders/construction-projects)
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
