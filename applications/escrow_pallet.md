@@ -17,10 +17,11 @@
 
 ### Project Details
 
+We aim to build a Escrow pallet which will help communities to release funds easier to devs/teams.
 I would like to explain the purpose of the project with a real example.
 A developer wants to fix/develop a bug/feature.
 He requested some funds and his proposal got approved.
-Both of the parties (web3 and contributor) sign the Escrow contract by defining the Web3 address, the contributor address, the amount, the expiry date, and “take action days”.
+Both of the parties (for ex: web3 community and contributor) sign an Escrow contract by defining the Web3 community address, the contributor address, the amount, the expiry date, and “take action days”.
 “Take action days” would be some supplement time after the contract has ended for the Web3 to test/check if the bug/feature has been delivered correctly.
 Once the contract is signed the Web3 funds will be locked into another address.
 During the take action days Web3 can decide to:
@@ -37,8 +38,8 @@ During the take action days Web3 can decide to:
 
 ### Team members
 
-- MSc Eljo Prifti
-- Ing Gerti Prifti
+- MSc Eljo Prifti - Rust developer and Rust community enthusiast.
+- Ing Gerti Prifti - Rust developer
 
 ### Contact
 
@@ -79,7 +80,7 @@ The last months I have been curious about Substrate/Rust, and I am learning it o
 
 ## Development Status
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+We would like to add this pallet to the Subtrate recipes repo.
 
 - [Substrate recipes](https://github.com/herou/recipes) 
 
