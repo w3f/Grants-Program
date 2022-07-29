@@ -256,7 +256,7 @@ Members:
 
 Current status of the Asylum development - finalization of the PoC. Mainly previous work were delivered within our [first grant application](https://github.com/w3f/Grants-Program/blob/master/applications/asylum.md)
 
-1. Creator studion - [link](https://gitlab.com/asylum-space/asylum-ui/-/blob/main/packages/game-developers-console/)
+1. Creator studio - [link](https://gitlab.com/asylum-space/asylum-ui/-/blob/main/packages/game-developers-console/)
 
 Web application for NFT artists and game/space developers. Delivered within our first grant application. Now goining throught redesign stage.
 
