@@ -1,7 +1,7 @@
 # W3F Grant Proposal
 
 - **Project Name:** Escrow Pallet
-- **Team Name:** Twin Brother
+- **Team Name:** TwinP
 - **Payment Address:** TLQQGTvyCzhqCWp3w8pjVaEQU3uYWajRx1
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
@@ -11,7 +11,7 @@
 ### Overview
 
 - We will build an Escrow pallet.
-- The Escrow pallet will help the web3 community to release funds easier.
+- The Escrow pallet will help the web3 communities to release funds easier.
 - I will use substrate framework to build this pallet.
 - My team is happy to create this project because they want to build something for the community.
 
@@ -30,30 +30,30 @@ During the take action days Web3 can decide to:
 
 ### Ecosystem Fit
 
-- Substrate learners would have an Escrow pallet as example
+- Substrate learners would have an Escrow pallet as example.
 - Web3 companies who would like to release funds in a very easy way.
 
 ## Team
 
 ### Team members
 
-- Eljo Prifti
-- Gerti Prifti
+- MSc Eljo Prifti
+- Ing Gerti Prifti
 
 ### Contact
 
-- **Contact Name:** Eljo Prifti
+- **Contact Name:** MSc Eljo Prifti
 - **Contact Email:** elioprifti@gmail.com
 - **Website:** https://www.linkedin.com/in/elioprifti/
 
 ### Legal Structure
 
-- **Registered Address:** -
-- **Registered Legal Entity:** -
+- **Registered Address:**  We do not have any registered address
+- **Registered Legal Entity:** We do not have any registered legal entity
 
 ### Team's experience
 
-Hello, my name is Elio. I have a master's degree in computer science and I have more than 6 years experience as a professional software developer in Android/Java developer in the market. I have been deeply fascinated by blockchain and discovered Substrate. I have spent 1+ year learning Rust/Substrate.
+Hello, my name is Elio. I have a master's degree in computer science and I have more than 6 years experience as a professional software developer in Android/Java developer in the market. I have been deeply fascinated by blockchain and discovered Substrate. I have spent 1+ year learning/contributing to Rust/Substrate.
 I am a contributor to the Substrate recipes repo,  taking it upon myself to upgrading Substrate “Kitchen Node” Recipes from v1 to v2, which took 5-6 months working in my spare time.
 
 
@@ -68,16 +68,16 @@ The last months I have been curious about Substrate/Rust, and I am learning it o
 - https://github.com/JoshOrndorff/recipes/pull/471
 - https://github.com/herou/recipes
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-
+### Team Github
+- Eljo : https://github.com/herou
+- Gerti: https://github.com/gertt
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/elioprifti/
-- https://www.linkedin.com/in/gertiprifti/
+- MSc Eljo Prifti:  https://www.linkedin.com/in/elioprifti/
+- Ing Gerti Priftihttps://www.linkedin.com/in/gertiprifti/
 
-## Development Status :open_book:
+## Development Status
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
@@ -87,16 +87,16 @@ If you've already started implementing your project or it is part of a larger re
 
 ### Overview
 
-- **Total Estimated Duration:** 5 months
+- **Total Estimated Duration:** 3 months
 - Full-Time Equivalent (FTE): 1 FTE
-- **Costs:** $10,000 USDT
+- **Costs:** $9,000 USDT
 
 
-### Milestone 1 Example — Implement sign escrow functionality
+### Milestone 1 Example — Implement sign functionality
 
-- Estimated Duration: 1.6 month
+- Estimated Duration: 1 month
 - FTE: 1
-- Costs: $3,333 USDT
+- Costs: $3,000 USDT
 
 
 | Number | Deliverable | Specification                                                                                                                                              |
@@ -105,15 +105,15 @@ If you've already started implementing your project or it is part of a larger re
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can sign an Escrow contract with another user. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.          |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                              |
-| 0e. | Article | We will publish an **article** that explains how an Escrow contract can be created.                                                                        
+| 0e. | Article | We will publish an **article** that explains how an Escrow contract can be created and how can it be used.
 | 1. | Substrate module: sign_contract | We will create a Substrate module that will sign an Escrow contract between two users.                                                                     |
 
 
-### Milestone 2 Example — Implement send funds escrow functionality
+### Milestone 2 Example — Implement send funds functionality
 
-- Estimated Duration: 1.6 month
+- Estimated Duration: 1 month
 - FTE: 1
-- Costs: $3,333 USDT
+- Costs: $3,000 USDT
 
 
 | Number | Deliverable                      | Specification                                                                                                                                           |
@@ -122,14 +122,14 @@ If you've already started implementing your project or it is part of a larger re
 | 0b. | Documentation                    | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can send funds to the contributor/receiver. |
 | 0c. | Testing Guide                    | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.       |
 | 0d. | Docker                           | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                           |
-| 0e. | Article                          | We will publish an **article** that explains how an Escrow contract can be created.                                                                     
+| 0e. | Article                          | We will publish an **article** that explains how an Escrow contract can be created and how can it be used.                                                               
 | 1. | Substrate module: send_funds | We will create a Substrate module that will send funds to to the contributor/receiver                                                                                 |
 
-### Milestone 3 Example — Implement Withdraw funds escrow functionality
+### Milestone 3 Example — Implement Withdraw funds functionality
 
-- Estimated Duration: 1.6 month
+- Estimated Duration: 1 month
 - FTE: 1
-- Costs: $3,333 USDT
+- Costs: $3,000 USDT
 
 
 | Number | Deliverable                      | Specification                                                                                                                                     |
@@ -138,9 +138,8 @@ If you've already started implementing your project or it is part of a larger re
 | 0b. | Documentation                    | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the funds holders withdraw.                  |
 | 0c. | Testing Guide                    | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker                           | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                     |
-| 0e. | Article                          | We will publish an **article** that explains how an Escrow contract can be created.                                                               
+| 0e. | Article                          | We will publish an **article** that explains how an Escrow contract can be created and how can it be used.
 | 1. | Substrate module: withdraw_funds | We will create a Substrate module that will withdraw the funds if nothing was delivered.                                                          |
-...
 
 
 ## Future Plans
