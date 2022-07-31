@@ -249,11 +249,10 @@ For each milestone,
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can generate a Polkadot.JS wallet during on boarding, connect this wallet to our web application, mint and/or transfer NFTs from our marketplace to that DOT wallet, and create a blockchain timestamp “receipt” as proof of their data monetization. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish a Medium article that documents our migration to Polkadot, the functions we have enabled including: wallet sign-in, wallet creation option, Polkadot NFT marketplace and blockchain timestamp function available to all existing users as well as the entire DOT community. 
-| 1. | Substrate module: X | We will create a Substrate module that will allow users to create a “timestamp” on the DOT blockchain which serves as a “receipt” each time users answer questions and earn credits 
-| 2. | Substrate module: Y | We will create a Substrate module that will give users the option to create a Polkadot.JS wallet during the on-boarding process to our platform or later connect an existing wallet to their account 
-| 3. | Substrate module: Z | 
-| 4. | Substrate chain | Modules X & Y of our custom chain will interact in such a way to create a unique on-boarding experience for first time users to generate a DOT wallet [Y], connect their wallet once created [Y] and then screenshot their data contribution on-chain as a "receipt [X]
+| 0e. | Article | We will publish a Medium article that documents our migration to Polkadot and the initial features we enabled including: wallet sign-in, wallet creation option and survey ID save function available to all existing users as well as entire DOT community. 
+| 1. | Substrate module: X | We will create a Substrate module that will allow users to "timestamp” the completed survey ID on the DOT blockchain which serves as a “receipt” for their earning session [new pallet we will create and open source]
+| 2. | Substrate module: Y | We will create a Substrate module that gives users the option to create a Polkadot.JS wallet during the on-boarding process to our platform or later connect an existing wallet to their account [interface Account = {}, reference = https://github.com/polkadot-js/extension]
+| 4. | Substrate chain | Modules X & Y of our custom chain will interact in such a way to create a unique on-boarding experience for first time users to generate a DOT wallet [Y], connect their wallet once created [Y] and then save their survey ID on-chain as a "receipt [X]
 
 ### Milestone 2 Example — Additional features
 
@@ -267,11 +266,10 @@ For each milestone,
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can generate a Polkadot.JS wallet during on boarding, connect this wallet to our web application, mint and/or transfer NFTs from our marketplace to that DOT wallet, and create a blockchain timestamp “receipt” as proof of their data monetization. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish a Medium article that documents our migration to Polkadot, the functions we have enabled including: wallet sign-in, wallet creation option, Polkadot NFT marketplace and blockchain timestamp function available to all existing users as well as the entire DOT community. 
-| 1. | Substrate module: X | We will create a Substrate module that will allow users to purchase digital media from our NFT marketplace which we will implement on the Polkadot blockchain
-| 2. | Substrate module: Y | We will create a Substrate module that will allow users to mint and transfer digital media from our NFT marketplace which we will implement on the Polkadot blockchain
-| 3. | Substrate module: Z | 
-| 4. | Substrate chain | Modules X & Y of our custom chain will interact in such a way to allow general users to purchase media from our marketplace [X] and once the user has connected or created a DOT wallet, allow them to mint it to their wallet for true NFT ownership or transfer [Y]
+| 0e. | Article | We will publish a Medium article that documents our newly implemented DOT marketplace and how users can now create a Polkadot.JS wallet to mint and transfer media purchased in our marketplace. In addition, we will make a custom DOT-edition QSTIN NFT available for the first 100 DOT users. 
+| 1. | Substrate module: X | We will create a Substrate module that will allow users to mint digital media from our NFT marketplace which we will implement on the Polkadot blockchain [mint(AccountId, AssetInfo), reference = https://github.com/danforbes/pallet-nft]
+| 2. | Substrate module: Y | We will create a Substrate module that will allow users to transfer digital media from our NFT marketplace which we will implement on the Polkadot blockchain [transfer(AccountId, AssetId), reference = https://github.com/danforbes/pallet-nft)
+| 4. | Substrate chain | Modules X & Y of our custom chain will interact in such a way to allow general users to mint media from our marketplace [X] and once the user has connected or created a DOT wallet, trasnfer it to their preferred address for true NFT ownership [Y]
 
 ...
 
