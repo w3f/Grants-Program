@@ -50,7 +50,7 @@ For more information, please refer to the following resources:
 
 It is well-known that bugs in blockchain ecosystem can have catastrophic consequences. As it stands today, the security landscape within the Polkadot ecosystem is not as mature as other ecosystems such as Ethereum. This is due to insufficient security tooling infrastructure in the ecosystem. Currently, the Polkadot ecosystem does not have the static analysis, symbolic execution, and other security tooling products as other major blockchains. By building the static analysis tooling products for ink! contracts, the Polkadot security landscape is hardened by utilizing the expertise from the Veridise team.
 
-The target audience of the Vanguard analyzer are web3 developers who require a tool to ensure the robustness and security of their applications. Using the technical capabilities that Veridise provides, our project will meet the needs of the Polkadot community to harden their own ink! contracts away from commmon vulnerabilities such as DoS, ToD, Reentrancy, flashloan attack, etc.
+The target audience of the Vanguard analyzer are web3 developers who require a tool to ensure the robustness and security of their applications. Using the technical capabilities that Veridise provides, our project will meet the needs of the Polkadot community to harden their own ink! contracts away from commmon vulnerabilities such as DoS, ToD, Reentrancy, flashloan attack, and many others.
 
 To the best of our knowledge, there is no comprehensive security tooling product for ink! contracts. The best option that the developers have is to leverage Linting rules that are supported by ink! 3.0. It is well-known that linting rules can only handle local and shallow patterns and they are completely insufficient for expressing common but serious vulnerabilities such as flashloan and reentrancy attacks. The only similar one is the Slither tool for Solidity. However, Vanguard differs from the Slither project in multiple ways. First, Slither can only support Solidity. On the other hand, Vanguard is language-agnostic and can easily support different versions of ink! language. Second, according to the results from our recent research paper, by evaluating both tools on the entire smart contracts from Etherscan, Vanguard significantly outperforms Slither in terms of both false positives and false negatives. 
 
@@ -112,15 +112,15 @@ Before applying for the Web3 Foundation Grant, the Veridise team conducted the f
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:**  2 months
+- **Full-Time Equivalent (FTE):**  2 FTE
+- **Total Costs:** 30,000 USDC. 
 
 ### Milestone 1 — Implement Core Vanguard Framework
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
-- **Costs:** 15,000 USD
+- **Costs:** 15,000 USDC
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -129,10 +129,10 @@ Before applying for the Web3 Foundation Grant, the Veridise team conducted the f
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the high-level overview of Vanguard as part of the grant, followed by a set of extensive examples.
-| 1. | Basic infrastructure | We will build the basic infrastructure that is shared by all incoming detectors, including callgraph, alias analysis, etc.  |  
+| 1. | Basic infrastructure | We will build the basic infrastructure that is shared by all incoming detectors, including callgraph, alias analysis, and data-flow analysis.  |  
 | 2. | Taint analysis | Many detectors can be reduced to static taint analysis. We will implement it as part of the core analysis |  
 | 3. | Generic Vanguard API | Design and implement the generic API that will be extended by 3rd-party developers |  
-| 4. | Basic Detectors | Implement basic detectors based on the core framework, including transaction order dependency, DoS, etc. |  
+| 4. | Basic Detectors | Implement basic detectors based on the core framework, including transaction order dependency, DoS, and uninitialized storage variables. |  
 
 
 
@@ -140,7 +140,7 @@ Before applying for the Web3 Foundation Grant, the Veridise team conducted the f
 
 - **Estimated Duration:** 1 month
 - **FTE:**  2
-- **Costs:** 15,000 USD
+- **Costs:** 15,000 USDC
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -150,10 +150,9 @@ Before applying for the Web3 Foundation Grant, the Veridise team conducted the f
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | In our medium website, we will publish an **article** that explains the functionality and usage of those detectors using real-world examples from the Polkadot ecosystem.
 | 1. | Design unused-state detector | Unused-state variables can potentially increase the attack surface. We will implement a detector to identify unused-state variables   |  
-| 2. | Improve Reentrancy Detector | The previous reentrancy detector may not scale to large protocols with cross-function reentrancy. We will design and implement a scalable detctor based on modular analysis |  
-| 3. | Improve Flashloan Detector | The current flashloan detector only works for very specific situations. It relies on someone calling balanceOf and tracks the taint to a transfer. I think that we can come up with a more generic version of the flashloan detector. |  
-| 4. | Pay without Withdraw Detector | Add a detector that looks for contracts that will lock funds by having a payable function with no way of withdrawing the token.  | 
-
+| 2. | Improve Flashloan Detector | The current flashloan detector only works for very specific situations. It relies on someone calling balanceOf and tracks the taint to a transfer. I think that we can come up with a more generic version of the flashloan detector. |  
+| 3. | Pay without Withdraw Detector | Add a detector that looks for contracts that will lock funds by having a payable function with no way of withdrawing the token.  | 
+| 4. | Evaluation on ink! contracts | Coordinate with the Parity community to collect a curated list of ink! [contracts](https://github.com/paritytech/awesome-ink) that will be used to evaluate the effectiveness of Vanguard. |  
 
 
 
