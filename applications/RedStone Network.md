@@ -67,7 +67,7 @@ This project will be developed, deployed and run based on the Substrate framewor
 - Over 9 years of working experience in various aspects of computer programming.
 - Worked in the blockchain industry for 3+ years,  a blockchain development engineer, familiar with polkadot, bitshares, fabric, etc.
 - Hackathon winner as a team tech leader: Winners of Polkadot Hackathon 2022.
-github: https://github.com/baidang201
+- github: https://github.com/baidang201
 
 **yiwei Shi**  
 - Art and management background, worked for Hearst, MSN, responsible for market and product, more than one year of blockchain development experience, familiar with computer science, cryptography and different economic mechanisms, good at Go and Rust development。Hackathon winner as a team member: Winners of Polkadot Hackathon 2022
