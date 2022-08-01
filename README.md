@@ -285,7 +285,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
-- [Edgeware Grants and Bounties](https://github.com/edgeware-builders/construction-projects)
+- [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
 - [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
