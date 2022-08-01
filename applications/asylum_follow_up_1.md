@@ -54,7 +54,7 @@ Here are the main materials that describe our work:
 
 Here is also a diagram to have a quick overview of the standard:
 
-![img](https://gitlab.com/asylum-space/asylum-standards/-/raw/main/standards/asylum0.1/docs/img/asylum-entities-flow-diagram.png)
+![img](https://gitlab.com/asylum-space/imp/-/raw/50a8a1bd1ba8a90b833e4cca128736d25f3e9357/standards/metaverse-object-0.1/docs/img/metaverse-objects-entities-flow-diagram.png)
 
 2. DAO protocol
 
@@ -272,7 +272,7 @@ Library for integration of the Asylum ecosystem into the unity engine. Delivered
 
 Currently includes pallet that implements Metaverse object standard (now called "asylum-core") and pallet for game/spaces distribution ("asylum-game-distribution"). Delivered within our first grant application.
 
-5. [Metaverse object standard](https://gitlab.com/asylum-space/asylum-standards/-/blob/main/standards/asylum0.1/README.md)
+5. [Metaverse object standard](https://gitlab.com/asylum-space/imp)
 
 Now called "Asylum stadard", will be renamed in process of separation standards from Aslum to IMP. The basic version of the "Metaverse object standard" from IMP. Fully delivered within our first grant application.
 
@@ -369,7 +369,8 @@ Build of the 2d testing game with integration with Asylum node. Delivered within
 
 As was described in the 'Overview' section, Asylum is a big project which has ambitious plans for the future. The milestones described in this grant application are about to become the first step for building a huge ecosystem for the Metaverse.
 
-Here you could find Asylum roadmap - ![roadmap](https://i.ibb.co/KX4WDXS/2022-07-28-17-23-56.jpg)
+Here you could find Asylum roadmap </br>
+![roadmap](https://i.ibb.co/KX4WDXS/2022-07-28-17-23-56.jpg)
 
 **Materials**:
 
