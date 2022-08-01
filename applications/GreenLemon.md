@@ -8,9 +8,12 @@
 ## Project Overview :page_facing_up:
 
 [Proposal: Dual-Key Stealth Address Protocol](https://github.com/w3f/Grants-Program/pull/997)
+
 [Milestone Delivery: Dual-Key Stealth Address Protocol](https://github.com/w3f/Grant-Milestone-Delivery/pull/504)
 
 ### Overview
+
+Many of today’s blockchains, including Bitcoin and Ethereum, are open and public ledgers in the sense that there are no restrictions on participation and all transaction details are visible on the blockchain. In a public ledger, the transaction entities are only identified by their blockchain addresses, which are derived from the corresponding public keys. Public ledgers are generally considered to be “pseudo-anonymous”, which means that an address is linked to one person, but that person is unknown to the public. However, by analyzing the transaction graph and combining it with other information, it is possible to reveal the true real-world identity behind a blockchain address, as shown by recent research. 
 
 The Green Lemon protocol is an anonymous NFT solution for the Polkadot ecosystem based on zero-knowledge proof and dual-key stealth address protocol: users deposit DOT to an anonymous NFT contract and then anonymously send mint, transfer, and other ERC721 functions to that contract via relayer.
 
@@ -45,15 +48,13 @@ The protocol contains the following functions:
 
 ### Ecosystem Fit
 
-NFT sales exceeded $17 billion in 2021, a 25,00% increase over total sales in 2020. 2021, the year of NFT, also emerged in the context of the bull market cycle, the size of the NFT market showed an amazing growth trend, with a market capitalization of more than $10 billion. 
+NFT sales reached $17.7 billion in 2021, up from $82.5 million in 2020 — a jump of more than 200 times. Total NFT profits when reselling or buying also skyrocketed from $12 million in 2020 to $5.4 billion in 2021.
 
 Sotheby's - a renowned auction house with a history of nearly 300 years - generated $7.3 billion in sales in 2021, of which 10% was in private transactions. 
 
 This gives us confidence that anonymous trading, the act of buying and selling without revealing the identity of the trader, is just as strongly demanded in the NFT ecosystem. 
 
-Many of today’s blockchains, including Bitcoin and Ethereum, are open and public ledgers in the sense that there are no restrictions on participation and all transaction details are visible on the blockchain. In a public ledger, the transaction entities are only identified by their blockchain addresses, which are derived from the corresponding public keys. Public ledgers are generally considered to be “pseudo-anonymous”, which means that an address is linked to one person, but that person is unknown to the public. However, by analyzing the transaction graph and combining it with other information, it is possible to reveal the true real-world identity behind a blockchain address, as shown by recent research. 
-
-As the first anonymous NFT application of web3 Ecology, we believe Green Lemon will have a positive impact on Polkadot. Especially for those NFT users who are very sensitive to private data.
+As the first anonymous NFT application of web3 Ecology, we believe Green Lemon will have a positive impact on Polkadot. Users of NFT who value their privacy greatly will find it attractive.
 
 
 ## Team :busts_in_silhouette:
@@ -92,7 +93,7 @@ Rick
 
 ### Team's experience
 
-We have 10 years of experience in Internet research and development, focusing on the blockchain industry since 2018. We are deep participants in several technical communities, hackathon winners, and node service providers for EOS and Platon.
+We have 10 years of experience in Internet research and development, focusing on the blockchain industry since 2018. We are deep participants in several technical communities, hackathon winners, and node service providers for EOS and PlatON.
 
 ### Team Code Repos
 
@@ -126,7 +127,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | (ink!)Smart contracts: Anonymous NFT | [Milestone Delivery: Dual-Key Stealth Address Protocol] (https://github.com/w3f/Grant-Milestone-Delivery/pull/504) only implements mint, transfer, and burn. Based on the current version, we will continue to develop other ERC721 protocol methods and related test cases, such as Approval, ApprovalForAll, clear_approval, and set_approval_for_all. |  
+| 1. | (ink!)Smart contracts: Anonymous NFT | [Milestone Delivery: Dual-Key Stealth Address Protocol](https://github.com/w3f/Grant-Milestone-Delivery/pull/504) only implements mint, transfer, and burn. Based on the current version, we will continue to develop other ERC721 protocol methods and related test cases, such as Approval, ApprovalForAll, clear_approval, and set_approval_for_all. |  
 
 
 
