@@ -39,6 +39,8 @@ A PoC on the redirecting mechnisim is available [here](https://github.com/RoyTim
 
 - Encryption/Decryption: A few solutions avaliable: 1. allow encryption/decryption on Sr25519 key agreement. Drawback would be that the composed message would be hard to process outside the wallet. 2. Find a method to calculate a Curve25519 public key from a Sr25519 public key. We are not hardcore cryptographer and has no intention of implementing this ourselves. Looking for a more expertised answer to whether this is possible or if there is an implementation to it. Such conversion would greatly increase compatbility with popular Curve25519 based encryption softwares. 3. Worst case senario: ask users to register a Curve25519 public key on account creation. This is horrible but allow the encryption schema to be further compatible with other ECs like secp256k1. Would love to have a discussion on this. 
 
+- Request Handling: there will be two types of requests - local requests that should be resolved inside the Dapps and remote requests that need to be redirected to the wallet web app. For usual wallets, this is somewhat implicitly assumed (like Web3js and Metamask). However, for a website based wallets, these two types of requests need to be dramatically different to be handled to prevent constant website redirecting. Moreover, in lack of proper RPC between DApp and browser extensions, requests and response payloads are encoded in the URL with plaintext. Therefore, in response to all these differences, we will create a set of bytes precises encoding schema and segregated request handling strategies. The wallet app will only handle requests that require the usage of user's private keys and do no load the private key unless a password is authenticated. Check out PoC implementations here [Link](https://github.com/choko-wallet/sdk/blob/master/packages/request-handler/src/signMessage.ts). 
+
 Mockups:
 [![jYkTaT.png](https://s1.ax1x.com/2022/07/04/jYkTaT.png)](https://imgtu.com/i/jYkTaT)
 [![jYkLRJ.png](https://s1.ax1x.com/2022/07/04/jYkLRJ.png)](https://imgtu.com/i/jYkLRJ)
@@ -89,6 +91,25 @@ The project is mostly front-end work, except for the mechism for cross-browser t
 
 Moreover, the [Near Wallet](https://github.com/near/near-wallet) (an Apache2.0 or MIT licensed open source software) seem to be a good base of development for Choko Wallet. We will fork the repo and do a complete overhaul to better fit the needs of the Polkadot ecosystem. 
 
+> Update on August 2 
+> on Near Wallet: after a month long dig into the Near Wallet codebase, we recognize the following issues that prevent us to build upon the Near Wallet but instead, start a new codebase of the Web App from scratch: 
+> 1. Chaotic state management: the Near Wallet has very tangled state management for requests and responese. As it will be more efficient to build the underlying redux dataflow from scratch. 
+> 2. Different account system and different cryptographics: the NEAR blockchain uses Ed25519 for pretty much everything, while on Substrate, Sr25519 is used in default but there can be all kinds of cryptographic used in the Polkadot ecosystem. (i.e. Moonbeam). Moreover, NEAR is based on a human-readable fake AccountId that links to several cryptographic "keys" for accounts. These are factors that contribute to point 1 of why the Near wallet codebase has such a complicated Redux dataflow.
+> 3. Loose Encoding on URL: as we stated above on "Requst Handling", we will build a byte percise(and efficient) version of the encoding to be sent between Dapp and Wallet as Substrate extrinsics can be very long on cross-chain communicattions. 
+> 4. Decentralziation: lots of functionalities of Near wallet relies on a closed-source centralied helper service. We don't want that. 
+> 5. Extensibility: the network RPC is hardcoded into NEAR. Choko Wallets need to support a wide range of networks, while we will allow networks to customize their own request handling mechnisim, while have a set of functionalities by default. Such design will require weeks to peel off wallet logics away from the near codebase. 
+> 6. Security: the near wallet does not require a user input password to safeguard the seed phrase. This can be considered "kind of" secure because of the AccountId system of Near(i.e. Keys are ephermeral, while a human readable AccountId like "alex.near" is presistent). However, this is not applicable to the Polkadot ecosystem. To change so, we would also have to completely peel away the private key management logic from the near codebase. 
+> 7. Frontend Framework: we decided to go with Next+Tailwind+Redux+TypeScript combo with good lint/test/build pipeline for better maintainablity. And avoid the messy codebase as the Near Wallet. 
+
+[LINK `@choko-wallet/core`](https://github.com/choko-wallet/sdk/tree/master/packages/core/src) for all primitives to the wallet like cross-chain `DAppDescriptor`, cross-chain `UserAccount` that can be locked and typed with different cryptographic types etc. 
+
+[LINK `@choko-wallet/known-networks`](https://github.com/choko-wallet/sdk/tree/master/packages/known-networks/src) for a list of known-networks from `@polkadot/apps`; 
+
+[LINK `@choko-wallet/request-handler`](https://github.com/choko-wallet/sdk/tree/master/packages/request-handler/src) for a extendable request handling that are byte precise and efficient on payload encoding; 
+
+[LINK `@choko-wallet/sdk`](https://github.com/choko-wallet/sdk/tree/master/packages/sdk) for Dapps to integrate for account management in browsers and handle both local and remote requests; 
+
+`@choko-wallet/sdk-react` (To be made) to inject the SDK to React components for lifecycle management etc.
 ## Development Roadmap :nut_and_bolt:
 
 Mostly described above in the Overview section. 
@@ -107,14 +128,14 @@ Mostly described above in the Overview section.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a **live demo**. Documentation to SDK. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | A Dockerfile won't be much useful for a static web app. Therefore, we are not going to provide one for this milestone. |
 | 0e. | Article | We will publish an **article** that explains the concept of the Choko Wallet. More general-public-oriented version of what described in this application. |
-| 1. | Reactjs WebApp | Pages: import/create account (create 12 words seed phrase, encrypt with user-input password and store in browser localStorage, encrypted with cryptographic primitives from `@skyekiwi/crypto`,  make sure the user has writen down the seed by testing a randomly selected word i.e. ask user to input and validate word #7; import a seed phrase and encrypt with user-input password), sign message/transaction, a almost blank dashboard but allow switching between networks (support at least Polkadot, Kusama and SkyeKiwi Network) |
-| 2. | Network Adapter | One package in the SDK that establish configuration to connect to networks (i.e. RPC endpoints, color schema, customized types, chain specific grammar candy over PolkadotJs etc.) |
-| 3. | Simple SDK | wallet SDK for developers to connect to Choko Wallet from Dapps (connect wallet and request user address, request approve transactions, request approve singatures)  |  
+| 1. | Reactjs WebApp | import/create account (create 12 words seed phrase, encrypt with user-input password and store in browser localStorage, encrypted with cryptographic primitives from `@skyekiwi/crypto`,  make sure the user has writen down the seed by testing a randomly selected word i.e. ask user to input and validate word #7; import a seed phrase and encrypt with user-input password)<br/><br/> sign message/transaction<br/><br/> a almost blank dashboard but allow switching between networks (support all networks on `@choko-wallet/known-networks`) and connect to a customized network provider <br/><br/> setup-on-another-device(instruction and QR code generator), import from clear seed(a route to receive a *clear* encoded seed pharse via URL and import into wallet), create wallet page(option to send a URL with a *clear* seed phrase via email & warning banner when a wallet that had exposed a *clear* seed phrase has more than $50 on the selected network) |
+| 2. | A Sample DApp | A sample DApp created with `@choko-wallet/sdk` to test with common functionalities. |
+| 3. | SDK | For `@choko-wallet/known-networks` will include a few popular Polkadot chains, `@choko-wallet/request-handler` will implements handler for "request for user public identity", "request to sign transaction", "request to sign message", "request to decrypt/encrypt message" (Note: encryption/decryption won't be a solution yet, see discussion above for details). | 
  
 
 ### Milestone 2 
@@ -125,12 +146,12 @@ Mostly described above in the Overview section.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a **live demo**. Documentation to SDK.|
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | A Dockerfile won't be much useful for a static web app. Therefore, we are not going to provide one for this milestone. |
 | 0e. | Article | We will publish two **article** that explains 1. Dapp developers, how to get started and why to get started with Choko Wallet 2. How to create LinkDrop and rational behind it. |
-| 1. | Reactjs WebApp | Pages: dashboard (display balance, send tokens), setup-on-another-device(instruction and QR code generator), import from clear seed(a route to receive a *clear* encoded seed pharse via URL and import into wallet), create wallet page(option to send a URL with a *clear* seed phrase via email & warning banner when a wallet that had exposed a *clear* seed phrase has more than $50 on the selected network) |
+| 1. | Reactjs WebApp | dashboard (display balance, send tokens), stake tokens on selected networks. An alternative dashboard to list assets across multiple parachains and relay chains. A built-in Dapp to teleport assets between parachains (i.e. Support for only DOT and KSM) |
 | 2. | Linkdrop Pallet | A substrate pallet that enable anyone to create a linkdrop vault with X number of Y maximum recepients. The developer will create a batch of Y authorization code by `encode( signMessage(vaultId, receipientIndex) )` and distribute the authorization code to seed users. The pallet will then accept a rate limited 0 weight transaction that validate the authorization code and make transfers. |
 | 3. | Linkdrop in Web App | Web App interface to create and claim LinkDrops |
 
@@ -144,12 +165,10 @@ Mostly described above in the Overview section.
 
 - Ledger support - for serious crypto users, while preserving the easy to use nature of the wallet. 
 
-- Biometric support - encrypt the seed phrases with FaceId/TouchId etc. Not sure if it is possible for browsers. 
+- Biometric support - encrypt the seed phrases with FaceId/TouchId etc with WebAuthn standard. 
 
 - Port as mobile Apps - biometrics authentication will sure be there and security will be greatly enhanced. 
 
 - More face-to-face events features - i.e. genrate printable QR codes for Linkdrops to be distributed at event venues; location based events check-ins. Scan and validate tickets (as NFTs) at event venues. 
 
 - Integrate social-recovery-pallet for an easy recovery process. 
-
-
