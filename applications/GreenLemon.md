@@ -116,7 +116,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Full-Time Equivalent (FTE):**  2
 - **Total Costs:** 30,000 USD
 
-### Milestone 1 Example — Implement anonymous NFT based on ERC721
+### Milestone 1 — Implement anonymous NFT based on ERC721
 
 - **Estimated duration:** 3 weeks
 - **FTE:**  2
@@ -131,7 +131,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 
 
-### Milestone 2 Example — Implement anonymous transaction
+### Milestone 2 — Implement anonymous transaction
 
 - **Estimated Duration:** 9 weeks
 - **FTE:**  2
