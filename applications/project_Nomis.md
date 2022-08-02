@@ -67,8 +67,7 @@ https://github.com/fc-ha/Nomis.ETH
 
 ### Team LinkedIn Profiles (if available)
 
-[Alex Barabash, CEO](https://cz.linkedin.com/in/alexander-barabash/ru?trk=people-guest_people_search-card)
-[Arty Shatilov, CPO](https://www.linkedin.com/in/artemshatilov/)
+[Alex Barabash, CEO](https://cz.linkedin.com/in/alexander-barabash/ru?trk=people-guest_people_search-card)<br />[Arty Shatilov, CPO](https://www.linkedin.com/in/artemshatilov/)
 
 ## Development Status :open_book:
 
@@ -79,30 +78,53 @@ We are at the MVP stage now. The previous steps are (1) initial documentation an
 ### Overview
 
 - **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):** 10
+- **Full-Time Equivalent (FTE):** 4
 - **Total Costs:** $50,000
 
-### Milestone 1: Data extraction from the protocol; Basic attribute calculation (on-chain data and transaction history)
-Deliverables:
-  - Code for attribute extraction
-  - Landing with calculated attributes
-Deadline: 09/01/2022
-Cost: $15,000
+### Milestone 1 — Data extraction from the Protocol and Basic attribute calculation (on-chain data and transaction history)
+- **Total Estimated Duration:** 1 month
+- **Full-Time Equivalent (FTE):** 4
+- **Total Costs:** $15,000
 
-### Milestone 2: Credit score calculation via Nomis' AI-algorithm; Web3 login connection to boost UX
-Deliverables:
-  - Code for credit score calculation
-  - Web-wallet integration
-Deadline: 10/01/2022
-Cost: $15,000
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide documentation which will describe each input. |
+| 0c. | Testing Guide | One can verify her wallet’s inputs by inserting wallet address on the landing page. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Inputs preparation (extraction + basic calculation) | We will extract both wallet data and wallet transactions using the explorer API:<br />- WalletAge = time since the first transaction;<br />- TotalTransactions = number of transactions;<br />- MinTransactionTime = minimum interval between transactions;<br />– MaxTransactionTime = maximum interval between transactions;<br />- AverageTransactionTime = average interval between transactions;<br />- WalletTurnover = total volume of all the transactions;<br />- LastMonthTransactions = number of transactions in the previous month;<br />- TimeFromLastTransaction = time since the last transaction. |  
+| 2. | Landing page with calculated attributes | We will combine all the data extracted from the protocol on a landing page. One can see her on-chain inputs by inserting wallet address here. |  
 
-### Milestone 3: API & documentation development
-Deliverables:
-  - API for credit score calculation
-  - Documentation for using API
-  - Personal area to API stats
-Deadline: 11/01/2022
-Cost: $20,000
+
+### Milestone 2 — Credit score calculation via Nomis' AI-algorithm; Web3 login connection to boost UX
+- **Total Estimated Duration:** 1 month
+- **Full-Time Equivalent (FTE):** 4
+- **Total Costs:** $15,000
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | MIT |
+| 0b. | Documentation | One can easily check the parameters and their values which are used to calculate their Nomis score on [the page like that](https://nomis.cc). Moreover, we will provide documentation which will describe how the model works. |
+| 0c. | Testing Guide | One can verify her wallet’s score by inserting wallet address on the landing page. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Code for credit score calculation | To develop the on-chain Nomis score we will hire mathematical methods (neural networks and regression models) to build a custom mathematical model for the data extracted. <br />*Top blockchains have sufficient differences in their APIs. Moreover, every blockchain has its own data structure and data sets available to extract, so we should develop a data extraction solution as well as mathematical model from scratch for every chain. |  
+| 2. | Web3 UI | We will develop UI so it will be easy for end-users to connect wallets and check their Nomis scores. |  
+
+
+### Milestone 3 — API & documentation development
+- **Total Estimated Duration:** 1 month
+- **Full-Time Equivalent (FTE):** 4
+- **Total Costs:** $20,000
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide documentation which will describe how to use API. |
+| 0c. | Testing Guide | We will publish Swagger UI. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article that explains how (1) DeFi developers may use Nomis score API, (2) chain-users may get their Nomis score. |
+| 1. | API for credit score calculation | We will develop API for DeFi developers —everyone will be able to build dApps on-top of Nomis score and create highly customized lending/borrowing offers for end-users on a case-by-case basis. | 
+
 
 ## Future Plans
 
