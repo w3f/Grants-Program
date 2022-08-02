@@ -54,7 +54,7 @@ Here are the main materials that describe our work:
 
 Here is also a diagram to have a quick overview of the standard:
 
-![img](https://gitlab.com/asylum-space/asylum-standards/-/raw/main/standards/asylum0.1/docs/img/asylum-entities-flow-diagram.png)
+![img](https://gitlab.com/asylum-space/imp/-/raw/50a8a1bd1ba8a90b833e4cca128736d25f3e9357/standards/metaverse-object-0.1/docs/img/metaverse-objects-entities-flow-diagram.png)
 
 2. DAO protocol
 
@@ -256,7 +256,7 @@ Members:
 
 Current status of the Asylum development - finalization of the PoC. Mainly previous work were delivered within our [first grant application](https://github.com/w3f/Grants-Program/blob/master/applications/asylum.md)
 
-1. Creator studion - [link](https://gitlab.com/asylum-space/asylum-ui/-/blob/main/packages/game-developers-console/)
+1. Creator studio - [link](https://gitlab.com/asylum-space/asylum-ui/-/blob/main/packages/game-developers-console/)
 
 Web application for NFT artists and game/space developers. Delivered within our first grant application. Now goining throught redesign stage.
 
@@ -272,7 +272,7 @@ Library for integration of the Asylum ecosystem into the unity engine. Delivered
 
 Currently includes pallet that implements Metaverse object standard (now called "asylum-core") and pallet for game/spaces distribution ("asylum-game-distribution"). Delivered within our first grant application.
 
-5. [Metaverse object standard](https://gitlab.com/asylum-space/asylum-standards/-/blob/main/standards/asylum0.1/README.md)
+5. [Metaverse object standard](https://gitlab.com/asylum-space/imp)
 
 Now called "Asylum stadard", will be renamed in process of separation standards from Aslum to IMP. The basic version of the "Metaverse object standard" from IMP. Fully delivered within our first grant application.
 
@@ -355,21 +355,24 @@ Build of the 2d testing game with integration with Asylum node. Delivered within
 - **FTE:** 3
 - **Costs:** 19,200 USD
 
-| Number | Deliverable         | Specification                                                                                                                                      |
-| ------ | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0a.    | License             | MIT                                                                                                                                                |
-| 0b.    | Documentation       | We’ll improve documentation, combining all distinct parts in one place, organize it with existing documentation tools and make it public available |
-| 0c.    | Testing Guide       | Guide for Players WebApp, where we’ll describe how user can configure wallet and achieve tokens to enter Asylum platform                           |
-| 0d.    | Docker              | -                                                                                                                                                  |
-| 0e.    | Article             | -                                                                                                                                                  |
-| 1.     | Test-net deployment | We’ll deploy Asylum pallets on testnet, introduce basic gaming back-end and apply anti-cheating measures                                           |
-| 2.     | Players WebApp      | We’ll implement WebApp for players, where user can see and manage his obtained NFTs                                                                |
+| Number | Deliverable                            | Specification                                                                                                                                                                                                                                                          |
+| ------ | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0a.    | License                                | MIT                                                                                                                                                                                                                                                                    |
+| 0b.    | Documentation                          | We’ll improve documentation, combining all distinct parts in one place, organize it with existing documentation tools and make it public available                                                                                                                     |
+| 0c.    | Testing Guide                          | Guide for Players WebApp, where we’ll describe how user can configure wallet and achieve tokens to enter Asylum platform                                                                                                                                               |
+| 0d.    | Docker                                 | -                                                                                                                                                                                                                                                                      |
+| 0e.    | Article                                | -                                                                                                                                                                                                                                                                      |
+| 1.     | Gaming back-end with anti-cheat system | To provide real experience of the deploying bc-based game we will implement a basic back-end that will be responsible for items minting, with a help of anti-cheat system.                                                                                             |
+| 1.1    | Game back-end example                  | We will implement back-end for delivered games (milestone 2 and 3) that will track user actions and make decision about items minting. In the future this back-end is planned to be deployed on TEE (as L2 solution), to make it secure and potentially decentralized. |
+| 1.2    | Extension of Unity SDK                 | We will extend our Unity SDK to have ability to work with delivered backend.                                                                                                                                                                                           |
+| 2.     | Players WebApp                         | We’ll implement WebApp for players, where user can run games and see/manage his obtained NFTs. Application will be based on Creator studio app (previously - Game Developers Console, delivered in milestone 1) but with adapted functionality for Players.            |
 
 ## Future Plans
 
 As was described in the 'Overview' section, Asylum is a big project which has ambitious plans for the future. The milestones described in this grant application are about to become the first step for building a huge ecosystem for the Metaverse.
 
-Here you could find Asylum roadmap - ![roadmap](https://i.ibb.co/KX4WDXS/2022-07-28-17-23-56.jpg)
+Here you could find Asylum roadmap </br>
+![roadmap](https://i.ibb.co/KX4WDXS/2022-07-28-17-23-56.jpg)
 
 **Materials**:
 
