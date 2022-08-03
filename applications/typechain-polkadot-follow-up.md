@@ -190,7 +190,7 @@ We have decided to describe a full roadmap of an Typechain here, with estimates.
 #### Milestone 3 - Optimization. Improve type system of the generated code.
 
 * **Estimated duration:** 7 weeks
-* **FTE:**  2
+* **FTE:**  2.5
 * **Costs:** 52,500 USD
 
 | Number | Deliverable | Specification |
