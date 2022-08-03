@@ -81,7 +81,7 @@ Lohann have a deep understanding of Polkadot/Substrate stack amongst other block
 
 **Leonardo Custodio**
 
-Leonardo has being working with Polkadot/Substrate stack for the 14 months. At his current position he makes SDKs that allows game developers to work easily with substrate based chain. Before that he was the Lead Mobile Developer of Inovatso where he has created multiple applications for the general public like picPics and other entreprise applications using Flutter.
+Leonardo has being working with Polkadot/Substrate stack for the past 14 months. At his current position he makes SDKs that allows game developers to work easily with substrate based chain. Before that he was the Lead Mobile Developer of Inovatso where he has created multiple applications for the general public like picPics and other entreprise applications using Flutter.
 
 **Fábio Binder**
 
