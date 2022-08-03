@@ -148,7 +148,7 @@ Described above.
 
 ### Milestone 1 — 
 
-- **Estimated duration:** 4 month.
+- **Estimated duration:** 4 months.
 - **FTE:**  4.
 - **Costs:** 
 
@@ -181,7 +181,7 @@ Described above.
 
 ### Milestone 3 — 
 
-- **Estimated duration:** 2 month.
+- **Estimated duration:** 2 months.
 - **FTE:**  4.
 - **Costs:** 
 
