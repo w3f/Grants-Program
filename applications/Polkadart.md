@@ -3,7 +3,7 @@
 - **Project Name:** Polkadart
 - **Team Name:** JURIMETRIC TECNOLOGIA LTDA
 - **Payment Address:** 12kizkmmQzRFR5o6BQ5Kufo77RPT787eaFynswQoi42vv2Da (DOT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**
 
 ## Project Overview :page_facing_up:
 
@@ -128,77 +128,74 @@ Gabriel is currently working as a mobile and backend developer at Hype Empreendi
 
 ## Development Status :open_book:
 
-https://github.com/rankanizer/polkadart
+Out of the necessity of having a a library / sdk to use substrate chains in our other planned apps. We will start the development of Polkadart in the Grant's program. The repository that will be used during the development is https://github.com/rankanizer/polkadart. We intend to have it open-source since the beginning and all code will be added through pull-requests.
+
+We decided to divide this project into three milestones. The first one is building the codec and metadata part. Since without this all data would have to be mocked and tested using third-party tools as everything is encoded in the substrate eco-system.
+
+After we are able to encode/decode data from primitive types and metadata's of any chain. We are going to proceed with the connectivity part. Where we will implement the interfaces necessary for communicating with the nodes through RPC.
+
+Finally the last step will be the crypto and utils part where we will have the utilities necessary for signing transactions. After these three milestones are completed we shall have a fully featured library that will enable people in the Dart/Flutter ecosystem to communicate with any substrate based node, sign transactions, encode and decode data. Making it possible for example for people to develop flutter applications for Polkadot using native libraries.
 
 ## Development Roadmap :nut_and_bolt:
 
-https://polkadot.js.org/docs/api/start
+Described above.
 
 ## Overview
 
-- **Total Estimated Duration:** 4 months.
+- **Total Estimated Duration:** 7 months.
 - **Full-Time Equivalent (FTE):** 4.
-- **Total Costs:** USD$30.000,00.
+- **Total Costs:** 
 
 ### Milestone 1 — 
 
-- **Estimated duration:** 1 month.
+- **Estimated duration:** 4 month.
 - **FTE:**  4.
-- **Costs:** 7,500 USD.
+- **Costs:** 
 
 |Number|Deliverable|    Specification                   |
 |:---: |  ---      |             ---                    |
-| 1a.  | License   | Apache 2.0                         |
-| 1b.  | Types     | Porting @polkadot-js/types.        |
-| 1c.  | Codec     | Porting @polkadot-js/types-codec   |
-| 1d.  | Known     | Porting @polkadot-js/types-known   |
-| 1e.  | Support   | Porting @polkadot-js/types-support |
-| 1f.  | Create    | Porting @polkadot-js/types-create  |
-| 1g.  | Tests     | Unit tests for deliverables above  |
+| 0a.  | License       | Apache 2.0                         |
+| 0b.  | Documentation | We will provide markdown documentation of how to install and use the API. |
+| 0c.  | Testing Guide | We will provide sample scripts on how to use it. |
+| 0d.  | Docker        | We will provide a Dockerfile(s) that can be used to test the PoC. |
+| 1a.   | Scale Codec  | First we will port the functionalities of scale codec to Dart. This way developers can decode and encode data from substrate. |
+| 1b.  | Metadata      | Then we will add the metadata parser so it can decode/encode the data by looking at the metadata. Important to note that we do not inteed to support legacy versions |
+| 1c.  | Tests         | Unit tests for deliverables above  |
 
 
 ### Milestone 2 — 
 
 - **Estimated duration:** 1 month.
 - **FTE:**  4.
-- **Costs:** 7,500 USD.
+- **Costs:**
 
 |Number|Deliverable|    Specification                   |
 |:---: |  ---      |             ---                    |
-| 2a.  | Augment   | Porting @polkadot-js/types-augment |
-| 2b.  | Core      | Porting @polkadot-js/rpc-core      |
-| 2c.  | Provider  | Porting @polkadot-js/rpc-provider  |
-| 2d.  | Augment   |  Porting @polkadot-js/rpc-augment  |
+| 0a.  | License       | Apache 2.0                         |
+| 0b.  | Documentation | We will provide markdown documentation of how to install and use the API. |
+| 0c.  | Testing Guide | We will provide sample scripts on how to use it. |
+| 0d.  | Docker        | We will provide a Dockerfile(s) that can be used to test the PoC. |
+| 2a.  | RPC        | We will create the interfaces to use and connect to the node through RPC. |
+| 2b.  | Websockets | We will add websockets support to the above. |
 | 2e.  | Tests     | Unit tests for deliverables above  |
 
 ### Milestone 3 — 
 
-- **Estimated duration:** 1 month.
+- **Estimated duration:** 2 month.
 - **FTE:**  4.
-- **Costs:** 7,500 USD.
+- **Costs:** 
 
 |Number|Deliverable|    Specification                   |
 |:---: |  ---      |             ---                    |
-| 3a.  | Base      | Porting @polkadot-js/api-base.     |
-| 3b.  | Derive    | Porting @polkadot-js/api-derive.   |
-| 3c.  | Contract  | Porting @polkadot-js/api-contract  |
-| 3d.  | Api       | Porting @polkadot-js/api           |
+| 0a.  | License       | Apache 2.0                         |
+| 0b.  | Documentation | We will provide markdown documentation of how to install and use the API. |
+| 0c.  | Testing Guide | We will provide sample scripts on how to use it. |
+| 0d.  | Docker        | We will provide a Dockerfile(s) that can be used to test the PoC. |
+| 0e.  | Article/Workshop | We will publish an example flutter project using the library to explain what was done and how to use it. |
+| 3a.  | Keyring      | We will port the keyring management     |
+| 3d.  | Crypto       | We will add the utilities needed for signing transactions |
 | 3e.  | Tests     | Unit tests for deliverables above  |
 | 3f.  | Pub.dev   | Publish to pub.dev for V1.0.0      |
-
-### Milestone 4 — 
-
-- **Estimated duration:** 1 month.
-- **FTE:**  4.
-- **Costs:** 7,500 USD.
-
-|Number|Deliverable       |    Specification                                                                                         |
-|:---: |  ---             |             :---                                                                                         |
-| 4a.  | Tests            | Integration tests for all milestones                                                                     |
-| 4b.  | Documentations   | Documentations for all packages                                                                          |
-| 4c.  | Pub.dev          | Publish to pub.dev for V1.0.0                                                                            |
-| 4d.  | Article/Workshop | We will publish an example flutter project using the library to explain what was done and how to use it. |
-
 
 ## Future Plans
 
