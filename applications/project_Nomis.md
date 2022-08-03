@@ -81,7 +81,7 @@ We are at the MVP stage now. The previous steps are (1) initial documentation an
 - **Full-Time Equivalent (FTE):** 4
 - **Total Costs:** $50,000
 
-### Milestone 1 — Data extraction from the Protocol and Basic attribute calculation (on-chain data and transaction history)
+### Milestone 1 — On-chain data and transaction history extraction from Polkadot (via API) and basic attribute calculation
 - **Total Estimated Duration:** 1 month
 - **Full-Time Equivalent (FTE):** 4
 - **Total Costs:** $15,000
@@ -111,7 +111,7 @@ We are at the MVP stage now. The previous steps are (1) initial documentation an
 | 2. | Web3 UI | We will develop UI so it will be easy for end-users to connect wallets and check their Nomis scores. |  
 
 
-### Milestone 3 — API & documentation development
+### Milestone 3 — Nomis API & documentation development
 - **Total Estimated Duration:** 1 month
 - **Full-Time Equivalent (FTE):** 4
 - **Total Costs:** $20,000
