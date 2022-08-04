@@ -127,6 +127,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Article | We will publish **article & demo video** that explains How is anonymous NFT contract hidden owner works based on dual-key stealth address protocol.
 | 1. | (ink!)Smart contracts: Anonymous NFT | [Milestone Delivery: Dual-Key Stealth Address Protocol](https://github.com/w3f/Grant-Milestone-Delivery/pull/504) only implements mint, transfer, and burn. Based on the current version, we will continue to develop other ERC721 protocol methods and related test cases, such as Approval, ApprovalForAll, clear_approval, and set_approval_for_all. |  
 
 
@@ -142,7 +143,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | (ink!)Smart contracts: Anonymous NFT | Development and testing of the core functions of the Anonymous NFT smart contract, including deposit/withdraw DOT from the contract, sending the transaction to the NFT contract through the relayer, and paying the transaction fee to the relayer on-chain. As mentioned above, anonymous transactions are based on zero-knowledge proof.|  
+| 0d. | Article | We will publish **article & demo video** that explain How is anonymous NFT solution works based on zero-knowledge proof.
+| 1. | (ink!)Smart contracts: Anonymous NFT | Development and testing of the core functions of the Anonymous NFT smart contract, including deposit/withdraw DOT from the contract, sending the transaction to the NFT contract through the relayer, and paying the transaction fee to the relayer on-chain. As mentioned above, anonymous transactions are based on zero-knowledge proof.|
+| 2. | (Node.js)Relayer service | Development and testing of the relayer service. As mentioned above, All user transactions are sent by the relayer service, and users need to transfer token to the relayer based on zero-knowledge proof.|
 
 
 
