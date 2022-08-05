@@ -35,7 +35,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [ISO_8583.md](./open/ISO_8583.md) | :yellow_circle: | 31.05.2022 | 
 | [ksm-tipping-button.md](./implemented/ksm-tipping-button.md) | :red_circle: | 20.07.2021 |  
 | [mixer.md](./under_development/mixer.md) | :yellow_circle: | 05.07.2021 | 
-| [multi-chain-block-explorer.md](./open/multi-chain-block-explorer.md) | :red_circle: | 23.11.2021 | 
+| [multi-chain-block-explorer.md](./open/multi-chain-block-explorer.md) | :yellow_circle: | 23.11.2021 | 
 | [on-chain-quadratic-funding.md](./implemented/on-chain-quadratic-funding.md) | :red_circle: | 29.03.2022 |  
 | [php-api.md](./implemented/php-api.md) | :red_circle: | 27.05.2022 |  
 | [php-scale.md](./implemented/php-scale.md) | :red_circle: | 23.11.2022 |  
