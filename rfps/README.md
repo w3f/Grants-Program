@@ -32,10 +32,10 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [implementation-benchmarking.md](./open/implementation-benchmarking.md) | :green_circle: | 20.07.2021 | 
 | [ink!_smart_contract_block_explorer.md](./under_development/ink!_smart_contract_block_explorer.md) | :yellow_circle: | 05.07.2021 | 
 | [ISO_20022.md](./open/ISO_20022.md) | :green_circle: | 31.05.2022 | 
-| [ISO_8583.md](./open/ISO_8583.md) | :green_circle: | 31.05.2022 | 
+| [ISO_8583.md](./open/ISO_8583.md) | :yellow_circle: | 31.05.2022 | 
 | [ksm-tipping-button.md](./implemented/ksm-tipping-button.md) | :red_circle: | 20.07.2021 |  
 | [mixer.md](./under_development/mixer.md) | :yellow_circle: | 05.07.2021 | 
-| [multi-chain-block-explorer.md](./open/multi-chain-block-explorer.md) | :green_circle: | 23.11.2021 | 
+| [multi-chain-block-explorer.md](./open/multi-chain-block-explorer.md) | :yellow_circle: | 23.11.2021 | 
 | [on-chain-quadratic-funding.md](./implemented/on-chain-quadratic-funding.md) | :red_circle: | 29.03.2022 |  
 | [php-api.md](./implemented/php-api.md) | :red_circle: | 27.05.2022 |  
 | [php-scale.md](./implemented/php-scale.md) | :red_circle: | 23.11.2022 |  
