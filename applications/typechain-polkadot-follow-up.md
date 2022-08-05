@@ -185,7 +185,7 @@ We have decided to describe a full roadmap of an Typechain here, with estimates.
 | 2 | Parser & generators modules | Design and implement a new parser module for ABI JSON to work with different versions of the ABI. Parser's output structure serves as an input for generators. Refactor, replace inlne generation with parser to generator flow. |
 | 3 | Contract deployment | Support of parsing `*.contract` files. Provide means for contract deployment. |
 | 4 | Testing | Full coverage of PSP22 contract with integration tests. Both for contract usage and deployment. We will be testing arguments' & return values' types correctness. |
-
+| 5 | Article | We will publish an article that explains features of Typechain, how to use it in projects|
 
 #### Milestone 3 - Optimization. Improve type system of the generated code.
 
@@ -203,6 +203,7 @@ We have decided to describe a full roadmap of an Typechain here, with estimates.
 | 4      | IDE hints | Prepare generated code to have more informattive IDE hints, based on both JSDoc and output typesystem itself (if needed). Rely on usage experience in doing so. |
 | 5      | NPM Package | Translate package's code to JavaScript upon deployment. Provide informattive CLI, when needed. Make sure to have a cross-platform CLI support. |
 | 6      | Typechain-compiler | Tool that will be easy-to-use for big projects to compile Rust code and then generate typechain definitions. |
+| 7 | Article | We will publish an article that explains how to connect it to the project, describe the types of connection options (directly and through the compiler) |
 
 
 ## Future work
