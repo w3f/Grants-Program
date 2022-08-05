@@ -527,3 +527,4 @@
 | [LimeChain](https://limechain.tech/) | Research feasibility for a Go Runtime | [GitHub](https://github.com/LimeChain) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Jim Yam](https://github.com/JimYam) | daos | [GitHub](https://github.com/daos-org/daos.git) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Green Lemon](https://github.com/GreenLemonProtocol) | Green Lemon Protocol | [GitHub](https://github.com/GreenLemonProtocol) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Stardust Labs Inc.](https://stardust.finance/) | Integrating ISO-8583 | [GitHub](https://github.com/adit313/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
