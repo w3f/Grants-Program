@@ -93,7 +93,7 @@ We would like to add this pallet to the Subtrate recipes repo.
 - **Costs:** $9,000 USDT
 
 
-### Milestone 1 Example — Implement sign functionality
+### Milestone 1 — Implement sign functionality
 
 - Estimated Duration: 1 month
 - FTE: 1
@@ -111,7 +111,7 @@ We would like to add this pallet to the Subtrate recipes repo.
 |     1. | Substrate module: sign_contract | We will create a Substrate module that will sign an Escrow contract between two users.                                                                     |
 
 
-### Milestone 2 Example — Implement send funds functionality
+### Milestone 2 — Implement send funds functionality
 
 - Estimated Duration: 1 month
 - FTE: 1
@@ -128,7 +128,7 @@ We would like to add this pallet to the Subtrate recipes repo.
 |    0f. | Benchmarking                      | Benchmarking will be provided for send_funds.
 |     1. | Substrate module: send_funds      | We will create a Substrate module that will send funds to to the contributor/receiver                                                                                 |
 
-### Milestone 3 Example — Implement Withdraw funds functionality
+### Milestone 3 — Implement Withdraw funds functionality
 
 - Estimated Duration: 1 month
 - FTE: 1
