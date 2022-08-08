@@ -12,8 +12,6 @@
 
 If this application is in response to an RFP, please indicate this on the first line of this section.
 
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
-
 ### Overview
 
 **What is the Me Protocol?**
@@ -48,9 +46,9 @@ d.What do we do about tokens on different blockchains?
 **Why are we motivated to build in the Substrate/Polkadot/Kusama ecosystem?**
 We like the ecosystem for several reasons:
 
-We share the same philosophy of interoperability.
-Our exchange functionality utilizes the concept of decentralized exchanges but engineered for loyalty rewards, leveraging Polkadot's ecosystem for cross-chain operations.
-As we continue to develop our protocol, it should integrate with other related protocols and be used by other applications without being constrained to one network.
+- We share the same philosophy of interoperability.
+- Our exchange functionality utilizes the concept of decentralized exchanges but engineered for loyalty rewards, leveraging Polkadot's ecosystem for cross-chain operations.
+- As we continue to develop our protocol, it should integrate with other related protocols and be used by other applications without being constrained to one network.
 
 
 **Why are we interested in creating this project?**
@@ -58,20 +56,10 @@ We are interested in creating this project because it solves one of the biggest 
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+- Figma Flow: Process flow: https://www.figma.com/file/6eTKTZZffsceFQPEXpyzjl/My-AI-Partner-Onboarding?node-id=0%3A1
+- Tech Stack: RUST, Solidity, TypeSript, React, Nest, PostgreSQL e.t.c 
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
 
 ### Ecosystem Fit
 
@@ -80,13 +68,15 @@ In as much as we can generalize, our project fits somewhere in the middle of Soc
 
  **Target Audience**
 We hope the project attracts dapp and other developers to build integrations and participate in the further development of the protocol.
-The protocol will integrate with our marketplace so the target audience for that includes everyday consumers and brands/businesses seeking to transition to blockchain-based loyalty programs
-Web3-based projects with utility/reward tokens, social protocols, etc. that want to increase the value of their rewards.
+- The protocol will integrate with our marketplace so the target audience for that includes everyday consumers and brands/businesses seeking to transition to blockchain-based loyalty programs
+
+-  Web3-based projects with utility/reward tokens, social protocols, etc. that want to increase the value of their rewards.
 
 **Needs that we meet**
 In addition to those covered in the above sections:
-Web3-based applications with utility tokens/rewards are in need of a way to extend out the value of these rewards beyond saying they are listed on an exchange or that they can be used for gas and a few other redemption options. Our protocol and the apps built around it will provide unlimited redemption options, thus increasing reward value for innumerable Web3 projects.
-Example: social protocols, leveraging blockchain to facilitate human interaction, can also leverage the Me protocol to boost engagement and provide real value to current and prospective users.
+- Web3-based applications with utility tokens/rewards are in need of a way to extend out the value of these rewards beyond saying they are listed on an exchange or that they can be used for gas and a few other redemption options. Our protocol and the apps built around it will provide unlimited redemption options, thus increasing reward value for innumerable Web3 projects.
+
+-  Example: social protocols, leveraging blockchain to facilitate human interaction, can also leverage the Me protocol to boost engagement and provide real value to current and prospective users.
 
  **Similar projects in the  Substrate / Polkadot / Kusama ecosystem?**
 A similar project on the DEFI side is Stellaswap (https://stellaswap.com/) and on the loyalty program side is Project Venkmann https://www.venkmanholdings.com/
@@ -101,10 +91,10 @@ A similar project on the DEFI side is Stellaswap (https://stellaswap.com/) and o
 
 ### Team members
 
-- Name of team leader
+ **Name of team leader**
   Robert Wesley (CEO)
   
-- Names of team members
+ **Names of team members:**
    Robert Wesley (CEO)
    Paul Oamen (CTO)
    Pius Onobhayedo
@@ -121,7 +111,7 @@ A similar project on the DEFI side is Stellaswap (https://stellaswap.com/) and o
 ### Legal Structure
 
 - **Registered Address:** My AI Inc. 251 Little Falls Drive, Wilmington, New Castle County, Delaware 19808 USA (registered address); 8 The Green Suite 11901 Dover, DE 19901 (business address)
-- 
+
 - **Registered Legal Entity:** My AI Inc. (Delaware C Corp)
 
 ### Team's experience
@@ -131,29 +121,22 @@ We have founded and co-founded several tech companies (e.g. Kivu Technologies, C
 
 ### Team Code Repos
 
-- https://github.com/Me
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/Me-Protocol
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+GitHub accounts of team members
+
+- https://github.com/AgentPoles
+- https://github.com/codemobii
+- https://github.com/piosystems
+- https://github.com/Teepheh-Git
+- https://github.com/thellecodes
 
 ### Team LinkedIn Profiles (if available)
 
 https://www.linkedin.com/in/robert-wesley/
 https://www.linkedin.com/in/paule-oamen/
 
-## Development Status :open_book:
-
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
 
 ## Development Roadmap :nut_and_bolt:
 
