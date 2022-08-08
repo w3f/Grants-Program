@@ -256,7 +256,7 @@ flowchart LR
     style H stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     
     click C "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
-    click D "https://wiki.polkadot.network/docs/en/learn-treasury" "https://wiki.polkadot.network/docs/en/learn-treasury" _blank
+    click D "https://polkadot.network/treasury" "https://polkadot.network/treasury/" _blank
     click F "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
     click H "https://www.substrate.io/builders-program/" "https://www.substrate.io/builders-program/" _blank
 ```
@@ -269,7 +269,7 @@ The [Substrate Builders Program](https://substrate.io/ecosystem/substrate-builde
 
 The treasury is a pot of on-chain funds collected through transaction fees, slashing, staking inefficiencies, etc. The funds held in the treasury can be spent on spending proposals. Both [Polkadot](https://polkadot.network/) and [Kusama](https://kusama.network/) offer everyone the opportunity to apply for funding via the treasury. See:
 
-- [Treasury Wiki](https://wiki.polkadot.network/docs/en/learn-treasury)
+- [Treasury](https://polkadot.network/treasury/)
 - [Polkadot Treasury Guide](https://docs.google.com/document/d/1IZykdp2cyQavcRyZd_dgNj5DcgxgZR6kAqGdcNARu1w)
 - [Kusama Treasury Guide](https://docs.google.com/document/d/1p3UQUjph5t8TVaWnTkfrI5mE-BABnM9Xvtuhdlhl6JE)
 
