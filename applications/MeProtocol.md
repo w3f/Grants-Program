@@ -151,7 +151,7 @@ GitHub accounts of team members
 
 - **Estimated duration:** 2 month
 - **FTE:**  1600hrs (5 persons)
-- **Costs:**15,000 USD
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -203,14 +203,14 @@ GitHub accounts of team members
 
 ## Future Plans
 
--We will first incorporate the Me Protocol into our own marketplace. This should provide significant exposure to the project and prove-out its utility for additional projects. Our company, My AI, will be dedicated to supporting the protocol as a core developer during near- and long-term.
+- We will first incorporate the Me Protocol into our own marketplace. This should provide significant exposure to the project and prove-out its utility for additional projects. Our company, My AI, will be dedicated to supporting the protocol as a core developer during near- and long-term.
 We will also be establishing a DAO as we move forward that will provide additional governance of the project as we progressively decentralise.
 
--We also plan to offer a significant suite of perks, bounties, rewards etc. to contributors of the project to encourage wider participation during the formative period as well as into the longer term.
+- We also plan to offer a significant suite of perks, bounties, rewards etc. to contributors of the project to encourage wider participation during the formative period as well as into the longer term.
 
--Our own native token, the Me Token, will be used to reward community participation from developers and partners. Ecosystem development is central to our near- and long-term plans and we have already started building one.
+- Our own native token, the Me Token, will be used to reward community participation from developers and partners. Ecosystem development is central to our near- and long-term plans and we have already started building one.
 
--In the end, the Me Protocol should be in integral component of the emerging ‘brand economy’ as a key piece of infrastructure for meta- and non-metaverse rewards.
+- In the end, the Me Protocol should be in integral component of the emerging ‘brand economy’ as a key piece of infrastructure for meta- and non-metaverse rewards.
 
 
 ## Additional Information :heavy_plus_sign:
