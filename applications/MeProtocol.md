@@ -95,12 +95,12 @@ A similar project on the DEFI side is Stellaswap (https://stellaswap.com/) and o
   Robert Wesley (CEO)
   
  **Names of team members:**
-   Robert Wesley (CEO)
-   Paul Oamen (CTO)
-   Pius Onobhayedo
-   John Chimaobi
-   Samuel Anthony
-   Boluwatife Oguntoyinbo
+   - Robert Wesley (CEO)
+   - Paul Oamen (CTO)
+   - Pius Onobhayedo
+   - John Chimaobi
+   - Samuel Anthony
+   - Boluwatife Oguntoyinbo
 
 ### Contact
 
@@ -134,8 +134,9 @@ GitHub accounts of team members
 
 ### Team LinkedIn Profiles (if available)
 
-https://www.linkedin.com/in/robert-wesley/
-https://www.linkedin.com/in/paule-oamen/
+- https://www.linkedin.com/in/robert-wesley/
+- https://www.linkedin.com/in/paule-oamen/
+- https://www.linkedin.com/in/piusono/
 
 
 ## Development Roadmap :nut_and_bolt:
