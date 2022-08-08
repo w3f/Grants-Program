@@ -4,7 +4,7 @@
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** MSAI Medical Data Chain
+- **Project Name:** Medical Data Para Chain
 - **Team Name:** Marvsai Team
 - **Payment Address:** 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -13,7 +13,7 @@
 
 ## Project Overview
 ### Overview
-Many patients use clinics worldwide, but they face difficulty moving patient records, thus they have to take redundant duplicate tests. It is inconvenient and impractical to carry data folders over particularly between countries.  
+Many patients use multiple clinics worldwide, but they face difficulty moving patient records, thus they have to take redundant duplicate tests. It is inconvenient and impractical to carry data folders over particularly between countries.  
 To solve this problem we gathered a team and designed an international app. We wanted to store the data in a decentralised manner.
 For further background you can[ read our blog](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
 
@@ -38,7 +38,7 @@ Our team has years of research and development on medical data along with senior
 Furthermore, Dr Marvasti has multiple years experience working with blockchain technologies including ZKP both for cross border fintech and for data analysis through AWS Neptune and AWS Aurora API based databases.
 This is a phased plan with part of the design to be implemented in this first phase, which each phase being usable .
 in summary benefits of blockchain for this data includes
-* Decentralised: Data ownership is not lost to any central authority and access is controlled through secure ownership of NFTs
+* Decentralised: Data ownership is not lost to any central authority and access is controlled through secure  NFT like smart contract
 * Incentive to participate: various mechanisms  could be developed as smart tokens or native token of the parachain linked to DOT.
 * Users:  publishers of health can receive some amount of token as rewards from any sponsor on the platform. 
 * Public: The api and parachain would be public so that any other apps such that deal with medical data can use this parachain. 
@@ -52,17 +52,18 @@ Later we could add functionality to decrypt data at the smart contract level onc
 Thus, in this first phase the data may be encrypted outside the blockchain through the Sidecar container service which we will specify and provide a reference implementation.
 - The data 
   - Medical ID - consisting of HASH And JSON details which are encrypted and optional; only the secure hash of an ID reference is required. The decryption will be handled by dedicated service which will be open sources to run alongside the Substrate node. 
-  - ID are verified by special validation addresses linked to special trusted organization addresses on the parachain
+  - ID are verified by special validation addresses (See diagram) linked to special trusted organization addresses on the parachain
   - ID verification is for users of data to require which authorities they accept. Initially it will be us or other organization we work with like the NHS in the UK.
-| hashID | health system id | dob (o)| sex(o) | blood type(o) |
-|--------|----------------------|-----|-----|------------|
-|        |                      |     |     |            |
 
-| hashID Public Address | SignedVerifier          |
-|-----------------------|-------------------------|
-|          0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2             | MSAI_LTD_HASH_SIGNATURE |
-|                       |                         |
-|                       |                         |
+| HashID | Health system id | DOB (o) | Sex | blood type(o) |
+|--------|------------------|---------|-----|---------------|
+|        |                  |         |     |               |
+
+| HashID Public Address                      | SignedVerifier          |
+|--------------------------------------------|-------------------------|
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | MSAI_LTD_HASH_SIGNATURE |
+|                                            |                         |
+|                                            |                         |
 
   - Medical documents consisting of ID HASH and encrypted JSON of the following details: 
 
@@ -71,32 +72,49 @@ Thus, in this first phase the data may be encrypted outside the blockchain throu
         Date
         Place
 
-| Hash (Account)(s)                          | Type       | Detail           | Date    | Place   | Result | Link to BLOB                                   | SH1 data integrity hash |
-|--------------------------------------------|------------|------------------|---------|---------|-------|:-----------------------------------------------|-------------------------|
-| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | Ultrasound | liver sonography | 1-1-20  | Ukraine | normal | native::xjslfdjl                               | 12jlklxlx               |
-| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | Xray      | Chest            | 1-30-20 | London  | pneumonia | external:https://wwww.marvsai.com/xkjdslkdjslk | 49jhdfjoeolfn           |
+| Hash (Account)(s)                          | Type       | Detail           | Date    | Place   | Result    | Link to BLOB                                   | SH1 data integrity hash |
+|--------------------------------------------|------------|------------------|---------|---------|-----------|:-----------------------------------------------|-------------------------|
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | Ultrasound | liver sonography | 1-1-20  | Ukraine | normal    | native::xjslfdjl                               | 12jlklxlx               |
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | Xray       | Chest            | 1-30-20 | London  | pneumonia | external:https://wwww.marvsai.com/xkjdslkdjslk | 49jhdfjoeolfn           |
+
+- Medical Appointment 
+
+| Hash (Account)(s)                          | Appointment Type  | Detail       | Date    | Clinic       | Notes     | Link to BLOB                                   | SH1 data integrity hash |
+|--------------------------------------------|-------------------|--------------|---------|--------------|-----------|:-----------------------------------------------|-------------------------|
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | Specialist Doctor | Hematologist | 1-1-20  | CLIN_THR_XXA | normal    | native::xjslfdjl                               | 12jlklxlx               |
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | Fertility Clinic  | IVF          | 1-30-20 | CLIN_LON_BBA | pneumonia | external:https://wwww.marvsai.com/xkjdslkdjslk | 49jhdfjoeolfn           |
+
+- Hash Based Routing Clinic Codes
+
+| Signer Account                             | Clinic Code  | Kademlia Routing Hash |
+|--------------------------------------------|--------------|-----------------------|
+| 0x9f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | CLIN_THR_XXA | Nodesis_1_10_11       |
+| 0x9f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | CLIN_LON_BBA | Nodeids_10_11_12      |
+|                                            | CLIN_LON_BBA |                       |
+|                                            | CLIN_LON_BBA |                       |
 
 
+- Medical Lab Document: Lab documents from date format US
 
-- Medical Lab Document - date format US
-
-| Hash (Account) | Type           | Detail      | Date    | Result   |    Link to BLOB    |
-|----------------|----------------|-------------|---------|----------|-----|
-|        0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2        | Blood          | creatinine  | 1-1-20  | 1/2 mm/l |  native::xjslfdjl      |
-|        0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2        | Urine          | bacteria    | 9-30-20 | Negative |   native::xjslfdjl     |
-|       0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2         | Histopathology | Skin Legion | 4-30-20 | Melanoma |  native::xjslfdjl      |
+| Hash (Account)                             | Type           | Detail      | Date    | Result   | Link to BLOB     |
+|--------------------------------------------|----------------|-------------|---------|----------|------------------|
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | Blood          | creatinine  | 1-1-20  | 1/2 mm/l | native::xjslfdjl |
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | Urine          | bacteria    | 9-30-20 | Negative | native::xjslfdjl |
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | Histopathology | Skin Legion | 4-30-20 | Melanoma | native::xjslfdjl |
  
-- Permission to access Binary data (BLOB internal or external) can only be written to by Authorized Addresses (Verifier address) enforced through smart contract
+- Permission Table : to access Binary data (BLOB internal or external) can only be written to by Authorized Addresses (Verifier address) enforced through smart contract
 
-| AccountHash                                | Accounts Allowed Read Permission |   Data link to Binary (encrypted) Image data  |
-|--------------------------------------------|----------------------------------|-----|
-| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | [HASHID1, HASHID2]               |  Pod::xjslfdjl   |
-| 0x9e1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | [HASHID3, HASHID4]               |  external:https://wwww.marvsai.com/xkjdslkdjslk   |
+| AccountHash                                | Accounts Allowed Read Permission | Data link to Binary (encrypted) Image data     |
+|--------------------------------------------|----------------------------------|------------------------------------------------|
+| 0x8f1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | [HASHID1, HASHID2]               | Pod::xjslfdjl                                  |
+| 0x9e1013fa606c6fcbcd3eff057e5b320b0c5f72e2 | [HASHID3, HASHID4]               | external:https://wwww.marvsai.com/xkjdslkdjslk |
 
 These two types of data storage access will differ in the that access permission to external storage (pod) account will need to be provided by a dedicated bridging service which internally runs a HSM or Hardware Secure Module.
 
 Addition of MSAI parachain webassembly smart contract for efficient encryption and decryption if necessary 
 Storage of NFT
+Effecient storage of above tables as JSON
+
 
 ### An overview of the technology stack to be used
 - Parachain Scaling:  ![component](https://raw.githubusercontent.com/salmanmarvasti/Grants-Program/master/applications/img/component.png)
@@ -120,11 +138,12 @@ So what we are proposing is Polkadot to fund an example application with the nec
 Integrating this layer of storage with NFT smart contracts makes storage more accessible for developers within the Substrate ecosystem. 
 Our proposed system will be usable by any application or system where they deal with health data and get user opt-in thus contributing to demand for the Polkadot ecosystem.
 
-The project is a practical application of web3 technologies which we intend to build within the Polkadot.
+The project is a practical application of web3 technologies which we intend to build wit Polkadot.
 Additional benefits include proving Polkadot's scalability as the number of users on the parachain grows by for instance spliting records by region and having a parachain per region as illustrated in our component diagram.
-Ultimately consumers will benefit , particularly health patients who travel in multiple jurisdictions (e.g. Ukranians who arrive in UK have no medical history, and it is difficult to carry and validate scans from different countries)
+Ultimately consumers will benefit especially if we can attract bigger player like MyCharts (Epic Systens) to also use the shared blockchian as a verifiable, standardized method of sharing data.
 - What need(s) does your project meet?
-Specialising public blockchain for storage and exchange of health data making it easy to use the off chain worker local storage with encyrption and smart contract verified data integrity via hashes as described in [1]. This allows the creation of a federated healthcare system.
+Specialising public blockchain for storage and exchange of health data making it easy to use the off chain worker local storage with encyrption and smart contract verified data integrity via hashes as described in [1]. 
+- This allows the creation of a federated healthcare system. There are many clinics with independent apps but no simple way to sharing without loosing control over the data.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 Not that we know of;
 No project has been able to create a public health blockchain as it is either too slow or ineffective data privacy
@@ -136,10 +155,11 @@ e.g
 
 ## Team :
 Marvsai team www.marvsai.com
+Our App is under construction.
 
 ### Team members
 Core:
-- Dr Salman Alim Marvasti --  Experienced Finance and Blockchain Senior Developer currently at Blockchain.com
+- Dr Salman Marvasti --  Experienced Finance and Blockchain Senior Developer currently at Blockchain.com
 - Dr Atefeh Alihossieni - Internal Medicine Specialist - Medical App Design Baan Clinic- Millway medical practice
 - Rahim Lalani CEO Text services and contract app development company in Pakistan
 
@@ -202,31 +222,26 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - Development of backend
 Summary 
 - 1- Basic Blockchain parachain build using current available Pallets
-  - Milestone one basic API layer design integration with elements of configur Substrate for new parachain with smart contract facility
+  -  API design specifications (OpenAPI) combined with Substrate features based on Solid Pod encryption api Linked with smart contract facility
   - Integration of Identity validation mechanism : Use pallet-identity or other method of assigning identity signers that provide added value to NFT generated from users health data (As fake data has no value)
-  2- Configuration of Subtrate with a binary data storage layer that preferably distrubuted
-  - Development of backend mock api service that is extended from the Pallet OFW
-  - Investigating extension of off chain data storage mechanism build into Subtrate OFW.
-  - In this first instance data storage will be assumed to be trusted as long as parachain node operator is trusted (Without additinal complexity)
-  - NFT smart contract default template-- We will incorporate based on 
-  3- Built in smart contract on the subtrate chain - written in Ink! or other webassembly language that supports NFTs and ERC721 level in addition to ownership authentication:
-  - Only owners of the NFT will be able to access the encrypted data within using the sidecar service. Control encryption to and from the data storage layer.
-  - Built on the model documented in refernce [1]
-  4- Testing on Kusama 
-  - Development of example scripts for interaction with new parachain based on docker files (10000 USD)
-  - le wallet for the newDevelopment of reference APP based on customisation of Alphawallet or other suitab Polkadot parachain 6 months (50000)
+  2- Configuration of Subtrate Off chain worker storage with the extra features needed for secure healthcare
+  - Documented encryption API
+  - Consensus based on hash of local storage to dedicated storage nodes (similar to SOlid Pod)
+  - NFT smart contract default template-- Template contract that will be deployed by default and interfaced with the Off chain worker
+  3- Testing on Kusama 
+  - Development of example scripts for interaction with new parachain based on docker files 
 
 ### Overview
 
-- **Total Estimated Duration:** 1.5 years for MVP parachain
-- **Full-Time Equivalent (FTE):** 3 
+- **Total Estimated Duration:** 0.5 years for MVP parachain
+- **Full-Time Equivalent (FTE):** 2 
 - **Total Costs:** 500 000 of which some will be covered by founders Requested amount in USD for the whole project min 100,000 USD till MVP stage. 
 
-### Milestone 1 Example — Implement basic runtime with Substrate Chain API configured with the features described above
+### Milestone 1 Example — Implement runtime with Substrate Chain API configured with the features described above
 - 
 - **Estimated duration:** 3 months
 - **FTE:**  2
-- **Costs:** 30,000 USD
+- **Costs:** 25,000 USD
 #### Part A
 | Number | Deliverable                                 | Specification                                                                                                                                                                                                                                                                                |
 |-------:|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -237,13 +252,17 @@ Summary
 |    0e. | Article                                     | Press release will be prepared a few weeks before the official rollout of the network. The link to the article will be sent when ready                                                                                                                                                       | 
 |    1a. | Node Repo                                   | Complete the deployment of the basic public chain with example  storage of a native DB format through the off chain worker local storage API.                                                                                                                                                |
 |    2a. | Substrate setup                             | [ 1. Create demo application](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) Milestone one basic for new parachain with smart contract facility                                                                                                                     |                                                                                                                                                        |
-|    3a. | Test Chain                                  | Basic Blockchain parachain build using current available Pallets  Milestone one basic API layer design integration with elements of Substrate for new parachain with smart contract facility                                                                                                 |
+|    3a. | Test Chain With Pod API                     | Basic data storage API (with OpenAPI specifications) built on top of OFW adding some of the functionality of Solid pods                                                                                                                                                                      |
 |    4a. | Add ID Validation                           | Integration of Identity validation mechanism : Use pallet-identity or other method of assigning identity signers that provide added value to NFT generated from users health data (As fake data has no value)                                                                                |
 |    4b. | NFT health tailored WASM contract           | NFT smart contract default template-- Built in smart contract on the subtrate chain - written in Ink! or other webassembly language that supports NFTs and ERC721 level in addition to ownership authentication:                                                                             |
 |    5a. | Extend Off chain worker Data Pallet         | Implementation Off chain worker encryption and decryption module that can authorize decryption when verified by a smart contract                                                                                                                                                             |
 |    5b. | Data Validation on store                    | Validation check every data stored on node against a hash must have a corresonding entry in template smart contract. In this first instance data storage will be assumed to be trusted as long as parachain node operator is trusted and hashes match the blockchain smart contract          |
 |    6a. | API   Documentation                         | Document Off chain encryption decryption API and create                                                                                                                                                                                                                                      |
-|     6b | Kusama Reference Implementation             | Deploy full demo application on the test Subtrate chain on Kusama that reads and writes encrypted medical data into the preformated data structure documented above.                                                                                                                         |
+
+### Milestone 2 - Kusama based testing
+| Number | Deliverable                                 | Specification                                                                                                                                                                                                                                                                                |
+|-------:|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    6b. | Kusama Reference Testing                    | Deploy full demo application on the test Subtrate chain on Kusama that reads and writes encrypted medical data into the preformated data structure documented above.                                                                                                                         |
 |    7a. | Encryption service linked to smart contract | Smart contract checking service build as pallet extension: Only owners of the NFT will be able to access the encrypted data within using the sidecar service. Control encryption to and from the data storage layer.                                                                         |
 
 
@@ -253,7 +272,6 @@ Summary
 to be processed in encrypted form Extension module to connect to NHS app and other health systems around the work.
 - Offchain bridger for faster processing in case of trusted thirdparties
 - Promotion through partnerships with private and public clinics 
-- Promotion will be through coin giveaways on the side chain once accepted on Kusama or mainnet Polkadot or alternative chain.
 
 ## Additional Information :heavy_plus_sign:
 ## References:
