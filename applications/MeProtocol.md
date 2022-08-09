@@ -147,13 +147,13 @@ GitHub accounts of team members
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  3200 hrs
-- **Total Costs:** 30000 USD
+- **Total Costs:** 29600 USD
 
 ### Milestone 1  — Implement Substrate Modules and setting up protocol framework
 
-- **Estimated duration:** 2 month
-- **FTE:**  1600hrs (5 persons)
-- **Costs:** 15,000 USD
+- **Estimated duration:** 1 month
+- **FTE:**   800hrs (5 persons)
+- **Costs:** 12,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -174,7 +174,7 @@ GitHub accounts of team members
 
 - **Estimated Duration:** 1 month
 - **FTE:**  800hrs (5 persons)
-- **Costs:** 7,500 USD
+- **Costs:** 8,550 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -190,7 +190,7 @@ GitHub accounts of team members
 
 - **Estimated Duration:** 1 month
 - **FTE:**  800hrs (5 persons)
-- **Costs:** 7,500 USD
+- **Costs:** 8,550 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
