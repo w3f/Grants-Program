@@ -58,9 +58,10 @@ We are interested in creating this project because it solves one of the biggest 
 
 - Figma Flow: Process flow: https://www.figma.com/file/6eTKTZZffsceFQPEXpyzjl/My-AI-Partner-Onboarding?node-id=0%3A1
 - Tech Stack: RUST, Solidity, TypeSript, React, Nest, PostgreSQL e.t.c 
-- Architectural Overview
+- Architectural Summary
 
-<img width="687" alt="Meprotocol architecture" src="https://user-images.githubusercontent.com/52800276/183633439-a4452cd7-0c7c-462c-b94d-b14b26b290e5.png">
+<img width="679" alt="Me Protocol Arch" src="https://user-images.githubusercontent.com/52800276/183634255-fb39e238-78fe-460c-bbd8-75c40f886b18.png">
+
 
 ### Ecosystem Fit
 
