@@ -147,7 +147,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 We have decided to describe a full roadmap of an Typechain here, with estimates. However, the funding we request at this stage is for milestones 2-3.
 * **Total Estimated Duration:** 15 weeks
 * **Full-Time Equivalent (FTE):** 2-2.5
-* **Total Costs:** 97 000 USD
+* **Total Costs:** 97 300 USD
 
 ## Previous work
 
