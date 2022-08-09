@@ -5,7 +5,7 @@
 
 ## Project Description :page_facing_up: 
 
-The following document intends to outline what a front-end white-label template could look like for teams to use to easily build their Polkadot Crowdloan websites. Teams applying for this RFP can change and adapt this. 
+The following document intends to outline what a front-end white-label template could look like for teams to use to easily build their Polkadot Crowdloan ([see Wiki: Parachain Crowdloans](https://wiki.polkadot.network/docs/learn-crowdloans)) websites. Teams applying for this RFP can change and adapt this. 
 
 The overall objective of this project is to provide a white-label solution to teams to be able to plug into and offer all the information users need to contribute to their Crowdloan. In essence, it's a collection of:
 1. [Project information](#project-information)
