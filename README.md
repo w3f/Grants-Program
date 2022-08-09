@@ -91,7 +91,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Raul Romanutti](https://github.com/rrtti)
 - [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
-- [Reto Trinkler](https://github.com/retotrinkler)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
 - [Gavin Wood](https://github.com/gavofyork)
 
