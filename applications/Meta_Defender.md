@@ -290,17 +290,17 @@ We are also planning to provide insurance service for more off-chain scenarios b
  
 ### Team's experience
  
-Alvin: He has participated in Web3.0 projects since 2020, especially Defi projects. He also has rich development experience, including back-end development and smart contract development, etc.
+Alvin: With a background in financial investing and insurance consulting, as well as working a Tech Lead in a Venture Capital, Alvin brings his varied experience to Meta Defender. Alvin is also the external consultant for two AI based projects of China Life Insurance Company, namely an operational decision making tool and a fraud detection technology. He also has massive experience in blockchain, by constructing a DEX and IDO platform. He would like to integrate his expertise in Web3.0 with knowledge in insurance industry and provide a better solution to Blockchain insurance.
  
-Angie: She is a Data Scientist in an Australian Fintech company who is also a CPA member. She has been in the Finance industry since 2017. She is a crypto enthusiast and familiar with Solidity/Python/Javascript/Big Data/Machine Learning.  
+Angie: Angie is a Data Scientist in a ASX-listed Fintech in Australia. She has extensive experience in Finance industry since 2017 and has profound understanding regarding tech utilization in finance industry. Using her expertise, she co-designed the pricing model and business flow of Meta Defender. She is also a crypto enthusiast and fascinated by She masters Solidity, Python Vue.js and Node.js.  
  
-0xdeadbeef : He is a coder and researcher in Web3.0 for more than 4 years. He has a master's degree from Shanghai Jiaotong University. He masters solidity, Golang, and Nodejs. In his past working experience, He was researching and developing on-chain DeFi projects, especially in options markets.  
+0xdeadbeef: He is a web3.0 coder and researcher for more than 4 years. He has a master's degree from Shanghai Jiaotong University and a major in finance. He masters solidity, Golang, Rust, Python, and Nodejs. In his past working experience, he worked for a public chain company and researched and developed on-chain DeFi projects, especially in options markets. He has much experience in EVM compatible blockchains. Recently, he has been passionate about insurance, which may be a new area in DeFi. Through his working experience in the on-chain option market, he considered there are many similarities between options and insurance.
  
 ### Team Code Repos
  
 **Team Repo**
 - https://github.com/Meta-Defender/
-- https://github.com/Meta-Defender/Meta-Defender-Contract-V2
+- https://github.com/Meta-Defender/Meta-Defender-Contract-V3
  
  
 **Team Member**
@@ -328,9 +328,8 @@ Angie: She is a Data Scientist in an Australian Fintech company who is also a CP
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to deploy and use the ink! smart contract. |
 | 0c. | Testing Guide | Core functions will be covered by unit tests, along with detailed explanation step by step. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1. | Buy Cover | A functionality that will enable the digital assets holders to buy cover. |  
-| 2. |Underwriting | A functionality that will enable the capital holder to become an underwriter. | 
-| 3. | Manual of interaction between ink! and front-end | We will provide a manual regarding constructing an interface for the interaction between front-end and ink! smart contract & Polkadot.js wallet, just like what web3.js and ethers.js have done in the EVM ecosystem. | 
+| 1. | ink! smart contract | An ink! smart contract that will enable the digital assets holders to buy cover and the capital holder to become an underwriter. |  
+| 2. | Manual of interaction between ink! and front-end | We will provide a manual regarding constructing an interface for the interaction between front-end and ink! smart contract & Polkadot.js wallet, just like what web3.js and ethers.js have done in the EVM ecosystem. | 
  
 ### Milestone 2 Substrate + XCM
  
@@ -345,8 +344,7 @@ Angie: She is a Data Scientist in an Australian Fintech company who is also a CP
 | 0c. | Testing Guide | Core functions will be covered by unit tests, which will be considered as another way of explanation |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the functionalities Meta Defender provides, which will cover: 1. auto-pricing model; 2. economic model of insuring and underwriting; 3. how we achieve cross-chain insurance through substrate and XCM and open source this part of code.  |
-| 1a. | Cross-chain support 1 | Function that enables users to buy cover from addresses on the parachain that the Meta Defender protocol deployed and receive his claim on other parachains. |  
-| 1b. | Cross-chain support 2 | Function that enables users to buy covers, underwrite and initiate a claim from addresses on parachains, interacting with Meta Defender protocol deployed on another parachain through a cross-chain way built by XCM. |  
+| 1. | Cross-chain support | Establish a local parachain testnet and two local parachains A and B with sovereign account in each other. With smart contract deployed on A parachain, allow the user to buy cover and receive his claim from addresses on the B parachain through XCM. |  
  
  
 ## Future Plans
