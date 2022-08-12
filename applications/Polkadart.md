@@ -142,13 +142,13 @@ Described above.
 
 - **Total Estimated Duration:** 7 months.
 - **Full-Time Equivalent (FTE):** 4.
-- **Total Costs:** 30,000 USDC.
+- **Total Costs:** 50,000 USDC.
 
 ### Milestone 1 — 
 
 - **Estimated duration:** 4 months.
 - **FTE:**  4.
-- **Costs:** 10,000 USDC.
+- **Costs:** 20,000 USD.
 
 |Number|Deliverable|    Specification                   |
 |:---: |  ---      |             ---                    |
@@ -165,7 +165,7 @@ Described above.
 
 - **Estimated duration:** 1 month.
 - **FTE:**  4.
-- **Costs:** 10,000 USDC.
+- **Costs:** 15,000 USD.
 
 |Number|Deliverable|    Specification                   |
 |:---: |  ---      |             ---                    |
@@ -181,7 +181,7 @@ Described above.
 
 - **Estimated duration:** 2 months.
 - **FTE:**  4.
-- **Costs:** 10,000 USDC.
+- **Costs:** 15,000 USD.
 
 |Number|Deliverable|    Specification                   |
 |:---: |  ---      |             ---                    |
