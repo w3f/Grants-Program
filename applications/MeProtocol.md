@@ -118,7 +118,25 @@ A similar project on the DEFI side is Stellaswap (https://stellaswap.com/) and o
 
 ### Team's experience
 
-We have founded and co-founded several tech companies (e.g. Kivu Technologies, Cognitive Architectures, Useful Technologies) and worked on a variety of complex software development projects spanning graph computing to smart contract deployment on…..
+We have founded and co-founded several tech companies (e.g. Kivu Technologies, Cognitive Architectures, Useful Technologies) and worked on a variety of complex software development projects spanning graph computing to blockchain based solutions.
+
+- **Robert Wesley (CEO)** is an international serial entrepreneur. Having founded five organisations across sectors and continents, Robert's diversity of entrepreneurial experiences spans from graph computing to blockchain to AI.
+
+Founder @ Sender Ventures; Founder @ KIVU Technologies; Co-Founder @ Cognitive Architectures; International Diplomat @ UN; MBA @ESADE
+
+https://www.linkedin.com/in/robert-wesley/
+
+- **Paul Oamen (CTO)** is one of Nigeria's rising Web3 stars, where in addition to venture building, set up and served as the principal instructor at the Pan Atlantic University's Blockchain Programme and is a core contributor to the zone blockchain, Africa's layer-1 Blockchain network for digital payments in fiat and regulated digital currencies.
+
+Co-Founder @ Usefull Technologies; Blockchain Instructor @ Pan-Atlantic University, Lagos Business School;
+
+https://www.linkedin.com/in/paule-oamen/
+
+
+- **Dr. Pius Onobhayedo** is the Head of the Computer and Information Sciences Department at the Pan-Atlantic University. Aside from building an entire university department, Dr. Onobhayedo’s distinguished career has also included appointments at the University of Southern California in the United States and the University of Navarra in Spain. He has also served as CTO of multiple software companies.
+
+https://www.linkedin.com/in/piusono/
+
 
 
 ### Team Code Repos
