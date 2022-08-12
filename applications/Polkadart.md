@@ -3,7 +3,7 @@
 - **Project Name:** Polkadart
 - **Team Name:** JURIMETRIC TECNOLOGIA LTDA
 - **Payment Address:** 12kizkmmQzRFR5o6BQ5Kufo77RPT787eaFynswQoi42vv2Da (DOT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
 
@@ -27,9 +27,7 @@ We will follow Polkadot specifications and, as a license for PolkaDart library, 
 ```
 - What your project is _not_ or will _not_ provide or implement:
 ```
-This project will not support legacy metadata protocols, such as metadata v9, v10, and v11.\
-Polkadart will not implement any front-end, since it is going to allow developers to use Dart to
-connect to the Substrate based network.
+This project will not support legacy metadata protocols, such as metadata v9, v10, v11 and v12. Polkadart will not implement any front-end, since it is going to allow developers to use Dart to connect to the Substrate based network.
 ```
 - This is a place for you to manage expectations and to clarify any limitations that might not be obvious:
 ```
@@ -60,7 +58,7 @@ Pocket4 was similar to PolkaDart but it was discontinued for lack of progress an
 - Kawaljeet Singh, Flutter Developer
 - Luiza Adena Engers, Product Manager
 - Fabio Binder, Blockchain Engineer
-- Gabriel Okura, Mobile Developer
+- Gabriel Okura, Flutter Developer
 
 ### Contact
 
@@ -144,13 +142,13 @@ Described above.
 
 - **Total Estimated Duration:** 7 months.
 - **Full-Time Equivalent (FTE):** 4.
-- **Total Costs:** 
+- **Total Costs:** 30,000 USDC.
 
 ### Milestone 1 — 
 
 - **Estimated duration:** 4 months.
 - **FTE:**  4.
-- **Costs:** 
+- **Costs:** 10,000 USDC.
 
 |Number|Deliverable|    Specification                   |
 |:---: |  ---      |             ---                    |
@@ -167,7 +165,7 @@ Described above.
 
 - **Estimated duration:** 1 month.
 - **FTE:**  4.
-- **Costs:**
+- **Costs:** 10,000 USDC.
 
 |Number|Deliverable|    Specification                   |
 |:---: |  ---      |             ---                    |
@@ -183,7 +181,7 @@ Described above.
 
 - **Estimated duration:** 2 months.
 - **FTE:**  4.
-- **Costs:** 
+- **Costs:** 10,000 USDC.
 
 |Number|Deliverable|    Specification                   |
 |:---: |  ---      |             ---                    |
