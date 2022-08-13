@@ -83,7 +83,7 @@ Our design is a centralized system “wrapped” with Web3 extensions so that us
 3. Web3 DAOs and Protocols which need to capture market research (e.g. DAO governance) 
 4. Web2 users wishing to matriculate to Web3 but no upfront capital or resources to get into the space
 
-Currently, we have over 2,000 sign-ups for the waitlist, confirmed private test sessions with Encode Club, Octopus Network and a couple projects on NEAR Protocol as well as set aside a marketing budget for customer acquisition (200K total reach).
+Currently, we have over 3,000 sign-ups for the waitlist, confirmed private test sessions with Encode Club, Octopus Network and a couple projects on NEAR Protocol.
 
 Since we also have a desire to partner with Web2 organizations to help demonstrate the value of our platform, we are currently in talks with the following educational institutions to run private sessions.
 - Jack & Jill of America, Inc.
@@ -94,13 +94,11 @@ Since we also have a desire to partner with Web2 organizations to help demonstra
 
 We were inspired by the Pi app, as well as Sweatcoin which are two “Play-to-Earn” models where users get rewarded for daily, micro tasks based on actions taken in-platform.
 
-QSTN builds on their concept by offering more exciting, engaging rewards, increasing the educational value behind our mission statement as well as creating a cohesive community for participants in our network (e.g. NFTs, metaverse)
+QSTN builds on their concept by offering more exciting, engaging rewards, increasing the educational value behind our mission statement as well as creating a cohesive community for participants in our network (e.g. NFTs, metaverse).
 
 - There are currently no other projects similar to ours in the Substrate ecosystem. However, we do see a potential partnership with Ocean Protocol as we can sell and aggregate our data profiles within their primary market. 
 			
   - There are no other Web3 data market research portals but similar Web2 solutions include Google Form, Nielsen and Survey Monkey; the problem is these agencies do not have blockchain infrastructure currently in place.
-
-Even if they did, we will be using game mechanics and "play-to-earn" models which will accelerate user adoption and data collection as we find the perfect incentive model using tokenized rewards. 
 
 Our unique offering is the ability for Web2 users to answer questions, earn credits and buy NFTs within a "gas-less" environment but having the option to connect their wallet and mint once familiar with the technology.
 
@@ -205,7 +203,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
--  Here is a link to the proposed functionality we wish to implement on DOT that has been completed on NEAR - https://drive.google.com/drive/folders/1AlOA2H8PE9RWnuXsSxvrBszCOVxkclrE?usp=sharing
+- Here is a link to the proposed functionality - https://drive.google.com/drive/folders/1AlOA2H8PE9RWnuXsSxvrBszCOVxkclrE?usp=sharing
 - Here are links relevant to the problem - Article 1: https://www.npr.org/2021/02/25/971460327/tiktok-to-pay-92-million-to-settle-class-action-suit-over-theft-of-personal-data 
 Article 2: https://www.reuters.com/technology/metas-facebook-pay-90-million-settle-privacy-lawsuit-over-user-tracking-2022-02-15/
 Article 3: https://news.bloomberglaw.com/litigation/google-plus-7-5-million-privacy-settlement-gets-final-nod
@@ -239,37 +237,52 @@ For each milestone,
 
 ### Milestone 1 Example — Implement Substrate Modules
 
-- **Estimated duration:** 1.5 months
+- **Estimated duration:** 2.5 months
 - **FTE:**  6 employees
 - **Costs:** 25,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Open Source | We will open source the code being used for the blockchain timestamp, NFT purchase, Polkadot.JS wallet creation and Polkadot.JS wallet log-in
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can generate a Polkadot.JS wallet during on boarding, connect this wallet to our web application, mint and/or transfer NFTs from our marketplace to that DOT wallet, and create a blockchain timestamp “receipt” as proof of their data monetization. |
+| 0a. | License | Open Source | We will open source the survey pallet since the other implementations are publicly available 
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can generate a Polkadot.JS wallet during on boarding, connect this wallet to our web application, mint and/or transfer NFTs from our marketplace to their specified DOT wallet and save their "survey ID" on the DOT blockchain as immutable proof of completion |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish a Medium article that documents our migration to Polkadot and the initial features we enabled including: wallet sign-in, wallet creation option and survey ID save function available to all existing users as well as entire DOT community. 
-| 1. | Substrate module: X | We will create a Substrate module that will allow users to "timestamp” the completed survey ID on the DOT blockchain which serves as a “receipt” for their earning session [new pallet we will create and open source]
-| 2. | Substrate module: Y | We will create a Substrate module that gives users the option to create a Polkadot.JS wallet during the on-boarding process to our platform or later connect an existing wallet to their account [interface Account = {}, reference = https://github.com/polkadot-js/extension]
-| 4. | Substrate chain | Modules X & Y of our custom chain will interact in such a way to create a unique on-boarding experience for first time users to generate a DOT wallet [Y], connect their wallet once created [Y] and then save their survey ID on-chain as a "receipt [X]
+| 0e. | Article | We will publish a Medium article that 
+| 1. | Substrate module: X | We will integrate a Substrate module that will allow users to mint digital media from our NFT marketplace onto the Polkadot blockchain [pub fn mint(
+			origin: OriginFor<T>,
+			collection: T::CollectionId,
+			item: T::ItemId,
+			owner: <T::Lookup as StaticLookup>::Source,
+		) -> DispatchResult {
+			let origin = ensure_signed(origin)?;
+			let owner = T::Lookup::lookup(owner)?;
 
-### Milestone 2 Example — Additional features
+			Self::do_mint(collection, item, owner, |collection_details| {
+				ensure!(collection_details.issuer == origin, Error::<T, I>::NoPermission);
+				Ok(())
+			})
+		}
+Source = https://github.com/paritytech/substrate/tree/master/frame/uniques]
+| 2. | Substrate module: Y | We will integrate a Substrate module that will allow users to transfer digital media from our NFT marketplace onto the DOT blockchain to their specified wallet [pub fn transfer(
+			origin: OriginFor<T>,
+			collection: T::CollectionId,
+			item: T::ItemId,
+			dest: <T::Lookup as StaticLookup>::Source,
+		) -> DispatchResult {
+			let origin = ensure_signed(origin)?;
+			let dest = T::Lookup::lookup(dest)?;
 
-- **Estimated Duration:** 1.5 months
-- **FTE:**  6 employees
-- **Costs:** 25,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Open Source | We will open source the code being used for the mint and transfer functions in our DOT NFT marketplace 
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can generate a Polkadot.JS wallet during on boarding, connect this wallet to our web application, mint and/or transfer NFTs from our marketplace to that DOT wallet, and create a blockchain timestamp “receipt” as proof of their data monetization. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish a Medium article that documents our newly implemented DOT marketplace and how users can now create a Polkadot.JS wallet to mint and transfer media purchased in our marketplace. In addition, we will make a custom DOT-edition QSTIN NFT available for the first 100 DOT users. 
-| 1. | Substrate module: X | We will create a Substrate module that will allow users to mint digital media from our NFT marketplace which we will implement on the Polkadot blockchain [mint(AccountId, AssetInfo), reference = https://github.com/danforbes/pallet-nft]
-| 2. | Substrate module: Y | We will create a Substrate module that will allow users to transfer digital media from our NFT marketplace which we will implement on the Polkadot blockchain [transfer(AccountId, AssetId), reference = https://github.com/danforbes/pallet-nft)
-| 4. | Substrate chain | Modules X & Y of our custom chain will interact in such a way to allow general users to mint media from our marketplace [X] and once the user has connected or created a DOT wallet, trasnfer it to their preferred address for true NFT ownership [Y]
+			Self::do_transfer(collection, item, dest, |collection_details, details| {
+				if details.owner != origin && collection_details.admin != origin {
+					let approved = details.approved.take().map_or(false, |i| i == origin);
+					ensure!(approved, Error::<T, I>::NoPermission);
+				}
+				Ok(())
+			})
+		}
+Source = https://github.com/paritytech/substrate/tree/master/frame/uniques]
+| 3. | Substrate module: Z | We will create a Substrate model that will allow users to create a survey, invite other users to create a survey for their business, add questions (metadata), remove questions (metadata), give permission as to who can answer and list created surveys.  
+| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way to allow admin to create surveys, invite businesses to create their own surveys, and give permissions as to who can answer a survey [Z], if users accrue credits then mint media from our marketplace [X] and once the user has connected a DOT wallet, trasnfer it to their preferred address for true NFT ownership [Y] and then save the completed survey ID on-chain as proof of completion [Z] 
 
 ...
 
@@ -292,6 +305,6 @@ In conjunction with our hacking and education, we will be testing our existing a
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-- Please request a private invite to our repo (https://github.com/qstn-ansr) for our existing prototype on NEAR (this will show the NEAR smart contract components)
+- Please request a private invite to our repo (https://github.com/qstn-ansr) for our existing prototype on NEAR Protocol 
 - If there are any other teams who have already contributed (financially) to the project.
 - NEAR Foundation (grants program)  
