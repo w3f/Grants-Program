@@ -247,7 +247,7 @@ For each milestone,
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can generate a Polkadot.JS wallet during on boarding, connect this wallet to our web application, mint and/or transfer NFTs from our marketplace to their specified DOT wallet and save their "survey ID" on the DOT blockchain as immutable proof of completion |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish a Medium article that 
+| 0e. | Article | We will publish a Medium article that documents our transition to Polkadot and details how users of QSTN can connect their DOT wallet to our application, mint & transfer purchased media onto the DOT blockchain as well as save their survey ID on-chain on DOT. 
 | 1. | Substrate module: X | We will integrate a Substrate module that will allow users to mint digital media from our NFT marketplace onto the Polkadot blockchain [pub fn mint(
 			origin: OriginFor<T>,
 			collection: T::CollectionId,
