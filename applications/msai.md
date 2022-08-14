@@ -14,23 +14,22 @@
 ## Project Overview
 ### Overview
 Many patients use multiple clinics worldwide, but they face difficulty moving patient records, thus they have to take redundant duplicate tests. It is inconvenient and impractical to carry data folders over particularly between countries.  
-To solve this problem we gathered a team and designed an international app. We wanted to store the data in a decentralised manner.
+To solve this problem we gathered a team of doctors and Eegineers and designed an application. Before we go live, we wanted to store the data in a decentralised manner such that we can establish trust with multiple medical centers.
 For further background you can[ read our blog](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
 
-Our goal is to customise a blockchain Pallet/OFW such that a standardized format data storage is made a straight forward part of the ecosystem. The data should be distributable accessible and auditable. Essentially we would like to implement something similar to w3c Solid pod integrated with a Susbtrate node.
+Our goal is to customise a blockchain Pallet/OFW to provide an easy-to-use infrastructure for healthcare applications like Epic Systems Mychart. The data should be distributable accessible and auditable.
+Essentially we would like to implement something similar to w3c Solid pod integrated with a Substrate node.
 Integrating application specific security and storage for every application is a major pain point which is not addressed by blockchains.
-A combination of a Substrate blockchain and Solid pod api [5] would provide the security, decentralisation and immutable record keeping that is needed to make healthcare interoperable.
-To make this feasible it needs to be split into stages initially using a smart contract developed in  Ink!/ WebAssembly which records ownership and access [1] to a data pod with a similar API to Solid PODs [4].
+A combination of a Substrate blockchain and Solid pod like api [5] would provide the security, decentralisation and immutable record keeping that is needed to make healthcare interoperable.
+To make this feasible it needs to be split into stages initially using a smart contract developed in Ink! - WebAssembly which records ownership and access [1] to a data pod with a similar API to Solid PODs [4].
 
-ID verification and data storage could be integrated through a Sidecar approach ( a containerized system design pattern) allowing other app developers within the ecosystem to reuse the chain without needing their own backend. 
-For a simpler initial alpha we could integrate IPFS as a pod making it simpler than the full Pod api [4].
-Distributed data could be verified as authentic by having a secure hash stored on the chain with the data in the separate pod.
+ID verification and data enhancement could be integrated through a Sidecar and or Pallet approach allowing other app developers within the ecosystem to reuse the chain without needing their own backend. 
+For a simpler initial design we would enhance the off chain worker storage api[6]. Distributed data could be verified as authentic by having a secure hash stored on the chain [4].
 With trust being established by the blockchain layer, any blockchain node that provides faulty data as verified through smart contract hashes will be kicked out and forfiet their staking in the parachains native token.
 We also propose specific data format for anonymous tags such that no user identified private data would be exposed
-during the whole process. Additional layers of encryption and anonymity would be provided in subsequent stages.
-
-The initial user of this parachain would be our own app where users store any medical documents with automated information extraction, along with authenticated GPDR opt out.
-Sample screen of users view of how the data will be presented in our implementation can be seen here https://docs.google.com/presentation/d/1XEQ6qtTLwkmc6JgtpytEUJqhh1behskOWh3s4uE1cXw/edit?usp=sharing
+during the whole process. 
+The initial user of this parachain would be our own EMR application where users store any medical documents with automated information extraction, along with authenticated GPDR opt out.
+Sample screen of users view of how the data will be presented in our implementation can be seen[here](https://docs.google.com/presentation/d/e/2PACX-1vR5uQkX9I_UdCQwDQpNUkyaIQKtYWfY0_ZhDLQHSxdeybF8QqbaYKNQ6j0obcg5BRhEjSmgI3NkhnhP/pub?start=false&loop=false&delayms=3000&slide=id.p1). 
 
 Such a platform would allow game theory incentives and smart contract based marketplaces for data trading to encourage adoption of the reference application. 
 
@@ -42,12 +41,12 @@ in summary benefits of blockchain for this data includes
 * Incentive to participate: various mechanisms  could be developed as smart tokens or native token of the parachain linked to DOT.
 * Users:  publishers of health can receive some amount of token as rewards from any sponsor on the platform. 
 * Public: The api and parachain would be public so that any other apps such that deal with medical data can use this parachain. 
-* The detailed API and openAPI specifications for GRPC and or REST will be developed as part of this proposal with reference to the Solid pod api as details depends on the public blockchain that the system is implemented in.
+* The detailed API and openAPI specifications for GRPC and or REST will be documented as part of this proposal.
 ### Project Details
 
 Data models
 
-We propose to store data encrypted at client side using the Pod api . The data would be anonymous at the storage layer and encrypted with access to ID available only to owner(s) of the NFT controlled via a smart contract. 
+We propose to store data encrypted at client side using the Pod api implemented as a simple database on top of the off chain worker local storage. The data would be anonymous at the storage layer and encrypted with access to ID available only to owner(s) of the NFT controlled via a smart contract. 
 Later we could add functionality to decrypt data at the smart contract level once access to an HSM or secure key storage becomes native to the chain.  
 Thus, in this first phase the data may be encrypted outside the blockchain through the Sidecar container service which we will specify and provide a reference implementation.
 - The data 
@@ -66,11 +65,6 @@ Thus, in this first phase the data may be encrypted outside the blockchain throu
 |                                            |                         |
 
   - Medical documents consisting of ID HASH and encrypted JSON of the following details: 
-
-        Type  - ultrasound - xray etc
-        Detail
-        Date
-        Place
 
 | Hash (Account)(s)                          | Type       | Detail           | Date    | Place   | Result    | Link to BLOB                                   | SH1 data integrity hash |
 |--------------------------------------------|------------|------------------|---------|---------|-----------|:-----------------------------------------------|-------------------------|
@@ -243,21 +237,21 @@ Summary
 - **FTE:**  2
 - **Costs:** 25,000 USD
 #### Part A
-| Number | Deliverable                                 | Specification                                                                                                                                                                                                                                                                                |
-|-------:|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License                                     | Apache 2.0                                                                                                                                                                                                                                                                                   |
-|    0b. | Documentation                               | [Link to why healthcare decentralised](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)                                                                                                                                                      |
-|    0c. | Testing Guide                               | Each epic describes testing opportunities.  [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) 2. Create openapi specifcations for reading and writing data to and from the NFT smart contract (Depends on blockchain nft tech used) . |
-|    0d. | Docker                                      | Access will be granted after several iterations to get a workingg secure application against a customised subtrate blockchain with extended off chain worker local storage                                                                                                                   |
-|    0e. | Article                                     | Press release will be prepared a few weeks before the official rollout of the network. The link to the article will be sent when ready                                                                                                                                                       | 
-|    1a. | Node Repo                                   | Complete the deployment of the basic public chain with example  storage of a native DB format through the off chain worker local storage API.                                                                                                                                                |
-|    2a. | Substrate setup                             | [ 1. Create demo application](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) Milestone one basic for new parachain with smart contract facility                                                                                                                     |                                                                                                                                                        |
-|    3a. | Test Chain With Pod API                     | Basic data storage API (with OpenAPI specifications) built on top of OFW adding some of the functionality of Solid pods                                                                                                                                                                      |
-|    4a. | Add ID Validation                           | Integration of Identity validation mechanism : Use pallet-identity or other method of assigning identity signers that provide added value to NFT generated from users health data (As fake data has no value)                                                                                |
-|    4b. | NFT health tailored WASM contract           | NFT smart contract default template-- Built in smart contract on the subtrate chain - written in Ink! or other webassembly language that supports NFTs and ERC721 level in addition to ownership authentication:                                                                             |
-|    5a. | Extend Off chain worker Data Pallet         | Implementation Off chain worker encryption and decryption module that can authorize decryption when verified by a smart contract                                                                                                                                                             |
-|    5b. | Data Validation on store                    | Validation check every data stored on node against a hash must have a corresonding entry in template smart contract. In this first instance data storage will be assumed to be trusted as long as parachain node operator is trusted and hashes match the blockchain smart contract          |
-|    6a. | API   Documentation                         | Document Off chain encryption decryption API and create                                                                                                                                                                                                                                      |
+| Number | Deliverable                               | Specification                                                                                                                                                                                                                                                                                |
+|-------:|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                                   | Apache 2.0                                                                                                                                                                                                                                                                                   |
+|    0b. | Documentation                             | [Link to why healthcare decentralised](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)                                                                                                                                                      |
+|    0c. | Testing Guide                             | Each epic describes testing opportunities.  [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) 2. Create openapi specifcations for reading and writing data to and from the NFT smart contract (Depends on blockchain nft tech used) . |
+|    0d. | Docker                                    | A dockerized setup of the parachain will be provided after several iterations when we have a working secure application against a customised subtrate blockchain with extended off chain worker local storage                                                                                |
+|    0e. | Article                                   | Press release will be prepared a few weeks before the official rollout of the network. The link to the article will be sent when ready                                                                                                                                                       | 
+|    1a. | Node Repo                                 | Complete the deployment of the basic public chain with example  storage of a native DB format through the off chain worker local storage API.                                                                                                                                                |
+|    2a. | Substrate setup                           | [ 1. Create demo application](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) Milestone one basic for new parachain with smart contract facility                                                                                                                     |                                                                                                                                                        |
+|    3a. | Test Chain With Pod API                   | Basic data storage API (with OpenAPI specifications) built on top of OFW adding some of the functionality of Solid pods                                                                                                                                                                      |
+|    4a. | Add ID Validation                         | Integration of Identity validation mechanism : Use pallet-identity or other method of assigning identity signers that provide added value to NFT generated from users health data (As fake data has no value)                                                                                |
+|    4b. | NFT health tailored WASM contract         | NFT smart contract default template-- Built in smart contract on the subtrate chain - written in Ink! or other webassembly language that supports NFTs and ERC721 level in addition to ownership authentication:                                                                             |
+|    5a. | Extend Off chain worker Data Pallet       | Implementation Off chain worker encryption and decryption module that can authorize decryption when verified by a smart contract                                                                                                                                                             |
+|    5b. | Data Validation on store                  | Validation check every data stored on node against a hash must have a corresonding entry in template smart contract. In this first instance data storage will be assumed to be trusted as long as parachain node operator is trusted and hashes match the blockchain smart contract          |
+|    6a. | API Documentation                         | Document Off chain encryption decryption API and create                                                                                                                                                                                                                                      |
 
 ### Milestone 2 - Kusama based testing
 | Number | Deliverable                                 | Specification                                                                                                                                                                                                                                                                                |
