@@ -46,7 +46,9 @@ in summary benefits of blockchain for this data includes
 
 Data models
 
-We propose to store data encrypted at client side using the Pod api implemented as a simple database on top of the off chain worker local storage. The data would be anonymous at the storage layer and encrypted with access to ID available only to owner(s) of the NFT controlled via a smart contract. 
+We propose to store data encrypted at client side using the Pod api implemented as a simple database on top of the off chain worker local storage. The data would be anonymous at the storage layer and
+encrypted with access to ID available only to owner(s) of the NFT controlled via a smart contract. 
+This is made possible by our extension to the Off chain worker storage API such that each node that stores data checks if request is coming with a valid signature proving ownership of an account that has the NFT created by the account holder. The distributed smart contract will keep a record of data hashes and account owners as per the reference publication in Nature.
 Later we could add functionality to decrypt data at the smart contract level once access to an HSM or secure key storage becomes native to the chain.  
 Thus, in this first phase the data may be encrypted outside the blockchain through the Sidecar container service which we will specify and provide a reference implementation.
 - The data 
