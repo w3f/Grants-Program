@@ -62,16 +62,16 @@ We are interested in creating this project because it solves one of the biggest 
 
 <img width="569" alt="newmearchitecture" src="https://user-images.githubusercontent.com/52800276/184610535-0473eae5-c295-4bdd-8259-369b36a796d6.PNG">
 
-Our solution has two major components, the Me App and the Me protocol. 
+Our solution has two major components: the Me App and the Me protocol. 
 
 The Me App contains all the necessary interfaces, services, microservices and infrastructure that allows people (personal users) to sync/keep track/ connect their loyalty rewards and interact with offers pushed to them from the various businesses on our platforms that issued those rewards.
-These persons can then redeem their rewards for the offers and in return get some unique item/coupon with which they can claim these offers at the brand store. The Me App also handles all the logic for managing brands, allowing them push offers to their customers and providing them with due analytics on the perfomance of their rewards and offers in our ecosystem.
+These persons can redeem their rewards for the offers and in return get some unique item/coupon/QRcode with which they can claim these offers at the brand store. The Me App also handles all the logic for managing brands, allowing them push offers to their customers and providing them with due analytics on the perfomance of their rewards and offers in our ecosystem.
 
-The Me Protocol contains all the contracts, libraries and abstract contracts used to manage tokenized brand rewards, swap them and route them to appropriate wallets. It also contains the various utilities for the peculiar brand pools such as the brand fee pool, the brand treasury pool and the brand bouty pool.
+The Me Protocol contains all the contracts, libraries and abstract contracts used to manage tokenized brand rewards, swap them and route them to appropriate wallets. It also contains the various utilities for the peculiar brand pools such as the brand fee pool, the brand treasury pool and the brand bounty pool.
 
 The brand fee pool, is a pool of me tokens used to pay for all payable services charged against a brand on the Me protocol. This pool would be debited when a brand directly or indirectly carries out a cost bearing activity or subscribe to a premium service. Brands can directly top up this pool via card purchases.  
 
-The brand treasury pool hold me tokens that brands earn when holders of their tokens redeem them for offers from another brand, these tokens are charged on the receiving brand. The brand bounty pool holds brand tokens which will be used to reward certain bounty tasks given to the general community. The bounty tokens are obtained from the exchange charge on a user when the user swaps the brand token for another brand. The tasks for this bouty are strictly related to the concerned brand
+The brand treasury pool holds me tokens that brands earn when holders of their tokens redeem them for offers from another brand, these tokens are charged on the receiving brand. The brand bounty pool holds brand tokens which will be used to reward certain bounty tasks given to the general community. The bounty tokens are obtained from the exchange charge on a user when the user swaps the brand token for another brand. The tasks for this bounty are strictly related to the concerned brand
 
 
 
