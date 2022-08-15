@@ -110,13 +110,13 @@ Primis Team already completed the designing work of Primis Desktop and started w
 
 - **Total Estimated Duration:**  15 weeks
 - **Full-Time Equivalent (FTE):**   3 FTE
-- **Total Costs:**  30,000 USD
+- **Total Costs:**  28,000 USD
 
 ### Milestone 1 - Polkadot ECO Wallet
 
 - **Estimated duration:** 6 weeks
 - **FTE:**  3
-- **Costs:** 12 ,000 USD
+- **Costs:** 10 ,000 USD
 
 | Number | Deliverable                    | Specification                                                |
 | -----: | ------------------------------ | ------------------------------------------------------------ |
@@ -126,7 +126,7 @@ Primis Team already completed the designing work of Primis Desktop and started w
 |    0d. | Docker                         | Wallet application does not require Docker, and we would provide a client for users to install under Windows/MacOS system. |
 |     1. | Build app structure            | We will have the core structure of the application in place. |
 |     2. | Implement wallet view          | Create, import, view, and transfer functions will be provided by the integrated Polkadot wallet.|
-|     3. | Build Polkadot ECO wallet      | Checking, sending, receiveing assets of Kusama, Moonbeam, and Acale will be provided for Primis users.  |
+|     3. | Build Polkadot ECO wallet      | Checking, sending, receiveing assets of Kusama, Moonbeam, and Acala will be provided for Primis users.  |
 |     4. | NFT assets management          | NFT assets can be viewed, sent, and received under Primis. |
 |     5. | Setup Primis NFT avatar        | Users can set NFTs as their wallet avatars.                           |
 
