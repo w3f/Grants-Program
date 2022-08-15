@@ -59,7 +59,6 @@ We are interested in creating this project because it solves one of the biggest 
 - Figma Flow: Process flow: https://www.figma.com/file/6eTKTZZffsceFQPEXpyzjl/My-AI-Partner-Onboarding?node-id=0%3A1
 - Tech Stack: RUST, Solidity, TypeSript, React, Nest, PostgreSQL e.t.c 
 - Architectural Summary
-- 
 <img width="571" alt="mearchitecture" src="https://user-images.githubusercontent.com/52800276/184602916-da09b187-8912-42e1-b940-bbd755c97edd.PNG">
 
 
