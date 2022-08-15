@@ -231,7 +231,7 @@ Summary
 
 - **Total Estimated Duration:** 0.5 years for MVP parachain
 - **Full-Time Equivalent (FTE):** 2 
-- **Total Costs:** 500 000 of which some will be covered by founders Requested amount in USD for the whole project min 100,000 USD till MVP stage. 
+- **Total Costs:** 30 000 for these two initial stages 
 
 ### Milestone 1 Example — Implement runtime with Substrate Chain API configured with the features described above
 - 
@@ -254,12 +254,18 @@ Summary
 |    5a. | Extend Off chain worker Data Pallet       | Implementation Off chain worker encryption and decryption module that can authorize decryption when verified by a smart contract                                                                                                                                                             |
 |    5b. | Data Validation on store                  | Validation check every data stored on node against a hash must have a corresonding entry in template smart contract. In this first instance data storage will be assumed to be trusted as long as parachain node operator is trusted and hashes match the blockchain smart contract          |
 |    6a. | API Documentation                         | Document Off chain encryption decryption API and create                                                                                                                                                                                                                                      |
-
+- **Estimated duration:** 1 months
+- **FTE:**  2
+- **Costs:** 5,000 USD
 ### Milestone 2 - Kusama based testing
-| Number | Deliverable                                 | Specification                                                                                                                                                                                                                                                                                |
-|-------:|---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    6b. | Kusama Reference Testing                    | Deploy full demo application on the test Subtrate chain on Kusama that reads and writes encrypted medical data into the preformated data structure documented above.                                                                                                                         |
-|    7a. | Encryption service linked to smart contract | Smart contract checking service build as pallet extension: Only owners of the NFT will be able to access the encrypted data within using the sidecar service. Control encryption to and from the data storage layer.                                                                         |
+| Number | Deliverable                 | Specification                                                                                                                                                                                                                                                                                |
+|-------:|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                     | Apache 2.0                                                                                                                                                                                                                                                                                   |
+|    0b. | Documentation               | [Link to why healthcare decentralised](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)                                                                                                                                                      |
+|    0c. | Testing Guide               | Each epic describes testing opportunities.  [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) 2. Create openapi specifcations for reading and writing data to and from the NFT smart contract (Depends on blockchain nft tech used) . |
+|    0d. | Docker                      | A dockerized setup of the parachain will be provided after several iterations when we have a working secure application against a customised subtrate blockchain with extended off chain worker local storage                                                                                |
+|    6b. | Kusama Reference Deployment | Deploy full demo application on the test Subtrate chain on Kusama that reads and writes encrypted medical data into the preformated data structure documented above.                                                                                                                         |
+|    7a. | Example application         | Example application that uses the off chain worker extensions developed as part of mileston one showing control of data and reliability under three scenario - node failure, node recovery and encryption.                                                                                   |
 
 
 ## Future Plans
@@ -268,6 +274,7 @@ Summary
 to be processed in encrypted form Extension module to connect to NHS app and other health systems around the work.
 - Offchain bridger for faster processing in case of trusted thirdparties
 - Promotion through partnerships with private and public clinics 
+- Fully distribute storage of the off chain worker
 
 ## Additional Information :heavy_plus_sign:
 ## References:
