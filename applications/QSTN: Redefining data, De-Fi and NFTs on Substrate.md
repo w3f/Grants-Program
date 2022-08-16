@@ -248,10 +248,8 @@ For each milestone,
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a Medium article that documents our transition to Polkadot and details how users of QSTN can connect their DOT wallet to our application, mint & transfer purchased media onto the DOT blockchain as well as save their survey ID on-chain on DOT. 
-| 1. | Substrate module: X | 
-| 2. | Substrate module: Y | 
-| 3. | Substrate module: Z | We will create a Substrate model that will allow users to create a survey, invite other users to create a survey for their business, add questions (metadata), remove questions (metadata), give permission as to who can answer and list created surveys.  
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way to allow admin to create surveys, invite businesses to create their own surveys, and give permissions as to who can answer a survey [Z], if users accrue credits then mint media from our marketplace [X] and once the user has connected a DOT wallet, trasnfer it to their preferred address for true NFT ownership [Y] and then save the completed survey ID on-chain as proof of completion [Z] 
+| 1. | Substrate module: X | We will create a Substrate model that will allow users to create a survey, invite other users to create a survey for their business, add questions (metadata), remove questions (metadata), give permission as to who can answer and list created surveys.  
+| 2. | Substrate chain | Module X our custom chain will interact in such a way to allow users to connect their DOT wallet to our application, mint media on the DOT chain as well as create surveys, invite businesses to create their own surveys, and give permissions as to who can answer a survey [X] and then save the completed survey ID on-chain as proof of completion [X] 
 
 ...
 
