@@ -2,7 +2,7 @@
 
 - **Project Name:** Redstone Network
 - **Team Name:** Redstone Network
-- **Payment Address:** 0x24cfc36f699dacc5cb652630ddd894a8df658233 (BNB Smart Chain BEP20 USDT)
+- **Payment Address:** 0x24cfc36f699dacc5cb652630ddd894a8df658233 (Ethereum ERC20 USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
