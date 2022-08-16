@@ -248,39 +248,8 @@ For each milestone,
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a Medium article that documents our transition to Polkadot and details how users of QSTN can connect their DOT wallet to our application, mint & transfer purchased media onto the DOT blockchain as well as save their survey ID on-chain on DOT. 
-| 1. | Substrate module: X | We will integrate a Substrate module that will allow users to mint digital media from our NFT marketplace onto the Polkadot blockchain [pub fn mint(
-			origin: OriginFor<T>,
-			collection: T::CollectionId,
-			item: T::ItemId,
-			owner: <T::Lookup as StaticLookup>::Source,
-		) -> DispatchResult {
-			let origin = ensure_signed(origin)?;
-			let owner = T::Lookup::lookup(owner)?;
-
-			Self::do_mint(collection, item, owner, |collection_details| {
-				ensure!(collection_details.issuer == origin, Error::<T, I>::NoPermission);
-				Ok(())
-			})
-		}
-Source = https://github.com/paritytech/substrate/tree/master/frame/uniques]
-| 2. | Substrate module: Y | We will integrate a Substrate module that will allow users to transfer digital media from our NFT marketplace onto the DOT blockchain to their specified wallet [pub fn transfer(
-			origin: OriginFor<T>,
-			collection: T::CollectionId,
-			item: T::ItemId,
-			dest: <T::Lookup as StaticLookup>::Source,
-		) -> DispatchResult {
-			let origin = ensure_signed(origin)?;
-			let dest = T::Lookup::lookup(dest)?;
-
-			Self::do_transfer(collection, item, dest, |collection_details, details| {
-				if details.owner != origin && collection_details.admin != origin {
-					let approved = details.approved.take().map_or(false, |i| i == origin);
-					ensure!(approved, Error::<T, I>::NoPermission);
-				}
-				Ok(())
-			})
-		}
-Source = https://github.com/paritytech/substrate/tree/master/frame/uniques]
+| 1. | Substrate module: X | 
+| 2. | Substrate module: Y | 
 | 3. | Substrate module: Z | We will create a Substrate model that will allow users to create a survey, invite other users to create a survey for their business, add questions (metadata), remove questions (metadata), give permission as to who can answer and list created surveys.  
 | 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way to allow admin to create surveys, invite businesses to create their own surveys, and give permissions as to who can answer a survey [Z], if users accrue credits then mint media from our marketplace [X] and once the user has connected a DOT wallet, trasnfer it to their preferred address for true NFT ownership [Y] and then save the completed survey ID on-chain as proof of completion [Z] 
 
