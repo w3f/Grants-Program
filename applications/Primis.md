@@ -4,7 +4,7 @@
 - **Project Name:** Primis
 - **Team Name:** Primis
 - **Payment Address:** 0x0Ad212E301AD590f4E70dA0c0Aa2912273cB4098 (USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 
 ## Project Overview
@@ -108,9 +108,9 @@ Primis Team already completed the designing work of Primis Desktop and started w
 
 ### Overview
 
-- **Total Estimated Duration:**  15 weeks
+- **Total Estimated Duration:**  6 weeks
 - **Full-Time Equivalent (FTE):**   3 FTE
-- **Total Costs:**  28,000 USD
+- **Total Costs:**  10,000 USD
 
 ### Milestone 1 - Polkadot ECO Wallet
 
@@ -130,72 +130,9 @@ Primis Team already completed the designing work of Primis Desktop and started w
 |     4. | NFT assets management          | NFT assets can be viewed, sent, and received under Primis. |
 |     5. | Setup Primis NFT avatar        | Users can set NFTs as their wallet avatars.                           |
 
-
-### Milestone 2 - P2P Chat
-
-- **Estimated Duration:** 4 weeks
-- **FTE:**  3
-- **Costs:** 8,000 USD
-
-| Number | Deliverable         | Specification                                                |
-| -----: | ------------------- | ------------------------------------------------------------ |
-|    0a. | License             | MIT                                                          |
-|    0b. | Documentation       | We would provide an **inline document** of code and tutorial docs that explain how users can install it. |
-|    0c. | Testing Guide       | Unit tests will cover all core functions to ensure functionality and viability. We will describe how to run the tests in the tutorial. |
-|    0d. | Docker              | Create docker image                                          |
-|     1. | Build app structure | We will have the core structure of the application in place. |
-|     2. | Build chat structure | We will provide the P2P chat function.                      |
-|     3. | Build chat-room view | Users are able to create chat-room channels, join chat-room channels, and chat in these channels.|
-|     4. | Build chat-room searching service | Users can join chat-room channels they like by searching channel ID or channel name.|
-
-
-
-### Milestone 3 - Subscribe
-
-- **Estimated Duration:** 3 weeks
-- **FTE:**  3
-- **Costs:** 6,000 USD
-
-| Number | Deliverable         | Specification                                                |
-| -----: | ------------------- | ------------------------------------------------------------ |
-|    0a. | License             | MIT                                                          |
-|    0b. | Documentation       | We would provide an **inline document** of code and tutorial docs that explain how users can install it. |
-|    0c. | Testing Guide       | Unit tests will cover all core functions to ensure functionality and viability. We will describe how to run the tests in the tutorial. |
-|    0d. | Docker              | Create docker image                                          |
-|     1. | build app structure | We will have the core structure of the application in place. |
-|     2. | Build subscribe module | Messages transferring, sending, and receiving can be provided. |
-|     3. | Build subscribe view   | Users are able to subscribe and receive decentralized notifications under Primis.                |
-|     4. | Build chain notification view | Users can subscribe to Polkadot chain’s changes and then receive notifications.                   |
-|     5. | Build parachains notification view | Users can subscribe to Kusama, Moonbeam, and Acala chain’s changes, and then receive their notifications.           |
-
-
-
-### Milestone 4 - Web3 PNS Browser
-
-- **Estimated Duration:**  2 weeks
-- **FTE:**  3
-- **Costs:** 4,000 USD
-
-| Number | Deliverable         | Specification                                                |
-| -----: | ------------------- | ------------------------------------------------------------ |
-|    0a. | License             | MIT                                                          |
-|    0b. | Documentation       | We would provide an **inline document** of code and tutorial docs that explain how users can install it.  |
-|    0c. | Testing Guide       | Unit tests will cover all core functions to ensure functionality and viability. We will describe how to run the tests in the tutorial. |
-|    0d. | Docker              | Wallet application does not require Docker, and we would provide a client that integrates Browser for users to install under Windows/MacOS system. |
-|     1. | Build app structure | We will have the core structure of the application in place. |
-|     2. | Build Browser view    | We will provide the Browser functions view.                               |
-|     3. | Build PNS         | We will parse PNS in Browser.                           |
-|     4. | PNS visit             | We will support all DApps that have PNS                              |
-
-
-
-
-
-
-
 ## Future Plans
 
-Short-term: After finishing the milestones, the users' amount of Primis web3 desktop will be over 50K.
+Short-term: After finishing all milestones, the users' amount of Primis web3 desktop will be over 50K.
 
 Long-term:  The most influenced Web3 desktop 
 
