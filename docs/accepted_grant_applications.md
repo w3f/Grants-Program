@@ -532,4 +532,6 @@
 | [Meta Defender Team](https://github.com/Meta-Defender/) | Meta Defender | [GitHub](https://github.com/Meta-Defender/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [ParaSpell](https://github.com/dudo50/ParaSpell) | ParaSpell | [GitHub](https://github.com/dudo50/ParaSpell) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Primis Labs](https://github.com/Primis-Labs) | Primis | [GitHub](https://github.com/Primis-Labs/client) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Uke](https://github.com/Uke-Messaging) | Uke Messaging - PoC - Phase 1 | [GitHub](https://github.com/Uke-Messaging) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+
 
