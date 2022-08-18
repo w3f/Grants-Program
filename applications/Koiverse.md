@@ -5,6 +5,7 @@
 * **Project:** Koi Metaverse
 * **Proposer:** https://github.com/KoiMetaverse
 * **Payment Address:** 0xfADc3c36E41D36796ca05B4D55b148725c804cE0
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/678#issuecomment-1204360469)
 
 
 # Project Overview
