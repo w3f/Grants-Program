@@ -33,10 +33,10 @@ c. Most consumers will not bother to search for loyalty redemption options, then
  **Solution** – We are building a dedicated **‘reverse’ marketplace** for blockchain-based loyalty rewards. Simplified redemption, for everyone, from every brand, with the exchange complexity hidden in the background.
 
 2. **Liquidity** – Just because a brand wants to release reward tokens, doesn’t mean they can be easily exchanged in a marketplace.
-a. What is the value of these reward tokens?
-b. How do we ensure that the exchange brings benefits to the brand as well?
-c. How do we balance inflow and outflow and drive new customers to brands?
-d. What do we do about tokens on different blockchains?
+ a. What is the value of these reward tokens?
+ b. How do we ensure that the exchange brings benefits to the brand as well?
+ c. How do we balance inflow and outflow and drive new customers to brands?
+ d. What do we do about tokens on different blockchains?
 
  **Solution: The Me Protocol.** Specifically designed to power the emerging brand economy by facilitating the exchange of brand loyalty rewards. 
 
