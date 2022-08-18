@@ -14,7 +14,6 @@
  It is a blockchain protocol that will power the first decentralized multi-vendor loyalty ecosystem for brands competing in the Web3 space.
 
 **Background:**
-
 **Loyalty rewards are moving to a blockchain near you.**
 Wouldn’t it be great if you could buy a coffee with unused airline miles? Or if your rewards never expired, and you could trade them? Whether it’s sports teams, airlines, hotels, Highstreet fashion or your local pizzeria, brands from almost every sector are looking to take advantage of what blockchain technology can do to transform the **$180b in global loyalty rewards by allowing rewards to be exchanged and redeemed across brands.** 
 
