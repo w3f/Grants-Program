@@ -1,16 +1,12 @@
 # W3F Grant Proposal
 
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
 - **Project Name:** Me Protocol
 - **Team Name:** My AI
-- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-- **[Level]:** 2
+- **Payment Address:** Ethereum: 0xB35da2E7380a2580Acdc0ca5DEa9e2B152155e84 (USDC)
+- **[Level]:** 2 
 
 
 ## Project Overview :page_facing_up:
-
-If this application is in response to an RFP, please indicate this on the first line of this section.
 
 ### Overview
 
@@ -18,6 +14,7 @@ If this application is in response to an RFP, please indicate this on the first 
  It is a blockchain protocol that will power the first decentralized multi-vendor loyalty ecosystem for brands competing in the Web3 space.
 
 **Background:**
+
 **Loyalty rewards are moving to a blockchain near you.**
 Wouldn’t it be great if you could buy a coffee with unused airline miles? Or if your rewards never expired, and you could trade them? Whether it’s sports teams, airlines, hotels, Highstreet fashion or your local pizzeria, brands from almost every sector are looking to take advantage of what blockchain technology can do to transform the **$180b in global loyalty rewards by allowing rewards to be exchanged and redeemed across brands.** 
 
@@ -30,19 +27,18 @@ Wouldn’t it be great if you could buy a coffee with unused airline miles? Or i
 **Making blockchain-based rewards work in practice however requires solving two general problems:**
 
 1. **Accessibility** – Simply creating a reward token that can be exchanged doesn’t mean that it will be exchanged.
-a.Where do you go to redeem the rewards? 
-b.How do you exchange them? 
-c.Most consumers will not bother to search for loyalty redemption options, then go find a DEX, then a peer and then calculate what they need to swap to get the rewards they need.
-**Solution** – We are building a dedicated **‘reverse’ marketplace** for blockchain-based loyalty rewards. Simplified redemption, for everyone, from every brand, with the exchange complexity hidden in the background.
+a. Where do you go to redeem the rewards? 
+b. How do you exchange them? 
+c. Most consumers will not bother to search for loyalty redemption options, then go find a DEX, then a peer and then calculate what they need to swap to get the rewards they need.
+ **Solution** – We are building a dedicated **‘reverse’ marketplace** for blockchain-based loyalty rewards. Simplified redemption, for everyone, from every brand, with the exchange complexity hidden in the background.
 
 2. **Liquidity** – Just because a brand wants to release reward tokens, doesn’t mean they can be easily exchanged in a marketplace.
-a.What is the value of these reward tokens?
-b.How do we ensure that the exchange brings benefits to the brand as well?
-c.How do we balance inflow and outflow and drive new customers to brands?
-d.What do we do about tokens on different blockchains?
+a. What is the value of these reward tokens?
+b. How do we ensure that the exchange brings benefits to the brand as well?
+c. How do we balance inflow and outflow and drive new customers to brands?
+d. What do we do about tokens on different blockchains?
 
-
-**Solution: The Me Protocol.** Specifically designed to power the emerging brand economy by facilitating the exchange of brand loyalty rewards. 
+ **Solution: The Me Protocol.** Specifically designed to power the emerging brand economy by facilitating the exchange of brand loyalty rewards. 
 
 **Why are we motivated to build in the Substrate/Polkadot/Kusama ecosystem?**
 We like the ecosystem for several reasons:
