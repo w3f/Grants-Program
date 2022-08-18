@@ -18,15 +18,14 @@ If this application is in response to an RFP, please indicate this on the first 
  It is a blockchain protocol that will power the first decentralized multi-vendor loyalty ecosystem for brands competing in the Web3 space.
 
 **Background:**
-
-**Loyalty rewards are moving to a blockchain near you**
+**Loyalty rewards are moving to a blockchain near you.**
 Wouldn’t it be great if you could buy a coffee with unused airline miles? Or if your rewards never expired, and you could trade them? Whether it’s sports teams, airlines, hotels, Highstreet fashion or your local pizzeria, brands from almost every sector are looking to take advantage of what blockchain technology can do to transform the **$180b in global loyalty rewards by allowing rewards to be exchanged and redeemed across brands.** 
 
 **Blockchain-based rewards are great for consumers, but also for brands:**
-1.Customers not using rewards are **3x more likely to defect from a brand.**
-2.While brands try their best to provide attractive offers, **less than half of rewards are actually used.** This is **$90b of value left on the table.**
-3.Rewards on a blockchain can be more easily exchanged than traditional points, meaning **when a current customer cannot immediately use their rewards, they can exchange them with someone who can.**
-4.This means **existing customers are happy and new customers are acquired** – unachievable with traditional loyalty programs.
+1. Customers not using rewards are **3x more likely to defect from a brand.**
+2. While brands try their best to provide attractive offers, **less than half of rewards are actually used.** This is **$90b of value left on the table.**
+3. Rewards on a blockchain can be more easily exchanged than traditional points, meaning **when a current customer cannot immediately use their rewards, they can exchange them with someone who can.**
+4. This means **existing customers are happy and new customers are acquired** – unachievable with traditional loyalty programs.
 
 **Making blockchain-based rewards work in practice however requires solving two general problems:**
 
