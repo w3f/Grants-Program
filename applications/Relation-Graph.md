@@ -7,6 +7,7 @@
 - **Team Name:** Relationlabs
 - **Payment Address:** 0x9fE784bD844C6c7eB7a570467937e6005eEd1C4C   Ethereum (USDT/DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/928#issuecomment-1219245113)
 
 
 ## Project Overview :page_facing_up:  
