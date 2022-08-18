@@ -26,9 +26,9 @@ Wouldn’t it be great if you could buy a coffee with unused airline miles? Or i
 
 **Making blockchain-based rewards work in practice however requires solving two general problems:**
 -  **Accessibility** – Simply creating a reward token that can be exchanged doesn’t mean that it will be exchanged.
-  1. Where do you go to redeem the rewards? 
-  2. How do you exchange them? 
-  3. Most consumers will not bother to search for loyalty redemption options, then go find a DEX, then a peer and then calculate what they need to swap to get the rewards they need.
+  i. Where do you go to redeem the rewards? 
+  ii.  How do you exchange them? 
+  iii.  Most consumers will not bother to search for loyalty redemption options, then go find a DEX, then a peer and then calculate what they need to swap to get the rewards they need.
 
     **Solution** – We are building a dedicated **‘reverse’ marketplace** for blockchain-based loyalty rewards. Simplified redemption, for everyone, from every brand,       with the exchange complexity hidden in the background.
 
