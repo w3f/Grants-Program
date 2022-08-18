@@ -30,15 +30,15 @@ Wouldn’t it be great if you could buy a coffee with unused airline miles? Or i
   2.  How do you exchange them? 
   3.  Most consumers will not bother to search for loyalty redemption options, then go find a DEX, then a peer and then calculate what they need to swap to get the rewards they need.
 
-    **Solution** – We are building a dedicated **‘reverse’ marketplace** for blockchain-based loyalty rewards. Simplified redemption, for everyone, from every brand,       with the exchange complexity hidden in the background.
+   **Solution** – We are building a dedicated **‘reverse’ marketplace** for blockchain-based loyalty rewards. Simplified redemption, for everyone, from every brand,       with the exchange complexity hidden in the background.
 
-2. **Liquidity** – Just because a brand wants to release reward tokens, doesn’t mean they can be easily exchanged in a marketplace.
- - What is the value of these reward tokens?
- - How do we ensure that the exchange brings benefits to the brand as well?
- - How do we balance inflow and outflow and drive new customers to brands?
- - What do we do about tokens on different blockchains?
+ -  **Liquidity** – Just because a brand wants to release reward tokens, doesn’t mean they can be easily exchanged in a marketplace.
+ 1. What is the value of these reward tokens?
+ 2.  How do we ensure that the exchange brings benefits to the brand as well?
+ 3. How do we balance inflow and outflow and drive new customers to brands?
+ 4.  What do we do about tokens on different blockchains?
  
-     **Solution: The Me Protocol.** Specifically designed to power the emerging brand economy by facilitating the exchange of brand loyalty rewards. 
+   **Solution: The Me Protocol.** Specifically designed to power the emerging brand economy by facilitating the exchange of brand loyalty rewards. 
 
 **Why are we motivated to build in the Substrate/Polkadot/Kusama ecosystem?**
 We like the ecosystem for several reasons:
