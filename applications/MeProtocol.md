@@ -29,12 +29,14 @@ Wouldn’t it be great if you could buy a coffee with unused airline miles? Or i
 4.This means **existing customers are happy and new customers are acquired** – unachievable with traditional loyalty programs.
 
 **Making blockchain-based rewards work in practice however requires solving two general problems:**
-1.**Accessibility** – Simply creating a reward token that can be exchanged doesn’t mean that it will be exchanged.
+
+1. **Accessibility** – Simply creating a reward token that can be exchanged doesn’t mean that it will be exchanged.
 a.Where do you go to redeem the rewards? 
 b.How do you exchange them? 
 c.Most consumers will not bother to search for loyalty redemption options, then go find a DEX, then a peer and then calculate what they need to swap to get the rewards they need.
 **Solution** – We are building a dedicated **‘reverse’ marketplace** for blockchain-based loyalty rewards. Simplified redemption, for everyone, from every brand, with the exchange complexity hidden in the background.
-2.**Liquidity** – Just because a brand wants to release reward tokens, doesn’t mean they can be easily exchanged in a marketplace.
+
+2. **Liquidity** – Just because a brand wants to release reward tokens, doesn’t mean they can be easily exchanged in a marketplace.
 a.What is the value of these reward tokens?
 b.How do we ensure that the exchange brings benefits to the brand as well?
 c.How do we balance inflow and outflow and drive new customers to brands?
@@ -64,14 +66,14 @@ We are interested in creating this project because it solves one of the biggest 
 
 Our solution has two major components: the Me App and the Me protocol. 
 
-The Me App contains all the necessary interfaces, services, microservices and infrastructure that allows people (personal users) to sync/keep track/ connect their loyalty rewards and interact with offers pushed to them from the various businesses on our platforms that issued those rewards.
-These persons can redeem their rewards for the offers and in return get some unique item/coupon/QRcode with which they can claim these offers at the brand store. The Me App also handles all the logic for managing brands, allowing them push offers to their customers and providing them with due analytics on the perfomance of their rewards and offers in our ecosystem.
+Our solution has two major components: the Me App and the Me Protocol.
 
-The Me Protocol contains all the contracts, libraries and abstract contracts used to manage tokenized brand rewards, swap them and route them to appropriate wallets. It also contains the various utilities for the peculiar brand pools such as the brand fee pool, the brand treasury pool and the brand bounty pool.
+The Me App contains all the necessary interfaces, services, microservices and infrastructure that allows consumers (individual users) to sync/manage/connect their loyalty rewards and interact with offers pushed to them from the various brands and businesses on our platforms that issued those rewards. These users can redeem their rewards for offers in the marketplace. The Me App also handles all the logic for managing brand accounts, allowing them to push offers to their customers and providing them with analytics on the performance of their rewards programs and offers in our ecosystem.
 
-The brand fee pool, is a pool of me tokens used to pay for all payable services charged against a brand on the Me protocol. This pool would be debited when a brand directly or indirectly carries out a cost bearing activity or subscribe to a premium service. Brands can directly top up this pool via card purchases.  
+The Me Protocol contains all the contracts, libraries and abstract contracts used to manage tokenized brand rewards, swap them and route them to appropriate wallets. It also contains the various utilities for managing pools such as the brand fee pool, brand treasury pool, and brand bounty pool.
 
-The brand treasury pool holds me tokens that brands earn when holders of their tokens redeem them for offers from another brand, these tokens are charged on the receiving brand. The brand bounty pool holds brand tokens which will be used to reward certain bounty tasks given to the general community. The bounty tokens are obtained from the exchange charge on a user when the user swaps the brand token for another brand. The tasks for this bounty are strictly related to the concerned brand
+The brand fee pool is a pool of Me Tokens used to pay for services charged against a brand on the Me protocol. This pool would be debited when a brand directly or indirectly carries out a cost-bearing activity or subscribes to premium services. Managed and semi-managed services allow brands to top up their pools.
+The brand treasury pool holds Me Tokens that brands earn when holders of their tokens redeem them for offers from another brand, these tokens are taken from the receiving brand’s pools. The brand bounty pool holds brand tokens that will be used to reward certain bounty tasks given to the general community. The bounty tokens are obtained from the exchange charged to a user when the user swaps one brand token for another brand token, and bounty jobs are issued.
 
 
 
