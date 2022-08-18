@@ -132,13 +132,13 @@ some of the projects that are live right now.
 
 - **Total Estimated Duration:** 150-180 Days  
 - **Full-Time Equivalent (FTE):**  5 FTFE
-- **Total Costs:** 1.3 Million USD 
+- **Total Costs:** 10000 USD 
 
 ### Milestone 1 The Tech — Implement infrastructure along with bridges
 
 - **Estimated duration:** 60-100  Days 
 - **FTE:**  5
-- **Costs:** 300,000 USD
+- **Costs:** 6000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -157,7 +157,7 @@ some of the projects that are live right now.
 
 - **Estimated Duration:** 90-100 days
 - **FTE:**  5
-- **Costs:** 330,000 USD
+- **Costs:** 4000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
