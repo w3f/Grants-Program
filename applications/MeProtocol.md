@@ -25,19 +25,19 @@ Wouldn’t it be great if you could buy a coffee with unused airline miles? Or i
 4. This means **existing customers are happy and new customers are acquired** – unachievable with traditional loyalty programs.
 
 **Making blockchain-based rewards work in practice however requires solving two general problems:**
-
 1. **Accessibility** – Simply creating a reward token that can be exchanged doesn’t mean that it will be exchanged.
 -  Where do you go to redeem the rewards? 
 -  How do you exchange them? 
 -  Most consumers will not bother to search for loyalty redemption options, then go find a DEX, then a peer and then calculate what they need to swap to get the rewards they need.
+
  **Solution** – We are building a dedicated **‘reverse’ marketplace** for blockchain-based loyalty rewards. Simplified redemption, for everyone, from every brand, with the exchange complexity hidden in the background.
 
 2. **Liquidity** – Just because a brand wants to release reward tokens, doesn’t mean they can be easily exchanged in a marketplace.
- a. What is the value of these reward tokens?
- b. How do we ensure that the exchange brings benefits to the brand as well?
- c. How do we balance inflow and outflow and drive new customers to brands?
- d. What do we do about tokens on different blockchains?
-
+ - What is the value of these reward tokens?
+ - How do we ensure that the exchange brings benefits to the brand as well?
+ - How do we balance inflow and outflow and drive new customers to brands?
+ - What do we do about tokens on different blockchains?
+ 
  **Solution: The Me Protocol.** Specifically designed to power the emerging brand economy by facilitating the exchange of brand loyalty rewards. 
 
 **Why are we motivated to build in the Substrate/Polkadot/Kusama ecosystem?**
@@ -47,9 +47,6 @@ We like the ecosystem for several reasons:
 - Our exchange functionality utilizes the concept of decentralized exchanges but engineered for loyalty rewards, leveraging Polkadot's ecosystem for cross-chain operations.
 - As we continue to develop our protocol, it should integrate with other related protocols and be used by other applications without being constrained to one network.
 
-
-**Why are we interested in creating this project?**
-We are interested in creating this project because it solves one of the biggest problem in the loyalty space, a problem causing an estimate of over $90billion effective loss. We have done a great study of the space and can clearly see that the solution is heavily needed and would be eventually implemented by any team who pays close attention to the loyalty space even if we don’t implement it.
 
 ### Project Details
 
