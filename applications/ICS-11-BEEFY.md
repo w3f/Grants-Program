@@ -126,6 +126,11 @@ Merge requests for the MMR repo:
 
 ## Development Roadmap :nut_and_bolt:
 
+### Overview
+- Total Estimated Duration: 3 months
+- Full-Time Equivalent (FTE): 2
+- Total Costs: 30,000 USD
+
 ### Milestone 1: BEEFY-Go Library — Implementing the BEEFY Finality Verification Library
 
 - Completed, cost covered by Composable Finance through Interchain grant.
