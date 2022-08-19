@@ -126,6 +126,20 @@ some of the projects that are live right now.
 
 
 ## Development Roadmap :nut_and_bolt:
+The Dapp will be using a combination of the following languages and frameworks:
+
+
+For Smart contract and internal frameworks
+-Solidity 
+-Python
+-C++ 
+-JavaScript
+-Shell 
+
+For Front and Back-end
+-Angular
+-React 
+-Mongo DB
 
 
 ### Overview
@@ -140,6 +154,12 @@ some of the projects that are live right now.
 - **FTE:**  5
 - **Costs:** 6000 USD
 
+All of the  bridges are operated by a group of permissionless, decentralised bridge nodes that are re-elected every single month. These nodes collectively use a combination of Secure Multipart Computation (sMPC) and Shamir’s Secret Sharing (SSS) to collectively generate signatures to secure crosschain assets. This approach is far more secure than the multisig approach used by many other crosschain bridges. Additionally, this approach ensures that no single node or entity ever has access to a user’s assets.
+
+The Zebraswap will bridges also support a number of non-EVM networks. This means that traditionally isolated assets like BTC, LTC, XRP and DOT, just to name a few, can be transferred to blockchains with vibrant DeFi ecosystems like Ethereum, Avalanche,  and Fantom, the list is endless. With Zebraswap we aim to do just that, by having a these vibrant ecosystems move over to our platform on polkadot.
+
+
+
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License |MIT  |
@@ -147,10 +167,9 @@ some of the projects that are live right now.
 | 0c. | Testing Guide | Core functions and sub-core functions will be displayed for everyone for the community and other devs to test and implement into their systems.
 | 0d. | Docker | Docker files would be provided on the GitHub page, along with live versions of the milestones |
 | 0e. | Article | We will publish an **article**/workshop that explains the entire flow of the project, tutorials, and benefits 
-| 1.  | Developing the collateralized interoperable bridges and infrastructure design | The System infra will be built and ready to enable cross chains and multi-chain liquidity pools |  
+| 1.  | Developing the collateralized interoperable bridges and infrastructure design | The System infra will be built and ready to enable cross chains and multi-chain liquidity pools.These Bridges will revolve around the Polkadot chain (for e.g DOT<>BSC , DOT<>BTC and basically connecting different chains back to our dex on polkdadot |  
 | 2.  | Backend and front-end Development|Databases and intuitive UI/UX will be incorporated into the infra |  
-| 3.  |Staking platform integration| Staking features would be integrated into the platform for users to generate passive rewards and encourage TVL on the network.|  
-| 4.  | yield farm incorporations +liquidity pools | Yield Farms and liquidity pools will be incorporated to encourage LP distributions |  
+
 
 
 ### Milestone 2   — Additional features
@@ -164,9 +183,8 @@ some of the projects that are live right now.
 | 0a. | License |  MIT |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) can use the dapp and how other Dapps can interact with the bridges.
 | 0c. | Testing Guide | Core functions and sub-core functions will be displayed for everyone for the community and other devs to test and implement into their systems.
-| 0d. | NFT Bridges | Facility for NFT swaps on the platform |
-| 0e. | NFT x DEFI  | Features like staking, renting, and leasing NFTs on the platform 
-| 1.  | Exchange Integrations | Integrating DEFI Aggregators and exchanges to boost liquidity and have the concept of "imported" liquidity pools.
+| 0d. |Smart Contract development | Using solidity for smart contracts for the Dapp as wel as bridges |
+| 0e. | Front + Back-end development | The dApp will be built using the React framework, supported by a server less architecture and a MongoDB cloud database|
 
 
 ## Future Plans
@@ -177,6 +195,10 @@ Our vision is to connect one chain at a time through our dex making it a go-to D
 - Integration with key dapps on Polkadot as well as other blockchains for users to have a wider choice
 -Community engagement is crucial for us and at the top of our priority: while we will be using a different array of business strategies not limiting to Bounty campaigns, Airdrops, Trading events, and press
 Release, influencer onboarding, etc. We strongly believe in DIP: DIMO Improvement Proposals, where the community takes an active role in the development of the Dapp so that it becomes a Dapp that is for the community, by the community.
+
+| Future update 1. | NFT Bridges | Facility for NFT swaps on the platform |
+| Future update 2. | NFT x DEFI  | Features like staking, renting, and leasing NFTs on the platform 
+| Future update 3. | Exchange Integrations | Integrating DEFI Aggregators and exchanges to boost liquidity and have the concept of "imported" liquidity pools.
 
 
 
