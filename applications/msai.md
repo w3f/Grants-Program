@@ -113,9 +113,9 @@ Effecient storage of above tables as JSON
 
 
 ### An overview of the technology stack to be used
-- Parachain Scaling:  ![component](https://raw.githubusercontent.com/salmanmarvasti/Grants-Program/master/applications/img/component.png)
+- Parachain Scaling:  ![component](https://marvsai.com/img/component.png)
 - Each parachain node will be an IPFS like Solid Pod by extending the Off chain Worker local storage API
-- Nft representing medical data and access/ownership:  ![component](https://github.com/salmanmarvasti/Grants-Program/blob/master/applications/img/nft_Deploy.png?raw=true) 
+- Nft representing medical data and access/ownership:  ![component](https://marvsai.com/img/nft_Deploy.png) 
 - Documentation of core components, protocols, architecture, etc. to be deployed
 - PoC/MVP we have built backend services using Google GCP and need to now integrate with the Polkadot chain
 What we will provide :
