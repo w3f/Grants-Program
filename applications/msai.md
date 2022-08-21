@@ -15,7 +15,7 @@
 ### Overview
 Many patients use multiple clinics worldwide, but they face difficulty moving patient records, thus they have to take redundant duplicate tests. It is inconvenient and impractical to carry data folders over particularly between countries.  
 To solve this problem we gathered a team of doctors and Eegineers and designed an application. Before we go live, we wanted to store the data in a decentralised manner such that we can establish trust with multiple medical centers.
-For further background you can[ read our blog](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
+For further background you can[ read our blog](https://emerald-chicory-55c.notion.site/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
 
 Our goal is to customise a blockchain Pallet/OFW to provide an easy-to-use infrastructure for healthcare applications like Epic Systems Mychart. The data should be distributable accessible and auditable.
 Essentially we would like to implement something similar to w3c Solid pod integrated with a Substrate node.
