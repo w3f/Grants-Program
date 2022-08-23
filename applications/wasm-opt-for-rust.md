@@ -2,7 +2,7 @@
 
 - **Project Name:** `wasm-opt` for Rust
 - **Team Name:** Common Orbit LLC
-- **Payment Address:** (Polkadot aUSD) 143W7CfR2R1dbATX3RVtrYfDXUMju1ua9pQh9B3DpLsuuB5M
+- **Payment Address:** (Ethereum DAI) 0x2de31E52E24Df0588C64B27657D4F75e5462adEf
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
