@@ -233,13 +233,13 @@ For each milestone,
 
 - **Total Estimated Duration:** 2.5 months
 - **Full-Time Equivalent (FTE):**  6 employees (2 developers, 3 designers, 1 blockchain architect [Orrin])
-- **Total Costs:** 25,000 USD
+- **Total Costs:** 10,000 USD
 
 ### Milestone 1 Example — Implement Substrate Modules
 
 - **Estimated duration:** 2.5 months
 - **FTE:**  6 employees
-- **Costs:** 25,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
