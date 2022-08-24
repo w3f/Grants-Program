@@ -17,9 +17,9 @@ Many patients use multiple clinics worldwide, but they face difficulty moving pa
 To solve this problem we gathered a team of doctors and Eegineers and designed an application. Before we go live, we wanted to store the data in a decentralised manner such that we can establish trust with multiple medical centers.
 For further background you can[ read our blog](https://emerald-chicory-55c.notion.site/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
 
-Our goal is to customise a blockchain Pallet/OFW to provide an easy-to-use infrastructure for healthcare applications like Epic Systems Mychart. The data should be distributable accessible and auditable.
-Essentially we would like to implement something similar to w3c Solid pod integrated with a Substrate node.
-Integrating application specific security and storage for every application is a major pain point which is not addressed by blockchains.
+Our goal is to to provide an easy-to-use infrastructure for healthcare applications by customiinge a blockchain Pallet to be able to store information from applications like Epic Systems Mychart. The data should be distributable accessible and auditable.
+Essentially we would like to implement something similar to w3c Solid pod but integrated with a blockchain node Substrate node that can be used by all healthcare applications.
+Integrating application specific security and storage for every program is a major pain point which is not addressed by blockchains.
 A combination of a Substrate blockchain and Solid pod like api [5] would provide the security, decentralisation and immutable record keeping that is needed to make healthcare interoperable.
 To make this feasible it needs to be split into stages initially using a smart contract developed in Ink! - WebAssembly which records ownership and access [1] to a data pod with a similar API to Solid PODs [4].
 
