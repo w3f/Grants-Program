@@ -183,7 +183,7 @@ The Zebraswap will bridges also support a number of non-EVM networks. This means
 | 0a. | License |  MIT |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) can use the dapp and how other Dapps can interact with the bridges.
 | 0c. | Testing Guide | Core functions and sub-core functions will be displayed for everyone for the community and other devs to test and implement into their systems.
-| 0d. |Smart Contract development | Using !inksolidity for smart contract development on Polkadot |
+| 0d. |Smart Contract development | Using !ink for smart contract development on Polkadot |
 | 0e. |Smart Contract development #2 | Using solidity for smart contracts for the EVM compatible version connecting back to the main Dapp (A crosschain bridge transfers assets and/or data from a source chain to a target chain. In its most basic form, this is usually done by locking an asset on the source chain and minting a wrapped asset of the same value on the target chain. We call this the Lock-Mint-Burn-Unlock method. For the Lock-Mint-Burn-Unlock method to work, three main smart contracts are deployed: one on source chain to handle source assets, one on target chain to handle target assets, and one on a managing chain to handle registration and staking of bridge nodes. ) |
 | 0f. | Front + Back-end development | The dApp will be built using the React framework, supported by a server less architecture and a MongoDB cloud database|
 
