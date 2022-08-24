@@ -93,7 +93,7 @@ BSN also has 2 active projects under FileCoin, Chainlink and Tgrade grants.
 
 ## Development Roadmap :nut_and_bolt:
 
-We plan to execute 2 deliverables in two milestones:
+We plan to execute 2 deliverables in three milestones:
 - an Ink! smart contract for password storage;
 - a browser extension for password management (tested under Chrome browser).
 
@@ -105,22 +105,34 @@ The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 Dev
 - **Full-Time Equivalent (FTE):**  4 FTE
 - **Total Costs:** 45,000 USDT
 
-### Milestone 1 — Design and development of a browser extension and a smart-contract
+### Milestone 1 — Design and development of a smart-contract and a testing page
 
-- **Estimated Duration:** 2 months
-- **FTE:**  2,5 FTE
-- **Costs:** 30,000 USDT
+- **Estimated Duration:** 1,5 months
+- **FTE:**  2 FTE
+- **Costs:** 22,000 USDT
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what benefits what are the benefits of using the system |  
 | 1. | Ink! smart-contract | A smart-contract for password storage and use: “add password (title, url, username, password, comment)”, “delete password”, “get password”, “add category”, “delete category”, “get categories” |  
-| 2. | Browser extension | A browser extension MVP for password management: a registration page (login with a Polkadot wallet private key and set a master-password); login page (using master-password); categories (get data from a blockchain, decrypt received data, unzip and get passwords, categories list render, passwords list render by categories); save password (data entry form, data serialization, zip data, data encryption, send transaction); password generation window, show balance. |  
+| 2. | Test page | A test page for running functional tests: categories (get data from a blockchain, decrypt received data, unzip and get passwords, categories list render, passwords list render by categories); save password (data entry form, data serialization, zip data, data encryption, send transaction); show balance. |  
 
-### Milestone 2 — Design and development of autofill functionality
+### Milestone 2 — Design and development of a browser extension
+
+- **Estimated Duration:** 1 month
+- **FTE:**  1 FTE
+- **Costs:** 8,000 USDT
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 1. | Browser extension | A browser extension MVP for password management: a registration page (login with a Polkadot wallet private key and set a master-password); login page (using master-password); categories (get data from a blockchain, decrypt received data, unzip and get passwords, categories list render, passwords list render by categories); save password (data entry form, data serialization, zip data, data encryption, send transaction); password generation window, show balance. |  
+
+### Milestone 3 — Design and development of autofill functionality
 
 - **Estimated Duration:** 1,5 months
 - **FTE:**  1,5 FTE
