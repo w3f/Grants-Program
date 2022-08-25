@@ -32,7 +32,7 @@ Overall ParaSpell is all about developer experience.
 
 ### Project Details 🎯
 
-ParaSpell in its current form allows developers to install all dependencies as well as a network consisting of Rococo, Moonbeam, Basilisk & Acala nodes with one command. Launching a network is also done by one command. Once the network is installed and started ParaSpell application allows developers to open/close HRMP channels between mentioned parachains. In current progress ParaSpell already has user interface and main functionality almost finished.
+ParaSpell in its current form allows developers to install all dependencies as well as a network consisting of Rococo, Pichiu(Kylin network), Bifrost & Acala nodes with one command. Launching a network is also done by one command. Once the network is installed and started ParaSpell application allows developers to open/close HRMP channels between mentioned parachains. In current progress ParaSpell already has user interface and main functionality almost finished.
 
 The following screen allows the user to open the HRMP channels between list of parachains pulled from Rococo by API call.
 [
@@ -78,7 +78,7 @@ Application is purposely designed to be as simple as possible. This guarantees, 
 -  Polkadot api libraries
 -  Make
 - Polkadot launch
--  Substrate compatible nodes (For now Rococo, Acala, Basilisk & Moonbeam)
+-  Substrate compatible nodes (For now Rococo, Pichiu(Kylin network), Bifrost & Acala)
 
 ### Ecosystem Fit 🌿
 
