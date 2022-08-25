@@ -285,8 +285,8 @@ Build of the 2d testing game with integration with Asylum node. Delivered within
 ### Overview
 
 - **Total Estimated Duration:** 4 weeks
-- **FTE:** 3 FTE
-- **Total Costs:** 38,400 USD
+- **FTE:** 3,5 - 4 FTE
+- **Total Costs:** 48,000 USD
 
 ### Previous work:
 
