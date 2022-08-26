@@ -1,7 +1,7 @@
 # W3F Grant Proposal
 
 - **Project Name:** Nomis
-- **Team Name:** Nomis
+- **Team Name:** The Nomis Team
 - **Payment Address:** 0xD587404cd28Bf4eE059ac84a6B7C0219d05EA6CF (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
@@ -9,42 +9,77 @@
 
 ### Overview
 
-Nomis is an on-chain protocol based on a mathematical prediction and AI model enabling protocol users with a favorable on-chain credit score to borrow crypto with a fair collateral and APR on a case-by-case basis. On the other hand, Nomis is an open-source protocol that helps web3 developers both building new on-chain solutions and use cases, and balancing already existing high-TVL protocols.
+#### **Inspiration**
+We build Nomis to crush one of the most significant barriers to entry and adoption of DeFi which are over-collateralized loans. Today mainstream borrowers are either not using DeFi lending due to its unattractiveness as a financial product comparing to bank lending, or taking over-collaterized loans with unfair collaterals and APR.
 
-We are going to land our protocol on top of Polkadot to make it possible for developers to create better DeFi solutions.
+In other words, today's DeFi loans suck:
+- ﹥125% collateral scares away mainstream borrowers from DeFi loans;
+- Collateral liquidation terms are tricky and make it even more unattractive;
+- No personalized terms even if a user has 'good' on-chain history.
 
-We strive to give an access to capital for a sufficiently broader group of people around the world, who can’t afford (or don’t want to go with) >125% collateral, but at the same time has a good credit score based on her on-chain history.
+Over-collateralized lending and lack of customized reputation-based terms are the huge problems that needs to be solved to bring mainstream borrowers to DeFi and get closer to mass adoption. Our long-term vision is to allow one to borrow capital using one’s on-chain reputation as a form of collateral (best cace scenario), or at least provide better terms.
+
+#### **Solution**
+Nomis is an open-source protocol that helps DeFi developers both to build better on-chain solutions and use cases, and to balance already existing high-TVL protocols. Every lending/borrowing platform will be able to create extremely customized loan terms for borrowers by using Nomis API.
+
+Nomis is designed to be a multi/cross-chain solution and offer the most robust financial snapshot of a potential borrower by hiring hierarchy analysis as a scoring method. At the moment we have MVPs on [Ethereum](http://nomis.cc), [Solana](https://sol.nomis.cc), and [Polygon](https://polygon.nomis.cc).
+
+As far as we aspire to build multi-chain solution and offer the most robust financial snapshot of a potential borrower, we are extremely interested in developing Nomis on top of Polkadot enabling developers to create better DeFi solutions on top of Polkadot. We aspire to bring banking services to underserved populations by providing them with an opportunity to build solid on-chain reputation and borrow crypto (instead of fiat and its limitations for underserved populations) with more attractive initial terms (collateral factor, APR, liquidation terms). 
 
 ### Project Details
 
-Nomis is at the MVP stage now. Our prototype is able to calculcate your ETH wallet's credit score based on on-chain data available. Please feel free to [test it](https://nomis.cc/).
-_PS Nomis Credit Score of Vitalik's wallet is 73.73% :)_
+We want to build MVP for Polkadot, and API & Documentation for Polkadot developers.
+You can find more information about the algorithm, team and its previous experience in our [whitepaper](https://artemshtlv.notion.site/e859b9e3bae6412fb99d6119a8d2e5a4#983f0507df904460aaaf7ef95e847798)
 
-To be clear in our roadmap let’s see our plan step by step.
-  1. Data extraction from the protocol & initial parameters calculation;
-  2. Credit score calculation via Nomis' AI-algorithm; Web3 login connection to boost UX;
-  3. API & documentation development.
+#### **UI Development**
+- **UI Examples**: you can find working prototype for ETH wallets and UI for end-users [here](http://nomis.cc). API & Documentation for Polygon and Solana is [here](https://api.nomis.cc/swagger/index.html). UI for the Polkadot project will be the same.
+- **List frameworks & tools for development & testing**: ASP Net Core 6, .jQuery, Docker, docker-compose.
 
-You can find more information about the algorithm, team and its previous experience in our [whitepaper](https://artemshtlv.notion.site/e859b9e3bae6412fb99d6119a8d2e5a4#983f0507df904460aaaf7ef95e847798). You can also visit our [Github repository](https://github.com/fc-ha/Nomis.ETH).
+#### **Backend Development**
+- **Languages & frameworks**: .Net 6, ASP Net Core 6, EF Core, NodeJS.
+- **Current database requirements**: no database needed for the project development. For the further steps we will hire Postgres.
+- **Host**: VPS, cloud-ready.
+- **Scaling**: Nomis is a stateless service, we can scale it only by adding nodes.
+- **CI/CD**: Github Actions.
 
 ### Ecosystem Fit
 
-1. Nomis will help Polkadot to grow its MAD as developers can be interested to build unique DeFi DApps on Polkadot using Nomis credit score, as it provides them with opportunity to extremely customize initial customer terms and offers (lending/borrowing) on a case-by-case basis. which is getting more and more adoption.
+1. Nomis will help Polkadot to grow its MAD as developers can be interested to build unique DeFi DApps on Polkadot using Nomis API, as it provides them with opportunity to extremely customize initial customer terms and offers (lending/borrowing) on a case-by-case basis.
 2. Nomis will help Polkadot and its ecosystem to grow TVL and MAU as a result of on-chain acquisition of mainstream borrowers who are interested in the DeFi solutions mentioned above.
 
-Currently Nomis have no competitors on Polkadot. Although, Nomis brings two crucial competitive advantages vs other on-chain credit scores such as Chainscore (NEAR), RociFi (Polygon), Spectral Finance (Ethereum), Project Galaxy and TrueFi (Multichain), etc. to the table:
+Currently Nomis have no competitors on Polkadot. Although, Nomis brings two crucial competitive advantages vs other credit scores such as Chainscore (NEAR), RociFi (Polygon), Spectral Finance (Ethereum), Project Galaxy and TrueFi (Multichain), etc. to the table:
   1. Nomis is an open-source solution that helps web3 developers leverage credit scores building better on-chain products and communities.
-  2. Nomis offers the most robust financial snapshot of a potential borrower hiring hierarchy analysis as a scoring method.
+  2. Nomis offers the most robust financial snapshot of a potential borrower by hiring hierarchy analysis as a scoring method (today) and AI-based mathematical model trained on the initial terms and default data (tomorrow).
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Alex Barabash, CEO
-- Fedor Cherepanov, CTO
-- Arty Shatilov, CPO
-- +7 mathematicians & developers ready-to-go full-time as grant fundings will be approved
-[Team description link](https://artemshtlv.notion.site/e859b9e3bae6412fb99d6119a8d2e5a4#8d6d2b96fa994dcf84ac142217d9ca77)
+**Fedor**, CTO
+- PhD in CS
+- Solidity & Rust developer
+- 8 patents’ holder (neural networks)
+- Ex. custom L1 blockchain solution
+
+**Alex**, CEO
+<br /> [LinkedIn](https://cz.linkedin.com/in/alexander-barabash/) • [Telegram](https://t.me/alexbarab) <br />
+- MSс in Mathematics and Economics
+- 5-year C-level experience
+- 15-year experience in neural networks
+- Ex. GoRecruit — employee scoring SaaS for HR
+
+**Arty**, CPO
+<br /> [Twitter](https://twitter.com/ArtemShatilov) • [LinkedIn](https://www.linkedin.com/in/artemshatilov/) • [Telegram](http://t.me/artemshtlv) <br />
+- MSc in International Business Development
+- 4-year experience of PM/UI/UX in crypto
+- Ex. KickCity — web3 event dapp on Ethereum
+- TON Hackathon Awardee
+
+**Nick**, Lead Developer
+- Degree in CS
+- .NET developer
+- Active open source contributor
+- 4 times blockchain hackathons awardee
 
 ### Contact
 
@@ -59,19 +94,15 @@ Currently Nomis have no competitors on Polkadot. Although, Nomis brings two cruc
 
 ### Team's experience
 
-The team has experience in developing and commercializing AI- and crypto-related projects such as KickCity (web3 event DApp on Ethereum) and GoRecruit (employee scoring SaaS for HR). Moreover, our spike is 15+year experience in neural networks.
+We are the right team to build a best-in-class credit score solution as we have solid tecnhical capability in place. Our spike is 15-year+ experience and 8 patents in neural network research and deveopment. Moreover, [every cofounder](https://artemshtlv.notion.site/e859b9e3bae6412fb99d6119a8d2e5a4#8d6d2b96fa994dcf84ac142217d9ca77) has a track record in developing and commercializing IT- and blockchain-related products such as Kickcity (web3 event/ticketing platform on Ethereum), GoRecruit (employee scoring SaaS for HR), and L1 blockchains.
 
 ### Team Code Repos
 
-https://github.com/fc-ha/Nomis.ETH
-
-### Team LinkedIn Profiles (if available)
-
-[Alex Barabash, CEO](https://cz.linkedin.com/in/alexander-barabash/ru?trk=people-guest_people_search-card)<br />[Arty Shatilov, CPO](https://www.linkedin.com/in/artemshatilov/)
+[https://github.com/Nomis-cc](https://github.com/Nomis-cc)
 
 ## Development Status :open_book:
 
-We are at the MVP stage now. The previous steps are (1) initial documentation and whitepaper development, (2) proof-of-concept.
+We are ready-to-go full-time as fast as the sufficient amonut of grant funding will be received.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -128,10 +159,8 @@ We are at the MVP stage now. The previous steps are (1) initial documentation an
 
 ## Future Plans
 
-In the future, we are going to make Nomis self-sufficient hiring the business model based on fee-charging (1%) per API usage.
+Our goal is to allow one to borrow capital using one’s on-chain reputation as a form of collateral (best cace scenario), or at least provide better terms. Although, the long-term vision for Nomis goes far beyond credit scoring for DeFi. In the future, other dApps will use Nomis Score as a wallet qualifier for making job offers, adding in whitelists, offering special marketing terms, or just for inviting to a private party, etc.
 
-The long-term vision for Nomis goes far beyond credit scoring for DeFi. Other dApps will use Nomis Score as a wallet qualifier for making job offers, for adding in whitelists, for offering special marketing terms, or just for inviting to a private party. 
-
-## Additional Information :heavy_plus_sign:
+We plan to make Nomis self-sufficient by hiring one of the B2B or Web3 business models and GTMs. 
 
 **How did you hear about the Grants Program?** Web3 Foundation Website
