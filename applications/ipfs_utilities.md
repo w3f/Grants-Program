@@ -115,9 +115,9 @@ A concept and solution draft was created as part of this application and can be 
 
 ### Overview
 
-- **Total Estimated Duration:** 4 Months
+- **Total Estimated Duration:** 2 Months
 - **Full-Time Equivalent (FTE):** 2
-- **Total Costs:** 178,880 DAI
+- **Total Costs:** 89,440 DAI
 
 ### Milestone 1 - Research and PoC implementation on upload part
 
@@ -150,24 +150,6 @@ The goal of the second milestone is to redirect utilities of Substrate. A gRPC r
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a developer can re-use the implementation. |
 | 0c.    | Testing |    Core functions will be covered by unit tests as far as reasonably applicable to ensure functionality and robustness. In the documentation, we will describe how to run these tests. |
 | 1. | Implement | `#[prg(name = "nft_getFileById")]` will be designed and developed that allows users to redirect a request, which returns `Result<String>`, to a file server. |
-
-### Milestone 3 - Integration and Benchmark
-
-- **Estimated Duration:** 2 Months
-- **FTE:** 2
-- **Costs:** 89,440 DAI
-
-The goal of the third milestone is to have several features and APIs that cover potential use cases.
-
- Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a developer can re-use the implementation. |
-| 0c.    | Testing |    Core functions will be covered by unit tests as far as reasonably applicable to ensure functionality and robustness. In the documentation, we will describe how to run these tests. |
-| 1. | Configure | The IPFS pallet implementation will be added with IPFS gateway in configure. |
-| 2. | Query | The IPFS pallet can be queried and return a different version of CID as String. |
-| 3. | Example | The example pallet can use IPFS pallet to store some data in HTML format in IPFS and provide gRPC to redirect requests to get the HTML content. |
-| 4. | Benchmark | Benchmark on the size of the file the IPFS pallet can be accepted. |
 
 
 
