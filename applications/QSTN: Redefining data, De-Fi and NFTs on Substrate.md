@@ -57,8 +57,6 @@ With a desire to build meaningful products and experiences, Orrin founded QSTN w
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
 - QSTN is Web3 infrastructure to accelerate the adoption of data monetization. Since users can earn with or without a Web3 wallet, but have the option to create one, shows we are designed to be a Web2 on-ramp into the world of Web3.
 
 We aim to do this by taking advantage of the low gas, scalable environment offered on DOT to allow users to earn credits, mint NFTs and transfer assets without exorbitant transactional fees. 
@@ -226,8 +224,6 @@ Article 3: https://news.bloomberglaw.com/litigation/google-plus-7-5-million-priv
 
 
 ## Future Plans
-
-Please include here
 
 - In the short term, we are competing in hackathons to better our understanding of Web3 products and services we can use to scale out the QSTN market research portal. 
 
