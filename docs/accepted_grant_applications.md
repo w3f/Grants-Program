@@ -518,7 +518,7 @@
 | [Standard Protocol](https://standard.tech/) | Signac - a monorepo plugin for developing multiple Parity ink! smart contracts | [GitHub](https://github.com/digitalnativeinc) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [B-Datagray](https://www.b-datagray.com/) | Datagen Project | [GitHub](https://github.com/Datagen-Project) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Colorful Notion](https://polkaholic.io/#chains) | Polkaholic.io's Multi-Chain Substrate Block Explorer | [GitHub](https://github.com/colorfulnotion/polkaholic/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Common Orbit LLC](https://brson.github.io) | `wasm-opt` for Rust | [GitHub](https://github.com/brson/wasm-opt-rs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Common Orbit LLC](https://brson.github.io) | `wasm-opt` for Rust | [GitHub](https://github.com/brson/wasm-opt-rs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Blockcoders](https://blockcoders.io/) | Ink Explorer | [GitHub](https://github.com/blockcoders) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Equilibrium](https://equilibrium.co/) | Polkadot Light Client in C++ | [GitHub](https://github.com/eqlabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Open rollup](https://github.com/openrollup-zk) | Open rollup - MVP - Phase 1 | [GitHub](https://github.com/openrollup-zk) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
