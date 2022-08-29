@@ -55,16 +55,6 @@ With a desire to build meaningful products and experiences, Orrin founded QSTN w
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-- Mockups/designs of any UI components 
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
-
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
@@ -145,7 +135,7 @@ Linkedin - https://www.linkedin.com/in/phillip-coleman-791b1475
 
 ### Team's experience
 
-	We incorporated QSTN in December of 2020 and immediately began seeking institutional guidance on how best to bring this product to market. Below is a chronological recount of incubators and hackathons we partook: 
+We incorporated QSTN in December of 2020 and immediately began seeking institutional guidance on how best to bring this product to market. Below is a chronological recount of incubators and hackathons we partook: 
 
 1. QSTN graduates from the 1871 x BLK Tech Verizon incubator (first cohort) [2021]
 https://1871.com/accelerator-blk-tech/
@@ -167,17 +157,17 @@ Orrin Campbell
 			
 	In an attempt to build on this platform, Orrin has amassed a large following on social media who follow his advice and input on topics ranging from music, fashion, entertainment and technology (Web3). 
 			
-			Dr. Phil episode - 
-			https://www.youtube.com/watch?v=ReRddYVYfHU
+Dr. Phil episode - 
+https://www.youtube.com/watch?v=ReRddYVYfHU
 			
-			Press links - 
-			https://vman.com/article/orrin-discusses-indie-rap-persona/
-			https://lyricallemonade.com/p/meet-orrin-the-cyborg-rapper-sent-from-2050-to-save-us-all
+Press links - 
+https://vman.com/article/orrin-discusses-indie-rap-persona/
+https://lyricallemonade.com/p/meet-orrin-the-cyborg-rapper-sent-from-2050-to-save-us-all
 			
-			Socials - 
-			https://tiktok.com/@realorrin (250,000 followers)
-			https://instagram.com/realorrin (18,000 followers) 
-			https://youtube.com/c/realorrin (41,000 followers) 
+Socials - 
+https://tiktok.com/@realorrin (250,000 followers)
+https://instagram.com/realorrin (18,000 followers) 
+https://youtube.com/c/realorrin (41,000 followers) 
 
 
 ### Team Code Repos
