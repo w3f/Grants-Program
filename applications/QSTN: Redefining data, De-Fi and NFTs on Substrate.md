@@ -7,7 +7,7 @@
 - **Project Name:** QSTN
 - **Team Name:** QSTN
 - **Payment Address:** ETH - 0x7056A5Da7D269B31Eb2E54E5579e41ef283d7D2C
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
@@ -146,7 +146,7 @@ Linkedin - https://www.linkedin.com/in/phillip-coleman-791b1475
 - **Registered Legal Entity:** QSTN, LLC
 
 ### Team's experience
- QSTN
+
 	We incorporated QSTN in December of 2020 and immediately began seeking institutional guidance on how best to bring this product to market. Below is a chronological recount of incubators and hackathons we partook: 
 
 1. QSTN graduates from the 1871 x BLK Tech Verizon incubator (first cohort) [2021]
@@ -201,8 +201,6 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
 - Here is a link to the proposed functionality - https://drive.google.com/drive/folders/1AlOA2H8PE9RWnuXsSxvrBszCOVxkclrE?usp=sharing
 - Here are links relevant to the problem - Article 1: https://www.npr.org/2021/02/25/971460327/tiktok-to-pay-92-million-to-settle-class-action-suit-over-theft-of-personal-data 
 Article 2: https://www.reuters.com/technology/metas-facebook-pay-90-million-settle-privacy-lawsuit-over-user-tracking-2022-02-15/
@@ -212,22 +210,6 @@ Article 3: https://news.bloomberglaw.com/litigation/google-plus-7-5-million-priv
 - Please reference these two presentations for early iterations on the NEAR Protocol blockchain - Video 1: https://youtu.be/XnHjM4lQiZM, Video 2: https://youtu.be/dn49lQPibwU, 
 
 ## Development Roadmap :nut_and_bolt:
-
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-For each milestone,
-
-- make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-- include the amount of funding requested _per milestone_.
-- include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-- provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-- commit to providing Dockerfiles for the delivery of your project.
-- indicate milestone duration as well as number of full-time employees working on each milestone.
-- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
 
 ### Overview
 
@@ -248,8 +230,9 @@ For each milestone,
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a Medium article that documents our transition to Polkadot and details how users of QSTN can connect their DOT wallet to our application, mint & transfer purchased media onto the DOT blockchain as well as save their survey ID on-chain on DOT. 
-| 1. | Substrate module: X | We will create a Substrate model that will allow users to create a survey, invite other users to create a survey for their business, add questions (metadata), remove questions (metadata), give permission as to who can answer and list created surveys.  
-| 2. | Substrate chain | Module X our custom chain will interact in such a way to allow users to connect their DOT wallet to our application, mint media on the DOT chain as well as create surveys, invite businesses to create their own surveys, and give permissions as to who can answer a survey [X] and then save the completed survey ID on-chain as proof of completion [X] 
+| 1. | Substrate module: X | We will create a Substrate module that will allow users to create a survey, invite other users to create a survey for their business, add questions (metadata), remove questions (metadata), give permission as to who can answer and list created surveys.  
+| 2. | Substrate module: Y | We will create a new UI for DOT users to be able to ask questions, receive credit and screenshot their response on-chain; these design assets will include landing pages and layouts which we will open source to the DOT community 
+| 3. | Substrate chain | Module X our custom chain will interact in such a way to allow users to connect their DOT wallet to our application, mint media on the DOT chain as well as create surveys, invite businesses to create their own surveys, and give permissions as to who can answer a survey [X] and then save the completed survey ID on-chain as proof of completion [X] these transactions take place within our new UI which we will open source [Y]
 
 ...
 
