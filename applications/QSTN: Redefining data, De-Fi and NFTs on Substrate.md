@@ -221,7 +221,7 @@ Particularly, we will be participating in the Filecoin Sustainable Blockchain Su
 
 In conjunction with our hacking and education, we will be testing our existing application privately with different companies ranging from Encode Club, Filecoin, Octopus Network, NEAR Protocol to Ocean Protocol. 
 
-- Looking towards the future, we are excited to host our first NFT launch event on NEAR Protocol (August) and work with more traditional Web2 businesses in music, entertainment and market research to onboard the next million users into Web3
+- Looking towards the future, we are excited to host our first NFT launch event on NEAR Protocol (October) and work with more traditional Web2 businesses in music, entertainment and market research to onboard the next million users into Web3
 
 ## Additional Information :heavy_plus_sign:
 
