@@ -6,6 +6,8 @@
 - **Team Name:** Uke
 - **Payment Address:** bc1qttjsaqr0m8sxm46wnfdupzpl6rjemts3uxsuu5
 - **Level:** 1
+- **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/548#issuecomment-1230409529)
+
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
