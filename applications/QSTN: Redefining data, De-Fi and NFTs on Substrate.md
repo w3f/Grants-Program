@@ -19,8 +19,6 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-Please provide the following:
-
 - QSTN is a web application where users participate in surveys, quizzes and short questionnaires to earn virtual credit. 
 - QSTN is a blockchain enabled market research portal where users answer questions, earn credit and spend these rewards in our digital marketplace for tokenized goods (e.g. NFTs, metaverse wearables). 
 	
