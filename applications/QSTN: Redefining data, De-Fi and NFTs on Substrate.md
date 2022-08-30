@@ -167,7 +167,6 @@ https://youtube.com/c/realorrin (41,000 followers)
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
 - https://github.com/shadow111
-- https://github.com/<team_member_2>
 
 ### Team LinkedIn Profiles (if available)
 
@@ -206,9 +205,9 @@ Article 3: https://news.bloomberglaw.com/litigation/google-plus-7-5-million-priv
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a Medium article that documents our transition to Polkadot and details how users of QSTN can connect their DOT wallet to our application, mint & transfer purchased media onto the DOT blockchain as well as save their survey ID on-chain on DOT. 
-| 1. | Substrate module: X | We will create a Substrate module that will allow users to create a survey, invite other users to create a survey for their business, add questions (metadata), remove questions (metadata), give permission as to who can answer and list created surveys.  
-| 2. | Substrate module: Y | We will create a new UI for DOT users to be able to ask questions, receive credit and screenshot their response on-chain; these design assets will include landing pages and layouts which we will open source to the DOT community 
-| 3. | Substrate chain | Module X our custom chain will interact in such a way to allow users to connect their DOT wallet to our application, mint media on the DOT chain as well as create surveys, invite businesses to create their own surveys, and give permissions as to who can answer a survey [X] and then save the completed survey ID on-chain as proof of completion [X] these transactions take place within our new UI which we will open source [Y]
+| 1. | Survey pallet | We will create a Substrate module that will allow users to create a survey, invite other users to create a survey for their business, add questions (metadata), remove questions (metadata), give permission as to who can answer and list created surveys.  
+| 2. | Survey pallet UI | We will create a new UI for DOT users to be able to ask questions, receive credit and screenshot their response on-chain; these design assets will include landing pages and layouts which we will open source to the DOT community 
+| 3. | Substrate chain | The survey pallet of our custom chain will interact in such a way to allow users to connect their DOT wallet to our application, mint media on the DOT chain as well as create surveys, invite businesses to create their own surveys, and give permissions as to who can answer a survey [1.] and then save the completed survey ID on-chain as proof of completion [1.] these transactions take place within our new UI [2.]
 
 ...
 
