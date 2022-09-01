@@ -3,6 +3,7 @@
 * **Project Name:** SEOR code-less smart contract platform
 * **Team Name:** SEOR
 * **Payment Address:** 0x573e932F79a8846a058032454Ee7Fd7C6df7Dc41
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/205#issuecomment-1168462194)
 
 ## Project Overview :page_facing_up: 
 
