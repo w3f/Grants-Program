@@ -3,7 +3,7 @@
 - **Project Name:** Rubeus Keeper
 - **Team Name:** Bela Supernova
 - **Payment Address:** 0xC0d28794eA40Ce9b9F4B62a1B2Bb42FD34b7d305 (USDT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 This application is not in response to an RFP, but it fully complies with a potentially interesting project “Sign-in with your Polkadot, Kusama, etc. account” mentioned in [Open Source Polkadot Stack](https://wiki.polkadot.network/docs/build-open-source) page in the “ browser extensions” section.
@@ -19,6 +19,11 @@ The aim of this project is to develop a decentralized password manager that stor
 The Rubeus Keeper dApp will consist of two functional modules:
 1.	An Ink! smart contract for seсure password storage using a Polkadot or Kusama account. Just log in to your Polkadot wallet and get access to your passwords DB. The smart contract will includes methods for writing and getting passwords, as well as categorizing.
 2.	A browser extension for password managing: registration, log in, password generation, categorizing, saving, retrieving, autocomplete functionality.
+
+Under this MVP we consider security in the next attack vectors:
+ 1. Transferred data unauthorized interception and decryption (categories, URLs/logins, passwords).
+ 2. Malicious data substitution by a node.
+To solve the above mentioned tasks the data will be encrypted using the ChaCha20-Poly1305 streaming algorithm with message authentication. The protocol is standardized by IETF in RFC 7539, in software implementations it is much more efficient and faster than AES.
 
 ![Rubeus schema 3](https://user-images.githubusercontent.com/98888366/184879468-bb14b061-7e32-4f89-bc15-8d753d66f236.png)
 
@@ -93,7 +98,7 @@ BSN also has 2 active projects under FileCoin, Chainlink and Tgrade grants.
 
 ## Development Roadmap :nut_and_bolt:
 
-We plan to execute 2 deliverables in three milestones:
+We plan to execute 2 deliverables in two milestones:
 - an Ink! smart contract for password storage;
 - a browser extension for password management (tested under Chrome browser).
 
@@ -101,9 +106,9 @@ The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 Dev
 
 ### Overview
 
-- **Total Estimated Duration:** 3,5 months
-- **Full-Time Equivalent (FTE):**  4 FTE
-- **Total Costs:** 45,000 USDT
+- **Total Estimated Duration:** 2,5 months
+- **Full-Time Equivalent (FTE):**  3 FTE
+- **Total Costs:** 30,000 USDT
 
 ### Milestone 1 — Design and development of a smart-contract and a testing page
 
@@ -116,8 +121,8 @@ The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 Dev
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Ink! smart-contract | A smart-contract for password storage and use: “add password (title, url, username, password, comment)”, “delete password”, “get password”, “add category”, “delete category”, “get categories” |  
-| 2. | Test page | A test page for running functional tests: categories (get data from a blockchain, decrypt received data, unzip and get passwords, categories list render, passwords list render by categories); save password (data entry form, data serialization, zip data, data encryption, send transaction); show balance. |  
+| 1. | Ink! smart-contract | An Ink! smart-contract for password storage and use: “add password (title, url, username, password, comment)”, “delete password”, “get password”, “add category”, “delete category”, “get categories”. Stored data will be encrypted using the ChaCha20-Poly1305 streaming algorithm with message authentication. |  
+| 2. | Test page | A test page for running functional tests: categories (get data from a blockchain, decrypt received data, unzip and get passwords, categories list render, passwords list render by categories); save password (data entry form, data serialization, zip data, data encryption, send transaction); show balance. The test page will be developed using JavaScript. |  
 
 ### Milestone 2 — Design and development of a browser extension
 
@@ -129,20 +134,6 @@ The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 Dev
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Browser extension | A browser extension MVP for password management: a registration page (login with a Polkadot wallet private key and set a master-password); login page (using master-password); categories (get data from a blockchain, decrypt received data, unzip and get passwords, categories list render, passwords list render by categories); save password (data entry form, data serialization, zip data, data encryption, send transaction); password generation window, show balance. |  
-
-### Milestone 3 — Design and development of autofill functionality
-
-- **Estimated Duration:** 1,5 months
-- **FTE:**  1,5 FTE
-- **Costs:** 15,000 USDT
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness under the Chrome browser. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what benefits what are the benefits of using the system |  
-| 1. | Browser extension autofill | We will develop additional functionality for the browser extension: registration and authorization forms tracking, suggestion to generate and save password, auto-complete passwords on websites. |  
-
+| 1. | Browser extension | A Chrome browser extension MVP for password management: a registration page (login with a Polkadot wallet private key and set a master-password); login page (using master-password); categories (get data from a blockchain, decrypt received data, unzip and get passwords, categories list render, passwords list render by categories); save password (data entry form, data serialization, zip data, data encryption, send transaction); password generation window, show balance. The extension will be developed using JavaScript. |  
