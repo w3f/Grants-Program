@@ -171,7 +171,7 @@ Discussions with the grant team: David Hawig and Seraya Takahashi, mail conversa
 
 - **Estimated duration:** 6 months
 - **FTE:**  4 months of a mixed team of junior and senior
-- **Costs:** 27,000 USD
+- **Costs:** 25,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
