@@ -100,6 +100,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 
 - [Ashley Grevelink](https://github.com/cruikshankss)
 - [David Hawig](https://github.com/Noc2)
+- [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
