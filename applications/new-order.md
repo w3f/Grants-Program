@@ -8,19 +8,19 @@
 ## Project Overview :page_facing_up:
 
 This orderbook dex substrate frame and indexer logics focuses on bringing true orderbook runtime with feasible indexer in Polkadot ecosystem other than just UI mockup from Fiverr.
-This is clearly a frame and indexer using Subquery, not investment seeking parachain design.
+This is clearly a frame and indexer using Subquery with reasons, not investment seeking parachain design.
 
 ### Overview
 
 * Why Orderbook?
 
-After developing dex with [Standard](www.github.com/digitalnativeinc/standard-evm) in Polkadot ecosystem, I found out it will never going to work like osmosis because **We can't provide matching liqudity between projects**.
-  0. Just to explain DEX in this document, It is an automated market maker between asset x and y keeping its equation x * y = k(k as the variable determining the price between asset on each trade). I see some grant editors are new to this field, so I leave this video link [https://www.youtube.com/watch?v=Af3NxB7r-Ws](https://www.youtube.com/watch?v=Af3NxB7r-Ws) to understand the concept.
-  1. I heard Osmosis were actually the team who got kicked out from Jae Kwon, Cosmos founder saying that they are all shit. I do not know if this is true or not, but it is ironic they actually built something better than his recent project. Anyways, I believe they took many ATOMS from the company for the liqudity? (Source: Cosmos frens)
-  2. The team is not Osmosis, and parachain projects are acually like families with knives behind the back trying to stab each other to take limited slots. After all, they are all businesmen, so there is no beautiful or "decentralized" situation where they just easily set prices on each other and make initial pair in DEX. Competitions are neccessary for better projects to kick in to the ecosystem, but no wonder why nobody wants to sit in the table. In fact, we do not have liquid tokens(e.g. ATOM) to get enough matching liquidity between parachain project tokens on making a dex pair.    
+After developing dex with [Standard](www.github.com/digitalnativeinc/standard-evm) in Polkadot ecosystem, There is a huge blocker on providing liqudity between polkadot ecosystem assets; **XYK pool economically does not make sense to be made from bottom-up**.
+  0. Just to explain DEX in this document, It is an automated market maker between asset x and y keeping its equation x * y = k(k as the variable determining the price between asset on each trade). I see some grant editors are new to this field, so I leave this video link [https://www.youtube.com/watch?v=Af3NxB7r-Ws](https://www.youtube.com/watch?v=Af3NxB7r-Ws) to understand the concept. Many people forget that to make an xyk pool it requires a centralized power-play setting up initial price, and this is something that this grant focuses.
+  1. XYK pool relies on the fact that price K can be made from each pair liquidity providers. To choose the price, the liquidity provider with more dominant or liquid asset in an ecosystem take the advantage. Let's say there is a pair between USDC and some new parachain project token $NEW or $DOT and $NEW. It is obvious that $DOT and $USDC liquidity provider take advantage of the $NEW token. 
+  2. $NEW token has two choices; to fight back by buying $DOT or $USDC, but they are fighting with the liquidity provider in the first place. The other is not to list at all, then this may lead to negotiation on finding the right price on initial pair creation.
   3. While parachain projects are finding the "right" price, pair is not made, and an end user can't even trade assets in polkadot ecosystem, so they will quit using this. 
 
-Hence, orderbook dex is needed for the "actual" polkadot user to trade the asset in polkadot ecosystem and take ownership of the market across this multichain ecosystem.
+Hence, orderbook dex is not only needed for the "actual" polkadot user to trade the asset in polkadot ecosystem and take ownership of the market across this multichain ecosystem but also building market from bottom-up organically.
 
 There are other benefits as well:
 - Possibility for perpetual trade(e.g. dy/dx)
@@ -33,11 +33,7 @@ For adding smart contract tokens and testing xcm tokens.
 
 * Why Open Source?
 
-For keeping it real. Doing honest job. Yes Web3.0, No Web2.0. We need audits anyways so we open-source it.
-
-But License may be different as there are more than 2 projects which aspire to be dex in polkadot. 
-
-Also, if W3F cannot show this in their official discord that this is the first fully open-source orderbook dex in Polkadot ecosystem, I am not building this as many copycats can take over this code.
+For keeping it real. Doing honest job. Yes Web3.0, No Web2.0. Audit teams require the project to be open-source anyways so we do it.
 
 * Reference?
 
@@ -66,9 +62,11 @@ Kujira team from Cosmos ecosystem already built this without bragging or marketi
 
 New order is the substrate module that processes orders in a queue model.
 
-### Subquery
+### Indexer
 
-Subquery is an indexer that aggregates the whole experince of 
+Indexer is the middleware in blockchain where it aggregates events from the block and make a database with insights.
+It is often used to retrieve an account's status upon interaction with a certain dapp.
+Subquery is an indexer middleware that we use to integrate with in this grant.
 
 ### Ecosystem Fit
 
@@ -83,13 +81,13 @@ Subquery is an indexer that aggregates the whole experince of
 
 ### Problem Addressed
 
-After developing dex with [Standard](www.github.com/digitalnativeinc/standard-evm) in Polkadot ecosystem, I found out it will never going to work like osmosis because **We can't provide matching liqudity between projects**.
-  0. Just to explain DEX in this document, It is an automated market maker between asset x and y keeping its equation x * y = k(k as the variable determining the price between asset on each trade). I see some grant editors are new to this field, so I leave this video link [https://www.youtube.com/watch?v=Af3NxB7r-Ws](https://www.youtube.com/watch?v=Af3NxB7r-Ws) to understand the concept.
-  1. I heard Osmosis were actually the team who got kicked out from Jae Kwon, Cosmos founder saying that they are all shit. I do not know if this is true or not, but it is ironic they actually built something better than his recent project. Anyways, I believe they took many ATOMS from the company for the liqudity? (Source: Cosmos frens)
-  2. The team is not Osmosis, and parachain projects are acually like families with knives behind the back trying to stab each other to take limited slots. After all, they are all businesmen, so there is no beautiful or "decentralized" situation where they just easily set prices on each other and make initial pair in DEX. Competitions are neccessary for better projects to kick in to the ecosystem, but no wonder why nobody wants to sit in the table. In fact, we do not have liquid tokens(e.g. ATOM) to get enough matching liquidity between parachain project tokens on making a dex pair.    
+After developing dex with [Standard](www.github.com/digitalnativeinc/standard-evm) in Polkadot ecosystem, There is a huge blocker on providing liqudity between polkadot ecosystem assets; **XYK pool economically does not make sense to be made from bottom-up**.
+  0. Just to explain DEX in this document, It is an automated market maker between asset x and y keeping its equation x * y = k(k as the variable determining the price between asset on each trade). I see some grant editors are new to this field, so I leave this video link [https://www.youtube.com/watch?v=Af3NxB7r-Ws](https://www.youtube.com/watch?v=Af3NxB7r-Ws) to understand the concept. Many people forget that to make an xyk pool it requires a centralized power-play setting up initial price, and this is something that this grant focuses.
+  1. XYK pool relies on the fact that price K can be made from each pair liquidity providers. To choose the price, the liquidity provider with more dominant or liquid asset in an ecosystem take the advantage. Let's say there is a pair between `$USDC` and some new parachain project token `$NEW` or `$DOT` and `$NEW`. It is obvious that `$DOT` and `$USDC` liquidity provider take advantage of the `$NEW` token. 
+  2. `$NEW` token has two choices; to fight back by buying `$DOT` or `$USDC`, but they are fighting with the liquidity provider in the first place. The other is not to list at all, then this may lead to negotiation on finding the right price on initial pair creation.
   3. While parachain projects are finding the "right" price, pair is not made, and an end user can't even trade assets in polkadot ecosystem, so they will quit using this. 
 
-Hence, orderbook dex is needed for the "actual" polkadot user to trade the asset in polkadot ecosystem and take ownership of the market across this multichain ecosystem.
+Hence, orderbook dex is not only needed for the "actual" polkadot user to trade the asset in polkadot ecosystem and take ownership of the market across this multichain ecosystem but also building market from bottom-up organically.
 
 ## Team :busts_in_silhouette:
 
@@ -153,8 +151,10 @@ Order
 ```
 - order_id: Global order identifier for ticketing
 - pair_id: Pair where the order is placed in
+- owner: the owner of the Order request
 - price: Order price for showing info when called individually
 - amount: Requested amount for trade
+- order_type: BID or ASK
 ```
 
 Pair
@@ -166,15 +166,17 @@ Pair
 ```
 
 ###### Storages
-`Bids`(key1: pair_id, key2: price[6 decimals], value: Order[]): A double hash map for Total bids in a price of an asset
-`Asks`(key1: pair_id, key2: price[6 decimals], value: Order[]): A double hash map for Total asks in a price of an asset
+`Bids`(key1: pair_id, key2: price[in 6 decimals], value: order_id[]): A double hash map for Total bids in a price of an asset
+`Asks`(key1: pair_id, key2: price[in 6 decimals], value: order_id[]): A double hash map for Total asks in a price of an asset
 `Pairs`(key: pair_id, value: Pair): A hashmap for storing pair information.
+`Orders`(key: order_id, value: Option<Order>): A hashmap for orders.
 
 ###### Calls
 `add_pair`: a sudo function to add a pair in the orderbook
 `remove_pair`: a sudo function to remove a pair in the orderbook 
 `place_bid`: place bid on the orderbook, if existing orders match with ask, dissolve while going through the ask queue.
 `place_ask`: place ask on the orderboook, if existing orders match with bid, dissolve while going through the bid queue.
+`cancel_order`: cancel an order submitted from the sender
 
 ###### Events
 `BidOrderFulfilled`: an event when an order is fullfilled
@@ -183,6 +185,7 @@ Pair
 `BidOrderMatched`: an event when an order is matched for certain amount
 `NewBidOrder`: an event when a new bid order is requested in the orderbook
 `NewAskOrder`: an event when a new ask order is requested in the orderbook
+`CanceledOrder`: an event when an order is canceled.
 
 I will build this.
 
@@ -192,11 +195,11 @@ I will build this.
 | 0b. | Documentation | I will write this in README |
 | 0c. | Testing Guide | Test code will be provided in the pallet. |
 | 0d. | Docker | Docker can be provided for running this in substrate. |
-| 1. | Pallet code | the code will be placed in `Standard-frame`. |
+| 1. | Pallet code | the code will be placed in `standard-frame`. |
 
 ### Milestone 2 — Subquery indexer 
 
-* **Estimated duration:** 5 weeks
+* **Estimated duration:** 10 weeks
 * **FTE:**  1
 * **Costs:** $20,000 equivalent USDC
 
@@ -221,6 +224,7 @@ This milestone builds:
 
 * Researching BitMex p2p perpetual system, this may be implemented for next step as funding procedure is clarified.
 * XCM integration in Rococo
+* EVM impl (maybe)
 * Build Governance for onboarding tokens can be further developed
 * Make `new-order.js` for executing trading from bots
 * Make real UI based on the working system
