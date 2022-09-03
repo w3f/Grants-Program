@@ -1,4 +1,6 @@
 # Web3 Foundation Grants Program<!-- omit in toc -->
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FMicassa93%2FGrants-Program.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FMicassa93%2FGrants-Program?ref=badge_shield)
+
 
 <p align="center">
   <img src="src/Grants_Program.png" style="width:1300px";>
@@ -153,6 +155,9 @@ The W3F Grants Program offers different grant levels to help you best depending 
    5. Once you're done, create a pull request. The pull request should only contain _one new file_—the Markdown file you created from the template.
    6. You will see a comment template that contains a checklist. You can leave it as is and tick the checkboxes once the pull request has been created. Please read through these items and check all of them.
    7. Sign off on the [terms and conditions](docs/T&Cs.md) presented by the [CLA assistant](https://github.com/claassistantio) bot as a Contributor License Agreement. You might need to reload the pull request to see its comment.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FMicassa93%2FGrants-Program.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FMicassa93%2FGrants-Program?ref=badge_large)
 
 ### 2. Application Review
 
