@@ -167,7 +167,8 @@ The Zebraswap will bridges also support a number of non-EVM networks. This means
 | 0c. | Testing Guide | Core functions and sub-core functions will be displayed for everyone for the community and other devs to test and implement into their systems.
 | 0d. | Docker | Docker files would be provided on the GitHub page, along with live versions of the milestones |
 | 0e. | Article | We will publish an **article**/workshop that explains the entire flow of the project, tutorials, and benefits 
-| 1.  | Developing the collateralized interoperable bridges and infrastructure design | The System infra will be built and ready to enable cross chains and multi-chain liquidity pools.These Bridges will revolve around the Polkadot chain (for e.g DOT<>BSC , DOT<>BTC and basically connecting different chains back to our dex on polkdadot |  
+| 1.  | Developing the collateralized interoperable bridges and infrastructure design | The System infra will be built and ready to enable cross chains and multi-chain liquidity pools, these bridges will use The bridges are operated by a group ofnpermissionless, decentralised bridge nodes that a re-elected every single month. These
+nodes collectively use a combination of Secure Multipart Computation (sMPC) and Shamir’s Secret Sharing (SSS) to collectively generate signatures to secure crosschain assets. This approach is far more secure than the multisig approach used by many other crosschain bridge |
 | 2.  | Backend and front-end Development|Databases and intuitive UI/UX will be incorporated into the infra |  
 
 
