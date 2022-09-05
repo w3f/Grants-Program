@@ -27,8 +27,41 @@ SydTek is looking to reinvent higher education through the democratization of ed
 October of 2022 with a practical case study within the Polkadot and Kusama ecosystems.
 
 ### Project Details
+The following excerpt is from SydTek's study on Bit.Country entitled "The Metaverse as the Digital Leviathan: A Case Study of Bit. Country".
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+Older Americans have stockpiled nearly $35 trillion USD over the last few decades and, as a result, contribute up to 27% of all wealth in the United States (Tucker & Jones, 2020). Researchers have argued that the time may have come to give this wealth away to the next generation, thereby marking the beginning of “The Great Wealth Transfer.” Tucker and Jones (2020) noted that the significance of “The Great Wealth Transfer” within the context of this study is such that it may spark “The Great Bitcoin Adoption.” Kraken, a United States-based cryptocurrency exchange and bank, estimate that Millennials (ages 24 to 39) and Generation Xers (ages 40 to 55) could drive over $1 trillion USD of wealth into bitcoin over the next 25 years as both generations embrace the inherent value of the emerging blockchain technology (Kraken, 2020). While many cryptocurrency enthusiasts have recognized this monetary revolution throughout the past decade, far less have discussed the crucial economic factor that sustains wealth over generations: inheritance, or, in this case, digital inheritance. 
+
+Digital inheritance emerged from the convergence of three previously separate worlds: wealth management, estate planning, and digital assets. Here, a digital asset is something that is stored digitally, is uniquely identifiable, and has some kind of value, such as cryptocurrencies and NFTs. So naturally, one of the central questions surrounding an individual’s digital assets will relate to digital inheritance: How will individuals pass their cryptocurrencies and NFTs onto their beneficiaries once they pass away? This brings us to a foreseeable rise in digital asset executors, who will be responsible for administering an individual’s last will and testament once they pass away and ensure that their digital assets are appropriately distributed to the relevant beneficiaries through, for example, smart contracts on the blockchain. We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+
+A useful case of digital asset executers is that of Safe Haven’s (2018) Inheriti. Safe Haven utilizes a
+combination of smart contracts and legal instruments to empower Safe Haven’s $SHA token holders with
+a secure inheritance of widespread digital assets. The power of Inheriti is that it encrypts an individual’s
+assets on the blockchain by separating the keys among those named in the will. Currently, any group or
+organization can utilize Safe Haven’s platform.
+
+Despite the rise of digital asset executors, it would appear that, from a legal point of view, various
+challenges remain in the way of digital inheritance as being a reliable form of transmitting wealth across
+generations. Indeed, as Kharitonova (2021) points out, the various factors concerning digital inheritance
+relate to emerging legal relations, the heterogeneity of digital assets, and the conflict arising from the law
+between the rules of succession, contract law, intellectual property, and personal data protection rules.
+Further, it is important to note that the anonymity cryptocurrency owners enjoy presents itself as an obstacle
+for digital inheritance according to the procedures provided by applicable law (Omelchuk et al., 2021). In
+the absence of a private key to an ancestor’s digital wallet, it is neither feasible nor productive to attempt
+to prove the existence of digital rights through tracing of electronic correspondences, analyses of banking
+operations, or entries in the registry of rights that reflect transactions with objects certified by tokens
+(Bessarab, 2020).
+
+The challenge of legitimizing digital inheritance as a form of transmitting wealth across generations
+will be to ensure that the mechanism of digital inheritance remains decentralized. This is because in the
+literature on the socioeconomic significance of inheritance, the relative importance of wealth inequality has
+been subject to considerable discussion. Indeed, inheritance as an economic factor that sustains wealth
+inequality has been discussed nearly a century ago (Stamp, 1926). However, since then, it has been
+suggested that inheritance sustains wealth inequality and may increase it (Davies, 1982). Therefore, the
+socioeconomic implications of inheritance are such that inequality in the housing market and higher
+education may be further perpetuated (Flippen, 2001). Given that the monetary revolution will bring forth
+novel financial opportunities for all, including those disadvantaged in current economic systems, it is
+important to stimulate a discussion around the following question: Will blockchain technology provide a
+sustainable, decentralized, and reliable mechanism for digital inheritance?
 
 - Mockups/designs of any UI components
 - Data models / API specifications of the core functionality
@@ -123,13 +156,14 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+- academic publications relevant to the problem we wrote that will be published in October of 2020: https://bit.ly/3RnCmMy
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+- References to conversations you might have had related to this project with anyone from the Web3 Foundation,
+A message from David Hawig on 6/7/22.
+Hi Justin,
+
+Sorry for the late reply. Regarding souldbound tokens and social recovery, that’s actually something we already have in our ecosystem with rmrk (see  
+https://twitter.com/bitfalls/status/152929818658155725) and the social recovery pallet on kusama (https://github.com/paritytech/substrate/tree/master/frame/recovery). But it would be interesting for someone to actually look into it and explore it in more detail and potential future applications. Also most people are probably not aware that this already exists on kusama.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -187,10 +221,7 @@ For each milestone,
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+After the dissemination of the foundational case study for soulbound tokens and the Social Recovery pallet at institutions and university blockchain clubs globally, we have plans to conduct follow-up research with law students and academic researchers in the field of Law on the potential legal impacts of soulbound tokens on estate law. As Justin Goldston is an Graduate Advisory Board Member at Georgetown University, Law Professors at Georgetown are curious about the impact of NFTs within the legal practice. Additionally, after a presentation for faculty members from the Smeal College of Business and the Dickinson School of Law at Penn State University, which can be seen here https://bit.ly/3AQiH0C on sustainable impacts of the metaverse, Professors from the Dickinson School of Law are also looking to conduct research on NFTs, the metaverse, and law. After the completion and publishing of the original article, the team looks to conduct a follow-up study of the legal impacts of soulbound tokens.
 
 
 ## Additional Information :heavy_plus_sign:
