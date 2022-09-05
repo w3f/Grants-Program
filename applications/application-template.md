@@ -130,8 +130,8 @@ For each milestone,
 ### Milestone 1 Example — Basic functionality
 
 - **Estimated duration:** 1 month
-- **FTE:**  2
-- **Costs:** 12,000 USD
+- **FTE:**  1,5
+- **Costs:** 8,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -151,8 +151,8 @@ For each milestone,
 ### Milestone 2 Example — Additional features
 
 - **Estimated Duration:** 1 month
-- **FTE:**  1
-- **Costs:** 6,000 USD
+- **FTE:**  1,5
+- **Costs:** 8,000 USD
 
 ...
 
