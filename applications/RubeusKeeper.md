@@ -58,7 +58,7 @@ In the [Open Source Polkadot Stack](https://wiki.polkadot.network/docs/build-ope
 
 ### Team's experience
 
-Sergey Cymbal is an experienced executive, leader and visioner responsible for the most disruptive innovations initiatives across Oil/Gas, Utilities, and Telcos in Russia. Ex-member of Sochi Olympics HQ, responsible for digitalization, Smart grid evangelist. Blockchain early follower, participates in several crypto initiatives.
+Sergey Cymbal is an experienced executive, leader and visioner responsible for the most disruptive innovations initiatives across Oil/Gas, Utilities, and Telcos. Ex-member of winter Olympics HQ, responsible for digitalization, Smart grid evangelist. Blockchain early follower, participates in several crypto initiatives.
 
 Dmitrii Putilov has over 17 years of experience leading the teams creating and maintaining high availability sites. His portfolio contains creation of the robee.io investment platform included in top500 in coinmarketcap.
 
@@ -68,7 +68,7 @@ Anton Shramko is an experienced developer with 7 years of experience on various 
 
 Ksenia Baranova is an QA test engineer with over 5 years of experience. Ksenia has exceptional knowledge and skills in the field. She is highly referred within this team, as well as by her former teams.
 
-Alexey Vexin is product owner and project manager with 10+ years of experience in managing complicated telecoms and IT projects in Telco, Utilities and Governmental sectors with deep focus on business process management. Led a dozen of federal scaled projects for IT systems implementation and industry scaled technology development, standardization and implementation.
+Alexey Vexin is a product owner and a project manager with 15+ years of experience in managing complicated telecoms and IT projects in Telco, Utilities and Governmental sectors with deep focus on business process management. Led a dozen of national scaled projects for IT systems implementation and industry scaled technology development, standardization and implementation.
 
 Anton Borisov is a DevOps Engineer with broad experience. For over 15 years Anton was supporting, administering, and maintaining secure networks, servers, and clusters. He also has versatile experience with CI/CD, IT Infrastructure Monitoring, and Kubernetes on-premise and in Cloud. One of the most recent projects Anton participated in was building a first on chain casino.
 
@@ -135,5 +135,5 @@ The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 Dev
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness under the Chrome browser. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what benefits what are the benefits of using the system |  
+| 0d. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what are the benefits of using the system |  
 | 1. | Browser extension | A Chrome browser extension MVP for password management: a registration page (login with a Polkadot wallet private key and set a master-password); login page (using master-password); categories (get data from a blockchain, decrypt received data, unzip and get passwords, categories list render, passwords list render by categories); save password (data entry form, data serialization, zip data, data encryption, send transaction); password generation window, show balance. The extension will be developed using JavaScript. |  
