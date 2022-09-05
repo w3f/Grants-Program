@@ -1,12 +1,12 @@
-# Name of your Project
+# Peer-Reviewed Academic Journal Article and Dissemination - Digital Inheritance in a Web3 World: A Case Study of Phala within the Polkadot Ecosystem
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Team Name:** Legal name of your team (e.g. Duo)
-- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
+- **Team Name:** SydTek
+- **Payment Address:** 5Eq9nneMkqwmrEcuqwQrfX7zpBfS4LcmgKTR88MQi5Yintvg Polkadot/Kusama (aUSD) payment address.
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
@@ -18,12 +18,13 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-Please provide the following:
-
-- If the name of your project is not descriptive, a tag line (one sentence summary).
 - A brief description of your project.
+This proposal is for the creation of a peer-reviewed academic case study for the application of soulbound tokens within the Polkadot and Kusama ecosystems by leveraging the Social Recovery pallet and the Soulbound token use case developed by the Phala Network for digital inheritance. This will be a qualitative case study where we will conduct a literature review of soulbound tokens, as well as interview team members and developers of Phala - Marvin Tong, Joshua Waller, and Wenfeng Wang - the creators of the first soulbound token within the Polkadot ecosystem. In addition to the research on soulbound tokens, we will also look to interview members of Parity Technologies who are familiar with the development of the Social Recovery pallet to investigate how it can be applied to digital inheritance. 
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
+This project relates to Substrate / Polkadot / Kusama in that all users within the Polkadot and Kusama ecosystems could implement this digital inheritance model to secure their assets. By leveraging the Social Recovery pallet, users can leverage the Social Recovery Wallet from RFP #1024 to act as a digital executor of user's digital assets. Through this academic research, not only will developers and academic researchers be exposed to the Polkadot and Kusama ecosystems, but we will also benefit from the further development and use cases for soulbound tokens, NFTs, and the Social Recovery pallet within the Polkadot and Kusama ecosystems.
 - An indication of why your team is interested in creating this project.
+SydTek is looking to reinvent higher education through the democratization of education and research. After team members have published peer-reviewed academic case studies on Acala (https://bit.ly/3D55XGh) and Bit.Country (https://bit.ly/3wZaHt4) within the Polkadot ecosystem, we look to expand on a theoretical study of soulbound tokens (https://bit.ly/3RnCmMy) that will be published in the Journal of Strategic Innovation and Sustainability
+October of 2022 with a practical case study within the Polkadot and Kusama ecosystems.
 
 ### Project Details
 
@@ -57,41 +58,46 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Justin Goldston, PhD
+- Justyna Osowska
+- Jordi Chaffer
+- Suyeon Han
+- Assune Cotlage
+- Joshua Waller
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:**
+- **Contact Name:** Justin Goldston, PhD
+- **Contact Email:** justin.goldston@sydtek.ai 
+- **Website:** https://sydtek.ai/
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Legal Entity:** SydTek is a registered LLC in the state of Maryland in the United States
 
 ### Team's experience
 
 Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
-
 ### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/kingassune?tab=repositories
+- https://github.com/HashWarlock?tab=repositories
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+- https://github.com/kingassune
+- https://github.com/HashWarlock
+- https://github.com/jgophd
 
-### Team LinkedIn Profiles (if available)
+### Team LinkedIn Profiles
 
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+- https://www.linkedin.com/in/justin-goldston/
+- https://www.linkedin.com/in/justyna-osowska/
+- https://www.linkedin.com/in/jordichaffer/
+- https://www.linkedin.com/in/dontrail-cotlage-9312a660/
+- https://www.linkedin.com/in/joshua-waller-33935773/
+- https://www.linkedin.com/in/suyeon-han/
 
 ## Development Status :open_book:
 
