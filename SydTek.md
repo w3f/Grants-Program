@@ -179,7 +179,7 @@ For each milestone,
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  2FTE, the listed members would contribute to different deliverables based on their skill-set.
-- **Total Costs:** 29,500 aUSD 
+- **Total Costs:** 29,964 aUSD 
 
 ### Milestone 1 — State of the Industry on soulbound tokens and digital inheritance 
 
