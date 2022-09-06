@@ -125,6 +125,9 @@ https://scholar.google.com/citations?user=trlWfAQAAAAJ&hl=en&oi=ao
 This is the Google Scholar profile of Jordi Chaffer.
 https://scholar.google.com/citations?user=ztttWoYAAAAJ&hl=en&oi=ao 
 
+This is the link to Goldston's forthcoming book published by Taylor and Francis entitled "Blockchain for Industry 4.0: Emergence, Challenges and Opportunities"
+https://www.taylorfrancis.com/books/edit/10.1201/9781003282914/blockchain-industry-4-0-anoop-asharaf-justin-goldston-samson-williams
+
 ### Team Code Repos
 
 - https://github.com/kingassune?tab=repositories
