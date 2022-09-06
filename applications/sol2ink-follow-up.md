@@ -146,7 +146,7 @@ CEO of Supercolony, Blockchain entrepreneur, Software Engineer. Started my engin
 Product Owner
 Toma is a Product Owner of OpenBrush, Head of Education and the main organizer of the [the biggest WASM conference](https://wasm-conference.com/). Toma started her career when she was 14. Since then, Toma has gained a lot of experience in IT technologies, management, leadership and crypto. She switched 4 career paths and figured out that blockchain/crypto is her calling! 
 
-**Sven Seven**  
+**Nameless Endless**  
 Blockchain Developer
 Became interested in programming at the age of 16. At this time, he tried web development and created a website. Then decided to go to University to study system programming and object-oriented programming. Most often, he used C and C++ languages. Nameless likes innovations of web3 technologies and believes in the potential of Rust language and WASM standard for smart contracts.
 
@@ -187,7 +187,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-**We have decided to describe a full roadmap of an OpenBrush here, with estimates. However, the funding we request at this stage is for milestone 2.**
+**We have decided to describe a full roadmap of an Sol2Ink here, with estimates. However, the funding we request at this stage is for milestone 2.**
 
 * **Total Estimated Duration:** 10 weeks
 * **Full-Time Equivalent (FTE):** 2-2.5
@@ -219,7 +219,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Estimated duration:** 10 weeks
 - **FTE:**  2-2.5
-- **Costs:** 70,000 USD
+- **Costs:** 60,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
