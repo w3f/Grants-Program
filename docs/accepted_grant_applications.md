@@ -348,7 +348,7 @@
 | [Find Signal Studio PTE. LTD.](https://yieldscan.app/) | YieldScan Phase 2 | [GitHub](https://github.com/yieldscan) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [PolkaMusic](https://polkamusic.io/) | Operating decentralized music businesses on blockchain | [GitHub](https://github.com/polkamusic/PolkaMusic) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [element36](https://element36.io) | FIAT on-off-ramp | [GitHub](https://github.com/element36-io) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Zondax](https://zondax.ch/) | Ledger Asset App | [GitHub](https://github.com/Zondax) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Zondax](https://zondax.ch/) | Ledger Asset App | [GitHub](https://github.com/Zondax) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Moonbeam Network](https://moonbeam.network/) | Pallet-dPoS for Parachain Staking | [GitHub](https://github.com/PureStake/moonbeam) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Dora Factory](https://dorafactory.org/) | MolochDAO substrate pallets v1 and v2 | [GitHub](https://github.com/DoraFactory) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | BCANN |  Blockchain system for Assigned Names And Numbers | [GitHub](https://github.com/weitaolee) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -446,7 +446,7 @@
 | [@Scale Technologies](https://atscale.xyz) | Libra - Decentralized Payment Network | [GitHub](https://github.com/atscaletech/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Interstellar](https://www.interstellar.gg/) | Interstellar - Wallet Phase 1 | [GitHub](https://github.com/Interstellar-Network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Pendulum](https://pendulumchain.org/) | Spacewalk: a Stellar bridge | [GitHub](https://github.com/pendulum-chain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Dmitrii Koshelev](https://github.com/dishport) | Implementation of the new hash function to BLS12 curves | [GitHub](https://github.com/dishport) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Dmitrii Koshelev](https://github.com/dishport) | Implementation of the new hash function to BLS12 curves | [GitHub](https://github.com/dishport) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Hamster](https://github.com/orgs/hamster-shared) | Hamster - A decentralized computing network | [GitHub](https://github.com/orgs/hamster-shared) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Papers GmbH](https://papers.ch/en/) | Zaturn - A Generic Attestable Oracle parachain Phase 1 | [GitHub](https://github.com/airgap-it) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Slonigiraf](https://www.slonigiraf.org/) | SLON - a recommendation letter system| [GitHub](https://github.com/slonigiraf) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
@@ -475,16 +475,16 @@
 | [Perun Network](https://perun.network/) | Perun App Channels | [GitHub](https://github.com/perun-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [ChainSafe Systems](https://chainsafe.io/) | Privacy enhancement for Polkadot-js extension | [GitHub](https://github.com/ChainSafe) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [BQP](https://qbitcoin.tech/) | Quantum Lock for QBITCOIN | [GitHub](https://github.com/bqpquantum/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Simply VC](https://simply-vc.com.mt/) | PANIC Monitoring and Alerting For Blockchains | [GitHub](https://github.com/SimplyVC/panic) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Simply VC](https://simply-vc.com.mt/) | PANIC Monitoring and Alerting For Blockchains | [GitHub](https://github.com/SimplyVC/panic) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Artree LLC](https://artree.co.jp/) | Zero Network | [GitHub](https://github.com/zero-network) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [sigma prime](https://sigmaprime.io/) | Differential Fuzzer | [GitHub](https://github.com/sigp) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [t3rn](https://www.t3rn.io/) | XBI - xcm-based high-level standard and interface (ABI) for smart contracts | [GitHub](https://github.com/t3rn/t3rn) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Dante Network](https://www.dantechain.com/) | Dante Network | [GitHub](https://github.com/dantenetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Dante Network](https://www.dantechain.com/) | Dante Network | [GitHub](https://github.com/dantenetwork) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Verida](https://www.verida.io/) | Single Sign-On for Apps | [GitHub](https://github.com/verida) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Kami Ekbatanifard](https://github.com/Nick-1979/) | Polkadot js plus / Nomination pools | [GitHub](https://github.com/Nick-1979/polkadot-Js-Plus-extension/wiki) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Afloat Inc](https://stayafloat.io/#/) | Tax Infrastructure Polkadot Integration | N/A | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [gmajor](https://github.com/gmajor-encrypt) | SCALE Codec Comparator | [GitHub](https://github.com/gmajor-encrypt) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Rusty Crewmates](http://rustycrewmates.com/) | Substrate Tutorials | [GitHub](https://github.com/rusty-crewmates/substrate-tutorials) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Rusty Crewmates](http://rustycrewmates.com/) | Substrate Tutorials | [GitHub](https://github.com/rusty-crewmates/substrate-tutorials) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Sequester](https://github.com/SequesterChain) | A Common-Good Carbon Sink on Polkadot | [GitHub](https://github.com/SequesterChain/pallets) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Keysafe Network](https://github.com/keysafe-protocol) | A decentralized protocol for private key custody and crypto asset management | [GitHub](https://github.com/keysafe-protocol) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Fennel Labs](https://fennellabs.com/) | Whiteflag on Fennel Protocol | [GitHub](https://github.com/fennelLabs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -496,14 +496,14 @@
 | [FS](https://fair-squares.nl/) | Fair Squares | [GitHub](https://github.com/Fair-squares) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Ideal Labs](https://www.idealabs.network/) | Iris: Phase 2 | [GitHub](https://github.com/ideal-lab5) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [NeoPower](https://www.neopower.digital/) | Roloi: Stream money from one wallet to another | [GitHub](https://github.com/RoloiMoney) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Tribal Protocol Labs](https://www.tribal.fyi/) | Tribal Protocol Smart Contract Development | [GitHub](https://github.com/tribal-protocol) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Tribal Protocol Labs](https://www.tribal.fyi/) | Tribal Protocol Smart Contract Development | [GitHub](https://github.com/tribal-protocol) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Yahuang Wu](https://github.com/wuyahuang) | Dual-Key Stealth Address Protocol | [GitHub](https://github.com/wuyahuang) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [UNIVERSALDOT FOUNDATION](https://universaldot.foundation) | Universaldot.me Phase 2 | [GitHub](https://github.com/UniversalDot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Societal Labs Ltd.](https://www.sctl.xyz/) | Societal - MVP - Phase 1 | [GitHub](https://github.com/sctllabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Faceless Protocol](https://github.com/HeisenbergLin22) | Faceless Protocol | [GitHub](https://github.com/HeisenbergLin22) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SuperColony](https://github.com/Supercolony-net) | Typechain | [GitHub](https://github.com/Supercolony-net/typechain-polkadot) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Codelight](https://massbit.io/) | Massbit Route | [GitHub](https://github.com/massbitprotocol/massbitroute) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Hypha Hashed Partners](https://hypha.earth/) | Social Recovery Wallet | [GitHub](https://github.com/hypha-dao) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Codelight](https://massbit.io/) | Massbit Route | [GitHub](https://github.com/massbitprotocol/massbitroute) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Hypha Hashed Partners](https://hypha.earth/) | Social Recovery Wallet | [GitHub](https://github.com/hypha-dao) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [MangoBOX labs](http://mangobox.xyz/) | MangoBOX Protocol | [GitHub](https://github.com/Mangoboxlabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
 ## :surfing_woman: Wave 15 - Third Quarter 2022
@@ -513,12 +513,12 @@
 | [4ire](https://4irelabs.com/) | Slushie | [GitHub](https://github.com/4IRE-Labs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [QRUCIAL OÜ](https://qrucial.io/) | QRUCIAL DAO | [GitHub](https://github.com/Qrucial/QRUCIAL-DAO) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Polkadot js plus](http://polkadotjs.plus/) | Polkadot js plus / Social Recovery Wallet | [GitHub](https://github.com/Nick-1979/polkadot-Js-Plus-extension/wiki) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Lee](https://github.com/rust-0x0) | Hex Space Social Graph | [GitHub](https://github.com/rust-0x0) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Lee](https://github.com/rust-0x0) | Hex Space Social Graph | [GitHub](https://github.com/rust-0x0) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Liberland LLC](https://liberland.org/en/) | Liberland Pallets | [GitHub](https://github.com/liberland/liberland_substrate) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Standard Protocol](https://standard.tech/) | Signac - a monorepo plugin for developing multiple Parity ink! smart contracts | [GitHub](https://github.com/digitalnativeinc) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [B-Datagray](https://www.b-datagray.com/) | Datagen Project | [GitHub](https://github.com/Datagen-Project) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Colorful Notion](https://polkaholic.io/#chains) | Polkaholic.io's Multi-Chain Substrate Block Explorer | [GitHub](https://github.com/colorfulnotion/polkaholic/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Common Orbit LLC](https://brson.github.io) | `wasm-opt` for Rust | [GitHub](https://github.com/brson/wasm-opt-rs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Common Orbit LLC](https://brson.github.io) | `wasm-opt` for Rust | [GitHub](https://github.com/brson/wasm-opt-rs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Blockcoders](https://blockcoders.io/) | Ink Explorer | [GitHub](https://github.com/blockcoders) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Equilibrium](https://equilibrium.co/) | Polkadot Light Client in C++ | [GitHub](https://github.com/eqlabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Open rollup](https://github.com/openrollup-zk) | Open rollup - MVP - Phase 1 | [GitHub](https://github.com/openrollup-zk) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -532,8 +532,12 @@
 | [Meta Defender Team](https://github.com/Meta-Defender/) | Meta Defender | [GitHub](https://github.com/Meta-Defender/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [ParaSpell](https://github.com/dudo50/ParaSpell) | ParaSpell | [GitHub](https://github.com/dudo50/ParaSpell) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Primis Labs](https://github.com/Primis-Labs) | Primis | [GitHub](https://github.com/Primis-Labs/client) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Uke](https://github.com/Uke-Messaging) | Uke Messaging - PoC - Phase 1 | [GitHub](https://github.com/Uke-Messaging) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Uke](https://github.com/Uke-Messaging) | Uke Messaging - PoC - Phase 1 | [GitHub](https://github.com/Uke-Messaging) | <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Redstone Network](https://github.com/difttt) | Redstone Network | [GitHub](https://github.com/difttt) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [JURIMETRIC TECNOLOGIA LTDA](https://www.jurimetric.com.br/) | Polkadart | [GitHub](https://github.com/rankanizer/polkadart) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Skye Kiwi](https://skye.kiwi/) | Choko Wallet | [GitHub](https://github.com/skyekiwi) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Popular Coding](https://www.popularcoding.com/) | Ventur | [GitHub](https://github.com/popular_coding) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Asylum](https://asylum.space/) | Asylum follow-up 1 | [GitHub](https://gitlab.com/asylum-space/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+
 
 
