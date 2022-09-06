@@ -1,4 +1,4 @@
-# Peer-Reviewed Academic Journal Article and Dissemination - Digital Inheritance in a Web3 World: A Case Study of Phala within the Polkadot Ecosystem
+# Peer-Reviewed Academic Journal Article and Dissemination - Digital Inheritance in a Web3 World: A Case Study of Soulbound Tokens within the Polkadot Ecosystem
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
 >
@@ -19,10 +19,15 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 ### Overview
 
 - A brief description of your project.
-This proposal is for the creation of a peer-reviewed academic case study for the application of soulbound tokens within the Polkadot and Kusama ecosystems by leveraging the Social Recovery pallet and the Soulbound token use case developed by the Phala Network for digital inheritance. This will be a qualitative case study where we will conduct a literature review of soulbound tokens, as well as interview team members and developers of Phala - Marvin Tong, Joshua Waller, and Wenfeng Wang - the creators of the first soulbound token within the Polkadot ecosystem. In addition to the research on soulbound tokens, we will also look to interview members of Parity Technologies who are familiar with the development of the Social Recovery pallet to investigate how it can be applied to digital inheritance. 
+
+This proposal is for the creation of a peer-reviewed academic case study for the application of soulbound tokens within the Polkadot and Kusama ecosystems by leveraging the Social Recovery pallet and soulbound token use cases developed by the Phala Network and RMRK for digital inheritance. This will be a qualitative case study where we will conduct a literature review of soulbound tokens, as well as interview team members and developers of Phala - Marvin Tong, Joshua Waller, and Wenfeng Wang - as well as team members from RMRK. In addition to the research on soulbound tokens, we will also look to interview members of Parity Technologies who are familiar with the development of the Social Recovery pallet to investigate how it can be applied to digital inheritance. 
+
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
+
 This project relates to Substrate / Polkadot / Kusama in that all users within the Polkadot and Kusama ecosystems could implement this digital inheritance model to secure their assets. By leveraging the Social Recovery pallet, users can leverage the Social Recovery Wallet from RFP #1024 to act as a digital executor of user's digital assets. Through this academic research, not only will developers and academic researchers be exposed to the Polkadot and Kusama ecosystems, but we will also benefit from the further development and use cases for soulbound tokens, NFTs, and the Social Recovery pallet within the Polkadot and Kusama ecosystems.
+
 - An indication of why your team is interested in creating this project.
+
 SydTek is looking to reinvent higher education through the democratization of education and research. After team members have published peer-reviewed academic case studies on Acala (https://bit.ly/3D55XGh) and Bit.Country (https://bit.ly/3wZaHt4) within the Polkadot ecosystem, we look to expand on a theoretical study of soulbound tokens (https://bit.ly/3RnCmMy) that will be published in the Journal of Strategic Innovation and Sustainability
 October of 2022 with a practical case study within the Polkadot and Kusama ecosystems.
 
@@ -41,18 +46,11 @@ The Why?
 
 In a 2020 study by the Cremation Institute, 89% of crypto investors worry about dying with their assets while only 23% of those have a documented plan. Of that percentage, only 7% have created a will that includes cryptocurrencies. In another survey, roughly 60% of Americans and over 65% Canadians do not have a will. It was also noted that these numbers could be higher in other parts of the world. This can be attributed to the terror management theory (TMT) and people's fear of dying. We conducted a theoretical case study on soulbound tokens and TMT that can be found here https://bit.ly/3RnCmMy that investigates the possibility of how the introduction of SBTs could alleviate the anxiety and fear of death. Although this use case may be unconventional, it is one that all Web3 users may have to face in their lives.
 
+The How?
 
-The challenge of legitimizing digital inheritance as a form of transmitting wealth across generations
-will be to ensure that the mechanism of digital inheritance remains decentralized. This is because in the
-literature on the socioeconomic significance of inheritance, the relative importance of wealth inequality has
-been subject to considerable discussion. Indeed, inheritance as an economic factor that sustains wealth
-inequality has been discussed nearly a century ago (Stamp, 1926). However, since then, it has been
-suggested that inheritance sustains wealth inequality and may increase it (Davies, 1982). Therefore, the
-socioeconomic implications of inheritance are such that inequality in the housing market and higher
-education may be further perpetuated (Flippen, 2001). Given that the monetary revolution will bring forth
-novel financial opportunities for all, including those disadvantaged in current economic systems, it is
-important to stimulate a discussion around the following question: Will blockchain technology provide a
-sustainable, decentralized, and reliable mechanism for digital inheritance?
+This proposal is for the creation of a peer-reviewed academic case study for the application of soulbound tokens within the Polkadot and Kusama ecosystems by leveraging the Social Recovery pallet and soulbound token use cases developed by the Phala Network and RMRK for digital inheritance. This will be a qualitative case study where we will conduct a literature review of soulbound tokens, as well as interview team members and developers of Phala - Marvin Tong, Joshua Waller, and Wenfeng Wang - as well as team members from RMRK. In addition to the research on soulbound tokens, we will also look to interview members of Parity Technologies who are familiar with the development of the Social Recovery pallet to investigate how it can be applied to digital inheritance. 
+
+
 
 - Mockups/designs of any UI components
 - Data models / API specifications of the core functionality
