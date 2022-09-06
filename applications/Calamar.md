@@ -58,7 +58,7 @@ Display event's data
 
 #### Search extrinsics and events by name
 Display a list of matching extrinsics and events by name.
-- full-text search - doesn't require exact name, substring is sufficient
+- full-text search - doesn't require exact name, substring is sufficient, case insensitive
 
 #### Account detail
 
@@ -84,11 +84,11 @@ Important feature is to create good UI for displaying information about XCM tele
 
 - XCM transfer detail
 
-![XCM transfer page](https://res.cloudinary.com/topmonks/image/upload/v1661494067/calamar/xcm-transfer-page.png)
+![XCM transfer page](https://res.cloudinary.com/topmonks/image/upload/v1662492906/calamar/xcm-transfer-detail.png)
 
 - in transfers table
 
-![Transfers table](https://res.cloudinary.com/topmonks/image/upload/v1661765190/calamar/transfers.png)
+![Transfers table](https://res.cloudinary.com/topmonks/image/upload/v1662492938/calamar/xcm-transfers-list.png)
 
 ### Technology stack
 
@@ -190,14 +190,18 @@ Even though we have the already working application, there are still many things
 | 0b. | Documentation | We will provide inline documentation of the code where necessary, technical description of how to run the own instance of Calamar and tutorials how to use the application from the user perspective. |
 | 0c. | Testing Guide | We will provide end-to-end tests covering UI functionality. |
 | 0d. | Docker | We will provide a Dockerfile(s) for testing and running own Calamar instance. |
-| 0e. | Article | We will publish an article that explains what was done as part of the grant |
-| 1. | Fixes, polishing | Fix things which block the app's real usage (search results are not shareable due to missing info about the chain in the URL). Add missing data in items (extrinsic args, related items listing, ...). Add call and event detail pages. Add useful information to the website (footer with team logos, contact information, ...) |
-| 2. | Responsiveness | Improve overall responsiveness for mobile devices especially of item tables and extrinsics/event args |
-| 3. | Extrinsics/event args displaying improvements | Improve the rendering of the extrinsic/event args. Add view options: raw/json, human readable |
-| 4. | Items count | Current implementation doens't show the total number of searched items. We would like to retrieve the items count and display it properly |
-| 5. | Extrinsic/event fulltext search by name | Add ability to search extrinsics and events by their name in fulltext manner |
-| 6. | Account address parsing in events args | Detect account address in event args and link it to the account detail (chain detected automatically) |
-| 7. | Polkadot.js integration | Integrate links to the Calamar Explorer into Polkadot.js app |
+| 0e. | Article | We will publish an article that explains what was done as part of the grant. |
+| 1. | Fix usage blockers | Fix things which block the app's real usage <ul><li>search results are not shareable due to missing info about the chain in the URL</li><li>extrinsic's args are missing</li></ul> |
+| 2. | Add related items listings | Add missing related items listing to detail pages<ul><li>block's transfers, call and events</li><li>extrinsic's calls</li></ul>
+| 3. | Add call detail page | See [Call detail](#call-detail). |
+| 4. | Add event detail page | See [Event detail](#event-detail). |
+| 5. | Responsiveness | Improve overall responsiveness for mobile devices especially of item tables and extrinsics/event args. |
+| 6. | Extrinsics/event args displaying improvements | Add args display options: raw/json, human readable. Find a better way to show nested properties' data types. |
+| 7. | Items count | Current implementation doens't show the total number of searched items. We would like to retrieve the items count and display it properly. |
+| 8. | Extrinsic/event fulltext search by name | Add ability to search extrinsics and events by their name in fulltext manner. |
+| 9. | Account address parsing in events args | Detect account address in event args and link it to the account detail (chain detected automatically). |
+| 10. | Website polishing | Add useful information to the website (footer with team logos, contact information, terms, etc.). |
+| 11. | Polkadot.js integration | Create a PR to integrate links to the Calamar Explorer into Polkadot.js app. |
 
 ### Milestone 2 - Account detail & Cross-chain transfers
 
@@ -205,7 +209,7 @@ Even though we have the already working application, there are still many things
 - **FTE:** 1
 - **Costs:** $10,000
 
-Here we want to implement the most requested features, the [account detail overview](#account-detail) and [cross-chain transfers](#cross-chain-transfers)
+Here we want to implement the most requested features, the [account detail](#account-detail) overview and [cross-chain transfers](#cross-chain-transfers)
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -214,8 +218,8 @@ Here we want to implement the most requested features, the [account detail overv
 | 0c. | Testing Guide | We will provide end-to-end tests covering UI functionality. |
 | 0d. | Docker | *N/A - will be provided by the first milestone.* |
 | 0e. | Article | We will publish an article that explains what was done as part of the grant |
-| 1. | Account detail | Improve account detail page with cross-chain information |
-| 2. | XCM transfers and teleports | Detect cross-chain transfers and display relevant information of involved chains and accounts |
+| 1. | Account detail | Current account detail shows only list of extrinsics signed by that account. Improve account detail page as specified in [Account detail](#account-detail) section. |
+| 2. | XCM transfers and teleports | Detect cross-chain transfers and display relevant information of involved chains and accounts: from chain, to chain, relayed at chain (reserve), sender, beneficiary, etc. See [Cross-chain transfers](#cross-chain-transfers) for more. |
 
 ### Milestone 3 - Universal search & Chain dashboards
 
@@ -234,8 +238,8 @@ The fist is the [universal search](#universal-search) and the next big thing is 
 | 0c. | Testing Guide | We will provide end-to-end tests covering UI functionality. |
 | 0d. | Docker | *N/A - will be provided by the first milestone.* |
 | 0e. | Article | We will publish an article that explains what was done as part of the grant |
-| 1. | Universal search | Search items through all the chains without the knowledge where it belongs |
-| 2. | Chain dashboard | Create dashboard with stats, charts and listings for each chain |
+| 1. | Universal search | Search items through all the chains without the knowledge where it belongs. See [Universal search](#universal-search). |
+| 2. | Chain dashboard | Create dashboard with stats, charts and item listings for each chain. See [Chain dashboards](#chain-dashboards). |
 
 ## Future Plans
 
