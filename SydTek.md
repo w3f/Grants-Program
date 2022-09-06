@@ -184,8 +184,8 @@ For each milestone,
 ### Milestone 1 — State of the Industry on soulbound tokens and digital inheritance 
 
 - **Estimated duration:** 1 month
-- **FTE:**  2
-- **Costs:** 10,000 aUSD
+- **FTE:**  3
+- **Costs:** 10,000 aUSD - link to budget details outlined in the Additional Information Section
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
 | ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -197,7 +197,7 @@ For each milestone,
 
 - **Estimated Duration:** 1 month
 - **FTE:**  3
-- **Costs:** 10,000 aUSD
+- **Costs:** 10,000 aUSD - link to budget details outlined in the Additional Information Section
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
 | ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -209,7 +209,7 @@ For each milestone,
 
 - **Estimated Duration:** 1 month
 - **FTE:**  2
-- **Costs:** 10,000 aUSD
+- **Costs:** 9,964 aUSD - link to budget details outlined in the Additional Information Section
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
 | ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -227,3 +227,9 @@ After the dissemination of the foundational case study for soulbound tokens and 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Webinar by David Hawig and David suggested we look into the Social Recovery pallet and SBTs within the Kusama ecosystems via email.
+
+**Milestone budget breakdown**
+Please refer to the following link for a description of the budget for each milestone.
+
+https://docs.google.com/spreadsheets/d/1D6gmQcR7YP9PuHF0SKAKdlQzApzQwj7n/edit?usp=sharing&ouid=114750148283862506967&rtpof=true&sd=true
+
