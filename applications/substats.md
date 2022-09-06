@@ -17,25 +17,33 @@ Recently, we expect to incorporate the overview and transaction information of t
 
 #### Current Solution
 
-The [Polkadot native explorer](https://polkadot.js.org/apps/#/) provides a comprehensive block explorer where developers can develop and build customized block explorers based on code repo. This program has a wallet and has most functions that will satisfy the needs of devs, which will be the primary explorer option for many current ecosystem projects.
+The [Polkadot native explorer](https://polkadot.js.org/apps/#/) provides a large and comprehensive blockchain explorer, any blockchain network built on The Substrate can apply for access, and supports one-click Toggle, which is currently the primary option for many ecological project. Its characteristics can be summarized as follows:
 
-We believe that there are optimization possibilities in the development based on the native explorer:
+1. **Rich real-time data display**. Provides the display of a large amount of data on blockchain such as blocks, validators, and community governance.
 
-1. Custom functions are difficult to develop because we need to modify a large amount of code.
+2. **Support wallet management**. Contains most functions of the wallet, and supports wallet management functions such as account generation, import, and token transfer.
 
-2. We hope to show more complex statistical data in the block explorer, which can not be achieved by the mode of front-end direct connection to the blockchain network.
+3. **Developer friendly**. It contains a wealth of developer tools, and supports practical functions such as chain state query, transaction initiation, and RPC call.
 
-3. We expect to display data flexibly, but the large data load makes data retrieval inefficient.
+5. **One-click import**. All blockchains developed based on the Substrate framework basically implement the same set of basic interfaces, and the Polkadot.js App only needs to provide a websockets link to implement the import.
 
-Moreover, we researched other open-source explorers in the Polkadot ecosystem.
+But everything has two sides. The following inconveniences also exist behind such a powerful block explorer platform:
 
- 
+1. Front-end resources are bloated and network latency is high.
+
+2. Since the web side of platform directly obtains and renders data through blockchain nodes, it leads to slower data reading speed.
+
+3. Likewise, on-chain resources are relatively precious, resulting in more meaningful statistics that need to be processed that cannot be kept on-chain. However, these statistics have a direct impact on user experience.
+
+Based on the above characteristics, Polkadot.js App is more suitable for the needs of developers and wallet-related operation scenarios. For more common query scenarios such as retrieving transactions, querying balances of wallet address, checking the basic status of the network, and querying miner information, the actual needs of users are "fast" rather than "more". Just like if you just want to buy a bottle of beer, then the convenience store in the community may be more suitable for your needs than the supermarket that is farther away.
+
+Polkadot.js App is like a large supermarket with a wide variety of products. However, for the simple daily needs of users, convenience stores (lightweight block explorer) will be a good complement to it. So is there a lightweight block explorer that is easy enough to use in the current Polkadot ecosystem? The following is the situation of our research.
 
 [Subscan](https://www.subscan.io/) is a block explorer that provides operations management services. It supports about 20 Substrate-based parallel chains and offers basic functions. At the same time, it also provides paid customization services for users who have higher API requirements. This model is more convenient for developers, however, the customization service fee can be as high as tens of thousands of USDT, and developers may abandon some functions due to financial concerns.
 
- 
-
 [Polkascan](https://explorer.polkascan.io/) is an open-source block explorer that is relatively lightweight and simple in data display. However, through code analysis on its Github, it has limited capability in data processing since it doesn't have a database and cannot perform data analysis.
+
+In summary, we believe that there is a lack of a better open source lightweight explorer in the current Polkadot ecosystem. That's why we designed Substats - a lightweight block explorer framework. Different from Polkadot.js App, Substats provides lightweight components to reduce the dependence on the network and provides customized data display functions. And by building a stable background and database services to obtain more powerful data processing capabilities.
 
 ### Project Details
 
@@ -66,7 +74,19 @@ We have designed a set of explorer modular components for the Substrate ecosyste
 
 - **Explorer customization**
 
-  The components of the explorer are modular, allowing developers to pick and choose the ones they need accordingly. These components are lightweight and cross-terminal friendly. Other applications (such as exchanges, Defi, and wallets) can customize the interface and embed them into the application based on their needs. 
+  The components of the explorer are modular, allowing developers to pick and choose the ones they need accordingly. These components are lightweight and cross-terminal friendly. Other applications (such as exchanges, Defi, and wallets) can customize the interface and embed them into the application based on their needs.
+  
+#### **Features**
+
+● **On-chain data processing station**: A processing station is built between users and the blockchain network, which includes a cache (database) layer and a computing (data processing) layer. The cache layer is responsible for pulling the data on the chain to the local database for storage. The computing layer is responsible for processing the on-chain data in the database, so that it can be combined into more meaningful data for users, such as historical data statistics, network-wide computing power rankings, etc.
+
+● **Convenient data display and retrieval**: Compared with reading blockchain network data through RPC nodes, it is more convenient and faster for the client's wxplorer to read directly in the database of the processing station built by Substats.
+
+● **One-click construction**: Learn from the features of Polkadot.js App. The Substats framework only needs to configure a small amount of information to achieve one-click deployment and startup. Significantly reduce development costs.
+
+● **Modular UI components**: The UI components of Substats are all decoupled, allowing developers to customize the development of UI components with low threshold.
+
+● **Open source and security**: Substats only provides completely open source code, and is not responsible for replacing management and operation services. All services are deployed and operated by the project party, avoiding trust costs.
 
 
 ###Product Design
