@@ -50,21 +50,6 @@ The How?
 
 This proposal is for the creation of a peer-reviewed academic case study for the application of soulbound tokens within the Polkadot and Kusama ecosystems by leveraging the Social Recovery pallet and soulbound token use cases developed by the Phala Network and RMRK for digital inheritance. This will be a qualitative case study where we will conduct a literature review of soulbound tokens, as well as interview team members and developers of Phala - Marvin Tong, Joshua Waller, and Wenfeng Wang - as well as team members from RMRK. In addition to the research on soulbound tokens, we will also look to interview members of Parity Technologies who are familiar with the development of the Social Recovery pallet to investigate how it can be applied to digital inheritance. 
 
-
-
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
-
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
-
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
@@ -152,28 +137,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - References to conversations you might have had related to this project with anyone from the Web3 Foundation,
 A message from David Hawig on 6/7/22.
+
 Hi Justin,
 
 Sorry for the late reply. Regarding souldbound tokens and social recovery, that’s actually something we already have in our ecosystem with rmrk (see  
 https://twitter.com/bitfalls/status/152929818658155725) and the social recovery pallet on kusama (https://github.com/paritytech/substrate/tree/master/frame/recovery). But it would be interesting for someone to actually look into it and explore it in more detail and potential future applications. Also most people are probably not aware that this already exists on kusama.
 
 ## Development Roadmap :nut_and_bolt:
-
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-For each milestone,
-
-- make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-- include the amount of funding requested _per milestone_.
-- include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-- provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-- commit to providing Dockerfiles for the delivery of your project.
-- indicate milestone duration as well as number of full-time employees working on each milestone.
-- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> :zap: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
 
 ### Overview
 
