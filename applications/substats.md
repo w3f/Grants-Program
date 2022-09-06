@@ -201,22 +201,6 @@ Parachain/dapp/wallet/developers
 
 ## Development Roadmap 🔩
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](https://github.com/w3f/Grants-Program/blob/master/docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We *recommend* that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-For each milestone,
-
-- make sure to include a specification of your software. *Treat it as a contract*; the level of detail must be enough to later verify that the software meets the specification.
-- include the amount of funding requested *per milestone*.
-- include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-- provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-- commit to providing Dockerfiles for the delivery of your project.
-- indicate milestone duration as well as number of full-time employees working on each milestone.
-- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
-> ⚡ If any of your deliverables is based on somebody else's work, make sure you work and publish *under the terms of the license* of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
 
 - **Total Estimated Duration:** 5 months
@@ -234,11 +218,10 @@ For each milestone,
 | 0a.    | License                 | Apache 2.0 / GPLv3 / MIT / Unlicense                         |
 | 0b.    | Documentation           | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the product, display and explain the function of each component. |
 | 0c.    | Testing Guide           | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided. |
-| 1a.    | Develop the webservice  | We will create the backend infrastructure which support modularization. |
-| 1b.    | Develop the polkadot.js | We will create interactions with polkadot.js API.            |
-| 1c.    | Develop the websocket   | We will create websocket component to realize stable network communication. |
-| 1d.    | Develop the API         | We will define the API, which contains the instructions for the blockchain data. |
-| 1e.    | Create the database     | We will create the database structure through mySQL to store chain state. |
+| 1a.    | Develop the webservice  | We will use the express.js framework to build the basic back-end services, and install the database link toolkit to achieve stable network communication, database connection and other functions to prepare for upper-layer applications. |
+| 1b.    | Develop the polkadot.js | We will use the polkadot.js API to interact with the PRC nodes of the blockchain network developed based on Substrate. And implement interfaces including block query, transaction query, Account query, Miner query, and new block subscription.            |
+| 1c.    | Develop the API         | We will define the back-end API specification for the front-end service to call, including the data structure, request parameters, request event processing function, return data format, etc. At the same time, we will implement the construction of the interface layer to meet the custom development needs of developers. |
+| 1d.    | Create the database     | We will build MySQL database service, create Table structure, complete index creation, data structure constraints, and implement MYSQL connection driver through Node.js. |
 
 ### Milestone 2 Implement Data Processing Tools
 
@@ -253,7 +236,7 @@ For each milestone,
 | 0c.    | Testing Guide          | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided. |
 | 1a.    | Data Reading Module    | It contains on-chain data of blocks, addresses, transactions, events, miners. |
 | 1b.    | Data Processing Module | It includes synchronization for block information, miner information, account lists, on-chain power timing recording, transaction data statistics and sorting. |
-| 1c.    | The API Module         | We will develop API which includes the exchange of blockchain data. |
+| 1c.    | The API Module         | We will develop functional interfaces to return the results of data processing to front-end services in the form of a unified interface. The interface includes block information acquisition, historical statistical data acquisition, and the entire network computing power ranking. |
 | 2a.    | API Documentation      | We will complete a backend API documentation explaining how the API interacts with the data. |
 | 2b.    | Operation Manual       | We will write an operation manual explaining how data reading and processing can be used. |
 
@@ -269,10 +252,10 @@ For each milestone,
 | 0b.    | Documentation       | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the product, display and explain the function of each component. |
 | 0c.    | Testing Guide       | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided. |
 | 0d.    | Article             | We will publish an article explaining the problems that Substats solves and how it can benefit other projects. |
-| 1a.    | Front-end Framework | We will provide lightweight front-end components that can be customized and extended. |
+| 1a.    | Front-end Framework | We will provide lightweight React.js front-end components with styles based on LESS CSS extensions. These components can be customized and extended by developers. |
 | 1b.    | API                 | We will define specifications for the API requests.          |
 | 1c.    | Develop Interface   | We will complete the development of the front-end webpage and make it web and mobile compatible. |
-| 2.     | UI Design           | We will provide a basic version of the user interface, other projects can customize the page style based on their needs. |
+| 2.     | UI Design           | We will provide a basic version of the user interface, based on the ant-design/charts icon component library. The other projects can customize the page style based on their needs. |
 | 3.     | Operation Manual    | We will complete the operation manual, including sections on front-end component usage and data requests. |
 
 ## Future Plans
