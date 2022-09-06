@@ -189,7 +189,7 @@ For each milestone,
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
 | ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|      0. | Rights            | All developed materials will be publicly accessible and public domain.                                                                                                                                                                                                                                                          |
+|      0. | Rights            | All developed materials will be publicly accessible and public domain. Milestone 1 is research oriented and as such there is no code to test.                                                                                                                                                                                                                                                         |
 |  **1.** | Research Goal     | We will provide an overview of the current state of the soulbound tokens throughout a number of blockchain ecosystems, along with service providers of Web3 digital inheritance offerings such as Safe Haven’s Inheriti solution.             |
 | **1a.** | Specific Coverage | Coverage will span [historical information regarding soulbound tokens] ([(https://wrenchinthegears.com/wp-content/uploads/2022/05/Vitalek-Buterin-Soulbound-Token-Paper-May-2022.pdf]), [information regarding the theoretical application of the Social Recovery Pallet for digital inheretance ([https://polkawallet.medium.com/the-guidance-of-social-recovery-in-polkawallet-4dea03e8b07b]), [academic sources]([(https://bit.ly/3RnCmMy]), and [recent developments]([(https://cryptoslate.com/press-releases/phala-network-releases-first-soulbound-token-use-case-with-phalaworld/]). |
 
@@ -201,7 +201,7 @@ For each milestone,
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
 | ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|      0. | Rights            | All developed materials will be publicly accessible and public domain.                                                                                                                                                                                                                                                          |
+|      0. | Rights            | All developed materials will be publicly accessible and public domain. Milestone 2 is research oriented and as such there is no code to test.                                                                                                                                                                                                                                                          |
 |  **1.** | Research Goal     | The SydTek team will interview members of Phala Network, RMRK and Parity Technologies to identify ways users can leverage SBTs and the Social Recovery pallet within the Polkadot and Kusama ecosystems for digital inheritance.         |
 | **1a.** | Specific Coverage | Specific deep dives will propose models and approaches users can leverage to develop proposed solutions of SBT wallets, as well as additional use cases for the Social Recovery pallet.
 
@@ -211,19 +211,11 @@ For each milestone,
 - **FTE:**  2
 - **Costs:** 10,000 aUSD
 
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
+| ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|      0. | Rights            | All developed materials will be publicly accessible and public domain. Milestone 3 is research oriented and as such there is no code to test.                                                                                                                                                                                                                                                          |
+|  **1.** | Research Goal     | The SydTek team submit the completed journal article for publication in a peer-reviewed open access journal to ensure the research is available for everyone. The team will then travel to academic institutions across the United States and Canada to disseminate research.         |
+| **1a.** | Specific Coverage | The team will hold sessions at Georgetown University in Washington, DC in the United States, at McGill University in Montreal, Canada, and virtually at the Kings College School of Law in London, UK to share the findings of the study. These events will also be recorded and held in the metaverse.
 
 ...
 
