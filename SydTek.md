@@ -192,8 +192,6 @@ For each milestone,
 |      0. | Rights            | All developed materials will be publicly accessible and public domain.                                                                                                                                                                                                                                                          |
 |  **1.** | Research Goal     | We will provide an overview of the current state of the soulbound tokens throughout a number of blockchain ecosystems, along with service providers of Web3 digital inheritance offerings such as Safe Haven’s Inheriti solution.             |
 | **1a.** | Specific Coverage | Coverage will span [historical information regarding soulbound tokens] ([(https://wrenchinthegears.com/wp-content/uploads/2022/05/Vitalek-Buterin-Soulbound-Token-Paper-May-2022.pdf]), [information regarding the theoretical application of the Social Recovery Pallet for digital inheretance ([https://polkawallet.medium.com/the-guidance-of-social-recovery-in-polkawallet-4dea03e8b07b]), [academic sources]([(https://bit.ly/3RnCmMy]), and [recent developments]([(https://cryptoslate.com/press-releases/phala-network-releases-first-soulbound-token-use-case-with-phalaworld/]). |
-Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
 
 ### Milestone 2 — Interviews and Data Collection with Phala Network, RMRK, and Parity Technologies
 
@@ -206,8 +204,6 @@ Number | Deliverable | Specification |
 |      0. | Rights            | All developed materials will be publicly accessible and public domain.                                                                                                                                                                                                                                                          |
 |  **1.** | Research Goal     | The SydTek team will interview members of Phala Network, RMRK and Parity Technologies to identify ways users can leverage SBTs and the Social Recovery pallet within the Polkadot and Kusama ecosystems for digital inheritance.         |
 | **1a.** | Specific Coverage | Specific deep dives will propose models and approaches users can leverage to develop proposed solutions of SBT wallets, as well as additional use cases for the Social Recovery pallet.
-Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
 
 ### Milestone 3 — Peer Review, Journal Publication and Dissemination of Research
 
@@ -238,10 +234,4 @@ After the dissemination of the foundational case study for soulbound tokens and 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+**How did you hear about the Grants Program?** Webinar by David Hawig and David suggested we look into the Social Recovery pallet and SBTs within the Kusama ecosystems via email.
