@@ -25,7 +25,7 @@ The [Polkadot native explorer](https://polkadot.js.org/apps/#/) provides a large
 
 3. **Developer friendly**. It contains a wealth of developer tools, and supports practical functions such as chain state query, transaction initiation, and RPC call.
 
-5. **One-click import**. All blockchains developed based on the Substrate framework basically implement the same set of basic interfaces, and the Polkadot.js App only needs to provide a websockets link to implement the import.
+4. **One-click import**. All blockchains developed based on the Substrate framework basically implement the same set of basic interfaces, and the Polkadot.js App only needs to provide a websockets link to implement the import.
 
 But everything has two sides. The following inconveniences also exist behind such a powerful block explorer platform:
 
