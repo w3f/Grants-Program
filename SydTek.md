@@ -27,29 +27,19 @@ SydTek is looking to reinvent higher education through the democratization of ed
 October of 2022 with a practical case study within the Polkadot and Kusama ecosystems.
 
 ### Project Details
-The following excerpt is from SydTek's study on Bit.Country entitled "The Metaverse as the Digital Leviathan: A Case Study of Bit. Country".
+The following excerpt is from SydTek's study on Bit.Country entitled "The Metaverse as the Digital Leviathan: A Case Study of Bit. Country". This provides a primer to the proposed study.
 
-Older Americans have stockpiled nearly $35 trillion USD over the last few decades and, as a result, contribute up to 27% of all wealth in the United States (Tucker & Jones, 2020). Researchers have argued that the time may have come to give this wealth away to the next generation, thereby marking the beginning of “The Great Wealth Transfer.” Tucker and Jones (2020) noted that the significance of “The Great Wealth Transfer” within the context of this study is such that it may spark “The Great Bitcoin Adoption.” Kraken, a United States-based cryptocurrency exchange and bank, estimate that Millennials (ages 24 to 39) and Generation Xers (ages 40 to 55) could drive over $1 trillion USD of wealth into bitcoin over the next 25 years as both generations embrace the inherent value of the emerging blockchain technology (Kraken, 2020). While many cryptocurrency enthusiasts have recognized this monetary revolution throughout the past decade, far less have discussed the crucial economic factor that sustains wealth over generations: inheritance, or, in this case, digital inheritance. 
+The What?
 
-Digital inheritance emerged from the convergence of three previously separate worlds: wealth management, estate planning, and digital assets. Here, a digital asset is something that is stored digitally, is uniquely identifiable, and has some kind of value, such as cryptocurrencies and NFTs. So naturally, one of the central questions surrounding an individual’s digital assets will relate to digital inheritance: How will individuals pass their cryptocurrencies and NFTs onto their beneficiaries once they pass away? This brings us to a foreseeable rise in digital asset executors, who will be responsible for administering an individual’s last will and testament once they pass away and ensure that their digital assets are appropriately distributed to the relevant beneficiaries through, for example, smart contracts on the blockchain. We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+Older Americans have stockpiled nearly $35 trillion USD over the last few decades and, as a result, contribute up to 27% of all wealth in the United States. Researchers have argued that the time may have come to give this wealth away to the next generation, thereby marking the beginning of “The Great Wealth Transfer.” Kraken, a United States-based cryptocurrency exchange and bank, estimate that Millennials (ages 24 to 39) and Generation Xers (ages 40 to 55) could drive over $1 trillion USD of wealth into cryptocurrencies over the next 25 years as both generations embrace the inherent value of the emerging blockchain technology. While many cryptocurrency enthusiasts have recognized this monetary revolution throughout the past decade, far less have discussed the crucial economic factor that sustains wealth over generations: inheritance, or, in this case, digital inheritance. 
 
-A useful case of digital asset executers is that of Safe Haven’s (2018) Inheriti. Safe Haven utilizes a
-combination of smart contracts and legal instruments to empower Safe Haven’s $SHA token holders with
-a secure inheritance of widespread digital assets. The power of Inheriti is that it encrypts an individual’s
-assets on the blockchain by separating the keys among those named in the will. Currently, any group or
-organization can utilize Safe Haven’s platform.
+Digital inheritance emerged from the convergence of three previously separate worlds: wealth management, estate planning, and digital assets. Here, a digital asset is something that is stored digitally, is uniquely identifiable, and has some kind of value, such as cryptocurrencies and NFTs. So naturally, one of the central questions surrounding an individual’s digital assets will relate to digital inheritance: How will individuals pass their cryptocurrencies and NFTs onto their beneficiaries once they pass away? This brings us to a foreseeable rise in digital asset executors, who will be responsible for administering an individual’s last will and testament once they pass away and ensure that their digital assets are appropriately distributed to the relevant beneficiaries through, for example, smart contracts on the blockchain.
 
-Despite the rise of digital asset executors, it would appear that, from a legal point of view, various
-challenges remain in the way of digital inheritance as being a reliable form of transmitting wealth across
-generations. Indeed, as Kharitonova (2021) points out, the various factors concerning digital inheritance
-relate to emerging legal relations, the heterogeneity of digital assets, and the conflict arising from the law
-between the rules of succession, contract law, intellectual property, and personal data protection rules.
-Further, it is important to note that the anonymity cryptocurrency owners enjoy presents itself as an obstacle
-for digital inheritance according to the procedures provided by applicable law (Omelchuk et al., 2021). In
-the absence of a private key to an ancestor’s digital wallet, it is neither feasible nor productive to attempt
-to prove the existence of digital rights through tracing of electronic correspondences, analyses of banking
-operations, or entries in the registry of rights that reflect transactions with objects certified by tokens
-(Bessarab, 2020).
+Despite the rise of digital asset executors, it would appear that, from a legal point of view, various challenges remain in the way of digital inheritance as being a reliable form of transmitting wealth across generations. In the absence of a private key to an ancestor’s digital wallet, it is neither feasible nor productive to attempt to prove the existence of digital rights through tracing of electronic correspondences, analyses of banking operations, or entries in the registry of rights that reflect transactions with objects certified by tokens. This is where the exploration of the application of soulbound tokens (SBTs) and the Social Recovery Pallet within the Polkadot and Kusama ecosystems may be a proposed solution.
+
+The Why?
+
+In a 
 
 The challenge of legitimizing digital inheritance as a form of transmitting wealth across generations
 will be to ensure that the mechanism of digital inheritance remains decentralized. This is because in the
