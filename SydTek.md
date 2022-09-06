@@ -39,7 +39,8 @@ Despite the rise of digital asset executors, it would appear that, from a legal 
 
 The Why?
 
-In a 
+In a 2020 study by the Cremation Institute, 89% of crypto investors worry about dying with their assets while only 23% of those have a documented plan. Of that percentage, only 7% have created a will that includes cryptocurrencies. In another survey, roughly 60% of Americans and over 65% Canadians do not have a will. It was also noted that these numbers could be higher in other parts of the world. This can be attributed to the terror management theory (TMT) and people's fear of dying. We conducted a theoretical case study on soulbound tokens and TMT that can be found here https://bit.ly/3RnCmMy that investigates the possibility of how the introduction of SBTs could alleviate the anxiety and fear of death. Although this use case may be unconventional, it is one that all Web3 users may have to face in their lives.
+
 
 The challenge of legitimizing digital inheritance as a form of transmitting wealth across generations
 will be to ensure that the mechanism of digital inheritance remains decentralized. This is because in the
