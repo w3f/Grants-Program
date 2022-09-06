@@ -178,7 +178,7 @@ For each milestone,
 ### Overview
 
 - **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):**  2FTE, the listed members would contribute to different deliverables based on their skill-set.
+- **Full-Time Equivalent (FTE):**  3FTE, the listed members would contribute to different deliverables based on their skill-set.
 - **Total Costs:** 29,964 aUSD 
 
 ### Milestone 1 — State of the Industry on soulbound tokens and digital inheritance 
@@ -208,7 +208,7 @@ For each milestone,
 ### Milestone 3 — Peer Review, Journal Publication and Dissemination of Research
 
 - **Estimated Duration:** 1 month
-- **FTE:**  2
+- **FTE:**  3
 - **Costs:** 9,964 aUSD - link to budget details outlined in the Additional Information Section
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
