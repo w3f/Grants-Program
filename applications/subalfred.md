@@ -1,6 +1,6 @@
 # Subalfred
 - **Team Name:** hack-ink
-- **Payment Address:** 156HGo9setPcU2qhFMVWLkcmtCEGySLwNqa3DaEiYSWtte4Y (Polkadot)
+- **Payment Address:** 0xccd79b2b77e71292924e85de130bfb1c03d94522 (Ethereum)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -126,7 +126,7 @@ There are three parts:
 ### Overview
 - **Total Estimated Duration:** 3 weeks
 - **Full-Time Equivalent (FTE):**  0.5 FTE
-- **Total Costs:** 30,000 USD in DOT
+- **Total Costs:** 30,000 USD in Ethereum USDC
 
 ### Milestone 1 — Implement the skeleton and part of the features
 - **Estimated duration:** 1 week
