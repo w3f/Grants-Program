@@ -7,7 +7,7 @@
 
 ## Project Overview :page_facing_up:
 
-This application is a response from the [anti-collusion infrastructure RFP](https://github.com/w3f/Grants-Program/blob/master/rfps/open/anti-collusion_infrastructure.md)
+This application is a response from the [anti-collusion infrastructure RFP](https://github.com/w3f/Grants-Program/blob/master/rfps/open/anti-collusion_infrastructure.md).
 
 ### Overview
 
@@ -31,18 +31,34 @@ Following the specifications of MACI as linked above, here is an overview of the
 Maki is a smart contract that allow its users to vote while making collusion among participant difficult (if the operator is honest) and retain censorship resistance, correct execution and anonymity of votes. 
 
 Maki has two kind of users: one **operator** and 0..n **voter(s)** (also called user here under). 
+
 The operator role is to deploy the contract (and publish his public key, known by all), start the sign-up period (which is done when the contract is deployed), process all the voters commands, generate the result of each commands, tally the votes and generate a zk-SNARK proof that the result is valid. 
-The voter role is to sign-up (using the `signUp` function) and vote (using the `publishMessage` function). 
 
-The `signUp` function allows a user to register for voting by sending his public key to the contract. 
+The voter role is to sign-up for a vote and then vote. 
 
-The `publishMessage` function allows a user to vote. A voter may use this multiple time to change his vote options.
+Secrecy of the votes are possible by using cryptographic operations. As described in the MACI specs, each users and the coordinator have a key-pair used to publish encrypted messages and for the coordinator to decrypt those messages.
 
-The `proveVoteTally` function to verify that the generated zkSnark proof is valid (and therefore publish it).
+#### Overview :
 
-Other public functions are needed for the coordinator to process the votes off-chain (basically the contract's state such as stateTree, messageTree, etc.)
+![](https://i.imgur.com/n4tmk6p.png)
 
-Besides the contract, we will provide one circuit to build the zk-Snark proof off-chain. 
+#### Maki's Functions : 
+
+`signUp` allows a user to register for voting by sending his public key to the contract. There is no need for a given user to call this function multiple times.
+
+`publishMessage` allows a user to vote. A voter may use this multiple time to change his vote options, as long as the vote in not ended.
+
+`processMessages` function called by the coordinator to process all the users' messages, update the state root and provide a zk-snark proof. 
+
+`proveVoteTally` to publish the vote result and the zk-snark proof of it. Called by the coordinator. Can only be called once the vote ended.
+
+`verifyVoteTally` to verify that the generated zkSnark proof is valid.
+
+Public functions are needed for the coordinator to process the votes off-chain (basically the contract's state such as stateTree, messageTree, etc.) and the voter to get the coordinator's key.
+
+Besides the contract, we will provide two circuits to build the zk-Snark proof off-chain, one for the correctness of message processing (`proveStateCorrectness`) and one for the vote tallying (`proveVoteTallyCorrectness`). The circuits will be written in [circom](https://docs.circom.io/) and it will be used through a script that build and execute the compiled circuit. This is needed for the coordinator's functions `processMessages` and `proveVoteTally`.
+
+Maki has two merkle roots, one for the `messageTree` (which gathers submitted messages) and one for the `stateTree` (which gathers the mapping between the user public keys and the votes).  
 
 Maki will be implemented as an ink! smart contract, so it will be developed in Rust with ink! library.
 
@@ -83,7 +99,7 @@ Here is an overview of different relevant project I've worked / working on :
 
 * Project with background processing of files and websocket messaging for communication between multiple applications.
 
-* Different DDD projects with back-end(s) (HTTP API, written with .NetCore and Entity) and UI app(s) (web-app), multiple databases and mecanisms for back-end communication if/when needed.
+* Different DDD projects with back-end(s) (HTTP API, written with .NetCore and Entity) and UI app(s) (web-app), multiple databases and mechanisms for back-end communication if/when needed.
 
 * Multiple other projects and PoC, mostly with backend technologies (Java, C++, C#)
 
@@ -122,10 +138,11 @@ As mentioned, this application is a response from the [anti-collusion infrastruc
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can deploy the contract and use its functions. References, such as the MACI research page or the specs of MACI implementation, will be provided. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 1. | Maki: constructor and internal state | Contract internal state needed to work properly and its constructor |  
-| 2. | Maki: signUp function | User function to register for the vote |   
-| 3. | Maki: publishMessage function | User function to vote |    
+| 2. | Maki: signUp function | User function to register for the vote (ink!) |   
+| 3. | Maki: publishMessage function | User function to vote (ink!) |  
+| 4. | Maki: processMessage function | Coordinator function to proves that the messages have been correctly processed |    
 
-Note: 0d. not included, because it would be overkill to setup a whole environment on a docker image just to deploy the contract while other resource already exists for that.
+Note: 0d. not included, because it would be overkill to setup a whole environment on a docker image just to deploy the contract while other resources already exist for that.
 
 Note: As the implementation is based on others work (research and specification), we will give credits and link the needed parts of it.
 
@@ -141,11 +158,12 @@ Note: As the implementation is based on others work (research and specification)
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can deploy the contract and use its functions. References, such as the MACI research page or the specs of MACI implementation, will be provided. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0e. | Article | We will publish a Medium **article** and the same article on SubSocial to explain what is Maki. The articles will be referenced on Reddit (/r/Kusama and /r/Polkadot) and on diverse Discord Server related to Polkadot (mostly the important and official ones).
-| 1. | Maki: proveVoteTally function | coordinator function to prove the result of the vote tally on-chain |   
-| 2. | Maki: circuits | Circuit used to generate the zk-Snark  - this will be based (if not reused) on this work [MACI](https://github.com/privacy-scaling-explorations/maci/tree/master/circuits/ts) |   
-| 3. | Maki: verifier | Verifier contract to verify that the proof is correct - this will be based on this work [MACI](https://github.com/privacy-scaling-explorations/maci/tree/master/circuits/ts)|   
+| 1. | Maki: proveVoteTally function | Coordinator function to prove the result of the vote tally on-chain (ink!) |   
+| 2. | Maki: verifyVoteTally function | Function to verify the result of the vote tally and the proof of it (ink!) | 
+| 3. | Circuits | Circuit used to generate the zk-Snark (in TypeScript and Circom)  - this will be based (if not reused) on this work [MACI](https://github.com/privacy-scaling-explorations/maci/tree/master/circuits/ts) and [MACI](https://github.com/privacy-scaling-explorations/maci/tree/master/circuits/circom). One circuit for proveStateCorrectness and one for proveVoteTallyCorrectness functions. |   
+| 4. | Votes Verifier | Verifier contract/function (in Rust/ink!) to verify that the proof is correct - this will be based on this work [MACI](https://github.com/privacy-scaling-explorations/maci/tree/master/circuits/ts). The verifier will be used by Maki|   
 
-Note: 0d. not included, because it would be overkill to setup a whole environment on a docker image just to deploy the contract while other resource already exists for that.
+Note: 0d. not included, because it would be overkill to setup a whole environment on a docker image just to deploy the contract while other resources already exist for that.
 
 Note: As the implementation is based on others work (research and specification), we will give credits and link the needed parts of it.
 
@@ -159,9 +177,9 @@ Please include here.
 - Provide different circuits for the proof
 - Provide a way to configure the contract to allow non-quadratic votes, or for example conviction votes
 
-These are just ideas. I would also like for the community (developers) to participate, reuse, enhance or create their own version of Maki. 
+These are just ideas. I would also like for the community (developers) to participate, re-use, enhance or create their own version of Maki. 
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** 
-I've be part of the program once ([polk-auction application](https://github.com/w3f/Grants-Program/blob/2606f01f2fed14bb358560c8ececc9ad05e40bb8/applications/polk-auction.md))
+I've been part of the program once ([polk-auction application](https://github.com/w3f/Grants-Program/blob/2606f01f2fed14bb358560c8ececc9ad05e40bb8/applications/polk-auction.md))
