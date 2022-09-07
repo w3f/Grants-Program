@@ -55,22 +55,28 @@ This proposal is for the creation of a peer-reviewed academic case study for the
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
+
 As of September of 2022, there are 1.05 million holders of DOT tokens and over 267,000 holders of KSM tokens. In addition to these numbers, there are many others that hold tokens from projects throughout the Polkadot and Kusama ecosystems. With these numbers, millions of users throughout the Polkadot and Kusama ecosystems could benefit from this study as not only will this study bring awareness to the importance of digital inheritance and the Social Recovery Pallet, but this study could also create cross-chain solutions that would bring users from other ecosystems to leverage this offering.
 
 
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+
 The target audience for this study would be developers to create a solution for digital inheritance through the use of the Social Recovery Pallet, as well as dapp users. Additionally, as highlighted in the Future Plans section below, a follow-up study is planned with Law Professors to investigate the legal components of digital inheritance within the Web3 space.
 
 - What need(s) does your project meet?
+
 As the number will grow expoentially in the coming years, this project meets the current need of 320 million identity-verified crypto and Web3 users globally. With the issue of verifible proof of assets such as land in emerging economies such as Africa, there is also a social impact component to this study where NFTs could provide verifiable ownership of physical assets. 
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
+
 Although there are research-based projects that have received grants from the Web3 Foundation, after a quick search, the team was unable to find a study focused on digital inheritance and the Social Recovery Pallet within the Polkadot and Kusama ecosystems.
 
 - If so, how is your project different?
+
 N/A
 
 - If not, are there similar projects in related ecosystems?
+
 There are two projects outside of the Polkadot and Kusama ecosystems that offer digital inheritance solutions - Vault12 and Safe Haven. For Vault12, although users can store crypto and NFTs, at current state, the Vault12 solution is only for Ethereum-based assets. For SafeHaven's Inheriti product, the website notes only 350+ users, which leads to the question of can this solution support ecosystems the size of Polkadot and Kusama?
 
 ## Team :busts_in_silhouette:
