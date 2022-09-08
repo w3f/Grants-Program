@@ -5,7 +5,7 @@
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
 - **Team Name:** SydTek
-- **Payment Address:** 5Eq9nneMkqwmrEcuqwQrfX7zpBfS4LcmgKTR88MQi5Yintvg Polkadot/Kusama (aUSD) payment address.
+- **Payment Address:** 0xDB47B39e2fe61bA6a0f82aBf07daa38D358134c5 (USDC - Ethereum Mainet)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -29,7 +29,7 @@ This project relates to Substrate / Polkadot / Kusama in that all users within t
 - An indication of why your team is interested in creating this project.
 
 SydTek is looking to reinvent higher education through the democratization of education and research. After team members have published peer-reviewed academic case studies on Acala (https://bit.ly/3D55XGh) and Bit.Country (https://bit.ly/3wZaHt4) within the Polkadot ecosystem, we look to expand on a theoretical study of soulbound tokens (https://bit.ly/3RnCmMy) that will be published in the Journal of Strategic Innovation and Sustainability
-October of 2022 with a practical case study within the Polkadot and Kusama ecosystems.
+on October of 2022 with a practical case study within the Polkadot and Kusama ecosystems.
 
 ### Project Details
 The following excerpt is from SydTek's study on Bit.Country entitled "The Metaverse as the Digital Leviathan: A Case Study of Bit. Country". This provides a primer to the proposed study.
@@ -44,7 +44,7 @@ Despite the rise of digital asset executors, it would appear that, from a legal 
 
 The Why?
 
-In a 2020 study by the Cremation Institute, 89% of crypto investors worry about dying with their assets while only 23% of those have a documented plan. Of that percentage, only 7% have created a will that includes cryptocurrencies. In another survey, roughly 60% of Americans and over 65% Canadians do not have a will. It was also noted that these numbers could be higher in other parts of the world. This can be attributed to the terror management theory (TMT) and people's fear of dying. We conducted a theoretical case study on soulbound tokens and TMT that can be found here https://bit.ly/3RnCmMy that investigates the possibility of how the introduction of SBTs could alleviate the anxiety and fear of death. Although this use case may be unconventional, it is one that all Web3 users may have to face in their lives.
+In a 2020 study by the Cremation Institute, 89% of crypto investors worry about dying with their assets, while only 23% of those have a documented plan. Of that percentage, only 7% have created a will that includes cryptocurrencies. In another survey, roughly 60% of Americans and over 65% Canadians do not have a will. It was also noted that these numbers could be higher in other parts of the world. This can be attributed to the terror management theory (TMT) and people's fear of dying. We conducted a theoretical case study on soulbound tokens and TMT that can be found here https://bit.ly/3RnCmMy that investigates the possibility of how the introduction of SBTs could alleviate the anxiety and fear of death. Although this use case may be unconventional, it is one that all Web3 users may have to face in their lives.
 
 The How?
 
@@ -65,7 +65,7 @@ The target audience for this study would be developers to create a solution for 
 
 - What need(s) does your project meet?
 
-As the number will grow expoentially in the coming years, this project meets the current need of 320 million identity-verified crypto and Web3 users globally. With the issue of verifible proof of assets such as land in emerging economies such as Africa, there is also a social impact component to this study where NFTs could provide verifiable ownership of physical assets. 
+As the number will grow exponentially in the coming years, this project meets the current need of 320 million identity-verified crypto and Web3 users globally. With the issue of verifiable proof of assets such as land in emerging economies such as Africa, there is also a social impact component to this study where NFTs could provide verifiable ownership of physical assets. 
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
@@ -107,6 +107,11 @@ Dr. Justin Goldston - Justin Goldston is a Professor at Penn State University, a
 Justyna Osowska - Justyna is the CEO of Women in Blockchain Canada, and has lectured on blockchain at a number of universities in Canada and Cyprus. With a passion to bring more women into the blockchain and Web3 spaces, Justyna brings the angle of inclusivity to the team’s research. 
   
 Tomer Jordi Chaffer - Jordi is a graduate researcher at McGill University in Canada and is also the co-author of The Metaverse as the Digital Leviathan: A Case Study of Bit.Country (please see the link below). As an international speaker on blockchain, Jordi’s research is focused on blockchain within the healthcare sector.
+
+Assune Cotlage - Assune is a Substrate Certified Developer and the co-founder of SydTek DAO and is also the Chief Information Security Officer for a fintech company in the United States. With his experience, Assune has developed protocols on Ethereum, Avalanche, and Fantom, and continues to collaborate and educate developers within the Polkadot ecosystem.
+
+Joshua Waller - Joshua is a Developer for the Phala Network where he develops core protocols/applications on Phala's blockchain system and helps build relationships with community developers and project teams in the ecosystem. Joshua has a Bachelor’s degree in Computer Science from the University of Texas at Austin. As a blockchain enthusiast, Joshua has helped contribute to initiatives to educate the next wave of blockchain devs with SydTek. Before becoming a Blockchain Developer, he worked as a software engineer in converged/hyperconverged IT infrastructure for enterprise businesses.
+
 
 This is the first peer-reviewed academic case study on the metaverse written by Justin Goldston, Jordi Chaffer, and George Martinez. 
 https://bit.ly/3wZaHt4
