@@ -2,7 +2,7 @@
 
 - **Project Name:** NEFTME (Alpha phase)
 - **Payment Address:** 0x40a5ED037CeaaDdcC277cC9ec73b8a8ad0874158 (USDT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
 
 ## Project Overview :page_facing_up:
@@ -82,10 +82,27 @@ We expect the teams to already have a solid idea about your project's expected f
 
 https://www.notion.so/neftme/NEFTME-App-29acb1ae6d034a0b9d07a46ee7e5b04a
 
-We have technical documentation, however we can't seem to insert it as it would then add another file to the PR and the rules said only one file should be submitted. 
-Please contact us in order to get documentation.
+NEFTME is a system composed by 2 main components. Using a REST API for the backend in Ruby on Rails and React Native with Javascript for the frontend. 
+
+The backend is currently hosted on Heroku and the frontend uses Expo GO to host the app.
+
+Currently, we are EVM based (smart contracts). However, this technical constraint was due to a time urgency and is not final. We simply wanted to deploy our dApp and show the world what we can do!
+
+We will now show diagrams detailing our integration.
+
+Physical View
+
+![img](https://neftme-test-bucket.s3.eu-west-2.amazonaws.com/Vista_fisica_n2.jpg)
+
+We currently use amazon AWS to store the NFT images, but we intend to change to IPFS when we go live on mainnet!
+In fact, our goal is to be 100% decentralized on all our app components.
+
+Logical View
+
+![img](https://neftme-test-bucket.s3.eu-west-2.amazonaws.com/vista_logica_n2.jpg)
 
 
+These are our main diagrams, which we think gives a good sense of detail but if you need anything else, please do contact us.
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
@@ -263,7 +280,7 @@ Challenge “Be real”.
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
 - **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
-### Milestone 1 Example — Alpha 5
+### Milestone 1 — Alpha 5
 
 Direct Messaging;
 ·       
@@ -282,9 +299,7 @@ Share Profile (link).
 - **Costs:** 35K USD
  
 
-
-
-### Milestone 2 Example — Beta
+### Milestone 2 — Beta
 
 NFT as a Video;
 Invite Code system to control amount of new users;
@@ -305,7 +320,6 @@ Please include here
 
 - how you intend to use, enhance, promote and support your project in the short term, and
 - the team's long-term plans and intentions in relation to it.
-
 
 
 https://www.notion.so/neftme/MKT-Go-to-Market-0e0f3ebbe1c94441a71e1db0ab991547
