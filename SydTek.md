@@ -5,7 +5,7 @@
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
 - **Team Name:** SydTek
-- **Payment Address:** 0xDB47B39e2fe61bA6a0f82aBf07daa38D358134c5 (USDC - Ethereum Mainet)
+- **Payment Address:** 0xDB47B39e2fe61bA6a0f82aBf07daa38D358134c5 (USDC - Ethereum Mainnet)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
@@ -20,7 +20,7 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 - A brief description of your project.
 
-This proposal is for the creation of a peer-reviewed academic case study for the application of soulbound tokens within the Polkadot and Kusama ecosystems by leveraging the Social Recovery pallet and soulbound token use cases developed by the Phala Network and RMRK for digital inheritance. This will be a qualitative case study where we will conduct a literature review of soulbound tokens, as well as interview team members and developers of Phala - Marvin Tong, Joshua Waller, and Wenfeng Wang - as well as team members from RMRK. In addition to the research on soulbound tokens, we will also look to interview members of Parity Technologies who are familiar with the development of the Social Recovery pallet to investigate how it can be applied to digital inheritance. 
+This proposal is to create a peer-reviewed academic case study for applying soulbound tokens within the Polkadot and Kusama ecosystems by leveraging the Social Recovery pallet and soulbound token use cases developed by the Phala Network and RMRK for digital inheritance. This will be a qualitative case study where we will conduct a literature review of soulbound tokens, interview team members and developers of Phala - Marvin Tong, Joshua Waller, and Wenfeng Wang - as well as team members from RMRK. In addition to the research on soulbound tokens, we will also interview Parity Technologies members who are familiar with the development of the Social Recovery pallet to investigate how it can be applied to digital inheritance.
 
 - An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
 
