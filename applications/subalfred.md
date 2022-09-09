@@ -132,7 +132,7 @@ There are three parts:
 | -----: | -------------------------------------- | ---------------------------------------------------------------------------------------------- |
 |    0a. | License                                | GPLv3                                                                                          |
 |    0b. | Documentation                          | I'll provide the inline documentation.                                                         |
-|    0c. | Testing Guide                          | I'll provide a GitHub Action setup example and describe how to check the result.               |
+|    0c. | Testing Guide                          | I'll provide a GitHub Actions setup example and describe how to check the result.               |
 |     1. | GitHub Actions: check runtime features | I'll provide a GitHub Actions, which could check the runtime features status while developing. |
 |     2. | GitHub Actions: check runtime storage  | I'll provide a GitHub Actions, which could check the runtime storage changes while developing. |
 |     3. | GitHub Actions: check runtime version  | I'll provide a GitHub Actions, which could check the runtime version changes while developing. |
