@@ -83,7 +83,7 @@ There are three parts:
   some Substrate libraries's re-implementations reduce the unnecessary dependencies as much as possible.
 
 ### Overview
-- **Total Estimated Duration:** 3 weeks
+- **Total Estimated Duration:** 5 weeks
 - **Full-Time Equivalent (FTE):**  1 FTE
 - **Total Costs:** 34,000 USD in Ethereum USDC
 
