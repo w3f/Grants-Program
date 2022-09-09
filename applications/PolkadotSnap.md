@@ -96,7 +96,7 @@ N/A
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):** 6 FTE
-- **Total Costs:** 32k USD
+- **Total Costs:** 30k USD
 
 ### Milestone 1:
 In Milestone one, we will develope the wallet adaptor based on MetaMask Snap. We will create the wallet adaptor for Polkadot. The are at least these things should be covered:
@@ -110,13 +110,26 @@ Bascily, every dapp can use this wallet adapter to interact with MetaMask
 To hit this milestone, one month full-time work is needed for our secure element firmware engineer (Sora - Frontend Engineer ), 0.5 month full-time work is needed for our QA engineer (Xia MengYun - QA Engineer). 
 Grants are 10k USD.
 
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a dapp developer can use this library to use the MetaMask flask as the wallet for the user. |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Demo | We will publish an demo to show how to use this library for the dapp developers |
+
 ### Milestone 2: 
 In milestone two, we will develop the Polkadot Wallet. It will also use our snap and provide functionality like transferring asset. Staking etc. 
 
 The Polkadot wallet we will build which will rely on Polkadot snap to interact with MetaMask. First We will design the new user interface to provide an good experience for the users. Second, we will build this wallet application. It will be our long-term supported product. 
 To hit this milestone, two month full-time work is needed for all our dev/pm on the software side (Aaron Chen - CTO of Keystone, Zhang XiaoChun - Product Manager, Tian li - Software Engineer), 0.5 month full-time work is needed for our QA engineer & UI/UX designer (Xia MengYun- QA Engineer, Zhang XiaoChun - UX Designer). 
-Grants are 22k USD.
+Grants are 20k USD.
 
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can manage their assets with this wallet application. |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Application | We will publish the wallet application for the whole Polkadot community |
 
 ## Future Plans
 
