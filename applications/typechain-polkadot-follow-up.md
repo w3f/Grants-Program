@@ -167,9 +167,9 @@ We have decided to describe a full roadmap of a Typechain here, with estimates. 
 
 ### Milestone 2 - Full coverage for ABIs’ types. Contracts deployment.
 
-- **Estimated duration:** 11 weeks
+- **Estimated duration:** 7.5 weeks
 - **FTE:** 2.5
-- **Costs:** 77,000 USD
+- **Costs:** 52,500 USD
 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
