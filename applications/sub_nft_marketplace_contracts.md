@@ -28,7 +28,30 @@ At the end of a successful auction, the seller signs a transaction to send the N
 
 it includes marketplace,bundle marketplace and auction.
 
-The core features:
+####  The core features:
+* auction
+  *  create_auction
+  *  place_bid
+  *  withdraw_bid
+  *  result_auction
+  *  cancel_auction
+* marketplace 
+  *  list_item
+  *  cancel_listing
+  *  buy_item
+  *  create_offer
+  *  cancel_offer
+  *  accept_offer
+  *  register_royalty
+  *  register_collection_royalty
+* bundle marketplace
+  *  list_item
+  *  cancel_listing
+  *  buy_item
+  *  create_offer
+  *  cancel_offer
+  *  accept_offer
+
 #### Direct Listings
 An NFT owner (or 'lister') can list their NFTs for sale at a fixed price. A potential buyer can buy the NFT for the specified price, or make an offer to buy the listed NFTs for a different price or currency, which the lister can choose to accept.
 
@@ -44,12 +67,6 @@ A sale is executed when either a buyer pays the fixed price, or the seller accep
 #### Auction listings
 
 An NFT owner (or 'lister') can auction their NFTs. Potential buyers make bids in the auction. At the closing of the auction, the buyer with the wining bid gets the auctioned NFTs, and the lister gets the winning bid amount.
-
-The core methods:
-* auction
-  *  
-* marketplace 
-* bundle marketplace
 
 
 ### Ecosystem Fit
@@ -230,5 +247,6 @@ No.
 **How did you hear about the Grants Program?** 
 
 - personal recommendation.
-
+- Previous grants I have applied for:
+  - [hex space social graph](https://github.com/w3f/Grants-Program/blob/master/applications/hex.md) 
 
