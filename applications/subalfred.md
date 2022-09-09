@@ -85,12 +85,12 @@ There are three parts:
 ### Overview
 - **Total Estimated Duration:** 5 weeks
 - **Full-Time Equivalent (FTE):**  1 FTE
-- **Total Costs:** 34,000 USD in Ethereum USDC
+- **Total Costs:** 30,000 USD in Ethereum USDC
 
 ### Milestone 1 — Polish the existing features and add more new features
 - **Estimated duration:** 2 week
 - **FTE:**  1
-- **Costs:** 26,500 USD
+- **Costs:** 25,000 USD
 
 | Number | Deliverable                        | Specification                                                                                                                                    |
 | -----: | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -110,7 +110,7 @@ There are three parts:
 ### Milestone 2 — Add more new features
 - **Estimated Duration:** 2 week
 - **FTE:**  1
-- **Costs:** 4500 USD
+- **Costs:** 3500 USD
 
 | Number | Deliverable               | Specification                                                                                                                                    |
 | -----: | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -126,7 +126,7 @@ There are three parts:
 ### Milestone 3 — Provide checks' GitHub Actions
 - **Estimated Duration:** 1 week
 - **FTE:**  1
-- **Costs:** 3000 USD
+- **Costs:** 1500 USD
 
 | Number | Deliverable                            | Specification                                                                                  |
 | -----: | -------------------------------------- | ---------------------------------------------------------------------------------------------- |
