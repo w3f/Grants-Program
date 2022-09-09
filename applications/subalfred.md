@@ -145,8 +145,8 @@ There are three parts:
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 From my team, Darwinia Network.
 
-`subalfred`'s goal is to become an all-in-one Substrate development toolbox.
-I browsed Substrate's issue and was active on Substrate StackExchange,
+As I said, `subalfred`'s goal is to become an all-in-one Substrate development toolbox.
+I browsed Substrate's issues and was active on Substrate StackExchange,
 and discuss with other developers to know what do they need while developing on Substrate.
 Currently, I have already implemented some of them and plan to do more.
 So, I hope all these features can be a part of this grant.
