@@ -6,9 +6,6 @@
 - **Payment Address:** 0x7682Ba569E3823Ca1B7317017F5769F8Aa8842D4 (USDT/USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-> ⚠️ The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.
-> 
-
 ## **Project Overview 📄**
 
 ### **Overview**
@@ -297,10 +294,10 @@ We have finished the solidity contract development and got contracts audited by 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT  |
-| 0b. | Documentation | We will provide documentations that explain how a normal user can register a domain with dot, ksm, aUSD, USDC.   |
+| 0b. | Documentation | We will provide documentation that explains how a user can register a domain with dot, ksm, aUSD, USDC.   |
 | 0c. | Tests | Core payment functions will be fully covered by unit tests to ensure functionality and robustness.  |
-| 1. | Multi-token support | We will implementation the functionality to accept dot, ksm to register PNS domains.  |
-| 2. | Interaction with Frontend and Payment ABI of price oracle | Read the price of tokens from other oracles and allow users to pay various tokens to obtain their PNS.  |
+| 1. | Multi-token support | Since Polkadot is a multi-chain ecosystem, users may have different assets on different chains. As a DID infrastructure, PNS serves users across all parachains. If PNS only supports one token, e.g. GLMR on Moonbeam, those without such tokens may find it difficult to use their DIDs. Thus, it is necessary to support multiple tokens to register PNS. This is not intended to promote a specific token, but to facilitate all Polkadot users at the ecosystem level. We will implement the functionality to accept dot, ksm to register PNS domains.  |
+| 2. | Interaction with Frontend and Payment ABI of price oracle | PNS registration and renewal fee is priced in USD. In order to display the price and receive the fee correctly, the PNS App should read the price of tokens from other oracles and allow users to pay various tokens to obtain their PNS.  |
 
 
 ### **Milestone 2 —** Account ownership and social network identity integration with verifiable credentials
@@ -312,13 +309,65 @@ We have finished the solidity contract development and got contracts audited by 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT  |
-| 0b. | Documentation | We will provide documentations
- that explain how a user can set social network identity of their PNS.   |
+| 0b. | Documentation | We will provide documentation that explains how a user can set the social network identity of their PNS.   |
 | 0c. | Tests | Core credential verification functions will be fully covered by unit tests to ensure functionality and robustness.  |
 | 1. | Account ownership verification | Users can set multiple wallet addresses on PNS and attach on-chain verifiable credentials to show their ownership of the address. 
 
 For example, you can add a signed message to show your ownership to some address when setting the DOT record of your PNS domain, so that others could know the authenticity of that record.  |
 | 2. | Social network identity integration | Users can add various off-chain social network records to their own PNS and verify them.  |
+
+Domain name owners can now set the ETH, DOT record of their PNS domain, which is one of the targeted use cases. However, users can also set the ETH address of any third party to his own PNS without any verifications, which may cause problems. With account ownership verification, users can attach cryptographically signed verifiable credentials to the records to show they are the owner of the resolved addresses. Those VCs are also written as new on-chain PNS records.
+
+For example, PNS domain name owner who want to have their ETH address verified, should sign a message of:
+
+```
+{
+    types: {
+         EIP712Domain: [],
+     Data: [
+                { name: 'Message', type: 'string' }
+            ]},
+     domain: {},
+     primaryType: 'Data',
+     message: {
+                Message: `I'm verifying the DOT address of PNS domain name ${PNSDomainName.dot}`
+     }
+}
+```
+
+PNS also allows users to verify their social network identities. Users can set their Twitter record of their PNS domain. In order to verify they are the true owner, PNS will ask the user to sign a message with the domain name owner wallet, then they will need to post the message on Twitter or other social networks. PNS backend service will then fetch the message on social networks to check that it is published correctly, and it will issue verifiable credentials to the user.
+
+For example, PNS domain name owner who want to have their Twitter account verified, should sign a message of:
+
+```
+{
+    types: {
+         EIP712Domain: [],
+     Data: [
+                { name: 'Message', type: 'string' }
+            ]},
+     domain: {},
+     primaryType: 'Data',
+     message: {
+                Message: `I'm verifying my Twitter account with handle ${twitterId}`
+     }
+}
+```
+
+They will get the signature. Then they should publish a message on Twitter:
+
+```
+I'm verifying my Twitter account with handle ${twitterId}
+
+https://pns.link/details/${PNSDomainName.dot}
+
+sig:
+${signature}
+```
+
+Those verifiable credentials are optional, and once they are set correctly, the PNS domain name will be marked Verified on the PNS Manager App. And the data is also accessible on chain or via API services.
+
+
 
 
 ### **Milestone 3  — PNS HTTP API**
@@ -332,8 +381,30 @@ For example, you can add a signed message to show your ownership to some address
 | 0a. | License | MIT  |
 | 0b. | Documentation | API server docs for easy integration.   |
 | 0c. | Tests | Core resolution function will be fully covered by unit tests to ensure functionality and robustness.  |
-| 1. | HTTP API Server for PNS query | MIT  |
+| 1. | HTTP API Server for PNS query | Building a HTTP API server for querying PNS records, which will return JSON data with the domain name, namehash, owner address, expire time and records of different types, eg. ETH address, dot address, Twitter account, email address and so on. It will help other DApps and services to integrate with PNS. |
+| 2. | PNS Subquery Graph | Building and deploying a Subquery indexing service to pull the on-chain data off-chain and store the data into Postgres DB. It will speed up the PNS query and make it more reliable. It can also track all subdomains of a domain name, which is not possible with on-chain PNS interface. This is the companion service of the HTTP API server.  |
 
+Example API results:
+
+
+```
+
+{
+  "name": "henry.dot",
+  "namehash": "0x...",
+  "owner": "0x...",
+  "expire_time": 1500000000,
+  "records": {
+    "eth": "0x...",
+    "dot": "5G...",
+    "twitter": "henry"
+  }
+  "children": [
+    ...
+  ]
+}
+
+```
 
 
 ## **Future Plans**
