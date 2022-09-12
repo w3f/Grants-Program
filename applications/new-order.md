@@ -76,6 +76,10 @@ Subquery is an indexer middleware that we use to integrate with in this grant.
 ### Project Uniqueness
 * The world's first fully open-source orderbook dex runtime with queue model.
 
+## Reactive Queue
+
+Unlike other layer 2 orderbook dex which uses 
+
 ### Target Audience
 * End users who are used to order book exchanges
 
@@ -140,7 +144,7 @@ I have fiddled with substrate last year.
 
 * **Estimated duration:** 5 weeks
 * **FTE:**  1
-* **Costs:** $10,000 equivalent USDC
+* **Costs:** $15,000 equivalent USDC
 
 Goal - Develop new-order pallet
 
@@ -192,32 +196,32 @@ I will build this.
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | I will write this in README |
+| 0b. | Documentation | I will write this in vuepress documentation |
 | 0c. | Testing Guide | Test code will be provided in the pallet. |
 | 0d. | Docker | Docker can be provided for running this in substrate. |
 | 1. | Pallet code | the code will be placed in `standard-frame`. |
 
-### Milestone 2 — Subquery indexer 
+### Milestone 2 - NewOrder.js
 
-* **Estimated duration:** 10 weeks
+* **Estimated duration:** 5 weeks
 * **FTE:**  1
-* **Costs:** $20,000 equivalent USDC
+* **Costs:** $15,000 equivalent USDC
 
-Goal - Make an indexer from pallet events then draw chart data with volume.
+Goal - Make an api for interacting with New Order
 
-This milestone focuses on building an indexer in subquery to process pallet events and aggregate in GraphQL. The PoC for this is to provide compatible data for TradingView to display charts like [this](https://jsfiddle.net/TradingView/cnbamtuh/).
+This milestone focuses on building a client library to interact with New Order runtime.
 
 This milestone builds:
-- Ticker for certain asset pair
+- Queries for each pair order
 - Volume changes in the array
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 | 
-| 0b. | Documentation | I will do this in README. |
+| 0b. | Documentation | I will write this in vuepress documentation |
 | 0c. | Testing Guide | Testing guide will be provided to run PoC on this with TradingView lightweight chart |
-| 0d. | Docker | Dockerfile may be provided if |
-| 1. | Indexer Repo | The code for the indexer will be open source for PoC. |
+| 0d. | Docker | Dockerfile is not needed |
+| 1. | Library Repo | The code for the library will be open source for PoC. |
 | 2. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video walk through demonstrating New-order |
 
 ## Future Plans
@@ -226,8 +230,7 @@ This milestone builds:
 * XCM integration in Rococo
 * EVM impl (maybe)
 * Build Governance for onboarding tokens can be further developed
-* Make `new-order.js` for executing trading from bots
-* Make real UI based on the working system
+* Make real UI based on the working system with SubQuery or other indexer
 * Get funded so that I can feed my devs
 
 ## Additional Information :heavy_plus_sign:
