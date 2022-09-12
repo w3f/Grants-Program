@@ -2,7 +2,7 @@
 
 -   **Project Name:** Epirus Substrate Explorer
 -   **Team Name:** Web3 Labs Ltd
--   **Payment Address:** 1c3tzkJnXffpJnjWXmNwvyKKVTkY5QFCHBDATV3EDvg8e17
+-   **Payment Address:** 0xc905c448db9942c662fcb1680f3ecfcd0592409c
 -   **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
     
 

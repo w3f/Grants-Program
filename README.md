@@ -59,7 +59,7 @@ We also try to enforce our [code of conduct](CODE_OF_CONDUCT.md) and based on th
 
 ### Project ideas
 
-An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](docs/polkadot_stack.md), as well as a list of previously accepted applications [here](docs/accepted_grant_applications.md).
+An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](https://wiki.polkadot.network/docs/build-open-source), as well as a list of previously accepted applications [here](docs/accepted_grant_applications.md).
 
 [Requests For Proposals](rfps) (RFPs) represent concrete ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, so even if another team has already applied to implement a certain RFP, we invite you to do the same if you're interested.
 
@@ -91,7 +91,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Raul Romanutti](https://github.com/rrtti)
 - [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
-- [Reto Trinkler](https://github.com/retotrinkler)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
 - [Gavin Wood](https://github.com/gavofyork)
 
@@ -101,6 +100,7 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 
 - [Ashley Grevelink](https://github.com/cruikshankss)
 - [David Hawig](https://github.com/Noc2)
+- [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
@@ -142,7 +142,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
 
 ## :pencil: Process
 
-> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in Bitcoin, USDT, USDC, DAI or aUSD. If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in Bitcoin, USDT (on Kusama or Ethereum), USDC/DAI (Ethereuem) or aUSD (Acala). If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 ### 1. Application
 
@@ -174,11 +174,11 @@ The W3F Grants Program offers different grant levels to help you best depending 
 
 ## :mailbox_with_mail: Suggest a Project
 
-If you think that we should support the development of certain tools or projects that aren't in the Polkadot/Kusama [tech stack](docs/polkadot_stack.md), feel free to submit a suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.
+If you think that we should support the development of certain tools or projects that aren't in the Polkadot/Kusama [tech stack](https://wiki.polkadot.network/docs/build-open-source), feel free to submit a suggestion using the process described below. We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.
 
 **Submit an idea:**
 
-If you have an idea for a project or would like to highlight an area in which you'd like to see teams build, but lack the technical background to create a detailed outline, you're welcome to open an [issue](https://github.com/w3f/Grants-Program/issues/new) or add it to the [tech stack](docs/polkadot_stack.md) as a potentially interesting project. We will review your suggestion and, if necessary, will create an RFP based on it and reach out to teams able to build it.
+If you have an idea for a project or would like to highlight an area in which you'd like to see teams build, but lack the technical background to create a detailed outline, you're welcome to open an [issue](https://github.com/w3f/Grants-Program/issues/new) or add it to the [tech stack](https://wiki.polkadot.network/docs/build-open-source) as a potentially interesting project. We will review your suggestion and, if necessary, will create an RFP based on it and reach out to teams able to build it.
 
 **Submit an RFP (Request for Proposals):**
 
@@ -256,7 +256,7 @@ flowchart LR
     style H stroke:#e83e8c,stroke-width:2px,stroke-dasharray: 5 5
     
     click C "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
-    click D "https://wiki.polkadot.network/docs/en/learn-treasury" "https://wiki.polkadot.network/docs/en/learn-treasury" _blank
+    click D "https://polkadot.network/treasury" "https://polkadot.network/treasury/" _blank
     click F "https://github.com/w3f/Grants-Program#pencil-process" "You are already in the right place :)"
     click H "https://www.substrate.io/builders-program/" "https://www.substrate.io/builders-program/" _blank
 ```
@@ -269,7 +269,7 @@ The [Substrate Builders Program](https://substrate.io/ecosystem/substrate-builde
 
 The treasury is a pot of on-chain funds collected through transaction fees, slashing, staking inefficiencies, etc. The funds held in the treasury can be spent on spending proposals. Both [Polkadot](https://polkadot.network/) and [Kusama](https://kusama.network/) offer everyone the opportunity to apply for funding via the treasury. See:
 
-- [Treasury Wiki](https://wiki.polkadot.network/docs/en/learn-treasury)
+- [Treasury](https://polkadot.network/treasury/)
 - [Polkadot Treasury Guide](https://docs.google.com/document/d/1IZykdp2cyQavcRyZd_dgNj5DcgxgZR6kAqGdcNARu1w)
 - [Kusama Treasury Guide](https://docs.google.com/document/d/1p3UQUjph5t8TVaWnTkfrI5mE-BABnM9Xvtuhdlhl6JE)
 
