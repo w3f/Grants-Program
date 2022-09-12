@@ -4,6 +4,7 @@
 * **Project Name:** PolkaJ Android Support
 * **Team Name:** Nathan Schwermann
 * **Payment Address:** 0x454cfAa623A629CC0b4017aEb85d54C42e91479d
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/301#issuecomment-1168484070)
 
 
 ## Project Overview :page_facing_up: 
