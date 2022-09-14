@@ -14,13 +14,13 @@
 ## Project Overview
 ### Overview
 Many patients use multiple clinics worldwide, but they face difficulty moving patient records, thus they have to take redundant duplicate tests. It is inconvenient and impractical to carry data folders over particularly between countries.  
-To solve this problem we gathered a team of doctors and Eegineers and designed an application. Before we go live, we wanted to store the data in a decentralised manner such that we can establish trust with multiple medical centers.
+To solve this problem we gathered a team of doctors and Eegineers and designed an application. Our project was evaluating data storage on such that we can establish trust with multiple medical centers.
 For further background you can[ read our blog](https://emerald-chicory-55c.notion.site/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
 
 Our goal is to to provide an easy-to-use infrastructure for healthcare applications by customiinge a blockchain Pallet to be able to store information from applications like Epic Systems Mychart. The data should be distributable accessible and auditable.
 Essentially we would like to implement something similar to w3c Solid pod but integrated with a blockchain node Substrate node that can be used by all healthcare applications.
 Integrating application specific security and storage for every program is a major pain point which is not addressed by blockchains.
-A combination of a Substrate blockchain and Solid pod like api [5] would provide the security, decentralisation and immutable record keeping that is needed to make healthcare interoperable.
+A combination of a Substrate blockchain, because of its modularity and Solid pod like api [5] would provide the security, decentralisation and immutable record keeping that is needed to make healthcare interoperable.
 To make this feasible it needs to be split into stages initially using a smart contract developed in Ink! - WebAssembly which records ownership and access [1] to a data pod with a similar API to Solid PODs [4].
 
 ID verification and data enhancement could be integrated through a Sidecar and or Pallet approach allowing other app developers within the ecosystem to reuse the chain without needing their own backend. 
@@ -233,7 +233,7 @@ Summary
 - **Full-Time Equivalent (FTE):** 2 
 - **Total Costs:** 30 000 for these two initial stages 
 
-### Milestone 1 Example — Implement runtime with Substrate Chain API configured with the features described above
+### Milestone 1— New parachain with Substrate Off chain worker storage API configured with the features described above
 - 
 - **Estimated duration:** 3 months
 - **FTE:**  2
@@ -253,19 +253,19 @@ Summary
 |    4b. | Add ID Validation to Pallet            | Integration of Identity validation mechanism :Built in method of assigning identity signers based on the described schema. THe schema is stored in a ink smart contract native to the Health substrate parachain. This built in smart contracts provides added value to NFT generated from users health data (As fake data has no value) |
 |    5a. | Extend Off chain worker Data Pallet    | Implementation Off chain worker encryption and decryption module that can authorize decryption when verified by a smart contract                                                                                                                                                                                                         |
 |    5b. | Data Validation on store               | Validation check every data stored on node against a hash must have a corresonding entry in template smart contract. In this first instance data storage will be assumed to be trusted as long as parachain node operator is trusted and hashes match the blockchain smart contract                                                      |
-|    6a. | Small example of new api               | Document Off chain encryption decryption API and create                                                                                                                                                                                                                                                                                  |
+|    6a. | Example with new api                   | Document Off chain encryption decryption API and create                                                                                                                                                                                                                                                                                  |
 - **Estimated duration:** 1 months
 - **FTE:**  1
 - **Costs:** 5,000 USD
 ### Milestone 2 - More complete example application
-| Number | Deliverable                | Specification                                                                                                                                                                                                                                                                                |
-|-------:|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License                    | Apache 2.0                                                                                                                                                                                                                                                                                   |
-|    0b. | Documentation              | [Link to why healthcare decentralised](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)                                                                                                                                                      |
-|    0c. | Testing Guide              | Each epic describes testing opportunities.  [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) 2. Create openapi specifcations for reading and writing data to and from the NFT smart contract (Depends on blockchain nft tech used) . |
-|    0d. | Docker                     | A dockerized setup of the application will be provided after several iterations. That is  when we have a working application against a customised subtrate blockchain with extended off chain worker local storage                                                                           |
-|    6b. | Local Cluster Deployment   | Deploy full demo application on the test Subtrate chain setup on our network that reads and writes encrypted medical data into the preformated data structure documented above.                                                                                                              |
-|    7a. | Example application video  | Example command line application that uses the off chain worker extensions developed as part of mileston one showing control of data and reliability under three scenario - node failure, node recovery and encryption.                                                                      |
+| Number | Deliverable                      | Specification                                                                                                                                                                                                                                                                                |
+|-------:|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                          | Apache 2.0                                                                                                                                                                                                                                                                                   |
+|    0b. | Documentation                    | [Link to why healthcare decentralised](https://www.notion.so/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)                                                                                                                                                      |
+|    0c. | Testing Guide                    | Each epic describes testing opportunities.  [ 1. Create a health blockchain](https://trello.com/c/LZ3c4K3T/3-create-basic-parachain-with-useful-api) 2. Create openapi specifcations for reading and writing data to and from the NFT smart contract (Depends on blockchain nft tech used) . |
+|    0d. | Docker                           | A dockerized setup of the application will be provided after several iterations. That is  when we have a working application against a customised subtrate blockchain with extended off chain worker local storage                                                                           |
+|    6b. | Local Cluster Deployment         | Deploy full demo application on the test Subtrate chain setup on our network that reads and writes encrypted medical data into the preformated data structure documented above.                                                                                                              |
+|    7a. | Example application with new api | Example command line application that uses the off chain worker extensions developed as part of mileston one showing control of data and reliability under three scenario - node failure, node recovery and encryption.                                                                      |
 
 
 ## Future Plans
