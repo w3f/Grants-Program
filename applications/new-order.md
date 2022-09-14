@@ -196,7 +196,7 @@ I will build this.
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | I will write this in vuepress documentation |
+| 0b. | Documentation | I will write this in official [documentation](https://github.com/standardweb3/docs) |
 | 0c. | Testing Guide | Test code will be provided in the pallet. |
 | 0d. | Docker | Docker can be provided for running this in substrate. |
 | 1. | Pallet code | the code will be placed in `standard-frame`. |
@@ -218,7 +218,7 @@ This milestone builds:
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 | 
-| 0b. | Documentation | I will write this in vuepress documentation |
+| 0b. | Documentation | I will write this in official [documentation](https://github.com/standardweb3/docs) |
 | 0c. | Testing Guide | Testing guide will be provided to run PoC on this with TradingView lightweight chart |
 | 0d. | Docker | Dockerfile is not needed |
 | 1. | Library Repo | The code for the library will be open source for PoC. |
