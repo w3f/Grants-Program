@@ -14,10 +14,10 @@
 ## Project Overview
 ### Overview
 Many patients use multiple clinics worldwide, but they face difficulty moving patient records, thus they have to take redundant duplicate tests. It is inconvenient and impractical to carry data folders over particularly between countries.  
-To solve this problem we gathered a team of doctors and Eegineers and designed an application. Our project was evaluating data storage on such that we can establish trust with multiple medical centers.
-For further background you can[ read our blog](https://emerald-chicory-55c.notion.site/Why-we-need-a-blockchain-for-health-data-1080c5b727964721822650972c28cab2)
+To solve this problem we gathered a team of doctors and Eegineers and designed an application. Our project was evaluating data storage on blockchain such that we can establish trust with multiple medical centers.
+We could not find any easy way to integrate our application, see references in the end of this document.
 
-Our goal is to to provide an easy-to-use infrastructure for healthcare applications by customiinge a blockchain Pallet to be able to store information from applications like Epic Systems Mychart. The data should be distributable accessible and auditable.
+We want an easy-to-use infrastructure for healthcare applications by customiinge a blockchain Pallet to be able to store information from applications like Epic Systems Mychart. The data should be distributable accessible and auditable.
 Essentially we would like to implement something similar to w3c Solid pod but integrated with a blockchain node Substrate node that can be used by all healthcare applications.
 Integrating application specific security and storage for every program is a major pain point which is not addressed by blockchains.
 A combination of a Substrate blockchain, because of its modularity and Solid pod like api [5] would provide the security, decentralisation and immutable record keeping that is needed to make healthcare interoperable.
