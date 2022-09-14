@@ -2,31 +2,35 @@
 
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** Uke Messaging - PoC - Phase 1
+- **Project Name:** Uke Protocol PoC & App (revised)
 - **Team Name:** Uke
 - **Payment Address:** bc1qttjsaqr0m8sxm46wnfdupzpl6rjemts3uxsuu5
 - **Level:** 1
-- **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/548#issuecomment-1230409529)
 
 
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
+### DISCLAIMER:
+
+This is grant proposal is very similar to one I had submitted previously. This was due to it being terminated, which you may [view here.](https://github.com/w3f/Grant-Milestone-Delivery/pull/548)  
+
+I have since severely changed the design of the protocol / project to provide a pallet-based architecture henceforth bringing more value. I realized the other proposal was not sustainable anyways (contract-based architecture), and this future-proofs and brings more value to the ecosystem as a whole. 
+
+I hope mitigate any sort of conflict as interest as there was before.  Please let me know if this is sufficient! 
 
 ## Project Overview
 
-
 ### Overview
 
-Uke is a p2p, completely distributed messaging protocol.  It utilizes local cryptography and a Substrate blockchain instance to verify, send, and receive messages in real time - just like any other conventional messaging protocol, and can be used to construct messaging apps, or any other application in which real time messaging is needed.
+The Uke Protocol is a p2p, completely distributed messaging protocol.  It utilizes local cryptography and a Substrate blockchain instance to verify, send, and receive messages in real time - just like any other conventional messaging protocol, and can be used to construct messaging apps, or any other application in which real time messaging is needed.
 
 Substrate is a key part of this solution, as **uke** essentially defies the need for any sort of traditional backend in favor of a **completely DLT based infrastructure.** 
 
-Initially, the PoC for this phase will be messaging app, however key components will be built that will allow for many more applications in the future.  The eventual goal is a messaging protocol that can be implemented anywhere, and is not dependent on any one centralized backend.
+Initially, the PoC for this phase will be messaging app, however key components will be built that will allow for many more applications in the future.  The eventual goal is a universal messaging protocol that can be implemented anywhere, and is not dependent on any one centralized backend.
 
 The purpose of this messaging app is to have it entirely independent of any third party service for both messaging and users - a true representation of web3.
 
- There is more to uke than just peer to peer messaging - it’s to demonstrate a lot more can be created with DLT than just another cryptocurrency. Rather than exchange currency one another, uke aims to take those same concepts and apply them to data and messaging.
+There is more to uke than just peer to peer messaging - it’s to demonstrate a lot more can be created with DLT than just another cryptocurrency. Rather than exchange currency one another, uke aims to take those same concepts and apply them to data and messaging.
 
- Personally, I am passionate about bringing more value to web3 via this sort of application - something that can be used by people, but also in a wider context of businesses and confidential, secure messaging.
+I am passionate about bringing more value to web3 via this sort of application - something that can be used by people, but also in a wider context of businesses and confidential, secure messaging.
 
 
 ### Project Details
@@ -41,18 +45,18 @@ In the future, as the protocol becomes more defined, the goal is to develop a su
 
 Uke has a few primary goals and standards to upkeep:
 
-1. Privacy - each message sent is completely, and purely, peer to peer - no one else can intercept or decrypt the message.
+1. **Privacy** - each message sent is completely, and purely, peer to peer - no one else can intercept or decrypt the message.
 
-2. Fault Tolerance / Reliability - By using DLT, we remove the need for a central server, meaning as long as an amount of nodes are kept online, users can still talk to one another.  This is especially useful in emergency scenarios, as users can even opt to run their own nodes to ensure 100% runtime.
+2. **Fault Tolerance / Reliability** - By using DLT, we remove the need for a central server, meaning as long as an amount of nodes are kept online, users can still talk to one another.  This is especially useful in emergency scenarios, as users can even opt to run their own nodes to ensure 100% runtime.
 
-3. Anonymity - since each user is essentially just a cryptographic key paired with an id, user’s can easily stay anonymous on and off chain if they so wish to choose.
+3. **Anonymity** - since each user is essentially just a cryptographic key paired with an id, user’s can easily stay anonymous on and off chain if they so wish to choose.
 
 
 **Technology Stack**
 
 For the front end, Ionic will be used for all web, Android and iOS versions.
 
-The backend will purely be DLT based - for this one, a Substrate instance will be run to send messages back and forth between accounts.
+The backend will purely be DLT based - for this one, a Substrate instance will be run to send messages back and forth between accounts.  A custom pallet to interact and properly store messages in Substrate storage will be developed to do so.
 
 
 Below are the summarized languages / tech stack
@@ -60,52 +64,48 @@ Below are the summarized languages / tech stack
 - Typescript / Javascript
 - Rust
 - Ionic
-- ink! (where applicable)
 
 **High Level Architecture**
 
-![](https://media.discordapp.net/attachments/922350668264652810/1006601101375721522/Screenshot_2022-08-09_at_12.32.44_PM.png?width=880&height=1022)
+![](https://media.discordapp.net/attachments/922350668264652810/1019014448243019826/Screenshot_2022-09-12_at_6.38.42_PM.png)
 
 
-***As a general overview, each message will be a transaction, and each user is essentially merely an account on the blockchain.***
+***As a general overview, each message will be a signed extrinsic, and each user is essentially merely an account on the blockchain.***
 
 **Components**
 
 
-*For the purposes of defining the Uke PoC / MVP, the initial functionality of both modules will be represented via an ink! smart contract. However, in the future, it is planned to become a full pallet as needs become more apparent.  If it is preferred for the initial implementation to be a pallet, then we can arrange that.*
+*For the purposes of defining the Uke PoC / MVP, the initial functionality of the uke pallet will only handle messaging and message storage.  However, in the future, it is planned to implement further functionality, such as a more robust identity registrar and account filter system.*
 
-1. **Human DNS Module / Contract (future pallet)**
+1. **UKE PALLET**
 
-Using Substrate allows for the use of an ink! Smart contract, which in this case is used for mapping cryptographic addresses to more human readable names, just like a DNS.  We call this the Human DNS, and essentially it maps unique, human readable ids to otherwise illegible addresses.
+Using Substrate allows for the creation of a custom pallet, which will have two primary functions for this PoC:
 
-With this mapping of addresses, users can then look up other users and add them to their contacts, or write them a new message, or any other package of data in theory. 
+ - Handle message transmission and conversation storage (via `StorageDoubleMap` for now).
 
+ - Basic identity mapping (`register()` function to allow for a mapping of `Vec<u8>` to `AccountId` for easy lookup). 
 
-2. **Account Rules Module / Contract (future pallet)**
+For now, the messages will be stored and read from the Substrate storage via a `StorageDoubleMap` with the recipient and sender addresses as keys.
 
-Users can define rules for whether they wish to be contacted or not, and who can contact them.  They essentially can create whitelists to explicitly allow who is permitted to message that specific account, along with what data can be sent in the future.
+For identifying each user, a mapping for cryptographic addresses to more human readable names will also be created within the pallet. It essentially it maps unique, human readable ids to otherwise illegible addresses.
 
-This measure prevents a common issue with phone numbers, email, and even other apps - spam.  Using smart contracts ensures the rules are kept in place, and the user is safe from any malicious or unwanted messages. 
-
-Each message is a transaction on the blockchain, which depending on the rulings, can be deemed valid or invalid.  In theory, one could set up their own Uke messaging network with very specific rulings in the future.
-
-
-3. **Substrate Instance**
-
-The Substrate Instance will allow for all messages to be propagated, as well as smart contracts to be deployed in a guaranteed environment.  
-
-It's worth noting that I plan to implement the concept of *light clients* into each client-side instance, so as to provide 
+With this mapping of addresses, users can then look up other users and add them to their contacts, or write them a new message, or any other package of data in theory.
 
 
-4. **Uke Messaging App**
+2. **Substrate Instance**
 
-The eventual conclusion, and primary deliverable of this proposal is representing all of the aforementioned technology into an easy to use, hybrid mobile app that will be released for use.  This app can be used across either Kusama or custom Uke networks, whatever is deemed fit upon launch.
+The Substrate Instance will allow for all messages to be propagated, consensus to take place, as well as smart contracts to be deployed in a guaranteed environment as needed.  
+
+
+3. **Uke Messaging App**
+
+The eventual conclusion, and primary deliverable of this proposal is representing all of the aforementioned technology into an easy to use, hybrid mobile app that will be released for use.  This app can be used across either Kusama or custom Uke networks, whatever is deemed fit upon launch.  The app will encrypt messages on the client side, where the encrypted text will be stored within the Substrate node.
 
 **Mockups and Design of PoC App**
 
 *Keep in mind these are mockups, and are subject to change*
 
-![](https://media.discordapp.net/attachments/922350668264652810/1006620707519729774/uke-collection2x.png?width=984&height=1022)
+![](https://media.discordapp.net/attachments/922350668264652810/1019031136103579748/uke-collection2x.png?width=1180&height=1226)
 
 
 ### Ecosystem Fit
@@ -113,8 +113,7 @@ The eventual conclusion, and primary deliverable of this proposal is representin
 The eventual goal is to provide a streamlined way to for the following in the Substrate / Polkadot ecosystem:
 
 1. Provide a common, and easy to use identity solution
-2. Provide a way to define account rules and filters in order to customize what transactions, messages, or accounts can interact with an account.
-3. Provide an out-of-the-box confidential messaging protocol which can be used for many different usecases.
+2. Provide an out-of-the-box, flexible, and confidential messaging protocol which can be used for many different usecases.
 
 The target audience here is our own user-base eventually, but also developers through opensourcing all work done here along with documentation on how one can also setup their own messaging using our tools.
 
@@ -124,7 +123,7 @@ What makes us different:
 
 1. No traditional backends are used here. Everything is purely based off of Substrate, as shown in the architecture diagram.
 
-2. In our designs, the use of DLT/blockchain is not shown - this is intentional, as it allows users to merely experience a secure messaging experience without the cumbersome interface
+2. In our designs, the use of DLT/blockchain is not shown - this is intentional, as it allows users to merely experience a secure messaging experience without the cumbersome interface.
 
 ## Team 
 
@@ -183,9 +182,14 @@ The eventual code regarding uke will reside in the following repository:
 
 There is currently a WIP repo that is being constructed in parallel with this proposal, which will be shared as soon as possible.  To clarify:
 
-- The front end is mostly implemented for the mobile app, along with a login / signup system using polkadotjs.
 
-- The initial architecture is all complete, with future plans for pallet development.
+- A working pallet is currently in place for sending and receiving messages.
+
+- The front end is mostly implemented for the mobile app, along with a login / signup system using polkadotjs & the Keyring APIs.
+
+- The initial architecture is all complete, with pallet development very active.
+
+
 
 ## Development Roadmap
 
@@ -195,37 +199,35 @@ There is currently a WIP repo that is being constructed in parallel with this pr
 - **Full-Time Equivalent (FTE):** 1 (one) for the duration of the project
 - **Total Costs:** $9,000 USD
 
-### Milestone 1 — Implement ink! Human DNS & Account Rules Contracts
+### Milestone 1 — Implement Uke Pallet for Basic Message Storage & Identity Functionality
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
-- **Costs:** 4,500 USD
+- **Costs:** $4,500 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how anyone can submit the contract to a valid Substrate node, as well as how to properly run unit tests for the contract in question. |
-| 0c. | Testing Guide | Both contracts will be unit tested to the maximum with proper documentation and justification. |
-| 1. | Human DNS ink! Smart Contract | Fully functioning smart contract, queryable  that keeps a mapping of addresses to users, allowing for user IDs and accounts to be identified. |
-| 2. | Account Rules ink! Smart Contract | Fully functioning smart contract which maps rules to registered accounts. Each account is either "opted in", or out.  Accounts can then set and define rules relating to who they wish to filter out from their messages. |
-
-
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how anyone can deploy the pallet in their own Substrate node, as well as properly run unit tests for the Uke pallet. |
+| 0c. | Testing Guide | The pallet will be unit tested to the maximum with proper documentation and justification. |
+| 1. | Uke Pallet | Fully functioning pallet that allows for the transmission and storage of user conversations as well as a basic global identity mapping. |
+| 1a. | Uke Pallet - Conversation Storage | Store conversations and messages in the Substrate node. |
+| 1b. | Uke Pallet - Basic Identity Scheme | Store a mapping of user addresses to usernames for readability and easy user lookup. |
 
 
 ### Milestone 2 — Front-end completion, Substrate & polkadot.js integration into Ionic App
 
 - **Estimated Duration:** 1 month
 - **FTE:**  1
-- **Costs:** 4,500 USD
+- **Costs:** $4,500 USD
 
-...
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how anyone can build the Ionic project for iOS, Android, or web. |
 | 0c. | Testing Guide | The front-end will contain a minimum of 50% unit test coverage, of which these will be covered in the guide. |
-| 0d. | Article | We will write a full blog post on Hackernoon on how Uke was created, what powers it, and what exact work was completed on it (as well as future goals). |
+| 0d. | Article | We will write a full blog post on Hackernoon & Medium on how Uke was created, what powers it, and what exact work was completed on it (as well as future goals). |
 | 1a. | Uke Ionic Application: Data Models | Create the appropriate data structures and models to represent users, accounts, and messages coming from a Substrate instance. |
 | 1b. | Uke Ionic Application: Login and Signup Service | Usage of the `polkadot.js` SDK to create, store, and secure user account's locally.  Proper authentication guards will also be created for the Ionic application. |
 | 1c. | Uke Ionic Application: Message Delivery & Configuration | Create the necessary services for messages to be retrieved, sent, and verified from a Substrate instance. |
@@ -235,7 +237,7 @@ There is currently a WIP repo that is being constructed in parallel with this pr
 
 ## Future Plans
 
-In the short term, I plan to begin marketting a beta program for this project in order to gain user feedback and viability. Based off of this, I will further the protocol as needed.
+In the short term, I plan to begin marketing a beta program for this project in order to gain user feedback and viability. Based off of this, I will further the protocol as needed.  
 
 Short Term Goals
 
@@ -246,8 +248,9 @@ Short Term Goals
 
 Longer Term Goals
 
-- Develop Human DNS and Account Ruling Pallets for common Substrate use
-- Develop appropriate modules for business use
+- Develop separate Identity, Account Filter, & Messaging Pallets for common Substrate use.
+- Implement a encrypted pub-sub protocol directly into the Substrate node.
+- Develop client-side appropriate modules for business use
 - "Disappearing", or temporary secure messaging
 - Optional payment integrations for users, if applicable
 - Custom Substrate Uke network implementation for private or public use
@@ -270,5 +273,5 @@ I found it while exploring the Polkadot / Substrate ecosystem for development pu
 
 - Previous grants you may have applied for.
 
-> This is my first time applying to the Web3 grants program.
+> I have applied once, and the [grant was terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/548) due to the code being too similar to another repo.  This has been recitifed, and I have embarked on creating a completely original pallet, with any engineering inspirations behind it being cited as needed.
 
