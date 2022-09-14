@@ -1,8 +1,10 @@
 # Open Grant Proposal
 
 * **Project:** Lunatic Games Studio
+
 * **Proposer:** [Rridhima Mahajan](https://github.com/mahajanridhima)
-* **Payment Address:** <BTC_ADDRESS_HERE>
+
+* **Payment Address:** bc1qd4lm5pen8w7r5drjrjmaqw6kuedh4nzw2k78ue
 
 ## Project Description :page_facing_up: 
 
@@ -37,8 +39,24 @@ I have experience advising people on money management as well as stock market tr
 Aviraj Khare: CTO, Lunatic Games Studio, Ex Gojek
 Worked in web3 space from 2016 to 2019. Created a Decentralized exchange on top of the 0x protocol as a Whitelabel solution. From 2019-21 worked in the Gojek infrastructure team. Currently working as CTO in Lunatic Games Studio.
 
-Harsh Singh: Game Director of Lunatic Games Studio
-Experience in buidling 3D games in Unreal Engine.
+Harsh Singh: Game Director, Lunatic Games Studio
+Working full time as a game director with Lunatic Games studios Working as a Game director having experience of 4 years in game development.
+
+Skills:
+C++
+Python
+Android Studio
+Unreal Engine
+Computer Networks
+
+Projects Done:
+ - I have made a 3d endless runner game in unity(Clone of temple run) 
+ - I have made a Open World  game in unity(Based on how enemy detect player (AI)) 
+ - I have make clone of super mario in unity(Super Guy) 
+ - I have made a FPS game in Unity(Open World Forest Game) 
+ - And i have done many more projects in unity and unreal
+ - I also have worked on Multiplayer online games ( Using Photons in Unity) 
+ - In Networking i have worked on many tools of Kali linux Like Wifipumpin3,Social Engineeering tools etc
 
 ## Development Roadmap :nut_and_bolt: 
 
