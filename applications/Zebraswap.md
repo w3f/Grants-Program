@@ -146,13 +146,13 @@ For Front and Back-end
 
 - **Total Estimated Duration:** 150-180 Days  
 - **Full-Time Equivalent (FTE):**  5 FTFE
-- **Total Costs:** 10000 USD 
+- **Total Costs:** 50,000 USD 
 
 ### Milestone 1 The Tech — Implement infrastructure along with bridges
 
 - **Estimated duration:** 60-100  Days 
 - **FTE:**  5
-- **Costs:** 6000 USD
+- **Costs:** 36000 USD
 
 All of the  bridges are operated by a group of permissionless, decentralised bridge nodes that are re-elected every single month. These nodes collectively use a combination of Secure Multipart Computation (sMPC) and Shamir’s Secret Sharing (SSS) to collectively generate signatures to secure crosschain assets. This approach is far more secure than the multisig approach used by many other crosschain bridges. Additionally, this approach ensures that no single node or entity ever has access to a user’s assets.
 
@@ -170,6 +170,12 @@ The Zebraswap will bridges also support a number of non-EVM networks. This means
 | 1.  | Backend and front-end Development|Databases and intuitive UI/UX will be incorporated into the infra |  
 | 2.  |Developing the collateralized interoperable bridges and infrastructure design | The System infra will be built and ready to enable cross chains and multi-chain liquidity pools, these bridges will use The bridges are operated by a group ofnpermissionless, decentralised bridge nodes that a re-elected every single month. These nodes collectively use a combination of Secure Multipart Computation (sMPC) and Shamir’s Secret Sharing (SSS) to collectively generate signatures to secure crosschain assets.This approach is far more secure than the multisig approach used by many other crosschain bridge |
 
+How does this sMPC and SSS secure assets?: The crosschain bridge transfers assets and/or data from a source chain to a target chain. In its most basic form, this is usually done by locking an asset on the source chain and minting a wrapped asset of the same value on the target chain. We call this the Lock-Mint-Burn-Unlock method. For the Lock-Mint-Burn-Unlock method to work, three main smart contracts are deployed: one on source chain to handle source assets, one on target chain to handle target assets, and one on a managing chain to handle registration and staking of bridge nodes. 
+
+when the crosschain transaction is initiated by a user, the target chain and target address are specified. The source chain smart contract locks the source token and emits a Lock event. The bridge nodes detect the Lock event and instruct the target chain smart contract to mint a token of the same value on the target chain.
+
+The secure multiparty computation provides a protocol where no individual can see the other parties data while distributing the data across multi parties. It enables movement of  data privately on the distributed data network without exposing it. Secret sharing is utilized as the basic tool when there is an honest majority in secure multiparty computation. A secret sharing scheme is that a secret s is shared among n parties, such that t+1 or more parties come together to reconstruct the secret. The parties lesser than t cannot get any information or reconstruct the secret. The scheme which fulfills the requirements of t+1 out of n is called the threshold secret sharing scheme.
+
 
 
 
@@ -177,7 +183,7 @@ The Zebraswap will bridges also support a number of non-EVM networks. This means
 
 - **Estimated Duration:** 90-100 days
 - **FTE:**  5
-- **Costs:** 4000 USD
+- **Costs:** 14000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
