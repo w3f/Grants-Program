@@ -151,7 +151,9 @@ The use of blockchain to realize competition events is a very suitable applicati
 
 - [Official website](https://www.toearn.fun)
 - [App UI Mockups](https://app.mockplus.cn/run/design/21F_BXJYGPY/47SlUMc7lXwKP?cps=collapse&dt=iPhone%2013&ha=1&linkID=O9QYqoyvhVRzS&nav=1)
+- [Demo Video](https://drive.google.com/file/d/1hpaKNFYQhYxkj0dNOEaRD81jcSrm66h3/view?usp=sharing)
 - [Github Repository](https://github.com/polketio)
+
 
 ### Ecosystem Fit
 
