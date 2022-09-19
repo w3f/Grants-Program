@@ -456,7 +456,7 @@
 | [CESS LAB](https://www.cess.cloud/) | Data Store Pallet | [GitHub](https://github.com/CESSProject/cess) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [ChainSafe](https://chainsafe.io/) | Substrate Core Polywrapper | [GitHub](https://github.com/polywrap) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Bela Supernova](https://bsn.si/en/home/) | On-chain cash exchange (OCEX) |  | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
-| [Second State](https://www.secondstate.io/) | WasmEdge for Substrate | [GitHub](https://github.com/wasmedge) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Second State](https://www.secondstate.io/) | WasmEdge for Substrate | [GitHub](https://github.com/wasmedge) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Wow Labz](https://www.wowlabz.com/) | Dot Marketplace Phase 2 | [GitHub](https://github.com/WowLabz) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Stardust Labs Inc.](https://stardust.finance/) | Uncollateralized Stablecoin Research and Design | [GitHub](https://github.com/adit313/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Hashed Systems](https://hashed.io) | Native Bitcoin Vaults (NBV) | [GitHub](https://github.com/hashed-io) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
