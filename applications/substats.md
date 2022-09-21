@@ -3,7 +3,7 @@
 - **Project Name:** Substats (The framework of lightweight block explorer)
 - **Team Name:** CESS LAB
 - **Payment Address:** 0x41fC582784745Ec6B4860F47808b988a473fcEFc(USDT)
-- **Level:** 2
+- **Level:** 1
 
 ## Project Overview 
 
@@ -11,13 +11,11 @@
 
 #### Background
 
-As the Polkadot/Substrate ecosystem continues to expand, the amount of data will increase astronomically, and more data types need to be incorporated. Hence block explorers have become an indispensable portal infrastructure in the ecosystem. We have noticed that in real business scenarios, data query is a frequently used function by developers and users. Existing block explorers can meet the needs in most cases, but the flexibility of having customization on the explorers would help developers enormously. 
+The block explorer is the important portal for on-chain data visualization. It can record and count information such as each block, each transaction and address of different blockchain networks. The essence of the block explorer is to reasonably display native data and derived data to various users according to the actual situation of the blockchain network. The users of block explorer include at least: developers, users, token holders, miners, regulators, researchers, and people interested in blockchain.
 
-Recently, we expect to incorporate the overview and transaction information of the data storage network into the block explorer. In the process of exploring the solution, we have not found a block explorer that is open-source and meets our development needs at the same time. Therefore, we aspire to develop a set of open-source components for developers, focused on data display, providing a compatible lightweight block explorer for the Polkadot/Substrate community.
+With the goal of building a multi-chain ecosystem, Polkadot has gradually become the preferred solution for many blockchain projects. As more and more blockchain networks join the ecosystem, users have higher and higher requirements for block explorer.
 
-#### Current Solution
-
-The [Polkadot native explorer](https://polkadot.js.org/apps/#/) provides a large and comprehensive blockchain explorer, any blockchain network built on The Substrate can apply for access, and supports one-click Toggle, which is currently the primary option for many ecological project. Its characteristics can be summarized as follows:
+The most influential block explorer in the Polkadot ecosystem is [Polkadot native explorer](https://polkadot.js.org/apps/#/). it  provides a large and comprehensive blockchain explorer, any blockchain network built on The Substrate can apply for access, and supports one-click Toggle, which is currently the primary option for many ecological project. Its characteristics can be summarized as follows:
 
 1. **Rich real-time data display**. Provides the display of a large amount of data on blockchain such as blocks, validators, and community governance.
 
@@ -39,44 +37,15 @@ Based on the above characteristics, Polkadot.js App is more suitable for the nee
 
 Polkadot.js App is like a large supermarket with a wide variety of products. However, for the simple daily needs of users, convenience stores (lightweight block explorer) will be a good complement to it. So is there a lightweight block explorer that is easy enough to use in the current Polkadot ecosystem? The following is the situation of our research.
 
+#### Current Solution
+
 [Subscan](https://www.subscan.io/) is a block explorer that provides operations management services. It supports about 20 Substrate-based parallel chains and offers basic functions. At the same time, it also provides paid customization services for users who have higher API requirements. This model is more convenient for developers, however, the customization service fee can be as high as tens of thousands of USDT, and developers may abandon some functions due to financial concerns.
 
 [Polkascan](https://explorer.polkascan.io/) is an open-source block explorer that is relatively lightweight and simple in data display. However, through code analysis on its Github, it has limited capability in data processing since it doesn't have a database and cannot perform data analysis.
 
 In summary, we believe that there is a lack of a better open source lightweight explorer in the current Polkadot ecosystem. That's why we designed Substats - a lightweight block explorer framework. Different from Polkadot.js App, Substats provides lightweight components to reduce the dependence on the network and provides customized data display functions. And by building a stable background and database services to obtain more powerful data processing capabilities.
 
-### Project Details
-
-We have designed a set of explorer modular components for the Substrate ecosystem, which can be used by stakeholders (such as miners and storage users) and other users. Users can inquire about basic information in the network, such as space information, rankings, blocks, transactions, addresses, visual trend charts, etc. Substats is open-source and has flexible scalability in both network and its functionalities. Hence early-stage projects or individual developers can easily integrate our components based on their business needs. The data analysis module and custom components are the two core functions of Substats.
-
-#### High level design
-
-- **Data analysis module**
-
-  realizes the processing and management of data on-chain. This module also realizes the data collection, retrieval, and processing functions. It extracts and derives meaningful information from the data, such as predicting trends from historical data, analyzing miners’ computing power, and more.
-
-  
-
-- **Customized components**
-
-  Provide extensible front-end and back-end development components, and encapsulate data processing APIs, so the developers can quickly deploy code at their disposal.
-
-   
-
-#### **Business Scenarios**
-
-
-
-- **Data analysis**
-
-  Substats can support the back-end processing and analysis of the entire network for computer power, block information, transaction information, historical computing power trends, mining rewards, accounts, and other functions. Other applications can also request and analyze data through the API. In version 1.0, we mainly implement the basic queries for block information, addresses, transactions, miners' income, etc. It displays and processes all data types with different units based on the application scenarios.
-
-
-- **Explorer customization**
-
-  The components of the explorer are modular, allowing developers to pick and choose the ones they need accordingly. These components are lightweight and cross-terminal friendly. Other applications (such as exchanges, Defi, and wallets) can customize the interface and embed them into the application based on their needs.
-  
-#### **Features**
+#### Features
 
 ● **On-chain data processing station**: A processing station is built between users and the blockchain network, which includes a cache (database) layer and a computing (data processing) layer. The cache layer is responsible for pulling the data on the chain to the local database for storage. The computing layer is responsible for processing the on-chain data in the database, so that it can be combined into more meaningful data for users, such as historical data statistics, network-wide computing power rankings, etc.
 
@@ -88,28 +57,50 @@ We have designed a set of explorer modular components for the Substrate ecosyste
 
 ● **Open source and security**: Substats only provides completely open source code, and is not responsible for replacing management and operation services. All services are deployed and operated by the project party, avoiding trust costs.
 
+### Project Details
 
-###Product Design
+We have designed a set of explorer modular components for the Substrate ecosystem, which can be used by stakeholders (such as miners and storage users) and other users. Users can inquire about basic information in the network, such as space information, rankings, blocks, transactions, addresses, visual trend charts, etc. Substats is open-source and has flexible scalability in both network and its functionalities. Hence early-stage projects or individual developers can easily integrate our components based on their business needs. The data analysis module and custom components are the two core functions of Substats.
+
+#### High level design
+
+# ![Proposal architecture](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-1.svg)
+
+*Figure 1: Proposal architecture*
+
+● **Data Processing**: Data processing can be divided into the following steps: data acquisition, data parsing, and persistent storage. As a block explorer framework, Substats optimizes each process to reduce unnecessary workload and improve efficiency for developers. For example, it supports custom data acquisition; realizes the separation of data read and write through the buffer queue; supports various types of data acquisition methods: RPC communication of full nodes, P2P protocol of peer nodes, etc.
+● **Data Rendering**: In addition to providing developers with APIs for crawling block data and derived data, Substats also provides developers with a front-end framework which displays data such as block info, transaction info, and address info in a modular way, and each module can be customized. And Substats has a wealth of themes and icons to choose from.
+
+#### Typical example
+
+# ![Workflow](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-2.svg)
+
+*Figure 2: Workflow*
+
+1. The node service synchronizes the block data of the blockchain network. The node services here include full nodes of the network, third-party data retrieval services, etc.
+2. The data crawling module obtains block data from blockchain nodes. Substats supports full node, P2P node, local database and other types of node service connection, and supports custom data read interfaces.
+3. It writes the block data crawled from the node service to the buffer queue. The buffer queue is used to separate the process of crawling data and parsing data, and supports data integrity checking and exception handling.
+4. The block data is taken out of the buffer queue and sent to the parser in order.
+5. The parser parses the block data and writes it to the database in time. The parsing process is accelerated by concurrent execution.
+6. For general block data, Substats provides a series of database table structure that enables developers to use it out of the box. For custom Pallet data, developers need to define the relevant table structure.
+7. The front-end component periodically reads the relevant data in the database through the HTTP API to render the web page.
+
+#### Mockups/designs of any UI components
 
 - **Network Overview**
 
-# ![Overview](https://github.com/CESSProject/W3F-illustration/blob/main/substats/homepage.jpg)
+# ![Overview](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-3.jpg)
 
 - **Address Analysis**
 
-# ![addressDetails](https://github.com/CESSProject/W3F-illustration/blob/main/substats/address%20details.jpg)
-
-- **Mining Analysis**
-
-# ![Miners](https://github.com/CESSProject/W3F-illustration/blob/main/substats/Miners.jpg)
+# ![addressDetails](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-6.jpg)
 
 - **Transaction Details**
 
-# ![transaction](https://github.com/CESSProject/W3F-illustration/blob/main/substats/transaction.jpg)
+# ![transaction](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-5.jpg)
 
 - **Block Details Details**
 
-# ![blocks](https://github.com/CESSProject/W3F-illustration/blob/main/substats/blocks.jpg)
+# ![blocks](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-4.jpg)
 
 #### API specifications of the core functionality
 
@@ -205,13 +196,13 @@ Parachain/dapp/wallet/developers
 
 - **Total Estimated Duration:** 5 months
 - **Full-Time Equivalent (FTE):** 2
-- **Total Costs:** *30,000 USD*
+- **Total Costs:** *24,000 USD*
 
 ### Milestone 1 Implement The Backend Infrastructure
 
-- **Estimated duration:** 2 month
+- **Estimated duration:** 2 months
 - **FTE:** 2
-- **Costs:** 12,000 USD
+- **Costs:** 9,000 USD
 
 | Number | Deliverable             | Specification                                                |
 | ------ | ----------------------- | ------------------------------------------------------------ |
@@ -225,9 +216,9 @@ Parachain/dapp/wallet/developers
 
 ### Milestone 2 Implement Data Processing Tools
 
-- **Estimated Duration:** 2 month
+- **Estimated Duration:** 2 months
 - **FTE:** 2
-- **Costs:** 12,000 USD
+- **Costs:** 9,000 USD
 
 | Number | Deliverable            | Specification                                                |
 | ------ | ---------------------- | ------------------------------------------------------------ |
