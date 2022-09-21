@@ -155,3 +155,6 @@ According to your suggestions.
 I'll document every public functions, and write unit tests for them.
 There are around 30+ features.
 Please note this is a part of milestone 1.
+
+I'd love to convert these milestone to issues on the [repository](https://github.com/hack-ink/subalfred).
+It will be much easier to track the status.
