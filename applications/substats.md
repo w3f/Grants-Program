@@ -68,6 +68,7 @@ We have designed a set of explorer modular components for the Substrate ecosyste
 *Figure 1: Proposal architecture*
 
 ● **Data Processing**: Data processing can be divided into the following steps: data acquisition, data parsing, and persistent storage. As a block explorer framework, Substats optimizes each process to reduce unnecessary workload and improve efficiency for developers. For example, it supports custom data acquisition; realizes the separation of data read and write through the buffer queue; supports various types of data acquisition methods: RPC communication of full nodes, P2P protocol of peer nodes, etc.
+
 ● **Data Rendering**: In addition to providing developers with APIs for crawling block data and derived data, Substats also provides developers with a front-end framework which displays data such as block info, transaction info, and address info in a modular way, and each module can be customized. And Substats has a wealth of themes and icons to choose from.
 
 #### Typical example
