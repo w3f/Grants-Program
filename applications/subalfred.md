@@ -96,7 +96,7 @@ There are three parts:
 | -----: | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 |    0a. | License                            | GPLv3                                                                                                                                            |
 |    0b. | Documentation                      | I'll document every `pub` function and a basic tutorial that explains how a user interact with Subalfred.                                        |
-|    0c. | Testing Guide                      | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. |
+|    0c. | Testing guide                      | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. |
 |    0d. | Docker                             | I'll provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                       |
 |     1. | Core: check features               | I'll finish the this features, which is use for checking Substrate runtime runtime-benchmarks/std/try-runtime features enable status.            |
 |     2. | Core: use paritytech/ss58-registry | I'll make PR to paritytech/ss58-registry to support my custom logic, and setup the dependabot to update ss58-registry automatically.             |
@@ -116,7 +116,7 @@ There are three parts:
 | -----: | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 |    0a. | License                   | GPLv3                                                                                                                                            |
 |    0b. | Documentation             | I'll document every `pub` function and a basic tutorial that explains how a user interact with Subalfred.                                        |
-|    0c. | Testing Guide             | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. |
+|    0c. | Testing guide             | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. |
 |    0d. | Docker                    | I'll provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                       |
 |     1. | License                   | GPLv3.                                                                                                                                           |
 |     2. | Core, CLI: track-updates  | List the companions that you need to do from substrate/cumulus/frontier/parity-bridges-substrate.                                                |
@@ -132,7 +132,7 @@ There are three parts:
 | -----: | -------------------------------------- | ---------------------------------------------------------------------------------------------- |
 |    0a. | License                                | GPLv3                                                                                          |
 |    0b. | Documentation                          | I'll provide the inline documentation.                                                         |
-|    0c. | Testing Guide                          | I'll provide a GitHub Actions setup example and describe how to check the result.               |
+|    0c. | Testing guide                          | I'll provide a GitHub Actions setup example and describe how to check the result.               |
 |     1. | GitHub Actions: check runtime features | I'll provide a GitHub Actions, which could check the runtime features status while developing. |
 |     2. | GitHub Actions: check runtime storage  | I'll provide a GitHub Actions, which could check the runtime storage changes while developing. |
 |     3. | GitHub Actions: check runtime version  | I'll provide a GitHub Actions, which could check the runtime version changes while developing. |
