@@ -63,7 +63,7 @@ We have designed a set of explorer modular components for the Substrate ecosyste
 
 #### High level design
 
-# ![Proposal architecture](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-1.svg)
+# ![Proposal architecture](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-2.svg)
 
 *Figure 1: Proposal architecture*
 
@@ -73,7 +73,7 @@ We have designed a set of explorer modular components for the Substrate ecosyste
 
 #### Typical example
 
-# ![Workflow](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-2.svg)
+# ![Workflow](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-1.svg)
 
 *Figure 2: Workflow*
 
@@ -89,19 +89,19 @@ We have designed a set of explorer modular components for the Substrate ecosyste
 
 - **Network Overview**
 
-# ![Overview](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-3.jpg)
+# ![Overview](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-3.png)
 
 - **Address Analysis**
 
-# ![addressDetails](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-6.jpg)
+# ![addressDetails](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-6.png)
 
 - **Transaction Details**
 
-# ![transaction](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-5.jpg)
+# ![transaction](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-5.png)
 
 - **Block Details Details**
 
-# ![blocks](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-4.jpg)
+# ![blocks](https://github.com/CESSProject/W3F-illustration/blob/main/substats/W3F-3-4.png)
 
 #### API specifications of the core functionality
 
