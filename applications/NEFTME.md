@@ -2,7 +2,7 @@
 
 - **Project Name:** NEFTME (Alpha phase)
 - **Payment Address:** 0x40a5ED037CeaaDdcC277cC9ec73b8a8ad0874158 (USDT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 
 ## Project Overview :page_facing_up:
