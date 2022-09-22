@@ -86,7 +86,8 @@ NEFTME is a system composed by 2 main components. Using a REST API for the backe
 
 The backend is currently hosted on Heroku and the frontend uses Expo GO to host the app.
 
-Currently, we are EVM based (smart contracts). However, this technical constraint was due to a time urgency and is not final. We simply wanted to deploy our dApp and show the world what we can do!
+Currently, we are EVM based (smart contracts). However, this technical constraint was due to a time urgency and is not final. We simply wanted to deploy our dApp and show the world what we can do! 
+We want to integrate with a chain that allows us to grow by giving us technical and financial support. As said above, the EVM integration is not final and can/will be changed.
 
 We will now show diagrams detailing our integration.
 
@@ -96,6 +97,8 @@ Physical View
 
 We currently use amazon AWS to store the NFT images, but we intend to change to IPFS when we go live on mainnet!
 In fact, our goal is to be 100% decentralized on all our app components.
+Although connections show "http/s", all connections are secured via https.
+
 
 Logical View
 
@@ -282,35 +285,35 @@ Challenge “Be real”.
 
 ### Milestone 1 — Alpha 5
 
-Direct Messaging;
-·       
-NFT as a Audio;
-·       
-Abuse Content analysis and call to action;
-·       
-Perks;
-·       
-Share NFTs (link);
-·       
-Share Profile (link).
- 
- 
 - **Estimated duration:** 3 months
 - **Costs:** 35K USD
  
 
+ | Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | Direct Messaging | Allow direct decentralized messaging inside the dApp  |
+| 2. | NFT as an Audio | Users are now able to create audio NFTs with their phones |
+| 3. | Abuse content analysis | Ability to report NFTs |
+| 4. | Share NFTs | Share NFTs via a link that redirects to the app |
+| 5. | Share Profiles | Share Profiles via link that redirects to the app |
+| 6. | Smart contracts fixes | Fix smart contract bugs and update staking model |
+
+
+
 ### Milestone 2 — Beta
 
-NFT as a Video;
-Invite Code system to control amount of new users;
-Reward system / Referral system by user action;
-Internal wallet;
-On Ramp;
-Challenge “Be real”.
- 
- 
 - **Estimated Duration:** 3 months
 - **Costs:** 65K USD
+
+
+ | Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 1. | NFT as a video | Users are now able to create video NFTs with their phones  |
+| 2. | Invite code system | Start onboarding users via invite only system |
+| 3. | Reward System / Referral to friends | Reward users for onboarding new users |
+| 4. | Internal Wallet | Internal wallet to improve user experience |
+| 5. | On ramp | On Ramp so users can purchase the NEFT token with ease |
+| 6. | Challenge "Be Real" | Social feature of the App to allow challenging between users with NEFT tokens |
 
 
 
