@@ -1,10 +1,16 @@
-﻿**Web3 Foundation Grant Proposal Project Name**: Silent Data Polkadot Integration **Team Name**: Applied Blockchain Ltd
+﻿**Web3 Foundation Grant Proposal Project Name**: Silent Data Polkadot Integration 
+ 
+ **Team Name**: Applied Blockchain Ltd
 
 **Payment Address**: USDC (Ethereum) address: 0x91a5ade2522ac8c3761922a4255e0fef89116a37
 
+**Level 2**
+
 **Project Overview**
 
-This application is in response to an RFP **Overview**
+This application is in response to an RFP 
+
+**Project Overview**
 
 Applied Blockchain has developed Silent Data as a platform for proving properties of private off-chain (web2) data in blockchain smart contract (web3) applications (dApps).
 
