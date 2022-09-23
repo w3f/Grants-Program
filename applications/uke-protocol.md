@@ -210,6 +210,7 @@ There is currently a WIP repo that is being constructed in parallel with this pr
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how anyone can deploy the pallet in their own Substrate node, as well as properly run unit tests for the Uke pallet. |
 | 0c. | Testing Guide | The pallet will be unit tested to the maximum with proper documentation and justification. |
+| 0d. | Docker |We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Uke Pallet | Fully functioning pallet that allows for the transmission and storage of user conversations as well as a basic global identity mapping. |
 | 1a. | Uke Pallet - Conversation Storage | Store conversations and messages in the Substrate node. |
 | 1b. | Uke Pallet - Basic Identity Scheme | Store a mapping of user addresses to usernames for readability and easy user lookup. |
@@ -227,7 +228,8 @@ There is currently a WIP repo that is being constructed in parallel with this pr
 | 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how anyone can build the Ionic project for iOS, Android, or web. |
 | 0c. | Testing Guide | The front-end will contain a minimum of 50% unit test coverage, of which these will be covered in the guide. |
-| 0d. | Article | We will write a full blog post on Hackernoon & Medium on how Uke was created, what powers it, and what exact work was completed on it (as well as future goals). |
+| 0d. | Docker |We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will write a full blog post on Hackernoon & Medium on how Uke was created, what powers it, and what exact work was completed on it (as well as future goals). |
 | 1a. | Uke Ionic Application: Data Models | Create the appropriate data structures and models to represent users, accounts, and messages coming from a Substrate instance. |
 | 1b. | Uke Ionic Application: Login and Signup Service | Usage of the `polkadot.js` SDK to create, store, and secure user account's locally.  Proper authentication guards will also be created for the Ionic application. |
 | 1c. | Uke Ionic Application: Message Delivery & Configuration | Create the necessary services for messages to be retrieved, sent, and verified from a Substrate instance. |
