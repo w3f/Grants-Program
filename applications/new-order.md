@@ -74,7 +74,7 @@ Subquery is an indexer middleware that we use to integrate with in this grant.
 
 
 ### Project Uniqueness
-* The world's first fully open-source orderbook dex runtime with queue model.
+* The world's first fully open-source permissionless orderbook dex runtime with queue model.
 
 ## Reactive Queue
 
@@ -146,7 +146,7 @@ I have fiddled with substrate last year.
 * **FTE:**  1
 * **Costs:** $15,000 equivalent USDC
 
-Goal - Develop new-order pallet
+Goal - Develop new-order pallet and documentation for the pallet
 
 New order pallet consists of:
 
@@ -174,6 +174,7 @@ Pair
 `Asks`(key1: pair_id, key2: price[in 6 decimals], value: order_id[]): A double hash map for Total asks in a price of an asset
 `Pairs`(key: pair_id, value: Pair): A hashmap for storing pair information.
 `Orders`(key: order_id, value: Option<Order>): A hashmap for orders.
+`WhiteListed`(key: pair_id, value: bool): A hash map to store whitelisted pairs
 
 ###### Calls
 `add_pair`: a sudo function to add a pair in the orderbook
@@ -189,9 +190,40 @@ Pair
 `BidOrderMatched`: an event when an order is matched for certain amount
 `NewBidOrder`: an event when a new bid order is requested in the orderbook
 `NewAskOrder`: an event when a new ask order is requested in the orderbook
-`CanceledOrder`: an event when an order is canceled.
+`CanceledOrder`: an event when an order is canceled
+`PairWhitelisted`: an event when an asset pair is whitelisted
 
 I will build this.
+
+### Documentation
+
+Gitbook documentation is not enough to describe interacting with the software in current market. Guides are getting more important as more general people have been exposed to crypto. Polkadot has many tech to build something but coordination of them is poorly done. This section specifies which document to write for sufficient approach for newcomers and new devs. The documentation will add 2 categories, 3 subcategories, and at least 6 pages built with docusaurus framework.
+
+```
+(Home)
+  - What is New Order?
+  - Learn More
+  - Community
+  Security
+  FAQ
+
+
+<Protocol>
+  (Overview)
+    Protocol Participants
+    Tokens
+
+  (Governance)
+    Proposal Types
+    Whitelist procedure
+
+<Runtime>
+new-order: new-order pallet description 
+  - Primitives
+  - Storages
+  - Calls
+  - Events
+```
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -201,19 +233,29 @@ I will build this.
 | 0d. | Docker | Docker can be provided for running this in substrate. |
 | 1. | Pallet code | the code will be placed in `standard-frame`. |
 
-### Milestone 2 - NewOrder.js
+### Milestone 2 - NewOrder.js and CLI
 
 * **Estimated duration:** 5 weeks
 * **FTE:**  1
 * **Costs:** $15,000 equivalent USDC
 
-Goal - Make an api for interacting with New Order
+Goal - Make an api and cli for interacting with New Order
 
-This milestone focuses on building a client library to interact with New Order runtime.
+This milestone focuses on building a client library and cli to interact with New Order runtime. Users are expected to run trading bots based on the api.
 
 This milestone builds:
 - Queries for each pair order
 - Volume changes in the array
+
+### Documentation
+
+Gitbook documentation is not enough to describe interacting with the software in current market. Guides are getting more important as more general people have been exposed to crypto. Polkadot has many tech to build something but coordination of them is poorly done. This section specifies which document to write for sufficient approach for newcomers and new devs. The documentation will add 1 category, at least 2 pages.
+
+```
+<Developers>
+newordercli: A CLI to execute orders with new order
+neworder.js: Usage guides with query, execution
+```
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -222,13 +264,15 @@ This milestone builds:
 | 0c. | Testing Guide | Testing guide will be provided to run PoC on this with TradingView lightweight chart |
 | 0d. | Docker | Dockerfile is not needed |
 | 1. | Library Repo | The code for the library will be open source for PoC. |
-| 2. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video walk through demonstrating New-order |
+| 2. | CLI Repo | The code for CLI interacting with new order will be open source for PoC |
+| 2. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video demo of executing newordercli |
 
 ## Future Plans
 
 * Researching BitMex p2p perpetual system, this may be implemented for next step as funding procedure is clarified.
+* Turn LPs from pair liquidity provider to future market fund provider
 * XCM integration in Rococo
-* EVM impl (maybe)
+* EVM impl for multichain expansion
 * Build Governance for onboarding tokens can be further developed
 * Make real UI based on the working system with SubQuery or other indexer
 * Get funded so that I can feed my devs
