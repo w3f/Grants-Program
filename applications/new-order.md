@@ -275,6 +275,7 @@ neworder.js: Usage guides with query, execution
 
 * Researching BitMex p2p perpetual system, this may be implemented for next step as funding procedure is clarified.
 * Turn LPs from pair liquidity provider to future market fund provider
+* Integrate with trading view lightweight chart for building UI
 * XCM integration in Rococo
 * EVM impl for multichain expansion
 * Build Governance for onboarding tokens can be further developed
