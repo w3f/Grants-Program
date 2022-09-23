@@ -142,7 +142,7 @@ I have fiddled with substrate last year.
 
 ### Milestone 1 — Implement Runtime module for dex order
 
-* **Estimated duration:** 5 weeks
+* **Estimated duration:** 10 weeks
 * **FTE:**  1
 * **Costs:** $15,000 equivalent USDC
 
@@ -239,7 +239,7 @@ new-order: new-order pallet description
 
 ### Milestone 2 - NewOrder.js and CLI
 
-* **Estimated duration:** 5 weeks
+* **Estimated duration:** 10 weeks
 * **FTE:**  1
 * **Costs:** $15,000 equivalent USDC
 
