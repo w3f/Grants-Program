@@ -199,6 +199,10 @@ I will build this.
 
 Gitbook documentation is not enough to describe interacting with the software in current market. Guides are getting more important as more general people have been exposed to crypto. Polkadot has many tech to build something but coordination of them is poorly done. This section specifies which document to write for sufficient approach for newcomers and new devs. The documentation will add 2 categories, 3 subcategories, and at least 6 pages built with docusaurus framework.
 
+##### Why Docusauraus?
+
+Docusauraus supports algolia search with customizable UI components with React. Some of the components include [codehike](https://codehike.org/).
+
 ```
 (Home)
   - What is New Order?
@@ -231,7 +235,7 @@ new-order: new-order pallet description
 | 0b. | Documentation | I will write this in official [documentation](https://github.com/standardweb3/docs) |
 | 0c. | Testing Guide | Test code will be provided in the pallet. |
 | 0d. | Docker | Docker can be provided for running this in substrate. |
-| 1. | Pallet code | the code will be placed in `standard-frame`. |
+| 1. | Pallet code | the code repo will be open source with name `new-order` |
 
 ### Milestone 2 - NewOrder.js and CLI
 
@@ -261,10 +265,10 @@ neworder.js: Usage guides with query, execution
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 | 
 | 0b. | Documentation | I will write this in official [documentation](https://github.com/standardweb3/docs) |
-| 0c. | Testing Guide | Testing guide will be provided to run PoC on this with TradingView lightweight chart |
+| 0c. | Testing Guide | Test code will be written in neworder.js |
 | 0d. | Docker | Dockerfile is not needed |
 | 1. | Library Repo | The code for the library will be open source for PoC. |
-| 2. | CLI Repo | The code for CLI interacting with new order will be open source for PoC |
+| 2. | CLI Repo | The code for CLI interacting with new order will be open source for PoC. |
 | 2. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video demo of executing newordercli |
 
 ## Future Plans
