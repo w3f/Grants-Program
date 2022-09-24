@@ -7,44 +7,12 @@
 
 ## Project Overview :page_facing_up:
 
-This orderbook dex substrate frame and indexer logics focuses on bringing true orderbook runtime with feasible indexer in Polkadot ecosystem other than just UI mockup from Fiverr.
-This is clearly a frame and indexer using Subquery with reasons, not investment seeking parachain design.
+
 
 ### Overview
 
-* Why Orderbook?
-
-After developing dex with [Standard](www.github.com/digitalnativeinc/standard-evm) in Polkadot ecosystem, There is a huge blocker on providing liqudity between polkadot ecosystem assets; **XYK pool economically does not make sense to be made from bottom-up**.
-  0. Just to explain DEX in this document, It is an automated market maker between asset x and y keeping its equation x * y = k(k as the variable determining the price between asset on each trade). I see some grant editors are new to this field, so I leave this video link [https://www.youtube.com/watch?v=Af3NxB7r-Ws](https://www.youtube.com/watch?v=Af3NxB7r-Ws) to understand the concept. Many people forget that to make an xyk pool it requires a centralized power-play setting up initial price, and this is something that this grant focuses.
-  1. XYK pool relies on the fact that price K can be made from each pair liquidity providers. To choose the price, the liquidity provider with more dominant or liquid asset in an ecosystem take the advantage. Let's say there is a pair between USDC and some new parachain project token $NEW or $DOT and $NEW. It is obvious that $DOT and $USDC liquidity provider take advantage of the $NEW token. 
-  2. $NEW token has two choices; to fight back by buying $DOT or $USDC, but they are fighting with the liquidity provider in the first place. The other is not to list at all, then this may lead to negotiation on finding the right price on initial pair creation.
-  3. While parachain projects are finding the "right" price, pair is not made, and an end user can't even trade assets in polkadot ecosystem, so they will quit using this. 
-
-Hence, orderbook dex is not only needed for the "actual" polkadot user to trade the asset in polkadot ecosystem and take ownership of the market across this multichain ecosystem but also building market from bottom-up organically.
-
-There are other benefits as well:
-- Possibility for perpetual trade(e.g. dy/dx)
-- Possibility for MEV bot ecosystem (e.g. [flashbot](https://www.flashbots.net/))
-- Familiar UX
-
-* Why Parachain?
-
-For adding smart contract tokens and testing xcm tokens.
-
-* Why Open Source?
-
-For keeping it real. Doing honest job. Yes Web3.0, No Web2.0. Audit teams require the project to be open-source anyways so we do it.
-
-* Reference?
-
-Kujira team from Cosmos ecosystem already built this without bragging or marketing. Instead of bragging about their 10x multichain future in conferences, they kept their mouth shut and built it.
-
-[Kujira Fin](https://fin.kujira.app/trade/kujira14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9sl4e867)
-
-* Concerns?
-
-1. A transaction may be finalized more or less than 12 seconds. Improving the block finalization time may be needed, but it is safer than layer 2 with bridge.
-2. If indexer from operator shuts down, the UI cannot work.
+This orderbook dex substrate frame and indexer logics focuses on bringing true orderbook runtime with feasible indexer in Polkadot ecosystem other than just UI mockup from Fiverr.
+This is clearly a frame and indexer using Subquery with reasons, not investment seeking parachain design.
 
 ### Project Details
 
@@ -85,13 +53,39 @@ Unlike other layer 2 orderbook dex which uses
 
 ### Problem Addressed
 
+* Why Orderbook?
+
 After developing dex with [Standard](www.github.com/digitalnativeinc/standard-evm) in Polkadot ecosystem, There is a huge blocker on providing liqudity between polkadot ecosystem assets; **XYK pool economically does not make sense to be made from bottom-up**.
   0. Just to explain DEX in this document, It is an automated market maker between asset x and y keeping its equation x * y = k(k as the variable determining the price between asset on each trade). I see some grant editors are new to this field, so I leave this video link [https://www.youtube.com/watch?v=Af3NxB7r-Ws](https://www.youtube.com/watch?v=Af3NxB7r-Ws) to understand the concept. Many people forget that to make an xyk pool it requires a centralized power-play setting up initial price, and this is something that this grant focuses.
-  1. XYK pool relies on the fact that price K can be made from each pair liquidity providers. To choose the price, the liquidity provider with more dominant or liquid asset in an ecosystem take the advantage. Let's say there is a pair between `$USDC` and some new parachain project token `$NEW` or `$DOT` and `$NEW`. It is obvious that `$DOT` and `$USDC` liquidity provider take advantage of the `$NEW` token. 
-  2. `$NEW` token has two choices; to fight back by buying `$DOT` or `$USDC`, but they are fighting with the liquidity provider in the first place. The other is not to list at all, then this may lead to negotiation on finding the right price on initial pair creation.
+  1. XYK pool relies on the fact that price K can be made from each pair liquidity providers. To choose the price, the liquidity provider with more dominant or liquid asset in an ecosystem take the advantage. Let's say there is a pair between USDC and some new parachain project token $NEW or $DOT and $NEW. It is obvious that $DOT and $USDC liquidity provider take advantage of the $NEW token. 
+  2. $NEW token has two choices; to fight back by buying $DOT or $USDC, but they are fighting with the liquidity provider in the first place. The other is not to list at all, then this may lead to negotiation on finding the right price on initial pair creation.
   3. While parachain projects are finding the "right" price, pair is not made, and an end user can't even trade assets in polkadot ecosystem, so they will quit using this. 
 
 Hence, orderbook dex is not only needed for the "actual" polkadot user to trade the asset in polkadot ecosystem and take ownership of the market across this multichain ecosystem but also building market from bottom-up organically.
+
+There are other benefits as well:
+- Possibility for perpetual trade(e.g. dy/dx)
+- Possibility for MEV bot ecosystem (e.g. [flashbot](https://www.flashbots.net/))
+- Familiar UX
+
+* Why Parachain?
+
+For adding smart contract tokens and testing xcm tokens.
+
+* Why Open Source?
+
+For keeping it real. Doing honest job. Yes Web3.0, No Web2.0. Audit teams require the project to be open-source anyways so we do it.
+
+* Reference?
+
+Kujira team from Cosmos ecosystem already built this without bragging or marketing. Instead of bragging about their 10x multichain future in conferences, they kept their mouth shut and built it.
+
+[Kujira Fin](https://fin.kujira.app/trade/kujira14hj2tavq8fpesdwxxcu44rty3hh90vhujrvcmstl4zr3txmfvw9sl4e867)
+
+* Concerns?
+
+1. A transaction may be finalized more or less than 12 seconds. Improving the block finalization time may be needed, but it is safer than layer 2 with bridge.
+2. If indexer from operator shuts down, the UI cannot work.
 
 ## Team :busts_in_silhouette:
 
@@ -247,9 +241,13 @@ Goal - Make an api and cli for interacting with New Order
 
 This milestone focuses on building a client library and cli to interact with New Order runtime. Users are expected to run trading bots based on the api.
 
-This milestone builds:
-- Queries for each pair order
-- Volume changes in the array
+#### neworder.js
+
+Neworder.js is a client SDK for building applications that can interact with New Order from within JavaScript runtimes, such as web browsers, server backends, and on mobile through React Native.
+
+#### newordercli
+
+newordercli is a command-line interface for New Order on Standard parachain and allows more advanced users to perform operations directly from their shell or terminal without having to interact with a graphical interface. newordercli allows you to use keys saved in its keychain saved in json file.
 
 ### Documentation
 
