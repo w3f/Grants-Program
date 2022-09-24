@@ -168,6 +168,7 @@ Pair
 `Asks`(key1: pair_id, key2: price[in 6 decimals], value: order_id[]): A double hash map for Total asks in a price of an asset
 `Pairs`(key: pair_id, value: Pair): A hashmap for storing pair information.
 `Orders`(key: order_id, value: Option<Order>): A hashmap for orders.
+`Prices`(key1: pair_id, key2: asset_id, value: price in 6 decimal): A double hash map for market price in new order runtime.
 `WhiteListed`(key: pair_id, value: bool): A hash map to store whitelisted pairs
 
 ###### Calls
@@ -245,9 +246,47 @@ This milestone focuses on building a client library and cli to interact with New
 
 Neworder.js is a client SDK for building applications that can interact with New Order from within JavaScript runtimes, such as web browsers, server backends, and on mobile through React Native.
 
+##### Queries
+
+`bids(pair_id, asset_id, price)`: Query bids that are in the price 
+`price(pair_id, asset_id)`: Query price determined in a pair between asset trading from and to
+`pair_info(pair_id)`: Query pair information
+
+##### Executions
+
+`add_pair(pair_id)`: a sudo function to add a pair in the orderbook
+`remove_pair(pair_id)`: a sudo function to remove a pair in the orderbook 
+`place_bid(pair_id, asset_id, price, amount)`: place bid on the orderbook, if existing orders match with ask, dissolve while going through the ask queue.
+`place_ask(pair_id, asset_id, price, amount)`: place ask on the orderboook, if existing orders match with bid, dissolve while going through the bid queue.
+`cancel_order(order_id)`: cancel an order submitted from the sender
+
 #### newordercli
 
-newordercli is a command-line interface for New Order on Standard parachain and allows more advanced users to perform operations directly from their shell or terminal without having to interact with a graphical interface. newordercli allows you to use keys saved in its keychain saved in json file.
+newordercli is a command-line interface for New Order on Standard parachain and allows more advanced users to perform operations directly from their shell or terminal without having to interact with a graphical interface. newordercli allows you to use keys saved in its keychain saved in json file. newordercli has commands:
+
+##### query
+
+``` newordercli query <queries>```
+
+`bids(pair_id, asset_id, price)`: Query bids that are in the price 
+`price(pair_id, asset_id)`: Query price determined in a pair between asset trading from and to
+`pair_info(pair_id)`: Query pair information
+
+##### exec
+
+``` newordercli exec <executions>```
+
+`add_pair(pair_id)`: a sudo function to add a pair in the orderbook
+`remove_pair(pair_id)`: a sudo function to remove a pair in the orderbook 
+`place_bid(pair_id, asset_id, price, amount)`: place bid on the orderbook, if existing orders match with ask, dissolve while going through the ask queue.
+`place_ask(pair_id, asset_id, price, amount)`: place ask on the orderboook, if existing orders match with bid, dissolve while going through the bid queue.
+`cancel_order(order_id)`: cancel an order submitted from the sender
+
+##### config
+
+``` newordercli config ```
+
+This just logs config to the console set by configuration file `new-order.config.js`.
 
 ### Documentation
 
