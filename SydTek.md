@@ -172,7 +172,7 @@ https://twitter.com/bitfalls/status/152929818658155725) and the social recovery 
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  3FTE, the listed members would contribute to different deliverables based on their skill-set.
-- **Total Costs:** 29,964 aUSD 
+- **Total Costs:** 29,964 USDC 
 
 ### Milestone 1 — State of the Industry on soulbound tokens and digital inheritance 
 
