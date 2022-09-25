@@ -178,7 +178,7 @@ https://twitter.com/bitfalls/status/152929818658155725) and the social recovery 
 
 - **Estimated duration:** 1 month
 - **FTE:**  3
-- **Costs:** 10,000 aUSD - link to budget details outlined in the Additional Information Section
+- **Costs:** 10,000 USDC - link to budget details outlined in the Additional Information Section
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
 | ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -190,7 +190,7 @@ https://twitter.com/bitfalls/status/152929818658155725) and the social recovery 
 
 - **Estimated Duration:** 1 month
 - **FTE:**  3
-- **Costs:** 10,000 aUSD - link to budget details outlined in the Additional Information Section
+- **Costs:** 10,000 USDC - link to budget details outlined in the Additional Information Section
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
 | ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -202,7 +202,7 @@ https://twitter.com/bitfalls/status/152929818658155725) and the social recovery 
 
 - **Estimated Duration:** 1 month
 - **FTE:**  3
-- **Costs:** 9,964 aUSD - link to budget details outlined in the Additional Information Section
+- **Costs:** 9,964 USDC - link to budget details outlined in the Additional Information Section
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
 | ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
