@@ -22,7 +22,8 @@ that we can utilise them in the future for zero-knowledge focused substrate proj
 This project will contain two primary technical deliverables.  The first of which is a binary merkle tree implementation that operates over a 
 generic [HashDB](https://github.com/paritytech/trie/tree/master/hash-db).  The binary merkle tree implementation will include in-memory storage and
 a recorder for recording tree accesses such that storage proofs can be created for inclusion in PoV blocks.  The second deliverable will be the 
-integration of the binary merkle tree into substrate as a child tree.
+integration of the binary merkle tree into substrate as a child tree.  All deliverables of this project will be implemented in rust and will be no_std
+compatible such that they can be integrated into substrate core.
 
 #### Binary Merkle Tree Library
 
@@ -220,7 +221,7 @@ The project has not started yet.  We have defined the requirements and designed 
 
 - **Total Estimated Duration:** 3.5
 - **Full-Time Equivalent (FTE):**  2
-- **Total Costs:** 30,000 USDT
+- **Total Costs:** 25,000 USDT
 
 ### Milestone 1 - Binary Merkle Tree Library
 
@@ -241,7 +242,7 @@ The project has not started yet.  We have defined the requirements and designed 
 
 - **Estimated Duration:** 2 month
 - **FTE:**  2
-- **Costs:** 20,000 USD
+- **Costs:** 15,000 USD
 
 | Number | Deliverable                              | Specification                                                                                                                                                                                                                                 |
 | -----: |------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
