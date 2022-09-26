@@ -541,6 +541,6 @@
 | [TopMonks](https://www.topmonks.com/) | Calamar| [GitHub](https://github.com/topmonks/calamar) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Bela Supernova](https://bsn.si/) | Rubeus Keeper| [GitHub](https://github.com/bsn-si) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Web3 Labs Ltd](https://www.web3labs.com/epirus-explorer) | Epirus Substrate Explorer - Phase 2 | [GitHub](https://github.com/web3labs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-
+| [Uke](https://github.com/Uke-Messaging) | Uke Protocol PoC & App (revised) | [GitHub](https://github.com/Uke-Messaging) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
 
