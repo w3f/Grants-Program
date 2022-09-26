@@ -3,7 +3,7 @@
 - **Project Name:** DotPulse
 - **Team Name:** CrossChain Labs
 - **Payment Address:** 0xC289B81a8e5f8F8d691b4Cf1DBc16A7107B630e3 (USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
 
@@ -110,6 +110,10 @@ Since Polkadot has increasingly grown the open source developer ecosystem, there
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / MIT |
+| 0b. | Documentation | We will provide both documentation of the code and a basic video tutorial that explains how a user can easily use DotPulse app |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 1. | Implement Github scraper functionality | Periodically update the list of repositories that are being part of the Polkadot organizations on GitHub |
 | 2. | Implement Github scraper functionality | Calculate the total number of commits, repositories, contributors and PRs from the entire Polkadot ecosystem |
 | 3. | Implement Github scraper functionality | Get the contributors of the month based on the number of commits |
