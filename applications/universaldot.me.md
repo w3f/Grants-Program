@@ -5,6 +5,7 @@
 - **Team Name:** UNIVERSALDOT FOUNDATION
 - **Payment Address:**  12atHxpDhW8cU1wbBTLZsGqaKRyoRVZKFs (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/560#issuecomment-1259122114)
 
 
 ## Project Overview :page_facing_up:
