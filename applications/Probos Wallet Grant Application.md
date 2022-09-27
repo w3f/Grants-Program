@@ -85,26 +85,11 @@ https://probos.io/
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | NFT Portfolio Mechanics Development | Probos will support NFT ownership verification.
-The team is working toward enabling Probos to fetch ERC721 balances. We’re going to set up a backend inter-node interaction mechanism to support ERC721 operations. We’re working on improving and polishing the Probos UI/UX. As part of this, we’re designing the Probos UI to be compatible with the apps providing NFT portfolio management tools.|
-| -----: | ----------- | ------------- |
-| 2. | Support for New Blockchains | This is going to be a recurrent deliverable comprising several blockchain integration steps. The team will:
-- work on keys deployment complying with the BIP44 and BIP32 notations;
-- introduce private key-to-address or private-to-public key conversion;
-- implement a transaction signature algorithm;
-- establish blockchain transaction structure;
-- determine whether to use a public node or run a private one;
-- develop an API-to-node interaction module;
-- add support for ERC20 tokens;
-- enable the blockchain’s native currency, ERC20, and ERC721 transfer functionality in the app.
-We upgrade the Probos UI/UX further, bringing new view and management screens. We've already done all this for previous networks and will do the same for the Polkadot/Kusama networks to support them in our app. |
-| -----: | ----------- | ------------- |
+| 1. | NFT Portfolio Mechanics Development | Probos will support NFT ownership verification. The team is working toward enabling Probos to fetch ERC721 balances. We’re going to set up a backend inter-node interaction mechanism to support ERC721 operations. We’re working on improving and polishing the Probos UI/UX. As part of this, we’re designing the Probos UI to be compatible with the apps providing NFT portfolio management tools.|
+| 2. | Support for New Blockchains | This is going to be a recurrent deliverable comprising several blockchain integration steps. The team will: work on keys deployment complying with the BIP44 and BIP32 notations; introduce private key-to-address or private-to-public key conversion; implement a transaction signature algorithm; establish blockchain transaction structure; determine whether to use a public node or run a private one; develop an API-to-node interaction module; add support for ERC20 tokens; enable the blockchain’s native currency, ERC20, and ERC721 transfer functionality in the app. We upgrade the Probos UI/UX further, bringing new view and management screens. We've already done all this for previous networks and will do the same for the Polkadot/Kusama networks to support them in our app. |
 | 3. | Support for NFT Portfolio on the Polkadot/Kusama blockchain | The Probos team is on the way to empowering its users to access data about Polkadot/Kusama-stored NFTs in their portfolios. Our frontend experts are going to design a convenient GUI to display user NFT portfolios. The application will be gathering and showing NFT property particulars. We’re going to collect analytics from NFT trading services.Support for NFT transactions will be implemented. | 
-| -----: | ----------- | ------------- |
-| 5. | Implementation of Analytics | The team will develop metrics collection scenarios for effective analytics. This deliverable will encompass database deployment, events structure creation, and data gathering and analysis. We are doing this to collect advanced analytics data. With this, we will be able to build our marketing more effectively and measure the effectiveness of our app promotion.|
-| -----: | ----------- | ------------- |
-| 6. | Implementation of 24/7 Technical Support | We intend to outsource customer service to integrate it into Probos. This will involve setting up scenarios specific to the app and the project workflow.
-The team is going to script interactive decision trees for greater automation and efficiency to provide quick satisfying responses without the need to involve a customer support specialist. |
+| 4. | Implementation of Analytics | The team will develop metrics collection scenarios for effective analytics. This deliverable will encompass database deployment, events structure creation, and data gathering and analysis. We are doing this to collect advanced analytics data. With this, we will be able to build our marketing more effectively and measure the effectiveness of our app promotion.|
+| 5. | Implementation of 24/7 Technical Support | We intend to outsource customer service to integrate it into Probos. This will involve setting up scenarios specific to the app and the project workflow. The team is going to script interactive decision trees for greater automation and efficiency to provide quick satisfying responses without the need to involve a customer support specialist. |
 
 ### Milestone 2 Introduce NFT Portfolio Functionality 
 
@@ -114,7 +99,6 @@ The team is going to script interactive decision trees for greater automation an
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 1. | Partnerships with First 3 NFT Marketplaces | We plan to partner up with 3 NFT marketplaces. These partnerships will help us expand Probos’ presence, particularly, grow our audience, while the marketplaces will gain an NFT-oriented infrastructure partner. |
-| -----: | ----------- | ------------- |
 | 2. | Listing of First 3 Collections | In addition, the team is going to add support for the first 3 NFT collections under these partnerships to enable the best Probos NFT portfolio user experience for the userbases of the marketplaces involved. |
 
 ### Milestone 3 Launch Achievements Program
@@ -125,9 +109,7 @@ The team is going to script interactive decision trees for greater automation an
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 1. | Achievements Program Mechanics Development | Per the roadmap, we intend to develop an incentive mechanism aimed at motivating people to use the Probos app. The mechanism will power an achievement system that will reward users for: time spent in the app, transaction count, transactions on a specific blockchain, etc.|
-| -----: | ----------- | ------------- |
 | 2. | Testing | To ensure we deliver top-notch wallet quality to our customers, we’re going to create unit tests for newly added features. This will include writing detailed testing checklists, running manual and automation tests, and conducting internal as well as external testing. | 
-| -----: | ----------- | ------------- |
 | 3. | App’s Frequent Marketplace Updates (App Store, Google Play) | The team will release the updated app featuring the fully tested feature set to the public. We will publicly release the app’s version featuring all the updates once it’s fully tested. | 
 
 
@@ -159,3 +141,21 @@ The team is going to script interactive decision trees for greater automation an
 ## Additional Information :heavy_plus_sign:
 Web3 Foundation supports projects concerned with creating decentralized digital assets and crypto tools, expanding the DeFi infrastructure, and contributing to crypto’s mass adoption in general. Developing the Probos app, we are highly motivated to improve the available crypto asset management functionality and user experience for both newcomers and savvy ones. With backing from rapidly growing blockchain ecosystems, we’ll be able to successfully supply people with easy access to web3 financial services and assets, boosting the latter’s liquidity.
 As you’re focused on building your network out, we can code in tandem with you and have enough expertise & development power to furnish your ecosystem with impactful functionality and infrastructure solutions.
+
+**Our achievements**
+Our devs built the Probos dApp using the Flutter framework which enables us to update both its iOS and Android iterations almost simultaneously.
+
+
+While building the wallet, the dev team ran into some challenges of fundamental importance. And so, we rewrote all the libraries that underpin the Probos’ interaction with blockchains for the Flutter framework using the Dart language. Dart was picked because of its numerous efficiency benefits for apps over its alternative JavaScript.
+
+BIP (Bitcoin Improvement Proposal) 44 was severely underdeveloped in the Dart language when the team started creating the wallet. So much so that it was easier for our lead cryptographer to develop this library completely from scratch in Dart by himself than to try and fix whatever that was made available by open source communities.
+
+Now that we have this library for Dart, we use it in Probos to support compatibility with other wallets. Today, it empowers us to allow users to move to our wallet from other similar applications effortlessly, and vice versa.
+
+Considering the use of Dart and our self-written BIP44 library that simply didn’t exist before, the Probos wallet app should be faster than its competition and of course, take advantage of a migration functionality.
+
+The team has created a Dart library for the TRON blockchain from the ground up.
+
+We also advanced and debugged the Pointy Castle library, one of the largest cryptographic libs.
+
+Faced with the issues of nonexistent libraries for Dart, we learned to develop our web3 libraries for those blockchains this language lacks support for. This way, we laid the groundwork for the future development of mobile apps built to interact with blockchain.
