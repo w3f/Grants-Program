@@ -42,8 +42,6 @@ Polkadot parachains already offer a broad range of dapps and functions, and coup
 
 **Project Details**
 
-your project's expected final state.
-
 - Mockups/designs of any UI components
 
 **September 2022**
@@ -68,8 +66,6 @@ Documentation of core components, protocols and architecture to be deployed can 
 Silent Data News: <https://silentdata.com/news>
 
 **Ecosystem Fit**
-
-- Where and how does your project fit into the ecosystem?
 
 We believe that as part of the evolution of web3, web2 and web3 will converge before diverging. This will enable users to leverage their identities and assets, currently anchored in web2 to the web3 world. In order for this to occur, web3 DApps, including those deployed in many of the Polkadot parachains, need a way to securely and safely verify off-chain web2 data.
 
