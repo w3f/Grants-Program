@@ -3,7 +3,7 @@
 - **Project Name:** Substats (The framework of lightweight block explorer)
 - **Team Name:** CESS LAB
 - **Payment Address:** 0x41fC582784745Ec6B4860F47808b988a473fcEFc(USDT)
-- **Level:** 1
+- **Level:** 2
 
 ## Project Overview 
 
