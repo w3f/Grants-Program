@@ -78,35 +78,60 @@ https://probos.io/
 - **Total Estimated Duration:** 6 months
 - **Total Costs:** $50,000
 
-### Milestone 1
+### Milestone 1 Set Up 24/7 Technical Support and Finish NFT Portfolio Functionality
 
 - **Estimated duration:** 4.5 month
 - **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Set Up 24/7 Technical Support and Finish NFT Portfolio Functionality | NFT Portfolio Mechanics Development; Support for New Blockchains; Support for NFT Portfolio on the Polkadot/Kusama blockchains; Testing; App’s Frequent Marketplace Updates (AppStore, Google Play); Implementation of Analytics; Implementation of 24/7 Technical Support |
+| 1. | NFT Portfolio Mechanics Development | Probos will support NFT ownership verification.
+The team is working toward enabling Probos to fetch ERC721 balances. We’re going to set up a backend inter-node interaction mechanism to support ERC721 operations. We’re working on improving and polishing the Probos UI/UX. As part of this, we’re designing the Probos UI to be compatible with the apps providing NFT portfolio management tools.|
+| -----: | ----------- | ------------- |
+| 2. | Support for New Blockchains | This is going to be a recurrent deliverable comprising several blockchain integration steps. The team will:
+- work on keys deployment complying with the BIP44 and BIP32 notations;
+- introduce private key-to-address or private-to-public key conversion;
+- implement a transaction signature algorithm;
+- establish blockchain transaction structure;
+- determine whether to use a public node or run a private one;
+- develop an API-to-node interaction module;
+- add support for ERC20 tokens;
+- enable the blockchain’s native currency, ERC20, and ERC721 transfer functionality in the app.
+We upgrade the Probos UI/UX further, bringing new view and management screens. We've already done all this for previous networks and will do the same for the Polkadot/Kusama networks to support them in our app. |
+| -----: | ----------- | ------------- |
+| 3. | Support for NFT Portfolio on the Polkadot/Kusama blockchain | The Probos team is on the way to empowering its users to access data about Polkadot/Kusama-stored NFTs in their portfolios. Our frontend experts are going to design a convenient GUI to display user NFT portfolios. The application will be gathering and showing NFT property particulars. We’re going to collect analytics from NFT trading services.Support for NFT transactions will be implemented. | 
+| -----: | ----------- | ------------- |
+| 5. | Implementation of Analytics | The team will develop metrics collection scenarios for effective analytics. This deliverable will encompass database deployment, events structure creation, and data gathering and analysis. We are doing this to collect advanced analytics data. With this, we will be able to build our marketing more effectively and measure the effectiveness of our app promotion.|
+| -----: | ----------- | ------------- |
+| 6. | Implementation of 24/7 Technical Support | We intend to outsource customer service to integrate it into Probos. This will involve setting up scenarios specific to the app and the project workflow.
+The team is going to script interactive decision trees for greater automation and efficiency to provide quick satisfying responses without the need to involve a customer support specialist. |
 
-### Milestone 2
+### Milestone 2 Introduce NFT Portfolio Functionality 
 
 - **Estimated duration:** 3 weeks
 - **Costs:** 10,000 USD
 - 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 2. | Introduce NFT Portfolio Functionality in the following | Partnerships with First 3 NFT Marketplaces; Listing of First 3 Collections |
+| 1. | Partnerships with First 3 NFT Marketplaces | We plan to partner up with 3 NFT marketplaces. These partnerships will help us expand Probos’ presence, particularly, grow our audience, while the marketplaces will gain an NFT-oriented infrastructure partner. |
+| -----: | ----------- | ------------- |
+| 2. | Listing of First 3 Collections | In addition, the team is going to add support for the first 3 NFT collections under these partnerships to enable the best Probos NFT portfolio user experience for the userbases of the marketplaces involved. |
 
-### Milestone 3
+### Milestone 3 Launch Achievements Program
 
 - **Estimated duration:** 3 weeks
 - **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 3. | Launch Achievements Program | Mechanics Development; Testing; App’s Frequent Marketplace Updates (AppStore, Google Play); Presentation of Probos Achievements Program for the audience (ads, AMAs, video reviews)|
+| 1. | Achievements Program Mechanics Development | Per the roadmap, we intend to develop an incentive mechanism aimed at motivating people to use the Probos app. The mechanism will power an achievement system that will reward users for: time spent in the app, transaction count, transactions on a specific blockchain, etc.|
+| -----: | ----------- | ------------- |
+| 2. | Testing | To ensure we deliver top-notch wallet quality to our customers, we’re going to create unit tests for newly added features. This will include writing detailed testing checklists, running manual and automation tests, and conducting internal as well as external testing. | 
+| -----: | ----------- | ------------- |
+| 3. | App’s Frequent Marketplace Updates (App Store, Google Play) | The team will release the updated app featuring the fully tested feature set to the public. We will publicly release the app’s version featuring all the updates once it’s fully tested. | 
+
 
 ## Future Plans
-
 
 **Past**
 *2021- 2022*
@@ -129,7 +154,6 @@ https://probos.io/
 - AML Checks
 - Crypto Buying and Selling
 - Fiat-to-Crypto Purchases
-
 
 
 ## Additional Information :heavy_plus_sign:
