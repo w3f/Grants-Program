@@ -3,6 +3,7 @@
 * **Project Name:** DEIP IP Management/Governance Module
 * **Proposer:** [aliakseikulik](https://github.com/aliakseikulik)
 * **Payment Address:** bc1q6dnhvxt93rtdalrtgezzwtsn2krglktv68e7nr
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/130#issuecomment-1168471336)
 
 ## Project Overview :page_facing_up: 
 

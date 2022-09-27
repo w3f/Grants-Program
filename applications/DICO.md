@@ -4,6 +4,7 @@
 * **Project Name:** DICO
 * **Team Name:** DICO Team
 * **Payment Address:** 0x0211ae8881a3a0a41150627da07c900b78144a84(USDT)
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/636#issuecomment-1144901144)
 
 
 ## Project Overview
