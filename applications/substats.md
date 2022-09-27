@@ -59,7 +59,7 @@ In summary, we believe that there is a lack of a better open source lightweight 
 
 ### Project Details
 
-We have designed a set of explorer modular components for the Substrate ecosystem, which can be used by stakeholders (such as miners and storage users) and other users. Users can inquire about basic information in the network, such as space information, rankings, blocks, transactions, addresses, visual trend charts, etc. Substats is open-source and has flexible scalability in both network and its functionalities. Hence early-stage projects or individual developers can easily integrate our components based on their business needs. The data analysis module and custom components are the two core functions of Substats.
+We have designed a set of explorer modular components for the Substrate ecosystem, which can be used by stakeholders (such as miners and storage users) and other users.Polkadot, Kusama and Rococo will be suppoted in first version. Users can inquire about basic information in the network, such as space information, rankings, blocks, transactions, addresses, visual trend charts, etc. Substats is open-source and has flexible scalability in both network and its functionalities. Hence early-stage projects or individual developers can easily integrate our components based on their business needs. The data analysis module and custom components are the two core functions of Substats.
 
 #### High level design
 
@@ -230,11 +230,11 @@ Parachain/dapp/wallet/developers
 | 0a.    | License                | Apache 2.0 / GPLv3 / MIT / Unlicense                         |
 | 0b.    | Documentation          | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how to use the product, display and explain the function of each component. |
 | 0c.    | Testing Guide          | Unit testing will be applied to ensure reliability. Documentation of tests and results will be provided. |
-| 1a.    | Data Reading Module    | It contains on-chain data of blocks, addresses, transactions, events, miners. |
+| 1a.    | Data Reading Module    | It contains on-chain data of blocks, addresses, transactions, events, miners. It supports network switching of Polkadot, Kusama and Rococo, for instance. |
 | 1b.    | Data Processing Module | It includes synchronization for block information, miner information, account lists, on-chain power timing recording, transaction data statistics and sorting. |
 | 1c.    | The API Module         | We will develop functional interfaces to return the results of data processing to front-end services in the form of a unified interface. The interface includes block information acquisition, historical statistical data acquisition, and the entire network computing power ranking. |
 | 2a.    | API Documentation      | We will complete a backend API documentation explaining how the API interacts with the data. |
-| 2b.    | Operation Manual       | We will write an operation manual explaining how data reading and processing can be used. |
+| 2b.    | Operation Manual       | We will write an operation manual explaining how data reading, how network switching and processing can be used. |
 
 ### Milestone 3 Complete The Front-End Components
 
