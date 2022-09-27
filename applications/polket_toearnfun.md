@@ -274,6 +274,10 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 |     4. | Flutter App: VFE Market            | The App implements the VFE trading market, allowing users to freely buy and sell VFE.                                                                                                                                                                         |
 |     5. | Android Alpha-test Released        | We will release the first Alpha-test App supporting the android platform.                                                                                                                                                                                     |
 
+
+When the milestones in the grant are completed, we will open source the entire project.
+Our projects are open source based on GPL-3.0 license.
+
 ## Future Plans
 
 1. We plan to apply for some funding from the `Kusama Treasury` before launching the `App beta version` to meet the first batch of equipment production. We will invite internal test users to the community, and distribute the first batch of equipment to them for free testing experience.
