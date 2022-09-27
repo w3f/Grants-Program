@@ -169,15 +169,21 @@ Silent Data Architecture: [Silent Data Architecture](https://docs.google.com/doc
 - Costs: 30,000 USD
 
 
-Number           Deliverables               Notes
-0a.              Extension & Deployment    Extend the Silent Data confidential computing oracle to generate proofs verifiable by Polkadot smart contracts. 
-                                           Deploy Silent Data smart contracts to the Polkadot testnets and implement Instagram account verification from a 
-                                           DApp.
-                                           
-0b.              Documentation             We will provide documentation on London Bridge.
+| Number  | Deliverables                   | Specification                                                                                          | 
+| ------- |:------------------------------:| ------------------------------------------------------------------------------------------------------:|
+| 0a.            | License                  | MIP.                                                                                                  |
 
-0c.              Testing Guide             The testnet examples will be shared with Polkadot developers to integrate Silent Data into their dapps and 
-                                           parachains.
+
+| 0b.            | Extension & Deployment   | Extend the Silent Data confidential computing oracle to generate proofs verifiable by Polkadot smart. |
+                                             contracts. 
+                                          
+                                            | Deploy Silent Data smart contracts to the Polkadot testnets and implement Instagram account 
+                                              verification from a Dapp.                                                                             |
+                                                                                     
+| 0c.            | Documentation            | We will provide documentation on London Bridge.                                                       |
+
+| 0d.            | Testing Guide            | The testnet examples will be shared with Polkadot developers to integrate Silent Data into their dapps
+                                              and parachains.                                                                                       |
 
 **Future Plans**
 
