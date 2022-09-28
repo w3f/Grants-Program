@@ -31,27 +31,30 @@ Please read this blog to understand it much better. It has around 5k views: http
 Aviraj Khare: Founder & CTO, nft2point0, Ex Gojek
 Worked in web3 space from 2016 to 2019. Created a Decentralized exchange on top of the 0x protocol as a Whitelabel solution. From 2019-21 worked in the Gojek infrastructure team. Currently working as Founder & CTO in nft2point0.
 
+## Grant level
+Level 2: Up to $30,000, 3 approvals
+
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 14 weeks
-* **Total Costs:** 1.856 BTC
+* **Total Costs:** USD 30,000
 
 ### Milestone 1
 
 * **Estimated Duration:** 4 weeks 
-* **Costs:** 0.356 BTC
+* **Costs:** 19,651 USD
 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
-| 0. | Apache License 2.0 | All code will be published under Apache 2.0 |
+| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
 | 1. | NFT 2.0 - Extending the EIP-721 | We need to make a change in ERC721 Metadata JSON Schema, we are adding a field that contains an IPFS hash of JavaScript code that will serve as logic layer for NFTs |
-| 2. | NFT 2.0 - Smart Contract development | We need to develop, test and audit a smart contracts for our interactive NFTs. We need to create Storage layer that will store output of interactive NFT and extending ERC-721 smart contract code. |
+| 2. | NFT 2.0 - Smart Contract development | We need to develop, test and audit a smart contracts in ink for our interactive NFTs. We need to create Storage layer that will store output of interactive NFT and extending ERC-721 smart contract code. |
 
 ### Milestone 2
 
 * **Estimated Duration:** 4 weeks 
-* **Costs:** 0.3 BTC
+* **Costs:** 5,895 USD
 
 
 | Number | Deliverable | Specification | 
@@ -62,12 +65,18 @@ Worked in web3 space from 2016 to 2019. Created a Decentralized exchange on top 
 ### Milestone 3
 
 * **Estimated Duration:** 8 weeks 
-* **Costs:** 1.2 BTC
+* **Costs:** 23,581 USD
 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 0. | API and Infrastructure | We need to develop our backend and infrastructure so that we can keep a track of Interactive NFTs minted along with essential functionalities |
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 
 ## Additional Information :heavy_plus_sign: 
 
