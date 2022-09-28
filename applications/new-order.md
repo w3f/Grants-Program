@@ -132,7 +132,7 @@ I have fiddled with substrate last year.
 ### Overview
 
 * **Full-Time Equivalent (FTE):** 1
-* **Total Costs:** $30000 equivalent
+* **Total Costs:** $15000 equivalent
 
 ### Milestone 1 — Implement Runtime module for dex order
 
@@ -231,62 +231,6 @@ new-order: new-order pallet description
 | 0c. | Testing Guide | Test code will be provided in the pallet. |
 | 0d. | Docker | Docker can be provided for running this in substrate. |
 | 1. | Pallet code | the code repo will be open source with name `new-order` |
-
-### Milestone 2 - NewOrder.js and CLI
-
-* **Estimated duration:** 10 weeks
-* **FTE:**  1
-* **Costs:** $15,000 equivalent USDC
-
-Goal - Make an api and cli for interacting with New Order
-
-This milestone focuses on building a client library and cli to interact with New Order runtime. Users are expected to run trading bots based on the api.
-
-#### neworder.js
-
-Neworder.js is a client SDK for building applications that can interact with New Order from within JavaScript runtimes, such as web browsers, server backends, and on mobile through React Native.
-
-##### Queries
-
-`bids(pair_id, asset_id, price)`: Query bids that are in the price 
-`price(pair_id, asset_id)`: Query price determined in a pair between asset trading from and to
-`pair_info(pair_id)`: Query pair information
-
-##### Executions
-
-`add_pair(pair_id)`: a sudo function to add a pair in the orderbook
-`remove_pair(pair_id)`: a sudo function to remove a pair in the orderbook 
-`place_bid(pair_id, asset_id, price, amount)`: place bid on the orderbook, if existing orders match with ask, dissolve while going through the ask queue.
-`place_ask(pair_id, asset_id, price, amount)`: place ask on the orderboook, if existing orders match with bid, dissolve while going through the bid queue.
-`cancel_order(order_id)`: cancel an order submitted from the sender
-
-#### newordercli
-
-newordercli is a command-line interface for New Order on Standard parachain and allows more advanced users to perform operations directly from their shell or terminal without having to interact with a graphical interface. newordercli allows you to use keys saved in its keychain saved in json file. newordercli has commands:
-
-##### query
-
-``` newordercli query <queries>```
-
-`bids(pair_id, asset_id, price)`: Query bids that are in the price 
-`price(pair_id, asset_id)`: Query price determined in a pair between asset trading from and to
-`pair_info(pair_id)`: Query pair information
-
-##### exec
-
-``` newordercli exec <executions>```
-
-`add_pair(pair_id)`: a sudo function to add a pair in the orderbook
-`remove_pair(pair_id)`: a sudo function to remove a pair in the orderbook 
-`place_bid(pair_id, asset_id, price, amount)`: place bid on the orderbook, if existing orders match with ask, dissolve while going through the ask queue.
-`place_ask(pair_id, asset_id, price, amount)`: place ask on the orderboook, if existing orders match with bid, dissolve while going through the bid queue.
-`cancel_order(order_id)`: cancel an order submitted from the sender
-
-##### config
-
-``` newordercli config ```
-
-This just logs config to the console set by configuration file `new-order.config.js`.
 
 ### Documentation
 
