@@ -21,8 +21,6 @@ This is clearly a frame and indexer using Subquery with reasons, not investment 
 ### Technologies
 1. Rust
 2. Substrate Runtime
-3. Subquery
-4. Polkadot.js or substrate-connect
 
 ### Components
 
