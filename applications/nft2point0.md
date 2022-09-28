@@ -71,13 +71,17 @@ Level 2: Up to $30,000, 3 approvals
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 0. | API and Infrastructure | We need to develop our backend and infrastructure so that we can keep a track of Interactive NFTs minted along with essential functionalities |
+| 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
+
+### Following milestones will be delivered after completion of each milestone.
+
+We will update each milestone with Documentation, Testing, and Docker setup so that it will be easy for end user to use.
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
 
 ## Additional Information :heavy_plus_sign: 
 
