@@ -73,8 +73,6 @@ Regular web2 API integrations require trust in additional third parties, as data
 
 There are already numerous parachains deployed in the Polkadot ecosystem, primarily focussed on DeFi, NFTs, identity and tokenisation services. Many of those parachains and dApps can benefit from integrating with Silent Data to verify web2 credentials, including Instagram account ownership to provide proofs that can then be leveraged by the parachain dApps (for example to augment the identify of a seller wallet) without the need to share any user data during the verification process and without storing the user data in the parachain. Silent Data will also be extended to enable verification of web2 financial credentials, to augment web3 DeFi and tokenisation dapps.
 
-.
-
 - What need(s) does your project meet?
 
 The project enables smooth and user-friendly proof of web2 account ownership and credentials in web3 dApps. This can be used to reduce fraud, but augmenting web3 wallet identities and assets with verified web2 account data (e.g. Instagram account ownership), without revealing sensitive account data and credentials to any third parties or platform operators..
