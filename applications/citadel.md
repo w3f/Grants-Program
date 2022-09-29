@@ -97,12 +97,11 @@ Furthermore, we integrated the fiat gateway and instant cryptocurrency exchange 
 - Gregory Shabalov - co-founder, CTO
 - Pavel Khivintsev - Lead Backend Developer
 - Petr Lapin - Lead Frontend Developer
-- Alexander Nikishkin - Frontend Developer
-- Alexandr Kozhemyakin - QA Engineer
+- Iurii Dorofeev - Lead Mobile Developer
 - Nikita Pashkov - DevOps Engineer
 - Yeskendir Sarinov - Backend Developer
-- Aleksey Gavrilyuk - QA Engineer
-- Andrey Dershevich - Mobile Developer
+- Grigori Sargsyan - Frontend Developer
+- Sofia Peremotina - QA Engineer
 
 **Other team members**
 
@@ -143,12 +142,11 @@ From our side, we are ready to make the part associated specifically with Polkad
 - Gregory Shabalov - [https://www.linkedin.com/in/shabalov/](https://www.linkedin.com/in/shabalov/)
 - Pavel Khivintsev - [https://www.linkedin.com/in/pavel-khivintsev-89667072/](https://www.linkedin.com/in/pavel-khivintsev-89667072/)
 - Petr Lapin - https://github.com/lapinlapin
-- Andrey Dershevich - https://github.com/Dersh
-- Alexander Nikishkin - https://www.linkedin.com/in/aleksandr-nikishkin-1a0500197/
-- Alexandr Kozhemyakin - [https://www.linkedin.com/in/alexandr-kozhemyakin-qa/](https://www.linkedin.com/in/alexandr-kozhemyakin-qa/)
+- Iurii Dorofeev - http://www.linkedin.com/in/otopba
 - Nikita Pashkov - [https://github.com/Krewedk0](https://github.com/Krewedk0)
-- Yeskendir Sarinov - [https://www.linkedin.com/in/yeskendir-sarinov-1b08771ab](https://www.linkedin.com/in/yeskendir-sarinov-1b08771ab)
-- Aleksey Gavrilyuk - https://www.linkedin.com/in/aleksey-gavrilyuk-40595782/
+- Yeskendir Sarinov - https://github.com/sarinov
+- Sofia Peremotina - [https://www.linkedin.com/in/sofia-peremotina-a021901ab/](https://www.linkedin.com/in/sofia-peremotina-a021901ab/)
+- Dmitry Sidorov - [http://linkedin.com/in/sidorov-dmitry](http://linkedin.com/in/sidorov-dmitry)
 - Dmitrii Shehovtsov - [https://www.linkedin.com/in/dmitrii-shekhovtsov-bba673189/](https://www.linkedin.com/in/dmitrii-shekhovtsov-bba673189/)
 - Rina Spasenkova - [https://www.linkedin.com/in/neshtedle/](https://www.linkedin.com/in/neshtedle/)
 - Vlad Gorlov - [https://www.linkedin.com/in/vladgorlov/](https://www.linkedin.com/in/vladgorlov/)
@@ -181,13 +179,14 @@ From our side, we are ready to make the part associated specifically with Polkad
 - Total Estimated Duration: Duration of the whole project
 - Full-time equivalent (FTE): Workload of an employed person ([see](https://en.wikipedia.org/wiki/Full-time_equivalent)) - 3,0625
 
-![](https://citadel.one/staticf/table01.png)
+![](https://github.com/citadeldao/polkadot/blob/main/table1.png)
 
-![](https://citadel.one/staticf/ttable2.png)
+![](https://github.com/citadeldao/polkadot/blob/main/table2.png)
 
-- Total Costs: $22200
 
-![](https://github.com/citadeldao/polkadot/blob/main/priceupd.PNG)
+- Total Costs: $32300
+
+![](https://github.com/citadeldao/polkadot/blob/main/Totalcost.png)
 
 The planned delivery dates are Q1’2022 (approximately May). 
 We are still sticking to the previous financial requests we mentioned in the very beginning.
