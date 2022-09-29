@@ -24,7 +24,7 @@ NFT creators with verified Instagram accounts, for example, can use Silent Data 
 
 Silent Data will also be extended to enable verification of web2 financial credentials, to augment web3 DeFi and tokenisation dapps.
 
-- **An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.**
+**An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.**
 
 Silent Data provides privacy-preserving cryptographic proofs about properties of web2 data. We refer to the output as a “proof certificate”, consisting of a set of key-value pairs signed by a manufacturer attested hardware secure enclave. The signatures can be verified using various cryptography primitives available on different blockchains, including Polkadot (Substrate) and Ethereum. A blockchain wallet is associated with a Silent Data proof certificate by having the wallet owner sign the private data that is encrypted and sent to the enclave with their wallet private key.
 
@@ -34,7 +34,7 @@ Integrating and enabling Silent Data in Polkadot parachains will help to bring a
 
 Pokadot will benefit through enabling identifies to be further verified where necessary using cryptographically verifiable proofs of web2 accounts (social media, such as Instagram, or otherwise), enabling the DeFi ecosystem to grow more securely beyond native on chain assets to those assets whose origin, provenance and/or price are anchored in web2 accounts (through additional integrations with other web2 accounts). Polkadot DeFi investors will benefit from increased cryptographic verifiability when backing off chain and real world assets.
 
-- **An indication of why your team is interested in creating this project.**
+**An indication of why your team is interested in creating this project.**
 
 Applied Blockchain was founded by Adi Ben-Ari, in London in 2015 when the Ethereum code base was first released, and he spent the early months with some members of what became the Parity team exploring and understanding the platform. Since then Applied Blockchain has closely followed developments at Parity and Polkadot (including some minor collaborations along the way), and is particularly interested in bringing the Silent Data technology to Polkadot parachains and dapps.
 
