@@ -167,7 +167,7 @@ Silent Data Architecture: [Silent Data Architecture](https://docs.google.com/doc
 
 | Number  | Deliverables                   | Specification                                                                   | 
 | ------- |:------------------------------:| -------------------------------------------------------------------------------:|
-| 0a.            | License                 | MIP.                                                                           |
+| 0a.     | License                        | MIP.                                                                           |
 | ------- |:------------------------------:| -------------------------------------------------------------------------------:|
 
 | 0b.            | Extension & Deployment  | Extend the Silent Data confidential computing oracle to generate proofs  
