@@ -170,7 +170,7 @@ Silent Data Architecture: [Silent Data Architecture](https://docs.google.com/doc
 | 0a.     | License                        | MIP.                                                                           |
 | ------- |:------------------------------:| -------------------------------------------------------------------------------:|
 
-| 0b.            | Extension & Deployment  | Extend the Silent Data confidential computing oracle to generate proofs  
+| 0b.     | Extension & Deployment         | Extend the Silent Data confidential computing oracle to generate proofs  
                                              verifiable by Polkadot smart contracts. 
                                              Deploy Silent Data smart contracts to the Polkadot testnets and implement 
                                              Instagram account verification from a Dapp.                                    |
