@@ -186,7 +186,7 @@ From our side, we are ready to make the part associated specifically with Polkad
 
 - Total Costs: $32300
 
-![](https://github.com/citadeldao/polkadot/blob/main/Totalcost.png)
+![](https://github.com/citadeldao/polkadot/blob/main/Totalcost1.png)
 
 The planned delivery dates are Q1’2022 (approximately May). 
 We are still sticking to the previous financial requests we mentioned in the very beginning.
