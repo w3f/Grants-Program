@@ -184,7 +184,7 @@ From our side, we are ready to make the part associated specifically with Polkad
 ![](https://github.com/citadeldao/polkadot/blob/main/table2.png)
 
 
-- Total Costs: $32300
+- Total Costs: $29860
 
 ![](https://github.com/citadeldao/polkadot/blob/main/Totalcost1.png)
 
