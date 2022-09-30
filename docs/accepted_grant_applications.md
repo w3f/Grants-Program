@@ -547,4 +547,4 @@
 | [CESS LAB](https://www.cess.cloud/) | Substats (The framework of lightweight block explorer) | [GitHub](https://github.com/CESSProject) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Polket](https://toearn.fun) | ToEarnFun | [GitHub](https://github.com/polketio/polket-node) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | ALPHA LABS | Binary merkle tree | [GitHub](https://github.com/frisitano) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-
+| [Standard Protocol](https://standard.tech/) | New Order - a full onchain orderbook dex with indexers | [GitHub](https://github.com/standardweb3) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
