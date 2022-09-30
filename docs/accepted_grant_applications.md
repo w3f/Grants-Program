@@ -548,3 +548,4 @@
 | [Polket](https://toearn.fun) | ToEarnFun | [GitHub](https://github.com/polketio/polket-node) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | ALPHA LABS | Binary merkle tree | [GitHub](https://github.com/frisitano) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Standard Protocol](https://standard.tech/) | New Order - a full onchain orderbook dex with indexers | [GitHub](https://github.com/standardweb3) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [hack-ink](https://github.com/hack-ink) | Subalfred | [GitHub](https://github.com/hack-ink/subalfred) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
