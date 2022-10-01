@@ -79,9 +79,9 @@ We're creative, experienced, responsible, organised and do our best to make high
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/yellow-cube
-- https://github.com/arctic-ash
-- https://github.com/aliasccl
+- https://github.com/orgs/CrossChainLabs/people/yellow-cube
+- https://github.com/orgs/CrossChainLabs/people/aliasccl
+- https://github.com/orgs/CrossChainLabs/people/arctic-ash
 
 ### Team LinkedIn Profiles (if available)
 
