@@ -101,7 +101,12 @@ We will also deliver the following:
   - `cargo-contract`, the ink! build tool
 - One blog post about the tool and its development, at https://brson.github.io
 
+We will not include the following `wasm-opt` capabilities in the library bindings:
 
+- Fuzzing. `wasm-opt` has multiple options related to fuzz testing the output
+  module. We are aware of no potential clients for this feature. Including these
+  fuzzing features requires code duplication in Rust, for additional maintenance
+  burden and questionable benefit.
 
 
 ### Ecosystem Fit
