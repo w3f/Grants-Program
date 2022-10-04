@@ -140,6 +140,7 @@ Since Polkadot has increasingly grown the open source developer ecosystem, there
 | 0b. | Documentation | We will provide both documentation of the code and a basic video tutorial that explains how a user can easily use DotPulse app |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 0e.	| Article | We will publish an article that explains what was achieved as part of the grant and how users can benefit the most from DotPulse functionalities. |
 | 1. | Implement the DotPulse APIs required by frontend | Active contributors API that returns the number of active developers for each month over the last year |
 | 2. | Implement the DotPulse APIs required by frontend | Recent commits API that returns the list of recent commits across all Polkadot repositories over the last 30 days |
 | 3. | Build the DotPulse dashboard | Display the statistics top section with the overall number of commits, repositories, contributors and PRs |
