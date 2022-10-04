@@ -84,7 +84,6 @@ Level 2: Up to $30,000, 3 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| ------------- | ------------- | ------------- |
 | 0. | API and Infrastructure | We need to develop our backend and infrastructure so that we can keep a track of Interactive NFTs minted along with essential functionalities. We will be having multi-tenant microservice architecture. Our microservices are going to be coded on **Rust**. We will use open source libraries, if library is not available, then we will create a library and will open source it. |
 
 ## Additional Information :heavy_plus_sign: 
