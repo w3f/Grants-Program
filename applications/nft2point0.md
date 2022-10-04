@@ -53,7 +53,7 @@ Level 2: Up to $30,000, 3 approvals
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
 | 0. | NFT 2.0 - Extending the EIP-721 | We need to make a change in ERC721 Metadata JSON Schema, we are adding a field that contains an IPFS hash of JavaScript code that will serve as logic layer for NFTs |
-| 1. | NFT 2.0 - Smart Contract development | We need to develop, test and audit a smart contracts in ink for our interactive NFTs. We need to create Storage layer that will store output of interactive NFT and extending ERC-721 smart contract code. We will use this smart contract as reference: https://github.com/Supercolony-net/openbrush-contracts/blob/main/contracts/src/token/psp34/psp34.rs |
+| 1. | NFT 2.0 - Smart Contract development | We need to develop, test and audit a smart contracts in **ink** for our interactive NFTs. We need to create Storage layer that will store output of interactive NFT and extending ERC-721 smart contract code. We will use this smart contract as reference: https://github.com/Supercolony-net/openbrush-contracts/blob/main/contracts/src/token/psp34/psp34.rs |
 
 ### Milestone 2
 
@@ -68,8 +68,8 @@ Level 2: Up to $30,000, 3 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| 0. | SDK development | We need to develop a SDK so that anyone can integrate the Interactive NFTs in their frontends |
-| 1. | UI development | UI for both traditional and Interactive NFTs so that anyone can fork the repository and they can easily build their Interactive NFT marketplace. Most of the work is already done: https://github.com/nft2point0/interactive-nft-marketplace |
+| 0. | SDK development | We need to develop a SDK so that anyone can integrate the Interactive NFTs in their frontends. Our SDK will be developed in **TypeScript** language. |
+| 1. | UI development | UI for both traditional and Interactive NFTs so that anyone can fork the repository and they can easily build their Interactive NFT marketplace. Most of the work is already done: https://github.com/nft2point0/interactive-nft-marketplace. Our NFT marketplace is on top of **nextjs**. |
 
 ### Milestone 3
 
@@ -78,13 +78,14 @@ Level 2: Up to $30,000, 3 approvals
 
 
 | Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
 | 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
 | ------------- | ------------- | ------------- |
-| 0. | API and Infrastructure | We need to develop our backend and infrastructure so that we can keep a track of Interactive NFTs minted along with essential functionalities |
+| 0. | API and Infrastructure | We need to develop our backend and infrastructure so that we can keep a track of Interactive NFTs minted along with essential functionalities. We will be having multi-tenant microservice architecture. Our microservices are going to be coded on **Rust**. We will use open source libraries, if library is not available, then we will create a library and will open source it. |
 
 ## Additional Information :heavy_plus_sign: 
 
