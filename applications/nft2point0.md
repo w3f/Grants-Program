@@ -36,7 +36,7 @@ Level 2: Up to $30,000, 3 approvals
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 14 weeks
+* **Total Estimated Duration:** 22 weeks
 * **Total Costs:** 30,000 USD
 
 ### Milestone 1
