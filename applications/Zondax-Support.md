@@ -2,7 +2,7 @@
 
 * **Project Name:** Zondax Support & Maintenance
 * **Team Name:** Zondax
-* **Payment Address:** DAI (ERC20) 0x946b3f41546C2AA90bbABBE0573E553754b7344f
+* **Payment Address:** DAI (ERC20) 0x64c37c278f4c975e44ffd99b6e5f0832a3e9e981
 
 ## Project Overview :page_facing_up:
 
@@ -24,7 +24,7 @@ For this reason, we would like to propose a series of steps to address and mitig
 
 ### Legal Structure
 
-* **Registered Legal Entity:** Zondax GmbH
+* **Registered Legal Entity:** Zondax AG
 * **Registered Address:** 6300 Zug. Switzerland
 
 ### Contact

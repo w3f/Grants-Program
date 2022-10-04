@@ -1,7 +1,7 @@
 Grants Terms and Conditions
 ===========================
 
-Updated July 2021
+Updated July 2022
 
 * * * * *
 
@@ -138,6 +138,8 @@ In performing your obligations under these Terms and Conditions, You shall:
 4.  perform your obligations in accordance with all laws and codes of conducts applicable;
 5.  ensure that your development team consists of a sufficient number of appropriately skilled and experienced individuals
 6.  develop the Software as an open source software under the Apache license version 2.0.
+
+Unless expressly agreed otherwise in writing by the Foundation, the Grantee shall not subcontract, even partially, the development of the project/deliverable to any third party.  If the project/deliverable, in whole or in part, is subcontracted to a third party without the consent of the Foundation, the Foundation is entitled to immediately terminate the Grant Agreement and to recover the grant amount already disbursed. 
 
 The Parties acknowledge and agree that the requirements set out in the Milestones may only be varied or amended by submitting another pull request and the following reevaluation by the committee under the same conditions as the initial application review process specified above.
 
