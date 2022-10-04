@@ -282,35 +282,22 @@ We have finished the solidity contract development and got contracts audited by 
 - PNS HTTPS API
 
 - **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):** 3
-- **Total Costs:** $26,000
+- **Full-Time Equivalent (FTE):** 7.5
+- **Total Costs:** $30,000
 
-### **Milestone 1  —** Multi-token support for PNS Registration and Renewal
-
-- **Estimated duration:** 1 month
-- **FTE:** 2
-- **Costs:** 8,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | MIT  |
-| 0b. | Documentation | We will provide documentation that explains how a user can register a domain with dot, ksm, aUSD, USDC.   |
-| 0c. | Tests | Core payment functions will be fully covered by unit tests to ensure functionality and robustness.  |
-| 1. | Multi-token support | Since Polkadot is a multi-chain ecosystem, users may have different assets on different chains. As a DID infrastructure, PNS serves users across all parachains. If PNS only supports one token, e.g. GLMR on Moonbeam, those without such tokens may find it difficult to use their DIDs. Thus, it is necessary to support multiple tokens to register PNS. This is not intended to promote a specific token, but to facilitate all Polkadot users at the ecosystem level. We will implement the functionality to accept dot, ksm to register PNS domains.  |
-| 2. | Interaction with Frontend and Payment ABI of price oracle | PNS registration and renewal fee is priced in USD. In order to display the price and receive the fee correctly, the PNS App should read the price of tokens from other oracles and allow users to pay various tokens to obtain their PNS.  |
-
-
-### **Milestone 2 —** Account ownership and social network identity integration with verifiable credentials
+### **Milestone 1 —** Account ownership and social network identity integration with verifiable credentials
 
 - **Estimated duration:** 1 month
-- **FTE:** 2
-- **Costs:** 8,000 USD
+- **FTE:** 2.5
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT  |
 | 0b. | Documentation | We will provide documentation that explains how a user can set the social network identity of their PNS.   |
 | 0c. | Tests | Core credential verification functions will be fully covered by unit tests to ensure functionality and robustness.  |
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.  |
+| 0e. | Article | We will write an article in our blog that explains the work done as part of the grant.  |
 | 1. | Account ownership verification | Users can set multiple wallet addresses on PNS and attach on-chain verifiable credentials to show their ownership of the address. 
 
 For example, you can add a signed message to show your ownership to some address when setting the DOT record of your PNS domain, so that others could know the authenticity of that record.  |
@@ -368,9 +355,7 @@ ${signature}
 Those verifiable credentials are optional, and once they are set correctly, the PNS domain name will be marked Verified on the PNS Manager App. And the data is also accessible on chain or via API services.
 
 
-
-
-### **Milestone 3  — PNS HTTP API**
+### **Milestone 2  — PNS HTTP API**
 
 - **Estimated duration:** 1 month
 - **FTE:** 2.5
@@ -381,6 +366,8 @@ Those verifiable credentials are optional, and once they are set correctly, the 
 | 0a. | License | MIT  |
 | 0b. | Documentation | API server docs for easy integration.   |
 | 0c. | Tests | Core resolution function will be fully covered by unit tests to ensure functionality and robustness.  |
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.  |
+| 0e. | Article | We will write an article in our blog that explains the work done as part of the grant.  |
 | 1. | HTTP API Server for PNS query | Building a HTTP API server for querying PNS records, which will return JSON data with the domain name, namehash, owner address, expire time and records of different types, eg. ETH address, dot address, Twitter account, email address and so on. It will help other DApps and services to integrate with PNS. |
 | 2. | PNS Subquery Graph | Building and deploying a Subquery indexing service to pull the on-chain data off-chain and store the data into Postgres DB. It will speed up the PNS query and make it more reliable. It can also track all subdomains of a domain name, which is not possible with on-chain PNS interface. This is the companion service of the HTTP API server.  |
 
@@ -405,6 +392,23 @@ Example API results:
 }
 
 ```
+
+### **Milestone 3  —** Multi-token support for PNS Registration and Renewal
+
+- **Estimated duration:** 1 month
+- **FTE:** 2.5
+- **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | MIT  |
+| 0b. | Documentation | We will provide documentation that explains how a user can register a domain with DOT, KSM, USDT.   |
+| 0c. | Tests | Core payment functions will be fully covered by unit tests to ensure functionality and robustness.  |
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.  |
+| 0e. | Article | We will write an article in our blog that explains the work done as part of the grant.  |
+| 1. | Multi-token support | Since Polkadot is a multi-chain ecosystem, users may have different assets on different chains. As a DID infrastructure, PNS serves users across all parachains. If PNS only supports one token, e.g. GLMR on Moonbeam, those without such tokens may find it difficult to use their DIDs. Thus, it is necessary to support multiple tokens to register PNS. This is not intended to promote a specific token, but to facilitate all Polkadot users at the ecosystem level. We will implement the functionality to accept DOT, KSM to register PNS domains. We will also use the Chainlink Datafeed as our price oracle. |
+| 2. | Interaction with Frontend and Payment ABI of price oracle | PNS registration and renewal fee is priced in USD. In order to display the price and receive the fee correctly, the PNS App should read the price of tokens from other oracles and allow users to pay various tokens to obtain their PNS.  |
+
 
 
 ## **Future Plans**
