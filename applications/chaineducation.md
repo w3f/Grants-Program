@@ -103,10 +103,6 @@ Level 2: Up to $30,000, 3 approvals
 | 4. | Student rating and review system | Development of review and rating system so that students can review a course.|
 | 5. | API and Infrastructure | We are building our backend using Django due to it's strong ORM support. We will be using DRF(Django Rest Framework) to build the API layer. We will be using **py-substrate-api** library to communicate with Blockchain.|
 
-- High level API design.
- - User authentication and authorization.
- - Designing backend APIs for instructors so that they can create a course.
-
 ### Milestone 4
 
 * **Estimated Duration:** 3 weeks 
