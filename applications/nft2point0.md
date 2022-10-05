@@ -104,3 +104,5 @@ Level 2: Up to $30,000, 3 approvals
 ## Additional Information :heavy_plus_sign: 
 
 * We're currently implementing it in substrate ecosystem.
+
+* Demo video: https://youtu.be/kHtJEbMozV0
