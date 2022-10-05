@@ -55,7 +55,7 @@ Level 2: Up to $30,000, 3 approvals
 ### Milestone 1
 
 * **Estimated Duration:** 5 weeks 
-* **Costs:** 7,500 USD
+* **Costs:** 10,000 USD
 
 
 | Number | Deliverable | Specification | 
@@ -71,7 +71,7 @@ Level 2: Up to $30,000, 3 approvals
 ### Milestone 2
 
 * **Estimated Duration:** 3 weeks 
-* **Costs:** 7,500 USD
+* **Costs:** 10,000 USD
 
 
 | Number | Deliverable | Specification | 
@@ -86,7 +86,7 @@ Level 2: Up to $30,000, 3 approvals
 ### Milestone 3
 
 * **Estimated Duration:** 3 weeks 
-* **Costs:** 7,500 USD
+* **Costs:** 10,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -102,21 +102,6 @@ Level 2: Up to $30,000, 3 approvals
 | 3. | Course upload system | Development of course upload system and infra so that instructors can create and upload the course.|
 | 4. | Student rating and review system | Development of review and rating system so that students can review a course.|
 | 5. | API and Infrastructure | We are building our backend using Django due to it's strong ORM support. We will be using DRF(Django Rest Framework) to build the API layer. We will be using **py-substrate-api** library to communicate with Blockchain.|
-
-### Milestone 4
-
-* **Estimated Duration:** 3 weeks 
-* **Costs:** 7,500 USD
-
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-|0.|Courses and Tutorials|We will publish tutorials on substrate ecosystem so that other developers can learn and start building on top of Substrate ecosystem. It will have a positive impact on entire ecosystem. We will invite other educators to publish tutorials on top of our platform.|
 
 ## Additional Information :heavy_plus_sign: 
 
