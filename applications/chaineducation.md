@@ -8,33 +8,18 @@
 
 ### Overview
 
-<TODO: Complete this info>
-
-### Project Details 
-
-#### Web3 education portal
- - Provide free education.
- - Lessons in the form of text.
- - Command Line Interface to execute commands and code. Underhood uses docker so that environment is isolated.
- - Lesson completed tracking.
- - Lessons are categorized as easy, medium, and difficult.
- - NFT for lesson completion. Unlock advanced content and communities.
- - Users get tokens for every lesson completed.
- - Users have their profile on-chain where they can showcase the projects they built. It serves as their resume too.
- - User rating and review system.
-
-
-
-### Ecosystem Fit 
-
-<TODO: Complete this info>
+ChainEducation is a decentralized platform where anyone can upgrade their web3 skills from hands on tutorials.
+They will be able to earn certificates as NFT once they complete a course.
+Platform will also create their profile so that they can showcase it to the community. They can add their projects and achievements too.
+Educators can create their classroom, they can upload as many courses in a classroom.
+Students can get them enrolled in a classroom. For every achievement, they will earn achievement NFT.
+Students can rate and review the courses too.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
-* Muskan Marwah, CEO
-* Aviraj Khare, CTO
-
+* Muskan Marwah, Co-Founder
+* Aviraj Khare, Co-Founder
 
 ### Contact
 * **Contact Name:** Aviraj Khare
@@ -44,7 +29,7 @@
 * **Registered Legal Entity:** Not yet registered
 
 ### Team's experience
-* Muskan Marwah: 6years flying experience as flight attendant.
+* Muskan Marwah: 6years flying experience as flight attendant. Started development in Rust and Solidity.
 * Aviraj Khare: Founder & CTO, ChainEducation, Ex Gojek, worked in web3 space from 2016 to 2019. Created a Decentralized exchange on top of the 0x protocol as a Whitelabel solution. From 2019-21 worked in the Gojek infrastructure team.
 
 ### Team Code Repos
@@ -57,42 +42,86 @@
 
 ## Development Roadmap :nut_and_bolt: 
 
-<TODO: Write here>
+# Overview
 
-* Milestone 0
- - It will have Apache V2 license.
- - Build the frontend using NextJS and serve it via Netlify. Cloudflare would be a layer between Netlify and User.
+## Grant level
+Level 2: Up to $30,000, 3 approvals
 
-* Milestone 1
- - It will have Apache V2 license.
- - Database modelling. We will be using Postgresql as our Database.
- - High level API design.
- - User authentication and authorization.
- - Designing backend APIs for instructors so that they can create a course.
- - Build backend using Django due to it’s powerful ORM. Use DRF(Django Rest Framework) to design it’s APIs.
- - All the videos will be stored inside Amazon S3 with multiple availabilities zones.
- - Design a rating and review system so that students can review a course.
+## Development Roadmap :nut_and_bolt: 
 
+* **Total Estimated Duration:** 14 weeks
+* **Total Costs:** 30,000 USD
 
-* Estimation
+### Milestone 1
+
+* **Estimated Duration:** 5 weeks 
+* **Costs:** 7,500 USD
 
 
-### Overview
-* **Total Estimated Duration:** <TODO: TBD>
-* **Full-time equivalent (FTE):** <TODO: TBD>
-* **Total Costs:** <TODO: TBD>
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
+| 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute tokens to user once they unlock and achievements. Also, they will be responsible to mint achievement, milestone and course completion NFTs. Smart contracts will also store key attributes of user profile. |
 
-### Milestone 1 <TODO: TBD>
-* **Estimated Duration:** <TODO: TBD>
-* **Costs:** <TODO: TBD>
+
+### Milestone 2
+
+* **Estimated Duration:** 3 weeks 
+* **Costs:** 7,500 USD
+
+
+| Number | Deliverable | Specification | 
+| ------------- | ------------- | ------------- |
+| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
+| 0. | UI development | We will be using NextJS to develop frontend of our educational platform. It will be served via Netlify. Please check mockups here: https://www.figma.com/file/1YtoEah6gT56bgKKDw66bR/Untitled?node-id=0%3A1 |
+
+### Milestone 3
+
+* **Estimated Duration:** 3 weeks 
+* **Costs:** 7,500 USD
+
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 0a. | License | Apache 2.0 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how engineers use the ChainJS library. 
-| 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
-| 0d. | Article/Tutorial | We will write an article or tutorial that explains the work done as part of the grant. 
-| 1. | <TODO: TBD> |
+| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
+| 0. | Database Modelling | Database modelling of all the first class entities.|
+| 1. | API Design | High level API design.|
+| 2. | User Authentication and Authorization | Building auth for the backend.|
+| 3. | Course upload system | Development of course upload system and infra so that instructors can create and upload the course.|
+| 4. | Student rating and review system | Development of review and rating system so that students can review a course.|
+| 5. | API and Infrastructure | We are building our backend using Django due to it's strong ORM support. We will be using DRF(Django Rest Framework) to build the API layer. We will be using **py-substrate-api** library to communicate with Blockchain.|
 
-## Future Plans
-Once we have ChainJS, our intention is to deploy our flagship ORE ID product to Polkadot & Kusama. ORE ID is a service that helps enterprises migrate their user base to blockchains at scale. ORE ID provides four major benefits to businesses on Polkadot:
+- High level API design.
+ - User authentication and authorization.
+ - Designing backend APIs for instructors so that they can create a course.
+
+### Milestone 4
+
+* **Estimated Duration:** 3 weeks 
+* **Costs:** 7,500 USD
+
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
+|0.|Courses and Tutorials|We will publish tutorials on substrate ecosystem so that other developers can learn and start building on top of Substrate ecosystem. It will have a positive impact on entire ecosystem. We will invite other educators to publish tutorials on top of our platform.|
+
+## Additional Information :heavy_plus_sign: 
+
+* We're currently implementing it in substrate ecosystem.
