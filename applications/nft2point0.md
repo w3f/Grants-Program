@@ -42,7 +42,7 @@ Level 2: Up to $30,000, 3 approvals
 ### Milestone 1
 
 * **Estimated Duration:** 4 weeks 
-* **Costs:** 7,500 USD
+* **Costs:** 10,000 USD
 
 
 | Number | Deliverable | Specification | 
@@ -58,7 +58,7 @@ Level 2: Up to $30,000, 3 approvals
 ### Milestone 2
 
 * **Estimated Duration:** 4 weeks 
-* **Costs:** 7,500 USD
+* **Costs:** 10,000 USD
 
 
 | Number | Deliverable | Specification | 
@@ -74,7 +74,7 @@ Level 2: Up to $30,000, 3 approvals
 ### Milestone 3
 
 * **Estimated Duration:** 8 weeks 
-* **Costs:** 7,500 USD
+* **Costs:** 10,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -86,20 +86,6 @@ Level 2: Up to $30,000, 3 approvals
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
 | 0. | API and Infrastructure | We need to develop our backend and infrastructure so that we can keep a track of Interactive NFTs minted along with essential functionalities. We will be having multi-tenant microservice architecture. Our microservices are going to be coded on **Rust**. We will use open source libraries, if library is not available, then we will create a library and will open source it. |
 
-### Milestone 4
-
-* **Estimated Duration:** 6 weeks 
-* **Costs:** 7,500 USD
-
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-|0.|Video Tutorials|We will publish tutorials on YouTube that would teach on how to best use our infrastructure. All the videos would NEVER contain any ads.|
 
 ## Additional Information :heavy_plus_sign: 
 
