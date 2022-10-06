@@ -178,8 +178,8 @@ We have started to develop and adapt the platform to a mobile application for iO
 | 0a. | License | GPLv3
 | 0b. | Documentation | We will provide documentation of the code and a tutorial explaining how a user can make use of the framework and create their own local application in Next.js and React. |
 | 0c. | Testing Guide | The main features will be fully functional and tested to ensure functionality and robustness. In the guide, we will describe how to run an app. |
-| 1. | Performance Enhancements | We will create performance enhancements to ... (Please list the functionality that will be implemented for the first milestone) |  
-| 2. | Add UI functionality | We will add user interface functionality to page layers |  
+| 1. | Performance Enhancements | We will create performance improvements for data storage. Subdeeply uses IPFS as its data storage |  
+| 2. | Add UI functionality | We will add user interface functionality to page layers (The user interface layer and components function normally and the response time is acceptable under load) |  
 | 3. | API integration | We will add APIs to the platform, create internal APIs for the operation and monitoring of the platform, and third-party APIs to deploy functions such as user login, authentication, etc. |  
 
 ### Milestone 3 Web / Desktop App Develompment - Back-end
@@ -193,7 +193,7 @@ We have started to develop and adapt the platform to a mobile application for iO
 | 0a. | License | MIT
 | 0b. | Documentation | This milestone is focused on the logic area, server and databases, we will add getting started guides for the frameworks used (Python, Django, MongoDB, and Ngix). |
 | 0c. | Testing Guide | N/A |
-| 1. | Add UI functionality | We will add user interface functionality to page layers |  
+| 1. | Add UI functionality | We will add user interface functionality to page layers (The user interface layer and components function normally and the response time is acceptable under load) |  
 | 2. | API integration | We will add APIs to the platform, internal apis for the operation and monitoring of the platform, and third-party apis to deploy functions such as user login, authentication, etc. |
 | 3. | Deployment | Deploy the use of the platform on cloud servers. |
 
