@@ -30,7 +30,6 @@ The deliverables listed below are just an initial draft, assuming the project us
 | 0d. | Article | High-level document summarizing the results of the verification efforts as well as a final presentation for a broader audience that summarizes the key take-aways from the verification. |
 | 1 | Proof | Models and specs in TLA+ that adhere to protocol implementations with reasonable abstraction gaps. As a stepping stone, the block production mechanism could be instantiated with BABE. | 
 | 2 | Proof | Formalize the validity, finality and liveness of GRANDPA as temporal properties in TLA+.  | 
-| 3 | Engagements | Engage with the Web3 research team via regular meetings to refine the models and specs. For eg., clarify any assume/ rely reasoning made in the protocols. 
- | 
+| 3 | Engagements | Engage with the Web3 research team via regular meetings to refine the models and specs. For eg., clarify any assume/ rely reasoning made in the protocols.| 
 
 
