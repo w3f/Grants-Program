@@ -95,7 +95,7 @@ In this milestone the focus is on creating a new sdk to send xcm messages betwee
 | 0a. | License | MIT |
 | 0b. | Documentation | We will provide both **english** and **spanish** versions of the documentation. This will cover step by step how to configure the environment and send xcm messages. |
 | 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
-| 1. | Create Messages Types | Definition of all messages types that can be sent via xcm supported by Polkadot API |  
+| 1. | Create Messages Types | Definition of all messages types that can be sent via xcm supported by Polkadot API. We are gonna support all the types listed on out [research document](https://github.com/blockcoders/xcm-grant-research). |  
 | 2. | Send XCM messages | Creation of an interface to send XCM messages using the types defined in (1) and the Polkadot API |  
 | 3. | Testing | Achieve a testing coverage of the functionalities above 90% |
 
