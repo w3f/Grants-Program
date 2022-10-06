@@ -375,8 +375,8 @@ For each milestone,
 | 0b.    | Documentation | Alongside the Informal team, we will improve documentation of how the IBC protocol implemented in Rust can be utilized by developers. |
 | 0c.    | Testing Guide | We will include unit tests to cover the basic logic of the interaction on testnet.                                                    |
 | 1a.    | Development   | We will implement several Ibc-rs refactors and general library updates to make ibc-rs production ready.                               |
-| 1b.    | Development   | We have ongoing works updating bug fixes and changes to the library which can be seen in the links section.                           |
-| 2.     | Testing       | Test ibc-rs within Pallet IBC integration testing as well as compatible functionality with the Hyperspace relayer.                    |
+| 1b.    | Development   | Allignment with the GO implementation (which is the "gold standard" implementation of IBC, targetting ibc-go v4. We have ongoing works updating bug fixes and changes to the library which can be seen in the links section.                           |
+| 2.     | Testing       | Test ibc-rs within Pallet IBC integration testing as well as compatible functionality with the Hyperspace relayer. Integration testing tools for assessing continuous correctness including: a) integration with basecoin-rs (test against a Tendermint-based, non-Cosmos algorithm) b) integration with Hermes and several chain binaries via ibc-test.                   |
 
 ### Milestone 4: Upgrading to BEEFY
 
@@ -406,14 +406,15 @@ Please include here
 We have been trying to enter the substrate builders program to gain some assistance and technical help for the
 development of some of the components of this bridge and future planned bridges; however, we haven’t had any luck so far.
 
-The components used within the KSM <> DOT bridge will be shared as the underlying infrastructure for the bridges between
+It is important to note that the components used within the KSM <> DOT bridge will be shared as the underlying infrastructure for the bridges between
 Kusama/Polkadot <> Cosmos and Kusama/Polkadot <> NEAR. Trustless bridging via the IBC protocol serves as the cornerstone
 of bridging Kusama to IBC-enabled chains. Composable is continuing to contribute upstream, further pushing the
 boundaries of cryptographic research and opening up endless possibilities for the Dotama ecosystem as we work in line
 with our cross-chain/cross-layer interoperability goals.
 
 In the future, we plan to switch to ultra-light clients for cheaper costs of updating light client state and also
-utilize Verkle tries for smaller size message commitment proofs to unlock higher bandwidth messaging.
+utilize Verkle tries for smaller size message commitment proofs to unlock higher bandwidth messaging. 
+The present grant proposal could limit itself to interchain accounts. Further maintenance could be subject to other grants or initiatives.
 Ecosystems such as Cosmos, NEAR, Polygon and other Ethereum scaling ecosystems that could greatly benefit from IBC and
 already have the required infrastructure needed to support a light client. In the future, we plan to build within such
 ecosystems, ultimately working towards a future where all light client-enabled blockchains are interconnected through
