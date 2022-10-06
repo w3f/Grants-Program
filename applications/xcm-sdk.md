@@ -114,8 +114,9 @@ This milestone is entirely about adding support for pending xcm messages not cov
 | 0b. | Documentation | We will provide both **english** and **spanish** versions of the documentation. This will cover step by step how to send all kind of xcm messages. |
 | 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
 | 0d. | Article | We will post an article on Twitter and Reddit for both english and spanish speakers communities.
-| 1. | Add support for new messages | Add support to send XCM messages using a format that it's not defined on the Polkadot API. Using generics the send function allows the body to be defined by the user. |
-| 2. | Testing | Achieve a testing coverage of the functionalities above 90% |
+| 1. | CLI tool | Build an interactive command line tool to generate and send XCM message. |
+| 2. | Add support for new messages | Add support to send XCM messages using a format that it's not defined on the Polkadot API. Using generics the send function allows the body to be defined by the user. |
+| 3. | Testing | Achieve a testing coverage of the functionalities above 90% |
 
 ## Future Plans
 
