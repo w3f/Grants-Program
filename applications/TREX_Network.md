@@ -7,7 +7,7 @@
 
 ## Project Overview :page_facing_up:
 
-TREX is a project to develop a protocol and network to support permissionless timed-release encryption in Web3. It is a decentralized network that consists of validators, archivers, off-chain workers in trusted execution environment (TEE), and other essential substrate nodes. This project is developed based on the Substrate framework as a parachain of the Polkadot ecosystem. We aim at institutional and business clients who need blockchain technology to enhance their data security and build [decentralized reputations](https://newsletter.thedefiant.io/p/-decentralized-reputation-is-about-a8b) on Web3.
+TREX is a project to develop a protocol and network to support permissionless timed-release encryption in Web3. It is a decentralized network that consists of validators, archivers, off-chain workers in a trusted execution environment (TEE), and other essential substrate nodes. This project is developed based on the Substrate framework as a parachain of the Polkadot ecosystem. We aim at institutional and business clients who need blockchain technology to enhance their data security and build [decentralized reputations](https://newsletter.thedefiant.io/p/-decentralized-reputation-is-about-a8b) on Web3.
 
 ### Overview
 
@@ -17,7 +17,7 @@ the accurate release of data and procedures as a consensus-based system.
 
 The dTRE technology is enabled by combining the latest confidential computing hardware and blockchain technology. 
 The data is encrypted with a symmetric encryption scheme and sent to random trusted off-chain workers for release. No third party has any early access to the encrypted contents.
-The attacker must defeat security hardware to access encrypted data with unknown values. Therefore, we can build a decentralized reputation on the Polkadot-based blockchain ecosystem and security hardware backed by semiconductor giants (e. g. Intel, AMD and ARM). The dTRE technology provides content creators with a critical tool to monetize their reputation.
+The attacker must defeat security hardware to access encrypted data with unknown values. Therefore, we can build a decentralized reputation on the Polkadot-based blockchain ecosystem and security hardware backed by semiconductor giants (e. g. Intel, AMD, and ARM). The dTRE technology provides content creators with a critical tool to monetize their reputation.
 
 The emerging Web3 technology and Polkadot ecosystems could enable enormous cross-chain applications which need time-sensitive and time-critical encryption of data and procedures, 
 including DAO governance, DeFi applications, decentralized prediction market, and strategy market. The data and procedures must be confidential in many scenarios until release time. TREX and its blockchain application programming interface (API) could confidently empower the TRE applications on Web 3. With a blockchain-backed reputation system, it could terminate cheap talks and scams on today’s social networks and create new marketplaces for trading time-sensitive confidential data and procedures.
@@ -38,17 +38,23 @@ Besides the regular validator nodes, as in any other substrate-based blockchain 
 
 ![TREX arch](https://sat02pap001files.storage.live.com/y4mCxh3v92-Q3SeR5Le00nfK2p3UqwRvTLNymJrm1VPHO6pyaC3h4g6IjJ3WeSznwK4llcxYDwVjwTuNSYcG31wx7gbuFPcVA8QZL2nACTkJ4SylngdwUusZKr95ThUv7jCwUaqIIXcCKgYKsmoIRrL-sb3Db3sq-hwkTX-CRxhluIuCYcSh0mMzHtpsLG-AySK?width=947&height=685&cropmode=none)
 
-As shown in the above figure, a client machine can encrypt its data with a symmetric key and send the data to the current block as a part of extrinsic. To unlock the encrypted data in the future, the client machine must shield the key in use and send the shielded key to the off-chain workers inside the TEE. The client needs to get remote attestation before trusting the off-chain worker to protect the key from third-party accesses. The client can use [Integritee Network](https://integritee.network) for a decentralized attestation service, or it may use some cloud-based remote attestation services (e. g. [Azure Confidential Computing Service](https://azure.microsoft.com/en-us/solutions/confidential-compute/)). [Integritee Network](https://integritee.network) is a successful pioneer developed on the Polkadot ecosystem and provides a confidential computing platform and infrastructure solutions on Web3.
+As shown in the above figure, a client machine can encrypt its data with a symmetric key and send the data to the current block as a part of extrinsic. The client machine must shield the key in use and send the shielded key to the off-chain workers inside the TEE to unlock the encrypted data in the future. The client needs to get remote attestation before trusting the off-chain worker to protect the key from third-party accesses. The client can use a decentralized attestation service, or it may use some cloud-based remote attestation services (e. g. [Azure Confidential Computing Service](https://azure.microsoft.com/en-us/solutions/confidential-compute/)).
 
-Inside the protected enclave, a separated and encrypted region for code and data, the key for releasing the on-chain data is inserted into a priority queue based on its release time. Once the release time is approaching its nearest block, the off-chain worker would release the key from the TEE and expose it to the public. Once the key is released, the block index engine can discover the early encrypted data and decrypt it so it can be accessed publicly. The off-chain worker cannot manipulate the release schedule of keys since decentralized services attested the executable, and it has no access to the shielded data in use.
+Inside the protected enclave, a separated and encrypted region for code and data, the key for releasing the on-chain data is inserted into a priority queue based on its release time. And the off-chain worker has no access to the shielded data in use. Once the release time is approaching its nearest block, the off-chain worker would release the key from the TEE and expose it to the public. Once the key is released, the block index engine can discover the early encrypted data and decrypt it so it can be accessed publicly. 
 
-- TREX token economy
+- Enhanced security in timed-release encryption
+
+The scheduled release is only constructed from the time-lapse inside the enclave without using any unsecured system clock since malicious workers may manipulate the system time to retrieve keys before the schedule. Once the enclave starts, it will acquire current time from the trusted time service with [Intel SGX SDK](https://github.com/intel/linux-sgx/blob/1115c195cd60d5ab2b80c12d07e21663e5aa8030/sdk/tae_service/tae_service.cpp). Furthermore, the latest Xeon scalable processors that support 2nd-gen SGX may use "RDTSC" instruction to calculate relative time within the enclave. A malicious worker may suspend the execution for an arbitrary duration or "rewind" the release process, but it only delays or duplicate the release of encrypted data. An off-chain worker gains nothing from doing that (See TREX tokenomics for more details). As a result, the off-chain worker cannot manipulate the release schedule of keys with an attested executable.
+
+Since there could be security loopholes in Intel SGX or any other similar system, the client cannot rely on a single worker to protect their data from early release. Therefore, key splitting is an effective method for distributing a key to multiple off-chain workers. Furthermore, if a malfunctioned worker may lose a part of a key, the client can send multiple copies of a piece to different workers to reduce the chance of missing parts. Eventually, all parts of a key will be released to the blockchain. Then a block index engine may reconstruct the original key from a collection of pieces and use the key to unlock early data.
+
+- TREX tokenomics
 
 The TREX network comprises different entities, including third-party developers, validators, archivers, and users. A simple example of core functionality in the TREX network.
 
 ![Workflow](https://sat02pap001files.storage.live.com/y4m-6fn2EHbIEctqPi4P_8PI0jc8B0HaImf_-065KvTi7GH_A9LUzkFnD5gfszLtS9GQujRDwQanrz_WihcMZvj8s6AhATo0xDIY_hQlDJbUdVNgT_qMJaE-N1k5RC5vEBXStgqTOypL9ql-FbjjDXSiDtNBqBeimm_7CBMsqqPHegLLgnu9mH_uCHHGEPhh6aR?width=662&height=586&cropmode=none)
 
-In this image, creators provide timed-release encrypted data or procedures and send them to the blockchain; and to be released in a future event. For example, an analyst can encrypt its suggested actions toward future events and send them to the TREX network. We call them creators, who create strategies and predictions based on their analysis or other AI algorithms. The creator could be a person or an AI bot. It does not matter since all of his mentions about future events could be recorded on our blockchain, thus, becoming immutable. The encrypted data would be decrypted and released in the future after the event occurs (e. g. Market closed and the final price of an asset was revealed). Since the on-chain data is immutable, the creators cannot delete their wrong suggestions or predictions. All of their previous data would generate a reputation for themselves.
+In this image, creators provide timed-release encrypted data or procedures and send them to the blockchain; and to be released in a future event. For example, an analyst can encrypt its suggested actions toward future events and send them to the TREX network. We call them creators, who create strategies and predictions based on their analysis or other AI algorithms. The creator could be a person or an AI bot. It does not matter since all of his mentions about future events could be recorded on our blockchain, thus, becoming immutable. The encrypted data would be decrypted and released in the future after the event occurs (e. g. Market closed and revealed the final price of an asset). Since the on-chain data is immutable, the creators cannot delete their wrong suggestions or predictions. All of their previous data would generate a reputation for themselves.
 
 Third-party on-chain data services, which disassemble the block data into extrinsic and analyze encrypted forecasts or strategies, could develop ranks or recommendations based on specific metrics (e. g., return of investment). Furthermore, the end users may get early access to a creator's data by paying them a fee. Thus, end users can use the predictions and investment strategies created by the creators for their interests. Those third-party services essentially are archiver nodes hosting a block index engine to decrypt on-chain data and put it into a PostgreSQL database. In addition, they may customize their business logic to their specific service and provide API interfaces to end users and their front-end applications.
 
@@ -72,7 +78,7 @@ If the TOCW fails in case of system failure, the key in such an off-chain worker
 
 The off-chain worker may block the key to unlock some incorrect information from release. After the pre-determined release time, if the key does not show up on-chain. The keyholder may receive a penalty. 
 To enhance the network security, we may use a safelist (voted by all nodes) for keyholders to put a key on the chain. If a keyholder fails to release a key frequently, it may lose its privilege.
-On the other side, if a client has too much dead TRE data, of which the key is lost forever, the archiver, as a block data index service, may label this client's account as a potential cheater since it can always send a duplicate key to unlock the previous data after the TOCW failure. If the creator doesn’t want to do that, it implies that they want to hide some information damaging their reputation.
+On the other side, if a client has too much dead TRE data, of which the key is lost forever, the archiver, as a block data index service, may label this client's account as a potential cheater. Because it can always send a duplicate key to unlock the previous data after the TOCW failure. If the creator doesn’t want to do that, it implies that they want to hide some information damaging their reputation.
 
 
 - An overview of the technology stack to be used
@@ -107,7 +113,7 @@ In the current stage of TREX development, we are working on the following softwa
   3. The TREX API library to submit dTRE data as a form of Substrate extrinsic to TREX nodes ([GitHub repo](https://github.com/NexTokenTech/trex-subxt));
   4. The infra-as-code (IaC) TerraForm script to deploy the TREX test-net and backend services ([GitHub repo](https://github.com/NexTokenTech/trex-test-net));
 
-Since we are working on a new version of TREX node software using confidential computing technology, we need to rewrite our consensus code and design the off-chain worker code for keyholding. The first version of the demonstration of dTRE will be built on top of [Integritee Network](https://integritee.network) as a side-chain since it has tested its implementation using off-chain workers within the TEE. However, we will have to develop some specific pallets to support our tokenomics. Thus, our network cannot be a side chain in its final formation. Unlike the Integritee Network, we are not supporting general confidential computing but focus on dTRE technology built on top of confidential computing hardware.
+Since we are working on a new version of TREX node software using confidential computing technology, we need to rewrite our consensus code and design the off-chain worker code for keyholding. The first version of the demonstration of dTRE will be built as a side-chain in an existing decentralized network since it has tested its implementation using off-chain workers within the TEE. However, we will have to develop some specific pallets to support our tokenomics. Thus, our network cannot be a side chain in its final formation. Unlike other networks using confidential computing technology, we are not supporting general computing in TEEs but focus on dTRE technology built on top of confidential computing hardware.
 
 - What your project is _not_ or will _not_ provide or implement
 
@@ -146,8 +152,6 @@ Essentially, the world needs [decentralized reputations](https://newsletter.thed
 No, according to our best knowledge, we are creating all new decentralized applications in the Web3 domain. We don't see similar projects in blockchains providing decentralized timed-release encryption (dTRE) services.
 We believe that the dTRE technology will radically change many existing centralized applications since it builds up a trustless and permissionless mechanism to send a message to the future and create markets for early access or subscription.
 
-However, there are some prior crypto projects which were trying to build decentralized strategy markets (e. g. [Tycoon crypto trading [platform](https://tycoon.io)). However, their product does not have dTRE technology, and their service is centralized, so their blockchain & token is only used for fund settlements and governance. Their project is not in the Substrate / Polkadot / Kusama ecosystem.
-
 The [Integritee Network](https://integritee.network) pioneers confidential computing in Web3 as a project in the Substrate / Polkadot / Kusama ecosystem. It provides remote attestation services for us to build a fully decentralized tech stack. Although the TREX network uses the same type of confidential computing technology as theirs, the TREX network anchors on a different kind of service, working with another category of clients. We will eventually grow into two different types of projects in the same ecosystem.
 
 ## Team :busts_in_silhouette:
@@ -155,7 +159,7 @@ The [Integritee Network](https://integritee.network) pioneers confidential compu
 ### Team members
 
 - Leo Yu (executive, finance and product)
-- Fanghao Yang (research, engineering and technology development)
+- Fanghao Yang (research, engineering, and technology development)
 - Oscar Wang (operation and human resource)
 - Xingqiu Yuan (chief scientist)
 - Jake Jian (consultant, strategy and data science)
@@ -223,12 +227,13 @@ Tested and successfully submitted dTRE data to the TREX blockchain node.
 
 ## Development Roadmap :nut_and_bolt:
 
-In the current stage, our first milestone is to deliver an early demonstration using confidential computing hardware for decentralized timed-release encryption. The first demo will be developed on Integritee Network to demonstrate the function of dTRE on off-chain workers in TEE (TOCW)s. We request a level-1 grant for the early demonstration and will work on the next level in the following application. We have accumulated solid experience in development with the Substrate framework, so we believe that we can implement our network at a fast pace.
+In the current stage, our first milestone is to deliver an early demonstration using confidential computing hardware for decentralized timed-release encryption. We will develop our first demo as a side-chain in a decentralized network that supports off-chain workers in TEEs. We request a level-1 grant for the early demonstration and will work on the next level in the following application. We have accumulated solid experience in development with the Substrate framework, so we believe that we can implement our network at a fast pace.
 
-At the next level, our second milestone is integrating the TOCW with our network under our particular consensus and mechanism. Finally, our third milestone is the implementation of XCMP for cross-chain applications.
+At the next level, our second milestone is integrating the TOCW with our network under our particular consensus and mechanism. We will also implement key splitting as a third milestone to enhance the security and reliability of our system at the next level.
+Finally, our fourth milestone is the implementation of XCMP for cross-chain applications.
 
 
-### Milestone 1 — Implement TREX network as a side-chain of Integritee Network
+### Milestone 1 — Implement TREX network as a side-chain
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
@@ -241,12 +246,12 @@ At the next level, our second milestone is integrating the TOCW with our network
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an online blog that explains how this module works as described in the following figure.
-| 1. | TREX off-chain worker | A TREX off-chain worker in TEE so that client can safely send encrypted data to the network and send the shielded key to the off-chain worker. The off-chain worker is remotely attested by the Integritee Network so that the worker node cannot manipulate the release of the encrypted data.
+| 1. | TREX off-chain worker | A TREX off-chain worker in TEE so that client can safely send encrypted data to the network and send the shielded key to the off-chain worker. The off-chain worker is remotely attested by a decentralized network so that the worker node cannot manipulate the release of the encrypted data.
 | 2. | TREX block index engine | A TREX block index engine to unlock the early encrypted on-chain data based on recently released keys from TEE off-chain workers and archive the released data into a PostgreSQL database for efficient data access.
 
 ## Future Plans
 In the short term, our team is working on landing the first dTRE infrastructure on the Web3 frontier and promoting the technology in the Polkadot/Substrate ecosystem.
-- As long as more funding and resource are allocated, the latest confidential computing technology (e. g. [Intel TDX](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-trust-domain-extensions.html) ) will be supported and integrated into the TREX node.
+- As long as more funding and resource are allocated, the latest confidential computing technology (e. g. [Intel TDX](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-trust-domain-extensions.html) ) will be supported and integrated into the TREX node. As an active open-source project, TREX will follow up on trends and development in confidential computing hardware and integrate solutions from different chip makers to support various hardware. Since only the off-chain workers use the TEE, many different versions of off-chain workers may co-exist on our network as long as it fits our remote attestation policy.
 - In the long run, we focus on expanding the cross-chain applications and interoperability with the Polkadot ecosystem. We are working on many software tools, deployable containers, and API libraries for dApp developers using dTRE technology in their applications. While more and more users and dApp devs join the TREX network, we will design the sharding solution to reduce the data insertion fee on the layer-1 network so that dTRE applications can be more affordable.
 
 
