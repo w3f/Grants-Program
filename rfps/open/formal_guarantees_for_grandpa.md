@@ -1,4 +1,4 @@
-# Formal Guarantees for GRANDPA Finality Gadget - WIP 
+# Formal Guarantees for GRANDPA Finality Gadget
 * **Status:** Open
 * **Proposer:** [Bhargav Bhatt](https://github.com/bhargavbh),  [David Hawig](https://github.com/Noc2)
 
