@@ -35,7 +35,7 @@ Such a platform would allow game theory incentives and smart contract based mark
 
 Our team has years of research and development on medical data along with senior blockchain developers working with IT capable PhD accredited medical doctor(s). Data collection extraction and real time scaling is also part of Dr S Marvasti's and Dr Mahdi Ghandi's resume .
 Furthermore, Dr Marvasti has multiple years experience working with blockchain technologies including ZKP both for cross border fintech and for data analysis through AWS Neptune and AWS Aurora API based databases.
-This is a phased plan with part of the design to be implemented in this first phase, which each phase being usable .
+This is a phased plan with part of the design to be implemented in this first phase, with each phase being usable.
 in summary benefits of blockchain for this data includes
 * Decentralised: Data ownership is not lost to any central authority and access is controlled through secure  NFT like smart contract
 * Incentive to participate: various mechanisms  could be developed as smart tokens or native token of the parachain linked to DOT.
