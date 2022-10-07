@@ -3,6 +3,7 @@
 * **Project Name:** ChainEducation
 * **Team Name:** ChainEducation Team
 * **Payment Address:** Bitcoin Address: bc1qtr9993ch6zlr29j5c22zzax57h62x5gj24wtxk
+* **Level:** 2
 
 ## Project Overview :page_facing_up: 
 
