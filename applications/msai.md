@@ -218,13 +218,18 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - Development of backend
 Summary 
 - 1- Basic Blockchain parachain build using current available Pallets
+
   -  API design specifications (OpenAPI) combined with Substrate features based on Solid Pod encryption api Linked with smart contract facility
-  - Integration of Identity validation mechanism : Use pallet-identity or other method of assigning identity signers that provide added value to NFT generated from users health data (As fake data has no value)
-  2- Configuration of Subtrate Off chain worker storage with the extra features needed for secure healthcare
+  - Integration of Identity validation mechanism: Use pallet-identity or other method of assigning identity signers that provide added value to NFT generated from users' health data (As fake data has no value)
+ 
+2- Configuration of Substrate Off-chain worker storage with the extra features needed for secure healthcare
+  
   - Documented encryption API
-  - Consensus based on hash of local storage to dedicated storage nodes (similar to SOlid Pod)
-  - NFT smart contract default template-- Template contract that will be deployed by default and interfaced with the Off chain worker
-  3- Testing on Kusama 
+  - Consensus-based on hash of local storage to dedicated storage nodes (similar to Solid Pod)
+  - NFT smart contract default template-- Template contract that will be deployed by default and interfaced with the Off-chain worker
+  
+3- Testing on Kusama 
+
   - Development of example scripts for interaction with new parachain based on docker files 
 
 ### Overview
