@@ -19,7 +19,7 @@ We envision the project to prove both safety and liveness properties of GRANDPA 
 
 The structure of the grant and the milestones depends highly on the project itself. It’s therefore up to the applying team to come up with a milestone and delivery structure. 
 
-The deliverables listed below are just an initial draft, assuming the project uses the approach of Modelcheking in TLA+ and can be changed. 
+The deliverables listed below are just an initial draft, assuming the project uses the approach of Modelcheking in TLA+ and can be changed. Proof of correctness can be delivered in stages. Verification of safety properties is mandatory and liveness properties is an optional objective.
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
@@ -29,6 +29,5 @@ The deliverables listed below are just an initial draft, assuming the project us
 | 0d. | Article | High-level document summarizing the results of the verification efforts as well as a final presentation for a broader audience that summarizes the key take-aways. |
 | 1 | Proof Artifact| Models and specs in TLA+ that adhere to protocol implementations with reasonable abstraction gaps. As a stepping stone, the block production mechanism could be instantiated with BABE. | 
 | 2 | Proof Artifact| Formalize the validity, finality and liveness of GRANDPA as temporal properties in TLA+.  | 
-| 3 | Proof Artifact | Proof of correctness can be delivered in stages. Verification of safety properties is mandatory and liveness properties is an optional objective. |
-| 4 | Engagements | Engage with the Web3 research team via regular meetings to refine the models and specs. For eg., clarify any assume/ rely reasoning made in the protocols. Engage with Web3 team to determine if detected bugs's are spurious.|
+| 3 | Engagements | Engage with the Web3 research team via regular meetings to refine the models and specs. For eg., clarify any assume/ rely reasoning made in the protocols. Engage with Web3 team to determine if detected bugs's are spurious.|
 
