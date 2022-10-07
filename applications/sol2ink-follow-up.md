@@ -227,10 +227,10 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0b. | Documentation | We will enhance both the inline documentation as well as the website with guides to reflect new features implemented in this milestone |
 | 0c. | Testing and Testing guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. Documentation will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Website with guides | We will enhance the existing guides to reflect new features implemented in this milestone |
+| 1. | Website with guides | We will enhance the existing guides to reflect new features implemented in this milestone; The website with guides is something like an enhanced documentation, the inline documentation just describes the functions of the program, the guides go deeper into how it works, and it also contains a tutorial for usage of Sol2Ink |
 | 2. | Split contract into traits | Currently all logic and storage is in one contract file. This upgrade will generate traits for each contract that the contract is using, splitting logic and storage into separate traits. This will also nicely handle inheritance of Solidity smart contracts |
 | 3. | Sol2Ink transpiler update | We will update the transpiler to deal with code which it currently does not support or parses incorrectly |
-| 4. | Library parsing | We will implement the parser for Solidity libraries |
+| 4. | Library parsing | We will implement the parser for Solidity libraries; currently Sol2Ink only looks for definition of a contract or an interface, since libraries must be handled in a different way, meaning that there is no problem in parsing of Solidity code of a library, but the output code of a Solidity library must be handled in a different way, which is the goal of this deliverable |
 | 5. | Handling dependencies and generalization | This will be implemented via traits |
 | 6. | Multi-file project parsing | This will be implemented via traits |
 
