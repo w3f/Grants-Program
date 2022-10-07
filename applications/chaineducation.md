@@ -66,7 +66,7 @@ Level 2: Up to $30,000, 3 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute tokens to user once they unlock and achievements. Also, they will be responsible to mint achievement, milestone and course completion NFTs. Smart contracts will also store key attributes of user profile. |
+| 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute tokens to user once they unlock and achievements. Also, they will be responsible to mint achievement, milestone and course completion NFTs. Smart contracts will also store key attributes of user profile. We will be using **erc20** token: https://github.com/paritytech/ink/blob/master/examples/erc20/lib.rs and **erc721** token to mint smart contract: https://github.com/paritytech/ink/blob/master/examples/erc721/lib.rs. Two more smart contract would be required, one to store user information and another one to send achievments NFT who complete the course. |
 
 
 ### Milestone 2
@@ -82,7 +82,7 @@ Level 2: Up to $30,000, 3 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| 0. | UI development | We will be using NextJS to develop frontend of our educational platform. It will be served via Netlify. Please check mockups here: https://www.figma.com/file/1YtoEah6gT56bgKKDw66bR/Untitled?node-id=0%3A1 |
+| 0. | UI development | We will be using **NextJS** which is on top of **React** to develop frontend of our educational platform. It will be served via Netlify. Please check mockups here: https://www.figma.com/file/1YtoEah6gT56bgKKDw66bR/Untitled?node-id=0%3A1 |
 
 ### Milestone 3
 
@@ -102,7 +102,7 @@ Level 2: Up to $30,000, 3 approvals
 | 2. | User Authentication and Authorization | Building auth for the backend.|
 | 3. | Course upload system | Development of course upload system and infra so that instructors can create and upload the course.|
 | 4. | Student rating and review system | Development of review and rating system so that students can review a course.|
-| 5. | API and Infrastructure | We are building our backend using Django due to it's strong ORM support. We will be using DRF(Django Rest Framework) to build the API layer. We will be using **py-substrate-api** library to communicate with Blockchain.|
+| 5. | API and Infrastructure | We are building our backend using Django which is written in **Python** due to it's strong ORM support. We will be using DRF(Django Rest Framework) to build the API layer. We will be using **py-substrate-api** library to communicate with Blockchain.|
 
 ## Additional Information :heavy_plus_sign: 
 
