@@ -32,17 +32,17 @@ Aviraj Khare: Founder & CTO, nft2point0, Ex Gojek
 Worked in web3 space from 2016 to 2019. Created a Decentralized exchange on top of the 0x protocol as a Whitelabel solution. From 2019-21 worked in the Gojek infrastructure team. Currently working as Founder & CTO in nft2point0.
 
 ## Grant level
-Level 2: Up to $30,000, 3 approvals
+Level 2: Up to $22,500, 3 approvals
 
 ## Development Roadmap :nut_and_bolt: 
 
 * **Total Estimated Duration:** 22 weeks
-* **Total Costs:** 30,000 USD
+* **Total Costs:** 22,500 USD
 
 ### Milestone 1
 
 * **Estimated Duration:** 4 weeks 
-* **Costs:** 10,000 USD
+* **Costs:** 7,500 USD
 
 
 | Number | Deliverable | Specification | 
@@ -58,7 +58,7 @@ Level 2: Up to $30,000, 3 approvals
 ### Milestone 2
 
 * **Estimated Duration:** 4 weeks 
-* **Costs:** 10,000 USD
+* **Costs:** 7,500 USD
 
 
 | Number | Deliverable | Specification | 
@@ -74,7 +74,7 @@ Level 2: Up to $30,000, 3 approvals
 ### Milestone 3
 
 * **Estimated Duration:** 8 weeks 
-* **Costs:** 10,000 USD
+* **Costs:** 7,500 USD
 
 
 | Number | Deliverable | Specification |
