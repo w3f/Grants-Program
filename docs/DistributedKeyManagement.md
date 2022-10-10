@@ -112,7 +112,7 @@ As part of this project, I also released a seedloop manager as an open source NP
 | 0d. | Docker | This milestone does not involve explicit software, so no dockerfiles are needed for testing. |
 | 0e. | Article | We will publish an article that summarizes the key findings of our distributed key management research for developers (who may not be interested in the nitty gritty technical details or security models). |
 | 1. | Formal Investigation | The research period will be spent investigating the following questions about the kryptik key management system. What is the threat model? How can keys be synced across devices? How can the system include more than two shareholders? What is the ideal number of shareholders? Is there any application to social recovery? By the end of this period, I will have organized a sequence of proofs and thoughts that can be shaped into a paper. Each question and associated discovery will be documented via regular blog posts.|
-| 2. | Research Paper | This paper will include an in depth analysis of the research questions discussed above. Professor Nicolas Cristin of Carnegie Mellon will help advise the paper– he served as an advisor for my initial research grant from CMU. The paper will be released as an open source document on Github. |
+| 2. | Research Paper | This paper will include an in depth analysis of the research questions discussed above. Professor Nicolas Cristin of Carnegie Mellon will help advise the paper– he served as an advisor for my initial research grant from CMU. The paper will be released as an open source document on Github. We expect this open source key management knowledge to provide a strong foundation for future Polkadot/Kusama/Substrate wallet designers.|
  
  
  
@@ -133,7 +133,7 @@ As part of this project, I also released a seedloop manager as an open source NP
 | 2. | Encryption Module | The encryption module will allow seed vaults to be locked/unlocked via a user provided password. The module will also use a randomly generated encryption key to create ciphertext for the BIP39 seedphrase when persisting vault storage on the client.|
 | 3. | Share Module | The share module will generate shamir shares for a given piece of data (in this case the encryption secret). This module will also allow shares to be recombined (according to the k of n secret sharing scheme) to reconstruct the original piece of data. |
 | 4. | Sync Module | This module will allow seed vaults to be synced across devices.|
-| 5. | Web Deployment | And finally, we will wrap these modules in a nice UI and deploy the interface to a website (likely using NextJs + Vercel). This website will allow developers to create a vault, sync their devices, and sign sample transactions. This will be accomplished via open source React components that developers can reuse in their own application.|
+| 5. | Web Deployment | And finally, we will wrap these modules in a nice UI and deploy the interface to a website (likely using NextJs + Vercel). This website will allow developers to create a vault, sync their devices, and sign sample transactions. This will be accomplished via open source React components that developers can reuse in their own application. The deployed app will have Polkadot/Kusama/Substrate specific examples (address generation, signatures, etc) that will benefit future developers.|
  
  
  
@@ -149,4 +149,8 @@ After the grant is completed, I will continue improving the open source Kryptik 
 The NEAR foundation awarded a $45,000 grant to develop the Kryptik wallet interface. This work wrapped the key management system with software that supports multi chain swaps, collectibles, payments, etc. I also received $20,000 from the Solana Foundation to provide open source documentation and Solana specific examples. Both of these grants are directed towards the Kryptik wallet interface, not the key management system which was devised separately.
  
 Finally, I received $500 from Carnegie Mellon to build the key manager and host the wallet interface.
+
+**How does this project benefit the Polkadot/Kusama/Substrate ecosystem?
+Asymmetric key management is an open issue that affects every blockchain ecosystem. An improved key management system will help improve wallet design which, in turn, will help improve the user experience of the Polkadot/Kusama/Substrate ecosystem. The research proposed above will provide foundational knowledge and software that can be integrated into existing Polkadot related wallets and in emerging wallets that have yet to be designed. In summary, successful execution of the grant will result in a simple and more secure way to interact with the Polkadot/Kusama/Substrate ecosystem. This will benefit users, who will have an improved wallet experience, and developers who can build upon a novel approach to key management. 
+
  
