@@ -14,7 +14,7 @@ As always, we appreciate Polkadot's vision and try to scale with the team, by bu
 
 ### Project Details
 
-Polkadot Snap is an “Snap Application” running on MetaMask. Polkdaot Snap will act as two ways for users. Firstly it will be the wallet adapter for Dapp developers. With it, the Dapp can interact with MetaMask for Polkadot. Secondly, The Polkadot Snap will be the wallet for Polkadot. It will provide functionality like transfer asset, stake token etc. 
+Polkadot Snap is a “Snap Application” running on MetaMask. Polkadot Snap will act in two ways for users. Firstly it will be the wallet adapter for Dapp developers. With it, the Dapp can interact with MetaMask for Polkadot. Secondly, The Polkadot Snap will be the wallet for Polkadot. It will provide functionality like transferring assets, staking tokens, etc.
 
 We will use React, Mobx, and Typescript for building this application. Considering Polkadot Snap is not completed yet, we put some samples of our BTCSnap for your reference.
 - Alpha version of BTCSnap：https://btc.justsnap.io/
@@ -94,7 +94,7 @@ N/A
 
 ## Development Roadmap :nut_and_bolt:
 
-- **Total Estimated Duration:** 4 months
+- **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 4 FTE
 - **Total Costs:** 30k USD
 
@@ -121,7 +121,8 @@ Grants are 10k USD.
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a dapp developer can use this library to use the MetaMask flask as the wallet for the user. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Demo | We will publish an demo to show how to use this library for the dapp developers |
-| 1.  |  js sdk | Building the snap application Provider and js sdk which wrap the snap application which provide injected object for the Dapp developer. Writing the documentation for the Dapp developer. |
+| 0e. | Article | We will publish an article that explains how to use this wallet adaptor and MetaMask Flask to interact with Polkadot dapps. |
+| 1. | js sdk | Building the snap application Provider and js sdk which wraps the snap application and provides an injected object for the Dapp developer. Writing the documentation for the Dapp developer. |
 
 ### Milestone 2: 
 
@@ -129,7 +130,15 @@ Grants are 10k USD.
 - **Full-Time Equivalent (FTE):** 4 FTE
 - **Total Costs:** 20k USD
 
-In milestone two, we will develop the Polkadot Wallet. It will also use our snap and provide functionality like transferring asset. Staking etc. 
+In milestone two, we will develop the Polkadot Wallet. It will also use our snap and provide functionality like transferring assets like DOT/KSM. Staking etc. 
+
+Here is the feature list for this Polkadot Wallet. 
+1. Users can use this wallet to manage their assets like DOT/KSM.
+2. Users can use this wallet to track their transaction history.
+3. Users can use this wallet to manage their NFTs.
+4. Users can use this wallet to contribute the Crowdloans
+5. Users can use this wallet to stake their DOT/KSMs.
+6. This wallet will support both Polkadot and kusama chains.
 
 The Polkadot wallet we will build which will rely on Polkadot snap to interact with MetaMask. First We will design the new user interface to provide an good experience for the users. Second, we will build this wallet application. It will be our long-term supported product. 
 To hit this milestone, two month full-time work is needed for all our dev/pm on the software side (Aaron Chen - CTO of Keystone, Zhang XiaoChun - Product Manager, Tian li - Software Engineer), 0.5 month full-time work is needed for our QA engineer & UI/UX designer (Xia MengYun- QA Engineer, Zhang XiaoChun - UX Designer). 
@@ -140,7 +149,8 @@ Grants are 20k USD.
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can manage their assets with this wallet application. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 1. | Application | We will publish the wallet application for the whole Polkadot community |
+| 0d. | Application  | We will publish the wallet application that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article that explains how to use this application for the whole Polkadot community. |
 
 ## Future Plans
 
