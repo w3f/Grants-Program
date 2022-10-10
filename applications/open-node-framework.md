@@ -3,6 +3,7 @@
 * **Project Name:** Open Node Framework
 * **Team Name:** Phala Network
 * **Payment Address:** DAI at 0x50DC97D0345d61B4D096e15313d50b6506972e5F
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/334#issuecomment-1168505655)
 
 ## Project Overview :page_facing_up: 
 
