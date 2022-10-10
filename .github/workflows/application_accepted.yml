@@ -47,7 +47,7 @@ jobs:
       - name: Parse application file
         if: ${{ !env.ACT }}
         id: grant_parser
-        uses: w3f/parse-grant-application-action@v1
+        uses: w3f/parse-grant-application-action@v1.2
         with:
           path: "${{ github.workspace }}/${{ needs.get_filename.outputs.filename }}"
 
