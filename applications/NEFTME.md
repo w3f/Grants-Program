@@ -279,9 +279,9 @@ Challenge “Be real”.
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 6-9 months
+- **Full-Time Equivalent (FTE):**  7
+- **Total Costs:** 150 000
 
 ### Milestone 1 — Alpha 5
 
@@ -291,6 +291,10 @@ Challenge “Be real”.
 
  | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can test out the app |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. Unit tests, integration tests and End 2 End tests |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Direct Messaging | Allow direct decentralized messaging inside the dApp  |
 | 2. | NFT as an Audio | Users are now able to create audio NFTs with their phones |
 | 3. | Abuse content analysis | Ability to report NFTs |
@@ -308,6 +312,10 @@ Challenge “Be real”.
 
  | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can test out the app |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. Unit tests, integration tests and End 2 End tests |
+| 0d. | Docker | We will provide a Dockerfile(s), or similar way, that can be used to test all the functionality delivered with this milestone. |
 | 1. | NFT as a video | Users are now able to create video NFTs with their phones  |
 | 2. | Invite code system | Start onboarding users via invite only system |
 | 3. | Reward System / Referral to friends | Reward users for onboarding new users |
