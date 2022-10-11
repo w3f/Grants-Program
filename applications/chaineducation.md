@@ -19,6 +19,7 @@ Students can rate and review the courses too.
 ### Mockups
 
 1. ![Signup Page](https://i.imgur.com/btVmach.png "Signup Page")
+2. ![Tracks Page](https://share.balsamiq.com/c/v1QAdj5DkCqmpPwsmVd8qC.png "Tracks Page")
 
 ## Team :busts_in_silhouette:
 
