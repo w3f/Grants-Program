@@ -557,3 +557,4 @@
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
 | [CrossChain Labs](https://github.com/CrossChainLabs) | DotPulse | [GitHub](https://github.com/CrossChainLabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Jett Hays](https://github.com/jettblu) | Distributed Key Management | [GitHub](https://github.com/KryptikApp) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [NexToken Technology](https://github.com/NexTokenTech) | TREX - Timed Release Encryption Xing chains | [GitHub](https://github.com/NexTokenTech/TREX) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
