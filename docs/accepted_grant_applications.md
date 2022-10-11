@@ -556,3 +556,4 @@
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
 | [CrossChain Labs](https://github.com/CrossChainLabs) | DotPulse | [GitHub](https://github.com/CrossChainLabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Jett Hays](https://github.com/jettblu) | Distributed Key Management | [GitHub](https://github.com/KryptikApp) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
