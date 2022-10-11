@@ -18,7 +18,7 @@ Students can rate and review the courses too.
 
 ### Mockups
 
-1. ![Signup Page](https://imgur.com/a/UFqgOBg "Signup Page")
+1. ![Signup Page](https://i.imgur.com/btVmach.png "Signup Page")
 
 ## Team :busts_in_silhouette:
 
