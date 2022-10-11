@@ -20,6 +20,7 @@ Students can rate and review the courses too.
 
 1. ![Signup Page](https://i.imgur.com/btVmach.png "Signup Page")
 2. ![Tracks Page](https://share.balsamiq.com/c/v1QAdj5DkCqmpPwsmVd8qC.png "Tracks Page")
+3. ![Learn development on Substrate](https://share.balsamiq.com/c/hRKNoiyejFzP6tm7cbdtS1.png "Learn development on Substrate")
 
 ## Team :busts_in_silhouette:
 
