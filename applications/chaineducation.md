@@ -16,6 +16,10 @@ Educators can create their classroom, they can upload as many courses in a class
 Students can get them enrolled in a classroom. For every achievement, they will earn achievement NFT.
 Students can rate and review the courses too.
 
+### Mockups
+
+1. [Signup Page](https://imgur.com/a/UFqgOBg)
+
 ## Team :busts_in_silhouette:
 
 ### Team members
