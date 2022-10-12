@@ -5,7 +5,7 @@
 - **Payment Address:** 0xd042e53e22e9f941ceba02f4adb9d1b32ef43675
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
-## Project Overview 
+## Project Overview
 
 
 ### Overview
@@ -25,7 +25,7 @@ Both of the parties (for ex: web3 community and contributor) sign an Escrow cont
 “Take action days” would be some supplement time after the contract has ended for the Web3 to test/check if the bug/feature has been delivered correctly.
 Once the contract is signed the Web3 funds will be locked into another address.
 During the take action days Web3 can decide to:
-1-Send the funds manually to the contributor 
+1-Send the funds manually to the contributor
 2-Withdraw the funds because nothing was delivered
 3-Do not take any action during the “take action days” and when these additive days are expired the contributor can withdraw the funds by himself. (This option would reduce the releasing fund steps by giving additional work to the contributor)
 
@@ -82,9 +82,9 @@ The last months I have been curious about Substrate/Rust, and I am learning it o
 
 We would like to add this pallet to the Subtrate recipes repo.
 
-- [Substrate recipes](https://github.com/herou/recipes) 
+- [Substrate recipes](https://github.com/herou/recipes)
 
-## Development Roadmap 
+## Development Roadmap
 
 ### Overview
 
