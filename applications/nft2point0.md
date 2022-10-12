@@ -52,7 +52,7 @@ Level 2: Up to $22,500, 3 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| ~~0~~. | ~~NFT 2.0 - Extending the EIP-721 | We need to make a change in ERC721 Metadata JSON Schema, we are adding a field that contains an IPFS hash of JavaScript code that will serve as logic layer for NFTs~~ |
+| ~~0~~. | ~~NFT 2.0 - Extending the EIP-721~~ | ~~We need to make a change in ERC721 Metadata JSON Schema, we are adding a field that contains an IPFS hash of JavaScript code that will serve as logic layer for NFTs~~ |
 | 0. | NFT 2.0 - Smart Contract development | We need to develop, test and audit a smart contracts in **ink** for our interactive NFTs. We need to create Storage layer that will store output of interactive NFT ~~and extending ERC-721 smart contract code~~. We will use this smart contract as reference: https://github.com/Supercolony-net/openbrush-contracts/blob/main/contracts/src/token/psp34/psp34.rs |
 
 ### Milestone 2
