@@ -1,5 +1,6 @@
-# Open Grant Proposal
-* **Project:** Polkadot Snap Made by Keystone Wallet Team
+# Polkadot Snap Made by Keystone Wallet Team
+
+* **Team Name:** Keystone Wallet Team
 * **Proposer:** @aaronisme
 * **Payment Address:** 3KL2HNETiLbLVbnGfpGZ6ZkyyaWUL6bfpt（BTC）
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
