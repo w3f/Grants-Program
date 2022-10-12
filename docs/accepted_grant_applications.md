@@ -559,3 +559,4 @@
 | [Jett Hays](https://github.com/jettblu) | Distributed Key Management | [GitHub](https://github.com/KryptikApp) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [NexToken Technology](https://github.com/NexTokenTech) | TREX - Timed Release Encryption Xing chains | [GitHub](https://github.com/NexTokenTech/TREX) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Blockcoders](http://blockcoders.io/) | Cross-Consensus Messaging Software Development Kit | [GitHub](https://github.com/blockcoders) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Keystone Wallet](https://keyst.one/) | Polkadot Snap | [GitHub](https://github.com/KeystoneHQ) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
