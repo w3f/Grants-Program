@@ -123,10 +123,9 @@ We would like to add this pallet to the Subtrate recipes repo.
 |    0a. | License                           | Apache 2.0                                                                                                                                              |
 |    0b. | Documentation                     | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can send funds to the contributor/receiver. |
 |    0c. | Testing Guide                     | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.       |
-|    0d. | Docker                            | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                           |
-|    0e. | Article                           | We will publish an **article** that explains how an Escrow contract can be created and how can it be used.    
-|    0f. | Benchmarking                      | Benchmarking will be provided for send_funds.
-|     1. | Substrate module: send_funds      | We will create a Substrate module that will send funds to to the contributor/receiver                                                                                 |
+|    0d. | Article                           | We will publish an **article** that explains how an Escrow contract can be created and how can it be used.    
+|    0e. | Benchmarking                      | Benchmarking will be provided for send_funds.
+|    0f. | Substrate module: send_funds      | We will create a Substrate module that will send funds to to the contributor/receiver                                                                                 |
 
 ### Milestone 3 — Implement Withdraw funds functionality
 
@@ -140,10 +139,9 @@ We would like to add this pallet to the Subtrate recipes repo.
 |    0a. | License                          | Apache 2.0                                                                                                                                        |
 |    0b. | Documentation                    | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how the funds holders withdraw.                  |
 |    0c. | Testing Guide                    | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-|    0d. | Docker                           | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                     |
-|    0e. | Article                          | We will publish an **article** that explains how an Escrow contract can be created and how can it be used.
-|    0f. | Benchmarking                     | Benchmarking will be provided for withdraw_funds.
-|     1. | Substrate module: withdraw_funds | We will create a Substrate module that will withdraw the funds if nothing was delivered.                                                          |
+|    0d. | Article                          | We will publish an **article** that explains how an Escrow contract can be created and how can it be used.
+|    0e. | Benchmarking                     | Benchmarking will be provided for withdraw_funds.
+|    0f. | Substrate module: withdraw_funds | We will create a Substrate module that will withdraw the funds if nothing was delivered.                                                          |
 
 
 ## Future Plans
