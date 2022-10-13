@@ -336,7 +336,7 @@ The user will have to follow the following process:
 
  4) PNS will provide a cryptographically signed verifiable crenditial to the user, which can be stored on-chain or off-chain.
 
-In this way, we know that 1) the PNS domain owner wants to claim the Twitter account, 2) the Twitter account owner wnats to claim the PNS domain, 3) the required information is publicly verifiable, and 4) PNS or other authorized parties have checked the data and provided signed crenditials.
+In this way, we know that 1) the PNS domain owner wants to claim the Twitter account, 2) the Twitter account owner wnats to claim the PNS domain, 3) the required information is publicly verifiable, and 4) PNS or other authorized parties have checked the data and provided signed credentials.
 
 The verification process is off-chain, but it uses on-chain data and provides valuable information for DID.
 
