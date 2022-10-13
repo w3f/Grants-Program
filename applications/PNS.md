@@ -285,7 +285,7 @@ We have finished the solidity contract development and got contracts audited by 
 - **Full-Time Equivalent (FTE):** 7.5
 - **Total Costs:** $30,000
 
-### **Milestone 1 —** Account ownership and social network identity integration with verifiable credentials
+### **Milestone 1 —** Account ownership and social network identity verification with verifiable credentials
 
 - **Estimated duration:** 1 month
 - **FTE:** 2.5
@@ -298,12 +298,12 @@ We have finished the solidity contract development and got contracts audited by 
 | 0c. | Tests | Core credential verification functions will be fully covered by unit tests to ensure functionality and robustness.  |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.  |
 | 0e. | Article | We will write an article in our blog that explains the work done as part of the grant.  |
-| 1. | Account ownership verification | Users can set multiple wallet addresses on PNS and attach on-chain verifiable credentials to show their ownership of the address. 
-
-For example, you can add a signed message to show your ownership to some address when setting the DOT record of your PNS domain, so that others could know the authenticity of that record.  |
+| 1. | Account ownership verification | Users can set multiple wallet addresses on PNS and attach on-chain verifiable credentials to show their ownership of the address. For example, you can add a signed message to show your ownership to some address when setting the DOT record of your PNS domain, so that others could know the authenticity of that record.  |
 | 2. | Social network identity integration | Users can add various off-chain social network records to their own PNS and verify them.  |
 
-Domain name owners can now set the ETH, DOT record of their PNS domain, which is one of the targeted use cases. However, users can also set the ETH address of any third party to his own PNS without any verifications, which may cause problems. With account ownership verification, users can attach cryptographically signed verifiable credentials to the records to show they are the owner of the resolved addresses. Those VCs are also written as new on-chain PNS records.
+Implementation details of account ownership verification:
+
+Domain name owners can now set the ETH, DOT record of their PNS domain, which is one of the targeted use cases. However, users can also set the ETH address of any third party to his own PNS without verifications, which may cause problems. With account ownership verification, users can attach cryptographically signed verifiable credentials to the records to show they are the owner of the resolved addresses. Those VCs are also written as new on-chain PNS records.
 
 For example, PNS domain name owner who want to have their ETH address verified, should sign a message of:
 
@@ -322,7 +322,23 @@ For example, PNS domain name owner who want to have their ETH address verified, 
 }
 ```
 
-PNS also allows users to verify their social network identities. Users can set their Twitter record of their PNS domain. In order to verify they are the true owner, PNS will ask the user to sign a message with the domain name owner wallet, then they will need to post the message on Twitter or other social networks. PNS backend service will then fetch the message on social networks to check that it is published correctly, and it will issue verifiable credentials to the user.
+Implementation details of social network identity verification:
+
+PNS also allows users to verify their social network identities. Users can set their Twitter record of their PNS domain. In order to verify they are the true owner, PNS will ask the users to sign a message with the domain name owner wallet, then they will need to post the message on Twitter or other social networks. PNS backend service will then fetch the message on social networks to check that it is published correctly, and it will issue verifiable credentials to the user.
+
+The user will have to follow the following process:
+
+ 1) The user should sign a message with the domain name owner wallet to get a signature saying that domain owner wants to claim the ownership of the Twitter account.
+
+ 2) The message and signature is publicly posted on Twitter or other social networks, which is to show that the Twitter account owner acknowledges such a claim. This tweet is publicly available and can be verified by anyone.
+
+ 3) The user should post the tweet url to PNS backend service. PNS will check that: the wallet address, the PNS domain ownership and the Twitter account is coherent with each other.
+
+ 4) PNS will provide a cryptographically signed verifiable crenditial to the user, which can be stored on-chain or off-chain.
+
+In this way, we know that 1) the PNS domain owner wants to claim the Twitter account, 2) the Twitter account owner wnats to claim the PNS domain, 3) the required information is publicly verifiable, and 4) PNS or other authorized parties have checked the data and provided signed crenditials.
+
+The verification process is off-chain, but it uses on-chain data and provides valuable information for DID.
 
 For example, PNS domain name owner who want to have their Twitter account verified, should sign a message of:
 
