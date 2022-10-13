@@ -88,7 +88,7 @@ Level 2: Up to $30,000, 3 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| 0. | UI development | We will be using **NextJS** which is on top of **React** to develop frontend of our educational platform. It will be served via Netlify. Profile of user will show achievement NFTs, certificates, profile, wallet information, etc. Please check mockups here: https://www.figma.com/file/1YtoEah6gT56bgKKDw66bR/Untitled?node-id=0%3A1 |
+| 0. | UI development | We will be using **NextJS** which is on top of **React** to develop frontend of our educational platform. It will be served via Netlify. Profile of user will show achievement NFTs, certificates, profile, wallet information. Data that needs to be manually added is: Name, Past Experience, Skills. Please check wireframes given in this page. |
 
 ### Milestone 3
 
