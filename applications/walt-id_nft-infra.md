@@ -1,8 +1,13 @@
+
+Any implementation that is EVM compatible (e.g. Moonriver or RMRK with EVM bridge). Furthermore we will look into NFT specific solutions like Uniques FRAME pallet & Efinity.
+
+
 # NFT infrastructure | by walt.id
 
 - **Project Name:** NFT infrastructure | by walt.id
 - **Team Name:** walt.id
 - **Payment Address:** 0xa4c6c2013810661a6750443aEF86cFeAc983e07f (USDC)
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -43,7 +48,7 @@ More information about our solutions (incl. Architecture, APIs, data models) can
 
 **Scope:** The project will be focused on building three infrastructure products, which will extend our current open source libraries:
   * Wallet Kit: Implementation of a wallet infrastructure that enables developers to extend their apps with the ability to view, manage and utilize NFTs.
-  * NFT Kit: Implementation of an NFT infrastructure that enables the verification of NFTs (e.g. ownership, meta data) and against customizable verification policies.
+  * NFT Kit: Implementation of an NFT infrastructure that enables the verification of NFTs (e.g. ownership, meta data) and against customizable verification policies. The NFT infrastructure is will work on EVM compatible chains (e.g. Moonriver or RMRK with EVM bridge), but will also support other NFT specific solutions like Uniques FRAME pallet & Efinity if feasbile form a technical point of view.
   * IDP Kit: Implementation of an “IDP” (Identity Provider) that enables NFT-based authentication and access management for web2 apps.
   
 The following limitations follow from this scope:
@@ -190,12 +195,6 @@ Also, we had a conversation with David Hawig about this project.
 
 ## Development Roadmap :nut_and_bolt:
 
-### Overview
-
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
-
 ### Milestone 1 — NFT Kit + Wallet Kit + IDP Kit
 
 - **Estimated duration:** 2 months
@@ -211,7 +210,7 @@ Also, we had a conversation with David Hawig about this project.
 | 0e. | Article                      | We will publish an article or workshop that explains what was done/achieved as part of the grant. |
 | 1. | Architecture / Documentation | We will plan and provide the architecture of the proposed project. (Note that the architecture may be updated / extended throughout the project based on learnings from the actual implementation.) |
 | 2. | Wallet Kit                   | Implementation of a wallet infrastructure that enables developers to easily integrate NFTs from the Polkadot ecosystem in any app (e.g. web3, banking, consumer products, marketplaces, …). In other words: Developers will be able to extend their existing apps with the ability to view, manage and utilize NFTs (e.g. for trading or access management). |
-| 3. | NFT Kit                      | Implementation of an NFT infrastructure that enables developers to build holistic applications and end-to-end use cases based on Polkadot. In this first proposal we focus on enabling “utility” use cases (e.g. ticketing, loyalty, vouchers, access). Therefore, the NFT Kit will enable the  verification of NFTs across multiple dimensions (e.g. ownership, meta data) and against customizable verification policies (based on the Open Policy Agent). |
+| 3. | NFT Kit                      | Implementation of an NFT infrastructure that enables developers to build holistic applications and end-to-end use cases based on Polkadot. In this first proposal we focus on enabling “utility” use cases (e.g. ticketing, loyalty, vouchers, access). Therefore, the NFT Kit will enable the  verification of NFTs across multiple dimensions (e.g. ownership, meta data) and against customizable verification policies (based on the Open Policy Agent). We will primarily focus on NFT  implementations that are EVM compatible (e.g. Moonriver or RMRK with EVM bridge). Furthermore we will look into NFT specific solutions like Uniques FRAME pallet & Efinity.|
 | 4. | IDP Kit                      | Implementation of an “IDP” (Identity Provider) that enables NFT-based authentication and access management for web2 apps. Backwards compatibility is enabled by transforming NFT verification results into tokens (e.g. JWT) that can be handled by potentially any web2 app (e.g. identity/access tools, messengers, website builders, eCommerce frameworks, CRM tools). |
 
 
