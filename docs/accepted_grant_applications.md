@@ -473,7 +473,7 @@
 | [TDSoftware](https://www.tdsoftware.de/) | SubIdentity | [GitHub](https://github.com/TDSoftware) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [ChainSafe Systems](https://chainsafe.io/) | SubstrateSnap Maintenance Proposal | [GitHub](https://github.com/ChainSafe/metamask-snap-polkadot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [HugoByte](https://hugobyte.com/) | Project Aurras - MVP - Phase 2 | [GitHub](https://github.com/HugoByte) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Perun Network](https://perun.network/) | Perun App Channels | [GitHub](https://github.com/perun-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Perun Network](https://perun.network/) | Perun App Channels | [GitHub](https://github.com/perun-network/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [ChainSafe Systems](https://chainsafe.io/) | Privacy enhancement for Polkadot-js extension | [GitHub](https://github.com/ChainSafe) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [BQP](https://qbitcoin.tech/) | Quantum Lock for QBITCOIN | [GitHub](https://github.com/bqpquantum/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Simply VC](https://simply-vc.com.mt/) | PANIC Monitoring and Alerting For Blockchains | [GitHub](https://github.com/SimplyVC/panic) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
@@ -523,7 +523,7 @@
 | [Equilibrium](https://equilibrium.co/) | Polkadot Light Client in C++ | [GitHub](https://github.com/eqlabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Open rollup](https://github.com/openrollup-zk) | Open rollup - MVP - Phase 1 | [GitHub](https://github.com/openrollup-zk) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Veridise](https://veridise.com/) | Vanguard | [GitHub](https://github.com/Veridise/Vanguard) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Karolis Ramanauskas](https://krl.is/) | Generic Sybil-Resistant Faucet | [GitHub](https://github.com/karooolis) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Karolis Ramanauskas](https://krl.is/) | Generic Sybil-Resistant Faucet | [GitHub](https://github.com/karooolis) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [LimeChain](https://limechain.tech/) | Research feasibility for a Go Runtime | [GitHub](https://github.com/LimeChain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Jim Yam](https://github.com/JimYam) | daos | [GitHub](https://github.com/daos-org/daos.git) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Green Lemon](https://github.com/GreenLemonProtocol) | Green Lemon Protocol | [GitHub](https://github.com/GreenLemonProtocol) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -555,3 +555,8 @@
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
+| [CrossChain Labs](https://github.com/CrossChainLabs) | DotPulse | [GitHub](https://github.com/CrossChainLabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Jett Hays](https://github.com/jettblu) | Distributed Key Management | [GitHub](https://github.com/KryptikApp) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [NexToken Technology](https://github.com/NexTokenTech) | TREX - Timed Release Encryption Xing chains | [GitHub](https://github.com/NexTokenTech/TREX) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Blockcoders](http://blockcoders.io/) | Cross-Consensus Messaging Software Development Kit | [GitHub](https://github.com/blockcoders) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Keystone Wallet](https://keyst.one/) | Polkadot Snap | [GitHub](https://github.com/KeystoneHQ) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
