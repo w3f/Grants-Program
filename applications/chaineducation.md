@@ -110,6 +110,8 @@ Level 2: Up to $30,000, 3 approvals
 | 4. | Student rating and review system | Development of review and rating system so that students can review a course.|
 | 5. | API and Infrastructure | We are building our backend using Django which is written in **Python** due to it's strong ORM support. We will be using DRF(Django Rest Framework) to build the API layer. We will be using **py-substrate-api** library to communicate with Blockchain.|
 
+* Our progress can be tracked here on this trello board: https://trello.com/b/mAEuIivn/product-development
+
 ## Additional Information :heavy_plus_sign: 
 
 * We're currently implementing it in substrate ecosystem.
