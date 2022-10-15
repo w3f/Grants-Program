@@ -1,9 +1,9 @@
 # W3F Grant Proposal
 
 - **Project Name:** Sol2Ink
-- **Team Name:** [SuperColony](https://github.com/Supercolony-net)
+- **Team Name:** [727.ventures](https://github.com/727-Ventures)
 - **Payment Address:** ERC 20 ADDRESS (USDT):
-0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942 
+0xE21fA452De95466367Ee6F002BDa654D8Be6c337 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -118,29 +118,29 @@ We are also aware of [Sol2Ligo](https://github.com/madfish-solutions/sol2ligo), 
 
 ### Team members
 
-- **Markian Ivanichok** (СEO of Supercolony)
-- **Toma Sadova** (Product Owner | Supercolony)
-- **Nameless Endless** (Blockchain Developer | Supercolony)
-- **Dominik Krížo** (Blockchain Developer | Supercolony)
-- **Green Baneling** (Blockchain Core Rust Engineer | Supercolony)  
+- **Markian Ivanichok** (СEO of 727.ventures)
+- **Toma Sadova** (Product Owner | 727.ventures)
+- **Nameless Endless** (Blockchain Developer | 727.ventures)
+- **Dominik Krížo** (Blockchain Developer | 727.ventures)
+- **Green Baneling** (Blockchain Core Rust Engineer | 727.ventures)  
 
 
 ### Contact
 
 * **Contact Name:** Toma Sadova
-* **Contact Email:** toma.sadova@supercolony.net
-* **Website:** [supercolony.net](supercolony.net)
+* **Contact Email:** toma@727.ventures
+* **Website:** [727.ventures](727.ventures)
 
 ### Legal Structure
 
-* **Registered Address:** The registered office shall be in 16192 Coastal Highway, Lewes, Delaware 19958, County of
-Sussex, USA. 
-* **Registered Legal Entity:** SUPERCOLONY CORP.
+* **Registered Address:** The registered office shall be in Coastal Building, Wickham’s
+Cay II, P. O. Box 2221, Road Town, Tortola, VG1110, British Virgin Islands.
+* **Registered Legal Entity:** Seven2seven Ventures Ltd
 
 ### Team's experience
 
 **Markian Ivanichok**  
-CEO of Supercolony, Blockchain entrepreneur, Software Engineer. Started my engineering career back when I was 15. Since then, I developed and got a lot of experience in engineering and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded and invested in Sector F, one of the top consulting companies in Ukraine that helps entrepreneurs to move faster. Since the beginning of this year, co-founded and led Supercolony, a Polkadot venture studio that is dedicated to building and creating of Polkadot’s ecosystem.
+CEO of 727.ventures, Blockchain entrepreneur, Software Engineer. Started my engineering career back when I was 15. Since then, I developed and got a lot of experience in engineering and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded and invested in Sector F, one of the top consulting companies in Ukraine that helps entrepreneurs to move faster.
 
 **Toma Sadova**  
 Product Owner
@@ -152,7 +152,7 @@ Became interested in programming at the age of 16. At this time, he tried web de
 
 **Dominik Krížo**  
 Blockchain Developer
-Started programming own games at age of 15 as a hobby, then went to University studying informatics and object oriented programming, becoming an Android developer in 2018. In 2017 he started his crypto venture by investing in BTC and Ethereum and getting more knowledge regarding smart contracts and DeFi protocols during DeFi summer 2020. As a programmer, he wanted to know more behind the scenes of smart contracts, so he started to develop his own smart contract applications for Ethereum and then becoming a Rust and Ink! developer in Supercolony, since he believes that WASM with its benefits over EVM is the future of smart contract applications. As a part of his Android developer career, Dominik was working on porting of applications from C++ to Android/Java, for which he also worked on a tool to ease this process, describing the process of transformation of code base from one language to another in his bachelor's thesis.
+Started programming own games at age of 15 as a hobby, then went to University studying informatics and object oriented programming, becoming an Android developer in 2018. In 2017 he started his crypto venture by investing in BTC and Ethereum and getting more knowledge regarding smart contracts and DeFi protocols during DeFi summer 2020. As a programmer, he wanted to know more behind the scenes of smart contracts, so he started to develop his own smart contract applications for Ethereum and then becoming a Rust and Ink! developer in , since he believes that WASM with its benefits over EVM is the future of smart contract applications. As a part of his Android developer career, Dominik was working on porting of applications from C++ to Android/Java, for which he also worked on a tool to ease this process, describing the process of transformation of code base from one language to another in his bachelor's thesis.
 
 **Green Baneling**  
 Blockchain Core Developer  
@@ -164,11 +164,11 @@ Was a freelancer the first year, creating an application for IOS(Swift), creatin
 
 ### Team Code Repos
 
-* https://github.com/Supercolony-net
+* https://github.com/727-Ventures
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* https://github.com/sventime
+* https://github.com/o-tsaruk
 * https://github.com/coreggon11
 * https://github.com/xgreenx
 
@@ -176,7 +176,6 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 * https://www.linkedin.com/in/mivanichok/
 * https://www.linkedin.com/in/toma-sadova/
-* https://www.linkedin.com/in/sven-seventimes/
 * https://www.linkedin.com/in/dominik-krizo/
 
 ## Development Status :open_book:
@@ -208,7 +207,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0a. | License | MIT |
 | 0b. | Documentation | We will provide a documentation for the user on how to use our tool for simplification of their process of transformation of Solidity code to Rust and Ink! code, along with inline documentation of code so the developers can better understand the processes in the backend |
 | 1. | Sol2Ink CLI | A CLI application which will take a Solidity file as the input and produce a transformed Rust file with Rust and ink! code as the output |
-| 2. | Integrate OpenBrush | Since OpenBrush is a tool to ease and fasten the smart contracts development in Ink!, we will add this library to the smart contracts generated by Sol2Ink |
+| 2. | Integrate OpenBrush | Since OpenBrush is a tool to ease and fasten the smart contracts development in ink!, we will add this library to the smart contracts generated by Sol2Ink |
 | 3. | Website with guides | We will provide a website where we will compare a transformation of Solidity code into Rust and ink! code, along with issues which may occur (for example handling of Assembly blocks etc.). |
 
 
@@ -230,6 +229,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 1. | Website with guides | We will enhance the existing guides to reflect new features implemented in this milestone; The website with guides is something like an enhanced documentation, the inline documentation just describes the functions of the program, the guides go deeper into how it works, and it also contains a tutorial for usage of Sol2Ink |
 | 2. | Split contract into traits | Currently all logic and storage is in one contract file. This upgrade will generate traits for each contract that the contract is using, splitting logic and storage into separate traits. This will also nicely handle inheritance of Solidity smart contracts |
 | 3. | Sol2Ink transpiler update | We will update the transpiler to deal with code which it currently does not support or parses incorrectly |
+| 3a. | Functions with value | Support calls with value transferring |
+| 3b. | Chained selectors | Fix parsing of chained selectors |
+| 3c. | Updating structs inside of a mapping | Fix how Sol2Ink rewrites fields of a structure inside a mapping |
+| 3d. | Modifiers | Fix some occassions where parsing of a modifier causes the output code to be uncompilable (for example if there is a function call as a modifier argument |
+| 3e. | Fix bugs | Fix many small bugs which can occur, after this a more complex contracts (e.g. Uniswap) can be fully covered with Sol2Ink |
 | 4. | Library parsing | We will implement the parser for Solidity libraries; currently Sol2Ink only looks for definition of a contract or an interface, since libraries must be handled in a different way, meaning that there is no problem in parsing of Solidity code of a library, but the output code of a Solidity library must be handled in a different way, which is the goal of this deliverable |
 | 5. | Handling dependencies and generalization | This will be implemented via traits |
 | 6. | Multi-file project parsing | This will be implemented via traits |
