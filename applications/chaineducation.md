@@ -73,6 +73,7 @@ Level 2: Up to $30,000, 3 approvals
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
 | 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute tokens to user once they unlock and achievements. Also, they will be responsible to mint achievement, milestone and course completion NFTs. IPFS will store key attributes of user profile. We will be using **erc20** token: https://github.com/paritytech/ink/blob/master/examples/erc20/lib.rs and **erc721** token to mint smart contract: https://github.com/paritytech/ink/blob/master/examples/erc721/lib.rs. One more smart contract would be required to send achievments NFT who complete the course. |
+| 1. | Oracle | Develop an oracle to fetch token price. |
 
 
 ### Milestone 2
