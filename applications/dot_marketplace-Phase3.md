@@ -32,6 +32,8 @@ The current scope of work involves **milestone-based submissions** in which a pr
 - Decentralized IPFS Storage for project materials using NFTStorage Provider. Each material will have a unique CID that can be accessed by both Publisher and Worker.
 - Advance Search by task tags, ids & title.
 - The [decentralized court](https://github.com/WowLabz/dot-marketplace-v2) implemented in phase 2 is functional for each milestone of a project
+- All of the above features will be updated as a new feature for the existing marketplace pallet. Similarly, the selekatal UI will be updated to showcase the same.
+- A new file server written using the rocket framework will be provided for the integration with IPFS (using NftStorage). 
 
 The flow of tasking pallet with milestone based submission
 
@@ -145,7 +147,7 @@ A list of centralized and decentralised apps published can be found [here](https
 * **PTE: 2**
 * **Costs:** 12,725 USD
 
-The main deliverable for this milestone is to facilitate the creation of a project that can accommodate multiple milestones that may or may not depend on each other.
+The main deliverable for this milestone is to facilitate the creation of a project that can accommodate multiple milestones that may or may not depend on each other. These functionalities will be implemented as an upgrade to the existing marketplace pallet.
 
 | Sr no. | Deliverable | Description |
 | --- | --- | --- |
@@ -153,7 +155,7 @@ The main deliverable for this milestone is to facilitate the creation of a proje
 | 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of tasking pallet. |
 | 0c | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build. |
 | 0d | Docker Image | Docker image of the build |
-| 1 | Project Structure | The existing application only allows one milestone per project. Phase 3 modifies it to allow a publisher to add multiple milestones under the same project |
+| 1 | Project Structure | The existing application only allows one milestone per project. Phase 3 modifies it to allow a publisher to add multiple milestones under the same project. |
 | 2 | Multiple Bidders| Multiple bidders can now bid for the same milestone, and the publisher can choose one worker based on the bidder ratings |
 | 3 | Escrow  | Multiple subaccounts are created for a project to account for each milestone and make it easier to store all funds for transfer/exchange. |
 
@@ -165,7 +167,7 @@ The main deliverable for this milestone is to facilitate the creation of a proje
 * **Costs:** 9,225 USD
 
 
-In continuation to previous work, this milestone involves the creation of an on-chain decentralized court to handle dispute resolution. Each milestone can go into a dispute on the same scope as mentioned in the second phase of dot marketplace. The other milestones in a project are not affected by the dispute of one of the milestones.
+In continuation to previous work, this milestone involves the creation of an on-chain decentralized court to handle dispute resolution. Each milestone can go into a dispute on the same scope as mentioned in the second phase of dot marketplace. The other milestones in a project are not affected by the dispute of one of the milestones. The court pallet will be upgraded to support these new features.
 
 | Sr no. | Deliverable | Description |
 | --- | --- | --- |
@@ -182,13 +184,13 @@ In continuation to previous work, this milestone involves the creation of an on-
 
 ### **Milestone 3**
 
-* **Estimated duration:** 2.0 weeks
+* **Estimated duration:** 3.0 weeks
 * **FTE:** 1
 * **PTE:** 2
-* **Costs:** 5,475 USD
+* **Costs:** 7975 USD
 
 
-The main deliverable in this milestone is to use decentralized IPFS based storages to store all the files realated to tasks.
+The main deliverables in this milestone are to use decentralized IPFS based storages to store all the files realated to tasks & advanced search. A file server integrated to nft storage will provided, using rocket framework & the search feature will be an update to the makerplace pallet. The skeletal UI will also be updated to showcase all the new features in Phase3.
 
 | Sr no. | Deliverable | Description |
 | --- | --- | --- |
@@ -196,30 +198,11 @@ The main deliverable in this milestone is to use decentralized IPFS based storag
 | 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of tasking pallet. |
 | 0c | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build. |
 | 0d | Docker Image | Docker image of the build |
-| 1 | Decentralized Stroage  | All tasks related docs will be stored on a decentralized IPFS platform |
-| 2 | Frontend App  | Supporting frontend UI to test the aforementioned functionality. |
-
-### **Milestone 4**
-
-* **Estimated duration:** 1.0 week
-* **FTE:** 1
-* **PTE:** 2
-* **Costs:** 2,500 USD
-
-
-The main deliverable in this milestone is to be able to advance search using task progress, tags, tasks or milestone id's.
-
-| Sr no. | Deliverable | Description |
-| --- | --- | --- |
-| 0a | License | Apache 2.0 |
-| 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of tasking pallet. |
-| 0c | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build. |
-| 0d | Docker Image | Docker image of the build |
-| 1 | Advanced Search  | Search based on task progress, tags, tasks or milestone id's. |
-| 2 | Frontend App  | Supporting frontend UI to test the aforementioned functionality. |
-| 3 | Website  | Dedicated one-page website for Dot Marketplace. |
-| 4 | Article | Website article showing motivation behind phase 3 of dot marketplace and how to make the best use of it. |
-
+| 1 | Decentralized Stroage  | All tasks related docs will be stored on a decentralized IPFS platform. |
+| 2 | Advanced Search  | Search based on task progress, tags, tasks or milestone id's. |
+| 3 | Frontend App  | Supporting frontend UI to test the aforementioned functionality. |
+| 4 | Website  | Dedicated one-page website for Dot Marketplace. |
+| 5 | Article | Website article showing motivation behind phase 3 of dot marketplace and how to make the best use of it. |
 
 ### **Additional Project Details**
 
