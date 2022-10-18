@@ -15,23 +15,24 @@ Our goal is to let everyone who is familiar with polkadot ecology stop here, and
 ## Project Details
 ### Background
 
-We think SocialFi will be the next blockchain, just like Twitter and facebook were in Web 2.0. 
+
+We believe that SocialFi will be the next hot spot for blockchain, just like Twitter and facebook were in Web 2.0. 
 People rely as much on social interaction in the virtual world as they do on air and sunlight in the real world. 
 In just a few years, we have exploded such blockchain hotspots as DeFi, NFT, and GameFi. 
 This wave is unstoppable and has overturned the blockchain and the world outside the blockchain. 
 However, the impact of this phenomenon product is always limited, because people will find that the products and applications seem to be missing something and not tightly connected, 
-if added to it will make a complete difference. That's right, social connections. Whether it is a community or a product, blockchain cannot leave the power of users. 
-Only when users are closely connected and spend more time in the communication and exploration of blockchain products can this industry have unlimited possibilities. 
-Blockchain should not only have DeFi, but also the underlying products to maintain user relations. The customer relationship is the oil without which no product can go anywhere. 
-polkadot Ecosystem, there are many project parties, are doing their own things, but like us, there are few focus on user relationship, not only DeFi and various smart contract platform, 
-so we decided to create Listen Network.
+if added it will make a complete difference. That's social connection. Whether it is a community or a product, blockchain cannot leave the power of users. 
+Only when users are closely connected and spend more time in the communication and exploration of blockchain products this industry have unlimited possibilities. 
+Blockchain should not only have DeFi, but also the underlying products to maintain user relations. The customer relationship is the oil without which no product can go anywhere.
+Polkadot ecology, there are many project parties, all doing their own things,
+but few people like us focus on user relationship. It cannot be just DeFi and various smart contract platforms. So we decided to create Listen Network.
 
 ### project Features
 > The following according to the development plan, in accordance with the time sequence to talk about the specific functions of the product
 1. **The development phase of the base module on the chain**
 At this stage, we first need to realize the development of several important functional modules on the chain. For example, Room module is responsible for the management of voice groups. Multi-asset module allows users to use more tokens of parallel chain projects or self-minted DAO tokens on Listen Network, as well as multi-asset cross-chain transfer. 
 Of course, we will use some modules of acala for multi-asset management.
-They have done an excellent job and we thank them for their contribution to the community, although we will make some changes; We will use NFTS for Listen Network. This is due to users' special requirements for avatars and platform rights. We will support them as soon as possible
+They have done an excellent job, and we thank them for their contribution to the community, although we will make some changes; We will use NFTS for Listen Network. This is due to users' special requirements for avatars and platform rights. We will support them as soon as possible
 Support the NFT free selling function, in this stage, we will create the NFT-SELL module; We attach great importance to the on-chain identity of users. We will introduce modules such as LNS to enable users to transfer money according to the LNS name, and ID module based on the LNS domain name and NFT module to enable users to have unique on-chain identity.
 Finally, complete module testing and some work needed to be done in the early stage of development, such as providing docker and so on.
 2. **Mobile App development**
