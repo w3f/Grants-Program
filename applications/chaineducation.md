@@ -15,6 +15,17 @@ Platform will also create their profile so that they can showcase it to the comm
 Educators can create their classroom, they can upload as many courses in a classroom.
 Students can get them enrolled in a classroom. For every achievement, they will earn achievement NFT.
 Students can rate and review the courses too.
+Instructors can create a paid course too, if any student purchases a course, on whatever price they will purchase will directly go to the instructor of the course.
+
+### Simillar platforms
+ - https://buildspace.so/solidity
+ - https://learnweb3.io/
+ - https://www.web3.university/
+
+### How our platform will be unique?
+ - None of the above platform provides hands-on tutorial on Substrate ecosystem and Rust. We will cover both of them.
+ - Creators can earn with our platform if anyone buys their course. This will also act as marketing of our platform since creator will promote her platform our her social media.
+ - We will be giving achievement and course completion NFTs.
 
 ### Mockups
 
@@ -68,12 +79,13 @@ Level 2: Up to $30,000, 3 approvals
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) deploy our smart contracts and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute tokens to user once they unlock and achievements. Also, they will be responsible to mint achievement, milestone and course completion NFTs. IPFS will store key attributes of user profile. We will be using **erc20** token: https://github.com/paritytech/ink/blob/master/examples/erc20/lib.rs and **erc721** token to mint smart contract: https://github.com/paritytech/ink/blob/master/examples/erc721/lib.rs. One more smart contract would be required to send achievments NFT who complete the course. |
-| 1. | Oracle | Develop an oracle to fetch token price. |
+| 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute tokens to user once they unlock and achievements. Also, they will be responsible to mint achievement, milestone and course completion NFTs. IPFS will store key attributes of user profile. We will be using **erc20** token: https://github.com/paritytech/ink/blob/master/examples/erc20/lib.rs and **erc721** token to mint smart contract: https://github.com/paritytech/ink/blob/master/examples/erc721/lib.rs. |
+| 1. | Creation of smart contracts using Ink. | Smart contract would be required to send achievments NFT who complete the course. This action would be triggered from the backend once user hits any milestone or completes her course. |
+| 2. | The DOT token | We will be using **DOT** token which is native to Polkadot platform to drive the platform so that users can buy the course and tokens will directly go to the creator's account. Creators can earn using this platform. |
 
 
 ### Milestone 2
@@ -85,9 +97,9 @@ Level 2: Up to $30,000, 3 approvals
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run the frontend code, which will show how the new functionality works. |
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. We will serve our frontend via NGINX as our reverse proxy. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
 | 0. | UI development | We will be using **NextJS** which is on top of **React** to develop frontend of our educational platform. It will be served via Netlify. Profile of user will show achievement NFTs, certificates, profile, wallet information. Data that needs to be manually added is: Name, Past Experience, Skills. Please check wireframes given in this page. |
 
@@ -100,7 +112,7 @@ Level 2: Up to $30,000, 3 approvals
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run the backend code which will be written in Django, which will show how the new functionality works. |
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
