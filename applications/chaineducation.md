@@ -17,6 +17,83 @@ Students can get them enrolled in a classroom. For every achievement, they will 
 Students can rate and review the courses too.
 Instructors can create a paid course too, if any student purchases a course, on whatever price they will purchase will directly go to the instructor of the course.
 
+### API Spec
+
+```
+ - [GET] / -> Home Page
+ - [GET] /login -> Login Page
+ - [GET] /signup -> Signup Page
+ - [GET] /toc -> Terms and Conditions Page
+ - [GET] /privacy-policy -> Privacy Policy Page
+ - [GET] /about-us -> About Us Page
+ - [GET] /contact-us -> Contact Us page
+ - [GET] /community -> Community Page
+ - [GET] /job-board -> Job Board Page
+ - [GET] /profile -> User Profile
+ - [GET] /account -> User Account Settings
+ - [GET] /dashboard -> User's Dashboard
+ - [GET] /api/v1/tracks -> Get All Courses
+ - [GET] /api/v1/{course_uuid} -> Get A Course
+ - [GET] /api/v1/{course_uuid}/{chapter_slug} -> Get A Chapter
+ - [POST] /api/v1/tracks/new -> Create a new Course
+ - [POST] /api/v1/{course_uuid}/new -> Create a new Chapter
+ - [GET] /api/v1/{course_uuid}/reviews -> Get reviews of a Course
+ - [POST] /api/v1/{course_uuid}/reviews/new -> Create a new review for a coursed
+```
+
+### Database schema of base models
+
+```
+class User:
+    username = models.CharField(max_length=200, null=False, primary_key=True, db_index=True)
+    first_name = models.CharField(max_length=100, null=True, blank=True)
+    last_name = models.CharField(max_length=100, null=True, blank=True)
+    wallet_address = models.CharField(max_length=128, null=True, blank=True)
+
+class Profile:
+    skills = models.OneToManyField(Skill, on_delete=models.CASCADE)
+    education
+
+class Skill:
+    skill_id = models.IntegerField(null=False, blank=False, primary_key=True)
+    skill_name = models.CharField(max_length=100, null=False, blank=False, db_index=True)
+    education = models.OneToManyField(Education, on_delete=models.CASCADE)
+
+class Education:
+    education_id = models.IntegerField(null=False, blank=False, primary_key=True)
+    degree_name = models.CharField(null=False, blank=False, max_length=200, db_index=True)
+
+class Track:
+    track_uuid = models.UUIDField(primary_key=True)
+    track_name = models.CharField(max_length=200, db_index=True)
+    track_description = models.TextField()
+
+    def total_chapters():
+        return Course.objects.filter(track_uuid=track_uuid)
+
+class Course:
+    track_id = models.ForignField(Track, on_delete=models.CASCADE)
+    course_name = models.CharField(max_length=500, db_index=True)
+    course_description = models.TextField()
+    author = models.ForignField(User, on_delete=models.CASCADE)
+
+    def author_name():
+        return author.first_name + " " + author.last_name
+
+class Chapter:
+    course_id = models.ForignField(Course, on_delete=models.CASCADE)
+    name = models.CharField(db_index=True)
+    video_url = models.URLField()
+    html_content = models.FileField()
+
+class Review:
+    review_id = models.ForignField(Course, on_delete=models.CASCADE)
+    user = models.ForignField(User, on_delete=models.CASCADE)
+    rating = models.IntegerField()
+    review_content = models.TextField()
+
+```
+
 ### Simillar platforms
  - https://buildspace.so/solidity
  - https://learnweb3.io/
