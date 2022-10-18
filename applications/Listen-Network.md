@@ -81,12 +81,12 @@ Get them to interact. They don't need to think about how to maintain their curre
 
 ## Development Roadmap
 ### Overview
-* **Total Estimated Duration:** 4 months
-* **Full-Time Equivalent (FTE):** 8FTE
+* **Total Estimated Duration:** 5 months
+* **Full-Time Equivalent (FTE):** 10FTE
 * **Total Costs:** 24k USD
 ### Milestone 1 — Implement Room, Sell-NFT, LNS, ID modules.
 * **Estimated duration:** 2 month
-* **FTE:** 3
+* **FTE:** 4
 * **Costs:** 8000 USD
 
 | Number | Deliverable     | Specification                                    |
@@ -104,7 +104,7 @@ Get them to interact. They don't need to think about how to maintain their curre
 |     5. | other pallets   | acala's currencies and other related multi-asset modules as well as cross-chain transfer modules enable multi-asset management and cross-chain transfer |
 ### Milestone 2 - UI design, APP development， Room DAO
 * **Estimated duration:** 2 month
-* **FTE:** 3
+* **FTE:** 4
 * **Costs:** 8000 USD
 
 | Number | Deliverable       | Specification                                                |
@@ -117,8 +117,8 @@ Get them to interact. They don't need to think about how to maintain their curre
 |     5. | UI design and development of Room Dao | Design the UI of DAO and develop DAO-related APP functions                                      | 
 
 ### Milestone 3 - TEE, ipfs, Socializing with strangers
-* **Estimated duration:** 2 month
-* **FTE:** 3
+* **Estimated duration:** 1 month
+* **FTE:** 2
 * **Costs:** 8000 USD
 * 
 | Number | Deliverable               | Specification                                 |
