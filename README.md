@@ -284,16 +284,17 @@ The best way to find out about upcoming hackathons is by following Polkadot on t
 
 Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 
-- [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
-- [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
-- [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
-- [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
-- [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
+- [Acala Grants Program](https://acala.network/ecosystem-program)
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
+- [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
+- [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
+- [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
+- [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program) 
+- [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
+- [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
+- [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [Picasso / Composable Grants Program](https://grants.composable.finance)
 - [SubQuery Grants Programme](https://subquery.network/grants)
-- [Acala Grants Program](https://acala.network/ecosystem-program)
-- [OAK’s Developer Grants](https://oak.tech/community/grants/)
 
 ## :information_source: License<!-- omit in toc -->
 
