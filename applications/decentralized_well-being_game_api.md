@@ -12,6 +12,8 @@ Health Hero
 
 0xc7ad868f9b421dabf7cdaa0e6c508ff74e2f1cfd (USDT)
 
+**Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/675#issuecomment-1129061247)
+
 ## Overview
 
 ### Introduction

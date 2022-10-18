@@ -150,9 +150,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Overview
 
-- **Total Estimated Duration:** 2 months
+- **Total Estimated Duration:** ~~2 months~~ 5 months in total
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** 20,000 USDT
+- **Total Costs:** 27,500 USDT
 
 ## Milestone 1 — Implement core functionality
 
@@ -238,9 +238,9 @@ Operation published and the ID is bafybeifcmrf2ulnwdrhjpkwi2ifbixegegcs22rqbvlzh
 
 ## Milestone 2 — Implementing the Workflow pallet, execution, manifest generation, and CID and Multihash Operations
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** ~~1 month~~ actual 3.5 months
 - **FTE:** 2
-- **Costs:** 10,000 USDT
+- **Costs:** 17,500 USDT
 
 | Number | Deliverable                                | Specification                                                                                                                                                                                    |
 | -----: | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
