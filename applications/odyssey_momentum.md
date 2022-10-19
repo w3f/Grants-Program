@@ -1,7 +1,7 @@
 # Odyssey - Momentum
 
 - **Team Name:** Odyssey B.V.
-- **Payment Address: 0x826fde427152d9fc0bf045dd858baa2de06b383b (USDC) 
+- **Payment Address:** 0x826fde427152d9fc0bf045dd858baa2de06b383b (USDC) 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
