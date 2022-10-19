@@ -27,13 +27,13 @@ Plasm Network(https://plasmnet.io) is a scaling Dapps platform on Substrate. Pla
 
 * **Total Estimated Duration:** 6 weeks
 * **Full-time equivalent (FTE):** 0.6
-* **Total Costs:** 0.7 BTC
+* **Total Costs:** 10,000 USDT
 
 ### Milestone 1
 
 * **Estimated Duration:** 3 weeks 
 * **Full-time equivalent (FTE):** 0.6
-* **Costs:** 0.7 BTC
+* **Costs:** 10,000 USDT
 
 Ledger API support for Polkadot JS Apps.
 
