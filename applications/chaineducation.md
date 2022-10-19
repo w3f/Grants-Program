@@ -47,7 +47,7 @@ Instructors can create a paid course too, if any student purchases a course, on 
  - https://www.web3.university/
 
 ### How our platform will be unique?
- - None of the above platform provides hands-on tutorial on Substrate ecosystem and Rust. We will cover both of them.
+ - None of the above platform provides hands-on tutorials on Substrate ecosystem and Rust. We will cover both of them.
  - Creators can earn with our platform if anyone buys their course. This will also act as marketing of our platform since creator will promote her platform our her social media.
  - We will be giving achievement and course completion NFTs.
 
@@ -91,12 +91,12 @@ Level 2: Up to $30,000, 3 approvals
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 14 weeks
-* **Total Costs:** 30,000 USD
+* **Total Estimated Duration:** 11 weeks
+* **Total Costs:** 20,000 USD
 
 ### Milestone 1
 
-* **Estimated Duration:** 5 weeks 
+* **Estimated Duration:** 8 weeks 
 * **Costs:** 10,000 USD
 
 
@@ -107,9 +107,13 @@ Level 2: Up to $30,000, 3 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute tokens to user once they unlock and achievements. Also, they will be responsible to mint achievement, milestone and course completion NFTs. IPFS will store key attributes of user profile. We will be using **erc20** token: https://github.com/paritytech/ink/blob/master/examples/erc20/lib.rs and **erc721** token to mint smart contract: https://github.com/paritytech/ink/blob/master/examples/erc721/lib.rs. |
-| 1. | Creation of smart contracts using Ink. | Smart contract would be required to send achievments NFT who complete the course. This action would be triggered from the backend once user hits any milestone or completes her course. |
-| 2. | The DOT token | We will be using **DOT** token which is native to Polkadot platform to drive the platform so that users can buy the course and tokens will directly go to the creator's account. Creators can earn using this platform. |
+| 0. | Creation of smart contracts using Solidity. | These smart contracts will be responsible to distribute tokens to user once they unlock and achievements. Also, they will be responsible to mint achievement, milestone and course completion NFTs. We will be using **erc20** token: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol and **erc721** token to mint smart contract: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol. We will be deploying our smart contracts on **Moonbeam** parachain. |
+| 1. | Creation of smart contracts using Solidity. | Smart contract to store all the tracks. Here track represents a blockchain like Polkadot, Ethereum, Solana, etc. |
+| 2. | Creation of smart contracts using Solidity. | Smart contract to store all the courses. |
+| 3. | Creation of smart contracts using Solidity. | Smart contract to store all the lessons of a course. Video will go inside IPFS. |
+| 4. | Creation of smart contracts using Solidity. | Smart contract to store rating and review of a course. |
+| 5. | Creation of smart contracts using Solidity. | Smart contract to store all the students information. |
+| 6. | Creation of smart contracts using Solidity. | Smart contract to store all the instructors information. |
 
 
 ### Milestone 2
@@ -126,26 +130,6 @@ Level 2: Up to $30,000, 3 approvals
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. We will serve our frontend via NGINX as our reverse proxy. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
 | 0. | UI development | We will be using **NextJS** which is on top of **React** to develop frontend of our educational platform. It will be served via Netlify. Profile of user will show achievement NFTs, certificates, profile, wallet information. Data that needs to be manually added is: Name, Past Experience, Skills. Please check wireframes given in this page. |
-
-### Milestone 3
-
-* **Estimated Duration:** 3 weeks 
-* **Costs:** 10,000 USD
-
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run the backend code which will be written in Django, which will show how the new functionality works. |
-| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| 0. | Database Modelling | Database modelling of all the first class entities.|
-| 1. | API Design | High level API design.|
-| 2. | User Authentication and Authorization | Building auth for the backend.|
-| 3. | Course upload system | Development of course upload system and infra so that instructors can create and upload the course.|
-| 4. | Student rating and review system | Development of review and rating system so that students can review a course.|
-| 5. | API and Infrastructure | We are building our backend using Django which is written in **Python** due to it's strong ORM support. We will be using DRF(Django Rest Framework) to build the API layer. We will be using **py-substrate-api** library to communicate with Blockchain.|
 
 * Our progress can be tracked here on this trello board: https://trello.com/b/mAEuIivn/product-development
 
