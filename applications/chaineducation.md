@@ -16,6 +16,7 @@ Educators can create their classroom, they can upload as many courses in a class
 Students can get them enrolled in a classroom. For every achievement, they will earn achievement NFT.
 Students can rate and review the courses too.
 Instructors can create a paid course too, if any student purchases a course, on whatever price they will purchase will directly go to the instructor of the course.
+We are also working on our own Job Board where users can find Web3 jobs with ease.
 
 ### API Spec
 
@@ -50,6 +51,7 @@ Instructors can create a paid course too, if any student purchases a course, on 
  - None of the above platform provides hands-on tutorials on Substrate ecosystem and Rust. We will cover both of them.
  - Creators can earn with our platform if anyone buys their course. This will also act as marketing of our platform since creator will promote her platform our her social media.
  - We will be giving achievement and course completion NFTs.
+ - We are also working on our own Job Board where users can find Web3 jobs with ease.
 
 ### Mockups
 
