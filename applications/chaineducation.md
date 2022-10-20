@@ -109,13 +109,13 @@ Level 2: Up to $30,000, 3 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| 0. | Creation of smart contracts using Solidity. | These smart contracts will be responsible to distribute tokens to user once they unlock and achievements. Also, they will be responsible to mint achievement, milestone and course completion NFTs. We will be using **erc20** token: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol and **erc721** token to mint smart contract: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol. We will be deploying our smart contracts on **Moonbeam** parachain. |
-| 1. | Creation of smart contracts using Solidity. | Smart contract to store all the tracks. Here track represents a blockchain like Polkadot, Ethereum, Solana, etc. |
-| 2. | Creation of smart contracts using Solidity. | Smart contract to store all the courses. |
-| 3. | Creation of smart contracts using Solidity. | Smart contract to store all the lessons of a course. Video will go inside IPFS. |
-| 4. | Creation of smart contracts using Solidity. | Smart contract to store rating and review of a course. |
-| 5. | Creation of smart contracts using Solidity. | Smart contract to store all the students information. |
-| 6. | Creation of smart contracts using Solidity. | Smart contract to store all the instructors information. |
+| 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute tokens to user once they unlock and achievements. Also, they will be responsible to mint achievement, milestone and course completion NFTs. We will be using **erc20** token: https://github.com/paritytech/ink/blob/master/examples/erc20/lib.rs and **erc721** token to mint smart contract: https://github.com/paritytech/ink/blob/master/examples/erc721/lib.rs. We will be deploying our smart contracts on **Moonbeam** parachain. |
+| 1. | Creation of smart contracts using Ink. | Smart contract to store all the tracks. Here track represents a blockchain like Polkadot, Ethereum, Solana, etc. |
+| 2. | Creation of smart contracts using Ink. | Smart contract to store all the courses. |
+| 3. | Creation of smart contracts using Ink. | Smart contract to store all the lessons of a course. Video will go inside IPFS. |
+| 4. | Creation of smart contracts using Ink. | Smart contract to store rating and review of a course. |
+| 5. | Creation of smart contracts using Ink. | Smart contract to store all the students information. |
+| 6. | Creation of smart contracts using Ink. | Smart contract to store all the instructors information. |
 
 
 ### Milestone 2
