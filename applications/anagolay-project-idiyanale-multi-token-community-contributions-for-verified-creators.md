@@ -313,7 +313,7 @@ Tipping pallet is the core feature in our attempt to build the functionality and
 
 **Types**
 
-- `TippingToken` enumeration of the supported tokens for tipping, namely `IDI`, `KSM`, `DOT`.
+- `TippingToken` enumeration of the supported tokens for tipping
 - `TippingSettings` is a structure associated with every domain, providing the following fields:
   - `enabled`: specifies that the tipping is enabled or not
   - `accounts`: a map having `TippingToken` key and `ReceiverAccountId` values, where each entry specifies to which wallet to send the tips given in some kind of token
@@ -355,31 +355,9 @@ sequenceDiagram
     Note over Alice,Extension: Confetti 🥳
 ```
 
-And here is the Sequence diagram for tipping in non-native tokens or currency like KSM:
-
-```mermaid
-sequenceDiagram
-    actor Alice
-		Extension->>IdiyanaleChain: Check for verification
-    IdiyanaleChain->>Extension: Domain verified
-    Note over Extension: Enable tipping functionality
-    Alice->>+Extension: Select non-native token for tipping (KSM)
-    Alice->>+Extension: Select the amount
-    Extension->>+KusamaChain: Check funds for the account
-    KusamaChain-->>Extension: Funds amount
-    Note over Extension: Enable tipping button if Funds > Tip amount
-    Alice->>+Extension: Send tip
-    Extension->>+KusamaChain: Transfer funds from Alice to Owner
-    KusamaChain-->>Extension: Success
-    Extension-->>Alice: Tip successful
-    Note over Alice,Extension: Confetti 🥳
-```
-
-The difference is that tipping in the non-native token (IDI) will not trigger the `tip()` extrinsic on the Idiyanale chain, which means that the transfer of funds will not be considered a tip when it comes to the Idiyanale point fo view. This also means that the users will not be able to see the metrics that are available when tipping in the native token.
-
 Anagolay Browser Extension Mockup:
 
-![Tipping_Extension.png](https://ipfs.anagolay.network/ipfs/bafkreihprvt4742vbgnpote34sven5b5otccp2kwn6uwswpbpynggqpnlq?filename=Tipping_Extension.png)
+![Tipping_Extension.png](https://ipfs.anagolay.network/ipfs/bafybeid6sjvds5ewqmkffcglglliqwbomp45mjd2xh5zor6onfvcad4zaq?filename=Tipping_Extension.png)
 
 # Future Plans
 
