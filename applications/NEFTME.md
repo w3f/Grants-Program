@@ -295,8 +295,8 @@ Challenge “Be real”.
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can test out the app |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. Unit tests, integration tests and End 2 End tests |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Direct Messaging | Allow direct decentralized messaging inside the dApp. Planning on integrating with WalletConnect Chat API to integrate with an established and well known company  |
-| 2. | NFT as an Audio | Users are now able to create audio NFTs with their phones. Bringing the ability for users, for the first time, to create and LISTEN to their NFTs |
+| 1. | Direct Messaging | Allow direct decentralized messaging inside the dApp. Planning on integrating with WalletConnect Chat API to integrate with an established and well known company. We're currently already using WalletConnect provider, so the integration would be easy and seamless  |
+| 2. | NFT as an Audio | Users are now able to create audio NFTs with their phones. Bringing the ability for users, for the first time, to create and LISTEN to their NFTs. NFTs contract will be constructed using ink!. Store content on a decentralized storage system (Arweave or IPFS) |
 | 3. | Abuse content analysis | Ability to report NFTs, giving the user the option to moderate the content they see (+18 or not)  |
 | 4. | Share NFTs | Share NFTs via a link that redirects to the app. Deeplinking |
 | 5. | Share Profiles | Share Profiles via link that redirects to the app. Deeplinking |
@@ -316,12 +316,12 @@ Challenge “Be real”.
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can test out the app |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. Unit tests, integration tests and End 2 End tests |
 | 0d. | Docker | We will provide a Dockerfile(s), or similar way, that can be used to test all the functionality delivered with this milestone. |
-| 1. | NFT as a video | Users are now able to create and watch video NFTs with their phones |
+| 1. | NFT as a video | NFTs contract will be constructed using ink!. Store content on a decentralized storage system (Arweave or IPFS). Users are now able to create and watch video NFTs with their phones |
 | 2. | Invite code system | Start onboarding users via invite only system. Simple user restriction system (Increase Demand and keep suply low) |
-| 3. | Reward System / Referral to friends | Reward users for onboarding new users. Simples user onboarding reward system |
-| 4. | Internal Wallet | Internal wallet to improve user experience. Choose a company to integrate an internal wallet and improve UI/UX |
-| 5. | On ramp | Integrate with a liquidity provider to allow users to easily and quickly buy NEFT Tokens |
-| 6. | NEFTME Challenges | Social feature of the App to allow challenging between users with NEFT tokens. Full implementation |
+| 3. | Reward System / Referral to friends | Reward users for onboarding new users. Simples user onboarding reward system. Setup  |
+| 4. | Internal Wallet | Internal wallet to improve user experience. Choose a company to integrate an internal wallet and improve UI/UX. Integrate with a internal wallet provider (Node Finance for example) |
+| 5. | On ramp | Integrate with a liquidity provider to allow users to easily and quickly buy NEFT Tokens. Circle, for example |
+| 6. | NEFTME Challenges | Social feature of the App to allow challenging between users with NEFT tokens. Full implementation.  |
 
 
 
