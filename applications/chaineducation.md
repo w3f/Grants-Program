@@ -212,13 +212,21 @@ Level 2: Up to $30,000, 3 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. We will serve our frontend via NGINX as our reverse proxy. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| 0. | UI development | We will be using **NextJS** which is on top of **React** to develop frontend of our educational platform. It will be served via Netlify. Profile of user will show achievement NFTs, certificates, profile, wallet information. Data that needs to be manually added is: Name, Past Experience, Skills. Please check wireframes given in this page. |
-
+| 0. | Homepage | We will be building v2 of our homepage using NextJS. Our homepage will provide all the relavent information. It will contain list of top courses along with it's rating and reviews. A video on how to use this platform. |
+| 1. | Signup Page | This page displays signup page. |
+| 2. | Login Page | This page displays login page. |
+| 3. | Profile Page | This will be user's profile page. It will contain Education, Work Experience of a person. Also, user can choose to showcase all the Course Completion NFTs user is having. |
+| 4. | Tracks Page | This page displays all the learning tracks. |
+| 5. | Course Page | This page displays information of a perticular course. |
+| 6. | Lesson Page | This page displays specific lesson. |
+| 7. | Terms and Conditions Page | This page displays terms and conditions. |
+| 8. | Privacy Policy Page | This page displays Privacy Policy. |
+| 9. | About Us Page | This page displays About Us page. |
+| 10. | Contact Us Page | This page displays Contact Us page. |
   
 
 * Our progress can be tracked here on this trello board: https://trello.com/b/mAEuIivn/product-development
 
-  
 
 ## Additional Information :heavy_plus_sign:
 
