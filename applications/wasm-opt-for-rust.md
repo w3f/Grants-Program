@@ -90,7 +90,6 @@ We will also deliver the following:
 - Full README and API documentation
 - Basic regression tests for the binary and library
 - CI for the platforms
-  - `aarch64-apple-darwin`
   - `aarch64-unknown-linux-gnu`
   - `i686-pc-windows-msvc`
   - `i686-unknown-linux-gnu`
