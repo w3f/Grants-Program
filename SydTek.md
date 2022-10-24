@@ -89,6 +89,7 @@ Two projects outside the Polkadot and Kusama ecosystems offer digital inheritanc
 - Suyeon Han
 - Assune Cotlage
 - Joshua Waller
+- Charles von Goins II
 
 ### Contact
 
@@ -153,6 +154,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://www.linkedin.com/in/dontrail-cotlage-9312a660/
 - https://www.linkedin.com/in/joshua-waller-33935773/
 - https://www.linkedin.com/in/suyeon-han/
+- https://www.linkedin.com/in/charles-von-goins-ii-968aa824a/
 
 ## Development Status :open_book:
 
@@ -170,15 +172,15 @@ https://twitter.com/bitfalls/status/152929818658155725) and the social recovery 
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
-- **Full-Time Equivalent (FTE):**  3FTE, the listed members would contribute to different deliverables based on their skill-set.
-- **Total Costs:** 29,964 USDC 
+- **Total Estimated Duration:** 4 months
+- **Full-Time Equivalent (FTE):**  5FTE, the listed members would contribute to different deliverables based on their skill-set.
+- **Total Costs:** 29,600 USDC 
 
 ### Milestone 1 — State of the Industry on soulbound tokens and digital inheritance 
 
 - **Estimated duration:** 1 month
-- **FTE:**  3
-- **Costs:** 10,000 USDC - link to budget details outlined in the Additional Information Section
+- **FTE:**  5
+- **Costs:** 15,600 USDC - link to budget details outlined in the Additional Information Section
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
 | ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -189,8 +191,8 @@ https://twitter.com/bitfalls/status/152929818658155725) and the social recovery 
 ### Milestone 2 — Interviews and Data Collection with Phala Network, RMRK, and Parity Technologies
 
 - **Estimated Duration:** 1 month
-- **FTE:**  3
-- **Costs:** 10,000 USDC - link to budget details outlined in the Additional Information Section
+- **FTE:**  5
+- **Costs:** 14,000 USDC - link to budget details outlined in the Additional Information Section
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
 | ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -198,23 +200,23 @@ https://twitter.com/bitfalls/status/152929818658155725) and the social recovery 
 |  **1.** | Interviews | The SydTek team will interview members of Phala Network, RMRK and Parity Technologies to identify ways users can leverage SBTs and the Social Recovery pallet within the Polkadot and Kusama ecosystems for digital inheritance.         |
 | **1a.** | Specific Coverage | Specific deep dives will propose models and approaches users can leverage to develop proposed solutions of SBT wallets, as well as additional use cases for the Social Recovery pallet.
 
-### Milestone 3 — Peer Review, Journal Publication and Dissemination of Research
+### Milestone 3 — Peer Reviewed Academic Journal Article Publication
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 2 months
 - **FTE:**  3
-- **Costs:** 9,964 USDC - link to budget details outlined in the Additional Information Section
+- **Costs:** 1,150 USDC - link to budget details outlined in the Additional Information Section
 
 | Number | Deliverable       | Specification                                                                                                                                                                                                                                                                                                                  |
 | ------: | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |      0. | Rights            | All developed materials and raw data will be publicly accessible and public domain via a GitHub repository. Milestone 3 is research oriented and as such there is no code to test.                                                                                                                                                                                                                                                          |
-|  **1.** | Submit to OA journal | The SydTek team submit the completed journal article for publication in a peer-reviewed open access journal to ensure the research is available for everyone. The team will then travel to academic institutions across the United States and Canada to disseminate research.         |
-| **1a.** | Specific Coverage | The team will hold sessions at Georgetown University in Washington, DC in the United States, at McGill University in Montreal, Canada, and virtually at the Kings College School of Law in London, UK to share the findings of the study. These events will also be recorded and held in the metaverse.
+|  **1.** | Submit to OA journal | The SydTek team submit the completed journal article for publication in a peer-reviewed open access journal to ensure the research is available for everyone.|
+| **1a.** | Specific Coverage | The team will hold virtual sessions for univerisities such as Georgetown University in Washington, DC in the United States, McGill University in Montreal, Canada, and at the Kings College School of Law in London, UK to share the findings of the study. These events will also be recorded and held in the metaverse.
 
 ...
 
 ## Future Plans
 
-After the dissemination of the foundational case study for soulbound tokens and the Social Recovery pallet at institutions and university blockchain clubs globally, we have plans to conduct follow-up research with law students and academic researchers in the field of Law on the potential legal impacts of soulbound tokens on estate law. As Justin Goldston is an Graduate Advisory Board Member at Georgetown University, Law Professors at Georgetown are curious about the impact of NFTs within the legal practice. Additionally, after a presentation for faculty members from the Smeal College of Business and the Dickinson School of Law at Penn State University, which can be seen here https://bit.ly/3AQiH0C on sustainable impacts of the metaverse, Professors from the Dickinson School of Law are also looking to conduct research on NFTs, the metaverse, and law. After the completion and publishing of the original article, the team looks to conduct a follow-up study of the legal impacts of soulbound tokens. Next, we also look to continue to work with the team at Phala to build out a proof of concept with Intentionally Designed Solutions for the Kusama ecosystem with hope that this concept could be moved to Polkadot once the Social Recovery pallet is available on Polkadot. To continue the awareness of the Social Recovery pallet and the proposed digital inheritance tool, we mentioned the concept to Ray Lu - the Founder of Bit.Country - and we hope to introduce this tool within the Bit.Country metaverse within the Polkadot and Kusama ecosystems. Finally, with the recent annoucement that the Klaytn blockchain has developed a strategic partnership with Parity, in an effort to demonstrate the interoperability of Substrate, we will also work with Neo Yiu and Dr. Sangmin Seo on integrating the proposed solution into the Klaytn metaverse.
+Upon completion of the journal article, the team will look to apply for a grant from the Treasury to promote the article in-person at academic conferences and at universities. After the dissemination of the foundational case study for soulbound tokens and the Social Recovery pallet at institutions and university blockchain clubs globally, we have plans to conduct follow-up research with law students and academic researchers in the field of Law on the potential legal impacts of soulbound tokens on estate law. As Justin Goldston is an Graduate Advisory Board Member at Georgetown University, Law Professors at Georgetown are curious about the impact of NFTs within the legal practice. Additionally, after a presentation for faculty members from the Smeal College of Business and the Dickinson School of Law at Penn State University, which can be seen here https://bit.ly/3AQiH0C on sustainable impacts of the metaverse, Professors from the Dickinson School of Law are also looking to conduct research on NFTs, the metaverse, and law. After the completion and publishing of the original article, the team looks to conduct a follow-up study of the legal impacts of soulbound tokens. Next, we also look to continue to work with the team at Phala to build out a proof of concept with Intentionally Designed Solutions for the Kusama ecosystem with hope that this concept could be moved to Polkadot once the Social Recovery pallet is available on Polkadot. To continue the awareness of the Social Recovery pallet and the proposed digital inheritance tool, we mentioned the concept to Ray Lu - the Founder of Bit.Country - and we hope to introduce this tool within the Bit.Country metaverse within the Polkadot and Kusama ecosystems. Finally, with the recent annoucement that the Klaytn blockchain has developed a strategic partnership with Parity, in an effort to demonstrate the interoperability of Substrate, we will also work with Neo Yiu and Dr. Sangmin Seo on integrating the proposed solution into the Klaytn metaverse.
 
 
 ## Additional Information :heavy_plus_sign:
