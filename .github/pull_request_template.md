@@ -1,9 +1,21 @@
-# Grant Application Checklist
+#### Project Abstract
 
-- [ ] The [application template](https://github.com/w3f/Open-Grants-Program/blob/master/applications/application-template.md) has been copied, renamed ( `project_name.md`) and updated.
-- [ ] A BTC or Ethereum (DAI) address for the payment of the milestones is provided inside the application.  
-- [ ] I have read and acknowledged the [Terms and Conditions](https://github.com/w3f/Open-Grants-Program/blob/master/src/T&Cs.md).
+> Please replace these instructions with a brief description of your project summarising key points (1-2 paragraphs).
+>
+> If your application is a follow-up to a previous grant, please mention which one in the first line of the abstract and include a link to previous pull requests if applicable.
+
+#### Grant [level](https://github.com/w3f/Grants-Program#level_slider-levels)
+
+- [ ] **Level 1**:  Up to $10,000, 2 approvals
+- [ ] **Level 2**:  Up to $30,000, 3 approvals
+- [ ] **Level 3**:  Unlimited, 5 approvals (for >$100k: Web3 Foundation Council approval)
+
+#### Application Checklist
+
+- [x] The [application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md) has been copied and aptly renamed (`project_name.md`).
+- [ ] I have read the [application guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/grant_guidelines_per_category.md).
+- [ ] A BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) address for the payment of the milestones is provided inside the application.
 - [ ] The software delivered for this grant will be released under an open-source license specified in the application.
-- [ ] The total funding amount of the project is below USD $30k for initial grant applications and $100k for follow-up grants.
-- [ ] The initial PR contains only one commit (squash if needed before submitting your PR).
-- [ ] The grant will only be announced once the first milestone [has been accepted](https://github.com/w3f/Grant-Milestone-Delivery).
+- [ ] The initial PR contains only one commit (squash and force-push if needed).
+- [ ] The grant will only be announced once the first milestone [has been accepted](https://github.com/w3f/Grant-Milestone-Delivery#process) (see the [announcement guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/announcement-guidelines.md)).
+- [ ] I prefer the discussion of this application to take place in a private Element/Matrix channel. My username is: `@_______:matrix.org` (change the homeserver if you use a different one)

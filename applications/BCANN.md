@@ -9,6 +9,7 @@
 * **Project Name:** BCANN ( The blockchain system for Assigned Names And Numbers )
 * **Proposer:** Witter Lee
 * **Payment Address:** 0x4575f459F79B6ed5Dd644aBCc64affCc4c680DE3
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/353#issuecomment-946463960)
 
 
 ## Project Overview :

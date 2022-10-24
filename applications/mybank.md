@@ -5,6 +5,7 @@
 - **Team Name:** MyBank Labs
 
 - **Payment Address(DAI):** 0xd2884f29b1aE21Cd88c51068f2C81060B58ddC1e
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/343#issuecomment-908667062)
 
 
 

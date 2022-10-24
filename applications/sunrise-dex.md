@@ -3,6 +3,7 @@
 * **Project Name:** Sunrise DEX
 * **Team Name:** Sunrise Protocol
 * **Payment Address:** bc1qv2jhx5ykm4szuu9lp4ehtxclf67v6n7dprcgyl 
+* **Status:** [Terminated](https://github.com/w3f/Open-Grants-Program/pull/164#issuecomment-874248620)
 
 ## Project Overview :page_facing_up: 
 

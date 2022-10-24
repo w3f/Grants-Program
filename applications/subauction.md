@@ -2,7 +2,7 @@
 
 - **Project:** Subauction
 - **Team name:** Subauction
-- **BTC address:** 3MXF8e315nbRKzU5ZhxBxNUeew9xDKstTx (BTC)
+- **BTC address:** 387RAYPUGkQuyeqcj3Quw1ErH5a7Hria6N (BTC)
 
 ## Project Overview :page_facing_up:
 
@@ -63,10 +63,7 @@ Smart contract approach has following advantages
 However, downside is obviously not exploiting great capabilities that Substrate offers and having to implement a lot of stuff by reinventing the wheel. 
 
 ### Token
-To be honest, we haven’t decided whether this project deserves its own token but we are more inclined to have one. The reason is, if we want to introduce proper governance and have our auctions usable across multiple chains, then there has to be a chain-agnostic way to elect members of council, approve new content, change rules of the auctions, etc. 
-In that case, smart contract keeping the token seems like a best choice since we can have a governance body supported by our tokenomics completely independent of the underlying platform where our auctions run.
-
-We will have to explore how would the token coming from the smart contract interact with the pallet and how can the users import that token to their wallets.
+We have decided to use Basilisk as the home chain so the auctions will leverage Basilisk's fungible as well as non-fungible tokens for transfers and governance. As it uses FRAME's Uniques pallet it will be possible to easily migrate and reuse the solution on other Substrate based chains.
 
 ### Curatorship
 Curatorship is closely tied to the governance since only approved members can have elevated privileges over the system (e.g. vote on removal of inappropriate content). Any user can report offensive content to the curators. Curators then remove the content or reject the report. We will probably run a Discord/Telegram channel to open a discussion about a right way to do the curatorship and what kind of stuff is acceptable for public auctioning and what is not 
@@ -100,14 +97,14 @@ Also, we are already in touch with several leading NFT projects within the Polka
 
 There are multiple different approaches to NFT implementation on the market with no official standard set in stone yet on Polkadot. We want to keep our solution as flexible as possible and have the ability to be integrated with a broad spectrum of NFTs. At this point, the closest resemblance of an NFT standard we could find was the ORML by Acala so we started and will continue building based on this library. On the other hand it should be easy in the future to migrate the solution to a different kind of NFT implementation or a Polkadot standard.
 
+UPDATE 2021-09-28: The solution has been migrated from ORML to FRAME's Uniques pallet.
+
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Michael Repetny (Product dev at Subauction, previously co-founder of web analytics Zeerat, graduate of University of Economics)
-- Petr Mensik (Blockchain dev at Subauction, previously Java/Clojure backend developer, graduate of Ostrava University of Technology)
-- Jindrich Zeleny (Blockchain dev at Subauction, previously BI engineer, graduate of Brno University of Technology)
-- we plan to bring a part-time (0.5 MD) technical writer to help with specific milestones as further described
+- Jindrich Zeleny (Blockchain dev @ HydraDX)
+- Valery Gantchev (Blockchain dev @ HydraDX)
 
 ### Team Website
 
@@ -123,24 +120,22 @@ We participated in the Encode hackathon winning 2nd prize in the Polkadot catego
 
 Besides blockchain development, each member has 5+ years of experience in Computer Science in different areas such as BI, software development, and enterprise-grade engineering.
 
-### Team Code Repos
+### Team Code Repo
 
-- https://github.com/polkadotters/SubAuction
-- https://github.com/polkadotters/SubAuction_Frontend
+- https://github.com/galacticcouncil/Basilisk-node/tree/feat/auctions/pallets
 
 ### Team LinkedIn Profiles
 
-- https://www.linkedin.com/in/repetny
-- https://www.linkedin.com/in/petr-men%C5%A1%C3%ADk-2566394b/
 - https://www.linkedin.com/in/jindrich-zeleny
+- https://www.linkedin.com/in/valery-gantchev-20a03971/
 
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
-- **Total Estimated Duration:** ~1.5 months
-- **Full-time equivalent (FTE):** 3.5
-- **Total Costs:** ~24,000 USD
+- **Total Estimated Duration:** ~3 months
+- **Full-time equivalent (FTE):** 2 FTE
+- **Total Costs:** ~12,000 USD
 
 ### Technologies used
 - Built as a standalone auction module using **Rust** and **Substrate**
@@ -148,12 +143,13 @@ Besides blockchain development, each member has 5+ years of experience in Comput
 - Integrated with IPFS
 - For the actual code please check our **[repository](https://github.com/polkadotters/SubAuction)**
 
-### Milestone 0: Implement Auction Type Generalisation
+### Milestone 1: Implement Auction Type Generalisation
 
 See [Auction Type Generalization](#auction-type-generalization) for definitions.
 
-- **Estimated Duration:** 2-4 weeks
-- **FTE:** 3.5
+- **Estimated Duration:** 4-5 weeks
+- **Estimated Delivery:** November, 2021
+- **FTE:** 2
 - **Costs:** $6,000
 - Implement Auction Type Generalisation from the currently developed type of English auction
     - redefine traits and add more of them (these are interfaces to handle various types of auctions), current solution has only one
@@ -163,20 +159,19 @@ See [Auction Type Generalization](#auction-type-generalization) for definitions.
 - The code will have proper unit-test coverage to ensure functionality and robustness.
 - Provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
 
-### Milestone 1: Implement New Auction Types
+### Milestone 2: Implement New Auction Types
 
 See [Candle Auction Type](#candle-auction-type) and [Top-up Auction Type](#top-up-auction-type) for definitions.
 
-- **Estimated Duration:** 1-2 weeks
-- **FTE:** 2.5
+- **Estimated Duration:** 2-3 weeks
+- **Estimated Delivery:** March, 2022
+- **FTE:** 2
 - **Costs:** $6,000
 - Implement:
   - the [Candle Auction Type](#candle-auction-type), a specific type for NFT auction to prevent snipping (placing bids in the very last second to gamble the system)
   - the [Top-up Auction Type](#top-up-auction-type), a specific type for NFT auction usually used for fundraising or charity auctions
-- Deliver docker-compose file to run node
 - The code will have proper unit-test coverage to ensure functionality and robustness.
 - Provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
-- Record demo walkthrough recording to better illustrate how to set up auctions of different types and describe different mechanics between each of them.
 
 #### Candle Auction Type
 
@@ -189,21 +184,6 @@ Candle auction is a variant of the English auction where the last part of the au
 This is a very popular auction type used by charities. Each participant will pay a "top-up fee" which is based on the bid he made minus the closest lower bid. This effectively means that each participant will pay the top-up fee except the first and the last bidder. The last bidder wins the auction, obtains the item, and only pays the item's price. We believe that bringing this kind of auction type enables entities to raise funds for good causes so that we can connect socially responsible projects with supporters and philanthropists.
 
 [Top-up Auction Type Diagram](https://github.com/green-jay/Open-Grants-Program/blob/24ed082bf5a6778392d6264ffc81cbbed77acfc2/applications/topup_auction.png?raw=true)
-
-### Milestone 2: Governance, Content Curation & Business Model Mechanics
-
-See [Governance and Content Curation](#governance-and-content-curation) and [Business Model Mechanics](#business-model-mechanics) for definitions.
-
-- **Estimated Duration:** 2-4 weeks
-- **FTE:** 3.5
-- **Costs:** $12,000
-- Implement:
-  - the content curation system and introduce governance DAO to prevent possible abusive content
-- Deliver docker-compose file to run node
-- The code will have proper unit-test coverage to ensure functionality and robustness.
-- Provide both inline documentation of the code and a basic tutorial describing how the software can be used and tested.
-- See [Governance and Content curation specification](#governance-and-content-curation)
-
 
 ### Community engagement
 

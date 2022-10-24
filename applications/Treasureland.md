@@ -3,6 +3,7 @@
 - **Project Name:** Treasureland
 - **Team Name:** dego-labs
 - **Payment Address:** 0xd2b2755a4bDCAF415E9a74e3EfE41D23D2F70C53
+- **Status:** [Terminated](https://github.com/w3f/Open-Grants-Program/pull/218#issuecomment-882562817)
 
 *、*
 

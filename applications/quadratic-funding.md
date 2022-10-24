@@ -119,7 +119,7 @@ https://drive.google.com/drive/folders/1nZPg4PmWSBxbfHuMyuAlw8UVXSybjTHG?usp=sha
 ### Overview
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):**  4 FTE
-* **Total Costs:** 30,000 DAI
+* **Total Costs:** 20,000 DAI
 
 ### Milestone 1 — Implement Substrate Modules 
 * **Estimated Duration:** 1.5 month
@@ -139,7 +139,7 @@ https://drive.google.com/drive/folders/1nZPg4PmWSBxbfHuMyuAlw8UVXSybjTHG?usp=sha
 ### Milestone 2 — Web Application (Dapp)
 * **Estimated Duration:** 1 month
 * **FTE:**  4
-* **Costs:** 10,000 DAI
+* **Costs:** 0 DAI
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -147,10 +147,8 @@ https://drive.google.com/drive/folders/1nZPg4PmWSBxbfHuMyuAlw8UVXSybjTHG?usp=sha
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can interact with the application with Polkadot.js browser extension. |
 | 0c. | Testing Guide | The code will have unit-test coverage (min. 70%) to ensure functionality and robustness. In the guide we will describe how to run these tests | 
 | 0d. | Tutorial | We will write Medium tutorials that explains the work done as part of the grant. 
-| 1. | UI Design | We will create UI sketches to demonstrate the user flow of the web application, and post here for advice |
-| 2. | Javascript Library | We will add new APIs to Polkadot javascript library, test those and get them ready for any kind of node.js or website javascript program |  
-| 3. | Application Implementation | We will incorporate the javascript library from the previous step and build a web application that interacts with our substrate chain. Note that the web is a separate product from polkadot.js.org/apps/#/rpc and will provide user friendly interface without necessary knowledge of API calls. |  
-| 4. | Deployment Instructions | We will provide one-line runner for the web application so others could spin up the app easily. |
+| 1. | Application Implementation | We will incorporate the javascript library from the previous step and build a web application that interacts with our substrate chain. Note that the web is a separate product from polkadot.js.org/apps/#/rpc and will provide user friendly interface without necessary knowledge of API calls. |  
+| 2. | Deployment Instructions | We will provide one-line runner for the web application so others could spin up the app easily. |
 
 ## Future Plans
 > Please include the team's long-term plans and intentions.

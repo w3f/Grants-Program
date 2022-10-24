@@ -3,6 +3,7 @@
 * **Project:** RareLink Protocol
 * **Proposer:** 0x522359
 * **Payment Address:** 3Ah1QWfs9oEPdhRDYkWPSJYf5yKa7NLcSF
+* **Status:** [Terminated](https://github.com/w3f/Open-Grants-Program/pull/86#issuecomment-874241559)
 
 ## 1. Project Overview :page_facing_up: 
 
