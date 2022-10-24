@@ -318,7 +318,7 @@ This milestone delivers at least one (but maybe more) pallets to enable staking 
 | 2b.|Extended stake pallet | Fractionalized NFTs implemented|
 | 2c.|Extended stake pallet | Configurable parameters and rewards operational. Staking rewards are divided using some formula using configurable parameters per entity, that sets the ratio  between the staker, the entity that has been staked in, and the commission an entity received and the amount received by the Treasury.|
 | 2d.|Management pallet | Optional pallet for managing the parameters and rewards and/or managing the payment of the rewards.|
-| 3a.| Generalized stake pallet| Enabling datatype configuration to enable users to configure their data type at instantiation on the runtime.|
+| 3a.| Generalized stake pallet| Enabling data type configuration to enable users to configure their data type at instantiation on the runtime.|
 | 4a.| Generalized stake pallet| Delivery of the Stake pallet (maybe more than one) enabling Staking on assets (NFTs) and rewards management including documentation.|
 | 4b.| Benchmarking report(s)| Benchmarking reports available|
 | 4c.| Pallet(s) in production| Pallet integrated on the parachain runtime as an example of the first implementation of the NFT stake pallet, enabling active maintenance of the repo based on lessons learned.|
