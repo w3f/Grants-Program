@@ -21,6 +21,7 @@
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
+  - [Office Hours](#office-hours)
 - [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
   - [Treasury](#treasury)
   - [Hackathons](#hackathons)
@@ -232,6 +233,16 @@ We have Matrix/Element channels for real-time discussions on Web3 and Polkadot. 
 Besides, we also have a **community room for all grant recipients**. Head over to that room to share your experience with other grantees, ask grants-related questions or simply hang out:
 
 - [W3F Grants Community](https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&via=matrix.org)
+
+### Office Hours
+
+Web3 Foundation Grants Office Hours are a chance to ask the grants team directly questions regarding a specific grant application. It offers
+- General guidance regarding the grants program 
+- Some quick initial feedback
+- Navigating the ecosystem 
+
+It’s **not** a chance to pitch your project especially since most of the committee won’t participate in these calls. If you are interested in it, apply to the [Web3 Foundation Grants Office Hours :alarm_clock: here](). 
+
 
 ## :rocket: Alternative Funding Sources
 
