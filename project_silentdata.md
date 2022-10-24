@@ -168,7 +168,7 @@ Silent Data Architecture: [Silent Data Architecture](https://docs.google.com/doc
 | 0a.     | License                        | MIT.                                                                           
 | 0b.     | Documentation                  | We will provide documentation on Silent Data. 
 | 0c.     | Docker                         | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.
-| 0d.     | Testing and Testing Guide      | The testnet examples will be shared with Polkadot developers to integrate Silent Data into their dapps and parachains
+| 0d.     | Testing and Testing Guide      | The testnet examples will be shared with Polkadot developers to integrate Silent Data into their dapps and parachains.
 | 0e.     | Article                        | We will publish an article/workshop that explains what was done/achieved in the extension and deployment of Silent Data confidential computing oracle.
 | 1.      | Extension                      | We will extend the Silent Data confidential computing oracle to generate proofs verifiable by substrate smart contracts by adding support for the sr25519 signature scheme and the polkadot{.js} wallet extension. 
 | 2.      | Library                        | We will develop a JavaScript/TypeScript library to enable Node.JS backends to interact with the Silent Data API. The library will allow DApp creators to generate new proof certificate requests and fetch the results of checks.
