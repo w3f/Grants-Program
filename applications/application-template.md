@@ -1,14 +1,8 @@
-# Name of your Project
+# Sator x Polkadot Grant Proposal
 
-> This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
->
-> See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
-- **Team Name:** Legal name of your team (e.g. Duo)
+- **Team Name:** Sator 
 - **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
-
-> ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
@@ -57,41 +51,49 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+Isla Perfito (Co-Founder, CEO/CTO) Isla is a Data Scientist and Blockchain Engineer. As the Chief Technology Officer of Sator, Isla is responsible for designing and building Sator technical product as well as managing initial and ongoing Sator development. Isla’s experience includes leading Data Science and development on the Digital Assets team at Credit Suisse and Blockchain Engineering at unicorn startup Chainalysis. Isla graduated from NYU with a degree in Computer Science.
+Chris Martin (Co-Founder, CRO) Series 7 & 63 licenses, Chris led crypto at Potomac Investments including representing Pantera Capital. Prior to that, Chris advised Wyre (crypto onboarding ramp), Aventus (a 2017 ICO) and Breakaway Festival (largest U.S. independent music festival and producers of first crypto music festival). Chris served as VP of STW Fixed Income and Bank Examiner Intern at the Federal Reserve System. Chris was also elected Trustee of the University of Colorado where Chris graduated Summa Cum Laude.
+
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:**
+- **Contact Name:** Chris Martin
+- **Contact Email:** sator@sator.io
+- **Website:** sator.io
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 1831 12th Ave South Nashville TN 37203 United States
+- **Registered Legal Entity:** Sator.io Corp
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+We are an experienced team, our current project is Sator. In the past the Sator core team have launched Storj, managed digital assets dev at Credit Suisse, developed blockchain software at Chainalysis, derivatives trading and more.
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+https://github.com/SatorNetwork
 
+Contributions SATOR dev team has made to other projects:
+https://github.com/hellobloom
+https://github.com/affinityproject
+https://github.com/storj/storj
+https://github.com/nemgrouplimited/symbol-desktop-wallet
+https://github.com/onomyprotocol/market
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
+https://github.com/islaperfito
+https://github.com/dmitrymomot
+https://github.com/BruSD
+https://github.com/ValeriiLav
+https://github.com/Qweder93
+https://github.com/Sator-Moon
+https://github.com/mbortsov
+https://github.com/NickolayH
 
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
+Team LinkedIn Profiles (if available)
+Christina Martin https://www.linkedin.com/in/chrismartinhodl/
+Isla Perfito https://www.linkedin.com/in/islarose/
 
 ## Development Status :open_book:
 
@@ -123,37 +125,62 @@ For each milestone,
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 6 months
+- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 4 FTE)
+- **Total Costs:** Requested amount in USD for the whole project: $50,000 USD. Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — Polkadot Wallet Integration
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **Estimated duration:** 3 months
+- **Costs:** 22,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can transact using Sator in-app DOT wallet, and show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains how to use in-app DOT wallet. |
+| 1. | Overview |  In this milestone we will complete the integration of a Polkadot wallet which allows for simple and easy access to private keys and signing transactions, adding DOT ecosystem functionality to our holders. |
+| 2. | Wallet SDK | We will  test Parity Signer wallet and Polkawallet SDK 0.5.0 for integrating substrate-based blockchain as a plugin. |
+| 2a. | Dart Package | Building a polkawallet_plugin dart package |
+| 3. | Polkadot-JS API | Build Polkadot-JS wrapper |
+| 3a. | API wrapper | The App will use a polkadot-js/api instance running in a hidden webView to connect to a remote node on Polkadot. |
+| 4. | Seamless wallet UI | We will deliver sample wallet UI that allows a user to switch between SOL (current) and DOT wallet directly in app on iOS/Android.
 
 
-### Milestone 2 Example — Additional features
+### Milestone 2 — Add DOT functionality to NFT Marketplace
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **Estimated Duration:** 3 months
+- **Costs:** 23,000 USD
 
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can transact using Sator in-app DOT wallet, and show how the new functionality works. |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains how to use in-app DOT wallet. |
+| 1. | Overview |  In this milestone we will complete the integration of Polkadot NFT functionality which allows for collecting Polkadot NFTs from our marketplace nft.sator.io |
+| 2. | React Package Upgrades | We will upgrade NFT Marketplace react packages and wallet adapters in order to support Polkadot NFTs in our marketplace. Without react package upgrades, this could otherwise break the marketplace. |
+| 2a. | Polkadot.js Extension | Install Polkadot (.js) Extension|
+| 3. | Smart contract | We will deploy our custonm marketplace smart contract by using a matcher, Wasm and metadata.json files |
+| 3a. | Efinity | We will explore working with Efinity for NFT bridging and paratoken integration which would be a standard for token migration across different parachains in the Polkadot ecosystem, but also into and out of Ethereum and other EVM systems|
+| 4. | Polkadot-JS UI | Browser based wallet used with Polkadot-JS Extension: We will deliver sample wallet UI using the Polkadot-JS UI for browser based wallet integration to Sator NFT Marketplace |
+
+### Milestone 3 — End-to-End Tests
+
+- **Estimated duration:** 3 months
+- **Costs:** 5,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can transact using Sator in-app DOT wallet, and show how the new functionality works. |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+| 1. | End-to-end tests |  We provide end-to-end tests that test the interplay between the new components. |
 ...
 
 
