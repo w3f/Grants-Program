@@ -189,7 +189,7 @@ Level 2: Up to $30,000, 3 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute tokens to user once they complete the course. We will be using **erc721** token to mint the NFT: https://github.com/paritytech/ink/blob/master/examples/erc721/lib.rs. |
+| 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute NFTs to user once they complete the course. We will be using **erc721** token to mint the NFT: https://github.com/paritytech/ink/blob/master/examples/erc721/lib.rs. |
 | 1. | Creation of smart contracts using Ink. | Smart contract to store all the tracks. A track will have multiple courses. A course will have multiple lessons. Video of a lesson will go inside IPFS and it's hash will be stored inside a smart contract. A course will have multiple reviews. Smart contract will also store user's information weather user is an instructor or a student. |
 
 ### Milestone 2
