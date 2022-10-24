@@ -311,18 +311,18 @@ This milestone delivers at least one (but maybe more) pallets to enable staking 
 | 0b.|Documentation|We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
 | 0c.|Testing and Testing Guide|We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
 | 0d.|Docker|We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
-| 1a.|Basic stake pallet | Storage V1 defined|
+| 1a.|Basic stake pallet | Storage V1 defined and implemented as described in Milestone 1|
 | 1b.|Basic stake pallet | Staking / Unstaking on NFTs operational|
 | 1c.|Basic stake pallet | Handling Rewards operational|
-| 2a.|Momentum Use cases | Storage V2 defined|
-| 2b.|Momentum Use cases | Fractionalized NFTs implemented|
-| 2c.|Momentum Use cases | Complex Configurations and Custom Rewards operational|
-| 2d.|Momentum Use cases | Definition of a dedicated pallet for handling the rewards|
-| 3a.| Apply generic principles| Generic principles for re-use applied|
-| 3b.| Apply generic principles| Customizations  feature implemented|
-| 4a.| Delivery| Stake pallet (maybe more than one) - Staking on assets (NFTs) and rewards management|
-| 4b.| Delivery| Benchmarking reports available|
-| 4c.| Delivery| Pallet integrated on the parachain runtime|
+| 2a.|Extended stake pallet | Storage V2 defined and implemented as succesor of V1|
+| 2b.|Extended stake pallet | Fractionalized NFTs implemented|
+| 2c.|Extended stake pallet | Configurable parameters and rewards operational. Staking rewards are divided using some formula using configurable parameters per entity, that sets the ratio  between the staker, the entity that has been staked in, and the commission an entity received and the amount received by the Treasury.|
+| 2d.|Management pallet | Optional pallet for managing the parameters and rewards and/or managing the payment of the rewards.|
+| 3a.| Generalized stake pallet| Enabling datatype configuration to enable users to configure their data type at instantiation on the runtime.|
+| 4a.| Generalized stake pallet| Delivery of the Stake pallet (maybe more than one) enabling Staking on assets (NFTs) and rewards management including documentation.|
+| 4b.| Benchmarking report(s)| Benchmarking reports available|
+| 4c.| Pallet(s) in production| Pallet integrated on the parachain runtime as an example of the first implementation of the NFT stake pallet, enabling active maintenance of the repo based on lessons learned.|
+
 
 
 ### Milestone 3 Plugins Pallet (30%)
@@ -338,15 +338,14 @@ This milestone delivers at least one (but maybe more) pallets enabling the creat
 | 0b.|Documentation|We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
 | 0c.|Testing and Testing Guide|We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
 | 0d.|Docker|We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
-| 1a.| Management| Add / Remove / Edit Plugin info functionalities|
-| 1b.|Management|Manage Plugin parameters|
-| 2a.|Rewards|Define the Reward category type|
-| 2b.|Rewards|Reward the Dev with the right Category Type.|
-| 3.|Configuration|Configuration for different Plugin Economic models implemented|
-| 4.|Events registration| Registration of custom Plugin events on-chain implemented|
-| 5a.| Delivery| Plugins pallet (maybe more than one) - Plugin management and Event registration|
-| 5b.| Delivery| Benchmarking reports available| 
-| 5c.| Delivery| Pallet integrated on the parachain runtime|
+| 1a.|Plugins Pallet| Register / Unregister / Edit Plugin info functionalities|
+| 1b.|Plugins Pallet| Enable management of the plugin parameters|
+| 2a.|Documentation | Describe the Reward category types|
+| 2b.|Plugins Pallet |Implementation of the reward system per category type. Note: There might be a Rewards Pallet that will take care of this|
+| 3.|Plugins Pallet|Configuration for different Plugin Economic models implemented. Note: There might be a Rewards Pallet that will take care of this|
+| 4.|Plugins Pallet| Registration of custom Plugin events on-chain implemented. Enabling every plugin to register events on chain|
+| 5a.| Plugins Pallet| Add security so only authorized plugins and/or developers can register events on chain|
+| 5b.| Pallet(s) in production| Pallet integrated on the parachain runtime as an example of the first implementation of the Plugins pallet, enabling active maintenance of the repo based on lessons learned.|
 
 
 ## Future Plans
