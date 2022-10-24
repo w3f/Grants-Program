@@ -90,19 +90,17 @@ Get them to interact. They don't need to think about how to maintain their curre
 * **FTE:** 4
 * **Costs:** 8000 USD
 
-| Number | Deliverable     | Specification                                    |
-|-------:|-----------------|--------------------------------------------------|
-|    0a. | License         | APACHE2.0, GPL3                                  |
-|    0b. | Documentation   | Write Document for each module                   |
-|    0c. | Testing         | Write test code for each module                  |                                                                                                                                       |
-|    0d. | Comment         | Provide detailed comments for each module        |
-|    0e. | docker          | Lets users launch the Listen Network node with one click                        |
-|    0f. | Benchmarking    | Write Benchmarking code for each module          |
-|     1. | room pallet     | Responsible for the basic management of the room, such as creating the room, dissolving the room, inviting others in, kicking people out of the group, etc         |
-|     2. | sell nft pallet | It is responsible for providing the user NFT buying and selling function, where users can buy their favorite NFTS and sell the avatars they don't use for a while     |
-|     3. | LNS pallet      | The Listen Network domain name function allows users to transfer money based on domain names           |
-|     4. | id pallet       | The unique id of the user, the credentials of the real user                                  |
-|     5. | other pallets   | acala's currencies and other related multi-asset modules as well as cross-chain transfer modules enable multi-asset management and cross-chain transfer |
+| Number | Deliverable                | Specification                                                                                                                                                     |
+|-------:|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                    | APACHE2.0, GPL3                                                                                                                                                   |
+|    0b. | Documentation              | Write Document for each module                                                                                                                                    |
+|    0c. | Testing and Testing Guide  | Write test code for each module. In the guide, we will describe how to run these tests.                                                                                                                                 |                                                                                                                                       |
+|    0e. | Docker                     | Lets users launch the Listen Network node with one click                                                                                                          |
+|     1. | Substrate module: Room     | Responsible for the basic management of the room, such as creating the room, dissolving the room, inviting others in, kicking people out of the group, etc        |
+|     2. | Substrate module: NFT-Sell | It is responsible for providing the user NFT buying and selling function, where users can buy their favorite NFTS and sell the avatars they don't use for a while |
+|     3. | Substrate module:LNS       | The Listen Network domain name function allows users to transfer money based on domain names                                                                      |
+|     4. | Substrate module: CID      | The unique id of the user, the credentials of the real user                                                                                                       |
+|     5. | other pallets              | acala's currencies and other related multi-asset modules as well as cross-chain transfer modules enable multi-asset management and cross-chain transfer           |
 ### Milestone 2 - UI design, APP development， Room DAO
 * **Estimated duration:** 2 month
 * **FTE:** 4
@@ -110,8 +108,11 @@ Get them to interact. They don't need to think about how to maintain their curre
 
 | Number | Deliverable       | Specification                                                |
 |-------:|-------------------|--------------------------------------------------------------|
-|    0a. | Documentation     | Provide documentation for using App                          |
-|    0b. | Testing           | Complete all module tests                                    | 
+|    0a. | License                    | APACHE2.0, GPL3     |
+|    0b. | Documentation     | Provide documentation for using App                          |
+|    0c. | Testing and Testing Guide  | Write test code for each module. In the guide, we will describe how to run these tests.   |
+|    0d. | Docker                     | Lets users launch the Listen Network node with one click                                                                                                          |
+|0e. | Article |We will provide articles on how to use the listen app on your phone, such as how to create an account, how to invite friends, how to create a group and start your voice live|
 |     1. | APP design        | Complete the page design of the basic functions of the APP and the design of the official NFT                                   |
 |     2. | APP development   | Chat and exchange of friends, basic management of voice rooms, social recovery, enabling users to freely distribute their token candy in groups, NFT buying and selling functions, etc |
 |     4. | Room DAO          | Combined with daos on the chain, every room can realize real decentralization                                 |
@@ -122,14 +123,17 @@ Get them to interact. They don't need to think about how to maintain their curre
 * **FTE:** 2
 * **Costs:** 8000 USD
 * 
-| Number | Deliverable               | Specification                                 |
-|-------:|---------------------------|-----------------------------------------------|
-|    0a. | Documentation             | Provide documentation for using App           |
-|    0b. | Testing                   | Complete all module tests                     | 
-|     1. | Socializing with strangers | Add the stranger discovery function in the APP and recommend strangers to users                      | 
-|     2. | speech module             | It's a bit like Twitter, where you can speak freely, but because of the peculiarities of online speech, there may be AI involved in filtering and partially centralized processing | 
-|     3. | TEE                       |           Encrypts the data to be encrypted                     |
-|     4. | ipfs                      | ipfs storage of encrypted user data                    |
+| Number | Deliverable                | Specification                                                                                                                                                                      |
+|-------:|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                    | APACHE2.0, GPL3                                                                                                                                                                    |
+|    0b. | Documentation              | Provide documentation for using App                                                                                                                                                |
+|    0c. | Testing and Testing Guide  | Write test code for each module. In the guide, we will describe how to run these tests.                                                                                            |
+|    0d. | Docker                     | Lets users launch the Listen Network node with one click                                                                                                                           |
+|0e. | Article                    | We'll provide articles on how to protect the data you don't want to leak to the outside world                                                                                      |
+|     1. | Socializing with strangers | Add the stranger discovery function in the APP and recommend strangers to users                                                                                                    | 
+|     2. | Substrate module: Speech   | It's a bit like Twitter, where you can speak freely, but because of the peculiarities of online speech, there may be AI involved in filtering and partially centralized processing | 
+|     3. | TEE                        | Encrypts the data to be encrypted                                                                                                                                                  |
+|     4. | ipfs                       | ipfs storage of encrypted user data                                                                                                                                                |
 
 ## Future Plans
 
