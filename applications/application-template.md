@@ -51,8 +51,8 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-Isla Perfito (Co-Founder, CEO/CTO) Isla is a Data Scientist and Blockchain Engineer. As the Chief Technology Officer of Sator, Isla is responsible for designing and building Sator technical product as well as managing initial and ongoing Sator development. Isla’s experience includes leading Data Science and development on the Digital Assets team at Credit Suisse and Blockchain Engineering at unicorn startup Chainalysis. Isla graduated from NYU with a degree in Computer Science.
-Chris Martin (Co-Founder, CRO) Series 7 & 63 licenses, Chris led crypto at Potomac Investments including representing Pantera Capital. Prior to that, Chris advised Wyre (crypto onboarding ramp), Aventus (a 2017 ICO) and Breakaway Festival (largest U.S. independent music festival and producers of first crypto music festival). Chris served as VP of STW Fixed Income and Bank Examiner Intern at the Federal Reserve System. Chris was also elected Trustee of the University of Colorado where Chris graduated Summa Cum Laude.
+- Isla Perfito (Co-Founder, CEO/CTO) Isla is a Data Scientist and Blockchain Engineer. As the Chief Technology Officer of Sator, Isla is responsible for designing and building Sator technical product as well as managing initial and ongoing Sator development. Isla’s experience includes leading Data Science and development on the Digital Assets team at Credit Suisse and Blockchain Engineering at unicorn startup Chainalysis. Isla graduated from NYU with a degree in Computer Science.
+- Chris Martin (Co-Founder, CRO) Series 7 & 63 licenses, Chris led crypto at Potomac Investments including representing Pantera Capital. Prior to that, Chris advised Wyre (crypto onboarding ramp), Aventus (a 2017 ICO) and Breakaway Festival (largest U.S. independent music festival and producers of first crypto music festival). Chris served as VP of STW Fixed Income and Bank Examiner Intern at the Federal Reserve System. Chris was also elected Trustee of the University of Colorado where Chris graduated Summa Cum Laude.
 
 
 ### Contact
