@@ -60,41 +60,65 @@ It's not clear at the given time if the Stake Pallet will be one or more pallets
 
 **Publicly Exposed Methods**  
 
-- pub fn stake_on(origin: OriginFor<T>, asset: T::Asset , controller: T::AccountId, stash: T::AccountId, amount: T::Balance) -> DispatchResultWithPostInfo
+```Rust
+pub fn stake_on(origin: OriginFor<T>, asset: T::Asset , controller: T::AccountId, stash: T::AccountId, amount: T::Balance) -> DispatchResultWithPostInfo
+```   
 
-- pub fn unstake_on(origin: OriginFor<T>, asset: T::Asset, controller: T::AccountId, stash: T::AccountId, amount: T::Balance) -> DispatchResultWithPostInfo
+```Rust
+pub fn unstake_on(origin: OriginFor<T>, asset: T::Asset, controller: T::AccountId, stash: T::AccountId, amount: T::Balance) -> DispatchResultWithPostInfo
+```
 
-- pub fn set_controller_of(origin: OriginFor<T>, asset: T::Asset, stash: T::AccountId, controller: T::AccountId, new_controller_wallet: T::AccountId) -> DispatchResultWithPostInfo
+```Rust
+pub fn set_controller_of(origin: OriginFor<T>, asset: T::Asset, stash: T::AccountId, controller: T::AccountId, new_controller_wallet: T::AccountId) -> DispatchResultWithPostInfo
+```
 
-- pub fn set_stash_of(origin: OriginFor<T>, asset: T::Asset, controller: T::AccountId, stash: T::AccountId) -> DispatchResultWithPostInfo
+```Rust
+pub fn set_stash_of(origin: OriginFor<T>, asset: T::Asset, controller: T::AccountId, stash: T::AccountId) -> DispatchResultWithPostInfo
+```
 
-- pub fn set_admin(origin: OriginFor<T>, new_admin_addr: T::AccountId) -> DispatchResultWithPostInfo
+```Rust
+pub fn set_admin(origin: OriginFor<T>, new_admin_addr: T::AccountId) -> DispatchResultWithPostInfo
+```
 
-- pub fn get_rewards(origin: OriginFor<T>, asset: T::Asset, controller: T::AccountId, stash: T::AccountId) -> DispatchResultWithPostInfo
+```Rust
+pub fn get_rewards(origin: OriginFor<T>, asset: T::Asset, controller: T::AccountId, stash: T::AccountId) -> DispatchResultWithPostInfo
+```
 
-- pub fn expired_rewards(origin: OriginFor<T>) -> DispatchResultWithPostInfo
+```Rust
+pub fn expired_rewards(origin: OriginFor<T>) -> DispatchResultWithPostInfo
+```
 
 **Runtime Storage**  
 
 *Asset Info*  
 Info regarding the asset that is being staked to.  
-- pub type AssetInfos<T> = StorageDoubleMap<_, Twox64Concat, T::AssetCollId, Twox64Concat, T:AssetId, AssetInfo<T::Balance, T::CurrencyId>, ValueQuery>;
+```Rust
+pub type AssetInfos<T> = StorageDoubleMap<_, Twox64Concat, T::AssetCollId, Twox64Concat, T:AssetId, AssetInfo<T::Balance, T::CurrencyId>, ValueQuery>;
+```
 
 *Ledger info*  
 Ledger with general information about a controller account.  
-- pub type LedgerInfo<T> = StorageMap<_, Twox64Concat, T::AccountId, Ledger<T::Balance, T::CurrencyId>> 
+```Rust
+pub type LedgerInfo<T> = StorageMap<_, Twox64Concat, T::AccountId, Ledger<T::Balance, T::CurrencyId>>
+```
 
 *Current era*  
 Info about the current era.  
-- pub type CurrentEra<T> = StorageValue<_, EraInfo, ValueQuery> 
+```Rust
+pub type CurrentEra<T> = StorageValue<_, EraInfo, ValueQuery>
+```
 
 *Next era starting block*   
 Info about in which block the next era will start  
-- pub type NextEraStartingBlock<T: Config> = StorageValue<_, T::BlockNumber, ValueQuery>
+```Rust
+pub type NextEraStartingBlock<T: Config> = StorageValue<_, T::BlockNumber, ValueQuery>
+```
 
 *Storage Version*  
 Info about the storage version of this pallet.  
-- pub(crate) type StorageVersion<T> = StorageValue<_, Version, ValueQuery>
+```Rust
+pub(crate) type StorageVersion<T> = StorageValue<_, Version, ValueQuery>
+```
 
 **Use Case Diagram**  
 ![Use Case Diagram Stake Pallet](https://drive.google.com/uc?id=1Q3fn92yZ0dRwTDG5s9sJPXTN4BU3NYyB)   
@@ -107,33 +131,53 @@ The Plugins pallet is going to take care of the Plugin Management, Plugin reward
 
 **Publicly Exposed Methods**
 
-- pub fn register(origin: OriginFor<T>, plugin_info: T::PluginInfo) -> DispatchResultWithPostInfo
+```Rust
+pub fn register(origin: OriginFor<T>, plugin_info: T::PluginInfo) -> DispatchResultWithPostInfo
+```
 
-- pub fn unregister(origin: OriginFor<T>, plugin_id: T::PluginId) -> DispatchResultWithPostInfo
+```Rust
+pub fn unregister(origin: OriginFor<T>, plugin_id: T::PluginId) -> DispatchResultWithPostInfo
+```
 
-- pub fn event(origin: OriginFor<T>, plugin_id: T::PluginId) -> DispatchResultWithPostInfo
+```Rust
+pub fn event(origin: OriginFor<T>, plugin_id: T::PluginId) -> DispatchResultWithPostInfo
+```
 
-- pub fn subscribe(origin: OriginFor<T>, plugin_id: T::PluginId, subscriber_info: T::SubscriberInfo) -> DispatchResultWithPostInfo
+```Rust
+pub fn subscribe(origin: OriginFor<T>, plugin_id: T::PluginId, subscriber_info: T::SubscriberInfo) -> DispatchResultWithPostInfo
+```
 
-- pub fn unsubscribe(origin: OriginFor<T>, pluginId: T::PluginId, subscriber_id: T::SubscriberId) -> DispatchResultWithPostInfo
+```Rust
+pub fn unsubscribe(origin: OriginFor<T>, pluginId: T::PluginId, subscriber_id: T::SubscriberId) -> DispatchResultWithPostInfo
+```
 
-- pub fn subscription_payment(origin: OriginFor<T>, pluginId: T::PluginId) -> DispatchResultWithPostInfo
+```Rust
+pub fn subscription_payment(origin: OriginFor<T>, pluginId: T::PluginId) -> DispatchResultWithPostInfo
+```
 
-- pub fn edit(origin: OriginFor<T>, plugin_id: T::PluginId, plugin_info: T::PluginInfo) -> DispatchResultWithPostInfo
+```Rust
+pub fn edit(origin: OriginFor<T>, plugin_id: T::PluginId, plugin_info: T::PluginInfo) -> DispatchResultWithPostInfo
+```
 
 **Runtime Storage**  
 
 *Plugin info*  
 General information about a Plugin.  
-- pub type PluginInfo<T> = StorageMap<_, Twox64Concat, T::PluginId, PluginInfo<T::Balance, T::CurrencyId>> 
+```Rust
+pub type PluginInfo<T> = StorageMap<_, Twox64Concat, T::PluginId, PluginInfo<T::Balance, T::CurrencyId>> 
+```
 
 *Subscriber info*  
 General information about a Subscriber of a Plugin.
-- pub type SubscriberInfo<T> = StorageMap<_, Twox64Concat, T::SubscriberId, PluginInfo<T::Balance, T::CurrencyId>> 
+```Rust
+pub type SubscriberInfo<T> = StorageMap<_, Twox64Concat, T::SubscriberId, PluginInfo<T::Balance, T::CurrencyId>> 
+```
 
 *Storage Version*  
 Info about the storage version of this pallet.  
-- pub(crate) type StorageVersion<T> = StorageValue<_, Version, ValueQuery>
+```Rust
+pub(crate) type StorageVersion<T> = StorageValue<_, Version, ValueQuery>
+```
 
 **Use Case Diagram**  
 ![Use Case Diagram Plugins Pallet](https://drive.google.com/uc?id=1aXXljsgpX-kNm8e9mXF2aT-FuYs6hEHx)  
