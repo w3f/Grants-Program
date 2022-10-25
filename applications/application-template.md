@@ -1,7 +1,7 @@
 # Sator x Polkadot Grant Proposal
 
 - **Team Name:** Sator 
-- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:**  0x5c95d9BFF0f672562df784a5787eeA621a01dBDB (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
 ## Project Overview :page_facing_up:
@@ -12,40 +12,28 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-Please provide the following:
+Sator project concerns technology infrastructure to onramp global content to web3 at-scale. Specifically, Sator technologies enable the tokenization of network effect value surrounding streaming content that diffuses value throughout the ecosystem. Sator project empowers non-crypto-natives with digital in-app wallets that will include Polkadot which requires the creation of in-app wallet support on Substrate, using Parity signer technology and Polkawallet SDK. Polkadot in-app wallet support unlocks the following features:
 
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+- Users are able to view, burn (if an option exists), and transfer their NFTs through the Polkadot wallet. 
+- Users are allowed to create their own NFTs and collections via wallet. There also will be an option to create NFTs for a user profile photo, quiz rewards, etc.
+- Using DOT wallet functionality, users can make transactions to contracts directly.
+- With the wallet, our users can subscribe for events directly from smart contracts (use case: the new quiz of trivia on-chain will have a start time and users can subscribe and get notifications about it in the app)
+- In the wallet (also) users will be able to view all their bids and active auctions they have alive.
+
+Sator infrastructure focuses on solving friction for content rights holders and audiences to align interests and benefit from Polkadot in-app wallet functionality. It is important to create this solution to actually onboard content fully to web3 ownership models especially in the case of large slates of content. 
+
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+<img width="1579" alt="Screen Shot 2022-10-25 at 4 25 58 PM" src="https://user-images.githubusercontent.com/54420219/197875182-cb29b308-48a7-4e24-9726-fe5c254c3643.png">
 
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+<img width="1583" alt="Screen Shot 2022-10-25 at 4 30 03 PM" src="https://user-images.githubusercontent.com/54420219/197875805-9aff4a3a-f000-469c-b6ed-12bfb2b1471b.png">
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+<img width="1584" alt="Screen Shot 2022-10-25 at 4 30 13 PM" src="https://user-images.githubusercontent.com/54420219/197875852-183ea43f-8c70-454b-b27c-961ed6c8f566.png">
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+In this proposal, we raise the idea of building governance-focused cross-wallet support in our existing mobile app on iOS and Android. The app is in production and we are actively adding new in-app features regularly to appeal to our users. A cross-wallet DOT integration with our existing in app wallet native to Solana will encourage users to take part in various on-chain governance actions and be able to interact with on-chain governance activities in a low friction manner, thus improving the on-chain governance engagement. We are looking to have our app be accesible across multiple blockchains in an open format. Currently, the app only functions on the Solana network, and we see Polkadot as a great next step to improve multi-chain connectivity and interaction with other blockchains. This is a heavy lift but something we think is beneficial to our users and holders, and a great way to onboard the Polkadot ecosystem to our entertainment application. Longer build will include on-chain governance via substrate parachain, once we add DOT wallet functionality.
 
 ## Team :busts_in_silhouette:
 
@@ -53,6 +41,9 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 - Isla Perfito (Co-Founder, CEO/CTO) Isla is a Data Scientist and Blockchain Engineer. As the Chief Technology Officer of Sator, Isla is responsible for designing and building Sator technical product as well as managing initial and ongoing Sator development. Isla’s experience includes leading Data Science and development on the Digital Assets team at Credit Suisse and Blockchain Engineering at unicorn startup Chainalysis. Isla graduated from NYU with a degree in Computer Science.
 - Chris Martin (Co-Founder, CRO) Series 7 & 63 licenses, Chris led crypto at Potomac Investments including representing Pantera Capital. Prior to that, Chris advised Wyre (crypto onboarding ramp), Aventus (a 2017 ICO) and Breakaway Festival (largest U.S. independent music festival and producers of first crypto music festival). Chris served as VP of STW Fixed Income and Bank Examiner Intern at the Federal Reserve System. Chris was also elected Trustee of the University of Colorado where Chris graduated Summa Cum Laude.
+- Dmitry Momot VP Engineering, Sator. 8 years of experience building mobile applications.
+- Nicko Hryschenkov Product Manager
+- Rich Martinez VP Marketing
 
 
 ### Contact
@@ -75,21 +66,21 @@ We are an experienced team, our current project is Sator. In the past the Sator 
 https://github.com/SatorNetwork
 
 Contributions SATOR dev team has made to other projects:
-https://github.com/hellobloom
-https://github.com/affinityproject
-https://github.com/storj/storj
-https://github.com/nemgrouplimited/symbol-desktop-wallet
-https://github.com/onomyprotocol/market
+-https://github.com/hellobloom
+-https://github.com/affinityproject
+-https://github.com/storj/storj
+-https://github.com/nemgrouplimited/symbol-desktop-wallet
+-https://github.com/onomyprotocol/market
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-https://github.com/islaperfito
-https://github.com/dmitrymomot
-https://github.com/BruSD
-https://github.com/ValeriiLav
-https://github.com/Qweder93
-https://github.com/Sator-Moon
-https://github.com/mbortsov
-https://github.com/NickolayH
+-https://github.com/islaperfito
+-https://github.com/dmitrymomot
+-https://github.com/BruSD
+-https://github.com/ValeriiLav
+-https://github.com/Qweder93
+-https://github.com/Sator-Moon
+-https://github.com/mbortsov
+-https://github.com/NickolayH
 
 Team LinkedIn Profiles (if available)
 Christina Martin https://www.linkedin.com/in/chrismartinhodl/
@@ -186,18 +177,12 @@ For each milestone,
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+<img width="1579" alt="Screen Shot 2022-10-25 at 4 48 36 PM" src="https://user-images.githubusercontent.com/54420219/197878945-7b62306e-0771-455a-a3e6-0284eb55a694.png">
 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** Personal recommendation from Parity team.
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+Download our app in the iOS app store or Google play store. Our Streaming TV application will be available on a SmartTV near you ;)
