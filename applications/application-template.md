@@ -45,7 +45,7 @@ In this proposal, we raise the idea of building governance-focused cross-wallet 
 - Nicko Hryschenkov, Product Manager
 - Vlad Garhuska, Senior unity engineer
 - Bohdan Bodarenko, Game design lead
-- Rich Martinez VP Marketing
+- Rich Martinez, VP Marketing
 
 
 ### Contact
