@@ -563,3 +563,4 @@
 | [LeetCoin](https://www.leetcoin.co/) | LeetCoin | [GitHub](https://github.com/nashhq/leetcoin) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [727.ventures](https://github.com/727-Ventures) | Sol2Ink Phase 2 | [GitHub](https://github.com/727-Ventures) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [walt.id](https://walt.id/) | NFT infrastructure | [GitHub](https://github.com/walt-id) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [SydTek](https://sydtek.ai/) | Digital Inheritance in Web3: A Case Study of Soulbound Tokens and Social Recovery Pallets | N/A | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
