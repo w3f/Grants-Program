@@ -118,12 +118,12 @@ For each milestone,
 
 - **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 4 FTE)
-- **Total Costs:** Requested amount in USD for the whole project: $50,000 USD. Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Costs:** Requested amount in USD for the whole project: $60,000 USD. Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
 ### Milestone 1 — Polkadot Wallet Integration
 
 - **Estimated duration:** 3 months
-- **Costs:** 22,000 USD
+- **Costs:** 32,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -143,7 +143,7 @@ For each milestone,
 ### Milestone 2 — Add DOT functionality to NFT Marketplace
 
 - **Estimated Duration:** 3 months
-- **Costs:** 23,000 USD
+- **Costs:** 33,000 USD
 
 
 | Number | Deliverable | Specification |
