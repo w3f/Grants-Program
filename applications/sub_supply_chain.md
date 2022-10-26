@@ -2,7 +2,7 @@
 - **Project Name:** SubSupplyChain
 - **Team Name:** TwinP
 - **Payment Address:** 0xd042e53e22e9f941ceba02f4adb9d1b32ef43675
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 ## Project Overview
 
 ### Overview
@@ -12,7 +12,7 @@
 
 ### Project Details
 This project will help the supply chain avoid third-party authorities handling delivery by saving money and time. I would like to explain the purpose of the project with a real example.
-In this process will take place four different actors: admin, client, manager, courier, and postal workers.
+In this process will take place four different actors: admin, client, manager, courier.
 The whole process can have a status like ordered, assembling, ready to deliver, in delivering or sent. The
 package will have only one owner(for every step) and he will be in charge of the package.
 
@@ -26,25 +26,19 @@ MANAGER
 - The company will have a certain number of managers. A client can make an order and money/token will be
   locked to a third account and assigned randomly to one manager. Funds would be released to the company
   if the client receive the package. The order properties are weight, QRcode, company name, client name,
-  address, number of items, the id of the item, price for every item, and total price. After the manager
+  address, number of items, the id of the item, price for every item. After the manager
   has the order in his name he has the right to pass the status of that package from assembling to ready
-  to deliver or to decline it and the funds would be unlocked to the client.The manager can see all his
-  courier and their progress.A manager has the right to assign a package or list of packages to a courier,
-  it means the owner will remain in his name and only the assigned courier can scan and take ownership of
-  that package.
+  to deliver or to decline it and the funds would be unlocked to the client.
 
 COURIER
-- The courier will scan his package and take ownership of it.From now on he will be in charge if any
+- The courier will scan a package and take ownership of it or decline it.From now on he will be in charge if any
   package gets damaged or lost, or he can decline the package for any reason like miss information, package
-  opened, etc. The courier can see what packages must be delivered at the day's end. If the client is not
-  present at the time of delivery the courier should take it to the nearest postal office and the postal
-  workers should scan it to take ownership.
+  opened, etc.
 
 CLIENT
-- At every address, the client should scan the QR code and take ownership of the package or decline it for
+- After an order the client should scan the QR code and take ownership of the package or decline it for
   any reason like a damaged package. If the client scans the package, the money would be released to the
   admin, if not, the money would be released to the client.
-
 
 ADMIN
 - Creation of admin (once the admin is created no one else can be admin)
@@ -55,26 +49,48 @@ ADMIN
 
 MANAGER
 - Change the status of the package from ordered to assembling and from assembling to ready to deliver.
-- Assign a package to the courier.
-- See the list of couriers and their progress.
-- Can see the packages declined/approved
 - Can see the status of the package just by id
 
 COURIER
 - Scan the packages assigned to his name and take ownership or decline it and change the status of the package.
-- Can see his progress (how many packages have to deliver and how many packages has been delivered).
 - Can see the status of the package just by id.
 
 CLIENT
+- Make an order 
 - Scan his package and take ownership or decline it.
-- See his orders.
-- Can see the status of the package just by id.
-
-POSTAL WORKER
-- Scan the package and take ownership.
 - Can see the status of the package just by id.
 
 NOTE: Qr code would be in string format.
+
+### Technical Details
+
+Pallet: admin_pallet
+This pallet would contain all the functionality of admin
+Method of admin pallet: 
+1-creat_admin // The first account which calls this method will be the admin, the account address will be stored.
+2-create_manager // A list of address would be stored.
+3-create_courier_managers // A hashmap structured would be stored, the key would be the menager in charge and the value would be its courier
+4-create_items // A vector with a Structure will be stored with details like weight, qrcode, id etc.
+5-show_package_status // An id will be given as param and its status will be shown.
+
+Pallet: manager_pallet
+This pallet would contain all the functionality of manager
+Method of manager pallet:
+1-change_status // Every package would have an id, the manager can change the status for the package by id and store the new status
+2-show_package_by_id // Show the package details (status, QRcode, weight etc) , this information will be found in storage.
+
+Pallet: curier_pallet
+This pallet would contain all the functionality of curier
+Method of curier pallet:
+1- scan_package // A method which is given as param the QRcode and it changes the ownership of package.
+2- show_package_by_id // Show the package details (status, QRcode, weight etc) , this information will be found in storage.
+
+Pallet: client_pallet
+This pallet would contain all the functionality of curier
+Method of curier pallet:
+1- scan_package // A method which is given as param the QRcode and it changes the ownership of package.
+2- show_package_by_id // Show the package details (status, QRcode, weight etc) , this information will be found in storage.
+3- make_order // A hashmap structure will be stored. The key would be the address of client and the order will be a structure with a vector which will contain the item id and the other properties.
 
 ### Ecosystem Fit
 - Substrate learners would have a SupplyChain system as an example.
@@ -132,57 +148,57 @@ We would like to use the Substrate template node
 
 ### Overview
 
-- **Total Estimated Duration:** 6-9 months
+- **Total Estimated Duration:** 3-5 months
 - Full-Time Equivalent (FTE): 2 FTE
-- **Costs:** $72,000 USDT
+- **Costs:** $30,000 USDT
 
 
 ### Milestone 1 — Implement admin functionalities
 
-- Estimated Duration: 2-3 months
+- Estimated Duration: 1-2 months
 - FTE: 2
-- Costs: $30,000 USDT
+- Costs: $10,000 USDT
 
 | Number | Deliverable                                                                                             | Specification                                                                                                                                     |
 |-------:|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 |    0a. | License                                                                                                 | Apache 2.0                                                                                                                                        |
 |    0b. | Documentation                                                                                           | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how an address can be an admin.                  |
 |    0c. | Testing Guide                                                                                           | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-|    0d. | Article                                                                                                 | We will publish an **article** that explains how an SupplyChain system can be created and how can it be used.
-|    0e. | Benchmarking                                                                                            | Benchmarking will be provided for creat_admin, creat_manager, creat_courier_managers, creat_items, show_package_status .
-|    0f. | Substrate modules: creat_admin, creat_manager, creat_courier_managers, creat_items, show_package_status | We will create a SupplyChain system that will creat_admin, creat_manager, creat_courier_managers, creat_items, show_package_status                                                           |
+|    0d. | Article                                                                                                 | We will publish an **article** that explains how an SupplyChain system can be created and how can it be used.                                     
+|    0e. | Benchmarking                                                                                            | Benchmarking will be provided for creat_admin, create_manager, create_courier_managers, create_items, show_package_status .                       
+|    0f. | Substrate modules: creat_admin, creat_manager, creat_courier_managers, creat_items, show_package_status | We will create a SupplyChain system that will creat_admin, create_manager, create_courier_managers, create_items, show_package_status             |
 
 
 ### Milestone 2 — Implement manager functionalities
 
-- Estimated Duration: 2-3 months
+- Estimated Duration: 1-2 months
 - FTE: 2
-- Costs: $24,000 USDT
+- Costs: $10,000 USDT
 
-| Number | Deliverable                                                                                                    | Specification                                                                                                                                    |
-|-------:|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License                                                                                                        | Apache 2.0                                                                                                                                       |
-|    0b. | Documentation                                                                                                  | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how an address can be a manager.            |
-|    0c. | Testing Guide                                                                                                  | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-|    0d. | Article                                                                                                        | We will publish an **article** that explains how an SupplyChain system can be created and how can it be used.
-|    0e. | Benchmarking                                                                                                   | Benchmarking will be provided for change_status, assign_package, show_couriers_list, show_packages_status, show_package_by_id
-|    0f. | Substrate modules: change_status, assign_package, show_couriers_list, show_packages_status, show_package_by_id | We will create a Substrate module that will change_status, assign_package, show_couriers_list, show_packages_status, show_package_by_id                                                    |
+| Number | Deliverable                                                            | Specification                                                                                                                                     |
+|-------:|------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                                                                | Apache 2.0                                                                                                                                        |
+|    0b. | Documentation                                                          | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how an address can be a manager.                 |
+|    0c. | Testing Guide                                                          | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+|    0d. | Article                                                                | We will publish an **article** that explains how an SupplyChain system can be created and how can it be used.                                     
+|    0e. | Benchmarking                                                           | Benchmarking will be provided for change_status, show_package_by_id                                                                               
+|    0f. | Substrate modules: change_status, show_package_by_id | We will create a Substrate module that will change_status, show_package_by_id                                                                     |
 
-### Milestone 3 — Implement courier, client and postal worker functionalities
+### Milestone 3 — Implement courier, client functionalities
 
-- Estimated Duration: 2-3 months
+- Estimated Duration: 1-2 months
 - FTE: 2
-- Costs: $18,000 USDT
+- Costs: $10,000 USDT
 
 
-| Number | Deliverable                                                                     | Specification                                                                                                                                                       |
-|-------:|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License                                                                         | Apache 2.0                                                                                                                                                          |
-|    0b. | Documentation                                                                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how an address can be a courier, client and a postal worker. |
-|    0c. | Testing Guide                                                                   | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                   |
-|    0d. | Article                                                                         | We will publish an **article** that explains how an SupplyChain system can be created and how can it be used.
-|    0e. | Benchmarking                                                                    | Benchmarking will be provided for scan_package, show_progress, show_orders, show_package_by_id.
-|    0f. | Substrate modules: scan_package, show_progress, show_orders, show_package_by_id | We will create a Substrate module that will scan_package, show_progress, show_orders, show_package_by_id                                                                      |
+| Number | Deliverable                                                     | Specification                                                                                                                                     |
+|-------:|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                                                         | Apache 2.0                                                                                                                                        |
+|    0b. | Documentation                                                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how an address can be a courier, client.         |
+|    0c. | Testing Guide                                                   | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+|    0d. | Article                                                         | We will publish an **article** that explains how an SupplyChain system can be created and how can it be used.                                     
+|    0e. | Benchmarking                                                    | Benchmarking will be provided for scan_package, make_order, show_package_by_id.                                                                   
+|    0f. | Substrate modules: scan_package, make_order, show_package_by_id | We will create a Substrate module that will scan_package, make_order, show_package_by_id                                                          |
 
 ## Future Plans
 
