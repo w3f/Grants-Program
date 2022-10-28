@@ -100,6 +100,19 @@ Anyone who wants to learn how to create Smart Contracts on top of Ink or create 
 - We are also working on our own Job Board where users can find Web3 jobs with ease.
 
 
+### Components of ChainEducation
+
+1. **User Profile:** User profile will be the CV of a user. Entire information will be stored inside IPFS. Profile will also hold course completion Soulbond NFTs. User will be able to edit profile from time to time. Please note that it won't be one time operation.
+
+2. **Tracks:** There are many courses for different blockchains like Polkadot, Ethereum, Polygon, etc. All the courses will be categorized into tracks. User can choose any track to begin courses with. Each track will be having from easy to advance courses.
+
+3. **Course:** A course is a collection of lessons. A course can be of level easy, intermediatory, or hard. If a user completes a course, user will get awarded an Soulbond NFT. At the end of the course, there will be a small quiz in which user needs to score above 60%. Once student passes the course, they will be awarded the Soulbond NFT.
+
+4. **Lesson:** A lesson contains tutorial/information of a perticular topic which is intended to teach students the concepts.
+
+4. **Soulbond NFT:** When user completes a course, user is awarded a Soulbond NFT which cannot be transferred to anyone once it's minted. It is based on ERC-1155. User can see her all the Soulbond NFTs inside her profile page.
+
+
 ### Website Designs
 
 1. ![Home Page](https://i.imgur.com/sUvhJbb.png  "Home Page")
