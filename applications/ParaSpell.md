@@ -18,7 +18,7 @@ ParaSpell main advantages can be summarized in the following list:
 
 One of the ParaSpell main goals is to reduce the time necessary to create XCM calls or open HRMP channels.
 
-<img width="1027" alt="Open channel" src="https://user-images.githubusercontent.com/55763425/198412863-3db8c496-0672-411d-a0e8-91c4730e98de.png">
+![comparisonImg](https://user-images.githubusercontent.com/55763425/198575362-929a94fc-b118-42de-95b4-b8ac358be3bc.jpg)
 
 As we can see in the figure above, the amount of details the user has to fill to transfer the XCM message is drastically reduced. As an example, users do not need to specify a specific route from origin to destination chain. These details are filled for them. 
 
