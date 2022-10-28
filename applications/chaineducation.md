@@ -67,20 +67,6 @@ Anyone who wants to learn how to create Smart Contracts on top of Ink or create 
 
 - [GET] /dashboard -> User's Dashboard
 
-- [GET] /api/v1/tracks -> Get All Courses
-
-- [GET] /api/v1/{course_uuid} -> Get A Course
-
-- [GET] /api/v1/{course_uuid}/{chapter_slug} -> Get A Chapter
-
-- [POST] /api/v1/tracks/new -> Create a new Course
-
-- [POST] /api/v1/{course_uuid}/new -> Create a new Chapter
-
-- [GET] /api/v1/{course_uuid}/reviews -> Get reviews of a Course
-
-- [POST] /api/v1/{course_uuid}/reviews/new -> Create a new review for a coursed
-
 ```
 
 ### User Journey
