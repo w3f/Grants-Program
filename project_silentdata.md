@@ -1,16 +1,16 @@
-﻿**Web3 Foundation Grant Proposal Project Name**: Silent Data Polkadot Integration 
+﻿# Silent Data Polkadot Integration 
  
  **Team Name**: Applied Blockchain Ltd
 
 **Payment Address**: USDC (Ethereum) address: 0x91a5ade2522ac8c3761922a4255e0fef89116a37
 
-**Level 2**
+**[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**(https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
 
-**Project Overview**
+## Project Overview :page_facing_up:
 
 This application is in response to an RFP 
 
-**Project Overview**
+### Overview
 
 Applied Blockchain has developed Silent Data as a platform for proving properties of private off-chain (web2) data in blockchain smart contract (web3) applications (dApps).
 
@@ -40,7 +40,7 @@ Applied Blockchain was founded by Adi Ben-Ari, in London in 2015 when the Ethere
 
 Polkadot parachains already offer a broad range of dapps and functions, and coupling the strong security fundamentals of Substrate with those of Silent Data will create compelling additional optionality for Polkadot dapp developers.
 
-**Project Details**
+### Project Details
 
 - Mockups/designs of any UI components
 
@@ -65,7 +65,7 @@ Documentation of core components, protocols and architecture to be deployed can 
 
 Silent Data News: <https://silentdata.com/news>
 
-**Ecosystem Fit**
+### Ecosystem Fit
 
 We believe that as part of the evolution of web3, web2 and web3 will converge before diverging. This will enable users to leverage their identities and assets, currently anchored in web2 to the web3 world. In order for this to occur, web3 DApps, including those deployed in many of the Polkadot parachains, need a way to securely and safely verify off-chain web2 data.
 
@@ -83,24 +83,25 @@ NFT creators with verified Instagram accounts, for example, can prove they are b
 
 Future implementations will apply not only to Instagram and NFT’s, but also to other identity and asset credentials useful in DeFi.
 
-**Team**
+## Team :busts_in_silhouette:
 
-**Team members**
+### Team members
 
 - Adi Ben-Ari
 - Francesco Canessa, Andrew Campbell, Shawn Derouard, Mario Gemoll, Thomas Brooks, Shay Har-Zion
 
-**Contact**
+### Contact
 
 - Adi Ben-Ari
 - adi@appliedblockchain.com
 - https://appliedblockchain.com/
 
-**Legal Structure**
+### Legal Structure
 
-- Level 39, One Canada Square, Canary Wharf, London E14 5AB, UK
+ **Registered Address:**  One Canada Square, Canary Wharf, London E14 5AB, UK
+ **Registered Legal Entity:** Level 39
 
-**Team's experience**
+### Team's experience
 
 **Adi Ben-Ari** is the founder & CEO at Applied Blockchain. Prior to starting the company Adi spent 20 years as a developer, technical lead and solution architect in telecoms, insurance and banking.
 
@@ -130,7 +131,7 @@ GitHub: <https://github.com/tgrbrooks>
 
 **Shay Har-Zion** is a product manager with over 17 years of experience in leading product and project software developments, with majority of them in the financial services and Fintech industries. Shay puts in front the focus on teamwork, communication and collaboration, in order to produce highest value and quality towards innovative solutions for clients.
 
-**Team Code Repos**
+### Team Code Repos
 
 - <https://github.com/appliedblockchain>
 - <https://github.com/appliedblockchain/silentdata-defi-core> (The SGX components)
@@ -141,22 +142,24 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - <https://github.com/seromenho>
 - <https://github.com/tgrbrooks>
 
-**Team LinkedIn Profiles**
+### Team LinkedIn Profiles (if available)
 
 - <https://www.linkedin.com/in/adibenari/>
 - <https://www.linkedin.com/in/shay-har-zion-3a31933/>
 - <https://www.linkedin.com/in/andylnd/>
 - <https://www.linkedin.com/in/tgrbrooks/>
 
-**Development Status**
+## Development Status :open_book:
 
 If you've already started implementing your project or it is part of a larger repository, please **provide a link and a description of the code here**. In any case, please provide some documentation on the research and other work you have conducted before applying.
 
 Silent Data Architecture: [Silent Data Architecture](https://docs.google.com/document/d/1RXk8gy_YBtnWYgYXNh2lizZ94kXyBI7tLAmhxnvsYS0/edit?usp=sharing)
 
-**Development Roadmap**
+## Development Roadmap :nut_and_bolt:
 
-**Milestone 1- Substrate Adapter**
+### Overview
+
+### Milestone 1 — Substrate Adapter
 
 - Estimated duration: 2 months
 - FTE: 2.5
@@ -174,8 +177,12 @@ Silent Data Architecture: [Silent Data Architecture](https://docs.google.com/doc
 | 2.      | Library                        | We will develop a JavaScript/TypeScript library to enable Node.JS backends to interact with the Silent Data API. The library will allow DApp creators to generate new proof certificate requests and fetch the results of checks.
 | 3.      | Smart Contract                 | We will develop an example ink! smart contract for verifying Silent Data proof certificates and extracting the verified proof data. The smart contract will take a signed certificate and signature as input verify either an sr25519 or ed25519 signature with a fixed enclave public key stored in the contract. The contract will then parse the CBOR encoded certificate data to extract the verified key-value pairs and optionally store them on chain. We will deploy the smart contract to a Polkadot testnet and provide an example DApp to demonstrate the flow of generating Instagram account verification certificates with Silent Data and verifying them in a smart contract.|
 
-**Future Plans**
+## Future Plans
 
 - Integration with other web2 social media platforms (Twitter, Google authentication, etc.).
 - Integration with other identity and asset related web2 data sources (open banking, identity and AML checks).
 - The team's long-term plan is to become the platform for providing properties of private web2 data for consumption by web3 applications.
+
+## Additional Information :heavy_plus_sign:
+
+**How did you hear about the Grants Program?** Web3 Foundation Website 
