@@ -75,8 +75,8 @@ Anyone who wants to learn how to create Smart Contracts on top of Ink or create 
  - They choose the first lesson and start to learn.
  - Users will be able to clear doubt on our Discord community.
  - They complete a course.
- - Once they complete a course, they get NFT certificate stating that they completed the course.
- - Once user is equipped with the knowledge, they can register themselves on our Job Board to get a Job.
+ - Once they complete a course, they get Soul Bound Token certificate stating that they completed the course.
+ - Once user is equipped with the knowledge, they can register themselves on our Job Board to get a Job. Although, it is not a requirement to signup for a job board.
   
 
 ### Simillar platforms
@@ -175,7 +175,7 @@ Level 2: Up to $30,000, 3 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of tutorials along with online workshops within our discord community so that we can educate our users the use of this platform. |
-| 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute NFTs to user once they complete the course. We will be using **erc721** token to mint the NFT: https://github.com/paritytech/ink/blob/master/examples/erc721/lib.rs. |
+| 0. | Creation of smart contracts using Ink. | These smart contracts will be responsible to distribute NFTs to user once they complete the course. We will be using **Soulbound Token** token which is based on **EIP-5114**. We need to raise a PR to include EIP-5114 inside the Ink examples repo: https://github.com/paritytech/ink/tree/master/examples |
 | 1. | Creation of smart contracts using Ink. | Smart contract to store all the tracks. A track will have multiple courses. A course will have multiple lessons. Video of a lesson will go inside IPFS and it's hash will be stored inside a smart contract. A course will have multiple reviews. Smart contract will also store user's information weather user is an instructor or a student. |
 
 ### Milestone 2
@@ -203,6 +203,7 @@ Level 2: Up to $30,000, 3 approvals
 | 8. | Privacy Policy Page | This page displays Privacy Policy. |
 | 9. | About Us Page | This page displays About Us page. |
 | 10. | Contact Us Page | This page displays Contact Us page. |
+| 11. | Dashboard Page | This page displays dashboard page of the user. |
   
 
 * Our progress can be tracked here on this trello board: https://trello.com/b/mAEuIivn/product-development
