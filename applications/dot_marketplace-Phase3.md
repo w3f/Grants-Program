@@ -83,7 +83,7 @@ The current focus is to enhance the existing Substrate pallet and allied code ba
 
 ### **Ecosystem Fit**
 
-We believe this work could be helpful for any Polkadot para-chains/ para-threads interested in including a marketplace with on-chain dispute resolution.
+We believe this work could be helpful for any Polkadot parachains/parathreads interested in including a marketplace with on-chain dispute resolution.
 
 - Almost all para-chains/ para-threads would find motivation in encouraging their community members to contribute meaningfully to their roadmap. This can be achieved by utilizing a marketplace like Dot Marketplace, where technical, marketing, or governance-centric projects can be published as bounties. And community members are invited to bid for and execute them.
 - A milestone-based submission will enhance the functionality of the marketplace and provide a more comprehensive user experience for both the worker and the publisher.
