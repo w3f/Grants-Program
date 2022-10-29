@@ -85,7 +85,7 @@ The current focus is to enhance the existing Substrate pallet and allied code ba
 
 We believe this work could be helpful for any Polkadot parachains/parathreads interested in including a marketplace with on-chain dispute resolution.
 
-- Almost all para-chains/ para-threads would find motivation in encouraging their community members to contribute meaningfully to their roadmap. This can be achieved by utilizing a marketplace like Dot Marketplace, where technical, marketing, or governance-centric projects can be published as bounties. And community members are invited to bid for and execute them.
+- Almost all parachains/parathreads would find motivation in encouraging their community members to contribute meaningfully to their roadmap. This can be achieved by utilizing a marketplace like Dot Marketplace, where technical, marketing, or governance-centric projects can be published as bounties. And community members are invited to bid for and execute them.
 - A milestone-based submission will enhance the functionality of the marketplace and provide a more comprehensive user experience for both the worker and the publisher.
 - The on-chain court will act as a dispute resolution mechanism between users involved in a project. A set of community members meeting specific criteria get to be a part of the jury for the dispute and cast votes, based on which a decision is reached.
 - To facilitate easier communication between a customer and a worker, a one-to-one chat feature is also created.
