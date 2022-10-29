@@ -198,7 +198,7 @@ The main deliverables in this milestone are to use decentralized IPFS based stor
 | 0b | Documentation | We will provide both inline documentation of the code and a tutorial that explains how a user can use DOT Marketplace and understand the flow of tasking pallet. |
 | 0c | Testing Guide | Functions will be covered by unit tests, the documentation will describe how to run these tests. We will also provide scripts to help deploy, run and test the build. |
 | 0d | Docker Image | Docker image of the build |
-| 1 | Decentralized Stroage  | All tasks related docs will be stored on a decentralized IPFS platform. |
+| 1 | Decentralized Storage  | All tasks related docs will be stored on a decentralized IPFS platform. |
 | 2 | Advanced Search  | Search based on task progress, tags, tasks or milestone id's. |
 | 3 | Frontend App  | Supporting frontend UI to test the aforementioned functionality. |
 | 4 | Website  | Dedicated one-page website for Dot Marketplace. |
