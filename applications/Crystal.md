@@ -11,7 +11,7 @@ Our product will be developed using Polkadot and Moonbeam and will allow game de
 
 The main element of the platform is the API that our application will provide, as well as a set of libraries for the Unity 3D and Unreal Engine game engines, which will allow game developers to integrate NFTs into their games and to get a list of NFTs that the user owns, in order to provide the player with additional features that are associated with this NFT.
 
-We see great potential in the NFT technology and the growth of this market, but it seems to us that most likely, the Art-NFT market is close to its limit. Now users are increasingly interested in the real benefits of owning an NFT. NFT integration into games requires additional web3 competencies from game developers. A small number of game developers have these competencies, so this market is still poorly developed, but has great potential due to the high interest in NFT technology.
+We see great potential in the NFT technology and the growth of this market, but it seems to us that the Art-NFT market is close to its limits in the nearest future. Now users are increasingly interested in the real benefits of owning an NFT. NFT integration into games requires additional web3 competencies from game developers. A small number of game developers have these competencies, so this market is still poorly developed, but has great potential due to the high interest in NFT technology.
 
 We want to implement our project using Polkadot, as we think that the parachains technology will help make our application more resistant to heavy loads and a large number of requests. We also see great prospects in the entire Polkadot ecosystem since there are more and more applications and parachains using Polkadot technologies.
 
@@ -51,7 +51,7 @@ Marketplace:
 <img src = "https://github.com/GetCrystalOrg/PolkaDOT-Crystal/blob/main/Screenshot%202022-10-20%20at%2012.55.08.png" width="300" height="475">
 
 ## Project Details
-Our product is consist of three modules that are necessary for proper work:
+Our product is consisted of three modules that are necessary for proper work:
 1. Web application
 2. API interface for apps (including games)
 3. Libraries for games engines (Unity 3D and Unreal engine)
@@ -63,11 +63,11 @@ Technology: ReactJS / Solidity
 1.	Authorization via web3 wallet connection
 2.	NFT creating and upload
 3.	NFT collections creating and upload
-4.	NFT parameters creation
+4.	Creating NFT parameters
 5.	Changing NFT parameters via API
 6.	Creating an access key to get a list of user’s NFTs 
 7.	Connecting a public wallet to an account
-8.	Generating of a unique account key
+8.	Generating a unique account key
 
 
 ### Game API
@@ -76,7 +76,7 @@ The module that will be used for connection between a game and the web applicati
 
 Technology: JS / Rest API
 
-1.	Authorization by a account key
+1.	Authorization by an account key
 2.	Obtaining a list of user’s NFTs through his public key
 3.	Changing the parameters of an NFT by the author of the collection (for example, when it is necessary to update the parameters of an item in the game) 
 
@@ -86,7 +86,7 @@ This will allow you to easily integrate interaction with a web application and  
 
 Technology: C# / C++
 
-1.	Authorization by unique account key
+1.	Authorization by a unique account key
 2.	Getting a list of NFTs owned by the user
 3.	Linking game objects (3D model, location, skill, etc.) to NFTs
 4.	Changing parametersof NFTs automatically or semi-automatically
@@ -97,7 +97,7 @@ Technology: C# / C++
 
 
 ## Ecosystem Fit
-The video game industry is attractive for developers, as the number of its users is growing every year and now amounts to 3 billion people, and the total earnings of companies in this industry have exceeded 150 billion dollars a year. In the blockchain world, there are a small number of applications that allow integrating NFT into games, and they don’t have full-fledged functionality that allows trading in-game items through the blockchain comfortably and simply. Our project aims to solve this problem. Our app will position Polkadot at the intersection of the blockchain and the gaming industry. The project will attract new users from among the players to the Polkadot network, which can increase the capitalization of DOT. We will strive to integrate both indie games and serious projects with a large number of players into our platform.
+The video game industry is attractive for developers, as the number of its users is growing every year and now amounts to 3 billion people, and the total earnings of companies in this industry have exceeded 150 billion dollars a year. In the blockchain world, there is a small number of applications that allow integrating NFT into games, and they don’t have full-fledged functionality that allows trading in-game items through the blockchain comfortably and simply. Our project aims to solve this problem. Our app will position Polkadot at the intersection of the blockchain and the gaming industry. The project will attract new users from the gamers' community to the Polkadot network, which can increase the capitalization of DOT. We will strive to integrate both indie games and serious projects with a large number of players into our platform.
 ## Development Roadmap
 ### Milestone 1 
 
