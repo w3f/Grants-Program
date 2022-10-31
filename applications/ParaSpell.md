@@ -18,9 +18,7 @@ ParaSpell main advantages can be summarized in the following list:
 
 One of the ParaSpell main goals is to reduce the time necessary to create XCM calls or open HRMP channels.
 
-[
-![Opening channel screen](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/comparisonImg.jpg)
-](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/comparisonImg.jpg)
+![comparisonImg](https://user-images.githubusercontent.com/55763425/198575362-929a94fc-b118-42de-95b4-b8ac358be3bc.jpg)
 
 As we can see in the figure above, the amount of details the user has to fill to transfer the XCM message is drastically reduced. As an example, users do not need to specify a specific route from origin to destination chain. These details are filled for them. 
 
@@ -35,38 +33,31 @@ Overall ParaSpell is all about developer experience.
 ParaSpell in its current form allows developers to install all dependencies as well as a network consisting of Rococo, Pichiu(Kylin network), Bifrost & Acala nodes with one command. Launching a network is also done by one command. Once the network is installed and started ParaSpell application allows developers to open/close HRMP channels between mentioned parachains. In current progress ParaSpell already has user interface and main functionality almost finished.
 
 The following screen allows the user to open the HRMP channels between list of parachains pulled from Rococo by API call.
-[
-![Opening channel screen](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/Open%20channel.png)
-](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/Open%20channel.png)
+<img width="1027" alt="Open channel" src="https://user-images.githubusercontent.com/55763425/198412773-8ff2c49c-1a9f-4cf8-bd1d-e394c7f1a37f.png">
+
 
 Closing HRMP channels is just as simple as opening them. One button click to close the required channel.
-[
-![Closing channel screen](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/close%20channel.png)
-](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/close%20channel.png)
+<img width="1042" alt="close channel" src="https://user-images.githubusercontent.com/55763425/198412796-6766e994-568e-4401-858f-509894232b16.png">
+
 
 If the user decides to transfer funds from Relay chain to Parachain they can do so by filling following details. These required details are way faster to fill than filling a full XCM call which requires a complete route and selection of concrete token.
-[
-![Relay to para screen](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/relay%20to%20para.png)
-](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/relay%20to%20para.png)
+<img width="1044" alt="relay to para" src="https://user-images.githubusercontent.com/55763425/198412355-9f5ceadc-76c8-40b1-98ff-8cb0743de0e9.png">
 
 The opposite, but nearly the same scenario is sending tokens from Parachain to Relay chain. It is just as simple, however.
-[
-![Para to relay screen](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/para%20to%20relay.png)
-](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/para%20to%20relay.png)
+<img width="1038" alt="para to relay" src="https://user-images.githubusercontent.com/55763425/198412828-b6f0911f-0e22-4931-a68d-15935b81473e.png">
+
 
 The last transaction scenario is the transfer of funds between Parachain and another Parachain.
-[
-![Para to para screen](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/para%20to%20para.png)
-](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/para%20to%20para.png)
+<img width="1039" alt="para to para" src="https://user-images.githubusercontent.com/55763425/198412837-5da7c31c-9c00-487d-ad23-39c05e4f52b6.png">
+
 
 
 - Overview video of application is also available on Youtube
 [Link to overview video](https://youtu.be/YKZEa2MaY6Q)
 
 #### Architecture 🏗
-[
-![Diagram](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/screenFlow.svg)
-](https://raw.githubusercontent.com/dudo50/Polkachange/main/img/screenFlow.svg)
+![screenFlow](https://user-images.githubusercontent.com/55763425/198412240-e031d877-c5d8-4952-9048-2e1256ba4469.svg)
+
 
 Application is purposely designed to be as simple as possible. This guarantees, that all tasks can be done quickly and without extended searching. All necessary screens also feature notifications which will as a milestone explain be callback reactive. The loading screen is only present on the first application & network startup, once accessing the same screen after the application was loaded it will be skipped automatically. The screen serves to register necessary assets in parachain nodes. This is only required to be run once per network startup.
 
