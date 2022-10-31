@@ -1,7 +1,4 @@
-# Open Grant Proposal
-
-
-*  **Project Name:** Ink Conracts Wizard
+# Ink Conracts Wizard
 
 *  **Team Name:** Ink Contracts Wizard Team
 
