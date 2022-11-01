@@ -566,3 +566,4 @@
 | [SydTek](https://sydtek.ai/) | Digital Inheritance in Web3: A Case Study of Soulbound Tokens and Social Recovery Pallets | N/A | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Anagolay](https://anagolay.network/) | Multi-token community contributions for verified creators | [GitHub](https://github.com/anagolay) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Ink Contracts Wizard Team](https://github.com/amankumar1008/contracts-wizard) | Ink Smart Contract Wizard | [GitHub](https://github.com/amankumar1008/contracts-wizard) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [TDSoftware](https://www.tdsoftware.de/) | Substrate IPFS Utilities | [GitHub](https://github.com/TDSoftware) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
