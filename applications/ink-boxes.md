@@ -49,7 +49,6 @@ Anyone who wants to create Smart Contracts on top of Ink are our target users.
 ### Team Code Repos
 
 * https://github.com/nerdsince98
-* https://gitlab.com/nerdsince98 -> actively contributing here
 
 ## Development Roadmap :nut_and_bolt:
 
