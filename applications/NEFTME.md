@@ -286,8 +286,10 @@ Challenge “Be real”.
 ### Milestone 1 — Alpha 5
 
 - **Estimated duration:** 3 months
-- **Costs:** 35K USD
+- **Costs:** 90K USD
  
+ Since this deliverable is very smart contract intensive for us (migrating our contracts to !ink). We would need to negotiate the amount that would come upfront with the grant and the amount that would come with each deliverable. 
+That said, we estimate that 50k upfront would meet our expectations, details can be discussed on a later meeting.
 
  | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -296,7 +298,7 @@ Challenge “Be real”.
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. Unit tests, integration tests and End 2 End tests |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Direct Messaging | Allow direct decentralized messaging inside the dApp. Planning on integrating with WalletConnect Chat API to integrate with an established and well known company. We're currently already using WalletConnect provider, so the integration would be easy and seamless  |
-| 2. | NFT as an Audio | Users are now able to create audio NFTs with their phones. Bringing the ability for users, for the first time, to create and LISTEN to their NFTs. NFTs contract will be constructed using ink!. Store content on a decentralized storage system (Arweave or IPFS) |
+| 2. | NFT as an Audio | Users are now able to create audio NFTs with their phones. Bringing the ability for users, for the first time, to create and LISTEN to their NFTs. NFTs contract will be constructed using ink!. Store content on a decentralized storage system (Arweave or IPFS). !ink integration may require internal wallet integration |
 | 3. | Abuse content analysis | Ability to report NFTs, giving the user the option to moderate the content they see (+18 or not)  |
 | 4. | Share NFTs | Share NFTs via a link that redirects to the app. Deeplinking |
 | 5. | Share Profiles | Share Profiles via link that redirects to the app. Deeplinking |
@@ -307,7 +309,7 @@ Challenge “Be real”.
 ### Milestone 2 — Beta
 
 - **Estimated Duration:** 3 months
-- **Costs:** 65K USD
+- **Costs:** 60K USD
 
 
  | Number | Deliverable | Specification |
