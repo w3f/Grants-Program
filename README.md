@@ -246,7 +246,7 @@ Apply for Office Hours if you
 - want to find out what kind of support there might be available or
 - need help finding the resources you need.
 
-It is **not** a chance to pitch your project, especially since only a small subset of the committee will participate in the call. To apply, please fill out the [Office Hours :alarm_clock: form](https://forms.gle/54xkiqU37WwdN9UR6). Please be as specific as possible, so we can help you more quickly. We will get back to you with follow-up questions or a link for booking a timeslot.
+It is **not** a chance to pitch your project, especially since only a small subset of the committee will participate in the call. To apply, please fill out the [Office Hours :alarm_clock: form](https://forms.gle/54xkiqU37WwdN9UR6). Be as specific as possible, so we can help you more quickly. We will get back to you with follow-up questions or a link for booking a timeslot.
 
 
 ## :rocket: Alternative Funding Sources
