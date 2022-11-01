@@ -236,12 +236,17 @@ Besides, we also have a **community room for all grant recipients**. Head over t
 
 ### Office Hours
 
-Web3 Foundation Grants Office Hours are a chance to ask the grants team directly questions regarding a specific grant application. It offers
-- General guidance regarding the grants program 
-- Some quick initial feedback
-- Navigating the ecosystem 
+Web3 Foundation Grants Office Hours are a chance to ask the grants team questions regarding a specific (potential) grant application. It offers
+- general guidance regarding the grants program, 
+- some quick initial feedback and
+- help how to navigate the ecosystem. 
 
-It’s **not** a chance to pitch your project especially since most of the committee won’t participate in these calls. If you are interested in it, apply to the [Web3 Foundation Grants Office Hours :alarm_clock: here](). 
+Apply for Office Hours if you 
+- need feedback before submitting an application,
+- want to find out what kind of support there might be available or
+- need help finding the resources you need.
+
+It is **not** a chance to pitch your project, especially since only a small subset of the committee will participate in the call. To apply, please fill out the [Office Hours :alarm_clock: form](https://forms.gle/54xkiqU37WwdN9UR6). Please be as specific as possible, so we can help you more quickly. We will get back to you with follow-up questions or a link for booking a timeslot.
 
 
 ## :rocket: Alternative Funding Sources
