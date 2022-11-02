@@ -69,7 +69,7 @@ Level 1: Up to $10,000, 2 approvals
 
 *  **Estimated Duration:** 2 weeks
 
-*  **Costs:** 4,600 USD
+*  **Costs:** 3,500 USD
 
 
 | Number | Deliverable | Specification |
@@ -85,7 +85,7 @@ Level 1: Up to $10,000, 2 approvals
 
 *  **Estimated Duration:** 2 weeks
 
-*  **Costs:** 400 USD
+*  **Costs:** 1,500 USD
 
 
 | Number | Deliverable | Specification |
