@@ -18,6 +18,7 @@
   - [Changes to a Grant after Approval](#changes-to-a-grant-after-approval)
 - [:mailbox_with_mail: Suggest a Project](#mailbox_with_mail-suggest-a-project)
 - [:hammer_and_wrench: Maintenance Grants](#hammer_and_wrench-maintenance-grants)
+- [:moneybag: Referral Program](#moneybag_referral_program) 
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
@@ -213,6 +214,10 @@ Please note that:
 - The 1-month timeframe is just a guideline. If you find it unsuitable for you or the chosen project for any reason, feel free to adjust as seen fit and point this out in your application.
 - Please bear in mind that the Grants Committee might be stricter in accepting maintainers when compared to typical grants, mostly selecting for applicants with proven experience in the relevant tech stacks.
 - Maintenance Grants are only awarded for fixed timeframes. The requested duration needs to be specified in the application.
+
+## :moneybag: Referral Program
+
+
 
 ## :bulb: Help
 
