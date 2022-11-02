@@ -18,7 +18,7 @@
   - [Changes to a Grant after Approval](#changes-to-a-grant-after-approval)
 - [:mailbox_with_mail: Suggest a Project](#mailbox_with_mail-suggest-a-project)
 - [:hammer_and_wrench: Maintenance Grants](#hammer_and_wrench-maintenance-grants)
-- [:moneybag: Referral Program](#moneybag_referral_program) 
+- [:moneybag: Referral Program](#moneybag-referral-program) 
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
@@ -217,7 +217,9 @@ Please note that:
 
 ## :moneybag: Referral Program
 
+We give away 1000 USD to each referral of a successful grant application by _previous grantees_ or _[Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors)_, that is merged into our [applications folder](.//applications). Employees of Web3 Foundation or Parity can not refer projects, even if they previously work on a grant.
 
+In order to be eligible for the referral bonus, the application itself must contain the name of the [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors) or the GitHub account of the grantee as well as the payment address for the referral bonus (see [applications/application-template.md](applications/application-template.md) for more information). Payment is made in Bitcoin, USDT (on Kusama or Ethereum), USDC/DAI (Ethereum) or aUSD (Acala). 
 
 ## :bulb: Help
 
