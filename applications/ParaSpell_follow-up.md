@@ -62,7 +62,7 @@ The last transaction scenario is the transfer of funds between Parachain and ano
 
 UI is purposely designed to be as simple as possible. This guarantees, that all tasks can be done quickly and without extended searching. All necessary screens also feature notifications which will as a milestone explain be callback reactive. The loading screen is only present on the first application & network startup, once accessing the same screen after the application was loaded it will be skipped automatically. The screen serves to register necessary assets in parachain nodes. This is only required to be run once per network startup.
 
-SDK currently handles transfers to 29 compatible Parachains (ones that have xTokens pallet) and also can transfer to both Relay chains. It is easy to construct calls as is but we want to make it even easier and more developer friendly.
+SDK currently handles transfers to 29 compatible Parachains (ones that have xTokens pallet) ([Beta-pre-release ParaSpell SDK](https://github.com/paraspell/sdk/tree/beta-pre-release)) and also can transfer to both Relay chains. It is easy to construct calls as is but we want to make it even easier and more developer friendly. 
 
 #### Technology Stack  💻️
 -   Vue.js
@@ -81,7 +81,7 @@ In Polkadot and Kusama ecosystem, there are few XCM related tools in development
 | Features | ParaSpell XCM SDK | Moonbeam XCM SDK |
 | -----: | ----------- | ------------- |
 | Number of packages user has to install | User needs to install only 1 package | User needs to install 2 packages |
-| Support for Parachains | Already integrated for every with xTokens & will be integrated for all with polkadotXCM pallet (Will be basically implemented for all nodes then)  | Every new node has to be added manually |
+| Support for Parachains | Already integrated for every with xTokens & will be integrated for all with polkadotXCM pallet (Will be basically implemented for all nodes then) Link to implementation [Beta-pre-release ParaSpell SDK](https://github.com/paraspell/sdk/tree/beta-pre-release)  | Every new node has to be added manually |
 | Build pattern | Will be integrated, to be as intuitive as possible | Integrated, not as intuitive to implement however |
 | Support for asset pallet operations | Will be integrated  | Not integrated |
 | Support for HRMP pallet operations | Integrated users can open & close HRMP channels on their local chain (Useful feature for devs) | Not integrated |
@@ -90,7 +90,7 @@ In Polkadot and Kusama ecosystem, there are few XCM related tools in development
 
 
 
-Unlike the already mentioned "Moonbeam XCM" platform ParaSpell provides UI enhancement that uses our XCM SDK and users can try/learn technology from it. ParaSpell also includes support for all 29 Substrate Parachains that have xTokens pallet compared to Moonbeam XCM to which users have to implement compatible nodes manually. ParaSpell SDK only needs one package compared to Moonbeam XCM which has total of two. Compared to Moonbeam XCM which contains only XCM calls ParaSpell also contains calls that can open or close HRMP channels. We also want to include support for Parachains that have template pallet for XCM called polkadotXCM this pallet is a little harder to work with than xTokens, even more for inexperienced developers.
+Unlike the already mentioned "Moonbeam XCM" platform ParaSpell provides UI enhancement that uses our XCM SDK and users can try/learn technology from it. ParaSpell also includes support for all 29 Substrate Parachains ([Beta-pre-release ParaSpell SDK](https://github.com/paraspell/sdk/tree/beta-pre-release)) that have xTokens pallet compared to Moonbeam XCM to which users have to implement compatible nodes manually. ParaSpell SDK only needs one package compared to Moonbeam XCM which has total of two. Compared to Moonbeam XCM which contains only XCM calls ParaSpell also contains calls that can open or close HRMP channels. We also want to include support for Parachains that have template pallet for XCM called polkadotXCM this pallet is a little harder to work with than xTokens, even more for inexperienced developers.
 
 Another comparison worth mentioning is UI vs Morph which is also enhancement of XCM UI Transfer tool
 | Features | ParaSpell XCM UI | Morph |
@@ -166,11 +166,14 @@ Viktor Valaštín - Supervisor, founder of  [KodaDot](https://kodadot.xyz/). Fac
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0. | License | MIT|
-| 1. | Create scaffold template for Web3 projects | Create template on Git for Web3 dApps to allow users to start developing and deploying in just minutes, this template will contain different libraries important for Web3 development already preinstalled. |
-| 2. | Implement support for checking asset compatibility through asset pallet  | Each node, that has ability to check which tokens it supports should be automatically queried for this data and SDK should be able to determine compatibility based on data queried|
-| 3.a | Add support for nodes without xTokens pallet I | We will add support for simple transfer scenario to Relay chain for nodes that do not have xTokens pallet but have polkadotXCM prebuilt template pallet. |
-| 3.b | Add support for nodes without xTokens pallet II | We will add support for simple transfer scenario to other Parachain for nodes that do not have xTokens pallet but have polkadotXCM prebuilt template pallet. |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a usage explanation in readme.md  |
+| 0c. | Testing and Testing Guide | SDK Core UNIT tests will be provided for xTokens Pallet, HRMP pallet, polkadotXCM pallet|
+| 0d. | Docker | Docker file that allows to test ParaSpell SDK through ParaSpell UI will be provided. |
+| 1. | Create scaffold template for Web3 projects | Create template on Git for Web3 dApps to allow users to start developing and deploying in just minutes, this template will contain different libraries important for Web3 development already preinstalled. Languages planned to be used are `Typescript`. Stack that will be used is `Vue3 (Nuxt 3)`, `pnpm package manager`, `Polkadot API libraries` (Use KodaDot packages if applicable), `ParaSpell SDK`, UI will consist of basic components (address input (checks if address entered is valid), ballance input (no longer necessity to input lenghty amounts, will have sum conversions) etc.. ), wallet management (PolkadotJS, Talisman, Subwallet), all other not mentioned libraries will be mentioned in readme of template and readme will be linked to delivery. |
+| 2. | Implement support for checking asset compatibility through `asset pallet`  | Each node, that has ability to check which tokens it supports should be automatically queried for this data and SDK should be able to determine compatibility based on data queried. |
+| 3.a | Add support for nodes without xTokens pallet I | We will implement support for transfer scenario Parachain to Relay chain for nodes that do not have xTokens pallet but have `polkadotXCM` prebuilt template pallet. (SDK will be able to determine which pallet to use on which Parachain automatically) |
+| 3.b | Add support for nodes without xTokens pallet II | We will implement support for transfer scenario Parachain to Parachain for nodes that do not have xTokens pallet but have `polkadotXCM` prebuilt template pallet. (SDK will be able to determine which pallet to use on which Parachain automatically) |
 | 4. | Make SDK easier to use | Merge Parachain to Parachain & Parachain to Relay chain scenarios in SDK into one scenario that will be able to adapt based on details provided (if destination node id not provided, then assume transfer is for relay chain, also if token is compatible with relay chain), this will replace need for calling two functions for each scenario with only one function covering both scenarios eg. `send()` instead `paratopara()` & `paratorelay()`|
 | ✨. | Bounty funding | Part of Milestone delivery cost will go on Bounty funding to enhance contribution to the ecosystem & new potential developers. |
 
@@ -182,13 +185,14 @@ Viktor Valaštín - Supervisor, founder of  [KodaDot](https://kodadot.xyz/). Fac
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | MIT|
+| 0a. | License | MIT |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a usage explanation in readme.md  |
-| 0c. | Testing and Testing Guide | SDK Core UNIT tests will be provided |
-| 1. | Add support for checking data that does not change | There are things that do not change, such as base token configuration (Polkadot, DOT token, 10 decimals), (Astar, ASTR, 18 decimals) This can be imported from  `@polkadot/network` to have better support for different transfer scenarios|
+| 0c. | Testing and Testing Guide | SDK Core UNIT tests will be provided for pallets mentioned previously, script that checks pallets, functionality to check data that does not change, builder pattern |
+| 0d. | Docker | Docker file that allows to test ParaSpell SDK through ParaSpell UI will be provided. |
+| 1. | Add support for checking data that does not change | There are things that do not change, such as base token configuration (Polkadot, DOT token, 10 decimals), (Astar, ASTR, 18 decimals) This can be imported from  `@polkadot/network` library to have better support for different transfer scenarios|
 | 2. | Rewrite SDK to builder pattern | Best thing we can do to support multiple pallets and make it simplier for developers would be a Builder pattern functionality would look like: `import { Builder } as ‘@paraspell/sdk’` and then building of call would be something in sence: `const call = Builder(api).from(‘bsx’).to(‘ksm’).teleportTokens(‘KSM’).addr('destinationAddr').sum(currencySum).asV3().build()`|
-| 3. | Make a map of compatible <chain, pallet> | Before each SDK release there should be a script that connects to the compatible nodes, checks all available pallets and saves it to the list.|
-| 4. | Use turborepo | Remake package into monorepo for easier importing and cleaner use |
+| 3. | Make a map of compatible <chain, pallet> | Before each SDK release there should be a script that connects to the compatible nodes, checks all relevant available pallets `xTokens`, `polkadotXCM`, `asset pallets`, `HRMP` pallets) and saves them to the map.|
+| 4. | Use [turborepo](https://turborepo.org/) | Remake package into `monorepo` for easier importing and cleaner use |
 | ✨. | Bounty funding | Part of Milestone delivery cost will go on Bounty funding to enhance contribution to the ecosystem & new potential developers. |
 
 ### Milestone 3 - Improve ParaSpell UI 2/2 & ParaSpell SDK 3/3
@@ -199,14 +203,17 @@ Viktor Valaštín - Supervisor, founder of  [KodaDot](https://kodadot.xyz/). Fac
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0. | License | MIT|
-| 0a. | Article | We will publish Medium article about development of SDK |
+| 0a. | License | MIT |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a usage explanation in readme.md  |
+| 0c. | Testing and Testing Guide | SDK Core UNIT tests will be provided for every scenario that SDK offers. |
+| 0d. | Docker | Docker file that allows to test ParaSpell SDK through ParaSpell UI will be provided. |
+| 0e. | Article | We will publish Medium article about development of SDK |
 | 1. | Release new functionality | Ability to install new version of package from npm |
-| 2.a | Update ParaSpell UI I | Update ParaSpell UI XCM Parachain to Parachain Scenario screen to be able to use new SDK (Add or remove some variables according to new requirements from functions)  |
-| 2.b | Update ParaSpell UI II | Update ParaSpell UI XCM Relay chain to Parachain Scenario screen to be able to use new SDK (Add or remove some variables according to new requirements from functions)  |
-| 2.c | Update ParaSpell UI III | Update ParaSpell UI XCM Parachain to Relay chain Scenario screen to be able to use new SDK (Add or remove some variables according to new requirements from functions)  |
+| 2.a | Update ParaSpell UI I | Update ParaSpell XCM UI Parachain to Parachain Scenario screen to be able to use new SDK (Add or remove some variables according to new requirements from SDK functions)  |
+| 2.b | Update ParaSpell UI II | Update ParaSpell XCM UI Relay chain to Parachain Scenario screen to be able to use new SDK (Add or remove some variables according to new requirements from SDK functions)  |
+| 2.c | Update ParaSpell UI III | Update ParaSpell XCM UI Parachain to Relay chain Scenario screen to be able to use new SDK (Add or remove some variables according to new requirements from SDK functions)  |
 | 3. | Add comprehensive Wiki guide | We will add Wiki guide, that will specify SDK implementation to another dApps, different SDK functionalities & Guide for Parachain creators that wish to add their freshly baked node to the list of compatible nodes. |
-| 4. | Use template from Milestone 1 to update UI | This will update ParaSpell UI from Vue 2 into Vue3 and nuxt. It will also be good demonstration for template usage & it will make UI more compatible with other dApps | 
+| 4. | Use scaffold template from Milestone 1 to update UI | This will update ParaSpell UI from Vue 2 into Vue3 and nuxt. It will also be good demonstration for template usage & it will make UI more compatible with other dApps. | 
 | 5. | Integrate suggestions from [evaluation](https://github.com/w3f/Grant-Milestone-Delivery/blob/1343c66d74a1078b2a30972463a614737ed8aa92/evaluations/paraspell_1_keeganquigley.md) | Integrate suggestions regarding Wiki, module for asset conversions to not need to write so many 0s & replace button text `Log in with:` with account name once logged in | 
 | ✨. | Bounty funding | Part of Milestone delivery cost will go on Bounty funding to enhance contribution to the ecosystem & new potential developers. |
 
