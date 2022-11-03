@@ -2,11 +2,11 @@
 
 - **Project Name:** Societal - MVP - Phase 1
 - **Team Name:** Societal Labs Ltd.
-- **Payment Address:** Ethereum - USDT:  0x80243a916c9ff4837734FE3248d8641476280824
+- **Payment Address:** Ethereum - USDT:  0xcDcCF94f10d8A7165C1A336DD3795430a6CDE530
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
 
 
-## Project Overview :page_facing_up:
+## Project Overview
 
 ### Overview
 
@@ -56,20 +56,19 @@ The target audience of the Societal application are web3 users who require a pla
 
 The projects like Societal in the Polkadot space are Polkassembly, SubDAO, and DoraFactory. Societal differs from these projects in multiple ways. First, Polkassembly is not building their own parachain and is only a governance platform for large Polkadot projects. Societal wants to allow any web3 user to create their own DAO - not just catering to large established protocols. SubDAO has recently been focusing on smart contract deployments on multiple chains and does not appear to be building a parachain. Societal will build its own parachain and use the technical capabilities of Substrate to be truly token agnostic, connecting with widely used wallets such as MetaMask, to avoid doing multiple chain deployments via smart contracts. Dora Factory is similar to Societal in the sense that they are building their own parachian, however we plan to offer zero gas fees and a SaaS based pricing model to enhance our user's experience. Societal will also seek to integrate with other parachains, having cross-chain smart contract execution. 
 
-## Team :busts_in_silhouette:
+## Team 
 
 ### Team members
 
 - Graeme Fox
 - Tyler Gellatly
-- Kim Fournier
 - Max Kudinov
 
 ### Contact
 
 - **Contact Name:** Graeme Fox
 - **Contact Email:** graeme@sctl.xyz
-- **Website:** sctl.xyz (Website still in development at time of application submission)
+- **Website:** https://www.sctl.xyz/
 
 ### Legal Structure
 
@@ -81,8 +80,6 @@ The projects like Societal in the Polkadot space are Polkassembly, SubDAO, and D
 Graeme Fox is the former Director of Business Development at Ruby Protocol, a privacy project building with the Substrate framework. During this role, he gained extensive knowledge of both the Polkadot ecosystem and its technology stack. Prior to this, Graeme was the Lead Product Manager at Connectus. During this time, he was in charge of both internal and external development teams that created a web-based application using a MERN stack development, along with a supporting phone application on iOS and Android. It was during this role when Graeme was first introduced to blockchain development, as the main product line integrated with the Corda Blockchain to allow for automatic and secure payments following the completion of specific KPIs. Graeme has held other engineering roles in the past and holds a Bachelor of Engineering from Dalhousie University. He lives and breathes the entrepreneurial mindset, being involved in early-stage startups for the last four years.
 
 Tyler Gellatly has been building and scaling early stage start-ups for the last 4+ years. He was employee #1 and Director of Operations & Partnerships at Cuboh (a YC-backed SAAS middleware operating within the ghost kitchen industry) More recently, Tyler helped found Ruby Protocol, a novel privacy protocol building on the Substrate framework, and is still involved in a strategic advisory capacity. Currently, he sits on the DAO council for the Illuminati Collective, which currently has a 1000 ETH treasury under management. Tyler holds a Bachelor of Commerce from the University of Victoria, specializing in corporate strategy and finance. A well-rounded business operations leader with a background in finance, operations, capital fundraising, and strategic partnerships, Tyler is mission driven to bring web3 communities together at scale by utilizing blockchain technology.
-
-Kim Fournier is an advocate for blockchain marketing and is passionate about the intersection of decentralization and the future of work. She excels at crafting strong brand narratives to help organizations scale, and has led successful product releases, working with some of the world's top companies and fastest-growing startups both in and outside the blockchain space, including five Layer1 chains. She is an active member of the NFT community, as well as CryptoFemmes and Women in Blockchain.
 
 Max Kudinov is the CEO of Magic Powered, a software development firm building multiple web3 projects. Max has a passion for governance projects and was the Project Lead for the development of [Astro DAO](https://astrodao.com/), an all-in-one DAO creation and management platform built on Near. From this experience, Max has excellent understanding of Rust and how he would like to improve upon the Astro DAO project. Max has highly experienced web3 and rust developers on his team, ready to start the development of this project. 
 
@@ -103,11 +100,10 @@ Team:
 ### Team LinkedIn Profiles (if available)
 
 - https://www.linkedin.com/in/graemefox/
-- https://www.linkedin.com/in/kimjfournier/
 - https://www.linkedin.com/in/tngell/
 - https://www.linkedin.com/in/max-kudinov-395595152/
 
-## Development Status :open_book:
+## Development Status
 
 Before applying for the Web3 Foundation Grant, the Societal team conducted the following research:
 
@@ -122,15 +118,35 @@ Before applying for the Web3 Foundation Grant, the Societal team conducted the f
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):** 3 FTE 
-- **Total Costs:** 40,000 USDT
+- **Total Costs:** 30,000 USDT
 
-### Milestone 1 — Governance & Treasury Dashboard
 
-- **Estimated duration:** 1 month
+### Milestone 1 — DAO Factory Pallet
+
+- **Estimated Duration:** 2 months
+- **FTE:**  3
+- **Costs:** 20,000 USD
+
+The main delivery of this milestone will be the DAO Factory Pallet. This pallet will allow someone to create a DAO on the Societal Network, where the DAO consists of a governance token, treasury and governance system. 
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and create a DAO. |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a tutorial that explains how to create a DAO. |
+| 1. | Substrate module: DAO Factory | This substrate pallet will create a DAO. While creating a DAO, the user can create a token for the DAO, setup a treasury and select a governance system. |  
+| 2. | Client Modules | Minor UI updates will be made, to allow the user to interact with the pallet. However, the major UI creation will be completed in milestone 2. |
+
+
+### Milestone 2 — Governance & Treasury Dashboard
+
+- **Estimated duration:** 2 months
 - **FTE:**  3
 - **Costs:** 10,000 USD
 
-The main delivery of this milestone is to have an easy to use and interactive dashboard for DAOs to manage their governance and treasury. 
+The main delivery of this milestone is to have an easy to use and interactive UI for users to create a DAO and manage its governance and treasury. 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -139,58 +155,12 @@ The main delivery of this milestone is to have an easy to use and interactive da
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a tutorial that explains the UI of the Societal platform and how to use the application. |
-| 1. | Client Modules | We will create a client facing UI that will interact with the Societal chain. The main function of the dashboard will be a for governance and treasury management. |  
-| 2. | Substrate chain | In this milestone the Substrate chain will be built and the necessary pallets will be implemented. The pallets that will be included are: System, Support, Executive, Assets, Authority Discovery, BABE, Balances, Democracy, Elections, Referenda, GRANDPA, Indices, Membership, Multisig, Nicks, Proxy, Scheduler, Transaction Payment, and Treasury |  
+| 1. | Client Modules | We will create a client facing UI that will interact with the Societal chain. The main function of the dashboard will be for the creation of the DAO, and manage its goverance & treasury.  |  
+| 2. | Substrate chain | In this milestone the Substrate chain will be built and the necessary pallets will be implemented. The pallets that will be included are: DAO FACTORY, System, Support, Executive, Assets, Authority Discovery, BABE, Balances, Democracy, Elections, Referenda, GRANDPA, Indices, Membership, Multisig, Nicks, Proxy, Scheduler, Transaction Payment, and Treasury |  
 
 Notes: Please note that the list of pallets is not exhausted. Some pallets may need to be added or removed from the MVP. However, based on my initial research the pallets listed above will be the required pallets for the Societal chain. 
 
 
-### Milestone 2 — Cross-Chain Smart Contract Execution via an Approved Governance Proposal
-
-- **Estimated Duration:** 1.5 months
-- **FTE:**  3
-- **Costs:** 15,000 USD
-
-The main delivery of this milestone will allow an approved governance proposal on the Societal chain to execute a smart contract on Moonbeam Alpha TestNet. The delivery will also include minor UI updates, to allow the user to interact with the pallet.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish a tutorial that explains how to setup a governance proposal that will execute contracts cross-chain. |
-| 1. | Substrate module: Governance Execution | This substrate module will be a loosely coupled pallet to the existing governance pallet. We will make this into a separate pallet to allow for governance proposals to take place that do not require a smart contact to execute after approval. |  
-| 2. | Client Modules | Minor UI updates will be made, to allow the user to interact with the pallet. |
-
-Notes:
-- This will be created for Moonbeam's testnet - Moonbase Alpha, so we do not have to win a parachain slot before testing the pallet
-- An HRMP channel will need to be established between Societal’s testnet and Moonbase Alpha to sucessfully complete this milesotne
-- This milestone assumes that it will be better to create a new pallet that allows for the smart contract execution on another chain, which works in conjunction with the existing governance pallets such as the democracy, elections or referenda pallets. However, a modification to the existing governance pallets may be all that is necessary and a better design. 
-
-### Milestone 3 — SaaS Pricing Model Pallet
-
-- **Estimated Duration:** 1.5 month
-- **FTE:**  3
-- **Costs:** 15,000 USD
-
-The main delivery of this milestone will be the creation of a 'SaaS' Pricing pallet. Transactions on the Societal chain will always be free to the user for the creation of proposals and voting on proposals. However, once the DAO is large enough or requires certain functions, the Societal platform will require monthly payments for those features, which will come directly from the DAOs treasury. This will bring current web2 pricing models to web3, increasing user experience and ease of adoption. An overview of the initial plans can be found [here](https://docs.sctl.xyz/societal-platform/pricing). The delivery will also include minor UI updates, to allow the user to interact with the pallet.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article that gives an overview of the pricing plans and the features that are associated with each plan. |
-| 1. | Substrate module: SaaS Pricing | We will create a Substrate module that will require DAOs to pay a monthly subscription fee if they want to have a certain number of users in their DAO or access to certain functions. The payment for the monthly subscriptions will come directly from the DAOs wallet and not the individual members. Transactions on the Societal platform will always be free for the individual users for the creation of proposals and voting on proposals. |  
-| 2. | Client Modules | Minor UI updates will be made, to allow the user to interact with the pallet. |
-
-Implementation notes:
-- To make this work, the SaaS pricing pallet would do the following:
-    - First, it will check how many members are in the DAO via how many holders there are of the DAO token. 
-    - Second, it would have to check if the DAO has made a monthly payment from one of its wallets to the Societal subscriptions wallet. 
-    - Based on the answer to these questions, the UI would display certain functions to the DAO users on their dashboard.
 
 
 ## Future Plans
@@ -198,7 +168,7 @@ Implementation notes:
 Societal plans to secure fundraising and expand the development team. After the completion of the milestones stated above, Societal plans to expand the product offering by implementing a DAO Market Place and a Mobile App for DAO management. Ideally Societal will be able to secure another Web3 grant for these milestones, along with integrations for [private voting](https://github.com/w3f/Grants-Program/blob/master/rfps/anti-collusion%20infrastructure.md) and [identity voting](https://github.com/w3f/Grants-Program/blob/master/rfps/identity-directory.md) based on links to the RFPs. From there, Societal would also like to apply for the Substrate Builders Program, establishing itself at the go to DAO and governance platform. Finally, Societal will progressively transition into a DAO itself and release control to the community. 
 
 
-## Additional Information :heavy_plus_sign:
+## Additional Information
 
 **How did you hear about the Grants Program?** 
 
