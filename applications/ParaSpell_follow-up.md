@@ -156,13 +156,13 @@ Viktor Valaštín - Supervisor, founder of  [KodaDot](https://kodadot.xyz/). Fac
 
 - **Total Estimated Duration:** 6 months
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** 30 000 USD
+- **Total Costs:** 28 500 USD
 
 ### Milestone 1 - Improve ParaSpell UI 1/2 & ParaSpell SDK 1/3
 
 - **Estimated duration:** 2 months ⌛️
 - **FTE:**  2
-- **Costs:** 10 000 USD 💰️
+- **Costs:** 9 500 USD 💰️
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -175,13 +175,12 @@ Viktor Valaštín - Supervisor, founder of  [KodaDot](https://kodadot.xyz/). Fac
 | 3.a | Add support for nodes without xTokens pallet I | We will implement support for transfer scenario Parachain to Relay chain for nodes that do not have xTokens pallet but have `polkadotXCM` prebuilt template pallet. (SDK will be able to determine which pallet to use on which Parachain automatically) |
 | 3.b | Add support for nodes without xTokens pallet II | We will implement support for transfer scenario Parachain to Parachain for nodes that do not have xTokens pallet but have `polkadotXCM` prebuilt template pallet. (SDK will be able to determine which pallet to use on which Parachain automatically) |
 | 4. | Make SDK easier to use | Merge Parachain to Parachain & Parachain to Relay chain scenarios in SDK into one scenario that will be able to adapt based on details provided (if destination node id not provided, then assume transfer is for relay chain, also if token is compatible with relay chain), this will replace need for calling two functions for each scenario with only one function covering both scenarios eg. `send()` instead `paratopara()` & `paratorelay()`|
-| ✨. | Bounty funding | Part of Milestone delivery cost will go on Bounty funding to enhance contribution to the ecosystem & new potential developers. |
 
 ### Milestone 2 - Improve ParaSpell SDK 2/3
 
 - **Estimated duration:** 2 months ⌛️
 - **FTE:**  2
-- **Costs:** 10 000 USD 💰️
+- **Costs:** 9 500 USD 💰️
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -193,13 +192,12 @@ Viktor Valaštín - Supervisor, founder of  [KodaDot](https://kodadot.xyz/). Fac
 | 2. | Rewrite SDK to builder pattern | Best thing we can do to support multiple pallets and make it simplier for developers would be a Builder pattern functionality would look like: `import { Builder } as ‘@paraspell/sdk’` and then building of call would be something in sence: `const call = Builder(api).from(‘bsx’).to(‘ksm’).teleportTokens(‘KSM’).addr('destinationAddr').sum(currencySum).asV3().build()`|
 | 3. | Make a map of compatible <chain, pallet> | Before each SDK release there should be a script that connects to the compatible nodes, checks all relevant available pallets `xTokens`, `polkadotXCM`, `asset pallets`, `HRMP` pallets) and saves them to the map.|
 | 4. | Use [turborepo](https://turborepo.org/) | Remake package into `monorepo` for easier importing and cleaner use |
-| ✨. | Bounty funding | Part of Milestone delivery cost will go on Bounty funding to enhance contribution to the ecosystem & new potential developers. |
 
 ### Milestone 3 - Improve ParaSpell UI 2/2 & ParaSpell SDK 3/3
 
 - **Estimated duration:** 2 months ⌛️
 - **FTE:**  2
-- **Costs:** 10 000 USD 💰️
+- **Costs:** 9 500 USD 💰️
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -215,7 +213,6 @@ Viktor Valaštín - Supervisor, founder of  [KodaDot](https://kodadot.xyz/). Fac
 | 3. | Add comprehensive Wiki guide | We will add Wiki guide, that will specify SDK implementation to another dApps, different SDK functionalities & Guide for Parachain creators that wish to add their freshly baked node to the list of compatible nodes. |
 | 4. | Use scaffold template from Milestone 1 to update UI | This will update ParaSpell UI from Vue 2 into Vue3 and nuxt. It will also be good demonstration for template usage & it will make UI more compatible with other dApps. | 
 | 5. | Integrate suggestions from [evaluation](https://github.com/w3f/Grant-Milestone-Delivery/blob/1343c66d74a1078b2a30972463a614737ed8aa92/evaluations/paraspell_1_keeganquigley.md) | Integrate suggestions regarding Wiki, module for asset conversions to not need to write so many 0s & replace button text `Log in with:` with account name once logged in | 
-| ✨. | Bounty funding | Part of Milestone delivery cost will go on Bounty funding to enhance contribution to the ecosystem & new potential developers. |
 
 ## Future Plans 🔭
 
