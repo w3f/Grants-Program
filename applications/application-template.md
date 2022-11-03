@@ -10,7 +10,7 @@
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
-## Referral Program :moneybag: 
+## Referral Program (optional) :moneybag: 
 
 You can find more information about the program [here](../README.md#moneybag-referral-program).
 - **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
