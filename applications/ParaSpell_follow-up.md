@@ -1,7 +1,7 @@
 # ParaSpell
 
 - **Team Name:** ParaSpell✨
-- **Payment Address:** 0xa085190c859eAe92bCCED9CE05b10DDb363FE5Ea (USDC)
+- **Payment Address:** 0xB7d45Ef044fD9342e4c03e28D9e9bddA2d4Fe3e1 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 🐤
 
 
