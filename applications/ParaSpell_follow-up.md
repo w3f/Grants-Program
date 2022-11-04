@@ -70,7 +70,7 @@ SDK currently handles transfers to 29 compatible Parachains (ones that have xTok
 -   Typescript
 -   Polkadot api libraries
 -   Make
--   Polkadot launch
+-   Parachain launch
 -   Substrate compatible nodes (For now Rococo, Pichiu(Kylin network), Bifrost & Acala)
 
 ### Ecosystem Fit  🌳
@@ -228,7 +228,7 @@ Project goal is that SDK will serve dApp developers and UI will teach new substr
 ##### Project achievements in chronological order  ⌛️
 
 - 📙 Article about project created & presented on international conference ICECET2022 held in Prague (450 out of 1000+ articles accepted) Link to IEEE publication -  [IEEE - Sharing Fungible Assets Across Polkadot Paraverse](https://ieeexplore.ieee.org/document/9872938/)
-- 🥈  2nd Prize, Build a XCM related Tool for Moonbeam - Polkadot North America Hackaton  [Hackaton entry](https://devpost.com/software/polkachange-cross-blockchain-transfer-tool)
-- 🥉  3rd Prize, EVM+ DApp for aUSD yield - Polkadot North America Hackaton  [Hackaton entry](https://devpost.com/software/polkachange-cross-blockchain-transfer-tool)
+- 🥈  2nd Prize, Build a XCM related Tool for Moonbeam - Polkadot North America Hackathon  [Hackathon entry](https://devpost.com/software/polkachange-cross-blockchain-transfer-tool)
+- 🥉  3rd Prize, EVM+ DApp for aUSD yield - Polkadot North America Hackathon  [Hackathon entry](https://devpost.com/software/polkachange-cross-blockchain-transfer-tool)
 - 🎈 Web 3 Foundation base grant funded [link](https://github.com/dudo50/Grants-Program/blob/d182e10ecbd7705aee07edc5f7aa0085d07188e5/applications/ParaSpell.md), [link2](https://medium.com/web3foundation/web3-foundation-grants-wave-15-recipients-5ac4e6406485).
 - 🥈 Second place bounty in Moonbeam connected contracts Hackathon - Build Cross-chain application with Axelar [Link to hackathon post](https://devpost.com/software/moondo)
