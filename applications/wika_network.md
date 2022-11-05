@@ -1,9 +1,10 @@
 # W3F Open Grant Request
 
 
-* **Project Name:** Wika Network (temporary prototype name)
+* **Project Name:** wika.network
 * **Team Name:** Web Registry DAO
 * **Payment Address:** 0xBfc8cDb5617eE0F83794156ABD7465730E125cE3 (USDT)
+* **Level:** 2
 
 
 
