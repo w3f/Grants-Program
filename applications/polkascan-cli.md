@@ -2,7 +2,7 @@
 
 *  **Team Name:** Polkascan CLI Team
 
-*  **Payment Address:** Ethereum Address: <ETHEREUM_ADDRESS_HERE>
+*  **Payment Address:** Ethereum Address: 0xE4545705068dec1f68698d032944561Ec332836c
 
 *  **Level:** 1
 
