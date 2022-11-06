@@ -56,7 +56,7 @@ Level 1: Up to $10,000, 2 approvals
 
 *  **Total Estimated Duration:** 2 weeks
 
-*  **Total Costs:** 5,000 USD
+*  **Total Costs:** 4,000 USD
 
 ### Milestone 1
 
@@ -72,7 +72,7 @@ Level 1: Up to $10,000, 2 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest and UI tests in Cypress to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish a series of articles on how to contribute and create new boxes. |
-| 0. | Creation CLI tool | CLI tool will be able to fetch account, block, event, transaction and logs as on explorer.polkascan.io. CLI will be coded in Python since we will be using py-substrate-interface: https://github.com/polkascan/py-substrate-interface. CLI will be having interactive menu where user can navigate using arrow keys. |
+| 0. | Creation CLI tool | CLI tool will be able to fetch account, block, event, transaction and logs as on explorer.polkascan.io. CLI will be coded in Python since we might be using py-substrate-interface: https://github.com/polkascan/py-substrate-interface and polkascan API. CLI will be having interactive menu where user can navigate using arrow keys. |
 
 
 ## Additional Information :heavy_plus_sign:
