@@ -92,7 +92,7 @@ Level 1: Up to $10,000, 2 approvals
 
 ### Milestone 2
 
-*  **Estimated Duration:** 3 weeks
+*  **Estimated Duration:** 2 weeks
 
 *  **Costs:** 4,000 USD
 
