@@ -11,8 +11,9 @@
 ### Overview
 
 For this proposal, we'll be developing:
-1. **Substrate Core Polywrapper:** Polywrapper in Rust that enables users to interact with substrate-based chains using any language on any platform.
-2. **Developer Documentation:** Documentation showing developers how they can use the substrate core wrapper within their dapps and wrappers.
+1. **Substrate Core RPC Polywrapper:** Polywrapper in Rust that enables users to interact with substrate-based chains using any language on any platform.
+2. **Substrate Signer Provider Plugin (js):** Polywrap Plugin for Javascript host that allows signing of messages and transactions to be done using the polkadot-js browser plugin.
+3. **Developer Documentation:** Documentation showing developers how they can use the substrate core wrapper within their dapps and wrappers.
 
 In the future, we'd like to continue this work by developing:
 1. **Token Balance Interface:** Polywrap standard interface that defines common functionality for all pallets supporting "balances".
@@ -29,7 +30,7 @@ https://polywrap.io/#/
 
 ### Project Details
 
-Polywrapper will be written in Rust and compiled to WASM so that it can be used by developers to call substrate methods by simply invoking graphql calls. We will deploy Substrate Polywrapper to the IPFS.
+Polywrapper will be written in Rust and compiled to WASM so that it can be used by developers to call substrate methods by simply invoking graphql calls.
 
 Project heavily relies on the Polywrap toolchain and Polywrap team support.
 
@@ -65,6 +66,7 @@ Project heavily relies on the Polywrap toolchain and Polywrap team support.
 * Matthias Seitz - Team Lead
 * Tianyi Zhang
 * Willes Lau
+* Willem Olding
 
 ### Contact
 
@@ -97,11 +99,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 * https://github.com/mattsse
 * http://github.com/clearloop
 * https://github.com/willeslau
+* https://github.com/willemolding/
 
 ### Team LinkedIn Profiles (if available)
 
 * https://www.linkedin.com/in/matthias-seitz-a49378211/
 * https://www.linkedin.com/in/tianyi-zhang-2277191a3/
+* https://www.linkedin.com/in/willem-olding/
 
 ## Development Status :open_book:
 
@@ -132,7 +136,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 * **Total Polywrap DAO Costs:** 27 000$ & 60 WRAP ([Approved Grant Proposal](https://snapshot.org/#/polywrap.eth/proposal/0x1c4b651c654c9409353e70e4675b3311f06a06ab40d8818e4370faa064c5645d))
 * **Start Date:** 11. April 2022
 
-### Milestone 1 - Substrate Core Polywrapper
+### Milestone 1 - Substrate RPC Polywrapper
 
 * **Estimated duration:** 1 month
 * **FTE:**  2 Software Engineer, 0.5 Project Manager
@@ -145,26 +149,25 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests and e2e tests using polywrap recipes json tests |
 | 0d. | Article | We will publish an article that explains the what/why/how of integrating Substrate based chains using Polywrap. Some examples from the BlockWatch team's Tezos integration: [launch article](https://blockwatch.cc/blog/announcing-tezos-polywrapper/), [dev docs](https://blockwatch.gitbook.io/polywrap-tezos/). |
 | 1. | Schema Definitions | Described below |
-| 2. | `substrate-signer-provider` Polywrap Client JavaScript Plugin | Described below |
-| 3. | `substrate-core` Wrapper | Described below |
+| 2. | `signer-provider` Polywrap Client JavaScript Plugin | Described below |
+| 3. | `rpc-wrapper` Wrapper | Described below |
 
 > NOTE: 2 & 3 can be developed in parallel once schemas are defined.
 
 ### 1. Schema Definitions
 
 There will be 2 Polywrap schemas:
-- `substrate-signer-provider` - Low-level interface for accessing the application's configureable signer / provider.
-- `substrate-core` - Higher-level interface for interacting with a substrate based chain. This depends upon on an implementation of the substrate-signer-provider interface above.
+- `signer-provider` - Low-level interface for accessing the application's configureable signer / provider.
+- `rpc-wrapper` - Higher-level interface for interacting with a substrate based chain. This depends upon on an implementation of the substrate-signer-provider interface above.
 
 To get a better idea of what this "separation of concerns" looks like in practice, please refer to [this example specification](https://github.com/polywrap/integrations/blob/main/near/Near%20Polywrapper%20Specification.md#near-polywrapper-specification) for the Polywrap <> Near integration that's actively being developed.
 
-### 2. `substrate-signer-provider` JavaScript Plugin
+### 2. `signer-provider` JavaScript Plugin
 
-A JavaScript plugin is necessary to perform the following actions that cannot be implemented directly within a Polywrapper due to limitations of WASM, and security best-practices:
-* Filesystem interaction, such as reading and writing to local keystores
-* Browser interaction, including interaction with the Polkadot.js Wallet
-* Sending RPC requests, through the application's configurable providers
-* Likewise, Polywrapper execution is stateless and therefore the plugin is used to cache the network configuration parameters provided when instantiating the plugin. Configuration items can include a network and wallet settings, as well as optional data developers might provide when instantiating a Polkadot.js class instance.
+A JavaScript plugin is necessary to perform the signing of transaction and messages. This cannot be implemented directly within a Polywrapper due to limitations of WASM, and security best-practices. The plugin should allow
+
+* Signing arbitrary messages via browser plugin interaction
+* Signing special transaction payloads that provide more useful information to the user so they can know what they are signing
 
 The plugin would typically be instantiated and configured when instantiating the Polywrap Client, like so:
 ```typescript
@@ -175,7 +178,7 @@ import {
 const client = new Web3ApiClient({
   plugins: [{
     uri: "plugin/substrate-signer-provider",
-    plugin: substratePlugin({
+    plugin: substrateSignerProviderPlugin({
       // Can include Polkadot.js instance here
       ...
     })
@@ -185,38 +188,40 @@ const client = new Web3ApiClient({
 
 To get an idea of what the `substrate-signer-provider` schema might look like, please see the Near plugin's schema [here](https://github.com/polywrap/integrations/blob/main/near/Near%20Polywrapper%20Specification.md#near-javascript-plugin).
 
-### 3. `substrate-core` Wrapper
+### 3. `rpc-wrapper` Wrapper
 
-The Polywrapper is a set of WASM modules that contain the bulk of the logic needed to interact with substrate based chains. The Polywrapper calls the aforementioned JavaScript Plugin only when necessary to perform specific tasks.
+The Polywrapper is a set of WASM modules that contain the bulk of the logic needed to interact with substrate based chains. The Polywrapper calls the aforementioned JavaScript Plugin only when necessary to perform signing tasks.
 
 A call to the Polywrapper might look something like this (TS/JS application):
 ```typescript
-import { Header } from "./polywrap-codegen/substrate-core";
-
-const result = await client.invoke<Header>({
-  uri: "/ens/substrate-core.eth",
-  module: "query",
-  method: "getHeader"
-  input: {
-    hash: "0x1c54f419aa058319b198142ece3a625989f8cea01f80bd6110c0fd10c1e6cc3e",
-  }
-});
+const result = await Substrate_Module.chainGetBlock({
+    url,
+    number: 0
+  },
+  client,
+  uri
+);
 ```
 
-A Polywrapper can have two WASM modules--a "Mutation" module and a "Query" module. As the names imply, functions in the Mutation module may change on-chain state while Query functions do not.
+The rpc-wrapper exposes the following interface that maps closely to the default Substrate node RPC:
 
-The core methods that will be worked on for this proposal will be:
-- author_submitExtrinsic
-- chain_getBlockHash
-- chain_getHeader
-- chain_getFinalizedHead
-- chain_getBlock
-- state_getStorage
-- state_queryStorage
-- state_queryStorageAt
-- state_getMetadata
-- state_getRuntimeVersion
-- system_properties
+- getSignerProviderAccounts
+- chainGetMetadata
+- blockHash
+- genesisHash
+- chainGetBlock
+- constant
+- getRuntimeVersion
+- getStorageValue
+- getStorageMap
+- getStorageMapPaged
+- rpcMethods
+- accountInfo
+- getNonceForAccount
+- palletCallIndex
+- sign
+- send
+- signAndSend
 
 We will be heavily leverage existing Rust crates in the substrate developer ecosystem to implement the wrapper detailed above.
 
