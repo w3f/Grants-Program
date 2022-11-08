@@ -1,10 +1,8 @@
-# W3F Open Grant Request
+# wika.network
 
-
-* **Project Name:** Wika Network (temporary prototype name)
 * **Team Name:** Web Registry DAO
 * **Payment Address:** 0xBfc8cDb5617eE0F83794156ABD7465730E125cE3 (USDT)
-
+* **Level:** 2
 
 
 ## Project Overview :page_facing_up:
@@ -179,18 +177,18 @@ but we believe our design is simpler.
 
 ### Team members
 
+* Curtis Wilkerson
 * Nabil Abdellaoui
 * Reda Bendiar
 * John Candido
 * Doug Astor
-* Curtis Wilkerson
 * Thomas Cantrell
 
 
 ### Contact
 
-* **Contact Name:** Nabil Abdellaoui
-* **Contact Email:** nabil.abdellaoui@expr-research.com
+* **Contact Name:** Curtis Wilkerson
+* **Contact Email:** curtisawilk@gmail.com
 * **Website:** www.wika.network
 
 ### Legal Structure
@@ -199,6 +197,8 @@ but we believe our design is simpler.
 * **Registered Legal Entity:** Web Registry DAO
 
 ### Team's experience
+
+**Curtis Wilkerson** is a data scientist working in financial technology for 6 years. His focus has been credit & fraud modeling as well as building machine learning infrastructure in the fintech/financial inclusion space. 
 
 **Nabil** is a self-taught software architect with 25 years experience 
 coding in different programming languages and frameworks.
@@ -235,8 +235,6 @@ John also regularly serves as a thought leader and public figure for credit exec
 In his own words, **Doug Astor** is a degen!
 
 Also, he is currently the admin of the Wika discord server.
-
-**Curtis Wilkerson** is a data scientist working in financial technology for 6 years. His focus has been credit & fraud modeling as well as building machine learning infrastructure in the fintech/financial inclusion space. 
 
 **Thomas Cantrell** is a data scientist working in banking operations and regulatory compliance at Capital One for 6 years. His focus is primarily on operations predictive modeling, document-centric vision machine learning, and process automation. Outside of work, he enjoys experimenting with generative deep learning.
  
@@ -351,7 +349,7 @@ Global success criteria:
 
 ### Milestone 3 — Integration Libs
 
-* **Estimated Duration:** 1 month
+* **Estimated Duration:** 3 months (expected to start work in December 2022 and be completed March 2023)
 * **FTE:**  1
 * **Costs:** 5,000 USD
 
