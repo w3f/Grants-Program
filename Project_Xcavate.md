@@ -17,11 +17,11 @@ Xcavate facilitates digitizing land and/or property title deeds through minting 
 Xcavate is an ecosystem that allows real-world property developers access to finance parcels of physical land with planning permission for development. Once the land is at the final development stage, the developer will create NFTs for the individual properties to be sold/managed by a peer-to-peer marketplace (property owners, investors, trusts etc.). 
 The system will significantly reduce the time from real estate planning permission to build start. By simplifying the finance application process and speeding up the release of funds to the developer.. Xcavate not only provides real-world property developers with a way to build quicker but, as a result, enables a more significant number of much-needed houses to be delivered to market. It also provides liquidity to static real-world assets at every stage of the property development process in a fair and risk-averse way. It will enable the real estate to be onboarded cleanly and efficiently, opening up opportunities throughout the broader Dotsama ecosystem.
 
-![](XCAV-WEB-3-Grant-Application-Image-1.jpg)
+![](https://xacavate.io/wf3/XCAV-WEB-3-Grant-Application-Image-1.jpg)
 
-![](XCAV-WEB-3-Grant-Application-Image-2.jpg)
+![](https://xacavate.io/wf3/XCAV-WEB-3-Grant-Application-Image-2.jpg)
 
-![](XCAV-WEB-3-Grant-Application-Image-3.jpg)
+![](https://xacavate.io/wf3/XCAV-WEB-3-Grant-Application-Image-3.jpg)
 
 ### Project Details
 
@@ -30,17 +30,34 @@ We expect the teams to already have a solid idea about your project's expected f
 We will be using an agile methodology for the development of this project. We will use a design to development process to deliver the best user experience. Followed by an engineer's engagement based on approved designs. We will build an agile board open to W3F and partners for complete project transparency.  This will allow everyone involved to see all milestones, roadblocks and added scope in real-time. We will still have weekly updates internally, but this methodology will enable W3F to be in the know at all times. Our organizational goal is to achieve a simplistic way for everyone involved to be in the know at all times. In addition, we would like to set up and maintain the quality of code and delivery to production processes through GitHub that all involved will have access to review. We understand that in pursuit of these objectives, W3F has their standards, and we will always strive to exceed them as partners. We have chosen the below technology stack and already have a significant amount of experience to deliver this project in these technologies. We have also already spent a reasonable amount of time meeting and learning about our partners and their unique technologies.
 
 Xcavate will develop multiple Pallets to execute the functionalities. We will use the substrate framework and primary language Rust to create the pallets on the Polkadot ecosystem.
-Token PalletDecentralized Identity Document palletUser Management palletLoan Management palletTransaction management palletStaking palletVerification pallet
+
+Token Pallet
+Decentralized Identity Document pallet
+User Management pallet
+Loan Management pallet
+Transaction management pallet
+Staking pallet
+Verification pallet
 
 This Architecture diagram shows the visual representation that maps out the physical implementation for components in the Polkadot ecosystem and how the scalability of the platform works. The diagram represents Microservices we are using to execute the functionality. API gateway will split the API calls to the respective microservices. We are using an s3 bucket to store the media files. We are using pallets to execute the functions on the Polkadot ecosystem.
 
-![](XCAV-WEB-3-Grant-Application-Image-4.jpg)
+![](https://xacavate.io/wf3/XCAV-WEB-3-Grant-Application-Image-4.jpg)
 
-Token:XCAV - Platforms Native Token to launch a para chain and participate in a crowd loan/slot auction. XCAV tokens are used to stake within the platform. We will create these tokens with the Transfer, Mint, Burn, Approve, and Allowance functions.Liquidity Pool:Xcavate creates a liquidity pool to store staked tokens, staked tokens will be queued and utilized for each loan application. XCAV tokens are swapped as GBPT through XCM and deposited on the Central Loan pool.Central Loan Pool:Xcavate Creates a central loan pool to manage Loan amounts and Loan repayment. The central lending pool will act as the heart of the platform to map all the transactions.
+Token:
+XCAV - Platforms Native Token to launch a para chain and participate in a crowd loan/slot auction. XCAV tokens are used to stake within the platform. We will create these tokens with the Transfer, Mint, Burn, Approve, and Allowance functions.
+Liquidity Pool:
+Xcavate creates a liquidity pool to store staked tokens, staked tokens will be queued and utilized for each loan application. XCAV tokens are swapped as GBPT through XCM and deposited on the Central Loan pool.
+Central Loan Pool:
+Xcavate Creates a central loan pool to manage Loan amounts and Loan repayment. The central lending pool will act as the heart of the platform to map all the transactions.
 
 ### Technology Stack
 
-React.jsNode.jsExpress.jsRustSubstrate FrameworkPolkadot
+React.js
+Node.js
+Express.js
+Rust
+Substrate Framework
+Polkadot
 
 ### Third-Party
 
@@ -152,7 +169,9 @@ We will take designs from the onboarding portal and use AWS to create a simple a
 | 4         | Substrate module: Loan Management Pallet  |  The Loan Management module will allow the users to manage Loan Requests, and admin to approve, and users to repay the loans
 | 5         | Substrate module: Transaction Management Pallet 	     |  The Transaction Management Module will allow users and admin to sign and execute the Transactions (i.e., Receive loan amount, Repay the loan, sign the transaction)
 | 6         | Substrate module: Staking pallet  	     |  The Staking module will allow users to stake the tokens and let the user unstake the amount.
-| 7         | Substrate module: Verification pallet 	     |  The Verification Module will verify the documents submitted by the Loan requestor through API.8Substrate
+| 7         | Substrate module: Verification pallet 	     |  The Verification Module will verify the documents submitted by the Loan requestor through API.
+8
+Substrate
 | 8         | Substrate module: Substrate chain 	     |  Launching its own public network( Parachain ) to participate in a slot auction. | Token pallets, DID pallets, user pallets, Loan management pallets, Transaction management pallets, staking pallets, and verification pallets of our custom chain will interact in such a way, that allows property developers to get loans to build their properties, and users to get rewarded by staking their tokens.
 | 9         | DApp: Xcavate  	                     |  We will deliver a working URL for a Decentralized Application that will contain functionality like Loan Management, Staking Management, Transaction Management, and Identity Management, Also we will deliver a set of related GitHub that will support the DApp.
 | 10        | Smart contracts  	                     |  We are not developing any smart contracts, we use pallets for every functionality
