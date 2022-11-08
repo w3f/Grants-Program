@@ -17,11 +17,11 @@ Xcavate facilitates digitizing land and/or property title deeds through minting 
 Xcavate is an ecosystem that allows real-world property developers access to finance parcels of physical land with planning permission for development. Once the land is at the final development stage, the developer will create NFTs for the individual properties to be sold/managed by a peer-to-peer marketplace (property owners, investors, trusts etc.). 
 The system will significantly reduce the time from real estate planning permission to build start. By simplifying the finance application process and speeding up the release of funds to the developer.. Xcavate not only provides real-world property developers with a way to build quicker but, as a result, enables a more significant number of much-needed houses to be delivered to market. It also provides liquidity to static real-world assets at every stage of the property development process in a fair and risk-averse way. It will enable the real estate to be onboarded cleanly and efficiently, opening up opportunities throughout the broader Dotsama ecosystem.
 
-![](https://xacavate.io/wf3/XCAV-WEB-3-Grant-Application-Image-1.jpg)
+![](https://xcavate.io/wp-content/uploads/2022/11/XCAV-WEB-3-Grant-Application-Image-1.jpg)
 
-![](https://xacavate.io/wf3/XCAV-WEB-3-Grant-Application-Image-2.jpg)
+![](https://xcavate.io/wp-content/uploads/2022/11/XCAV-WEB-3-Grant-Application-Image-2.jpg)
 
-![](https://xacavate.io/wf3/XCAV-WEB-3-Grant-Application-Image-3.jpg)
+![](https://xcavate.io/wp-content/uploads/2022/11/XCAV-WEB-3-Grant-Application-Image-3.jpg)
 
 ### Project Details
 
@@ -41,7 +41,7 @@ Verification pallet
 
 This Architecture diagram shows the visual representation that maps out the physical implementation for components in the Polkadot ecosystem and how the scalability of the platform works. The diagram represents Microservices we are using to execute the functionality. API gateway will split the API calls to the respective microservices. We are using an s3 bucket to store the media files. We are using pallets to execute the functions on the Polkadot ecosystem.
 
-![](https://xacavate.io/wf3/XCAV-WEB-3-Grant-Application-Image-4.jpg)
+![](https://xcavate.io/wp-content/uploads/2022/11/XCAV-WEB-3-Grant-Application-Image-4.jpg)
 
 Token:
 XCAV - Platforms Native Token to launch a para chain and participate in a crowd loan/slot auction. XCAV tokens are used to stake within the platform. We will create these tokens with the Transfer, Mint, Burn, Approve, and Allowance functions.
