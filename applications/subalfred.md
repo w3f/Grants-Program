@@ -92,36 +92,34 @@ There are three parts:
 - **FTE:**  1
 - **Costs:** 24,000 USD
 
-| Number | Deliverable                        | Specification                                                                                                                                    |
-| -----: | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-|    0a. | License                            | GPLv3                                                                                                                                            |
-|    0b. | Documentation                      | I'll document every `pub` function and a basic tutorial that explains how a user interact with Subalfred.                                        |
-|    0c. | Testing guide                      | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. |
-|    0d. | Docker                             | I'll provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                       |
-|     1. | Core: check features               | I'll finish the this features, which is use for checking Substrate runtime runtime-benchmarks/std/try-runtime features enable status.            |
-|     2. | Core: use paritytech/ss58-registry | I'll make PR to paritytech/ss58-registry to support my custom logic, and setup the dependabot to update ss58-registry automatically.             |
-|     3. | Core, CLI: override runtime code   | I'll make it able to override the runtime code while fork-off the chain state.                                                                   |
-|     3. | Core, CLI: rpc                     | I'll finish the this features, user could use this command to send the RPC call to the Substrate node.                                           |
-|     4. | CLI: JSON output                   | I'll make `key` command provides JSON output.                                                                                                    |
-|     5. | CLI: stable Rust toolchain         | I'll rewrite the subcommand parts in procedure macro to remove the unstable Rust features usage.                                                 |
-|     6. | CLI: `--at` accept block number    | I'll make the `--at` arg accept block number input, instead of a block hash only. Any command with `--at` arg will be updated.                   |
-|     7. | Releases                           | Linux, macOS, Windows prebuilt binaries, and crates.io release.                                                                                  |
+| Number | Deliverable                        | Specification                                                                                                                              |
+| -----: | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+|    0a. | License                            | GPLv3                                                                                                                                      |
+|    0b. | Documentation                      | I'll document every `pub` function and a basic tutorial that explains how a user interact with Subalfred.                                  |
+|    0c. | Testing guide                      | Core functions will be fully covered by unit tests to ensure functionality and robustness. Simply run `cargo test` under the project root. |
+|     1. | Core: check features               | I'll finish the this features, which is use for checking Substrate runtime runtime-benchmarks/std/try-runtime features enable status.      |
+|     2. | Core: use paritytech/ss58-registry | I'll make PR to paritytech/ss58-registry to support my custom logic, and setup the dependabot to update ss58-registry automatically.       |
+|     3. | Core, CLI: override runtime code   | I'll make it able to override the runtime code while fork-off the chain state.                                                             |
+|     3. | Core, CLI: rpc                     | I'll finish the this features, user could use this command to send the RPC call to the Substrate node.                                     |
+|     4. | CLI: JSON output                   | I'll make `key` command provides JSON output.                                                                                              |a
+|     5. | CLI: stable Rust toolchain         | I'll rewrite the subcommand parts in procedure macro to remove the unstable Rust features usage.                                           |
+|     6. | CLI: `--at` accept block number    | I'll make the `--at` arg accept block number input, instead of a block hash only. Any command with `--at` arg will be updated.             |
+|     7. | Releases                           | Linux, macOS, Windows prebuilt binaries, and crates.io release.                                                                            |
 
 ### Milestone 2 — Add more new features
 - **Estimated Duration:** 2 week
 - **FTE:**  1
 - **Costs:** 4000 USD
 
-| Number | Deliverable               | Specification                                                                                                                                    |
-| -----: | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-|    0a. | License                   | GPLv3                                                                                                                                            |
-|    0b. | Documentation             | I'll document every `pub` function and a basic tutorial that explains how a user interact with Subalfred.                                        |
-|    0c. | Testing guide             | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, I will describe how to run these tests. |
-|    0d. | Docker                    | I'll provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                       |
-|     1. | License                   | GPLv3.                                                                                                                                           |
-|     2. | Core, CLI: track-updates  | List the companions that you need to do from substrate/cumulus/frontier/parity-bridges-substrate.                                                |
-|     3. | Core, CLI: update-subdeps | Update the substrate/cumulus/frontier/parity-bridges-substrate dependencies in one command.                                                      |
-|     4. | Releases                  | Release Linux, macOS, Windows prebuilt binaries on GitHub, and crates.io.                                                                        |
+| Number | Deliverable               | Specification                                                                                                                              |
+| -----: | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+|    0a. | License                   | GPLv3                                                                                                                                      |
+|    0b. | Documentation             | I'll document every `pub` function and a basic tutorial that explains how a user interact with Subalfred.                                  |
+|    0c. | Testing guide             | Core functions will be fully covered by unit tests to ensure functionality and robustness. Simply run `cargo test` under the project root. |
+|     1. | License                   | GPLv3.                                                                                                                                     |
+|     2. | Core, CLI: track-updates  | List the companions that you need to do from substrate/cumulus/frontier/parity-bridges-substrate.                                          |
+|     3. | Core, CLI: update-subdeps | Update the substrate/cumulus/frontier/parity-bridges-substrate dependencies in one command.                                                |
+|     4. | Releases                  | Release Linux, macOS, Windows prebuilt binaries on GitHub, and crates.io.                                                                  |
 
 ### Milestone 3 — Provide checks' GitHub Actions
 - **Estimated Duration:** 1 week
@@ -132,7 +130,7 @@ There are three parts:
 | -----: | -------------------------------------- | ---------------------------------------------------------------------------------------------- |
 |    0a. | License                                | GPLv3                                                                                          |
 |    0b. | Documentation                          | I'll provide the inline documentation.                                                         |
-|    0c. | Testing guide                          | I'll provide a GitHub Actions setup example and describe how to check the result.               |
+|    0c. | Testing guide                          | I'll provide a GitHub Actions setup example and describe how to check the result.              |
 |     1. | GitHub Actions: check runtime features | I'll provide a GitHub Actions, which could check the runtime features status while developing. |
 |     2. | GitHub Actions: check runtime storage  | I'll provide a GitHub Actions, which could check the runtime storage changes while developing. |
 |     3. | GitHub Actions: check runtime version  | I'll provide a GitHub Actions, which could check the runtime version changes while developing. |
@@ -158,3 +156,6 @@ Please note this is a part of milestone 1.
 
 I'd love to convert these milestone to issues on the [repository](https://github.com/hack-ink/subalfred).
 It will be much easier to track the status.
+
+### Amending
+- Remove **0.d** from milestone **1** and **2**. Because I realize that it is much easier for you to test this with a simple `cargo test` command. So, I decide to use **cargo** instead of **docker**. [Discussion](https://github.com/w3f/Grant-Milestone-Delivery/pull/615#issuecomment-1308480639)
