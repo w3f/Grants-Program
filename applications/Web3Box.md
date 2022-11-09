@@ -9,6 +9,8 @@
 
 **Web3Box is committed to creating a Web3 UGA platform with a secure environment worldwide**
 
+NOTE: UGA stands for Users Generated  Assets, and the platform means a standalone local running environment - Win & Mac Web3Box desktop client
+
 - In order to prevent inevitable frauds, we propose a privacy-safe sandbox concept, Web3Box, so that all the information of Polkadot ecosystem users is controlled in their local trusted environment.
 - Web3Box will become the Web3 portal for Polkadot ecosystem users, giving them one-stop access to all Web3 applications. Polkadot ecosystem users can manage their multi-chain assets and track asset changes, ensuring asset security.
 - In response to the frequent Web3 asset security incidents,  Polkadot ecosystem users can track the risks of Polkadot ecosystem projects through the Web3Box, so as to choose Web3 portfolio safely.
@@ -42,9 +44,19 @@
 #### Web3Box VS Browser ####
 ![](https://lh3.googleusercontent.com/x5iDstqgO_-ljPxqvNfHR07JF0Bo8xl1aiBEVKxOfxNqXrydZW2drKlkQQU5oiviknzsgqvGGD90k-UlT4Y5TbZn9c4f7-pOfIanXLSuXeb_svjQOMrMcIGddV2VY5m6MohVoLn2rwBNW85QcHZyYy7GMqWVu-xKt_QbRJ6gQCj4Rg1mlISImyXhd3fsaw)
 
+#### Risk Assessment ####
+<img width="569" alt="image" src="https://user-images.githubusercontent.com/117150831/200757322-7e71bb05-9246-4367-bf43-f006627e1bab.png">
+
+#### Web3 Tool Navigation ####
+![image](https://user-images.githubusercontent.com/117150831/200757895-6930ffc7-7bd2-4233-bb02-9912f77794ea.png)
+
+
+#### Web3 Feed Aggregation ####
+
+<img width="311" alt="image" src="https://user-images.githubusercontent.com/117150831/200757919-c01b82a1-7a5d-4aba-bf7e-650a80dcfe3c.png">
+
 #### Web3Box Preview ####
 **![](https://lh3.googleusercontent.com/KZwZrmrRtQHMPqqcGkssfYtvC8SDmvGwB0WjbQ6r12Doqrx5yGyLcraGbVbqSFpYQjR-NcHUUK6tLYfmuq3huMCAsRHT0T_qiQ_AIV-KDvgroW1boEHsbeipCwXi245WDXsP3-LnI5BzpsVcXM4O6ux2RUrujJrY8Ah6qemsCDsxXz6FVLEtICp3JF79qw)**
-
 
 ### Ecosystem Fit
 
@@ -110,22 +122,7 @@ Web3Box has confirmed the overall architecture. And now, Web3Box is confirming t
 | 5. | **Multi-chain Wallet**:Support Polkadot multi-chain assets | Polkadot ecological multi-chain wallet, including Polkadot, Kusama, Moonbeam, Astar, Acala, Phala, Litentry, etc. |
 | 6. | **Multi-chain Wallet**:Polkadot multi-chain assets management  | Multi-chain asset management, including asset sending, receiving and transaction record query
 
-**Note: Web3Box team will finsih Milestone1, and then start the Milestone 2. So Milestone2 info (like function details, duration, FTE, Cost,etc.) is still under talking.**
-
-### Milestone 2 — Risk Assessment 
-
-- **Estimated Duration:** TBD
-- **FTE:**  TBD
-- **Costs:** TBD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License |  MIT  |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can install and operate Web3Box client. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Article | We will publish an **article** in our official [Medium](https://medium.com/@web3box.official) that explains what was done/achieved as part of the grant.  |
-| 1. | **Risk Socre**| Polkadot ecological parachains' risk score query |
-| 2. | **Risk Report**| Polkadot ecological parachains' risk report inquiry and download |
+**Note: Web3Box team will finsih Milestone1, and then start the Milestone 2 Risk Assessment, more details about Milestone2 will be announced by the follow-up grant applicaiton.**
 
 
 ## Future Plans
