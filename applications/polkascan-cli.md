@@ -13,6 +13,19 @@
 
 polkascan-cli is a CLI tool where anyone can search for an account, block, event, transaction and logs. It is same as they do in https://explorer.polkascan.io Searching on CLI can increase productivity of a developer. They can also copy/paste data fast and can call this script via another script. It is a utility based tool.
 
+#### Language Used
+We will be using **Python** language since we will be needing support of **py-substrate-interface**.
+We will be using **Typer** to implement the CLI: https://github.com/tiangolo/typer.
+
+#### CLI Flags
+
+There are going to be following options when users open up the CLI:
+ - Get current block number.
+ - Get Blocks: Number, time, hash, Extrinsics, Events.
+ - Get block info: Timestamp UTC, Hash, Parent Hash, State root, Extrinsics root, Extrinsics count, Events count, Runtime.
+ - Get Extrinsic details.
+ - Get account info.
+
 ### Ecosystem Fit
  - Where and how does your project fit into the ecosystem?
 Anyone who is looking for account/block/event/transaction details.
