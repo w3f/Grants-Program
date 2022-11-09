@@ -3,7 +3,6 @@
 - **Team Name:** Xcavate
 - **Payment Address:** 4pjePvJgUZAMKtnSmYJitGacxBRnsKe1GvCb1t6vgg2Kof8o 
 - **Level:** 1 = $10000
-- **Total Project Cost** $307200
 
 
 ## Project Overview
@@ -136,9 +135,9 @@ We have been taking time to play with Substrate to form initial POCs inside the 
 
 ### Overview
 
-- **Total Estimated Duration:** 7 months
-- **Full-Time Equivalent (FTE):**  29.5
-- **Total Costs:** $307200
+- **Total Estimated Duration:** 1 month
+- **Full-Time Equivalent (FTE):**  3
+- **Total Costs:** $36000 USD
 
 ### Milestone 1 - Technical & Visual Design and setup
 
@@ -147,86 +146,6 @@ We have been taking time to play with Substrate to form initial POCs inside the 
 - **Costs:** 36,000 USD
 
 We will start with the user onboarding process to Xcavate parachain/parathread allowing the design team to create low-fi wireframe mockups using Figma that will then be approved by the team to be updated to hi-def mockups that will be interactive for the team's final feedback. This phase will be constant, but the core of the design deliverables will take 3-4 weeks based on feedback. As each of these designs is approved, we will pass them on to the development team to complete in tandem. We will, however, separate these into another milestone. Also, during this first phase, developers will set up the developer's environment with dev env and third-party sandboxes.
-
-### Milestone 2 — Core build out MVP
-
-- **Estimated Duration:** 1 month
-- **FTE:**  4.25
-- **Costs:** 48,000 USD
-
-We will take designs from the onboarding portal and use AWS to create a simple and straightforward API aggregation for our partners at KILT. This will allow one signup for all technologies used in our platform. This will include but not be limited to KYC/KYP for us to connect to other partners in the future. Kilt will be the main identity protocol partner used in this project. This will allow us to deliver and move the DIDs/NFTs/Tokens needed to use our solution.
-
-| Number    | Deliverables                          | Specification
-|:----------|:--------------------------------------|:---------------
-| 0a.	    | License	                            |  Apache 2.0
-| 0b.	    | Documentation                         |  Most of the documentation will be provided on GitHub | Enduser.Webportal - Inline documentation of the code, README file with steps ( objective of the project, How to build and run it, Third-party dependencies), Languages used, Template used for frontend, integrations (Middleware, Web3). | Admin.weportal - Inline documentation of the code, README file with steps ( objective of the project, How to build and run it, Third-party dependencies), Languages used, Template used for frontend, integrations( Middleware, Web3) | System.microservices - Inline document of the code, README file with steps, API Documentation, How to test API using postman, Integrations(NoSQL Database, Pallets, How to build and run it), swagger-docs | System.pallets - README file with steps, how to run a substrate Node, How to Run a Validator, Steps to Make Transactions, Verify Transaction on-chain using Explorer, How to build pallet
-| 0c.	    | Testing and Testing Guide              |  Deliverables | Unit Test Cases | Test Case Results | Performance Testing | Functional Testing | Steps for How to Run Unit Tests, which will be provided as README file | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
-| 0d.	    | Docker                                 |  We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
-| 0e.	    | Article	                             |  We will create a number of articles and distribute across various platforms
-| 1	        | Substrate module: Token pallet	     |  The token module will contain Transfer, Mint, burn, Allowance/Approve, and token specification attributes.
-| 2         | Substrate module: DID Pallet  	     |  The DID module will allow the user to store documents on-chain and restrict access to another user.
-| 3         | Substrate module: User Pallet  	     |  The User module will allow the user to Onboard and to manage the users on-chain.
-| 4         | Substrate module: Loan Management Pallet  |  The Loan Management module will allow the users to manage Loan Requests, and admin to approve, and users to repay the loans
-| 5         | Substrate module: Transaction Management Pallet 	     |  The Transaction Management Module will allow users and admin to sign and execute the Transactions (i.e., Receive loan amount, Repay the loan, sign the transaction)
-| 6         | Substrate module: Staking pallet  	     |  The Staking module will allow users to stake the tokens and let the user unstake the amount.
-| 7         | Substrate module: Verification pallet 	     |  The Verification Module will verify the documents submitted by the Loan requestor through API.
-8
-Substrate
-| 8         | Substrate module: Substrate chain 	     |  Launching its own public network( Parachain ) to participate in a slot auction. | Token pallets, DID pallets, user pallets, Loan management pallets, Transaction management pallets, staking pallets, and verification pallets of our custom chain will interact in such a way, that allows property developers to get loans to build their properties, and users to get rewarded by staking their tokens.
-| 9         | DApp: Xcavate  	                     |  We will deliver a working URL for a Decentralized Application that will contain functionality like Loan Management, Staking Management, Transaction Management, and Identity Management, Also we will deliver a set of related GitHub that will support the DApp.
-| 10        | Smart contracts  	                     |  We are not developing any smart contracts, we use pallets for every functionality
-
-
-### Milestone 3 — MVP Backend
-
-- **Estimated Duration:** 1 month
-- **FTE:**  4.25
-- **Costs:** 48,000 USD
-
-During this process, there will be many backend calls the end user will not see directly per se. In this phase, we will build out the oracles needed to do a few things. These oracles included in the onboarding process will communicate with the APIs for the property values portal, government portal, and chainlink to get the correct planning information, calculations and ratings needed to build the pallet NFT references. The data from these oracles will allow the delivery of funding to the developer at the end of their onboarding process. Also, during this phase, we will implement xCavate parachain where the pallet NFT will be minted. This will be our main push/sprint and will be a week-to-week delivery.
-
-### Milestone 4 — BETA testing 
-
-- **Estimated Duration:** 1 month
-- **FTE:**  5.25
-- **Costs:** 31,200 USD
-
-We will launch this solution to select alpha/beta users to help us with the launch from dev env to mainnet. During this phase, we will take in feedback from users as well as fix any bugs/issues.
-
-### Milestone 5 — Core build out GTM
-
-- **Estimated Duration:** 1 month
-- **FTE:**  4.25
-- **Costs:** 48,000 USD
-
-We will develop the property NFT marketplace, focused on tokenizing the property as NFT as well as launching a marketplace to list the property as NFT.
-
-| Number    | Deliverables                          | Specification
-|:----------|:--------------------------------------|:---------------
-| 0a.	    | License	                            |  Apache 2.0
-| 0b.	    | Documentation                         |  Most of the documentation will be provided on GitHub | Enduser.Webportal - Inline documentation of the code, README file with steps ( objective of the project, How to build and run it, Third-party dependencies), Languages used, Template used for frontend, integrations (Middleware, Web3). | Admin.weportal - Inline documentation of the code, README file with steps ( objective of the project, How to build and run it, Third-party dependencies), Languages used, Template used for frontend, integrations( Middleware, Web3) | System.microservices - Inline document of the code, README file with steps, API Documentation, How to test API using postman, Integrations(NoSQL Database, Pallets, How to build and run it), swagger-docs | System.pallets - README file with steps, how to run a substrate Node, How to Run a Validator, Steps to Make Transactions, Verify Transaction on-chain using Explorer, How to build pallet
-| 0c.	    | Testing and Testing Guide              |  Deliverables | Unit Test Cases | Test Case Results | Performance Testing | Functional Testing | Steps for How to Run Unit Tests, which will be provided as README file | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
-| 0d.	    | Docker                                 |  We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.
-| 0e.	    | Article	                             |  We will create a number of articles and distribute across various platforms
-| 1	        | Substrate module: NFT Pallet   	     |  The NFT module will allow the user to mint and store NFT on Blockchain
-| 2         | Substrate module: Marketplace pallet 	 |  The NFT module will allow users to trade ( Buy/Sell), transfer ownership, and transfer the NFT.
-
-
-### Milestone 6 — GTM Backend
-
-- **Estimated Duration:** 1 month
-- **FTE:**  4.25
-- **Costs:** 48,000 USD
-
-This will be a similar milestone to the MVP but including the property NFT marketplace.
-
-### Milestone 7 — BETA testing 
-
-- **Estimated Duration:** 1 month
-- **FTE:**  4.25
-- **Costs:** 48,000 USD
-
-We will launch this solution to select alpha/beta users to help us with the launch from dev env to mainnet. During this phase, we will take in feedback from users as well as fix any bugs/issues.  We will also look at scalability. This phase will culminate with the launch of a parachain crowdloan campaign.
 
 ## Future Plans
 
