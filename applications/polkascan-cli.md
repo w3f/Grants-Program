@@ -1,4 +1,4 @@
-# Ink Boxes
+# Polka Scan CLI
 
 *  **Team Name:** Polkascan CLI Team
 
