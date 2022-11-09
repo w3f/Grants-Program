@@ -1,6 +1,4 @@
-# W3F Open Grant Proposal
-
-- **Project Name:** Web3Box
+# Web3Box
 - **Team Name:** Web3Box Labs
 - **Payment Address:** 0x2755213c8435F15D9929101357686a9C1Bec280A (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
