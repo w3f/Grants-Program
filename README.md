@@ -47,6 +47,7 @@ Additionally, it must fulfill the following requirements:
 
 - All code produced as part of a grant must be **open-sourced**, and it must also not rely on closed-source software for full functionality. We prefer Apache 2.0, but GPLv3, MIT or Unlicense are also acceptable.
 - We do not award grants for projects that have been the object of a successful token sale.
+- Applications must not mention a specific token. Furthermore, the focus of the application should lie on the software that is being implemented/research being carried out as part of the grant, and less on your project/venture/operation. For the purpose of the application and delivery, think about how others might also benefit from your work.
 - As a general rule, teams are asked to finish a grant before applying for another one.
 - Lastly, we do not fund projects that actively encourage gambling, illicit trade, money laundering or criminal activities in general.
 
