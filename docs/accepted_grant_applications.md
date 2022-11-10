@@ -518,7 +518,7 @@
 | [Standard Protocol](https://standard.tech/) | Signac - a monorepo plugin for developing multiple Parity ink! smart contracts | [GitHub](https://github.com/standardweb3/signac) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [B-Datagray](https://www.b-datagray.com/) | Datagen Project | [GitHub](https://github.com/Datagen-Project) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Colorful Notion](https://polkaholic.io/#chains) | Polkaholic.io's Multi-Chain Substrate Block Explorer | [GitHub](https://github.com/colorfulnotion/polkaholic/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Common Orbit LLC](https://brson.github.io) | `wasm-opt` for Rust | [GitHub](https://github.com/brson/wasm-opt-rs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Common Orbit LLC](https://brson.github.io) | `wasm-opt` for Rust | [GitHub](https://github.com/brson/wasm-opt-rs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Blockcoders](https://blockcoders.io/) | Ink Explorer | [GitHub](https://github.com/blockcoders) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Equilibrium](https://equilibrium.co/) | Polkadot Light Client in C++ | [GitHub](https://github.com/eqlabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Open rollup](https://github.com/openrollup-zk) | Open rollup - MVP - Phase 1 | [GitHub](https://github.com/openrollup-zk) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -530,19 +530,19 @@
 | [Stardust Labs Inc.](https://stardust.finance/) | Integrating ISO-8583 | [GitHub](https://github.com/adit313/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [TwinP](https://www.linkedin.com/in/elioprifti/) | Escrow Pallet | [GitHub](https://github.com/herou) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Meta Defender Team](https://github.com/Meta-Defender/) | Meta Defender | [GitHub](https://github.com/Meta-Defender/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [ParaSpell](https://github.com/dudo50/ParaSpell) | ParaSpell | [GitHub](https://github.com/dudo50/ParaSpell) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
+| [ParaSpell](https://github.com/paraspell) | ParaSpell | [GitHub](https://github.com/paraspell) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Primis Labs](https://github.com/Primis-Labs) | Primis | [GitHub](https://github.com/Primis-Labs/client) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Uke](https://github.com/Uke-Messaging) | Uke Messaging - PoC - Phase 1 | [GitHub](https://github.com/Uke-Messaging) | <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Redstone Network](https://github.com/difttt) | Redstone Network | [GitHub](https://github.com/difttt) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [JURIMETRIC TECNOLOGIA LTDA](https://www.jurimetric.com.br/) | Polkadart | [GitHub](https://github.com/rankanizer/polkadart) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Skye Kiwi](https://skye.kiwi/) | Choko Wallet | [GitHub](https://github.com/skyekiwi) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Popular Coding](https://www.popularcoding.com/) | Ventur | [GitHub](https://github.com/popular_coding) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Popular Coding](https://www.popularcoding.com/) | Ventur | [GitHub](https://github.com/popular_coding) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Asylum](https://asylum.space/) | Asylum follow-up 1 | [GitHub](https://gitlab.com/asylum-space/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Cyril Carlier](https://github.com/CrommVardek) | Maki| [GitHub](https://github.com/CrommVardek) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [TopMonks](https://www.topmonks.com/) | Calamar| [GitHub](https://github.com/topmonks/calamar) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Bela Supernova](https://bsn.si/) | Rubeus Keeper| [GitHub](https://github.com/bsn-si) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Web3 Labs Ltd](https://www.web3labs.com/epirus-explorer) | Epirus Substrate Explorer - Phase 2 | [GitHub](https://github.com/web3labs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
-| [Uke](https://github.com/Uke-Messaging) | Uke Protocol PoC & App (revised) | [GitHub](https://github.com/Uke-Messaging) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Uke](https://github.com/Uke-Messaging) | Uke Protocol PoC & App (revised) | [GitHub](https://github.com/Uke-Messaging) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [SuperColony](https://github.com/Supercolony-net) | Typechain Phase 2 | [GitHub](https://github.com/Supercolony-net/typechain-polkadot) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [QSTN](https://qstn.us/) | QSTN | [GitHub](https://github.com/qstnus) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [CESS LAB](https://www.cess.cloud/) | Substats (The framework of lightweight block explorer) | [GitHub](https://github.com/CESSProject) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
@@ -567,3 +567,6 @@
 | [Anagolay](https://anagolay.network/) | Multi-token community contributions for verified creators | [GitHub](https://github.com/anagolay) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Ink Contracts Wizard Team](https://github.com/amankumar1008/contracts-wizard) | Ink Smart Contract Wizard | [GitHub](https://github.com/amankumar1008/contracts-wizard) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [TDSoftware](https://www.tdsoftware.de/) | Substrate IPFS Utilities | [GitHub](https://github.com/TDSoftware) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [Ink Boxes Team](https://github.com/nerdsince98) | Ink Boxes | [GitHub](https://gitlab.com/nerdsince98/learning-ink/) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+| [ParaSpell](https://github.com/paraspell) | ParaSpell Phase 2 | [GitHub](https://github.com/paraspell) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
+

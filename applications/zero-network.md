@@ -149,13 +149,13 @@ Through this grant, we are going to develop the blockchain which supports confid
 
 ### Overview
 
-- **Total Estimated Duration:** 4.5 months
+- **Total Estimated Duration:** 6.5 months
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** 45,000 DAI
 
 ### Milestone 1 | Confidential Transfers
 
-- **Estimated duration:** 1.5 month
+- **Estimated duration:** 2 month
 - **FTE:**  2
 - **Costs:** 10,000 DAI
 
@@ -175,7 +175,7 @@ In `Milestone 1`, we are going to implement `confidential transfer` pallet on to
 
 ### Milestone 2 | Confidential Smart Contract Executions
 
-- **Estimated Duration:** 2 month
+- **Estimated Duration:** 3 month
 - **FTE:**  2
 - **Costs:** 25,000 DAI
 
@@ -197,7 +197,7 @@ In `Milestone 2`, we are going to implement `confidential smart contract executi
 
 ### Milestone 3 | Confidential Transaction Wallet
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 1.5 month
 - **FTE:**  2
 - **Costs:** 10,000 DAI
 
@@ -215,6 +215,15 @@ In `Milestone 3`, we are going to implement `wallet` which provides the user to 
 | 3. | `plonk` proof generation | We are going to implement `plonk` proof generation which allows user to create proof for circuit constraint. |
 | 4. | Confidential transfer | We are going to implement confidential transfer libraries. |
 | 5. | Confidential smart contract execution | We are going to implement executing smart contract libraries.|
+
+## Timeline
+
+
+| Milestone | Deliverable | Estimated Duration (month) | Deadline |
+| -----: | ----------- | ------------- | ------------- |
+| 1 | Confidential Transfers | 2 | 2022 1/7 |
+| 2 | Confidential Smart Contract Executions | 3 | 2023 4/7 |
+| 3 | Confidential Smart Contract Executions | 1.5 | 2023 5/26 |
 
 ## Future Plans
 
