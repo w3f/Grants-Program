@@ -503,7 +503,9 @@ Our team has five-year experience in software development for SaaS startups, and
 | 1. | Feature: Authentication by PolkadotJs wallet | The dashboard and api will allow user to authentication by PolkadotJs wallet|
 | 2. | Feature: Create a new workflow | Create a new workflow page which the same as the wireframe above. But Email, Telegram and Discord integrations will not in scope of this milestone.|
 | 3. | Feature: List of workflows | A page display workflows of user same as the wireframe above.|
-| 3. | Feature: Executions of workflows | A page display workflows execution history  of user same as the wireframe above. |
+| 4. | Feature: Executions of workflows | A page display workflows execution history  of user same as the wireframe above. |
+| 5. | API | We will release an api version which include create workflow, list workflow and list workflow executions.  |
+| 6. | Integration | We will integrate the interface features (listed in 1, 2, 3, 4) with the api. |
 
 
 ### Milestone 2:  Extensions development and testing
@@ -523,6 +525,8 @@ Our team has five-year experience in software development for SaaS startups, and
 | 2. | Feature: Telegram integration | Integrate with Telegram to send the notification about on-chain event.|
 | 3. | Feature: Discord integration | Integrate with Discord to send the notification about on-chain event. |
 | 4. | Feature: Workflow execution detail | A page display workflow execution in detail.|
+| 5. | API | We will release an api version which include email, telegram, discord integration and workflow exection detail |
+| 6. | Integration | We will integrate the interface features (listed in 1, 2, 3, 4) with the api. |
 
 ## Future Plans
 
