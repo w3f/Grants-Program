@@ -2,7 +2,7 @@
 
 *  **Team Name:** Polkascan CLI Team
 
-*  **Payment Address:** Ethereum Address: 0xE4545705068dec1f68698d032944561Ec332836c
+*  **Payment Address:** Ethereum Address for USDT: 0xE4545705068dec1f68698d032944561Ec332836c
 
 *  **Level:** 1
 
@@ -67,9 +67,9 @@ Level 1: Up to $10,000, 2 approvals
 
 ## Development Roadmap :nut_and_bolt:
 
-*  **Total Estimated Duration:** 2 weeks
+*  **Total Estimated Duration:** 3 weeks
 
-*  **Total Costs:** 4,000 USD
+*  **Total Costs:** 5,000 USD
 
 ### Milestone 1
 
@@ -81,13 +81,20 @@ Level 1: Up to $10,000, 2 approvals
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code. |
-| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in Jest and UI tests in Cypress to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0b. | Documentation | We will provide inline documentation of the code. |
+| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in PyTest and CLI tests in PyTest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Articles | We will publish a series of articles on how to contribute and create new boxes. |
-| 0. | Creation CLI tool | CLI tool will be able to fetch account, block, event, transaction and logs as on explorer.polkascan.io. CLI will be coded in Python since we might be using py-substrate-interface: https://github.com/polkascan/py-substrate-interface and polkascan API. CLI will be having interactive menu where user can navigate using arrow keys. |
+| 0e. | Articles | We will publish an article on how to contribute and use this tool. |
+| 0. | Creation CLI tool | CLI tool will be able to fetch account, block, event, transaction and logs as on explorer.We will be running our own instance of polkascan.io https://github.com/polkascan/explorer. CLI will be coded in Python since we might be using py-substrate-interface: https://github.com/polkascan/py-substrate-interface and polkascan API which will be provided from our own instance. CLI will be having interactive menu where user can navigate using arrow keys. |
 
 
-## Additional Information :heavy_plus_sign:
+### Milestone 2
 
-* We're currently implementing it in substrate ecosystem.
+*  **Estimated Duration:** 1 weeks
+
+*  **Costs:** 1,000 USD
+
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 0. | Spinning up polkascan instance | We will use this repository code: https://github.com/polkascan/explorer to spin up polkascan explorer. We won't be using UI component for this. |
