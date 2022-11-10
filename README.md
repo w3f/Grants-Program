@@ -21,6 +21,7 @@
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
+  - [Office Hours](#office-hours)
 - [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
   - [Treasury](#treasury)
   - [Hackathons](#hackathons)
@@ -46,6 +47,7 @@ Additionally, it must fulfill the following requirements:
 
 - All code produced as part of a grant must be **open-sourced**, and it must also not rely on closed-source software for full functionality. We prefer Apache 2.0, but GPLv3, MIT or Unlicense are also acceptable.
 - We do not award grants for projects that have been the object of a successful token sale.
+- Applications must not mention a specific token. Furthermore, the focus of the application should lie on the software that is being implemented/research being carried out as part of the grant, and less on your project/venture/operation. For the purpose of the application and delivery, think about how others might also benefit from your work.
 - As a general rule, teams are asked to finish a grant before applying for another one.
 - Lastly, we do not fund projects that actively encourage gambling, illicit trade, money laundering or criminal activities in general.
 
@@ -232,6 +234,21 @@ We have Matrix/Element channels for real-time discussions on Web3 and Polkadot. 
 Besides, we also have a **community room for all grant recipients**. Head over to that room to share your experience with other grantees, ask grants-related questions or simply hang out:
 
 - [W3F Grants Community](https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&via=matrix.org)
+
+### Office Hours
+
+Web3 Foundation Grants Office Hours are a chance to ask the grants team questions regarding a specific (potential) grant application. It offers
+- general guidance regarding the grants program, 
+- some quick initial feedback and
+- help how to navigate the ecosystem. 
+
+Apply for Office Hours if you 
+- need feedback before submitting an application,
+- want to find out what kind of support there might be available or
+- need help finding the resources you need.
+
+It is **not** a chance to pitch your project, especially since only a small subset of the committee will participate in the call. To apply, please fill out the [Office Hours :alarm_clock: form](https://forms.gle/54xkiqU37WwdN9UR6). Be as specific as possible, so we can help you more quickly. We will get back to you with follow-up questions or a link for booking a timeslot.
+
 
 ## :rocket: Alternative Funding Sources
 
