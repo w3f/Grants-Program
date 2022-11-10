@@ -11,29 +11,29 @@
 ## Table of Contents <!-- omit in toc -->
 
 - [2019](#2019)
-  - [:surfing_woman: Wave 1 - First Quarter 2019](#surfing_woman-wave-1---first-quarter-2019)
-  - [:surfing_woman: Wave 2 - Second Quarter 2019](#surfing_woman-wave-2---second-quarter-2019)
-  - [:surfing_woman: Wave 3 - Third Quarter 2019](#surfing_woman-wave-3---third-quarter-2019)
-  - [:surfing_woman: Wave 4 - Fourth Quarter 2019](#surfing_woman-wave-4---fourth-quarter-2019)
+  - [🏄‍♀️ Wave 1 - First Quarter 2019](#surfing_woman-wave-1---first-quarter-2019)
+  - [🏄‍♀️ Wave 2 - Second Quarter 2019](#surfing_woman-wave-2---second-quarter-2019)
+  - [🏄‍♀️ Wave 3 - Third Quarter 2019](#surfing_woman-wave-3---third-quarter-2019)
+  - [🏄‍♀️ Wave 4 - Fourth Quarter 2019](#surfing_woman-wave-4---fourth-quarter-2019)
 - [2020](#2020)
-  - [:surfing_woman: Wave 5 - First Quarter 2020](#surfing_woman-wave-5---first-quarter-2020)
-  - [:surfing_woman: Wave 6 - Second Quarter 2020](#surfing_woman-wave-6---second-quarter-2020)
-  - [:surfing_woman: Wave 7 - Third Quarter 2020](#surfing_woman-wave-7---third-quarter-2020)
-  - [:surfing_woman: Wave 8 - Fourth Quarter 2020](#surfing_woman-wave-8---fourth-quarter-2020)
+  - [🏄‍♀️ Wave 5 - First Quarter 2020](#surfing_woman-wave-5---first-quarter-2020)
+  - [🏄‍♀️ Wave 6 - Second Quarter 2020](#surfing_woman-wave-6---second-quarter-2020)
+  - [🏄‍♀️ Wave 7 - Third Quarter 2020](#surfing_woman-wave-7---third-quarter-2020)
+  - [🏄‍♀️ Wave 8 - Fourth Quarter 2020](#surfing_woman-wave-8---fourth-quarter-2020)
 - [2021](#2021)
-  - [:surfing_woman: Wave 9 - First Quarter 2021](#surfing_woman-wave-9---first-quarter-2021)
-  - [:surfing_woman: Wave 10 - Second Quarter 2021](#surfing_woman-wave-10---second-quarter-2021)
-  - [:surfing_woman: Wave 11 - Third Quarter 2021](#surfing_woman-wave-11---third-quarter-2021)
-  - [:surfing_woman: Wave 12 - Fourth Quarter 2021](#surfing_woman-wave-12---fourth-quarter-2021)
+  - [🏄‍♀️ Wave 9 - First Quarter 2021](#surfing_woman-wave-9---first-quarter-2021)
+  - [🏄‍♀️ Wave 10 - Second Quarter 2021](#surfing_woman-wave-10---second-quarter-2021)
+  - [🏄‍♀️ Wave 11 - Third Quarter 2021](#surfing_woman-wave-11---third-quarter-2021)
+  - [🏄‍♀️ Wave 12 - Fourth Quarter 2021](#surfing_woman-wave-12---fourth-quarter-2021)
 - [2022](#2022)
-  - [:surfing_woman: Wave 13 - First Quarter 2022](#surfing_woman-wave-13---first-quarter-2022)
-  - [:surfing_woman: Wave 14 - Second Quarter 2022](#surfing_woman-wave-14---second-quarter-2022)
-  - [:surfing_woman: Wave 15 - Third Quarter 2022](#surfing_woman-wave-15---third-quarter-2022)
-  - [:surfing_woman: Wave 16 - Fourth Quarter 2022](#surfing_woman-wave-16---fourth-quarter-2022)
+  - [🏄‍♀️ Wave 13 - First Quarter 2022](#surfing_woman-wave-13---first-quarter-2022)
+  - [🏄‍♀️ Wave 14 - Second Quarter 2022](#surfing_woman-wave-14---second-quarter-2022)
+  - [🏄‍♀️ Wave 15 - Third Quarter 2022](#surfing_woman-wave-15---third-quarter-2022)
+  - [🏄‍♀️ Wave 16 - Fourth Quarter 2022](#surfing_woman-wave-16---fourth-quarter-2022)
 
 # 2019
 
-## :surfing_woman: Wave 1 - First Quarter 2019
+## 🏄‍♀️ Wave 1 - First Quarter 2019
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -48,7 +48,7 @@
 | [Protos](http://protosmanagement.com/) | Open Source Node Explorer | [GitHub](https://github.com/protos-research/polkadot-node-explorer) | <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Supercomputing Systems](https://www.scs.ch/) | Substrate Transaction Privacy using Intel SGX | [GitHub](https://github.com/scs/substraTEE) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 
-## :surfing_woman: Wave 2 - Second Quarter 2019
+## 🏄‍♀️ Wave 2 - Second Quarter 2019
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -65,7 +65,7 @@
 | [Mailchain](https://mailchain.xyz/) | a Multi-Blockchain Messaging Application | [GitHub](https://github.com/mailchain) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Usetech](http://usetech.com/blockchain.html) | Polkadot C++ API | [GitHub](https://github.com/usetech-llc/polkadot_api_cpp) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 
-## :surfing_woman: Wave 3 - Third Quarter 2019
+## 🏄‍♀️ Wave 3 - Third Quarter 2019
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -84,7 +84,7 @@
 | [Phala.Network](https://phala.network/) | pLibra, Privacy Bridge between Polkadot and Libra chain | [GitHub](https://github.com/Phala-Network/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Wiv](http://wiv.io/) | Supply chain modules and front-end UI | [GitHub](https://github.com/wivtech) | <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
-## :surfing_woman: Wave 4 - Fourth Quarter 2019
+## 🏄‍♀️ Wave 4 - Fourth Quarter 2019
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -117,7 +117,7 @@
 
 # 2020
 
-## :surfing_woman: Wave 5 - First Quarter 2020
+## 🏄‍♀️ Wave 5 - First Quarter 2020
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -159,7 +159,7 @@
 | [Lyken](https://lyken.rs/) | Rust trait system revamp | [GitHub](https://github.com/LykenSol) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [Chorus One](https://chorus.one/) | Grandpa light client in Tendermint | [GitHub](https://github.com/ChorusOne) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 
-## :surfing_woman: Wave 6 - Second Quarter 2020
+## 🏄‍♀️ Wave 6 - Second Quarter 2020
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -197,7 +197,7 @@
 | [Zondax](http://zondax.ch/) | Ledgeracio: A command-line tool and Ledger app designed for staking operations | [GitHub](https://github.com/paritytech/ledgeracio) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Dipole Tech](https://www.dipole.tech) | Dipole Oracle: Distributed energy resource management | [GitHub](https://github.com/DipoleTech/dipole-oracle) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 
-## :surfing_woman: Wave 7 - Third Quarter 2020
+## 🏄‍♀️ Wave 7 - Third Quarter 2020
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -233,7 +233,7 @@
 | [sup](https://github.com/clearloop/sup) | Command line tool for generating or upgrading a Substrate node | [GitHub](https://github.com/clearloop/sup) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Shard Labs](https://shardlabs.io) | Tip or Donate KSM Embeddable Button | [GitHub](https://github.com/Shard-Labs) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 
-## :surfing_woman: Wave 8 - Fourth Quarter 2020
+## 🏄‍♀️ Wave 8 - Fourth Quarter 2020
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -283,7 +283,7 @@
 
 # 2021
 
-## :surfing_woman: Wave 9 - First Quarter 2021
+## 🏄‍♀️ Wave 9 - First Quarter 2021
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -336,7 +336,7 @@
 | [Vera](https://veraprotocol.org/) | NFT Lending + Exchange | [GitHub](https://github.com/veraprotocol) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Parallel Finance](https://parallel.fi/#/) | Decentralized lending/borrowing and staking protocol | [GitHub](https://github.com/parallel-finance/parallel) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 
-## :surfing_woman: Wave 10 - Second Quarter 2021
+## 🏄‍♀️ Wave 10 - Second Quarter 2021
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -370,7 +370,7 @@
 | [CryptoLab](https://www.cryptolab.network) | Staking Reward Collector | [GitHub](https://github.com/cryptolab-network) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Yatima Inc](https://github.com/yatima-inc/yatima) | Lambda-VM and programming language for Substrate | [GitHub](https://github.com/yatima-inc/yatima) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 
-## :surfing_woman: Wave 11 - Third Quarter 2021
+## 🏄‍♀️ Wave 11 - Third Quarter 2021
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -401,7 +401,7 @@
 | [Skye Kiwi](https://skye.kiwi/) | SkyeKiwi Protocol | [GitHub](https://github.com/skyekiwi) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Evercity](https://evercity.io/) | Sustainable Finance Protocol | [GitHub](https://github.com/EvercityEcosystem) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 
-## :surfing_woman: Wave 12 - Fourth Quarter 2021
+## 🏄‍♀️ Wave 12 - Fourth Quarter 2021
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -429,7 +429,7 @@
 
 # 2022
 
-## :surfing_woman: Wave 13 - First Quarter 2022
+## 🏄‍♀️ Wave 13 - First Quarter 2022
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -466,7 +466,7 @@
 | [NUTS Finance](https://nuts.finance) | DOT-pegged derivative built on top of the stable asset protocol | [GitHub](https://github.com/nutsfinance/) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[x] </li></ul> |
 | [Strategy Object](https://strategyobject.com/) | Substrate Client for Java | [GitHub](https://github.com/strategyobject/substrate-client-java) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 
-## :surfing_woman: Wave 14 - Second Quarter 2022
+## 🏄‍♀️ Wave 14 - Second Quarter 2022
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -507,7 +507,7 @@
 | [Hypha Hashed Partners](https://hypha.earth/) | Social Recovery Wallet | [GitHub](https://github.com/hypha-dao) | <ul><li>[ ] </li></ul> |  <ul><li>[x] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [MangoBOX labs](http://mangobox.xyz/) | MangoBOX Protocol | [GitHub](https://github.com/Mangoboxlabs) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
-## :surfing_woman: Wave 15 - Third Quarter 2022
+## 🏄‍♀️ Wave 15 - Third Quarter 2022
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -551,7 +551,7 @@
 | [Standard Protocol](https://standard.tech/) | New Order - a full onchain orderbook dex with indexers | [GitHub](https://github.com/standardweb3) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 | [hack-ink](https://github.com/hack-ink) | Subalfred | [GitHub](https://github.com/hack-ink/subalfred) | <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |  <ul><li>[ ] </li></ul> |
 
-## :surfing_woman: Wave 16 - Fourth Quarter 2022
+## 🏄‍♀️ Wave 16 - Fourth Quarter 2022
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
