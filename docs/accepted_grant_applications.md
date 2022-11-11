@@ -70,7 +70,7 @@
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
 | [Supercomputing systems](http://scs.ch/) | Substrate Rust API client | [GitHub](https://github.com/scs/substrate-api-client) | ☐ | ☒ | ☒ |
-| [NGRAVE](https://ngrave.io/) | Substrate Hardware Wallet Integration | ☐ | ☐ | ☒ | ☐ |
+| [NGRAVE](https://ngrave.io/) | Substrate Hardware Wallet Integration | N/A | ☐ | ☒ | ☐ |
 | [Caelum Labs](https://caelumlabs.com/) | Decentralised identity modules | | ☐ | ☒ | ☐ |
 | [Runtime Verification](https://runtimeverification.com/) | Build executable K specifications of the SRML | [GitHub](https://github.com/runtimeverification/polkadot-verification) | ☐ | ☒ | ☒ |
 | [Attic Lab](https://atticlab.net/) | VS Code and Atom plugins | [GitHub](https://github.com/everstake/VSCode-Atom-Plugin) | ☐ | ☒ | ☒ |
@@ -389,7 +389,7 @@
 | Uniscan | NFT Explorer | [GitHub](https://github.com/wuminzhe) | ☐ | ☒ | ☒ |
 | [LimeChain](https://limechain.tech) | Subsembly - Support for GRANDPA | [GitHub](https://github.com/LimeChain) | ☐ | ☐ | ☐ |
 | [OpenSquare](https://www.opensquare.network) | Off-chain voting platform | [GitHub](https://github.com/opensquare-network/) | ☐ | ☒ | ☒ |
-| [Health Hero](https://www.gohealthhero.com/) | NFT Product Analytics Suite | ☐ | ☐ | ☐ | ☐ |
+| [Health Hero](https://www.gohealthhero.com/) | NFT Product Analytics Suite | N/A | ☐ | ☐ | ☐ |
 | [Tesseract](https://tesseract.one/) | Mobile dApps/Wallet Connection | [GitHub](https://github.com/tesseract-one) | ☐ | ☒ | ☐ |
 | [Wow Labz](http://www.wowlabz.com) | Dot Marketplace | [GitHub](https://github.com/WowLabz) | ☐ | ☒ | ☒ |
 | [Perun Network](https://perun.network/) | Perun Channels - Integration with go-perun | [GitHub](https://github.com/perun-network/) | ☐ | ☒ | ☒ |
@@ -456,7 +456,7 @@
 | [Asylum](https://asylum.space/) |  Metaverse for next generation gaming | [GitHub](https://gitlab.com/asylum-space/) | ☐ | ☒ | ☒ |
 | [CESS LAB](https://www.cess.cloud/) | Data Store Pallet | [GitHub](https://github.com/CESSProject/cess) | ☐ | ☒ | ☒ |
 | [ChainSafe](https://chainsafe.io/) | Substrate Core Polywrapper | [GitHub](https://github.com/polywrap) | ☐ | ☐ | ☐ |
-| [Bela Supernova](https://bsn.si/en/home/) | On-chain cash exchange (OCEX) | ☐ | ☐ | ☒ | ☒ |
+| [Bela Supernova](https://bsn.si/en/home/) | On-chain cash exchange (OCEX) | N/A | ☐ | ☒ | ☒ |
 | [Second State](https://www.secondstate.io/) | WasmEdge for Substrate | [GitHub](https://github.com/wasmedge) | ☐ | ☒ | ☐ |
 | [Wow Labz](https://www.wowlabz.com/) | Dot Marketplace Phase 2 | [GitHub](https://github.com/WowLabz) | ☐ | ☒ | ☒ |
 | [Stardust Labs Inc.](https://stardust.finance/) | Uncollateralized Stablecoin Research and Design | [GitHub](https://github.com/adit313/) | ☐ | ☒ | ☒ |
