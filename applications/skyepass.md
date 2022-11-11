@@ -5,6 +5,7 @@
 * **Project Name:** SkyePass
 * **Team Name:** SkyeKiwi Team
 * **Payment Address**: 0xa5E4E1BB29eE2D16B07545CCf565868aE34F92a2
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/212#issuecomment-1173601830)
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 

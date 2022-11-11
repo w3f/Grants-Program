@@ -2,7 +2,7 @@
 
 * **Project Name:** The InvArch - INV4 Frame : IP Assets, Licensings, & CLI tool for the Substate ecosystem.
 * **Team Name:** InvArch Network
-* **aUSD Payment Address:** 25aeg1bNLXaYm526R7cXfQNtpEvnv9S23eR17AeDtm5BD7Ce (PLEASE NOTE CHANGE)
+* **BTC Payment Address:** bc1qr2wg0snstgn4d2wc0alhhyxs32j58hhdrh5zal (PLEASE NOTE CHANGE)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:

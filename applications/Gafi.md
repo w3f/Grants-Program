@@ -3,6 +3,7 @@
 
 - **Project Name:** Gafi Network - The Network of Game Finance
 - **Team Name:** Cryptoviet
+- **Gafi Paper:** https://gafi.network/GafiPaper.pdf
 - **Wiki:** https://wiki.gafi.network/
 - **Payment Address:** 0x7fD4b72d3Bf681C2e80D6076D7997B21DEf45130 (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
@@ -160,7 +161,7 @@ Stefan with 5 years of experience as Software Engineer working on the top crypto
 
 ## Development Status :open_book:
 
-Gafi Node Repos: https://github.com/cryptoviet/gafi
+Gafi Node Repos: https://github.com/grindytech/gafi
 
 [Heroes & Empires 2021 Roundup](https://medium.com/@stefan_muto/heroes-and-empires-2021-roundup-a6617941ef5a)
 
