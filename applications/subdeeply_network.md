@@ -152,11 +152,7 @@ We have started to develop and adapt the platform to a mobile application for iO
 | 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | TArticle | We will publish an article that explains what was achieved as part of the grant and how users can use Subdeeply functionalities.
-| 1. | Subdeeply Pallets | We will create pallet of elements and components.
-- substrate storage
-- Accounts Module/Keymapping
-- Subdeeply Substrate Node
-We will create a Substrate module that store users data on chain |
+| 1. | Subdeeply Pallets | We will create pallet of elements and components. - substrate storage - Accounts Module/Keymapping - Subdeeply Substrate Node. We will create a Substrate module that store users data on chain |
 | 2. | Login application | Usage of polkadot.js SDK to create, store users accounts. Each user will be identified by basic global identity mapping. |
 | 3. | Web UI | Convert mockups into functional website and connect them to full nodes using polkdotjs API (Dashboard, Login using Polkadot browser extension). |
 
