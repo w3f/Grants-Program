@@ -75,7 +75,7 @@ Level 1: Up to $10,000, 2 approvals
 
 *  **Estimated Duration:** 2 weeks
 
-*  **Costs:** 4,000 USD
+*  **Costs:** 5,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -86,15 +86,4 @@ Level 1: Up to $10,000, 2 approvals
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish an article on how to contribute and use this tool. |
 | 0. | Creation CLI tool | CLI tool will be able to fetch account, block, event, transaction and logs as on explorer.We will be running our own instance of polkascan.io https://github.com/polkascan/explorer. CLI will be coded in Python since we might be using py-substrate-interface: https://github.com/polkascan/py-substrate-interface and polkascan API which will be provided from our own instance. CLI will be having interactive menu where user can navigate using arrow keys. |
-
-
-### Milestone 2
-
-*  **Estimated Duration:** 1 weeks
-
-*  **Costs:** 1,000 USD
-
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0. | Spinning up polkascan instance | We will use this repository code: https://github.com/polkascan/explorer to spin up polkascan explorer. We won't be using UI component for this. |
+| 1. | Spinning up polkascan instance | We will use this repository code: https://github.com/polkascan/explorer to spin up polkascan explorer. We won't be using UI component for this. |
