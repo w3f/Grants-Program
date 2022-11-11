@@ -1,4 +1,4 @@
-# Polka Dot CLI Explorer
+# Polkadot CLI Explorer
 
 *  **Team Name:** Polkascan CLI Team
 
