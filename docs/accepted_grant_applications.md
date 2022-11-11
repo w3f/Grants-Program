@@ -549,7 +549,7 @@
 | [Polket](https://toearn.fun) | ToEarnFun | [GitHub](https://github.com/polketio/polket-node) | ☐ | ☐ | ☐ |
 | ALPHA LABS | Binary merkle tree | [GitHub](https://github.com/frisitano) | ☐ | ☐ | ☐ |
 | [Standard Protocol](https://standard.tech/) | New Order - a full onchain orderbook dex with indexers | [GitHub](https://github.com/standardweb3) | ☐ | ☐ | ☐ |
-| [hack-ink](https://github.com/hack-ink) | Subalfred | [GitHub](https://github.com/hack-ink/subalfred) | ☐ | ☐ | ☐ |
+| [hack-ink](https://github.com/hack-ink) | Subalfred | [GitHub](https://github.com/hack-ink/subalfred) | ☐ | ☒ | ☐ |
 
 ## 🏄‍♀️ Wave 16 - Fourth Quarter 2022
 
