@@ -1,4 +1,4 @@
-# Polka Scan CLI
+# Polka Dot CLI Explorer
 
 *  **Team Name:** Polkascan CLI Team
 
@@ -11,7 +11,7 @@
 
 ### Overview
 
-polkascan-cli is a CLI tool where anyone can search for an account, block, event, transaction and logs. It is same as they do in https://explorer.polkascan.io Searching on CLI can increase productivity of a developer. They can also copy/paste data fast and can call this script via another script. It is a utility based tool.
+Polkadot CLI explorer is a CLI tool where anyone can search for an account, block, event, transaction and logs. It is same as they do in https://explorer.polkascan.io Searching on CLI can increase productivity of a developer. They can also copy/paste data fast and can call this script via another script. It is a utility based tool.
 
 #### Language Used
 We will be using **Python** language since we will be needing support of **py-substrate-interface**.
@@ -67,7 +67,7 @@ Level 1: Up to $10,000, 2 approvals
 
 ## Development Roadmap :nut_and_bolt:
 
-*  **Total Estimated Duration:** 3 weeks
+*  **Total Estimated Duration:** 2 weeks
 
 *  **Total Costs:** 5,000 USD
 
@@ -85,5 +85,5 @@ Level 1: Up to $10,000, 2 approvals
 | 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in PyTest and CLI tests in PyTest to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish an article on how to contribute and use this tool. |
-| 0. | Creation CLI tool | CLI tool will be able to fetch account, block, event, transaction and logs as on explorer.We will be running our own instance of polkascan.io https://github.com/polkascan/explorer. CLI will be coded in Python since we might be using py-substrate-interface: https://github.com/polkascan/py-substrate-interface and polkascan API which will be provided from our own instance. CLI will be having interactive menu where user can navigate using arrow keys. |
+| 0. | Creation CLI tool | CLI tool will be able to fetch account, block, event, transaction and logs as on explorer.We will be running our own instance of polkascan.io https://github.com/polkascan/explorer. CLI will be coded in Python since we might be using py-substrate-interface: https://github.com/polkascan/py-substrate-interface and polkascan API which will be provided from our own instance. CLI will be having menu where user can navigate using arrow keys. |
 | 1. | Spinning up polkascan instance | We will use this repository code: https://github.com/polkascan/explorer to spin up polkascan explorer. We won't be using UI component for this. |
