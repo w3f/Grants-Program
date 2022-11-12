@@ -62,7 +62,7 @@ A: Not that we're aware of.
 ### Contact
 
 - **Contact Name:** Bacon
-- **Contact Email:** bacon@gmail.com
+- **Contact Email:** bacon.randomness.beacon@pm.me
 - **Website:** N/A
 
 - **Contact Name:** Ham
