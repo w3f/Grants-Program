@@ -1,4 +1,4 @@
-# Name of your Project
+# drand in substrate
 
 - **Team Name:** The Bacon Beacon
 - **Payment Address:** USDC 0x1C9e0bcA759e5Ec09246f4795310789b12F65a59
