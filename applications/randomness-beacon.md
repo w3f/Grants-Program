@@ -1,7 +1,7 @@
 # Name of your Project
 
 - **Team Name:** The Bacon Beacon
-- **Payment Address:** BTC 0x
+- **Payment Address:** USDC 0x1C9e0bcA759e5Ec09246f4795310789b12F65a59
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -94,7 +94,7 @@ The public docs from [drand](https://drand.love/) serve best as technical introd
 
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  1 FTE (2 x half-time)
-- **Total Costs:** 18,000 USD
+- **Total Costs:** 28,000 USD
 
 ### Milestone 1: Create a Rust client library for drand
 
@@ -109,7 +109,7 @@ We will create a new Rust library that
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
-- **Costs:** 9,000 USD
+- **Costs:** 14,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -135,7 +135,7 @@ We will also build an example Substrate node that:
 
 - **Estimated Duration:** 1 month
 - **FTE:**  1
-- **Costs:** 9,000 USD
+- **Costs:** 14,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
