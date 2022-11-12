@@ -290,7 +290,6 @@ The following Extrinsics or RPC calls, with relevant UI functions, will be inclu
 | 1. | PSBT Signing | Users will be able to sign transactions using our customized signer (`Spectre Desktop`) and save the output to the Substrate node. |  
 | 2. | Transaction Broadcast | When the threshold of signatures has been reached, the node will broadcast the transaction to the Bitcoin network (via integrated Bitcoin core node) |  
 | 4. | Hosted Instances | We will host a `testnet` and `mainnet` instance of the full solution (as a standalone Substrate chain) for no less than 2 years |  
-| 5. | EZ-Try | The hosted instances will have `EZ-Try`, which is our method of ensuring any level user can easily go to the app with no prerequisites and try it. (e.g. auto-faucet, auto-generate `xpubs`) |  
 | 6. | Support & Maintenance | We will provide user support and maintain compatibility with Substrate releases for no less than 2 years |  
 
 The following Extrinsics or RPC calls, with relevant UI functions, will be included in milestone #2.

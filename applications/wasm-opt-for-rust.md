@@ -90,7 +90,6 @@ We will also deliver the following:
 - Full README and API documentation
 - Basic regression tests for the binary and library
 - CI for the platforms
-  - `aarch64-apple-darwin`
   - `aarch64-unknown-linux-gnu`
   - `i686-pc-windows-msvc`
   - `i686-unknown-linux-gnu`
@@ -101,7 +100,12 @@ We will also deliver the following:
   - `cargo-contract`, the ink! build tool
 - One blog post about the tool and its development, at https://brson.github.io
 
+We will not include the following `wasm-opt` capabilities in the library bindings:
 
+- Fuzzing. `wasm-opt` has multiple options related to fuzz testing the output
+  module. We are aware of no potential clients for this feature. Including these
+  fuzzing features requires code duplication in Rust, for additional maintenance
+  burden and questionable benefit.
 
 
 ### Ecosystem Fit
