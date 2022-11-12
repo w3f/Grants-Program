@@ -21,6 +21,7 @@
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
+  - [Office Hours](#office-hours)
 - [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
   - [Treasury](#treasury)
   - [Hackathons](#hackathons)
@@ -38,7 +39,7 @@ Generally, your project will have better chances to be accepted if:
 
 - It presents a **well-researched** or tested concept, for which ideally you are able to show some prior work.
 - You can demonstrate that the project will be **maintained** after completion of the grant, be it through an obvious commitment to the technology from your side, additional funding sources or an existing business model.
-- Your team has **proven experience** with the relevant languages and technologies and/or a strong technical background. You will be asked to provide the GitHub profiles of your team members as part of your application, which we will examine these for past activity and code quality. Naturally, you can also link to projects on other platforms.
+- Your team has **proven experience** with the relevant languages and technologies and/or a strong technical background. You will be asked to provide the GitHub profiles of your team members as part of your application, which we will examine for past activity and code quality. Naturally, you can also link to projects on other platforms.
 - Your application is **rich in technical details** and well-defined.
 - You can clearly present how your project stands out among competitors or implements technology that doesn't exist in the ecosystem yet.
 
@@ -46,6 +47,7 @@ Additionally, it must fulfill the following requirements:
 
 - All code produced as part of a grant must be **open-sourced**, and it must also not rely on closed-source software for full functionality. We prefer Apache 2.0, but GPLv3, MIT or Unlicense are also acceptable.
 - We do not award grants for projects that have been the object of a successful token sale.
+- Applications must not mention a specific token. Furthermore, the focus of the application should lie on the software that is being implemented/research being carried out as part of the grant, and less on your project/venture/operation. For the purpose of the application and delivery, think about how others might also benefit from your work.
 - As a general rule, teams are asked to finish a grant before applying for another one.
 - Lastly, we do not fund projects that actively encourage gambling, illicit trade, money laundering or criminal activities in general.
 
@@ -84,10 +86,11 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Gautam Dhameja](https://github.com/gautamdhameja)
-- [Ashley Grevelink](https://github.com/cruikshankss)
 - [David Hawig](https://github.com/Noc2)
+- [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Bill Laboon](https://github.com/laboon)
+- [Keegan Quigley](https://github.com/keeganquigley)
 - [Raul Romanutti](https://github.com/rrtti)
 - [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
@@ -98,9 +101,10 @@ In cases where a niche expert opinion is desirable, one of the committee members
 
 Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
-- [Ashley Grevelink](https://github.com/cruikshankss)
 - [David Hawig](https://github.com/Noc2)
+- [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
+- [Keegan Quigley](https://github.com/keeganquigley)
 - [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
 
@@ -141,7 +145,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
 
 ## :pencil: Process
 
-> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in Bitcoin, USDT (on Kusama or Ethereum), USDC/DAI (Ethereuem) or aUSD (Acala). If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in Bitcoin, USDT (on Kusama or Ethereum), USDC/DAI (Ethereum) or aUSD (Acala). If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 ### 1. Application
 
@@ -231,6 +235,21 @@ Besides, we also have a **community room for all grant recipients**. Head over t
 
 - [W3F Grants Community](https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&via=matrix.org)
 
+### Office Hours
+
+Web3 Foundation Grants Office Hours are a chance to ask the grants team questions regarding a specific (potential) grant application. It offers
+- general guidance regarding the grants program, 
+- some quick initial feedback and
+- help how to navigate the ecosystem. 
+
+Apply for Office Hours if you 
+- need feedback before submitting an application,
+- want to find out what kind of support there might be available or
+- need help finding the resources you need.
+
+It is **not** a chance to pitch your project, especially since only a small subset of the committee will participate in the call. To apply, please fill out the [Office Hours :alarm_clock: form](https://forms.gle/54xkiqU37WwdN9UR6). Be as specific as possible, so we can help you more quickly. We will get back to you with follow-up questions or a link for booking a timeslot.
+
+
 ## :rocket: Alternative Funding Sources
 
 We encourage you to explore the alternative funding options listed below. Please note, however, that you should not seek to fund the **same scope of work** from multiple sources and that any team found doing so will have its Web3 Foundation support terminated.
@@ -282,16 +301,17 @@ The best way to find out about upcoming hackathons is by following Polkadot on t
 
 Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 
-- [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
-- [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
-- [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
-- [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
-- [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
+- [Acala Grants Program](https://acala.network/ecosystem-program)
 - [Astar / Shiden Network Builders Program](https://github.com/PlasmNetwork/Builders-Program)
+- [Crust Grants Program](https://github.com/crustio/Crust-Grants-Program)
+- [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
+- [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
+- [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
+- [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program) 
+- [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
+- [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [Picasso / Composable Grants Program](https://grants.composable.finance)
 - [SubQuery Grants Programme](https://subquery.network/grants)
-- [Acala Grants Program](https://acala.network/ecosystem-program)
-- [OAK’s Developer Grants](https://oak.tech/community/grants/)
 
 ## :information_source: License<!-- omit in toc -->
 

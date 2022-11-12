@@ -2,7 +2,7 @@
 
 * **Project:** Hardware ECDSA for Polkadot JS
 * **Proposer:** @akru
-* **Payment Address:** 1DJTSPajRFCjdfn5UgPXGRo6Di8EE1Dzox
+* **Payment Address:** DJQ4xK5QC95TJmgoZ8RV8HgvgNFE3JFzzQcuwZ5daYq7YMw (Kusama)
 
 ## Project Description :page_facing_up: 
 
@@ -27,27 +27,13 @@ Plasm Network(https://plasmnet.io) is a scaling Dapps platform on Substrate. Pla
 
 * **Total Estimated Duration:** 6 weeks
 * **Full-time equivalent (FTE):** 0.6
-* **Total Costs:** 0.7 BTC
+* **Total Costs:** 10,000 USDT
 
 ### Milestone 1
 
 * **Estimated Duration:** 3 weeks 
 * **Full-time equivalent (FTE):** 0.6
-* **Costs:** 0.35 BTC
-
-Trezor API support for Polkadot JS Apps.
-
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
-| 1. | Trezor API ECDSA signer | Introducing Trezor API based signed for Polkadot JS. Required API methods already exposed by standard Trezor API: [getPublicKey](https://wiki.trezor.io/Developers_guide:Trezor_Connect_API_Methods#getPublicKey), [signMessage](https://wiki.trezor.io/Developers_guide:Trezor_Connect_API_Methods#signMessage). |
-| 2. | Improve documentation | Add Trezor hardware wallet paragraph into Polkadot-js documentation. |
-| 3. | Demo video | Provide demo video of Polkadot Apps sign transaction with Trezor wallet. |
-
-### Milestone 2
-
-* **Estimated Duration:** 3 weeks 
-* **Full-time equivalent (FTE):** 0.6
-* **Costs:** 0.35 BTC
+* **Costs:** 10,000 USDT
 
 Ledger API support for Polkadot JS Apps.
 
