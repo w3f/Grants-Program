@@ -137,15 +137,22 @@ We have been taking time to play with Substrate to form initial POCs inside the 
 
 - **Total Estimated Duration:** 1 month
 - **Full-Time Equivalent (FTE):**  3
-- **Total Costs:** $36000 USD
+- **Total Costs:** $10000 USD
 
-### Milestone 1 - Technical & Visual Design and setup
+### Milestone 1 - Technical architecture & Visual Design and setup
 
 - **Estimated duration:** 1 month
 - **FTE:**  3
-- **Costs:** 36,000 USD
+- **Costs:** 10,000 USD
 
-We will start with the user onboarding process to Xcavate parachain/parathread allowing the design team to create low-fi wireframe mockups using Figma that will then be approved by the team to be updated to hi-def mockups that will be interactive for the team's final feedback. This phase will be constant, but the core of the design deliverables will take 3-4 weeks based on feedback. As each of these designs is approved, we will pass them on to the development team to complete in tandem. We will, however, separate these into another milestone. Also, during this first phase, developers will set up the developer's environment with dev env and third-party sandboxes.
+We will start with the user onboarding process to the Xcavate Dapp creating low-fi wireframe mockups using Figma that will then be updated to hi-definition designs ready for development. We will repeat this process to include onboarding real world property so they appear for investors to purchase NFT fractions. As each of these low flow designs is approved, we will pass them on to the UX team to complete in high definition.
+
+| Number    | Deliverables                          | Specification
+|:----------|:--------------------------------------|:---------------
+| 0a.	    | License	                            |  Apache 2.0
+| 0b.	    | Documentation                         |  Most of the documentation will be provided on GitHub
+| 1	        | Lowfi Wireframes   	     |  We will supply the full user onboarding process
+| 2         | HiFi Mockups 	 |  We will provide the full ramge of wireframes in high fidelity graphics ready for development
 
 ## Future Plans
 
