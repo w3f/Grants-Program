@@ -569,4 +569,5 @@
 | [TDSoftware](https://www.tdsoftware.de/) | Substrate IPFS Utilities | [GitHub](https://github.com/TDSoftware) | ☐ | ☐ | ☐ |
 | [Ink Boxes Team](https://github.com/nerdsince98) | Ink Boxes | [GitHub](https://gitlab.com/nerdsince98/learning-ink/) | ☐ | ☐ | ☐ |
 | [ParaSpell](https://github.com/paraspell) | ParaSpell Phase 2 | [GitHub](https://github.com/paraspell) | ☐ | ☐ | ☐ |
+| [SubRelay](http://subrelay.xyz/) | SubRelay | [GitHub](https://github.com/subrelay) | ☐ | ☐ | ☐ |
 
