@@ -131,13 +131,13 @@ The relevant [RFP is here](https://github.com/w3f/Grants-Program/blob/master/rfp
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
+- **Total Estimated Duration:** 8 months
 - **Full-Time Equivalent (FTE):**  3
 - **Total Costs:** $27,000 (payable in Ethereum-USDT)
 
 ### Milestone 1 — Implement On-chain Modules
 
-* **Estimated duration:** 2 month
+* **Estimated duration:** 6 month
 * **FTE:**  3
 * **Costs:** 15,000USD
 
@@ -153,7 +153,7 @@ The relevant [RFP is here](https://github.com/w3f/Grants-Program/blob/master/rfp
 | 4. | Web Server | Provide meta-data management service for Keysafe users written in Rust, users can manage keys and authentication methods |
 | 5. | Polkadot.js | Add in encryption/decryption functionality to `@polkadot/keyring` and `@polkadot/extension` so that the protocol can run without the needs to read the private key of users. |
 
-* **Estimated duration:** 1 month
+* **Estimated duration:** 2 month
 * **FTE:**  3
 * **Costs:** 12,000USD
 
