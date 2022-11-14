@@ -570,4 +570,4 @@
 | [Ink Boxes Team](https://github.com/nerdsince98) | Ink Boxes | [GitHub](https://gitlab.com/nerdsince98/learning-ink/) | ☐ | ☐ | ☐ |
 | [ParaSpell](https://github.com/paraspell) | ParaSpell Phase 2 | [GitHub](https://github.com/paraspell) | ☐ | ☐ | ☐ |
 | [SubRelay](http://subrelay.xyz/) | SubRelay | [GitHub](https://github.com/subrelay) | ☐ | ☐ | ☐ |
-
+| [Wow Labz](http://www.wowlabz.com) | Dot Marketplace Phase 3 | [GitHub](https://github.com/orgs/WowLabz) | ☐ | ☐ | ☐ |
