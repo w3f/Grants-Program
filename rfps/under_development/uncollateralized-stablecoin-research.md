@@ -1,6 +1,6 @@
-# Uncollateralized Stablecoin
+# Uncollateralized Stablecoin Research
 
-* **Status:** Open (anyone is allowed to apply)
+* **Status:** [Under Development](https://github.com/w3f/Grants-Program/blob/master/applications/stardust.md)
 * **Proposer:** [Noc2](https://github.com/Noc2)
 * **Projects you think this work could be useful for** [optional]: Any Defi Project
 

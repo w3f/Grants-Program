@@ -1,6 +1,6 @@
 # Privacy Enhancement for Polkadot Extension
 
-* **Status:** Open
+* **Status:** [Under Development](https://github.com/w3f/Grants-Program/blob/master/applications/polkadot-js-extension-per-account-auth.md)
 * **Proposer:** jonasW3F
 * **Projects you think this work could be useful for** [optional]: https://github.com/polkadot-js/extension
 * **Teams/People that could deliver the RFP:** @celrisen
