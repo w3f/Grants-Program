@@ -29,7 +29,7 @@
 
 ## :wave: Introduction
 
-As part of our commitment to promoting the Web3 ecosystem, we offer a comprehensive grants program focused on funding software development and research efforts related to **Polkadot, Kusama, [Substrate](https://github.com/paritytech/substrate) and [ink!](https://github.com/paritytech/ink)**. For more information about the Web3 Foundation, please visit the [About page](https://web3.foundation/about/) on our website.
+As part of our commitment to promoting the Web3 ecosystem, we offer a comprehensive grants program focused on funding software development and research efforts related to **Polkadot and Kusama**. For more information about the Web3 Foundation, please visit the [About page](https://web3.foundation/about/) on our website.
 
 ### Guidelines
 
