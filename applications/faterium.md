@@ -6,7 +6,7 @@
 
 ## Project Overview :page_facing_up:
 
-Faterium is a decentralized voting platform that provides business tools for content creators to monetize their projects and directly engage the community on important decisions. It helps game developers, creators and artists to easily create own tokens, distribute them and earn by providing polls on various topics that are important to their community.
+Faterium is a decentralized voting platform that provides business tools for content creators to monetize their projects and directly engage the community on important decisions. It helps game developers, creators and artists to easily create own assets, distribute them and earn by providing crowdfunding polls on various topics that are important to their community.
 
 ### Problem Summary
 
@@ -18,27 +18,113 @@ We have found a solution that can give creators new opportunities to monetize th
 
 We will provide a simple interface where creators can create special polls in a few clicks, set which currency will be used for voting, and then invite the community to participate in it.
 
-Also, we will make convenient tools for creating, distributing and integrating of own tokens and NFTs, thanks to which people who are not familiar with Web3 will be able to use the power of decentralization in their projects such as games, online books, movies and comics.
+Also, we will make convenient tools for creating, distributing and integrating of own assets and NFTs, thanks to which people who are not familiar with Web3 will be able to use the power of decentralization in their projects such as games, online books, movies and comics.
 
 We integrate social elements into the platform, such as rating, discussion forums or community-created proposals. And it will give creators even more ways to interact with the community.
 
 In addition, we will make SDKs and APIs to help integrate our platform into existing services and projects, such as games, websites for reading books or comics, or websites for watching movies, which will open up endless possibilities for adopting the technology.
 
+### Glossary
+
+- **User Profile** - a collection of settings and information associated with a user.
+- **Community** - a customizable space where polls, discussions, and events of a specific community will be located, it can be either a personal space or a project space.
+- **Crowdfunding Polls** - a way for creators to decide what community wants and raise money for a project or idea. Authors themselves determine which currency they want to use for voting and what percentage they will receive after the end of the poll.
+- **Poll Rewards** - any kind of reward that users can receive after winning the poll. It can be either a unique NFTs or any gifts personally from the author of the poll.
+
 ### Infrastructure Scheme
 
 ![Faterium - Faterium Platform](https://i.imgur.com/8FRSNOz.jpeg)
+
+### Wireframes
+
+<table>
+  <tr>
+    <td>
+      <b>1. Main Page</b>
+    </td>
+    <td>
+      <b>2. Categories</b>
+    </td>
+    <td>
+      <b>3. Community</b>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <img src="https://user-images.githubusercontent.com/24860875/201780450-fb221baa-2100-4e14-ab3f-e9df7ec387b8.png">
+    </td>
+    <td valign="top">
+      <img src="https://user-images.githubusercontent.com/24860875/201781849-7c6fe810-a636-4ec1-ba02-ab0ef30e712b.png">
+    </td>
+    <td valign="top">
+      <img src="https://user-images.githubusercontent.com/24860875/201780587-781954ea-576d-4d47-b3aa-ddc7e9b6bacd.png">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>4. Poll</b>
+    </td>
+    <td>
+      <b>5. User Profile</b>
+    </td>
+    <td>
+      <b>6. Create Community</b>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <img src="https://user-images.githubusercontent.com/24860875/201782560-2a31d346-ce7d-427b-ab10-21914fd322c8.png">
+    </td>
+    <td valign="top">
+      <img src="https://user-images.githubusercontent.com/24860875/201782714-d2bd07bf-cbd5-4fd2-bc33-081b1bc4427b.png">
+    </td>
+    <td valign="top">
+      <img src="https://user-images.githubusercontent.com/24860875/201782840-4bbd6e92-f610-4019-9e95-4dca0511b319.png">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>7. Create Asset</b>
+    </td>
+    <td>
+      <b>8. Create Poll</b>
+    </td>
+    <td>
+      <b>9. Profile Settings</b>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <img src="https://user-images.githubusercontent.com/24860875/201786471-da4cabbe-235e-4113-9f41-d0fa8f7102a9.png">
+    </td>
+    <td valign="top">
+      <img src="https://user-images.githubusercontent.com/24860875/201786558-6011b8fa-9a3e-4ae6-9f34-a4c157b738bc.png">
+    </td>
+    <td valign="top">
+      <img src="https://user-images.githubusercontent.com/24860875/201786922-8d909ed6-c757-4e06-8d82-224d960cef27.png">
+    </td>
+  </tr>
+</table>
+
+### Substrate and Backend API
+
+![image](https://user-images.githubusercontent.com/24860875/201778800-35f70227-5f26-49db-9123-e99e47711c39.png)
 
 ### Usecases
 
 The Faterium platform can be useful for a large pool of content creators and projects. Such as game developers, comic and manga artists, book writers, movie and anime creators, bloggers and streamers, journalists and politicians, etc. Faterium can be used in all areas where the creators would like to give the community the tools to vote and influence. Now, we would like to show a couple of interesting use cases of the platform.
 
+#### Simplified user flow diagram
+
+![image](https://user-images.githubusercontent.com/24860875/201778526-3cf974df-a33b-4979-8275-67f4fc04480a.png)
+
 #### Comics Creator
 
 Imagine talented comics creator - Bob Johnson, that has several popular multi-series comics and thousands of fans waiting for new chapters. Bob is looking for a new way to get funding for his projects, and at the same time get feedback from his community.
 
-He comes to the Faterium platform, configures an account and creates his first poll, in less than 30 minutes. Bob sets the duration of the poll to 3 days, selects DOT as the voting currency and also sets what will happen after the poll ends - 50% of winners tokens go to the poll creator, and winners will receive remaining 50% of tokens alongside unique NFTs as reward.
+He comes to the Faterium platform, configures user profile and creates his first crowdfunding poll, in less than 30 minutes. Bob sets the duration of the poll to 3 days, selects DOT as the voting currency and also sets what will happen after the poll ends - 50% of winners assets go to the poll creator, and winners will receive remaining 50% of assets alongside unique NFTs as reward.
 
-In the poll, he asks his community a question: "Which comic should I develop this month?". Also, Bob describes options in the poll and give detailed information about what he will do after the end of the poll. Then he posts the poll with unique link in his social media. Fans are happy that the author is preparing new series of comics and they decide to help him by voting. They log in via the [polkadot{.js} extension](https://polkadot.js.org/extension/), choose one of the options in the poll and send tokens.
+In the poll, he asks his community a question: "Which comic should I develop this month?". Also, Bob describes options in the poll and give detailed information about what he will do after the end of the poll. Then he posts the poll with unique link in his social media. Fans are happy that the author is preparing new series of comics and they decide to help him by voting. They log in via the [polkadot{.js} extension](https://polkadot.js.org/extension/), choose one of the options in the poll and send assets.
 
 After the end of the poll, the Bob receives finances that will help him to create new series. At the same time, fans took part in an important decision and supported their favorite author, and of course were rewarded with rare NFTs! Looks nice!
 
@@ -46,11 +132,11 @@ After the end of the poll, the Bob receives finances that will help him to creat
 
 Let's look at another example - a famous game developer. The developer wants to launch the game on as many platforms as possible, so he needs to integrate cryptocurrency into the game in a soft way. Also, he wants to do something unique and increase the involvement of his community.
 
-He chooses to use the Faterium platform, configures an account and creates a project page on the platform. Since his game has a very interesting plot and characters, he decides to create tokens for each key character in the game. Thanks to a user-friendly interface, he mints new tokens in a short time. Then, with the help of the Faterium SDK, he adds these tokens to the game as special rewards for players and announce the new feature on his social media.
+He chooses to use the Faterium platform, configures user profile and creates a community on the platform. Since his game has a very interesting plot and characters, he decides to create an asset for each key character in the game. Thanks to a user-friendly interface, he mints new assets in a short time. Then, with the help of the Faterium SDK, he adds these assets to the game as special rewards for players and announce the new feature on his social media.
 
-Then, he releases new story missions in the game, and players who have tokens of their favorite characters, now can directly influence on how the game's story develops by spending tokens and voting on various plot twists and character decisions. Players who love the story of the game now have cool tools to interact and influence the game, and last but not least, they can freely sell and buy these tokens on decentralized marketplaces.
+Then, he releases new story missions in the game, and players who have assets of their favorite characters, now can directly influence on how the game's story develops by spending assets and voting on various plot twists and character decisions. Players who love the story of the game now have cool tools to interact and influence the game, and last but not least, they can freely sell and buy these assets on decentralized marketplaces.
 
-It is important to note that game developers who already have own token may not create a new one, but use an existing one with the Faterium platform.
+It is important to note that game developers who already have own tokens or assets may not create a new one, but use an existing one by bridging it to the Faterium platform.
 
 ### Ecosystem Fit
 
@@ -98,6 +184,7 @@ Github Organizations:
 Repositories:
 - [faterium/faterium-node](https://github.com/faterium/faterium-node)
 - [faterium/faterium-dapp](https://github.com/faterium/faterium-dapp)
+- [faterium/faterium-server](https://github.com/faterium/faterium-server)
 
 GitHub accounts of developer team:
 - https://github.com/enfipy
@@ -108,32 +195,45 @@ GitHub accounts of developer team:
 
 ### Overview
 
-* **Total Estimated Duration:** 6 weeks
+* **Total Estimated Duration:** 7 weeks
 * **Full-time equivalent (FTE):** 5
 * **Total Costs:** 30,000 USD
 
-### Milestone 1 — Substrate Node and Pallets
+### Milestone 1 — Crowdfunding Polls
 
-* **Estimated Duration:** 3 weeks
+* **Estimated Duration:** 4 weeks
 * **FTE:** 5
 * **Costs:** 17,000 USD
+
+The main goal of the `Milestone 1` is to create base functionality for `Crowdfunding Polls`. To make it possible - we will create Substrate Node that will contain basic template pallets, alongside with [Pallet Assets](https://github.com/paritytech/substrate/tree/master/frame/assets) (for creating assets), and [Pallet Scheduler](https://github.com/paritytech/substrate/tree/master/frame/scheduler) (for scheduling polls endings). Also, we will create a new Pallet called `Crowdfunding Polls Pallet`.
+
+To minimize storage on chain (as [polkassembly](https://github.com/Premiurly/polkassembly/blob/master/front-end/src/components/CreateTreasuryProposal/TreasuryProposalFormButton.tsx#L189) and Polkadot [do](https://wiki.polkadot.network/docs/learn-treasury#announcing-the-proposal)) - we will create a Golang server that will [embed](https://pkg.go.dev/github.com/ipfs/kubo/core/coreapi) [IPFS node](https://docs.ipfs.tech/reference/go/api/#go-embedded-client) and [PocketBase](https://pocketbase.io/docs/use-as-framework/) (or launch nearby in separate docker containers), to create the best User Experience and make it possible to store big media files as IPFS CID in database. To make it simple and straightforward in usage - we will launch test Substrate Network with our pallet on our servers, and create pages for creating Polls, and voting (with help of [polkadot{.js} extension](https://polkadot.js.org/extension/)).
+
+Please, see the Substrate API design of the Faterium Platform [above](#substrate-and-backend-api).
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | **License** | We will add Apache 2.0 Licenses to all repositories. |
-| 0b. | **Documentation** | We will provide **inline documentation** of the code and documentation how to run tests. |
+| 0b. | **Documentation** | We will provide both **inline documentation** of the code and a **live demo**. |
 | 0c. | **Testing Guide** | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | **Docker** | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | **Substrate Project pallet** | We will create a Substrate Pallet for creating and managing Projects. Authors will be able to specify some information about project like: Name, Description, CoverURI, etc. |
-| 2. | **Substrate Token Factory pallet with Pallet Assets** | We will create a Substrate Pallet for creating transferable tokens with help of Assets Pallet from Substrate. Authors will be able to create and customize inner Project tokens. |
-| 3. | **Substrate Voting pallet** | We will create a Substrate Pallet for creating, and configuring universal Voting Polls with or without tokens or currency. Authors will be able to crate and publish poll, get unique id, and after that other accounts will be able to vote in it. |
-| 4. | **Integrate pallets into Substrate Node Runtime** | We will put everything inside Substrate Node and will make sure that all functionality is working well. |
+| 1. | **Crowdfunding Polls Pallet** | As described above - we will create a Substrate Pallet for creating `Crowdfunding Polls`. |
+| 2. | **Configure Substrate Node** | As described above - we will create a Substrate Node from template and integrate `Pallet Assets`, `Pallet Scheduler` and our `Pallet Crowdfunding Polls`. |
+| 3. | **Faterium Server with PocketBase and IPFS** | As described above - we will create a Golang Server with API through PocketBase for uploading polls details in `IPFS Node`. |
+| 4. | **Launch testnet Substrate network on the server** | As described above - we will setup and run Faterium test network on our servers to make sure that everything works as designed. |
+| 5. | **Pages for creating Polls and voting on it** | As described above - we will create pages for creating and using `Crowdfunding Polls` to make sure that all functionality is working well. |
 
-### Milestone 2 — Web dApp and Integration
+### Milestone 2 — Profiles, Communities, and Pages
 
 * **Estimated Duration:** 3 weeks
 * **FTE:** 5
 * **Costs:** 13,000 USD
+
+The main goal of the `Milestone 2` is to create UI design (see [wireframes](#wireframes) for the reference) and all main functionality of Faterium Platform: Communities, User Profiles, Categories, Assets, Crowdfunding Polls. After completion of `Milestone 1` - we will have Golang Server that we will extend with new functionality: wallet connect, user profile configuration, community creation, asset creation, voting.
+
+Please, see the Backend API design of the Faterium Platform [above](#substrate-and-backend-api).
+
+Also, we will prepare and publish and Article, that will explain a new concept of `Crowdfunding Polls`.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -142,13 +242,13 @@ GitHub accounts of developer team:
 | 0c. | **Testing Guide** | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | **Docker** | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | **Article** | We will publish an **article** that explains the concept of the Faterium Network, it's features, and usecases. More general-public-oriented version of what described in this application. |
-| 1. | **Create design for Faterium dApp** | We will create a minimalistic design for Faterium dApp, with Project page, custom Voting Poll page, Token page, alongside configuration pages for all of above. |
-| 2. | **Launch testnet Substrate network on the server** | We will setup and run Faterium test network on our servers to make sure that everything works as designed. |
-| 3. | **Vue Web dApp to use with Faterium network** | We will create website from design that will finish. We will develop page for Project creation and configuration, page for Token creation and configuration, generated page for Voting Poll creation and voting. |
+| 1. | **Create design for Faterium dApp** | As described above - we will create a UI design for Faterium Platform. |
+| 2. | **Extend Faterium server** | As described above - we will update and extend Faterium Server to make it work as designed. |
+| 3. | **All web pages for dApp** | As described above - we will create all website pages from design and connect them to Faterium Server / Faterium Network node. |
 
 ## Future Plans
 
-1. IPFS Integration for images and assets.
+1. [IPFS Cluster](https://ipfscluster.io/) Integration.
 2. DEX + Subsidizing System / Fuel-Gas Tanks.
 3. Anti-spam System + Account Verification.
 4. Author & Project Verification.
