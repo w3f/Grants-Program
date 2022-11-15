@@ -16,7 +16,7 @@ Applied Blockchain has developed Silent Data as a platform for proving propertie
 
 Silent Data leverages hardware secure enclaves with attestation, in particular, Intel SGX in order to enable privacy-preserving retrieval and processing of off-chain data, and generation of cryptographic proofs that are verifiable in blockchain smart contracts. This ensures that sensitive information is never revealed, not even to those hosting the platform, and code attestation with a smart contract link ensures that the code used to retrieve the data and generate the proofs cannot be modified or interfered with by the operator.
 
-Silent Data proof certificates are powerful because they can verifiably demonstrate that private data meets certain requirements without the need to reveal that data, and without that data being accessible to Silent Data operators. The service is initially centrally hosted, and will be decentralised over time in order so that it cannot be censored by the operator.
+Silent Data proof certificates are powerful because they can verifiably demonstrate that private data meets certain requirements without the need to reveal that data, and without that data being accessible to Silent Data operators. The service is initially centrally hosted, and will be decentralised over time in order so that it cannot be censored by the operator. One of the properties of SGX is that it is possible to prove what code is being run inside a particular enclave. This means that we would be able to provide decentralised "nodes" with prebuilt enclaves that contain the code required to run the Silent Data service and then provision them with encrypted secret keys so that they can create compatible proof certificates. Once provisioned, these nodes would be able to run in a decentralised fashion, independent from the original operator.
 
 Silent Data enables verification of web2 account ownership, including social media services such as Instagram. This enables enrichment of web3 identities and assets with attestations from the web2 world, for example, if someone is using web3 to purchase from a brand with a web2 presence.
 
@@ -169,7 +169,7 @@ Silent Data Architecture: [Silent Data Architecture](https://docs.google.com/doc
 | Number  | Deliverables                   | Specification                                                                   | 
 | ------- |:------------------------------:| -------------------------------------------------------------------------------:|
 | 0a.     | License                        | MIT.                                                                           
-| 0b.     | Documentation                  | We will provide documentation on Silent Data. 
+| 0b.     | Documentation                  | We already have a whitepaper describing the principles behind the Silent Data system, but we will also provide Polkadot specific setup instructions as well as supporting documentation (in the form of READMEs) for the example smart contract code. 
 | 0c.     | Docker                         | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.
 | 0d.     | Testing and Testing Guide      | The testnet examples will be shared with Polkadot developers to integrate Silent Data into their dapps and parachains.
 | 0e.     | Article                        | We will publish an article/workshop that explains what was done/achieved in the extension and deployment of Silent Data confidential computing oracle.
