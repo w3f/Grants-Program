@@ -555,7 +555,7 @@
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
-| [CrossChain Labs](https://github.com/CrossChainLabs) | DotPulse | [GitHub](https://github.com/CrossChainLabs) | ☐ | ☐ | ☐ |
+| [CrossChain Labs](https://github.com/CrossChainLabs) | DotPulse | [GitHub](https://github.com/CrossChainLabs) | ☐ | ☒ | ☐ |
 | [Jett Hays](https://github.com/jettblu) | Distributed Key Management | [GitHub](https://github.com/KryptikApp) | ☐ | ☐ | ☐ |
 | [NexToken Technology](https://github.com/NexTokenTech) | TREX - Timed Release Encryption Xing chains | [GitHub](https://github.com/NexTokenTech/TREX) | ☐ | ☐ | ☐ |
 | [Blockcoders](http://blockcoders.io/) | Cross-Consensus Messaging Software Development Kit | [GitHub](https://github.com/blockcoders) | ☐ | ☐ | ☐ |
