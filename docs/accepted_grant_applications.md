@@ -525,7 +525,7 @@
 | [Veridise](https://veridise.com/) | Vanguard | [GitHub](https://github.com/Veridise/Vanguard) | ☐ | ☐ | ☐ |
 | [Karolis Ramanauskas](https://krl.is/) | Generic Sybil-Resistant Faucet | [GitHub](https://github.com/karooolis) | ☐ | ☒ | ☒ |
 | [LimeChain](https://limechain.tech/) | Research feasibility for a Go Runtime | [GitHub](https://github.com/LimeChain) | ☐ | ☒ | ☒ |
-| [Jim Yam](https://github.com/JimYam) | daos | [GitHub](https://github.com/daos-org/daos.git) | ☐ | ☐ | ☐ |
+| [Jim Yam](https://github.com/JimYam) | daos | [GitHub](https://github.com/daos-org/daos.git) | ☐ | ☒ | ☐ |
 | [Green Lemon](https://github.com/GreenLemonProtocol) | Green Lemon Protocol | [GitHub](https://github.com/GreenLemonProtocol) | ☐ | ☒ | ☐ |
 | [Stardust Labs Inc.](https://stardust.finance/) | Integrating ISO-8583 | [GitHub](https://github.com/adit313/) | ☐ | ☒ | ☒ |
 | [TwinP](https://www.linkedin.com/in/elioprifti/) | Escrow Pallet | [GitHub](https://github.com/herou) | ☐ | ☒ | ☒ |
