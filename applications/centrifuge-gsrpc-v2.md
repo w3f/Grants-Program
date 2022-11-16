@@ -1,7 +1,7 @@
 # Centrifuge Go-Substrate-RPC Client V2
 
-- **Team Name:** Centrifuge
-- **Payment Address:** Ethereum(USDC) - tbd
+- **Team Name:** k/factory (former Centrifuge Development Team)
+- **Payment Address:** Ethereum(USDC) - 0x2B8A956BF807E22d858dc9AD2eFc30cccc3Ea676
 - **Level:** 🐓 3
 
 ## Project Overview :page_facing_up:
@@ -127,17 +127,6 @@ In theory, once the types are loaded, and we built generic encoders for basic pr
 - **Build generic encoder/decoder** for any type loaded in the registry
 - **Support custom encoder/decoder** for irregular struct serialization and deserialization
 
-### Ecosystem Fit
-
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-- What need(s) does your project meet?
-- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
-
 ## Team :busts_in_silhouette:
 
 ### Team members
@@ -148,25 +137,25 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 ### Contact
 
 - **Contact Name:** Miguel Hervas 
-- **Contact Email:** miguel@centrifuge.io
-- **Website:** https://centrifuge.io
+- **Contact Email:** miguel@k-f.co
+- **Website:** https://k-f.co/ (wip) (Protocol website: https://centrifuge.io/)
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** k-f dev AG, Grafenauweg 8, 6300 ZUG SWITZERLAND
+- **Registered Legal Entity:** k-f dev AG
 
 ### Team's experience
 
-The Centrifuge team has built a decentralized platform for the financial supply chain (invoices, purchase orders, warehouse receipts) comprising of a P2P network and Ethereum smart contracts over the last 2 years.
+The k/f team has built a decentralized platform for the financial supply chain (invoices, purchase orders, warehouse receipts) comprising of a P2P network and Ethereum smart contracts over the last 2 years.
 
 The platform allows tokenization of any digital assets. A strong team in the DeFi movement, they are now building a Centrifuge-specific chain with Substrate, integrated their existing Go application with the Substrate chain.
 
-The Centrifuge team also developed the Go Substrate RPC client supported by a Web3 Foundation grant.
+The k/f team also developed the Go Substrate RPC client supported by a Web3 Foundation grant.
 
-The Centrifuge team also developed, along side with ChainSafe, the ChainBridge supported by Web3 Foundation grant.
+The k/f team also developed, alongside with ChainSafe, the ChainBridge supported by Web3 Foundation grant.
 
-The Centrifuge team has deep knowledge in distributed/decentralized applications, libp2p, Golang, Solidity and Ethereum overall, zkSNARKs, and tokenization of assets with NFTs and has been developing with Substrate since Summer 2019.
+The k/f team has deep knowledge in distributed/decentralized applications, libp2p, Golang, Solidity and Ethereum overall, zkSNARKs, and tokenization of assets with NFTs and has been developing with Substrate since Summer 2019.
 
 ### Team Code Repos
 
@@ -227,5 +216,5 @@ This table provides a cost breakdown based on the milestones and deliverables ab
 
 ## Future Plans
 
-Centrifuge is an active user of the GSRPC library and will always want to maintain it in a timely manner. 
+The Centrifuge Protocol is an active user of the GSRPC library and **k/f** will always want to maintain it in a timely manner. 
 
