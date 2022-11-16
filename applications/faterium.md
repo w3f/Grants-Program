@@ -2,6 +2,7 @@
 
 - **Project Code Name:** Faterium
 - **Team Name:** DodoRare, Inc.
+- **Payment Address:** 0x6f083B9888D65A7CA7b8936982BE8Be328eF6d56 (ERC20 USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
