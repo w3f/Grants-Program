@@ -85,11 +85,11 @@ The grants process consists of five parts, each of them described in more detail
 
 To apply for a grant of the Web 3.0  Foundation Grants Program, You shall comply with the procedures established in the README.md file under <https://github.com/w3f/Grants-Program> as well as the process defined inside this document.
 
-To apply for a grant of the Web3 Foundation Grants Program, the grantee needs to fork (= create a copy on GitHub of) the Open-Grants-Program GitHub repository. In the newly created fork (=copy on GitHub), the grantee has to create a copy of the application-template.md. The copied application-template.md needs to be renamed as "project_name.md". "Project_name" needs to be replaced with the name of the project application. Additionally, the grantee has to fill out all mandatory parts of the application-template.md presented in bold letters. Once the grantees have completed the application, they need to create a new pull request (= in this case, a mechanism to submit the changes of the fork to the original Open-Grants-Program GitHub repository) by clicking on the "create new pull request" button shown inside the fork of the W3F Open-Grants-Program GitHub repository. After this, the grantee needs to sign off the terms and conditions presented via the CLA assistant.
+To apply for a grant of the Web3 Foundation Grants Program, the grantee needs to fork (= create a copy on GitHub of) the Grants-Program GitHub repository. In the newly created fork (=copy on GitHub), the grantee has to create a copy of the application-template.md. The copied application-template.md needs to be renamed as "project_name.md". "Project_name" needs to be replaced with the name of the project application. Additionally, the grantee has to fill out all mandatory parts of the application-template.md presented in bold letters. Once the grantees have completed the application, they need to create a new pull request (= in this case, a mechanism to submit the changes of the fork to the original Grants-Program GitHub repository) by clicking on the "create new pull request" button shown inside the fork of the W3F Grants-Program GitHub repository. After this, the grantee needs to sign off the terms and conditions presented via the CLA assistant.
 
 **(ii)  Application review process:**
 
-The Web 3.0 grants committee, which is specified on the [Open-Grants-Program GitHub repository ](https://github.com/w3f/Grants-Program)(the "Grants Committee"), can issue comments and request changes on the grant application pull request (the submission of the grant application on GitHub).  As soon as 1/3 of the Grants Committee approves the pull request, the terms and conditions are signed off and all requested changes are addressed, the application is officially accepted. The application is now a part of the [W3F Open-Grants-Program GitHub repository](https://github.com/w3f/Grants-Program). The time point of the acceptance by the Grants Committee is hereby stored on GitHub and counts as the official beginning of the grant. The original submission is stored with a unique commit hash (identifier) and can not be altered by any party. The final version approved by the Grants Committee of the Specifications, the Time Schedule and Milestones will be placed  in the applications folder of the W3F Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications> via the merge function of GitHub.
+The Web 3.0 grants committee, which is specified on the [Grants-Program GitHub repository ](https://github.com/w3f/Grants-Program)(the "Grants Committee"), can issue comments and request changes on the grant application pull request (the submission of the grant application on GitHub).  As soon as 1/3 of the Grants Committee approves the pull request, the terms and conditions are signed off and all requested changes are addressed, the application is officially accepted. The application is now a part of the [W3F Grants-Program GitHub repository](https://github.com/w3f/Grants-Program). The time point of the acceptance by the Grants Committee is hereby stored on GitHub and counts as the official beginning of the grant. The original submission is stored with a unique commit hash (identifier) and can not be altered by any party. The final version approved by the Grants Committee of the Specifications, the Time Schedule and Milestones will be placed  in the applications folder of the W3F Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications> via the merge function of GitHub.
 
 **(iii)  Milestone delivery process:**
 
@@ -97,7 +97,7 @@ To submit one of the possible multiple milestones specified in the application, 
 
 **(iv)  Milestone review process:**
 
-The Grants Evaluators, who are specified on the [Open-Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), can issue comments and request changes on the milestone delivery pull request. 
+The Grants Evaluators, who are specified on the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), can issue comments and request changes on the milestone delivery pull request. 
 
 a)  Purpose and object of the milestone review process
 
@@ -124,7 +124,7 @@ As soon as one evaluator approves the pull request, the delivery is officially a
 
 **(v)  Payment process:**
 
-The Operations Team specified in the [Open-Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted or after 2 weeks without any feedback after the initial delivery. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the BTC or Ethereum address specified in the initial application.
+The Operations Team specified in the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted or after 2 weeks without any feedback after the initial delivery. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the BTC or Ethereum address specified in the initial application.
 
 ## 5.  Scope of these Terms and Conditions
 
@@ -240,13 +240,19 @@ These Terms and Conditions and any documents referred to in it shall constitute 
 
 The headings used herein are inserted only as a matter of convenience and for reference only. They shall not affect the construction or interpretation of these Terms and Conditions.
 
-## 13.  Applicable Law and Jurisdiction
+## 13. Referral Program
+
+if You were referred to the Web 3.0 Foundation Grants Program by a person who is either a Polkadot Ambassador or, in any case, a person considered by Web 3.0 as being active in the Polkadot Ecosystem (a “Valid Referee”), upon signature of this Terms and Conditions you could indicate to Web 3.0 the name of this Valid Referee, provided that he/she gave you his/her consent to share his/her identity with Web 3.0.  Web 3.0, as part of its grant referral program, will grant to the Valid Referee a referral bonus of the amount at that time allocated as bonus under such program.   
+For the avoidance of any doubt, Web 3.0 reserves the right to decide - at its complete discretion - if an individual is (and/or continues to be) a Valid Referee, and only in this case the referee will be entitled to receive the referral bonus. 
+
+
+## 14.  Applicable Law and Jurisdiction
 
 These Terms and Conditions shall be governed by and construed in accordance with the substantive laws of Switzerland without any reference to its conflict of law provisions. The provisions of the United Nation Convention on contracts for the International Sale of Goods (CISG) shall not apply.
 
 Any disputes arising out of or in connection with these terms and conditions and contracts entered into thereunder shall be submitted to the sole and exclusive jurisdiction of the courts of the city of Zug.
 
-## 14.  Polkadot Network
+## 15.  Polkadot Network
 
 If You are using Polkadot network for the purpose of the software development, research and/or the production of software documentation and technical education material You agree to be bound by specific term as follows:
 
