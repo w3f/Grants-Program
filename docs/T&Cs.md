@@ -9,7 +9,7 @@ By participating you acknowledge and accept the​ terms and conditions​ of th
 
 * * * * *
 
-These Terms and Conditions are entered into by and between the Web 3.0 Technologies Foundation, Baarerstrasse 14,6300 Zug, Switzerland (CHE-332.596.347) (henceforth "Web 3.0" or "We") and you as an applicant for the technical grant for software development, research and/or the production of software documentation and technical education material as specified in Guidelines for technical grant of Web 3.0 Technologies Foundation (henceforth "User" or "You") (each also a "Party" and together the "Parties"). Please read these Terms and Conditions carefully. By signing off the terms and conditions via the CLA assistant, You confirm that You have read these Terms and Conditions and that You agree to be bound by them.
+These Terms and Conditions are entered into by and between the Web 3.0 Technologies Foundation, Baarerstrasse 14, 6300 Zug, Switzerland (CHE-332.596.347) (henceforth "Web 3.0" or "We") and you as an applicant for the technical grant for software development, research and/or the production of software documentation and technical education material as specified in Guidelines for technical grant of Web 3.0 Technologies Foundation (henceforth "User" or "You") (each also a "Party" and together the "Parties"). Please read these Terms and Conditions carefully. By signing off the terms and conditions via the CLA assistant, You confirm that You have read these Terms and Conditions and that You agree to be bound by them.
 
 We reserve the right to change, modify, add or remove portions of these Terms and Conditions from time to time. If this occurs, We will notify You in adequate form on such updates.
 
