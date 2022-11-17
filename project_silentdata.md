@@ -77,7 +77,8 @@ There are already numerous parachains deployed in the Polkadot ecosystem, primar
 
 The project enables smooth and user-friendly proof of web2 account ownership and credentials in web3 dApps. This can be used to reduce fraud, but augmenting web3 wallet identities and assets with verified web2 account data (e.g. Instagram account ownership), without revealing sensitive account data and credentials to any third parties or platform operators..
 
-Silent Data can be used to verify web2 account ownership, such as social media accounts ownership such as Instagram, for example, to provide proofs that can be used inside the web3 environment. The solution guarantees complete confidentiality and that no user data is visible during the verification process, no even to the platform operator, nor is it persisted anywhere outside the web2 platform.
+Silent Data can be used to verify web2 account ownership, such as social media accounts ownership such as Instagram, for example, to provide proofs that can be used inside the web3 environment. The solution guarantees complete confidentiality and that no user data is visible during the verification process, not even to the platform operator, nor is it persisted anywhere outside the web2 platform.
+
 
 NFT creators with verified Instagram accounts, for example, can prove they are behind an NFT and prove their wallet owns a certain verified Instagram account. With this they can avoid it being impersonated or having fake assets being associated with their identity by providing cryptographic proof of Instagram account ownership and associating this with their wallet and minted NFT.
 
