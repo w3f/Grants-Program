@@ -203,18 +203,18 @@ We believe that one year of maintenance is enough for now.
 ### Budget Summary
 This table provides a cost breakdown based on the milestones and deliverables above.
 
-| |  |    |  Estimates |
-| --------  | -------- |----|--- |
-| **MS**  | **Deliverable**     | **Hours**| **Budget** |
-| 1 | Dynamic Type Loader| 200 | $30,000     |
-||**Subtotal Milestone 1**| **200**| **$30,000**|
-|2| Generic type registry Encoder/Decoder | 160 | $24,000| 
-||**Subtotal Milestone 2**|**160**|**$24,000**|
-|3| 1 year Maintenance | 260 | $39,000| 
-||**Totals**|**620**|**$93,000**|
+|        |  |    |  Estimates |
+|--------| -------- |----|--- |
+| **MS** | **Deliverable**     | **Hours**| **Budget** |
+| 1      | Dynamic Type Loader| 200 | $30,000     |
+|        |**Subtotal Milestone 1**| **200**| **$30,000**|
+| 2      | Generic type registry Encoder/Decoder | 160 | $24,000| 
+|        | **Subtotal Milestone 2** |**160**|**$24,000**|
+| 3      | 1 year Maintenance | 260 | $39,000| 
+|        | **Totals** |**620**|**$93,000**|
 
 
 ## Future Plans
 
-The Centrifuge Protocol is an active user of the GSRPC library and **k/f** will always want to maintain it in a timely manner. 
+The Centrifuge Protocol is an active user of the GSRPC library and **k/f** is an active member maintaining it. 
 
