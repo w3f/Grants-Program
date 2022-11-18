@@ -178,41 +178,49 @@ V2 will be implemented as part of this grant
 ## Development Roadmap :nut_and_bolt:
 
 ### Milestone 1 - Dynamic Type Loader from metadata
-- Understanding metadata structure and parsing metadata into registry - 40h
-- How to implement with generics & reflection - 80h
-- Actual implementation + testing - 80h
 
-*Estimated hours: 200*
-*Estimated budget: $150/h x 200h = $30,000*
+- **Estimated duration:** 5 weeks (200 hours)
+- **FTE:**  1
+- **Costs:** 30,000 USD
+
+|  Number | Deliverable                                | Specification                                                                                                                                                   |
+|--------:|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                                    | Apache 2.0                                                                                                                                                      |
+| **0b.** | Documentation                              | We will provide both **inline documentation** of the code and a basic **tutorial** on how to load any metadata into its own registry of chain types.            |
+| **0c.** | Testing and Testing Guide                  | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker                                     | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                   |
+|  **1.** | Metadata parsing logic into internal types | List of functions, types and structs to support parsing and internally representing any target chain Metadata                                                   |
 
 ### Milestone 2 - New generic type registry encoder/decoder
+
+- **Estimated duration:** 4 weeks (160 hours)
+- **FTE:**  1
+- **Costs:** 24,000 USD
+
+| Number | Deliverable | Specification                                                                                                                                                         |
+| -----: | ----------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License | Apache 2.0                                                                                                                                                            |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** on how to parse any substrate event and type using the new version of the library. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.       |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                         |
+|  **1.** | In-Memory Registry        | Target chain types are loaded and indexed properly                                                                                                                    |
+
+**Further breakdown:**
 - Use the registry for parsing simple and complex structs - 80h
 - Adapt current event & storage processing to new model - 60h
 - Adapt current Types Test to decode events from the latest X blocks of popular chains - 20h
 
-*Estimated hours: 160*
-*Estimated budget: $150/h x 160h = $24,000*
-
-### Maintenance
-After this work is done, maintenance should be reduced to 5 hours a week for one engineer.
-We believe that one year of maintenance is enough for now.
-
-*Estimated hours: 52 weeks / year * 5 hours / week = 260 hours*
-*Estimated budget: $150/h x 260h = $39,000*
-
 ### Budget Summary
 This table provides a cost breakdown based on the milestones and deliverables above.
 
-|        |  |    |  Estimates |
-|--------| -------- |----|--- |
-| **MS** | **Deliverable**     | **Hours**| **Budget** |
+|        |  |    | Estimates   |
+|--------| -------- |----|-------------|
+| **MS** | **Deliverable**     | **Hours**| **Budget**  |
 | 1      | Dynamic Type Loader| 200 | $30,000     |
-|        |**Subtotal Milestone 1**| **200**| **$30,000**|
-| 2      | Generic type registry Encoder/Decoder | 160 | $24,000| 
-|        | **Subtotal Milestone 2** |**160**|**$24,000**|
-| 3      | 1 year Maintenance | 260 | $39,000| 
-|        | **Totals** |**620**|**$93,000**|
-
+|        |**Subtotal Milestone 1**| **200**| **$30,000** |
+| 2      | Generic type registry Encoder/Decoder | 160 | $24,000     | 
+|        | **Subtotal Milestone 2** |**160**| **$24,000** | 
+|        | **Totals** |**620**| **$54,000** |
 
 ## Future Plans
 
