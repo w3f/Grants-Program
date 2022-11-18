@@ -5,6 +5,7 @@
 - **Team Name:** BQP
 - **Payment Address:** 0x063c75324504D1595a972462A30A230d703f655e (ETH)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/904#issuecomment-1297382772)
 
 
 ## Project Overview :page_facing_up:
