@@ -573,3 +573,4 @@
 | [Wow Labz](http://www.wowlabz.com) | Dot Marketplace Phase 3 | [GitHub](https://github.com/orgs/WowLabz) | ☐ | ☐ | ☐ |
 | [10Clouds Sp. z o.o.](https://10clouds.com/) | Crowdloan Front End Template | [GitHub](https://github.com/10clouds) | ☐ | ☐ | ☐ |
 | [DodoRare, Inc.](https://dodorare.com/) | Faterium | [GitHub](https://github.com/faterium) | ☐ | ☐ | ☐ |
+| [The Bacon Beacon](https://github.com/random-bacon) | Pallet Drand Client  | [GitHub](https://github.com/random-bacon) | ☐ | ☐ | ☐ |
