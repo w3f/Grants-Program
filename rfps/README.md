@@ -27,7 +27,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [anti-collusion_infrastructure.md](./open/anti-collusion_infrastructure.md) | :green_circle: | 29.11.2021 |   
 | [appi.md](./implemented/appi.md) | :red_circle: | 20.07.2021 |   
 | [candle-auction.md](./implemented/candle-auction.md) | :red_circle: | 02.02.2022 |  
-| [crowdloan_front_end_template.md](./open/crowdloan_front_end_template.md) | :green_circle: | 09.08.2022 |  
+| [crowdloan_front_end_template.md](./open/crowdloan_front_end_template.md) | :yellow_circle: | 18.11.2022 |  
 | [epassport-zk-validation.md](./open/epassport-zk-validation.md) | :green_circle: | 29.11.2021 | 
 | [formal_guarantees_for_grandpa.md](./open/formal_guarantees_for_grandpa.md) | :green_circle: | 07.10.2022 | 
 | [identity-directory.md](./under_development/identity-directory.md) | :yellow_circle: | 30.05.2022 | 
