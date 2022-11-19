@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Verida
 
-- **Project Name:** Verida
 - **Team Name:** Verida PTE LTD
 - **Payment Address:** 0x1596525C44f68b45CDd53db49b03A390e2687331 (USDC)
 - **Level:** 2
@@ -12,6 +11,7 @@ Verida will bring single-sign on, decentralized identities, messaging and privat
 This is Verida’s first proposal to the W3F Grants program.
 
 ### Overview
+
 The Polkadot ecosystem enables a variety of application specific blockchains to provide decentralized computation capabilities. While this is enormously beneficial for building the next generation of Web3 applications, there are additional technical capabilities required to build applications capable of replacing existing Web2 incumbents.
 
 The Verida network provides this missing Web3 infrastructure for developers and end users.
@@ -19,14 +19,16 @@ The Verida network provides this missing Web3 infrastructure for developers and 
 Please refer to the Development Status section for links to developer documentation, demos, interactive tutorials and reference implementations which showcase the technology and core components.
 
 #### Developers
+
 Here is an overview of the additional decentralized capabilities that will be enabled for application developers in the Polkadot ecosystem.
 
-<img width="495" alt="image" src="https://user-images.githubusercontent.com/92969583/160052399-1de25ad1-9ffe-4a4b-88d7-7c9723d731a7.png">
+<img width="495" alt="image" src="https://user-images.githubusercontent.com/92969583/160052399-1de25ad1-9ffe-4a4b-88d7-7c9723d731a7.png" />
 
 
 Verida provides a developer SDK to access the Verida decentralized personal data network. The Typescript SDK works across web, server and mobile platforms. Learn more via the Verida Developers Portal.
 
 The SDK enables developers to easily access:
+
 1. Identities - Decentralized identities on the Verida network that enable service discovery, messaging, encryption and signature schemes
 2. Authentication - Decentralized QR code based single sign-on for any application
 3. Messaging - Decentralized peer to peer messaging protocol for requesting transactions, sharing private data and much more
@@ -35,23 +37,25 @@ The SDK enables developers to easily access:
 This project will provide a turnkey SDK for developers to use the Verida SDKs and the PolkadotJS SDK to build powerful, feature rich applications on Polkadot.
 
 #### End users
+
 Verida provides a mobile wallet application (Verida Vault) that combines a traditional crypto wallet with the additional decentralized capabilities of the Verida network (identity, single sign-on, messaging, private data etc.).
 
 This provides an entry point for end users to easily access these new technologies with Polkadot applications in a simple, easy to use way.
 
 Example Single Sign-On requests:
 
-<img width="580" alt="image" src="https://user-images.githubusercontent.com/92969583/160052493-41df2558-eb5f-4dcc-bfb5-869784807c68.png">
+<img width="580" alt="image" src="https://user-images.githubusercontent.com/92969583/160052493-41df2558-eb5f-4dcc-bfb5-869784807c68.png" />
 
 
 Example crypto wallet screens for Polkadot projects:
 
-<img width="566" alt="image" src="https://user-images.githubusercontent.com/92969583/160052512-9ed92a8c-1626-45a1-857d-7c638ca753ba.png">
+<img width="566" alt="image" src="https://user-images.githubusercontent.com/92969583/160052512-9ed92a8c-1626-45a1-857d-7c638ca753ba.png" />
 
-      
+
 This project will initially add support for the DOT token in the Verida Vault, with other application specific chains and tokens to be supported as the project progresses.
 
 #### Increase the use cases and industries accessible by Polkadot applications
+
 Connecting Verida’s decentralized Web3 infrastructure with Polkadot’s application specific chains will unlock a range of new use cases that aren’t possible with blockchain technology alone.
 
 One important use case is KYC credentials. The Verida network allows a user to complete a KYC process with third party credential issuers, store that credential securely and then present to decentralized applications where required.
@@ -69,11 +73,13 @@ This project will connect the Verida decentralized infrastructure to any applica
 There are several key pieces of development work to support this integration across the Verida Vault and Verida developer SDKs.
 
 #### Verida Vault
+
 The Verida Vault will be updated to natively support the Polkadot relay chain and DOT token. This will make it easy for end users to access both Polkadot and Verida network capabilities from one application.
 
 As part of this integration, and as a valuable early use case, this project will enable any network user or application to easily request DOT from another user on the network via the Verida messaging service.
 
 #### PolkadotJs + Verida SDK integration
+
 The PolkadotJs SDK will be integrated with the Verida SDK to provide a powerful suite of tools for application developers to access a full range of Web3 capabilities.
 
 This will enable Polkadot developers to leverage Verida decentralized identities, single sign-on, personal off-chain encrypted databases and messaging alongside the capabilities of their own application specific chains.
@@ -83,11 +89,13 @@ More specifically, this integration will allow an end user to sign into a Polkad
 Initially the ability to sign transactions will be enabled via the Verida messaging service. WalletConnect 2.0 is currently adding support for non-EVM chains such as Polkadot. Once WalletConnect 2.0 is adopted, an option will be available for developers to auto-enable a WalletConnect 2.0 connection as part of the sign in process.
 
 #### Personal Data, Credentials & Messaging
+
 Once complete, the PolkdotJs and Verida SDK integration will enable Polkadot applications to request verifiable credentials from end users (e.g. KYC), store encrypted personal data on behalf of users and send them message notifications (e.g. margin call on a DEX).
 
 Documentation, tutorials and other educational materials will be developed specifically for Polkadot developers looking to integrate these capabilities into their applications.
 
 #### Multiple Parachains
+
 The Polkadot ecosystem consists of many parachains. While this offers great flexibility, it also introduces challenges to easily add support for those parachains in different wallet applications.
 
 Leveraging the Verida network messaging service, a new type of message (“Add Polkadot Parachain”) will be created. This will allow any Polkadot application to send a secure message to a user on the Verida network inviting them to add their parachain into the wallet.
@@ -140,16 +148,17 @@ Once complete, this integration opens up the possibilities for future capabiliti
 Chris is an Australian based technology entrepreneur who has spent more than 20 years devoted to developing innovative software solutions. He’s led the development of Verida, a decentralized, self-sovereign data network. Chris previously co-founded Community Data Solutions, providing secure CRM solutions for not-for-profit organizations and government, growing the company to 150 enterprise customers across Australia.
 
 **Nick Lothian** (Head of Product, [@nick-verida](https://github.com/nick-verida))
-Nick is an experienced software professional with over 20 years of experience in a wide variety of roles. Prior to joining Verida he started and successfully exited an Artificial Intelligence company. He has significant experience in standards (eg W3C ActivityStream, JSR168) and open source (Apache Foundation). 
+Nick is an experienced software professional with over 20 years of experience in a wide variety of roles. Prior to joining Verida he started and successfully exited an Artificial Intelligence company. He has significant experience in standards (eg W3C ActivityStream, JSR168) and open source (Apache Foundation).
 
 **Verida Engineering Team**
-The Verida engineering team consists of 6+ software engineers with expertise in Web3 development, Solidity smart contracts, Mobile Development and DevOps. 
+The Verida engineering team consists of 6+ software engineers with expertise in Web3 development, Solidity smart contracts, Mobile Development and DevOps.
 
 ### Team Code Repos
 
 A collection of Verida repos can be found here https://github.com/verida
 
 Repos relevant to this grant proposal include:
+
 - https://github.com/verida/verida-js
 - https://github.com/verida/storage-node
 - https://github.com/verida/vault-auth-server
@@ -184,6 +193,7 @@ We have made significant progress on the Verida roadmap, including releasing the
 The focus of this grant proposal is to build and enhance existing capabilities and make them developer-ready for builders in the Polkadot ecosystem.
 
 ### Verida Self-Funded Contribution
+
 As part of this proposal, Verida will self-fund the software development to provide DOT support in the Verida Vault, and support for requesting a DOT payment via Verida decentralized messaging. This work will provide the necessary foundation to enable self-sovereign identity claims, verifiable credentials, encrypted personal data storage, single sign-on, and more for Polkadot as outlined in future milestones.
 Verida Self-Funded Contribution
 
@@ -211,6 +221,7 @@ Verida Self-Funded Contribution
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
+
 - **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  1.7 FTE
 - **Total Costs:** 50,000 USD
@@ -222,7 +233,7 @@ See below for a summary of the software licencing for deliverables on the roadma
 | verida-js | The core Verida protocol library | ISC (MIT equivalent) | https://github.com/verida/verida-js |
 | Verida Account Explorer | A web front end showing details of each DID | ISC  (MIT equivalent) | https://github.com/verida/account-explorer/ |
 | Wallet-Utils | Integration library between the Verida Vault and blockchains | ISC (MIT equivalent) | https://github.com/verida/wallet-utils |
-| Auth Server | Decentralized server that faciliates single sign-on connections | ISC (MIT equivalent) | https://github.com/verida/vault-auth-server 
+| Auth Server | Decentralized server that faciliates single sign-on connections | ISC (MIT equivalent) | https://github.com/verida/vault-auth-server
 
 ### Milestone 1 - Single Sign-On for Apps in Polkadot Ecosystem
 
@@ -231,12 +242,13 @@ See below for a summary of the software licencing for deliverables on the roadma
 - **Costs:** 50,000 USD
 
 We are seeking a level 2 grant for the following deliverables:
+
 1. Single Sign-On (SSO) for DOT applications
 2. Implement generic transaction support for Polkadot
 3. Support requesting a Verifiable Credential from a Polkadot dApp
 4. Support storing encrypted personal data within a Polkadot dApp
 
-Single sign-on will provide users with a seamless experience for signing in across Polkadot dApps. Powered by Verida’s decentralized identity framework, these capabilities will allow users to maintain self-sovereign identity, without sacrificing on the user experience. 
+Single sign-on will provide users with a seamless experience for signing in across Polkadot dApps. Powered by Verida’s decentralized identity framework, these capabilities will allow users to maintain self-sovereign identity, without sacrificing on the user experience.
 
 We will provide the capabilities for developers to request verifiable credentials and build Polkadot dApps with encrypted data storage for private and sensitive data. This enables Polkadot developers to build user-oriented, privacy-preserving, feature rich dApps across industrial verticals including DeFi and metaverse.
 
@@ -270,6 +282,7 @@ We will provide the capabilities for developers to request verifiable credential
 We will produce articles, tutorials and other content to promote the work completed in this grant proposal through our community channels.
 
 ### Off-chain Data Bridge
+
 Following the completion of this grant proposal, future capabilities on the Verida roadmap which could bring value to the Polkadot ecosystem include bridging off-chain personal data to on-chain decentralized applications.
 
 The Verida network stores personal data for end users. Every piece of data is signed by the originator of the data. For a patient record, a hospital visit may be signed by the doctor. For an insurance policy claim, a police incident may be signed by a police officer.
@@ -277,16 +290,18 @@ The Verida network stores personal data for end users. Every piece of data is si
 Verida has developed a way to securely use this off-chain signed data as an input to smart contracts in a gas efficient manner. This capability unlocks a huge range of new use cases for smart contracts that can be leveraged by Polkadot applications.
 
 ### Expanding the Data Ecosystem
+
 We are also developing an API Connector framework, trust framework and data schemas to enhance trust and enable growth in the Verida network. Once the Polkadot integration is complete, these capabilities can be unlocked for the broader Polkadot ecosystem.
 
 ### Supporting additional Polkadot Parachains
+
 Building on the foundational work completed as part of this grant proposal, Verida will be able to build support for additional parachains in the Verida Vault based on Chain Agnostic Improvement Proposal (CAIP) standards. Further examples and tutorials will be developed to support and enable developers.
 
 More details on our future plans can be found in the [Verida Whitepaper](https://www.verida.io/whitepaper).
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** 
+**How did you hear about the Grants Program?**
 
 Verida has had numerous conversations with Rohan Joseph and Surag Sheth from Parity Labs about Verida support for the Polkadot ecosystem.
 

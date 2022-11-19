@@ -1,11 +1,10 @@
-# W3F Open Grant Proposal
+# UpLink
 
-* **Project Name:** UpLink
 * **Team Name:** HypeLabs Inc.
 * **Payment Address:** 3Fwmy2QHw1Xp7S956PMG9NKq1yngzRqGqf (BTC)
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/424#issuecomment-1006435267)
 
-## Project Overview :page_facing_up:
+## Project Overview :page_facing_up
 
 ### Overview
 
@@ -32,9 +31,9 @@ HypeLabs proposes a solution in which two Android devices connect locally over B
 
 * An Android app that is capable of assuming two roles:
 
-    * A Requester is the device that is not connected to the Internet and has intentions of making API requests to the Substrate Network;
+  * A Requester is the device that is not connected to the Internet and has intentions of making API requests to the Substrate Network;
 
-    * A Proxy is a second device that is connected to the Internet, and connects with the Requester in order to share connectivity;
+  * A Proxy is a second device that is connected to the Internet, and connects with the Requester in order to share connectivity;
 
 * The Relay Server is a network endpoint responsible for interpreting and propagating requests made to the Substrate network;
 
@@ -43,6 +42,7 @@ HypeLabs proposes a solution in which two Android devices connect locally over B
 The connection between the Requester and the Proxy is maintained automatically, without the need for any form of user intervention. This connection is secured, in the sense that the Proxy is not capable of eavesdropping, interference, or any other types of security hazards. This is true because the communication link between the Requester and the Backend is fully encrypted, meaning that the Proxy is not capable of tampering with the information.
 
 #### Communication Protocol
+
 The Requester and the Relay Server communicate over a custom protocol that is mediated by the Proxy. The protocol will closely resemble Substrate’s API one-to-one, meaning that it consists of a port of Substrate’s API to a binary network protocol that can be used in a peer-to-peer communication paradigm. This will enable devices to communicate directly with each other in a similar way that they communicate with Substrate, enabling all sorts of integrations to happen.
 
 This protocol is to be designed and implemented within the context of this grant, and thus constitutes a deliverable. It is known, however, that the protocol uses a binary format for the sake of saving network bandwidth, especially when communicating over Bluetooth Low Energy, whose packet sizes are considerably small. It will also be implemented in Java, for the sake of reusability between the Android app and the Relay Server, given that the protocol must be implemented in both. For that reason, this deliverable will be in the form of a library, and can be added as a dependency to any Java project.
@@ -118,9 +118,9 @@ UpLink is targeted at the following audiences:
 
 Other similar projects can be identified, namely:
 
-* https://www.helium.com/
-* https://gotenna.com/
-* https://nodle.io/
+* <https://www.helium.com/>
+* <https://gotenna.com/>
+* <https://nodle.io/>
 
 UpLink can be distinguished from those projects because:
 
@@ -130,7 +130,7 @@ UpLink can be distinguished from those projects because:
 
 * All local network level connections,  encryption, and protocol management, internet sharing features are autonomous, which do not require any user intervention—making it easier to use and adopt the technology.
 
-## Team :busts_in_silhouette:
+## Team :busts_in_silhouette
 
 ### Team members
 
@@ -144,7 +144,7 @@ UpLink can be distinguished from those projects because:
 
 * **Contact Name:** Carlos Lei Santos
 * **Contact Email:** cl@hypelabs.io
-* **Website:** https://hypelabs.io
+* **Website:** <https://hypelabs.io>
 
 ### Legal Structure
 
@@ -165,12 +165,12 @@ UpLink can be distinguished from those projects because:
 
 ### Team LinkedIn Profiles
 
-* Carlos Santos (https://www.linkedin.com/in/carlosleisantos/)
-* André Francisco (https://www.linkedin.com/in/andr%C3%A9-francisco-6662b696/)
-* Damaris Valero (https://www.linkedin.com/in/damaris-valero-23711619/)
-* Aldrin D'souza (https://www.linkedin.com/in/aldrin-dsouza/)
+* Carlos Santos (<https://www.linkedin.com/in/carlosleisantos/>)
+* André Francisco (<https://www.linkedin.com/in/andr%C3%A9-francisco-6662b696/>)
+* Damaris Valero (<https://www.linkedin.com/in/damaris-valero-23711619/>)
+* Aldrin D'souza (<https://www.linkedin.com/in/aldrin-dsouza/>)
 
-## Development Status :open_book:
+## Development Status :open_book
 
 |         Module         |              Status              |
 |:----------------------:|:--------------------------------:|
@@ -179,14 +179,13 @@ UpLink can be distinguished from those projects because:
 | Relay Server           | Implementation needed            |
 | Android App            | Templates exist                  |
 
-
 Some of the templates for the Android App can be found on HypeLabs' [GitHub page](https://github.com/Hype-Labs).
 
 The Communication Protocol is not yet designed, since one of the key requirements of it is that it matches closely with the Substrate API. This is an exercise that will be performed given the grant, creating as output the design and implementation for a peer-to-peer protocol that relates one-to-one with the Substrate API. For this initial implementation, only a subset of Substrate’s functions should be implemented, however.
 
 The Bluetooth Low Energy (BLE) Drivers already exist and are used by HypeLabs extensively in production environments. These drivers are a component of the Hype SDK (HypeLabs’ main product) and need to be ported as an isolated binary dependency, since the Hype SDK will not be used for this project.
 
-## Development Roadmap :nut_and_bolt:
+## Development Roadmap :nut_and_bolt
 
 |       Deliverable      |                                       Description                                       |
 |:----------------------:|:---------------------------------------------------------------------------------------:|
@@ -290,6 +289,6 @@ This submission proposes the implementation of a binary peer-to-peer communicati
 * Launch and promote Testnet competition to test token economics;
 * Partnership with OEMs and app partners.
 
-## Additional Information :heavy_plus_sign:
+## Additional Information :heavy_plus_sign
 
 **How did you hear about the Grants Program?** Web3 Foundation Website and personal recommendation.

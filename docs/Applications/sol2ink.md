@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Sol2Ink
 
-- **Project Name:** Sol2Ink
 - **Team Name:** [SuperColony](https://github.com/Supercolony-net)
 - **Payment Address:** ERC 20 ADDRESS (USDT):
 0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942 

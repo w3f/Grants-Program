@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Privacy enhancement for Polkadot-js extension
 
-- **Project Name:** Privacy enhancement for Polkadot-js extension
 - **Team Name:** ChainSafe
 - **Payment Address:** 0x85D81Ab61Fe16CDcaeF2Ca556ED4577A51b9b07C (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1

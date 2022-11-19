@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Vanguard
 
-- **Project Name:** Vanguard
 - **Team Name:** Veridise
 - **Payment Address:** Ethereum: 0x0f8a5076a56b7ECD761562551FAd11DF631447B2 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 

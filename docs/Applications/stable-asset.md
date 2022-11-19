@@ -1,10 +1,10 @@
-# W3F Open Grant Proposal
+# Stable Asset
 
 * **Project Name:** Stable Asset
 * **Team Name:** NUTS Finance
 * **Payment Address:** 0x679824d755B054a2a50358008472a6F400740319
 
-## Project Overview :page_facing_up:
+## Project Overview :page_facing_up
 
 ### Overview
 
@@ -62,32 +62,38 @@ Similar to Equilibrium, [Sunrise DEX](https://github.com/w3f/Open-Grants-Program
 
 Laminar is an over-collateralized synthetic asset protocol that uses various underlying assets to generate a value pegged assets. StableAsset is highly optimized for asset synthesis with a basket of assets with the same peg, and it can achieve a collateral ratio closed to 100%.
 
-## Team :busts_in_silhouette:
+## Team :busts_in_silhouette
 
 ### Team members
+
 * Daniel Tang, Co-founder
 * Terry Lam, Co-founder
 
 ### Contact
+
 * **Contact Name:** Terry Lam
 * **Contact Email:** terry@nuts.finance
 * **Website:** [https://acoconut.fi/](https://acoconut.fi/)
 
 ### Legal Structure
+
 * **Registered Address:** PO Box 309, Ugland House, Grand Cayman, KY1-1104, Cayman Islands
 * **Registered Legal Entity:** ACoconut
 
 ### Team's experience
+
 NUTS Finance is a blockchain development DAO. Our team is composed of experienced developers, financiers and serial entrepreneurs. We build open source, secure and composable technology solutions to empower developers and financial services providers to launch decentralized financial applications on the blockchain.
 
 ### Team Code Repos
-* https://github.com/nutsfinance
+
+* <https://github.com/nutsfinance>
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/in/joeztang
-* https://www.linkedin.com/in/terry-lam-80a71927
 
-## Development Roadmap :nut_and_bolt:
+* <https://www.linkedin.com/in/joeztang>
+* <https://www.linkedin.com/in/terry-lam-80a71927>
+
+## Development Roadmap :nut_and_bolt
 
 ### **Overview**
 
@@ -105,9 +111,9 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | Provide documentation on components, working algorithms, and deployment processes |
-| 2 | Substrate module: Stable Swap Substrate module | This module will implement [core Stable Swap algorithm](https://docs.acoconut.fi/asset/acbtc/algorithm) to maintain balance of the basket, e.g.<br>computeD<br>computeDy<br>computeSwapAmount<br>swap.<br> Part of the algorithm is implemented in Solidity in acBTC's [ACoconutSwap](https://github.com/nutsfinance/acBTC/blob/master/contracts/acoconut/ACoconutSwap.sol) contract.  |
+| 2 | Substrate module: Stable Swap Substrate module | This module will implement [core Stable Swap algorithm](https://docs.acoconut.fi/asset/acbtc/algorithm) to maintain balance of the basket, e.g.<br />computeD<br />computeDy<br />computeSwapAmount<br />swap.<br /> Part of the algorithm is implemented in Solidity in acBTC's [ACoconutSwap](https://github.com/nutsfinance/acBTC/blob/master/contracts/acoconut/ACoconutSwap.sol) contract.  |
 | 3 | Testing | Comprehensive tests that cover Stable Swap Substrate module |  
-| 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |   
+| 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |
 
 ### **Milestone 2 — Implement Stable Asset Module**
 
@@ -119,7 +125,7 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 | -----: | ----------- | ------------- |
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | Provide documentation on components, working algorithms, and deployment processes |
-| 2 | Substrate module: Stable Asset Substrate module | This module will contain core functionalities for Stable Asset, which includes both how Stable Asset is minted/redeemed, e.g.  <br>getMintAmount<br>mint<br>getRedeemProportionAmount<br>redeemProportion<br>getRedeemSingleAmount<br>redeemSingle<br>getRedeemMultiAmount<br>redeemMulti,<br> and how the basket assets are managed. The first part is partly implemented in Solidity in acBTC's [ACoconutSwap](https://github.com/nutsfinance/acBTC/blob/master/contracts/acoconut/ACoconutSwap.sol) contract. |
+| 2 | Substrate module: Stable Asset Substrate module | This module will contain core functionalities for Stable Asset, which includes both how Stable Asset is minted/redeemed, e.g.  <br />getMintAmount<br />mint<br />getRedeemProportionAmount<br />redeemProportion<br />getRedeemSingleAmount<br />redeemSingle<br />getRedeemMultiAmount<br />redeemMulti,<br /> and how the basket assets are managed. The first part is partly implemented in Solidity in acBTC's [ACoconutSwap](https://github.com/nutsfinance/acBTC/blob/master/contracts/acoconut/ACoconutSwap.sol) contract. |
 | 3 | Testing | Comprehensive tests that cover the Stable Asset Substrate modules |  
 | 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |  
 
@@ -137,15 +143,13 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 | 3 | Testing | Comprehensive tests that cover yield asset and amplification parameter change. |  
 | 4 | Docker | Provide a docker image with a Substrate chain that demonstrates this project |  
 
-
 ## Future Plans
 
 We are going to launch token economics and governance to support the system.
 
 We are also going to launch multiple Stable Assets on Polkadot and reach DeFi applications for community adoption.
 
-
-## Additional Information :heavy_plus_sign:
+## Additional Information :heavy_plus_sign
 
 We've successfully launched our first StableAsset, [acBTC](https://app.acbtc.fi/), on Ethereum. It receives positive feedback from the community and reaches peak total supply of 577 acBTC. The source code for acBTC can be found [here](https://github.com/nutsfinance/acBTC).
 
