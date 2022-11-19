@@ -8,6 +8,7 @@
 - **Team Name:** Setheum Labs
 - **Payment Address:** 3NaU6UHe9MQyb5d2mFS49DJqaWMsuw7NKd (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/823#issuecomment-1297355678)
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
