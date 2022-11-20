@@ -3,7 +3,12 @@ id: apply
 sidebar_position: 1
 ---
 
-# Quickstart
+# Apply
+
+If you are certain you want to apply for a W3F grant, head straight to our [application process documentation](Process/index.md). Otherwise, check out the flowchart below for a broad overview of which funding source your application might fit best.
+
+
+## Funding Opportunities Overview
 
 
 ```mermaid
