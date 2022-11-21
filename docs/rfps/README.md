@@ -12,9 +12,9 @@ title: Requests for Proposals
 
 ## :grey_question: What is an RFP?
 
-An RFP (Request for Proposals) is a declaration of interest for others to submit a grant application regarding a specific project. They usually revolve around issues that the author (often someone from our team, but [anyone can suggest one](/README.md#mailbox_with_mail-suggest-a-project)) deems useful and missing or unsolved in our ecosystem.
+An RFP (Request for Proposals) is a declaration of interest for others to submit a grant application regarding a specific project. They usually revolve around issues that the author (often someone from our team, but [anyone can suggest one](../suggesting_a_project.md)) deems useful and missing or unsolved in our ecosystem.
 
-If you find an open RFP here that you think you can address, feel free to [submit a grant application](../README.md#1-application). There is a [section in our application template](../applications/application-template.md#project-overview-page_facing_up) where you can reference the RFP you are addressing.
+If you find an open RFP here that you think you can address, feel free to [submit a grant application](../apply.md). There is a [section in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md#project-overview-page_facing_up) where you can reference the RFP you are addressing.
 
 
 ## :scroll: List of RFPs
@@ -23,7 +23,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 - **:green_circle: Open:** We are looking for (additional) teams to implement this.
 - **:yellow_circle: Under Development:** One or more teams are working on this. We might be interested in additional implementations, but it’s better to double check this with the grants team.  
-- **:red_circle: Implemented:** This RFP is implemented. However, if it’s not maintained, we would be interested in signing a [maintenance grant](https://github.com/w3f/Grants-Program#hammer_and_wrench-maintenance-grants).  
+- **:red_circle: Implemented:** This RFP is implemented. However, if it’s not maintained, we would be interested in signing a [maintenance grant](../maintenance.md).  
 
 | RFP | Status | Last Updated |
 | :-- | :----: | :----------: |
@@ -58,4 +58,4 @@ If you find an open RFP here that you think you can address, feel free to [submi
 
 ## :mailbox_with_mail: Suggest an RFP
 
-If you think that we should support the development of certain tools or projects (related to **Polkadot, Kusama or Substrate**) that aren't in the Polkadot/Kusama [tech stack](docs/polkadot_stack.md), please submit a suggestion using the process described in our [Grants program README](../README.md#mailbox_with_mail-suggest-a-project). We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.
+If you think that we should support the development of certain tools or projects (related to **Polkadot, Kusama or Substrate**) that aren't in the Polkadot/Kusama [tech stack](https://wiki.polkadot.network/docs/build-open-source), please submit a suggestion using the process described in our [Grants program README](../suggesting_a_project.md). We are particularly interested in supporting projects that could be leveraged by other builders in our ecosystem.
