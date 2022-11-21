@@ -4,7 +4,7 @@
 
 - **Project Name:** Zero Network
 - **Team Name:** Zero Network
-- **Payment Address:** 0x6fA7BAB5fB3A644af160302de3Badc0958601b44 (DAI)
+- **Payment Address:** 0x9061b0787D28d0fDaD845d670F7505EAE5F3B01B (DAI)
 - **Level:** 2
 
 ## Project Overview :page_facing_up:
@@ -109,14 +109,14 @@ Considering both sides, the zero knowledge scheme is related deeply to calculati
 
 ### Contact
 
-* **Contact Name:** Artree LLC
-* **Contact Email:** info@artree.co.jp
-* **Website:** [Artree](https://artree.co.jp/)
+* **Contact Name:** Invers Inc
+* **Contact Email:** info@invers.tech
+* **Website:** [Invers](https://invers.tech/)
 
 ### Legal Structure
 
-- **Registered Address:** 2F Hamamatutyo Dia Building, 2-2-15 Hamamatsucho, Minato-ku, Tokyo-to 105-0013, Japan
-- **Registered Legal Entity:** Artree LLC.
+- **Registered Address:** 2F・3F Emblem Nishiarai, 3-33-6 Umejima, Adachi City, Tokyo-to 121-0816, Japan
+- **Registered Legal Entity:** Invers Inc.
 
 ### Team's experience
 
@@ -221,7 +221,7 @@ In `Milestone 3`, we are going to implement `wallet` which provides the user to 
 
 | Milestone | Deliverable | Estimated Duration (month) | Deadline |
 | -----: | ----------- | ------------- | ------------- |
-| 1 | Confidential Transfers | 2 | 2022 1/7 |
+| 1 | Confidential Transfers | 2 | 2023 1/7 |
 | 2 | Confidential Smart Contract Executions | 3 | 2023 4/7 |
 | 3 | Confidential Smart Contract Executions | 1.5 | 2023 5/26 |
 
