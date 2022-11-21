@@ -204,7 +204,7 @@
 | [Halva](https://github.com/halva-suite) | A toolchain for improving the experience of developing Decentralized Applications based on Substrate | [GitHub](https://github.com/halva-suite) | ☐ | ☒ | ☒ |
 | [Subscan](subscan.io) | Substrate explorer | [GitHub](https://github.com/itering/subscan) | ☐ | ☒ | ☒ |
 | [t3rn](https://github.com/t3rn/t3rn) | A protocol for blockchain interoperability | [GitHub](https://github.com/t3rn/t3rn) | ☐ | ☒ | ☒ |
-| [Stake Technologies](https://stake.co.jp/) | Hardware ECDSA for Polkadot JS | [GitHub](https://github.com/polkadot-js) | ☐ | ☐ | ☐ |
+| [Stake Technologies](https://stake.co.jp/) | Hardware ECDSA for Polkadot JS | [GitHub](https://github.com/polkadot-js) | ☐ | ☒ | ☒ |
 | [Protofire](https://protofire.io/) | Failover mechanism for validators upgrade | [GitHub](https://github.com/protofire) | ☐ | ☒ | ☐ |
 | [DappForce](http://dappforce.io) | SubSocial Chapter 2 | [GitHub](https://github.com/dappforce/dappforce-subsocial) | ☐ | ☒ | ☒ |
 | [OpenSquare Network](https://www.opensquare.network/) | A blockchain based crowdsourcing and reputation platform | [GitHub](https://github.com/opensquare-network) | ☐ | ☒ | ☒ |
