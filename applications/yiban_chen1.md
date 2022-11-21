@@ -1,10 +1,9 @@
-# W3F Open Grant Proposal
+# Yiban Chen (General chain)
 
-- **Project Name:** Yiban Chen (General chain)
 - **Payment Address (DAI):** 0x6F19fdD08e5f08a26b6240eD3A83ff44fB8E670E
 - **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/402#issuecomment-1110671713)
 
-## Project Overview :page_facing_up:
+## Project Overview :page_facing_up
 
 YibanChen / General chain is working to provide multiple protocols to help enable the transition from web2 to web3.
 
@@ -49,7 +48,7 @@ Interface Stack:
 
 - **Substrate Pallet Details:**
 
-The `site-pallet` and the `note-pallet` will leverage code from the ORML (open runtime modules library: https://github.com/open-web3-stack/open-runtime-module-library) which will provide us with some underlying community managed and reviewed code. The `site-pallet` and `name-service-pallet` will leverage some existing code and ideas from Substrate Names(https://github.com/xaya/substrate-names) and ENS on Substrate(https://github.com/hskang9/substrate-name-service).
+The `site-pallet` and the `note-pallet` will leverage code from the ORML (open runtime modules library: <https://github.com/open-web3-stack/open-runtime-module-library>) which will provide us with some underlying community managed and reviewed code. The `site-pallet` and `name-service-pallet` will leverage some existing code and ideas from Substrate Names(<https://github.com/xaya/substrate-names>) and ENS on Substrate(<https://github.com/hskang9/substrate-name-service>).
 
 Substrate Stack:
 
@@ -115,7 +114,7 @@ We are unaware of any of project that is focusing on critical components, such a
 
 We looked at the system.remark call, while we found system.remark would allow for simple note creation, but would limit the ability to enhance our Note feature. In the future we plan to add two gatekeeper mechanisms on the note receiver side. First, whitelist a set of wallet address senders, and secondly the ability of a wallet address to set an amount of token required to be sent along with the note before the wallet address would accept the note. We also have had some initial feedback that users would be interested in selling the notes, which we believe utilizing ORML-NFT would be the best for this scenario for selling notes in the future.
 
-## Team :busts_in_silhouette:
+## Team :busts_in_silhouette
 
 ### Team members
 
@@ -126,7 +125,7 @@ We looked at the system.remark call, while we found system.remark would allow fo
 
 - **Contact Name:** David Rhodus
 - **Contact Email:** david@yibanchen.com
-- **Website:** https://yibanchen.com
+- **Website:** <https://yibanchen.com>
 
 ### Legal Structure
 
@@ -135,26 +134,26 @@ We looked at the system.remark call, while we found system.remark would allow fo
 
 ### Team's experience
 
-`David Rhodus` has been a software developer and development manager for 20 years. David has created multiple startups, worked at Amazon AWS via startup acquisition, Consensys on Ethereum data market research project(https://www.youtube.com/watch?v=l1xJC8d3g5E), and has been involved full time with blockchain since 2017. David has been studying rust for the past two years and substrate/polkadot development for one year.
+`David Rhodus` has been a software developer and development manager for 20 years. David has created multiple startups, worked at Amazon AWS via startup acquisition, Consensys on Ethereum data market research project(<https://www.youtube.com/watch?v=l1xJC8d3g5E>), and has been involved full time with blockchain since 2017. David has been studying rust for the past two years and substrate/polkadot development for one year.
 
 `Max Rosenburg` is a developer focused on full stack web development and machine learning. Max has a degree in Computer Science from Reed College.
 
 ### Team Code Repos
 
-- https://github.com/YibanChen/
-- https://github.com/davidrhodus
-- https://github.com/maxrosenb
+- <https://github.com/YibanChen/>
+- <https://github.com/davidrhodus>
+- <https://github.com/maxrosenb>
 
 ### Team LinkedIn Profiles
 
-- https://www.linkedin.com/in/davidrhodus/
-- https://www.linkedin.com/in/-max-rosenberg
+- <https://www.linkedin.com/in/davidrhodus/>
+- <https://www.linkedin.com/in/-max-rosenberg>
 
-## Development Status :open_book:
+## Development Status :open_book
 
 Currently, work for the Dapp has started, the team has an initial Substrate node (wss://testnet.yibanchen.com:443).
 
-## Development Roadmap :nut_and_bolt:
+## Development Roadmap :nut_and_bolt
 
 ### Overview
 
@@ -227,6 +226,6 @@ However, Development of the YibanChen won't end after all milestones are met. We
 
 There are lot possibilities where this project YibanChen can go and we are very excited to get started on it and make a difference within the Web3 ecosystem.
 
-## Additional Information :heavy_plus_sign:
+## Additional Information :heavy_plus_sign
 
 Currently we have no funding for the YibanChen system, we feel getting the general web3 use-cases off the ground will kick-start the substrate ecosystem in a big way. We are excited to be part of the Substrate and Polkadot community and we will continue to contribute as much as we can. Thank you for your time and thank you for considering us for the Web3 Open Grant.

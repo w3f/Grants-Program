@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Coinversation Protocol
 
-* **Project:** Coinversation Protocol
 * **Proposer:** [coin-pro](https://github.com/coin-pro)
 * **Payment Address:** 3FX6TD7Qm255foMg7xZStZNAfpLvDai5P8
 * **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/233#issuecomment-886535171)

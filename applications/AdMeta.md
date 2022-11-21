@@ -1,11 +1,10 @@
-# W3F Grant Proposal
+# AdMeta
 
-- **Project Name:** AdMeta
 - **Team Name:** AdMeta
 - **Payment Address:** 0x1D346c4F0732674a1fc69b4bAFBa854F53353C35 (ERC20 USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up:
+## Project Overview :page_facing_up
 
 ### Overview
 
@@ -55,7 +54,7 @@ Advertising is our natural needs in almost all social scenarios, and we meet thi
 
 [Parami](https://parami.io/) builds Web3 ad platforms as well, and their scope is to build the DID and privacy layer by themselves. While we are focusing on the advertising functionality, and the DID service will be provided by Litentry, who is more professional on this field and has already their products. Also, our ad platform is targeting on Metaverse, not Web3.
 
-## Team :busts_in_silhouette:
+## Team :busts_in_silhouette
 
 ### Team members (In order of joining time)
 
@@ -73,7 +72,7 @@ Dr. John Wu - Core Dev of Litentry Parachain Team. The University of Tokyo
 
 - **Contact Name:** Han Zhao
 - **Contact Email:** windzhaohan@gmail.com
-- **Website:** https://admeta.network/
+- **Website:** <https://admeta.network/>
 
 ### Legal Structure
 
@@ -94,30 +93,30 @@ Note: Both [Litentry](https://www.litentry.com/) and [Web3Go](https://github.com
 
 ### Team Code Repos
 
-- https://github.com/litentry/litentry-parachain
-- https://github.com/litentry/litentry-pallets
-- https://github.com/web3go-xyz/web3go
+- <https://github.com/litentry/litentry-parachain>
+- <https://github.com/litentry/litentry-pallets>
+- <https://github.com/web3go-xyz/web3go>
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/h4n0 Han Zhao
-- https://github.com/Shihao66 Shihao Zhao
-- https://github.com/Moehringen Hao Ding
+- <https://github.com/h4n0> Han Zhao
+- <https://github.com/Shihao66> Shihao Zhao
+- <https://github.com/Moehringen> Hao Ding
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/zhaohan6
-- https://www.linkedin.com/in/shihao-zhao-55752685/
-- https://www.linkedin.com/in/hao-ding-msc-pmp-64411193/
+- <https://www.linkedin.com/in/zhaohan6>
+- <https://www.linkedin.com/in/shihao-zhao-55752685/>
+- <https://www.linkedin.com/in/hao-ding-msc-pmp-64411193/>
 
-## Development Status :open_book:
+## Development Status :open_book
 
-- https://github.com/AdMetaNetwork/admeta This is the AdMeta Substrate chain implementation. We already started to build the pallets mentioned in Milestone 1 below.
-- https://github.com/AdMetaNetwork/admeta-webapp This is our web app repo according to Milestone 1. We already had a single page app with polkadot js API integrated now.
-- https://github.com/AdMetaNetwork/admeta-decentraland This is a simple asset built with Decentraland SDK, and currently it's just for a demo purpose.
-- https://admeta.network/ We also have the first version of our website.
+- <https://github.com/AdMetaNetwork/admeta> This is the AdMeta Substrate chain implementation. We already started to build the pallets mentioned in Milestone 1 below.
+- <https://github.com/AdMetaNetwork/admeta-webapp> This is our web app repo according to Milestone 1. We already had a single page app with polkadot js API integrated now.
+- <https://github.com/AdMetaNetwork/admeta-decentraland> This is a simple asset built with Decentraland SDK, and currently it's just for a demo purpose.
+- <https://admeta.network/> We also have the first version of our website.
 
-## Development Roadmap :nut_and_bolt:
+## Development Roadmap :nut_and_bolt
 
 ### Overview
 
@@ -126,7 +125,6 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Total Costs:** 12,000 USD
 
 ### Milestone 1 — Substrate Chain with Impression Ad, Web App
-
 
 - **Estimated duration:** 6 month
 - **FTE:** 2
@@ -150,6 +148,6 @@ The next step is to have sensitive data stored in TEE. Also, we will build more 
 
 In a long run, we will cooperate and adapt our products with more Metaverse platforms, and also we will develop more creative and interactive ad types.
 
-## Additional Information :heavy_plus_sign:
+## Additional Information :heavy_plus_sign
 
 **How did you hear about the Grants Program?** Personal recommendation

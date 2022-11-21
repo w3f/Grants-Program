@@ -1,8 +1,7 @@
-# Open Grant Proposal
+# Deeper Chain
 
--   **Project:** Deeper Chain
--   **Proposer:** [deeper.network](https://deeper.network)
--   **Payment Address:** 1ZgK8ic8gmVSS3jJUwLJiWHaK5rhZVppF
+- **Proposer:** [deeper.network](https://deeper.network)
+- **Payment Address:** 1ZgK8ic8gmVSS3jJUwLJiWHaK5rhZVppF
 
 ## *Note to the grant approvers*
 
@@ -13,22 +12,22 @@
 
 *We request that the starting date for the milestone will be the approval of this amendment. Much appreciated!*
 
-## Project Overview :page_facing_up:
+## Project Overview :page_facing_up
 
 ### Overview
 
 Deeper's vision is to combine network security, network sharing, and blockchain technology to create a safer, freer, and faster decentralized network. Our flagship product is called Deeper Connect. Its security protection, privacy protection, and network acceleration functions can significantly improve users’ Internet access experience. Deeper Network, a decentralized p2p network, is composed of thousands to millions of Deeper Connect devices. We are developing the following decentralized network services on Deeper Network:
 
-1. DPN (Decentralized Private Network)<br>
+1. DPN (Decentralized Private Network)<br />
    DPN is a decentralized P2P bandwidth sharing private network. By leveraging the power of interconnected user devices, each user can access the Internet privately and safely. There is no need to worry about being eavesdropped and censored by the ISP.
 
-2. Decentralized DNS<br>
+2. Decentralized DNS<br />
    DNS is the infrastructure for resolving IP addresses and querying the Internet. The centralized DNS layout makes the Internet extremely fragile, and site IPs may be blocked by centralized organizations at any time. Decentralized DNS services make the Internet more democratic and cannot be monopolized by institutions.
 
-3. Decentralized web<br>
+3. Decentralized web<br />
    Anyone can build their own website and register it in the Deeper Network. In Deeper Network, the IP address of the web server is hidden, which comes with the benefit of anti-censorship and anti-DDoS attacks.
 
-4. Decentralized gateway<br>
+4. Decentralized gateway<br />
    Deeper Connect is a decentralized gateway to web3.0. True decentralization means that no single organization can dominate over the entire network. It also means that a single point of failure will affect the functioning of the entire network. Decentralized gateways, decentralized public chains, and decentralized applications. For example, Ethereum Network remains centralized at the gateway level and is overly dependent on the API interface services provided by Infura for major dApps. Infura itself relies on AWS cloud services provided by Amazon. This means that the Ethereum ecosystem cannot be uncoupled from centralized network structures and is not truly decentralized. This naturally lends itself to the pitfalls of centralized network structures. This is evident as the recent Infura downtime has led to the paralysis of most Ethereum dApps. Deeper, on the other hand, has achieved true decentralization on all levels: decentralized gateways, decentralized public chains, and decentralized applications.
 
 ### Project Details
@@ -57,20 +56,20 @@ From a technical perspective, our Deeper Chain is implemented using Substrate. D
 
 We are developing a hardware product with a cost of only US\$5, and we are confident that this product can bring millions of users to Polkadot.
 
-## Team :busts_in_silhouette:
+## Team :busts_in_silhouette
 
 ### Team members
 
--   Hui Liu
--   Zhiwu Liu
--   Zhuang Jin
--   Yang Liu
--   Fei Yang
+- Hui Liu
+- Zhiwu Liu
+- Zhuang Jin
+- Yang Liu
+- Fei Yang
 
 ### Contact
 
--   **Contact Name:** Fei Yang
--   **Contact Email:** fei.yang@deeper.network
+- **Contact Name:** Fei Yang
+- **Contact Email:** fei.yang@deeper.network
 
 ### Team Website
 
@@ -79,8 +78,8 @@ We are developing a hardware product with a cost of only US\$5, and we are confi
 
 ### Legal Structure
 
--   **Registered Address:** 5200 Great America pkwy, Santa Clara CA USA 95054
--   **Registered Legal Entity:** Deeper Network Inc
+- **Registered Address:** 5200 Great America pkwy, Santa Clara CA USA 95054
+- **Registered Legal Entity:** Deeper Network Inc
 
 ### Team's Experience
 
@@ -103,21 +102,21 @@ Fei has been active in blockchain space since early 2017. He has worked as softw
 
 [deeper-chain](https://github.com/e2chain-dev/deeper-chain)
 
-## Development Roadmap :nut_and_bolt:
+## Development Roadmap :nut_and_bolt
 
 ### Overview
 
--   **Total Estimated Duration:** 1 month
--   **Full-time equivalent (FTE):** 5 FTE.
--   **Total Costs:** 20,000 USD
+- **Total Estimated Duration:** 1 month
+- **Full-time equivalent (FTE):** 5 FTE.
+- **Total Costs:** 20,000 USD
 
 In this application, the deliverables are the micropayment pallet, the client codes and tutorial document. The micropayment pallet contains all the necessary functions for a user to interact with the blockchain including open channel, close channel, claim micropayments etc. The client codes contains two parts: one is for a user to interact with blockchain, the other is for a user to interact with another user. The micropayment design, use cases as well as detailed examples will be given in the totorial document. In the next phases/applications, we will add Proof of Credit and light node discovery pallets as well as their corresponding client codes.
 
 ### M1: Micropayments – 4 weeks
 
--   **Estimated Duration:** 4 weeks
--   **FTE:** 5
--   **Costs:** 20,000 USD
+- **Estimated Duration:** 4 weeks
+- **FTE:** 5
+- **Costs:** 20,000 USD
 
 | Number | Deliverable          | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ------ | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -138,11 +137,11 @@ In this application, the deliverables are the micropayment pallet, the client co
 2. Proof of Credit is a core component in deeper network. We already have built MVP functions for PoC. But there are more work to be done.
 3. Testnet: Build an end to end blockchain system that running deeper devices smoothly.
 
-## Additional Information :heavy_plus_sign:
+## Additional Information :heavy_plus_sign
 
 ### What work has been done so far?
 
-1. Code is open source at https://github.com/deeper-chain/deeper-chain
+1. Code is open source at <https://github.com/deeper-chain/deeper-chain>
 2. MVP is developed for core features: micropayments(master branch), light node(master branch), delegated proof of credit(master branch).
 
 ### Have you applied for other grants so far?

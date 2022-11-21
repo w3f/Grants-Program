@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# TREX - Timed Release Encryption Xing chains
 
-- **Project Name:** TREX - Timed Release Encryption Xing chains
 - **Team Name:** [NexToken Technology](https://github.com/NexTokenTech)
 - **Payment Address:** 0x10286c9d17a1aF1D73E19762A5132d604a076585 (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1

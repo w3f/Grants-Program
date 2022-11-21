@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# `wasm-opt` for Rust
 
-- **Project Name:** `wasm-opt` for Rust
 - **Team Name:** Common Orbit LLC
 - **Payment Address:** (Ethereum DAI) 0x2de31E52E24Df0588C64B27657D4F75e5462adEf
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -90,6 +89,7 @@ We will also deliver the following:
 - Full README and API documentation
 - Basic regression tests for the binary and library
 - CI for the platforms
+  - `aarch64-apple-darwin`
   - `aarch64-unknown-linux-gnu`
   - `i686-pc-windows-msvc`
   - `i686-unknown-linux-gnu`

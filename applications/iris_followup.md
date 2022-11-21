@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Iris
 
-- **Project Name:** Iris
 - **Team Name:** Ideal Labs
 - **Payment Address:** 0xB7E92CCDE85B8Cee89a8bEA2Fd5e5EE417d985Ad (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3

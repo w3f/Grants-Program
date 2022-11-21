@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Turn-key Private Standalone Blockchain Network
 
-* **Project:** Turn-key Private Standalone Blockchain Network
 * **Proposer:** [Cere-Network](https://github.com/Cerebellum-Network)
 * **Payment Address:** 1BbyAGddobdPgNo9c63xsRnwK5hen8pV7F
 

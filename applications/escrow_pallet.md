@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Escrow Pallet
 
-- **Project Name:** Escrow Pallet
 - **Team Name:** TwinP
 - **Payment Address:** 0xd042e53e22e9f941ceba02f4adb9d1b32ef43675
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1

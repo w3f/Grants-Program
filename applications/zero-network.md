@@ -1,13 +1,12 @@
-# W3F Grant Proposal
+# Zero Network
 
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** Zero Network
 - **Team Name:** Zero Network
 - **Payment Address:** 0x6fA7BAB5fB3A644af160302de3Badc0958601b44 (DAI)
 - **Level:** 2
 
-## Project Overview :page_facing_up:
+## Project Overview :page_facing_up
 
 We would like to implement a `parachain` which specializes in privacy.
 
@@ -33,6 +32,7 @@ There are some components consisting this system and We divide the components as
 We describe the detail as following.
 
 #### Primitive
+
 The `primitive` provides crypto libraries necessary for `functionality` as pallet.
 
 1. `Lifted-ElGamal` encryption pallet
@@ -40,12 +40,14 @@ The `primitive` provides crypto libraries necessary for `functionality` as palle
 3. Encrypted balance pallet
 
 #### Functionality
+
 The `functionality` provides the **confidential transfers** and **confidential smart contracts** functions as pallet.
 
 1. `Confidential Transfer` pallet
 2. `Condidential Smart Contract` pallet
 
 #### Module
+
 The `module` provides the developer with tools and necessary libraries managing privacy application.
 
 1. Encrypted `ink!`
@@ -54,6 +56,7 @@ The `module` provides the developer with tools and necessary libraries managing 
 4. Confidential smart contract IDE
 
 #### Client
+
 The `client` provides the transactor client libraries for users.
 
 1. Key generation wallet
@@ -69,6 +72,7 @@ We explain the use case we assume.
 ![diagram1](https://user-images.githubusercontent.com/39494661/163749008-3ad6fa47-9771-419b-98de-7a85cedaa2c7.jpg)
 
 ### Ecosystem Fit
+
 This is the world's first account based and `plonk` built-in `parachain` which supports confidential transactions for both transfers and contract executions only depending on the cryptographic hardness assumptions.
 We can contribute to `Polkadot` network mainly in three ways.
 
@@ -100,7 +104,7 @@ The verifier side, we need to optimize the virtual machine performing the zero k
 
 Considering both sides, the zero knowledge scheme is related deeply to calculation workload and the `zk-SNARKs` is the most efficient one but has a setup scheme. Previously, the `zk-SNARKs` setup parameters depended on circuit so we needed to setup parameters when we deployed some new contracts. It's hard to ensure that there are enough parties for each deploy contracts so almost contract base confidential smart contract project uses the `bulletproof`. However, we use the `plonk` which can generate the parameters without depending on circuit so once we setup the parameters, we can reuse that parameters for every transaction with getting profit of `zk-SNARKs` efficiency.
 
-## Team :busts_in_silhouette:
+## Team :busts_in_silhouette
 
 ### Team members
 
@@ -109,9 +113,9 @@ Considering both sides, the zero knowledge scheme is related deeply to calculati
 
 ### Contact
 
-* **Contact Name:** Artree LLC
-* **Contact Email:** info@artree.co.jp
-* **Website:** [Artree](https://artree.co.jp/)
+- **Contact Name:** Artree LLC
+- **Contact Email:** info@artree.co.jp
+- **Website:** [Artree](https://artree.co.jp/)
 
 ### Legal Structure
 
@@ -135,7 +139,7 @@ Our company is working on the blockchain scaling and information hiding technolo
 
 We are not on LinkedIn.
 
-## Development Status :open_book:
+## Development Status :open_book
 
 The information about this project and what we did are following.
 
@@ -143,19 +147,19 @@ The information about this project and what we did are following.
 - The [plonk pallet](https://github.com/PlasmNetwork/plonk) implementation.
 - The [documentation](https://zero-network.github.io/) describing the details.
 
-## Development Roadmap :nut_and_bolt:
+## Development Roadmap :nut_and_bolt
 
 Through this grant, we are going to develop the blockchain which supports confidential transactions for both transfers and smart contract executions.
 
 ### Overview
 
-- **Total Estimated Duration:** 6.5 months
+- **Total Estimated Duration:** 4.5 months
 - **Full-Time Equivalent (FTE):**  2 FTE
 - **Total Costs:** 45,000 DAI
 
 ### Milestone 1 | Confidential Transfers
 
-- **Estimated duration:** 2 month
+- **Estimated duration:** 1.5 month
 - **FTE:**  2
 - **Costs:** 10,000 DAI
 
@@ -175,7 +179,7 @@ In `Milestone 1`, we are going to implement `confidential transfer` pallet on to
 
 ### Milestone 2 | Confidential Smart Contract Executions
 
-- **Estimated Duration:** 3 month
+- **Estimated Duration:** 2 month
 - **FTE:**  2
 - **Costs:** 25,000 DAI
 
@@ -197,7 +201,7 @@ In `Milestone 2`, we are going to implement `confidential smart contract executi
 
 ### Milestone 3 | Confidential Transaction Wallet
 
-- **Estimated Duration:** 1.5 month
+- **Estimated Duration:** 1 month
 - **FTE:**  2
 - **Costs:** 10,000 DAI
 
@@ -216,15 +220,6 @@ In `Milestone 3`, we are going to implement `wallet` which provides the user to 
 | 4. | Confidential transfer | We are going to implement confidential transfer libraries. |
 | 5. | Confidential smart contract execution | We are going to implement executing smart contract libraries.|
 
-## Timeline
-
-
-| Milestone | Deliverable | Estimated Duration (month) | Deadline |
-| -----: | ----------- | ------------- | ------------- |
-| 1 | Confidential Transfers | 2 | 2022 1/7 |
-| 2 | Confidential Smart Contract Executions | 3 | 2023 4/7 |
-| 3 | Confidential Smart Contract Executions | 1.5 | 2023 5/26 |
-
 ## Future Plans
 
 - Rollup transactions
@@ -233,14 +228,14 @@ In `Milestone 3`, we are going to implement `wallet` which provides the user to 
 - Anonymous transactions
 - Wasm optimization
 
-## Additional Information :heavy_plus_sign:
+## Additional Information :heavy_plus_sign
 
 - How did you hear about the Grants Program?
-    - Announcement by another team
+  - Announcement by another team
 - Work you have already done.
-    - [plonk pallet](https://github.com/PlasmNetwork/plonk)
+  - [plonk pallet](https://github.com/PlasmNetwork/plonk)
 - Wheter there are any other teams who have already contributed (financially) to the project.
-    - No.
+  - No.
 - Previous grants you may have applied for.
-    - [zk-rollup](https://github.com/w3f/Grants-Program/blob/master/applications/zk-rollups.md)
-    - [zk-plonk](https://github.com/w3f/Grants-Program/blob/master/applications/zk-plonk.md)
+  - [zk-rollup](https://github.com/w3f/Grants-Program/blob/master/applications/zk-rollups.md)
+  - [zk-plonk](https://github.com/w3f/Grants-Program/blob/master/applications/zk-plonk.md)

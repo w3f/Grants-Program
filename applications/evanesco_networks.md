@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Evanesco Network
 
-* **Project Name:** Evanesco Network
 * **Team Name:** Evanesco Labs
 * **Payment Address:** 15wQ831BoNnEMEVsfvF4mS5e94QL4RYGTc
 

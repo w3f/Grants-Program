@@ -1,11 +1,11 @@
-# PLOs on POLS
+# Polkastarter
 
-- **Project Name:** Polkastarter
 - **Team Name:** Polkastarter
 - **Payment Address:** 0x69367459A962FDF55a6aF0f9D5aB969548bc2b30
+
 * **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/124#issuecomment-855203619)
 
-## Project Overview :page_facing_up:
+## Project Overview :page_facing_up
 
 ### Overview
 
@@ -69,7 +69,7 @@ principal. Polkastarter is different because we provide the trust that users gai
 with a known, consistent UI, but users use their own wallet and will be able to reclaim their
 DOT/KSM in the future without trusting that Polkastarter will exist.
 
-## Team :busts_in_silhouette:
+## Team :busts_in_silhouette
 
 ### Team members
 
@@ -83,7 +83,7 @@ DOT/KSM in the future without trusting that Polkastarter will exist.
 
 - **Contact Name:** Daniel Stockhaus
 - **Contact Email:** daniel@polkastarter.com
-- **Website:** https://www.polkastarter.com/
+- **Website:** <https://www.polkastarter.com/>
 
 ### Legal Structure
 
@@ -108,22 +108,22 @@ DOT/KSM in the future without trusting that Polkastarter will exist.
 
 ### Team Code Repos
 
-- https://github.com/polkastarter
-- https://gitlab.com/polkastarter (DAPP Source Code. Can grant access when requested.)
-- https://github.com/tiagom87
-- https://github.com/Ruiub3i
-- https://github.com/miguelcma
-- https://github.com/hcaiano
+- <https://github.com/polkastarter>
+- <https://gitlab.com/polkastarter> (DAPP Source Code. Can grant access when requested.)
+- <https://github.com/tiagom87>
+- <https://github.com/Ruiub3i>
+- <https://github.com/miguelcma>
+- <https://github.com/hcaiano>
 
 ### Team LinkedIn Profiles
 
-- https://www.linkedin.com/in/danielstockhaus/
-- https://www.linkedin.com/in/temmartins/
-- https://www.linkedin.com/in/rui-dos-santos-teixeira/
-- https://www.linkedin.com/in/henriquecaiano/
-- https://www.linkedin.com/in/miguelcma/
+- <https://www.linkedin.com/in/danielstockhaus/>
+- <https://www.linkedin.com/in/temmartins/>
+- <https://www.linkedin.com/in/rui-dos-santos-teixeira/>
+- <https://www.linkedin.com/in/henriquecaiano/>
+- <https://www.linkedin.com/in/miguelcma/>
 
-## Development Roadmap :nut_and_bolt:
+## Development Roadmap :nut_and_bolt
 
 ### Overview
 
@@ -167,7 +167,7 @@ users reclaiming their DOT/KSM at the end of a parachain slot lease. We will als
 functionality so that users can connect other wallets, like Parity Signer and Ledger to the
 interface.
 
-## Additional Information :heavy_plus_sign:
+## Additional Information :heavy_plus_sign
 
 - Work done so far: Production fundraising platform on Ethereum and started work with integration to
   Moonbeam.

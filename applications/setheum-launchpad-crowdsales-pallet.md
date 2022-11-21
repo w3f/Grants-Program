@@ -1,17 +1,16 @@
-# W3F Grant Proposal
+# Setheum HighEnd LaunchPad Crowdsales Module
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** Setheum HighEnd LaunchPad Crowdsales Module
 - **Team Name:** Setheum Labs
 - **Payment Address:** 3NaU6UHe9MQyb5d2mFS49DJqaWMsuw7NKd (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up:
+## Project Overview :page_facing_up
 
 ### Overview
 
@@ -29,10 +28,10 @@ The idea is to use the grant program to raise funds for deploying our dedicated 
 
 There are four participants in a LaunchPad Crowdsales Protocol, the Campaign Creator, the Campaign Beneficiary, the Crowd/Contributors, and the Governance Council.
 
-* The Campaign Creator is the person who creates the campaign and the project.
-* The Campaign Beneficiary is the person who receives the funds raised.
-* The Crowd/Contributors are the people who contribute to the campaign.
-* The Governance Council is the people who manage the campaign and the protocol.
+- The Campaign Creator is the person who creates the campaign and the project.
+- The Campaign Beneficiary is the person who receives the funds raised.
+- The Crowd/Contributors are the people who contribute to the campaign.
+- The Governance Council is the people who manage the campaign and the protocol.
 
 **How the protocol Works**
 
@@ -83,7 +82,7 @@ I muat be very clear that we are not intending to implement the Setheum HighEnd 
 - There are other projects similar to Setheum in the substrate/Polkadot/Kusama ecosystem, like Acala that supports DeFi and there is the FRAME simple-crowdfund pallet that is a part of Substrate FRAME providing a simple crowdfunding mechanism, our pallet provide crowdsales mechanisms. But as for the Halal Ethical DeFi governed as Shari'ah Compliant DeFi, I have not come across similar projects in the ecosystem.
 Setheum is different in its core governance principle such that it serves as a Halal Ethical DeFi governed as Shari'ah Compliant DeFi network. And it has plans for embedded on-chain Flashloans running in an on-chain `Flashloans-Virtual-Machine` similar to the EVM (but not turin complete) just for executing isolated flashloan transactions. We also differ in the Stablecoin stability mechanism in Setheum, which is an elastic Algorithmic-Stablecoin-Stability mechanism provided by the SERP (Setheum Elastic Reserve Protocol). We also differ in that we have 2 stablecoins and 4 other tokens which all serves a different purpose in the ecosystem.
 
-## Team :busts_in_silhouette:
+## Team :busts_in_silhouette
 
 ### Team members
 
@@ -93,11 +92,12 @@ Setheum is different in its core governance principle such that it serves as a H
 
 - **Contact Name:** Muhammad-Jibril B.A.
 - **Contact Email:** jbashir52@gmail.com
-- **Website:** https://setheum.xyz
+- **Website:** <https://setheum.xyz>
 
 ### Legal Structure
 
 Not set up yet.
+
 ### Team's experience
 
 I am building the Setheum Network project and all related code works in the organisation. I have a Computer Science degree (currently in my final year of study) and I have been working on Setheum for a few years now. And will be launching this year by God's grace.
@@ -107,21 +107,21 @@ I have previously applied for this grant about 10 months ago (then TERMINATED, t
 
 ### Team Code Repos
 
-- https://github.com/Setheum-Labs
-- https://github.com/Setheum-Labs/Setheum
-- https://github.com/Setheum-Labs/launchpad-crowdsales
+- <https://github.com/Setheum-Labs>
+- <https://github.com/Setheum-Labs/Setheum>
+- <https://github.com/Setheum-Labs/launchpad-crowdsales>
 
-- https://github.com/JBA-Khalifa
+- <https://github.com/JBA-Khalifa>
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/muhammad-jibril
+- <https://www.linkedin.com/in/muhammad-jibril>
 
-## Development Status :open_book:
+## Development Status :open_book
 
 We have started development of this specific protocol in [this repository](https://github.com/Setheum-Labs/launchpad-crowdsales). And posted a Medium article on the design concept of the protocol and its proposed final/production state [here](https://medium.com/setheum-labs/help-highend-launchpad-setheums-ido-crowdfunding-protocol-36c43566c927). We have also created some GitHub [Milestones](https://github.com/Setheum-Labs/launchpad-crowdsales/milestones) and [issues](https://github.com/Setheum-Labs/launchpad-crowdsales/issues) to track the progress of the development.
 
-## Development Roadmap :nut_and_bolt:
+## Development Roadmap :nut_and_bolt
 
 ### Overview
 
@@ -155,7 +155,7 @@ We have started development of this specific protocol in [this repository](https
 - We intend to continue the development of this protocol as highlighted in our whitepaper and in this protocol's development milestones. We intend to support a `launchpool` that lets successful launchpad campaigns access to bootstrapping their token directly into the Setheum DEX (SetSwap) and let LPs provide liquidity to the pools with LP Launchpool incentives and LaunchPad commissions. We are planning on introducing a `soft_goal` and a `hard_goal` for launchpad crowdsales as well as a `MaxProposalsCount` and a `MaxCampaignsCount` that will limit the number of campaigns and proposals that can be running simultaneously in the protocol. And we intend to add a `RejectionReason`/`rejection_reason` field to the `Proposal` structure that will allow the council to specify a reason for rejection of a proposal to more accurately inform the campaign creator on issues with their proposal and an insight on how it may be solved. We also plan to add a `MinContributors` field to the `Campaign` structure that will allow the council to specify the minimum number of contributors required to start the campaign. We also plan to support `pause_campaign()` to let the Council pause an ongoing active campaign and `resume_campaign()` to let the Council resume a paused campaign, to provide robust governance and to prevent abuse of the protocol. And more features like integrating ERC20s and integrating to Setheum's upcoming QMA-Flashloans protocol as described in our whitepaper...
 - The team plans and intends to integrate this protocol into the Setheum DEX (SetSwap) and the Setheum Network. We will also be launching some of the first ERC20s to be listed on the SetSwap in Setheum through this protocol.
 
-## Additional Information :heavy_plus_sign:
+## Additional Information :heavy_plus_sign
 
 **How did you hear about the Grants Program?** personal recommendation.
 

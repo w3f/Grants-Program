@@ -1,10 +1,9 @@
-# W3F Grant Proposal
+# Crossbow (formerly `Creator`)
 
-- **Project Code Name:** Crossbow (formerly `Creator`)
 - **Team Name:** DodoRare, Inc.
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up:
+## Project Overview :page_facing_up
 
 In the previous grant, we built a tool that can automate building rust game projects for Android and iOS and tested it on applications with base elements such as 2D image / 3D model rendering, music, touch events, networking (substrate communication), etc. Also, we made it engine agnostic, and the process itself of creating similar apps pretty straightforward. But there are plenty of things left to do to provide full support of features for more advanced games: like notifications, permissions, in-app purchases, better sounds and music support, Google Play/Apple ID authentication, AdMob, iOS Bitcode, Android Application Bundles, or AAB, etc. Most of these problems are not easy to solve, and many projects facing them are moving to more popular engines because you never know how much time it will take to add IAP or authentication to your project in pure rust. So our intention on this grant is to continue fixing and adding the most crucial components of games so that the whole rust community can use them in any rust project without any problems.
 
@@ -20,13 +19,13 @@ Of course, there are already a bunch of promising game engine projects, but they
 
 ### Maintenance list
 
-- https://github.com/dodorare/crossbow
-- https://github.com/dodorare/android-manifest-rs
-- https://github.com/dodorare/apple-bundle-rs
+- <https://github.com/dodorare/crossbow>
+- <https://github.com/dodorare/android-manifest-rs>
+- <https://github.com/dodorare/apple-bundle-rs>
 
 > ⚠️ *Note that we may move some libraries to separate repositories for more convenient maintenance in the future.*
 
-## Team :busts_in_silhouette:
+## Team :busts_in_silhouette
 
 ### Team members
 
@@ -40,7 +39,7 @@ Of course, there are already a bunch of promising game engine projects, but they
 
 - **Contact Name:** David Knyshenko
 - **Contact Email:** info@dodorare.com
-- **Website:** https://dodorare.com
+- **Website:** <https://dodorare.com>
 
 ### Legal Structure
 
@@ -49,41 +48,42 @@ Of course, there are already a bunch of promising game engine projects, but they
 
 ### Team's experience
 
-* Mobile Game Framework - Our first team Web3Foundation [grant](https://github.com/enfipy/Grants-Program/blob/master/applications/mobile-game-framework.md), mobile building tool. By [our team](https://github.com/dodorare).
+- Mobile Game Framework - Our first team Web3Foundation [grant](https://github.com/enfipy/Grants-Program/blob/master/applications/mobile-game-framework.md), mobile building tool. By [our team](https://github.com/dodorare).
 
-* Substrate Atom and VSCode plugins - Have contributed some code to Web3Foundation Grant for Substrate [VSCode](https://github.com/everstake/vscode-plugin-substrate/graphs/contributors) and [Atom](https://github.com/everstake/atom-plugin-substrate/graphs/contributors) plugins while worked in outsource company. By [enfipy](https://github.com/enfipy).
+- Substrate Atom and VSCode plugins - Have contributed some code to Web3Foundation Grant for Substrate [VSCode](https://github.com/everstake/vscode-plugin-substrate/graphs/contributors) and [Atom](https://github.com/everstake/atom-plugin-substrate/graphs/contributors) plugins while worked in outsource company. By [enfipy](https://github.com/enfipy).
 
-* [Polkadot CosmosSDK Integration](https://github.com/adoriasoft/polkadot_cosmos_integration) - Also, contributed to another Web3Foundation Grant while worked in another outsource company. Built some logic behind ABCI, pallet and substrate with tendermint. By [enfipy](https://github.com/enfipy).
+- [Polkadot CosmosSDK Integration](https://github.com/adoriasoft/polkadot_cosmos_integration) - Also, contributed to another Web3Foundation Grant while worked in another outsource company. Built some logic behind ABCI, pallet and substrate with tendermint. By [enfipy](https://github.com/enfipy).
 
 ### Team Code Repos
 
-- https://github.com/dodorare
+- <https://github.com/dodorare>
 
 GitHub accounts of all team members:
-- https://github.com/enfipy
-- https://github.com/olvyko
-- https://github.com/Heezay
-- https://github.com/Adoka3710
-- https://github.com/rodrigocam
+
+- <https://github.com/enfipy>
+- <https://github.com/olvyko>
+- <https://github.com/Heezay>
+- <https://github.com/Adoka3710>
+- <https://github.com/rodrigocam>
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/ackerman-david/
-- https://www.linkedin.com/in/oleksii-knyshenko/
+- <https://www.linkedin.com/in/ackerman-david/>
+- <https://www.linkedin.com/in/oleksii-knyshenko/>
 
-## Development Roadmap :nut_and_bolt:
+## Development Roadmap :nut_and_bolt
 
 ### Overview
 
-* **Total Estimated Duration:** 5.0 months
-* **Full-time equivalent (FTE):** 3.5
-* **Total Costs:** 40,000 USD
+- **Total Estimated Duration:** 5.0 months
+- **Full-time equivalent (FTE):** 3.5
+- **Total Costs:** 40,000 USD
 
 ### Milestone 1 — AAB and new engine support
 
-* **Estimated Duration:** 1 month
-* **FTE:** 3.5
-* **Costs:** 10,000 USD
+- **Estimated Duration:** 1 month
+- **FTE:** 3.5
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -99,9 +99,9 @@ GitHub accounts of all team members:
 
 ### Milestone 2 — Android Plugins and Cross-platform permissions
 
-* **Estimated Duration:** 2.0 month
-* **FTE:** 4.0
-* **Costs:** 15,000 USD
+- **Estimated Duration:** 2.0 month
+- **FTE:** 4.0
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -115,9 +115,9 @@ GitHub accounts of all team members:
 
 ### Milestone 3 — Android Plugins
 
-* **Estimated Duration:** 2.0 months
-* **FTE:** 3.5
-* **Costs:** 15,000 USD
+- **Estimated Duration:** 2.0 months
+- **FTE:** 3.5
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -149,6 +149,6 @@ Also we want to make similar stuff for native iOS apps. Current nearest plans ar
 | 4. | Apple Game Center | Add [Apple Game Center](https://developer.apple.com/documentation/gamekit) support. |
 | 5. | Support Apple In-App purchases | Support Apple [StoreKit](https://developer.apple.com/documentation/storekit/in-app_purchase). Make it possible to buy items from your application. |
 
-## Additional Information :heavy_plus_sign:
+## Additional Information :heavy_plus_sign
 
 **How did you hear about the Maintenance Grants Program?** Personal recommendation.

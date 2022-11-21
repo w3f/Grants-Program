@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Polkawatch
 
-- **Project Name:** Polkawatch
 - **Team Name:** Valletech AB
 - **Payment Address:**  0xA39bD6af74f8c317F45137d2ED7F4e13176d916B (ETH/DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

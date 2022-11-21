@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# NewOmega (Milestone 3 and 4)
 
-* **Project Name:** NewOmega (Milestone 3 and 4)
 * **Team Name:** NewOmega
 * **Payment Address:** DAI: 0xBd774017Ea2ae5B9dec156bA8C987d74eF249b30
 

@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Sukhavati PoC Module
 
-* **Project Name:** Sukhavati PoC Module
 * **Team Name:** Sukhavati Labs
 * **Payment Address:** 0x4756b4a72Fb08d936a9ee780f36e411B3F9E1873
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/340#issuecomment-937770696)

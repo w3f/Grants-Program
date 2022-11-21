@@ -1,7 +1,7 @@
 # Usage guidelines for the W3F Grants Program badge
 
-<img align="right" width="400" src="../src/badge_black.svg">
- 
+<img align="right" width="400" src="/img/badge_black.svg" />
+
 **Once a project's first milestone has been accepted**, we intend to help teams acknowledge their grant publicly while observing the foundation’s guidelines.
 
 To that end, we’ve created a badge for grant recipients. This is available for download in four formats under [web3.foundation/grants/badge](https://web3.foundation/grants/badge).

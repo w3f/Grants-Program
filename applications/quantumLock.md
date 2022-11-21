@@ -1,7 +1,5 @@
-# W3F Grant Proposal
+# Quantum Lock for QBITCOIN
 
-
-- **Project Name:** Quantum Lock for QBITCOIN
 - **Team Name:** BQP
 - **Payment Address:** 0x063c75324504D1595a972462A30A230d703f655e (ETH)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
