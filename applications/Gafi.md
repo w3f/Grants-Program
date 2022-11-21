@@ -176,7 +176,7 @@ Whitepaper: Coming soon
 
 - **Total Estimated Duration:** 11.5 months
 - **Full-Time Equivalent (FTE):**  1.2 FTEs
-- **Total Costs:** 59,000 USDT
+- **Total Costs:** 52,700 USDT
 
 ### Milestone 1 — The Heroes & Empires
 
@@ -245,11 +245,10 @@ In this milestone, the requirements will fall into acceptance criteria:
 
 - **Estimated duration:** 4 months
 - **FTE:**  1.2
-- **Costs:** 19,000 USD
+- **Costs:** 12,700 USD
 
 In this milestone, the requirements will fall into acceptance criteria:
 + Gafi Network Testnet launch with at least 5 nodes
-+ Build DAO to vote on-chain governance
 + Pallet Game-Creator works
 + Determine the 'x' number of limit discount transactions per minute by Testnet and vote by on-chain governance
 + Determine the 'y' percentage to reduce transaction fee by Testnet and vote by on-chain governance
@@ -267,9 +266,8 @@ In this milestone, the requirements will fall into acceptance criteria:
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | wiki.gafi.network and Medium |
 | 1. | Substrate module: pallet game-creator | https://wiki.gafi.network/learn/game-creator |  
-| 2. | Substrate module: pallet_dao | module to vote on-chain runtime data |  
-| 3. | Weights/Benchmarking | implement benchmarking for pallets to determine appropriate weights  |
-| 4. | Demo | Demo new features in milestone 3 with guide article | 
+| 2. | Weights/Benchmarking | implement benchmarking for pallets to determine appropriate weights  |
+| 3. | Demo | Demo new features in milestone 3 with guide article | 
 
 
 ## Future Plans
