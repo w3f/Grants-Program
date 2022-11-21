@@ -3,7 +3,7 @@ name: W3F Grants
 on:
   push:
     branches:
-      - master
+      - website
 
 jobs:
   build:
