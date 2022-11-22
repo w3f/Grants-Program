@@ -1,8 +1,6 @@
 ---
-id: apply
+title: Apply
 ---
-
-# Apply
 
 If you are certain you want to apply for a W3F grant, head straight to our [application process documentation](how-to-apply.md). Otherwise, check out the flowchart below for a broad overview of which funding source your application might fit best.
 

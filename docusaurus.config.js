@@ -54,7 +54,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'apply',
+          docId: 'Process/index',
           position: 'right',
           label: 'Apply',
         },
