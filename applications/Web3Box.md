@@ -12,7 +12,6 @@
 NOTE: UGA stands for Users Generated  Assets, and the platform means a standalone local running environment - Win & Mac Web3Box desktop client
 
 - In order to prevent inevitable frauds, we propose a privacy-safe sandbox concept, Web3Box, so that all the information of Polkadot ecosystem users is controlled in their local trusted environment.
-- Web3Box will become the Web3 portal for Polkadot ecosystem users, giving them one-stop access to all Web3 applications. Polkadot ecosystem users can manage their multi-chain assets and track asset changes, ensuring asset security.
 - In response to the frequent Web3 asset security incidents,  Polkadot ecosystem users can track the risks of Polkadot ecosystem projects through the Web3Box, so as to choose Web3 portfolio safely.
 
 
@@ -20,26 +19,16 @@ NOTE: UGA stands for Users Generated  Assets, and the platform means a standalon
 
 ### Project Details
 
-#### Web3Box Architecture ####
-**![](https://lh3.googleusercontent.com/tlealryMkOZD0i7dK9LcU_TTsbO5J_13YcgeOl8hWI56sLVtnyYEDDY-dCeYLVa7_i4k4PIdHCkNqTjA5BFtqYKBJJMUh5jkklAxK9-9PKljwMfoq2a0l-WoMXgTRToE5Pih0m2qGXUoi_Yjl7dSNIo3J_3uAGBW4qaVxN3TUGKjQ88VxuhntBRcddz6JA)**
-
-
-
-
 #### Key Modules ####
 1. Privacy-safe sandbox
 - Relay chains & Parachains Assets Management
--  Relay chains & Parachains Assets Portfolio
+- Relay chains & Parachains Assets Portfolio
 
 2. Risk assessment
 - Parachains Projects Scoring
 - Parechains Projects Risk Report
 - Parachains Abnormal warning
 
-3. Web3 Tool/Feed aggregator
- - Web3 tool navigation
- - Web3 content aggregator
- - Web3 information source customization
 
 #### Web3Box VS Browser ####
 ![](https://lh3.googleusercontent.com/x5iDstqgO_-ljPxqvNfHR07JF0Bo8xl1aiBEVKxOfxNqXrydZW2drKlkQQU5oiviknzsgqvGGD90k-UlT4Y5TbZn9c4f7-pOfIanXLSuXeb_svjQOMrMcIGddV2VY5m6MohVoLn2rwBNW85QcHZyYy7GMqWVu-xKt_QbRJ6gQCj4Rg1mlISImyXhd3fsaw)
@@ -47,13 +36,6 @@ NOTE: UGA stands for Users Generated  Assets, and the platform means a standalon
 #### Risk Assessment ####
 <img width="569" alt="image" src="https://user-images.githubusercontent.com/117150831/200757322-7e71bb05-9246-4367-bf43-f006627e1bab.png">
 
-#### Web3 Tool Navigation ####
-![image](https://user-images.githubusercontent.com/117150831/200757895-6930ffc7-7bd2-4233-bb02-9912f77794ea.png)
-
-
-#### Web3 Feed Aggregation ####
-
-<img width="311" alt="image" src="https://user-images.githubusercontent.com/117150831/200757919-c01b82a1-7a5d-4aba-bf7e-650a80dcfe3c.png">
 
 #### Web3Box Preview ####
 **![](https://lh3.googleusercontent.com/KZwZrmrRtQHMPqqcGkssfYtvC8SDmvGwB0WjbQ6r12Doqrx5yGyLcraGbVbqSFpYQjR-NcHUUK6tLYfmuq3huMCAsRHT0T_qiQ_AIV-KDvgroW1boEHsbeipCwXi245WDXsP3-LnI5BzpsVcXM4O6ux2RUrujJrY8Ah6qemsCDsxXz6FVLEtICp3JF79qw)**
@@ -63,8 +45,6 @@ NOTE: UGA stands for Users Generated  Assets, and the platform means a standalon
 1. Web3Box allows Polkadot ecosystem users to access Polkadot eco wallet, Defi, Swap, and browse Web3 websites in the privacy-safe sandbox. The data generated in transactions and browsing is securely stored on the Polkadot ecosystem users’ personal computers, which could effectively isolate hackers & viruses and avoid system horse calls & program supervision.
 
 2. Web3Box provides Polkadot users with risk assessment of parachains, so that Polkadot users can timely and accurately understand the risks of parachains; select the parachains with low risks for users to avoid those with high risks when making investment decisions.
-
-3. Web3Box presents the visual Web3 news for Polkadot users, including value-added content services and interactive narrative subjects, bringing better reading experience and more accurate content timeliness. Meanwhile, the unique aggregation function of Web3Box will be improved by Polkadot users in a decentralized manner, including Web3 industry sites, resources and tools. Finally, it will let Polkadot users liberate the conventional webpage favorites in Web2, achieving the one-stop access to all Web3 applications.
 
 
 ## Team 
@@ -88,7 +68,7 @@ NOTE: UGA stands for Users Generated  Assets, and the platform means a standalon
 
 ### Team's experience
 
-Web3Box team is very experienced in software development and project operation. Team members are all aimed to be involved in Web3 Revolution.
+Web3Box team is very experienced in software development and project operation. Team members are all aimed to be involved in Web3 Revolution. Team members have been participated in the defi project https://github.com/netswap
 
 ### Team Code Repos
 
