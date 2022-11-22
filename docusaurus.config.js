@@ -7,13 +7,13 @@ module.exports = {
   title: 'Web3 Foundation Grants',
   tagline: 'Funding software development and research efforts related to Polkadot, Kusama, Substrate and ink!.',
   url: 'https://w3f.github.io',
-  baseUrl: '/grants/',
+  baseUrl: '/Grants-Program/',
   onBrokenLinks: 'warn',    // Revert back to 'throw' once initial release is up
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/Web3Foundation.png',
   organizationName: 'w3f', // Usually your GitHub org/user name.
   trailingSlash: false,
-  projectName: 'grants', // Usually your repo name.
+  projectName: 'Grants-Program', // Usually your repo name.
 
   themeConfig: {
     colorMode: {
