@@ -4,7 +4,7 @@
 * **Payment Address:** DAI：0x6e30f740A57a330de35D0ecE0ADF1eEc3D8C6c34
 * **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/148#issuecomment-1004782716)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -125,7 +125,7 @@ Each option will generate a token, of which the market making will be automatica
 
     Compared with projects outside of Polkadot ecology. FTX is a centralized project, which is at the risk of being operated in the dark by the platform and legal issue; Prosper is based on Binance Chain, with only automatically generated short-term price forecasts, and the range of audience is narrow; Omen is not based on Polkadot, it lacks diversified incentives and sociality;Polymarket is short of community governance and reporting and supervision mechanisms;The homogeneous topic of Catnip cannot even be independently created by users, as well as the absence of community governance and incentives; Augur is the order-book type, not as flexible and liquidity abundant as AMM's automatic market making, and lacks market incentives.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -182,7 +182,7 @@ Among whom Liang Wenzhu is certified by the Parity substrate course as Outstandi
 * [https://www.linkedin.com/in/%E5%BD%93%E7%8E%B2-%E8%82%96-b01986208](https://www.linkedin.com/in/%E5%BD%93%E7%8E%B2-%E8%82%96-b01986208)
 * [https://www.linkedin.com/in/tina-chen-291806202](https://www.linkedin.com/in/tina-chen-291806202)
 
-## Development Status :open_book
+## Development Status :open_book:
 
 We have completed the planning of the product prototype, the design of the UI diagram, and the technical architecture, and are beginning to develop.
 
@@ -198,7 +198,7 @@ White paper link：
 
 <https://x-predict.com/X_Predict_market_Whitepaper_en.pdf?v=1.0>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

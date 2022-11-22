@@ -5,7 +5,7 @@
 - **Payment Address:** 0x85D81Ab61Fe16CDcaeF2Ca556ED4577A51b9b07C (USDC preffered)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -60,7 +60,7 @@ Project heavily relies on the Polywrap toolchain and Polywrap team support.
 
   There are not other projects solving the integration issue today at the SDK layer. As previously mentioned, the ["enriched metadata & typeinfo"](https://github.com/paritytech/substrate/pull/8615) PR solves the introspection problem at the chain-level, but there is more to do farther down the integration pipeline at the dapp level. This is where Polywrap will help.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -104,7 +104,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - <https://www.linkedin.com/in/matthias-seitz-a49378211/>
 - <https://www.linkedin.com/in/tianyi-zhang-2277191a3/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 - Academic publications relevant to the problem
   - Documentation: [https://docs.polywrap.io/](https://docs.polywrap.io/)
@@ -123,7 +123,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
   - Rust support (pending review): [https://github.com/polywrap/monorepo/pull/523](https://github.com/polywrap/monorepo/pull/523)
   - Polywrap Hub - the web3 aggregator (in progress): [https://github.com/polywrap/hub](https://github.com/polywrap/hub)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -234,6 +234,6 @@ We hope that with this work complete, a team like Talisman will be able to conti
 
 The work created by this grant will be stewarded by the ChainSafe & Polywrap DAO teams, as well as the Talisman team if they decide to build upon what we've created.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** personal recommendation

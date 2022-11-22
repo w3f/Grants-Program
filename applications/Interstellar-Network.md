@@ -7,7 +7,7 @@
 - **Payment Address:**  Ethereum - 0xc5C54DcD7b76b3B26ab4a02f191338F31aD732f6 (ETH)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -138,7 +138,7 @@ We think that we could bring a better user experience, security and performance,
 
 > *see: A high level attack  description on solutions that use QR code for transaction confirmations [Are cryptocurrency wallets more at risk than ever?](https://medium.com/@jlleleu/are-cryptocurrency-wallets-more-at-risk-than-ever-cf1ce9725de7)
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -188,7 +188,7 @@ We are now multiple security and fintech  entrepreneurs, security researchers, p
 
 - <https://www.linkedin.com/in/philippesalats/> Philippe Salats (advisor)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -319,7 +319,7 @@ We are now multiple security and fintech  entrepreneurs, security researchers, p
 
 - Research on other human brain decryption capabilities (like Visual Cryptography, Audio Cryptography, etc...): the long term goal is to increase our capabilities to differentiate bots with IA capabilities from real humans ([Review of the use of human senses and capabilities in cryptography](https://www.sciencedirect.com/science/article/pii/S1574013720304408))
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 > **How did you hear about the Grants Program?**
 

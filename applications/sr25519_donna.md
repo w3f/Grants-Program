@@ -5,7 +5,7 @@
 * **Proposer:** [terencege](https://github.com/TerenceGe)
 * **Payment Address:** 3CL4h6PDZRM8yWyqFyShJJdPdYVQWF7pQL
 
-## Project Description :page_facing_up
+## Project Description :page_facing_up:
 
 Please provide the following:
 
@@ -19,7 +19,7 @@ Please provide the following:
 * An indication of why your team is interested in creating this project.
   When I'm buiding an native mobile wallet which will support polkadot, for some reasons, apple's infastructre dose not support rust very well, so I start to build the C version of the schnorrkel lib.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 * **Members: Terence Ge
 * **LinkedIn Profiles:** <https://www.linkedin.com/in/terence-ge-4a146185/>
@@ -28,7 +28,7 @@ Please provide the following:
 * **Team's Experience:** Working in blockchain industry since 2013, author of BitPortal wallet (<https://bitportal.io/>), former BTCC exchange engineer, have rich experence of buiding crypto currency exchange and wallet.
 * **Team's previous work links:** [cryptoolkit](https://github.com/TerenceGe/cryptoolkit), [bitportal-wallet](https://github.com/TerenceGe/bitportal-wallet)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 * **Total Estimated Duration:** 4 weeks
 * **Total Costs:** 0.6 BTC
@@ -59,7 +59,7 @@ Please provide the following:
 | 3. | unit test | provide unit test for vrf siging and verifing |
 | 4. | add documentation | add documentation of installing or integrating vrf features |
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Any additional information that you think is relevant to this application that hasn't already been included.
 

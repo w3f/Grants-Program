@@ -3,7 +3,7 @@
 * **Team Name:** OpenSquare
 * **Payment Address:** 0x4905083abdD13bd95345A871701Fd0b08AbD46d1 (USDT)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -79,7 +79,7 @@ Please check part of the UIs [here](https://www.figma.com/proto/vqpglMGW8psHKB00
   OpenSquare developed a centralized paid QA platform in Chinese, but we think decentralization should be the right
   direction.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -129,7 +129,7 @@ Team members github accounts:
 * <https://github.com/YoshiyukiSakura>
 * <https://github.com/Popoulosss>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -175,7 +175,7 @@ Milestone 1 — Implement the paid QA businesses
 * Credit/reputation building based on the behaviors, but it will be a long pan which need considerations together with
   other collaborations in OpenSquare developed platforms.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 OpenSquare believes it's meaningful to record users' collaborations on chain. We can build users' credit/reputation
 model based on the history collaboration records together with other behaviors like DeFi activities, etc. It finally

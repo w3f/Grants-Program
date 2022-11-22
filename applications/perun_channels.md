@@ -3,7 +3,7 @@
 * **Team Name:** Perun@PolyCrypt
 * **Payment Address:** 0x63DcE2cB0FeA77f4E55d01569583a40e17448B4b (DAI)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -105,7 +105,7 @@ _go-perun_: provides generalized state channel functionality.
 3) _cChannel-substrate_: does not allow transactions across chains.
 _go-perun_: is designed for enabling cross-chain transactions in the future.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 PolyCrypt is a Spin-Off from the Technical University of Darmstadt, resulting from years of blockchain research under the name of Perun, under which the team is well-known in the Ethereum space. PolyCrypt was founded in Q4 2020.
 
@@ -150,7 +150,7 @@ Since mid 2020, the Perun Framework is a Hyperledger Labs project. The _go-perun
 
 Our company LinkedIn profile is available at <https://www.linkedin.com/company/perun-network/>.
 
-## Development Status :open_book
+## Development Status :open_book:
 
 **Research:**
 The foundation for Perun State Channels was laid in “Perun: Virtual Payment Hubs over Cryptocurrencies”, published at IEEE S&P 2019, <https://ieeexplore.ieee.org/document/8835315>, also available at  <https://eprint.iacr.org/2017/635>. This is one of the most prestigious academic conferences in IT Security.
@@ -161,7 +161,7 @@ The main repository of the _go-perun_ library is at <https://github.com/hyperled
 It currently features an Ethereum blockchain backend and supports generalized state channels on a single backend.
 In 2020, we joined the hyperledger foundation together with our industry partner BOSCH, with the goal of growing an open-source community around the Perun project.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -207,7 +207,7 @@ We plan to provide the corresponding off-chain functionality written Go in the c
 * We are looking to extend our industry collaborations. As our library is written in Go, we envision that it is suitable also for resource constrained devices in the IoT space.
 * We are considering using Perun channels for building a hub infrastructure that allows transferring liquidity between different networks quickly and cheaply. For that we are also considering applying for another grant.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 After Dieter Fishbein joined the Web3 Foundation, he reached out to Sebastian Stammler in June 2020 regarding grants, finally resulting in this application.

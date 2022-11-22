@@ -8,7 +8,7 @@
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 If this application in response to an RFP then please indicate this on the first line of this section.
 
@@ -60,7 +60,7 @@ Clover will also establish a developer-centric community. In addition to giving 
 
 With the rapid development of DeFi, the demand for insurance protocols is also increasing and has become an important part of the DeFi protocols. At the current stage of DeFi development, it is not yet possible to directly trade assets such as stocks, precious metals, and commodities. However, the synthetic asset protocol will allow simulations of assets price and facilitate transactions on the blockchain. In addition, the developer community we established will also become a source of innovative DeFi protocols. Clover allows modularization of the different protocols, thereby providing a resourceful module library for upper-layer applications, which will ultimately enable the creation of more diversified financial applications. With the help of Bithumb Global bootstrapping the liquidity of Clover by co-sharing its marketing and community resources, we will be advising Clover on the go-to-market strategies and PR placements as well as launching campaigns, educating Bithumb users, and distributing to our network.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -124,7 +124,7 @@ We all come from different and unique walks of life, backgrounds, and experience
 
 * [Marina Danylyuk](https://www.linkedin.com/in/marinadanylyuk/)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

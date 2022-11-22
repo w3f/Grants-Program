@@ -149,11 +149,11 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 
 * <https://github.com/DICO-TEAM/dico-chain>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 *interface iterations and resource*: <https://github.com/DICO-TEAM/resources>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

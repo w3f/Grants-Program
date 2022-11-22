@@ -4,7 +4,7 @@
 - **Payment Address:** 0xc905c448db9942c662fcb1680f3ecfcd0592409c
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 This is an application for a follow-up grant for the [Epirus Substrate Explorer](https://github.com/w3f/Grants-Program/blob/master/applications/epirus_substrate_explorer.md) that has been completed in the following delivery: <https://github.com/w3f/Grant-Milestone-Delivery/pull/527>
 
@@ -113,7 +113,7 @@ Additionally, the Metadata Registry will also be an independent service providin
 
 On top of that, Epirus Substrate Explorer leverages existing solutions, such as SubSquid and srtools, which fosters synergy across the Substrate ecosystem.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -154,7 +154,7 @@ On top of that, Epirus Substrate Explorer leverages existing solutions, such as 
 | 2.  | Updated Explorer UI | The Explorer UI will support the display of decoded contract messages and events.
 | 3.  | Public explorer instance | A publicly accessible instance of the Explorer connected to a development network displaying decoded contract messages and events.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team Members
 

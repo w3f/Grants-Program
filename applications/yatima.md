@@ -3,7 +3,7 @@
 * **Team Name:** [Yatima Inc](https://github.com/yatima-inc/yatima).
 * **Payment Address:** 3N2bLsFX6UtJ3MXdnVvm87dHaQTPutDiqA
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -140,7 +140,7 @@ or the graph-reduction runtime.
   4. [Kind](https://github.com/uwu-tech/Kind) (formerly Formality)
   5. [Unison](https://www.unisonweb.org/)
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -210,7 +210,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 Please email john@yatima.io for team member CVs.
 
-## Development Status :open_book
+## Development Status :open_book:
 
 ### Yatima Rust implementation
 
@@ -358,7 +358,7 @@ demonstrate that these libraries can be built in a `no_std` context using the
 * Many aspects of the language, particularly its libraries and type-equality
   algorithm, are adapted from the authors' previous work on [The Formality proof language](https://github.com/moonad/Formality-tmp).
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -433,7 +433,7 @@ to provide Erlang style lightweight processes (green threads). There is some
 indication that content addressing is a good fit for this, given the work Unison
 has done on distributed systems.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website
 

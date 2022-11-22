@@ -10,7 +10,7 @@
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 Imbue Network was born out of the growing problem of funding projects. There is a real problem in the polkadot ecosystem with funding, projects tend to launch on ETH as an easy way out due to lack of options. The problem is then compounded because of seed/private investors so by the time the token launches, their community can only get a chance to invest through severly limited whitelists
 
@@ -50,7 +50,7 @@ We do not consider IDO platforms as a solution to this problem. There is also th
 
 However, <https://aragon.org/> is something similar that is built on top of Etherum. We believe our USP is the funds being unlocked in stages and allowing funders to vote on those milestones
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -92,7 +92,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - <https://github.com/samelamin>
 - <https://github.com/aalavanthan18>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 We are still at the early stage of development, getting our website out in the next week or two. We do have some wireframes around how people will be able to propose/vote for project which can be found below
 
@@ -106,7 +106,7 @@ We are still at the early stage of development, getting our website out in the n
 - <https://www.linkedin.com/in/kanthan-segaran-5783708b/>
 - <https://www.linkedin.com/in/aala-sharfi-90b35a95/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -174,7 +174,7 @@ Ideally, for future milestones, we would like to remove the need for the council
 
 Work with Parity on how we can utilise Statemint with fund storage/allocation
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website
 

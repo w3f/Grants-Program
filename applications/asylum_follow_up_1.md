@@ -4,7 +4,7 @@
 - **Payment Address:** 0xB2a6bF365635ea209d7A824125c1bf249A189866 (USDT (ERC20))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -175,7 +175,7 @@ There are few projects in ecosystem that are working in the similar direction wi
 Asylum is operating on the fundamental layer, working on the standards and its implementation for the whole Metaverse ecosystem. There are no such projects for now, that are working on the infrastructure solution for the whole Metaverse ecosystem (not focusing only on NFT, or other spheres) and meanwhile implementing it as an open and extendable solution, not a closed (like Sandbox).
 Because of this, almost all projects operating in this market are good candidates to work together, for example including their infrastructure solutions in our ecosystem.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -257,7 +257,7 @@ Members:
 - <https://www.linkedin.com/in/kaplaty/>
 - <https://www.linkedin.com/in/heorhii-lutsenko-502873164/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Current status of the Asylum development - finalization of the PoC. Mainly previous work were delivered within our [first grant application](https://github.com/w3f/Grants-Program/blob/master/applications/asylum.md)
 
@@ -285,7 +285,7 @@ Now called "Asylum stadard", will be renamed in process of separation standards 
 
 Build of the 2d testing game with integration with Asylum node. Delivered within our first grant application.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -408,7 +408,7 @@ Here you could find Asylum roadmap
 - [Litepaper](https://asylum.space/files/litepaper.pdf)
 - [Pitch deck](https://asylum.space/files/AsylumPitchDeck.pdf)
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 

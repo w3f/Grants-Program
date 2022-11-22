@@ -3,7 +3,7 @@
 * **Team Name:** [SubDAO Labs](https://github.com/subdao-network)
 * **Payment Address:**  0x0c105bA504D1905bb47EeA57FA8694893bDEd27f
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 The previous application [SubDAO Network Application - <https://github.com/w3f/Grants-Program/pull/90>]
 
@@ -58,7 +58,7 @@ The project meets the need of signing contract with decentralization, immutabili
   
   To sign a contract with the help of blockchain technologies is not fresh. There are similar projects in the Ethereum ecosystem, such as OpenLaw, EthSign. But there is no similar project in the Polkadot ecosystem yet. PolkaSign is the first one to provide electronic agreement signing for individuals, companies, and DAOs.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -111,11 +111,11 @@ The team is the one who applied SubDAO.
 * [Wang Qiang](https://www.linkedin.com/in/wang-qiang-aa6a2894/)
 * [Marvin Tong](https://www.linkedin.com/in/marvintong/)
 
-## Development Status :open_book
+## Development Status :open_book:
 
 We have already designed some UI/UX as the shown previous section, and the rest works will be done in next two months.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 We planned two major versions.
 
@@ -154,7 +154,7 @@ In this application, we planned to provide the first version of PolkaSign. The m
 * We will introduce more features for users, like new file types, agreement modifications etc.
 * The feedback from communities will be considered as new features in future versions.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 We get this information from the w3f website.

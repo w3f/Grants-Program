@@ -4,7 +4,7 @@
 * **Payment Address:** DAI at 0x50DC97D0345d61B4D096e15313d50b6506972e5F
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/334#issuecomment-1168505655)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -81,7 +81,7 @@ Open Node Framework provides the infrastructure to deploy any Substrate based pa
 
 The project serves standalone the Substrate blockchain, parachain, and relay chain operators, offering them a flexible and user-friendly infrastructure framework with production best practice.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -114,11 +114,11 @@ Open Node Framework is an open source project initiated by core members of [Phal
 * <https://www.linkedin.com/in/hang-yin-167012a7/>
 * <https://www.linkedin.com/in/jun-jiang-5b9b4153/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 The MVP of Open Node Framework is available on [Github](https://github.com/Tenet-X) but we are going to switch to build on polkadot-deployer [on our fork](https://github.com/Phala-Network/open-node-deployer) instead. Please see [Project Details](#Project-Details).
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

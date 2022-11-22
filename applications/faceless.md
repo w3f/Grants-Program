@@ -3,7 +3,7 @@
 - **Proposer:** Faceless Protocol
 - **Payment Address:** 0xe2B3e38a8E2b81B6b21B3F295C19403629B15993
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -145,7 +145,7 @@ Payment schemes in the Web 3.0 world will be based on HRIs. This is the only way
 
 We have known a few existing private payment schemes for the Polkadot ecosystem, such as Raze or Manta networks. However, none of these private payment schemes is specifically designed for HRIs, and it's not clear how they can easily adapt their scheme to the case of HRIs. There exist many payment schemes outside of the Polkadot ecosystem, such as Tornado.cash, Aztec, and Suterusu. However, none of these payment schemes are designed for HRIs either. There also exists a few other schemes that try to either connect Web 2.0 users to the Web 3.0 world such as CyberConnect or naming services such as PNS and ENS, which can serve as a foundation for an HRI-based payment scheme. However, neither of them provides any private payment solution, which is technically challenging.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team Members
 
@@ -178,7 +178,7 @@ Ph.D. degree in Applied cryptography from EPFL, Switzerland. Senior cryptographi
 - [https://www.linkedin.com/in/michellehan](https://www.linkedin.com/in/michellehan-228252233/)
 - [https://github.com/zicofish](https://github.com/zicofish)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

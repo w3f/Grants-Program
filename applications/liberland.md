@@ -236,7 +236,7 @@ We have already started to develop our chain, links:
 - <https://github.com/liberland/liberland_substrate> | Our current chain repository
 - <https://testnet.liberland.org> | Our public frontend with support for the polkadot.js wallet
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

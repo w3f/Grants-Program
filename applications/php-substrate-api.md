@@ -4,7 +4,7 @@
 * **Payment Address:** We are doing this free to contribute to Blockchain community
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 <https://github.com/w3f/Grants-Program/blob/master/rfps/php-api.md>
 
@@ -40,7 +40,7 @@ This project will help to avail substrate features in applications/platforms bui
 * It is adding a lib to client integration section of substrate
 * Any PHP application that want to have a substrate blockchain capability.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -98,13 +98,13 @@ Arati Bongale is a Software engineer. She is an enthusiastic developer. Eager to
 * <https://www.linkedin.com/in/neha-reddy-0b0024119>
 * <https://www.linkedin.com/in/arati-bongale-2213511a1>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 For implementing the library class to make RPC endpoint call is being created. Work on initialisation of properties and methids is going on. Deliverables as comply to rfp are in progress.
 
 * <https://github.com/w3f/Grants-Program/blob/master/rfps/php-api.md>,
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 A class which can be instantiated in an application to use endpoints
 
@@ -156,7 +156,7 @@ composer require neha0921/substrate-interface-package
 * We are workging on Blockchain as well, so we want to be involved in it's development with multichain connectivity and future development.
 * With this we are involved in rust development as well. In future looking to work on development/issue fixing of Substrate.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** We got a suggestion of Gautam from parity about start with some grant
 

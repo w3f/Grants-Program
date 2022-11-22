@@ -7,7 +7,7 @@
 * **Document Version:** Version 2.4
 * **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/129#issuecomment-1011987896)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 **SpiderDAO** is a next-generation hardware-based DAO governance model that aims to bring a new standard of fairness to existing DAO frameworks. Traditional DAO models are subject to attack and takeover by plutocracies controlled by wealthy whales. He who controls the votes controls the DAO.
 
@@ -104,7 +104,7 @@ We will also be in constant contact with the growing SpiderDAO community and the
 * We are planning to write a substrate faucet to communicate with our discord server for our customers to send the token needed for the vote, Initiate voting, pass on the vote for the voting process that would be operated through our discord server.
 * Real votes will be done through our substrate faucet until the final Polkadot/SpiderDAO flavour features are fully-fledged.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -180,7 +180,7 @@ We will also be in constant contact with the growing SpiderDAO community and the
 * **Dr. Alfie Zhao** <https://www.linkedin.com/in/jianbin-zhao-2b04567/>
 * **Pierre Laurent** <https://www.linkedin.com/in/pierrelaurent789/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -229,7 +229,7 @@ Future Developments will focus on the following:
 * Networking Routers
 * Operating Systems
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Any additional information that you think is relevant to this application that hasn't already been included.
 

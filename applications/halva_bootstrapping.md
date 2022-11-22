@@ -5,11 +5,11 @@
 * **Proposer:** [Halva](https://github.com/halva-suite/halva)
 * **Payment Address:** 1837ca1w8WK9yfaVo5Lhgg4sENK2Tq3FgW
 
-## Project Description :page_facing_up
+## Project Description :page_facing_up:
 
 We want to automate the process of bootstrapping a new project using the Halva framework. To do this, we add the cli commands `halva-cli init` and`halva-cli create`. In the basic case, `halva-cli init` adds the file `halva.js` and adds the directory with sample tests`/tests` for standard pallets to the substrate project's directory. The command `halva-cli create` deploys new code from template e.g`halva-cli create test Token` creates a new test case `/tests/Token.ts`
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 * **Members:** Wintex
 * **LinkedIn Profiles:** -
@@ -18,7 +18,7 @@ We want to automate the process of bootstrapping a new project using the Halva f
 * **Legal Structure:** individual
 * **Team's Experience:** Our team develops software about 10+ years and decentralized applications since 2017. We have a great experience with typescript, node.js, and testing frameworks.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 * **Total Estimated Duration:** 2 weeks
 * **Full-time equivalent (FTE):** 1.5

@@ -3,7 +3,7 @@
 * **Payment Address (DAI):** 0x16D7A415040D52F2427C2b921dfC31829C0d17fc
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/341#issuecomment-994701023)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 The `NFT Collectibles Wallet` is a multi-chain non-custodial mobile wallet which will allow users to claim, store and manage an unlimited number of NFTs from any Substrate based blockchain. This project will consist of 2 major parts: the mobile wallet for users and the javascript sdk for front-end developers to create NFT management UI.
 
@@ -80,7 +80,7 @@ Our target audience is 3-fold: The everyday consumer that wants to manage their 
 
 The most similar project to the NFT Collectibles Wallet is the Enjin Wallet. However, the Enjin wallet is closed sourced and multiple blockchains cannot directly integrate into it in a decentralized way. This project solves that issue by being open sourced and allowing anyone that is a part of the ecosystem to contribute and enhance the project. Also by removing the wallet's centralization, any Substrate blockchain can make use of it.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -114,11 +114,11 @@ The most similar project to the NFT Collectibles Wallet is the Enjin Wallet. How
 * <https://www.linkedin.com/in/Mike-Huntington>
 * <https://www.linkedin.com/in/Michael-Rochester>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Currently, work for the NFT Collectibles Wallet has not started, but the team has started initial work on GamePower Network (<https://www.gamepower.network>) which will be the first project to implement the NFT Collectibles Wallet. The wallet was actually conceived because of the GamePower project. The need for the NFT wallet was very important and we decided to open the project up to anyone in the ecosystem that has the same need.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -182,6 +182,6 @@ This NFT Collectibles Wallet will be used as part of the GamePower Network. Game
 
 However, Development of the NFT Collectibles Wallet won't end after all milestones are met. We plan to add features such as Minting NFTs from within the application by users, A way for the app to automatically discover blockchains using NFTs on its own (maybe through some type of registry). There are endless possibilities where this wallet can go and we are very excited to get started on it!
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Currently we have no funding for this project or GamePower Network, we feel getting the NFT Collectibles Wallet off the ground will kick-start our GamePower Network development in a big way. We are excited to be part of the Substrate and Polkadot community and we will continue to contribute as much as we can. Thank you for your time and thank you for considering us for the Web3 Open Grant.

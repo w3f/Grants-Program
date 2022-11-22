@@ -4,7 +4,7 @@
 - **Payment Address:** 0xC289B81a8e5f8F8d691b4Cf1DBc16A7107B630e3 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -42,7 +42,7 @@ There are many benefits of getting the DotPulse project up and running:
 - shows the evolution of the number of commits made on GitHub by developers throughout the entire Polkadot ecosystem
 - outlines the recent commits
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -91,11 +91,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - <https://www.linkedin.com/in/catalin-vlad-48b828229/>
 - <https://ro.linkedin.com/in/florin-gradinaru-73891bb>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Since Polkadot has increasingly grown the open source developer ecosystem, there is a need to get an activity overview and easily track the development among different Polkadot organisations on Github, understand what is their status, track the contributions made by developers and get an idea on how the repositories evolve. Is really hard to understand how the Polkadot ecosystem is progressing since the data is scattered all over GitHub, with contributors, commits, issues, repositories and PRs data.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -163,6 +163,6 @@ To drive adoption of the DotPulse platform, CrossChain Labs will:
 - distribute it via Polkadot Discord channels
 - add Google Analytics to track users engagement in order to adapt and improve accordingly
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / Friends & Colleagues

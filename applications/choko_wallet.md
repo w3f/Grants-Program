@@ -10,7 +10,7 @@
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 Choko Wallet is a user-friendly multi-chain crypto wallet for the Polkadot ecosystem. The Polkadot ecosystem has been known for its complicated nature to interact with.
 
@@ -49,7 +49,7 @@ Mockups:
 - Choko Wallet provides a simple and intuitive interface for user to interact with blockchains/Dapps in the Polkadot ecosystem.
 - End users who are less-educated about the Polkadot ecosystem or blockchain/crypto in general.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -79,7 +79,7 @@ We have applied and deliverd all milestones of the [SkyeKiwi Protocol](https://g
 
 - <https://github.com/skyekiwi/kiwi-contract> - Smart contract toolkit for submitting smart contract on SkyeKiwi Network. [Tutorial](https://docs.skye.kiwi/docs/quick-start/deploy)
 
-## Development Status :open_book
+## Development Status :open_book:
 
 The project is mostly front-end work, except for the mechism for cross-browser tab communication from the Dapp and wallet. Therefore, so far, we have only created a simple sandbox to demostrate the viability of such communication [here](https://github.com/RoyTimes/wallet-sandbox-demo).
 
@@ -106,7 +106,7 @@ Moreover, the [Near Wallet](https://github.com/near/near-wallet) (an Apache2.0 o
 
 `@choko-wallet/sdk-react` (To be made) to inject the SDK to React components for lifecycle management etc.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 Mostly described above in the Overview section.
 

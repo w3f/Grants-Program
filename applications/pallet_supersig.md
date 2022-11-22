@@ -10,7 +10,7 @@
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 "A Supersig is a Multisig with superpowers"
 
@@ -60,7 +60,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   - pallet_collective is very similar, but as there are only a limited number of instances available, and such instances needed a general on-chain upgrade to instantiate, it is not useful for our needs.  
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -108,7 +108,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Team LinkedIn Profiles (if available)
 
-## Development Status :open_book
+## Development Status :open_book:
 
 pallet started here:
 <https://github.com/kabocha-network/pallet_supersig/tree/polkadot-v0.9.16>
@@ -122,7 +122,7 @@ The Supersig pallet is a multisig with super powers. It allows you to add and re
 
 A multisig transaction acts more like a treasury proposal. And the signatures become votes, with a quorum that can be changed (but in the MVP is fixed to simpleMajority).*
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe *the functionality we should expect in as much detail as possible*, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
@@ -285,6 +285,6 @@ Improvements:
 - We can envisage is making the pallet more compatible in the polkadot-js-apps UI.
 - We then aim to improve the functionality of the pallet based on feedback.
   
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 *Who can vouch for Ramsey(Decentration)?* Josh Muir (Kusama Council and Dat Dot), Bruno Škvorc, Dan Shields, Will Chevdor, Sacha Lanski...

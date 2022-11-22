@@ -4,7 +4,7 @@
 - **USDC Payment Address:**  0xd2234E506862991ADA75f930c6D79B4236e3E265
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 Inspired from painter from pointillism, I named the framework signac. Seurat was reserved in NPM, so the framework name is now signac.
 
@@ -94,7 +94,7 @@ Rust smart contracts take extensive amount of time just to compile a contract.
 Now imagine there are more than 10 of them, and you compile all of them.
 Cloud build was the necessary feature that we needed to work with.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -132,13 +132,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - [Hyungsuk Kang](https://www.linkedin.com/in/hyungsukkang), Founder
 
-## Development Status :open_book
+## Development Status :open_book:
 
 I have used nx with other rust smart contract Cosmwasm for developing a project.
 
 [nxcw](https://github.com/digitalnativeinc/nxcw)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -189,7 +189,7 @@ The cli binary aims to cover whole feature in [ink-waterfall](https://github.com
 - Build Standard Protocol implementation in Parity ink!
 - Maintain framework to adapt into multichain smart contract environment(e.g. support deploy command for deploying to other ink! contract chains)
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 I applied before.

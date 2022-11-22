@@ -6,7 +6,7 @@
 - **Payment Address:** bc1qcnghrzsfwnnv5fuh8095a6g3cf820c9y7t432q
 - **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/117#issuecomment-971644753)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 Manta Network is the first privacy-preserving DeFi stack powered by zkSNARK. It includes the Decentralized Anonymous Payment (DAP)  and Decentralzied Anonymous eXchange (DAX). Decentralized Anonymous Payment (DAP) is a decentralized anonymous payment scheme for Polkadot and Parachain assets (including wrapped assets and stablecoins). Decentralzied Anonymous eXchange (DAX) is a decentralized anonymous exchange scheme based on AMM and zkSNARK.
 
@@ -92,7 +92,7 @@ We will only build Decentralized Anonymous Payment (DAP) in this grant since the
 
 The current ecentralized exchanges scheme lack privacy, anti surveillance interoperability, and anonymous cryptocurrencies’ lack of price stability. As the first decentralized anonymous payment that could support existing assets, Manta DAP will be a great addition to Polkadot eco-system since Polkadot and Parachain assets such as aUSDT and wrapped BTC can be transferred and spent privately. We already talked to Polkadot eco-system members such as Acala and Equilibrium. They showed strong interests of integrating with Manta. Also, Manta DAP will be the an important building block for Manta DAX (Decentralized Anonymous eXchange) scheme that enables privacy preserving AMM style decentralized exchange using zkSNARK.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -150,7 +150,7 @@ Manta Network Ltd., a British Virgin Islands corporation
 - <https://www.linkedin.com/in/kennymuli>
 - <https://www.linkedin.com/in/qiudong-xia-2935761aa>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -238,7 +238,7 @@ Manta DAP is the foundational part of [Manta](https://manta.network) project. Th
 - Expanding more use cases to business, and supporting more assets.
 - We are also looking to build a decentralized anonymous saving & lending platform, synthetic private investments, and other DeFi adoption.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 We finished the cryptographic scheme design of Manta, see [Manta White Paper](https://github.com/Manta-Network/Manta-Whitepaper/blob/main/manta-whitepaper.pdf). We are still quickly iterating and refining the engineering details of Manta.
 

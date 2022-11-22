@@ -3,7 +3,7 @@
 * **Team Name:** OpenSquare
 * **Payment Address:** 0x4905083abdD13bd95345A871701Fd0b08AbD46d1 (USDT)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -42,7 +42,7 @@ Some implementation notes:
 * Flexible strategies help produce different voting/poll results which bring us different opinions from the on-chain tallying methods.
 * [snapshot](https://snapshot.org) is popular for Ethereum stack projects, mainly for governance, and currently we didn't see similar projects in Polkadot ecosystem.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -86,7 +86,7 @@ Team members github accounts:
 * <https://github.com/YoshiyukiSakura>
 * <https://github.com/Popoulosss>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 Only 1 milestone in this proposal, while the main goal is to check the feasibility of off-chain voting in the polkadot ecosystem.
 We will put more features like more plugins and strategies in future proposals, but after this proposal we will launch it and make it available to the community.

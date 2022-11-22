@@ -149,7 +149,7 @@ We will focus on getting more people to use this project than just LISTEN and KI
 voice of the community. Using this project, the voice of every small community can be noticed.
 We will continue to introduce more algorithms at the governance level to meet the governance needs of different project parties. We welcome more developers to join us to improve.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 * **How did you hear about the Grants Program?**
 

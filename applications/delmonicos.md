@@ -14,7 +14,7 @@
 *The above combination of your GitHub account submitting the application and payment address will be your unique
 identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 #### A blockchain based EV charging platform initiated by [Lumena](https://www.lumena.tech) ####
 
@@ -116,7 +116,7 @@ technology that would be a breakthrough:
 With both of them, that are demonstrating solid interest, we would be able to engage POC and even Spin off, should
 we be successful in the current phase.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -170,7 +170,7 @@ we be successful in the current phase.
 * <https://www.linkedin.com/in/adetante/>
 * <https://www.linkedin.com/in/franck-legardeur-a05577/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 This section should break out the development roadmap into a number of milestones. Since the milestones will appear in
 the grant contract, it helps to describe the functionality we should expect, plus how we can check that such
@@ -276,7 +276,7 @@ solution. First step will be to find investors (coming from industry or VCs). Fu
 * Capability to add innovative possibilities via Ink! Smart Contracts. e.g. variable pricing depending on the load
   of the energy network, pricing could be determined by consensus, charging session reservations, etc...
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 We are convinced that this project has a huge potential to solve the majority of problems or paint points that EV
 users are facing regarding charging their vehicule. This is typically a domain where blockchain technology is the ideal

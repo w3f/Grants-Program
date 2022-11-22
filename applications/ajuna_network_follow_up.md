@@ -6,7 +6,7 @@
 
 ![image](https://user-images.githubusercontent.com/17710198/136852531-d9eb47cd-efcd-4c88-bdbf-78dfcbffe287.png)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 We believe that the promising substrate blockchain technology enables us to bring a new way of gamification to a broad audience in a responsive, playful and immersive way. Our unique technical base allows us and the community to create independent games that can be deployed as enrichment to any substrate based chain.
 
@@ -94,7 +94,7 @@ A lot of our previous work on the World of Mogwais is being used as PoC for the 
 
 I think currently there are no such projects in the substrate ecosystem, at least we don't know of any. The setup should enable an easy start in to game development with substrate.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -160,7 +160,7 @@ Active organisations of the teammebers
 * <https://www.linkedin.com/in/2much/>
 * <https://www.linkedin.com/in/tim-kramarz-80345aba/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

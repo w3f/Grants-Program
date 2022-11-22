@@ -4,7 +4,7 @@
 - **Payment Address (BTC):** 3NQASZ1jJHsWVo6xDdAxyzWWu67HpfRr5u
 - **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/332#issuecomment-994706244)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -134,7 +134,7 @@ The music industry is complex with a lot of revenue streams and middle-men. With
 
 There are currently no other projects in the Substrate ecosystem that are solving this problem. Audius.com is one project on Ethereum that is focused on decentralized music, however, PolkaMusic is being built in a way so that anybody can spin up a project like Audius.com using PolkaMusic as an infrastructure. These "Smart Streaming Platforms" (SSP) will have their own unique micro-economy with their own native token. Developers can come up with innovative economic design to create value on the front-end. In addition to this, the SSPs can also integrate more pallets that will be made available publicly on a regular basis.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -221,13 +221,13 @@ There are currently no other projects in the Substrate ecosystem that are solvin
 - <https://www.linkedin.com/in/david-hidalgo-gato/>
 - <https://www.linkedin.com/in/amit-dua-97348415/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 - Our reference Smart Streaming Platform front-end is live on <https://polkamusic.io>
 - PolkaMusic substrate testnet is currently being run for development
 - The Rights Management Pallet is in the process of being built and public on [PolkaMusic Repo](https://github.com/polkamusic/PolkaMusic/blob/master/pallets/rmp/src/lib.rs)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -298,7 +298,7 @@ The long term features would include:
 - Artist Coins / NFTs - Artists can create their own coins/NFTs for their own creative usecases.
 - Store - A store contract to sell merchandise/products with Artist Coins as payment.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Storage: When a user creates a Smart Record Contract, she will be asked for the music file as well as the album cover. These files are saved on a centralized storage at the moment as anybody can download the files from ipfs with no benefit to the artist. Artist can individually choose the SSPs she would like to distribute the songs to, or can upload with them directly, and refer to the SRC Address for royalty payment purposes. In the future, we will implement decentralized file storage through IPFS with Access Control List, a permissioned version of IPFS where access is controlled by programmable smart contracts that contain an Access Control List (ACL). The modified ipfs client will serve files to the requestor only if the permission is approved in the ACL. This offers transparent, public and verifiable access without a central controller. Control is always in the hands of the data owner, the smart contract author. Every SSP will be required to run a ACL-IPFS node of their own.
 

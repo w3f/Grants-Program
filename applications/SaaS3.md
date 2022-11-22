@@ -6,7 +6,7 @@
 - **Payment Address(USDT):** 0x8341e551B0AE5E5905C20A112b123b5F797612f3
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -177,7 +177,7 @@ SaaS market in Dapp, web3.0, and Metaverse:
 ![6742e6c196c0ec2354f3e65474c0dd7](https://user-images.githubusercontent.com/95557343/155807321-3d96b3a6-f6c1-4b64-9411-3d75bd7eceb5.png)
 ![a07096c685597b9faaa8de4bce9956c](https://user-images.githubusercontent.com/95557343/155807345-fd92a0aa-1d5f-44ea-a57a-4f1ec8a4f70c.png)
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -229,7 +229,7 @@ GitHub accounts of all team members.
 - <https://www.linkedin.cn/injobs/in/jianfei-yang-55560386/>
 - <https://www.linkedin.com/in/steven-wong-3b015079/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -290,7 +290,7 @@ GitHub accounts of all team members.
 - Continue developing and polishing the project to flourish SaaS3 ecosystem to burst the web3 world based on Polkadot / Kusama / Substrate multi-chain system.
 - Provide more reliable efficient computation service which can run Polkadot / Kusama validator dockers.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 

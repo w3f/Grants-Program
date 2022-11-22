@@ -3,7 +3,7 @@
 - **Payment Address (DAI):** 0x6F19fdD08e5f08a26b6240eD3A83ff44fB8E670E
 - **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/402#issuecomment-1110671713)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 YibanChen / General chain is working to provide multiple protocols to help enable the transition from web2 to web3.
 
@@ -114,7 +114,7 @@ We are unaware of any of project that is focusing on critical components, such a
 
 We looked at the system.remark call, while we found system.remark would allow for simple note creation, but would limit the ability to enhance our Note feature. In the future we plan to add two gatekeeper mechanisms on the note receiver side. First, whitelist a set of wallet address senders, and secondly the ability of a wallet address to set an amount of token required to be sent along with the note before the wallet address would accept the note. We also have had some initial feedback that users would be interested in selling the notes, which we believe utilizing ORML-NFT would be the best for this scenario for selling notes in the future.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -149,11 +149,11 @@ We looked at the system.remark call, while we found system.remark would allow fo
 - <https://www.linkedin.com/in/davidrhodus/>
 - <https://www.linkedin.com/in/-max-rosenberg>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Currently, work for the Dapp has started, the team has an initial Substrate node (wss://testnet.yibanchen.com:443).
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -226,6 +226,6 @@ However, Development of the YibanChen won't end after all milestones are met. We
 
 There are lot possibilities where this project YibanChen can go and we are very excited to get started on it and make a difference within the Web3 ecosystem.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Currently we have no funding for the YibanChen system, we feel getting the general web3 use-cases off the ground will kick-start the substrate ecosystem in a big way. We are excited to be part of the Substrate and Polkadot community and we will continue to contribute as much as we can. Thank you for your time and thank you for considering us for the Web3 Open Grant.

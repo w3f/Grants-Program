@@ -4,7 +4,7 @@
 * **Payment Address:** 0x454cfAa623A629CC0b4017aEb85d54C42e91479d
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/301#issuecomment-1168484070)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 This proposal is a follow-up to the PolkaJ grant <https://github.com/w3f/Open-Grants-Program/pull/12>
 I am not affiliated with the original team, but I have spoken with them about this propoal and they have encouraged me to submit it.
@@ -35,7 +35,7 @@ We will make the following changes and additions to the PolkaJ project in order 
 
 This is an improvement and addition to an existing project.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -62,11 +62,11 @@ I have ten years of experience in Android client development in the telecom and 
 
 * <https://www.linkedin.com/in/nathanschwermann/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 * I have completed parts 1, 1b, 2a, 5, 90% complete 3a and 50% 4a from milestone 1.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

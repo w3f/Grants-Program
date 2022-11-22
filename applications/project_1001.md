@@ -10,7 +10,7 @@
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -58,7 +58,7 @@ According to our research, we are the first project to build an NFT game on Subs
 
 The 1001 project could make NFTs more interactive, add exposure, and enable NFT creation just by speaking by non-tech and non-art users, the created NFT could be further used in the internal DeFi scenarios, so it could greatly extend the NFT usability on Polkadot/Kusama.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -88,7 +88,7 @@ Alex, is the fullstack technical engineer, he has 7 year of software development
 * <https://github.com/buildtrust>
 * <https://github.com/captainalexyz>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 * **Estimated duration:** 3 month
 * **FTE:**  3.5 FTE
@@ -130,4 +130,4 @@ The 1001 project could make NFTs more interactive, add exposure, and enable NFT 
 
 So the total duration will be 12 weeks, which is approximately 3 months. We will use Rust for pallets code, Ink! for smart contracts and Unity/Typescript for frontend UI.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:

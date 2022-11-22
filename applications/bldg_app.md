@@ -8,7 +8,7 @@
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -66,7 +66,7 @@ Currently, ESG analysis and data are created through private services (i.e. Morn
 
 We believe this to be a unique opportunity to transition our current and new users onto blockchain while deploying a consumer application on Polkadot.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -100,7 +100,7 @@ We believe this to be a unique opportunity to transition our current and new use
 Micheal Lee: [https://www.linkedin.com/in/michaelslee54/](https://www.linkedin.com/in/michaelslee54/)
 Sam Billingham:  [https://www.linkedin.com/in/sambillingham/](https://www.linkedin.com/in/sambillingham/)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -151,7 +151,7 @@ Sam Billingham:  [https://www.linkedin.com/in/sambillingham/](https://www.linked
 * Once the dashboard is complete, several key metrics will be integrated into the front end of the Bldg App with links back to the parachain explorer.
 * Finally, leveraging ESG data for institutional grants, investing, donations, and crowdfunding. We are currently speaking with the Acala team to explore how to integrate stablecoin transactions for this purpose.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 * What work has been done so far?
     – The Bldg App MVP is live – <http://bldg.app/>

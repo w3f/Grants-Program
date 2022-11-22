@@ -8,7 +8,7 @@
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -50,7 +50,7 @@ We will run Bounce chain as standalone chain first, then join in Kusama/Polkadot
 
 Bounce is currently only viable decentralized auction protocol that is live on Ethereum and Binance Smart Chain
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -76,7 +76,7 @@ Bounce is currently only viable decentralized auction protocol that is live on E
 
 * <https://github.com/bouncefinance/bounce-network>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -109,7 +109,7 @@ Bounce is currently only viable decentralized auction protocol that is live on E
 * We will integrate EVM module into Bounce Chain to support Ethereum ERC20 tokens.
 * We will implement more type of auctions like lottery auction, social verified auction, etc.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Possible additional information to include:
 

@@ -6,7 +6,7 @@
 
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/125#issuecomment-946479942)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -73,7 +73,7 @@ Similar projects:
 
 We have created `Polkadot-Dart`, which, combined with Flutter framework, can greatly reduce the barrier to participation for cross-platform developers, as well as reduce the complexity of cross-platform application development and maintenance. In addition, the cross-platform experience of Polkadot-Dart's users is also improved.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -102,7 +102,7 @@ SHANGHAI NIEPAN INFORMATION TECHNOLOGY CO., LTD., a startup company focusing on 
 
 None.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

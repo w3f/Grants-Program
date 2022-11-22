@@ -4,7 +4,7 @@
 - **Payment Address:** 0xd35f9Ea14D063af9B3567064FAB567275b09f03D(ETH-USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Where did the idea come from?
 
@@ -182,7 +182,7 @@ This table compares our project to similar projects in other ecosystems.
 | Target Audience   | Crypto users                                                                | Same as STEPN | Crypto users and fitness users                                                                            |
 | Source of income  | NFT Sales, Market Tax                                                       | Same as STEPN | VFE Sales, Market Tax, Product Sales                                                                      |
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -217,14 +217,14 @@ Our team also uses the [openwallet developer platform](https://www.openwallet.cn
 - <https://github.com/fanyinghao>
 - <https://github.com/Brochao>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 - At present, we have completed the [official website release](https://toearn.fun).
 - At present, we have completed [App Mockups](https://app.mockplus.cn/run/design/21F_BXJYGPY/47SlUMc7lXwKP?cps=collapse&dt=iPhone%2013&ha=1&linkID=O9QYqoyvhVRzS&nav=1), and some [VFE](https://drive.google.com/drive/folders/1O3yULWEVhGFzzDXwTWQr75SUU1-8oMEg?usp=sharing) and [Smart Jump Rope Design](https://drive.google.com/drive/folders/1NtV9sDeP8ATlT8hk0e22wQX6pDokIV9M?usp=sharing).
 - Polket is under development and the [Testnet](https://polkadot.js.org/apps/?rpc=wss://testnet-node.polket.io#/explorer) has been deployed .
 - We have found a smart jump rope factory to develop a prototype product and embedded the encryption library we wrote into the product's chip. Each product generates a ECC keypair at the factory and implements the signature algorithm of the training data.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -278,7 +278,7 @@ Our projects are open source based on GPL-3.0 license.
 1. We plan to apply for some funding from the `Kusama Treasury` before launching the `App beta version` to meet the first batch of equipment production. We will invite internal test users to the community, and distribute the first batch of equipment to them for free testing experience.
 2. `Polket` plan to bid on Kusama's parachain slots to gain access to the Kusama ecosystem.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 

@@ -4,7 +4,7 @@
 * **Payment Address:** 0x9D418c51B8B417A7ac9299aFcb736Bb6aE6018B7, (DAI)
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/756)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -51,7 +51,7 @@ We empower exisiting projects to progressively decentralized without completely 
 * [Wifi Coin](https://wificoin.com/) is a Polkadot ecosystem project aiming to provide fiat-to-crypto on ramps. Our project enables stablecoin swaps as opposed to Wifi Coin's unique token, which requires that users understand how to purchase crypto for use of their platform. We found this project under existing Web3 grant applicaitons [Q4 2020](https://github.com/w3f/General-Grants-Program/blob/master/grants/accepted_grant_applications.md#surfing_woman-wave-8---fourth-quarter-2020), and we have reached out to them in attempt to network and potentially collaborate. We didn't receive a response and are unclear where they are progressing.
 * [Encointer](https://encointer.org) is a decentralized UBI/digital identity protocol. Similar to Valibre, they emphasisze local communitiy development through unique local monetary systems. However, Encointer requires extensive educaiton efforts for the users of their protocol as opposed to abstracting the complexity of decentralized technology as Valibre achieves through Sube and Valor.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -93,11 +93,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 * **Stanly Johnson:** <https://www.linkedin.com/in/stanlyj/>
 * **Samantha Robertson** <https://www.linkedin.com/in/samantharobertsonreal/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 As part of the **Substrate builders program** we have completed the MVP implementation of the escrow and local rates pallet of the VLN parachain.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -152,7 +152,7 @@ Alongisde the promotion of our project, our team is working to define a buisness
 * Applying to become a Common Good Parachain on Kusama: We believe that our protocol aligns with the goals other projects in the ecosystem also vying for a CG parachain slot, but our capacity to abstract the complexity of crypoteconomics is a distinct feature. It is, therefore, an opportunity to provide public utility to the ecosystem.
 * Launching a Parachain/Parathread on Polkadot: With a unique tokenomic model, we also believe that Valibre can invite broader appeal and attract emerging projects and use cases beyond our current percieved scope. This also has obvious incentvies to attract VC investment to our protocol.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website, the Substrate Builder's Program, as well as a networking meeting with the Acala team.
 

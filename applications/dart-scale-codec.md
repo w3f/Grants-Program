@@ -5,7 +5,7 @@
 * **Proposer:** [NBLTrust](https://github.com/nbltrust)
 * **Payment Address:** 1LcdMwwiG1Vt8UmMqUk1RLAd2MUpbeoyba
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 A Dart implementation of  the SCALE (Simple Concatenated Aggregate Little-Endian) Codec. We are building a wallet app called [**Jadewallet**](https://github.com/w3f/General-Grants-Program/pull/338) which will support DOT/KSM, this project is a component of it.
 
@@ -13,7 +13,7 @@ A Dart implementation of  the SCALE (Simple Concatenated Aggregate Little-Endian
 
 We are building **Jadewallet** with Flutter, although there are Rust, C++ implementations of the SCALE Codec, we think the Dart implementation is the first choice.  And we hope the project will also help the Polkadot developer community.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -44,7 +44,7 @@ Tuolian provides a full range of custody services for well-known companies or or
 * <https://github.com/nbltrust>
 * <https://github.com/alexxuyang>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 * **Total Estimated Duration:** 1 month
 * **Full-time equivalent (FTE):**  1.5
@@ -67,7 +67,7 @@ Tuolian provides a full range of custody services for well-known companies or or
 
 We are planning to make our dart-substrate-sdk open source.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 ### Are there are any teams who have already contributed (financially) to the project?
 

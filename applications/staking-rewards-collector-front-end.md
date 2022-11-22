@@ -9,7 +9,7 @@
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 This application is in response to [Front-End for Staking Rewards Collector](https://github.com/w3f/General-Grants-Program/blob/master/rfps/staking-rewards-collector-front-end.md)
 
@@ -40,7 +40,7 @@ We expect the teams to already have a solid idea about your project's expected f
 
 The [staking-rewards-collector](https://github.com/w3f/staking-rewards-collector) is a tool to gather staking rewards for given addresses and cross-reference those with daily price data. This is a very useful tool for every validator and nominator in the ecosystem. However, since it has currently a CLI and requires some technical knowledge to set up (git, nodejs, yarn). A front-end hosted on a website could help many users getting access to this tool and enjoy the benefits.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -69,14 +69,14 @@ Jackson Harris: Software Engineer 3 years, Digital Marketing/Business Developmen
 
 * <https://www.linkedin.com/in/jacksonharris3/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
 * Original [RFP](https://github.com/w3f/General-Grants-Program/blob/master/rfps/staking-rewards-collector-front-end.md) (requests for proposal),
 * Conversation reference to my original [submission](https://github.com/w3f/General-Grants-Program/pull/439) with @axl of w3f
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Milestone 1 (Implementation & Testing)
 
@@ -105,7 +105,7 @@ If you've already started implementing your project or it is part of a larger re
 * Ask the community for suggestions to improve and add new features as necesary.
 * Refactor and Deploy to IPFS
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 

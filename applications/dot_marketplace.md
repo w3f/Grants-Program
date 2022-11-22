@@ -6,7 +6,7 @@
 - **Payment Address:** 0xF13001401396AA866E8012f31fD939C7E83B8601  
 - **Level:** 2  
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### **Overview**
 
@@ -123,7 +123,7 @@ Profiles of the people working actively on Dot Marketplace
 - [Bharath Kumar](https://www.linkedin.com/in/bharath-kumar-h-13a572126/)
 - [Smita Ashok](https://www.linkedin.com/in/smita-ashok-823631175/)
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Dot Marketplace POC was conceptualised and developed during the Polkadot India hackathon. The roadmap listed below comprises of new features that would help take the POC to a minimum viable product (MVP).
 
@@ -230,7 +230,7 @@ Future releases of the Dot Marketplace include:
 
 ###
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website, Polkadot India Buildathon
 

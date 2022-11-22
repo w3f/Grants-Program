@@ -4,7 +4,7 @@
 * **Payment Address:** 3Fwmy2QHw1Xp7S956PMG9NKq1yngzRqGqf (BTC)
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/424#issuecomment-1006435267)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -130,7 +130,7 @@ UpLink can be distinguished from those projects because:
 
 * All local network level connections,  encryption, and protocol management, internet sharing features are autonomous, which do not require any user intervention—making it easier to use and adopt the technology.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -170,7 +170,7 @@ UpLink can be distinguished from those projects because:
 * Damaris Valero (<https://www.linkedin.com/in/damaris-valero-23711619/>)
 * Aldrin D'souza (<https://www.linkedin.com/in/aldrin-dsouza/>)
 
-## Development Status :open_book
+## Development Status :open_book:
 
 |         Module         |              Status              |
 |:----------------------:|:--------------------------------:|
@@ -185,7 +185,7 @@ The Communication Protocol is not yet designed, since one of the key requirement
 
 The Bluetooth Low Energy (BLE) Drivers already exist and are used by HypeLabs extensively in production environments. These drivers are a component of the Hype SDK (HypeLabs’ main product) and need to be ported as an isolated binary dependency, since the Hype SDK will not be used for this project.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 |       Deliverable      |                                       Description                                       |
 |:----------------------:|:---------------------------------------------------------------------------------------:|
@@ -289,6 +289,6 @@ This submission proposes the implementation of a binary peer-to-peer communicati
 * Launch and promote Testnet competition to test token economics;
 * Partnership with OEMs and app partners.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website and personal recommendation.

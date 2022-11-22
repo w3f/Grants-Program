@@ -7,7 +7,7 @@
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Description :page_facing_up
+## Project Description :page_facing_up:
 
 Please provide the following:
 
@@ -30,7 +30,7 @@ Please provide the following:
   
   Polkadot is one of the most promising new blockchain platforms. We are passionate about providing world class experiences for staking communities around the world and are confident that a Lunie x Polkadot integation would be extremely well-received and impactful.  We're excited to dive deep into Polkadot governance to help drive engagement and ease the overall experience.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 * **Members:** Jordan Bibla, Fabian Weber, + 3 engineers, 1 ecosystem developer, 1 designer
 * **LinkedIn Profiles:** <https://www.linkedin.com/in/jbibla>, <https://www.linkedin.com/in/fabian-weber-04100a37>
@@ -39,7 +39,7 @@ Please provide the following:
 * **Legal Structure:** Lunie International Software Systems Inc., 60 Atlantic Avenue, Suite 200, Toronto, Ontario, Canada M6K 1X9
 * **Team's Experience:** Jordan and Fabian helped launch the Cosmos Network as employees of Tendermint Inc. They have spent the last two and a half years building, researching, and designing proof of stake experiences together. The Lunie team has also recently completed staking integrations for Kusama.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 * **Total Estimated Duration:** 5 weeks
 * **Full-time equivalent (FTE):**  5.5
@@ -81,7 +81,7 @@ Please provide the following:
 | ------------- | ------------- | ------------- |
 | 3. | Notifications, Council, Treasury |  * ability to recieve notifications for on-chain governance topics * see active council members * see treasury proposals *
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Any additional information that you think is relevant to this application that hasn't already been included.
 

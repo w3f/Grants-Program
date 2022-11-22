@@ -188,7 +188,7 @@ Usage scenarios:
   
 BCANNN will create a name service protocol on polkadot parachain. As a basic protocol of the name service, BCANNN will have built-in support for name/subname registry and resolver,and it shall support existing blockchain domain names, such as .eth, .luxe, etc., through adapter contract. That means users can use BCANNN as a common resolver for all blockchain domain to query/update name services records.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 

@@ -7,7 +7,7 @@
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -147,7 +147,7 @@ The system also relies on reliable price oracle to keep the collateral in a heal
 
 There are several DeFi projects in the ecosystem at the moment but we believe that our value proposition is unique and also complementing the existing products in the market. We are focused on building the decentralised money market, which could be supporting the stablecoin infrastructure that already exist and the staking asset liquidity products in the ecosystem.  
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -187,7 +187,7 @@ It is currently a private repo, please contact us for access.
 * <https://www.linkedin.com/in/yuqing-zhao-1201b6120/>
 * <http://linkedin.com/in/xingmo-liu-7b0823140>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -219,7 +219,7 @@ We have been documenting the project progress and also our understanding of the 
 
 After delivery, we will start to explore cross-chain lending senario and will first try to enable cross-chain asset to be lended and borrowed. Konomi aims to bridge the gap between crypto and fiat world by offering an easy to use, high performance product for users to trade and manage their crypto assets. In the mid term, we plan to implement cross-chain lending aggregation protocols since the current products could not execute orders across parachains simultaneously. We plan to deploy lending modules to partnered parachains in order to support cross-chain lending. In the long term, acquiring fiat-based customers and improve Polkadot cross-chain protocol to more compatible with cross-chain lending are the two strategic focus. In terms of fiat to crypto gateways, there have been many licensed service providers but it is yet to achieve mainstream adoption. With regulated players eying in this space, there will be more users and more demand for DeFi products. Furthermore, we believe that cross-chain infrastructure is going to be an important building block for crypto industry going forward since current solutions for BTC and other assets supported on Ethereum are either centralised or slow in speed.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Possible additional information to include:
 <https://medium.com/konomi>

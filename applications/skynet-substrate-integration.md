@@ -3,7 +3,7 @@
 - **Team Name:** Skynet Labs
 - **Payment Address:** ETH `0xa4e14Aa5F82Cd903d97BE09B921c97E7Fc43d909`
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 If this application is in response to an RFP, please indicate this on the first line of this section.
 
@@ -98,7 +98,7 @@ Some use cases where we believe Skynet will be useful for Substrate devs:
 - Persistance of runtime data that isn't saved to storage
 - Off-chain publishing of on-chain data
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -142,11 +142,11 @@ The Skynet Labs team (recently renamed from Nebulous) was responsible for the de
 - <https://www.linkedin.com/in/sevey/>
 - <https://www.linkedin.com/in/dghelm/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Preliminary research has been undertaken into the Polkadot ecosystem generally and substrate development specifically for the purposes of writing this proposal, along with coordinating with the Web3Foundation and Parity team member to make sure the the implementation plans and technical details were thorough and sensible.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -190,7 +190,7 @@ We engage general audiences and developer audiences with our outreach media, and
 
 Skynet Labs will continue to develop Skynet by furthering integrations with blockchain projects needing decentralized, off-chain storage and front-end hosting, while also supporting client-facing applications that fall outside of blockchain programming. Our goal is that the data for these use-cases becomes increasingly interoperable and empowers users to have control over their data. Our medium-term plans include a robust monetization ecosystem that builds on our client-side, fully decentralized identity solution MySky.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** - Parity & Web3 Foundation Representatives
 

@@ -4,7 +4,7 @@
 - **Payment Address:** `0x3da76bca7ccc8f92dc9c3bc000ea5fc64d7f76b8` (USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-# Project Overview :page_facing_up
+# Project Overview :page_facing_up:
 
 We applied for a grant in 2020 and got approved under the name [Sensio Network](https://github.com/w3f/Grants-Program/pull/5). Since then we did a lot of research and improved the approach. We did rebranding; SensioPhoto is [Kelp Digital](http://Kelp.Digital) and SensioNetwork is [Anagolay Network](http://Anagolay.Network).
 
@@ -101,7 +101,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   - NONE
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -144,7 +144,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - [https://www.linkedin.com/in/danielmaricic/](https://www.linkedin.com/in/danielmaricic/)
 - [https://www.linkedin.com/in/adriano-dalpane/](https://www.linkedin.com/in/adriano-dalpane/)
 
-# Development Roadmap :nut_and_bolt
+# Development Roadmap :nut_and_bolt:
 
 ## Overview
 
@@ -306,7 +306,7 @@ Execution of the Workflow manifest created in [#3](#anagolay-cli-workflow-manife
 
 Later, we will implement the social aspect of the Operation and Workflow credibility creating the revenue streams for developers who will be testing the Operations and the developer who creates the Operation. This is part of the Reputation system for the Developers, Operations, and Workflows.
 
-# Additional Information :heavy_plus_sign
+# Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 

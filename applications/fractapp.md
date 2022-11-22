@@ -5,7 +5,7 @@
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -75,7 +75,7 @@ Similar projects: Luno/Polkawallet
 
 We are creating a messenger with a cryptocurrency wallet. This will help the user to interact with each other without a complicated address. Users can exchange currency, use p2p smart-contracts, vote in the DAOs and etc via chat-bots.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -113,7 +113,7 @@ Anastasiya Strashnikova:
 
 * <https://www.linkedin.com/in/elshan-dzhafarov/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

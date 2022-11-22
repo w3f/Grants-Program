@@ -4,7 +4,7 @@
 - Payment Address: 0xb13BBd9C9777CACF397e1C083BbB1531E6fDe990 (ETH/DAI)
 - [Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels): 2
 
-## 1 Project Overview :page_facing_up
+## 1 Project Overview :page_facing_up:
 
 ### 1.1 Overview
 
@@ -840,7 +840,7 @@ Comparison with other data labelling and captcha service providers:
 
 Idena is similar in that it requires users to complete CAPTCHAs to prove their humanness and is entirely anonymous. Participating members must periodically attend validation ceremonies to solve these CAPTCHAs. A user is rewarded with tokens if they successfully solve a captcha (mining). Idena cites itself as a proof-of-person blockchain based on democratic principles. Approximately 8,000 nodes (humans) have joined the network to date and validation ceremonies are held every 19 days (n^0.33).
 
-## 3 Team :busts_in_silhouette
+## 3 Team :busts_in_silhouette:
 
 ### 3.1 Team members
 
@@ -937,7 +937,7 @@ The code can be viewed at the following links _with permission_. Please request 
 - [https://github.com/prosopo-io](https://github.com/prosopo-io)
 - [https://github.com/prosopo-io/prosopo](https://github.com/prosopo-io/prosopo)
 
-## 4 Development Status :open_book
+## 4 Development Status :open_book:
 
 Development of the Prosopo software is in the prototype stage. We have conducted market surveys and technical reviews and carefully planned out the project.
 
@@ -954,7 +954,7 @@ Providers:
 
 We expect this list to grow as we develop and deploy our marketing strategy.
 
-## 5 Development Roadmap :nut_and_bolt
+## 5 Development Roadmap :nut_and_bolt:
 
 ### 5.1 Overview
 
@@ -1186,7 +1186,7 @@ The team is committed to contributing to the Prosopo governing body in the long 
 
 Ultimately, we would like to see innovations in bot detection in the blockchain space and believe that a marketplace for human verification methods is an optimal solution. Whilst captchas are currently the focus, future verification may involve grading the humanness of accounts based on account activity and connections. The Prosopo smart contract and Provider service will be flexible enough to accommodate these new formats.
 
-## 7 Additional Information :heavy_plus_sign
+## 7 Additional Information :heavy_plus_sign:
 
 #### 7.0.1 How did you hear about the Grants Program?
 

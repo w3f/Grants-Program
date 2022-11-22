@@ -4,7 +4,7 @@
 - **Payment Address:** 0xc905c448db9942c662fcb1680f3ecfcd0592409c
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -130,7 +130,7 @@ These are some projects that could ease the implementation of the proposed syste
 
 Subquery and Subsquid projects are potential candidates to serve as the indexing backend of Epirus Explorer. However, the indexed data needs to turn into the human-friendly information displayed in the explorer UI, requiring further transformations and data enrichment (e.g. metadata from ABI descriptors, RPC calls for standard contract interfaces, etc.) This data transformation and the user-friendly display are what Epirus Explorer provides.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -161,7 +161,7 @@ For this minimum viable product delivery the following features are out of scope
 - Decoding of events based on ABI metadata
 - Processing of "intrinsics", i.e. cross-contract interactions equivalent to Ethereum "internal transactions"
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team Members
 

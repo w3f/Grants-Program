@@ -4,7 +4,7 @@
 * **Payment Address:** DAI 0x31840be5bf48811ffa35512735de0a53b4ba230d
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/420#issuecomment-1017430431)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -76,7 +76,7 @@ The results of this project will be used by smart contract developers to verify 
 
 In conclusion: we are not aware of any teams in the Polkadot/Kusama ecosystem that are currently pursuing a similar project.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -115,11 +115,11 @@ The team is composed of members with many years of experience in general + block
 * <https://www.linkedin.com/in/daveemorgan/>
 * <https://www.linkedin.com/in/christoph-michel-dev/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 As described in the project prior work section above, we are currently developing a generic WebAssembly bytecode fuzzer. The code is currently closed source (let us know in case you would like to arrange a private session to review it).
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -172,7 +172,7 @@ Future development:
 * Integrate and fuzz Substrate runtimes that include either WASM or EVM smart contract pallets
 * Investigate feasibility of adding compiler engine as a backend to [sp_sandbox](https://crates.io/crates/sp-sandbox) to reduce maintenance overhead of fuzzer model
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 * Work you have already done:
   * Implemented generic WASM fuzzer and version targeting EOSIO smart contracts

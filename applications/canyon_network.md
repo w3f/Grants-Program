@@ -3,7 +3,7 @@
 - **Team Name:** Canyon Labs
 - **Payment Address:** 0x009643f61C7cbc91404aE77Fe65542D098B822d1 (DAI)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -17,7 +17,7 @@ This grant mainly concentrates on the consensus part of canyon network, specific
 
 There is no doubt that the infrastructure, providing a secure, highly available, low-cost, and easy-to-use decentralized data access service, will be an essential part of Web3.0 applications. Canyon network is created in such a background and tries to mitigate the known problems in the existing decentralized platforms, with a principle of lightweight storage consensus and highly usable protocol level data retrieval mechanism in mind.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -55,11 +55,11 @@ The GitHub accounts of all team members:
 
 - <https://www.linkedin.com/in/liucheng-xu-2a639b116/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Currently, we already have a skeleton substrate [canyon](https://github.com/canyon-network/canyon) and the Rust CLI [canyon-cli](https://github.com/canyon-network/canyon-cli) to interact with the chain.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -115,6 +115,6 @@ The long term plans:
 - Do more researches and develop a more effective data sharing mechanism, rendering canyon network a highly useable data retrieval platform.
 - Foster more web3.0 applications using the decentralized storage infrastructure provided by canyon network.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 The earlier successful W3F grant name is `Canyon Network`, which is mainly about the early research problems on the decentralized storage network and can be considered the starting point of works afterward.

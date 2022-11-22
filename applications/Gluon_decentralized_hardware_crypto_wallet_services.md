@@ -8,7 +8,7 @@
 
 > *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 > If this application is in response to an RFP, please indicate this on the first line of this section.
 
@@ -185,7 +185,7 @@ A few crypto wallets outside of the Polkadot ecosystem are a little bit similar 
 
 [Ledger](https://www.ledger.com/) or [Trezor](https://trezor.io/) are hardware wallets. We do not sell hardware wallet units to end-users. We provide Trust-as-a-Service instead.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -231,7 +231,7 @@ The TEA-Project started in the year 2019. The idea originally came to the team l
 * <https://www.linkedin.com/in/zehua-jiang-7494a8203/>
 * <https://www.linkedin.com/in/lex-pablo-a638941ba/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 > This section should break out the development roadmap into several milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
 
@@ -381,6 +381,6 @@ This milestone require Schnorrkel threshold signature issue <https://github.com/
 
 Most items in this to-do list are part of the TEA Project plan. When TEA is ready, most of the features will be available too.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 We started the TEA project in 2019. It has been under the radar until recently when it was released to the public. We believe the TEA project could grow large and become the backend service platform for a new type of dApps. These dApps can go beyond the limit of traditional blockchain technologies. Gluon is just one of the many possible demo apps. Once our honor gets granted, we will start looking for investors and hire a CEO and more developers to join us. We hope to maintain a long term and close relationship with the Polkadot community.

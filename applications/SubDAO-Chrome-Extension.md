@@ -3,7 +3,7 @@
 * **Team Name:** [SubDAO Labs](https://github.com/subdao-network)
 * **Payment Address:**  3FcJjvzazcpgmJkesdAfx333fyCudxuAe7
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 The previous application [SubDAO Network Application - <https://github.com/w3f/Grant-Milestone-Delivery/pull/114>]
 
@@ -51,7 +51,7 @@ The project meets at least two needs. The first one is a better wallet as an ext
 
 There are no similar projects in the Polkadot ecosystem yet, and even we already have several wallets for Polkadot. There is a similar project like Aragon in the Ethereum ecosystem compared to **SubDAO**, but there is no chrome extension with wallet integrated yet. Also, there is Maskbook in the Ehtereum ecosystem that provides features to post encrypted messages on different social networks. The SubDAO Chrome Extension is mainly built for the Polkadot ecosystem and provides wallet, social network, and DAO management features.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -120,13 +120,13 @@ The team is the one who applied SubDAO.
 * [Wang Qiang](https://www.linkedin.com/in/wang-qiang-aa6a2894/)
 * [Marvin Tong](https://www.linkedin.com/in/marvintong/)
 
-## Development Status :open_book
+## Development Status :open_book:
 
 The DAO-related smart contracts are partially implemented in the SubDAO plan. Those contracts can be found in <https://github.com/SubDAO-Network/subDAO-contracts>.
 
 We have already designed some UI/UX as the shown previous section, and the full extension relies on the features provided by SubDAO. Milestone 1 of SubDAO is already finished and accepted.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 In the first milestone, we planned to make the SubDAO Chrome Extension be useable for every parachain. The following features will be available:
 
@@ -166,7 +166,7 @@ The Social Network provides the feature to post encrypted messages on Twitter an
 * We will introduce more features for users, like red-packet, group voting, etc.
 * The feedback from communities will be considered as new features in future versions.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 We get this information from the w3f website.

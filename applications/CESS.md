@@ -4,7 +4,7 @@
 - **Payment Address:** 0x378D889a6e66996C9Eda86D20D7E6adE666ce167(USDT)
 - **Level:** 1
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -67,7 +67,7 @@ Compared to the similar projects in the Polkadot ecosystem including Ocean, Data
 - Data rights protection for data owners
 - Competitive cost
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -108,7 +108,7 @@ Jinghong Zeng served more than 20 years with a global telecommunications coopera
 - <https://github.com/Cumulus2021/CumulusSystem>
 - <https://github.com/Cumulus2021/Whitepaper>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -172,7 +172,7 @@ Jinghong Zeng served more than 20 years with a global telecommunications coopera
 
 We will continue to improve the substrate-based CESS blockchain and provide reusable modules for the substrate FRAME. The next phase of our project is to implement CESS  protocol for decentralized cloud on-chain data sharing platform.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** We have heard from Parity Asia.
 

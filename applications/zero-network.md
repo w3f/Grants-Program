@@ -6,7 +6,7 @@
 - **Payment Address:** 0x6fA7BAB5fB3A644af160302de3Badc0958601b44 (DAI)
 - **Level:** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 We would like to implement a `parachain` which specializes in privacy.
 
@@ -104,7 +104,7 @@ The verifier side, we need to optimize the virtual machine performing the zero k
 
 Considering both sides, the zero knowledge scheme is related deeply to calculation workload and the `zk-SNARKs` is the most efficient one but has a setup scheme. Previously, the `zk-SNARKs` setup parameters depended on circuit so we needed to setup parameters when we deployed some new contracts. It's hard to ensure that there are enough parties for each deploy contracts so almost contract base confidential smart contract project uses the `bulletproof`. However, we use the `plonk` which can generate the parameters without depending on circuit so once we setup the parameters, we can reuse that parameters for every transaction with getting profit of `zk-SNARKs` efficiency.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -139,7 +139,7 @@ Our company is working on the blockchain scaling and information hiding technolo
 
 We are not on LinkedIn.
 
-## Development Status :open_book
+## Development Status :open_book:
 
 The information about this project and what we did are following.
 
@@ -147,7 +147,7 @@ The information about this project and what we did are following.
 - The [plonk pallet](https://github.com/PlasmNetwork/plonk) implementation.
 - The [documentation](https://zero-network.github.io/) describing the details.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 Through this grant, we are going to develop the blockchain which supports confidential transactions for both transfers and smart contract executions.
 
@@ -228,7 +228,7 @@ In `Milestone 3`, we are going to implement `wallet` which provides the user to 
 - Anonymous transactions
 - Wasm optimization
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 - How did you hear about the Grants Program?
   - Announcement by another team

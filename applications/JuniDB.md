@@ -3,7 +3,7 @@
 * **Team Name:** Uddug
 * **Payment Address:** 0xc45eAd98E95D1962133d9c15847e2EA4E16dfD0b
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -129,7 +129,7 @@ Pallet is suitable for substrate developers and strives to become a complex solu
 
 We expect that the project will be useful for the Web3 community.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -187,7 +187,7 @@ Team range of experience begins from developing small scaled websites up to comp
 ### Related domain
 <https://thc.uddug.com/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 We have already developed the pre-alfa pallet for **Trusted Health Council** [(https://github.com/uddugteam/thc-node)](https://github.com/uddugteam/thc-node).
 
@@ -196,7 +196,7 @@ Link to initial pull request (<https://github.com/uddugteam/General-Grants-Progr
 Link to 2nd pull request
 (<https://github.com/uddugteam/Open-Grants-Program/blob/master/applications/ML-as-a-service.md>).
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 * **Total Estimated Duration:** 4 months
 * **Full-Time Equivalent (FTE):**  2.5 FTE
@@ -273,6 +273,6 @@ Community engagement
 
 Also we want to realise this idea and integrate it as the core part of our project in the healthcare sphere “Trusted Health Council”.  We have reached agreements with medical institutes in the field of further development of the project concept such as belgium "University of Antwerp" and russian "Pirogov Medical University" on the further development of the project, in particular, providing access to their databases, as well as the creation of specialized departments on the basis of institutes for the innovative development of universities, promotion, participation in healthcare exhibitions and advisors.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 The development of the prototype and initial research have been started with the personal funds. We have tried for a General Grant first, and decided to start with an Open grant Program relying on recommendation. Also we have applied for the Substrate Builders Programm and  have proceeded with a general interview to iterate around steps going forward. We have also opened a dialogue with Blockchers & IPFS.

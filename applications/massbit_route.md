@@ -4,7 +4,7 @@
 - Payment Address: 0xD068C7E05CF20fcEE618C8F9207e019020c62F35
 - Level: 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -273,7 +273,7 @@ When a Node or Gateway joins Massbit, it needs to go through different states be
 
 - With a foundational software design and network routing structure of Massbit Nodes and Gateways, the upcoming integration with more layer-1 protocols, ETH layer 2 solutions, and other parachains become less of a burden in the near future. Once our team sees a demand for a new type of blockchain in the Massbit Route network, the implementation for the new blockchain integration can be done in a short duration. Our team commits to listen and support our community's needs to enrich the ecosystem and maintain the stability of the Massbit network.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -326,7 +326,7 @@ When a Node or Gateway joins Massbit, it needs to go through different states be
 - Nguyen Thien Tuong: <https://www.linkedin.com/in/tuong-nguyen-thien-83a33a194/>
 - Bui Tran Huy Hoang: <https://www.linkedin.com/in/hoangtbui/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 - Massbit Route team has completed the code base for the Massbit Route blockchain distribution network including:
   - Core API
@@ -344,7 +344,7 @@ When a Node or Gateway joins Massbit, it needs to go through different states be
   - Find out key metrics to adjust the fairness for the node approval process
   - Adjust the fee for dAPI usage and fair reward distribution to node providers who served the API request
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

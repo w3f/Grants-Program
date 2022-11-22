@@ -4,7 +4,7 @@
 * **USDC Payment Address:**  0xd2234E506862991ADA75f930c6D79B4236e3E265
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -86,7 +86,7 @@ Kujira team from Cosmos ecosystem already built this without bragging or marketi
 1. A transaction may be finalized more or less than 12 seconds. Improving the block finalization time may be needed, but it is safer than layer 2 with bridge.
 2. If indexer from operator shuts down, the UI cannot work.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -124,13 +124,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 * [Hyungsuk Kang](https://www.linkedin.com/in/hyungsukkang), Founder
 
-## Development Status :open_book
+## Development Status :open_book:
 
 I have fiddled with substrate last year.
 
 [nxcw](https://github.com/digitalnativeinc/standard-substrate)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -272,7 +272,7 @@ neworder.js: Usage guides with query, execution
 * Make real UI based on the working system with SubQuery or other indexer
 * Get funded so that I can feed my devs
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 I applied before.

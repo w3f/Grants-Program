@@ -4,7 +4,7 @@
 * **Payment Address:** ERC 20 ADDRESS: 0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2, It is follow-up grant for [first grant](https://github.com/w3f/Grants-Program/pull/497).
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 It is an application for a follow-up grant. The [initial grant](https://github.com/w3f/Grants-Program/pull/497) covered the first and second milestones:
 
@@ -68,7 +68,7 @@ Objectively speaking, based on what we know and what was listed in their proposa
 * OpenBrush aims to be a starting point for any smart contract developer by providing documentation.
 * Contribute to ink! and Substrate `contract-pallet` to improve the smart-contract development experience(add new features, fix bugs, etc.).
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -148,13 +148,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 * <https://www.linkedin.com/in/dmitry-kryshtal/>
 * <https://www.linkedin.com/in/valeria-laricheva/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 [The project](https://github.com/Supercolony-net/openbrush-contracts) is already in release `1.0.0`.
 
 PSP - <https://github.com/w3f/PSPs/pull/25>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -262,7 +262,7 @@ We're going to make a strong impact in the community, making ink! simple and con
 * Marketing and PR strategy
   * Organizing hackathons, Developing growth hacking strategy for involving developers from different channels
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 In the roadmap, you can see what was already done. Currently, we're on the 3-rd milestone.
 

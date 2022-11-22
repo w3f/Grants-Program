@@ -9,7 +9,7 @@
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 If this application is in response to an RFP, please indicate this on the first line of this section.
 
@@ -119,7 +119,7 @@ The project will be built on the substrate as a parachain or parathread.
 
 Other projects similar to it is gitcoin, but its not in Substrate / Polkadot / Kusama ecosystem. Gitcoin uses quadratic funding, but we will use score schelling game for allocation of funds. Gitcoin is for mainly blockchain projects, but our projects includes local community problems.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -149,7 +149,7 @@ Soumya Ranjan Behera is also a full stack developer with experience in reactjs, 
 * <https://github.com/soumyababu>
 * <https://github.com/amiyatulu/shivarthu>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -204,6 +204,6 @@ Long-term:
     Onboard people into the app, and improve it taking feedback from the community.
     Enhance the app, provide upgrades when required.  
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website

@@ -5,7 +5,7 @@
 - **Payment Address:** 0xF13001401396AA866E8012f31fD939C7E83B8601 (USDT - ERC20)
 - **Level:** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### **Overview**
 
@@ -205,7 +205,7 @@ Future releases of the Dot Marketplace include:
 
 ###
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website, Polkadot India Buildathon
 

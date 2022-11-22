@@ -8,7 +8,7 @@
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 SkyePass is a decentralized and customizable identity management software. On the surface, it is a decentralized, open source and modern password manager.
 
@@ -130,7 +130,7 @@ We have not included all popular ones. These are just ones we have actually used
 | Import From Browsers                 | Not Now. Will be Supported after Beta Release | Yes | Yes | Yes | Yes |With plugins|
 | Extensibility                        | Core Feature! | No | No | No | No |Yes!|
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -154,7 +154,7 @@ Besides private work for companies that cannot be shared, Song developed a simpl
 
 * <https://github.com/skyekiwi/skyepass>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -233,7 +233,7 @@ We allow and encourage our community members to build paid extensions on top of 
 
 Treasury is built for those who contributes to the community: those who translate documentations, those who build extensions and those who contribute to the core code base. SkyeKiwi team will permanently hold 29% voting rights in decisions and 3 veto rights per calendar year, partners before the official launch will also be granted 20% voting rights. And we leave the rest to all other treasury contributors proportionally. These numbers or proposals are not final. We still have a lot to figure out.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 * We have a simple PoC of the core encryption schema built up in a sandbox. UI/UX and other graphic resources are made.
 * We have not applied for other grants yet.

@@ -8,7 +8,7 @@
 
 *The above combination of your GitHub account and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -71,7 +71,7 @@ The differences:
 3. API access within the mapping functions will be supported
 4. Our proposal aims for OLTP, and allowing customisation of indexing process which are different from ETL like projects. The outcome of indexed data is that it is shaped for the need of its specific usecase, and be consumed by browser and mobile apps.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -110,7 +110,7 @@ Ian He led a team and won 2nd price in the substrate hackathon in Hangzhou 2019.
 * <https://www.linkedin.com/in/qiang-ji-58aab276/>
 * <https://www.linkedin.com/in/james-bayly/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -161,4 +161,4 @@ We will publish a series of articles on Medium and videos demonstrating the usag
 * Smart contracts including Solidity and ink! support are in our future roadmap.
 * We are intending to reach out to all major chain explorer teams and engage with the community to see how our service can benefit it.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:

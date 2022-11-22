@@ -4,7 +4,7 @@
 * **Payment Address:** 0xC3094f0ddce699a1Ad9Ef2621DF68Cd297a4c44F(Dai)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -28,7 +28,7 @@ I have already developed <https://github.com/gmajor-encrypt/php-scale-codec>
 
 Help developers choose suitable the scale code package in the ecosystem to avoid unknown errors
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -55,11 +55,11 @@ with PHP, GOLANG, PYTHON, Nodejs, Rust
 
 <https://github.com/gmajor-encrypt/php-substrate-api>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Not yet
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

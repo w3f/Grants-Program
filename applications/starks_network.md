@@ -5,7 +5,7 @@
 * **Proposer:** [gbctech](https://github.com/gbctech)
 * **Payment Address:** bc1qcx9jcqlvppyp2welewtmvwqvyl36sgeh09dyqk
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -89,7 +89,7 @@ There are some existing projects which can be related to the Starks Network. In 
 * [Zerochain](https://github.com/LayerXcom/zero-chain) is a Substrate based zkp blockchain project. The main difference from the Starks Network is that it uses zk-SNARK instead of zk-STARK VM as its zkp power house. The zk-SNARK is well known for its small proof size. But it requires a trust setup process to get started which limits its usage. In addition, the function of the Zerochain is focused on private transaction, while the Starks Network aims to provide zkp service for general purpose computations.
 * The [Cairo project](https://medium.com/starkware/hello-cairo-3cb43b13b209) from [StarkWare](https://starkware.co/) (inventor of the zk-STARK technology) announced a few days ago. As explained in the press release, "Cairo is the first production-grade platform for generating STARK proofs for general computation". The description of its functionalities have a lot of similarities to what our Starks Network have to offer. It is fair to say the Cairo project is a powerful counterpart of the Starks Network--only it is built in the Ethereum ecosystem. The whitepaper, documentation and related tooling are yet to come in the next few months (unsure if it is open sourced). And we will closely watch its development as it is exciting and inspiring to have more projects coming in the field of zk-STARKs application.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -133,7 +133,7 @@ Glacier Blockchain Technology is a company registered in Yantai, Shandong, P. R.
 * <https://www.linkedin.com/in/xzhangcn/>
 * <https://www.linkedin.com/in/%E6%98%95%E7%87%83-%E9%99%88-b41b26187/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -167,7 +167,7 @@ We will publish an article on medium upon the completion of this project. Meanwh
 * In stage 3, we will experiment the cross-chain communication with other parachains. If things go well, we will provide zkp support to the smart contracts in other parachains (Plasm or Edgeware are our choices right now).
 * After its main functionalities are finalized and tested, the Starks Network will issue its own tokens. And we hope other parachains in the ecosystem can benefit from its zkp service. The network will receive economic incentives in the process to sustain its service model.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 * What work has been done so far?
 

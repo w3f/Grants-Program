@@ -121,7 +121,7 @@ Louise Reed is scheduled to speak at the following Certified Public Accountant S
 | 9/26/2022    | VA (+ VA Tech) | Roanoke |
 | 11/17/2022   | VA (+ VA Tech) | Virginia Beach |
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -161,7 +161,7 @@ Afloat is partnering with Hashed Systems DAO LLC, a substrate development team w
 - Hashed website: <https://hashed.io/>
 - Erick on GitHub: <https://github.com/tlacloc>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -286,7 +286,7 @@ User scenarios:
 
 - Provide API access and referral program for tax industry participants. (e.g. allow existing systems and networks to seamlessly integrate)
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 Raul Romanutti recommended the program on a call with Louise Reed, Max Gravitt and Augusto Lara on March 21st, 2022.

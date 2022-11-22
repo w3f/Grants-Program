@@ -3,7 +3,7 @@
 * **Team Name:** Uniscan
 * **Payment Address:** 0x480821a0700b0d5fBC722a5339ED2d49979Eaa42 (DAI)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -211,7 +211,7 @@ The difference between us is that the purpose and direction. Kodadot gallery is 
 2. There is not an NFT explorer support evm in the Polkadot/Kusama ecosystem.
 3. It is difficult for the NFT explorers of the Ethereum ecosystem to cover the chains in the Polkadot ecosystem. And they are not permissionless.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -244,13 +244,13 @@ Uniscan is a team dedicated to create an unified NFT explorer. We have the abili
 * <https://github.com/wuminzhe>
 * <https://github.com/tuminfei>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 * I try to use rust to query the evm log by address and topic, this is part of the research.
 
   <https://github.com/wuminzhe/evm-log-tracker>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

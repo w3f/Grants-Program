@@ -3,7 +3,7 @@
 * **Team Name:** CryptoLab
 * **Payment Address:** 0x064530BBA1ea3aaE6cC68207Ec75EEa6a7C0c78b (DAI)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 This application is in response to <https://github.com/w3f/General-Grants-Program/blob/master/rfps/staking-rewards-collector-front-end.md>
 
@@ -58,7 +58,7 @@ Currently, CryptoLab is served on a single VPS, thus the Staking Rewards Collect
 
 The staking-rewards-collector is a tool for gathering staking rewards for given addresses and cross-referencing those with daily price data. It is a handy tool for every validator and nominator in the ecosystem. However, since it currently has a CLI and requires technical knowledge to set up (git, nodejs, yarn). A front-end hosted on a website could help many users reach this tool and enjoy the benefits.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -96,11 +96,11 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 N/A
 
-## Development Status :open_book
+## Development Status :open_book:
 
 * Original [RFP](https://github.com/w3f/General-Grants-Program/blob/master/rfps/staking-rewards-collector-front-end.md) (requests for proposal)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Milestone 1 (Implementation)
 
@@ -130,7 +130,7 @@ Ask users to enter the *Start Balance* is bothersome. To further enhance the Sta
 
 ![image](https://user-images.githubusercontent.com/5772463/120570179-18f0f280-c44a-11eb-9ec6-3a68e91803b3.png)
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 

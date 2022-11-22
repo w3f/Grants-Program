@@ -4,7 +4,7 @@
 - **Team Name:** Parallel
 - **Payment Address:** 0x17816E9A858b161c3E37016D139cf618056CaCD4
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 Parallel finance is a decentralized lending/borrowing and staking protocol built on top of the Polkadot ecosystem. Our platform will allow users to earn "double interests" from staking and lending their tokens simultaneously (hence the name "parallel" finance).
 
@@ -81,7 +81,7 @@ The lending protocol was inspired by compound protocol and our blockchain soluti
   - **If so, how is your project different?** Compound has been a successful and proven model for lending and borrowing assets in a decentralized manner in the Ethereum ecosystem. However, Compound doesn't offer staking services, and there is currently no decentralized lending/borrowing solution launched in the Polkadot ecosystem. Acala Network does offer staking services, but doesn't offer lending/borrowing services. From that perspective, we are a unique solution that combines both services and offers additional interests to our users.
   - **If not, are there similar projects in related ecosystems?** We have not yet found a project that will be focusing on generating double interests for token holders through lending and staking.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -124,7 +124,7 @@ The lending protocol was inspired by compound protocol and our blockchain soluti
 - <https://www.linkedin.com/in/zhulipai/>
 - <https://www.linkedin.com/in/yz89/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -203,7 +203,7 @@ Other:
 - This is our tentative development roadmap for the rest of this year:
     ![image](https://user-images.githubusercontent.com/56744348/111891918-94ebaa80-89c4-11eb-8707-a16b33e7b54c.png)
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 - We are a team that met and formed during the March 2021 Polkadot Hackathon in Shanghai. Our team members are both in the US and China, and come from a strong engineering background (crypto/blockchain, startup, traditional tech company), product management and financial background (venture capital, Defi). We were able to deliver our proof of concept within a month, and earned third place at the Hackathon.
 

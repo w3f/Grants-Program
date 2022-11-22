@@ -3,7 +3,7 @@
 * **Team Name:** Apron Labs
 * **Payment Address:** 15tV6rQSwNgWQ1Z5pim2yJmELLvWNm5D4V
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -84,7 +84,7 @@ Infura.io is the typical infrastructure services provider that is totally centra
 
 The Apron Network provides exactly the same API services as infura.io but in a decentralized way, thanks to Substrate 2.0 Framework which let us only focused on the logic on top of blockchain rather than re-develop a new blockchain. In the future, the Apron Network will provide a decentralized infrastructure services network.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -124,7 +124,7 @@ Junjun
 
 * [Toney](https://www.linkedin.com/in/yi-sui-297a9223/)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -180,7 +180,7 @@ Development Plan
 * In phase 3, provide decentralized quick node services.
 * Finally, our goal is to provide the infrastructure services network.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Currently we just start the first design of the Apron Network.
 

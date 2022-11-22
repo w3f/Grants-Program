@@ -4,7 +4,7 @@
 - **Payment Address:** 0x9aD97d8605F80003106B0ED7DEe330F064674365 (USDT)
 - **Level: 1
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -376,7 +376,7 @@ Although Nolik is designed to be an independent product, the secure platform wit
 For example, apps will be able to exchange secrets like private keys, send tokens or a WASM code.
 That might be one of the possible benefits for the Polkadot community, but we will know if there is any value only by talking to users.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -428,7 +428,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - <https://www.linkedin.com/in/amrbz>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 - [XYZ Messenger](https://docs.google.com/document/d/1Vxieh7b6wTQZoHpBQQTC5bH58kwcYlF0wm8yh0acXCI/edit?usp=sharing)
 
@@ -436,7 +436,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 Those are research documents that lead me to this project.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -498,7 +498,7 @@ This milestone will allow the usage of CLI tools, which are going to be written 
 - Convert to mainnet
 - Build a messaging app
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 Personal recommendation of my friends:

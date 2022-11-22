@@ -3,7 +3,7 @@
 * **Team:** [Subspace Labs](https://www.subspace.network)
 * **Payment Address:**: (DAI) 0xeF9da023c8FAF3F84E6b3F2A2A902B03e7E72E7D
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -86,7 +86,7 @@ Inside the Polkadot ecosystem, Crust Network is the only existing option for off
 
 Outside of the Polkadot ecosystem there are several storage-based networks. At a high level Subspace provides both an alternative consensus mechanism (proofs-of-archival-storage) and a distributed storage network for arbitrary data. In the first case it builds on the work of blockchains such as Burst, Mass, Chia, and Spacemesh, while resolving the incentive challenges related to the farmer’s dilemma (described in our whitepaper), and is therefore much more suitable for scalability. In the second case, it provides a generic platform for distributed storage, similar to Sia, Storj, Filecoin, and Arweave. Our construction is closest to Arweave, but far more incentive-compatible since consensus is based entirely on proofs-of-storage, whereas Arweave is mainly secured by proof-of-work.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -118,7 +118,7 @@ We each have three years experience designing and building blockchains and decen
 * [Jeremiah](https://www.linkedin.com/in/jeremiah-wagstaff-483b5057/)
 * [Nazar](https://www.linkedin.com/in/nazarpc/)
 
-## Development Status :open_book
+## Development Status :open_book:
 
 * [Subspace Technical White Paper](https://drive.google.com/file/d/1v847u_XeVf0SBz7Y7LEMXi72QfqirstL/view)
 * [subspace-core-rust](https://github.com/subspace/subspace-core-rust): Initial from-scratch, Rust implementation
@@ -126,7 +126,7 @@ We each have three years experience designing and building blockchains and decen
 * [spartan-farmer](https://github.com/subspace/spartan-farmer): A bare-bones farmer that connects to the substrate client
 * [spartan](https://github.com/subspace/spartan): A shared primitive library for the underlying proof-of-space/replication.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

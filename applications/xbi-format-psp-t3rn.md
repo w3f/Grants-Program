@@ -10,7 +10,7 @@
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -177,7 +177,7 @@ t3rn is a cross-chain smart contracts registry that enable smart contracts execu
 
 The XBI Format and XBI Executors for cross-chain smart contracts will be tested live in a XCM Environment, such as the Rococo network with other selected Substrate builders.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -214,7 +214,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - <https://www.linkedin.com/in/jacobkowalewski/>
 - select members of the [t3rn team](https://www.linkedin.com/company/t3rn-io) - TBD
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Milestone 1 — Produce PSP as a result of collaboration with Selected partners which sets requirements for XBI Format and XBI Executors Interface
 
@@ -234,7 +234,7 @@ This is the research-focused grant proposal on XBI which is assumed to be follow
 
 XBI will help contribute to the t3rn vision of a fully connected cross-chain ecosystem, rooted in Polkadot. For the context, t3rn is building a cross-chain smart contract hosting platform that enable smart contracts execution on mulitple blockchians.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 This is our second Web3 Foundation grant, having delivered on our first grant back in December 2020. We having been working tirelessly within the Polkadot ecosystem ever since, as part of the Substrate Builders Program and intend to launch as a Polkadot parachain in summer 2022.

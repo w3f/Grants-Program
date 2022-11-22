@@ -3,7 +3,7 @@
 * **Team Name:** Plasm Network (Shinsaku Ashizawa, Sota Watanabe)
 * **Payment Address:** 0xb82EdE43D03fD23dcdb2d066720b3E77F3bedf6d
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 We have been working on Zk projects and scalability solutions and now we would like to implement Zk plonk pallet.
 
@@ -34,7 +34,7 @@ Glacier is building a Distaff VM for zk-STARK proof generation and verification 
 
 We believe zkSNARK with plonk will be core technology of next blockchain area. That allows Substrate to protect the privacy and scale on the huge number of transactions without decreasing the security level.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -74,7 +74,7 @@ iously, please list the name of the project and legal entity here.
 
 * <https://www.linkedin.com/in/sota-watanabe-b962b3110/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Summary
 
@@ -112,7 +112,7 @@ This zkSNARK plonk pallet provides us following function.
 * Zk Rollup implementation
 * private transfer protocol
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 - [web site](https://www.plasmnet.io/)
 * [document](https://docs.plasmnet.io/)

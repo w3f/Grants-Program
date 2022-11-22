@@ -4,7 +4,7 @@
 * **Team Name:** NUTS Finance
 * **Payment Address:** 0x679824d755B054a2a50358008472a6F400740319
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -62,7 +62,7 @@ Similar to Equilibrium, [Sunrise DEX](https://github.com/w3f/Open-Grants-Program
 
 Laminar is an over-collateralized synthetic asset protocol that uses various underlying assets to generate a value pegged assets. StableAsset is highly optimized for asset synthesis with a basket of assets with the same peg, and it can achieve a collateral ratio closed to 100%.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -93,7 +93,7 @@ NUTS Finance is a blockchain development DAO. Our team is composed of experience
 * <https://www.linkedin.com/in/joeztang>
 * <https://www.linkedin.com/in/terry-lam-80a71927>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### **Overview**
 
@@ -149,7 +149,7 @@ We are going to launch token economics and governance to support the system.
 
 We are also going to launch multiple Stable Assets on Polkadot and reach DeFi applications for community adoption.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 We've successfully launched our first StableAsset, [acBTC](https://app.acbtc.fi/), on Ethereum. It receives positive feedback from the community and reaches peak total supply of 577 acBTC. The source code for acBTC can be found [here](https://github.com/nutsfinance/acBTC).
 

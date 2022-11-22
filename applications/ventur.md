@@ -4,7 +4,7 @@
 - **Payment Address:** 0x98d8b52Eb09db91f92D01F0DF40cFa3F0e172c7f (usdc)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -83,7 +83,7 @@ There have been multiple implementations of NFT pallets for Substrate.  As the n
 
 From a broad perspective, the RFP portion of this project could be considered similar to GitCoin.  And a GitHub bounty functionality as well as crowdsourced grant funding functionality are certainly use cases that we envision Ventur supporting.  However, Ventur intends to more broadly support bids and engagement outside the realm of code development and delivery.  Additionally, we would like to see Ventur support not just bidding and bounty processes but also collective enablement and benefit procurement for freelancers, and fundamental business processes like payroll automation.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -154,7 +154,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - <https://www.linkedin.com/in/maciej-zielonka-b83b7a230/>
 - <https://www.linkedin.com/in/joseph-murawski/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
@@ -165,7 +165,7 @@ Documentation of our core functionality and architecture are available on [Googl
 An early stage MVP of the NT-NFT pallet has been developed and is located on [GitHub](https://github.com/Popular-Coding/nt-nft).
 We wrote up a summary of the NT-NFT pallet’s goals on [our submission of the pallet to the 2022 Polkadot Hackathon North America Edition](https://devpost.com/software/nt-nft-pallet).
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -221,7 +221,7 @@ Long-Term Development Plans and Project Intentions:
 - Explore subscription and membership use cases for expiry dated NT-NFTs.
 - Secure parachain slot for Ventur.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**  
 Web3 Foundation Website and personal recommendation.

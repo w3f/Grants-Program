@@ -108,7 +108,7 @@ curl -H "Content-Type: application/json" \
 - Relation graph  can effectively reduces the development threshold of building Web3 decentralized applications which contains large data.
 - It will bring a pallet of graph database to Polkadot ecosystem.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -178,11 +178,11 @@ former product leader of top blockchain companies,
 - Yann， CTO， <https://www.linkedin.com/in/yann-ren-361b91235/>
 - Joe，CPO，<https://www.linkedin.com/in/joe-guo-783780ab/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 - We have finished a version on Internet computer.It is a graph database written in Rust and deployed on WASM.Ereryone can try it here(<https://kziov-eaaaa-aaaag-aaaxa-cai.ic0.app/ic_graph_developer.html>).
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  2 FTE

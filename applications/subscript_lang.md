@@ -5,7 +5,7 @@
 * **Proposer:** [synote](https://github.com/synote)
 * **Payment Address:**  bc1qzv5ljrt0sngjjnn25s4jzsu7qtts5d74cq8tz5
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 We are intergrating AssemblyScript into substrate smart contract which is similar to parity's ink. It involve buillding substrate contract runtime api, builtin modules, and development sdk. we name the language and sdk as `Subscript`.
 
@@ -41,7 +41,7 @@ There is no plan for `EVM Pallet` support.
 
 Some of the function of `Subscript` are similar to LimeChain's work of AssemblyScript Runtime, but they are  made for different scenario. LimeChain AssemblyScript Runtime focus on building substrate runtime with wasm compiled from AssemblyScript. It involves building all the substrate runtime environment entry with AssemblyScript and other basic library. `Subscript` aims to implement all the substrate smart contract low level interface with AssemblyScript. `Subscript` also add support for basic contract lib and project template for easy development.  We may benefit  previous work from LimeChain such as `SCALE`codec, runtime entry implemention.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -63,7 +63,7 @@ We alse engaged in smart contract tools interaged with vyper for contract audit 
 * <https://github.com/slickup/subscript>
 * <https://github.com/ascontract/subscript>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 We only provide **milestone1**  here for contract runtime api implementation. Full milestones are list in the [general grant repo](https://github.com/slickup/General-Grants-Program/blob/master/grants/speculative/subscript_lang.md)
 

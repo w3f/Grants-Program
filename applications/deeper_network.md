@@ -12,7 +12,7 @@
 
 *We request that the starting date for the milestone will be the approval of this amendment. Much appreciated!*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -56,7 +56,7 @@ From a technical perspective, our Deeper Chain is implemented using Substrate. D
 
 We are developing a hardware product with a cost of only US\$5, and we are confident that this product can bring millions of users to Polkadot.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -102,7 +102,7 @@ Fei has been active in blockchain space since early 2017. He has worked as softw
 
 [deeper-chain](https://github.com/e2chain-dev/deeper-chain)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -137,7 +137,7 @@ In this application, the deliverables are the micropayment pallet, the client co
 2. Proof of Credit is a core component in deeper network. We already have built MVP functions for PoC. But there are more work to be done.
 3. Testnet: Build an end to end blockchain system that running deeper devices smoothly.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 ### What work has been done so far?
 

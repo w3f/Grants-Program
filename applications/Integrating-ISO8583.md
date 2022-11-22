@@ -10,7 +10,7 @@
 
 > ⚠️ _The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe._
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -56,7 +56,7 @@ For Milestone 1 we aim to deliver a robust implementation proposal with solution
 
 Supporting international standards would smooth the connection between crypto and traditional financial institutions and is a [go to market strategy for several competing projects](https://www.cryptopolitan.com/iso-20022-compliant-crypto-list/). While those efforts are focused on the newer ISO-20022, not ISO-8583, there is significant value in being the first blockchain to support traditional banking infrastructure and dislodge incumbent networks such as SWIFT or Visa/Mastercard.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -84,11 +84,11 @@ Adit is a technical expert on cryptography, distributed ledgers, financial marke
 
 - <https://www.linkedin.com/in/adit-patel/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 - link to RFP: <https://github.com/w3f/Grants-Program/blob/master/rfps/open/ISO_8583.md>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 Through this grant proposal, we aim to provide a well-detailed analysis and implementation plan for incorporating ISO-8583 with Substrate.
 
@@ -114,6 +114,6 @@ Through this grant proposal, we aim to provide a well-detailed analysis and impl
 
 - We think it is more important at this stage to have a robust implementation plan before attempting to build. If the plan is feasible and acceptable to the Web3.0 team, we will follow up with another grant for implementation.  
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** [Previous Grantee](https://github.com/adit313/Grants-Program/blob/master/applications/stardust.md)

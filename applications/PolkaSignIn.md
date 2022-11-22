@@ -185,7 +185,7 @@ The workflow works the same with or without OAuth specification. Only the 4th st
 
 There is few solution combine the OAuth and self-custody wallet, and no such solutions in the Polkadot ecosystem. With our solution and the ecosystem tools like polkadot.js extension and Parity Signer, the substrate account could be used to sign in any web2 or web3 platform which support OAuth, user also do not need to input all his information once registered in a new platform, the information could automatically be fetched from the info records in `identity` pallet, which could gain huge adoption of Substrate account in Web2 world.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -220,11 +220,11 @@ Github accounts:
 * <https://github.com/bianyunjian>
 * <https://github.com/jingleizhang>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 The development is not started yet.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 As the project is small, we only have 1 milestone to be finished.
 

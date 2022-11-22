@@ -27,7 +27,7 @@ Idavoll Network has a set of pallets to achive the management of DAOs: orgnaizat
 
 * We can combine the organization module, voting module and token module to implement the decision management process. Users can create any proposal (an easy-to-understand term that the proposal must follow) and initiate the voting process. All users holding the corresponding tokens can participate in the voting. The voting ends, the Idavoll Network will count the voting results of the voters according to the snapshot of the current blockchain state. The voting results will be used as a community consensus and will be permanently stored on the blockchain.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -45,7 +45,7 @@ Idavoll Network has a set of pallets to achive the management of DAOs: orgnaizat
 
 * <https://github.com/idavollnetwork>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

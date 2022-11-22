@@ -4,7 +4,7 @@
 - **Payment Address:** bc1qyuk4rdeqvc2rmetfhr3key4clty5sglaw4n5wx (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -48,7 +48,7 @@ Thus no single chain can process transactions if all pupils in Russia will use o
 - Our projects meet the need for a decentralized reputation system.
 - Recommendation letter is a well known tool in the real world but was never ported to blockchain.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -86,13 +86,13 @@ Team leader:
 
 - <https://ru.linkedin.com/in/reshetovdenis>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 - We've built PoC/MVP product on Java Vaadin framework that can be used via
   [link](https://slon-i-giraf.ru/app/work?language=ENG)
 - The white paper and overall design is presented [here](https://docs.google.com/document/d/1XP7yICWpr8MQuSTCSBpWYN-8lSAXuGgyk90ZBMj5kc0/edit?usp=sharing)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -288,7 +288,7 @@ on the [substrate-front-end-template](https://github.com/substrate-developer-hub
 - We plan to launch a chain with this pallet in short term and integrate it with our current App.
 - Next we plan to integrate React.js components with our MVP that to use in schools and universities.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Personal recommendation.
 Checkout the [paper version](https://slon-i-giraf.ru/app/work?view=paperGameView&language=ENG) of this protocol that can be used in any educational process:

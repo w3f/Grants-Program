@@ -3,7 +3,7 @@
 * **Team Name:** [LimeChain](https://github.com/LimeChain)
 * **Payment Address:** `0x6eDf76FD16Bb290A544fDc14fBB4b403D1DEeD9f` (USDT)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 LimeChain's team has worked on [Subsembly - Framework for building AssemblyScript Runtimes](https://github.com/w3f/General-Grants-Program/blob/master/grants/rfp-responses/subsembly-assemblyscript_runtime_framework.md) and managed to deliver 4/6 milestones so far. Developers can already checkout/install the [Subsembly CLI](https://github.com/LimeChain/subsembly) and implement Substrate Runtimes using the framework.
 
@@ -61,7 +61,7 @@ The offences module tracks reported offences and the Staking module must provide
 
 Subsembly provides an alternative way for developers to build Runtimes. More specifically, it enables developers with TypeScript/JavaScript knowledge to build on top of the Substrate ecosystem.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -105,11 +105,11 @@ Team's GitHub profiles:
 * <https://www.linkedin.com/in/daniel-k-ivanov/>
 * <https://www.linkedin.com/in/dastanbek-samatov-30ab71128/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 The team already spend time on implementing GRANDPA, by updating the Subsembly CLI and spec builder to support GRANDPA authorities configuration. [Reference](https://github.com/LimeChain/subsembly/blob/main/cli/src/commands/spec/builder/src/modules/grandpa.js)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 Described below is a practical approach to the implementation of the GRANDPA module along with the the other auxiliary modules that are required.
 
@@ -207,6 +207,6 @@ The last part is to add support for `equivocations`.
 
 LimeChain will be resolving any critical bugs that may arise. We would like to extend the framework by adding new pallets in the future. Our plan is to continue the development of the framework with support for BABE and after that, having support for Parachains. The end goal of Subsembly is to support the full set of foundational features that enable developers to create Substrate networks (with the option for both Aura and BABE + GRANDPA's finality) as-well as Polkadot parathreads and parachains.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 LimeChain has been a long time contributor to the Substrate ecosystem mainly focused on developer tooling. Due to our involvement in the space we are working with various clients, developing smart contracts and working on parachains.

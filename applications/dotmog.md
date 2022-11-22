@@ -11,7 +11,7 @@
 
 ![LOGO](https://i.imgur.com/cS6Xj0v.png)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 We believe that the promising substrate blockchain technology enables us to bring a new way of gamification to a broad audience in a responsive, playful and immersive way. Our unique technical base allows us and the community to create independent games that can be deployed as enrichment to any substrate based chain.
 
@@ -85,7 +85,7 @@ A lot of our previous work on the World of Mogwais is being used as PoC for the 
 
 I think currently there are no such projects in the substrate ecosystem, at least we don't know of any. The full game logic is written down in our confluence, but for the sake of this file, we don't copy & paste it into here, but we can add it if necessary.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -151,7 +151,7 @@ Active organisations of the teammebers
 * <https://www.linkedin.com/in/2much/>
 * <https://www.linkedin.com/in/tim-kramarz-80345aba/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -281,7 +281,7 @@ We believe that there is a lot of potential in our project and we have a lot of 
 
 * :rocket: **Milestone 8 Extension — Proving grounds & Interstellar Travel (Interchain operability)**  
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 The Milestones that have been marked as self funded include intellectual property of our brand and the core game, which includes game algorithm that shouldn't be public, which will run offchain worker on a trusted computing environment, it makes no sense in having this part open source as it would remove the games mysteries that are part of the DOTMog experience.
 

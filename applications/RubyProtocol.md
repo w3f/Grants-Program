@@ -3,7 +3,7 @@
 - **Proposer:** Ruby Protocol
 - **Payment Address:** 0x5aBBe7b65c572b9f5Cc7655Ba4a1Acad0e892720
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -91,7 +91,7 @@ There are three relevant projects: the first one is perhaps the Enigma project, 
 
 There are several different ways of implementing an MPC protocol: threshold homomorphic encryption, garbled circuit, and secret sharing. The general idea of MPC is to outsource private data (either in the form of secret shares or homomorphic encryption) to a few separate computing parties so that they can perform confidential computation over the encrypted data. Directly applying MPC to fine-grained personal data monetization is problematic in the sense that once the data is outsourced, the data owner does not exert any control over what type of computation can be performed by the computing party. In other words, individual privacy is now at the mercy of these computing parties, which is against the human-centric ethos of fine-grained personal data monetization, where the access control policy should be defined by the data owner and enforced by the algorithm.   On the other hand, functional encryption was specifically proposed and tailored for enforcing fine-grained access control over encrypted data. By allowing the data owner to define the access control policy, the owner has full control over what type of access the data purchaser can have over the encrypted personal data. The only decryption result the data purchaser will be able to retrieve is the predefined function evaluation.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team Members
 
@@ -133,7 +133,7 @@ Dylan Dewdney is a longtime crypto enthusiast (2011). In 2017 he co-founded Harb
 - www.linkedin.com/in/beniissembert
 - www.linkedin.com/in/yingkaixu
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -201,7 +201,7 @@ In phase 2, our goal is to deliver the micropayment scheme and enable the users 
 
 Finally, our goal is to provide an essential open API and SDK from a high-level perspective with the above tools, fully powering the data monetization framework on Polkadot.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 ### Reference
 

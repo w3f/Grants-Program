@@ -4,7 +4,7 @@
 * **Payment Address:** 0xE7188c7e225D473eE9D99108482Af54952d71527 (USDT)
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/613#issuecomment-1122685293)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -48,7 +48,7 @@ Through this grant, we hope to
 
 <https://github.com/polkascan/py-substrate-interface>
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -78,11 +78,11 @@ The team is familiar with Ethereum and Substrate development.
 * <https://github.com/uni-arts-chain/sr25519>
 * <https://github.com/uni-arts-chain/rb_substrate_client>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Much of the technology is already implemented [app.uniarts.network](https://app.uniarts.network/). But now the code is in the project, not written as a library. and it needs more tests. We expect that we can refactor, reuse and generalize existing code. write gems to help other ruby developers.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

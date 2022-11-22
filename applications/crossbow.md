@@ -3,7 +3,7 @@
 - **Team Name:** DodoRare, Inc.
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 In the previous grant, we built a tool that can automate building rust game projects for Android and iOS and tested it on applications with base elements such as 2D image / 3D model rendering, music, touch events, networking (substrate communication), etc. Also, we made it engine agnostic, and the process itself of creating similar apps pretty straightforward. But there are plenty of things left to do to provide full support of features for more advanced games: like notifications, permissions, in-app purchases, better sounds and music support, Google Play/Apple ID authentication, AdMob, iOS Bitcode, Android Application Bundles, or AAB, etc. Most of these problems are not easy to solve, and many projects facing them are moving to more popular engines because you never know how much time it will take to add IAP or authentication to your project in pure rust. So our intention on this grant is to continue fixing and adding the most crucial components of games so that the whole rust community can use them in any rust project without any problems.
 
@@ -25,7 +25,7 @@ Of course, there are already a bunch of promising game engine projects, but they
 
 > ⚠️ *Note that we may move some libraries to separate repositories for more convenient maintenance in the future.*
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -71,7 +71,7 @@ GitHub accounts of all team members:
 - <https://www.linkedin.com/in/ackerman-david/>
 - <https://www.linkedin.com/in/oleksii-knyshenko/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -149,6 +149,6 @@ Also we want to make similar stuff for native iOS apps. Current nearest plans ar
 | 4. | Apple Game Center | Add [Apple Game Center](https://developer.apple.com/documentation/gamekit) support. |
 | 5. | Support Apple In-App purchases | Support Apple [StoreKit](https://developer.apple.com/documentation/storekit/in-app_purchase). Make it possible to buy items from your application. |
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Maintenance Grants Program?** Personal recommendation.

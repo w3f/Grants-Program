@@ -7,7 +7,7 @@
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 We are creating a XCM Implementation for Fungible Assets - xtokens.
 
@@ -35,7 +35,7 @@ This is another common-good implementation that would be useful to any parachain
 
 We are not aware of other implementations at this stage, but hope to inspire more.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -81,7 +81,7 @@ Bette Chen has more than a decade product/program/project management experience 
 * <https://www.linkedin.com/in/bette-chen/>
 * <https://www.linkedin.com/in/shaopeng-wang/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -124,7 +124,7 @@ Bette Chen has more than a decade product/program/project management experience 
 
 This is only the beginning of shaping up specific use cases of XCM, we will continue to improve fungible asset implementations so its generic enough for most if not all parachains. This work is likely to inspire non-fungible asset implementations, and we'd also be keen to contribute further as well.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Possible additional information to include:
 

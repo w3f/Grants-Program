@@ -4,7 +4,7 @@
 * **Payment Address:** ERC 20 ADDRESS:
 0x112C9eDB60D16f9Cf501721b03B9D0F275682213
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 Standard proposal - <https://github.com/w3f/PSPs/pull/22>
 
@@ -65,7 +65,7 @@ Objectively speaking based on what we know, and what was listed in their proposa
 * Openbrush aims to be a starting point for a smart contract developer, provide documentation.
 * Contribute to ink! and substrate `contract-pallet` to improve the smart-contract development experience(add new features, fix bugs, etc).
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -148,13 +148,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 * <https://www.linkedin.com/in/dmitry-kryshtal/>
 * <https://www.linkedin.com/in/valeria-laricheva/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 [The project](https://github.com/Supercolony-net/openbrush-contracts) is already in a solid pre-release state.
 
 PSP - <https://github.com/w3f/PSPs/pull/22>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -260,7 +260,7 @@ We're going to make strong impact on the community, making ink! simple and conve
 * Marketing and PR strategy  
   * Organizing hackathons, Developing growthhacking strategy for involving developers from different channels
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 So far we have taken it upon ourselves to fund this project.
 In the roadmap you can see what was already done, currently we're on the 2-rd milestone.  

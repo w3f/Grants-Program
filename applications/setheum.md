@@ -4,7 +4,7 @@
 * **Payment Address:** 1EDXptvCZo1sWpT8BFTvdopZbBShhurkGA
 * **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/101#issuecomment-827683019)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -61,7 +61,7 @@ Setheum also offers a Central Bank type of monetary regime to issue it's elastic
 
 <https://github.com/Setheum-Labs/Setheum-Labs-White-Papers/blob/main/Setheum%20Tokenomics%20White%20Paper(3).pdf>
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -123,7 +123,7 @@ I do consultancy in blockchain space.
 * [Suleiman Mustapha](https://www.linkedin.com/in/suleiman98/)
 * [Al-Mustapha Mustapha Abdullahi](https://www.linkedin.com/in/al-mustapha-mustapha-abdullahi-43a8a81b9/)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 The Setheum Network Milestone 1 will be a 6 week project, aims to deliver a running MVP Substrate chain testnet providing algorithmically elastic stablecoins - the STP258 Sett tokens. Upon the testnet launch, we will implement a basic version of its economic model and work towards a Canary Network Launch and an Initial Parachain Offering of the Canary network on Kusama. And then work towards launching the Mainnet with all of the future plans we provided above and move towards an Initial Parachain Offering (IPO) of the Mainnet of Setheum network, participation in the IPO auction will depend upon the readiness of the Polkadot network.
 
@@ -168,7 +168,7 @@ Please include the team's long-term plans and intentions.
 10. **SAGA     (Setheum Association of Government Alliances)** Just like SEANET but for Public Bodies, NGOs, Universities & Governments starting with Government Departments we already work with and those we worked with in Nigeria, to support them to build on the Setheum Network and increase the value and adoption of the Entire Polkadot & Substrate Ecosystem as We will promote development with ink! and Substrate and many advanced, niche and beautiful **FRAME modules will be built for various use cases, thus propping the adoption of Rust too.**.
 11. **Cross-Chain Swap** with Ethereum, EOS, Stellar, Tezos and Cosmos.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 We are planning to be the gateway to Polkadot in Africa and the Middle East (especially Nigeria, Ghana, Saudi Arabia and the UAE) with ecosystem growth and development strategies that we are planning to apply and foster the adoption on the Web3 Ecosystem. Our plan includes a Blockchain Development Incubation Hub and our Ecosystem Fund. We are planning to be Polkadot's embassy in Africa and the Middle East.
 

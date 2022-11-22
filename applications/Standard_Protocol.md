@@ -1,6 +1,6 @@
 # Standard Protocol
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -61,7 +61,7 @@ Vault module in standard protocol is a collateral debt position engine where
 
 Standard protocol will act as the catalyst for other parachain's financial activities for enabling leverage trading and Arbitrage in AMM created from liquidation. It will also open a protocol for synthetic asset market with decentralized oracle ecosystem.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -83,7 +83,7 @@ Hyungsuk is Plasm network's core developer. He developed Subswap, AMM in substra
 
 * <https://www.linkedin.com/in/hyungsukkang>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -419,6 +419,6 @@ Unit tests are all identical with the staking module's test in that all logics a
 * Full function test on Kusama/Rococo.
 * Full function test on Polkadot.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 * Pitch: [https://whitepaper.standardprotocol.org](https://whitepaper.standardprotocol.org)

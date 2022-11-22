@@ -4,7 +4,7 @@
 - **BTC Payment Address:** bc1qr2wg0snstgn4d2wc0alhhyxs32j58hhdrh5zal (PLEASE NOTE CHANGE)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -118,7 +118,7 @@ InvArch applies the categories below:
 - On-chain donations for access & transparency. (OCIF Protocol)
 - File piracy & inability to securely expose data. (XCA Protocol)
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -187,7 +187,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - [Kresna Sucandra](https://www.linkedin.com/in/kresna-sucandra/), Substrate Dev
 - [Mindaugas Savickas](https://www.linkedin.com/in/savickas), Head of Marketing
 
-## Development Status :open_book
+## Development Status :open_book:
 
 - InvArch is a project in the Substrate Builders Program.
 - The INV4 protocol is complete & available for public testing.
@@ -196,7 +196,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - INV4 v2 & xcINV4  (Est. August, 2022) will add additional functionality, wrapping of other Substrate NFTs, & authentication of assets.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -251,7 +251,7 @@ Goal - Develop and deliver the DEV Pallets & Standards for the InvArch Chain/Inv
 2. Tinkerspace - A VR Sandbox for experimenting, collaborating, & simulating development using INV4 Assets.
 3. xcINV4 Module - Upgrade the INV4 protocol with enhancements made possible due with XCA for all Parachains to enjoy.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 Web3 Foundation Website

@@ -10,7 +10,7 @@
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 This is our first time. This is not a follow-up.
 
@@ -79,7 +79,7 @@ CCTF provides a proven track record of hackers solving challenges and based on t
 - We are already a participant in the web3 security space and want to move on, provide more to it than a security audit product.
 - We are not aware of any similar project right now, but heard that someone is trying something similar on Ethereum.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -135,14 +135,14 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - [https://www.linkedin.com/in/david-six-pethes/](https://www.linkedin.com/in/david-six-pethes/)
 - [https://www.linkedin.com/in/sebastian-kraus-97a65a1a7/](https://www.linkedin.com/in/sebastian-kraus-97a65a1a7/)
 
-## Development Status :open_book
+## Development Status :open_book:
 
 We have started the development already, details can be found under this repository:
 [https://github.com/Qrucial/QRUCIAL-DAO](https://github.com/Qrucial/QRUCIAL-DAO)
 
 The PoC is working, and we want to move forward in developing a live testnet version.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -193,7 +193,7 @@ The PoC is working, and we want to move forward in developing a live testnet ver
 - Elfz'n'Trollz is a marketing partner, so we don't just develop a DAO, but also make it usable and visually acceptable to all audiences.
 - After final milestone, we will start building a larger community for QRUCIAL DAO and improve our partnership with CCTF.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Personal recommendation from Achim Schneider and Jonan.
 

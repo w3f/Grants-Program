@@ -3,7 +3,7 @@
 * **Team Name:** Cyril Carlier
 * **Payment Address:** BTC : 3HDftJCXDAt8Qbk2uSj4ty2xYvdudHsMru
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -120,7 +120,7 @@ I believe there is a need to have an easy and accessible UI to follow the auctio
 
 The similar existing projects I know of are the polkadot-ui app that already has UI pages for the auction, parachains and crowdloans and this [proposal](https://kusama.polkassembly.io/treasury/76), which do have some features that have some similarities with this project, but the goals are different. The PLO proposal is oriented to the lease offerings, this project focus more on relay-chains state. Very recently, with the beginning of the crowdloan campaigns on Kusama, multiple similar projects have been released, such as [subvisio](https://subvis.io) or [polkaview's dashboard](https://www.parachains.network/), while both provides some pages similar to this project, there are less pages, thus less information. For now they focus on Kusama and finally, they "look & feel" of the application is not the same as the other applications built for the eco-system (typically, polkassembly, telemetry, the wiki page, etc fits well within the eco-system).
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -157,7 +157,7 @@ Here is an overview of different relevant project I've worked / working on at my
 
 * <https://www.linkedin.com/in/cyril-carlier/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 ### Polk-auction-core (started)
 
@@ -170,7 +170,7 @@ Here is an overview of different relevant project I've worked / working on at my
 
 See overview section for the mock-up
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -241,7 +241,7 @@ Futur plans are :
 * The suggestion to communicate polkadot.js-extension directly from the UI will be considered to allow users to directly participate in the crowdloans.
 * As I'm very open to ideas, suggestions and advices, it is very likely that the code, the architecture, the UI and the functionalities will evolve with the community feed-backs.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **Why do the FTE and duration do not match ?**
 I have a full-time job as a developer, I'll take some days off for this project, however I won't take 10(+3) weeks of days off for the project, so I won't be able to work as 1FTE/month on this project. I'll work on evening and week-end to meet the milestones and deliveries.

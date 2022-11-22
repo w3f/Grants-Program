@@ -4,7 +4,7 @@
 - **Payment Address:** 0xED3f3bB424F4a3b254DF0D1a51DD4e7BC5f40e66 (ETH/DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -248,7 +248,7 @@ FS project focuses is on utilizing the available building blocks that are known 
 
 We are not aware of any other projects that are focusing on housing and/or real estate in the Substrate / Polkadot / Kusama ecosystem. This project is pretty unique. There are however big parts of our design that are heavily inspired by the design of the governance layers in Kusama / Polkadot and Phragmén method for allocating funds in an asset. Outside of substrate based ecosystem, there are a couple of real estate projects, maybe the most notable being RealT, but it just focuses on the return of rental houses, where the LLC takes care of everything on the background and users just see their tokens and returns. We want to open this up fully and create an open transparent system while lowering housing costs.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -302,14 +302,14 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - <https://www.linkedin.com/in/thibautsegura/>
 - <https://www.linkedin.com/in/mrisho-lukamba/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 - We started of with publishing a [light-paper](https://fair-squares.nl/lightpaper/fair/squares/2021/09/14/english_whitepaper.html). To bring light to the problem and structure the idea. Suggestion 7 : We interviewed 4 employees from 3 organizations about these research questions in the light-paper that we thought needed to be enlightened. The link to the research results can be found [here](https://docs.google.com/document/d/1Y50h3JthlXBGSiG92eQP8MghSd4H07N8GKhO9d_nz7w).
 - We have presented our project at amsterDOT conference, the link for the video can be found [here](https://youtu.be/rZdqHgn69wU)
 - We have discussed this project with several members of the polkadot community. We talked about it couple of times with Raul from the Polkadot community whether a treasury proposal would be good, we didn't go for this as we saw a lot of parachain development projects to Kusama of Polkadot being rejected by the council. With the Square-one developments and close after amsterDot we believed further developing the idea with support from W3F grant was the next best step.
 - Our repo is in active development, but with the milestones we will create according to spec.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -540,7 +540,7 @@ Milestone:4
 
 In 2-4 years from now we aim to co-founded, co-researched a legal framework with other institutions where the outlook for deployment is more clear than now. We are laying strong ties with municipalities or state-level governmental instituions that will allow us the sand-box enviroment to implement this. We aim to organize from the bottom-up with other parties that find this relevant and iterate together with them. But we like to take it step for step and this grant will give us the fundamental code that will showcase it's techincally safe and possible, while recorded right.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 We have been around in the ecosystem for some time and we knew from the W3F grants program since it's inception.

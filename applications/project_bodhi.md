@@ -7,7 +7,7 @@
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 If this application in response to an RFP then please indicate this on the first line of this section.
 
@@ -94,7 +94,7 @@ Future development
 
 Nope, if so we'd be more than happy to leverage it than build it ourselves.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -149,7 +149,7 @@ Shaun Wang has been contributing to several Polkadot ecosystem open source libra
 * Ermal: <https://github.com/orgs/laminar-protocol/people/ermalkaleci>
 * Nantian: <https://github.com/orgs/laminar-protocol/people/aniiantt>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -216,7 +216,7 @@ Future development
 5. EVM economics: state renting, contract existential deposit, contract deployment economics
 6. Replace Gas system with Weights system
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Any additional information that you think is relevant to this application that hasn't already been included.
 

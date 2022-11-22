@@ -4,7 +4,7 @@
 * **Payment Address:** 0xF505894841d53AaBDe6EdeA7C5970fFe3A0240b2 (DAI)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Preface
 
@@ -68,7 +68,7 @@ Whiteflag operates with a lexicon of message codes indicating the purpose and in
 
 ![img](https://raw.githubusercontent.com/fennelLabs/FennelBlog/master/Whiteflag_on_Fennel.png)
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -176,11 +176,11 @@ F      FreeText          Message to send a free text string
 
 In terms of a target audience, we have a small established userbase waiting for this protocol to be prepared for launch. This proposal will set the stage for a greater effort to empower developers to build decentralized applications that allow users to transmit authentic, secure, and timely real-time messages based on pre-defined signals and signs. Most importantly, we hope this effort will support decision makers working in critical environments in need of such communication, such as NGO coordinators working in war zones, first responders, medical professionals, pharmacovigilance scientists, and investigative journalists.
 
-## Development Status :open_book
+## Development Status :open_book:
 
 This proposal outlines the second step in the development of Fennel Protocol, a Substrate implementation of Whiteflag Protocol's messaging specification. We began implementation of the Whiteflag protocol during the first grant project. At the end of our first grant project's 3rd milestone, our Whiteflag implementation will fully support creating, revoking, and updating authentication messages according to the Whiteflag specification. In addition, Fennel Protocol provides Whiteflag with basic identity and key management features based on the web of trust concept. The second grant project will expand our Whiteflag implementation beyond the minimally viable implementation, aiming to fully implement Whiteflag Protocol's messaging specification in Substrate; more concretely, the second grant project will implement Whiteflag Protocol's functional messages. Additionally, the second grant project will create a full set of web-based interface tools and IPFS Support that will allow for more streamlined access to Whiteflag Protocol's messaging.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -229,7 +229,7 @@ Fennel Protocol is intended to be a continuously-developing project.
 The basic architecture was designed with extensibility in mind;
 identity and signaling applications should be able to easily build on the runtime with expanding available features and continued support for existing features.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 We heard about the Grants Program from the Web 3 Foundation Website, as well as personal recommendations from Polkadot community members.

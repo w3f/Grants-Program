@@ -5,7 +5,7 @@
 * **Proposer:** [EthWorks](https://github.com/EthWorks/)
 * **Payment Address:** 37hdwwNqXHMrni1WGHruwWVzUy5kmsEfJs
 
-## Project Description :page_facing_up
+## Project Description :page_facing_up:
 
 [Polkadot.{js}](https://polkadot.js.org/apps/) web application is now widely used to interact with Polkadot-based networks (Kusama, Alexander etc.). Soon it will also be a go-to app for the Polkadot Mainnet.
 
@@ -19,7 +19,7 @@ To make it easier to use the application, especially for new users, we will work
 
 Our team worked previously on Polkadot.{js} Browser Extension. We already have a decent understanding of the Polkadot frontends and theirs UX shortcomings.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 * **Members:** Krzysztof, Natalia, Bartek, Ivan, optionally other developers at Ethworks
 * **LinkedIn Profiles:** [Krzysztof](https://www.linkedin.com/in/krzysztofjelski/), [Natalia](https://www.linkedin.com/in/nkirejczyk/), [Bartek](https://www.linkedin.com/in/bart%C5%82omiej-rutkowski-958751118/), [Ivan](https://www.linkedin.com/in/ivan-rukhavets-904ba7146/)
@@ -43,7 +43,7 @@ Additionally members of Ethworks are building Universal Login, a tool for storin
 
 In a previous [grant from W3F](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/polkadot_js_chrome_extension.md), we did an UX-overhaul of Polkadot.{js} extension and extended it with useful features.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 * **Total Estimated Duration:** 3 months
 * **Full-time equivalent (FTE):** 1.25
@@ -132,7 +132,7 @@ For a more detailed preliminary backlog, consult [this list](https://workflowy.c
 | 4.     | Accounts App modals improvements | Improve usability and consistency in Account modal, eg. Derive, Add Proxy. Remove code duplication between Create and Derive |
 | 5.     | Documentation updates | We'll add or update the relevant documentation where needed, including screenshots in polkadot wiki |
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 ### Work done so far
 

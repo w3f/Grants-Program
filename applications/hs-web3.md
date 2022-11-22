@@ -5,11 +5,11 @@
 * **Proposer:** akru
 * **Payment Address:** 18QrEJq9f1EL4f3DVsbxYnkJXgbhSF9XJ4
 
-## Project Description :page_facing_up
+## Project Description :page_facing_up:
 
 It's my personal project. It was started as Ethereum client library but recently I guess it could evolve into multi-platform client library including Polkadot / Substrate chains. Haskell is a powerful hight order functional programming language that provide industrial grade code safety because of very strict control of function side effects. For Polkadot ecosystem Haskell developers is couple of high skilled professionals that could make effective services and applications. This project reduce entry threshold and could be a good quick start for haskellers.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 * **Members:** Aleksandr Krupenkin
 * **LinkedIn Profiles:** <https://www.linkedin.com/in/krupenkin>
@@ -18,7 +18,7 @@ It's my personal project. It was started as Ethereum client library but recently
 * **Legal Structure:** individual
 * **Team's Experience:** Haskell Web3 library created on 2016. During development was fully implemented account abstractions, Solidity ABI codecs, JSON-RPC API and ECDSA cryptography.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 * **Total Estimated Duration:** 16 weeks
 * **Full-time equivalent (FTE):** 0.4

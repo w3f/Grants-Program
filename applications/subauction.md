@@ -3,7 +3,7 @@
 - **Team name:** Subauction
 - **BTC address:** 387RAYPUGkQuyeqcj3Quw1ErH5a7Hria6N (BTC)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 In Ethereum, the NFT industry is really testing network limits these days, so we expect there's quite some potential exploring the space within the Polkadot ecosystem.
 
@@ -107,7 +107,7 @@ There are multiple different approaches to NFT implementation on the market with
 
 UPDATE 2021-09-28: The solution has been migrated from ORML to FRAME's Uniques pallet.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -137,7 +137,7 @@ Besides blockchain development, each member has 5+ years of experience in Comput
 - <https://www.linkedin.com/in/jindrich-zeleny>
 - <https://www.linkedin.com/in/valery-gantchev-20a03971/>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

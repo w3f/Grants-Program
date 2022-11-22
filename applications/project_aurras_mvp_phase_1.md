@@ -7,7 +7,7 @@
 
 *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -71,7 +71,7 @@ As a part of Web 3 Community and Ecosystem
 * Workflow tasks can be written in multiple languages - NodeJS, Go, Java, Scala, PHP, Python, Ruby, Ballerina, .NET and Rust (We prefer and Recommend WASM compatible Rust)
 * First class support to MQTT Endpoints.  
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -126,7 +126,7 @@ Repos for further reference
 * Muhammed Irfan K - <https://www.linkedin.com/in/muhammed-irfan-k>  
 * Hanumantappa Budihal - <https://www.linkedin.com/in/hanumantappa-budihal/>  
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -210,7 +210,7 @@ Our Roadmap includes
 * Decentralized Pub/Sub Network to replace Apache Kafka in Aurras
 * WASI Runtime for Openwhisk
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 Any additional information that you think is relevant to this application that hasn't already been included.
 

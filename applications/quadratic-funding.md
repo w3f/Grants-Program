@@ -6,7 +6,7 @@
 
 * **Payment Address:** DAI, 0x69ecE265815B1F0357cc08c6b1C47F3785c3CB46
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 > If this application in response to an RFP then please indicate this on the first line of this section.
 
@@ -73,7 +73,7 @@ There are DAO projects such as PolkaDAO being built on Polkadot, providing utili
 
 Besides open-source program grant, the CLR mechanism can be applied to other crowdfunding for public goods, such as government electoral voting and non-profit funding. I have friends running an non-profit organization at Silicon Valley. My goal is to work with her to create the first real-world non-profit fundraising using CLR on Polkadot.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team name
 
@@ -131,7 +131,7 @@ UI demos of the team's previous work, which includes
 * [Zhongwei Shi](https://www.linkedin.com/in/shi-zhongwei-b06573205/)
 * [Kangbin Ge](https://www.linkedin.com/in/kangbin-ge-08a56b205/)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 > This section should break out the development roadmap into a number of milestones. Since the milestones will appear in the grant contract, it helps to describe the functionality we should expect, plus how we can check that such functionality exists in the product. Whenever milestones are delivered, we refer to the contract to ensure that everything has been delivered as expected.
 
@@ -193,7 +193,7 @@ In my opinion there are tons of things we can keep iterating on, but there are f
 
 1. Social experiment. The project is only valuable when put into real-world scenarios. It, along with Polkadot, are great exciting social experiments. I believe in beta and later production we will encounter challenges on both technical and philosophical sides. It will be an on-going effort to address those issues, and to improve the product as it's constantly put into test.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 > Possible additional information to include:
 >

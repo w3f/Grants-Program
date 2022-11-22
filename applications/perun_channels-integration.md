@@ -4,7 +4,7 @@
 * **Payment Address:** 0x308Ca526B009e10Ef0482C38A3370BFb44A32908 (DAI)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 This proposal is a follow-up on our [first proposal](https://github.com/w3f/Grants-Program/pull/437), which resulted in a [Substrate Pallet](https://github.com/perun-network/perun-polkadot-pallet) that implements the Perun smart contract logic for Polkadot.
 
@@ -125,7 +125,7 @@ _go-perun_: provides generalized state channel functionality.
 3) _cChannel-substrate_: does not allow transactions across chains.
 _go-perun_: is designed for enabling cross-chain transactions in the future.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 PolyCrypt is a Spin-Off from the Technical University of Darmstadt, resulting from years of blockchain research under the name of Perun, under which the team is well-known in the Ethereum space. PolyCrypt was founded in Q4 2020.
 
@@ -172,7 +172,7 @@ The on-chain component of Perun Channels on Polkadot is available at <https://gi
 
 Our company LinkedIn profile is available at <https://www.linkedin.com/company/perun-network/>.
 
-## Development Status :open_book
+## Development Status :open_book:
 
 **Research:**
 The foundation for Perun State Channels was laid in “Perun: Virtual Payment Hubs over Cryptocurrencies”, published at IEEE S&P 2019, <https://ieeexplore.ieee.org/document/8835315>, also available at  <https://eprint.iacr.org/2017/635>. This is one of the most prestigious academic conferences in IT Security.
@@ -183,7 +183,7 @@ The main repository of the _go-perun_ library is at <https://github.com/hyperled
 It currently features an Ethereum blockchain backend and supports generalized state channels on a single backend.
 In 2020, we joined the hyperledger foundation together with our industry partner BOSCH, with the goal of growing an open-source community around the Perun project.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -263,7 +263,7 @@ In 2020, we joined the hyperledger foundation together with our industry partner
 * **Collaboration.** We are looking to extend our collaborations. As our library is written in Go, we envision that it is suitable for resource constrained devices in the IoT space and for high-performance applications.
 * **Perun Network.** We consider building a liquidity network that enables fast and cheap asset swaps across a variety of blockchains.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 After Dieter Fishbein joined the Web3 Foundation, he reached out to Sebastian Stammler in June 2020.

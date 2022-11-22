@@ -8,7 +8,7 @@
 
  *The above combination of your GitHub account submitting the application and payment address will be your unique identifier during the program. Please keep them safe.**
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 The SkyeKiwi Protocol is a generic, efficient and customizable secret sharing protocol for end-users and blockchain nodes.
 
@@ -105,7 +105,7 @@ The SkyeKiwi Protocol has a wide applicable areas. It's a generalized and custom
 
 Moreover, SkyeKiwi will take the SkyeKiwi Protocol and built into the SkyeKiwi Network featuring concealed smart contract execution and secret processing. Where the SkyeKiwi Protocol is the schema used to communicate between blockchain nodes and between end-users to blockchain nodes.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 * ### Team members
 
@@ -125,7 +125,7 @@ Moreover, SkyeKiwi will take the SkyeKiwi Protocol and built into the SkyeKiwi N
 
     We have a draft implementation of the SkyeKiwi Protocol under development of SkyePass for a Web3 Foundation grant and delivered the PoC as the first milestone. We had won first place in the Polkadot Hackathon by Web3 in India with the SkyeKiwi Protocol and one of its application.
 
-## Development Status :open_book
+## Development Status :open_book:
 
 We have implemented a very very drafty version of the SkyeKiwi Protocol as part of our previous application to [SkyePass](https://github.com/w3f/Grants-Program/pull/212). Under our discussion in [LINK](https://github.com/w3f/Grants-Program/pull/553) we are now extracting the SkyeKiwi Protocol development out from the original grant application and port our previous work on this new application.
 
@@ -133,7 +133,7 @@ We have implemented a very very drafty version of the SkyeKiwi Protocol as part 
 * Our contribution to Polkadot.js: <https://github.com/polkadot-js/common/pull/1070>
 * Documentation Site: <https://cdocs.skye.kiwi/> (might not be 100% synced with development)
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

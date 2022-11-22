@@ -4,7 +4,7 @@
 - **Payment Address:** 0x77AE9e7c90E6f6137AC3b3cd09A4bdc4654A0fe5 (ERC20 USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 Libra Payment Network is a decentralized-first payment system. Libra allows people to accept cryptocurrencies as a payment method and handle real-world eCommerce transactions without hassle.
 
@@ -210,7 +210,7 @@ Libra's target audience is sellers/buyers who want a safer, faster, more straigh
 - **What need(s) does your project meet?** Libra provides a safe mechanism for both buyers and sellers to transact online
 - **Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?** As far as we know, Libra, with its unique LRP protocol and Resolvers network, is the first project designed to solve real-world eCommerce transactions. There are no similar projects in the ecosystem yet.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -246,7 +246,7 @@ AtScale is a team specialized in blockchain development. We aim to rely on block
 
 Due to privacy concerns, the team information will provide in private by email if requested.
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Libra is founded and developed in the Polkadot APAC Hackathon 2021. We already built a proof of concept application and here is our hackathon submission:
 
@@ -256,7 +256,7 @@ Libra is founded and developed in the Polkadot APAC Hackathon 2021. We already b
 - Explorer: <https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.libra.atscale.xyz#/explorer>
 - Git repository: <https://github.com/atscaletech/polkadot-hackathon-apac>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -328,6 +328,6 @@ For the long term plan, we will:
 - Scale up the resolvers networks
 - Develop tools for Libra such as fraud payment detection, API, AI/ML dispute processor, ...
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website

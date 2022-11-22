@@ -5,7 +5,7 @@
 * **Proposer:** [Halva](https://github.com/orgs/halva-suite)
 * **Payment Address:** 1837ca1w8WK9yfaVo5Lhgg4sENK2Tq3FgW
 
-## Project Description :page_facing_up
+## Project Description :page_facing_up:
 
 Halva is a toolchain for improving the experience of developing Decentralized Applications based on Substrate. It provides a high-level way to configure a development environment, interact with Substrate through external API and writing your test cases.
 
@@ -13,7 +13,7 @@ Halva inspired by [Truffle](https://github.com/trufflesuite/truffle) but impleme
 
 Right now you must do much boilerplate code around your testing framework (mocha, chai, ava, etc) so that beginning testing your Substrate based app. Halva addressing these challenges.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 * **Members:** Wintex
 * **LinkedIn Profiles:** -
@@ -24,7 +24,7 @@ Right now you must do much boilerplate code around your testing framework (mocha
 
 Our team develops software about 10+ years and decentralized applications since 2017. We have a great experience with typescript, node.js, and testing frameworks.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 * **Total Estimated Duration:** 5 weeks
 * **Full-time equivalent (FTE):** 1.5

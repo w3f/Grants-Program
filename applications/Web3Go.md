@@ -4,7 +4,7 @@
 * **Payment Address:** 0xD57e28773c92E6fB9D9Fb164889886cd360074BE(USDT)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -76,7 +76,7 @@ What makes us different is,as a part of Web 3 community and Polkadot ecosystem:
 * An incentive mechanism that gets everyone involved and participates in the data activities.
 * A comprehensive analysis not only focuses on one area but will include all data like a cross-chain asset, governance,  auction, Defi, staking, and token.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -123,7 +123,7 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 * <https://www.linkedin.com/in/minqi-wang-53b5b19b/> Minqi Wang
 * <https://www.linkedin.com/in/hao-ding-msc-pmp-64411193/> Hao Ding
 
-## Development Status :open_book
+## Development Status :open_book:
 
 * [WebSite](https://www.web3go.xyz): visit this url:   <https://www.web3go.xyz> can take a look at the current developement progress of  the website.
 * [Data board-Karura CDP](https://web3go.xyz/#/CDPProfiler): This data board tracks and visualizes the real-time CDP information of Karura, and provides the historical analytics and real-time CDP status of each participant.
@@ -132,7 +132,7 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 * [UI Mock-ups](https://drive.google.com/drive/folders/1NIEB0Tbj7tIcf7Q2CRzuMwbkU95ADnH4?usp=sharing): here saved the UI design and mock-up of Web3Go, it is keep updating.
 * [Semi-automatic chart generation](https://web3go.xyz/#/CustomQuery?editSupport=true): This module is to let users can generate visualized charts automatically by simply writing SQL language based on our existing indexed and formatted data. Currently the supported chart is bar chart, line chart, and pie chart. The word "semi-automatic" means that the user has to write SQL to generate the chart.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -183,7 +183,7 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 * As our vision is to let "everyone enjoy the value behind the blockchain data", we will design the token economics to let more people involved in the whole data board activities. The rough idea is to design three kinds of roles: data demander, data analyst, and data validator, and introduce the token incentive to incentive the community to create more customized and interesting data boards, and this will be done through the parachain system. We have already started doing the research on the token economics design, and after this grant is finished, parachain development will be started.
 * As our team is a sub-team of Litentry, so we have a strong development team , operations team, a 60k+ community, and have a good relationship with most of the projects in the Polkadot ecosystem.  All of the above has provided us a strong foundation of success. we want to be the best data analysis project in the Polkadot ecosystem, and even collect more data across other public chains in the future.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**  
 

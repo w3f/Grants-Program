@@ -3,7 +3,7 @@
 * **Team Name:** Virto Network
 * **Payment Address:** pvirtoK3FxBxXjxhkH2yZ4C62gjpgPNhCE9HnrGqzyocfBA (kUSD)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -65,7 +65,7 @@ and functionality before the Virto Network is launched which comes with the
 benefit of bringing our primary use case of decentralized on&off ramps earlier
 to the Kusama ecosystem.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -133,13 +133,13 @@ for merchants in latam).
 * **Kenji Phang:** <https://github.com/KenjiPcx>
 * **Gabriela Azcona:** <https://github.com/azconita>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Since the PLIP proposal months ago, we have been continuously working and
 iterating on the protocol and pallet economics, we have divided the work in two
 milestones out of which the first one is already completed.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -182,7 +182,7 @@ milestones out of which the first one is already completed.
   [Valor](https://github.com/virto-network/valor), Virto's runtime that enables
   decentralizable APIs and progressive decentralization.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 Web3 Foundation Website, the Substrate Builder's Program, as well as a

@@ -4,7 +4,7 @@
 - **Payment Address:** 0x33644e4D6bb589854fbb906276147Afd7de86E09 (ERC-20 USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -45,7 +45,7 @@ Secure and usable key management is an open issue. This project will improve the
 
 The initial research will be used to improve the distributed key management implementation currently used by the Kryptik wallet. However, the research, code, and documentation are designed for the broader developer community to use in their own app that supports Polkadat or Kusama.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -78,14 +78,14 @@ Jett Hays is the President of the Carnegie Mellon blockchain club where he helps
 
 - <https://www.linkedin.com/in/jett-hays-491b541b7/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 The idea of a distributed key manager came to me during a class at Carnegie Mellon on shamir secret sharing. After coming up with a rough interface, I applied for a small undergraduate research grant from CMU, with Professor Nicolas Christin agreeing to be my advisor.
 This research led me to create the open source Kryptik wallet, whcih I have been working on for the past year. A short demo of the wallet can be found via [this link](https://vimeo.com/745609041). This wallet uses a simple version of the distributed key management system I described above.
 
 As part of this project, I also released a seedloop manager as an open source NPM package, which can be found [here](https://github.com/KryptikApp/kryptik-seedloop). This package allows developers to easily generate wallets and sign transactions across multiple blockchains.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -132,7 +132,7 @@ As part of this project, I also released a seedloop manager as an open source NP
 
 After the grant is completed, I will continue improving the open source Kryptik wallet, which builds upon the distributed key management system described above. Work on the wallet interface– which has been sponsored by other grants–  will necessarily include revisiting the key management system and making improvements (such as adding the ability to sync key shares between devices). Beyond that, the research and published paper are a timeless body of knowledge that will continually benefit production implementations and new research on key management.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** I first heard about the grants program at EthDenver 2022. I then learned more about the program via the Web3 Foundation Website.
 

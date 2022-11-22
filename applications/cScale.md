@@ -9,7 +9,7 @@
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/625#issuecomment-1047869564)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -45,7 +45,7 @@
   * Kagome (C++ and not intended for standalone library use)
   * FinoaBanking substrate-c-tool (Has not been updated for over a year and is in unknown state of completion as far as I can tell)
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -62,7 +62,7 @@
 * <https://github.com/MatthewDarnell/iota-simplewallet> -- IOTA C library
 * <https://github.com/MatthewDarnell/redis_orderbook> -- Order matching engine in Rust
 
-## Development Status :open_book
+## Development Status :open_book:
 
 Currently have a basic working implementation. Generating a testing app, a basic cli app, and a statically linked library.
 
@@ -112,7 +112,7 @@ Prints:
 SCALE=<1501> --- Hex=<45> --- Decoded=<69>
 ```
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -154,7 +154,7 @@ SCALE=<1501> --- Hex=<45> --- Decoded=<69>
 * I see a real need for it to allow the Substrate community to grow and I hope it makes it on the official list of [Scale Implementations](https://substrate.dev/docs/en/knowledgebase/advanced/codec#implementations)
 * Long term I would be interested in improving this library to keep current with a possibly-evolving SCALE standard as well as getting help from other C devs making pull requests, which would be most welcome.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Shawn Tabrizi
 

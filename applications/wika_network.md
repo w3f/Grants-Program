@@ -3,7 +3,7 @@
 * **Team Name:** Web Registry DAO
 * **Payment Address:** 0xBfc8cDb5617eE0F83794156ABD7465730E125cE3 (USDT)
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -161,7 +161,7 @@ then it should spread from this niche to a broader audience by educating and con
 * LikeCoin seems to be a similar initiative built with Cosmos SDK,
 but we believe our design is simpler.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -243,7 +243,7 @@ The above 6 members are the current owners of the multisig address recipient of 
 * <https://www.linkedin.com/in/doug-astor-96b72750/>
 * <https://www.linkedin.com/in/thomasocantrell/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 The [global roadmap](https://www.wika.network/roadmap) of this project consists of 3 phases:
 
@@ -265,7 +265,7 @@ We are requesting this Grant in the context of phase 1 -Foundation- to:
 By the end of the milestones detailed below, the Wika Blockchain Test Net should be ready for a substrate code review,
 then preparation for its graduation to mainnet.
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -384,7 +384,7 @@ and risks that could emerge from the system.
 In summary, we see the development of the foundations phase -and the near future-
 as an iterative process where we will learn from the community.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How we heard about the Grants Program?**
 

@@ -10,7 +10,7 @@
 
 > ⚠️ _The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe._
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 This proposal is in response to an RFP for an Uncollateralized Stablecoin (Specifically: <https://github.com/w3f/Grants-Program/blob/master/rfps/uncollateralized-stablecoin.md>).
 
@@ -64,7 +64,7 @@ A decentralized uncollateralized synthetic stablecoin has significant utility fo
 
 The primary target demographic and audience would be decentralized financial applications and any user who seeks a stable store of value that isn't dependent on a centralized third party, instead risk has been decentrally allocated to the participants on decentralized markets.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -102,7 +102,7 @@ Our test blockchain network: <https://explorer.stardust.finance/>
 - <https://www.linkedin.com/in/adit-patel/>
 - <https://www.linkedin.com/in/the-theresa-garcia/>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 - link to RFP: <https://github.com/w3f/Grants-Program/blob/master/rfps/uncollateralized-stablecoin.md>
 
@@ -111,7 +111,7 @@ Our test blockchain network: <https://explorer.stardust.finance/>
 - Information on put-call parity: <https://en.wikipedia.org/wiki/Put%E2%80%93call_parity>
   <https://www.investopedia.com/terms/p/putcallparity.asp>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 Through this grant proposal, we aim to provide a well-detailed analysis of the current state of industry for stablecoins, extant and historical stablecoin solutions including failures, and a summary of the current view by the US Federal Government. These materials will also be used to generate a well-defined framework for a derivatives based synthetic stablecoin capable of originating and closing positions.
 
@@ -149,6 +149,6 @@ Through this grant proposal, we aim to provide a well-detailed analysis of the c
 
 - We'll follow up with a future research grant on historic failures of stablecoins, a summary of articulated Federal Government viewpoints on stablecoins, and its potential impact on the future regulatory landscape. Our long-term vision is to build an understanding of the stablecoin infrastructure environment and then develop and deploy an improved version on the Polkadot Network.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website

@@ -4,7 +4,7 @@
 - **Payment Address:** 0xccd79b2b77e71292924e85de130bfb1c03d94522 (Ethereum)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -43,7 +43,7 @@ Check the [Subalfred Book](https://subalfred.hack.ink).
   - If not, are there similar projects in related ecosystems?
     - No.
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -85,7 +85,7 @@ If they contain no activity, references to projects hosted elsewhere or live are
 
 - <https://www.linkedin.com/in/xavier-lau-b0655310a>
 
-## Development Status :open_book
+## Development Status :open_book:
 
 > [GitHub](https://github.com/hack-ink/subalfred), [Subalfred Book](https://subalfred.hack.ink)
 
@@ -160,7 +160,7 @@ There are three parts:
 
 - Keep connected with the community/parity to provide more useful tools.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 From my team, Darwinia Network.

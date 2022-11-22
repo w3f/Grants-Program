@@ -3,7 +3,7 @@
 * **Team Name:** Find Signal PTE. LTD.
 * **Payment Address:** `0x8cdf9e28B5C49A80c039d68Fb5807Ed8EdE72E67` or `findsignal.eth`
 
-## Project Overview :page_facing_up
+## Project Overview :page_facing_up:
 
 This is a follow-up grant for the previous successfully delivered [YieldScan grant](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/YieldScan.md) under [W3F's General Grants Program](https://github.com/w3f/General-Grants-Program/).
 
@@ -113,7 +113,7 @@ The difference that YieldScan provides is:
 
 <br /><br />
 
-## Team :busts_in_silhouette
+## Team :busts_in_silhouette:
 
 ### Team members
 
@@ -146,14 +146,14 @@ We've been building within the Polkadot ecosystem for the past 1 year understand
 * [Sahil Nanda](https://www.linkedin.com/in/sahil-nanda-8b1b88143/)
 * [Prastut Kumar](https://www.linkedin.com/in/prastut/)
 
-## Development Status :open_book
+## Development Status :open_book:
 
 * **Current live version:** <https://yieldscan.app/>
 * **Current codebase:** <https://github.com/yieldscan>
 * **Lo-fi designs:** (for new additions) <https://www.figma.com/file/VnzlrH54Bosh9UR8xQy8Dj/Panda-Finance---Project-YieldScan---Low-fi?node-id=1%3A10087>
 * **Recommendation System Documentation** - <https://docs.google.com/document/d/1ynmx3c_2hKoUXueJ5MT-gZ3ghFYJvynU6U4F_QRgHH8/edit#heading=h.gjdgxs>
 
-## Development Roadmap :nut_and_bolt
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -201,7 +201,7 @@ We want to build for the users who believe in passive wealth creation and long t
   * build more robust recommendation system + allow the ability to add custom recommendation systems in our core product flow.
     * Eg: a user could choose from various different strategies by different people and stake basis risk/rward.
 
-## Additional Information :heavy_plus_sign
+## Additional Information :heavy_plus_sign:
 
 * Are there are any teams who have already contributed (financially) to your project?
   * Web3 Foundation (previous grant)
