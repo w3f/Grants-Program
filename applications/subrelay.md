@@ -7,52 +7,56 @@
 ## Project Overview :page_facing_up:
 
 ### Overview
+
 SubRelay is a no-code solution to build automation workflows on any Substrate-based chain. The application helps users to create their off-chain automated workflows by subscribing to on-chain events through the interface. We aimed to make the app easy for average users but remain a powerful tool for advanced users. With this in mind, we designed Subrelay to be generic and flexible with any use cases. Additionally, the SubRelay can integrate with any runtime of any blockchain building on the Substrate, such as Polkadot, Kusama, and Statemine.
 
 The app was motivated by our desire to monitor the on-chain events and send webhook requests to our internal system. We wanted to build a solution that not only can solve our problems but also benefit the entire ecosystem of Substrate/Polkadot. Our vision is to make SubRelay the most popular event relay service for any chain in the Polkadot ecosystem.
 
 ### Project Details
+
 #### Wireframe
+
 ##### Welcome screen & authentication
 
-<img width="965" alt="image" src="https://user-images.githubusercontent.com/99380346/199423745-86e1138c-baa9-4ab8-95a0-10c41ba467e5.png">
+<img width="965" alt="image" src="https://user-images.githubusercontent.com/99380346/199423745-86e1138c-baa9-4ab8-95a0-10c41ba467e5.png" />
 
 
-<img width="949" alt="image" src="https://user-images.githubusercontent.com/99380346/199423786-ad5db12f-0d99-4062-a601-1e7383a015c2.png">
+<img width="949" alt="image" src="https://user-images.githubusercontent.com/99380346/199423786-ad5db12f-0d99-4062-a601-1e7383a015c2.png" />
 
 ##### Workflow list
 
-<img width="1048" alt="image" src="https://user-images.githubusercontent.com/99380346/199423962-888d0044-fbf4-4c16-bd20-5902e59c8754.png">
+<img width="1048" alt="image" src="https://user-images.githubusercontent.com/99380346/199423962-888d0044-fbf4-4c16-bd20-5902e59c8754.png" />
 
 ##### Create a new workflow
+
 ###### 1. Trigger
 
-<img width="957" alt="image" src="https://user-images.githubusercontent.com/99380346/199424027-efabf1bd-64d7-4df2-bb1b-585c38c200cd.png">
+<img width="957" alt="image" src="https://user-images.githubusercontent.com/99380346/199424027-efabf1bd-64d7-4df2-bb1b-585c38c200cd.png" />
 
-<img width="955" alt="image" src="https://user-images.githubusercontent.com/99380346/199424158-58e7681e-b000-492b-8bb6-155bce2b6327.png">
+<img width="955" alt="image" src="https://user-images.githubusercontent.com/99380346/199424158-58e7681e-b000-492b-8bb6-155bce2b6327.png" />
 
-<img width="967" alt="image" src="https://user-images.githubusercontent.com/99380346/199424196-b85e5cea-2579-4cfb-8953-303be9728267.png">
+<img width="967" alt="image" src="https://user-images.githubusercontent.com/99380346/199424196-b85e5cea-2579-4cfb-8953-303be9728267.png" />
 
-<img width="919" alt="image" src="https://user-images.githubusercontent.com/99380346/199424301-4d72238f-a482-4ae2-a578-db8d648c8406.png">
+<img width="919" alt="image" src="https://user-images.githubusercontent.com/99380346/199424301-4d72238f-a482-4ae2-a578-db8d648c8406.png" />
 
-<img width="941" alt="image" src="https://user-images.githubusercontent.com/99380346/199424325-f9395969-7709-4061-be2f-8a7c749ff62e.png">
+<img width="941" alt="image" src="https://user-images.githubusercontent.com/99380346/199424325-f9395969-7709-4061-be2f-8a7c749ff62e.png" />
 
-<img width="1163" alt="image" src="https://user-images.githubusercontent.com/99380346/199424348-6aace79c-796c-4291-9f62-9c52f6620d18.png">
+<img width="1163" alt="image" src="https://user-images.githubusercontent.com/99380346/199424348-6aace79c-796c-4291-9f62-9c52f6620d18.png" />
 
 
 ###### 2. Action
 
-<img width="936" alt="image" src="https://user-images.githubusercontent.com/99380346/199424416-acca9121-1617-4cc6-90e5-2d58e009e909.png">
+<img width="936" alt="image" src="https://user-images.githubusercontent.com/99380346/199424416-acca9121-1617-4cc6-90e5-2d58e009e909.png" />
 
-<img width="980" alt="image" src="https://user-images.githubusercontent.com/99380346/199424437-cab85945-213c-4f62-961a-6feb8625e8ef.png">
+<img width="980" alt="image" src="https://user-images.githubusercontent.com/99380346/199424437-cab85945-213c-4f62-961a-6feb8625e8ef.png" />
 
-<img width="1152" alt="image" src="https://user-images.githubusercontent.com/99380346/199424468-41fcd586-7f95-4949-a2b7-363171d07192.png">
+<img width="1152" alt="image" src="https://user-images.githubusercontent.com/99380346/199424468-41fcd586-7f95-4949-a2b7-363171d07192.png" />
 
-<img width="945" alt="image" src="https://user-images.githubusercontent.com/99380346/199424486-37948f4e-d634-4363-8a66-e3a1bddd1cfb.png">
+<img width="945" alt="image" src="https://user-images.githubusercontent.com/99380346/199424486-37948f4e-d634-4363-8a66-e3a1bddd1cfb.png" />
 
 ##### Executions history
 
-<img width="958" alt="image" src="https://user-images.githubusercontent.com/99380346/199424614-185e01bf-c329-4ef9-960d-8ae041ad68ce.png">
+<img width="958" alt="image" src="https://user-images.githubusercontent.com/99380346/199424614-185e01bf-c329-4ef9-960d-8ae041ad68ce.png" />
 
 
 #### Database schema
@@ -143,9 +147,11 @@ Ref: workflow_log.id > task_log.workflow_log_id
 
 
 #### API specs
+
 ##### ***GET** /chains*
 
 - Response
+
 ```json
     [
       {
@@ -160,6 +166,7 @@ Ref: workflow_log.id > task_log.workflow_log_id
 ##### ***GET** /chains/{chain_uuid}/events*
 
 - Response
+
 ```json
     [
       {
@@ -184,6 +191,7 @@ Ref: workflow_log.id > task_log.workflow_log_id
 ##### ***GET** /chains/{chain_uuid}/events/{event_id}*
 
 - Response
+
 ```json
     {
       "id": 123,
@@ -269,7 +277,9 @@ Ref: workflow_log.id > task_log.workflow_log_id
 ```
 
 ##### ***POST** /workflows*
+
 - Request body
+
 ```json
 {
   "name": "workflow 1",
@@ -318,6 +328,7 @@ Ref: workflow_log.id > task_log.workflow_log_id
 ```
 
 - Response
+
 ```json
 {
   "id": 22,
@@ -372,9 +383,12 @@ Ref: workflow_log.id > task_log.workflow_log_id
     }
   ]
 }
-``` 
+```
+
 ##### ***DELETE** /workflows/{workflow_id}*
+
 ##### ***GET** /workflow/logs*
+
 - Query params
 
 | **Query Param** | **Description** | **Example** |
@@ -427,18 +441,20 @@ Ref: workflow_log.id > task_log.workflow_log_id
 
 
 #### Techstack
+
 - Front-end: [Vue.js](https://vuejs.org/), [Quasar Framework](https://quasar.dev/)
 - Back-end:
-	- API Framework: Node, [Nest](https://github.com/nestjs/nest)
-	- Database: [PostgreSQL](https://www.postgresql.org/)
-	- Queue: Redis
-	- Infrastructure: Docker
+  - API Framework: Node, [Nest](https://github.com/nestjs/nest)
+  - Database: [PostgreSQL](https://www.postgresql.org/)
+  - Queue: Redis
+  - Infrastructure: Docker
 
 ### Ecosystem Fit
 
 As mentioned above, SubRelay can integrate with any Substrate-based chain, bringing a massive benefit to the Substrate/Polkadot ecosystem.
 
 There is a wide range of our target users, but we think there are a few main groups of the user:
+
 - **Normal blockchain user:** The interface of SubRelay is designed to support normal users who want to do a simple task such as watching the change in their balance by setting a notification.
 
 - **Crypto experts:** Although SubRelay's interface is easy to use to support normal users who need a simple workflow, it also is a powerful tool for experts. There is no limitation on what can build with SubRelay. For example, a defi farmer can monitor their liquidity pools, borrowing, and lending positions, or an NFT trader can watch their favorite collections' prices.
@@ -446,6 +462,7 @@ There is a wide range of our target users, but we think there are a few main gro
 - **Developers/ Team:** From the developer's perspective, there is no easy way to integrate an existing system with a blockchain. Our solution will help the teams save time and resources to focus on solving their business requirements instead of wasting their time building a service to integrate with the chain.
 
 Web3Go MoonPush looks similar to our project, but SubRelay is more generic and flexible. There are a few key differences:
+
 - SubRelay can integrate with any Substrate-based chain.
 - SubRelay supports subscribing to any runtime events.
 - SubRelay provides a highly customizable event filter and action configuration.
@@ -454,6 +471,7 @@ Web3Go MoonPush looks similar to our project, but SubRelay is more generic and f
 ## Team :busts_in_silhouette:
 
 ### Team members
+
 - Chi Tran - Team Leader
 - Anh Thi Chieu
 - Bu Le
@@ -465,24 +483,29 @@ Web3Go MoonPush looks similar to our project, but SubRelay is more generic and f
 - **Website:** http://subrelay.xyz
 
 ### Legal Structure
+
 We are very early and have not set up a legal identity. If necessary, we will set it up as soon as possible. Otherwise, we want to spend our resources on product development.
 
 ### Team's experience
+
 Our team has five-year experience in software development for SaaS startups, and provide custom enterprise solutions for top brands. We also have been spending more than a year in blockchain research and development so far. With these experiences, we know the best way to build a great product that connects web2 to web3.
 
 ### Team Code Repos
 
 **Organization repos**
+
 - https://github.com/subrelay
 - https://github.com/subrelay/subrelay-api
 - https://github.com/subrelay/interface
 
 **Team members**
+
 - https://github.com/chidtr
 - https://github.com/anhthichieu
 - https://github.com/budtr
 
 ## Development Roadmap :nut_and_bolt:
+
 ### Overview
 
 - **Total Estimated Duration:** 5 months

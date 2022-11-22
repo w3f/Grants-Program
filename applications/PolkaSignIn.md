@@ -1,13 +1,12 @@
-# W3F Grant Proposal
+# Polka SignIn
 
-* **Project Name:** Polka SignIn 
-* **Team Name:** Litentry 
-* **Payment Address:** 0x37a45AdBb275d5d3F8100f4cF16977cd4B0f9Fb7 (USDT) 
+* **Team Name:** Litentry
+* **Payment Address:** 0x37a45AdBb275d5d3F8100f4cF16977cd4B0f9Fb7 (USDT)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
-## Project Overview 
+## Project Overview
 
 ### Overview
 
@@ -32,9 +31,9 @@ to ask the user to sign such a magic string with injected signers and provides i
 
 #### Sign in Participants
 
-- **Service providers** are the dApps that have the sign-in requirement.
-- **Identity providers** are the injected signers which provide the authentication information of the user who holds the wallet.
-- **Resource Owners** are the users who hold the self-custody crypto wallets.
+* **Service providers** are the dApps that have the sign-in requirement.
+* **Identity providers** are the injected signers which provide the authentication information of the user who holds the wallet.
+* **Resource Owners** are the users who hold the self-custody crypto wallets.
 
 #### Workflow
 
@@ -51,7 +50,7 @@ The workflow works the same with or without OAuth specification. Only the 4th st
 
 ### Implementation
 
-1.  Sign-in Request
+1. Sign-in Request
 
     User want to sign in the dApp by send a simple request with identity chain type, eg: DOT, KSM, ETH etc.
 
@@ -65,7 +64,7 @@ The workflow works the same with or without OAuth specification. Only the 4th st
     }
     ```
 
-2.  Authentication Requirement
+2. Authentication Requirement
 
     dApp will return the callback info.
     The callback endpoint is used by Identity provider to send signature data to dApp.
@@ -79,7 +78,7 @@ The workflow works the same with or without OAuth specification. Only the 4th st
     }
     ```
 
-3.  Connect to Signer
+3. Connect to Signer
 
     User sends request to the Identity Provider (Injected Signer like : Polkadot.js Extension, Metamask, Parity Signer ...).
 
@@ -94,7 +93,7 @@ The workflow works the same with or without OAuth specification. Only the 4th st
     }
     ```
 
-4.  Provide Signature
+4. Provide Signature
     The Identity Provider will generate the Signature data.
 
     ```
@@ -108,15 +107,15 @@ The workflow works the same with or without OAuth specification. Only the 4th st
 
     explains:
 
-    - identity-type
+    * identity-type
 
       This field is used to choose the chain type and account.
 
-    - public-key
+    * public-key
 
       With the chain account chosen, get the public key of the account. This field will be used by dApp to decrypt the data and verify data consistency.
 
-    - account-signed
+    * account-signed
 
       use private key to sign the account.
 
@@ -135,18 +134,17 @@ The workflow works the same with or without OAuth specification. Only the 4th st
 
       ```
   
-    - scope
-    
+    * scope
+
         scope define the permission needed for the dapp to interact with the account.
-        
-    - chanllenge
-        
+
+    * chanllenge
+
         a text string need to be signed by the private key.
 
-    
     The Identity Provider will send the signature data to the callback endpoint of dApp by step #3.
 
-5.  Validation
+5. Validation
 
     The dApp receives the signature data and do the verification.
 
@@ -160,18 +158,18 @@ The workflow works the same with or without OAuth specification. Only the 4th st
         ```
 
     Verification Steps:
-    - use **public-key** to decrypt the data of **account-signed** , this progress should be successful, and get the account address.
+    * use **public-key** to decrypt the data of **account-signed** , this progress should be successful, and get the account address.
 
         **public-key** pairs with **private-key**, this step proves the validity of the private key, and ensure that the data was not tampered with.
-     
 
-    - use **public-key** to generate the address by the specified algorithmic mechanism according to the chain type, and get the account address refer to **public-key** .        
+    * use **public-key** to generate the address by the specified algorithmic mechanism according to the chain type, and get the account address refer to **public-key** .
 
-    - verify the two account address , success if they are the same. 
+    * verify the two account address , success if they are the same.
 
-    - if failure, it means the public key does not match the account address, it may happen when some malicious users want to impersonate an account.
+    * if failure, it means the public key does not match the account address, it may happen when some malicious users want to impersonate an account.
 
-    - if success, the dApp should return the response to the Identity Provider with the payload:
+    * if success, the dApp should return the response to the Identity Provider with the payload:
+
         ```
         {
             "verified": true,
@@ -179,7 +177,7 @@ The workflow works the same with or without OAuth specification. Only the 4th st
         }
         ```
 
-6.  Lookup Identity
+6. Lookup Identity
 
     The dApp gets the account address . It can retrieve the related information of account from the external service providers , such as ENS, Polkadot/Kusama Identity Registrar, etc.
 
@@ -193,7 +191,7 @@ There is few solution combine the OAuth and self-custody wallet, and no such sol
 
 * Hanwen Cheng
 * Yunjian Bian
-* Eric Zhang 
+* Eric Zhang
 
 ### Contact
 
@@ -212,15 +210,15 @@ There is few solution combine the OAuth and self-custody wallet, and no such sol
 
 ### Team Code Repos
 
-* https://github.com/litentry
-* https://github.com/litentry/litentry-parachain
-* https://github.com/litentry/litentry-app
+* <https://github.com/litentry>
+* <https://github.com/litentry/litentry-parachain>
+* <https://github.com/litentry/litentry-app>
 
 Github accounts:
 
-* https://github.com/hanwencheng
-* https://github.com/bianyunjian
-* https://github.com/jingleizhang
+* <https://github.com/hanwencheng>
+* <https://github.com/bianyunjian>
+* <https://github.com/jingleizhang>
 
 ## Development Status :open_book:
 
@@ -245,9 +243,8 @@ The hourly pay rate is 50 USD/hour
 
 In total is 120 hours, and the total payment will be 6000 USD equivalent USDT.
 
-
 ## Future Plans
 
-We planned to have a web app for user to manage the access control of the logged platforms, and enable user to curate the profile information in the future. 
+We planned to have a web app for user to manage the access control of the logged platforms, and enable user to curate the profile information in the future.
 
 It would be great to integrate with popular auth solutions in web technology, like passport (node js), next-auth (next.js).

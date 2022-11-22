@@ -1,8 +1,7 @@
-# W3F Grant Proposal
+# Keysafe Network
 
-- **Project Name:** Keysafe Network
 - **Team Name:** Keysafe
-- **Payment Address:** 0x09C08f46d523822cC9D18A077e2e3BDE5BC07a0b (Ethereum (USDT)) 
+- **Payment Address:** 0x09C08f46d523822cC9D18A077e2e3BDE5BC07a0b (Ethereum (USDT))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -55,7 +54,7 @@ We have completed a proof-of-concept to verify the feasibility of our solutions 
 
 There are a lot of tasks involved to get all of these into a product-ready state which is what we are always aiming for, but it'd be too extensive to fit all of the tasks into this one single open grant. Therefore, we have carved out a scope specifically for this grant, followed by the details of the future tasks.
 
-__Grant scope__
+**Grant scope**
 
 - Develop TEE module(written in C++) that supports basic private key transfer and management functions.
 - Develop off-chain node program(written in Rust) that coordinating with TEE module.
@@ -64,7 +63,7 @@ __Grant scope__
 - Implement a hybrid authentication mode that includes mailbox, password, Google 2FA, and Polkadot account.
 - Contribute SDKs for polkadot-js or polkadot-apps, so that polkadot users can use Keysafe Network to backup, recover and manage their substrate-based keys.
 
-__Future development__
+**Future development**
 
 - Implement more functions in TEE, such as MPC signature and access delegation.
 - Accept nodes endorsed by more organizations.
@@ -97,7 +96,7 @@ __Future development__
 
 ### Legal Structure
 
-* No legal entity yet
+- No legal entity yet
 
 ### Team's experience
 
@@ -137,9 +136,9 @@ The relevant [RFP is here](https://github.com/w3f/Grants-Program/blob/master/rfp
 
 ### Milestone 1 — Implement On-chain Modules
 
-* **Estimated duration:** 6 month
-* **FTE:**  3
-* **Costs:** 15,000USD
+- **Estimated duration:** 6 month
+- **FTE:**  3
+- **Costs:** 15,000USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -153,9 +152,9 @@ The relevant [RFP is here](https://github.com/w3f/Grants-Program/blob/master/rfp
 | 4. | Web Server | Provide meta-data management service for Keysafe users written in Rust, users can manage keys and authentication methods |
 | 5. | Polkadot.js | Add in encryption/decryption functionality to `@polkadot/keyring` and `@polkadot/extension` so that the protocol can run without the needs to read the private key of users. |
 
-* **Estimated duration:** 2 month
-* **FTE:**  3
-* **Costs:** 12,000USD
+- **Estimated duration:** 2 month
+- **FTE:**  3
+- **Costs:** 12,000USD
 
 | Number | Deliverable         | Specification                                                |
 | -----: | ------------------- | ------------------------------------------------------------ |

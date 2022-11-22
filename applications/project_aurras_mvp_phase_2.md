@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Project Aurras - MVP - Phase 2
 
-- **Project Name:** Project Aurras - MVP - Phase 2
 - **Team Name:** HugoByte AI Labs Private Limited
 - **Payment Address:** 1G5Fo5KfLSopTFKPRDUZgeCSU5PNY2kkD5 (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

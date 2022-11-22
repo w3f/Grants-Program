@@ -1,20 +1,19 @@
-# Open Grant Proposal for *Front-End for Staking Rewards Collector*
+# CryptoLab Staking Reward Collector
 
-* **Project Name:** CryptoLab Staking Reward Collector
 * **Team Name:** CryptoLab
 * **Payment Address:** 0x064530BBA1ea3aaE6cC68207Ec75EEa6a7C0c78b (DAI)
 
 ## Project Overview :page_facing_up:
 
-This application is in response to https://github.com/w3f/General-Grants-Program/blob/master/rfps/staking-rewards-collector-front-end.md
+This application is in response to <https://github.com/w3f/General-Grants-Program/blob/master/rfps/staking-rewards-collector-front-end.md>
 
 ### Overview
 
-The Staking Rewards Collector requests us to make a front-end UI so that non-technical-background people can utilize the tool in a simple way. As the requested features are quite similar to what we have done recently, We intend to implement the requests from the rfps on https://www.cryptolab.network.
+The Staking Rewards Collector requests us to make a front-end UI so that non-technical-background people can utilize the tool in a simple way. As the requested features are quite similar to what we have done recently, We intend to implement the requests from the rfps on <https://www.cryptolab.network>.
 
 ### Project Details
 
-We plan to utilize the current Staking Reward webpage (https://www.cryptolab.network/tools/dotSR) on CryptoLab as the design base. However, we will change the data source from our DB to Staking Rewards Collector, retrieving rewards from the subscan because the subscan stores all rewards data.
+We plan to utilize the current Staking Reward webpage (<https://www.cryptolab.network/tools/dotSR>) on CryptoLab as the design base. However, we will change the data source from our DB to Staking Rewards Collector, retrieving rewards from the subscan because the subscan stores all rewards data.
 
 * Mockup UI
 
@@ -32,7 +31,6 @@ See the image above, CryptoLab already have a similar page for users to query th
 The table content would also be re-worked to the Staking Rewards Collector one, mockup as below.
 
 ![image](https://user-images.githubusercontent.com/5772463/120638628-f0e1ad80-c4a2-11eb-8297-911efdb9aa20.png)
-
 
 One thing needs to discuss is that is the Tax column necessary? As it is not an input variable, users cannot enter their rates in their countries. We intend to remove the column from the webpage if you're ok.
 
@@ -53,7 +51,7 @@ Back End: Rust, NodeJS
 Currently, CryptoLab is served on a single VPS, thus the Staking Rewards Collector would be an application on it. When a user want to see the rewards, the website would call an API on the *cryptolab-web-backend*, and it then spawns a thread to call the Staking Rewards Collector and parse the responses in files. The image below show the concept of architecture of the service.
 
 ![image](https://user-images.githubusercontent.com/5772463/120573135-b0a50f80-c44f-11eb-912a-d625ba4112fd.png)
- 
+
  The modules in white blocks are what we have now. We plan to call Staking Rewards Collector from the *cryptolab-web-backend* and parse the json output to respond to the query from the website.
 
 ### Ecosystem Fit
@@ -72,7 +70,7 @@ The staking-rewards-collector is a tool for gathering staking rewards for given 
 
 * **Contact Name:** Yu-kai Tseng
 * **Contact Email:** tanistseng@gmail.com
-* **Website:** https://www.cryptolab.network
+* **Website:** <https://www.cryptolab.network>
 
 ### Legal Structure
 
@@ -85,14 +83,14 @@ We have already developed the [Cryptolab.Network](https://www.cryptolab.network)
 
 ### Team Code Repos
 
-* https://github.com/cryptolab-network/polkadot-staking-site
-* https://github.com/cryptolab-network/cryptolab-web-server
-* https://github.com/cryptolab-network/chain-data-collector
+* <https://github.com/cryptolab-network/polkadot-staking-site>
+* <https://github.com/cryptolab-network/cryptolab-web-server>
+* <https://github.com/cryptolab-network/chain-data-collector>
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* https://github.com/yktseng
-* https://github.com/iisaint
+* <https://github.com/yktseng>
+* <https://github.com/iisaint>
 
 ### Team LinkedIn Profiles (if available)
 
@@ -110,7 +108,6 @@ N/A
 * **FTE:**  1
 * **Costs:** 4000 USD
 
-
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | License | GPLv3 |
@@ -126,7 +123,6 @@ N/A
 | 7.  | Deployment | Deploy the code on CryptoLab. (1 day) |
 | 8.  | Test live environment | Test on both Chrome and Firefox and provide a report (1 day) |
 | 9.  | Polishing | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. (TBD days)|
-
 
 ## Future Plans
 

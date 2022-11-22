@@ -25,7 +25,7 @@ Application in its current alpha version provides the following features:
 
 **This application is to fund the building of the first major version of ChainViz**, with the following features/visualizations:
 
-- Complete rebuild of the the existing functionality with improved UI/UX and WebGL models, shaders and animations 
+- Complete rebuild of the the existing functionality with improved UI/UX and WebGL models, shaders and animations
 - Additional support for Polkadot
 - New visualizations
   - Parachains
@@ -73,8 +73,8 @@ ChainViz Alpha currently utilizes [SubVT backend services](https://github.com/he
 Current ChainViz Alpha system architecture can be illustrated as follows.
 
 <p align="center">
-	<img width="400" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-application/applications/chainviz-files/01-chainviz_alpha_system_architecture.png">
-    <br>
+ <img width="400" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-application/applications/chainviz-files/01-chainviz_alpha_system_architecture.png" />
+    <br />
     <i><b>Figure 1</b> ChainViz Alpha system architecture</i>
 </p>
 
@@ -91,8 +91,8 @@ Proposed upgrade to the first major version requires the following additional da
 Proposed system architecture for the upgrade can be illustrated as follows.
 
 <p align="center">
-	<img width="600" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-application/applications/chainviz-files/02-chainviz_v1_system_architecture.png">
-    <br>
+ <img width="600" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-application/applications/chainviz-files/02-chainviz_v1_system_architecture.png" />
+    <br />
     <i><b>Figure 2</b> ChainViz v1 proposed system architecture</i>
 </p>
 
@@ -106,8 +106,8 @@ A new addition to the [SubVT Backend](https://github.com/helikon-labs/subvt-back
 - Block number
 - Block author and its on-chain identity (if exists)
 - Block contents
-	- Extrinsics, their module names and arguments
-	- Events, their module names and arguments
+  - Extrinsics, their module names and arguments
+  - Events, their module names and arguments
 
 This service is going to be utilized in both displaying the block contents and cross-chain messages as extracted from the `XcmPallet` extrinsics and events.
 
@@ -142,7 +142,7 @@ Third component of the visual upgrades, the development of the **upgraded WebGL 
 There is currently no direct match in the Dotsama ecosystem of the features offered by ChainViz. ChainViz Alpha got [shared on Twitter](https://twitter.com/gavofyork/status/1491480880245874708) by Gavin Wood upon initial release, and received a lot of praise from various Dotsama ecosystem members.
 
 <p align="center">
-	<img width="400" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-application/applications/chainviz-files/03-chainviz_alpha_gavin_wood_twitter.png">
+ <img width="400" src="https://raw.githubusercontent.com/helikon-labs/Grants-Program/helikon-chainviz-application/applications/chainviz-files/03-chainviz_alpha_gavin_wood_twitter.png" />
 </p>
 
 There are currently two other projects that visualize certain aspects of the Dotsama blockspace:

@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Cross-Consensus Messaging Software Development Kit
 
-- **Project Name:** [Cross-Consensus Messaging Software Development Kit](https://github.com/w3f/Grants-Program/blob/master/rfps/open/xcm-tool.md)
 - **Team Name:** Blockcoders
 - **Payment Address:** Ethereum (USDT/USDC/DAI) 0x0B7144E7960Ac666A6AD6B38Fe65C2fe96E65994
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 

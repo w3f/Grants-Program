@@ -1,7 +1,7 @@
 # Web3 Foundation Grants Program<!-- omit in toc -->
 
 <p align="center">
-  <img src="src/Grants_Program.png" style="width:1300px";>
+  <img src="static/img/Grants_Program.png" style="width:1300px";>
 </p>
 
 
@@ -10,20 +10,22 @@
   - [Project ideas](#project-ideas)
   - [Support](#support)
   - [Team](#team)
-- [:level_slider: Levels](#level_slider-levels)
+- [:level\_slider: Levels](#level_slider-levels)
 - [:pencil: Process](#pencil-process)
   - [1. Application](#1-application)
   - [2. Application Review](#2-application-review)
   - [3. Milestone Delivery and Payment](#3-milestone-delivery-and-payment)
   - [Changes to a Grant after Approval](#changes-to-a-grant-after-approval)
-- [:mailbox_with_mail: Suggest a Project](#mailbox_with_mail-suggest-a-project)
-- [:hammer_and_wrench: Maintenance Grants](#hammer_and_wrench-maintenance-grants)
-- [:moneybag: Referral Program](#moneybag-referral-program) 
+- [:mailbox\_with\_mail: Suggest a Project](#mailbox_with_mail-suggest-a-project)
+- [:hammer\_and\_wrench: Maintenance Grants](#hammer_and_wrench-maintenance-grants)
+- [:moneybag: Referral Program](#moneybag-referral-program)
 - [:bulb: Help](#bulb-help)
   - [Additional information](#additional-information)
   - [Real-time conversation](#real-time-conversation)
   - [Office Hours](#office-hours)
 - [:rocket: Alternative Funding Sources](#rocket-alternative-funding-sources)
+  - [Substrate Builders Program vs Treasury vs Web3 Grants](#substrate-builders-program-vs-treasury-vs-web3-grants)
+  - [Substrate Builders Program](#substrate-builders-program)
   - [Treasury](#treasury)
   - [Hackathons](#hackathons)
   - [Other Grant Programs](#other-grant-programs)
@@ -103,7 +105,7 @@ In cases where a niche expert opinion is desirable, one of the committee members
 Evaluators are individuals able to evaluate the technology delivered as a result of the Grants Program. The committee has the right to add or remove evaluators on the basis of supermajority.
 
 - [Nabil Abdellaoui](https://github.com/randombishop)
-- [Matteo Casonato](https://github.com/0xCaso) 
+- [Matteo Casonato](https://github.com/0xCaso)
 - [David Hawig](https://github.com/Noc2)
 - [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
@@ -222,13 +224,13 @@ Please note that:
 
 We give away 500 USD to each referral of a successful grant application by _anyone having previously worked on a Web3 Foundation grant_ or _a [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors)_. Web3 Foundation and Parity employees do not qualify for the program, even if they previously worked on a grant.
 
-In order to be eligible for the referral bonus, the application itself must contain the name of the [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors) or the GitHub account of the grantee as well as the payment address for the referral bonus (see the [application template](applications/application-template.md)). Payment is made in Bitcoin, USDT (on Kusama or Ethereum), USDC/DAI (Ethereum) or aUSD (Acala). 
+In order to be eligible for the referral bonus, the application itself must contain the name of the [Polkadot Ambassador](https://wiki.polkadot.network/docs/ambassadors) or the GitHub account of the grantee as well as the payment address for the referral bonus (see the [application template](applications/application-template.md)). Payment is made in Bitcoin, USDT (on Kusama or Ethereum), USDC/DAI (Ethereum) or aUSD (Acala).
 
 ## :bulb: Help
 
 ### Additional information
 
-| <img src="src/web.png?s=50" width="50"> | <img src="src/twitter.png?s=50" width="50"> | <img src="src/medium.png?s=50" width="50"> | <img src="src/like.png?s=50" width="50"> | <img src="src/reddit.png?s=50" width="50"> | <img src="src/youtube-play.png?s=50" width="50"> |
+| <img src="static/img/web.png?s=50" width="50"> | <img src="static/img/twitter.png?s=50" width="50"> | <img src="static/img/medium.png?s=50" width="50"> | <img src="static/img/like.png?s=50" width="50"> | <img src="static/img/reddit.png?s=50" width="50"> | <img src="static/img/youtube-play.png?s=50" width="50"> |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [Web 3.0 Reddit](https://www.reddit.com/r/web3) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
 
@@ -247,11 +249,13 @@ Besides, we also have a **community room for all grant recipients**. Head over t
 ### Office Hours
 
 Web3 Foundation Grants Office Hours are a chance to ask the grants team questions regarding a specific (potential) grant application. It offers
-- general guidance regarding the grants program, 
-- some quick initial feedback and
-- help how to navigate the ecosystem. 
 
-Apply for Office Hours if you 
+- general guidance regarding the grants program,
+- some quick initial feedback and
+- help how to navigate the ecosystem.
+
+Apply for Office Hours if you
+
 - need feedback before submitting an application,
 - want to find out what kind of support there might be available or
 - need help finding the resources you need.
@@ -288,9 +292,9 @@ flowchart LR
     click H "https://www.substrate.io/builders-program/" "https://www.substrate.io/builders-program/" _blank
 ```
 
-### Substrate Builders Program 
+### Substrate Builders Program
 
-The [Substrate Builders Program](https://substrate.io/ecosystem/substrate-builders-program/) directly supports you by connecting you with Parity’s extensive resources. 
+The [Substrate Builders Program](https://substrate.io/ecosystem/substrate-builders-program/) directly supports you by connecting you with Parity’s extensive resources.
 
 ### Treasury
 
@@ -316,7 +320,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Darwinia Grants Program](https://github.com/darwinia-network/collaboration/blob/master/grant/README.md#grant-program)
 - [Edgeware Grants and Bounties](https://gov.edgewa.re/discussion/1132-edgeware-proposal-process-and-template)
 - [HydraDX Grants and Bounties](https://docs.hydradx.io/new_deal/)
-- [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program) 
+- [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
 - [Picasso / Composable Grants Program](https://grants.composable.finance)

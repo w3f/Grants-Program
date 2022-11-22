@@ -52,13 +52,13 @@ In addition, we will make SDKs and APIs to help integrate our platform into exis
   </tr>
   <tr>
     <td valign="top">
-      <img src="https://user-images.githubusercontent.com/24860875/201780450-fb221baa-2100-4e14-ab3f-e9df7ec387b8.png">
+      <img src="https://user-images.githubusercontent.com/24860875/201780450-fb221baa-2100-4e14-ab3f-e9df7ec387b8.png" />
     </td>
     <td valign="top">
-      <img src="https://user-images.githubusercontent.com/24860875/201781849-7c6fe810-a636-4ec1-ba02-ab0ef30e712b.png">
+      <img src="https://user-images.githubusercontent.com/24860875/201781849-7c6fe810-a636-4ec1-ba02-ab0ef30e712b.png" />
     </td>
     <td valign="top">
-      <img src="https://user-images.githubusercontent.com/24860875/201780587-781954ea-576d-4d47-b3aa-ddc7e9b6bacd.png">
+      <img src="https://user-images.githubusercontent.com/24860875/201780587-781954ea-576d-4d47-b3aa-ddc7e9b6bacd.png" />
     </td>
   </tr>
   <tr>
@@ -74,13 +74,13 @@ In addition, we will make SDKs and APIs to help integrate our platform into exis
   </tr>
   <tr>
     <td valign="top">
-      <img src="https://user-images.githubusercontent.com/24860875/201782560-2a31d346-ce7d-427b-ab10-21914fd322c8.png">
+      <img src="https://user-images.githubusercontent.com/24860875/201782560-2a31d346-ce7d-427b-ab10-21914fd322c8.png" />
     </td>
     <td valign="top">
-      <img src="https://user-images.githubusercontent.com/24860875/201782714-d2bd07bf-cbd5-4fd2-bc33-081b1bc4427b.png">
+      <img src="https://user-images.githubusercontent.com/24860875/201782714-d2bd07bf-cbd5-4fd2-bc33-081b1bc4427b.png" />
     </td>
     <td valign="top">
-      <img src="https://user-images.githubusercontent.com/24860875/201782840-4bbd6e92-f610-4019-9e95-4dca0511b319.png">
+      <img src="https://user-images.githubusercontent.com/24860875/201782840-4bbd6e92-f610-4019-9e95-4dca0511b319.png" />
     </td>
   </tr>
   <tr>
@@ -96,13 +96,13 @@ In addition, we will make SDKs and APIs to help integrate our platform into exis
   </tr>
   <tr>
     <td valign="top">
-      <img src="https://user-images.githubusercontent.com/24860875/201786471-da4cabbe-235e-4113-9f41-d0fa8f7102a9.png">
+      <img src="https://user-images.githubusercontent.com/24860875/201786471-da4cabbe-235e-4113-9f41-d0fa8f7102a9.png" />
     </td>
     <td valign="top">
-      <img src="https://user-images.githubusercontent.com/24860875/201786558-6011b8fa-9a3e-4ae6-9f34-a4c157b738bc.png">
+      <img src="https://user-images.githubusercontent.com/24860875/201786558-6011b8fa-9a3e-4ae6-9f34-a4c157b738bc.png" />
     </td>
     <td valign="top">
-      <img src="https://user-images.githubusercontent.com/24860875/201786922-8d909ed6-c757-4e06-8d82-224d960cef27.png">
+      <img src="https://user-images.githubusercontent.com/24860875/201786922-8d909ed6-c757-4e06-8d82-224d960cef27.png" />
     </td>
   </tr>
 </table>
@@ -175,19 +175,23 @@ The main goal of Polkadot is to create a decentralized network where users are i
 ### Team Code Repos
 
 Website Links:
+
 - [faterium.com](https://faterium.com/)
 - [dapp.faterium.com](https://dapp.faterium.com/)
 
 Github Organizations:
+
 - [@dodorare](https://github.com/dodorare)
 - [@faterium](https://github.com/faterium)
 
 Repositories:
+
 - [faterium/faterium-node](https://github.com/faterium/faterium-node)
 - [faterium/faterium-dapp](https://github.com/faterium/faterium-dapp)
 - [faterium/faterium-server](https://github.com/faterium/faterium-server)
 
 GitHub accounts of developer team:
+
 - https://github.com/enfipy
 - https://github.com/olvyko
 - https://github.com/Heezay
@@ -196,15 +200,15 @@ GitHub accounts of developer team:
 
 ### Overview
 
-* **Total Estimated Duration:** 7 weeks
-* **Full-time equivalent (FTE):** 5
-* **Total Costs:** 30,000 USD
+- **Total Estimated Duration:** 7 weeks
+- **Full-time equivalent (FTE):** 5
+- **Total Costs:** 30,000 USD
 
 ### Milestone 1 — Crowdfunding Polls
 
-* **Estimated Duration:** 4 weeks
-* **FTE:** 5
-* **Costs:** 17,000 USD
+- **Estimated Duration:** 4 weeks
+- **FTE:** 5
+- **Costs:** 17,000 USD
 
 The main goal of the `Milestone 1` is to create base functionality for `Crowdfunding Polls`. To make it possible - we will create Substrate Node that will contain basic template pallets, alongside with [Pallet Assets](https://github.com/paritytech/substrate/tree/master/frame/assets) (for creating assets), and [Pallet Scheduler](https://github.com/paritytech/substrate/tree/master/frame/scheduler) (for scheduling polls endings). Also, we will create a new Pallet called `Crowdfunding Polls Pallet`.
 
@@ -226,9 +230,9 @@ Please, see the Substrate API design of the Faterium Platform [above](#substrate
 
 ### Milestone 2 — Profiles, Communities, and Pages
 
-* **Estimated Duration:** 3 weeks
-* **FTE:** 5
-* **Costs:** 13,000 USD
+- **Estimated Duration:** 3 weeks
+- **FTE:** 5
+- **Costs:** 13,000 USD
 
 The main goal of the `Milestone 2` is to create UI design (see [wireframes](#wireframes) for the reference) and all main functionality of Faterium Platform: Communities, User Profiles, Categories, Assets, Crowdfunding Polls. After completion of `Milestone 1` - we will have Golang Server that we will extend with new functionality: wallet connect, user profile configuration, community creation, asset creation, voting.
 
