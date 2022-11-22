@@ -221,7 +221,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [enfipy](https://github.com/enfipy) | Creator: Mobile Game Framework for Substrate | [GitHub](https://github.com/creator-rs) | ☐ | ☒ | ☒ |
 | [Halva](https://github.com/halva-suite) | Halva: Bootstrapping and Scaffolding | [GitHub](https://github.com/halva-suite) | ☐ | ☒ | ☒ |
 | [Sunshine Systems](https://sunshine.foundation) | Sunshine Keybase | [GitHub](https://github.com/sunshine-protocol) | ☐ | ☒ | ☒ |
-| [Subscan](subscan.io) | Multi-signature Management Tool | [GitHub](https://github.com/itering) | ☐ | ☒ | ☒ |
+| [Subscan](https://subscan.io) | Multi-signature Management Tool | [GitHub](https://github.com/itering) | ☐ | ☒ | ☒ |
 | [Evercity](https://evercity.io/) | Smart Sustainable Bond Protocol (SSB-P) | [GitHub](https://github.com/EvercityEcosystem/Smart-Sustainable-Bond) | ☐ | ☒ | ☒ |
 | [Permiurly](http://permiurly.in) | Polkassembly | [GitHub](https://github.com/premiurly/polkassembly) | ☐ | ☒ | ☒ |
 | [Zeropool](https://zeropool.network/) | Private transactions on Polkadot | [GitHub](https://github.com/zeropoolnetwork) | ☐ | ☒ | ☐ |
