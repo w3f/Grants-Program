@@ -62,3 +62,7 @@ $RECYCLE.BIN/
 # IDE settings
 .vscode
 node_modules
+
+# docusaurus
+build/
+.docusaurus/
