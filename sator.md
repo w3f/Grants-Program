@@ -2,7 +2,7 @@
 
 - **Team Name:** Sator 
 - **Payment Address:**  0x5c95d9BFF0f672562df784a5787eeA621a01dBDB (USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  3
 
 ## Project Overview :page_facing_up:
 
@@ -12,7 +12,7 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-Sator project concerns technology infrastructure to onramp global content to web3 at-scale. Specifically, Sator technologies enable the tokenization of network effect value surrounding streaming content that diffuses value throughout the ecosystem. Sator project empowers non-crypto-natives with digital in-app wallets that will include Polkadot which requires the creation of in-app wallet support on Substrate, using Parity signer technology and Polkawallet SDK. Polkadot in-app wallet support unlocks the following features:
+Sator project concerns technology infrastructure to onramp global content to web3 at-scale. Specifically, Sator technologies enable the tokenization of network effect value surrounding streaming content that diffuses value throughout the ecosystem. Sator project empowers non-crypto-natives with digital in-app wallets that will include Polkadot which requires the creation of in-app wallet support on Substrate and Polkawallet SDK. Polkadot in-app wallet support unlocks the following features:
 
 - Users are able to view, burn (if an option exists), and transfer their NFTs through the Polkadot wallet. 
 - Users are allowed to create their own NFTs and collections via wallet. There also will be an option to create NFTs for a user profile photo, quiz rewards, etc.
@@ -129,13 +129,13 @@ For each milestone,
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can transact using Sator in-app DOT wallet, and show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains how to use in-app DOT wallet. |
 | 1. | Overview |  In this milestone we will complete the integration of a Polkadot wallet which allows for simple and easy access to private keys and signing transactions, adding DOT ecosystem functionality to our holders. |
-| 2. | Wallet SDK | We will  test Parity Signer wallet and Polkawallet SDK 0.5.0 for integrating substrate-based blockchain as a plugin. |
+| 2. | Wallet SDK | We will  test Polkawallet SDK 0.5.0 for integrating substrate-based blockchain as a plugin. |
 | 2a. | Dart Package | Building a polkawallet_plugin dart package |
 | 3. | Polkadot-JS API | Build Polkadot-JS wrapper |
 | 3a. | API wrapper | The App will use a polkadot-js/api instance running in a hidden webView to connect to a remote node on Polkadot. |
@@ -150,7 +150,7 @@ For each milestone,
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. | License | Apache 2.0  |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can transact using Sator in-app DOT wallet, and show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
@@ -169,7 +169,7 @@ For each milestone,
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can transact using Sator in-app DOT wallet, and show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
