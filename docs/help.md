@@ -6,7 +6,7 @@ title: Help
 
 ### Additional information
 
-| <img src="/img/web.png?s=50" width="50"></img> | <img src="/img/twitter.png?s=50" width="50"></img> | <img src="/img/medium.png?s=50" width="50"></img> | <img src="/img/like.png?s=50" width="50"></img> | <img src="/img/reddit.png?s=50" width="50"></img> | <img src="/img/youtube-play.png?s=50" width="50"></img> |
+| <img src="/Grants-Program/img/web.png?s=50" width="50"></img> | <img src="/Grants-Program/img/twitter.png?s=50" width="50"></img> | <img src="/Grants-Program/img/medium.png?s=50" width="50"></img> | <img src="/Grants-Program/img/like.png?s=50" width="50"></img> | <img src="/Grants-Program/img/reddit.png?s=50" width="50"></img> | <img src="/Grants-Program/img/youtube-play.png?s=50" width="50"></img> |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [Web 3.0 Reddit](https://www.reddit.com/r/web3) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
 
