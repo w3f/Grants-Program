@@ -14,7 +14,7 @@ title: Requests for Proposals
 
 An RFP (Request for Proposals) is a declaration of interest for others to submit a grant application regarding a specific project. They usually revolve around issues that the author (often someone from our team, but [anyone can suggest one](../suggesting_a_project.md)) deems useful and missing or unsolved in our ecosystem.
 
-If you find an open RFP here that you think you can address, feel free to [submit a grant application](../apply.md). There is a [section in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md#project-overview-page_facing_up) where you can reference the RFP you are addressing.
+If you find an open RFP here that you think you can address, feel free to [submit a grant application](../Process/index.md). There is a [section in our application template](https://github.com/w3f/Grants-Program/blob/master/applications/application-template.md#project-overview-page_facing_up) where you can reference the RFP you are addressing.
 
 
 ## :scroll: List of RFPs

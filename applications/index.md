@@ -106,7 +106,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Simply VC](https://simply-vc.com.mt/) | P.A.N.I.C. Validator alerting solution | [GitHub](https://github.com/SimplyVC/panic_polkadot) | ☐ | ☒ | ☒ |
 | [Ethworks](https://ethworks.io/) | Polkadot{.js} extension improvements | [GitHub](https://github.com/ethWorks) | ☐ | ☒ | ☒ |
 | [Lyken Software Solutions](https://lyken.rs/) | Investigation of runtime compilation | [GitHub](https://github.com/LykenSol) | ☐ | ☒ | ☒ |
-| [Blockchain IT](blockchain-it.hr) | Ink! Remix Plugin | [GitHub](https://github.com/blockchain-it-hr/ink-remix-plugin) | ☐ | ☒ | ☒ |
+| [Blockchain IT](https://blockchain-it.hr) | Ink! Remix Plugin | [GitHub](https://github.com/blockchain-it-hr/ink-remix-plugin) | ☐ | ☒ | ☒ |
 | [Kadena](https://www.kadena.io/) | Pact feasibility study | [GitHub](https://github.com/kadena-io/) | ☐ | ☐ | ☐ |
 | [STAFI Protocol](http://www.stafi.io/) | Stafi is a protocol to provide liquidity for staking assets | [GitHub](https://github.com/stafiprotocol/stafi-node) | ☐ | ☒ | ☒ |
 | [Vision Baker](https://playproject.io/) | DatDot — Dat protocol for Polkadot | [GitHub](https://github.com/playproject-io/datdot) | ☐ | ☒ | ☐ |
@@ -208,7 +208,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
 | [Halva](https://github.com/halva-suite) | A toolchain for improving the experience of developing Decentralized Applications based on Substrate | [GitHub](https://github.com/halva-suite) | ☐ | ☒ | ☒ |
-| [Subscan](subscan.io) | Substrate explorer | [GitHub](https://github.com/itering/subscan) | ☐ | ☒ | ☒ |
+| [Subscan](https://subscan.io) | Substrate explorer | [GitHub](https://github.com/itering/subscan) | ☐ | ☒ | ☒ |
 | [t3rn](https://github.com/t3rn/t3rn) | A protocol for blockchain interoperability | [GitHub](https://github.com/t3rn/t3rn) | ☐ | ☒ | ☒ |
 | [Stake Technologies](https://stake.co.jp/) | Hardware ECDSA for Polkadot JS | [GitHub](https://github.com/polkadot-js) | ☐ | ☒ | ☒ |
 | [Protofire](https://protofire.io/) | Failover mechanism for validators upgrade | [GitHub](https://github.com/protofire) | ☐ | ☒ | ☐ |
@@ -414,7 +414,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | Matthew Darnell | cScale | [GitHub](https://github.com/MatthewDarnell/cScale) | ☐ | ☒ | ☐ |
 | [Web3go](https://web3go.xyz/) | Web3go | [GitHub](https://github.com/web3go-xyz) | ☐ | ☒ | ☐ |
 | [Prosopo Limited](https://prosopo.io) | Prosopo: Human Verification Marketplace | [GitHub](https://github.com/prosopo-io) | ☐ | ☒ | ☒ |
-| [Litentry](www.litentry.com) | Polka SignIn | [GitHub](https://github.com/litentry) | ☐ | ☐ | ☐ |
+| [Litentry](https://www.litentry.com) | Polka SignIn | [GitHub](https://github.com/litentry) | ☐ | ☐ | ☐ |
 | [gmajor](https://github.com/gmajor-encrypt) | PHP RPC Lib | [GitHub](https://github.com/gmajor-encrypt/) | ☐ | ☒ | ☒ |
 | [logion](https://logion.network/) | Logion wallet | [GitHub](https://github.com/logion-network) | ☐ | ☒ | ☒ |
 | [SuperColony](https://www.supercolony.net/) | OpenBrush - Secure smart-contract development on ink! Phase 2 | [GitHub](https://github.com/Supercolony-net) | ☐ | ☒ | ☐ |
@@ -424,7 +424,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [DICO Team](https://dico.io/) | DICO: Decentralized and governable ICO platform | [GitHub](https://github.com/DICO-TEAM/dico-chain) | ☐ | ☐ | ☐ |
 | [DodoRare, Inc.](https://dodorare.com) | Crossbow - Cross-Platform Rust Toolkit for Games | [GitHub](https://github.com/dodorare) | ☐ | ☒ | ☒ |
 | [Rainbowcity Foundation](http://www.rainbowcity.io/) | RainbowDAO Protocol ink! Phase 1 | [GitHub](https://github.com/RainbowcityFoundation/RainbowcityDAO) | ☐ | ☒ | ☒ |
-| [Web Registry DAO](www.wika.network) | Wika Network | [GitHub](https://github.com/randombishop/wika_node) | ☐ | ☒ | ☐ |
+| [Web Registry DAO](https://www.wika.network) | Wika Network | [GitHub](https://github.com/randombishop/wika_node) | ☐ | ☒ | ☐ |
 | [Helikon Labs](http://www.helikon.tech/) | SubVT Telegram Bot for Kusama and Polkadot | [GitHub](https://github.com/helikon-labs/polkadot-kusama-1kv-telegram-bot) | ☐ | ☒ | ☒ |
 | [Elamin LTD](http://imbue.network/) | Imbue Network | [GitHub](https://github.com/ImbueNetwork) | ☐ | ☒ | ☒ |
 | [Koi Metaverse](https://koi.io/) | Building the Digital Collectibles Platform for Virtual GameFi NFTs | [GitHub](https://github.com/KoiMetaverse) | ☐ | ☐ | ☐ |
