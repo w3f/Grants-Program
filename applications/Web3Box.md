@@ -99,11 +99,12 @@ Web3Box has confirmed the overall architecture. And now, Web3Box is confirming t
 | 2. | **Dashboard**:Assets pie chart| Polkadot users' asset distribution pie chart |
 | 3. | **Dashboard**:Latest transaction display | View the lastest asset transactions of Polkadot users |
 | 4. | **Dashboard**:Real-time assets price | Real-time display of Polkadot eco assets' price |
-| 5. | **Multi-chain Wallet**:Support Polkadot multi-chain assets | Polkadot ecological multi-chain wallet, including Polkadot, Kusama, Moonbeam, Astar, Acala, Phala, Litentry, etc. |
-| 6. | **Multi-chain Wallet**:Polkadot multi-chain assets management  | Multi-chain asset management, including asset sending, receiving and transaction record query
+| 5. | **Electron-based Multi-chain Wallet**:Support Polkadot multi-chain assets | Polkadot ecological multi-chain wallet, including Polkadot, Kusama, Moonbeam, Astar, Acala, Phala, Litentry, etc. |
+| 6. | **Electron-based Multi-chain Wallet**:Polkadot multi-chain assets management  | Multi-chain asset management, including asset sending, receiving and transaction record query
 
-**Note: Web3Box team will finsih Milestone1, and then start the Milestone 2 Risk Assessment, more details about Milestone2 will be announced by the follow-up grant applicaiton.**
-
+**Note**
+- Web3Box team will finsih Milestone1, and then start the Milestone 2 Risk Assessment, more details about Milestone2 will be announced by the follow-up grant applicaiton.
+- Dashboard data resources: For on-chain assets data, we will get this info from the supported chains' mainnet in real time, like Polkadot Relaychain, Acala Parachain, etc. And for the token price data source, we will get the data from chainlink every 5 mins or 10mins. All data sources are requested in a decentralized way.
 
 ## Future Plans
 
