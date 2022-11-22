@@ -38,12 +38,6 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'apply',
-          position: 'left',
-          label: 'Apply',
-        },
-        {
-          type: 'doc',
           docId: 'Introduction/index',
           label: 'Introduction',
         },
@@ -57,6 +51,12 @@ module.exports = {
           type: 'doc',
           docId: 'FAQ',
           label: 'FAQ',
+        },
+        {
+          type: 'doc',
+          docId: 'apply',
+          position: 'right',
+          label: 'Apply',
         },
         {
           type: 'doc',
