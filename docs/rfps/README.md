@@ -3,7 +3,7 @@ title: Requests for Proposals
 ---
 
 <p align="center">
-  <img src="/Grants-Program/img/rfp-header.png" style={{width:"1300px"}} />
+  <img src="https://raw.githubusercontent.com/w3f/Grants-Program/master/static/img/rfp-header.png" style={{width:"1300px"}} />
 </p>
 
 - [❔ What is an RFP?](#grey_question-what-is-an-rfp)
