@@ -1,18 +1,16 @@
-# W3F Open Grant Proposal
+# X Predict Market
 
-* **Project Name:** X Predict Market
 * **Proposer:** Wenzhu liang
 * **Payment Address:** DAI：0x6e30f740A57a330de35D0ecE0ADF1eEc3D8C6c34
 * **Status:** [Terminated](https://github.com/w3f/Grant-Milestone-Delivery/pull/148#issuecomment-1004782716)
 
-
-## Project Overview :page_facing_up: 
+## Project Overview :page_facing_up:
 
 ### Overview
 
 X Predict Market is a decentralized prediction market. The objective of X Predict Market is to enable users to participate in the prediction process in various ways by creating topics, discussing, predicting and approving the results. Users are also incentivized by these engaging activities. Beyond the prediction, users can actively interact and socialize with each other within the social system. It is a way to gather people's wisdom to conduct historical analysis and future exploration. It can also benefit current decision-making. Therefore, our team wants to contribute to such a way to condense the wisdom of the people. It will be developed based on Polkadot's substrate framework.
 
-### Project Details 
+### Project Details
 
 As an evolving decentralized prediction market, X Predict Market is composed of an initial proposal pool and a formal prediction pool. In the initial proposal pool, users can create a variety of interesting topics for prediction. Meanwhile, other users can vote on the feasibility of the topic, and it will enter the formal prediction pool after the vote is casted.
 
@@ -34,7 +32,7 @@ Each option will generate a token, of which the market making will be automatica
 
 3. **The Prediction Stage**
 
-    Proposals that have passed the initial voting will be displayed in the formal prediction pool. Users can choose any of the ongoing prediction topics to submit their opinions. When the topic is created, the creator sets the settlement currency for transaction at the very beginning, such as DOT. 
+    Proposals that have passed the initial voting will be displayed in the formal prediction pool. Users can choose any of the ongoing prediction topics to submit their opinions. When the topic is created, the creator sets the settlement currency for transaction at the very beginning, such as DOT.
     Users can either make predictions or add liquidity to the prediction topic. Users will get transaction fee by adding liquidity.
 
     When making a prediction, a certain amount of settlement tokens is required in the wallet, and then the settlement token is exchanged for the prediction tokens. During the prediction period, users are free to sell prediction tokens to make profits or stop losses in a timely manner. When the prediction result is officially announced, the tokens which are successfully predicted will be exchanged for settlement tokens at a ratio of 1:1, otherwise the tokens that fail the prediction will lose value.
@@ -81,17 +79,17 @@ Each option will generate a token, of which the market making will be automatica
 
 ## Ecosystem Fit
 
-- **X Predict Market in Polkadot ecosystem**
+* **X Predict Market in Polkadot ecosystem**
 
     X Predict Market plans to build the parachain on Polkadot network. Our main focus in the early stage of development lies in the development and upgrade in the test chain.X Predict Market will play an important role in the Polkadot network as prediction market, an integration prediction platform including event prediction, community governance, market incentive as well as social system.Concerning the settlement currency in prediction market, X Predict Market will give priority to the tokens of Polkadot ecosystem. Besides, we will seek interaction with other projects in terms of the market incentive mining. For example, tokens of a certain project can be chosen as settlement currency of a certain popular topic of X Predict Market. In addition to the prediction mining, users can share the transaction fee by providing liquidity, obtained from which the LP token can be used for yield farm.
 
-- **Target audience**
+* **Target audience**
 
     The target audience of our project is based on users interested in predicting events, but can be extended to the corresponding types of interested users according to the specific types of prediction topics,For instance, price prediction of certain DEFI project can be extended to users in DEFI area, and even focus on users of the project itself; Another example, the prediction of the presidential election can appeal to those who have not been exposed to digital currencies, who simply want to participate in the pre-predictions of the presidential election, who are fans of a certain president or someone who wants to make a profit through gaming in addition to users who are interested in the prediction itself.
 
-- **Use case**
+* **Use case**
 
-    Our project enables the users to hedge their risks. For instance, farmers in a certain area can hedge their risk of drought by predicting rainfall. If the rainfall is of abundance, a bumper crop is expected, if not, the farmers can receive their hedge profit. 
+    Our project enables the users to hedge their risks. For instance, farmers in a certain area can hedge their risk of drought by predicting rainfall. If the rainfall is of abundance, a bumper crop is expected, if not, the farmers can receive their hedge profit.
 
     Our project is applicable in consumer preferences investigation.For example, prediction of the sales volume of a certain two competing products in a certain quarter. The competing product can refer to a certain car, food, cosmetics, etc. with public sales statistics (for example, a listed company with quarterly reports), which can guarantee the final result. Ex Ante prediction can gain insight to people’s satisfaction and confidence in different competing products in advance, thereby knowing which products are more popular with consumers, and improving existing products to meet consumer preferences.
 
@@ -103,7 +101,7 @@ Each option will generate a token, of which the market making will be automatica
 
     The prediction topics of our project are issued from users' spontaneous discussions, which is featured with great diversification. Evolution is expected with the continuous use case discovery by users. The use case above are merely just some possible examples.
 
-- **Similar project**
+* **Similar project**
 
     We have summarized a form and made a comparison with the most popular prediction-related projects in the current market, as shown in the figure below.
 
@@ -131,25 +129,25 @@ Each option will generate a token, of which the market making will be automatica
 
 ### Team members
 
-- **Wenzhu liang**
+* **Wenzhu liang**
 
-    - 7 years experience in front-end development HTML、CSS、javascript、Vue、React、Nodejs familiar with Rust,substrate development, project management
+  * 7 years experience in front-end development HTML、CSS、javascript、Vue、React、Nodejs familiar with Rust,substrate development, project management
 
-- **Zhijie Jiang**
+* **Zhijie Jiang**
 
-    - Rich programming experience, 1 years Solidity development experience familiar with block chain development, master Rust、Substrate.
+  * Rich programming experience, 1 years Solidity development experience familiar with block chain development, master Rust、Substrate.
 
-- **Hongtao Ji**
+* **Hongtao Ji**
 
-    - 3 Years of rich programming experience, familiar with c/c ,solidity,nodejs,rust,substrate development.
-    
-- **Danling Xiao**
+  * 3 Years of rich programming experience, familiar with c/c ,solidity,nodejs,rust,substrate development.
 
-    - 3 years experience in front-end development HTML、CSS、javascript、Vue familiar with React development
-    
-- **Ting Chen**
+* **Danling Xiao**
 
-    - 8 years experience in design, rich project experience in block chain finance industry, mature independent design control and innovation ability, good at visual brand design, product design, proficient in photography shop, sketch, illustrator, C4D
+  * 3 years experience in front-end development HTML、CSS、javascript、Vue familiar with React development
+
+* **Ting Chen**
+
+  * 8 years experience in design, rich project experience in block chain finance industry, mature independent design control and innovation ability, good at visual brand design, product design, proficient in photography shop, sketch, illustrator, C4D
 
 ### Contact
 
@@ -161,15 +159,15 @@ Each option will generate a token, of which the market making will be automatica
 
 ### Legal Structure
 
-- Registered Address: The British Virgin Islands
+* Registered Address: The British Virgin Islands
 
-- Registered Legal Entity:BAY SQUARE INTERNATIONAL LIMITED
+* Registered Legal Entity:BAY SQUARE INTERNATIONAL LIMITED
 
 ### Team's experience
 
 X Predict Market is experienced in blockchain product planning, design and development.
 Having worked in the crypto currency exchange, most of our team members have become seasoned smart contract developers after their experience in DeFi lending and DEX development.
-Our team members are proficient in Rust, C++, Solidity, Java, JavaScript and other development languages. 
+Our team members are proficient in Rust, C++, Solidity, Java, JavaScript and other development languages.
 Among whom Liang Wenzhu is certified by the Parity substrate course as Outstanding Student and has led other members of the team to systematically study substrate.
 
 ### Team Code Repos
@@ -184,23 +182,23 @@ Among whom Liang Wenzhu is certified by the Parity substrate course as Outstandi
 * [https://www.linkedin.com/in/%E5%BD%93%E7%8E%B2-%E8%82%96-b01986208](https://www.linkedin.com/in/%E5%BD%93%E7%8E%B2-%E8%82%96-b01986208)
 * [https://www.linkedin.com/in/tina-chen-291806202](https://www.linkedin.com/in/tina-chen-291806202)
 
-## Development Status :open_book: 
+## Development Status :open_book:
 
 We have completed the planning of the product prototype, the design of the UI diagram, and the technical architecture, and are beginning to develop.
 
 Documents about the technical architecture can be viewed at the following link：
 
-https://github.com/XPredictMarket/docs/blob/master/Technial.md
+<https://github.com/XPredictMarket/docs/blob/master/Technial.md>
 
 For product UI diagrams, you can check the following links:
 
-https://github.com/XPredictMarket/docs/tree/master/ui
+<https://github.com/XPredictMarket/docs/tree/master/ui>
 
 White paper link：
 
-https://x-predict.com/X_Predict_market_Whitepaper_en.pdf?v=1.0
+<https://x-predict.com/X_Predict_market_Whitepaper_en.pdf?v=1.0>
 
-## Development Roadmap :nut_and_bolt: 
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 

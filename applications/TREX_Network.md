@@ -7,7 +7,7 @@
 
 ## Project Overview :page_facing_up:
 
-TREX is a project to develop a protocol and network to support permissionless & trustless timed-release encryption in Web3. It is a decentralized network that consists of validators, archivers, off-chain workers in a trusted execution environment (TEE), and other essential substrate nodes. This project is developed based on the Substrate framework as a parachain of the Polkadot ecosystem. We aim at institutional and business clients who need blockchain technology to enhance their data security and build [decentralized reputations](https://newsletter.thedefiant.io/p/-decentralized-reputation-is-about-a8b) on Web3.
+TREX is a project to develop a protocol and network to support permissionless timed-release encryption in Web3. It is a decentralized network that consists of validators, archivers, off-chain workers in a trusted execution environment (TEE), and other essential substrate nodes. This project is developed based on the Substrate framework as a parachain of the Polkadot ecosystem. We aim at institutional and business clients who need blockchain technology to enhance their data security and build [decentralized reputations](https://newsletter.thedefiant.io/p/-decentralized-reputation-is-about-a8b) on Web3.
 
 ### Overview
 
@@ -236,6 +236,7 @@ Finally, our fourth milestone is the implementation of XCMP for cross-chain appl
 ### Milestone 1 — Implement TREX network as a Polkadot para-chain
 
 - **Estimated duration:** 2 months
+
 - **FTE:**  2
 - **Costs:** 10,000 USD
 

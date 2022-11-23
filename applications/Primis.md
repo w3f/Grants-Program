@@ -1,7 +1,5 @@
-# W3F Grant Proposal
+# Primis
 
-
-- **Project Name:** Primis
 - **Team Name:** Primis
 - **Payment Address:** 0x0Ad212E301AD590f4E70dA0c0Aa2912273cB4098 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
@@ -10,26 +8,28 @@
 ## Project Overview
 
 ### Overview
+
 Primis Desktop provides a one-stop Web3 integrated client for the Polkadot ecosystem.
 
 
 ### Primis Web3 Desktop for Polkadot
+
 **Primis Wallet**
 
 Primis Desktop Wallet is the best tool to manage multi-chain assets on the Polkadot ecosystem, such as Polkadot, Kusama, and other parachains. Asset management mainly includes digital/NFT assets checking, sending, receiving, and trading records on the Polkadot ecosystem.
 
  **P2P Chat**
 
-Primis Desktop provides encrypted chat groups for Polkadot ecosystem users to discuss decentralized Gov2 governance and Proposal freely. ZK-Proof technology will be combined into Primis chat groups to offer more privacy and decentralized DAO governance space. 
+Primis Desktop provides encrypted chat groups for Polkadot ecosystem users to discuss decentralized Gov2 governance and Proposal freely. ZK-Proof technology will be combined into Primis chat groups to offer more privacy and decentralized DAO governance space.
 
 Primis Desktop could automatically create encrypted chat groups for Polkadot ecosystem DApps, each DApp has its own independent chat group.
 
 - Channels For Chat
-<img width="1364" alt="image" src="https://user-images.githubusercontent.com/108513186/184348893-45e19826-b056-466e-9fe2-802d12e6f1aa.png">
+<img width="1364" alt="image" src="https://user-images.githubusercontent.com/108513186/184348893-45e19826-b056-466e-9fe2-802d12e6f1aa.png" />
 
 
 - P2P Chat
-<img width="1371" alt="image" src="https://user-images.githubusercontent.com/108513186/184348981-7ef266b8-d48a-4dc5-9412-868a0485b831.png">
+<img width="1371" alt="image" src="https://user-images.githubusercontent.com/108513186/184348981-7ef266b8-d48a-4dc5-9412-868a0485b831.png" />
 
 
 
@@ -40,7 +40,7 @@ Primis Desktop also is a place for users to subscribe to Polkadot decentralized 
 
 **Primis Web3 PNS Browser**
 
-Primis Desktop will gestate a Chrome-compatible PNS browser for the Polkadot ecosystem, allowing Polkadot ecosystem users to access Web2 pages and interact with Web3 DApps freely. Primis Web3 PNS Browser supports Polkadot ecosystem PNS domains’ resolution and visit. 
+Primis Desktop will gestate a Chrome-compatible PNS browser for the Polkadot ecosystem, allowing Polkadot ecosystem users to access Web2 pages and interact with Web3 DApps freely. Primis Web3 PNS Browser supports Polkadot ecosystem PNS domains’ resolution and visit.
 
 
 Unlike traditional browsers such as Chrome, Brave, and Web2 centralized Cloud Service, Primis Web3 PNS Browser is based on a data relay network, where access and application data are transmitted to clients or Primis terminals through a relay network of Primis nodes.
@@ -57,7 +57,7 @@ All of our teammates truly believed in the Web3 Revolution! That's why we want t
 ### Tech Stack
 
 
-Supported Chains: Polkadot, Kusama, and other Parachains such as Acala, Astar, and Moonbeam. 
+Supported Chains: Polkadot, Kusama, and other Parachains such as Acala, Astar, and Moonbeam.
 
 Client language: Electron, React
 
@@ -74,6 +74,7 @@ Primis is the first blockchain project known as the web3 desktop. And we want to
 ## Team
 
 ### Team members
+
 Primis team has rich experience in the fields of the public chain, infrastructure, and defi. Team members' info will be released after reviewing.
 
 ### Contact
@@ -84,7 +85,7 @@ Primis team has rich experience in the fields of the public chain, infrastructur
 
 ### Legal Structure
 
-- **Registered Address:** This info will be released after reviewing 
+- **Registered Address:** This info will be released after reviewing
 - **Registered Legal Entity:**  Also, this info will be released after reviewing.
 
 ### Team's experience
@@ -98,13 +99,13 @@ Primis team has developed some blockchain projects, like [Metauce](metauce.org)
 
 ### Team LinkedIn Profiles (if available)
 
-This info will be released after reviewing 
+This info will be released after reviewing
 
-## Development Status 
+## Development Status
 
 Primis Team already completed the designing work of Primis Desktop and started working on Milestone 1 Tech Tasks.
 
-## Development Roadmap 
+## Development Roadmap
 
 ### Overview
 
@@ -134,10 +135,10 @@ Primis Team already completed the designing work of Primis Desktop and started w
 
 Short-term: After finishing all milestones, the users' amount of Primis web3 desktop will be over 50K.
 
-Long-term:  The most influenced Web3 desktop 
+Long-term:  The most influenced Web3 desktop
 
 
-## Additional Information 
+## Additional Information
 
 **How did you hear about the Grants Program?** Web3 Foundation Website
 

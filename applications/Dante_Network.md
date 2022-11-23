@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Dante Network
 
-- **Project Name:** Dante Network
 - **Team Name:** Dante Network
 - **Payment Address:** 0xc92314a5f62FA54b272612804C9Ac70AC139F7B0 (Ethereum ERC20 USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
