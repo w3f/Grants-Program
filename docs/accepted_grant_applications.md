@@ -503,7 +503,7 @@
 | [Societal Labs Ltd.](https://www.sctl.xyz/) | Societal - MVP - Phase 1 | [GitHub](https://github.com/sctllabs) | ☐ | ☐ | ☐ |
 | [Faceless Protocol](https://github.com/HeisenbergLin22) | Faceless Protocol | [GitHub](https://github.com/HeisenbergLin22) | ☐ | ☒ | ☐ |
 | [SuperColony](https://github.com/Supercolony-net) | Typechain | [GitHub](https://github.com/Supercolony-net/typechain-polkadot) | ☐ | ☒ | ☒ |
-| [Codelight](https://massbit.io/) | Massbit Route | [GitHub](https://github.com/massbitprotocol/massbitroute) | ☐ | ☒ | ☐ |
+| [Codelight](https://massbit.io/) | Massbit Route | [GitHub](https://github.com/massbitprotocol/massbitroute) | ☐ | ☒ | ☒ |
 | [Hypha Hashed Partners](https://hypha.earth/) | Social Recovery Wallet | [GitHub](https://github.com/hypha-dao) | ☐ | ☒ | ☐ |
 | [MangoBOX labs](http://mangobox.xyz/) | MangoBOX Protocol | [GitHub](https://github.com/Mangoboxlabs) | ☐ | ☐ | ☐ |
 
