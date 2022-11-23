@@ -232,21 +232,22 @@ At the next level, our second milestone is integrating the TOCW with our network
 Finally, our fourth milestone is the implementation of XCMP for cross-chain applications.
 
 
-### Milestone 1 — Implement TREX network as a side-chain
+### Milestone 1 — Implement TREX network as a Polkadot para-chain
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 2 months
 - **FTE:**  2
 - **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT License
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a content creator can generate tradable content and a user can gain early access to this content with a fee. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code, API documentation and a basic **tutorial** that explains how a dApp user can publish his timed-release data on the blockchain. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an online blog that explains how this module works as described in the following figure.
-| 1. | TREX off-chain worker | A TREX off-chain worker in TEE so that client can safely send encrypted data to the network and send the shielded key to the off-chain worker. The off-chain worker is remotely attested by a decentralized network so that the worker node cannot manipulate the release of the encrypted data.
-| 2. | TREX block index engine | A TREX block index engine to unlock the early encrypted on-chain data based on recently released keys from TEE off-chain workers and archive the released data into a PostgreSQL database for efficient data access.
+| 0e. | Article | We will publish an online documents that explains how this module works as described in the following figure.
+| 1. | TREX key-holder (off-chain worker) | A TREX off-chain worker (named as "key-holder") in TEE so that client can safely send encrypted data to the network and send the shielded key to the key-holder. The key-holder worker is remotely attested by a decentralized network so that the worker node cannot manipulate the release of the encrypted data. The "key-holder" node will provide a key-holder service to hold the key piece inside the TEE and release it until it expired.
+| 2. | TREX node | A TREX core node provides pallets and APIs so that a key-holder can publish its remote attestation reports on the chain and other clients can access the report to verify its TEE. The TREX node also provides APIs to post timed-released data and expired keys to unlock those datas.
+| 3. | CLI tool | A CLI tool to provide basic blockchain and TEE functionalities like generation of accounts, checking account balance and getting public key for shielding encryption key.
 
 ## Future Plans
 In the short term, our team is working on landing the first dTRE infrastructure on the Web3 frontier and promoting the technology in the Polkadot/Substrate ecosystem.
