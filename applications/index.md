@@ -511,7 +511,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [SuperColony](https://github.com/Supercolony-net) | Typechain | [GitHub](https://github.com/Supercolony-net/typechain-polkadot) | ☐ | ☒ | ☒ |
 | [Codelight](https://massbit.io/) | Massbit Route | [GitHub](https://github.com/massbitprotocol/massbitroute) | ☐ | ☒ | ☒ |
 | [Hypha Hashed Partners](https://hypha.earth/) | Social Recovery Wallet | [GitHub](https://github.com/hypha-dao) | ☐ | ☒ | ☐ |
-| [MangoBOX labs](http://mangobox.xyz/) | MangoBOX Protocol | [GitHub](https://github.com/Mangoboxlabs) | ☐ | ☐ | ☐ |
+| [MangoBOX labs](http://mangobox.xyz/) | MangoBOX Protocol | [GitHub](https://github.com/Mangoboxlabs) | ☐ | ☒ | ☒ |
 
 ### 🏄‍♀️ Wave 15 - Third Quarter 2022
 
