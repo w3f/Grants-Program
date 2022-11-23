@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Project ideas
+# Project Ideas
 
 An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](https://wiki.polkadot.network/docs/build-open-source), as well as a list of previously accepted applications [here](../Applications/index.md).
 

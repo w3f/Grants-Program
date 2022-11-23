@@ -7,7 +7,7 @@
 
 - [:wave: Introduction](#wave-introduction)
   - [Guidelines](#guidelines)
-  - [Project ideas](#project-ideas)
+  - [Project Ideas](#project-Ideas)
   - [Support](#support)
   - [Team](#team)
 - [:level\_slider: Levels](#level_slider-levels)
@@ -62,7 +62,7 @@ Finally, we take licensing and the right of all teams in and outside the ecosyst
 
 We also try to enforce our [code of conduct](CODE_OF_CONDUCT.md) and based on this may [block users](https://github.blog/2016-04-04-organizations-can-now-block-abusive-users/).
 
-### Project ideas
+### Project Ideas
 
 An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](https://wiki.polkadot.network/docs/build-open-source), as well as a list of previously accepted applications [here](https://github.com/w3f/Grants-Program/blob/master/applications/index.md).
 
