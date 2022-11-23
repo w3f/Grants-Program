@@ -11,25 +11,25 @@
 ## Table of Contents <!-- omit in toc -->
 
 - [2019](#2019)
-  - [🏄‍♀️ Wave 1 - First Quarter 2019](#%EF%B8%8F-wave-1---first-quarter-2019)
-  - [🏄‍♀️ Wave 2 - Second Quarter 2019](#%EF%B8%8F-wave-2---second-quarter-2019)
-  - [🏄‍♀️ Wave 3 - Third Quarter 2019](#%EF%B8%8F-wave-3---third-quarter-2019)
-  - [🏄‍♀️ Wave 4 - Fourth Quarter 2019](#%EF%B8%8F-wave-4---fourth-quarter-2019)
+  - [🏄‍♀️ Wave 1 - First Quarter 2019](#️-wave-1---first-quarter-2019)
+  - [🏄‍♀️ Wave 2 - Second Quarter 2019](#️-wave-2---second-quarter-2019)
+  - [🏄‍♀️ Wave 3 - Third Quarter 2019](#️-wave-3---third-quarter-2019)
+  - [🏄‍♀️ Wave 4 - Fourth Quarter 2019](#️-wave-4---fourth-quarter-2019)
 - [2020](#2020)
-  - [🏄‍♀️ Wave 5 - First Quarter 2020](#%EF%B8%8F-wave-5---first-quarter-2020)
-  - [🏄‍♀️ Wave 6 - Second Quarter 2020](#%EF%B8%8F-wave-6---second-quarter-2020)
-  - [🏄‍♀️ Wave 7 - Third Quarter 2020](#%EF%B8%8F-wave-7---third-quarter-2020)
-  - [🏄‍♀️ Wave 8 - Fourth Quarter 2020](#%EF%B8%8F-wave-8---fourth-quarter-2020)
+  - [🏄‍♀️ Wave 5 - First Quarter 2020](#️-wave-5---first-quarter-2020)
+  - [🏄‍♀️ Wave 6 - Second Quarter 2020](#️-wave-6---second-quarter-2020)
+  - [🏄‍♀️ Wave 7 - Third Quarter 2020](#️-wave-7---third-quarter-2020)
+  - [🏄‍♀️ Wave 8 - Fourth Quarter 2020](#️-wave-8---fourth-quarter-2020)
 - [2021](#2021)
-  - [🏄‍♀️ Wave 9 - First Quarter 2021](#%EF%B8%8F-wave-9---first-quarter-2021)
-  - [🏄‍♀️ Wave 10 - Second Quarter 2021](#%EF%B8%8F-wave-10---second-quarter-2021)
-  - [🏄‍♀️ Wave 11 - Third Quarter 2021](#%EF%B8%8F-wave-11---third-quarter-2021)
-  - [🏄‍♀️ Wave 12 - Fourth Quarter 2021](#%EF%B8%8F-wave-12---fourth-quarter-2021)
+  - [🏄‍♀️ Wave 9 - First Quarter 2021](#️-wave-9---first-quarter-2021)
+  - [🏄‍♀️ Wave 10 - Second Quarter 2021](#️-wave-10---second-quarter-2021)
+  - [🏄‍♀️ Wave 11 - Third Quarter 2021](#️-wave-11---third-quarter-2021)
+  - [🏄‍♀️ Wave 12 - Fourth Quarter 2021](#️-wave-12---fourth-quarter-2021)
 - [2022](#2022)
-  - [🏄‍♀️ Wave 13 - First Quarter 2022](#%EF%B8%8F-wave-13---first-quarter-2022)
-  - [🏄‍♀️ Wave 14 - Second Quarter 2022](#%EF%B8%8F-wave-14---second-quarter-2022)
-  - [🏄‍♀️ Wave 15 - Third Quarter 2022](#%EF%B8%8F-wave-15---third-quarter-2022)
-  - [🏄‍♀️ Wave 16 - Fourth Quarter 2022](#%EF%B8%8F-wave-16---fourth-quarter-2022)
+  - [🏄‍♀️ Wave 13 - First Quarter 2022](#️-wave-13---first-quarter-2022)
+  - [🏄‍♀️ Wave 14 - Second Quarter 2022](#️-wave-14---second-quarter-2022)
+  - [🏄‍♀️ Wave 15 - Third Quarter 2022](#️-wave-15---third-quarter-2022)
+  - [🏄‍♀️ Wave 16 - Fourth Quarter 2022](#️-wave-16---fourth-quarter-2022)
 
 # 2019
 
@@ -503,7 +503,7 @@
 | [Societal Labs Ltd.](https://www.sctl.xyz/) | Societal - MVP - Phase 1 | [GitHub](https://github.com/sctllabs) | ☐ | ☐ | ☐ |
 | [Faceless Protocol](https://github.com/HeisenbergLin22) | Faceless Protocol | [GitHub](https://github.com/HeisenbergLin22) | ☐ | ☒ | ☐ |
 | [SuperColony](https://github.com/Supercolony-net) | Typechain | [GitHub](https://github.com/Supercolony-net/typechain-polkadot) | ☐ | ☒ | ☒ |
-| [Codelight](https://massbit.io/) | Massbit Route | [GitHub](https://github.com/massbitprotocol/massbitroute) | ☐ | ☒ | ☐ |
+| [Codelight](https://massbit.io/) | Massbit Route | [GitHub](https://github.com/massbitprotocol/massbitroute) | ☐ | ☒ | ☒ |
 | [Hypha Hashed Partners](https://hypha.earth/) | Social Recovery Wallet | [GitHub](https://github.com/hypha-dao) | ☐ | ☒ | ☐ |
 | [MangoBOX labs](http://mangobox.xyz/) | MangoBOX Protocol | [GitHub](https://github.com/Mangoboxlabs) | ☐ | ☐ | ☐ |
 
@@ -526,7 +526,7 @@
 | [Karolis Ramanauskas](https://krl.is/) | Generic Sybil-Resistant Faucet | [GitHub](https://github.com/karooolis) | ☐ | ☒ | ☒ |
 | [LimeChain](https://limechain.tech/) | Research feasibility for a Go Runtime | [GitHub](https://github.com/LimeChain) | ☐ | ☒ | ☒ |
 | [Jim Yam](https://github.com/JimYam) | daos | [GitHub](https://github.com/daos-org/daos.git) | ☐ | ☒ | ☐ |
-| [Green Lemon](https://github.com/GreenLemonProtocol) | Green Lemon Protocol | [GitHub](https://github.com/GreenLemonProtocol) | ☐ | ☒ | ☐ |
+| [Green Lemon](https://github.com/GreenLemonProtocol) | Green Lemon Protocol | [GitHub](https://github.com/GreenLemonProtocol) | ☐ | ☒ | ☒ |
 | [Stardust Labs Inc.](https://stardust.finance/) | Integrating ISO-8583 | [GitHub](https://github.com/adit313/) | ☐ | ☒ | ☒ |
 | [TwinP](https://www.linkedin.com/in/elioprifti/) | Escrow Pallet | [GitHub](https://github.com/herou) | ☐ | ☒ | ☒ |
 | [Meta Defender Team](https://github.com/Meta-Defender/) | Meta Defender | [GitHub](https://github.com/Meta-Defender/) | ☐ | ☐ | ☐ |
@@ -576,3 +576,4 @@
 | [The Bacon Beacon](https://github.com/random-bacon) | Pallet Drand Client  | [GitHub](https://github.com/random-bacon) | ☐ | ☐ | ☐ |
 | [Helikon Labs](https://helikon.io/) | ChainViz v1 | [GitHub](https://github.com/helikon-labs/chainviz) | ☐ | ☐ | ☐ |
 | [Mutai Solutions](https://bryanmutai.co/) | Crowdloans-FET | [GitHub](https://github.com/brymut) | ☐ | ☐ | ☐ |
+| [k/factory](https://k-f.co/) | Centrifuge Go-Substrate-RPC Client V2 | [GitHub](https://github.com/centrifuge/go-substrate-rpc-client) | ☐ | ☐ | ☐ |

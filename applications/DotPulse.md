@@ -1,6 +1,5 @@
-# W3F Open Grant Proposal
+# DotPulse
 
-- **Project Name:** DotPulse
 - **Team Name:** CrossChain Labs
 - **Payment Address:** 0xC289B81a8e5f8F8d691b4Cf1DBc16A7107B630e3 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
@@ -16,6 +15,7 @@ The solution that CrossChain Labs presents is going to address the problems desc
 ### Project Details
 
 Deliverables:
+
 - GitHub Scraper that will collect all the required data from GitHub
 - DotPulse APIs that will serve to get the data from the scraper and interact with the DotPulse dashboard
 - DotPulse Dashboard that will include:
@@ -28,33 +28,34 @@ Deliverables:
 
 Dashboard Overview
 
-<img width="833" alt="DotPulse" src="https://user-images.githubusercontent.com/91743348/192284364-81506e70-8fb5-4e17-87f2-ab83fddebb20.png">
+<img width="833" alt="DotPulse" src="https://user-images.githubusercontent.com/91743348/192284364-81506e70-8fb5-4e17-87f2-ab83fddebb20.png" />
 
 ### Ecosystem Fit
 
 The DotPulse project will enable all the interested parties to track the development among different Polkadot organisations on Github, to follow the number of commits, repositories, contributors, PRs, the top contributors of the month, the evolution of commits and active contributors for each month over the last year and monitor the recent commits that are being done in the various Polkadot organisations.
 
 There are many benefits of getting the DotPulse project up and running:
- - it offers a clear overview on the open source development that is being done across the various Polkadot organizations, by having all the required data aggregated in one place
- - acknowledges the contributors of the month
- - displays the active contributors for each month over the last year
- - shows the evolution of the number of commits made on GitHub by developers throughout the entire Polkadot ecosystem
- - outlines the recent commits 
- 
+
+- it offers a clear overview on the open source development that is being done across the various Polkadot organizations, by having all the required data aggregated in one place
+- acknowledges the contributors of the month
+- displays the active contributors for each month over the last year
+- shows the evolution of the number of commits made on GitHub by developers throughout the entire Polkadot ecosystem
+- outlines the recent commits
+
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-  - Andreea - Team Leader
-  - Cristina - Full Stack Developer (JavaScript, React)
-  - Catalin - Full Stack Developer (JavaScript, React)
-  - Florin - UI/UX Designer (Sketch, Figma)
+- Andreea - Team Leader
+- Cristina - Full Stack Developer (JavaScript, React)
+- Catalin - Full Stack Developer (JavaScript, React)
+- Florin - UI/UX Designer (Sketch, Figma)
 
 ### Contact
 
 - **Contact Name:** Andreea Stefan  
 - **Contact Email:** andreea.stefan@crosschainlabs.tech
-- **Website:** https://www.crosschainlabs.tech/
+- **Website:** <https://www.crosschainlabs.tech/>
 
 ### Legal Structure
 
@@ -63,32 +64,32 @@ There are many benefits of getting the DotPulse project up and running:
 
 ### Team's experience
 
-We’re CrossChain Labs, a team of of designer and software developers with hands-on experience on blockchain technology and development of decentralised applications, with previous experience as ConsenSys employees. Some of the latest dev-grants were for projects from Filecoin (https://filmarket.io/) and NEAR protocol (NEAR registrar, Audit Registry, near.link, Developer Dashboard) with tech stack: IPFS, Arweave, rust, react, go and javascript.
+We’re CrossChain Labs, a team of of designer and software developers with hands-on experience on blockchain technology and development of decentralised applications, with previous experience as ConsenSys employees. Some of the latest dev-grants were for projects from Filecoin (<https://filmarket.io/>) and NEAR protocol (NEAR registrar, Audit Registry, near.link, Developer Dashboard) with tech stack: IPFS, Arweave, rust, react, go and javascript.
 We're creative, experienced, responsible, organised and do our best to make high quality work and bring ideas to life.
 
 ### Team Code Repos
 
-- https://github.com/CrossChainLabs
-- https://github.com/CrossChainLabs/near-registrar
-- https://github.com/CrossChainLabs/audit-registry
-- https://github.com/CrossChainLabs/near-dns
-- https://github.com/CrossChainLabs/near-api-go
-- https://github.com/CrossChainLabs/coredns-near
-- https://github.com/CrossChainLabs/near-link
-- https://github.com/CrossChainLabs/filmarket-contract
+- <https://github.com/CrossChainLabs>
+- <https://github.com/CrossChainLabs/near-registrar>
+- <https://github.com/CrossChainLabs/audit-registry>
+- <https://github.com/CrossChainLabs/near-dns>
+- <https://github.com/CrossChainLabs/near-api-go>
+- <https://github.com/CrossChainLabs/coredns-near>
+- <https://github.com/CrossChainLabs/near-link>
+- <https://github.com/CrossChainLabs/filmarket-contract>
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/yellow-cube
-- https://github.com/arctic-ash
-- https://github.com/aliasccl
+- <https://github.com/yellow-cube>
+- <https://github.com/arctic-ash>
+- <https://github.com/aliasccl>
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/andreea-stefan-66740b20/
-- https://www.linkedin.com/in/cristina-varteniuc-6b3121224/
-- https://www.linkedin.com/in/catalin-vlad-48b828229/
-- https://ro.linkedin.com/in/florin-gradinaru-73891bb
+- <https://www.linkedin.com/in/andreea-stefan-66740b20/>
+- <https://www.linkedin.com/in/cristina-varteniuc-6b3121224/>
+- <https://www.linkedin.com/in/catalin-vlad-48b828229/>
+- <https://ro.linkedin.com/in/florin-gradinaru-73891bb>
 
 ## Development Status :open_book:
 
@@ -125,13 +126,13 @@ Since Polkadot has increasingly grown the open source developer ecosystem, there
 | 9. | Implement the DotPulse APIs required by frontend | Statistics API that returns the overall number of commits, repositories, contributors, PRs |
 | 10. | Implement the DotPulse APIs required by frontend | Contributors API that returns the list of contributors of the month based on the number of commits over the last month |
 | 11. | Implement the DotPulse APIs required by frontend | Issues APIs that return the total number of issues, the number of closed and open issues |
-| 12. | Implement the DotPulse APIs required by frontend | Commits API that returns the total number of commits per month 
+| 12. | Implement the DotPulse APIs required by frontend | Commits API that returns the total number of commits per month
 
 ### Milestone 2
 
 - **Estimated duration:** 4 weeks
 - **FTE:**  3.5
-- **Costs:** 21,500 USD, 
+- **Costs:** 21,500 USD,
 - NOTE: The M2 calculation includes the cloud infrastructure cost estimated at $1,000
 
 | Number | Deliverable | Specification |
@@ -140,7 +141,7 @@ Since Polkadot has increasingly grown the open source developer ecosystem, there
 | 0b. | Documentation | We will provide both documentation of the code and a basic video tutorial that explains how a user can easily use DotPulse app |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 0e.	| Article | We will publish an article that explains what was achieved as part of the grant and how users can benefit the most from DotPulse functionalities. |
+| 0e. | Article | We will publish an article that explains what was achieved as part of the grant and how users can benefit the most from DotPulse functionalities. |
 | 1. | Implement the DotPulse APIs required by frontend | Active contributors API that returns the number of active developers for each month over the last year |
 | 2. | Implement the DotPulse APIs required by frontend | Recent commits API that returns the list of recent commits across all Polkadot repositories over the last 30 days |
 | 3. | Build the DotPulse dashboard | Display the statistics top section with the overall number of commits, repositories, contributors and PRs |
@@ -157,6 +158,7 @@ Since Polkadot has increasingly grown the open source developer ecosystem, there
 ## Future Plans
 
 To drive adoption of the DotPulse platform, CrossChain Labs will:
+
 - create a YouTube video tutorial showcasing the DotPulse functionalities and usage
 - distribute it via Polkadot Discord channels
 - add Google Analytics to track users engagement in order to adapt and improve accordingly

@@ -1,10 +1,9 @@
-# W3F Grant Proposal
+# QRUCIAL DAO
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** QRUCIAL DAO
 - **Team Name:** QRUCIAL OÜ
 - **Payment Address:** BTC - bc1qysscajxdstqzpe3x9x4ftr3y6l5gelggtk8a8g
 - **Level:** 2
@@ -33,23 +32,26 @@ We are the first connecting defensive as well as offensive security tool executi
 
 - Core components include Substrate, QRUCIAL DAO runtime, pallets and the ExoGlue.
 - PoC can be found in the reference QRUCIAL DAO repository below.
-- What your project is _not_ or will _not_ provide or implement
+- What your project is *not* or will *not* provide or implement
   - We won't solve business questions here, though we think our idea fill fit into the Polkadot/Kusama ecosystem.
   - This project won't save all the smart contracts or render manual auditors/hackers useless. Quite the opposite, by providing proven execution, we want to provide work to the manual workers who verify and validate vulnerabilities.
 - Main programming languages to be used: Rust, Python and JavaScript (for frontend)
 
 <p align="center">
-  <img src="https://github.com/Qrucial/QRUCIAL-DAO/blob/main/docs/topology.png" style="width:600px";>
+  <img src="https://github.com/Qrucial/QRUCIAL-DAO/blob/main/docs/topology.png" style={{width: "600px"}} />
 </p>
 
 #### What is ExoSys?
+
 ExoSys is the system that schedules audit requests and handles ExoTool connections. It is implemented as a combination of a pallet and a daemon, running on the same system as the blockchain node.
 ExoSys is also responsible for issuing the Non-Transferrable NFTs and keeps a track record of audit hashes and meta data.
 
 #### What is ExoTool?
+
 Selected set of security auditor tools, packaged and adapted to be executed by the request of ExoSys.
 
 #### What is AuditorRep?
+
 Élő's assumption is that the performance of an auditor in each audit is a random variable following a normal distributed bell curve over time.
 An auditor might perform significantly better or worse from one audit to the next.
 Using Élő their mean skill level would remain the same.
@@ -59,14 +61,16 @@ If additional vulnerabilities are found or  false positives are removed, the cha
 The increase and decrease of every individual auditor is relative to the Élő score of the original auditor and the one re-auditing a project.
 
 High ranked auditor wins:
+
 - few points are transferred from the low ranked auditor to the higher rated one.
 
 Low rated auditor wins:
--  a lot of points are transferred from the higher rated auditor to the low rated one.
+
+- a lot of points are transferred from the higher rated auditor to the low rated one.
 
 #### What is the CCTF talent pool?
-CCTF provides a proven track record of hackers solving challenges and based on their reputation, they are awarded as manual auditors in the QDAO ecosystem.
 
+CCTF provides a proven track record of hackers solving challenges and based on their reputation, they are awarded as manual auditors in the QDAO ecosystem.
 
 ### Ecosystem Fit
 
@@ -113,19 +117,18 @@ Silur is working at the Hungarian Academy of Sciences (MTA) as cryptographer, wa
 
 knockoff is linux system administrator and junior rust developer.
 
-
 ### Team Code Repos
 
-- https://github.com/Qrucial/QRUCIAL-DAO
-- https://github.com/Qrucial/Hacking_Substrate_with_Chaos_Pallet
-- https://github.com/Qrucial/SafuDot
-- https://github.com/Qrucial/QRUCIAL_Audits
+- <https://github.com/Qrucial/QRUCIAL-DAO>
+- <https://github.com/Qrucial/Hacking_Substrate_with_Chaos_Pallet>
+- <https://github.com/Qrucial/SafuDot>
+- <https://github.com/Qrucial/QRUCIAL_Audits>
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/smilingSix
-- https://github.com/wigy-opensource-developer
-- https://github.com/Silur
+- <https://github.com/smilingSix>
+- <https://github.com/wigy-opensource-developer>
+- <https://github.com/Silur>
 
 ### Team LinkedIn Profiles (if available)
 
@@ -138,7 +141,6 @@ We have started the development already, details can be found under this reposit
 [https://github.com/Qrucial/QRUCIAL-DAO](https://github.com/Qrucial/QRUCIAL-DAO)
 
 The PoC is working, and we want to move forward in developing a live testnet version.
-
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -160,7 +162,7 @@ The PoC is working, and we want to move forward in developing a live testnet ver
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate runtime | The runtime config and compilable code for QRUCIAL DAO. |    
+| 1. | Substrate runtime | The runtime config and compilable code for QRUCIAL DAO. |
 | 2. | Substrate pallet: ExoSys | Core system that handles the extrinsics that request ExoTool execution. |  
 | 3. | Substrate pallet: AuditorRep | Reputation system for the manual auditors who verify the output recorded by ExoSys. |
 | 4. | Substrate report storage | Includes the tools exogenous to the Substrate system, it is connected through the glue/proxy. |
@@ -184,14 +186,12 @@ The PoC is working, and we want to move forward in developing a live testnet ver
 | 3. | ExoTool - CCA | Implement [Clippy](https://github.com/rust-lang/rust-clippy) and [Cargo Audit](https://docs.rs/cargo-audit/0.15.1/cargo_audit/) as an exotool package for ink!/WASM smart contract audits. |
 | 4. | ExoTool - Octopus | Implement [Octopus](https://github.com/pventuzelo/octopus) as an exotool for bytecodes (WASM and Solidity) |
 
-
 ## Future Plans
 
 - In the short term, we'd like to have the grant, so development goes faster. QRUCIAL as a company will keep funding the project until it becomes self-sustaining (meaning, the governance system keeps the DAO running on its own).
 - CCTF (cryptoctf.org) is already a partner, helping to bring the best web3 hackers to the system.
 - Elfz'n'Trollz is a marketing partner, so we don't just develop a DAO, but also make it usable and visually acceptable to all audiences.
 - After final milestone, we will start building a larger community for QRUCIAL DAO and improve our partnership with CCTF.
-
 
 ## Additional Information :heavy_plus_sign:
 

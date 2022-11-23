@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Five Degrees on Substrate
 
-- **Project Name:** Five Degrees on Substrate
 - **Team Name:** Lee
 - **Payment Address:** 0x352a7f69df71bda6c51ee7fa938dd76ff2375087(USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1

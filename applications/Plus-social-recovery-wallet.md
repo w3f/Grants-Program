@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+#  Polkadot js plus / Social Recovery Wallet
 
-- **Project Name:**  Polkadot js plus / Social Recovery Wallet
 - **Team Name:** Polkadot js plus
 - **Payment Address:** 0xa4Eff15578D1450912DED08c85679F453C45A710 (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3

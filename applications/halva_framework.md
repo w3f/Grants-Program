@@ -1,8 +1,7 @@
-# Open Grant Proposal
+# Halva
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-* **Project:** Halva
 * **Proposer:** [Halva](https://github.com/orgs/halva-suite)
 * **Payment Address:** 1837ca1w8WK9yfaVo5Lhgg4sENK2Tq3FgW
 
@@ -18,8 +17,8 @@ Right now you must do much boilerplate code around your testing framework (mocha
 
 * **Members:** Wintex
 * **LinkedIn Profiles:** -
-* **Code Repos:** https://github.com/orgs/halva-suite
-* **Website:** https://wintex.pro/en/
+* **Code Repos:** <https://github.com/orgs/halva-suite>
+* **Website:** <https://wintex.pro/en/>
 * **Legal Structure:** individual
 * **Team's Experience:**
 
@@ -36,10 +35,10 @@ Our team develops software about 10+ years and decentralized applications since 
 Core functional for automated testing with Mocha and Chai. This stage involves the creation of basic functionality for running tests. It will include the TestRunner package, and assertions to simplify checking external calls.
 
 Assertions:
-- **.passes** Asserts that the passed async extrinsic does not fail.
-- **.eventEmitted** The eventEmitted assertion checks that an event has been emitted by the transaction with result
-- **.eventNotEmitted** The eventNotEmitted assertion checks that an event has not been emitted by the transaction with result
-- **.reverts** Asserts that the passed async extrinsic fails with a certain reason.
+* **.passes** Asserts that the passed async extrinsic does not fail.
+* **.eventEmitted** The eventEmitted assertion checks that an event has been emitted by the transaction with result
+* **.eventNotEmitted** The eventNotEmitted assertion checks that an event has not been emitted by the transaction with result
+* **.reverts** Asserts that the passed async extrinsic fails with a certain reason.
 
 * **Estimated Duration:** 5 weeks
 * **FTE:** 1.5

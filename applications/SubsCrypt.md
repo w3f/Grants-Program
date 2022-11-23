@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# SubsCrypt
 
-* **Project Name:** SubsCrypt
 * **Team Name:** OxyDev
 * **Payment Address:** 0x7a72002A872010924a4093D24712B49E5B89452c
 
