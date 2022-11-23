@@ -1,6 +1,6 @@
 # Usage guidelines for the W3F Grants Program badge
 
-<img align="right" width="400" src="/img/badge_black.svg" />
+<img align="right" width="400" src="https://raw.githubusercontent.com/w3f/Grants-Program/00855ef70bc503433dc9fccc057c2f66a426a82b/static/img/badge_black.svg" />
 
 **Once a project's first milestone has been accepted**, we intend to help teams acknowledge their grant publicly while observing the foundation’s guidelines.
 
