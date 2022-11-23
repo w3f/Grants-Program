@@ -24,7 +24,7 @@ module.exports = {
     announcementBar: {
       id: 'announcement',
       content:
-        '<h4>Check out <a target="_blank" rel="noopener noreferrer" href="https://web3.bamboohr.com/jobs/">our current job openings</a>!</h4>',
+        'Check out <a target="_blank" rel="noopener noreferrer" href="https://web3.bamboohr.com/jobs/">our current job openings</a>!',
       backgroundColor: '#E6007A',
       textColor: '#ffffff',
       isCloseable: true,
