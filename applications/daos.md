@@ -103,8 +103,7 @@ We will continue to update, it makes sense, and both KICO and LISTEN are high-qu
 
 * **Total Estimated Duration:** 2 months
 * **Full-Time Equivalent (FTE):** 6FTE
-* **Total Costs:** 10k USD
-
+* **Total Costs:** 8.5k USD
 ### Milestone 1 — Implement Create-Dao, Agency, DoAS, Square, and Sudo Modules
 
 * **Estimated duration:** 1 month
@@ -129,19 +128,16 @@ We will continue to update, it makes sense, and both KICO and LISTEN are high-qu
 
 * **Estimated duration:** 1 month
 * **FTE:** 3
-* **Costs:** 4000 USD
+* **Costs:** 2500 USD
 
-|Number   | Deliverable                         | Specification                                                                                                                    |
-|-----:   |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-|0a. | Documentation                       | Provide documentation for using daos                                                                                             |
-|0b. | Testing                             | Complete all module tests                                                                                                        |
-|0c. | Comment                             | Comment for each module                                                                                                          |
-|0d. | weight                              | Implement default weight for each module                                                                                         |
-|1.       | emergency pallet                    | When dao cannot run normally for some reason, such as wrong parameter settings, it can be adjusted through democracy and council |
-|2.       | Add more `set_xxx` in these pallets | More parameters can be set directly and governance is more flexible                                                              |
-|3.       | UI design                           | Providing a UI framework                                                                                                         |
-|4.        | JS                                  | Provides js code cases based on UI framework implementation                                                                      |
-> The hardest thing about Milestone 2 is UI design, because the front end doesn't know what behavior boundaries the behavior template designer set. Our current solution is to design with metadata.
+|Number   | Deliverable                 | Specification                                                                                                                    |
+|-----:   |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+|0a. | License                     | APACHE2.0                                                                                                                        |
+|0b. | Testing                     | Write unit tests for all modules                                                                                                 |
+|0c. | Docuemnt                    | Complete all module documentation                                                                                                |
+|0d. | Benchmarking                | Write Benchmarking code and generate weight.rs for each module                                                                   |
+|1.       | Substrate Module: Emergency | When dao cannot run normally for some reason, such as wrong parameter settings, it can be adjusted through democracy and council |
+|2. | DAO Template Development Manual | Provide a detailed development manual docs so that developers can quickly develop their own DAO templates based on daos          |
 
 ## Future Plans
 
