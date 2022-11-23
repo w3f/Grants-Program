@@ -46,7 +46,9 @@ Polkadot parachains already offer a broad range of dapps and functions, and coup
 
 **September 2022**
 
-- Data models / API specifications of the core functionality **September 2022**
+- Data models / API specifications of the core functionality 
+- 
+- **September 2022**
 - An overview of the technology stack to be used
 
 Silent Data includes a public facing web application and API that facilitate communication with a secure enclave. DApps can request an individual to securely transfer their data to the enclave for verification. Generally, the subject of a check will provide access to their data to the enclave via an OAuth flow which generates credentials that can be used to fetch data from APIs on behalf of the subject. These credentials are encrypted and sent to the enclave along with a signature of the private data used to verify ownership of a blockchain wallet.
@@ -112,10 +114,6 @@ LinkedIn: <https://www.linkedin.com/in/adibenari/>
 
 LinkedIn: <https://www.linkedin.com/in/makevoid/>
 
-**Andrew Campbell** is a solution architect with over 10 years of development experience including over 6 years industry experience. He has spent the last 6 years working with a range of London based startups. As an architect he has designed solutions for a range of enterprises including Shell, Vodafone, UN - World Food Programme, SITA. He has been the architect of tens of blockchain and advanced cryptography projects and many of his architectures have been taken into production.
-
-LinkedIn: <https://www.linkedin.com/in/andylnd/>
-
 **Mario Gemoll** leads R&D at Applied Blockchain. Mario studied Computer Science (BSc TU Munich, MSc Oxford) and has several years of experience as a software engineer. He joined Applied Blockchain in 2017. At the company, Mario has led research into blockchain protocols, advanced cryptography and hardware secure enclaves, as well as leading design and development of a major NFT platform. Mario leads the research and development of Silent Data for privacy-preserving proofs of off-chain data using Intel SGX secure enclave technology. Prior to Silent Data, Mario led development of the K0 blockchain protocol bringing transactional data privacy to existing smart contract blockchains using zero-knowledge proofs. Mario also led research and developed a secure multi-party computation protocol for privacy-preserving price discovery in trading environments. LinkedIn: <https://www.linkedin.com/in/mariogemoll/>
 
 **Ricardo Seromenho** is a full stack developer at Applied Blockchain. He is a Node.js application/services certified developer with a degree in Information Technology and 7 years experience. He is a hands-on software engineer with a big passion for best practices and reusable patterns and proficient in a wide range of technologies.
@@ -130,7 +128,9 @@ LinkedIn: <https://www.linkedin.com/in/tom-brooks-a940a9a7/>
 
 GitHub: <https://github.com/tgrbrooks>
 
-**Shay Har-Zion** is a product manager with over 17 years of experience in leading product and project software developments, with majority of them in the financial services and Fintech industries. Shay puts in front the focus on teamwork, communication and collaboration, in order to produce highest value and quality towards innovative solutions for clients.
+**Andrew Campbell** is the Head of Product at Applied Blockchain. He previously worked as solution architect with over 10 years of development experience including over 6 years industry experience. He has spent the last 6 years working with a range of London based startups. As an architect he has designed solutions for a range of enterprises including Shell, Vodafone, UN - World Food Programme, SITA. He has been the architect of tens of blockchain and advanced cryptography projects and many of his architectures have been taken into production.
+
+LinkedIn: <https://www.linkedin.com/in/andylnd/>
 
 ### Team Code Repos
 
@@ -146,7 +146,6 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 ### Team LinkedIn Profiles (if available)
 
 - <https://www.linkedin.com/in/adibenari/>
-- <https://www.linkedin.com/in/shay-har-zion-3a31933/>
 - <https://www.linkedin.com/in/andylnd/>
 - <https://www.linkedin.com/in/tgrbrooks/>
 
