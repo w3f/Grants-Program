@@ -576,3 +576,4 @@
 | [The Bacon Beacon](https://github.com/random-bacon) | Pallet Drand Client  | [GitHub](https://github.com/random-bacon) | ☐ | ☐ | ☐ |
 | [Helikon Labs](https://helikon.io/) | ChainViz v1 | [GitHub](https://github.com/helikon-labs/chainviz) | ☐ | ☐ | ☐ |
 | [Mutai Solutions](https://bryanmutai.co/) | Crowdloans-FET | [GitHub](https://github.com/brymut) | ☐ | ☐ | ☐ |
+| [k/factory](https://k-f.co/) | Centrifuge Go-Substrate-RPC Client V2 | [GitHub](https://github.com/centrifuge/go-substrate-rpc-client) | ☐ | ☐ | ☐ |
