@@ -193,7 +193,7 @@ Web3Go team members have strong engineering background: Han Zhao, Yifei Wu and M
 
 * **Estimated Duration:** 8 month
 * **FTE:**  2
-* **Costs:** 15,000 USD
+* **Costs:** 9,000 USD
 
  Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
