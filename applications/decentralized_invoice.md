@@ -95,14 +95,14 @@ We would like to use the Substrate template node
 
 - **Total Estimated Duration:** 3 months
 - Full-Time Equivalent (FTE): 2 FTE
-- **Costs:** $18,000 USDT
+- **Costs:** $10,000 USDT
 
 
 ### Milestone 1 — Implement create_invoice functionality
 
 - Estimated Duration: 1 month
 - FTE: 2
-- Costs: $6,000 USDT
+- Costs: $3,333 USDT
 
 
 | Number | Deliverable                     | Specification                                                                                                                                     |
@@ -119,7 +119,7 @@ We would like to use the Substrate template node
 
 - Estimated Duration: 1 month
 - FTE: 2
-- Costs: $6,000 USDT
+- Costs: $3,333 USDT
 
 
 | Number | Deliverable                       | Specification                                                                                                                                    |
@@ -135,7 +135,7 @@ We would like to use the Substrate template node
 
 - Estimated Duration: 1 month
 - FTE: 2
-- Costs: $6,000 USDT
+- Costs: $3,333 USDT
 
 
 | Number | Deliverable                      | Specification                                                                                                                                     |
