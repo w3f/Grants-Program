@@ -103,9 +103,9 @@ We support startups, digital agencies as well as medium to big businesses. We co
 - **Full-Time Equivalent (FTE):**  1 FTE
 - **Total Costs:** 25 000 DAI
 ### Milestone 1
-- **Estimated duration:** 3 weeks
+- **Estimated duration:** 4 weeks
 - **FTE:**  1
-- **Costs:** 7500 DAI
+- **Costs:** 10 000 DAI
 
 Create a pallet which will store a necessary data for a zk-Snarks + Research on ZK-Snarks concept 
 | Number | Deliverable | Specification |
@@ -115,36 +115,27 @@ Create a pallet which will store a necessary data for a zk-Snarks + Research on 
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | The pallet | Pallet allows storing a verification key and the proof on the blockchain and the on-chain verification |
+| 2. | Blog post: Zk-Snarks concept | A/ what are the zk-snarks, B/ describing the “Bob” problem and how they can solve it. C/ describing the process of creating proof D/ creating a “circom” example |
 
 
 ### Milestone 2
-- **Estimated duration:** 4 weeks
+- **Estimated duration:** 6 weeks
 - **FTE:**  1
-- **Costs:** 10 000 DAI
+- **Costs:** 15 000 DAI
 
-Implement the on-chain proof verification mechanism. 
+Implement the on-chain proof verification mechanism followed by series of educational materials. 
 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Research notes | Mathematical calculations based on Groth16 |
 | 2. | Groth16  proof verification method | Implement Groth16  proof verification method which will be used by pallet |
 | 3. | Demo | Create a demo, where we will use a 3-rd party tool to verify a solution & where we Alice could be rewarded for finding a solution. |
 | 4. | Circuits in circom | Prepare a circuits in circom, which will describe our problem |
-
-
-### Milestone 3 
-- **Estimated duration:** 3 weeks
-- **FTE:**  1
-- **Costs:** 7500 DAI
-
-Series of educational materials.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 1 | Blog post: Zk-Snarks concept | A/ what are the zk-snarks, B/ describing the “Bob” problem and how they can solve it. C/ describing the process of creating proof D/ creating a “circom” example |
-| 2 | Blog post: Tutorial Groth16 (Part 1) |  describing the groth16 & running "circom proof" from previous post with the Rust Unit test / CMD |
-| 3 | Blog post: Tutorial Pallet (Part 2) | creating a pallet with the unit tests & running an example from the previous tutorial with the PolkaJS |
-| 4 | Youtube video |Youtube video tutorial explaining the concepts from the blog posts |
-
-
+| 5. | Blog post: Tutorial Groth16 (Part 1) |  describing the groth16 & running "circom proof" from previous post with the Rust Unit test / CMD |
+| 6. | Blog post: Tutorial Pallet (Part 2) | creating a pallet with the unit tests & running an example from the previous tutorial with the PolkaJS |
+| 7. | Youtube video |Youtube video tutorial explaining the concepts from the blog posts |
