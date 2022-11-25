@@ -283,7 +283,7 @@ This milestone delivers two distinct deliverables.
 
 ### Milestone 2 - Proxy/Gateway Nodes
 
-- **Estimated Duration:** 3 months
+- **Estimated Duration:** 5.5 months
 - **FTE:**  2.5
 - **Costs:** 22,000 USD
 
