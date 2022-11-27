@@ -8,6 +8,8 @@
 
 ## Project Description :page_facing_up:
 
+The Upchain Specification, a framework for securing Substrate runtime upgrades and Substrate network upgrades, by extending The Update Framework and modeled on Uptane (The Update Framework Specification extended for automobiles).
+
 I’ve come across several reports of a para-relay chain update/upgrade going awry and a chain is bricked, unable to produce blocks - hi-jinx ensue, and everyone lives happily ever after.
 
 One such case is discussed here: [How to recover a parachain](<https://forum.polkadot.network/t/how-to-recover-a-parachain/673>). The consensus appears to be: Automatic rollback is not possible, and a Parachain being inoperable for some period is the way things will be (hi-jinx required).
