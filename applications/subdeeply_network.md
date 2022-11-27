@@ -168,8 +168,9 @@ We have started to develop and adapt the platform to a mobile application for iO
 | 0a. | License | GPLv3
 | 0b. | Documentation | We will provide documentation of the code and a tutorial explaining how a user can make use of the framework and create their own local application in Next.js and React. |
 | 0c. | Testing Guide | The main features will be fully functional and tested to ensure functionality and robustness. In the guide, we will describe how to run an app. |
-| 1. | Performance Enhancements | We will create performance improvements for data storage. Subdeeply uses IPFS as its data storage |  
-| 2. | API integration | We will add APIs to the platform, create internal APIs for the operation and monitoring of the platform, and third-party APIs to deploy functions such as user login, authentication, etc. |  
+| 1. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered.
+ |  
+| 2. | Pallets | We will integrate the palettes of deliverable 1 into the web application, and explain the use of their features. |  
 
 ### Milestone 3 Web / Desktop App Develompment - Back-end
 
@@ -181,10 +182,10 @@ We have started to develop and adapt the platform to a mobile application for iO
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT
 | 0b. | Documentation | This milestone is focused on the logic area, server and databases, we will add getting started guides for the frameworks used (Next,js). |
-| 0c. | Testing Guide | N/A |
-| 2. | Client Modules | Minor UI updates will be made, to allow the user to interact with the pallets. |
-| 1. | API integration | We will add APIs to the platform, internal apis for the operation and monitoring of the platform, and third-party apis to deploy functions such as user login, authentication, etc. |
-| 2. |Cross-chain integration | With XCM integration, Subdeeply will enables secure inter-chain exchange of any type of data. It allows users to interoperate on chain A with coverage on chain B.|
+| 0c. | Testing Guide | The main features will be fully functional and tested to ensure functionality and robustness. In the guide, we will describe how to run an app. |
+| 2. | Client Modules | Define and use our own set of operations on chain. |
+| 1. | User Modules | allows users to interact with the web application (register, log in and log out, assign IDs by global identity mapping, make configuration settings).. |
+| 2. |Cross-chain integration | With XCM integration and enables secure inter-chain exchange of any type of data. It allows users to interoperate on chain A with coverage on chain B.|
 | 3. | Deployment | Deploy the use of the platform inline. |
 
 ## Future Plans
