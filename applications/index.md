@@ -548,7 +548,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [TopMonks](https://www.topmonks.com/) | Calamar| [GitHub](https://github.com/topmonks/calamar) | ☐ | ☐ | ☐ |
 | [Bela Supernova](https://bsn.si/) | Rubeus Keeper| [GitHub](https://github.com/bsn-si) | ☐ | ☐ | ☐ |
 | [Web3 Labs Ltd](https://www.web3labs.com/epirus-explorer) | Epirus Substrate Explorer - Phase 2 | [GitHub](https://github.com/web3labs) | ☐ | ☐ | ☐ |
-| [Uke](https://github.com/Uke-Messaging) | Uke Protocol PoC & App (revised) | [GitHub](https://github.com/Uke-Messaging) | ☐ | ☒ | ☐ |
+| [Uke](https://github.com/Uke-Messaging) | Uke Protocol PoC & App (revised) | [GitHub](https://github.com/Uke-Messaging) | ☐ | ☒ | ☒ |
 | [SuperColony](https://github.com/Supercolony-net) | Typechain Phase 2 | [GitHub](https://github.com/Supercolony-net/typechain-polkadot) | ☐ | ☐ | ☐ |
 | [QSTN](https://qstn.us/) | QSTN | [GitHub](https://github.com/qstnus) | ☐ | ☐ | ☐ |
 | [CESS LAB](https://www.cess.cloud/) | Substats (The framework of lightweight block explorer) | [GitHub](https://github.com/CESSProject) | ☐ | ☐ | ☐ |
