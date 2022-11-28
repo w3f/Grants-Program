@@ -1,7 +1,5 @@
-# W3F Grant Proposal
+# Gafi Network - The Network of Game Finance
 
-
-- **Project Name:** Gafi Network - The Network of Game Finance
 - **Team Name:** Cryptoviet
 - **Gafi Paper:** https://gafi.network/GafiPaper.pdf
 - **Wiki:** https://wiki.gafi.network/

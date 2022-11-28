@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Open rollup - MVP - Phase 1
 
-- **Project Name:** Open rollup - MVP - Phase 1
 - **Team Name:** Open rollup
 - **Payment Address:** 0xC1347410Ee2Fc96C4e5a090FF97E3937A8aE158F (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

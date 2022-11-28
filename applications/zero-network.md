@@ -1,8 +1,7 @@
-# W3F Grant Proposal
+# Zero Network
 
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** Zero Network
 - **Team Name:** Zero Network
 - **Payment Address:** 0x9061b0787D28d0fDaD845d670F7505EAE5F3B01B (DAI)
 - **Level:** 2
@@ -33,6 +32,7 @@ There are some components consisting this system and We divide the components as
 We describe the detail as following.
 
 #### Primitive
+
 The `primitive` provides crypto libraries necessary for `functionality` as pallet.
 
 1. `Lifted-ElGamal` encryption pallet
@@ -40,12 +40,14 @@ The `primitive` provides crypto libraries necessary for `functionality` as palle
 3. Encrypted balance pallet
 
 #### Functionality
+
 The `functionality` provides the **confidential transfers** and **confidential smart contracts** functions as pallet.
 
 1. `Confidential Transfer` pallet
 2. `Condidential Smart Contract` pallet
 
 #### Module
+
 The `module` provides the developer with tools and necessary libraries managing privacy application.
 
 1. Encrypted `ink!`
@@ -54,6 +56,7 @@ The `module` provides the developer with tools and necessary libraries managing 
 4. Confidential smart contract IDE
 
 #### Client
+
 The `client` provides the transactor client libraries for users.
 
 1. Key generation wallet
@@ -69,6 +72,7 @@ We explain the use case we assume.
 ![diagram1](https://user-images.githubusercontent.com/39494661/163749008-3ad6fa47-9771-419b-98de-7a85cedaa2c7.jpg)
 
 ### Ecosystem Fit
+
 This is the world's first account based and `plonk` built-in `parachain` which supports confidential transactions for both transfers and contract executions only depending on the cryptographic hardness assumptions.
 We can contribute to `Polkadot` network mainly in three ways.
 
@@ -109,9 +113,9 @@ Considering both sides, the zero knowledge scheme is related deeply to calculati
 
 ### Contact
 
-* **Contact Name:** Invers Inc
-* **Contact Email:** info@invers.tech
-* **Website:** [Invers](https://invers.tech/)
+- **Contact Name:** Invers Inc
+- **Contact Email:** info@invers.tech
+- **Website:** [Invers](https://invers.tech/)
 
 ### Legal Structure
 
@@ -236,11 +240,11 @@ In `Milestone 3`, we are going to implement `wallet` which provides the user to 
 ## Additional Information :heavy_plus_sign:
 
 - How did you hear about the Grants Program?
-    - Announcement by another team
+  - Announcement by another team
 - Work you have already done.
-    - [plonk pallet](https://github.com/PlasmNetwork/plonk)
+  - [plonk pallet](https://github.com/PlasmNetwork/plonk)
 - Wheter there are any other teams who have already contributed (financially) to the project.
-    - No.
+  - No.
 - Previous grants you may have applied for.
-    - [zk-rollup](https://github.com/w3f/Grants-Program/blob/master/applications/zk-rollups.md)
-    - [zk-plonk](https://github.com/w3f/Grants-Program/blob/master/applications/zk-plonk.md)
+  - [zk-rollup](https://github.com/w3f/Grants-Program/blob/master/applications/zk-rollups.md)
+  - [zk-plonk](https://github.com/w3f/Grants-Program/blob/master/applications/zk-plonk.md)

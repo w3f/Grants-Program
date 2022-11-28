@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Example Project
 
-* **Project:** Example Project
 * **Proposer:** [Grant-Tester](https://github.com/Grant-Tester)
 * **Payment Address:** 3Q5qD4JDJEHjVT74PLWsASxhba9xwjgX9d 
 

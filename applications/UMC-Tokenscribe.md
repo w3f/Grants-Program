@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# UMC - Tokenscribe
 
-* **Project Name:** UMC - Tokenscribe
 * **Team Name:** UMC Labs
 * **Payment Address:** 1KoTuo8c2YomLXPqLdrPVEiufSDyCwrNGC
 * **Status:** [Terminated](https://github.com/w3f/Open-Grants-Program/pull/179#issuecomment-874249680)

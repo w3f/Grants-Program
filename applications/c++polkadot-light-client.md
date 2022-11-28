@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Polkadot Light Client in C++
 
-- **Project Name:** Polkadot Light Client in C++
 - **Team Name:** Equilibrium
 - **Payment Address:** 0x4126272BA14F7a124b1B98633678e0e5F87Ec478
 - **[Level](https://github.com/w3f/Grants-Program/tee/master#level_slider-levels):** 2

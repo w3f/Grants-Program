@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# FIAT on-off-ramp
 
-* **Project Name:** FIAT on-off-ramp
 * **Team Name:**  element36
 * **Payment Address:**  Ethereum 0x56788E08C97d2677DAdED801e69bfE5D33ddACD5
 
