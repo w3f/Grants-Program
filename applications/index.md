@@ -584,3 +584,4 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Mutai Solutions](https://bryanmutai.co/) | Crowdloans-FET | [GitHub](https://github.com/brymut) | ☐ | ☐ | ☐ |
 | [k/factory](https://k-f.co/) | Centrifuge Go-Substrate-RPC Client V2 | [GitHub](https://github.com/centrifuge/go-substrate-rpc-client) | ☐ | ☐ | ☐ |
 | [Colorful Notion](https://github.com/colorfulnotion) | Zombienet Explorer: Multi-Chain Substrate Block Explorer | [GitHub](https://github.com/colorfulnotion/zombienet-explorer) | ☐ | ☐ | ☐ |
+| [TwinP](https://github.com/herou) | Decentralized Invoice | [GitHub](https://github.com/herou) | ☐ | ☐ | ☐ |
