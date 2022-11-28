@@ -5,16 +5,16 @@
 
 ## Project Description :page_facing_up: 
 
-Substrate's [FRAME contracts pallet](https://docs.rs/crate/pallet-contracts/latest) allows for WASM-based smartcontracts on Substrate, written in [ink!](https://github.com/paritytech/ink), a Rust-based [eDSL](https://wiki.haskell.org/Embedded_domain_specific_language). WASM comes with a lot of advantages, such as high flexibility, tooling, a good compiler ([wasmtime](https://xxxwasmtime)) and a lot of high level constructs. However, these features comes with a cost: complexity of the API and compiler implementation as well as impacts on performance. For example, Substrate does not embed the API for WASM VM due to its complexity.
+Substrate's [FRAME contracts pallet](https://docs.rs/crate/pallet-contracts/latest) allows for WASM-based smartcontracts on Substrate, written in [ink!](https://github.com/paritytech/ink), a Rust-based [eDSL](https://wiki.haskell.org/Embedded_domain_specific_language). WASM comes with a lot of advantages, such as high flexibility, tooling, a good compiler ([wasmtime]([https://xxxwasmtime](https://github.com/bytecodealliance/wasmtime))) and a lot of high level constructs. However, these features comes with a cost: complexity of the API and compiler implementation as well as impacts on performance. For example, Substrate does not embed the API for WASM VM due to its complexity.
 
 ### eBPF as a WASM alternative
 
-An alternative to WASM here would be [eBPF](https://ebpf.io/), a technology for running sandboxed programs in an operating system kernel. It originated from BSD's [BPF](1) and represents a Linux-compatible open-source implementation thereof.
+An alternative to WASM here would be [eBPF](https://ebpf.io/), a technology for running sandboxed programs in an operating system kernel. It originated from BSD's [BPF](https://www.freebsd.org/cgi/man.cgi?bpf) that comes with a [permissive](https://en.wikipedia.org/wiki/Permissive_software_license#:~:text=A%20permissive%20software%20license%2C%20sometimes,usually%20including%20a%20warranty%20disclaimer.) open-source license and represents a Linux-compatible implementation thereof, that instead uses a [viral](https://www.lawinsider.com/dictionary/viral-open-source-license) open-source license.
 
 ### eBPF constraints
 
 However, vanilla eBPF has some serious constraints:
-1. [LLD](2) can't link BPF code (LLD is the [linker](3) contained in [LLVM](4) which is the compiler framework that Rust's compiler `rustc` relies on).
+1. [LLD](https://lld.llvm.org/) can't link BPF code (LLD is the [linker](https://en.wikipedia.org/wiki/Linker_(computing)) contained in [LLVM](https://llvm.org/) which is the compiler framework that Rust's compiler `rustc` relies on).
 2. `rustup` doesn't include any `core` nor `std` library for linking LLVM (and rustc)'s a upstream BPF targets (`bpfeb-unknown-none` and `bpfel-unknown-none`)
 3. Loops are [not fully supported](5).
 
@@ -42,7 +42,7 @@ Despite the constraints, eBPF-based ink! smart contracts would be expected to ha
 The goal of this RFP is to allow for eBPF-based smart contracts.
 To summarize, the rough process should be:
 
-1. Compile Rust-based ink! smart contracts using [rBPF](13), returning an *eBPF ELF file*
+1. Compile Rust-based ink! smart contracts using [rBPF](https://github.com/qmonnet/rbpf), returning an *eBPF ELF file*
 2. Store the ELF file on-chain
 3. Execute the ELF file within the eBPF VM that will convert it to machine code
 
