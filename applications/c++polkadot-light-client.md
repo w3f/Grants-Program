@@ -17,8 +17,7 @@ On a high level, the C++ Light Client will allow users (via JSON-RPC) to:
 
 ### Project Details
 
-We will deliver a detailed specification for the implementation based on the research done in the time frame specified in this proposal.
-The actual implementation will be performed in the next phase.
+We will deliver a detailed specification of a light client for the implementation based on the research done in the time frame specified in this proposal. The actual implementation will be performed in the next phase.
 
 The specification includes:
 
@@ -42,7 +41,7 @@ Specify scope and support for Parachain and Relay chain
 Define APIs to be supported\*
 (submitting transactions, watching transactions / blocks / accounts, etc)
 
-As the RPC API is currently unstable (see [PSPs#41](https://github.com/w3f/PSPs/issues/41)), part of this task will be validating a minimal interface.
+As the RPC API is currently unstable (see [PSPs#41](https://github.com/w3f/PSPs/issues/41)), specification must be written first.
 
 #### Components specifications / selection
 
@@ -114,9 +113,8 @@ This proposal is only for Phase 0 and will culminate with the delivery of a deta
 |    0c. | Published     | GitHub, GitHub Pages                                  |
 |    1. | Cryptography | security advantages over connecting to 3rd-party node, limitations compared to full client  |
 |    2. | Runtime environment requirements | for browser and Node.js |
-|    3. | Multichain support | use cases for cross-chain communication |
-|    4. | JSON-RPC APIs | minimal run-time access interface |
-|    5. | Dependencies | libraries for cryptography, networking, build |
+|    3. | JSON-RPC APIs | minimal run-time access interface |
+|    4. | Dependencies | libraries for cryptography, networking, build |
 
 
 ## Future Plans
