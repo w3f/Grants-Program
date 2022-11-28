@@ -1,4 +1,9 @@
-## Project Description
+# RFP: Validator Selection Algorithm
+
+* **Status:** Open
+* **Proposer:** [jonasW3F](https://github.com/jonasW3F)
+
+## Project Description 
 
 Together with colleagues from academia, we developed an interactive process for nominations to better find suitable validators and the study is published [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4253515). The process is non-opinionated, which means that we do not have any opinion on any validator ex ante. The score of a validator is purely derived by the choices of the nominators.
 
@@ -58,7 +63,7 @@ The aim of this project is only a backend. The final result will be a Python fla
 
 * **Estimated Duration:** 2 weeks
 * **FTE:**  10 days
-* **Costs:** 2500 USD
+* **Costs:** 3000 USD
 
 
 | Number | Deliverable | Specification | 
