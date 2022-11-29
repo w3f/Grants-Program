@@ -111,11 +111,11 @@ Create a pallet which will store a necessary data for a zk-Snarks + Research on 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0b.** | Documentation | We will provide inline documentation. The accompanying blogpost will also serve as an additional documentation. |
+| **0c.** | Testing and Testing Guide | We will provide unit tests for the pallet and the guidelines for running and testing it. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | The pallet | Pallet allows storing a verification key and the proof on the blockchain and the on-chain verification |
-| 2. | Blog post: Zk-Snarks concept | A/ what are the zk-snarks, B/ describing the “Bob” problem and how they can solve it. C/ describing the process of creating proof D/ creating a “circom” example |
+| 1. | The pallet | Pallet allows storing a verification key and the proof on the blockchain and run the on-chain verification. With the first milestone we will provide a dummy version mechanism, which is going to be replaced with the grooth16 in the next milestone. |
+| 2. | Blog post | With the first blog post we would like to focus on describing the audience the Zk-Snarks concept: A/ what are the zk-snarks, B/ describing the “Bob” problem and how they can solve it. C/ describing the process of creating proof D/ creating a “circom” example where we generate a proof. |
 
 
 ### Milestone 2
@@ -129,13 +129,13 @@ Implement the on-chain proof verification mechanism followed by series of educat
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0b.** | Documentation | We will provide both inline documentation of the code and a tutorial (which will be a part of the blog post) that explains how a user can (for example) spin up Substrate nodes and upload a verification key and the proof. This will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | We will provide unit tests for the proof verification mechanism. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Research notes | Mathematical calculations based on Groth16 |
 | 2. | Groth16  proof verification method | Implement Groth16  proof verification method which will be used by pallet |
 | 3. | Demo | Create a demo, where we will use a 3-rd party tool to verify a solution & where we Alice could be rewarded for finding a solution. |
 | 4. | Circuits in circom | Prepare a circuits in circom, which will describe our problem |
 | 5. | Blog post: Tutorial Groth16 (Part 1) |  describing the groth16 & running "circom proof" from previous post with the Rust Unit test / CMD |
-| 6. | Blog post: Tutorial Pallet (Part 2) | creating a pallet with the unit tests & running an example from the previous tutorial with the PolkaJS |
+| 6. | Blog post: Tutorial Pallet (Part 2) | updating the pallet with the groth16 & running an example from the previous tutorial with the PolkaJS |
 | 7. | Youtube video |Youtube video tutorial explaining the concepts from the blog posts |
