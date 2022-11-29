@@ -1,7 +1,8 @@
 # ZK-Snarks tutorial
-* **Proposer:** Bright Inventions
-* **Projects you think this work could be useful for:** Community
+* **Team Name:** Bright Inventions
 * **Payment Address:** 0xDDcfd2a1D4Bcf058cf2828eb78dB59b300e80F8d
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+
 
 ## Project Description :page_facing_up: 
 
