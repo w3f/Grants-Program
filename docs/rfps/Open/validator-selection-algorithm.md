@@ -42,7 +42,7 @@ The aim of this project is only a backend. The final result will be a Python fla
 
 * **Total Estimated Duration:** 6 weeks
 * **Full-time equivalent (FTE):**  30 days
-* **Total Costs:** 8500 USD (provisional)
+* **Total Costs:** 9000 USD (provisional)
 
 ### Milestone 1 (Implementation)
 
