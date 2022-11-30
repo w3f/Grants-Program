@@ -73,7 +73,6 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [
-
         {
           title: 'More Info',
           items: [
@@ -86,6 +85,8 @@ module.exports = {
               href: 'https://web3.foundation/',
             },
           ],
+        }, 
+        {
           title: 'Connect',
           items: [
             {
