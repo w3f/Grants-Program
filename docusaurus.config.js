@@ -19,7 +19,11 @@ module.exports = {
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true,
-      respectPrefersColorScheme: false
+      respectPrefersColorScheme: false,
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
     },
     announcementBar: {
       id: 'announcement',
@@ -71,7 +75,7 @@ module.exports = {
       links: [
 
         {
-          title: 'Links',
+          title: 'More Info',
           items: [
             {
               label: 'GitHub',
@@ -81,13 +85,16 @@ module.exports = {
               label: 'Website',
               href: 'https://web3.foundation/',
             },
+          ],
+          title: 'Connect',
+          items: [
             {
               label: 'Twitter',
               href: 'https://twitter.com/Web3foundation',
             },
             {
-              label: 'Grants Program Matrix channel',
-              href: 'https://twitter.com/Web3foundation',
+              label: 'Grants Community Matrix Channel',
+              href: 'https://matrix.to/#/!XpynPDLusWUWfDpaqr:matrix.org?via=web3.foundation&via=matrix.org&via=matrix.parity.io',
             },
           ],
         },
