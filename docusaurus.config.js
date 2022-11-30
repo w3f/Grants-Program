@@ -20,10 +20,10 @@ module.exports = {
       defaultMode: 'light',
       disableSwitch: true,
       respectPrefersColorScheme: false,
-      sidebar: {
-        hideable: true,
-        autoCollapseCategories: true,
-      },
+    },
+    sidebar: {
+      hideable: true,
+      autoCollapseCategories: true,
     },
     announcementBar: {
       id: 'announcement',
