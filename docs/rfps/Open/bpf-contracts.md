@@ -27,7 +27,6 @@ Despite the constraints, eBPF-based ink! smart contracts would be expected to ha
 - Simplicity: Due to its register-based instruction set it would be easier to compile
 - Platform support: it's capable of providing support for both X86 and ARM-based machines
 - Efficiency and performance
-- Simplicity
 
 ### Previous work
 
