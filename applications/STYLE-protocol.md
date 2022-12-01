@@ -2,7 +2,7 @@
 
 - **Project Name:** STYLE protocol
 - **Team Name:** STYLE protocol Team
-- **Payment Address:** XXXXX(USDC) Ethereuem
+- **Payment Address:** 0x6c60Fb0439453f343ef733923A67DeCc0164A303 (USDC) Ethereuem
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
