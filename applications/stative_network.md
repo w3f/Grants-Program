@@ -18,19 +18,19 @@ Our team has extensive experience in all relevant fields relevant to building su
 
 ### Project Details
 
-The "Stative" ("stable" + "native") Network will consist of one first-of-its-kind native stablecoin token "NST" per supported reserve currency (USD, EUR, ...) and one native governance token called Stative "STA".
+The "Stative" ("stable" + "native") Network will consist of one first-of-its-kind class of native stablecoin tokens "NST", the generic naming pattern is `X<FIAT>` e.g. XUSD, backed by supported reserve currencies (USD, EUR, ...) and a native governance token "NGT".
 
 The most important components of the network are:
 
-![Overview of most important components of the Stative Network](https://github.com/royaleenterprises/media/blob/main/components.png?raw=true)
+![Overview of most important components of the Stative Network](https://raw.githubusercontent.com/royaleenterprises/media/dbaee26cbfadfaf0c63ad6c70db7aca04128cde3/components.png)
 
 The NSTs will be minted by locking protocol external stablecoins like USDT, USDC, etc. in the respective bridge. Consequently, the NSTs will be backed by aggregated sets of external stablecoins and effectively diversifying the risk among all locked stablecoins. Besides this risk-diversification, users would also benefit from the simple UX of native stablecoins within supported dApps / ecosystems and exchangeability between all locked stablecoins, as well as the other NSTs and the protocols governance token.
 
-The governance token Stative "STA" can be minted by natively swapping against the NSTs. STA is also inflationary through staking and the inflation rate shall be determined and maintained by the Stative DAO. STA shall, in general, have a speculative price action while introducing the innovative concept of a dynamic floor-price.
+The NGT can be minted by natively swapping against the NSTs. The NGT is also inflationary through staking and the inflation rate shall be determined and maintained by the Stative DAO. The NGT shall, in general, have a speculative price action while introducing the innovative concept of a dynamic floor-price.
 
-Since STA can - besides the inflation resulting from staking - only be minted by locking an NST, and NSTs can only be minted by locking protocol external stablecoins, the market will prevent the STA price to fall below the level of locked, protocol-external stablecoins within the Stative Network, effectively giving STA an intrinsic value.
+Since the NGT can - besides the inflation resulting from staking - only be minted by locking an NST, and NSTs can only be minted by locking protocol external stablecoins, the market will prevent the NGT price to fall below the level of locked, protocol-external stablecoins within the Stative Network, effectively giving the NGT an intrinsic value.
 
-STA will also hedge your risk between all connected fiat currencies and thus protocol external stablecoins. Consequently, holding STA, you are hedging against global inflation by diversifying between major fiat currencies and while staking against protocol internal inflation, while gaining the chance for moderate yields through staking and the speculative pricing secured by the floor-price.
+The NGT will also hedge your risk between all connected fiat currencies and thus protocol external stablecoins. Consequently, holding the NGT, you are hedging against global inflation by diversifying between major fiat currencies and while staking against protocol internal inflation, while gaining the chance for moderate yields through staking and the speculative pricing secured by the floor-price.
 
 The Stative DAO will govern the protocol by proposing and voting on the development roadmap, new NSTs, supported protocol-external stablecoins, protocol inflation, etc.. Effectively making the DAO the web3 world bank.
 
@@ -38,18 +38,18 @@ The Stative DAO will govern the protocol by proposing and voting on the developm
 
 Here is how we currently see the network’s architecture and component’s interfaces:
 
-![Overview Stative Network Architecture](https://github.com/royaleenterprises/media/blob/main/architecture.png?raw=true)
+![Overview Stative Network Architecture](https://raw.githubusercontent.com/royaleenterprises/media/dbaee26cbfadfaf0c63ad6c70db7aca04128cde3/architecture.png)
 
 Based on this, Stative will offer the base functionality for web3-native
 
 1. checking accounts in each major fiat currency (NSTs) and
 2. savings accounts with floor-price protection and yield potentials from staking and speculative pricing.
 
-![Overview Stative Network Functionalities](https://github.com/royaleenterprises/media/blob/main/functionalities.png?raw=true)
+![Overview Stative Network Functionalities](https://raw.githubusercontent.com/royaleenterprises/media/dbaee26cbfadfaf0c63ad6c70db7aca04128cde3/functionalities.png)
 
 The Stative NSTs or the network as a whole are not supposed to compete or even replace any of the existing or future stablecoins but to be a convenience and security layer to enable the best UX for exchange of value / payments and store of value in web3.
 
-![Comparison Stablecoins](https://github.com/royaleenterprises/media/blob/main/stablecoins.png?raw=true)
+![Comparison Stablecoins](https://raw.githubusercontent.com/royaleenterprises/media/dbaee26cbfadfaf0c63ad6c70db7aca04128cde3/stablecoins.png)
 
 Although we do see significant advantages of our solution over existing implementations,
 the Stative Network and its DAO intend to be a fully decentralised base layer for a web3-native, trustless monetary system on top of those protocol-external stablecoins.
@@ -63,7 +63,7 @@ The current preliminary roadmap for the project consists of the following items:
 1. Research & Concept - completed
 2. Lightpaper - completed
 3. Technical & Regulatory Feasibility including SWOT
-4. MVP, minting and burning xUSD including frontend
+4. MVP, minting and burning NSTs including frontend
 5. Legal & Regulatory Setup
 6. Public Kusama Testnet
 7. Security Audits by Certik and other firms
@@ -81,7 +81,7 @@ After we have already completed the first two items of the preliminary roadmap, 
 
 As stated in the project overview, we are planning to build Stative in Substrate as a Polkadot parachain with a Kusama Testnet and thus deeply integrated into the Polkadot and Kusama ecosystem.
 
-![Stative Network Ecosystem Fit](https://github.com/royaleenterprises/media/blob/main/ecosystem.png?raw=true)
+![Stative Network Ecosystem Fit](https://raw.githubusercontent.com/royaleenterprises/media/dbaee26cbfadfaf0c63ad6c70db7aca04128cde3/ecosystem.png)
 
 The target audience of the Stative Network are mainly dApps looking to integrate the best UX for exchange of value, payment, and store of value or investment. There might also be other parachains and blockchain infrastructure developers interested in Stative, as the network offers endless possibilities with ETH-like functionality combined with stablecoin stability and topped with improved usability, diversified risk and truly global, yet trustless exchangeability.
 
@@ -105,7 +105,7 @@ Within the Polkadot and Kusama ecosystem, Acala is a decentralised, multi-collat
 
 Other than Acala, Stative plans to offer native stablecoin tokens (NSTs) on each relevant fiat base currency and not just USD. Unlike Acala, those NSTs are not supposed to compete with or even replace existing stablecoins, but much rather be a convenience and security layer to enable the best UX for exchange of value / payments and store of value in web3. In addition, Stative’s NSTs are backed by stablecoins instead of non-stable crypto assets like DOT, KSM, BTC or ETH in the case of aUSD.
 
-Adding to this more stable risk-profile, the Stative NSTs applies an innovative concept of risk-diversification. The governance token STA introduces a first-of-its-kind concept of a dynamic-floor-price, giving STA an actual intrinsic value. Finally, the Stative Network will be a truly global stablecoin DEX for easy and trustless exchangeability between all stablecoins in all reserve currencies. All of this will be under trustless governance of the Stative DAO, effectively becoming the first web3 world bank.
+Adding to this more stable risk-profile, the Stative NSTs applies an innovative concept of risk-diversification. The native governance token introduces a first-of-its-kind concept of a dynamic-floor-price, giving the NGT an actual intrinsic value. Finally, the Stative Network will be a truly global stablecoin DEX for easy and trustless exchangeability between all stablecoins in all reserve currencies. All of this will be under trustless governance of the Stative DAO, effectively becoming the first web3 world bank.
 
 We are currently not aware of any projects covering a comparable scope outsidethe Polkadot and Kusama ecosystem.
 
@@ -205,7 +205,7 @@ Using this data Stative can ensure correct exchange rates and backing for its se
 Having Rust & Substrate at its core, Stative can also run arbitrary smart contracts with explicit support for Ethereum’s smart contracts (EVM) natively with the same API/RPC interface and use widely popular browser extensions such as Metamask. Ethereum addresses can be mapped directly to and from Stative accounts.
 The planned architecture and tech stack are:
 
-![Overview Stative Network Tech Stack](https://github.com/royaleenterprises/media/blob/main/techstack.png?raw=true)
+![Overview Stative Network Tech Stack](https://raw.githubusercontent.com/royaleenterprises/media/dbaee26cbfadfaf0c63ad6c70db7aca04128cde3/techstack.png)
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -214,22 +214,20 @@ This grant application focuses on the following item of the project’s prelimin
 ### Overview
 
 - **Total Estimated Duration:**
-  - 2 months for 2a (consecutive)
-  - 1.5 months for 2b (consecutive)
-  - 1.5 months for 2c (consecutive)
-  - 3 months for 2d (in parallel to technical feasibility)
-  - Total of 8 months work volume, to be completed in 5 months with parallelization
+  - 2 months for MS1 (consecutive)
+  - 1.5 months for MS2 (consecutive)
+  - 1.5 months for MS3 (consecutive)
+  - Total of 5 months work volume
 - **Full-Time Equivalent (FTE):**
-  - Average of 0.5 FTE (1.0 FTE during parallelization)
+  - Average of 0.5 FTE
   - As stated under "Team experience", the team currently has other main jobs or engagements and can consequently invest only limited amounts of time - we will do our best to invest as much time as possible to progress as fast as possible. The team is prepared and looking forward to switching to the project full-time in the future.
 - **Total Costs:**
   - 6,000 USD for 2a
   - 4,500 USD for 2b
   - 4,500 USD for 2c
-  - 9,000 USD for 2d
-  - Total of 24,000 USD
+  - Total of 15,000 USD
 
-### Milestone 2a. Technical Feasibility - Basic functionality
+### Technical Feasibility: Milestone 1 - Basic functionality
 
 - **Estimated duration:** 2 month
 - **FTE:** 0.5
@@ -237,35 +235,17 @@ This grant application focuses on the following item of the project’s prelimin
   - Annual salary for calculation 72,000 USD
   - (72,000 / 12 \* 2 months) \* 0.5 FTE = 6,000 USD
 
-| Number | Deliverable                   | Specification                                                                                                                                                                                                                                                                                                                                                                                     |
-| -----: | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|    0a. | License                       | MIT                                                                                                                                                                                                                                                                                                                                                                                               |
-|    0b. | Documentation                 | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                                                                                                                                     |
-|    0c. | Testing and Testing Guide     | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                                                                   |
-|    0d. | Docker                        | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                                                                        |
-|    0e. | Article                       | We will publish an **article** on our bloq showcasing the achievements created in this grand application. Further, this includes snippets from the documentation to give interested reader a good starting point.                                                                                                                                                                                 |
-|     1. | Dockerfile (Base Environment) | Setup & configure a basic Substrate environment w/ final consensus & governance rules. This step includes the basic Dockerfiles, which we will extend and use the other steps, to spin up a local two node system.                                                                                                                                                                                |
-|     2. | Substrate module: Quote       | Connect Chainlinks parachain to retrieve oracle prices for XUSD substrate module (MS2b.1) as well as STA substrate module (MS2c.1) using an implementation of Chainlinks substrate module. This module will digest raw pricing data and calculate normalized weighted pricing data. The final deliverable here is a Substrate module (incl. updated `src`, Dockerfile, documentation & tutorial). |
+| Number | Deliverable                   | Specification                                                                                                                                                                                                                                                                                                                                                                                           |
+| -----: | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License                       | MIT                                                                                                                                                                                                                                                                                                                                                                                                     |
+|    0b. | Documentation                 | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                                                                                                                                           |
+|    0c. | Testing and Testing Guide     | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                                                                         |
+|    0d. | Docker                        | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                                                                              |
+|    0e. | Article                       | We will publish an **article** on our bloq showcasing the achievements created in this grand application. Further, this includes snippets from the documentation to give interested reader a good starting point.                                                                                                                                                                                       |
+|     1. | Dockerfile (Base Environment) | Setup & configure a basic Substrate environment w/ final consensus & governance rules. This step includes the basic Dockerfiles, which we will extend and use the other steps, to spin up a local two node system.                                                                                                                                                                                      |
+|     2. | Substrate module: Quote       | Connect Chainlinks parachain to retrieve oracle prices for the NSTs substrate module (MS2.1) as well as the NGT substrate module (MS3.1) using an implementation of Chainlinks substrate module. This module will digest raw pricing data and calculate normalized weighted pricing data. The final deliverable here is a Substrate module (incl. updated `src`, Dockerfile, documentation & tutorial). |
 
-### Milestone 2b. Technical Feasibility - Stable Token XUSD
-
-- **Estimated duration:** 1.5 month
-- **FTE:** 0.5
-- **Costs:** 4,500 USD
-  - Annual salary for calculation 72,000 USD
-  - (72,000 / 12 \* 1.5 months) \* 0.5 FTE = 4,500 USD
-
-| Number | Deliverable                                      | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| -----: | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|    0a. | License                                          | MIT                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|    0b. | Documentation                                    | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                                                                                                                                                                                            |
-|    0c. | Testing and Testing Guide                        | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                                                                                                                          |
-|    0d. | Docker                                           | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                                                                                                                               |
-|    0e. | Article                                          | We will publish an **article** on our bloq showcasing the achievements created in this grand application. Further, this includes snippets from the documentation to give interested reader a good starting point.                                                                                                                                                                                                                                        |
-|     1. | Substrate module: XUSD                           | Implement XUSD substrate module (assets, balances, tx, fees) uses Quote module pricings (MS2a.2). This includes the stablecoin calculation logic (blueprint for all other XEUR, XGBP, ...). The final deliverable here is a Substrate module (incl. updated `src`, Dockerfile, documentation & tutorial).                                                                                                                                                |
-|     2. | Substrate smart contract (Ink): XUSD-Swap-Brdige | Implement the XUSD bridge smart contract for the Stative Network using Substrates contract module w/ _ink!_. This bridge contract will in the beginning only work with USDT withdrawals. Further stable coins will be added in the future. Allows to bridge-swap XUSD from STA to USDT on ETH. Allows to bridge XUSD (STA) to WXUSD (ETH). The final deliverable here is a Substrate module (incl. updated `src`, Dockerfile, documentation & tutorial). |
-
-### Milestone 2c. Technical Feasibility - Governance Token STA
+### Technical Feasibility: Milestone 2 - NST
 
 - **Estimated duration:** 1.5 month
 - **FTE:** 0.5
@@ -273,31 +253,33 @@ This grant application focuses on the following item of the project’s prelimin
   - Annual salary for calculation 72,000 USD
   - (72,000 / 12 \* 1.5 months) \* 0.5 FTE = 4,500 USD
 
-| Number | Deliverable                                     | Specification                                                                                                                                                                                                                                                                                                                           |
-| -----: | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|    0a. | License                                         | MIT                                                                                                                                                                                                                                                                                                                                     |
-|    0b. | Documentation                                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                                                                           |
-|    0c. | Testing and Testing Guide                       | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                         |
-|    0d. | Docker                                          | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                              |
-|    0e. | Article                                         | We will publish an **article** on our bloq showcasing the achievements created in this grand application. Further, this includes snippets from the documentation to give interested reader a good starting point.                                                                                                                       |
-|     1. | Substrate module: STA                           | Implement STA substrate module (assets, balances, tx, fees) uses Quote module pricings (MS2a.2). This step includes the inflationary floor price calculation logic. In the beginning only XUSD can be locked to mint STA. The final deliverable here is a Substrate module (incl. updated `src`, Dockerfile, documentation & tutorial). |
-|     2. | Substrate smart contract (Ink): STA-Swap-Brdige | Implement the STA bridge smart contract for the Stative Network using Substrates contract module w/ _ink!_. Allows to bridge STA (STA) to WSTA (ETH). The final deliverable here is a Substrate module (incl. updated `src`, Dockerfile, documentation & tutorial).                                                                     |
+| Number | Deliverable                                     | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| -----: | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    0a. | License                                         | MIT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|    0b. | Documentation                                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                                                                                                                                                                                                                                                             |
+|    0c. | Testing and Testing Guide                       | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                                                                                                                                                                                           |
+|    0d. | Docker                                          | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                                                                                                                                                                                                |
+|    0e. | Article                                         | We will publish an **article** on our bloq showcasing the achievements created in this grand application. Further, this includes snippets from the documentation to give interested reader a good starting point.                                                                                                                                                                                                                                                                                                         |
+|     1. | Substrate module: NST                           | Implement the NST substrate module (assets, balances, tx, fees) uses Quote module pricings (MS1.2). This includes the stablecoin calculation logic (blueprint for all FIAT tracking NSTs). The final deliverable here is a Substrate module (incl. updated `src`, Dockerfile, documentation & tutorial).                                                                                                                                                                                                                  |
+|     2. | Substrate smart contract (Ink): NST-Swap-Brdige | Implement the NST bridge smart contract for the Stative Network using Substrates contract module w/ _ink!_. This bridge contract will in the beginning only work with USDT withdrawals. Further stable coins will be added in the future. Allows to bridge-swap an NST from the Stative Netwotk to USDT on ETH. Allows to bridge an NST from the Stative Netwotk to a wrapped version on other Blockchains. The final deliverable here is a Substrate module (incl. updated `src`, Dockerfile, documentation & tutorial). |
 
-### Milestone 2d. Technical Feasibility - Regulatory Feasibility
+### Technical Feasibility: Milestone 3 - NGT
 
-- **Estimated duration:** 3 month
+- **Estimated duration:** 1.5 month
 - **FTE:** 0.5
-- **Costs:** 9,000 USD
+- **Costs:** 4,500 USD
   - Annual salary for calculation 72,000 USD
-  - (72,000 / 12 \* 3 months) \* 0.5 FTE = 9,000 USD
+  - (72,000 / 12 \* 1.5 months) \* 0.5 FTE = 4,500 USD
 
-| Number | Deliverable                                     | Specification                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| -----: | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|     1. | Legal opinion NSTs, STA and the Stative Network | Detailed legal opinion on NSTs, STA and the Stative Network w.r.t. to existing and upcoming, international regulations like MiCAR, TOFR and all AML & CFT requirements with the goal to design all native tokens as well as the network and related entities in a way, so the goal of a maximum decentralisation, best UX and widest adoption - also for regulated crypto asset service providers - is enabled while involved parties are not facing legal threads. |
-|     2. | Design for corporate structure                  | Create a design for a corporate structure for the DAO and other required entities applying the learnings from the legal opinion in accordance with the above stated goals while enabling legal security for all involved parties.                                                                                                                                                                                                                                   |
-|     3. | Token design                                    | Create a token design and specification of functionalities applying the learnings from the legal opinion in accordance with the above stated goals to enable maximum decentralisation, best UX and widest adoption - also for regulated crypto asset service providers while enabling legal security for all involved parties.                                                                                                                                      |
-|     4. | Fundraising Setup                               | Identify applicable ways of non-grant based, external funding for the project and prepare required documents and processes to execute those instruments.                                                                                                                                                                                                                                                                                                            |
-|     5. | Blog post                                       | Write an in-depth blog post on the learnings and derive a template for setting up decentral projects like Stative Network.                                                                                                                                                                                                                                                                                                                                          |
+| Number | Deliverable                                     | Specification                                                                                                                                                                                                                                                                                                                                     |
+| -----: | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+|    0a. | License                                         | MIT                                                                                                                                                                                                                                                                                                                                               |
+|    0b. | Documentation                                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.                                                                                                     |
+|    0c. | Testing and Testing Guide                       | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                                                                                                                                   |
+|    0d. | Docker                                          | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone.                                                                                                                                                                                                                                        |
+|    0e. | Article                                         | We will publish an **article** on our bloq showcasing the achievements created in this grand application. Further, this includes snippets from the documentation to give interested reader a good starting point.                                                                                                                                 |
+|     1. | Substrate module: NGT                           | Implement the NGT substrate module (assets, balances, tx, fees) uses Quote module pricings (MS1.2). This step includes the inflationary floor price calculation logic. In the beginning only one NST can be locked to mint the NGT. The final deliverable here is a Substrate module (incl. updated `src`, Dockerfile, documentation & tutorial). |
+|     2. | Substrate smart contract (Ink): NGT-Swap-Brdige | Implement the NGT bridge smart contract for the Stative Network using Substrates contract module w/ _ink!_. Allows to bridge the NGT from the Stative Netwotk to a wrapped version on other Blockchains. The final deliverable here is a Substrate module (incl. updated `src`, Dockerfile, documentation & tutorial).                            |     |
 
 ## Future Plans
 
