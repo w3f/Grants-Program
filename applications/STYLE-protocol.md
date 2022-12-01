@@ -21,7 +21,7 @@ We are interested in this topic because we bring firstly true interoperability t
 ### Project Details
 
 STYLE Protocol is already in Testnet it can seen [HERE](https://styleprotocol-version-1.herokuapp.com/choose-role) 
-![Image](https://awesomescreenshot.s3.amazonaws.com/image/3826542/34890405-d74b1ef8d12bea419bb42a15e63a13a7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20221130%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221130T135404Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=eab5e1e005da7e82dae116591b0b354d66b67885b9c798a029c9e5360103f012)
+![Image]([https://awesomescreenshot.s3.amazonaws.com/image/3826542/34890405-d74b1ef8d12bea419bb42a15e63a13a7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20221130%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221130T135404Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=eab5e1e005da7e82dae116591b0b354d66b67885b9c798a029c9e5360103f012](https://i.seadn.io/gae/eZSVcLeOiIdpnkhoMkUWPAm0cxoWIuBHGDmy9b4BNNUqxwhj9yQyZod9XthbQXfkB1A7_rKK7IL0Bj5u5S5XoLboST1VwL1S_-X3lA?auto=format&w=1000))
 
 - [Data models / API specifications of the core functionality](https://www.npmjs.com/package/@style-protocol/sdk)
 
