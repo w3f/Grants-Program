@@ -569,7 +569,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [LeetCoin](https://www.leetcoin.co/) | LeetCoin | [GitHub](https://github.com/nashhq/leetcoin) | ☐ | ☐ | ☐ |
 | [727.ventures](https://github.com/727-Ventures) | Sol2Ink Phase 2 | [GitHub](https://github.com/727-Ventures) | ☐ | ☐ | ☐ |
 | [walt.id](https://walt.id/) | NFT infrastructure | [GitHub](https://github.com/walt-id) | ☐ | ☐ | ☐ |
-| [SydTek](https://sydtek.ai/) | Digital Inheritance in Web3: A Case Study of Soulbound Tokens and Social Recovery Pallets | N/A | ☐ | ☐ | ☐ |
+| [SydTek](https://sydtek.ai/) | Digital Inheritance in Web3: A Case Study of Soulbound Tokens and Social Recovery Pallets | N/A | ☐ | ☒ | ☐ |
 | [Anagolay](https://anagolay.network/) | Multi-token community contributions for verified creators | [GitHub](https://github.com/anagolay) | ☐ | ☐ | ☐ |
 | [Ink Contracts Wizard Team](https://github.com/amankumar1008/contracts-wizard) | Ink Smart Contract Wizard | [GitHub](https://github.com/amankumar1008/contracts-wizard) | ☐ | ☐ | ☐ |
 | [TDSoftware](https://www.tdsoftware.de/) | Substrate IPFS Utilities | [GitHub](https://github.com/TDSoftware) | ☐ | ☐ | ☐ |
