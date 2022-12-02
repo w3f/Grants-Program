@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# ink! Smart Contract Upgradeability
 
-* **Project Name:** ink! Smart Contract Upgradeability
 * **Team Name:** Fractal
 * **Payment Address:** 0xB341F86A30390048390d6eF118d0e08bBbb0fDef
 

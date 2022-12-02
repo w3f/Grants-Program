@@ -1,0 +1,26 @@
+name: Publish website
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: build and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16.16.0"
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Publish
+        run: |
+          git config --global user.email "grants-deployer@users.noreply.github.com"
+          git config --global user.name "grants-deployer"
+          echo "machine github.com login grants-deployer password ${{ secrets.ACCESS_KEY }}" > ~/.netrc
+          yarn && yarn build && GIT_USER=grants-deployer PUBLISHING=true yarn deploy

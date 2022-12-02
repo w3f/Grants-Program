@@ -1,10 +1,9 @@
-# Open Grant Proposal
+# Idavoll Network
 
-* Project: Idavoll Network
 * Proposer: [jasonberger0](https://github.com/jasonberger0)
 * Payment Address:  1NNtuqwroKc9cMZdigpLdNLrzPKCp7zkXT
 
-## Project Overview :
+## Project Overview
 
 ### Overview
 
@@ -22,30 +21,29 @@ Idavoll Network has a set of pallets to achive the management of DAOs: orgnaizat
 
 #### Transfer Assets
 
-+ the Organization members initiate a proposal to transfer organizational assets through the Finance Module. The proposal is confirmed on the Vote Module and required to complete the voting results of the organization members within a certain period of time. The voting results are required to meet the asset transfer rules in the Finance Module. The approval votes are greater than the minimum approval votes. Only after the number and the number of negative votes are less than the limit of the maximum number of negative votes, can the proposed movement of asset transfer within the organization be realized through the Finance Module.
+* the Organization members initiate a proposal to transfer organizational assets through the Finance Module. The proposal is confirmed on the Vote Module and required to complete the voting results of the organization members within a certain period of time. The voting results are required to meet the asset transfer rules in the Finance Module. The approval votes are greater than the minimum approval votes. Only after the number and the number of negative votes are less than the limit of the maximum number of negative votes, can the proposed movement of asset transfer within the organization be realized through the Finance Module.
 
 #### Snapshot Vote Decisions
 
-+ We can combine the organization module, voting module and token module to implement the decision management process. Users can create any proposal (an easy-to-understand term that the proposal must follow) and initiate the voting process. All users holding the corresponding tokens can participate in the voting. The voting ends, the Idavoll Network will count the voting results of the voters according to the snapshot of the current blockchain state. The voting results will be used as a community consensus and will be permanently stored on the blockchain.
+* We can combine the organization module, voting module and token module to implement the decision management process. Users can create any proposal (an easy-to-understand term that the proposal must follow) and initiate the voting process. All users holding the corresponding tokens can participate in the voting. The voting ends, the Idavoll Network will count the voting results of the voters according to the snapshot of the current blockchain state. The voting results will be used as a community consensus and will be permanently stored on the blockchain.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-+ jasonberger0
-+ Dylan
-+ kericfrank
+* jasonberger0
+* Dylan
+* kericfrank
 
 ### Team’s experience
 
-+ jasonberger0  Over 10 years of experiences in Development and Management,real time database products and digital currency transaction platform products expert. Currently focused on Blockchain Development and Cross-chain Technologies.
-+ Dylan holds a master degree from Tsinghua University. He has more than 10 years of experience inlarge-scale computing and algorithm, with many patents such as consensus algorithm and blockchain transaction.
-+ kericfrank: 8+ years development experience, proficient in public chain and cross chain development, proficient in using go and rust, p2p network expert.
-
+* jasonberger0  Over 10 years of experiences in Development and Management,real time database products and digital currency transaction platform products expert. Currently focused on Blockchain Development and Cross-chain Technologies.
+* Dylan holds a master degree from Tsinghua University. He has more than 10 years of experience inlarge-scale computing and algorithm, with many patents such as consensus algorithm and blockchain transaction.
+* kericfrank: 8+ years development experience, proficient in public chain and cross chain development, proficient in using go and rust, p2p network expert.
 
 ### Team Code Repos
-* https://github.com/idavollnetwork
 
+* <https://github.com/idavollnetwork>
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -75,6 +73,6 @@ In this milestone, We will implement Idavoll DAO proof-of-concept.
 
 ## Future Plans
 
-+ we will provides a Dapp for everyone to interact with the Idovall network.
+* we will provides a Dapp for everyone to interact with the Idovall network.
 
-+ In the future, the Idavoll Network will add a court protocol to resolve subjective disputes with binary outcomes, combined with the use of IDV’s infrastructure, so that the DAOs can create proposal agreements that define the subjective constraints of organizational operations, and can be used by a minority of interests Stakeholder implementation.
+* In the future, the Idavoll Network will add a court protocol to resolve subjective disputes with binary outcomes, combined with the use of IDV’s infrastructure, so that the DAOs can create proposal agreements that define the subjective constraints of organizational operations, and can be used by a minority of interests Stakeholder implementation.

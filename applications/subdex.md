@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# SubDEX
 
-- **Project:** SubDEX
 - **Proposer:** subdarkdex
 - **Payment Address:** 36RukKN8Qa1QTjsQqCfZ5CzrvAKVg2vro8
 

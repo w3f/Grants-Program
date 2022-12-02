@@ -1,7 +1,7 @@
 Grants Terms and Conditions
 ===========================
 
-Updated July 2022
+Updated November 2022
 
 * * * * *
 
@@ -9,7 +9,7 @@ By participating you acknowledge and accept the​ terms and conditions​ of th
 
 * * * * *
 
-These Terms and Conditions are entered into by and between the Web 3.0 Technologies Foundation, Baarerstrasse 14,6300 Zug, Switzerland (CHE-332.596.347) (henceforth "Web 3.0" or "We") and you as an applicant for the technical grant for software development, research and/or the production of software documentation and technical education material as specified in Guidelines for technical grant of Web 3.0 Technologies Foundation (henceforth "User" or "You") (each also a "Party" and together the "Parties"). Please read these Terms and Conditions carefully. By signing off the terms and conditions via the CLA assistant, You confirm that You have read these Terms and Conditions and that You agree to be bound by them.
+These Terms and Conditions are entered into by and between the Web 3.0 Technologies Foundation, Baarerstrasse 14, 6300 Zug, Switzerland (CHE-332.596.347) (henceforth "Web 3.0" or "We") and you as an applicant for the technical grant for software development, research and/or the production of software documentation and technical education material as specified in Guidelines for technical grant of Web 3.0 Technologies Foundation (henceforth "User" or "You") (each also a "Party" and together the "Parties"). Please read these Terms and Conditions carefully. By signing off the terms and conditions via the CLA assistant, You confirm that You have read these Terms and Conditions and that You agree to be bound by them.
 
 We reserve the right to change, modify, add or remove portions of these Terms and Conditions from time to time. If this occurs, We will notify You in adequate form on such updates.
 
@@ -35,19 +35,19 @@ The terms defined in this section whenever used in these Terms and Conditions sh
 
 "Intellectual Property Rights" means any (i) patents, designs, copyright and related rights, database rights, trademarks, trade names (whether registered or unregistered), and the related rights to apply for registration thereof; (ii) applications, extensions and renewals in relation to any of these rights; (iii) know-how and confidential information; and (iv) all other rights of a similar nature and/or having an equivalent effect anywhere in the world;
 
-"Milestones" mean any and all of the milestones specified in the final version of the application under Development Roadmap and  approved by the Grants Committee in accordance with the Procedure as well as placed in the applications folder of the W3F Open Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications>;
+"Milestones" mean any and all of the milestones specified in the final version of the application under Development Roadmap and  approved by the Grants Committee in accordance with the Procedure as well as placed in the applications folder of the W3F Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications>;
 
 "Polkadot" means a scalable heterogeneous multi-chain framework developed by, or the development of which has been procured by Web 3.0. that has the features described in the white paper ("Polkadot: Vision For A Heterogeneous Multi-Chain Framework -- Draft 1") or as otherwise determined by Web 3.0. in its sole discretion from time to time) and utilizes DOTs as the blockchain token native to its operation and/or functioning; 
 
-"Procedure" means the procedure in connection with the Web 3.0 Foundation Open Grants Program, as established in Section 4 below;
+"Procedure" means the procedure in connection with the Web 3.0 Foundation Grants Program, as established in Section 4 below;
 
 "Software" means the deliverables created by You during the development activities performed according to these Terms and Conditions in their final and working version, and that are to be provided to the Foundation in accordance with the Specifications, Milestones and Time Schedule;
 
-"Specifications" mean the reasonably detailed technical and/or other requirements describing the features and functionality of the Software, as specified in the final version of the application approved by the Grants Committee in accordance with the Procedure and placed in the applications folder of the W3F Open Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications>.
+"Specifications" mean the reasonably detailed technical and/or other requirements describing the features and functionality of the Software, as specified in the final version of the application approved by the Grants Committee in accordance with the Procedure and placed in the applications folder of the W3F Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications>.
 
 "Terms and Conditions" means this terms and conditions together with any documents referred to in it;
 
-"Time Schedule" means the time schedule specified in the final version of the application approved by the Grants Committee in accordance with the Procedure and placed in the applications folder of the W3F Open Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications>.
+"Time Schedule" means the time schedule specified in the final version of the application approved by the Grants Committee in accordance with the Procedure and placed in the applications folder of the W3F Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications>.
 
 ## 3.  Eligibility
 
@@ -71,25 +71,24 @@ You shall indemnify and hold harmless Web 3.0 from any third party claims (inclu
 
 ## 4.  Procedure
 
-To apply for the Web 3.0 Foundation Open Grants Program, your application shall fulfill the following criteria:
+To apply for the Web 3.0 Foundation Grants Program, your application shall fulfill the following criteria:
 
--  it shall be a software-based project, which contributes to the advancement of the Polkadot ecosystem;
--  the total amount of funding requested for the project shall be below USD  30,000 and USD 100,000 for follow-up grants at the time of submission;
+-  it shall be a research or software-based project, which contributes to the advancement of the Polkadot ecosystem;
 -  the Software shall be released under the Apache license version 2.0.;
--  You must accept payment in the blockchain tokens native to the Bitcoin Network ("BTCs") or the Ethereum based stablecoin DAI;
+-  You must accept payment in Bitcoin, USDT (on Kusama or Ethereum), USDC/DAI (Ethereum) or aUSD (Acala);
 -  You will need to submit the application and deliver the milestones according to the process specified below;
 
-The open grants process consists of five parts, each of them described in more detail below:
+The grants process consists of five parts, each of them described in more detail below:
 
 **(i)  Grant application process:**
 
-To apply for a grant of the Web 3.0  Foundation Open Grants Program, You shall comply with the procedures established in the README.md file under <https://github.com/w3f/Grants-Program> as well as the process defined inside this document.
+To apply for a grant of the Web 3.0  Foundation Grants Program, You shall comply with the procedures established in the README.md file under <https://github.com/w3f/Grants-Program> as well as the process defined inside this document.
 
-To apply for a grant of the Web3 Foundation Open Grants Program, the grantee needs to fork (= create a copy on GitHub of) the Open-Grants-Program GitHub repository. In the newly created fork (=copy on GitHub), the grantee has to create a copy of the application-template.md. The copied application-template.md needs to be renamed as "project_name.md". "Project_name" needs to be replaced with the name of the project application. Additionally, the grantee has to fill out all mandatory parts of the application-template.md presented in bold letters. Once the grantees have completed the application, they need to create a new pull request (= in this case, a mechanism to submit the changes of the fork to the original Open-Grants-Program GitHub repository) by clicking on the "create new pull request" button shown inside the fork of the W3F Open-Grants-Program GitHub repository. After this, the grantee needs to sign off the terms and conditions presented via the CLA assistant.
+To apply for a grant of the Web3 Foundation Grants Program, the grantee needs to fork (= create a copy on GitHub of) the Grants-Program GitHub repository. In the newly created fork (=copy on GitHub), the grantee has to create a copy of the application-template.md. The copied application-template.md needs to be renamed as "project_name.md". "Project_name" needs to be replaced with the name of the project application. Additionally, the grantee has to fill out all mandatory parts of the application-template.md presented in bold letters. Once the grantees have completed the application, they need to create a new pull request (= in this case, a mechanism to submit the changes of the fork to the original Grants-Program GitHub repository) by clicking on the "create new pull request" button shown inside the fork of the W3F Grants-Program GitHub repository. After this, the grantee needs to sign off the terms and conditions presented via the CLA assistant.
 
 **(ii)  Application review process:**
 
-The Web 3.0 grants committee, which is specified on the [Open-Grants-Program GitHub repository ](https://github.com/w3f/Grants-Program)(the "Grants Committee"), can issue comments and request changes on the grant application pull request (the submission of the grant application on GitHub).  As soon as 1/3 of the Grants Committee approves the pull request, the terms and conditions are signed off and all requested changes are addressed, the application is officially accepted. The application is now a part of the [W3F Open-Grants-Program GitHub repository](https://github.com/w3f/Grants-Program). The time point of the acceptance by the Grants Committee is hereby stored on GitHub and counts as the official beginning of the grant. The original submission is stored with a unique commit hash (identifier) and can not be altered by any party. The final version approved by the Grants Committee of the Specifications, the Time Schedule and Milestones will be placed  in the applications folder of the W3F Open Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications> via the merge function of GitHub.
+The Web 3.0 grants committee, which is specified on the [Grants-Program GitHub repository ](https://github.com/w3f/Grants-Program)(the "Grants Committee"), can issue comments and request changes on the grant application pull request (the submission of the grant application on GitHub).  As soon enough members of the Grants Committee approve the pull request, the terms and conditions are signed off and all requested changes are addressed, the application is officially accepted. The application is now a part of the [W3F Grants-Program GitHub repository](https://github.com/w3f/Grants-Program). The time point of the acceptance by the Grants Committee is hereby stored on GitHub and counts as the official beginning of the grant. The original submission is stored with a unique commit hash (identifier) and can not be altered by any party. The final version approved by the Grants Committee of the Specifications, the Time Schedule and Milestones will be placed  in the applications folder of the W3F Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications> via the merge function of GitHub.
 
 **(iii)  Milestone delivery process:**
 
@@ -97,7 +96,7 @@ To submit one of the possible multiple milestones specified in the application, 
 
 **(iv)  Milestone review process:**
 
-The Grants Evaluators, who are specified on the [Open-Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), can issue comments and request changes on the milestone delivery pull request. 
+The Grants Evaluators, who are specified on the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), can issue comments and request changes on the milestone delivery pull request. 
 
 a)  Purpose and object of the milestone review process
 
@@ -124,8 +123,7 @@ As soon as one evaluator approves the pull request, the delivery is officially a
 
 **(v)  Payment process:**
 
-The Operations Team specified in the [Open-Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted or after 2 weeks without any feedback after the initial delivery. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the BTC or Ethereum address specified in the initial application.
-
+The Operations Team specified in the [Grants-Program GitHub repository](https://github.com/w3f/Grants-Program), gets notified once the above-specified delivery was accepted. As soon as any feedback is provided by the evaluators, this feedback first needs to be resolved. After this, the Operations Team makes the payment to the Bitcoin, USDT (on Kusama or Ethereum), USDC/DAI (Ethereum) or aUSD (Acala) address specified in the initial application. 
 ## 5.  Scope of these Terms and Conditions
 
 The subject matter of these Terms and Conditions is (i) the development of the Software by You in accordance with the Specifications, Milestones and Time Schedule, as well as any related activities (including any development activities undertaken before the Effective Date in relation to the Software) (collectively referred to as "Development Work") in accordance with the terms of these Terms and Conditions.
@@ -160,9 +158,11 @@ The Parties acknowledge and agree that the requirements set out in the Milestone
 
 6.  You agree to forbear from making any public or non-confidential statement with respect to any claim or complaint against the Foundation without having obtained the Foundation’s prior written consent.
 
+7. You agree that during the term of this agreement together with the Schedules (or any of each SOW), including extensions or modifications thereto, and for a period of nine (9) months thereafter, neither Grantee nor the Foundation will recruit, directly or indirectly hire, solicit or employ, engage as an independent contractor, any employee or independent contractor of either party, or any employee or independent contractor of any of the other subcontractors, who are involved in the development, use, or provision of the Services, without the prior written approval of the party whose employee or independent contractor is being considered for employment or engagement as an independent contractor, except as otherwise required by law. If one of the parties breaches this section, this party shall pay forty thousand dollars ($40,000.00) for each person hired as liquidated damages. The parties agree that quantifying losses arising from breach of this section is inherently difficult and stipulate that the agreed upon sum is not a penalty, but rather a reasonable measure of damages, based upon the parties’ experience in the software development industry and given the nature of the losses that may result from such breach.
+
 ## 7.  Terms of Grant Giving
 
-Web 3.0. shall grant You, as compensation for the delivery of the Software and the related deliverables and the grant of license rights on the Intellectual Property Rights to the Web 3.0., a Grant as indicated in the application placed in the applications folder of the W3F Open Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications>.
+Web 3.0. shall grant You, as compensation for the delivery of the Software and the related deliverables and the grant of license rights on the Intellectual Property Rights to the Web 3.0., a Grant as indicated in the application placed in the applications folder of the W3F Grants Program Repository at <https://github.com/w3f/Grants-Program/tree/master/applications>.
 
 The Parties agree that the Grant is a lump-sum payment and that no additional compensation is due for the actual development costs incurred.
 
@@ -188,7 +188,9 @@ You hereby warrant that:
 
 (c)  there are no licenses or rights current in effect in favor of any third party to use the Software and the related deliverables which would impair the rights granted to Web 3.0. as provided for under these Terms and Conditions; and
 
-1.  there is no pending or threatened claim, action, suit, investigation or proceeding of any kind challenging, alleging or asserting that the Software and the related deliverables were improperly or invalidly granted or are otherwise not protected as Intellectual Property Rights.
+(d) You have disclosed all previous involvement of any team member in the Web 3.0 grant process, including, but not limited to: Closed, Rejected, Accepted, Delivered and Pending grant applications. 
+
+(e)  there is no pending or threatened claim, action, suit, investigation or proceeding of any kind challenging, alleging or asserting that the Software and the related deliverables were improperly or invalidly granted or are otherwise not protected as Intellectual Property Rights.
 
 You further warrant that the Software and the related deliverables:
 
@@ -240,13 +242,19 @@ These Terms and Conditions and any documents referred to in it shall constitute 
 
 The headings used herein are inserted only as a matter of convenience and for reference only. They shall not affect the construction or interpretation of these Terms and Conditions.
 
-## 13.  Applicable Law and Jurisdiction
+## 13. Referral Program
+
+If you were referred to the Web 3.0 Foundation Grants Program by a person who is either a Polkadot Ambassador or, in any case, a person considered by Web 3.0 as being active in the Polkadot Ecosystem (a “Valid Referee”), upon signature of this Terms and Conditions you could indicate to Web 3.0 the name of this Valid Referee, provided that he/she gave you his/her consent to share his/her identity with Web 3.0.  Web 3.0, as part of its grant referral program, will grant to the Valid Referee a referral bonus of the amount at that time allocated as bonus under such program.   
+For the avoidance of any doubt, Web 3.0 reserves the right to decide - at its complete discretion - if an individual is (and/or continues to be) a Valid Referee, and only in this case the referee will be entitled to receive the referral bonus. 
+
+
+## 14.  Applicable Law and Jurisdiction
 
 These Terms and Conditions shall be governed by and construed in accordance with the substantive laws of Switzerland without any reference to its conflict of law provisions. The provisions of the United Nation Convention on contracts for the International Sale of Goods (CISG) shall not apply.
 
 Any disputes arising out of or in connection with these terms and conditions and contracts entered into thereunder shall be submitted to the sole and exclusive jurisdiction of the courts of the city of Zug.
 
-## 14.  Polkadot Network
+## 15.  Polkadot Network
 
 If You are using Polkadot network for the purpose of the software development, research and/or the production of software documentation and technical education material You agree to be bound by specific term as follows:
 

@@ -1,4 +1,5 @@
-* **Project Name:** JuniDB
+# JuniDB
+
 * **Team Name:** Uddug
 * **Payment Address:** 0xc45eAd98E95D1962133d9c15847e2EA4E16dfD0b
 
@@ -7,6 +8,7 @@
 ### Overview
 
 It's a very highload action to store large amounts of data on-chain. The most-common and useful solution for decentralised apps is to use IPFS as a data storage and store on-chain only hashes. Our team inspired by the OrbitDB will focus on the scalability, decentralised, easy-learning solution for substrat developers that want to manipulate big amounts of data easily.
+
 #### Key advantages
 
 * **Usability** - just integrate and code
@@ -22,30 +24,32 @@ It's a very highload action to store large amounts of data on-chain. The most-co
 
 Working a lot with blockchain technologies, our team found that it’s data-driven, and thus there are rapidly growing interests in integrating them for more secure and efficient data storage and sharing.We are convinced that blockchain technologies change the world, and have been working hard to create more transparent solutions. We designed and built core infrastructure for decentralised projects.
 
-We have been observing and learning Substrate technologies and find Polkadot as the best ecosystem for us to join depending on technology and strong market position. We believe that our protocol will be useful for other projects in the Polkadot ecosystem. 
+We have been observing and learning Substrate technologies and find Polkadot as the best ecosystem for us to join depending on technology and strong market position. We believe that our protocol will be useful for other projects in the Polkadot ecosystem.
 
 ### Project Details
+
 Substrate pallet provides a configurable database module allows to store and  manipulate a big amount of data. Pallet works as an offchain worker and connect data between blockchain and ipfs via offchain::worker.
 
 #### Encryption module
+
 Built-in encryption module allows to create a secure database and encrypt all data before its uploading to the database with user account keys. With enabled encryption only account users have access to the database. Data could be decrypted via Web-application after receiving. Module is based on asymmetrical cryptography and uses an account public key to encrypt data on the blockchain side and a private key to decrypt data on the client side.
 
-We plan to make it based on ed25519 crypto scheme and use [ecies-ed2551](https://github.com/phayes/ecies-ed25519) crate to implement encryptions on backend side. 
+We plan to make it based on ed25519 crypto scheme and use [ecies-ed2551](https://github.com/phayes/ecies-ed25519) crate to implement encryptions on backend side.
 
 ![scheme A](https://i.postimg.cc/gJds3kj9/encryption.png)
 
-- receive data by RPC request
-- Encrypt data by account public key
-- Insert encrypted data into ipfs via offfchain::ipfs
-- Insert received ipfs hash into storage
+* receive data by RPC request
+* Encrypt data by account public key
+* Insert encrypted data into ipfs via offfchain::ipfs
+* Insert received ipfs hash into storage
 
 ![scheme B](https://i.postimg.cc/Y9h66G7s/decryption.png)
 
-- catch request to get data by RPC request
-- get ipfs hash from storage
-- fetch encrypted data from ipfs via offchain::ipfs
-- receive encrypted data in RPC response 
-- decrypt data using user account private key via app ddecryption module
+* catch request to get data by RPC request
+* get ipfs hash from storage
+* fetch encrypted data from ipfs via offchain::ipfs
+* receive encrypted data in RPC response
+* decrypt data using user account private key via app ddecryption module
 
 #### Technical stack
 
@@ -62,6 +66,7 @@ We plan to make it based on ed25519 crypto scheme and use [ecies-ed2551](https:/
 * **ecies-ed25519** - encryption crate
 
 #### Public Methods
+
 * **KeyValueInit(name)** - initialise new keyValue database
 * **KeyValueSet(key, value)** - set given value in keyValue database
 * **KeyValueGet(key)** - get value for given key
@@ -76,81 +81,87 @@ We plan to make it based on ed25519 crypto scheme and use [ecies-ed2551](https:/
 * **HashAll(hash)** - get all hash fields
 
 #### Storage
+
 * **Data Map** - mapping ipfs hashes and data keys
 * **Key-value** - database meta info
 
 #### Scheme 1. Palett structure
+
 ![scheme C](https://i.postimg.cc/Hn1nkxGD/pallet.png)
 
 ##### Data uploading
 
-- Rpc/wss request to pallet to insert data
-- Validating data based on database schema
-- Formatting data
-- Encrypted (if needed)
-- Store to ipfs via offchain::ipfs
-- Retrieving ipfs hash with data
-- Store ipfs hash into pallet storage
+* Rpc/wss request to pallet to insert data
+* Validating data based on database schema
+* Formatting data
+* Encrypted (if needed)
+* Store to ipfs via offchain::ipfs
+* Retrieving ipfs hash with data
+* Store ipfs hash into pallet storage
 
 ##### Data retrieving
+
 - RPC/wsss request to pallet to fetch get data
-- Validating data query
-- Get ipfs hash from storage
-- Fetch data from ipfs via offchain::ipfs
-- Return data object in response
+* Validating data query
+* Get ipfs hash from storage
+* Fetch data from ipfs via offchain::ipfs
+* Return data object in response
 
 #### Scheme 2. Interaction with Substrate
+
 ![scheme D](https://i.postimg.cc/1zzJvmjQ/scheme.png)
 
 #### Infrastructure
+
 Testing substrate nodes with offchain::orbitDB pallet orchestrated by kubernetes cluster deployed on GCP.
+
 #### Ci/Cd
+
 Ci/Cs organized by github actions
+
 #### Frontend
+
 Simple SPA web application powered by react and polkadot.js. Using for testing purposes.
 
-### Ecosystem Fit 
+### Ecosystem Fit
 
 Pallet is suitable for substrate developers and strives to become a complex solution for data storage and manipulation.
 
 We expect that the project will be useful for the Web3 community.
 
-
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-**Tech lead, backend:** Andrew Skurlatov 
+**Tech lead, backend:** Andrew Skurlatov
 
-https://www.linkedin.com/in/andrew-skurlatov/
+<https://www.linkedin.com/in/andrew-skurlatov/>
 
-**Head of product:** Mike Manko 
+**Head of product:** Mike Manko
 
-https://www.linkedin.com/in/mikhail-manko-97a491a2/
+<https://www.linkedin.com/in/mikhail-manko-97a491a2/>
 
-**Product design:** Anuar Zhumaev 
+**Product design:** Anuar Zhumaev
 
-https://www.linkedin.com/in/yxorama/
+<https://www.linkedin.com/in/yxorama/>
 
-**DevOps:** Ivan Podcebnev 
+**DevOps:** Ivan Podcebnev
 
-https://www.linkedin.com/in/naykip/
+<https://www.linkedin.com/in/naykip/>
 
-**Data Science:** Constantine Czerniak 
+**Data Science:** Constantine Czerniak
 
-https://www.linkedin.com/in/%D1%81czerniak/
+<https://www.linkedin.com/in/%D1%81czerniak/>
 
-**Frontend:** Nikita Velko 
+**Frontend:** Nikita Velko
 
-https://www.linkedin.com/in/nikichv/              
-
+<https://www.linkedin.com/in/nikichv/>
 
 ### Contact
 
 **Contact Name:** Mikhail Manko
 
 **Contact Email:** ms@uddug.com
-
 
 ### Legal Structure
 
@@ -164,28 +175,26 @@ Core of our team is of united, like-minded professionals with solid experience. 
 
 Team range of experience begins from developing small scaled websites up to complex blockchain architectures. Our projects are diverse, but all of them share the need to have a software solution for humans.
 
-
 ### Team Code Repos
 
-http://github.com/andskur/
+<http://github.com/andskur/>
 
-http://github.com/uddugteam/
+<http://github.com/uddugteam/>
 
-### Commits 
-https://github.com/uddugteam/thc-node/commits/master
+### Commits
+<https://github.com/uddugteam/thc-node/commits/master>
 
-### Related domain 
-https://thc.uddug.com/
+### Related domain
+<https://thc.uddug.com/>
 
 ## Development Status :open_book:
 
-We have already developed the pre-alfa pallet for **Trusted Health Council** [(https://github.com/uddugteam/thc-node)](https://github.com/uddugteam/thc-node). 
+We have already developed the pre-alfa pallet for **Trusted Health Council** [(https://github.com/uddugteam/thc-node)](https://github.com/uddugteam/thc-node).
 
-Link to initial pull request (https://github.com/uddugteam/General-Grants-Program/blob/master/grants/speculative/trusted_health_consul.md).
+Link to initial pull request (<https://github.com/uddugteam/General-Grants-Program/blob/master/grants/speculative/trusted_health_consul.md>).
 
 Link to 2nd pull request
-(https://github.com/uddugteam/Open-Grants-Program/blob/master/applications/ML-as-a-service.md).
-
+(<https://github.com/uddugteam/Open-Grants-Program/blob/master/applications/ML-as-a-service.md>).
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -193,7 +202,7 @@ Link to 2nd pull request
 * **Full-Time Equivalent (FTE):**  2.5 FTE
 * **Total Costs:** 28 000 USD
 
-### Milestone 1 
+### Milestone 1
 
 * **Estimated Duration:** 1 month
 * **FTE:**  2.5
@@ -209,11 +218,10 @@ Link to 2nd pull request
 | 2. | Web application | Interacting with blockchain + form with fields to manipulate with data. Based on the substrate-front-end-template |  
 | 3. | Docker image| We will provide a dockerfile to demonstrate the full functionality of testing Substrate chain with integrated Database pallet. |
 
-
 ### Milestone 2  
 
 * **Estimated Duration:** 1 month
-* **FTE:**  2.5 
+* **FTE:**  2.5
 * **Costs:** 7 000 USD
 
 | Number | Deliverable | Specification |
@@ -228,7 +236,7 @@ Link to 2nd pull request
 ### Milestone 3  
 
 * **Estimated Duration:** 1 month
-* **FTE:**  2.5 
+* **FTE:**  2.5
 * **Costs:** 7 000 USD
 
 | Number | Deliverable | Specification |
@@ -244,7 +252,7 @@ Link to 2nd pull request
 ### Milestone 4
 
 * **Estimated Duration:** 1 month
-* **FTE:**  2.5 
+* **FTE:**  2.5
 * **Costs:** 7 000 USD
 
 | Number | Deliverable | Specification |
@@ -259,7 +267,7 @@ Link to 2nd pull request
 
 ## Future Plans
 
-Further development (adding new data storages, indexing system, concurrency queries) 
+Further development (adding new data storages, indexing system, concurrency queries)
 
 Community engagement
 

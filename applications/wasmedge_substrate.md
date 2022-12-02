@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# WasmEdge for Substrate
 
-- **Project Name:** WasmEdge for Substrate
 - **Team Name:** Second State
 - **Payment Address:** 0xf212a28a62d01549c323a5feac7bbc8534064c41 (Ethereum USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

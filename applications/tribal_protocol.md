@@ -1,6 +1,5 @@
-# Web3 Foundation Submission
+# Tribal Protocol Smart Contract Development - Phase 1
 
-- **Project Name:** Tribal Protocol Smart Contract Development - Phase 1
 - **Team Name:** Tribal Protocol Labs
 - **BTC** **Payment Address:** bc1qvvd32azksdlgqdcer5e6wkxg38yfplg4lyjh0m
 - **Level 2 Grant Submission**
@@ -17,7 +16,7 @@ This grant submission is specifically for research and the development of the pr
 
 We’re a tight group of technologists, product guys, and developers that are investing our time and skills to solve problems in this critically important part of people’s everyday lives in a novel and compelling way.
 
-**It's all about Ownership**. We believe the users — real people — should own and monetize their own thoughts and opinions. It’s becoming more apparent every day that there is something deeply wrong with today’s social media platforms, and we can see that a new wave is coming. 
+**It's all about Ownership**. We believe the users — real people — should own and monetize their own thoughts and opinions. It’s becoming more apparent every day that there is something deeply wrong with today’s social media platforms, and we can see that a new wave is coming.
 
 There needs to be a “people focus” on what web3 should be. While there has been an explosion of interest and development in the web3 social space, so much of it has fallen flat and failed to activate the network effects of its user base.  
 
@@ -43,7 +42,7 @@ Another key promise of web3 is that the [same users that power social networks c
 
 ### **Relevance to Substrate & Polkadot**
 
-At the very least this work will contribute to the open source ink! community as well as provide open source tooling for DAOs in the Substrate & Polkadot ecosystem. Our ultimate goal is to launch Tribal Protocol (that this grant work is foundational to) as either our own L1 network or as a Polkadot parachain. Web3 Social Media is one of the most promising segments across the blockchain landscape today and has the potential to create a massive user on-boarding ramp into the Substrate and Polkadot ecosystems. A key reason for building on a Substrate foundation is for all the opportunities for interoperability across the Polkadot ecosystem and the rich feature sets our network developers and users will be able to leverage into the future. 
+At the very least this work will contribute to the open source ink! community as well as provide open source tooling for DAOs in the Substrate & Polkadot ecosystem. Our ultimate goal is to launch Tribal Protocol (that this grant work is foundational to) as either our own L1 network or as a Polkadot parachain. Web3 Social Media is one of the most promising segments across the blockchain landscape today and has the potential to create a massive user on-boarding ramp into the Substrate and Polkadot ecosystems. A key reason for building on a Substrate foundation is for all the opportunities for interoperability across the Polkadot ecosystem and the rich feature sets our network developers and users will be able to leverage into the future.
 
 ### **Project Details**
 
@@ -51,7 +50,7 @@ At the very least this work will contribute to the open source ink! community as
 
 1. Custom Pallet: `pallet_tribal`
     - Creation of the tribal pallet will serve as an initial container for the various smart contracts used to customize substrate to support our requirements.
-2. ink! Smart Contract: `create_tribe` 
+2. ink! Smart Contract: `create_tribe`
     - Tribes have the ability to have multiple founders, and **every potential founder must approve the** `create_tribe` **event.**
 3. ink! Smart Contract: `lease_content`
     - Users — who are using the Tribal chain — can upload content that the **user owns**. The **content creator** can decide which **tribe** to **lease** their content to, via the `lease_content` ink contract.
@@ -59,7 +58,7 @@ At the very least this work will contribute to the open source ink! community as
     - Content **leased** to specific **tribes** can be disassociated from said tribes via the `revoke_lease` contract. This contract can be invoked by **any party described within the lease (owners, and recipients)**
 5. Client Library:  `Orchestrator`
     - The `Orchestrator` will be a **client-side wasm** library, not **server-side**. This is where interaction between smart contracts on chain and UI will happen. Additionally this allows private keys to remain client side, invisible to the chain.
-6. Initial Implementation: 
+6. Initial Implementation:
     - Once the above contracts are built, we must express these contracts, and pallet on-chain. This test will prove our concepts above.
 
 ### Deliverable Details
@@ -138,33 +137,33 @@ To activate an instantiated tribe, all listed founders must accept the terms, an
 
 In the above diagram, after all the founders accept the creation of the tribe, the tribe is set to an **active** state. Once the tribe is active, it can participate in content leasing events.
 
-Alternatively, as depicted in the diagram above, if **any** founder rejects the `create_tribe` event, the tribe ****will not be activated**,** and is marked as closed. 
+Alternatively, as depicted in the diagram above, if **any** founder rejects the `create_tribe` event, the tribe ****will not be activated**,** and is marked as closed.
 
-In order to continue, a new tribe must be **created from scratch**,  and once again be approved by each **founder**. 
+In order to continue, a new tribe must be **created from scratch**,  and once again be approved by each **founder**.
 
 **Lease Content**
 
 Content leasing is how we expect to enable individual content ownership and distribution. Leasing expects 2 actors: the content creator (lessor) and the tribe (lessee).
 
-`lease_content` contract creates the on-chain representation between the specified tribe and the **user-owned** **content** by creating a cryptographic key that **unlocks** the original cryptographic content key which is used to decrypt that specific user’s content. 
+`lease_content` contract creates the on-chain representation between the specified tribe and the **user-owned** **content** by creating a cryptographic key that **unlocks** the original cryptographic content key which is used to decrypt that specific user’s content.
 
-This model allows content to be encrypted with a single key-pair, that is stored using the user’s own key-pair. A lease will **decrypt** the original content key, and create a new cryptographic key which can **also** unlock the original content’s key. Any key that is able to unlock the original content key will be **derived** from the original. 
+This model allows content to be encrypted with a single key-pair, that is stored using the user’s own key-pair. A lease will **decrypt** the original content key, and create a new cryptographic key which can **also** unlock the original content’s key. Any key that is able to unlock the original content key will be **derived** from the original.
 
 ### **Technology Stack**
 
-The tribal smart contracts will be written in ink!, which is native `rustlang`. The CLI, and other core components will use reputable libraries like `clap` to construct the actual CLI, and `tokio` to provide asynchronous task execution from within our libraries. 
+The tribal smart contracts will be written in ink!, which is native `rustlang`. The CLI, and other core components will use reputable libraries like `clap` to construct the actual CLI, and `tokio` to provide asynchronous task execution from within our libraries.
 
 All cryptographic functions will be derived from stock `substrate`  libraries, and pallets.
 
 Most lower-level blockchain related functionality will also **initially** use stock `substrate` pallets like `BABE` and/or `GRANDPA`.
 
-At this time, any UX functionality will be mostly custom, with the exception of base substrate modules that can be loaded via `WASM`. We expect to have some client-side services to communicate with back-end services in real time via REST calls, and web sockets to communicate with multiple back-ends simultaneously. We expect all of this communication to be contained within what we are calling the `Orchestrator`, which will negotiate backend data, and transaction signing/submission **with user approval**. Because of the nature of it’s utilities, we have determined that this workload should exist client-side exclusively. 
+At this time, any UX functionality will be mostly custom, with the exception of base substrate modules that can be loaded via `WASM`. We expect to have some client-side services to communicate with back-end services in real time via REST calls, and web sockets to communicate with multiple back-ends simultaneously. We expect all of this communication to be contained within what we are calling the `Orchestrator`, which will negotiate backend data, and transaction signing/submission **with user approval**. Because of the nature of it’s utilities, we have determined that this workload should exist client-side exclusively.
 
 ### **Proof-of-Concept (prior work)**
 
-An initial implementation of Tribal Protocol was written in C# from scratch without forking another chain to work out some of our system design questions. While we were able to get past rudimentary P2P networking and proof-of-stake consensus issues, the enormity of the task ahead caused us to re-evaluate. In the course of re-evaluating we determined that a language like C#, while powerful in its own right, was not suited to developing a L1 blockchain. This led us to Rust, and eventually to Substrate. 
+An initial implementation of Tribal Protocol was written in C# from scratch without forking another chain to work out some of our system design questions. While we were able to get past rudimentary P2P networking and proof-of-stake consensus issues, the enormity of the task ahead caused us to re-evaluate. In the course of re-evaluating we determined that a language like C#, while powerful in its own right, was not suited to developing a L1 blockchain. This led us to Rust, and eventually to Substrate.
 
-Once we settled on the proper tooling, we were able to think more clearly about the problem domain, and how to go about implementing it. We discovered that we *had* to have smart contracts at the heart of our system if we wanted it to have the utility desired while remaining open to decentralization. 
+Once we settled on the proper tooling, we were able to think more clearly about the problem domain, and how to go about implementing it. We discovered that we *had* to have smart contracts at the heart of our system if we wanted it to have the utility desired while remaining open to decentralization.
 
 After deep diving in ink! we realized that Substrate mitigated many of our network level architecture concerns, and gave us a smart contracting framework to build from. We spent some time building out small projects in Rust (including these crates: [1](https://crates.io/crates/deso/0.2.1),[2](https://crates.io/crates/base58check-encode/0.1.1)) and basic ink contracts in order to get more familiar with Rust, ink!, and Substrate prior to this grant submission.
 
@@ -239,10 +238,10 @@ Jason is a product leader, entrepreneur and a former US Army Officer with 10+ ye
 
 [Tribal Protocol White Paper](http://tribal.fyi)
 
-**Open Source Rust familiarization work** 
-* [Crate 1](https://crates.io/crates/deso/0.2.1)
-* [Crate 2](https://crates.io/crates/base58check-encode/0.1.1)
-* [Tribal Protocol R&D Github](https://github.com/tribal-protocol)
+**Open Source Rust familiarization work**
+- [Crate 1](https://crates.io/crates/deso/0.2.1)
+- [Crate 2](https://crates.io/crates/base58check-encode/0.1.1)
+- [Tribal Protocol R&D Github](https://github.com/tribal-protocol)
 
 ## **Development Roadmap 🔩**
 
@@ -270,9 +269,7 @@ A Tribe is the key actor in the tribal protocol - it is the DAO entity that allo
 |2.    |tribal_pallet              |Pallet initialization to contain Tribal smart contracts                                                                                                                                                                                           |
 |3.    |Ink! Contract: create_tribe|Extensible ink! contract to spawn a tribe entity                                                                                                                                                                                                  |
 |4.    |Initial Tribe Struct       |Represent tribe entity within Tribal Pallet. Tribe entity includes metadata to support said tribe.                                                                                                                                                |
-|5.    |Orchestrator Client        |Initial Orchestrator lib crate      
-
-
+|5.    |Orchestrator Client        |Initial Orchestrator lib crate
 
 ### ****Milestone 2 — Implement Content Leasing Ink! Contract****
 
@@ -296,7 +293,6 @@ In this milestone the primary deliverable is the extensible ink smart contract f
 |4.    |Txn level validation testing|Ensure content keys are not able to be leased multiple times, handle insufficient funds, conditional  leasing checks                                                                                                                              |
 |5.    |Pallet Release v0.2        |Implementations of Milestone 2, wrapped in a compiled pallet.                                                                                                                                                                                     |
 
-
 ### ****Milestone 3 — Extend Ink! Contract for Revoke Content Lease & End to End Functional/Integration Code Coverage****
 
 - **Estimated Duration:** 30 Days (~160 development hours)
@@ -319,7 +315,6 @@ The final milestone will focus on delivering the ability to revoke content lease
 |6.    |Integration Test: Revoke Lease from one of multiple|Content can be revoked from one tribe, but not on another. REVOKE_CONTENT from a tribe. (targeting ~75%+ Code Coverage)                                                                                                                           |
 |7.    |Integration Test: Revoke Lease from all tribes|Content can be revoked from all tribes. REVOKE_CONTENT from ALL tribes. (targeting ~75%+ Code Coverage)                                                                                                                                           |
 |8.    |Pallet Release v0.3        |Implementations of Milestone 3, wrapped in a compiled pallet.                                                                                                                                                                                     |
-
 
 ## **Future Plans**
 
@@ -346,4 +341,4 @@ The final milestone will focus on delivering the ability to revoke content lease
 
 **How did you hear about the Grants Program?**
 
-Jason was seeking some mentorship and advise from Jeremiah Wagstaff, co-founder of SubSpace, who recommended that we seriously consider a web3 grant as a great way to enter the ecosystem. Very glad those two connected! 
+Jason was seeking some mentorship and advise from Jeremiah Wagstaff, co-founder of SubSpace, who recommended that we seriously consider a web3 grant as a great way to enter the ecosystem. Very glad those two connected!

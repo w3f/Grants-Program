@@ -1,4 +1,9 @@
-# Accepted Grant Applications <!-- omit in toc -->
+---
+title: Accepted Grant Applications
+layout: applications
+---
+
+Use this page for an overview of all public grants and their status. Use the sidebar to navigate directly to a specific grant application document.
 
 > **:loudspeaker:** This page provides an overview of accepted grant applications, their progress and a link to their GitHub repositories. In cases where the link points to an organization, you should be aware that the grant application itself **is often an independent project unrelated to other work done by the teams**.
 >
@@ -8,32 +13,33 @@
 
 ---
 
-## Table of Contents <!-- omit in toc -->
+## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [2019](#2019)
-  - [🏄‍♀️ Wave 1 - First Quarter 2019](#surfing_woman-wave-1---first-quarter-2019)
-  - [🏄‍♀️ Wave 2 - Second Quarter 2019](#surfing_woman-wave-2---second-quarter-2019)
-  - [🏄‍♀️ Wave 3 - Third Quarter 2019](#surfing_woman-wave-3---third-quarter-2019)
-  - [🏄‍♀️ Wave 4 - Fourth Quarter 2019](#surfing_woman-wave-4---fourth-quarter-2019)
+  - [🏄‍♀️ Wave 1 - First Quarter 2019](#️-wave-1---first-quarter-2019)
+  - [🏄‍♀️ Wave 2 - Second Quarter 2019](#️-wave-2---second-quarter-2019)
+  - [🏄‍♀️ Wave 3 - Third Quarter 2019](#️-wave-3---third-quarter-2019)
+  - [🏄‍♀️ Wave 4 - Fourth Quarter 2019](#️-wave-4---fourth-quarter-2019)
 - [2020](#2020)
-  - [🏄‍♀️ Wave 5 - First Quarter 2020](#surfing_woman-wave-5---first-quarter-2020)
-  - [🏄‍♀️ Wave 6 - Second Quarter 2020](#surfing_woman-wave-6---second-quarter-2020)
-  - [🏄‍♀️ Wave 7 - Third Quarter 2020](#surfing_woman-wave-7---third-quarter-2020)
-  - [🏄‍♀️ Wave 8 - Fourth Quarter 2020](#surfing_woman-wave-8---fourth-quarter-2020)
+  - [🏄‍♀️ Wave 5 - First Quarter 2020](#️-wave-5---first-quarter-2020)
+  - [🏄‍♀️ Wave 6 - Second Quarter 2020](#️-wave-6---second-quarter-2020)
+  - [🏄‍♀️ Wave 7 - Third Quarter 2020](#️-wave-7---third-quarter-2020)
+  - [🏄‍♀️ Wave 8 - Fourth Quarter 2020](#️-wave-8---fourth-quarter-2020)
 - [2021](#2021)
-  - [🏄‍♀️ Wave 9 - First Quarter 2021](#surfing_woman-wave-9---first-quarter-2021)
-  - [🏄‍♀️ Wave 10 - Second Quarter 2021](#surfing_woman-wave-10---second-quarter-2021)
-  - [🏄‍♀️ Wave 11 - Third Quarter 2021](#surfing_woman-wave-11---third-quarter-2021)
-  - [🏄‍♀️ Wave 12 - Fourth Quarter 2021](#surfing_woman-wave-12---fourth-quarter-2021)
+  - [🏄‍♀️ Wave 9 - First Quarter 2021](#️-wave-9---first-quarter-2021)
+  - [🏄‍♀️ Wave 10 - Second Quarter 2021](#️-wave-10---second-quarter-2021)
+  - [🏄‍♀️ Wave 11 - Third Quarter 2021](#️-wave-11---third-quarter-2021)
+  - [🏄‍♀️ Wave 12 - Fourth Quarter 2021](#️-wave-12---fourth-quarter-2021)
 - [2022](#2022)
-  - [🏄‍♀️ Wave 13 - First Quarter 2022](#surfing_woman-wave-13---first-quarter-2022)
-  - [🏄‍♀️ Wave 14 - Second Quarter 2022](#surfing_woman-wave-14---second-quarter-2022)
-  - [🏄‍♀️ Wave 15 - Third Quarter 2022](#surfing_woman-wave-15---third-quarter-2022)
-  - [🏄‍♀️ Wave 16 - Fourth Quarter 2022](#surfing_woman-wave-16---fourth-quarter-2022)
+  - [🏄‍♀️ Wave 13 - First Quarter 2022](#️-wave-13---first-quarter-2022)
+  - [🏄‍♀️ Wave 14 - Second Quarter 2022](#️-wave-14---second-quarter-2022)
+  - [🏄‍♀️ Wave 15 - Third Quarter 2022](#️-wave-15---third-quarter-2022)
+  - [🏄‍♀️ Wave 16 - Fourth Quarter 2022](#️-wave-16---fourth-quarter-2022)
 
-# 2019
+## 2019
 
-## 🏄‍♀️ Wave 1 - First Quarter 2019
+### 🏄‍♀️ Wave 1 - First Quarter 2019
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -48,7 +54,7 @@
 | [Protos](http://protosmanagement.com/) | Open Source Node Explorer | [GitHub](https://github.com/protos-research/polkadot-node-explorer) | ☒ | ☒ | ☐ |
 | [Supercomputing Systems](https://www.scs.ch/) | Substrate Transaction Privacy using Intel SGX | [GitHub](https://github.com/scs/substraTEE) | ☐ | ☒ | ☒ |
 
-## 🏄‍♀️ Wave 2 - Second Quarter 2019
+### 🏄‍♀️ Wave 2 - Second Quarter 2019
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -65,7 +71,7 @@
 | [Mailchain](https://mailchain.xyz/) | a Multi-Blockchain Messaging Application | [GitHub](https://github.com/mailchain) | ☐ | ☒ | ☒ |
 | [Usetech](http://usetech.com/blockchain.html) | Polkadot C++ API | [GitHub](https://github.com/usetech-llc/polkadot_api_cpp) | ☐ | ☒ | ☒ |
 
-## 🏄‍♀️ Wave 3 - Third Quarter 2019
+### 🏄‍♀️ Wave 3 - Third Quarter 2019
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -84,7 +90,7 @@
 | [Phala.Network](https://phala.network/) | pLibra, Privacy Bridge between Polkadot and Libra chain | [GitHub](https://github.com/Phala-Network/) | ☐ | ☒ | ☐ |
 | [Wiv](http://wiv.io/) | Supply chain modules and front-end UI | [GitHub](https://github.com/wivtech) | ☒ | ☐ | ☐ |
 
-## 🏄‍♀️ Wave 4 - Fourth Quarter 2019
+### 🏄‍♀️ Wave 4 - Fourth Quarter 2019
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -100,7 +106,7 @@
 | [Simply VC](https://simply-vc.com.mt/) | P.A.N.I.C. Validator alerting solution | [GitHub](https://github.com/SimplyVC/panic_polkadot) | ☐ | ☒ | ☒ |
 | [Ethworks](https://ethworks.io/) | Polkadot{.js} extension improvements | [GitHub](https://github.com/ethWorks) | ☐ | ☒ | ☒ |
 | [Lyken Software Solutions](https://lyken.rs/) | Investigation of runtime compilation | [GitHub](https://github.com/LykenSol) | ☐ | ☒ | ☒ |
-| [Blockchain IT](blockchain-it.hr) | Ink! Remix Plugin | [GitHub](https://github.com/blockchain-it-hr/ink-remix-plugin) | ☐ | ☒ | ☒ |
+| [Blockchain IT](https://blockchain-it.hr) | Ink! Remix Plugin | [GitHub](https://github.com/blockchain-it-hr/ink-remix-plugin) | ☐ | ☒ | ☒ |
 | [Kadena](https://www.kadena.io/) | Pact feasibility study | [GitHub](https://github.com/kadena-io/) | ☐ | ☐ | ☐ |
 | [STAFI Protocol](http://www.stafi.io/) | Stafi is a protocol to provide liquidity for staking assets | [GitHub](https://github.com/stafiprotocol/stafi-node) | ☐ | ☒ | ☒ |
 | [Vision Baker](https://playproject.io/) | DatDot — Dat protocol for Polkadot | [GitHub](https://github.com/playproject-io/datdot) | ☐ | ☒ | ☐ |
@@ -115,9 +121,9 @@
 | [Sean Young](https://www.mess.org/) | Solidity to WASM compiler | [GitHub](https://github.com/hyperledger-labs/solang) | ☐ | ☒ | ☒ |
 | [Chain Security](https://chainsecurity.com/) | Tool for validating correctness of Polkadot runtimes | [GitHub](https://github.com/ChainSecurity) | ☐ | ☒ | ☒ |
 
-# 2020
+## 2020
 
-## 🏄‍♀️ Wave 5 - First Quarter 2020
+### 🏄‍♀️ Wave 5 - First Quarter 2020
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -159,7 +165,7 @@
 | [Lyken](https://lyken.rs/) | Rust trait system revamp | [GitHub](https://github.com/LykenSol) | ☐ | ☒ | ☐ |
 | [Chorus One](https://chorus.one/) | Grandpa light client in Tendermint | [GitHub](https://github.com/ChorusOne) | ☐ | ☒ | ☒ |
 
-## 🏄‍♀️ Wave 6 - Second Quarter 2020
+### 🏄‍♀️ Wave 6 - Second Quarter 2020
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -197,14 +203,14 @@
 | [Zondax](http://zondax.ch/) | Ledgeracio: A command-line tool and Ledger app designed for staking operations | [GitHub](https://github.com/paritytech/ledgeracio) | ☐ | ☒ | ☒ |
 | [Dipole Tech](https://www.dipole.tech) | Dipole Oracle: Distributed energy resource management | [GitHub](https://github.com/DipoleTech/dipole-oracle) | ☐ | ☒ | ☒ |
 
-## 🏄‍♀️ Wave 7 - Third Quarter 2020
+### 🏄‍♀️ Wave 7 - Third Quarter 2020
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
 | [Halva](https://github.com/halva-suite) | A toolchain for improving the experience of developing Decentralized Applications based on Substrate | [GitHub](https://github.com/halva-suite) | ☐ | ☒ | ☒ |
-| [Subscan](subscan.io) | Substrate explorer | [GitHub](https://github.com/itering/subscan) | ☐ | ☒ | ☒ |
+| [Subscan](https://subscan.io) | Substrate explorer | [GitHub](https://github.com/itering/subscan) | ☐ | ☒ | ☒ |
 | [t3rn](https://github.com/t3rn/t3rn) | A protocol for blockchain interoperability | [GitHub](https://github.com/t3rn/t3rn) | ☐ | ☒ | ☒ |
-| [Stake Technologies](https://stake.co.jp/) | Hardware ECDSA for Polkadot JS | [GitHub](https://github.com/polkadot-js) | ☐ | ☐ | ☐ |
+| [Stake Technologies](https://stake.co.jp/) | Hardware ECDSA for Polkadot JS | [GitHub](https://github.com/polkadot-js) | ☐ | ☒ | ☒ |
 | [Protofire](https://protofire.io/) | Failover mechanism for validators upgrade | [GitHub](https://github.com/protofire) | ☐ | ☒ | ☐ |
 | [DappForce](http://dappforce.io) | SubSocial Chapter 2 | [GitHub](https://github.com/dappforce/dappforce-subsocial) | ☐ | ☒ | ☒ |
 | [OpenSquare Network](https://www.opensquare.network/) | A blockchain based crowdsourcing and reputation platform | [GitHub](https://github.com/opensquare-network) | ☐ | ☒ | ☒ |
@@ -215,7 +221,7 @@
 | [enfipy](https://github.com/enfipy) | Creator: Mobile Game Framework for Substrate | [GitHub](https://github.com/creator-rs) | ☐ | ☒ | ☒ |
 | [Halva](https://github.com/halva-suite) | Halva: Bootstrapping and Scaffolding | [GitHub](https://github.com/halva-suite) | ☐ | ☒ | ☒ |
 | [Sunshine Systems](https://sunshine.foundation) | Sunshine Keybase | [GitHub](https://github.com/sunshine-protocol) | ☐ | ☒ | ☒ |
-| [Subscan](subscan.io) | Multi-signature Management Tool | [GitHub](https://github.com/itering) | ☐ | ☒ | ☒ |
+| [Subscan](https://subscan.io) | Multi-signature Management Tool | [GitHub](https://github.com/itering) | ☐ | ☒ | ☒ |
 | [Evercity](https://evercity.io/) | Smart Sustainable Bond Protocol (SSB-P) | [GitHub](https://github.com/EvercityEcosystem/Smart-Sustainable-Bond) | ☐ | ☒ | ☒ |
 | [Permiurly](http://permiurly.in) | Polkassembly | [GitHub](https://github.com/premiurly/polkassembly) | ☐ | ☒ | ☒ |
 | [Zeropool](https://zeropool.network/) | Private transactions on Polkadot | [GitHub](https://github.com/zeropoolnetwork) | ☐ | ☒ | ☐ |
@@ -233,7 +239,7 @@
 | [sup](https://github.com/clearloop/sup) | Command line tool for generating or upgrading a Substrate node | [GitHub](https://github.com/clearloop/sup) | ☐ | ☒ | ☒ |
 | [Shard Labs](https://shardlabs.io) | Tip or Donate KSM Embeddable Button | [GitHub](https://github.com/Shard-Labs) | ☐ | ☒ | ☒ |
 
-## 🏄‍♀️ Wave 8 - Fourth Quarter 2020
+### 🏄‍♀️ Wave 8 - Fourth Quarter 2020
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -281,9 +287,9 @@
 | [HugoByte](https://hugobyte.com/) | Project Aurras: Event Manager | [GitHub](https://github.com/HugoByte) | ☐ | ☒ | ☒ |
 | [Bounce Protocol](https://bounce.finance/) | Decentralized Auction Protocol | [GitHub](https://github.com/bouncefinance/bounce-network) | ☐ | ☐ | ☐ |
 
-# 2021
+## 2021
 
-## 🏄‍♀️ Wave 9 - First Quarter 2021
+### 🏄‍♀️ Wave 9 - First Quarter 2021
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -336,7 +342,7 @@
 | [Vera](https://veraprotocol.org/) | NFT Lending + Exchange | [GitHub](https://github.com/veraprotocol) | ☐ | ☒ | ☒ |
 | [Parallel Finance](https://parallel.fi/#/) | Decentralized lending/borrowing and staking protocol | [GitHub](https://github.com/parallel-finance/parallel) | ☐ | ☒ | ☒ |
 
-## 🏄‍♀️ Wave 10 - Second Quarter 2021
+### 🏄‍♀️ Wave 10 - Second Quarter 2021
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -370,7 +376,7 @@
 | [CryptoLab](https://www.cryptolab.network) | Staking Reward Collector | [GitHub](https://github.com/cryptolab-network) | ☐ | ☒ | ☒ |
 | [Yatima Inc](https://github.com/yatima-inc/yatima) | Lambda-VM and programming language for Substrate | [GitHub](https://github.com/yatima-inc/yatima) | ☐ | ☒ | ☒ |
 
-## 🏄‍♀️ Wave 11 - Third Quarter 2021
+### 🏄‍♀️ Wave 11 - Third Quarter 2021
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -401,14 +407,14 @@
 | [Skye Kiwi](https://skye.kiwi/) | SkyeKiwi Protocol | [GitHub](https://github.com/skyekiwi) | ☐ | ☒ | ☒ |
 | [Evercity](https://evercity.io/) | Sustainable Finance Protocol | [GitHub](https://github.com/EvercityEcosystem) | ☐ | ☒ | ☒ |
 
-## 🏄‍♀️ Wave 12 - Fourth Quarter 2021
+### 🏄‍♀️ Wave 12 - Fourth Quarter 2021
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
 | Matthew Darnell | cScale | [GitHub](https://github.com/MatthewDarnell/cScale) | ☐ | ☒ | ☐ |
 | [Web3go](https://web3go.xyz/) | Web3go | [GitHub](https://github.com/web3go-xyz) | ☐ | ☒ | ☐ |
 | [Prosopo Limited](https://prosopo.io) | Prosopo: Human Verification Marketplace | [GitHub](https://github.com/prosopo-io) | ☐ | ☒ | ☒ |
-| [Litentry](www.litentry.com) | Polka SignIn | [GitHub](https://github.com/litentry) | ☐ | ☐ | ☐ |
+| [Litentry](https://www.litentry.com) | Polka SignIn | [GitHub](https://github.com/litentry) | ☐ | ☐ | ☐ |
 | [gmajor](https://github.com/gmajor-encrypt) | PHP RPC Lib | [GitHub](https://github.com/gmajor-encrypt/) | ☐ | ☒ | ☒ |
 | [logion](https://logion.network/) | Logion wallet | [GitHub](https://github.com/logion-network) | ☐ | ☒ | ☒ |
 | [SuperColony](https://www.supercolony.net/) | OpenBrush - Secure smart-contract development on ink! Phase 2 | [GitHub](https://github.com/Supercolony-net) | ☐ | ☒ | ☐ |
@@ -418,7 +424,7 @@
 | [DICO Team](https://dico.io/) | DICO: Decentralized and governable ICO platform | [GitHub](https://github.com/DICO-TEAM/dico-chain) | ☐ | ☐ | ☐ |
 | [DodoRare, Inc.](https://dodorare.com) | Crossbow - Cross-Platform Rust Toolkit for Games | [GitHub](https://github.com/dodorare) | ☐ | ☒ | ☒ |
 | [Rainbowcity Foundation](http://www.rainbowcity.io/) | RainbowDAO Protocol ink! Phase 1 | [GitHub](https://github.com/RainbowcityFoundation/RainbowcityDAO) | ☐ | ☒ | ☒ |
-| [Web Registry DAO](www.wika.network) | Wika Network | [GitHub](https://github.com/randombishop/wika_node) | ☐ | ☒ | ☐ |
+| [Web Registry DAO](https://www.wika.network) | Wika Network | [GitHub](https://github.com/randombishop/wika_node) | ☐ | ☒ | ☐ |
 | [Helikon Labs](http://www.helikon.tech/) | SubVT Telegram Bot for Kusama and Polkadot | [GitHub](https://github.com/helikon-labs/polkadot-kusama-1kv-telegram-bot) | ☐ | ☒ | ☒ |
 | [Elamin LTD](http://imbue.network/) | Imbue Network | [GitHub](https://github.com/ImbueNetwork) | ☐ | ☒ | ☒ |
 | [Koi Metaverse](https://koi.io/) | Building the Digital Collectibles Platform for Virtual GameFi NFTs | [GitHub](https://github.com/KoiMetaverse) | ☐ | ☐ | ☐ |
@@ -427,9 +433,9 @@
 | [AdMeta](https://admeta.network/) | A privacy-preserving Ad Platform | [GitHub](https://github.com/AdMetaNetwork/admeta) | ☐ | ☐ | ☐ |
 | Crypto Pay Lab (CPL)) | Dotpay a github paid task platform using DOT | [GitHub](https://github.com/bytepayment) | ☐ | ☒ | ☐ |
 
-# 2022
+## 2022
 
-## 🏄‍♀️ Wave 13 - First Quarter 2022
+### 🏄‍♀️ Wave 13 - First Quarter 2022
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -452,7 +458,7 @@
 | [Papers GmbH](https://papers.ch/en/) | Zaturn - A Generic Attestable Oracle parachain Phase 1 | [GitHub](https://github.com/airgap-it) | ☐ | ☐ | ☐ |
 | [Slonigiraf](https://www.slonigiraf.org/) | SLON - a recommendation letter system| [GitHub](https://github.com/slonigiraf) | ☐ | ☒ | ☒ |
 | [Helixstreet](https://helixstreet.io/) | Helixstreet Module | [GitHub](https://github.com/helixstreet) | ☐ | ☐ | ☐ |
-| [Cryptoviet](https://team.cryptoviet.com/) |  Gafi Network - The Network of Game Finance | [GitHub](https://github.com/cryptoviet/gafi) | ☐ | ☒ | ☐ |
+| [Cryptoviet](https://team.cryptoviet.com/) |  Gafi Network - The Network of Game Finance | [GitHub](https://github.com/cryptoviet/gafi) | ☐ | ☒ | ☒ |
 | [Asylum](https://asylum.space/) |  Metaverse for next generation gaming | [GitHub](https://gitlab.com/asylum-space/) | ☐ | ☒ | ☒ |
 | [CESS LAB](https://www.cess.cloud/) | Data Store Pallet | [GitHub](https://github.com/CESSProject/cess) | ☐ | ☒ | ☒ |
 | [ChainSafe](https://chainsafe.io/) | Substrate Core Polywrapper | [GitHub](https://github.com/polywrap) | ☐ | ☐ | ☐ |
@@ -466,7 +472,7 @@
 | [NUTS Finance](https://nuts.finance) | DOT-pegged derivative built on top of the stable asset protocol | [GitHub](https://github.com/nutsfinance/) | ☐ | ☒ | ☒ |
 | [Strategy Object](https://strategyobject.com/) | Substrate Client for Java | [GitHub](https://github.com/strategyobject/substrate-client-java) | ☐ | ☒ | ☐ |
 
-## 🏄‍♀️ Wave 14 - Second Quarter 2022
+### 🏄‍♀️ Wave 14 - Second Quarter 2022
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -500,14 +506,14 @@
 | [Tribal Protocol Labs](https://www.tribal.fyi/) | Tribal Protocol Smart Contract Development | [GitHub](https://github.com/tribal-protocol) | ☐ | ☒ | ☐ |
 | [Yahuang Wu](https://github.com/wuyahuang) | Dual-Key Stealth Address Protocol | [GitHub](https://github.com/wuyahuang) | ☐ | ☒ | ☒ |
 | [UNIVERSALDOT FOUNDATION](https://universaldot.foundation) | Universaldot.me Phase 2 | [GitHub](https://github.com/UniversalDot) | ☒ | ☐ | ☐ |
-| [Societal Labs Ltd.](https://www.sctl.xyz/) | Societal - MVP - Phase 1 | [GitHub](https://github.com/sctllabs) | ☐ | ☐ | ☐ |
+| [Societal Labs Ltd.](https://www.sctl.xyz/) | Societal - MVP - Phase 1 | [GitHub](https://github.com/sctllabs) | ☐ | ☒ | ☐ |
 | [Faceless Protocol](https://github.com/HeisenbergLin22) | Faceless Protocol | [GitHub](https://github.com/HeisenbergLin22) | ☐ | ☒ | ☐ |
 | [SuperColony](https://github.com/Supercolony-net) | Typechain | [GitHub](https://github.com/Supercolony-net/typechain-polkadot) | ☐ | ☒ | ☒ |
-| [Codelight](https://massbit.io/) | Massbit Route | [GitHub](https://github.com/massbitprotocol/massbitroute) | ☐ | ☒ | ☐ |
+| [Codelight](https://massbit.io/) | Massbit Route | [GitHub](https://github.com/massbitprotocol/massbitroute) | ☐ | ☒ | ☒ |
 | [Hypha Hashed Partners](https://hypha.earth/) | Social Recovery Wallet | [GitHub](https://github.com/hypha-dao) | ☐ | ☒ | ☐ |
-| [MangoBOX labs](http://mangobox.xyz/) | MangoBOX Protocol | [GitHub](https://github.com/Mangoboxlabs) | ☐ | ☐ | ☐ |
+| [MangoBOX labs](http://mangobox.xyz/) | MangoBOX Protocol | [GitHub](https://github.com/Mangoboxlabs) | ☐ | ☒ | ☒ |
 
-## 🏄‍♀️ Wave 15 - Third Quarter 2022
+### 🏄‍♀️ Wave 15 - Third Quarter 2022
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
@@ -516,17 +522,17 @@
 | [Lee](https://github.com/rust-0x0) | Hex Space Social Graph | [GitHub](https://github.com/rust-0x0) | ☐ | ☒ | ☐ |
 | [Liberland LLC](https://liberland.org/en/) | Liberland Pallets | [GitHub](https://github.com/liberland/liberland_substrate) | ☐ | ☐ | ☐ |
 | [Standard Protocol](https://standard.tech/) | Signac - a monorepo plugin for developing multiple Parity ink! smart contracts | [GitHub](https://github.com/standardweb3/signac) | ☐ | ☒ | ☒ |
-| [B-Datagray](https://www.b-datagray.com/) | Datagen Project | [GitHub](https://github.com/Datagen-Project) | ☐ | ☐ | ☐ |
+| [B-Datagray](https://www.b-datagray.com/) | Datagen Project | [GitHub](https://github.com/Datagen-Project) | ☐ | ☒ | ☐ |
 | [Colorful Notion](https://polkaholic.io/#chains) | Polkaholic.io's Multi-Chain Substrate Block Explorer | [GitHub](https://github.com/colorfulnotion/polkaholic/) | ☐ | ☐ | ☐ |
 | [Common Orbit LLC](https://brson.github.io) | `wasm-opt` for Rust | [GitHub](https://github.com/brson/wasm-opt-rs) | ☐ | ☒ | ☒ |
-| [Blockcoders](https://blockcoders.io/) | Ink Explorer | [GitHub](https://github.com/blockcoders) | ☐ | ☒ | ☐ |
-| [Equilibrium](https://equilibrium.co/) | Polkadot Light Client in C++ | [GitHub](https://github.com/eqlabs) | ☐ | ☐ | ☐ |
+| [Blockcoders](https://blockcoders.io/) | Ink Explorer | [GitHub](https://github.com/blockcoders) | ☐ | ☒ | ☒ |
+| [Equilibrium](https://equilibrium.co/) | Polkadot Light Client in C++ | [GitHub](https://github.com/eqlabs) | ☐ | ☒ | ☒ |
 | [Open rollup](https://github.com/openrollup-zk) | Open rollup - MVP - Phase 1 | [GitHub](https://github.com/openrollup-zk) | ☐ | ☐ | ☐ |
 | [Veridise](https://veridise.com/) | Vanguard | [GitHub](https://github.com/Veridise/Vanguard) | ☐ | ☐ | ☐ |
 | [Karolis Ramanauskas](https://krl.is/) | Generic Sybil-Resistant Faucet | [GitHub](https://github.com/karooolis) | ☐ | ☒ | ☒ |
 | [LimeChain](https://limechain.tech/) | Research feasibility for a Go Runtime | [GitHub](https://github.com/LimeChain) | ☐ | ☒ | ☒ |
-| [Jim Yam](https://github.com/JimYam) | daos | [GitHub](https://github.com/daos-org/daos.git) | ☐ | ☐ | ☐ |
-| [Green Lemon](https://github.com/GreenLemonProtocol) | Green Lemon Protocol | [GitHub](https://github.com/GreenLemonProtocol) | ☐ | ☒ | ☐ |
+| [Jim Yam](https://github.com/JimYam) | daos | [GitHub](https://github.com/daos-org/daos.git) | ☐ | ☒ | ☐ |
+| [Green Lemon](https://github.com/GreenLemonProtocol) | Green Lemon Protocol | [GitHub](https://github.com/GreenLemonProtocol) | ☐ | ☒ | ☒ |
 | [Stardust Labs Inc.](https://stardust.finance/) | Integrating ISO-8583 | [GitHub](https://github.com/adit313/) | ☐ | ☒ | ☒ |
 | [TwinP](https://www.linkedin.com/in/elioprifti/) | Escrow Pallet | [GitHub](https://github.com/herou) | ☐ | ☒ | ☒ |
 | [Meta Defender Team](https://github.com/Meta-Defender/) | Meta Defender | [GitHub](https://github.com/Meta-Defender/) | ☐ | ☐ | ☐ |
@@ -535,27 +541,27 @@
 | [Uke](https://github.com/Uke-Messaging) | Uke Messaging - PoC - Phase 1 | [GitHub](https://github.com/Uke-Messaging) | ☒ | ☐ | ☐ |
 | [Redstone Network](https://github.com/difttt) | Redstone Network | [GitHub](https://github.com/difttt) | ☐ | ☐ | ☐ |
 | [JURIMETRIC TECNOLOGIA LTDA](https://www.jurimetric.com.br/) | Polkadart | [GitHub](https://github.com/rankanizer/polkadart) | ☐ | ☐ | ☐ |
-| [Skye Kiwi](https://skye.kiwi/) | Choko Wallet | [GitHub](https://github.com/skyekiwi) | ☐ | ☐ | ☐ |
+| [Skye Kiwi](https://skye.kiwi/) | Choko Wallet | [GitHub](https://github.com/skyekiwi) | ☐ | ☒ | ☐ |
 | [Popular Coding](https://www.popularcoding.com/) | Ventur | [GitHub](https://github.com/popular_coding) | ☐ | ☒ | ☐ |
 | [Asylum](https://asylum.space/) | Asylum follow-up 1 | [GitHub](https://gitlab.com/asylum-space/) | ☐ | ☒ | ☐ |
 | [Cyril Carlier](https://github.com/CrommVardek) | Maki| [GitHub](https://github.com/CrommVardek) | ☐ | ☐ | ☐ |
 | [TopMonks](https://www.topmonks.com/) | Calamar| [GitHub](https://github.com/topmonks/calamar) | ☐ | ☐ | ☐ |
 | [Bela Supernova](https://bsn.si/) | Rubeus Keeper| [GitHub](https://github.com/bsn-si) | ☐ | ☐ | ☐ |
 | [Web3 Labs Ltd](https://www.web3labs.com/epirus-explorer) | Epirus Substrate Explorer - Phase 2 | [GitHub](https://github.com/web3labs) | ☐ | ☐ | ☐ |
-| [Uke](https://github.com/Uke-Messaging) | Uke Protocol PoC & App (revised) | [GitHub](https://github.com/Uke-Messaging) | ☐ | ☒ | ☐ |
+| [Uke](https://github.com/Uke-Messaging) | Uke Protocol PoC & App (revised) | [GitHub](https://github.com/Uke-Messaging) | ☐ | ☒ | ☒ |
 | [SuperColony](https://github.com/Supercolony-net) | Typechain Phase 2 | [GitHub](https://github.com/Supercolony-net/typechain-polkadot) | ☐ | ☐ | ☐ |
 | [QSTN](https://qstn.us/) | QSTN | [GitHub](https://github.com/qstnus) | ☐ | ☐ | ☐ |
 | [CESS LAB](https://www.cess.cloud/) | Substats (The framework of lightweight block explorer) | [GitHub](https://github.com/CESSProject) | ☐ | ☐ | ☐ |
 | [Polket](https://toearn.fun) | ToEarnFun | [GitHub](https://github.com/polketio/polket-node) | ☐ | ☐ | ☐ |
 | ALPHA LABS | Binary merkle tree | [GitHub](https://github.com/frisitano) | ☐ | ☐ | ☐ |
 | [Standard Protocol](https://standard.tech/) | New Order - a full onchain orderbook dex with indexers | [GitHub](https://github.com/standardweb3) | ☐ | ☐ | ☐ |
-| [hack-ink](https://github.com/hack-ink) | Subalfred | [GitHub](https://github.com/hack-ink/subalfred) | ☐ | ☐ | ☐ |
+| [hack-ink](https://github.com/hack-ink) | Subalfred | [GitHub](https://github.com/hack-ink/subalfred) | ☐ | ☒ | ☐ |
 
-## 🏄‍♀️ Wave 16 - Fourth Quarter 2022
+### 🏄‍♀️ Wave 16 - Fourth Quarter 2022
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
-| [CrossChain Labs](https://github.com/CrossChainLabs) | DotPulse | [GitHub](https://github.com/CrossChainLabs) | ☐ | ☐ | ☐ |
+| [CrossChain Labs](https://github.com/CrossChainLabs) | DotPulse | [GitHub](https://github.com/CrossChainLabs) | ☐ | ☒ | ☐ |
 | [Jett Hays](https://github.com/jettblu) | Distributed Key Management | [GitHub](https://github.com/KryptikApp) | ☐ | ☐ | ☐ |
 | [NexToken Technology](https://github.com/NexTokenTech) | TREX - Timed Release Encryption Xing chains | [GitHub](https://github.com/NexTokenTech/TREX) | ☐ | ☐ | ☐ |
 | [Blockcoders](http://blockcoders.io/) | Cross-Consensus Messaging Software Development Kit | [GitHub](https://github.com/blockcoders) | ☐ | ☐ | ☐ |
@@ -563,10 +569,19 @@
 | [LeetCoin](https://www.leetcoin.co/) | LeetCoin | [GitHub](https://github.com/nashhq/leetcoin) | ☐ | ☐ | ☐ |
 | [727.ventures](https://github.com/727-Ventures) | Sol2Ink Phase 2 | [GitHub](https://github.com/727-Ventures) | ☐ | ☐ | ☐ |
 | [walt.id](https://walt.id/) | NFT infrastructure | [GitHub](https://github.com/walt-id) | ☐ | ☐ | ☐ |
-| [SydTek](https://sydtek.ai/) | Digital Inheritance in Web3: A Case Study of Soulbound Tokens and Social Recovery Pallets | N/A | ☐ | ☐ | ☐ |
-| [Anagolay](https://anagolay.network/) | Multi-token community contributions for verified creators | [GitHub](https://github.com/anagolay) | ☐ | ☐ | ☐ |
+| [SydTek](https://sydtek.ai/) | Digital Inheritance in Web3: A Case Study of Soulbound Tokens and Social Recovery Pallets | [GitHub](https://github.com/jgophd/Developed-Materials-and-Raw-Data) | ☐ | ☒ | ☐ |
+| [Anagolay](https://anagolay.network/) | Multi-token community contributions for verified creators | [GitHub](https://github.com/anagolay) | ☐ | ☒ | ☐ |
 | [Ink Contracts Wizard Team](https://github.com/amankumar1008/contracts-wizard) | Ink Smart Contract Wizard | [GitHub](https://github.com/amankumar1008/contracts-wizard) | ☐ | ☐ | ☐ |
 | [TDSoftware](https://www.tdsoftware.de/) | Substrate IPFS Utilities | [GitHub](https://github.com/TDSoftware) | ☐ | ☐ | ☐ |
 | [Ink Boxes Team](https://github.com/nerdsince98) | Ink Boxes | [GitHub](https://gitlab.com/nerdsince98/learning-ink/) | ☐ | ☐ | ☐ |
 | [ParaSpell](https://github.com/paraspell) | ParaSpell Phase 2 | [GitHub](https://github.com/paraspell) | ☐ | ☐ | ☐ |
-
+| [SubRelay](http://subrelay.xyz/) | SubRelay | [GitHub](https://github.com/subrelay) | ☐ | ☐ | ☐ |
+| [Wow Labz](http://www.wowlabz.com) | Dot Marketplace Phase 3 | [GitHub](https://github.com/orgs/WowLabz) | ☐ | ☐ | ☐ |
+| [10Clouds Sp. z o.o.](https://10clouds.com/) | Crowdloan Front End Template | [GitHub](https://github.com/10clouds) | ☐ | ☐ | ☐ |
+| [DodoRare, Inc.](https://dodorare.com/) | Faterium | [GitHub](https://github.com/faterium) | ☐ | ☐ | ☐ |
+| [The Bacon Beacon](https://github.com/random-bacon) | Pallet Drand Client  | [GitHub](https://github.com/random-bacon) | ☐ | ☐ | ☐ |
+| [Helikon Labs](https://helikon.io/) | ChainViz v1 | [GitHub](https://github.com/helikon-labs/chainviz) | ☐ | ☐ | ☐ |
+| [Mutai Solutions](https://bryanmutai.co/) | Crowdloans-FET | [GitHub](https://github.com/brymut) | ☐ | ☐ | ☐ |
+| [k/factory](https://k-f.co/) | Centrifuge Go-Substrate-RPC Client V2 | [GitHub](https://github.com/centrifuge/go-substrate-rpc-client) | ☐ | ☐ | ☐ |
+| [Colorful Notion](https://github.com/colorfulnotion) | Zombienet Explorer: Multi-Chain Substrate Block Explorer | [GitHub](https://github.com/colorfulnotion/zombienet-explorer) | ☐ | ☐ | ☐ |
+| [TwinP](https://github.com/herou) | Decentralized Invoice | [GitHub](https://github.com/herou) | ☐ | ☐ | ☐ |

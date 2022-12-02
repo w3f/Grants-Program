@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# PolkaKey
 
-* **Project:** PolkaKey
 * **Proposer:** @HiZhaoYun
 * **Payment Address:** 1NUYKUgjDrzXox7ebeT6xkFN5A64S419Xm
 

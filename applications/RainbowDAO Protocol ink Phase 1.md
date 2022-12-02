@@ -1,8 +1,5 @@
-# W3F Grant Proposal
+# RainbowDAO Protocol ink!  Phase 1
 
-
-
-- **Project Name:** RainbowDAO Protocol ink!  Phase 1
 - **Team Name:** Rainbowcity Foundation
 - **Payment Address:** 0xC2dA4D5813978BbC43d81e905dE6C98767526EdF (DAI)
 - **[Level]** 2 

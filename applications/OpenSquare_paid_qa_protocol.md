@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# OpenSquare Paid QA protocol
 
-* **Project Name:** OpenSquare Paid QA protocol
 * **Team Name:** OpenSquare
 * **Payment Address:** 0x4905083abdD13bd95345A871701Fd0b08AbD46d1 (USDT)
 
@@ -41,42 +40,42 @@ DAPP implementers may do the submission in a batch way.
 
 The packages or components we have to implement includes:
 
-- A scan package which tracks the interactions on a blockchain, and stores the structured data to the database.
-- Scripts which interact with IPFS, fetch or upload content.
-- A restful server will handle api calls from user interfaces and serve the structured data to them.
-- A backend job which aggregates the signed answers and submits them to blockchain in a batch extrinsic.
-- User interfaces.
+* A scan package which tracks the interactions on a blockchain, and stores the structured data to the database.
+* Scripts which interact with IPFS, fetch or upload content.
+* A restful server will handle api calls from user interfaces and serve the structured data to them.
+* A backend job which aggregates the signed answers and submits them to blockchain in a batch extrinsic.
+* User interfaces.
 
 The user interfaces will include:
 
-- A topic list page where users can see all the topics. Each topic is shown with its author, title, created time,
+* A topic list page where users can see all the topics. Each topic is shown with its author, title, created time,
   status, etc. There may be some filters, like token currency filter and amount filter.
-- A topic authoring page where a topic author can edit the topic, sign the extrinsic and submit to blockchain.
-- A topic detail page:
-    - It shows the topic details and the answers.
-    - A user can answer the topic and sign with his/her polkadot key.
-    - A user can support this topic and sign the extrinsic to blockchain.
-    - Any user can fund an answer or the topic.
-    - It will show all the fund records, including from, to and the funded tokens.
-    - The author and supporter can resolve the topic on this page.
-- A user page which is identified by address:
-    - A list of the created/supported topics.
-    - A list answers.
-    - Statistics of funds granted and received.
-    - Maybe some interfaces for operations, like links to create a topic.
-- In site notifications(centralized)
-    - A topic author/supporter will receive a notification when there are new answers.
-    - An answer author will receive a notification when his/her answer gets funded.
+* A topic authoring page where a topic author can edit the topic, sign the extrinsic and submit to blockchain.
+* A topic detail page:
+  * It shows the topic details and the answers.
+  * A user can answer the topic and sign with his/her polkadot key.
+  * A user can support this topic and sign the extrinsic to blockchain.
+  * Any user can fund an answer or the topic.
+  * It will show all the fund records, including from, to and the funded tokens.
+  * The author and supporter can resolve the topic on this page.
+* A user page which is identified by address:
+  * A list of the created/supported topics.
+  * A list answers.
+  * Statistics of funds granted and received.
+  * Maybe some interfaces for operations, like links to create a topic.
+* In site notifications(centralized)
+  * A topic author/supporter will receive a notification when there are new answers.
+  * An answer author will receive a notification when his/her answer gets funded.
   
 Please check part of the UIs [here](https://www.figma.com/proto/vqpglMGW8psHKB00eIVDUV/OpenSquare?page-id=3655%3A16149&node-id=3659%3A30988&viewport=322%2C48%2C0.08&scaling=min-zoom).
 
 ### Ecosystem Fit
 
-- It’s `system#remark` based, lightweight, and gas free for topic answers.
-- Target audience are all the community members who have questions to ask or topics to discuss, and who have knowledge
+* It’s `system#remark` based, lightweight, and gas free for topic answers.
+* Target audience are all the community members who have questions to ask or topics to discuss, and who have knowledge
   to share.
-- It provides a way with bounty for Pokadot ecosystem community members to share knowledge.
-- I know [mem.co](https://mem.co/) who has similar planned products, but currently seems no products released. We
+* It provides a way with bounty for Pokadot ecosystem community members to share knowledge.
+* I know [mem.co](https://mem.co/) who has similar planned products, but currently seems no products released. We
   OpenSquare developed a centralized paid QA platform in Chinese, but we think decentralization should be the right
   direction.
 
@@ -84,11 +83,11 @@ Please check part of the UIs [here](https://www.figma.com/proto/vqpglMGW8psHKB00
 
 ### Team members
 
-- Yongfeng Li(@wliyongfeng), Full stack developer
-- Chaojun Huang(@hyifeng), Full stack developer
-- Wentao Chen(@qiyisi), Full stack developer
-- Yizhou Xin(@YoshiyukiSakura), Full stack developer
-- Alcazar(@Popoulosss), Designer
+* Yongfeng Li(@wliyongfeng), Full stack developer
+* Chaojun Huang(@hyifeng), Full stack developer
+* Wentao Chen(@qiyisi), Full stack developer
+* Yizhou Xin(@YoshiyukiSakura), Full stack developer
+* Alcazar(@Popoulosss), Designer
 
 You can see our team [here](https://www.opensquare.network/team/).
 
@@ -96,7 +95,7 @@ You can see our team [here](https://www.opensquare.network/team/).
 
 * **Contact Name:** Yongfeng Li
 * **Contact Email:** wliyongfeng@gmail.com
-* **Website:** https://www.opensquare.network
+* **Website:** <https://www.opensquare.network>
 
 ### Legal Structure
 
@@ -108,41 +107,41 @@ You can see our team [here](https://www.opensquare.network/team/).
 We have more than 3 years experience with Substrate/Polkadot related tech stack. Our recently developing products
 include:
 
-- [doTreasury](https://www.dotreasury.com/). We can now see it as a treasury business explorer but it aims to improve
+* [doTreasury](https://www.dotreasury.com/). We can now see it as a treasury business explorer but it aims to improve
   the treasury mechanism with retrospection.
-- [Statescan](https://www.statescan.io). An explorer for asset para chains, and we have implemented
+* [Statescan](https://www.statescan.io). An explorer for asset para chains, and we have implemented
   Statemine/Statemint/Westmint.
-- OpenSquare bounties business built on substrate. We got a grant for this, and please check
+* OpenSquare bounties business built on substrate. We got a grant for this, and please check
   details [here](https://github.com/w3f/General-Grants-Program/blob/master/grants/speculative/open_square_network.md).
-- OpenSquare off chain [voting](https://voting.opensquare.io/) platform. We got a grant to develop it, please check
+* OpenSquare off chain [voting](https://voting.opensquare.io/) platform. We got a grant to develop it, please check
   details [here](https://github.com/w3f/Grants-Program/blob/master/applications/OpenSquare-offchain-voting.md). We have
   supported Statemine assets since the grant delivery and got RMRK as our first user.
 
 ### Team Code Repos
 
-https://github.com/opensquare-network/
+<https://github.com/opensquare-network/>
 
 Team members github accounts:
 
-- https://github.com/wliyongfeng
-- https://github.com/hyifeng
-- https://github.com/qiyisi
-- https://github.com/YoshiyukiSakura
-- https://github.com/Popoulosss
+* <https://github.com/wliyongfeng>
+* <https://github.com/hyifeng>
+* <https://github.com/qiyisi>
+* <https://github.com/YoshiyukiSakura>
+* <https://github.com/Popoulosss>
 
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
-- **Total Estimated Duration:** 6 weeks
-- **Full-Time Equivalent (FTE):**  5 FTE
-- **Total Costs:** 25,000 USD
+* **Total Estimated Duration:** 6 weeks
+* **Full-Time Equivalent (FTE):**  5 FTE
+* **Total Costs:** 25,000 USD
 
 Milestone 1 — Implement the paid QA businesses
 
-- **Total Estimated Duration:** 6 weeks
-- **Full-Time Equivalent (FTE):**  5 FTE
-- **Total Costs:** 25,000 USD
+* **Total Estimated Duration:** 6 weeks
+* **Full-Time Equivalent (FTE):**  5 FTE
+* **Total Costs:** 25,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -170,10 +169,10 @@ Milestone 1 — Implement the paid QA businesses
 
 ## Future Plans
 
-- Support more chains and add more token identifiers, so users can collaborate with more tokens.
-- Add more topic field definitions, so users can collaborate with more ways, for example, a field to support a poll
+* Support more chains and add more token identifiers, so users can collaborate with more tokens.
+* Add more topic field definitions, so users can collaborate with more ways, for example, a field to support a poll
   topic, a field to help users make categories.
-- Credit/reputation building based on the behaviors, but it will be a long pan which need considerations together with
+* Credit/reputation building based on the behaviors, but it will be a long pan which need considerations together with
   other collaborations in OpenSquare developed platforms.
 
 ## Additional Information :heavy_plus_sign:
