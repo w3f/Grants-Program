@@ -570,7 +570,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [727.ventures](https://github.com/727-Ventures) | Sol2Ink Phase 2 | [GitHub](https://github.com/727-Ventures) | ☐ | ☐ | ☐ |
 | [walt.id](https://walt.id/) | NFT infrastructure | [GitHub](https://github.com/walt-id) | ☐ | ☐ | ☐ |
 | [SydTek](https://sydtek.ai/) | Digital Inheritance in Web3: A Case Study of Soulbound Tokens and Social Recovery Pallets | [GitHub](https://github.com/jgophd/Developed-Materials-and-Raw-Data) | ☐ | ☒ | ☐ |
-| [Anagolay](https://anagolay.network/) | Multi-token community contributions for verified creators | [GitHub](https://github.com/anagolay) | ☐ | ☐ | ☐ |
+| [Anagolay](https://anagolay.network/) | Multi-token community contributions for verified creators | [GitHub](https://github.com/anagolay) | ☐ | ☒ | ☐ |
 | [Ink Contracts Wizard Team](https://github.com/amankumar1008/contracts-wizard) | Ink Smart Contract Wizard | [GitHub](https://github.com/amankumar1008/contracts-wizard) | ☐ | ☐ | ☐ |
 | [TDSoftware](https://www.tdsoftware.de/) | Substrate IPFS Utilities | [GitHub](https://github.com/TDSoftware) | ☐ | ☐ | ☐ |
 | [Ink Boxes Team](https://github.com/nerdsince98) | Ink Boxes | [GitHub](https://gitlab.com/nerdsince98/learning-ink/) | ☐ | ☐ | ☐ |
