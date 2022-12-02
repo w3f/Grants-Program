@@ -12,31 +12,22 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 ### Overview
 
-Please provide the following:
+PostThread is a web3 social media app that rewards it users instead of extracting from them. To do this we use blockchain economics that encourage users to post quality content and curate the platform.
 
-- PostThread is a web3 social media app that rewards it users instead of extracting from them. To do this we use blockchain economics that encourage users to post quality content and curate the platform.
-- A brief description of your project.
-- PostThread makes use of the Project Liberty parachain, Frequency. 
-- An indication of why your team is interested in creating this project.
+For a full description of our project and our inspiration, please checkout our latest hackathon project page [here](https://devpost.com/software/postthread-gi7brt). In summary, we started this project because, just as many others are seeing, social media is in a crisis and we believe blockchain is the solution. Polkadot stood out to us due to it innovative parachain design and the fact a decentralized social network protocol (DSNP) was being built by the developers at [Project Liberty](https://www.projectliberty.io/). They have developed the [Frequency parachain](https://www.frequency.xyz/) and we plan to be the first social media dapp on it.  
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
-
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
-
+## The Frontpage of the Blockchain
 ![frontpage](https://drive.google.com/uc?export=view&id=1cJ1ReF_t0EwGZq8ZA40tBfVg9m1cXr_F)
+
+That is a screen shot of our frontpage, but you can see the real thing at [PostThread.app](https://postthread.app/), so please go check it out.
+
+Our website works just like any other with all data and interactions being stored in a database. Using GraphQL, the database is access by a nightly script that mints user assets to the blockchain. The frontend and backend communicate through this database. For example, the backend script calculates how much each user receives daily form their airdrop and updates the value in the database accordingly. When a user claims it a boolean flag is changed which alerts the backend. We had previously used a REST API to handle all this logic, but found it unnecessarily complex and harder to communicate through. 
+
+Interaction with the blockchain are handled using the Substrate Python package. The frequency parachain we are building on was developed using RUST.
+
+The frontend was built using NextJS and Tailwinds for styling.
 
 ### Ecosystem Fit
 
@@ -70,7 +61,7 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 My partner and I have been developing web3 apps together since May 2022. We began with PostThread, but have also built a great NFT-to-NFT trading market, [BazaarMarket](https://bazaarmarket.xyz/) with a Pokemon inspired AI generated trading card NFT collection, [Diffemon](https://bazaarmarket.xyz/collection/diffemon) to go along with it. We also created [Unstable Labs](https://www.unstablelabs.app/), an AI text-to-image generator on NEAR protocol. As you can see we have a big imagination and a strong desire to build in web3.
 
-Before our evolution into web3, Ian was a data scientist for 6 years and Paolo was a DevOps enginee. Ian's strong Python skills helped to deploy all of our projects smart contract functionality by taking advantage of the web3 and substrate python libraries. Paolo refined his UI/UX skilled throught our hackathons and has become an expert in NextJS. You can view his webpage [here](https://pulesdev.vercel.app/).
+Before our evolution into web3, Ian was a data scientist for 6 years and Paolo was a DevOps engineer. Ian's strong Python skills helped to deploy all of our projects smart contract functionality by taking advantage of the web3 and substrate python libraries. Paolo refined his UI/UX skilled through our hackathons and has become an expert in NextJS. You can view his webpage [here](https://pulesdev.vercel.app/).
 
 ### Team Code Repos
 
@@ -79,7 +70,6 @@ Before our evolution into web3, Ian was a data scientist for 6 years and Paolo w
 - https://github.com/PostThread/PostThread-Polkadot
 - https://github.com/PostThread/PostThread-EthGlobal
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
 - https://github.com/iamianM/
 - https://github.com/pgrignaffini/
@@ -91,25 +81,19 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
-
 We began our project in May 2022 during the 2 week EthGlobal HackMoney hackathon. There my partner and I met and began brainstorming and created a rough concept of PostThread. We won "Best Use" of Worldcoin by rewarding users for verifying their humanity with their WorldCoin ID. We have stayed in contact with  them ever since and plan to help them bring WorldCoin to Polkadot and then implement it in our dapp. You can view that project page [here](https://ethglobal.com/showcase/postthread-o665n)
 
 Next, we joined the Polkadot Hackathon: North America Edition and started our idea from scratch. We found Project Liberty and decided to build on their protocol. Since they were still in development at that time, we deployed with a locally hosted version of their parachain. PostThread won first place in our category as well as "The Best use of Crust". You can view that project page [here](https://devpost.com/software/postthread-uhgac6)
 
 Lastly, we wanted to continue our work on PostThread, so we implement the Frequency parachain as a smart contract and retrofitted the backend to call it using the web3 library. This implementation had the biggest improvement in the UI as well. You can view that project page [here](https://devpost.com/software/postthread-gi7brt)
 
+Since then, Robin Ejsmond-Frey has reached out to us to help us apply for this grant. We are thankful for his help and excited for the next steps for PostThread.
+
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
-- **Total Estimated Duration:** 3
+- **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  2
 - **Total Costs:** 30,000 USD
 
@@ -154,18 +138,8 @@ Lastly, we wanted to continue our work on PostThread, so we implement the Freque
 
 ## Future Plans
 
-Please include here
-
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
-
+Our long term plans are to grow to be the largest decentralized social media platform and onboard the most users to crypto any dapp has ever done. We think we are primed for that due to the current social media climate and our first-of-its-kind technology that abstracts the crypto aspects away from the user. 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+**How did you hear about the Grants Program?** Polkadot Hackathon
