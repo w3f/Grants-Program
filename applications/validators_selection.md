@@ -107,7 +107,7 @@ Other related projects:
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| 0e. | Article | We will publish an **article**/workshop that explains how this algorithm works and how to use the software |
 | 1. | Next pair | Develop an algorithm for efficient calculations of the next pair to be compared to maximize the model’s information gain. |  
 | 2.  | Ranking calculation  | Develop an algorithm calculating a score for each validator | 
 | 3.  | New data  | Develop a function for the data preprocessing | 
@@ -124,6 +124,11 @@ Other related projects:
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
+| 0a. | License | Apache 2.0 |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an **article**/workshop that explains how this algorithm works and how to use the software |
 | 1. | Deployment | Deploy the code on a test server provided by the Grants Team or by myself. |
 | 2. | Test live environment | Test the server efficiency by checking an average response time for each endpoint and provide a report | 
 | 3. | Polishing | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like the way data are provided, configuration, etc. |
