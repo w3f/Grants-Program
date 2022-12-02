@@ -3,13 +3,11 @@
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-
 - **Team Name:** Legal name of your team (e.g. Duo)
 - **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
 > :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
-
 ## Project Overview :page_facing_up:
 
 If this application is in response to an RFP, please indicate this on the first line of this section.
@@ -27,8 +25,9 @@ Please provide the following:
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant) for each kind of project:
 
+Software development projects:
 - Mockups/designs of any UI components
 - Data models / API specifications of the core functionality
 - An overview of the technology stack to be used
@@ -36,6 +35,17 @@ We expect the teams to already have a solid idea about your project's expected f
 - PoC/MVP or other relevant prior work or research on the topic
 - What your project is _not_ or will _not_ provide or implement
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+
+Research projects:
+- The problem(s) that you want to investigate, and why these are important. 
+- Research questions/hypothesis.
+- The methodology that will be applied. 
+- The data collection and analysis procedures.
+- The expected results and how they would be double-checked by the grants team (reproducibility of the data analysis).
+- Relevant related work.
+- Intended venue for results publication and the timeline for publication. 
+- What your project is _not_ or will _not_ provide or implement
+  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
 
 Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
 - The (future) tokenomics of your project 
@@ -91,6 +101,10 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - https://www.linkedin.com/<person_1>
 - https://www.linkedin.com/<person_2>
+
+### Google Scholar Profiles (only for research projects)
+- https://scholar.google.com/citations?user=<person_1>
+- https://scholar.google.com/citations?user=<person_2>
 
 ## Development Status :open_book:
 
