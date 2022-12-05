@@ -30,7 +30,7 @@ Wouldn’t it be great if you could buy a coffee with unused airline miles? Or i
   2.  How do you exchange them? 
   3.  Most consumers will not bother to search for loyalty redemption options, then go find a DEX, then a peer and then calculate what they need to swap to get the rewards they need.
 
-   **Solution** – We are building a dedicated **‘reverse’ marketplace** for blockchain-based loyalty rewards. Simplified redemption, for everyone, from every brand,       with the exchange complexity hidden in the background.
+   **Solution** – We are building a dedicated **‘reverse’ marketplace** for blockchain-based loyalty rewards. Simplified redemption, for everyone, from every brand, with the exchange complexity hidden in the background.
 
  -  **Liquidity** – Just because a brand wants to release reward tokens, doesn’t mean they can be easily exchanged in a marketplace.
  1. What is the value of these reward tokens?
@@ -48,10 +48,10 @@ We like the ecosystem for several reasons:
 - As we continue to develop our protocol, it should integrate with other related protocols and be used by other applications without being constrained to one network.
 
 
-### Project Details
+## Project Details
 
 - ![Polkadot ecosystem](https://user-images.githubusercontent.com/52800276/205578388-a180149c-19f1-4bf2-8333-4f8911a7c986.png)
-- 
+
 - Tech Stack: RUST, Solidity, TypeSript, React, Nest, PostgreSQL e.t.c 
 - Architectural Summary
 
