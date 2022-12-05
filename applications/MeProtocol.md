@@ -52,7 +52,7 @@ We like the ecosystem for several reasons:
 
 ![Polkadot ecosystem](https://user-images.githubusercontent.com/52800276/205578388-a180149c-19f1-4bf2-8333-4f8911a7c986.png)
 
-- Tech Stack: RUST, Solidity, TypeSript, React, Nest, PostgreSQL e.t.c 
+**Tech Stack:** RUST, Solidity, TypeSript, React, Nest, PostgreSQL e.t.c 
 
 ### Architectural Summary
 
