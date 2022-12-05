@@ -585,3 +585,5 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [k/factory](https://k-f.co/) | Centrifuge Go-Substrate-RPC Client V2 | [GitHub](https://github.com/centrifuge/go-substrate-rpc-client) | ☐ | ☐ | ☐ |
 | [Colorful Notion](https://github.com/colorfulnotion) | Zombienet Explorer: Multi-Chain Substrate Block Explorer | [GitHub](https://github.com/colorfulnotion/zombienet-explorer) | ☐ | ☐ | ☐ |
 | [TwinP](https://github.com/herou) | Decentralized Invoice | [GitHub](https://github.com/herou) | ☐ | ☐ | ☐ |
+| [Zondax](http://zondax.ch/) | Hybrid node research grant | [GitHub](https://github.com/ZondaX) | ☐ | ☒ | ☒ |
+
