@@ -60,8 +60,6 @@ We like the ecosystem for several reasons:
 
 Our solution has two major components: the Me App and the Me protocol. 
 
-Our solution has two major components: the Me App and the Me Protocol.
-
 The Me App contains all the necessary interfaces, services, microservices and infrastructure that allows consumers (individual users) to sync/manage/connect their loyalty rewards and interact with offers pushed to them from the various brands and businesses on our platforms that issued those rewards. These users can redeem their rewards for offers in the marketplace. The Me App also handles all the logic for managing brand accounts, allowing them to push offers to their customers and providing them with analytics on the performance of their rewards programs and offers in our ecosystem.
 
 The Me Protocol contains all the contracts, libraries and abstract contracts used to manage tokenized brand rewards, swap them and route them to appropriate wallets. It also contains the various utilities for managing pools such as the brand fee pool, brand treasury pool, and brand bounty pool.
@@ -111,6 +109,7 @@ A similar project on the DEFI side is Stellaswap (https://stellaswap.com/) and o
    - John Chimaobi
    - Samuel Anthony
    - Boluwatife Oguntoyinbo
+   - Nwele Uchenna
 
 ### Contact
 
@@ -145,6 +144,7 @@ We have founded and co-founded several tech companies (e.g. Kivu Technologies, C
 GitHub accounts of team members
 
 - https://github.com/AgentPoles
+- https://github.com/developeruche
 - https://github.com/codemobii
 - https://github.com/piosystems
 - https://github.com/Teepheh-Git
