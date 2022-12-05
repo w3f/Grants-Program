@@ -50,10 +50,11 @@ We like the ecosystem for several reasons:
 
 ## Project Details
 
-- ![Polkadot ecosystem](https://user-images.githubusercontent.com/52800276/205578388-a180149c-19f1-4bf2-8333-4f8911a7c986.png)
+![Polkadot ecosystem](https://user-images.githubusercontent.com/52800276/205578388-a180149c-19f1-4bf2-8333-4f8911a7c986.png)
 
 - Tech Stack: RUST, Solidity, TypeSript, React, Nest, PostgreSQL e.t.c 
-- Architectural Summary
+
+### Architectural Summary
 
 <img width="569" alt="newmearchitecture" src="https://user-images.githubusercontent.com/52800276/184610535-0473eae5-c295-4bdd-8259-369b36a796d6.PNG">
 
