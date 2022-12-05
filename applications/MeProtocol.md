@@ -11,7 +11,7 @@
 ### Overview
 
 **What is the Me Protocol?**
- It is a blockchain protocol that will power the first decentralized multi-vendor loyalty ecosystem for brands competing in the Web3 space.
+ The Me Protocol is a purpose-built exchange infrastructure for blockchain-based rewards. It provides the fundamental technology for the creation of a frictionless, limitless, and decentralised rewards ecosystem for all companies, large or small, to participate.
 
 **Background:**
 
@@ -50,7 +50,8 @@ We like the ecosystem for several reasons:
 
 ### Project Details
 
-- Figma Flow: Process flow: https://www.figma.com/file/6eTKTZZffsceFQPEXpyzjl/My-AI-Partner-Onboarding?node-id=0%3A1
+- ![Polkadot ecosystem](https://user-images.githubusercontent.com/52800276/205578388-a180149c-19f1-4bf2-8333-4f8911a7c986.png)
+- 
 - Tech Stack: RUST, Solidity, TypeSript, React, Nest, PostgreSQL e.t.c 
 - Architectural Summary
 
