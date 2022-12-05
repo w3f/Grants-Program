@@ -78,3 +78,19 @@ The list below serves only as a guide and is not exhaustive.
 - Provide any publications/papers you will base your work on
 - Research other crypto libraries providing similar functionalities. State whether/how you plan to use their work. If they don't suit your needs, provide a detailed explanation why and what's missing
 - List any existing crypto libraries that you will use as reference implementation (e.g. in a different language)
+
+## Research
+
+### Applies to
+
+- Research projects
+
+### Requirements
+
+- Specify the problem(s) that you want to investigate, and why these are important. 
+- Declare the research questions/hypothesis.
+- State the methodology that will be applied. 
+- Explain how the data will be collected and the analysis procedures.
+- Outline the expected results and how they would be double-checked by the grants team (reproducibility of the data analysis).
+- Research for relevant related work or declare how the literature review will be conducted.
+- Research and declare the intended venue for results publication and the timeline for publication. 
