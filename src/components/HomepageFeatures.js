@@ -34,7 +34,7 @@ function Feature({Svg, title, description}) {
       <div className="text--center">
       </div>
       <div className="text--center padding-horiz--md">
-        <h3><CountUp end={title} />+</h3>
+        <h3 className="number--count"><CountUp end={title} />+</h3>
         <p>{description}</p>
       </div>
     </div>
