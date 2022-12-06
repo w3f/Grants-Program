@@ -53,18 +53,18 @@ We like the ecosystem for several reasons:
 ![Polkadot ecosystem](https://user-images.githubusercontent.com/52800276/205578388-a180149c-19f1-4bf2-8333-4f8911a7c986.png)
 
 ### Technologies: 
- 1. Ink! and RUST, 
- 2. OpenBrush
- 3. Substrate
- 4. Polkadot.js
- 5. TypeSript,
- 6. NestJs and Reactjs
- 7. PostgreSQL with Typeorm
- 8. Elastic Search and Redis Cache
- 9. Fastify Multipart,
- 10. Winston
- 11. Docker
- 12. Nestjs testing, nodemailer, jest  e.t.c 
+ 1. Ink! and RUST (smart contracts), 
+ 2. OpenBrush (smart contract library)
+ 3. Substrate (smart contract)
+ 4. Polkadot.js (back end and frontend integration with smart contract)
+ 5. TypeSript (front end and backend scripts)
+ 6. NestJs and Reactjs (backend and front end framework)
+ 7. PostgreSQL with Typeorm (database and connection)
+ 8. Elastic Search and Redis Cache (searching and indexing)
+ 9. Fastify Multipart (image management),
+ 10. Winston (logging)
+ 11. Docker (containerization)
+ 12. Nestjs testing and jest (testing) e.t.c 
 
 ### Architectural Summary
 
@@ -195,7 +195,7 @@ GitHub accounts of team members
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a **lite paper** to describe the architecture and its implementation
-| 1. | Setting up | We will set up the base environment, dependencies and scripts that would allow for the seamless development of the protocol using Ink| 
+| 1. | Setting up | We will set up the base environment, dependencies and scripts that would allow for the seamless development of the protocol using Ink and build out the main contract with the necessary upgrade services| 
 | 2. |Build out the Pool and Pool Initiator Contracts | We will implement the  Pool contract which manages all the logic pertaining to brand liquidity (swapping, adding, removing, multistage swapping e.t.c) and also implement the Pool initiator which would create a pool everytime a new brand reward is to be supported on our protocol|  
 | 3. | Build out the rewards factory | We will implement the rewards factory, which allows brand with or without web3 based rewards to move some or all  of their loyalty points to the blockchain using the PSP22 standard (and also PSP34/PSP1155 in the future) |  
 | 4. | Build out the Brand Bounty and Treasury Contracts| We will implement brand bounty and treasury contracts which will help in holding and managing the release of bounties and treasuries for brands|  
@@ -204,7 +204,7 @@ GitHub accounts of team members
 | 8. | Testing| We will test all implementation and also deploy to Rococo for live testing | 
 
 
-### Milestone 2 — Managing Offers and Redemption
+### Milestone 2 — Adding the Protocol Peheripherals and Kickstarting the Frontend and Backend services
 
 - **Estimated Duration:** 1 month
 - **FTE:**  800hrs (5 persons)
@@ -212,15 +212,26 @@ GitHub accounts of team members
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. | Rewards Syncing |Implement syncing of traditional reward points to the network | 
-| 2. |Offer Redemption|Implement offer redeemption via blockchain rewards|  
-| 3. | Indexing and searching engine | Implement search engine to search global brand offers|  
-| 4. | Mutlti-token Swap|Implement swapping of multiple reward tokens into one |  
-| 5. | Rewards Syncing |Implement syncing of traditional reward points to the network | 
-| 6. | Web App | Implement market place for global brand offers redeemable via traditional and blockchain rewards|  
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user, brand or third partu application can interact with our protocol for the various specified use cases |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a **lite paper** to describe the architecture and its implementation
+| 1. | Building out the Governor Facet | We will implement the governor facet which will help to manage access control across the protocol and also help to manage governance rules for future proposals and updates
+| 
+| 2. |Build out the contract Routers|We will implement the contract routers which abstracts the core protocol services and provide functions that brands, users, protocol admins and thirdparty applications can use to safely interact with the protocol|  
+| 3. | Build out the Secretary facet and loupe facets | we will implement the  secretary and loupe modules which abstract and defines the services via which anyone can have introspection into the protocol and retrieve available open source data from it.| 
+| 4. | Setup the Backend Environment| Initialize the back end using nestjs and other necessary dependencies
+| 5. | Create the Utilities for the Backend services| Logging (Winston), Data caching (Redis Cache), Search Indexing (Elastic search), Database and connection (Postgres Typeorm), Mailing service (Nestjs nodemailer with sendgrid abi), Image upload with (Fastify multipart), And Unit testing with Nestjs testing and jest|  
+| 6. | Design, Create and implement Entity relationship | we will identify all necessary entities, and implement them on the appropriate back end modules with the suitable providers and controllers| 
+| 7. | Set Up Frontend Application | We will implement the frontend setup using Reactjs, set up all the caching and query dependencies and add the chakra design package which will be our main UI framework| 
+| 8. | Build Out Authentication and Authorization | We will implement the registeration module, using the traditional username and password, and also supporting email, twitter and facebook social providers. We will also enable 2FA for both brand and consumer side of the application|  
+| 9. | Build out Asset Screens and logic | We have already made these screen, so we will implement all the necesary screens, services and microservices that lets customers and brands manage their rewards on our application | 
 
 
-### Milestone 3  — Managing Rewards and Assets
+
+
+### Milestone 3  — Rounding Up with the APP MVP and Integrating the Protocol with the APP
 
 - **Estimated Duration:** 1 month
 - **FTE:**  800hrs (5 persons)
@@ -228,10 +239,14 @@ GitHub accounts of team members
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1. |Fee Purchase |provide endpoint to purchase network tokens via fiat |  
-| 2. | Treasury Activation | Implement brand treasury balance |  
-| 3. | Bouty Activation| Implement brand bounty Balance |  
-| 4. | Web App | Implement Asset dashbard for consumers to view their assets|  
+| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user, brand or third partu application can interact with our protocol for the various specified use cases |
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish a **lite paper** to describe the architecture and its implementation
+| 1. | Build out offers management| we will provide all the necessary services and microservices that will allow brands to create offers and push them to our application and also allow users to be able search offers, filter offers, view prices and see offers whose rewards they have |
+| 2. |Connect APP to Protocol |we will connect the application to the protocol to allow for the proposed use cases |  
+| 3. | Iterative MVP testing| we will iteratively test the entire solution to achieve suitability |  
 ...
 
 
