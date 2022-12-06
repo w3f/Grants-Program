@@ -2,6 +2,10 @@
 
 
 ## Fork testing (on GitHub)
+
+0. Setup your Google API Credentials on https://console.developers.google.com/
+    - Credentials -> Create Credentials -> Service Accounts
+
 1. Fork the Open Grants repo (or create a private repo and push to it)
 
 2. Set up your secrets under the fork/settings:
