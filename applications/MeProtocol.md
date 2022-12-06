@@ -217,8 +217,7 @@ GitHub accounts of team members
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a **lite paper** to describe the architecture and its implementation
-| 1. | Building out the Governor Facet | We will implement the governor facet which will help to manage access control across the protocol and also help to manage governance rules for future proposals and updates
-| 
+| 1. | Building out the Governor Facet | We will implement the governor facet which will help to manage access control across the protocol and also help to manage governance rules for future proposals and updates| 
 | 2. |Build out the contract Routers|We will implement the contract routers which abstracts the core protocol services and provide functions that brands, users, protocol admins and thirdparty applications can use to safely interact with the protocol|  
 | 3. | Build out the Secretary facet and loupe facets | we will implement the  secretary and loupe modules which abstract and defines the services via which anyone can have introspection into the protocol and retrieve available open source data from it.| 
 | 4. | Setup the Backend Environment| Initialize the back end using nestjs and other necessary dependencies
