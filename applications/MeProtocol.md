@@ -56,7 +56,7 @@ We like the ecosystem for several reasons:
 
 ### Architectural Summary
 
-<img width="569" alt="newmearchitecture" src="https://user-images.githubusercontent.com/52800276/184610535-0473eae5-c295-4bdd-8259-369b36a796d6.PNG">
+<img width="80%" alt="newmearchitecture" src="https://user-images.githubusercontent.com/52800276/184610535-0473eae5-c295-4bdd-8259-369b36a796d6.PNG">
 
 Our solution has two major components: the Me App and the Me protocol. 
 
@@ -178,7 +178,7 @@ GitHub accounts of team members
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a **lite paper** to describe the architecture and its implementation
-| 1. | Substrate module: X | We will implement the substrate modules for smart contracts to allow for deployment of smart contracts on the newtwork |  
+| 1. | Protocol | We will implement the substrate modules for smart contracts to allow for deployment of smart contracts on the newtwork |  
 | 2. | Substrate module: Y | We will implement the substate modules for balances to support our me tokens on the network |  
 | 3. | Smart contracts | We will write and deploy the smart contracts to manage the listing and swapping of the blockchain based rewards |  
 | 4. | Governance | We will implement the substrate module to manage governance on the network |  
