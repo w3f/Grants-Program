@@ -52,20 +52,37 @@ We like the ecosystem for several reasons:
 
 ![Polkadot ecosystem](https://user-images.githubusercontent.com/52800276/205578388-a180149c-19f1-4bf2-8333-4f8911a7c986.png)
 
-**Tech Stack:** RUST, Solidity, TypeSript, React, Nest, PostgreSQL e.t.c 
+### Technologies: 
+ 1. Ink! and RUST, 
+ 2. OpenBrush
+ 3. Substrate
+ 4. Polkadot.js
+ 5. TypeSript,
+ 6. NestJs and Reactjs
+ 7. PostgreSQL with Typeorm
+ 8. Elastic Search and Redis Cache
+ 9. Fastify Multipart,
+ 10. Winston
+ 11. Docker
+ 12. Nestjs testing, nodemailer, jest  e.t.c 
 
 ### Architectural Summary
 
-<img width="80%" alt="newmearchitecture" src="https://user-images.githubusercontent.com/52800276/184610535-0473eae5-c295-4bdd-8259-369b36a796d6.PNG">
+<img width="95%" alt="newmearchitecture" src="https://user-images.githubusercontent.com/52800276/184610535-0473eae5-c295-4bdd-8259-369b36a796d6.PNG">
 
 Our solution has two major components: the Me App and the Me protocol. 
 
-The Me App contains all the necessary interfaces, services, microservices and infrastructure that allows consumers (individual users) to sync/manage/connect their loyalty rewards and interact with offers pushed to them from the various brands and businesses on our platforms that issued those rewards. These users can redeem their rewards for offers in the marketplace. The Me App also handles all the logic for managing brand accounts, allowing them to push offers to their customers and providing them with analytics on the performance of their rewards programs and offers in our ecosystem.
+**The Me App** contains all the necessary interfaces, services, microservices and infrastructure that allows consumers (individual users) to sync/manage/connect their loyalty rewards and interact with offers pushed to them from the various brands and businesses on our platforms that issued those rewards. These users can redeem their rewards for offers in the marketplace. The Me App also handles all the logic for managing brand accounts, allowing them to push offers to their customers and providing them with analytics on the performance of their rewards programs and offers in our ecosystem.
 
-The Me Protocol contains all the contracts, libraries and abstract contracts used to manage tokenized brand rewards, swap them and route them to appropriate wallets. It also contains the various utilities for managing pools such as the brand fee pool, brand treasury pool, and brand bounty pool.
+**The Me Protocol** contains all the contracts, libraries and abstract contracts used to manage tokenized brand rewards, swap them and route them to appropriate wallets. It also contains the various utilities for managing pools such as the brand fee pool, brand treasury pool, and brand bounty pool.
 
-The brand fee pool is a pool of Me Tokens used to pay for services charged against a brand on the Me protocol. This pool would be debited when a brand directly or indirectly carries out a cost-bearing activity or subscribes to premium services. Managed and semi-managed services allow brands to top up their pools.
-The brand treasury pool holds Me Tokens that brands earn when holders of their tokens redeem them for offers from another brand, these tokens are taken from the receiving brand’s pools. The brand bounty pool holds brand tokens that will be used to reward certain bounty tasks given to the general community. The bounty tokens are obtained from the exchange charged to a user when the user swaps one brand token for another brand token, and bounty jobs are issued.
+The design of the protocol follows the EIP-2535 pattern originally proposed by nick mudge.
+
+<img width="1328" alt="Screenshot 2022-12-06 at 15 39 56" src="https://user-images.githubusercontent.com/52800276/205942619-ef732d3d-bbb9-4fde-86ff-2c26a38a725c.png">
+
+There is a main contract which houses the utility storage for the protocol and some function selectors via which it can route to other contracts called facets, containing the business logic to be executed. The routing is done via delegatecall.
+
+While other facets serve one business logic or another, the upgrader and loupe help to manage upgrades (following governance decisions) and introspection into the protocol respectively
 
 
 
@@ -165,7 +182,7 @@ GitHub accounts of team members
 - **Full-Time Equivalent (FTE):**  2400 hrs
 - **Total Costs:** 29600 USD
 
-### Milestone 1  — Implement Substrate Modules and setting up protocol framework
+### Milestone 1  — Implement the Core Parts of the Protocol
 
 - **Estimated duration:** 1 month
 - **FTE:**   800hrs (5 persons)
@@ -174,16 +191,17 @@ GitHub accounts of team members
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user, brand or third partu application can interact with our protocol for the various specified use cases |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a **lite paper** to describe the architecture and its implementation
-| 1. | Protocol | We will implement the substrate modules for smart contracts to allow for deployment of smart contracts on the newtwork |  
-| 2. | Substrate module: Y | We will implement the substate modules for balances to support our me tokens on the network |  
-| 3. | Smart contracts | We will write and deploy the smart contracts to manage the listing and swapping of the blockchain based rewards |  
-| 4. | Governance | We will implement the substrate module to manage governance on the network |  
-| 5. | Web App| Begin Web Application |  
-
+| 1. | Setting up | We will set up the base environment, dependencies and scripts that would allow for the seamless development of the protocol using Ink| 
+| 2. |Build out the Pool and Pool Initiator Contracts | We will implement the  Pool contract which manages all the logic pertaining to brand liquidity (swapping, adding, removing, multistage swapping e.t.c) and also implement the Pool initiator which would create a pool everytime a new brand reward is to be supported on our protocol|  
+| 3. | Build out the rewards factory | We will implement the rewards factory, which allows brand with or without web3 based rewards to move some or all  of their loyalty points to the blockchain using the PSP22 standard (and also PSP34/PSP1155 in the future) |  
+| 4. | Build out the Brand Bounty and Treasury Contracts| We will implement brand bounty and treasury contracts which will help in holding and managing the release of bounties and treasuries for brands|  
+| 6. | Build out the fee/payment facet| We will implement the fee facet which brands and other third party will use to pay for necessary transactions on the protocol and for services on the app.|  
+| 7. | Build Out the Oracle Facet| we will implement the oracle face which helps to manage all external an internal request relating to rewards pricing and valuation | 
+| 8. | Testing| We will test all implementation and also deploy to Rococo for live testing | 
 
 
 ### Milestone 2 — Managing Offers and Redemption
