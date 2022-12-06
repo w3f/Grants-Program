@@ -5,7 +5,7 @@ const mdxMermaid = require('mdx-mermaid');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Web3 Foundation Grants',
-  tagline: 'Funding software development and research efforts related to Polkadot, Kusama, Substrate and ink!.',
+  tagline: 'Funding Software Development and Research Efforts related to Polkadot and Kusama.',
   url: 'https://w3f.github.io',
   baseUrl: '/Grants-Program/',
   onBrokenLinks: 'warn',    // Revert back to 'throw' once initial release is up
@@ -29,7 +29,7 @@ module.exports = {
       id: 'announcement',
       content:
         'Check out <a target="_blank" rel="noopener noreferrer" href="https://web3.bamboohr.com/jobs/">our current job openings</a>!',
-      backgroundColor: '#E6007A',
+      backgroundColor: '#000',
       textColor: '#ffffff',
       isCloseable: true,
     },
@@ -58,7 +58,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'Process/index',
+          docId: 'Process/how-to-apply',
           position: 'right',
           label: 'Apply',
         },

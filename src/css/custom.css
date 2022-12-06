@@ -15,6 +15,33 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
+  font-family: SuisseIntl,sans-serif;
+
+}
+
+.hero__title {
+  font-size: 4rem;
+}
+
+.navbar__items {
+  font-size: 18px;
+}
+
+.features_src-components-HomepageFeatures-module h3{
+  font-size: 4rem;
+}
+
+.features_src-components-HomepageFeatures-module {
+  font-size: 1.5rem;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: #fff;
+  --ifm-hero-text-color: #000;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #000;
 }
 
 .docusaurus-highlight-code-line {

@@ -1,30 +1,28 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+import CountUp from 'react-countup';
+
 
 const FeatureList = [
   {
-    title: 'Open Source',
-    Svg: require('../../static/img/icon-documentation.svg').default,
+    title: 1100,
     description: (
-      <>
+      <>applications
       </>
     ),
   },
   {
-    title: 'Power the Ecosystem',
-    Svg: require('../../static/img/Polkadot_Logo_Horizontal_BlackOnWhite.svg').default,
+    title: 450,
     description: (
-      <>
+      <>projects funded
       </>
     ),
   },
   {
-    title: 'Powered by the community',
-    Svg: require('../../static/img/everyone-1.svg').default,
+    title: 50,
     description: (
-      <>
-
+      <>in countries
       </>
     ),
   },
@@ -34,10 +32,9 @@ function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <h3><CountUp end={title} />+</h3>
         <p>{description}</p>
       </div>
     </div>
