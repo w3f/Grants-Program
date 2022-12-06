@@ -588,3 +588,4 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Zondax](http://zondax.ch/) | Hybrid node research grant | [GitHub](https://github.com/ZondaX) | ☐ | ☐ | ☐ |
 | [Bright Inventions](https://brightinventions.pl/) | ZK-Snarks Tutorial | [GitHub](https://github.com/bright/) | ☐ | ☐ | ☐ |
 | [Common Orbit LLC](https://brson.github.io) | wasm-opt-for-rust maintenance | [GitHub](https://github.com/brson/wasm-opt-rs) | ☐ | ☐ | ☐ |
+| [Salaheldin Soliman](https://github.com/salaheldinsoliman) | Solang developer experience improvements | [GitHub](https://github.com/hyperledger/solang) | ☐ | ☐ | ☐ |
