@@ -102,7 +102,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - **Full-Time Equivalent (FTE):** (2 FTE)
 - **Total Costs:**  24,000 USDC
 
-### Milestone 1 — Basic functionality
+### Milestone 1 — Fetching POlkaDOT/RMRK NFTs 
 
 - **Estimated duration:** 1 month
 - **FTE:**  2
@@ -115,9 +115,9 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Wallet connect| Integrate STYLE protocol with polkadot.JS wallet integration.
-| 2. | Fetch NFTs| Fetch regular NFTs created on any parachain.
-| 3. | Fetch RMRK Nfts| Fetch multi-resource NFTs from RMRK standard.  
+| 1. | Wallet connect| Integrate STYLE protocol with polkadot.JS wallet integration (will include the UI integration only).
+| 2. | Fetch NFTs| Fetch regular NFTs created on any parachain. Here we are using Polkadot js.
+| 3. | Fetch RMRK Nfts| Fetch multi-resource NFTs from RMRK standard. By using [moonriver smart contract](https://moonbeam.network/announcements/rmrk-logic-coming-to-moonriver/) or RMRK SDK.
 | 4. | Integration to STYLE Protocol| We will deliver the implementation of the wallet connection to fetch all mentioned NFTs from both RMRK and other parachains NFTs. Polkadot users can connect their own wallet and fetch NFTs to be staked to STYLE protocol.
 
 
