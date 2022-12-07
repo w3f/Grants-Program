@@ -11,32 +11,6 @@ Use this page for an overview of all public grants and their status. Use the sid
 >
 > Besides, **there is a clear difference between an application being accepted and the successful delivery of the respective project**, and only teams that have successfully delivered a milestone are allowed to make public announcements on the matter or to use our [badge](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md). The badge can also never be used as a general endorsement for a team. Violations to this policy can be reported [here](mailto:grants@web3.foundation).
 
----
-
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [2019](#2019)
-  - [🏄‍♀️ Wave 1 - First Quarter 2019](#️-wave-1---first-quarter-2019)
-  - [🏄‍♀️ Wave 2 - Second Quarter 2019](#️-wave-2---second-quarter-2019)
-  - [🏄‍♀️ Wave 3 - Third Quarter 2019](#️-wave-3---third-quarter-2019)
-  - [🏄‍♀️ Wave 4 - Fourth Quarter 2019](#️-wave-4---fourth-quarter-2019)
-- [2020](#2020)
-  - [🏄‍♀️ Wave 5 - First Quarter 2020](#️-wave-5---first-quarter-2020)
-  - [🏄‍♀️ Wave 6 - Second Quarter 2020](#️-wave-6---second-quarter-2020)
-  - [🏄‍♀️ Wave 7 - Third Quarter 2020](#️-wave-7---third-quarter-2020)
-  - [🏄‍♀️ Wave 8 - Fourth Quarter 2020](#️-wave-8---fourth-quarter-2020)
-- [2021](#2021)
-  - [🏄‍♀️ Wave 9 - First Quarter 2021](#️-wave-9---first-quarter-2021)
-  - [🏄‍♀️ Wave 10 - Second Quarter 2021](#️-wave-10---second-quarter-2021)
-  - [🏄‍♀️ Wave 11 - Third Quarter 2021](#️-wave-11---third-quarter-2021)
-  - [🏄‍♀️ Wave 12 - Fourth Quarter 2021](#️-wave-12---fourth-quarter-2021)
-- [2022](#2022)
-  - [🏄‍♀️ Wave 13 - First Quarter 2022](#️-wave-13---first-quarter-2022)
-  - [🏄‍♀️ Wave 14 - Second Quarter 2022](#️-wave-14---second-quarter-2022)
-  - [🏄‍♀️ Wave 15 - Third Quarter 2022](#️-wave-15---third-quarter-2022)
-  - [🏄‍♀️ Wave 16 - Fourth Quarter 2022](#️-wave-16---fourth-quarter-2022)
-
 ## 2019
 
 ### 🏄‍♀️ Wave 1 - First Quarter 2019
