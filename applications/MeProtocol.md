@@ -76,6 +76,8 @@ Our solution has two major components: the Me App and the Me protocol.
 
 **The Me Protocol** contains all the contracts, libraries and abstract contracts used to manage tokenized brand rewards, swap them and route them to appropriate wallets. It also contains the various utilities for managing pools such as the brand fee pool, brand treasury pool, and brand bounty pool.
 
+For a start, the protocol would simply be a set of smart contracts containing all the necessary business and operational logic, but eventually it would evolve into a parachain to further serve the peculiarities and nuances of the loyalty reward space.
+
 The design of the protocol follows the EIP-2535 pattern originally proposed by nick mudge.
 
 <img width="1328" alt="Screenshot 2022-12-06 at 15 39 56" src="https://user-images.githubusercontent.com/52800276/205942619-ef732d3d-bbb9-4fde-86ff-2c26a38a725c.png">
@@ -191,16 +193,16 @@ GitHub accounts of team members
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user, brand or third partu application can interact with our protocol for the various specified use cases |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user, brand or third party application can interact with our protocol for the various specified use cases |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a **lite paper** to describe the architecture and its implementation
 | 1. | Setting up | We will set up the base environment, dependencies and scripts that would allow for the seamless development of the protocol using Ink and build out the main contract with the necessary upgrade services| 
-| 2. |Build out the Pool and Pool Initiator Contracts | We will implement the  Pool contract which manages all the logic pertaining to brand liquidity (swapping, adding, removing, multistage swapping e.t.c) and also implement the Pool initiator which would create a pool everytime a new brand reward is to be supported on our protocol|  
-| 3. | Build out the rewards factory | We will implement the rewards factory, which allows brand with or without web3 based rewards to move some or all  of their loyalty points to the blockchain using the PSP22 standard (and also PSP34/PSP1155 in the future) |  
+| 2. |Build out the Pool and Pool Initiator Contracts | We will implement the  Pool contract which manages all the logic relating to brand liquidity (swapping, adding, removing, multistage swapping e.t.c) and also implement the Pool initiator which would create a pool everytime a new brand reward is to be supported on our protocol|  
+| 3. | Build out the rewards factory | We will implement the rewards factory, which allows brands with or without Web3 based rewards to move some or all  of their loyalty points to the blockchain using the PSP22 standard (and also PSP34/PSP1155 in the future) |  
 | 4. | Build out the Brand Bounty and Treasury Contracts| We will implement brand bounty and treasury contracts which will help in holding and managing the release of bounties and treasuries for brands|  
-| 6. | Build out the fee/payment facet| We will implement the fee facet which brands and other third party will use to pay for necessary transactions on the protocol and for services on the app.|  
-| 7. | Build Out the Oracle Facet| we will implement the oracle face which helps to manage all external an internal request relating to rewards pricing and valuation | 
+| 6. | Build out the fee/payment facet| We will implement the fee facet which brands and other third party will use to pay for necessary transactions on the protocol and services on the app.|  
+| 7. | Build Out the Oracle Facet| we will implement the oracle face which helps to manage all external and internal requests relating to rewards pricing and valuation | 
 | 8. | Testing| We will test all implementation and also deploy to Rococo for live testing | 
 
 
@@ -213,19 +215,19 @@ GitHub accounts of team members
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user, brand or third partu application can interact with our protocol for the various specified use cases |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user, brand or third party application can interact with our protocol for the various specified use cases |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a **lite paper** to describe the architecture and its implementation
 | 1. | Building out the Governor Facet | We will implement the governor facet which will help to manage access control across the protocol and also help to manage governance rules for future proposals and updates| 
-| 2. |Build out the contract Routers|We will implement the contract routers which abstracts the core protocol services and provide functions that brands, users, protocol admins and thirdparty applications can use to safely interact with the protocol|  
-| 3. | Build out the Secretary facet and loupe facets | we will implement the  secretary and loupe modules which abstract and defines the services via which anyone can have introspection into the protocol and retrieve available open source data from it.| 
+| 2. |Build out the contract Routers|We will implement the contract routers which abstracts the core protocol services and provide functions that brands, users, protocol admins and third-party applications can use to safely interact with the protocol|  
+| 3. | Build out the Secretary facet and loupe facets | we will implement the  secretary and loupe modules which abstract and defines the services via which anyone can have introspection into the protocol and retrieve available open-source data from it.| 
 | 4. | Setup the Backend Environment| Initialize the back end using nestjs and other necessary dependencies
 | 5. | Create the Utilities for the Backend services| Logging (Winston), Data caching (Redis Cache), Search Indexing (Elastic search), Database and connection (Postgres Typeorm), Mailing service (Nestjs nodemailer with sendgrid abi), Image upload with (Fastify multipart), And Unit testing with Nestjs testing and jest|  
-| 6. | Design, Create and implement Entity relationship | we will identify all necessary entities, and implement them on the appropriate back end modules with the suitable providers and controllers| 
+| 6. | Design, Create and implement Entity relationship | we will identify all necessary entities, and implement them on the appropriate back-end modules with the suitable providers and controllers| 
 | 7. | Set Up Frontend Application | We will implement the frontend setup using Reactjs, set up all the caching and query dependencies and add the chakra design package which will be our main UI framework| 
-| 8. | Build Out Authentication and Authorization | We will implement the registeration module, using the traditional username and password, and also supporting email, twitter and facebook social providers. We will also enable 2FA for both brand and consumer side of the application|  
-| 9. | Build out Asset Screens and logic | We have already made these screen, so we will implement all the necesary screens, services and microservices that lets customers and brands manage their rewards on our application | 
+| 8. | Build Out Authentication and Authorization | We will implement the registration module, using the traditional username and password, and also supporting Email, Twitter and Facebook social providers. We will also enable 2FA for both brand and consumer side of the application|  
+| 9. | Build out Asset Screens and logic | We have already made these screen, so we will implement all the necessary screens, services and microservices that lets customers and brands manage their rewards on our application | 
 
 
 
@@ -239,11 +241,11 @@ GitHub accounts of team members
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user, brand or third partu application can interact with our protocol for the various specified use cases |
+| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user, brand or third party application can interact with our protocol for the various specified use cases |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a **lite paper** to describe the architecture and its implementation
-| 1. | Build out offers management| we will provide all the necessary services and microservices that will allow brands to create offers and push them to our application and also allow users to be able search offers, filter offers, view prices and see offers whose rewards they have |
+| 1. | Build out offers management| we will provide all the necessary services and microservices that will allow brands to create offers and push them to our application and also allow users to search offers, filter offers, view prices and see offers whose rewards they have |
 | 2. |Connect APP to Protocol |we will connect the application to the protocol to allow for the proposed use cases |  
 | 3. | Iterative MVP testing| we will iteratively test the entire solution to achieve suitability |  
 ...
@@ -258,9 +260,9 @@ We will also be establishing a DAO as we move forward that will provide addition
 
 - We also plan to offer a significant suite of perks, bounties, rewards etc. to contributors of the project to encourage wider participation during the formative period as well as into the longer term.
 
-- Our own native token, the Me Token, will be used to reward community participation from developers and partners. Ecosystem development is central to our near- and long-term plans and we have already started building one.
+- Our native token, the Me Token, will be used to reward community participation from developers and partners. Ecosystem development is central to our near- and long-term plans and we have already started building one.
 
-- In the end, the Me Protocol should be in integral component of the emerging ‘brand economy’ as a key piece of infrastructure for meta- and non-metaverse rewards.
+- In the end, the Me Protocol should be an integral component of the emerging ‘brand economy’ as a key piece of infrastructure for meta- and non-metaverse rewards.
 
 
 ## Additional Information :heavy_plus_sign:
