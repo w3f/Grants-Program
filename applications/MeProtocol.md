@@ -130,7 +130,7 @@ A similar project on the DEFI side is Stellaswap (https://stellaswap.com/) and o
    - Boluwatife Oguntoyinbo
    - Nwele Uchenna
   
- We will be hiring a Rust/Ink! developer
+ We will be hiring an additional Rust/Ink! developer
 
 ### Contact
 
