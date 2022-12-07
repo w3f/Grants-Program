@@ -28,7 +28,7 @@ Colorful Notion would like to seek Web3F Level 2 funding to develop Zombienet ex
 
 See [Zombienet Explorer README](https://github.com/colorfulnotion/zombienet-explorer) for details. Here's a summary of how it works:  
 
-* The deployment of Zombienet is based off a single TOML file (e.g. [Shibuya](), [Moonbase]()) and binaries for the chains, resulting in "/tmp/zombie-eb7506e58308cc12e5c2906ffd894759_-1437039-m0Kjx84Yxy8y/zombie.json"
+* The deployment of Zombienet is based off a single TOML file (e.g. Shibuya, Moonbase) and binaries for the chains, resulting in "/tmp/zombie-eb7506e58308cc12e5c2906ffd894759_-1437039-m0Kjx84Yxy8y/zombie.json"
 ![Zombienet](https://cdn.polkaholic.io/screenshots/zn-setup.png)
 
 * The Zombienet explorer uses the same TOML input and a "zombie.json" config generated, and is initiated with a "docker-compose up" operation (launches Mysql + Tempo Docker containers) followed by

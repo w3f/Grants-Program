@@ -54,6 +54,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [sub-consensus.md](./Open/sub-consensus.md) | 🟢 | 23.11.2021 |
 | [uncollateralized-stablecoin-research.md](./Under%20Development/uncollateralized-stablecoin-research.md) | 🟡 | 27.05.22 |
 | [validator-setup-maintenance.md](./Open/validator-setup-maintenance.md) | 🟢 | 23.11.2021 |
+| [validator-selection-algorithm.md](./Under%20Development/validator-selection-algorithm.md) | 🟡 | 07.12.2022 |
 | [xcm-tool.md](./Open/xcm-tool.md) | 🟢 | 20.07.2021 |
 
 ## :mailbox_with_mail: Suggest an RFP

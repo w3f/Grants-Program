@@ -237,7 +237,7 @@ See below for a summary of the software licencing for deliverables on the roadma
 
 ### Milestone 1 - Single Sign-On for Apps in Polkadot Ecosystem
 
-- **Estimated Duration:** 2 months
+- **Estimated Duration:** 2 months [Expected delivery June 2023]
 - **FTE:**  1.7 FTE
 - **Costs:** 50,000 USD
 

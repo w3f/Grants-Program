@@ -283,7 +283,7 @@ This milestone delivers two distinct deliverables.
 
 ### Milestone 2 - Proxy/Gateway Nodes
 
-- **Estimated Duration:** 1.5 months
+- **Estimated Duration:** 5.5 months
 - **FTE:**  2.5
 - **Costs:** 22,000 USD
 
@@ -309,7 +309,7 @@ This milestone delivers two distinct deliverables.
 
 ### Milestone 3 - Storage System
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 2 month
 - **FTE:**  2.5
 - **Costs:** 18,000 USD
 

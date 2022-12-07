@@ -11,32 +11,6 @@ Use this page for an overview of all public grants and their status. Use the sid
 >
 > Besides, **there is a clear difference between an application being accepted and the successful delivery of the respective project**, and only teams that have successfully delivered a milestone are allowed to make public announcements on the matter or to use our [badge](https://github.com/w3f/General-Grants-Program/blob/master/grants/grant-badge-guidelines.md). The badge can also never be used as a general endorsement for a team. Violations to this policy can be reported [here](mailto:grants@web3.foundation).
 
----
-
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [2019](#2019)
-  - [🏄‍♀️ Wave 1 - First Quarter 2019](#️-wave-1---first-quarter-2019)
-  - [🏄‍♀️ Wave 2 - Second Quarter 2019](#️-wave-2---second-quarter-2019)
-  - [🏄‍♀️ Wave 3 - Third Quarter 2019](#️-wave-3---third-quarter-2019)
-  - [🏄‍♀️ Wave 4 - Fourth Quarter 2019](#️-wave-4---fourth-quarter-2019)
-- [2020](#2020)
-  - [🏄‍♀️ Wave 5 - First Quarter 2020](#️-wave-5---first-quarter-2020)
-  - [🏄‍♀️ Wave 6 - Second Quarter 2020](#️-wave-6---second-quarter-2020)
-  - [🏄‍♀️ Wave 7 - Third Quarter 2020](#️-wave-7---third-quarter-2020)
-  - [🏄‍♀️ Wave 8 - Fourth Quarter 2020](#️-wave-8---fourth-quarter-2020)
-- [2021](#2021)
-  - [🏄‍♀️ Wave 9 - First Quarter 2021](#️-wave-9---first-quarter-2021)
-  - [🏄‍♀️ Wave 10 - Second Quarter 2021](#️-wave-10---second-quarter-2021)
-  - [🏄‍♀️ Wave 11 - Third Quarter 2021](#️-wave-11---third-quarter-2021)
-  - [🏄‍♀️ Wave 12 - Fourth Quarter 2021](#️-wave-12---fourth-quarter-2021)
-- [2022](#2022)
-  - [🏄‍♀️ Wave 13 - First Quarter 2022](#️-wave-13---first-quarter-2022)
-  - [🏄‍♀️ Wave 14 - Second Quarter 2022](#️-wave-14---second-quarter-2022)
-  - [🏄‍♀️ Wave 15 - Third Quarter 2022](#️-wave-15---third-quarter-2022)
-  - [🏄‍♀️ Wave 16 - Fourth Quarter 2022](#️-wave-16---fourth-quarter-2022)
-
 ## 2019
 
 ### 🏄‍♀️ Wave 1 - First Quarter 2019
@@ -506,7 +480,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Tribal Protocol Labs](https://www.tribal.fyi/) | Tribal Protocol Smart Contract Development | [GitHub](https://github.com/tribal-protocol) | ☐ | ☒ | ☐ |
 | [Yahuang Wu](https://github.com/wuyahuang) | Dual-Key Stealth Address Protocol | [GitHub](https://github.com/wuyahuang) | ☐ | ☒ | ☒ |
 | [UNIVERSALDOT FOUNDATION](https://universaldot.foundation) | Universaldot.me Phase 2 | [GitHub](https://github.com/UniversalDot) | ☒ | ☐ | ☐ |
-| [Societal Labs Ltd.](https://www.sctl.xyz/) | Societal - MVP - Phase 1 | [GitHub](https://github.com/sctllabs) | ☐ | ☐ | ☐ |
+| [Societal Labs Ltd.](https://www.sctl.xyz/) | Societal - MVP - Phase 1 | [GitHub](https://github.com/sctllabs) | ☐ | ☒ | ☐ |
 | [Faceless Protocol](https://github.com/HeisenbergLin22) | Faceless Protocol | [GitHub](https://github.com/HeisenbergLin22) | ☐ | ☒ | ☐ |
 | [SuperColony](https://github.com/Supercolony-net) | Typechain | [GitHub](https://github.com/Supercolony-net/typechain-polkadot) | ☐ | ☒ | ☒ |
 | [Codelight](https://massbit.io/) | Massbit Route | [GitHub](https://github.com/massbitprotocol/massbitroute) | ☐ | ☒ | ☒ |
@@ -517,7 +491,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 
 | Team | Project | Link | Terminated | First Delivery | Completed
 | :--- | :------ | :--- | :--------: | :------------: | :-------: |
-| [QRUCIAL OÜ](https://qrucial.io/) | QRUCIAL DAO | [GitHub](https://github.com/Qrucial/QRUCIAL-DAO) | ☐ | ☐ | ☐ |
+| [QRUCIAL OÜ](https://qrucial.io/) | QRUCIAL DAO | [GitHub](https://github.com/Qrucial/QRUCIAL-DAO) | ☐ | ☒ | ☐ |
 | [Polkadot js plus](http://polkadotjs.plus/) | Polkadot js plus / Social Recovery Wallet | [GitHub](https://github.com/Nick-1979/polkadot-Js-Plus-extension/wiki) | ☐ | ☒ | ☐ |
 | [Lee](https://github.com/rust-0x0) | Hex Space Social Graph | [GitHub](https://github.com/rust-0x0) | ☐ | ☒ | ☐ |
 | [Liberland LLC](https://liberland.org/en/) | Liberland Pallets | [GitHub](https://github.com/liberland/liberland_substrate) | ☐ | ☐ | ☐ |
@@ -526,7 +500,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Colorful Notion](https://polkaholic.io/#chains) | Polkaholic.io's Multi-Chain Substrate Block Explorer | [GitHub](https://github.com/colorfulnotion/polkaholic/) | ☐ | ☐ | ☐ |
 | [Common Orbit LLC](https://brson.github.io) | `wasm-opt` for Rust | [GitHub](https://github.com/brson/wasm-opt-rs) | ☐ | ☒ | ☒ |
 | [Blockcoders](https://blockcoders.io/) | Ink Explorer | [GitHub](https://github.com/blockcoders) | ☐ | ☒ | ☒ |
-| [Equilibrium](https://equilibrium.co/) | Polkadot Light Client in C++ | [GitHub](https://github.com/eqlabs) | ☐ | ☐ | ☐ |
+| [Equilibrium](https://equilibrium.co/) | Polkadot Light Client in C++ | [GitHub](https://github.com/eqlabs) | ☐ | ☒ | ☒ |
 | [Open rollup](https://github.com/openrollup-zk) | Open rollup - MVP - Phase 1 | [GitHub](https://github.com/openrollup-zk) | ☐ | ☐ | ☐ |
 | [Veridise](https://veridise.com/) | Vanguard | [GitHub](https://github.com/Veridise/Vanguard) | ☐ | ☐ | ☐ |
 | [Karolis Ramanauskas](https://krl.is/) | Generic Sybil-Resistant Faucet | [GitHub](https://github.com/karooolis) | ☐ | ☒ | ☒ |
@@ -546,9 +520,9 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Asylum](https://asylum.space/) | Asylum follow-up 1 | [GitHub](https://gitlab.com/asylum-space/) | ☐ | ☒ | ☐ |
 | [Cyril Carlier](https://github.com/CrommVardek) | Maki| [GitHub](https://github.com/CrommVardek) | ☐ | ☐ | ☐ |
 | [TopMonks](https://www.topmonks.com/) | Calamar| [GitHub](https://github.com/topmonks/calamar) | ☐ | ☐ | ☐ |
-| [Bela Supernova](https://bsn.si/) | Rubeus Keeper| [GitHub](https://github.com/bsn-si) | ☐ | ☐ | ☐ |
+| [Bela Supernova](https://bsn.si/) | Rubeus Keeper| [GitHub](https://github.com/bsn-si) | ☐ | ☒ | ☐ |
 | [Web3 Labs Ltd](https://www.web3labs.com/epirus-explorer) | Epirus Substrate Explorer - Phase 2 | [GitHub](https://github.com/web3labs) | ☐ | ☐ | ☐ |
-| [Uke](https://github.com/Uke-Messaging) | Uke Protocol PoC & App (revised) | [GitHub](https://github.com/Uke-Messaging) | ☐ | ☒ | ☐ |
+| [Uke](https://github.com/Uke-Messaging) | Uke Protocol PoC & App (revised) | [GitHub](https://github.com/Uke-Messaging) | ☐ | ☒ | ☒ |
 | [SuperColony](https://github.com/Supercolony-net) | Typechain Phase 2 | [GitHub](https://github.com/Supercolony-net/typechain-polkadot) | ☐ | ☐ | ☐ |
 | [QSTN](https://qstn.us/) | QSTN | [GitHub](https://github.com/qstnus) | ☐ | ☐ | ☐ |
 | [CESS LAB](https://www.cess.cloud/) | Substats (The framework of lightweight block explorer) | [GitHub](https://github.com/CESSProject) | ☐ | ☐ | ☐ |
@@ -569,8 +543,8 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [LeetCoin](https://www.leetcoin.co/) | LeetCoin | [GitHub](https://github.com/nashhq/leetcoin) | ☐ | ☐ | ☐ |
 | [727.ventures](https://github.com/727-Ventures) | Sol2Ink Phase 2 | [GitHub](https://github.com/727-Ventures) | ☐ | ☐ | ☐ |
 | [walt.id](https://walt.id/) | NFT infrastructure | [GitHub](https://github.com/walt-id) | ☐ | ☐ | ☐ |
-| [SydTek](https://sydtek.ai/) | Digital Inheritance in Web3: A Case Study of Soulbound Tokens and Social Recovery Pallets | N/A | ☐ | ☐ | ☐ |
-| [Anagolay](https://anagolay.network/) | Multi-token community contributions for verified creators | [GitHub](https://github.com/anagolay) | ☐ | ☐ | ☐ |
+| [SydTek](https://sydtek.ai/) | Digital Inheritance in Web3: A Case Study of Soulbound Tokens and Social Recovery Pallets | [GitHub](https://github.com/jgophd/Developed-Materials-and-Raw-Data) | ☐ | ☒ | ☐ |
+| [Anagolay](https://anagolay.network/) | Multi-token community contributions for verified creators | [GitHub](https://github.com/anagolay) | ☐ | ☒ | ☐ |
 | [Ink Contracts Wizard Team](https://github.com/amankumar1008/contracts-wizard) | Ink Smart Contract Wizard | [GitHub](https://github.com/amankumar1008/contracts-wizard) | ☐ | ☐ | ☐ |
 | [TDSoftware](https://www.tdsoftware.de/) | Substrate IPFS Utilities | [GitHub](https://github.com/TDSoftware) | ☐ | ☐ | ☐ |
 | [Ink Boxes Team](https://github.com/nerdsince98) | Ink Boxes | [GitHub](https://gitlab.com/nerdsince98/learning-ink/) | ☐ | ☐ | ☐ |
@@ -584,3 +558,9 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Mutai Solutions](https://bryanmutai.co/) | Crowdloans-FET | [GitHub](https://github.com/brymut) | ☐ | ☐ | ☐ |
 | [k/factory](https://k-f.co/) | Centrifuge Go-Substrate-RPC Client V2 | [GitHub](https://github.com/centrifuge/go-substrate-rpc-client) | ☐ | ☐ | ☐ |
 | [Colorful Notion](https://github.com/colorfulnotion) | Zombienet Explorer: Multi-Chain Substrate Block Explorer | [GitHub](https://github.com/colorfulnotion/zombienet-explorer) | ☐ | ☐ | ☐ |
+| [TwinP](https://github.com/herou) | Decentralized Invoice | [GitHub](https://github.com/herou) | ☐ | ☐ | ☐ |
+| [Zondax](http://zondax.ch/) | Hybrid node research grant | [GitHub](https://github.com/ZondaX) | ☐ | ☐ | ☐ |
+| [Bright Inventions](https://brightinventions.pl/) | ZK-Snarks Tutorial | [GitHub](https://github.com/bright/) | ☐ | ☐ | ☐ |
+| [Common Orbit LLC](https://brson.github.io) | wasm-opt-for-rust maintenance | [GitHub](https://github.com/brson/wasm-opt-rs) | ☐ | ☐ | ☐ |
+| [Salaheldin Soliman](https://github.com/salaheldinsoliman) | Solang developer experience improvements | [GitHub](https://github.com/hyperledger/solang) | ☐ | ☐ | ☐ |
+| [Optymalizacja AI Grzegorz Miebs](https://github.com/miepsik) | Validator selection | [GitHub](https://github.com/miepsik) | ☐ | ☐ | ☐ |
