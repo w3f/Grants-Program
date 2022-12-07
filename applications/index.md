@@ -563,3 +563,4 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Bright Inventions](https://brightinventions.pl/) | ZK-Snarks Tutorial | [GitHub](https://github.com/bright/) | ☐ | ☐ | ☐ |
 | [Common Orbit LLC](https://brson.github.io) | wasm-opt-for-rust maintenance | [GitHub](https://github.com/brson/wasm-opt-rs) | ☐ | ☐ | ☐ |
 | [Salaheldin Soliman](https://github.com/salaheldinsoliman) | Solang developer experience improvements | [GitHub](https://github.com/hyperledger/solang) | ☐ | ☐ | ☐ |
+| [Optymalizacja AI Grzegorz Miebs](https://github.com/miepsik) | Validator selection | [GitHub](https://github.com/miepsik) | ☐ | ☐ | ☐ |
