@@ -18,6 +18,9 @@ Potential utility for the wider community is evidenced by the [Polkadot Summit: 
 
 The Upchain specification envisioned here would also serve as an outline of the implementation requirements.
 
+The target audience is authors of the Substrate relay and parachain upgrade logic. The spec should be used by default in all Substrate runtime upgrades and Substrate network upgrades.
+Developers using Substrate would be oblivious until an upgrade failed - at which point they would notice their legacy logic is still in place.
+
 There is considerable prior art to inform and guide the initial specification.
 A greenfield design should not be accepted.
 
@@ -40,9 +43,23 @@ Articulating:
 
 Specifically, elements of these two specifications should not silently vanish.
 
+The Uptane (ECU update framework for automotives) is chosen as the template to begin with and contrast UpChain for a couple of reasons:
+While ECU updates have client-server model where centrally managed updates are pushed to clients, and upgrade failures must leave a vehicle in a safe and usable state.  Substrate upgrades have a single source of truth that also must be pushed to noden, and upgrade failures must leave a node in a safe and usable state.
+Further, there are implementations of the Uptane spec that are not trivial and that experience could be expected to inform the design of UpChain e.g. motivate any deviations or extensions.
+
 ## Deliverables :nut_and_bolt:
 
 Upchain Standard for Design and Implementation 1.0.0
+
+### Scope
+
+The scope of "Designing UpChain" is limited to creating a spec which aims at mitigating/avoiding such upgrade failures.
+
+Guidelines to triage and recover after the issue occurred will likely depend on the detail of an implementation, hence should be deferred to the implementation phase.
+
+Scope includes providing recommendations and changes at the protocol level.
+It also include analysis of performance overheads (e.g., overheads on the blockspace).
+This may entail involving teams at parity/w3f.
 
 * **Total Estimated Duration:** Duration of the whole project
 * **Full-time equivalent (FTE):**  Amount of time (in days) required for a single person to complete this project ([see](https://en.wikipedia.org/wiki/Full-time_equivalent))
@@ -54,10 +71,11 @@ Upchain Standard for Design and Implementation 1.0.0
 * **FTE:**  Amount of time (in days) required for a single person to complete this milestone
 * **Costs:** Amount of Payment in USD for milestone 1
 
-
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 1. | Upchain Standard for Design and Implementation 1.0.0 | The Update Framework Specification extended for Substrate Relay and Parachains |
+
+This deliverable can be valuated by comparing the list of (sub-)sections with those from [The Update Framework](https://theupdateframework.github.io/specification/latest) - there should be no omissions.
 
 ### Milestone 2
 
