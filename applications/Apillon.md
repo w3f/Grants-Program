@@ -29,15 +29,15 @@ The DID Vault has been designed and executed to the extent that reflects the int
 
 *Disclaimer: The attached screenshots showcase the preliminary designs for DID Vault UI, designed under the brand of Authtrail, Apillon's predecessor. By the time of launch, the UI of Apillon's DID Vault, both design and copy, will be upgraded to reflect the new brand image.*
 
-![lander](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/vault_ui_prototype/first_view.png)
-![Step 0](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/vault_ui_prototype/view_0.png)
-![Step 1](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/vault_ui_prototype/view_1.png)
-![Step 2](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/vault_ui_prototype/view_2.png)
-![Step 3](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/vault_ui_prototype/view_3.png)
-![Step 4](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/vault_ui_prototype/view_4.png)
-![Step 5](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/vault_ui_prototype/view_5.png)
-![Step 6](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/vault_ui_prototype/view_6.png)
-![Step 7](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/vault_ui_prototype/view_7.png)
+![lander](https://github.com/ninoCookies/did_vault_assets/blob/master/vault_ui_prototype/first_view.png)
+![Step 0](https://github.com/ninoCookies/did_vault_assets/blob/master/vault_ui_prototype/view_0.png)
+![Step 1](https://github.com/ninoCookies/did_vault_assets/blob/master/vault_ui_prototype/view_1.png)
+![Step 2](https://github.com/ninoCookies/did_vault_assets/blob/master/vault_ui_prototype/view_2.png)
+![Step 3](https://github.com/ninoCookies/did_vault_assets/blob/master/vault_ui_prototype/view_3.png)
+![Step 4](https://github.com/ninoCookies/did_vault_assets/blob/master/vault_ui_prototype/view_4.png)
+![Step 5](https://github.com/ninoCookies/did_vault_assets/blob/master/vault_ui_prototype/view_5.png)
+![Step 6](https://github.com/ninoCookies/did_vault_assets/blob/master/vault_ui_prototype/view_6.png)
+![Step 7](https://github.com/ninoCookies/did_vault_assets/blob/master/vault_ui_prototype/view_7.png)
 
 ### User Flow
 
@@ -51,7 +51,7 @@ The DID Vault has been designed and executed to the extent that reflects the int
 7. Once the user receives the file, they encrypt it using a strong password.
 8. Once encrypted, the file is sent to the Apillon server and stored centrally.
 
-![did-vault-user-flow-diagram-1](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/tech_diagram_3_1a.png)
+![did-vault-user-flow-diagram-1](https://github.com/ninoCookies/did_vault_assets/blob/master/tech_diagram_3_1a.png)
 
 **User Login - Diagram 2**
 1. A user initiates the login process.
@@ -63,7 +63,7 @@ The DID Vault has been designed and executed to the extent that reflects the int
 7. The DID Vault's UI and website integration work the same way as Google login.
 8. DID is validated and ready for use.
 
-![did-vault-user-flow-diagram-2](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/tech_diagram_3_2a.png)
+![did-vault-user-flow-diagram-2](https://github.com/ninoCookies/did_vault_assets/blob/master/tech_diagram_3_2a.png)
 
 **Social Account Recovery System (Optional) - Diagram 3**
 1. A user who already created DID in the previous step is able to add the recovery system to their DID by logging in with the DID and adding a recovery trustee/buddy account.
@@ -75,7 +75,7 @@ In the case a user forgets the password, the flow would be as follows:
 2. Apilon DID Vault confirms the identity of the user via customer support.
 3. If the user identity is confirmed, the DID public key is unlocked in two steps: the first decryption occurs via Apillon DID Vault keys, and the second from the user's buddy assistance.
 
-![did-vault-user-flow-diagram-3](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/tech_diagram_3_3a.png)
+![did-vault-user-flow-diagram-3](https://github.com/ninoCookies/did_vault_assets/blob/master/tech_diagram_3_3a.png)
 
 ### Technology Stack
 The DID Vault technology stack consists of established mainstream web technologies. These would empower a large number of web developers to employ and contribute to the project development in the future. The technology stack includes:
@@ -89,12 +89,16 @@ Additionally, the following SDKs and clients will be employed:
 * Polkadot SDK
 * KILT SDK
 * Crust SDK
-* Phala SDK
 * IPFS client
+
+For encryption we are considering the flow:
+- Using password based PBKDF2 key for deriving AES-GCM key with random salt.
+- Encrypting data with AES-GCM and random iv.
+- Random salt and iv are needed for decryption and should be stored with encrypted content.
 
 ### Two-Phase Development
 
-![technical diagram](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/tech_diagram_1.png)
+![technical diagram](https://github.com/ninoCookies/did_vault_assets/blob/master/tech_diagram_1.png)
 
 The DID Vault project development is organized into two phases.
 
@@ -118,7 +122,7 @@ In Phase 2, the following upgrades will be delivered:
 2. Centralized computation power upgrade to Phala Phat Contract (proof of concept already tested)
 3. Social recovery methods extending the account recovery options
 
-![technical diagram](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/tech_diagram_2.png)
+![technical diagram](https://github.com/ninoCookies/did_vault_assets/blob/master/tech_diagram_2.png)
 
 ### Ecosystem Fit
 
@@ -177,7 +181,7 @@ In related ecosystems, a solution similar to Apillon's DID Vault would be [Keple
 
 The Apillon team has done initial interviews with several stakeholders within the Polkadot ecosystem to gain feedback on the relevance of the DID Vault for the ecosystem. The common response was very positive and emphasized the need for the proposed solution.
 
-During the initial hand-in-hand research with the KILT team, the project's technical viability was further evaluated. The findings defined [three main user stories](https://github.com/Apillon-web3/grants/blob/main/Grant_Assets/vault_technical_diagram.png) and served as a base for the initial [UI wireframes](https://www.figma.com/file/85PjhVTfEUlG9BnxTRoKNE/AT-Wireframes-v0.1?node-id=22%3A2118&t=aV8m9lIf3TPV6fty-0).
+During the initial hand-in-hand research with the KILT team, the project's technical viability was further evaluated. The findings defined [three main user stories](https://github.com/ninoCookies/did_vault_assets/blob/master/vault_technical_diagram.png) and served as a base for the initial [UI wireframes](https://www.figma.com/file/85PjhVTfEUlG9BnxTRoKNE/AT-Wireframes-v0.1?node-id=22%3A2118&t=aV8m9lIf3TPV6fty-0).
 
 ### Development Roadmap
 
@@ -199,7 +203,8 @@ During the initial hand-in-hand research with the KILT team, the project's techn
 | **0b.** | Documentation | The inline documentation of the code and a basic tutorial will explain how to (for example) spin up one of the Apillon's Substrate nodes and send test transactions, showing the new functionality in action. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. The guide will describe how to run these tests. |
 | **0d.** | Docker | The provided Dockerfiles will enable the testing of all the functionality delivered with this milestone. |
-| **1.** | Web app UI | The DID Vault UI will be built and published to enable client-side upload + encryption of DID Vaults. |
+| **1a.** | Web app UI | The DID Vault UI will be built and published to enable client-side upload + encryption of DID Vaults. |
+| **1b.** | Web app source code | VUE.js (typescript) based UI implementation integrating crypto web api to encrypt client side uploaded credential files and send them to the API. |
 
 #### Milestone 2 - Store to IPFS, Retrieve, Decrypt
 
@@ -214,7 +219,9 @@ During the initial hand-in-hand research with the KILT team, the project's techn
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. The guide will describe how to run these tests. |
 | **0d.** | Docker | The provided Dockerfiles will enable the testing of all the functionality delivered with this milestone. |
 | **0e.** | Article | An online video guide will explain the use of DID Vault for DID encryption and storage for existing DID owners. |
-| **1.** | Fully functional back-end | Apillon Beta-ready DID Vault will be built and deployed, allowing users to upload, encrypt and store DIDs to log in to integrated services. |
+| **1a.** | Fully functional back-end | Apillon Beta-ready DID Vault will be built and deployed, allowing users to upload, encrypt and store DIDs to log in to integrated services. |
+| **1b.** | Backend source code | Typescript based (node.js, express, next.js) backend that uploads credentials to IPFS and links them to an account. Also able to retrieve the credentials. |
+| **2a.** | Front end javascript | Javascript code snippet that enables website integration of vault credential retrieval and validation. |
 
 #### Future Plans
 Once the milestones described in this Grant Application are reached, the DID Vault project is moving into Phase 2, upgrading the Vault to a production-grade standalone product anyone can use.
