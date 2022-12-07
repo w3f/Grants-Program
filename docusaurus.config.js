@@ -108,7 +108,7 @@ module.exports = {
     },
     algolia: {
       appId: '9VKKGZO0U1',
-      apiKey: '89d564c771c26d6eb84fe9cf608c128d*',
+      apiKey: '89d564c771c26d6eb84fe9cf608c128d',
       indexName: 'grants-program',
       contextualSearch: true,
       externalUrlRegex: 'https://w3f.github.io',
