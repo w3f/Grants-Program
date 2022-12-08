@@ -1,0 +1,146 @@
+# W3F Grant Proposal
+
+- **Project Name:** ArtZero & InkWhale
+- **Team Name:** ArtZero
+- **Payment Address:** 21kDJsr5ea6AjxBAHjCsDk1f3CKsURuWboi9yd1pYgugdhub
+- **[Level]:** 2
+
+## Project Overview :page_facing_up:
+
+The ArtZero is a decentralized NFT marketplace on the Aleph Zero blockchain. It is the first NFT marketplace on Aleph Zero, allows everyone to Create, Buy, Bid, Sell, or just Collect Aleph Zero-based NFTs. The platform comes with its native Praying Mantis Predators NFT Collection, which NFT owners can stake for share of platform profit and other perks. ArtZero also provides a launchpad to let anyone to launch their NFT Collection.
+
+Ink Whale lets stakers earn fixed interest and other rewards for locking up your tokens or NFTs. In this article, we will guide you how you can add utilities to your NFT Collections through NFT staking and farming. Unlike traditional yield farming, where you need to deposit tokens into a liquidity pool to get token rewards, NFT farming uses NFTs instead. The main goal of NFT farming is to create liquidity and utility for NFTs.
+
+The Smart Contracts of ArtZero and Ink Whale use Ink! Substrate are currently working on Aleph Zero but the Smart Contracts can be deployed on any parachains that support Ink!
+
+### Overview
+
+### Project Details
+
+Our Project, ArtZero is in Smart Contract Audit by BrushFam, the team behinds OpenBrush Library. We will be ready to launch on Aleph Zero network once Ink! 4.0 is deployed on the chain. Demo Testnet Version of the project can be accessed at https://artzero.io
+
+Ink Whale is still in development and the MVP is completed for public test at https://inkwhale.net
+
+### Ecosystem Fit
+
+SubWallet is our friend and partner, their office is literally 5 minutes from our office and we have collaborated on many things in the past. Our team helped SubWallet in the development of https://dotinsights.subwallet.app/ and also working with SubWallet to integrate Aleph Zero blockchain to their wallet.
+
+Ink Smart Contract is very new, but our team has strong knowledge of development on Ink!. I believe our smart contracts are one of the very few in auditing process. ArtZero is also one of the very first dapps developed on Ink Ecosystem.
+
+In Nov 2022, we also received the bounty for find a serious bug in Substrate Ink! by Parity Security Team. The fix is at PR #11771.
+
+We believe that with our strong interest in Ink!, we can provide a lot of benefits to the ecosystem such as development training and supporting.
+
+## Team :busts_in_silhouette:
+
+### Team members
+
+Mr. Brian Nguyen (founder, engineer)
+There are another 4 key members in the company including:
+Mrs. Phuong Hoang - CMO
+Mr. Frankie Kao - Art Director and team of 5 designers
+Mr. Long Nguyen - Full-stack developer
+Mr. Albert Tran - Smart Contract & Back-end Developer
+Mr. Tuan Vu - DevOp
+Mr. Thien Nguyen - Front-end Developer
+Mr. Nam Hoang - Blockchain Developer
+Mr. Tung Nguyen - Back-end and Blockchain Developer
+
+Other part-time testers and designers.
+
+### Contact
+
+- **Contact Name:** Brian Nguyen
+- **Contact Email:** admin@artzero.io
+- **Website:** https://artzero.io
+
+### Legal Structure
+
+- **Registered Address:** Not Registered
+- **Registered Legal Entity:** Not Registered
+
+### Team's experience
+
+Brian Nguyen graduated from University of Nottingham with a 1st class degree in Computer and Electronics Engineering. Over the last 15 years, He has developed many data-driven applications. He also has deep interest in blockchain technology and development of decentralized apps on Ethereum, Binance Smart Chain, Tron, Solana
+network. He is the founder of ArtZero - the first NFT Marketplace & also 1st dApp on Aleph Zero network.
+
+Frankie Kao owns a design company and have been working in many projects on web design, graphic designs etc. He dedicated his resources to work with ArtZero.
+
+Phuong Hoang has been in sale and marketing industry for over a decade. She has been Sale and Marketing Manager/Director for many companies including: Honda Vietnam, Plex Cinama, Saga Media etc.
+
+All of our developers have at least 5-10 years experience in software development.
+
+### Team Code Repos
+
+- https://github.com/artzero-io (some repos are in private mode)
+
+### Team LinkedIn Profiles (if available)
+
+- https://www.linkedin.com/in/nad128668/
+- http://linkedin.com/in/phuong-phoebe-hoang-4b5888148
+- https://www.linkedin.com/in/tran-albert-469b6319a
+
+## Development Status :open_book:
+
+We have completed the Testnet demo version of the ArtZero NFT Marketplace. The contracts are waiting to be audited then our platform will be ready to be launch on Aleph Zero Mainnet.
+
+https://artzero.io
+https://docs.artzero.io/
+
+Ink Whale is still in development and the MVP is completed for public test at https://inkwhale.net
+
+## Development Roadmap :nut_and_bolt:
+
+
+### Overview
+
+- **Total Estimated Duration:** 6 months
+- **Full-Time Equivalent (FTE):**  5 FTE
+- **Total Costs:** 100,000 USD
+
+
+### Milestone 1  — NFT Marketplace on Moonbeam and Astar
+* **Estimated Duration:** 8 weeks
+* **Costs:** 20,000 USD
+
+In this milestone, We will implement all Ink! Smart contracts on Moonbeam and Astar Testnet with full working NFT Marketplace UI/UX and backend. Consider to launch on Mainnet when the networks are ready with Mainnet Smart Contract.
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | smart contract implementation | Audited contracts to be deployed on Moonbeam and Astar|
+| 2. | Backend | Build infrastructure to serve the need of NFT Marketplaces|
+| 3. | Frontend | Clone front-end from ArtZero to work with Moonbeam and Astar|
+| 4. | Testing | Test Plan and Test Results for operating and using the NFT Marketplace |
+| 5. | Documentation | All technical documents and user guides |
+
+### Milestone 2  — Ink Whale Staking and Yield Farming Platform Development
+* **Estimated Duration:** 8 weeks
+* **Costs:** 20,000 USD
+
+In this milestone, We will continue to improve the current development of Ink Whale Platform to completion.
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | smart contract development | Enhance the current smart contracts in MVP and create the final version and deploy on Moonbeam, Astar and Aleph Zero Network|
+| 2. | Backend | Build infrastructure to serve the need of Ink Whale|
+| 3. | Frontend | Revamp the front-end for final version|
+| 4. | Testing | Test Plan and Test Results for operating and using Ink Whale|
+| 5. | Documentation | All technical documents and user guides |
+
+### Milestone 3  — Audit and Launching Ink Whale platform
+* **Estimated Duration:** 4 weeks
+* **Costs:** 60,000 USD
+
+In this milestone, We will start auditing the smart contract code and launching Ink Whale Platform
+
+| Number | Deliverable | Specification |
+| ------------- | ------------- | ------------- |
+| 1. | smart contract audit | Work with Audit firm to review the code and fix all issues|
+| 2. | Launch | Launch Ink Whale on Aleph Zero, Moonbeam and Astar|
+
+## Future Plans
+
+
+## Additional Information :heavy_plus_sign:
+
+**How did you hear about the Grants Program?** from Founder of SubWallet
