@@ -1,5 +1,5 @@
-# W3F Grant Proposal
-- **Project Name:** SaaS3
+# SaaS3
+
 - **Team Name:** SaaS3 Lab 
 - **Payment Address(USDT):** 0x8341e551B0AE5E5905C20A112b123b5F797612f3
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
