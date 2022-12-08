@@ -2,7 +2,7 @@
 
 - **Project Name:** ArtZero & InkWhale
 - **Team Name:** ArtZero
-- **Payment Address:** 21kDJsr5ea6AjxBAHjCsDk1f3CKsURuWboi9yd1pYgugdhub
+- **Payment Address:** 1scixS3ofLuBN8XEQQdSjMQaLtvvbcJiQAqpnaov8xopX78
 - **[Level]:** 2
 
 ## Project Overview :page_facing_up:
