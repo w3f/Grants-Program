@@ -2,13 +2,13 @@
 
 - **Team Name:** Odyssey B.V.
 - **Payment Address:** 0x826fde427152d9fc0bf045dd858baa2de06b383b (USDC) 
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
 ### Overview
 
-#### Tagline: Staking in NFTs and Tokenize Momentum Plugins
+#### Tagline: Staking in NFTs
 
 Odyssey is building Momentum, an open source, metaverse for digital societies. 
 
@@ -23,18 +23,12 @@ Momentum sees the metaverse as a novel communications medium and provides the in
 
 DRIVE provides the users in the network with a universal way to turn their connections and activities into social capital and earnings. The goal is to enable users of these digital societies to thrive, by prioritizing resource allocation (e.g. funding, talent, knowledge) in general, optimizing network effects (e.g. connectivity, serendipity, virality), and a better user experience (e.g. search results, timelines and suggestions) based on the user's skin in the game. 
 
-We must build a parachain with on top of that a two customized Substrate pallets. 
+We must build a parachain with on top of that a number of customized Substrate pallets. The functionality subject of this aplication is Staking in NFTs.
 
 1. **Stake Pallet**  
 Within Momentum User Profiles, Worlds, Spaces and Subspaces are NFT's. The Stake pallet is going to add a variety of staking options that extend the current Proof of Staking mechanisms. This is done by providing functionality of staking in NFTs (or possibly any asset) in order to incentivize the creators/ owners and reward the stakers.
 
-2. **Plugins Pallet**   
-Momentum enables its users to create plugins that can be activated within worlds to provide its users a broad and virtually unrestricted functionality. Plugins are not smart contracts built on momentum but instead are dapps from the Dotsama ecosystem or even outside it and it could even be centralized apps that developers want to add to momentum. The Plugins pallet is going to take care of the Plugin Management, Plugin rewards and Plugin events registration.
-
-In preperation of building these Substrate pallets, it needs to be researched how fractionalized NFTs influence staking and ownership mechanisms of these assets within the Momentum context.
-
-*For the Stake pallet it is most likely that we would need to write a custom NFT pallet or a pallet that complements the Uniques pallet. For the Plugins pallet there might be more than one pallet needed to make it more manageable. It needs to be flexible enough so we can change settings and plugin structure on the go.*
-
+*For the Stake pallet it is most likely that we would need to write a custom NFT pallet or a pallet that complements the Uniques pallet. As a result our delivery might include mutiple pallets.
 
 ### Project Details
 
@@ -42,13 +36,12 @@ In preperation of building these Substrate pallets, it needs to be researched ho
 
 The Momentum stack as displayed in the figure below is already [operational](https://kusama.momentum.xyz/) and completely [open source](https://github.com/momentum-xyz), except for the DRIVE 'node', which is under development.
 
-![Momentum stack layers](https://drive.google.com/uc?id=1y-xzlaIKA8R6bbOODYFU_W2ZNktU-adO)  
+![Momentum stack layers](https://drive.google.com/uc?id=1y1mrEyELIMRoJzClmhP-V8LCvn1qLzDk)  
 *figure 1*
 
-The scope of this project is the development of custom Stake- and Plugin pallets (marked green in figure 1). Besides that, it is most likely that we would need to write a custom NFT pallet or a pallet that complements the Uniques pallet.
+The scope of this project is the development of custom Stake pallets (marked green in figure 1). Besides that, it is most likely that we would need to write a custom NFT pallet or a pallet that complements the Uniques pallet.
 
-
-*Note: This information below contains an early preview of the Stake Pallet and Plugins Pallet and might be subject to changes based on the research that has to be performed as part of this project.*
+*Note: This information below contains an early preview of the Stake Pallet and might be subject to changes.*
  
 
 #### Stake Pallet
@@ -124,68 +117,8 @@ pub(crate) type StorageVersion<T> = StorageValue<_, Version, ValueQuery>
 ![Use Case Diagram Stake Pallet](https://drive.google.com/uc?id=1Q3fn92yZ0dRwTDG5s9sJPXTN4BU3NYyB)   
 *figure 3*
 
-#### Plugins Pallet
-The Plugins pallet is going to take care of the Plugin Management, Plugin rewards and Plugin events registration  
-![Plugins pallet overview](https://drive.google.com/uc?id=1QlUqsn-IwWUHgmFulII7tPKeEPA9Yi3k)  
-*figure 4*
-
-**Publicly Exposed Methods**
-
-```Rust
-pub fn register(origin: OriginFor<T>, plugin_info: T::PluginInfo) -> DispatchResultWithPostInfo
-```
-
-```Rust
-pub fn unregister(origin: OriginFor<T>, plugin_id: T::PluginId) -> DispatchResultWithPostInfo
-```
-
-```Rust
-pub fn event(origin: OriginFor<T>, plugin_id: T::PluginId) -> DispatchResultWithPostInfo
-```
-
-```Rust
-pub fn subscribe(origin: OriginFor<T>, plugin_id: T::PluginId, subscriber_info: T::SubscriberInfo) -> DispatchResultWithPostInfo
-```
-
-```Rust
-pub fn unsubscribe(origin: OriginFor<T>, pluginId: T::PluginId, subscriber_id: T::SubscriberId) -> DispatchResultWithPostInfo
-```
-
-```Rust
-pub fn subscription_payment(origin: OriginFor<T>, pluginId: T::PluginId) -> DispatchResultWithPostInfo
-```
-
-```Rust
-pub fn edit(origin: OriginFor<T>, plugin_id: T::PluginId, plugin_info: T::PluginInfo) -> DispatchResultWithPostInfo
-```
-
-**Runtime Storage**  
-
-*Plugin info*  
-General information about a Plugin.  
-```Rust
-pub type PluginInfo<T> = StorageMap<_, Twox64Concat, T::PluginId, PluginInfo<T::Balance, T::CurrencyId>> 
-```
-
-*Subscriber info*  
-General information about a Subscriber of a Plugin.
-```Rust
-pub type SubscriberInfo<T> = StorageMap<_, Twox64Concat, T::SubscriberId, PluginInfo<T::Balance, T::CurrencyId>> 
-```
-
-*Storage Version*  
-Info about the storage version of this pallet.  
-```Rust
-pub(crate) type StorageVersion<T> = StorageValue<_, Version, ValueQuery>
-```
-
-**Use Case Diagram**  
-![Use Case Diagram Plugins Pallet](https://drive.google.com/uc?id=1aXXljsgpX-kNm8e9mXF2aT-FuYs6hEHx)  
-*figure 5*
-
-
 **Out-of-scope**  
-This project will not produce the parachain itself nor any of the non-token related or visual aspects of Momentum. We have extensive backing from well-known Web3 builders and ecosystem leaders as well as the European Union for this part. 
+This project will not produce a parachain nor any of the non-token related or visual aspects. We have extensive backing from well-known Web3 builders and ecosystem leaders as well as the European Union for this part. 
 
 
 ### Ecosystem Fit
@@ -205,24 +138,17 @@ We see the metaverse as a new social communications medium and the potential dri
 ## Team :busts_in_silhouette:
 
 ### Team members
-Odyssey  has over 30 people working on Momentum and is still growing. Odyssey works in tracks with dedicated team members. The Token Track Team will be primarily responsible for building the Substrate Pallets. The Plugin Infrastructure Track Team will be responsible for the integration with the plugin infrastructure.
-
+Odyssey  has over 30 people working on Momentum and is still growing. Odyssey works in tracks with dedicated team members. The Token Track Team will be primarily responsible for building the Substrate Pallets. 
 
 OVERALL ARCHITECT: Anton Starikov (CTO)
 
 **TOKEN TRACK TEAM**   
 - TRACK LEAD: Dave Hoogendoorn
 - RUST DEVELOPER: Denis Cavalli 
-- RUST DEVELOPER: [Open position(s)](https://odyssey.org/careers)
+- RUST DEVELOPER: Raghuvar Vijayakumar
 - WEB3ANALYST: Tim Jansen  
 
 *All team members are solely dedicated to the token Track.*
-
-**PLUGIN INFRASTRUCTURE TEAM**   
-- TRACK LEAD: Jorrit Smedema   
-
-Jorrit's team consists of 4 dedicated front-end developers and 4 dedicated back-end developers.  
-*Team resources will be appointed in due time.*
 
 
 ### Contact
@@ -248,9 +174,9 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 *Denis Cavalli* is a Senior Rust Software Engineer with a background on embedded systems and R&D. Since 2021 engaged with the WEB3 environment, has experimented on Ethereum/Solidity, Solana and worked professionally with Helium in 2022. Now is focused on building the metaverse that will empower people collaboration on the Dotsama ecosystem, using Substrate as the main framework.
 
-*Tim Jansen* is a Polkadot Ambassador and has been working on crypto and blockchain for over 7 years. He has developed smart contracts on Ethereum, implemented decentralized storage solutions such as swarm and IPFS, consulted on blockchain at [ISO](https://www.iso.org/member/2027.html), audited smart contract code of [TNO](https://www.tno.nl/en/about-tno/), launched several live applications using blockchain for auditing, supply chain and SSI at Visma and has a deep understanding of cryptography including zero knowledge proofs. In his free time he researches and experiments with new crypto technologies.
+*Raghuvar Vijayakumar* is a Rust Software Engineer with  experience in building Custom Substrate Pallets and  optimizing runtime storage. In addition to this Raghuvar has experience in developing smart contracts using solidity.      
 
-*Jorrit Smedema* is a Senior Engineer doing web-based software developing for 20 years. Involved in many startup-like projects. Leading by example, Jorrit has managed projects from concept to design up to successful product launch. Jorrit has touched every part of the software stack, from the hardware and hosting up to the UI and everything in between. Mostly working with open-source software. 
+*Tim Jansen* is a Polkadot Ambassador and has been working on crypto and blockchain for over 7 years. He has developed smart contracts on Ethereum, implemented decentralized storage solutions such as swarm and IPFS, consulted on blockchain at [ISO](https://www.iso.org/member/2027.html), audited smart contract code of [TNO](https://www.tno.nl/en/about-tno/), launched several live applications using blockchain for auditing, supply chain and SSI at Visma and has a deep understanding of cryptography including zero knowledge proofs. In his free time he researches and experiments with new crypto technologies.
 
 
 ### Team Code Repos
@@ -261,7 +187,6 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 GitHub accounts of our team members:
 
 - https://github.com/deniscavalli
-- https://github.com/jor-rit
 
 
 ### Team LinkedIn Profiles (if available)
@@ -271,6 +196,7 @@ Organisation:
 
 Team:
 - https://www.linkedin.com/in/deniscavalli/
+- https://www.linkedin.com/in/raghuvarvijayakumar/
 - https://www.linkedin.com/in/timjanssen89/
 - https://www.linkedin.com/in/antst/
 - https://www.linkedin.com/in/dhoogendoorn/
@@ -294,58 +220,18 @@ Other channels are [YouTube](https://www.youtube.com/Intobitcoin) and [our found
 
 ### Overview
 
-- **Total Estimated Duration:** 10 Weeks
-- **Full-Time Equivalent (FTE):**  2,5 FTE *based on 40 hours work week.
-- **Total Costs:** 84,900 USD
-
-From a high-level budgeting perspective, Odyssey expects to allocate its resources across the various deliverables according to the distribution outlined in the following tables.
-
-**Budgeting% per deliverable**
-   
-|Classification|Percentage|
-| -----------: | -------- | 
-| Research| 20|
-| Development| 52|
-| Quality Assurance| 11|
-| Documentation| 11|
-| Project Management| 6|
-
-
-**Activity Classification% per deliverable**
-   
-|Classification|Percentage|
-| -----------: | -------- | 
-| Research| 20|
-| Development| 55|
-| Quality Assurance| 10|
-| Documentation| 10|
-| Project Management| 5|
-
-
-
-### Milestone 1 Fractionalized NFTs (10%)
-
-- **Estimated duration:** 1 Week
+- **Estimated duration:** 6 Weeks
 - **FTE:**  2,5
-- **Costs:** 8,490 USD
+- **Costs:** 30,000 USD
 
-This milestone delivers research papers and documentation on how fractionalized NFTs, influence staking- and ownership mechanisms of assets within the Momentum context.
-
-*Note: Milestone 1 is research oriented and as such there is no code to test.*
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 1.| Research | Research document defining staking in relation to the Momentum mechanisms delivered|
-| 2.| Research | Research document on staking parameters delivered|
-| 3.| Research | Research document on NFT properties and behaviour delivered|
+_Note: Please follow the disussion [github](https://github.com/w3f/Grants-Program/pull/1221) for details on the costs._   
 
 
-
-### Milestone 2 Stake Pallet (60%)
+### Milestone 1 Stake Pallet 
 
 - **Estimated duration:** 6 Weeks
 - **FTE:**  2,5
-- **Costs:** 50,940 USD
+- **Costs:** 30,000 USD
 
 This milestone delivers at least one (but maybe more) pallets to enable staking in Momentum's User Profile, World, Space and Subspace NFTs (or possibly any asset) in order to incentivize the creators/ owners and reward the stakers.
 
@@ -368,33 +254,9 @@ This milestone delivers at least one (but maybe more) pallets to enable staking 
 | 4c.| Pallet(s) in production| Pallet integrated on the parachain runtime as an example of the first implementation of the NFT stake pallet, enabling active maintenance of the repo based on lessons learned.|
 
 
-
-### Milestone 3 Plugins Pallet (30%)
-- **Estimated Duration:** 3 weeks 
-- **FTE:**  2,5
-- **Costs:** 25,470 USD
-
-This milestone delivers at least one (but maybe more) pallets enabling the creation and management of plugins, their reward scheme and on-chain event registration of selected events these plugins produce.
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a.|License|NU General Public License v3.0.|
-| 0b.|Documentation|We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
-| 0c.|Testing and Testing Guide|We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
-| 0d.|Docker|We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
-| 1a.|Plugins Pallet| Register / Unregister / Edit Plugin info functionalities|
-| 1b.|Plugins Pallet| Enable management of the plugin parameters|
-| 2a.|Documentation | Describe the Reward category types|
-| 2b.|Plugins Pallet |Implementation of the reward system per category type. Note: There might be a Rewards Pallet that will take care of this|
-| 3.|Plugins Pallet|Configuration for different Plugin Economic models implemented. Note: There might be a Rewards Pallet that will take care of this|
-| 4.|Plugins Pallet| Registration of custom Plugin events on-chain implemented. Enabling every plugin to register events on chain|
-| 5a.| Plugins Pallet| Add security so only authorized plugins and/or developers can register events on chain|
-| 5b.| Pallet(s) in production| Pallet integrated on the parachain runtime as an example of the first implementation of the Plugins pallet, enabling active maintenance of the repo based on lessons learned.|
-
-
 ## Future Plans
 
-Odyssey is planning a 25+ web3 community teams 4-week hackathon in May 2023, with leading Dotsama parachain and ecosystem parties, as part of a 9 month innovation program. During this program teams are guided to build new user experiences using Momentum and Dotsama tech and test how the DRIVE token would work in their utility/plugin. In September 2023 we will launch our DRIVE mainnet as a parachain on Kusama. 
+Odyssey is planning a 25+ web3 community teams 4-week hackathon in May 2023, with leading Dotsama parachain and ecosystem parties, as part of a 9 month innovation program. During this program teams are guided to build new user experiences using Momentum and Dotsama tech and test how the DRIVE token strengthens their usecase. In September 2023 we will launch our DRIVE mainnet as a parachain on Kusama. 
 
 In the coming  years we will keep investing in the Kusamaverse and momentum ecosystems, meaning:
 
@@ -413,4 +275,4 @@ We have Personal recommendations from people at Parity including Raul Romanutti 
 We have not yet applied for any grants with the WEB3 Foundation.
 
 **Other information**   
-Last but not least, we are proud to we have the [Sovereign Nature Initiative](https://sovereignnature.com/) organising a Hackathon in Momentum for the [Kenya Wildlife Trust](https://www.kenyawildlifetrust.org/). Momentum enables true collaboration happening in real-time among 13 teams spread over 5+ countries. SNI will be hosting events in Momentum until the 9th of November. Check it out on [SNI World](http://sni.momentum.xyz).
+Last but not least, we are proud to we have the [Sovereign Nature Initiative](https://sovereignnature.com/) organising a Hackathon in Momentum for the [Kenya Wildlife Trust](https://www.kenyawildlifetrust.org/). Momentum enables true collaboration happening in real-time among 13 teams spread over 5+ countries. SNI has been hosting events in Momentum up to the 9th of November. Check it out on [SNI World](http://sni.momentum.xyz).
