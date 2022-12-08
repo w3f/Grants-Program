@@ -221,11 +221,7 @@ This grant application focuses on the following item of the project’s prelimin
 - **Full-Time Equivalent (FTE):**
   - Average of 0.5 FTE
   - As stated under "Team experience", the team currently has other main jobs or engagements and can consequently invest only limited amounts of time - we will do our best to invest as much time as possible to progress as fast as possible. The team is prepared and looking forward to switching to the project full-time in the future.
-- **Total Costs:**
-  - 6,000 USD for 2a
-  - 4,500 USD for 2b
-  - 4,500 USD for 2c
-  - Total of 15,000 USD
+- **Total Costs:** 15,000 USD
 
 ### Technical Feasibility: Milestone 1 - Basic functionality
 
