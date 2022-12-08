@@ -564,3 +564,4 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Common Orbit LLC](https://brson.github.io) | wasm-opt-for-rust maintenance | [GitHub](https://github.com/brson/wasm-opt-rs) | ☐ | ☐ | ☐ |
 | [Salaheldin Soliman](https://github.com/salaheldinsoliman) | Solang developer experience improvements | [GitHub](https://github.com/hyperledger/solang) | ☐ | ☐ | ☐ |
 | [Optymalizacja AI Grzegorz Miebs](https://github.com/miepsik) | Validator selection | [GitHub](https://github.com/miepsik) | ☐ | ☐ | ☐ |
+| [Applied Blockchain Ltd](https://appliedblockchain.com/) | Silent Data | [GitHub](https://github.com/appliedblockchain) | ☐ | ☐ | ☐ |
