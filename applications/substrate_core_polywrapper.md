@@ -30,7 +30,7 @@ https://polywrap.io/#/
 
 ### Project Details
 
-Polywrapper will be written in Rust and compiled to WASM so that it can be used by developers to call substrate methods by simply invoking graphql calls.
+Polywrapper will be written in Rust and compiled to WASM so that it can be used by developers to call substrate methods by simply invoking graphql calls. We will deploy the Substrate wrapper to IPFS.
 
 Project heavily relies on the Polywrap toolchain and Polywrap team support.
 
@@ -164,25 +164,57 @@ To get a better idea of what this "separation of concerns" looks like in practic
 
 ### 2. `signer-provider` JavaScript Plugin
 
-A JavaScript plugin is necessary to perform the signing of transaction and messages. This cannot be implemented directly within a Polywrapper due to limitations of WASM, and security best-practices. The plugin should allow
+Plugins, in the context of Polywrap, are a special type of wrapper. Instead of being run as WebAssembly, they run as native modules in the application's language (ex: JavaScript). This allows the wrappers to access the application's native capabilities (ex: filesystem access), unlike WebAssembly wrappers which are run within their own nano-process sandboxed.
 
-* Signing arbitrary messages via browser plugin interaction
-* Signing special transaction payloads that provide more useful information to the user so they can know what they are signing
+The Substrate `signer-provider` plugin will enable the `rpc-wrapper` to:
+* Get all available accounts within the application's wallet (`Keyring`).
+* Sign arbitrary messages.
+* Sign transaction payloads.
+
+Polkadot.js will be used as the backing `Keyring`, enabling developers to use the browser-based wallet provided by the Polkadot.js extension, or additionally use a `FileStore` which can be used to load a wallet from the filesystem.
 
 The plugin would typically be instantiated and configured when instantiating the Polywrap Client, like so:
 ```typescript
-import {
-  substratePlugin
-} from "substrate-signer-provider-plugin-js";
+import { substrateSignerProviderPlugin } from "substrate-signer-provider-plugin-js";
+import { PolywrapClient } from "@polywrap/client-js";
 
-const client = new Web3ApiClient({
+const plugin = substrateSignerProviderPlugin();
+
+const client = new PolywrapClient({
   plugins: [{
-    uri: "plugin/substrate-signer-provider",
-    plugin: substrateSignerProviderPlugin({
-      // Can include Polkadot.js instance here
-      ...
-    })
+    uri: "ens/substrate-signer-provider.chainsafe.eth",
+    plugin
   }]
+})
+
+// Now we can use the above client to invoke the RPC wrapper,
+// which requires "ens/substrate-signer-provider..." as a dependency
+const accounts = await client.invoke({
+  uri: "ens/substrate-rpc-wrapper.chainsafe.eth",
+  method: "getSignerProviderAccounts"
+});
+```
+
+Additionally, users can configure the plugin with their own `SignerProvider` instance, like so:
+```typescript
+import {
+  substrateSignerProviderPlugin,
+  KeyringSignerProvider
+} from "substrate-signer-provider-plugin-js";
+import { Keyring } from "@polkadot/ui-keyring";
+import { FileStore } from "@polkadot/ui-keyring/stores";
+
+// Load keystore from a directory
+const filestore = new FileStore("/path/to/keystore/dir");
+
+// Create your own keyring
+const keyring = new Keyring();
+
+// Load the keystore into the keyring
+keyring.loadAll({ store: filestore });
+
+const plugin = substrateSignerProviderPlugin({
+  provider: new KeyringSignerProvider(keyring)
 })
 ```
 
@@ -194,13 +226,35 @@ The Polywrapper is a set of WASM modules that contain the bulk of the logic need
 
 A call to the Polywrapper might look something like this (TS/JS application):
 ```typescript
-const result = await Substrate_Module.chainGetBlock({
+const result = await client.invoke({
+  uri: "ens/substrate-rpc-wrapper.chainsafe.eth",
+  method: "chainGetBlock",
+  args: {
     url,
     number: 0
-  },
-  client,
-  uri
-);
+  }
+});
+
+if (!result.ok) {
+  handleError(result.error);
+  return;
+}
+
+const blockOutput = result.value;
+```
+
+Or by using the Polywrap toolchain's application codegen, you can have this be fully typed like so:
+```typescript
+import { Substrate_Module, Substrate_BlockOutput } from "./wrap";
+
+const result = await Substrate_Module.chainGetBlock({
+  url,
+  number: 0
+}, client);
+
+if (!result.ok) throw Error("...");
+
+const output: Substrate_BlockOutput = result.value;
 ```
 
 The rpc-wrapper exposes the following interface that maps closely to the default Substrate node RPC:
