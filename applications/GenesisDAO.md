@@ -42,7 +42,7 @@ Therefore the basic primitives of a DAO to manage its votes, treasury and token 
 On top of this lays an EVM (Solidity) and WASM (e.g. Ink!) Layer for protocols to support further customization such as legal structure
 document storage and setup, yield aggregation protocols and so on. 
 
-![image](https://user-images.githubusercontent.com/120174523/206677572-4b4fae3b-96cb-4174-ba69-5ba19316446f.png)
+![image](https://user-images.githubusercontent.com/120174523/206688325-d5509f7c-00ff-4e90-9545-0588e3486ff1.png)
 
 Since these protocols have a joint understanding of the interfaces within, Genesis DAO will be a parachain specialized in DAOs.
 
@@ -57,19 +57,19 @@ The basic idea of GenesisDAO is the separation of concerns between the operation
 
 Therefore there are three ways to interact with GenesisDAO: DAO Operations, Proposal Creation and Voting.
 
-![image](https://user-images.githubusercontent.com/120174523/206687674-2343d339-1bc6-477d-bfd8-5ca943b9f7c5.png)
+![image](https://user-images.githubusercontent.com/120174523/206688385-572d16a7-dc76-442a-b310-3bf40783bfd4.png)
 
 *DAO Operations* is the process of creating a DAO, minting the initial token, treasury management and so on. In development terms, this will be a UI on top of the Genesis DAO itself, the creation and management will have a dedicated pallet and we want to build customization hooks that introduce ink! as a configuration language. The substrate implementation section below will elaborate on this.
 
 *Proposal Creation* is a an orchestrated process of creating a proposal in the UI with metadata, description, documentation, binary files like images and so on; packaging all of that data in a structured format and upload it to IPFS and then commit the IPFS hash alongside with metadata and proposal lifecycle information to the Genesis DAO chain.
 
-![image](https://user-images.githubusercontent.com/120174523/206687816-35706d6e-e993-44d2-98ef-31621e323143.png)
+![image](https://user-images.githubusercontent.com/120174523/206688474-f5e215eb-65d8-43f3-b6a3-95bda7380030.png)
 
 The voting process will happen asynchronously, so users on remote chains can vote as well. Voting is the signaling of approval or denial to a proposal and it can be done from remote chains. 
 
 This requires some heavy XCM lifting and some custom extensions to ink! and EVM token implementations, but from the perspective of the user they will be able to participate in governance voting without being aware of the underlying complexities by calling simple *vote(proposalId, approve)* methods on their tokens.
 
-![image](https://user-images.githubusercontent.com/120174523/206688008-89bcf994-bd15-46fb-9c02-ef3a82191a8e.png)
+![image](https://user-images.githubusercontent.com/120174523/206688564-baf598d7-81e6-468d-b5f4-df245f4cc5cc.png)
 
 
 ### Substrate Implementation
