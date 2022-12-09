@@ -9,9 +9,6 @@
 
 **The dashborad client for all assets management and display of the Polkadot Ecology.**
 
-Follow-up: The client with parachains risk assessment, including risk score, risk report, and risk alert for Polkadot Ecology.
-
-
 
 ### Project Details
 
@@ -21,16 +18,7 @@ Follow-up: The client with parachains risk assessment, including risk score, ris
 - Relay chains & Parachains Assets Portfolio
 
 Web3Box Dashboad Preview
-**![](https://lh3.googleusercontent.com/KZwZrmrRtQHMPqqcGkssfYtvC8SDmvGwB0WjbQ6r12Doqrx5yGyLcraGbVbqSFpYQjR-NcHUUK6tLYfmuq3huMCAsRHT0T_qiQ_AIV-KDvgroW1boEHsbeipCwXi245WDXsP3-LnI5BzpsVcXM4O6ux2RUrujJrY8Ah6qemsCDsxXz6FVLEtICp3JF79qw)**
-
-2. Risk assessment (follow-up grant)
-- Parachains Projects Scoring
-- Parechains Projects Risk Report
-- Parachains Abnormal warning
-
-<img width="569" alt="image" src="https://user-images.githubusercontent.com/117150831/200757322-7e71bb05-9246-4367-bf43-f006627e1bab.png">
-e.g. Users could check Acala Parachain's risk socre by Web3Box Risk Assessment Module. The risk score will be evaluated from multiple dimensions such as security, social, market cap, TVL, etc. and calculated based on the model strategy。
-
+<img width="871" alt="image" src="https://user-images.githubusercontent.com/117150831/206617436-04b27271-656d-4a48-ae60-076d7a00aedd.png">
 
 
 
@@ -38,7 +26,7 @@ e.g. Users could check Acala Parachain's risk socre by Web3Box Risk Assessment M
 
 1. Web3Box allows Polkadot ecosystem users to access Polkadot eco multi-wallet and check out the real-time polkadot dashboard in one-stop.
 
-2. Web3Box provides Polkadot users with risk assessment of parachains, so that Polkadot users can timely and accurately understand the risks of parachains; select the parachains with low risks for users to avoid those with high risks when making investment decisions.
+2. Follow-up: Web3Box provides Polkadot users with risk assessment of parachains, so that Polkadot users can timely and accurately understand the risks of parachains; select the parachains with low risks for users to avoid those with high risks when making investment decisions.
 
 
 ## Team 
@@ -72,6 +60,11 @@ https://github.com/web3box-labs
 
 Web3Box has confirmed the overall architecture. And now, Web3Box is confirming the feature development points based on the architecture. At the same time, frontend UI design work is undergoing.
 
+## Tech Details 
+- Client language: Electron.js React.js 
+- Server language: Node.js 
+- Build tool: Webpack
+
 ## Development Roadmap
 
 ### Milestone 1 - Dashboard / Multi-chain Wallet
@@ -87,8 +80,7 @@ Web3Box has confirmed the overall architecture. And now, Web3Box is confirming t
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can install and operate Web3Box client. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Article | We will publish an **article** in our official [Medium](https://medium.com/@web3box.official) that explains what was done/achieved as part of the grant.  |
-| **0e.** | Tech Details | Client language: Electron.js React.js ; Server language: Node.js ; Build tool: Webpack |
-| **0f.** | API Details| On-chain Data: https://polkadot.subscan.io/ ; Price Data(in real-time): https://chain.link/ |
+| **0e.** | Implementations of APIs from third parties | </br> 1. Using API from [Subscan](https://support.subscan.io/#introduction) to get on-chain data, which would be implemented in the module of Dashboard Latest Transactions (Check out the Dashboard Preview) </br> 2. Using API from [Chainlink](https://chain.link/) to get the real-time price of Polkadot assets, which would be implemented in the module of Dashboard Market (Check out the Dashboard Preview) |
 | 1. | **Dashboard**:Statistics and display of Polkadot users' assets | Statistics and display of the value of Polkadot users’ onchain assets, statistics and display of the value of input assets & output assets |
 | 2. | **Dashboard**:Assets pie chart| Polkadot users' asset distribution pie chart |
 | 3. | **Dashboard**:Latest transaction display | View the lastest asset transactions of Polkadot users |
@@ -97,12 +89,12 @@ Web3Box has confirmed the overall architecture. And now, Web3Box is confirming t
 | 6. | **Electron-based Multi-chain Wallet**:Polkadot multi-chain assets management  | Multi-chain asset management, including asset sending, receiving and transaction record query
 
 **Note**
-- Web3Box team will finsih Milestone1, and then start the Milestone 2 Risk Assessment, more details about Milestone2 will be announced by the follow-up grant applicaiton.
+- Web3Box team will finsih Milestone1, and then start the next Milestone about Risk Assessment, more details about risk assessment will be announced by the follow-up grant applicaiton.
 
 
 ## Future Plans
 
-- In the short term, Web3Box team will complete the Milestone1 and Milestone2 on time.
+- In the short term, Web3Box team will complete the Milestone on time.
 - In the long term, Web3Box is aimed to become the most secure and comprehensive Web3 Portal Desktop Client.
 
 
