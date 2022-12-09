@@ -4,10 +4,9 @@
 - **Payment Address:** Ethereum Mainnet, 0x918a4363C35156c8F85F86795a79189e5A1ef557, USDC
 - **Level:** 3
 
-### Overview
+## Overview
 
-#### Intro
-Intro
+### Intro
 Historically, building DAOs requires heavy commitments to a specific chain and development of features on top of skeleton frameworks or template builders
 such as OpenZepplin governance or Aragon DAO. 
 
@@ -29,12 +28,12 @@ existing parachains and protocols, itll be a competitive advantage for
 the polkadot ecosystem as one of the first questions projects have
 to face nowadays is: Where to launch the DAO? On Genesis DAO.
 
-#### Abstract
+### Abstract
 Genesis DAO is a platform as a service for DAOs. The platform lives on a polkadot parachain and utilizes Cross Consensus Messages (XCM) as a first-class citizen of its infrastructure. 
 
 It allows teleporting of DAO tokens to other chains to be native parts of the protocol while voting, treasury and other DAO infrastructure is living natively on Genesis DAO. Genesis DAO manages the ramifications  of DAO on its robust platform – the DAO token itself becomes a lego block that can live on every chain of choice.
 
-#### Conceptual Overview
+### Conceptual Overview
 EVMs ERC-20 token is a shining example of the Unix philosophy of doing one thing and doing it right: The entire DeFi stack was
 built on the shoulders of simple transfer and transferFrom methods alongside a balance entry for bookkeeping.
 
@@ -59,7 +58,7 @@ Since these protocols have a joint understanding of the interfaces within, Genes
 Home of the governance for everything on chain, with its token becoming a lego block in the ecosystem of all blockchains that aim for decentralized governance.
 
 
-### Project Details
+## Project Details
 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant) for each kind of project:
 
@@ -88,7 +87,7 @@ Things that shouldn’t be part of the application (see also our [FAQ](../docs/f
 - For non-infrastructure projects—deployment and hosting costs, maintenance or audits
 - Business-oriented activities (marketing, business planning), events or outreach
 
-### Ecosystem Fit
+## Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
