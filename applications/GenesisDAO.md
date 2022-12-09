@@ -51,32 +51,30 @@ Home of the governance for everything on chain, with its token becoming a lego b
 
 ## Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant) for each kind of project:
+### Architectural Overview
 
-Software development projects:
-- Mockups/designs of any UI components
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+The basic idea of GenesisDAO is the separation of concerns between the operational layer of a protocol and the governance layer of a protocol: The DAO itself is conceptually separated from the implementation of the business processes, but this separation is abstracted away from the user by utilizing XCM.
 
-Research projects:
-- The problem(s) that you want to investigate, and why these are important. 
-- Research questions/hypothesis.
-- The methodology that will be applied. 
-- The data collection and analysis procedures.
-- The expected results and how they would be double-checked by the grants team (reproducibility of the data analysis).
-- Relevant related work.
-- Intended venue for results publication and the timeline for publication. 
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
+Therefore there are three ways to interact with GenesisDAO: DAO Operations, Proposal Creation and Voting.
 
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-- The (future) tokenomics of your project 
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
+![image](https://user-images.githubusercontent.com/120174523/206687674-2343d339-1bc6-477d-bfd8-5ca943b9f7c5.png)
+
+*DAO Operations* is the process of creating a DAO, minting the initial token, treasury management and so on. In development terms, this will be a UI on top of the Genesis DAO itself, the creation and management will have a dedicated pallet and we want to build customization hooks that introduce ink! as a configuration language. The substrate implementation section below will elaborate on this.
+
+*Proposal Creation* is a an orchestrated process of creating a proposal in the UI with metadata, description, documentation, binary files like images and so on; packaging all of that data in a structured format and upload it to IPFS and then commit the IPFS hash alongside with metadata and proposal lifecycle information to the Genesis DAO chain.
+
+![image](https://user-images.githubusercontent.com/120174523/206687816-35706d6e-e993-44d2-98ef-31621e323143.png)
+
+The voting process will happen asynchronously, so users on remote chains can vote as well. Voting is the signaling of approval or denial to a proposal and it can be done from remote chains. 
+
+This requires some heavy XCM lifting and some custom extensions to ink! and EVM token implementations, but from the perspective of the user they will be able to participate in governance voting without being aware of the underlying complexities by calling simple *vote(proposalId, approve)* methods on their tokens.
+
+![image](https://user-images.githubusercontent.com/120174523/206688008-89bcf994-bd15-46fb-9c02-ef3a82191a8e.png)
+
+
+### Substrate Implementation
+
+// todo
 
 ## Ecosystem Fit
 
