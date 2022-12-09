@@ -10,23 +10,15 @@
 Historically, building DAOs requires heavy commitments to a specific chain and development of features on top of skeleton frameworks or template builders
 such as OpenZepplin governance or Aragon DAO. 
 
-This in turn led to significant costs occurring in development, legal structure and
-voting mechanisms. As of today, launching a DAO alongside your crypto project
-remains a mission.
+This in turn led to significant costs occurring in development, legal structure and voting mechanisms. As of today, launching a DAO alongside your crypto project remains a mission.
 
-We see XCM as a shift in the way blockchains interoperate. 10+
-years after Forbes announced the API revolution for the Client-Server Architecture of Web 2.0; crosschain messaging is setup to move blockchains into platforms that
-can abstract away its complexities and specializations behind a sharp
-interface that protocols on other chain-ecosystems can utilize by
-tapping into its XCM specifications.
+We see XCM as a shift in the way blockchains interoperate. 10+ years after Forbes announced the API revolution for the Client-Server Architecture of Web 2.0; crosschain messaging is setup to move blockchains into platforms that can abstract away its complexities and specializations behind a sharp
+interface that protocols on other chain-ecosystems can utilize by tapping into its XCM specifications.
 
-Genesis DAO is among this new wave of emerging platforms and
-provides DAOs as a Service. 
+Genesis DAO is among this new wave of emerging platforms and provides DAOs as a Service. 
 
-Having this in the polkadot ecosystem is not only a huge benefit for
-existing parachains and protocols, itll be a competitive advantage for
-the polkadot ecosystem as one of the first questions projects have
-to face nowadays is: Where to launch the DAO? On Genesis DAO.
+Having this in the polkadot ecosystem is not only a huge benefit for existing parachains and protocols, itll be a competitive advantage for
+the polkadot ecosystem as one of the first questions projects have to face nowadays is: Where to launch the DAO? On Genesis DAO.
 
 ### Abstract
 Genesis DAO is a platform as a service for DAOs. The platform lives on a polkadot parachain and utilizes Cross Consensus Messages (XCM) as a first-class citizen of its infrastructure. 
@@ -45,13 +37,12 @@ The parachain infrastructure builds on top of this layer and adds composable fea
 The governance layer and the central infrastructure become first class (pallet level) citizens of the genesis DAO chain and the
 feature structure and runtime updates are subject to the votes of Genesis DAO Token Holders themself. 
 
-Therefore the basic primitives of a DAO to manage its votes, treasury and token distribution
-will be a fundamental building block of the chain itself.
+Therefore the basic primitives of a DAO to manage its votes, treasury and token distribution will be a fundamental building block of the chain itself.
 
 On top of this lays an EVM (Solidity) and WASM (e.g. Ink!) Layer for protocols to support further customization such as legal structure
 document storage and setup, yield aggregation protocols and so on. 
 
-// TODO PIC
+![image](https://user-images.githubusercontent.com/120174523/206677572-4b4fae3b-96cb-4174-ba69-5ba19316446f.png)
 
 Since these protocols have a joint understanding of the interfaces within, Genesis DAO will be a parachain specialized in DAOs.
 
