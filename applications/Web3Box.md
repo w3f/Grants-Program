@@ -18,7 +18,7 @@
 - Relay chains & Parachains Assets Portfolio
 
 Web3Box Dashboad Preview
-<img width="871" alt="image" src="https://user-images.githubusercontent.com/117150831/206617436-04b27271-656d-4a48-ae60-076d7a00aedd.png">
+<img width="871" alt="image" src="https://user-images.githubusercontent.com/117150831/206617436-04b27271-656d-4a48-ae60-076d7a00aedd.png"/>
 
 
 
@@ -80,7 +80,7 @@ Web3Box has confirmed the overall architecture. And now, Web3Box is confirming t
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can install and operate Web3Box client. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Article | We will publish an **article** in our official [Medium](https://medium.com/@web3box.official) that explains what was done/achieved as part of the grant.  |
-| **0e.** | Implementations of APIs from third parties | </br> 1. Using API from [Subscan](https://support.subscan.io/#introduction) to get on-chain data, which would be implemented in the module of Dashboard Latest Transactions (Check out the Dashboard Preview) </br> 2. Using API from [Chainlink](https://chain.link/) to get the real-time price of Polkadot assets, which would be implemented in the module of Dashboard Market (Check out the Dashboard Preview) |
+| **0e.** | Implementations of APIs from third parties |  **1. Using API from [Subscan](https://support.subscan.io/#introduction) to get on-chain data, which would be implemented in the module of Dashboard Latest Transactions (Check out the Dashboard Preview)** 2. Using API from [Chainlink](https://chain.link/) to get the real-time price of Polkadot assets, which would be implemented in the module of Dashboard Market (Check out the Dashboard Preview) |
 | 1. | **Dashboard**:Statistics and display of Polkadot users' assets | Statistics and display of the value of Polkadot users’ onchain assets, statistics and display of the value of input assets & output assets |
 | 2. | **Dashboard**:Assets pie chart| Polkadot users' asset distribution pie chart |
 | 3. | **Dashboard**:Latest transaction display | View the lastest asset transactions of Polkadot users |
@@ -101,4 +101,3 @@ Web3Box has confirmed the overall architecture. And now, Web3Box is confirming t
 ## Additional Information 
 
 **How did you hear about the Grants Program?** Twitter 
-
