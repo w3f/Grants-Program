@@ -10,15 +10,13 @@
 
 The Upchain Specification, a framework for securing Substrate runtime upgrades and Substrate network upgrades, by extending The Update Framework and modeled on Uptane (The Update Framework Specification extended for automobiles).
 
-I’ve come across several reports of a para-relay chain update/upgrade going awry and a chain is bricked, unable to produce blocks - hi-jinx ensue, and everyone lives happily ever after.
+This RFP seeks W3F Grant applications addressing/proposing how TUF can be integrated into Substrate.
 
-One such case is discussed here: [How to recover a parachain](<https://forum.polkadot.network/t/how-to-recover-a-parachain/673>). The consensus appears to be: Automatic rollback is not possible, and a Parachain being inoperable for some period is the way things will be (hi-jinx required).
+The UpChain specification should serve as an outline of the requirements a chain must implement in order to be described as integrating UpChain.
 
-Potential utility for the wider community is evidenced by the [Polkadot Summit: Barcamp (30 Nov, 1 Dec) topic Parachain Emergency Recovery](https://forum.polkadot.network/t/polkadot-summit-barcamp-submit-agenda-topics-30-nov-1-dec/669/8)
+The UpChain specification should allow for Parachin scaling, see for example [Parachain scaling by Parablock splitting](https://forum.polkadot.network/t/parachain-scaling-by-parablock-splitting/341).
 
-The Upchain specification envisioned here would also serve as an outline of the implementation requirements.
-
-The target audience is authors of the Substrate relay and parachain upgrade logic. The spec should be used by default in all Substrate runtime upgrades and Substrate network upgrades.
+The target audience is authors of the Substrate relay and parachain upgrade logic. The specification should be followed by default in all Substrate runtime upgrades and Substrate network upgrades.
 Developers using Substrate would be oblivious until an upgrade failed - at which point they would notice their legacy logic is still in place.
 
 There is considerable prior art to inform and guide the initial specification.
@@ -43,9 +41,21 @@ Articulating:
 
 Specifically, elements of these two specifications should not silently vanish.
 
+### Context
+
 The Uptane (ECU update framework for automotives) is chosen as the template to begin with and contrast UpChain for a couple of reasons:
-While ECU updates have client-server model where centrally managed updates are pushed to clients, and upgrade failures must leave a vehicle in a safe and usable state.  Substrate upgrades have a single source of truth that also must be pushed to noden, and upgrade failures must leave a node in a safe and usable state.
-Further, there are implementations of the Uptane spec that are not trivial and that experience could be expected to inform the design of UpChain e.g. motivate any deviations or extensions.
+
+* The specification should explicitly address Parachain scaling, see for example [Parachain scaling by Parablock splitting](https://forum.polkadot.network/t/parachain-scaling-by-parablock-splitting/341).
+* While ECU updates have client-server model where centrally managed updates are pushed to clients, and upgrade failures must leave a vehicle in a safe and usable state.  Substrate upgrades have a single source of truth that also must be pushed to nodes, and upgrade failures must leave a node in a safe and usable state.
+* Further, there are implementations of the Uptane spec that are not trivial and that experience could be expected to inform the design of how UpChain protects Parachain scaling e.g. motivate any deviations or extensions.
+
+### Motivation
+
+I’ve come across several reports of a para-relay chain update/upgrade going awry and a chain is bricked, unable to produce blocks - hi-jinx ensue, and everyone lives happily ever after.
+
+One such case is discussed here: [How to recover a parachain](<https://forum.polkadot.network/t/how-to-recover-a-parachain/673>). The consensus appears to be: Automatic rollback is not possible, and a Parachain being inoperable for some period is the way things will be (hi-jinx required).
+
+Potential utility for the wider community is evidenced by the [Polkadot Summit: Barcamp (30 Nov, 1 Dec) topic Parachain Emergency Recovery](https://forum.polkadot.network/t/polkadot-summit-barcamp-submit-agenda-topics-30-nov-1-dec/669/8)
 
 ## Deliverables :nut_and_bolt:
 
