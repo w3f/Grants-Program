@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Mobile Game Framework for Substrate
 
-* **Project:** Mobile Game Framework for Substrate
 * **Proposer:** [enfipy]
 * **Payment Address:** 1Gkvai1HtZmtQ5DWDGrCwarKHh4SErAufe 
 

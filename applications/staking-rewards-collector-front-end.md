@@ -1,20 +1,17 @@
-# W3F Open Grant Proposal
+# Staking Rewards Viewer
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 >
 > See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/#pencil-process) on how to submit a proposal.
 
-* **Project Name:** Staking Rewards Viewer
 * **Team Name:** Jackson Harris III
 * **Payment Address:** Ethereum (DAI) payment address 0x2E07c8624da45FF0Bd4ba18dE7b9156995C44034.
-
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
 This application is in response to [Front-End for Staking Rewards Collector](https://github.com/w3f/General-Grants-Program/blob/master/rfps/staking-rewards-collector-front-end.md)
-
 
 ### Overview
 
@@ -28,15 +25,16 @@ I am interested in utilizing my current Software engineering skills to contribut
 ### Project Details
 
 #### MockUp
+
 ![](https://github.com/jackson-harris-iii/staking-rewards-viewer/blob/main/mockup.png)
 
 #### Technologies
+
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
 * Mockups/designs Adobe Xd
 * Front End: Next.js, Material Design Bootstrap React
 * Back End: N/A (The applicatoin will use a serverless design on Vercel/Fleek)
-
 
 ### Ecosystem Fit
 
@@ -48,12 +46,11 @@ The [staking-rewards-collector](https://github.com/w3f/staking-rewards-collector
 
 * Jackson Harris [Linkedin](https://www.linkedin.com/in/jacksonharris3/) [GitHub](https://github.com/jackson-harris-iii)
 
-
 ### Contact
 
 * **Contact Name:** Jackson Harris III
 * **Contact Email:** jackson.harris3@gmail.com
-* **Website:** https://www.linkedin.com/in/jacksonharris3/
+* **Website:** <https://www.linkedin.com/in/jacksonharris3/>
 
 ### Legal Structure
 
@@ -66,11 +63,11 @@ Jackson Harris: Software Engineer 3 years, Digital Marketing/Business Developmen
 
 ### Team Code Repos
 
-* https://github.com/jackson-harris-iii/staking-rewards-viewer
+* <https://github.com/jackson-harris-iii/staking-rewards-viewer>
 
 ### Team LinkedIn Profiles
 
-* https://www.linkedin.com/in/jacksonharris3/
+* <https://www.linkedin.com/in/jacksonharris3/>
 
 ## Development Status :open_book:
 
@@ -78,7 +75,6 @@ If you've already started implementing your project or it is part of a larger re
 
 * Original [RFP](https://github.com/w3f/General-Grants-Program/blob/master/rfps/staking-rewards-collector-front-end.md) (requests for proposal),
 * Conversation reference to my original [submission](https://github.com/w3f/General-Grants-Program/pull/439) with @axl of w3f
-
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -101,7 +97,7 @@ If you've already started implementing your project or it is part of a larger re
 | 4.  | UI for data visualizer  | Develop an environment to display the output (.csv and .json) for the end user in a pleasurable way. |
 | 5. | Tooltips/Helpers | Implement help texts and tooltips to explain the different features and inputs to users. |
 | 6. | Testing | Write tests to confirm the application behaves as expected |
-| 7. | Polishing & Delivery | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. | 
+| 7. | Polishing & Delivery | Reach out for feedback to the Grants Team. Integrate final feedback on functional, as well as cosmetic changes like font size, colors, typos etc. |
 
 ## Future Plans
 
@@ -109,10 +105,8 @@ If you've already started implementing your project or it is part of a larger re
 * Ask the community for suggestions to improve and add new features as necesary.
 * Refactor and Deploy to IPFS
 
-
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?**
 
 * I watched a video, on youtube, with Gavin Wood where he mentioned the Web3 Foundation and the grants program.
-

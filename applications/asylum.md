@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Asylum
 
-- **Project Name:** [Asylum](https://asylum.space/)
 - **Team Name:** Asylum
 - **Payment Address:** 0x4dE01f5904651353021b9694f16FAb5f02DCD00e (USDT (ERC20))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -192,7 +191,7 @@ Speaking particularly about standards, RMRK provides a basic standard for NFT le
 
 ### Legal Structure
 
-- **Registered Address:** *We are now in process of registration our legal entity, address will be added soon*
+- **Registered Address:** 68 Circular Road, #02-01, 049422, Singapore
 - **Registered Legal Entity:** Asylum Labs PTE LTD
 
 ### Team's experience

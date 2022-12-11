@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Hardware ECDSA for Polkadot JS
 
-* **Project:** Hardware ECDSA for Polkadot JS
 * **Proposer:** @akru
 * **Payment Address:** 1DJTSPajRFCjdfn5UgPXGRo6Di8EE1Dzox
 
