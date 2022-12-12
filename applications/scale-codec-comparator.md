@@ -81,7 +81,7 @@ Not yet
 
 ### Milestone 2
 
-* **Estimated duration:** 1 month
+* **Estimated duration:** 2 month
 * **FTE:**  1
 * **Costs:** 5000 USD
 
@@ -89,7 +89,7 @@ Not yet
 |-------:|------------------|-----------------------------------------------------------------------------------------------------------------------------|
 |    0a. | License          | MIT                                                                                                                         |
 |    0b. | Documentation    | Simple documentation on how to use and how to test                                                                          |
-|     1. | enable Unit test | Providing a FFI make test for [as-scale-codec](https://github.com/LimeChain/as-scale-codec),[cScale](https://github.com/MatthewDarnell/cScale),[scale-codec-cpp](https://github.com/soramitsu/scale-codec-cpp),[hs-web3](https://github.com/airalab/hs-web3/),[polkaj](https://github.com/emeraldpay/polkaj),[scale-ts](https://github.com/unstoppablejs/unstoppablejs/tree/main/packages/scale-ts#scale-ts)|  
+|     1. | enable Unit test | Providing a FFI make test for [as-scale-codec](https://github.com/LimeChain/as-scale-codec),[cScale](https://github.com/MatthewDarnell/cScale),[scale-codec-cpp](https://github.com/soramitsu/scale-codec-cpp),[scale-codec-js-library](https://github.com/soramitsu/scale-codec-js-library),[go-substrate-rpc-client](https://github.com/centrifuge/go-substrate-rpc-client/tree/master/scale),[scale-ts](https://github.com/unstoppablejs/unstoppablejs/tree/main/packages/scale-ts#scale-ts)|  
 |     2. | github action    | Auto test when comparator commit code
 
 ### Milestone 3

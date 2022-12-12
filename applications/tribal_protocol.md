@@ -3,6 +3,7 @@
 - **Team Name:** Tribal Protocol Labs
 - **BTC** **Payment Address:** bc1qvvd32azksdlgqdcer5e6wkxg38yfplg4lyjh0m
 - **Level 2 Grant Submission**
+- **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/979#issuecomment-1326700327)
 
 ## **Project Overview 📄**
 

@@ -320,7 +320,7 @@ Angie: Angie is a Data Scientist in a ASX-listed Fintech in Australia. She has e
 
 ### Milestone 1 — Basic Functionalities
 
-- **Estimated Duration:** 4 months
+- **Estimated Duration:** 5.5 months
 - **FTE:**  2
 - **Costs:** 4,000 USD
 
@@ -335,7 +335,7 @@ Angie: Angie is a Data Scientist in a ASX-listed Fintech in Australia. She has e
 
 ### Milestone 2 Substrate + XCM
 
-- **Estimated Duration:** 4 months
+- **Estimated Duration:** 5 months
 - **FTE:**  2
 - **Costs:** 4,000 USD
 
