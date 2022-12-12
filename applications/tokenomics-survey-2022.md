@@ -170,7 +170,6 @@ Personal
   - Some Simple Economics of the Blockchain
   - Sustainable Growth and Token Economy Design: The Case of Steemit
   - The Blockchain Folk Theorem
-  - The Blockchain Folk Theorem
   - The Economics of BitCoin Price Formation
   - The Economics of Distributed Ledger Technology for Securities Settlement
   - The nature of the firm
@@ -188,6 +187,12 @@ Personal
 
 ## Development Roadmap :nut_and_bolt:
 
+### Overview
+
+- Total Estimated Duration: 4.5 months
+- Full-Time Equivalent (FTE): 1 FTE
+- Total Costs: 54,000 USD
+
 ### Milestone 1 — Data gathering & Polkadot Networks
 
 - **Estimated duration:** 6 weeks
@@ -198,16 +203,12 @@ Personal
 | -----: | ----------- | ------------- |
 | 0a.    | License                   |  Creative Commons Attribution 4.0 International License (article), Dual Apache 2 or MIT License (code) |
 | 0b.    | Documentation             | We will provide both **PDF** and **HTML** versions of the working paper. |
-| 0c.    | Testing and Testing Guide | Milestone 1 is research oriented and as such there is no code to test. |
-| 0d.    | Docker                    | Milestone 1 is research oriented and as such there is no Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e.    | Article                   | We will publish an **working paper** as indcated above. |
+| 0c.    | Article build guide       | A guide to generating the article and related figures or tables. |
+| 0d.    | Docker                    | A Dockerfile(s) that can be used to generate the article PDF and HTML. |
+| 0e.    | Article                   | We will publish an **working paper** as indicated above. |
 | 0e.2   |  - Dotsama Economies      | What are the central features and concerns across Dotsama Token-Economy networks? |
 | 0e.3   |  - Structural Models      | What are the structural approaches to creating a Token-Economy? |
 | 0e.4   |  - Reduced Form Models    | What are the reduced form approaches to creating a Token-Economy? |
-| 1.     | Substrate modules         | Milestone 1 is research oriented and as such there is no Substrate module or chain functionality to implement. |
-| 2.     | Substrate chain           | Milestone 1 is research oriented and as such there is no Substrate chain functionality to implement. |
-| 3.     | Library                   | Milestone 1 is research oriented and as such there is no JS library that will implement the functionality described. |
-| 4.     | Smart contracts           | Milestone 1 is research oriented and as such there is no ink! smart contracts that will implement the functionality described. |
 
 ### Milestone 2 — Outline Article
 
@@ -219,15 +220,12 @@ Personal
 | -----: | ----------- | ------------- |
 | 0a.    | License                   |  Creative Commons Attribution 4.0 International License (article), Dual Apache 2 or MIT License (code) |
 | 0b.    | Documentation             | We will provide both **PDF** and **HTML** versions of the working paper. |
-| 0c.    | Testing and Testing Guide | Milestone 2 is research oriented and as such there is no code to test. |
-| 0d.    | Docker                    | Milestone 2 is research oriented and as such there is no Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e.    | Article                   | We will publish an **working paper** as indcated above. |
+| 0c.    | Article build guide       | A guide to generating the article and related figures or tables. |
+| 0d.    | Docker                    | A Dockerfile(s) that can be used to generate the article PDF and HTML. |
+to test all the functionality delivered with this milestone. |
+| 0e.    | Article                   | We will publish an **working paper** as indicated above. |
 | 0e.2   |  - Partial Equilibrium Models | What token-economy features do the partial equilibrium approaches address? |
 | 0e.3   |  - General Equilibrium Models | What token-economy features do the general equilibrium approaches address? |
-| 1.     | Substrate modules         | Milestone 2 is research oriented and as such there is no Substrate module or chain functionality to implement. |
-| 2.     | Substrate chain           | Milestone 2 is research oriented and as such there is no Substrate chain functionality to implement. |
-| 3.     | Library                   | Milestone 2 is research oriented and as such there is no JS library that will implement the functionality described. |
-| 4.     | Smart contracts           | Milestone 2 is research oriented and as such there is no ink! smart contracts that will implement the functionality described. |
 
 ### Milestone 3 — Finalize Article
 
@@ -254,9 +252,9 @@ Promote the working paper, incorporate feedback.
 | -----: | ----------- | ------------- |
 | 0a.    | License                   |  Creative Commons Attribution 4.0 International License (article), Dual Apache 2 or MIT License (code) |
 | 0b.    | Documentation             | We will provide both **PDF** and **HTML** versions of the working paper. |
-| 0c.    | Testing and Testing Guide | Milestone 3 is research oriented and as such there is no code to test. |
-| 0d.    | Docker                    | Milestone 3 is research oriented and as such there is no Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e.    | Article                   | We will publish an **working paper** as indcated above. |
+| 0c.    | Article build guide       | A guide to generating the article and related figures or tables. |
+| 0d.    | Docker                    | A Dockerfile(s) that can be used to generate the article PDF and HTML. |
+| 0e.    | Article                   | We will publish an **working paper** as indicated above. |
 | 0e.1   |  - Introduction           | Place the topic in perspective and motivate non-specialist readers. |
 | 0e.2   |  - Dotsama Economies      | What are the central features and concerns across Dotsama Token-Economy networks? |
 | 0e.3   |  - Structural Models      | What are the structural approaches to creating a Token-Economy? |
@@ -265,10 +263,6 @@ Promote the working paper, incorporate feedback.
 | 0e.6   |  - General Equilibrium Models | What token-economy features do the general equilibrium approaches address? |
 | 0e.7   |  - Future Directions      | What are unexplored approaches to creating a Token-Economy? |
 | 0e.8   |  - Summary                | Where are we and where to next? |
-| 1.  | Substrate modules         | Milestone 3 is research oriented and as such there is no Substrate module or chain functionality to implement. |
-| 2.  | Substrate chain           | Milestone 3 is research oriented and as such there is no Substrate chain functionality to implement. |
-| 3.  | Library                   | Milestone 3 is research oriented and as such there is no JS library that will implement the functionality described. |
-| 4.  | Smart contracts           | Milestone 3 is research oriented and as such there is no ink! smart contracts that will implement the functionality described. |
 
 ## Future Plans
 
