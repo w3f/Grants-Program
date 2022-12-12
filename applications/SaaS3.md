@@ -21,7 +21,7 @@ Dilemma of web3 Ecosystem - With functionalities yet to become full-fledged, Web
 
 SaaS3 aims to deliver a highly scalable, crypto token incentivized and fully decentralized software as a service (SaaS) network which results in a solution that allows anyone to define and deploy customized oracles according to their Dapp needs. SaaS3 is devoted to transforming traditional web2 API to web3 dAPI.
 
-Essentially, SaaS3 is an TEE powered oracle infrastructure that allows anyone to define and deploy custom oracles according to their Dapp requirements. SaaS3 utilizes TEE technologies, while still enabling decentralization, trustless and secure computation by the secure hardware guarantee of Intel SGX chipset designs and by delegated proof of stake (DPoS) consensus which requires each TEE miner to stake a certain amount of $SAAS tokens. 
+Essentially, SaaS3 is an TEE powered oracle infrastructure that allows anyone to define and deploy custom oracles according to their Dapp requirements. SaaS3 utilizes TEE technologies, while still enabling decentralization, trustless and secure computation by the secure hardware guarantee of Intel SGX chipset designs and by delegated proof of stake (DPoS) consensus.
 
 Therefore, such an infrastructure is not only for oracles that provide data feeds but also any type of computation which requires safe exchange of data. 
 
@@ -87,7 +87,7 @@ In PoN, four roles are involved: creator, miner, staker, and requester, and each
 <img width="894" alt="Screenshot 2022-11-12 at 4 41 30 PM" src="https://user-images.githubusercontent.com/95557343/201471296-4f89fe44-9b72-43d4-ab2d-c6221c8d1a64.png">
 
 - **Creator** is the role of submitting dRuntime to create an oracle (dAPI) service, who can be any kind of off-chain service providers such as crypto exchanges, events organizers, or software developer. 
-- **Staker** is anyone who holds $SAAS tokens and stakes the tokens to dAPIs and miners as the collateral to share profits from their earnings, which formulates delegated proof of stake (DPoS) mechanism. 
+- **Staker** is anyone participating in the delegated proof of stake (DPoS) mechanism. 
 - **Miner** acts as the computational worker to execute dRuntime on the hardware. TEE workers in Phala Network will be adopted in SaaS3 ecosystem to undertake this critical mission. 
 - **Requester** calls the SaaS3 protocol to request off-chain services such as particular data feeds or off-chain computation results.
 
