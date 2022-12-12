@@ -113,9 +113,10 @@ Since then, Robin Ejsmond-Frey has reached out to us to help us apply for this g
 | 1. | Automation | Write scripts that mint user assets from database to the Frequency parachain nightly |
 | 2. | Airdrop | Implement token airdrop to reddit users  |
 | 3. | Security | Improve security of storing user passwords and wallet private keys  |
-| 4. | User Experience | Improve UI with more intuitive sign-up process and easier navigation  |
-| 5. | UI Bugs | Work out edge case UI bugs through user feedback (family and friends) |
-| 6. | Post Deployment | Ship regular updates addressing user feedback / suggestions
+| 4. | AWS | Deploy website / database / backend / etc through AWS Amplify for security, scalability and performance |
+| 5. | User Experience | Improve UI with more intuitive sign-up process and easier navigation  |
+| 6. | UI Bugs | Work out edge case UI bugs through user feedback (family and friends) |
+| 7. | Post Deployment | Ship regular updates addressing user feedback / suggestions
 
 
 ### Milestone 2 Example — User Acquisition 
@@ -132,8 +133,10 @@ Since then, Robin Ejsmond-Frey has reached out to us to help us apply for this g
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Metrics | Define key user metrics to look out for and create easy system to track them  |
 | 2. | Chainlink Integration / Promotion | Implement Chainlink VRF in exchange for them tweeting to ~1 million followers about us |
-| 3. | Airdrops | Promote Reddit airdrop and expand to other social media platforms (twitter first)  |
-| 4. | Promotions | Implement referral program and sign-up token rewards. Create token reward "quests" for promoting the site and verifying account (i.e. linking to other social medias) |
+| 3. | Worldcoin Integration / Promotion | Implement WorldCoin's proof-of-personhood in exchange for publicity |
+| 4. | Airdrops | Promote Reddit airdrop and expand to other social media platforms (twitter first)  |
+| 5. | Promotions | Implement referral program and sign-up token rewards. Create token reward "quests" for promoting the site and verifying account (i.e. linking to other social medias) |
+| 6. | Mobile | Deploy iOS and Andriod applications |
 
 
 ## Future Plans
