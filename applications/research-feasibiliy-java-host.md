@@ -1,7 +1,5 @@
 # Java Host Research Proposal
 
-# **W3F Grant Proposal**
-
 - **Project Name:** Research feasibility of Polkadot Host in Java
 - **Team Name:** [LimeChain](https://github.com/LimeChain)
 - **Payment Address:** eth:0x1F7683228Ee9Bc65335374eA5c92B81C74131404 (USDC/USDT/DAI)
