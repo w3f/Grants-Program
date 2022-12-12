@@ -25,7 +25,6 @@ While 1) and 2) technically can be worked around by using [bpf-linker](https://g
 Despite the constraints, eBPF-based ink! smart contracts would be expected to have some significant advantages over its WASM-based counterpart:
 
 - Simplicity: Due to its register-based instruction set it would be easier to compile
-- Platform support: it's capable of providing support for both X86 and ARM-based machines
 - Efficiency and performance
 
 ### Previous work
