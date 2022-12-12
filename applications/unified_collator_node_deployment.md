@@ -83,13 +83,13 @@ Blaize is a blockchain development company with 5+ years of experience and 60 pe
 
 - **Total Estimated Duration:** 2.5 months
 - **Full-Time Equivalent (FTE):**  FTE 1.5
-- **Total Costs:** 28500 USDT
+- **Total Costs:** 24500 USDT
 
 ### Milestone 1 Unify collator node deployment
 
 - **Total Estimated Duration:** 2.5 months
 - **Full-Time Equivalent (FTE):**  FTE 1.5
-- **Total Costs:** 28500 USDT
+- **Total Costs:** 24500 USDT
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
