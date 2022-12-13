@@ -42,7 +42,7 @@ Therefore the basic primitives of a DAO to manage its votes, treasury and token 
 On top of this lays an EVM (Solidity) and WASM (e.g. Ink!) Layer for protocols to support further customization such as legal structure
 document storage and setup, yield aggregation protocols and so on. 
 
-![image](https://user-images.githubusercontent.com/120174523/206688325-d5509f7c-00ff-4e90-9545-0588e3486ff1.png | width=80)
+<img src="https://user-images.githubusercontent.com/120174523/206688325-d5509f7c-00ff-4e90-9545-0588e3486ff1.png" width="80" />
 
 Since these protocols have a joint understanding of the interfaces within, Genesis DAO will be a parachain specialized in DAOs.
 
