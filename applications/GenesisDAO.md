@@ -59,6 +59,8 @@ Therefore there are three ways to interact with GenesisDAO: DAO Operations, Prop
 
 ![image](https://user-images.githubusercontent.com/120174523/206688385-572d16a7-dc76-442a-b310-3bf40783bfd4.png)
 
+<img src="[https://your-image-url.type](https://user-images.githubusercontent.com/120174523/206688385-572d16a7-dc76-442a-b310-3bf40783bfd4.png)" width="80">
+
 *DAO Operations* is the process of creating a DAO, minting the initial token, treasury management and so on. In development terms, this will be a UI on top of the Genesis DAO itself, the creation and management will have a dedicated pallet and we want to build customization hooks that introduce ink! as a configuration language. The substrate implementation section below will elaborate on this.
 
 *Proposal Creation* is a an orchestrated process of creating a proposal in the UI with metadata, description, documentation, binary files like images and so on; packaging all of that data in a structured format and upload it to IPFS and then commit the IPFS hash alongside with metadata and proposal lifecycle information to the Genesis DAO chain.
