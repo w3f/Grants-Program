@@ -78,7 +78,7 @@ Genesis DAO is constructed of multiple pallets that separate the concerns of a D
 
 The following architecture describes the state before parachain launch, the scope of this first iteration is described in the Development Roadmap section of this document.
 
-![image](https://user-images.githubusercontent.com/120174523/207329520-6a283a9f-d85f-4dd2-8404-95967bb3f23d.png)
+![image](https://user-images.githubusercontent.com/120174523/207329991-0d86a47f-3951-428d-bc0a-4647d603f074.png)
 
 The heart of the chain is the *pallet_dao_core* that offers functionality to create a DAO and store metadata components.
 It manages the entire lifecycle of a DAO from creation, token issuance, management and so on.
