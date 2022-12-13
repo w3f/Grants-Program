@@ -127,27 +127,10 @@ ecosystem will drive adoption to the network.
 
 - **Contact Name:** Full name of the contact person in your team
 - **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
 
 ### Legal Structure
 
 - Deep Ink Ventures GmbH, registered with the commercial register at the local court of Berlin, HRB 247342
-### Team's experience
-
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
-
-### Team Code Repos
-
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
-
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
-
 
 ## Development Roadmap
 
