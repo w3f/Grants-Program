@@ -25,9 +25,8 @@ Please provide the following:
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant) for each kind of project:
+We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
-Software development projects:
 - Mockups/designs of any UI components
 - Data models / API specifications of the core functionality
 - An overview of the technology stack to be used
@@ -36,16 +35,6 @@ Software development projects:
 - What your project is _not_ or will _not_ provide or implement
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
-Research projects:
-- The problem(s) that you want to investigate, and why these are important. 
-- Research questions/hypothesis.
-- The methodology that will be applied. 
-- The data collection and analysis procedures.
-- The expected results and how they would be double-checked by the grants team (reproducibility of the data analysis).
-- Relevant related work.
-- Intended venue for results publication and the timeline for publication. 
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
 
 Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
 - The (future) tokenomics of your project 
@@ -83,7 +72,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
+Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
 
 If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
 
@@ -102,9 +91,6 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://www.linkedin.com/<person_1>
 - https://www.linkedin.com/<person_2>
 
-### Google Scholar Profiles (only for research projects)
-- https://scholar.google.com/citations?user=<person_1>
-- https://scholar.google.com/citations?user=<person_2>
 
 ## Development Status :open_book:
 
@@ -136,7 +122,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 - **FTE:**  1,5
 - **Costs:** 8,000 USD
 
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
+> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
