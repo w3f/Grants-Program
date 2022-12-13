@@ -109,7 +109,14 @@ interact with sharp interfaces, making GenesisDAO a true, extendable platform fo
 
 ## Ecosystem Fit
 
-// todo: Elaborate on common good parachain
+Standing on the shoulder of giants is the driving force of success in tech. Each development software is
+build on uncountable prior engineering power. It's as well a crucial factor of success and adoption of
+a decentralized network and the strength of polkadot lies in the interoperability with other chains.
+
+Given the importance of robust, scalable and customizable DAO infrastructure, we want to establish GenesisDAO
+as a common good parachain within the ecosystem. Easy-to-use, open source, reliable and future proof DAO management
+is a crucial element in decentralization and having DAO infrastructure as a first class citizen in the polkadot
+ecosystem will drive adoption to the network.
 
 ## Team :busts_in_silhouette:
 
