@@ -121,8 +121,6 @@ ecosystem will drive adoption to the network.
 
 ## Team
 
-### Team members
-
 ### Contact
 
 - **Contact Name:** Full name of the contact person in your team
