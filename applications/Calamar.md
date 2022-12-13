@@ -192,13 +192,13 @@ Even though we have the already working application, there are still many things
 | 0d. | Docker | We will provide a Dockerfile(s) for testing and running own Calamar instance. |
 | 0e. | Article | We will publish an article that explains what was done as part of the grant. |
 | 1. | Fix usage blockers | Fix things which block the app's real usage <ul><li>search results are not shareable due to missing info about the chain in the URL</li><li>extrinsic's args are missing</li></ul> |
-| 2. | Add related items listings | Add missing related items listing to detail pages<ul><li>block's transfers, call and events</li><li>extrinsic's calls</li></ul>
+| 2. | Add related items listings | Add missing related items listing to detail pages<ul><li>block's extrinsics, call and events</li><li>extrinsic's calls</li></ul>
 | 3. | Add call detail page | See [Call detail](#call-detail). |
 | 4. | Add event detail page | See [Event detail](#event-detail). |
 | 5. | Responsiveness | Improve overall responsiveness for mobile devices especially of item tables and extrinsics/event args. |
 | 6. | Extrinsics/event args displaying improvements | Add args display options: raw/json, human readable. Find a better way to show nested properties' data types. |
 | 7. | Items count | Current implementation doens't show the total number of searched items. We would like to retrieve the items count and display it properly. |
-| 8. | Extrinsic/event fulltext search by name | Add ability to search extrinsics and events by their name in fulltext manner. |
+| 8. | Extrinsic/event case-insensitive search by name | Add ability to search extrinsics and events by their name case-insensitive. |
 | 9. | Account address parsing in events args | Detect account address in event args and link it to the account detail (chain detected automatically). |
 | 10. | Website polishing | Add useful information to the website (footer with team logos, contact information, terms, etc.). |
 | 11. | Polkadot.js integration | Create a PR to integrate links to the Calamar Explorer into Polkadot.js app. |
