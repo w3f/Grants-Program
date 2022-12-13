@@ -5,7 +5,7 @@
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
 - **Team Name:** QRUCIAL OÜ
-- **Payment Address:** BTC - bc1qysscajxdstqzpe3x9x4ftr3y6l5gelggtk8a8g
+- **Payment Address:** BTC - bc1qwr7awq55z2udjvxj0ar7qfeasf70fasee8fxf2
 - **Level:** 2
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
