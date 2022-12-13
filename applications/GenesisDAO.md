@@ -63,13 +63,13 @@ Therefore there are three ways to interact with GenesisDAO: DAO Operations, Prop
 
 *Proposal Creation* is a an orchestrated process of creating a proposal in the UI with metadata, description, documentation, binary files like images and so on; packaging all of that data in a structured format and upload it to IPFS and then commit the IPFS hash alongside with metadata and proposal lifecycle information to the Genesis DAO chain.
 
-<div align="center"><img src="https://user-images.githubusercontent.com/120174523/206688474-f5e215eb-65d8-43f3-b6a3-95bda7380030.png" width="50%"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/120174523/206688474-f5e215eb-65d8-43f3-b6a3-95bda7380030.png" width="35%"></div>
 
 The voting process will happen asynchronously, so users on remote chains can vote as well. Voting is the signaling of approval or denial to a proposal and it can be done from remote chains. 
 
 This requires some heavy XCM lifting and some custom extensions to ink! and EVM token implementations, but from the perspective of the user they will be able to participate in governance voting without being aware of the underlying complexities by calling simple *vote(proposalId, approve)* methods on their tokens.
 
-![image](https://user-images.githubusercontent.com/120174523/206688564-baf598d7-81e6-468d-b5f4-df245f4cc5cc.png)
+<div align="center"><img src="https://user-images.githubusercontent.com/120174523/206688564-baf598d7-81e6-468d-b5f4-df245f4cc5cc.png" width="80%"></div>
 
 
 ### Substrate Implementation
