@@ -118,12 +118,10 @@ as a common good parachain within the ecosystem. Easy-to-use, open source, relia
 is a crucial element in decentralization and having DAO infrastructure as a first class citizen in the polkadot
 ecosystem will drive adoption to the network.
 
-## Team :busts_in_silhouette:
+
+## Team
 
 ### Team members
-
-- Name of team leader
-- Names of team members
 
 ### Contact
 
@@ -133,9 +131,7 @@ ecosystem will drive adoption to the network.
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
-
+- Deep Ink Ventures GmbH, registered with the commercial register at the local court of Berlin, HRB 247342
 ### Team's experience
 
 Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
@@ -151,15 +147,6 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - https://github.com/<team_member_1>
 - https://github.com/<team_member_2>
-
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
-
-### Google Scholar Profiles (only for research projects)
-- https://scholar.google.com/citations?user=<person_1>
-- https://scholar.google.com/citations?user=<person_2>
 
 
 ## Development Roadmap
