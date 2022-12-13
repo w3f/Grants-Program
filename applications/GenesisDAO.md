@@ -74,7 +74,38 @@ This requires some heavy XCM lifting and some custom extensions to ink! and EVM 
 
 ### Substrate Implementation
 
-// todo
+Genesis DAO is constructed of multiple pallets that separate the concerns of a DAO. Due to its XCM-first approach, it has infrastructure build on top of itself and an integration pallet for other parachains.
+
+The following architecture describes the state before parachain launch, the scope of this first iteration is described in the Development Roadmap section of this document.
+
+![image](https://user-images.githubusercontent.com/120174523/207329520-6a283a9f-d85f-4dd2-8404-95967bb3f23d.png)
+
+The heart of the chain is the *pallet_dao_core* that offers functionality to create a DAO and store metadata components.
+It manages the entire lifecycle of a DAO from creation, token issuance, management and so on.
+
+Tokens itself are created via a custom asset pallet: *pallet_dao_asset* that is a fork from *pallet_asset*, but with
+checkpoint writing upon transfer. This idea is inspired by the compound protocol, where the current voting power at any
+given block is stored on chain as well. Consequently, voters can signal approval or rejection of a proposal at any time
+during the proposal lifecyle, but the actual voting power is determined on closing of the proposal. This technique ensures
+that the token can really live and be traded on other chains, as no lockup on the GenesisDAO chain is required.
+
+The *pallet_dao_vote* is managing proposal lifecycle, where new proposals for a DAO can be made.
+
+The *pallet_dao_xcm* is managing the interface of the GenesisDAO chain to other parachains. It'll expose the functionality
+of transferring a token to other chains and the ability to report votings and token transfers back. Votings will be
+forwarded to the *pallet_dao_vote* to register approval or rejection whereas token transfers are forwarded to the *pallet_dao_asset*
+to write a checkpoint. This pallet is accompanied by a *pallet_dao_integration* that other chains can add in order to integrate
+the GenesisDAO into their chain. Since this functionality is of elevated interest for protocol-enabling chains with EVM or
+ink! support, we will accompany these with our own standard, ERC20DAO, that is the traditional ERC20 interface with additional
+voting methods within the interface and support for the transfer-function XCM extension that enables checkpoint writing on the Genesis DAO.
+
+The GenesisDAO is a protocol enabling chain as well and all pallets on the chain will offer hook functionality into ink! 
+(and later EVM) based contracts. Those hookpoints (contract addresses) are stored in the DAO metadata in *pallet_dao_core* 
+and give DAOs (or third parties building on top of GenesisDAO) the opportunity to plug-in central mechanisms of the DAO such
+as voting-calculations, checkpoint creation, vesting and so on. All pallets will utilize *pallet_contracts* call function to
+interact with sharp interfaces, making GenesisDAO a true, extendable platform for complex and custom DAO setups.
+
+
 
 ## Ecosystem Fit
 
