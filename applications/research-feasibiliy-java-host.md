@@ -3,7 +3,7 @@
 - **Project Name:** Research feasibility of Polkadot Host in Java
 - **Team Name:** [LimeChain](https://github.com/LimeChain)
 - **Payment Address:** eth:0x1F7683228Ee9Bc65335374eA5c92B81C74131404 (USDC/USDT/DAI)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 # Project Overview **📄**
 
@@ -64,9 +64,28 @@ implementation feasibility in Java is the rational first step.
 The end goal of the research as part of this grant is to prove the feasibility and formalise the architecture of Java
 Host written in Java.
 
-Likely, the biggest unknown is if Java can be a viable and performant execution environment for WASM, and especially the
-WebAssembly MVP with domain-specific API that Polkadot uses. In order to clear out this unknown, the team will create a
-small PoC to prove or disprove the feasibility of a Java-based execution environment.
+We would focus on clearing out the unknowns, mitigating the risks and doing feasibility research for several components
+that hold the biggest risks:
+
+- **Runtime Execution Environment** - Verify that Java can be a viable and performant execution environment for WASM,
+  and especially the WebAssembly MVP with the domain-specific API that Polkadot uses. In order to clear out this
+  unknown, the team will create a PoC to prove or disprove the feasibility of a Java-based execution environment. The
+  library to be tested is `wasmer-java`. The following functionalities of `wasmer-java` will be tested:
+  - Load `wasm` (WebAssemblyMVP) bytecode for execution
+  - Import Host APIs within the Runtime
+    - Verify that all `crypto` and hashing primitives can be implemented in Java
+  - Load `__heap_base` exported from the `WASM` runtime
+  - Allocate/Deallocate memory buffer for transferring data between Host <> Runtime
+  - Set data in the shared memory buffer for sending data to Runtime
+  - Call exported from the WASM Bytecode function with data arguments
+  - Read and parse the returned data of the WASM Runtime from the shared memory buffer 
+- **PolkaJ** - https://github.com/emeraldpay/polkaj has a lot of the required building blocks for a Java Host. The team
+  will verify or disprove the feasibility of the `SCALE` codec implementation as-well as the WASM Wrapper implementation
+  of https://github.com/w3f/schnorrkel. As an alternative implementation of `schnorrkel` we will
+  explore https://github.com/debuggor/schnorrkel-java as-well.
+- **libp2p** - `yamux` and [kademlia](https://github.com/libp2p/specs/blob/master/kad-dht/README.md) are not yet supported
+  in the [JVM](https://github.com/libp2p/jvm-libp2p) implementation. We will assess the scope of the missing libraries
+  and will contact the team to discuss potential implementation on their side or contributing on our.
 
 Furthermore, the project will include multiple research outcomes, detailing and specifying the way that the different
 components of light and full nodes can be built.
@@ -82,7 +101,7 @@ components of light and full nodes can be built.
 ### Contact
 
 - **Contact Name:** Christian Veselinov, Zhivko Todorov, George Spasov
-- **Contact Email:** [chris@limechain.tech](https://www.notion.so/062ccd83091540cd93fc322b6f1bf181)
+- **Contact Email:** [chris@limechain.tech](mailto:chris@limechain.tech)
   , [zhivko@limechain.tech](mailto:zhivko@limechain.tech), [george@limechain.tech](mailto:george@limechain.tech)
 - **Website:** [https://limechain.tech](https://limechain.tech/)
 
@@ -147,15 +166,20 @@ Described below are the steps we think are necessary to get a deep understanding
 1. Review and build a PoC for `wasmer-java` against WebAssembly MVP
     1. In order to prove the feasibility of Java being an execution environment we will create a small POC showcasing
        the ability of Java to communicate with a WebAssembly MVP binary
-2. Research the feasibility of the different modules needed in order to create a light client
-3. Research the feasibility of the different modules needed in order to create a full host
-4. Propose an architecture and sensible roadmap for implementing a Java Host, based on the previous steps
+2. Validate / Invalidate the applicability of [PolkaJ](https://github.com/emeraldpay/polkaj)
+    1. Reusing the `SCALE` codec implementation
+    2. Reusing the `schnorrkel` of PolkaJ or [schnorrkel-java](https://github.com/debuggor/schnorrkel-java)
+3. Research the feasibility of [libp2p-jvm](https://github.com/libp2p/jvm-libp2p)
+    1. Discuss timelines on implementing `yamux` and `kademlia` with Protocol Labs or potential contribution
+4. Research the feasibility of the different modules needed in order to create a light client
+5. Research the feasibility of the different modules needed in order to create a full host
+6. Propose an architecture and sensible roadmap for implementing a Java Host, based on the previous steps
 
 ### Overview
 
-- **Total Estimated Duration:** 4 working weeks
+- **Total Estimated Duration:** 6 working weeks
 - **Full-Time Equivalent (FTE):** 2
-- **Total Costs:** $24,000
+- **Total Costs:** $36,000
 
 ### Milestone 1 — Research the feasibility of Polkadot Host in Java
 
@@ -169,14 +193,16 @@ This milestone will:
 | --- | --- | --- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide Markdown documentation of the whole research, explaining the necessary steps needed to resolve the technical challenges of the creation of a Java-based light client and full host. |
-| 1a.  | PoC | Research and outline the feasibility of using wasmer-java for the Runtime Execution Environment for WebAssembly MVP. PoC will be built in order to verify the feasibility. |
+| 1a.  | PoC | Research and outline the feasibility of using `wasmer-java` for the Runtime Execution Environment for WebAssembly MVP. PoC will be built in order to verify the feasibility. |
 | 1b. | Testing Guide | We will provide a testing guide of the PoC of a Java-based WASM execution environment |
 | 1c. | Docker | We will provide a Dockerfile(s) that can be used to test the PoC. |
-| 2. | Research | Research and outline the design of the p2p module of the Java Polkadot Host. |
+| 2. | Research | Research and verify the feasibility of reusing PolkaJ libraries for various components such as `SCALE`, `schnorrkel` and `RPC` API. |
+| 2. | Research | Research and outline the design of the p2p module of the Java Polkadot Host. Asses the implementation of `yamux` and `kademlia`. Contact the Protocol Labs team.|
 | 3. | Research | Research and outline the design of the storage module (Host and Runtime) of the Java Polkadot Host. |
 | 4. | Research | Research and outline the design of the RPC API of the Java Polkadot Host. |
 | 5. | Research | Research and outline the design of the modules and APIs for the Java Polkadot Host to be part of the consensus-reaching processes. |
-| 6. | Documentation | Java Polkadot Host design document will be produced that combines the research findings of the previous deliverables and outlines a high-level specification for the creation of a Java-based light client and host. |
+| 6. | Documentation | Java Polkadot Host design document will be produced that combines the research findings of the previous deliverables and outlines a high-level specification for the creation of a Java-based Host. |
+| 7. | Documentation | Java Polkadot Host design document will be produced that combines the research findings of the previous deliverables and outlines a high-level specification for the creation of a Java-based Light-client. |
 
 # Future Plans
 
