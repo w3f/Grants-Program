@@ -96,6 +96,7 @@ Blaize is a blockchain development company with 5+ years of experience and 60 pe
 | **0a.** | License | Apache 2.0 |
 | **0b.** | Documentation | Documentation includes a comprehensive guide of deployment options, recommended infrastructure and minimal requirements, step-by-step guide on how to deploy, maintain and monitor the collator node |
 | **0c.** | Testing and Testing Guide |	Core functions will be fully covered by comprehensive infrustructure tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Article | We will publish an article that explains the architecture, possible tweaks and benefits of using a unified collator deployment solution |
 | 1. | Unified Infrastructure as Code | Terraforming scrips and deployment scripts for spinning up a Collator node on AWS and GCP clouds |
 | 1a. | Terraform scripts for setting up Collator infrastructure | Configurable deployment via terraform to Kubernetes cluster running on AWS and GCP clouds |
 | 1b. | Ansible scripts for spinning up Collator node | Configurable scripts to run collator node over the infrastructure |
