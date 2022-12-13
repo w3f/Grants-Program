@@ -57,9 +57,7 @@ The basic idea of GenesisDAO is the separation of concerns between the operation
 
 Therefore there are three ways to interact with GenesisDAO: DAO Operations, Proposal Creation and Voting.
 
-![image](https://user-images.githubusercontent.com/120174523/206688385-572d16a7-dc76-442a-b310-3bf40783bfd4.png)
-
-<img src="[https://your-image-url.type](https://user-images.githubusercontent.com/120174523/206688385-572d16a7-dc76-442a-b310-3bf40783bfd4.png)" width="80">
+<img src="[https://your-image-url.type](https://user-images.githubusercontent.com/120174523/206688385-572d16a7-dc76-442a-b310-3bf40783bfd4.png)" width="60">
 
 *DAO Operations* is the process of creating a DAO, minting the initial token, treasury management and so on. In development terms, this will be a UI on top of the Genesis DAO itself, the creation and management will have a dedicated pallet and we want to build customization hooks that introduce ink! as a configuration language. The substrate implementation section below will elaborate on this.
 
