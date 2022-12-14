@@ -11,7 +11,7 @@ Blockcoders is proud to propose the development of a revolutionary cross-chain w
 ### Goals
 
 - Develop a user-friendly wallet that simplifies the management of EVM and WASM accounts in one place.
-- Enable seamless and secure asset transfer between users' accounts on different chains.
+- Enable seamless and secure asset transfer between users accounts on different chains.
 - Provide a safe and intuitive platform for users to sign messages and interact with dApps.
 - Enhance transparency and accountability by displaying transaction details and links to scanner/explorer pages.
 - Maintain the wallet's decentralization and open-source nature, ensuring its trustworthiness and security.
@@ -201,7 +201,7 @@ The last milestone will focus on improving the UX/UI of the wallet. This milesto
 | 2. | Landing page | Develop a landing page and documentation for the wallet. |
 | 3. | Video Tutorial | Create a video tutorial to help users learn how to use the wallet. |
 | 4. | End to End Testing | Test the wallet on different browsers and devices to ensure compatibility and stability. |
-| 5. | QR code | Add a QR code feature to display the address of users' accounts. |
+| 5. | QR code | Add a QR code feature to display the address of users accounts. |
 
 ## Future Plans
 
