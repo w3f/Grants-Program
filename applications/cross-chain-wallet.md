@@ -137,6 +137,7 @@ Create a wallet extension that can be installed on browsers such as Chrome, Fire
 | 0a. | License | MIT |
 | 0b. | Documentation | We will provide both **english** and **spanish** versions of the documentation. This will cover step by step how to configure the environment and send xcm messages. |
 | 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
+| 0d. | Docker | A Dockerfile will be provided that will be able to start the node and run tests for all the functionality delivered within this milestone. |
 | 1. | Chrome/Firefox Extension | Develop a browser extension that can be installed on Chrome, Firefox, and other popular browsers. |  
 | 2. | EVM/WASM accounts | Implement the ability to create and import EVM and WASM accounts. |
 | 3. | Switch between networks | Allow users to switch between networks, such as Astar and Moonbeam, with ease. |
@@ -149,16 +150,19 @@ Create a wallet extension that can be installed on browsers such as Chrome, Fire
 - **FTE:**  3
 - **Costs:** 20,000 USD
 
+The main focus on this milestone will be to allow users to transfer assets between their own accounts. This milestone will include the following features:
+
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 0a. | License | MIT |
 | 0b. | Documentation | We will provide both **english** and **spanish** versions of the documentation. This will cover step by step how to send all kind of xcm messages. |
 | 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
-| 1. | | |
-| 2. | | |
-| 3. | | |
-| 4. | | |
-| 5. | | |
+| 0d. | Docker | A Dockerfile will be provided that will be able to start the node and run tests for all the functionality delivered within this milestone. |
+| 1. | Custom tokens | Enable users to add custom tokens and networks/chains to the wallet. |
+| 2. | Mesasges EVM<>WASM | Provide the ability to sign messages for EVM and WASM accounts. |
+| 3. | Transfer EVM<>WASM | Allow users to transfer assets between their own EVM and WASM accounts on the same chain. |
+| 4. | Transaction history | Show users their transaction history for both EVM and WASM accounts. |
+| 5. | Explorer link | Provide links to explorer pages for enhanced transparency and accountability. |
 
 ### Milestone 3 - Transfer assets between chains
 
@@ -166,14 +170,17 @@ Create a wallet extension that can be installed on browsers such as Chrome, Fire
 - **FTE:**  3
 - **Costs:** 15,000 USD
 
+Milestone number 3 will focus on the transfer of assets between chains. This milestone will include the following features:
+
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 0a. | License | MIT |
 | 0b. | Documentation | We will provide both **english** and **spanish** versions of the documentation. This will cover step by step how to send all kind of xcm messages. |
 | 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
-| 1. | | |
-| 2. | | |
-| 3. | | |
+| 0d. | Docker | A Dockerfile will be provided that will be able to start the node and run tests for all the functionality delivered within this milestone. |
+| 1. | XCM/XVM standard for transfers | Implement the XCM/XVM standard to enable the transfer of assets between EVM and WASM accounts on different chains. |
+| 2. | Call to custom smart contracts | Provide the ability to call custom smart contracts for both EVM and WASM accounts. |
+| 3. | Transactions to custom smart contracts | Enable users to execute transactions on custom smart contracts for both EVM and WASM. |
 
 ### Milestone 4 - Improve UX/UI
 
@@ -181,17 +188,20 @@ Create a wallet extension that can be installed on browsers such as Chrome, Fire
 - **FTE:**  1
 - **Costs:** 10,000 USD
 
+The last milestone will focus on improving the UX/UI of the wallet. This milestone will include the following features:
+
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
 | 0a. | License | MIT |
 | 0b. | Documentation | We will provide both **english** and **spanish** versions of the documentation. This will cover step by step how to send all kind of xcm messages. |
 | 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
-| 1. | | |
-| 2. | | |
-| 3. | | |
-| 4. | | |
-| 5. | | |
-| 6. | | |
+| 0d. | Docker | A Dockerfile will be provided that will be able to start the node and run tests for all the functionality delivered within this milestone. |
+| 0e. | Article | We will post an article on Twitter and Reddit for both english and spanish speakers communities.
+| 1. | Polish UX experience | Enhance the design and user experience of the wallet. |
+| 2. | Landing page | Develop a landing page and documentation for the wallet. |
+| 3. | Video Tutorial | Create a video tutorial to help users learn how to use the wallet. |
+| 4. | End to End Testing | Test the wallet on different browsers and devices to ensure compatibility and stability. |
+| 5. | QR code | Add a QR code feature to display the address of users' accounts. |
 
 ## Future Plans
 
