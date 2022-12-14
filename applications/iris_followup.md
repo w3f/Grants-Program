@@ -66,7 +66,7 @@ Under the hood, the 'data space' is an asset class which is mapped to a set of c
 
 Further, data spaces form the basis for moderation, or curation, within the network. Each data space may have a set of rules associated with it which limits not only the type of data that can be associated with the space, but also with the contents of the data. We intend to accomplish this through the execution of machine learning models, bayesian filters, and more, within a trusted execution environment. However, that work is outside the scope of this proposal.
 
-![data spaces diagram](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_spaces.drawio.png)
+![data spaces diagram](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_spaces.drawio.png?raw=true)
 
 #### Composable Access Rules and Data Access Authentication via a Rule Executor
 
@@ -86,7 +86,7 @@ Proxy nodes form the basis of secure data ingestion and ejection from the networ
 
 Putting data spaces and proxy nodes together, we arrive at the following design:
 
-![proxy nodes](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/proxy_data_spaces_io.drawio.png)
+![proxy nodes](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/proxy_data_spaces_io.drawio.png?raw=true)
 
 
 ##### Offchain Client
@@ -95,11 +95,11 @@ The inclusion of proxy nodes impacts data ingestion and ejection workflows. We w
 
 In the initial design of Iris, data ingestion functioned by allowing a data owner, who is running a full iris node, to add some data to their embedded IPFS node to gossip with a validator node, who would then add the data to their own embedded IPFSS node, which is connected with other validator nodes. This poses several issues. Not only is it insecure, but also it forces data owners to always run a full node which limits the ease of use of the system. Similarly, data ejection functioned by allowing a data consumer to directly connect their embedded IPFS node to a validator node to retrieve data from the 'validator network', which introduced a similar set of issues that data owners would face. Proxy nodes allow us to circumvent both of these issues by acting as a gateway to the IPFS network. To accomplish data ingestion, nodes will run an offchain client, which acts as a file server that only authorized proxy nodes can call into.
 
-![data ingestion](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_injection.drawio.png)
+![data ingestion](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_injection.drawio.png?raw=true)
 
 For data ejection, data consumers run the offchain client which will listen for connections from proxy nodes, accept authorized connections, and provide data consumers the ability to fetch data without running a full node.
 
-![data ejection](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_ejection.drawio.png)
+![data ejection](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_ejection.drawio.png?raw=true)
 
 ##### Encryption/Decryption
 
@@ -115,7 +115,7 @@ Each data ingestion and ejection transaction has an additional transaction fee w
 
 There are two storage layers in Iris, a 'hot' storage layer which is supported by the proxy nodes, and a 'cold' storage layer which exists offchain.
 
-![hot-cold-storage](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/hot_cold_storage.png)
+![hot-cold-storage](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/hot_cold_storage.png?raw=true)
 
 We will build a generic pallet that allows for any given storage backend to be configured for use with Iris. The intention behind this is that it may allow the network to function agnostically of any one given storage solution. The pallet will expose two main extrinsics, a 'read' extrinsic and a 'write' extrinsic, which send commands to proxy nodes to either ingest data from a configured storage system into hot storage, or to store data available in hot storage into cold storage. This approach allows us to support multiple storage backends, as well as provides us the freedom to implement our own storage system in the future without impacting the user experience.
 
