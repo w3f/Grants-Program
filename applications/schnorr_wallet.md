@@ -12,10 +12,7 @@ The Schnorr Signature has been playing an increasingly important role in the blo
 
 It is a simple algorithm leveraging elliptic curve cryptography, it enables several improvements over the existing scheme all while preserving all of its features and security assumptions. Notably, Schnorr signatures support “native multi-sig” which enables the aggregation of multiple signatures into a single one valid for the sum of the keys of their respective inputs. 
 
-Quote from Web3 foundation why Polkadot choose Schnorr signature.
-```
-We prefer Schnorr signatures because they satisfy the Bitcoin Schnoor wishlist and work fine with extremely secure curves, like the Ed25519 curve or secp256k1.
-```
+Quote from Web3 foundation why Polkadot choose Schnorr signature: We prefer Schnorr signatures because they satisfy the Bitcoin Schnoor wishlist and work fine with extremely secure curves, like the Ed25519 curve or secp256k1.
 
 The Schnorr wallet is an aggregation signature wallet for the Polkadot ecosystem, based on the Schnorr signature.
 
@@ -31,7 +28,7 @@ The wallet contains the following functions:
 * Generate keys: The user generates 2 private keys and one public key. The public key is used to receive tokens.
 * Import private key: The user import 2 private keys into 2 different wallets. Enter a password for encryption of the private key.
 * Sign signature: The user sign transaction in the first wallet, output signature. Then sign the transaction in the second wallet and merge the previous signature.
-* Send transaction: The user sends the transaction to the Polkadot Node.
+* Send transaction: The user sends the transaction to the local & remote Polkadot Node.
 
 ### Algorithm
 
@@ -154,14 +151,14 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish **article & demo video** that explains How is Schnorr wallet works based on the Schnorr signature.
-| 1. | Node.js | Develop and test the core functions of the Schnorr wallet, including generating keys, importing & encrypting private keys and, signing the transaction by merging signatures, and sending the transaction to the Polkadot Node.|
+| 1. | Command-Line wallet | Develop and test the core functions of the Schnorr wallet, including generating keys, importing & encrypting private keys and, signing the transaction by merging signatures, and sending the transaction to the Polkadot Node.|
 
 
 ## Future Plans
 
 Please include here
 
-- Develop iOS/Android wallet for blockchain users.
+- Develop Schnorr iOS/Android wallet for blockchain users.
 
 
 ## Additional Information :heavy_plus_sign:
