@@ -40,13 +40,13 @@ The cross-chain functionality will be implemented using the XCM format, enabling
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
-  - {PENDING}
+  - This wallet is a perfect match for the ecosystem as it provides a solution to the problem of having to use multiple wallets to interact with different types of accounts such as EVM and WASM.
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-  - {PENDING}
+  - The target audience is anyone that interacts with the ecosystem using a wallet. From developers to final users.
 - What need(s) does your project meet?
-  - {PENDING}
+  - It provides a solution that today it's resolved by using multiple wallets/applications.  
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - {PENDING}
+  - There aren't any other wallets that support both EVM and WASM accounts and the ability to send assets between them.
   
 ## Team :busts_in_silhouette:
 
