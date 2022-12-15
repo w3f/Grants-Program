@@ -120,7 +120,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ### Overview
 
-- **Total Estimated Duration:** 5 month
+- **Total Estimated Duration:** 6 month
 - **Full-Time Equivalent (FTE):**  3
 - **Total Costs:** 75000 USD
 
@@ -166,7 +166,7 @@ The main focus on this milestone will be to allow users to transfer assets betwe
 
 ### Milestone 3 - Transfer assets between chains
 
-- **Estimated duration:** 1 month
+- **Estimated duration:** 2 month
 - **FTE:**  3
 - **Costs:** 15,000 USD
 
