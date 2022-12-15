@@ -94,49 +94,44 @@ Ink Whale is still in development and the MVP is completed for public test at ht
 
 ### Overview
 
-- **Total Estimated Duration:** 6 months
+- **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):**  5 FTE
-- **Total Costs:** 100,000 USD
+- **Total Costs:** 30,000 USD
 
 
 ### Milestone 1  — NFT Marketplace on Moonbeam and Astar
 * **Estimated Duration:** 8 weeks
-* **Costs:** 20,000 USD
+* **Costs:** 15,000 USD
 
 In this milestone, We will implement all Ink! Smart contracts on Moonbeam and Astar Testnet with full working NFT Marketplace UI/UX and backend. Consider to launch on Mainnet when the networks are ready with Mainnet Smart Contract.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | smart contract implementation | Audited contracts to be deployed on Moonbeam and Astar|
-| 2. | Backend | Build infrastructure to serve the need of NFT Marketplaces|
+| 0a.    | License            | Apache License 2.0                                           |
+| 0b.    | Documentation      | We will provide technical documents and user guides |
+| 0c.    | Testing Guide      | We will provide Test Plan and Test Results for operating and using the NFT Marketplace |
+| 0d.    | Article/Tutorial   | We will write an article or tutorial that explains the NFT Marketplace |
+| 1. | smart contract implementation | Audited contracts to be deployed on Moonbeam and Astar. We use ink! to develop the contracts and the functions that contracts support are: list, unlist NFT, buy NFT at fixed price, bid for an NFT, accept an NFT bid, add NFT Collection, add a launchpad project. |
+| 2. | Backend | Build infrastructure to serve the need of NFT Marketplaces. We use nodejs and mongodb on AWS Services. |
 | 3. | Frontend | Clone front-end from ArtZero to work with Moonbeam and Astar|
 | 4. | Testing | Test Plan and Test Results for operating and using the NFT Marketplace |
-| 5. | Documentation | All technical documents and user guides |
 
 ### Milestone 2  — Ink Whale Staking and Yield Farming Platform Development
 * **Estimated Duration:** 8 weeks
-* **Costs:** 20,000 USD
+* **Costs:** 15,000 USD
 
 In this milestone, We will continue to improve the current development of Ink Whale Platform to completion.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
-| 1. | smart contract development | Enhance the current smart contracts in MVP and create the final version and deploy on Moonbeam, Astar and Aleph Zero Network|
-| 2. | Backend | Build infrastructure to serve the need of Ink Whale|
-| 3. | Frontend | Revamp the front-end for final version|
-| 4. | Testing | Test Plan and Test Results for operating and using Ink Whale|
-| 5. | Documentation | All technical documents and user guides |
+| 0a.    | License            | Apache License 2.0                                           |
+| 0b.    | Documentation      | We will provide technical documents and user guides |
+| 0c.    | Testing Guide      | We will provide Test Plan and Test Results for operating and using the staking and yield farming platform. |
+| 0d.    | Article/Tutorial   | We will write an article or tutorial that explains the work principle as part of the grant. |
+| 1. | smart contract development | Enhance the current smart contracts in MVP and create the final version and deploy on Moonbeam, Astar and Aleph Zero Network. The contracts will have following functions: create PSP22 token, create a staking pool, create NFT yield farm, create token yield farm, add rewards to pool, remove rewards from pool, claim reward from pool. |
+| 2. | Backend | Build infrastructure to serve the need of Ink Whale. We use nodejs and mongodb on AWS Services. |
+| 3. | Frontend | Revamp the front-end for final version, better UI/UX. |
 
-### Milestone 3  — Audit and Launching Ink Whale platform
-* **Estimated Duration:** 4 weeks
-* **Costs:** 60,000 USD
-
-In this milestone, We will start auditing the smart contract code and launching Ink Whale Platform
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 1. | smart contract audit | Work with Audit firm to review the code and fix all issues|
-| 2. | Launch | Launch Ink Whale on Aleph Zero, Moonbeam and Astar|
 
 ## Future Plans
 
