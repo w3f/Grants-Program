@@ -12,6 +12,8 @@
    - GSHEET_PRIVATE_KEY
    - GSHEET_CLIENT_EMAIL 
    - SPREADSHEET_ID
+   - MATRIX_TOKEN
+   - MATRIX_CHANNEL_ID (for both matrix vars, refer to [this](https://github.com/fadenb/Matrix-Chat-Message) guide, W3F account is on 1Password)
    - ACTIONS_STEP_DEBUG: set this to true for more verbose logs on workflow runs
    - ACTIONS_RUNNER_DEBUG: similar as above, haven't tried it
 
