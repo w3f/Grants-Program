@@ -22,5 +22,5 @@ jobs:
           token: ${{ secrets.MATRIX_TOKEN }}
           channel: ${{ secrets.MATRIX_CHANNEL_ID }}
           message: |
-            [TEST] PR APPROVED: [${{ github.event.pull_request.title }}](https://github.com/w3f/Grants-Program/pull/${{ github.event.pull_request.number }}) has been approved by ${{ github.event.review.user.login }}. 
+            PR APPROVED: [${{ github.event.pull_request.title }}](https://github.com/w3f/Grants-Program/pull/${{ github.event.pull_request.number }}) has been approved by ${{ github.event.review.user.login }}. 
             Approvals required: ${{ env.APPROVALS }}

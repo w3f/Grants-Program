@@ -15,4 +15,4 @@ jobs:
         token: ${{ secrets.MATRIX_TOKEN }}
         channel: ${{ secrets.MATRIX_CHANNEL_ID }}
         message: |
-          [TEST] PR READY FOR REVIEW: [${{ github.event.pull_request.title }}](https://github.com/w3f/Grants-Program/pull/${{ github.event.pull_request.number }}) is ready for review. Labeled by ${{ github.event.sender.login }};
+          PR READY FOR REVIEW: [${{ github.event.pull_request.title }}](https://github.com/w3f/Grants-Program/pull/${{ github.event.pull_request.number }}) is ready for review. Labeled by ${{ github.event.sender.login }};
