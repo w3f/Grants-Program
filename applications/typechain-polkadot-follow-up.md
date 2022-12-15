@@ -4,7 +4,7 @@
 
 - **Project Name:** [Typechain-Polkadot](https://github.com/727-Ventures/typechain-polkadot)
 - **Team Name:** [727.ventures](https://github.com/727-Ventures)
-- **Payment Address:** ERC 20 ADDRESS:
+- **Payment Address:** ERC 20 (DAI):
 0x352F779203202c99699CdA8cc95adF06CcC8abEf
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
