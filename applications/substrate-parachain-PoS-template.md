@@ -72,26 +72,26 @@ This is more friendly to both developers and users. It is born for better use of
 
 - **Total Estimated Duration:** 2 weeks
 - **Full-Time Equivalent (FTE):**  2
-- **Total Costs:** 3000 USD
+- **Total Costs:** 4000 USD
 
 ### Milestone 1
 Based on the nimbus consensus, make a PoS parachain development template with Polkadot Staking and Staking related modules.
 
 - **Estimated duration:** 2 weeks
 - **FTE:**  2
-- **Costs:** 3000 USD
+- **Costs:** 4000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
-|  Number | Deliverable                 | Specification                                                                                   |
-|--------:|-----------------------------|-------------------------------------------------------------------------------------------------|
-| **0a.** | License                     | Apache 2.0 / GPLv3 / MIT / Unlicense                                                            |
-| **0b.** | Documentation               | Add documentation explaining how these modules fit together to complete the entire PoS process. |
-| **0c.** | Testing and Testing Guide   | Add manual tests to prove that the entire PoS runs successfully.                                |
-| **0d.** | Docker                      | Provide Docker to the chain, allowing anyone to quickly run the chain                           |
-|       1 | try-runtime                 | Implement try-runtime for template clients.  [PureStake/nimbus](https://github.com/PureStake/nimbus) does not implement this part  |
-|       2 | modules                     | Imp all staking-related substrate native modules for the runtime.                               |
-|       3 | Substrate Modlue: Collators | Provide collectors (validators) for nimbus consensus.                                           |
+|  Number | Deliverable                 | Specification                                                                                                                                                                               |
+|--------:|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                     | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                        |
+| **0b.** | Documentation               | Add documentation explaining how these modules fit together to complete the entire PoS process.                                                                                             |
+| **0c.** | Testing and Testing Guide   | Add manual tests to prove that the entire PoS runs successfully.                                                                                                                            |
+| **0d.** | Docker                      | Provide Docker to the chain, allowing anyone to quickly run the chain                                                                                                                       |
+|       1 | try-runtime                 | Implement try-runtime for template clients.  [PureStake/nimbus](https://github.com/PureStake/nimbus) does not implement this part                                                           |
+|       2 | modules                     | Imp all staking-related substrate native modules for the runtime.                                                                                                                           |
+|       3 | Substrate Modlue: Collators | Provide collectors (validators) for nimbus consensus. The collator can also come from staking, and it can be set directly by root or other origin. Means you can choose whether to use PoS. |
 
 ## Future Plans
 
