@@ -74,7 +74,8 @@ This is more friendly to both developers and users. It is born for better use of
 - **Full-Time Equivalent (FTE):**  2
 - **Total Costs:** 3000 USD
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1
+Based on the nimbus consensus, make a PoS parachain development template with Polkadot Staking and Staking related modules.
 
 - **Estimated duration:** 2 weeks
 - **FTE:**  2
@@ -82,15 +83,16 @@ This is more friendly to both developers and users. It is born for better use of
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
-| Number | Deliverable               | Specification                                                                                                                                                                                                                                 |
-| -----: |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                   | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                          |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                               |
-| **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                 |
-| 0e. | Article                   | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)                                                |
-|1| try-runtime               | Implement try-runtime for template clients.                                                                                                                                                                                                   |
-|2 | modules                   | Implement all staking-related substrate native modules for the template runtime.                                                                                                                                                              |
+|  Number | Deliverable                 | Specification                                                                                   |
+|--------:|-----------------------------|-------------------------------------------------------------------------------------------------|
+| **0a.** | License                     | Apache 2.0 / GPLv3 / MIT / Unlicense                                                            |
+| **0b.** | Documentation               | Add documentation explaining how these modules fit together to complete the entire PoS process. |
+| **0c.** | Testing and Testing Guide   | Add manual tests to prove that the entire PoS runs successfully.                                |
+| **0d.** | Docker                      | Provide Docker to the chain, allowing anyone to quickly run the chain                           |
+|       1 | try-runtime                 | Implement try-runtime for template clients.  [PureStake/nimbus](https://github.com/PureStake/nimbus) does not implement this part  |
+|       2 | modules                     | Imp all staking-related substrate native modules for the runtime.                               |
+|       3 | Substrate Modlue: Collators | Provide collectors (validators) for nimbus consensus.                                           |
+
 ## Future Plans
 
 We are very happy to know that Polkadot is officially developing the SASSAFRAS consensus, and look forward to completing it sooner, so that we can replace the nimbus consensus and make this PoS template completely Polkadot. Currently we temporarily use nimbus to make block consensus,
