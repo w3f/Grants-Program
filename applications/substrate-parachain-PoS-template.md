@@ -10,7 +10,7 @@
 
 
 Parachain projects require more project parties to use PoS, which helps them achieve a certain degree of decentralization, and the economic model is healthier and more favored by the community.
-Our aband-parachain project uses the [project of the moonbean team](https://github.com/PureStake/nimbus) as the Pos block consensus, because it achieves randomness, but it only needs the function of randomness.
+Our aband-parachain project uses the [PureStake/nimbus](https://github.com/PureStake/nimbus) as the Pos block consensus, because it achieves randomness, but it only needs the function of randomness.
 In the business layer, we prefer the staking developed by the Polkadot team and a series of modules related to staking. It took us two days to familiarize ourselves with the codes of these two projects, and then implemented Staking on the third day.
 This makes us a little frustrated, we are senior developers of substrate, if we are all like this, it will take more time for beginners, even if it is a strong development team,
 You shouldn't spend too much time on it either. We hope to make a PoS template, so that developers can develop their own PoS projects without taking a minute.
@@ -27,7 +27,7 @@ A substrate development template like [substrate-developer-hub/substrate-paracha
 In this project, we don't have any UI to design, which is the advantage of this project. Because except for the block consensus, other modules come from substrate.
 We don't need to write a lot of extra code, and we don't even have our own modules. Let developers not realize our existence, but we do the repetitive work they have to do.
 This template comes from our project, we will continue to follow up the latest polkadot version, and there will be more projects to use and maintain together.
-We just hope that more parachain project parties can use Substrate's native Staking and Staking-related functions at no cost. Make it as generic as the [Aura version of the parachain template](https://github.com/substrate-developer-hub/substrate-parachain-template).
+We just hope that more parachain project parties can use Substrate's native Staking and Staking-related functions at no cost. Make it as generic as the [substrate-developer-hub/substrate-parachain-template](https://github.com/substrate-developer-hub/substrate-parachain-template).
 With more developers using this template, it will further help us find problems when upgrading the runtime or client of aband-parachain. Make Aband-Network more secure.
 ### Ecosystem Fit
 
