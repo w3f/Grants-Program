@@ -25,7 +25,7 @@ Ink Whale is still in development and the MVP is completed for public test at ht
 
 SubWallet is our friend and partner, their office is literally 5 minutes from our office and we have collaborated on many things in the past. Our team helped SubWallet in the development of https://dotinsights.subwallet.app/ and also working with SubWallet to integrate Aleph Zero blockchain to their wallet.
 
-Ink Smart Contract is very new, but our team has strong knowledge of development on Ink!. I believe our smart contracts are one of the very few in auditing process. ArtZero is also one of the very first dapps developed on Ink Ecosystem.
+Ink Smart Contract is very new, but our team has strong knowledge of development on Ink!. ArtZero is also one of the very first dapps developed on Ink Ecosystem.
 
 In Nov 2022, we also received the bounty for find a serious bug in Substrate Ink! by Parity Security Team. The fix is at PR #11771.
 
@@ -111,9 +111,9 @@ In this milestone, We will implement all Ink! Smart contracts on Moonbeam and As
 | 0b.    | Documentation      | We will provide technical documents and user guides |
 | 0c.    | Testing Guide      | We will provide Test Plan and Test Results for operating and using the NFT Marketplace |
 | 0d.    | Article/Tutorial   | We will write an article or tutorial that explains the NFT Marketplace |
-| 1. | smart contract implementation | Audited contracts to be deployed on Moonbeam and Astar. We use ink! to develop the contracts and the functions that contracts support are: list, unlist NFT, buy NFT at fixed price, bid for an NFT, accept an NFT bid, add NFT Collection, add a launchpad project. |
+| 1. | smart contract implementation | Contracts to be implemented and deployed on Moonbeam and Astar networks. We use ink! to develop the contracts and the functions that contracts support are: list, unlist NFT, buy NFT at fixed price, bid for an NFT, accept an NFT bid, add NFT Collection, add a launchpad project. |
 | 2. | Backend | Build infrastructure to serve the need of NFT Marketplaces. We use nodejs and mongodb on AWS Services. |
-| 3. | Frontend | Clone front-end from ArtZero to work with Moonbeam and Astar|
+| 3. | Frontend | Create new front-end to work with Moonbeam and Astar. |
 | 4. | Testing | Test Plan and Test Results for operating and using the NFT Marketplace |
 
 ### Milestone 2  — Ink Whale Staking and Yield Farming Platform Development
