@@ -25,11 +25,11 @@ In this project, we don't have any UI to design, which is the advantage of this 
 We don't need to write a lot of extra code, and we don't even have our own modules. Let developers not realize our existence, but we do the repetitive work they have to do.
 This template comes from our project, we will continue to follow up the latest polkadot version, and there will be more projects to use and maintain together.
 We just hope that more parachain project parties can use Substrate's native Staking and Staking-related functions at no cost. Make it as generic as the [Aura version of the parachain template](https://github.com/substrate-developer-hub/substrate-parachain-template).
-
+With more developers using this template, it will further help us find problems when upgrading the runtime or client of aband-parachain. Make Aband-Network more secure.
 ### Ecosystem Fit
 
 This project makes up for Polkadot's lack of official PoS parachain templates. At the same time, it also makes up for the shortcomings of moonbean, because their Staking is very different from Substrate's Staking.
-This is more friendly to both developers and users. It is born for better use of substrate to develop PoS parallel chains
+This is more friendly to both developers and users. It is born for better use of substrate to develop PoS parallel chains. 
 
 ## Team :busts_in_silhouette:
 
@@ -69,13 +69,13 @@ This is more friendly to both developers and users. It is born for better use of
 
 - **Total Estimated Duration:** 2 weeks
 - **Full-Time Equivalent (FTE):**  2
-- **Total Costs:** 4000 USD
+- **Total Costs:** 3000 USD
 
 ### Milestone 1 Example — Basic functionality
 
 - **Estimated duration:** 2 weeks
 - **FTE:**  2
-- **Costs:** 4000 USD
+- **Costs:** 3000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
