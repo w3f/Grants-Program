@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    if:  github.repository_owner == 'w3f'
     name: build and deploy
     runs-on: ubuntu-latest
     steps:
@@ -30,4 +31,4 @@ jobs:
           token: ${{ secrets.MATRIX_TOKEN }}
           channel: ${{ secrets.MATRIX_CHANNEL_ID }}
           message: |
-            WEBSITE BUILD FAILED: [This](https://github.com/w3f/Grants-Program/commit/${{ github.sha }}) is the commit of the PR merge.
+            WEBSITE BUILD FAILED: [This](https://github.com/w3f/Grants-Program/commit/${{ github.sha }}) is the last push commit.
