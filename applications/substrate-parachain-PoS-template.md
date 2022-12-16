@@ -20,7 +20,10 @@ It is very meaningful to create a PoS parachain template that only has a differe
 
 
 ### Project Details
-
+### Language
+rust, and subsrate
+### Details
+A substrate development template like [substrate-developer-hub/substrate-parachain-template](https://github.com/substrate-developer-hub/substrate-parachain-template), this template implements PoS.
 In this project, we don't have any UI to design, which is the advantage of this project. Because except for the block consensus, other modules come from substrate.
 We don't need to write a lot of extra code, and we don't even have our own modules. Let developers not realize our existence, but we do the repetitive work they have to do.
 This template comes from our project, we will continue to follow up the latest polkadot version, and there will be more projects to use and maintain together.
