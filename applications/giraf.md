@@ -1,4 +1,4 @@
-# GIRAF - Legislation for communities
+# As a user of demo UI
 
 - **Team Name:** Slonigiraf
 - **Payment Address:** bc1qyuk4rdeqvc2rmetfhr3key4clty5sglaw4n5wx (BTC)
@@ -133,12 +133,12 @@ GitHub accounts of all team members:
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | User Story 1 | As a user of demo UI, I can create a law by providing a text and an amount of tokens to be spent |
-| 2. | User Story 2 | As a user of demo UI, I can view a list of published laws |
-| 3. | User Story 3 | As a user of demo UI, I can see details of a selected law: it text, hash and current price |
-| 4. | User Story 4 | As a user of demo UI, I can spend my tokens to make the law more expensive and solid |
-| 5. | User Story 5 | As a user of demo UI, I can spend my tokens to make the law less expensive and less solid |
-| 6. | User Story 6 | As a user of demo UI, I can cancel the law by spending my tokens |
+| 1. | User Story 1 | Substrate functions to create a law by providing a text and an amount of tokens to be spent |
+| 2. | User Story 2 | Substrate functions to view a list of published laws |
+| 3. | User Story 3 | Substrate functions to see details of a selected law: it text, hash and current price |
+| 4. | User Story 4 | Substrate functions to tokens to make the law more expensive and solid |
+| 5. | User Story 5 | Substrate functions to spend tokens to make the law less expensive and less solid |
+| 6. | User Story 6 | Substrate functions to cancel the law by spending tokens |
 
 ### Milestone 2 — Additional features
 
