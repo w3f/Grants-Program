@@ -17,17 +17,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
       - name: Publish
         run: |
           git config --global user.email "grants-deployer@users.noreply.github.com"
           git config --global user.name "grants-deployer"
           echo "machine github.com login grants-deployer password ${{ secrets.ACCESS_KEY }}" > ~/.netrc
           yarn && yarn build && GIT_USER=grants-deployer PUBLISHING=true yarn deploy
-          
-      - name: Send failure message to matrix channel
-        if: ${{ failure() }}
-        id: matrix-chat-message-failure
+      - if: ${{ failure() }}
         uses: fadenb/matrix-chat-message@v0.0.6
         with:
           homeserver: 'matrix.web3.foundation'
