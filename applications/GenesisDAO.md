@@ -207,3 +207,5 @@ Simoultanously, we will start building initial ink! infrastructure. Since we are
 elegant UX and UI, we want to heavily invest into user research and rapid feedback cycles to incorporate the needs of the 
 community directly after the PoC that is build within this grant is live.
 
+The important outline for this project is to become a common good parachain, that acts as an infrastructure service for the ecosystem. Therefore extendable integrations with other important chains in the polkadot realm as well as attracting dao-specific protocols to extend the base chain functionality is part of the near term roadmap as well.
+
