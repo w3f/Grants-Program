@@ -1,7 +1,7 @@
 # Hardware ECDSA for Polkadot JS
 
 * **Proposer:** @akru
-* **Payment Address:** 1DJTSPajRFCjdfn5UgPXGRo6Di8EE1Dzox
+* **Payment Address:** 146iwtFpePG4GqBfNpMTDRgqfwNjj248JpvDKLyFPM1KSsa (Kusama)
 
 ## Project Description :page_facing_up: 
 
@@ -14,39 +14,25 @@ Plasm Network(https://plasmnet.io) is a scaling Dapps platform on Substrate. Pla
 
 ## Team :busts_in_silhouette:
 
-* **Members:** Aleksandr Krupenkin, Sota Watanabe, Takumi Yamashita, Task Ohmori, Kim Hoon
+* **Members:** Aleksandr Krupenkin, Sota Watanabe, Takumi Yamashita, Task Ohmori, Hoon Kim
 * **LinkedIn Profiles:** http://linkedin.com/in/krupenkin, https://www.linkedin.com/in/sota-watanabe-b962b3110, http://linkedin.com/in/task-ohmori-604398176
-* **Code Repos:** https://github.com/staketechnologies/common, https://github.com/staketechnologies/apps
-* **Website:** https://stake.co.jp
-* **Legal Structure:** Stake Technologies Inc. Avex EYE Avex Blog 3-1-30 Minamiaoyama Minato-ku Tokyo Japan
+* **Code Repos:** https://github.com/AstarNetwork/astar-frame, https://github.com/hoonsubin/apps/tree/page/custom-signature
+* **Website:** https://astar.network
+* **Legal Structure:** STAKE TECHNOLOGIES PTE. LTD. 105 CECIL STREET #24-02 THE OCTAGON SINGAPORE (069534)
 * **Team's Experience:**  Stake Technologies is a technology company that focuses on substrate research and development as same as the business application of given results. Aleksandr Krupenkin, main experience as Haskell Web3 library (https://hs-web3.readthedocs.io/en/latest/index.html) owner, including cryptographic functions for Haskell Ethereum client.
 
 
 ## Development Roadmap :nut_and_bolt: 
 
-* **Total Estimated Duration:** 6 weeks
+* **Total Estimated Duration:** 10 weeks
 * **Full-time equivalent (FTE):** 0.6
-* **Total Costs:** 0.7 BTC
+* **Total Costs:** 10,000 USDT
 
 ### Milestone 1
 
-* **Estimated Duration:** 3 weeks 
+* **Estimated Duration:** 10 weeks 
 * **Full-time equivalent (FTE):** 0.6
-* **Costs:** 0.35 BTC
-
-Trezor API support for Polkadot JS Apps.
-
-| Number | Deliverable | Specification | 
-| ------------- | ------------- | ------------- |
-| 1. | Trezor API ECDSA signer | Introducing Trezor API based signed for Polkadot JS. Required API methods already exposed by standard Trezor API: [getPublicKey](https://wiki.trezor.io/Developers_guide:Trezor_Connect_API_Methods#getPublicKey), [signMessage](https://wiki.trezor.io/Developers_guide:Trezor_Connect_API_Methods#signMessage). |
-| 2. | Improve documentation | Add Trezor hardware wallet paragraph into Polkadot-js documentation. |
-| 3. | Demo video | Provide demo video of Polkadot Apps sign transaction with Trezor wallet. |
-
-### Milestone 2
-
-* **Estimated Duration:** 3 weeks 
-* **Full-time equivalent (FTE):** 0.6
-* **Costs:** 0.35 BTC
+* **Costs:** 10,000 USDT
 
 Ledger API support for Polkadot JS Apps.
 
@@ -55,4 +41,3 @@ Ledger API support for Polkadot JS Apps.
 | 1. | Ledger API ECDSA signer | Introducing Ledger API based signed for Polkadot JS. Required API methods already exposed by standard Ledger API: [getPublicKey](https://github.com/LedgerHQ/ledgerjs/blob/96306b2c0d75e1290461fb52b8f69f506a425643/packages/hw-app-btc/src/getWalletPublicKey.js#L16), [signMessage](https://github.com/LedgerHQ/ledgerjs/blob/96306b2c0d75e1290461fb52b8f69f506a425643/packages/hw-app-btc/src/signMessage.js#L6). |
 | 2. | Improve documentation | Add Ledger hardware wallet paragraph into Polkadot-js documentation. |
 | 3. | Demo video | Provide demo video of Polkadot Apps sign transaction with Trezor wallet. |
-
