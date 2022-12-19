@@ -1,6 +1,6 @@
 # Typechain grant #2
 
-# W3F Grant Proposal
+# [Typechain-Polkadot](https://github.com/Supercolony-net/typechain-polkadot)
 
 - **Project Name:** [Typechain-Polkadot](https://github.com/727-Ventures/typechain-polkadot)
 - **Team Name:** [727.ventures](https://github.com/727-Ventures)

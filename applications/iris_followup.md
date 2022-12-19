@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Iris
 
-- **Project Name:** Iris
 - **Team Name:** Ideal Labs
 - **Payment Address:** 0xB7E92CCDE85B8Cee89a8bEA2Fd5e5EE417d985Ad (DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
@@ -284,7 +283,7 @@ This milestone delivers two distinct deliverables.
 
 ### Milestone 2 - Proxy/Gateway Nodes
 
-- **Estimated Duration:** 1.5 months
+- **Estimated Duration:** 5.5 months
 - **FTE:**  2.5
 - **Costs:** 22,000 USD
 
@@ -310,7 +309,7 @@ This milestone delivers two distinct deliverables.
 
 ### Milestone 3 - Storage System
 
-- **Estimated Duration:** 1 month
+- **Estimated Duration:** 2 month
 - **FTE:**  2.5
 - **Costs:** 18,000 USD
 

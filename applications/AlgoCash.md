@@ -1,13 +1,11 @@
-# Open Grant Proposal
+# AlgoCash
 
 > This document is referenced in the terms and conditions and therefore needs to contain all the required information. Don't remove any of the mandatory parts presented in bold letters or as headlines! See the [Open Grants Program Process](https://github.com/w3f/Open-Grants-Program/blob/master/README_2.md) on how to submit a proposal.
 
-
-
-* **Project Name:** Algo Cash
 * **Team Name:** Reserve Labs
 * **Payment Address:** DAI Address: 0x3f91475fbd0c3d9c676d39af071691c1cf635f0b
-## Project Overview 
+
+## Project Overview
 
 ### Overview
 
@@ -25,15 +23,13 @@ Algo Cash is implemented as a smart contract which can be deployed into ink! pal
 
 For trading and liquidity purpose, Algo Cash could be integrated with such protocols in Polkadot as Konomi and Zenlink.
 
-
-## Project Details 
+## Project Details
 
 ### Tokens
 
 #### ALC - Algo Cash
 
-Algo Cash tokens are designed to be used as a medium of exchange. The built-in stability mechanism expands and contracts their supply, maintaining their peg to the aUSD token. 
-
+Algo Cash tokens are designed to be used as a medium of exchange. The built-in stability mechanism expands and contracts their supply, maintaining their peg to the aUSD token.
 
 #### ALB - Algo Bonds
 
@@ -66,7 +62,6 @@ The Algo Cash protocol is designed to guarantee Algo Cash tokens to be exchanged
 Every 24 hours, the time-weighted average of the ALC-aUSD exchange rate is read from the DEX Aggregator in Polkaot, which is then fed into the Algo Cash protocol to be referenced by its stability mechanism.
 
 The stabilization mechanism is triggered whenever the price of Algo Cash is observed to be above / below (1+ε) aUSD, where ε is a parameter that defines the range of price stability for the ALC token. In inilization, ε is set to be 0.05.
-
 
 #### Contractionary Policy
 
@@ -104,25 +99,21 @@ Advantages
 
 **cash - Minting and burning of the cash token**
 
-Mints *amount* cash to the *recipient* account. 
+Mints *amount* cash to the *recipient* account.
 
 Burns *amount* cash from the *account*.
 
-
 **bond - Minting and burning of the bond token**
 
-Mints *amount* bond to the *recipient* account. 
+Mints *amount* bond to the *recipient* account.
 
 Burns *amount* bond from the *account*.
 
-
-
 **share - Minting and burning of the share token**
 
-Mints *amount* share to the *recipient* account. 
+Mints *amount* share to the *recipient* account.
 
 Burns *amount* share from the *account*.
-
 
 **Treasure - Bond purchase and redemptions**
 
@@ -133,7 +124,6 @@ Mints *amount* Algo Bonds, in exchange for same *amount* Algo Cash burnt.
 Mints *amount* Algo Cash, in exchange for *amount* Algo Bonds burnt.
 
 If the oracle price of Algo Cash is above (1+ε) aUST, mints *((ALC Oracle Price) - 1) * cashSupply* number of Algo Cash to either the Boardroom contract or the Treasury contract.If the Treasury's balance is below 1,000 ALC, the allocation is given to the Treasury, else give it to the Boardroom.
-
 
 **Boardroom - Handling claims from the share**
 
@@ -147,56 +137,59 @@ Claims all accrued dividends to *account*.
 
 When new cash is assigned to the Boardroom contract. Records the current block timestamp, the amount of new cash, and the current amount of total Shares staked.
 
-
 **oracle - Retrieving the exchange rate between Algo Cash and aUST**
 
-If 24 hours has passed since update() was last successfully executed, updates the time-weighted average price of Algo Cash. 
+If 24 hours has passed since update() was last successfully executed, updates the time-weighted average price of Algo Cash.
 
 Returns the amount of *output* tokens given in exchange for *input* number of *token* tokens ((Price of *token* token denominated in *output* tokens) * *input*).
 
+### Ecosystem Fit
 
-
-
-
-### Ecosystem Fit 
 Acala, aUSD is generated in a collateral way.
 
 Basis Cash (on Ethereum), shares are initialized by 'AMM + 2nd pool' which would cause dramatic infaltion, forcing Yeild Farmers to sell their assets to the second market.
 
-## Team 
+## Team
 
 ### Team members
+
 * Nick Hsu, Blockchain Expert and Team Leader
-* Gang Chan, Full Stack Developer	
+* Gang Chan, Full Stack Developer 
 * Gieno Miao, Crypto Expert and Blockchain Architect
 
 ### Contact
+
 * **Contact Name:** Nick Hsu
 * **Contact Email:** nick_hsu@sina.com
 
+### Legal Structure
 
-### Legal Structure 
 No legal Entity
 
 ### Team's experience
+
 Nick has 16 years of software development experience and 5 years working in Blochain area as developer and product owner.
 
 Gang is now working as a freelancer. He is a full stack developer proficient in C++, Rust, React and Solidity. He has 3 years software development experience and 2 years smart contract development experience.
 
 ### Team Code Repos
-* https://github.com/ReserveLabs/AlgoCash
+
+* <https://github.com/ReserveLabs/AlgoCash>
 
 ### Team LinkedIn Profiles
+
 no
 
+## Development Roadmap
 
-## Development Roadmap 
 ### Overview
+
 * **Total Estimated Duration:** 6 weeks
 * **Full-time equivalent (FTE):**  1.5
 * **Total Costs:** 5,000 DAI
 
-### Milestone 1 Example — Implement Substrate Modules 
+### Milestone 1 Example — Implement Substrate Modules
+
 * **Estimated Duration:** 7 weeks
 * **FTE:**  2
 * **Costs:** 5,000 DAI  
@@ -206,15 +199,15 @@ no
 | 0 | License | Apache 2.0 / MIT / Unlicense |
 | 1 | Documentation | Specification of the background, components and working mechanism|
 | 2 | Smart Contract | AlgoCash smart contract repo. The smart contract can be deployed to any substrate chain with ink! pallet.|
-| 3 | Tests |Unit Test and also we will test it on Canvas| 
+| 3 | Tests |Unit Test and also we will test it on Canvas|
 | 4 | Docker | A docker image with a Substrate chain for PoC|
 
-
-
 ## Future Plans
+
 Shares token design for governance.
 
 We will build a DEX with PMM (Proactive Market Maker) algorithm.
 
 ## Community Engagement
-We will reach DEX and Lending protocol communities to enlarge Algo Cash adoption. 
+
+We will reach DEX and Lending protocol communities to enlarge Algo Cash adoption.

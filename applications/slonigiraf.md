@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# SLON - a recommendation letter system
 
-- **Project Name:** SLON - a recommendation letter system
 - **Team Name:** Slonigiraf
 - **Payment Address:** bc1qyuk4rdeqvc2rmetfhr3key4clty5sglaw4n5wx (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
@@ -37,7 +36,7 @@ In Russia there are about 15 million pupils at schools. If we assume that all te
 Substrate gives about 1000 transactions per second per chain. Thus we need at least 9 chains only for Russia to make this blockchain work. One can argue that in Russia there are different time zones and transaction load will be lowered by this means. But don't forget that on Earth we have about 50x more pupils than in Russia. \
 Thus no single chain can process transactions if all pupils in Russia will use our educational model at classes - too many transactions, even considering that we use offchain as much as possible. Thus we look for any approach to shard and parallelize transaction processing. Polkadot design with relay and parachains looks great to solve this parallelization issue. As we need a lot of parachains to make the system work it's unlikely to include all of them in Polkadot or Kusama directly. Instead we plan to use our own relay chain with our parachains. [Our relay chain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fwss1.slonigiraf.org#/explorer) can be connected to Polkadot or Kusama with bridges. We’ve already launched our own relay chain and it’s active from 12 April 2021.
 - We've built PoC/MVP product on Java Vaadin framework that can be used via
-  link: https://slon-i-giraf.ru/app/work?language=ENG
+  link: <https://slon-i-giraf.ru/app/work?language=ENG>
 - What needs to be completed: datastore, penalizing capability, letter validity lookup, tests, documentation,
   example integration to parachain template, example UI.
 
@@ -59,7 +58,7 @@ Thus no single chain can process transactions if all pupils in Russia will use o
 
 - **Contact Name:** Denis Reshetov
 - **Contact Email:** reshetovdenis@gmail.com
-- **Website:** https://www.slonigiraf.org/
+- **Website:** <https://www.slonigiraf.org/>
 
 ### Legal Structure
 
@@ -76,16 +75,16 @@ bioinformatics](https://pubmed.ncbi.nlm.nih.gov/?term=reshetov+d&filter=simsearc
 
 Company:
 
-- https://github.com/slonigiraf
+- <https://github.com/slonigiraf>
 
 Team leader:
 
-- https://github.com/reshetovdenis
-- https://github.com/slonigiraf/slon-token
+- <https://github.com/reshetovdenis>
+- <https://github.com/slonigiraf/slon-token>
 
 ### Team LinkedIn Profiles (if available)
 
-- https://ru.linkedin.com/in/reshetovdenis
+- <https://ru.linkedin.com/in/reshetovdenis>
 
 ## Development Status :open_book:
 
@@ -119,134 +118,146 @@ Team leader:
 <tr><td> 0c. </td><td> Testing Guide </td><td> Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. </td></tr>
 <tr><td> 0d. </td><td> Docker </td><td> We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. </td></tr>
 <tr><td> 0e. </td><td> Article </td><td> We will publish an <b>article</b> that explains what was done/achieved as part of the grant. (Content, language and medium should reflect your target audience described above.)</td></tr>
-<tr><td> 1. </td><td> Substrate module </td><td> <b>Publicly exposed methods:</b> <br/> 
-Function to penalize a referee. Will allow a worker to enable employer to penalize the referee. 
+<tr><td> 1. </td><td> Substrate module </td><td> <b>Publicly exposed methods:</b> <br/>
+Function to penalize a referee. Will allow a worker to enable employer to penalize the referee.
 Should test if referee and worker signatures are valid and a letter was not previously used.
-<pre>
+
+```
 pub fn reimburse(
-			origin: OriginFor<T>,
-			letter_id: u32,
-			referee_id: H256,
-			worker_id: H256,
-			employer_id: H256,
-			ask_price: BalanceOf<T>,
-			referee_sign: H512,
-			worker_sign: H512,
-		) -> DispatchResultWithPostInfo 
-</pre>
+   origin: OriginFor&lt;T&gt;,
+   letter_id: u32,
+   referee_id: H256,
+   worker_id: H256,
+   employer_id: H256,
+   ask_price: BalanceOf&lt;T&gt;,
+   referee_sign: H512,
+   worker_sign: H512,
+  ) -> DispatchResultWithPostInfo
+```
 
 Function to see if the letter is valid. Should return TRUE if referee was not penalized yet.
-<pre>
+
+```
 fn was_letter_used(
-		referee: H256,
-		number: usize,
-	) -> bool 
-</pre>
+  referee: H256,
+  number: usize,
+ ) -> bool
+```
+
 <br/>
 <b>Runtime Storage defined by your module:</b><br/>
 Invalid letters are planned to be stored as Map of boolean arrays with key consisted of referee address concatenated to index of window where letter id resides.
-<pre>
-#[pallet::storage]
-#[pallet::getter(fn letter_of_owner_by_index)]
-pub(super) type OwnedLetersArray<T: Config> =
-StorageMap<_, Twox64Concat, (H256, u64), Vec<bool>, ValueQuery>;
-</pre>
+
+```
+# [pallet::storage]
+# [pallet::getter(fn letter_of_owner_by_index)]
+pub(super) type OwnedLetersArray&lt;T: Config&gt; =
+StorageMap&lt;_, Twox64Concat, (H256, u64), Vec&lt;bool&gt;, ValueQuery&gt;;
+```
 
 <br/>
 <b>Private functions:</b>
 
 <br/>
 Function that creates a part of datastore to mark fraud letter. See runtime storage definition.
-<pre>
-fn mint_chunk(
-		to: H256,
-		chunk: usize,
-	) -> DispatchResult 
-</pre>
 
+```
+fn mint_chunk(
+  to: H256,
+  chunk: usize,
+ ) -> DispatchResult
+```
 
 <br/>
 Function to see if chunk of datastore exists.
-<pre>
+
+```
 fn chunk_exists(
-		to: H256,
-		chunk: usize,
-	) -> bool
-</pre>
+  to: H256,
+  chunk: usize,
+ ) -> bool
+```
 
 <br/>
 Conversion from letter index to coordinates of it in datastore.
-<pre>
+
+```
 fn coordinates_from_letter_index(number: usize) -> LetterCoordinates
-</pre>
+```
 
 <br/>
 Conversion from coordinates in datastore to letter index.
-<pre>
+
+```
 fn letter_index_from_coordinates(coordinates: LetterCoordinates) -> usize
-</pre>
+```
 
 <br/>
 See if letter is fraud.
-<pre>
+
+```
 fn was_letter_canceled(
-		guarantee: H256,
-		number: usize,
-	) -> bool
-</pre>
+  guarantee: H256,
+  number: usize,
+ ) -> bool
+```
 
 <br/>
 Mark letter as fraud.
-<pre>
+
+```
 fn mark_letter_as_fraud(
-		guarantee: H256,
-		letter_number: usize,
-	) -> DispatchResult
-</pre>
+  guarantee: H256,
+  letter_number: usize,
+ ) -> DispatchResult
+```
 
 <br/>
 <b>Benchmarking:</b>
 
 Data structures to run benchmarks and create weights
-<pre>
-benchmarks! {
-	create {
-		...
-	}: _(RawOrigin::Signed(caller))
 
-	reimburse {
-		...
-	}: _(RawOrigin::Signed(caller), origin, letter_id, referee_id, worker_id, employer_id, ask_price, referee_sign, worker_sign)
+```
+benchmarks! {
+ create {
+  ...
+ }: _(RawOrigin::Signed(caller))
+
+ reimburse {
+  ...
+ }: _(RawOrigin::Signed(caller), origin, letter_id, referee_id, worker_id, employer_id, ask_price, referee_sign, worker_sign)
 }
 
 impl_benchmark_test_suite!(
-	...
+ ...
 );
-</pre>
+```
 
 <br/>
 <b>Weights</b>
-<pre>
+
+```
 pub trait WeightInfo {
-	fn reimburse() -> Weight;
+ fn reimburse() -> Weight;
 }
 
-pub struct SubstrateWeight<T>(PhantomData<T>);
-impl<T: frame_system::Config> WeightInfo for SubstrateWeight<T> {
-	fn create() -> Weight {
-		...
-	}
+pub struct SubstrateWeight&lt;T&gt;(PhantomData&lt;T&gt;);
+impl&lt;T: frame_system::Config&gt; WeightInfo for SubstrateWeight&lt;T&gt; {
+ fn create() -> Weight {
+  ...
+ }
 }
 
 impl WeightInfo for () {
-	fn create() -> Weight {
-		...
-	}
+ fn create() -> Weight {
+  ...
+ }
 }
-</pre>
+
+```
 
 </td></tr>
-<tr><td> 2. </td><td> Example UI </td><td> 
+<tr><td> 2. </td><td> Example UI </td><td>
 
 <b>Recommendation letter creation</b><br/>
 Template/Example React.js component that allows to create a letter of recommendation for guarantees. <br/>

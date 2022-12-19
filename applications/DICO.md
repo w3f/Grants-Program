@@ -1,11 +1,8 @@
-# DICO Open Grant Proposal
+# DICO
 
-
-* **Project Name:** DICO
 * **Team Name:** DICO Team
 * **Payment Address:** 0x0211ae8881a3a0a41150627da07c900b78144a84(USDT)
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/636#issuecomment-1144901144)
-
 
 ## Project Overview
 
@@ -26,23 +23,19 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 * *KYC*,*ICO*,*DAO* and *Swap* modules are built on substrate runtime. they complete the basic user interaction logic.
 * *Oracle* enabled off-chain worker to query the current price feed of  the platform or other tokens.
 
-
 ### Project Details
 
 #### Mockups and UI components
 
-
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Me/Me-home.jpg" width="50%" syt height="50%" />
 </p>
-
 
 #### ICO
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Ico/Add-project0.jpg" width="50%" syt height="50%" />
 </p>
-
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Ico/council-ico-permitIco1.jpg" width="50%" syt height="50%" />
@@ -60,11 +53,9 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
   <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Ico/ico-unlock1.jpg" width="50%" syt height="50%" />
 </p>
 
-
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Ico/ico-userReleaseIcoAmount1.jpg" width="50%" syt height="50%" />
 </p>
-
 
 #### KYC
 
@@ -76,7 +67,6 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
   <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Kyc/Kyc_Clear2.jpg" width="50%" syt height="50%" />
 </p>
 
-
 #### DAO
 
 <p align="center">
@@ -87,9 +77,7 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
   <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Dao/Dao-create%20motion.jpg" width="50%" syt height="50%" />
 </p>
 
-
 #### Swap
-
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Swap/swap-AddLiquidity1.jpg" width="50%" syt height="50%" />
@@ -102,7 +90,6 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/DICO-TEAM/resources/actions/app/Swap/swap-removeLiquidity1.jpg" width="50%" syt height="50%" />
 </p>
-
 
 ### Ecosystem Fit
 
@@ -117,7 +104,6 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 * What need(s) does your project meet?
 
 > Be a platform to link ideas and capital.
-
 
 * Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   * If so, how is your project different? *coinlist*，A token financing platform, all the mainstream virtual currencies above can be traded and financed. It provides token financing, but does not provide the funds needed by early creator and the control of the entire project cycle.
@@ -136,7 +122,7 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 
 * **Contact Name:** gogomath
 * **Contact Email:** gogomath@outlook.com
-* **Website:** https://dico.io/
+* **Website:** <https://dico.io/>
 
 ### Legal Structure
 
@@ -147,11 +133,11 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 
 ### Team's experience
 
-*Daniel*:  Daniel is currently a venture investor at [WEB3 Venture Capital](https://web3.vc/#/). Daniel previously is a solidity/EOS engineer. 
+*Daniel*:  Daniel is currently a venture investor at [WEB3 Venture Capital](https://web3.vc/#/). Daniel previously is a solidity/EOS engineer.
 
 *gogomath*:  gogomath is the CTO of the team and has 10 years of software development experience. The fields involved are big data, machine learning, SAAS, devops. And familiar with eth/near/polkadot in the field of digital encryption development.
 
-*cf*:  cf is a full stack engineer with five years of development experience. and familiar with Go/Rust/Java/Python/Javascript/Typescript 
+*cf*:  cf is a full stack engineer with five years of development experience. and familiar with Go/Rust/Java/Python/Javascript/Typescript
 
 *tokggo*:  tokggo is the test/devops engineer of the team, he is very good at writing various documents.and has 6 years of development experience.
 
@@ -161,24 +147,19 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 
 ### Team Code Repos
 
-* https://github.com/DICO-TEAM/dico-chain
-
+* <https://github.com/DICO-TEAM/dico-chain>
 
 ## Development Status :open_book:
 
-
-*interface iterations and resource*: https://github.com/DICO-TEAM/resources
+*interface iterations and resource*: <https://github.com/DICO-TEAM/resources>
 
 ## Development Roadmap :nut_and_bolt:
 
-
 ### Overview
-
 
 * **Total Estimated Duration:**  1 months
 * **Full-Time Equivalent (FTE):**  6 FTE
 * **Total Costs:** 10k USD
-
 
 ### Milestone 1 — Implement KYC, ICO, DAO Modules
 
@@ -192,9 +173,9 @@ Our project use substrate framework and is built on top of Polkadot/Kusama ecosy
 | 1.a | Substrate module: KYC pallet | KYC pallet Includes identity authentication service(IAS), KYC users, and swordholder. responsible for providing users with a decentralized KYC certification service.and provide area authentication of the account.Detailed explanation is described [here](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/kyc/README.md)|
 | 1.b | Substrate module: ICO pallet | Apply for ICO and council review for the project party. Detailed explanation is described [here](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/ico/README.md)|
 | 1.c | Substrate module: DAO pallet | Integrate governance with the ICO module to provide governance logic for the opening and closing of the ICO of the project. Detailed explanation is described [here](https://github.com/DICO-TEAM/dico-chain/tree/main/pallets/dao/README.md)|
-| 2.a. | Integration with front-end(dapp) |integrate our existing front end to the finalized module.| 
+| 2.a. | Integration with front-end(dapp) |integrate our existing front end to the finalized module.|
 | 2.b | Tutorial| We will create an screenshot tutorial and a demo video that will explain how users can start using the platform for KYC and ICO. |
-| 3. | Testing Guide/Documentation	 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests and add inline documentation of the code. |
+| 3. | Testing Guide/Documentation  | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests and add inline documentation of the code. |
 | 4. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
 | 5. | Docker-compose | We will provide a docker-compse.yml that can be used to test parachain version node delivered with this milestone.in this version, users will be invited to this testnet |
-| 6.  | Lending module(research oriented)| Innovation combining ICO and borrowing/lending. In our 2.0 version, we hope to introduce an innovation combining lending and ICO. The goal is to make ICO more diversified through borrowing/lending. Through the logic of borrowing/lending, and participation in ICO, the participants will be more diverse. At the same time, in the 2.0 testnet, we will let users participate in this pallet. According to the test results, publish a blog to show the test results.|    
+| 6.  | Lending module(research oriented)| Innovation combining ICO and borrowing/lending. In our 2.0 version, we hope to introduce an innovation combining lending and ICO. The goal is to make ICO more diversified through borrowing/lending. Through the logic of borrowing/lending, and participation in ICO, the participants will be more diverse. At the same time, in the 2.0 testnet, we will let users participate in this pallet. According to the test results, publish a blog to show the test results.|

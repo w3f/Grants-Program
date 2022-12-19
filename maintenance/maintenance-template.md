@@ -6,7 +6,7 @@
 
 - **Project Code Name:** Code name of the project (e.g. JsonRPC Tools Maintenance)
 - **Team Name:** Legal name of your team (e.g. JsonCorp)
-- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Payment Address:** BTC, Ethereum (USDC/DAI) or Polkadot/Kusama (aUSD/USDT) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 
 > ⚠️ *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 

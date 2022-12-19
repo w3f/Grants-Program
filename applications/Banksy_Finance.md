@@ -1,6 +1,4 @@
-# Open Grant Proposal
-
-* **Project:** Banksy Finance
+# Banksy Finance
 
 * **Proposer:** Clink Li
 

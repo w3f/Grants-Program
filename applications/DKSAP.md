@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# DKSAP
 
-- **Project Name:** DKSAP
 - **Team Name:** DKSAP
 - **Payment Address:** 0xf4f463B9A0ADa68536423121e7Bf9E559ce54fAf(Ethereum ERC20 USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
