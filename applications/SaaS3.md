@@ -58,15 +58,15 @@ Our team has rich experience in web3 ecosystem, and we are dedicated to achieve 
 The following figures show UI design of SaaS3:
 
 - Marketplace: explore open oracles and their details.
-   - <img width="1440" alt="Marketplace-bg1@2x" src="https://user-images.githubusercontent.com/95557343/205898646-14558785-ecea-48c8-a680-77b49a3cf422.png">
-   - <img width="1440" alt="Marketplace2@2x" src="https://user-images.githubusercontent.com/95557343/205898739-f7f601cf-43a4-4f67-a4a9-2b2e653f9c5f.png">
+   - <img width="1440" alt="Marketplace-bg1@2x" src="https://user-images.githubusercontent.com/95557343/205898646-14558785-ecea-48c8-a680-77b49a3cf422.png"/>
+   - <img width="1440" alt="Marketplace2@2x" src="https://user-images.githubusercontent.com/95557343/205898739-f7f601cf-43a4-4f67-a4a9-2b2e653f9c5f.png"/>
 
 - Oracles deployment: deploy oracles within few clicks.
-    - <img width="1440" alt="Deploy Oracles@2x" src="https://user-images.githubusercontent.com/95557343/205898840-b31d3077-924d-4176-9f9b-a5badaf566b5.png">
-    - <img width="1440" alt="Deploy Oracles-10@2x" src="https://user-images.githubusercontent.com/95557343/205899528-e44a3918-a120-43a3-b105-55bc0dd247eb.png">
+    - <img width="1440" alt="Deploy Oracles@2x" src="https://user-images.githubusercontent.com/95557343/205898840-b31d3077-924d-4176-9f9b-a5badaf566b5.png"/>
+    - <img width="1440" alt="Deploy Oracles-10@2x" src="https://user-images.githubusercontent.com/95557343/205899528-e44a3918-a120-43a3-b105-55bc0dd247eb.png"/>
 
 - User Profile: view user information, wallet information, stake information, and deployed oracles.
-    - <img width="1440" alt="Profile-planA1@2x" src="https://user-images.githubusercontent.com/95557343/205898934-9eabcaba-bf6e-4a39-8139-48f137e3ade1.png">
+    - <img width="1440" alt="Profile-planA1@2x" src="https://user-images.githubusercontent.com/95557343/205898934-9eabcaba-bf6e-4a39-8139-48f137e3ade1.png"/>
 
 
 #### Technology Stack
@@ -84,7 +84,7 @@ SaaS3 protocol constructs a permissionless oracle network (PoN) to eliminate cen
 **Permissionless Oracle Network (PoN)**
 
 In PoN, four roles are involved: creator, miner, staker, and requester, and each role should accommodate SaaS3 protocol to stake and contribute to maintaining the high-quality services as shown in the following figure.
-<img width="894" alt="Screenshot 2022-11-12 at 4 41 30 PM" src="https://user-images.githubusercontent.com/95557343/201471296-4f89fe44-9b72-43d4-ab2d-c6221c8d1a64.png">
+<img width="894" alt="Screenshot 2022-11-12 at 4 41 30 PM" src="https://user-images.githubusercontent.com/95557343/201471296-4f89fe44-9b72-43d4-ab2d-c6221c8d1a64.png"/>
 
 - **Creator** is the role of submitting dRuntime to create an oracle (dAPI) service, who can be any kind of off-chain service providers such as crypto exchanges, events organizers, or software developer. 
 - **Staker** is anyone participating in the delegated proof of stake (DPoS) mechanism. 
@@ -107,7 +107,7 @@ There are four phases for dRuntime execution:
 
 #### Architecture
 
-<img width="874" alt="SaaS3 architecture" src="https://user-images.githubusercontent.com/95557343/201471044-496daafd-a3a5-4639-94e3-96ba5248133d.png">
+<img width="874" alt="SaaS3 architecture" src="https://user-images.githubusercontent.com/95557343/201471044-496daafd-a3a5-4639-94e3-96ba5248133d.png"/>
 
   - Target Chain: SaaS3 protocol will be deployed on multiple blockchains, such as Polkadot and Kusama.
       - Dapp: decentralized applications which adopt SaaS3 oracle.
@@ -179,7 +179,7 @@ Court DAO is charged with settling disputes regarding the performance of dAPI to
     - [Chainlink](https://chain.link/): It is not dynamic, and it is hard to create customized oracle. Also, it does not have decentralized computation.
     - [API3](https://api3.org/):  Permission and centralized host server required. 
     
-    <img width="1233" alt="Competitor chart" src="https://user-images.githubusercontent.com/95557343/201536485-40b4e700-b218-4b8f-a437-2aca88fca53f.png">
+    <img width="1233" alt="Competitor chart" src="https://user-images.githubusercontent.com/95557343/201536485-40b4e700-b218-4b8f-a437-2aca88fca53f.png"/>
 
 
 ## Team :busts_in_silhouette:
