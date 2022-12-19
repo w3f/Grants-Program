@@ -257,7 +257,7 @@ GitHub accounts of all team members.
 | 0d. | Docker | We are not able to provide a Dockerfile, because dRuntime is written in Phat Contract, and it is finally compiled to WASM. |
 | 0d. | Article | We will publish an article that explains the whole workflow of SaaS3 protocol. |
 | 1. | dRuntime-fat | dRuntime implementation in Phat Contract which is a superset of ink!. |
-|        | Functions | `pub fn handle_rollup()` Entry point for Phat Rollup Anchor<br>`pub fn config(rpc, anchor)` Configure the rollup target.|
+|        | Functions | `pub fn handle_rollup()` Entry point for Phat Rollup Anchor<br/>`pub fn config(rpc, anchor)` Configure the rollup target.|
 | | Structs | `struct Config { rpc, anchor, url, apikey }` |
 |        | Storage | `pub struct Oracle { owner, config }` |
 
@@ -276,14 +276,14 @@ GitHub accounts of all team members.
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the usage of SaaS3 DAO. |
 |     1. | pallet-court | A pallet of court DAO, dAPI user raise sue to determine the punishment of malfunction miners / services and return sue claimed tokens to dAPI user. |
-|  | Functions | `pub fn submit_sue(origin, value, eid)` dAPI User submit sue claims for malfunction. <br> `pub fn vote_sue(origin, value, eid, sid)` Jury evaluates and votes the sue submission to determine punishment.<br> `pub fn process_sue(origin, sid)` Process the accepted sue claims of dAPI user to slash malfunction miner / dAPI. The tokens will be paid to dAPI user and treasury with a ratio. |
+|  | Functions | `pub fn submit_sue(origin, value, eid)` dAPI User submit sue claims for malfunction. <br/> `pub fn vote_sue(origin, value, eid, sid)` Jury evaluates and votes the sue submission to determine punishment.<br/> `pub fn process_sue(origin, sid)` Process the accepted sue claims of dAPI user to slash malfunction miner / dAPI. The tokens will be paid to dAPI user and treasury with a ratio. |
 |    | Struct| `pub struct Sue{sid, eid, claims, statement}` |
 |    | Storage| `pub type SueList = StorageValue<_, BoundedVec<SueId, MaxSueNum>, ValueQuery>;` List of all sue claims. |
-| | Events | `SueSubmitted { user, value, eid }`<br>`SueVoted { user, value, eid, sid }`<br>`SueCompleted { sid }` |
+| | Events | `SueSubmitted { user, value, eid }`<br/>`SueVoted { user, value, eid, sid }`<br/>`SueCompleted { sid }` |
 | 2. | pallet-treasury | A pallet of SaaS3 DAO treasury. It sends or receives token based on different situations. It is built on top of [FRAME Treasury Pallet](https://github.com/paritytech/substrate/tree/master/frame/treasury), with some additional functionalities. |
-|  | Functions | `pub fn receive(origin, value, category)` Receive tokens with categorized reason, such as commission fees and miner node malfunctions. <br>`pub fn claim_rewards(origin, value)` Court Jury members claim their rewards for their contribution in Court DAO. |
+|  | Functions | `pub fn receive(origin, value, category)` Receive tokens with categorized reason, such as commission fees and miner node malfunctions. <br/>`pub fn claim_rewards(origin, value)` Court Jury members claim their rewards for their contribution in Court DAO. |
 | | Storage | `pub type JuryRewards = StorageMap<_, Twox64Concat, AccountId, Rewards, OptionQuery>;`  Mapping from account id to rewards which can be claimed. |
-| | Events | `Received {from, value, category }` <br>`Claimed { user, value }` |
+| | Events | `Received {from, value, category }` <br/>`Claimed { user, value }` |
 | 3. | UI & Frontend | This part is implemented by [substrate front-end template](https://github.com/substrate-developer-hub/substrate-front-end-template). The frontend web interface contains DAO procedures related functions which including user sue judgement. A special document website is developed to guide entities to participate in DAO events. |
 
 ## Future Plans
