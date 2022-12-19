@@ -24,7 +24,7 @@ In the first stage of the project we’ve delivered:
 ![Rubeus schema 3](https://user-images.githubusercontent.com/98888366/207593938-268d7c72-e5bd-46cc-94a6-105466bd233e.png)
 
 In this follow-up grant BSN will improve the functionality of the developed dApp by adding the following features:
-1.	Autocomplete functionality for the developed browser extension.
+1.	Autocomplete functionality for the developed browser extension with password autogeneration feature.
 2.	New methods for the Ink! smart contract for secure text notes storage: saving, retrieving, deleting, updating.
 3.	Functionality for registering a new wallet (private key) in the dApp, password (seed phrase) recovery mechanism by downloading a JSON file.
  
@@ -148,7 +148,13 @@ The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 Dev
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. UI unit tests performed using Cypress | 
-| 1. | Browser extension autofill feature | We will develop additional functionality for the browser extension: registration and authorization forms tracking, suggestion to generate and save a password, autofill password forms on websites. |  
+| 1. | Browser extension autofill feature | We will develop additional functionality for the browser extension: - registration and authorization forms tracking; - suggestion to generate and save a password; - generation of a random password with user-defined rules; - autofill password forms on websites (tested on 5+ different web sites). To access passwords and manipulate them while the extension pop-up is closed we will rearrange the extension and transfer some logic to the service worker; | 
+| 2. | Password generation tool | We will develop a tool for a random password generation with user-defined rules. | 
+
+Sample image of a password generation tool:
+
+<img width="234" alt="Rubeus st2 pswd gen" src="https://user-images.githubusercontent.com/98888366/208406592-efe84a69-e00a-4482-9bd8-a2c30ace95eb.png">
+
 
 ### Milestone 3 — Registration & recovery features development
 
