@@ -177,7 +177,7 @@ ecosystem will drive adoption to the network.
 ### Milestone 3 Proposal module, Asset fine tuning, No-Code DAO creation and proposal UX flow
 
 - **Estimated Duration:** 1 month
-- **FTE:**  3-4
+- **FTE:**  2-3
 - **Costs:** 20,000 USD
 
 
@@ -192,6 +192,7 @@ ecosystem will drive adoption to the network.
 | 2. | Substrate module: pallet_dao_vote  | We will create a voting module to manage the lifecycle of a proposal                                                                                                                                                                          |
 | 3. | Frontend Implementation            | We will implement the frontend and UX flows developed for the proposal and have a voting process directly on GenesisDAO (usable without xcm) and a no-code proposal integration.                                                              |
 | 4. | Product Touches                    | We will create a full product experience around the dApp with landing pages, FAQ, and explainers.                                                                                                                                             |
+| 5. | Integration start of ink!      | We will provide an initial integration of the `pallet_contracts` into our chain.                                                                                                                           |
 
 
 ## Future Plans
