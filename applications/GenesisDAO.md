@@ -123,8 +123,8 @@ ecosystem will drive adoption to the network.
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
+- **Contact Name:** Jakob Drzazga
+- **Contact Email:** 	jad@deep-ink.ventures
 
 ### Legal Structure
 
