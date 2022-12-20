@@ -1,7 +1,7 @@
 # Hardware ECDSA for Polkadot JS
 
 * **Proposer:** @akru
-* **Payment Address:** 146iwtFpePG4GqBfNpMTDRgqfwNjj248JpvDKLyFPM1KSsa (Kusama)
+* **Payment Address:** Ekf4HssuTpYjmUEvzy9AAFuqpUcNm9AAkrMF1stTU6Mo1hR (Kusama)
 
 ## Project Description :page_facing_up: 
 
