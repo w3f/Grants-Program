@@ -111,9 +111,9 @@ In this milestone, We will implement all Ink! Smart contracts on Moonbeam and As
 | 0b.    | Documentation      | We will provide technical documents and user guides |
 | 0c.    | Testing Guide      | We will provide Test Plan and Test Results for operating and using the NFT Marketplace |
 | 0d.    | Article/Tutorial   | We will write an article or tutorial that explains the NFT Marketplace |
-| 1. | smart contract implementation | Contracts to be implemented and deployed on Moonbeam and Astar networks. We use ink! to develop the contracts and the functions that contracts support are: list, unlist NFT, buy NFT at fixed price, bid for an NFT, accept an NFT bid, add NFT Collection, add a launchpad project. |
-| 2. | Backend | Build infrastructure to serve the need of NFT Marketplaces. We use nodejs and mongodb on AWS Services. |
-| 3. | Frontend | Create new front-end to work with Moonbeam and Astar. |
+| 1. | Smart contract Development | We use ink! to develop the contracts and the functions that contracts support are: list, unlist NFT, buy NFT at fixed price, bid for an NFT, accept an NFT bid, add NFT Collection, add a launchpad project. We need to develop the contracts using project structure as defined in https://github.com/Supercolony-net/openbrush-contracts/tree/main/example_project_structure to meet higher code standard for better code management. The functions are partly built with psp34 support and still need more work to be compatible with psp37 (erc1155) standard. |
+| 2. | Backend | Build infrastructure to serve the need of NFT Marketplaces. We use nodejs and mongodb on AWS Services. The backend will have an api service that serves the front end and cron jobs to fetch data from blockchains to save into the local database. The API definition can be found at https://docs.google.com/document/d/1bPq9aFMaaVgKgsYWG3K4APubRK33OloY4_gHM3c8wo0/edit and it needs development to work on all Polkadot's parachains. The backend will have to handle the following tasks: Monitor NFT bids in the queue and update Bid table in the database; Cache Images from IPFS to CloudFlare Image; Cache NFT Metadata to local database; Monitor NFT Collection changes and update the database; Monitor NFT Information and update the database; Telegram bot to alert system operators: queue length and access attempt and work load. |
+| 3. | Frontend | Create new front-end for the NFT Marketplace, we have 2 mockups at https://www.figma.com/file/76ER4HZUR1KMDaxctx5BS6/DragonSUI?node-id=146%3A68 and https://www.figma.com/file/xsVkm8VOdTqyPWPgTrbQpl/ArtZero?node-id=275%3A12 these are under converting from Figma to ReactJS code. |
 | 4. | Testing | Test Plan and Test Results for operating and using the NFT Marketplace |
 
 ### Milestone 2  — Ink Whale Staking and Yield Farming Platform Development
@@ -128,9 +128,9 @@ In this milestone, We will continue to improve the current development of Ink Wh
 | 0b.    | Documentation      | We will provide technical documents and user guides |
 | 0c.    | Testing Guide      | We will provide Test Plan and Test Results for operating and using the staking and yield farming platform. |
 | 0d.    | Article/Tutorial   | We will write an article or tutorial that explains the work principle as part of the grant. |
-| 1. | smart contract development | Enhance the current smart contracts in MVP and create the final version and deploy on Moonbeam, Astar and Aleph Zero Network. The contracts will have following functions: create PSP22 token, create a staking pool, create NFT yield farm, create token yield farm, add rewards to pool, remove rewards from pool, claim reward from pool. |
-| 2. | Backend | Build infrastructure to serve the need of Ink Whale. We use nodejs and mongodb on AWS Services. |
-| 3. | Frontend | Revamp the front-end for final version, better UI/UX. |
+| 1. | smart contract development | Enhance the current smart contracts in MVP and create the final version and deploy on Moonbeam, Astar and Aleph Zero Network. The contracts will have following functions: create PSP22 token, create a staking pool, create NFT yield farm, create token yield farm, add rewards to pool, remove rewards from pool, claim reward from pool. We have to create 9 different contracts; WAL token contract that allows public minting and fixed total supply; General psp22 token contract and psp22 token generator contract; Pool Contract and Pool Generator Contract; NFT Farming Contract and NFT Farming Generator Contract; LP Farming Contract and LP Farming Generator Contract. |
+| 2. | Backend | Build infrastructure to serve the need of Ink Whale. We use nodejs and mongodb on AWS Services. The cronjob monitor update queue to make sure data in the database match with data on-chain; The API serves the frontend with following functions: getTokens, getPools, getLPPools, getNFTPools, getPoolsbyOwner and getPoolsbyAddress. update API also required to add update request to the database queue and serves the cronjobs. |
+| 3. | Frontend | Revamp the front-end for final version, better UI/UX. The new design is currently in progress. The current design can be seen at https://testnet.inkwhale.net |
 
 
 ## Future Plans
