@@ -5,6 +5,7 @@
 
 0. Setup your Google API Credentials on https://console.developers.google.com/
     - Credentials -> Create Credentials -> Service Accounts
+    - Enable the Google Sheets API under [APIs and Services](https://console.cloud.google.com/apis/dashboard?project=festive-folio-343701)
 
 1. Fork the Open Grants repo (or create a private repo and push to it)
 
