@@ -56,7 +56,7 @@ const sidebars = {
     {
       type: 'doc',
       label: 'List of Grants',
-      id:'Applications/index'
+      id:'applications/index'
     },
     {
       type: 'category',

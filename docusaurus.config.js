@@ -47,7 +47,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'Applications/index',
+          docId: 'applications/index',
           position: 'left',
           label: 'List of Grants',
         },
@@ -138,7 +138,7 @@ module.exports = {
           exclude: [
             'Applications/application-template.md',
             'Applications/example-project.md',
-            'rfps/suggestion-template.md'
+            'RFPs/suggestion-template.md'
           ],
         },
         blog: false,
