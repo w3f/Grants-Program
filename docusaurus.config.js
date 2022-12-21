@@ -42,7 +42,7 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'Introduction/index',
+          docId: 'introduction',
           label: 'Introduction',
         },
         {
@@ -53,7 +53,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'FAQ',
+          docId: 'faq',
           label: 'FAQ',
         },
         {
@@ -64,7 +64,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'Contribute',
+          docId: 'contribute',
           position: 'right',
           label: 'Contribute',
         }
