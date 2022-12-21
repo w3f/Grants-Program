@@ -164,10 +164,6 @@ OVERALL ARCHITECT: Anton Starikov (CTO)
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. For research-related grants, references to past publications and projects in a related domain are helpful.
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
-
 *Anton Starikov* has been architecting and leading development of software solutions for over 20 years in academic (computational physics) and industrial (Shell, AVL) settings. In addition, he was working and consulting on the topics of optimization on various levels (from hardware level through software up to the processes). Currently working as CTO of Odyssey, Anton is performing the role of platform architect.
 
 *Dave Hoogendoorn* is an experienced programme manager and has been active in the space for over 5 years. Dave is co-founder of WEB3SCAN ([W3F Grants WAVE 1 participant with Polkascan](https://medium.com/web3foundation/web3-foundation-grants-wave-one-winners-2a9cd39f1fbc)), former Kusama Treasury Council member (Polkascan multi-sig) and previously held a board position at the [Polkascan Foundation](https://polkascan.org/). Dave has been following Substrate and the Dotsama ecosystem from the early beginnings. 
