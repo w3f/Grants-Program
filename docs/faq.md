@@ -74,11 +74,11 @@ title: FAQ
 
 ### Can I list the Web3 Foundation as a partner?
 
-  No. Once the grants team has accepted your first milestone, you may display our [grants badge](Support_Docs/grant-badge-guidelines) in a project-specific context, such as the repository containing the grant project work.
+  No. Once the grants team has accepted your first milestone, you may display our [grants badge](Support%20Docs/grant-badge-guidelines) in a project-specific context, such as the repository containing the grant project work.
 
 ### Can you help me advertise my project?
 
-  The Web3 Foundation does not provide PR services to its grantees. However, once per month we co-promote announcements from grants that have delivered a milestone on [Twitter](https://twitter.com/Web3foundation). Note that the milestone needs to have been accepted prior to the announcement. Lastly, please observe our [announcement guidelines](Support_Docs/announcement-guidelines.md) for all grant-related communications. This document also lists an email address through which you can get in touch with our PR team for feedback and in case you have specific questions.
+  The Web3 Foundation does not provide PR services to its grantees. However, once per month we co-promote announcements from grants that have delivered a milestone on [Twitter](https://twitter.com/Web3foundation). Note that the milestone needs to have been accepted prior to the announcement. Lastly, please observe our [announcement guidelines](Support%20Docs/announcement-guidelines.md) for all grant-related communications. This document also lists an email address through which you can get in touch with our PR team for feedback and in case you have specific questions.
 
 ### I found one of my deliverables to be unnecessary, impossible or already done elsewhere. What do I do?
 
@@ -88,7 +88,7 @@ title: FAQ
 
 ### How do I submit a milestone?
 
-  For details, please refer to the [milestone delivery guidelines](Support_Docs/milestone-deliverables-guidelines.md) for the respective grants program. Generally speaking, the most important part of a delivery is a list of **the same deliverables listed in the application** with links to their implementation/realisation (ideally pointing to a specific commit or tag, so you can continue working on your repository without messing up your delivery and complicating our evaluation) and any additional notes you might have. The list of deliverables for each of your milestones should be defined in your grant agreement.
+  For details, please refer to the [milestone delivery guidelines](Support%20Docs/milestone-deliverables-guidelines.md) for the respective grants program. Generally speaking, the most important part of a delivery is a list of **the same deliverables listed in the application** with links to their implementation/realisation (ideally pointing to a specific commit or tag, so you can continue working on your repository without messing up your delivery and complicating our evaluation) and any additional notes you might have. The list of deliverables for each of your milestones should be defined in your grant agreement.
 
 ### Can I submit two or more milestones at once?
 
@@ -96,7 +96,7 @@ title: FAQ
 
 ### Can I add a badge to my repo once I’ve completed a milestone?
 
-  If yours is a [Level 2 or 3](Introduction/levels.md) grant and your first milestone has been submitted **and accepted**, yes. Please make sure that you follow the [badge guidelines](Support_Docs/grant-badge-guidelines.md) when doing so.
+  If yours is a [Level 2 or 3](Introduction/levels.md) grant and your first milestone has been submitted **and accepted**, yes. Please make sure that you follow the [badge guidelines](Support%20Docs/grant-badge-guidelines.md) when doing so.
 
 ### Why are other milestones being accepted or discussed faster than mine?
 
