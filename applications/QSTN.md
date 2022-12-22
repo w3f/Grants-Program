@@ -1,7 +1,7 @@
 # QSTN
 
 - **Team Name:** QSTN
-- **Payment Address:** ETH - 0x7056A5Da7D269B31Eb2E54E5579e41ef283d7D2C
+- **Payment Address:** ETH (USDC) - 0x7056A5Da7D269B31Eb2E54E5579e41ef283d7D2C
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
