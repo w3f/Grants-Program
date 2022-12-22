@@ -153,14 +153,13 @@ GitHub accounts of all team members:
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains what was done/achieved as part of the grant |
-| 1. | User Story 7 | As a user of polkadot.js wallet fork, I can sign up and sign in to the app |
-| 2. | User Story 8 | As a user of polkadot.js wallet fork, I can bookmark laws |
-| 3. | User Story 9 | As a user of polkadot.js wallet fork, I can create a law by providing a text and an amount of tokens to be spent |
-| 4. | User Story 10 | As a user of polkadot.js wallet fork, I can view a list of published laws |
-| 5. | User Story 11 | As a user of polkadot.js wallet fork, I can see details of a selected law: it text, hash and current price |
-| 6. | User Story 12 | As a user of polkadot.js wallet fork, I can spend my tokens to make the law more expensive and solid |
-| 7. | User Story 13 | As a user of polkadot.js wallet fork, I can spend my tokens to make the law less expensive and less solid |
-| 8. | User Story 14 | As a user of polkadot.js wallet fork, I can cancel the law by spending my tokens |
+| 1. | User Story 7 | As a user of polkadot.js wallet fork, I can bookmark laws |
+| 2. | User Story 8 | As a user of polkadot.js wallet fork, I can create a law by providing a text and an amount of tokens to be spent |
+| 3. | User Story 9 | As a user of polkadot.js wallet fork, I can view a list of published laws |
+| 4. | User Story 10 | As a user of polkadot.js wallet fork, I can see details of a selected law: it text, hash and current price |
+| 5. | User Story 11 | As a user of polkadot.js wallet fork, I can spend my tokens to make the law more expensive and solid |
+| 6. | User Story 12 | As a user of polkadot.js wallet fork, I can spend my tokens to make the law less expensive and less solid |
+| 7. | User Story 13 | As a user of polkadot.js wallet fork, I can cancel the law by spending my tokens |
 
 
 ## Future Plans
