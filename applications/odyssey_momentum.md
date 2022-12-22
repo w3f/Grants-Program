@@ -233,7 +233,7 @@ This milestone delivers at least one (but maybe more) pallets to enable staking 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a.|License|NU General Public License v3.0.|
+| 0a.|License|GNU General Public License v3.0.|
 | 0b.|Documentation|We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
 | 0c.|Testing and Testing Guide|We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works.|
 | 0d.|Docker|We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
