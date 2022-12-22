@@ -113,15 +113,15 @@ Reps:
 We plan to execute 3 deliverables in three milestones:
 - new methods for the Ink! smart contract for text notes storage;
 - an autocomplete feature for the browser extension for passwords autofill (tested under Chrome browser);
-- functionality for registering a new wallet (private key) straight in the Rubeus dApp, password (seed phrase) recovery mechanism by downloading a JSON file and some UI developments like hiding password behind “***” symbols.
+- a password generation tool.
 
 The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 DevOps engineer and 1 QA.
 
 ### Overview
 
 - **Total Estimated Duration:** 2 months
-- **Full-Time Equivalent (FTE):**  3,5 FTE
-- **Total Costs:** 30,000 USDT
+- **Full-Time Equivalent (FTE):**  2,8 FTE
+- **Total Costs:** 25,000 USDT
 
 ### Milestone 1 — Design and development of text notes storage methods
 
@@ -140,14 +140,15 @@ The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 Dev
 ### Milestone 2 — Autocomplete (autofill) feature development
 
 - **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 13,000 USD
+- **FTE:**  1,3
+- **Costs:** 12,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
 | 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. UI unit tests performed using Cypress | 
+| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
+| 0d. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what benefits what are the benefits of using the system 
 | 1. | Browser extension autofill feature | We will develop additional functionality for the browser extension: - registration and authorization forms tracking; - suggestion to generate and save a password; - generation of a random password with user-defined rules; - autofill password forms on websites (tested on 5+ different web sites). To access passwords and manipulate them while the extension pop-up is closed we will rearrange the extension and transfer some logic to the service worker; | 
 | 2. | Password generation tool | We will develop a tool for a random password generation with user-defined rules. | 
 
@@ -155,18 +156,6 @@ Sample image of a password generation tool:
 
 <img width="234" alt="Rubeus st2 pswd gen" src="https://user-images.githubusercontent.com/98888366/208406592-efe84a69-e00a-4482-9bd8-a2c30ace95eb.png">
 
+## Future Plans
 
-### Milestone 3 — Registration & recovery features development
-
-- **Estimated duration:** 2 weeks
-- **FTE:**  0,5
-- **Costs:** 4,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can run our smart contract and send test transactions, which will show how the functionality works. |
-| 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Article | We will publish an **article** that explains what was achieved, how to use the new Dapp and what benefits what are the benefits of using the system |  
-| 1. | Registration & recovery features | We will develop additional functionality for the browser extension: registration of a new wallet (private key) and recovery mechanism by downloading a JSON file. |  
-| 2. | Hiding passwords feature | A small additional feature that will hide passwords with “*” symbols when showing the passwords list. |  
+In the future plans for Rubeus we see widening of its functionality: from remembering credit cards credentials to answers for recovery questions. Everything that should be remembered for a personal use and complies with GDPR could be stored with Rubeus. A 2FA feature is also in our plans. All this should be developed under a later stage of the project.
