@@ -1,4 +1,4 @@
-# Ink Conracts Wizard
+# Ink Contracts Wizard
 
 *  **Team Name:** Ink Contracts Wizard Team
 
