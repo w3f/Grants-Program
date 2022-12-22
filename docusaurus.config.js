@@ -42,18 +42,18 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'Introduction/index',
+          docId: 'introduction',
           label: 'Introduction',
         },
         {
           type: 'doc',
-          docId: 'Applications/index',
+          docId: 'applications/index',
           position: 'left',
           label: 'List of Grants',
         },
         {
           type: 'doc',
-          docId: 'FAQ',
+          docId: 'faq',
           label: 'FAQ',
         },
         {
@@ -64,7 +64,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'Contribute',
+          docId: 'contribute',
           position: 'right',
           label: 'Contribute',
         }
@@ -138,7 +138,7 @@ module.exports = {
           exclude: [
             'Applications/application-template.md',
             'Applications/example-project.md',
-            'rfps/suggestion-template.md'
+            'RFPs/suggestion-template.md'
           ],
         },
         blog: false,
