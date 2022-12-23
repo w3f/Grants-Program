@@ -1,3 +1,7 @@
+> :christmas_tree: Please note that the review process might take longer than usual until January 6, 2023. Merry Christmas and Happy New Year!  :christmas_tree:
+
+___
+
 # Web3 Foundation Grants Program<!-- omit in toc -->
 
 <p align="center">
