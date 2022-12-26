@@ -2,7 +2,7 @@
 
 - **Team Name:** OCamlMyCaml
 - **Payment Address:** 13BpdtqDLM25KfCb5ttYy1opDP1sHmUNQka8QZi5DqQ3UGAV (Polkadot - USDT)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
 
@@ -35,7 +35,7 @@ Moving left to right in the above diagram, the development stack consists of
 3. React for the swap UI
 
 #### Proof-of-Concept
-We have developed a proof-of-concept for the executor module [here](https://drive.google.com/file/d/1jmPsCUfRWBJX6oRYvmAUGISYzbz2U0-9). This PoC, implemented in a [Phat Contract](https://wiki.phala.network/en-us/general/phala-network/products/#phat-contract) (decentralized off-chain computation framework developed by Phala Network) demonstrates the following steps:
+We have developed a proof-of-concept for the executor module [here](https://drive.google.com/file/d/1jmPsCUfRWBJX6oRYvmAUGISYzbz2U0-9). This PoC, implemented in a [Phat Contract](https://wiki.phala.network/en-us/general/phala-network/products/#phat-contract) demonstrates the following steps:
 1. The user sends the *sourceToken* to the protocol.
 2. The protocol XCM asset transfers this token amount to the *destinationChain*.
 3. The protocol swaps *sourceToken* for *destinationToken* on the remote chain's Uniswap-like DEX.
@@ -174,6 +174,17 @@ An *execution plan* is a series of steps (e.g. swap ASTR for DOT on Arthswap, tr
 
 ### Milestone 3 — Executor Module
 The executor module is Phat Contract code that actualizes the above execution plan, submitting transactions and extrinsics to perform swaps, bridges, and transfers.
+
+#### FAQs on Phat Contract
+What is Phat Contract?
+* Phat Contract is a decentralized off-chain computation framework developed by Phala Network. Note that there is *zero* connection between Phat Contract and the Phala blockchain, as this framework is entirely off-chain.
+
+Why use Phat Contract?
+* Phat Contract allows us to securely store our protocol's keys (both wallet secret keys and off-chain storage API keys) in the contract (via the Trusted Execution Environment). As a result, we can submit transactions/extrinsics from a decentralized and transparent computing environment instead of a centralized service.
+
+How can we evaluate Phat Contract?
+* We will place all business logic in separate modules, and create a thin Phat Contract wrapper that ties the components together. That means that every logical component can be run from a standard computer because it will be normal Rust code (similar to Substrate blockchain code). In fact, one can even perform an end-to-end test (that moves and swaps real tokens) from a local environment since secret keys can be kept locally.
+
 
 - **Estimated duration:** 1.5 months
 - **FTE:**  2
