@@ -319,11 +319,12 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 |    0a. | License                       | Apache 2.0                                                   |
 |    0b. | Documentation                 | We will provide a basic **tutorial** that explains how a user can deploy and test our Ink! contract. |
 |    0c. | Testing Guide                 | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-|    0d. | Article                 | We will publish an **article** that explains how to use our product. |
+|    0d. | Docker              | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
+|    0e. | Article                 | We will publish an **article** that explains how to use our product. |
 |     1. |Ink! Contract:TokenFactory         | TokenFactory can create ERC20 tokens with tax functions. |
 |     2. |Ink! Contract: MangoLock | MangoLock can realize the lock-up and linear release of Token.. |
 |     3. |Ink! Contract: MangoAirdrop | MangoAirdrop can implement different types of token airdrops. |
-
+|     4. | Frontend files | We will provide Front-end files and deployment tutorials for TokenFactory、 MangoLock and MangoAirdrop . |
 
 
 
@@ -344,7 +345,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 |     1. | Ink! Contract: launchpad | Launchpad can conduct Token auctions at a fixed price. |
 |     2. | Ink! Contract: Fair Launch | Fair Launch can conduct Token auctions in the form of fair launch. |
 |     3. | Ink! Contract: Dutch Auction | Dutch Auction can conduct Token auctions in the form of Dutch auctions. |
-|     4. | Frontend files | We will provide Front-end files and deployment tutorials. |
+|     4. | Frontend files | We will provide Front-end files and deployment tutorials  for launchpad、 Fair Launch and Dutch Auction. |
 
 
 
