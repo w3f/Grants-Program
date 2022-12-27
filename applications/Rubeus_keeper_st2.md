@@ -154,7 +154,7 @@ The project will be supported by a team of 2 developers, 1 UI/UX designer, 1 Dev
 
 Sample image of a password generation tool:
 
-<img width="234" alt="Rubeus st2 pswd gen" src="https://user-images.githubusercontent.com/98888366/208406592-efe84a69-e00a-4482-9bd8-a2c30ace95eb.png">
+<img width="234" alt="Rubeus st2 pswd gen" src="https://user-images.githubusercontent.com/98888366/208406592-efe84a69-e00a-4482-9bd8-a2c30ace95eb.png"/>
 
 ## Future Plans
 
