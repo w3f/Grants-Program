@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Asylum
 
-- **Project Name:** [Asylum](https://asylum.space/)
 - **Team Name:** Asylum
 - **Payment Address:** 0xB2a6bF365635ea209d7A824125c1bf249A189866 (USDT (ERC20))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
@@ -199,58 +198,64 @@ Because of this, almost all projects operating in this market are good candidate
 
 ### Team's experience
 
-**Illia Abrosimov** - CEO and Founder of Asylum. </br>
+**Illia Abrosimov** - CEO and Founder of Asylum.
+
 Illia used to be a backend developer since 2015, started coding at Unit Factory, had experience with algorithms, graphics, and game engines.
 Was working at Ubisoft as an online programmer for two years, was dealing with backend infrastructure, led game jams and hackathons.
 Have C#, C/C++, Rust, AWS in the stack.
 
-**Markian Ivanichok** - CEO and co-founder of Supercolony. </br>
+**Markian Ivanichok** - CEO and co-founder of Supercolony.
+
 Blockchain entrepreneur, Software Engineer.
 Markian started his engineering career back when he was 15. Since then, developed and got a lot of experience in engineering and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded, and invested in Sector F, one of the top consulting companies in Ukraine that help entrepreneurs to move faster.
 Co-founded and led Supercolony, a Polkadot venture studio that is dedicated to building and creating Polkadot’s ecosystem.
 
-**Maria Yaremenko** - Head of operations and co-founder of Asylum. </br>
+**Maria Yaremenko** - Head of operations and co-founder of Asylum.
+
 In 2019 started to work as a front-end developer, Maria became interested in blockchain technology and soon started her career as a blockchain developer in the Polkadot ecosystem in 2021.
 Maria has mentorship experience as a computer science tutor with, background in economics.
 
-**Alexander Kaplaty** - Financial Analytic & CFO, Supercolony. </br>
+**Alexander Kaplaty** - Financial Analytic & CFO, Supercolony.
+
 Internationally experienced financial and commerce professional helping businesses grow sales, improve operational performance, introduce corporate best practices, change organizational culture, and attract investments.
 
-**Kyrylo Nagorny** - CMO, Supercolony. </br>
+**Kyrylo Nagorny** - CMO, Supercolony.
 
-**Sven Seven** - CTO, Supercolony. </br>
+**Sven Seven** - CTO, Supercolony.
+
 Software engineer with prod experience since 2015. Master degree in Information Security.
 Has worked in finance, e-commerce, networking domains as full-stack dev.
 Programming languages are JS, Java, Python, Rust, C++.
 Blockchain dev since 2021.
 
-**Horacio Lex** - Blockchain developer, Supercolony. </br>
+**Horacio Lex** - Blockchain developer, Supercolony.
+
 Software engineer since 2018. Master of Science in Applied Mathematics. Has worked in data science and game development. Former Ubisoft employee was working on HUD/UI & gameplay systems. Programming languages are Python, C++, Rust. Blockchain developer since 2021.
 
 ### Team Code Repos
 
-- https://gitlab.com/asylum-space/
-- https://gitlab.com/asylum-space/asylum-ui
-- https://gitlab.com/asylum-space/asylum-item-nft
-- https://gitlab.com/asylum-space/asylum-standards
+- <https://gitlab.com/asylum-space/>
+- <https://gitlab.com/asylum-space/asylum-ui>
+- <https://gitlab.com/asylum-space/asylum-item-nft>
+- <https://gitlab.com/asylum-space/asylum-standards>
 
 Members:
 
-- https://github.com/LastSymbol0
-- https://github.com/0xMarkian
-- https://github.com/YaremenkoM
-- https://github.com/sventime
-- https://github.com/SupremaLex
+- <https://github.com/LastSymbol0>
+- <https://github.com/0xMarkian>
+- <https://github.com/YaremenkoM>
+- <https://github.com/sventime>
+- <https://github.com/SupremaLex>
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/illia-abrosimov/
-- https://www.linkedin.com/in/maria-yaremenko/
-- https://www.linkedin.com/in/0xmarkian/
-- https://www.linkedin.com/in/sven-seventimes/
-- https://www.linkedin.com/in/%D0%BD%D0%B0%D0%B3%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BA%D0%B8%D1%80%D0%B8%D0%BB%D0%BB-3bb2276a/
-- https://www.linkedin.com/in/kaplaty/
-- https://www.linkedin.com/in/heorhii-lutsenko-502873164/
+- <https://www.linkedin.com/in/illia-abrosimov/>
+- <https://www.linkedin.com/in/maria-yaremenko/>
+- <https://www.linkedin.com/in/0xmarkian/>
+- <https://www.linkedin.com/in/sven-seventimes/>
+- <https://www.linkedin.com/in/%D0%BD%D0%B0%D0%B3%D0%BE%D1%80%D0%BD%D1%8B%D0%B9-%D0%BA%D0%B8%D1%80%D0%B8%D0%BB%D0%BB-3bb2276a/>
+- <https://www.linkedin.com/in/kaplaty/>
+- <https://www.linkedin.com/in/heorhii-lutsenko-502873164/>
 
 ## Development Status :open_book:
 
@@ -288,7 +293,7 @@ Build of the 2d testing game with integration with Asylum node. Delivered within
 - **FTE:** 3,5 - 4 FTE
 - **Total Costs:** 48,000 USD
 
-### Previous work:
+### Previous work
 
 #### Milestone 1 — Basic in-game NFT items standard and web-app
 
@@ -330,7 +335,7 @@ Build of the 2d testing game with integration with Asylum node. Delivered within
 |     2. | Unity integration | We will provide a simple library for Unity (SDK) for integration of the Asylum on-chain ecosystem (Asylum Core pallet) into the game client.                                                                                                                                                                                                             |
 |     3. | Game A            | We will create a 2d web-faced platformer game sandbox in pixeled style with a small "level" space. A player will have a possibility to move, equip items from the inventory (inventory refers to the assets in the user's wallet), and use items (where applicable). The game will use NFT items minted on the Asylum Core pallet via the Unity library. |
 
-### Scope of this Grant:
+### Scope of this Grant
 
 #### Milestone 3 — Interoperable games
 
@@ -378,7 +383,7 @@ Build of the 2d testing game with integration with Asylum node. Delivered within
 | 0e.    | Article                                | -                                                                                                                                                                                                                                                                      |
 | 1.     | Game back-end example                  | We will implement a back-end for delivered games (milestones 2 and 3) that will track user actions and decide about items minting. In the future, this back-end is planned to be deployed on TEE (as an L2 solution) to make it secure and potentially decentralized.  |                                                                                           |
 | 1.1    | Game back-end example                  | Implement game back-end as substrate offchain worker and call it Asylum offchain minter. To make minting possible, blueprints issuer should insert their keys into the keystore as keys for offchain minter.                                                           |
-| 1.2    | Game back-end example                  | Implement minting control. Offchain minter will submit a mint transaction with parameters from the mint request (blueprint_id, item receiver) from player.                                                                                                             |                                 
+| 1.2    | Game back-end example                  | Implement minting control. Offchain minter will submit a mint transaction with parameters from the mint request (blueprint_id, item receiver) from player.                                                                                                             |
 | 1.3    | Game back-end example                  | Implement minting request validation. Offchain minter will validate item mint request: game should support a blueprint, which mint is requested and player should own a Ticket, which gives him an access to the game                                                  |
 | 1.4    | Game back-end example                  | Implement anti-bot protection. Offchain minter will store last player actions, such as movements, to guarantee that game was played honestly. Mint request will be rejected if some anomaly is found.                                                                  |
 | 1      | Unity SDK                              |                                                                                                                                                                                                                                                                        |
@@ -394,7 +399,7 @@ Build of the 2d testing game with integration with Asylum node. Delivered within
 
 As was described in the 'Overview' section, Asylum is a big project which has ambitious plans for the future. The milestones described in this grant application are about to become the first step for building a huge ecosystem for the Metaverse.
 
-Here you could find Asylum roadmap </br>
+Here you could find Asylum roadmap
 ![roadmap](https://i.ibb.co/KX4WDXS/2022-07-28-17-23-56.jpg)
 
 **Materials**:

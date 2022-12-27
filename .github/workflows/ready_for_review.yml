@@ -1,0 +1,18 @@
+name: Ready for Review notification
+
+on:
+  pull_request:
+    types: [labeled]
+    
+jobs:
+  send_matrix_review_msg:
+    if: github.event.label.name == 'ready for review'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: fadenb/matrix-chat-message@v0.0.6
+      with:
+        homeserver: 'matrix.web3.foundation'
+        token: ${{ secrets.MATRIX_TOKEN }}
+        channel: ${{ secrets.MATRIX_CHANNEL_ID }}
+        message: |
+          PR READY FOR REVIEW: [${{ github.event.pull_request.title }}](https://github.com/w3f/Grants-Program/pull/${{ github.event.pull_request.number }}) is ready for review. Labeled by ${{ github.event.sender.login }};

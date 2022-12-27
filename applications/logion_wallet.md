@@ -1,6 +1,4 @@
-# Open Grant Proposal
-
-* **Project Name:** logion wallet - a wallet you can trust 
+# logion wallet - a wallet you can trust 
 
 * **Team Name:** logion  
 

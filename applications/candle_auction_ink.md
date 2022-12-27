@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Candle Auctions on Ink!
 
-- **Project Name:** Candle Auctions on Ink!
 - **Team Name:** [@agryaznov](https://github.com/agryaznov)
 - **Payment Address:** (DAI) 0x3ef892235Ca80B537f5916E208d8C612EA55aC69
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1

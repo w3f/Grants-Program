@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Maki
 
-- **Project Name:** Maki
 - **Team Name:** Cyril Carlier (Individual)
 - **Payment Address:** 0x7e575d2140aa4b723ac2014d5627330a7ed514d4 (ERC-20 USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1

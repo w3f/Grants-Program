@@ -1,13 +1,10 @@
-# W3F Grant Proposal
+# New Order - a full onchain orderbook dex with indexers
 
-* **Project Name:** New Order - a full onchain orderbook dex with indexers
 * **Team Name:** Standard Protocol
 * **USDC Payment Address:**  0xd2234E506862991ADA75f930c6D79B4236e3E265
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
-
-
 
 ### Overview
 
@@ -19,6 +16,7 @@ This is clearly a frame and indexer using Subquery with reasons, not investment 
 * [Standard Protocol Website](https://standard.tech/)
 
 ### Technologies
+
 1. Rust
 2. Substrate Runtime
 
@@ -36,17 +34,18 @@ Subquery is an indexer middleware that we use to integrate with in this grant.
 
 ### Ecosystem Fit
 
-:link:  **Smart Contract Development Tool**<br>
-
+:link:  **Smart Contract Development Tool**<br />
 
 ### Project Uniqueness
+
 * The world's first fully open-source permissionless orderbook dex runtime with queue model.
 
 ## Reactive Queue
 
-Unlike other layer 2 orderbook dex which uses 
+Unlike other layer 2 orderbook dex which uses
 
 ### Target Audience
+
 * End users who are used to order book exchanges
 
 ### Problem Addressed
@@ -55,16 +54,18 @@ Unlike other layer 2 orderbook dex which uses
 
 After developing dex with [Standard](www.github.com/digitalnativeinc/standard-evm) in Polkadot ecosystem, There is a huge blocker on providing liqudity between polkadot ecosystem assets; **XYK pool economically does not make sense to be made from bottom-up**.
   0. Just to explain DEX in this document, It is an automated market maker between asset x and y keeping its equation x * y = k(k as the variable determining the price between asset on each trade). I see some grant editors are new to this field, so I leave this video link [https://www.youtube.com/watch?v=Af3NxB7r-Ws](https://www.youtube.com/watch?v=Af3NxB7r-Ws) to understand the concept. Many people forget that to make an xyk pool it requires a centralized power-play setting up initial price, and this is something that this grant focuses.
-  1. XYK pool relies on the fact that price K can be made from each pair liquidity providers. To choose the price, the liquidity provider with more dominant or liquid asset in an ecosystem take the advantage. Let's say there is a pair between USDC and some new parachain project token $NEW or $DOT and $NEW. It is obvious that $DOT and $USDC liquidity provider take advantage of the $NEW token. 
+
+  1. XYK pool relies on the fact that price K can be made from each pair liquidity providers. To choose the price, the liquidity provider with more dominant or liquid asset in an ecosystem take the advantage. Let's say there is a pair between USDC and some new parachain project token $NEW or $DOT and $NEW. It is obvious that $DOT and $USDC liquidity provider take advantage of the $NEW token.
   2. $NEW token has two choices; to fight back by buying $DOT or $USDC, but they are fighting with the liquidity provider in the first place. The other is not to list at all, then this may lead to negotiation on finding the right price on initial pair creation.
-  3. While parachain projects are finding the "right" price, pair is not made, and an end user can't even trade assets in polkadot ecosystem, so they will quit using this. 
+  3. While parachain projects are finding the "right" price, pair is not made, and an end user can't even trade assets in polkadot ecosystem, so they will quit using this.
 
 Hence, orderbook dex is not only needed for the "actual" polkadot user to trade the asset in polkadot ecosystem and take ownership of the market across this multichain ecosystem but also building market from bottom-up organically.
 
 There are other benefits as well:
-- Possibility for perpetual trade(e.g. dy/dx)
-- Possibility for MEV bot ecosystem (e.g. [flashbot](https://www.flashbots.net/))
-- Familiar UX
+
+* Possibility for perpetual trade(e.g. dy/dx)
+* Possibility for MEV bot ecosystem (e.g. [flashbot](https://www.flashbots.net/))
+* Familiar UX
 
 * Why Parachain?
 
@@ -87,7 +88,8 @@ Kujira team from Cosmos ecosystem already built this without bragging or marketi
 
 ## Team :busts_in_silhouette:
 
-### Team members 
+### Team members
+
 (Development & Engineers)
 
 * [Hyungsuk Kang](https://www.linkedin.com/in/hyungsukkang) - Founder & Head of Development
@@ -100,9 +102,11 @@ Kujira team from Cosmos ecosystem already built this without bragging or marketi
 
 ### Legal Structure
 
-Digital Native Foundation. </br> 
-3 Fraser Street #05-25 Duo Tower, </br> 
-Singapore </br> 
+Digital Native Foundation.
+
+3 Fraser Street #05-25 Duo Tower,
+
+Singapore
 
 ### Founders' experiences
 
@@ -110,7 +114,7 @@ Singapore </br>
 
 ### Team Code Repos
 
-* Standard Protocol's team Github: https://github.com/digitalnativeinc
+* Standard Protocol's team Github: <https://github.com/digitalnativeinc>
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
@@ -121,6 +125,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 * [Hyungsuk Kang](https://www.linkedin.com/in/hyungsukkang), Founder
 
 ## Development Status :open_book:
+
 I have fiddled with substrate last year.
 
 [nxcw](https://github.com/digitalnativeinc/standard-substrate)
@@ -143,7 +148,9 @@ Goal - Develop new-order pallet and documentation for the pallet
 New order pallet consists of:
 
 ###### Primitives
+
 Order
+
 ```
 - order_id: Global order identifier for ticketing
 - pair_id: Pair where the order is placed in
@@ -154,6 +161,7 @@ Order
 ```
 
 Pair
+
 ```
 - id: Pair id
 - human: Human-readable info for the pair(e.g. BTC-USDT)
@@ -162,21 +170,24 @@ Pair
 ```
 
 ###### Storages
+
 `Bids`(key1: pair_id, key2: price[in 6 decimals], value: order_id[]): A double hash map for Total bids in a price of an asset
 `Asks`(key1: pair_id, key2: price[in 6 decimals], value: order_id[]): A double hash map for Total asks in a price of an asset
 `Pairs`(key: pair_id, value: Pair): A hashmap for storing pair information.
-`Orders`(key: order_id, value: Option<Order>): A hashmap for orders.
+`Orders`(key: order_id, value: Option&lt;Order&gt;): A hashmap for orders.
 `Prices`(key1: pair_id, key2: asset_id, value: price in 6 decimal): A double hash map for market price in new order runtime.
 `WhiteListed`(key: pair_id, value: bool): A hash map to store whitelisted pairs
 
 ###### Calls
+
 `add_pair`: a sudo function to add a pair in the orderbook
-`remove_pair`: a sudo function to remove a pair in the orderbook 
+`remove_pair`: a sudo function to remove a pair in the orderbook
 `place_bid`: place bid on the orderbook, if existing orders match with ask, dissolve while going through the ask queue.
 `place_ask`: place ask on the orderboook, if existing orders match with bid, dissolve while going through the bid queue.
 `cancel_order`: cancel an order submitted from the sender
 
 ###### Events
+
 `BidOrderFulfilled`: an event when an order is fullfilled
 `AskOrderFulfilled`: an event when an order is fullfilled
 `AskOrderMatched`: an event when an order is matched for certain amount
@@ -242,13 +253,13 @@ neworder.js: Usage guides with query, execution
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 | 
+| 0a. | License | Apache 2.0 |
 | 0b. | Documentation | I will write this in official [documentation](https://github.com/standardweb3/docs) |
 | 0c. | Testing Guide | Test code will be written in neworder.js |
 | 0d. | Docker | Dockerfile is not needed |
 | 1. | Library Repo | The code for the library will be open source for PoC. |
 | 2. | CLI Repo | The code for CLI interacting with new order will be open source for PoC. |
-| 2. | Article & Video | 	We will write an **article** that explains the work done as part of the grant, as well as release a video demo of executing newordercli |
+| 2. | Article & Video |  We will write an **article** that explains the work done as part of the grant, as well as release a video demo of executing newordercli |
 
 ## Future Plans
 
@@ -263,5 +274,5 @@ neworder.js: Usage guides with query, execution
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** 
+**How did you hear about the Grants Program?**
 I applied before.

@@ -1,6 +1,5 @@
-# W3F Open Grant Proposal
+# Ruby Substate Client
 
-* **Project Name:** Ruby Substate Client
 * **Team Name:** UNI-ARTS
 * **Payment Address:** 0xE7188c7e225D473eE9D99108482Af54952d71527 (USDT)
 * **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/613#issuecomment-1122685293)
@@ -11,11 +10,11 @@
 
 Ruby Substate Client will support a efficient way to interface with substrate chain with ruby.
 
-This library will provide convenience methods to deal with SR25519, ED25519 sign and verify message. 
+This library will provide convenience methods to deal with SR25519, ED25519 sign and verify message.
 
 Encode/Decode the chain message, submit the sign message to chain by rpc.
 
-Through this grant, we hope to 
+Through this grant, we hope to
 
 1. SR25519, ED25519 support.
 
@@ -29,27 +28,25 @@ Through this grant, we hope to
 
 #### Apis
 
-- SR25519.keypair_from_seed(seed)
-- SR25519.sign(message, keypair)
-- SR25519.verify(address, message, signature_result)
-- ED25519.keypair_from_seed(seed)
-- ED25519.sign(message, keypair)
-- Ed25519.verify(address, message, signature_result)
-- RbSubstrateClient.submit_sign_extrinsics(params, keypair)
-- RbSubstrateClient.utility_batch_submit(params, keypair)
+* SR25519.keypair_from_seed(seed)
+* SR25519.sign(message, keypair)
+* SR25519.verify(address, message, signature_result)
+* ED25519.keypair_from_seed(seed)
+* ED25519.sign(message, keypair)
+* Ed25519.verify(address, message, signature_result)
+* RbSubstrateClient.submit_sign_extrinsics(params, keypair)
+* RbSubstrateClient.utility_batch_submit(params, keypair)
 
 #### Technology stack
 
-- [ruby lang](https://www.ruby-lang.org/) 2.7
-- [ruby on rails](https://rubyonrails.org/) 6.1, web framework
+* [ruby lang](https://www.ruby-lang.org/) 2.7
+* [ruby on rails](https://rubyonrails.org/) 6.1, web framework
 
 ### Ecosystem Fit
 
+### Similar projects
 
-### Similar projects:
-
-https://github.com/polkascan/py-substrate-interface
-
+<https://github.com/polkascan/py-substrate-interface>
 
 ## Team :busts_in_silhouette:
 
@@ -70,7 +67,7 @@ https://github.com/polkascan/py-substrate-interface
 
 ### Team's experience
 
-The team is familiar with Ethereum and Substrate development. 
+The team is familiar with Ethereum and Substrate development.
 
 **Xuxioahu** Technical expert in blockchain and web development,  has been using golang development since 2015 and ruby development since 2010. Has experiences of EVM smart contract technology and  blockchain browser.
 
@@ -78,13 +75,12 @@ The team is familiar with Ethereum and Substrate development.
 
 ### Team Code Repos
 
-* https://github.com/uni-arts-chain/sr25519
-* https://github.com/uni-arts-chain/rb_substrate_client
+* <https://github.com/uni-arts-chain/sr25519>
+* <https://github.com/uni-arts-chain/rb_substrate_client>
 
 ## Development Status :open_book:
 
 Much of the technology is already implemented [app.uniarts.network](https://app.uniarts.network/). But now the code is in the project, not written as a library. and it needs more tests. We expect that we can refactor, reuse and generalize existing code. write gems to help other ruby developers.
-
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -121,7 +117,6 @@ Much of the technology is already implemented [app.uniarts.network](https://app.
 |    0c. | api | We will provide RbSubstrateClient.submit_sign_extrinsics(params, keypair), RbSubstrateClient.utility_batch_submit(params, keypair)
 |    0d. | Testing Guide         | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 |    0e. | Docker                | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. <br />And, It will be used to run the server. |
-
 
 ## Future Plans
 
