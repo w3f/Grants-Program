@@ -83,15 +83,15 @@ Based on the nimbus consensus, make a PoS parachain development template with Po
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
-|  Number | Deliverable                 | Specification                                                                                                                                                                               |
-|--------:|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                     | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                        |
-| **0b.** | Documentation               | Add documentation explaining how these modules fit together to complete the entire PoS process.                                                                                             |
-| **0c.** | Testing and Testing Guide   | Add manual tests to prove that the entire PoS runs successfully.                                                                                                                            |
-| **0d.** | Docker                      | Provide Docker to the chain, allowing anyone to quickly run the chain                                                                                                                       |
-|       1 | client code                 | Complete client functions like [PoA templates client](https://github.com/substrate-developer-hub/substrate-parachain-template/tree/main/node), such as try-runtime command options related to data migration, etc.                                                                |
-|       2 | modules                     | Imp all staking-related substrate native modules (ElectionProviderMultiPhase,  VoterList and NominationPools) for the runtime.                                                              |
-|       3 | Substrate Modlue: Collators | Provide collators (validators) for nimbus consensus. The collators can also come from staking, and it can be set directly by root or other origin. Means you can choose whether to use PoS. |
+|  Number | Deliverable                 | Specification                                                                                                                                                                                                                  |
+|--------:|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                     | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                           |
+| **0b.** | Documentation               | Add documentation explaining how these modules fit together to complete the entire PoS process.                                                                                                                                |
+| **0c.** | Testing and Testing Guide   | Add manual tests to prove that the entire PoS runs successfully.                                                                                                                                                               |
+| **0d.** | Docker                      | Provide Docker to the chain, allowing anyone to quickly run the chain                                                                                                                                                          |
+|       1 | client code                 | Provide a client with the same functions as [https://github.com/substrate-developer-hub/substrate-parachain-template/tree/main/node](https://github.com/substrate-developer-hub/substrate-parachain-template/tree/main/node).  Such as having the `try-runtime` command, etc.|
+|       2 | modules                     | Imp all staking-related substrate native modules (ElectionProviderMultiPhase,  VoterList and NominationPools) for the runtime.                                                                                                 |
+|       3 | Substrate Modlue: Collators | Provide collators (validators) for nimbus consensus. The collators can also come from staking, and it can be set directly by root or other origin. Means you can choose whether to use PoS.                                    |
 
 ## Future Plans
 
