@@ -571,5 +571,6 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Blaize.tech](https://blaize.tech/)                              | Unified deployment for the collator node                                                                                 | [GitHub](https://github.com/babebort-blaize)                            |     ☐      |       ☐        |     ☐     |
 | [Odyssey B.V.](https://odyssey.org/)                              | Momentum, an open source, metaverse for digital societies                                                                                 | [GitHub](https://github.com/momentum-xyz)                            |     ☐      |       ☐        |     ☐     |
 | [Bela Supernova](https://bsn.si/)                            | [Rubeus Keeper Stage 2](Rubeus_keeper_st2.md)                                                                               | [GitHub](https://github.com/bsn-si)                                    |     ☐      |       ☐        |     ☐    |
+| [Coong Team](https://coong.xyz/)                            | [Coong Wallet](coong_wallet.md)                                                                               | [GitHub](https://github.com/CoongCrafts)                                    |     ☐      |       ☐        |     ☐    |
 
 
