@@ -9,8 +9,8 @@
 ### Overview
 
 
-Parachain projects require more project parties to use PoS, which helps them achieve a certain degree of decentralization, and the economic model is healthier and more favored by the community.
-Our aband-parachain project uses the [PureStake/nimbus](https://github.com/PureStake/nimbus) as the Pos block consensus, because it achieves randomness, but it only needs the function of randomness.
+Parachain projects require more teams to use PoS, which helps them achieve a certain degree of decentralization, and the economic model is healthier and more favored by the community.
+Our aband-parachain project uses the [PureStake/nimbus](https://github.com/PureStake/nimbus) as the Pos block consensus.
 In the business layer, we prefer the staking developed by the Polkadot team and a series of modules related to staking. It took us two days to familiarize ourselves with the codes of these two projects, and then implemented Staking on the third day.
 This makes us a little frustrated, we are senior developers of substrate, if we are all like this, it will take more time for beginners, even if it is a strong development team,
 You shouldn't spend too much time on it either. We hope to make a PoS template, so that developers can develop their own PoS projects without taking a minute.
@@ -90,8 +90,8 @@ Based on the nimbus consensus, make a PoS parachain development template with Po
 | **0c.** | Testing and Testing Guide   | Add manual tests to prove that the entire PoS runs successfully.                                                                                                                            |
 | **0d.** | Docker                      | Provide Docker to the chain, allowing anyone to quickly run the chain                                                                                                                       |
 |       1 | try-runtime                 | Implement try-runtime for template clients.  [PureStake/nimbus](https://github.com/PureStake/nimbus) does not implement this part                                                           |
-|       2 | modules                     | Imp all staking-related substrate native modules for the runtime.                                                                                                                           |
-|       3 | Substrate Modlue: Collators | Provide collectors (validators) for nimbus consensus. The collator can also come from staking, and it can be set directly by root or other origin. Means you can choose whether to use PoS. |
+|       2 | modules                     | Imp all staking-related substrate native modules (ElectionProviderMultiPhase,  VoterList and NominationPools) for the runtime.                                                              |
+|       3 | Substrate Modlue: Collators | Provide collators (validators) for nimbus consensus. The collators can also come from staking, and it can be set directly by root or other origin. Means you can choose whether to use PoS. |
 
 ## Future Plans
 
