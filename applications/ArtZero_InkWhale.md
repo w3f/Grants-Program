@@ -9,7 +9,7 @@
 
 The ArtZero is a decentralized NFT marketplace on the Aleph Zero blockchain. It is the first NFT marketplace on Aleph Zero, allows everyone to Create, Buy, Bid, Sell, or just Collect Aleph Zero-based NFTs. The platform comes with its native Praying Mantis Predators NFT Collection, which NFT owners can stake for share of platform profit and other perks. ArtZero also provides a launchpad to let anyone to launch their NFT Collection.
 
-Ink Whale lets stakers earn fixed interest and other rewards for locking up your tokens or NFTs. In this article, we will guide you how you can add utilities to your NFT Collections through NFT staking and farming. Unlike traditional yield farming, where you need to deposit tokens into a liquidity pool to get token rewards, NFT farming uses NFTs instead. The main goal of NFT farming is to create liquidity and utility for NFTs.
+Ink Whale lets stakers earn fixed interest and other rewards for locking up your tokens or NFTs. Unlike traditional yield farming, where you need to deposit tokens into a liquidity pool to get token rewards, NFT farming uses NFTs instead. The main goal of NFT farming is to create liquidity and utility for NFTs.
 
 The Smart Contracts of ArtZero and Ink Whale use Ink! Substrate are currently working on Aleph Zero but the Smart Contracts can be deployed on any parachains that support Ink!
 
@@ -82,7 +82,7 @@ All of our developers have at least 5-10 years experience in software developmen
 
 ## Development Status :open_book:
 
-We have completed the Testnet demo version of the ArtZero NFT Marketplace. The contracts are waiting to be audited then our platform will be ready to be launch on Aleph Zero Mainnet.
+We have completed the Testnet demo version of the ArtZero NFT Marketplace. The first version of the contracts are waiting to be audited then our platform will be ready to be launch on Aleph Zero Mainnet.
 
 https://artzero.io
 https://docs.artzero.io/
@@ -99,11 +99,11 @@ Ink Whale is still in development and the MVP is completed for public test at ht
 - **Total Costs:** 30,000 USD
 
 
-### Milestone 1  — NFT Marketplace on Moonbeam and Astar
+### Milestone 1  — NFT Marketplace on Polkadot Parachains
 * **Estimated Duration:** 8 weeks
 * **Costs:** 15,000 USD
 
-In this milestone, We will implement all Ink! Smart contracts on Moonbeam and Astar Testnet with full working NFT Marketplace UI/UX and backend. Consider to launch on Mainnet when the networks are ready with Mainnet Smart Contract.
+In this milestone, We will create Smart contracts to be compatible with Ink!4.0 Polkadot Parachains with full working NFT Marketplace UI/UX and backend.
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
@@ -128,9 +128,9 @@ In this milestone, We will continue to improve the current development of Ink Wh
 | 0b.    | Documentation      | We will provide technical documents and user guides |
 | 0c.    | Testing Guide      | We will provide Test Plan and Test Results for operating and using the staking and yield farming platform. |
 | 0d.    | Article/Tutorial   | We will write an article or tutorial that explains the work principle as part of the grant. |
-| 1. | smart contract development | Enhance the current smart contracts in MVP and create the final version and deploy on Moonbeam, Astar and Aleph Zero Network. The contracts will have following functions: create PSP22 token, create a staking pool, create NFT yield farm, create token yield farm, add rewards to pool, remove rewards from pool, claim reward from pool. We have to create 9 different contracts; WAL token contract that allows public minting and fixed total supply; General psp22 token contract and psp22 token generator contract; Pool Contract and Pool Generator Contract; NFT Farming Contract and NFT Farming Generator Contract; LP Farming Contract and LP Farming Generator Contract. |
+| 1. | Smart Contract Development | Enhance the current smart contracts in MVP. The contracts will be compatible with Ink!4.0 and have following functions: create PSP22 token, create a staking pool, create NFT yield farm, create token yield farm, add rewards to pool, remove rewards from pool, claim reward from pool. We have to create 9 different contracts; WAL token contract that allows public minting and fixed total supply; General psp22 token contract and psp22 token generator contract; Pool Contract and Pool Generator Contract; NFT Farming Contract and NFT Farming Generator Contract; LP Farming Contract and LP Farming Generator Contract. |
 | 2. | Backend | Build infrastructure to serve the need of Ink Whale. We use nodejs and mongodb on AWS Services. The cronjob monitor update queue to make sure data in the database match with data on-chain; The API serves the frontend with following functions: getTokens, getPools, getLPPools, getNFTPools, getPoolsbyOwner and getPoolsbyAddress. update API also required to add update request to the database queue and serves the cronjobs. |
-| 3. | Frontend | Revamp the front-end for final version, better UI/UX. The new design is currently in progress. The current design can be seen at https://testnet.inkwhale.net |
+| 3. | Frontend | Revamp the front-end for final version, better UI/UX. The new design is currently in progress and can be found at https://www.figma.com/file/63xCCH71Oa8AfJpkK1wCO3/Ink-Whale?node-id=88%3A234. The current demo can be seen at https://testnet.inkwhale.net |
 
 
 ## Future Plans
