@@ -1,4 +1,4 @@
-# Polkadot contract wizard
+# Polkadot Contract Wizard
 
 - **Team Name:** Protofire
 - **Payment Address:** 5FcEYNumroWcwyjeDtDVZALuCGmx94PjXnc9XzifHKTfU5Bf
@@ -6,103 +6,78 @@
 
 ## Project Overview :page_facing_up:
 
-This project is an application for a grant for a winning project on Web3-Blockchain tooling of the Polkadot hackathon.
+This project is an application for a grant after getting [the first prize on Polkadot Hackathon LATAM](https://polkadothackathonlatam.com/proyecto-inner/LactobaciloGG). 
+
+We firmly believe that web3 has to be easy to use, this project is based on that premise and from the mock-up developed in the hackathon, we are going to take the next steps to make this experience frictionless.
 
 ### Overview
 
-The polkadot contract wizard aims to be the project that provides the entry point for the next generation of web3 users, developers and non developers in the Polkadot ecosystem. It will achieve that goal by enabling new users creating their own contracts in a few clicks. We want to provide the possibility to artists to be able to create their own PSP34 contract for publishing their work. As artists they need to focus on what they do, so we make the access to smart contracts easy for them. We also expect people that have a great idea to be able to create their own token PSP22 for financing their idea. Those users don’t need to care about programming, but they need to be able to customize their smart contracts in a simple way with the support of the developer community around the world.
+The Polkadot Contract Wizard aims to be the project that provides the entry point for the next generation of web3 users, developers and non developers in the Polkadot ecosystem. It will achieve that goal by enabling new users creating their own contracts in a few clicks. We want to provide the possibility to anyone to be able to create their own smart contracts as a tool for their work. The users need to focus on what they do, so we make the access to smart contracts easy for them. They don’t need to care about programming, but they need to be able to customize their smart contracts in a simple way with the support of the developer community around the world.
 
 ### Project Details
 
-[Here](https://alongoni.github.io/polkadot-contract-wizard/#) you can find an example of what we already proposed. And [here](https://github.com/alongoni/polkadot-contract-wizard) is the repo containing what we already did.
+[Here](https://alongoni.github.io/polkadot-contract-wizard/#) you can find our first approach of the contract wizard. And [here](https://github.com/alongoni/polkadot-contract-wizard) is the repo containing what we already did.
 
-This is the implementation we will have up and running after the completion of this grant:
+We learned from this experience that this kind of implementations are not friendly enough to non technical users, so we decided to do something about it.
 
- 1.- Re-Develop mockup of the frontend interface
+These are the steps that will be done to implement the proposed solution:
 
-The development need to be focused on UX
+ **1.-  Redesign frontend interface (in progress)**
 
-There’s already a tool we can base our work on: https://wizard.openzeppelin.com/
+The development needs to be focused on making a better user experience.
+There are already some tools that we can use as a reference. E.g: https://mintplex.xyz/ , https://wizard.openzeppelin.com/
 
-Think the user can be an artist that need to create a new NFT token contract for publishing their own content
+#### User Personas
 
-Think the user is a non technical person that has a great idea and need to create a new PSP22 for being able to finance it’s own project.
+- A non-technical user that needs to create a new NFT contract for publishing his own content or needs to create a new Token for being able to finance his own project.
 
- 2.- Re-Develop interface with no functionality based on the previous task result
+- A developer that wants to bootstrap a quick template of a standard contract (based on [PSP](https://github.com/w3f/PSPs)) with different features.
 
-Based on the mockup created in the previous step make it something usable
+If we want to onboard more people to Polkadot Ecosystem and achieve mass adoption we need to make the user experience easier.
 
-Need to be very careful about the Look and Feel
+We have already started with a [prototype](//TODO) on Figma.
 
-Don't forget the UX approach.
+ **2.- Develop the interface based on the previous task result**
 
- 3.- Add syntax highlighting to the code in rust for PSP22 at the beginning (this is already done in the current version)
+Based on the mock-up created in the previous step make it something usable.
 
-We need to find a library that covers not only Rust language, but let’s have in mind Assembly Script will be required in the future, or any other language that has a transpiler and could be compatible with wasm.
+We need to be very careful about the look and feel.
 
-Copy the PSP22 contracts from here: https://github.com/Supercolony-net/openbrush-contracts/blob/main/contracts/src/token/psp22/psp22.rs
+The user will be guided step by step to create the contract he needs. At the end, the generated smart contract code is displayed with the possibility to copy and download it.
 
- 4.- Compose the contracts based on the selection
+ **3.- Compose the contract based on the selection.**
 
-All Rust contracts need to be composables based on the modifiers selected by the user.
+All the contracts need to be composable based on the modifiers selected by the user.
 
-The rs code of the modifiers is already here: https://github.com/Supercolony-net/openbrush-contracts/tree/main/contracts/src/token/psp22/extensions
+At first, we will only use OpenBrush contracts than can be found here: https://github.com/Supercolony-net/openbrush-contracts/tree/main/contracts/src/token
 
- 5.- Add copy button the ability to copy the code generated (already done in the current version but need to be improved based on the UX analisys on point 1.-
+ **4.- Add syntax highlighting to the displayed smart contract code.** 
+ 
+At first, the syntax hihlighter will only be used for Rust programming language.
 
-Check the copied code is exactly the same as the generated code
+To allow compatibility with future plans we will research for a library that covers not only Rust, but can also be used with AssemblyScript or any other language that is compatible with WASM.
 
- 6.- Add download button the ability to generate the file and download it (same as previous point)
+ **5.- Deploy all possible combinations of smart contracts.**
 
-Check the downloaded file contains exactly what was generated in the UI
+In order to allow users to only instance the smart contracts, we will have to deploy the smart contracts first. Once each of them is deployed, we will store the code hash so that it can be used later.
 
- 7.- Add PSP34 functionality.
-
-Include the PSP34 functionality
-
-Base code and the extensions are already here: https://github.com/Supercolony-net/openbrush-contracts/tree/main/contracts/src/token/psp34
-
- 8.- Develop Add/Instance functionality, hardcoded to Canvas parachain in Rococo PSP22 base
-
-At the very beginning we will need to deploy an instance in the same step. Even if the same contract was already created in the parachain.
-
-Check documentation here: https://github.com/paritytech/canvas
-
-The compiled file to upload will be the PSP22 base, nevermind the selection and can be hardcoded.
-
- 9.- Compile code generated and deploy it Canvas parachain in Rococo
-
-We will need to find a compiler to integrate in the UI for compiling the code that’s displayed in the interface.
-
-Integrate the compiler to the UI, creating the compiled file and uploading it to create an instance of the contract.
-
-If that is not possible, create a server endpoint for sending the code and get the compiled version.
-
- 10.- Store a map containing addresses of contracts already deployed on each parachain for creating instances when possible
-
-We need a map containing parachain (WS or name), type of the contract (PSP22 - base / PSP22- burnable / ) and the address already deployed.
+We need a map containing the parachain, type of the contract and the modifiers used (PSP22 - base / PSP22- burnable) and the code hash of the deployed contract.
 
 Research what’s the best place to store this and what’s the most efficient way.
 
- 11.- Add create instances when possible of already deployed contracts
+At first, it will only be done in Rococo Testnet //TODO
+Check documentation here: https://github.com/paritytech/canvas
 
-Based on previous research implement the create instance instead of deploying every time
+ **6.- Develop Instance functionality.**
 
- 12.- Create functionality to deploy on custom parachain adding WS information
-
-Add the ability to select which parachain you want to deploy, show errors if fail to deploy or connect.
-
- 13.- Add the ability of creating custom contracts, not only with the modifiers but adding the ability to write code using the interface.
-
-At this point we need to be able to make changes in the code and be able to compile that code.
-
-Add a warning if you want to change language from INK to ASK and vice-versa saying if you change language all custom changes will be lost.
-
-#### We are going to make this work having in mind the rest of the items we already wrote in [this issue](https://github.com/alongoni/polkadot-contract-wizard/issues/1)
+Once the user has finished defining the functionality of the contract, the associated code hash from the previous step is obtained.
+Now, the user is able to fill the required fields of the contract constructor in order to instance it succesfully.
 
 ### Ecosystem Fit
 
-As already said this project will help the entire ecosystem providing an entry level of users of a solution already build. This will allow them to start creating and using contracts form the standard in a very simple way. The main users for this can be artists or art curators that need their own contracts for their non fungible tokens. We are also expecting people from the community with great ideas that need to build their own token, even if they are migrating from other networks or if they want to start their project from scratch in Polkadot.
+**Polkadot Contract Wizard aims to be a bridge between people with great ideas and the entire Polkadot Ecosystem.**
+
+This project will help providing a solution for all type of users to create standard smart contracts such as tokens, NFTs, etc in a very simple way.
 
 ## Team :busts_in_silhouette:
 
@@ -151,7 +126,6 @@ GitHub accounts of team members.
 - linkedin.com/in/nikita-zasimuk
 - linkedin.com/in/diego-torres-borda-94b70912
 
-
 ## Development Status :open_book:
 
 - [link](https://polkadothackathonlatam.com/proyecto-inner/LactobaciloGG/usuario-single/) to project presented on Polkadot hackathon LATAM
@@ -168,8 +142,8 @@ TODO//
 
 ### Milestone 1 Example — Basic functionality
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
+- **Estimated duration:** 2 month
+- **FTE:**  2
 - **Costs:** 8,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
@@ -200,16 +174,17 @@ TODO//
 
 ## Future Plans
 
-Please include here
+After the completion of this project, we would love to broaden its scope.
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+**Custom contracts**
+- Add the possibility of creating custom contracts, not only with the modifiers but adding the ability to write code using the interface.
+- Compile the generated code and deploy it to different parachains.
 
-## Referral Program (optional) :moneybag: 
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+**Social Interaction**
+- Create an account to store information.
+- Save your created smart contracts.
+- Be able to share them with the community and ask for help.
+- Provide assistance to other community members.
 
 ## Additional Information :heavy_plus_sign:
 
