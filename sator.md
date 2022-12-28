@@ -6,10 +6,6 @@
 
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
-
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
-
 ### Overview
 
 Sator project concerns technology infrastructure to onramp global content to web3 at-scale. Specifically, Sator technologies enable the tokenization of network effect value surrounding streaming content that diffuses value throughout the ecosystem. Sator project empowers non-crypto-natives with digital in-app wallets that will include Polkadot which requires the creation of in-app wallet support on Substrate and Polkawallet SDK. Polkadot in-app wallet support unlocks the following features:
