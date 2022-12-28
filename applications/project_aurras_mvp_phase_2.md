@@ -172,7 +172,7 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 | 1e. | Workflow Composer: Concat Operator | We will build an operator interface to merge two flows | Users can facilitate the concatenation of two tasks to get a combined final output that can be consumed by the next task. |  
 | 1f. | Workflow Composer: Map Operator | We will create an operator to map the inputs to the outputs of each flow | Users can facilitate the transformation of the output of one task to a format required by a subsequent task. |  
 | 2   | Predefined boiler plate | We will build a predefined Rust code for flow generation | Users can create workflow WASM that utilizes the boilerplate code to implement the necessary functionalities that carry out the tasks defined in the YAML. |  
-| 3a. | Flow Provider for Tackle Box |We will create a provider to employ the necessary hooks for the workflow | Users can use the flow provider to generate the code to implement the flow of data between the tasks. |  
+| 3a. | Flow Provider for Tackle Box | We will create a provider to employ the necessary hooks for the workflow | Users can use the flow provider to generate the code to implement the flow of data between the tasks. |  
 | 3b. | Task Provider for Tackle Box | We will create a provider that will generate a struct with the given macros and arguments | Users can use the task provider to generate the code necessary to execute the tasks defined in the workflow YAML. |  
 | 3c. | Workflow Provider for Tackle Box  | We will create a provider that will interface the operators and tasks | Users can use the workflow provider to generate the code necessary to execute the workflow as defined in the workflow YAML. |  
 
@@ -189,8 +189,7 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 | 0b. | Documentation | We will provide the following documentation: Inline Code Documentation, Operator Documentation, Flow design, Readme file | |  
 | 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness | |  
 | 0d. | Docker File | We will provide docker file for running the workflow composer | Users can utilize the docker image as a cli tool to generate workflow wasm from the provided yaml |  
-| 1a. | Workflow Composer: Flow Macro | We will create three types of flows: init, pipe and terminator. The init is used to create the first task in the workflow and the terminator is used to create the last task. The pipe method is used to create other tasks that accept inputs and are dependent on other tasks | Users can utilize the flow macro that is used by the flow provider to generate the code to implement the flow of data between the tasks. |  
-| 1b. | Workflow Composer: Derive Macro(s) | We will create derive macros to enable the tasks in a workflow to invoke OpenWhisk actions and triggers. The tasks are structs, based on a generic format that would include name, inputs and endpoints and macros add functionalities for the tasks | Users can utilize the derive macro to add specific functionalities to the tasks that are required for the execution of the workflow. |  
+| 1a. | Workflow Composer: Flow Macro | We will create three types of flows: init, pipe and terminator. The init is used to create the first task in the workflow and the terminator is used to create the last task. The pipe method is used to create other tasks that accept inputs and are dependent on other tasks | Users can utilize the flow macro that is used by the flow provider to generate the code to implement the flow of data between the tasks. |   
 
 
 ### Milestone 3 — Web API/Backend
@@ -210,7 +209,7 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 | 1c. | Web API: User Workflow Management | We will create an API for User to select workflow and provide argument values, Pause Workflow, Delete Workflow | Users can update the inputs of a registered workflow.  <br/> Users can pause an active workflow.  <br/> Users can unfreeze a paused workflow.  <br/> Users can delete a registered workflow. |
 | 2a. | Workflow Yaml Polkadot Payouts | We will create a YAML file that defines the workflow for claiming the Polkadot validator payouts to the provided wallet | Users can create a workflow YAML to claim PolkaDot payouts using the pre-defined YAML file. |
 | 2b. | Reward OpenWhisk actions | We will create OpenWhisk actions to index the validator details to the Kafka topic that will invoke the validator payout workflow | Users can utilise the pre-deployed OpenWhisk actions to validate the validator ID and check claims for the particular validator. |
-| 2c. | Claim OpenWhisk actions | We will create a set of OpenWhisk actions to carry out the tasks of claiming the validator rewards to the provided wallet as defined in the workflow | Users can claim Polkadot payout rewards using the registered workflow. |
+| 2c. | Claim workflow module | We will create a plugins to carry out the tasks of claiming the validator rewards to the provided wallet as defined in the workflow | Users can claim Polkadot payout rewards using the registered workflow. |
 | 2d. | Polkadot API Derive macro for workflow task | We will create derive macros that will provide the necessary functionalities for the task struct to perform RPC calls | Users can facilitate the execution of tasks that utilize the derive macro to perform RPC calls. |
 | 3. | Video Tutorial | We will create a set of video tutorials to guide the users to use this MVP | |
 
@@ -237,3 +236,12 @@ We came across the Web3 Grants Program while perusing about the developments in 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
 - Previous grant: https://github.com/w3f/Grants-Program/pull/163
+
+## Update & Amendments
+
+### 28/12/2022
+
+We have encountered a critical issue where we faced workflows fails due to certain Openwhisk actions timing out hence we took an alternative approach where we have made Polkadot API wasm compatible and included as a plugin to the wasm, due to this the timeline has now been exceeded by several months and has made certain components we developed obsolete.
+
+- **Estimated Duration:** 45 Working days
+- **FTE:**  1
