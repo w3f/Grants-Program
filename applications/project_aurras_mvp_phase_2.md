@@ -127,8 +127,6 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 - https://www.linkedin.com/in/hanumantappa-budihal/
 - https://www.linkedin.com/in/shreyas-ks/
 - https://www.linkedin.com/in/shanith-k-k-09378988/
-- https://www.linkedin.com/in/amogha-sudarshan/
-- https://www.linkedin.com/in/immanuel-stanley-436456218/
 
 ## Development Status :open_book:
 
