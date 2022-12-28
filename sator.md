@@ -88,32 +88,8 @@ Team LinkedIn Profiles (if available)
 Christina Martin https://www.linkedin.com/in/chrismartinhodl/
 Isla Perfito https://www.linkedin.com/in/islarose/
 
-## Development Status :open_book:
-
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
 
 ## Development Roadmap :nut_and_bolt:
-
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-For each milestone,
-
-- make sure to include a specification of your software. _Treat it as a contract_; the level of detail must be enough to later verify that the software meets the specification.
-- include the amount of funding requested _per milestone_.
-- include documentation (tutorials, API specifications, architecture diagrams, whatever is appropriate) in each milestone. This ensures that the code can be widely used by the community.
-- provide a test suite, comprising unit and integration tests, along with a guide on how to set up and run them.
-- commit to providing Dockerfiles for the delivery of your project.
-- indicate milestone duration as well as number of full-time employees working on each milestone.
-- **Deliverables 0a-0d are mandatory for all milestones**, and deliverable 0e at least for the last one. If you do not intend to deliver one of these, please state a reason in its specification (e.g. Milestone X is research oriented and as such there is no code to test).
-
 
 ### Overview
 
@@ -157,9 +133,8 @@ For each milestone,
 | 1. | Overview |  In this milestone we will complete the integration of Polkadot NFT functionality which allows for collecting Polkadot NFTs from our marketplace nft.sator.io |
 | 2. | React Package Upgrades | We will upgrade NFT Marketplace react packages and wallet adapters in order to support Polkadot NFTs in our marketplace. Without react package upgrades, this could otherwise break the marketplace. |
 | 2a. | Polkadot.js Extension | Install Polkadot (.js) Extension|
-| 3. | Smart contract | We will deploy our custonm marketplace smart contract by using a matcher, Wasm and metadata.json files |
-| 3a. | Efinity | We will explore working with Efinity for NFT bridging and paratoken integration which would be a standard for token migration across different parachains in the Polkadot ecosystem, but also into and out of Ethereum and other EVM systems|
-| 4. | Polkadot-JS UI | Browser based wallet used with Polkadot-JS Extension: We will deliver sample wallet UI using the Polkadot-JS UI for browser based wallet integration to Sator NFT Marketplace |
+| 3. | Smart contract for NFT Marketplace | We will deploy our custonm NFT marketplace smart contract by using a matcher, Wasm and metadata.json files allowing for DOT NFTs to be traded on the Sator NFT marketplace, improving the marketplace interoperability (currently, Sator NFT marketplace only supports SOL NFTS.)  |
+| 4. | Polkadot-JS UI | Browser based wallet used with Polkadot-JS Extension: We will deliver sample wallet UI using the Polkadot-JS UI for browser based wallet integration to Sator NFT Marketplace for users to exchange and trade DOT NFTs. |
 
 ### Milestone 3 — End-to-End Tests
 
