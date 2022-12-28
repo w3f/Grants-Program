@@ -1,15 +1,12 @@
-# W3F Grant Proposal
+# Epirus Substrate Explorer - Phase II
 
-
--   **Project Name:** Epirus Substrate Explorer - Phase II
--   **Team Name:** Web3 Labs Ltd
--   **Payment Address:** 0xc905c448db9942c662fcb1680f3ecfcd0592409c
--   **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **Team Name:** Web3 Labs Ltd
+- **Payment Address:** 0xc905c448db9942c662fcb1680f3ecfcd0592409c
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
 
-This is an application for a follow-up grant for the [Epirus Substrate Explorer](https://github.com/w3f/Grants-Program/blob/master/applications/epirus_substrate_explorer.md) that has been completed in the following delivery: https://github.com/w3f/Grant-Milestone-Delivery/pull/527
-
+This is an application for a follow-up grant for the [Epirus Substrate Explorer](https://github.com/w3f/Grants-Program/blob/master/applications/epirus_substrate_explorer.md) that has been completed in the following delivery: <https://github.com/w3f/Grant-Milestone-Delivery/pull/527>
 
 ### Overview
 
@@ -28,14 +25,14 @@ The Metadata Registry is a standalone service exposing a web-based API to be use
 
 #### **Source Code Verification**
 
-Block explorers supporting EVM smart contracts typically allow contract owners to upload source code for their contracts. Having the source code for a smart contract offers users insights into what the smart contract is doing under the hood, thus increasing transparency. However, the uploaded source code needs verification to ensure that no purposefully misleading source code is uploaded. In order to support this verification process, the ink! development team is implementing reproducible builds in ink! smart contracts (https://github.com/paritytech/cargo-contract/issues/525).
+Block explorers supporting EVM smart contracts typically allow contract owners to upload source code for their contracts. Having the source code for a smart contract offers users insights into what the smart contract is doing under the hood, thus increasing transparency. However, the uploaded source code needs verification to ensure that no purposefully misleading source code is uploaded. In order to support this verification process, the ink! development team is implementing reproducible builds in ink! smart contracts (<https://github.com/paritytech/cargo-contract/issues/525>).
 
 After discussions with the ink! team, we have determined that the process for verifying ink! smart contract source codes will be as follows:
 
-* The user uploads the source code and `.contract` file to the Metadata Registry.
-* The Wasm bytecode in the uploaded `.contract` file is matched against the bytecode stored on-chain.
-* Using build information stored in the `.contract` file, we build the source code to generate a new `.contract` file.
-* If the generated `.contract` file matches the uploaded `.contract` file, the contract is marked as verified.
+- The user uploads the source code and `.contract` file to the Metadata Registry.
+- The Wasm bytecode in the uploaded `.contract` file is matched against the bytecode stored on-chain.
+- Using build information stored in the `.contract` file, we build the source code to generate a new `.contract` file.
+- If the generated `.contract` file matches the uploaded `.contract` file, the contract is marked as verified.
 
 **Security**
 
@@ -44,6 +41,7 @@ The Metadata Registry is a public service that allows users to upload compressed
 We will carefully consider the potential security risks and address them in the service design or by secure technology choice.
 
 These are the identified main concerns of the service security:
+
 - Prevent compression-related attacks (e.g. zip slip, recursive and non-recursive zip bombs)
 - Cargo build sandboxing and access to required dependencies
 
@@ -80,11 +78,11 @@ Currently, Epirus Explorer displays the encoded information for contract interac
 We need to decode these entities to make them informative for a user. We will use the metadata in the `.contract` file generated during [source code verification](#source-code-verification) to decode these messages and events.
 
 As shown in the sequence diagram below, the decoding process will work as follows:
-* On reception of contract messages and events, the Squid Ink processor resolves the contract metadata by chain identifier and code hash.
-* The processor checks the local cache for a copy of the metadata.
-* If the metadata does not exist in the cache, the processor will call the Metadata Registry to retrieve the relevant contract information. The Metadata Registry response should contain the path to the metadata file if the contract is verified. The processor then calls the Metadata Registry to download the metadata using the provided path.
-*  If metadata is available, the processor decodes the incoming data with the abstract binary interface descriptor and updates the data entities.
-* Finally, the indexer saves the entities into the database.
+- On reception of contract messages and events, the Squid Ink processor resolves the contract metadata by chain identifier and code hash.
+- The processor checks the local cache for a copy of the metadata.
+- If the metadata does not exist in the cache, the processor will call the Metadata Registry to retrieve the relevant contract information. The Metadata Registry response should contain the path to the metadata file if the contract is verified. The processor then calls the Metadata Registry to download the metadata using the provided path.
+- If metadata is available, the processor decodes the incoming data with the abstract binary interface descriptor and updates the data entities.
+- Finally, the indexer saves the entities into the database.
 
 ![Contrat Decode Sequence](https://drive.google.com/uc?id=1oKJgkg_Z17IpT3w8gTgd-EpZMvBNaJ06)
 
@@ -99,7 +97,7 @@ This is how we envision the decoded contract data will look like:
 
 For the Metadata Registry, we will evaluate [srtool](https://github.com/paritytech/srtool) for the part of deterministic builds, and we will leverage it if it meets our needs. Source code and metadata files will be stored on the file system and served using NGINX with an optimised configuration. In the future, we can also support decentralised storage layers.
 
-We plan to use [Fastify](https://www.fastify.io/), a project under OpenJS Foundation, for the web API because of its good performance, default security and smooth developer experience. 
+We plan to use [Fastify](https://www.fastify.io/), a project under OpenJS Foundation, for the web API because of its good performance, default security and smooth developer experience.
 
 We will continue using the [Subsquid](https://subsquid.io/) framework, Typescript and React.js for the Squid Ink processor and Explorer UI.
 
@@ -119,16 +117,16 @@ On top of that, Epirus Substrate Explorer leverages existing solutions, such as 
 
 ### Overview
 
--   **Total Estimated Duration:** 3 months
--   **Full-Time Equivalent (FTE):** 2 FTE
--   **Total Costs:** 75,000 EUR
+- **Total Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):** 2 FTE
+- **Total Costs:** 75,000 EUR
 
 ### Milestone 1 - Source Code Verification
 
--   **Estimated duration:** 2 months
--   **FTE:** 2
--   **Costs:** 50,000 EUR
-    
+- **Estimated duration:** 2 months
+- **FTE:** 2
+- **Costs:** 50,000 EUR
+
 | Nº  | Deliverable | Specification
 | :-- | :--         | :--
 | 0a. | License     | Apache 2.0
@@ -139,13 +137,13 @@ On top of that, Epirus Substrate Explorer leverages existing solutions, such as 
 | 2.  | Developer Tools | We will provide example scripts to help ease the process of bundling and compressing the required source code files.
 | 3.  | Updated Explorer UI | The Explorer UI will support the display of verification status and source code, in addition to the UI for contract source upload.
 | 4.  | Public explorer instance | A publicly accessible instance of the Explorer connected to a development network displaying verified source code and verification status.
-    
+
 ### Milestone 2 - Decoding of Contract Messages and Events based on ABI Metadata
 
--   **Estimated duration:** 1 months
--   **FTE:** 2
--   **Costs:** 25,000 EUR
-    
+- **Estimated duration:** 1 months
+- **FTE:** 2
+- **Costs:** 25,000 EUR
+
 | Nº  | Deliverable | Specification
 | :-- | :--         | :--
 | 0a. | License     | Apache 2.0
@@ -160,20 +158,18 @@ On top of that, Epirus Substrate Explorer leverages existing solutions, such as 
 
 ### Team Members
 
--   Marc Fornós
--   Xueying Wang
-    
+- Marc Fornós
+- Xueying Wang
 
 ### Contact
 
--   **Contact Name:** Conor Svensson
--   **Contact Email:** [conor@web3labs.com](mailto:conor@web3labs.com) 
-    
+- **Contact Name:** Conor Svensson
+- **Contact Email:** [conor@web3labs.com](mailto:conor@web3labs.com)
 
 ### Legal Structure
 
--   **Registered Address:** 7 Bell Yard, London, England, WC2A 2JR
--   **Registered Legal Entity:** Web3 Labs Ltd, CRN 10783824
+- **Registered Address:** 7 Bell Yard, London, England, WC2A 2JR
+- **Registered Legal Entity:** Web3 Labs Ltd, CRN 10783824
 
 ### Team's Experience
 
@@ -181,7 +177,7 @@ The same team has worked on the delivery of the [first grant](https://github.com
 
 ### Team Code Repos
 
-- https://github.com/web3labs/epirus-substrate
+- <https://github.com/web3labs/epirus-substrate>
 
 ## Future Plans
 
@@ -192,4 +188,3 @@ With the verified metadata available, we are able to recognise when a contract i
 We also plan to support EVM-compatible contracts in Substrate chains. This phase involves adding capabilities to index and decode messages and events from the EVM pallet.
 
 Lastly, we aim to improve scalability to handle large volumes of users and contracts. We will potentially switch from the current PostgreSQL to a distributed database such as CockroachDB. We also intend to add monitoring and scalable deployment infrastructure.
-

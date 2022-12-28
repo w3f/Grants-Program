@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Bit.Country by MVP.STUDIO
 
-* **Project:** Bit.Country by MVP.STUDIO
 * **Proposer:** https://github.com/bit-country
 * **Payment Address:** 12uaicGQziqP41nmpdWTMkorWijN3eAq8J
 

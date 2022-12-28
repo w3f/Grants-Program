@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Zondax Support & Maintenance
 
-* **Project Name:** Zondax Support & Maintenance
 * **Team Name:** Zondax
 * **Payment Address:** DAI (ERC20) 0x64c37c278f4c975e44ffd99b6e5f0832a3e9e981
 

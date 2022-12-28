@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Polkadot & Kusama ChainJS plugin 
 
-* **Project Name:** Polkadot & Kusama ChainJS plugin 
 * **Team Name:** API Market, Inc. dba AIKON
 * **Payment Address:** Ethereum Address: 0x7a6fdc8a113966d1236aB0FaB6dC5D3e5c05db88
 

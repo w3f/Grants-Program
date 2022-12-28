@@ -1,12 +1,11 @@
-# W3F Grant Proposal
+# Subsembly - Support for GRANDPA
 
-* **Project Name:** Subsembly - Support for GRANDPA 
 * **Team Name:** [LimeChain](https://github.com/LimeChain)
 * **Payment Address:** `0x6eDf76FD16Bb290A544fDc14fBB4b403D1DEeD9f` (USDT)
 
 ## Project Overview :page_facing_up:
 
-LimeChain's team has worked on [Subsembly - Framework for building AssemblyScript Runtimes](https://github.com/w3f/General-Grants-Program/blob/master/grants/rfp-responses/subsembly-assemblyscript_runtime_framework.md) and managed to deliver 4/6 milestones so far. Developers can already checkout/install the [Subsembly CLI](https://github.com/LimeChain/subsembly) and implement Substrate Runtimes using the framework. 
+LimeChain's team has worked on [Subsembly - Framework for building AssemblyScript Runtimes](https://github.com/w3f/General-Grants-Program/blob/master/grants/rfp-responses/subsembly-assemblyscript_runtime_framework.md) and managed to deliver 4/6 milestones so far. Developers can already checkout/install the [Subsembly CLI](https://github.com/LimeChain/subsembly) and implement Substrate Runtimes using the framework.
 
 The original goal of Subsembly was to support Aura and BABE consensus algorithms and provide the GRANDPA finality gadget. However, implementing GRANDPA and BABE turned out a harder task than initially estimated/scoped as a result the only consensus algorithm supported is Aura.
 We would like to propose a grant amendment that enables LimeChain to continue Subsembly's development, finish the 2 outstanding milestones and propose additional features to be included.
@@ -17,8 +16,9 @@ In this project we are scoping out the development of GRANDPA and laying down th
 For detailed information on GRANDPA, please refer to the original [whitepaper](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf) and the [Polkadot Host spec file](https://github.com/w3f/polkadot-spec/releases).
 
 Generally speaking, the GRANDPA work can be divided into 3 components:
+
 1) Implementing the Runtime APIs
-2) Having support for the Runtime-to-Consensus Engine Messages 
+2) Having support for the Runtime-to-Consensus Engine Messages
 3) Implementing required modules/pallets (session, offences)
 
 ### Project Details
@@ -26,12 +26,13 @@ Generally speaking, the GRANDPA work can be divided into 3 components:
 #### Runtime APIs
 
 Subsembly must implement the following Runtime APIs to have full support for GRANDPA:
-- `GrandpaApi_grandpa_authorities` - fetches the list of GRANDPA authorities according to the genesis block. Any future authority changes get tracked via Runtime-to-consensus engine messages
-- `GrandpaApi_submit_report_equivocation_unsigned_extrinsic` - Called by the Host when validator votes for multiple blocks during one voting subround
-- `GrandpaApi_generate_key_ownership_proof` - Generates proof of the membership of a key owner in a specified block state. The returned values are used to report equivocations
-- `GrandpaApi_grandpa_pending_change` - Returns information about GRANDPA pending changes
+* `GrandpaApi_grandpa_authorities` - fetches the list of GRANDPA authorities according to the genesis block. Any future authority changes get tracked via Runtime-to-consensus engine messages
+* `GrandpaApi_submit_report_equivocation_unsigned_extrinsic` - Called by the Host when validator votes for multiple blocks during one voting subround
+* `GrandpaApi_generate_key_ownership_proof` - Generates proof of the membership of a key owner in a specified block state. The returned values are used to report equivocations
+* `GrandpaApi_grandpa_pending_change` - Returns information about GRANDPA pending changes
 
 #### Runtime-to-Consensus Engine Messages
+
 GRANDPA utilises consensus digest items for various events. The following is a list of the digest items emitted related to GRANDPA:
 ![Untitled (20)](https://user-images.githubusercontent.com/12232750/128009365-e5943a13-f115-4c88-8205-e67c23920748.png)
 
@@ -47,8 +48,8 @@ The ConsensusLog is deposited once the Session module calls the on_disabled meth
 
 The following public functions, eligible for calling from the client side are:
 
-- `report_equivocation` - must be a signed extrinsic
-- `report_equivocation_unsigned` - this extrinsic may not be signed. It is called by the block producer
+* `report_equivocation` - must be a signed extrinsic
+* `report_equivocation_unsigned` - this extrinsic may not be signed. It is called by the block producer
 
 #### Dependencies & Prerequisites
 
@@ -58,7 +59,7 @@ The offences module tracks reported offences and the Staking module must provide
 
 ### Ecosystem Fit
 
-Subsembly provides an alternative way for developers to build Runtimes. More specifically, it enables developers with TypeScript/JavaScript knowledge to build on top of the Substrate ecosystem. 
+Subsembly provides an alternative way for developers to build Runtimes. More specifically, it enables developers with TypeScript/JavaScript knowledge to build on top of the Substrate ecosystem.
 
 ## Team :busts_in_silhouette:
 
@@ -72,7 +73,7 @@ Subsembly provides an alternative way for developers to build Runtimes. More spe
 
 * **Contact Name:** Daniel Ivanov
 * **Contact Email:** daniel@limechain.tech
-* **Website:** https://limechain.tech
+* **Website:** <https://limechain.tech>
 
 ### Legal Structure
 
@@ -86,22 +87,23 @@ LimeChain is a blockchain development company with 100+ completed projects and s
 ### Team Code Repos
 
 LimeChain's Substrate related repositories:
-* https://github.com/LimeChain/subsembly
-* https://github.com/LimeChain/subsembly-core
-* https://github.com/LimeChain/as-scale-codec
-* https://github.com/LimeChain/as-substrate-runtime
+
+* <https://github.com/LimeChain/subsembly>
+* <https://github.com/LimeChain/subsembly-core>
+* <https://github.com/LimeChain/as-scale-codec>
+* <https://github.com/LimeChain/as-substrate-runtime>
 
 Team's GitHub profiles:
-* https://github.com/LimeChain
-* https://github.com/Daniel-K-Ivanov
-* https://github.com/dastanbeksamatov
-* https://github.com/themartto
+
+* <https://github.com/LimeChain>
+* <https://github.com/Daniel-K-Ivanov>
+* <https://github.com/dastanbeksamatov>
+* <https://github.com/themartto>
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/daniel-k-ivanov/
-- https://www.linkedin.com/in/dastanbek-samatov-30ab71128/
-
+* <https://www.linkedin.com/in/daniel-k-ivanov/>
+* <https://www.linkedin.com/in/dastanbek-samatov-30ab71128/>
 
 ## Development Status :open_book:
 
@@ -126,12 +128,12 @@ Described below is a practical approach to the implementation of the GRANDPA mod
     2. Implement `purge_keys` method. Removes the session keys of the function caller. Takes effect after the next session starts
 4. GRANDPA - Consensus Messages
     1. Add `on_finalize` hook - If the current block is X, pending scheduled authority changes for the same block must be executed and an event must be deposited
- 
+
 At this point, the following features should be supported by the module:
-- Setting/changing/removing keys through the Session module
-- Rotating sessions on every `n` blocks
-- Changing authorities if required on session rotation
-- Depositing `Scheduled Change`, `Forced Change` and `Disable` consensus logs
+* Setting/changing/removing keys through the Session module
+* Rotating sessions on every `n` blocks
+* Changing authorities if required on session rotation
+* Depositing `Scheduled Change`, `Forced Change` and `Disable` consensus logs
 
 The last part is to add support for `equivocations`.
 
@@ -148,7 +150,8 @@ The last part is to add support for `equivocations`.
 * **Full-Time Equivalent (FTE):**  1.5
 * **Total Costs:** $45,540
 
-### Milestone 1 — Session 
+### Milestone 1 — Session
+
 * **Estimated duration:** 28 working days
 * **FTE:**  1.5
 * **Costs:** $18,480
@@ -202,8 +205,7 @@ The last part is to add support for `equivocations`.
 
 ## Future Plans
 
-LimeChain will be resolving any critical bugs that may arise. We would like to extend the framework by adding new pallets in the future. Our plan is to continue the development of the framework with support for BABE and after that, having support for Parachains. The end goal of Subsembly is to support the full set of foundational features that enable developers to create Substrate networks (with the option for both Aura and BABE + GRANDPA's finality) as-well as Polkadot parathreads and parachains. 
-
+LimeChain will be resolving any critical bugs that may arise. We would like to extend the framework by adding new pallets in the future. Our plan is to continue the development of the framework with support for BABE and after that, having support for Parachains. The end goal of Subsembly is to support the full set of foundational features that enable developers to create Substrate networks (with the option for both Aura and BABE + GRANDPA's finality) as-well as Polkadot parathreads and parachains.
 
 ## Additional Information :heavy_plus_sign:
 

@@ -1,8 +1,5 @@
-# W3F Grant Proposal
+# MangoBOX  Protocol
 
-
-
-- **Project Name:** MangoBOX  Protocol
 - **Team Name:** MangoBOX  labs
 - **Payment Address:** 0x33e69715988126eB3653bFAfd338320BE9A10cd0(USDC))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 

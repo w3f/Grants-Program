@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Polkadart
 
-- **Project Name:** Polkadart
 - **Team Name:** JURIMETRIC TECNOLOGIA LTDA
 - **Payment Address:** 12kizkmmQzRFR5o6BQ5Kufo77RPT787eaFynswQoi42vv2Da (DOT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
