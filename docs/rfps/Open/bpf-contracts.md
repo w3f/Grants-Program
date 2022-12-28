@@ -15,7 +15,7 @@ An alternative to WASM here would be [eBPF](https://ebpf.io/), a technology for 
 
 However, vanilla eBPF has some serious constraints:
 1. [LLD](https://lld.llvm.org/) can't link BPF code (LLD is the [linker](https://en.wikipedia.org/wiki/Linker_(computing)) contained in [LLVM](https://llvm.org/) which is the compiler framework that Rust's compiler `rustc` relies on).
-2. `rustup` doesn't include any `core` nor `std` library for linking LLVM (and rustc)'s a upstream BPF targets (`bpfeb-unknown-none` and `bpfel-unknown-none`)
+2. `rustup` doesn't include any `core` nor `std` library for LLVM (and rustc)'s a upstream BPF targets (`bpfeb-unknown-none` and `bpfel-unknown-none`)
 3. Loops are [not fully supported](https://lwn.net/Articles/740157/).
 
 While 1) and 2) technically can be worked around by using [bpf-linker](https://github.com/aya-rs/bpf-linker), 3) needs further research. Also, 2) will only work if loops are bound statically due to constraints within the LLVM backend. A viable solution here would be to replace this constraint by using [gas metering](https://github.com/paritytech/wasm-instrument/blob/b51701088e3d4f13b77047237a2480b488e6d099/src/gas_metering/mod.rs#L108).
