@@ -1,7 +1,7 @@
 # Polkadot Contract Wizard
 
 - **Team Name:** Protofire
-- **Payment Address:** 5FcEYNumroWcwyjeDtDVZALuCGmx94PjXnc9XzifHKTfU5Bf
+- **Payment Address:** 0xD662E05ce522B3861b70FC376F60bF50E200abfA (USDC - Ethereum network)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
 
 ## Project Overview :page_facing_up:
@@ -25,7 +25,7 @@ These are the steps that will be done to implement the proposed solution:
  **1.-  Redesign frontend interface (in progress)**
 
 The development needs to be focused on making a better user experience.
-There are already some tools that we can use as a reference. E.g: https://mintplex.xyz/ , https://wizard.openzeppelin.com/
+There are already some tools that we can use as a reference. E.g: https://mintplex.xyz/, https://www.coinvise.co/
 
 #### User Personas
 
@@ -35,7 +35,7 @@ There are already some tools that we can use as a reference. E.g: https://mintpl
 
 If we want to onboard more people to Polkadot Ecosystem and achieve mass adoption we need to make the user experience easier.
 
-We have already started with a [prototype](//TODO) on Figma.
+We have already started with a [prototype](https://www.figma.com/proto/XhwRgBUg7oSDncX0w1byfV/Contract-Wizzard?node-id=1%3A3&viewport=-714%2C541%2C0.39&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3) on Figma.
 
  **2.- Develop the interface based on the previous task result**
 
@@ -61,12 +61,14 @@ To allow compatibility with future plans we will research for a library that cov
 
 In order to allow users to only instance the smart contracts, we will have to deploy the smart contracts first. Once each of them is deployed, we will store the code hash so that it can be used later.
 
-We need a map containing the parachain, type of the contract and the modifiers used (PSP22 - base / PSP22- burnable) and the code hash of the deployed contract.
+We need a map containing the parachain, type of the contract, the modifiers used and the code hash of the deployed contract.
+E.g: (Contracts Rococo - PSP22 - [burnable,mintable] => "CODE HASH")
 
 Research what’s the best place to store this and what’s the most efficient way.
 
-At first, it will only be done in Rococo Testnet //TODO
-Check documentation here: https://github.com/paritytech/canvas
+At first, it will only be done in Contracts Parachain on Rococo Testnet
+
+Check documentation here: https://substrate.io/developers/rococo-network/
 
  **6.- Develop Instance functionality.**
 
@@ -84,7 +86,7 @@ This project will help providing a solution for all type of users to create stan
 ### Team members
 
 The project will be led by Diego Torres, protofires field CTO
-Our Developer will be TODO
+Our Developer will be                                               //TODO
 And the UI/UX expert is Agustin Longoni
 
 ### Contact
@@ -117,64 +119,66 @@ We are not only a dev shop company, but we create long term partnerships with th
 GitHub accounts of team members.
 
 - https://github.com/alongoni
-- https://github.com/ElvisKrop
 - https://github.com/DiegoTorresborda
 
-### Team LinkedIn Profiles (if available)
+### Team LinkedIn Profiles
 
 - linkedin.com/in/agustinlongoni
-- linkedin.com/in/nikita-zasimuk
 - linkedin.com/in/diego-torres-borda-94b70912
 
 ## Development Status :open_book:
 
-- [link](https://polkadothackathonlatam.com/proyecto-inner/LactobaciloGG/usuario-single/) to project presented on Polkadot hackathon LATAM
+As explained in step 1 of project details section, our first approach was a contract wizard similar to the one built by OpenZeppelin on Ethereum.
+- [Link](https://polkadothackathonlatam.com/proyecto-inner/LactobaciloGG) to project presented on Polkadot Hackathon LATAM.
 
+After that, we realized that if we wanted our tool to be useful for all types of users, we needed to redesign the UX and add further functionalities.
+- We are already working on a [prototype](https://www.figma.com/proto/XhwRgBUg7oSDncX0w1byfV/Contract-Wizzard?node-id=1%3A3&viewport=-714%2C541%2C0.39&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3) of how the proposed project will work. 
 ## Development Roadmap :nut_and_bolt:
 
-TODO//
+Described in project details.
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 4 months
+- **Full-Time Equivalent (FTE):**  2
+- **Total Costs:** 28,000 USD
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — UI and Code Generation
 
-- **Estimated duration:** 2 month
+- **Estimated duration:** 3 months
 - **FTE:**  2
-- **Costs:** 8,000 USD
-
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
+- **Costs:** 21,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can generate its own smart contracts. |
+| **0c.** | Testing and Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | There is no Docker needed. |
+| 0e. | Article | We will publish an article that explains what we have achieved building this project and how this will impact the ecosystem. |
+| 1. | UI and Code Generation | The functionality to be implemented corresponds to steps 1 to 4 of the Project Details section. |
 
+### Milestone 2 — Smart Contracts Deployment and Instantiation functionality
 
-### Milestone 2 Example — Additional features
+- **Estimated duration:** 1 month
+- **FTE:**  2
+- **Costs:** 7,000 USD
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-...
-
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can instantiate a smart contract. |
+| **0c.** | Testing and Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | There is no Docker needed. |
+| 0e. | Article | We will publish an article that explains what we have achieved building this project and how this will impact the ecosystem . |
+| 1. | Smart Contracts Deployment and Instantiation functionality | The functionality to be implemented corresponds to steps 5 and 6 of the Project Details section. |
 
 ## Future Plans
 
 After the completion of this project, we would love to broaden its scope.
+
+**Multiple Chains**
+- Deploy the set of smart contracts in several parachains that implement the contracts pallet.
 
 **Custom contracts**
 - Add the possibility of creating custom contracts, not only with the modifiers but adding the ability to write code using the interface.
@@ -188,10 +192,6 @@ After the completion of this project, we would love to broaden its scope.
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** Web3 Foundation Website
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
