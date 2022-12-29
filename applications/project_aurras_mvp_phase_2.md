@@ -148,7 +148,7 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 ### Overview
 
 - **Description** Development of Project Aurras - MVP - Phase 2 
-- **Total Estimated Duration:** 268 Person Days
+- **Total Estimated Duration:** 528 Person Days
 - **Full-time equivalent (FTE):** 4
 - **Total Costs:** 42880 USD 
 
@@ -177,7 +177,7 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 
 ### Milestone 2 Workflow Composer - Part 2
 
-- **Estimated Duration:** 17 Working days
+- **Estimated Duration:** 40 Working days
 - **FTE:**  4
 - **Costs:** 10880 USD
 
@@ -192,7 +192,7 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 
 ### Milestone 3 — Web API/Backend
 
-- **Estimated Duration:** 20 Working days
+- **Estimated Duration:** 68 Working days
 - **FTE:**  4
 - **Costs:** 12800 USD
 
@@ -242,8 +242,8 @@ Here you can also add any additional information that you think is relevant to t
 We have encountered a critical issue where we faced workflows fails due to certain Openwhisk actions timing out hence we took an alternative approach where we have made Polkadot API wasm compatible and included as a plugin to the wasm, due to this the timeline has now been exceeded by several months and has made certain components we developed obsolete.
 
 | Number | Deliverable | Specification | Link |
-| 0a. | staking and payout features for [scs/substrate-api-client](https://github.com/scs/substrate-api-client)
- | staking functionalities and payout example. fixed bugs in staking modules | https://github.com/scs/substrate-api-client/pull/294 |
+| ------------- | ------------- | ------------- | ------------- |
+| 0a. | staking and payout features for [scs/substrate-api-client](https://github.com/scs/substrate-api-client) | staking functionalities and payout example. fixed bugs in staking modules | https://github.com/scs/substrate-api-client/pull/294 |
 
 - **Estimated Duration:** 45 Working days
 - **FTE:**  1
