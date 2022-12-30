@@ -324,7 +324,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 |     1. |Ink! Contract:TokenFactory         | TokenFactory can create ERC20 tokens with tax functions. |
 |     2. |Ink! Contract: MangoLock | MangoLock can realize the lock-up and linear release of Token.. |
 |     3. |Ink! Contract: MangoAirdrop | MangoAirdrop can implement different types of token airdrops. |
-|     4. | Frontend files | We will provide Front-end files and deployment tutorials for TokenFactory、 MangoLock and MangoAirdrop . |
+|     4. | Front-end UI  | We currently use the Vue.js framework for Front-end development . In the first milestone we will develop the front-end UI of these three parts: TokenFactory, MangoLock and MangoAirdrop.We will provide Front-end deployment tutorials for TokenFactory、 MangoLock and MangoAirdrop . |
+|     5. | Front-end integration (e2e) test | We will use Cypress.io as an end-to-end testing framework for the  Front-end automated approach test. |
 
 
 
@@ -345,7 +346,17 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 |     1. | Ink! Contract: launchpad | Launchpad can conduct Token auctions at a fixed price. |
 |     2. | Ink! Contract: Fair Launch | Fair Launch can conduct Token auctions in the form of fair launch. |
 |     3. | Ink! Contract: Dutch Auction | Dutch Auction can conduct Token auctions in the form of Dutch auctions. |
-|     4. | Frontend files | We will provide Front-end files and deployment tutorials  for launchpad、 Fair Launch and Dutch Auction. |
+|     4. | Front-end UI  | We currently use the Vue.js framework for Front-end development . In the second milestone we will develop the front-end UI of these three parts: launchpad Auction、 Fair Launch Auction and Dutch Auction. We will provide Front-end deployment tutorials for launchpad、 Auction  FairLaunch Auction and Dutch Auction. |
+|     5. | Front-end integration (e2e) test | We will use Cypress.io as an end-to-end testing framework for the  Front-end automated approach test. |
+
+
+**Introduction to the three auction functions:**
+
+1. launchpad Auction:Launchpad auctions Token at a fixed price, which is one of the most common auction methods. Launchpad has a soft cap and a hard cap. If the soft cap is not reached, the auction will be cancelled. If the soft cap is reached, the auction will be successful. The maximum fundraising amount is the hard cap value. Token auction price is calculated according to the price set in advance, and the exchange rate is fixed.
+
+2. FairLaunch Auction: Token auctions are conducted in the form of Fair Launch, and the auction price is not fixed. Fair Launch has only a soft cap, and there is no cap on the amount of funds raised. At the same time, the Token auction is not carried out according to a fixed exchange rate but according to the total amount of funds raised at the end of the auction. If the amount of funds raised reaches the soft cap and the fundraising is successful, the total amount of funds raised divided by the total number of tokens provided will be the user's actual purchase exchange rate. The higher the overall funds raised, the higher the user's purchase exchange rate will be.
+
+3. Dutch Auction: Token auctions are conducted in the form of Dutch auction. Dutch auction is a special auction method, also known as "reduced price auction". It refers to an auction in which the bids for the auction target decrease in order from high to low until the first bidder answers (reaches or exceeds the reserve price). Choosing such an auction method can make the auction fairer.
 
 
 
