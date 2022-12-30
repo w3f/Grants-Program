@@ -1,7 +1,7 @@
 # substrate-parachain-PoS-template
 
 - **Team Name:** Aband-Network
-- **Payment Address:** 0xe9029d803ad0f06469cf7c925ada5e7795664917 (USDC ERC20)
+- **Payment Address:** 0xD6Cec62CE67E09b240B84A3FB53cC1EbA05795d6 (USDT ERC20)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
@@ -117,7 +117,7 @@ Make this PoS template have more consensus.
 
 You can find more information about the program [here](../README.md#moneybag-referral-program).
 - **Referrer:** [JimYam](https://github.com/w3f/Grants-Program/pull/1050) 
-- **Payment Address:** 0x8ab7860cd39f0f2facf61b379e87f3de2e3d4d17 (USDC ERC20)
+- **Payment Address:** 0x8ab7860cd39f0f2facf61b379e87f3de2e3d4d17 (USDT ERC20)
 
 ## Additional Information :heavy_plus_sign:
 
