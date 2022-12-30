@@ -13,6 +13,33 @@
 
 Ink Contracts Wizard is an CLI based smart contract generation tool. It will scaffold Smart Contracts based on the options selected by the user. Once all the options are selected, user will have smart contract scaffolded in the machine.
 
+
+### CLI commands
+
+CLI will have following commands.
+
+> ink-wiazrd --help
+
+Print outs all the available commands.
+
+> ink-wizard new flipper
+
+Create boilerplate code for Flipper Smart Contract.
+
+> ink-wizard new psp-22
+
+Create boilerplate code for PSP-22 standard smart contracts, it is as same as ERC-20 standard.
+
+> ink-wizard new psp-34
+
+Create boilerplate code for PSP-34 standard smart contracts, it is as same as ERC-1155 standard.
+
+> ink-wizard new psp-37
+
+Create boilerplate code for PSP-37 standard smart contracts, it is as same as ERC-721 standard.
+
+In an interactive way, CLI will ask user if they want to have mint, burn, Pausable, Capped, Ownable, etc. functionality.
+
 ### Motivation
 A lot of people use OpenZepplin's Smart Contract Wizard tool on daily basis since they are industry standard. We will be using OpenBrush smart contracts: https://github.com/Supercolony-net/openbrush-contracts. The reason to use OpenBrush Library is to abstract away a lot of details like OpenZepplin Smart Contracts does otherwise Smart Contracts code will end up being too bloaty.
 
@@ -69,27 +96,11 @@ Level 1: Up to $10,000, 2 approvals
 
 ## Development Roadmap :nut_and_bolt:
 
-*  **Total Estimated Duration:** 5 weeks
+*  **Total Estimated Duration:** 4 weeks
 
-*  **Total Costs:** 7,000 USD
+*  **Total Costs:** 5,000 USD
 
 ### Milestone 1
-
-*  **Estimated Duration:** 2 weeks
-
-*  **Costs:** 8,000 USD
-
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code. |
-| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in unittest in pythhon which is a great test runner to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0. | Conversion of OpenBrush smart contracts written in Ink to it's components. | We will be using this code repo: https://github.com/Supercolony-net/openbrush-contracts and will convert them into basic components. |
-| 1. | Creation of code generation logic for Ink smart contracts. | We will be building our own code generator in Python. We will have templatized code components and code convertor will output the resulting code by selecting options. |
-
-### Milestone 2
 
 *  **Estimated Duration:** 2 weeks
 
@@ -99,32 +110,33 @@ Level 1: Up to $10,000, 2 approvals
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run the CLI to generate the smart contracts. |
-| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written using unittest package to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0b. | Documentation | We will provide both inline documentation of the code. |
+| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in unittest in python which is a great test runner to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0. | Smart Contract Generator CLI | We will be building this CLI using Typer package using which we can create interactive CLI. |
-| 1. | Push the Python package to PyPi | We will push this python package to PyPi so that users can install the package using pip3. |
+| 0. | Conversion of OpenBrush smart contracts written in Ink to it's templates and sub-templates. | We will be using this code repo: https://github.com/Supercolony-net/openbrush-contracts and will convert them into basic templates and it's sub templates. We will be converting PSP-22, PSP-34, PSP-37 contracts. |
+| 1. | Creation of code generation logic for Ink smart contracts. | We will be building our own code generator in Python. We will have templatized code and code convertor will output the rendered code with user's selected options. |
 
+### Milestone 2
 
-### Milestone 3
+*  **Estimated Duration:** 2 weeks
 
-*  **Estimated Duration:** 1 weeks
-
-*  **Costs:** 1,000 USD
+*  **Costs:** 2,000 USD
 
 
 | Number | Deliverable | Specification |
 | ------------- | ------------- | ------------- |
 | 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user install this CLI as a homebrew formula. |
-| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written using bash to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0b. | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can run the CLI to generate the smart contracts. |
+| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written using unittest package to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Articles | We will publish an article on Medium on how to use this CLI tool. |
-| 0. | Creation of formula for CLI | We will be creating homebrew formula so that users can easily install this CLI tool. |
+| 0. | Smart Contract Generator CLI | We will be building this CLI using Typer package using which we can create interactive CLI. |
+| 1. | Push the Python package to PyPi | We will push this python package to PyPi so that users can install the package using pip3. |
+| 2. | Creation of formula for CLI | We will be creating homebrew formula so that users can easily install this CLI tool. Since most of the substrate ecosystem users use Rust, having formula will remove dependency to install python. |
 
 
 ## Additional Information :heavy_plus_sign:
 
-  
+### Future plans
 
-* We're currently implementing it in substrate ecosystem.
+Once we are done with grants, we will be adding ink-boxes so that anyone can scaffold any ink-box using the same CLI.
