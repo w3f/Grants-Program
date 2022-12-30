@@ -70,15 +70,15 @@ This is more friendly to both developers and users. It is born for better use of
 
 ### Overview
 
-- **Total Estimated Duration:** 2 weeks
-- **Full-Time Equivalent (FTE):**  2
-- **Total Costs:** 4000 USD
+- **Total Estimated Duration:** 7 weeks
+- **Full-Time Equivalent (FTE):**  7
+- **Total Costs:** 10000 USD
 
-### Milestone 1
+### Milestone 1 - Based on the nimbus consensus
 Based on the nimbus consensus, make a PoS parachain development template with Polkadot Staking and Staking related modules.
 
-- **Estimated duration:** 2 weeks
-- **FTE:**  2
+- **Estimated duration:** 3 weeks
+- **FTE:**  3
 - **Costs:** 4000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
@@ -93,10 +93,25 @@ Based on the nimbus consensus, make a PoS parachain development template with Po
 |       2 | modules                     | Imp all staking-related substrate native modules (ElectionProviderMultiPhase,  VoterList and NominationPools) for the runtime.                                                                                                                                                |
 |       3 | Substrate Modlue: Collators | Provide collators (validators) for nimbus consensus. The collators can also come from staking, and it can be set directly by root or other origin. Means you can choose whether to use PoS.                                                                                   |
 
+### Milestone 2 - Based on the babe consensus
+- **Estimated duration:** 4 weeks
+- **FTE:**  4
+- **Costs:** 6000 USD
+
+|  Number | Deliverable                | Specification                                                                                                                                                                                                                                                                 |
+|--------:|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License                    | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                                                          |
+| **0b.** | Documentation              | Add documentation explaining how these modules fit together to complete the entire PoS process.                                                                                                                                                                               |
+| **0c.** | Testing and Testing Guide  | Add manual tests unit tests to prove that the entire PoS runs successfully.                                                                                                                                                                                                   |
+| **0d.** | Docker                     | Provide Docker to the chain, allowing anyone to quickly run the chain                                                                                                                                                                                                         |
+|       1 | client code                | Provide a client with the same functions as [https://github.com/substrate-developer-hub/substrate-parachain-template/tree/main/node](https://github.com/substrate-developer-hub/substrate-parachain-template/tree/main/node).  Such as having the `try-runtime` command, etc. |
+| 2| Substrate Modlue: babe-ext | This pallets extends the Substrate Babe pallet to make it compatible with parachains.                                                                                                                                                                                         |
+| 3 | Substrate Modlue: cumulus-client-consensus-babe | This extends the Substrate provided Babe consensus implementation to make it compatible for parachains.                                                                                                                                                                       | 
+
 ## Future Plans
 
-We are very happy to know that Polkadot is officially developing the SASSAFRAS consensus, and look forward to completing it sooner, so that we can replace the nimbus consensus and make this PoS template completely Polkadot. Currently we temporarily use nimbus to make block consensus,
-It has better pluggability than babe, so that projects developed with this template can be upgraded smoothly.
+We are very happy to know that Polkadot is officially developing the SASSAFRAS consensus. In the future, we will bring SASSAFRAS to the POS parachain template.
+Make this PoS template have more consensus.
 
 ## Referral Program (optional) :moneybag: 
 
