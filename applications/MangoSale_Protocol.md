@@ -346,7 +346,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 |     1. | Ink! Contract: launchpad | Launchpad can conduct Token auctions at a fixed price. |
 |     2. | Ink! Contract: Fair Launch | Fair Launch can conduct Token auctions in the form of fair launch. |
 |     3. | Ink! Contract: Dutch Auction | Dutch Auction can conduct Token auctions in the form of Dutch auctions. |
-|     4. | Front-end UI  | We currently use the Vue.js framework for Front-end development . In the second milestone we will develop the front-end UI of these three parts: launchpad Auction、 Fair Launch Auction and Dutch Auction. We will provide Front-end deployment tutorials for launchpad、 Auction  FairLaunch Auction and Dutch Auction. |
+|     4. | Front-end UI  | We currently use the Vue.js framework for Front-end development . In the second milestone we will develop the front-end UI of these three parts: launchpad Auction、 Fair Launch Auction and Dutch Auction. We will provide Front-end deployment tutorials for launchpad Auction 、 FairLaunch Auction and Dutch Auction. |
 |     5. | Front-end integration (e2e) test | We will use Cypress.io as an end-to-end testing framework for the  Front-end automated approach test. |
 
 
