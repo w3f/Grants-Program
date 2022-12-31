@@ -201,7 +201,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 In Dec, 2022, Daogang Tang published his research on the theory of Open Web, a subset of Web3, the link is [The Road to Open Web](https://medium.com/@daogangtang/the-road-to-open-web-b684879a5571). This work has been lasting for about 2 years.
 
-And roughly from the June, 2022, Daogang Tang started to construct the EightFish framework, the framework to implement the theory of Open Web. Till now the five core components have been developed, and need another estimated one or two months to make them work together. So I think this is the right time to apply for the grant of W3f, and introduce the work we did to the whole substrate commuity.
+And roughly from the June, 2022, Daogang Tang started to construct the EightFish framework, the framework to implement the theory of Open Web. Till now the five core components have been developed, and need another estimated one or two months to make them work together. So it is the right time to apply for the grant of W3f, and introduce the work we did to the whole substrate community.
 
 A full version deck of EightFish can be found here: [EightFish Deck](https://docs.google.com/presentation/d/1fcg1UFuCElRW8YLTtlh151X9wc0zxmIBLq0o6YOrYis/edit?usp=sharing)
 
