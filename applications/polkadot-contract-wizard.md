@@ -12,7 +12,7 @@ We firmly believe that web3 has to be easy to use, this project is based on that
 
 ### Overview
 
-The Polkadot Contract Wizard aims to be the project that provides the entry point for the next generation of web3 users, developers and non developers in the Polkadot ecosystem. It will achieve that goal by enabling new users creating their own contracts in a few clicks. We want to provide the possibility to anyone to be able to create their own smart contracts as a tool for their work. The users need to focus on what they do, so we make the access to smart contracts easy for them. They don’t need to care about programming, but they need to be able to customize their smart contracts in a simple way with the support of the developer community around the world.
+The Polkadot Contract Wizard aims to be the project that provides the entry point for the next generation of web3 users, developers and non developers in the Polkadot ecosystem. It will achieve that goal by enabling new users creating their own contracts in a few steps. We want to provide the possibility to anyone to be able to create their own smart contracts as a tool for their work. The users need to focus on what they do, so we make the access to smart contracts easy for them. They don’t need to care about programming, but they need to be able to customize their smart contracts in a simple way with the support of the developer community around the world.
 
 ### Project Details
 
@@ -36,6 +36,7 @@ There are already some tools that we can use as a reference. E.g: https://mintpl
 If we want to onboard more people to Polkadot Ecosystem and achieve mass adoption we need to make the user experience easier.
 
 We have already started with a [prototype](https://www.figma.com/proto/XhwRgBUg7oSDncX0w1byfV/Contract-Wizzard?node-id=1%3A3&viewport=-714%2C541%2C0.39&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3) on Figma.
+![Figma Prototype Contract Wizard](https://i.ibb.co/64R1xxf/Screenshot-from-2023-01-02-14-28-02.png "Polkadot Contract Wizard Design")
 
  **2.- Develop the interface based on the previous task result**
 
