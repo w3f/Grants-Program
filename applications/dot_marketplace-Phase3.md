@@ -1,4 +1,4 @@
-# Dot Marketplace v2
+# Dot Marketplace v3
 
 - **Status:** Open
 - **Project Name:** Dot Marketplace

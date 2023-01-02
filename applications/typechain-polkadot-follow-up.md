@@ -2,9 +2,10 @@
 
 # [Typechain-Polkadot](https://github.com/Supercolony-net/typechain-polkadot)
 
-- **Team Name:** [SuperColony](https://github.com/Supercolony-net)
-- **Payment Address:** ERC 20 ADDRESS:
-0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942
+- **Project Name:** [Typechain-Polkadot](https://github.com/727-Ventures/typechain-polkadot)
+- **Team Name:** [727.ventures](https://github.com/727-Ventures)
+- **Payment Address:** ERC 20 (DAI):
+0x352F779203202c99699CdA8cc95adF06CcC8abEf
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -74,30 +75,32 @@ No, we are the first project of the kind in the ecosystem. However, in the Solid
 
 ### Team members
 
-- **Markian Ivanichok** (СEO of Supercolony)
-- **Toma Sadova** (Product Owner | Supercolony)
-- **Green Baneling** (Blockchain Core Rust Engineer | Supercolony)
-- **Varex Silver** (Blockchain developer | Supercolony)
-- **Artem Lech** (Blockchain developer | Supercolony)
+- **Markian Ivanichok** (СEO of 727.ventures)
+- **Fedor Lebed** (Head of Operations | 727.ventures)
+- **Green Baneling** (Blockchain Core Rust Engineer | 727.ventures)
+- **Varex Silver** (Blockchain developer | 727.ventures)
+- **Artem Lech** (Blockchain developer | 727.ventures)
 
 ### Contact
 
-- **Contact Name:** Toma Sadova
-- **Contact Email:** [toma.sadova@supercolony.net](mailto:toma.sadova@supercolony.net)
-- **Website:** [supercolony.net](https://supercolony.net/)
+- **Contact Name:** Fedor Lebed
+- **Contact Email:** [fedor.lebed@727.ventures](mailto:feder.lebed@727.ventures)
+- **Website:** [727.ventures](727.ventures)
 
 ### Legal Structure
 
-- **Registered Address:** The registered office shall be in 16192 Coastal Highway, Lewes, Delaware 19958, County of Sussex, USA.
-- **Registered Legal Entity:** SUPERCOLONY CORP.
+* **Registered Address:** The registered office shall be in Coastal Building, Wickham’s
+Cay II, P. O. Box 2221, Road Town, Tortola, VG1110, British Virgin Islands.
+* **Registered Legal Entity:** Seven2seven Ventures Ltd
 
 ### Team's experience
 
 **Markian Ivanichok**
-CEO of Supercolony, Blockchain entrepreneur, Software Engineer. Started my engineering career back when I was 15. Since then, I have developed and gained a lot of experience in engineering and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded, and invested in Sector F, one of the top consulting companies in Ukraine that help entrepreneurs to move faster. Since the beginning of this year, I co-founded and led Supercolony, a Polkadot venture studio that is dedicated to building and creating Polkadot’s ecosystem.
+CEO of 727.ventures, Blockchain entrepreneur, Software Engineer. Started my engineering career back when I was 15. Since then, I developed and got a lot of experience in engineering and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded and invested in Sector F, one of the top consulting companies in Ukraine that helps entrepreneurs to move faster.
 
-**Toma Sadova**
-Toma is the Market Growth Lead, Product Owner of OpenBrush, and the main organizer of the [biggest WASM conference](https://wasm-conference.com/). Toma started her career when she was 14. Since then, Toma has gained a lot of experience in IT technologies, management, leadership, and crypto. She switched four career paths and figured out blockchain/crypto is her calling!
+**Fedor Lebed**
+Fedor is the head of operations at Brushfam, a portfolio company of 727. ventures which is developing the ink! Smart contracts tools.
+Fedor invested in mining pools from 15 years old. He has a background in product management, working with international software products for Tier-1 markets.
 
 **Green Baneling**
 Blockchain Core Developer
@@ -120,7 +123,7 @@ Student of Applied Mathematics at the Kyiv National University of Taras Shevchen
 
 ### Team Code Repos
 
-- [https://github.com/Supercolony-net](https://github.com/Supercolony-net)
+- [https://github.com/727-Ventures](https://github.com/727-Ventures)
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
@@ -137,7 +140,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-[The project](https://github.com/Supercolony-net/typechain-polkadot) is already a work-in-progress.
+[The project](https://github.com/727-Ventures/typechain-polkadot) is already a work-in-progress.
 
 ## Development Roadmap :nut_and_bolt:
 

@@ -66,7 +66,7 @@ Under the hood, the 'data space' is an asset class which is mapped to a set of c
 
 Further, data spaces form the basis for moderation, or curation, within the network. Each data space may have a set of rules associated with it which limits not only the type of data that can be associated with the space, but also with the contents of the data. We intend to accomplish this through the execution of machine learning models, bayesian filters, and more, within a trusted execution environment. However, that work is outside the scope of this proposal.
 
-![data spaces diagram](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_spaces.drawio.png)
+![data spaces diagram](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_spaces.drawio.png?raw=true)
 
 #### Composable Access Rules and Data Access Authentication via a Rule Executor
 
@@ -86,7 +86,7 @@ Proxy nodes form the basis of secure data ingestion and ejection from the networ
 
 Putting data spaces and proxy nodes together, we arrive at the following design:
 
-![proxy nodes](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/proxy_data_spaces_io.drawio.png)
+![proxy nodes](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/proxy_data_spaces_io.drawio.png?raw=true)
 
 
 ##### Offchain Client
@@ -95,11 +95,11 @@ The inclusion of proxy nodes impacts data ingestion and ejection workflows. We w
 
 In the initial design of Iris, data ingestion functioned by allowing a data owner, who is running a full iris node, to add some data to their embedded IPFS node to gossip with a validator node, who would then add the data to their own embedded IPFSS node, which is connected with other validator nodes. This poses several issues. Not only is it insecure, but also it forces data owners to always run a full node which limits the ease of use of the system. Similarly, data ejection functioned by allowing a data consumer to directly connect their embedded IPFS node to a validator node to retrieve data from the 'validator network', which introduced a similar set of issues that data owners would face. Proxy nodes allow us to circumvent both of these issues by acting as a gateway to the IPFS network. To accomplish data ingestion, nodes will run an offchain client, which acts as a file server that only authorized proxy nodes can call into.
 
-![data ingestion](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_injection.drawio.png)
+![data ingestion](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_injection.drawio.png?raw=true)
 
 For data ejection, data consumers run the offchain client which will listen for connections from proxy nodes, accept authorized connections, and provide data consumers the ability to fetch data without running a full node.
 
-![data ejection](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_ejection.drawio.png)
+![data ejection](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/data_ejection.drawio.png?raw=true)
 
 ##### Encryption/Decryption
 
@@ -115,7 +115,7 @@ Each data ingestion and ejection transaction has an additional transaction fee w
 
 There are two storage layers in Iris, a 'hot' storage layer which is supported by the proxy nodes, and a 'cold' storage layer which exists offchain.
 
-![hot-cold-storage](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/hot_cold_storage.png)
+![hot-cold-storage](https://github.com/ideal-lab5/Grants-Program/blob/iris_followup/src/hot_cold_storage.png?raw=true)
 
 We will build a generic pallet that allows for any given storage backend to be configured for use with Iris. The intention behind this is that it may allow the network to function agnostically of any one given storage solution. The pallet will expose two main extrinsics, a 'read' extrinsic and a 'write' extrinsic, which send commands to proxy nodes to either ingest data from a configured storage system into hot storage, or to store data available in hot storage into cold storage. This approach allows us to support multiple storage backends, as well as provides us the freedom to implement our own storage system in the future without impacting the user experience.
 
@@ -248,9 +248,9 @@ Note: There are several items we aim to accomplish during the lifetime of this p
 
 ### Overview
 
-- **Total Estimated Duration:** 4.5 months (18 weeks)
+- **Total Estimated Duration:** 9 months
 - **Full-Time Equivalent (FTE):**  2.5 FTE
-- **Total Costs:** 60,000
+- **Total Costs:** 47,000
 
 ### Milestone 1 — Implement Data Spaces and Composable Access Rules
 
@@ -287,11 +287,12 @@ This milestone delivers two distinct deliverables.
 - **FTE:**  2.5
 - **Costs:** 22,000 USD
 
-1. This milestone delivers the infrastructure that provides data owners and data consumers the freedom to run light clients while still benefiting fromt he ability to ingest and eject data to/from the network. In particular, it implements proxy nodes and the accompanying offchain client. Further, to enable a minimal level of security we implement a very simplistic and somewhat centralized encryption mechanism, whereby proxy nodes are given the responsibility of encrypting incoming data (such that any proxy node can decrypt it) and re-encrypting it when authorized addresses request it from the network. This approach inherently has security flaws, specifically if any authority in the network chooses to act maliciously. As we intend to keep the set of authorities very small and trusted/known for the time being, we are willing to forego this issue. In the future, we will address this by implementing a threshold encryption scheme facilitated by the proxy nodes, thus maintaining the decentralization of the network.
+This milestone delivers the infrastructure to ingest data into the network and delegate decryption rights to authorized nodes.
 
-2. We reintroduce "hot" storage using http offchain workers which are capable of making calls to offchain go-ipfs nodes.
-
-3. We run the network as a light client using substrate connect and ensure that data owners and data consumers are able to efficiently ingest and eject data to and from the network.
+1. To securely ingest data, we implement two new RPC endpoints, 'iris_encrypt' that allows a node to encrypt data using proxy reencryption, and 'iris_decrypt' .
+2. We create two new node types, a 'proxy' node which enables the proxy reencryption mechanism and a 'gateway' node, which enables data ingestion and asset class creation.
+3. We reintegrate with IPFS by making http calls using the offchain client. We also build a module to bridge between IPFS and Iris. 
+4. We modify the user interface to provide a simple way to start the ingestion process, view data about asset classes, and ultimately to decrypt and download data. 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -300,22 +301,25 @@ This milestone delivers two distinct deliverables.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We will provide a demo video and a manual testing guide, including environment setup instructions. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a medium article explaining what was achieved as part of the grant, as well as any additional learnings that we deem important throughout development. https://medium.com/ideal-labs |
-| 1. | Substrate Module: Iris-Proxy: Proxy Node creation | Implement mechanism to allow nodes to act as a proxy, including verification of network connection speed. |
-| 2. | Substrate Pallet: Iris-Proxy | Implement a layer to assign incoming commands in the DataQueue to be processed by specific proxy nodes. This will function similarly to how validators are selected in a Proof of Stake system. |
-| 3. | Offchain Module: Data Ingestion + Reception Server | Build an offchain client using Go that allows data owners to make data available to proxy nodes and data consumers to receive data streams from proxy nodes |
-| 4. | Substrate Module: Iris-Proxy | Implement offchain service to fetch data from a data-owner's offchain client and stream bytes to a data-consumer's offchain client. Additionally, we reintroduce "hot" storage via IPFS using http bindings to `go-ipfs` nodes and introduce a simplistic encryption schema as mentioned above (which will be replaced by threshold encryption in the future). |
-| 5. | Light Client | We use [Substrate Connect](https://paritytech.github.io/substrate-connect/) to interact with an in-browser light client and ingest/eject data to/from the network. |
-| 6. | User Interface | We update the iris-ui repository so as to keep calls to extrinsics in sync with changes to parameters. |
+| 1. | Substrate Module: Iris-Proxy | Implement mechanism to allow nodes to act as a proxy and reencrypt data when requested. |
+| 2. | Substrate Pallet: IPFS | Build a pallet that enables mechanisms to issue commands to specific nodes so that their offchain worker can interact with IPFS. We do this by associating IPFS id and Iris id.  |
+| 3. | Substrate Module: Gateway | Implement mechanism to allow nodes to act as a proxy and reencrypt data when requested. |
+| 4. | Encryption Mechanism | We implement a proxy reencryption mechanism as described above. |
+| 5. | RPC: Encryption RPC | The encryption RPC endpoint allows a node to send a signed message and plaintext. After verification of the signature, the plaintext is encrypted and ciphertext is returned. |
+| 6. | RPC: Decryption RPC | The decryption RPC allows a node to send a signed message and ciphertext. After verification of the signature, if the node has been delegated decryption rights (through the 'Rule Executor' from the previous milestone), then the plaintext is returned. |
+| 7. | Testnet Setup | We deploy a functional testnet to AWS that can be connected to from an iris node by specifying a custom chain specification. |
+| 8. | User Interface | We update the iris-ui repository so as to keep calls to extrinsics in sync with changes to parameters. |
 
 ### Milestone 3 - Storage System
 
-- **Estimated Duration:** 2 month
-- **FTE:**  2.5
-- **Costs:** 18,000 USD
+- **Estimated Duration:** 2 months
+- **FTE:**  1.5
+- **Costs:** 12,000 USD
 
-1. This milestone delivers a generic storage pallet that can be adapted/instantiated to communicate with any given storage system. Specifically, we will demonstrate by building two distinct implementations of this adapter, one which is capable of interacting with a centralized datastore and one which uses the Crust Network. These storage systems represent the 'cold' storage capabilities of Iris. We will also invesetigate several other 'cold' storage options, such as Arweave, Filecoin, and potentially CESS (which is currently under development and funded via the w3f grants program).
 
-2. As part of this milestone, we formally build our testnet, which will include the development of CICD pipelines for automated runtime upgrades.
+1. In this milestone we implement rewards and slashes for Gateway and Proxy nodes
+
+2. This milestone delivers a generic storage pallet that can be adapted/instantiated to communicate with any given storage system. Specifically, we will demonstrate by building two distinct implementations of this adapter, one which is capable of interacting with a centralized datastore and one which uses the Crust Network. These storage systems represent the 'cold' storage capabilities of Iris. We will also invesetigate several other 'cold' storage options, such as Arweave, Filecoin, and potentially CESS (which is currently under development and funded via the w3f grants program).
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -324,17 +328,19 @@ This milestone delivers two distinct deliverables.
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. We will provide a demo video and a manual testing guide, including environment setup instructions. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a medium article explaining what was achieved as part of the grant, as well as any additional learnings that we deem important throughout development. https://medium.com/ideal-labs |
-| 1. | Substrate Module: Generic Storage Service pallet | We build a generic pallet with read and write capabilities which can be modified to support multiple storage systems. |
-| 2. | Substrate Module: Centralized Storage System | We build a storage system connector based on (2) which can read and write data to a centralized storage system (i.e. an AWS S3 or equivalent local file server). |
-| 3. | Substrate Module: Integration with Crust via the xStorage and xTokens pallets | We use the pallet developed during part 2 to use XCMP to store data in the Crust network, based on the approach outlined [here](https://wiki.crust.network/docs/en/buildCrossChainSolution#i-xcmp-based-substrate-pallet). |
-| 4. | Test Environment Setup | We deploy a relay chain with Iris and Crust as parachains and ensure that XCM messages are properly relayed between chains. |
-| 5. | Testnet | We develop our testnet chainspec and deploy the Iris testnet. |
+| 1. | Substrate Module: Gateway | We build a mechanism for gateway nodes to require payments for processing ingestion requests based on the amount of data ingested. |
+| 2. | Substrate Module: IrisProxy | We build a mechanism for proxy nodes to require payments for  |
+| 3. | Substrate Module: Generic Storage Service pallet | We build a generic pallet with read and write capabilities which can be modified to support multiple storage systems. |
+| 4. | Substrate Module: Centralized Storage System | We build a storage system connector based on (2) which can read and write data to a centralized storage system (i.e. an AWS S3 or equivalent local file server). |
+| 5. | Substrate Module: Integration with Crust via the xStorage and xTokens pallets | We use the pallet developed during part 2 to use XCMP to store data in the Crust network, based on the approach outlined [here](https://wiki.crust.network/docs/en/buildCrossChainSolution#i-xcmp-based-substrate-pallet). |
+| 6. | Relay Chain and Light Client | We deploy a relay chain with Iris and Crust as parachains and ensure that XCM messages are properly relayed between chains. We also build a chain specification that can be used via substrate connect to use a light client in the browser. |
+| 7. | Benchmarking, Devops and CICD | We develop pipelines needed in order to continuously update the testnet runtime when pull requests are deployed to the main branch of the github repository. We also add additional gates to this process, such as be | 
 
 ## Milestone 4 - iris.js Javascript SDK
 
 - **Estimated Duration:** 1 month
-- **FTE:**  2.5
-- **Costs:** 10,000 USD
+- **FTE:**  1.5
+- **Costs:** 3,000 USD
 
 1. This milestone delivers iris.js, a javascript SDK designed to facilitate interactions with iris and smart contracts deployed to the iris chain (i.e. with rule executor contracts). This SDK is built with the polkadot.js library and will be adapted from the functionality of the iris-ui developed in the previous grant proposal and modified as part of this current proposal.
 
@@ -350,16 +356,15 @@ This milestone delivers two distinct deliverables.
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish a medium article explaining what was achieved as part of the grant, as well as any additional learnings that we deem important throughout development. https://medium.com/ideal-labs |
 | 1. | Javascript SDK | We will develop the javascript SDK to provide easy accessbility for front end developers to hook into dapps built on top of Iris as well as easily accomplish data ingestion, ejection, allocation/inclusion to data spaces, and more. We will document the full functionalities and specification of the SDK as part of this milestone. |
-| 2. | Demonstration of the SDK | We will develop an NFT-marketplace type application on top of Iris to demonstrate the usage of the SDK. This will be adapted from the Iris Asset Exchange from the previous grant proposal for Iris. Further, we will demonstrate how this can be adapted by app developers to categorize data into their own data spaces. |
-| 3. | Hosting and connection the testnet | We host demo applications and capabilties using the idealabs.network domain by building a hub to access them at `https://apps.idealabs.network`. Further, we run these applications on our testnet which is deployed as part of milestone 3. |
+| 2. | Examples | We develop several small applications using Iris to showcase potential capabilities, such as an NFT marketplace, online bookstore, or spotify-like application. If possible, we will also explore integration into an existing open source application. |
+| 3. | Hosting and connection the testnet | We host demo applications and capabilties using the idealabs.network domain by building a hub to access them. Further, we run these applications on our testnet which is deployed as part of milestone 3. |
 
 ## Future Plans
 
 There are several key features of Iris that are out of scope of this proposal that the team will implement after these milestones. These items are specifically:
 
 - The implementation of an anonymous repuation and feedback system
-- The implementation of threshold encryption
-- The implementation of moderation protocols within dataspaces, including the creation of a new node role, the moderator node, who is authorized to act as an authority in the network within the context of dataspaces.
+- The implementation of moderation protocols within dataspaces
 - The implementation of machine learning algorithms, bayseian filters, and other checks to verify data integrity and compliance, both globally and within the context of data spaces.
 - The implementation of governance protocols, including governance as a result of moderator node actions (with the implication being that Iris becomes an opinionated network where data may be rejected and specific addresses blocked from participation in the network).
 

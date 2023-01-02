@@ -42,18 +42,18 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'Introduction/index',
+          docId: 'introduction',
           label: 'Introduction',
         },
         {
           type: 'doc',
-          docId: 'Applications/index',
+          docId: 'applications/index',
           position: 'left',
           label: 'List of Grants',
         },
         {
           type: 'doc',
-          docId: 'FAQ',
+          docId: 'faq',
           label: 'FAQ',
         },
         {
@@ -64,7 +64,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'Contribute',
+          docId: 'contribute',
           position: 'right',
           label: 'Contribute',
         }
@@ -84,6 +84,10 @@ module.exports = {
               label: 'Website',
               href: 'https://web3.foundation/',
             },
+            {
+              label: 'Privacy Policy',
+              href: './Support%20Docs/privacy_policy',
+            },
           ],
         }, 
         {
@@ -100,7 +104,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Web3 Foundation. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Web3 Foundation`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -138,7 +142,7 @@ module.exports = {
           exclude: [
             'Applications/application-template.md',
             'Applications/example-project.md',
-            'rfps/suggestion-template.md'
+            'RFPs/suggestion-template.md'
           ],
         },
         blog: false,
