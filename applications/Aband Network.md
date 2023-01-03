@@ -85,6 +85,8 @@ Social networks should not be limited to the functions and services provided by 
 Just like many smart contracts on Ethereum. The traffic effect they bring is also the wealth of the platform. In fact, more and more traditional social networks are developing their own developer platforms, such as WeChat mini-program development. Aband Network will be a smart contract platform,
 Allow more developers to develop smart contracts based on Aband Network.
 #### Token use
+![Uploading token.jpg…]()
+
 
 ### Ecosystem Fit
 The focus of social networks is not on technological breakthroughs, but on how to use existing technologies to better serve users who enter the blockchain, and how to combine existing decentralized finance to bring real value to users, so that everyone An interesting idea can be realized.
