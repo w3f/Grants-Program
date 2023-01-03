@@ -91,7 +91,7 @@ Allow more developers to develop smart contracts based on Aband Network.
 
 ### Ecosystem Fit
 The focus of social networks is not on technological breakthroughs, but on how to use existing technologies to better serve users who enter the blockchain, and how to combine existing decentralized finance to bring real value to users, so that everyone An interesting idea can be realized.
-We also found that the Polkadot community has decentralized social networks, such as listen network, such as subsocial, but they cannot solve the essential problems of social networking. They do not serve other Polkadot community networks better, and even some low-level economic models are full of loopholes . without really being able to use the advantages of decentralized finance to
+We also found that the Polkadot community has decentralized social networks, such as listen network, such as subsocial, but they can't solve many problems. They do not serve other Polkadot community networks better, and even some low-level economic models are full of loopholes . without really being able to use the advantages of decentralized finance to
 Support the platform so that finance will not pay attention to them. This is destined to have no traffic and financial effects for the project. And Aband Network is doing different things, we believe this will be a very successful social experiment.
 
 ## Team :busts_in_silhouette:
@@ -179,6 +179,5 @@ Contact Email: octavei@proton.me
 ## Future Plans
 - We will implement our own storage network, like filecoin. Let users be more flexible and convenient in message processing, for example, network cloud storage can be realized.
 - Through activitypub, share information with mastodon, and other networks that implement the activitypub protocol.
-- 
 
 
