@@ -160,13 +160,13 @@ First of all, all raw request data from user would be recored in the blocks, one
 
 The second, we recommend that store the structured data (model object) into SQL database, and put other data (e.g. blob, picture, file) into a decentralized storage network, like IPFS. User upload the blob to IPFS, get the CID, and insert it into the content of the structured data, and upload the structured data to the EightFish powered application to store the content into the SQL database, the id-hash pair index into the Substrate on-chain storage.
 
-This data seperation model seems like the model Web2 application uses. Model data is stored in the database, and pictures are stored in a public image bed service, the url of the picture will be inserted into the content of the model object. But here, it is for Web3.
+This data separation model seems like the model Web2 application uses. Model data is stored in the database, and pictures are stored in a public image bed service, the url of the picture will be inserted into the content of the model object. But here, it is for Web3.
 
 ### Ecosystem Fit
 
 EightFish itself is a development framework, its users are developers.
 
-The experience of Web2 MVC framework alike will help import amounts of Web2 developers into Web3 and Substrate dev communities, meanwhile help Web3 developers implement their applications for broader internet users easily and quickly. Indirectly, we hope to attract more end users into Web3, by providing better UX and performances, which rely on the underlying framework. Thus we believe in the more adoption of EightFish, the more adoption of Substrate.
+The experience of Web2 MVC framework alike will help import amounts of Web2 developers into Web3 and Substrate dev communities, meanwhile help Web3 developers implement their applications for broader internet users easily and quickly. Indirectly, we hope to attract more end users into Web3, by providing better UX and performance, which rely on the underlying framework. Thus we believe in the more adoption of EightFish, the more adoption of Substrate.
 
 Right now we don't find similar projects on this direction in the Substrate / Polkadot / Kusama ecosystem, and even in other ecosystems. Because most of other ecosystems are in fact ecosystems of smart contract public blockchains, the projects among them are unlikely going to adopt the appchain approach that Polkadot uses.
 
