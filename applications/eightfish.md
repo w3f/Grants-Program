@@ -158,9 +158,9 @@ Since the application powered by EightFish has a blockchain network underlying, 
 
 First of all, all raw request data from user would be recored in the blocks, one by one. For a newly node joined, it could restore the latest global status of the Substrate on-chain node and the SQL db by rows. If there are too many blocks need to sync, another scheme is to get a snapshot from a trustful node, and catch up the latest blocks from that snapshot point.
 
-The second, we recommend that store the structured data (model object) into SQL database, and put other data (e.g. blob, picture, file) into a decentralized storage network, like IPFS. User upload the blob to IPFS, get the CID, and insert it into the content of the structured data, and upload the structured data to the EightFish powered application to store the content into the SQL database, the id-hash pair index into the Substrate on-chain storage.
+The second, we recommend that store the structured data (model object) into SQL database, and put other data (e.g. blob, picture, file) into a decentralized storage network, like IPFS. User upload the blob to IPFS, get the CID, insert it into the content of the structured data, and upload the structured data to the EightFish powered application to store the content into the SQL database, the id-hash pair index into the Substrate on-chain storage.
 
-This data separation model seems like the model Web2 application uses. Model data is stored in the database, and pictures are stored in a public image bed service, the url of the picture will be inserted into the content of the model object. But here, it is for Web3.
+This data separation model seems like the model a Web2 application uses. Model data is stored in the database, and pictures are stored in a public image bed service, the url of the picture will be inserted into the content of the model object. But here, it is for Web3.
 
 ### Ecosystem Fit
 
@@ -219,13 +219,13 @@ A full version deck of EightFish can be found here: [EightFish Deck](https://doc
 
 ### Overview
 
-- **Total Estimated Duration:** 3.5 months
+- **Total Estimated Duration:** 2 months
 - **Full-Time Equivalent (FTE):**  2 FTEs
-- **Total Costs:** 30,000 USD
+- **Total Costs:** 15,000 USD
 
 ### Milestone 1 — Accomplishing All Basic Components of EightFish
 
-- **Estimated duration:** 1 month 
+- **Estimated duration:** 5 weeks
 - **FTE:**  2
 - **Costs:** 10,000 USD
 
@@ -239,13 +239,13 @@ A full version deck of EightFish can be found here: [EightFish Deck](https://doc
 | 1.      | Substrate module: eightfish | We will create a Substrate module that will:<br/> 1. record the coming requests; <br/>2. record the coming model indexes; <br/>3. update the on-chain wasm code for the off-chain worker                                                      |
 | 2.      | Subxt proxy                 | Use subxt to build a client proxy for the Substrate node and the spin worker node                                                                                                                                                             |
 | 3.      | Off-chain wasm worker       | We use spin as the wasm engine and to execute the code retrieved from the Substrate on-chain storage, interact with redis and postgresql                                                                                                         |
-| 4.      | Upgrade utility             | Some tools or scripts to help on code upgrade: <br/> 1. the tool for uploading new wasm file to the substrate node; <br/> 2. the timer daemon for checking the new version of on-chain wasm code by interval; <br/> 3. a monitor for wasm worker that while new version of wasm code loaded, reboot the wasm worker to execute new wasm code                                  |
+| 4.      | Upgrade utilities             | Some tools or scripts to help on code upgrade: <br/> 1. the tool for uploading new wasm file to the substrate node; <br/> 2. the timer daemon for checking the new version of on-chain wasm code by interval; <br/> 3. a monitor for wasm worker that while new version of wasm code loaded, reboot the wasm worker to execute new wasm code                                  |
 | 5.      | A set of rust derive procedural macro          |  Help write SQL literals and the type convertions between Rust types and SQL results easierly                                                                                                                                                                        |
 | 6.      | Framework SDK interface            | 1. A router in the wasm worker to help write dispatching code; <br/> 2. the handler definition; <br/> 3. middlewares; <br /> 4. a mechanism of shared varialbes;                                                                                                                                                                        |
 
 ### Milestone 2 — Integration
 
-- **Estimated Duration:** 2 weeks
+- **Estimated Duration:** 3 weeks
 - **FTE:**  2
 - **Costs:** 5,000 USD
 
@@ -262,25 +262,12 @@ A full version deck of EightFish can be found here: [EightFish Deck](https://doc
 | 4.      | A simple demo             | Prepare a demo for all processes with a simple web page UI, user can click on the web page to experience the capabilities of EightFish                                                                                                        |
 | 5.      | A 4 nodes network         | Build a 4 nodes network to test and run smoothly                                                                                                                                                                                              |
 
-### Milestone 3 — Optimizations
-
-- **Estimated Duration:** 8 weeks
-- **FTE:**  2
-- **Costs:** 15,000 USD
-
-| Number  | Deliverable                                             | Specification                                                                                                                                                                                                                                 |
-| -------:| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                                                 | GPLv3                                                                                                                                                                                                                                         |
-| **0b.** | Documentation                                           | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide                               | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                               |
-| **0d.** | Docker                                                  | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                 |
-| 0e.     | Article                                                 | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant).                                                                                                                                    |
-| 1.      | Optimize the performance of id-hash pair index updating | by introducing a new algorithm in the transaction pool of Substrate, we can promote the performance of the entire blockchain network on the consensus for the results submitted from the off-chain wasm worker.A brief explanation on this algorithm: <br/> Usually, the way we process the oracle data is to collect the data from all nodes' off-chain workers, and then vote on the temporary list in the next round, this will postpone the finalization of this piece of data some blocks (depending on the GRANDPA). For the token price oracle, this is acceptable. But for an application oriented to internet users, it's unacceptable. Let's do some basic calculations. The whole process to get consensus will conduct 2 x N^2 (N is the number of nodes) network traffic. And delay about 6 x M (M>=2) seconds. Another stuff matters too. If there are too many index updates contained in one block, the on-chain votings would conduct a heavy computing burdens and cost a long time, which maybe exceed a block inteval. <br/> So we conceive a new idea to optimize it. A rough idea is to mark the index updaing transation as a special transaction with attribution of non-propagation, just store it in local transaction pool, and will check it in the next block generation and validation. There are some details. If find the local value in self's node mismatched with the one in the coming block, this node will retrieve this transaction with a tag from all nodes' transaction pool, to check what is the major value of all, if local value is wrong, discard the local one; if the one in the block is wrong, reject this block. By this means, we can make the model indexes available within one block interval, after the next block is executed and the state space is updated. For most internet applications, 6 seconds on post is acceptable for most of users. The details of this algorithm have to be designed carefully, and maybe it's a hard work. It's an efficiency improving method.                               |
-| 2.      | Optimize the mechanism of code upgrading                | by refering the set_code mechanism substrate uses, make the code upgrading mechanism reliable.                                                                                                                                                |
 
 ## Future Plans
 
-Next step, we will port the [RustCC forum](https://rustcc.cn) onto EightFish, compile it into wasm code, and run it on the EightFish/Substrate network, that would be a 4 nodes network. And then we will use EightFish to build its own official website.
+There are several points need to be optimized, including the performance of the finalization of the model index on-chain data submitted from the off-chain wasm worker, maybe we will dive into the Substrate transaction pool to do some work. So the perfection of EightFish is the next stop.
+
+And on the user level, next step we will port the [RustCC forum](https://rustcc.cn) onto EightFish, compile it into wasm code, and run it on the EightFish/Substrate network, that would be a 4 nodes network. And then we will use EightFish to build its own official website.
 
 We will spend about 12 months to verify the performance and UE of this forum, find defects of it, and improve the underlying EightFish framework.
 
