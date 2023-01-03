@@ -157,6 +157,7 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 - **Estimated Duration:** 30 Working days
 - **FTE:** 4 
 - **Costs:** 19200 USD
+- **Estimated Delivery Date:**  20/01/2023
 
 | Number | Deliverable | Specification | User Story |  
 | ------------- | ------------- | ------------- | ------------- |  
@@ -180,6 +181,7 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 - **Estimated Duration:** 40 Working days
 - **FTE:**  4
 - **Costs:** 10880 USD
+- **Estimated Delivery Date:**  03/02/2023
 
 | Number | Deliverable | Specification | User Story |  
 | ------------- | ------------- | ------------- | ------------- |  
@@ -188,6 +190,8 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 | 0c. | Testing Guide | We will compose a testing guide to describe how to run tests. The code will have unit-test coverage (min. 50%) to ensure functionality and robustness | |  
 | 0d. | Docker File | We will provide docker file for running the workflow composer | Users can utilize the docker image as a cli tool to generate workflow wasm from the provided yaml |  
 | 1a. | Workflow Composer: Flow Macro | We will create three types of flows: init, pipe and terminator. The init is used to create the first task in the workflow and the terminator is used to create the last task. The pipe method is used to create other tasks that accept inputs and are dependent on other tasks | Users can utilize the flow macro that is used by the flow provider to generate the code to implement the flow of data between the tasks. |   
+| 1b. | staking and payout features for [scs/substrate-api-client](https://github.com/scs/substrate-api-client) | staking functionalities and payout example. fixed bugs in staking modules | https://github.com/scs/substrate-api-client/pull/294 |
+
 
 
 ### Milestone 3 — Web API/Backend
@@ -195,6 +199,7 @@ Shanith is a Software Engineer and a Web developer. Having graduated his M.Sc in
 - **Estimated Duration:** 68 Working days
 - **FTE:**  4
 - **Costs:** 12800 USD
+- **Estimated Delivery Date:** 06/03/2023
 
 | Number | Deliverable | Specification | User Story |
 | ------------- | ------------- | ------------- | ------------- |
@@ -241,9 +246,6 @@ Here you can also add any additional information that you think is relevant to t
 
 We have encountered a critical issue where we faced workflows fails due to certain Openwhisk actions timing out hence we took an alternative approach where we have made Polkadot API wasm compatible and included as a plugin to the wasm, due to this the timeline has now been exceeded by several months and has made certain components we developed obsolete.
 
-| Number | Deliverable | Specification | Link |
-| ------------- | ------------- | ------------- | ------------- |
-| 0a. | staking and payout features for [scs/substrate-api-client](https://github.com/scs/substrate-api-client) | staking functionalities and payout example. fixed bugs in staking modules | https://github.com/scs/substrate-api-client/pull/294 |
 
 - **Estimated Duration:** 45 Working days
 - **FTE:**  1
