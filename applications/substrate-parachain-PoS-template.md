@@ -72,14 +72,14 @@ This is more friendly to both developers and users. It is born for better use of
 
 - **Total Estimated Duration:** 3 weeks
 - **Full-Time Equivalent (FTE):**  3
-- **Total Costs:** 5,000 USD
+- **Total Costs:** 4,000 USD
 
 ### Milestone 1 - Based on the nimbus consensus
 Based on the nimbus consensus, make a PoS parachain development template with Polkadot Staking and Staking related modules.
 
 - **Estimated duration:** 3 weeks
 - **FTE:**  3
-- **Costs:** 5000 USD
+- **Costs:** 4000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
