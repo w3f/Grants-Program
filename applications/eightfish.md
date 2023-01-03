@@ -165,7 +165,7 @@ Right now we don't find similar projects on this direction in the Substrate / Po
 ### Team members
 
 - Daogang Tang (Mike Tang)
-- Taoke Qin (Tk)
+- Keqin Tao (Hacken)
 
 ### Contact
 
@@ -182,7 +182,7 @@ Right now we don't find similar projects on this direction in the Substrate / Po
 
 Daogang Tang (Mike Tang), a Rust enthusiast in China, the co-founder of Rust Chinese Community (RustCC), the advocator of the Substrate framework in China, has more than 15-years experiences on coding and architecture. He is also the ex-cofounder of Octopus Network, in charge of developer community building. He has done many research on Substrate and Web3, and published some articles on public media. He has been striving to promote the mass adoption of Rust, Substrate and Web3. 
 
-Taoke Qin (Tk), a Rust language lover, active in Rust Chinese Community. He is a certified AWS solution architect. He endeavours to introduce Rust into the projects of his company. He has much experience on Rust and Substrate developing.
+Keqin Tao (Hacken), a Rust language lover, active in Rust Chinese Community. He is a certified AWS solution architect. He endeavours to introduce Rust into the projects of his company. He has much experience on Rust and Substrate developing.
 
 ### Team Code Repos
 
@@ -209,7 +209,7 @@ A full version deck of EightFish can be found here: [EightFish Deck](https://doc
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
+- **Total Estimated Duration:** 3.5 months
 - **Full-Time Equivalent (FTE):**  2 FTEs
 - **Total Costs:** 30,000 USD
 
@@ -226,11 +226,12 @@ A full version deck of EightFish can be found here: [EightFish Deck](https://doc
 | **0c.** | Testing and Testing Guide   | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                               |
 | **0d.** | Docker                      | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                 |
 | 0e.     | Article                     | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant).                                                                                                                                    |
-| 1.      | Substrate module: eightfish | We will create a Substrate module that will:<br/> 1. record the coming request; <br/>2. record the coming model indexing; <br/>3. update the on-chain wasm code for the off-chain worker                                                      |
+| 1.      | Substrate module: eightfish | We will create a Substrate module that will:<br/> 1. record the coming requests; <br/>2. record the coming model indexes; <br/>3. update the on-chain wasm code for the off-chain worker                                                      |
 | 2.      | Subxt proxy                 | Use subxt to build a client proxy for the Substrate node and the spin worker node                                                                                                                                                             |
-| 3.      | Off-chain wasm worker       | We use spin as the wasm engine and to execute the code retrieving from Substrate on-chain storage, interact with redis and postgresql                                                                                                         |
-| 4.      | Upgrade utility             | Some tools or scripts to help on code upgrade                                                                                                                                                                                                 |
-| 5.      | Other utilities             | Some rust procedure macros and functions for a wasm MVC web framework                                                                                                                                                                         |
+| 3.      | Off-chain wasm worker       | We use spin as the wasm engine and to execute the code retrieved from the Substrate on-chain storage, interact with redis and postgresql                                                                                                         |
+| 4.      | Upgrade utility             | Some tools or scripts to help on code upgrade: <br/> 1. the tool for uploading new wasm file to the substrate node; <br/> 2. the timer daemon for checking the new version of on-chain wasm code by interval; <br/> 3. a monitor for wasm worker that while new version of wasm code loaded, reboot the wasm worker to execute new wasm code                                  |
+| 5.      | A set of rust derive procedural macro          |  Help write SQL literals and the type convertions between Rust types and SQL results easierly                                                                                                                                                                        |
+| 6.      | Framework SDK interface            | 1. A router in the wasm worker to help write dispatching code; <br/> 2. the handler definition; <br/> 3. middlewares; <br /> 4. a mechanism of shared varialbes;                                                                                                                                                                        |
 
 ### Milestone 2 — Integration
 
@@ -245,15 +246,15 @@ A full version deck of EightFish can be found here: [EightFish Deck](https://doc
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                               |
 | **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                 |
 | 0e.     | Article                   | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant).                                                                                                                                    |
-| 1.      | Writing process           | Integrate all components and do testings on writing process                                                                                                                                                                                   |
-| 2.      | Query process             | Integrate all components and do testings on query process                                                                                                                                                                                     |
-| 3.      | Code upgrading process    | Integrate all components and do testings on code upgrading process                                                                                                                                                                            |
+| 1.      | Writing process           | Integrate all components built in milestone 1 and do testings on writing process                                                                                                                                                                                   |
+| 2.      | Query process             | Integrate all components built in milestone 1 and do testings on query process                                                                                                                                                                                     |
+| 3.      | Code upgrading process    | Integrate all components built in milestone 1 and do testings on code upgrading process                                                                                                                                                                            |
 | 4.      | A simple demo             | Prepare a demo for all processes with a simple web page UI, user can click on the web page to experience the capabilities of EightFish                                                                                                        |
 | 5.      | A 4 nodes network         | Build a 4 nodes network to test and run smoothly                                                                                                                                                                                              |
 
 ### Milestone 3 — Optimizations
 
-- **Estimated Duration:** 6 weeks
+- **Estimated Duration:** 8 weeks
 - **FTE:**  2
 - **Costs:** 15,000 USD
 
@@ -264,8 +265,10 @@ A full version deck of EightFish can be found here: [EightFish Deck](https://doc
 | **0c.** | Testing and Testing Guide                               | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                               |
 | **0d.** | Docker                                                  | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                 |
 | 0e.     | Article                                                 | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant).                                                                                                                                    |
-| 1.      | Optimize the performance of id-hash pair index updating | by introducing a new algorithm in the transaction pool of Substrate, we can promote the performance of the entire blockchain network on the consensus for the results submitted from the off-chain wasm worker                                |
-| 2.      | Optimize the mechanism of code upgrading                | by refering the set_code mechanism substrate uses, make the code upgrading mechanism relialbe.                                                                                                                                                |
+| 1.      | Optimize the performance of id-hash pair index updating | by introducing a new algorithm in the transaction pool of Substrate, we can promote the performance of the entire blockchain network on the consensus for the results submitted from the off-chain wasm worker.A brief explanation on this algorithm: <br>/
+Usually, the way we process the oracle data is to collect the data from all nodes' off-chain workers, and then vote on the temporary list in the next round, this will postpone the finalization of this piece of data some blocks (depending on the GRANDPA). For the token price oracle, this is acceptable. But for an application oriented to internet users, it's unacceptable. Let's do some basic calculations. The whole process to get consensus will conduct 2 x N^2 (N is the number of nodes) network traffic. And delay about 6 x M (M>=2) seconds. So we conceive a new idea to optimize it. <br/> A rough idea is that mark the index updaing transation as a special transaction with attribution of non-propagation, just store it in local transaction pool, and will check it in the next block generation and validation. There are some details. If find the local value in self's node wrong, this node will retrieve this transaction with a flag from all nodes' transaction pool, and discard the local one. By this means, we can make the model indexes avalaible in one block, after the next block is executed and the state space is updated. For most internet applications, 6 seconds on post is acceptable for most of users. The details of this algorithm have to be designed carefully, and maybe it's a hard work. It's an efficiency improving method.
+                               |
+| 2.      | Optimize the mechanism of code upgrading                | by refering the set_code mechanism substrate uses, make the code upgrading mechanism reliable.                                                                                                                                                |
 
 ## Future Plans
 
@@ -281,6 +284,6 @@ After enough verifications, we will promote EightFish to all developers around t
 
 **How did you hear about the Grants Program?** Web3 Foundation Website
 
-Daogang Tang developed a Rust MVC web framework [sapper](https://github.com/miketang84/sapper) years ago, and the [RustCC forum](https://rustcc.cn) is running on it, so he will design the EightFish SDK interfaces by refering this work. 
+Daogang Tang developed a Rust MVC web framework [sapper](https://github.com/miketang84/sapper) years ago, and the [RustCC forum](https://rustcc.cn) is running on it, so he will design the EightFish SDK interface by refering this work. 
 
 
