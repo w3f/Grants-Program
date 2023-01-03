@@ -90,6 +90,7 @@ The committee consists of individuals who know the funding priorities of the Pol
 
 In cases where a niche expert opinion is desirable, one of the committee members may request such a review.
 
+- [Nabil Abdellaoui](https://github.com/randombishop)
 - [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Gautam Dhameja](https://github.com/gautamdhameja)
