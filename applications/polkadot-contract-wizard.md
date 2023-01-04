@@ -1,7 +1,7 @@
 # Polkadot Contract Wizard
 
 - **Team Name:** Protofire
-- **Payment Address:** G7rChFeVAXYhdZ5zb2YT7huLs4BwjCuzAStvezcm7gADLaH (KSM - Kusama network)
+- **Payment Address:** 0xD662E05ce522B3861b70FC376F60bF50E200abfA (USDC - Ethereum network)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2 
 
 ## Project Overview :page_facing_up:
@@ -22,7 +22,7 @@ We learned from this experience that this kind of implementations are not friend
 
 These are the steps that will be done to implement the proposed solution:
 
- **1.-  Redesign frontend interface (in progress)**
+ #### <a name="step1"></a>1.-  Redesign frontend interface (in progress)
 
 The development needs to be focused on making a better user experience.
 There are already some tools that we can use as a reference. E.g: https://mintplex.xyz/, https://www.coinvise.co/
@@ -39,7 +39,7 @@ We have already started with a [prototype](https://www.figma.com/proto/XhwRgBUg7
 
 ![Figma Prototype Contract Wizard](https://gcdnb.pbrd.co/images/RgPC3fQshqt8.png "Polkadot Contract Wizard Design")
 
- **2.- Develop the interface based on the previous task result**
+#### <a name="step2"></a>2.- Develop the interface based on the previous task result
 
 Based on the mock-up created in the previous step make it something usable.
 
@@ -47,19 +47,19 @@ We need to be very careful about the look and feel.
 
 The user will be guided step by step to create the contract he needs. At the end, the generated smart contract code is displayed with the possibility to copy and download it.
 
- **3.- Compose the contract based on the selection.**
+#### <a name="step3"></a>3.- Compose the contract based on the selection.
 
 All the contracts need to be composable based on the modifiers selected by the user.
 
 At first, we will only use OpenBrush contracts than can be found here: https://github.com/Supercolony-net/openbrush-contracts/tree/main/contracts/src/token
 
- **4.- Add syntax highlighting to the displayed smart contract code.** 
+#### <a name="step4"></a>4.- Add syntax highlighting to the displayed smart contract code.
  
 At first, the syntax hihlighter will only be used for Rust programming language.
 
 To allow compatibility with future plans we will research for a library that covers not only Rust, but can also be used with AssemblyScript or any other language that is compatible with WASM.
 
- **5.- Deploy all possible combinations of smart contracts.**
+#### <a name="step5"></a>5.- Deploy all possible combinations of smart contracts.
 
 In order to allow users to only instance the smart contracts, we will have to deploy the smart contracts first. Once each of them is deployed, we will store the code hash so that it can be used later.
 
@@ -72,7 +72,7 @@ At first, it will only be done in Contracts Parachain on Rococo Testnet
 
 Check documentation here: https://substrate.io/developers/rococo-network/
 
- **6.- Develop Instance functionality.**
+#### <a name="step6"></a>6.- Develop Instance functionality.
 
 Once the user has finished defining the functionality of the contract, the associated code hash from the previous step is obtained.
 Now, the user is able to fill the required fields of the contract constructor in order to instance it succesfully.
@@ -159,7 +159,10 @@ Described in project details.
 | **0c.** | Testing and Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | There is no Docker needed. |
 | 0e. | Article | We will publish an article that explains what we have achieved building this project and how this will impact the ecosystem. |
-| 1. | UI and Code Generation | The functionality to be implemented corresponds to steps 1 to 4 of the Project Details section. |
+| 1. | Redesign frontend interface | The functionality to be implemented corresponds to [step 1](#step1) of the Project Details section. |
+| 2. | Develop the interface based on the previous task result | The functionality to be implemented corresponds to [step 2](#step2) of the Project Details section. |
+| 3. | Compose the contract based on the selection | The functionality to be implemented corresponds to [step 3](#step3) of the Project Details section. |
+| 4. | Add syntax highlighting to the displayed smart contract code | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section. |
 
 ### Milestone 2 — Smart Contracts Deployment and Instantiation functionality
 
@@ -174,7 +177,8 @@ Described in project details.
 | **0c.** | Testing and Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | There is no Docker needed. |
 | 0e. | Article | We will publish an article that explains what we have achieved building this project and how this will impact the ecosystem . |
-| 1. | Smart Contracts Deployment and Instantiation functionality | The functionality to be implemented corresponds to steps 5 and 6 of the Project Details section. |
+| 1. | Deploy all possible combinations of smart contracts | The functionality to be implemented corresponds to [step 5](#step5) of the Project Details section. |
+| 2. | Develop Instance functionality | The functionality to be implemented corresponds to [step 6](#step6) of the Project Details section. |
 
 ## Future Plans
 
@@ -186,6 +190,7 @@ After the completion of this project, we would love to broaden its scope.
 **Custom contracts**
 - Add the possibility of creating custom contracts, not only with the modifiers but adding the ability to write code using the interface.
 - Compile the generated code and deploy it to different parachains.
+- Following the comments made on the [pull request](https://github.com/w3f/Grants-Program/pull/1413#pullrequestreview-1234970716), our approach will be based on the [ink-playground](https://github.com/paritytech/ink-playground) in order to integrate writing custom code and compiling it.
 
 **Social Interaction**
 - Create an account to store information.
