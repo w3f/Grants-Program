@@ -1,7 +1,8 @@
 # OpenBrush
 
-* **Team Name:** [SuperColony](https://github.com/Supercolony-net)
-* **Payment Address:** ERC 20 ADDRESS: 0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942
+* **Project Name:** [OpenBrush](https://github.com/727-Ventures/openbrush-contracts)
+- **Team Name:** [727.ventures](https://github.com/727-Ventures)
+* **Payment Address:** ERC 20 (DAI): 0x352F779203202c99699CdA8cc95adF06CcC8abEf
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3, It is follow-up grant for [first grant](https://github.com/w3f/Grants-Program/pull/497) and for [second grant](https://github.com/w3f/Grants-Program/pull/621).
 
 ## Project Overview :page_facing_up:
@@ -76,38 +77,36 @@ Objectively speaking, based on what we know and what was listed in their proposa
 
 ### Team members
 
-**Markian Ivanichok** (Founder & Blockchain Engineer)  
-**Toma Sadova** (Product Owner)  
-**Green Baneling** (Blockchain Core Rust Engineer)  
-**Sven Seven** (Blockchain Developer)
-**Pinaev Pinch** (Blockchain Developer)
-**Pierre Ossun** (Rust Engineer)  
-**Maria Nevska** (Marketing specialist)  
-**Lera Laricheva** (Designer)
+**Markian Ivanichok** (CEO | 727.ventures)  
+**Fedor Lebed** (Head of Operations | 727.ventures)  
+**Green Baneling** (Blockchain Core Rust Engineer | 727.ventures)  
+**Dominik Krížo** (Head of Engineering | 727.ventures)
+**Varex Silver** (Blockchain developer | 727.ventures)
+**Artem Lech** (Blockchain developer | 727.ventures)
+**Nameless Endless** (Blockchain developer | 727.ventures)
+**Maria Nevska** (Marketing specialist | 727.ventures)  
 
 ### Contact
 
-* **Contact Name:** Toma Sadova
-* **Contact Email:** toma.sadova@supercolony.net
-* **Website:** [supercolony.net](supercolony.net)
+* **Contact Name:** Fedor Lebed
+* **Contact Email:** fedeor.lebed@727.ventures
+* **Website:** [727.ventures](727.ventures)
 
 ### Legal Structure
 
-* **Registered Address:** The registered office shall be in 16192 Coastal Highway, Lewes, Delaware 19958, County of
-  Sussex, USA.
-* **Registered Legal Entity:** SUPERCOLONY CORP.
+* **Registered Address:** The registered office shall be in Coastal Building, Wickham’s
+Cay II, P. O. Box 2221, Road Town, Tortola, VG1110, British Virgin Islands.
+* **Registered Legal Entity:** Seven2seven Ventures Ltd
 
 ### Team's experience
 
 **Markian Ivanichok**  
-CEO of Supercolony,
-Blockchain entrepreneur, Software Engineer.
-Started my engineering career back when I was 15. Since then, I developed and got a lot of experience in engineering and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded and invested in Sector F, one of the top consulting companies in Ukraine that helps entrepreneurs to move faster.
-Since the beginning of this year, co-founded and led Supercolony, a Polkadot venture studio that is dedicated to building and creating of Polkadot’s ecosystem.
+CEO of 727.ventures, Blockchain entrepreneur, Software Engineer. Started my engineering career back when I was 15. Since then, I developed and got a lot of experience in engineering and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded and invested in Sector F, one of the top consulting companies in Ukraine that helps entrepreneurs to move faster.
 
-**Toma Sadova**  
-Product Owner
-Toma is a Product Owner of OpenBrush, Head of Education and the main organizer of the [the biggest WASM conference](https://wasm-conference.com/). Toma started her career when she was 14. Since then, Toma has gained a lot of experience in IT technologies, management, leadership and crypto. She switched 4 career paths and figured out that blockchain/crypto is her calling!
+**Fedor Lebed**  
+Head of Operations
+Fedor is the head of operations at Brushfam, a portfolio company of 727. ventures which is developing the ink! Smart contracts tools.
+Fedor invested in mining pools from 15 years old. He has a background in product management, working with international software products for Tier-1 markets.
 
 **Green Baneling**  
 Rust Blockchain Core Developer  
@@ -115,45 +114,52 @@ Primary programming languages are: C++, Go, Rust
 Finished the faculty of applied mathematics(Master degree). Participated in programming competitions during education. Has worked as a programmer for around 6 years.
 Was a freelancer the first year, creating an application for IOS(Swift), creating modules for the desktop application on C++. After that, spent 2 years in a company which created software for TV devices(C++/ Haxe).  After which, for 3 years, worked on different blockchain projects(C++/Go/Rust/Solidity/Js).
 
-**Sven Seven**  
-Blockchain Developer  
-Software engineer with prod experience since 2015. Master degree Information Security. Has worked in finance, e-commerce, networking domains as full-stack dev. Programming languages are JS, Java, Python, Rust, C++ . Blockchain dev since 2021.
+**Dominik Krížo**  
+Head of Engineering
+Started programming own games at age of 15 as a hobby, then went to University studying informatics and object oriented programming, becoming an Android developer in 2018. In 2017 he started his crypto venture by investing in BTC and Ethereum and getting more knowledge regarding smart contracts and DeFi protocols during DeFi summer 2020. As a programmer, he wanted to know more behind the scenes of smart contracts, so he started to develop his own smart contract applications for Ethereum and then becoming a Rust and Ink! developer in , since he believes that WASM with its benefits over EVM is the future of smart contract applications.
 
-**Pinaev Pinch**  
+**Varex Silver**  
 Blockchain Developer  
-Software engineer with 6 years in the industry. Has extensive experience building products from scratch. Built a web performance optimization company that was acquired for its value back in 2019. Since then worked in different fields, such as finance, event and food delivery industries. Switched to Blockchain development in 2021. Proficient in Js, Rust, Go, Python, VimL.
+Student of Computer Science at the Kyiv National University of Taras Shevchenko. Participated in programming competitions of different stages in school since 2017 (C++). Was a Backend developer(Go), Solidity developer(Solidity, Hardhat, Typescript), and now Blockchain developer(Rust, Typescript).
+
+**Artem Lech**  
+Blockchain Developer  
+Student of Applied Mathematics at the Kyiv National University of Taras Shevchenko. Started programming in 2016 and participated in a lot of Ukrainian and international competitions of competitive programming. Worked as a lecturer of algorithms at the school of competitive programming and as Intern Backend Engineer (Rust). Now works as Blockchain Developer on Polkadot Blockchain (Rust, Typescript).
+
+**Nameless Endless**  
+Blockchain Developer  
+Became interested in programming at the age of 16. At this time, he tried web development and created a website. Then decided to go to University to study system programming and object-oriented programming. Most often, he used C and C++ languages. Nameless likes innovations of web3 technologies and believes in the potential of Rust language and WASM standard for smart contracts.
 
 **Maria Nevska**  
 Marketing specialist
 PR&Marketing specialist with global brands work experience since 2018. Master degree Business Economics. Has worked with global international beauty brands: Lancôme, Biotherm, Yves Saint Laurent, Kerastase, Valentino Beauty for 3 years. Blockchain PR&Marketing since 2021.
 
-**Lera Laricheva**  
-Creative Designer  
-"In 2019 I started to get involved in the IT area. At first, I tried myself as a developer, and eventually I went away from that, to design. At first, I tried myself in design, then when I saw the result, and understood that I liked it, so I found courses and got a diploma. Then I tried freelancing, like many other beginners, but came to the conclusion that the working for a company is much better, and that is where a person can get a tremendous amount of experience, while constantly evolving, because you have to keep up with the tasks, and most importantly to understand them and try to implement them correctly. At the same time, it is my third year studying in Karazin, specialty marketing."
-
 ### Team Code Repos
 
-* <https://github.com/Supercolony-net>
+* https://github.com/727-Ventures
+
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* <https://github.com/sventime>
 * <https://github.com/xgreenx>
-* <https://github.com/yarikbratashchuk>
-* <https://github.com/PierreOssun>
+* <https://github.com/varex83>
+* <https://github.com/Artemka374>
+* <https://github.com/coreggon11>
+* <https://github.com/o-tsaruk>
 
 ### Team LinkedIn Profiles (if available)
 
 * <https://www.linkedin.com/in/mivanichok/>
-* <https://www.linkedin.com/in/toma-sadova/>
-* <https://www.linkedin.com/in/sven-seventimes/>
+* <https://www.linkedin.com/in/fedor-lebed-b8520b1a8/>
 * <https://www.linkedin.com/in/aostesymskyi/>
-* <https://www.linkedin.com/in/pierre-giraud-80620a85/>
-* <https://www.linkedin.com/in/valeria-laricheva/>
+* <https://www.linkedin.com/in/bogdan-ogorodniy/>
+* <https://www.linkedin.com/in/artem-fomiuk-31249b226/>
+* <https://www.linkedin.com/in/dominik-krizo/>
+* <https://www.linkedin.com/in/tsaruk-olexandr/>
 
 ## Development Status :open_book:
 
-[The project](https://github.com/Supercolony-net/openbrush-contracts) is already in release `1.6.0`.
+[The project](https://github.com/727-Ventures/openbrush-contracts) is already in release `1.6.0`.
 
 PSP22 - <https://github.com/w3f/PSPs/pull/25>
 
@@ -275,14 +281,14 @@ PSP37 - <https://github.com/w3f/PSPs/pull/37>
 | 4.     | Implement Diamond Standard in OpenBrush with ink!         | We will provide the implementation of the [Diamond standard](https://eips.ethereum.org/EIPS/eip-2535) in OprnBrush. Anyone can easily reuse the implementation or use traits to interact with contracts.                                                                                                                                                                                              |
 | 5.     | Implement Diamond Standard on raw Rust without ink!       | Right now the ink! adds a lot of overhead and increases the size of the contract. Implementation of the Diamond standard with raw rust will show the overhead impact and will provide an additional example for WASM developers on how to write contracts without ink!.                                                                                                                               |
 | 6.     | Create an upgradable analog of each contract in OpenBursh | OpenBrush provides many implementations of different contracts. With upgradability, we also need to provide an upgradable version of each contract.                                                                                                                                                                                                                                                   |
-| 7a.    | Marketing - Write down article about OpenBrush            | We are going to write the article abot the importance of OpenBrush and applied usage of it. Moreover, Supercolony team will promote it in Twitter, Medium etc.                                                                                                                                                                                                                                        |
-| 7b.    | Marketing - Create 2 educational video for OpenBrush      | We are going to work on educational video materials for OpenBrush and ink! Community. We see a huge gap in knowledge, understanding, and vision for the whole community in that sphere. Moreover, Supercolony team will promote it in Twitter, Medium etc. We will create a lower entry threshold for newcomers by this educational program.                                                          |
+| 7a.    | Marketing - Write down article about OpenBrush            | We are going to write the article abot the importance of OpenBrush and applied usage of it. Moreover, 727.ventures team will promote it in Twitter, Medium etc.                                                                                                                                                                                                                                        |
+| 7b.    | Marketing - Create 2 educational video for OpenBrush      | We are going to work on educational video materials for OpenBrush and ink! Community. We see a huge gap in knowledge, understanding, and vision for the whole community in that sphere. Moreover, 727.ventures team will promote it in Twitter, Medium etc. We will create a lower entry threshold for newcomers by this educational program.                                                          |
 
 #### Milestone 7. AssetPallet chains extension
 
-* **Estimated Duration:** 7 weeks
+* **Estimated Duration:** 8 weeks
 * **FTE:**  2.5
-* **Costs:** 49 999 USD
+* **Costs:** 57 000 USD
 
 | Number | Deliverable                                                                                        | Specification                                                                                                                                                                                                                                                                                                                                                                                                     |
 |--------|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -294,8 +300,9 @@ PSP37 - <https://github.com/w3f/PSPs/pull/37>
 | 4.     | Create standards for `AssetPallet` Chain Extension and for `PSP22Asset` extension                  | The `AssetPallet` extension can be used by anyone and on any network. It requires the standardization of the methods and data types that are supported. We will create standards for that in the PSP repository.                                                                                                                                                                                                  |
 | 5.     | Advanced ink! unit testing framework                                                               | Add support to the contract deployment, chain extension registration, and smart contract cross-contract calls into the ink! unit test framework.                                                                                                                                                                                                                                                                  |
 | 6.     | Support of XCM and cross transferring of `PSP22` tokens                                            | If the support of XCM by the `pallet-assets` is not ready, we will participate in the development process to speed up it. The final step is that anyone will be able to transfer assets of `pallet-assets`, that are managed by the contract, between parachains freely.                                                                                                                                          |
-| 7a.    | Marketing - Create 2 educational video for OpenBrush/ink!                                          | We are going to work on educational video materials for OpenBrush and ink! Community. We see a huge gap in knowledge, understanding, and vision for the whole community in that sphere. Moreover, Supercolony team will promote it in Twitter, Medium etc. We will create a lower entry threshold for newcomers by this educational program.                                                                      |
-| 7b.    | Marketing - The website upgrade                                                                    | We are going to update out current website and add more specific things to improve the search for OpenBrush website in Google.                                                                                                                                                                                                                                                                                    |
+| 7.     | Add support for ink! 4.0 | We will update OpenBrush to be compatible with ink! 4.0 releases |
+| 8a.    | Marketing - Create 2 educational video for OpenBrush/ink!                                          | We are going to work on educational video materials for OpenBrush and ink! Community. We see a huge gap in knowledge, understanding, and vision for the whole community in that sphere. Moreover, 727.ventures team will promote it in Twitter, Medium etc. We will create a lower entry threshold for newcomers by this educational program.                                                                      |
+| 8b.    | Marketing - The website upgrade                                                                    | We are going to update out current website and add more specific things to improve the search for OpenBrush website in Google.                                                                                                                                                                                                                                                                                    |
 
 ### Future work
 
@@ -314,7 +321,7 @@ PSP37 - <https://github.com/w3f/PSPs/pull/37>
 | 3.     | Implement chains extension in OpenBrush                      | Implementation of contract versions of the `UniquePallet`/`RMRKPallet` chain extension. Anyone will be able to call the logic of pallets from the contract.                                                                                                                                                                                  |
 | 4.     | Implement NFT contract via chain extensions                  | OpenBrush will provide a default implementation of contracts that are implemented via according chains extensions.                                                                                                                                                                                                                           |
 | 5.     | Refactoring of trait system in the ink!                      | Refactoring of trait system in the ink! to support default implementation inside of traits. It should improve the developer's experience with traits and simplify its usage.                                                                                                                                                                 |
-| 6.     | Marketing - Create 4 educational video for OpenBrush/ink!    | We are going to work on educational video materials for OpenBrush and ink! Community. We see a huge gap in knowledge, understanding, and vision for the whole community in that sphere. Moreover, Supercolony team will promote it in Twitter, Medium etc. We will create a lower entry threshold for newcomers by this educational program. |
+| 6.     | Marketing - Create 4 educational video for OpenBrush/ink!    | We are going to work on educational video materials for OpenBrush and ink! Community. We see a huge gap in knowledge, understanding, and vision for the whole community in that sphere. Moreover, 727.ventures team will promote it in Twitter, Medium etc. We will create a lower entry threshold for newcomers by this educational program. |
 
 #### Milestone 9. Multi token chain extension
 

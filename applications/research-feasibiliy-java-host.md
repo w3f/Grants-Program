@@ -75,7 +75,7 @@ that hold the biggest risks:
   - Import Host APIs within the Runtime
     - Verify that all `crypto` and hashing primitives can be implemented in Java
   - Load `__heap_base` exported from the `WASM` runtime
-  - Allocate/Deallocate memory buffer for transferring data between Host <> Runtime
+  - Allocate/Deallocate memory buffer for transferring data between Host and Runtime
   - Set data in the shared memory buffer for sending data to Runtime
   - Call exported from the WASM Bytecode function with data arguments
   - Read and parse the returned data of the WASM Runtime from the shared memory buffer 

@@ -1,0 +1,30 @@
+name: Approvals notification
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  send_matrix_approved_msg:
+    if: github.event.review.state == 'approved' && contains(github.event.pull_request.body, 'Project Abstract')
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'APPROVALS=?' >> $GITHUB_ENV
+      - if: contains(github.event.pull_request.body, '[x] **Level 1**')
+        run: echo 'APPROVALS=2' >> $GITHUB_ENV
+      - if: contains(github.event.pull_request.body, '[x] **Level 2**')
+        run: echo 'APPROVALS=3' >> $GITHUB_ENV
+      - if: contains(github.event.pull_request.body, '[x] **Level 3**')
+        run: echo 'APPROVALS=5' >> $GITHUB_ENV
+      - id: 'reviews'
+        uses: 'jrylan/github-action-reviews-counter@main'
+        with:
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+      - uses: fadenb/matrix-chat-message@v0.0.6
+        with:
+          homeserver: 'matrix.web3.foundation'
+          token: ${{ secrets.MATRIX_TOKEN }}
+          channel: ${{ secrets.MATRIX_CHANNEL_ID }}
+          message: |
+            PR APPROVED: [${{ github.event.pull_request.title }}](https://github.com/w3f/Grants-Program/pull/${{ github.event.pull_request.number }}) has been approved by ${{ github.event.review.user.login }}. 
+            Approvals: ${{ steps.reviews.outputs.approved }}/${{ env.APPROVALS }}

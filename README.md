@@ -1,7 +1,11 @@
+> :christmas_tree: Please note that the review process might take longer than usual until January 6, 2023. Merry Christmas and Happy New Year!  :christmas_tree:
+
+___
+
 # Web3 Foundation Grants Program<!-- omit in toc -->
 
 <p align="center">
-  <img src="static/img/Grants_Program.png" style="width:1300px";>
+  <img src="static/img/Grants_Program.png" style="width:1300px" />
 </p>
 
 
@@ -66,7 +70,7 @@ We also try to enforce our [code of conduct](CODE_OF_CONDUCT.md) and based on th
 
 An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](https://wiki.polkadot.network/docs/build-open-source), as well as a list of previously accepted applications [here](https://github.com/w3f/Grants-Program/blob/master/applications/index.md).
 
-[Requests For Proposals](https://github.com/w3f/Grants-Program/tree/master/docs/rfps) (RFPs) represent concrete ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, so even if another team has already applied to implement a certain RFP, we invite you to do the same if you're interested.
+[Requests For Proposals](https://github.com/w3f/Grants-Program/blob/master/docs/rfps.md) (RFPs) represent concrete ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, so even if another team has already applied to implement a certain RFP, we invite you to do the same if you're interested.
 
 Finally, you don't need to start your own project in order to be eligible for a grant. Instead, some teams choose to port existing work to Substrate, where the pertinent licenses allow, or even to contribute to an existing open-source project. In the latter case, you should check in advance that the maintainers of the project are interested in your contribution, and the acceptance of the milestones will generally be tied to the inclusion of your work in said project. See the [Maintenance Grants section](#hammer_and_wrench-maintenance-grants) for more info.
 
@@ -86,6 +90,7 @@ The committee consists of individuals who know the funding priorities of the Pol
 
 In cases where a niche expert opinion is desirable, one of the committee members may request such a review.
 
+- [Nabil Abdellaoui](https://github.com/randombishop)
 - [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Gautam Dhameja](https://github.com/gautamdhameja)
@@ -95,7 +100,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Bill Laboon](https://github.com/laboon)
 - [Keegan Quigley](https://github.com/keeganquigley)
 - [Raul Romanutti](https://github.com/rrtti)
-- [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
 - [Gavin Wood](https://github.com/gavofyork)
@@ -110,7 +114,6 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 - [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Keegan Quigley](https://github.com/keeganquigley)
-- [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
 
 #### W3F Operations Team<!-- omit in toc -->
@@ -119,7 +122,6 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 - [Melanie Diener](https://github.com/meldien)
 - [Federica Dubbini](https://github.com/fededubbi)
-- [Kasper Mai Jørgensen](https://github.com/KasperJor)
 - [Rouven Pérez](https://github.com/RouvenP)
 
 
@@ -150,7 +152,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
 
 ## :pencil: Process
 
-> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in Bitcoin, USDT (on Kusama or Polkadot), USDC/DAI (Ethereum) or aUSD (Acala). If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
+> **:loudspeaker:** The process below is independent of the [level](#level_slider-levels). Payment is made in Bitcoin, USDT (on [Statemine/Statemint](https://support.polkadot.network/support/solutions/articles/65000181800-what-is-statemint-and-statemine-and-how-do-i-use-them-)), USDC/DAI (Ethereum) or aUSD (Acala). If you want to apply in **private**  and/or you need to be paid out in **fiat**, you can apply [:arrow_right: here](https://docs.google.com/forms/d/e/1FAIpQLSfMfjiRmDQDRk-4OhNASM6BAKii7rz_B1jWtbCPkUh6N7M2ww/viewform). Note that this is generally a slower process and imposes stricter requirements on applicants.
 
 ### 1. Application
 
@@ -231,7 +233,7 @@ In order to be eligible for the referral bonus, the application itself must cont
 
 ### Additional information
 
-| <img src="static/img/web.png?s=50" width="50"> | <img src="static/img/twitter.png?s=50" width="50"> | <img src="static/img/medium.png?s=50" width="50"> | <img src="static/img/like.png?s=50" width="50"> | <img src="static/img/reddit.png?s=50" width="50"> | <img src="static/img/youtube-play.png?s=50" width="50"> |
+| <img src="static/img/web.png?s=50" width="50" /> | <img src="static/img/twitter.png?s=50" width="50" /> | <img src="static/img/medium.png?s=50" width="50" /> | <img src="static/img/like.png?s=50" width="50" /> | <img src="static/img/reddit.png?s=50" width="50" /> | <img src="static/img/youtube-play.png?s=50" width="50" /> |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | [W3F Website](https://web3.foundation) | [W3F Twitter](https://twitter.com/web3foundation) | [W3F Medium](https://medium.com/web3foundation) | [Polkadot Wiki](https://wiki.polkadot.network/en/) | [Web 3.0 Reddit](https://www.reddit.com/r/web3) | [W3F YouTube](https://www.youtube.com/channel/UClnw_bcNg4CAzF772qEtq4g) |
 

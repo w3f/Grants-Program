@@ -2,8 +2,8 @@
 
 - **Project Name:** Sol2Ink
 - **Team Name:** [727.ventures](https://github.com/727-Ventures)
-- **Payment Address:** ERC 20 ADDRESS (USDT):
-0xE21fA452De95466367Ee6F002BDa654D8Be6c337 
+- **Payment Address:** ERC 20 ADDRESS (DAI):
+0x352F779203202c99699CdA8cc95adF06CcC8abEf 
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -119,7 +119,7 @@ We are also aware of [Sol2Ligo](https://github.com/madfish-solutions/sol2ligo), 
 ### Team members
 
 - **Markian Ivanichok** (СEO of 727.ventures)
-- **Toma Sadova** (Product Owner | 727.ventures)
+- **Fedor Lebed** (Head of Operations | 727.ventures)
 - **Nameless Endless** (Blockchain Developer | 727.ventures)
 - **Dominik Krížo** (Blockchain Developer | 727.ventures)
 - **Green Baneling** (Blockchain Core Rust Engineer | 727.ventures)  
@@ -127,8 +127,8 @@ We are also aware of [Sol2Ligo](https://github.com/madfish-solutions/sol2ligo), 
 
 ### Contact
 
-* **Contact Name:** Toma Sadova
-* **Contact Email:** toma@727.ventures
+* **Contact Name:** Fedor Lebed
+* **Contact Email:** fedor.lebed@727.ventures
 * **Website:** [727.ventures](727.ventures)
 
 ### Legal Structure
@@ -142,9 +142,10 @@ Cay II, P. O. Box 2221, Road Town, Tortola, VG1110, British Virgin Islands.
 **Markian Ivanichok**  
 CEO of 727.ventures, Blockchain entrepreneur, Software Engineer. Started my engineering career back when I was 15. Since then, I developed and got a lot of experience in engineering and leadership. Gained entrepreneur experience by founding a couple of startups. Inspired, co-founded and invested in Sector F, one of the top consulting companies in Ukraine that helps entrepreneurs to move faster.
 
-**Toma Sadova**  
-Product Owner
-Toma is a Product Owner of OpenBrush, Head of Education and the main organizer of the [the biggest WASM conference](https://wasm-conference.com/). Toma started her career when she was 14. Since then, Toma has gained a lot of experience in IT technologies, management, leadership and crypto. She switched 4 career paths and figured out that blockchain/crypto is her calling! 
+**Fedor Lebed**  
+Head of Operations
+Fedor is the head of operations at Brushfam, a portfolio company of 727. ventures which is developing the ink! Smart contracts tools.
+Fedor invested in mining pools from 15 years old. He has a background in product management, working with international software products for Tier-1 markets.
 
 **Nameless Endless**  
 Blockchain Developer
