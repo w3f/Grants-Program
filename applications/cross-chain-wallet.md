@@ -7,6 +7,7 @@
 ## Project Overview :page_facing_up:
 
 Blockcoders is proud to propose the development of a revolutionary cross-chain wallet, capable of importing and creating both EVM and WASM accounts. This wallet will make it easy for users to manage and transfer tokens between the two chains. Built with the user experience in mind, the wallet will feature the same sleek and intuitive design as Astar UI. The term cross-chain in this case refers to the ability to transfer tokens between parachains for both EVM and WASM.
+We plan to give constant support to this wallet and open Telegram and Discord channels to have a better feedback from the users, solve issues and add new functionalities.
 
 ### Goals
 
@@ -181,6 +182,7 @@ Milestone number 3 will focus on the transfer of assets between chains. This mil
 | 1. | XCM/XVM standard for transfers | Implement the XCM/XVM standard to enable the transfer of assets between EVM and WASM accounts on different chains. |
 | 2. | Call to custom smart contracts | Provide the ability to call custom smart contracts for both EVM and WASM accounts. |
 | 3. | Transactions to custom smart contracts | Enable users to execute transactions on custom smart contracts for both EVM and WASM. |
+| 4. | Open Beta | Create an open Beta of the wallet for Moonbeam and Astar users to test it (with both mainnets and testnets available). Telegram and Discord channels will be created for the beta that will be announced on Twitter. |
 
 ### Milestone 4 - Improve UX/UI
 
@@ -197,11 +199,19 @@ The last milestone will focus on improving the UX/UI of the wallet. This milesto
 | 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
 | 0d. | Docker | A Dockerfile will be provided that will be able to start the node and run tests for all the functionality delivered within this milestone. |
 | 0e. | Article | We will post an article on Twitter and Reddit for both english and spanish speakers communities.
-| 1. | Polish UX experience | Enhance the design and user experience of the wallet. |
+| 1. | Polish UX experience | Enhance wallet design and user experience. As the previous milestones will focus on resolving the features from a technical perspective, but not in the "best looking" or "easiest" way, this milestone will be focused on ensuring that the features are easy to use and the user experience is smooth. All suggestions on the Telegram and Discord channels created for the Beta will be considered here to improve UX/UI. |
 | 2. | Landing page | Develop a landing page and documentation for the wallet. |
 | 3. | Video Tutorial | Create a video tutorial to help users learn how to use the wallet. |
 | 4. | End to End Testing | Test the wallet on different browsers and devices to ensure compatibility and stability. |
 | 5. | QR code | Add a QR code feature to display the address of users accounts. |
+
+## Maintaining the wallet
+
+Once the wallet is released, we will continue to maintain it for at least 2 years. This will include:
+
+- Bug fixes
+- Improvements to the UX/UI
+- Support for new features
 
 ## Future Plans
 
