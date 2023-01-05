@@ -2,7 +2,7 @@
 
 - **Team Name:** Sator 
 - **Payment Address:**  0x5c95d9BFF0f672562df784a5787eeA621a01dBDB (USDC)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
 ## Project Overview :page_facing_up:
 
@@ -89,14 +89,14 @@ Isla Perfito https://www.linkedin.com/in/islarose/
 
 ### Overview
 
-- **Total Estimated Duration:** 6 months
+- **Total Estimated Duration:** 5 months
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 4 FTE)
-- **Total Costs:** Requested amount in USD for the whole project: $70,000 USD. Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Costs:** Requested amount in USD for the whole project: $45,000 USD. Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
 ### Milestone 1 — Polkadot Wallet Integration
 
-- **Estimated duration:** 3 months
-- **Costs:** 32,000 USD
+- **Estimated duration:** 2 months
+- **Costs:** 15,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -116,7 +116,7 @@ Isla Perfito https://www.linkedin.com/in/islarose/
 ### Milestone 2 — Add DOT functionality to NFT Marketplace
 
 - **Estimated Duration:** 3 months
-- **Costs:** 33,000 USD
+- **Costs:** 30,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -132,19 +132,6 @@ Isla Perfito https://www.linkedin.com/in/islarose/
 | 3. | Smart contract for NFT Marketplace | We will deploy our custonm NFT marketplace smart contract by using a matcher, Wasm and metadata.json files allowing for DOT NFTs to be traded on the Sator NFT marketplace, improving the marketplace interoperability (currently, Sator NFT marketplace only supports SOL NFTS.)  |
 | 4. | Polkadot-JS UI | Browser based wallet used with Polkadot-JS Extension: We will deliver sample wallet UI using the Polkadot-JS UI for browser based wallet integration to Sator NFT Marketplace for users to exchange and trade DOT NFTs. |
 
-### Milestone 3 — End-to-End Tests
-
-- **Estimated duration:** 3 months
-- **Costs:** 5,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can transact using Sator in-app DOT wallet, and show how the new functionality works. |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1. | End-to-end tests |  We provide end-to-end tests that test the interplay between the new components. |
-...
 
 
 ## Future Plans
