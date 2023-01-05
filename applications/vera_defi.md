@@ -1,7 +1,5 @@
-# Open Grant Proposal
+# Vera Defi Phase 1
 
-
-* **Project Name:** Vera Defi Phase 1
 * **Team Name:** Team Vera
 * **Payment Address:** 0x94637b309B477388656B06f86A2604D202123583
 

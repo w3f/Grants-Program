@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Avoiding Rust Deadlocks via Visualizing Lifetime
 
-- **Project Name:** Avoiding Rust Deadlocks via Visualizing Lifetime
 - **Team Name:** Song's research group at Pennsylvania State University
 - **Payment Address:** TBD
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3

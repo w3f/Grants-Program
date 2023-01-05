@@ -1,23 +1,24 @@
-# W3F Grant Proposal
+# OpenBrush
 
-* **Project Name:** [OpenBrush](https://github.com/Supercolony-net/openbrush-contracts)
 * **Team Name:** [SuperColony](https://github.com/Supercolony-net)
 * **Payment Address:** ERC 20 ADDRESS: 0xE1B19cE32866cDE87F8f59C7C2C5f90E093A6942
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2, It is follow-up grant for [first grant](https://github.com/w3f/Grants-Program/pull/497).
 
-
 ## Project Overview :page_facing_up:
 
 It is an application for a follow-up grant. The [initial grant](https://github.com/w3f/Grants-Program/pull/497) covered the first and second milestones:
- - [Openbrush Milestone 1 delivery report](https://github.com/w3f/Grant-Milestone-Delivery/pull/249)
- - [Openbrush Milestone 2 delivery report](https://github.com/w3f/Grant-Milestone-Delivery/pull/261)
+
+* [Openbrush Milestone 1 delivery report](https://github.com/w3f/Grant-Milestone-Delivery/pull/249)
+* [Openbrush Milestone 2 delivery report](https://github.com/w3f/Grant-Milestone-Delivery/pull/261)
 
 This grant aims to cover milestones 3-5.
 
 ### Overview
-The mission of this project is to make ink! usable and facilitate WASM ecosystem adoption. 
+
+The mission of this project is to make ink! usable and facilitate WASM ecosystem adoption.
 
 To be successful with this mission, we have outlined several steps that would need to be taken.
+
 1. OpenBrush is a library for secure smart contract development on ink!, same as
    [OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts) on Ethereum.
 2. OpenBrush should serve as a starting point for every developer entering a Polkadot(ink!) ecosystem.
@@ -27,6 +28,7 @@ To be successful with this mission, we have outlined several steps that would ne
 This project is important to us as it's our strategic goal to accelerate Polkadot ecosystem development. Applications on Ink! are a considerable part of it.
 
 ### Project Details
+
 OpenBrush should serve as a starting point for every smart contract developer coming from Ethereum. The extended documentation will cover several topics:
 the differences between ink! and Solidity, how developers should change their mindset, how to design their project,
 how to deploy contracts and test them, etc.
@@ -61,10 +63,10 @@ We are only aware about one project [metis](https://github.com/patractlabs/metis
 
 Our project isn't restricted to only providing the base implementation of contracts.
 Objectively speaking, based on what we know and what was listed in their proposal, here are key differences:
-- At the moment, OpenBrush is in far more advanced stage, Developer Experience of our library is significantly higher.
-- OpenBrush aims to propose and take care of standards for ink! (We've already created [PSP](https://github.com/w3f/PSPs/pull/25) for fungible tokens, and we plan to continue doing so)
-- OpenBrush aims to be a starting point for any smart contract developer by providing documentation.
-- Contribute to ink! and Substrate `contract-pallet` to improve the smart-contract development experience(add new features, fix bugs, etc.).
+* At the moment, OpenBrush is in far more advanced stage, Developer Experience of our library is significantly higher.
+* OpenBrush aims to propose and take care of standards for ink! (We've already created [PSP](https://github.com/w3f/PSPs/pull/25) for fungible tokens, and we plan to continue doing so)
+* OpenBrush aims to be a starting point for any smart contract developer by providing documentation.
+* Contribute to ink! and Substrate `contract-pallet` to improve the smart-contract development experience(add new features, fix bugs, etc.).
 
 ## Team :busts_in_silhouette:
 
@@ -100,7 +102,7 @@ Started my engineering career back when I was 15. Since then, I developed and go
 Since the beginning of this year, co-founded and led Supercolony, a Polkadot venture studio that is dedicated to building and creating of Polkadot’s ecosystem.
 
 **Dmitry Kryshtal**  
-Head of Marketing 
+Head of Marketing
 8 years experienced T-Shaped marketer with a deeper understanding of analytics, creativity and strategy. Opinion leader in the cryptocurrency environment since 2017. Co-owner of the creative agency Citadel. Host of his own program on the biggest crypto-related YouTube channel in CIS – S3XYBTC.
 
 **Green Baneling**  
@@ -129,29 +131,28 @@ Creative Designer
 
 ### Team Code Repos
 
-* https://github.com/Supercolony-net
-
+* <https://github.com/Supercolony-net>
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-* https://github.com/VargSupercolony
-* https://github.com/sventime
-* https://github.com/xgreenx
-* https://github.com/PierreOssun
+* <https://github.com/VargSupercolony>
+* <https://github.com/sventime>
+* <https://github.com/xgreenx>
+* <https://github.com/PierreOssun>
 
 ### Team LinkedIn Profiles (if available)
 
-* https://www.linkedin.com/in/mivanichok/
-* https://www.linkedin.com/in/ian-arden/
-* https://www.linkedin.com/in/hartej/
-* https://www.linkedin.com/in/dmitry-kryshtal/
-* https://www.linkedin.com/in/valeria-laricheva/
+* <https://www.linkedin.com/in/mivanichok/>
+* <https://www.linkedin.com/in/ian-arden/>
+* <https://www.linkedin.com/in/hartej/>
+* <https://www.linkedin.com/in/dmitry-kryshtal/>
+* <https://www.linkedin.com/in/valeria-laricheva/>
 
 ## Development Status :open_book:
 
 [The project](https://github.com/Supercolony-net/openbrush-contracts) is already in release `1.0.0`.
 
-PSP - https://github.com/w3f/PSPs/pull/25
+PSP - <https://github.com/w3f/PSPs/pull/25>
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -183,8 +184,7 @@ PSP - https://github.com/w3f/PSPs/pull/25
 | 2a.    | AccessControl                    | We will implement reusable [AccessControl](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/AccessControl.sol) analog on ink!                                                                                                         |
 | 2b.    | Ownable                          | We will implement reusable [Ownable](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol) analog on ink!                                                                                     |
 
-
-#### Milestone 2 - Simplify usage of library. Add a new features which extend ink!. Provide macroses that will allow creation of your own base implementation.
+#### Milestone 2 - Simplify usage of library. Add a new features which extend ink!. Provide macroses that will allow creation of your own base implementation
 
 * **Estimated duration:** 7 weeks
 * **FTE:**  2.5
@@ -205,7 +205,7 @@ PSP - https://github.com/w3f/PSPs/pull/25
 
 ### Current work - Scope of this Grant
 
-#### Milestone 3. Reduce the size of Erc20 contract.
+#### Milestone 3. Reduce the size of Erc20 contract
 
 * **Estimated Duration:** 4 weeks
 * **FTE:**  1.5
@@ -217,7 +217,7 @@ PSP - https://github.com/w3f/PSPs/pull/25
 | 0b.    | Documentation                                            | We will provide a report of how much each optimization reduced the size. |
 | 1.     | Reduce the size of Erc20 contract                        | Now the most critical moment with ink! is the huge size of contracts. [This issue](https://github.com/paritytech/substrate/issues/9354) described the problem very well. The parity team works in this direction, and we want to help with ink! side. The ink! team created issue [906](https://github.com/paritytech/ink/issues/906), [916](https://github.com/paritytech/ink/issues/916) and [910](https://github.com/paritytech/ink/issues/910). We want to briefly(not full change, only minimal changes to reduce the size) implement them and provide a report(re-working data structure, reducing monomorphization, using dynamic dispatch in some cases). Based on this report, the ink! team can decide how better to implement them and which part is more critical. During the implementation, we will build examples with our version of ink! (also maybe we will modify some sub-crates). So the output of this work is a report and custom version of ink!. The code can be reused, or if ink! team agrees we can try to implement these issues by ourselves later as separate work.             |
 
-#### Milestone 4. Pre-release - Standardization of tokens contracts. Implement extensions for contracts. Documentation.
+#### Milestone 4. Pre-release - Standardization of tokens contracts. Implement extensions for contracts. Documentation
 
 * **Estimated Duration:** 4.5 weeks(+ time for PSP approving)
 * **FTE:**  2.5
@@ -235,7 +235,7 @@ PSP - https://github.com/w3f/PSPs/pull/25
 | 5.     | Refactor the contracts to be compatible with PSPs                   | We will refactor the contracts according to the PSP.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | 6.     | Refactor the structure of the OpenBrush to provide agnostic traits  | We will refactor the structure of the OpenBrush to provide traits for each implementation of the contract without restriction and implementation related information:<br/> - Traits will be defined in a separate module.<br/> - The default implementation of that trait for a contract will be provided via unstable feature `#![feature(min_specialization)]`.<br/> - We will provide a new macro to generate a wrapper around a trait. That wrapper can be used for cross-contract calls. So the user is enough of the trait definition to do a cross contract call. |
 
-#### Milestone 5. Release - Contribution to ink!
+#### Milestone 5. Release - Contribution to ink
 
 * **Estimated Duration:** 4 weeks(time depends on conversations in ink! repository)
 * **FTE:**  2
@@ -255,18 +255,18 @@ PSP - https://github.com/w3f/PSPs/pull/25
 After, this Grant, we will create a grant related to upgradable contracts.
 
 We're going to make a strong impact in the community, making ink! simple and convenient for developers.
-- Expertise sharing
-  - Covering all crypto-related news websites, creating workshops online, handling all relevant forums and social networks
-- Becoming an entry point for a developer starting in ink!/Wasm
-  - Nonstop updating our FAQ and knowledge base, creating educational content (text\video)
-- Marketing and PR strategy
-  - Organizing hackathons, Developing growth hacking strategy for involving developers from different channels
-
+* Expertise sharing
+  * Covering all crypto-related news websites, creating workshops online, handling all relevant forums and social networks
+* Becoming an entry point for a developer starting in ink!/Wasm
+  * Nonstop updating our FAQ and knowledge base, creating educational content (text\video)
+* Marketing and PR strategy
+  * Organizing hackathons, Developing growth hacking strategy for involving developers from different channels
 
 ## Additional Information :heavy_plus_sign:
+
 In the roadmap, you can see what was already done. Currently, we're on the 3-rd milestone.
 
-We have applied and got the [grant](https://github.com/w3f/Grants-Program/pull/497) to cover 1 and 2 milestones. This grant is a follow-up grant. 
+We have applied and got the [grant](https://github.com/w3f/Grants-Program/pull/497) to cover 1 and 2 milestones. This grant is a follow-up grant.
 
 **How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
 

@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Substrate Tutorials
 
-- **Project Name:** Substrate Tutorials
 - **Team Name:** Rusty Crewmates
 - **Payment Address:** Payment in DAI at address 0x157018C40D7BCcf3A2683fbd7E9D9A2E9f60eF77 on the ethereum mainet
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2

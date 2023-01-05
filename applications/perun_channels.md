@@ -1,6 +1,5 @@
-# W3F Open Grant Proposal
+# Perun Channels
 
-* **Project Name:** Perun Channels
 * **Team Name:** Perun@PolyCrypt
 * **Payment Address:** 0x63DcE2cB0FeA77f4E55d01569583a40e17448B4b (DAI)
 
@@ -15,7 +14,6 @@ One of its main features is its blockchain-agnostic design, which means that mos
 **Proposal.** We want to provide a Polkadot backend for the _go-perun_ library in the form of a Substrate Pallet and a corresponding client integration, thereby enabling Polkadot Blockchains to benefit from the Perun channel technology.
 We view this as the first step towards enabling the full power of Perun channel technology.
 In the future, we envision to provide cross-chain functionality for establishing channels between two Polkadot chains, and potentially in the further future even between a Polkadot chain and a non-Polkadot chain, such as Ethereum. We propose to release this work open-source under the Apache 2.0 license.
-
 
 ### Project Details
 
@@ -35,22 +33,22 @@ On the one hand, this involves implementing off-chain functionality in Go as par
 For communication between the off-chain and on-chain components we intend to use the Go Substrate RPC client.
 In the following we give more detail on relevant components for this project.
 
-- **Wallet abstraction.**
+* **Wallet abstraction.**
 Implementing the wallet abstraction requires the implementation of the account type, the address type, and the wallet type.
 This involves implementing off-chain signature generation for arbitrary data such that the signatures can be verified on-chain.
 
-- **Channel abstraction.** Implementing the channel abstraction requires the implementation of the channel core types and the core channel functionality.
+* **Channel abstraction.** Implementing the channel abstraction requires the implementation of the channel core types and the core channel functionality.
 This involves implementing encoding and decoding of channel states off-chain and on-chain, and implementing the communication to the Polkadot Parachain nodes via the Go Substrate RPC client. The on-chain logic comprises channel deposit and withdrawal as well as the dispute logic. The implementation of the dispute protocol will need particularly extensive testing.
 
 #### Protocol overview
 
 We give a brief overview of the main channel protocols.
 
-- **Opening.** Users open a channel between each other by first agreeing on an initial state and then depositing corresponding funds into the channel. Here and in the following, by agreeing we mean to provide a signature on the state.
-- **Update.** Users update a channel state by mutually agreeing on an updated state.
-- **Dispute.** If a final state of a channel cannot be agreed off-chain, a user registers a dispute by sending a mutually signed state to the blockchain.
+* **Opening.** Users open a channel between each other by first agreeing on an initial state and then depositing corresponding funds into the channel. Here and in the following, by agreeing we mean to provide a signature on the state.
+* **Update.** Users update a channel state by mutually agreeing on an updated state.
+* **Dispute.** If a final state of a channel cannot be agreed off-chain, a user registers a dispute by sending a mutually signed state to the blockchain.
 A user can also overwrite an existing state dispute by providing a newer version of the state that is mutually signed within a designated refutation time period.
-- **Settlement.** Users can settle the channel in two ways. In the collaborative case, they were able to agree on a final state off-chain and the settlement can be done without prior state dispute.
+* **Settlement.** Users can settle the channel in two ways. In the collaborative case, they were able to agree on a final state off-chain and the settlement can be done without prior state dispute.
 In the non-collaborative case, a final state could not be agreed on. In this case, users need to wait until the refutation time period has passed before they can settle the channel.
 Once the channel is settled, the funds are redistributed according to the channel outcome.
 
@@ -58,23 +56,22 @@ Once the channel is settled, the funds are redistributed according to the channe
 
 Due to the time and resource constraints of the grant format, we limit the scope of the current proposal to implementing the on-chain part of the Polkadot backend for payment channels.
 This involves implementing a Substrate Pallet with the following:
-- Data structures
-  - `Params`: The immutable parameters defining a channel, i.e., the channel participants, the nonce, and the challenge duration.
-  - `State`: The mutable state of a channel, i.e., the version counter, the balances, and the final flag.
-  - `Deposits`: A mapping that describes the amount of funds deposited by channel and participant.
-  - `StateRegister`: A mapping that holds the registered channel states by channel identifier.
-- Functionality
-  - `fn deposit(channel: ChannelId, asset: Asset)`: Deposits a given amount of assets into a channel.
-  - `fn dispute(params: Params, state: State)`: Disputes a channel state on the blockchain.
-  - `fn settle(params: Params, state: State)`: Settles a channel and distributes the funds according to the outcome.
+* Data structures
+  * `Params`: The immutable parameters defining a channel, i.e., the channel participants, the nonce, and the challenge duration.
+  * `State`: The mutable state of a channel, i.e., the version counter, the balances, and the final flag.
+  * `Deposits`: A mapping that describes the amount of funds deposited by channel and participant.
+  * `StateRegister`: A mapping that holds the registered channel states by channel identifier.
+* Functionality
+  * `fn deposit(channel: ChannelId, asset: Asset)`: Deposits a given amount of assets into a channel.
+  * `fn dispute(params: Params, state: State)`: Disputes a channel state on the blockchain.
+  * `fn settle(params: Params, state: State)`: Settles a channel and distributes the funds according to the outcome.
 
 The following aspects are **not covered** by this proposal and are subject to future applications:
-- Off-chain component, i.e., the Golang component that connects the on-chain logic with the client logic.
-- App channels, i.e., channels with arbitrary and enforceable transaction logic.
-- Sub-channels or virtual-channels, i.e., channels that are funded off-chain from other channels.
+* Off-chain component, i.e., the Golang component that connects the on-chain logic with the client logic.
+* App channels, i.e., channels with arbitrary and enforceable transaction logic.
+* Sub-channels or virtual-channels, i.e., channels that are funded off-chain from other channels.
 
 In the further future we plan to extend the functionality towards channels across different Polkadot chains, and potentially even channels between a Polkadot chain and a non-Polkadot chain.
-
 
 ### Ecosystem Fit
 
@@ -99,15 +96,14 @@ We target the following user groups:
 
 **Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?**
 
-We are aware of *cChannel-substrate*, which is a channel project on Polkadot by Celer. We differentiate ourselves from cChannel-substrate as follows:
+We are aware of _cChannel-substrate_, which is a channel project on Polkadot by Celer. We differentiate ourselves from cChannel-substrate as follows:
 
-1) *cChannel-substrate*: does not include a client implementation.
-This means that the whole off-chain protocol implementation is still to be done on their side. *go-perun*: Thanks to the unique blockchain-agnostic design of _go-perun_, _go-perun_ features an abstract implementation of the off-chain protocols and only the blockchain-specific parts of the client need to be implemented.
-2) *cChannel-substrate*: focuses on payment channels.
-*go-perun*: provides generalized state channel functionality.
-3) *cChannel-substrate*: does not allow transactions across chains.
-*go-perun*: is designed for enabling cross-chain transactions in the future.
-
+1) _cChannel-substrate_: does not include a client implementation.
+This means that the whole off-chain protocol implementation is still to be done on their side. _go-perun_: Thanks to the unique blockchain-agnostic design of _go-perun_, _go-perun_ features an abstract implementation of the off-chain protocols and only the blockchain-specific parts of the client need to be implemented.
+2) _cChannel-substrate_: focuses on payment channels.
+_go-perun_: provides generalized state channel functionality.
+3) _cChannel-substrate_: does not allow transactions across chains.
+_go-perun_: is designed for enabling cross-chain transactions in the future.
 
 ## Team :busts_in_silhouette:
 
@@ -128,12 +124,11 @@ The PolyCrypt/Perun team consists of leading academic researchers in the off-cha
 * **Sasan Safai** _(Co-founder, business development)_
 * **Prof. Stefan Dziembowski** _(Co-inventor of Perun, Head of Cryptography Research Group at University of Warsaw)_
 
-
 ### Contact
 
 * **Contact Name:** Sebastian Stammler, Matthias Geihs
 * **Contact Email:** seb@perun.network, matthias@perun.network
-* **Website:** https://polycry.pt/, https://perun.network/
+* **Website:** <https://polycry.pt/>, <https://perun.network/>
 
 ### Legal Structure
 
@@ -147,25 +142,24 @@ Furthermore, our team includes experienced developers. Our team members are the 
 
 ### Team Code Repos
 
-A collection of our repositories can be found at https://github.com/perun-network/.
+A collection of our repositories can be found at <https://github.com/perun-network/>.
 
-Since mid 2020, the Perun Framework is a Hyperledger Labs project. The _go-perun_ library is available at https://github.com/hyperledger-labs/go-perun and the Ethereum smart contracts are available at https://github.com/hyperledger-labs/perun-eth-contracts.
+Since mid 2020, the Perun Framework is a Hyperledger Labs project. The _go-perun_ library is available at <https://github.com/hyperledger-labs/go-perun> and the Ethereum smart contracts are available at <https://github.com/hyperledger-labs/perun-eth-contracts>.
 
 ### Team LinkedIn Profiles
 
-Our company LinkedIn profile is available at https://www.linkedin.com/company/perun-network/.
+Our company LinkedIn profile is available at <https://www.linkedin.com/company/perun-network/>.
 
 ## Development Status :open_book:
 
 **Research:**
-The foundation for Perun State Channels was laid in “Perun: Virtual Payment Hubs over Cryptocurrencies”, published at IEEE S&P 2019, https://ieeexplore.ieee.org/document/8835315, also available at  https://eprint.iacr.org/2017/635. This is one of the most prestigious academic conferences in IT Security.
-An overview and summary of the research results is given in our white paper at https://perun.network/pdf/Perun2.0.pdf.
+The foundation for Perun State Channels was laid in “Perun: Virtual Payment Hubs over Cryptocurrencies”, published at IEEE S&P 2019, <https://ieeexplore.ieee.org/document/8835315>, also available at  <https://eprint.iacr.org/2017/635>. This is one of the most prestigious academic conferences in IT Security.
+An overview and summary of the research results is given in our white paper at <https://perun.network/pdf/Perun2.0.pdf>.
 
-**Software:** 
-The main repository of the _go-perun_ library is at https://github.com/hyperledger-labs/go-perun.
+**Software:**
+The main repository of the _go-perun_ library is at <https://github.com/hyperledger-labs/go-perun>.
 It currently features an Ethereum blockchain backend and supports generalized state channels on a single backend.
 In 2020, we joined the hyperledger foundation together with our industry partner BOSCH, with the goal of growing an open-source community around the Perun project.
-
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -207,13 +201,11 @@ We plan to provide the corresponding off-chain functionality written Go in the c
 | 1. | Dispute | We provide the channel dispute functionality as specified in _Project Details_.
 | 2. | Settlement | We provide the channel settlement functionality as specified in _Project Details_.
 
-
 ## Future Plans
 
 * We are working on building an open-source community around the Project. For this, we joined the Hyperledger foundation with Bosch as our enterprise partner.
 * We are looking to extend our industry collaborations. As our library is written in Go, we envision that it is suitable also for resource constrained devices in the IoT space.
 * We are considering using Perun channels for building a hub infrastructure that allows transferring liquidity between different networks quickly and cheaply. For that we are also considering applying for another grant.
-
 
 ## Additional Information :heavy_plus_sign:
 
