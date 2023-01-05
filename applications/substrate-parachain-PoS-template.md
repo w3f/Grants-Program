@@ -70,9 +70,9 @@ This is more friendly to both developers and users. It is born for better use of
 
 ### Overview
 
-- **Total Estimated Duration:** 7 weeks
-- **Full-Time Equivalent (FTE):**  7
-- **Total Costs:** 10000 USD
+- **Total Estimated Duration:** 3 weeks
+- **Full-Time Equivalent (FTE):**  3
+- **Total Costs:** 4,000 USD
 
 ### Milestone 1 - Based on the nimbus consensus
 Based on the nimbus consensus, make a PoS parachain development template with Polkadot Staking and Staking related modules.
@@ -90,29 +90,14 @@ Based on the nimbus consensus, make a PoS parachain development template with Po
 | **0c.** | Testing and Testing Guide   | Add manual tests to prove that the entire PoS runs successfully.  Provide unit testing and benchmarking for the Collators pallet.                                                                                                                                             |
 | **0d.** | Docker                      | Provide Docker to the chain, allowing anyone to quickly run the chain                                                                                                                                                                                                         |
 |       1 | client code                 | Provide a client with the same functions as [https://github.com/substrate-developer-hub/substrate-parachain-template/tree/main/node](https://github.com/substrate-developer-hub/substrate-parachain-template/tree/main/node).  Such as having the `try-runtime` command, etc. |
-|       2 | modules                     | Imp all staking-related substrate native modules (ElectionProviderMultiPhase,  VoterList and NominationPools) for the runtime.                                                                                                                                                |
-|       3 | Substrate Modlue: Collators | Provide collators (validators) for nimbus consensus. The collators can also come from staking, and it can be set directly by root or other origin. Means you can choose whether to use PoS.                                                                                   |
+|       2 | Substrate Modlue: Collators | The role of the Collators pallet is to provide a validator set for consensus. The validator can come from the staking module, which can also be set by ensure_root in this module, which means that with this template, you can also use the Staking function in the case of PoA, which is very useful if you just only want to reward collators.                                                                                   |
 
-### Milestone 2 - Based on the babe consensus
-- **Estimated duration:** 4 weeks
-- **FTE:**  4
-- **Costs:** 6000 USD
-
-|  Number | Deliverable                | Specification                                                                                                                                                                                                                                                                 |
-|--------:|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **0a.** | License                    | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                                                          |
-| **0b.** | Documentation              | Add documentation explaining how these modules fit together to complete the entire PoS process.                                                                                                                                                                               |
-| **0c.** | Testing and Testing Guide  | Add manual tests unit tests to prove that the entire PoS runs successfully.                                                                                                                                                                                                   |
-| **0d.** | Docker                     | Provide Docker to the chain, allowing anyone to quickly run the chain                                                                                                                                                                                                         |
-|       1 | client code                | Provide a client with the same functions as [https://github.com/substrate-developer-hub/substrate-parachain-template/tree/main/node](https://github.com/substrate-developer-hub/substrate-parachain-template/tree/main/node).  Such as having the `try-runtime` command, etc. |
-| 2| Substrate Modlue: babe-ext | This pallets extends the Substrate Babe pallet to make it compatible with parachains.                                                                                                                                                                                         |
-| 3 | Substrate Modlue: cumulus-client-consensus-babe | This extends the Substrate provided Babe consensus implementation to make it compatible for parachains.                                                                                                                                                                       | 
 
 ## Future Plans
 
-We are very happy to know that Polkadot is officially developing the SASSAFRAS consensus. In the future, we will bring SASSAFRAS to the POS parachain template.
+ - We are very happy to know that Polkadot is officially developing the SASSAFRAS consensus. In the future, we will bring SASSAFRAS to the POS parachain template.
 Make this PoS template have more consensus.
-
+- Based on the babe consensus, make a PoS parachain development template with Polkadot Staking and Staking related modules.
 ## Referral Program (optional) :moneybag: 
 
 You can find more information about the program [here](../README.md#moneybag-referral-program).
