@@ -81,9 +81,9 @@ At first, the syntax hihlighter will only be used for Rust programming language.
 
 To allow compatibility with future plans we will research for a library that covers not only Rust, but can also be used with AssemblyScript or any other language that is compatible with WASM.
 
-#### <a name="step5"></a>5.- Deploy all possible combinations of smart contracts.
+#### <a name="step5"></a>5.- Create a service that allows on demand contract compilation and deployment.
 
-In order to allow users to only instance the smart contracts, we will have to deploy the smart contracts first. Once each of them is deployed, we will store the code hash so that it can be used later.
+In order to allow users to only instance the smart contracts, we will have to deploy the smart contracts first. We'll build a backend service that receives the generated code and compiles it. Once the contract is deployed, we will store the code hash so that it can be used later.
 
 We need a map containing the parachain, type of the contract, the modifiers used and the code hash of the deployed contract.
 E.g: (Contracts Rococo - PSP22 - [burnable,mintable] => "CODE HASH")
@@ -198,7 +198,7 @@ Described in project details.
 | **0c.** | Testing and Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a docker container with current milestones deliverables to easily run the application. |
 | 0e. | Article | We will publish an article that explains what we have achieved building this project and how this will impact the ecosystem . |
-| 1. | Deploy all possible combinations of smart contracts | The functionality to be implemented corresponds to [step 5](#step5) of the Project Details section. |
+| 1. | Create a service that allows on demand contract compilation and deployment. | The functionality to be implemented corresponds to [step 5](#step5) of the Project Details section. |
 | 2. | Develop Instance functionality | The functionality to be implemented corresponds to [step 6](#step6) of the Project Details section. |
 
 ## Future Plans
