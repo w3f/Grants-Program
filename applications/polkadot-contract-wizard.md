@@ -180,7 +180,6 @@ Described in project details.
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can generate its own smart contracts. |
 | **0c.** | Testing and Testing Guide | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a docker container with current milestones deliverables to easily run the application. |
-| 0e. | Article | We will publish an article that explains what we have achieved building this project and how this will impact the ecosystem. |
 | 1. | Redesign frontend interface | The functionality to be implemented corresponds to [step 1](#step1) of the Project Details section. |
 | 2. | Develop the interface based on the previous task result | The functionality to be implemented corresponds to [step 2](#step2) of the Project Details section. |
 | 3. | Compose the contract based on the selection | The functionality to be implemented corresponds to [step 3](#step3) of the Project Details section. |
@@ -207,7 +206,7 @@ Described in project details.
 After the completion of this project, we would love to broaden its scope.
 
 **Multiple Chains**
-- Deploy the set of smart contracts in several parachains that implement the contracts pallet.
+- Provide a set of tools that will allow users to connect to parachains which implement the contracts pallet.
 
 **Custom contracts**
 - Add the possibility of creating custom contracts, not only with the modifiers but adding the ability to write code using the interface.
