@@ -1,7 +1,7 @@
 # Polkadart
 
 - **Team Name:** JURIMETRIC TECNOLOGIA LTDA
-- **Payment Address:** 12kizkmmQzRFR5o6BQ5Kufo77RPT787eaFynswQoi42vv2Da (DOT)
+- **Payment Address:** 0xF9310880F753a2327146dD19EC2207E6bA482A19 (USDC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
 
 ## Project Overview :page_facing_up:
@@ -58,6 +58,7 @@ Pocket4 was similar to PolkaDart but it was discontinued for lack of progress an
 - Luiza Adena Engers, Product Manager
 - Fabio Binder, Blockchain Engineer
 - Gabriel Okura, Flutter Developer
+- Bruno Pastre, Senior Flutter Developer
 
 ### Contact
 
@@ -100,6 +101,9 @@ Luiza is Jurimetric's Product Manager. She founded a legal tech called Arbi-ON a
 
 Gabriel is currently working as a mobile and backend developer at Hype Empreendimentos, and for the past year and a half, he has been having experience building apps in Dart with the Flutter framework. Previously worked with mobile game development at Opala Studios. He is excited about the opportunity to work on Rankanizer and to help build the PolkaDart library to increase his experience with blockchain technology.
 
+**Bruno Pastre**
+Bruno is an iOS specialized Software Engineer who has consulted for large tech companies like Coinbase and Wish. 
+He is fascinated about writing scalable, testable and maintainable code and has been working on that for the past four years. He's a Apple Developer Academy alumni, performing both as a student and a Junior Mentor, There, he had the opportunity to share his knowledge with the next generation of iOS developers and empower them to develop themselfs.
 
 ### Team Code Repos
 
@@ -112,6 +116,7 @@ Gabriel is currently working as a mobile and backend developer at Hype Empreendi
 - https://github.com/justkawal
 - https://github.com/LuizaJurimetric
 - https://github.com/gabrielokura
+- https://github.com/pastre
 
 ### Team LinkedIn Profiles (if available)
 
@@ -122,6 +127,7 @@ Gabriel is currently working as a mobile and backend developer at Hype Empreendi
 - https://www.linkedin.com/in/kawal74153
 - https://www.linkedin.com/in/luizaadenaengers
 - https://www.linkedin.com/in/gabriel-motelevicz-okura-aa95491b6
+- https://www.linkedin.com/in/bpastre
 
 ## Development Status :open_book:
 
@@ -141,7 +147,7 @@ Described above.
 
 - **Total Estimated Duration:** 7 months.
 - **Full-Time Equivalent (FTE):** 4.
-- **Total Costs:** 50,000 USDC.
+- **Total Costs:** 50,000 USD.
 
 ### Milestone 1 — 
 
