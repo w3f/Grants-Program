@@ -21,6 +21,5 @@ The project is well-suited to be completed as a Bachelor's Thesis/ Master's Thes
 | 0b. | Documentation | Document describing the threat model, scope of the analysis, and  description of the approach/methodology used. |
 | 1 | Analysis Report| Security analysis report of the current account generation, access, back-up, and restoring mechanism used in popular Polkadot wallets like [Polkadot-JS Browser Extension](https://polkadot.js.org/extension/), [subkey](https://docs.substrate.io/reference/command-line-tools/subkey/), [Polkadot-JS UI](https://github.com/polkadot-js/ui), [Parity Signer](https://www.parity.io/technologies/signer/), [Talisman](https://www.talisman.xyz/) etc. The analysis should also take into consideration features like multi-signatures, stashing, proxies, and anonymous proxies. The analysis includes: 1) sound and complete detection of unauthorised access; 2) minimal counterexamples for exploits if any; 3) lockout risks for users | 
 | 2 | Analysis Report| Possible improvements in usability (e.g., getting rid of redundant authentication layers during restoration) stemming from the analysis should be documented. | 
-| 3 | Models/Code | Models developed to formalise and analyse the different wallets. 
-Code and set-up for automated analysis, if any. |
+| 3 | Models/Code | Models developed to formalise and analyse the different wallets. Code and set-up for automated analysis, if any. |
 | 4 | Engagements | Engage with the Web3 Foundation teams to validate the correctness of models and the specifications.|
