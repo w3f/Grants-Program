@@ -1,10 +1,10 @@
-# W3F Open Grant Proposal
+# Open Node Framework
 
-* **Project Name:** Open Node Framework
 * **Team Name:** Phala Network
 * **Payment Address:** DAI at 0x50DC97D0345d61B4D096e15313d50b6506972e5F
+* **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/334#issuecomment-1168505655)
 
-## Project Overview :page_facing_up: 
+## Project Overview :page_facing_up:
 
 ### Overview
 
@@ -14,10 +14,10 @@
 
 While developing a Substrate based parachain, we found it challenging to operate and maintain different types of nodes. Validators and collators require high availability and key security. Bootnodes and RPC nodes require high performance and flexible scalability. So Open Node Framework has the following design purpose:
 
-- Parachain first: Focus on the requirement of parachains
-- Flexibility: Integrate with any Substrate based blockchain easily
-- Multipurpose: Run validators, collators, full nodes, bootstrap nodes, or RPC nodes
-- High Availability: Add redundancy to nodes (validators & collators) for higher security and robustness
+* Parachain first: Focus on the requirement of parachains
+* Flexibility: Integrate with any Substrate based blockchain easily
+* Multipurpose: Run validators, collators, full nodes, bootstrap nodes, or RPC nodes
+* High Availability: Add redundancy to nodes (validators & collators) for higher security and robustness
 
 There are a few existing projects that can partially meet the above requirements. Among them, [Polkadot Deployer](https://github.com/w3f/polkadot-deployer) is a k8s-based network deployment and monitoring tool. However, it's mainly designed for bootstraping and operating a full Polkadot, which may not meet the typical requirement of running a parachain. Therefore we think it's a good idea to iterate on it and make it parachain ready and address the features mentioned above.
 
@@ -25,24 +25,24 @@ Tere are other interesting projects as well. [Polkadot Secure Validator](https:/
 
 Open Node Framework wants to feature:
 
-- Multi IT infrastructure
-    - Native Kubernetes architecture
-    - Cross-datacenter / cloud providers deployment with a central dashboard for daily management
-    - Support multiple cloud providers with Terraform
-    - Scale up to a large node network easily
-- High availability
-    - Upgradable node binary
-    - Blockchain database backup and recovery
-    - DDoS mitigation
-    - Collator and validator redundancy
-- Hardened security
-    - Ops jump servers / VPN behind a firewall
-    - RPC authentication
-- Monitoring
-    - Dashboard and data visualization with Prometheus and Graphana
-    - Grafana / Loki stack for metrics, logging, tracing
-- Flexible node integration
-    - Replacible Docker images for node binaries
+* Multi IT infrastructure
+  * Native Kubernetes architecture
+  * Cross-datacenter / cloud providers deployment with a central dashboard for daily management
+  * Support multiple cloud providers with Terraform
+  * Scale up to a large node network easily
+* High availability
+  * Upgradable node binary
+  * Blockchain database backup and recovery
+  * DDoS mitigation
+  * Collator and validator redundancy
+* Hardened security
+  * Ops jump servers / VPN behind a firewall
+  * RPC authentication
+* Monitoring
+  * Dashboard and data visualization with Prometheus and Graphana
+  * Grafana / Loki stack for metrics, logging, tracing
+* Flexible node integration
+  * Replacible Docker images for node binaries
 
 ![](https://i.imgur.com/VeoV3Oh.png)
 
@@ -65,17 +65,17 @@ Open Node Framework doesn't aim to build everything from scratch. We prefer to u
 
 The other building block candidates are:
 
-- Raft-based validator availablity
-    - Consul validator failover: [protofire/polkadot-failover-mechanism](https://github.com/protofire/polkadot-failover-mechanism)
-- Monitoring dashboard
-    - [ironoa/polkadot-k8s-monitor](https://github.com/ironoa/polkadot-k8s-monitor)
-    - [SimplyVC/panic_polkadot](https://github.com/SimplyVC/panic_polkadot)
-- API Serving
-    - [Joystream/hydra](https://github.com/Joystream/hydra)
-    - [subquery/subql](https://github.com/subquery/subql)
-    - [insight-w3f/terragrunt-polkadot](https://github.com/insight-w3f/terragrunt-polkadot)
+* Raft-based validator availablity
+  * Consul validator failover: [protofire/polkadot-failover-mechanism](https://github.com/protofire/polkadot-failover-mechanism)
+* Monitoring dashboard
+  * [ironoa/polkadot-k8s-monitor](https://github.com/ironoa/polkadot-k8s-monitor)
+  * [SimplyVC/panic_polkadot](https://github.com/SimplyVC/panic_polkadot)
+* API Serving
+  * [Joystream/hydra](https://github.com/Joystream/hydra)
+  * [subquery/subql](https://github.com/subquery/subql)
+  * [insight-w3f/terragrunt-polkadot](https://github.com/insight-w3f/terragrunt-polkadot)
 
-### Ecosystem Fit 
+### Ecosystem Fit
 
 Open Node Framework provides the infrastructure to deploy any Substrate based parachain or standalone blockchain for multiple purposes, including running a bootstrap network, a validator cluster, a full node RPC service network, or a temporary simulation network for experiments, with all the essential infrastructure. It allows other Substrate blockchains to integrate with it easily.
 
@@ -92,9 +92,9 @@ The project serves standalone the Substrate blockchain, parachain, and relay cha
 
 * **Contact Name:** Hang Yin
 * **Contact Email:** hangyin@phala.network
-* **Website:** https://phala.network
+* **Website:** <https://phala.network>
 
-### Legal Structure 
+### Legal Structure
 
 * **Registered Address:** 3 FRASER STREET #05-25 DUO TOWER SINGAPORE (189352)
 * **Registered Legal Entity:** HASHFOREST TECHNOLOGY PTE. LTD.
@@ -105,19 +105,20 @@ Open Node Framework is an open source project initiated by core members of [Phal
 
 ### Team Code Repos
 
-* Open Node development repo: https://github.com/Phala-Network/open-node-deployer
-* Open Node MVP: https://github.com/Tenet-X
-* Phala Network team repo: https://github.com/Phala-Network
+* Open Node development repo: <https://github.com/Phala-Network/open-node-deployer>
+* Open Node MVP: <https://github.com/Tenet-X>
+* Phala Network team repo: <https://github.com/Phala-Network>
+
 ### Team LinkedIn Profiles
 
-* https://www.linkedin.com/in/hang-yin-167012a7/
-* https://www.linkedin.com/in/jun-jiang-5b9b4153/
+* <https://www.linkedin.com/in/hang-yin-167012a7/>
+* <https://www.linkedin.com/in/jun-jiang-5b9b4153/>
 
-## Development Status :open_book: 
+## Development Status :open_book:
 
 The MVP of Open Node Framework is available on [Github](https://github.com/Tenet-X) but we are going to switch to build on polkadot-deployer [on our fork](https://github.com/Phala-Network/open-node-deployer) instead. Please see [Project Details](#Project-Details).
 
-## Development Roadmap :nut_and_bolt: 
+## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
@@ -129,7 +130,7 @@ In the milestone deliverable table, the features marked with _"(addition)"_ mean
 
 ### Milestone 1 - Basic features and operating security improvement
 
-* **Estimated Duration:** 1 month (ETA: Dec 15, 2021)
+* **Estimated Duration:** 3 months (ETA: Mar 15, 2022)
 * **FTE:**  4
 * **Costs:** 10,000 USD
 
@@ -141,15 +142,16 @@ In the milestone deliverable table, the features marked with _"(addition)"_ mean
 | 0d. | Article/Tutorial | We will publish a tutorial and an workshop that explains how the project can be used to deploy different types of blockchain network. |
 | 1. | Parachain support | Add parachain config support. (addition) |
 | 2. | Custom Substrate support | Enable custom Substrate blockchain integration with the example configs to integrate with Substrate sample node (substrate/node/cli) (addition) |
-| 3. | Operating scripts | The scripts to: scale up / down the nodes (addition) and get direct access to the nodes (integration) |
-| 4. | Authenticated RPC | Add the authentication layer to the node RPC for node operation (integration) |
+| 3. | Operating scripts | Apply the declarative configs to: scale up / down the nodes (addition) |
+| 4. | Monitoring, and logging | Implement the monitoring infrastructure with Prometheus and Loki to collect metrics and logs. (integration) |
+| 5. | Grey release | Integrate with CI/CD pipeline and enable greyscale release inside the cluster. (addition) |
+| 6. | More deployment modes | Templates to deploy bootstrap nodes, API nodes, and simulation network. (addition) |
 
 ### Milestone 2 — Advanced Features
 
-* **Estimated Duration:** 1 month (ETA: Jan 15, 2021)
+* **Estimated Duration:** 1.5 month (ETA: Apr 30, 2022)
 * **FTE:**  4
 * **Costs:** 12,000 USD
-
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -159,10 +161,9 @@ In the milestone deliverable table, the features marked with _"(addition)"_ mean
 | 0d. | Article/Tutorial | We will extend the workshop to show how to deploy a hardened node network. |
 | 1. | Backup node and recovery | Add sync node type and database backup & recovery routines. Add scripts to trigger and minotor the process. (addition) |
 | 2. | Session key management | Add the script to interact with the node and the blockchain to generate and rotate the session keys, and add routines to migrate keys between validators and collators (or mount the keystore db to the assigned validators) (addition) |
-| 3. | Alerts, monitoring, and logging | Implement the monitoring infrastructure with Prometheus and Loki to collect metrics and logs. Define the collator / validator related warnings and metrics and add them to the alerm manager. (integration) |
-| 4. | Grey release | Integrate with CI/CD pipeline and enable greyscale release inside the cluster. (addition) |
-| 5. | HPA scaling | Automatically scale the storage and the size of the cluster based on load of the nodes. (addition) |
-| 6. | More deployment modes | Templates to deploy bootstrap nodes, API nodes, and simulation network. (addition) |
+| 3. | Alerts | Define the collator / validator related warnings and metrics from Prometheus and Loki and add them to the alerm manager. (integration) |
+| 4. | HPA scaling | Automatically scale the storage and the size of the cluster based on load of the nodes. (addition) |
+| 5. | Authenticated RPC | Add the authentication layer to the node RPC for node operation (integration) |
 
 ## Future Plans
 

@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# OpenSea.js on polkadot
 
-- **Project:** OpenSea.js on polkadot
 - **Proposer:** vlbos
 - **Payment Address:** 1NpKNwNSAdoVgwD4XXwe8caLheZRVrFVBL
 - **Status:** [Terminated](https://github.com/w3f/Grants-Program/pull/110#issuecomment-908594354)
