@@ -213,6 +213,12 @@ Once the wallet is released, we will continue to maintain it for at least 2 year
 - Improvements to the UX/UI
 - Support for new features
 
+#### User Interface
+
+The wallet interface will be based on this [mock-up](https://www.figma.com/file/EawnVPOMgeTLUHaMfUNaGw/Wallet-XCM?node-id=0%3A1):
+
+![XCM Wallet](https://cdn.discordapp.com/attachments/892735396847419452/1062025103300362280/Wallet-presentation.png)
+
 ## Future Plans
 
 - Add support for popular hardware wallets, such as Ledger and Trezor, to provide users with additional security and flexibility
