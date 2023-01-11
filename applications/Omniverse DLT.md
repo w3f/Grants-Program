@@ -22,8 +22,9 @@ So in our research, we innovatively found a more suitable Token model - Omnivers
 Omniverse DLT, **O-DLT** for short.
 
 #### Brief description
+The Omniverse DLT is a new **application-level** token protocol built **over** multiple existing L1 public chains, enabling asset-related operations such as transfers, receptions, and transactions running **over** different consensus spaces **synchronously and equivalently**.  
+
 The core meaning of **Omniverse** is that ***The legitimacy of all on-chain states and operations can be equivalently verified and recorded simultaneously over different consensus spaces, regardless of where they were initiated.***  
-The Omniverse DLT is a new **application-level** token protocol built over multiple existing L1 public chains, enabling asset-related operations such as transfers, receptions, and transactions running over different consensus spaces synchronously and equivalently.  
 
 #### Relates to Polkadot
 In this application, three form implementations of the Omniverse DLT will be provided. 
@@ -95,8 +96,8 @@ Generally, this project is composited with the O-DLT component, a swap component
 ### Ecosystem Fit
 
 Intuitively but non-rigorously, we consider a single public chain as a country, and any country wants their currency to be common in other countries as well.  
-We are trying to provide an infrastructure into make all assets on Polkadot/kusama to be global without being divided to different parts as current assets-bridges did so that any other chain breaks will not influence the assets on Polkadot/kusama ecosystem.   
-We will make the O-DLT an open source-protocol so that everyone can use it to publish their own omniverse tokens all by themselves. We will provide the following things to Polkadot/Kusama:  
+We are trying to provide an infrastructure to help all assets on Polkadot/kusama be global without being divided into different parts as current assets-bridges did, and the breaking of any other chain will not influence the assets on Polkadot/kusama ecosystem.   
+We will make the O-DLT an open source-protocol so that everyone in Polkadot/Kusama ecosystem can use it to publish their own omniverse tokens all by themselves. We will provide the following things to Polkadot/Kusama:  
 - O-DLT `substrate pallets`
 - O-DLT `ink! smart contracts`
 - O-DLT `solidity smart contracts` for Moonbeam
