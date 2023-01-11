@@ -1,4 +1,4 @@
-# Name of your Research Project1
+# Polkadot Ecosystem Sandbox
 
 - **Team Name:** NayaOne DLT Blockchain
 - **Payment Address:** 0x57dF6e305759535170D33483eFA5285305687A53(USDC)
