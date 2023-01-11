@@ -43,7 +43,7 @@ As an infrastructure serving multiple chains, we definitely want Dante's token t
 
 ### Project Details
 #### Architecture
-![img]()  
+![image](https://user-images.githubusercontent.com/83746881/211817046-8c42543b-0dcc-49d3-8219-b1d2af06368b.png)  
 <p align="center">Figure.1 Architecture</p>  
 Generally, this project is composited with the O-DLT component, a swap component for Omniverse tokens, and the off-chain synchronizers.  
 
@@ -81,7 +81,7 @@ Generally, this project is composited with the O-DLT component, a swap component
   - The omniverse token(o-token for short) based on O-DLT deployed on different chains is not separated but as a whole. If someone has one o-token on Polkadot, he will have an equivalent one on Ethereum and other chains at the same time.
   - The state of the tokens based on O-DLT is synchronous on different chains. If someone sends/receives one token on Polkadot, he will send/receive one token on Ethereum and other chains at the same time.
   - The workflow of O-DLT is as below. ***Note that in an Omniverse token transaction the user only needs to initiate a sending transaction on whatever blockchain he prefers, and the rest things are all processed by the underlying protocols.***  
-    ![img]()  
+    ![image](https://user-images.githubusercontent.com/83746881/211828536-bca481a5-588e-49ec-818b-0b5d6685ffd7.png)  
     - A common user initiate an omniverse transfer operation on Near by calling `omniverse_transfer` for example.
     - The O-DLT smart contracts on Near verify the signature of the transaction data at an application-level.
     - If the verification passed, the o-transaction will be published.
