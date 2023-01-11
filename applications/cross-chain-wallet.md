@@ -123,13 +123,13 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 - **Total Estimated Duration:** 6 month
 - **Full-Time Equivalent (FTE):**  3
-- **Total Costs:** 75000 USD
+- **Total Costs:** 64000 USD
 
 ### Milestone 1 - Wallet extension
 
 - **Estimated duration:** 2 month
 - **FTE:**  3
-- **Costs:** 30,000 USD
+- **Costs:** 24,000 USD
 
 Create a wallet extension that can be installed on browsers such as Chrome, Firefox, etc. This milestone will include the following features:
 
@@ -149,7 +149,7 @@ Create a wallet extension that can be installed on browsers such as Chrome, Fire
 
 - **Estimated duration:** 1 month
 - **FTE:**  3
-- **Costs:** 20,000 USD
+- **Costs:** 12,000 USD
 
 The main focus on this milestone will be to allow users to transfer assets between their own accounts. This milestone will include the following features:
 
@@ -169,7 +169,7 @@ The main focus on this milestone will be to allow users to transfer assets betwe
 
 - **Estimated duration:** 2 month
 - **FTE:**  3
-- **Costs:** 15,000 USD
+- **Costs:** 24,000 USD
 
 Milestone number 3 will focus on the transfer of assets between chains. This milestone will include the following features:
 
@@ -188,7 +188,7 @@ Milestone number 3 will focus on the transfer of assets between chains. This mil
 
 - **Estimated duration:** 1 month
 - **FTE:**  1
-- **Costs:** 10,000 USD
+- **Costs:** 4,000 USD
 
 The last milestone will focus on improving the UX/UI of the wallet. This milestone will include the following features:
 
