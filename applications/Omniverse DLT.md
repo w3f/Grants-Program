@@ -15,7 +15,7 @@
   - [Milestone 2 Delivery](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/Dante_Network_milestone_2.md)
 
 As we know, Dante Network is a protocol that serves heterogeneous consensus and can help Polkadot expand the outer edge. In the previous work, Dante has completed its basic technology abilities. Now we come to the **technical form** of the token, and we have mentioned in the [future work](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/Dante_Network_milestone_2.md#future-work) of the last delivery that as an infrastructure for multi-chains, the first thing is that the token of Dante would be used on all chains we support. More importantly, we want the token of Dante to be treated as **a whole**, instead of being divided into different parts as current assets bridges did.  
-So in our research, we innovatively found a more suitable Token model - Omniverse DLT. A more interesting thing is that, Omniverse DLT can be used not only for Dante, but also for all kinds of assets. We will present the details in the [Ecosystem Fit](#ecosystem-fit) section.  
+So in our research, we innovatively found a more suitable Token model - Omniverse DLT. A more interesting thing is that, Omniverse DLT can be used not only for Dante, but also for all kinds of assets on Polkadot/Kusama. We will present the details in the [Ecosystem Fit](#ecosystem-fit) section.  
 
 ### Overview
 #### Tag Line
@@ -27,9 +27,9 @@ The Omniverse DLT is a new **application-level** token protocol built **over** m
 The core meaning of **Omniverse** is that ***The legitimacy of all on-chain states and operations can be equivalently verified and recorded simultaneously over different consensus spaces, regardless of where they were initiated.***  
 
 #### Relates to Polkadot
-In this application, three form implementations of the Omniverse DLT will be provided. 
-- It will be implemented as a `substrate pallet assets`, which can be used as a basic component in their project.
-- It will be implemented as an `ink!` smart contract, which is an upgrade to the current FT/NFT smart contract.
+In this application, three forms implementation of the Omniverse DLT will be provided. 
+- It will be implemented as a `substrate pallet assets`, which can be used as a basic component in any `Substrate Parachain` project.
+- It will be implemented as an `ink!` smart contract, which is an upgrade to the current FT/NFT smart contract for `Substrate Ink!`.
 - It will be implemented as an `solidity` smart contract(for Moonbeam), which is an upgrade to the current ERC20/ERC721 smart contract.  
 
 Besides being used for Dante's token, everyone in Polkadot can use O-DLT as a component to build their own project if they want their tokens to be global.  
@@ -37,7 +37,7 @@ Besides being used for Dante's token, everyone in Polkadot can use O-DLT as a co
 In addition, we will implement a swap platform especially for different Omniverse tokens, which will be implemented as a `substrate pallet`.    
 
 #### Why we are intrested in it
-As an infrastructure serving multiple chains, we definitely want Dante's token to be accessed in multiple chains. However, we do not believe that the asset-bridge model is appropriate.  
+As an infrastructure serving multiple chains, we definitely want Dante's token to be accessed anywhere. However, we do not believe that the asset-bridge model is appropriate.  
 - We want Dante's token to be treated as a whole not being devided into different parts on different public chains. O-DLT can get it. 
 - When one chain breaks down, we don't want to lose our assets along with it. None of the assets-bridges can provide a guarantee for this. O-DLT can provide this guarantee even if there's only one chain that works.   
 - Not just for Dante's token, we are willing to help other projects make their token omniverse if they need it. O-DLT is such a new kind of token protocol at the application level.      
@@ -49,10 +49,10 @@ As an infrastructure serving multiple chains, we definitely want Dante's token t
 Generally, this project is composited with the O-DLT component, a swap component for Omniverse tokens, and the off-chain synchronizers.  
 
 #### Components
-- O-DLT is implemented as a `substrate pallet` and `ink! smart contract` on Polkadot, and as a smart contract on other chains(EVM chains for instance). A special cryptographic commitment is used to make a verification when a change in ownership of the token occurs, which can be verified in an equivalent approach on different tech stacks of different blockchains. The special commitment is unfakeable and non-deniable. Moreover, the transfer of Omniverse tokens happened on an Omniverse Account Protocol, and be guaranteed by an Omniverse Transaction Protocol.:
+- O-DLT is implemented as a `substrate pallet` and `ink! smart contract` on Polkadot, and as a smart contract on other chains(EVM chains for instance). A special cryptographic commitment is used to make a verification when a change in ownership of the token occurs, which can be verified in an equivalent approach on different tech stacks of different blockchains. The special commitment is unfakeable and non-deniable. Moreover, the transfer of Omniverse tokens happened on an Omniverse Account Protocol, and be guaranteed by an Omniverse Transaction Protocol.
   - The implementation of the Omniverse Account is not very hard, and we temporarily choose a common elliptic curve secp256k1 to make it out, which has been already supported by many blockchains. 
   - The Omniverse Transaction guarantees the ultimate consistency of transactions across all chains. 
-  - We will difine an application-level data structure to describe omniverse transactions, which can be treated as the same in different tech stacks. The [example code of the *TransactionData*]() will be similar to the follows:  
+  - We will define an **application-level** data structure to describe omniverse transactions, which can be treated in the same way in different tech stacks. The [example code of the *TransactionData*]() will be similar to the following:  
     ```Rust
     #[derive(Clone, PartialEq, Eq, Debug, Encode, Decode, TypeInfo)]
     pub struct OmniverseTransactionData {
@@ -86,7 +86,9 @@ Generally, this project is composited with the O-DLT component, a swap component
     - A common user initiate an omniverse transfer operation on Near by calling `omniverse_transfer` for example.
     - The O-DLT smart contracts on Near verify the signature of the transaction data at an application-level.
     - If the verification passed, the o-transaction will be published.
-    - The off-chain synchronizers find the new published transaction, and they will find the nonce is larger than the related account on other chains. These synchronizers will rush to carry this message, because whoever submits to the destination chain first will get a reward. Finally, the O-DLT smart contracts/pallets deployed on other chains will all receive the transaction data, verify the signature and execute it when the waiting time is over.   
+    - The off-chain synchronizers find the new published transaction, and they will find the nonce is larger than the related account on other chains. 
+    - These synchronizers will rush to carry this message, because whoever submits to the destination chain first will get a reward. 
+    - Finally, the O-DLT smart contracts/pallets deployed on other chains will all receive the transaction data, verify the signature and execute it when the waiting time is up.   
     
 
 #### Demos
