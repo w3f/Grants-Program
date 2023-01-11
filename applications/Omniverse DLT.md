@@ -54,14 +54,14 @@ Generally, this project is composited with the O-DLT component, a swap component
   - We will difine an application-level data structure to describe omniverse transactions, which can be treated as the same in different tech stacks. The [example code of the *TransactionData*]() will be similar to the follows:  
     ```Rust
     #[derive(Clone, PartialEq, Eq, Debug, Encode, Decode, TypeInfo)]
-    pub struct OmniverseTokenProtocol {
-      pub nonce: u128,              // Global transaction identifier
-      pub chain_id: u8,             // The chain where the transaction is initiated
-      pub token_id: Vec<u8>,        // The identifier of an Omniverse Token. This is globally unique
-      pub from: [u8; 64],           // The Omniverse account transfer from
-      pub op_type: u8,              // The operation type(mint, burn, transfer, ...)
-      pub op_data: Vec<u8>,         // The operation data, `to` account for instance
-      pub signature: [u8; 65],      // The signature of the above informations
+    pub struct OmniverseTransactionData {
+      pub nonce: u128,                  // Global transaction identifier
+      pub chain_id: u32,                // The chain where the transaction is initiated
+      pub Initiator_address: Vec<u8>,   // The identifier of an Omniverse Token. This is globally unique
+      pub from: [u8; 64],               // The Omniverse account transfer from
+      pub op_type: u8,                  // The operation type(mint, burn, transfer, ...)
+      pub op_data: Vec<u8>,             // The operation data, `to` account for instance
+      pub signature: [u8; 65],          // The signature of the above informations
     }
     ```
   - The core operations of the O-DLT are `omniverse_transfer`, `omniverse_mint`, and `omniverse_burn`, in which the first thing is verifying the signature of the transaction data. Then the operation will be added to a pre-execution cache, and wait a user-defined time until being executed. The off-chain synchronizer will carry the transaction data to other chains. If another transaction data with the same nonce and the same sender account is received within the waiting time, if there's any sector different, a malicious thing happens and the related account will be punished. We provide some example codes [here](https://github.com/virgil2019/omniverse-swap/blob/4cfa0557f6f3ad8233fe16a8c6d963e577d06387/pallets/assets/src/functions.rs#L877) and [here](https://github.com/virgil2019/omniverse-swap/blob/4cfa0557f6f3ad8233fe16a8c6d963e577d06387/pallets/assets/src/functions.rs#L909) to explain how it works.     
@@ -90,6 +90,7 @@ Generally, this project is composited with the O-DLT component, a swap component
 
 #### Demos
 - We have provide a [demo video](https://o20k.s3.us-west-2.amazonaws.com/omniverse-swap.mp4) to explain how O-DLT works.
+- We also provide a [manually trying tutorial]()
 
 ### Ecosystem Fit
 
