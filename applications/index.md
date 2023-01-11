@@ -404,7 +404,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Koi Metaverse](https://koi.io/)                           | [Building the Digital Collectibles Platform for Virtual GameFi NFTs](./Koiverse.md)       | [GitHub](https://github.com/KoiMetaverse)                                  | ☐          |       ☐        |     ☐     |
 | [Health Hero](https://www.gohealthhero.com/)               | [Decentralized Well-being Game API](./decentralized_well-being_game_api.md)               | [GitHub](https://github.com/iumairazhar)                                   | ☐          |       ☐        |     ☐     |
 | [UNIVERSALDOT FOUNDATION](https://universaldot.foundation) | [A freelancing decentralized application](./universaldot.me.md)                           | [GitHub](https://github.com/UniversalDot)                                  | ☐          |       ☒        |     ☒     |
-| [AdMeta](https://admeta.network/)                          | [A privacy-preserving Ad Platform](./AdMeta.md)                                           | [GitHub](https://github.com/AdMetaNetwork/admeta)                          | ☐          |       ☐        |     ☐     |
+| [AdMeta](https://admeta.network/)                          | [A privacy-preserving Ad Platform](./AdMeta.md)                                           | [GitHub](https://github.com/AdMetaNetwork/admeta)                          | ☐          |       ☒        |     ☒     |
 | Crypto Pay Lab (CPL))                                      | [Dotpay a github paid task platform using DOT](./DotPay.md)                               | [GitHub](https://github.com/bytepayment)                                   | ☐          |       ☒        |     ☐     |
 
 ## 2022
