@@ -22,9 +22,11 @@ So in our research, we innovatively found a more suitable Token model - Omnivers
 Omniverse DLT, **O-DLT** for short.
 
 #### Brief description
-The Omniverse DLT is a new **application-level** token protocol built **over** multiple existing L1 public chains, enabling asset-related operations such as transfers, receptions, and transactions running **over** different consensus spaces **synchronously and equivalently**.  
+The Omniverse DLT is a new **application-level** token protocol built **over** multiple existing L1 public chains, enabling asset-related operations such as transfers and receptions running **over** different consensus spaces **synchronously and equivalently**.  
 
 The core meaning of **Omniverse** is that ***The legitimacy of all on-chain states and operations can be equivalently verified and recorded simultaneously over different consensus spaces, regardless of where they were initiated.***  
+
+O-DLT works at an **application level**, which means everything related is processed in **smart contracts** or **pallets**. **Nothing** relates to the native transactions of a single chain.   
 
 #### Relates to Polkadot
 In this application, three forms implementation of the Omniverse DLT will be provided. 
@@ -51,13 +53,13 @@ Generally, this project is composited with the O-DLT component, a swap component
 #### Components
 - O-DLT is implemented as a `substrate pallet` and `ink! smart contract` on Polkadot, and as a smart contract on other chains(EVM chains for instance). A special cryptographic commitment is used to make a verification when a change in ownership of the token occurs, which can be verified in an equivalent approach on different tech stacks of different blockchains. The special commitment is unfakeable and non-deniable. Moreover, the transfer of Omniverse tokens happened on an Omniverse Account Protocol, and be guaranteed by an Omniverse Transaction Protocol.
   - The implementation of the Omniverse Account is not very hard, and we temporarily choose a common elliptic curve secp256k1 to make it out, which has been already supported by many blockchains. 
-  - The Omniverse Transaction guarantees the ultimate consistency of transactions across all chains. 
+  - The `Omniverse Transaction` guarantees the ultimate consistency of omniverse transactions(**o-transaction** for short) across all chains. 
   - We will define an **application-level** data structure to describe omniverse transactions, which can be treated in the same way in different tech stacks. The [example code of the *TransactionData*]() will be similar to the following:  
     ```Rust
     #[derive(Clone, PartialEq, Eq, Debug, Encode, Decode, TypeInfo)]
     pub struct OmniverseTransactionData {
-      pub nonce: u128,                  // Global transaction identifier
-      pub chain_id: u32,                // The chain where the transaction is initiated
+      pub nonce: u128,                  // Global o-transaction identifier
+      pub chain_id: u32,                // The chain where the o-transaction is initiated
       pub Initiator_address: Vec<u8>,   // The identifier of an Omniverse Token. This is globally unique
       pub from: [u8; 64],               // The Omniverse account transfer from
       pub op_type: u8,                  // The operation type(mint, burn, transfer, ...)
@@ -65,31 +67,71 @@ Generally, this project is composited with the O-DLT component, a swap component
       pub signature: [u8; 65],          // The signature of the above informations
     }
     ```
-  - The core operations of the O-DLT are `omniverse_transfer`, `omniverse_mint`, and `omniverse_burn`, in which the first thing is verifying the signature of the transaction data. Then the operation will be added to a pre-execution cache, and wait a user-defined time until being executed. The off-chain synchronizer will carry the transaction data to other chains. If another transaction data with the same nonce and the same sender account is received within the waiting time, if there's any sector different, a malicious thing happens and the related account will be punished. We provide some example codes [here](https://github.com/virgil2019/omniverse-swap/blob/4cfa0557f6f3ad8233fe16a8c6d963e577d06387/pallets/assets/src/functions.rs#L877) and [here](https://github.com/virgil2019/omniverse-swap/blob/4cfa0557f6f3ad8233fe16a8c6d963e577d06387/pallets/assets/src/functions.rs#L909) to explain how it works.     
-  - The commitment verification protocol is a underly mechanism, which is a newest research result of Dante. It provides an absolute cryptographic way to make verifications for omniverse operations, in which malicious things could be found out determinedly.  
+    - The `nonce` is very important, which is the key point to **synchronize** the states globally, which will be described later.  
+    - The `nonce` appears at two places, one is `nonce in o-transaction` data as above, the other is `account nonce` maintained by on-chain O-DLT pallets/smart-contracts([example codes]("defination")).  
+    - The `nonce in o-transaction` data will be verified according to the `account nonce` managed by on-chain `Omniverse DLT` pallets/smart-contracts. Some [example codes]("judgement") can be found here.  
+  - The core operations of the O-DLT are `omniverse_transfer`, `omniverse_mint`, and `omniverse_burn`, in which the first thing is verifying the signature of the o-transaction data. Then the operation will be added to a pre-execution cache, and **wait a user-defined time** until being executed. The off-chain synchronizer will carry the o-transaction data to other chains. If another o-transaction data with the same nonce and the same sender account is received within the waiting time, if there's any sector different, a malicious thing happens and the related account will be punished. We provide some example codes [here](https://github.com/virgil2019/omniverse-swap/blob/4cfa0557f6f3ad8233fe16a8c6d963e577d06387/pallets/assets/src/functions.rs#L877) and [here](https://github.com/virgil2019/omniverse-swap/blob/4cfa0557f6f3ad8233fe16a8c6d963e577d06387/pallets/assets/src/functions.rs#L909) to explain how it works.     
+  - The commitment verification protocol is an underly mechanism, which is a newest research result of Dante. It provides an absolute cryptographic way to make verifications for omniverse operations, in which malicious things could be found out determinedly.  
 
-- The OSC(Omniverse Swap Component) is a direct swap platform for exchanges of Omniverse tokens. The calculation of the transaction amount is done by an O-AMM model we create. The details of the underlying mechanisms can be found in the [Principle of Omniverse-AMMM](). An omniverse swap operation can be initiated based on the O-DLT. OSC is implemented as a substrate pallet, and a mechanism similar to *abstract account smart contract* is made out to operate an abstract account for the omniverse swap along with the substrate consensus.
+- The OSC(Omniverse Swap Component) is a direct swap platform for exchanges of Omniverse tokens. The calculation of the o-transaction amount is done by an O-AMM model we create. The details of the underlying mechanisms can be found in the [Principle of Omniverse-AMM](). An omniverse swap operation can be initiated based on the O-DLT. OSC is implemented as a substrate pallet, and a mechanism similar to *abstract account smart contract* is made out to operate an abstract account for the omniverse swap along with the substrate consensus.
 
-- The bottom is the off-chain synchronizer layer. The synchronizer is a very light off-chain procedure, and it just listens to the Omniverse events happening on-chain and makes the information synchronization. As everything in Omniverse paradigm is along with a commitment and is verified by cryptographic algorithms, there's no need to worry about synchronizers doing malicious things. So the off-chain part of O-DLT is indeed trust-free. Everyone can launch a synchronizer to get rewards by helping synchronize information. The detailed steps may as follows:  
-  - When an Omniverse transaction happens on one chain first, the related nonce will plus 1, so the nonce on the first chain will be larger than others. 
-  - After the transaction is validated according to the commitment, it is published to the public. 
-  - Every synchronizer sees the new transaction and checks if any other chain has not received it, if not, they will deliver this transaction along with the commitment to the other chains.  
-  - Note that synchronizers deliver **other users'** omniverse transactions with **other users'** signatures, and there's no chance for risks or cheating as the submission will be verified by the deterministic cryptographic method, and the synchronizer who submits and passes the validation first will receive rewards, so as soon as the synchronizers discover a new legitimate transaction, they are eager to submit it for a reward.
-- In addition, we provide a [proof for the ultimate consistency](https://github.com/xiyu1984/o-amm/blob/main/docs/Proof-of-ultimate-consistency.md) for better understanding of the synchronization mechanisms.  
+- The bottom is the off-chain synchronizer layer. The synchronizer is a very light off-chain procedure, and it just listens to the Omniverse events happening on-chain and makes the information synchronization. As everything in Omniverse paradigm is along with a commitment(signature for instance) and is verified by cryptographic algorithms, there's no need to worry about synchronizers doing malicious things. So the off-chain part of O-DLT is indeed trust-free. Everyone can launch a synchronizer to get rewards by helping synchronize information. The detailed steps may as follows:  
+  - When an Omniverse transaction happens on one chain first, the related `account nonce` will add 1, so the `account nonce` on the first chain will be larger than others. 
+  - After the o-transaction is validated according to the signature, it is published to the public. 
+  - Every synchronizer sees the new o-transaction and checks if any other chain has not received it, if not, they will deliver this o-transaction along with the commitment to the other chains.  
+  - Note that synchronizers deliver **other users'** omniverse transactions(o-transactions) with **other users'** signatures, and there's no chance for risks or cheating as the submission will be verified by the deterministic cryptographic method, and the synchronizer who submits and passes the validation first will receive rewards, so as soon as the synchronizers discover a new legitimate o-transaction, they are eager to submit it for a reward. 
 
-#### Implementations
+#### Implementation & Example
 - The O-DLT has the following features:
   - The omniverse token(o-token for short) based on O-DLT deployed on different chains is not separated but as a whole. If someone has one o-token on Polkadot, he will have an equivalent one on Ethereum and other chains at the same time.
   - The state of the tokens based on O-DLT is synchronous on different chains. If someone sends/receives one token on Polkadot, he will send/receive one token on Ethereum and other chains at the same time.
-  - The workflow of O-DLT is as below. ***Note that in an Omniverse token transaction the user only needs to initiate a sending transaction on whatever blockchain he prefers, and the rest things are all processed by the underlying protocols.***  
+  - The workflow of O-DLT is as below. ***Note that in an Omniverse token o-transaction the user only needs to initiate a sending o-transaction on whatever blockchain he prefers, and the rest things are all processed by the underlying protocols.***  
+    <p id="figure.2" align="center">Figure.2 An Example</p>  
+
     ![image](https://user-images.githubusercontent.com/83746881/211828536-bca481a5-588e-49ec-818b-0b5d6685ffd7.png)  
-    - A common user initiate an omniverse transfer operation on Near by calling `omniverse_transfer` for example.
-    - The O-DLT smart contracts on Near verify the signature of the transaction data at an application-level.
-    - If the verification passed, the o-transaction will be published.
-    - The off-chain synchronizers find the new published transaction, and they will find the nonce is larger than the related account on other chains. 
-    - These synchronizers will rush to carry this message, because whoever submits to the destination chain first will get a reward. 
-    - Finally, the O-DLT smart contracts/pallets deployed on other chains will all receive the transaction data, verify the signature and execute it when the waiting time is up.   
-    
+    - Suppose a common user `A` and the related operation `account nonce` is $k$.
+    - `A` initiate an omniverse transfer operation on Near by calling `omniverse_transfer`. The current `account nonce` of `A` in O-DLT deployed on Near is $k$ so the valid value of `nonce in o-transaction` needs to be $k+1$.   
+    - The O-DLT smart contracts on Near verify the signature of the o-transaction data at an **application level**. If the verification for the signature and data succeeds, the underlying `account nonce` will **add 1** and the o-transaction data will be published. The verification for the data includes:
+      - whether the amount is valid 
+      - and whether the `nonce in o-transaction` is 1 larger than the `account nonce` maintained by the on-chain O-DLT
+    - Now, `A`'s `account nonce` on Near is $k+1$, but still $k$ on Polkadot, Ethereum, and Flow. 
+    - The off-chain synchronizers find the new published o-transaction, and they will find the `nonce in o-transaction` is larger than the related `account nonce` on other chains. 
+    - These synchronizers will rush to carry this message, because whoever submits to the destination chain first will get a reward. There's no will for independent synchronizers to do evil, because they just carry `A`'s o-transaction data. 
+    - Finally, the O-DLT smart contracts/pallets deployed on other chains will all receive the o-transaction data, verify the signature and execute it when the waiting time is up. Now all the `account nonce` of account `A` will be $k+1$.  
+
+We have provide a detailed [proof for the **ultimate consistency**](https://github.com/xiyu1984/o-amm/blob/main/docs/Proof-of-ultimate-consistency.md) for better understanding of the **synchronization** mechanisms. 
+
+#### Attack Vector Analysis
+According to the [above](#implementations), there are two roles: 
+- **common users** who initiate a o-transaction (at the application level)
+- and **synchronizers** who just carry the o-transaction data if they find differences between different chains.  
+
+The two roles might be where the attack happens:  
+- **Will the *synchronizers* cheat?**  
+  - Simply speaking, it's none of the **synchronizer**'s business as **they cannot create other users' signatures** unless some **common users** tell him, but at this point, we think it's a problem with the role **common user**.  
+  - The **synchronizer** has no will and cannot do evil because the transastion data they carry is verified by the related **signature** of others(a **common user**).  
+  - The **synchronizers** will be rewarded as long as they submit a valid o-transaction data, and *valid* only means that the signature and the amount are both valid even if the `nonce in o-transaction` is **invalid**. This will be detailed explained later when analyzing the role **common user**.  
+  - The **synchronizers** will do the delivery once they find differences between different chains:
+    - If the current `account nonce` on one chain is different from a published `nonce in o-transaction` on another chain
+    - If the transaction data related to a specific `nonce in o-transaction` on one chain is different from another published o-transaction data with the same `nonce in o-transaction` on another chain
+
+  - **Conclusion: The *synchronizers* won't cheat because there's no benifits and no way for them to do so.**
+
+- **Will the *common user* cheat?**
+  - Simply speaking, **yes they will**, but fortunately, **they can't succeed**.
+  - Suppose current `account nonce` of a **common user** `A` is $k$ on all chains.  
+  - Common user `A` initiates an o-transaction on a Parachain of Polkadot first, in which `A` transfer `10` o-tokens to an o-account of a **common user** `B`. The `nonce in o-transaction` needs to be $k+1$. After signature and data verification, the o-transaction data(`ot-P-ab` for short) will be published on Polkadot.
+  - At the same time, `A` initiates an o-transaction with the same nonce $k+1$ but different data(transfer `10` o-tokens to another o-account `C`) on Ethereum. This o-transaction(named as `ot-E-ac`) will pass the verification on Ethereum first, and be published.  
+  - At this point, it seems `A` finished a ***double spend attack*** and the O-DLT states on Polkadot and Ethereum are different.  
+  - **Response strategy**:
+    - As we mentioned above, the synchronizers will deliver `ot-P-ab` to the O-DLT on Ethereum and deliver `ot-E-ac` to the O-DLT on Polkadot because they are different although with a same nonce. The synchronizer who submits the o-transaction first will be rewarded as the signature is valid.
+    - Both the O-DLTs on Polkadot and Ethereum will find that `A` did a cheating as the signature of `A` is non-deniable.  
+    - We mentioned above that the execution of an o-transaction will not be done immediately and an user-defined waiting time is neccessary. So the `double spend attack` caused by `A` won't succeed.
+    - There will be many synchronizers waiting for delivering o-transactions to get rewards. So although it's almost impossible that a **common user** can submit two o-transactions to two chains, but none of the synchronizers deliver the o-transactions successfully because of network problem or something else, we still provide a solution:  
+      - The synchronizers will connect to several native nodes of every public chain to avoid the malicious native nodes.
+      - If it indeed happened that all synchronizers' network break, the o-transaction will be synchronized when the network recovered. If the waiting time is up and the cheating o-transaction has been executed, we will revert it from where the cheating happens according to the `nonce in o-transaction` and `account nonce`. 
+    - `A` will be punished(lock his account or something else, and this is about the tokenomics, so we won't discuss it according to [application-template.md](./application-template.md#L40)).  
+  - **Conclusion: The *common user* will cheat but won't succeed.**
 
 #### Demos
 - We have provide a [demo video](https://o20k.s3.us-west-2.amazonaws.com/omniverse-swap.mp4) to explain how O-DLT works.
