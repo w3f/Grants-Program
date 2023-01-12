@@ -54,7 +54,7 @@ Generally, this project is composited with the O-DLT component, a swap component
 - O-DLT is implemented as a `substrate pallet` and `ink! smart contract` on Polkadot, and as a smart contract on other chains(EVM chains for instance). A special cryptographic commitment is used to make a verification when a change in ownership of the token occurs, which can be verified in an equivalent approach on different tech stacks of different blockchains. The special commitment is unfakeable and non-deniable. Moreover, the transfer of Omniverse tokens happened on an Omniverse Account Protocol, and be guaranteed by an Omniverse Transaction Protocol.
   - The implementation of the Omniverse Account is not very hard, and we temporarily choose a common elliptic curve secp256k1 to make it out, which has been already supported by many blockchains. 
   - The `Omniverse Transaction` guarantees the ultimate consistency of omniverse transactions(**o-transaction** for short) across all chains. 
-  - We will define an **application-level** data structure to describe omniverse transactions, which can be treated in the same way in different tech stacks. The [example code of the *TransactionData*]() will be similar to the following:  
+  - We will define an **application-level** data structure to describe omniverse transactions, which can be treated in the same way in different tech stacks. The [example code of the *TransactionData*](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/69cebda3e567df1c807a9cb0cda180528f4de091/pallets/omni-protocol/src/types.rs#L60) will be similar to the following:  
     ```Rust
     #[derive(Clone, PartialEq, Eq, Debug, Encode, Decode, TypeInfo)]
     pub struct OmniverseTransactionData {
@@ -68,12 +68,12 @@ Generally, this project is composited with the O-DLT component, a swap component
     }
     ```
     - The `nonce` is very important, which is the key point to **synchronize** the states globally, which will be described later.  
-    - The `nonce` appears at two places, one is `nonce in o-transaction` data as above, the other is `account nonce` maintained by on-chain O-DLT pallets/smart-contracts([example codes]("defination")).  
-    - The `nonce in o-transaction` data will be verified according to the `account nonce` managed by on-chain `Omniverse DLT` pallets/smart-contracts. Some [example codes]("judgement") can be found here.  
-  - The core operations of the O-DLT are `omniverse_transfer`, `omniverse_mint`, and `omniverse_burn`, in which the first thing is verifying the signature of the o-transaction data. Then the operation will be added to a pre-execution cache, and **wait a user-defined time** until being executed. The off-chain synchronizer will carry the o-transaction data to other chains. If another o-transaction data with the same nonce and the same sender account is received within the waiting time, if there's any sector different, a malicious thing happens and the related account will be punished. We provide some example codes [here](https://github.com/virgil2019/omniverse-swap/blob/4cfa0557f6f3ad8233fe16a8c6d963e577d06387/pallets/assets/src/functions.rs#L877) and [here](https://github.com/virgil2019/omniverse-swap/blob/4cfa0557f6f3ad8233fe16a8c6d963e577d06387/pallets/assets/src/functions.rs#L909) to explain how it works.     
+    - The `nonce` appears at two places, one is `nonce in o-transaction` data as above, the other is `account nonce` maintained by on-chain O-DLT pallets/smart-contracts([example codes](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/69cebda3e567df1c807a9cb0cda180528f4de091/pallets/omni-protocol/src/lib.rs#L61)).  
+    - The `nonce in o-transaction` data will be verified according to the `account nonce` managed by on-chain `Omniverse DLT` pallets/smart-contracts. Some [example codes](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/69cebda3e567df1c807a9cb0cda180528f4de091/pallets/omni-protocol/src/functions.rs#L39) can be found here.  
+  - The core operations of the O-DLT are `omniverse_transfer`, `omniverse_mint`, and `omniverse_burn`, in which the first thing is verifying the signature of the o-transaction data. Then the operation will be added to a pre-execution cache, and **wait a user-defined time** until being executed. The off-chain synchronizer will carry the o-transaction data to other chains. If another o-transaction data with the same nonce and the same sender account is received within the waiting time, if there's any sector different, a malicious thing happens and the related account will be punished. We provide some example codes [here](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/69cebda3e567df1c807a9cb0cda180528f4de091/pallets/assets/src/functions.rs#L877) and [here](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/69cebda3e567df1c807a9cb0cda180528f4de091/pallets/assets/src/functions.rs#L932) to explain how it works.     
   - The commitment verification protocol is an underly mechanism, which is a newest research result of Dante. It provides an absolute cryptographic way to make verifications for omniverse operations, in which malicious things could be found out determinedly.  
 
-- The OSC(Omniverse Swap Component) is a direct swap platform for exchanges of Omniverse tokens. The calculation of the o-transaction amount is done by an O-AMM model we create. The details of the underlying mechanisms can be found in the [Principle of Omniverse-AMM](). An omniverse swap operation can be initiated based on the O-DLT. OSC is implemented as a substrate pallet, and a mechanism similar to *abstract account smart contract* is made out to operate an abstract account for the omniverse swap along with the substrate consensus.
+- The OSC(Omniverse Swap Component) is a direct swap platform for exchanges of Omniverse tokens. The calculation of the o-transaction amount is done by an O-AMM model we create. The details of the underlying mechanisms can be found in the [Principle of Omniverse-AMM](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/docs/Principle%20of%20Omniverse%20AMM.md). An omniverse swap operation can be initiated based on the O-DLT. OSC is implemented as a substrate pallet, and a mechanism similar to *abstract account smart contract* is made out to operate an abstract account for the omniverse swap along with the substrate consensus.
 
 - The bottom is the off-chain synchronizer layer. The synchronizer is a very light off-chain procedure, and it just listens to the Omniverse events happening on-chain and makes the information synchronization. As everything in Omniverse paradigm is along with a commitment(signature for instance) and is verified by cryptographic algorithms, there's no need to worry about synchronizers doing malicious things. So the off-chain part of O-DLT is indeed trust-free. Everyone can launch a synchronizer to get rewards by helping synchronize information. The detailed steps can be found in the next chapter.  
 
@@ -131,7 +131,7 @@ The two roles might be where the attack happens:
 
 #### Demos
 - We have provide a [demo video](https://o20k.s3.us-west-2.amazonaws.com/omniverse-swap.mp4) to explain how O-DLT works.
-- We also provide a [manually trying tutorial]()
+- We also provide a [manually trying tutorial](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/docs/README.md)
 
 ### Ecosystem Fit
 
@@ -149,115 +149,113 @@ The above components can be uses as single component for all developers of Polka
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Shawn Zheng
+  - GitHub: https://github.com/xiyu1984
+  - Email: xiyuzheng1984@gmail.com
+- Members:
+  - George Huang
+    - GitHub: https://github.com/virgil2019
+    - Email: hht2015ily@gmail.com
+  - Kay Lin
+    - GitHub: https://github.com/kay404
+    - Email: kay20475@gmail.com
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Shawn Zheng
+- **Contact Email:** xiyuzheng1984@gmail.com
+- **Website:** https://dantenetwork.notion.site/Dante-Network-37b3fb6b70a845ecb4f6bc9d0f23229b
+- **Twitter:** https://twitter.com/DanteNetwork 
+- **Medium:** https://dante-network.medium.com/ 
+- **Telegram:** https://t.me/DanteNetworkEN 
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** 5001 BEACH ROAD #07-37, Golden Mile Complex, Singapore
+- **Registered Legal Entity:** Kvanace Technology Foundation Ltd.
 
 ### Team's experience
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past. 
-
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+We are Dante Network team and our team is composed of several skilled Web3 geeks, and some of us have more than 10 years of technology working experience.  
+We have got several hackathon rewards, especially the first prize in the Polkadot Asian Hackathon in 2022 summer.  
+We have finished the first step of Dante Network granted by Web3 Foundation. Details can be found [here](https://github.com/w3f/Grants-Program/#pencil-process) and [here](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/Dante_Network_milestone_2.md).  
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/Omniverse-Web3-Labs/  
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/<team_member_1>
-- https://github.com/<team_member_2>
-
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/<person_1>
-- https://www.linkedin.com/<person_2>
-
+- https://github.com/xiyu1984
+- https://github.com/virgil2019
+- https://github.com/kay404
 
 ## Development Status :open_book:
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
+Before apply for this grant, we have done some neccessary researches and built some prototypes to verify them.  
+  - [Simulation of Omniverse DLT on Substrate Pallets](https://github.com/Omniverse-Web3-Labs/omniverse-swap)
+  - [Off-Chain Simulation of O-AMM mathematic model](https://github.com/Omniverse-Web3-Labs/o-amm)
+  - [On-Chain Simulation of O-AMM mathematic model](https://github.com/Omniverse-Web3-Labs/O-AMM-ParaSim)
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+After the simulation, we believe that the Omniverse DLT is achievable on Polkadot and other chains.  
 
 ## Development Roadmap :nut_and_bolt:
-
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
-
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 4 months
+- **Full-Time Equivalent (FTE):**  3 FTE
+- **Total Costs:** 30,000 USD. 
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 Example — O-DLT for Substrate Pallet, Solidity smart contract 
 
-- **Estimated duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
+- **Estimated duration:** 2 month
+- **FTE:**  3
+- **Costs:** 15,000 USD
 
 > :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one. 
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0a.** | License | GPLv3 |
+| **0b.** | Documentation | - We will provide docs to explain how O-DLT works in a high-level <br> - We will provide dev docs to explain how to develop an O-DLT component in Substrate Pallet/solidity smart contract <br> - We will provide tutorial docs to explain how to use it |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| 1. | Substrate module: X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Substrate module: Y | The Y Substrate module will... |
-| 3. | Substrate module: Z | The Z Substrate module will... |
-| 4. | Substrate chain | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 5. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
-| 6. | Smart contracts: ... | We will deliver a set of ink! smart contracts that will...
+| 0d. | Article | We will publish an **article** that explains what was done/achieved in this milestone as part of the grant. |
+| 1. | Substrate module: omniverse assets | We will create a Substrate module that will manage the Omniverse tokens, which will be derived from standard `pallet assets` |
+| 2. | Substrate module: omniverse protocol | We will create a Substrate module that will manage the underlying omniverse functions like omniverse account, omniverse signature, omniverse verification, etc. |
+| 3. | Substrate chain | Modules omniverse assets, protocol of our custom chain will interact in such a way that can make creation, omniverse mint, burn, and transferring for o-tokens |
+| 4. | Solidity Smart Contracts for Moonbeam | We will create the fully O-DLT protocol in solidity tech stack for Moonbeam. It will have the same functions as in `Substrate Pallets` |
+| 5. | Off-Chain Tools: Operate the o-tokens | We will provide off-chain tools to operate o-tokens for both `Substrate Pallets` and `Solidity Smart Contracts for Moonbeam` |
 
+### Milestone 2 Example — Ink! tech stack and Omniverse Swap
 
-### Milestone 2 Example — Additional features
+- **Estimated Duration:** 2 month
+- **FTE:**  3
+- **Costs:** 15,000 USD
 
-- **Estimated Duration:** 1 month
-- **FTE:**  1,5
-- **Costs:** 8,000 USD
-
-...
-
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | GPLv3 |
+| **0b.** | Documentation | - We will provide docs to explain how the Omniverse Swap based on O-DLT works in a high-level <br> - We will provide dev docs to explain how to develop an O-DLT component in `Ink!` smart contract <br> - We will provide tutorial docs to explain how to use the omniverse swap |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) to run Synchronizers along with the documentation of the setup. |
+| 0e. | Article | We will publish an **article** that explains what was done/achieved in this milestone as part of the grant. |
+| 1. | Substrate module: swap | We will create a Substrate module that will make exchanges for different o-tokens. |
+| 2. | Substrate chain | Modules omniverse assets, protocol & swap of our custom chain will interact in such a way that can make swaps between two different kind of o-tokens, user can add liquidity themselves, the O-AMM model can be calculated off-chain and verified on-chain. |
+| 3. | Ink! smart contract implementation | We will create the fully O-DLT protocol in `Ink!` tech stack. It will have the same functions as in `Substrate Pallets` and solidity in Moonbeam |
+| 4. | Off-Chain Synchronizer | We will provide the source code and the executable program of the off-chain synchronizer. |
 
 ## Future Plans
 
-- Firstly, we will make out a mechanism similar to abstract account smart contract to make omniverse tokens absolutely compatible to current native and ERC20/721 like tokens so that o-tokens on Polkadot/kusama can exchange with current tokens.  
-- Secondly, we will make the token of Dante an omniverse so that it be better to integrate with the inter-operability functions of the Dante Network.    
-
-## Referral Program (optional) :moneybag: 
-
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- Firstly, we will make out a mechanism similar to abstract account smart contract to make omniverse tokens absolutely compatible to current native and ERC20/721 like tokens so that o-tokens on Polkadot/kusama can exchange with current tokens.
+- Secondly, we will provide a mechanism to make omniverse tokens exchange with current native and ERC20/721 like tokens in other DEX like Uniswap. 
+- Thirdly, we will make the token of Dante an omniverse so that it be better to integrate with the inter-operability functions of the Dante Network.    
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+Firstly, we really appriciate the help and support we have got from Web3 Foundation, with which we have completed the first steps of Dante Network.  
 
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
+Secondly, we want to report some new progresses and plans of Dante Network.
+- In one side, Dante's token will base on O-DLT, and we believe it will be a brand-new asset paradigm.  
+- In another side, we are trying to make more steps be deterministic when interactions happen between heterougeous consensys spaces. We have found a multi-layer gaming model that may provide a higher security and more efficiency. Maybe we will apply another grant for it after we finish the detailed designation.  
 
-- Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
-- Previous grants you may have applied for.
+Thirdly, as always, we highly endorse the philosophy of the Web3 Foundation. We are continuing to build more and deeper on Polkadot.   
