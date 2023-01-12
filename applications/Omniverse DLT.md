@@ -208,7 +208,7 @@ After the simulation, we believe that the Omniverse DLT is achievable on Polkado
 - **Full-Time Equivalent (FTE):**  3 FTE
 - **Total Costs:** 30,000 USD. 
 
-### Milestone 1 — O-DLT for Substrate Pallet, Solidity smart contract 
+### Milestone 1 — O-DLT: Substrate Pallet and Solidity smart contract
 
 - **Estimated duration:** 2 month
 - **FTE:**  3
@@ -250,14 +250,14 @@ After the simulation, we believe that the Omniverse DLT is achievable on Polkado
 
 - Firstly, we will make out a mechanism similar to abstract account smart contract to make omniverse tokens absolutely compatible to current native and ERC20/721 like tokens so that o-tokens on Polkadot/kusama can exchange with current tokens.
 - Secondly, we will provide a mechanism to make omniverse tokens exchange with current native and ERC20/721 like tokens in other DEX like Uniswap. 
-- Thirdly, we will make the token of Dante an omniverse so that it be better to integrate with the inter-operability functions of the Dante Network.    
+- Thirdly, we will make the token of Dante omniverse so that it will be better to integrate with the inter-operability functions of the Dante Network.    
 
 ## Additional Information :heavy_plus_sign:
 
 Firstly, we really appriciate the help and support we have got from Web3 Foundation, with which we have completed the first steps of Dante Network.  
 
 Secondly, we want to report some new progresses and plans of Dante Network.
-- In one side, Dante's token will base on O-DLT, and we believe it will be a brand-new asset paradigm.  
-- In another side, we are trying to make more steps be deterministic when interactions happen between heterougeous consensys spaces. We have found a multi-layer gaming model that may provide a higher security and more efficiency. Maybe we will apply another grant for it after we finish the detailed designation.  
+- On one side, Dante's token will base on O-DLT, and we believe it will be a brand-new asset paradigm.  
+- On another side, we are trying to make more steps be deterministic when interactions happen between heterogeneous consensus spaces. We have found a multi-layer gaming model that may provide higher security and more efficiency. Maybe we will apply for another grant after we finish the detailed designation.  
 
 Thirdly, as always, we highly endorse the philosophy of the Web3 Foundation. We are continuing to build more and deeper on Polkadot.   
