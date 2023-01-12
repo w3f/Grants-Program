@@ -96,7 +96,7 @@ Generally, this project is composited with the O-DLT components, a swap componen
     - These synchronizers will rush to carry this message, because whoever submits to the destination chain first will get a reward. There's no will for independent synchronizers to do evil, because they just carry `A`'s o-transaction data. 
     - Finally, the O-DLT smart contracts/pallets deployed on other chains will all receive the o-transaction data, verify the signature and execute it when the **waiting time is up**. After execution, the underlying `account nonce` will add 1. Now all the `account nonce` of account `A` will be $k+1$.  
 
-We have provide a detailed [proof for the **ultimate consistency**](https://github.com/xiyu1984/o-amm/blob/main/docs/Proof-of-ultimate-consistency.md) for better understanding of the **synchronization** mechanisms. 
+We have provide a detailed [proof for the **ultimate consistency**](https://github.com/Omniverse-Web3-Labs/o-amm/blob/main/docs/Proof-of-ultimate-consistency.md) for better understanding of the **synchronization** mechanisms. 
 
 #### Attack Vector Analysis
 According to the [above](#implementations), there are two roles: 
@@ -179,7 +179,7 @@ The above components can be uses as single component for all developers of Polka
 
 We are Dante Network team and our team is composed of several skilled Web3 geeks, and some of us have more than 10 years of technology working experience.  
 We have got several hackathon rewards, especially the first prize in the Polkadot Asian Hackathon in 2022 summer.  
-We have finished the first step of Dante Network granted by Web3 Foundation. Details can be found [here](https://github.com/w3f/Grants-Program/#pencil-process) and [here](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/Dante_Network_milestone_2.md).  
+We have finished the first step of Dante Network granted by Web3 Foundation. Details can be found [here](https://github.com/w3f/Grants-Program/blob/master/applications/Dante_Network.md) and [here](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/deliveries/Dante_Network_milestone_2.md).  
 
 ### Team Code Repos
 
@@ -261,3 +261,4 @@ Secondly, we want to report some new progresses and plans of Dante Network.
 - On another side, we are trying to make more steps be deterministic when interactions happen between heterogeneous consensus spaces. We have found a multi-layer gaming model that may provide higher security and more efficiency. Maybe we will apply for another grant after we finish the detailed designation.  
 
 Thirdly, as always, we highly endorse the philosophy of the Web3 Foundation. We are continuing to build more and deeper on Polkadot.   
+ 
