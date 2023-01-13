@@ -225,8 +225,7 @@ After the simulation, we believe that the Omniverse DLT is achievable on Polkado
 | 1. | Substrate module: omniverse assets | We will create a Substrate module that will manage the Omniverse tokens, which will be derived from standard `pallet assets` |
 | 2. | Substrate module: omniverse protocol | We will create a Substrate module that will manage the underlying omniverse functions like omniverse account, omniverse signature, omniverse verification, etc. |
 | 3. | Substrate chain | Modules omniverse assets, protocol of our custom chain will interact in such a way that can make creation, omniverse mint, burn, and transferring for o-tokens |
-<!-- | 4. | Solidity Smart Contracts for Moonbeam | We will create the fully O-DLT protocol in solidity tech stack for Moonbeam. It will have the same functions as in `Substrate Pallets` | -->
-| 4. | Off-Chain Tools: Operate the o-tokens | We will provide off-chain tools to operate o-tokens for both `Substrate Pallets` and `Solidity Smart Contracts for Moonbeam` |
+| 4. | Off-Chain Tools: Operate the o-tokens | We will provide off-chain tools to operate o-tokens for both `Substrate Pallets` |
 
 ### Milestone 2 — Ink! tech stack and Omniverse Swap
 
