@@ -3,7 +3,7 @@
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g. `![](image.png)` instead of `<img>`). 
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
-- **Team Name:** Omniverse Labs(Formerly Dante Team)
+- **Team Name:** Omniverse Labs (Formerly Dante Team)
 - **Payment Address:** 14yr1tovebKbRbxggduV1vbTPtRQtgzTXh9tdZ34w3pGbc4W (Polkadot (Statemint) USDT)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
@@ -32,7 +32,7 @@ O-DLT works at an **application level**, which means everything related is proce
 In this application, three forms implementation of the Omniverse DLT will be provided. 
 - It will be implemented as a `substrate pallet`, which can be used as a basic component in any `Substrate Parachain` project. The omniverse assets part will derive from `pallet assets`.
 - It will be implemented as `ink!` smart contracts, which is an upgrade to the current FT/NFT smart contract for `Substrate Ink!`.
-- It will be implemented as `solidity` smart contracts(for Moonbeam), which is an upgrade to the current ERC20/ERC721 smart contract.  
+- It will be implemented as `solidity` smart contracts(for Moonbeam), which is an upgrade to the current ERC20/ERC721 smart contract. **This is not part of this grant, but we will still provide it**.  
 
 Besides being used for Dante's token, everyone in Polkadot can use O-DLT as a component to build their own project if they want their tokens to be global.  
 
@@ -71,7 +71,7 @@ Generally, this project is composited with the O-DLT components, a swap componen
     - The `nonce` is very important, which is the key point to **synchronize** the states globally, which will be described later.  
     - The `nonce` appears at two places, one is `nonce in o-transaction` data as above, the other is `account nonce` maintained by on-chain O-DLT pallets/smart-contracts([example codes](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/69cebda3e567df1c807a9cb0cda180528f4de091/pallets/omni-protocol/src/lib.rs#L61)).  
     - The `nonce in o-transaction` data will be verified according to the `account nonce` managed by on-chain `Omniverse DLT` pallets/smart-contracts. Some [example codes](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/69cebda3e567df1c807a9cb0cda180528f4de091/pallets/omni-protocol/src/functions.rs#L39) can be found here.  
-  - The core operations of the O-DLT are `omniverse_transfer`, `omniverse_mint`, and `omniverse_burn`, in which the first thing is verifying the signature of the o-transaction data. Then the operation will be added to a pre-execution cache, and **wait a user-defined time** until being executed. The off-chain synchronizer will carry the o-transaction data to other chains. If another o-transaction data with the same nonce and the same sender account is received within the waiting time, and if there's any sector different, a malicious thing happens and the related account will be punished. We provide some example codes [here](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/69cebda3e567df1c807a9cb0cda180528f4de091/pallets/assets/src/functions.rs#L877) and [here](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/69cebda3e567df1c807a9cb0cda180528f4de091/pallets/assets/src/functions.rs#L932) to explain how it works.     
+  - The core operations of the O-DLT are `omniverse_transfer`, `omniverse_mint`, and `omniverse_burn`, in which the first thing is verifying the signature of the o-transaction data. Then the operation will be added to a pre-execution cache, and **wait for a fixed time** until being executed. The waiting time will be able to be settled by the deployer and this will be determined until fully tested, in addition, we will provide the least recommended time. The off-chain synchronizer will carry the o-transaction data to other chains. If another o-transaction data with the same nonce and the same sender account is received within the waiting time, and if there's any sector different, a malicious thing happens and the related account will be punished. We provide some example codes [here](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/69cebda3e567df1c807a9cb0cda180528f4de091/pallets/assets/src/functions.rs#L877) and [here](https://github.com/Omniverse-Web3-Labs/omniverse-swap/blob/69cebda3e567df1c807a9cb0cda180528f4de091/pallets/assets/src/functions.rs#L932) to explain how it works.     
   - The commitment verification protocol is an underly mechanism, which is a newest research result of Dante. It provides an absolute cryptographic way to make verifications for omniverse operations, in which malicious things could be found out determinedly.  
 
 - The OSC(Omniverse Swap Component) is a direct swap platform for exchanges of Omniverse tokens. The calculation of the o-transaction amount is done by an O-AMM model we create. The details of the underlying mechanisms can be found in the [Principle of Omniverse-AMM](https://github.com/Omniverse-Web3-Labs/Omniverse-DLT-Introduction/blob/main/docs/Principle%20of%20Omniverse%20AMM.md). An omniverse swap operation can be initiated based on the O-DLT. OSC is implemented as a substrate pallet, and a mechanism similar to *abstract account smart contract* will be made out to operate an abstract account for the omniverse swap along with the substrate consensus.
@@ -123,7 +123,7 @@ The two roles might be where the attack happens:
   - **Response strategy**:
     - As we mentioned above, the synchronizers will deliver `ot-P-ab` to the O-DLT on Ethereum and deliver `ot-E-ac` to the O-DLT on Polkadot because they are different although with the same nonce. The synchronizer who submits the o-transaction first will be rewarded as the signature is valid.
     - Both the O-DLTs on Polkadot and Ethereum will find that `A` did cheating after they received `ot-E-ac` and `ot-P-ab` respectively as the signature of `A` is non-deniable.  
-    - We mentioned above that the execution of an o-transaction will not be done immediately and instead there needs to be an user-defined waiting time. So the `double spend attack` caused by `A` won't succeed.
+    - We mentioned above that the execution of an o-transaction will not be done immediately and instead there needs to be an fixed waiting time. So the `double spend attack` caused by `A` won't succeed.
     - There will be many synchronizers waiting for delivering o-transactions to get rewards. So although it's almost impossible that a **common user** can submit two o-transactions to two chains, none of the synchronizers deliver the o-transactions successfully because of a network problem or something else, we still provide a solution:  
       - The synchronizers will connect to several native nodes of every public chain to avoid the malicious native nodes.
       - If it indeed happened that all synchronizers' network break, the o-transaction will be synchronized when the network recovered. If the waiting time is up and the cheating o-transaction has been executed, we will revert it from where the cheating happens according to the `nonce in o-transaction` and `account nonce`. 
@@ -141,7 +141,7 @@ We are trying to provide an infrastructure to help all assets on Polkadot/kusama
 We will make the O-DLT an open source-protocol so that everyone in Polkadot/Kusama ecosystem can use it to publish their own omniverse tokens all by themselves. We will provide the following things to Polkadot/Kusama:  
 - O-DLT `substrate pallets`
 - O-DLT `ink! smart contracts`
-- O-DLT `solidity smart contracts` for Moonbeam
+- O-DLT `solidity smart contracts` for Moonbeam. **This is not part of this grant and we will still provide it**.  
 - O-Swap `substrate pallets`
 
 The above components can be uses as single component for all developers of Polkadot/kusama.  
@@ -208,7 +208,7 @@ After the simulation, we believe that the Omniverse DLT is achievable on Polkado
 - **Full-Time Equivalent (FTE):**  3 FTE
 - **Total Costs:** 30,000 USD. 
 
-### Milestone 1 — O-DLT: Substrate Pallet and Solidity smart contract
+### Milestone 1 — O-DLT: Substrate Pallet
 
 - **Estimated duration:** 2 month
 - **FTE:**  3
@@ -219,14 +219,14 @@ After the simulation, we believe that the Omniverse DLT is achievable on Polkado
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | GPLv3 |
-| **0b.** | Documentation | - We will provide docs to explain how O-DLT works in a high-level <br> - We will provide dev docs to explain how to develop an O-DLT component in Substrate Pallet/solidity smart contract <br> - We will provide tutorial docs to explain how to use it |
+| **0b.** | Documentation | - We will provide docs to explain how O-DLT works in a high-level <br> - We will provide dev docs to explain how to develop an O-DLT component in Substrate Pallet <br> - We will provide tutorial docs to explain how to use it |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article** that explains what was done/achieved in this milestone as part of the grant. |
 | 1. | Substrate module: omniverse assets | We will create a Substrate module that will manage the Omniverse tokens, which will be derived from standard `pallet assets` |
 | 2. | Substrate module: omniverse protocol | We will create a Substrate module that will manage the underlying omniverse functions like omniverse account, omniverse signature, omniverse verification, etc. |
 | 3. | Substrate chain | Modules omniverse assets, protocol of our custom chain will interact in such a way that can make creation, omniverse mint, burn, and transferring for o-tokens |
-| 4. | Solidity Smart Contracts for Moonbeam | We will create the fully O-DLT protocol in solidity tech stack for Moonbeam. It will have the same functions as in `Substrate Pallets` |
-| 5. | Off-Chain Tools: Operate the o-tokens | We will provide off-chain tools to operate o-tokens for both `Substrate Pallets` and `Solidity Smart Contracts for Moonbeam` |
+<!-- | 4. | Solidity Smart Contracts for Moonbeam | We will create the fully O-DLT protocol in solidity tech stack for Moonbeam. It will have the same functions as in `Substrate Pallets` | -->
+| 4. | Off-Chain Tools: Operate the o-tokens | We will provide off-chain tools to operate o-tokens for both `Substrate Pallets` and `Solidity Smart Contracts for Moonbeam` |
 
 ### Milestone 2 — Ink! tech stack and Omniverse Swap
 
@@ -243,7 +243,7 @@ After the simulation, we believe that the Omniverse DLT is achievable on Polkado
 | 0e. | Article | We will publish an **article** that explains what was done/achieved in this milestone as part of the grant. |
 | 1. | Substrate module: swap | We will create a Substrate module that will make exchanges for different o-tokens. |
 | 2. | Substrate chain | Modules omniverse assets, protocol & swap of our custom chain will interact in such a way that can make swaps between two different kind of o-tokens, user can add liquidity themselves, the O-AMM model can be calculated off-chain and verified on-chain. |
-| 3. | Ink! smart contract implementation | We will create the fully O-DLT protocol in `Ink!` tech stack. It will have the same functions as in `Substrate Pallets` and solidity in Moonbeam |
+| 3. | Ink! smart contract implementation | We will create the fully O-DLT protocol in `Ink!` tech stack. It will have the same functions as in `Substrate Pallets` |
 | 4. | Off-Chain Synchronizer | We will provide the source code and the executable program of the off-chain synchronizer. |
 
 ## Future Plans
