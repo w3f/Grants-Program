@@ -18,6 +18,10 @@ We plan to give constant support to this wallet and open Telegram and Discord ch
 - Maintain the wallet's decentralization and open-source nature, ensuring its trustworthiness and security.
 - Aim to cover more than 90% of the wallet's main functionalities to provide a comprehensive user experience.
 
+### Security
+
+The wallet will implement the Keyring concept, which is the core of the secret storing and account management system in MetaMask. This approach ensures that private keys are stored locally on users' devices using browser built-in storage capabilities such as IndexedDB or WebSQL, making them accessible only to the user. Additionally, we will use encryption techniques similar to MetaMask, such as PBKDF2 iteration and AES-GCM mode, to provide an extra layer of security for the private keys. This wallet will also implement the same feature that Polkadot's extension has, which allows users to see the availability of different parachains before they make a transfer. This feature will provide users with an added layer of security and peace of mind, as they can ensure that their transfer will go through smoothly.
+
 ### Specifications
 
 In a first approach, we will be using the following technologies: React, Typescript, Polkadot API and Ethers.js. The supported browsers will be: Chrome and Firefox. The default networks will be: Astar, Shiden, Shibuya (testnet), Moonbeam, Moonriver, Moonbase Alpha (testnet), Polkadot and Kusama. The default tokens will be: ASTR, SDN, SBY, GLMR, MOVR, DEV, DOT and KSM.
