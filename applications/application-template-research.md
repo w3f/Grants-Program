@@ -99,14 +99,14 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 If you've already started working on your project or it is part of a larger project, please provide a link and a description of the research here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/rfp-proposal) (requests for proposal),
+- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
 - academic publications relevant to the problem,
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation.
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the research development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories, including research [here](../docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the deliverable we should expect in as much detail as possible_, plus how we can verify that deliverable. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
+This section should break the research development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories, including research [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the deliverable we should expect in as much detail as possible_, plus how we can verify that deliverable. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
 Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
 
