@@ -586,4 +586,6 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Runtime Verification](https://runtimeverification.com/) | [KMIR: the K semantics of MIR](rv-kmir.md)                                                                                                                                       | [GitHub](https://github.com/runtimeverification) | ☐          |        ☐       |      ☐     |
 | [Me Protocol](https://meprotocol.io/) | [Me Protocol](MeProtocol.md)                                                                                                                                       | [GitHub](https://github.com/Me-Protocol) | ☐          |        ☐       |      ☐     |
 | [Comrade Coop](https://comrade.coop/) | [Validated Streams](validated-streams.md)                                                                                                                                       | [GitHub](https://github.com/comrade-coop) | ☐          |        ☐       |      ☐     |
+| [Blockcoders](http://blockcoders.io/) | [Cross-chain Wallet - XCW](cross-chain-wallet.md)                                                                                                                                       | [GitHub](https://github.com/blockcoders) | ☐          |        ☐       |      ☐     |
+
 
