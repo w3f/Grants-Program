@@ -164,8 +164,8 @@ The main focus on this milestone will be to allow users to transfer assets betwe
 | 0c. | Testing Guide | Unit test and end to end tests will cover the core functions to ensure everything works as expected. The documentation will have an example on how to run these tests. |
 | 0d. | Docker | A Dockerfile will be provided that will be able to start the node and run tests for all the functionality delivered within this milestone. |
 | 1. | Custom tokens | Enable users to add custom tokens and networks/chains to the wallet. |
-| 2. | Mesasges EVM<>WASM | Provide the ability to sign messages for EVM and WASM accounts. |
-| 3. | Transfer EVM<>WASM | Allow users to transfer assets between their own EVM and WASM accounts on the same chain. |
+| 2. | Mesasges EVM - WASM | Provide the ability to sign messages for EVM and WASM accounts. |
+| 3. | Transfer EVM - WASM | Allow users to transfer assets between their own EVM and WASM accounts on the same chain. |
 | 4. | Transaction history | Show users their transaction history for both EVM and WASM accounts. |
 | 5. | Explorer link | Provide links to explorer pages for enhanced transparency and accountability. |
 
