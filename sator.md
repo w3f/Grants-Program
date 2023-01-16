@@ -18,6 +18,8 @@ Sator project concerns technology infrastructure to onramp global content to web
 
 Sator infrastructure focuses on solving friction for content rights holders and audiences to align interests and benefit from Polkadot in-app wallet functionality. It is important to create this solution to actually onboard content fully to web3 ownership models especially in the case of large slates of content. 
 
+An NFT marketplace focused on three key areas: interoperability, privacy, and usability. Our core goal is to give users a place to buy, sell, trade, and view all of their NFTs in a single, safe space. We believe that our attention to detail on the frontend will make a huge difference to non-native users and our privacy optionality will retain power users. 
+
 
 ### Project Details
 
@@ -91,12 +93,12 @@ Isla Perfito https://www.linkedin.com/in/islarose/
 
 - **Total Estimated Duration:** 5 months
 - **Full-Time Equivalent (FTE):**  Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 4 FTE)
-- **Total Costs:** Requested amount in USD for the whole project: $45,000 USD. Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Costs:** Requested amount in USD for the whole project: $30,000 USD. Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
 
 ### Milestone 1 — Polkadot Wallet Integration
 
-- **Estimated duration:** 2 months
-- **Costs:** 15,000 USD
+- **Estimated duration:** 1 month
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -116,7 +118,7 @@ Isla Perfito https://www.linkedin.com/in/islarose/
 ### Milestone 2 — Add DOT functionality to NFT Marketplace
 
 - **Estimated Duration:** 3 months
-- **Costs:** 30,000 USD
+- **Costs:** 20,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -129,7 +131,7 @@ Isla Perfito https://www.linkedin.com/in/islarose/
 | 1. | Overview |  In this milestone we will complete the integration of Polkadot NFT functionality which allows for collecting Polkadot NFTs from our marketplace nft.sator.io |
 | 2. | React Package Upgrades | We will upgrade NFT Marketplace react packages and wallet adapters in order to support Polkadot NFTs in our marketplace. Without react package upgrades, this could otherwise break the marketplace. |
 | 2a. | Polkadot.js Extension | Install Polkadot (.js) Extension|
-| 3. | Smart contract for NFT Marketplace | We will deploy our custonm NFT marketplace smart contract by using a matcher, Wasm and metadata.json files allowing for DOT NFTs to be traded on the Sator NFT marketplace, improving the marketplace interoperability (currently, Sator NFT marketplace only supports SOL NFTS.)  |
+| 3. | Smart contract for NFT Marketplace | We will deploy our custonm RUST NFT marketplace smart contract by using a matcher, Wasm and metadata.json files allowing for DOT NFTs to be traded on the Sator NFT marketplace, improving the marketplace interoperability (currently, Sator NFT marketplace only supports SOL NFTS.)  |
 | 4. | Polkadot-JS UI | Browser based wallet used with Polkadot-JS Extension: We will deliver sample wallet UI using the Polkadot-JS UI for browser based wallet integration to Sator NFT Marketplace for users to exchange and trade DOT NFTs. |
 
 
