@@ -2,7 +2,7 @@
 
 - **Team Name:** Asyoume inc (点道为址科技有限公司)
 - **Payment Address:** 1PE3N5KmEdhE561i5jRTxeQidSuQGrGtLj912GFMw4vxXMG (aUSD)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 
 ## Project Overview :page_facing_up:
@@ -135,7 +135,22 @@ Team github accounts
 - **Full-Time Equivalent (FTE):**  1 FTE
 - **Total Costs:** 6000 USD
 
-### Milestone 1 — Decentralized real-time communication base on matrix 
+### Milestone 1 — Implement substrate runtime and core modules
+
+- **Estimated duration:** 1 month
+- **FTE:**  1 FTE
+- **Costs:** 1500 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article | We will publish an article and a tutorial that explains the work done as part of the grant.|
+| 1. | Substrate module: **DAO-entrance** | we create a substrate pallet specifically designed for DAO, which includes the following functions: 1. RoadMap Target Management 2. DAO Share Management 3. Core Team, Association Management 4. Workflow Management (board/task) 5. Financial Management 6. Task reward management 7. Hot-plug voting management 8. Contribution Value, Medal Management 9. Hierarchical Management |
+
+### Milestone 2 — Decentralized real-time communication base on matrix 
 
 - **Estimated duration:** 1 month
 - **FTE:**  1 FTE
@@ -151,21 +166,6 @@ Team github accounts
 | 1. | DAO desktop and app | We will develop a window/mac/list/ios/android client based on flutter, which includes the following functions: 1. polkadot wallet login. 2. messaging. 3. end-to-end encryption. 4. voice and video calls. 5. matrix node server. |
 | 2. | Tests | End to end testing of window/mac/list/ios/android full platform to ensure application security and stability |
 
-### Milestone 2 — Implement substrate runtime and core modules
-
-- **Estimated duration:** 1 month
-- **FTE:**  1 FTE
-- **Costs:** 1500 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article and a tutorial that explains the work done as part of the grant.|
-| 1. | Substrate module: **DAO-entrance** | we create a substrate pallet specifically designed for DAO, which includes the following functions: 1. RoadMap Target Management 2. DAO Share Management 3. Core Team, Association Management 4. Workflow Management (board/task) 5. Financial Management 6. Task reward management 7. Hot-plug voting management 8. Contribution Value, Medal Management 9. Hierarchical Management |
-| 2. | Tests | End to end testing of window/mac/list/ios/android full platform to ensure application security and stability |
 
 ### Milestone 3 — DAO App/Desktop
 
@@ -181,6 +181,7 @@ Team github accounts
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article and a tutorial that explains the work done as part of the grant.|
 | 1. | DAO UI on native flutter View | A flutter navive module 1. RoadMap Target Management 2. DAO Share Management 3. Core Team, Association Management 4. Workflow Management (board/task) 5. Financial Management 6. Task reward management 7. Hot-plug voting management 8. Contribution Value, Medal Management 9. Hierarchical Management |
+| 2. | Tests | End to end testing of window/mac/list/ios/android full platform to ensure application security and stability |
 
 ### Milestone 4 — Dapp rendering engine and ink! smart contract
 
