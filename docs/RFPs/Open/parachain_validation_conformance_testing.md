@@ -21,6 +21,10 @@ There are probably a lot of other limits as well. To ensure that all node implem
 to have conformance tests. These should include basic execution of valid wasm files over to complex wasm files that ensure that the compilation/preparation 
 stays in the given limits and/or helps to define these limits properly across different implementations. 
 
+**Useful resources:**
+- [The Polkadot Parachain Host Implementers' Guide](https://paritytech.github.io/polkadot/book/index.html) 
+- [Pre-checking for PVF Compilation time](https://github.com/paritytech/polkadot/issues/3211) 
+
 ## Deliverables :nut_and_bolt:
 
 - Basic conformance tests that are running valid wasm files
