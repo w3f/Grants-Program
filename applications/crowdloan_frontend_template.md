@@ -113,6 +113,7 @@ The Jamstack approach allows the community to use virtually every popular way of
 - AWS S3 (and similar solutions)
 
 ### Easy to get started
+
 We’re assuming that the approach is also a familiar way for the Parity community to get started with their project pages. It’s as simple as fork, customize, deploy.
 
 For parts of the community who are less comfortable with the Jamstack approach we will provide a Webflow template as well.
@@ -145,11 +146,11 @@ For parts of the community who are less comfortable with the Jamstack approach w
 | 0a. | License | MIT or TBD                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | 0b. | Documentation | For both approaches (Webflow & Jamstack) we provide how-to guides. Jamstack will be documented in the Github repo.                                                                                                                                                                                                                                                                                                                                           |
 | 0c. | Article | We will publish an article presenting the templates and how to use them.                                                                                                                                                                                                                                                                                                                                                                                     |
-| 1a. | Benchmarking | Design research of existing Crowdloan pages and other one pages designs, like Github project pages templates. <br>This will allow us to synthesize viable options of the page designs                                                                                                                                                                                                                                                                        |
-| 1b. | Design Direction Prototype | Aiming to create as many medium to high-fidelity dd prototypes as possible that allows the Grants team and the community to have an input on the design direction<br>The aim is to have the prototypes at 25%-50% completeness, to see major components/features and the general design direction. This way we don't waste time on dismissed design directions.<br>The designs should follow good practices in general without requiring additional research |
+| 1a. | Benchmarking | Design research of existing Crowdloan pages and other one pages designs, like Github project pages templates. <br />This will allow us to synthesize viable options of the page designs                                                                                                                                                                                                                                                                        |
+| 1b. | Design Direction Prototype | Aiming to create as many medium to high-fidelity dd prototypes as possible that allows the Grants team and the community to have an input on the design direction<br />The aim is to have the prototypes at 25%-50% completeness, to see major components/features and the general design direction. This way we don't waste time on dismissed design directions.<br />The designs should follow good practices in general without requiring additional research |
 | 1c. | Repo Setup | Repo setup incl. base libraries/frameworks, initial technical documentation. Undesigned base scaffold. Allows the implementation to be simplified by forking                                                                                                                                                                                                                                                                                                 |
-| 2. | Jamstack implementation in Gatsby | One (1) chosen design direction<br><br>Minimum sections:<br>- Project information<br>- Rewards Schema<br>- Current contributions<br>- Time left in Crowdloan and competition<br>- Contribute CTA<br>- After the Crowdloan<br><br>Implemented as One Page Design                                                                                                                                                                                              |
-| 3. | Webflow implementation | One (1) chosen design direction<br><br>Minimum sections:<br>- Project information<br>- Rewards Schema<br>- Current contributions<br>- Time left in Crowdloan and competition<br>- Contribute CTA<br>- After the Crowdloan<br><br>Implemented as One Page Design                                                                                                                                                                                              |
+| 2. | Jamstack implementation in Gatsby | One (1) chosen design direction<br /><br />Minimum sections:<br />- Project information<br />- Rewards Schema<br />- Current contributions<br />- Time left in Crowdloan and competition<br />- Contribute CTA<br />- After the Crowdloan<br /><br />Implemented as One Page Design                                                                                                                                                                                              |
+| 3. | Webflow implementation | One (1) chosen design direction<br /><br />Minimum sections:<br />- Project information<br />- Rewards Schema<br />- Current contributions<br />- Time left in Crowdloan and competition<br />- Contribute CTA<br />- After the Crowdloan<br /><br />Implemented as One Page Design                                                                                                                                                                                              |
 | 4. | Figma Template Publishing | Allows to use it for other solutions                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 
@@ -159,11 +160,12 @@ For parts of the community who are less comfortable with the Jamstack approach w
 ## Future Plans
 
 When provided with the initial set of templates and their usage instructions, we envision the following:
+
 - Creating a hub repo that also uses a Jamstack approach to give a list of available templates, allowing the community to preview the templates easily and contribute templates or forks to other SSGs in a convenient place
   The hub could also include:
 - Good content practices partially provided by our team of UX writers
-    - FAQs
-    - Tips and Tricks taken from successful Crowdloans
+  - FAQs
+  - Tips and Tricks taken from successful Crowdloans
 
 
 

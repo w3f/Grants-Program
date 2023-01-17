@@ -1,10 +1,9 @@
-# W3F Grant Proposal
+# Setheum HighEnd LaunchPad Crowdsales Module
 
 > This document will be part of the terms and conditions of your agreement and therefore needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines! Lines starting with a `>` (such as this one) can be removed.
 >
 > See the [Grants Program Process](https://github.com/w3f/Grants-Program/#pencil-process) on how to submit a proposal.
 
-- **Project Name:** Setheum HighEnd LaunchPad Crowdsales Module
 - **Team Name:** Setheum Labs
 - **Payment Address:** 3NaU6UHe9MQyb5d2mFS49DJqaWMsuw7NKd (BTC)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
@@ -30,10 +29,10 @@ The idea is to use the grant program to raise funds for deploying our dedicated 
 
 There are four participants in a LaunchPad Crowdsales Protocol, the Campaign Creator, the Campaign Beneficiary, the Crowd/Contributors, and the Governance Council.
 
-* The Campaign Creator is the person who creates the campaign and the project.
-* The Campaign Beneficiary is the person who receives the funds raised.
-* The Crowd/Contributors are the people who contribute to the campaign.
-* The Governance Council is the people who manage the campaign and the protocol.
+- The Campaign Creator is the person who creates the campaign and the project.
+- The Campaign Beneficiary is the person who receives the funds raised.
+- The Crowd/Contributors are the people who contribute to the campaign.
+- The Governance Council is the people who manage the campaign and the protocol.
 
 **How the protocol Works**
 
@@ -94,11 +93,12 @@ Setheum is different in its core governance principle such that it serves as a H
 
 - **Contact Name:** Muhammad-Jibril B.A.
 - **Contact Email:** jbashir52@gmail.com
-- **Website:** https://setheum.xyz
+- **Website:** <https://setheum.xyz>
 
 ### Legal Structure
 
 Not set up yet.
+
 ### Team's experience
 
 I am building the Setheum Network project and all related code works in the organisation. I have a Computer Science degree (currently in my final year of study) and I have been working on Setheum for a few years now. And will be launching this year by God's grace.
@@ -108,15 +108,15 @@ I have previously applied for this grant about 10 months ago (then TERMINATED, t
 
 ### Team Code Repos
 
-- https://github.com/Setheum-Labs
-- https://github.com/Setheum-Labs/Setheum
-- https://github.com/Setheum-Labs/launchpad-crowdsales
+- <https://github.com/Setheum-Labs>
+- <https://github.com/Setheum-Labs/Setheum>
+- <https://github.com/Setheum-Labs/launchpad-crowdsales>
 
-- https://github.com/JBA-Khalifa
+- <https://github.com/JBA-Khalifa>
 
 ### Team LinkedIn Profiles (if available)
 
-- https://www.linkedin.com/in/muhammad-jibril
+- <https://www.linkedin.com/in/muhammad-jibril>
 
 ## Development Status :open_book:
 

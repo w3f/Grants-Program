@@ -14,5 +14,5 @@
 
 ## Checklist
 
-- [ ] I have checked the [open](https://github.com/w3f/General-Grants-Program/tree/master/rfps) and [implemented](https://github.com/w3f/General-Grants-Program/tree/master/rfps/implemented) RFPs to make sure this is not a duplicate.
-- [ ] I have read and followed the [RFP Suggestion instructions](https://github.com/w3f/General-Grants-Program#mailbox_with_mail-request-for-proposals-rfp-suggestions).
+- [ ] I have checked the [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/rfps) to make sure this is not a duplicate.
+- [ ] I have read and followed the [RFP Suggestion instructions](https://github.com/w3f/Grants-Program#mailbox_with_mail-suggest-a-project).

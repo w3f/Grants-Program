@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Nolik
 
-- **Project Name: Nolik
 - **Team Name: Chainify
 - **Payment Address:** 0x9aD97d8605F80003106B0ED7DEe330F064674365 (USDT)
 - **Level: 1
@@ -8,6 +7,7 @@
 ## Project Overview :page_facing_up:
 
 ### Overview
+
 Nolik is a protocol for delivering digital content for web 3.0.
 It allows developers to create applications for formal communication that connect people without any form of censorship or third-party control.
 The protocol design is based on the ServiceLess approach, meaning that no services from third parties are needed for users to communicate.
@@ -18,22 +18,22 @@ Blockchain logic will allow users to create programmable messages rules so they 
 For example, users will be able to create a white list (or black list) of senders which will protect them from spam or irrelevant conversations.
 Another example would be creating rules like accepting messages within a particular block range or if a particular token is attached to the message, etc.
 
-
 ### Project Details
 
 #### The problem we are targeting
+
 The name Nolik stands for No Leak.
-We believe that privacy is a fundamental right of every person and we believe that it should be protected. 
+We believe that privacy is a fundamental right of every person and we believe that it should be protected.
 Unlike privacy-first messaging applications like Signal or Threema, we offer a tool that allows communication without a need to trust an app itself.
 It also allows communication without a permission of a third-party which creates a great foundation on which users can rely and build their tools on top of this ecosystem.
 
-
 #### Technology overview
-Nolik uses a combination of blockchain and IPFS technologies. 
+
+Nolik uses a combination of blockchain and IPFS technologies.
 The user generates an IPFS file with a particular structure on a client-side and broadcasts it to the blockchain network with additional metadata.
 In addition to required information about the transaction (like signature, sender, recipient, etc.) we provide additional information about the message.
 We split the blockchain level and messages level by creating a separate set of encryption keys.
-Blockchain (identity) keypairs stand for token management and messages (accounts) keypairs stand for message encryption. 
+Blockchain (identity) keypairs stand for token management and messages (accounts) keypairs stand for message encryption.
 Users can have several identities (like personal or corporate).
 At the same time, each identity can have multiple accounts (like email addresses).
 Each message is encrypted with a public key of the recipient.
@@ -43,6 +43,7 @@ You can find how the protocol works in detail below.
 The protocol is flexible and allows the creation of various data structures which can fit the needs of any app.
 
 #### Use case example
+
 Nolik protocol could be used for a media service that protects journalists and whistleblowers from political oppression and technological borders like firewalls, blockings, etc.
 The protocol guarantees the delivery of the message through the network due to the absence of a single point of failure.
 A freedom of speech which is guaranteed mathematically.
@@ -51,7 +52,7 @@ This means that behind every post there is nothing but a public key.
 The journalist can prove his identity by publicly attaching the public key to his identity (for example, in social media) and signing some sample data.
 But if a journalist or a whistleblower would like to hide their identity nothing will stop him from doing that.
 By default every message is encrypted.
-It sounds great but there is a potential scalability downside. 
+It sounds great but there is a potential scalability downside.
 To deliver the message to a million people the journalist will have to encrypt the same message million times.
 The journalist can create a separate account which stands for a channel.
 That account is a proxy that delivers the message to the audience.
@@ -63,29 +64,28 @@ On the channel creation stage, the journalist can add a rule that the channel ac
 This approach allows them to deliver the message to an unlimited audience and save tons of resources.
 The same method can be used for creating private or public group conversations.
 
-
 #### The Protocol
 
 Nolik protocol is designed to make trustless communication possible.
 It provides flexibility for developers so they can build their applications on top of the platform.
 
 The protocol allows to:
-* Stay protected from a middleware attack
-* Communicate without servers or service as a third-party
-* Protect messages from unauthorized access with decentralized end-to-end encryption
-* Guarantee that the message was sent at a particular date and time
-* Have a provable immutability of message content, metadata, and the timestamp information
-* Prove that the message was sent by a particular sender
-* Prove that the message was sent to a particular recipient or recipients
-* Make sure that all recipients received the same message at the same time
-* Send messages from multiple senders at the same time
-* Verify the sender and be protected from a phishing attack
-* Attach tokens (like NFTs) to message
-* Use different clients to get access to messages
+- Stay protected from a middleware attack
+- Communicate without servers or service as a third-party
+- Protect messages from unauthorized access with decentralized end-to-end encryption
+- Guarantee that the message was sent at a particular date and time
+- Have a provable immutability of message content, metadata, and the timestamp information
+- Prove that the message was sent by a particular sender
+- Prove that the message was sent to a particular recipient or recipients
+- Make sure that all recipients received the same message at the same time
+- Send messages from multiple senders at the same time
+- Verify the sender and be protected from a phishing attack
+- Attach tokens (like NFTs) to message
+- Use different clients to get access to messages
 
 Each message contains two main parts - the transaction data and the IPFS data.
 The transaction data is additional information that is sent along with required information within a transaction body.
-It contains general metadata about the sender and recipient or recipients of the message. 
+It contains general metadata about the sender and recipient or recipients of the message.
 This information has a specific purpose and requires specific fields to be provided.
 The metadata is validated and checked at a sending stage and if something is wrong will be rejected by miners.
 
@@ -99,7 +99,8 @@ However, to solve this issue users within a community can create services that c
 Another great way to solve this issue would be using FileCoin or similar services to make sure that the recipient will get the message in a longer period.
 
 #### Encryption
-The message encryption is based on the Diffie-Hellman protocol with the ed25519 curve. 
+
+The message encryption is based on the Diffie-Hellman protocol with the ed25519 curve.
 To encrypt the message the sender generates a shared secret with the recipient's public key and her private key.
 At the same time, the recipient generates the same shared secret with the sender's public key and his private key.
 There is no problem with decrypting the message if the recipient knows the sender's public key.
@@ -111,7 +112,7 @@ To do that we use a trick with one-time-use nonce and sender's public key which 
 They are required for the recipient, so he can decrypt the real sender's (sender's) public key and decrypt the message.
 We will dive into details below.
 
-#### The transaction metadata 
+#### The transaction metadata
 
 Each message contains a specific set of information that is included in the blockchain transaction body.
 On the other side, recipient or recipients will be able to track the blockchain transactions and decrypt those which were sent to them.
@@ -147,19 +148,20 @@ batch:
 ```
 
 ##### Batch
+
 ---
-Each message is encrypted with the recipient's public key based on Diffie-Hellman protocol. 
+Each message is encrypted with the recipient's public key based on Diffie-Hellman protocol.
 If there are several recipients the same message is encrypted several times for different recipients.
 All the versions of the same message should be provided in the batch section.
 The message should contain nonce, sender, recipient, and data sections.
 
 **Nonce** is a section with a one-time generated 24-bit value.
 It allows making sure that the same message (like "Hi") can not be brute-forced by a malicious third party.
-There are two nonce values - the private (encrypted) and the one-time-use one. 
+There are two nonce values - the private (encrypted) and the one-time-use one.
 As we mentioned earlier the message is encrypted with the sender's real public key, but for security reasons we encrypt it.
-One-time-use nonce is used along with one-time-use public key to encrypt sender's real public key. 
+One-time-use nonce is used along with one-time-use public key to encrypt sender's real public key.
 
-**Sender** is a section with information about the sender of a particular message. 
+**Sender** is a section with information about the sender of a particular message.
 It contains the encrypted public key of a sender.
 The one-time-use public key is required for the recipient, so he could decrypt the sender's real public key.
 
@@ -175,6 +177,7 @@ It contains encrypted public keys of a recipient.
 The structure of that file is described below.
 
 ##### Nonce
+
 ---
 The **onetimeuse** value is a one-time public 24-bit nonce that is generated on transaction creation.
 It is used as salt to sender->ciphertext, sender->blake2hash, verifier->ciphertext, verifier->blake2hash and recipient->blake2hash fields.
@@ -186,8 +189,8 @@ It could be used for salting sender->blake2hash, verifier->blake2hash and recipi
 The **blake2hash** value is salted with the nonce blake2 hash of the nonce.
 Every recipient will have a unique nonce that can be used to prove message metadata and the content of the message independently from other recipients.
 
-
 ##### Sender
+
 ---
 **Sender** is a 32-bit string that represents the sender's public key and account address at the same time.
 
@@ -204,9 +207,11 @@ It can be decrypted only by the recipient.
 The **blake2hash** value is a hashed sender's public key salted with a one-time-use nonce blake2 hash.
 
 The formula looks like this:
+
 ```
 H(H(pk), N)
 ```
+
 Where "H" is a blake2 hash function, "pk" is the sender's public key and N is a one-time nonce.
 The sender knows his public keys, and that allows to identify related messages among others.
 The downside of this approach is that once one knows the sender's public key he will be able to track the account activity.
@@ -214,9 +219,11 @@ To fix this the one-time-use nonce can be replaced with private nonce, but in th
 
 List of **signatures** is a set of cryptographic proofs (digital signatures) of sender and one-time use private key.
 Both of the signatures sign the hash of all hashes according to the formula:
+
 ```
 H(nH | sH | v(0)H...v(n)H | rH | dH)
 ```
+
 Where "H" is a blake 2 hash function, "nH" is nonce blake2hash value, "sH" is sender's blake2hash value, "v(0)H...v(n)H" are concatenated verifiers' blake2hash values, "rH" is recipient's blake2hash value, "dH" is IPFS file hash.
 
 ##### Verifiers
@@ -236,9 +243,11 @@ It can be decrypted only by the recipient.
 
 The **blake2hash** value is salted with one-time-use nonce blake2 hash of a hashed verifier's public key.
 The formula looks like this:
+
 ```
 H(H(pk), N)
 ```
+
 Where "H" is a blake2 hash function, "pk" is the verifier's public key and N is a one-time-use nonce.
 Verifier knows his public keys, and that allows to identify related messages among others.
 The downside of this approach is that once one knows the sender's public key he will be able to track the account activity.
@@ -246,13 +255,15 @@ To fix this the one-time-use nonce can be replaced with private nonce, but in th
 
 List of **signatures** is a set of cryptographic proofs (digital signatures) of each verifier and one-time-use public key.
 Both of the signatures sign the hash of all hashes according to the formula:
+
 ```
 H(nH | sH | v(0)H...v(n)H | rH | dH)
 ```
+
 Where "H" is a blake 2 hash function, "nH" is nonce blake2hash value, "sH" is sender's blake2hash value, "v(0)H...v(n)H" are concatenated verifiers' blake2hash values, "rH" is recipient's blake2hash value, "dH" is IPFS file hash.
 
-
 ##### Recipient
+
 ---
 **Recipient** is a 32-bit string that represents the recipient's public key and account address at the same time.
 
@@ -262,22 +273,24 @@ It can be decrypted only by sender and recipient.
 The **blake2hash** vvalue is a blake2 hash of a hashed recipient's public key salted with one-time-use nonce.
 
 The formula looks like this:
+
 ```
 H(H(pk), N)
 ```
+
 Where "H" is a blake2 hash function, "pk" is the recipient's public key and N is a one-time-use nonce.
 The recipient knows his public keys, and that allows to identify  related messages among others.
 The downside of this approach is that once one knows the recipient's public key he will be able to track the account activity.
 To fix this the one-time-use nonce can be replaced with private nonce, but in this case, the recipient will have to decrypt every message in the blockchain.
 
-
 ##### Data
+
 ---
 Data is a section with an IPFS hash of a file that contains encrypted message information in key-value format.
 We will discuss the structure of an IPFS file below.
 
-
 #### The IPFS data file
+
 ---
 The data file is a text file with a specific data structure.
 It contains encrypted data which can be decrypted only by the sender and recipient of a message.
@@ -297,16 +310,16 @@ data:
 ```
 
 #### Key
+
 ---
-The **ciphertext** value is an encrypted name of a particular field. 
+The **ciphertext** value is an encrypted name of a particular field.
 It can be decrypted only by sender and recipient.
 
 The **blake2hash** value is salted with the private nonce blake2 hash of data content.
 
-
 #### PoC and prior work
 
-We have been working on decentralized messaging apps for the last several years. 
+We have been working on decentralized messaging apps for the last several years.
 During this time the protocol became much more solid and stable.
 Here are some related links:
 
@@ -317,12 +330,11 @@ Here are some related links:
 This is the latest open-source version of the messenger.
 The protocol is more or less the same, but to run the messaging service one has to use centralized servers to increase the user experience.
 
-
 The **latest** version I've been working on is not open-source because it was a custom build for an external company, but here is a video demo of how the messenger works:
 
 >[XYZ Messenger Demo (EN) -- 5m 38s](https://youtu.be/HSMjikDiheY)
 
-This technology has been used in production at a nonprofit organization [HelpTeens](https://helpteens.ru) in Saint-Petersburg that provides free online psychological support for teenagers. 
+This technology has been used in production at a nonprofit organization [HelpTeens](https://helpteens.ru) in Saint-Petersburg that provides free online psychological support for teenagers.
 We used Nolik to protect kids' privacy and keep their secrets safe.
 It worked perfectly, but we had to stop using the technology due to legal restrictions.
 A new set of legal rules obligates any company to disclose the decryption keys to authorities and we had nothing to disclose.
@@ -350,7 +362,7 @@ The technology has changed but the core principles are still the same.
 
 >[Nolik DB Demo -- 1m 11s](https://youtu.be/PyueRPY4fHc)
 This is an experiment from one of the hackathons.
-I applied the Nolik protocol to build a decentralized database that allows the storage of structured data using SQL syntax. 
+I applied the Nolik protocol to build a decentralized database that allows the storage of structured data using SQL syntax.
 
 #### Non-goals
 
@@ -364,7 +376,6 @@ Although Nolik is designed to be an independent product, the secure platform wit
 For example, apps will be able to exchange secrets like private keys, send tokens or a WASM code.
 That might be one of the possible benefits for the Polkadot community, but we will know if there is any value only by talking to users.
 
-
 ## Team :busts_in_silhouette:
 
 ### Team members
@@ -377,14 +388,15 @@ That might be one of the possible benefits for the Polkadot community, but we wi
 - **Contact Email:** aboziev@gmail.com
 
 ### Legal Structure
+
 No legal entity yet
 
 ### Team's experience
 
-#### Amir Boziev 
+#### Amir Boziev
 
 Since 2018 I've been involved in various projects in different domains including edTech, private messaging, data security, social good, and others.
-I've increased my expertise in product development, marketing, and programming. 
+I've increased my expertise in product development, marketing, and programming.
 Worked as a researcher in blockchain tech to find a product-market-fit for this amazing technology which I'm passionate about.
 
 For the last five years, I've been learning how to make successful products.
@@ -393,8 +405,8 @@ One of them is growing.
 Right now I am learning [Game Thinking Mechanicks](http://gamethinking.io) to make better products.
 
 Previously worked as a Director of blockchain products and strategy at Latoken.
-I've been working with amazingly talented people on product management and the development of both decentralized and centralized crypto exchanges. 
-We also have been working on fundamental research and development of a framework that simulates the behavior of a blockchain on a network level. 
+I've been working with amazingly talented people on product management and the development of both decentralized and centralized crypto exchanges.
+We also have been working on fundamental research and development of a framework that simulates the behavior of a blockchain on a network level.
 
 We've analyzed the most popular consensus algorithms (PoW, PoS, dPoS BFT, etc.) and blockchain platforms (Bitcoin, Ethereum, Cordana, Ripple, Waves, Hashgraph, etc.).
 
@@ -405,25 +417,24 @@ Rust experience: 3+ months, but moving fast.
 
 ### Team Code Repos
 
-- https://github.com/chainify
-- https://github.com/chainify/nolik
+- <https://github.com/chainify>
+- <https://github.com/chainify/nolik>
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
-- https://github.com/amrbz
+- <https://github.com/amrbz>
 
 ### Team LinkedIn Profiles
 
-- https://www.linkedin.com/in/amrbz 
+- <https://www.linkedin.com/in/amrbz>
 
 ## Development Status :open_book:
 
-* [XYZ Messenger](https://docs.google.com/document/d/1Vxieh7b6wTQZoHpBQQTC5bH58kwcYlF0wm8yh0acXCI/edit?usp=sharing)
+- [XYZ Messenger](https://docs.google.com/document/d/1Vxieh7b6wTQZoHpBQQTC5bH58kwcYlF0wm8yh0acXCI/edit?usp=sharing)
 
-* [Rhizome](https://docs.google.com/document/d/1nbqO-ZHKTltqS7a10MYHKIetiFPd_NS6danfV7rGp1I/edit?usp=sharing) 
+- [Rhizome](https://docs.google.com/document/d/1nbqO-ZHKTltqS7a10MYHKIetiFPd_NS6danfV7rGp1I/edit?usp=sharing)
 
 Those are research documents that lead me to this project.
-
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -451,7 +462,6 @@ This milestone will allow the operation of a local dev chain.
 | 2. | Substrate module: Message Validation | We will create a Substrate module that will validate the message on sending stage to accept or reject it |  
 | 3. | Substrate chain | Both modules of our custom chain will allow users to set up account rules and validate incoming messages on whether the senders have a right to send a message or not. In case of a rejected transaction user will get a related error message|  
 
-
 ### Milestone 2 — Develop CLI tools
 
 This milestone will allow the usage of CLI tools, which are going to be written in Rust language. They will allow users to interact with the network by composing, sending, and accepting messages.
@@ -472,27 +482,25 @@ This milestone will allow the usage of CLI tools, which are going to be written 
 | 3. | CLI: get | We will create a CLI tool that will allow to download and read received messages if any |
 | 4. | CLI | CLI tools will allow users to compose messages, send them to recipients and read incoming messages on request |  
 
-
 ## Future Plans
 
 ### Short-term
 
-* Apply to the Substrate Builders Program.
-* Develop the PoC blockchain core with CLI tools
-* Make customer research and validate product ideas
-* Launch a public testnet and build a Messaging app
-
+- Apply to the Substrate Builders Program.
+- Develop the PoC blockchain core with CLI tools
+- Make customer research and validate product ideas
+- Launch a public testnet and build a Messaging app
 
 ### Long-term
-* Close seed funding round and form a team
-* Apply to W3F L3 grant program
-* Convert to mainnet
-* Build a messaging app
 
+* Close seed funding round and form a team
+- Apply to W3F L3 grant program
+- Convert to mainnet
+- Build a messaging app
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** 
+**How did you hear about the Grants Program?**
 Personal recommendation of my friends:
-* https://github.com/kmadorin
-* https://github.com/CryptoBadBoy W3F grant program alumni (Fratcapp)
+- <https://github.com/kmadorin>
+- <https://github.com/CryptoBadBoy> W3F grant program alumni (Fratcapp)

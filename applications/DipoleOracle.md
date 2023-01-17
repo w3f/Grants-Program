@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Dipole Oracle
 
-* **Project:** Dipole Oracle
 
 * **Proposer:** [KK](https://www.linkedin.com/in/kaikai-yang)
 

@@ -197,7 +197,7 @@ Also, we had a conversation with David Hawig about this project.
 
 ### Milestone 1 — NFT Kit + Wallet Kit + IDP Kit
 
-- **Estimated duration:** 2 months
+- **Estimated duration:** 2 - 4 months, with final deliverys in Feb 2023.
 - **FTE:**  6
 - **Costs:** 29.750 USD (Total costs: 35.000 - 15% good will discount)
 

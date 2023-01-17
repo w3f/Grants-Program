@@ -1,6 +1,5 @@
-# Open Grant Proposal
+# Stone Index on Substrate
 
-* **Project Name:** Stone Index on Substrate
 * **Team Name:** stonedefi
 * **Payment Address:** bc1qwyq4h8q07vjm9gm9mxjk5gew5hr06lk9ca5t0t
 
