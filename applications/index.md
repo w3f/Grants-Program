@@ -587,5 +587,5 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Me Protocol](https://meprotocol.io/) | [Me Protocol](MeProtocol.md)                                                                                                                                       | [GitHub](https://github.com/Me-Protocol) | ☐          |        ☐       |      ☐     |
 | [Comrade Coop](https://comrade.coop/) | [Validated Streams](validated-streams.md)                                                                                                                                       | [GitHub](https://github.com/comrade-coop) | ☐          |        ☐       |      ☐     |
 | [Blockcoders](http://blockcoders.io/) | [Cross-chain Wallet - XCW](cross-chain-wallet.md)                                                                                                                                       | [GitHub](https://github.com/blockcoders) | ☐          |        ☐       |      ☐     |
-
+| [OmniBTC](https://omnibtc.finance/) | [Polkadot Smart Chain](psc.md)                                                                                                                                       | [GitHub](https://github.com/OmniBTC/PSC) | ☐          |        ☐       |      ☐     |
 
