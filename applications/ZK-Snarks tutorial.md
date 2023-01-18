@@ -1,6 +1,6 @@
 # ZK-Snarks tutorial
 * **Team Name:** Bright Inventions
-* **Payment Address:** 0xDDcfd2a1D4Bcf058cf2828eb78dB59b300e80F8d
+* **Payment Address:** 0xD75dDC4Aa3618e1417c68E5Df79ef9D66E4B1Ed9
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
