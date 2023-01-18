@@ -44,6 +44,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [multi-chain-block-explorer.md](RFPs/Under%20Development/multi-chain-block-explorer.md) | 🟡 | 23.11.2021 |
 | [on-chain-quadratic-funding.md](RFPs/Implemented/on-chain-quadratic-funding.md) | 🔴 | 29.03.2022 |  
 | [php-api.md](RFPs/Implemented/php-api.md) | 🔴 | 27.05.2022 |  
+| [parachain_validation_conformance_testing.md](RFPs/Open/parachain_validation_conformance_testing.md) | 🟢 | 18.01.2023 |  
 | [php-scale.md](RFPs/Implemented/php-scale.md) | 🔴 | 23.11.2022 |  
 | [polkadot-collator-setup.md](RFPs/Open/polkadot-collator-setup.md) | 🟢 | 23.11.2021 |
 | [privacy-enhancement-polkadot-extension.md](RFPs/Under%20Development/privacy-enhancement-polkadot-extension.md) | 🟡 | 27.05.22 |
