@@ -153,14 +153,15 @@ GitHub accounts of all team members:
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains what was done/achieved as part of the grant |
-| 1. | User Story 7 | As a user of polkadot.js wallet fork, I can bookmark laws |
-| 2. | User Story 8 | As a user of polkadot.js wallet fork, I can create a law by providing a text and an amount of tokens to be spent |
-| 3. | User Story 9 | As a user of polkadot.js wallet fork, I can view a list of published laws |
-| 4. | User Story 10 | As a user of polkadot.js wallet fork, I can see details of a selected law: it text, hash and current price |
-| 5. | User Story 11 | As a user of polkadot.js wallet fork, I can spend my tokens to make the law more expensive and solid |
-| 6. | User Story 12 | As a user of polkadot.js wallet fork, I can spend my tokens to make the law less expensive and less solid |
-| 7. | User Story 13 | As a user of polkadot.js wallet fork, I can cancel the law by spending my tokens |
+| 1. | User Story 7 | I can bookmark laws using a new module\* for polkadot.js wallet |
+| 2. | User Story 8 | I can create a law by providing a text and an amount of tokens to be spent  using a new module for polkadot.js wallet |
+| 3. | User Story 9 | I can view a list of published laws  using a new module for polkadot.js wallet|
+| 4. | User Story 10 | I can see details of a selected law: it text, hash and current price  using a new module for polkadot.js wallet |
+| 5. | User Story 11 | I can spend my tokens to make the law more expensive and solid  using a new module for polkadot.js wallet |
+| 6. | User Story 12 | I can spend my tokens to make the law less expensive and less solid  using a new module for polkadot.js wallet |
+| 7. | User Story 13 | I can cancel the law by spending my tokens  using a new module for polkadot.js wallet |
 
+\* Conventional polkadot.js modules a directories placed [here](https://github.com/polkadot-js/apps/tree/master/packages). We plan to add a functionality by providing an additional page-giraf module. We did the same way recently with other our pallet: [page-recommendations](https://github.com/slonigiraf/slonigiraf-front-end/tree/master/packages/page-recommendations), [UI](https://ui.slonigiraf.org/#/recommendations).
 
 ## Future Plans
 
