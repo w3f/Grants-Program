@@ -1,4 +1,4 @@
-# Privacy enhancement for Polkadot-js extension
+# Multix a simple interface for complex multisigs
 
 - **Team Name:** ChainSafe
 - **Payment Address:** 0x85D81Ab61Fe16CDcaeF2Ca556ED4577A51b9b07C (DAI)
@@ -104,14 +104,14 @@ For each milestone,
 
 ### Overview
 
-- **Total Estimated Duration:** 1 month
-- **Full-Time Equivalent (FTE):**  1 FTE
+- **Total Estimated Duration:** 1 month for an engineer full time + finance department
+- **Full-Time Equivalent (FTE):**  1.5 FTE
 - **Total Costs:** 30000
  
 ### Milestone 1 - Create and manage multisig calls
 
 - **Estimated duration:** 1 month
-- **FTE:**  1
+- **FTE:**  1.5
 - **Costs:** 30000 USD
 
 | Number | Deliverable | Specification |
@@ -124,7 +124,9 @@ For each milestone,
 | 1. | creation screen | Users will be able to create a multisig based on a list of signatories and a threashold. |
 | 2. | indexer | To provide a smooth user experience, a subsquid indexer will make sure to track multisig interractions. The Docker will be made available |
 | 3. | home screen | The home screen will allow to select the available multisig and see the signatories, the threshold along any pending request |
-| 4. | request approval | Upon reviewing pending approvals, users are able to approve pensing approvals and submit the final extrinsic without any external communication with other signatories. |
+| 4. | request approval | Upon reviewing pending approvals, users are able to approve pending approvals and submit the final extrinsic without any external communication with other signatories. |
+| 5. | pallet support | The multisig will be based on the `[mutlisig](https://github.com/paritytech/substrate/tree/master/frame/multisig)` pallet, also using `[proxy](https://github.com/paritytech/substrate/tree/master/frame/proxy)` and `[utility](https://github.com/paritytech/substrate/tree/master/frame/utility)` pallets to handle the different flows.|
+| 6. | stack | Both front-end and back-end are using Typescript. The front-end is built using React, it will connect to a blockchain node for live information such as the pending proposals, and to user wallets such as Polkadot-js extension to allow users to sign extrinsics. The backend is made of a subsquid indexer that is tracking multisig interractions.|
 
 ## Future Plans
 
