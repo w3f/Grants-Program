@@ -191,6 +191,11 @@ Once the key concepts and principles have been identified, the next step is to s
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| **0a.** | Copyright and Licenses | CC0 / CC BY 4.0 / Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation/Tutorial | We will provide both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
+| **0c.** | Methodology | Detailed explanation of how the results were achieved and how to reproduce/verify the results. |
+| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. Ideally, we recommend the usage of LaTeX/Overleaf for article production and Docker files for software execution. |
+| **0e.** | Article | We will send an **article** or part of it (with source code) that explains in the English language [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
 | **1.** | Literature survey | Document identifying and reviewing related work, concepts and principles in blockchain ontologies |
 | **2.** | Conceptual framework | Ontology in OWL with formal description of the Polkadot ecosystem|
 
@@ -205,6 +210,11 @@ With the conceptual framework specified and developed, the next step will be app
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| **0a.** | Copyright and Licenses | CC0 / CC BY 4.0 / Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation/Tutorial | We will provide both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
+| **0c.** | Methodology | Detailed explanation of how the results were achieved and how to reproduce/verify the results. |
+| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. Ideally, we recommend the usage of LaTeX/Overleaf for article production and Docker files for software execution. |
+| **0e.** | Article | We will send an **article** or part of it (with source code) that explains in the English language [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
 | **1.** | Case study | Document describing case study on conceptual framework application with query engine|
  
 ### Milestone #3 – Polkadot team brainstorming / workshop 
@@ -217,6 +227,11 @@ An important aspect of creating an ontology is to engage with experts from appli
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| **0a.** | Copyright and Licenses | CC0 / CC BY 4.0 / Apache 2.0 / GPLv3 / MIT / Unlicense |
+| **0b.** | Documentation/Tutorial | We will provide both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
+| **0c.** | Methodology | Detailed explanation of how the results were achieved and how to reproduce/verify the results. |
+| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. Ideally, we recommend the usage of LaTeX/Overleaf for article production and Docker files for software execution. |
+| **0e.** | Article | We will send an **article** or part of it (with source code) that explains in the English language [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
 | **1.** | Scientific paper | Document reporting scientific and technical findings |
 | **2.** | Presentation deck | Slide deck with reflections over the discussed content and action items|
 
