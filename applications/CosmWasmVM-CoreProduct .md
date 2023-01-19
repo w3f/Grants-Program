@@ -142,14 +142,15 @@ https://medium.com/supercolony/a-look-into-virtual-machines-and-smart-contract-r
 - **FTE:**  1,5
 - **Costs:** $21,600
 
-|  Number | Deliverable          | Specification                                                                                                                                                                                  |
-|--------:|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **0a.** | License              | GPLv3 / MIT /                                                                                                                                                                                  |
-| **0b.** | Documentation        | We will provide both inline documentation of the code and a basic tutorial that explains how a user can test and execute transactions using cosmwasm vm pallet.                                |
-| **0c.** | Testing Guide        | Core functions will be fully covered by integration tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                       |
-| **0d.** | Docker               | We will provide a Dockerfile that can be used to test the pallet functionality.                                                                                                                |
-|  **1.** | Development          | We will deliver the core pallet for the CosmWasm VM                                                                                                                                            |
-|  **2.** | Development          | This milestone includes the pallet supporting the following features: XCM integration, native asset support, allow calling extrinsics, verification through Fuzzing & Kani and Benchmarking.   |                                                                                                                                 |
+|  Number | Deliverable          | Specification                                                                                                                                                                                         |
+|--------:|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **0a.** | License              | GPLv3 / MIT /                                                                                                                                                                                         |
+| **0b.** | Documentation        | We will provide both inline documentation of the code and a basic tutorial that explains how a user can test and execute transactions using cosmwasm vm pallet.                                       |
+| **0c.** | Testing Guide        | Core functions will be fully covered by integration tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                              |
+| **0d.** | Docker               | We will provide a Dockerfile that can be used to test the pallet functionality.                                                                                                                       |
+| **1a.** | Development          | We will deliver the core pallet for the CosmWasm VM                                                                                                                                                   |
+| **1b.** | Development          | This milestone includes the pallet supporting the following features: XCM integration, native asset support, allow calling extrinsics, verification through Fuzzing & Kani and Benchmarking.          |                                                                                                                                 |
+| **1c.** | Testing              | A local network setup running a substrate chain with the pallet and a contract showing the functionality described in the milestones, so that it can be inspected and called through Polkadotjs.org.  |
 
 ### Milestone 2 — PolkadotJS Integration
 
