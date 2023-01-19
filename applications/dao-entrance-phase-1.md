@@ -147,7 +147,6 @@ Team github accounts
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article and a tutorial that explains the work done as part of the grant.|
 | 1. | Substrate module: **DAO-entrance** | we create a substrate pallet specifically designed for DAO, which includes the following functions: 1. RoadMap Target Management 2. DAO Share Management 3. Core Team, Association Management 4. Workflow Management (board/task) 5. Financial Management 6. Task reward management 7. Hot-plug voting management 8. Contribution Value, Medal Management 9. Hierarchical Management |
 
 ### Milestone 2 — Decentralized real-time communication base on matrix 
@@ -162,7 +161,6 @@ Team github accounts
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article and a tutorial that explains the work done as part of the grant.|
 | 1. | DAO desktop and app | We will develop a window/mac/list/ios/android client based on flutter, which includes the following functions: 1. polkadot wallet login. 2. messaging. 3. end-to-end encryption. 4. voice and video calls. 5. matrix node server. |
 | 2. | Tests | End to end testing of window/mac/list/ios/android full platform to ensure application security and stability |
 
@@ -179,7 +177,6 @@ Team github accounts
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article and a tutorial that explains the work done as part of the grant.|
 | 1. | DAO UI on native flutter View | A flutter navive module 1. RoadMap Target Management 2. DAO Share Management 3. Core Team, Association Management 4. Workflow Management (board/task) 5. Financial Management 6. Task reward management 7. Hot-plug voting management 8. Contribution Value, Medal Management 9. Hierarchical Management |
 | 2. | Tests | End to end testing of window/mac/list/ios/android full platform to ensure application security and stability |
 
@@ -197,7 +194,7 @@ Team github accounts
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an article and a tutorial that explains the work done as part of the grant.|
 | 1. | ink! DAO smart contract | we create a smart contract specifically designed for DAO, which includes the following functions: 1. RoadMap Target Management 2. DAO Share Management 3. Core Team, Association Management 4. Workflow Management (board/task) 5. Financial Management 6. Task reward management 7. Hot-plug voting management 8. Contribution Value, Medal Management 9. Hierarchical Management |
-| 2. | flutter DAPP rendeing | We will create compatible polkadot The running container of the js Extension API and the web API. This allows DAPP to run faster|
+| 2. | flutter DAPP rendeing | we create a engine run DAPP on Flutter natively, Compatible with Polkadot {. js} extension api interface |
 | 3. | Compatible with Polkadot ecological top20 project | 1. Compatibility of governance tools 2. Blockchain status monitoring 3. Smart contract deployment and operation|
 
 
