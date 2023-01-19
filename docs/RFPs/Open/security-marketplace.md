@@ -1,4 +1,4 @@
-# Security Marketplace
+# Decentralized Security Marketplace
 
 * **Status:** Open
 * **Proposer:** [Matteo Casonato](https://github.com/0xCaso), [Bhargav Batt](https://github.com/bhargavbh)
@@ -7,7 +7,7 @@
 
 According to the [*Immunefi's 2022 annual report*](https://assets.ctfassets.net/t3wqy70tc3bv/1ObYJk9jzWS4ExHICslYep/e2b5cee51268e47ee164c4dffbd78ad4/Immunefi_Crypto_Losses_2022_Report.pdf), there has been a total loss of ~$3.77B because of hacks in the web3 space. To increase the protocol's security, audits and bug bounties can be a useful tool.
 
-A **security marketplace** would allow projects to find reviewers/testers/auditors/whitehats, and vice versa. This would benefit everyone:
+A **decentralized security marketplace** would allow projects to find reviewers/testers/auditors/whitehats, and vice versa. This would benefit everyone:
 - **Projects** would increase their security;
 - **Developers** would have the possibility to earn while using their skills, improving them;
 - The **ecosystem** would be more secure, with more projects being audited and more developers learning about security.
