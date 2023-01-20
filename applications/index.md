@@ -529,7 +529,7 @@ Use this page for an overview of all public grants and their status. Use the sid
 | [Polket](https://toearn.fun)                                 | [ToEarnFun](./polket_toearnfun.md)                                                            | [GitHub](https://github.com/polketio/polket-node)                      | ☐          |       ☒        |     ☐     |
 | ALPHA LABS                                                   | [Binary merkle tree](./binary_merkle_tree.md)                                                 | [GitHub](https://github.com/frisitano)                                 | ☐          |       ☐        |     ☐     |
 | [Standard Protocol](https://standard.tech/)                  | [New Order - a full onchain orderbook dex with indexers](./Standard_Protocol.md)              | [GitHub](https://github.com/standardweb3)                              | ☐          |       ☐        |     ☐     |
-| [hack-ink](https://github.com/hack-ink)                      | [Subalfred](./subalfred.md)                                                                   | [GitHub](https://github.com/hack-ink/subalfred)                        | ☐          |       ☒        |     ☐     |
+| [hack-ink](https://github.com/hack-ink)                      | [Subalfred](./subalfred.md)                                                                   | [GitHub](https://github.com/hack-ink/subalfred)                        | ☐          |       ☒        |     ☒     |
 
 ### 🏄‍♀️ Wave 16 - Fourth Quarter 2022
 
