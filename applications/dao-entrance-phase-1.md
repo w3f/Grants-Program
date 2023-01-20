@@ -25,7 +25,7 @@ Currently, we provide not only "ink!"-based DAO smart contract templates, but al
 At this stage, **DAO-entrance** will provide a slack-like client which is based on the matrix protocol for instant messaging. Users can log in with a blockchain account. This tool is designed for modern devices and is compatible with devices equipped with Windows/mac/Linux/android/iOS, and provides organization members with a concise and convenient collaboration platform. 
 
 <p align="left">
-  <img src="https://github.com/dao-entrance/app/raw/main/docs/ui.png style="width:800px";>
+  <img src="https://github.com/dao-entrance/app/raw/main/docs/ui.png" style="width:800px";>
 </p>
 
 Through DAPP rendering engine which is based on flutter, **DAO-entrance** is compatible with most DAPPs and run at a faster speed. The core business would be materialized by flutter native applications, and DAPPs would be rendered by the dapp engine.
