@@ -37,7 +37,9 @@ Hence, providing value to the DeFi users on Moonriver, Moonbeam, and Astar, whic
 
 We've been knee-deep in the Polkadot & DeFi ecosystems for over three years now. From building a staking dashboard for Polkadot & Kusama, to a yield farm listicle spanning across 5 parachains.
 
-We see the missing pieces in current DeFi ecosystem on parachains, and we want to build them.
+We want to build Bay Aggregator because the problems it solves for the parachain ecosystems and the limit order functionality it brings along are a must-have for any maturing DeFi market.
+
+Being deeply invested in Polkadot for years, Bay Aggregator felt like` a natural fit to build for our team.
 
 ### Project Details
 
@@ -84,7 +86,7 @@ We'll also make sure to add **error monitoring services**, like Sentry, across t
 
 Order splitting is not supported. Order splitting lets you divide your swap between multiple different liquidity routes. For example, 50% through DEX A, 50% through DEX B.
 
-Order splitting will considerably increase scope, which is why we leave it out for now. Though, it's definitely a feature we want to incorporate at a later stage.
+Implementing order splitting will increase the time to market, and we want to get a good product out for the community to use and share feedback on first with our MVP.
 
 ### Ecosystem Fit
 
@@ -169,13 +171,13 @@ Our team has previously built:
 
 - **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):** 4
-- **Total Costs:** $1,08,000
+- **Total Costs:** $1,20,000
 
 ### Milestone 1 — Core functionality for the DEX Aggregator
 
 - **Estimated duration:** 1.5 months
 - **FTE:** 4
-- **Costs:** $36,000
+- **Costs:** $45,000
 
 |  Number | Deliverable                           | Specification                                                                                                                                                                                                                                      |
 | ------: | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -191,7 +193,7 @@ Our team has previously built:
 
 - **Estimated duration:** 1.5 months
 - **FTE:** 4
-- **Costs:** $36,000
+- **Costs:** $45,000
 
 |  Number | Deliverable                             | Specification                                                                                                                                                                                               |
 | ------: | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -207,7 +209,7 @@ Our team has previously built:
 
 - **Estimated duration:** 1 month
 - **FTE:** 4
-- **Costs:** $36,000
+- **Costs:** $30,000
 
 |  Number | Deliverable                                   | Specification                                                                                                                                                                                                                                   |
 | ------: | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
