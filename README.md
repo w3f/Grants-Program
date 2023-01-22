@@ -1,7 +1,3 @@
-> :christmas_tree: Please note that the review process might take longer than usual until January 6, 2023. Merry Christmas and Happy New Year!  :christmas_tree:
-
-___
-
 # Web3 Foundation Grants Program<!-- omit in toc -->
 
 <p align="center">
@@ -90,6 +86,7 @@ The committee consists of individuals who know the funding priorities of the Pol
 
 In cases where a niche expert opinion is desirable, one of the committee members may request such a review.
 
+- [Nabil Abdellaoui](https://github.com/randombishop)
 - [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Gautam Dhameja](https://github.com/gautamdhameja)
@@ -99,7 +96,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Bill Laboon](https://github.com/laboon)
 - [Keegan Quigley](https://github.com/keeganquigley)
 - [Raul Romanutti](https://github.com/rrtti)
-- [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
 - [Gavin Wood](https://github.com/gavofyork)
@@ -114,7 +110,6 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 - [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Keegan Quigley](https://github.com/keeganquigley)
-- [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
 
 #### W3F Operations Team<!-- omit in toc -->
@@ -123,7 +118,6 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 - [Melanie Diener](https://github.com/meldien)
 - [Federica Dubbini](https://github.com/fededubbi)
-- [Kasper Mai Jørgensen](https://github.com/KasperJor)
 - [Rouven Pérez](https://github.com/RouvenP)
 
 
@@ -328,6 +322,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
+- [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program) 
 - [Picasso / Composable Grants Program](https://grants.composable.finance)
 - [SubQuery Grants Programme](https://subquery.network/grants)
 

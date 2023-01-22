@@ -67,11 +67,11 @@ As we are gathering feedback, one of the most important features for the users s
 - searchable by public key or chain-specific address
 - display
   - account's name if set
-  - owned assets and their statuses from all listed chains, including dollar values and graphs for visualization.
+  - owned assets accross all listed chains, including dollar values and graphs for visualization.
   - list all chain-specific addresses
-  - list all related transfers, cross-chain messages, calls and all extrinsics
+  - list all related transfers, XCM transfers, extrinsics and calls
 
-![Account page](https://res.cloudinary.com/topmonks/image/upload/v1661767600/calamar/account.png)
+![Account page](https://res.cloudinary.com/topmonks/image/upload/v1672668761/calamar/account2.png)
 
 #### Chain dashboards
 
@@ -209,17 +209,28 @@ Even though we have the already working application, there are still many things
 - **FTE:** 1
 - **Costs:** $10,000
 
-Here we want to implement the most requested features, the [account detail](#account-detail) overview and [cross-chain transfers](#cross-chain-transfers)
+In this milestone we are going to improve [account detail](#account-detail) page and replace latest extrinsics page with proper [dashboard](#chain-dashboards) page for each chain.
+
+*Subsquid (data provider) might not support each feature for all chains at the time of the implementation, so the features will be implemented universally to support each chain whenever the data are provided in the future.*
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 |
-| 0b. | Documentation | We will provide inline documentation of the code where necessary  and tutorials on how to use new features. |
+| 0b. | Documentation | We will provide inline documentation of the code where necessary and user documentation for new features. |
 | 0c. | Testing Guide | We will provide end-to-end tests covering UI functionality. |
 | 0d. | Docker | *N/A - will be provided by the first milestone.* |
 | 0e. | Article | We will publish an article that explains what was done as part of the grant |
-| 1. | Account detail | Current account detail shows only list of extrinsics signed by that account. Improve account detail page as specified in [Account detail](#account-detail) section. |
-| 2. | XCM transfers and teleports | Detect cross-chain transfers and display relevant information of involved chains and accounts: from chain, to chain, relayed at chain (reserve), sender, beneficiary, etc. See [Cross-chain transfers](#cross-chain-transfers) for more. |
+| 1. | Account / Balance overview | Overview of owned assets accross all listed chains with chain specific addresses, including dollar values |
+| 2. | Account / Balance charts | Chart visualization of balance by assets and by type (reserved, tranferable, ...), including dollar values |
+| 3. | Account / Transfers list | Add account's transfers list table |
+| 4. | Account / Calls list | Add account's calls list table |
+| 5. | Account / Identity info | Add account's identity information if set (name, twitter, ...) |
+| 6. | Chain dashboard / Stats | Show chain's stats (blocks count, signed extrinsics count, total issuence, transfers count, holders count, total issuence, staked value, inflation rate, validators count) including USD values |
+| 7. | Chain dashboard / Asset value chart | Chart visualization of asset value by type (staked, circulating, other) |
+| 8. | Chain dashboard / Latest blocks | Add latest blocks list table |
+| 9. | Chain dashboard / Latest transfers | Add latest transfers list table |
+| 10. | Chain dashboard / Top holders | Add top holders list table |
+
 
 ### Milestone 3 - Universal search & Chain dashboards
 
@@ -227,9 +238,7 @@ Here we want to implement the most requested features, the [account detail](#acc
 - **FTE:** 1
 - **Costs:** $7,500
 
-There are two things which can highly improve the usefulness of the explorer.
-
-The fist is the [universal search](#universal-search) and the next big thing is [dashboards for chains](#chain-dashboards).
+In this milestone we are going to implement [universal search](#universal-search) and one of the most requested features: [cross-chain transfers](#cross-chain-transfers) detection.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -239,7 +248,7 @@ The fist is the [universal search](#universal-search) and the next big thing is 
 | 0d. | Docker | *N/A - will be provided by the first milestone.* |
 | 0e. | Article | We will publish an article that explains what was done as part of the grant |
 | 1. | Universal search | Search items through all the chains without the knowledge where it belongs. See [Universal search](#universal-search). |
-| 2. | Chain dashboard | Create dashboard with stats, charts and item listings for each chain. See [Chain dashboards](#chain-dashboards). |
+| 2. | XCM transfers and teleports | Detect cross-chain transfers and display relevant information of involved chains and accounts: from chain, to chain, relayed at chain (reserve), sender, beneficiary, etc. Also add their listings to account detail and chain dashboard. See [Cross-chain transfers](#cross-chain-transfers) for more. |
 
 ## Future Plans
 
