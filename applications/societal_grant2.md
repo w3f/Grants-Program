@@ -3,7 +3,7 @@
 
 - **Team Name:** Societal Labs Ltd.
 - **Payment Address:** Ethereum - USDC:  0xcDcCF94f10d8A7165C1A336DD3795430a6CDE530
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
 ## Project Overview :page_facing_up:
@@ -110,14 +110,14 @@ Societal has already been working on our project and has completed our MVP. The 
 
 - **Total Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** 50,000 USDC
+- **Total Costs:** 30,000 USDC
 
 
 ### Milestone 1 — Add Reservable & Lockable Traits to Asset Pallet 
 
 - **Estimated Duration:** 1.5 months
 - **FTE:**  2
-- **Costs:** 25,000 USD
+- **Costs:** 15,000 USDC
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -133,7 +133,7 @@ Societal has already been working on our project and has completed our MVP. The 
 
 - **Estimated duration:** 1.5 months
 - **FTE:**  2
-- **Costs:** 25,000 USD
+- **Costs:** 15,000 USDC
 
 
 | Number | Deliverable | Specification |
