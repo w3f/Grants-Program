@@ -191,13 +191,13 @@ Once the key concepts and principles have been identified, the next step is to s
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | Copyright and Licenses | CC0 / CC BY 4.0 / Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation/Tutorial | We will provide both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
-| **0c.** | Methodology | Detailed explanation of how the results were achieved and how to reproduce/verify the results. |
-| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. Ideally, we recommend the usage of LaTeX/Overleaf for article production and Docker files for software execution. |
-| **0e.** | Article | We will send an **article** or part of it (with source code) that explains in the English language [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
+| **0a.** | Copyright and Licenses | MIT |
+| **0b.** | Documentation/Tutorial | We will provide a PDF document identifying and reviewing related work, concepts and principles in blockchain ontologies. For the ontology, the specification will be delivered as an OWL file with formal description of the Polkadot ecosystem abstractions.  |
+| **0c.** | Methodology | PDF document detailing how we carried out a systematic review of related blockchain ontologies, and the correlation with the main abstractions of Polkadot's conceptual framework. |
+| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. |
+| **0e.** | Article | We will write a draft **article** (along with source code) explaining what was achieved in this milestone. |
 | **1.** | Literature survey | Document identifying and reviewing related work, concepts and principles in blockchain ontologies |
-| **2.** | Conceptual framework | Ontology in OWL with formal description of the Polkadot ecosystem|
+| **2.** | Conceptual framework | Ontology in OWL format with formal description of the Polkadot ecosystem|
 
 
 ### Milestone #2 – Case study for query engine
@@ -210,12 +210,12 @@ With the conceptual framework specified and developed, the next step will be app
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | Copyright and Licenses | CC0 / CC BY 4.0 / Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation/Tutorial | We will provide both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
-| **0c.** | Methodology | Detailed explanation of how the results were achieved and how to reproduce/verify the results. |
-| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. Ideally, we recommend the usage of LaTeX/Overleaf for article production and Docker files for software execution. |
-| **0e.** | Article | We will send an **article** or part of it (with source code) that explains in the English language [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| **1.** | Case study | Document describing case study on conceptual framework application with query engine|
+| **0a.** | Copyright and Licenses | Unlicense |
+| **0b.** | Documentation/Tutorial | We will provide a PDF document describing a use case to the future application of the ontological framework supporting the building of a controlled natural language (CNL) and a querying engine in Polkadot's multi-chain environment. |
+| **0c.** | Methodology | The use case will be developed based on our expert perspective and also requirements identified from the engagement with other blockchain experts. That is, the requirements for the query engine will be grounded in real-world experience needs. |
+| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. |
+| **0e.** | Article | We will write a draft **article** explaining what was achieved in this milestone. |
+| **1.** | Case study | Document describing case study on conceptual framework application with query engine |
  
 ### Milestone #3 – Polkadot team brainstorming / workshop 
 
@@ -227,13 +227,14 @@ An important aspect of creating an ontology is to engage with experts from appli
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0a.** | Copyright and Licenses | CC0 / CC BY 4.0 / Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation/Tutorial | We will provide both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
-| **0c.** | Methodology | Detailed explanation of how the results were achieved and how to reproduce/verify the results. |
-| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. Ideally, we recommend the usage of LaTeX/Overleaf for article production and Docker files for software execution. |
-| **0e.** | Article | We will send an **article** or part of it (with source code) that explains in the English language [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.) |
-| **1.** | Scientific paper | Document reporting scientific and technical findings |
+| **0a.** | Copyright and Licenses | CC BY 4.0 |
+| **0b.** | Documentation/Tutorial | We will provide two PDF documents, one reporting scientific and technical findings and the other presenting  reflections over the discussed content and action items |
+| **0c.** | Methodology | The methodology for the team discussion will be loosely based on a Design Thinking process. We will guide the team during discussion in order to extract relevant feedback from experts. The idea is to carry this activity remotely. |
+| **0d.** | Infrastructure | We will suggest tool options for carrying out the collab session. That can be Mural or other equivalent free cloud collaborative tool available (e.g. Google Drive, MS Teams).|
+| **0e.** | Article | We will write a draft **article** explaining what was achieved in this milestone. |
+| **1.** | Scientific paper | Document reporting scientific and technical findings for submission in listed scientific venues|
 | **2.** | Presentation deck | Slide deck with reflections over the discussed content and action items|
+
 
 
 ## Future Plans
