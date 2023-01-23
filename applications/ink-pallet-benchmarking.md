@@ -98,6 +98,10 @@ We have explored the tools specified in the RFP. We have also come up with a hig
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
+| 0a. | **License** |Apache 2.0 |
+| 0b. | **Documentation** | We will provide both **inline documentation** of the code and a **live demo**. |
+| 0c. | **Testing Guide** | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0e. | **Article** | We will publish an **article** that explains how each implementation technique performs, and when to choose which. |
 | 1.  | **Solidity(native and WASM) Smart Contract: Basic Read & Write** | We will create some solidity smart contracts which expose simple methods for writing to storage and reading from on-chain storage.|
 | 2.  | **Adapt the benchmarking framework** | We will adapt the benchmarking framework so it can handle WASM and native solidity code benchmarking.|
 
