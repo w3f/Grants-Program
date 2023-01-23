@@ -101,7 +101,7 @@ Team:
 
 ## Development Status :open_book:
 
-Societal has already been working on our project and has completed our MVP. The two main repositories of the Societal project are the [societal-node](https://github.com/sctllabs/societal-node) and the [societal-client](https://github.com/sctllabs/societal-client). These repesortiries represent the societal blockchain (built with substrate) and the UI. To date or MVP includes the following features: Create a DAO with its own governance token, elect council members, create proposals, and vote on them with your MetaMask wallet.
+Societal has already been working on our project and has completed our MVP. The two main repositories of the Societal project are the [societal-node](https://github.com/sctllabs/societal-node) and the [societal-client](https://github.com/sctllabs/societal-client). These repositories represent the societal blockchain (built with substrate) and the UI. To date or MVP includes the following features: Create a DAO with its own governance token, elect council members, create proposals, and vote on them with your MetaMask wallet.
 
 
 ## Development Roadmap :nut_and_bolt:
