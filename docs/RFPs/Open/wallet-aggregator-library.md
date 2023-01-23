@@ -11,7 +11,7 @@ This project aims to create a **React library** that allows users to connect wit
 
 ## Deliverables :nut_and_bolt:
 
-The followings could be the initial deliverables of the project. Of course, improvements and additions are more than welcome.
+The following items could be the initial deliverables of the project. Of course, improvements and additions are more than welcome.
 - Initial **research**:
   - study from the [RainbowKit](https://www.rainbowkit.com/docs/introduction) library (which is the same thing, already developed for EVM chains);
   - understand which wallets/extensions can be integrated, what is needed to connect to them, etc.;
