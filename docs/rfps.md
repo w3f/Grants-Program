@@ -33,6 +33,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [appi.md](RFPs/Implemented/appi.md) | 🔴 | 20.07.2021 |
 | [candle-auction.md](RFPs/Implemented/candle-auction.md) | 🔴 | 02.02.2022 |  
 | [crowdloan_front_end_template.md](RFPs/Under%20Development/crowdloan_front_end_template.md) | 🟡 | 18.11.2022 |  
+| [decentralized-security-marketplace.md](RFPs/Open/decentralized-security-marketplace.md) | 🟢 | 23.01.2023 |  
 | [epassport-zk-validation.md](RFPs/Open/epassport-zk-validation.md) | 🟢 | 29.11.2021 |
 | [formal_guarantees_for_grandpa.md](RFPs/Open/formal_guarantees_for_grandpa.md) | 🟢 | 07.10.2022 |
 | [identity-directory.md](RFPs/Under%20Development/identity-directory.md) | 🟡 | 30.05.2022 |
