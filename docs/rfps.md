@@ -6,9 +6,9 @@ title: Requests for Proposals
   <img src="https://raw.githubusercontent.com/w3f/Grants-Program/master/static/img/rfp-header.png" style={{width:"1300px"}} />
 </p>
 
-- [❔ What is an RFP?](#grey_question-what-is-an-rfp)
-- [📜 List of RFPs](#scroll-list-of-rfps)
-- [📬 Suggest an RFP](#mailbox_with_mail-suggest-an-rfp)
+- [:grey\_question: What is an RFP?](#grey_question-what-is-an-rfp)
+- [📜 List of RFPs](#-list-of-rfps)
+- [:mailbox\_with\_mail: Suggest an RFP](#mailbox_with_mail-suggest-an-rfp)
 
 ## :grey_question: What is an RFP?
 
@@ -57,6 +57,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [uncollateralized-stablecoin-research.md](RFPs/Implemented/uncollateralized-stablecoin-research.md) | 🔴 | 01.01.23 |
 | [validator-setup-maintenance.md](RFPs/Open/validator-setup-maintenance.md) | 🟢 | 23.11.2021 |
 | [validator-selection-algorithm.md](RFPs/Under%20Development/validator-selection-algorithm.md) | 🟡 | 07.12.2022 |
+| [wallet-aggregator-library.md](RFPs/Open/wallet-aggregator-library.md) | 🟢 | 23.01.2023 |
 | [xcm-tool.md](RFPs/Open/xcm-tool.md) | 🟢 | 20.07.2021 |
 
 ## :mailbox_with_mail: Suggest an RFP
