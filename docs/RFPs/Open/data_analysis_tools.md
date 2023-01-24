@@ -12,7 +12,7 @@ For example, Accounts has some provenance information that is pretty difficult o
 
 
 - Which transactions/accounts were responsible for the reserved balance in an account?
-- What are the modules that are consumers, providers, and sufficient for a certain account and which transactions introduced/removed those references?
+- What modules currently depend on consumers, providers, and sufficients reference counters for a certain account, and which transactions introduced/removed those references?
 - Which accounts have delegated OpenGov votes to an account or to which accounts the account in question has delegated their votes to for each track, taking into account indirect delegations too (e.g. Account A delegates to Account B which delegates to Account C)?
 
 This information is useful and requested for actual heavy users of the Polkadot/Kusama ecosystem.
