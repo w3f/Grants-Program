@@ -1,11 +1,8 @@
 # polkasearch.xyz
 
-* **Proposer:** Aviraj Khare
-
-*  **Payment Address:** Bitcoin Address: bc1qtr9993ch6zlr29j5c22zzax57h62x5gj24wtxk
-
-*  **Level:** 2
-
+- **Team Name:** Aviraj Khare
+- **Payment Address:** Bitcoin Address: bc1qtr9993ch6zlr29j5c22zzax57h62x5gj24wtxk
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
@@ -23,131 +20,172 @@ Polkasearch.xyz aims to become a discovery platform where users can discover Gra
 
 **Educational Material:** Get articles, educational videos, links of various substrate topics on the website. User will be able to upload tool/library name on the website.
 
-### Motivation
-I personally feel that discovery is a challenge when it comes to polkadot ecosystem. Ecosystem is big but it is very hard to find anything related to the ecosystem. If I search anything on Google about `Ink Smart Contracts` in 5-6th search result, it starts to show me Ink Jet printer cartiages. I personally believe that Polkadot is going to be very huge in the future and everything starts with the discovery so that more and more people are aware about tools, jobs, grants, etc.
+### Project Details
+
+#### Tech Stack
+
+ - [Django](https://www.djangoproject.com/): We will be using Django as our Web framework.
+ - Database: We will be using Postgresql database.
+ - Wallet: We will be using polkadot{JS} extension wallet so that user can signup/login in the website by signing a message.
+
+#### API Schema
+
+ - `/`: home page, different for both authenticated and non-authenticated users.
+ - `/login`: Used to login.
+ - `/signup`: Used to signup.
+ - `/signout`: Used to signout.
+ - `/grants`: Used to see all the grants.
+ - `/grants/<grant_slug>`: Used to look for a grant.
+ - `/api/v1/grants/apply?grant=grant_slug`: Used to apply for a grant. Only candidate can use this.
+ - `/grants/new`: Used to create a new grant.
+ - `/bounties`: Used to view bounties.
+ - `/bounties/<bounty_slug>`: Used to view a bounty.
+ - `/api/v1/bounties/apply?bounty=bounty_slug`: Used to apply for a bounty. Only candidate can use this.
+ - `/bounties/new`: Used to create a new bounty.
+ - `/jobs`: Used to look for all the jobs.
+ - `/jobs/<job_slug>`: Used to look for a specific job.
+ - `/api/v1/jobs/apply?job=job_slug`: Used to apply for a job. Only candidate can use this.
+ - `/jobs/new`: Used to create a new job.
+ - `/tools`: Used to view all the tools, libraries, packages, etc.
+ - `/tools/<tool_slug>`: Used to view a tool.
+ - `/tools/new`: Used to create a new tool.
+ - `/learn`: Used to view all the learning resources.
+ - `/learn/<learn_slug>`: Used to view detail about a learning resource.
+ - `/learn/new`: Used to submit a new educational material.
+
+There are going to be **19** urls which means **19** HTML templates that would be rendered by Django.
+There are going to be atleast **3** APIs which will be called by the frontend.
+
+#### Primary Entities
+
+Here we have **6** primary entities.
+
+1. User: A user can either be a `candidate` or an `employer`. A candidate can apply for a job, bounty, grant. Candidate cannot create job, bounty, grant. Candidate can only submit a tool or educational material. An employer can create Grant, Bounty, Job. She can also submit tool, educational material. An employer cannot apply for job, bounty or grant.
+2. Grant: A `grant` can only be created by an employer. A candidate or multiple candidates can apply for a grant.
+3. Bounty: A `bounty` can only be created by an employer. A candidate or multiple candidates can apply for a bounty.
+4. Job: A `job` can only be created by an employer. A candidate or multiple candidate can apply for a job.
+5. Tool: Both candidate and employer can add a `tool`.
+6. Learn: Both candidate and employer can add a `learning material`.
 
 ### Ecosystem Fit
- - Where and how does your project fit into the ecosystem?
+
+Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
+
+- Where and how does your project fit into the ecosystem?
 We will become the discovery layer of Polkadot ecosystem.
- - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-Anyone who is either looking for a job, freelancing, looking for educational material are our users.
-  
+- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+Developers, writers, UI/UX, etc. all will be benifited by the project.
+- What need(s) does your project meet?
+Our project can provide user with earning opportunities, learning material and tools required to build on top of Substrate ecosystem.
+- Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
+  - If so, how is your project different?
+  - If not, are there similar projects in related ecosystems?
 
-### Simillar platforms on Solana
-
-- https://earn.superteam.fun
-
+  There is one project: https://earn.superteam.fun in solana ecosystem.
+  In polkadot ecosystem, https://polkassembly.io/ and https://polkasearch.xyz have a few things in the intersection but our platform is more about providing opportunities to the end user in this ecosystem.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-* Aviraj Khare
+- Aviraj Khare
 
 ### Contact
 
-*  **Contact Name:** Aviraj Khare
-* **Contact Email:** avirajkhare00@gmail.com
-
+- **Contact Name:** Aviraj Khare
+- **Contact Email:** avirajkhare00@gmail.com
+- **Website:** https://avirajkhare00.com
 
 ### Legal Structure
 
-*  **Registered Legal Entity:** About to register a legal entity
+- **Registered Legal Entity:** About to get registered
 
 ### Team's experience
 
-* Aviraj Khare: Worked in Gojek, Dukaan in the past. Into Web3 space since 2016. Successfully completed Ink Boxes and ink-wizard grant.
+**Aviraj Khare:** Ex Gojek. Into Web3 space since 2016. Completed two grants of Web3 foundation.
 
 ### Team Code Repos
 
-* https://github.com/avirajkhare00
+- https://github.com/avirajkhare00/ink-boxes
+- https://github.com/avirajkhare00/ink-wizard
+
+Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+
+- https://github.com/avirajkhare00
+
+### Team LinkedIn Profiles (if available)
+
+- https://www.linkedin.com/in/avirajkhare00
+
+
+## Development Status :open_book:
+
+Yet to start the development of the project.
 
 ## Development Roadmap :nut_and_bolt:
 
-# Overview
+This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
 
-## Grant level
+Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
 
-Level 2: Up to $30,000, 3 approvals
+### Overview
 
-
-## Development Roadmap :nut_and_bolt:
-
-*  **Total Estimated Duration:** 16 weeks
-
-*  **Total Costs:** 13,000 USD
+- **Total Estimated Duration:** 2 months
+- **Full-Time Equivalent (FTE):**  1 FTE
+- **Total Costs:** $10,0000 USD
 
 ### Milestone 1
 
-*  **Estimated Duration:** 5 weeks
-
-*  **Costs:** 4,000 USD
-
+- **Estimated duration:** 1 month
+- **FTE:**  1
+- **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide the documentation on the README.md file. |
-| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in unittest in python which is a great test runner to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0. | Creation of login, signup and roles functionality. | User should be able to signup/login/logout. User can also select the role, either looking for the opportunities or here to post about opportunities. |
-| 1. | Grant. | Creation of backend and frontend for grant. |
-| 2. | Grant CRM. | Creation of CRM for grant where they can edit/add/delete grant. |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide the documentation on the README of the repository. If needed, we will create `docs` directory that would contain in-depth documentation. |
+| **0c.** | Testing and Testing Guide | Models, Views and Forms will be covered by [`django.test`](https://docs.djangoproject.com/en/4.1/topics/testing/) module which is a sub-module of `unittest`. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | Authentication | User can be authenticated either via traditional web2 username/password or via polkadot extension wallet, web3 based. |
+| 2. | CRM for bounties | We will be creating this CRM using Django. Everyone can view a bounty, candidate can apply for bounty and employer can create bounty(ies). |
+| 3. | CRM for jobs | We will be creating this CRM using Django. Everyone can view jobs, candidate can apply for a job or multiple jobs, employer can list a job or multiple jobs. |
 
 ### Milestone 2
 
-*  **Estimated Duration:** 4 weeks
-
-*  **Costs:** 3,000 USD
-
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide the documentation on the README.md file. |
-| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in unittest in python which is a great test runner to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0. | Bounties. | User should be able to create new bounties or see all the bounties. |
-| 1. | CRM for Bounties. | Bounties creator should be able to see and shortlist people who created bounties. They can perform action to bounties like Active, Ended, Delete a bounty. |
-
-
-### Milestone 3
-
-*  **Estimated Duration:** 5 weeks
-
-*  **Costs:** 4,000 USD
-
+- **Estimated duration:** 1 month
+- **FTE:**  1
+- **Costs:** 5,000 USD
 
 | Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide the documentation on the README.md file. |
-| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in unittest in python which is a great test runner to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0. | Jobs. | User should be able to view or create jobs. |
-| 1. | CRM for Jobs. | User can create a new job, check who applied for a job, accept/reject a candidate. |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide the documentation on the README of the repository. If needed, we will create `docs` directory that would contain in-depth documentation. |
+| **0c.** | Testing and Testing Guide | Models, Views and Forms will be covered by [`django.test`](https://docs.djangoproject.com/en/4.1/topics/testing/) module which is a sub-module of `unittest`. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1. | CRM for Grant | We will be creating this CRM in Django. Users can view grant. Candidate can apply for a grant. Employer can create a grant. |
+| 2. | Tools | A listing page and viewing page for tools. Any user can add a tool inside polkadot ecosystem, user just needs to signup. |
+| 3. | Educational material | Any user can add new listing for educational meterial for polkadot ecosystem. Everyone can view the listing. |
 
 
-### Milestone 4
+## Future Plans
 
-*  **Estimated Duration:** 2 weeks
+Please include here
 
-*  **Costs:** 2,000 USD
-
-
-| Number | Deliverable | Specification |
-| ------------- | ------------- | ------------- |
-| 0a. | Apache License 2.0 | All code will be published under Apache 2.0 |
-| 0b. | Documentation | We will provide the documentation on the README.md file. |
-| 0c. | Testing and it's Guide | Core functions will be fully covered by comprehensive unit tests written in unittest in python which is a great test runner to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an article on medium and polkadot forum about it. |
-| 0. | Tools. | User should be able to view or create tool listing. |
-| 1. | Educational material. | User should be able to see or list educational material around substrate ecosystem. |
-
+- Creation of Discord Community.
+- Creation of the socials for polkasearch.
+- Reaching out to builders of Polkadot ecosystem to raise Jobs, Grants, Bounties, etc.
+- Reaching out to candidates using various social channels providing them with opportunities.
+- Already in talks with **SquareOne** team to push it into substrate builders program once we have some metric to show.
 
 ## Additional Information :heavy_plus_sign:
 
-### Future plans
+**How did you hear about the Grants Program?** Searched on Google
 
-We will be creating Discord community and various social handles to promote Polkasearch. We want to become next superteam.fun for Polkadot ecosystem.
+Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
+
+- Work you have already done.
+I have completed ink-boxes and ink-wizard grant in the past. They are into active development.
+- If there are any other teams who have already contributed (financially) to the project.
+No
+- Previous grants you may have applied for.
+Ink Boxes and Ink Wizard, both are accepted and completed.
