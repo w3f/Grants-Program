@@ -231,9 +231,8 @@ An important aspect of creating an ontology is to engage with experts from appli
 | **0b.** | Documentation/Tutorial | We will provide two PDF documents, one reporting scientific and technical findings and the other presenting  reflections over the discussed content and action items |
 | **0c.** | Methodology | The methodology for the team discussion will be loosely based on a Design Thinking process. We will guide the team during discussion in order to extract relevant feedback from experts. The idea is to carry this activity remotely. |
 | **0d.** | Infrastructure | We will suggest tool options for carrying out the collab session. That can be Mural or other equivalent free cloud collaborative tool available (e.g. Google Drive, MS Teams).|
-| **0e.** | Article | We will write a full **article** explaining what was achieved in this milestone. This article will have an acknowledgment in the body of it stating that the paper was supported by Web3 Foundation, and be public available on arXiv.org |
-| **1.** | Scientific paper | Document reporting technical findings for submission in listed scientific venues |
-| **2.** | Presentation deck | Slide deck with reflections over the discussed content and action items|
+| **0e.** | Article | We will write a full **article** detailing what was achieved in the project. The article will have an acknowledgment in the body of it stating the research was supported by Web3 Foundation. It will be public available on arXiv.org and submited to listed scientific venues |
+| **1.** | Presentation deck | Slide deck with reflections over the discussed content and action items|
 
 
 
