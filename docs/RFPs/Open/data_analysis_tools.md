@@ -17,7 +17,7 @@ For example, Accounts has some provenance information that is pretty difficult o
 
 This information is useful and requested for actual heavy users of the Polkadot/Kusama ecosystem.
 
-This RFP is not limited to the example above and intends to support other analyses. This RFP is not also limited to adding new features to the existent block explorer, the applicants can propose new analysis tools. Please notice that the intention here is not to create new block explorers that would have the same information, presented in the same way, as the current ones.
+This RFP is not limited to the example above and intends to support other analyses. This RFP is also not limited to adding new features to the existent block explorer, as applicants can propose new analysis tools as well. Please notice that the intention here is not to create new block explorers that would have the same information, presented in the same way, as the current ones.
 
 ## Deliverables :nut_and_bolt:
 
