@@ -147,41 +147,41 @@ Before applying for the Web3 Foundation Grant, the Zeeve team has built a DevOps
 Following are the mockups for high-level application operations, these are subject to change during development basis the requirement and behaviour.
 
 ### Dashboard
-![Dashboard](https://lh3.google.com/u/1/d/1w67xT8vRNHRT9UFPh3I1iHaFJcgHEd6O=w3456-h1830-iv1)
+![Dashboard](https://larch.zeeve.net/images/larch%20-%20Dasboard.png)
 
 ### Zoombinet network list
 
-![List all created Zoombie networks](https://lh3.google.com/u/1/d/14ZGT5z-xC8nmSjI0OcERdU3ED9wGCIix=w3456-h848-iv1)
+![List all created Zoombie networks](https://larch.zeeve.net/images/larch-znet-list.png)
 
 ### Create a new Zoombinet
 
-![Zoombinet Settings](https://lh3.google.com/u/1/d/1A5TPhqW76niVF75VJ07_qGVjpUDtjBL7=w3456-h1330-iv1)
+![Zoombinet Settings](https://larch.zeeve.net/images/larch-znet-settings.png)
 
-![Zoombinet Relaychain Configuration](https://lh3.google.com/u/1/d/1D40Xxmsn17DpvEkoKTOnCYjMDkJpw0yt=w3456-h1330-iv1)
+![Zoombinet Relaychain Configuration](https://larch.zeeve.net/images/larch-znet-relaychain.png)
 
-![Zoombinet Parachain configuration](https://lh3.google.com/u/1/d/1NMBQcvYw_MSIruRsOuWlhlDHszT5nQ9U=w3456-h1330-iv1)
+![Zoombinet Parachain configuration](https://larch.zeeve.net/images/larch-znet-parachain.png)
 
-![Zoombinet Collator configuration](https://lh3.google.com/u/1/d/1GyqImmyBl_J1xI4YkW2HrWUd0zFX3TV_=w3456-h1330-iv1)
+![Zoombinet Collator configuration](https://larch.zeeve.net/images/larch-znet-collator.png)
 
-![Zoombinet HRMP configuration](https://lh3.google.com/u/1/d/1zDm3oS4b5QnPnJ_GOTD_k8tArf3vH86-=w3456-h1330-iv1)
+![Zoombinet HRMP configuration](https://larch.zeeve.net/images/larch-znet-hrmp.png)
 
 ### Relaychain, Parachain, specfile and WASM templates
 
-![Zoombinet Configuration teomplates](https://lh3.google.com/u/1/d/1wFXzNpOwyx9C5FLV7-WFhgM-lNBqfjCv=w3456-h1330-iv1)
+![Zoombinet Configuration teomplates](https://larch.zeeve.net/images/larch-template-config.png)
 
-![Zoombinet WASM image templates](https://lh3.google.com/u/1/d/1GaABdQLd2c2t76Jlp4hFRfIc5Q6rsrco=w3456-h1330-iv1)
+![Zoombinet WASM image templates](https://larch.zeeve.net/images/Larch-Template-image.png)
 
 ### User activity and operation history
 
-![User activity and operation history](https://lh3.google.com/u/1/d/1RRK-tqEY1OzIR-xg6k1Mn0VYFCEu7iFg=w3456-h1330-iv1)
+![User activity and operation history](https://larch.zeeve.net/images/larch-user-activity.png)
 
 ### DSL Templates
 
-![DSL Template list](https://lh3.google.com/u/1/d/189hmcnQIoAF48UEYCKaDQT_CxgkNfPEl=w3456-h1330-iv1)
+![DSL Template list](https://larch.zeeve.net/images/larch-dsl-list.png)
 
 ### Embedded DSL Editor
 
-![DSL Editor](https://lh3.google.com/u/1/d/1BTrVDYNYx5MO40pL_6owvB-fe3E2Eho3=w3456-h1330-iv1)
+![DSL Editor](https://larch.zeeve.net/images/larch-dsl-editor.png)
 
 ## Technology Stack
 - ReactJS
