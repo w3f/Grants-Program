@@ -28,6 +28,6 @@ The expected deliverables are the tool features that provide specific data analy
 - The expected output for the data analysis (ex: a set of transactions that made/removed a balance reserve in the input account)
 
 
-The proposed analysis should not overlap with the current ones existent if the information is easy to extract in block explores of Polkadot/Kusama ecosystem. They could overlap if the information is not simple or intuitively found by non-technical users in the current block explorers (ex. based on multiple steps in the block explorer or based on events data).
+The proposed analysis should not overlap with existing ones if the information is easy to extract in block explorers of the Polkadot/Kusama ecosystem. They can, however, overlap if the information is not simple or can't intuitively be found by non-technical users in the current block explorers (ex. based on multiple steps in the block explorer or based on events data).
 
 The user interface provided should allow the users to make or find the questions that can be answered by the tool. The tools should NOT demand that users need to know or learn technical query languages such as SQL, GraphQL, or any other.
