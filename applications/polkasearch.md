@@ -162,6 +162,7 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | **0b.** | Documentation | We will provide the documentation on the README of the repository. If needed, we will create `docs` directory that would contain in-depth documentation. |
 | **0c.** | Testing and Testing Guide | Models, Views and Forms will be covered by [`django.test`](https://docs.djangoproject.com/en/4.1/topics/testing/) module which is a sub-module of `unittest`. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| **0e.** | Article | We will be publishing a blog about polkasearch on Medium and Polkadot forum. |
 | 1. | CRM for Grant | We will be creating this CRM in Django. Users can view grant. Candidate can apply for a grant. Employer can create a grant. |
 | 2. | Tools | A listing page and viewing page for tools. Any user can add a tool inside polkadot ecosystem, user just needs to signup. |
 | 3. | Educational material | Any user can add new listing for educational meterial for polkadot ecosystem. Everyone can view the listing. |
