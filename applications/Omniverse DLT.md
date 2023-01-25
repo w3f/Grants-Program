@@ -32,7 +32,7 @@ O-DLT works at an **application level**, which means everything related is proce
 In this application, three forms of implementation of the Omniverse DLT will be provided. 
 - It will be implemented as a `substrate pallet`, which can be used as a basic component in any `Substrate Parachain` project. The omniverse assets part will derive from `pallet assets`.
 - It will be implemented as `ink!` smart contracts, which is an upgrade to the current FT/NFT smart contract for `Substrate Ink!`.
-- It will be implemented as `solidity` smart contracts(for Moonbeam), which is an upgrade to the current ERC20/ERC721 smart contract. **This is not part of this grant, but we will still provide it**.  
+- It will be implemented as `solidity` smart contracts (for Moonbeam), which is an upgrade to the current ERC20/ERC721 smart contract. **This is not part of this grant, but we will still provide it**.  
 
 Besides being used for Dante's token, everyone in Polkadot can use O-DLT as a component to build their own project if they want their tokens to be global.  
 
