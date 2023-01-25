@@ -88,29 +88,30 @@ Simnode comprises of all the components of a Substrate full node with the inclus
 
 ### Team's experience
 
-Polytope Labs is a collective of core blockchain engineers, researchers & scientists from varying blockchain protocol backgrounds passionate about the proliferation of networks over platforms and enabling this future through blockchain research & education, tooling and core infrastructure development.
+Polytope Labs is a collective of core blockchain engineers, researchers & scientists from varying blockchain protocol backgrounds passionate about the proliferation of networks over platforms and enabling this future through blockchain research & education, tooling and core infrastructure development. We have members actively contributing to the code utilized by the Polkadot ecosystem( [Seun Lanlege](https://github.com/polkadot-fellows/seeding/pull/33), [David Salami](https://github.com/polkadot-fellows/seeding/pull/38), [Damilare Akinlose](https://github.com/polkadot-fellows/seeding/pull/41), [Jesse Chejieh](https://github.com/polkadot-fellows/seeding/pull/25)). 
+
 
 ### Team Code Repos
 
-- [Simnode](https://github.com/<polytope-labs>/<substrate-simnode>)
-- [Prisma Client](https://github.com/<polytope-labs>/<prisma-client-rs>)
+- [Simnode](https://github.com/polytope-labs/sc-simnode)
+- [Prisma Client](https://github.com/polytope-labs/prisma-client-rs)
 - [Solidity Merkle Trees](https://github.com/polytope-labs/solidity-merkle-trees)
 
 ### Team GitHub Profiles
 
-- [Seun Lanlege](https://github.com/<seunlanlege>)
-- [David Salami](https://github.com/<Wizdave97>)
-- [Damilare Akinlose](https://github.com/<dharjeezy>)
-- [Femi Bankple](https://github.com/<iTranscend>)
-- [Jesse Chejieh](https://github.com/<Doordashcon>)
+- [Seun Lanlege](https://github.com/seunlanlege/)
+- [David Salami](https://github.com/Wizdave97/)
+- [Damilare Akinlose](https://github.com/dharjeezy/)
+- [Femi Bankole](https://github.com/iTranscend/)
+- [Jesse Chejieh](https://github.com/Doordashcon/)
 
 ### Team LinkedIn Profiles
 
-- [Seun Lanlege](https://www.linkedin.com/<seunlanlege>)
-- [David Salami](https://www.linkedin.com/<david-salami-188aa8170>)
-- [Damilare Akinlose](https://www.linkedin.com/<damilare-akinlose-6289b5b8>)
-- [Femi Bankole](https://www.linkedin.com/<femibankole>)
-- [Jesse Chejieh](https://www.linkedin.com/<jesse-chejieh-47020322a>)
+- [Seun Lanlege](https://www.linkedin.com/in/seunlanlege/)
+- [David Salami](https://www.linkedin.com/in/david-salami-188aa8170)
+- [Damilare Akinlose](https://www.linkedin.com/in/damilare-akinlose-6289b5b8)
+- [Femi Bankole](https://www.linkedin.com/in/femibankole)
+- [Jesse Chejieh](https://www.linkedin.com/in/jesse-chejieh-47020322a)
 
 
 ## Development Status :open_book:
