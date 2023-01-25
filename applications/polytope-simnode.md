@@ -1,7 +1,7 @@
 # sc-simnode
 
 - **Team Name:** Polytope Labs Ltd
-- **Payment Address:** 0xC70ac55B07A070743555C5D12B263733eCae9f92 (Ethereum ERC20 USDT)
+- **Payment Address:** 0xC70ac55B07A070743555C5D12B263733eCae9f92 (Ethereum DAI)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -17,16 +17,51 @@ Parachains on Polkadot and Kusama will be able to definitively tell the long and
 
 ### Project Details
 
+#### Technology Stack
+- Rust
+- Substrate
+#### Components
+
+***Traits***
+
+`SimnodeCli` - Cli Extension trait.
+
+`ChainInfo` - Wrapper trait for concrete type required by this testing framework.
+
+`NativeExecutionDispatch` - For Dispatching calls to the runtime and extending the host functions.
+
+#### Setup & Commands
+To run Simnode with a parachain runtime;
+
+1. Create a new binary within your project environment(i.e `cargo new simnode-parachain-template`).
+   
+2. Import the Parachain runtime that needs to be tested.
+   
+3. Implement the traits described above.
+   
+4. Call [parachain_node](https://github.com/polytope-labs/sc-simnode/blob/fcfa2dee4ebdd4652375ec9c4b3eba2a63c2d28f/src/client.rs#L373) function within the created binary. 
+ 
+Similarly call [standalone_node](https://github.com/polytope-labs/sc-simnode/blob/fcfa2dee4ebdd4652375ec9c4b3eba2a63c2d28f/src/client.rs#L272) to run Simnode with a standalone runtime.
+
+```bash
+# build
+cargo build --release -p simnode-parachain-template
+# run like so
+./target/release/simnode-parachain-template --chain=name # pass all the args you would normally pass to the collator
+```
+
 #### Purpose
 
 Simnode spawns a single node testing environment and not a network environment.
 
-#### Technology Stack
-- Rust
-- Substrate
-
 #### Architecture
 ![Simnode Architectural Overview](https://drive.google.com/uc?id=1xEG1oahxWuWhiR3LDUwpZVG42vwIA3Oc)
+
+Simnode comprises of all the components of a Substrate full node with the inclusion of;
+
+**SignatureVerificationOverride** - Overriding Substrate's signature verification mechanism by default.
+
+**ManualSeal** - For manually sealing blocks, swapped in for the block authoring mechanism such as Babe/Aura.
 
 ### Ecosystem Fit
 
@@ -95,7 +130,11 @@ Originally developed by Seun Lanlege as [Manual Seal](https://www.youtube.com/wa
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1 | Development | [Simnode](https://github.com/polytope-labs/substrate-simnode) is operational and adopts the Apache 2.0 License, Simnode was also featured on [Substrate Seminar](https://www.youtube.com/watch?v=0FvcABti7yk) providing a walk-through on integration into the development pipeline|
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide both inline documentation of the Rust code and a basic tutorial that explains how a user can integrate Simnode to a Substrate based runtime using README. |
+| **0c.** | Testing and Testing Guide | Integration test with an existing runtime that encompasses the usage of Simnode APIs. In the guide, we will describe how to test Substrate based runtimes using Simnode. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1 | Development | [Simnode](https://github.com/polytope-labs/substrate-simnode) is operational and was featured on [Substrate Seminar](https://www.youtube.com/watch?v=0FvcABti7yk) providing a walk-through on integration into the development pipeline|
 
 ### Milestone 2 — Documentation & Video Tutorials
 
@@ -105,11 +144,11 @@ Originally developed by Seun Lanlege as [Manual Seal](https://www.youtube.com/wa
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| **0b.** | Documentation | We will provide both **inline documentation** of the code and explicit scenarios with boiler plate code where Simnode is currently applicable, which includes runtime migrations, runtime upgrades & business logic simulations(pallet interactions, smart contract calls) and will be available via git book.|
-| **0c.** | Testing and Testing Guide | An existing unit test of [Simnode](https://github.com/ComposableFi/centauri/blob/83d7cffce6032cc12ac44fd718798069dd966c45/utils/simnode/src/lib.rs#L125) has been written showing core functions.|
-| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.|
-| 0e | Article | We will publish an article that explains what was done/achieved as part of the grant.|
-| 1 | Video Tutorials | We will provide tutorials on our [Youtube Channel](https://www.youtube.com/@polytopelabs) for more visual learners going through both integration and usage scenarios|
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | We will provide explicit scenarios with boiler plate code written in Rust where Simnode is currently applicable, which includes runtime migrations, runtime upgrades & business logic simulations(pallet interactions, smart contract calls) and will be available via [git book](https://www.gitbook.com/). |
+| **0c.** | Testing and Testing Guide | Integration test with an existing runtime that encompasses the usage of Simnode APIs. In the guide, we will describe how to test Substrate based runtimes using Simnode. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 1 | Video Tutorials | We will provide video tutorials on [Youtube Channel](https://www.youtube.com/@polytopelabs) for the more visual learners going through both integration and usage scenarios. |
 
 ### Milestone 3 — Maintenance
 
@@ -119,7 +158,12 @@ Originally developed by Seun Lanlege as [Manual Seal](https://www.youtube.com/wa
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 1 | Maintenance | This includes but not limited to Substrate version upgrades, bug fixes and code optimizations.| 
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | If required, updates to both inline documentation of the Rust code and the basic tutorial that explains how a user can integrate Simnode to a Substrate based runtime using README . |
+| **0c.** | Testing and Testing Guide | If required, an updated integration test with an existing runtime that encompasses the usage of Simnode APIs and a guide describing how to test Substrate based runtimes using Simnode. |
+| **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e | Article | We will publish an article that explains what was done/achieved as part of the grant.|
+| 1 | Maintenance | This includes but not limited to Substrate version upgrades, bug fixes and code optimizations.|
 
 ## Additional Information :heavy_plus_sign:
 
