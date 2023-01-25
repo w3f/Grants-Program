@@ -67,6 +67,14 @@ Here we have **6** primary entities.
 5. Tool: Both candidate and employer can add a `tool`.
 6. Learn: Both candidate and employer can add a `learning material`.
 
+#### Designs
+
+Designs of few pages.
+
+1. ![Home Page](https://i.imgur.com/O5nd7q9.png)
+2. ![Signup Page](https://i.imgur.com/2Tg5bAc.png)
+3. ![Create a Job Page](https://i.imgur.com/2dIRPza.png)
+
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
