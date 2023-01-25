@@ -1,4 +1,4 @@
-# Name of your Project
+# Polkadot Smart Chain
 
 - **Team Name:** OmniBTC
 - **Payment Address:** 0xBC9C045476F5A85A920EF8F8745631CEC687a4e8 (USDC - Ethereum network)
