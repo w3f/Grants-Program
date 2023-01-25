@@ -1,7 +1,6 @@
 ---
 sidebar_position: 11
 title: FAQ
-id: FAQ
 ---
 
 # Frequently Asked Questions<!-- omit in toc -->
@@ -75,7 +74,7 @@ id: FAQ
 
 ### Can I list the Web3 Foundation as a partner?
 
-  No. Once the grants team has accepted your first milestone, you may display our [grants badge](Support Docs/grant-badge-guidelines) in a project-specific context, such as the repository containing the grant project work.
+  No. Once the grants team has accepted your first milestone, you may display our [grants badge](Support%20Docs/grant-badge-guidelines) in a project-specific context, such as the repository containing the grant project work.
 
 ### Can you help me advertise my project?
 

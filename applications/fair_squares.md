@@ -8,25 +8,29 @@
 
 ### Overview
 
-Fair Squares aims is to co-create a more transparent and fair housing market for tenants, co-owners and social investors. In order to make rental housing more affordable and accessible to a larger group of people.
+Fair Squares aims to co-create a more transparent and fair housing market for tenants, co-owners and social investors. In order to make rental housing more affordable and accessible to a larger group of people. 
 
 - A brief description of our project.
 
-Fair squares aims to implement a return-on-rent variable on rental houses with a fractional ownership. The return-on-rent variable brings the investor and tenant in direct relationship, with a view to create the right balance to close the affordable housing gap. A group of individual investors, each bundling their capital to invest in a house that is for sale, get together with purpose to rent it out. Based on their individual fractional share of the house, their investment produces an acceptable yield, which is the social return-on-rent.
+Fair squares is a coordination framework for onboarding, financing and housing of real estate assets where affordability & equitability are the guiding principles. It implements a return-on-rent model for the new fractional owners. The return-on-rent variable brings the investor and tenant in direct relationship, with a view to create the right balance to close the affordable housing gap. A group of individual investors, each bundling their capital to invest in a house that is for sale, get together with purpose to rent it out. Based on their individual fractional share of the house, their investment produces an acceptable yield, which is the social return-on-rent.
 
-The purpose of this project is to stimulate affordable housing, through the use of a specific blockchain, while offering investors a similar return compared to other defensive investments. The community agrees on the capped yield, which controls the rent and keeps it affordable. These parameters are governed by the council and stakeholders that strive for a fair housing market.
+The purpose of this project is to stimulate affordable housing, through the use of a blockchain, while offering investors a similar return compared to other defensive investments. The blockchain runtime has the required modules to finance, onboard assets, bid, transact and rent out. These parameters are governed by the council and stakeholders that strive for a fair housing market. 
 
-To achieve the above, we rely on bringing assets on-chain and verifiable by real world actors that have the credentials to do so. By using Web3 technology in a semi-permissionless system for real-world assets, together with digital currencies and decision making tools, we can lower the barrier to entry to invest in the housing market and make it transparent and equitable, while matining an attractive yield for potential investors.
+To achieve the above, we rely on bringing assets on-chain and verifiable by real world actors that have the credentials to do so. By using Web3 technology in a semi-permissionless system for real-world assets, together with digital currencies and decision making tools, we can lower the barrier to entry to invest in the housing market and make it transparent and equitable for investors and renters.
 
 - Integration into Substrate / Polkadot / Kusama.
 
-The Kusama and Polkadot ecosystem allow us to use the required building blocks through the relay-chain. The substrate framework allows us to configure runtime to the custom needs and bring out a protocol that works like clockwork to onboard assets and rent them out. The already open-sourced frame pallets and other teams' building blocks are helping us a lot in achieving the above.
+The substrate framework allows us to configure runtime to the custom needs to create a protocol that works to onboard assets and rent them out. The already open-sourced frame pallets and other teams building blocks are helping us to achieve our goal. 
 
-For our social mission to be succesful, we require several actions on-chain, such as voting, selection of funds, governing and reccuring payments. We are looking to build a feeless parachain while getting the security from the relay-chain. We believe that the parachain functiunality collaboration is crucial to our mission by using multi-chain services for DIDs, stablecoins and storage protocols within the substrate web3 ecosystem.
+For our social mission to be succesful, we require several actions on-chain, such as voting, selection of funds, governing and reccuring payments. We are looking to build a feeless parachain while getting the security from the relay-chain. We believe that the parachain functiunality collaboration is crucial to our mission by using other multi-chain services for DIDs, stablecoins and storage protocols within the substrate web3 ecosystem.
 
 - Our motivation.
 
-It is exciting to see the rise of DeFi, the increasing TVL of liquidity, taking over traditional finance roles such as a market-maker, but not fully. We, as a team, are users of these (DeFi) products and believe there is no turning back from this. Nevertheless, we are seeing the negative social economical consequences, collapsing protocols, or not being fully educated just because of a juicy APR. We want to focus on the blockchain technology that is equitable, no matter the time-frame you enter, create more connections to the real-world, while remaining usable in a multi-chain world. We want people to  earn a competitive return on their investment, while building an equitable system that is accesible for all. Finally, our project will contribute to stop profit maximization on basic needs while striving to keep both ends of the supply and demand in balance. We strongly believe that the blockahin is the perfect technology to reconcile all stakeholders invovled in the social real-estate market, thus working to stregthen public good.
+It is exciting to see the rise of DeFi, the increasing TVL of liquidity, taking over traditional finance roles such as a market-maker, but not quite. We as a team, are users of these (DeFi) products and believe there is no turning back from this. Nevertheless, we are seeing the negative social economical consequences , collapsing protocols, or not being fully educated just because of a juicy return.
+
+ We want to focus on the blockchain technology that is equitable, no matter the time-frame you enter the blockchain, so you don't have the feeling your missing out something. 
+ 
+Finally, our project will contribute to stop profit maximization on basic needs while striving to keep both ends of the supply and demand in balance. We strongly believe that the blockahin is the perfect technology to reconcile all stakeholders invovled in the social real-estate market, thus working to stregthen public good.
 
 ### Project Details
 
@@ -228,7 +232,7 @@ The **techstack** that is currently focused on:
 - Substrate node, substrate pallets and customized pallets based on FS logic
 - Front-end template connected through WS,  Polkadot.js for testing specific features through the extrinsics.
 
-We are building this system so we can publish it as a live project and invite the committed organizations, such as municipalities, housing coops, and housing corporations, to use it. We aim at co- creating simulations against current financing structures and trigger real user feedback.  We want to go first for a live testnet where further testing, experimenting and coordination can take place. This will give us the time to focus and iterate again after completion of all milestones.
+We are building this system so we can create a testnet and invite and educate the committed organizations, such as municipalities, housing coops and other important roles. We aim at co-creating simulations against current financing structures and trigger real user feedback.  We want to go first for a live testnet where further testing, experimenting and coordination can take place. This will give us the time to focus and iterate again after completion of all milestones.
 
 ### Ecosystem Fit
 
@@ -238,22 +242,22 @@ Looking at Kusama & Polkadot, there are more specialized parachains being onboar
 
 - Who is your target audience ?
 
-The target audience for using the developed pallets are the end-users such as investors, sellers, verifiers, oracles. The current short-term goal is to further research, experiment and zero-in on our product/market fit. We are in talks with several institutions in the Netherlands that we rely on for further developing this concept to bring it in the longer term future to be a  functional application for affordable housing. Our goal is to get into a functional MVP that can handle a case and learn from the interactions. This will help us gather information about the limitations of interactions between Blockchain and real-world processes, and devise additional solutions.
+The target audience for using the developed pallets are the end-users such as investors, sellers, verifiers, oracles. The current short-term goal is to further research, experiment and zero-in on our product/market fit. We are in talks with several institutions in the Netherlands that we rely on for further developing this concept to bring it in the longer term future to be a  functional application for affordable housing. Our goal is to get into a functional MVP that can handle a case and learn from the interactions. This will help us gather information about the limitations of interactions between FS blockchain and real-world processes, and devise additional solutions.
 
 - What need(s) does your project meet?
 
-FS project focuses is on utilizing the available building blocks that are known in the cryptospace to make affordable housing possible with maximum as possible transparancy, while respecting pseudonimity of the users. The real world integration of blockchains are still minimal. We have payments for pyshical goods, but nothing really interacting with the real world, business and retailers. We believe that crypto systems implementation will look very different 5-10 years from now, we hope to kick-start that by focusing on a real-world problem. For now, the need is for the solution just to be functional enough to allow real-world testing, but combined with good token-design and fair distributions that give access to equitable systems for future users.
+FS project focuses is on utilizing the available building blocks that are known in the  to make affordable housing possible with maximum as possible transparancy, while respecting pseudonimity of the users. The real world integration of blockchains are still minimal. We have payments for pyshical goods, but nothing really interacting with the real world, business and retailers. We believe that crypto systems implementation will look very different 5-10 years from now, we hope to kick-start that by focusing on a real-world problem. For now, the need is for the solution just to be functional enough to allow real-world testing, but combined with good token-design and fair distributions that give access to equitable systems for future users.
 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
 
-We are not aware of any other projects that are focusing on housing and/or real estate in the Substrate / Polkadot / Kusama ecosystem. This project is pretty unique. There are however big parts of our design that are heavily inspired by the design of the governance layers in Kusama / Polkadot and Phragmén method for allocating funds in an asset. Outside of substrate based ecosystem, there are a couple of real estate projects, maybe the most notable being RealT, but it just focuses on the return of rental houses, where the LLC takes care of everything on the background and users just see their tokens and returns. We want to open this up fully and create an open transparent system while lowering housing costs.
+We are not aware of any other projects that are focusing on housing and/or real estate in the Substrate / Polkadot / Kusama ecosystem. This project is pretty unique in the web. There are however big parts of our design that are heavily inspired by the design of the governance layers in Kusama / Polkadot and Phragmén method for allocating funds in an asset. Outside of substrate based ecosystem, there are a couple of real estate projects, maybe the most notable being RealT, but it just focuses on the return of rental houses, where the LLC takes care of everything on the background and users just see their tokens and returns. We want to open this up fully and create an open transparent system while lowering housing costs.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
 - Name of team leader: Ilhan  Ünlü
-- Names of team members: Mahir Özdemir, Kazunobu Ndong, Stephen Meyo Mba, Thibaut Segura and and Mrisho Lukamba
+- Names of team members: Mahir Özdemir, Kazunobu Ndong, Stephen Meyo Mba, Thibaut Segura and Oliver Lim
 
 ### Contact
 
@@ -275,9 +279,9 @@ The idea of Fair Squares and work has been existing for 2 years. We wrote a [lig
 - **Stephen**: Is a software engineer with experience mainly in .net environment, web app and desktop applications for different clients in banks, health and sport. He started to learn Rust in December with the objective to help concretize the project with his development skills according to the roadmap that we will define further.
 - **Mahir**: is responsible for the market part of the FS research and the pilots with municipalities and other stakeholders. He is involved as an entrepreneur and consultant in various IT solutions such as [unlocQed](https://www.unlocQed.com) (honest recruitment) and works on [Weconomics blockchain projects](https://weconomics.org/) and is responsible for research, design and valorization. Mahir is not taking part in the grants program as his contribution is not technical, but is vital part of the team for busuiness development.
 - **Thibaut**: Thibaut will be focusing on th design and the front-end mainly in the last milestone. He brings 15+ years of experience in digital product design, user research, and product/market fit methodologies.
-- **Mrisho**: Mrisho was a part of the APAC hackathon team but didn't get to really contribute. He is an active member in different substrate ecosystem channels. Studies intelligence robotics in multimedia at Malaysia University. Has 2 years experience on software engineering.
+- **Oliver**: Software engineer with experience in web, desktop and mobile applications. Keen on competitive programming, very interested in analyzing and tackling with highly challenging technical problems.
 
-Part of the team  team together has only ideating and been working on Fair squares and has not applied for other Web3F grants.
+Part of the team together has only ideating and been working on Fair squares and has not applied for other Web3F grants.
 
 ### Team Code Repos
 
@@ -291,7 +295,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - <https://github.com/ndkazu>
 - <https://github.com/letodunc>
 - <https://github.com/toosolid2003>
-- <https://github.com/MrishoLukamba>
+- <https://github.com/cuteolaf>
 
 ### Team LinkedIn Profiles (if available)
 
@@ -300,7 +304,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - <https://www.linkedin.com/in/stephen-meyo-193109a/>
 - <https://www.linkedin.com/in/mahirozdemir/>
 - <https://www.linkedin.com/in/thibautsegura/>
-- <https://www.linkedin.com/in/mrisho-lukamba/>
+- <https://www.linkedin.com/in/oliver-lim-2215a8235/>
 
 ## Development Status :open_book:
 
@@ -475,10 +479,10 @@ style B fill:#f9f,stroke:#333,stroke-width:4px
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. Also there will be integration tests covering the pallets and modules of milestone 1,2,3,4 . In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the the usage of the functionality in additon to the previous milestones. The article will emphasize why finalization of the asset acquirement is required, why a representative is needed and what it's role is. How other previous stakeholders interact with the new functions and roles.|
-| 1. | **pallet-finalizer** | Before the house title can be transfered to the fractional new owners when the sale of an asset sale is succesful there needs to be checks done by the appointed notary. This is the authority, also in the current finalization of the title transfers. Notaries make sure the new buyers are aware of what they are buing and the notary makes sure no one else can write the asset on their name. In FS's case this swap is done by the blockchain, but the notary would give the green light. The finalization will be it's own pallet and functionality will be expanded in the future. The roles will be set in **pallet-roles**, which gives the notary and the land registry users rights to let the exchange pass. The transfer titles need to be proofs, the proof for now will be simplified random hashes, but only the notary role should be allowed to and sigantures by the notary roles |
+| 1. | **pallet-finalizer** | Before the house title can be transfered to the fractional new owners when the sale of an asset is succesful there needs to be checks done by the appointed notary. This is the authority, also in the current finalization of the title transfers. Notaries make sure the new buyers are aware of what they are buing and the notary makes sure no one else can write the asset on their name. In FS's case this swap is done by the blockchain, but the notary would give the green light. The finalization will be it's own pallet and functionality will be expanded in the future. The roles will be set in **pallet-roles**, which gives the notary and the land registry users rights to let the exchange pass. The transfer titles need to be proofs, the proof for now will be simplified random hashes, but only the notary role should be allowed to and sigantures by the notary roles |
 | 2. | Module: **representative** | When the sale of an asset is finalized, the new fractionalized owners are to be assigned a representative. The representative of the owners finds a tenant from the pools of tenants registered on-chain. The representatitive has to find the match based on region, total inhabitants and costs. The tenant will have to provide all this information. that will represent the house owners and find a tenant. |
-| 3. | Module: **landlord-voting** | With the sale being finalized the new asset-owners/landlords can vote in a representative, vote over improvements, lay-down a representative if it doesn't perform or represent the best interest of the owners. This module is created in the **pallet-roles** and **pallet-voting** |
-| 4. | FS-chain | In milestones we build the functionality further with the **pallet-finalizer** the finalizer, gives us the certainty that a sworn trusting legal entity is able to finalize the sale and with the representatitve we us the finalization of the asset and fractional owners. With the following new modules landlord voting, we can give the shareholders of a house a say in who get's to be the representative. So the next steps for matching can be handled.   |
+| 3. | pallet: **asset-management** | With the sale being finalized the new asset-owners can vote in a representative, vote over improvements, lay-down a representative if it doesn't perform or represent the best interest of the owners. This module is created in the **pallet-roles** and **pallet-voting** |
+| 4. | FS-chain | In milestones we build the functionality further with the **pallet-finalizer** the finalizer, gives us the certainty that a legal entity is able to finalize the sale of the asset and fractional owners receive their shares. With the asset-management voting, we can give the shareholders of a house a say in who get's to be the representative. So the matching of a tentant can be handled.|
 
 ```mermaid
 flowchart
@@ -522,8 +526,8 @@ Milestone:4
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** and **video** that explains what actions you can take on the front-end does and the build up of the several pages.
-| 1. |  Module: **matching** | We will expand on the tenants registration, we will be keeping when a tenant is registered, what region they are applying for and how big their household is. We will also expand on this structs on the asset side. The representative can ask for more information in which the user can share it with the representative. The representative will propose a tenant to the letter.|
-| 2. |  **pallet-recurring-payments** | The renter will have to place a deposit and the monthly rent in. The rent can be credited per x-block basis. The recurring payment can also go in the negative if the renter cannot pay the rent on time, let's say per rule-of-law 14 days and it signals the representative after this time to get in touch. |
+| 1. |  Pallet: **tenancy** | We will expand on the tenants registration, we will be keeping when a tenant is registered, what region they are applying for and how big their household is. We will also expand on this structs on the asset side. The representative can ask for more information in which the user can share it with the representative. The representative will propose a tenant to the letter.|
+| 2. |  Pallet: **payments** | The renter will have to place a deposit and the monthly rent in. The rent can be credited per x-block basis. The recurring payment can also go in the negative if the renter cannot pay the rent on time, let's say per rule-of-law 14 days and it signals the representative after this time to get in touch. |
 | 2. |  **UI & frond-end** | During the time of development also in previous milestone we will have produced several wire-frames and a front-end frame we will work with. We want to have for each main section page, which are: Funding, Onboarding, Voting, Finalizing and Renting. These will be the most used functionalities. If time allows also a front-end a dashboard that shows the total homes that are on the platformm, the value locked etc. This will be the biggest effort of this milestone.|
 | 2. | Total product FS | The combination of the previous milestones and this one, with UI gives us the  us the automation the first iteration of the Fair Squares platform that will allow us a crowdfunded fair housing protocol, with an simplified legal acceptance framework. |
 

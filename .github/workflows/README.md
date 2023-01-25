@@ -5,6 +5,7 @@
 
 0. Setup your Google API Credentials on https://console.developers.google.com/
     - Credentials -> Create Credentials -> Service Accounts
+    - Enable the Google Sheets API under [APIs and Services](https://console.cloud.google.com/apis/dashboard?project=festive-folio-343701)
 
 1. Fork the Open Grants repo (or create a private repo and push to it)
 
@@ -12,6 +13,8 @@
    - GSHEET_PRIVATE_KEY
    - GSHEET_CLIENT_EMAIL 
    - SPREADSHEET_ID
+   - MATRIX_TOKEN
+   - MATRIX_CHANNEL_ID (for both matrix vars, refer to [this](https://github.com/fadenb/Matrix-Chat-Message) guide, W3F account is on 1Password)
    - ACTIONS_STEP_DEBUG: set this to true for more verbose logs on workflow runs
    - ACTIONS_RUNNER_DEBUG: similar as above, haven't tried it
 

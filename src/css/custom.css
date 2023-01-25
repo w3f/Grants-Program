@@ -22,6 +22,15 @@
   font-size: 4rem;
 }
 
+
+.footer__link-item {
+  text-decoration: none;
+}
+
+.footer__link-item:hover {
+  color: #ebedf0;
+} 
+
 .navbar__items {
   font-size: 18px;
 }
