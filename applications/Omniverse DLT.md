@@ -219,7 +219,7 @@ After the simulation, we believe that the Omniverse DLT is achievable on Polkado
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | GPLv3 |
-| **0b.** | Documentation | - We will provide docs to explain how O-DLT works in a high-level <br> - We will provide dev docs to explain how to develop an O-DLT component in Substrate Pallet <br> - We will provide tutorial docs to explain how to use it |
+| **0b.** | Documentation | - We will provide docs to explain how O-DLT works in a high-level <br/> - We will provide dev docs to explain how to develop an O-DLT component in Substrate Pallet <br/> - We will provide tutorial docs to explain how to use it |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Article | We will publish an **article** that explains what was done/achieved in this milestone as part of the grant. |
 | 1. | Substrate module: omniverse assets | We will create a Substrate module that will manage the Omniverse tokens, which will be derived from standard `pallet assets` |
@@ -236,7 +236,7 @@ After the simulation, we believe that the Omniverse DLT is achievable on Polkado
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | GPLv3 |
-| **0b.** | Documentation | - We will provide docs to explain how the Omniverse Swap based on O-DLT works in a high-level <br> - We will provide dev docs to explain how to develop an O-DLT component in `Ink!` smart contract <br> - We will provide tutorial docs to explain how to use the omniverse swap |
+| **0b.** | Documentation | - We will provide docs to explain how the Omniverse Swap based on O-DLT works in a high-level <br/> - We will provide dev docs to explain how to develop an O-DLT component in `Ink!` smart contract <br/> - We will provide tutorial docs to explain how to use the omniverse swap |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) to run Synchronizers along with the documentation of the setup. |
 | 0e. | Article | We will publish an **article** that explains what was done/achieved in this milestone as part of the grant. |
