@@ -1,34 +1,50 @@
-# Substrate Tokenomics: The state of (rational) play
+# Substrate Tokenomics:
 
 - **Team Name:** Mark Van de Vyver [PhD(Dist)](https://www.student.uwa.edu.au/course/award-verification-service?family=van+de+vyver&family_partial=on&given=mark&search=Search)
-- **Payment Address:** To be provided (e.g. 0x8920... (DAI))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
+- **Payment Address:** To be provided (e.g. 0x8920... (USD))
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
 
 ### Overview
 
-A survey of some economic models used to develop Substrate (Polkadot) blockchain/token economies.
-The literature reviewed will be from the rational expectations equilibrium (a.k.a. no-arbitrage) approach to economic analysis.
+A annotated bibliography of rational expectations equilibrium (a.k.a. no-arbitrage) economic models used to develop blockchain/token economies, as well as the tokenomics of Polkadot Parachains.
+
 This is a survey, hence limited to topics the existing literature addresses. Within the scope of the deliverables, I am not committing to solving any particular token-economy design question.
 The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent).
 
 - Description:
   The decision making of Substrate developers (and other stakeholders) is assisted if a hypothetical/proposed token-economy can be described by reference, or analogy, to a known working/successful token-economy. Absent an existing implementation, developers are left to invent a token-economy, try to adapt an existing non-blockchain experience to a blockchain, or try to adapt non-blockchain ideas to a blockchain.
-- This project provides a survey to help think through various choices and their trade-offs, it does not offer the answer to any particular token-economy design question. It does so by reviewing the current state of play, as it is described in: a) published general-blockchain research, b) general-blockchain working papers, c) Polkadot whitepapers.
+- This project provides a annotated bibliography to help think through various choices and their trade-offs, it does not offer the answer to any particular token-economy design question. It does so by reviewing the current state of play, as it is described in: a) published general-blockchain research, b) Polkadot whitepapers.
 - Substrate integration:
-  With Substrate Token-Economy networks in mind, I aim to provide a creative synthesis of existing general-blockchain token-economy research rather than a catalogue of recent articles.
-  Specifically, the central features and concerns across Substrate Token-Economy networks will be identified, using Polkadot as a point of reference.
-  Ultimately, the reader should learn something about those features of the token-economies of Substrate networks and understand how some of the issues raised by the general-blockchain token-economy research are addressed by Polkadot token-economy designs, while others are not. Descriptions and explanations will be made in terms centered around the content of specific pivotal papers or pivotal ideas.
-  Summary tables will highlight the key differentiating characteristics of different Polkadot blockchain network token-economies.
+  With Substrate Token-Economy networks in mind, I aim to provide a annotated bibliography of existing general-blockchain token-economy research.
+  Specifically, the central features and concerns across Polkadot Parachain Token-Economy networks will be identified.
+  Ultimately, the reader should learn something about those features of the token-economies of Polkadot Parachain  networks and understand how some of the issues raised by the general-blockchain token-economy research are addressed by Polkadot Parachain token-economy designs, while others are not. Descriptions and explanations will be made in terms centered around the content of specific pivotal papers or pivotal ideas.
+  Summary tables will highlight the key differentiating characteristics of different Polkadot Parachain  network token-economies.
 - Motivation:
-  A project we are developing envisions the use of Substrate relay and Parachains in such a manner that our (imagined) token use is, apparently, novel. The state of play in token-economics appears to be a debate [around staking and inflation](https://forum.polkadot.network/t/should-parachains-have-staking-inflation/806). A search of docs.substrate.io for "tokenomics" and "token-economics" returns no results. We had expected a reference to, or high-level summary of, the token-economies of parachains elected to the Polkadot relay chain.  Ideally, we hoped to find high level descriptions of some token-economy features that are enabled by the distinct features of Substrate and its pallets, possibly with links to case studies or other resources. This survey article will provide some of that information.  Inclusion of any of this information in Substrate/Polkadot documentation is out of scope.
+  A project we are developing envisions the use of Substrate relay and Parachains in such a manner that our (imagined) token use is, apparently, novel. The state of play in token-economics appears to be a debate [around staking and inflation](https://forum.polkadot.network/t/should-parachains-have-staking-inflation/806). A search of docs.substrate.io for "tokenomics" and "token-economics" returns no results. We had expected a reference to, or high-level summary of, the token-economies of parachains elected to the Polkadot relay chain.  Ideally, we hoped to find high level descriptions of some token-economy features that are enabled by the distinct features of Substrate and its pallets, possibly with links to case studies or other resources. This survey article will provide some of that information.
 
 ## Project Details
 
-The literature review component of this exercise will be closest to a "Rapid Review", see Grant MJ, Booth A. A typology of reviews: an analysis of 14 review types and associated methodologies. Health Info Libr J. 2009 Jun; 26(2):91-108. doi: 10.1111/j.1471-1842.2009.00848.x. Review. PubMed PMID: 19490148.
+### The problem
 
-Each section of the report/working paper will be developed using some subset of the following iterative process (Tsafnat, G., Glasziou, P., Choong, M.K. et al. Systematic review automation technologies. Syst Rev 3, 74 (2014). <https://doi.org/10.1186/2046-4053-3-74>)
+A search of docs.substrate.io for "tokenomics" and "token-economics" returns no results. We had expected a reference to, or high-level summary of, the token-economies of parachains elected to the Polkadot relay chain.  Ideally, we hoped to find high level descriptions of some token-economy features that are enabled by the distinct features of Substrate and its pallets, possibly with links to case studies or other resources. This survey article will provide some of that information.  Inclusion of any of this information in Substrate/Polkadot documentation is out of scope.
+
+### Research questions/hypothesis
+
+This project provides a annotated bibliography to help think through various choices and their trade-offs, it does not offer the answer to any particular token-economy design question. It does so by reviewing the current state of play, as it is described in: a) published general-blockchain research, b) Polkadot whitepapers.
+
+### The Methodology
+
+The annotated bibliography component of this exercise will be closest to a "Scoping Review", see Grant MJ, Booth A. [A typology of reviews: an analysis of 14 review types and associated methodologies](https://doi.org/10.1111/j.1471-1842.2009.00848.x). Health Info Libr J. 2009 Jun; 26(2):91-108. Review. PubMed PMID: 19490148.
+
+Extract from Table 1 of Grant, M.J. and Booth, A. (2009):
+
+| Description | Search | Appraisal | Synthesis | Analysis |
+| ----------- | ------ | --------- | --------- | -------- |
+|  Preliminary assessment of potential size and scope of available research literature. Aims to identify nature and extent of research evidence (usually including ongoing research) | Completeness of searching determined by time/scope constraints. May include research in progress | No formal quality assessment | Typically tabular with some narrative commentary | Characterizes quantity and quality of literature, perhaps by study design and other key features. Attempts to specify a viable review |
+
+Each section of the report/working paper will be developed using some subset of the following iterative process (Tsafnat, G., Glasziou, P., Choong, M.K. et al. [Systematic review automation technologies](https://doi.org/10.1186/2046-4053-3-74), Syst Rev 3, 74 (2014))
 
 - Review reporting guidelines, best practice handbooks, and training modules [preparation stage]
 - Formulate question and decide on review type [preparation stage]
@@ -47,15 +63,19 @@ Each section of the report/working paper will be developed using some subset of 
 - Synthesize data/information [synthesis stage]
 - Manuscript development [write-up stage]
 
-### Mockups/designs of any UI components
+### The data collection and analysis procedures
 
-This project is research oriented and as such there are no UI components to test.
+#### Published articles
 
-### Technology stack
+As requested, to eliminate bias (and constrain budget) in the collection of research papers, the initial source of the published research will be the top-10 articles provided by the State Library of New South Wales information search service in response to the following query, "Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors"
 
-LaTeX (incl. build scripts), PDF, HTML.
+#### Polkadot Parachain whitepapers
 
-### PoC/MVP
+These are from projects that are Polkadot-Parachains as at 19 December 2022.
+
+### The expected results
+
+The objective is to arrive at a scoping review of current state of token-economy development, that forms the basis of a more forward looking "tokenomics", and a practical example aimed at Polkadot/Substrate developers without any formal training in economics.  These are intended as a future projects.
 
 One of the elements will be summary tables, using attributes that arise naturally within a Rational Expectations Equilibrium framework, such as the following:
 
@@ -76,13 +96,23 @@ One of the elements will be summary tables, using attributes that arise naturall
 - Borrow/Lend
 - Lender of Last Resort
 
-Another component of this research is creating a token-categorization (questionnaire(s) or decision trees) that will aid/inform the specification of a token-economy. Nonetheless, there are already schemes that are useful even at this early stage. Such as these [Token Types (Burnie, Burnie and Henderson (2018))](https://doi.org/10.5195/ledger.2018.121):
+Another component of this research is creating a token-categorization questionnaire or decision tree that will aid/inform the specification of a token-economy. Nonetheless, there are already schemes that are useful even at this early stage. Such as these [Token Types (Burnie, Burnie and Henderson (2018))](https://doi.org/10.5195/ledger.2018.121):
 
 - fuel-tokens: "underpin generic blockchain applications". I refine this definition as follows: The token yield is defined or modeled such that it provides holders with incentives to act for the purpose of ensuring the blockchain has the desired features/characteristics.
 - transaction-tokens: "act as a cash substitute"
 - voucher-tokens: "exchanged for a predefined asset". I include goods or services.
 
-Effectively the objective is to arrive at a survey of current state of token-economy development, that forms the basis of a more forward looking "tokenomics", and a practical example aimed at Polkadot/Substrate developers without any formal training in economics.  These are intended as a future projects.
+The grants team, and any reader could reproduce the data analysis by applying the token-categorization questionaire to a parachain they are familiar with and compare their classification with the submitted result.
+
+### Relevant related work
+
+- [A typology of reviews: an analysis of 14 review types and associated methodologies](https://doi.org/10.1111/j.1471-1842.2009.00848.x)
+- [Systematic review automation technologies](https://doi.org/10.1186/2046-4053-3-74)
+- [Token Types (Burnie, Burnie and Henderson (2018))](https://doi.org/10.5195/ledger.2018.121)
+
+### Intended venue for results publication and the timeline for publication
+
+The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent).
 
 ### Out of scope
 
@@ -96,6 +126,7 @@ Effectively the objective is to arrive at a survey of current state of token-eco
 - Substrate/Polkadot documentation.
 - Verifying the network token-economy has been implemented as specified in the network whitepaper.
 - Verifying the network whitepaper assumptions are a reasonable/plausible description of the network participants.
+- Inclusion of any of this information in Substrate/Polkadot documentation.
 
 #### Crypto-Currencies
 
@@ -186,48 +217,62 @@ Personal
 
 ### Overview
 
-- Total Estimated Duration: 4.5 months
-- Full-Time Equivalent (FTE): 0.8 FTE
-- Total Costs: 42,000 USD
+- Total Estimated Duration: 3 months
+- Full-Time Equivalent (FTE): 0.2 FTE
+- Total Costs: 10,000 USD
 
 ### Milestone 1 — Data gathering & Polkadot Networks
 
-- **Estimated duration:** 6 weeks
-- **FTE:**  1
-- **Costs:** 14,000 USD
+- **Estimated duration:** 1 month
+- **FTE:**  0.2
+- **Costs:** 3,000 USD
+
+Initial analysis of the Parachain tokenomics.
+Initial flow-chart/decision-tree development that will help developers place their token in the following contexts:
+
+- Token Type
+- Model Type
+- Economy Type
+- Sector Type
+- Production Type
+- Monetary Type
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a.    | License                   | Creative Commons Attribution 4.0 International License (article), Dual Apache 2 or MIT License (code) |
-| 0b.    | Data collection           | Collect published, working and network papers. |
-| 0c.    | Article build guide       | A guide to generating the article and related figures or tables. |
-| 0d.    | Docker                    | A Dockerfile(s) that can be used to generate the article PDF and HTML. |
-| 0e.    | Article                   | We will publish an **working paper** as indicated above. |
-| 0e.1   |  - Section: Methodology            | The research methodology. |
-| 0e.2   |  - Section: Polkadot Economies     | What are the central features and concerns across Polkadot Token-Economy networks? |
+| **0a.** | Copyright and Licenses | Creative Commons Attribution 4.0 International License (article), Dual Apache 2 or MIT License (code) |
+| **0b.** | Documentation/Tutorial | We will provide both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
+| **0c.** | Methodology | Detailed explanation of how the results were achieved and how to reproduce/verify the results. |
+| **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. LaTeX for article production and Docker files for software execution. |
+| **0e.** | Article | We create a **draft article** (with source code), in the English language.|
+| **0e.1**   |  - Appendix: Methodology    | As described in the methodology section above |
+| **0e.2**   |  - Section: Polkadot Parachains      | Initial Parachain summary |
+| 1. | List of academic papers | Collect published, working and network papers, as described in the methodology section above |
+| 2. | Data to be extracted from the papers | As described in the methodology section above |
+| 3. | Analysis procedures | As described in the methodology section above |
 
 ### Milestone 2 — Outline Article
 
-- **Estimated duration:** 6 weeks
-- **FTE:**  0.8
-- **Costs:** 14,000 USD
+- **Estimated duration:** 1 month
+- **FTE:**  0.2
+- **Costs:** 3,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a.    | License                   |  Creative Commons Attribution 4.0 International License (article), Dual Apache 2 or MIT License (code) |
-| 0b.    | Documentation             | We will provide both **PDF** and **HTML** versions of the working paper. |
-| 0c.    | Article build guide       | A guide to generating the article and related figures or tables. |
-| 0d.    | Docker                    | A Dockerfile(s) that can be used to generate the article PDF and HTML. |
+| **0a.** | Copyright and Licenses | Creative Commons Attribution 4.0 International License (article), Dual Apache 2 or MIT License (code) |
+| **0b.** | Documentation/Tutorial | We will update both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
+| **0c.** | Methodology | Update the detailed explanation of how the results were achieved and how to reproduce/verify the results. |
+| **0d.** | Infrastructure | We will update the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. LaTeX for article production and Docker files for software execution. |
+| **0e.** | Article | We will send a **draft article** (with source code), in the English language.|
 to test all the functionality delivered with this milestone. |
-| 0e.    | Article                   | We will publish an **working paper** as indicated above. |
-| 0e.4   |  - Section: Reduced Form Models    | What are the reduced form approaches to creating a Token-Economy? |
-| 0e.3   |  - Section: Structural Models      | What are the structural approaches to creating a Token-Economy? |
+| **0e.1**    | Article                   | We will publish an **working paper** as indicated above. |
+| **0e.2**   |  - Section: Published models    | Initial annotated bibliography |
+| **0e.3**   |  - Section: Polkadot Parachain Economies | Parachain summary updated with references to published models |
 
 ### Milestone 3 — Finalize Article
 
-- **Estimated Duration:** 6 weeks
-- **FTE:**  0.8
-- **Costs:** 14,000 USD
+- **Estimated Duration:** 1 month
+- **FTE:**  0.2
+- **Costs:** 4,000 USD
 
 Finalize the flow-chart/decision-tree that will help developers place their token in the following contexts:
 
@@ -238,34 +283,32 @@ Finalize the flow-chart/decision-tree that will help developers place their toke
 - Production Type
 - Monetary Type
 
-Finalize the literature survey.
-Synthesize the descriptions of the Polkadot Parachain networks in the context of the existing token-economics literature.
+Finalize the annotated bibliography.
 Promote the working paper, incorporate feedback.
 The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent).
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a.    | License                   |  Creative Commons Attribution 4.0 International License (article), Dual Apache 2 or MIT License (code) |
-| 0b.    | Documentation             | We will provide both **PDF** and **HTML** versions of the working paper. |
-| 0c.    | Article build guide       | A guide to generating the article and related figures or tables. |
-| 0d.    | Docker                    | A Dockerfile(s) that can be used to generate the article PDF and HTML. |
-| 0e.    | Article                   | We will publish an **working paper** as indicated above. |
-| 0e.1   |  - Section: Introduction           | Place the topic in perspective and motivate non-specialist readers.  Text and tables where relevant/appropriate. |
-| 0e.2   |  - Section: Polkadot Economies     | What are the central features and concerns across Polkadot Token-Economy networks?   Text and tables where relevant/appropriate. |
-| 0e.3   |  - Section: Structural Models      | What are the structural approaches to creating a Token-Economy?  Text and tables where relevant/appropriate. |
-| 0e.4   |  - Section: Reduced Form Models    | What are the reduced form approaches to creating a Token-Economy?  Text and tables where relevant/appropriate. |
-| 0e.5   |  - Section: Future Directions      | What are unexplored approaches to creating a Token-Economy?  Text and tables where relevant/appropriate. |
-| 0e.6   |  - Section: Summary                | Where are we and where to next? |
-| 0e.7   |  - Appendix: Methodology  | The research methodology.  Text and tables where relevant/appropriate. |
+| **0a.** | Copyright and Licenses | Creative Commons Attribution 4.0 International License (article), Dual Apache 2 or MIT License (code) |
+| **0b.** | Documentation/Tutorial | We will update both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
+| **0c.** | Methodology | Update the detailed explanation of how the results were achieved and how to reproduce/verify the results. |
+| **0d.** | Infrastructure | We will update the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. LaTeX for article production and Docker files for software execution. |
+| **0e** | Article | We will update a **draft article** (with source code), in the English language.|
+to test all the functionality delivered with this milestone. |
+| **0e.1**   |  - Section: Introduction           | Place the topic in perspective and motivate non-specialist readers.  Text and tables where relevant/appropriate. |
+| **0e.2**   |  - Section: Published models    | Update annotated bibliography |
+| **0e.3**   |  - Section: Polkadot Parachains | Parachain summary updated with references to published models |
+| **0e.4**   |  - Appendix: Methodology  | The research methodology.  Text and tables where relevant/appropriate. |
+| **0e.5**   |  - Section: Summary                | Where are we and where to next? |
+| 1. | Feedback | Collect published, working and network papers, as described in the methodology section above |
+| 2. | Publish | The working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent) |
 
 ## Future Plans
 
 Please include here
 
 - how you intend to use, enhance, promote and support your project in the short term, and
-  - The research article may be accepted for publication, but this is a fraught/political process and should not be considered a deliverable.
-  - The results will be sent to blockchain websites, bloggers and posted to the Polkadot forum.
-  - The working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent)
+  - The working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent) and the Polkadot forum.
 - the team's long-term plans and intentions in relation to it.
   - Engage in a more forward-looking/positive analysis of how to design a token-economy, addressing any gaps identified in this review.
   - Create a practical "how-to design a Polkadot/Substrate token-economy" series aimed at developers without any relevant economics/finance background.
