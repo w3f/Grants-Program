@@ -174,6 +174,12 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 | 1. | CRM for Grant | We will be creating this CRM in Django. Users can view grant. Candidate can apply for a grant. Employer can create a grant. |
 | 2. | Tools | A listing page and viewing page for tools. Any user can add a tool inside polkadot ecosystem, user just needs to signup. |
 | 3. | Educational material | Any user can add new listing for educational meterial for polkadot ecosystem. Everyone can view the listing. |
+| 4. | Add grants manually | Add atleast 5 grants manually to the platform from this list: https://substrate.io/ecosystem/projects/ |
+| 5. | Add bounties manually | Explore bounties by contacting companies from this list: https://substrate.io/ecosystem/projects/ |
+| 6. | Add Jobs manually | Add atleast 50 jobs |
+| 7. | Add Tools manually | Add atleast 50 tools |
+| 8. | Add Educational materials manually | Add atleast 50 educational materials |
+
 
 
 ## Future Plans
