@@ -320,7 +320,7 @@ Angie: Angie is a Data Scientist in a ASX-listed Fintech in Australia. She has e
 
 ### Milestone 1 — Basic Functionalities
 
-- **Estimated Duration:** 5.5 months
+- **Estimated Duration:** 7.5 months
 - **FTE:**  2
 - **Costs:** 4,000 USD
 
@@ -331,11 +331,11 @@ Angie: Angie is a Data Scientist in a ASX-listed Fintech in Australia. She has e
 | 0c. | Testing Guide | Core functions will be covered by unit tests, along with detailed explanation step by step. |
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 1. | ink! smart contract | An ink! smart contract that will enable the digital assets holders to buy cover and the capital holder to become an underwriter. |  
-| 2. | Manual of interaction between ink! and front-end | We will provide a manual regarding constructing an interface for the interaction between front-end and ink! smart contract & Polkadot.js wallet, just like what web3.js and ethers.js have done in the EVM ecosystem. |
+| 2. | Front-end e2e test | We will use Cypress.io as an e2e testing framework for the Front-end automated test. |
 
 ### Milestone 2 Substrate + XCM
 
-- **Estimated Duration:** 5 months
+- **Estimated Duration:** 6 months
 - **FTE:**  2
 - **Costs:** 4,000 USD
 
@@ -347,6 +347,7 @@ Angie: Angie is a Data Scientist in a ASX-listed Fintech in Australia. She has e
 | 0d. | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | We will publish an **article** that explains the functionalities Meta Defender provides, which will cover: 1. auto-pricing model; 2. economic model of insuring and underwriting; 3. how we achieve cross-chain insurance through substrate and XCM and open source this part of code.  |
 | 1. | Cross-chain support | Establish a local parachain testnet and two local parachains A and B with sovereign account in each other. With smart contract deployed on A parachain, allow the user to buy cover and receive his claim from addresses on the B parachain through XCM. |  
+| 2. | Manual of interaction between ink! and front-end | We will provide a manual regarding constructing an interface for the interaction between front-end and ink! smart contract & Polkadot.js wallet, just like what web3.js and ethers.js have done in the EVM ecosystem. |
 
 
 ## Future Plans
