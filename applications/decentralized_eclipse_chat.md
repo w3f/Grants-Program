@@ -145,6 +145,7 @@ We would like to use the Substrate template node
 |    0e. | Benchmarking                    | Benchmarking will be provided for register_address, check_nickname, send_invitatio.                                                                           
 |    0f. | Substrate module: create_invoice | We will create a Substrate module that will create an register an address, check for a nickname and send an invitation.                                       |
 
+
 ### Milestone 2 — Implement accept_deny_invitation, send_sms, get_sms functionality
 
 - Estimated Duration: 1 month
