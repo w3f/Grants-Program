@@ -1,7 +1,7 @@
 # PHP RPC Lib Follow up
 
 * **Team Name:** [gmajor](https://github.com/gmajor-encrypt)
-* **Payment Address:** 0xC3094f0ddce699a1Ad9Ef2621DF68Cd297a4c44F(Dai)
+* **Payment Address:** 0xC3094f0ddce699a1Ad9Ef2621DF68Cd297a4c44F (Dai)
 * **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
 
 ## Project Overview :page_facing_up:
