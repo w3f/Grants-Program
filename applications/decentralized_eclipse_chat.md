@@ -24,36 +24,30 @@ Pallet name: EclipseChatPallet
 
 Methods:
 
-1- register_address(address, nickname)
--> This method will save its address and nickname.
+1- register_address(address, nickname) -> This method will save an address and nickname in the storage.
 
-2- check_nickname(nickname) 
--> This method will check if nickname exist or not.
+2- check_nickname(nickname) -> This method will check if the nickname exists or not. Return true or false.
+3- send_invitation(from, to) -> This method will send an invitation to start the communication. A structure will be created containing the sender address, receiver address, invitation flag, and the list of messages they will exchange with each other.
 
-3- send_invitation(from, to) 
--> This method will send and invitation to start the communication.
+4- accept_deny_invitation(from, to) -> This method will make the receiver accept or deny the invitation to make the communication happen or not.The invitation flag would be true/false.
+5- send_sms(from, to) -> This method will send sms from one sender to receiver. Msg would be added to the list of messages which they are exchanging.
 
-4- accept_deny_invitation(from, to) 
--> This method will accept or deny the invitation to make the communication or not.
+6- get_sms(from, to) -> This method will get a list of sms. Get the list of msg which has been sent between a specific sender and receiver.
+7- get_all_channels(from) -> This method will get all the channels/communication which have been done in the past.
+8- search_address(from) -> This method will search for any address already registered.
 
-5- send_sms(from, to) 
--> This method will send a sms from one address to another.
-
-6- get_sms(from, to) 
--> This method will get a list of sms.
-
-7- get_all_channels(from) 
--> This method will get all the channel.
-
-8- search_address(from) 
--> This method will search for any address registered.
-
-9- delete_channel(from, channel id) 
--> This method delete the channel related with.
+9- delete_channel(from, channel id) -> This method delete the channel related with. Delete the list/channel of msg which has been sent between a specific sender and receiver.
+(Zeroing out the data: This means replacing the sensitive data with zeros or other meaningless characters.  Hashing the data: )
 
 
 Our idea is to create a suitable communication platform that is tailored to the needs of each individual user. Every user will have the freedom to chousing his level of privacy and to decide if he wants to be identified or use the software in total anonymity.
 The communication will be direct between the two users without having the necessity of a server that can store an save the communication. Later on, the creation of Groups can be added as well.
+
+### How to deal with GDPR
+- Encrypt personal data: Encrypt personal data stored on the blockchain to help prevent unauthorized access.
+- Provide access and control: Provide users with access to their personal data, and allow them to control how it is used. This includes the right to delete or export their dat
+
+
 
 ### Ecosystem Fit
 
@@ -143,7 +137,7 @@ We would like to use the Substrate template node
 |    0c. | Testing Guide                   | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.             |
 |    0d. | Article                         | We will publish an **article** that explains how the communication system works.                                                                              
 |    0e. | Benchmarking                    | Benchmarking will be provided for register_address, check_nickname, send_invitatio.                                                                           
-|    0f. | Substrate module: create_invoice | We will create a Substrate module that will create an register an address, check for a nickname and send an invitation.                                       |
+|    0f. | Substrate module: register_address, check_nickname, send_invitation works | We will create a Substrate module that will create an register an address, check for a nickname and send an invitation.                                       |
 
 
 ### Milestone 2 — Implement accept_deny_invitation, send_sms, get_sms functionality
@@ -159,7 +153,7 @@ We would like to use the Substrate template node
 |    0c. | Testing Guide                     | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.     |
 |    0d. | Article                           | We will publish an **article** that explains how the decentralized communication system works.                                                        
 |    0e. | Benchmarking                      | Benchmarking will be provided for accept_deny_invitation, send_sms, get_sms works.                                                                    
-|    0f. | Substrate module: show_all_invoices      | We will create a Substrate module that will accept or deny an invitation, send a sms and get all sms.                                                 |
+|    0f. | Substrate module: accept_deny_invitation, send_sms, get_sms works      | We will create a Substrate module that will accept or deny an invitation, send a sms and get all sms.                                                 |
 
 ### Milestone 3 — Implement get_all_channels, search_address, delete_channel  functionality
 
@@ -175,7 +169,7 @@ We would like to use the Substrate template node
 |    0c. | Testing Guide                    | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.        |
 |    0d. | Article                          | We will publish an **article** that explains how the decentralized communication system works.                                                           
 |    0e. | Benchmarking                     | Benchmarking will be provided for get_all_channels, search_address, delete_channel works.                                                                   
-|    0f. | Substrate module: pay_invoice | We will create a Substrate module that will geta alla channels, search for address and  delete the channel.                                              |
+|    0f. | Substrate module: get_all_channels, search_address, delete_channel works | We will create a Substrate module that will geta alla channels, search for address and  delete the channel.                                              |
 
 
 ## Future Plans
