@@ -1,4 +1,4 @@
-# Name of your Project
+# Scout CoinFabrik
 - **Team Name:** CoinFabrik (Nektra S.A)
 - **Payment Address:** 0xf488039EDe6B38D7689fDCC6A9FC2dd0EF39D54e (USDT)
 - **[Level]:** 2
@@ -74,25 +74,25 @@ We briefly validated the idea of the development described in this application w
 
 ### Overview
 
-- **Total Estimated Duration:** 3 months
+- **Total Estimated Duration:** 1 month
 - **Full-Time Equivalent (FTE):**  5 FTE
-- **Total Costs:** 50,000 U$D
+- **Total Costs:** 15,000 U$D
 
 ### Milestone 1: Proof of Concept
 
 - **Estimated duration:** 1 month (Day 1 to Day 30)
 - **FTE:**  5
-- **Costs:** 15,000 USD
+- **Costs:** 15,000 U$D
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | MIT
-| 0b. | Documentation | We will provide a report, listing relevant security issues introduced in smart contracts developed with ink! This will include a summary of findings and how the results were procured, a detailed description of each vulnerability/best practice, and links to the code that exemplifies them.
+| 0b. | Documentation | We will provide a report, listing relevant security issues introduced in smart contracts developed with ink!. This will include a summary of findings and how the results were procured, a detailed description of each vulnerability/best practice, and links to the code that exemplifies them.
 | 0c. | Testing and Testing Guide | No tests with be produced at this stage.
 | 0d. | Docker | Does not apply at this stage.
 | 0e. | Article | We will upload to our blog a report summary.
- **1** | Research | Producing a curated list of vulnerabilities, best practices, and enhancements related to smart contracts written in ink!
- **2** | Development | Producing code examples and snippets of smart contracts showing the mentioned issues.
+ **1** | Research | Producing a curated list of vulnerabilities, best practices, and enhancements related to smart contracts written in ink!, considering the list of [analysis categories](https://blog.coinfabrik.com/analysis-categories/) currently used for our manual smart contract audits.
+ **2** | Development | Producing code examples and snippets of smart contracts written in ink! for each type of vulnerability from the list mentioned in 1. Research.
  **3** | Development | Proof of concept code detecting some (relevant) issues included in the list of vulnerabilities and best practices.
 
 
