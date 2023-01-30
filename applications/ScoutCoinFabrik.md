@@ -1,7 +1,7 @@
 # Name of your Project
 - **Team Name:** CoinFabrik (Nektra S.A)
 - **Payment Address:** 0xf488039EDe6B38D7689fDCC6A9FC2dd0EF39D54e (USDT)
-- **[Level]:** 3
+- **[Level]:** 2
 
 ## Project Overview :page_facing_up:
 
@@ -32,7 +32,7 @@ We believe we can bring value to the Polkadot / Kusama community by offering a t
 
 - Ariel Wassbein, Head of Reaseach
 - Valeria Caracciolo, Business Develpoment
-- + CoinFabrik's development and auditing team - when required.
+- CoinFabrik's development and auditing team - when required.
 
 ### Contact
 
@@ -68,7 +68,7 @@ We have been working on different aspects of the tool:
 - Listing common vulnerabilities and usability issues in different systems and technologies. 
 - Tools to assist developers.
 
-We have briefly validated the idea of the development described in this application with David Hawig from Web3 Foundation, who encourage us to apply for this grant.
+We briefly validated the idea of the development described in this application with David Hawig and Bhargav Bhatt from Web3 Foundation, who encourage us to apply for this grant.
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -86,42 +86,22 @@ We have briefly validated the idea of the development described in this applicat
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | Listing  | Producing a curated list of vulnerabilities, best practices, and enhancements related to Polkadot / Kusama smart contracts.
-| 0b. | Examples  | Producing code examples and snippets of smart contracts showing the mentioned issues. 
-| 0c. | Research  |  Testing techniques and tools to detect those issues.
- **1** | Delevopment  | Proof of concept for a tool that detects relevant security issues.
+| 0a. | License | MIT
+| 0b. | Documentation | We will provide a report, listing relevant security issues introduced in smart contracts developed with ink! This will include a summary of findings and how the results were procured, a detailed description of each vulnerability/best practice, and links to the code that exemplifies them.
+| 0c. | Testing and Testing Guide | No tests with be produced at this stage.
+| 0d. | Docker | Does not apply at this stage.
+| 0e. | Article | We will upload to our blog a report summary.
+ **1** | Research | Producing a curated list of vulnerabilities, best practices, and enhancements related to smart contracts written in ink!
+ **2** | Development | Producing code examples and snippets of smart contracts showing the mentioned issues.
+ **3** | Development | Proof of concept code detecting some (relevant) issues included in the list of vulnerabilities and best practices.
 
-
-### Milestone 2 Example: Prototype
-
-- **Estimated duration:** 1 month ( Day 31 to Day 60)
-- **FTE:**  5
-- **Costs:** 15,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| 0a. | Design | Tool design, based on the PoC experience and the previous milestone discoveries.
-| 0b. | Tests | Automated unit tests and functional tests, to validate the tool.
-| 0c. | Documentation | Preliminary documentation.
- **2** | Delevopment  | Tool prototype. 
-
-### Milestone 3: Beta release & Feedback
-
-- **Estimated duration:** 1 month (Day 61 to Day 90)
-- **FTE:**  5
-- **Costs:** 20,000 USD
-
-**3** | Delevopment  | Public release of beta version of Scout on GitHub.
-**4** | Documentation  | Full documentation
-**5** | Support  | Open communication channels to receive community feedback for a period of 3 months.
-**6** | Service  | Deploy an online automated service, available for a period of 3 months, that receives smart contract source code and delivers a report of the analysis performed by the tool.
 
 ## Future Plans
 
-Our future plans are to continue to work on improving automated and assisted tools for finding Web3 security vulnerabilities and writing more secure code. Our objective is to help Polkadot community produce better and more secure code with these tools.
+(Our original plan was to apply for a 3 months grant, to reach a public release of the tool. But we were advised to apply for a shorter objective, so we are presenting only Milestone #1 from our plan) After completing this first milestone, we are planning on applying for 2 additional iterations to reach a tool prototype (Milestones #2) and public release (Milestones #3). Our mission is to continue to work on improving automated and assisted tools for finding security vulnerabilities and writing more secure code. Our objective is to help the Polkadot / Kusama community produce better and more secure code with these tools.
 
 ## Referral Program (optional) :moneybag: 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Richard Casey from Parity brought this program to our attention.
+**How did you hear about the Grants Program?** Richard Casey from Parity brought this program to our attention. Our inquiries were addressed by David Hawig and Bhargav Bhatt, who also gently advised us on this presentation.
