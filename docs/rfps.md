@@ -57,8 +57,8 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [social-recovery-wallet.md](RFPs/Under%20Development/social-recovery-wallet.md) | 🟡 | 05.07.2021 |
 | [staking-rewards-collector-front-end.md](RFPs/Implemented/staking-rewards-collector-front-end.md) | 🔴 | 20.07.2021 |  
 | [sub-consensus.md](RFPs/Open/sub-consensus.md) | 🟢 | 23.11.2021 |
-| [user-account-access-analysis.md](RFPs/Open/user-account-access-analysis.md) | 🟢 | 07.01.2023 |
 | [uncollateralized-stablecoin-research.md](RFPs/Implemented/uncollateralized-stablecoin-research.md) | 🔴 | 01.01.23 |
+| [user-account-access-analysis.md](RFPs/Open/user-account-access-analysis.md) | 🟢 | 07.01.2023 |
 | [validator-setup-maintenance.md](RFPs/Open/validator-setup-maintenance.md) | 🟢 | 23.11.2021 |
 | [validator-selection-algorithm.md](RFPs/Under%20Development/validator-selection-algorithm.md) | 🟡 | 07.12.2022 |
 | [wallet-aggregator-library.md](RFPs/Open/wallet-aggregator-library.md) | 🟢 | 23.01.2023 |
