@@ -27,13 +27,17 @@ Methods:
 1- register_address(address, nickname) -> This method will save an address and nickname in the storage.
 
 2- check_nickname(nickname) -> This method will check if the nickname exists or not. Return true or false.
+
 3- send_invitation(from, to) -> This method will send an invitation to start the communication. A structure will be created containing the sender address, receiver address, invitation flag, and the list of messages they will exchange with each other.
 
 4- accept_deny_invitation(from, to) -> This method will make the receiver accept or deny the invitation to make the communication happen or not.The invitation flag would be true/false.
+
 5- send_sms(from, to) -> This method will send sms from one sender to receiver. Msg would be added to the list of messages which they are exchanging.
 
 6- get_sms(from, to) -> This method will get a list of sms. Get the list of msg which has been sent between a specific sender and receiver.
+
 7- get_all_channels(from) -> This method will get all the channels/communication which have been done in the past.
+
 8- search_address(from) -> This method will search for any address already registered.
 
 9- delete_channel(from, channel id) -> This method delete the channel related with. Delete the list/channel of msg which has been sent between a specific sender and receiver.
