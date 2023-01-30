@@ -19,20 +19,20 @@ The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Rese
 - Substrate integration:
   With Substrate Token-Economy networks in mind, I aim to provide a annotated bibliography of existing general-blockchain token-economy research.
   Specifically, the central features and concerns across Polkadot Parachain Token-Economy networks will be identified.
-  Ultimately, the reader should learn something about those features of the token-economies of Polkadot Parachain  networks and understand how some of the issues raised by the general-blockchain token-economy research are addressed by Polkadot Parachain token-economy designs, while others are not. Descriptions and explanations will be made in terms centered around the content of specific pivotal papers or pivotal ideas.
+  Ultimately, the reader should learn something about those features of the token-economies of Polkadot Parachain  networks and understand how some of the issues raised by the general-blockchain token-economy research are addressed by Polkadot Parachain token-economy designs, while others are not.
   Summary tables will highlight the key differentiating characteristics of different Polkadot Parachain  network token-economies.
 - Motivation:
-  A project we are developing envisions the use of Substrate relay and Parachains in such a manner that our (imagined) token use is, apparently, novel. The state of play in token-economics appears to be a debate [around staking and inflation](https://forum.polkadot.network/t/should-parachains-have-staking-inflation/806). A search of docs.substrate.io for "tokenomics" and "token-economics" returns no results. We had expected a reference to, or high-level summary of, the token-economies of parachains elected to the Polkadot relay chain.  Ideally, we hoped to find high level descriptions of some token-economy features that are enabled by the distinct features of Substrate and its pallets, possibly with links to case studies or other resources. This survey article will provide some of that information.
+  A project we are developing envisions the use of Substrate relay and Parachains in such a manner that our (imagined) token use is, apparently, novel. The state of play in Polkadot Parachain token-economics appears to be a debate [around staking and inflation](https://forum.polkadot.network/t/should-parachains-have-staking-inflation/806). A search of docs.substrate.io for "tokenomics" and "token-economics" returns no results. We had expected a reference to, or high-level summary of, the token-economies of parachains elected to the Polkadot relay chain.  Ideally, we hoped to find high level descriptions of some token-economy features that are enabled by the distinct features of Substrate and its pallets, possibly with links to case studies or other resources. This annotated bibliography will provide some of that information.
 
 ## Project Details
 
 ### The problem
 
-A search of docs.substrate.io for "tokenomics" and "token-economics" returns no results. We had expected a reference to, or high-level summary of, the token-economies of parachains elected to the Polkadot relay chain.  Ideally, we hoped to find high level descriptions of some token-economy features that are enabled by the distinct features of Substrate and its pallets, possibly with links to case studies or other resources. This survey article will provide some of that information.  Inclusion of any of this information in Substrate/Polkadot documentation is out of scope.
+A search of docs.substrate.io for "tokenomics" and "token-economics" returns no results. We had expected a reference to, or high-level summary of, the token-economies of parachains elected to the Polkadot relay chain.  Ideally, we hoped to find high level descriptions of some token-economy features that are enabled by the distinct features of Substrate and its pallets, possibly with links to case studies or other resources. This annotated bibliography will provide some of that information.  Inclusion of any of this information in Substrate/Polkadot documentation is out of scope.
 
 ### Research questions/hypothesis
 
-This project provides a annotated bibliography to help think through various choices and their trade-offs, it does not offer the answer to any particular token-economy design question. It does so by reviewing the current state of play, as it is described in: a) published general-blockchain research, b) Polkadot whitepapers.
+This project provides a annotated bibliography to identify relevant research, it does not offer the answer to any particular token-economy design question. It does so using: a) published general-blockchain research, b) Polkadot whitepapers.
 
 ### The Methodology
 
@@ -67,7 +67,7 @@ Each section of the report/working paper will be developed using some subset of 
 
 #### Published articles
 
-As requested, to eliminate bias (and constrain budget) in the collection of research papers, the initial source of the published research will be the top-10 articles provided by the State Library of New South Wales information search service in response to the following query, "Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors"
+As requested, to eliminate bias (and constrain budget) in the collection of research papers, the initial source of the published research will be the top-10 articles provided by an independent research service, using the commercial research databases available from the State Library of New South Wales in response to the following query, "Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors"
 
 #### Polkadot Parachain whitepapers
 
@@ -130,7 +130,7 @@ The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Rese
 
 #### Crypto-Currencies
 
-Their prevalence means the decision to exclude cryptocurrencies warrants some explanation.
+The prevalence of crypto-currencies means the decision to exclude them warrants some explanation.
 Equilibria are generally explicitly constructed (which proves existence) using conjectured properties of the dividends (or an equivalent) from the economic activity. Specifically, a price is the present-value (i.e. discounted for time and non-diversifiable risk), of all future dividends. Since the dividends of fiat currencies are zero this approach does not work. While there are workarounds, they, being particular, are not of interest in the more general setting we wish to bring to light.
 
 ### Ecosystem Fit
@@ -140,8 +140,8 @@ Equilibria are generally explicitly constructed (which proves existence) using c
 - Who is your target audience?
   - Polkadot/Substrate Relay and Parachain developers.  Industry analysts/advisors (media and investors).
 - What need(s) does your project meet?
-  Developers and analysts need to understand the choices/trade-offs available when developing their token-economy.
-  The set of modeling choices we canvas is defined by the exiting literature, both theoretical and applied (network whitepapers).
+  Developers and analysts need to understand the relevant literature available when developing their token-economy.
+  The literature we canvas both theoretical (refereed articles) and applied (network whitepapers).
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   No
   - If not, are there similar projects in related ecosystems?
@@ -202,10 +202,9 @@ Personal
   - [Designing UpChain: a framework for securing Substrate runtime upgrades and Substrate network upgrades](https://github.com/w3f/Grants-Program/pull/1309)
 - As requested, I have adjusted the source of the research to eliminate myself as the source of bias in the collection of research papers.
 - academic publications relevant to the problem:
-  One of the products from this research will be such a listing under three categories:
+  One of the products from this research will be such a listing under these categories:
   1. Published articles: As requested, to eliminate bias (and constrain budget) in the collection of research papers, the initial source of the published research will be the top-10 articles provided by the State Library of New South Wales information search service in response to the following query, "Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors"
-  2. Working papers: Those papers that explicitly address improving/extending an article in the top-10 of the articles in 1) above.
-  3. Polkadot Parachain whitepapers: These are from projects that are Polkadot-Parachains as at 19 December 2022.
+  2. Polkadot Parachain whitepapers: These are from projects that are Polkadot-Parachains as at 19 December 2022.
 - links to your research diary, blog posts, articles, forum discussions or open GitHub issues:
   - [Tokenomics: Grant models](https://forum.polkadot.network/t/tokenomics-grant-models/1266)
 - references to conversations you might have had related to this project with anyone from the Web3 Foundation
@@ -310,8 +309,7 @@ Please include here
 - how you intend to use, enhance, promote and support your project in the short term, and
   - The working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Research eJournal)](https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=3839004), [IDEAS](https://ideas.repec.org/), [Arxiv (q-fin.GN)](https://arxiv.org/list/q-fin.GN/recent) and the Polkadot forum.
 - the team's long-term plans and intentions in relation to it.
-  - Engage in a more forward-looking/positive analysis of how to design a token-economy, addressing any gaps identified in this review.
-  - Create a practical "how-to design a Polkadot/Substrate token-economy" series aimed at developers without any relevant economics/finance background.
+  - Engage in a more forward-looking/positive analysis of how to design an aspect of the Substrate/Polkadot token-economy that addresses a current need.
   - Create RFP's addressing pallet functionality gaps that are identified in the course of the above.
 
 ## Additional Information :heavy_plus_sign:
