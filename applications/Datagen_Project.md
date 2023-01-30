@@ -94,7 +94,8 @@ In particular is possible to observe that the Solana ecosystem is backing both o
 
 - Angela Griggio (CEO)
 - Luca Eugenio Barlassina (COO)
-- Niccolò Baldini (Head of Substrate Division)
+- Oliver Lim (Rust and Blockchain developer)
+- Niccolò Baldini (Former_Head of Substrate Division)
 - Ren Okamoto (Head of Solidity Smart-Contracts Development)
 - Alawiye Olukayode (front end developer)
 - William Liu (part-time / blockchain developer)
@@ -138,6 +139,7 @@ All our devs (and our designers) are professionals and also very committed to le
 - Alawiye ( https://github.com/oluseyi-frontend?tab=repositories )
 - Luca (https://github.com/Lord-Nymphis )
 - Niccolò ( https://github.com/viac92 )
+- Oliver (https://github.com/cuteolaf )
 - Ren ( https://github.com/fantasy2345 )
 - William ( https://github.com/Crypto-One-dev )
 
@@ -150,6 +152,7 @@ All our devs (and our designers) are professionals and also very committed to le
 - Giulia (https://www.linkedin.com/in/giulia-cortinovis-98702796/)
 - Luca (https://www.linkedin.com/in/luca-eugenio-barlassina-293077180/)
 - Niccolò (https://www.linkedin.com/in/niccol%C3%B3-baldini-0400baa9/)
+- Oliver ( https://www.linkedin.com/in/oliver-lim-2215a8235/ )
 - Ren (https://www.linkedin.com/in/ren-okamoto-140a97224/)
 - William (https://www.linkedin.com/in/william-liu-8a4672218/)
 
