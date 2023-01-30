@@ -212,30 +212,38 @@ During the initial hand-in-hand research, the project's technical viability was 
 
 #### Overview
 
-- **Total Estimated Duration:** 2 months
-- **Full-Time Equivalent (FTE):** 4 FTE
-- **Total Costs:** 28,000 USD
+#### Milestone 1 - UI, Encrypt, Upload and Store
 
-#### Milestone 1 — UI, Upload, Encrypt
+In the first milestone we are building and finishing a flow where users can go through guided process that produces a usable, email atested DID (as displayed in the attached UI flow). At the end of the flow users receive the DID credentials which they can either download immediately, encrypt and download, or encrypt and store to the DID Vault (IPFS + CRUST storage). This Milestone delivers an open source frontend with SDK's and logic as well as service hosted on Apillon.io which users can use to store or backup encrypted DIDs. 
+
+Milestone 1 targets to provide DID generation service with user email atestation and DID backup/storage for users who just created DID's or just want to backup/store their existing DID's. 
+
+In this milestone we will develop frontend that connects to KILT SDK to atest emails and generate DID's for users. The users will then have the ability to download, encrypt and download or encrypt and store the DID's. Storage of DID's will be executed via Apillon Storage service (existing) which utilises CRUST and IPFS to store encrypted DID's in a decentralised manner
 
 - **Estimated duration:** 1 month
-- **FTE:** 4
-- **Costs:** 14,000 USD
+- **FTE:** 5
+- **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | ----- | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
-| **0b.** | Documentation | The inline documentation of the code and a basic tutorial will explain how to (for example) spin up one of the Apillon's Substrate nodes and send test transactions, showing the new functionality in action. |
+| **0b.** | Documentation | The inline documentation of the code and a basic tutorial will explain how to self host the DID Vault and start generating, encrypting and backing up DID's.|
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. The guide will describe how to run these tests. |
 | **0d.** | Docker | The provided Dockerfiles will enable the testing of all the functionality delivered with this milestone. |
-| **1a.** | Web app UI | The DID Vault UI will be built and published to enable client-side upload + encryption of DID Vaults. |
-| **1b.** | Web app source code | VUE.js (typescript) based UI implementation integrating crypto web api to encrypt client side uploaded credential files and send them to the API. |
+| **1a.** | DID Credentials Creation| UI and functionality that connects to KILT SDK and allows users to atest their email and generate DID Credentials, free of charge. |
+| **1b.** | DID Credentials Download and Encryption| UI and functionality that allows user to either download or encrypt and download the newly generated DID. |
+| **1c.** | DID Credentials Storage and Backup| UI and functionality tht connects to Apillon Storage API (underlying CRUST+IPFS) to store and backup newly created DID credentials, or store existing DID credentials. |
+| **2a.** | DID Vault Web App - Hosted on Apillon | Hosted Web app will enable access to previously described features. Users will be able to  generate email atested DID, download that DID, encrypt and download that DID or encrypt and store DID, with clicking, free of charge. |
+| **2b.** | DID Vault Web App - Open Source | Open Source version will be made available, where anyone can self host the solution and provide their own DID generation, backup and storage, and have the ability to change the DID storage target from Apillon Storage, to any CRUST/IPFS Gateways |
+| **2c.** | Web app source code | VUE.js (typescript) based UI implementation integrating crypto web api to encrypt client side uploaded credential files and send them to the API. |
 
-#### Milestone 2 - Store to IPFS, Retrieve, Decrypt
+
+
+#### Milestone 2 - Authentication integration
 
 - **Estimated duration:** 1 month
-- **FTE:** 4
-- **Costs:** 14,000 USD
+- **FTE:** 3
+- **Costs:** 8,000 USD
 
 | Number | Deliverable | Specification |
 | ----- | ----------- | ------------- |
@@ -244,9 +252,11 @@ During the initial hand-in-hand research, the project's technical viability was 
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. The guide will describe how to run these tests. |
 | **0d.** | Docker | The provided Dockerfiles will enable the testing of all the functionality delivered with this milestone. |
 | **0e.** | Article | An online video guide will explain the use of DID Vault for DID encryption and storage for existing DID owners. |
-| **1a.** | Fully functional back-end | Apillon Beta-ready DID Vault will be built and deployed, allowing users to upload, encrypt and store DIDs to log in to integrated services. |
-| **1b.** | Backend source code | Typescript based (node.js, express, next.js) backend that uploads credentials to IPFS and links them to an account. Also able to retrieve the credentials. |
-| **2a.** | Front end javascript | Javascript code snippet that enables website integration of vault credential retrieval and validation. |
+| **1a.** | Vault Sign in Button| Javascript code snippet that enables website integration of vault credential retrieval and validation. |
+| **1b.** | Middleware Backend Service | A running backend service - middleware on Apillon. This service directly integrates with the Vault sign in button and provides frontend popup code for user that retrieves credentails from vault and enables user selection of credential sharing. Essentially providing a google like login experience while using parachains and encryption to ensure that user is always in control od their data  |
+| **1c.** | Middleware Backend Self Hosted | Open source, self hosted ready version of our Backend middleware service that allows validation of DID's as in 1a.  |
+| **2a.** | DID validation | Code snipet the integrator can use on their backend to validate credentials. (For example against KILT parachain for DID generated there) 
+
 
 #### Future Plans
 Once the milestones described in this Grant Application are reached, the DID Vault project is moving into Phase 2, upgrading the Vault to a production-grade standalone product anyone can use.
