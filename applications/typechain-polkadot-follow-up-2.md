@@ -175,7 +175,7 @@ We have decided to describe a full roadmap of a Typechain here, with estimates. 
 | Number | Deliverable | Specification |
 | ------ | ----------- | ------------- |
 | 0a | License | MIT |
-| 0b | Documentation | Cover new-added features in documentation and usage examples. Prepare generated code to have more informative IDE hints based on TSDoc and the output type system (if needed). |
+| 0b | Documentation | Cover newly-added features in documentation and usage examples. Prepare generated code to have more informative IDE hints based on TSDoc and the output type system (if needed). |
 | 1 | Investigation & Refactoring | Broaden types definitions for methods arguments and return values (to full coverage). Also, refactor project structure to monorepo for future development | 
 | 2 | Parser & generators modules | Design and implement a new parser module for ABI JSON to work with different versions of the ABI. Parser's output structure serves as an input for generators. Refactor, replace inline generation with the parser to generator flow. |
 | 3 | Contract deployment | Add availability to deploy contracts with `Constructors` field, using `*.contract` files.
@@ -197,13 +197,13 @@ We have decided to describe a full roadmap of a Typechain here, with estimates. 
 | ------ | ----------- | ------------- |
 | 0a. | License | MIT | 
 | 0b. | Documentation | We will cover new-added features in documentation and usage examples. | 
-| 0c. | Testing and Teesting Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
+| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. | 
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. | 
-| 0e. | Article | We will publish article that explain how to connect it to the project and describe the types of connection options (directly or via compiler). | 
+| 0e. | Article | We will publish an article that explains how to integrate the typechain library into a project and describes the types of connection options (directly or via compiler). | 
 | 1. | User-defined plugins | We will provide an opportunity for users to make their plugins, for instance, how to use parsed types, adding new fields and so on. | 
 | 2. | Subscribing to events | We will research and subscribe to events the contract emits, which will be handy for developers. |
 | 3. | Typechain-compiler | The tool will be easy for big projects to compile Rust code and generate Typechain definitions. It’ll be helpful for TDD when users can write code and develop everything in one CLI command instead of generating a typechain-code file by file. In plans, we want to make a wrapper for running user scripts (like hardhat run) and also functionality to initialize the environment for typechain usage |
-| 4. | Openbrush integration | We will test typechain on openbrush integration tests to ensure everything is working correctly and is easy to use. |
+| 4. | Openbrush integration tests | We will test typechain on openbrush integration tests to ensure everything is working correctly and is easy to use. |
 | 5. | typechain/types package | We will make a separate package for types that typechain use to reduce the usage of the same code and separate static code from generated code. |
 
 ## Future work
