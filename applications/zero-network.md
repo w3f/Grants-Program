@@ -5,6 +5,7 @@
 - **Team Name:** Zero Network
 - **Payment Address:** 0x9061b0787D28d0fDaD845d670F7505EAE5F3B01B (DAI)
 - **Level:** 2
+- **Status:** Terminated
 
 ## Project Overview :page_facing_up:
 

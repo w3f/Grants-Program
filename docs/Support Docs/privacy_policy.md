@@ -1,4 +1,4 @@
-Grants Terms and Conditions
+Privacy Policy
 ===========================
 
 Updated December 2022

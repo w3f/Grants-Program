@@ -1,6 +1,6 @@
 # Social Recovery Wallet
 
-* **Status:** [Under Development 1](https://github.com/w3f/Grants-Program/blob/master/applications/Plus-social-recovery-wallet.md), [Under Development 2](https://github.com/w3f/Grants-Program/blob/master/applications/social_recovery_wallet.md)
+* **Status:** [Under Development 1](https://github.com/w3f/Grants-Program/blob/master/applications/Plus-social-recovery-wallet.md), [Under Development 2](https://github.com/w3f/Grants-Program/blob/master/applications/social_recovery_wallet.md), [Under Development 3](https://github.com/w3f/Grants-Program/blob/master/applications/keysafe_network.md)
 * **Proposer:** [Noc2](https://github.com/Noc2)
 
 ## Project Description :page_facing_up: 

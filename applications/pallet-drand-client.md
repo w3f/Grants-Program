@@ -118,7 +118,7 @@ We will create a new Rust library that
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. We will use standardized testing methods so tests can be pragmatically executed and updated by anyone. |
 | 1. | Drand client library | We will build out a drand client library with the requirements mentioned in the Milestoke 1 overview.
 
-### Milestoke 2: Build a Substrate pallet with a fully-featured/configured example chain
+### Milestone 2: Build a Substrate pallet with a fully-featured/configured example chain
 
 We will write a Substrate pallet that:
 - implements the drand client library from Milestone 1

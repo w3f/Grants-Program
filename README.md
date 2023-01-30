@@ -66,7 +66,7 @@ We also try to enforce our [code of conduct](CODE_OF_CONDUCT.md) and based on th
 
 An overview of existing projects in the Web 3.0 Technology Stack along with broad project ideas we would potentially be interested in funding can be found [here](https://wiki.polkadot.network/docs/build-open-source), as well as a list of previously accepted applications [here](https://github.com/w3f/Grants-Program/blob/master/applications/index.md).
 
-[Requests For Proposals](https://github.com/w3f/Grants-Program/tree/master/docs/rfps) (RFPs) represent concrete ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, so even if another team has already applied to implement a certain RFP, we invite you to do the same if you're interested.
+[Requests For Proposals](https://github.com/w3f/Grants-Program/blob/master/docs/rfps.md) (RFPs) represent concrete ideas for projects that we would like to see implemented. Several teams may apply for the same RFP, so even if another team has already applied to implement a certain RFP, we invite you to do the same if you're interested.
 
 Finally, you don't need to start your own project in order to be eligible for a grant. Instead, some teams choose to port existing work to Substrate, where the pertinent licenses allow, or even to contribute to an existing open-source project. In the latter case, you should check in advance that the maintainers of the project are interested in your contribution, and the acceptance of the milestones will generally be tied to the inclusion of your work in said project. See the [Maintenance Grants section](#hammer_and_wrench-maintenance-grants) for more info.
 
@@ -86,6 +86,7 @@ The committee consists of individuals who know the funding priorities of the Pol
 
 In cases where a niche expert opinion is desirable, one of the committee members may request such a review.
 
+- [Nabil Abdellaoui](https://github.com/randombishop)
 - [Santiago Balaguer](https://github.com/SBalaguer)
 - [Aeron Buchanan](https://github.com/aeronbuchanan)
 - [Gautam Dhameja](https://github.com/gautamdhameja)
@@ -95,7 +96,6 @@ In cases where a niche expert opinion is desirable, one of the committee members
 - [Bill Laboon](https://github.com/laboon)
 - [Keegan Quigley](https://github.com/keeganquigley)
 - [Raul Romanutti](https://github.com/rrtti)
-- [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
 - [Benjamin Weiß](https://github.com/BenWhiteJam)
 - [Gavin Wood](https://github.com/gavofyork)
@@ -110,7 +110,6 @@ Evaluators are individuals able to evaluate the technology delivered as a result
 - [Diogo Mendonça](https://github.com/dsm-w3f)
 - [Sebastian Müller](https://github.com/semuelle)
 - [Keegan Quigley](https://github.com/keeganquigley)
-- [Aleixo Sánchez](https://github.com/alxs)
 - [Seraya Takahashi](https://github.com/takahser)
 
 #### W3F Operations Team<!-- omit in toc -->
@@ -119,7 +118,6 @@ The Operations Team takes care of legal documents, invoicing and remittances.
 
 - [Melanie Diener](https://github.com/meldien)
 - [Federica Dubbini](https://github.com/fededubbi)
-- [Kasper Mai Jørgensen](https://github.com/KasperJor)
 - [Rouven Pérez](https://github.com/RouvenP)
 
 
@@ -159,7 +157,7 @@ The W3F Grants Program offers different grant levels to help you best depending 
    2. In the newly created fork, create a copy of the application template ([`applications/application-template.md`](applications/application-template.md)). If you're using the GitHub web interface, you will need to create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/applications/application-template.md) of the template inside the new one. Make sure you **do not modify the template file directly**. In the case of a maintenance application, use the maintenance template ([`maintenance template`](maintenance/maintenance-template.md)) instead. In the case of a research application, use the research template ([`research template`](applications/application-template-research.md)) instead.
    3. Name the new file after your project: `project_name.md`.
    4. Fill out the template with the details of your project. The more information you provide, the faster the review. Please refer to our [Grant guidelines for most popular grant categories](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/grant_guidelines_per_category.md) and make sure your deliverables present a similar same level of detail. To get an idea of what a strong application looks like, you can have a look at the following examples:  [1](https://github.com/w3f/Grants-Program/blob/master/applications/project_aurras_mvp_phase_1.md), [2](https://github.com/w3f/Grants-Program/blob/master/applications/project_bodhi.md), [3](https://github.com/w3f/Grants-Program/blob/master/applications/pontem.md), [4](https://github.com/w3f/Grants-Program/blob/master/applications/spartan_poc_consensus_module.md). Naturally, if you're only applying for a smaller grant that only consists of, say, UI work, you don't need to provide as much detail.
-   5. Once you're done, create a pull request. The pull request should only contain _one new file_—the Markdown file you created from the template.
+   5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/README.md). The pull request should only contain _one new file_—the Markdown file you created from the template.
    6. You will see a comment template that contains a checklist. You can leave it as is and tick the checkboxes once the pull request has been created. Please read through these items and check all of them.
    7. Sign off on the [terms and conditions](https://github.com/w3f/Grants-Program/blob/master/docs/Support%20Docs/T%26Cs.md) presented by the [CLA assistant](https://github.com/claassistantio) bot as a Contributor License Agreement. You might need to reload the pull request to see its comment.
 
@@ -196,7 +194,7 @@ Ideas generally have better chances of being implemented if they're presented in
 2. In the newly created fork, create a copy of the suggestion template ([`rfps/suggestion-template.md`](https://github.com/w3f/Grants-Program/blob/master/docs/rfps/suggestion-template.md)) inside the [`rfps`](https://github.com/w3f/Grants-Program/tree/master/docs/rfps) folder. Make sure you create a new file and copy the [contents](https://raw.githubusercontent.com/w3f/Grants-Program/master/docs/rfps/suggestion-template.md) of the template into the new one, and _do not modify the template file directly._
 3. Name the file after your idea: `project_name.md`.
 4. Fill out the template with the project details. Please include as many details as possible.
-5. Once you're done, create a pull request. The pull request should only contain _one new file_—the Markdown file you created from the template.
+5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/README.md). The pull request should only contain _one new file_—the Markdown file you created from the template.
 6. You will see the same template as for creating an application. Please replace it with [this one](.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
 7. The RFP will be accepted and merged as soon as it receives three approvals from [W3F Grants Committee](https://github.com/w3f/Grants-Program#w3f-grants-committee) members. 
 
@@ -324,6 +322,7 @@ Below is a list of other grant programs in the Polkadot/Substrate ecosystem:
 - [Interlay Labs Grants Program](https://github.com/interlay/Grants-Program)
 - [Moonbeam Grants Program](https://moonbeam.foundation/grants/)
 - [OAK’s Developer Grants](https://oak.tech/community/grants/)
+- [peaq Ecosystem Grant Program](https://www.peaq.network/grant-program) 
 - [Picasso / Composable Grants Program](https://grants.composable.finance)
 - [SubQuery Grants Programme](https://subquery.network/grants)
 

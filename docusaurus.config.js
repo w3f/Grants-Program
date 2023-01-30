@@ -84,6 +84,10 @@ module.exports = {
               label: 'Website',
               href: 'https://web3.foundation/',
             },
+            {
+              label: 'Privacy Policy',
+              href: './Support%20Docs/privacy_policy',
+            },
           ],
         }, 
         {
@@ -100,7 +104,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Web3 Foundation. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Web3 Foundation`,
     },
     prism: {
       theme: lightCodeTheme,
