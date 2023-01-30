@@ -1,4 +1,4 @@
-# Typechain grant #3
+# Typechain-Polkadot Follow-up-2
 
 # [Typechain-Polkadot](https://github.com/727-Ventures/typechain-polkadot)
 
@@ -151,42 +151,12 @@ We have decided to describe a full roadmap of a Typechain here, with estimates. 
 
 ## Previous work
 
-### Milestone 1 - MVP, first application and testing.
+### [Grant #1](https://github.com/w3f/Grants-Program/pull/992)
 
-- **Estimated duration:** 8 weeks
-- **FTE:** 2
-- **Costs:** 44,800 USD
-
-| Number | Deliverable | Specification |
-| ------ | ----------- | ------------- |
-| 0a     | License  | MIT |
-| 0b     | Documentation | We will provide TypeScript code examples of this package in use, inline documentation, JSDoc, and the description of its features. |
-| 1 | TS Types | We will research & match types from ABI to TypeScript, compatible with polkadot{.js} v8 library. Separately, for methods' arguments and return values. Files with types definition will be generated. | 
-| 2 | Runtime Code | Prepare output(its draft can be seen in [technical specification](https://github.com/727-Ventures/typechain-polkadot/blob/master/docs/tech-specs.md#generated-code-draft)) of runtime code with contracts' methods implementation. At this point we have minimal viable coverage of the ABI types, original methods' names, and general types for methods' options, without specifics for contract's namespaces.
-| 3 | Testing | Minimal coverage of PSP22 contract with integration tests. We will be testing correctness of the derived types of the arguments and return values. |
-| 4 | NPM Packaging | Prepare the repository to work through CLI as a package. In TypeScript, as is, without translation to JavaScript. We will publish the package to NPM repository and provide set-up instructions (i.e. for installation, input & output). |
-
-### Milestone 2 - Full coverage for ABIs’ types. Contracts deployment.
-
-- **Estimated duration:** 7.5 weeks
-- **FTE:** 2.5
-- **Costs:** 52,500 USD
-
-| Number | Deliverable | Specification |
-| ------ | ----------- | ------------- |
-| 0a | License | MIT |
-| 0b | Documentation | Cover newly-added features in documentation and usage examples. Prepare generated code to have more informative IDE hints based on TSDoc and the output type system (if needed). |
-| 1 | Investigation & Refactoring | Broaden types definitions for methods arguments and return values (to full coverage). Also, refactor project structure to monorepo for future development | 
-| 2 | Parser & generators modules | Design and implement a new parser module for ABI JSON to work with different versions of the ABI. Parser's output structure serves as an input for generators. Refactor, replace inline generation with the parser to generator flow. |
-| 3 | Contract deployment | Add availability to deploy contracts with `Constructors` field, using `*.contract` files.
-| 4a | Contract classes extension | Extend generated contract classes with valuable properties ordinarily available on the contract (e.g., address, name, signer, etc.). Also, provide the ability to change signer and contract address easily without creating a new contract manually. |
-| 4b | Methods' names | Format methods' names in the output from the original `MethodTrait::method_name` to a more user-friendly `methodName` naming scheme while resolving overlap in formatted names. |
-| 5 | Testing | Complete coverage of PSP22 contract with integration tests. Both for contract usage and deployment. We will be testing arguments' & return values' types' correctness. |
-| 6 | Article | We will publish an article that explains features of Typechain, how to use it in projects |
-| 7 | Branding | Make logotype for typechain and better README |
+### [Grant #2](https://github.com/w3f/Grants-Program/pull/1368)
 
 ## Current work - Scope of this grant
-### Milestone 3 - High-level improvements, flexibility and simplifying of usage
+### Milestone 1 - High-level improvements, flexibility and simplifying of usage
 
 - **Estimated duration:** 8 weeks
 - **FTE:** 2.5
