@@ -31,8 +31,10 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [alternative_polkadot_host_implementations.md](RFPs/Open/alternative_polkadot_host_implementations.md) | 🟢 | 29.11.2021 |
 | [anti-collusion_infrastructure.md](RFPs/Open/anti-collusion_infrastructure.md) | 🟢 | 29.11.2021 |
 | [appi.md](RFPs/Implemented/appi.md) | 🔴 | 20.07.2021 |
+| [bpf-contracts.md](RFPs/Open/bpf-contracts.md) | 🟢 | 06.01.2023 |
 | [candle-auction.md](RFPs/Implemented/candle-auction.md) | 🔴 | 02.02.2022 |  
 | [crowdloan_front_end_template.md](RFPs/Under%20Development/crowdloan_front_end_template.md) | 🟡 | 18.11.2022 |  
+| [data_analysis_tools.md](RFPs/Open/data_analysis_tools.md) | 🟢 | 25.01.2023 |
 | [decentralized-security-marketplace.md](RFPs/Open/decentralized-security-marketplace.md) | 🟢 | 23.01.2023 |  
 | [epassport-zk-validation.md](RFPs/Open/epassport-zk-validation.md) | 🟢 | 29.11.2021 |
 | [formal_guarantees_for_grandpa.md](RFPs/Open/formal_guarantees_for_grandpa.md) | 🟢 | 07.10.2022 |
@@ -42,6 +44,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [ISO_20022.md](RFPs/Open/ISO_20022.md) | 🟢 | 31.05.2022 |
 | [ISO_8583.md](RFPs/Under%20Development/ISO_8583.md) | 🟡 | 31.05.2022 |
 | [ksm-tipping-button.md](RFPs/Implemented/ksm-tipping-button.md) | 🔴 | 20.07.2021 |  
+| [move_smart_contract_pallet.md](RFPs/Open/move_smart_contract_pallet.md) | 🟢 | 22.12.2022 |
 | [multi-chain-block-explorer.md](RFPs/Under%20Development/multi-chain-block-explorer.md) | 🟡 | 23.11.2021 |
 | [on-chain-quadratic-funding.md](RFPs/Implemented/on-chain-quadratic-funding.md) | 🔴 | 29.03.2022 |  
 | [php-api.md](RFPs/Implemented/php-api.md) | 🔴 | 27.05.2022 |  
@@ -55,6 +58,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [staking-rewards-collector-front-end.md](RFPs/Implemented/staking-rewards-collector-front-end.md) | 🔴 | 20.07.2021 |  
 | [sub-consensus.md](RFPs/Open/sub-consensus.md) | 🟢 | 23.11.2021 |
 | [uncollateralized-stablecoin-research.md](RFPs/Implemented/uncollateralized-stablecoin-research.md) | 🔴 | 01.01.23 |
+| [user-account-access-analysis.md](RFPs/Open/user-account-access-analysis.md) | 🟢 | 07.01.2023 |
 | [validator-setup-maintenance.md](RFPs/Open/validator-setup-maintenance.md) | 🟢 | 23.11.2021 |
 | [validator-selection-algorithm.md](RFPs/Under%20Development/validator-selection-algorithm.md) | 🟡 | 07.12.2022 |
 | [wallet-aggregator-library.md](RFPs/Open/wallet-aggregator-library.md) | 🟢 | 23.01.2023 |
