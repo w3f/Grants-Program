@@ -146,18 +146,18 @@ New project
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Substrate module: Patient Registration | Patients registration API & Dapps on substrate for mobile app, developed in Solidity. |
-| | Patient ID & profile management ||
-| | | Add patient ID |
-| | | Update patient profile |
-| | Credential management ||
-| | | Receive credential issued by system (for example: user credibility level) |
-| | Registry and availability status on chain ||
-| | | Check user account status (for example: pending for verification) |
-| | Data privacy control ||
-| | | Ensure that only authorized users can access patient data |
-| | Anti-fraud |
-| | | Twitter account verification |
-| | | Email verification |
+| | | Patient ID & profile management |
+| | | - Add patient ID |
+| | | - Update patient profile |
+| | | Credential management ||
+| | | - Receive credential issued by system (for example: user credibility level) |
+| | | Registry and availability status on chain ||
+| | | - Check user account status (for example: pending for verification) |
+| | | Data privacy control ||
+| | | - Ensure that only authorized users can access patient data |
+| | | Anti-fraud |
+| | | - Twitter account verification |
+| | | - Email verification |
 | 2. | Documentation | We will provide the document for commend-line verification  |
 
 ### Milestone 2 Challenge card & Health diary
@@ -173,19 +173,19 @@ New project
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Substrate module: Challenge card | Provide a way for users to set personal goals, track their progress, and receive rewards for their efforts. Module developed in Solidity. |
-| | | Add challenge card |
-| | | Add personalized mission |
-| | | Delete challenge card |
-| | | Receive daily mission |
-| | | Receive rewards by mission completed |
-| | | Receive rewards by challenge completed |
-| | | *Rewards by fungible tokens or NFT |
+| | | - Add challenge card |
+| | | - Add personalized mission |
+| | | - Delete challenge card |
+| | | - Receive daily mission |
+| | | - Receive rewards by mission completed |
+| | | - Receive rewards by challenge completed |
+| | | * Rewards by fungible tokens or NFT |
 | 2. | Web Backend module: Health dairy | Provide a dynamic form of health diary for patient self reports. Module developed in Vue and Java. |
-| | | Add Type |
-| | | Add Name |
-| | | Add Questionaire |
+| | | - Add Type |
+| | | - Add Name |
+| | | - Add Questionaire |
 | 3. | Android apk | We will provide android apk for above challenge card data input and functional verification. Developed in Flutters. |
-| | | We will provide android apk for user challenge card with wallet to receive rewards |
+| | | - We will provide android apk for user challenge card with wallet to receive rewards |
 | 4. | Data encryption module | We will implement data encryption module of all stored and transmitted data to prevent unauthorized access or tampering |
 | 5. | Data privacy control module | We will implement a data privacy control module to allow patients to exercise their rights under the GDPR, such as the right to access, rectify, and delete their personal data. |
 | 6. | Audit logging on web backend | The web backend will implement an auditable log of all access to system, including who accessed it and what actions were performed, to help detect and respond to security incidents. |
@@ -218,14 +218,14 @@ New project
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Web Backend module: Client registration | We will provide a web backend for client registration, allowing clients access to patient groups. Develop in Vue and Java. |
-| | | Account signup/signin by invitation |
-| | | Subscribe patient group |
-| | | Add health practitioners |
-| | | Add sponsorship on health education contents |
+| | | - Account signup/signin by invitation |
+| | | - Subscribe patient group |
+| | | - Add health practitioners |
+| | | - Add sponsorship on health education contents |
 | 2. | Web Backend module: Health  Practitioner Registration | We will provide a web backend for HP registration, allowing HP to publish health education contents. Develop in Vue and Java. |
-| | | Account signup/signin by client invitation |
-| | | Published health education contents |
-| | | View and tracking patients feedback |
+| | | - Account signup/signin by client invitation |
+| | | - Published health education contents |
+| | | - View and tracking patients feedback |
 | 3. | Article | We will publish an article/workshop that explains how Claps work and benefit patients. |
 
 ## Future Plans
