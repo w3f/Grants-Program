@@ -242,7 +242,7 @@ Initial flow-chart/decision-tree development that will help developers place the
 | **0b.** | Documentation/Tutorial | We will provide both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
 | **0c.** | Methodology | Detailed explanation of how the results were achieved and how to reproduce/verify the results. |
 | **0d.** | Infrastructure | We will provide the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. LaTeX for article production and Docker files for software execution. |
-| **0e.** | Article | We create a **draft article** (with source code), in the English language. There will be an acknowledgement "This work was supported by a research grant from the Web3 Foundation." |
+| **0e.** | Article | We create a **draft article** (with source code), in the English language. There will be an acknowledgement "This work was supported by a research grant from the Web3 Foundation. The analysis and opinions expressed are the authors and do not reflect the opinions of the Web3 Foundation." |
 | **0e.1**   |  - Appendix: Methodology    | As described in the methodology section above |
 | **0e.2**   |  - Section: Polkadot Parachains      | Initial Parachain summary |
 | 1. | List of academic papers | Collect published and network papers, as described in the methodology section above |
@@ -261,8 +261,7 @@ Initial flow-chart/decision-tree development that will help developers place the
 | **0b.** | Documentation/Tutorial | We will update both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
 | **0c.** | Methodology | Update the detailed explanation of how the results were achieved and how to reproduce/verify the results. |
 | **0d.** | Infrastructure | We will update the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. LaTeX for article production and Docker files for software execution. |
-| **0e.** | Article | We will send a **draft article** (with source code), in the English language.|
-to test all the functionality delivered with this milestone. There will be an acknowledgement "This work was supported by a research grant from the Web3 Foundation." |
+| **0e.** | Article | We will send a **draft article** (with source code), in the English language. There will be an acknowledgement "This work was supported by a research grant from the Web3 Foundation. The analysis and opinions expressed are the authors and do not reflect the opinions of the Web3 Foundation."|
 | **0e.1**    | Article                   | We will publish an **working paper** as indicated above. |
 | **0e.2**   |  - Section: Published models    | Initial annotated bibliography |
 | **0e.3**   |  - Section: Polkadot Parachain Economies | Parachain summary updated with references to published models |
@@ -292,8 +291,7 @@ The report/working paper will be posted to [SSRN (e.g. FEN - Cryptocurrency Rese
 | **0b.** | Documentation/Tutorial | We will update both **artifacts documentation** of the deliverables and a basic **tutorial** that explains how a user can (for example) execute the code included or can visualize data or use any artifacts included. |
 | **0c.** | Methodology | Update the detailed explanation of how the results were achieved and how to reproduce/verify the results. |
 | **0d.** | Infrastructure | We will update the list of all infrastructure requirements (text editors with proper versions, software packages, data packages, etc) that can be used to verify the deliveries with this milestone. LaTeX for article production and Docker files for software execution. |
-| **0e** | Article | We will update a **draft article** (with source code), in the English language.|
-to test all the functionality delivered with this milestone. There will be an acknowledgement "This work was supported by a research grant from the Web3 Foundation." |
+| **0e** | Article | We will update a **draft article** (with source code), in the English language. There will be an acknowledgement "This work was supported by a research grant from the Web3 Foundation. The analysis and opinions expressed are the authors and do not reflect the opinions of the Web3 Foundation."|
 | **0e.1**   |  - Section: Introduction           | Place the topic in perspective and motivate non-specialist readers.  Text and tables where relevant/appropriate. |
 | **0e.2**   |  - Section: Published models    | Update annotated bibliography |
 | **0e.3**   |  - Section: Polkadot Parachains | Parachain summary updated with references to published models |
