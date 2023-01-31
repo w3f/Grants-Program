@@ -67,7 +67,7 @@ Each section of the report/working paper will be developed using some subset of 
 
 #### Published articles
 
-As requested, to eliminate bias (and constrain budget) in the collection of research papers, the initial source of the published research will be the top-10 articles provided by an independent research service, using the commercial research databases available from the State Library of New South Wales in response to the following query, "Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors"
+The initial source of the published research will be the top-10 articles selected by the grantee, using the commercial research databases available from the State Library of New South Wales by operationalizing the following inquiry, "Refereed articles on block-chain token-economics using rational expectations equilibrium (a.k.a. no-arbitrage) arguments/analysis, ranked by journal impact factors". This initial source may be adjusted at the grantees discretion based on his expertise.  The selection process will be fully descrided and documented.
 
 #### Polkadot Parachain whitepapers
 
@@ -75,7 +75,7 @@ These are from projects that are Polkadot-Parachains as at 19 December 2022.
 
 ### The expected results
 
-The objective is to arrive at a scoping review of current state of token-economy development, that forms the basis of a more forward looking "tokenomics", and a practical example aimed at Polkadot/Substrate developers without any formal training in economics.  These are intended as a future projects.
+The objective is to arrive at a scoping review of current state of token-economy development.
 
 One of the elements will be summary tables, using attributes that arise naturally within a Rational Expectations Equilibrium framework, such as the following:
 
