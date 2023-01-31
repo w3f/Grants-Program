@@ -22,6 +22,7 @@ Claps is designed to be engaging and enjoyable to use, and could provide users w
 ### Project Details
 
 ## Claps App Use Case
+
 Patients
 
 Use the app to track their mood on a daily basis
@@ -59,8 +60,6 @@ AI algorithms can analyze individual patient data and provide personalized recom
 Web3 Technology
 
 Web3 technologies can give individuals more control over their personal health records, as they can choose who has access to their data and when it is shared. This can help to enhance privacy and ensure that personal health information is used appropriately.
-
-
 
 # Our Goals
 Improve the quality of care and outcomes for patients.
@@ -140,7 +139,6 @@ New project
 - **FTE:**  4
 - **Costs:** 20,000 USD
 
-
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | **0a.** | License | Apache 2.0 / GPLv3 / MIT / Unlicense |
@@ -161,7 +159,6 @@ New project
 | | | Twitter account verification |
 | | | Email verification |
 | 2. | Documentation | We will provide the document for commend-line verification  |
-
 
 ### Milestone 2 Challenge card & Health diary
 
@@ -208,7 +205,6 @@ New project
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 1. | Substrate module: Claps Health DAO | We will implement a DAO for configure and manage Claps Dapps, the DAO function included multi-signature for DAO managers. Module developed in Solidity. |
 
-
 ### Milestone 4 Claps Web Backend for Clients & Health Practitioners
 
 - **Estimated Duration:** 2 month
@@ -232,7 +228,6 @@ New project
 | | | View and tracking patients feedback |
 | 3. | Article | We will publish an article/workshop that explains how Claps work and benefit patients. |
 
-
 ## Future Plans
 
 Open AI Integration
@@ -245,8 +240,6 @@ We are planning to build an omnichannel platform for pharmaceutical companies an
 
 ## Additional Information :heavy_plus_sign:
 
-
 Reference:
 https://www.ledgerinsights.com/blockchain-health-records-taiwan/
 https://medium.com/dtco/blockchain-enabled-personal-health-record-os-challenges-opportunities-in-health-care-55161e3a5a32
-
