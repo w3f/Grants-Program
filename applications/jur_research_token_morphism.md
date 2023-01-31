@@ -2,7 +2,7 @@
 
 - **Team Name:** Jur
 - **Payment Address:** ETH Address (USDC) 0x55dB5D91C75635dfb44AD4235c715254FA3151B1
-- **Level** 2
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 Research paper regarding the SEC DOT regulatory process, outcomes and recommendations for Dotsama and the wider Web3 ecosystem
