@@ -6,7 +6,7 @@
 
 ### Overview
 
-- Gamified health tracking app
+- Make self-care a fun game with Claps
 - Claps is the mobile app that integrates gaming with personal health tracking can be a fun and engaging way to encourage users to track their health on a daily basis and make healthy lifestyle choices. The app could allow users to play games and record the results as a health diary, and reward them with incentives and rewards for completing diagnostic tests or answering questionnaires such as mood tracking.
 
 Claps defines itself as a "gamified health tracking app" that uses gaming elements to motivate users to track their health and make healthy lifestyle choices. By integrating with artificial intelligence (AI) into a gamified health tracking app to provide a more personalized and interactive user experience.
@@ -21,6 +21,34 @@ Claps is designed to be engaging and enjoyable to use, and could provide users w
 
 ### Project Details
 
+## Claps App Use Case
+Patients
+
+Use the app to track their mood on a daily basis
+Receive rewards by reporting their mood or blood pressure, or by completing other activities such as questionnaires. By providing these proof of work to the Claps dapps(Claps DAO).
+View personalized health education content provided by health practitioners
+Share their mood tracking data with their healthcare provider for review and analysis
+
+Pharmaceutical Company
+
+Use the data collected by the app to inform their product development and marketing strategies
+Provide funding to health practitioners to produce health education content for the app
+Use the app as a platform to promote their products and services to patients
+
+Health Practitioners
+
+Use the app to provide personalized health education content to patients
+Use the data collected by the app to inform treatment decisions and track patient progress
+Receive funding from pharmaceutical companies to produce health education content for the app
+
+AI Assistant
+
+Collect and analyze data from patients' mood tracking
+Provide personalized recommendations and education content to patients based on their data
+Facilitate communication and collaboration between patients, health practitioners, and pharmaceutical companies.
+
+![diagam](https://user-images.githubusercontent.com/14127551/215703063-220a9219-34f5-4034-be41-0d8ee9d48b70.png)
+
 # Solutions
 Personal Health AI Assistant
 
@@ -32,6 +60,8 @@ Web3 Technology
 
 Web3 technologies can give individuals more control over their personal health records, as they can choose who has access to their data and when it is shared. This can help to enhance privacy and ensure that personal health information is used appropriately.
 
+
+
 # Our Goals
 Improve the quality of care and outcomes for patients.
 
@@ -42,6 +72,7 @@ Improve the quality of care and outcomes for patients.
 - Alcohol, tobacco use and substance abuse
 
 Claps enable patients to self-report, self-test, and access health education, and that incorporate AI-based features, can be a useful tool for improving the quality of care and outcomes for patients. By providing patients with the tools and support they need to manage their own health, these apps can help to empower patients and to improve the effectiveness of healthcare delivery.
+
 Technology
 
 - GPT-3 AI model
@@ -99,11 +130,11 @@ New project
 
 ### Overview
 
-- **Total Estimated Duration:** 6 months
-- **Full-Time Equivalent (FTE):**  5 FTE
+- **Total Estimated Duration:** 8 months
+- **Full-Time Equivalent (FTE):**  5-6 FTE
 - **Total Costs:** 75,000 USD
 
-### Milestone 1 Claps Prototyping
+### Milestone 1 Claps Prototyping and Patients Registration
 
 - **Estimated duration:** 2 month
 - **FTE:**  4
@@ -116,16 +147,27 @@ New project
 | **0b.** | Documentation | We will provide UI Wireframe and a basic tutorial that explains how a user can play, which will show how the functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: DID | We will create a Substrate module that will allow individuals to create and manage their DID on the Substrate. |
-| 2. | Substrate module: NFT | We will create a Substrate module that will allow individuals to provide POW based on DID and mining NFT. |
-| 3. | Documentation | We will provide the interface for the web backend of self-report measures of data collection forms and procedures. |
+| 1. | Substrate module: Patient Registration | Patients registration API & Dapps on substrate for mobile app, developed in Solidity. |
+| | Patient ID & profile management ||
+| | | Add patient ID |
+| | | Update patient profile |
+| | Credential management ||
+| | | Receive credential issued by system (for example: user credibility level) |
+| | Registry and availability status on chain ||
+| | | Check user account status (for example: pending for verification) |
+| | Data privacy control ||
+| | | Ensure that only authorized users can access patient data |
+| | Anti-fraud |
+| | | Twitter account verification |
+| | | Email verification |
+| 2. | Documentation | We will provide the document for commend-line verification  |
 
 
-### Milestone 2 Claps Dapps
+### Milestone 2 Challenge card & Health diary
 
 - **Estimated Duration:** 2 month
-- **FTE:**  3
-- **Costs:** 15,000 USD
+- **FTE:**  6
+- **Costs:** 25,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -133,14 +175,30 @@ New project
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Smart contract | We will deliver a set of ink! Smart contracts that will include Claps DAO, Claps DID, Claps NFT. The details of smart contract transactions will be described in the document. |
-| 2. | Substrate module: Web backend | We will provide the interface for the web backend, manage DID users, and create data collection forms. |
+| 1. | Substrate module: Challenge card | Provide a way for users to set personal goals, track their progress, and receive rewards for their efforts. Module developed in Solidity. |
+| | | Add challenge card |
+| | | Add personalized mission |
+| | | Delete challenge card |
+| | | Receive daily mission |
+| | | Receive rewards by mission completed |
+| | | Receive rewards by challenge completed |
+| | | *Rewards by fungible tokens or NFT |
+| 2. | Web Backend module: Health dairy | Provide a dynamic form of health diary for patient self reports. Module developed in Vue and Java. |
+| | | Add Type |
+| | | Add Name |
+| | | Add Questionaire |
+| 3. | Android apk | We will provide android apk for above challenge card data input and functional verification. Developed in Flutters. |
+| | | We will provide android apk for user challenge card with wallet to receive rewards |
+| 4. | Data encryption module | We will implement data encryption module of all stored and transmitted data to prevent unauthorized access or tampering |
+| 5. | Data privacy control module | We will implement a data privacy control module to allow patients to exercise their rights under the GDPR, such as the right to access, rectify, and delete their personal data. |
+| 6. | Audit logging on web backend | The web backend will implement an auditable log of all access to system, including who accessed it and what actions were performed, to help detect and respond to security incidents. |
 
-### Milestone 3 Claps API
+
+### Milestone 3 Claps DAO
 
 - **Estimated Duration:** 2 month
-- **FTE:**  3
-- **Costs:** 15,000 USD
+- **FTE:**  2
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -148,14 +206,14 @@ New project
 | **0b.** | Documentation | We will provide Claps API reference documents. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | API Service | We will provide an API,  tester send the request and get the response described in the API document. |
+| 1. | Substrate module: Claps Health DAO | We will implement a DAO for configure and manage Claps Dapps, the DAO function included multi-signature for DAO managers. Module developed in Solidity. |
 
 
-### Milestone 4 Claps APP
+### Milestone 4 Claps Web Backend for Clients & Health Practitioners
 
-- **Estimated Duration:** 3 month
-- **FTE:**  5
-- **Costs:** 25,000 USD
+- **Estimated Duration:** 2 month
+- **FTE:**  4
+- **Costs:** 20,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -163,8 +221,15 @@ New project
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use Claps app. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Android apk | We will deliver a Android apk that will implement the functionality described in this milestones design document and test guide. |
-| 2. | iOS Testfight | We will deliver a iOS Testflight that will implement the functionality described in the this milestones design document and test guide. |
+| 1. | Web Backend module: Client registration | We will provide a web backend for client registration, allowing clients access to patient groups. Develop in Vue and Java. |
+| | | Account signup/signin by invitation |
+| | | Subscribe patient group |
+| | | Add health practitioners |
+| | | Add sponsorship on health education contents |
+| 2. | Web Backend module: Health  Practitioner Registration | We will provide a web backend for HP registration, allowing HP to publish health education contents. Develop in Vue and Java. |
+| | | Account signup/signin by client invitation |
+| | | Published health education contents |
+| | | View and tracking patients feedback |
 | 3. | Article | We will publish an article/workshop that explains how Claps work and benefit patients. |
 
 
