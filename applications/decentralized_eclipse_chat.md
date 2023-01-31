@@ -51,6 +51,13 @@ The communication will be direct between the two users without having the necess
 - Encrypt personal data: Encrypt personal data stored on the blockchain to help prevent unauthorized access.
 - Provide access and control: Provide users with access to their personal data, and allow them to control how it is used. This includes the right to delete or export their dat
 
+### Why did we choose to build a chat system using Blockchain? 
+
+Building a chat app using blockchain technology can have several benefits, such as increased security, privacy, and decentralization. 
+Here are some benefits of building a chat app using blockchain:
+- Security: Blockchain technology provides a secure and decentralized way to store and transfer data, which can help to prevent data breaches and unauthorized access to user data.
+- Privacy: Chat apps built on blockchain can provide users with more control over their data, as they can choose to encrypt their messages or store them in a secure, decentralized manner.
+- Decentralization: By using blockchain technology, a chat app can become more decentralized, which can reduce the risk of single points of failure and increase the reliability of the app.
 
 
 ### Ecosystem Fit
@@ -60,6 +67,7 @@ The communication will be direct between the two users without having the necess
 ## Team
 ### Team members
 - MSc Redian Prifti - Product owner
+- MSc Eljo Prifti - Team Leader
 - Eng Gerti Prifti - Substrate/Rust developer with proven experience
 
 ### Contact
@@ -72,6 +80,10 @@ The communication will be direct between the two users without having the necess
 - **Contact Email:** gertiprifti@gmail.com
 - **Website:** https://www.linkedin.com/in/gertiprifti/
 
+- **Contact Name:** MSc Eljo Prifti
+- **Contact Email:** elioprifti@gmail.com
+- **Website:** https://www.linkedin.com/in/elioprifti/
+
 ### Legal Structure
 
 - **Registered Address:**  We do not have any registered address
@@ -79,12 +91,16 @@ The communication will be direct between the two users without having the necess
 
 ### Team's experience
 
-Hello, my name is Redian Prifti and I am a Civil Engineer. I have a demonstrated experience in the field of project management and project development of about ten years.
+Hello, my name is Redian Prifti, and I am a Civil Engineer. I have a demonstrated experience in the field of project management and project development of about ten years.
 Recently I have been very attracted to Web 3.0 and the opportunities that it can offer. The freedom of choosing the decentralization and the security that offers Web 3.0 are the main characteristics that I like the most.
 We have decided to assemble a small Team and try to develop our idea of a different communication platform.
-Off course, I´m not a developer but I intend to bring my experience in the management and development of a project.
+Off course, I´m not a developer, but I intend to bring my experience in the management and development of a project.
 
-Hello, my name is Gerti. Over the last 5 years, I've been continuously working towards achieving clients' business goals through the application of IT technology. The collaborations I've had working in a few industries brought to life numerous products with an audience of thousands and even millions of users. The secret behind this success was creating an intuitive, visually attractive application customized to the needs of the target clientele.In addition to the substantial experience working as a Java Enterprise, I've also gained a Master's Degree in Computer Science that has equipped me with a strong knowledge of the newest tools and technologies to create flawless products your clients will enjoy.For the last few years, I have been curious about Substrate/Rust, and I am learning it in my spare time.
+Hello, my name is Gerti. Over the last 5 years, I've been continuously working towards achieving clients' business goals through the application of IT technology. The collaborations I've had working in a few industries brought to life numerous products with an audience of thousands and even millions of users. The secret behind this success was creating an intuitive, visually attractive application customized to the needs of the target clientele.In addition to the substantial experience working as a Java Enterprise, I've also gained a Master's Degree in Computer Science that has equipped me with a strong knowledge of the newest tools and technologies to create flawless products your clients will enjoy.For the last few years, I have been curious about Substrate/Rust, and I am building using it in my spare time.
+
+Hello, my name is Elio. I have a master's degree in computer science and I have more than 6 years experience as a professional software developer in Android/Java developer in the market. I have been deeply fascinated by blockchain and discovered Substrate. I have spent 1+ year learning/contributing to Rust/Substrate.
+I am a contributor to the Substrate recipes repo,  taking it upon myself to upgrading Substrate “Kitchen Node” Recipes from v1 to v2, which took 5-6 months working in my spare time.
+
 ### Team Code Repos
 
 - https://github.com/gertt/Invoice
@@ -109,10 +125,12 @@ Deliver everything on time and meet all the requirements
 
 - Gerti: https://github.com/gertt
 - Redian : https://github.com/rediPrifti
+- Eljo : https://github.com/herou
 
 ### Team LinkedIn Profiles
 - Eng Gerti Prifti: https://www.linkedin.com/in/gertiprifti/
 - MSc Redian Prifti: https://www.linkedin.com/in/redi-prifti-9b516a40/
+- MSc Eljo Prifti:  https://www.linkedin.com/in/elioprifti/
 
 
 ## Development Status
