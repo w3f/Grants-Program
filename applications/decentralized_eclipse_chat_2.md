@@ -157,9 +157,8 @@ We would like to use the Substrate template node
 |    0a. | License                         | Apache 2.0                                                                                                                                                    |
 |    0b. | Documentation                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how register_address, check_nickname, send_invitation works. |
 |    0c. | Testing Guide                   | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.             |
-|    0d. | Article                         | We will publish an **article** that explains how the communication system works.                                                                              
-|    0e. | Benchmarking                    | Benchmarking will be provided for register_address, check_nickname, send_invitatio.                                                                           
-|    0f. | Substrate module: register_address, check_nickname, send_invitation | We will create a Substrate module that will create an register an address, check for a nickname and send an invitation.                                       |
+|    0d. | Benchmarking                    | Benchmarking will be provided for register_address, check_nickname, send_invitatio.                                                                           
+|    0e. | Substrate module: register_address, check_nickname, send_invitation | We will create a Substrate module that will create an register an address, check for a nickname and send an invitation.                                       |
 
 
 ### Milestone 2 — Implement accept_deny_invitation, send_sms, get_sms functionality
@@ -173,9 +172,8 @@ We would like to use the Substrate template node
 |    0a. | License                           | Apache 2.0                                                                                                                                            |
 |    0b. | Documentation                     | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how accept_deny_invitation, send_sms, get_sms works. |
 |    0c. | Testing Guide                     | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.     |
-|    0d. | Article                           | We will publish an **article** that explains how the decentralized communication system works.                                                        
-|    0e. | Benchmarking                      | Benchmarking will be provided for accept_deny_invitation, send_sms, get_sms works.                                                                    
-|    0f. | Substrate module: accept_deny_invitation, send_sms, get_sms | We will create a Substrate module that will accept or deny an invitation, send a sms and get all sms.                                                 |
+|    0d. | Benchmarking                      | Benchmarking will be provided for accept_deny_invitation, send_sms, get_sms works.                                                                    
+|    0e. | Substrate module: accept_deny_invitation, send_sms, get_sms | We will create a Substrate module that will accept or deny an invitation, send a sms and get all sms.                                                 |
 
 ### Milestone 3 — Implement get_all_channels, search_address, delete_channel  functionality
 
