@@ -143,7 +143,7 @@ We would like to use the Substrate template node
 
 - **Total Estimated Duration:** 3 months
 - Full-Time Equivalent (FTE): 2 FTE
-- **Costs:** $30,000 USDT
+- **Total Costs:** $30,000 USDT
 
 
 ### Milestone 1 — Implement register_address, check_nickname, send_invitation  functionality
