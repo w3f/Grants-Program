@@ -2,7 +2,7 @@
 
 - **Project Name:** EclipseChat
 - **Team Name:** PriftiTeam
-- **Payment Address:** 0xd042e53e22e9f941ceba02f4adb9d1b32ef43675
+- **Payment Address:** ETH Address (USDC) 0xd042e53e22e9f941ceba02f4adb9d1b32ef43675
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview
@@ -143,14 +143,14 @@ We would like to use the Substrate template node
 
 - **Total Estimated Duration:** 3 months
 - Full-Time Equivalent (FTE): 2 FTE
-- **Total Costs:** $30,000 USDT
+- **Total Costs:** $30,000 USDC
 
 
 ### Milestone 1 — Implement register_address, check_nickname, send_invitation  functionality
 
 - Estimated Duration: 1 month
 - FTE: 2
-- Costs: $10,000 USDT
+- Costs: $10,000 USDC
 
 | Number | Deliverable                     | Specification                                                                                                                                                 |
 |-------:|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -165,7 +165,7 @@ We would like to use the Substrate template node
 
 - Estimated Duration: 1 month
 - FTE: 2
-- Costs: $10,000 USDT
+- Costs: $10,000 USDC
 
 | Number | Deliverable                       | Specification                                                                                                                                         |
 |-------:|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
