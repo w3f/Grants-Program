@@ -2,7 +2,7 @@
 
 - **Team Name:** Polytope Labs
 - **Payment Address:** 0xC70ac55B07A070743555C5D12B263733eCae9f92 (Ethereum DAI)
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -75,15 +75,15 @@ Polytope Labs is a collective of core blockchain engineers, researchers & scient
 
 ### Overview
 
-- **Total Estimated Duration:** 1 Month
-- **Full-Time Equivalent (FTE):**  1 FTE
-- **Total Costs:** 45,000 USD
+- **Total Estimated Duration:** 6 Weeks
+- **Full-Time Equivalent (FTE):**  2.5 FTE
+- **Total Costs:** 30,000 USD
 
 ### Milestone 1 Implementation
 
-- **Estimated duration:** 1 Month
-- **FTE:**  1
-- **Costs:** 45,000 USD
+- **Estimated duration:** 6 Weeks
+- **FTE:**  2.5
+- **Costs:** 30,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
