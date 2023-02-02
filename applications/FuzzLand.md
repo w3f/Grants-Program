@@ -15,11 +15,11 @@ The importance of auditing has grown significantly in recent years as organizati
 
 The use of human auditors by auditing firms presents several challenges, including the high costs of recruiting and training qualified personnel and the potential for human error. With the increasing complexity of software systems and the growing volume of data to be analyzed, manual audits can become increasingly time-consuming and error-prone. On the other hand, automated auditing solutions also present their own set of challenges. These solutions typically require high computational power and incur high running time overhead. Thus, many traditional automated auditing tools sacrifice completeness and soundness of the analysis for faster response time, resulting in both false negative and positive results.
  
-In contrast, FuzzLand aims to parallelize novel automated program analysis techniques to gain accurate results in a reasonable amount of time. To achieve high parallelism with low costs, FuzzLand platform allows the public to contribute computation power to accomplish the automated auditing in return for token rewards. In the meantime, all the program analysis intermediate statistics and waypoints are verified and stored on the chain, which can finally be leveraged to mint the auditing reports. 
+In contrast, FuzzLand aims to parallelize novel automated program analysis techniques to gain accurate results in a reasonable amount of time. To achieve high parallelism with low costs, FuzzLand platform allows the public to contribute computation power to accomplish the automated auditing in return for token rewards. In the meantime, all the program analysis intermediate statistics and waypoints are verified and stored on the FuzzLand chain, which can finally be leveraged to mint the auditing reports. 
 
 Unlike traditional collaborative manual auditing platforms, FuzzLand uses sound automated program analysis techniques to provide auditing reports. Since the program analysis results and intermediate waypoints can be easily verified through a fully automated oracle, the manual confirmation process is no longer needed. While it is impossible to quantify the performance of human auditors, FuzzLand can quantify the auditing progress and completeness of auditing reports based on metrics backed with on-chain data. 
 
-The FuzzLand platform can offer two key benefits to the ecosystem. Firstly, it allows Substrate module and Ink developers to access low-cost, highly accurate auditing reports for their projects with on-chain guarantees. Secondly, the platform will be implemented as a Substrate chain, and the platform's implementation as Substrate pallets allows for easy reuse by other projects.
+The FuzzLand platform can offer two key benefits to the ecosystem. Firstly, it allows Substrate module and Ink developers to access low-cost, highly accurate auditing reports for their projects with on-chain guarantees. Secondly, the platform will be implemented as a Substrate chain and the platform's Substrate pallets can be easily reused by other projects.
 
 ### Project Details
 
@@ -76,7 +76,7 @@ The FuzzLand platform can offer two key benefits to the ecosystem. Firstly, it a
 
 1. The program being audited is divided into smaller subprograms of equal exploring complexity using static analysis by validator nodes. Each node is assigned a unique subprogram to audit for a specific period. This process, known as partitioning, is extremely fast and helps prevent auditor nodes from wasting computational power on code other nodes have already explored. The partitioning plan is deterministic and can be easily verified by other validator nodes, reaching consensus among all validator nodes before the auditing campaign begins.
  
-2. Each auditor nodes pick up a specific partition in the partitioning plan minted based on weighted sampling. Then, auditor nodes leverage fuzz testing techniques to analyze their subprogram. 
+2. Each auditor nodes pick up a specific partition in the partitioning plan minted based on weighted sampling. Then, auditor nodes leverage fuzz testing techniques to analyze their subprogram. Auditor nodes are incentivized to prioritize auditing requests that are new, have high program complexity, and offer higher rewards. This is because auditor nodes are motivated to find more test cases that lead to vulnerabilities and new coverage, as well as to receive higher rewards for the test case NFTs they mint.
 
 3. When auditor nodes detect a test case leading to vulnerability or new code coverage, they mint an NFT for the test case. Judge nodes then verify the test case by re-executing it. Since the execution is deterministic, the outcome must also be deterministic, allowing validator nodes to reach consensus about the validity of test case NFTs. 
 
@@ -84,14 +84,54 @@ The FuzzLand platform can offer two key benefits to the ecosystem. Firstly, it a
 
 
 #### Technical Details
-**Reaching Consensus**: Verifying partition plans and interesting test cases can be costly or even impossible on the chain. Thus, validator nodes use off-chain oracles. FuzzLand uses rollup techniques to move the oracle results onto the chain and reach consensus. Specifically, an optimistic rollup pallet is implemented to achieve consensus on partition plans and interesting test cases. Once a validator node mints a partition plan or an auditor node mints a test case NFT, other validator nodes can submit fraud proofs to challenge it within 50 blocks, or it will be committed. Unlike human auditors or judges, validator nodes can find evidence to challenge false claims in microseconds, as the verification process is automated and inexpensive, making optimistic rollups effective.
 
-**Auditing Requests Prioritization**: Auditor nodes are incentivized to prioritize auditing requests that are new, have high program complexity, and offer higher rewards. This is because auditor nodes are motivated to find more test cases that lead to vulnerabilities and new coverage, as well as to receive higher rewards for the test case NFTs they mint.
+**Partitioning Plan Synthesis**
 
-**Partitioning Plan Synthesis**: By converting a program into LLVM bytecode, we can create a control flow graph (CFG) of it. A basic static analysis can estimate the relative difficulty of exploring each edge in the CFG. Graph partitioning algorithms can then partition the CFG into sub-trees, with the starting node of the CFG as the root of each tree. The partition plan can be concisely represented in O(log n) bytes, where `n` is the size of the CFG, making it possible to be fit into an on-chain variable. 
+By converting a program into LLVM bytecode, we can create a weighted control flow graph (CFG) of it with the weight of each edge as relative difficulty of exploring such an edge. Graph partitioning algorithms can then partition the CFG into sub-trees, with the starting node of the CFG as the root of each tree. The partition plan can be concisely represented in O(log n) bytes, where `n` is the size of the CFG, making it possible to be fit into an on-chain variable. 
 
-**Dynamic Program Analysis (DPA)**: We support automated auditing of any program that can be compiled to LLVM bytecode by leveraging fuzz testing techniques, which involve sending random input to the program. This method, also known as heuristic search, aims to achieve 100% code coverage and uncover all vulnerabilities. While infinite time would guarantee zero false negatives, we use formal methods such as symbolic and concolic execution for guiding the fuzz testing search to reduce the time needed. Additionally, by partitioning the program into smaller, more manageable subprograms for each node, we can reduce the time required linearly as the number of nodes increases.
+To determine the difficulty of exploring each edge in the CFG, we utilize static analysis tools. We pinpoint the comparison instruction that leads to the edge and determine the domain size of both the LHS and RHS. The domain size represents the likelihood of program execution failing into either side if the input is randomly selected. Currently, we use heuristics to determine the domain size. As future work, we can use abstract interpretation algorithms with a constraint solver to calculate it. The exploration difficulty is then estimated by dividing the domain size of the LHS and RHS.
 
+For instance, consider following simple program:
+
+```rust
+// input: Vec<u8>
+if (input[0] > 20) { // Line 1
+    bug(); // Line 2
+} // Line 3
+```
+
+The CFG would be
+```
+   
+              ┌──────────────┐
+       ┌──────┤    Line 1    │
+       │      └───────┬──────┘
+       │ E2           │ E1
+       │      ┌───────▼──────┐
+       │   ┌──┤    Line 2    |
+       │   │  └──────────────┘          
+       │   │ E3              
+┌──────▼───▼───┐ 
+│    Line 3    |
+└──────────────┘ 
+```
+
+Given `u8` domain is 256, weight (exploration difficulty) of E1 is `(256 - 20) / (256 + 20)` and E2 is `(256 + 20) / (256 - 20)`. By intuition, E2 is indeed more likely to be explored than E1. As there is no comparison instruction in during transition of E3, the exploration difficulty is 0, meaning as long as we can reach Line 2, we can reach Line 3. 
+
+**Dynamic Program Analysis (DPA)**
+
+We support automated auditing of any program that can be compiled to LLVM bytecode by leveraging fuzz testing techniques, which involve sending random input to the program. This method, also known as heuristic search, aims to achieve 100% code coverage and uncover all vulnerabilities. While infinite time would guarantee zero false negatives, we use formal methods such as symbolic and concolic execution for guiding the fuzz testing search to reduce the time needed. Additionally, by partitioning the program into smaller, more manageable subprograms for each node, we can reduce the time required linearly as the number of nodes increases.
+
+Fuzz testing employs partitioning through the use of an instrumented target. If an input causes execution of code outside the partition plan, the target will terminate. Early termination reduces the time spent exploring code not within the partition, saving significant time.
+
+
+**Reaching Consensus**
+
+Verifying partition plans and interesting test cases can be costly or even impossible on the chain. Thus, validator nodes use off-chain oracles. FuzzLand uses rollup techniques to move the oracle results onto the chain and reach consensus. Specifically, an optimistic rollup pallet is implemented to achieve consensus on partition plans and interesting test cases. Once a validator node mints a partition plan or an auditor node mints a test case NFT, other validator nodes can submit fraud proofs to challenge it within 50 blocks, or it will be committed. Unlike human auditors or judges, validator nodes can find evidence to challenge false claims in microseconds, as the verification process is automated and inexpensive, making optimistic rollups effective. 
+
+*Interactively Partition Plan Verification*: Claimer can create a partition plan by submitting the weighted CFG and list of nodes in the CFG that needs to be divided. A challenger can either challenge the weighted CFG or the partition plan. To challenge the weighted CFG, the challenger submits a fraud-proof consisting of the root node of the minimum differing subtree in the CFG. The chain partially re-generates from that root node to the first child node by looking at branch, jump, and call instructions. That node must equal either party's differing node if at least one party is honest. Although generating full CFG is a costly operation as multiple complex graph analysis algorithm is needed, generating the next node with a known subgraph and context is cheap. To challenge the partition plan, the challenger must submit a better plan. The chain can compare the balance of each subgraph's total weights and determine which is the best partition plan. Comparison is very cheap since the chain only needs to sum up the weight of each subgraph and divide them. 
+
+*Interactively Testcase Verification*: Claimer can confirm a test case by submitting the execution trace (a trace of basic blocks hit during execution) of the test case to the chain. The initial fraud-proof consists of the first differing program counter (PC) in execution trace and the state (i.e., dirty page of the memory and stack) before the differing PC. The challenged claimer can dispute the state and find the first differing state interactively with the challenger. When either the differing PC or state is found, the chain will re-execute partially from the state and PC with consensus (i.e., state and PC before the differing ones) using LLVM bytecode virtual machine. Since the execution would lead to a concrete result that is directly equal to that of either challenger or claimer, the chain can decide which party is gaming. Partial re-execution is not costly since the chain only needs to execute the basic block with dispute, which is usually a few simple instructions. A potential future work would be replacing this process with zero-knowledge proof. 
 
 #### Technology Stack
 
@@ -167,7 +207,51 @@ trait Audit {
 }
 ```
 
-We are also going to implement the off-chain oracle. Specifically, oracle needs to generate partition plans. This can be implemented using Kernighan–Lin algorithm. Oracle also needs to implement the DPA for LLVM targets that respect the partition plan. We use LLVM pass to modify the bytecode and use LibAFL to manage the DPA campaign. 
+We are also going to implement the off-chain oracle. 
+
+The oracle for auditor nodes needs to implement the DPA for LLVM targets that respect the partition they received. We use LLVM pass to modify the bytecode for achieving early termination and use LibAFL to manage the DPA campaign. 
+
+LLVM Pass Pseudocode
+```python
+# Given Partition, Program
+for BB in Program:
+    # Last instruction of BB is comparison instruction
+    if ProgramCounter(BB) not in Partition:
+        BB.Start.append(
+            new Instruction(Terminate())
+        )
+```
+
+The oracle for validator nodes needs to generate partition plans. We implement graph partitioning tool using Kernighan–Lin algorithm. As aforementioned, a crucial part for partitioning is the CFG edge weight calculation. We implement it using LLVM pass.
+
+Graph edge weight calculation Pseudocode
+```python
+# Given Program
+for BB in Program:
+    # Last instruction of BB is comparison instruction
+    if BB.Tail is Comparison:
+        LHS, RHS, Op = BB.Tail as Comparison
+        # Count the percentage between domain of LHS and domain of RHS based on Op
+        return Count(Op, AbstractInterp(LHS), AbstractInterp(RHS))
+    else:
+        return 0
+```
+
+The oracle also interacts with chain by interacting with optimistic rollups. The VM used to re-execute LLVM bytecode partially is https://github.com/andoma/vmir, which can be compiled to WASM. We will implement a wrapper pallet for this VM. 
+
+#### UI
+Design Doc: https://xd.adobe.com/view/41cd2fa4-f124-4877-8b17-a8ff47799bf7-149e/
+
+Screen 1: Onboarding - Upload Project
+![](https://i.imgur.com/blNwnb7.png)
+
+Screen 2: Onboarding - Select Bounty
+![](https://i.imgur.com/nJIFcWW.png)
+
+Screen 3: Auditing Report
+![](https://i.imgur.com/2wX9Mf6.png)
+
+
 
 ### Ecosystem Fit
 Our platform can serve the project owners who have auditing requests for their projects, regardless of Web2 or Web3: as long as they can be compiled into LLVM (e.g., any Ink, Solidity, Rust, C++, etc. programs). The auditing reports and how they correlate with the on-chain statistics can also be reviewed by anyone: not just the project owner, but also the project users. Project owners can gain more trust by sharing the auditing reports backed with *consensus* with their users. 
