@@ -195,7 +195,7 @@ initiative are:
 | **0e.** | Article | We will publish articles to support the research post publication |
 | 1. | Research |We will run an internal research and documentation process, in order to prepare the interviews|
 | 2. | Interviews | We will run the first round of interviews with relevant stakeholders|
-| 3. | Internal Draft | We will prepare an internal draft of the paper to be published |
+| 3. | Internal Draft | We will prepare an internal draft of the paper which will be publicly available on github|
 
 
 ### Milestone 2 - Feedback and Publication
