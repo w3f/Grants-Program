@@ -1,6 +1,6 @@
 # ZK-Snarks tutorial
-* **Team Name:** Bright Inventions
-* **Payment Address:** 0xD75dDC4Aa3618e1417c68E5Df79ef9D66E4B1Ed9
+- **Team Name:** Bright Inventions
+- **Payment Address:** 0xD75dDC4Aa3618e1417c68E5Df79ef9D66E4B1Ed9
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 
@@ -46,33 +46,21 @@ As our implementation will be accompanied by series of blog posts and a youtube 
 - Katarzyna Łukasiewicz - Project Manager
 
 ### Contact
-* **Katarzyna Łukasiewicz:** 
+* **Contact Name:** Katarzyna Łukasiewicz 
 * **Contact Email:** katarzyna.lukasiewicz@brightinventions.pl
-* **Website** https://brightinventions.pl/
+* **Website:** https://brightinventions.pl/
 
 ### Legal Structure
 
 Bright Inventions is a limited liability company based in Gdansk, Poland. Company was founded in 2012 by Daniel Makurat and Michał Łukasiewicz.
 
 
-Full address details:
-
-
-Bright Inventions Sp. z o. o.
-
-ul. Jana Matejki 12
-
-80-232 Gdańsk, Poland
-
-info@brightinventions.pl
-
-www.brightinventions.pl
-
-Company registration number: 0000687244
-
-VAT EU: PL5842761920
-
-REGON: 367805647 
+- **Registered Address:** ul. Jana Matejki 12, 80-232 Gdańsk, Poland
+- **Registered Legal Entity:** Bright Inventions Sp. z o. o.
+- **Info:** info@brightinventions.pl, www.brightinventions.pl
+- **Company registration number:** 0000687244
+- **VAT EU:** PL5842761920
+- **REGON:** 367805647 
 
 
 Bright Inventions is a team of oveer 70 full-time onsite developers, project managers & UX/UI designers - experts in mobile and web applications, systems integration, IOT devices and Blockchain platforms. 
