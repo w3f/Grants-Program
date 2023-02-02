@@ -5,7 +5,7 @@
 
 - **Payment Address:** Ethereum (USDT/USDC) 0x5E1257E928aa42E3D0cd9E2A7537E37D108D811B
 
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ### Overview
 
