@@ -185,7 +185,7 @@ Before applying for the Web3 Foundation Grant, the Zeeve team has built a DevOps
 
 - **FTE:** 2
 
-- **Costs:** 10,000 USDC
+- **Costs:** 10,000 USD
 
   
 
