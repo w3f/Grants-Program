@@ -145,19 +145,7 @@ New project
 | **0b.** | Documentation | We will provide UI Wireframe and a basic tutorial that explains how a user can play, which will show how the functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: Patient Registration | Patients registration API & Dapps on substrate for mobile app, developed in Solidity. |
-| | | Patient ID & profile management |
-| | | - Add patient ID |
-| | | - Update patient profile |
-| | | Credential management ||
-| | | - Receive credential issued by system (for example: user credibility level) |
-| | | Registry and availability status on chain ||
-| | | - Check user account status (for example: pending for verification) |
-| | | Data privacy control ||
-| | | - Ensure that only authorized users can access patient data |
-| | | Anti-fraud |
-| | | - Twitter account verification |
-| | | - Email verification |
+| 1. | Substrate module: Patient Registration | Patients registration API & Dapps on substrate for mobile app, developed in ink! smart contract. <br> Patient ID & profile management <br> - Add patient ID <br> - Update patient profile <br> Credential management <br> - Receive credential issued by system (for example: user credibility level) <br> Registry and availability status on chain <br> - Check user account status (for example: pending for verification) <br> Data privacy control <br> - Ensure that only authorized users can access patient data <br> Anti-fraud <br> - Twitter account verification <br> - Email verification |
 | 2. | Documentation | We will provide the document for commend-line verification  |
 
 ### Milestone 2 Challenge card & Health diary
@@ -172,20 +160,9 @@ New project
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: Challenge card | Provide a way for users to set personal goals, track their progress, and receive rewards for their efforts. Module developed in Solidity. |
-| | | - Add challenge card |
-| | | - Add personalized mission |
-| | | - Delete challenge card |
-| | | - Receive daily mission |
-| | | - Receive rewards by mission completed |
-| | | - Receive rewards by challenge completed |
-| | | * Rewards by fungible tokens or NFT |
-| 2. | Web Backend module: Health dairy | Provide a dynamic form of health diary for patient self reports. Module developed in Vue and Java. |
-| | | - Add Type |
-| | | - Add Name |
-| | | - Add Questionaire |
-| 3. | Android apk | We will provide android apk for above challenge card data input and functional verification. Developed in Flutters. |
-| | | - We will provide android apk for user challenge card with wallet to receive rewards |
+| 1. | Substrate module: Challenge card | Provide a way for users to set personal goals, track their progress, and receive rewards for their efforts. Module developed in ink! smart contract <br> Add challenge card <br> - Add personalized mission <br> - Delete challenge card <br> - Receive daily mission <br> - Receive rewards by mission completed <br> - Receive rewards by challenge completed <br> * Rewards by fungible tokens or NFT |
+| 2. | Web Backend module: Health dairy | Provide a dynamic form of health diary for patient self reports. Module developed in Vue and Java. <br> - Add Type <br> - Add Name <br> - Add Questionaire |
+| 3. | Android apk | We will provide android apk for above challenge card data input and functional verification. Developed in Flutters. <br> - We will provide android apk for user challenge card with wallet to receive rewards |
 | 4. | Data encryption module | We will implement data encryption module of all stored and transmitted data to prevent unauthorized access or tampering |
 | 5. | Data privacy control module | We will implement a data privacy control module to allow patients to exercise their rights under the GDPR, such as the right to access, rectify, and delete their personal data. |
 | 6. | Audit logging on web backend | The web backend will implement an auditable log of all access to system, including who accessed it and what actions were performed, to help detect and respond to security incidents. |
@@ -203,7 +180,7 @@ New project
 | **0b.** | Documentation | We will provide Claps API reference documents. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Substrate module: Claps Health DAO | We will implement a DAO for configure and manage Claps Dapps, the DAO function included multi-signature for DAO managers. Module developed in Solidity. |
+| 1. | Substrate module: Claps Health DAO | We will implement a DAO for configure and manage Claps Dapps, the DAO function included multi-signature for DAO managers. Module developed in ink! smart contract. |
 
 ### Milestone 4 Claps Web Backend for Clients & Health Practitioners
 
@@ -217,17 +194,9 @@ New project
 | **0b.** | Documentation | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use Claps app. |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 1. | Web Backend module: Client registration | We will provide a web backend for client registration, allowing clients access to patient groups. Develop in Vue and Java. |
-| | | - Account signup/signin by invitation |
-| | | - Subscribe patient group |
-| | | - Add health practitioners |
-| | | - Add sponsorship on health education contents |
-| 2. | Web Backend module: Health  Practitioner Registration | We will provide a web backend for HP registration, allowing HP to publish health education contents. Develop in Vue and Java. |
-| | | - Account signup/signin by client invitation |
-| | | - Published health education contents |
-| | | - View and tracking patients feedback |
+| 1. | Web Backend module: Client registration | We will provide a web backend for client registration, allowing clients access to patient groups. Develop in Vue and Java. <br> - Account signup/signin by invitation <br> - Subscribe patient group <br> - Add health practitioners <br> - Add sponsorship on health education contents |
+| 2. | Web Backend module: Health  Practitioner Registration | We will provide a web backend for HP registration, allowing HP to publish health education contents. Develop in Vue and Java. <br> - Account signup/signin by client invitation <br> - Published health education contents <br> - View and tracking patients feedback |
 | 3. | Article | We will publish an article/workshop that explains how Claps work and benefit patients. |
-
 ## Future Plans
 
 Open AI Integration
