@@ -166,7 +166,6 @@ Before applying for the Web3 Foundation Grant, the Zeeve team has built a DevOps
 | 0b.  | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) create a new Substrate based Zombie-net nodes and initiate testing, which will show how the new functionality works. |
 | 0c. | Testing Guide | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker/Cluster | We will provide a Dockerfile(s)/Cluster Yaml(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | Using our PR channels, we will publish an **article** that explains the high-level overview of automation as part of the grant, followed by a set of extensive examples. |
 | 1. | Initial Automation | We will build the core GUI driven automation to create and deploy the substrate based Zombie-net configurations including relaychain and parachain configurations. |
 | 2. | Configuration | Parachain configuration is critical and complicated, we will provide the GUI based pick and choose for genesis parameters and chain configs to start wtih parachain setup for the desired Zombie-net |
 | 3. | Node type support | Implement setup of all node types including Full node, Validator node and Collator node for the respective relay chain and parachain within the configured Zombie-net. |
