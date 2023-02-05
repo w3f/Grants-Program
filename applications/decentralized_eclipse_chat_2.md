@@ -135,7 +135,7 @@ We would like to use the Substrate template node
 - **Total Costs:** $10,000 USDC
 
 
-### Milestone 1 — Implement register_address, check_nickname, send_invitation  functionality
+### Milestone 1 — Implement register_address, check_nickname functionality
 
 - Estimated Duration: 1 month
 - FTE: 2
@@ -150,7 +150,7 @@ We would like to use the Substrate template node
 |    0e. | Substrate module: register_address, check_nickname| We will create a Substrate module that will create an register an address, check for a nickname and send an invitation.                                     |
 
 
-### Milestone 2 — Implement accept_deny_invitation, send_sms, get_sms functionality
+### Milestone 2 — Implement send_invitation functionality
 
 - Estimated Duration: 1 month
 - FTE: 2
@@ -164,7 +164,7 @@ We would like to use the Substrate template node
 |    0d. | Benchmarking                      | Benchmarking will be provided for accept_deny_invitation, send_sms, get_sms works.                                                                    
 |    0e. | Substrate module: send_invitation | We will create a Substrate module that will accept or deny an invitation, send a sms and get all sms.                                                 |
 
-### Milestone 3 — Implement get_all_channels, search_address, delete_channel  functionality
+### Milestone 3 — Implement accept_deny_invitation functionality
 
 - Estimated Duration: 1 month
 - FTE: 2
