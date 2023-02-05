@@ -32,17 +32,6 @@ Methods:
 
 4- accept_deny_invitation(from, to) -> This method will make the receiver accept or deny the invitation to make the communication happen or not.The invitation flag would be true/false.
 
-5- send_sms(from, to) -> This method will send sms from one sender to receiver. Msg would be added to the list of messages which they are exchanging.
-
-6- get_sms(from, to) -> This method will get a list of sms. Get the list of msg which has been sent between a specific sender and receiver.
-
-7- get_all_channels(from) -> This method will get all the channels/communication which have been done in the past.
-
-8- search_address(from) -> This method will search for any address already registered.
-
-9- delete_channel(from, channel id) -> This method delete the channel related with. Delete the list/channel of msg which has been sent between a specific sender and receiver.
-(Zeroing out the data: This means replacing the sensitive data with zeros or other meaningless characters.  Hashing the data: )
-
 
 Our idea is to create a suitable communication platform that is tailored to the needs of each individual user. Every user will have the freedom to chousing his level of privacy and to decide if he wants to be identified or use the software in total anonymity.
 The communication will be direct between the two users without having the necessity of a server that can store an save the communication. Later on, the creation of Groups can be added as well.
@@ -143,55 +132,56 @@ We would like to use the Substrate template node
 
 - **Total Estimated Duration:** 3 months
 - Full-Time Equivalent (FTE): 2 FTE
-- **Total Costs:** $30,000 USDC
+- **Total Costs:** $10,000 USDC
 
 
 ### Milestone 1 — Implement register_address, check_nickname, send_invitation  functionality
 
 - Estimated Duration: 1 month
 - FTE: 2
-- Costs: $10,000 USDC
+- Costs: $3,3333 USDC
 
-| Number | Deliverable                     | Specification                                                                                                                                                 |
-|-------:|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    0a. | License                         | Apache 2.0                                                                                                                                                    |
-|    0b. | Documentation                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how register_address, check_nickname, send_invitation works. |
-|    0c. | Testing Guide                   | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.             |
-|    0d. | Benchmarking                    | Benchmarking will be provided for register_address, check_nickname, send_invitatio.                                                                           
-|    0e. | Substrate module: register_address, check_nickname, send_invitation | We will create a Substrate module that will create an register an address, check for a nickname and send an invitation.                                       |
+| Number | Deliverable                     | Specification                                                                                                                                               |
+|-------:|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0a. | License                         | Apache 2.0                                                                                                                                                  |
+|    0b. | Documentation                   | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how register_address, check_nickname works. |
+|    0c. | Testing Guide                   | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.           |
+|    0d. | Benchmarking                    | Benchmarking will be provided for register_address, check_nickname, send_invitatio.                                                                         
+|    0e. | Substrate module: register_address, check_nickname| We will create a Substrate module that will create an register an address, check for a nickname and send an invitation.                                     |
 
 
 ### Milestone 2 — Implement accept_deny_invitation, send_sms, get_sms functionality
 
 - Estimated Duration: 1 month
 - FTE: 2
-- Costs: $10,000 USDC
+- Costs: $3,3333 USDC
 
 | Number | Deliverable                       | Specification                                                                                                                                         |
 |-------:|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    0a. | License                           | Apache 2.0                                                                                                                                            |
-|    0b. | Documentation                     | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how accept_deny_invitation, send_sms, get_sms works. |
+|    0b. | Documentation                     | We will provide both **inline documentation** of the code and a basic **tutorial** that explains send_invitation works. |
 |    0c. | Testing Guide                     | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.     |
 |    0d. | Benchmarking                      | Benchmarking will be provided for accept_deny_invitation, send_sms, get_sms works.                                                                    
-|    0e. | Substrate module: accept_deny_invitation, send_sms, get_sms | We will create a Substrate module that will accept or deny an invitation, send a sms and get all sms.                                                 |
+|    0e. | Substrate module: send_invitation | We will create a Substrate module that will accept or deny an invitation, send a sms and get all sms.                                                 |
 
 ### Milestone 3 — Implement get_all_channels, search_address, delete_channel  functionality
 
 - Estimated Duration: 1 month
 - FTE: 2
-- Costs: $10,000 USDT
+- Costs: $3,3333 USDC
 
 
 | Number | Deliverable                      | Specification                                                                                                                                            |
 |-------:|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    0a. | License                          | Apache 2.0                                                                                                                                               |
-|    0b. | Documentation                    | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how get_all_channels, search_address, delete_channel works |
+|    0b. | Documentation                    | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how accept_deny_invitation works |
 |    0c. | Testing Guide                    | Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.        |
 |    0d. | Article                          | We will publish an **article** that explains how the decentralized communication system works.                                                           
 |    0e. | Benchmarking                     | Benchmarking will be provided for get_all_channels, search_address, delete_channel works.                                                                   
-|    0f. | Substrate module: get_all_channels, search_address, delete_channel | We will create a Substrate module that will geta alla channels, search for address and  delete the channel.                                              |
+|    0f. | Substrate module: accept_deny_invitation | We will create a Substrate module that will geta alla channels, search for address and  delete the channel.                                              |
 
 
 ## Future Plans
 
-- Building front-end using android/ios/react to interact with pallet via RPC.
+- Future development and maintainable will come by adding these methods in the future: 
+send_sms, get_sms works, get_all_channels, search_address, delete_channel
