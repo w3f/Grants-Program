@@ -56,7 +56,7 @@ If you find an open RFP here that you think you can address, feel free to [submi
 | [scale-codec-comparator.md](RFPs/Under%20Development/scale-codec-comparator.md) | 🟡 | 30.05.2022 |
 | [social-recovery-wallet.md](RFPs/Under%20Development/social-recovery-wallet.md) | 🟡 | 05.07.2021 |
 | [staking-rewards-collector-front-end.md](RFPs/Implemented/staking-rewards-collector-front-end.md) | 🔴 | 20.07.2021 |  
-| [Static-Analysis-for-Runtime-Pallets.md](RFPs/Static-Analysis-for-Runtime-Pallets.md) | 🟢 | 06.02.2023 |  
+| [Static-Analysis-for-Runtime-Pallets.md](RFPs/Open/Static-Analysis-for-Runtime-Pallets.md) | 🟢 | 06.02.2023 |  
 | [sub-consensus.md](RFPs/Open/sub-consensus.md) | 🟢 | 23.11.2021 |
 | [uncollateralized-stablecoin-research.md](RFPs/Implemented/uncollateralized-stablecoin-research.md) | 🔴 | 01.01.23 |
 | [user-account-access-analysis.md](RFPs/Open/user-account-access-analysis.md) | 🟢 | 07.01.2023 |
