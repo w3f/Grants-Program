@@ -139,7 +139,7 @@ We would like to use the Substrate template node
 
 - Estimated Duration: 1 month
 - FTE: 2
-- Costs: $3,3333 USDC
+- Costs: $3,333 USDC
 
 | Number | Deliverable                     | Specification                                                                                                                                               |
 |-------:|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -154,7 +154,7 @@ We would like to use the Substrate template node
 
 - Estimated Duration: 1 month
 - FTE: 2
-- Costs: $3,3333 USDC
+- Costs: $3,333 USDC
 
 | Number | Deliverable                       | Specification                                                                                                                                         |
 |-------:|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -168,7 +168,7 @@ We would like to use the Substrate template node
 
 - Estimated Duration: 1 month
 - FTE: 2
-- Costs: $3,3333 USDC
+- Costs: $3,333 USDC
 
 
 | Number | Deliverable                      | Specification                                                                                                                                            |
