@@ -11,7 +11,7 @@
 * detect panics statically to avoid potential DoS attacks: these include [unsafe arithmetic operations](https://github.com/bhargavbh/MIRAI/blob/main/substrate_examples/arithmetic-overflow/description.md), access outside bounds, assertion failures, etc.
 * tracking unsanitised input leakage for sensitive functions.
 
-We seek applications that either extend existing static analysers for rust like (MIRAI)[https://github.com/facebookexperimental/MIRAI/], (Prusti)[https://www.pm.inf.ethz.ch/research/prusti.html], or build Rust front-ends to static analysis engines. Our preliminary feasibility study shows that MIRAI would be a good starting point as it includes a tag analysis framework, however, we are open to other tools and techniques. 
+We seek applications that either extend existing static analysers for rust like [MIRAI](https://github.com/facebookexperimental/MIRAI/), [Prusti](https://www.pm.inf.ethz.ch/research/prusti.html), or build Rust front-ends to static analysis engines. Our preliminary feasibility study shows that MIRAI would be a good starting point as it includes a tag analysis framework, however, we are open to other tools and techniques. 
 
 ## Deliverables
 
