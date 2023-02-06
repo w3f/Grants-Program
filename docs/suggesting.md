@@ -20,5 +20,5 @@ Ideas generally have better chances of being implemented if they're presented in
 3. Name the file after your idea: `project_name.md`.
 4. Fill out the template with the project details. Please include as many details as possible.
 5. Once you're done, create a pull request in **our** main [Grants-Program repository](https://github.com/w3f/Grant-Milestone-Delivery/blob/master/README.md). The pull request should only contain _one new file_—the Markdown file you created from the template.
-6. You will see the same template as for creating an application. Please replace it with [the RFP PR template](https://github.com/w3f/Grants-Program/blob/master/docs/RFPs/suggestion-template.md).
+6. You will see the same template as for creating an application. Please replace it with [the RFP PR template](https://github.com/w3f/Grants-Program/blob/master/.github/PULL_REQUEST_TEMPLATE/rfp_pr_template.md).
 7. The RFP will be accepted and merged as soon as it receives three approvals from [W3F Grants Committee](./Introduction/team.md#w3f-grants-committee) members.
