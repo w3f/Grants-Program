@@ -15,7 +15,7 @@ We seek applications that either extend existing static analysers for rust like 
 
 ## Deliverables
 
-The deliverables listed below are just an initial draft, assuming the project uses the approach of Modelcheking in TLA+ and can be changed. Proof of correctness can be delivered in stages. Verification of safety properties is mandatory and liveness properties is an optional objective.
+The deliverables listed are an innitial draft and can be modified taking into consideration the interests of the applicant. 
 
 | Number | Deliverable | Specification | 
 | ------------- | ------------- | ------------- |
