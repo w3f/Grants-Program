@@ -1,6 +1,5 @@
-# W3F Grant Proposal
+# Sol2Ink
 
-- **Project Name:** Sol2Ink
 - **Team Name:** [727.ventures](https://github.com/727-Ventures)
 - **Payment Address:** ERC 20 ADDRESS (DAI):
 0x352F779203202c99699CdA8cc95adF06CcC8abEf 
