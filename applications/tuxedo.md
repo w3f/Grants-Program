@@ -89,6 +89,7 @@ While it fulfills a similar role, Tuxedo is not intended to compete with FRAME, 
 
 - **Contact Name:** Joshy Orndorff
 - **Contact Email:** joshyorndorff at proton dot me
+- **Registered Address:** The address you'll use in the invoices
 
 ### Team's experience
 
