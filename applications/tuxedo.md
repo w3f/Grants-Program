@@ -150,7 +150,7 @@ Create the second Tuxedo piece, and a user-facing wallet
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up the example node and transfer tokens |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1. | User Wallet | We will create a CLI wallet that users can use to track their tokens in a Tuxedo-based cryptocurrency. This makes the example node actually useable by common users who are curious to explore but not yet ready to dig into the code. |
+| 1. | User Wallet | We will create a CLI wallet that users can use to track their tokens in a Tuxedo-based cryptocurrency. This makes the example node actually useable by common users who are curious to explore but not yet ready to dig into the code. The wallet will be written in Rust and communicate with Substrates jsonrpsee endpoint. |
 | 2. | Multisig Piece | We will expand the ecosystem of Tuxedo pieces by creating a multisig wallet. In addition to making the Tuxedo ecosystem a bit more complete, this also demonstrates to future piece developers how to couple pieces. |
 
 ### Milestone 3 — Full Docs and Tutorial
