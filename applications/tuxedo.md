@@ -167,8 +167,8 @@ Fully document the Tuxedo paradigm, existing pieces, CLI wallet, and provide a t
 | **0b.** | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can spin up the example node and transfer tokens |
 | **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | **0d.** | Docker | We will provide a Dockerfile that can be used to test all the functionality delivered with this milestone. |
-| 1. | Piece Template | We will create the template Tuxedo Piece analogous to the FRAME pallet template. This will allow runtime developers to have a concrete starting place when building their own utxo based Substrate runtimes. |
 | **0e.** | Full written and Video Tutorial | With a node template, piece template, and user-facing wallet now complete, we can get serious about user and developer documentation. We will create a full written tutorial and video walkthough that covers how to build and run the Tuxedo Node Template, and send tokens around with the wallet. We will then dive into how to add the multisig piece to your runtime, and how to develop your own simple piece starting from the piece template. |
+| 1. | Piece Template | We will create the template Tuxedo Piece analogous to the FRAME pallet template. This will allow runtime developers to have a concrete starting place when building their own utxo based Substrate runtimes. |
 
 
 ## Future Plans
