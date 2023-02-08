@@ -1,4 +1,4 @@
-# W3F Grant Proposal
+# ArtZero & InkWhale
 
 - **Project Name:** ArtZero & InkWhale
 - **Team Name:** ArtZero
